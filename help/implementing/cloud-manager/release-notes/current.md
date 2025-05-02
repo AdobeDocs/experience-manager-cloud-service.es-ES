@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ La próxima versión planificada es para el jueves, 8 de mayo de 2025.
 
 Participe en el programa para primeros usuarios de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
 
-Actualmente está disponible la siguiente oportunidad de adopción anticipada:
+Actualmente está disponible la siguiente oportunidad para primeros usuarios:
 
 ### Usar su propio Git: ahora se admiten GitLab y Bitbucket {#gitlab-bitbucket}
 
