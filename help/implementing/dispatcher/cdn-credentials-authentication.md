@@ -227,6 +227,7 @@ Además, la sintaxis incluye lo siguiente:
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
+
 1. Cuando sea el momento de girar la clave, cree un nuevo secreto de Cloud Manager, por ejemplo `${{CDN_EDGEKEY_041425}}`.
 1. En la configuración, haga referencia a él desde `edgeKey2` e impleméntelo.
 
@@ -248,6 +249,7 @@ Además, la sintaxis incluye lo siguiente:
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
+
 1. Elimine la referencia secreta antigua (`${{CDN_EDGEKEY_052824}}`) de Cloud Manager e implemente.
 
 1. Cuando esté listo para la siguiente rotación, siga el mismo procedimiento, pero esta vez agregará `edgeKey1` a la configuración, haciendo referencia a un nuevo secreto de entorno de Cloud Manager llamado, por ejemplo, `${{CDN_EDGEKEY_031426}}`.

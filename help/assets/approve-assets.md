@@ -81,13 +81,13 @@ Si necesita ver la propiedad a la que está asignado el campo **[!UICONTROL Esta
 
    >[!NOTE]
    >
-   Al seleccionar el objetivo de aprobación como Content Hub mediante la vista de Assets, los recursos están disponibles en Content Hub para los usuarios que forman parte de la misma organización. Al seleccionar el objetivo de aprobación como Envío, los recursos están disponibles para todos los usuarios.
+   >Al seleccionar el objetivo de aprobación como Content Hub mediante la vista de Assets, los recursos están disponibles en Content Hub para los usuarios que forman parte de la misma organización. Al seleccionar el objetivo de aprobación como Envío, los recursos están disponibles para todos los usuarios.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
 >[!NOTE]
 >
-Si los recursos o carpetas tienen un esquema predeterminado diferente, asegúrese de realizar esta actualización en ese esquema en particular.
+>Si los recursos o carpetas tienen un esquema predeterminado diferente, asegúrese de realizar esta actualización en ese esquema en particular.
 
 ## Aprobación de recursos {#approve-assets}
 
@@ -112,7 +112,7 @@ Optimice su flujo de trabajo aprobando rápidamente varios recursos a la vez. Pu
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]**.
 1. Haga clic en **[!UICONTROL Crear]** en la parte superior derecha de la página.
 1. Agregue un título de perfil y haga clic en **[!UICONTROL Crear]**. El perfil de metadatos se ha creado correctamente.
-1. Seleccione el perfil de metadatos recién creado y haga clic en **[!UICONTROL Editar _(e)_]**. <br>El formulario **[!UICONTROL Editar perfil de metadatos]**se abre con la ficha **[!UICONTROL Básico]**resaltada.
+1. Seleccione el perfil de metadatos recién creado y haga clic en **[!UICONTROL Editar _(e)_]**. <br>El formulario **[!UICONTROL Editar perfil de metadatos]**&#x200B;se abre con la ficha **[!UICONTROL Básico]**&#x200B;resaltada.
 1. Arrastre y suelte un **[!UICONTROL campo de texto de una sola línea]** desde la sección **[!UICONTROL Generar formulario]** a la derecha de la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie **[!UICONTROL Etiqueta de campo]** por _Assets aprobado_.
@@ -127,7 +127,7 @@ Optimice su flujo de trabajo aprobando rápidamente varios recursos a la vez. Pu
 
    >[!NOTE]
    >
-   Al seleccionar el objetivo de aprobación como Content Hub mediante la vista de Assets, los recursos están disponibles en Content Hub para los usuarios que forman parte de la misma organización. Al seleccionar el objetivo de aprobación como Envío, los recursos están disponibles para todos los usuarios.
+   >Al seleccionar el objetivo de aprobación como Content Hub mediante la vista de Assets, los recursos están disponibles en Content Hub para los usuarios que forman parte de la misma organización. Al seleccionar el objetivo de aprobación como Envío, los recursos están disponibles para todos los usuarios.
 1. Haga clic en **[!UICONTROL Guardar]**.
 1. En la página **[!UICONTROL Perfiles de metadatos]**, seleccione el perfil de metadatos recién creado.
 1. Haga clic en **[!UICONTROL Aplicar perfil de metadatos a las carpetas]** desde la barra de acciones superior.
@@ -138,7 +138,7 @@ Optimice su flujo de trabajo aprobando rápidamente varios recursos a la vez. Pu
 
 >[!NOTE]
 > 
-Este método aprueba los recursos recién creados en la carpeta. Para los recursos existentes en la carpeta, debe seleccionarlos y aprobarlos manualmente. <br> También puede usar la opción **[!UICONTROL Reprocesar]** para aplicar los cambios del perfil de metadatos a los recursos más antiguos.
+>Este método aprueba los recursos recién creados en la carpeta. Para los recursos existentes en la carpeta, debe seleccionarlos y aprobarlos manualmente. <br> También puede usar la opción **[!UICONTROL Reprocesar]** para aplicar los cambios del perfil de metadatos a los recursos más antiguos.
 
 Del mismo modo, para aprobar recursos de forma masiva dentro de una carpeta en la vista Assets:
 
@@ -157,7 +157,7 @@ Del mismo modo, para aprobar recursos de forma masiva dentro de una carpeta en l
 
    >[!NOTE]
    >
-   Si selecciona el destino de aprobación como `Content Hub` mediante la vista de Assets dentro de una organización, los recursos estarán disponibles en Content Hub para los usuarios que formen parte de la misma organización.
+   >Si selecciona el destino de aprobación como `Content Hub` mediante la vista de Assets dentro de una organización, los recursos estarán disponibles en Content Hub para los usuarios que formen parte de la misma organización.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
@@ -178,6 +178,6 @@ Para copiar la URL de envío de un recurso aprobado dentro del repositorio:
 
    >[!NOTE]
    >
-   La opción para copiar la URL de envío para los recursos aprobados solo está disponible en la vista de Assets.
+   >La opción para copiar la URL de envío para los recursos aprobados solo está disponible en la vista de Assets.
 
 Para obtener información sobre otras representaciones que se muestran en el panel Dynamic Media, consulte [Ver y descargar representaciones de Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

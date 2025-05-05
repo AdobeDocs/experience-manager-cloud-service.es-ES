@@ -68,7 +68,7 @@ En palabras simples, una regla When típica está estructurada de la siguiente m
 
 `Action 2 on Object B;`
 `AND`
-`Acción 3 sobre el objeto C;
+&grave;Acción 3 sobre el objeto C;
 
 `Else, do the following:`
 

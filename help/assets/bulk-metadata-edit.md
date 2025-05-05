@@ -1,6 +1,6 @@
 ---
 title: Edición masiva de metadatos en  [!DNL Assets View]
-description: Descubra cómo puede actualizar un conjunto predefinido de campos de metadatos estándar para varios recursos disponibles en [DNL! Vista de Assets] simultáneamente.
+description: Descubra cómo puede actualizar un conjunto predefinido de campos de metadatos estándar para varios recursos disponibles en [!DNL ! Vista de Assets] simultáneamente.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
 workflow-type: tm+mt
@@ -65,6 +65,7 @@ Ejecute estos pasos para editar masivamente los metadatos de varios recursos a l
    * **[!UICONTROL Palabras clave]:** Agregue términos específicos o cadenas de texto que proporcionen información de alto nivel sobre los recursos para mejorar su capacidad de detección. Agregue una palabra clave y presione **Intro** o **retorno** para agregar otra palabra clave a la lista.
    * **[!UICONTROL Etiquetas]:** Haga clic en ![edición masiva de metadatos](/help/assets/assets/tags-icon.svg) para seleccionar etiquetas de entre las opciones disponibles. Las etiquetas proporcionan información más específica sobre los recursos y mejoran su capacidad de detección. Las etiquetas ya aplicadas a los recursos seleccionados se muestran en el panel **[!UICONTROL Propiedades]**. Si no encuentra las etiquetas relevantes, créelas y asígnelas a los recursos seleccionados. Consulte [Administrar etiquetas en [!DNL Assets view]](/help/assets/tagging-management-assets-view.md) para obtener más información sobre cómo crear y asignar etiquetas a los recursos.
    * Haga clic en **[!UICONTROL Guardar]** para aplicar las actualizaciones de metadatos anteriores a los recursos seleccionados. Una vez guardadas, las **[!UICONTROL palabras clave]** y las **[!UICONTROL etiquetas]** se anexan, mientras que los detalles actualizados de **[!UICONTROL Estado]**, **[!UICONTROL Fecha de caducidad]** y **[!UICONTROL Autor]** anulan los detalles existentes.
+
      ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]

@@ -28,6 +28,7 @@ Puede navegar por la estructura del lanzamiento desde:
 * El Editor de página:
 
    * Seleccione **Navegar** para abrir la estructura del lanzamiento en la consola:
+
      ![Navegar desde el lanzamiento desde el editor de páginas](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]

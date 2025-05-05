@@ -376,7 +376,7 @@ Para las páginas de contenido, el idioma elegido para la etiqueta se toma del i
 
 AEM Sin embargo, en el entorno de creación de, utiliza la configuración de idioma del usuario. Por lo tanto, en la consola de etiquetado, para la etiqueta `Animals`, se mostraría `Animaux` para un usuario que establece el idioma en francés en sus propiedades de usuario.
 
-AEM Para agregar un nuevo idioma al cuadro de diálogo, consulte el documento [Generación de etiquetas en aplicaciones de la aplicación de la red 1}](/help/implementing/developing/introduction/tagging-applications.md#adding-a-new-language-to-the-edit-tag-dialog)
+AEM Para agregar un nuevo idioma al cuadro de diálogo, consulte el documento [Generación de etiquetas en aplicaciones de la aplicación de la red 1&rbrace;](/help/implementing/developing/introduction/tagging-applications.md#adding-a-new-language-to-the-edit-tag-dialog)
 
 >[!TIP]
 >

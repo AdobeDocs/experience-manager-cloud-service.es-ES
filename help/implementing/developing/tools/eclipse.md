@@ -54,7 +54,7 @@ Cuando haya cumplido los [requisitos](#requirements) anteriores, puede instalar 
 1. En el campo **Nombre**, escriba `AEM Developer Tools`.
 1. En el campo **Ubicación**, copie la URL de instalación.
 1. Haga clic en **Agregar**.
-1. AEM Compruebe los complementos **** y **Sling**.
+1. AEM Compruebe los complementos **&#x200B;**&#x200B;y **Sling**.
 1. Haga clic en **Siguiente**.
 1. En la ventana **Instalar detalles**, haga clic de nuevo en **Siguiente**.
 1. Acepte los contratos de licencia y haga clic en **Finalizar**.
@@ -67,7 +67,7 @@ En Eclipse, una perspectiva determina las acciones y vistas disponibles dentro d
 _Herramientas de desarrollo de Experience Manager AEM AEM para Eclipse_ proporcionan una perspectiva de que le ofrece control total sobre sus Proyectos e instancias de la comunidad de la comunidad de la que se ha realizado el trabajo de la comunidad de trabajo. AEM Para abrir la Perspectiva de la:
 
 1. En la barra de menús de Eclipse, seleccione **Ventana** > **Perspectiva** > **Abrir perspectiva** > **Otra**.
-1. AEM Seleccione **** en el cuadro de diálogo y haga clic en **Abrir**.
+1. AEM Seleccione **&#x200B;**&#x200B;en el cuadro de diálogo y haga clic en **Abrir**.
 
 AEM ![La perspectiva de la en Eclipse](assets/eclipse-aem-perspective.png)
 
@@ -77,7 +77,7 @@ _Herramientas para desarrolladores de Experience Manager para Eclipse_ incluye u
 
 Siga estos pasos para crear el proyecto de ejemplo:
 
-1. AEM AEM En el menú **Archivo** > **Nuevo** > **Proyecto**, vaya a la sección **** y seleccione **Proyecto de módulo múltiple de muestra**.
+1. AEM AEM En el menú **Archivo** > **Nuevo** > **Proyecto**, vaya a la sección **&#x200B;**&#x200B;y seleccione **Proyecto de módulo múltiple de muestra**.
 
    AEM ![Proyecto De Módulo Múltiple De Ejemplo ](assets/aem-sample-project.png)
 

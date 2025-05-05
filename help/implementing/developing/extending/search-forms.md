@@ -544,7 +544,7 @@ Si se selecciona, las opciones se representan como casillas de verificación que
 * **Nombres de propiedades de Publish y Live Copy**
 Las etiquetas de las casillas de verificación de publicación y Live Copy para el predicado específico de Sites.
 
-* &amp;ast; en las etiquetas de campo de la ficha **Configuración** significa que los campos son obligatorios y, si se deja en blanco, aparecerá un mensaje de error.
+* &ast; en las etiquetas de campo de la ficha **Configuración** significa que los campos son obligatorios y, si se deja en blanco, aparecerá un mensaje de error.
 
 ## Configuración de Search Forms {#configuring-your-search-forms}
 

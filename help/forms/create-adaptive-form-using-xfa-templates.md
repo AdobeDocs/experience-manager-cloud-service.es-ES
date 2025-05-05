@@ -84,7 +84,7 @@ Siga estos pasos para crear un formulario adaptable mediante plantillas de formu
 
    >[!NOTE]
    >
-   > Después de seleccionar **Plantillas de formulario** en la ficha Modelo de formulario **3}, no se puede cambiar.**
+   > Después de seleccionar **Plantillas de formulario** en la ficha Modelo de formulario **3&rbrace;, no se puede cambiar.**
 
 
 Se crea un formulario adaptable que se abre en el editor de formularios adaptables. El editor muestra el contenido disponible en la plantilla.  En función del tipo de formulario adaptable, los elementos del formulario presentes en la plantilla de formulario XFA asociada se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** de la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.

@@ -54,6 +54,7 @@ Para utilizar la funcionalidad de carga de grupos por lotes de Admin Console des
       * _Nombre de grupo de usuarios_ - El nombre de grupo es obligatorio y puede contener un máximo de 255 caracteres.  Este nombre de grupo debe ser el mismo en IMS y AEM
       * _Descripción_: este campo es opcional y puede contener un máximo de 255 caracteres
       * _Administradores de grupos de usuarios_ - Se debe incluir al menos un administrador de grupos en este campo. Para asignar varios administradores, separe cada uno con una coma y escriba la lista entre comillas. La entrada para cada administrador debe incluir el tipo de identidad del usuario, seguido de un guion y, a continuación, la dirección de correo electrónico.  Por ejemplo
+
         `"Adobe ID-myAdmin@example.com,Adobe ID-myOtherAdmin@example.com"`. No incluya un espacio después de la coma que separa a los administradores. No puede incluir usuarios (como administradores) que actualmente no forman parte de la organización en Admin Console
       * _Perfiles de producto asignados_: este campo es opcional. Puede asignar varios perfiles de producto separando cada perfil con una coma y escribiendo la lista entre comillas. Sin embargo, los perfiles de producto que incluya ya deben estar configurados para la organización. Asegúrese de especificar el nombre del perfil de producto y no el nombre del producto.  La pertenencia de perfiles de producto asignados a un grupo la heredarán todos los usuarios ubicados en ese grupo.  Para buscar un perfil de producto:
 

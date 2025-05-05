@@ -94,6 +94,7 @@ Debe crear una configuración de sitio y agregarla a la asignación de ruta.
        }
    }'
    ```
+
 1. Compruebe que la configuración pública se haya establecido y que esté disponible con un comando cURL similar al siguiente.
 
    ```text

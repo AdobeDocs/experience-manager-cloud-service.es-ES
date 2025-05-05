@@ -52,8 +52,10 @@ Para configurar Turnstile para AEM Forms, necesita obtener la clave del sitio [T
 
 1. Configure Cloud Service:
    1. En la instancia de autor de AEM, vaya a ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** y seleccione **[!UICONTROL Turnstile]**.
+
       ![Torniquete en ui](assets/turnstile-in-ui.png)
    1. Seleccione un contenedor de configuración, creado o actualizado, como se describe en la sección anterior. Seleccione **[!UICONTROL Crear]**.
+
       ![Turnstile de configuración](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Tipo de widget]** como administrado; el tipo de widget puede cambiar según la clave obtenida en el requisito previo, **[!UICONTROL Título]**, **[!UICONTROL Nombre]**, **[!UICONTROL Clave de sitio]** y **[!UICONTROL Clave secreta]** para el servicio de torniquete [obtenido en el requisito previo](#prerequisite). Seleccione **[!UICONTROL Crear]**.
 

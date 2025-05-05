@@ -55,8 +55,10 @@ Para integrar AEM Forms con el servicio de torniquete, realice los siguientes pa
 
 1. Configure Cloud Service:
    1. En la instancia de autor de AEM, vaya a ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** y haga clic en **[!UICONTROL Torniquete]**.
+
       ![Torniquete en ui](assets/turnstile-in-ui.png)
    1. Seleccione un contenedor de configuración, creado o actualizado, como se describe en la sección anterior. Seleccione **[!UICONTROL Crear]**.
+
       ![Turnstile de configuración](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Tipo de widget]** como administrado, no interactivo o invisible. Para obtener más información sobre el tipo de widget, visita [Widget del torniquete](https://developers.cloudflare.com/turnstile/concepts/widget/).
    1. Especifique **[!UICONTROL Título]**, **[!UICONTROL Nombre]**, **[!UICONTROL Clave del sitio]** y **[!UICONTROL Clave secreta]** para el servicio de torniquete [obtenido en el requisito previo](#prerequisite).

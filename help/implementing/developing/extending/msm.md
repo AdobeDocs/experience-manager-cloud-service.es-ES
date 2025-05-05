@@ -183,14 +183,17 @@ Para crear una configuración de despliegue:
 1. Agregue las siguientes propiedades a este nodo:
 
    * **Nombre**: `jcr:title`
+
      **Tipo**: `String`
      **Valor**: un título de identificación que aparecerá en la interfaz de usuario
 
    * **Nombre**: `jcr:description`
+
      **Tipo**: `String`
      **Valor**: una descripción opcional.
 
    * **Nombre**: `cq:trigger`
+
      **Tipo**: `String`
      **Valor**: [Déclencheur de despliegue](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) que se va a usar
       * `rollout`
@@ -636,6 +639,7 @@ La propiedad dialog controla si una propiedad de página está sujeta a desplieg
       * **Tipo**: `String`
       * **Value**: contiene el nombre de la propiedad en consideración y es comparable al valor de la propiedad `name`
          * Por ejemplo, consulte
+
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Cuando se ha definido `cq-msm-lockable`, romper/cerrar la cadena interactuará con MSM de la siguiente manera:

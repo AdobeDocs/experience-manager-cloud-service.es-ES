@@ -394,7 +394,7 @@ Los formatos de párrafo están disponibles para su selección por:
 
 >[!CAUTION]
 >
-Si define formatos personalizados, se quitarán los formatos predeterminados (`<p>`, `<h1>`, `<h2>` y `<h3>`). Vuelva a crear el formato `<p>`, ya que es el formato predeterminado.
+>Si define formatos personalizados, se quitarán los formatos predeterminados (`<p>`, `<h1>`, `<h2>` y `<h3>`). Vuelva a crear el formato `<p>`, ya que es el formato predeterminado.
 
 ## Configuración de caracteres especiales {#spchar}
 
@@ -404,7 +404,7 @@ Puede configurar el RTE para que la selección de caracteres esté disponible; y
 
 >[!CAUTION]
 >
-Al agregar los caracteres especiales, se anula la selección predeterminada. Si es necesario, vuelva a definir estos caracteres en la selección.
+>Al agregar los caracteres especiales, se anula la selección predeterminada. Si es necesario, vuelva a definir estos caracteres en la selección.
 
 ### Definir un solo carácter {#definesinglechar}
 
@@ -455,10 +455,12 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. C
 1. Bajo este nodo (denominado según su intervalo especial de caracteres), agregue las dos propiedades siguientes:
 
    * **Nombre** `rangeStart`
+
      **Tipo** `Long`
      **Value** representa [Unicode](https://unicode.org/) (decimal) del primer carácter del intervalo
 
    * **Nombre** `rangeEnd`
+
      **Tipo** `Long`
      **Valor**: la representación [Unicode](https://unicode.org/) (decimal) del último carácter del intervalo
 
@@ -478,11 +480,11 @@ Los estilos suelen aplicarse en el texto, pero también se puede aplicar un conj
 
 >[!NOTE]
 >
-Puede definir estilos para tablas y celdas solo para la IU clásica.
+>Puede definir estilos para tablas y celdas solo para la IU clásica.
 
 >[!NOTE]
 >
-La copia y el pegado de tablas en o desde el componente RTE depende del explorador. No es compatible de serie con todos los exploradores. Puede obtener resultados variados según la estructura de la tabla y el explorador. Por ejemplo, cuando copia y pega una tabla en un componente RTE en Mozilla Firefox en la IU clásica y la IU táctil, el diseño de la tabla no se conserva.
+>La copia y el pegado de tablas en o desde el componente RTE depende del explorador. No es compatible de serie con todos los exploradores. Puede obtener resultados variados según la estructura de la tabla y el explorador. Por ejemplo, cuando copia y pega una tabla en un componente RTE en Mozilla Firefox en la IU clásica y la IU táctil, el diseño de la tabla no se conserva.
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/table`. Cree los nodos si estos no existen. Para obtener más información, consulte [activar un complemento](#activateplugin).
 1. Cree la propiedad `features` en el nodo `table`:
@@ -493,13 +495,13 @@ La copia y el pegado de tablas en o desde el componente RTE depende del explorad
 
    >[!NOTE]
    >
-   Si no desea habilitar todas las características de la tabla, puede crear la propiedad `features` como:
+   >Si no desea habilitar todas las características de la tabla, puede crear la propiedad `features` como:
    >
-   * **Tipo** `String[]`
+   >* **Tipo** `String[]`
    >
-   * **Valor** uno o ambos de los siguientes, según sea necesario:
-   * `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
-   * `cellprops` para permitir la edición de propiedades de celda, incluidos los estilos.
+   >* **Valor** uno o ambos de los siguientes, según sea necesario:
+   >* `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
+   >* `cellprops` para permitir la edición de propiedades de celda, incluidos los estilos.
 
 1. Defina la ubicación de las hojas de estilos CSS para hacer referencia a ellas. Consulte [Especificación de la ubicación de la hoja de estilos](#locationofstylesheet), ya que es lo mismo que al definir [estilos para texto](#textstyles). La ubicación puede definirse si ha definido otros estilos.
 1. En el nodo `table`, cree los siguientes nodos según sea necesario:
@@ -561,7 +563,7 @@ Cuando se activa el complemento corrector ortográfico, RTE utiliza diccionarios
 
 >[!NOTE]
 >
-El mensaje &quot;Fallo en la revisión ortográfica&quot;. se ve si se prueba una comprobación para un idioma que no está instalado.
+>El mensaje &quot;Fallo en la revisión ortográfica&quot;. se ve si se prueba una comprobación para un idioma que no está instalado.
 
 Una instalación de Experience Manager estándar incluye los diccionarios para:
 
@@ -570,7 +572,7 @@ Una instalación de Experience Manager estándar incluye los diccionarios para:
 
 >[!NOTE]
 >
-Los diccionarios estándar se encuentran en `/libs/cq/spellchecker/dictionaries`, junto con los archivos Léame correspondientes. No modifique los archivos.
+>Los diccionarios estándar se encuentran en `/libs/cq/spellchecker/dictionaries`, junto con los archivos Léame correspondientes. No modifique los archivos.
 
 Para agregar más diccionarios, si es necesario, siga estos pasos.
 
@@ -579,18 +581,18 @@ Para agregar más diccionarios, si es necesario, siga estos pasos.
 
    >[!CAUTION]
    >
-   Solo se admiten diccionarios con el formato `MySpell` para OpenOffice.org v2.0.1 o anterior. Como los diccionarios ahora son archivos de almacenamiento, se recomienda verificarlos después de la descarga.
+   >Solo se admiten diccionarios con el formato `MySpell` para OpenOffice.org v2.0.1 o anterior. Como los diccionarios ahora son archivos de almacenamiento, se recomienda verificarlos después de la descarga.
 
 1. Busque los archivos .aff y .dic. Mantenga el nombre del archivo en minúsculas. Por ejemplo, `de_de.aff` y `de_de.dic`.
 1. Cargue los archivos .aff y .dic en el repositorio en `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
 >
-El corrector ortográfico RTE está disponible bajo demanda. No se ejecuta automáticamente cuando empieza a escribir texto.
+>El corrector ortográfico RTE está disponible bajo demanda. No se ejecuta automáticamente cuando empieza a escribir texto.
 >
-Para ejecutar el corrector ortográfico, seleccione el botón Corrector ortográfico de la barra de herramientas. RTE revisa la ortografía de las palabras y resalta las palabras mal escritas.
+>Para ejecutar el corrector ortográfico, seleccione el botón Corrector ortográfico de la barra de herramientas. RTE revisa la ortografía de las palabras y resalta las palabras mal escritas.
 >
-Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambiará y las palabras mal escritas dejarán de resaltarse. Para ejecutar el corrector ortográfico, vuelva a seleccionar el botón Corrector ortográfico.
+>Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambiará y las palabras mal escritas dejarán de resaltarse. Para ejecutar el corrector ortográfico, vuelva a seleccionar el botón Corrector ortográfico.
 
 ## Configuración del tamaño del historial para acciones de deshacer y rehacer {#undohistory}
 
@@ -626,7 +628,7 @@ Cuando la sangría está activada (predeterminada), puede definir el tamaño de 
 
 >[!NOTE]
 >
-Este tamaño de sangría solo se aplica a párrafos (bloques) de texto; no afecta a la sangría de listas reales.
+>Este tamaño de sangría solo se aplica a párrafos (bloques) de texto; no afecta a la sangría de listas reales.
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/lists`. Cree estos nodos si no existen. Para obtener más información, consulte [activar un complemento](#activateplugin).
 1. En el nodo `lists`, cree el parámetro `identSize`:
@@ -659,13 +661,13 @@ Al agregar vínculos en [!DNL Experience Manager], puede definir los estilos CSS
 
    >[!NOTE]
    >
-   El nodo `../items/text` tiene la propiedad:
+   >El nodo `../items/text` tiene la propiedad:
    >
-   * **Nombre** `xtype`
-   * **Tipo** `String`
-   * **Valor** `richtext`
+   >* **Nombre** `xtype`
+   >* **Tipo** `String`
+   >* **Valor** `richtext`
    >
-   La ubicación del nodo `../items/text` puede variar, según la estructura del cuadro de diálogo. Dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
+   >La ubicación del nodo `../items/text` puede variar, según la estructura del cuadro de diálogo. Dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. En `htmlRules`, cree un nodo.
 

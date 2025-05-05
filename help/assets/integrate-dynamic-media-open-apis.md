@@ -67,6 +67,6 @@ El Selector de recursos de Micro-FrontEnd de Adobe proporciona una interfaz de u
 
 >[!MORELIKETHIS]
 >
-* [Integrar el Selector de recursos con varias aplicaciones](/help/assets/integrate-asset-selector.md)
-* [Propiedades del Selector de recursos](/help/assets/asset-selector-properties.md)
-* [Personalización del selector de recursos](/help/assets/asset-selector-customization.md)
+>* [Integrar el Selector de recursos con varias aplicaciones](/help/assets/integrate-asset-selector.md)
+>* [Propiedades del Selector de recursos](/help/assets/asset-selector-properties.md)
+>* [Personalización del selector de recursos](/help/assets/asset-selector-customization.md)

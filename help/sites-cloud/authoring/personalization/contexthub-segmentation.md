@@ -215,6 +215,7 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 1. La carpeta aparece en la lista de segmentos.
    * La forma en que ordene las columnas afectará a dónde aparece la nueva carpeta en la lista.
    * Puede seleccionar los encabezados de columna para ajustar la ordenación.
+
      ![La nueva carpeta](../assets/contexthub-folder.png)
 
 ### Modificar carpetas existentes {#modify-folders}

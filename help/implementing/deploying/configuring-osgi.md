@@ -70,7 +70,7 @@ La granularidad de esta regla es de nivel PID. Esto significa que no puede defin
 
 >[!NOTE]
 >
->No se puede declarar una carpeta de configuración OSGi **0}** de la misma manera que se puede declarar una carpeta `config.publish`. `config.preview` En su lugar, el nivel de vista previa hereda su configuración OSGi de los valores del nivel de publicación.
+>No se puede declarar una carpeta de configuración OSGi **0&rbrace;** de la misma manera que se puede declarar una carpeta `config.publish`. `config.preview` En su lugar, el nivel de vista previa hereda su configuración OSGi de los valores del nivel de publicación.
 
 Al desarrollar localmente, un parámetro de inicio de modo de ejecución, `-r`, se utiliza para especificar la configuración OSGI del modo de ejecución.
 
@@ -322,6 +322,7 @@ Si una propiedad OSGi requiere valores diferentes para autor y para publicación
 * Deben usarse carpetas OSGi `config.author` y `config.publish` independientes, tal como se describe en la [sección Resolución del modo de ejecución](#runmode-resolution).
 * Existen dos opciones para crear los nombres de variables independientes que se deben utilizar:
    * la primera opción, que se recomienda: en todas las carpetas OSGi (como `config.author` y `config.publish`) declaradas para definir valores diferentes, utilice el mismo nombre de variable. Por ejemplo
+
      `$[env:ENV_VAR_NAME;default=<value>]`, donde el valor predeterminado corresponde al valor predeterminado para ese nivel (autor o publicación). Al configurar la variable de entorno a través de [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) o de un cliente, diferencie entre los niveles utilizando el parámetro &quot;service&quot; como se describe en la [documentación de referencia de Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/). El parámetro &quot;service&quot; enlazará el valor de la variable al nivel OSGi adecuado. Puede ser &quot;author&quot;, &quot;publish&quot; o &quot;preview&quot;.
    * la segunda opción, que es declarar variables distintas utilizando un prefijo como `author_<samevariablename>` y `publish_<samevariablename>`
 
@@ -348,11 +349,11 @@ Configuración
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -362,11 +363,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -391,11 +392,11 @@ config.stage
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -405,11 +406,11 @@ config.prod
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val2",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -419,11 +420,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -448,11 +449,11 @@ Configuración
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -462,11 +463,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -489,11 +490,11 @@ Configuración
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -503,11 +504,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "$[env:my_var1;default=val1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>

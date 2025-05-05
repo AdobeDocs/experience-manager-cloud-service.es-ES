@@ -36,7 +36,7 @@ Para solucionar estos errores, debe:
 
 Cuando las consultas persistentes devuelven el código de error `404`, junto con la información `No suitable endpoint found`, significa que no se ha configurado ningún extremo de GraphQL AEM en el entorno de.
 
-Para corregir esto, siga los pasos para habilitar y publicar el extremo desde [Administrar extremos de GraphQL AEM en la página de inicio de sesión de {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/headless/graphql-api/graphql-endpoint.md)
+Para corregir esto, siga los pasos para habilitar y publicar el extremo desde [Administrar extremos de GraphQL AEM en la página de inicio de sesión de &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/headless/graphql-api/graphql-endpoint.md)
 
 ## Falta ruta en la URL de la consulta persistente de GraphQL {#missing-path-query-url}
 

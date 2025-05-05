@@ -77,6 +77,7 @@ La compatibilidad con recursos remotos mediante Dynamic Media con funciones de O
 * Configure las [variables de entorno](/help/implementing/cloud-manager/environment-variables.md#add-variables) siguientes para AEM as a Cloud Service:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxx-eyyyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX` hace referencia al ID de programa <br>
      `eYYYY` hace referencia al ID de entorno
 
@@ -161,7 +162,7 @@ Siga los siguientes pasos para utilizar recursos remotos dentro del fragmento de
 
    >[!NOTE]
    >
-   Si no cuenta con el modelo de fragmento de contenido de AEM, es posible que tenga que [crear uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
+   >Si no cuenta con el modelo de fragmento de contenido de AEM, es posible que tenga que [crear uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
 
 1. Haga clic en el icono de ![marca de verificación](/help/assets/assets/do-not-localize/checkmark-icon.svg) junto al componente de texto.
 1. Seleccione **[!UICONTROL Remoto]** para recuperar el recurso del DAM remoto. <br>

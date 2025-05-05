@@ -51,7 +51,7 @@ Para ello, debe configurar AEM para que se ejecute en HTTPS. Para fines de desar
 
 El servicio de editor universal no es una copia completa del editor universal, sino solo un subconjunto de sus funciones para garantizar que las llamadas de su entorno de AEM local no se enruten a través de Internet, sino desde un punto final definido que usted controle.
 
-Se requiere la versión 20](https://nodejs.org/en/download/releases) de [NodeJS para ejecutar una copia local del servicio de editor universal.
+Se requiere la versión 20[&#128279;](https://nodejs.org/en/download/releases) de NodeJS para ejecutar una copia local del servicio de editor universal.
 
 El servicio de editor universal está disponible a través de la distribución de software. Consulte la [documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es) para obtener detalles sobre cómo acceder a ella.
 

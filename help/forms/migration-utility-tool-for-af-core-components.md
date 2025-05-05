@@ -19,7 +19,7 @@ ht-degree: 7%
 
 <span class="preview">: la característica está disponible en el programa de usuarios que la adoptaron por primera vez. Puede enviar un correo electrónico a aem-forms-ea@adobe.com desde su ID oficial para unirse al programa de usuarios pioneros y solicitar acceso a esta funcionalidad. </span>
 
-La utilidad de conversión de Forms AEM, que forma parte del conjunto de herramientas de modernización [](https://opensource.adobe.com/aem-modernize-tools/), le ayuda a convertir fácilmente Forms adaptable creado con componentes básicos heredados en formularios que aprovechan las capacidades modernas y compatibles de los componentes principales.
+La utilidad de conversión de Forms AEM, que forma parte del conjunto de herramientas de modernización [&#128279;](https://opensource.adobe.com/aem-modernize-tools/), le ayuda a convertir fácilmente Forms adaptable creado con componentes básicos heredados en formularios que aprovechan las capacidades modernas y compatibles de los componentes principales.
 
 ## AEM ¿Qué son las herramientas de modernización de?
 

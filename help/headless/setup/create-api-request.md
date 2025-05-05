@@ -45,7 +45,7 @@ Antes de poder utilizar las API de GraphQL, se debe crear un punto de conexión 
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-Para obtener más información acerca de cómo habilitar los extremos de GraphQL, consulte [Administrar extremos de GraphQL en la lista de puntos de conexión de AEM en la lista de puntos de conexión de 1}.](/help/headless/graphql-api/graphql-endpoint.md)
+Para obtener más información acerca de cómo habilitar los extremos de GraphQL, consulte [Administrar extremos de GraphQL en la lista de puntos de conexión de AEM en la lista de puntos de conexión de 1&rbrace;.](/help/headless/graphql-api/graphql-endpoint.md)
 
 ## Consulta de contenido mediante GraphQL con GraphiQL
 

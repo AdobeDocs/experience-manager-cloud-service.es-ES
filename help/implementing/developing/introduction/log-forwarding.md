@@ -116,14 +116,14 @@ Otro escenario es deshabilitar el reenvío de los registros de CDN o de AEM (inc
 Algunas organizaciones eligen restringir qué tráfico pueden recibir los destinos de registro, otras pueden requerir el uso de puertos que no sean HTTPS (443).  Si es así, será necesario configurar [Redes avanzadas](/help/security/configuring-advanced-networking.md) antes de implementar la configuración del reenvío de registros.
 
 Utilice la tabla siguiente para ver cuáles son los requisitos para la configuración de Red avanzada y Registro en función de si está utilizando el puerto 443 o no, y de si necesita que los registros aparezcan o no desde una dirección IP fija.
-<html>
-<style>
-table, th, td {
+&lt;html>
+&lt;style>
+table, th, td &lbrace;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-}
-</style>
+&rbrace;
+&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -155,7 +155,7 @@ table, th, td {
       <td>Sí</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >El que los registros aparezcan desde una sola dirección IP viene determinado por la configuración de red avanzada que haya elegido.  Debe utilizarse una salida dedicada para facilitar esto.

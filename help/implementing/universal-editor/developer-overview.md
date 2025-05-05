@@ -189,7 +189,7 @@ Sin embargo, es probable que haya observado que no puede interactuar con la pág
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
 
-   * Siempre se recomienda la versión más reciente de la biblioteca. AEM Si necesita una versión anterior, consulte el documento [Introducción al editor universal en la documentación de {10000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000](/help/implementing/universal-editor/getting-started.md#alternative)
+   * Siempre se recomienda la versión más reciente de la biblioteca. AEM Si necesita una versión anterior, consulte el documento [Introducción al editor universal en la documentación de &lbrace;10000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000](/help/implementing/universal-editor/getting-started.md#alternative)
 
 1. Agregue los metadatos necesarios para la conexión al servicio Editor universal local al final del archivo.
 

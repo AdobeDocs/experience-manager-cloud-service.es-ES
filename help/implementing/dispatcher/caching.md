@@ -26,8 +26,8 @@ Estos encabezados de caché generalmente se establecen en configuraciones vhost 
 
 La clave de caché para los recursos de CDN contiene la dirección URL de solicitud completa, incluidos los parámetros de consulta, por lo que cada parámetro de consulta diferente producirá una entrada de caché diferente. Considere la posibilidad de eliminar los parámetros de consulta no deseados; [consulte lo siguiente](#marketing-parameters) para mejorar la proporción de visitas de caché.
 
-La CDN de AEM as a Cloud Service no almacena en caché las respuestas de origen que contienen `private`, `no-cache` o `no-store` en `Cache-Control` (consulte [Cómo deshabilitar el almacenamiento en caché de CDN
-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) para obtener más información).  Además, la CDN no almacena en caché las respuestas que configuran cookies, es decir, que tienen un encabezado de respuesta `Set-Cookie`.
+La CDN de AEM as a Cloud Service no almacena en caché las respuestas de origen que contienen `private`, `no-cache` o `no-store` en `Cache-Control` (consulte [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)Cómo deshabilitar el almacenamiento en caché de CDN
+ para obtener más información).  Además, la CDN no almacena en caché las respuestas que configuran cookies, es decir, que tienen un encabezado de respuesta `Set-Cookie`.
 
 ### HTML/Texto {#html-text}
 

@@ -47,6 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+
 Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades sobre el nodo de datos. El valor de la propiedad kind debe ser *CDN* y la propiedad `version` debe establecerse en *1*.
 
 

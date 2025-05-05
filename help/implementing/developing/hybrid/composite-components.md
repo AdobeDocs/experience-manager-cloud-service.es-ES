@@ -30,7 +30,7 @@ Este artículo utiliza el componente de tarjeta típico como ejemplo de uso. Las
 Los siguientes modelos para admitir los casos de uso de componentes compuestos requieren los siguientes requisitos previos.
 
 * AEM La instancia de desarrollo de la se está ejecutando localmente en el puerto 4502 con un proyecto de ejemplo.
-* AEM Tiene una aplicación React externa en funcionamiento [habilitada para la edición en la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación ](editing-external-spa.md) en la que se está trabajando para la edición de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación {.
+* AEM Tiene una aplicación React externa en funcionamiento [habilitada para la edición en la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación ](editing-external-spa.md) en la que se está trabajando para la edición de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación &lbrace;.
 * AEM La aplicación React se carga en el editor de [mediante el componente RemotePage](remote-page.md).
 
 ## SPA Adición de componentes compuestos a un grupo de componentes {#adding-composite-components}

@@ -22,7 +22,7 @@ En la siguiente sección se describen las notas de la versión generales de Expe
 
 * Capacidad para [restaurar páginas y subpáginas (árboles de páginas) a una versión anterior](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
-* AEM SPA Capacidad para [crear lanzamientos](/help/sites-cloud/authoring/launches/overview.md) en el editor de la [](/help/implementing/developing/hybrid/introduction.md).
+* AEM SPA Capacidad para [crear lanzamientos](/help/sites-cloud/authoring/launches/overview.md) en el editor de la [&#128279;](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}

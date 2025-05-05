@@ -476,7 +476,7 @@ Este selector se dirige a cualquier fieldset con la clase radio-group-wrapper. E
 ```
 
 * El elemento fieldset actúa como contenedor de panel con la clase panel-wrapper y clases adicionales para el estilo basadas en el nombre del panel (field-login).
-* El elemento leyenda (<legend>) sirve como título del panel con el texto “Información de inicio de sesión” y la etiqueta de campo de clase. El atributo data-visible=&quot;false&quot; se puede utilizar con JavaScript para controlar la visibilidad del título.
+* El elemento leyenda (&lt;legend>) sirve como título del panel con el texto “Información de inicio de sesión” y la etiqueta de campo de clase. El atributo data-visible=&quot;false&quot; se puede utilizar con JavaScript para controlar la visibilidad del título.
 * Dentro del fieldset, varios.Los elementos {Type}-wrapper (.text-wrapper y .password-wrapper en este caso) representan campos de formulario individuales dentro del panel.
 * Cada contenedor contiene una etiqueta, un campo de entrada y una descripción, similares a los ejemplos anteriores.
 
@@ -637,6 +637,7 @@ El selector aplica estilo a todos los paneles que se pueden repetir, lo que gara
   margin-bottom: 10px;
 }
 ```
+
 Este selector aplica estilo a todos los contenedores de campo dentro de un panel repetible, manteniendo un espaciado coherente entre los campos.
 
 * Segmentación de campos específicos (dentro de un panel):

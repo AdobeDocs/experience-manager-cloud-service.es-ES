@@ -501,6 +501,7 @@ Las directivas de página le permiten definir la [directiva de contenido](#conte
    * Estableciendo la propiedad status en el nodo `jcr:content`.
 
       * Por ejemplo, en:
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Defina la propiedad:
@@ -513,6 +514,7 @@ Las directivas de página le permiten definir la [directiva de contenido](#conte
 
    * [Defina las rutas de plantilla permitidas en **Propiedades de página**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) de la página o página raíz apropiada de una subrama.
    * Establezca la propiedad:
+
      `cq:allowedTemplates`
 En el nodo `jcr:content` de la rama requerida.
 

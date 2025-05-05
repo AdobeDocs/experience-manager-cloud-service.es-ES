@@ -44,6 +44,7 @@ El diagrama siguiente muestra los pasos para crear una acción de envío persona
    ```
    git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
    ```
+
    **¿Dónde se encuentra esta información?**
 
    Para obtener instrucciones paso a paso sobre cómo localizar estos detalles, consulte el artículo de Adobe Experience League “[Acceder a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git)”.
@@ -67,6 +68,7 @@ El diagrama siguiente muestra los pasos para crear una acción de envío persona
    ```
    /ui.apps/src/main/content/jcr_root/apps/<app-id>/
    ```
+
    **Importante**: reemplace `<app-id>` por su ID de aplicación real.
 
 1. Cree una nueva carpeta para la acción de envío personalizada y asígnele un nombre de su elección. Por ejemplo, asigne a la carpeta el nombre `customsubmitaction`.
@@ -79,7 +81,7 @@ El diagrama siguiente muestra los pasos para crear una acción de envío persona
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`: reemplazar <app-id> con su ID de aplicación real.
+   `Important`: reemplazar &lt;app-id> con su ID de aplicación real.
 
 1. Cree un nuevo archivo de configuración.
 Dentro de la carpeta `customsubmitaction`, cree un nuevo archivo con el nombre `.content.xml`.
@@ -117,6 +119,7 @@ Dentro de la carpeta `customsubmitaction`, cree un nuevo archivo con el nombre `
    ```
    <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
    ```
+
    Por ejemplo, agregue la línea de código siguiente para agregar la carpeta `customsubmitaction` en el archivo `filter.xml`:
 
    ```
@@ -131,7 +134,7 @@ Dentro de la carpeta `customsubmitaction`, cree un nuevo archivo con el nombre `
 
 1. Vaya al siguiente directorio dentro de su `[AEMaaCS project directory]`:
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`: reemplazar <app-id> con su ID de aplicación real.
+   `Important`: reemplazar &lt;app-id> con su ID de aplicación real.
 1. Cree un nuevo archivo Java para implementar el servicio para la acción de envío agregada. Por ejemplo, agregue el nuevo archivo Java como `CustomSubmitService.java`.
 
    ![Carpeta de acción de envío personalizada](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -198,6 +201,7 @@ Dentro de la carpeta `customsubmitaction`, cree un nuevo archivo con el nombre `
       ```
       mvn -PautoInstallPackage clean install
       ```
+
       ![Implementación local](/help/forms/assets/custom-submit-action-local-deployment.png)
 
 **Implementar el código para el entorno de Cloud Service**

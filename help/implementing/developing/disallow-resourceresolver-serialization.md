@@ -43,7 +43,7 @@ Este mensaje de registro significa que durante el proceso de serialización de `
 
 >[!NOTE]
 >
->AEM Se ha validado que [componentes principales de la lista de {0](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) no se ven afectados por este problema.
+>AEM Se ha validado que [componentes principales de la lista de &lbrace;0](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) no se ven afectados por este problema.
 
 ## Acción solicitada {#requested-action}
 

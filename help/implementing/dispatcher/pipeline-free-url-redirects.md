@@ -44,9 +44,9 @@ Para obtener una guía detallada de implementación paso a paso, consulte el tut
 
 ## El mapa de reescritura {#rewrite-map}
 
-El servidor HTTP Apache recarga el mapa de reescritura (si se cambia) cada 300 segundos de forma predeterminada (el valor es configurable). El formato de archivo debe seguir el archivo RewriteMap del mapa clave-valor sin formato formato describe en la documentación](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html#txt) de [Apache.
+El servidor HTTP Apache recarga el mapa de reescritura (si se cambia) cada 300 segundos de forma predeterminada (el valor es configurable). El formato de archivo debe seguir el archivo RewriteMap del mapa clave-valor sin formato formato describe en la documentación[&#128279;](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html#txt) de Apache.
 
-Se debe crear un archivo con nombre `managed-rewrite-maps.yaml` para especificar la ubicación del archivo de mapa de reescritura y debe implementarse una vez, mediante la canalización de pila completa de Cloud Manager o la canalización de nivel web. El archivo debe crearse en la carpeta src/inclusión](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud/src/opt-in) de la [configuración de Dispatcher. Asegúrese de utilizar la estructura](/help/implementing/dispatcher/validation-debug.md#flexible-mode-file-structure) de archivos de [modo flexible.
+Se debe crear un archivo con nombre `managed-rewrite-maps.yaml` para especificar la ubicación del archivo de mapa de reescritura y debe implementarse una vez, mediante la canalización de pila completa de Cloud Manager o la canalización de nivel web. El archivo debe crearse en la carpeta src/inclusión[&#128279;](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud/src/opt-in) de la [configuración de Dispatcher. Asegúrese de utilizar la estructura](/help/implementing/dispatcher/validation-debug.md#flexible-mode-file-structure) de archivos de modo flexible.
 
 Puede configurarlo con el siguiente patrón:
 
