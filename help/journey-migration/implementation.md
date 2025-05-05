@@ -85,7 +85,7 @@ Además, también puede:
 
 * Vea este vídeo para comprender cómo configurar el SDK de Dispatcher:
 
-  >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/33692?captions=spa)
 
 ### Un cambio de mentalidad {#a-change-in-mindset}
 

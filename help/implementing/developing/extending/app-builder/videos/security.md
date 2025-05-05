@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Obtenga información sobre la seguridad de acciones de Adobe Runtime, la autenticación y autorización de usuarios y AppBuilder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339249/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343297/?quality=12&learn=on&captions=spa)

@@ -32,7 +32,7 @@ No se preocupe si no está familiarizado con todos los términos utilizados en e
 
 Este vídeo resume el proceso de incorporación establecido en este recorrido y está diseñado como una opción general. Todos los temas del vídeo se presentan en detalle en el recorrido.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431502/?quality=12&learn=on&captions=spa)
 
 ## Su contrato {#contract}
 

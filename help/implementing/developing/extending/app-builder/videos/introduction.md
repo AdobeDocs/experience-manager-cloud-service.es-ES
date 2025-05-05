@@ -22,22 +22,22 @@ ht-degree: 100%
 
 Obtenga información sobre el Generador de aplicaciones, sus funciones y el valor comercial que proporciona.
 
->[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342922/?quality=12&learn=on&captions=spa)
 
 ## Puntos de contacto
 
 Descubra cómo interactúan los usuarios finales con las SPA del Generador de aplicaciones y dónde los desarrolladores pueden obtener información sobre el desarrollo del Generador de aplicaciones.
 
->[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342914/?quality=12&learn=on&captions=spa)
 
 ## Arquitectura
 
 Obtenga información sobre la arquitectura de la aplicación del Generador de aplicaciones y sus ventajas.
 
->[!VIDEO](https://video.tv.adobe.com/v/339160/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342907/?quality=12&learn=on&captions=spa)
 
 ## Valor comercial y casos de uso
 
 Obtenga información sobre los principios de diseño y los casos de uso comunes del Generador de aplicaciones.
 
->[!VIDEO](https://video.tv.adobe.com/v/339161/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342899/?quality=12&learn=on&captions=spa)

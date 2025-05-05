@@ -22,22 +22,22 @@ ht-degree: 0%
 
 Obtenga información sobre Adobe I/O Runtime, acciones y cómo crear acciones.
 
->[!VIDEO](https://video.tv.adobe.com/v/339192/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343386/?quality=12&learn=on&captions=spa)
 
 ## Activación, secuencia, déclencheur y reglas
 
 Obtenga información sobre cómo se relacionan las acciones con activaciones, acciones web, déclencheur y reglas.
 
->[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343396/?quality=12&learn=on&captions=spa)
 
 ## Acciones en aplicaciones de App Builder
 
 Obtenga información sobre cómo crear acciones que se pueden utilizar como aplicaciones de App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343391/?quality=12&learn=on&captions=spa)
 
 ## Crear una acción
 
 Obtenga información sobre cómo crear una acción de App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339195/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343402/?quality=12&learn=on&captions=spa)

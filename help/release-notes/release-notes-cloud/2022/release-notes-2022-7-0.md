@@ -33,7 +33,7 @@ La próxima versión (2022.8.0) está planificada para el 1 de septiembre de 202
 
 Eche un vistazo al vídeo Información general sobre la versión de julio de 2022 para ver un resumen de las funcionalidades añadidas en la versión 2022.7.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3454199/?quality=12&captions=spa)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

@@ -17,7 +17,7 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="Directrices de desarrollo de AEM as a Cloud Service"
 >abstract="Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS."
->additional-url="https://video.tv.adobe.com/v/330555/" text="Demostración de la estructura del paquete"
+>additional-url="https://video.tv.adobe.com/v/345901?captions=spa" text="Demostración de la estructura del paquete"
 
 Este documento presenta directrices para el desarrollo en AEM as a Cloud Service AEM AEM y acerca de formas importantes en las que difiere de la forma en que se realiza en las instalaciones y en la forma en que se realiza en AMS de forma.
 
