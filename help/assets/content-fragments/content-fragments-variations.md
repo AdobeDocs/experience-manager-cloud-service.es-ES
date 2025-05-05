@@ -5,22 +5,26 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2530'
 ht-degree: 51%
 
 ---
 
 # Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
-Las [variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido en el as a Cloud Service de Adobe Experience Manager AEM (). Esto se debe a que le permiten crear y editar copias del contenido de **Master** para usarlas en canales y escenarios específicos. En particular, esto hace que la entrega de contenido sin encabezado sea aún más flexible.
+[Las variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service. Esto se debe a que le permiten crear y editar copias del contenido de **Master** para usarlas en canales y escenarios específicos. En particular, esto hace que la entrega de contenido sin encabezado sea aún más flexible.
 
 >[!NOTE]
 >
 >Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
 >
->Existen dos editores para crear fragmentos de contenido; aunque la funcionalidad básica es la misma, existen algunas diferencias. Esta sección trata sobre el editor original, al que se accede principalmente desde la consola **Assets**. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener detalles del nuevo editor (al que se accede principalmente desde la consola **Fragmentos de contenido**).
+>Existen dos editores para la creación de fragmentos de contenido: el nuevo editor y el editor original. El nuevo editor es el predeterminado. Aunque la funcionalidad básica es la misma, existen algunas diferencias.
+>
+>Esta sección trata sobre el editor original. Se ha [abierto a través del nuevo editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
+>
+>Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener información detallada del nuevo editor.
 
 Desde la ficha **Variaciones**, puede hacer lo siguiente:
 
@@ -43,11 +47,11 @@ Realizar una serie de otras acciones en función del tipo de datos que se esté 
 
 >[!CAUTION]
 >
->AEM Después de publicar un fragmento o de hacer referencia a él, muestra una advertencia cuando un autor abre el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectan a las páginas a las que se hace referencia.
+>Una vez publicado un fragmento o referenciado, AEM muestra una advertencia cuando un autor abre el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectan a las páginas a las que se hace referencia.
 
 ## Creación de contenido {#authoring-your-content}
 
-Cuando abra el fragmento de contenido para editarlo, la pestaña **Variaciones** se abrirá de forma predeterminada. Aquí puede crear el contenido, para Principal o cualquier variación que tenga. El fragmento estructurado contiene campos de varios tipos de datos definidos en el modelo de contenido.
+Cuando abre el fragmento de contenido para editarlo en el editor original, la pestaña **Variaciones** se abre de forma predeterminada. Aquí puede crear el contenido, para Principal o cualquier variación que tenga. El fragmento estructurado contiene campos de varios tipos de datos definidos en el modelo de contenido.
 
 Por ejemplo:
 

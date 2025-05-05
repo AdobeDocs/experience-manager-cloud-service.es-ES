@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 65%
+source-wordcount: '1925'
+ht-degree: 63%
 
 ---
 
@@ -37,11 +37,19 @@ El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona
 
 >[!NOTE]
 >
->Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
+>Los fragmentos de contenido son una característica de **Sites**, pero se almacenan como **Assets**.
 >
->Ahora se administran principalmente con la consola **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, aunque aún se pueden administrar desde la consola **Assets**. Esta sección cubre la administración desde la consola **Assets**.
+>Se administran principalmente con la consola **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, aunque aún se pueden administrar desde la consola **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
->Existen dos editores para crear fragmentos de contenido; aunque la funcionalidad básica es la misma, existen algunas diferencias. Esta sección trata sobre el editor original, al que se accede principalmente desde la consola **Assets**. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener detalles del nuevo editor (al que se accede principalmente desde la consola **Fragmentos de contenido**). Ambos editores tienen un conmutador en la barra de herramientas superior para proporcionar acceso rápido al otro editor.
+>Existen dos editores para la creación de fragmentos de contenido: el nuevo editor y el editor original. El nuevo editor es el predeterminado. Aunque la funcionalidad básica es la misma, existen algunas diferencias.
+>
+>Esta sección trata sobre el editor original.
+>
+>El editor predeterminado para [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md) es el nuevo editor, al que se accede desde la consola **Fragmentos de contenido** y la consola **Assets**. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener detalles del nuevo editor.
+>
+>Para usar el [editor original](/help/assets/content-fragments/content-fragments-variations.md), primero abre el nuevo editor y luego desactiva el conmutador **Nuevo editor**.
+>
+>Ambos editores tienen un conmutador en la barra de herramientas superior para proporcionar acceso rápido al otro editor.
 
 ## Creación de fragmentos de contenido {#creating-content-fragments}
 
@@ -132,23 +140,23 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones a
 
 ## Apertura del editor de fragmentos {#opening-the-fragment-editor}
 
-Abra el fragmento para su edición:
+Para abrir el fragmento para editarlo en el editor original:
 
 >[!CAUTION]
 >
 >Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
-1. Utilice la consola **Assets** para desplazarse a la ubicación del fragmento de contenido.
-1. Abra el fragmento para editarlo, haciendo lo siguiente:
+1. Vaya a la ubicación del fragmento de contenido.
 
-   * Tocando o haciendo clic en el fragmento o en el vínculo del fragmento (depende de la vista de la consola).
-   * Seleccionando el fragmento y, a continuación, **Editar** desde la barra de herramientas.
+1. Abra el fragmento para editarlo.
 
-1. Se abrirá el editor de fragmentos. Realice los cambios según sea necesario:
+1. El fragmento se abrirá en el nuevo editor. Desactive el modificador **Nuevo editor** (parte superior derecha) para abrir el editor original:
 
    ![Editor de fragmentos](assets/cfm-managing-03.png)
 
-1. Después de realizar los cambios, utilice **Guardar**, **Guardar y cerrar** o **Cerrar** según sea necesario.
+1. Realice los cambios según sea necesario.
+
+1. Cuando esté listo, usa **Guardar**, **Guardar y cerrar** o **Cerrar** según sea necesario.
 
    >[!NOTE]
    >

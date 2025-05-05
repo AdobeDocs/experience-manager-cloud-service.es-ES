@@ -5,10 +5,10 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 83%
+source-wordcount: '1272'
+ht-degree: 82%
 
 ---
 
@@ -24,12 +24,11 @@ Los fragmentos de contenido de Adobe Experience Manager (AEM) as a Cloud Service
 >
 >Los fragmentos de contenido son una característica de **Sites**, pero se almacenan como **Assets**.
 >
->Ahora se administran principalmente con la consola **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, aunque aún se pueden administrar desde la consola **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
+>Se administran principalmente con la consola **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, aunque aún se pueden administrar desde la consola **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
->Existen dos editores para crear fragmentos de contenido:
+>El editor predeterminado para [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md) es el nuevo editor; se accede a él desde la consola **Fragmentos de contenido** y la consola **Assets**.
 >
->* Se accede principalmente al nuevo editor de [Fragmentos de contenido - Creación](/help/sites-cloud/administering/content-fragments/authoring.md) desde la consola **Fragmentos de contenido**.
->* Se accede principalmente al [editor original](/help/assets/content-fragments/content-fragments-variations.md) desde la consola **Assets**.
+>Para usar el [editor original](/help/assets/content-fragments/content-fragments-variations.md), primero abre el nuevo editor y luego desactiva el conmutador **Nuevo editor**.
 
 >[!NOTE]
 >
