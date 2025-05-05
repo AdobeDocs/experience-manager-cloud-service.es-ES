@@ -17,9 +17,9 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="Directrices de desarrollo de AEM as a Cloud Service"
 >abstract="Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS."
->additional-url="https://video.tv.adobe.com/v/345901?captions=spa" text="Demostración de la estructura del paquete"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Demostración de la estructura del paquete"
 
-Este documento presenta directrices para el desarrollo en AEM as a Cloud Service AEM AEM y acerca de formas importantes en las que difiere de la forma en que se realiza en las instalaciones y en la forma en que se realiza en AMS de forma.
+Este documento presenta directrices para el desarrollo en AEM as a Cloud Service y sobre formas importantes en que difiere de AEM local y de AEM en AMS.
 
 ## El código debe tener en cuenta el clúster {#cluster-aware}
 
@@ -37,7 +37,7 @@ El estado no debe conservarse en la memoria, sino que debe persistir en el repos
 
 No utilice el sistema de archivos de la instancia en AEM as a Cloud Service. El disco es efímero y se elimina cuando las instancias se reciclan. Es posible el uso limitado del sistema de archivos para el almacenamiento temporal relacionado con el procesamiento de solicitudes únicas, pero no se debe abusar de él para archivos enormes. Esto se debe a que puede tener un impacto negativo en la cuota de uso de recursos y encontrarse con limitaciones de disco.
 
-Por ejemplo, cuando no se admite el uso del sistema de archivos, el nivel de Publish debe garantizar que los datos que deban persistir se envíen a un servicio externo para un almacenamiento a largo plazo.
+Por ejemplo, cuando no se admite el uso del sistema de archivos, el nivel de publicación debe garantizar que los datos que deban persistir se envíen a un servicio externo para un almacenamiento a largo plazo.
 
 ## Observación {#observation}
 
@@ -51,27 +51,27 @@ Para minimizar los problemas, si es posible deben evitarse los trabajos de larga
 
 No utilice el Planificador de Sling Commons para la programación, ya que la ejecución no se puede garantizar. Es más probable que esté programado.
 
-Del mismo modo, con todo lo que se produce de forma asíncrona, como actuar sobre eventos de observación (ya sean eventos JCR o eventos de recursos Sling), no se puede garantizar su ejecución y, por lo tanto, debe utilizarse con cuidado. AEM Esto ya es así para implementaciones de en el presente.
+Del mismo modo, con todo lo que se produce de forma asíncrona, como actuar sobre eventos de observación (ya sean eventos JCR o eventos de recursos Sling), no se puede garantizar su ejecución y, por lo tanto, debe utilizarse con cuidado. Esto ya es así para las implementaciones de AEM en el presente.
 
 ## Conexiones HTTP salientes {#outgoing-http-connections}
 
 Se recomienda encarecidamente que todas las conexiones HTTP salientes establezcan tiempos de espera de conexión y lectura razonables; los valores sugeridos son 1 segundo para el tiempo de espera de conexión y 5 segundos para el tiempo de espera de lectura. Los números exactos deben determinarse en función del rendimiento del sistema backend que gestiona estas solicitudes.
 
-AEM Para el código que no aplica estos tiempos de espera, las instancias de que se ejecutan en AEM as a Cloud Service aplican un tiempo de espera global. Estos valores de tiempo de espera son de 10 segundos para llamadas de conexión y de 60 segundos para llamadas de lectura para conexiones.
+Para el código que no aplica estos tiempos de espera, las instancias de AEM que se ejecutan en AEM as a Cloud Service aplican un tiempo de espera global. Estos valores de tiempo de espera son de 10 segundos para llamadas de conexión y de 60 segundos para llamadas de lectura para conexiones.
 
-El Adobe recomienda el uso de la biblioteca [Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) proporcionada para realizar conexiones HTTP.
+Adobe recomienda el uso de la biblioteca [Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) proporcionada para realizar conexiones HTTP.
 
 Las alternativas que funcionan, pero que pueden requerir que usted proporcione la dependencia son las siguientes:
 
-* AEM [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) y/o [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (proporcionados por el usuario)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) y/o [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (proporcionados por AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (no se recomienda porque está obsoleto y se ha reemplazado por la versión 4.x)
-* AEM [Aceptar Http](https://square.github.io/okhttp/) (No proporcionado por el usuario
+* [Aceptar Http](https://square.github.io/okhttp/) (no proporcionado por AEM)
 
 Además de proporcionar tiempos de espera, se debe implementar un manejo adecuado de estos tiempos de espera y códigos de estado HTTP inesperados.
 
 ## Administrar límites de tasa de solicitud {#rate-limit-handling}
 
-AEM AEM Cuando la tasa de solicitudes entrantes que se van a supera los niveles correctos, responde a las nuevas solicitudes con el código de error HTTP 429. AEM Las aplicaciones que realizan llamadas programáticas a los programas pueden considerar la posibilidad de programar de forma defensiva, reintentando después de unos segundos con una estrategia de retroceso exponencial. AEM Antes de mediados de agosto de 2023, respondió a la misma condición con el código de error HTTP 503.
+Cuando la tasa de solicitudes entrantes a AEM supera los niveles en buen estado, AEM responde a las nuevas solicitudes con el código de error HTTP 429. Las aplicaciones que realizan llamadas programáticas a AEM pueden considerar la posibilidad de codificar de forma defensiva, reintentando después de unos segundos con una estrategia de retroceso exponencial. Antes de mediados de agosto de 2023, AEM respondía a la misma condición con el código de error HTTP 503.
 
 ## Sin personalizaciones de IU clásica {#no-classic-ui-customizations}
 
@@ -85,17 +85,17 @@ Además, el código no debe intentar descargar binarios nativos o extensiones ja
 
 ## Sin binarios de streaming a través de AEM as a Cloud Service {#no-streaming-binaries}
 
-AEM Se debe acceder a los binarios a través de la red de distribución de contenido (CDN), que servirá binarios fuera de los servicios principales de.
+Se debe acceder a los binarios a través de la CDN, que servirá binarios fuera de los servicios principales de AEM.
 
-Por ejemplo, no use `asset.getOriginal().getStream()`, que almacena en déclencheur AEM la descarga de un binario en el disco efímero del servicio de la unidad de disco de la aplicación de la aplicación de seguridad de la aplicación.
+Por ejemplo, no use `asset.getOriginal().getStream()`, que almacena en déclencheur la descarga de un binario en el disco efímero del servicio AEM.
 
 ## No hay agentes de replicación inversa {#no-reverse-replication-agents}
 
-La replicación inversa de Publish a Autor no se admite en AEM as a Cloud Service. Si se necesita una estrategia de este tipo, puede utilizar un almacén de persistencia externo que se comparta entre la granja de instancias de Publish y el clúster de creación.
+AEM as a Cloud Service no admite la replicación inversa de Publicar en Autor. Si se necesita una estrategia de este tipo, puede utilizar un almacén de persistencia externo que se comparta entre la granja de instancias de publicación y el clúster de creación.
 
 ## Es posible que sea necesario trasladar los agentes de replicación avanzada {#forward-replication-agents}
 
-El contenido se duplica de Autor a Publish a través de un mecanismo pub-sub. No se admiten agentes de replicación personalizados.
+El contenido se duplica de Autor a Publicación a través de un mecanismo pub-sub. No se admiten agentes de replicación personalizados.
 
 ## No hay sobrecarga de entornos de desarrollo {#overloading-dev-envs}
 
@@ -111,7 +111,7 @@ Por ejemplo, cambiar una definición de índice en un repositorio de contenido g
 
 Para el desarrollo local, las entradas de registros se escriben en archivos locales en la carpeta `/crx-quickstart/logs`.
 
-En entornos de Cloud, los desarrolladores pueden descargar registros a través de Cloud Manager o utilizar una herramienta de línea de comandos para rastrearlos. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+En entornos de Cloud, los desarrolladores pueden descargar registros a través de Cloud Manager o utilizar una herramienta de línea de comandos para rastrearlos. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Estableciendo el nivel de registro**
 
@@ -142,7 +142,7 @@ Por ejemplo, establezca `/apps/<example>/config/org.apache.sling.commons.log.Log
 
 No deje el registro en el nivel de registro DEBUG más tiempo del necesario, ya que esto genera muchas entradas.
 
-AEM Se pueden establecer niveles de registro discretos para los diferentes entornos de mediante la segmentación de configuración OSGi basada en el modo de ejecución si es deseable iniciar sesión siempre en `DEBUG` durante el desarrollo. Por ejemplo:
+Se pueden establecer niveles de registro discretos para los distintos entornos de AEM mediante la segmentación de configuración OSGi basada en el modo de ejecución si es deseable iniciar sesión siempre en `DEBUG` durante el desarrollo. Por ejemplo:
 
 | Entorno | Ubicación de configuración de OSGi por modo de ejecución | Valor de propiedad `org.apache.sling.commons.log.level` |
 | - | - | - |
@@ -166,13 +166,13 @@ Los niveles de registro son los siguientes:
 
 ### Volcados de procesos {#thread-dumps}
 
-Los volcados de hilos en entornos de Cloud se recopilan de forma continua, pero no se pueden descargar de forma automática en este momento. AEM Mientras tanto, póngase en contacto con el servicio de asistencia técnica de la si son necesarios volcados de hilos para depurar un problema, especificando la ventana de tiempo exacta.
+Los volcados de hilos en entornos de Cloud se recopilan de forma continua, pero no se pueden descargar de forma automática en este momento. Mientras tanto, póngase en contacto con el servicio de asistencia de AEM si son necesarios volcados de subprocesos para depurar un problema y especificar la ventana de tiempo exacta.
 
 ## CRX/DE Lite y AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
 ### Desarrollo local {#local-development}
 
-Para el desarrollo local, los desarrolladores tienen acceso completo al CRXDE Lite AEM (`/crx/de`) y a la consola web de la (`/system/console`).
+Para el desarrollo local, los desarrolladores tienen acceso completo a CRXDE Lite (`/crx/de`) y a la consola web de AEM (`/system/console`).
 
 En el desarrollo local (mediante SDK), `/apps` y `/libs` se pueden escribir directamente en, lo que es diferente de los entornos de la nube, donde esas carpetas de nivel superior son inmutables.
 
@@ -189,7 +189,7 @@ Los clientes pueden acceder a la lista CRXDE en el entorno de desarrollo del niv
 
 En su lugar, el Explorador de repositorios se puede iniciar desde AEM as a Cloud Service Developer Console, lo que proporciona una vista de solo lectura del repositorio para todos los entornos en los niveles de creación, publicación y vista previa. Para obtener más información, consulte [Explorador de repositorios](/help/implementing/developing/tools/repository-browser.md).
 
-Un conjunto de herramientas para depurar entornos de desarrollador de AEM as a Cloud Service está disponible en AEM as a Cloud Service Developer Console para entornos de RDE, desarrollo, fase y producción. La dirección URL se puede determinar ajustando las direcciones URL del autor o del servicio Publish de la siguiente manera:
+Un conjunto de herramientas para depurar entornos de desarrollador de AEM as a Cloud Service está disponible en AEM as a Cloud Service Developer Console para entornos de RDE, desarrollo, fase y producción. La dirección URL se puede determinar ajustando las direcciones URL del servicio de autor o publicación de la siguiente manera:
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -215,11 +215,11 @@ También resulta útil para la depuración, ya que AEM as a Cloud Service Develo
 
 ![Consola de desarrollador 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Para los programas de producción, el acceso a AEM as a Cloud Service Developer Console se define mediante la &quot;Cloud Manager - Developer Role&quot; en Adobe Admin Console, mientras que para los programas de zona protegida, AEM as a Cloud Service Developer Console está disponible para cualquier usuario con un perfil de producto que le permita acceder a AEM as a Cloud Service. Para todos los programas, se necesita &quot;Cloud Manager AEM AEM: función de desarrollador&quot; para los volcados de estado y el explorador de repositorios y los usuarios también deben definirse en el perfil de producto de los usuarios o administradores de la en los servicios de autor y publicación para ver los datos de ambos servicios. Para obtener más información sobre cómo configurar permisos de usuario, consulte [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=es).
+Para los programas de producción, el acceso a AEM as a Cloud Service Developer Console se define mediante la &quot;Cloud Manager - Developer Role&quot; en Adobe Admin Console, mientras que para los programas de zona protegida, AEM as a Cloud Service Developer Console está disponible para cualquier usuario con un perfil de producto que le permita acceder a AEM as a Cloud Service. Para todos los programas, se necesita &quot;Cloud Manager: función de desarrollador&quot; para los volcados de estado y el explorador de repositorios y los usuarios también deben definirse en el perfil de producto de los usuarios de AEM o los administradores de AEM en los servicios de autor y publicación para ver los datos de ambos servicios. Para obtener más información sobre cómo configurar permisos de usuario, consulte [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Monitorización del rendimiento {#performance-monitoring}
 
-El Adobe supervisa el rendimiento de la aplicación y toma medidas para controlar si se observa deterioro. En este momento, no se pueden observar las métricas de la aplicación.
+Adobe supervisa el rendimiento de las aplicaciones y toma medidas para controlar si se observa deterioro. En este momento, no se pueden observar las métricas de la aplicación.
 
 ## Envío de correo electrónico {#sending-email}
 
@@ -233,21 +233,21 @@ Las secciones siguientes describen cómo solicitar, configurar y enviar correos 
 
 De forma predeterminada, los puertos utilizados para enviar correo electrónico están desactivados. Para activar un puerto, configure [red avanzada](/help/security/configuring-advanced-networking.md), asegurándose de establecer para cada entorno necesario las reglas de reenvío de puertos del extremo `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, que asigna el puerto deseado (por ejemplo, 465 o 587) a un puerto proxy.
 
-Se recomienda configurar la red avanzada con un parámetro `kind` establecido en `flexiblePortEgress`, ya que el Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible. Si se necesita una dirección IP de salida única, elija un parámetro `kind` de `dedicatedEgressIp`. Si ya ha configurado una VPN por otros motivos, también puede utilizar la dirección IP única proporcionada por esa variación avanzada de red.
+Se recomienda configurar la red avanzada con un parámetro `kind` establecido en `flexiblePortEgress`, ya que Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible. Si se necesita una dirección IP de salida única, elija un parámetro `kind` de `dedicatedEgressIp`. Si ya ha configurado una VPN por otros motivos, también puede utilizar la dirección IP única proporcionada por esa variación avanzada de red.
 
 Debe enviar correo electrónico a través de un servidor de correo en lugar de directamente a los clientes de correo electrónico. De lo contrario, es posible que los correos electrónicos se bloqueen.
 
 ### Envío de correos electrónicos {#sending-emails}
 
-Se debe usar el servicio OSGI del servicio de correo CQ de [Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=es#configuring-the-mail-service) y los mensajes de correo electrónico se deben enviar al servidor de correo indicado en la solicitud de soporte en lugar de directamente a los destinatarios.
+Se debe usar el servicio OSGI del servicio de correo CQ de [Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) y los mensajes de correo electrónico se deben enviar al servidor de correo indicado en la solicitud de soporte en lugar de directamente a los destinatarios.
 
 ### Configuración {#email-configuration}
 
-AEM Los mensajes de correo electrónico en la dirección de correo electrónico de la dirección de correo electrónico se deben enviar mediante el servicio OSGi de CQ Mail [Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=es#configuring-the-mail-service).
+Los mensajes de correo electrónico en AEM se deben enviar mediante el servicio OSGi [Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-AEM Consulte la [documentación de 6.5 de](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=es) para obtener más información sobre cómo configurar el correo electrónico. Para AEM as a Cloud Service, tenga en cuenta los siguientes ajustes necesarios en el servicio `com.day.cq.mailer.DefaultMailService OSGI`:
+Consulte la [documentación de AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) para obtener más información sobre cómo configurar el correo electrónico. Para AEM as a Cloud Service, tenga en cuenta los siguientes ajustes necesarios en el servicio `com.day.cq.mailer.DefaultMailService OSGI`:
 
-* AEM El nombre de host del servidor SMTP debe establecerse en $[env:_PROXY_HOST;default=proxy.túnel]
+* El nombre de host del servidor SMTP debe establecerse en $[env:AEM_PROXY_HOST;default=proxy.túnel]
 * El puerto del servidor SMTP debe establecerse en el valor del puerto proxy original establecido en el parámetro portForwards utilizado en la llamada de API al configurar la red avanzada. Por ejemplo, 30465 (en lugar de 465)
 
 El puerto del servidor SMTP debe establecerse como el valor `portDest` establecido en el parámetro portForwards utilizado en la llamada API al configurar la red avanzada y el valor `portOrig` debe ser un valor significativo que se encuentre dentro del intervalo requerido de 30000 - 30999. Por ejemplo, si el puerto del servidor SMTP es 465, el puerto 30465 debe usarse como el valor `portOrig`.
@@ -307,4 +307,4 @@ Consulte la [documentación de Apache Oak](https://jackrabbit.apache.org/oak/doc
 
 ## Directrices de desarrollo y casos de uso de [!DNL Assets] {#use-cases-assets}
 
-Para obtener más información acerca de los casos de uso de desarrollo, recomendaciones y materiales de referencia para Assets as a Cloud Service, consulte [Referencias de desarrollador para Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+Para obtener más información sobre los casos de uso de desarrollo, recomendaciones y materiales de referencia para Assets as a Cloud Service, consulte [Referencias de desarrollador para Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
