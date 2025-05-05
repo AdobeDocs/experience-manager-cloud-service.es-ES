@@ -52,7 +52,7 @@ ht-degree: 2%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] configura el conector mejorado después de instalarlo. Para obtener instrucciones de instalación, consulte [Instalar el conector](/help/assets/workfront-integrations.md).

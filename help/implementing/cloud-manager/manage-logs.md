@@ -101,5 +101,5 @@ Consulte los siguientes recursos adicionales para obtener más información sobr
 
 Consulte los siguientes recursos adicionales para obtener más información sobre los archivos de registro en AEM as a Cloud Service:
 
-* AEM [Archivos de registro de Cloud 5](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* AEM [Archivos de registro de Cloud 5](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html?lang=es)
 * [Depuración de AEM as a Cloud Service mediante registros](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=es)

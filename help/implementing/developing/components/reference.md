@@ -65,8 +65,8 @@ Esta filosofía es compatible con [HTL](https://experienceleague.adobe.com/docs/
 
 Esta lógica (opcional) se puede implementar de diferentes maneras y se invoca desde HTL con comandos específicos:
 
-* Uso de Java: [La API para uso de Java de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada. Esto permite utilizar código Java para implementar la lógica de selección y configuración del contenido del componente.
-* Uso de JavaScript: [La API de uso de JavaScript de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) permite que un archivo HTL acceda al código de ayuda escrito en JavaScript. Esto permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
+* Uso de Java: [La API para uso de Java de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=es) permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada. Esto permite utilizar código Java para implementar la lógica de selección y configuración del contenido del componente.
+* Uso de JavaScript: [La API de uso de JavaScript de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=es) permite que un archivo HTL acceda al código de ayuda escrito en JavaScript. Esto permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
 * Uso de bibliotecas del lado del cliente: los sitios web modernos dependen en gran medida del procesamiento del lado del cliente impulsado por código CSS y JavaScript complejo. Consulte el documento [Uso de bibliotecas del lado del cliente en AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obtener más información.
 
 ## Estructura del componente {#structure}

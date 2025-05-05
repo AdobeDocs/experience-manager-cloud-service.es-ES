@@ -69,7 +69,7 @@ Para integrar AEM Forms con el servicio hCaptcha®, realice los siguientes pasos
    >[!NOTE]
    > Los usuarios no tienen que modificar [la URL de validación de JavaScript del lado del cliente](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) y [la URL de validación del lado del servidor](https://docs.hcaptcha.com/#verify-the-user-response-server-side), ya que ya están rellenadas previamente para la validación de hCaptcha®.
 
-   Una vez configurado el servicio hCAPTCHA, estará disponible para su uso en un [formulario adaptable basado en componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
+   Una vez configurado el servicio hCAPTCHA, estará disponible para su uso en un [formulario adaptable basado en componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
 ## Usar hCaptcha® en componentes principales de Forms adaptable {#using-hCaptcha®-core-components}
 

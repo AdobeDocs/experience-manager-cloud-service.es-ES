@@ -18,7 +18,7 @@ ht-degree: 20%
 
 ![Flujo de trabajo](/help/forms/assets/workflow-marketo-3.png)
 
-El editor de Forms adaptable proporciona la acción de envío **Enviar al Marketo Engage** para enviar datos de Forms adaptables a Adobe Marketo Engage para su procesamiento. Puede configurar un formulario adaptable existente para enviar datos a [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) en el envío.
+El editor de Forms adaptable proporciona la acción de envío **Enviar al Marketo Engage** para enviar datos de Forms adaptables a Adobe Marketo Engage para su procesamiento. Puede configurar un formulario adaptable existente para enviar datos a [Adobe Marketo Engage](https://experienceleague.adobe.com/es/docs/marketo/using/home) en el envío.
 
 Hay disponibles varias acciones de envío listas para usar para administrar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
 
@@ -56,7 +56,7 @@ Después de configurar la acción de envío para el formulario adaptable como **
 
 ## Siguiente paso
 
-También puede conectar un formulario adaptable con la [biblioteca de Munchkin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) para hacer un seguimiento del número de visitas, clics y envíos de formularios.
+También puede conectar un formulario adaptable con la [biblioteca de Munchkin](https://experienceleague.adobe.com/es/docs/marketo/using/product-docs/administration/setup/munchkin) para hacer un seguimiento del número de visitas, clics y envíos de formularios.
 
 ## Artículos relacionados
 

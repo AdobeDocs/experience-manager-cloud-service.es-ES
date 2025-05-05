@@ -22,7 +22,7 @@ Además de esta documentación, también hay una serie de tutoriales diseñados 
 >
 >Puede configurar la red avanzada en AEM as a Cloud Service a través de la interfaz de usuario de Cloud Manager o mediante la API de Cloud Manager (por ejemplo, cURL).
 >
->Este artículo se centra en el uso del método de interfaz de usuario. Si prefiere automatizar la configuración a través de la API, consulte el [tutorial de red privada virtual (VPN)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Este artículo se centra en el uso del método de interfaz de usuario. Si prefiere automatizar la configuración a través de la API, consulte el [tutorial de red privada virtual (VPN)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 >**Automatizar redes avanzadas con la API**
 >Para automatizar la configuración avanzada de red (como la creación de VPN), puede utilizar la API de Cloud Manager:
@@ -44,7 +44,7 @@ Además de esta documentación, también hay una serie de tutoriales diseñados 
 >   }'
 >```
 >
->Consulte el tutorial completo y más ejemplos de API en el tutorial de [Red privada virtual (VPN)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Consulte el tutorial completo y más ejemplos de API en el tutorial de [Red privada virtual (VPN)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 
 ## Información general {#overview}
@@ -59,7 +59,7 @@ En este artículo se describe cada una de estas opciones en detalle y por qué p
 
 >[!CAUTION]
 >
->Si ya dispone de tecnología de salida dedicada heredada y quiere configurar una de estas opciones de redes avanzadas, [póngase en contacto con el servicio de atención al cliente de Adobe.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=es#home)
+>Si ya dispone de tecnología de salida dedicada heredada y quiere configurar una de estas opciones de redes avanzadas, [póngase en contacto con el servicio de atención al cliente de Adobe.](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&amp;lang=es#home)
 >
 >Si se intenta configurar redes avanzadas con tecnología de salida heredada, la conectividad del sitio puede verse afectada.
 

@@ -20,7 +20,7 @@ Haga clic en la tarjeta del proyecto para abrir la página de aterrizaje del pro
 ![Activar](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->Consulte [Creación y administración de un proyecto en Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project) para obtener más información.
+>Consulte [Creación y administración de un proyecto en Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=es#create-project) para obtener más información.
 
 
 ## Uso de la tarjeta Actividad de lanzamiento {#go-live}

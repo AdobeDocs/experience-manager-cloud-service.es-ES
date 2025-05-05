@@ -42,9 +42,9 @@ En la siguiente sección se describen las notas de la versión generales de Expe
 
 * Utilice un perfil de procesamiento para generar metadatos personalizados mediante Compute Service. Ver [metadatos personalizados con perfil de procesamiento](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Una experiencia de descarga más sencilla para los usuarios de Brand Portal, que los administradores pueden configurar. Ver [descripción general de la experiencia de descarga](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
+* Una experiencia de descarga más sencilla para los usuarios de Brand Portal, que los administradores pueden configurar. Ver [descripción general de la experiencia de descarga](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es#download-configurations).
 
-* Las previsualizaciones de documentos nativas y de PDF de alta fidelidad ya están disponibles en Brand Portal. Ver [descripción general del visor de documentos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+* Las previsualizaciones de documentos nativas y de PDF de alta fidelidad ya están disponibles en Brand Portal. Ver [descripción general del visor de documentos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es#doc-viewer).
 
 * Ahora puede invalidar la caché de la red de distribución de contenido (CDN) directamente desde [!DNL Dynamic Media] en AEM as a Cloud Service (en lugar de usar [!DNL Dynamic Media Classic]). Garantiza que los recursos más recientes se proporcionen en minutos en lugar de horas. Ver [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 

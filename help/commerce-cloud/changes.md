@@ -40,7 +40,7 @@ CIF **Versiones anteriores**
 
 ## CIF Implementación del proyecto Venia de la
 
-El proyecto está disponible en [repositorio Git de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) y la implementación se realizó a través de [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
+El proyecto está disponible en [repositorio Git de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html?lang=es) y la implementación se realizó a través de [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es)
 
 CIF **Versiones anteriores**
 

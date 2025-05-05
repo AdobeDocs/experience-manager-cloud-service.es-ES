@@ -22,7 +22,7 @@ Puede utilizar el visualizador de vídeo 360/VR para procesar vídeo equirectang
 
 Actualmente no se admite audio espacial; si el audio se mezcla en estéreo, el equilibrio (I/D) no cambia a medida que el cliente cambia el ángulo de visión de la cámara.
 
-Ver [Uso de vídeos de Dynamic Media 360 y miniaturas de vídeo personalizadas con AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
+Ver [Uso de vídeos de Dynamic Media 360 y miniaturas de vídeo personalizadas con AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html?lang=es#dynamic-media).
 
 Consulte también [Administración de ajustes preestablecidos de visor](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -37,7 +37,7 @@ Seleccione [Estación espacial 360](https://s7d1.scene7.com/s7viewers/html5/Vide
 
 Puede utilizar Adobe Premier Pro para ver y editar material de archivo de 360/VR. Por ejemplo, puede colocar logotipos y texto correctamente en una escena y aplicar efectos y transiciones diseñados específicamente para medios equirectangulares.
 
-Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
+Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/es/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Carga de recursos para utilizarlos con el visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 

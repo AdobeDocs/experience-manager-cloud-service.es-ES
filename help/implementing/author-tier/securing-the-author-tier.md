@@ -13,7 +13,7 @@ ht-degree: 31%
 
 # Protección del nivel de Author {#securing-the-author-tier}
 
-Al crear un entorno con AEM as a Cloud Service, el nivel de Author resultante es accesible desde Internet de forma predeterminada. Es posible seguir configurando las directivas de red para proteger el acceso a su nivel de Author. Consulte [Aplicación de una Lista de permitidos IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html) para obtener más información. El procedimiento consiste en la autorización de los rangos IP a los que se debe otorgar acceso de red al entorno de Author.
+Al crear un entorno con AEM as a Cloud Service, el nivel de Author resultante es accesible desde Internet de forma predeterminada. Es posible seguir configurando las directivas de red para proteger el acceso a su nivel de Author. Consulte [Aplicación de una Lista de permitidos IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=es) para obtener más información. El procedimiento consiste en la autorización de los rangos IP a los que se debe otorgar acceso de red al entorno de Author.
 
 Para establecer estas reglas, envíe un vale de soporte técnico de [Adobe Admin Console](https://adminconsole.adobe.com/) con la información solicitada:
 

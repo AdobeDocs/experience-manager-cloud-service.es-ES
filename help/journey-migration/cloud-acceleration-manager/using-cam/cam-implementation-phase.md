@@ -130,4 +130,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## Siguientes pasos {#whats-next}
 
-Después de haber aprendido a iniciar sesión en Cloud Acceleration Manager y a utilizar la fase de implementación, está listo para pasar a revisar el siguiente paso en la [fase de lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).
+Después de haber aprendido a iniciar sesión en Cloud Acceleration Manager y a utilizar la fase de implementación, está listo para pasar a revisar el siguiente paso en la [fase de lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=es).

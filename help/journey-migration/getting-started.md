@@ -56,7 +56,7 @@ También puede consultar el diagrama siguiente para obtener una vista más detal
 
 Además de los pasos descritos en este recorrido, Adobe proporciona Cloud Acceleration Manager, una aplicación basada en la nube diseñada para guiar a sus equipos de TI a lo largo del recorrido de transición, desde la planificación hasta el lanzamiento en el servicio en la nube. Configure sus equipos para una migración correcta con prácticas recomendadas por Adobe, sugerencias, documentación y herramientas que le ayudarán en cada fase del recorrido a AEM as Cloud Service.
 
-Puede consultar la [documentación de Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) o ver un [vídeo introductorio](https://experienceleague.adobe.com/en/playlists/experience-manager-all-move-to-cloud-service#dashboard/learning) para iniciar el recorrido de migración.
+Puede consultar la [documentación de Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) o ver un [vídeo introductorio](https://experienceleague.adobe.com/es/playlists/experience-manager-all-move-to-cloud-service#dashboard/learning) para iniciar el recorrido de migración.
 
 ## Siguientes pasos {#what-is-next}
 

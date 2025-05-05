@@ -23,7 +23,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido versión
 
 ### Novedades {#what-is-new-ctt}
 
-* Se ha agregado la opción de alternancia a la fase de extracción en la herramienta de transferencia de contenido para permitir que los usuarios deshabiliten la [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante la extracción. Para obtener velocidades de extracción óptimas, la copia previa durante la extracción debe deshabilitarse para conjuntos de migración pequeños o si solo se han agregado unos pocos blobs desde la última extracción.
+* Se ha agregado la opción de alternancia a la fase de extracción en la herramienta de transferencia de contenido para permitir que los usuarios deshabiliten la [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=es) durante la extracción. Para obtener velocidades de extracción óptimas, la copia previa durante la extracción debe deshabilitarse para conjuntos de migración pequeños o si solo se han agregado unos pocos blobs desde la última extracción.
 
 ### Correcciones de errores {#bug-fixes-ctt}
 

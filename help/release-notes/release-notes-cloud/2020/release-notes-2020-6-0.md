@@ -119,7 +119,7 @@ Las organizaciones ahora pueden almacenar y utilizar archivos 3D en AEM Assets. 
 
 **Compatibilidad con Adobe Asset Link para Adobe XD**
 
-Con la última versión, [!DNL Experience Manager Assets] ofrece compatibilidad con un nuevo complemento [!DNL Adobe Asset Link] que se incluye en la versión [!DNL Adobe XD] v29.3. La integración permite a los diseñadores acceder y utilizar recursos desde [!DNL Experience Manager] en sus diseños, sin necesidad de salir de la aplicación [!DNL Adobe XD]. Consulte [Adobe Asset Link para obtener la documentación de Adobe XD](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
+Con la última versión, [!DNL Experience Manager Assets] ofrece compatibilidad con un nuevo complemento [!DNL Adobe Asset Link] que se incluye en la versión [!DNL Adobe XD] v29.3. La integración permite a los diseñadores acceder y utilizar recursos desde [!DNL Experience Manager] en sus diseños, sin necesidad de salir de la aplicación [!DNL Adobe XD]. Consulte [Adobe Asset Link para obtener la documentación de Adobe XD](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link-for-xd.html).
 
 Con esta versión, los usuarios y diseñadores creativos ahora pueden trabajar con recursos gestionados en [!DNL AEM Assets] el uso [!DNL Adobe Asset Link] en una serie de aplicaciones de escritorio de Creative Cloud, incluidas [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator]y [!DNL InDesign].
 

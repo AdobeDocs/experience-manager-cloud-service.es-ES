@@ -93,7 +93,7 @@ Esta configuración del mundo real puede utilizarse como modelo y luego personal
 
 >[!TIP]
 >
->Consulte [Trabajar con varios repositorios de Git de Source](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) para obtener más información sobre esta configuración.
+>Consulte [Trabajar con varios repositorios de Git de Source](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) para obtener más información sobre esta configuración.
 
 ### Consideraciones para una configuración de varios equipos {#considerations}
 

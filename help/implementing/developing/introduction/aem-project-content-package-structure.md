@@ -72,7 +72,7 @@ La estructura de implementación de la aplicación recomendada es la siguiente:
       + `/apps/settings`
    + ACL (permisos)
       + Cualquier `rep:policy` para cualquier ruta de acceso bajo `/apps`
-   + [Scripts agrupados precompilados](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [Scripts agrupados precompilados](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html?lang=es)
 
 >[!NOTE]
 >

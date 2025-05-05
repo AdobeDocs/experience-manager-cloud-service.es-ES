@@ -66,7 +66,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de agosto de 2
 
 * **Documento de registro basado en Acrobat**: Compatibilidad de AEM Forms as a Cloud Service con [formularios PDF de Adobe Acrobat (PDF de Acrobat)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=es) como plantilla para documentos de registro además de la plantilla de formulario basada en XFA.
 
-* **Conector del almacén de datos de Microsoft® Azure**: Ahora puede [conectar el modelo de datos de formulario a Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Permite recuperar y almacenar datos de formulario adaptables en Microsoft® Azure Storage como BLOB.
+* **Conector del almacén de datos de Microsoft® Azure**: Ahora puede [conectar el modelo de datos de formulario a Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=es). Permite recuperar y almacenar datos de formulario adaptables en Microsoft® Azure Storage como BLOB.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 

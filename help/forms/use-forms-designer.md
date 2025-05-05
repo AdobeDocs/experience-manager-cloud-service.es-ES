@@ -18,8 +18,8 @@ Designer es una herramienta gráfica de diseño de formularios que simplifica la
 En los siguientes documentos se proporcionan instrucciones para utilizar Designer para crear plantillas XDP y PDF forms:
 
 + [Usar Designer](assets/using-designer-cs.pdf)
-+ [Tutoriales de inicio rápido de Designer ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
-+ [Muestras de Designer ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-samples.pdf)
-+ [Conceptos básicos de scripts en Designer ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
-+ [Referencia de scripts en Designer](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
-+ [Referencia de FormCalc de Designer](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)
++ [Tutoriales de inicio rápido de Designer ](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
++ [Muestras de Designer ](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/designer-samples.pdf)
++ [Conceptos básicos de scripts en Designer ](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
++ [Referencia de scripts en Designer](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
++ [Referencia de FormCalc de Designer](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)

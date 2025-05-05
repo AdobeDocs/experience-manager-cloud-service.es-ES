@@ -18,7 +18,7 @@ ht-degree: 10%
 
 # Introducción a AEM Commerce as a Cloud Service {#start}
 
-Para empezar a usar Adobe Experience Manager (AEM) Commerce as a Cloud Service, su Experience Manager Cloud Service debe estar aprovisionado con el complemento de Commerce integration framework (CIF). El complemento de CIF es un módulo adicional sobre [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+Para empezar a usar Adobe Experience Manager (AEM) Commerce as a Cloud Service, su Experience Manager Cloud Service debe estar aprovisionado con el complemento de Commerce integration framework (CIF). El complemento de CIF es un módulo adicional sobre [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html?lang=es).
 
 ## Incorporación {#onboarding}
 
@@ -29,7 +29,7 @@ La incorporación de AEM Commerce as a Cloud Service es un proceso de dos pasos:
 
 El primer paso de incorporación lo realiza Adobe. Para obtener más información sobre precios y aprovisionamiento, debe ponerse en contacto con su representante de ventas.
 
-Una vez que se le haya proporcionado el complemento de CIF, se aplicará a cualquier programa de Cloud Manager existente. Si no tiene un programa de Cloud Manager, debe crear uno. Para obtener más información, consulta [Configurar tu programa](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
+Una vez que se le haya proporcionado el complemento de CIF, se aplicará a cualquier programa de Cloud Manager existente. Si no tiene un programa de Cloud Manager, debe crear uno. Para obtener más información, consulta [Configurar tu programa](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=es).
 
 El segundo paso es el autoservicio para cada entorno de AEM as a Cloud Service. Hay algunas configuraciones adicionales que debe realizar después del aprovisionamiento inicial del complemento de CIF.
 

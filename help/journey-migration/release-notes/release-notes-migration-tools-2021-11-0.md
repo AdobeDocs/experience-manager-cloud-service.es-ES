@@ -27,6 +27,6 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.7.2 e
 
 ### Novedades {#what-is-new-ctt}
 
-* AEM Se agregó compatibilidad con un paso [previo a la copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) opcional para utilizarlo con la herramienta de transferencia de contenido cuando la instancia de origen está configurada para usar el almacén de datos de archivo a fin de acelerar en gran medida la fase de extracción.
+* AEM Se agregó compatibilidad con un paso [previo a la copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=es) opcional para utilizarlo con la herramienta de transferencia de contenido cuando la instancia de origen está configurada para usar el almacén de datos de archivo a fin de acelerar en gran medida la fase de extracción.
 
 * Se han agregado mensajes descriptivos adicionales a la fase de ingesta en la IU de la herramienta de transferencia de contenido para indicar cuándo están en curso los pasos de indexación y recuperación de mongo.

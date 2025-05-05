@@ -48,7 +48,7 @@ El patrón debe ser `/graphql/execute.json/thePath`.
 
 En tal caso, la consulta devuelve el código de error `405`.
 
-Este error no es algo específico de GraphQL. Consulte el artículo de la BC [Error 405 no permitido](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
+Este error no es algo específico de GraphQL. Consulte el artículo de la BC [Error 405 no permitido](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-20824).
 
 ## Bloqueado por Dispatcher {#blocked-dispatcher}
 

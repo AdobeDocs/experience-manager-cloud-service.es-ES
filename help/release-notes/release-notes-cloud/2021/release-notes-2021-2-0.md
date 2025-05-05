@@ -57,13 +57,13 @@ La de la siguiente versión (2021.3.0) será el 25 de marzo de 2021.
 
 * Assets puede obtenerse usando [!DNL Experience Manager Assets Brand Portal]. Ayuda a obtener activos de los usuarios de la agencia para nuevas campañas de marketing, fotos y proyectos.
 
-* [!DNL Experience Manager Assets] como [!DNL Cloud Service] tiene derecho a tener una instancia preconfigurada de [!DNL Brand Portal]. El usuario [!DNL Cloud Manager] puede activar [!DNL Brand Portal] en [!DNL Experience Manager Assets] como [!DNL Cloud Service]. Consulte [activar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+* [!DNL Experience Manager Assets] como [!DNL Cloud Service] tiene derecho a tener una instancia preconfigurada de [!DNL Brand Portal]. El usuario [!DNL Cloud Manager] puede activar [!DNL Brand Portal] en [!DNL Experience Manager Assets] como [!DNL Cloud Service]. Consulte [activar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=es).
 
 * Las empresas ahora pueden obtener recursos mediante [!DNL Brand Portal]. La función de obtención de recursos usa [!DNL Brand Portal] para ayudar a los clientes a interactuar con los usuarios de la agencia a fin de que obtengan recursos para nuevas campañas de marketing, fotos y proyectos. Ver [abastecimiento de recursos en [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es).
 
-* El informe de uso de [!DNL Brand Portal] ahora muestra solamente los usuarios activos. Los usuarios inactivos no se muestran ahora. Los usuarios activos son aquellos cuya cuenta se ha asignado a un perfil de producto en [!DNL Admin Console]. Ver [[!DNL Brand Portal] informes](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
+* El informe de uso de [!DNL Brand Portal] ahora muestra solamente los usuarios activos. Los usuarios inactivos no se muestran ahora. Los usuarios activos son aquellos cuya cuenta se ha asignado a un perfil de producto en [!DNL Admin Console]. Ver [[!DNL Brand Portal] informes](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=es).
 
-* En [!DNL Brand Portal], hay una nueva configuración de descarga que permite crear carpetas independientes para cada recurso al descargar carpetas, colecciones, etc. Ver [configuración de descarga](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
+* En [!DNL Brand Portal], hay una nueva configuración de descarga que permite crear carpetas independientes para cada recurso al descargar carpetas, colecciones, etc. Ver [configuración de descarga](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=es).
 
 ## Correcciones de errores en [!DNL Assets] {#bug-fixes-assets}
 
@@ -138,7 +138,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.2.2 e
 ### Novedades de la herramienta de transferencia de contenido {#what-is-new-ctt}
 
 * Nueva capacidad e IU agregada a la herramienta de transferencia de contenido: herramienta de asignación de usuarios. Esta función asigna automáticamente los usuarios y grupos existentes a sus ID de sistema de Identity Management de Adobe como parte de la actividad de migración de contenido.
-Consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obtener más información.
+Consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=es) para obtener más información.
 * La herramienta de transferencia de contenido ahora migra todos los grupos y usuarios a los que se hace referencia en el conjunto de migración, incluidos los elementos secundarios.
 * Los usuarios pueden seleccionar ciertas rutas en `/etc` al crear conjuntos de migración.
 
@@ -161,7 +161,7 @@ La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.2 es el 1
 ### Novedades de las herramientas de refactorización de código {#what-is-new-crt}
 
 * Se ha lanzado la nueva versión del complemento AIO-CLI. La versión más reciente de este complemento incluye varias correcciones de errores para el Modernizador de repositorios.
-Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) para obtener más información sobre este complemento.
+Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=es#benefits) para obtener más información sobre este complemento.
 
 ### Correcciones de errores {#bug-fixes-crt}
 

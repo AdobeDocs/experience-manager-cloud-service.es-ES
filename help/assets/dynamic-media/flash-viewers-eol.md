@@ -16,4 +16,4 @@ ht-degree: 7%
 
 A partir del 31 de enero de 2017, la compatibilidad con la plataforma de visor de Flashes finalizará oficialmente.
 
-Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) para conocer los visores compatibles más recientes.
+Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=es) para conocer los visores compatibles más recientes.

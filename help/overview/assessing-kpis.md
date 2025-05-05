@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_assesskpis"
 >title="Evaluación de los indicadores clave de rendimiento (KPI)"
 >abstract="Antes de comenzar el lanzamiento de Adobe Experience Manager, todas las personas que tengan participación en el proyecto deben saber cuáles son los tres KPI principales y por qué importan."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Alineación de los KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Elección del equipo adecuado"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=es" text="Alineación de los KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=es" text="Elección del equipo adecuado"
 
 Antes de comenzar el lanzamiento de Adobe Experience Manager, todas las personas que tengan participación en el proyecto deben saber cuáles son los tres KPI principales y por qué importan.
 

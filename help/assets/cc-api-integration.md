@@ -97,7 +97,7 @@ Para habilitar el complemento de automatización de contenido para el programa d
 1. Haga clic en **[!UICONTROL Continuar]**.
 1. Expanda **[!UICONTROL Assets]** y seleccione **[!UICONTROL Automatización de contenido]**.
 1. Haga clic en **[!UICONTROL Crear]**.
-1. Ejecute la canalización para [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Ejecute la canalización para [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=es).
 
 Si necesita agregar el complemento de automatización de contenido a un programa de AEM as a Cloud Service existente en Cloud Manager:
 
@@ -107,7 +107,7 @@ Si necesita agregar el complemento de automatización de contenido a un programa
 
 1. Expanda **[!UICONTROL Assets]** y seleccione **[!UICONTROL Automatización de contenido]**.
 1. Haga clic en **[!UICONTROL Actualizar]**.
-1. Ejecute la canalización para [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Ejecute la canalización para [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=es).
 
 ## Utilice un perfil de procesamiento para editar sus recursos creativos de forma masiva {#process-assets}
 

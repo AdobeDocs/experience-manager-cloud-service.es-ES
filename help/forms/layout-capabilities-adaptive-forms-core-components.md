@@ -58,7 +58,7 @@ El diseño del asistente ayuda a simplificar un formulario complejo dividiéndol
 
 Diseño del asistente
 
-Puede usar el [componente de asistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para agregar el diseño de asistente en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de asistente, consulte el artículo [componente de asistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+Puede usar el [componente de asistente](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para agregar el diseño de asistente en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de asistente, consulte el artículo [componente de asistente](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 >[!TAB Diseño de fichas verticales]
 
@@ -80,7 +80,7 @@ El diseño de pestañas horizontales también se conoce como Tabulaciones en el 
 
 Diseño de pestañas horizontales
 
-Puede usar el componente [pestañas horizontales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para agregar el diseño de pestañas horizontales en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de pestañas horizontales, consulte el artículo [componente de pestañas horizontales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+Puede usar el componente [pestañas horizontales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para agregar el diseño de pestañas horizontales en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de pestañas horizontales, consulte el artículo [componente de pestañas horizontales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
 >[!TAB Diseño de acordeón]
@@ -91,7 +91,7 @@ El diseño de acordeón muestra el contenido en secciones o paneles contraíbles
 
 Diseño de acordeón
 
-Puede usar el [componente de acordeón](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para agregar el diseño de acordeón en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de acordeón, consulte el artículo [componente de acordeón](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+Puede usar el [componente de acordeón](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para agregar el diseño de acordeón en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de acordeón, consulte el artículo [componente de acordeón](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
 >[!ENDTABS]
 

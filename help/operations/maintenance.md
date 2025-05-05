@@ -47,14 +47,14 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
   <tr>
     <td>Depuración de la versión</td>
     <td>Cliente</td>
-    <td>La depuración de versiones está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
+    <td>La depuración de versiones está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Purga del registro de auditoría</td>
     <td>Cliente</td>
-    <td>La depuración del registro de auditoría está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración del registro de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
+    <td>La depuración del registro de auditoría está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración del registro de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
    </td>
    </td>
   </tr>
@@ -85,7 +85,7 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
     <td>Cliente</td>
     <td>
     <p>Debe hacerse en Git. Anule el nodo de configuración de la ventana de mantenimiento predeterminado en <code>/libs</code> creando propiedades en la carpeta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración.</p>
-    <p>Habilite la tarea de mantenimiento añadiendo otro nodo bajo el anterior (asígnele el nombre <code>granite_ProjectPurgeTask</code>) con las propiedades adecuadas. Consulte la lista de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">propiedades OSGi</a> para la <b>configuración de depuración de proyectos de Adobe</b> .</p>
+    <p>Habilite la tarea de mantenimiento añadiendo otro nodo bajo el anterior (asígnele el nombre <code>granite_ProjectPurgeTask</code>) con las propiedades adecuadas. Consulte la lista de <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">propiedades OSGi</a> para la <b>configuración de depuración de proyectos de Adobe</b> .</p>
   </td>
   </tr>
   </tbody>

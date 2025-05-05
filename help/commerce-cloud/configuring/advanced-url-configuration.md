@@ -22,7 +22,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
-> La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. Como resultado, las preocupaciones de SEO deben abordarse en muchos proyectos en Adobe Experience Manager (AEM) as a Cloud Service. Consulte [Prácticas recomendadas para la administración de direcciones URL y SEO](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html) para obtener más información.
+> La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. Como resultado, las preocupaciones de SEO deben abordarse en muchos proyectos en Adobe Experience Manager (AEM) as a Cloud Service. Consulte [Prácticas recomendadas para la administración de direcciones URL y SEO](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=es) para obtener más información.
 
 Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) proporcionan configuraciones avanzadas para personalizar las direcciones URL de las páginas de productos y categorías. Muchas implementaciones personalizan estas direcciones URL con fines de optimización de los motores de búsqueda (SEO). En el siguiente vídeo se explica cómo configurar el `UrlProvider` servicio y las funciones de las [Asignaciones de Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para personalizar las direcciones URL de las páginas de productos y categorías.
 
@@ -256,5 +256,5 @@ El proyecto [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-gui
 ## Recursos adicionales {#additional}
 
 * [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia)
-* [Asignación de recursos de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [Asignación de recursos de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=es)
 * [Asignaciones de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

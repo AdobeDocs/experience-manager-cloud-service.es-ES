@@ -22,7 +22,7 @@ En soluciones anteriores de AEM, el [Administrador de paquetes](/help/implementi
 Existen varias opciones para incluir los paquetes en un proyecto:
 
 1. Repositorio público del partner: un partner alojaría el paquete de contenido en un repositorio Maven accesible públicamente
-1. Repositorio protegido por contraseña del partner: un partner alojaría el paquete de contenido en un repositorio Maven protegido por contraseña. Consulte [repositorios Maven protegidos por contraseña](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories) para obtener instrucciones.
+1. Repositorio protegido por contraseña del partner: un partner alojaría el paquete de contenido en un repositorio Maven protegido por contraseña. Consulte [repositorios Maven protegidos por contraseña](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=es#password-protected-maven-repositories) para obtener instrucciones.
 1. Artefacto integrado: en este caso, el paquete de conector se incluye localmente en el proyecto Maven del cliente.
 
 Independientemente de dónde estén alojados, se debe hacer referencia a los paquetes como dependencias en el archivo pom.xml, tal como lo proporciona el proveedor.

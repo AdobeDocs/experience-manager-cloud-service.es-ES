@@ -31,7 +31,7 @@ Todas las variaciones de depuración comparten lo siguiente:
 >[!CAUTION]
 >La depuración de la caché de la CDN, especialmente con el indicador estricto, aumentará el tráfico en el origen y podría provocar una interrupción cuando no se ejecute correctamente.
 
-Puede hacer referencia a [un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) centrado en la configuración de claves de depuración y en la depuración de la caché de la CDN.
+Puede hacer referencia a [un tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) centrado en la configuración de claves de depuración y en la depuración de la caché de la CDN.
 
 ## Purga de URL única {#single-purge}
 

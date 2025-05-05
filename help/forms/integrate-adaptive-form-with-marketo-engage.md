@@ -18,7 +18,7 @@ ht-degree: 9%
 
 ![Flujo de trabajo](/help/forms/assets/workflow-marketo-4.png)
 
-Después de crear la configuración del servicio en la nube para integrar Marketo Engage con AEM Forms, puede configurar un formulario adaptable para integrarlo con [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home).
+Después de crear la configuración del servicio en la nube para integrar Marketo Engage con AEM Forms, puede configurar un formulario adaptable para integrarlo con [Adobe Marketo Engage](https://experienceleague.adobe.com/es/docs/marketo/using/home).
 
 Puede conectar Marketo Engage a un formulario adaptable mediante el asistente de formularios, que simplifica el proceso de configuración guiándole a través de cada paso. Incluye la selección de plantillas, estilos y campos de datos, así como la configuración de la asignación de datos para garantizar que el formulario esté listo para comunicarse con el Marketo Engage una vez creado. Con el asistente de formularios, también puede configurar el formulario adaptable para enviar datos directamente a Adobe Marketo Engage tras el envío.
 
@@ -95,7 +95,7 @@ El formulario adaptable ahora está configurado para conectarse con la instancia
 
 ## Siguiente paso
 
-También puede conectar un formulario adaptable con la [biblioteca de Munchkin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) para hacer un seguimiento del número de visitas, clics y envíos de formularios.
+También puede conectar un formulario adaptable con la [biblioteca de Munchkin](https://experienceleague.adobe.com/es/docs/marketo/using/product-docs/administration/setup/munchkin) para hacer un seguimiento del número de visitas, clics y envíos de formularios.
 
 ## Artículos relacionados
 

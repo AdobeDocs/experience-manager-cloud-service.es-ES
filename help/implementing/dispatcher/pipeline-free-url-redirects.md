@@ -21,7 +21,7 @@ Los escenarios incluyen:
 * Una página de HTML renombrada.
 * Optimización de SEO.
 
-AEM as a Cloud Service ofrece [varios enfoques](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) para implementar redirecciones del lado del servidor, pero la estrategia descrita en este artículo, redirecciones sin canalización, es una buena opción cuando:
+AEM as a Cloud Service ofrece [varios enfoques](https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/administration/url-redirection) para implementar redirecciones del lado del servidor, pero la estrategia descrita en este artículo, redirecciones sin canalización, es una buena opción cuando:
 
 * Las personas que mantienen las redirecciones son usuarios empresariales, que no tienen el acceso necesario para confirmar los cambios de archivo en el control de código fuente o la posibilidad de ejecutar una canalización de configuración de nivel web de Cloud Manager.
 * El número de redirecciones va de unas pocas a decenas de miles.
@@ -40,7 +40,7 @@ El núcleo de esta característica es la capacidad de AEM Apache/Dispatcher para
 >[!NOTE]
 > El uso de esta característica del Administrador de mapas de redireccionamiento requiere ACS Commons versión **6.7.0 o superior**, mientras que el uso de Redirect Manager requiere la versión **6.10.0 o superior**.
 
-Para obtener una guía detallada de implementación paso a paso, consulte el tutorial [Implementación de redirecciones de URL sin canalización](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects).
+Para obtener una guía detallada de implementación paso a paso, consulte el tutorial [Implementación de redirecciones de URL sin canalización](https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects).
 
 ## El mapa de reescritura {#rewrite-map}
 
@@ -87,5 +87,5 @@ Tenga en cuenta lo siguiente:
 
 ## Tutoriales {#tutorials}
 
-1. [Implementación de redirecciones de URL sin canalización](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
-1. [URL redirecciones](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
+1. [Implementación de redirecciones de URL sin canalización](https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [URL redirecciones](https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/administration/url-redirection)

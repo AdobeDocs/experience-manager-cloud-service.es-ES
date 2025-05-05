@@ -20,7 +20,7 @@ Después de firmar el contrato, el Adobe de Managed Services (AMS) inicia la inc
 
 ## Adición de usuarios a Adobe Admin Console {#admin-console}
 
-Una vez que se le haya proporcionado una ID de organización de Adobe Identity Management System (IMS), ahora puede acceder a [Adobe Admin Console](https://adminconsole.adobe.com/). Consulte [usuarios de Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) para obtener más información sobre cómo agregar usuarios al Admin Console.
+Una vez que se le haya proporcionado una ID de organización de Adobe Identity Management System (IMS), ahora puede acceder a [Adobe Admin Console](https://adminconsole.adobe.com/). Consulte [usuarios de Adobe Admin Console](https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/users.ug.html) para obtener más información sobre cómo agregar usuarios al Admin Console.
 
 >[!NOTE]
 >Los usuarios tienen acceso al perfil de producto de AEM Cloud Service AEM para poder iniciar sesión en la aplicación mediante el Federated ID de Adobe ID o el servicio de acceso a la página de inicio de sesión de los usuarios de la aplicación.

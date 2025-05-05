@@ -20,7 +20,7 @@ A continuación se muestra un titular de ventas con una ventana emergente de vis
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-Ver [imágenes interactivas en acción](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) en la página web que se muestra arriba.
+Ver [imágenes interactivas en acción](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=es) en la página web que se muestra arriba.
 
 ## Descubra cómo se crean los titulares de imágenes interactivas {#watch-how-interactive-image-banners-are-created}
 
@@ -30,7 +30,7 @@ Vea un tutorial sobre [cómo se crean los titulares de imágenes interactivas](h
 
 La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para ayudarle a ponerse en marcha rápidamente con las imágenes interactivas en Adobe Experience Manager Assets.
 
-Busque el encabezado **Ejemplo** dentro de algunas de las tareas de inicio rápido. Contiene un breve tutorial basado en un ejemplo de página web [que todavía no tiene imágenes interactivas agregadas](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
+Busque el encabezado **Ejemplo** dentro de algunas de las tareas de inicio rápido. Contiene un breve tutorial basado en un ejemplo de página web [que todavía no tiene imágenes interactivas agregadas](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=es).
 
 
 
@@ -146,7 +146,7 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
 
 **Ejemplo**
 
-Puede aplicar el mismo enfoque utilizado en los tres ejemplos anteriores a la [página web de demostración](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
+Puede aplicar el mismo enfoque utilizado en los tres ejemplos anteriores a la [página web de demostración](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=es).
 
 La página web de demostración tiene varias miniaturas de productos, cada una con un botón de vista rápida denominado &quot;Ver más&quot;. Con la herramienta de depuración del navegador web aún activada, seleccione cada botón y anote las URL de vista rápida registradas. Después de activar las cuatro vistas rápidas de productos disponibles en la página, tiene la siguiente lista de solicitudes de vista rápida realizadas al back-end:
 
@@ -342,13 +342,13 @@ El código incrustado copiado se configura para un entorno interactivo, de modo 
 
 **Ejemplo**
 
-Utilizando el sitio web de demostración [como ejemplo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), observe que la imagen de los tres individuos es una etiqueta `IMG` estática:
+Utilizando el sitio web de demostración [como ejemplo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=es), observe que la imagen de los tres individuos es una etiqueta `IMG` estática:
 
 ```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-La integración es tan sencilla como quitar la etiqueta `IMG` y reemplazarla con el código incrustado copiado de Experience Manager Assets. Puede ver que el resultado [muestra la imagen interactiva de ventas en la página con tres puntos interactivos de círculo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
+La integración es tan sencilla como quitar la etiqueta `IMG` y reemplazarla con el código incrustado copiado de Experience Manager Assets. Puede ver que el resultado [muestra la imagen interactiva de ventas en la página con tres puntos interactivos de círculo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=es).
 
 >[!NOTE]
 >
@@ -356,9 +356,9 @@ La integración es tan sencilla como quitar la etiqueta `IMG` y reemplazarla con
 
 Para aplicar un &quot;recorte&quot; a una imagen interactiva de ventas para un entorno interactivo, incluya el atributo de configuración de imagen interactiva `ZoomView.iscommand` en la ruta. En este caso, se llama al componente `ZoomView` y `iscommand` es el comando de servicio de imágenes de &quot;recorte&quot; que usted aplica.
 
-Consulte el atributo de configuración [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Consulte el atributo de configuración [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=es).
 
-Ver [recorte](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) comando de servicio de imágenes.
+Ver [recorte](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=es) comando de servicio de imágenes.
 
 Ya está listo para integrar la imagen interactiva con una vista rápida existente en su sitio web.
 
@@ -495,7 +495,7 @@ El siguiente es el código fuente completo:
  s7interactiveimageviewer.init();
 ```
 
-El sitio web de demostración [final con la imagen interactiva completamente integrada](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
+El sitio web de demostración [final con la imagen interactiva completamente integrada](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=es).
 
 ## Creación de ventanas emergentes personalizadas con Quickview {#using-quickviews-to-create-custom-pop-ups}
 

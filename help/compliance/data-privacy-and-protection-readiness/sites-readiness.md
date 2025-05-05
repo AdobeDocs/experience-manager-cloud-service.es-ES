@@ -84,7 +84,7 @@ Para obtener más información sobre la administración de solicitudes de titula
 
 AEM Sites incluye una integración opcional con Personalization Foundation by Target que utiliza la funcionalidad dentro del servicio bajo demanda de Adobe Target.
 
-Para obtener más información sobre la administración de solicitudes de titulares de los datos relacionadas con Adobe Target, consulte [Adobe Target: el reglamento general de protección de datos](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Para obtener más información sobre la administración de solicitudes de titulares de los datos relacionadas con Adobe Target, consulte [Adobe Target: el reglamento general de protección de datos](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=es).
 
 ## ContextHub {#contexthub}
 

@@ -30,12 +30,12 @@ Para completar este tutorial, necesita lo siguiente:
 
 1. Entorno de desarrollo local
 
-Los pasos y las capturas de pantalla del tutorial se realizan con **CRXDE Lite**. Los IDE también se pueden utilizar para completar el tutorial. AEM Encontrará más información sobre el uso de un IDE para desarrollar [con aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
+Los pasos y las capturas de pantalla del tutorial se realizan con **CRXDE Lite**. Los IDE también se pueden utilizar para completar el tutorial. AEM Encontrará más información sobre el uso de un IDE para desarrollar [con aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=es).
 
 
 ## Configuración del proyecto {#project-setup}
 
-El código fuente de un proyecto de Screens se administra normalmente como un proyecto Maven de varios módulos. AEM Para adelantar el tutorial, se generó un proyecto previamente usando el [Arquetipo de proyecto 13](https://github.com/adobe/aem-project-archetype) de . AEM Consulte [Configuración del proyecto](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html) para obtener más información sobre cómo crear un proyecto con el tipo de archivo del proyecto Maven.
+El código fuente de un proyecto de Screens se administra normalmente como un proyecto Maven de varios módulos. AEM Para adelantar el tutorial, se generó un proyecto previamente usando el [Arquetipo de proyecto 13](https://github.com/adobe/aem-project-archetype) de . AEM Consulte [Configuración del proyecto](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=es) para obtener más información sobre cómo crear un proyecto con el tipo de archivo del proyecto Maven.
 
 1. Descargue e instale los siguientes paquetes con [CRX Package Manager](http://localhost:4502/crx/packmgr/index.jsp):
 
@@ -131,7 +131,7 @@ AEM Screens tiene algunas restricciones interesantes que no son necesariamente v
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   Los componentes de Screens requieren dos procesamientos diferentes según el [modo de creación](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) que se esté usando:
+   Los componentes de Screens requieren dos procesamientos diferentes según el [modo de creación](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=es#page-modes) que se esté usando:
 
    1. **Producción**: modo de vista previa o Publish (wcmmode=disabled)
    1. **Editar**: se usa para todos los demás modos de creación, es decir, edición, diseño, andamiaje, desarrollador...
@@ -378,7 +378,7 @@ Se puede usar una tercera categoría clientlibrary: `cq.screens.components.edit`
 
 ## Crear una página de diseño {#design-page}
 
-AEM Screens usa [plantillas de página estáticas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) y [configuraciones de diseño](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) para los cambios globales. Las configuraciones de diseño se utilizan frecuentemente para configurar los componentes permitidos para Parsys en un canal. Una práctica recomendada es almacenar estas configuraciones de una manera específica de la aplicación.
+AEM Screens usa [plantillas de página estáticas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=es) y [configuraciones de diseño](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=es) para los cambios globales. Las configuraciones de diseño se utilizan frecuentemente para configurar los componentes permitidos para Parsys en un canal. Una práctica recomendada es almacenar estas configuraciones de una manera específica de la aplicación.
 
 A continuación se crea una página de diseño de ejecución de We.Retail que almacena todas las configuraciones específicas del proyecto de ejecución de We.Retail.
 

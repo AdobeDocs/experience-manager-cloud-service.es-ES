@@ -27,7 +27,7 @@ Adobe Experience Manager incluye más de 100 comandos de entrega de imágenes de
 **Imágenes inteligentes:**
 
 * Al habilitar Imágenes inteligentes en Dynamic Media, se optimiza automáticamente el formato, el tamaño y la calidad de la imagen en función de las funciones del explorador del cliente.
-¿Desea obtener más información? Vaya a [Imágenes inteligentes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
+¿Desea obtener más información? Vaya a [Imágenes inteligentes](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Mejora el rendimiento de la entrega de imágenes ajustando dinámicamente estos parámetros.
 * Puede evaluar imágenes inteligentes con la herramienta de autoevaluación [Snapshot](https://snapshot.scene7.com/).
 
@@ -87,7 +87,7 @@ El enfoque de imágenes es el aspecto más complejo del control de imágenes en 
 
 * El documento técnico sobre prácticas recomendadas [Prácticas recomendadas para la calidad y el enfoque de imágenes de Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica a Experience Manager.
 
-* Vea [Usar enfoque de imagen con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+* Vea [Usar enfoque de imagen con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
 Con Experience Manager, puede enfocar las imágenes durante la ingesta, la entrega o ambas cosas. Sin embargo, normalmente es mejor enfocar las imágenes con un solo método o con el otro, pero no con ambos. Enfoque de las imágenes en el momento de la entrega, en una dirección URL, normalmente le ofrece los mejores resultados.
 
@@ -111,7 +111,7 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
 
       * El documento técnico sobre prácticas recomendadas [Prácticas recomendadas para la calidad y el enfoque de imágenes de Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica a Experience Manager.
 
-      * Vea [Usar enfoque de imagen con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+      * Vea [Usar enfoque de imagen con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
       * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si se aplica máscara de enfoque a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
 

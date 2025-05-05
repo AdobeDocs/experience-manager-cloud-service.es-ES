@@ -26,7 +26,7 @@ Siga los pasos a continuación para crear un proyecto en Screens as a Cloud Serv
 1. Vaya a Screens Content Provider.
 
    >[!NOTE]
-   >Consulte [Uso del proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html) para obtener información sobre cómo acceder al proveedor de contenido de Screens para crear su proyecto.
+   >Consulte [Uso del proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=es) para obtener información sobre cómo acceder al proveedor de contenido de Screens para crear su proyecto.
 
 1. Cerca de la esquina superior derecha de la barra de acciones, haga clic en **Crear proyecto de Screens**.
 

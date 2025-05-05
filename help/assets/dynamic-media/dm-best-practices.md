@@ -46,7 +46,7 @@ Algunos de los principios clave de Dynamic Media son los siguientes:
 * **Biblioteca de visualizadores de experiencias:** Personalice y convierta en marca los visualizadores de experiencias para imágenes y vídeos. Estos visores se integran perfectamente en sus experiencias digitales.
 * **Compatibilidad con formatos emergentes:** Dynamic Media permite la entrega de experiencias 3D y panorámicas.
 
-A medida que explora el [Recorrido de Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), revisar la lista consolidada de prácticas recomendadas a continuación puede ayudarle a aprovechar al máximo sus capacidades. Adapte estas prácticas recomendadas de Dynamic Media a los requisitos específicos de su contexto y proyecto para poder optimizar sus experiencias en varios canales y dispositivos.
+A medida que explora el [Recorrido de Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), revisar la lista consolidada de prácticas recomendadas a continuación puede ayudarle a aprovechar al máximo sus capacidades. Adapte estas prácticas recomendadas de Dynamic Media a los requisitos específicos de su contexto y proyecto para poder optimizar sus experiencias en varios canales y dispositivos.
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -94,9 +94,9 @@ Utilice el componente Image v3 para el recorte inteligente a fin de mejorar la p
 Incluya solo el archivo JavaScript del visor principal en la página. Evite hacer referencia a archivos JavaScript adicionales que la lógica de tiempo de ejecución del visor pueda descargar. En concreto, no vincule directamente a la biblioteca HTML5 SDK `Utils.js` desde la ruta de contexto `/s7viewers` (conocida como inclusión de SDK consolidada). La lógica del visor administra la ubicación de `Utils.js` o bibliotecas de visor en tiempo de ejecución similares, que pueden cambiar entre versiones. Adobe no conserva versiones anteriores de las inclusiones del visor secundario en el servidor, por lo que la referencia directa a ellas puede interrumpir la funcionalidad del visor en futuras actualizaciones.
 * **Directrices de incrustación:**
 Utilice la documentación para incrustar directrices específicas para cada visor.
-¿Desea obtener más información? Ir a [Visores para AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+¿Desea obtener más información? Ir a [Visores para AEM Assets](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
 * **Tutorial y ejemplos de SDK:**
-Consulte el [Tutorial de Viewer SDK](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) y los [ejemplos de aplicaciones de HTML5 SDK](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) para obtener información detallada sobre las API de componentes de SDK.
+Consulte el [Tutorial de Viewer SDK](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/c-tutorial) y los [ejemplos de aplicaciones de HTML5 SDK](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) para obtener información detallada sobre las API de componentes de SDK.
 
 
 ## Preparación de recursos para su entrega
@@ -224,7 +224,7 @@ Si desea superponer un logotipo o un icono en una imagen existente, Dynamic Medi
 | **Cargar y publicar el logotipo o la imagen del icono** | A continuación, cargue y publique la imagen que desee superponer sobre la imagen base. Esta imagen debe ser un PNG transparente con el logotipo o el icono que desee superponer.<br>Esta es la imagen PNG transparente de un objeto de estrella con efectos de transparencia que se superpondrá:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
 | **Aplicar la URL de Dynamic Media** | Ahora, cree una URL de Dynamic Media que combine la imagen base y el logotipo o la imagen del icono. Puede utilizar comandos de URL para lograr este efecto.<br>La estructura de la dirección URL tiene este aspecto:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>donde el recurso<ul><li> `hotspotRetailBaseImage` es la imagen base.</li><li> `starxp` es la imagen del logotipo/icono.</li><li> `layer=1` especifica que el logotipo o icono se debe colocar en capas sobre la imagen base.</li><li> `scale=1.25` ajusta el tamaño del logotipo/icono.</li><li> `posN=0.33,-.25` determina la posición del logotipo/icono en relación con la imagen base.</li><li> `fmt=png` garantiza que la salida esté en formato PNG.</li></ul> |
 
-¿Qué desea saber más? Vaya a [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) para obtener más información sobre el comando `src` y otros comandos de URL de Dynamic Media.
+¿Qué desea saber más? Vaya a [src](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) para obtener más información sobre el comando `src` y otros comandos de URL de Dynamic Media.
 
 
 #### Superponer texto promocional
@@ -276,7 +276,7 @@ Derivado de la imagen original, haciendo énfasis en la habitación.
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop)
 
 No dude en explorar estas variaciones para sus necesidades específicas.
-¿Desea obtener más información sobre los comandos disponibles en una dirección URL? Vaya a [Referencia de comando](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+¿Desea obtener más información sobre los comandos disponibles en una dirección URL? Vaya a [Referencia de comando](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
 ### Distribución de imágenes de GIF
 
@@ -320,7 +320,7 @@ Utilice la dirección URL proporcionada para vincular directamente al vídeo. Co
    * **Incrustar el vídeo:**
 Copie el código incrustado proporcionado y péguelo en la HTML de la página web donde desee que aparezca el vídeo. Al hacerlo, el vídeo se reproduce directamente en el sitio.
 
-¿Desea obtener más información? Ir a [Vídeo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
+¿Desea obtener más información? Ir a [Vídeo](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
 ### Configuración de vídeos para obtener una calidad y una participación óptimas
 

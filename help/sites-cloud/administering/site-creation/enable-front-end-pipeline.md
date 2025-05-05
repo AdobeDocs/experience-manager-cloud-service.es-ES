@@ -44,7 +44,7 @@ Al activar la canalización front-end para un sitio, AEM realiza los siguientes 
 
 ## Requisitos  {#requirements}
 
-AEM puede adaptar automáticamente el sitio existente para utilizar la canalización front-end. Para poder realizar este flujo de trabajo, el sitio debe usar [v2 o posterior del componente de página de los componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page).
+AEM puede adaptar automáticamente el sitio existente para utilizar la canalización front-end. Para poder realizar este flujo de trabajo, el sitio debe usar [v2 o posterior del componente de página de los componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/wcm-components/page).
 
 ## Activación de la canalización front-end {#enabling}
 

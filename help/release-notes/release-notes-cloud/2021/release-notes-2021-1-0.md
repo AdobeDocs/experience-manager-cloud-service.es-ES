@@ -76,7 +76,7 @@ La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.1.0 es e
 
 ### Novedades de [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Se ha lanzado la nueva versión del complemento AIO-CLI. AEM La versión más reciente de este complemento incluye correcciones de errores para el Conversor de Dispatcher y el Modernizador de repositorios, y también admite una nueva utilidad: Convertidor de índices. Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) para obtener más información sobre este complemento.
+* Se ha lanzado la nueva versión del complemento AIO-CLI. AEM La versión más reciente de este complemento incluye correcciones de errores para el Conversor de Dispatcher y el Modernizador de repositorios, y también admite una nueva utilidad: Convertidor de índices. Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=es#benefits) para obtener más información sobre este complemento.
 
 * Index Converter es una utilidad que se puede utilizar para transformar las definiciones de índice de OAK personalizadas de un cliente para que sean compatibles con las definiciones de índice de OAK de AEM as a Cloud Service. Consulte [Conversor de índices](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) para obtener más información.
 
@@ -90,7 +90,7 @@ La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.1.0 es e
 
 ### Novedades {#what-is-new-foundation}
 
-* Llamadas de API autenticadas de servidor a servidor: genere los tokens de acceso adecuados para realizar llamadas de API autenticadas de servidor a servidor entre sus aplicaciones externas y entornos de AEM as a Cloud Service. Obtenga más información leyendo [la documentación](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) o consultando el [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication).
+* Llamadas de API autenticadas de servidor a servidor: genere los tokens de acceso adecuados para realizar llamadas de API autenticadas de servidor a servidor entre sus aplicaciones externas y entornos de AEM as a Cloud Service. Obtenga más información leyendo [la documentación](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) o consultando el [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=es#authentication).
 
 ### Analizadores de creación de SDK {#sdk-build-analyzers}
 
@@ -111,6 +111,6 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.2.2 e
 
 ### Novedades de [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
-* Nueva capacidad e IU agregada a la herramienta de transferencia de contenido: herramienta de asignación de usuarios. Esta función asigna automáticamente los usuarios y grupos existentes a sus ID de sistema de Identity Management de Adobe como parte de la actividad de migración de contenido. Consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obtener más información.
+* Nueva capacidad e IU agregada a la herramienta de transferencia de contenido: herramienta de asignación de usuarios. Esta función asigna automáticamente los usuarios y grupos existentes a sus ID de sistema de Identity Management de Adobe como parte de la actividad de migración de contenido. Consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=es) para obtener más información.
 * La herramienta de transferencia de contenido ahora migra todos los grupos y usuarios a los que se hace referencia en el conjunto de migración, incluidos los elementos secundarios.
 * Los usuarios pueden seleccionar ciertas rutas en `/etc` al crear conjuntos de migración.

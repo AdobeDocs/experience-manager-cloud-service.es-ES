@@ -155,7 +155,7 @@ La fecha de lanzamiento de AEM Screens as a Cloud Service es el 24 de junio de 2
 ### Novedades {#what-is-new-screens-june}
 
 >[!NOTE]
->Consulte la guía [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) para conocer los conceptos básicos necesarios para instalar, configurar y ejecutar correctamente el as a Cloud Service de Screens y vincular la documentación técnica de conceptos detallados.
+>Consulte la guía [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=es) para conocer los conceptos básicos necesarios para instalar, configurar y ejecutar correctamente el as a Cloud Service de Screens y vincular la documentación técnica de conceptos detallados.
 
 * La administración del registro masivo de dispositivos significa que el aprovisionamiento de grandes cantidades de reproductores es más rápido y eficiente.
 
@@ -184,7 +184,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.5.4 e
 
 ### Novedades {#what-is-new-ctt-latest}
 
-* Se ha agregado compatibilidad con un paso [previo a la copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) opcional para utilizarlo con CTT. AEM El paso previo a la copia se puede utilizar para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido cuando la instancia de origen se configura para utilizar un almacén de datos de Amazon S3 o Azure Blob Storage.
+* Se ha agregado compatibilidad con un paso [previo a la copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=es) opcional para utilizarlo con CTT. AEM El paso previo a la copia se puede utilizar para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido cuando la instancia de origen se configura para utilizar un almacén de datos de Amazon S3 o Azure Blob Storage.
 
 * Se ha añadido una protección a CTT para evitar que los usuarios detengan una ingesta y corrompan los datos una vez que hayan alcanzado el punto crítico durante la fase de ingesta.
 

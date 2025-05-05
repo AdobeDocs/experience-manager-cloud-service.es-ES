@@ -60,7 +60,7 @@ Para cambiar al tema oscuro, haga clic en su icono de perfil. Esta acción muest
 
 ## Identificación del entorno de AEM as a Cloud Service {#identify-aemaacs-environment}
 
-AEM as a Cloud Service proporciona tres tipos de entornos: producción, ensayo y desarrollo. Consulte [Tipos de entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) para obtener más información. Con esta integración con Unified Shell, el tipo de entorno en el que el usuario ha iniciado sesión en el servicio de creación se muestra en el encabezado superior con una etiqueta, como se muestra a continuación.
+AEM as a Cloud Service proporciona tres tipos de entornos: producción, ensayo y desarrollo. Consulte [Tipos de entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=es) para obtener más información. Con esta integración con Unified Shell, el tipo de entorno en el que el usuario ha iniciado sesión en el servicio de creación se muestra en el encabezado superior con una etiqueta, como se muestra a continuación.
 
 ![imagen](/help/overview/assets/unifiedshell_header_label.png)
 

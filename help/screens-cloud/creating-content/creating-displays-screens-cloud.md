@@ -135,4 +135,4 @@ Se puede acceder a todas las operaciones de carpeta a través de la barra de acc
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha aprendido a crear y administrar pantallas para su proyecto, debe continuar con su as a Cloud Service recorrido de Screens revisando el documento [Asignación de canales a una pantalla en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).
+Ahora que ha aprendido a crear y administrar pantallas para su proyecto, debe continuar con su as a Cloud Service recorrido de Screens revisando el documento [Asignación de canales a una pantalla en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=es).

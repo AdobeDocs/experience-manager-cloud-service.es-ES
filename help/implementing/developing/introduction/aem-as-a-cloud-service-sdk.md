@@ -31,7 +31,7 @@ Además, algunos clientes que se implementaron anteriormente con AEM 6.5 o versi
 
 ## Creación para SDK {#building-for-the-sdk}
 
-AEM as a Cloud Service SDK se utiliza para generar e implementar código personalizado. Consulte la [documentación del tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using). En un nivel superior, se realizan los siguientes pasos:
+AEM as a Cloud Service SDK se utiliza para generar e implementar código personalizado. Consulte la [documentación del tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/using). En un nivel superior, se realizan los siguientes pasos:
 
 * **Código de compilación**: el código Source se ha compilado, lo que genera los paquetes de contenido resultantes.
 * **Artefactos de compilación**: los artefactos se crean durante este proceso.

@@ -43,8 +43,8 @@ Eche un vistazo al vídeo Información general sobre la versión de junio de 202
 
 ![Vista previa en la consola de fragmentos de contenido](/help/assets/content-fragments-console-preview.png)
 
-* Las imágenes se pueden optimizar dinámicamente para la entrega web en escenarios sin encabezado mediante AEM GraphQL. Las [variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) se pueden definir en las consultas de GraphQL para permitir que las aplicaciones cliente disociadas soliciten las imágenes optimizadas correspondientes de AEM.
-* Las etiquetas en las [variaciones de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) ahora se pueden enviar a JSON mediante la API de entrega de contenido AEM GraphQL.
+* Las imágenes se pueden optimizar dinámicamente para la entrega web en escenarios sin encabezado mediante AEM GraphQL. Las [variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=es#query-variables) se pueden definir en las consultas de GraphQL para permitir que las aplicaciones cliente disociadas soliciten las imágenes optimizadas correspondientes de AEM.
+* Las etiquetas en las [variaciones de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=es) ahora se pueden enviar a JSON mediante la API de entrega de contenido AEM GraphQL.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -70,7 +70,7 @@ Experience Manager Assets ahora le permite hacer más desde la interfaz de usuar
 
 **Dynamic Media: se han actualizado los campos relacionados con los recortes inteligentes en el perfil de imagen**
 
-La interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen se actualiza ahora para reflejar las directrices actuales para definir un recorte inteligente. Consulte las [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
+La interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen se actualiza ahora para reflejar las directrices actuales para definir un recorte inteligente. Consulte las [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=es#crop-options).
 
 ### Nuevas funciones de la vista Recursos {#assets-view-features}
 

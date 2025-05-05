@@ -23,13 +23,13 @@ La fecha de la versión de [!DNL Experience Manager] as a Cloud Service 2020.4.0
 
 Obtenga información sobre las nuevas funciones, mejoras y correcciones de errores de [!DNL Experience Manager Assets] y [!DNL Dynamic Media] en la versión actual.
 
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) admite los casos de uso de distribución de recursos para Experience Manager Assets. [!DNL Brand Portal] ayuda a las organizaciones a satisfacer sus necesidades de marketing mediante la distribución segura de recursos de productos y marcas aprobados a agencias externas, socios, equipos internos y distribuidores para su descarga.
-   * La configuración de [!DNL Brand Portal] se completa mediante la consola de [!DNL Adobe I/O]. Consulte [Configuración de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=es) admite los casos de uso de distribución de recursos para Experience Manager Assets. [!DNL Brand Portal] ayuda a las organizaciones a satisfacer sus necesidades de marketing mediante la distribución segura de recursos de productos y marcas aprobados a agencias externas, socios, equipos internos y distribuidores para su descarga.
+   * La configuración de [!DNL Brand Portal] se completa mediante la consola de [!DNL Adobe I/O]. Consulte [Configuración de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html?lang=es).
    * La fuente recursos en [!DNL Brand Portal] no es compatible aún con [!DNL Experience Manager] as a Cloud Service.
 
 * [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) v2.0 funciona [!DNL Experience Manager] como un Cloud Service. [!DNL Adobe Asset Link] facilita la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido mediante la conexión [!DNL Experience Manager Assets] con las aplicaciones de [!DNL Creative Cloud] escritorio[!DNL Adobe Photoshop], [!DNL Adobe Illustrator]y [!DNL Adobe InDesign] a través del panel en la aplicación[!DNL Asset Link].
-   * [!DNL Experience Manager] está preconfigurado para [!DNL Adobe Asset Link], lo que resulta en una [configuración sencilla](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) y una implementación más rápida para los profesionales creativos.
-   * [!DNL Asset Link] ahora es compatible con un [conmutador de entorno de Experience Manager](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) que permite a los usuarios creativos conectarse fácilmente a un entorno [!DNL Experience Manager] diferente. Un ejemplo en el que esta funcionalidad es útil, es para diseñadores de agencias que trabajan con varios clientes mediante diferentes [!DNL Experience Manager Assets] implementaciones.
+   * [!DNL Experience Manager] está preconfigurado para [!DNL Adobe Asset Link], lo que resulta en una [configuración sencilla](https://helpx.adobe.com/es/enterprise/using/configure-aem-assets-for-asset-link.html) y una implementación más rápida para los profesionales creativos.
+   * [!DNL Asset Link] ahora es compatible con un [conmutador de entorno de Experience Manager](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) que permite a los usuarios creativos conectarse fácilmente a un entorno [!DNL Experience Manager] diferente. Un ejemplo en el que esta funcionalidad es útil, es para diseñadores de agencias que trabajan con varios clientes mediante diferentes [!DNL Experience Manager Assets] implementaciones.
 
 * Los usuarios pueden configurar [flujos de trabajo de procesamiento posterior](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) para el inicio automático en la carpeta de la interfaz del usuario [!UICONTROL Propiedades] para las jerarquías de carpetas específicas.
    * La carpeta de la interfaz del usuario [!UICONTROL Propiedades] se simplifica, con la nueva pestaña [!UICONTROL Procesamiento de recursos] que contiene el perfil de metadatos, el perfil de procesamiento y la nueva configuración del flujo de trabajo de inicio automático.
@@ -50,9 +50,9 @@ Obtenga información sobre las nuevas funciones, mejoras y correcciones de error
 >[!MORELIKETHIS]
 >
 >* [Acerca de Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Configurar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [Configurar Experience Manager para que funcione con Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [Crear flujo de trabajo en Experience Manager mediante microservicios de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [Configurar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html?lang=es)
+>* [Configurar Experience Manager para que funcione con Asset Link](https://helpx.adobe.com/es/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Crear flujo de trabajo en Experience Manager mediante microservicios de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=es#post-processing-workflows)
 
 ## Novedades de Cloud Manager. {#whats-new-cloud-manager}
 

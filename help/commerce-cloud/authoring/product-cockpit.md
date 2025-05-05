@@ -25,9 +25,9 @@ Los datos de productos clasificados incluyen cualquier mutación futura, como nu
 
 ## Configuración {#configuration}
 
-AEM Los catálogos de productos deben configurarse en la opción de configuración de la. Consulte [configurar el almacén y los catálogos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) para obtener más información.
+AEM Los catálogos de productos deben configurarse en la opción de configuración de la. Consulte [configurar el almacén y los catálogos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=es#catalog) para obtener más información.
 
-La activación de las funciones de catálogo organizadas requiere autenticación. Consulte [Introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) para obtener más información.
+La activación de las funciones de catálogo organizadas requiere autenticación. Consulte [Introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=es) para obtener más información.
 
 >[!NOTE]
 >

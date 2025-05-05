@@ -37,7 +37,7 @@ Con la supervisión personalizada, los clientes pueden, opcionalmente, proporcio
 
 >[!NOTE]
 >
-> Esta funcionalidad solo se ofrece para entornos de producción y clientes con [Soporte avanzado en la nube](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons). Si tiene alguna pregunta, póngase en contacto con el equipo de su cuenta de Adobe.
+> Esta funcionalidad solo se ofrece para entornos de producción y clientes con [Soporte avanzado en la nube](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=es#support-add-ons). Si tiene alguna pregunta, póngase en contacto con el equipo de su cuenta de Adobe.
 
 ## Monitorización del módulo interno {#module-monitoring}
 
@@ -55,10 +55,10 @@ Se añaden comprobaciones adicionales a los entornos aprovisionados para Forms. 
 
 ## Observabilidad del cliente {#customer-observability}
 
-Los clientes pueden usar el conjunto de aplicaciones [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) que proporciona datos de rendimiento en tiempo real recopilados y representados para su análisis y solución de problemas. Mediante el grupo de monitorización, los clientes pueden observar directamente varias métricas, como: métricas de rendimiento de JVM, tiempo de transacción para Java™, llamadas externas en segundo plano y llamadas a bases de datos.
+Los clientes pueden usar el conjunto de aplicaciones [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=es) que proporciona datos de rendimiento en tiempo real recopilados y representados para su análisis y solución de problemas. Mediante el grupo de monitorización, los clientes pueden observar directamente varias métricas, como: métricas de rendimiento de JVM, tiempo de transacción para Java™, llamadas externas en segundo plano y llamadas a bases de datos.
 
 ## Recursos adicionales {#resources}
 
-* [Supervisión del rendimiento de las aplicaciones New Relic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
-* [Registrando para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
-* [Supervisar Entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)
+* [Supervisión del rendimiento de las aplicaciones New Relic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=es)
+* [Registrando para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=es)
+* [Supervisar Entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=es)

@@ -125,7 +125,7 @@ La fecha de versión de la herramienta de transferencia de contenido v1.8.6 es e
 
 ### Novedades {#what-is-new-ctt}
 
-* Validación de contenido: los usuarios pueden determinar de forma fiable si todo el contenido extraído por la herramienta de transferencia de contenido se ha introducido correctamente en la instancia de destino. AEM Para usar esta característica, habilítela en `System Console` del entorno de origen de la. Consulte [Validación de transferencias de contenido: introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) para obtener más información.
+* Validación de contenido: los usuarios pueden determinar de forma fiable si todo el contenido extraído por la herramienta de transferencia de contenido se ha introducido correctamente en la instancia de destino. AEM Para usar esta característica, habilítela en `System Console` del entorno de origen de la. Consulte [Validación de transferencias de contenido: introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=es#getting-started) para obtener más información.
 
 ### Correcciones de errores {#bug-fixes-ctt}
 

@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_alignkpis"
 >title="Alineación de los KPI"
 >abstract="En un mundo digital, se puede medir casi todo. Elegir los indicadores clave de rendimiento (KPI) adecuados para la implementación de Adobe Experience Manager ayudará a su equipo a enfocarse en lo más importante."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="Evaluación de los indicadores clave de rendimiento (KPI)"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="Elección del equipo adecuado"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=es" text="Evaluación de los indicadores clave de rendimiento (KPI)"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=es" text="Elección del equipo adecuado"
 
 En un mundo digital, se puede medir casi todo. Elegir tres KPI para la implementación de Adobe Experience Manager ayuda a su equipo a centrarse en lo que más importa.
 
@@ -42,4 +42,4 @@ En un mundo digital, se puede medir casi todo. Elegir tres KPI para la implement
 
 >[!TIP]
 >
->[**Descargar la plantilla de metodología de los KPI**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+>[**Descargar la plantilla de metodología de los KPI**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=es)

@@ -16,7 +16,7 @@ ht-degree: 4%
 En esta sección se describe cómo crear una rama para el programa en Cloud Manager.
 
 >[!NOTE]
->Consulte [Uso del asistente en Cloud Manager AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html) para obtener información sobre cómo crear un proyecto de aplicación de la aplicación de la aplicación en la aplicación de Cloud Manager mediante el asistente.
+>Consulte [Uso del asistente en Cloud Manager AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=es) para obtener información sobre cómo crear un proyecto de aplicación de la aplicación de la aplicación en la aplicación de Cloud Manager mediante el asistente.
 
 ## Objetivo {#objective}
 

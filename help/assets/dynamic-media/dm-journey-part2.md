@@ -64,7 +64,7 @@ Observe que se genera una nueva representación del reloj. Una clave para entend
 Ahora cambie el valor de anchura de `500` píxeles a `1000` píxeles y, a continuación, presione **[!UICONTROL Entrar]**. [Inténtelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}.
 En el momento en que pulse **[!UICONTROL Intro]**, el explorador volverá al servidor de imágenes de Dynamic Media. Genera una representación completamente nueva del reloj, en función del nuevo valor de anchura que acaba de introducir, devuelve la nueva imagen al explorador y la almacena en caché.
 
-Dynamic Media tiene numerosos parámetros de procesamiento de imágenes que puede utilizar para ajustar los recursos de imagen en las páginas web. Puedes [ver una lista de ellos aquí](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
+Dynamic Media tiene numerosos parámetros de procesamiento de imágenes que puede utilizar para ajustar los recursos de imagen en las páginas web. Puedes [ver una lista de ellos aquí](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=es).
 
 Ahora intente agregar un parámetro de rotación a la imagen del reloj. Y el final de la ruta de la dirección URL, inmediatamente después de `wid=1000`, escriba `&rotate=90` y, a continuación, presione **[!UICONTROL Entrar]**. [Inténtelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}.
 
@@ -216,7 +216,7 @@ Si desea obtener más información sobre lo que acaba de leer, utilice los mater
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=es) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -225,8 +225,8 @@ _Dynamic Media Help topics_
 
 _Tutoriales de Dynamic Media_
 
-* [Usar Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (buscar en _Dynamic Media_)
+* [Usar Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=es)
+* [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/es?lang=en#recommended/solutions/experience-manager) (buscar en _Dynamic Media_)
 
 _Visores de Dynamic Media_
 

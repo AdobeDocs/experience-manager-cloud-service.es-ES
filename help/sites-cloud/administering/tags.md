@@ -36,7 +36,7 @@ Las etiquetas ofrecen funciones sólidas para organizar y administrar el conteni
    * AEM Estas taxonomías son globales en todo el mundo
 * Los autores pueden aplicar las etiquetas y los visitantes del sitio pueden utilizarlas.
 * Independientemente de su creador, todas las formas de etiquetas están disponibles para su selección, tanto al asignarlas a una página como al buscar.
-* El [componente Lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) utiliza las etiquetas para generar listas dinámicas basadas en las etiquetas seleccionadas.
+* El [componente Lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=es) utiliza las etiquetas para generar listas dinámicas basadas en las etiquetas seleccionadas.
 
 ## Requisitos de etiquetas {#requirements}
 

@@ -35,4 +35,4 @@ Para obtener más información:
 * App Builder de AEM
 
    * [Ampliación de AEM con Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
-   * [Extensibilidad de la IU de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)
+   * [Extensibilidad de la IU de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)

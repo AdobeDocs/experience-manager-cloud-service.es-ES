@@ -17,7 +17,7 @@ ht-degree: 14%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Obtenga información acerca de la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de la función de entrega sin encabezado de Adobe Experience Manager AEM ().
@@ -164,8 +164,8 @@ Si la API de REST de Assets AEM se utiliza en un entorno sin requisitos de auten
 >
 >Para obtener más información, consulte:
 >
->* [Explicación de CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
->* AEM [Vídeo: en desarrollo para CORS con el punto de inicio (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
+>* [Explicación de CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es)
+>* AEM [Vídeo: en desarrollo para CORS con el punto de inicio (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=es)
 >
 
 En entornos con requisitos de autenticación específicos, se recomienda OAuth.
@@ -377,4 +377,4 @@ Consulte aquí las referencias detalladas de la API:
 Para obtener más información, consulte lo siguiente:
 
 * [Documentación de la API HTTP de Assets](/help/assets/mac-api-assets.md)
-* AEM [Sesión de Gem de: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)
+* AEM [Sesión de Gem de: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=es)

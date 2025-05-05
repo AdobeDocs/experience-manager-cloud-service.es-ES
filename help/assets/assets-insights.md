@@ -53,7 +53,7 @@ ht-degree: 13%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 La funcionalidad Assets Insights le permite hacer un seguimiento de las clasificaciones de los usuarios y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y las soluciones creativas de Adobe. Ayuda a obtener información sobre el rendimiento y la popularidad de las imágenes.
@@ -155,7 +155,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. Una vez que [!DNL Experience Manager] haya configurado el grupo de informes, haga clic en **[!UICONTROL Listo]**.
 
-Para obtener más información, consulte [Servicios web de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
+Para obtener más información, consulte [Servicios web de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html?lang=es#api-access-information).
 
 ### Rastreador de página {#page-tracker}
 

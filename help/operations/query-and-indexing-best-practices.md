@@ -255,7 +255,7 @@ Para optimizar el rendimiento de esta segunda consulta, cree una versión person
 
 ## Hoja de características clave de consulta JCR {#jcr-query-cheatsheet}
 
-Para admitir la creación de consultas JCR y definiciones de índice eficientes, la [Hoja de referencia de consultas JCR](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet) está disponible para su descarga y uso como referencia durante el desarrollo.
+Para admitir la creación de consultas JCR y definiciones de índice eficientes, la [Hoja de referencia de consultas JCR](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=es#jcrquerycheatsheet) está disponible para su descarga y uso como referencia durante el desarrollo.
 
 Contiene consultas de ejemplo para QueryBuilder, XPath y SQL-2, que cubren varios escenarios que se comportan de forma diferente en términos de rendimiento de la consulta. También proporciona recomendaciones sobre cómo crear o personalizar índices de Oak. El contenido de esta hoja de referencia se aplica a AEM as a Cloud Service AEM y a la versión 6 5.
 

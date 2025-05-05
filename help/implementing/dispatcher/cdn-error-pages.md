@@ -93,6 +93,6 @@ De este modo, se almacena directamente en déclencheur el controlador de error d
 
 ### Tutorial
 
-Consulte el tutorial [Páginas de error de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obtener instrucciones paso a paso sobre cómo crear, implementar y probar las páginas de error del servidor CDN.
+Consulte el tutorial [Páginas de error de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obtener instrucciones paso a paso sobre cómo crear, implementar y probar las páginas de error del servidor CDN.
 
 

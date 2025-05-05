@@ -117,4 +117,4 @@ AEM Ya está listo para administrar las experiencias del producto mediante Conte
 
 * [Creación de experiencias de Commerce](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
-* [Componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [Componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es)

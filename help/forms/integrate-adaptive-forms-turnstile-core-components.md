@@ -70,7 +70,7 @@ Para integrar AEM Forms con el servicio de torniquete, realice los siguientes pa
    >
    > Los usuarios no tienen que modificar la URL de validación de JavaScript del lado del cliente y la URL de validación del lado del servidor, ya que ya están rellenadas previamente para la validación de Turnstile.
 
-   Una vez configurado el servicio Turnstile Captcha, estará disponible para usar en [formularios adaptables basados en componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
+   Una vez configurado el servicio Turnstile Captcha, estará disponible para usar en [formularios adaptables basados en componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
 ## Utilice Turnstile en un formulario adaptable {#using-turnstile-core-components}
 

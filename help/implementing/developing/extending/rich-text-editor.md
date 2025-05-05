@@ -154,7 +154,7 @@ Para obtener configuraciones detalladas de los complementos RTE, consulte [cómo
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-El [componente de texto de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE usando la interfaz de usuario como directivas de contenido, lo que elimina la necesidad de configuración técnica. Las políticas de contenido pueden funcionar con configuraciones de IU RTE como se describe en este documento. Para obtener más información, consulte [crear plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md) y la [documentación para desarrolladores de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+El [componente de texto de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=es#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE usando la interfaz de usuario como directivas de contenido, lo que elimina la necesidad de configuración técnica. Las políticas de contenido pueden funcionar con configuraciones de IU RTE como se describe en este documento. Para obtener más información, consulte [crear plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md) y la [documentación para desarrolladores de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=es).
 
 >Para fines de referencia, los componentes de texto predeterminados (entregados como parte de una instalación estándar) se encuentran en:
 >
@@ -228,7 +228,7 @@ Las opciones disponibles en RTE fluyen hacia abajo desde las configuraciones de 
 * Si la configuración de interfaz de usuario del RTE se ha eliminado o no habilita un elemento, la directiva de contenido no puede configurarlo.
 * Un autor solo tiene acceso a las funciones que están disponibles en las configuraciones de interfaz de usuario y en las directivas de contenido.
 
-Por ejemplo, puede ver la [documentación del componente principal Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+Por ejemplo, puede ver la [documentación del componente principal Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=es#the-text-component-and-the-rich-text-editor).
 
 ## Personalizar la asignación entre los iconos y comandos de la barra de herramientas {#iconstoolbar}
 

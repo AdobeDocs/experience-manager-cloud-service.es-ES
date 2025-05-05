@@ -55,7 +55,7 @@ Los fragmentos de experiencias se pueden exportar al espacio de trabajo predeter
 >
 >* [Desarrollo de Adobe Target](https://developers.adobetarget.com/)
 >* [Componentes principales: fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
->* [Adobe Target: ¿Cómo utilizo los fragmentos de experiencia de Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
+>* [Adobe Target: ¿Cómo utilizo los fragmentos de experiencia de Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=es)
 >* [AEM 6.5: Configuración manual de la integración con Adobe Target: Creación de una configuración de nube de Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=es#creating-a-target-cloud-configuration)
 
 ## Requisitos previos {#prerequisites}
@@ -270,7 +270,7 @@ Se crea el marco de trabajo. Para replicar el marco de trabajo en la instancia d
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=es).
 
 >[!NOTE]
 >

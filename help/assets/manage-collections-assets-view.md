@@ -229,15 +229,15 @@ Para eliminar una colección:
 
 ## Administración de permisos para una colección privada{#manage-permissions-private-collection}
 
-Puede permitir que los administradores administren [niveles de acceso](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) para colecciones privadas disponibles en el repositorio. Puede asignar permisos como `Can View` y `Can Edit` a los grupos de usuarios o a los usuarios. También puede delegar privilegios de administración de permisos a grupos de usuarios. Los usuarios que crean colecciones privadas son los propietarios de esas colecciones. Pueden usar la acción [!UICONTROL Administrar permisos] para conceder acceso a los demás usuarios. Además, los administradores pueden ver y administrar permisos de las colecciones privadas en el repositorio de [!DNL Experience Manager].
+Puede permitir que los administradores administren [niveles de acceso](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) para colecciones privadas disponibles en el repositorio. Puede asignar permisos como `Can View` y `Can Edit` a los grupos de usuarios o a los usuarios. También puede delegar privilegios de administración de permisos a grupos de usuarios. Los usuarios que crean colecciones privadas son los propietarios de esas colecciones. Pueden usar la acción [!UICONTROL Administrar permisos] para conceder acceso a los demás usuarios. Además, los administradores pueden ver y administrar permisos de las colecciones privadas en el repositorio de [!DNL Experience Manager].
 <!--
 >[!NOTE]
 >
 >Adobe does not recommend to assign permissions to users.
 -->
-Para obtener información sobre cómo asignar los permisos disponibles a los grupos de usuarios, consulte [Adición de permisos a los grupos de usuarios](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Para obtener información sobre cómo asignar los permisos disponibles a los grupos de usuarios, consulte [Adición de permisos a los grupos de usuarios](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
-Para obtener más información sobre el flujo de trabajo de extremo a extremo, consulte [Administración de permisos](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Para obtener más información sobre el flujo de trabajo de extremo a extremo, consulte [Administración de permisos](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Siguientes pasos {#next-steps}
 

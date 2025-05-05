@@ -84,7 +84,7 @@ El visualizador nativo de PDF Doc Cloud tiene los siguientes componentes en los 
 
 Adobe Experience Manager Assets permite previsualizar un documento de PDF que consta de varias páginas. Para obtener una vista previa de varias páginas de un documento de PDF, siga estos pasos:
 
-1. Siga los pasos para [cargar recursos en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
+1. Siga los pasos para [cargar recursos en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=es).
 1. Examine el documento de PDF que desea cargar y previsualizar.
 1. Abra el documento.
 1. El visualizador de documentos de PDF se carga de forma predeterminada. También puede seleccionar Representación de PDF en el panel Representación.
@@ -163,7 +163,7 @@ Además de los documentos de PDF, también puede obtener una vista previa de var
 
 Para la vista previa de varias páginas de otros formatos de documento admitidos, realice los siguientes pasos:
 
-1. Siga los pasos para [cargar recursos en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
+1. Siga los pasos para [cargar recursos en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=es).
 1. Examine el documento que desea cargar y previsualizar.
 1. Abra el documento.
 1. Seleccione PDF en la sección estática del panel izquierdo. El panel derecho muestra la vista previa de varias páginas de un recurso. Seleccione la miniatura del panel izquierdo para elegir la página que desea previsualizar.

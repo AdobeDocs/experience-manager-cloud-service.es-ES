@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_chooseteam"
 >title="Elija el equipo adecuado"
 >abstract="Debe colocar a las personas adecuadas en los trabajos correctos para que la implementación de Adobe Experience Manager tenga éxito."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Alineación de los KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="Evaluación de los indicadores clave de rendimiento (KPI)"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=es" text="Alineación de los KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=es" text="Evaluación de los indicadores clave de rendimiento (KPI)"
 
 Es probable que en su organización varios departamentos sean propietarios de diferentes aspectos de la experiencia digital. Sin gobierno, la fase está lista para interminables debates, luchas internas y confusión.
 
@@ -51,7 +51,7 @@ Ahora que sabe qué funciones son necesarias, consulte el gráfico siguiente par
 
 ![Revisar funciones para la implementación](assets/team_involvement.png)
 
-**Revise esta lista con su equipo de implementación** y asegúrese de tener personas con cualificaciones relevantes en cada función. Los integrantes del equipo que estén menos familiarizados con Adobe Experience Cloud pueden utilizar los recursos de aprendizaje de [Experience League](https://experienceleague.adobe.com/?lang=es#recommended/solutions/experience-manager) para obtener una certificación en el [Aprendizaje digital de Adobe](https://learning.adobe.com/certification.html).
+**Revise esta lista con su equipo de implementación** y asegúrese de tener personas con cualificaciones relevantes en cada función. Los integrantes del equipo que estén menos familiarizados con Adobe Experience Cloud pueden utilizar los recursos de aprendizaje de [Experience League](https://experienceleague.adobe.com/es?lang=es#recommended/solutions/experience-manager) para obtener una certificación en el [Aprendizaje digital de Adobe](https://learning.adobe.com/certification.html).
 
 ## **Funciones clave de AEM Experience Manager Assets**
 
@@ -80,4 +80,4 @@ Ahora que sabe qué funciones son necesarias, consulte el gráfico siguiente par
 
 >[!TIP]
 >
-> Obtenga más información sobre Adobe Experience Cloud y aproveche los recursos en [Experience League](https://experienceleague.adobe.com/?lang=es#recommended/solutions/experience-manager) y obtenga la certificación mediante el [Aprendizaje digital de Adobe](https://learning.adobe.com/certification.html).
+> Obtenga más información sobre Adobe Experience Cloud y aproveche los recursos en [Experience League](https://experienceleague.adobe.com/es?lang=es#recommended/solutions/experience-manager) y obtenga la certificación mediante el [Aprendizaje digital de Adobe](https://learning.adobe.com/certification.html).
