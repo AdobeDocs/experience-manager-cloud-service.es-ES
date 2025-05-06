@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo crear fragmentos de formulario en 
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 28a8ce3b3afbdc80d06b50bf4824d52cb81954fe
-workflow-type: ht
+source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
+workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ Para crear un fragmento de formulario en el editor universal, realice los siguie
    ![Crear fragmento](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    Aparece el asistente **Crear fragmento de formulario adaptable**.
-1. Seleccione la plantilla basada en Edge Delivery Services en la pestaña **Seleccionar plantilla** y haga clic en **[!UICONTROL Siguiente]**.
+1. Seleccione la plantilla basada en Edge Delivery Services de la ficha **Seleccionar plantilla** y haga clic en **[!UICONTROL Siguiente]**.
    ![Seleccionar plantilla de Edge Delivery Services](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. Especifique el título, el nombre, la descripción y las etiquetas del fragmento. Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, el fragmento no se creará.
