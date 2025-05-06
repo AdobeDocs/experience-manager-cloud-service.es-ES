@@ -5,9 +5,9 @@ feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: 2d9137e170532824a3a9e489450021cfe2e361f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -59,11 +59,11 @@ You must evaluate the accuracy of any output as appropriate to your use case.
 Before using Generate Variations you are recommended to read the [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 -->
 
-[El uso de “Generar variaciones”](#generative-action-usage) está ligado al consumo de acciones generativas.
+[El uso de “Generar variaciones”](#generative-action-usage) se refiere al consumo de acciones generativas.
 
 >[!NOTE]
 >
->Consulte la [hoja informativa de seguridad para obtener detalles relacionados con Generate Variation in AEM](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf).
+>Consulte la [hoja informativa de seguridad para obtener detalles relacionados con Generar variaciones en AEM](https://www.adobe.com/content/dam/cc/es/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf).
 
 ## Información general {#overview}
 
@@ -172,7 +172,7 @@ La administración del uso depende de la acción realizada:
 
   >[!NOTE]
   >
-  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/es/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea adquirir acciones más generativas.
+  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea adquirir acciones más generativas.
 
 ## Acceso a “Generar variaciones” {#access-generate-variations}
 

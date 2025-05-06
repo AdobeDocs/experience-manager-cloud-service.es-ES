@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
 source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3152'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ Puede utilizar acciones de envío como &quot;Enviar correo electrónico&quot;, &
 
 >[!NOTE]
 >
-> Puede guardar el documento de registro para cualquier modelo de datos de formulario mediante la propiedad **[!UICONTROL Campo de referencia de enlace de documento de registro]**.
+> Puede guardar el documento de registro para cualquier modelo de datos de formulario mediante la propiedad **[!UICONTROL Campo de referencia de enlace del documento de registro]**.
 
 ## Actualizaciones incrementales en la plantilla del documento de registro {#document-of-record-template-incremental-updates}
 

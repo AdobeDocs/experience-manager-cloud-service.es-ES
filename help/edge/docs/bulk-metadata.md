@@ -1,5 +1,5 @@
 ---
-description: 'En algunos casos, resulta útil aplicar metadatos en masa a un sitio web. Los casos de uso comunes incluyen:'
+description: 'En algunos casos, resulta útil aplicar metadatos en masa a un sitio web. Los casos de uso comunes incluyen los siguientes:'
 title: Metadatos por lotes
 feature: Edge Delivery Services
 exl-id: 2d56c4e9-1a0f-470b-8c42-bc48f61ea3eb
@@ -8,9 +8,9 @@ index: false
 hide: true
 hidefromtoc: true
 source-git-commit: 1e69fd3abf8dad01886007bc16b2ed0d0df0777c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '22'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 

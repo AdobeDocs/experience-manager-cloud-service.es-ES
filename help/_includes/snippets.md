@@ -1,8 +1,8 @@
 ---
 source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1467'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 # Fragmentos de código {#snippets}
@@ -187,7 +187,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 
 >[!IMPORTANT]
 >
->Si usa [El editor universal para la creación de contenido](/help/implementing/universal-editor/introduction.md) y también desea usar [listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md), también debe [agregar y aplicar una lista de permitidos con las direcciones IP del servicio de editor universal](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor).
+>Si usa [El editor universal para la creación de contenido](/help/implementing/universal-editor/introduction.md) y también desea usar [listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/introduction.md), también debe [añadir y aplicar una lista de permitidos con las direcciones IP del servicio del editor universal](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor).
 
 ## Trabajar con Dynamic Media {#work-with-dynamic-media}
 
@@ -222,7 +222,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 **Registro de un vale de asistencia:**
 
-1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/es?support-tab=home#support) y cree un vale.
+1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un vale.
 1. Añada **Edge Delivery** en el título del ticket.
 1. En la descripción, proporcione los siguientes detalles además de la descripción del problema:
 
