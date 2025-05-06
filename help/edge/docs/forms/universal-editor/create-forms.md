@@ -1,13 +1,13 @@
 ---
-title: Crear formularios independientes basados en componentes principales o plantillas de Edge Delivery Services y publicarlos en Edge Delivery Services.
-description: En este artículo se explica cómo crear plantillas adaptables de Forms seleccionando una plantilla basada en componentes principales o en Edge Delivery Services en el Asistente para la creación de formularios. También puede publicar los formularios en Edge Delivery Services de AEM.
+title: Creación de formularios independientes basados en plantillas de componentes principales o de Edge Delivery Services y publicación en Edge Delivery Services.
+description: En este artículo se explica cómo crear formularios adaptables seleccionando plantillas basadas en componentes principales o en Edge Delivery Services en el Asistente para la creación de formularios. También puede publicar los formularios en Edge Delivery Services de AEM.
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 29%
+ht-degree: 50%
 
 ---
 
@@ -16,29 +16,29 @@ ht-degree: 29%
 
 <span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es “adobe” y el nombre del repositorio es “abc”.</span>
 
-Adobe Experience Manager (AEM) permite crear formularios atractivos, interactivos y dinámicos. Ofrece varios métodos de creación, cada uno adaptado a diferentes requisitos y niveles de experiencia del usuario&#x200B;
+Adobe Experience Manager (AEM) permite crear formularios atractivos, interactivos y dinámicos. Ofrece varios métodos de creación, cada uno adaptado a diferentes requisitos y niveles de experiencia del usuario.
 
-Este artículo se centra en el método en el que los formularios se crean en el entorno de AEM y se publican a través de Edge Delivery Services. Forms creado con plantillas basadas en componentes principales se puede publicar tanto en AEM como en Edge Delivery Services, lo que ofrece flexibilidad en la implementación. Por el contrario, los formularios creados con plantillas basadas en Edge Delivery Services solo se pueden publicar en Edge Delivery Services&#x200B;
+Este artículo se centra en el método en el que los formularios se crean dentro del entorno de AEM y se publican a través de Edge Delivery Services. Los formularios creados con plantillas basadas en componentes principales se pueden publicar tanto en AEM como en Edge Delivery Services, lo que ofrece flexibilidad en la implementación. Por el contrario, los formularios creados con plantillas basadas en Edge Delivery Services solo se pueden publicar en Edge Delivery Services.
 
-![Crear y publicar formulario adaptable](/help/edge/docs/forms/universal-editor/assets/author-publish-af.png){width=50% align=center}
+![Crear y publicar formularios adaptables](/help/edge/docs/forms/universal-editor/assets/author-publish-af.png){width=50% align=center}
 
 ## Ventajas de crear formularios en AEM y publicarlos con Edge Delivery Services:
 
-* **Conservación de los flujos de trabajo de AEM existentes**: las organizaciones pueden seguir utilizando los flujos de trabajo de AEM y las estructuras de control establecidos, lo que garantiza la coherencia y el control de la creación de contenido&#x200B;.
+* **Conservación de los flujos de trabajo de AEM existentes**: las organizaciones pueden seguir utilizando sus flujos de trabajo de AEM y las estructuras de control establecidas, lo que garantiza la coherencia y el control sobre la creación de contenido.
 
-* **Rendimiento mejorado**: Publicar a través de Edge Delivery Services resulta en tiempos de procesamiento más rápidos, mejora la experiencia del usuario y reduce los tiempos de carga de la página&#x200B;
+* **Mejora del rendimiento**: la publicación en Edge Delivery Services se renderiza más rápido, lo que reduce los tiempos de carga de la página, por lo tanto, mejora la experiencia del usuario.
 
-* **SEO mejorado**: Edge Delivery Services está diseñado para ofrecer contenido con altas puntuaciones en Google Lighthouse, lo que puede mejorar la optimización de los motores de búsqueda y aumentar la visibilidad&#x200B;.
+* **Mejoras en la optimización de los motores de búsqueda**: Edge Delivery Services está concebido para ofrecer contenido con altas puntuaciones en Google Lighthouse, lo que optimiza el motor de búsqueda y aumenta la visibilidad.
 
-* **Opciones de implementación flexibles**: Forms creado con componentes principales se puede publicar tanto en AEM como en Edge Delivery Services, lo que ofrece flexibilidad en las estrategias de implementación&#x200B;.
+* **Opciones de implementación flexibles**: los formularios creados con componentes principales se pueden publicar tanto en AEM como en Edge Delivery Services, lo que ofrece flexibilidad en las estrategias de implementación.
 
 ## Antes de comenzar
 
 Antes de empezar a crear formularios en AEM y publicarlos a través de Edge Delivery Services, asegúrese de que se cumplen los siguientes requisitos previos:
 
 * Asegúrese de tener un repositorio de Github configurado para Edge Delivery Services.
-   * Si no tiene un repositorio, [nuevo proyecto de AEM preconfigurado con el bloque de Forms adaptable](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block).
-   * Si tiene un repositorio, agregue el bloque de Forms adaptable al repositorio existente. Encontrará instrucciones detalladas en [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
+   * Si no tiene un repositorio, cree un [nuevo proyecto de AEM preconfigurado con el bloque de formularios adaptables](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block).
+   * Si tiene un repositorio, añada el bloque de formularios adaptables al repositorio existente. Encontrará instrucciones detalladas en [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 * Establezca una conexión entre su entorno de AEM y el repositorio de GitHub. [¿Cómo hacerlo?](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
 
 Diagrama de flujo de decisión para guiar la configuración y publicación de Forms adaptable:
@@ -79,7 +79,6 @@ Siga estos pasos para elegir la plantilla y crear el formulario:
 
    1. Especifique el **Nombre** y **Título**.
    1. Especifique la **URL de GitHub**. Por ejemplo, si el repositorio de GitHub se llama `edsforms` y está ubicado en la cuenta `wkndforms`, la URL es la siguiente:
-
       `https://github.com/wkndforms/edsforms`
 
    ![Asistente para crear formularios](/help/edge/assets/create-form-wizard.png)

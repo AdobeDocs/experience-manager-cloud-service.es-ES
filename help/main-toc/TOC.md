@@ -1082,7 +1082,7 @@ ht-degree: 99%
          + [Biblioteca de la barra de tareas](/help/edge/docs/sidekick-library.md)
       + [Preguntas frecuentes](/help/edge/docs/faq.md)
       + Herramientas {#tools}
-         + [Registro de auditorías](/help/edge/docs/auditlog.md)
+         + [Registro de auditoría](/help/edge/docs/auditlog.md)
 + Sin encabezado {#headless}
    + [¿Qué es un CMS sin encabezado?](/help/headless/what-is-headless.md)
    + [Introducción a AEM Headless](/help/headless/introduction.md)
