@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo añadir una configuración de CDN 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 8e4d988934b927ecbbb29277acdd373a87193ea9
+source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 76%
@@ -65,7 +65,9 @@ En la tabla del sitio de Edge Delivery, haga clic en el icono ![Más](https://sp
 
 Utilice el extremo de la API `/program/{programId}/site/{siteId}` para migrar un sitio de Edge Delivery entre Helix 4 y Helix 5.
 
-Las configuraciones de CDN para sitios web Helix 4 no se pueden migrar a Helix 5 automáticamente. Esta limitación existe porque los sitios de producción de clientes pueden seguir ejecutándose en Helix 4, mientras que sus versiones de Helix 5 aún están en desarrollo.
+>[!IMPORTANT]
+>
+>Las configuraciones de CDN para sitios web Helix 4 no se pueden migrar a Helix 5 automáticamente. Esta limitación existe porque los sitios de producción de clientes pueden seguir ejecutándose en Helix 4, mientras que sus versiones de Helix 5 aún están en desarrollo.
 
 **Requisitos previos**
 
