@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83def24319831c3f14f396f2f6b92b053a9d46a9
+source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1595'
 ht-degree: 28%
 
 ---
@@ -84,7 +84,7 @@ Para establecer el JDK de ejecución de Maven, cree un archivo con el nombre `.c
 
 #### Requisitos previos para migrar a la creación con Java 21 o Java 17 {#prereq-for-building}
 
-Para migrar a la versión de compilación con Java 21 o Java 17, primero debe actualizar a la última versión de SonarQube. Para obtener más información, consulte las [Notas de la versión para Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/current.md#what-is-new).
+Para compilar con Java 21 o Java 17, Cloud Manager ahora utiliza SonarQube 9.9, que es compatible con estas versiones de Java. Este cambio se introdujo en la versión 2025.1.0 de Cloud Manager. No se requiere ninguna acción del cliente para actualizar SonarQube. Para obtener más información y comprender el cambio, consulte las [Notas de la versión para Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md).
 
 Al migrar la aplicación a una nueva versión de compilación de Java y de tiempo de ejecución, realice pruebas exhaustivas en los entornos de desarrollo y ensayo antes de su implementación en producción.
 
@@ -103,7 +103,7 @@ Es posible que las siguientes funciones no funcionen correctamente cuando se imp
 
 #### Requisitos de tiempo de ejecución {#runtime-requirements}
 
-El tiempo de ejecución de Java 21 se utiliza para compilaciones con Java 21 y Java 17, y se aplicará gradualmente a las compilaciones de Java 11 (consulte la Nota a continuación). Un entorno debe estar en la versión de AEM 17098 o más reciente para recibir la actualización de Java 21. Para garantizar la compatibilidad, se requieren los siguientes ajustes.
+El tiempo de ejecución de Java 21 se utiliza para compilaciones con Java 21 y Java 17, y se aplicará gradualmente a las compilaciones de Java 11 también (consulte la Nota a continuación). Un entorno debe estar en la versión de AEM 17098 o más reciente para recibir la actualización de Java 21. Para garantizar la compatibilidad, se requieren los siguientes ajustes.
 
 Las actualizaciones de biblioteca se pueden aplicar en cualquier momento, ya que siguen siendo compatibles con versiones de Java anteriores.
 
