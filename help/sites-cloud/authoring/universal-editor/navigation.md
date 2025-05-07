@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 26%
+source-wordcount: '1698'
+ht-degree: 25%
 
 ---
 
@@ -117,6 +117,8 @@ Seleccione el icono que representa a su usuario para acceder a la configuración
 
 La barra de herramientas del editor universal siempre está presente en la parte superior de la pantalla justo debajo de [el encabezado de Experience Cloud](#experience-cloud-header). Esto le permite desplazarse rápidamente a otra página para editarla y publicarla.
 
+Según la configuración del programa, también puede presentar [características adicionales que el administrador haya habilitado como extensiones.](#additional-toolbar-buttons)
+
 ![Barra de herramientas del Editor universal](assets/universal-editor-toolbar.png)
 
 #### El botón Inicio {#home-button}
@@ -217,8 +219,9 @@ Por ejemplo, se puede cancelar la publicación de una página (es decir, inverti
 
 El editor universal ofrece una experiencia de creación personalizable y ampliable. Si ve botones adicionales en la barra de herramientas, se ha ampliado el editor universal.
 
+* Para obtener más información sobre cómo funciona una extensión individual, [consulte la documentación de creación del editor universal.](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
 * Para obtener más información sobre las posibilidades de extensión, consulte [Ampliación del editor universal](/help/implementing/universal-editor/extending.md).
-* Para obtener más información sobre cómo funciona una extensión individual, consulte la [documentación de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Para obtener más información sobre cómo instalar una extensión individual, consulte la [documentación de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### El Editor {#editor}
 
@@ -292,7 +295,7 @@ Al tocar o hacer clic en el botón Agregar, se abre un menú desplegable de comp
 >
 >Utilice la tecla de acceso directo `a` para agregar un componente a un componente contenedor seleccionado.
 
-##### Duplicar {#duplicate}
+##### Duplicado {#duplicate}
 
 Si selecciona un componente dentro de un componente contenedor en el árbol de contenido o en el editor, la opción duplicar aparece en el panel de propiedades.
 

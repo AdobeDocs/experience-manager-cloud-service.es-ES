@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 4%
+source-wordcount: '528'
+ht-degree: 3%
 
 ---
 
@@ -18,11 +18,11 @@ Descubra cómo el Editor universal admite la herencia de contenido para la admin
 
 >[!NOTE]
 >
->AEM Esta función solo está disponible para el contenido almacenado en el repositorio de.
+>Esta función solo está disponible para el contenido almacenado en el repositorio de AEM.
 
 ## Caso práctico {#use-case}
 
-AEM Para muchos usuarios de la aplicación, crear una página es solo el comienzo de la creación de una página. Para escalar el contenido de forma eficaz, normalmente se realizan los siguientes pasos después de la creación de la página:
+Para muchos usuarios de AEM, crear una página es solo el principio. Para escalar el contenido de forma eficaz, normalmente se realizan los siguientes pasos después de la creación de la página:
 
 1. **Traduzca la página** usando copias de idioma y flujos de trabajo de traducción.
 1. **Localice la página** usando Multi Site Management para desplegar la página traducida en diferentes mercados.
@@ -44,17 +44,25 @@ Cuando una página forma parte de MSM o de un lanzamiento y el contenido se edit
 
 El autor no necesita hacer clic en un botón ni realizar ningún otro paso para deshabilitar la herencia antes de realizar modificaciones locales. Tan pronto como se realiza un cambio, la herencia se cancela implícitamente. Este flujo de trabajo contrasta con [Editor de páginas](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
+La herencia se puede revertir para toda la página mediante el:
+
+* [Consola de información general de Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
+* [Consola de lanzamiento](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+* Usando el botón **Restablecer** en la ficha **Live Copy** de la [ventana de propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md).
+
 El editor universal no afecta al mecanismo subyacente de herencia. Para obtener más información sobre cómo funciona la herencia, consulte la siguiente documentación.
 
 * [Administración de varios sitios (MSM)](/help/sites-cloud/administering/msm/overview.md)
 * [Lanzamientos](/help/sites-cloud/authoring/launches/overview.md)
 
+### Extensión de AEM Multi-Site-Management (MSM) {#msm-extension}
+
+Si está instalada, la extensión **AEM Multi-Site-Management (MSM) Extension** muestra el estado de herencia actual del componente seleccionado, así como le permite interrumpir o restablecer la herencia en el nivel de componente.
+
+Consulte la [documentación de creación para obtener más información.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+
 ## Limitaciones {#limitations}
 
-* Los autores no pueden revertir la herencia para componentes únicos.
-   * La herencia solo se puede revertir para toda la página mediante el
-      * [Consola de información general de Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
-      * [Consola de lanzamiento](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * Usando el botón **Restablecer** en la ficha **Live Copy** de la [ventana de propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md).
-* Los autores no tienen comentarios visuales para ver qué componentes tienen deshabilitada la herencia y cuáles aún la conservan.
+* Para revertir la herencia de componentes únicos, debe habilitarse la extensión **AEM Multi-Site-Management (MSM)**.
+* Para que los comentarios visuales vean qué componentes tienen deshabilitada la herencia y cuáles la conservan, debe habilitarse la extensión de administración de varios sitios de AEM **MSM (Multi-Site-Management)**.
 * Actualmente, estas características están limitadas a los componentes de las páginas y aún no se aplican a [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md), a pesar de que también tienen capacidades de MSM y Launch.
