@@ -4,9 +4,9 @@ description: Obtenga información acerca de las distintas opciones para ampliar 
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Como servicio de Adobe Experience Cloud, la interfaz de usuario del editor unive
 * **[Extensión de bloqueo de página de AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: vea y cambie el estado del bloqueo de página desde el Editor universal
 * **[Extensión de flujos de trabajo de AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: inicie flujos de trabajo en la página y contenido de página desde el editor universal
 * **[Extensión de inicio de sesión para desarrolladores de AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: Se puede autenticar fácilmente en su SDK local de AEM al desarrollar localmente
+* **[Generar variaciones](/help/generative-ai/generate-variations-integrated-editor.md)**: use la inteligencia artificial generativa (IA) para crear variaciones para el contenido directamente en el panel de propiedades.
 * **[Selector de productos AEM para el editor universal](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: integre datos de Adobe Commerce seleccionando o eliminando datos de productos del editor.
 * **[Borradores de contenido de editor universal](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: cree, edite y administre varios borradores de contenido.
 * **[Selector de recursos configurable](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**: habilite la selección de recursos desde repositorios que no sean los utilizados por la página editada.
@@ -48,7 +49,7 @@ Si desea explorar las posibilidades de crear sus propias extensiones, consulte l
 
 >[!TIP]
 >
->Si prefiere aprender con el ejemplo, consulte el [tutorial de extensibilidad de la IU de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Aunque se centra en ampliar la consola de fragmentos de contenido, los conceptos para implementar una extensión de interfaz de usuario en el editor universal son los mismos.
+>Si prefiere aprender con el ejemplo, consulte el [tutorial de extensibilidad de la IU de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Aunque se centra en ampliar la consola de fragmentos de contenido, los conceptos para implementar una extensión de interfaz de usuario en el editor universal son los mismos.
 
 [Con Extension Manager en AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), puede habilitar o deshabilitar las extensiones por instancia, tener acceso a las extensiones de origen de Adobe, incluidas las del editor universal, y mucho más.
 
