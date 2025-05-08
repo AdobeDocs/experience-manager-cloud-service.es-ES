@@ -3,9 +3,10 @@ title: Notas de la versión 2025.2.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2025.2.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 43a9b29132aca8f5231634b845c55538b59f5ee4
+exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
+source-git-commit: 3e0afac8f2f81f9ceae1cbfa456f1e747f2bdb06
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1524'
 ht-degree: 100%
 
 ---
@@ -32,15 +33,11 @@ La fecha de la versión de [!DNL Adobe Experience Manager] como versión de func
 
 Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help/release-notes/maintenance/latest.md).
 
-<!-- 
+## Vídeo de la versión {#release-video}
 
-## Release Video {#release-video}
+Eche un vistazo al vídeo de información general sobre la versión de febrero de 2025 para ver un resumen de las funciones añadidas en la versión 2025.2.0:
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3458080?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
