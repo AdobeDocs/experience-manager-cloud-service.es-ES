@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 11%
@@ -214,7 +214,7 @@ El icono **Herencia interrumpida** muestra que la herencia se ha interrumpido pa
 
 Toque o haga clic en el icono para restablecer la herencia del componente seleccionado. Deberá volver a cargar la página para actualizar el contenido y mostrar el contenido heredado.
 
-Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ La **extensión de propiedades de página de AEM** permite un acceso rápido a l
 
 Pulse o haga clic en el icono **Propiedades de página** de la barra de herramientas del Editor universal para abrir las propiedades de página de la página en una nueva pestaña del explorador.
 
-Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ La **extensión AEM Site Admin Extension** permite un acceso rápido a la págin
 
 Toque o haga clic en el icono para abrir la consola Sitios en una nueva pestaña del explorador, navegando a la página que se encuentra actualmente en el editor.
 
-Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### Bloquear y desbloquear páginas {#locking-pages}
 
@@ -264,7 +264,7 @@ El icono **Bloqueado** de la barra de herramientas del Editor universal muestra 
 
 Toque o haga clic en el icono para desbloquear la página si es el usuario que la ha bloqueado.
 
-Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ Pulse o haga clic en el icono **Flujos de trabajo** de la barra de herramientas 
 1. En la lista **Contenido que incluir en el flujo de trabajo**, utilice las casillas de verificación para definir qué contenido incluir en el flujo de trabajo.
 1. Pulse o haga clic en **Iniciar flujo de trabajo** para iniciar el flujo de trabajo o en **Cerrar** para cancelar.
 
-Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### Inicio de sesión de desarrollador {#developer-login}
 
@@ -297,7 +297,7 @@ Toque o haga clic en el icono **Inicio de sesión de desarrollador** de la barra
 
 ![modal de inicio de sesión de desarrollador](assets/developer-login.png)
 
-Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Características opcionales del panel Propiedades {#properties-panel-options}
 
@@ -311,7 +311,7 @@ La extensión **Generar variaciones** le permite usar inteligencia artificial ge
 
 Toque o haga clic en el icono **Generar variaciones** en el panel de propiedades del Editor universal para recibir recomendaciones y crear variaciones. Consulte el documento [Generar variaciones: integradas en editores de AEM](/help/generative-ai/generate-variations-integrated-editor.md) para obtener más información sobre cómo funciona la generación de variaciones.
 
-Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Recursos adicionales {#additional-resources}
 
