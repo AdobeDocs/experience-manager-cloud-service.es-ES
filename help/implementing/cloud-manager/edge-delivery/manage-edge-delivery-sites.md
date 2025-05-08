@@ -7,7 +7,7 @@ exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -59,11 +59,11 @@ Si elimina un sitio de Edge Delivery Services, también se eliminarán todas las
    * En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú de la izquierda. Bajo el encabezado **Servicios**, haga clic en el icono ![Página web de los sitios de Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Sitios de Edge Delivery**.
 En la tabla del sitio de Edge Delivery, haga clic en el icono ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) al final de la fila cuyo sitio desee quitar. Haga clic en el ![icono Eliminar sitio de Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Eliminar** y, a continuación, vuelva a hacer clic en **Eliminar** para confirmar la eliminación del sitio.
 
-     ![Añadir sitio de Edge Delivery desde el botón Sitios de Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+     ![Añadir el sitio de Edge Delivery desde el botón Sitios de Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
 ## Administración de un sitio de Edge Delivery entre Helix 4 y Helix 5
 
-Utilice el extremo de la API `/program/{programId}/site/{siteId}` para migrar un sitio de Edge Delivery entre Helix 4 y Helix 5.
+Utilice el punto final de la API `/program/{programId}/site/{siteId}` para migrar un sitio de Edge Delivery entre Helix 4 y Helix 5.
 
 >[!IMPORTANT]
 >
@@ -71,9 +71,9 @@ Utilice el extremo de la API `/program/{programId}/site/{siteId}` para migrar un
 
 **Requisitos previos**
 
-* `sitename` ya debe existir.
+* El `sitename` debe existir previamente.
 * Conocer los valores apropiados de `branchName`, Helix `version` y `repo`.
-* La migración solo modifica `branchName`, Helix `version` y `repo`. El campo propietario no se puede cambiar.
+* La migración solo modifica `branchName`, Helix `version` y `repo`. El campo Contraseña no se puede cambiar.
 
 **Formato de API**
 
@@ -81,7 +81,7 @@ Utilice el extremo de la API `/program/{programId}/site/{siteId}` para migrar un
 PUT /api/program/{programId}/site/{siteId}
 ```
 
-**Solicitar parámetros de cuerpo**
+**Parámetros del cuerpo de solicitud**
 Crea una anulación para un sitio de Edge Delivery para aplicar el origen especificado en el cuerpo de la solicitud.
 
 ```json
@@ -142,7 +142,7 @@ Devuelve un sitio de Edge Delivery con la siguiente dirección URL de origen:
 
 `"origin": "branch--my-website--Teo48.hlx.live"`
 
-### Ejemplo 3: Migración del sitio de repoless a Helix 5
+### Ejemplo 3: Migrar el sitio sin repositorio a Helix 5
 
 **http**
 
