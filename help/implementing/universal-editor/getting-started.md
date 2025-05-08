@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo acceder al editor universal y cóm
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 37%
@@ -18,15 +18,15 @@ Obtenga información sobre cómo acceder al editor universal y cómo instrumenta
 
 >[!TIP]
 >
->Si prefiere profundizar directamente en un ejemplo, puede consultar el aplicación de muestra del [Editor universal en GitHub](https://github.com/adobe/universal-editor-sample-editable-app).
+>Si prefiere sumergirse directamente en un ejemplo, puede revisar la aplicación de ejemplo [Universal Editor en GitHub](https://github.com/adobe/universal-editor-sample-editable-app).
 
-Aunque el Editor Universal puede editar contenido desde cualquier fuente, este documento utilizará una aplicación AEM como ejemplo. Este documento le guiará a través de estos pasos.
+Aunque el editor universal puede editar contenido desde cualquier fuente, este documento utilizará una aplicación de AEM como ejemplo. Este documento le guiará a través de estos pasos.
 
 ## Instrumentación de la página {#instrument-page}
 
-El Editor universal requiere un biblioteca JavaScript para procesar y editar los Página en el editor.
+El editor universal requiere una biblioteca JavaScript para procesar y editar la página en el editor.
 
-Además, el servicio Editor universal requiere un [nombre de recurso uniforme (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) para identificar y utilizar el sistema back-end correcto para el contenido de la aplicación que se está editando. Por lo tanto, se requiere un esquema URN para volver a asignar contenido a los recursos de contenido.
+Además, el servicio de editor universal requiere un [nombre de recurso uniforme (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) para identificar y utilizar el sistema backend correcto para el contenido en la aplicación que se está editando. Por lo tanto, se requiere un esquema URN para volver a asignar contenido a los recursos de contenido.
 
 ### Incluir la biblioteca CORS del editor universal {#cors-library}
 
@@ -44,9 +44,9 @@ Las conexiones que se utilizan en la aplicación se almacenan como etiquetas `<m
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<category>` - Este es un clasificación de la conexión con dos opciones.
-   * `system` - Para puntos finales de conexión
-   * `config` - Para [definir opciones de configuración opcionales](#configuration-settings)
+* `<category>`: esta es una clasificación de la conexión con dos opciones.
+   * `system` - Para extremos de conexión
+   * `config` - Para [definir la configuración opcional](#configuration-settings)
 * `<referenceName>`: se trata de un nombre corto que se reutiliza en el documento para identificar la conexión. P. ej., `aemconnection`
 * `<protocol>`: indica qué complemento de persistencia utilizar del servicio de persistencia del editor universal. P. ej., `aem`
 * `<url>`: esta es la URL del sistema en la que deben persistir los cambios. P. ej., `http://localhost:4502`
@@ -100,7 +100,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ### Opciones de configuración {#configuration-settings}
 
-Puede usar el prefijo en su `config` URN de conexión para establecer puntos finales de servicio y extensión si es necesario.
+Puede usar el prefijo `config` en el URN de conexión para establecer los extremos de servicio y extensión si es necesario.
 
 Si no desea utilizar el servicio de editor universal, que aloja Adobe, sino su propia versión alojada, puede establecerlo en una metaetiqueta. Para sobrescribir el extremo de servicio predeterminado que proporciona el Editor universal, establezca su propio extremo de servicio:
 
@@ -113,18 +113,18 @@ Si no desea utilizar el servicio de editor universal, que aloja Adobe, sino su p
 
 Si solo desea tener ciertas extensiones habilitadas para una página, puede establecerlas en una metaetiqueta. Para recuperar extensiones, establezca los extremos de la extensión:
 
-* Metanombre: `urn:adobe:aue:config:extensions`
-* Meta contenido: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (ejemplo)
+* Meta name: `urn:adobe:aue:config:extensions`
+* Meta content: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (ejemplo)
 
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
-## Definir para qué contenido rutas o `sling:resourceType`s debe abrirse el Editor Universal. (Opcional) {#content-paths}
+## Defina para qué rutas de contenido o `sling:resourceType` se debe abrir el Editor universal. (Opcional) {#content-paths}
 
-Si ya tiene un proyecto AEM que utiliza [el editor Página](/help/sites-cloud/authoring/page-editor/introduction.md), cuando contenido autores editan páginas, las páginas se abren automáticamente con el Página editor. Puede definir qué editor AEM debe abrir basándose en las rutas de contenido o en el `sling:resourceType`, haciendo que la experiencia sea perfecta para sus autores, independientemente de qué editor se requiera para el contenido seleccionado.
+Si tiene un proyecto de AEM existente que usa [el editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md), cuando los autores de contenido editan las páginas, estas se abren automáticamente con el editor de páginas. Puede definir qué editor debe abrir AEM en función de las rutas de contenido o `sling:resourceType`, para que la experiencia sea perfecta para los autores, independientemente del editor que se requiera para el contenido seleccionado.
 
-1. Abra el Administrador de configuraciones.
+1. Abra el Administrador de configuración.
 
    `http://<host>:<port>/system/console/configMgr`
 
@@ -137,7 +137,7 @@ Si ya tiene un proyecto AEM que utiliza [el editor Página](/help/sites-cloud/au
 
 1. Haga clic en **Guardar**.
 
-1. Compruebe la [configuración](/help/implementing/developing/tools/externalizer.md) del externalizador y asegúrese de que, como mínimo, tiene los entornos local, de autor y publicar establecidos, como se indica en el ejemplo siguiente.
+1. Compruebe la configuración de su [externalizador](/help/implementing/developing/tools/externalizer.md) y asegúrese de que dispone al menos de los entornos local, de autor y de publicación establecidos como en el ejemplo siguiente.
 
    ```text
    "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
@@ -151,14 +151,14 @@ Una vez completados estos pasos de configuración, AEM abrirá el Editor univers
 1. Para el contenido que no se encuentra en las rutas definidas en `Universal Editor Opening Mapping`, AEM comprueba si el `resourceType` del contenido coincide con los definidos en **Sling:resourceTypes, que abrirá el editor universal**. Si el contenido coincide con uno de esos tipos, el editor universal se abre para él en `${author}${path}.html`.
 1. De lo contrario, AEM abre el Editor de páginas.
 
-Las siguientes variables están disponibles para definir las asignaciones en el campo Asignación **de apertura del** Editor universal.
+Las siguientes variables están disponibles para definir las asignaciones en el campo **Asignación de apertura de editor universal**.
 
-* `path`: Ruta de contenido del recurso que se va a abrir
-* `localhost`: Entrada del externalizador para `localhost` sin esquema, p. ej. `localhost:4502`
-* `author`: Entrada del externalizador para autor sin esquema, por ejemplo `localhost:4502`
-* `publish`: entrada del externalizador para publicar sin esquema, por ejemplo `localhost:4503`
-* `preview`: entrada del externalizador para previsualización sin esquema, por ejemplo `localhost:4504`
-* `env`: `prod`, `stage`, según `dev` los modos de ejecución de Sling definidos
+* `path`: ruta de contenido del recurso a abrir
+* `localhost`: entrada del externalizador para `localhost` sin esquema, p. ej. `localhost:4502`
+* `author`: entrada de externalizador para el autor sin esquema, p. ej. `localhost:4502`
+* `publish`: entrada de externalizador para publicación sin esquema, p. ej. `localhost:4503`
+* `preview`: entrada del externalizador para vista previa sin esquema, p. ej. `localhost:4504`
+* `env`: `prod`, `stage`, `dev` según los modos de ejecución de Sling definidos
 * `token`: token de consulta necesario para `QueryTokenAuthenticationHandler`
 
 ### Asignaciones de ejemplo {#example-mappings}
@@ -168,16 +168,18 @@ Las siguientes variables están disponibles para definir las asignaciones en el 
    * `/content/foo:${author}${path}.html?login-token=${token}`
    * Esto resulta en abrir `https://localhost:4502/content/foo/x.html?login-token=<token>`
 
-* Abra todas las páginas en `/content/bar` un servidor nextJS remoto, proporcionando todas las variables como información:
+* Abra todas las páginas por debajo de `/content/bar` en un servidor NextJS remoto y proporcione todas las variables como información:
 
    * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * Esto da como resultado la apertura `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
+   * Esto resulta en abrir `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ## Todo listo para usar el editor Universal {#youre-ready}
 
 La aplicación ya está instrumentada para utilizar el editor universal.
 
 Diríjase a[Creación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) para descubrir lo fácil e intuitivo que es para los autores de contenido crearlo con el editor universal.
+
+{{ue-headless-auth}}
 
 ## Recursos adicionales {#additional-resources}
 

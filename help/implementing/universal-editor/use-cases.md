@@ -4,7 +4,7 @@ description: Conozca los principales casos de uso del editor universal y cómo o
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -32,7 +32,7 @@ El editor universal presenta un editor visual cómodo e intuitivo a los autores 
 * [Creación en WYSIWYG](#wysiwyg-authoring): use la consola de AEM Sites para administrar el contenido y las páginas de creación en AEM mediante el editor universal
 * [Creación sin encabezado](#headless-authoring): Cree contenido en su propia aplicación sin encabezado personalizada mediante el Editor universal.
 
-### Creación WYSIWYG {#wysiwyg-authoring}
+### Creación de WYSIWYG {#wysiwyg-authoring}
 
 Si ya está familiarizado con AEM, puede utilizar la consola Sitios para crear y administrar sus páginas y, a continuación, editarlas con el Editor universal.
 
@@ -55,6 +55,8 @@ Si este es su caso de uso, como paso siguiente inmediato, consulte el siguiente 
 * [Aplicación de ejemplo de SecurBank para el editor universal](/help/implementing/universal-editor/securbank.md)
 
 Una vez que haya leído ese documento, puede volver a esta página para conocer el caso de uso de la creación de WYSIWYG y cómo funciona el Editor universal en general.
+
+{{ue-headless-auth}}
 
 ## Cómo funciona el editor universal {#how-ue-works}
 

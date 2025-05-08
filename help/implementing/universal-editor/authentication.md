@@ -4,10 +4,10 @@ description: Descubra cómo el editor universal utiliza el sistema Identity Mana
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 92%
+source-wordcount: '191'
+ht-degree: 86%
 
 ---
 
@@ -31,3 +31,7 @@ Para utilizar el editor universal, el usuario debe iniciar sesión en Unified Sh
 Cada vez que un usuario realiza una operación CRUD, se envía una llamada al servicio del editor universal con el token de portador de IMS en el encabezado HTTP. A continuación, el servicio del editor universal utiliza el token de portador para autenticar la solicitud en el sistema back-end de AEM para ejecutar operaciones en el nombre del usuario.
 
 ![Flujo de autenticación estándar](assets/standard-flow.png)
+
+Este diagrama y este artículo describen la autenticación interna del editor universal en sí.
+
+{{ue-headless-auth}}
