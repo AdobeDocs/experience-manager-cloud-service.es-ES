@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 437125b6819edf70539ebacb4a8beddb755fcb7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '568'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -18,46 +18,46 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 20626 {#20626}
 
-A continuación, se resumen las mejoras continuas para la versión de mantenimiento 20626, que se publicó el miércoles, 29 de abril de 2025. La versión de mantenimiento anterior fue la 20476.
+A continuación, se resumen las mejoras continuas para la versión de mantenimiento 20626, que se publicó el 29 de abril de 2025. La versión de mantenimiento anterior fue la 20476.
 
 La activación de funcionalidades 2025.5.0 proporciona el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
 ### Mejoras {#enhancements-20626}
 
-* ASSETS-46413, ASSETS-46580: Se ha agregado un nuevo estado de revisión &quot;Vista previa&quot;.
-* ASSETS-49542: Ampliación de los idiomas admitidos para la transcripción y traducción de vídeo y audio.
-* ASSETS-48264: Ampliación del soporte de calidad PNG para representaciones.
+* ASSETS-46413, ASSETS-46580: se ha añadido un nuevo estado de revisión &quot;Vista previa&quot;.
+* ASSETS-49542: ampliación de los idiomas compatibles para la transcripción y traducción de vídeo y audio.
+* ASSETS-48264: ampliación del soporte de calidad PNG para representaciones.
 
 ### Problemas solucionados {#fixed-issues-20626}
 
-* ASSETS-50387: Corrija la miniatura predeterminada del fragmento de contenido para su uso en GenStudio.
-* ASSETS-49006: muestra las propiedades de vídeo cuando el usuario no tiene permisos de escritura.
-* ASSETS-46757, ASSETS-46997: Mejore la accesibilidad en el editor de recortes inteligente.
-* ASSETS-48018: mejore el seguimiento de referencia de recursos en el informe de publicación de Assets.
-* ASSETS-35846: mejorar la coherencia del acceso entre el nivel de creación y el de entrega.
-* ASSETS-48171: Mejore la coherencia de la plantilla de Dynamic Media con lienzo.
-* ASSETS-49813: mejore la notificación de caducidad.
-* ASSETS-47768, ASSETS-49825, ASSETS-49008, ASSETS-48287: Mejore la administración y la visibilidad de las operaciones por lotes.
-* ASSETS-50003, ASSETS-50004: mejore la nomenclatura y el control sobre las representaciones incluidas en una descarga de recursos.
-* ASSETS-47939: Mejore la organización de las respuestas para Content Hub.
-* ASSETS-46738: mejore el rendimiento para colecciones muy grandes.
-* ASSETS-50121: Mejore la fiabilidad de los eventos publicados de recursos.
-* ASSETS-48490: Mejore la resistencia del procesamiento automatizado durante la ingesta de imágenes.
-* ASSETS-28106, ASSETS-49404: Mejore la solidez de la búsqueda de texto completo.
-* ASSETS-50006, ASSETS-50423: Mejore el rendimiento de búsqueda y recorrido dentro de una carpeta grande.
-* ASSETS-46021: Mejore la visualización de vídeo para Safari y los navegadores móviles.
-* ASSETS-49002: Mejore el control de la edición de plantillas de Dynamic Media.
-* ASSETS-48376: Varias mejoras en la IU de Content Hub.
-* ASSETS-48504, ASSETS-49378: Varias mejoras en el comportamiento de la interfaz de usuario.
-* ASSETS-49540: Saque Asset Relations OpenAPI de la fase experimental.
-* ASSETS-40284: Actualice la documentación sobre la integración de Adobe Stock.
-* ASSETS-49739: Trabaje para integrar Figma desde el Selector de recursos.
+* ASSETS-50387: corregir la miniatura predeterminada del fragmento de contenido para su uso en GenStudio.
+* ASSETS-49006: mostrar las propiedades de vídeo cuando el usuario no tiene permisos de escritura.
+* ASSETS-46757, ASSETS-46997: mejorar la accesibilidad en el editor de recortes inteligente.
+* ASSETS-48018: mejorar el seguimiento de referencia de recursos en el informe de publicación de Assets.
+* ASSETS-35846: mejorar la coherencia del acceso entre el nivel de creación y el de envío.
+* ASSETS-48171: mejorar la coherencia de las plantillas de Dynamic Media con el lienzo.
+* ASSETS-49813: mejorar la notificación de caducidad.
+* ASSETS-47768, ASSETS-49825, ASSETS-49008, ASSETS-48287: mejorar la administración y la visibilidad de las operaciones masivas.
+* ASSETS-50003, ASSETS-50004: mejorar la nomenclatura y el control sobre las representaciones incluidas en una descarga de recursos.
+* ASSETS-47939: mejorar la organización de las respuestas para el centro de contenido.
+* ASSETS-46738: mejorar el rendimiento para colecciones muy grandes.
+* ASSETS-50121: mejorar la fiabilidad de los eventos publicados de recursos.
+* ASSETS-48490: mejorar la resistencia del procesamiento automatizado durante la ingesta de imágenes.
+* ASSETS-28106, ASSETS-49404: mejorar la solidez de la búsqueda de texto completo.
+* ASSETS-50006, ASSETS-50423: mejorar el rendimiento de búsqueda y recorrido dentro de una carpeta grande.
+* ASSETS-46021: mejorar la visualización de vídeo para Safari y los exploradores móviles.
+* ASSETS-49002: mejorar el control de la edición de plantillas de Dynamic Media.
+* ASSETS-48376: varias mejoras en la IU del centro de contenido.
+* ASSETS-48504, ASSETS-49378: varias mejoras en el comportamiento de la interfaz de usuario.
+* ASSETS-49540: sacar la OpenAPI de Relaciones de recursos de la fase experimental.
+* ASSETS-40284: actualizar la documentación sobre la integración de Adobe Stock.
+* ASSETS-49739: trabajar para integrar Figma desde el selector de recursos.
 
 #### Guías de AEM {#guides}
 
-* GUIDES-21734: No se pueden generar nuevos ID para elementos cuando estos se añaden mediante fragmentos o se crean mediante plantillas, incluso cuando la opción de ID de generación automática está activada en XMLEditorConfig.
-* GUIDES-25969: Si falta el atributo `scope=external` en los vínculos externos de un tema DITA, la publicación de HTML5 falla sin indicar los archivos en los que falta este atributo en los registros de errores, especialmente cuando el microservicio está habilitado.
-* GUIDES-27288: no se pueden pasar las propiedades de metadatos para asignar páginas de aterrizaje generadas con la nueva publicación de AEM Sites.
+* GUIDES-21734: no se pueden generar nuevos ID para los elementos cuando estos elementos se añaden mediante fragmentos o se crean mediante plantillas, incluso cuando la opción de ID de generación automática está activada en XMLEditorConfig.
+* GUIDES-25969: si falta el atributo `scope=external` en los vínculos externos de un tema DITA, la publicación de HTML5 falla sin indicar los archivos en los que falta este atributo en los registros de errores, especialmente cuando el microservicio está habilitado.
+* GUIDES-27288: no se pueden pasar las propiedades de metadatos para asignar páginas de aterrizaje generadas mediante la nueva publicación de AEM Sites.
 
 Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en la versión, consulte la [hoja de ruta de la versión de Experience Manager Guides](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 

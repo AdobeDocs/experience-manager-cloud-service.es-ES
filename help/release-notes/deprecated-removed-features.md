@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: e0286ed9aad7ce8c6d4d1f254f6f8a602b4216fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2537'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -240,7 +240,7 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
 A continuación se muestra una lista detallada de las API de AEM eliminadas.
 
 <details>
-  <summary>Amplíe para ver la lista de API eliminadas.</summary>
+  <summary>Amplíe para ver la lista de API que se han quitado.</summary>
 <table style="table-layout:auto">
   <tr>
     <th>Paquete/Clase</th>
@@ -303,7 +303,7 @@ A continuación se muestra una lista detallada de las API de AEM eliminadas.
 </table>
 </details>
 
-### Eliminación de `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
+### Eliminación de `org.apache.sling.commons.auth*`  {#org.apache.sling.commons.auth}
 
 Si usa `org.apache.sling.commons.auth` o `org.apache.sling.commons.auth.spi` o ambos, el uso se puede reemplazar migrando el código a `org.apache.sling.auth` resp. `org.apache.sling.auth.spi`. Si está usando una versión antigua de [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), asegúrese de actualizarla a la versión más reciente.
 
@@ -367,7 +367,7 @@ Estas reglas se validan durante el proceso de compilación de Cloud Manager. Con
 
 Puede encontrar información adicional sobre la configuración de OSGI en [esta ubicación](/help/implementing/deploying/configuring-osgi.md).
 
-+++Configuraciones de OSGi que no se pueden modificar.
+Configuraciones de +++OSGi que no se pueden modificar.
 
 * **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
@@ -376,7 +376,7 @@ Puede encontrar información adicional sobre la configuración de OSGI en [esta
 * **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Fecha de anuncio: 25/8/2021, fecha de aplicación: 26/11/2021)
 +++
 
-+++Las configuraciones de OSGi están sujetas a reglas de validación de compilación.
+Las configuraciones de +++OSGi están sujetas a reglas de validación de compilación.
 
 * **`org.apache.felix.eventadmin.impl.EventAdmin`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
