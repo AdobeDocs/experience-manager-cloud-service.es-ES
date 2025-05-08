@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo utilizar el registro para AEM as a
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
+source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
 workflow-type: tm+mt
-source-wordcount: '2377'
-ht-degree: 9%
+source-wordcount: '2546'
+ht-degree: 10%
 
 ---
 
@@ -99,6 +99,10 @@ Aunque el registro de Java admite varios niveles más de granularidad de registr
 
 Los niveles de registro de AEM se establecen por tipo de entorno a través de la configuración OSGi, que a su vez se compromete a Git e implementan mediante Cloud Manager en AEM as a Cloud Service. Debido a esto, es mejor mantener las instrucciones de registro coherentes y bien conocidas para los tipos de entorno para garantizar que los registros disponibles a través de AEM as a Cloud Service estén disponibles en el nivel de registro óptimo sin requerir una reimplementación de la aplicación con la configuración de nivel de registro actualizada.
 
+>[!NOTE]
+>
+>Para garantizar una monitorización eficaz de los entornos de los clientes, no cambie el nivel de registro predeterminado. Además, no modifique el formato de registro predeterminado. La salida de registro debe permanecer dirigida a los archivos predeterminados. Consulte [la sección siguiente](#configuration-loggers) para obtener instrucciones específicas.
+
 **Ejemplo de salida de registro**
 
 ```
@@ -153,6 +157,19 @@ Configure el registro java para paquetes Java personalizados mediante las config
 | `org.apache.sling.commons.log.file` | Especifique el destino de la salida: `logs/error.log` |
 
 El cambio de otras propiedades de configuración de LogManager OSGi puede provocar problemas de disponibilidad en AEM as a Cloud Service.
+
+Como se indica en una sección anterior, para garantizar una monitorización eficaz de los entornos de los clientes:
+* Los registros de Java para el código de producto de AEM deben conservar su nivel de registro predeterminado &quot;INFO&quot; y no deben anularse con las configuraciones personalizadas.
+* Es aceptable establecer los niveles de registro en DEPURACIÓN para el código de producto, pero utilícelo con moderación para evitar la degradación del rendimiento y restaurar a INFO cuando ya no sea necesario.
+* Es aceptable ajustar los niveles de registro para el código desarrollado por el cliente.
+* Todos los registros, tanto para el código de producto de AEM como para el código desarrollado por el cliente, deben mantener el formato de registro predeterminado.
+* La salida de registro debe permanecer dirigida al archivo predeterminado &quot;logs/error.log&quot;.
+
+Para ello, no deben realizarse cambios en las siguientes propiedades OSGi:
+* **Configuración del registro de Apache Sling** (PID: `org.apache.sling.commons.log.LogManager`) — *todas las propiedades*
+* **Configuración del registrador de Apache Sling** (PID de fábrica: `org.apache.sling.commons.log.LogManager.factory.config`):
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
 
 A continuación se muestran ejemplos de las configuraciones de registro recomendadas (con el paquete Java de marcador de posición de `com.example`) para los tres tipos de entorno de AEM as a Cloud Service.
 
