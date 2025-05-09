@@ -1,8 +1,8 @@
 ---
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 98%
+source-wordcount: '1523'
+ht-degree: 96%
 
 ---
 # Fragmentos de código {#snippets}
@@ -222,7 +222,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 **Registro de un vale de asistencia:**
 
-1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/es?support-tab=home#support) y cree un vale.
+1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un vale.
 1. Añada **Edge Delivery** en el título del ticket.
 1. En la descripción, proporcione los siguientes detalles además de la descripción del problema:
 
@@ -265,3 +265,11 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 >[!NOTE]
 >
 >Si utiliza el editor universal en un caso de uso sin encabezado, la aplicación sin encabezado debe administrar su propia autenticación.
+
+## Desaprobación de PWA {#pwa-deprecation}
+
+>[!IMPORTANT]
+>
+>Las características de la aplicación web progresiva (PWA) para AEM Sites [han quedado obsoletas](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
+>
+>Los proyectos existentes que utilicen esta función seguirán siendo compatibles, pero los nuevos proyectos no deberán utilizarla.

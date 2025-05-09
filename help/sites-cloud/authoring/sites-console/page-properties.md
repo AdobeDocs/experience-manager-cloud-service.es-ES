@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '2296'
-ht-degree: 88%
+source-wordcount: '2454'
+ht-degree: 82%
 
 ---
 
@@ -242,7 +242,9 @@ A través de una configuración sencilla, el autor de contenido ahora puede habi
 
 >[!NOTE]
 >
->Consulte [Habilitación de funciones de aplicación web progresiva](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
+>Consulte [Habilitación de funciones de aplicación web progresiva](/help/sites-cloud/authoring/sites-console/enable-pwa.md) para obtener más información.
+
+{{pwa-deprecation}}
 
 * **Configurar la experiencia instalable**
 
@@ -337,3 +339,35 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
       * Los nuevos valores se aplican a todas las páginas seleccionadas cuando selecciona **Listo**.
       * Cuando el campo tiene varios valores (por ejemplo, Etiquetas), puede anexar un nuevo valor o quitar un valor común.
    * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se indican con un valor especial; por ejemplo, el texto `<Mixed Entries>`.
+
+## Herencia de propiedades {#inheritance}
+
+Si la página se basa en un modelo o hereda contenido de otra página, la herencia se refleja en la ventana **Propiedades de página** para el campo individual.
+
+![Propiedades heredadas](assets/property-inhertiance.png)
+
+Las propiedades heredadas no se pueden editar. Toque o haga clic en el icono **Cancelar herencia** junto a un campo en particular para romper su herencia.
+
+![Cancelar herencia](assets/cancel-inheritance.png)
+
+Confirme la cancelación en el modal **Cancelar herencia**.
+
+![Cancelar modal de confirmación de herencia](assets/cancel-inheriance-confirmation.png)
+
+Una vez cancelada la herencia de un campo, se puede editar.
+
+![Herencia cancelada](assets/property-inheritance-broken.png)
+
+Para restablecer la herencia, pulse o haga clic en el icono **Revertir herencia** situado junto al campo.
+
+![Revertir herencia](assets/revert-inheritance.png)
+
+Confirme la reversión en el modal **Revertir herencia**.
+
+![Revertir modal de confirmación de herencia](assets/revert-inhertiance-confirmation.png)
+
+Seleccione **Sincronizar página después de revertir la herencia** para actualizar el campo con los valores más recientes del modelo. Si no lo hace, los valores se actualizarán la próxima vez que se sincronice LiveCopy.
+
+>[!TIP]
+>
+>Para obtener más información acerca de la herencia, consulte el documento [Administrador de varios sitios y traducción](/help/sites-cloud/administering/msm-and-translation.md)
