@@ -1,14 +1,14 @@
 ---
 title: Adición de repositorios externos en Cloud Manager
-description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
+description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Adoptador anticipado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: d7278834cf5704d1b54d5713df22a7a980c78457
+source-git-commit: a0eac2f3f513b9fecd595a86bb2110083fa0b80f
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 27%
+source-wordcount: '2074'
+ht-degree: 23%
 
 ---
 
@@ -16,6 +16,11 @@ ht-degree: 27%
 
 Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
 
+Los clientes ahora también pueden incorporar sus repositorios Git de Azure DevOps en Cloud Manager, con compatibilidad tanto con los repositorios modernos de Azure DevOps como con los repositorios VSTS heredados (Visual Studio Team Services).
+
+* Para los usuarios de Edge Delivery Services, el repositorio incorporado se puede utilizar para sincronizar e implementar el código del sitio.
+* Para los usuarios de AEM as a Cloud Service y Adobe Managed Services (AMS), el repositorio se puede vincular a canalizaciones de pila completa y de front-end.
+&#39;
 >[!NOTE]
 >
 >Las funciones descritas en este artículo solo están disponibles a través del programa de adopción temprana. Para obtener más información y registrarse como uno de los primeros usuarios, consulte [Traer su propio Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
@@ -60,7 +65,7 @@ La configuración de un repositorio externo en Cloud Manager consiste en los sig
    | --- | --- |
    | **Nombre del repositorio** | Obligatorio. Un nombre expresivo para el nuevo repositorio. |
    | **URL del repositorio** | Obligatorio. La URL del repositorio.<br><br>Si utiliza un repositorio alojado en GitHub, la ruta debe finalizar en `.git`.<br>Por ejemplo, *`https://github.com/org-name/repo-name.git`* (la ruta de URL es solo para fines ilustrativos).<br><br>Si va a usar un repositorio externo, éste debe usar el siguiente formato de ruta de URL: <br>`https://git-vendor-name.com/org-name/repo-name.git`<br> o <br>`https://self-hosted-domain/org-name/repo-name.git`<br> Y coincidir con su proveedor Git. |
-   | **Seleccionar tipo de repositorio** | Obligatorio. Seleccione el tipo de repositorio que está utilizando:<ul><li>**GitHub** (GitHub Enterprise y la versión autoalojada de GitHub)</li><li>**GitLab** (tanto `gitlab.com` como la versión autoalojada de GitLab) </li><li>**Bitbucket** (solo `bitbucket.org` (versión en la nube) es compatible. La versión autoalojada de Bitbucket quedó obsoleta a partir del 15 de febrero de 2024).</li></ul>Si la ruta de URL del repositorio anterior incluye el nombre del proveedor de Git, como GitLab o Bitbucket, el tipo de repositorio ya estará preseleccionado. |
+   | **Seleccionar tipo de repositorio** | Obligatorio. Seleccione el tipo de repositorio que está utilizando. Si la ruta de la URL del repositorio incluye el nombre del proveedor de Git, como GitLab o Bitbucket, el tipo de repositorio ya estará preseleccionado.:<ul><li>**GitHub** (GitHub Enterprise y la versión autoalojada de GitHub)</li><li>**GitLab** (tanto `gitlab.com` como la versión autoalojada de GitLab) </li><li>**Bitbucket** (solo `bitbucket.org` - versión en la nube) es compatible. La versión autoalojada de Bitbucket quedó obsoleta a partir del 15 de febrero de 2024).</li><li>**DevOps de Azure** (`dev.azure.com`) </ul> |
    | **Descripción** | Opcional. Breve descripción del repositorio. |
 
 1. Seleccione **Guardar** para añadir el repositorio. 
@@ -76,10 +81,11 @@ La configuración de un repositorio externo en Cloud Manager consiste en los sig
    | **Añadir nuevo token de acceso** | **Tipo de repositorio: GitHub Enterprise**<br><ul><li> En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitHub](https://docs.github.com/es/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Permisos necesarios para el token de acceso personal (PAT) de GitHub Enterprise<br>Estos permisos garantizan que Cloud Manager pueda validar las solicitudes de extracción, administrar las comprobaciones de estado de las confirmaciones y acceder a los detalles necesarios del repositorio.<br>Cuando genere la PAT en GitHub Enterprise, asegúrese de que incluya los siguientes permisos de repositorio:<ul><li>Solicitud de extracción (lectura y escritura)<li>Confirmar estados (lectura y escritura)<li>Metadatos del repositorio (solo lectura)</li></li></ul></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
    | | **Tipo de repositorio: GitLab**<ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Permisos necesarios para el token de acceso personal (PAT) de GitLab<br>Estos ámbitos permiten a Cloud Manager acceder a los datos del repositorio y a la información de usuario según sea necesario para la validación y la integración de ganchos web.<br>Cuando genere la PAT en GitLab, asegúrese de que incluya los siguientes ámbitos de token:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
    | | **Tipo de repositorio: Bitbucket**<ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso al repositorio mediante la [documentación de Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Permisos necesarios para el token de acceso personal (PAT) de Bitbucket<br>Estos permisos permiten a Cloud Manager acceder al contenido del repositorio, administrar solicitudes de extracción y configurar eventos de webhook o reaccionar a ellos.<br>Cuando cree la contraseña de la aplicación en Bitbucket, asegúrese de que incluya los siguientes permisos obligatorios para la contraseña de la aplicación:<ul><li>Repositorio (solo lectura)<li>Solicitudes de extracción (lectura y escritura)<li>Webhooks (leer y escribir)</li></li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
+   | | **Tipo de repositorio: Azure DevOps**<ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso al repositorio con la [documentación de Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=Windows).<li>Permisos necesarios para el token de acceso personal (PAT) de Azure DevOps.<br>Estos permisos permiten a Cloud Manager acceder al contenido del repositorio, administrar solicitudes de extracción y configurar eventos de gancho web o reaccionar a ellos.<br>Cuando cree la contraseña de la aplicación en Azure DevOps, asegúrese de que incluya los siguientes permisos de contraseña de aplicación necesarios:<ul><li>Repositorio (solo lectura)</li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
 
-   >[!NOTE]
+   >[!IMPORTANT]
    >
-   >La característica **Añadir nuevo token de acceso** se encuentra actualmente en la fase para primeros usuarios. Se están planificando funciones adicionales. Como resultado, los permisos necesarios para los tokens de acceso pueden cambiar. Además, la interfaz de usuario para administrar tokens se puede actualizar, lo que incluye potencialmente características como las fechas de caducidad de los tokens. Y comprobaciones automatizadas para garantizar que los tokens vinculados a repositorios siguen siendo válidos.
+   >La característica **Agregar nuevo token de acceso** se encuentra actualmente en la fase de adopción anticipada. Se están planificando funciones adicionales. Como resultado, los permisos necesarios para los tokens de acceso pueden cambiar. Además, la interfaz de usuario para administrar tokens se puede actualizar, lo que incluye potencialmente características como las fechas de caducidad de los tokens. Y comprobaciones automatizadas para garantizar que los tokens vinculados a repositorios siguen siendo válidos.
 
 1. Haga clic en **Validar**.
 
@@ -89,7 +95,8 @@ Después de la validación, el repositorio externo estará listo para usarse y v
 
 1. Añada o edite una canalización:
    * [Añadir una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [Añadir canalizaciones que no son de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [Adición de una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   <!-- * [Add an Edge Delivery Pipeline]() -->
    * [Editar una canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#editing-pipelines)
 
    ![Repositorio de código fuente de la canalización y rama Git](/help/implementing/cloud-manager/managing-code/assets/pipeline-repo-gitbranch.png)
@@ -163,6 +170,7 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
    | GitHub Enterprise | Estos eventos permiten que Cloud Manager responda a la actividad de GitHub, como la validación de solicitudes de extracción, los déclencheur basados en push para canalizaciones o la sincronización de código de Edge Delivery Services.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web necesarios:<ul><li>Solicitudes de extracción<li>Inserciones<li>Comentarios sobre problemas</li></li></li></ul></ul></ul> |
    | GitLab | Estos eventos de gancho web permiten a Cloud Manager almacenar en déclencheur las canalizaciones cuando se inserta código o se envía una solicitud de combinación. También rastrean los comentarios relacionados con la validación de solicitudes de extracción (a través de eventos de nota).<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Eventos push<li>Combinar eventos de solicitud<li>Eventos de nota</li></li></li></ul></ul></ul> |
    | Bitbucket | Estos eventos garantizan que Cloud Manager pueda validar las solicitudes de extracción, responder a inserciones de código e interactuar con comentarios para la coordinación de canalizaciones.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Solicitud de extracción: creada<li>Solicitud de extracción: actualizada<li>Solicitudes de extracción: combinadas<li>Solicitud de extracción: comentario<li>Repositorio: push</li></li></li></ul></ul></ul> |
+   | Azure DevOps | Estos eventos garantizan que Cloud Manager pueda validar las solicitudes de extracción, responder a inserciones de código e interactuar con comentarios para la coordinación de canalizaciones.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Repositorio: push</li></li></ul></ul></ul> |
 
 ### Validación de solicitudes de extracción con webhooks
 
