@@ -4,10 +4,10 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3583c8dad2ad8dce941845003dbf850ea0b8ad2a
+source-git-commit: 9327bc51ba170971bde8ce8e338c9a42ac5cbe82
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1500'
+ht-degree: 11%
 
 ---
 
@@ -639,7 +639,7 @@ Un tipo de componente numérico permite introducir un número. Ofrece tipos de v
 
 >[!ENDTABS]
 
-#### Grupo de radio {#radio-group}
+#### Grupo de opciones {#radio-group}
 
 Un tipo de componente de grupo de radio permite una selección mutuamente excluyente de varias opciones representadas como un grupo similar a un grupo de casillas de verificación.
 
@@ -849,6 +849,7 @@ El texto permite introducir una sola línea de texto.  Incluye tipos de validaci
       "name": "text",
       "label": "Simple Text",
       "valueType": "string",
+      "valueFormat": "regexp",
       "description": "This is a text input with validation.",
       "required": true,
       "validation": {
