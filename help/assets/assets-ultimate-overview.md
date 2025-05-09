@@ -4,10 +4,10 @@ description: Obtenga más información sobre los aspectos clave de Assets Ultima
 feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: ccd2334528ed7309c271d069209adec333de356c
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 97%
+source-wordcount: '902'
+ht-degree: 94%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -138,6 +138,6 @@ La siguiente tabla resume los tipos de usuarios de AEM Assets disponibles, los p
 | AEM > Instancia de autor de producción > Administradores de AEM | − | − | − | ✓ |
 | **Más información** | Consulte [Habilitar Content Hub](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) | Consulte [Incorporación de usuarios colaboradores](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | Consulte [Incorporación de usuarios avanzados](/help/assets/enable-assets-ultimate.md#onboard-power-users) | - |
 
-Para obtener información sobre cómo empezar a usar Assets Ultimate, consulte [Habilitar AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md).
+Para obtener información sobre cómo empezar a usar Assets Ultimate, consulte [Habilitar Ultimate para AEM Assets](/help/assets/enable-assets-ultimate.md). Si los usuarios de AEM Assets existentes tienen dudas sobre cuándo pueden actualizar a Assets Ultimate, póngase en contacto con el representante de su cuenta de Adobe. También puedes ver [Habilitar Assets Ultimate para clientes existentes](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) para obtener más información.
 
 AEM Assets también proporcionan un DAM más ligero para los clientes que no tienen requisitos avanzados como, por ejemplo, extensibilidad de la interfaz de usuario, automatización impulsada por API e implementación de código personalizado. Para más información, consulte [AEM Assets Prime](/help/assets/assets-prime.md).
