@@ -5,7 +5,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 15%
@@ -43,7 +43,7 @@ Obtenga más información acerca de los tipos de programas en el documento [Expl
 1. En el cuadro de lista **Soluciones y complementos**, seleccione una o varias soluciones para incluirlas en el programa.
 
    * Haga clic en las comillas angulares a la izquierda del nombre de una solución para mostrar los complementos opcionales disponibles que desee incluir en una solución seleccionada.
-   * Las soluciones **Sites**, **Assets** y **Edge Deliver Services** siempre están seleccionadas de forma predeterminada al crear un programa de zona protegida. No puede anular su selección.
+   * Las soluciones **Sites**, **Assets** y **Edge Delivery Services** siempre están seleccionadas de forma predeterminada al crear un programa de zona protegida. No puede anular su selección.
 
    ![Seleccionar soluciones y complementos para una zona protegida](assets/sandbox-solutions-add-ons.png)
 
@@ -67,11 +67,11 @@ Una vez que se haya terminado de crear un nuevo programa de zona protegida, pued
    >
    >Para obtener más información sobre cómo acceder y administrar su repositorio Git, consulte [Acceder a Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-1. AEM AEM Una vez creado el entorno de desarrollo, puede hacer clic en **Acceder a la aplicación** e iniciar sesión en la aplicación de forma remota
+1. Una vez creado el entorno de desarrollo, puede hacer clic en **Acceder a AEM** e iniciar sesión en AEM.
 
    ![Vínculo Acceso a AEM](assets/create-program5.png)
 
-1. AEM Cuando se completa la implementación de la canalización que no es de producción en el entorno de desarrollo, el asistente de la llamada a la acción le guía para acceder al entorno de desarrollo de o para implementar código en el entorno de desarrollo.
+1. Cuando se completa la implementación de la canalización que no es de producción en el desarrollo, el asistente de call-to-action le guía para acceder al entorno de desarrollo de AEM o para implementar código en el entorno de desarrollo.
 
    ![Implementación de zonas protegidas](assets/create-program-setup-deploy.png)
 

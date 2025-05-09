@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 11%
@@ -50,7 +50,7 @@ Ver [opciones adicionales del programa de producción](#options).
 
    * Si tiene dudas sobre si necesita uno o más programas para las distintas soluciones disponibles, seleccione la que le interese. Si desea activar soluciones adicionales, [puede editar el programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) más tarde. Consulte el [Documento de introducción a los programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para conocer más recomendaciones sobre la configuración del programa.
    * Se requiere al menos una solución para la creación del programa.
-   * Seleccione **Edge Deliver Services** para una solución de CDN totalmente administrada que optimice las experiencias digitales. Ver [Acerca del uso de Edge Delivery Services para entregar el proyecto Cloud Manager](#edge-overview)
+   * Seleccione **Edge Delivery Services** para obtener una solución de CDN completamente administrada que optimice las experiencias digitales. Ver [Acerca del uso de Edge Delivery Services para entregar el proyecto Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
    * Si seleccionó la opción **[Habilitar seguridad mejorada](#security)**, solo podrá seleccionar tantas soluciones para las que los derechos HIPAA estén disponibles.
 
      ![Seleccionar soluciones](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
@@ -128,7 +128,7 @@ Además de los derechos requeridos, el uso del 99,99 % de SLA para sitios o prog
 
 1. Seleccione **Información general del programa** para navegar a la página **Información general**.
 
-1. La tarjeta de llamada a la acción principal de la página de información general le guía a través de la creación de un entorno, una canalización que no es de producción y, finalmente, una canalización de producción.
+1. La tarjeta de call-to-action principal de la página de información general le guía a través de la creación de un entorno, una canalización que no sea de producción y, finalmente, una canalización de producción.
 
    ![Información general del programa](assets/set-up-prod5.png)
 
