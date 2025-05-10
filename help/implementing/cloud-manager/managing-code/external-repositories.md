@@ -5,7 +5,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Adoptador anticipado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: a0eac2f3f513b9fecd595a86bb2110083fa0b80f
+source-git-commit: d0cf86d429c7374ad12f6eeb9f287b0ace3406ec
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 23%
@@ -96,8 +96,9 @@ Después de la validación, el repositorio externo estará listo para usarse y v
 1. Añada o edite una canalización:
    * [Añadir una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
    * [Adición de una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-   <!-- * [Add an Edge Delivery Pipeline]() -->
    * [Editar una canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#editing-pipelines)
+
+   <!-- Add an Edge Delivery Pipeline -->
 
    ![Repositorio de código fuente de la canalización y rama Git](/help/implementing/cloud-manager/managing-code/assets/pipeline-repo-gitbranch.png)
    *Cuadro de diálogo Añadir canalización que no es de producción con el repositorio seleccionado y la rama Git.*
