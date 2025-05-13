@@ -4,10 +4,10 @@ description: Obtenga información sobre la versión de Cloud Manager 2025.5.0 en
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6b18623cc940856383009cd6b4ba011515c12ab5
+source-git-commit: f9f4226bff8a0772878c144773eb8ff841a0a8d0
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 21%
+source-wordcount: '830'
+ht-degree: 20%
 
 ---
 
@@ -27,13 +27,13 @@ La próxima versión planificada es para el viernes, 05 de junio de 2025.
 
 ## Novedades {#what-is-new}
 
-### Cómo cambiar la fuente de contenido en un solo clic para Edge Delivery Services
+### Configuración de la fuente de contenido en un solo clic para Edge Delivery Services
 
 Adobe Experience Manager (AEM) Edge Delivery Services permite la entrega de contenido desde varias fuentes, como Google Drive, SharePoint o el propio AEM, mediante una red perimetral rápida y distribuida globalmente.
 
 La configuración de la fuente de contenido difiere entre Helix 4 y Helix 5 del siguiente modo:
 
-| Versión | Método de configuración |
+| Versión | Método de configuración de fuente de contenido |
 | --- | --- |
 | Helix 4 | Archivo YAML (`fstab.yaml`) |
 | Helix 5 | API del servicio de configuración (*no`fstab.yaml`*) |
@@ -42,7 +42,7 @@ En este artículo se proporcionan pasos de configuración completos, ejemplos e 
 
 **Antes de comenzar**
 
-Si usa [un clic en Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), su sitio es Helix 5 con un solo repositorio. Siga las instrucciones de Helix 5 y utilice la versión YAML de Helix 4 proporcionada como alternativa.
+Si usa [un clic en Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), su sitio es Helix 5 con un solo repositorio. Siga las instrucciones de Helix 5 y utilice la versión de instrucciones de Helix 4 YAML proporcionada como alternativa.
 
 **Determine su versión de Helix**
 
@@ -51,20 +51,18 @@ Si usa [un clic en Edge Delivery en Cloud Manager](/help/implementing/cloud-mana
 
 Confirme a través de los metadatos del repositorio o consulte con su administrador si aún no está seguro.
 
-#### Configuración de la fuente de contenido (Helix 4)
+#### Configuración de la fuente de contenido para Helix 4
 
-En Helix 4, el origen de contenido se define en un archivo de configuración YAML denominado `fstab.yaml` ubicado en la raíz del repositorio de GitHub.
-
-##### Formato de archivo YAML
-
-El archivo `fstab.yaml` define puntos de montaje (prefijos de ruta de URL asignados a direcciones URL de origen de contenido) de forma similar al siguiente ejemplo (solo con fines ilustrativos):
+En Helix 4, el archivo fstab.yaml define el origen de contenido del sitio. Ubicado en la raíz del repositorio de GitHub, este archivo asigna prefijos de ruta de URL (llamados puntos de montaje) a orígenes de contenido externos. Un ejemplo típico tiene el siguiente aspecto:
 
 ```yaml
 mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-##### Cambio del origen de contenido
+Este ejemplo es solo ilustrativo. La dirección URL real debe apuntar al origen de contenido, como una carpeta específica de Google Drive, un directorio de SharePoint o una ruta de acceso de AEM.
+
+**Para configurar el origen de contenido para Helix 4:**
 
 Los pasos varían según el sistema de origen que utilice.
 
@@ -113,22 +111,20 @@ Los pasos varían según el sistema de origen que utilice.
 * Con la extensión AEM Sidekick Chrome, haga clic en **Vista previa** > **Publicar** > **Probar el sitio activo**.
 * Validar URL: `https://main--<repo>--<org>.hlx.page/`
 
-#### Configuración de la fuente de contenido (Helix 5)
+#### Configuración de la fuente de contenido para Helix 5
 
-Helix 5 no utiliza `fstab.yaml` y admite que varios sitios compartan el mismo directorio. La configuración se administra mediante la API del servicio de configuración o la IU de Edge Delivery Services. La configuración es de nivel de sitio (no de repositorio).
+Helix 5 no utiliza `fstab.yaml`, es compatible con varios sitios que comparten el mismo directorio. La configuración se administra mediante la API del servicio de configuración o la IU de Edge Delivery Services. La configuración es de nivel de sitio (no de repositorio).
 
-##### Diferencias conceptuales
+Las diferencias conceptuales son las siguientes:
 
 | Aspecto | Helix 4 | Helix 5 |
 | --- | --- | --- |
-| Archivo de configuración | `fstab.yaml` | Configuración de API o IU |
-| Puntos de montaje | Definido por YAML | No obligatorio (raíz implícita) |
+| Configuración | Listo hasta `fstab.yaml` | Se realiza mediante la API o la IU en lugar de YAML. |
+| Puntos de montaje | Definido en `fstab.yaml`. | No es obligatorio. La raíz se entiende implícitamente. |
 
-##### Cambio del origen de contenido
+**Para configurar el origen de contenido de Helix 5:**
 
-Utilice la API del servicio de configuración.
-
-1. Autentique mediante una clave de API o un token de acceso.
+1. Con la API del servicio de configuración, realice la autenticación mediante una clave de API o un token de acceso.
 1. Realizar la siguiente llamada a la API `PUT`:
 
    ```bash {.line-numbering}
