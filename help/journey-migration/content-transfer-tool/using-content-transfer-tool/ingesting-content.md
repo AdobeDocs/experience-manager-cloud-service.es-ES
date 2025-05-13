@@ -4,9 +4,9 @@ description: Aprenda a utilizar Cloud Acceleration Manager para introducir conte
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
+source-git-commit: 30386a3117f241d81eed5e55f6c6e97bbe4084f8
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3467'
 ht-degree: 12%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion"
 >title="Ingesta de contenido"
 >abstract="Hace referencia a la ingesta de contenido del conjunto de migración en la instancia de Cloud Service de destino. La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior."
->additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Extracción superior"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Extracción superior"
 
 Siga los pasos a continuación para ingerir el conjunto de migración mediante Cloud Acceleration Manager:
 
@@ -99,7 +99,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingesta superior"
 >abstract="Utilice la función superior para mover el contenido modificado desde la actividad de transferencia de contenido anterior. Una vez finalizada la ingesta, compruebe los registros para ver si hay errores o advertencias. Los errores deben solucionarse inmediatamente, ya sea abordando los problemas notificados o poniéndose en contacto con el Servicio de atención al cliente de Adobe."
->additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Visualización de registros"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Visualización de registros"
 
 La herramienta de transferencia de contenido tiene una característica que permite extraer contenido diferencial realizando una *recarga* del conjunto de migración. Esto permite modificar el conjunto de migración para incluir únicamente el contenido que ha cambiado desde la extracción anterior sin tener que extraer todo el contenido de nuevo.
 
@@ -116,9 +116,9 @@ Comience creando un trabajo de ingesta y asegúrese de que **Borrar** esté desh
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
->title="Resolución de problemas de ingestión de contenidos"
+>title="Resolución de problemas de ingesta de contenidos"
 >abstract="Consulte los registros de la ingesta y la documentación para encontrar soluciones a los motivos habituales por los que puede fallar una ingesta y encuentre la forma de solucionar el problema. Una vez corregida, la ingesta se puede ejecutar de nuevo."
->additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Validación de transferencias de contenido"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Validación de transferencias de contenido"
 
 ### CAM no puede recuperar el token de migración {#cam-unable-to-retrieve-the-migration-token}
 
@@ -151,13 +151,13 @@ Este mensaje indica que Cloud Acceleration Manager no pudo contactar con el serv
 > El campo &quot;Token de migración&quot; se muestra porque, en algunos casos, la recuperación de ese token es lo que realmente no está permitido. Al permitir que se proporcione manualmente, puede permitir al usuario iniciar la ingesta rápidamente, sin ninguna ayuda adicional. Si se proporciona el token y sigue apareciendo el mensaje, el problema no consistió en recuperar el token.
 
 * AEM as a Cloud Service mantiene el estado del entorno y, ocasionalmente, debe reiniciar el servicio de migración por varios motivos normales. Si ese servicio se está reiniciando, no se podrá acceder a él, pero estará disponible en algún momento.
-* Es posible que se esté ejecutando otro proceso en la instancia. Por ejemplo, si [Actualizaciones de la versión de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) está aplicando una actualización, es posible que el sistema esté ocupado y que el servicio de migración no esté disponible con regularidad. Una vez completado ese proceso, se puede volver a intentar iniciar la ingesta.
+* Es posible que se esté ejecutando otro proceso en la instancia. Por ejemplo, si [Actualizaciones de la versión de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) está aplicando una actualización, es posible que el sistema esté ocupado y que el servicio de migración no esté disponible con regularidad. Una vez completado ese proceso, se puede volver a intentar iniciar la ingesta.
 * Si se ha aplicado una Lista de permitidos de [IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) a través de Cloud Manager, se bloquea el acceso de Cloud Acceleration Manager al servicio de migración. No se puede añadir una dirección IP para ingestas porque es dinámica. Actualmente, la única solución es deshabilitar la lista de permitidos de IP durante el proceso de ingesta e indexación.
 * Puede haber otras razones que requieren investigación. Si la ingesta o la indexación siguen fallando, póngase en contacto con el Servicio de atención al cliente de Adobe.
 
 ### Actualizaciones e ingestas de versiones de AEM {#aem-version-updates-and-ingestions}
 
-[Las actualizaciones de la versión de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) se aplican automáticamente a los entornos para mantenerlos actualizados con la última versión de AEM as a Cloud Service. Si la actualización se activa cuando se realiza una ingesta, puede causar resultados impredecibles, incluido el daño del entorno.
+[Las actualizaciones de la versión de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) se aplican automáticamente a los entornos para mantenerlos actualizados con la última versión de AEM as a Cloud Service. Si la actualización se activa cuando se realiza una ingesta, puede causar resultados impredecibles, incluido el daño del entorno.
 
 Si &quot;Actualizaciones de la versión de AEM&quot; está incorporado en el programa de destino, el proceso de ingesta intenta desactivar su cola antes de iniciarse. Cuando se completa la ingesta, el estado del actualizador de versiones se devuelve a como estaba antes de que se iniciaran las ingestas.
 
@@ -190,7 +190,7 @@ Asegúrese de que el entorno de creación esté disponible y espere unos minutos
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Infracción de restricción de unicidad"
 >abstract="Una causa común de un error de ingesta que no es de borrado es un conflicto en los identificadores de nodo. Solo puede existir uno de los nodos en conflicto."
->additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingesta de recarga"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingesta de recarga"
 
 Una causa común de un error de [ingesta superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) es un conflicto en los identificadores de nodo. Para identificar este error, descargue el registro de ingesta mediante la interfaz de usuario de Cloud Acceleration Manager y busque una entrada como la siguiente:
 
@@ -210,7 +210,7 @@ Este conflicto debe resolverse manualmente. Alguien familiarizado con el conteni
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="No se puede eliminar el nodo de referencia"
 >abstract="Una causa común de un error de ingesta sin borrado es un conflicto de versiones para un nodo en particular en la instancia de destino. Se deben corregir las versiones del nodo."
->additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingesta de recarga"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingesta de recarga"
 
 Otra causa común de un error de [Ingesta superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) es un conflicto de versión para un nodo en particular en la instancia de destino. Para identificar este error, descargue el registro de ingesta mediante la interfaz de usuario de Cloud Acceleration Manager y busque una entrada como la siguiente:
 
@@ -228,7 +228,7 @@ Las prácticas recomendadas indican que si se debe ejecutar una ingesta de **Non
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Propiedad de nodo grande"
 >abstract="Una causa común de un error de ingesta es el exceso del tamaño máximo de los valores de propiedad del nodo. Consulte la documentación, incluida la relacionada con el informe de BPA, para solucionar esta situación."
->additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Requisitos previos de migración"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Requisitos previos de migración"
 
 Los valores de propiedad del nodo almacenados en MongoDB no pueden superar los 16 MB. Si el valor de un nodo supera el tamaño admitido, la ingesta falla y el registro contiene lo siguiente:
 
@@ -239,7 +239,7 @@ Esta es una restricción de MongoDB.
 
 Consulte la nota `Node property value in MongoDB` en [Requisitos previos para la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obtener más información y un vínculo a una herramienta de Oak que pueda ayudar a encontrar todos los nodos grandes. Una vez corregidos todos los nodos con tamaños grandes, ejecute de nuevo la extracción y la ingesta.
 
-Para evitar posiblemente esta restricción, ejecute el [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) en la instancia de AEM de origen y revise los resultados que presenta, en particular el patrón [&quot;Estructura de repositorio no admitida&quot; (URS)](https://experienceleague.adobe.com/es/docs/experience-manager-pattern-detection/table-of-contents/urs).
+Para evitar posiblemente esta restricción, ejecute el [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) en la instancia de AEM de origen y revise los resultados que presenta, en particular el patrón [&quot;Estructura de repositorio no admitida&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 >[!NOTE]
 >
@@ -259,6 +259,7 @@ A veces, problemas intermitentes inesperados podrían prestarse a ingestas falli
 * `Atlas prescale timeout error`: en la fase de ingesta se intentará escalar previamente la base de datos de la nube de Target a un tamaño adecuado que se ajuste al tamaño del contenido del conjunto de migración que se está ingiriendo. De forma poco frecuente, esta operación no se completa dentro del intervalo de tiempo esperado.
 * `Exhausted mongo restore retries`: se agotaron los intentos de restaurar un volcado local del contenido del conjunto de migración ingerido en la base de datos de la nube. Esto indica un problema general de salud/red con MongoDB, que a menudo se cura solo después de unos minutos.
 * `Mongo network error`: a veces, el establecimiento de una conexión con MongoDB puede fallar, lo que provoca que el proceso de ingesta se cierre antes y notifique como fallido. Se debe intentar un simple reintento de la ingesta.
+* `Mongo server selection error`: se trata de un error de tiempo de espera inusual del lado del cliente que puede producirse por varias razones subyacentes. Un reintento posterior probablemente corregirá el problema.
 
 ### Ingesta rescindida {#ingestion-rescinded}
 
