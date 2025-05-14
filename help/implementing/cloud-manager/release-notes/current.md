@@ -4,10 +4,10 @@ description: Obtenga información sobre la versión de Cloud Manager 2025.5.0 en
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f9f4226bff8a0772878c144773eb8ff841a0a8d0
+source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 20%
+source-wordcount: '1038'
+ht-degree: 16%
 
 ---
 
@@ -42,7 +42,7 @@ En este artículo se proporcionan pasos de configuración completos, ejemplos e 
 
 **Antes de comenzar**
 
-Si usa [un clic en Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), su sitio es Helix 5 con un solo repositorio. Siga las instrucciones de Helix 5 y utilice la versión de instrucciones de Helix 4 YAML proporcionada como alternativa.
+Si usa [un clic en Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), su sitio es Helix 5 con un solo repositorio. Siga las instrucciones de Helix 5 y utilice la versión de Helix 4 YAML proporcionada de las instrucciones como alternativa.
 
 **Determine su versión de Helix**
 
@@ -60,7 +60,7 @@ mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-Este ejemplo es solo ilustrativo. La dirección URL real debe apuntar al origen de contenido, como una carpeta específica de Google Drive, un directorio de SharePoint o una ruta de acceso de AEM.
+Este ejemplo es solo ilustrativo. La dirección URL real debe apuntar al origen de contenido, como una carpeta de Google Drive, un directorio de SharePoint o una ruta de acceso de AEM.
 
 **Para configurar el origen de contenido para Helix 4:**
 
@@ -190,6 +190,16 @@ Consulte [Adición de repositorios externos en Cloud Manager](/help/implementing
 ![Cuadro de diálogo Añadir repositorio](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
 Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privado/público o de empresa.
+
+#### Preguntas frecuentes sobre Traer su propio Git
+
+| Pregunta | Respuesta |
+|---|---|
+| *¿Cómo puede un proyecto volver al repositorio Git administrado por Adobe si es necesario?* | Volver atrás es sencillo. [Actualice las canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) para que apunten al repositorio de Adobe y elimine el repositorio externo si ya no es necesario. |
+| *¿Es posible configurar diferentes repositorios para diferentes entornos (por ejemplo, no producción frente a producción) para permitir primero las pruebas en no producción?* | Sí, se pueden configurar diferentes repositorios para entornos independientes. Por ejemplo, la canalización de desarrollo o de calidad del código puede señalar a un repositorio externo mientras que la canalización de producción permanece conectada al repositorio de Adobe. Asegúrese de que el trabajo de sincronización entre los dos repositorios permanece activo durante esta configuración. |
+| *¿La configuración existente, como las listas de permitidos IP, sigue funcionando?* | Sí, las listas de permitidos IP existentes siguen funcionando como de costumbre. Sin embargo, si el repositorio Git externo está protegido por un firewall, las [direcciones IP de Adobe necesarias deben agregarse a la lista de permitidos](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
+| *¿Funcionan todas las URL del repositorio de GitLab? La dirección URL del repositorio en uso sigue el formato `https://gitlab_dedicated_url.com/path/repo-name.git`, que difiere del ejemplo de la documentación.* | Sí, se admite cualquier repositorio de GitLab que admita API V3 o V4, incluidas las URL de GitLab autoalojadas como la descrita en [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
+
 
 <!--
 ## Bug fixes
