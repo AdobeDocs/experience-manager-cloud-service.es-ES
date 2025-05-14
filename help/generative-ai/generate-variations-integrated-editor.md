@@ -5,9 +5,9 @@ feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -172,7 +172,7 @@ La administración del uso depende de la acción realizada:
 
   >[!NOTE]
   >
-  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/es/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea adquirir acciones más generativas.
+  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea adquirir acciones más generativas.
 
 ## Acceso a “Generar variaciones” {#access-generate-variations}
 
@@ -313,9 +313,9 @@ Para utilizar “Generar variaciones” en la barra de tareas (de Edge Delivery 
 
 ### Acceso desde el Editor universal de AEM {#access-aem-universal-editor}
 
-El acceso desde [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) está implementado como una extensión.
+El acceso desde el [Editor universal de AEM](/help/sites-cloud/authoring/universal-editor/authoring.md) está implementado como una extensión. 
 
-* Para obtener más información sobre cómo acceder a Generar variaciones desde el editor universal, consulte el documento [Creación de contenido con el editor universal.](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
+* Para obtener más información sobre el acceso a generar variaciones con el editor universal, consulte el documento [Publicación de contenido con el editor universal.](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
 * Para obtener más información sobre cómo habilitar la extensión, consulte el documento [Extension Manager en AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
 ### Acceso desde el editor de fragmentos de contenido de AEM {#access-aem-content-fragment-editor}
