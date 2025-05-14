@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 158b808c2f97bea52d285d4f2611c6e297375ca1
+source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1553'
 ht-degree: 14%
 
 ---
@@ -33,9 +33,8 @@ La activación de funcionalidades 2025.5.0 proporciona el conjunto completo de f
 * SITES-27775: búsqueda de referencia optimizada durante la publicación.
 * SITES-30885: procesamiento JSON optimizado en consultas persistentes.
 * SITES-25433: Edge Delivery con editor universal: admite la representación de páginas completas al comparar versiones antiguas.
-* SITES-27792: Edge Delivery con editor universal: mueva completamente la configuración de EDS a la configuración de CA.
+* SITES-27792: Edge Delivery con el editor universal: agregue una plantilla específica para las configuraciones del servicio Edge Delivery
 * SITES-19754: Edge Delivery con editor universal: mensaje de error convincente cuando se interrumpe la configuración.
-* SITES-30267: Edge Delivery con el editor universal: Hoja V2 (acceso anticipado).
 * SITES-30328: Edge Delivery con editor universal: vista previa desde el soporte de Sidekick.
 * SITES-23499: Edge Delivery con editor universal: permite que se utilicen varios campos para las opciones de bloque.
 * SITES-29987: agregue la capacidad para establecer `previewUrlPattern` al crear modelos de fragmento de contenido.
