@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
+source-git-commit: 088d470333d8f5a26f1a938380028541a1e945a1
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 14%
+source-wordcount: '1750'
+ht-degree: 12%
 
 ---
 
@@ -30,6 +30,7 @@ La activación de funcionalidades 2025.5.0 proporciona el conjunto completo de f
 * FORMS-19125: El editor del formulario adaptable del componente principal se ha mejorado para admitir la asignación automática de los fragmentos de formulario adaptable disponibles cuando se suelta una sección correspondiente del árbol de fuentes de datos en el lienzo del formulario. Esto lleva una función de productividad clave del editor de bases a los componentes principales.
 * FORMS-17887: AEM Forms ahora permite generar documentos en formato AFP (Advanced Function Presentation) a través de su servicio de salida. Esta mejora responde a las necesidades de los clientes en entornos de impresión de gran volumen y alta velocidad, normalmente con AFP.
 * FORMS-15089: AEM Forms ha introducido la capacidad para crear versiones de un formulario tras su publicación de tal manera que todos sus fragmentos constitutivos están insertados (incrustados) en esa versión publicada específica. Esto garantiza una representación exacta e independiente del formulario tal como aparecía en el momento de la publicación, lo que puede ser crítico para fines de archivo, legales o de cumplimiento.
+* FORMS-17107: AEM Forms ahora ofrece análisis de funciones personalizadas mejorados en el lado del cliente. Esto incluye compatibilidad con funciones modernas de JavaScript (ECMAScript ES10+), como el encadenamiento opcional, e introduce la capacidad de utilizar importaciones estáticas en scripts de función personalizados. Esto permite a los desarrolladores organizar mejor el código, utilizar los módulos ESM y eliminar las limitaciones anteriores que se encontraban con las funciones personalizadas en la versión 2.0 de Forms adaptable y Edge Delivery Services, especialmente para los usuarios que anteriormente necesitaban soluciones alternativas para estas funciones.
 * SITES-27775: búsqueda de referencia optimizada durante la publicación.
 * SITES-30885: procesamiento JSON optimizado en consultas persistentes.
 * SITES-25433: Edge Delivery con editor universal: admite la representación de páginas completas al comparar versiones antiguas.
@@ -70,6 +71,8 @@ La activación de funcionalidades 2025.5.0 proporciona el conjunto completo de f
 * FORMS-19629: el analizador de esquemas JSON produce resultados no válidos o malinterpreta ciertos esquemas JSON proporcionados por el cliente. Este problema puede afectar negativamente a las funcionalidades que dependen del análisis de esquema correcto, como la asignación automática de fragmentos.
 * FORMS-19380: La introducción de la compatibilidad con el control de versiones para los componentes principales de Forms adaptable ha habilitado de forma involuntaria las funcionalidades de control de versiones para otros tipos de recursos (por ejemplo, Foundation Forms, archivos PDF, temas, FDM) sin un diseño específico o pruebas para esos tipos de recursos. Este efecto secundario no intencionado está en investigación.
 * FORMS-17707: El conector AEP (Adobe Experience Platform) no funciona correctamente cuando se configura para conectarse a entornos &quot;stage&quot; de la plataforma AEP.
+FORMS-18526: al copiar una regla que tiene condiciones basadas en varios campos, un campo al que se hace referencia dentro de las condiciones o acciones de la regla (que no es el campo principal que activa la regla) no se actualiza para hacer referencia correctamente al nuevo campo al que se copia la regla. En su lugar, sigue haciendo referencia al campo de origen original desde el que se copió la regla.
+FORMS-18474: regla diseñada para establecer el enfoque en un panel o componente específico cuando cambia el valor de un campo en particular (por ejemplo, el campo &quot;A&quot;) se activa incorrectamente por un cambio en cualquier campo del formulario. Por ejemplo, si se modifica el campo &quot;B&quot;, el enfoque sigue establecido en el panel designado, aunque la regla solo se haya configurado para cambios en el campo &quot;A&quot;.
 * GRANITE-58276: los ciclos de dependencia OSGi impiden que la fábrica del motor de scripts HTL funcione correctamente.
 * OAK-11673: aumento de Oak-segment-azure v12 CPU causado por refreshLease.
 * SITES-30752: no utilice encabezados `If-modified-since`/`last-modified` al generar una respuesta de consulta persistente.
@@ -90,7 +93,7 @@ La activación de funcionalidades 2025.5.0 proporciona el conjunto completo de f
 * SITES-30728: OnTime/OffTime no se publica/cancela la publicación como se espera cuando se configura en las propiedades del recurso.
 * SITES-29789: cambio en el vínculo del componente en las páginas raíz copiadas en AEM.
 * SITES-29191: no se pueden añadir más de 20 SKU al componente de lista de productos.
-* SITES-30372: el recorte inteligente no funciona en el componente principal de la imagen (V2) de AEM.
+* SITES-30372: el recorte inteligente no funciona en el componente principal Imagen (V2) de AEM.
 * SITES-28693: El componente Teaser procesa el HTML dañado cuando el título está vacío.
 * SITES-28668: no se puede promocionar el lanzamiento con LaunchPromotionParameters.
 * SITES-31005: mejore la interfaz de usuario del trabajo de despliegue para mostrar al cliente el progreso.
