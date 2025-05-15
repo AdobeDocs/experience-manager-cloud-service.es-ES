@@ -3,13 +3,11 @@ title: ¿Cómo se integra el modelo de datos de formulario (FDM) para un formula
 description: Aprenda a crear formularios basados en un modelo de datos de formulario (FDM). Genere y edite datos de muestra para objetos del modelo de datos en el modelo de datos de formulario (FDM).
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
-hide: true
-hidefromtoc: true
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
-workflow-type: ht
-source-wordcount: '1036'
-ht-degree: 100%
+source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +15,13 @@ ht-degree: 100%
 
 La integración de formularios con un modelo de datos de formulario (FDM) en el editor universal permite utilizar diversas fuentes de datos back-end para crear un modelo de datos de formulario (FDM). Puede utilizar el modelo de datos de formulario (FDM) como esquema en varios flujos de trabajo de formulario. Configure las fuentes de datos y cree un modelo de datos de formulario (FDM) basado en los objetos y servicios de modelo de datos disponibles en las fuentes de datos. 
 
-## Consideración
+## Consideraciones
+
+* Si no ve el icono **Fuentes de datos** en su interfaz de Universal Editor o la propiedad **Referencia de enlace** en el panel de propiedades derecho, habilite la extensión **Fuente de datos** en **Extension Manager**.
+
+  ![administrador de extensiones](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+
+  Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar extensiones en el editor universal.
 
 * Actualmente no se admite el servicio de rellenado previo para formularios en el editor universal.
 
@@ -32,6 +36,7 @@ Antes de configurar el formulario con el modelo de datos de formulario en el edi
 ## Creación de formularios con el modelo de datos de formulario en el editor universal
 
 En el editor universal, puede crear lo siguiente:
+
 * [Formulario basado en esquema](#schema-based-form): un formulario basado en un esquema utiliza una fuente de datos configurada durante la creación del formulario en la pestaña **Datos**, que enlaza automáticamente los datos a los campos del formulario.
 * [Formulario no basado en esquema](#non-schema-based-form): un formulario no basado en un esquema requiere que se añada manualmente una fuente de datos y se enlace cada campo del árbol de contenido.
 
@@ -44,14 +49,14 @@ Estos métodos le ofrecen la posibilidad de conectar modelos de datos con formul
 Cuando se crea un formulario basado en un esquema, se configura automáticamente con una fuente de datos y los campos del formulario ya están vinculados a los datos a través de enlaces de datos. Para crear un formulario basado en esquema mediante el asistente para la creación de formularios, realice los siguientes pasos:
 
 1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms].
-2. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
-3. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Formularios adaptables]**. Se abre el asistente. En la pestaña **Fuente**, seleccione una plantilla:
+1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
+1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Formularios adaptables]**. Se abre el asistente. En la pestaña **Fuente**, seleccione una plantilla:
 
    ![Plantilla de Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
 
    Al seleccionar una plantilla basada en Edge Delivery Services, se habilita el botón **[!UICONTROL Crear]**. Puede ir a las pestañas **[!UICONTROL Fuente de datos]** o **[!UICONTROL Envío]** para seleccionar una fuente de datos o acción de envío.
 
-4. En la pestaña **Datos**, puede seleccionar uno de los siguientes modelos de datos:
+1. En la pestaña **Datos**, puede seleccionar uno de los siguientes modelos de datos:
 
    * **Modelo de datos de formulario (FDM)**: integre objetos y servicios de modelo de datos desde las fuentes de datos en su formulario. Elija Modelo de datos de formulario (FDM) si el formulario requiere leer y escribir datos de varias fuentes.
 
@@ -64,11 +69,11 @@ Cuando se crea un formulario basado en un esquema, se configura automáticamente
 
      De forma predeterminada, todos los campos del esquema JSON asociado o Modelo de datos de formulario (FDM) se seleccionan automáticamente y se convierten en los correspondientes componentes, lo que simplifica el proceso de creación. El asistente también le permite elegir selectivamente qué campos incluir en el formulario mediante casillas de verificación.
 
-5. Haga clic en **[!UICONTROL Crear]** y aparece el asistente **Crear formulario**.
-6. Especifique el **Nombre** y **Título**.
-7. Especifique la **URL de GitHub**. Por ejemplo, si el repositorio de GitHub se llama `edsforms` y está ubicado en la cuenta `wkndforms`, la URL es la siguiente:
+1. Haga clic en **[!UICONTROL Crear]** y aparece el asistente **Crear formulario**.
+1. Especifique el **Nombre** y **Título**.
+1. Especifique la **URL de GitHub**. Por ejemplo, si el repositorio de GitHub se llama `edsforms` y está ubicado en la cuenta `wkndforms`, la URL es la siguiente:
    `https://github.com/wkndforms/edsforms`
-8. Haga clic en **[!UICONTROL Crear]**.
+1. Haga clic en **[!UICONTROL Crear]**.
 
    ![Crear formulario basado en esquema](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form.png)
 
@@ -128,12 +133,29 @@ Cuando se crea un formulario no basado en un esquema, no se configura ninguna fu
 
    ![Crear formulario](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   Debe añadir manualmente el enlace de datos a un elemento de formulario especificándolo en las propiedades de **Referencia de enlace** del elemento de formulario.
-Por ejemplo, vamos a añadir una referencia de enlace de datos al cuadro de texto **Nombre de Pet** que ya está presente en el formulario:
+Puede agregar enlaces de datos a un campo de formulario seleccionándolo en la propiedad **Referencia de enlace**. Por ejemplo, vamos a agregar una referencia de enlace de datos al cuadro de texto **Id** que ya está presente en el formulario.
+Para seleccionar el enlace de datos para el campo de formulario del árbol de fuentes de datos, realice los siguientes pasos:
+
+1. Abra las propiedades del campo de formulario para el que desea agregar la referencia de enlace de datos.
+1. Vaya a la propiedad **Bind Reference** y haga clic en el icono **Examinar**.
 
    ![Añadir manualmente el enlace de datos para un campo de formulario](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
-   Ahora puede añadir y [configurar la acción de envío](/help/edge/docs/forms/universal-editor/submit-action.md) para su formulario.
+1. Elija la referencia de enlace de datos del árbol de fuentes de datos en el asistente **Seleccionar una referencia de enlace**.
+
+   ![seleccionar referencia de enlace de datos](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
+
+1. Seleccione el elemento de datos del árbol de fuentes de datos que desea enlazar al campo de formulario y haga clic en **Seleccionar**.
+
+   ![seleccionar elemento de datos](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
+
+   El campo de formulario se enlaza al elemento de datos y aparece en la propiedad **Referencia de enlace**.
+
+   ![Enlace de datos automáticos](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
+
+   También puede editar manualmente la propiedad **Referencia de enlace** para el campo del formulario.
+
+Ahora puede añadir y [configurar la acción de envío](/help/edge/docs/forms/universal-editor/submit-action.md) para su formulario.
 
 ## Véase también
 
