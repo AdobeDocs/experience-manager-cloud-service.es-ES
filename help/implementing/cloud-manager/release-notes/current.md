@@ -4,10 +4,10 @@ description: Obtenga información sobre la versión de Cloud Manager 2025.5.0 en
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
+source-git-commit: 12388df411b9bf0693358a82de17fec90d83877a
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 16%
+source-wordcount: '1050'
+ht-degree: 15%
 
 ---
 
@@ -166,11 +166,11 @@ Participe en el programa de usuarios que adoptan anticipadamente Cloud Manager p
 
 Actualmente están disponibles las siguientes oportunidades para los usuarios que las adoptaron por primera vez:
 
-### Añadir canalización de Edge Delivery {#add-eds-pipeline}
+### Agregar canalización de configuración de Edge Delivery {#add-eds-pipeline}
 
-Ahora se admiten **canalizaciones** para sitios creados con Edge Delivery Services, lo que amplía esta capacidad más allá de los entornos de Cloud Service. Puede usar **Canalizaciones** para administrar configuraciones como las reglas de filtrado de tráfico y las configuraciones de Firewall de aplicaciones web (WAF), cuando corresponda. Consulte [Configuraciones compatibles](/help/operations/config-pipeline.md#configurations).
+Las canalizaciones de configuración ahora son compatibles con los sitios creados con Edge Delivery Services, lo que expande esta capacidad más allá de los entornos de Cloud Service. Puede usar **Canalizaciones de configuración** para administrar la configuración, como las reglas de filtrado de tráfico y las configuraciones del firewall de aplicaciones web (WAF), cuando corresponda. Consulte [Configuraciones compatibles](/help/operations/config-pipeline.md#configurations).
 
-<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+![Agregar canalización de Edge Delivery en la lista desplegable Agregar canalización](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
 Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un mensaje de correo electrónico a [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
 
