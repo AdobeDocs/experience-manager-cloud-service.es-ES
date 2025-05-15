@@ -71,6 +71,7 @@ La plantilla repetitiva de AEM Forms le permite empezar rápidamente con un proy
       ![abrir archivo fstab.yaml](/help/edge/docs/forms/assets/open-fstab.png)
 
    1. Edite el archivo **fstab.yaml** para actualizar el punto de montaje del proyecto. Reemplace la URL por la URL de la instancia de creación de AEM as a Cloud Service.
+
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![editar archivo fstab.yaml](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -344,7 +345,7 @@ Puede configurar un entorno de desarrollo de AEM local para desarrollar estilos 
        npm install -g @adobe/aem-cli
    ```
 
-1. **Clone el proyecto de GitHub**: clone el repositorio del Proyecto de AEM desde GitHub mediante el siguiente comando, reemplazando <owner> con el propietario del repositorio y <repo> con el nombre del repositorio:
+1. **Clone el proyecto de GitHub**: clone el repositorio del Proyecto de AEM desde GitHub mediante el siguiente comando, reemplazando &lt;owner> con el propietario del repositorio y &lt;repo> con el nombre del repositorio:
 
    ```
    git clone https://github.com/<owner>/<repo>
