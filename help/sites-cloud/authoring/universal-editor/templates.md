@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 26%
@@ -81,12 +81,12 @@ Complete el asistente como lo haría para cualquier otra página y habrá creado
 
 Las plantillas de página solo definen el contenido inicial de las páginas. Las páginas se pueden editar completamente con el editor universal.
 
-* Las páginas creadas a partir de plantillas de páginas son copias independientes de la plantilla.
+* Las páginas creadas a partir de plantillas de página son copias independientes de la plantilla.
 * Si la plantilla cambia, las páginas existentes basadas en esa plantilla no cambian.
 * El autor de contenido puede modificar y actualizar el contenido de la página resultante según sea necesario sin restricciones impuestas por la plantilla.
 
 ## Plantillas editables {#editable-templates}
 
-Las páginas creadas con [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) también pueden basarse en plantillas. AEM Las plantillas usadas para crear páginas para el Editor universal y el Editor de páginas aprovechan la ventaja de usar [plantillas editables](/help/implementing/developing/components/templates.md) que se pueden usar tanto para la creación de páginas como para la creación de páginas.
+Las páginas creadas con [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) también pueden basarse en plantillas. Tanto las plantillas utilizadas para crear páginas para el editor universal como el editor de páginas aprovechan las [plantillas editables](/help/implementing/developing/components/templates.md) de AEM.
 
 Las plantillas utilizadas para crear páginas editables con el Editor de páginas utilizan todas las funciones de las plantillas editables. Las plantillas utilizadas para crear páginas editables con el editor universal solo utilizan la función de contenido inicial.
