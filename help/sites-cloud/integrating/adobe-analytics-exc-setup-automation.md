@@ -5,14 +5,18 @@ feature: Integration
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4a3e65ef6a8aa08c8bc78db31f94272334994ac5
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 87%
+source-wordcount: '727'
+ht-degree: 86%
 
 ---
 
 # Integración de Adobe Analytics con la automatización de la configuración de Experience Cloud {#integrate-adobe-analytics-automation-setup}
+
+>[!CAUTION]
+>
+>La funcionalidad de automatización de la configuración de Experience Cloud está en desuso.
 
 La automatización de la configuración de Experience Cloud proporciona una forma sencilla y automatizada de integrar e instrumentar Experience Manager Sites con etiquetas de Experience Platform y Adobe Analytics mediante una sencilla interfaz de asistente de IU.
 
@@ -47,11 +51,11 @@ El entorno debe estar listo para la automatización de la configuración de Expe
 1. Vaya a **Sitios** y seleccione la raíz del sitio que desea integrar con Adobe Analytics.
 1. Expanda el menú del carril lateral y seleccione **Análisis de configuración**.
 
-   Se trata de una nueva opción del carril lateral que abre un panel que proporciona controles y el estado para la automatización de la configuración del Experience Cloud.
+   Se trata de una nueva opción del carril lateral que abre un panel que proporciona controles y el estado para la automatización de la configuración de Experience Cloud.
 1. Seleccione el botón **Integrar Analytics**.
 1. En el cuadro de diálogo resultante, proporcione un nombre para el **ID del grupo de informes**.
 
-   Esta cadena se usa para crear un [Id. del grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=es) en Adobe Analytics AEM como almacén de datos para los datos de análisis del sitio seleccionado de la lista de distribución de datos La cadena proporcionada se añade con identificadores de entorno y de nivel para garantizar la exclusividad.
+   Esta cadena se usa para crear un [ID del grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=es) en Adobe Analytics como almacén de datos para los datos de análisis del sitio de AEM seleccionado. La cadena proporcionada se añade con identificadores de entorno y de nivel para garantizar la exclusividad.
 
 1. Actualice la página y el panel y seleccione **Comprobar estado de integración** para comprobar el estado de la automatización.
 
