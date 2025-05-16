@@ -372,7 +372,7 @@ Estas reglas se validan durante el proceso de compilación de Cloud Manager. Con
 
 Puede encontrar información adicional sobre la configuración de OSGI en [esta ubicación](/help/implementing/deploying/configuring-osgi.md).
 
-Configuraciones de +++OSGi que no se pueden modificar.
++++Configuraciones de OSGi que no se pueden modificar.
 
 * **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
@@ -381,7 +381,7 @@ Configuraciones de +++OSGi que no se pueden modificar.
 * **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Fecha de anuncio: 25/8/2021, fecha de aplicación: 26/11/2021)
 +++
 
-Las configuraciones de +++OSGi están sujetas a reglas de validación de compilación.
++++Las configuraciones de OSGi están sujetas a reglas de validación de compilación.
 
 * **`org.apache.felix.eventadmin.impl.EventAdmin`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
