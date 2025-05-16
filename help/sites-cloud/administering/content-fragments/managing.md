@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: c6ba1c2bcf7db8c406350c81c51639dc5bc8843f
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 41%
 
 ---
@@ -97,7 +97,7 @@ El panel principal/derecho (vista de tabla) de la consola proporciona una amplia
    * Se puede usar para [Filtrado rápido](#fast-filtering)
 * **Carpeta**
    * Proporciona un vínculo para abrir la carpeta en la consola.
-Al pasar el ratón por encima del nombre de la carpeta, se muestra la ruta JCR.
+Al pasar el puntero por encima del nombre de la carpeta, se muestra la ruta JCR.
 * **Estado**
    * Solo información.
    * Se puede usar para [Filtrado rápido](#fast-filtering)
@@ -166,14 +166,14 @@ Al seleccionar un fragmento específico, se abre una barra de herramientas centr
 ![Consola Fragmentos de contenido: barra de herramientas para un fragmento seleccionado](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Abrir en nuevo editor](#editing-the-content-of-your-fragment)**
-* **[Abrir](/help/assets/content-fragments/content-fragments-variations.md)** (en el editor original)
 * **[Publicación](#publishing-and-previewing-a-fragment)** (y **[Cancelar la publicación](#unpublishing-a-fragment)**)
 * **[Administrar etiquetas](#manage-tags)**
-* **[Copiar](/help/assets/manage-digital-assets.md)**
-* **[Mover](/help/assets/manage-digital-assets.md)**
-* **[Cambiar nombre](/help/assets/manage-digital-assets.md)**
-* **[Eliminar](#deleting-a-fragment)**
+* **Copiar**
 * **[Reemplazar](#find-and-replace)**
+* **Mover**
+* **Cambiar nombre**
+* **[Eliminar](#deleting-a-fragment)** (solo disponible para fragmentos sin publicar)
+
 
 >[!NOTE]
 >
