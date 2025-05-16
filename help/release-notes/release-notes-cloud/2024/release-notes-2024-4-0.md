@@ -4,7 +4,7 @@ description: Notas de la versión 2024.4.0 de la versión de  [!DNL Adobe Experi
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '2707'
 ht-degree: 97%
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de abril de 2024 para ver un resumen de las funciones añadidas en la versión 2024.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3446308?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -170,7 +170,7 @@ El Servicio de datos de monitorización de usuarios reales (RUM) refleja de form
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Configuración de la CDN {#cdn-config}
+### Asignación de dominios {#cdn-config}
 
 Configure el tráfico en la CDN de Adobe de las siguientes maneras:
 

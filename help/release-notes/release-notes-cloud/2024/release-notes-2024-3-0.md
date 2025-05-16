@@ -4,7 +4,7 @@ description: Notas de la versión 2024.3.0 de la versión de  [!DNL Adobe Experi
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 7f63f66cb1753fc32996e4672214eccc33ca8d92
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '2293'
 ht-degree: 95%
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo de información general sobre la versión de marzo de 2024 para ver un resumen de las funciones añadidas en la versión 2024.3.0.
 
->[!VIDEO](https://video.tv.adobe.com/v/3450362?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -49,7 +49,7 @@ AEM Sites se puede utilizar ahora como origen de contenido para Edge Delivery Se
 
 ![Creación de AEM](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Para obtener más información, consulte la [documentación](/help/edge/overview.md) y vea [AEM Gems: Introducción a la creación con AEM y Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=es#M43905)
+Para obtener más información, consulte la [documentación](/help/edge/overview.md) y vea [AEM Gems: Introducción a la creación con AEM y Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
 **Editor universal para implementaciones sin encabezado**
 
@@ -116,14 +116,14 @@ Assets Essentials permite a los administradores administrar los niveles de acces
 
 ### Nuevas funciones de AEM Forms {#forms-new-features}
 
-* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: Edge Delivery Services for AEM Forms es un conjunto componible de servicios que permite un desarrollo rápido entorno donde los autores pueden actualizar, publicar y iniciar nuevos formularios rápidamente. Estos servicios ofrecen experiencias de formularios excepcionales y de gran impacto que fomentan la participación y las conversiones. Estas experiencias de formulario son fáciles de crear y desarrollar.
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: Edge Delivery Services para AEM Forms es un conjunto de servicios componibles que permiten un entorno de desarrollo rápido en el que los autores pueden actualizar, publicar e iniciar nuevos formularios rápidamente. Estos servicios ofrecen experiencias de formularios excepcionales y de gran impacto que fomentan la participación y las conversiones. Estas experiencias de formulario son fáciles de crear y desarrollar.
 
   ![Funciones de EDS Forms](/help/edge/assets/eds-forms-features.png)
 
 Estos servicios le permiten:
 
 * Trabaje con varios orígenes de contenido en el mismo sitio de formularios y utilice sus herramientas de creación preferidas, como Microsoft Excel, Google Sheets o el Editor de formularios adaptables.
-* Ofrezca experiencias de inscripción digital que carguen y procesen rápida y continuamente monitor el rendimiento de sus formularios a través de la supervisión de uso real (RUM).
+* Ofrezca experiencias de inscripción digital que se carguen y procesen de forma rápida y continua para supervisar el rendimiento de los formularios mediante la monitorización de uso real (RUM).
 * Utilice HTML sin formato, CSS moderno y Vanilla JavaScript para crear experiencias excepcionales, evitando la pronunciada curva de aprendizaje de un marco específico.
 
 
@@ -186,10 +186,10 @@ Esta actualización garantiza una experiencia más inclusiva para los usuarios c
 
   Puede escribir a `aem-forms-ea@adobe.com` desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta posibilidad.
 
-* **[Puede impulsar el servicio](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** de datos de supervisión de uso real (RUM) para habilitar lado del cliente colección para AEM como Cloud Service.
+* **[Puede aprovechar el servicio de datos de supervisión de uso real (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para habilitar la recopilación del lado del cliente para AEM as a Cloud Service.
 El Servicio de datos de monitorización de usuarios reales (RUM) refleja de forma más precisa las interacciones de los usuarios, lo que garantiza una medida fiable de la participación en el sitio web. Es una gran oportunidad para obtener perspectivas avanzadas sobre el rendimiento de su página. Es beneficioso para los clientes que utilizan CDN administrada por Adobe o CDN no administrada por Adobe. Además, para los clientes que utilizan una CDN no administrada por Adobe, ahora se pueden habilitar los informes de tráfico automatizados para ellos, lo que elimina la necesidad de compartir cualquier informe de tráfico con Adobe.
 
-  Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com`, junto con su nombre de dominio de cada uno de los entornos en los que desea habilitar RUM desde su dirección de correo electrónico asociada a su Adobe ID. El equipo de productos de Adobe Systems habilitará el servicio de datos de monitoreo de uso real (RUM) para usted.
+  Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com`, junto con su nombre de dominio de cada uno de los entornos en los que desea habilitar RUM desde su dirección de correo electrónico asociada a su Adobe ID. El equipo de productos de Adobe habilitará entonces el servicio de datos de supervisión de uso real (RUM).
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -201,11 +201,11 @@ Las [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including
 
 Ahora puede enviar un correo electrónico **<aemcs-cdn-config-adopter@adobe.com>** para unirse al programa de primeros usuarios y recibir alertas cada vez que se activen las reglas de filtro de tráfico. Las notificaciones por correo electrónico del Centro de acciones le mantendrán informado cuando se produzcan determinadas condiciones de tráfico para que pueda tomar las medidas adecuadas.
 
-#### Configuración de CDN (programa para primeros usuarios) {#cdn-config-early-adopter}
+#### Asignación de dominios (programa de adopción temprana) {#cdn-config-early-adopter}
 
 Además de las [Reglas de filtrado de tráfico](/help/security/traffic-filter-rules-including-waf.md) recientemente publicadas, que incluyen las reglas del firewall de aplicaciones web (Web Application Firewall, WAF) con licencia opcional, existe la posibilidad de utilizar la canalización de configuración para declarar e implementar otros tipos de configuración de CDN. [Más información](/help/implementing/dispatcher/cdn-configuring-traffic.md) y únase al programa de primeros usuarios por correo electrónico **<aemcs-cdn-config-adopter@adobe.com>** para tener acceso a:
 
-* 301/302 del lado del servidor redirecciones
+* Redirecciones del lado del servidor 301/302
 * de solicitudes de proxy en el perímetro de con orígenes arbitrarios (como aplicaciones no AEM)
 * transformaciones de URL
 * configuración o modificación de encabezados de solicitud o respuesta

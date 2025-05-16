@@ -4,7 +4,7 @@ description: Notas de la versión 2023.12.0 de la versión de  [!DNL Adobe Exper
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 74%
@@ -27,7 +27,7 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.12.0) fue el viernes, 14 de diciembre de 2023. La siguiente versión con funcionalidades (2024.1.0) está planificada para el jueves, 25 de enero de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.12.0) es el viernes, 14 de diciembre de 2023. La próxima versión de la funcionalidad (2024.1.0) está planificada para el jueves, 25 de enero de 2023.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -105,7 +105,7 @@ Ahora puede encontrar contenido fácilmente seleccionando una imagen y viendo im
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Programa para primeros usuarios de configuración de CDN {#cdn-config-early-adopter}
+### Programa de adopción temprana de asignación de dominios {#cdn-config-early-adopter}
 
 Además de las [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md) publicadas recientemente, que incluyen las reglas de firewall de aplicaciones web (WAF) con licencia opcional, existe la oportunidad de usar la canalización de configuración para declarar e implementar otros tipos de configuración de CDN. Nos encantaría conocer sus casos de uso, incluidos los siguientes:
 * Redirecciones del lado del cliente 301/302

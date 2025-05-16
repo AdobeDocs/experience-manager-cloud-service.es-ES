@@ -4,10 +4,10 @@ description: Notas de la versión 2023.11.0 de la versión de  [!DNL Adobe Exper
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
 
@@ -27,7 +27,7 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.11.0) fue el viernes, 30 de noviembre de 2023. La siguiente versión con funcionalidades (2023.12.0) está planificada para el viernes, 14 de diciembre de 2023.
+La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2023.11.0) de [!DNL Cloud Service] es el viernes, 30 de noviembre de 2023. La próxima versión de la funcionalidad (2023.12.0) está planificada para el viernes, 14 de diciembre de 2023.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -35,7 +35,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 ## Vídeo de la versión {#release-video}
 
-Eche un vistazo al vídeo Información general sobre la versión de noviembre de 2023 para ver un resumen de las funciones añadidas en la versión 2023.11.0:
+Eche un vistazo al vídeo de información general sobre la versión de noviembre de 2023 para ver un resumen de las funciones añadidas en la versión 2023.11.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
 
@@ -53,7 +53,7 @@ Eche un vistazo al vídeo Información general sobre la versión de noviembre de
 
 ### Nuevas funciones en la vista de Assets {#assets-view-features}
 
-* **Editor de Adobes Express incrustado en AEM Assets**: Los usuarios con acceso a Express ahora tienen herramientas integradas de edición y creación de imágenes desde el Adobe Express y el Adobe Firefly disponibles directamente en AEM Assets para mejorar la reutilización del contenido y acelerar la velocidad de contenido.
+* **Editor Adobe Express incrustado en AEM Assets**: Los usuarios con acceso a Express ahora tienen herramientas integradas de edición y creación de imágenes de Adobe Express y Adobe Firefly disponibles directamente en los AEM Assets para mejorar la reutilización del contenido y acelerar la velocidad de contenido.
 
   ![asignar formulario de metadatos a una carpeta](/help/assets/assets/adobe-express-aem-assets.png)
 
@@ -76,19 +76,19 @@ Eche un vistazo al vídeo Información general sobre la versión de noviembre de
 
 ### Nuevas funciones del prelanzamiento para la vista de administrador {#admin-view-features-prerelease}
 
-**Vista previa de vídeo**: AEM Assets ahora genera representaciones de vista previa de todos los formatos de vídeo admitidos de forma predeterminada, sin necesidad de configurar un perfil de procesamiento.
+**Vista previa de vídeo**: ahora los AEM Assets generan representaciones de vista previa de todos los formatos de vídeo admitidos de forma predeterminada, sin necesidad de configurar un perfil de procesamiento.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nuevas características de [!DNL Experience Manager Forms] {#forms-features}
 
-* **[Componente de casilla de verificación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=es)**: los Forms adaptables basados en componentes principales ahora pueden incluir un componente de casilla de verificación. Permite a los usuarios realizar elecciones binarias, seleccionando o anulando la selección de una opción en particular. Normalmente aparece como un pequeño cuadro en el que se puede hacer clic o pulsar para alternar entre dos estados: activado y desactivado. La casilla de verificación es un elemento de formulario común que se utiliza para presentar una opción sí/no o verdadero/falso.
+* **[Componente de casilla de verificación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: los Forms adaptables basados en componentes principales ahora pueden incluir un componente de casilla de verificación. Permite a los usuarios realizar elecciones binarias, seleccionando o anulando la selección de una opción en particular. Normalmente aparece como un pequeño cuadro en el que se puede hacer clic o pulsar para alternar entre dos estados: activado y desactivado. La casilla de verificación es un elemento de formulario común que se utiliza para presentar una opción sí/no o verdadero/falso.
 
-* **[Componente Términos y condiciones](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=es)**: el Forms adaptable basado en componentes principales ahora puede incluir un componente Términos y condiciones. Permite a los autores de formularios introducir una sección específica dentro del formulario en la que se presentan a los usuarios los términos, condiciones o acuerdos legales asociados al uso de un servicio, producto o plataforma. Este componente está diseñado para informar a los usuarios sobre las reglas, regulaciones y obligaciones que aceptan enviando el formulario.
+* **[Componente Términos y condiciones](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: el Forms adaptable basado en componentes principales ahora puede incluir un componente Términos y condiciones. Permite a los autores de formularios introducir una sección específica dentro del formulario en la que se presentan a los usuarios los términos, condiciones o acuerdos legales asociados al uso de un servicio, producto o plataforma. Este componente está diseñado para informar a los usuarios sobre las reglas, regulaciones y obligaciones que aceptan enviando el formulario.
 
   ![Casilla de verificación, Términos y condiciones y componentes de ficha Vertical](/help/forms/assets/forms-components.png)
 
-* **[Componente de pestañas verticales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=es)**: los Forms adaptables basados en componentes principales ahora pueden organizar el contenido del formulario en una lista vertical de pestañas, lo que proporciona un diseño estructurado y navegable. El uso de pestañas verticales en un formulario puede mejorar la experiencia general del usuario al simplificar la navegación y mejorar la organización del contenido del formulario, especialmente en situaciones en que un formulario contiene varias secciones o información compleja.
+* **[Componente de pestañas verticales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: los Forms adaptables basados en componentes principales ahora pueden organizar el contenido del formulario en una lista vertical de pestañas, lo que proporciona un diseño estructurado y navegable. El uso de pestañas verticales en un formulario puede mejorar la experiencia general del usuario al simplificar la navegación y mejorar la organización del contenido del formulario, especialmente en situaciones en que un formulario contiene varias secciones o información compleja.
 
 
 
@@ -116,17 +116,17 @@ Eche un vistazo al vídeo Información general sobre la versión de noviembre de
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Ahora, Las Reglas De Filtro De Tráfico WAF Pueden Tener Licencia {#cdn-waf-license}
+### Ahora Se Puede Otorgar Licencia A Las Reglas De Filtro De Tráfico De WAF {#cdn-waf-license}
 
-Las reglas de filtro de tráfico se publicaron en octubre e incluían una nota en la que se indicaba que la categoría especial de reglas de cortafuegos de aplicaciones web (WAF) estaría disponible a finales de este año para complementar las reglas ya disponibles para los clientes de Sites y Forms. Como actualización, la oferta de protección WAF-DDoS ahora puede obtener una licencia.
+Las reglas de filtro de tráfico se publicaron en octubre e incluían una nota en la que se indicaba que la categoría especial de reglas de cortafuegos de aplicaciones web (WAF) estaría disponible a finales de este año para complementar las reglas ya disponibles para los clientes de Sites y Forms. Como actualización, la oferta WAF-DDoS Protection ahora puede obtener una licencia.
 
-Una vez adquirida la licencia, estas reglas WAF avanzadas se pueden implementar en la CDN mediante la canalización de configuración de Cloud Manager para añadir una capa adicional de protección contra ataques web.
+Una vez adquirida la licencia, estas reglas avanzadas de WAF se pueden implementar en la CDN mediante la canalización de configuración de Cloud Manager para añadir una capa adicional de protección contra ataques web.
 
-Lea acerca de [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), incluyendo WAF. AEM Hable con el equipo de su cuenta de sobre la licencia de Protección WAF-DDoS o Seguridad mejorada.
+Obtenga información sobre [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), incluido WAF. Hable con el equipo de su cuenta de AEM sobre la licencia de Protección WAF-DDoS o Seguridad mejorada.
 
-### Programa para primeros usuarios de configuración de CDN {#cdn-config-early-adopter}
+### Programa de adopción temprana de asignación de dominios {#cdn-config-early-adopter}
 
-Además de las [reglas de filtro de tráfico (incluido WAF)](/help/security/traffic-filter-rules-including-waf.md) publicadas recientemente, existe la oportunidad de usar la canalización de configuración para declarar e implementar otros tipos de configuración de CDN. Nos encantaría conocer sus casos de uso, incluidos los siguientes:
+Además de las [reglas de filtro de tráfico (incluyendo WAF)](/help/security/traffic-filter-rules-including-waf.md) publicadas recientemente, existe la oportunidad de usar la canalización de configuración para declarar e implementar otros tipos de configuración de CDN. Nos encantaría conocer sus casos de uso, incluidos los siguientes:
 * Redirecciones del lado del cliente 301/302
 * solicitudes de proxy en el perímetro a orígenes arbitrarios
 * transformaciones de URL
@@ -149,4 +149,4 @@ Puede encontrar una lista completa de las versiones de las herramientas de migra
 
 * No se puede enviar el Forms adaptable basado en los componentes principales. El problema se produce para Forms adaptable creado con las versiones 2.0.38 - 2.0.60 de los componentes principales.
 
-  Para resolver el problema. Puede pasar a la versión 2.0.62 o posterior de los componentes principales del formulario adaptable. Para establecer una versión de los componentes principales adaptables de Forms para su entorno, [establezca versiones de las dependencias core.forms.components.version, core.forms.components.af.version y core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) en su repositorio as a Cloud Service AEM de Forms o proyecto basado en el tipo de archivo e [implemente los cambios en su entorno as a Cloud Service de Forms](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Puede encontrar la versión más reciente de las dependencias de los componentes principales de Forms adaptable en [Repositorio de Git de componentes principales de Forms adaptable](https://github.com/adobe/aem-core-forms-components#system-requirements).
+  Para resolver el problema. Puede pasar a la versión 2.0.62 o posterior de los componentes principales del formulario adaptable. Para establecer una versión de los componentes principales de Forms adaptable para su entorno, [establezca versiones de las dependencias core.forms.components.version, core.forms.components.af.version y core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) en su repositorio de Forms as a Cloud Service o en su proyecto basado en AEM Archetype e [implemente los cambios en su entorno de Forms as a Cloud Service](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Puede encontrar la versión más reciente de las dependencias de los componentes principales de Forms adaptable en [Repositorio de Git de componentes principales de Forms adaptable](https://github.com/adobe/aem-core-forms-components#system-requirements).

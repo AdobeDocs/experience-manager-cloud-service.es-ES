@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 31fac8e421e58146977222d699bac1c7cf3ee4e5
-workflow-type: ht
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+workflow-type: tm+mt
 source-wordcount: '1713'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -137,7 +137,7 @@ Vea este vídeo para aprender a configurar una API autenticada para su uso poste
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
 
-### Mejoras relacionadas con la configuración de CDN {#cdn-enhancements}
+### Mejoras relacionadas con la asignación de dominios {#cdn-enhancements}
 
 La CDN administrada por Adobe ofrece opciones de configuración flexibles, tal como se describe en el [artículo de la canalización de configuración](/help/operations/config-pipeline.md#configurations). Estas son algunas funciones recientes:
 
