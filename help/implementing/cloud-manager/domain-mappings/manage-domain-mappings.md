@@ -5,14 +5,14 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 41f4619728e7c9a964f38c0d96b3cb88969c31b8
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 8%
 
 ---
 
-# Administrar asignaciones de dominio {#manage-cdn-configurations}
+# Administrar asignaciones de dominio {#manage-domain-mappings}
 
 Obtenga información sobre cómo utilizar Cloud Manager para editar o eliminar configuraciones de CDN para un sitio de Edge Delivery o un entorno de Cloud Manager.
 
