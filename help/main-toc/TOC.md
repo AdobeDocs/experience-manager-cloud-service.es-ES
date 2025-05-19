@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9bf64836c2f769c31017d7f9df6bc26b280606a0
+source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
 workflow-type: tm+mt
-source-wordcount: '6157'
+source-wordcount: '6162'
 ht-degree: 99%
 
 ---
@@ -1227,8 +1227,9 @@ ht-degree: 99%
       + Sitios de Edge Delivery {#edge-delivery-sites}
          + [Introducción a Edge Delivery Services en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Añadir un sitio de Edge Delivery a Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [Creación de un sitio de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [Cree su primer sitio de Edge Delivery con un solo clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [Configuración de la validación push para un sitio de Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
+         + [Configuración de la Source de contenido](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Administración de sitios de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Configuración del dominio {#custom-domain-names}
          + [Introducción a la configuración de dominios](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
