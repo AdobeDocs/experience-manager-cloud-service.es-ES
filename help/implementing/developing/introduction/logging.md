@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo utilizar el registro para AEM as a
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
+source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2540'
 ht-degree: 10%
 
 ---
@@ -154,7 +154,6 @@ Configure el registro java para paquetes Java personalizados mediante las config
 |---|---|
 | `org.apache.sling.commons.log.names` | Los paquetes Java para los que se recopilan instrucciones de registro. |
 | `org.apache.sling.commons.log.level` | Nivel de registro en el que registrar los paquetes Java, especificado por `org.apache.sling.commons.log.names` |
-| `org.apache.sling.commons.log.file` | Especifique el destino de la salida: `logs/error.log` |
 
 El cambio de otras propiedades de configuración de LogManager OSGi puede provocar problemas de disponibilidad en AEM as a Cloud Service.
 
