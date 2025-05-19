@@ -4,10 +4,10 @@ description: Aprenda a enviar sus proyectos de Cloud Manager con Edge Delivery S
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 9d866df00c25a827d351fcaf21a8c63ab04e6e41
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 99%
+source-wordcount: '806'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,8 @@ Maximice sus ventajas de Adobe accediendo a sus licencias de Edge Delivery Servi
 * [Sistema de informes SLA de acceso](/help/implementing/cloud-manager/sla-reporting.md) (*próximamente*)
 * [Obtenga acceso a la compatibilidad con Adobe](/help/edge/overview.md#support-ticket) para sus programas de producción registrados.
 
-Además, el uso de Cloud Manager le permite usar [CDN administradas por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) para su sitio de Edge Delivery y aprovechar ventajas clave como la administración de CDN de autoservicio, incluida la configuración y adición de certificados DV. Además, después de crear un certificado DV, Adobe lo renueva automáticamente cada tres meses, a menos que se elimine. Si no tiene una licencia de Edge Delivery Services con Adobe y decide prescindir de estas ventajas, solo puede utilizar su propia CDN autoadministrada. Esta configuración debe realizarse en la [`aem.live` plataforma](https://www.aem.live/docs/go-live-checklist#cdn-configuration).
+Además, el uso de Cloud Manager le permite usar [CDN administradas por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) para su sitio de Edge Delivery y aprovechar ventajas clave como la administración de CDN de autoservicio, incluida la configuración y adición de certificados DV. Además, después de crear un certificado DV, Adobe lo renueva automáticamente cada tres meses, a menos que se elimine. Si no dispone de una licencia de Edge Delivery Services con Adobe y decide utilizar su propia CDN autoadministrada, dicha configuración debe ejecutarse en la plataforma [`aem.live`](https://www.aem.live/docs/go-live-checklist#cdn-configuration).
+
 
 ## Acerca de la adición de Edge Delivery Services a un programa de producción o de zona protegida
 
@@ -83,7 +84,7 @@ La **lista de tareas pendientes de Edge Delivery** en Cloud Manager es una lista
 | 7 | Configuración de validación push | Ver [Configuración de validación push para un sitio Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Go-Live | Consulte [Lista de comprobación de lanzamiento](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441564?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registro de un vale de asistencia {#eds-support-ticket}
 
