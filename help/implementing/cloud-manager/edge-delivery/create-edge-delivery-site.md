@@ -4,7 +4,7 @@ description: Aprenda a crear rápidamente un sitio de Edge Delivery en Cloud Man
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 9bf64836c2f769c31017d7f9df6bc26b280606a0
+source-git-commit: 0c4ef0eb5bb7caa5cd68dac6c788b37f564e1770
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 95%
@@ -17,7 +17,11 @@ La creación de su primer sitio de Edge Delivery con un solo clic se ha diseñad
 
 Esta automatización ayuda a reducir el esfuerzo manual necesario para configurar el sitio inicial. Garantiza flujos de trabajo y escalabilidad fluidos y mejora el rendimiento de sus equipos en lo que respecta a la administración de contenido en el extremo.
 
-<!-- ADD LINK TO DORU'S VIDEO DEMO -->
+<!-- Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on) -->
+
+
 
 <!-- >
 ## Practical use cases {#use-cases}
@@ -30,6 +34,10 @@ Esta automatización ayuda a reducir el esfuerzo manual necesario para configura
 | Edge computing workloads | <ul><li>Support serverless computing to process workloads closer to users.</li><li>Reduce latency and enhance performance. </li></ul> |
 | Security and governance | <ul><li>Security is provided with integrated DDoS (Distributed Denial of Service) protection and WAF (Web Application Firewall) integration.</li><li>Ensure that content is delivered securely through TLS (Transport Security Layer) encryption. </li></ul> |
 -->
+
+
+
+
 
 ## Creación de un sitio de Edge Delivery en Cloud Manager con un solo clic {#one-click-edge-delivery-site}
 
