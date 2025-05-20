@@ -86,7 +86,7 @@ La **lista de tareas pendientes de Edge Delivery** en Cloud Manager es una lista
 | 7 | Configuración de validación push | Ver [Configuración de validación push para un sitio Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Go-Live | Consulte [Lista de comprobación de lanzamiento](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441564?learn=on&captions=spa)
 
 ## Registro de un vale de asistencia {#eds-support-ticket}
 
