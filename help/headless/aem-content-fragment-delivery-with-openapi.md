@@ -1,21 +1,21 @@
 ---
-title: Entrega de fragmentos de contenido de AEM con OpenAPI
+title: Envío de fragmentos de contenido de AEM con OpenAPI
 description: Obtenga información acerca de la entrega de fragmentos de contenido de AEM con OpenAPI
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
+source-git-commit: 7f7ed3adcbd01f688f48f3ba4a0c25293b8b1551
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 0%
+source-wordcount: '308'
+ht-degree: 4%
 
 ---
 
-# Entrega de fragmentos de contenido de AEM con OpenAPI {#aem-content-fragment-delivery-with-openapi}
+# Envío de fragmentos de contenido de AEM con OpenAPI {#aem-content-fragment-delivery-with-openapi}
 
 En Adobe Experience Manager (AEM) as a Cloud Service, la API abierta de AEM para la entrega de fragmentos de contenido:
 
-* es una API HTTP REST en [AEM Edge Delivery Services](/help/edge/overview.md), diseñada para entregar contenido estructurado de fragmentos de contenido en formato JSON
+* es una API abierta optimizada para la entrega en directo de fragmentos de contenido de AEM en formato JSON
 * ofrece una integración de CDN moderna que permite la invalidación de contenido activo
 * se centra en la entrega de contenido (rendimiento, escalabilidad, integración de CDN, control JSON optimizado y salida)
 * incluye la capacidad de hidratar JSON para fragmentos y recursos a los que se hace referencia
