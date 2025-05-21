@@ -1,14 +1,14 @@
 ---
-title: Aplicar y anular la aplicación de Listas de permitidos IP
+title: Aplicación y cancelación de listas de permitidos de IP
 description: Aprenda a aplicar y dejar de aplicar Listas de permitidos IP a entornos de Cloud Manager.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: aa33f84e6b38019f41ea0a4db8f49ccc201869f7
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
