@@ -1,20 +1,20 @@
 ---
 title: Integración con Adobe Target
-description: Obtenga información sobre cómo integrar Adobe Target con AEM as a Cloud Service mediante la IU táctil y Launch de Adobe.
+description: Obtenga información sobre cómo integrar Adobe Target con AEM as a Cloud Service mediante la IU táctil y Adobe Launch.
 feature: Integration
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5c529ced09a557585681ebf82f40daafc2c4402
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 86%
+source-wordcount: '1080'
+ht-degree: 85%
 
 ---
 
 # Integración con Adobe Target{#integrating-with-adobe-target}
 
-Como parte de Adobe Marketing Cloud, Adobe Target le permite aumentar la relevancia del contenido mediante la segmentación y efectuar mediciones en todos los canales. La integración de Adobe Target y AEM as a Cloud Service requiere:
+Como parte de Adobe Experience Cloud, [Adobe Target](https://experienceleague.adobe.com/en/docs/target) permite aumentar la relevancia del contenido mediante la segmentación y efectúa mediciones en todos los canales. La integración de Adobe Target y AEM as a Cloud Service requiere:
 
 * uso de la interfaz de usuario táctil para crear una configuración de Target en AEM as a Cloud Service (se requiere la configuración de IMS).
 * adición y configuración de Adobe Target como extensión en [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=es).
@@ -26,6 +26,10 @@ Para exportar fragmentos de experiencias o de contenido a Target, necesita la [c
 >[!NOTE]
 >
 >Los clientes que no tengan una cuenta de Target, pueden solicitar acceso a Target Foundation Pack para Experience Cloud. Foundation Pack proporciona un uso limitado del volumen de Target.
+
+>[!NOTE]
+>
+>Consulte también la documentación de Adobe Target: [Integrar Target con Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/en/docs/target/using/integrate/aem/aem-target-integration).
 
 ## Creación de la configuración de Adobe Target {#create-configuration}
 
@@ -39,7 +43,7 @@ Para exportar fragmentos de experiencias o de contenido a Target, necesita la [c
 
 ### Configuración de IMS {#ims-configuration}
 
-La integración de AEM con Adobe Target mediante la API de Target Standard requiere la configuración de Adobe IMS (Identity Management System). Se debe crear la configuración de IMS de Target (una vez aprovisionado Target). Consulte [Configuración de integraciones de IMS para AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) y el vídeo [Integración de Experience Platform Launch AEM y](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/experience-platform-data-collection-tags/overview.html?lang=es) para aprender a crear la configuración de IMS de Target.
+La integración de AEM con Adobe Target mediante la API de Target Standard requiere la configuración de Adobe IMS (Identity Management System). Se debe crear la configuración de IMS de Target (una vez aprovisionado Target). Consulte [Configuración de integraciones de IMS para AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) y el vídeo [Integración de Experience Platform Launch y AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/experience-platform-data-collection-tags/overview.html?lang=es) para aprender a crear la configuración de IMS de Target.
 
 >[!NOTE]
 >
