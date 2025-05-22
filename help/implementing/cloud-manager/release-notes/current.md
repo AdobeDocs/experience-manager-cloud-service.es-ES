@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 24%
+ht-degree: 52%
 
 ---
 
@@ -21,15 +21,15 @@ Consulte también las [notas de la versión actual de Adobe Experience Manager a
 
 ## Fechas de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2025.5.0 en AEM as a Cloud Service es el viernes, 08 de mayo de 2025.
+La fecha de lanzamiento de Cloud Manager 2025.5.0 en AEM as a Cloud Service es el jueves, 8 de mayo de 2025.
 
-La próxima versión planificada es para el viernes, 05 de junio de 2025.
+La próxima versión planificada es para el jueves, 5 de junio de 2025.
 
 ## Novedades {#what-is-new}
 
 ### Configuración de la fuente de contenido en un solo clic para Edge Delivery Services
 
-Adobe Experience Manager (AEM) Edge Delivery Services permite la entrega de contenido desde varias fuentes, como Google Drive, SharePoint o el propio AEM, mediante una red perimetral rápida y distribuida globalmente.
+Adobe Experience Manager (AEM) Edge Delivery Services permite enviar contenido desde varios orígenes, como Google Drive, SharePoint o el propio AEM, mediante una red perimetral rápida y distribuida globalmente.
 
 La configuración de la fuente de contenido difiere entre Helix 4 y Helix 5. Conozca la diferencia y siga los pasos de configuración completos, ejemplos e instrucciones de validación para ambas versiones.
 
@@ -38,9 +38,9 @@ Consulte [Configurar el origen de contenido](/help/implementing/cloud-manager/ed
 
 ## Programa para primeros usuarios {#early-adoption}
 
-Participe en el programa de usuarios que adoptan anticipadamente Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
+Participe en el programa para primeros usuarios de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
 
-Actualmente están disponibles las siguientes oportunidades para los usuarios que las adoptaron por primera vez:
+Actualmente están disponibles las siguientes oportunidades para primeros usuarios:
 
 ### Agregar canalización de configuración de Edge Delivery {#add-eds-pipeline}
 
@@ -48,13 +48,13 @@ Las canalizaciones de configuración ahora son compatibles con los sitios creado
 
 ![Agregar canalización de Edge Delivery en la lista desplegable Agregar canalización](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
-Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un mensaje de correo electrónico a [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
+Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
 
-### Traiga su propio Git: ahora compatible con Azure DevOps {#gitlab-bitbucket-azure-vsts}
+### Traiga su propio Git, ahora con compatibilidad para Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
-Los clientes ahora pueden incorporar sus repositorios de Git de Azure DevOps en Cloud Manager, con compatibilidad tanto con los repositorios modernos de Azure DevOps como con los repositorios heredados de VSTS (Visual Studio Team Services).
+Los clientes ahora pueden incorporar sus repositorios Git de Azure DevOps en Cloud Manager, con compatibilidad tanto con los repositorios modernos de Azure DevOps como con los repositorios heredados de VSTS (Visual Studio Team Services).
 
 * Para los usuarios de Edge Delivery Services, el repositorio incorporado se puede utilizar para sincronizar e implementar el código del sitio.
 * Para los usuarios de AEM as a Cloud Service y Adobe Managed Services (AMS), el repositorio se puede vincular a canalizaciones de pila completa y de front-end.
