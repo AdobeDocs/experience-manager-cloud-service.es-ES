@@ -4,10 +4,10 @@ description: Introducción a la arquitectura de Adobe Experience Manager as a Cl
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2712'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 >id="intro_aem_cloudservice_architecture"
 >title="Introducción a la arquitectura de AEM as a Cloud Service"
 >abstract="En esta pestaña, puede ver la nueva arquitectura de AEM as a Cloud Service y comprender los cambios. AEM ha resultado en una arquitectura dinámica con un número variable de imágenes, por lo que es importante tomarse un tiempo para comprender la arquitectura de la nube."
->additional-url="https://video.tv.adobe.com/v/346180?captions=spa" text="Información general sobre la arquitectura"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Información general sobre la arquitectura"
 
 Adobe Experience Manager (AEM) as a Cloud Service ofrece un conjunto de servicios componibles para la creación y gestión de experiencias de alto impacto.
 
@@ -138,7 +138,7 @@ Hay otros servicios adyacentes:
 * El servicio de datos:
    * Es responsable de exponer los datos del cliente, como las métricas de licencia (por ejemplo, Solicitudes de contenido, Almacenamiento, Usuarios) o los informes de uso (como el número de cargas y descargas).
    * Los datos del cliente se pueden exponer a través de las API y dentro de las interfaces de usuario del producto (como Cloud Manager).
-* El servicio Métrica de usuario real (RUM):
+* El servicio de telemetría operativa:
    * Es responsable de recopilar las métricas clave de una experiencia del cliente (como vistas de página, elementos vitales web principales y eventos de conversión) y de responder a las consultas asociadas (por ejemplo, vistas de página principales de un dominio determinado en los últimos siete días).
 * El servicio de cómputo de recursos:
    * Es responsable del procesamiento de imágenes, vídeos y documentos cargados; por ejemplo, archivos de PDF y Adobe Photoshop. El procesamiento puede utilizar Adobe Sensei para extraer metadatos de imagen y vídeo (como etiquetas descriptivas o tonos de color principales) y luego generar representaciones (como diferentes tamaños o formatos), con acceso a API como las API de Adobe Photoshop y Adobe Lightroom.

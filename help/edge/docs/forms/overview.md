@@ -4,10 +4,10 @@ description: Edge Delivery Services para AEM Forms
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1037'
-ht-degree: 100%
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ Estos servicios le permiten:
 
 * **Crear experiencias de inscripción con las herramientas que elija:** aumente la eficacia de la creación desacoplando las fuentes de contenido. De forma predeterminada, puede utilizar la creación basada en documentos (Microsoft SharePoint o Google Drive) y la creación WYSIWYG (editor universal o editor de formularios adaptables). Puede trabajar con varias fuentes de contenido en el mismo sitio de formularios y utilizar sus herramientas de creación preferidas, como Microsoft Excel, Google Sheets, el editor universal o el editor de formularios adaptables.
 
-* **Ofrezca experiencias excepcionales de inscripción digital:** ofrezca experiencias del tipo que se carguen y procesen de forma rápida y continua para supervisar el rendimiento de los formularios mediante la monitorización de usuarios reales (RUM). Los tiempos de carga más rápidos y la experiencia del usuario optimizada contribuyen a que las tasas de finalización y conversión de formularios sean más altas.
+* **Ofrezca experiencias excepcionales de inscripción digital:** Ofrezca experiencias de inscripción digital que se carguen y procesen de forma rápida y continua para supervisar el rendimiento de los formularios mediante la telemetría operativa. Los tiempos de carga más rápidos y la experiencia del usuario optimizada contribuyen a que las tasas de finalización y conversión de formularios sean más altas.
 
 * **Utilice un conjunto de herramientas fácil de usar para el desarrollador:** Edge Delivery Services para AEM Forms 
 utiliza HTML simples, CSS modernos y JavaScript convencionales para crear experiencias excepcionales, y evita la pronunciada curva de aprendizaje de una plataforma específica. Un desarrollador con habilidades básicas de desarrollo web puede personalizar y crear fácilmente componentes y experiencias de formularios. No es necesario esperar a que se ejecute una canalización, solo tiene que registrar el código en GitHub y los cambios estarán activos.
@@ -64,7 +64,7 @@ La creación basada en documentos permite crear formularios utilizando herramien
 * Integración de reCAPTCHA de Google para la protección contra spam.
 * Capacidad para crear componentes de formularios personalizados para necesidades específicas.
 * Envíe los datos del formulario directamente a Microsoft Excel o Google Sheets o a direcciones de correo electrónico.
-* Monitorice el rendimiento de los formularios mediante la monitorización de usuarios reales (RUM)
+* Supervise el rendimiento de los formularios mediante la telemetría operativa
 
 #### Funciones de la creación WYSIWYG
 

@@ -4,10 +4,10 @@ description: Aprenda a enviar sus proyectos de Cloud Manager con Edge Delivery S
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e79e7f3e4d4b1cc0413fa9e599b181d23ced635
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 90%
+source-wordcount: '798'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 90%
 Edge Delivery Services es un conjunto de servicios componibles que permite un alto grado de flexibilidad en la forma en que se crea contenido en su sitio web. Esto le permite hacer lo siguiente:
 
 * Crear sitios rápidos con una puntuación de Lighthouse perfecta.
-* Monitorizar continuamente el rendimiento a través de RUM (monitorización de uso real).
+* Monitorización continua del rendimiento mediante telemetría operativa.
 * Aumentar la eficacia de la creación desacoplando las fuentes de contenido.
 
 Puede usar tanto la administración de contenido de AEM como la creación WYSIWYG utilizando el editor universal además de la creación basada en documentos.
@@ -86,7 +86,7 @@ La **lista de tareas pendientes de Edge Delivery** en Cloud Manager es una lista
 | 7 | Configuración de validación push | Ver [Configuración de validación push para un sitio Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Go-Live | Consulte [Lista de comprobación de lanzamiento](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441564?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registro de un vale de asistencia {#eds-support-ticket}
 

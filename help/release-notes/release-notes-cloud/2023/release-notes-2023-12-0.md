@@ -4,10 +4,10 @@ description: Notas de la versión 2023.12.0 de la versión de  [!DNL Adobe Exper
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 74%
+source-wordcount: '828'
+ht-degree: 72%
 
 ---
 
@@ -47,11 +47,11 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### Programa para primeros usuarios {#sites-early-adopter}
 
-**Puede aprovechar el [Servicio de datos de supervisión de uso real (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para habilitar la recopilación del lado del cliente para AEM as a Cloud Service.
+**Puede aprovechar el [Servicio de telemetría operacional](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para habilitar la recopilación en el lado del cliente para AEM as a Cloud Service.
 
-El Servicio de datos de monitorización de usuarios reales (RUM) refleja de forma más precisa las interacciones de los usuarios, lo que garantiza una medida fiable de la participación en el sitio web. Es una gran oportunidad para obtener perspectivas avanzadas sobre el rendimiento de su página. Es beneficioso para los clientes que utilizan CDN administrada por Adobe o CDN no administrada por Adobe. Además, para los clientes que utilizan una CDN no administrada por Adobe, ahora se pueden habilitar los informes de tráfico automatizados para ellos, lo que elimina la necesidad de compartir cualquier informe de tráfico con Adobe.
+El servicio de datos de telemetría operativa ofrece una reflexión más precisa de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web. Es una gran oportunidad para obtener perspectivas avanzadas sobre el rendimiento de su página. Es beneficioso para los clientes que utilizan CDN administrada por Adobe o CDN no administrada por Adobe. Además, para los clientes que utilizan una CDN no administrada por Adobe, ahora se pueden habilitar los informes de tráfico automatizados para ellos, lo que elimina la necesidad de compartir cualquier informe de tráfico con Adobe.
 
-Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com`, junto con su nombre de dominio para el entorno de producción, ensayo y desarrollo desde su dirección de correo electrónico asociada a su Adobe ID. El equipo de productos de Adobe habilitará entonces el servicio de datos de supervisión de uso real (RUM).
+Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com`, junto con su nombre de dominio para el entorno de producción, ensayo y desarrollo desde su dirección de correo electrónico asociada a su Adobe ID. A continuación, el equipo de productos de Adobe activará el Servicio de datos de telemetría operativa.
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}

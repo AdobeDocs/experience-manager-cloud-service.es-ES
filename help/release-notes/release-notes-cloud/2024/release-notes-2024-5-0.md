@@ -4,10 +4,10 @@ description: Notas de la versión 2024.5.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
-source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 99%
+source-wordcount: '1943'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de mayo de 2024 para ver un resumen de las funciones añadidas en la versión 2024.5.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448065?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -59,9 +59,9 @@ Las acciones y flujos de trabajo de traducción de contenido ahora activan event
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### Servicio de datos de monitorización de usuario real (RUM) {#real-use-monitoring}
+#### Servicio de telemetría operativa {#real-use-monitoring}
 
-* **[El servicio de datos de monitorización de usuario real (RUM) ahora es GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**, que permite la colección de datos del lado del cliente para AEM as a Cloud Service.
+* **[El servicio de telemetría operativa ahora es GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**, lo que permite la recopilación de datos del lado del cliente para AEM as a Cloud Service.
 El servicio de monitorización de usuario real, la colección del lado del cliente, ofrece un reflejo más preciso de las interacciones, lo que garantiza una medición fiable de la participación en el sitio web. Permite a los clientes obtener perspectivas avanzadas sobre el tráfico y el rendimiento de sus páginas. Es una gran oportunidad para obtener más información sobre el rendimiento de su página y obtener perspectivas para mejorarlo.
 
 #### Creación de AEM para Edge Delivery Services {#edge-enhancements}
@@ -214,9 +214,9 @@ Anteriormente, se necesitaba un ticket de asistencia para generar la clave X--Ed
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Redirecciones del lado del servidor (programa de adopción temprana) {#server-side-redirects-early-adopter}
+#### Redirecciones del lado del servidor (programa de usuarios pioneros) {#server-side-redirects-early-adopter}
 
-Configure las redirecciones de del lado del servidor 301/302 en el control de código fuente y implementar al CDN. [Más información](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Tenga en cuenta que ya hay diversas otras funciones disponibles relacionadas con la [configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluidas las transformaciones de solicitudes y respuestas, y el enrutamiento del tráfico a sitios fuera de AEM.
+Configure las redirecciones del lado del servidor 301/302 en el control de código fuente e implemente en la CDN. [Más información](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Tenga en cuenta que ya hay diversas otras funciones disponibles relacionadas con la [configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluidas las transformaciones de solicitudes y respuestas, y el enrutamiento del tráfico a sitios fuera de AEM.
 
 #### Alertas de reglas de filtro de tráfico (programa de primeros usuarios) {#traffic-filter-rules-alerts-early-adopter}
 

@@ -4,10 +4,10 @@ description: Notas de la versión 2024.6.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
+source-git-commit: 0f5fc5469034139a45ec0fe7e30319012af97301
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 98%
+source-wordcount: '1967'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ Eche un vistazo al vídeo Información general sobre la versión de junio de 202
 
 ### Nueva función de Experience Manager Sites {#new-feature-sites}
 
-**Servicio de datos de supervisión de uso real (RUM)** {#real-use-monitoring}
+**Servicio de datos de telemetría operativa** {#real-use-monitoring}
 
-El [servicio de datos de monitorización de usuarios reales (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) ahora está disponible de forma generalizada, lo que permite la recopilación de datos del lado del cliente para AEM as a Cloud Service. Este servicio ofrece un reflejo más preciso de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web. Ofrece a los clientes insights avanzados del tráfico y el rendimiento de sus páginas, lo que representa una valiosa oportunidad para comprender y mejorar el rendimiento de las páginas.
+El [Servicio de telemetría operacional](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) ya está disponible de forma general, lo que permite la recopilación de datos del lado del cliente para AEM as a Cloud Service. Este servicio ofrece un reflejo más preciso de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web. Ofrece a los clientes insights avanzados del tráfico y el rendimiento de sus páginas, lo que representa una valiosa oportunidad para comprender y mejorar el rendimiento de las páginas.
 
 ### Programa para primeros usuarios {#sites-early-adopter}
 
