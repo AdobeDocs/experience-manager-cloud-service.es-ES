@@ -5,19 +5,14 @@ keywords: Habilitar Adobe Analytics para un formulario adaptable mediante la aut
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: a58f7e8de662255e3fce1c168b2293a72a9863df
+source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
 workflow-type: tm+mt
-source-wordcount: '1597'
-ht-degree: 98%
+source-wordcount: '1588'
+ht-degree: 100%
 
 ---
 
-# (Obsoleto) Habilitar Adobe Analytics para un formulario adaptable mediante la automatización de la configuración de Experience Cloud {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
-
->[!CAUTION]
->
->La funcionalidad de automatización de la configuración de Experience Cloud está en desuso.
-
+# Habilitar Adobe Analytics para un formulario adaptable mediante la automatización de la configuración de Experience Cloud {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -76,7 +71,7 @@ Para comprobar que las opciones mencionadas están disponibles para su entorno F
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=es)
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
 -->
 
 ## Configuración de Adobe Analytics {#configure-adobe-analytics}

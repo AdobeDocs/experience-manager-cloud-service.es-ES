@@ -7,10 +7,10 @@ feature: Adaptive Forms
 role: Admin, User
 level: Intermediate
 exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
-source-git-commit: a58f7e8de662255e3fce1c168b2293a72a9863df
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 99%
+source-wordcount: '976'
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,6 @@ Al capturar y rastrear los indicadores de rendimiento clave, las empresas pueden
 ## Configuración de Adobe Analytics en los formularios adaptables {#setup-adobe-analytics-to-aem-forms}
 
 Para el informe de análisis de AEM, primero debe integrar Adobe Analytics en AEM Forms mediante la automatización de la configuración de Experience Cloud. La automatización de la configuración de Experience Cloud en los formularios adaptables requiere una licencia de Adobe Analytics, recopilación de datos (anteriormente, Adobe Launch) para administrar scripts de seguimiento, y la integración con la API de Experience Platform Launch para agilizar la agregación de datos y la generación de información. Visite [Habilitar Adobe Analytics para un formulario adaptable mediante la automatización de la configuración de Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) para obtener información completa sobre la configuración.
-
->[!CAUTION]
->
->La funcionalidad de automatización de la configuración de Experience Cloud está en desuso.
-
 
 ## Ver informe de Adobe Analytics de Formularios adaptables {#view-adobe-analytics-report}
 
