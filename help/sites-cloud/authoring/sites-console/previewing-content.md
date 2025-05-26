@@ -5,10 +5,10 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b93bcb5d26a63babf0b81c92a4fd85d358bfbea7
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 75%
+source-wordcount: '306'
+ht-degree: 65%
 
 ---
 
@@ -19,11 +19,15 @@ AEM ofrece un servicio de vista previa de Sites que permite a los desarrolladore
 
 Facilita la previsualización de experiencias de página que, de otra manera, no serían visibles desde el entorno de creación, como transiciones de página y otro contenido solo de publicación.
 
+>[!IMPORTANT]
+>
+>El acceso al entorno de vista previa requiere la configuración de una lista de permitidos IP. Para obtener más información, consulte [Acceso al servicio de vista previa](/help/implementing/cloud-manager/manage-environments.md#access-preview-service#access-preview-service).
+>
+>Para obtener más información acerca de todos los entornos, vea [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
 >[!NOTE]
 >
->AEM Como el contenido está *publicado* en el entorno de vista previa, se puede acceder a él mediante una dirección URL (por lo que no necesita acceso a la dirección URL).
-
-Para obtener más información acerca de los entornos de vista previa, consulte el documento [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Como el contenido está *publicado* en el entorno de vista previa, se puede acceder a él mediante una dirección URL.
 
 ## Publicación de contenido para su previsualización {#publishing-content-to-preview}
 
@@ -40,7 +44,7 @@ Puede publicar contenido en el servicio de vista previa utilizando la IU **Publi
 
    >[!NOTE]
    >
-   >AEM Como el contenido está *publicado* en el entorno de vista previa, se puede acceder a él mediante una dirección URL (por lo que no necesita acceso a la dirección URL).
+   >Como el contenido está *publicado* en el entorno de vista previa, se puede acceder a él mediante una dirección URL (por lo que no necesita acceder a AEM).
 
 Como alternativa, para usar las direcciones URL mostradas en el asistente para ver el contenido de vista previa, también puede anteponer `preview-` a la URL de publicación de la instancia de producción.
 
@@ -48,7 +52,7 @@ Como alternativa, para usar las direcciones URL mostradas en el asistente para v
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-Consulte el documento [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información sobre cómo recuperar las direcciones URL de sus entornos.
+Consulte [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información sobre cómo recuperar las direcciones URL de los entornos.
 
 El contenido también se puede publicar para previsualizarse mediante un [flujo de trabajo del árbol de contenido de publicación](/help/operations/replication.md#publish-content-tree-workflow), con el parámetro `agentId` establecido en `preview`, o utilizando la [API de replicación](/help/operations/replication.md#replication-api) con un `AgentFilter` configurado para la vista previa.
 
