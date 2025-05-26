@@ -4,10 +4,10 @@ description: Notas de versión específicas de las funciones en desuso y elimina
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 6b9ac17640c0a470cb175748564ccb72bed4affd
+source-git-commit: 3d294b2b4fbd11f16ee8b0fbb5a9a46ab039dbae
 workflow-type: tm+mt
-source-wordcount: '2560'
-ht-degree: 97%
+source-wordcount: '2858'
+ht-degree: 89%
 
 ---
 
@@ -103,24 +103,24 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 está en modo de mantenimiento. Debe utilizarse Commons Lang 3 en su lugar.</td>
+    <td>Commons Lang 2 está en modo de mantenimiento. Debe utilizarse Commons Lang 3 en su lugar. <a href="#apache.commons">Consulte las notas de eliminación a continuación.</a></td>
     <td>30/4/2021</td>
     <td>31/12/2021</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 está en modo de mantenimiento. Debe utilizarse Commons Collections 4 en su lugar.</td>
+    <td>Commons Collections 3 está en modo de mantenimiento. Debe utilizarse Commons Collections 4 en su lugar. <a href="#apache.commons">Consulte las notas de eliminación a continuación.</a></td>
     <td>30/4/2021</td>
     <td>31/12/2021</td>
   </tr>
   <tr>
     <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
-    <td>La consola web de Felix no es compatible con entornos de la nube</td>
+    <td>La consola web de Felix no es compatible con entornos de nube. <a href="#org.apache.felix.webconsole">Consulte las notas de eliminación a continuación.</a></td>
     <td>30/4/2021</td>
     <td>31/8/2025</td>
   </tr>
   <tr>
-<td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>   
+<td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>Los paquetes Eclipse Jetty y Felix Http Jetty ya no se admiten. <a href="#org.eclipse.jetty">Consulte las notas de eliminación a continuación.</a></td>
     <td>27/5/2021</td>
     <td>31/8/2025</td>
@@ -138,7 +138,7 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
-    <td>Esta API está en desuso, ya que Apache Abdera es un proyecto retirado desde 2017.</td>
+    <td>Esta API está en desuso, ya que Apache Abdera es un proyecto retirado desde 2017. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Consulte las notas de eliminación a continuación.</a></td>
     <td>8/4/2019</td>
     <td>31/8/2025</td>
   </tr>
@@ -156,19 +156,19 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
-    <td>AEM as a Cloud Service no admite esta API interna de registro.</td>
+    <td>AEM as a Cloud Service no admite esta API de inicio de sesión posterior interna. <a href="#ch.qos.logback">Consulte las notas de eliminación a continuación.</a></td>
     <td>1/27/2022</td>
     <td>31/8/2025</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
-    <td>AEM as a Cloud Service no admite esta API interna log4j.</td>
+    <td>AEM as a Cloud Service no admite esta API interna de log4j. <a href="#org.slf4j">Consulte las notas de eliminación a continuación.</a></td>
     <td>1/27/2022</td>
     <td>31/8/2025</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
-    <td>Apache Log4j 1 ha llegado al fin de su vida útil en 2015 y ya no es compatible.</td>
+    <td>Apache Log4j 1 ha llegado a su fin de vida útil en 2015 y ya no es compatible. <a href="#org.apache.log4j">Consulte las notas de eliminación a continuación.</a></td>
     <td>1/27/2022</td>
     <td>31/8/2025</td>
   </tr>
@@ -189,7 +189,7 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
   </tr>
   <tr>
     <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service no admite esta API interna slf4j.</td>
+    <td>AEM as a Cloud Service no admite esta API interna de slf4j. <a href="#org.slf4j">Consulte las notas de eliminación a continuación.</a></td>
     <td>11/4/2022</td>
     <td>31/8/2025</td>
   </tr>
@@ -204,7 +204,7 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
     <td>En su lugar, utilice org.apache.sling.xss.</td>
     <td>12/12/2023</td>
     <td>30/6/2024</td>
-  </tr>  
+  </tr>
   <tr>
     <td>com.drew.*</td>
     <td>La extracción de metadatos de imágenes y vídeos debe realizarse mediante Asset Compute en Cloud Service, o mediante Apache POI o Apache Tika.</td>
@@ -216,13 +216,19 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
     <td>Esta API es solo para uso interno de.</td>
     <td>23/9/2024</td>
     <td>31/8/2025</td>
-  </tr>       
+  </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
     <td>Esta API es solo para uso interno de.</td>
     <td>23/9/2024</td>
     <td>31/8/2025</td>
-  </tr>       
+  </tr>
+  <tr>
+    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+    <td>El uso de esta API no se admite en AEM as a Cloud Service.</td>
+    <td>31/10/2022</td>
+    <td>31/8/2025</td>
+  </tr>
 </tbody>
 </table>
 </details>
@@ -259,7 +265,7 @@ A continuación se muestra una lista detallada de las API de AEM eliminadas.
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
     <td>Los paquetes Eclipse Jetty y Felix Http Jetty ya no se admiten.</td>
-  </tr>  
+  </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
     <td>Las API Apache Felix metatype y SCR están en desuso.  Utilice en su lugar las API OSGi metatype y Declarative Service.</td>
@@ -314,8 +320,16 @@ Si usa `org.apache.sling.commons.auth` o `org.apache.sling.commons.auth.spi` o a
 
 Lista de acciones:
 
-* Actualizar ACS AEM Commons a la versión más reciente
+* Actualizar ACS AEM Commons a la versión más reciente (al menos 6.11.0)
 * Migrar de `org.apache.sling.commons.auth` o `org.apache.sling.commons.auth.spi` a `org.apache.sling.auth` resp. `org.apache.sling.auth.spi`.
+
+### Eliminación de `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
+
+Si está usando paquetes de `org.apache.felix.webconsole*`, quite este código del proyecto. No se puede acceder a la consola web desde Cloud Service.
+
+Lista de acciones:
+
+* Quitar código utilizando paquetes de `org.apache.felix.webconsole*`
 
 ### Eliminación de `org.eclipse.jetty*` {#org.eclipse.jetty}
 
@@ -343,6 +357,16 @@ Lista de acciones:
 * Añadir este paquete al proyecto
    * `org.mongodb:mongo-java-driver:3.12.7`
 
+### Eliminación de `Apache Commons Lang 2 and Apache Commons Collections 3`  {#apache.commons}
+
+Elimine el uso de las bibliotecas Apache Commons no mantenidas y reemplácelas por el uso de las versiones de compatibilidad. En la mayoría de los casos, esto solo requiere ajustar las importaciones de paquetes, pero en algunos casos se ha cambiado el nombre de las clases o los métodos. Si está usando una versión antigua de [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), asegúrese de actualizarla a la versión más reciente.
+
+Lista de acciones:
+
+* Actualizar ACS AEM Commons a la versión más reciente (al menos 6.11.0)
+* Reemplazar importaciones de `org.apache.commons.lang*` por `org.apache.commons.lang3`
+* Reemplazar importaciones de `org.apache.commons.collections*` por `org.apache.commons.collecitons4`
+
 ### Uso de `org.apache.abdera*` y `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
 Reemplazar el uso de cualquier paquete de `org.apache.abdera` y `org.apache.sling.atom.taglib` con una biblioteca de terceros que proporcione una funcionalidad similar o con su propio código.
@@ -359,6 +383,32 @@ Lista de acciones:
 
 * Reemplazar el uso de `org.apache.felix.http.whiteboard` con la [pizarra Http OSGi](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)
 
+### Uso de `ch.qos.logback*` {#ch.qos.logback}
+
+Cloud Service no admite el inicio de sesión de retorno; elimine todo el uso. Si está usando una versión antigua de [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), asegúrese de actualizarla a la versión más reciente.
+
+Lista de acciones:
+
+* Actualizar ACS AEM Commons a la versión más reciente (al menos 6.11.0)
+* Quitar el código mediante paquetes de `ch.qos.logback`
+
+### Uso de `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
+
+Si está usando `org.slf4j.event` o `org.slf4j.spi`, quite todo el uso del mismo. Si está usando una versión antigua de [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), asegúrese de actualizarla a la versión más reciente.
+
+Lista de acciones:
+
+* Actualizar ACS AEM Commons a la versión más reciente (al menos 6.11.0)
+* Elimine el código mediante `org.slf4j.event` y `org.slf4j.spi`
+
+### Uso de `org.apache.log4j` {#org.apache.log4j}
+
+Si usa `org.apache.log4j`, cambie a SLF4J (`org.slf4j`) o Log4J 2.x (`org.apache.logging.log4j`).
+
+Lista de acciones:
+
+* Reemplazar el uso de `org.apache.log4j` con `org.slf4j` (recomendado) o `org.apache.logging.log4j`
+
 ## Configuración OSGi {#osgi-configuration}
 
 Las dos listas siguientes reflejan la superficie de configuración de AEM as a Cloud Service de OSGi, describiendo lo que los clientes pueden configurar.
@@ -372,7 +422,7 @@ Estas reglas se validan durante el proceso de compilación de Cloud Manager. Con
 
 Puede encontrar información adicional sobre la configuración de OSGI en [esta ubicación](/help/implementing/deploying/configuring-osgi.md).
 
-+++Configuraciones de OSGi que no se pueden modificar.
+Configuraciones de +++OSGi que no se pueden modificar.
 
 * **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
@@ -381,7 +431,7 @@ Puede encontrar información adicional sobre la configuración de OSGI en [esta
 * **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Fecha de anuncio: 25/8/2021, fecha de aplicación: 26/11/2021)
 +++
 
-+++Las configuraciones de OSGi están sujetas a reglas de validación de compilación.
+Las configuraciones de +++OSGi están sujetas a reglas de validación de compilación.
 
 * **`org.apache.felix.eventadmin.impl.EventAdmin`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
@@ -542,7 +592,7 @@ Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure sup
 
 #### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
 
-The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below: 
+The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below:
 
 ```
 [source,xml]
