@@ -1,13 +1,13 @@
 ---
-title: Crear un formulario mediante un bloque de Forms adaptable
-description: Introducción a Edge Delivery Services para AEM Forms. Elabore formularios perfectos, ¡y rápido! Creación basada en documentos de AEM Forms Edge Delivery = velocidad increíble y formularios compatibles con SEO para usuarios y motores de búsqueda más felices.
+title: Creación de un formulario mediante el bloque de formularios adaptables
+description: 'Empiece a utilizar Edge Delivery Services para AEM Forms. Elabore formularios perfectos rápidamente. Creación basada en documentos de AEM Forms Edge Delivery: velocidad increíble, formularios compatibles con SEO y motores de búsqueda para usuarios más satisfechos.'
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '784'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -160,6 +160,6 @@ Hasta ahora, ha preparado la estructura del formulario. Ahora, para obtener una 
 [Prepare su hoja de cálculo](/help/edge/docs/forms/submit-forms.md) para empezar a aceptar datos al enviar el formulario.
 
 
-## Consulte también
+## Véase también
 
 {{see-more-forms-eds}}

@@ -1,8 +1,8 @@
 ---
 source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1523'
+ht-degree: 100%
 
 ---
 # Fragmentos de código {#snippets}
@@ -65,7 +65,7 @@ ht-degree: 0%
 * [Generar componentes de formulario personalizados](/help/edge/docs/forms/universal-editor/create-custom-component.md)
 * [Proteger los formularios del spam: añadir seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
-## Consulte también {#see-more-forms-eds}
+## Véase también {#see-more-forms-eds}
 
 * [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
@@ -161,7 +161,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 
 * [Integrar Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
 * [Configurar nuevo formulario para integrarlo con Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [Configurar la fuente de datos de Marketo Engage para formularios adaptables existentes](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Configuración de la fuente de datos de Marketo Engage para los formularios adaptables existentes](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Configuración de la acción de envío a Marketo Engage para formularios existentes](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Lista de IP permitidas de Cloud Manager y canalizaciones front-end {#allowlist-frontend-pipeline}
@@ -222,7 +222,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 **Registro de un vale de asistencia:**
 
-1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/es?support-tab=home#support) y cree un vale.
+1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un vale.
 1. Añada **Edge Delivery** en el título del ticket.
 1. En la descripción, proporcione los siguientes detalles además de la descripción del problema:
 
@@ -248,7 +248,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 * [Generar componentes de formulario personalizados](/help/edge/docs/forms/universal-editor/create-custom-component.md)
 * [Proteger los formularios del spam: añadir seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
-## Consulte también {#see-more-eds-forms}
+## Véase también {#see-more-eds-forms}
 
 * [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
@@ -266,10 +266,10 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 >
 >Si utiliza el editor universal en un caso de uso sin encabezado, la aplicación sin encabezado debe administrar su propia autenticación.
 
-## Desaprobación de PWA {#pwa-deprecation}
+## Desuso de PWA {#pwa-deprecation}
 
 >[!IMPORTANT]
 >
->Las características de la aplicación web progresiva (PWA) para AEM Sites [han quedado obsoletas](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
+>Las funciones de la aplicación web progresiva (PWA) para AEM Sites [se han desaprobado](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
 >
 >Los proyectos existentes que utilicen esta función seguirán siendo compatibles, pero los nuevos proyectos no deberán utilizarla.

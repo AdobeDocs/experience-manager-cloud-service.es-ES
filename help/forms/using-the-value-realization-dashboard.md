@@ -1,132 +1,133 @@
 ---
 title: Uso del panel de realización de valor para analizar las tendencias de uso de formularios y documentos
-description: Aprenda a utilizar el panel de perspectivas de uso de Forms para monitorizar y comprender el rendimiento de los formularios y los fragmentos de formulario.
+description: Aprenda a utilizar el panel de información sobre el uso de formularios para monitorizar y comprender el rendimiento de los formularios y los fragmentos de formulario.
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
-workflow-type: tm+mt
+exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
+source-git-commit: 3bc967bc2b6584abbd73e3456e123ed76a8959b6
+workflow-type: ht
 source-wordcount: '873'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Uso del panel de realización de valor para analizar las tendencias de uso de formularios y documentos
 
-<span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial a aem-forms-ea@adobe.com. <span>
+<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial a aem-forms-ea@adobe.com. <span>
 
-![Panel de realización de valores](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
+![Panel de realización del valor](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
-Al supervisar regularmente las métricas presentadas en el panel &quot;Perspectivas de uso de Forms&quot;, puede obtener información valiosa sobre el rendimiento de los formularios, documentos y fragmentos de formulario. Utilice estos datos para tomar decisiones informadas sobre el diseño del formulario, la administración de fragmentos y la estrategia general del formulario.
+Al monitorizar regularmente las métricas presentadas en el panel “Información sobre el uso de formularios”, puede obtener información valiosa sobre el rendimiento de los formularios, documentos y fragmentos de formulario. Utilice estos datos para tomar decisiones fundamentadas sobre el diseño del formulario, la administración de fragmentos y la estrategia general del formulario.
 
-Este artículo proporciona instrucciones de uso detalladas e interpretación de métricas para el Tablero de Realización de Valores. Para obtener una descripción general conceptual y las ventajas del tablero, vea [Comprender el tablero de realización de valores](/help/forms/aem-forms-value-realization-dashboard.md).
+En este artículo se proporcionan instrucciones de uso detalladas e interpretación de métricas para el Panel de realización de valor. Para obtener información general conceptual y las ventajas del panel, consulte [Información acerca del panel de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md).
 
 
-## Acceso al panel de perspectivas de uso
+## Acceso al panel de información sobre el uso
 
-Para acceder al panel de información de uso de Forms:
+Para acceder al panel de información sobre el uso de formularios:
 
-1. Vaya a **Forms** > **Forms y documentos**
-1. Haga clic en **Tablero de InProduct**. El tablero se abre en una nueva ventana.
+1. Vaya a **Formularios** > **Formularios y documentos**.
+1. Haga clic en **Panel InProduct**. El panel se abre en una nueva ventana.
 
-   ![Panel de realización de valores](/help/forms/assets/forms-usage-insights.png)
+   ![Panel de realización de valor](/help/forms/assets/forms-usage-insights.png)
 
 ## Información general
 
-El tablero consta de dos secciones principales:
+El panel consta de dos secciones principales:
 
-- **Actividad de formularios y documentos a lo largo del tiempo:** Esta sección proporciona información sobre el uso y la evolución de los formularios durante un período seleccionado.
-- **Uso del fragmento:** Esta sección le permite supervisar la adopción y reutilización de fragmentos de formulario.
+- **Actividad de formularios y documentos a lo largo del tiempo:** esta sección proporciona información sobre el uso y la evolución de los formularios durante un período seleccionado.
+- **Uso del fragmento:** esta sección le permite supervisar la adopción y reutilización de fragmentos de formulario.
 
 ## Actividad de formularios y documentos a lo largo del tiempo
 
 Esta sección contiene cuatro gráficos, cada uno de los cuales realiza un seguimiento de un aspecto diferente de la actividad del formulario. Todos los gráficos comparten la misma estructura:
 
-- **Tipo de gráfico:** Gráfico de líneas y gráfico de barras
-- **Eje X:** Fecha (que muestra la actividad diaria)
-- **Eje Y:** Recuento (que representa el número de ocurrencias de la actividad rastreada)
-- **Período de tiempo:** Ajustable mediante un menú desplegable (opciones: &quot;Últimos 30 días&quot;, &quot;Últimos 12 meses&quot;)
+- **Tipo de gráfico:** gráfico de líneas y gráfico de barras
+- **Eje X:** fecha (que muestra la actividad diaria)
+- **Eje Y:** recuento (representa el número de ocurrencias de la actividad rastreada)
+- **Período de tiempo:** ajustable mediante un menú desplegable (opciones: “Últimos 30 días”, “Últimos 12 meses”)
 
 
 
 
-### Envíos de formularios
+### Envío de formularios
 
-- **Propósito:** Este gráfico muestra el número de veces que los formularios se han enviado correctamente durante el período de tiempo seleccionado.
+- **Finalidad:** este gráfico muestra el número de veces que los formularios se han enviado correctamente durante el período de tiempo seleccionado.
 
-  ![Gráfico de envíos de Forms](/help/forms/assets/forms-submissions-vr-dashboard-form-insights.png)
+  ![Gráfico de envío de formularios](/help/forms/assets/forms-submissions-vr-dashboard-form-insights.png)
 - **Información para extraer:**
-   - **Análisis de tendencias:** Observe la tendencia general de los envíos de formularios. ¿Aumenta, disminuye o se mantiene relativamente constante el número?
-   - **Períodos punta:** Identifique días o períodos con tasas de envío inusualmente altas. Investigue las posibles razones de estos picos (por ejemplo, campañas de marketing o eventos específicos).
-   - **Períodos de actividad bajos:** Identifique los períodos con tasas de envío bajas e investigue las posibles causas (por ejemplo, tiempo de inactividad del formulario, problemas de uso).
-   - **Análisis comparativo:** Compare las tasas de envío en diferentes períodos de tiempo (por ejemplo, los últimos 30 días en comparación con los 30 días anteriores) para evaluar los cambios de rendimiento.
+   - **Análisis de tendencias:** observe la tendencia general de los envíos de formularios. ¿El número aumenta, disminuye o se mantiene relativamente constante?
+   - **Períodos de máxima afluencia:** identifique días o períodos con frecuencias de envío inusualmente altas. Investigue las posibles razones de estos picos (por ejemplo, campañas de marketing o eventos específicos).
+   - **Períodos de actividad bajos:** identifique los períodos con frecuencias de envío bajas e investigue las posibles causas (por ejemplo, tiempo de inactividad del formulario, problemas de uso).
+   - **Análisis comparativo:** compare las frecuencias de envío en diferentes períodos de tiempo (por ejemplo, los últimos 30 días en comparación con los 30 días anteriores) para evaluar los cambios de rendimiento.
 
-### Representaciones de documentos
+### Representaciones de los documentos
 
-- **Propósito:** Este gráfico rastrea el número de documentos generados como resultado de los envíos de formularios. Esto es importante si los formularios tienen en déclencheur la creación de documentos (por ejemplo, contratos o informes).
+- **Finalidad:** este gráfico rastrea el número de documentos generados como resultado de los envíos de formularios. Es importante si los formularios activan la creación de documentos (por ejemplo, contratos, informes).
 
   ![Gráfico de representaciones de documentos](/help/forms/assets/document-rendetions-vr-dashboard-form-insights.png)
 
 
 - **Información para extraer:**
-   - **Correlación con los envíos de formularios:** Compare la tendencia de las representaciones de documentos con la tendencia de los envíos de formularios. Idealmente, deberían correlacionarse estrechamente. Las discrepancias pueden indicar problemas con el proceso de generación de documentos.
-   - **Volumen de generación de documentos:** Evalúe el volumen total de documentos que se están generando para comprender la carga de trabajo del sistema de generación de documentos.
+   - **Correlación con los envíos de formularios:** compare la tendencia de las representaciones de documentos con la tendencia de los envíos de formularios. Lo ideal es que estén estrechamente relacionados. Las discrepancias pueden indicar problemas con el proceso de generación de documentos.
+   - **Volumen de generación de documentos:** evalúe el volumen total de documentos que se están generando para comprender la carga de trabajo del sistema de generación de documentos.
 
 ### Formularios creados
 
 
-- **Propósito:** Este gráfico muestra el número de formularios nuevos creados dentro del período de tiempo seleccionado.
+- **Finalidad:** este gráfico muestra el número de formularios nuevos creados dentro del período de tiempo seleccionado.
 
-  ![Gráfico creado por Forms](/help/forms/assets/forms-created-vr-dashboard-form-insights.png)
-
-- **Información para extraer:**
-   - **Tasa de creación de formularios:** Realice un seguimiento de la velocidad a la que se crean los formularios nuevos. Esto proporciona información sobre la demanda de nuevos formularios dentro de la organización.
-   - **Picos en la creación:** Identifique períodos con una actividad de creación de formularios inusualmente alta. Esto puede indicar proyectos o iniciativas específicos que requieren nuevos formularios.
-
-### Forms publicado
-
-- **Propósito:** Este gráfico hace un seguimiento del número de formularios que se han publicado (disponibles para su uso) dentro del período de tiempo seleccionado.
-
-  ![Gráfico publicado de Forms](/help/forms/assets/forms-publish-vr-dashboard-form-insights.png)
-
+  ![Gráfico de formularios creados](/help/forms/assets/forms-created-vr-dashboard-form-insights.png)
 
 - **Información para extraer:**
-   - **Tasa de implementación de formularios:** supervise la tasa a la que se implementan nuevos formularios a los usuarios.
-   - **Retraso entre la creación y la publicación:** Analice la diferencia horaria entre el gráfico &quot;Forms creado&quot; y el gráfico &quot;Forms publicado&quot;. Un retraso significativo puede indicar cuellos de botella en el proceso de aprobación o implementación del formulario.
+   - **Velocidad de creación de formularios:** realice un seguimiento de la velocidad a la que se crean los nuevos formularios. Proporciona información sobre la demanda de nuevos formularios dentro de la organización.
+   - **Picos en la creación:** identifique períodos con una actividad de creación de formularios inusualmente alta. Esto puede indicar proyectos o iniciativas específicos que requieren nuevos formularios.
+
+### Formularios publicados
+
+- **Finalidad:** este gráfico hace un seguimiento del número de formularios que se han publicado (disponibles para el uso) dentro del período de tiempo seleccionado.
+
+  ![Gráfico de formularios publicados](/help/forms/assets/forms-publish-vr-dashboard-form-insights.png)
+
+
+- **Información para extraer:**
+   - **Velocidad de implementación de formularios:** supervise la velocidad a la que implementan los nuevos formularios para los usuarios.
+   - **Retardo entre creación y publicación:** analice la diferencia horaria entre el gráfico “Formularios creados” y el gráfico “Formularios publicados”. Un retardo significativo puede indicar cuellos de botella en el proceso de aprobación o implementación del formulario.
 
 ## Uso de fragmentos
 
-En esta sección se proporciona información sobre el uso de los fragmentos de formulario, que son componentes reutilizables que se pueden incorporar en varios formularios.
+En esta sección se proporciona información sobre el uso de fragmentos de formulario, que son componentes reutilizables que se pueden incorporar en varios formularios.
 
-![Gráfico publicado de Forms](/help/forms/assets/fragment-usage-vr-dashboard-form-insights.png)
+![Gráfico de formularios publicados](/help/forms/assets/fragment-usage-vr-dashboard-form-insights.png)
 
 ### Número de fragmentos de formulario en uso
 
-- **Tipo de gráfico:** Visualización numérica (mostrando un solo valor)
-- **Propósito:** Muestra el número total de fragmentos de formulario únicos que se están utilizando actualmente en formularios activos.
+- **Tipo de gráfico:** visualización numérica (muestra un solo valor)
+- **Finalidad:** muestra el número total de fragmentos de formulario únicos que se están utilizando actualmente en los formularios activos.
 - **Información para extraer:**
-   - **Adopción de fragmentos:** evalúa la adopción general de fragmentos de formulario dentro de la organización. Un número mayor indica un mayor uso de componentes reutilizables.
+   - **Adopción de fragmentos:** evalúe la adopción general de fragmentos de formulario dentro de la organización. Un número mayor indica un mayor uso de componentes reutilizables.
 
 ### Reutilización de fragmentos de formulario
 
-- **Tipo de gráfico:** Visualización numérica (mostrando un solo valor)
-- **Propósito:** Esto muestra el número total de veces que los fragmentos de formulario se han reutilizado en diferentes formularios. Esta métrica indica la eficacia con la que se aprovechan los fragmentos para evitar duplicaciones y mantener la coherencia.
+- **Tipo de gráfico:** visualización numérica (muestra un solo valor)
+- **Finalidad:** muestra el número total de veces que los fragmentos de formulario se han reutilizado en diferentes formularios. Esta métrica indica la eficacia con la que se aprovechan los fragmentos para evitar duplicaciones y mantener la coherencia.
 - **Información para extraer:**
-   - **Tasa de reutilización de fragmentos:** supervise la tasa a la que los fragmentos existentes se están reutilizando en formularios nuevos. Un número mayor indica un mejor aprovechamiento de los componentes reutilizables y una mayor eficiencia.
+   - **Índice de reutilización de fragmentos:** monitorice el índice de reutilización de los fragmentos existentes en formularios nuevos. Un número mayor indica un mejor aprovechamiento de los componentes reutilizables y una mayor eficiencia.
 
-## Ejemplo de escenarios
+## Ejemplos de escenarios
 
-- **Escenario:** Observará una caída repentina en &quot;Envíos de formularios&quot;.
-   - **Acción:** Investigue posibles causas, como el tiempo de inactividad del formulario, problemas de uso o una disminución del tráfico en la página de aterrizaje del formulario.
-- **Escenario:** El valor &quot;Reutilización de fragmentos de formulario&quot; es bajo.
-   - **Acción:** Promocione las ventajas de utilizar fragmentos de formulario para su equipo, asegúrese de que los fragmentos estén bien organizados y sean fáciles de encontrar, y proporcione formación sobre cómo crear y reutilizar fragmentos de forma eficaz.
-- **Escenario:** Hay un retardo significativo entre &quot;Forms Created&quot; y &quot;Forms Published&quot;.
-   - **Acción:** revise el proceso de aprobación e implementación de formularios para identificar y eliminar cuellos de botella.
+- **Escenario:** observa una caída repentina en los “Envíos de formularios”.
+   - **Acción:** investigue las posibles causas, como el tiempo de inactividad del formulario, los problemas de uso o una disminución del tráfico en la página de aterrizaje del formulario.
+- **Escenario:** el valor “Reutilización de fragmentos de formulario” es bajo.
+   - **Acción:** promocione las ventajas del uso de fragmentos de formulario para su equipo; asegúrese de que los fragmentos estén bien organizados y sean fáciles de encontrar, y ofrezca formación sobre cómo crear y reutilizar fragmentos de forma eficaz.
+- **Escenario:** hay un retardo significativo entre los “Formularios creados” y los “Formularios publicados”.
+   - **Acción:** revise el proceso de aprobación e implementación de los formularios a identificar para eliminar los cuellos de botella.
 
 
 
 ## Véase también
 
-- [Comprender el panel de realización de valores](/help/forms/aem-forms-value-realization-dashboard.md)
+- [Información sobre el panel de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md)
