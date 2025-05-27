@@ -375,7 +375,7 @@ ht-degree: 99%
          + [Activación de las funciones progresivas de la aplicación web](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
          + [Métodos abreviados de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
          + [Exportar a CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
-      + Editor de página {#page-editor}
+      + Editor de páginas {#page-editor}
          + [El Editor de página](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [Panel lateral del editor](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [Edición de páginas](/help/sites-cloud/authoring/page-editor/edit-content.md)
@@ -908,7 +908,7 @@ ht-degree: 99%
       + [API facturables de informes de transacciones](/help/forms/transaction-reports-billable-apis.md)
       + [Registrar una transacción para una implementación personalizada](/help/forms/record-transaction-custom-implementation.md)
    + Panel de realización de valor   {#vr-dashboard}
-      + [Información acerca del panel de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md)
+      + [Información sobre el panel de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md)
       + [Uso del panel de realización de valor para analizar las tendencias de uso de formularios y documentos](/help/forms/using-the-value-realization-dashboard.md)
    + Referencia de la API del desarrollador  {#aem-forms-developer-api-reference}
       + [Referencia de la API de los formularios adaptables](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
