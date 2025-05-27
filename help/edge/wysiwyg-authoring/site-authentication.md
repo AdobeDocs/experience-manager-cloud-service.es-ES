@@ -35,7 +35,7 @@ Para configurar la autenticación de sitios para su uso con la creación de cont
 
 ## Configuración de la autenticación del sitio {#configure-authentication}
 
-Consulte el documento [Configuración de la autenticación del sitio]( https://www.aem.live/docs/authentication-setup-site) para obtener detalles sobre cómo configurar la autenticación del sitio.
+Consulte el documento [Configuración de la autenticación del sitio](https://www.aem.live/docs/authentication-setup-site) para obtener detalles sobre cómo configurar la autenticación del sitio.
 
 Tome nota de la siguiente información cuando configure la autenticación:
 
