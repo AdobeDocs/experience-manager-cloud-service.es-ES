@@ -101,7 +101,7 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
    >[!NOTE]
    >
-   >El nombre debe seguir las mismas convenciones de un nodo AEM, por lo que no puede contener ninguno de estos caracteres: `. / : [ ] | * &lt; > ^ ? { } % # &quot;ni ningún símbolo o emojis inusual.
+   >El nombre debe seguir las mismas convenciones de un nodo AEM, por lo que no puede contener ninguno de estos caracteres: &grave;. / : [ ] | * &lt; > ^ ? { } % # &quot;ni ningún símbolo o emojis inusual.
 
 1. Ahora debería ver la lista de migración en la vista de lista. Seleccione el símbolo de tres puntos (**...**) para abrir la lista desplegable y seleccione **Copiar clave de extracción**. Necesita esta clave durante la fase de extracción. Copie esta clave de extracción.
 
@@ -148,6 +148,7 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
       >A partir de la versión de CTT (3.0.24), se han incluido nuevas funciones en la herramienta de transferencia de contenido, lo que mejora el proceso de incluir y excluir rutas. Anteriormente, las rutas debían seleccionarse una por una, lo que resultaba tedioso y laborioso. Ahora, los usuarios pueden incluir rutas directamente desde la interfaz de usuario o cargar un archivo CSV según sus preferencias.  El archivo CSV debe tener una ruta por línea y sin comas.
 
    1. **Rutas que se incluirán**: use el explorador de rutas para seleccionar las rutas que deben migrarse. El selector de rutas acepta entradas escribiendo o seleccionando. Los usuarios solo pueden seleccionar una opción para incluir las rutas: desde la interfaz de usuario de o cargando un archivo CSV.
+
       >[!IMPORTANT]
       >Las siguientes rutas están restringidas al crear un conjunto de migración:
       >* `/apps`
