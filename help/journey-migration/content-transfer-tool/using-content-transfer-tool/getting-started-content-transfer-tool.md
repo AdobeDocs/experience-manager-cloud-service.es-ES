@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo empezar a utilizar la herramienta 
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
+source-git-commit: 0c76419b5efa6d45cf4db51990633fea3b489063
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1654'
 ht-degree: 14%
 
 ---
@@ -64,7 +64,7 @@ A veces, es difícil comprender los problemas de conexión SSL/TLS. Para solucio
 >id="aemcloud_ctt_demo"
 >title="Ejecución de la herramienta de transferencia de contenido"
 >abstract="Obtenga información acerca de cómo utilizar la herramienta de transferencia de contenido para migrar el contenido a AEM as a Cloud Service (autor/publicación)."
->additional-url="https://video.tv.adobe.com/v/327076/?quality=12&learn=on&captions=spa" text=" Consulte la demostración"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Consulte la demostración"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=es#migration" text="Tutorial: uso de la herramienta de transferencia de contenido"
 
 La siguiente sección se aplica a la nueva versión de la herramienta de transferencia de contenido. Siga esta sección para aprender a utilizar la herramienta de transferencia de contenido para migrar contenido a AEM as a Cloud Service:
@@ -101,7 +101,7 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
    >[!NOTE]
    >
-   >El nombre debe seguir las mismas convenciones de un nodo AEM, por lo que no puede contener ninguno de estos caracteres: &grave;. / : [ ] | * &lt; > ^ ? { } % # &quot;ni ningún símbolo o emojis inusual.
+   >El nombre debe seguir las mismas convenciones de un nodo AEM, por lo que no puede contener ninguno de estos caracteres: `. / : [ ] | * &lt; > ^ ? { } % # &quot;ni ningún símbolo o emojis inusual.
 
 1. Ahora debería ver la lista de migración en la vista de lista. Seleccione el símbolo de tres puntos (**...**) para abrir la lista desplegable y seleccione **Copiar clave de extracción**. Necesita esta clave durante la fase de extracción. Copie esta clave de extracción.
 
@@ -145,10 +145,9 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
       >Si tiene intención de incluir versiones como parte de un conjunto de migración y está realizando recargas con `wipe=false`, debe deshabilitar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
 
       >[!NOTE]
-      >A partir de la versión de CTT (3.0.24), se han incluido nuevas funciones en la herramienta de transferencia de contenido, lo que mejora el proceso de incluir y excluir rutas. Anteriormente, las rutas debían seleccionarse una por una, lo que resultaba tedioso y laborioso. Ahora, los usuarios pueden incluir rutas directamente desde la interfaz de usuario o cargar un archivo CSV según sus preferencias.
+      >A partir de la versión de CTT (3.0.24), se han incluido nuevas funciones en la herramienta de transferencia de contenido, lo que mejora el proceso de incluir y excluir rutas. Anteriormente, las rutas debían seleccionarse una por una, lo que resultaba tedioso y laborioso. Ahora, los usuarios pueden incluir rutas directamente desde la interfaz de usuario o cargar un archivo CSV según sus preferencias.  El archivo CSV debe tener una ruta por línea y sin comas.
 
    1. **Rutas que se incluirán**: use el explorador de rutas para seleccionar las rutas que deben migrarse. El selector de rutas acepta entradas escribiendo o seleccionando. Los usuarios solo pueden seleccionar una opción para incluir las rutas: desde la interfaz de usuario de o cargando un archivo CSV.
-
       >[!IMPORTANT]
       >Las siguientes rutas están restringidas al crear un conjunto de migración:
       >* `/apps`
