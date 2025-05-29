@@ -1,11 +1,11 @@
 ---
-title: Selector de recursos para  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
+title: Personalizar la aplicación Selector de recursos
 description: Utilice funciones para personalizar el selector de recursos en la aplicación.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1292'
 ht-degree: 28%
 
 ---

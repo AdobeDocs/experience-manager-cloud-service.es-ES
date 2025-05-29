@@ -4,10 +4,10 @@ description: Descubra cómo los AEM Assets y Dynamic Media simplifican la admini
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b6c753ec581a80991f0f79134bec019c3ad6d1d0
 workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 3%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -86,7 +86,7 @@ Estas representaciones permiten a las organizaciones ofrecer experiencias person
    * [Ajustes preestablecidos de imagen](/help/assets/dynamic-media/managing-image-presets.md)
 
   Puede [cambiar la vista](/help/assets/assets-view-introduction.md#how-to-access-assets-view) más adelante para obtener una vista previa de las representaciones dinámicas en la vista de Assets.
-* Publique recursos en Dynamic Media para que las representaciones de Dynamic Media estén disponibles en la vista de Assets. Para obtener más información, consulte [Publicar Assets en AEM y Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
+* Publique recursos en Dynamic Media para que las representaciones de Dynamic Media estén disponibles en la vista de Assets. Para obtener más información, consulte [Publicar Assets en AEM y Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
 ### Ver y descargar representaciones de Dynamic Media {#view-download-dm-renditions}
@@ -115,7 +115,7 @@ Para ver o descargar representaciones dinámicas de imágenes en Experience Mana
 
 ## Dynamic Media con representaciones de capacidades de OpenAPI {#dm-with-openapi-renditions}
 
-### Antes de empezar
+### Antes de empezar {#prereqs-dm-with-openapi-renditions}
 
 * Debe ser un usuario con licencia de Dynamic Media de AEM.
 * Assets debe aprobarse para mostrar Dynamic Media con representaciones de funcionalidades de OpenAPI. Para obtener más información, consulte [Aprobar recursos en Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)

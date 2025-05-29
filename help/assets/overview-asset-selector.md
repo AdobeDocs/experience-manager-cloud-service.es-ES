@@ -3,10 +3,10 @@ title: Selector de recursos para  [!DNL Adobe Experience Manager]  as a  [!DNL C
 description: Utilice el Selector de recursos para buscar y recuperar metadatos y representaciones de recursos en la aplicación.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
-workflow-type: ht
-source-wordcount: '1422'
-ht-degree: 100%
+source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
+workflow-type: tm+mt
+source-wordcount: '1598'
+ht-degree: 88%
 
 ---
 
@@ -203,6 +203,46 @@ El Selector de recursos le permite ver el recurso en cuatro vistas diferentes:
 * ![vista de galería](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vista de galería**]: la vista de galería muestra los archivos o carpetas en una lista horizontal bloqueada en el centro.
 * ![vista en cascada](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista en cascada**] La vista en cascada muestra los archivos o carpetas en forma de puente.
 
+### Detalles y metadatos de recursos {#asset-details-and-metadata}
+
+La página Detalles del recurso proporciona una vista completa de un recurso específico, consolidando toda la información clave en un solo lugar. Incluye una descripción general con el nombre, el formato de archivo, el estado y una breve descripción, junto con una vista previa o una miniatura para facilitar la identificación visual. También incluye metadatos de un recurso, como la fecha de creación, el autor, el tamaño, el esquema de colores, etc. Estos atributos ayudan a lograr una búsqueda, un filtrado y una clasificación eficientes de un recurso. El panel de detalles del recurso está disponible tanto en la vista modal como en la del carril del Selector de recursos. En la vista de carril, es necesario habilitar y configurar la propiedad `onDrop` para devolver un recurso. Como alternativa, en la vista modal, la propiedad `handleSelection` devuelve un recurso. Consulte [Propiedades del selector de recursos](asset-selector-properties.md).
+
+Para ver los detalles de un recurso y los metadatos, ejecute los pasos siguientes:
+
+1. Abra el MFE Selector de recursos y vaya a un recurso.
+1. Pase el ratón sobre el recurso y haga clic en ![icono de información](/help/assets/assets/info-icon-solid-black.svg).
+1. Vaya a la pestaña **[!UICONTROL Información]** para ver los detalles del recurso. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+
+Para personalizar el panel de vista de detalles de un recurso, vea [Personalizar información en la vista modal](asset-selector-customization.md#customize-info-in-modal-view).
+
+![Detalles del recurso](assets/asset-details.png)
+
+<!--
+
+#### Asset renditions {#asset-renditions}
+
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. See [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions).
+
+>[!NOTE]
+>
+>* Prerequisites to [Dynamic Media with OpenAPI Capabilities renditions](/help/assets/renditions.md##prereqs-dm-with-openapi-renditions).
+>* Renditions tab in the details panel of an asset shows up if `featureSet`  props is set to `['detail-panel', 'dm-renditions']`.
+>* An asset should be approved to see Dynamic Media with OpenAPI renditions and/or ensure processing/publishing of the asset to Dynamic Media is complete (for images only).
+
+![Asset details dynamic media renditions](assets/asset-details-dm-renditions.png)
+
+For assets that are approved and have renditions enabled, you see the **Dynamic Media with Open API** badge. 
+
+![Dynamic Media Open API stamp](assets/dm-open-api-stamp.png)
+
+Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI capabilities](integrate-asset-selector-dynamic-media-open-api.md##interface-dynamic-media-open-api).
+
+##### Add modifiers {#modifiers-dm-media-renditions}
+
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+
+-->
+
 ## Más información sobre las funcionalidades clave {#key-capabilities-asset-selector}
 
 <table>
@@ -216,39 +256,39 @@ El Selector de recursos le permite ver el recurso en cuatro vistas diferentes:
      </td>
     <td>
         <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Integrar el Selector de recursos con el gráfico de aplicaciones de Adobe"><br/>
-        <a href="integrate-asset-selector.md">Integrar el selector de recursos con aplicaciones de Adobe</a>
+        <a href="integrate-asset-selector-adobe-app.md">Integrar el selector de recursos con aplicaciones de Adobe</a>
         <p>
         <em>Descubra cómo integrar el Selector de recursos con varias aplicaciones de Adobe.</em>
         </p>
     </td>
     <td>
         <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Integrar el gráfico del Selector de recursos"><br/>
-        <a href="integrate-asset-selector.md">Integrar el Selector de recursos con aplicaciones de terceros</a>
+        <a href="integrate-asset-selector-non-adobe-app.md">Integrar el Selector de recursos con aplicaciones de terceros</a>
         <p>
         <em>Descubra las funcionalidades para integrar el Selector de recursos con aplicaciones que no sean de Adobe.</em>
         </p>
     </td>
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Integrar el gráfico del Selector de recursos"><br/>
-        <a href="integrate-asset-selector.md">Integrar el Selector de recursos con las API abiertas de Dynamic Media</a>
+        <a href="integrate-asset-selector-dynamic-media-open-api.md">Integrar el Selector de recursos con las API abiertas de Dynamic Media</a>
         <p>
         <em>Obtenga información sobre cómo integrar el Selector de recursos con las API abiertas de Dynamic Media.</em>
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Gráfico de propiedades del Selector de recursos"><br/>
-        <a href="asset-selector-customization.md">Propiedades del Selector de recursos</a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Gráfico de ejemplos del Selector de recursos"><br/>
+        <a href="asset-selector-properties.md">Propiedades del Selector de recursos</a>
         <p>
-        <em>Conozca los conceptos básicos de la personalización de varios componentes del Selector de recursos, como filtros, selección de recursos, recursos caducados y mucho más. </em>
+        <em>Comprenda el uso de las propiedades de forma práctica. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Gráfico de ejemplos del Selector de recursos"><br/>
-        <a href="asset-selector-customization.md">Ejemplos del Selector de recursos</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Gráfico de propiedades del Selector de recursos"><br/>
+        <a href="asset-selector-examples.md">Ejemplos del Selector de recursos</a>
         <p>
-        <em>Comprenda el uso de las propiedades de forma práctica. </em>
+        <em>Conozca los conceptos básicos de la personalización de varios componentes del Selector de recursos, como filtros, selección de recursos, recursos caducados y mucho más. </em>
         </p>
     </td>
     <td>
@@ -269,7 +309,7 @@ El Selector de recursos le permite ver el recurso en cuatro vistas diferentes:
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Gráfico de colecciones del Selector de recursos"><br/>
         <a href="asset-selector-collections.md">Colecciones del Selector de recursos</a>
         <p>
-        <em>Aprenda a utilizar colecciones en el Selector de recursos mediante el repositorio de Experience Manager. </em>
+        <em>Aprenda a utilizar colecciones dentro del Selector de recursos mediante el repositorio de Experience Manager. </em>
         </p>
     </td>
     <td>

@@ -1,12 +1,12 @@
 ---
-title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL Cloud Service]
+title: Propiedades del Selector de recursos para la personalización
 description: Utilice el selector de recursos para buscar y recuperar metadatos y representaciones de recursos dentro de la aplicación.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: 89a7346f5b6bc1d65524c5ead935aa4a2a764ebb
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 44%
+source-wordcount: '1403'
+ht-degree: 41%
 
 ---
 
@@ -58,7 +58,7 @@ Puede utilizar las propiedades del Selector de recursos para personalizar la for
 | *imsToken* | Cadena | No | | Token de portador de IMS utilizado para la autenticación. `imsToken` es necesario si utiliza una aplicación [!DNL Adobe] para la integración. |
 | *apiKey* | Cadena | No | | Clave de API utilizada para acceder al servicio AEM Discovery. `apiKey` es necesario si utiliza una integración de aplicación [!DNL Adobe]. |
 | *filterSchema* | Matriz | No | | Modelo que se utiliza para configurar las propiedades del filtro. Esto resulta útil cuando desea limitar ciertas opciones de filtro en el Selector de recursos. |
-| *filterFormProps* | Objeto | No | | Especifique las propiedades del filtro que debe utilizar para restringir la búsqueda. ¡Por! Por ejemplo, tipo MIME JPG, PNG, GIF. |
+| *Props filterForm* | Objeto | No | | Especifique las propiedades del filtro que debe utilizar para restringir la búsqueda. ¡Por! Por ejemplo, tipo MIME JPG, PNG, GIF. |
 | *selectedAssets* | Matriz `<Object>` | No |                 | Especificar los recursos seleccionados cuando se procese el selector de recursos. Se requiere una matriz de objetos que contenga una propiedad id de los recursos. Por ejemplo, `[{id: 'urn:234}, {id: 'urn:555'}]` Un recurso debe estar disponible en el directorio actual. Si necesita utilizar un directorio diferente, proporcione un valor para la propiedad de `path` también. |
 | *acvConfig* | Objeto | No | | Propiedad de vista de colección de recursos que contiene un objeto con una configuración personalizada para anular los valores predeterminados. Además, esta propiedad se usa con la propiedad `rail` para habilitar la vista de carril del visor de recursos. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |                 | Si las traducciones OOTB no son suficientes para las necesidades de la aplicación, puede exponer una interfaz a través de la cual puede pasar sus propios valores localizados personalizados mediante la propiedad `i18nSymbols`. Al pasar un valor a través de esta interfaz, se anulan las traducciones predeterminadas proporcionadas y, en su lugar, se utilizan las suyas. Para realizar la anulación, debe pasar un objeto [Descriptor del mensaje](https://formatjs.io/docs/react-intl/api/#message-descriptor) válido a la clave de `i18nSymbols` que desee anular. |
@@ -66,12 +66,12 @@ Puede utilizar las propiedades del Selector de recursos para personalizar la for
 | *repositoryId* | Cadena | No | &#39;&#39; | Repositorio desde el que el Selector de recursos carga el contenido. |
 | *additionalAemSolutions* | `Array<string>` | No | [ ] | Permite añadir una lista de repositorios de AEM adicionales. Si no se proporciona información en esta propiedad, solo se tienen en cuenta los repositorios de la biblioteca de medios o de AEM Assets. |
 | *hideTreeNav* | Booleano | No |  | Especifica si se muestra u oculta la barra lateral de navegación del árbol de recursos. Solo se utiliza en la vista modal y, por lo tanto, no hay ningún efecto de esta propiedad en la vista de carril. |
-| *onDrop* | Función | No | | La propiedad permite la funcionalidad de colocación de un recurso. |
+| *onDrop* | Función | No | | La funcionalidad al soltar se utiliza para arrastrar un recurso y soltarlo en un área de colocación designada. Permite interfaces de usuario interactivas en las que los recursos se pueden mover y procesar sin problemas. |
 | *dropOptions* | `{allowList?: Object}` | No | | Configura las opciones de colocación mediante &#39;allowList&#39;. |
 | *colorScheme* | Cadena | No | | Configurar tema (`light` o `dark`) para el Selector de recursos. |
 | *Tema* | Cadena | No | Predeterminado | Aplicar tema a la aplicación Selector de recursos entre `default` y `express`. También admite `@react-spectrum/theme-express`. |
-| *handleSelection* | Función | No | | Se invoca con la matriz de elementos de recurso cuando se seleccionan los recursos y se hace clic en el botón `Select` en el modal. Esta función solo se invoca en la vista modal. Para la vista de carril, utilice las funciones `handleAssetSelection` o `onDrop`. Ejemplo: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Consulte [selección de recursos](/help/assets/asset-selector-customization.md#selection-of-assets) para obtener detalles. |
-| *handleAssetSelection* | Función | No | | Se invoca con una matriz de elementos cuando los recursos se seleccionan o no. Esto resulta útil cuando desea escuchar los recursos a medida que el usuario los selecciona. Ejemplo: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Consulte [selección de recursos](/help/assets/asset-selector-customization.md#selection-of-assets) para obtener detalles. |
+| *handleSelection* | Función | No | | Se invoca con la matriz de elementos de recurso cuando se seleccionan los recursos y se hace clic en el botón `Select` en el modal. Esta función solo se invoca en la vista modal. Para la vista de carril, utilice las funciones `handleAssetSelection` o `onDrop`. Ejemplo: <pre>handleSelection=(recursos: Asset[])=> {...}</pre> Consulte [selección de recursos](/help/assets/asset-selector-customization.md#selection-of-assets) para obtener detalles. |
+| *handleAssetSelection* | Función | No | | Se invoca con una matriz de elementos cuando los recursos se seleccionan o no. Esto resulta útil cuando desea escuchar los recursos a medida que el usuario los selecciona. Ejemplo: <pre>handleSelection=(recursos: Asset[])=> {...}</pre> Consulte [selección de recursos](/help/assets/asset-selector-customization.md#selection-of-assets) para obtener detalles. |
 | *onClose* | Función | No | | Se invoca cuando se pulsa el botón `Close` en la vista modal. Esto solo se llama en la vista `modal` y se ignora en la vista `rail`. |
 | *onFilterSubmit* | Función | No | | Se invoca con elementos de filtro cuando el usuario cambia criterios de filtro diferentes. |
 | *selectionType* | Cadena | No | Soltero/a | Configuración para selección de `single` o `multiple` de recursos a la vez. |
@@ -94,11 +94,20 @@ Puede utilizar las propiedades del Selector de recursos para personalizar la for
 | *onFilesChange* | Función | No | | Es una función de llamada de retorno que se utiliza para mostrar el comportamiento de carga cuando se cambia un archivo. Pasa la nueva matriz de archivos pendientes de carga y el tipo de origen de la carga. El tipo de Source puede ser nulo en caso de error. La sintaxis es `(newFiles: File[], uploadType: UploadType) => void` |
 | *uploadingPlaceholder* | Cadena | | | Es una imagen de marcador de posición que reemplaza el formulario de metadatos cuando se inicia una carga del recurso. La sintaxis es `{ href: string; alt: string; } ` |
 | *uploadConfig* | Objeto | | | Es un objeto que contiene una configuración personalizada para la carga. |
-| *featureSet* | Matriz | Cadena | | La propiedad `featureSet:[ ]` se usa para habilitar o deshabilitar una funcionalidad en particular en la aplicación Selector de recursos. Para habilitar el componente o una función, puede pasar un valor de cadena en la matriz o dejar la matriz vacía para deshabilitar ese componente. Por ejemplo, si desea habilitar la funcionalidad de carga en el Selector de recursos, utilice la sintaxis `featureSet:[0:"upload"]`. |
+| *featureSet* | Matriz | Cadena | | La propiedad `featureSet:[ ]` se usa para habilitar o deshabilitar una funcionalidad en particular en la aplicación Selector de recursos. Para habilitar el componente o una función, puede pasar un valor de cadena en la matriz o dejar la matriz vacía para deshabilitar ese componente.  Por ejemplo, si desea habilitar la funcionalidad de carga en el Selector de recursos, utilice la sintaxis `featureSet:[0:"upload"]`. Del mismo modo, puede usar `featureSet:[0:"collections"]` para habilitar colecciones en el Selector de recursos. Además, use `featureSet:[0:"detail-panel"]` para habilitar [el panel de detalles](overview-asset-selector.md#asset-details-and-metadata) de un recurso. Para usar estas características juntas, la sintaxis es `featureSet:["upload", "collections", "detail-panel"]`. |
 
 <!--
+| *selectedRendition* | Object | | | This property allows users to define and control which renditions of an asset are displayed when the panel is accessed. This customization enhances user experience by filtering out unnecessary renditions and showcasing only the most relevant renditions. For example, `CopyUrlHref` allows you to use Dynamic Media renditions in your Asset Selector application (delivery URL). |
+| *featureSet* | Array | String | | The `featureSet:[ ]` property is used to enable or disable a particular functionaly in the Asset Selector application. To enable the component or a feature, you can pass a string value in the array or leave the array empty to disable that component. For example, you want to enable upload functionality in the Asset Selector, use the syntax `featureSet:[0:"upload"]`. Similarly, you can use `featureSet:[0:"collections"]` to enable collections in the Asset Selector. Addidionally, use `featureSet:[0:"detail-panel"]` to enable [details panel](overview-asset-selector.md#asset-details-and-metadata) of an asset. Also, `featureSet:[0:"dm-renditions"]` to show Dynamic Media renditions of an asset.|
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](/help/assets/asset-selector-customization.md#customize-expired-assets). |
 -->
+
+>[!MORELIKETHIS]
+>
+>* [Personalizaciones del Selector de recursos](/help/assets/asset-selector-customization.md)
+>* [Integrar el Selector de recursos con varias aplicaciones](/help/assets/integrate-asset-selector.md)
+>* [Integre el Selector de recursos con Dynamic Media con funciones de OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrar el Selector de recursos con aplicaciones de terceros](/help/assets/integrate-asset-selector-non-adobe-app.md)
