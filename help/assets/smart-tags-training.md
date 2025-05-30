@@ -118,7 +118,7 @@ Asegúrese de que las imágenes del conjunto de formación se ajusten a las sigu
 >[!NOTE]
 >
 >Puede utilizar las mismas imágenes para entrenar distintos modelos de etiquetas. Sin embargo, no asocie una imagen con más de una etiqueta en un modelo de etiqueta. Es posible etiquetar la misma imagen con diferentes etiquetas que pertenezcan a diferentes modelos de etiquetas.
->>No se puede deshacer la formación. Las directrices anteriores deberían ayudarle a elegir buenas imágenes para entrenar.
+>&#x200B;>No se puede deshacer la formación. Las directrices anteriores deberían ayudarle a elegir buenas imágenes para entrenar.
 
 ## Capacite el modelo para las etiquetas personalizadas {#train-model}
 
@@ -161,7 +161,7 @@ Para comprobar si el servicio Etiquetas inteligentes ha recibido formación sobr
 >[!NOTE]
 >
 >¿Qué sucede si deseo transferir la formación sobre etiquetas inteligentes de una instancia a otra mediante una exportación?
->>No es necesario exportar la formación sobre etiquetas inteligentes si el entorno pertenece a la misma organización de IMS. Se comparte automáticamente. Si el entorno está en varias organizaciones de IMS, no hay forma de compartir o exportar la formación sobre etiquetas inteligentes.
+>&#x200B;>No es necesario exportar la formación sobre etiquetas inteligentes si el entorno pertenece a la misma organización de IMS. Se comparte automáticamente. Si el entorno está en varias organizaciones de IMS, no hay forma de compartir o exportar la formación sobre etiquetas inteligentes.
 
 ## Limitaciones y prácticas recomendadas relacionadas con las etiquetas inteligentes {#limitations-smart-tags-training}
 
@@ -172,4 +172,4 @@ Para comprobar si el servicio Etiquetas inteligentes ha recibido formación sobr
 >[!NOTE]
 >
 >La capacidad de las etiquetas inteligentes para aprender sobre sus etiquetas y aplicarlas en otras imágenes depende de la calidad de las imágenes que utilice para la formación.
->>Para obtener los mejores resultados, Adobe recomienda utilizar imágenes visualmente similares para entrenar el servicio para cada etiqueta.
+>&#x200B;>Para obtener los mejores resultados, Adobe recomienda utilizar imágenes visualmente similares para entrenar el servicio para cada etiqueta.
