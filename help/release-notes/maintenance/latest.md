@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: e1fa4b3bcb04ab3e834b34f507f1350fb536b513
+source-git-commit: 6884e33a922a7147e3a6a3f3ddb3dd3b2da85fbf
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '562'
 ht-degree: 52%
 
 ---
@@ -58,6 +58,7 @@ Ninguna.
 * GRANITE-54164: se eliminó `org.apache.jackrabbit.oak.plugins.blob` de la API pública.
 * GRANITE-54280: se eliminó `org.apache.jackrabbit.oak.cache` de la API pública.
 * GRANITE-58332: `org.apache.jackrabbit.oak.plugins.memory` obsoleto en la API pública.
+* El compresor YUI para JavaScript ha quedado obsoleto.
 * La funcionalidad [Automatización de la instalación de Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) ha quedado obsoleta.
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
