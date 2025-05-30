@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
+source-git-commit: eea0ac03cf2da9cd8508b6df9242dfe67b67c9f9
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1529'
 ht-degree: 8%
 
 ---
@@ -15,14 +15,15 @@ ht-degree: 8%
 
 # Panel de auditoría de experiencias {#experience-audit-dashboard}
 
-Descubra cómo la auditoría de experiencias valida el proceso de implementación y garantiza que los cambios cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO. Proporciona una interfaz de panel clara e informativa para rastrear estas métricas.
+<!-- Engineer architect over this feature was Bogdan Anton; scrum master Alexandru Nica -->
+
+Descubra cómo la auditoría de experiencias valida el proceso de implementación y garantiza que los cambios cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO (optimización del motor de búsqueda). Proporciona una interfaz de panel clara e informativa para rastrear estas métricas.
 
 ## Información general {#overview}
 
 La auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que se implementen los cambios:
 
-1. Cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO (optimización del motor de búsqueda).
-
+1. Cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO.
 1. No introduzcan regresiones.
 
 La auditoría de experiencias en Cloud Manager garantiza que la experiencia del usuario en el sitio sea de los más altos estándares.
@@ -35,9 +36,9 @@ La auditoría de experiencias está equipada con [Google Lighthouse](https://dev
 
 La auditoría de experiencias está disponible para Cloud Manager:
 
-* (Predeterminado) Canalizaciones de producción de sitios
-* (Opcional) Desarrollo de canalizaciones de pila completa
-* (Opcional) Desarrollo de canalizaciones front-end
+* (Predeterminado) Canalizaciones de producción de sitios.
+* (Opcional) Desarrollo de canalizaciones de pila completa.
+* (Opcional) Desarrollo de canalizaciones front-end.
 
 Consulte la [sección Configuración](#configuration) para obtener más información sobre cómo configurar la auditoría para los entornos opcionales.
 
@@ -49,9 +50,9 @@ La auditoría de experiencias está disponible de forma predeterminada para las 
 
 1. Según el tipo de canalización que desee configurar, realice una de las siguientes acciones:
 
-   * Agregue una nueva [canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para definir las rutas que desea que evalúe la auditoría.
-   * Agregue una nueva [canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), si desea habilitar la auditoría en una canalización de pila completa de front-end o de desarrollo.
-   * O bien, puede [editar una canalización existente](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) y actualizar las opciones existentes.
+   * [Agregue una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para definir las rutas que desea que evalúe la auditoría.
+   * [Agregue una canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), si desea habilitar la auditoría en una canalización de pila completa de front-end o de desarrollo.
+   * [Editar una canalización existente](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) y actualizar las opciones existentes.
 
 1. Para usar la auditoría de experiencias al agregar o editar una canalización que no sea de producción, marque la casilla de verificación **Auditoría de experiencias**. Puede encontrar esta opción en la ficha **Código Source**.
 
@@ -80,7 +81,7 @@ La auditoría de experiencias está disponible de forma predeterminada para las 
 
 ## Resultados de la auditoría de experiencias {#results}
 
-Los resultados de la auditoría de experiencias se presentan en la fase **Prueba de fase** de la canalización de producción a través de la [página de ejecución de la canalización de producción](/help/implementing/cloud-manager/deploy-code.md).
+Los resultados de la auditoría de experiencias se presentan en la fase **Prueba de ensayos** de la canalización de producción a través de la [página de ejecución de la canalización de producción](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Panel en la canalización](assets/experience-audit-dashboard.png)
 
@@ -148,7 +149,7 @@ Al mover el ratón sobre el gráfico, la información sobre herramientas muestra
 
 ![Detalles de tendencia](assets/experience-audit-trend-details.png)
 
-Si hace clic en el gráfico en un momento dado, se abre una ventana emergente con detalles de ese análisis. Haga clic en **abrir análisis de auditoría de experiencias** para cargar los resultados del análisis en la sección **[resultados del análisis de auditoría de experiencias](#scan-results)**.
+Si hace clic en el gráfico en un momento dado, se abrirá una ventana emergente con detalles de ese análisis. Haga clic en **abrir análisis de auditoría de experiencias** para cargar los resultados del análisis en la sección **[resultados del análisis de auditoría de experiencias](#scan-results)**.
 
 ![Seleccionar análisis diferente](assets/experience-audit-open-scan.png)
 
