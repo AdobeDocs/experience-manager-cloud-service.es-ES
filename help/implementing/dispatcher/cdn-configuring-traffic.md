@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar el tráfico de CDN decl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1508'
 ht-degree: 1%
 
 ---
@@ -60,9 +60,11 @@ Los tipos de reglas de las secciones siguientes comparten una sintaxis común.
 
 Se hace referencia a una regla mediante un nombre, una cláusula when condicional y acciones.
 
-La cláusula when determina si se evaluará una regla en función de propiedades como dominio, ruta, cadenas de consulta, encabezados y cookies. La sintaxis es la misma en todos los tipos de reglas; para obtener más información, consulte la [sección Estructura de condiciones](/help/security/traffic-filter-rules-including-waf.md#condition-structure) en el artículo Reglas de filtro de tráfico.
+La cláusula &quot;when&quot; determina si se evaluará una regla en función de propiedades como dominio, ruta, cadenas de consulta, encabezados y cookies. La sintaxis es la misma en todos los tipos de reglas; para obtener más información, consulte la [sección Estructura de condiciones](/help/security/traffic-filter-rules-including-waf.md#condition-structure) en el artículo Reglas de filtro de tráfico.
 
 Los detalles del nodo de acciones difieren según el tipo de regla y se describen en las secciones individuales siguientes.
+
+En las reglas de configuración, puede hacer referencia a secretos definidos como variables de entorno (consulte [Secretos de configuración](/help/implementing/dispatcher/cdn-credentials-authentication.md)).
 
 ## Solicitar transformaciones {#request-transformations}
 
