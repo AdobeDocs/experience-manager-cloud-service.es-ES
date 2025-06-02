@@ -4,10 +4,10 @@ description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 91%
+source-wordcount: '1922'
+ht-degree: 90%
 
 ---
 
@@ -189,6 +189,10 @@ El contenido de ejemplo incluye una hoja de “consulta” que sirve como planti
 
 ![Formulario de consulta](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
+>[!IMPORTANT]
+>
+>**La hoja donde se crea el formulario tiene restricciones sobre cómo se le puede dar nombre. Solamente `helix-default` y `shared-aem` pueden usarse como nombres de hoja.**
+
 Empecemos por actualizar la etiqueta de campo. Abra la hoja “consulta” para editarla, cambie la etiqueta del botón de envío a `Let's Talk` y utilice AEM Sidekick para obtener una vista previa y publicar el archivo.
 
 ![Formulario de consulta](/help/edge/assets/enquiry-form-preview-publish.png)
@@ -237,7 +241,7 @@ Para ponerse en marcha con un entorno de desarrollo de AEM local en poco tiempo,
        npm install -g @adobe/aem-cli
    ```
 
-1. Clone su proyecto de GitHub: clone su repositorio de proyecto desde GitHub mediante el siguiente comando, reemplazando &lt;owner> con el propietario del repositorio y &lt;repo> con el nombre del repositorio:
+1. Clone su proyecto de GitHub: clone su repositorio de proyecto desde GitHub mediante el siguiente comando, reemplazando <owner> con el propietario del repositorio y <repo> con el nombre del repositorio:
 
    ```
    git clone https://github.com/<owner>/<repo>

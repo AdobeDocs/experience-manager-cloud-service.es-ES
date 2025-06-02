@@ -5,16 +5,16 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 1%
+source-wordcount: '906'
+ht-degree: 6%
 
 ---
 
 # Servicio de envío de Forms con Edge Delivery Services Forms
 
-<span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la dirección URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es “adobe” y el nombre del repositorio es “abc”.</span>
 
 El servicio de envío de Forms le permite almacenar datos de los envíos de formularios en cualquier hoja de cálculo, como OneDrive, SharePoint o Hojas de cálculo de Google, lo que le permite acceder y administrar fácilmente los datos del formulario en su plataforma de hoja de cálculo preferida.
 
@@ -37,7 +37,7 @@ A continuación se muestran los requisitos previos para utilizar el servicio de 
 
 ## Configuración del servicio de envío de Forms
 
-Cree un nuevo proyecto de AEM configurado con el bloque de Forms adaptable. Consulte el artículo [Introducción - Tutorial para desarrolladores](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para aprender a crear un nuevo proyecto de AEM. Actualice el archivo `fstab.yaml` en el proyecto. Reemplace la referencia existente por la ruta de acceso a la carpeta que ha compartido con el `forms@adobe.com`
+Cree un nuevo proyecto de AEM configurado con el bloque de Forms adaptable. Consulte el artículo [Introducción - Tutorial para desarrolladores](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para aprender a crear un nuevo proyecto de AEM. Actualice el archivo `fstab.yaml` en el proyecto. Reemplace la referencia existente por la ruta de acceso a la carpeta que ha compartido con el `forms@adobe.com`
 
 Puede [configurar el servicio de envío de Forms manualmente](#configuring-the-forms-submission-service-manually) o [configurar el servicio de envío de Forms mediante la API](#configuring-the-forms-submission-service-using-api).
 
@@ -45,17 +45,21 @@ Puede [configurar el servicio de envío de Forms manualmente](#configuring-the-f
 
 ![Flujo de trabajo para el servicio de envío de formularios](/help/forms/assets/forms-submission-service-workflow.png)
 
-#### 1. Crear un formulario con una definición de formulario
+#### &#x200B;1. Crear un formulario con una definición de formulario
 
-Crear un formulario con Hojas de cálculo de Google o Microsoft Excel. Para aprender a crear un formulario con una definición de formulario en Microsoft Excel o Google Sheets, [haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
+Crear un formulario con Hojas de cálculo de Google o Microsoft Excel. Para aprender a crear un formulario con una definición de formulario en Microsoft Excel o Google Sheets, [haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
 
 La siguiente captura de pantalla muestra la definición del formulario utilizada para crear el formulario:
 
 ![Definición de formulario](/help/forms/assets/form-submission-definition.png)
 
-#### 2. Active la hoja de cálculo para aceptar datos.
+>[!IMPORTANT]
+>
+>**La hoja donde se crea el formulario tiene restricciones sobre cómo se le puede dar nombre. Solamente `helix-default` y `shared-aem` pueden usarse como nombres de hoja.**
 
-Una vez creado y previsualizado el formulario, habilite la hoja de cálculo correspondiente para que comience a recibir datos. agregar una hoja nueva como `incoming`. Puede [habilitar manualmente la hoja de cálculo para aceptar datos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
+#### &#x200B;2. Active la hoja de cálculo para aceptar datos.
+
+Una vez creado y previsualizado el formulario, habilite la hoja de cálculo correspondiente para que comience a recibir datos. agregar una hoja nueva como `incoming`. Puede [habilitar manualmente la hoja de cálculo para aceptar datos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
 
 ![Hoja entrante](/help/forms/assets/form-submission-incoming-sheet.png)
 
@@ -63,7 +67,7 @@ Una vez creado y previsualizado el formulario, habilite la hoja de cálculo corr
 >
 > Si la hoja `incoming` no existe, AEM no enviará ningún dato a este libro.
 
-#### 3. Comparta la hoja de cálculo y genere un vínculo.
+#### &#x200B;3. Comparta la hoja de cálculo y genere un vínculo.
 
 Para compartir la hoja de cálculo en la cuenta de `forms@adobe.com` y generar un vínculo, realice los siguientes pasos:
 
@@ -77,7 +81,7 @@ haz clic en el icono del ojo, selecciona el acceso de **Editar** y haz clic en *
 
    ![Copiar vínculo de la hoja entrante](/help/forms/assets/form-submission-copy-link.png)
 
-#### 4. Vincule la hoja de cálculo en la definición del formulario
+#### &#x200B;4. Vincule la hoja de cálculo en la definición del formulario
 
 Para configurar el servicio de envío de Forms con Google Sheets o Microsoft Excel, realice los siguientes pasos:
 
@@ -153,8 +157,8 @@ Por ejemplo, ejecute el siguiente comando en el terminal o símbolo del sistema 
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —header &quot;Content-Type: application/json&quot; \
     —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-    —data &#39;&lbrace;
-    &quot;data&quot;: &lbrace;
+    —data &#39;{
+    &quot;data&quot;: {
     &quot;startDate&quot;: &quot;2025-01-10&quot;,
     &quot;endDate&quot;: &quot;2025-01-25&quot;,
     &quot;destino&quot;: &quot;Australia&quot;,
@@ -165,7 +169,7 @@ Por ejemplo, ejecute el siguiente comando en el terminal o símbolo del sistema 
     &quot;edad&quot;: &quot;35&quot;,
     &quot;suscribirse&quot;: null,
     &quot;correo electrónico&quot;: &quot;mary@gmail.com&quot;
-    &rbrace;
+    }
     &#39;&#39;&#39;
     
     
@@ -177,7 +181,7 @@ Por ejemplo, ejecute el siguiente comando en el terminal o símbolo del sistema 
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
     —header &quot;Content-Type: application/json&quot; ^
     —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; ^
-    —data &quot;&lbrace;\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;2025-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;amount\&quot;: \&quot;1000000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
+    —data &quot;{\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;2025-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;amount\&quot;: \&quot;1000000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
     
     &quot;
 
