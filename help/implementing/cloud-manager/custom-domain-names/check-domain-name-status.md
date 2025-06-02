@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
+source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 18%
+source-wordcount: '863'
+ht-degree: 17%
 
 ---
 
@@ -64,23 +64,21 @@ A continuación se indican algunos errores comunes de verificación de nombres d
 
 <!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
 
-Al agregar una asignación de dominio en Cloud Manager, puede encontrar el siguiente mensaje de error:
+Cuando intenta agregar una asignación de dominio en Cloud Manager, puede encontrar el siguiente mensaje de error:
 
 *El dominio ya está instalado en una cuenta de Fastly. Elimínelo primero desde allí antes de agregarlo a Cloud Service.*
 
-Este mensaje indica que el dominio está asociado actualmente con una cuenta de Fastly diferente, que generalmente está fuera del control de Adobe. Para continuar, el dominio debe desasociarse de la otra cuenta para poder agregarlo al Cloud Service administrado por Adobe. Este problema suele ocurrir cuando el mismo dominio ya está asignado a un origen diferente en una configuración de Fastly que no es de Adobe.
+<!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
 
-#### Causa de error {#cause}
-
+**Causa del error**
 Fastly fija un dominio a la cuenta que lo registra primero, y otras cuentas deben solicitar permiso para registrar un subdominio. Además, solo Fastly le permite asignar un dominio Apex y subdominios asociados a un servicio y una cuenta de Fastly. Si tiene una cuenta existente de Facebook que vincula los mismos Apex y subdominios utilizados para sus dominios de AEM Cloud Service, verá este error.
 
-#### Resolución de errores {#resolution}
-
+**Resolución de errores**
 El error se corrige de la siguiente manera:
 
 * Elimine el Apex y los subdominios de la cuenta existente antes de instalar el dominio en Cloud Manager.
 
-* Utilice esta opción para vincular el dominio Apex y todos los subdominios a la cuenta de AEM as a Cloud Service de Fastly. Consulte [Uso de dominios en la documentación de Fastly](https://docs.fastly.com/en/guides/working-with-domains) para obtener más información.
+* Utilice esta opción para vincular el dominio Apex y todos los subdominios a la cuenta de AEM as a Cloud Service de Fastly. Consulte [Uso de dominios](https://www.fastly.com/documentation/guides/getting-started/domains/working-with-domains/working-with-domains/) en la documentación de Fastly para obtener más información.
 
 * Si el dominio Apex tiene varios subdominios para sitios de AEM as a Cloud Service y que no sean de AEM que necesitan vincularse a diferentes cuentas de Fastly, intente instalar el dominio en Cloud Manager. Este proceso ayuda a administrar las conexiones de subdominios en diferentes cuentas de Fastly. Si la instalación del dominio falla, cree un ticket de asistencia al cliente con Fastly para que Adobe pueda realizar el seguimiento con Fastly en su nombre.
 
