@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 20%
+source-wordcount: '920'
+ht-degree: 18%
 
 ---
 
@@ -62,7 +62,13 @@ A continuación se indican algunos errores comunes de verificación de nombres d
 
 ### Error de dominio no instalado {#domain-not-installed}
 
-Este error puede producirse durante la validación del dominio del certificado EV/OV incluso después de comprobar que el certificado se ha actualizado correctamente.
+<!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
+
+Al agregar una asignación de dominio en Cloud Manager, puede encontrar el siguiente mensaje de error:
+
+*El dominio ya está instalado en una cuenta de Fastly. Elimínelo primero desde allí antes de agregarlo a Cloud Service.*
+
+Este mensaje indica que el dominio está asociado actualmente con una cuenta de Fastly diferente, que generalmente está fuera del control de Adobe. Para continuar, el dominio debe desasociarse de la otra cuenta para poder agregarlo al Cloud Service administrado por Adobe. Este problema suele ocurrir cuando el mismo dominio ya está asignado a un origen diferente en una configuración de Fastly que no es de Adobe.
 
 #### Causa de error {#cause}
 
