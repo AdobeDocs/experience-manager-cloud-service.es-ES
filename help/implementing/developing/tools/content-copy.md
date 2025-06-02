@@ -4,10 +4,10 @@ description: La herramienta de copia de contenido permite a los usuarios copiar 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
+source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 36%
+source-wordcount: '1321'
+ht-degree: 35%
 
 ---
 
@@ -38,7 +38,7 @@ Al copiar contenido, el entorno de origen es la fuente de información.
 
 Para utilizar la herramienta de copia de contenido, se requieren ciertos permisos tanto en el entorno de origen como en el de destino.
 
-| Función de copia de contenido | AEM Grupo de administradores de | Función Administrador de implementación |
+| Función de copia de contenido | Grupo de administradores de AEM | Función Administrador de implementación |
 |---|---|---|
 | Crear y modificar [conjuntos de contenido](#create-content-set) | No necesario | Requerido |
 | Iniciar o cancelar el [proceso de copia de contenido](#copy-content) | Requerido | Requerido |
@@ -200,3 +200,4 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * La herramienta de copia de contenido no tiene capacidad de control de versiones y no puede detectar automáticamente el contenido modificado o creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
    * Si desea actualizar el entorno de destino solo con cambios de contenido, desde la última operación de copia de contenido, debe crear un conjunto de contenido. A continuación, especifique las rutas en la instancia de origen en las que se han realizado cambios desde la última operación de copia de contenido.
 * La información de la versión no se incluye en una copia de contenido.
+* [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) pueden especificar campos de referencia basados en identificadores únicos universales (UUID). Estos UUID son específicos del repositorio, por lo que la herramienta de copia de contenido recalculará estos UUID en el entorno de destino al copiar fragmentos de contenido.
