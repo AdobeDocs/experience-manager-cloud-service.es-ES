@@ -5,10 +5,10 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 04d1f4f312c9cd256430a2134b308e45dde2c4d7
+source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 93%
+source-wordcount: '503'
+ht-degree: 94%
 
 ---
 
