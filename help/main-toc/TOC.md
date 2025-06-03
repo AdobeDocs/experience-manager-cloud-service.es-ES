@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e44c109a8e64c2162f209bcf85b81336764ee9fe
+source-git-commit: fd134169b97204d9338c99c113045226b073456b
 workflow-type: tm+mt
-source-wordcount: '6184'
-ht-degree: 99%
+source-wordcount: '6192'
+ht-degree: 98%
 
 ---
 
@@ -339,8 +339,10 @@ ht-degree: 99%
             + [Consideraciones importantes](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Uso de la herramienta de asignación de usuarios](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + Herramientas de refactorización de código  {#refactoring-tools}
+      + [Introducción a las herramientas de refactorización](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
       + [Experiencia unificada](/help/journey-migration/unified-experience.md)
       + [Modernizador de repositorio](/help/journey-migration/refactoring-tools/repo-modernizer.md)
+      + [Modernizador de repositorios (CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
       + [Conversor de índices](/help/journey-migration/refactoring-tools/index-converter.md)
       + [Migración del flujo de trabajo de recursos](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [Dispatcher Converter de AEM](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
