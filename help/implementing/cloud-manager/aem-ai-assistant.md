@@ -6,25 +6,26 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
+source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '1122'
 ht-degree: 1%
 
 ---
 
 # Acerca del asistente de IA en Adobe Experience Manager {#aem-home}
 
-AEM El asistente de inteligencia artificial en el servicio de información (Adobe Experience Manager, por sus siglas en inglés) ofrece una interfaz conversacional diseñada para optimizar la búsqueda de respuestas a sus consultas relacionadas con Adobe Experience Manager. Le ayuda a acceder al conocimiento del producto, solucionar problemas y explorar la información disponible en Experience League. Durante el programa limitado de Beta, el asistente de IA es compatible con Adobe Experience Manager as a Cloud Service, incluidos Sites, Assets, Forms y Cloud Manager.
+El asistente de IA de AEM (Adobe Experience Manager) ofrece una interfaz conversacional diseñada para agilizar la búsqueda de respuestas a sus consultas relacionadas con Adobe Experience Manager. Le ayuda a acceder a los conocimientos del producto, solucionar problemas y explorar la información disponible en Experience League. Durante el programa limitado de Beta, el asistente de IA es compatible con Adobe Experience Manager as a Cloud Service, incluidos Sites, Assets, Forms y Cloud Manager.
 
 >[!IMPORTANT]
->Asegúrese de haber revisado y enviado el acuerdo de usuario para que el Adobe pueda habilitar la función Asistente de IA y poder probarlo y participar en el programa de Beta.
+>Asegúrese de haber revisado y enviado el acuerdo de usuario para que Adobe pueda habilitar la función Asistente de IA y así poder probarlo y participar en el programa de Beta.
 >
 >Si tiene alguna pregunta, envíe un correo electrónico a [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
 
 ## Privacidad, seguridad y gobernanza
 
-AEM El asistente de IA en el servicio de inteligencia artificial (AI) en el servicio de información está diseñado con un fuerte énfasis en la privacidad, la seguridad y la gobernanza.
+El asistente de IA de AEM está diseñado con un fuerte énfasis en la privacidad, la seguridad y la gobernanza.
 
 Este artículo describe las funciones centradas en la confianza que puede esperar del asistente de IA:
 
@@ -45,6 +46,46 @@ El conocimiento del producto engloba conceptos y temas derivados de la documenta
 | Solución de problemas | <ul><li>¿Por qué no puedo acceder al editor universal?</li><li>¿Por qué falla mi canalización?</li></ul> |
 
 El ámbito actual del asistente de IA se centra en abordar las preguntas de conocimiento del producto para Adobe Experience Manager as a Cloud Service. Este ámbito incluye una compatibilidad completa con áreas clave, como Sites, Assets, Forms y Cloud Manager.
+
+## Asistente de IA para AEM Forms (Forms Experience Builder) {#ai-forms-builder}
+
+Además del Asistente general de IA para obtener conocimientos del producto, AEM ofrece un **Asistente de IA especializado para AEM Forms (Forms Experience Builder)**. Este asistente mejorado puede ayudarle a crear y configurar formularios de forma activa mediante mensajes en lenguaje natural y responder preguntas específicas a los formularios.
+
+### Capacidades clave
+
+El asistente de IA para AEM Forms proporciona lo siguiente:
+
+* **Creación de formularios**: cree nuevos formularios desde cero con descripciones en lenguaje natural
+* **Importación de diseños**: Convierta diseños existentes (PDF, Figma, imágenes) en formularios AEM funcionales
+* **Configuración de formulario**: agregue campos, paneles, reglas de validación y lógica condicional
+* **Administración de diseños**: organice la estructura del formulario y optimícela para diferentes dispositivos
+* **Configuración de integración**: configure los envíos de formularios y la administración de datos
+* **Conocimiento del producto**: responda preguntas sobre las características de AEM Forms y las prácticas recomendadas
+
+### Dónde acceder
+
+El asistente de IA para AEM Forms está disponible en:
+
+* **Editor universal**: para formularios Edge Delivery Services con capacidades de edición visual
+* **Editor de Forms adaptable**: Para obtener información detallada sobre la configuración del formulario y las características avanzadas
+* **IU de administración de Forms**: para tareas de administración y creación de formularios de alto nivel
+
+### Introducción
+
+>[!NOTE]
+>
+> El asistente de IA para AEM Forms (Forms Experience Builder) está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acceso.
+
+Para obtener más información sobre el uso del Asistente de IA para AEM Forms, incluidos ejemplos detallados y prácticas recomendadas, consulte la documentación del Asistente de IA para AEM Forms.
+
+### Casos de uso de ejemplo
+
+* **&quot;Crear un formulario de comentarios de cliente con campos de nombre, correo electrónico, clasificación y comentarios&quot;**
+* **&quot;Convertir este formulario de aplicación de PDF cargado en un formulario adaptable digital&quot;**
+* **&quot;Agregar lógica condicional para mostrar la información del cónyuge solamente cuando el estado civil es &#39;Casado&#39;&quot;**
+* **&quot;Configurar este formulario para enviar datos a nuestro sistema CRM&quot;**
+
+Este asistente de IA de Forms especializado representa la siguiente evolución en la creación de formularios, combinando la potencia de la IA con las sólidas capacidades de formularios de AEM para optimizar el flujo de trabajo de creación de formularios.
 
 ## Cómo crear preguntas efectivas {#ai-craft-questions}
 
@@ -115,6 +156,3 @@ A continuación encontrará respuestas a algunas preguntas comunes sobre el asis
   El asistente de IA está diseñado para responder a consultas relacionadas con el conocimiento del producto de Adobe.
 * **¿El Asistente de IA usa información personal para los datos de entrenamiento?**\
   No. AI Assistant no utiliza información personal con fines formativos. Evite compartir información personal sobre usted u otros, incluidos nombres o detalles de contacto, con el asistente de IA.
-
-
-
