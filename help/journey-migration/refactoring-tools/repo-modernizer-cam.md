@@ -40,7 +40,7 @@ El Modernizador de repositorio ahora también admite los siguientes tipos de pro
 
 ## Uso del Modernizador de repositorio {#using-repo-modernizer}
 
->[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412958/?quality=12&learn=on&captions=spa)
 
 - El servicio de refactorización ahora invoca automáticamente el Modernizador de repositorio en la pestaña Trabajo de refactorización. Los clientes solo tienen que cargar su proyecto y almacenar en déclencheur el trabajo de refactorización; no se requiere ninguna configuración adicional.
 
