@@ -5,10 +5,10 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
-workflow-type: ht
-source-wordcount: '578'
-ht-degree: 100%
+source-git-commit: 04d1f4f312c9cd256430a2134b308e45dde2c4d7
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 93%
 
 ---
 
@@ -47,12 +47,10 @@ Adobe Experience Manager (AEM) as a Cloud Service ofrece varias API para la entr
    * Estas API están pensadas para la administración de contenido estructurado.
    * Los respectivos operadores de GET no están optimizados para la entrega de contenido.
    * Esta API se basa en REST.
-* Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets
-   * La API original para la salida JSON para la entrega de contenido estructurado en AEM.
-      * Aunque es sólida y está probada, esta API no ofrece salida JSON *totalmente hidratada*. Las referencias solo se muestran como rutas, lo que requiere solicitudes de API secundarias para recuperar contenido adicional.
-   * La API HTTP de Assets también se puede utilizar para administrar los fragmentos de contenido y los modelos de fragmentos de contenido (CRUD).
-   * Esta API se basa en REST.
-   * La compatibilidad con fragmentos de contenido en la API HTTP de Assets quedará obsoleta en el futuro, ya que la API REST JSON de Edge Delivery Services la sustituye. La escala temporal aún no se ha decidido.
+
+>[!NOTE]
+>
+>[La compatibilidad con fragmentos de contenido en la API HTTP de Assets](/help/assets/content-fragments/assets-api-content-fragments.md) ya está [obsoleta](/help/release-notes/deprecated-removed-features.md). Ha sido reemplazado por [Entrega de fragmentos de contenido con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) junto con [API de administración de fragmentos de contenido y modelos de fragmentos de contenido](/help/headless/content-fragment-openapis.md).
 
 ## Siguientes pasos {#whats-next}
 

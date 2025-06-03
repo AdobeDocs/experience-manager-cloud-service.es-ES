@@ -4,10 +4,10 @@ description: Notas de versión específicas de las funciones en desuso y elimina
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 55b7029ccdd0da08566066c02c8f7b8eff1e032f
+source-git-commit: f595cb1030f49e3213b93cac897de9598060131d
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 88%
+source-wordcount: '2912'
+ht-degree: 87%
 
 ---
 
@@ -35,6 +35,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 
 | Capacidades | Función en desuso | Reemplazo |
 | ------------ | ------------------ | ----------- |
+| Sites | [Compatibilidad con fragmentos de contenido en la API HTTP de Assets](/help/assets/content-fragments/assets-api-content-fragments.md) | [Entrega de fragmentos de contenido con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>junto con<br> [Administración de modelos de fragmentos de contenido y fragmentos de contenido OpenAPI](/help/headless/content-fragment-openapis.md) |
 | Sites | [Características de PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Ninguno |
 | Sites | [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) | Los editores preferidos para administrar el contenido sin encabezado en AEM son: <br> el [Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para la edición visual.<br>- [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición basada en formularios. |
 | [!DNL Sites] | [API de uso de JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API de uso de Java](https://experienceleague.adobe.com/es/docs/experience-manager-htl/content/java-use-api) |
@@ -422,7 +423,7 @@ Estas reglas se validan durante el proceso de compilación de Cloud Manager. Con
 
 Puede encontrar información adicional sobre la configuración de OSGI en [esta ubicación](/help/implementing/deploying/configuring-osgi.md).
 
-+++Configuraciones de OSGi que no se pueden modificar.
+Configuraciones de +++OSGi que no se pueden modificar.
 
 * **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
@@ -431,7 +432,7 @@ Puede encontrar información adicional sobre la configuración de OSGI en [esta
 * **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Fecha de anuncio: 25/8/2021, fecha de aplicación: 26/11/2021)
 +++
 
-+++Las configuraciones de OSGi están sujetas a reglas de validación de compilación.
+Las configuraciones de +++OSGi están sujetas a reglas de validación de compilación.
 
 * **`org.apache.felix.eventadmin.impl.EventAdmin`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * `org.apache.felix.eventadmin.ThreadPoolSize`

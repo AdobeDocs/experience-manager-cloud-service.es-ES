@@ -4,10 +4,10 @@ description: Obtenga información acerca de las API disponibles para la entrega 
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: e427bd34867974c663e67a2124f257cd12e946ae
+source-git-commit: 243adc6f6428cea23c04ca788bd8ad0bda7e4501
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '516'
+ht-degree: 28%
 
 ---
 
@@ -27,12 +27,10 @@ Adobe Experience Manager (AEM) as a Cloud Service ofrece varias API para la entr
    * Estas API están pensadas para la administración de contenido estructurado.
    * Los respectivos operadores de GET no están optimizados para la entrega de contenido.
    * Esta API se basa en REST.
-* [Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * La API original para la salida JSON para la entrega de contenido estructurado en AEM.
-      * Aunque es sólida y está probada, esta API no ofrece salida JSON *totalmente hidratada*. Las referencias solo se muestran como rutas, lo que requiere solicitudes de API secundarias para recuperar contenido adicional.
-   * La API HTTP de Assets también se puede utilizar para administrar los fragmentos de contenido y los modelos de fragmentos de contenido (CRUD).
-   * Esta API se basa en REST.
-   * La compatibilidad con fragmentos de contenido en la API HTTP de Assets quedará obsoleta en el futuro, ya que la API REST JSON de Edge Delivery Services la sustituye. La escala temporal aún no se ha decidido.
+
+>[!NOTE]
+>
+>[La compatibilidad con fragmentos de contenido en la API HTTP de Assets](/help/assets/content-fragments/assets-api-content-fragments.md) ya está [obsoleta](/help/release-notes/deprecated-removed-features.md). Ha sido reemplazado por [Entrega de fragmentos de contenido con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) junto con [API de administración de fragmentos de contenido y modelos de fragmentos de contenido](/help/headless/content-fragment-openapis.md).
 
 ## REST frente a GraphQL {#rest-vs-graphql}
 
