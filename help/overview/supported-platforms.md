@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 99%
 
 ---
 
@@ -50,10 +50,9 @@ Todos los exploradores se prueban con el conjunto predeterminado de complementos
 | Mozilla Firefox (Evergreen) | A: Compatible | A: Compatible | Z: No compatible |
 | Última versión de Mozilla Firefox ESR [1] | A: Compatible | A: Compatible | Z: No compatible |
 | Safari en macOS (Evergreen) | A: Compatible | A: Compatible | Z: No compatible |
-| Safari en iOS (Evergreen) [2] | Z: No compatible | A: Compatible | Z: No compatible |
+| Safari en iPadOS (evergreen) | Z: No compatible | A: Compatible | Z: No compatible |
 
 1. Lanzamiento de soporte ampliado de Firefox ([más información en mozilla.org](https://www.mozilla.org/es-ES/firefox/enterprise/))
-1. Compatibilidad solo con Apple iPad
 
 >[!NOTE]
 >
