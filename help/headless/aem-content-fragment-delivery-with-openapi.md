@@ -4,10 +4,10 @@ description: Obtenga información acerca de la entrega de fragmentos de contenid
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 7f7ed3adcbd01f688f48f3ba4a0c25293b8b1551
+source-git-commit: 163964a7183996226b14f3c803afa4c5bd58f848
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 4%
+source-wordcount: '475'
+ht-degree: 3%
 
 ---
 
@@ -34,6 +34,14 @@ Para obtener documentación completa, consulte [Entrega de fragmentos de conteni
 >
 >Consulte [API de AEM para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
 
+>[!IMPORTANT]
+>
+>Para habilitar la entrega de fragmentos de contenido con OpenAPI en AEM as a Cloud Service, asegúrese de que aún no esté habilitada y, a continuación, envíe un ticket de asistencia de Adobe con el título **Habilitar la entrega de fragmentos de contenido con OpenAPI** y especificando:
+>
+>* los ID de programa y entorno de Cloud Service
+>* Detalles del caso de uso que desea resolver con la API de envío de fragmentos de contenido
+>* detalles de todos los contactos a los que Adobe debe responder, y mantenerse informado sobre la solicitud, y el proyecto (si es necesario)
+
 ## Almacenamiento en caché {#caching}
 
 AEM se integra fácilmente con la CDN de AEM. Esto significa que las respuestas JSON servidas en el nivel de publicación se almacenan en caché en el nivel de Fastly.
@@ -49,4 +57,28 @@ Las respuestas se almacenan en caché, en función de encabezados de almacenamie
 * El contenido antiguo se puede proporcionar, por error, durante un máximo de 1 día
    * `stale-on-error`=`86400`
 
-AEM también viene con la invalidación de caché de CDN activa. Esto significa que cada vez que se actualiza o publica contenido, las respuestas de la API abierta de JSON correspondientes se invalidan automáticamente, a través de una solicitud de depuración suave a Fastly. Esto le permite ver los cambios reflejados en la salida JSON antes de que se alcance la página real de la caché de la CDN (`s-maxage`).
+La entrega de fragmentos de contenido con OpenAPI admite la invalidación activa de la caché de la CDN. Esto significa que cada vez que se actualiza o publica contenido, las respuestas de la API abierta de JSON correspondientes se invalidan automáticamente, a través de una solicitud de depuración suave a Fastly. Esto le permite ver los cambios reflejados en la salida JSON antes de que se alcance la página real de la caché de la CDN (`s-maxage`).
+
+## Disponibilidad {#availability}
+
+La Entrega de fragmentos de contenido con OpenAPI está disponible en los niveles de Previsualización y Publicación. La API abierta ofrece fragmentos de contenido en formato JSON, tanto para la vista previa como para la entrega en directo.
+
+Para obtener una vista previa, la Entrega de fragmentos de contenido con OpenAPI puede:
+
+* publicar para previsualización
+* habilitar el acceso a la vista previa con lista de permitidos IP
+* obtener la URL de vista previa
+
+## CORS {#cors}
+
+[orígenes permitidos de CORS](/help/headless/deployment/cross-origin-resource-sharing.md) definen los orígenes que pueden llamar a la API.
+
+Esta API no tiene en cuenta los orígenes permitidos de CORS definidos en el lado de la configuración de Dispatcher, específicamente para GraphQL.
+
+<!-- 
+## API Rate Limits {#api-rate-limits}
+-->
+
+<!-- 
+## Limitations {#limitations}
+-->

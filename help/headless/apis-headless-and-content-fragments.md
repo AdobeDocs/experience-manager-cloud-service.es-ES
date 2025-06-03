@@ -4,10 +4,10 @@ description: Obtenga información acerca de las API disponibles para la entrega 
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e427bd34867974c663e67a2124f257cd12e946ae
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 41%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 41%
 
 Adobe Experience Manager (AEM) as a Cloud Service ofrece varias API para la entrega de contenido estructurado desde fragmentos de contenido hasta su administración. Consulte las páginas individuales para obtener más información sobre las API específicas.
 
-* [Entrega de fragmentos de contenido de AEM con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
+* [Envío de fragmentos de contenido de AEM con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    * Esta API crea respuestas JSON para ofrecer contenido estructurado a partir de fragmentos de contenido en AEM.
    * Utiliza una ruta a un fragmento de contenido como punto final.
    * Esta API se basa en REST.
@@ -33,21 +33,6 @@ Adobe Experience Manager (AEM) as a Cloud Service ofrece varias API para la entr
    * La API HTTP de Assets también se puede utilizar para administrar los fragmentos de contenido y los modelos de fragmentos de contenido (CRUD).
    * Esta API se basa en REST.
    * La compatibilidad con fragmentos de contenido en la API HTTP de Assets quedará obsoleta en el futuro, ya que la API REST JSON de Edge Delivery Services la sustituye. La escala temporal aún no se ha decidido.
-
-<!--
-## JSON vs HTML {#json-vs-HTML}
-
-The content delivery format used is driven by frontend implementation. Unstructured content/HTML for full-stack implementations, structured content/JSON for headless implementations, or a combination of both in hybrid implementations. 
-
-Key considerations include:
-
-* Definition
-  * JSON (JavaScript Object Notation) - used to represent, access and process structured data. 
-  * HTML (HyperText Markup Language) - a markup language of tags and elements in a hierarchical structure.
-* Primary Purpose
-  * JSON is often used for transferring structure content between the server and client app.
-  * HTML is the standard markup language for creating and rendering web pages in a browser.
--->
 
 ## REST frente a GraphQL {#rest-vs-graphql}
 
