@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
+source-git-commit: 1df836c55e7276cf05a84e5512220b51de7131a8
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 28%
+source-wordcount: '1547'
+ht-degree: 29%
 
 ---
 
@@ -103,9 +103,7 @@ Es posible que las siguientes funciones no funcionen correctamente cuando se imp
 
 #### Requisitos de tiempo de ejecución {#runtime-requirements}
 
-El tiempo de ejecución de Java 21 se utiliza para compilaciones con Java 21 y Java 17, y se aplicará gradualmente a las compilaciones de Java 11 también (consulte la Nota a continuación). Un entorno debe estar en la versión de AEM 17098 o más reciente para recibir la actualización de Java 21. Para garantizar la compatibilidad, se requieren los siguientes ajustes.
-
-Las actualizaciones de biblioteca se pueden aplicar en cualquier momento, ya que siguen siendo compatibles con versiones de Java anteriores.
+El tiempo de ejecución de Java 21 se ha aplicado a todos los entornos aptos, que son entornos de la versión 17098 o posterior de AEM que cumplen los criterios siguientes. Si un entorno no cumple los criterios, es importante realizar ajustes para garantizar el rendimiento, la disponibilidad y la seguridad.
 
 * **Versión mínima de ASM:**
 Actualice el uso del paquete Java`org.objectweb.asm`, a menudo agrupado en artefactos de `org.ow2.asm.*`, a la versión 9.5 o superior para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes.
@@ -127,8 +125,7 @@ Al ejecutar AEM localmente con Java 21, los scripts de inicio (`crx-quickstart/b
 
 >[!IMPORTANT]
 >
->Cuando `.cloudmanager/java-version` se establece en `21` o `17`, se implementa el tiempo de ejecución de Java 21. El tiempo de ejecución de Java 21 está programado para su despliegue gradual en todos los entornos (no solo en aquellos cuyo código se haya creado con Java 11) a partir del martes, 4 de febrero de 2025. Los despliegues comienzan con entornos limitados y de desarrollo, seguidos de todos los entornos de producción en abril de 2025. Los clientes que deseen adoptar el tiempo de ejecución de Java 21 *antes* pueden comunicarse con Adobe en [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
-
+>Si un entorno aún no se ha actualizado automáticamente al tiempo de ejecución de Java 21, puede almacenarlo en déclencheur compilándolo con Java 17 o 21. Esto se hace estableciendo `.cloudmanager/java-version` en `21` o `17`. Póngase en contacto con Adobe en [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) si tiene alguna pregunta.
 
 #### Requisitos de tiempo de compilación {#build-time-reqs}
 
