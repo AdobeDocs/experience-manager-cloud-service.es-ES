@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Anteriormente disponible solo como utilidades CLI, las herramientas de refactorización ahora proporcionan una interfaz unificada con funciones como inspección automatizada, generación de configuración y ejecución de trabajos, lo que reduce la sobrecarga manual y mejora la visibilidad.
 
----
+&#x200B;---
 
 ## Flujo de trabajo de inspección {#inspection-workflow}
 
@@ -34,7 +34,7 @@ El **flujo de trabajo de inspección** simplifica el proceso de preparación par
 * **Generación de configuración**: las herramientas inspeccionan el código fuente cargado y generan las configuraciones necesarias.
 * **Envío de carga útil**: estas configuraciones se pasan directamente a las herramientas seleccionadas para su ejecución.
 
----
+&#x200B;---
 
 ## Herramientas de refactorización disponibles
 
@@ -46,7 +46,7 @@ El **Modernizador de repositorio** reestructura el diseño y el contenido del re
 
 El **Transformador de código** usa el reconocimiento inteligente de patrones y el análisis controlado por IA para detectar y actualizar los segmentos de código que son incompatibles con AEMaaCS. Esta herramienta simplifica el esfuerzo de migración y reduce los cambios manuales en el código.
 
----
+&#x200B;---
 
 ## Fases de flujo de trabajo de refactorización {#phases-in-refactoring-tools}
 
@@ -60,7 +60,7 @@ Las herramientas de refactorización siguen un proceso estructurado en dos fases
 >[!NOTE]
 >Durante el proceso de inspección, no se permite cargar otro proyecto.
 
----
+&#x200B;---
 
 ### Fase 2: Déclencheur de un trabajo de refactorización
 

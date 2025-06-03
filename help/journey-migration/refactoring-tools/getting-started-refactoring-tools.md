@@ -35,7 +35,7 @@ Utilice la herramienta de refactorización para migrar el código para comprobar
 
    ![imagen](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
----
+&#x200B;---
 
 ## Cargando código Source {#uploading}
 
@@ -72,7 +72,7 @@ Cuando los clientes acceden por primera vez a **Herramientas de refactorización
 >[!NOTE]
 >Los trabajos de refactorización solo se pueden ejecutar si la carga del código fuente se realiza correctamente.
 
----
+&#x200B;---
 
 ## Trabajos de refactorización {#refactoring-jobs}
 
@@ -91,7 +91,7 @@ Al hacer clic en la ficha **Trabajo de refactorización**, verá una lista de lo
 >[!NOTE]
 >Puede almacenar en déclencheur trabajos de refactorización individuales o ejecutar todas las herramientas disponibles de una sola vez mediante la opción **Todas las herramientas juntas**.
 
----
+&#x200B;---
 
 ### &#x200B;2. Estado del puesto
 
