@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 1%
@@ -49,7 +49,7 @@ El ámbito actual del asistente de IA se centra en abordar las preguntas de cono
 
 ## Asistente de IA para AEM Forms (Forms Experience Builder) {#ai-forms-builder}
 
-Además del Asistente general de IA para obtener conocimientos del producto, AEM ofrece un **Asistente de IA especializado para AEM Forms (Forms Experience Builder)**. Este asistente mejorado puede ayudarle a crear y configurar formularios de forma activa mediante mensajes en lenguaje natural y responder preguntas específicas a los formularios.
+Además del Asistente general de IA para obtener conocimientos del producto, AEM ofrece un **[Asistente de IA especializado para AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**. Este asistente mejorado puede ayudarle a crear y configurar formularios de forma activa mediante mensajes en lenguaje natural y responder preguntas específicas a los formularios.
 
 ### Capacidades clave
 
@@ -76,7 +76,7 @@ El asistente de IA para AEM Forms está disponible en:
 >
 > El asistente de IA para AEM Forms (Forms Experience Builder) está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acceso.
 
-Para obtener más información sobre el uso del Asistente de IA para AEM Forms, incluidos ejemplos detallados y prácticas recomendadas, consulte la documentación del Asistente de IA para AEM Forms.
+Para obtener más información sobre el uso del Asistente de IA para AEM Forms, incluidos ejemplos detallados y prácticas recomendadas, consulte la [documentación del Asistente de IA para AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md).
 
 ### Casos de uso de ejemplo
 
