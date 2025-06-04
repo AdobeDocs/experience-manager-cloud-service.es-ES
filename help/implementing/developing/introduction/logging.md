@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo utilizar el registro para AEM as a
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
+source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2556'
 ht-degree: 10%
 
 ---
@@ -158,8 +158,8 @@ Configure el registro java para paquetes Java personalizados mediante las config
 El cambio de otras propiedades de configuración de LogManager OSGi puede provocar problemas de disponibilidad en AEM as a Cloud Service.
 
 Como se indica en una sección anterior, para garantizar una monitorización eficaz de los entornos de los clientes:
-* Los registros de Java para el código de producto de AEM deben conservar su nivel de registro predeterminado &quot;INFO&quot; y no deben anularse con las configuraciones personalizadas.
-* Es aceptable establecer los niveles de registro en DEPURACIÓN para el código de producto, pero utilícelo con moderación para evitar la degradación del rendimiento y restaurar a INFO cuando ya no sea necesario.
+* El nivel de registro de la configuración de registro predeterminada de AEM (Configuración de registro de Apache Sling) no debe modificarse a partir de su valor predeterminado &quot;INFO&quot;.
+* Es aceptable establecer los niveles de registro en DEPURACIÓN para paquetes individuales de código de producto (utilizando instancias de la fábrica de configuración OSGi &quot;Configuración del registrador de Apache Sling&quot;), pero utilícela con moderación para evitar la degradación del rendimiento y restaurar a INFO cuando ya no sea necesaria.
 * Es aceptable ajustar los niveles de registro para el código desarrollado por el cliente.
 * Todos los registros, tanto para el código de producto de AEM como para el código desarrollado por el cliente, deben mantener el formato de registro predeterminado.
 * La salida de registro debe permanecer dirigida al archivo predeterminado &quot;logs/error.log&quot;.
