@@ -1,28 +1,29 @@
 ---
-title: Introducción a las herramientas de refactorización
+title: Información general sobre herramientas de refactorización
 description: Obtenga información sobre cómo empezar a utilizar las herramientas de refactorización de AEM
-exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: fa65b489d54d5333811145a1875a8f6fc89317bc
+source-git-commit: a77dfef8dce9f4ed549135087f7b63f6d46a4ea1
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 2%
+source-wordcount: '338'
+ht-degree: 1%
 
 ---
 
 
+<!-- Alexandru: temporarily commeting this out, since it breaks validation
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_overview"
->title="Información general"
->abstract="Herramientas de refactorización es una solución desarrollada por Adobe para ayudar a refactorizar los proyectos de AEM existentes y garantizar su compatibilidad con AEM as a Cloud Service. Las herramientas se ejecutan mediante Cloud Acceleration Manager (CAM) y automatizan tareas de modernización clave."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=es" text="Directrices y prácticas recomendadas"
+>title="Overview"
+>abstract="Refactoring Tools is a solution developed by Adobe to help refactor existing AEM projects for compatibility with AEM as a Cloud Service. The tools are executed via Cloud Acceleration Manager (CAM) and automate key modernization tasks."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Guidelines and Best Practices"
 
-# Introducción a las herramientas de refactorización {#getting-started-refactoring-tools}
+-->
+
+# Información general sobre herramientas de refactorización {#refactoring-tools-overview}
 
 **Las herramientas de refactorización** agilizan el proceso de actualización de los proyectos existentes de AEM para que sean compatibles con **AEM as a Cloud Service (AEMaaCS)**. Estas herramientas automatizan tareas comunes de refactorización y modernización, y se integran con **Cloud Acceleration Manager (CAM)** para ofrecer una experiencia perfecta.
 
 Anteriormente disponible solo como utilidades CLI, las herramientas de refactorización ahora proporcionan una interfaz unificada con funciones como inspección automatizada, generación de configuración y ejecución de trabajos, lo que reduce la sobrecarga manual y mejora la visibilidad.
-
-&#x200B;---
 
 ## Flujo de trabajo de inspección {#inspection-workflow}
 
@@ -34,8 +35,6 @@ El **flujo de trabajo de inspección** simplifica el proceso de preparación par
 * **Generación de configuración**: las herramientas inspeccionan el código fuente cargado y generan las configuraciones necesarias.
 * **Envío de carga útil**: estas configuraciones se pasan directamente a las herramientas seleccionadas para su ejecución.
 
-&#x200B;---
-
 ## Herramientas de refactorización disponibles
 
 ### Modernizador de repositorio {#repo-modernizer}
@@ -45,8 +44,6 @@ El **Modernizador de repositorio** reestructura el diseño y el contenido del re
 ### Transformador de código {#code-transformer}
 
 El **Transformador de código** usa el reconocimiento inteligente de patrones y el análisis controlado por IA para detectar y actualizar los segmentos de código que son incompatibles con AEMaaCS. Esta herramienta simplifica el esfuerzo de migración y reduce los cambios manuales en el código.
-
-&#x200B;---
 
 ## Fases de flujo de trabajo de refactorización {#phases-in-refactoring-tools}
 
@@ -59,8 +56,6 @@ Las herramientas de refactorización siguen un proceso estructurado en dos fases
 
 >[!NOTE]
 >Durante el proceso de inspección, no se permite cargar otro proyecto.
-
-&#x200B;---
 
 ### Fase 2: Déclencheur de un trabajo de refactorización
 
