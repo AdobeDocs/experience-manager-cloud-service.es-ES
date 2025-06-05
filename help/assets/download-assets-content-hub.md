@@ -1,12 +1,12 @@
 ---
 title: Descarga de recursos desde Content Hub
-description: Obtenga información sobre cómo descargar recursos desde el portal de Content Hub
+description: Obtenga información sobre cómo descargar uno o varios recursos y sus representaciones desde el portal de Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
+source-git-commit: 809c0e780959340964933b13c8a347157f1dc17e
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 10%
+source-wordcount: '888'
+ht-degree: 8%
 
 ---
 
@@ -54,61 +54,86 @@ ht-degree: 10%
 
 >[!AVAILABILITY]
 >
->La guía del centro de contenido ya está disponible en formato de PDF. Descargue la guía completa y utilice el Asistente de IA de Adobe Acrobat para responder sus consultas.
+> La guía [!DNL Content Hub] ya está disponible en formato PDF. Descargue la guía completa y utilice el Asistente de IA de Adobe Acrobat para responder sus consultas.
 >
 >[!BADGE Guía del centro de contenido en PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Content Hub le permite descargar y compartir sus recursos. La interfaz de usuario de Content Hub solo muestra los recursos aprobados. Estos recursos pueden incluir imágenes, vídeos o cualquier otro contenido digital. Content Hub mejora la accesibilidad y la adaptabilidad para una distribución eficaz de los recursos.
+[!DNL Content Hub] le permite descargar y compartir sus recursos. La interfaz de usuario [!DNL Content Hub] solo muestra los recursos aprobados. Estos recursos pueden incluir imágenes, vídeos o cualquier otro contenido digital. [!DNL Content Hub] mejora la accesibilidad y la adaptabilidad para una distribución eficaz de los recursos.
 
-Puede descargar uno o varios recursos y sus representaciones disponibles mediante Content Hub.
+Puede descargar uno o varios recursos y sus representaciones disponibles mediante [!DNL Content Hub].
 
-Ver [tipos de representaciones disponibles en Content Hub](#types-of-renditions).
+Ver los [tipos de representaciones disponibles en Content Hub](#types-of-renditions).
 
-## Descargar un recurso y sus representaciones {#download-asset-renditions}
+## Descargar uno o varios recursos y sus representaciones {#download-asset-renditions}
 
-Para descargar un recurso y sus representaciones, ejecute los siguientes pasos:
+Para descargar uno o varios recursos y sus representaciones, ejecute los siguientes pasos:
 
-1. Haga clic en el recurso para ver sus propiedades.
+1. Para descargar un recurso, seleccione ![descargar](/help/assets/assets/download-icon.svg) disponible en la tarjeta de recursos para obtener una vista previa del recurso, seleccione las representaciones disponibles y haga clic en la opción **[!UICONTROL Descargar]** del cuadro de diálogo para descargar las representaciones seleccionadas como archivo ZIP. Si el cuadro de diálogo muestra una licencia de recurso (para un recurso con licencia), acepte los términos y condiciones de licencia y haga clic en **[!UICONTROL Descargar]**.
+   ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 
-1. Haga clic en ![descargar](/help/assets/assets/download-icon.svg) para iniciar el proceso de descarga. El panel Descargar enumera todas las representaciones de recursos disponibles.
+   También puede hacer clic en la miniatura del recurso y seleccionar ![descargar](/help/assets/assets/download-icon.svg) para seleccionar y ver las representaciones disponibles en el cuadro de diálogo antes de descargarlas.
+
+1. Para descargar varios recursos, selecciónelos, haga clic en ![descargar](/help/assets/assets/download-icon.svg) **[!UICONTROL Descargar]** y revise la lista de recursos seleccionados en el cuadro de diálogo **[!UICONTROL Descargar recursos]**. Haga clic en ![anular la selección](/help/assets/assets/Close.svg) junto a un recurso para anular su selección en la lista. Seleccione una o más representaciones y haga clic en **[!UICONTROL Descargar]** para descargarlas como un solo archivo ZIP. Al seleccionar **[!UICONTROL Recorte inteligente]** y **[!UICONTROL Representaciones estáticas]**, se descargarán todas las representaciones estáticas y de recorte inteligente disponibles de cada recurso seleccionado.
+   ![descargar varios recursos](/help/assets/assets/download-multiple-assets-CH.png)
+Puede seguir usando [!DNL Content Hub] mientras la descarga está en curso. Content Hub no interrumpe el flujo de trabajo durante el proceso de descarga.
+   ![descargar varios recursos](/help/assets/assets/download-assets-notification-ch.png)
+Si el cuadro de diálogo **[!UICONTROL Descargar recursos]** muestra los recursos y las licencias, seleccione cada licencia en el panel izquierdo (sección [!UICONTROL Documentos de T&amp;C]) para obtener una vista previa de la licencia y mostrar los recursos seleccionados asociados con la licencia en el panel central del cuadro de diálogo. Después de revisar cada licencia, selecciona las representaciones, haz clic en **[!UICONTROL He leído y aceptado los términos y condiciones mencionados arriba]** y selecciona **[!UICONTROL Descargar]** para descargarlos.
+   ![descargar varios recursos](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
    >[!NOTE]
    >
-   >* Las representaciones se muestran únicamente si su visibilidad está habilitada mediante la interfaz de usuario de [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   >* Puede descargar todas las [representaciones de recortes estáticas, dinámicas e inteligentes](#types-of-renditions) al descargar un recurso.
+   >* Las representaciones solo se muestran si su visibilidad está habilitada mediante la interfaz de usuario [!UICONTROL [Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* Los usuarios con acceso a [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) pueden ver y descargar representaciones de recortes dinámicas e inteligentes.
+   >* La vista previa de la licencia solo se mostrará si el recurso se ha aprobado mediante el entorno de creación [!DNL Assets as a Cloud Service]. Para obtener más información, consulte [Administración de recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-1. Seleccione una o más representaciones y haga clic en **[!UICONTROL Descargar]**.
+<!--
 
-   ![Descargar representaciones de recursos individuales](/help/assets/assets/download-single-asset-renditions.png)
+## Download an asset and its renditions {#download-asset-renditions} 
+
+To download an asset and its renditions, execute the following steps: 
+
+1. Click the asset to view its properties.
+
+1. Click ![download](/help/assets/assets/download-icon.svg) to see the list of available asset renditions in the **[!UICONTROL Download]** panel.
+
+   >[!NOTE]
+   >
+   >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+   >* You can download all [static, dynamic, and smart crop renditions](#types-of-renditions) while downloading an asset.
+
+1. Select one or more renditions and click **[!UICONTROL Download]** to download the selected renditions as a zip file. 
+While downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** before clicking **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+
+   ![Download single asset renditions](/help/assets/assets/download-single-asset-renditions.png)
 
 
-Si está descargando un recurso con licencia, seleccione **[!UICONTROL He leído y aceptado los términos y condiciones mencionados anteriormente]** y luego haga clic en **[!UICONTROL Descargar]**. También puede hacer clic en **[!UICONTROL términos y condiciones]** para ver la licencia del recurso. La vista previa de la licencia solo se muestra si el recurso se aprueba mediante el entorno de creación de Assets as a Cloud Service. Para obtener más información, consulte [Administración de recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+If you are downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 >[!NOTE]
 >
-> Los usuarios con acceso a [Dynamic Media con funciones de API abierta](/help/assets/dynamic-media-open-apis-overview.md) pueden ver y descargar representaciones de recortes dinámicas e inteligentes.
+> The users with access to [Dynamic Media with Open API capabilities](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
 
-## Descargar varios recursos y sus representaciones {#download-multiple-assets-renditions}
+## Download multiple assets and their renditions {#download-multiple-assets-renditions} 
 
-Para descargar varios recursos y sus representaciones, ejecute los siguientes pasos:
+To download multiple assets and their renditions, execute the following steps: 
 
-1. Seleccione los recursos y haga clic en ![descargar](/help/assets/assets/download-icon.svg) **[!UICONTROL Descargar]**. La pantalla [!UICONTROL Descargar recursos] muestra una lista de todos los recursos seleccionados.
-1. Haga clic en **[!UICONTROL Descargar]** para seleccionar entre las distintas opciones de descarga para comenzar la descarga:
+1. Select the assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. The [!UICONTROL Download assets] screen displays listing all the selected assets. 
+1. Click **[!UICONTROL Download]** to select from the various download options to begin download:
 
-   * **Descargar [!UICONTROL originales]**: selecciona esta opción para descargar los recursos seleccionados en el formulario original.
-   * **Descargar solo [!UICONTROL representaciones estáticas]**: seleccione esta opción para descargar todas las representaciones estáticas de recursos disponibles, excepto los recursos originales.
-   * **Descargar [!UICONTROL originales y representaciones estáticas]**: seleccione esta opción para descargar las representaciones originales y estáticas de los recursos seleccionados.
+    * **Download [!UICONTROL Originals]**: Select this option to download the selected assets in the original form.
+    * **Download [!UICONTROL Static Renditions only]**: Select this option to download all available static renditions of assets except the original assets.
+    * **Download [!UICONTROL Originals & Static Renditions]**: Select this option to download both original and static renditions of the selected assets. 
 
-     ![Descargar varias representaciones](/help/assets/assets/download-multiple-renditions.png)
+      ![Download multiple renditions](/help/assets/assets/download-multiple-renditions.png)
 
-     >[!NOTE]
-     >
-     >* Las representaciones se muestran únicamente si su visibilidad está habilitada mediante la interfaz de usuario de [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-     >* Solo puede descargar [representaciones estáticas](#types-of-renditions) al descargar varios recursos.
+      >[!NOTE]
+      >
+      >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+      >* You can only download [static renditions](#types-of-renditions) while downloading multiple assets.
 
-   Si alguno de los recursos seleccionados es un recurso con licencia, haga clic en la licencia del recurso en el panel izquierdo para ver su vista previa, lo que le permite seleccionar **[!UICONTROL He leído y aceptado los términos y condiciones mencionados anteriormente]** y, a continuación, haga clic en **[!UICONTROL Descargar]**. La vista previa de la licencia solo se muestra si el recurso se aprueba mediante el entorno de creación de Assets as a Cloud Service. Para obtener más información, consulte [Administración de recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+    If any of the selected asset is a licensed asset, click the license of the asset in left pane to see its preview, which enables you to select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-   <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+    <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
 
 <!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
@@ -142,12 +167,11 @@ The dialog box that displays depends on whether the download list includes expir
 
  To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
-
 ## Tipos de representaciones {#types-of-renditions}
 
 Las representaciones de recursos son diferentes representaciones del archivo original de un recurso. Pueden incluir miniaturas, versiones optimizadas para web o móvil, archivos con marca de agua o protegidos por DRM o incluso elementos dinámicos como cultivos inteligentes. No necesitan coincidir con el tipo de archivo original, sino que sirven para representar el recurso en varios casos de uso.
 
-Más información sobre [ver y administrar representaciones en Experience Manager Assets](/help/assets/renditions.md).
+Más información sobre [ver y administrar representaciones en [!DNL Experience Manager Assets]](/help/assets/renditions.md).
 
 [!DNL Experience Manager Assets] admite los siguientes tipos de representaciones:
 
@@ -155,7 +179,7 @@ Más información sobre [ver y administrar representaciones en Experience Manage
 
 * [Representaciones dinámicas](/help/assets/renditions.md#dynamic-renditions): las representaciones dinámicas son versiones personalizadas en tiempo real de los recursos para realizar diversas acciones, como cambiar el tamaño de las imágenes para distintas resoluciones de dispositivo o recortarlas para adaptarlas a distintas proporciones de aspecto. Estas representaciones le permiten ofrecer experiencias personalizadas y optimizadas para satisfacer requisitos más amplios. Las representaciones dinámicas de recursos se crean en el entorno de creación [!DNL Adobe Experience Manager Assets]. Para obtener información sobre los pasos necesarios para habilitar las representaciones dinámicas, consulte [Habilitar representaciones dinámicas](#enable-dynamic-media-renditions).
 
-* [Recorte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): El recorte inteligente se centra únicamente en la parte esencial de un recurso durante el proceso de recorte. Dynamic media smart crop for aprovecha la inteligencia artificial con tecnología de Adobe Sensei para rastrear el punto de interés, asegurándose de que nuestros recursos se vean como sus mejores en todos los tamaños de pantalla. [!DNL Adobe Experience Manager] recorte inteligente muestra la anchura y la altura de las representaciones de un recurso junto con el título. Ver más en [uso del Recorte inteligente con AEM Assets en Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [Recorte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): El recorte inteligente se centra únicamente en la parte esencial de un recurso durante el proceso de recorte. El recorte inteligente de Dynamic Media aprovecha la inteligencia artificial con tecnología de Adobe Sensei para rastrear el punto de interés, asegurándose de que nuestros recursos se vean mejor en todos los tamaños de pantalla. [!DNL Adobe Experience Manager] recorte inteligente muestra la anchura y la altura de las representaciones de un recurso junto con el título. Ver más en [uso del Recorte inteligente con AEM Assets en Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
   Las representaciones de recorte inteligente se muestran y solo están disponibles para su descarga si tiene acceso a [Dynamic Media con capacidades OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Las representaciones de recorte inteligente solo están disponibles para los recursos de imagen.
 
@@ -175,7 +199,7 @@ Para habilitar las representaciones dinámicas:
 
 1. Vuelva a guardar los ajustes preestablecidos de imagen existentes para que estén disponibles en Content Hub. Solo es aplicable si ha incorporado recientemente a Dynamic Media con OpenAPI.
 
-   Para volver a guardar los ajustes preestablecidos de imagen existentes, vaya a la vista de administración y seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**. Seleccione un ajuste preestablecido, haga clic en **[!UICONTROL Editar]** y luego haga clic en **[!UICONTROL Guardar]**.
+   Para volver a guardar los ajustes preestablecidos de imagen existentes, vaya a la vista Administración y seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**. Seleccione un ajuste preestablecido, haga clic en **[!UICONTROL Editar]** y luego haga clic en **[!UICONTROL Guardar]**.
 
 
 
