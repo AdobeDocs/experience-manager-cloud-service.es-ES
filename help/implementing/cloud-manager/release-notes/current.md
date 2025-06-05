@@ -4,9 +4,9 @@ description: Obtenga información sobre la versión de Cloud Manager 2025.6.0 en
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
+source-git-commit: 6365b1c4109c2f2a77fbc332d11e1a8906d2cc6d
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '958'
 ht-degree: 33%
 
 ---
@@ -27,7 +27,7 @@ La próxima versión planificada es para el viernes, 10 de julio de 2025.
 
 ## Novedades {#what-is-new}
 
-* El panel de licencias de **(IU) ahora incluye la licencia de Edge Delivery Services**
+* **El tablero de licencias ahora incluye la licencia de Edge Delivery Services**
 
   El uso de licencias de Edge Delivery Services ahora se muestra en el panel de licencias, lo que le proporciona una visibilidad más clara de sus derechos y estado. <!-- CMGR-67686 -->
 
@@ -35,7 +35,7 @@ La próxima versión planificada es para el viernes, 10 de julio de 2025.
 
   Consulte [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md).
 
-* **(IU) Configuración del sitio de Edge Delivery actualizada**
+* **Configuración del sitio de Edge Delivery actualizada**
 
   Se ha simplificado el flujo para agregar un sitio Edge Delivery al solicitar **Edge Delivery Origin** en lugar de **la URL del repositorio**, lo que hace que la incorporación y la configuración sean más rápidas e intuitivas <!-- CMGR-67686 -->
 
@@ -43,7 +43,7 @@ La próxima versión planificada es para el viernes, 10 de julio de 2025.
 
   Consulte [Agregar un sitio Edge Delivery](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
-* **(IU) Favoritos de canalización**
+* **Favoritos de canalización**
 
   En esta versión, Cloud Manager introduce la capacidad de fijar canalizaciones favoritas, lo que le permite marcar canalizaciones específicas como favoritas para que aparezcan en la parte superior de la lista en la página **Canalizaciones**. Esta mejora facilita la búsqueda y ejecución de las canalizaciones a las que se accede con frecuencia. <!-- CMGR-68293 -->
 
