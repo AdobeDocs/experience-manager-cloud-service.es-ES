@@ -27,6 +27,7 @@ De forma predeterminada, la función de borrado de caché está desactivada en l
 * Habilite la escucha para borrar la caché de cada instancia de AEM (publicación y autor) agregando la configuración `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` en su proyecto como se muestra [aquí](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
    * La configuración debe habilitarse tanto para instancias de autor como de publicación.
    * Habilitar la caché de Dispatcher (opcional): puede habilitar la configuración Borrar caché de Dispatcher estableciendo la propiedad `enableDispatcherCacheInvalidation` en true en la configuración anterior. Esto proporciona funcionalidad para borrar la caché de Dispatcher.
+
   >[!NOTE]
   >
   > Esto solo funciona con instancias de publicación.
@@ -59,6 +60,7 @@ Ahora, para comprobar si las cachés se están borrando correctamente:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
+
 Si todo va bien, los nuevos cambios se reflejan en cada instancia. Si los cambios no se reflejan para la instancia de publicación, compruebe en la ventana privada las páginas PLP y PDP correspondientes.
 
 >[!NOTE]
