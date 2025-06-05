@@ -4,9 +4,9 @@ description: Obtenga información sobre la versión de Cloud Manager 2025.6.0 en
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 9e2be3cabe0a93e6e357ceb5ecf4950c25d034d0
+source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '961'
 ht-degree: 33%
 
 ---
@@ -61,7 +61,7 @@ Actualmente están disponibles las siguientes oportunidades para primeros usuari
 
 ### Administrar tokens de acceso{#manage-access-tokens}
 
-Utilice la función **Administrar tokens de acceso** en Cloud Manager para ver, cambiar el nombre y eliminar los tokens de acceso asociados con repositorios externos de Git propios, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
+Use **Administrar tokens de acceso** en Cloud Manager para ver, cambiar el nombre y eliminar los tokens de acceso asociados con repositorios externos de Git propios, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
 
 Ver [Administrar tokens de acceso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
 
