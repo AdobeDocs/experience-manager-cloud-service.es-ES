@@ -4,10 +4,10 @@ description: Aprenda a añadir un sitio de Edge Delivery a su programa de produc
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: a7e8e340355d85236a0997b28e0a04296b2ef5b4
+source-git-commit: 88c1712e2021eda2ea66304c65f6d96a1a8155be
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 91%
+source-wordcount: '521'
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 >[!IMPORTANT]
 >
 >Descubra por qué debe incorporar su sitio de Edge Delivery Services a Cloud Manager.
->Consulte [Ventajas de utilizar la ruta recomendada por Adobe para Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>>Consulte [Ventajas de utilizar la ruta recomendada por Adobe para Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **Añadir un sitio de Edge Delivery a Cloud Manager:**
 
@@ -40,7 +40,7 @@ Cerca de la esquina superior derecha de la página, haga clic en **Añadir sitio
    | Campo de texto | Descripción |
    | - | --- |
    | Nombre del sitio | Escriba el nombre del sitio de Edge Delivery que va a añadir.<br>El nombre sirve como identificador único para el sitio en Cloud Manager. |
-   | URL del repositorio | Introduzca el repositorio de Git donde se almacena el código del sitio web.<br>Este campo permite a Cloud Manager extraer el código de ese repositorio durante el proceso de implementación. |
+   | Edge Delivery Origin | Este valor especifica la ruta de la URL del origen de contenido para el sitio en Edge Delivery Services. También vincula Cloud Manager con su sitio activo.<br>La dirección URL suele incluir las *ramas*, *proyectos* y *inquilinos*, como en el siguiente ejemplo (solo con fines ilustrativos):<br>`https://main--projectname--tenant.aem.live` |
    | Descripción del sitio (opcional) | Escriba una breve descripción del sitio de Edge Delivery que va a añadir.<br>Una descripción ayuda a identificar y diferenciar el sitio, lo que facilita administrarlo y reconocerlo entre los otros sitios que haya añadido. |
 
 1. En la esquina inferior derecha del cuadro de diálogo, haga clic en **Añadir**.

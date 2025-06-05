@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
+source-git-commit: 4ddca61044d7923db9fd08b96cb18cedfd71cf70
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 29%
+source-wordcount: '1493'
+ht-degree: 28%
 
 ---
 
@@ -59,6 +59,19 @@ Si se está ejecutando una canalización, haga clic en ![Información - icono me
 También puede hacer clic en ![Puntos suspensivos - Más icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a la canalización para realizar acciones adicionales apropiadas para el estado de la canalización, como [editarla](#editing-pipelines) o [cancelar la ejecución](#cancel).
 
 ![Acciones de canalización](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
+
+### Marcar favoritos de canalización{#pipeline-favorites}
+
+Puede marcar canalizaciones específicas como favoritas para que aparezcan en la parte superior de la lista en la página **Canalizaciones**. Esta capacidad facilita la búsqueda y ejecución de las canalizaciones a las que se accede con frecuencia.
+
+**Para marcar favoritos de canalización:**
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
+1. En la página **Resumen del programa**, haga clic en ![Pestaña Canalización: icono de flujo de trabajo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pestaña Canalizaciones**.
+1. En la página Canalizaciones, a la izquierda del nombre y tipo de canalización, haga clic en ![Icono de esquema de estrella de la canalización sin favoritos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg) para agregarla a la lista de favoritos.
+También puede hacer clic en ![Icono de estrella de una canalización favorita](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) para quitar la canalización de su lista de favoritos.
+
 
 ## Página Actividad {#activity}
 
@@ -209,3 +222,4 @@ También puede cancelar una canalización desde la página de detalles de la can
    ![Cancelar detalles de canalización](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
 1. Haga clic en **Cancelar**.
+

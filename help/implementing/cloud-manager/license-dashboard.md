@@ -5,21 +5,21 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
+source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 26%
+source-wordcount: '909'
+ht-degree: 24%
 
 ---
 
 
 # Tablero de licencias {#license-dashboard}
 
-Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
+Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de Adobe Experience Manager as a Cloud Service (AEMaaCS) disponibles para su organización o inquilino.
 
 >[!IMPORTANT]
 >
->El tablero de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
+>El tablero de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
 >
 >Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte [Navegación por la interfaz de usuario de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -41,7 +41,10 @@ El panel de licencias de Cloud Manager proporciona un acceso fácil a las autori
 
 El tablero se divide en tres secciones que le muestran lo siguiente:
 
-* **Soluciones** - Qué soluciones tiene licencia.
+* **Soluciones** - Qué soluciones tiene licencia. Por ejemplo, Sites, Edge Delivery Services y Assets, entre otros.
+
+  ![Lista de soluciones](assets/solutions.png)
+
 * **Complementos**: qué complementos de las soluciones con licencia tiene disponibles.
 * **Otros derechos** - Qué zona protegida y entorno de desarrollo y otros derechos se pueden consumir dentro de su inquilino.
 

@@ -2,10 +2,10 @@
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: c27c78cbe21c9a02c4075ca7eade9853082fe211
+source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
 workflow-type: tm+mt
-source-wordcount: '1987'
-ht-degree: 15%
+source-wordcount: '2128'
+ht-degree: 14%
 
 ---
 
@@ -112,6 +112,10 @@ Como administrador, administre las siguientes opciones de configuración para lo
 * [Representaciones](#renditions-content-hub)
 
 * [Vínculos personalizados](#configure-custom-links-content-hub)
+
+* [Gobernanza de colecciones](#configure-collections-content-hub)
+
+* [Habilitar el uso compartido de vínculos públicos](#enable-public-link-sharing)
 
 ### Importar {#configure-import-options-content-hub}
 
@@ -273,7 +277,7 @@ Si la visibilidad de los recursos caducados está habilitada, Content Hub tambi�
 
 ### Representaciones {#renditions-content-hub}
 
-Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para ello, ejecute los siguientes pasos:
 
@@ -308,3 +312,29 @@ Del mismo modo, puede hacer clic en ![Editar icono](assets/do-not-localize/edit_
 El vínculo personalizado se muestra como una nueva pestaña junto a la pestaña Información en la página de inicio de Content Hub.
 
 ![Fichas de vínculos personalizados de IU de configuración en Content Hub](assets/configuration-ui-custom-link-tab.png)
+
+### Gobernanza de colecciones {#configure-collections-content-hub}
+
+Los administradores pueden definir permisos de usuario al crear colecciones. Para habilitar esta configuración, siga estos pasos:
+
+1. En la interfaz de usuario de [Configurations](#access-configuration-options-content-hub), haga clic en **[!UICONTROL Colecciones y uso compartido]**.
+
+1. Habilite la opción **[!UICONTROL Colecciones de solo lectura]** para permitir colecciones que sean accesibles para todos pero que solo puedan editar el creador y el administrador.
+
+1. Habilite la opción **[!UICONTROL Colecciones públicas]** para permitir colecciones que sean accesibles y editables para todos.
+
+1. Haga clic en **[!UICONTROL Guardar]** para aplicar los cambios.
+
+   ![Pestaña Colecciones de configuración en Content Hub](assets/configuration-collections-tab.png)
+
+### Habilitar el uso compartido de vínculos públicos {#enable-public-link-sharing}
+
+Habilite la siguiente configuración en la interfaz de usuario de configuraciones para permitir que los usuarios de Content Hub generen un vínculo público:
+
+1. En la interfaz de usuario de [Configuraciones](#access-configuration-options-content-hub), haga clic en **[!UICONTROL Colecciones y uso compartido]**.
+
+1. Habilite la opción **[!UICONTROL Habilitar vínculo público]** y haga clic en **[!UICONTROL Guardar]** para aplicar los cambios.
+
+   ![Habilitar el uso compartido de vínculos públicos en Content Hub](assets/enable-public-link-sharing-tab.png)
+
+Más información sobre [compartir recursos en [!DNL Content Hub]](share-assets-content-hub.md).

@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: f75bcd7e311980c3d1f9075be73d5f2896f76a2d
 workflow-type: tm+mt
-source-wordcount: '2374'
-ht-degree: 39%
+source-wordcount: '2430'
+ht-degree: 37%
 
 ---
 
@@ -26,6 +26,11 @@ Un usuario con los permisos necesarios puede crear los siguientes tipos de entor
 | **Producción + Fase** | Los entornos de producción y ensayo están disponibles en pareja y se utilizan para fines de producción y prueba, respectivamente. Realizar pruebas de rendimiento y seguridad en el entorno de ensayo. Tiene el mismo tamaño que la producción. |
 | **Desarrollo** | Se puede crear un entorno de desarrollo con fines de desarrollo y prueba, y solo se puede asociar con canalizaciones que no sean de producción. Los entornos de desarrollo no tienen el mismo tamaño que los de fase y producción, y no deben utilizarse para realizar pruebas de rendimiento y seguridad. |
 | **Desarrollo rápido** | Un entorno de desarrollo rápido (RDE) permite a los desarrolladores implementar y revisar cambios rápidamente. Esta capacidad reduce el tiempo necesario para probar características que ya se han validado en un entorno de desarrollo local. Consulte [la documentación del entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obtener detalles acerca de cómo utilizar un RDE. |
+| **Entorno de prueba especializado** | Los entornos de prueba especializados proporcionan un espacio dedicado para validar funciones en condiciones próximas a la producción, lo que resulta ideal para pruebas de resistencia y comprobaciones avanzadas previas a la implementación. Ver [Agregar un entorno de prueba especializado](/help/implementing/cloud-manager/specialized-test-environment.md) |
+
+>[!NOTE]
+>
+>Actualmente, la característica **Entorno de prueba especializado** solo está disponible a través del programa de adopción anticipada. Para registrarse como usuario pionero, consulte [Entorno de prueba especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 Las capacidades de los entornos individuales dependen de las soluciones habilitadas en el [programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) del entorno.
 
@@ -105,7 +110,7 @@ Si desea proporcionar [redes avanzadas](/help/security/configuring-advanced-netw
 
 ### Editar varias regiones de publicación {#edit-regions}
 
-Si no ha especificado ninguna región adicional inicialmente, puede hacerlo después de crear los entornos si tiene los derechos necesarios.
+Si no ha especificado ninguna región adicional al principio, puede hacerlo después de crear el entorno y de tener los derechos necesarios.
 
 También puede quitar regiones de publicación adicionales. Sin embargo, sólo puede agregar o quitar regiones en una transacción. Si necesita añadir una región y quitar una región, primero añádala, guarde el cambio y, a continuación, quítela (o viceversa).
 
@@ -176,7 +181,7 @@ Un usuario con los permisos necesarios debe completar los siguientes pasos antes
 
 Una vez desbloqueado el acceso al servicio de vista previa, ya no se muestra el icono de bloqueo delante del nombre del servicio de vista previa.
 
-AEM Una vez activado, puede publicar contenido en el servicio de vista previa mediante la interfaz de usuario **`Manage Publication`** dentro de la interfaz de usuario de la aplicación de vista previa Consulte [Previsualizar contenido](/help/sites-cloud/authoring/sites-console/previewing-content.md) para obtener más información.
+Una vez activado, puede publicar contenido en el servicio de vista previa mediante la interfaz de usuario **`Manage Publication`** en AEM. Consulte [Previsualizar contenido](/help/sites-cloud/authoring/sites-console/previewing-content.md) para obtener más información.
 
 >[!NOTE]
 >
@@ -221,9 +226,9 @@ Sin embargo, las actualizaciones de los entornos de los programas de zonas prote
 
 ### Actualizaciones y canalizaciones {#updates-pipelines}
 
-Las canalizaciones son la única manera de [implementar código en los entornos de AEM as a Cloud Service](deploy-code.md). AEM Por este motivo, cada canalización está asociada a una versión en particular de la.
+Las canalizaciones son la única manera de [implementar código en los entornos de AEM as a Cloud Service](deploy-code.md). Por este motivo, cada canalización está asociada a una versión de AEM determinada.
 
-Cuando Cloud Manager AEM detecta una versión de la canalización más reciente que la implementada por última vez, muestra el estado de **Actualización disponible** para el entorno.
+Cuando Cloud Manager detecta una versión de AEM más reciente que la implementada por última vez con la canalización, muestra el estado de **Actualización disponible** para el entorno.
 
 Por lo tanto, el proceso de actualización consta de dos pasos:
 
@@ -243,7 +248,7 @@ Esta opción también está disponible si hace clic en la ficha **Entornos** del
 
 ![Opción Actualizar de la pestaña Entornos](assets/environ-update3.png)
 
-AEM Un usuario con el rol **Administrador de implementación** o **Propietario del negocio** puede usar esta opción para actualizar la canalización asociada con este entorno a la última versión de la.
+Un usuario con el rol **Administrador de implementación** o **Propietario del negocio** puede usar esta opción para actualizar la canalización asociada con este entorno a la última versión de AEM.
 
 Una vez que la versión de la canalización se actualice a la última versión de AEM disponible públicamente, se solicitará al usuario que ejecute la canalización asociada para implementar la última versión en el entorno.
 
@@ -294,7 +299,7 @@ Se abre una nueva pestaña en el explorador con la página de inicio de sesión 
 
 Solo un usuario con la función **Desarrollador** tendrá acceso a la **Consola de desarrollador**. Sin embargo, para los programas de zonas protegidas, cualquier usuario con acceso a la zona protegida tiene acceso a **Developer Console**.
 
-Consulte [Entornos de zona protegida en hibernación y cancelación de la hibernación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obtener más información.
+Consulte [Entornos de zona protegida en hibernación y cancelación de la hibernación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obtener más información.
 
 Esta opción también está disponible en la ficha **Entorno** de la ventana **Información general** al hacer clic en el ![icono Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de un entorno individual.
 
