@@ -82,8 +82,8 @@ Si el cuadro de diálogo **[!UICONTROL Descargar recursos]** muestra los recurso
 
    >[!NOTE]
    >
-   >* Las representaciones solo se muestran si su visibilidad está habilitada mediante la interfaz de usuario [!UICONTROL [Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   >* Los usuarios con acceso a [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) pueden ver y descargar representaciones de recortes dinámicas e inteligentes.
+   >* Las representaciones solo se muestran si su visibilidad está habilitada mediante la interfaz de usuario [[!UICONTROL [Configuration]]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* Los usuarios con acceso a [[!DNL [Dynamic Media with Open API capabilities]]](/help/assets/dynamic-media-open-apis-overview.md) pueden ver y descargar representaciones de recortes dinámicas e inteligentes.
    >* La vista previa de la licencia solo se mostrará si el recurso se ha aprobado mediante el entorno de creación [!DNL Assets as a Cloud Service]. Para obtener más información, consulte [Administración de recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
