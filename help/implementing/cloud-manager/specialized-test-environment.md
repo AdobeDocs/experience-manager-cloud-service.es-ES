@@ -4,7 +4,8 @@ description: Descubra cómo los entornos de prueba especializados en Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Adoptador anticipado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: 408e472470244c619e09ef58691b1cff7cdd0188
+exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
+source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 8%
@@ -15,7 +16,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->&#x200B;>La función descrita en este artículo solo está disponible a través del programa de adopción temprana. Para registrarse como usuario pionero, consulte [Entorno de prueba especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>La función descrita en este artículo solo está disponible a través del programa de adopción temprana. Para registrarse como usuario pionero, consulte [Entorno de prueba especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 El Entorno de prueba especializado, o DevXL, es un nuevo tipo de entorno de Cloud Manager que puede crear. Está diseñado para admitir casos de uso avanzados, como las Pruebas de aceptación de usuarios (UAT) y la validación de rendimiento. A diferencia de los entornos tradicionales de desarrollo, desarrollo rápido o ensayo, los entornos DevXL funcionan fuera de la canalización de implementación de producción. Por lo tanto, ofrecen una mayor flexibilidad a la vez que mantienen un aislamiento estricto para evitar interferencias con los flujos de trabajo de producción.
 
@@ -63,7 +64,7 @@ Para agregar o editar un entorno, un usuario debe ser miembro del rol **Propieta
 
 1. En el cuadro de diálogo **Agregar entorno**, haga lo siguiente:
 
-   * Haga clic en [**Entorno de prueba especializado**](#environment-types).
+   * Haga clic en **Entorno de prueba especializado**.
    * Proporcione un entorno **Name**. El nombre del entorno no se puede cambiar una vez creado el entorno.
    * (Opcional) Proporcione una **Descripción** para el entorno.
    * Seleccione una **región principal** en la lista desplegable. Una vez creada, la región principal del entorno DevXL (por ejemplo, *Estados Unidos (oeste de EE. UU.)*) está bloqueada y no se puede cambiar.
@@ -73,4 +74,3 @@ Para agregar o editar un entorno, un usuario debe ser miembro del rol **Propieta
 1. Haga clic en **Guardar**.
 
    La página **Información general** ahora muestra su nuevo entorno en la tarjeta **Entornos**. Ahora puede configurar canalizaciones para su nuevo entorno.
-
