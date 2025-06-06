@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 62c80da3a4081005bacd119e2e382b1e6c41e2ad
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 11%
+source-wordcount: '661'
+ht-degree: 18%
 
 ---
 
@@ -17,16 +17,16 @@ ht-degree: 11%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -58,178 +58,186 @@ ht-degree: 11%
 
 La configuración de Adobe Experience Manager Assets Brand Portal permite publicar recursos de marca aprobados de Adobe Experience Manager Assets como una instancia de [!DNL Cloud Service] en Brand Portal y distribuirlos a los usuarios de Brand Portal.
 
-## Activación de Brand Portal mediante Cloud Manager {#activate-brand-portal}
+>[!IMPORTANT]
+>
+> * Brand Portal se encuentra actualmente en mantenimiento.
+> * Póngase en contacto con su representante de Adobe para obtener detalles sobre su caso de uso y los requisitos específicos para activar Brand Portal mediante Cloud Manager.
 
-El usuario de Cloud Manager activa Brand Portal para una instancia de Experience Manager Assets como [!DNL Cloud Service]. El flujo de trabajo de activación crea las configuraciones necesarias (token de autorización, configuración de IMS y servicio en la nube de Brand Portal) en el back-end y refleja el estado del inquilino de Brand Portal en Cloud Manager. La activación de Brand Portal permite a los usuarios de Experience Manager Assets publicar recursos en Brand Portal y distribuirlos a los usuarios de Brand Portal.
+<!--
 
-**Requisitos previos**
+## Activate Brand Portal using Cloud Manager {#activate-brand-portal}
 
-Necesita lo siguiente para activar Brand Portal en su Experience Manager Assets como instancia de [!DNL Cloud Service]:
+The Cloud Manager user activates Brand Portal for an Experience Manager Assets as a [!DNL Cloud Service] instance. The activation workflow creates the required configurations (authorization token, IMS configuration, and Brand Portal cloud service) at the backend and reflects the status of the Brand Portal tenant in Cloud Manager. Activating Brand Portal enables the Experience Manager Assets users to publish assets to Brand Portal and distribute them to the Brand Portal users.  
 
-* Una instancia de Experience Manager Assets como [!DNL Cloud Service] en ejecución.
-* Un usuario con acceso a Cloud Manager asignado a Perfiles del producto de Cloud Manager. Consulte [acceso a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=es#accessing-cloud-manager) para obtener más información.
+**Prerequisites** 
+
+You require the following to activate Brand Portal on your Experience Manager Assets as a [!DNL Cloud Service] instance:
+
+* An up and running Experience Manager Assets as a [!DNL Cloud Service] instance.
+* A user having access to Cloud Manager, assigned to Profiles of the Cloud Manager Product. See [accessing Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) for more information. 
 
 >[!NOTE]
 >
->Se requiere un entorno de producción configurado para crear una instancia de Experience Manager Assets as a [!DNL Cloud Service] con el fin de conectar con el inquilino de Brand Portal.
+>A configured production environment is required to an Experience Manager Assets as a [!DNL Cloud Service] instance to connect with Brand Portal tenant.
 
-**Pasos para activar Brand Portal**
+**Steps to activate Brand Portal**
 
-Puede activar Brand Portal al crear los entornos de producción para su Experience Manager Assets como instancia de [!DNL Cloud Service] o por separado. Supongamos que el entorno ya se ha creado y que ahora es necesario activar Brand Portal.
+You can activate Brand Portal while creating the production environments for your Experience Manager Assets as a [!DNL Cloud Service] instance, or separately. Let us assume that the environment was already created, and you are now required to activate Brand Portal.
 
-1. Inicie sesión en Adobe Cloud Manager y vaya a **[!UICONTROL Entornos]**.
+1. Login to Adobe Cloud Manager and navigate to **[!UICONTROL Environments]**.
+   
+   The **[!UICONTROL Environments]** page displays the list of all the existing environments.
 
-   La página **[!UICONTROL Entornos]** muestra la lista de todos los entornos existentes.
+1. Select the environments (one by one) from the list to view the environment details.
 
-1. Seleccione los entornos (uno a uno) de la lista para ver los detalles del entorno.
+   Brand Portal is entitled to one of the available environments and is reflected under the **[!UICONTROL Environment Information]**.
 
-   Brand Portal tiene derecho a uno de los entornos disponibles y se refleja en la **[!UICONTROL Información del entorno]**.
+   Once you find the environment associated with Brand Portal, click the **[!UICONTROL Activate Brand Portal]** button to begin the activation workflow.
 
-   Cuando encuentre el entorno asociado a Brand Portal, haga clic en el botón **[!UICONTROL Activar Brand Portal]** para iniciar el flujo de trabajo de activación.
+   ![Activate Brand Portal](assets/create-environment4.png)
 
-   ![Activar Brand Portal](assets/create-environment4.png)
+1. It takes few mins to activate the Brand Portal tenant as the activation workflow creates the required configurations at the backend. Once the Brand Portal tenant is activated, the status changes to Activated. 
 
-1. Se tarda unos minutos en activar el inquilino de Brand Portal, ya que el flujo de trabajo de activación crea las configuraciones necesarias en el back-end. Una vez activado el inquilino de Brand Portal, el estado cambia a Activado.
-
-   ![Ver estado](assets/create-environment5.png)
+   ![View Status](assets/create-environment5.png)
 
 
 >[!NOTE]
 >
->Brand Portal debe activarse en la misma organización de IMS que en Experience Manager Assets como instancia de [!DNL Cloud Service].
+>Brand Portal must be activated on the same IMS org as of the Experience Manager Assets as a [!DNL Cloud Service] instance.
 >
->Si tiene una configuración de nube de Brand Portal existente ([configurada manualmente con Adobe Developer Console](#manual-configuration)) para una organización de IMS (org1-existing) y su instancia de Experience Manager Assets as a [!DNL Cloud Service] está configurada para otra organización de IMS (org2-new), al activar Brand Portal desde Cloud Manager se restablece la organización de IMS de Brand Portal a `org2-new`. Aunque la configuración de nube configurada manualmente en `org1-existing` está visible en la instancia de autor de Experience Manager Assets, ya no estará en uso después de activar Brand Portal desde Cloud Manager.
+>If you have an existing Brand Portal cloud configuration ([manually configured using Adobe Developer Console](#manual-configuration)) for an IMS org (org1-existing) and your Experience Manager Assets as a [!DNL Cloud Service] instance is configured for another IMS org (org2-new), activating Brand Portal from the Cloud Manager resets the Brand Portal IMS org to `org2-new`. Although the manually configured cloud configuration on `org1-existing` is visible in the Experience Manager Assets author instance but will no longer be in use after activating Brand Portal from the Cloud Manager. 
 >
->Si la configuración de nube de Brand Portal existente y Experience Manager Assets as a [!DNL Cloud Service] emplean la misma organización de IMS (org1), solo deberá activar Brand Portal desde Cloud Manager.
+>If the existing Brand Portal cloud configuration and Experience Manager Assets as a [!DNL Cloud Service] instance are using the same IMS org (org1), you only have to activate Brand Portal from the Cloud Manager. 
 >
->No modifique ninguna configuración generada automáticamente.
+>Do not modify any autogenerated settings.
 
-**Ver también**:
+**See also**:
 
-* [Agregar usuarios y funciones en Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=es)
+* [Add users and roles in Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
-* [Administrar entornos en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=es#adding-environments)
-
-
-**Inicie sesión en su inquilino de Brand Portal**:
-
-Después de activar el inquilino de Brand Portal en Cloud Manager, puede iniciar sesión en Brand Portal desde Admin Console o directamente mediante la URL del inquilino.
-
-La dirección URL predeterminada del inquilino de Brand Portal es: `https://<tenant-id>.brand-portal.adobe.com/`.
-
-Donde, el ID de inquilino es la organización de IMS.
+* [Manage environments in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
-Realice los siguientes pasos si no está seguro de la dirección URL de Brand Portal:
+**Login to your Brand Portal tenant**:
 
-1. Inicie sesión en [Admin Console](https://adminconsole.adobe.com/) y navegue hasta **[!UICONTROL Productos]**.
-1. En el panel izquierdo, seleccione **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
-1. Haga clic en **[!UICONTROL Ir a Brand Portal]** para abrir directamente Brand Portal en el explorador.
+After activation of your Brand Portal tenant in Cloud Manager, you can login to Brand Portal from Admin Console or by directly using the tenant URL.
 
-   O bien, copie la URL del inquilino de Brand Portal del vínculo **[!UICONTROL Ir a Brand Portal]** y péguela en el explorador para abrir la interfaz de Brand Portal.
+The default URL of your Brand Portal tenant is: `https://<tenant-id>.brand-portal.adobe.com/`.
 
-   ![Acceder a Brand Portal](assets/access-bp-on-cloud.png)
+Wherein, the Tenant id is the IMS org.
 
 
-**Probar conexión**
+Perform the following steps if you are not sure of the Brand Portal URL:
 
-Realice los siguientes pasos para validar la conexión entre su instancia de Experience Manager Assets as a [!DNL Cloud Service] y el inquilino de Brand Portal:
+1. Login to [Admin Console](https://adminconsole.adobe.com/) and navigate to **[!UICONTROL Products]**.
+1. From the left panel, select **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]**.
+1. Click **[!UICONTROL Go to Brand Portal]** to directly open Brand Portal in the browser.
 
-1. Inicie sesión en Experience Manager Assets.
+   Or copy the Brand Portal tenant URL from the **[!UICONTROL Go to Brand Portal]** link and paste it in your browser to open the Brand Portal interface.
 
-1. En el panel **Herramientas**, vaya a **[!UICONTROL Implementación]** > **[!UICONTROL Distribución]**.
+   ![Access Brand Portal](assets/access-bp-on-cloud.png)
 
-   ![Vaya a la opción de distribución](assets/test-bpconfig1.png)
 
-   Se crea un agente de distribución de Brand Portal (**[!UICONTROL bpdistributionagent0]**) en **[!UICONTROL Publicar en Brand Portal]**.
+**Test connection**
 
-   ![Crear agente de distribución](assets/test-bpconfig2.png)
+Perform the following steps to validate the connection between your Experience Manager Assets as a [!DNL Cloud Service] instance and Brand Portal tenant:
 
-1. Haga clic en **[!UICONTROL Publicar en Brand Portal]** para abrir el agente de distribución.
+1. Login to Experience Manager Assets.
 
-   Puede ver las colas de distribución en la ficha **[!UICONTROL Estado]**.
+1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-   Un agente de distribución contiene dos colas:
-   * **processing-queue**: para la distribución de recursos a Brand Portal.
+    ![Navigate to the distribution option](assets/test-bpconfig1.png)
 
-   * **error-queue**: para los recursos en los que la distribución ha fallado.
+   A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
+
+   ![Create distribution agent](assets/test-bpconfig2.png)
+
+1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
+
+   You can see the distribution queues under the **[!UICONTROL Status]** tab. 
+   
+   A distribution agent contains two queues: 
+   * **processing-queue**: for the distribution of assets to Brand Portal. 
+
+   * **error-queue**: for the assets where distribution has failed. 
+   
+   >[!NOTE]
+   >
+   >It is recommended to review the failures and  clear the **error-queue** periodically.  
+
+   ![Processing queue for the distribution of assets](assets/test-bpconfig3.png)
+
+1. To verify the connection between Experience Manager Assets as a [!DNL Cloud Service] and Brand Portal, click the **[!UICONTROL Test Connection]** icon.
+
+   ![Verify connection between AEM and Brand Portal](assets/test-bpconfig4.png)
+
+   A message appears that your *test package is successfully delivered*.
 
    >[!NOTE]
    >
-   >Se recomienda revisar los errores y borrar la **cola de errores** periódicamente.
+   >Avoid disabling the distribution agent, as it can cause the distribution of the assets (running-in-queue) to fail.
 
-   ![Cola de procesamiento para la distribución de recursos](assets/test-bpconfig3.png)
-
-1. Para comprobar la conexión entre Experience Manager Assets as a [!DNL Cloud Service] y Brand Portal, haga clic en el icono **[!UICONTROL Probar conexión]**.
-
-   ![Verificar la conexión entre AEM y Brand Portal](assets/test-bpconfig4.png)
-
-   Aparece un mensaje que indica que el paquete de prueba *se entregó correctamente*.
-
-   >[!NOTE]
-   >
-   >Evite desactivar el agente de distribución, ya que puede provocar errores en la distribución de los recursos (que se ejecutan en la cola).
-
-Para comprobar la conexión entre su instancia de Experience Manager Assets as a [!DNL Cloud Service] y el inquilino de Brand Portal, publique un recurso de Experience Manager Assets en Brand Portal. Si la conexión se realiza correctamente, el recurso publicado se podrá ver en la interfaz de Brand Portal.
+To verify the connection between your Experience Manager Assets as a [!DNL Cloud Service] instance and Brand Portal tenant, publish an asset from Experience Manager Assets to Brand Portal. If the connection is successful, the published asset is visible in the Brand Portal interface.
 
 
-Ahora puede:
+You can now:
 
-* [Publicación de recursos de Experience Manager Assets en Brand Portal](publish-to-brand-portal.md)
-* [Publicar carpetas desde Experience Manager Assets en Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
-* [Publicar colecciones desde Experience Manager Assets en Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Publicar recursos de Brand Portal en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es): obtención de recursos en Brand Portal
-* [Publicar ajustes preestablecidos, esquemas y facetas en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=es)
-* [Publicar etiquetas en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=es)
+* [Publish assets from Experience Manager Assets to Brand Portal](publish-to-brand-portal.md)
+* [Publish folders from Experience Manager Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [Publish collections from Experience Manager Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Publish assets from Brand Portal to Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Sourcing in Brand Portal
+* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-Consulte [Documentación de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=es) para obtener más información.
+See [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for more information.
 
-**Registros de distribución**
+**Distribution logs**
 
-Puede monitorizar los registros del agente de distribución para el flujo de trabajo de publicación de recursos.
+You can monitor the distribution agent logs for the asset publishing workflow. 
 
-Ahora vamos a publicar un recurso de Experience Manager Assets en Brand Portal y ver los registros.
+Let us now publish an asset from Experience Manager Assets to Brand Portal and see the logs. 
 
-1. Siga los pasos (de 1 a 4) que se muestran en la sección **Probar conexión** y vaya a la página del agente de distribución.
-1. Haga clic en **[!UICONTROL Registros]** para ver los registros de procesamiento y error.
+1. Follow the steps (from 1 to 4) as shown in the **Test connection** section and navigate to the distribution agent page.
+1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
-   ![Registros de procesamiento y errores](assets/test-bpconfig5.png)
+   ![Processing and error logs](assets/test-bpconfig5.png)
 
-El agente de distribución ha generado los siguientes registros:
+The distribution agent has generated the following logs:
 
-* INFORMACIÓN: Es un registro generado por el sistema que está en déclencheur con la configuración correcta del agente de distribución.
-* DSTRQ1 (Solicitud 1): Se activa en comprobar la conexión.
+* INFO: It is a system-generated log that triggers on successful configuration of the distribution agent. 
+* DSTRQ1 (Request 1): Triggers on test connection.
 
-Al publicar el recurso, se generan los siguientes registros de solicitud y respuesta:
+On publishing the asset, the following request and response logs are generated:
 
-**Solicitud del agente de distribución**:
+**Distribution agent request**:
 
-* DSTRQ2 (Solicitud 2): Se activa la solicitud de publicación de recursos.
-* DSTRQ3 (Solicitud 3): El sistema déclencheur otra solicitud para publicar la carpeta Experience Manager Assets (en la que existe el recurso) y replica la carpeta en Brand Portal.
+* DSTRQ2 (Request 2): The asset publishing request is triggered.
+* DSTRQ3 (Request 3): The system triggers another request to publish the Experience Manager Assets folder (in which the asset exists) and replicates the folder in Brand Portal.
 
-**Respuesta del agente de distribución**:
+**Distribution agent response**:
 
-* queue-bpdistributionagent0 (DSTRQ2): El recurso se publica en Brand Portal.
-* queue-bpdistributionagent0 (DSTRQ3): El sistema replica la carpeta Experience Manager Assets (que contiene el recurso) en Brand Portal.
+* queue-bpdistributionagent0 (DSTRQ2): The asset is published to Brand Portal.
+* queue-bpdistributionagent0 (DSTRQ3): The system replicates the Experience Manager Assets folder (containing the asset) in Brand Portal.
 
-En el ejemplo anterior, se activa una solicitud y una respuesta adicionales. El sistema no pudo encontrar la carpeta principal (Agregar ruta) en Brand Portal porque el recurso se publicó por primera vez, por lo tanto se activó una solicitud adicional para crear una carpeta principal con el mismo nombre en Brand Portal en la que se publica el recurso.
+In the above example, an additional request and response are triggered. The system could not find the parent folder (Add Path) in Brand Portal because the asset was published for the first time, therefore, it triggered an additional request to create a parent folder with the same name in Brand Portal where the asset is published.  
 
 >[!NOTE]
 >
->Se genera una solicitud adicional si la carpeta principal no existe en Brand Portal o si se ha modificado en Experience Manager Assets.
+>Additional request is generated in case the parent folder does not exist in Brand Portal or has been modified in Experience Manager Assets. 
 
-Junto con el flujo de trabajo de automatización para activar Brand Portal en Experience Manager Assets as a [!DNL Cloud Service], existe otro método para configurar Experience Manager Assets as a [!DNL Cloud Service] manualmente con Brand Portal mediante Adobe Developer Console que ya no se recomienda.
+Along with the automation workflow to activate Brand Portal on Experience Manager Assets as a [!DNL Cloud Service], there exists another method to manually configure Experience Manager Assets as a [!DNL Cloud Service] with Brand Portal using Adobe Developer Console which is not recommended anymore.
 
 >[!NOTE]
 >
->Póngase en contacto con Asistencia al cliente si tiene algún problema al activar el inquilino de Brand Portal.
+>Contact Customer Support if you are facing any problem while activating your Brand Portal tenant.
+-->
 
 ## Configuración manual con Adobe Developer Console {#manual-configuration}
 
 >[!NOTE]
 >
 > No puede crear nuevas credenciales de JWT a partir de junio de 2024. A partir de ahora, solo se crean credenciales de OAuth.
-> Ver más [creando una configuración de OAuth](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+> > Ver más [creando una configuración de OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
 
 En la siguiente sección se describe cómo configurar manualmente Experience Manager Assets as a [!DNL Cloud Service] con Brand Portal mediante Adobe Developer Console.
 
@@ -345,7 +353,7 @@ Perform the following steps to generate the service account credentials and JWT 
    >[!NOTE] 
    >
    >* You can view the credentials and perform actions such as generate JWT tokens, copy credential details, retrieve client secret, and so on.
-   >* Currently, only the Adobe's Developer Console Service Account (JWT) credential type is supported. Do not use the `OAuth Server-to-Server` credential type until it is supported in mid-April. Read more at [JWT Credentials Deprecation in Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html?lang=es).
+   >* Currently, only the Adobe's Developer Console Service Account (JWT) credential type is supported. Do not use the `OAuth Server-to-Server` credential type until it is supported in mid-April. Read more at [JWT Credentials Deprecation in Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
 
@@ -396,11 +404,11 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
 ### Configuración de las credenciales de OAuth en Adobe Developer Console {#config-oauth}
 
-[Configure las credenciales de OAuth en Adobe Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) y seleccione la API de Brand Portal.
+[Configure las credenciales de OAuth en Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) y seleccione la API de Brand Portal.
 
 ### Creación de una nueva integración de Adobe IMS con OAuth {#create-ims-account-configuration}
 
-[Cree una nueva integración de IMS de Adobe con OAuth](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) y seleccione Brand Portal en el menú desplegable en Solución de nube.
+[Cree una nueva integración de IMS de Adobe con OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) y seleccione Brand Portal en el menú desplegable en Solución de nube.
 
 <!--
 Ensure that you have performed the following steps:
@@ -464,7 +472,7 @@ Siga estos pasos para configurar el servicio en la nube de Brand Portal:
 Ahora puede probar la configuración comprobando el agente de distribución y publicando los recursos en Brand Portal.
 
 **IP de salida de Lista de permitidos en SPS si la vista previa segura está habilitada**
-Si utiliza Dynamic Media-Scene7 con [vista previa segura habilitada](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=es) para una empresa, se recomienda que el administrador de la empresa de Scene7 [lista de permitidos las IP de salida públicas](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=es#testing-the-secure-testing-service) para las regiones respectivas mediante la interfaz de usuario Flash de SPS (Scene7 Publishing System).
+Si utiliza Dynamic Media-Scene7 con [vista previa segura habilitada](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) para una empresa, se recomienda que el administrador de la empresa de Scene7 [lista de permitidos las IP de salida públicas](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) para las regiones respectivas mediante la interfaz de usuario Flash de SPS (Scene7 Publishing System).
 Las direcciones IP de salida son las siguientes:
 
 | **Región** | **IP de salida** |
@@ -519,11 +527,11 @@ You can now:
 * [Publish assets from AEM Assets to Brand Portal](publish-to-brand-portal.md)
 * [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es) - Asset Sourcing in Brand Portal
-* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=es)
-* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=es)
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Sourcing in Brand Portal
+* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-See [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=es) for more information.
+See [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for more information.
 
 ## Distribution logs {#distribution-logs}
 
