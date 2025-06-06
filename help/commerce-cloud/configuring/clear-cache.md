@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo habilitar y comprobar la función 
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: f6d3ffd80e84f7c1d56fe24a395c9998ec209908
+source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 2%
 # Componente y GraphQL Borrar caché {#clear-cache}
 
 Este documento proporciona una guía completa sobre la activación y verificación de la función clear-cache en AEM CIF.
+
+>[!NOTE]
+>
+> Esta característica es experimental.
 
 ## Habilitar la función Borrar caché en la configuración de CIF {#enable-clear-cache}
 
@@ -27,10 +31,9 @@ De forma predeterminada, la función de borrado de caché está desactivada en l
 * Habilite la escucha para borrar la caché de cada instancia de AEM (publicación y autor) agregando la configuración `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` en su proyecto como se muestra [aquí](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
    * La configuración debe habilitarse tanto para instancias de autor como de publicación.
    * Habilitar la caché de Dispatcher (opcional): puede habilitar la configuración Borrar caché de Dispatcher estableciendo la propiedad `enableDispatcherCacheInvalidation` en true en la configuración anterior. Esto proporciona funcionalidad para borrar la caché de Dispatcher.
-
-  >[!NOTE]
-  >
-  > Esto solo funciona con instancias de publicación.
+     >[!NOTE]
+     >
+     > Esto solo funciona con instancias de publicación.
 
    * Además, asegúrese de proporcionar el patrón correspondiente que se adapte a su producto, categoría y página de CMS debe añadirse al archivo de configuración anterior para eliminarlo de la caché de Dispatcher.
 
@@ -60,7 +63,6 @@ Ahora, para comprobar si las cachés se están borrando correctamente:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 Si todo va bien, los nuevos cambios se reflejan en cada instancia. Si los cambios no se reflejan para la instancia de publicación, compruebe en la ventana privada las páginas PLP y PDP correspondientes.
 
 >[!NOTE]
@@ -98,7 +100,6 @@ Esta tabla muestra la propiedad obligatoria que debe pasarse en cada llamada de 
 | Propiedad | Valor | Tipo (Matriz/Cadena/Booleano) | ¿Borrará esto la caché de Dispatcher? | Comentar |
 |------------------------------|-------------------|---|---|---|
 | `storePath` | Valor correspondiente de la ruta de acceso del sitio desde el que debe eliminarse la caché (Ejemplo: `/content/venia/us/en` como referencia con un proyecto de venia). | Cadena | Sí | Esto se debe administrar con la combinación de `invalidateType.` |
-
 
 ### Ejemplo de solicitud de API
 
