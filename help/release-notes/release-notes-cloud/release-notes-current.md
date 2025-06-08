@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6f4c2a8d6e4d4e67bfd0bd4da68bcef11668b8c5
+source-git-commit: 1b6316d07153fdf93481a252173334af45137a29
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2062'
 ht-degree: 32%
 
 ---
@@ -41,7 +41,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,7 +64,7 @@ AEM Assets se integra de forma nativa con Figma, lo que permite a los diseñador
 
 **Control de acceso basado en atributos (ABAC)**
 
-Content Hub ahora le permite aplicar restricciones basadas en reglas para acceder a los recursos. Los permisos de recursos garantizan el control y también se aseguran de que solo los usuarios puedan acceder a los recursos relevantes.
+[Content Hub ahora le permite aplicar restricciones basadas en reglas para acceder a los recursos](/help/assets/attribute-based-access-control.md). Los permisos de recursos garantizan el control y también se aseguran de que solo los usuarios puedan acceder a los recursos relevantes.
 
 Las reglas de restricción de recursos se basan en metadatos y, si las condiciones definidas en la regla coinciden con los metadatos del recurso, este se muestra a los grupos de usuarios.
 
@@ -78,21 +78,21 @@ Algunas de las ventajas clave del control de acceso basado en atributos son:
 
 **Marca de interfaz de usuario**
 
-Content Hub ahora permite a los administradores personalizar la interfaz de usuario con elementos específicos de la marca, incluidas imágenes de titulares, títulos de titulares y texto independiente, así como colores primarios y secundarios. Estas mejoras ayudan a garantizar la coherencia de la marca, simplificar la incorporación del usuario y generar confianza.
+Content Hub ahora permite a los administradores [personalizar la interfaz de usuario con elementos específicos de la marca](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), incluidas imágenes de banners, títulos de banners y texto independiente, así como colores primarios y secundarios. Estas mejoras ayudan a garantizar la coherencia de la marca, simplificar la incorporación del usuario y generar confianza.
 
 ![Marca de interfaz de usuario](/help/assets/assets/content-hub-ui-branding.png)
 
 **Uso compartido de vínculos públicos**
 
-Content Hub ahora admite la generación de vínculos que se pueden compartir para permitir a usuarios externos, sin acceso a la aplicación, ver metadatos de recursos o descargar recursos.
+Content Hub ahora admite [la generación de vínculos que se pueden compartir para permitir que los usuarios externos](/help/assets/share-assets-content-hub.md##share-assets), sin acceso a la aplicación, vean los metadatos de los recursos o los descarguen.
 
 ![Marca de interfaz de usuario](/help/assets/assets/public-and-private-link.png)
 
 **Gobernanza de colecciones**
 
-Content Hub ahora permite controlar el acceso a las colecciones durante la creación, lo que garantiza que solo los usuarios autorizados puedan ver o administrar los recursos agrupados. Garantiza una mayor seguridad, una mejor colaboración, una administración organizada de los recursos y una gobernanza simplificada.
+Content Hub ahora le permite [controlar el acceso a las colecciones durante la creación, asegurándose de que solo los usuarios autorizados puedan ver o administrar los recursos agrupados](/help/assets/collections-content-hub.md##create-collections). Garantiza una mayor seguridad, una mejor colaboración, una administración organizada de los recursos y una gobernanza simplificada.
 
-![Gobernanza de colecciones](/help/assets/assets/collection-permissions.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 >[!NOTE]
 >
@@ -100,11 +100,11 @@ Content Hub ahora permite controlar el acceso a las colecciones durante la creac
 
 **Descargar varios recursos como ZIP**
 
-Content Hub ahora también le permite descargar los recursos seleccionados y sus representaciones en un archivo ZIP, y no como archivos independientes, lo que simplifica la administración de archivos.
+Content Hub ahora también le permite [descargar los recursos seleccionados y sus representaciones en un archivo ZIP](/help/assets/download-assets-content-hub.md#download-asset-renditions), y no como archivos independientes, lo que simplifica la administración de archivos.
 
 **Representaciones de Dynamic Media en Content Hub**
 
-Acceda a todas las representaciones de ajustes preestablecidos y recortes inteligentes de Dynamic Media para descargarlos, directamente desde la interfaz de usuario de Content Hub.
+Acceda a todas sus [representaciones preestablecidas y recortes inteligentes de Dynamic Media para descargarlos directamente desde la interfaz de usuario de Content Hub](/help/assets/download-assets-content-hub.md#download-asset-renditions).
 
 ![representaciones de Dynamic Media](/help/assets/assets/dm-renditions-content-hub.png)
 
@@ -112,9 +112,9 @@ Acceda a todas las representaciones de ajustes preestablecidos y recortes inteli
 
 **Integración nativa de Dynamic Media con AJO B2C&#x200B;**
 
-Integración nativa de Experience Manager (AEM) Dynamic Media con Journey Optimizer (AJO) B2C, lo que permite a los especialistas en marketing incrustar fácilmente los recursos de AEM Dynamic Media (representación y plantilla de DM) en el contenido de AJO y ofrecer actualizaciones en tiempo real y experiencias hiperpersonalizadas en todos los canales.
+[Integración nativa de Dynamic Media de Experience Manager (AEM) con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), lo que permite a los especialistas en marketing incrustar fácilmente los recursos de Dynamic Media de AEM (representación y plantilla de DM) en el contenido de AJO y ofrecer actualizaciones en tiempo real y experiencias hiperpersonalizadas en todos los canales.
 
-![representaciones de Dynamic Media](/help/assets/assets/dm-ajo-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
