@@ -16,7 +16,7 @@ ht-degree: 91%
 >[!IMPORTANT]
 >
 >Descubra por qué debe incorporar su sitio de Edge Delivery Services a Cloud Manager. 
->>Consulte [Ventajas de utilizar la ruta recomendada por Adobe para Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>&#x200B;>Consulte [Ventajas de utilizar la ruta recomendada por Adobe para Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **Añadir un sitio de Edge Delivery a Cloud Manager:**
 

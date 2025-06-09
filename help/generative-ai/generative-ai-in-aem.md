@@ -48,7 +48,7 @@ La IA generativa se utiliza en todo AEM:
 
 ## Información adicional {#further-information}
 
-* [Información general sobre la IA de Adobe]( https://www.adobe.com/ai/overview.html?lang=es)
+* [Información general sobre la IA de Adobe](https://www.adobe.com/ai/overview.html?lang=es)
 
 * [IA generativa en productos de Experience Cloud](https://experienceleague.adobe.com/es/docs/core-services/interface/features/generative-ai)
 
