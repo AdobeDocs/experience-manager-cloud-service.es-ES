@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 32%
+ht-degree: 57%
 
 ---
 
@@ -92,10 +92,10 @@ Si le interesa probar esta nueva función y compartir sus comentarios, envíe un
 
 | Pregunta | Respuesta |
 |---|---|
-| *¿Cómo puede un proyecto volver al repositorio Git administrado por Adobe si es necesario?* | Volver atrás es sencillo. [Actualice las canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) para que apunten al repositorio de Adobe y elimine el repositorio externo si ya no es necesario. |
-| *¿Es posible configurar diferentes repositorios para diferentes entornos (por ejemplo, no producción frente a producción) para permitir primero las pruebas en no producción?* | Sí, se pueden configurar diferentes repositorios para entornos independientes. Por ejemplo, la canalización de desarrollo o de calidad del código puede señalar a un repositorio externo mientras que la canalización de producción permanece conectada al repositorio de Adobe. Asegúrese de que el trabajo de sincronización entre los dos repositorios permanece activo durante esta configuración. |
-| *¿La configuración existente, como las listas de permitidos IP, sigue funcionando?* | Sí, las listas de permitidos IP existentes siguen funcionando como de costumbre. Sin embargo, si el repositorio Git externo está protegido por un firewall, las [direcciones IP de Adobe necesarias deben agregarse a la lista de permitidos](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
-| *¿Funcionan todas las URL del repositorio de GitLab? La dirección URL del repositorio en uso sigue el formato `https://gitlab_dedicated_url.com/path/repo-name.git`, que difiere del ejemplo de la documentación.* | Sí, se admite cualquier repositorio de GitLab que admita API V3 o V4, incluidas las URL de GitLab autoalojadas como la descrita en [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
+| *¿Cómo puede un proyecto volver al repositorio de Git administrado por Adobe si es necesario?* | Volver atrás es sencillo. [Actualice las canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) para que apunten al repositorio de Adobe y quite el repositorio externo si ya no es necesario. |
+| *¿Es posible configurar diferentes repositorios para diferentes entornos (por ejemplo, no producción frente a producción) para permitir primero las pruebas en no producción?* | Sí, se pueden configurar diferentes repositorios para entornos independientes. Por ejemplo, la canalización de desarrollo o de calidad del código puede apuntar a un repositorio externo, mientras que la canalización de producción permanece conectada al repositorio de Adobe. Asegúrese de que el trabajo de sincronización entre los dos repositorios permanece activo durante esta configuración. |
+| *¿Continúa funcionando la configuración existente, como las listas de IP permitidas?* | Sí, las listas de IP permitidas existentes siguen funcionando como de costumbre. Sin embargo, si el repositorio de Git externo está protegido por un firewall, las [direcciones IP de Adobe necesarias deben añadirse a la lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
+| *¿Funcionan todas las URL del repositorio de GitLab? La URL del repositorio en uso sigue el formato `https://gitlab_dedicated_url.com/path/repo-name.git`, que difiere del ejemplo de la documentación.* | Sí, se admite cualquier repositorio de GitLab que admita API V3 o V4, incluidas las URL de GitLab autoalojado como la descrita en [Añadir repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
 
 
 #### Administrar tokens de acceso{#manage-access-tokens}
@@ -107,9 +107,9 @@ Consulte [Administrar tokens de acceso](/help/implementing/cloud-manager/managin
 Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un mensaje de correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
 
 
-### Agregar canalización de configuración de Edge Delivery {#add-eds-pipeline}
+### Añadir canalización de configuración de Edge Delivery {#add-eds-pipeline}
 
-Las canalizaciones de configuración ahora son compatibles con los sitios creados con Edge Delivery Services, lo que expande esta capacidad más allá de los entornos de Cloud Service. Puede usar **Canalizaciones de configuración** para administrar la configuración, como las reglas de filtrado de tráfico y las configuraciones del firewall de aplicaciones web (WAF), cuando corresponda. Consulte [Configuraciones compatibles](/help/operations/config-pipeline.md#configurations).
+Ahora se admiten las canalizaciones de configuración para los sitios creados con Edge Delivery Services, lo que amplía esta capacidad más allá de los entornos de Cloud Service. Puede usar las **canalizaciones de configuración** para administrar las configuraciones como las reglas de filtrado de tráfico y las configuraciones WAF cuando corresponda. Consulte [Configuraciones compatibles](/help/operations/config-pipeline.md#configurations).
 
 ![Agregar canalización de Edge Delivery en la lista desplegable Agregar canalización](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Agregar una canalización de Edge Delivery desde la página **Información general del programa**, tarjeta **Canalizaciones**.*
 

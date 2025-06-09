@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
 source-wordcount: '1282'
-ht-degree: 75%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ Con Edge Delivery Services, AEM ofrece experiencias excepcionales que fomentan l
 Mediante Edge Delivery Services, puede:
 
 * Cree sitios rápidos con una puntuación de Lighthouse perfecta y monitorice continuamente el rendimiento de su sitio a través de la telemetría operativa.
-* Aumentar la eficacia de la creación desacoplando las fuentes de contenido. De forma predeterminada, puede utilizar la creación de AEM con el Editor universal y la creación basada en documentos. De este modo, puede trabajar con varias fuentes de contenido en el mismo sitio web.
+* Aumentar la eficacia de la creación desacoplando las fuentes de contenido. De forma predeterminada, puede utilizar tanto la creación en AEM con el editor universal como la creación basada en documentos. De este modo, puede trabajar con varias fuentes de contenido en el mismo sitio web.
 * Utilice un marco de trabajo de experimentación integrado que permita la creación y ejecución rápidas de pruebas sin impacto en el rendimiento y la publicación rápida en producción de un ganador de pruebas.
 
 ## Reacción ágil a las necesidades empresariales {#agile-reaction}
@@ -46,9 +46,9 @@ Al centrarse en el valor para los autores, su proyecto de Edge Delivery Services
 
 ## Herramientas flexibles para los creadores de contenido {#overview}
 
-Edge Delivery Services es un conjunto de servicios componibles que permite un alto grado de flexibilidad en la forma en que se crea contenido en su sitio web. Puede usar la [administración de contenido de AEM](/help/sites-cloud/authoring/author-publish.md) y la creación de contenido con el [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md), así como la [creación basada en documentos](https://www.aem.live/docs/authoring).
+Edge Delivery Services es un conjunto de servicios componibles que permite un alto grado de flexibilidad en la forma en que se crea contenido en su sitio web. Puede utilizar tanto la [gestión de contenidos de AEM](/help/sites-cloud/authoring/author-publish.md) como la creación de contenido mediante el [editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md), así como la [creación basada en documentos.](https://www.aem.live/docs/authoring)
 
-El diagrama siguiente ilustra cómo se puede editar contenido en Microsoft Word (creación basada en documentos) y publicarlo en Edge Delivery Services junto con la creación de contenido de AEM mediante el Editor universal.
+El diagrama siguiente ilustra cómo puede editar contenido en Microsoft Word (creación basada en documentos) y publicarlo en Edge Delivery Services junto con la creación de contenido de AEM mediante el editor universal.
 
 ![Arquitectura de Edge Delivery](assets/AEM-with-EDS-publishing-simple2.png)
 
@@ -67,13 +67,13 @@ Con la creación basada en documentos, puede utilizar contenido directamente de 
 
 Para obtener más información, consulte la documentación sobre creación basada en documentos:
 
-* Para obtener más información sobre cómo empezar a usar Edge Delivery, consulte la sección [Compilación de la documentación de aem.live.](https://www.aem.live/docs/#build)
-* Para saber cómo crear y publicar contenido mediante Edge Delivery, consulte la sección [Publicar de la documentación de aem.live.](https://www.aem.live/docs/authoring)
-* Para saber cómo iniciar correctamente el proyecto de sitio web, consulte la [sección Iniciar de la documentación de aem.live](https://www.aem.live/docs/#launch)
+* Para obtener más información sobre cómo empezar a utilizar Edge Delivery, consulte la sección [Generar de la documentación de aem.live.](https://www.aem.live/docs/#build)
+* Para comprender cómo crear y publicar contenido mediante Edge Delivery, consulte la sección [Publicar de la documentación de aem.live.](https://www.aem.live/docs/authoring)
+* Para comprender cómo iniciar correctamente el proyecto de su sitio web, consulte la sección [Iniciar de la documentación de aem.live](https://www.aem.live/docs/#launch).
 
-### Creación de AEM con el editor universal{#wysiwyg-authoring}
+### Creación de AEM con el editor universal.{#wysiwyg-authoring}
 
-WYSIWYG El editor universal es un sitio único, personalizable y que se puede utilizar para editar contenido en directo y en contexto con una vista previa visual.
+El editor universal es un lugar “lo que se ve es lo que se obtiene” (WYSIWYG) personalizable y único para editar contenido en directo y en contexto con una vista previa visual.
 
 * Con la creación de AEM con el editor universal, aumenta la eficacia del autor, ya sea sin encabezado o con encabezado.
 * Puede aprovechar las completas funcionalidades de gestión de contenido de AEM, incluidas las de flujo de trabajo y control de la gestión de contenido.
@@ -84,8 +84,8 @@ WYSIWYG El editor universal es un sitio único, personalizable y que se puede ut
 
 Introducción a la creación de AEM con el editor universal y Edge Delivery Services:
 
-* Para obtener una descripción general de la creación de AEM con el editor universal, consulte el documento [Creación con AEM para Edge Delivery Services](https://www.aem.live/docs/aem-authoring) en la documentación de aem.live.
-* Para obtener información general para desarrolladores, consulte el documento [Introducción: Tutorial para desarrolladores de Universal Editor](https://www.aem.live/developer/ue-tutorial) en la documentación de aem.live.
+* Para obtener información general de la creación de AEM con el editor universal, consulte el documento [Creación con AEM para Edge Delivery Services](https://www.aem.live/docs/aem-authoring) en la documentación de aem.live.
+* Para obtener información general para desarrolladores, consulte el documento [Introducción: Tutorial del editor universal para desarrolladores](https://www.aem.live/developer/ue-tutorial) en la documentación de aem.live.
 
 ### Decisión de un método de creación {#authoring-method}
 
@@ -100,9 +100,9 @@ La flexibilidad de AEM garantiza que se cubran sus necesidades de creación. Ado
 
 Edge Delivery Services forma parte de Adobe Experience Manager. Como tal, Edge Delivery Services y AEM Sites pueden coexistir en el mismo dominio, lo que es un caso de uso común para sitios web más grandes. Además, las páginas de AEM Sites pueden consumir contenido de Edge Delivery Services sin problemas, y lo mismo sucede a la inversa.
 
-Consulte el documento [Introducción: Tutorial para desarrolladores de Universal Editor](https://www.aem.live/developer/ue-tutorial) en la documentación de aem.live para aprender a iniciar su propio proyecto de creación con AEM y Edge Delivery Services.
+Consulte el documento [Introducción: Tutorial del editor universal para desarrolladores](https://www.aem.live/developer/ue-tutorial) en la documentación de aem.live y aprenda a iniciar su propio proyecto para crear con AEM y Edge Delivery Services.
 
-También puede usar Edge Delivery Services con [Adobe Target](https://www.aem.live/developer/target-integration), [telemetría operativa](https://www.aem.live/developer/rum) para diagnosticar el uso y el rendimiento de sus sitios y [Launch.](https://experienceleague.adobe.com/es/docs/experience-platform/tags/home)
+También puede usar Edge Delivery Services con [Adobe Target](https://www.aem.live/developer/target-integration), [telemetría operativa](https://www.aem.live/developer/rum) para diagnosticar el uso y el rendimiento de sus sitios y [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Obtención de ayuda de Adobe {#getting-help}
 
@@ -114,7 +114,7 @@ Adobe proporciona tres canales para ayudarle con Edge Delivery Services:
 
 ### Acceder a recursos de la comunidad {#community-resources}
 
-Adobe se compromete a proporcionarle la mejor participación de la comunidad y la mejor asistencia para Edge Delivery Services, la creación de AEM con el editor universal y la creación basada en documentos.
+Adobe se compromete a ofrecerle la mejor participación de la comunidad y asistencia para Edge Delivery Services, la creación de AEM con el editor universal y la creación basada en documentos.
 
 * Participe en la [Comunidad de Experience League](https://adobe.ly/3Q6kTKl) para hacer preguntas, compartir comentarios, iniciar discusiones, buscar ayuda de expertos de Adobe y asesores/expertos de AEM, y conectarse con personas con ideas afines en tiempo real. 
 * Únase a nuestro [Canal de la discordia](https://discord.gg/aem-live), una plataforma más informal para interacciones en tiempo real e intercambio rápido de ideas.

@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 569ab7cfab02cfc5d5ad1c8f402a51df34f4bac6
 workflow-type: tm+mt
 source-wordcount: '3039'
-ht-degree: 69%
+ht-degree: 71%
 
 ---
 
@@ -39,7 +39,7 @@ Las funciones de la tabla siguiente se han anunciado como obsoletas, pero aún n
 | Sites | [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) | Los editores preferidos para administrar el contenido sin encabezado en AEM son: <br> el [Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para la edición visual.<br>- [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición basada en formularios. |
 | [!DNL Sites] | [API de uso de JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API de uso de Java](https://experienceleague.adobe.com/es/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Propiedades de Fragmentos de experiencias para **Estado de los medios sociales**. | Está previsto eliminar esta función en breve. |
-| Sites | [Automatización de la instalación de Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Ninguno |
+| Sites | [Automatización de la configuración de Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Ninguno |
 | [!DNL Sites] | Fragmentos de contenido simples basados en plantillas. | [Fragmentos de contenido estructurados basados en modelos](/help/assets/content-fragments/content-fragments-models.md) ahora. |
 | [!DNL Assets] | `DAM Asset Update` flujo de trabajo para procesar imágenes grabadas. | Ahora, la ingesta de recursos utiliza [los microservicios](/help/assets/asset-microservices-overview.md) de recursos. |
 | [!DNL Assets] | Cargar recursos directamente en [!DNL Experience Manager]. Consulte [API de carga de recursos en desuso](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilice la [carga binaria directa](/help/assets/add-assets.md). Para obtener más información técnica, consulte [API de carga directa](/help/assets/developer-reference-material-apis.md#upload-binary). |
@@ -115,31 +115,31 @@ Las API de la tabla siguiente (haga clic para ampliarlas y verlo) se han anuncia
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
     <td>La pizarra Apache Felix Http ya no es compatible. Migre su código a la pizarra Http OSGi. <a href="#org.apache.felix.http.whiteboard">Consulte las notas de eliminación a continuación.</a></td>
-    <td>1/27/2022</td>
+    <td>27/1/2022</td>
     <td>31/8/2025</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
     <td>Esta API está obsoleta. Esta API está en desuso. Migre su código a las API de XML proporcionadas por el JDK.</td>
-    <td>1/27/2022</td>
+    <td>27/1/2022</td>
     <td>31/8/2025</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
     <td>AEM as a Cloud Service no admite esta API de inicio de sesión posterior interna. <a href="#ch.qos.logback">Consulte las notas de eliminación a continuación.</a></td>
-    <td>1/27/2022</td>
+    <td>27/1/2022</td>
     <td>31/8/2025</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
     <td>AEM as a Cloud Service no admite esta API interna de log4j. <a href="#org.slf4j">Consulte las notas de eliminación a continuación.</a></td>
-    <td>1/27/2022</td>
+    <td>27/1/2022</td>
     <td>31/8/2025</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>Apache Log4j 1 ha llegado a su fin de vida útil en 2015 y ya no es compatible. <a href="#org.apache.log4j">Consulte las notas de eliminación a continuación.</a></td>
-    <td>1/27/2022</td>
+    <td>27/1/2022</td>
     <td>31/8/2025</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
@@ -161,13 +161,13 @@ Las API de la tabla siguiente (haga clic para ampliarlas y verlo) se han anuncia
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
-    <td>Esta API es solo para uso interno de.</td>
+    <td>Esta API es solo para uso interno.</td>
     <td>23/9/2024</td>
     <td>31/8/2025</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
-    <td>Esta API es solo para uso interno de.</td>
+    <td>Esta API es solo para uso interno.</td>
     <td>23/9/2024</td>
     <td>31/8/2025</td>
   </tr>
@@ -310,7 +310,7 @@ Esta sección enumera las API que se han desaprobado y eliminado. Algunas API ha
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.cache</td>
-    <td>Esta API es solo para uso interno de.</td>
+    <td>Esta API es solo para uso interno.</td>
   </tr>
 </tbody>
 </table>
