@@ -1177,8 +1177,8 @@ ht-degree: 98%
          + [Obtenga información sobre el uso de referencias en fragmentos de contenido](/help/journey-headless/author/references.md)
          + [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](/help/journey-headless/author/metadata-tagging.md)
 + IA generativa  {#generative-ai}
-   + [IA generativa en AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
-   + [Generar variaciones: integrado en editores AEM](/help/generative-ai/generate-variations-integrated-editor.md)
+   + [IA generativa de AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
+   + [Generar variaciones: integrado en Editores AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Generar variaciones](/help/generative-ai/generate-variations.md)
    + [Asistente (Beta limitado)](/help/implementing/cloud-manager/aem-ai-assistant.md)
    + [Asistente de IA para AEM Forms (Forms Experience Builder) (usuario que lo adoptó por primera vez)](/help/edge/docs/forms/forms-ai-assistant.md)
@@ -1243,9 +1243,9 @@ ht-degree: 98%
       + Sitios de Edge Delivery {#edge-delivery-sites}
          + [Introducción a Edge Delivery Services en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Añadir un sitio de Edge Delivery a Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [Cree su primer sitio de Edge Delivery con un solo clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [Creación del primer sitio de Edge Delivery con un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [Configuración de la validación push para un sitio de Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
-         + [Configuración de la Source de contenido](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
+         + [Configuración de la fuente de contenido](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Administración de sitios de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Configuración del dominio {#custom-domain-names}
          + [Introducción a la configuración de dominios](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -1259,7 +1259,7 @@ ht-degree: 98%
          + [Solución de problemas de errores de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [Administrar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Asignaciones de dominio {#domain-mappings}
-         + [Agregar una asignación de dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
+         + [Añadir una asignación de dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
          + [Administrar asignaciones de dominio](/help/implementing/cloud-manager/domain-mappings/manage-domain-mappings.md)
       + Listas de IP permitidas {#ip-allow-lists}
          + [Introducción a las listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
