@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
+source-git-commit: 5514aec10184d67c24d00d2ed783a154e6587035
 workflow-type: tm+mt
-source-wordcount: '9849'
+source-wordcount: '10070'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
       * [Cargue sus vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/file-format-support.md).
 
-   * Supervise el progreso de la codificación de vídeo [1&rbrace; desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
+   * Supervise el progreso de la codificación de vídeo [1} desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
 
 1. **Administre sus vídeos de Dynamic Media** mediante cualquiera de las siguientes acciones:
 
@@ -60,7 +60,6 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
    * Previsualización y publicación de recursos de vídeo
 
       * Vea el vídeo de origen y las representaciones codificadas del vídeo junto con sus miniaturas asociadas:
-
         [Previsualizar vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) o [Previsualizar recursos](/help/assets/dynamic-media/previewing-assets.md)
         [Administrar representaciones de vídeo](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -70,7 +69,6 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
    * Trabajo con metadatos de vídeo
 
       * Edite las propiedades del vídeo, como el título, la descripción y las etiquetas, y campos de metadatos personalizados:
-
         [Editar propiedades de vídeo](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Administración de metadatos para recursos digitales](/help/assets/manage-metadata.md)
@@ -95,11 +93,9 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
    * Si utiliza un sistema WCM de terceros, puede vincular o incrustar vídeos a sus páginas web.
 
       * Integrar vídeo con URL:
-
         [Vincular URL a su aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integración de vídeo mediante código incrustado en una página web:
-
         [Incrustar el visor de vídeo en una página web](/help/assets/dynamic-media/embed-code.md).
 
    * [Generar informes de vídeo](#viewing-video-reports).
@@ -135,7 +131,7 @@ Al administrar un solo vídeo y conjuntos de vídeos adaptables, se admiten los 
 * Organice, examine y busque vídeos con compatibilidad total con metadatos para una administración eficaz de los recursos de vídeo.
 * Ofrezca conjuntos de vídeos adaptables a la web y a equipos de escritorio, tabletas y dispositivos móviles.
 
-La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
+La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -151,7 +147,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulte también [Visualizadores solo para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Visualizadores solo para Experience Manager Assets](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) en la [Guía de referencia de visualizadores de Dynamic Media](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources).
+Consulte también [Visualizadores solo para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Visualizadores solo para Experience Manager Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) en la [Guía de referencia de visualizadores de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 ## Práctica recomendada: Uso del visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -163,7 +159,7 @@ En la parte de reproducción del visor, detecta automáticamente la capacidad de
 
 Puede combinar en un solo reproductor la capacidad de diseñar los componentes de reproducción mediante HTML5 y CSS. Puede tener reproducción integrada y utilizar flujo adaptable y progresivo según la capacidad del explorador. Toda esta funcionalidad significa que puede ampliar el alcance del contenido multimedia enriquecido tanto para usuarios de escritorio como móviles, así como garantizar una experiencia de vídeo optimizada.
 
-Consulte también [Solo visores para Experience Manager Assets](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) en la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources).
+Consulte también [Solo visores para Experience Manager Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) en la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 
 ### Reproducción de vídeo en equipos de escritorio y dispositivos móviles mediante el visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -183,7 +179,7 @@ DASH es el estándar internacional y HLS es un estándar de Apple. Ambos se util
 
 El vídeo progresivo se proporciona descargando y almacenando el vídeo localmente en el sistema de escritorio o el dispositivo móvil de un usuario.
 
-En la tabla siguiente se describe el dispositivo, el explorador y el método de reproducción de vídeos en equipos de escritorio y dispositivos móviles que utilizan el [Visor de vídeo HTML5 de Dynamic Media](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
+En la tabla siguiente se describe el dispositivo, el explorador y el método de reproducción de vídeos en equipos de escritorio y dispositivos móviles que utilizan el [Visor de vídeo HTML5 de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
 
 <table>
  <tbody>
@@ -460,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=es).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -562,17 +558,17 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y Adobe VTT. A
 1. En el modo de selección de recursos, en ![Ver icono de tarjeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista de tarjeta) o en ![Ver icono de lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista de lista), seleccione el recurso de vídeo.
 1. En la barra de herramientas, haga clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propiedades.
    ![Recurso de vídeo seleccionado con marca de verificación sobre la imagen en miniatura de vídeo y Propiedades de vista resaltadas en la barra de herramientas.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Recurso de vídeo seleccionado en la vista de tarjeta.*
-1. En la página Propiedades del vídeo, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**.
+1. En la página Propiedades del vídeo, seleccione la ficha **[!UICONTROL Pistas de subtítulos y audio]**.
 
    >[!TIP]
-   >Si no ve la ficha **[!UICONTROL Subtítulos y pistas de audio]**, significa una de estas dos cosas:
+   >Si no ve la ficha **[!UICONTROL Pistas de subtítulos y audio]**, significa una de estas dos cosas:
    >
    >* La carpeta en la que reside el vídeo seleccionado no tiene asignado un perfil de vídeo. En cuyo caso, consulte [Aplicar un perfil de vídeo a la carpeta](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* O bien, Dynamic Media debe volver a procesar el vídeo. En cuyo caso, consulte [Volver a procesar los recursos de Dynamic Media en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
    >
    >Cuando haya completado cualquiera de las tareas anteriores, vuelva a estos pasos.
 
-   ![Pestaña Pistas de audio y subtítulos en la página Propiedades.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   ![Ficha Pistas de subtítulos y audio en la página Propiedades.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
    *Ficha Pistas de subtítulos y audio en la página Propiedades del vídeo.*
 
 1. Para agregar una o más pistas de audio a un vídeo, haga lo siguiente:
@@ -732,16 +728,45 @@ Los cambios de varios subtítulos tienen prioridad sobre los subtítulos añadid
 1. Publique el vídeo como de costumbre.
 La URL existente con el modificador caption ahora puede cargar varios subtítulos.
 
+
+### Editar subtítulos de vídeo
+
+Puede editar subtítulos (subtítulos) para recursos de vídeo directamente en la interfaz de usuario de Dynamic Media. Esta función le permite editar `.vtt` archivos de subtítulos, previsualizar actualizaciones y publicar cambios sin problemas.
+
+* Cuando se publican subtítulos, los cambios se sincronizan y publican automáticamente.
+* Si se producen errores de edición y necesita volver a generar los subtítulos:
+   * Elimine el archivo de subtítulos existente.
+   * Use la opción 2 (Convertir pistas de audio) en el paso 7 de [Agregue varios subtítulos y pistas de audio al vídeo](#add-msma).
+   * Haga clic en **Guardar** o **Guardar y cerrar** para generar un nuevo archivo de subtítulos.
+* La vista previa de subtítulos dentro del editor es solo para edición y no refleja cómo aparecen los subtítulos en la interfaz de usuario final de reproducción de vídeo.
+
+**Para editar subtítulos de vídeo:**
+
+1. Vaya al recurso de vídeo cuyos subtítulos desee editar.
+1. En el modo de selección de recursos, en ![Ver icono de tarjeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista de tarjeta) o en ![Ver icono de lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista de lista), seleccione el recurso de vídeo.
+1. En la barra de herramientas, haga clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propiedades.
+1. En la página Propiedades, seleccione la ficha **[!UICONTROL Pistas de subtítulos y audio]**.
+1. Bajo el encabezado **Subtítulos**, haga clic en ![icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ProjectEdit_18_N.svg) a la derecha del nombre de archivo de un subtítulo.
+
+   ![El icono Editar subtítulo bajo el encabezado de Subtítulos](/help/assets/dynamic-media/assets/msma-editcaption.png)
+
+1. En el cuadro de diálogo **Editar subtítulo**, edite el texto del archivo WebVTT según sea necesario.
+
+   ![Cuadro de diálogo Editar subtítulo](/help/assets/dynamic-media/assets/msma-editsubtitle-dialogbox.png)
+
+1. En la esquina inferior derecha del cuadro de diálogo, haga clic en **Guardar**.
+
+
 ### Ver el estado del ciclo de vida de los archivos de subtítulos y pistas de audio cargados {#lifecycle-status-video}
 
-Puede observar el estado del ciclo vital de cualquier subtítulo o archivo de pista de audio cargado en el vídeo principal. Puede hacerlo desde la ficha **Subtítulos y pistas de audio** de **Propiedades**.
+Puede observar el estado del ciclo vital de cualquier subtítulo o archivo de pista de audio cargado en el vídeo principal. Puede hacerlo desde la pestaña **Subtítulos y pistas de audio** de **Propiedades**.
 
 **Para ver el estado del ciclo de vida de un vídeo:**
 
 1. Vaya al recurso de vídeo cuyo estado de ciclo vital desee ver.
 1. En el modo de selección de recursos, en ![Ver icono de tarjeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista de tarjeta) o en ![Ver icono de lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista de lista), seleccione el recurso de vídeo.
 1. En la barra de herramientas, haga clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propiedades.
-1. En la página **Propiedades**, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**.
+1. En la página **Propiedades**, seleccione la pestaña **[!UICONTROL Pistas de subtítulos y audio]**.
 1. En la columna **[!UICONTROL Estado]**, anote el estado de cada título o archivo de audio.
 
 | Estado de los subtítulos y las pistas de audio | Descripción |
@@ -757,7 +782,7 @@ Puede observar el estado del ciclo vital de cualquier subtítulo o archivo de pi
 
 De forma predeterminada, el audio original de un vídeo se establece como el audio predeterminado que se va a reproducir.
 
-Sin embargo, cualquier archivo de pista de audio cargado puede establecerse como audio predeterminado para que se reproduzca después de cargar un vídeo en el visualizador. En la interfaz de usuario Propiedades, en la ficha **Subtítulos y pistas de audio**, la etiqueta `Default` se aplica a la derecha del archivo de pista de audio para la reproducción de vídeo.
+Sin embargo, cualquier archivo de pista de audio cargado puede establecerse como audio predeterminado para que se reproduzca después de cargar un vídeo en el visualizador. En la interfaz de usuario Propiedades, en la ficha **Pistas de subtítulos y audio**, la etiqueta `Default` se aplica a la derecha del archivo de pista de audio para la reproducción de vídeo.
 
 >[!NOTE]
 >
@@ -771,7 +796,7 @@ Sin embargo, cualquier archivo de pista de audio cargado puede establecerse como
 1. Vaya al recurso de vídeo cuya pista de audio predeterminada desee establecer.
 1. En el modo de selección de recursos, en ![Ver icono de tarjeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista de tarjeta) o en ![Ver icono de lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista de lista), seleccione el recurso de vídeo.
 1. En la barra de herramientas, haga clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propiedades.
-1. En la página Propiedades, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**.
+1. En la página Propiedades, seleccione la ficha **[!UICONTROL Pistas de subtítulos y audio]**.
 1. Bajo el encabezado **Pistas de audio**, seleccione el archivo de pista de audio que desee establecer como predeterminado para el vídeo.
 1. Haga clic en ![Icono de audio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Establecer como predeterminado]**.
 1. En el cuadro de diálogo **Establecer como predeterminado**, haga clic en **[!UICONTROL Reemplazar]**.
@@ -825,7 +850,7 @@ La pista de audio original extraída de un vídeo principal no se puede eliminar
 1. Vaya al recurso de vídeo cuya pista de audio predeterminada desee establecer.
 1. En el modo de selección de recursos, en ![Ver icono de tarjeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista de tarjeta) o en ![Ver icono de lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista de lista), seleccione el recurso de vídeo.
 1. En la barra de herramientas, haga clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propiedades.
-1. En la página Propiedades, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**.
+1. En la página Propiedades, seleccione la ficha **[!UICONTROL Pistas de subtítulos y audio]**.
 1. Realice una de las siguientes acciones:
 
    * Subtítulos: bajo el encabezado **Subtítulos**, seleccione uno o más archivos de subtítulos que desee eliminar del vídeo y, a continuación, haga clic en ![Eliminar icono](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Eliminar]**.
@@ -847,7 +872,7 @@ No se puede descargar la pista de audio original extraída de un archivo de víd
 1. Vaya al recurso de vídeo cuya pista de audio predeterminada desee establecer.
 1. En el modo de selección de recursos, en ![Ver icono de tarjeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista de tarjeta) o en ![Ver icono de lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista de lista), seleccione el recurso de vídeo.
 1. En la barra de herramientas, haga clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propiedades.
-1. En la página **Propiedades**, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**.
+1. En la página **Propiedades**, seleccione la pestaña **[!UICONTROL Pistas de subtítulos y audio]**.
 1. Realice una de las siguientes acciones:
 
    * Subtítulos - Bajo el encabezado **Subtítulos**, seleccione uno o más archivos de subtítulos que desee descargar del vídeo y, a continuación, haga clic en ![Icono de descarga](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Descargar]**.
@@ -891,7 +916,7 @@ Consulte también [Accesibilidad en Dynamic Media](/help/assets/dynamic-media/ac
 
 Dynamic Media puede convertir archivos de rótulo al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear/indexar el contenido para que los vídeos sean más fáciles de descubrir y dar a los clientes más detalles sobre el contenido del vídeo.
 
-Consulte [Servicio de contenido estático (que no es de imagen)](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
+Consulte [Servicio de contenido estático (que no es de imagen)](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
 
 **Para agregar subtítulos a un vídeo:**
 
@@ -1510,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1572,11 +1597,11 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 
    ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
 
-1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+1. On the video's Properties page, select the **[!UICONTROL Captions & Audio tracks]** tab.
 
 
    >[!TIP]
-   >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
+   >If you do not see the [!UICONTROL Captions & Audio tracks] tab, it means either one of two things:
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
