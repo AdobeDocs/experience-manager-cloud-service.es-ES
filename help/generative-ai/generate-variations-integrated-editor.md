@@ -5,17 +5,17 @@ feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Generar variaciones: integrado en editores AEM {#generate-variations-integrated-in-aem-editors}
+# Generar variaciones: integrado en Editores AEM {#generate-variations-integrated-in-aem-editors}
 
 Si está buscando una manera de optimizar sus canales digitales y acelerar la creación de contenido, puede utilizar “Generar variaciones” integrado en los editores AEM. 
 
-Generar variaciones utiliza inteligencia artificial (IA) generativa para crear variaciones de contenido basadas en los datos introducidos. Después de crear variaciones, puede usar el contenido de su sitio web y también medir su éxito usando la funcionalidad [Experimentación](https://www.aem.live/docs/experimentation) de [Edge Delivery Services](/help/edge/overview.md).
+Generar variaciones utiliza la inteligencia artificial (IA) generativa para crear variaciones de contenido basadas en los datos introducidos. Después de crear variaciones, puede usar el contenido de su sitio web y también medir su éxito usando la funcionalidad [Experimentación](https://www.aem.live/docs/experimentation) de [Edge Delivery Services](/help/edge/overview.md).
 
 Esto ayuda a acelerar la velocidad del contenido mediante la creación rápida de contenido de la marca en minutos. Esto, a su vez, ayuda a mejorar la conversión con nuevas variantes de copia.
 
@@ -172,7 +172,7 @@ La administración del uso depende de la acción realizada:
 
   >[!NOTE]
   >
-  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/es/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea adquirir acciones más generativas.
+  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea adquirir acciones más generativas.
 
 ## Acceso a “Generar variaciones” {#access-generate-variations}
 
@@ -332,9 +332,9 @@ Para obtener más información, también puede leer:
 
    * [IA generativa en productos de Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/es/docs/core-services/interface/features/generative-ai#aem)
 
-* [Generar variación de la página de aterrizaje en Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
+* [Página de aterrizaje Generar variaciones en Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html?lang=es)
 
-* [Generativo en AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
+* [Generativa en AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
 
 ## Historial de versiones {#release-history}
 

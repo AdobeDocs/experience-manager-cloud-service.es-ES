@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1207'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ La integración de formularios con un modelo de datos de formulario (FDM) en el 
 
 ## Consideraciones
 
-* Si no ve el icono **Fuentes de datos** en su interfaz de Universal Editor o la propiedad **Referencia de enlace** en el panel de propiedades derecho, habilite la extensión **Fuente de datos** en **Extension Manager**.
+* Si no ve el icono **Fuentes de datos** en su interfaz del editor universal o la propiedad **Referencia de enlace** en el panel de propiedades de la derecha, habilite la extensión **Fuente de datos** en **Extension Manager**.
 
-  ![administrador de extensiones](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-  Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar extensiones en el editor universal.
+  Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar las extensiones del editor universal.
 
 * Actualmente no se admite el servicio de rellenado previo para formularios en el editor universal.
 
@@ -133,11 +133,11 @@ Cuando se crea un formulario no basado en un esquema, no se configura ninguna fu
 
    ![Crear formulario](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-Puede agregar enlaces de datos a un campo de formulario seleccionándolo en la propiedad **Referencia de enlace**. Por ejemplo, vamos a agregar una referencia de enlace de datos al cuadro de texto **Id** que ya está presente en el formulario.
+Puede añadir un enlace de datos a un campo de formulario seleccionándolo en la propiedad **Referencia de enlace**. Por ejemplo, vamos a añadir una referencia de enlace de datos al cuadro de texto **Id** que ya está presente en el formulario.
 Para seleccionar el enlace de datos para el campo de formulario del árbol de fuentes de datos, realice los siguientes pasos:
 
-1. Abra las propiedades del campo de formulario para el que desea agregar la referencia de enlace de datos.
-1. Vaya a la propiedad **Bind Reference** y haga clic en el icono **Examinar**.
+1. Abra las propiedades del campo de formulario para el que desea añadir la referencia de enlace de datos.
+1. Vaya a la propiedad **Referencia de enlace** y haga clic en el icono **Examinar**.
 
    ![Añadir manualmente el enlace de datos para un campo de formulario](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
@@ -145,7 +145,7 @@ Para seleccionar el enlace de datos para el campo de formulario del árbol de fu
 
    ![seleccionar referencia de enlace de datos](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
 
-1. Seleccione el elemento de datos del árbol de fuentes de datos que desea enlazar al campo de formulario y haga clic en **Seleccionar**.
+1. Seleccione el elemento de datos del árbol de fuente de datos que desea enlazar al campo de formulario y haga clic en **Seleccionar**.
 
    ![seleccionar elemento de datos](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
 

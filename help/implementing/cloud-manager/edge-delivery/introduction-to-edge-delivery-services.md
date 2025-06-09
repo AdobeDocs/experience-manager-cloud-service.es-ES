@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '798'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 89%
 Edge Delivery Services es un conjunto de servicios componibles que permite un alto grado de flexibilidad en la forma en que se crea contenido en su sitio web. Esto le permite hacer lo siguiente:
 
 * Crear sitios rápidos con una puntuación de Lighthouse perfecta.
-* Monitorización continua del rendimiento mediante telemetría operativa.
+* Monitorizar de forma continua del rendimiento mediante la telemetría operativa.
 * Aumentar la eficacia de la creación desacoplando las fuentes de contenido.
 
 Puede usar tanto la administración de contenido de AEM como la creación WYSIWYG utilizando el editor universal además de la creación basada en documentos.
@@ -43,9 +43,9 @@ Maximice sus ventajas de Adobe accediendo a sus licencias de Edge Delivery Servi
 * [Sistema de informes SLA de acceso](/help/implementing/cloud-manager/sla-reporting.md) (*próximamente*)
 * [Obtenga acceso a la compatibilidad con Adobe](/help/edge/overview.md#support-ticket) para sus programas de producción registrados.
 
-Si tiene una licencia de Edge Delivery Services (EDS), puede usar una [CDN administrada por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) para su sitio de Edge Delivery y aprovechar características como la administración de CDN de autoservicio y la renovación automática de certificados DV cada tres meses, a menos que se elimine.
+Si tiene una licencia de Edge Delivery Services (EDS), puede usar una [CDN administrada por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) para su sitio de Edge Delivery y aprovechar funciones como la administración de CDN de autoservicio y la renovación automática de certificados DV cada tres meses, a menos que se elimine.
 
-Alternativamente, si decide utilizar su CDN (es decir, una CDN no administrada por Adobe), independientemente de las licencias de Edge Delivery Services, debe configurarla en la plataforma `aem.live`. Consulte [Configuración de CDN BYO](https://www.aem.live/docs/byo-cdn-setup).
+O bien, si decide utilizar su CDN (es decir, una CDN no administrada por Adobe), independientemente de las licencias de Edge Delivery Services, debe configurarla en la plataforma `aem.live`. Consulte [Configuración de BYO CDN](https://www.aem.live/docs/byo-cdn-setup).
 
 
 ## Acerca de la adición de Edge Delivery Services a un programa de producción o de zona protegida
@@ -82,11 +82,11 @@ La **lista de tareas pendientes de Edge Delivery** en Cloud Manager es una lista
 | 3 | Añadir sitio de Edge Delivery O <br>Crear sitio ahora | Consulte [Añadir un sitio de Edge Delivery](#eds-add-site).<br>Consulte [Crear un sitio de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | 4 | Añadir dominio | Consulte [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Añadir certificado SSL | Consulte [Añadir certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-| 6 | Configure la CDN de su sitio de Edge Delivery | Consulte [Agregar una asignación de dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
+| 6 | Configure la CDN de su sitio de Edge Delivery | Consulte [Añadir una asignación de dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
 | 7 | Configuración de validación push | Ver [Configuración de validación push para un sitio Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Go-Live | Consulte [Lista de comprobación de lanzamiento](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441564?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registro de un vale de asistencia {#eds-support-ticket}
 

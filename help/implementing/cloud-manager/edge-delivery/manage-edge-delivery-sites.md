@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '712'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 97%
 
 Obtenga información sobre cómo administrar sitios de Edge Delivery en Cloud Manager añadiendo una configuración de CDN a un sitio existente. O bien, elimine un sitio de Edge Delivery.
 
-## Agregar una asignación de dominio a un sitio de Edge Delivery existente {#add-cdn-to-edge-delivery-site}
+## Añadir una asignación de dominio a un sitio de Edge Delivery existente {#add-cdn-to-edge-delivery-site}
 
-Consulte [Agregar una asignación de dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
+Consulte [Añadir una asignación de dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
 
 ## Cambiar el nombre de un sitio de Edge Delivery (#rename-edge-delivery-site)
 

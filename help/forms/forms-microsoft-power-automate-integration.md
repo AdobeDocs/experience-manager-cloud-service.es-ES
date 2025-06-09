@@ -1,21 +1,21 @@
 ---
-title: Cómo integrar un formulario adaptable con Microsoft&reg; Power Automate?
-description: Integrar un formulario adaptable con Microsoft&reg; Power Automate.
+title: ¿Cómo integrar un formulario adaptable con Microsoft&reg; Power Automate?
+description: Integre un formulario adaptable con Microsoft&reg; Power Automate.
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: conectar AEM Forms a Power Automate, automatización de Power Automate AEM Forms, Integrar Power Automate con Formularios adaptables, enviar datos de Formularios adaptables a Power Automate
 feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 8d0814642fa0e5eb3f92a499202d0b79d90f91e3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1243'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
 # Conectar un formulario adaptable con Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
-<span class="preview"> Si estás en GovCloud y necesitas conectarte a un inquilino de GCC (Government Cloud Computing), envía un correo electrónico desde tu dirección oficial a aem-forms-ea@adobe.com para solicitar acceso a través del Programa de Usuarios Anticipados. </span>
+<span class="preview"> Si se encuentra en GovCloud y necesita conectarse a un inquilino de GCC (Government Cloud Computing), envíe un correo electrónico desde su dirección oficial a aem-forms-ea@adobe.com para solicitar acceso a través del programa para primeros usuarios. </span>
 
 Puede configurar un formulario adaptable para ejecutar un flujo de nube de Microsoft® Power Automate en el envío. El formulario adaptable configurado envía los datos capturados, los archivos adjuntos y el documento de registro al flujo de nube de Power Automate para su procesamiento. Le ayuda a crear una experiencia de captura de datos personalizada mientras aprovecha el poder de Microsoft® Power Automate para crear lógicas empresariales en torno a los datos capturados y automatizar los flujos de trabajo de los clientes.
 

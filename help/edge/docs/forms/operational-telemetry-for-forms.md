@@ -1,23 +1,23 @@
 ---
-title: Telemetría operativa para Edge Delivery Services para AEM Forms as a Cloud Service
-description: La telemetría operativa para Edge Delivery Services para AEM Forms as a Cloud Service implica el seguimiento y el análisis continuos de las interacciones del usuario con los formularios.
+title: Telemetría operativoa para Edge Delivery Services para AEM Forms as a Cloud Service
+description: La telemetría operativa para Edge Delivery Services para AEM Forms as a Cloud Service implica el seguimiento y análisis continuos de las interacciones del usuario con los formularios.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Telemetría operativa para Edge Delivery Services para AEM Forms as a Cloud Service
+# Telemetría operativoa para Edge Delivery Services para AEM Forms as a Cloud Service
 
-La telemetría operativa le permite obtener información del mundo real sobre cómo los visitantes interactúan con los sitios web de Adobe Experience Manager (AEM). Esta herramienta integrada proporciona datos valiosos para comprender el comportamiento del usuario, diagnosticar problemas de rendimiento y medir la eficacia de los experimentos de sitios web. La telemetría operativa va más allá de las pruebas sintéticas al capturar interacciones de uso real, ofreciendo una imagen más precisa del rendimiento de su sitio.
+La telemetría operativa permite obtener información real sobre cómo los visitantes interactúan con los sitios web de Adobe Experience Manager (AEM). Esta herramienta integrada proporciona datos valiosos para comprender el comportamiento del usuario, diagnosticar problemas de rendimiento y medir la eficacia de los experimentos de sitios web. La telemetría operativa va más allá de las pruebas sintéticas al capturar las interacciones de uso real, lo que ofrece una imagen más precisa del rendimiento de su sitio.
 
-Sin embargo, la telemetría operativa da prioridad a la privacidad del visitante. Utiliza técnicas de muestreo para recopilar datos de un subconjunto representativo de usuarios, lo que garantiza que nunca se capture información de identificación personal (PII). Además, la telemetría operativa está diseñada pensando en la minimización de datos y recopila únicamente las métricas esenciales necesarias para el análisis del rendimiento. Este enfoque le permite optimizar sus sitios AEM al tiempo que mantiene la confianza de los usuarios.
+Sin embargo, la telemetría operativa prioriza la privacidad del visitante. Utiliza técnicas de muestreo para recopilar datos de un subconjunto representativo de usuarios, lo que garantiza que nunca se capture información de identificación personal (PII). Además, la telemetría operativa está diseñada teniendo en cuenta la minimización de los datos y recopila solo las métricas esenciales necesarias para el análisis del rendimiento. Este enfoque le permite optimizar sus sitios AEM al tiempo que mantiene la confianza de los usuarios.
 
 
 ## Requisitos previos
@@ -26,7 +26,7 @@ Puede ver el panel de monitorización de Edge Delivery Services para AEM Forms a
 
 https://data.aem.live/?ext=forms
 
-![Pantalla de inicio de sesión de telemetría operativa para Edge Delivery Services para Forms](/help/edge/assets/rum-login-screen.png)
+![Pantalla de inicio de sesión de la telemetría operativa para Edge Delivery Services for Forms](/help/edge/assets/rum-login-screen.png)
 
 Para iniciar sesión en el tablero de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service, introduzca lo siguiente:
 
@@ -40,7 +40,7 @@ Después de introducir la URL y las claves de dominio en la pantalla de inicio d
 
 En la siguiente ilustración se muestra el tablero de Edge Delivery Services para AEM Forms as a Cloud Service:
 
-![Tablero de Forms de telemetría operacional](/help/edge/assets/rum-forms-dashboard.png)
+![Tablero de formularios de telemetría operativa](/help/edge/assets/rum-forms-dashboard.png)
 
 ### Diferentes métricas clave del panel para formularios {#different-metrics-operational-telemetry-dashboard-forms}
 
