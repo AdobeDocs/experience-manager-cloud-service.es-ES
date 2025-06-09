@@ -48,7 +48,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
       * [Cargue sus vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/file-format-support.md).
 
-   * Supervise el progreso de la codificación de vídeo [1} desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
+   * Supervise el progreso de la codificación de vídeo [1&rbrace; desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
 
 1. **Administre sus vídeos de Dynamic Media** mediante cualquiera de las siguientes acciones:
 
@@ -60,6 +60,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
    * Previsualización y publicación de recursos de vídeo
 
       * Vea el vídeo de origen y las representaciones codificadas del vídeo junto con sus miniaturas asociadas:
+
         [Previsualizar vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) o [Previsualizar recursos](/help/assets/dynamic-media/previewing-assets.md)
         [Administrar representaciones de vídeo](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -69,6 +70,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
    * Trabajo con metadatos de vídeo
 
       * Edite las propiedades del vídeo, como el título, la descripción y las etiquetas, y campos de metadatos personalizados:
+
         [Editar propiedades de vídeo](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Administración de metadatos para recursos digitales](/help/assets/manage-metadata.md)
@@ -93,9 +95,11 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
    * Si utiliza un sistema WCM de terceros, puede vincular o incrustar vídeos a sus páginas web.
 
       * Integrar vídeo con URL:
+
         [Vincular URL a su aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integración de vídeo mediante código incrustado en una página web:
+
         [Incrustar el visor de vídeo en una página web](/help/assets/dynamic-media/embed-code.md).
 
    * [Generar informes de vídeo](#viewing-video-reports).
