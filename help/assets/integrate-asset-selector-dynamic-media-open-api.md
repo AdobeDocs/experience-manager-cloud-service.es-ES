@@ -3,9 +3,9 @@ title: Integración del Selector de recursos con la API abierta de Dynamic Media
 description: Integre el selector de recursos con varias aplicaciones de Adobe, que no sean de Adobe y de terceros.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
+source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '949'
 ht-degree: 9%
 
 ---
@@ -206,6 +206,10 @@ Después de la integración con el Selector de recursos de Micro-FrontEnd de Ado
 * **F**: [Orden ascendente o descendente](#sorting)
 * **G**: Cancelar Selección
 * **H**: seleccione uno o varios recursos
+
+>[!NOTE]
+>
+>Las carpetas solo se admiten cuando se conecta al repositorio de creación y no a Dynamic Media con el repositorio de OpenAPI.
 
 >[!MORELIKETHIS]
 >
