@@ -49,7 +49,7 @@ El editor universal admite las dos configuraciones principales de AEM siguientes
 El editor universal es compatible con lo siguiente:
 
 * AEM as a Cloud Service (versión `2023.8.13099` o superior)
-* [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
    * Se admiten tanto el alojamiento local como el alojamiento AMS.
 * [AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * Se admiten tanto el alojamiento local como el alojamiento AMS.
@@ -104,7 +104,7 @@ Un profesional del marketing quiere crear contenido que esté adaptado al diseñ
 A medida que explore el editor universal y avance en la implementación de él en sus propios proyectos, tenga en cuenta las siguientes limitaciones.
 
 * No más de 25 recursos de AEM (fragmentos de contenido, páginas, fragmentos de experiencias, Assets, etc.) deben ser referencias como instrumentación en una sola página.
-* AEM as a Cloud Service, [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) y [AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) son los únicos backends de AEM compatibles.
+* AEM as a Cloud Service, [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) y [AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) son los únicos backends de AEM compatibles.
 * Se requiere la versión `2023.8.13099` o superior para AEM as a Cloud Service.
 * Los autores de contenido deben tener sus propias cuentas de Experience Cloud individuales.
 * Como parte de AEM, el editor universal [ admite los mismos exploradores de escritorio que AEM.](/help/overview/supported-platforms.md)
