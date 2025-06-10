@@ -4,9 +4,9 @@ description: Obtenga información acerca de las distintas opciones para personal
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '353'
 ht-degree: 8%
 
 ---
@@ -38,6 +38,14 @@ Por lo tanto, la opción **Preview** de la ventana de publicación se puede supr
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## Desactivación de Abrir página {#open-page}
+
+El botón **Abrir página** se puede eliminar por completo en una aplicación si agrega los siguientes metadatos.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
 
 ## Filtrado de componentes {#filtering-components}

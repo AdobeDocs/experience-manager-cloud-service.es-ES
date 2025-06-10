@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2025.04.04 del editor universal
-description: Estas son las notas de la versión 2025.04.04 del editor universal.
+title: Notas de la versión 2025.05.21 del editor universal
+description: Estas son las notas de la versión 2025.05.21 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
-workflow-type: ht
-source-wordcount: '126'
-ht-degree: 100%
+source-git-commit: 34b83022f3bcc8b6111b83fee207b337f6d4fed2
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 62%
 
 ---
 
 
-# Notas de la versión 2025.04.04 del editor universal {#release-notes}
+# Notas de la versión 2025.05.21 del editor universal {#release-notes}
 
-Son las notas de la versión del 4 de abril de 2025 del editor universal.
+Estas son las notas de la versión del editor universal del 21 de mayo de 2025.
 
 >[!TIP]
 >
@@ -22,11 +22,4 @@ Son las notas de la versión del 4 de abril de 2025 del editor universal.
 
 ## Novedades {#what-is-new}
 
-* **Dynamic Media con OpenAPI**: [el selector de recursos](/help/assets/overview-asset-selector.md#repository-switcher) en el editor universal ahora es compatible con [Dynamic Media con OpenAPI y recursos remotos](/help/assets/integrate-remote-approved-assets-with-sites.md)
-* **Lista de IP permitidas**: el editor universal ahora es compatible con [listas de IP permitidas.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#universal-editor) Puede comprobar las direcciones IP del servicio de editor universal mediante [este punto final.](http://universal-editor-service.adobe.io/ip-ranges)
-
-## Otras mejoras {#other-improvements}
-
-* Se ha corregido el contexto de diseño de eliminación.
-* Se han mejorado las pruebas en e2e.
-* Se han realizado actualizaciones de dependencias y limpieza de código.
+* **Deshabilitar botón para abrir página** - Ahora se puede deshabilitar el botón para abrir página [.](/help/implementing/universal-editor/customizing.md#open-page)

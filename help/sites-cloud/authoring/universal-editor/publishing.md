@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 64c257adc7e1f22531c0fe45b44b27ab4e0badb8
+source-git-commit: 3288edacba909335f8109eee7e1e793abe5a8343
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 42%
+source-wordcount: '555'
+ht-degree: 31%
 
 ---
 
@@ -30,7 +30,7 @@ Cuando usted, como autor de contenido, esté listo para publicar su contenido, s
 ![Páginas de publicación](assets/publish-menu.png)
 
 1. En el Editor universal, pulse o haga clic en [el icono **Publicar** de la barra de herramientas del Editor universal.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
-1. Si tienes un [servicio de vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md) disponible, puedes elegir dónde publicar el contenido, ya sea en **Vista previa** o en **Publicar**.
+1. Si tienes un [servicio de vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md) disponible, puedes elegir dónde publicar el contenido, ya sea en **[Vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (si está disponible) o en **Publicar**.
 1. La sección **Items** enumera el contenido que se incluye en la publicación, que incluye:
    * **Nuevos** elementos que aún no se han publicado.
    * **Modificado** contenido que se ha publicado, pero modificado desde la última publicación.
@@ -44,6 +44,10 @@ Cuando usted, como autor de contenido, esté listo para publicar su contenido, s
 
 1. Pulse o haga clic en **Publicar** para publicar o en **Cancelar** para cancelar.
 
+>[!NOTE]
+>
+>La opción de publicar para obtener una vista previa de [se puede deshabilitar](/help/implementing/universal-editor/customizing.md#publish-preview) y, por lo tanto, es posible que no aparezca en el editor.
+
 ## Cancelar la publicación de contenido desde el editor universal {#unpublishing-content}
 
 La cancelación de la publicación de contenido funciona de manera similar a la publicación de contenido. Cuando usted, como autor de contenido, esté listo para quitar contenido de la publicación, toque o haga clic en el icono de puntos suspensivos en la barra de herramientas del Editor universal y, a continuación, **Cancelar la publicación**.
@@ -53,28 +57,6 @@ Entonces tiene las mismas opciones para cancelar la publicación de contenido qu
 ## Publicar y cancelar la publicación desde la consola Sitios {#publishing-sites-console}
 
 También puede publicar [desde la consola Sitios,](/help/sites-cloud/authoring/sites-console/publishing-pages.md), lo que puede resultar útil cuando desea publicar varias páginas de contenido o programar la publicación o cancelación de la publicación.
-
-## Similitudes con el editor de páginas {#similarities}
-
-Para los usuarios del [Editor de páginas de AEM](/help/sites-cloud/authoring/page-editor/introduction.md), el proceso para publicar contenido con el Editor universal funciona como está acostumbrado: al publicar en AEM, el contenido se replica desde el nivel de creación al de publicación.
-
-## Diferencias {#differences}
-
-Lo que hace que la publicación con el editor universal sea un poco diferente no es tanto el editor en sí, sino el alojamiento externo de la aplicación que el editor universal hace posible.
-
-Cuando se aloja de forma externa, la aplicación web debe garantizar que el contenido se cargue desde el nivel de creación cuando los autores abren la aplicación en el editor y se carga desde el nivel de publicación cuando los visitantes acceden a la aplicación.
-
-## Detección del nivel en la aplicación {#detecting}
-
-La determinación de si el nivel de autor o publicación debe ser acceso se puede realizar mediante una simple afirmación condicional en la aplicación para elegir el autor apropiado o el punto final de publicación al detectar que se está abriendo en el editor.
-
-Otra opción es implementar la aplicación en dos entornos diferentes configurados de forma diferente, de modo que uno recupere su contenido del nivel de creación y otro que lo recupere del nivel de publicación. Para permitir que los autores abran la dirección URL publicada en el Editor universal, se puede crear un pequeño script para &quot;convertir&quot; la dirección URL del lado de publicación a su equivalente en el entorno de creación (por ejemplo, anteponiendo un subdominio `author`), de modo que los autores se redirijan automáticamente.
-
-## Resumen {#summary}
-
-El objetivo del Editor universal es no imponer ninguna pauta particular, de manera que la implementación pueda lograr sus objetivos de una manera totalmente disociada, manteniendo todo sencillo y sin complicaciones para la implementación.
-
-Del mismo modo, el Editor universal no requiere requisitos sobre cómo un proyecto en particular debe determinar desde qué nivel enviar el contenido. Más bien, permite varias posibilidades y permite al proyecto determinar qué solución es la mejor para sus propios requisitos.
 
 ## Recursos adicionales {#additional-resources}
 

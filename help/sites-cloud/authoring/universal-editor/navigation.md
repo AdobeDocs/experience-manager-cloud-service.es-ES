@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1756'
 ht-degree: 25%
 
 ---
@@ -183,9 +183,9 @@ En el modo de vista previa, la página se procesa en el editor tal como se verí
 >
 >Utilice la tecla de acceso directo `p` para alternar desde y hacia el modo de vista previa.
 
-#### Apertura de la vista previa de la aplicación {#open-app-preview}
+#### Abrir página {#open-page}
 
-Seleccione el icono de abrir vista previa de la aplicación para abrir la página que está editando en su propia pestaña del explorador, sin utilizar el editor, para previsualizar el contenido.
+Seleccione el icono de abrir página para abrir la página que está editando en su propia pestaña del explorador, sin utilizar el editor, para previsualizar el contenido.
 
 ![Apertura de la vista previa de la aplicación](assets/open-app-preview.png)
 
@@ -197,6 +197,10 @@ Seleccione el icono de abrir vista previa de la aplicación para abrir la págin
 >
 >La URL de vista previa de su aplicación [se puede personalizar](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
+>[!NOTE]
+>
+>El botón Abrir página [se puede deshabilitar](/help/implementing/universal-editor/customizing.md#open-page) y, por lo tanto, es posible que no aparezca en el editor.
+
 #### Publicación {#publish}
 
 Seleccione el botón Publicar para poder publicar los cambios en el contenido publicado para que los lectores lo consuman o en un entorno de vista previa para su revisión.
@@ -206,6 +210,10 @@ Seleccione el botón Publicar para poder publicar los cambios en el contenido pu
 >[!TIP]
 >
 >Consulte el documento [Publicación de contenido con el editor universal](publishing.md) para obtener más información sobre cómo publicar con el editor universal.
+
+>[!NOTE]
+>
+>El botón de publicación [se puede deshabilitar](/help/implementing/universal-editor/customizing.md#disable-publish) y, por lo tanto, es posible que no aparezca en el editor.
 
 #### Puntos suspensivos {#ellipsis}
 
