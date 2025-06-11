@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 1b6316d07153fdf93481a252173334af45137a29
+source-git-commit: 628d254ee130d436f0ac1728ab464d24db583b81
 workflow-type: tm+mt
-source-wordcount: '2062'
-ht-degree: 32%
+source-wordcount: '2074'
+ht-degree: 31%
 
 ---
 
@@ -41,7 +41,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -55,9 +55,9 @@ Los AEM Assets ahora usan [AI para generar automáticamente metadatos, incluidos
 
 **Integración con Figma**
 
-AEM Assets se integra de forma nativa con Figma, lo que permite a los diseñadores acceder directamente a los recursos almacenados en los AEM Assets desde la interfaz de usuario de Figma. Puede colocar contenido gestionado en AEM Assets en el lienzo de Figma y, a continuación, guardar contenido nuevo o editado en el repositorio de AEM Assets.
+AEM Assets se integra de forma nativa con Figma, lo que permite a los diseñadores acceder directamente a los recursos almacenados en los AEM Assets desde la interfaz de usuario de Figma. Puede colocar contenido gestionado en AEM Assets en el lienzo de Figma y, a continuación, guardar contenido nuevo o editado en el repositorio de AEM Assets. Para acceder al conector de AEM Assets disponible en la página de la comunidad Figma, haga clic [aquí](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
-![Integración con Figma](/help/assets/assets/figma-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
 
 ### Nuevas funciones en Content Hub {#new-features-content-hub}
@@ -112,7 +112,7 @@ Acceda a todas sus [representaciones preestablecidas y recortes inteligentes de 
 
 **Integración nativa de Dynamic Media con AJO B2C&#x200B;**
 
-[Integración nativa de Dynamic Media de Experience Manager (AEM) con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/content-management/combine/aem-dynamic), lo que permite a los especialistas en marketing incrustar fácilmente los recursos de Dynamic Media de AEM (representación y plantilla de DM) en el contenido de AJO y ofrecer actualizaciones en tiempo real y experiencias hiperpersonalizadas en todos los canales.
+[Integración nativa de Dynamic Media de Experience Manager (AEM) con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), lo que permite a los especialistas en marketing incrustar fácilmente los recursos de Dynamic Media de AEM (representación y plantilla de DM) en el contenido de AJO y ofrecer actualizaciones en tiempo real y experiencias hiperpersonalizadas en todos los canales.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
