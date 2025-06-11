@@ -4,13 +4,13 @@ description: Obtenga información sobre cómo ver, editar y eliminar los tokens 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Adoptador anticipado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
-source-git-commit: 9e2be3cabe0a93e6e357ceb5ecf4950c25d034d0
+exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
+source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '420'
 ht-degree: 3%
 
 ---
-
 
 # Administración de tokens de acceso para repositorios externos {#manage-access-tokens}
 
@@ -43,9 +43,9 @@ Consulte también [Agregar repositorios externos en Cloud Manager](/help/impleme
 ## Edición de un token de acceso {#edit-access-tokens}
 
 1. En el cuadro de diálogo **Administrar tokens de acceso**, a la derecha del nombre de un token, haga clic en ![Editar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
-1. En el cuadro de diálogo **Editar token de acceso**, en el campo de texto **Nombre del token**, actualice el nombre del token.
+1. En el cuadro de diálogo **Editar token de acceso**, actualice el valor **Nombre de token**, el **Token de acceso** o ambos.
 
-   El secreto del token de acceso en sí no se puede editar.
+   Si el **Token de acceso** está en uso, aparece una notificación avisándole de que todos los repositorios asociados se vuelven a validar automáticamente después de la actualización.
 
    ![Cuadro de diálogo Editar token de acceso](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
