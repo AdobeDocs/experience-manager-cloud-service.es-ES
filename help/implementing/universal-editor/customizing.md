@@ -4,10 +4,10 @@ description: Obtenga información acerca de las distintas opciones para personal
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 8%
+source-wordcount: '429'
+ht-degree: 6%
 
 ---
 
@@ -47,6 +47,18 @@ El botón **Abrir página** se puede eliminar por completo en una aplicación si
 ```html
 <meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
+
+## Desactivación del botón Duplicar {#duplicate-button}
+
+Es posible que algunos flujos de trabajo de creación deban limitar la capacidad del autor de contenido para duplicar componentes. Puede deshabilitar el [icono duplicado](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) agregando los siguientes metadatos.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## Cambio del punto de conexión {#custom-endpoint}
+
+Si no desea utilizar el servicio de editor universal, que aloja Adobe, sino su propia versión alojada, puede establecerlo en una metaetiqueta. Consulte el documento [Introducción al editor universal en AEM](/help/implementing/universal-editor/getting-started.md##configuration-settings) para obtener más información.
 
 ## Filtrado de componentes {#filtering-components}
 
