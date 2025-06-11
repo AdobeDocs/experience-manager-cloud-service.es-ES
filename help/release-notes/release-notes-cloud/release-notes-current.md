@@ -112,7 +112,7 @@ Acceda a todas sus [representaciones preestablecidas y recortes inteligentes de 
 
 **Integración nativa de Dynamic Media con AJO B2C&#x200B;**
 
-[Integración nativa de Dynamic Media de Experience Manager (AEM) con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), lo que permite a los especialistas en marketing incrustar fácilmente los recursos de Dynamic Media de AEM (representación y plantilla de DM) en el contenido de AJO y ofrecer actualizaciones en tiempo real y experiencias hiperpersonalizadas en todos los canales.
+[Integración nativa de Dynamic Media de Experience Manager (AEM) con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/content-management/combine/aem-dynamic), lo que permite a los especialistas en marketing incrustar fácilmente los recursos de Dynamic Media de AEM (representación y plantilla de DM) en el contenido de AJO y ofrecer actualizaciones en tiempo real y experiencias hiperpersonalizadas en todos los canales.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
