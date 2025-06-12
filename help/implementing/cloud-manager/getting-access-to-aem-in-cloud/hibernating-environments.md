@@ -5,7 +5,7 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 42%
@@ -44,7 +44,7 @@ Puede hibernar manualmente el programa de zona protegida desde Developer Console
 
 1. En la página **Developer Console**, haga clic en **Hibernar**.
 
-<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN BETA -->
+<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN PRIVATE BETA -->
 
 ![Botón Hibernar](assets/hibernate-1.png)
 
@@ -108,7 +108,7 @@ Cuando un usuario realiza una solicitud de explorador al servicio de autor, vist
 
 ![Página de aterrizaje del servicio en hibernación](assets/de-hibernation-img5.png)
 
-## AEM Implementaciones y actualizaciones de la {#deployments-updates}
+## Implementaciones y actualizaciones de AEM {#deployments-updates}
 
 Los entornos en hibernación aún permiten implementaciones y actualizaciones manuales de AEM.
 
