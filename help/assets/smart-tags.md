@@ -3,13 +3,13 @@ title: Etiquetado automático de recursos con  [!DNL Adobe Sensei] servicio inte
 description: Etiquete recursos con un servicio artificialmente inteligente que aplique etiquetas comerciales contextuales y descriptivas.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
+source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2457'
 ht-degree: 1%
 
 ---
-
 
 # Etiquetas inteligentes para AEM Assets {#using-smart-tags}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets sin etiquetar en DAM {#smart-tag-existing-assets}
 
-Los recursos existentes o anteriores de DAM no se etiquetan automáticamente de forma inteligente. Debe [volver a procesar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=es#adjusting-load) Assets manualmente para poder generarles etiquetas inteligentes. Una vez completado el proceso, vaya a la página [!UICONTROL Propiedades] de cualquier recurso de la carpeta. Las etiquetas agregadas automáticamente se ven en la sección [!UICONTROL Etiquetas inteligentes] de la pestaña [!UICONTROL Básico]. Estas etiquetas inteligentes aplicadas se ordenan en orden descendente de [puntuación de confianza](#confidence-score).
+Los recursos existentes o anteriores de DAM no se etiquetan automáticamente de forma inteligente. Debe [volver a procesar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manualmente para poder generarles etiquetas inteligentes. Una vez completado el proceso, vaya a la página [!UICONTROL Propiedades] de cualquier recurso de la carpeta. Las etiquetas agregadas automáticamente se ven en la sección [!UICONTROL Etiquetas inteligentes] de la pestaña [!UICONTROL Básico]. Estas etiquetas inteligentes aplicadas se ordenan en orden descendente de [puntuación de confianza](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -213,13 +213,25 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Helps your assets to become organized and categorized.
 -->
 
-## Mejora de la detección de contenido con etiquetas inteligentes generadas por IA {#ai-smart-tags}
+## Mejora de la detección de contenido con metadatos generados por IA {#ai-smart-tags}
 
 En lugar de depender de la entrada manual, IA asigna automáticamente etiquetas descriptivas a los recursos digitales. Estas etiquetas generadas por IA mejoran la calidad de los metadatos, lo que facilita la búsqueda, la categorización y la recomendación de recursos. Este enfoque no solo mejora la eficacia al eliminar el etiquetado manual, sino que también garantiza la coherencia y la escalabilidad en grandes volúmenes de contenido digital. Por ejemplo, si el recurso es una imagen, la IA puede identificar objetos, escenas, emociones o incluso logotipos de marca dentro de él y generar etiquetas relevantes como &quot;puesta de sol&quot;, &quot;playa&quot;, &quot;vacaciones&quot; o &quot;sonrisa&quot;. El contenido generado por IA puede mejorar la búsqueda de recursos mediante técnicas de búsqueda semánticas y léxicas. Ver más [Buscar en Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
 ![Etiquetas inteligentes mejoradas](assets/enhanced-smart-tags1.png)
 
-### Uso de etiquetas inteligentes generadas por IA {#using-ai-generated-smart-tags}
+### Cómo habilitar los metadatos generados por IA {#enable-ai-generated-metadata}
+
+Para habilitar los metadatos generados por IA:
+
+* La versión mínima de AEM requerida es `20626`.
+
+* Debes firmar un acuerdo con GenAI Rider. Para obtener más información, póngase en contacto con su representante de Adobe.
+
+  >[!IMPORTANT]
+  >
+  > El título de un recurso generado por IA solo se muestra en la tarjeta Recurso cuando no se ha definido el título del recurso. No sobrescribe el título del recurso especificado por usted.
+
+### Uso de metadatos generados por IA {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -232,7 +244,7 @@ Para utilizar la función de etiquetas inteligentes mejorada, ejecute los siguie
 
 1. Espere hasta que se procese el recurso recién cargado. Una vez finalizado, vaya a las propiedades del recurso.
 
-1. Vaya a la pestaña **[!UICONTROL Generado por IA]**. Si la versión de [!DNL Experience Manager] no es compatible o no se ha actualizado, esta pestaña no estará visible. La versión mínima de AEM requerida es `20626`. Los campos siguientes están presentes:
+1. Vaya a la pestaña **[!UICONTROL Generado por IA]**. Si la versión de [!DNL Experience Manager] no es compatible o no se ha actualizado, esta pestaña no estará visible. Los campos siguientes están presentes:
 
    * **[!UICONTROL Título generado]:** El título proporciona un título claro y conciso que captura la idea central de un recurso cargado, lo que facilita su comprensión de un vistazo. Al agregar un recurso, si proporciona un título (en `dc:title`), este se mostrará en la vista del explorador de recursos. Si se deja en blanco, se asignará automáticamente un título generado por IA.
    * **[!UICONTROL Descripción generada]:** La descripción ofrece un resumen breve pero informativo de lo que trata el recurso, lo que ayuda a los usuarios y al módulo de búsqueda a captar rápidamente su relevancia.

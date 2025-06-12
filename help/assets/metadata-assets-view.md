@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
+source-git-commit: 1b27ddd6e63c55442550145466ae21d1d03d6463
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 76%
+source-wordcount: '2499'
+ht-degree: 74%
 
 ---
 
@@ -251,13 +251,25 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 Para ver las etiquetas raíz configuradas, vaya a la página de detalles del recurso, donde se realiza la asignación entre el formulario de metadatos y las etiquetas raíz.
 
-## Mejora de la detección de contenido con etiquetas inteligentes generadas por IA {#ai-smart-tags}
+## Mejora de la detección de contenido con metadatos generados por IA {#ai-smart-tags}
 
 En lugar de depender de la entrada manual, IA asigna automáticamente etiquetas descriptivas a los recursos digitales. Estas etiquetas generadas por IA mejoran la calidad de los metadatos, lo que facilita la búsqueda, la categorización y la recomendación de recursos. Este enfoque no solo mejora la eficacia al eliminar el etiquetado manual, sino que también garantiza la coherencia y la escalabilidad en grandes volúmenes de contenido digital. Por ejemplo, si el recurso es una imagen, la IA puede identificar objetos, escenas, emociones o incluso logotipos de marca dentro de él y generar etiquetas relevantes como &quot;puesta de sol&quot;, &quot;playa&quot;, &quot;vacaciones&quot; o &quot;sonrisa&quot;. El contenido generado por IA puede mejorar la búsqueda de recursos mediante técnicas de búsqueda semánticas y léxicas. Ver más [Buscar en Assets](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-![Etiquetas inteligentes mejoradas](assets/enhanced-smart-tags.png)
+![Metadatos generados por IA](/help/assets/assets/enhanced-smart-tags.png)
 
-### Uso de etiquetas inteligentes generadas por IA {#using-ai-generated-smart-tags}
+### Cómo habilitar los metadatos generados por IA {#enable-ai-generated-metadata}
+
+Para habilitar los metadatos generados por IA:
+
+* La versión mínima de AEM requerida es `20626`.
+
+* Debes firmar un acuerdo con GenAI Rider. Para obtener más información, póngase en contacto con su representante de Adobe.
+
+  >[!IMPORTANT]
+  >
+  > El título de un recurso generado por IA solo se muestra en la tarjeta Recurso cuando no se ha definido el título del recurso. No sobrescribe el título del recurso especificado por usted.
+
+### Uso de metadatos generados por IA {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -270,7 +282,7 @@ Para utilizar la función de etiquetas inteligentes mejorada, ejecute los siguie
 
 1. Espere hasta que se procese el recurso recién cargado. Una vez finalizado, vaya a Detalles del recurso.
 
-1. Vaya a la pestaña **[!UICONTROL Generado por IA]**. Si la versión de [!DNL Experience Manager] no es compatible o no se ha actualizado, esta pestaña no estará visible. La versión mínima de AEM requerida es `20626`. Los campos siguientes están presentes:
+1. Vaya a la pestaña **[!UICONTROL Generado por IA]**. Si la versión de [!DNL Experience Manager] no es compatible o no se ha actualizado, esta pestaña no estará visible.  Los campos siguientes están presentes:
 
    * **[!UICONTROL Título generado]:** El título proporciona un título claro y conciso que captura la idea central de un recurso cargado, lo que facilita su comprensión de un vistazo. Al agregar un recurso, si proporciona un título (en `dc:title`), este se mostrará en la vista del explorador de recursos. Si se deja en blanco, se asignará automáticamente un título generado por IA.
    * **[!UICONTROL Descripción generada]:** La descripción ofrece un resumen breve pero informativo de lo que trata el recurso, lo que ayuda a los usuarios y al módulo de búsqueda a captar rápidamente su relevancia.
@@ -286,7 +298,7 @@ Para utilizar la función de etiquetas inteligentes mejorada, ejecute los siguie
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&amp;lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
