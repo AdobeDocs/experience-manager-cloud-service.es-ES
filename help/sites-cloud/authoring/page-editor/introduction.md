@@ -74,7 +74,7 @@ Además, **Información de página** puede proporcionar acceso a análisis y rec
 
 #### Emulador {#emulator}
 
-Esto activa o desactiva la barra de herramientas del emulador [1}, que se usa para emular el aspecto de la página en otro dispositivo. ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate) Esto se activa automáticamente en el modo de diseño.
+Esto activa o desactiva la barra de herramientas del emulador [1&rbrace;, que se usa para emular el aspecto de la página en otro dispositivo. ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate) Esto se activa automáticamente en el modo de diseño.
 
 ![Botón Emulador](assets/page-editor-emulator.png)
 
