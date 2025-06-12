@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5e90d3fb650106f31630c0297e55b4e9da201ba5
+source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2077'
 ht-degree: 31%
 
 ---
@@ -41,7 +41,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -112,9 +112,9 @@ Acceda a todas sus [representaciones preestablecidas y recortes inteligentes de 
 
 **Integración nativa de Dynamic Media con AJO B2C&#x200B;**
 
-[Integración nativa de Dynamic Media de Experience Manager (AEM) con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/content-management/combine/aem-dynamic), lo que permite a los especialistas en marketing incrustar fácilmente los recursos de Dynamic Media de AEM (representación y plantilla de DM) en el contenido de AJO y ofrecer actualizaciones en tiempo real y experiencias hiperpersonalizadas en todos los canales.
+[Integración nativa de Dynamic Media de Experience Manager (AEM) con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), lo que permite a los especialistas en marketing incrustar fácilmente los recursos de Dynamic Media de AEM (representación y plantilla de DM) en el contenido de AJO y ofrecer actualizaciones en tiempo real y experiencias hiperpersonalizadas en todos los canales.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463785/?learn=on&enablevpops=&autoplay=true&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -201,7 +201,7 @@ Revise y actualice cualquier proceso descendente que dependa del comportamiento 
 
 ### Depuración predeterminada de versiones anteriores y registros de auditoría {#mt-defaults}
 
-Actualmente, las versiones de contenido y los registros de auditoría tienen sus *tareas de mantenimiento de purga* asociadas deshabilitadas de forma predeterminada y, por lo tanto, no se eliminan datos a menos que se configuren explícitamente mediante sus respectivas propiedades OSGi.
+Actualmente, las versiones de contenido y los registros de auditoría tienen sus *tareas de mantenimiento de purga* asociadas deshabilitadas de forma predeterminada y, por lo tanto, no se eliminan datos a menos que se configuren explícitamente.
 
 Sin embargo, para optimizar el rendimiento del repositorio, a partir de **finales de junio de 2025**, la depuración se habilitará de manera predeterminada, siguiendo estas directrices:
 
