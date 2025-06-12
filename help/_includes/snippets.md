@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
-workflow-type: ht
-source-wordcount: '1523'
-ht-degree: 100%
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
+source-wordcount: '1556'
+ht-degree: 97%
 
 ---
 # Fragmentos de código {#snippets}
@@ -169,11 +169,11 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >[!IMPORTANT]
 >
 >La canalización front-end requiere que se añada de antemano la siguiente Lista de IP permitidas a Cloud Manager.
->Si es necesario, [añada la Lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando el bloque de direcciones siguiente. Cada dirección está separada por una coma. Pegue el bloque en el campo **Dirección IP/CIDR** del cuadro de diálogo **Agregar lista de IP permitidas**. Coloque el cursor justo después de la primera coma en la lista de direcciones y presione **Intro**. Guarde la lista.
->Para evitar que se interrumpa la ejecución de la canalización front-end, asegúrese de añadir esta Lista de IP permitidas a Cloud Manager *antes* de habilitar la canalización.
+>>Si es necesario, [añada la Lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando el bloque de direcciones siguiente. Cada dirección está separada por una coma. Pegue el bloque en el campo **Dirección IP/CIDR** del cuadro de diálogo **Agregar lista de IP permitidas**. Coloque el cursor justo después de la primera coma en la lista de direcciones y presione **Intro**. Guarde la lista.
+>>Para evitar que se interrumpa la ejecución de la canalización front-end, asegúrese de añadir esta Lista de IP permitidas a Cloud Manager *antes* de habilitar la canalización.
 >
 >**Lista de IP permitidas de Cloud Manager**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Añadir una Lista de IP permitidas de Cloud Manager y canalizaciones front-end {#add-cm-allowlist-frontend-pipeline}
@@ -181,7 +181,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >[!IMPORTANT]
 >
 >Si utiliza (o tiene intención de utilizar) la canalización front-end para desarrollar sitios, debe añadir de antemano la Lista de IP permitidas de Cloud Manager.
->Consulte [Uso de la Lista de IP permitidas de Cloud Manager con la canalización front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>>Consulte [Uso de la Lista de IP permitidas de Cloud Manager con la canalización front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## Listas de IP permitidas y el editor universal {#ip-allow-lists-ue}
 
@@ -222,7 +222,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 **Registro de un vale de asistencia:**
 
-1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/es?support-tab=home#support) y cree un vale.
+1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un vale.
 1. Añada **Edge Delivery** en el título del ticket.
 1. En la descripción, proporcione los siguientes detalles además de la descripción del problema:
 
@@ -273,3 +273,11 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 >Las funciones de la aplicación web progresiva (PWA) para AEM Sites [se han desaprobado](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
 >
 >Los proyectos existentes que utilicen esta función seguirán siendo compatibles, pero los nuevos proyectos no deberán utilizarla.
+
+## AEM tradicional {#traditional-aem}
+
+>[!TIP]
+>
+>**¿Ha considerado Edge Delivery Services para AEM?**
+>
+>Puede seguir utilizando los métodos descritos en este documento para proyectos existentes. Sin embargo, para nuevos proyectos, Adobe recomienda aprovechar [Edge Delivery Services.](/help/edge/overview.md)

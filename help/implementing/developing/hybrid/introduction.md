@@ -4,12 +4,14 @@ description: Este artículo presenta los conceptos de un SPA y explica cómo usa
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 93%
 
 ---
+
 
 # Introducción y tutorial de SPA {#spa-introduction}
 
@@ -134,7 +136,7 @@ Se admiten herramientas de creación adicionales, como arrastrar y soltar compon
 
 ## Aplicaciones SPA y el Editor de SPA de AEM {#spa-apps-and-the-aem-spa-editor}
 
-SPA SPA SPA AEM Experimentar cómo se comporta una aplicación para el usuario y, a continuación, inspeccionar la página de la ayuda a comprender mejor cómo funciona una aplicación de SAP con el Editor de la en la práctica.
+Experimentar cómo se comporta un SPA para el usuario y luego inspeccionar la página de SPA ayuda a comprender mejor cómo funciona una aplicación SAP con el Editor de SPA en AEM.
 
 ### Uso de la aplicación SPA {#using-an-spa-application}
 
@@ -211,9 +213,9 @@ La siguiente sección, [Carga de una aplicación SPA](#loading-a-spa-application
 
 ### Interacción con el Editor de SPA {#interaction-with-the-spa-editor}
 
-SPA Con la aplicación de proyecto de WKND de ejemplo, está claro cómo se comporta la aplicación y cómo se carga cuando se publica, mediante los servicios de contenido para la entrega de contenido JSON y la carga asíncrona de recursos.
+Con la aplicación del proyecto de SPA de WKND de ejemplo, está claro cómo se comporta la aplicación y cómo se carga cuando se publica, mediante los servicios de contenido para la entrega de contenido JSON y la carga asincrónica de recursos.
 
-SPA AEM Además, para el autor del contenido, la creación de contenido mediante un editor de se realiza sin problemas dentro de la creación de contenido
+Además, para el autor del contenido, la creación de contenido mediante un editor de SPA se realiza sin problemas dentro de AEM.
 
 En la siguiente sección analizaremos el contrato que permite al Editor de SPA relacionar componentes dentro del SPA con componentes de AEM y lograr esta experiencia de edición sin problemas.
 
@@ -233,7 +235,7 @@ En la siguiente sección analizaremos el contrato que permite al Editor de SPA r
 
    Esta ruta permite la recuperación y asociación del objeto de configuración de contexto de edición de cada componente.
 
-   Este es el único atributo de marcado necesario para que el editor reconozca este componente como editable dentro del SPA. SPA En función de este atributo, el Editor de determinará qué configuración editable está asociada al componente, de modo que se cargue el marco de trabajo, la barra de herramientas, etc. correctos.
+   Este es el único atributo de marcado necesario para que el editor reconozca este componente como editable dentro del SPA. En función de este atributo, el Editor SPA determinará qué configuración editable está asociada con el componente, de modo que se cargue el marco de trabajo, la barra de herramientas, etc. correctos.
 
    También se agregan algunos nombres de clase específicos para marcar marcadores de posición y para la funcionalidad de arrastrar y soltar.
 
@@ -245,7 +247,7 @@ En la siguiente sección analizaremos el contrato que permite al Editor de SPA r
 
 ## Encabezado y sin encabezado en AEM {#headful-headless}
 
-Las SPA se pueden habilitar con niveles flexibles de integración dentro de AEM, incluso SPA desarrolladas y mantenidas fuera de AEM. SPA AEM AEM Además, se puede usar la dentro de la misma, mientras que también se puede usar la para enviar contenido a puntos de conexión adicionales sin encabezado.
+Las SPA se pueden habilitar con niveles flexibles de integración dentro de AEM, incluso SPA desarrolladas y mantenidas fuera de AEM. Además, las SPA se pueden utilizar dentro de AEM y, al mismo tiempo, AEM para entregar contenido a puntos de conexión adicionales sin encabezado.
 
 >[!TIP]
 >

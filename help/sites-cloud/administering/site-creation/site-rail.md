@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 31%
@@ -14,6 +14,8 @@ ht-degree: 31%
 
 
 # Uso del panel del sitio para administrar el tema del sitio {#site-panel}
+
+{{traditional-aem}}
 
 Conozca las potentes funciones del panel del sitio para ayudarle a personalizar y administrar fácilmente el tema del sitio.
 
@@ -34,7 +36,7 @@ El panel Sitio se utiliza para administrar la información relacionada con el te
 
 ## Descarga de fuentes de temas {#downloading-theme-sources}
 
-AEM Cuando crea un sitio en base a una [plantilla del sitio](site-templates.md), puede descargar el [tema del sitio](site-themes.md) mediante el panel Sitio.
+Cuando crea un sitio en AEM basado en una [plantilla del sitio](site-templates.md), puede descargar el [tema del sitio](site-themes.md) mediante el panel Sitio.
 
 Con el panel Sitio en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio.
 

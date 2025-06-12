@@ -1,17 +1,18 @@
 ---
-title: Desaprobación del editor de SPA
+title: Finalización del soporte para el editor de SPA
 description: Aunque el Editor SPA sigue siendo compatible con Adobe, conozca qué significa su desaprobación para el proyecto y qué opciones tiene para futuros proyectos.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7bff178eabdf7e0d89e7195be6ca109db19ee655
+exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Desaprobación del editor de SPA {#spa-editor-deprecation}
+# Finalización del soporte para el editor de SPA {#spa-editor-deprecation}
 
 Aunque el Editor SPA sigue siendo compatible con Adobe, conozca qué significa su desaprobación para el proyecto y qué opciones tiene para futuros proyectos.
 
@@ -32,7 +33,7 @@ La desuso significa que los siguientes SDK están ahora inmovilizados de funcion
 * [Núcleo del proyecto de la SPA de AEM](https://github.com/adobe/aem-spa-project-core)
 * [Administrador del modelo de página SPA de AEM](https://github.com/adobe/aem-spa-page-model-manager)
 * [Asignación de componentes de la SPA de AEM](https://github.com/adobe/aem-spa-component-mapping)
-* [Componentes editables de AEM SPA React](https://github.com/adobe/aem-react-editable-components)
+* [Componentes editables de React de SPA de AEM](https://github.com/adobe/aem-react-editable-components)
    * [Componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components)
    * [Base de componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components-base)
    * [SPA de componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components-spa)

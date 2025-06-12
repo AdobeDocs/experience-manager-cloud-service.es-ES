@@ -1,27 +1,29 @@
 ---
 title: Componente de página SPA
-description: En un recurso, el componente de página no proporciona los elementos HTML SPA de sus componentes secundarios, sino que los delega en el SPA de trabajo de la página de trabajo. SPA En este documento se explica cómo hace que el componente de página de una página sea único en un sitio de trabajo de la.
+description: En una SPA, el componente de página no proporciona los elementos de HTML de sus componentes secundarios, sino que lo delega en el marco de la SPA. Este documento explica cómo esto hace que el componente de página de una SPA sea único.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 7%
 
 ---
 
+
 # Componente de página SPA {#spa-page-component}
 
-SPA El componente de página para una no proporciona los elementos HTML de sus componentes secundarios a través de un archivo JSP o HTL y objetos de recurso. Esta operación se delega al marco de trabajo de las SPA. La representación de los componentes secundarios se obtiene como una estructura de datos JSON (es decir, el modelo ). SPA A continuación, se añaden los componentes de la a la página según el modelo JSON proporcionado. Como tal, la composición inicial del cuerpo del componente de página difiere de sus homólogos HTML procesados previamente.
+El componente de página de una SPA no proporciona los elementos HTML de sus componentes secundarios a través de un archivo JSP o HTL y objetos de recurso. Esta operación se delega al marco de trabajo de las SPA. La representación de los componentes secundarios se obtiene como una estructura de datos JSON (es decir, el modelo ). A continuación, los componentes de SPA se añaden a la página según el modelo JSON proporcionado. Como tal, la composición inicial del cuerpo del componente de página difiere de sus homólogos de HTML procesados previamente.
 
 {{ue-over-spa}}
 
 ## Administración de modelos de página {#page-model-management}
 
-La resolución y la administración del modelo de página se delegan a un módulo [`PageModelManager`](blueprint.md#pagemodelmanager) proporcionado. SPA El módulo debe interactuar con el módulo `PageModelManager` cuando se inicialice para recuperar el modelo de página inicial y registrarse para obtener actualizaciones de modelo, que se producen principalmente cuando el autor está editando la página a través del Editor de páginas. SPA El proyecto `PageModelManager` es accesible para el usuario como paquete npm de la aplicación de seguridad de datos (npm). AEM SPA SPA Al ser un intérprete entre la y la de los usuarios, el `PageModelManager` debe acompañar a los usuarios de la red de servicios de traducción de la zona de trabajo de la.
+La resolución y la administración del modelo de página se delegan a un módulo [`PageModelManager`](blueprint.md#pagemodelmanager) proporcionado. El SPA debe interactuar con el módulo `PageModelManager` cuando se inicialice para recuperar el modelo de página inicial y registrarse para obtener actualizaciones de modelo, que se producen principalmente cuando el autor está editando la página a través del Editor de páginas. El proyecto SPA puede obtener acceso al `PageModelManager` como paquete npm. Como intérprete entre AEM y la SPA, `PageModelManager` debe acompañar a la SPA.
 
-SPA Para permitir la creación de la página, se debe agregar una biblioteca de cliente llamada `cq.authoring.pagemodel.messaging` para proporcionar un canal de comunicación entre el editor de páginas y el editor de páginas. SPA Si el componente de página de la página de la hereda del componente wcm/core de la página, existen las siguientes opciones para que la categoría de biblioteca de cliente `cq.authoring.pagemodel.messaging` esté disponible:
+Para permitir la creación de la página, se debe agregar una biblioteca de cliente llamada `cq.authoring.pagemodel.messaging` para proporcionar un canal de comunicación entre la SPA y el editor de páginas. Si el componente de página SPA hereda del componente wcm/core de página, existen las siguientes opciones para que la categoría de biblioteca de cliente `cq.authoring.pagemodel.messaging` esté disponible:
 
 * Si la plantilla es editable, agregue la categoría de biblioteca de cliente a la directiva de página.
 * Agregue la categoría de biblioteca de cliente mediante el `customfooterlibs.html` del componente de página.
@@ -30,17 +32,17 @@ No olvide limitar la inclusión de la categoría `cq.authoring.pagemodel.messagi
 
 ## Tipo de datos de comunicación {#communication-data-type}
 
-El tipo de datos de comunicación se establece como un elemento de HTML AEM dentro del componente Página de la con el atributo `data-cq-datatype`. Cuando el tipo de datos de comunicación está establecido en JSON, las solicitudes de GET llegan a los extremos del modelo Sling de un componente. Una vez que se produce una actualización de estado en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del Modelo de página. SPA A continuación, la biblioteca de modelo de página advierte a los usuarios de las actualizaciones que se han realizado en su.
+El tipo de datos de comunicación se establece en un elemento de HTML dentro del componente Página de AEM mediante el atributo `data-cq-datatype`. Cuando el tipo de datos de comunicación está establecido en JSON, las solicitudes de GET llegan a los extremos del modelo Sling de un componente. Una vez que se produce una actualización de estado en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del Modelo de página. A continuación, la biblioteca de modelo de página advierte al SPA de las actualizaciones.
 
-SPA **Componente de página de -`body.html`**
+**Componente de página SPA -`body.html`**
 
 ```
 <div id="page"></div>
 ```
 
-SPA Además de ser una buena práctica para no retrasar la generación de DOM, el marco de trabajo de la requiere que se añadan los scripts al final del cuerpo.
+Además de ser una buena práctica para no retrasar la generación de DOM, el marco de SPA requiere que los scripts se añadan al final del cuerpo.
 
-SPA **Componente de página de -`customfooterlibs.html`**
+**Componente de página SPA -`customfooterlibs.html`**
 
 ```
 <sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"></sly>
@@ -49,9 +51,9 @@ SPA **Componente de página de -`customfooterlibs.html`**
 <sly data-sly-call="${clientLib.js @ categories='we-retail-journal-react'}"></sly>
 ```
 
-SPA Las propiedades del recurso meta que describen el contenido de la:
+Las propiedades del recurso meta que describen el contenido de la SPA:
 
-SPA **Componente de página de -`customheaderlibs.html`**
+**Componente de página SPA -`customheaderlibs.html`**
 
 ```
 <meta property="cq:datatype" data-sly-test="${wcmmode.edit || wcmmode.preview}" content="JSON"/>
@@ -80,7 +82,7 @@ La sincronización de las superposiciones está garantizada por el mismo Observa
 
 ## Configuración de la estructura exportada de JSON del modelo Sling {#sling-model-json-exported-structure-configuration}
 
-SPA AEM Cuando las capacidades de enrutamiento están habilitadas, se supone que la exportación JSON de la aplicación contiene las diferentes rutas de la aplicación gracias a la exportación JSON del componente de navegación de la. AEM SPA La salida JSON del componente de navegación de la se puede configurar en la directiva de contenido de la página raíz de la página a través de las dos propiedades siguientes:
+Cuando las capacidades de enrutamiento están habilitadas, se supone que la exportación JSON de la SPA contiene las diferentes rutas de la aplicación gracias a la exportación JSON del componente de navegación de AEM. La salida JSON del componente de navegación de AEM se puede configurar en la política de contenido de página raíz de la SPA a través de las dos propiedades siguientes:
 
 * `structureDepth`: número correspondiente a la profundidad del árbol exportado
 * `structurePatterns`: regex de una matriz de expresiones regulares correspondientes a la página que se va a exportar

@@ -5,14 +5,16 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
 ---
 
 # AEM Recorrido de creación rápida de sitios {#quick-site-creation-journey}
+
+{{traditional-aem}}
 
 Comience aquí para obtener un recorrido guiado a través de la herramienta de creación rápida de sitios AEM fácil de usar, para optimizar el desarrollo front-end de su sitio AEM y personalizar rápidamente su sitio sin conocimiento del servidor de AEM.
 

@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 61%
@@ -15,13 +15,11 @@ ht-degree: 61%
 
 # Gestión básica {#basic-handling}
 
-AEM Este documento se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de autor de la.
+Este documento se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de AEM.
 
 >[!TIP]
 >
->AEM Los métodos abreviados del teclado están disponibles en todo el mundo En particular cuando [usa la consola de sitios](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) y [el editor de páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
-
-{{edge-delivery-authoring}}
+>Los métodos abreviados del teclado están disponibles mediante AEM. En particular cuando [usa la consola de sitios](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) y [el editor de páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
 ## Una interfaz con capacidad táctil {#a-touch-enabled-ui}
 
@@ -37,7 +35,7 @@ Para comprender bien el uso básico de AEM, este documento se basa en la consola
 
 ## Navegación de productos    {#product-navigation}
 
-Cada vez que se accede por primera vez a una consola, se inicia un tutorial de navegación por los productos. AEM Dedique un minuto a seleccionar hasta el final para obtener una buena descripción general de la gestión básica de los recursos de la.
+Cada vez que se accede por primera vez a una consola, se inicia un tutorial de navegación por los productos. Dedique un minuto a seleccionar hasta el final para obtener una buena descripción general de la gestión básica de AEM.
 
 ![Tutorial de navegación](assets/basic-handling-tutorial.png)
 
@@ -55,7 +53,7 @@ Para volver a la ubicación anterior, puede cerrar el panel de navegación globa
 
 La navegación global dispone de dos paneles, representados por iconos en el lado izquierdo de la pantalla:
 
-* AEM **[Navegación](#navigation-panel)**: representada por una brújula y el panel predeterminado al iniciar sesión en el sitio de trabajo de la cuenta de usuario de
+* **[Navegación](#navigation-panel)**: representada por una brújula y el panel predeterminado al iniciar sesión en AEM
 * **[Herramientas](#tools-panel)**: se representan con un martillo
 
 A continuación, se describen las opciones disponibles en estos paneles.
@@ -73,12 +71,12 @@ En Navegación, las consolas disponibles son:
 | Consola | Función |
 |---|---|
 | Proyectos | La consola Proyectos le proporciona acceso directo a sus proyectos. [Los proyectos son paneles virtuales](/help/sites-cloud/authoring/projects/overview.md) que se pueden utilizar para crear un equipo. A continuación, puede proporcionar a ese equipo acceso a recursos, flujos de trabajo y tareas, lo que permite a las personas colaborar para lograr un objetivo común. |
-| Sitios | AEM [La consola Sitios](/help/sites-cloud/authoring/sites-console/introduction.md) le permite crear, ver y administrar los sitios que se ejecutan en su instancia de. Mediante esta consola puede crear, editar, copiar, mover y eliminar páginas, iniciar flujos de trabajo y publicar páginas. |
+| Sitios | [La consola Sitios](/help/sites-cloud/authoring/sites-console/introduction.md) le permite crear, ver y administrar sitios web que se ejecuten en su instancia de AEM. Mediante esta consola puede crear, editar, copiar, mover y eliminar páginas, iniciar flujos de trabajo y publicar páginas. |
 | Fragmentos de experiencias | Un [fragmento de experiencia](/help/sites-cloud/authoring/fragments/content-fragments.md) es una experiencia independiente que puede reutilizarse en diversos canales y tener variaciones, de manera que se evita el problema de copiar y pegar repetidas veces experiencias o partes de experiencias. |
 | Assets | La consola Recursos le permite importar y administrar [recursos digitales, como imágenes, vídeos, documentos y archivos de audio](/help/assets/overview.md). Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM. También puede crear y administrar [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) desde la consola Recursos. |
 | Personalización | [Esta consola ofrece un marco de herramientas para crear contenido dirigido y presentar experiencias personalizadas](/help/sites-cloud/authoring/personalization/overview.md). |
 | Fragmentos de contenido | [Los fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md) permiten diseñar, crear, depurar y publicar contenido independiente de cualquier página. Permiten preparar contenido estructurado listo para su uso en varias ubicaciones/en varios canales, y es ideal tanto para la creación de páginas como para la entrega sin encabezado. |
-| Generar variaciones | [Generar variaciones](/help/generative-ai/generate-variations.md) utiliza inteligencia artificial generativa (IA) para crear variaciones de contenido basadas en mensajes; estos mensajes los proporciona el Adobe o los crean y administran los usuarios. |
+| Generar variaciones | [Generar variaciones](/help/generative-ai/generate-variations.md) utiliza inteligencia artificial generativa (IA) para crear variaciones de contenido basadas en mensajes; estos mensajes los proporciona Adobe o los crean y administran los usuarios. |
 
 ## Panel de herramientas {#tools-panel}
 
@@ -102,7 +100,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
 * Su organización IMS: seleccione para cambiar si es necesario.
 
-* [Soluciones](https://www.adobe.com/es/experience-cloud.html) - Seleccione esta opción para acceder a las demás soluciones de Adobe.
+* [Soluciones](https://www.adobe.com/es/experience-cloud.html): Seleccione esta opción para acceder a las demás soluciones de Adobe.
 
   ![Botón Soluciones](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
 
@@ -130,7 +128,7 @@ Hay una serie de recursos de ayuda disponibles y algunas formas de acceder a ell
 
   ![Icono de ayuda](assets/basic-handling-help.png)
 
-* AEM **Consola**: la primera vez que navegues por el sistema, [una serie de diapositivas introducen la navegación de la forma de la pantalla](#product-navigation).
+* **Consola**: la primera vez que navegues por el sistema, [se mostrará una serie de diapositivas sobre la navegación con AEM](#product-navigation).
 
   ![Tutorial](assets/basic-handling-console-tutorial.png)
 

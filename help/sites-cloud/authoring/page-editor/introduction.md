@@ -1,20 +1,20 @@
 ---
-title: AEM Editor de página de
-description: AEM El editor de páginas de es una potente herramienta para crear contenido.
+title: Editor de página de AEM
+description: El editor de páginas de AEM es una potente herramienta para crear contenido.
 exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
 
 ---
 
-# AEM Editor de página de {#editing-page-content}
+# Editor de página de AEM {#editing-page-content}
 
-AEM Una vez creada la página en la consola [**Sitios**](/help/sites-cloud/authoring/sites-console/introduction.md), podrá editar el contenido de la página con el editor de páginas de la página de la página de la página, una herramienta eficaz para crear contenido.
+Una vez creada la página en la consola [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), podrá editar el contenido de la página con el editor de páginas de AEM, una potente herramienta para crear contenido.
 
 >[!NOTE]
 >
@@ -24,9 +24,11 @@ AEM Una vez creada la página en la consola [**Sitios**](/help/sites-cloud/autho
 >
 >Su cuenta necesita los derechos de acceso y permisos adecuados para editar páginas. Póngase en contacto con el administrador del sistema si no tiene permisos.
 
+{{traditional-aem}}
+
 ## Orientación {#orientation}
 
-AEM El editor de páginas de la consta principalmente de tres secciones:
+El editor de páginas de AEM está compuesto principalmente por tres secciones:
 
 1. [Barra de herramientas](#toolbar): La barra de herramientas le permite cambiar rápidamente el modo de página y obtener acceso a la configuración de página adicional.
 1. [Panel lateral](#side-panel): el panel lateral le proporciona acceso a los componentes y recursos de la página, así como a otras herramientas de creación.
@@ -72,7 +74,7 @@ Además, **Información de página** puede proporcionar acceso a análisis y rec
 
 #### Emulador {#emulator}
 
-Esto activa o desactiva la barra de herramientas del emulador [1&rbrace;, que se usa para emular el aspecto de la página en otro dispositivo. ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate) Esto se activa automáticamente en el modo de diseño.
+Esto activa o desactiva la barra de herramientas del emulador [1}, que se usa para emular el aspecto de la página en otro dispositivo. ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate) Esto se activa automáticamente en el modo de diseño.
 
 ![Botón Emulador](assets/page-editor-emulator.png)
 
@@ -146,7 +148,7 @@ En el editor es donde se realizan los cambios directamente en el contenido de la
 
 Ahora que comprende el editor de páginas, está listo para editar su contenido.
 
-AEM Consulte el documento [Edición de contenido con el editor de páginas de](/help/sites-cloud/authoring/page-editor/edit-content.md) para obtener más información.
+Consulte el documento [Edición de contenido con el editor de páginas de AEM](/help/sites-cloud/authoring/page-editor/edit-content.md) para obtener más información.
 
 ## Notificación de estado {#status-notification}
 
@@ -216,7 +218,7 @@ La opción **Ver tal y como aparece publicado** está disponible en el menú [in
 
 ## Bloquear y desbloquear una página {#locking-unlocking}
 
-AEM le permite bloquear páginas para que nadie más pueda editar su contenido. El bloqueo es útil cuando realiza numerosas ediciones en una página específica o cuando necesita congelar una página durante un corto tiempo.
+AEM permite bloquear páginas para que nadie más pueda editar su contenido. El bloqueo es útil cuando realiza numerosas ediciones en una página específica o cuando necesita congelar una página durante un corto tiempo.
 
 1. Seleccione el icono **Información de la página** para abrir el menú.
 1. Seleccione la opción **bloquear página**.

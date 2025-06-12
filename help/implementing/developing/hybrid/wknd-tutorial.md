@@ -1,27 +1,30 @@
 ---
-title: SPA Proyecto de WKND
-description: SPA SPA Sumérjase en el desarrollo de la con este tutorial de varias partes que le guiará a través de la configuración del proyecto, la asignación de componentes, las herramientas de desarrollo front-end y el enrutamiento de aplicaciones para implementar su propia implementación mediante React y Angular.
+title: Proyecto de SPA de WKND
+description: Sumérjase en el desarrollo de SPA con este tutorial de varias partes que le llevará a través de la configuración del proyecto, la asignación de componentes, las herramientas de desarrollo front-end y el enrutamiento de aplicaciones para implementar su propio SPA mediante React y Angular.
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
-# SPA Proyecto de WKND {#wknd-spa-project}
+
+# Proyecto de SPA de WKND {#wknd-spa-project}
 
 {{ue-over-spa}}
+{{traditional-aem}}
 
-SPA SPA Sumérjase en el desarrollo de la con este tutorial de varias partes que le guiará a través de la configuración del proyecto, la asignación de componentes, las herramientas de desarrollo front-end y el enrutamiento de aplicaciones para implementar su propia aplicación.
+Sumérjase en el desarrollo de SPA con este tutorial de varias partes que le guía a través de la configuración del proyecto, la asignación de componentes, las herramientas de desarrollo front-end y el enrutamiento de aplicaciones para implementar su propia SPA.
 
-SPA ![Proyecto de WKND de](assets/wknd-spa-project.png)
+![Proyecto de SPA WKND](assets/wknd-spa-project.png)
 
-AEM SPA AEM Similar al Tutorial de WKND de, este homólogo centrado en la aplicación ofrece un ejemplo completo de creación de su propia aplicación de una sola página que se puede editar empezando por la configuración del proyecto a través del enrutamiento de aplicaciones.
+Similar al Tutorial WKND de AEM, este homólogo centrado en SPA ofrece un ejemplo completo de creación de su propia aplicación de una sola página editable con AEM a partir de la configuración del proyecto mediante el enrutamiento de aplicaciones.
 
-* [Cree su primer Angular SPA AEM de trabajo en el](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=es)
-* SPA AEM [Cree su primer grupo de informes de React en el](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=es)
+* [Cree su primera SPA de Angular en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
+* [Cree su primer SPA de React en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=es)
 
-SPA AEM SPA AEM Sin embargo, antes de comenzar su propio proyecto de para el trabajo, es posible que también desee revisar el documento [Desarrollo de la para el documento de ](developing.md).
+Sin embargo, antes de comenzar su propio proyecto de SPA para AEM, quizá también quiera revisar el documento [Desarrollo de SPA para AEM](developing.md).
