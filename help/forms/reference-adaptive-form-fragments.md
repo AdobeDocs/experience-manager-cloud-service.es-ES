@@ -10,10 +10,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '396'
-ht-degree: 100%
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Un fragmento de formulario adaptable es un grupo de campos o un panel que contiene un grupo de campos que puede utilizar durante la creación de un formulario. Permite crear un formulario de forma fácil y rápida. Puede arrastrar y soltar un fragmento de formulario adaptable en un formulario mediante el explorador de recursos de la barra lateral y editarlo en el editor de formularios.
 
-Para los autores de formularios adaptables, los fragmentos de referencia se proporcionan en el paquete de [!DNL AEM Forms] [[!DNL AEM FORMS] FRAGMENTOS DE REFERENCIA](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Este paquete incluye los siguientes fragmentos:
+Para los autores de Forms adaptables, los fragmentos de referencia se proporcionan en el paquete [!DNL AEM Forms] [!DNL AEM FORMS] FRAGMENTOS DE REFERENCIA. Este paquete incluye los siguientes fragmentos:
 
 * Dirección
 * Información de contacto

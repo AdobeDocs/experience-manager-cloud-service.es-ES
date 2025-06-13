@@ -3,10 +3,10 @@ title: Restrinja la entrega de recursos con Dynamic Media con las capacidades de
 description: Obtenga información sobre cómo restringir la entrega de recursos con las funciones de OpenAPI.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -15,16 +15,16 @@ ht-degree: 5%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -74,7 +74,7 @@ Puede restringir la entrega de recursos dentro de [!DNL Experience Manager] en f
 
 >[!NOTE]
 >
->Actualmente, esta capacidad no es de autoservicio. Para restringir la entrega de recursos para los usuarios [Users](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) y [Groups](https://helpx.adobe.com/in/enterprise/using/user-groups.html) de IMS, póngase en contacto con el equipo de soporte Enterprise para obtener instrucciones sobre cómo recuperar la información necesaria para restringir el acceso desde el portal [Adobe Admin Console](https://adminconsole.adobe.com/) y cómo configurar el acceso en el servicio de AEM as a Cloud Service Author.
+> Actualmente, esta capacidad no es de autoservicio. Para restringir la entrega de recursos para los usuarios [Users](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) y [Groups](https://helpx.adobe.com/in/enterprise/using/user-groups.html) de IMS, póngase en contacto con el equipo de soporte Enterprise para obtener instrucciones sobre cómo recuperar la información necesaria para restringir el acceso desde el portal [Adobe Admin Console](https://adminconsole.adobe.com/) y cómo configurar el acceso en el servicio de AEM as a Cloud Service Author.
 
 ### Restringir la entrega de recursos mediante Fecha y hora de activación y desactivación {#restrict-delivery-assets-date-time}
 
@@ -113,7 +113,7 @@ Del mismo modo, para la vista de Assets, si el recurso no se basa en el esquema 
 
 ## Entrega de activos restringidos {#delivery-restricted-assets}
 
-La entrega de recursos restringidos se basa en la autorización correcta para acceder a los recursos. La autorización se realiza a través de [tokens de portador de IMS](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/) (aplicación para solicitudes iniciadas desde [AEM Asset Selector](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)) o una cookie segura (si tiene proveedores de identidad personalizados configurados en sus servicios de publicación/vista previa de AEM y ha configurado la creación e inclusión de cookies en las páginas).
+La entrega de recursos restringidos se basa en la autorización correcta para acceder a los recursos. La autorización se realiza a través de [tokens de portador de IMS](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/) (aplicación para solicitudes iniciadas desde [AEM Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)) o una cookie segura (si tiene proveedores de identidad personalizados configurados en sus servicios de publicación/vista previa de AEM y ha configurado la creación e inclusión de cookies en las páginas).
 
 ### Envío de solicitudes de autor o selector de recursos de AEM {#delivery-aem-author-asset-selector}
 
@@ -125,8 +125,8 @@ En los servicios de creación de AEM Cloud Service, así como en el Selector de 
 >Para obtener más información sobre cómo habilitar la autenticación IMS en integraciones basadas en el Selector de recursos de AEM, póngase en contacto con Soporte Enterprise
 
 1. Para las experiencias no basadas en el Selector de recursos, AEM as a Cloud Service y Dynamic Media con capacidades OpenAPI admiten actualmente integraciones de API del lado del servidor y pueden generar tokens de IMS Bearer.
-   * Siga las instrucciones [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) para realizar integraciones de API de servicio a servidor que puedan recuperar los tokens de IMS Bearer mediante [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
-   * Durante un tiempo limitado, se puede generar acceso de desarrollador local (no pensado para casos de uso de producción), tokens de IMS al portador de corta duración para el usuario autenticado en [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) siguiendo las instrucciones [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
+   * Siga las instrucciones [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) para realizar integraciones de API de servicio a servidor que puedan recuperar los tokens de IMS Bearer mediante [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
+   * Durante un tiempo limitado, se puede generar acceso de desarrollador local (no pensado para casos de uso de producción), tokens de IMS al portador de corta duración para el usuario autenticado en [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) siguiendo las instrucciones [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
 
 1. Al realizar solicitudes de API [Search](search-assets-api.md) y [Delivery](deliver-assets-apis.md), agregue el token de IMS Bearer obtenido al encabezado **[!UICONTROL Authorization]** de la solicitud HTTP (asegúrese de que su valor tenga el prefijo **[!UICONTROL Bearer]**).
 
@@ -136,4 +136,4 @@ En los servicios de creación de AEM Cloud Service, así como en el Selector de 
 
 ### Envío de proveedores de identidad personalizados en el servicio de publicación {#delivery-custom-identity-provider}
 
-AEM Sites, AEM Assets y Dynamic Media con licencias OpenAPI se pueden usar juntos, lo que permite una entrega restringida de recursos para configurarlos en sitios web alojados en el servicio de publicación o previsualización de AEM. El flujo de entrega segura aprovecha las cookies del explorador para establecer el acceso del usuario y tener un dominio personalizado para el nivel de entrega que sea subdominio del dominio de publicación es un requisito previo para implementar este caso de uso. Si los servicios de publicación y vista previa de AEM Sites están configurados para usar un [proveedor de identidad personalizado (IdP)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), se debe establecer una nueva cookie denominada `delivery-token` que encapsule la pertenencia al grupo del usuario en el dominio de publicación después de la autenticación del usuario. El nivel de entrega extrae el material de autorización de la cookie segura y valida el acceso. Registre un [ticket de soporte para empresas](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) para obtener más detalles.
+AEM Sites, AEM Assets y Dynamic Media con licencias OpenAPI se pueden usar juntos, lo que permite una entrega restringida de recursos para configurarlos en sitios web alojados en el servicio de publicación o previsualización de AEM. El flujo de entrega segura aprovecha las cookies del explorador para establecer el acceso del usuario y tener un dominio personalizado para el nivel de entrega que sea subdominio del dominio de publicación es un requisito previo para implementar este caso de uso. Si los servicios de publicación y vista previa de AEM Sites están configurados para usar un [proveedor de identidad personalizado (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), se debe establecer una nueva cookie denominada `delivery-token` que encapsule la pertenencia al grupo del usuario en el dominio de publicación después de la autenticación del usuario. El nivel de entrega extrae el material de autorización de la cookie segura y valida el acceso. Registre un [ticket de soporte para empresas](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) para obtener más detalles.

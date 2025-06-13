@@ -5,10 +5,10 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 31a4a8b5b86439483b058c1fb132979476aab2e5
+source-git-commit: 82a3016149645701abe829ad89c493f480956267
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ Para conectar **[!DNL AEM Forms]** con **[!DNL Adobe Acrobat Sign]**, configure 
 
 Para integrar [!DNL Adobe Acrobat Sign] con [!DNL AEM Forms] se requiere la siguiente configuración:
 
-1. Una [cuenta activa de desarrollador de Adobe Acrobat Sign](https://acrobat.adobe.com/es/es/sign/developer-form.html).
+1. Una cuenta de desarrollador de [Adobe Acrobat Sign activa.](https://www.adobe.com/acrobat/business/developer-form.html)
 1. Una [aplicación API de Adobe Acrobat Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 1. Las credenciales (ID de cliente y Secreto de cliente) de la aplicación API de [!DNL Adobe Acrobat Sign];
 1. (solo para la autenticación basada en documentos de identidad del gobierno) [Habilitar el método de autenticación](https://helpx.adobe.com/es/sign/using/adobesign-authentication-government-id.html#AuditReport) para la autenticación de documentos de identidad del gobierno.
@@ -84,7 +84,7 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
 
    donde:
 
-   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL &#x200B; Adobe Acrobat Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
+   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL  Adobe Acrobat Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -106,7 +106,7 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
    * [!DNL workflow_read]
 
    >[!NOTE]
-   > AEM Puede cambiar el modificador de ámbitos de `self` a `account` directamente desde la interfaz de usuario, tal como se indica en el paso 12.
+   > Puede cambiar el modificador de ámbitos de `self` a `account` directamente desde la IU de AEM, tal como se indica en el paso 12.
 
    Para obtener información paso a paso sobre cómo configurar OAuth para una aplicación [!DNL Adobe Acrobat Sign] y obtener las claves, consulte la documentación para desarrolladores [Configurar OAuth para la aplicación](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md).
 
@@ -114,7 +114,7 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
 
 1. Vuelva a la página **[!UICONTROL Crear configuración de Adobe Acrobat Sign]**. En la pestaña **[!UICONTROL Configuración]**, especifique el [**[!UICONTROL ID de cliente]** (también denominado como ID de aplicación) y el **[!UICONTROL Secreto de cliente]**]. Utilice el [ID de cliente y el Secreto de cliente de la aplicación Adobe Acrobat Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) que creó en el paso anterior.
 
-1. En la sección [!UICONTROL Ámbito de autorización], puede modificar los ámbitos a &quot;account&quot; o &quot;self&quot; agregando el prefijo &quot;self&quot; o &quot;account&quot; a los ámbitos, según sea necesario.
+1. En la sección [!UICONTROL Ámbito de autorización], puede modificar los ámbitos a “cuenta” o “propia” añadiendo el prefijo “self” o “cuenta a los ámbitos, según sea necesario.
    ![Ámbito de autorización](/help/forms/assets/authorization-scope.png)
 
 1. Seleccione la opción **[!UICONTROL Habilitar Adobe Acrobat Sign para archivos adjuntos]** para anexar los archivos adjuntos a un formulario adaptable al documento de [!DNL Adobe Acrobat Sign]correspondiente enviado para su firma.
@@ -135,7 +135,7 @@ Ahora puede [usar Agregar campos de Adobe Acrobat Sign a un formulario adaptable
 >
 > Para configurar la zona protegida de Adobe Sign, puede seguir los mismos pasos de configuración explicados en [Adobe Sign](#adobe-sign).
 
-#### Resolución de problemas {#resolve-config-error}
+#### Solución de problemas {#resolve-config-error}
 
 Cuando conecta [!DNL Adobe Acrobat Sign] con [!DNL AEM Forms] y busca un error `Unable to authorize access because the client configuration is invalid: invalid_request` tal como se muestra en la imagen siguiente. Para solucionarlo, siga los pasos que se indican a continuación:
 
@@ -225,7 +225,7 @@ El representante genera y comparte credenciales con usted. En la siguiente secci
 
    donde:
 
-   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL &#x200B; Adobe Acrobat Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
+   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL  Adobe Acrobat Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -272,8 +272,8 @@ Para establecer los valores de una configuración, [Generar configuraciones OSGi
 
 ## Preguntas frecuentes
 
-* **Q: ¿Puedo procesar la página de firma de Adobe Sign GovCloud en un iframe?**
-* **A:** Sí, puede procesar la página de firma de Adobe Sign GovCloud en un iframe.
+* **P: ¿Puedo procesar la página de firma de Adobe Sign GovCloud en un iframe?**
+* **R:** Sí, puede procesar la página de firma de Adobe Sign GovCloud en un iframe.
 
 >[!MORELIKETHIS]
 >

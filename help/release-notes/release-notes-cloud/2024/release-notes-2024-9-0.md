@@ -4,10 +4,10 @@ description: Notas de la versión 2024.9.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 91%
+source-wordcount: '1312'
+ht-degree: 90%
 
 ---
 
@@ -45,7 +45,7 @@ Eche un vistazo al vídeo Información general sobre la versión de septiembre d
 
 #### Administración de traducciones {#translation-management}
 
-Los flujos de trabajo de traducción de AEM y las acciones de API ahora activan ciertos eventos para proporcionar datos sobre los cambios de estado de los trabajos de traducción. Los usuarios pueden suscribirse a estos eventos a través de Adobe Developer Console. Consulte [aquí](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) más información sobre la API de administración de traducciones de AEM.
+Los flujos de trabajo de traducción de AEM y las acciones de API ahora activan ciertos eventos para proporcionar datos sobre los cambios de estado de los trabajos de traducción. Los usuarios pueden suscribirse a estos eventos a través de Adobe Developer Console.
 
 ### Programa para primeros usuarios {#sites-early-adopter}
 

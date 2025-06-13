@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
-source-wordcount: '2195'
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
+source-wordcount: '2160'
 ht-degree: 100%
 
 ---
@@ -645,8 +645,3 @@ Ahora que sabe cómo modelar contenido, puede crear bloques para sus propios Edg
 Vea el documento [Creación de bloques instrumentados para su uso con el editor universal](/help/edge/wysiwyg-authoring/create-block.md) para aprender a crear bloques instrumentados para su uso con el editor universal en proyectos de creación WYSIWYG con Edge Delivery Services.
 
 Si ya está familiarizado con la creación de bloques, consulte el documento [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para ayudarle a poner en marcha un nuevo sitio de Adobe Experience Manager usando Edge Delivery Services y el editor universal para la creación de contenido.
-
->[!TIP]
->
->Para obtener una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services que esté habilitado para la creación WYSIWYG con AEM as a Cloud Service como fuente de contenido, vea [este seminario web de GEM de AEM](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
-

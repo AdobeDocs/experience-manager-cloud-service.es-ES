@@ -3,7 +3,7 @@ title: Integrar [!DNL AEM Assets] al crear contenido para [!DNL Edge Delivery Se
 description: Aprenda a integrar [!DNL AEM Assets] con [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] con [!DNL Microsoft Word] y [!DNL Google Docs], integrate [!DNL AEM Assets] con [!DNL Universal Editor], integrate [!DNL Dynamic Media] con [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Universal Editor] e integrar [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Microsoft Word] y [!DNL Google Docs].
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 6%
@@ -113,7 +113,7 @@ Consulte este vídeo para aprender a distribuir recursos en el contenido mediant
 
 ## Sitio de muestra [!DNL Edge Delivery Services]{#dynamic-media-with-google-docs-and-ms-word}
 
-Vea [WKND Travel](http://bit.ly/3DExLnf), un sitio que se creó con las capacidades de creación basada en documentos de [!DNL Edge Delivery Services]. El contenido del sitio se creó en [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) y [!DNL Dynamic Media with OpenAPI capabilities] se usa para entregar recursos en el contenido. Después de la creación, el contenido se publica directamente desde el documento. Explore este [repositorio Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) para conocer todos los archivos, carpetas, configuraciones, estilos del sitio web y códigos de funcionalidad esenciales que se usan para crear la configuración de creación basada en documentos para este sitio [!DNL Edge Delivery Services (EDS)].
+Vea [WKND Travel](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home), un sitio que se creó con las capacidades de creación basada en documentos de [!DNL Edge Delivery Services]. El contenido del sitio se creó en [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) y [!DNL Dynamic Media with OpenAPI capabilities] se usa para entregar recursos en el contenido. Después de la creación, el contenido se publica directamente desde el documento. Explore este [repositorio Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) para conocer todos los archivos, carpetas, configuraciones, estilos del sitio web y códigos de funcionalidad esenciales que se usan para crear la configuración de creación basada en documentos para este sitio [!DNL Edge Delivery Services (EDS)].
 
 ## Integrando [!DNL AEM Assets] con [!DNL Universal Editor] flujos de creación basados para [!DNL Edge Delivery Services] {#integrate-aem-assets-with-universal-editor-UE}
 
