@@ -4,10 +4,10 @@ description: Notas de versión específicas de las funciones en desuso y elimina
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 569ab7cfab02cfc5d5ad1c8f402a51df34f4bac6
+source-git-commit: c7615247be1e237c72508ae4dfc3156fdcde9905
 workflow-type: tm+mt
-source-wordcount: '3039'
-ht-degree: 71%
+source-wordcount: '3181'
+ht-degree: 69%
 
 ---
 
@@ -143,7 +143,7 @@ Las API de la tabla siguiente (haga clic para ampliarlas y verlo) se han anuncia
     <td>31/8/2025</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
-    <td>Las bibliotecas principales de Google Guava están en desuso.</td>
+    <td>Las bibliotecas principales de Google Guava están en desuso en Cloud Service. <a href="#com.google.common">Consulte las notas de eliminación a continuación.</a></td>
     <td>15/5/2023</td>
     <td>31/8/2025</td>
   </tr>
@@ -362,6 +362,19 @@ Lista de acciones:
 
 * Añadir este paquete al proyecto
    * `org.mongodb:mongo-java-driver:3.12.7`
+
+Es posible que desee elegir una versión diferente, según sus necesidades.
+
+### Eliminación de `com.google.common*`  {#com.google.common}
+
+Elimine el uso de las bibliotecas principales de Google Guava o incluya una versión adecuada en su proyecto. En muchos casos, el uso de esta biblioteca se puede reemplazar con clases de colección de las colecciones JDK o Apache Commons4. Si no encuentra ningún reemplazo, incluya la versión más reciente de la biblioteca principal de Google Guave en su proyecto. Si está usando una versión antigua de [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), asegúrese de actualizarla a la versión más reciente.
+
+Lista de acciones:
+
+* Actualizar ACS AEM Commons a la versión más reciente (al menos 6.11.0)
+* Reemplace el uso de la Biblioteca principal de Google Guava con colecciones JDK o Colecciones Apache Commons4
+* Si sigue siendo necesario, agregue este paquete al proyecto (sustituya la versión por la más reciente disponible):
+   * `com.google.guava:guava:33.4.8-jre`
 
 ### Eliminación de `Apache Commons Lang 2 and Apache Commons Collections 3`  {#apache.commons}
 
