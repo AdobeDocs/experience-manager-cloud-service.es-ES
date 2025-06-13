@@ -5,10 +5,10 @@ exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 89%
+source-wordcount: '635'
+ht-degree: 85%
 
 ---
 
@@ -90,6 +90,7 @@ Puede salir de la comparación de diferencias en paralelo en cualquier momento h
 
 Hay algunas situaciones en las que la comparación de diferencias de la página quizás no detecte una diferencia de la forma esperada.
 
+* Al diferenciar páginas creadas para usarlas con [Edge Delivery Services,](/help/edge/overview.md) las páginas se mostrarán una al lado de la otra para facilitar la comparación, pero no se resaltarán las diferencias.
 * Al realizar la comparación de diferencias de versiones y lanzamientos, no se tienen en cuenta componentes dinámicos como rutas de exploración, menús, listas de productos o logotipos (componentes que se basan en la estructura del sitio para procesar su contenido).
 * Para las versiones, la comparación de diferencias no vuelve a crear la política de control de acceso ni las relaciones de Live Copy.
 * Si se mueve una página, ya no se puede realizar una diferencia con ninguna versión hecha antes del movimiento.
