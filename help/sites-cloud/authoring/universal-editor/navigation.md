@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 25%
+source-wordcount: '1782'
+ht-degree: 24%
 
 ---
 
@@ -269,7 +269,8 @@ En el modo de árbol de contenido, el panel muestra la jerarquía del contenido 
 
 ![Modo de árbol de contenido](assets/content-tree-mode.png)
 
-Al seleccionar un elemento en el árbol de contenido, el editor se desplaza hasta ese contenido y lo selecciona.
+* Al seleccionar un elemento en el árbol de contenido, el editor se desplaza hasta ese contenido y lo selecciona.
+* Al hacer doble clic en un elemento del árbol de contenido, el editor se desplaza hasta ese contenido, lo selecciona y también abre las propiedades asociadas en el modo de [propiedades.](#properties-mode)
 
 ![Árbol de contenido](assets/content-tree.png)
 
