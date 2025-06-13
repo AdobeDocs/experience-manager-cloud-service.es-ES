@@ -4,9 +4,9 @@ description: El editor de páginas sigue siendo compatible con Adobe, pero el ed
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: f21e21b0f7239ec9112d65b94b372344c4a07566
+source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1069'
 ht-degree: 3%
 
 ---
@@ -38,22 +38,22 @@ Debido a que la brecha entre las características de los dos editores se está r
 
 ### Entrega {#delivery}
 
-|  | Editor de página | Notas | Editor universal | Notas |
+|  | Editor de páginas | Notas | Editor universal | Notas |
 |---|---|---|---|---|
-| [Envío clásico de AEM](/help/sites-cloud/authoring/author-publish.md) | [!BADGE Disponible]{type=Positive} | Recomendado para su uso con los componentes principales | [!BADGE No disponible]{type=Negative} | Las páginas clásicas de AEM suelen depender de varias funciones específicas del editor de páginas que son difíciles de replicar tal cual con el editor universal. |
+| [Entrega de publicación](/help/sites-cloud/authoring/author-publish.md) | [!BADGE Disponible]{type=Positive} | Se recomienda su uso con los componentes principales y los proyectos tradicionales de AEM | [!BADGE No disponible]{type=Negative} | Las páginas tradicionales de AEM suelen depender de varias funciones específicas del editor de páginas que son difíciles de replicar tal cual con el editor universal. |
 | [Edge Delivery](/help/edge/overview.md) | [!BADGE No disponible]{type=Negative} |  | [!BADGE Disponible]{type=Positive} |  |
 | [Envío sin encabezado](/help/headless/introduction.md) | [!BADGE Disponible parcialmente]{type=Caution} | Solo con [el Editor de SPA,](/help/implementing/developing/hybrid/introduction.md) que estaba [obsoleto](/help/implementing/developing/hybrid/spa-editor-deprecation.md) a favor del Editor universal | [!BADGE Disponible]{type=Positive} | El editor universal permite a los desarrolladores traer su propia aplicación web sin imponer requisitos de marco de trabajo específicos ni restricciones de implementación. |
 
 ### Persistencia {#persistence}
 
-|  | Editor de página | Notas | Editor universal | Notas |
+|  | Editor de páginas | Notas | Editor universal | Notas |
 |---|---|---|---|---|
 | Edición de componentes de página | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | Editando [fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) | [!BADGE No disponible]{type=Negative} |  | [!BADGE Disponible]{type=Positive} | Incluir la inserción y reordenación de fragmentos |
 
 ### Capacidades {#capabilities}
 
-|  | Editor de página | Notas | Editor universal | Notas |
+|  | Editor de páginas | Notas | Editor universal | Notas |
 |---|---|---|---|---|
 | Plantillas de página | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | El editor universal no es independiente del sistema de plantillas utilizado. Sin embargo, el patrón de implementación típico favorece las plantillas definidas por el desarrollador, ya que las herramientas modernas de front-end facilitan en gran medida a los desarrolladores la definición y el mantenimiento de la lógica de plantilla directamente en el código. |
 | Edición en WYSIWYG | [!BADGE Disponible]{type=Positive} | Limitado a páginas | [!BADGE Disponible]{type=Positive} | Páginas de soporte y fragmentos de contenido |
@@ -103,6 +103,6 @@ No hay una ruta de migración directa del Editor de páginas al Editor universal
    * Esto afecta a muchas áreas de los cuadros de diálogo, como widgets personalizados, validación de campos, reglas de mostrar/ocultar y personalizaciones basadas en plantillas.
       * Aunque estas funcionalidades aún son posibles, el Editor universal las resuelve mediante la configuración de, en lugar de implementar el JavaScript personalizado en los cuadros de diálogo.
 
-Aunque técnicamente el editor universal puede habilitar la edición para páginas clásicas de AEM (por ejemplo, creadas con los componentes principales), estos sitios suelen depender de varias funciones específicas del editor de páginas, como el sistema de estilos, la cuadrícula interactiva, las plantillas editables y el Javascript personalizado dentro de los cuadros de diálogo.
+Aunque técnicamente el editor universal puede habilitar la edición de páginas para proyectos tradicionales de AEM (por ejemplo, creados con los componentes principales), estos sitios suelen depender de varias funciones específicas del editor de páginas, como el sistema de estilos, la cuadrícula interactiva, las plantillas editables y el Javascript personalizado dentro de los cuadros de diálogo.
 
 Dado que el editor universal sigue un enfoque más simplificado y moderno que no admite estas funciones heredadas, la migración de estos sitios requeriría una refactorización significativa. Por este motivo, la migración de **sitios del editor de páginas al editor universal solo se recomienda para proyectos en transición a Edge Delivery Services.**
