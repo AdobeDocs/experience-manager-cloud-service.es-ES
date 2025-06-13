@@ -4,10 +4,10 @@ description: Notas de la versión 2025.2.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 98%
+source-wordcount: '1527'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ Los recursos que se almacenan en programas de AEM as a Cloud Service diferentes 
 
 **Despliegue del editor de fragmentos de contenido**
 
-Seguiremos habilitando el nuevo editor de fragmentos de contenido basado en la IU de Spectrum en AEM as a Cloud Service. Después de convertirse en el valor predeterminado para todos los entornos de Cloud Service Developer en noviembre de 2024, se establecerá como valor predeterminado para todos los entornos de ensayo el 1 de abril de 2025, y para todos los entornos de producción el 1 de mayo de 2025. En todos los casos, los usuarios seguirán teniendo la opción de volver al editor de fragmentos de contenido tradicional en la IU táctil de AEM.
+Seguiremos habilitando el nuevo [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md) en AEM as a Cloud Service, con [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) (mediante la interfaz de usuario de espectro). Después de convertirse en el valor predeterminado para todos los entornos de Cloud Service Developer en noviembre de 2024, se establecerá como valor predeterminado para todos los entornos de ensayo el 1 de abril de 2025, y para todos los entornos de producción el 1 de mayo de 2025. En todos los casos, los usuarios seguirán teniendo la opción de volver al editor de fragmentos de contenido tradicional en la IU táctil de AEM.
 
 **API HTTP de traducción**
 

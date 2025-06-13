@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
 workflow-type: tm+mt
-source-wordcount: '2817'
+source-wordcount: '2824'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ Este editor proporciona lo siguiente:
 
 >[!WARNING]
 >
->El editor que se describe en esta sección es *solamente* disponible en *línea* Adobe Experience Manager (AEM) as a Cloud Service.
+>El editor que se describe en esta sección está *solamente* disponible en [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md); por lo tanto, *en línea* Adobe Experience Manager (AEM) as a Cloud Service, no es una instancia local.
 
 ## Editor de fragmentos de contenido {#content-fragment-editor}
 
@@ -267,7 +267,7 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 
