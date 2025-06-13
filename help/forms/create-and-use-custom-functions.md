@@ -168,6 +168,7 @@ Puede crear una función personalizada con o sin comentarios jsdoc.
             // code to be executed
         }
 ```
+
 Si el usuario no agrega ninguna anotación de JavaScript a la función personalizada, se muestra en el editor de reglas por su nombre de función. Sin embargo, se recomienda incluir anotaciones de JavaScript para mejorar la legibilidad de las funciones personalizadas.
 
 ### Función de flecha con anotaciones o comentarios JavaScript obligatorios
