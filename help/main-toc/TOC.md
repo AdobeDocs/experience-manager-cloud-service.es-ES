@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
+source-git-commit: db545a7bef1b23caf735445abb7efab42d307913
 workflow-type: tm+mt
-source-wordcount: '6239'
+source-wordcount: '6253'
 ht-degree: 98%
 
 ---
@@ -514,7 +514,6 @@ ht-degree: 98%
    + [Habilitar Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Usuarios colaboradores de Assets](/help/assets/assets-collaborator-users.md)
-   + [Integración de AEM Assets durante la creación de contenido para Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + Administrar los recursos digitales  {#manage}
       + Selector de recursos de Micro-Frontend {#asset-selector}
          + [Información general del Selector de recursos](/help/assets/overview-asset-selector.md)
@@ -710,6 +709,9 @@ ht-degree: 98%
    + Prácticas recomendadas{#best-practices}
       + [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md)
       + [Administración de metadatos y prácticas recomendadas](/help/assets/metadata-best-practices.md)
+
+   + Integración con Figma {#integration-figma}
+      + [Integración nativa con Figma](/help/assets/Integrate-aem-assets-with-figma.md)
    + Integración con Adobe Workfront {#integrations}
       + [Integraciones con  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Configuración de la asignación de metadatos de recursos](/help/assets/configure-asset-metadata-mapping.md)
@@ -721,6 +723,8 @@ ht-degree: 98%
       + [Integración nativa con Adobe Express](/help/assets/native-integration-adobe-express.md)
    + Integración con Creative Cloud  {#integration-creative-cloud}
       + [Conectar AEM Assets a Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
+   + Integración de AEM Assets con Edge Delivery Services {#integrate-aem-assets-edge-delivery-services}
+      + [Integrar AEM Assets al crear contenido para Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
 + Formularios {#forms}
    + Información general {#forms-overview}
       + [Introducción](/help/forms/home.md)
