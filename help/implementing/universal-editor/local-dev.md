@@ -4,7 +4,7 @@ description: Descubra cómo puede ejecutar su propio servicio de editor universa
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
+source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 2%
@@ -51,7 +51,7 @@ Para ello, debe configurar AEM para que se ejecute en HTTPS. Para fines de desar
 
 El servicio de editor universal no es una copia completa del editor universal, sino solo un subconjunto de sus funciones para garantizar que las llamadas de su entorno de AEM local no se enruten a través de Internet, sino desde un punto final definido que usted controle.
 
-Se requiere la versión 20[&#128279;](https://nodejs.org/en/download/releases) de NodeJS para ejecutar una copia local del servicio de editor universal.
+Se requiere la versión 20](https://nodejs.org/en/download/releases) de [NodeJS para ejecutar una copia local del servicio de editor universal.
 
 El servicio de editor universal está disponible a través de la distribución de software. Consulte la [documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es) para obtener detalles sobre cómo acceder a ella.
 
@@ -156,7 +156,7 @@ Una vez configurado, debería ver que cada llamada de actualización de contenid
 
 ## Edición de una página con el servicio de editor universal local {#editing}
 
-Con el servicio de editor universal [ejecutándose localmente](#running-ue) y la página de contenido [instrumentada para usar el servicio local](#using-loca-ue), ahora puede iniciar el editor.
+Con el servicio de editor universal [ejecutándose localmente](#running-ue) y la página de contenido [instrumentada para usar el servicio local](/help/implementing/universal-editor/getting-started.md), ahora puede iniciar el editor.
 
 1. Abra el explorador a `https://localhost:8000/ping`.
 1. Indique a su explorador que acepte [su certificado firmado automáticamente](#ue-https).
