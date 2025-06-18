@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta privada" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 6ca65f5833dc26043a27945ae02aac6e29ad62d2
 workflow-type: tm+mt
-source-wordcount: '2077'
-ht-degree: 25%
+source-wordcount: '2292'
+ht-degree: 28%
 
 ---
 
@@ -30,9 +30,10 @@ Los clientes ahora también pueden incorporar sus repositorios Git de Azure DevO
 
 La configuración de un repositorio externo en Cloud Manager consiste en los siguientes pasos:
 
-1. [Añada un repositorio externo](#add-external-repo) a un programa seleccionado.
-1. Proporcione un token de acceso al repositorio externo.
-1. Valide la propiedad del repositorio privado de GitHub.
+1. [Agregar un repositorio externo](#add-external-repo) a un programa seleccionado
+1. [Vincular un repositorio externo validado a una canalización](#validate-ext-repo)
+   <!-- 1. Provide an access token to the external repository.
+    1. Validate ownership of the private GitHub repository. -->
 1. [Configurar un webhook](#configure-webhook) en un repositorio externo.
 
 
@@ -71,28 +72,60 @@ La configuración de un repositorio externo en Cloud Manager consiste en los sig
 
 1. Seleccione **Guardar** para añadir el repositorio. 
 
-1. En el cuadro de diálogo **Validación de la propiedad del repositorio privado**, proporcione un token de acceso para validar la propiedad del repositorio externo afín de poder acceder a él.
+   Ahora, proporcione un token de acceso para validar la propiedad del repositorio externo.
+
+1. En el cuadro de diálogo **Validación de propiedad de repositorio privado**, proporcione un token de acceso para validar la propiedad del repositorio externo y así poder acceder a él. A continuación, haga clic en **Validación**.
 
    ![Selección de un token de acceso existente para un repositorio](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
-   *Seleccionando un token de acceso existente para un repositorio de Bitbucket.*
+   *Seleccionar un token de acceso existente para un repositorio de bloque de bits (solo para ilustración).*
 
-   | Tipo de token | Descripción |
-   | --- | --- |
-   | **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
-   | **Añadir nuevo token de acceso** | **Tipo de repositorio: GitHub Enterprise**<br><ul><li> En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitHub](https://docs.github.com/es/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Permisos necesarios para el token de acceso personal (PAT) de GitHub Enterprise<br>Estos permisos garantizan que Cloud Manager pueda validar las solicitudes de extracción, administrar las comprobaciones de estado de las confirmaciones y acceder a los detalles necesarios del repositorio.<br>Cuando genere la PAT en GitHub Enterprise, asegúrese de que incluya los siguientes permisos de repositorio:<ul><li>Solicitud de extracción (lectura y escritura)<li>Confirmar estados (lectura y escritura)<li>Metadatos del repositorio (solo lectura)</li></li></ul></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
-   | | **Tipo de repositorio: GitLab**<ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Permisos necesarios para el token de acceso personal (PAT) de GitLab<br>Estos ámbitos permiten a Cloud Manager acceder a los datos del repositorio y a la información de usuario según sea necesario para la validación y la integración de ganchos web.<br>Cuando genere la PAT en GitLab, asegúrese de que incluya los siguientes ámbitos de token:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
-   | | **Tipo de repositorio: Bitbucket**<ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso al repositorio mediante la [documentación de Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Permisos necesarios para el token de acceso personal (PAT) de Bitbucket<br>Estos permisos permiten a Cloud Manager acceder al contenido del repositorio, administrar solicitudes de extracción y configurar eventos de webhook o reaccionar a ellos.<br>Cuando cree la contraseña de la aplicación en Bitbucket, asegúrese de que incluya los siguientes permisos obligatorios para la contraseña de la aplicación:<ul><li>Repositorio (solo lectura)<li>Solicitudes de extracción (lectura y escritura)<li>Webhooks (leer y escribir)</li></li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
-   | | **Tipo de repositorio: Azure DevOps**<ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso al repositorio con la [documentación de Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Permisos necesarios para el token de acceso personal (PAT) de Azure DevOps.<br>Estos permisos permiten a Cloud Manager acceder al contenido del repositorio, administrar solicitudes de extracción y configurar eventos de gancho web o reaccionar a ellos.<br>Cuando cree la contraseña de la aplicación en Azure DevOps, asegúrese de que incluya los siguientes permisos de contraseña de aplicación necesarios:<ul><li>Repositorio (solo lectura)</li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
+>[!BEGINTABS]
 
-   Consulte también [Administrar tokens de acceso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+>[!TAB GitHub Enterprise]
 
-   >[!IMPORTANT]
-   >
-   >La característica **Agregar nuevo token de acceso** se encuentra actualmente en versión beta privada. Se están planificando funciones adicionales. Como resultado, los permisos necesarios para los tokens de acceso pueden cambiar. Además, la interfaz de usuario para administrar tokens se puede actualizar, lo que incluye potencialmente características como las fechas de caducidad de los tokens. Y comprobaciones automatizadas para garantizar que los tokens vinculados a repositorios siguen siendo válidos.
+| Opción de token de acceso | Descripción |
+| --- | --- |
+| **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
+| **Añadir nuevo token de acceso** | <ul><li> En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitHub](https://docs.github.com/es/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Permisos necesarios para el token de acceso personal (PAT) de GitHub Enterprise<br>Estos permisos garantizan que Cloud Manager pueda validar las solicitudes de extracción, administrar las comprobaciones de estado de las confirmaciones y acceder a los detalles necesarios del repositorio.<br>Cuando genere la PAT en GitHub Enterprise, asegúrese de que incluya los siguientes permisos de repositorio:<ul><li>Solicitud de extracción (lectura y escritura)<li>Confirmar estados (lectura y escritura)<li>Metadatos del repositorio (solo lectura)</li></li></ul></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
 
-1. Haga clic en **Validar**.
+Después de la validación, el repositorio externo estará listo para usarse y vincularse a una canalización.
 
-   Después de la validación, el repositorio externo estará listo para usarse y vincularse a una canalización.
+Consulte también [Administrar tokens de acceso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
+>[!TAB GitLab]
+
+| Opción de token de acceso | Descripción |
+| --- | --- |
+| **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
+| **Añadir nuevo token de acceso** | <ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Permisos necesarios para el token de acceso personal (PAT) de GitLab<br>Estos ámbitos permiten a Cloud Manager acceder a los datos del repositorio y a la información de usuario según sea necesario para la validación y la integración de ganchos web.<br>Cuando genere la PAT en GitLab, asegúrese de que incluya los siguientes ámbitos de token:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
+
+Después de la validación, el repositorio externo estará listo para usarse y vincularse a una canalización.
+
+Consulte también [Administrar tokens de acceso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
+>[!TAB Bits]
+
+| Opción de token de acceso | Descripción |
+| --- | --- |
+| **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
+| **Añadir nuevo token de acceso** | <ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso al repositorio mediante la [documentación de Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Permisos necesarios para el token de acceso personal (PAT) de Bitbucket<br>Estos permisos permiten a Cloud Manager acceder al contenido del repositorio, administrar solicitudes de extracción y configurar eventos de webhook o reaccionar a ellos.<br>Cuando cree la contraseña de la aplicación en Bitbucket, asegúrese de que incluya los siguientes permisos obligatorios para la contraseña de la aplicación:<ul><li>Repositorio (solo lectura)<li>Solicitudes de extracción (lectura y escritura)<li>Webhooks (leer y escribir)</li></li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
+
+Después de la validación, el repositorio externo estará listo para usarse y vincularse a una canalización.
+
+Consulte también [Administrar tokens de acceso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
+>[!TAB DevOps de Azure]
+
+| Opción de token de acceso | Descripción |
+| --- | --- |
+| **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
+| **Añadir nuevo token de acceso** | <ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso al repositorio con la [documentación de Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Permisos necesarios para el token de acceso personal (PAT) de Azure DevOps.<br>Estos permisos permiten a Cloud Manager acceder al contenido del repositorio, administrar solicitudes de extracción y configurar eventos de gancho web o reaccionar a ellos.<br>Cuando cree la contraseña de la aplicación en Azure DevOps, asegúrese de que incluya los siguientes permisos de contraseña de aplicación necesarios:<ul><li>Repositorio (solo lectura)</li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
+
+Después de la validación, el repositorio externo estará listo para usarse y vincularse a una canalización.
+
+Consulte también [Administrar tokens de acceso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
+>[!ENDTABS]
 
 
 ## Vincular un repositorio externo validado a una canalización {#validate-ext-repo}
@@ -131,7 +164,7 @@ Por ejemplo, los enlaces web permiten a Cloud Manager almacenar en déclencheur 
 
 La configuración de webhook no es necesaria para los repositorios alojados en `GitHub.com` porque Cloud Manager se integra directamente a través de la aplicación GitHub.
 
-Para todos los demás repositorios externos incorporados con un token de acceso, como GitHub Enterprise, GitLab y Bitbucket, la configuración del webhook está disponible y debe configurarse manualmente.
+Para todos los demás repositorios externos incorporados con un token de acceso, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps, la configuración del webhook está disponible y debe configurarse manualmente.
 
 **Para configurar un webhook para un repositorio externo:**
 
@@ -158,9 +191,9 @@ Pegue la dirección URL en un archivo de texto sin formato. La URL copiada es ne
    1. Junto al campo de clave/token **Secreto de webhook**, haz clic en **Generar** y luego haz clic en ![Icono de copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
 Pegue el secreto en un archivo de texto sin formato. El secreto copiado es necesario para la configuración del webhook del proveedor Git.
 1. Haga clic en **Cerrar**.
-1. Vaya a la solución de su proveedor de Git (GitHub Enterprise, GitLab o Bitbucket).
+1. Vaya a la solución de su proveedor de Git (GitHub Enterprise, GitLab, Bitbucket o Azure DevOps).
 
-   Todos los detalles de la configuración del gancho web y los eventos necesarios para cada proveedor están disponibles en [Agregar un repositorio externo](#add-ext-repo). En el paso 8, consulte la tabla.
+   Todos los detalles de la configuración del gancho web y los eventos necesarios para cada proveedor están disponibles en [Agregar un repositorio externo](#add-ext-repo). En el paso 8, consulte la tabla con pestañas.
 
 1. Busque la sección Configuración de **Webhook** de la solución.
 1. Pegue la dirección URL del webhook copiada anteriormente en el campo de texto URL.
@@ -169,57 +202,87 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
       Para generar una clave de API, debe crear un proyecto de integración en Adobe Developer Console. Consulte [Creación de un proyecto de integración de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) para obtener información detallada.
 
 1. Pegue el secreto de webhook que copió anteriormente en el campo de texto **Secreto** (o **Clave secreta**, o **Token secreto**).
-1. Configure el webhook para enviar los eventos requeridos que espera Cloud Manager.
+1. Configure el webhook para enviar los eventos que requiere Cloud Manager. Utilice la siguiente tabla para determinar los eventos correctos para su proveedor de Git.
 
-   | Repositorio | Eventos de gancho web requeridos |
-   | --- | --- |
-   | GitHub Enterprise | Estos eventos permiten que Cloud Manager responda a la actividad de GitHub, como la validación de solicitudes de extracción, los déclencheur basados en push para canalizaciones o la sincronización de código de Edge Delivery Services.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web necesarios:<ul><li>Solicitudes de extracción<li>Inserciones<li>Comentarios sobre problemas</li></li></li></ul></ul></ul> |
-   | GitLab | Estos eventos de gancho web permiten a Cloud Manager almacenar en déclencheur las canalizaciones cuando se inserta código o se envía una solicitud de combinación. También rastrean los comentarios relacionados con la validación de solicitudes de extracción (a través de eventos de nota).<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Eventos push<li>Combinar eventos de solicitud<li>Eventos de nota</li></li></li></ul></ul></ul> |
-   | Bitbucket | Estos eventos garantizan que Cloud Manager pueda validar las solicitudes de extracción, responder a inserciones de código e interactuar con comentarios para la coordinación de canalizaciones.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Solicitud de extracción: creada<li>Solicitud de extracción: actualizada<li>Solicitudes de extracción: combinadas<li>Solicitud de extracción: comentario<li>Repositorio: push</li></li></li></ul></ul></ul> |
-   | Azure DevOps | Estos eventos garantizan que Cloud Manager pueda validar las solicitudes de extracción, responder a inserciones de código e interactuar con comentarios para la coordinación de canalizaciones.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Repositorio: push</li></li></ul></ul></ul> |
+>[!BEGINTABS]
+
+>[!TAB GitHub Enterprise]
+
+| Eventos de gancho web requeridos |
+| --- |
+| Estos eventos permiten que Cloud Manager responda a la actividad de GitHub, como la validación de solicitudes de extracción, los déclencheur basados en push para canalizaciones o la sincronización de código de Edge Delivery Services.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web necesarios:<ul><li>Solicitudes de extracción<li>Inserciones<li>Comentarios sobre problemas</li></li></li></ul></ul></ul> |
+
+>[!TAB GitLab]
+
+| Eventos de gancho web requeridos |
+| --- |
+| Estos eventos de gancho web permiten a Cloud Manager almacenar en déclencheur las canalizaciones cuando se inserta código o se envía una solicitud de combinación. También rastrean los comentarios relacionados con la validación de solicitudes de extracción (a través de eventos de nota).<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Eventos push<li>Combinar eventos de solicitud<li>Eventos de nota</li></li></li></ul></ul></ul> |
+
+>[!TAB Bits]
+
+| Eventos de gancho web requeridos |
+| --- |
+| Estos eventos garantizan que Cloud Manager pueda validar las solicitudes de extracción, responder a inserciones de código e interactuar con comentarios para la coordinación de canalizaciones.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Solicitud de extracción: creada<li>Solicitud de extracción: actualizada<li>Solicitudes de extracción: combinadas<li>Solicitud de extracción: comentario<li>Repositorio: push</li></li></li></ul></ul></ul> |
+
+>[!TAB DevOps de Azure]
+
+| Eventos de gancho web requeridos |
+| --- |
+| Estos eventos garantizan que Cloud Manager pueda validar las solicitudes de extracción, responder a inserciones de código e interactuar con comentarios para la coordinación de canalizaciones.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Repositorio: push</li></li></ul></ul></ul> |
+
+>[!ENDTABS]
 
 
 ### Validación de solicitudes de extracción con webhooks
 
 Una vez configurados correctamente los enlaces web, Cloud Manager déclencheur automáticamente las ejecuciones de canalización o las comprobaciones de validación de PR de su repositorio.
 
-Se aplican los siguientes comportamientos:
+El comportamiento varía según el proveedor de Git que utilice, como se describe a continuación.
 
-* **GitHub Enterprise**
+>[!BEGINTABS]
 
-  Cuando se crea la comprobación, aparece como la siguiente captura de pantalla a continuación. La diferencia clave de `GitHub.com` es que `GitHub.com` usa una ejecución de comprobación, mientras que GitHub Enterprise (que usa tokens de acceso personal) genera un estado de confirmación:
 
-  ![Confirmar estado para indicar el proceso de validación de PR en GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+>[!TAB GitHub Enterprise]
 
-* **Bits**
+Cuando se crea la comprobación, aparece como la siguiente captura de pantalla a continuación. La diferencia clave de `GitHub.com` es que `GitHub.com` usa una ejecución de comprobación, mientras que GitHub Enterprise (que usa tokens de acceso personal) genera un estado de confirmación:
 
-  Cuando se ejecuta la validación de calidad del código:
+![Confirmar estado para indicar el proceso de validación de PR en GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
-  ![Estado mientras se ejecuta la validación de calidad del código](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket1.png)
 
-  Utiliza el estado de confirmación para rastrear el progreso de validación de PR. En el siguiente caso, la captura de pantalla muestra qué sucede cuando una validación de calidad de código falla debido a un problema con el cliente. Se agrega un comentario con información detallada del error y se crea una comprobación de compromiso, que muestra el error (visible a la derecha):
+>[!TAB GitLab]
 
-  ![Estado de validación de solicitud de extracción para Bitbucket](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
+Las interacciones de GitLab se basan únicamente en comentarios. Cuando comienza la validación, se agrega un comentario. Cuando finaliza la validación (ya sea correcta o errónea), el comentario inicial se elimina y se reemplaza por un nuevo comentario que contiene los resultados de validación o los detalles del error.
 
-* **GitLab**
+Cuando se ejecuta la validación de calidad del código:
 
-  Las interacciones de GitLab se basan únicamente en comentarios. Cuando comienza la validación, se agrega un comentario. Cuando finaliza la validación (ya sea correcta o errónea), el comentario inicial se elimina y se reemplaza por un nuevo comentario que contiene los resultados de validación o los detalles del error.
+![Cuando se está ejecutando la validación de calidad del código](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
 
-  Cuando se ejecuta la validación de calidad del código:
+Cuando finalice la validación de calidad en frío:
 
-  ![Cuando se está ejecutando la validación de calidad del código](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
+![Cuando finalice la validación de la calidad en frío](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
 
-  Cuando finalice la validación de calidad en frío:
+Cuando la validación de calidad del código falla con un error:
 
-  ![Cuando finalice la validación de la calidad en frío](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
+![Cuando la validación de la calidad del código falla con un error](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab3.png)
 
-  Cuando la validación de calidad del código falla con un error:
+Cuando falla la validación de calidad del código debido a problemas con los clientes:
 
-  ![Cuando la validación de la calidad del código falla con un error](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab3.png)
+![Cuando falla la validación de calidad del código debido a problemas con el cliente](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab4.png)
 
-  Cuando falla la validación de calidad del código debido a problemas con los clientes:
 
-  ![Cuando falla la validación de calidad del código debido a problemas con el cliente](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab4.png)
+>[!TAB Bits]
+
+Cuando se ejecuta la validación de calidad del código:
+
+![Estado mientras se ejecuta la validación de calidad del código](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket1.png)
+
+Utiliza el estado de confirmación para rastrear el progreso de validación de PR. En el siguiente caso, la captura de pantalla muestra qué sucede cuando una validación de calidad de código falla debido a un problema con el cliente. Se agrega un comentario con información detallada del error y se crea una comprobación de compromiso, que muestra el error (visible a la derecha):
+
+![Estado de validación de solicitud de extracción para Bitbucket](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
+
+
+
+>[!ENDTABS]
 
 
 ## Solucionar problemas de webhook
