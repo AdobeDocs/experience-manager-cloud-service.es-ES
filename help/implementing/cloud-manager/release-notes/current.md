@@ -1,55 +1,55 @@
 ---
 title: Notas de la versión 2025.6.0 de Cloud Manager
-description: Obtenga información sobre la versión de Cloud Manager 2025.6.0 en Adobe Experience Manager as a Cloud Service.
+description: Obtenga información sobre la versión 2025.6.0 de Cloud Manager en Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 54%
+ht-degree: 96%
 
 ---
 
-# Notas de la versión para Cloud Manager 2025.6.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión 2025.6.0 de Cloud Manager en Adobe Experience Manager as a Cloud Service {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-Obtenga información sobre el lanzamiento de Cloud Manager 2025.6.0 en AEM (Adobe Experience Manager) as a Cloud Service.
+Obtenga información sobre la versión 2025.6.0 de Cloud Manager en AEM (Adobe Experience Manager) as a Cloud Service.
 
 Consulte también las [notas de la versión actual de Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Fechas de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2025.6.0 en AEM as a Cloud Service es el viernes, 05 de junio de 2025.
+La fecha de lanzamiento de Cloud Manager 2025.6.0 en AEM as a Cloud Service fue el jueves, 5 de junio de 2025.
 
-La próxima versión planificada es para el viernes, 10 de julio de 2025.
+La próxima versión está planificada para el jueves 10 de julio de 2025.
 
 ## Novedades {#what-is-new}
 
-* **El tablero de licencias ahora incluye la licencia de Edge Delivery Services**
+* **El panel de control de licencias ahora incluye la licencia de Edge Delivery Services**
 
-  El uso de licencias de Edge Delivery Services ahora se muestra en el panel de licencias, lo que le proporciona una visibilidad más clara de sus derechos y estado. <!-- CMGR-67686 -->
+  El uso de la licencia de Edge Delivery Services ahora se muestra en el panel de control de licencias, lo que le proporciona una visibilidad clara de sus derechos y estado. <!-- CMGR-67686 -->
 
-  ![Tablero de licencias](/help/implementing/cloud-manager/assets/license-dashboard.png)
+  ![Panel de control de licencias](/help/implementing/cloud-manager/assets/license-dashboard.png)
 
-  Consulte [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md).
+  Consulte [Panel de control de licencias](/help/implementing/cloud-manager/license-dashboard.md).
 
 * **Configuración del sitio de Edge Delivery actualizada**
 
-  Se ha simplificado el flujo para agregar un sitio Edge Delivery al solicitar **Edge Delivery Origin** en lugar de **la URL del repositorio**, lo que hace que la incorporación y la configuración sean más rápidas e intuitivas <!-- CMGR-67686 -->
+  Se ha simplificado el flujo para añadir un sitio de Edge Delivery solicitando el **origen de Edge Delivery** en lugar de la **URL del repositorio**, esto hace que la incorporación y la configuración sean más rápidas e intuitivas <!-- CMGR-67686 -->
 
-  ![Agregar cuadro de diálogo del sitio de Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
+  ![Cuadro de diálogo Añadir sitio de Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
 
-  Consulte [Agregar un sitio Edge Delivery](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
+  Consulte [Adición de un sitio de Edge Delivery](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
-* **Favoritos de canalización**
+* **Canalizaciones favoritas**
 
   En esta versión, Cloud Manager introduce la capacidad de fijar canalizaciones favoritas, lo que le permite marcar canalizaciones específicas como favoritas para que aparezcan en la parte superior de la lista en la página **Canalizaciones**. Esta mejora facilita la búsqueda y ejecución de las canalizaciones a las que se accede con frecuencia. <!-- CMGR-68293 -->
 
   ![Canalizaciones marcadas como favoritas](/help/implementing/cloud-manager/release-notes/assets/pipeline-favorites.png) *Dos canalizaciones marcadas como favoritas.*
 
-  Consulte [Marcar favoritos de canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
+  Consulte [Marcado de canalizaciones como favoritas](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
 
 
 ## Programa beta privado {#private-beta-program}
@@ -61,16 +61,16 @@ Actualmente están disponibles las siguientes oportunidades de beta privada:
 
 ### Entorno de pruebas especializadas {#specialized-test-environment}
 
-Cloud Manager ahora admite la adición de un nuevo tipo de entorno denominado **Entorno de prueba especializado**. El entorno está diseñado para ayudar a los equipos a validar las funciones en condiciones casi de producción antes de lanzarse. Este tipo de entorno es distinto de los entornos *Production + Stage*, *Development* o *Rapid Development*, y ofrece un espacio centrado para ejecutar escenarios de validación avanzados.
+Cloud Manager ahora admite la adición de un nuevo tipo de entorno denominado **Entorno de prueba especializado**. El entorno está diseñado para ayudar a los equipos a validar las funciones en condiciones casi de producción antes de su lanzamiento. Este tipo de entorno es distinto de los entornos *Producción + Fase*, *Desarrollo* o *Desarrollo rápido*, y ofrece un espacio dedicado para ejecutar escenarios de validación avanzados.
 
-Consulte [Agregar un entorno de prueba especializado](/help/implementing/cloud-manager/specialized-test-environment.md).
+Consulte [Adición de un entorno de prueba especializado](/help/implementing/cloud-manager/specialized-test-environment.md).
 
-![Cuadro de diálogo Agregar entorno con el botón de opción Entorno de prueba especializado seleccionado](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+![Cuadro de diálogo Añadir entorno con el botón de opción Entorno de prueba especializado seleccionado](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un mensaje de correo electrónico a [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
+Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
 
 
-### Traer su propio Git (BYOG): ahora con compatibilidad con Azure DevOps {#gitlab-bitbucket-azure-vsts}
+### Traiga su propio Git (BYOG), ahora compatible con Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -98,30 +98,30 @@ Si le interesa probar esta nueva función y compartir sus comentarios, envíe un
 | *¿Funcionan todas las URL del repositorio de GitLab? La URL del repositorio en uso sigue el formato `https://gitlab_dedicated_url.com/path/repo-name.git`, que difiere del ejemplo de la documentación.* | Sí, se admite cualquier repositorio de GitLab que admita API V3 o V4, incluidas las URL de GitLab autoalojado como la descrita en [Añadir repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
 
 
-#### Administrar tokens de acceso{#manage-access-tokens}
+#### Administrar tókenes de acceso{#manage-access-tokens}
 
 Use **Administrar tokens de acceso** en Cloud Manager para ver, cambiar el nombre y eliminar los tokens de acceso asociados con repositorios BYOG externos, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
 
-Consulte [Administrar tokens de acceso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+Consulte [Administración de tokens de acceso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
-Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un mensaje de correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
+Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. 
 
 
 ### Añadir canalización de configuración de Edge Delivery {#add-eds-pipeline}
 
 Ahora se admiten las canalizaciones de configuración para los sitios creados con Edge Delivery Services, lo que amplía esta capacidad más allá de los entornos de Cloud Service. Puede usar las **canalizaciones de configuración** para administrar las configuraciones como las reglas de filtrado de tráfico y las configuraciones WAF cuando corresponda. Consulte [Configuraciones compatibles](/help/operations/config-pipeline.md#configurations).
 
-![Agregar canalización de Edge Delivery en la lista desplegable Agregar canalización](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Agregar una canalización de Edge Delivery desde la página **Información general del programa**, tarjeta **Canalizaciones**.*
+![Añadir canalización de Edge Delivery a la lista desplegable Añadir canalización](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adición de una canalización de Edge Delivery desde la página **Información general del programa**, tarjeta **Canalizaciones**.*
 
-![Agregar cuadro de diálogo de canalización de Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Agregar cuadro de diálogo de canalización de Edge Delivery.*
+![Cuadro de diálogo Añadir canalización de Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Cuadro de diálogo Añadir canalización de Edge Delivery.*
 
-Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
+Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
 
 
 ## Correcciones de errores
 
-* Los entornos de zona protegida previamente marcados como `HIBERNATED` ya no permanecen atascados en ese estado, lo que permite que la ejecución o implementación de la canalización se realice según lo esperado. <!-- CMGR-67705 -->
-* AEM Cloud Manager ahora asigna correctamente los errores de compilación de Maven causados por errores 409 (conflictos) al recuperar artefactos del cliente en un error causado por el cliente. Este cambio mejora los mensajes de error al distinguir entre errores internos y problemas relacionados con la configuración del entorno del cliente. <!-- CMGR-66673 -->
+* Los entornos de zona protegida marcados previamente como `HIBERNATED` ya no permanecen atascados en ese estado, lo que permite que la ejecución o la implementación de la canalización se realice según lo esperado. <!-- CMGR-67705 -->
+* AEM Cloud Manager ahora asigna correctamente los errores de compilación de Maven provocados por errores 409 (conflictos) al recuperar artefactos del cliente en un error ocasionado por el cliente. Este cambio mejora los mensajes de error porque permite distinguir entre errores internos y problemas relacionados con la configuración del entorno del cliente. <!-- CMGR-66673 -->
 
 
 <!-- ## Known issues {#known-issues} -->
