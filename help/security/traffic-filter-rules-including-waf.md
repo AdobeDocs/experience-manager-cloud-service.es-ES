@@ -4,9 +4,9 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
-workflow-type: ht
-source-wordcount: '4278'
+source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
+workflow-type: tm+mt
+source-wordcount: '4262'
 ht-degree: 100%
 
 ---
@@ -48,8 +48,6 @@ Este artículo está organizado en las secciones siguientes:
 * **Herramientas del tablero:** analice los registros de CDN para crear nuevas reglas de filtro de tráfico.
 * **Reglas de inicio recomendadas:** un conjunto de reglas para empezar.
 * **Tutorial:** conocimientos prácticos sobre la función, que incluye cómo utilizar las herramientas del tablero para declarar las reglas correctas.
-
-Adobe le invita a que envíe sus comentarios o preguntas sobre las reglas de filtro de tráfico por correo electrónico a **aemcs-waf-adopter@adobe.com**.
 
 ## Información general sobre protección del tráfico {#traffic-protection-overview}
 
