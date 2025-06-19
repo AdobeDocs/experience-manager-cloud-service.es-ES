@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta privada" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 6ca65f5833dc26043a27945ae02aac6e29ad62d2
+source-git-commit: f51730be823782ba722a33be6da409fad14429eb
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 28%
+source-wordcount: '2301'
+ht-degree: 27%
 
 ---
 
@@ -83,6 +83,9 @@ La configuración de un repositorio externo en Cloud Manager consiste en los sig
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-providers/github —>
+
 | Opción de token de acceso | Descripción |
 | --- | --- |
 | **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
@@ -93,6 +96,8 @@ Después de la validación, el repositorio externo estará listo para usarse y v
 Consulte también [Administrar tokens de acceso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | Opción de token de acceso | Descripción |
 | --- | --- |
@@ -105,6 +110,8 @@ Consulte también [Administrar tokens de acceso](/help/implementing/cloud-manage
 
 >[!TAB Bits]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
 | Opción de token de acceso | Descripción |
 | --- | --- |
 | **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
@@ -115,6 +122,8 @@ Después de la validación, el repositorio externo estará listo para usarse y v
 Consulte también [Administrar tokens de acceso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
 >[!TAB DevOps de Azure]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | Opción de token de acceso | Descripción |
 | --- | --- |
@@ -208,11 +217,16 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-providers/github —>
+
 | Eventos de gancho web requeridos |
 | --- |
 | Estos eventos permiten que Cloud Manager responda a la actividad de GitHub, como la validación de solicitudes de extracción, los déclencheur basados en push para canalizaciones o la sincronización de código de Edge Delivery Services.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web necesarios:<ul><li>Solicitudes de extracción<li>Inserciones<li>Comentarios sobre problemas</li></li></li></ul></ul></ul> |
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | Eventos de gancho web requeridos |
 | --- |
@@ -220,11 +234,15 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
 
 >[!TAB Bits]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
 | Eventos de gancho web requeridos |
 | --- |
 | Estos eventos garantizan que Cloud Manager pueda validar las solicitudes de extracción, responder a inserciones de código e interactuar con comentarios para la coordinación de canalizaciones.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Solicitud de extracción: creada<li>Solicitud de extracción: actualizada<li>Solicitudes de extracción: combinadas<li>Solicitud de extracción: comentario<li>Repositorio: push</li></li></li></ul></ul></ul> |
 
 >[!TAB DevOps de Azure]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | Eventos de gancho web requeridos |
 | --- |
@@ -244,12 +262,17 @@ El comportamiento varía según el proveedor de Git que utilice, como se describ
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-providers/github —>
+
 Cuando se crea la comprobación, aparece como la siguiente captura de pantalla a continuación. La diferencia clave de `GitHub.com` es que `GitHub.com` usa una ejecución de comprobación, mientras que GitHub Enterprise (que usa tokens de acceso personal) genera un estado de confirmación:
 
 ![Confirmar estado para indicar el proceso de validación de PR en GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 Las interacciones de GitLab se basan únicamente en comentarios. Cuando comienza la validación, se agrega un comentario. Cuando finaliza la validación (ya sea correcta o errónea), el comentario inicial se elimina y se reemplaza por un nuevo comentario que contiene los resultados de validación o los detalles del error.
 
@@ -271,6 +294,8 @@ Cuando falla la validación de calidad del código debido a problemas con los cl
 
 
 >[!TAB Bits]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 Cuando se ejecuta la validación de calidad del código:
 
