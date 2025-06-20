@@ -1,22 +1,30 @@
 ---
-title: Lanzamientos
-description: Los lanzamientos le permiten desarrollar contenido con eficacia para una versión futura. También permiten realizar los cambios para una publicación en el futuro, a la vez que se mantienen las páginas actuales
+title: Lanzamientos para páginas
+description: Aprenda a utilizar Lanzamientos para páginas en Adobe Experience Manager as a Cloud Service. Los lanzamientos permiten desarrollar contenido de forma eficaz para una versión futura sin perder de vista las páginas actuales.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 9ddda040eda85b29c86a4940cb656f26073b0f12
+source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 83%
+source-wordcount: '995'
+ht-degree: 74%
 
 ---
 
-# Lanzamientos {#launches}
+# Lanzamientos para páginas {#launches-for-pages}
 
-Los lanzamientos le permiten desarrollar contenido con eficacia para una versión futura.
+En Adobe Experience Manager (AEM) as a Cloud Service, los lanzamientos le permiten desarrollar contenido de forma eficaz para una versión futura.
 
-Se crea un *Launch* para permitirle realizar cambios con el fin de prepararse para una publicación futura y, al mismo tiempo, mantener las páginas actuales. Esto significa que está editando dos versiones al mismo tiempo: páginas que se publican actualmente y una versión de esas páginas, que se publicarán a la vez en el futuro. Una vez que llegue ese momento, puede reemplazar las páginas originales y publicar la nueva versión.
+Se crea un *Launch* para permitirle realizar cambios con el fin de prepararse para una publicación futura y, al mismo tiempo, mantener el contenido actual. Para las páginas de AEM, esto significa que está editando dos versiones al mismo tiempo: páginas que se publican actualmente y una versión de esas páginas, que se publicarán a la vez en el futuro. Una vez que llegue ese momento, puede reemplazar las páginas originales y publicar las nuevas versiones.
+
+<!--
+>[!NOTE]
+>
+>Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>
+>For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 Usted crea un *Lanzamiento* y, después de editar y actualizar sus páginas de *Lanzamiento*, las *Promociona* de nuevo a *Source*. A continuación, puede activar estas páginas de *Source* (nivel superior). La promoción duplica el contenido del lanzamiento en las páginas de origen y se puede realizar de forma manual o automática (según los campos establecidos a la hora de crear y editar el lanzamiento).
 
@@ -28,7 +36,7 @@ Por ejemplo, las páginas de productos de temporada de su tienda en línea se ac
 También puede hacer lo siguiente:
 
 * Navegue por el contenido en la rama de lanzamiento; agregue o elimine páginas según sea necesario.
-* Obtenga una vista previa del aspecto que tendrá el contenido publicado en una fecha/hora futura específica.
+* Previsualice el aspecto que tendrá el contenido publicado en una fecha específica en el futuro.
 
 Cuando llegue el trimestre siguiente, las páginas de lanzamiento se promocionan de forma que se puedan publicar las páginas de origen (que contienen el contenido actualizado). Puede promocionar todas las páginas o solamente aquellas que se han modificado. 
 
@@ -106,6 +114,12 @@ Los lanzamientos permiten realizar lo siguiente:
    ![Acciones que se deben realizar en lanzamientos desde la consola Sitios](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## La consola Lanzamientos {#the-launches-console}
+
+>[!NOTE]
+>
+>Esta consola solo es para Lanzamientos para páginas.
+>
+>Para administrar los fragmentos de contenido, consulte [Inicios para fragmentos de contenido](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 La consola Lanzamientos proporciona una descripción general de los lanzamientos y le permite actuar sobre los enumerados.
 
