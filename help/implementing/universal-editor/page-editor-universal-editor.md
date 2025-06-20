@@ -4,7 +4,7 @@ description: El editor de páginas sigue siendo compatible con Adobe, pero el ed
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 3%
@@ -73,7 +73,7 @@ Debido a que la brecha entre las características de los dos editores se está r
 | Árbol de contenido | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | También permite la reordenación dentro del árbol |
 | Simulación de dispositivo | [!BADGE Disponible]{type=Positive} | [Los dispositivos configurados se pueden simular,](/help/sites-cloud/administering/responsive-layout.md) pero el usuario no puede introducir manualmente ninguna dimensión de pantalla diferente para simular. | [!BADGE Disponible]{type=Positive} | [Se pueden especificar manualmente todas las dimensiones de pantalla que se van a simular,](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) pero no se pueden configurar los puntos de interrupción predeterminados. |
 | [Bloqueo de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Respeta el estado de bloqueo establecido en la consola Sitios con la extensión disponible para bloquear/desbloquear páginas desde el editor |
-| [Propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Disponible desde el Administrador del sitio, con extensión para acceder también a las propiedades de las páginas desde el editor |
+| [Propiedades de página](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Disponible desde el Administrador del sitio, con extensión para acceder también a las propiedades de las páginas desde el editor |
 | Propiedades de varios campos | [!BADGE Disponible]{type=Positive} |  | [!BADGE No disponible]{type=Negative} | Planeado |
 | [DAM remoto](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | [Control de versiones de página](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |

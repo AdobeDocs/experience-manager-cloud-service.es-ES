@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -212,7 +212,7 @@ Para ver las propiedades:
 
 ### Ver las Live Copies de una página de modelo {#seeing-the-live-copies-of-a-blueprint-page}
 
-Las páginas de modelo (a las que se hace referencia en una configuración de modelo) proporcionan una lista de las páginas de Live Copy que utilizan la página actual (modelo) como origen. Utilice esta lista para realizar un seguimiento de las Live Copies. La lista aparece en la pestaña **Modelo** de las [propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md).
+Las páginas de modelo (a las que se hace referencia en una configuración de modelo) proporcionan una lista de las páginas de Live Copy que utilizan la página actual (modelo) como origen. Utilice esta lista para realizar un seguimiento de las Live Copies. La lista aparece en la ficha **Modelo** de las [propiedades de página.](/help/sites-cloud/authoring/sites-console/page-properties.md)
 
 ![Pestaña Modelo de las propiedades de página](../assets/live-copy-blueprint-tab.png)
 

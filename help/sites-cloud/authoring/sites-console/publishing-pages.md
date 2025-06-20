@@ -1,28 +1,35 @@
 ---
-title: Publicar páginas
-description: Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante varios mecanismos en AEM.
+title: Publicación de páginas desde la consola Sitios
+description: Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante la consola Sitios.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
+source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 75%
+source-wordcount: '1635'
+ht-degree: 73%
 
 ---
 
-# Publicar páginas {#publishing-pages}
+
+# Publicación de páginas desde la consola Sitios {#publishing-pages}
 
 Cuando haya creado y revisado el contenido en el entorno de creación, el objetivo consiste en [que esté disponible en su sitio web público](/help/sites-cloud/authoring/author-publish.md) (su entorno de publicación).
 
 Es lo que se denomina publicar una página. Quitar una página del entorno de publicación, se denomina cancelar la publicación. Al publicar y cancelar la publicación, la página permanece disponible en el entorno de creación para realizar más cambios hasta que la elimine.
 
-Puede publicar una página (o cancelar su publicación) inmediatamente o en un momento posterior predefinido.
+Puede usar la consola [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md) para publicar o cancelar la publicación de una página inmediatamente o en un momento posterior predefinido.
 
->[!NOTE]
+>[!TIP]
 >
->La publicación de un [fragmento de experiencia](/help/sites-cloud/authoring/fragments/experience-fragments.md) básicamente sigue el mismo procedimiento que para publicar una página, aunque desde la consola o el editor de fragmentos de experiencias.
+>Puede publicar desde ubicaciones que no sean la consola Sitios.
+>
+>* [Desde el editor de páginas](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* [Desde el editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* [Desde la consola o el editor del Fragmento de experiencia](/help/sites-cloud/authoring/fragments/experience-fragments.md)
+>
+>Las publicaciones desde estas ubicaciones ofrecen diferentes opciones, pero siguen procedimientos similares e ideas generales descritas aquí.
 
 ## Terminología {#terminology}
 
@@ -38,14 +45,6 @@ Puede encontrar diferentes términos relacionados con la publicación al trabaja
    * Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un servicio a otro cuando publica una página (por ejemplo, de autor a vista previa).
    * Los desarrolladores son quienes, principalmente, utilizan estos términos.
 
-## Publicar páginas {#publishing-pages-1}
-
-En función de su ubicación, puede publicar lo siguiente:
-
-* [Desde el editor de páginas](#publishing-from-the-page-editor)
-* [Desde el ](#publishing-from-the-sites-console)
-* [Desde el editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md)
-
 >[!NOTE]
 >
 >Si no dispone de los privilegios necesarios para publicar una página específica:
@@ -60,50 +59,17 @@ En función de su ubicación, puede publicar lo siguiente:
 >
 >No se garantiza el orden de las páginas:
 >
->* si solo se seleccionan páginas secundarias para la publicación (ya que la información de pedido se mantiene en la página principal)
->* si las páginas principales y secundarias se publican en acciones independientes
+>* Si solo se seleccionan páginas secundarias para la publicación (ya que la información del pedido se mantiene en la página principal)
+>* Si las páginas principales y secundarias se publican en acciones independientes
 
-### Publicar desde el editor de páginas {#publishing-from-the-page-editor}
-
-Si está editando una página en el [editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md), puede publicarla directamente desde el editor.
-
-1. Seleccione el icono **Información de página** para abrir el menú y, a continuación, elija la opción **Publicar página**.
-
-   ![Publicación de una página mediante las opciones de página](/help/sites-cloud/authoring/assets/publishing-page-options.png)
-
-1. En función de si la página tiene referencias que es necesario publicar:
-
-   * La página se publica directamente si no hay ninguna referencia por publicar.
-   * Si la página tiene referencias que es necesario publicar, se enumeran en el asistente **Publicar**, donde puede:
-      * Especifique cuál de los recursos, o etiquetas, etc., desea publicar junto con la página y, a continuación, utilice **Publicar** para completar el proceso.
-      * Utilizar **Cancelar** para anular la acción.
-
-   ![Publicación de referencias con la página](/help/sites-cloud/authoring/assets/publishing-references.png)
-
-1. Si selecciona **Publicar**, se replicará la página en el entorno de publicación. En el editor de páginas se muestra un mensaje que confirma la acción de publicación.
-
-   ![Mensaje de información de estado de publicación](/help/sites-cloud/authoring/assets/publishing-info.png)
-
-   Al ver la misma página en la consola, se muestra el estado actualizado de publicación.
-
-   ![Estado de publicación de la página en la vista de columna de la consola Sitios](/help/sites-cloud/authoring/assets/publishing-status-console-column.png)
-
->[!NOTE]
->
->La publicación desde el editor de páginas es superficial; es decir, solo se publica la página o páginas seleccionadas y no las páginas secundarias.
-
->[!NOTE]
->
->No se pueden publicar las páginas a las que se tiene acceso mediante [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) en el editor. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
-
-### Publicar desde la consola del sitio {#publishing-from-the-sites-console}
+## Publicación de páginas desde la consola Sitios {#publishing-from-the-sites-console}
 
 En la consola **Sites** hay dos opciones para la publicación:
 
 * [Publicación rápida ](#quick-publish)
 * [Administrar publicación    ](#manage-publication)
 
-#### Publicación rápida  {#quick-publish}
+### Publicación rápida  {#quick-publish}
 
 **Publicación rápida** es para casos sencillos y publica las páginas seleccionadas inmediatamente, sin más interacción. Debido a esto, cualquier referencia no publicada también se publicará automáticamente.
 
@@ -123,7 +89,7 @@ Para publicar una página con Publicación rápida:
 >
 >La Publicación rápida es una publicación superficial, es decir, solo se publica la página o páginas seleccionadas y no las páginas secundarias.
 
-#### Administrar publicación     {#manage-publication}
+### Administrar publicación     {#manage-publication}
 
 **Administrar publicación** ofrece más opciones que **Publicación rápida**, ya que permite incluir páginas secundarias, personalizar las referencias, publicar en un servicio de vista previa (si está disponible) e iniciar cualquier flujo de trabajo aplicable, además de poder publicar en un momento posterior.
 
@@ -149,13 +115,13 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
      Posponer la publicación inicia un flujo de trabajo para publicar la página o páginas seleccionadas en el momento especificado. Por el contrario, cancelar la publicación más adelante inicia un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas en un momento específico.
 
-     >[!NOTE]
+     >[!TIP]
      >
      >Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para finalizar el flujo de trabajo correspondiente.
 
-     >[!NOTE]
+     >[!TIP]
      >
-     >Programar contenido para la publicación no es lo mismo que [**Tiempo de activación** y **Tiempo de inactividad** disponibles en las propiedades de la página,](/help/sites-cloud/authoring/sites-console/page-properties.md#basic), pero se pueden usar en circunstancias similares.
+     >La programación de contenido para la publicación duplica contenido y respeta los flujos de trabajo de publicación. Si desea ocultar temporalmente contenido ya publicado sin cancelar la publicación, considere que [**Tiempo de activación** y **Tiempo de inactividad** están disponibles en las propiedades de la página.](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
    ![Administrar opciones de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -230,26 +196,9 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
 1. Haga clic en **Publicar** o **Publicar más tarde** para completar la publicación.
 
-
-
 ## Cancelar la publicación de páginas {#unpublishing-pages}
 
-Si se cancela la publicación de una página, se eliminará del entorno de publicación (o [previsualización](/help/sites-cloud/authoring/sites-console/previewing-content.md)) y ya no estará disponible para los lectores.
-
-De [forma similar a la publicación](#publishing-pages), se puede cancelar la publicación de una o varias páginas del destino deseado:
-
-* [Desde el editor de páginas](#unpublishing-from-the-editor)
-* [Desde la consola Sitios](#unpublishing-from-the-console)
-
-### Cancelación de la publicación desde el editor     {#unpublishing-from-the-editor}
-
-Al editar una página, si desea cancelar la publicación de esa página, seleccione **Cancelar la publicación de la página** en el menú **Información de la página**, de forma parecida a como lo haría [publicar la página](#publishing-from-the-editor).
-
->[!NOTE]
->
->No se puede cancelar la publicación de las páginas a las que se accede mediante [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) en el editor. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
-
-### Cancelación de la publicación desde la consola     {#unpublishing-from-the-console}
+Si se cancela la publicación de una página, se eliminará del entorno de publicación o [vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md), de modo que ya no estará disponible para los lectores.
 
 Al igual que [utiliza la opción Administrar publicación para publicar](#manage-publication), puede usarla para cancelar la publicación.
 

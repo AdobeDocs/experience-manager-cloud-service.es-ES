@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 26%
@@ -57,7 +57,7 @@ Puede [crear una nueva página](/help/sites-cloud/authoring/sites-console/creati
 
 1. Use la consola **Sites** para [navegar a la página nueva o existente](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) que desee usar como plantilla y toque o haga clic para seleccionarla.
 
-1. Una vez seleccionada la página, toque o haga clic en el icono [**Propiedades**](/help/sites-cloud/authoring/sites-console/page-properties.md) de la barra de herramientas.
+1. Una vez seleccionada la página, toque o haga clic en el icono [**Propiedades**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) de la barra de herramientas.
 
 1. En la ficha **Avanzado** del cuadro de diálogo de propiedades en la sección **Configuración de plantilla**, seleccione la opción **Usar página como plantilla**.
 

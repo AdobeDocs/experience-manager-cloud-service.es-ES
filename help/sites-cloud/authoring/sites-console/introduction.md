@@ -1,11 +1,11 @@
 ---
 title: La Consola Sites
-description: AEM Aprenda a utilizar la consola Sitios para administrar y organizar las páginas de la.
+description: Aprenda a utilizar la consola Sitios para administrar y organizar las páginas de AEM.
 exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 45%
@@ -14,7 +14,7 @@ ht-degree: 45%
 
 # La Consola Sites {#sites-console}
 
-AEM Aprenda a utilizar la consola **Sitios** para administrar y organizar sus páginas de la lista de distribución de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de su lista de elementos de página.
+Aprenda a utilizar la consola **Sites** para administrar y organizar las páginas de AEM.
 
 ## Orientación {#orientation}
 
@@ -84,7 +84,7 @@ Una vez que se ha hecho clic, las opciones mostradas son apropiadas para la cons
 * [Página](/help/sites-cloud/authoring/sites-console/creating-pages.md)
 * [Sitio](/help/sites-cloud/administering/site-creation/create-site.md)
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md)
-* [Iniciar](/help/sites-cloud/authoring/launches/overview.md)
+* [lanzamiento](/help/sites-cloud/authoring/launches/overview.md)
 * [Copia de idioma](/help/sites-cloud/administering/translation/overview.md)
 * [Informe CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
 
@@ -98,7 +98,7 @@ La consola **Sites** ofrece tres vistas diferentes de la jerarquía de contenido
 * [Vista de tarjeta](#card-view)
 * [Vista de lista   ](#list-view)
 
-AEM El icono **Ver** situado en el extremo derecho de la barra de herramientas de la barra de herramientas de la indica la vista actual seleccionada.
+El icono **Ver** en el extremo derecho de la barra de herramientas de AEM indica la vista actual seleccionada.
 
 Tocar o hacer clic en ella le permite seleccionar una vista diferente.
 
@@ -236,13 +236,13 @@ La barra de herramientas de acciones solo aparece cuando se selecciona un recurs
 
 * [**Crear**](#create-action) - Crear nuevo contenido o acciones relacionadas con contenido
 * **Editar**: según cómo se haya creado la página seleccionada, la acción **Editar** abrirá el editor correspondiente.
-   * AEM [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas creadas con el Editor de páginas de la página de la
+   * [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas creadas con el Editor de páginas de AEM
    * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas creadas con el Editor universal
-* [**Propiedades**](/help/sites-cloud/authoring/sites-console/page-properties.md): abre la ventana de propiedades de la página
+* [**Propiedades**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md): abre la ventana de propiedades de la página
 * [**Bloquear**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page): bloquea una página para evitar que otros la cambien
 * [**Copiar**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copiar una página
 * [**Mover**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page): mover o cambiar el nombre de una página
-* [**Publish rápido**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish): Publish crea una página o páginas inmediatamente
+* [**Publicación rápida**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish): publique una o varias páginas inmediatamente
 * [**Administrar publicación**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Programar una o varias páginas para su publicación
 * [**Restaurar**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restaurar una versión de una página o árbol de páginas
 * [**Eliminar**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Eliminar una o varias páginas

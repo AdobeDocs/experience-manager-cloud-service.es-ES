@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 7201cc90c0f698454d8ccda0eb83e433a330c1eb
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -73,7 +73,7 @@ Si un autor inicia una plantilla creada con el editor de plantillas que ya se ha
 
 ## Propiedades {#properties}
 
-Puede editar las [propiedades de la plantilla](/help/sites-cloud/authoring/page-editor/templates.md) de la misma manera que puede [editar las propiedades de la página](/help/sites-cloud/authoring/sites-console/page-properties.md). Las propiedades de la plantilla incluyen:
+Puede editar las [propiedades de la plantilla](/help/sites-cloud/authoring/page-editor/templates.md) de la misma manera que puede [editar las propiedades de página.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) propiedades de plantilla incluyen:
 
 * Título de plantilla
 * Descripción
