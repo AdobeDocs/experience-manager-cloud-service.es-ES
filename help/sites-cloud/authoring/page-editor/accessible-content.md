@@ -5,9 +5,9 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: da192447ddc6edbca339c9a985f95dc063183cd3
 workflow-type: tm+mt
-source-wordcount: '13685'
+source-wordcount: '13672'
 ht-degree: 92%
 
 ---
@@ -184,7 +184,7 @@ Insertar contenido multimedia en sus páginas web de AEM es similar a insertar u
 
 #### Objetivo: Subtítulos (pregrabados) (1.2.2) {#purpose-captions-prerecorded}
 
-Las personas sordas o con dificultades auditivas no podrán acceder al contenido de audio o tendrán muchos problemas. Los subtítulos son equivalentes textuales para audio verbal y no verbal que se muestran en la pantalla en el momento adecuado durante el vídeo. Permiten entender lo que está sucediendo a las personas que no pueden oír el audio.
+Las personas sordas o con dificultades auditivas no pueden acceder o tienen grandes dificultades para acceder al contenido de audio. Los subtítulos son equivalentes textuales para audio verbal y no verbal que se muestran en la pantalla en el momento adecuado durante el vídeo. Permiten entender lo que está sucediendo a las personas que no pueden oír el audio.
 
 #### Cómo cumplir: Subtítulos (en vivo) (1.2.2) {#how-to-meet-captions-prerecorded}
 
@@ -197,17 +197,17 @@ Utilice subtítulos cerrados siempre que sea posible, ya que proporciona a los u
 
 Para los subtítulos cerrados debe crear y proporcionar un archivo de subtítulos sincronizados en un formato apropiado (como [SMIL](https://www.w3.org/AudioVideo/)) junto al archivo de vídeo (los detalles de cómo hacerlo exceden el ámbito de esta guía, pero se proporcionan vínculos a algunos tutoriales en [Más información: Subtítulos (pregrabados) (1.2.2)](#more-information-captions-prerecorded)). Asegúrese de proporcionar una nota o activar la función de subtítulo en el reproductor de vídeo para que los usuarios sepan que el vídeo tiene subtítulos disponibles.
 
-Si necesita utilizar subtítulos abiertos, incorpore el texto en la pista de vídeo. Esto se puede conseguir con aplicaciones de edición de vídeo que permiten superponer títulos.
+Si necesita utilizar subtítulos abiertos, incruste el texto en la pista de vídeo. Esto se puede conseguir con aplicaciones de edición de vídeo que permiten superponer títulos.
 
 #### Más información: Subtítulos (pregrabados) (1.2.2) {#more-information-captions-prerecorded}
 
-* [Entender los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html).
-* [Cumplir los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded).
+* [Entender los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
+* [Cumplir los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-c
-* [W3C: Medios multimedia sincronizados](https://www.w3.org/AudioVideo/).
-* [Subtítulos, transcripciones y descripciones de audio - por WebAIM](https://webaim.org/techniques/captions/).
-—>
+<!--
+* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/).
+* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+-->
 
 ### Descripción del audio o medios alternativos (pregrabados) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
@@ -349,7 +349,7 @@ Puede garantizar que las páginas web tengan la estructura adecuada mediante los
 
 * **Énfasis**: Utilice el elemento `<strong>` o `<em>` para dar énfasis. No utilice encabezados o texto enfatizado en los párrafos.
    * Enfatice el texto que quiera remarcar;
-   * Haga clic en el icono **B** (para `<strong>`) o en el icono **I** (para `<em>`) que se muestra en el panel **Propiedades** (asegúrese de que el HTML está seleccionado).
+   * Haga clic en el icono **B** (para `<strong>`) o en el icono **I** (para `<em>`) que se muestra en el panel **Propiedades** (asegúrese de que HTML está seleccionado).
 
      >[!NOTE]
      >
