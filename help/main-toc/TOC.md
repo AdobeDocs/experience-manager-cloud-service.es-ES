@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: ea0b204111a852a0243febbcf3f403987a6bfcc9
 workflow-type: tm+mt
 source-wordcount: '6281'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -342,10 +342,10 @@ ht-degree: 97%
             + [Uso de la herramienta de asignación de usuarios](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + Herramientas de refactorización de código  {#refactoring-tools}
       + [Introducción a las herramientas de refactorización](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
-      + [Información general sobre herramientas de refactorización](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
+      + [Información general sobre las herramientas de refactorización](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
       + [Experiencia unificada](/help/journey-migration/unified-experience.md)
       + [Modernizador de repositorio](/help/journey-migration/refactoring-tools/repo-modernizer.md)
-      + [Modernizador de repositorios (CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
+      + [Modernizador de repositorio (CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
       + [Conversor de índices](/help/journey-migration/refactoring-tools/index-converter.md)
       + [Migración del flujo de trabajo de recursos](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [Dispatcher Converter de AEM](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
@@ -1003,7 +1003,7 @@ ht-degree: 97%
          + [Opciones de almacenamiento en caché](/help/commerce-cloud/configuring/caching.md)
          + [Encabezados HTTP personalizados](/help/commerce-cloud/configuring/custom-http-headers.md)
          + [Configuración del carro de compras y Dispatcher](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
-         + [Componente y GraphQL Borrar caché](/help/commerce-cloud/configuring/clear-cache.md)
+         + [Borrar caché del componente y de GraphQL](/help/commerce-cloud/configuring/clear-cache.md)
       + El desarrollo de {#developing}
          + [Desarrollo con el SDK de AEM Cloud Service](/help/commerce-cloud/develop.md)
          + [Diseño de componentes del CIF](/help/commerce-cloud/customizing/style-cif-component.md)
@@ -1189,8 +1189,8 @@ ht-degree: 97%
    + [Generar variaciones: integrado en Editores AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Generar variaciones](/help/generative-ai/generate-variations.md)
    + [Asistente (Beta limitado)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [Asistente de IA para AEM Forms (Forms Experience Builder) (usuario que lo adoptó por primera vez)](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [Asistente de IA de AEM Forms: biblioteca de mensajes](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [Asistente de IA para AEM Forms (Forms Experience Builder) (primeros usuarios)](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [Asistente de IA de AEM Forms: biblioteca de solicitud](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + Implementación  {#implementing}
    + [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
    + Uso de Cloud Manager  {#using-cloud-manager}
