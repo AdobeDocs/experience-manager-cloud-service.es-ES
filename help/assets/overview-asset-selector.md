@@ -4,9 +4,9 @@ description: Utilice el Selector de recursos para buscar y recuperar metadatos y
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1598'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -203,17 +203,17 @@ El Selector de recursos le permite ver el recurso en cuatro vistas diferentes:
 * ![vista de galería](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vista de galería**]: la vista de galería muestra los archivos o carpetas en una lista horizontal bloqueada en el centro.
 * ![vista en cascada](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista en cascada**] La vista en cascada muestra los archivos o carpetas en forma de puente.
 
-### Detalles y metadatos de recursos {#asset-details-and-metadata}
+### Detalles y metadatos del recurso {#asset-details-and-metadata}
 
-La página Detalles del recurso proporciona una vista completa de un recurso específico, consolidando toda la información clave en un solo lugar. Incluye una descripción general con el nombre, el formato de archivo, el estado y una breve descripción, junto con una vista previa o una miniatura para facilitar la identificación visual. También incluye metadatos de un recurso, como la fecha de creación, el autor, el tamaño, el esquema de colores, etc. Estos atributos ayudan a lograr una búsqueda, un filtrado y una clasificación eficientes de un recurso. El panel de detalles del recurso está disponible tanto en la vista modal como en la del carril del Selector de recursos. En la vista de carril, es necesario habilitar y configurar la propiedad `onDrop` para devolver un recurso. Como alternativa, en la vista modal, la propiedad `handleSelection` devuelve un recurso. Consulte [Propiedades del selector de recursos](asset-selector-properties.md).
+La página Detalles del recurso proporciona una vista completa de un recurso específico, consolidando toda la información clave en un solo lugar. Incluye una descripción general con el nombre, formato de archivo, estado y una breve descripción, junto con una vista previa o una miniatura para facilitar la identificación visual. También incluye metadatos de un recurso, como la fecha de creación, el autor, el tamaño, el esquema de colores, etc. Estos atributos ayudan a lograr una búsqueda, un filtrado y una clasificación eficientes de un recurso. El panel de detalles del recurso está disponible tanto en la vista modal como en la del carril del Selector de recursos. En la vista de carril, es necesario habilitar y configurar la propiedad `onDrop` para devolver un recurso. Como alternativa, en la vista modal, la propiedad `handleSelection` devuelve un recurso. Consulte [Propiedades del selector de recursos](asset-selector-properties.md).
 
 Para ver los detalles de un recurso y los metadatos, ejecute los pasos siguientes:
 
-1. Abra el MFE Selector de recursos y vaya a un recurso.
-1. Pase el ratón sobre el recurso y haga clic en ![icono de información](/help/assets/assets/info-icon-solid-black.svg).
+1. Abra el MFE para el selector de recursos y vaya a un recurso.
+1. Pase el puntero por encima del recurso y haga clic en ![icono de información](/help/assets/assets/info-icon-solid-black.svg).
 1. Vaya a la pestaña **[!UICONTROL Información]** para ver los detalles del recurso. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
 
-Para personalizar el panel de vista de detalles de un recurso, vea [Personalizar información en la vista modal](asset-selector-customization.md#customize-info-in-modal-view).
+Para personalizar el panel de vista de detalles de un recurso, consulte [Personalizar información en la vista modal](asset-selector-customization.md#customize-info-in-modal-view).
 
 ![Detalles del recurso](assets/asset-details.png)
 
@@ -239,7 +239,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -309,7 +309,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Gráfico de colecciones del Selector de recursos"><br/>
         <a href="asset-selector-collections.md">Colecciones del Selector de recursos</a>
         <p>
-        <em>Aprenda a utilizar colecciones dentro del Selector de recursos mediante el repositorio de Experience Manager. </em>
+        <em>Aprenda a utilizar colecciones en el Selector de recursos mediante el repositorio de Experience Manager. </em>
         </p>
     </td>
     <td>

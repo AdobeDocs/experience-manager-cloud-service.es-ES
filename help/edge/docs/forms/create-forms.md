@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '807'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Para continuar con la creación del formulario, haga lo siguiente:
 
    >[!IMPORTANT]
    >
-   >**La hoja donde se crea el formulario tiene restricciones sobre cómo se le puede dar nombre. Solamente `helix-default` y `shared-aem` pueden usarse como nombres de hoja.**
+   >**La hoja donde se crea el formulario tiene restricciones en cuanto al nombre que se le puede asignar. Solamente se pueden usar `helix-default` y `shared-aem` como nombres de hoja.**
 
 1. Para añadir los campos del formulario, inserte las filas y los encabezados de columna en la hoja “shared-aem&quot;. Cada fila debe representar un [campo de formulario](/help/edge/docs/forms/form-components.md#available-components), con encabezados de columna que definan las [propiedades](/help/edge/docs/forms/form-components.md#components-properties) del campo correspondiente.
 

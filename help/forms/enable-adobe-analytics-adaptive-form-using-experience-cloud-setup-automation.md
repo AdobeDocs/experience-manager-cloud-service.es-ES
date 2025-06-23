@@ -6,9 +6,9 @@ feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
 source-git-commit: 56a3d50d7cc8db532097b97f0898f87fc6ba0b3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1596'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Para comprobar que las opciones mencionadas están disponibles para su entorno F
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=es)
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
 -->
 
 ## Configuración de Adobe Analytics {#configure-adobe-analytics}
