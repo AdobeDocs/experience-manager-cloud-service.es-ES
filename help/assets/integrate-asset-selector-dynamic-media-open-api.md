@@ -3,10 +3,10 @@ title: Integración del Selector de recursos con la API abierta de Dynamic Media
 description: Integre el selector de recursos con varias aplicaciones de Adobe, que no sean de Adobe y de terceros.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: f171bbeaf01e2d9be3a8f3b5172919a5e8ca7d97
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 9%
+source-wordcount: '982'
+ht-degree: 8%
 
 ---
 
@@ -97,7 +97,7 @@ La función `handleSelection` que actúa como objeto JSON lleva todos los recurs
 | Objeto | JSON |
 |---|---|
 | Host | `assetJsonObj["repo:repositoryId"]` |
-| Raíz API | `/adobe/dynamicmedia/deliver` |
+| Raíz API | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
 | formato | `.jpg` |
@@ -105,16 +105,17 @@ La función `handleSelection` que actúa como objeto JSON lleva todos los recurs
 #### Especificación de API de entrega de recursos aprobados {#approved-assets-delivery-api-specification}
 
 Formato de URL:
-`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 Donde,
 
 * El host es `https://delivery-pxxxxx-exxxxxx.adobe.com`
 * La raíz de API es `"/adobe/assets"`
 * `<asset-id>` es el identificador del recurso
+* `as` es la parte constante de la especificación de API abierta que indica a qué se puede hacer referencia el recurso
 * `<seo-name>` es el nombre de un recurso
 * `<format>` es el formato de salida
-* `<image modification query parameters>` es compatible con la especificación de API de entrega de recursos aprobados
+* `<image modification query parameters>` como compatible con la especificación de API de entrega de recursos aprobados
 
 #### Recursos aprobados API de entrega de representación original {#approved-assets-delivery-api}
 
@@ -168,7 +169,7 @@ En la captura de pantalla anterior, la dirección URL de envío de la representa
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/DragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -199,12 +200,12 @@ Después de la integración con el Selector de recursos de Micro-FrontEnd de Ado
 
 ![Dynamic Media con la IU de capacidades de OpenAPI](assets/polaris-ui.png)
 
-* **A**: [Ocultar/Mostrar panel](#hide-show-panel)
-* **B**: [Assets](#repository)
-* **C**: [Ordenando](#sorting)
-* **D**: [Filtros](#filters)
-* **E**: [Barra de búsqueda](#search-bar)
-* **F**: [Orden ascendente o descendente](#sorting)
+* **A**: ocultar/mostrar panel
+* **B**: Assets
+* **C**: Ordenando
+* **D**: Filtros
+* **E**: Barra de búsqueda
+* **F**: orden ascendente o descendente
 * **G**: Cancelar Selección
 * **H**: seleccione uno o varios recursos
 
