@@ -4,10 +4,10 @@ description: Obtenga más información sobre los aspectos clave de Assets Prime,
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 16%
+source-wordcount: '1150'
+ht-degree: 18%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 16%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -72,7 +72,7 @@ Assets as a Cloud Service Prime incluye un DAM ligero que le permite realizar va
 
   >[!NOTE]
   >
-  >Dynamic Media con capacidades OpenAPI, que le proporciona acceso a modificadores de imagen básicos como rotar, recortar (solo manual: sin recorte inteligente), voltear, cambiar el tamaño, preferir webp, altura, anchura, calidad, formato y flujo de vídeo adaptable, también está disponible con Assets Prime. Póngase en contacto con el equipo de la cuenta de Adobe para obtener más información.
+  >Dynamic Media con capacidades OpenAPI, que le proporciona acceso a modificadores de imagen básicos como rotar, recortar (solo manual: sin recorte inteligente), voltear, alto, ancho, calidad, formato y flujo de vídeo adaptable, también está disponible con Assets Prime. Póngase en contacto con el equipo de la cuenta de Adobe para obtener más información.
 
 1. [Crear un nuevo programa](/help/journey-onboarding/create-program.md).
 

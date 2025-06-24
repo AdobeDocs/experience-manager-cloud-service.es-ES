@@ -3,9 +3,9 @@ title: Integración del Selector de recursos con la API abierta de Dynamic Media
 description: Integre el selector de recursos con varias aplicaciones de Adobe, que no sean de Adobe y de terceros.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '967'
 ht-degree: 9%
 
 ---
@@ -105,25 +105,26 @@ La función `handleSelection` que actúa como objeto JSON lleva todos los recurs
 #### Especificación de API de entrega de recursos aprobados {#approved-assets-delivery-api-specification}
 
 Formato de URL:
-`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
 
 Donde,
 
 * El host es `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* La raíz de API es `"/adobe/dynamicmedia/deliver"`
+* La raíz de API es `"/adobe/assets"`
 * `<asset-id>` es el identificador del recurso
 * `<seo-name>` es el nombre de un recurso
 * `<format>` es el formato de salida
 * `<image modification query parameters>` es compatible con la especificación de API de entrega de recursos aprobados
 
-#### API de entrega de recursos aprobada {#approved-assets-delivery-api}
+#### Recursos aprobados API de entrega de representación original {#approved-assets-delivery-api}
 
 La dirección URL de envío dinámico tiene la siguiente sintaxis:
-`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, donde,
+`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`, donde,
 
 * El host es `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* La raíz de la API para la entrega de la representación original es `"/adobe/assets/deliver"`
+* La raíz de la API para la entrega de la representación original es `"/adobe/assets"`
 * `<asset-id>` es el identificador de recurso
+* `/original/as` es la parte constante de la especificación de API abierta que indica a qué se puede hacer referencia en la representación original
 * `<seo-name>` es el nombre del recurso que puede tener o no una extensión
 
 ### Listo para elegir la URL de envío dinámico {#ready-to-pick-dynamic-delivery-url}
@@ -133,7 +134,7 @@ La función `handleSelection` que actúa como objeto JSON lleva todos los recurs
 | Objeto | JSON |
 |---|---|
 | Host | `assetJsonObj["repo:repositoryId"]` |
-| Raíz API | `/adobe/assets/deliver` |
+| Raíz API | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"]` |
 
@@ -153,12 +154,12 @@ Una vez que se selecciona un pdf en la barra de tareas, el contexto de selecció
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
 
-En la captura de pantalla anterior, la dirección URL de envío de la representación original de PDF debe incorporarse en la experiencia de destino si se requiere PDF y no su miniatura. Por ejemplo, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+En la captura de pantalla anterior, la dirección URL de envío de la representación original de PDF debe incorporarse en la experiencia de destino si se requiere PDF y no su miniatura. Por ejemplo, `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
 * **Vídeo:** Puede usar la URL del reproductor de vídeo para los recursos de tipo de vídeo que usan un iFrame incrustado. Puede utilizar las siguientes representaciones de matrices en la experiencia de Target:
   <!--![Video dynamic delivery url](image.png)-->
@@ -167,7 +168,7 @@ En la captura de pantalla anterior, la dirección URL de envío de la representa
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -176,7 +177,7 @@ En la captura de pantalla anterior, la dirección URL de envío de la representa
 
   El fragmento de código de la captura de pantalla anterior es un ejemplo de un recurso de vídeo. Incluye la matriz de vínculos de representaciones. El `selection[5]` del extracto es el ejemplo de una miniatura de imagen que puede utilizarse como marcador de posición de una miniatura de vídeo en la experiencia de destino. `selection[5]` en la matriz de representaciones es para el reproductor de vídeo. Esto sirve un HTML y se puede establecer como `src` del iframe. Admite flujo de velocidad de bits adaptable, que es una entrega del vídeo optimizada para la web.
 
-  En el ejemplo anterior, la dirección URL del reproductor de vídeo es `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+  En el ejemplo anterior, la dirección URL del reproductor de vídeo es `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
 
 ### Configuración de filtros personalizados {#configure-custom-filters-dynamic-media-open-api}
 
