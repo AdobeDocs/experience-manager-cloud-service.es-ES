@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ea0b204111a852a0243febbcf3f403987a6bfcc9
+source-git-commit: 1d4dc40497113aded6abbf3d9a92b24f94f0b25b
 workflow-type: tm+mt
 source-wordcount: '6281'
 ht-degree: 98%
@@ -712,9 +712,8 @@ ht-degree: 98%
    + Prácticas recomendadas{#best-practices}
       + [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md)
       + [Administración de metadatos y prácticas recomendadas](/help/assets/metadata-best-practices.md)
-
    + Integración con Figma {#integration-figma}
-      + [Integración nativa con Figma](/help/assets/Integrate-aem-assets-with-figma.md)
+      + [Integración nativa con Figma](/help/assets/integrate-aem-assets-with-figma.md)
    + Integración con Adobe Workfront {#integrations}
       + [Integraciones con  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Configuración de la asignación de metadatos de recursos](/help/assets/configure-asset-metadata-mapping.md)
