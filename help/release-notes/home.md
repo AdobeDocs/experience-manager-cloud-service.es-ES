@@ -4,10 +4,10 @@ description: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud S
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 3d25a9279433e5bf6cc2b2e552ae6266a811c88b
-workflow-type: ht
-source-wordcount: '622'
-ht-degree: 100%
+source-git-commit: 4b729f7d06ff3ef546dee2a67065cced7e5bb3fa
+workflow-type: tm+mt
+source-wordcount: '630'
+ht-degree: 93%
 
 ---
 
@@ -67,12 +67,12 @@ También puede [ver los problemas conocidos](/help/release-notes/maintenance/lat
 
 Las próximas funciones suelen estar disponibles de una de las dos maneras siguientes:
 
-* Como parte de un programa de primeros usuarios
+* Como parte de un programa de Alpha, Beta o de disponibilidad limitada
 * Como parte del canal de versión preliminar
 
 La manera en que la próxima función estará disponible se detallará en las [notas de la versión.](#release-notes)
 
-* Si forma parte de un programa de primeros usuarios, generalmente debe ponerse en contacto con Adobe para habilitarlo tal como se detalla en las notas de la versión.
+* Si forma parte de un programa de Alpha, Beta o de disponibilidad limitada, generalmente debe ponerse en contacto con Adobe para habilitarlo como se detalla en las notas de la versión.
 * Si forma parte del canal de versión preliminar, deberá [habilitar el canal de versión preliminar en un entorno de desarrollo o de zona protegida.](/help/release-notes/prerelease.md)
 
 ## Formación de los usuarios {#train-users}

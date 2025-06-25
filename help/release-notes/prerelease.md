@@ -4,10 +4,10 @@ description: Aprenda a utilizar el canal de la versión preliminar para obtener 
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 36da09746f02daad82875329b0aa53ee4eb7c074
-workflow-type: ht
-source-wordcount: '889'
-ht-degree: 100%
+source-git-commit: e6567c965a026967e7a5baa67050eb5615979531
+workflow-type: tm+mt
+source-wordcount: '893'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager as a Cloud Service ofrece nuevas funciones con una cade
 
 Las próximas funciones suelen estar disponibles de una de las dos maneras siguientes:
 
-* Como parte de un programa de primeros usuarios
+* Como parte de un programa de Alpha, Beta o de disponibilidad limitada
 * Como parte del canal de versión preliminar
 
 En este documento se describe cómo habilitar el canal de versión preliminar El canal de versión preliminar ofrece acceso a las primeras funciones que se presentarán en una futura versión de funciones de AEM. Esto le ofrece la oportunidad de validar nuevas funciones y planificar su adopción antes de su lanzamiento próximo. Consulte el documento [Notas de la versión para Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md) para obtener más información sobre la programación de versiones de AEM.
