@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta privada" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 26892959443a16203184f4a0798d9c7fdc75dd8f
+source-git-commit: b4bbf73cd49f6d7beb47d2edce0910d957879e39
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 28%
+source-wordcount: '2322'
+ht-degree: 27%
 
 ---
 
@@ -242,9 +242,9 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
-| Eventos de gancho web requeridos |
+| Eventos y autenticación de gancho web requeridos |
 | --- |
-| Estos eventos garantizan que Cloud Manager pueda validar las solicitudes de extracción, responder a inserciones de código e interactuar con comentarios para la coordinación de canalizaciones.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Repositorio: push</li></li></ul></ul></ul> |
+| Estos eventos garantizan que Cloud Manager pueda validar las solicitudes de extracción, responder a inserciones de código e interactuar con comentarios para la coordinación de canalizaciones.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Repositorio: push</li></ul>Establecer autenticación:<br>1. En el campo **Nombre de usuario de autenticación básica**, escriba `cloudmanager`.<br>2. En el campo **Contraseña de autenticación básica**, escriba el Secreto de webhook generado desde la interfaz de usuario de Cloud Manager. |
 
 >[!ENDTABS]
 
