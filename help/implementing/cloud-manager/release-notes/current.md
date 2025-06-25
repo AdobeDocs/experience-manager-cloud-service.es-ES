@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '954'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -52,11 +52,11 @@ La próxima versión está planificada para el jueves 10 de julio de 2025.
   Consulte [Marcado de canalizaciones como favoritas](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
 
 
-## Programa beta privado {#private-beta-program}
+## Programa Private Beta {#private-beta-program}
 
-Participe en el programa privado Beta de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
+Participe en el programa Private Beta de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
 
-Actualmente están disponibles las siguientes oportunidades de beta privada:
+Actualmente están disponibles las siguientes oportunidades de Private Beta:
 
 
 ### Entorno de pruebas especializadas {#specialized-test-environment}

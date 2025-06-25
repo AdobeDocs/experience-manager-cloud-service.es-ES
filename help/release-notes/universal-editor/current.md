@@ -5,16 +5,16 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '135'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 
 # Notas de la versión 2025.05.21 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 21 de mayo de 2025.
+Estas son las notas de la versión del 21 de mayo de 2025 del editor universal.
 
 >[!TIP]
 >
@@ -22,8 +22,8 @@ Estas son las notas de la versión del editor universal del 21 de mayo de 2025.
 
 ## Novedades {#what-is-new}
 
-* **Deshabilitar botón para abrir página** - Ahora se puede deshabilitar el botón para abrir página [.](/help/implementing/universal-editor/customizing.md#open-page)
-* **Obtener acceso a propiedades desde el árbol de contenido** - [Al hacer doble clic en una entrada del árbol de contenido,](/help/sites-cloud/authoring/universal-editor/navigation.md) las propiedades asociadas se abrirán automáticamente en el panel lateral.
+* **Deshabilitar botón para abrir página**: ahora se puede deshabilitar el botón para abrir página [.](/help/implementing/universal-editor/customizing.md#open-page)
+* **Obtener acceso a las propiedades desde el árbol de contenido**: [al hacer doble clic en una entrada del árbol de contenido,](/help/sites-cloud/authoring/universal-editor/navigation.md) las propiedades asociadas se abrirán automáticamente en el panel lateral.
 
 ## Otras mejoras {#other-improvements}
 

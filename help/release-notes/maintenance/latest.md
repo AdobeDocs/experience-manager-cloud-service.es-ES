@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: d3cdc3d69c0002c5b124150050f905123457331c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -18,28 +18,28 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 21193 {#21193}
 
-A continuación, se resumen las mejoras continuas para la versión de mantenimiento 21193, que se publicó el miércoles, 10 de junio de 2025. La versión de mantenimiento anterior fue la 21005.
+A continuación, se resumen las mejoras continuas para la versión de mantenimiento 21193, que se publicó el 10 de junio de 2025. La versión de mantenimiento anterior fue la 21005.
 
 La activación de funcionalidades 2025.6.0 proporciona el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
 ### Mejoras {#enhancements-21193}
 
 * ASSETS-51245: rendimiento mejorado para listas de carpetas grandes en la IU táctil.
-* ASSETS-51686: mejoras en el trabajo de operaciones masivas, incluida una cancelación de trabajo más sencilla, un registro mejorado y descargas de auditoría para obtener resultados grandes.
-* CQ-4360131: Se ha mejorado la respuesta de error para los puntos de conexión de OpenAPI, lo que permite a los clientes de API recibir información de error estructurada correcta.
+* ASSETS-51686: mejoras en el trabajo de operaciones masivas, incluida una cancelación de trabajo más sencilla, un registro mejorado y descargas de auditoría para obtener grandes resultados.
+* CQ-4360131: se ha mejorado la respuesta de error para los puntos finales de OpenAPI, lo que permite a los clientes de API recibir información de error estructurada correcta.
 
 ### Problemas solucionados {#fixed-issues-21193}
 
-* ASSETS-41007: Los recursos eliminados podrían permanecer visibles en Content Hub.
-* ASSETS-50994: AemRequestEventFilter causa una contención excesiva de los subprocesos de Jetty.
+* ASSETS-41007: los recursos eliminados podrían permanecer visibles en Content Hub.
+* ASSETS-50994: AemRequestEventFilter causa una contención excesiva de los hilos de Jetty.
 * ASSETS-50155: eventos de cambio de metadatos duplicados activados.
-* ASSETS-50716: La ordenación por título en la vista de lista de Assets no funciona como se esperaba.
-* ASSETS-50820: Asegúrese de que las solicitudes no válidas a la API de relaciones de recursos se rechacen correctamente con un error 400.
+* ASSETS-50716: la ordenación por título en la vista de lista de Assets no funciona como se esperaba.
+* ASSETS-50820: asegúrese de que las solicitudes no válidas a la API de relaciones de recursos se rechacen correctamente con un error 400.
 * ASSETS-50562: la API de carga de recursos debe crear la versión de forma predeterminada en caso de conflicto de nombres.
-* ASSETS-50992: el extremo de la API de Assets launchUpload.json debe devolver el tipo de contenido de &quot;application/json&quot;.
-* ASSETS-51322: Eliminación y caducidad automáticas de barricadas asíncronas que permanecen indefinidamente después de un trabajo fallido.
-* ASSETS-51809: El editor CSV no mostraba los cambios guardados recientemente debido al almacenamiento en caché del explorador.
-* SITES-31678: Los fragmentos de experiencias (XF) con referencias según el contexto no resolvieron la raíz de idioma correcta en la API de publicación de XF.
+* ASSETS-50992: el punto final initiateUpload.json de la API de recursos debe devolver el tipo de contenido de &quot;application/json&quot;.
+* ASSETS-51322: eliminación y caducidad automáticas de barricadas asíncronas que permanecen indefinidamente después de un trabajo fallido.
+* ASSETS-51809: el editor CSV no mostraba los cambios guardados recientemente debido al almacenamiento en caché del explorador.
+* SITES-31678: los fragmentos de experiencia (XF) con referencias según el contexto no resolvieron la raíz de idioma correcta en la API de publicación de XF.
 
 
 ### Problemas conocidos {#known-issues-21193}

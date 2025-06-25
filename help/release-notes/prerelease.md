@@ -5,9 +5,9 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
 source-git-commit: 36da09746f02daad82875329b0aa53ee4eb7c074
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '889'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -18,35 +18,35 @@ Aprenda a utilizar el canal de la versión preliminar para obtener una vista pre
 
 ## Introducción {#introduction}
 
-Adobe Experience Manager as a Cloud Service ofrece nuevas funciones en una cadencia normal. La lista de características nuevas y futuras para una versión de característica determinada se publica dentro de las [notas de la versión.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+Adobe Experience Manager as a Cloud Service ofrece nuevas funciones con una cadencia normal. La lista de funciones nuevas y próximas para una versión determinada se publica en las [notas de la versión.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-Las próximas funciones generalmente están disponibles de una de las dos maneras siguientes:
+Las próximas funciones suelen estar disponibles de una de las dos maneras siguientes:
 
-* Como parte de un programa de adopción temprana
-* Como parte del canal de prelanzamiento
+* Como parte de un programa de primeros usuarios
+* Como parte del canal de versión preliminar
 
-Este documento describe cómo habilitar el canal de prelanzamiento. El canal de prelanzamiento proporciona acceso a las primeras funciones que se presentarán en una futura versión de AEM. Esto le ofrece la oportunidad de validar nuevas funciones y planificar su adopción antes de su futura versión. Consulte el documento [Notas de la versión para Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md) para obtener más información sobre la programación de versiones de AEM.
+En este documento se describe cómo habilitar el canal de versión preliminar El canal de versión preliminar ofrece acceso a las primeras funciones que se presentarán en una futura versión de funciones de AEM. Esto le ofrece la oportunidad de validar nuevas funciones y planificar su adopción antes de su lanzamiento próximo. Consulte el documento [Notas de la versión para Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md) para obtener más información sobre la programación de versiones de AEM.
 
-## Habilite el canal de prelanzamiento para acceder a las próximas funciones e intentarlo {#enable-prerelease}
+## Habilitación del canal de versión preliminar para acceder y probar próximas funciones {#enable-prerelease}
 
-El canal de la versión preliminar se puede habilitar en cualquier entorno de desarrollo o zona protegida. El canal de prelanzamiento no se puede habilitar en entornos de ensayo o producción.
+El canal de la versión preliminar se puede habilitar en cualquier entorno de desarrollo o zona protegida. El canal de versión preliminar no se puede habilitar en los entornos de ensayo o producción.
 
-Se puede acceder al canal de prelanzamiento de dos formas diferentes:
+Al canal de versión preliminar se puede acceder de dos maneras:
 
 * [Entornos de la nube](#cloud-environments)
 * [SDK local](#local-sdk)
 
 ### Entornos de la nube {#cloud-environments}
 
-Para actualizar un entorno de nube para utilizar el canal de prelanzamiento, debe agregar una nueva variable de entorno. Puede hacerlo mediante la IU de Cloud Manager o mediante CLI.
+Para actualizar un entorno de nube a fin de utilizar la versión preliminar, debe añadir una nueva variable de entorno. Puede hacerlo mediante la IU de Cloud Manager o mediante CLI.
 
 #### Adición de variable de entorno mediante la IU {#add-with-ui}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. Vaya al programa en el que desea habilitar el canal de prelanzamiento.
+1. Vaya al programa en el que desea habilitar el canal de versión preliminar.
 
-1. Seleccione el entorno donde desea habilitar el canal de prelanzamiento y acceda a su configuración a través de **Programa** > **Entorno** > **Configuración del entorno**.
+1. Seleccione el entorno en el que desea habilitar el canal de versión preliminar y acceda a su configuración mediante **Programa** > **Entorno** > **Configuración del entorno**.
 
 1. Agregar una nueva [variable de entorno](/help/implementing/cloud-manager/environment-variables.md)
 
@@ -54,7 +54,7 @@ Para actualizar un entorno de nube para utilizar el canal de prelanzamiento, deb
    |------|-------|-----------------|------|
    | `AEM_RELEASE_CHANNEL` | `prerelease` | Todos | Variable |
 
-1. Guarde los cambios y el entorno se actualizará con el canal de prelanzamiento habilitado.
+1. Guarde los cambios y el entorno se actualizará con el canal de versión preliminar habilitado.
 
    ![Nueva variable de entorno](assets/env-configuration-prerelease.png)
 
@@ -81,15 +81,15 @@ También puede utilizar la API y la CLI de Cloud Manager para actualizar las var
   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
   ```
 
-La variable se puede eliminar si desea restaurar el entorno al comportamiento estándar (canal que no es de prelanzamiento).
+La variable se puede eliminar si desea restaurar el entorno al comportamiento estándar (canal que no es de versión preliminar).
 
-### El SDK local {#local-sdk}
+### SDK local {#local-sdk}
 
-Puede acceder a las próximas funciones del canal de prelanzamiento en su Quickstart de SDK local y codificar las nuevas API configurando el proyecto Maven para que haga referencia al canal de prelanzamiento `API Jar` ubicado en Maven Central. También puede ver el acceso al canal de prelanzamiento en su entorno de desarrollo local iniciando Quickstart SDK normal en modo de prelanzamiento.
+Puede acceder a las próximas funciones en el canal de versión preliminar del SDK de Quickstart local y codificar para las nuevas API configurando el proyecto de Maven para que haga referencia al canal de versión preliminar `API Jar` situado en Maven Central. También puede acceder al canal de versión preliminar en el entorno de desarrollo local iniciando el SDK de Quickstart normal en modo de versión preliminar.
 
-#### Inicio del SDK de Quickstart en modo de versión preliminar {#prerelease-mode}
+#### Inicio del SDK de Quickstart en modo versión preliminar {#prerelease-mode}
 
-1. Descargue SDK desde la distribución e instalación de software tal como se describe en [Acceso a AEM as a Cloud Service SDK.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+1. Descargue el SDK desde la distribución de software e instálelo tal como se describe en [Acceso al SDK de AEM as a Cloud Service.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 1. Al iniciar Quickstart de SDK, incluya el argumento `-r prerelease`.
 
 El valor es fijo, por lo tanto, solo se puede seleccionar en el primer inicio. Vuelva a instalar el SDK para cambiar la opción de la línea de comandos.
@@ -146,7 +146,7 @@ Los JavaDocs se publican en Maven Central.
 
 1. Implementación en el servidor local.
 
-1. Si está seguro de que funciona como se espera localmente, confirme el código a una rama de desarrollo y utilice una canalización que no sea de producción de Cloud Manager para implementar en un entorno [que tenga habilitado el canal de prelanzamiento.](#cloud-environments)
+1. Si está satisfecho con el funcionamiento local, confirme el código en una rama de desarrollo y utilice una canalización que no sea de producción de Cloud Manager para implementarla en un [entorno que tenga habilitado el canal de versión preliminar.](#cloud-environments)
 
 >[!CAUTION]
 > 
@@ -160,6 +160,6 @@ Hay algunos elementos que se deben tener en cuenta al utilizar el canal de la ve
 
 * El canal de la versión preliminar no contiene necesariamente todas las nuevas funciones que se implementarán en la siguiente versión.
 * Las funciones de la versión preliminar se someten a rigurosas garantías de calidad y se pretende que sean características completas en lugar de calidad beta. Si nota algún problema, informe de él, tal como lo haría si sospechara que hay errores en las características de una versión de AEM normal.
-* Para determinar si un entorno está configurado para el canal de prelanzamiento, vaya a la página **Acerca de** de la consola AEM y compruebe si el número de versión de AEM incluye un sufijo `PRERELEASE` como `Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE`.
+* Para determinar si un entorno está configurado para el canal de versión preliminar, acceda a la página **Acerca de** de la consola de AEM y compruebe si el número de versión de AEM incluye un sufijo de `PRERELEASE` como, por ejemplo, `Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE`.
 
 ![Acerca de](/help/release-notes/assets/about.png)
