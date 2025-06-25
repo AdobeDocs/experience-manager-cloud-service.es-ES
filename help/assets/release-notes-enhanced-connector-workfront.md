@@ -4,10 +4,10 @@ description: Notas de la versión [!DNL Workfront for Experience Manager enhance
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
-workflow-type: ht
-source-wordcount: '1724'
-ht-degree: 100%
+source-git-commit: cb06380e4d3977f4f70a6444923cda2b0566d173
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 96%
 
 ---
 
@@ -52,13 +52,17 @@ ht-degree: 100%
 
 En la siguiente sección se describen las notas generales de la versión de [!DNL Workfront for Experience Manager enhanced connector].
 
-La fecha de la última versión 1.9.20 de [!DNL Workfront for Experience Manager enhanced connector] es el 6 de septiembre de 2024.
+La fecha de lanzamiento de la última versión 1.9.21 de [!DNL Workfront for Experience Manager enhanced connector] es el 25 de junio de 2025.
 
 ## Puntos destacados de la versión {#release-highlights}
 
-La versión más reciente de [!DNL Workfront for Experience Manager enhanced connector] incluye las siguientes correcciones de errores:
+La versión más reciente de [!DNL Workfront for Experience Manager enhanced connector] incluye las siguientes mejoras y correcciones de errores:
 
-* El tipo MIME se pierde al cargar y crear una nueva versión de un recurso existente.
+* Se ha mejorado el registro de solicitudes de API para evitar el registro de falsos positivos de errores de autenticación.
+
+* Se corrigió una fuga de conexión en las llamadas a la API Workfront.
+
+* Compatibilidad con el conector mejorado de Workfront con 6.5 LTS para las versiones de Java 17 y Java 21.
 
 >[!NOTE]
 >
@@ -75,6 +79,10 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 * Cuando utiliza la experiencia clásica de Workfront, la opción **[!UICONTROL Enviar a]** disponible en la lista desplegable **[!UICONTROL Más]** no permite seleccionar el destino objetivo en Experience Manager. La opción **[!UICONTROL Enviar a]** funciona correctamente utilizando la lista desplegable **[!UICONTROL Acciones de documento]**. La opción **[!UICONTROL Enviar a]** funciona correctamente para la lista desplegable **[!UICONTROL Más]** y la lista desplegable **[!UICONTROL Acciones de documento]** disponible en la nueva experiencia de Workfront.
 
 ## Versiones anteriores {#previous-releases}
+
+### Versión de septiembre de 2024 {#september-2024-release}
+
+* El tipo MIME se pierde al cargar y crear una nueva versión de un recurso existente.
 
 ### Versión de abril de 2024 {#april-2024-release}
 
