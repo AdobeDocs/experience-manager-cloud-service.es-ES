@@ -3,50 +3,85 @@ title: Administrar colecciones en Content Hub
 description: Obtenga información sobre cómo administrar colecciones en Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
+source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 10%
+source-wordcount: '1106'
+ht-degree: 9%
 
 ---
 
 # Administrar colecciones en [!DNL Content Hub] {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
+
         </td>
+
           <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
+
             <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+
         </td>
+
         <td>
+
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -93,17 +128,22 @@ Siga estos pasos para controlar el acceso al crear colecciones:
 
    | Método de acceso | Tipo de acceso | Descripción |
    |---|---|---|
-   | **Solo usted y los administradores pueden tener acceso a** | Privado | Solo el creador y los administradores pueden editar y acceder a esta colección. |
-   | **Cualquier persona puede acceder a** | Público | Todos pueden acceder a esta colección, pero solo el creador y los administradores pueden editarla. |
-   | **Cualquier persona puede acceder y editar** | Público | Esta colección está abierta a todos, con acceso completo y permisos de edición concedidos sin restricciones. |
+   | **Solo usted y los administradores pueden editar** | Privado | Solo el creador y los administradores pueden editar y acceder a esta colección. |
+   | **Cualquiera puede ver** | Público | Todos pueden acceder a esta colección, pero solo el creador y los administradores pueden editarla. |
+   | **Cualquier persona puede ver y editar** | Público | Esta colección está abierta a todos, con acceso completo y permisos de edición concedidos sin restricciones. |
+
+   >[!NOTE]
+   >
+   > El administrador de [!DNL Content Hub] puede ver todas las opciones disponibles en la lista desplegable **[!UICONTROL Quién puede acceder a]**, mientras que para los usuarios normales, necesita [especificar y configurar](configure-content-hub-ui-options.md) las opciones a las que pueden acceder.
 
 1. Haga clic en **[!UICONTROL Crear]**. Una vez finalizado, puede [agregar recursos a la colección](#add-assets-to-existing-collection).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
+<!--
 >[!NOTE]
 >
->La gobernanza de colecciones es una función de disponibilidad limitada. Puede habilitarlo creando un ticket de asistencia. Una vez que esté habilitado, tendrá que [configurar colecciones en Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).
+>Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket. Once enabled, you need to [Configure Collections in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).-->
 
 <!--To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
 ![Create collection](assets/add-assets-collection.jpg)          
@@ -174,17 +214,23 @@ Obtenga información sobre cómo [descargar un recurso de [!DNL Content Hub]](do
 
 También puede compartir los recursos disponibles en una colección. Asegúrese de [habilitar el uso compartido de vínculos públicos en Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing). Vaya a la pestaña **[!UICONTROL Colecciones]**. Seleccione el icono ![compartir icono](assets/share.svg) en la tarjeta de colección. Se copia el vínculo compartido. Puede compartir el vínculo copiado con el destinatario. Más información sobre [compartir recursos en [!DNL Content Hub]](share-assets-content-hub.md).
 
-Al compartir colecciones en Content Hub, puede definir el ámbito de acceso y las acciones que los destinatarios pueden realizar en los recursos digitales dentro del sistema. Content Hub Collections proporciona herramientas de gobernanza completas para una administración eficaz de los recursos, incluidos permisos de uso compartido personalizables y funciones de colaboración. Desde el acceso de solo lectura hasta el control administrativo completo, esta configuración admite la buena gobernanza en la distribución de recursos.
+Content Hub Collections proporciona herramientas de gobernanza completas para una administración eficaz de los recursos, incluidos permisos de uso compartido personalizables y funciones de colaboración. Desde el acceso de solo lectura hasta el control administrativo completo, esta configuración admite la buena gobernanza en la distribución de recursos. Al compartir un recurso de forma individual o como parte de una colección, el ámbito de acceso viene determinado por el nivel de acceso actual de la colección asignado al usuario. Como alternativa, no puede compartir una colección privada.
 
 ## Editar detalles de una colección {#edit-details-of-collection}
 
-Para editar **[!UICONTROL Título]** y **[!UICONTROL Descripción]** de una colección, haga clic en el nombre de la colección y luego en el icono ![icono de información](assets/info-icon.svg). Aparece la pantalla [!UICONTROL Detalles de colección] que le permite editar el **[!UICONTROL Título]** y la **[!UICONTROL Descripción]** de una colección. Haga clic en **[!UICONTROL Guardar cambios]** para confirmar las modificaciones.
+Para editar **[!UICONTROL Título]** y **[!UICONTROL Descripción]** de una colección, haga clic en el nombre de la colección y luego en el icono ![icono de información](assets/info-icon.svg). Aparece la pantalla [!UICONTROL Detalles de colección] que le permite editar el **[!UICONTROL Título]** y la **[!UICONTROL Descripción]** de una colección. Haga clic en **[!UICONTROL Guardar cambios]** para confirmar las modificaciones. Además, puede actualizar el acceso a la colección mediante el cuadro de diálogo Editar colección, según la configuración.
 
 ![detalles de colección](assets/collection-details.png)
 
 ## Eliminación de recursos de una colección{#remove-assets-from-a-collection}
 
-Puede quitar uno o varios recursos de una colección. Para quitar recursos de una colección, haga clic en la colección de la que debe quitarlos, selecciónelos y haga clic en **[!UICONTROL Quitar de la colección]**.
+Los siguientes usuarios pueden quitar uno o varios recursos de una colección:
+
+* Un administrador
+* Propietario de la colección
+* Un usuario no administrador con derechos de edición
+
+Para quitar recursos de una colección, haga clic en la colección de la que debe quitarlos, selecciónelos y haga clic en **[!UICONTROL Quitar de la colección]**.
 
 ![Quitar colección](assets/remove-collection-new.jpg)
 
@@ -193,7 +239,7 @@ Los recursos seleccionados se han eliminado correctamente de la colección.
 
 ## Eliminar una colección{#delete-collection}
 
-Para eliminar una colección, vaya a la ficha **[!UICONTROL Colecciones]** y haga clic en la colección que debe eliminar. Haga clic en el icono ![quitar icono](assets/remove-icon.svg) para eliminar la colección.
+Solo los administradores y el creador pueden eliminar una colección. Para eliminar una colección, vaya a la ficha **[!UICONTROL Colecciones]** y haga clic en la colección que debe eliminar. Haga clic en el icono ![eliminar](assets/delete-icon.svg) para eliminar la colección.
 
 
 
