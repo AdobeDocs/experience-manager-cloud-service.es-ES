@@ -3,9 +3,9 @@ title: Implementar  [!DNL Content Hub]
 description: Obtenga información sobre cómo implementar y activar Content Hub y proporcionar acceso a usuarios con diferentes tipos de privilegios (cargar recursos, usuarios de Adobe Express) y cómo proporcionar privilegios de administrador a usuarios.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: be6c75dc12d80b252131e4e7369c1c5555432215
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: '1649'
 ht-degree: 10%
 
 ---
@@ -15,16 +15,16 @@ ht-degree: 10%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -49,7 +49,7 @@ ht-degree: 10%
     </tr>
 </table>
 
-![Implementar Content Hub](assets/deploy-content-hub.png)
+![Implementación de Content Hub](assets/deploy-content-hub.png)
 
 >[!AVAILABILITY]
 >
@@ -97,7 +97,14 @@ La siguiente tabla resume los tipos de usuarios de Content Hub disponibles, los 
 
 ## Paso 1: Habilitar Content Hub para Experience Manager Assets con Cloud Manager {#enable-content-hub}
 
-Para acceder al portal de Content Hub, los administradores primero deben habilitar Content Hub para Experience Manager Assets as a Cloud Service con Cloud Manager. Ejecute los siguientes pasos:
+
+Para acceder al portal de Content Hub, los administradores primero deben habilitar Content Hub para Experience Manager Assets as a Cloud Service con Cloud Manager.
+
+### Permisos {#permissions-edit-program}
+
+Debe tener la función Propietario empresarial para editar programas en Cloud Manager. Para obtener más información, consulte [Editar programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+
+Para habilitar Content Hub para Experience Manager Assets:
 
 1. Inicie sesión en Cloud Manager. Asegúrese de seleccionar la organización correcta al iniciar sesión. Cloud Manager enumera todos los programas.
 
@@ -262,4 +269,4 @@ Para configurar usuarios de Experience Manager Assets:
 
    >[!NOTE]
    >
-   >No es necesario que se le agregue al [perfil de producto de Content Hub](#onboard-content-hub-users) para los usuarios de Experience Manager Assets.
+   > No es necesario que se le agregue al [perfil de producto de Content Hub](#onboard-content-hub-users) para los usuarios de Experience Manager Assets.
