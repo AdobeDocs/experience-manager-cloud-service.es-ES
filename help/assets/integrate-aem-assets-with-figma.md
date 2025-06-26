@@ -4,7 +4,7 @@ description: Aprenda a integrar [!DNL AEM Assets] con [!DNL Figma] para acceder 
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 41fc6cc1c852c25215a804c2d1f9c5872a46e0a4
+source-git-commit: 2644c849df32af14c70e686a803b690996812046
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 10%
@@ -70,13 +70,13 @@ También puedes acceder a [[!DNL Adobe Experience Manager (AEM) Assets Connector
 
 >[!NOTE]
 >
-> [Póngase en contacto con el Soporte técnico de Adobe](https://helpx.adobe.com/es/contact.html) para obtener ayuda si ve un mensaje de **[!UICONTROL Error de red]** después de iniciar sesión en su entorno de [!DNL AEM].
+> [Póngase en contacto con el Soporte técnico de Adobe](https://helpx.adobe.com/contact.html) para obtener ayuda si ve un mensaje de **[!UICONTROL Error de red]** después de iniciar sesión en su entorno de [!DNL AEM].
 
 ## Importar [!DNL AEM] recursos al lienzo [!DNL Figma]{#import-aem-assets-into-figma-workflow}
 
-[Acceda al [[!UICONTROL panel]](#access-aem-assets-connector) del conector Assets de Adobe Experience Manager (AEM)] dentro de su interfaz de diseño de [!DNL Figma] y haga lo siguiente:
+[Acceda al [!UICONTROL panel](#access-aem-assets-connector) del conector Assets de Adobe Experience Manager (AEM)] dentro de su interfaz de diseño de [!DNL Figma] y haga lo siguiente:
 
-1. Busque recursos en el panel [!UICONTROL Conector de Assets de Adobe Experience Manager (AEM)]. Para obtener más información, consulte [uso del Selector de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Busque recursos en el panel [!UICONTROL Conector de Assets de Adobe Experience Manager (AEM)]. Para obtener más información, consulte [uso del Selector de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Arrastre y suelte el recurso en el lienzo o selecciónelo y haga clic en **[!UICONTROL Seleccionar]** para llevar el recurso al lienzo.
 
@@ -87,7 +87,7 @@ Una vez que el diseño de Figma esté listo, puede [exportar el recurso al repos
 
 ## Exportar recursos al repositorio [!DNL AEM Assets]{#export-figma-design-to-aem-assets-folder}
 
-[Acceda al [[!UICONTROL panel]](#access-aem-assets-connector) del conector Assets de Adobe Experience Manager (AEM)] dentro de su interfaz de diseño de [!DNL Figma] y ejecute los siguientes pasos para exportar su diseño al repositorio de [!DNL AEM Assets]:
+[Acceda al [!UICONTROL panel](#access-aem-assets-connector) del conector Assets de Adobe Experience Manager (AEM)] dentro de su interfaz de diseño de [!DNL Figma] y ejecute los siguientes pasos para exportar su diseño al repositorio de [!DNL AEM Assets]:
 
 1. Vaya a la carpeta de destino donde desea guardar el diseño de [!DNL Figma]. Si ya se encuentra dentro de una carpeta, haga clic en Más opciones (![tres puntos](/help/assets/assets/three-dots.svg)) en la ruta de la carpeta para seleccionar una carpeta de destino diferente.
 1. Opcional: agrupe los recursos en el lienzo para seleccionarlos como una sola unidad que cargar en la carpeta.
@@ -101,4 +101,3 @@ Esta integración tiene actualmente las siguientes limitaciones:
 
 * Para importar [!DNL AEM] recursos en Figma, los formatos admitidos son **JPEG**, **PNG**.
 * Para exportar diseños de [!DNL Figma] a [!DNL AEM Assets], los formatos admitidos son **PNG**, **PDF**, **JPG**, **SVG**.
-
