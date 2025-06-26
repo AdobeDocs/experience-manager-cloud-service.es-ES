@@ -3,7 +3,7 @@ title: Descarga de recursos desde Content Hub
 description: Obtenga información sobre cómo descargar uno o varios recursos y sus representaciones desde el portal de Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 809c0e780959340964933b13c8a347157f1dc17e
+source-git-commit: 9636fbf2ca78f001e08ef281f3d7ea3bfc212387
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 8%
@@ -82,8 +82,8 @@ Si el cuadro de diálogo **[!UICONTROL Descargar recursos]** muestra los recurso
 
    >[!NOTE]
    >
-   >* Las representaciones solo se muestran si su visibilidad está habilitada mediante la interfaz de usuario [[!UICONTROL [Configuration]]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   >* Los usuarios con acceso a [[!DNL [Dynamic Media with Open API capabilities]]](/help/assets/dynamic-media-open-apis-overview.md) pueden ver y descargar representaciones de recortes dinámicas e inteligentes.
+   >* Las representaciones se muestran únicamente si su visibilidad está habilitada mediante la interfaz de usuario de [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* Los usuarios con acceso a [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) pueden ver y descargar representaciones de recortes dinámicas e inteligentes.
    >* La vista previa de la licencia solo se mostrará si el recurso se ha aprobado mediante el entorno de creación [!DNL Assets as a Cloud Service]. Para obtener más información, consulte [Administración de recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
