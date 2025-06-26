@@ -76,8 +76,10 @@ Como administrador, ejecute los siguientes pasos para importar los formularios d
 1. Seleccione uno o varios formularios de la tabla y haga clic en **[!UICONTROL Iniciar importación]** para importar los formularios de metadatos y sus carpetas asociadas en [!DNL Assets View]. Se muestra un mensaje de procesamiento (por ejemplo, *Importando 3 formularios de metadatos. Espere un momento.*). Una vez completada la importación, un mensaje confirma que los formularios se han importado correctamente y la página **[!UICONTROL Metadatos de Forms]** (de [!DNL Assets View]) muestra tanto los formularios importados recientemente como los existentes disponibles en [!DNL Assets View]. Puede hacer lo siguiente en esta página:
    * Haga clic en el encabezado de columna para ordenar la tabla por [!UICONTROL Nombre], [!UICONTROL Modificado] o [!UICONTROL Autor].
    * Seleccione el formulario importado y haga clic en **[!UICONTROL Quitar de las carpetas]**; a continuación, compruebe el nombre de la carpeta en la ruta de acceso de la carpeta para confirmar que se ha transferido correctamente.
+
      ![comprobar página de formularios de metadatos](/help/assets/assets/confirm-ported-folder.png)
    * Seleccione el formulario importado y haga clic en **[!UICONTROL Editar]** para ver todas las configuraciones admitidas del formulario de metadatos. Consulte [Configuración de Forms de metadatos](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) para obtener más información sobre los formularios de metadatos, sus componentes y campos.
+
      ![comprobar página de formularios de metadatos](/help/assets/assets/verify-metadata-forms-page.png)
 
 ## Verificar los formularios de metadatos importados{#Verify-the-imported-metadata-forms}
