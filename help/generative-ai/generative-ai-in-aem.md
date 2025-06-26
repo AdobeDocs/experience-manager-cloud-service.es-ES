@@ -5,7 +5,7 @@ feature: Generative AI
 role: Admin, Architect, Developer, User
 exl-id: 740d9a5b-bd83-4723-a43e-0ead475c3392
 source-git-commit: 8e3b3ffed97336580a17ad572cc1793c690a8a7d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ La IA generativa se utiliza en todo AEM:
 
 ## Información adicional {#further-information}
 
-* [Información general sobre la IA de Adobe]( https://www.adobe.com/ai/overview.html?lang=es)
+* [Información general sobre la IA de Adobe](https://www.adobe.com/ai/overview.html?lang=es)
 
 * [IA generativa en productos de Experience Cloud](https://experienceleague.adobe.com/es/docs/core-services/interface/features/generative-ai)
 
