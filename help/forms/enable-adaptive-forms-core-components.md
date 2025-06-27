@@ -6,10 +6,10 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 0656e923c4b50d0554780ecf56dd08302a165fa9
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 100%
+source-wordcount: '1113'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +30,6 @@ Al habilitar los componentes principales de los formularios adaptables en AEM Fo
 
 * Si su entorno de Cloud Service existente proporciona la opción [crear formularios adaptables basados en componentes principales](creating-adaptive-form-core-components.md), los componentes principales de formularios adaptables y formularios adaptables sin encabezado ya están habilitados para su entorno. Estos pueden ofrecer formularios adaptables basados en componentes principales, como formularios sin encabezado para canales como móvil, web, aplicaciones nativas y servicios que requieren una representación sin encabezado de formularios adaptables.
 
-
 ## Habilitar los componentes principales de formularios adaptables y formularios adaptables sin encabezado {#enable-headless-forms}
 
 Realice los siguientes pasos, en el orden indicado, para habilitar los componentes principales de formularios adaptables y formularios adaptables sin encabezado para un entorno as a Cloud Service de AEM Forms
@@ -39,7 +38,7 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los component
 ![Habilitar los componentes principales y los formularios adaptables sin encabezado](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## 1. Clone su repositorio de Git de AEM Forms as a Cloud Service {#clone-git-repository}
+## &#x200B;1. Clone su repositorio de Git de AEM Forms as a Cloud Service {#clone-git-repository}
 
 1. Inicie sesión en [Cloud Manager](https://my.cloudmanager.adobe.com/) y seleccione su organización y programa.
 
@@ -59,7 +58,7 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los component
    Cuando se le solicite, proporcione las credenciales. El repositorio se clona en su ordenador local.
 
 
-## 2. Añadir dependencias de componentes principales de formularios adaptables al repositorio de Git {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Añadir dependencias de componentes principales de formularios adaptables al repositorio de Git {#add-adaptive-forms-core-components-dependencies}
 
 1. Abra la carpeta del repositorio de Git en un editor de código de texto sin formato. Por ejemplo, VS Code.
 1. Abra el archivo `[AEM Repository Folder]\pom.xml` para editarlo.
@@ -276,7 +275,7 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los component
 
 1. Guarde y cierre el archivo.
 
-## 3. Genere e implemente el código actualizado
+## &#x200B;3. Genere e implemente el código actualizado
 
 Implemente el código actualizado en sus entornos de desarrollo local y de Cloud Service para habilitar los componentes principales en ambos entornos:
 
@@ -356,6 +355,13 @@ Para comprobar que los componentes principales de Formularios adaptables están 
    ![busque el artefacto de core-forms-components-af-core en all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    Si existen dependencias, los componentes principales de Formularios adaptables se habilitan para su entorno.
+
+### ¿Por qué los formularios basados en componentes principales no se pueden procesar en el proyecto?
+
+Es posible que los formularios basados en componentes principales no se puedan procesar debido a una discrepancia de versiones entre el paquete de componentes principales de Forms y la versión incluida en el arquetipo de proyecto. Este problema suele ocurrir cuando la versión especificada en el tipo de archivo del proyecto es igual o superior a la versión empaquetada con el paquete de componentes principales de Forms. Para resolver este problema, realice una de las siguientes acciones:
+
+* Utilice una versión inferior del paquete de componentes principales de Forms en el tipo de archivo del proyecto.
+* Elimine la dependencia de los componentes principales de Forms del tipo de archivo del proyecto, ya que la versión requerida ya se incluye con AEM as a Cloud Service. El paquete de componentes principales de Forms está empaquetado con AEM as a Cloud SDK a partir de la versión 20133, por ejemplo, `AEM SDK v2025.3.20133.20250325T063357Z-250300`.
 
 >[!MORELIKETHIS]
 >
