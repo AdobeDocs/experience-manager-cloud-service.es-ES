@@ -4,9 +4,9 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9327bc51ba170971bde8ce8e338c9a42ac5cbe82
+source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1542'
 ht-degree: 11%
 
 ---
@@ -91,7 +91,7 @@ Un objeto de campo tiene la siguiente definición de tipo.
 | Configuración | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
 | `component` | `ComponentType` | Procesador del componente | Sí |
-| `name` | `string` | Propiedad donde se mantendrán los datos | Sí |
+| `name` | `string` | Propiedad [o ruta](#nesting) donde se mantendrán los datos | Sí |
 | `label` | `FieldLabel` | Etiqueta del campo | Sí |
 | `description` | `FieldDescription` | Descripción del campo | No |
 | `placeholder` | `string` | Marcador de posición para el campo | No |
@@ -104,6 +104,14 @@ Un objeto de campo tiene la siguiente definición de tipo.
 | `multi` | `boolean` | ¿El campo es un campo múltiple? | No |
 | `validation` | `ValidationType` | Regla o reglas de validación para el campo | No |
 | `raw` | `unknown` | Datos sin procesar que el componente puede utilizar | No |
+
+### Nombre de campo y anidamiento {#nesting}
+
+El campo `name` puede señalar directamente a una propiedad del recurso actual o, en el caso de los componentes de `cq:Pages`, también puede utilizar una ruta de acceso a una propiedad anidada. Por ejemplo:
+
+```json
+"name": "teaser/image/fileReference"
+```
 
 ### Tipos de componentes {#component-types}
 
@@ -281,7 +289,7 @@ Similar a un booleano, un tipo de componente de grupo de casillas de verificaci�
 
 #### Contenedor {#container}
 
-Un tipo de componente contenedor permite agrupar componentes. Ofrece una configuración adicional.
+Un tipo de componente contenedor permite agrupar componentes, incluida la compatibilidad con varios campos. Ofrece una configuración adicional.
 
 | Configuración | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
@@ -324,7 +332,36 @@ Un tipo de componente contenedor permite agrupar componentes. Ofrece una configu
 
 ![Captura de pantalla del tipo de componente de contenedor](assets/component-types/container.png)
 
+>[!TAB Compatibilidad con varios campos]
+
+```json
+{
+  "component": "container",
+  "name": "test",
+  "label": "Multi Text",
+  "multi": true,
+  "fields": [
+    {
+      "component": "reference",
+      "name": "image",
+      "value": "",
+      "label": "Sample Image",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "alt",
+      "value": "",
+      "label": "Alt Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
 >[!ENDTABS]
+
+
 
 #### Fragmento de contenido {#content-fragment}
 
