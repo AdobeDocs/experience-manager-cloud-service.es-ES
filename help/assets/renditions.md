@@ -49,7 +49,7 @@ Estas representaciones permiten a las organizaciones ofrecer experiencias person
    * [Ajustes preestablecidos de imagen](/help/assets/dynamic-media/managing-image-presets.md)
 
   Puede [cambiar la vista](/help/assets/assets-view-introduction.md#how-to-access-assets-view) más adelante para obtener una vista previa de las representaciones dinámicas en la vista de Assets.
-* Publique recursos en Dynamic Media para que las representaciones de Dynamic Media estén disponibles en la vista de Assets. Para obtener más información, consulte [Publicar Assets en AEM y Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
+* Publique recursos en Dynamic Media para que las representaciones de Dynamic Media estén disponibles en la vista de Assets. Para obtener más información, consulte [Publicar Assets en AEM y Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
 ### Ver y descargar representaciones de Dynamic Media {#view-download-dm-renditions}

@@ -16,7 +16,7 @@ ht-degree: 9%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Los informes de recursos le permiten evaluar la utilidad de su implementación de [!DNL Adobe Experience Manager Assets]. Con [!DNL Assets], puede generar varios informes para sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, cómo los usuarios interactúan con los recursos y cuáles son los recursos compartidos de <!-- downloaded and -->.
@@ -66,7 +66,7 @@ Los administradores de [!DNL Adobe Experience Manager] pueden generar y personal
 
    >[!NOTE]
    >
-   >Asigne un título a un **perfil de producto del administrador de AEM** para crear un informe de **Descargar**. Consulte [Asignación de perfiles de producto de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para obtener un perfil de producto de administrador de AEM.
+   >Asigne un título a un **perfil de producto del administrador de AEM** para crear un informe de **Descargar**. Consulte [Asignación de perfiles de producto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para obtener un perfil de producto de administrador de AEM.
 
    ![Seleccionar tipo de informe](assets/choose_report.png)
 

@@ -17,14 +17,14 @@ ht-degree: 0%
 
 >[!TIP]
 >
->¿Está buscando la documentación de actualización de [!DNL Workfront for Experience Manager enhanced connector] para AEM 6.5? Haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
+>¿Está buscando la documentación de actualización de [!DNL Workfront for Experience Manager enhanced connector] para AEM 6.5? Haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=es##update-enhanced-connector-for-workfront).
 
 
 Para actualizar [!DNL Workfront for Experience Manager enhanced connector] a la última versión:
 
 1. Descargue la versión más reciente del conector mejorado de [Distribución de software de Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
 
-1. [Acceda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) y clone su repositorio de AEM as a Cloud Service desde Cloud Manager.
+1. [Acceda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=es) y clone su repositorio de AEM as a Cloud Service desde Cloud Manager.
 
 1. Abra el repositorio clonado de Experience Manager as a Cloud Service mediante un IDE de su elección.
 
@@ -85,4 +85,4 @@ Para actualizar [!DNL Workfront for Experience Manager enhanced connector] a la 
 
 1. Inserte los cambios en el repositorio.
 
-1. Ejecute la canalización para [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Ejecute la canalización para [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=es).

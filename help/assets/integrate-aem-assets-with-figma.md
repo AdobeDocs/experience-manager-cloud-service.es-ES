@@ -33,13 +33,13 @@ También puedes acceder a [[!DNL Adobe Experience Manager (AEM) Assets Connector
 
 >[!NOTE]
 >
-> [Póngase en contacto con el Soporte técnico de Adobe](https://helpx.adobe.com/contact.html) para obtener ayuda si ve un mensaje de **[!UICONTROL Error de red]** después de iniciar sesión en su entorno de [!DNL AEM].
+> [Póngase en contacto con el Soporte técnico de Adobe](https://helpx.adobe.com/es/contact.html) para obtener ayuda si ve un mensaje de **[!UICONTROL Error de red]** después de iniciar sesión en su entorno de [!DNL AEM].
 
 ## Importar [!DNL AEM] recursos al lienzo [!DNL Figma]{#import-aem-assets-into-figma-workflow}
 
 [Acceda al [[!UICONTROL panel]](#access-aem-assets-connector) del conector Assets de Adobe Experience Manager (AEM)] dentro de su interfaz de diseño de [!DNL Figma] y haga lo siguiente:
 
-1. Busque recursos en el panel [!UICONTROL Conector de Assets de Adobe Experience Manager (AEM)]. Para obtener más información, consulte [uso del Selector de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Busque recursos en el panel [!UICONTROL Conector de Assets de Adobe Experience Manager (AEM)]. Para obtener más información, consulte [uso del Selector de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Arrastre y suelte el recurso en el lienzo o selecciónelo y haga clic en **[!UICONTROL Seleccionar]** para llevar el recurso al lienzo.
 
