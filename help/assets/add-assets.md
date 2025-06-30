@@ -148,7 +148,7 @@ Para cargar un número mayor de archivos, utilice uno de los siguientes métodos
 
 La herramienta solo se proporciona al grupo de administradores para que la utilice para la ingesta a gran escala de recursos de almacenes de datos de Azure o S3. Consulte un vídeo de introducción a la configuración y la ingesta.
 
->[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341381/?quality=12&learn=on&captions=spa)
 
 La siguiente imagen ilustra las distintas etapas de la ingesta de recursos en Experience Manager desde un almacén de datos:
 

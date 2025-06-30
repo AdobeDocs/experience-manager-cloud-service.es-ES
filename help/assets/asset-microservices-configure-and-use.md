@@ -90,7 +90,7 @@ El perfil de procesamiento puede incluir una representación de FPO (solo para u
 
 The following video demonstrates the usefulness and usage of standard profile.
 
->[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/34043?quality=9&captions=spa)
 -->
 
 <!-- This image was removed per cqdoc-15624, as requested by engineering.
