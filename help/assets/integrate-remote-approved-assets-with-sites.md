@@ -34,6 +34,7 @@ La compatibilidad con recursos remotos mediante Dynamic Media con funciones de O
 * Configure las [variables de entorno](/help/implementing/cloud-manager/environment-variables.md#add-variables) siguientes para AEM as a Cloud Service:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxx-eyyyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX` hace referencia al ID de programa <br>
      `eYYYY` hace referencia al ID de entorno
 

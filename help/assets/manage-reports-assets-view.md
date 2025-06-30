@@ -50,6 +50,7 @@ El entorno de vista de los AEM Assets ofrece funcionalidades completas de creaci
    1. **Descripción:** añada una descripción opcional al informe.
    1. **Seleccionar ruta de la carpeta:** seleccione una ruta de la carpeta para generar el informe de los recursos cargados y descargados dentro de esa carpeta específica. Por ejemplo, si necesita que el informe de recursos se cargue en una carpeta, especifique la ruta a esa carpeta.
    1. **Seleccionar intervalo de fechas:** seleccione el intervalo de fechas para ver la actividad de carga o descarga dentro de la carpeta.
+
    <br>
 
    >[!NOTE]
@@ -202,6 +203,7 @@ Para programar un informe, siga los pasos que se indican a continuación:
    1. **Descripción**: añada una descripción opcional al informe.
    1. **Seleccionar ruta de carpeta:** seleccione una ruta de la carpeta para generar un informe para los recursos que se cargarán o descargarán de esa carpeta específica en el futuro.
    1. Marque **Programar informe:** marque para programar el informe para un momento posterior o para que se repita.
+
       ![programar informe](/help/assets/assets/schedule-reports1.svg)
 
    1. **Elegir frecuencia:** especifique el intervalo de generación del informe (por ejemplo, diario, semanal, mensual, anual o una vez) y establezca la fecha y la hora para ejecutar el informe junto con la fecha de finalización para la periodicidad. Para un informe único, seleccione el intervalo de fechas para el informe sobre el tipo de actividad seleccionado en el entorno de AEM. Por ejemplo, si necesita un informe sobre los recursos descargados del 10 al 29 (fechas futuras) de un mes específico, seleccione estas fechas en el campo **Seleccionar intervalo de fechas**.
