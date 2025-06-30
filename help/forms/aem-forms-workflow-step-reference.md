@@ -7,9 +7,9 @@ keywords: Uso de flujos de trabajo de AEM, uso de los pasos Asignar tarea, paso 
 feature: Adaptive Forms, Workflow
 role: Admin, User
 source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7370'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
     -->
 
 * **[!UICONTROL Usuario asignado]** > **[!UICONTROL Asignar opciones]**: especifique el método para asignar la tarea a un usuario. Puede asignar dinámicamente la tarea a un usuario o grupo mediante el script del selector de participantes o asignar la tarea a un usuario o grupo AEM específico.
-* **[!UICONTROL Selector de participantes]**: la opción está disponible cuando la variable **[!UICONTROL Dinámicamente a un usuario o grupo]** está seleccionada en el campo Asignar opciones. Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo. Para obtener más información, consulte [Creación de un paso de participante dinámico de Adobe Experience Manager personalizado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es&CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Selector de participantes]**: la opción está disponible cuando la variable **[!UICONTROL Dinámicamente a un usuario o grupo]** está seleccionada en el campo Asignar opciones. Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo. Para obtener más información, consulte [Crear un paso de participante dinámico de Adobe Experience Manager personalizado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Participantes]**: el campo está disponible cuando la opción **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** está seleccionada en el campo **[!UICONTROL Selector de participantes]**. El campo permite seleccionar usuarios o grupos para la opción RandomParticipantChooser.
 
