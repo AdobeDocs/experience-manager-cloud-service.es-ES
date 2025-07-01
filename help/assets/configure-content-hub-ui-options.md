@@ -2,10 +2,10 @@
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a60b0e8ccba2680b0f053f3349adca21b65c3045
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 11%
+source-wordcount: '2089'
+ht-degree: 10%
 
 ---
 
@@ -96,11 +96,10 @@ Haga clic en el botón de alternancia **[!UICONTROL Aprobación automática]** s
 
 Haga clic en **[!UICONTROL Guardar]** después de realizar todas las modificaciones para aplicar los cambios.
 
-![Detalles de carga de la interfaz de usuario de configuración en Content Hub](assets/configuration-ui-upload-details.png)
+![Detalles de carga de la interfaz de usuario de configuración en Content Hub](/help/assets/assets/import-content-hub.png)
 
 Los metadatos activados en la interfaz de usuario de configuración se muestran en la página de carga de recursos:
-
-![Cargar metadatos en Content Hub](assets/configuration-ui-add-assets.png)
+![Cargar metadatos en Content Hub](assets/add-assets-for-approval.png)
 
 ### Filtros {#configure-filters-content-hub}
 
@@ -120,12 +119,10 @@ Content Hub permite a los administradores configurar filtros que se muestran al 
    >El nuevo filtro se muestra en la página Buscar solo si hay al menos un recurso en el repositorio que coincida con los criterios de filtro.
 
 Del mismo modo, puede hacer clic en ![Editar icono](assets/do-not-localize/edit_icon.svg), disponible junto a cada filtro disponible, para editar las etiquetas o hacer clic en el icono Eliminar para eliminar cualquier filtro existente. Haga clic en **[!UICONTROL Guardar]** después de realizar todas las modificaciones para aplicar los cambios.
-
-![Filtros de IU de configuración en Content Hub](assets/configuration-ui-filters.png)
+![Filtros de IU de configuración en Content Hub](assets/configuration-filter.png)
 
 Los filtros activados en la interfaz de usuario de configuración se muestran en la página Buscar:
-
-![Buscar en Content Hub](assets/filters-for-search.png)
+![Buscar en Content Hub](assets/content-hub-filters.png)
 
 
 ### Detalles del recurso {#configure-asset-details-content-hub}
@@ -143,24 +140,23 @@ También puede configurar las propiedades del recurso que se muestran para cada 
 
 Del mismo modo, puede hacer clic en ![Editar icono](assets/do-not-localize/edit_icon.svg), disponible junto a cada propiedad disponible, para editar las etiquetas o hacer clic en el icono Eliminar para eliminar cualquier detalle del recurso existente. Haga clic en **[!UICONTROL Guardar]** después de realizar todas las modificaciones para aplicar los cambios.
 
-![Detalles del recurso de la IU de configuración en Content Hub](assets/configuration-ui-asset-details.png)
+![Detalles del recurso de la IU de configuración en Content Hub](assets/configuration-asset-details.png)
 
 Las propiedades activadas en la interfaz de usuario de configuración se muestran en la página Detalles del recurso:
 
-![Propiedades del recurso en Content Hub](assets/config-ui-asset-properties.png)
+![Propiedades del recurso en Content Hub](assets/asset-details-page-content-hub.png)
 
 ### Tarjeta de recursos {#asset-card}
 
-También puede configurar los campos de metadatos clave que necesita mostrar en la **tarjeta de recursos** hasta un máximo de 6 campos. Para ello, ejecute los siguientes pasos:
-
-![metadatos clave de la tarjeta de recursos](/help/assets/assets/asset-card-key-metadata.png)
+También puede configurar las propiedades de metadatos clave que necesita mostrar en la **tarjeta de recursos** hasta un máximo de 6 campos.
+![metadatos de clave en la tarjeta de recursos](/help/assets/assets/asset-card-metadata.png)
+Ejecute los siguientes pasos para configurar las propiedades de los metadatos para que se muestren en la **[!UICONTROL tarjeta de recursos]**:
 
 1. En la interfaz de usuario de [Configuraciones](#access-configuration-options-content-hub), haga clic en **Tarjeta de recursos**.
 2. Haga clic en **Agregar metadatos**. Se muestra el cuadro de diálogo **Agregar metadatos de tarjeta de recursos**.
 3. Especifique el nombre de los metadatos en el campo **Etiqueta** y seleccione una propiedad de metadatos en el campo **Metadatos**.
 4. Haga clic en **Confirmar** y, a continuación, haga clic en **Guardar** para aplicar los cambios y que la nueva propiedad se muestre en la página de detalles del recurso.
-   ![tarjeta de recursos](/help/assets/assets/asset-card.png)
-
+   ![tarjeta de recursos](/help/assets/assets/configuration-asset-card.png)
 Del mismo modo, haga clic en ![editar](/help/assets/assets/edit-content-hub.svg), que está disponible junto a cada propiedad disponible, para realizar las modificaciones necesarias, o haga clic en ![eliminar](/help/assets/assets/delete-content-hub.svg) para eliminar cualquier propiedad de metadatos existente. Haga clic en **Guardar** después de realizar todas las modificaciones para aplicar los cambios.
 
 ### Búsqueda {#configure-metadata-search-content-hub}
@@ -174,11 +170,13 @@ Los administradores pueden definir los campos de metadatos que se buscan cuando 
 1. Haga clic en **[!UICONTROL Guardar]** para aplicar los cambios y que la nueva propiedad de metadatos se muestre en la lista de campos de metadatos.
 
 Del mismo modo, puede hacer clic en ![Editar icono](assets/do-not-localize/edit_icon.svg), disponible junto a cada propiedad de metadatos disponible, para editar la propiedad o hacer clic en el icono Eliminar para eliminar cualquier propiedad existente. Haga clic en **[!UICONTROL Guardar]** después de realizar todas las modificaciones para aplicar los cambios.
-![Búsqueda de IU de configuración en Content Hub](assets/configuration-ui-metadata-search.png)
+![Búsqueda de IU de configuración en Content Hub](assets/configuration-search.png)
 
 ### Personalización de marca {#configure-branding-content-hub}
 
-Como administrador, personalice el portal [!DNL Content Hub] para que cumpla con los requisitos de marca. En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Promoción de marca]**, use las secciones **[!UICONTROL Banner]**, **[!UICONTROL Colores]** y **[!UICONTROL Imagen de banner]** para ejecutar las siguientes personalizaciones:
+Como administrador, personalice el portal [!DNL Content Hub] para que cumpla con los requisitos de marca.
+![restablecer predeterminado](/help/assets/assets/reset-default-content-hub.png)
+En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Promoción de marca]**, use las secciones **[!UICONTROL Banner]**, **[!UICONTROL Colores]** y **[!UICONTROL Imagen de banner]** para ejecutar las siguientes personalizaciones:
 
 1. [Cambiar la imagen del titular de la sección [!UICONTROL Imagen del titular]](#Change-the-banner-image)
 1. [Actualice el título y el texto del cuerpo del titular y cambie el color del texto de la sección [!UICONTROL Titular]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
@@ -192,21 +190,23 @@ En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!U
 
 1. Haga clic en ![seleccionar imagen](/help/assets/assets/Browse.svg) **[!UICONTROL Seleccionar de la galería]** para seleccionar una imagen de titular mediante el cuadro de diálogo del selector de recursos. El selector de recursos solo muestra las imágenes aprobadas.
 1. Seleccione la imagen, haga clic en **[!UICONTROL Seleccionar]** y, a continuación, haga clic en **[!UICONTROL Guardar]** para mostrarla como la imagen de titular de su implementación de [!DNL Content Hub].
+   ![imagen de titular](/help/assets/assets/banner-image-content-hub.png)
 
 #### Añada un título y texto independiente al titular y cambie el color del texto{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
 En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Promoción de marca]**, use los campos respectivos en la sección **[!UICONTROL Banner]** para agregar títulos y textos del cuerpo al banner.
 Haga clic en el cuadro cuadrado situado junto al **[!UICONTROL Color del texto del titular]** para seleccionar un color de texto del selector de color para el texto del titular o especifique el código hexadecimal del color en el campo situado junto al cuadro cuadrado del selector de color.
+![centro de contenido de texto de banner](/help/assets/assets/banner-text-content-hub.png)
 
 #### Cambio del color principal y secundario{#Change-the-primary-and-secondary-color}
 
 En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Promoción de marca]**, use la sección **[!UICONTROL Colores]** para establecer los colores primarios y secundarios seleccionándolos con el selector de color o definiendo el código hexadecimal del color. Estos colores establecen los colores de fondo, texto e icono de los elementos de la interfaz de usuario para alinear la interfaz de usuario de [!DNL Content Hub] con el tema de la marca.
-
-**[!UICONTROL Color principal]:** El esquema de colores principal se aplica a acciones de selección, elementos interactivos como casillas de verificación, barras de búsqueda y modificadores de alternancia en [!DNL Content Hub], incluida la página principal de [!DNL Content Hub] y la página de [!UICONTROL Configuración]. También se aplica a las opciones de acción disponibles en las interfaces principales [!DNL Content Hub], como las opciones disponibles en **[!UICONTROL Todas las páginas de Assets]** y **[!UICONTROL Colecciones]**.
+![color principal y secundario](/help/assets/assets/primary-secondary-color-content-hub.png)
+**[!UICONTROL Color principal]:** El esquema de colores principal se aplica a acciones de selección, elementos interactivos como casillas de verificación, barras de búsqueda y conmutadores de alternancia en [!DNL Content Hub], incluida la página de inicio [!DNL Content Hub] y la página [!UICONTROL Configuración]. También se aplica a las opciones de acción disponibles en las interfaces principales [!DNL Content Hub], como las opciones disponibles en **[!UICONTROL Todas las páginas de Assets]** y **[!UICONTROL Colecciones]**.
 
 **[!UICONTROL Color secundario]:** En la página de inicio de [!DNL Content Hub], el esquema de colores secundario se aplica a las opciones de la interfaz de usuario y a los campos de entrada disponibles en los cuadros de diálogo. Se aplica a todas las opciones de menú de configuración disponibles en la página [!UICONTROL Configuración], excepto a las acciones de selección, las casillas de verificación, las barras de búsqueda y los modificadores de alternancia.
 
-### Recursos caducados{#expired-assets-content-hub}
+### Visibilidad del recurso{#asset-visibility-content-hub}
 
 Los administradores pueden controlar si necesitan recursos caducados para que sean visibles en Content Hub. Si los activos caducados están visibles, también se puede definir si los usuarios pueden descargarlos.
 
@@ -214,15 +214,15 @@ Los recursos caducados no se muestran en Content Hub de forma predeterminada.
 
 Para ello, ejecute los siguientes pasos:
 
-1. En la interfaz de usuario de [Configuraciones](#access-configuration-options-content-hub), haga clic en **[!UICONTROL Assets caducado]**.
+1. En la interfaz de usuario de [Configuraciones](#access-configuration-options-content-hub), haga clic en **[!UICONTROL Visibilidad de los recursos]**.
 
 1. En la sección **[!UICONTROL Visible]**, habilite la opción **[!UICONTROL Permitir que los usuarios vean los recursos caducados]** para que todos los recursos caducados estén visibles en Content Hub.
 
 1. Después de habilitar la visibilidad de los recursos, puede habilitar o deshabilitar la capacidad de descargar recursos caducados mediante la opción **[!UICONTROL Permitir que los usuarios descarguen recursos caducados]**.
-
+1. Habilite la opción **[!UICONTROL Permitir que los usuarios vean los recursos aprobados para la entrega]** para mostrar todos los recursos aprobados para la entrega en Content Hub.
 1. Haga clic en **[!UICONTROL Guardar]** para aplicar los cambios.
 
-   ![Activos caducados en Content Hub](assets/expired-assets-content-hub.png)
+   ![Activos caducados en Content Hub](assets/asset-visibility-content-hub.png)
 
 Después de habilitar la visibilidad de los recursos, puede ver los recursos caducados en Content Hub, como se muestra en la siguiente imagen:
 
@@ -234,7 +234,7 @@ Si la visibilidad de los recursos caducados está habilitada, Content Hub tambi�
 
 ### Representaciones {#renditions-content-hub}
 
-Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para ello, ejecute los siguientes pasos:
 
@@ -244,7 +244,7 @@ En la interfaz de usuario de [Configurations](#access-configuration-options-cont
 
 * Habilite o deshabilite **[!UICONTROL Permitir que los usuarios descarguen los recursos originales]** para controlar la disponibilidad para descargar los recursos originales.
 
-  ![Configurar representaciones en Content Hub](assets/config-renditions.png)
+  ![Configurar representaciones en Content Hub](assets/configuration-renditions.png)
 
 Para obtener información sobre cómo ver y descargar representaciones en Content Hub, consulte [descargar recursos en Content Hub](/help/assets/download-assets-content-hub.md).
 
@@ -263,11 +263,9 @@ También puede agregar fichas personalizadas además de las fichas estándar de 
 1. Haga clic en **[!UICONTROL Guardar]** para aplicar los cambios.
 
 Del mismo modo, puede hacer clic en ![Editar icono](assets/do-not-localize/edit_icon.svg), disponible junto a cada dirección URL, para editar los vínculos o hacer clic en el icono Eliminar para eliminar cualquier dirección URL existente. Haga clic en **[!UICONTROL Guardar]** después de realizar todas las modificaciones para aplicar los cambios.
-
-![Vínculos personalizados de la IU de configuración en Content Hub](assets/configuration-ui-custom-links.png)
+![Vínculos personalizados de la IU de configuración en Content Hub](assets/configuration-custom-links.png)
 
 El vínculo personalizado se muestra como una nueva pestaña junto a la pestaña Información en la página de inicio de Content Hub.
-
 ![Fichas de vínculos personalizados de IU de configuración en Content Hub](assets/configuration-ui-custom-link-tab.png)
 
 ### Colecciones y uso compartido {#configure-collections-content-hub}
