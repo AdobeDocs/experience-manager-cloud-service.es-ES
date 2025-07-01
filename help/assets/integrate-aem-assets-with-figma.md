@@ -38,7 +38,7 @@ También puedes acceder a [[!DNL Adobe Experience Manager (AEM) Assets Connector
 
 ## Importar [!DNL AEM] recursos al lienzo [!DNL Figma]{#import-aem-assets-into-figma-workflow}
 
-[Acceda al [!UICONTROL panel](#access-aem-assets-connector) del conector Assets de Adobe Experience Manager (AEM)] dentro de su interfaz de diseño de [!DNL Figma] y haga lo siguiente:
+[Acceda al [[!UICONTROL panel]](#access-aem-assets-connector) del conector Assets de Adobe Experience Manager (AEM)] dentro de su interfaz de diseño de [!DNL Figma] y haga lo siguiente:
 
 1. Busque recursos en el panel [!UICONTROL Conector de Assets de Adobe Experience Manager (AEM)]. Para obtener más información, consulte [uso del Selector de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
@@ -51,7 +51,7 @@ Una vez que el diseño de Figma esté listo, puede [exportar el recurso al repos
 
 ## Exportar recursos al repositorio [!DNL AEM Assets]{#export-figma-design-to-aem-assets-folder}
 
-[Acceda al [!UICONTROL panel](#access-aem-assets-connector) del conector Assets de Adobe Experience Manager (AEM)] dentro de su interfaz de diseño de [!DNL Figma] y ejecute los siguientes pasos para exportar su diseño al repositorio de [!DNL AEM Assets]:
+[Acceda al [[!UICONTROL panel]](#access-aem-assets-connector) del conector Assets de Adobe Experience Manager (AEM)] dentro de su interfaz de diseño de [!DNL Figma] y ejecute los siguientes pasos para exportar su diseño al repositorio de [!DNL AEM Assets]:
 
 1. Vaya a la carpeta de destino donde desea guardar el diseño de [!DNL Figma]. Si ya se encuentra dentro de una carpeta, haga clic en Más opciones (![tres puntos](/help/assets/assets/three-dots.svg)) en la ruta de la carpeta para seleccionar una carpeta de destino diferente.
 1. Opcional: agrupe los recursos en el lienzo para seleccionarlos como una sola unidad que cargar en la carpeta.
