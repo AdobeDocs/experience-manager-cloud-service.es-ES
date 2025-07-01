@@ -4,10 +4,10 @@ description: Obtenga información acerca de la entrega de fragmentos de contenid
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 3%
+source-wordcount: '524'
+ht-degree: 2%
 
 ---
 
@@ -76,9 +76,11 @@ Para obtener una vista previa, la Entrega de fragmentos de contenido con OpenAPI
 
 Esta API no tiene en cuenta los orígenes permitidos de CORS definidos en el lado de la configuración de Dispatcher, específicamente para GraphQL.
 
-<!-- 
-## API Rate Limits {#api-rate-limits}
--->
+## Límites de velocidad de API {#api-rate-limits}
+
+La API permite nuevas solicitudes a una velocidad de hasta 200 solicitudes por segundo, por entorno.
+
+Una vez superado este límite, la API empieza a enviar 429 errores. Estos errores deben ser controlados por cualquier aplicación cliente, y las solicitudes fallidas se deben reintentar después de un reintento de retroceso exponencial.
 
 <!-- 
 ## Limitations {#limitations}
