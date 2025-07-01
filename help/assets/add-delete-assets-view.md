@@ -4,10 +4,10 @@ description: Cargue recursos a [!DNL Assets view], vea los estados de carga y re
 role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Para añadir nuevos recursos con los que trabajar, cargue algunos desde el siste
 Puede utilizar los siguientes métodos para cargar uno o varios recursos o una carpeta que los contenga:
 
 * Arrastre recursos o carpetas en la interfaz de usuario y siga las instrucciones que aparecen en la pantalla.
-* Haga clic en la opción **[!UICONTROL Añadir recursos]** de la barra de herramientas y agregue algunos archivos al cuadro de diálogo de carga.
+* Haga clic en la opción **[!UICONTROL Agregar Assets]** de la barra de herramientas y agregue algunos archivos al cuadro de diálogo de carga.
 
 <!-- TBD: Update this GIF
 ![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
@@ -108,4 +108,4 @@ Los usuarios pueden eliminar recursos o carpetas individuales que ya no sean nec
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)
