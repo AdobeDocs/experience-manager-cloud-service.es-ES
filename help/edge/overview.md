@@ -4,7 +4,7 @@ description: Descubra cómo AEM as a Cloud Service puede beneficiarse del rendim
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 207926d68f42f5b398841b92c0a8c72a3f852292
+source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 37%
@@ -53,7 +53,7 @@ Ya sea sin encabezado o con encabezado, puede entregar el contenido adecuado en 
 
 Edge Delivery Services es un conjunto de servicios componibles que permite un alto grado de flexibilidad en la forma en que se crea contenido en su sitio web. Sustituye a AEM Publish/Dispatcher y a la forma tradicional de crear experiencias con los componentes principales de AEM con una solución SaaS de varias nubes y un enfoque de desarrollo front-end puro.
 
-![Arquitectura de Edge Delivery](assets/AEM-with-EDS-architecture.png)
+![Arquitectura de Edge Delivery](assets/aem-with-eds-architecture.png)
 
 Edge Delivery Services utiliza GitHub para que pueda administrar e implementar código directamente desde su repositorio de GitHub. El nuevo contenido se añade al instante sin que sea necesario un proceso de reconstrucción.
 
@@ -90,7 +90,7 @@ Empiece a utilizar la creación de AEM con el editor universal y Edge Delivery S
 
 Edge Delivery Services forma parte de Adobe Experience Manager. Como tal, Edge Delivery Services y AEM Sites pueden coexistir en el mismo dominio, lo que es un caso de uso común para sitios web más grandes. Además, las páginas de AEM Sites pueden consumir contenido de Edge Delivery Services sin problemas, y lo mismo sucede a la inversa.
 
-También puedes usar Edge Delivery Services con [Adobe Target](https://www.aem.live/developer/target-integration) y [Launch.](https://experienceleague.adobe.com/es/docs/experience-platform/tags/home)
+También puedes usar Edge Delivery Services con [Adobe Target](https://www.aem.live/developer/target-integration) y [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Obtención de ayuda de Adobe {#getting-help}
 
