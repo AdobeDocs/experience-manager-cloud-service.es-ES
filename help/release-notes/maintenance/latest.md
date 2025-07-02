@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 467e21aff1c2164be729598d03f30f6a9e90c8aa
+source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1768'
 ht-degree: 83%
 
 ---
@@ -146,7 +146,7 @@ La activación de funcionalidades 2025.7.0 proporciona el conjunto completo de f
 
 ### Problemas conocidos {#known-issues-21331}
 
-Ninguna.
+* SITES-33177: los estilos de sección almacenados como cadenas separadas por comas se rompen.
 
 ### Características y API obsoletas {#deprecated-21331}
 
