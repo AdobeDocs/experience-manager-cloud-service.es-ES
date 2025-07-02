@@ -2,10 +2,10 @@
 title: Preguntas frecuentes (FAQ) sobre Content Hub
 description: Obtenga respuestas a algunas de las preguntas más frecuentes (FAQ) sobre Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '1293'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Hay algunas configuraciones sobre cómo se asignan los usuarios a [!DNL Content 
    >
    >El usuario asignado a los perfiles de producto Express y Assets en dos Admin Consoles necesita tener la misma dirección de correo electrónico y usar una cuenta de empresa **Enterprise o School**, y no la cuenta **Personal**. La configuración ideal es tener ambas Admin Consoles configuradas como **Federated ID** con una relación de confianza configurada entre ellas, de modo que el usuario tenga una experiencia de inicio de sesión único sin problemas. Algunos de los planes Express (por ejemplo, Equipos Express) no admiten el inicio de sesión único/Federated ID.
 
-Además de las autorizaciones de producto adecuadas, la integración de Adobe Express en Content Hub requiere que el usuario asignado tenga al menos permisos [!UICONTROL Puede editar] en el entorno de creación de Assets que alimenta Content Hub, en al menos la jerarquía de carpetas **[!UICONTROL # /content/dam/hydroloaded-assets/]**, en la que los usuarios de Content Hub pueden guardar el contenido que han creado mediante Express. Consulte [Administración de permisos](/help/security/touch-ui-principal-view.md) en la vista de administración (IU táctil) o la [administración de permisos simplificada en la vista de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Además de las autorizaciones de producto adecuadas, la integración de Adobe Express en Content Hub requiere que el usuario asignado tenga al menos permisos [!UICONTROL Puede editar] en el entorno de creación de Assets que alimenta Content Hub, en al menos la jerarquía de carpetas **[#UICONTROL /content/dam/hydroloaded-assets/]**, en la que los usuarios de Content Hub pueden guardar el contenido que han creado mediante Express. Consulte [Administración de permisos](/help/security/touch-ui-principal-view.md) en la vista de administración (IU táctil) o la [administración de permisos simplificada en la vista de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## ¿Puedo configurar Content Hub para que las directrices de marca de mi organización se muestren como un vínculo en la página de inicio? {#content-hub-setup-brand-guidelines}
 

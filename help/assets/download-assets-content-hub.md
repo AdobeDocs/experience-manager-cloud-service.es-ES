@@ -3,7 +3,7 @@ title: Descarga de recursos desde Content Hub
 description: Obtenga información sobre cómo descargar uno o varios recursos y sus representaciones desde el portal de Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
