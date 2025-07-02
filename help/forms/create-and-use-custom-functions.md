@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1336'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Este artículo |
 
 AEM Forms admite funciones personalizadas, lo que permite a los usuarios definir funciones de JavaScript para implementar reglas comerciales complejas. Estas funciones personalizadas amplían las capacidades de los formularios al facilitar la manipulación y el procesamiento de los datos introducidos para satisfacer requisitos específicos. Permiten la modificación dinámica del comportamiento del formulario en función de criterios predefinidos. Las funciones personalizadas también permiten a los desarrolladores aplicar una lógica de validación compleja, realizar cálculos dinámicos y controlar la visualización o el comportamiento de los elementos del formulario en función de las interacciones del usuario o los criterios predefinidos.
@@ -214,6 +214,16 @@ Para enumerar funciones personalizadas en el editor de reglas de un formulario a
 ```
 
 Si el usuario no agrega ninguna anotación de JavaScript a la función personalizada, la función personalizada no aparece en la lista del editor de reglas de un formulario adaptable.
+
+## Problema conocido
+
+* Las funciones personalizadas no admiten literales de expresión regular de JavaScript. El uso de literales regex en una función personalizada provoca errores durante la ejecución. Por ejemplo:
+  `const pattern = /^abc$/;`
+
+  Para garantizar la compatibilidad, utilice el constructor RegExp en las funciones personalizadas.
+
+  `const pattern = new RegExp("^abc$");`
+Refactorice las expresiones regulares para utilizar el constructor RegExp y garantizar una ejecución coherente y fiable.
 
 ## Siguiente paso
 

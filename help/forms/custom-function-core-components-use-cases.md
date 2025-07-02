@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -259,7 +259,7 @@ Consulte la siguiente ilustración de `console window` para demostrar que si el 
 
 También puede inspeccionar la ventana de la consola para ver los datos enviados al servidor:
 
-![Datos de Inspect en la ventana de la consola](/help/forms/assets/custom-function-submit-data-console-data.png)
+![Inspeccionar datos en la ventana de la consola](/help/forms/assets/custom-function-submit-data-console-data.png)
 
 ## Anular los controladores de éxito y de error del envío del formulario
 
@@ -370,7 +370,7 @@ Consulte la siguiente ilustración para demostrar que, cuando falla el envío de
 
 Para mostrar el éxito y el error del envío del formulario de forma predeterminada, las funciones `Default submit Form Success Handler` y `Default submit Form Error Handler` están disponibles de forma predeterminada.
 
-AEM En caso de que el controlador de envío personalizado no funcione según lo esperado en los formularios o proyectos existentes de la aplicación, consulte la sección [solución de problemas](#troubleshooting).
+En caso de que el controlador de envío personalizado no funcione según lo esperado en los formularios o proyectos de AEM existentes, consulte la sección [solución de problemas](#troubleshooting).
 
 ## Realizar acciones en una instancia específica del panel repetible
 
@@ -513,16 +513,25 @@ Consulte el archivo gif siguiente, que muestra que cuando se hace clic en el bot
 
 ![Eliminar panel](/help/forms/assets/custom-function-delete-panel.gif)
 
+## Problema conocido
+
+* Las funciones personalizadas no admiten literales de expresión regular de JavaScript. El uso de literales regex en una función personalizada provoca errores durante la ejecución. Por ejemplo:
+  `const pattern = /^abc$/;`
+
+  Para garantizar la compatibilidad, utilice el constructor RegExp en las funciones personalizadas.
+
+  `const pattern = new RegExp("^abc$");`
+Refactorice las expresiones regulares para utilizar el constructor RegExp y garantizar una ejecución coherente y fiable.
 
 ## Solución de problemas
 
-* AEM Si el controlador de envío personalizado no funciona como se espera en los formularios o proyectos existentes de la aplicación, realice los siguientes pasos:
-   * Asegúrese de que la versión de los componentes principales [se haya actualizado a la versión 3.0.18 y posteriores](https://github.com/adobe/aem-core-forms-components). AEM Sin embargo, para los proyectos y formularios existentes de, hay que seguir algunos pasos adicionales:
+* Si el controlador de envío personalizado no funciona como se espera en los formularios o proyectos de AEM existentes, realice los siguientes pasos:
+   * Asegúrese de que la versión de los componentes principales [se haya actualizado a la versión 3.0.18 y posteriores](https://github.com/adobe/aem-core-forms-components). Sin embargo, para los proyectos y formularios de AEM existentes, hay que seguir algunos pasos adicionales:
 
-   * AEM Para el proyecto de, el usuario debe reemplazar todas las instancias de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` e implementar el proyecto a través de la canalización de Cloud Manager.
+   * Para el proyecto de AEM, el usuario debe reemplazar todas las instancias de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` e implementar el proyecto a través de la canalización de Cloud Manager.
 
    * En el caso de los formularios existentes, si los controladores de envío personalizados no funcionan correctamente, el usuario debe abrir y guardar la regla `submitForm` en el botón **Enviar** mediante el Editor de reglas. Esta acción reemplaza la regla existente de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` en el formulario.
 
-## Consulte también
+## Véase también
 
 {{see-also-rule-editor}}
