@@ -685,7 +685,7 @@ ht-degree: 99%
       + [Edición de vídeos](/help/assets/edit-videos-assets-view.md)
       + [Visualización y administración de representaciones](/help/assets/renditions.md)
       + [Administración de metadatos de recursos](/help/assets/metadata-assets-view.md)
-      + [Importar formulario de metadatos de la vista de administración a la vista de Assets](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md)
+      + [Importar formulario de metadatos de la vista de administración a la vista de recursos](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md)
       + [Cambiar nombre de forma masiva](/help/assets/bulk-rename-assets-view.md)
       + [Edición masiva de metadatos](/help/assets/bulk-metadata-edit.md)
       + [Compartir recursos](/help/assets/share-links-for-assets-view.md)
@@ -751,7 +751,7 @@ ht-degree: 99%
       + [Migrar desde [!DNL AEM 6.5 Forms] o anterior a [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos y permisos](/help/forms/forms-groups-privileges-tasks.md)
       + [Importación, exportación y organización de formularios adaptables, formularios PDF y otros recursos](/help/forms/import-export-forms-templates.md)
-      + [Habilitar la alternancia de funciones en el kit de desarrollo de software de Adobe Experience (AEM SDK)](/help/forms/enable-feature-toggle.md)
+      + [Habilitar la alternancia de funciones en el kit de desarrollo de software de Adobe Experience (SDK de AEM)](/help/forms/enable-feature-toggle.md)
    + Introducción {#getting-started-forms}
       + [Caso de uso y entorno de desarrollo de configuración](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Creación del formulario de solicitud de préstamo](/help/forms/create-adaptive-form-tutorial.md)
