@@ -27,7 +27,7 @@ El desarrollo de proyectos de AEM Commerce, basados en Commerce integration fram
 
 ## Desarrollo local con AEM as a Cloud Service SDK {#local}
 
->[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/347035/?quality=12&learn=on&captions=spa)
 
 Se recomienda contar con un entorno de desarrollo local para trabajar con proyectos CIF. El complemento de CIF proporcionado para AEM as a Cloud Service también está disponible para el desarrollo local. Se puede descargar desde el [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
