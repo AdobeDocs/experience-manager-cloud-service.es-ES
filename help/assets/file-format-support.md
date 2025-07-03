@@ -37,8 +37,8 @@ La siguiente leyenda describe el nivel de compatibilidad con cada formato.
 >[!IMPORTANT]
 >
 >[!DNL Adobe Experience Manager Assets] solo admite los formatos de archivo enumerados en este artículo.
->>Algunas funciones pueden parecer compatibles con otros formatos, pero estos formatos no son compatibles oficialmente. Los resultados pueden ser incoherentes y es posible que las funciones no funcionen según lo esperado.
->>Para garantizar resultados coherentes y fiables, utilice únicamente los formatos admitidos.
+>&#x200B;>Algunas funciones pueden parecer compatibles con otros formatos, pero estos formatos no son compatibles oficialmente. Los resultados pueden ser incoherentes y es posible que las funciones no funcionen según lo esperado.
+>&#x200B;>Para garantizar resultados coherentes y fiables, utilice únicamente los formatos admitidos.
 
 ## Formatos de Adobe {#adobe-formats}
 
