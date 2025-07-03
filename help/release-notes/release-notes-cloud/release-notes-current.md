@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.6.0) fue el viernes, 26 de junio de 2025. La siguiente versión con funcionalidades (2025.7.0) está planificada para el viernes, 31 de julio de 2025.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.6.0) fue el 26 de junio de 2025. La siguiente versión con funcionalidades (2025.7.0) está planificada para el viernes, 31 de julio de 2025.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,7 +48,7 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 **Administración mejorada de formularios de metadatos en la vista Assets**
 
-Ahora puede importar formularios de metadatos de la vista Administrador directamente a la vista Assets. Cualquier actualización realizada en estos formularios en la vista de Assets se reflejará automáticamente en la vista de administración, lo que garantiza la coherencia en ambas experiencias. Esta capacidad permite una transición sin problemas a la nueva vista de Assets, a la vez que mantiene la continuidad con las configuraciones de metadatos existentes.
+Ahora puede importar formularios de metadatos de la vista Administrador directamente a la vista Assets. Cualquier actualización realizada en estos formularios en la vista Assets se reflejará automáticamente en la vista Administración, lo que garantiza la coherencia en ambas experiencias. Esta capacidad permite una transición sin problemas a la nueva vista Assets, a la vez que mantiene la continuidad con las configuraciones de metadatos existentes.
 
 ![Metadatos generados por IA](/help/assets/assets/import-metadata-forms-page.png)
 
@@ -104,7 +104,7 @@ Propiedades de OSGi:
 
 El tiempo de ejecución de **Java 11** ya está en desuso, y la mayoría de los entornos ya se han actualizado al tiempo de ejecución de **Java 21** con mayor rendimiento.
 
-Si su entorno no se pudo actualizar debido a dependencias no admitidas (consulte [Requisitos de tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), debería haber recibido un correo electrónico de Adobe con los pasos siguientes específicos. Asegúrese de que todas las actualizaciones requeridas se hayan completado el **28 de agosto de 2025** para que su entorno se pueda actualizar sin interrupciones.
+Si su entorno no se ha podido actualizar debido a dependencias no admitidas (consulte [Requisitos de tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), debería haber recibido un correo electrónico de Adobe con los siguientes pasos específicos. Asegúrese de que todas las actualizaciones requeridas se hayan completado el **28 de agosto de 2025** para que su entorno se pueda actualizar sin interrupciones.
 
 Nota: La versión del tiempo de ejecución es independiente de la versión de compilación del código. Aunque recomendamos la compilación con Java 21, las compilaciones de Java 11 siguen siendo compatibles por ahora. En el futuro, se publicará un aviso independiente sobre el desuso de compilaciones de Java 11.
 
@@ -112,7 +112,7 @@ Nota: La versión del tiempo de ejecución es independiente de la versión de co
 
 Como se indica en las notas de la versión de abril, los registros Java de AEM deben seguir un formato estándar para garantizar una monitorización de confianza en todos los entornos de clientes. Ya no se admiten las configuraciones de registro personalizadas, como los cambios en el formato de los registros, archivos de salida o niveles de registro predeterminados. Los registros deben permanecer dirigidos a los archivos predeterminados y se deben conservar los niveles de registro predeterminados para el código de producto de AEM. Consulte todos los detalles en el [Artículo de registro](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-A partir de **finales de agosto**, se omitirán todas las invalidaciones de registro personalizadas no admitidas. En función de nuestro análisis, la mayoría de los clientes no se verán afectados y Adobe se ha puesto en contacto con clientes cuya configuración actual puede verse afectada.
+A partir de **finales de agosto**, se omitirán todas las invalidaciones de registro personalizadas no admitidas. Según nuestro análisis, la mayoría de los clientes no se verán afectados y Adobe se pondrá en contacto directamente con cualquier cliente cuya configuración actual pueda verse afectada.
 
 Revise y actualice cualquier proceso descendente que dependa del comportamiento de registro personalizado. Por ejemplo:
 
@@ -123,7 +123,7 @@ Revise y actualice cualquier proceso descendente que dependa del comportamiento 
 
 Actualmente, las versiones de contenido y los registros de auditoría tienen sus *tareas de mantenimiento de depuración* asociadas deshabilitadas de forma predeterminada y, por lo tanto, no se eliminan datos a menos que se configuren explícitamente.
 
-Sin embargo, para optimizar el rendimiento del repositorio, a partir de **principios de julio de 2025**, la depuración se habilitará de forma predeterminada, siguiendo estas directrices:
+Sin embargo, para optimizar el rendimiento del repositorio, a partir de **principios de julio de 2025**, la depuración se habilitará de manera predeterminada, siguiendo estas directrices:
 
 #### Versiones de contenido {#mt-content}
 
@@ -162,7 +162,7 @@ Los casos de uso comunes incluyen los siguientes:
 * Autenticación de usuarios con un proveedor de identidad antes de conceder acceso al contenido
 * Personalización de contenido en función de la geolocalización, el tipo de dispositivo o los atributos del usuario
 * Actuación como middleware entre la CDN y su origen
-* Volver a dar formato a las respuestas de API de terceros (y tal vez agregar varias respuestas de API) antes de enviarlas al explorador
+* Modificar el formato de las respuestas de API de terceros (y tal vez añadir las respuestas de varias API) antes de enviarlas al explorador
 * Composición y muestra de HTML procesado por el servidor en Edge con contenido reunido de varios backend
 
 Tenemos un número limitado de oportunidades disponibles para el envío de publicaciones de AEM o para proyectos de Edge Delivery Services para sitios de producción en directo. Si está interesado en participar o desea obtener más información, envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descripción de su caso de uso.

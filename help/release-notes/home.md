@@ -5,9 +5,9 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
 source-git-commit: ccf148d66fbee68e057b05afc69e4bf9eef65c77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Las próximas funciones suelen estar disponibles de una de las dos maneras sigui
 
 La manera en que la próxima función estará disponible se detallará en las [notas de la versión.](#release-notes)
 
-* Si forma parte de un programa de Alpha, Beta o de disponibilidad limitada, generalmente debe ponerse en contacto con Adobe para habilitarlo como se detalla en las notas de la versión.
+* Si forma parte de un programa Alpha, Beta o de disponibilidad limitada, generalmente debe ponerse en contacto con Adobe para habilitarlo, tal como se detalla en las notas de la versión.
 * Si forma parte del canal de versión preliminar, deberá [habilitar el canal de versión preliminar en un entorno de desarrollo o de zona protegida.](/help/release-notes/prerelease.md)
 
 ## Formación de los usuarios {#train-users}
