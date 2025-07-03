@@ -224,15 +224,15 @@ Las reescrituras de URL también se pueden lograr utilizando el servidor HTTP AE
 
 Como se mencionó antes de seleccionar uno de los formatos predeterminados disponibles, o incluso implementar un formato personalizado, depende en gran medida de las necesidades y requisitos de una tienda. Las siguientes sugerencias pueden ayudar a tomar una decisión informada.
 
-_**Use un formato de dirección URL de página de producto que contenga el SKU.**_
+_&#x200B;**Use un formato de dirección URL de página de producto que contenga el SKU.**&#x200B;_
 
 Los componentes principales de CIF utilizan el SKU como identificador principal en todos los componentes. Si el formato de URL de la página del producto no contiene el SKU, es necesario realizar una consulta GraphQL para resolverlo. Esta resolución puede afectar al tiempo hasta el primer byte. Además, es posible que los compradores puedan encontrar productos por SKU utilizando motores de búsqueda.
 
-_**Use un formato de dirección URL de página de producto que contenga el contexto de categoría.**_
+_&#x200B;**Use un formato de dirección URL de página de producto que contenga el contexto de categoría.**&#x200B;_
 
 Algunas características del proveedor de URL de CIF solo están disponibles cuando se usan formatos de URL de productos que codifican el contexto de categoría, como la categoría `url_key` o la categoría `url_path`. Incluso si estas funciones pueden no ser necesarias para una tienda nueva, el uso de uno de estos formatos de URL al principio ayuda a reducir los esfuerzos de migración en el futuro.
 
-_**Equilibrio entre la longitud de la dirección URL y la información codificada.**_
+_&#x200B;**Equilibrio entre la longitud de la dirección URL y la información codificada.**&#x200B;_
 
 Según el tamaño del catálogo y, en particular, el tamaño y la profundidad del árbol de categorías, puede que no sea razonable codificar todo el `url_path` de categorías en la dirección URL. En ese caso, la longitud de la dirección URL podría reducirse incluyendo solo el `url_key` de la categoría. Este método admite la mayoría de las características disponibles al usar la categoría `url_path`.
 
