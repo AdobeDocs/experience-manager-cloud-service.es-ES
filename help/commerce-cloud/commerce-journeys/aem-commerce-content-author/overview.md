@@ -4,7 +4,8 @@ description: Comience aquí para obtener un recorrido guiado a través de la cre
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 95%
@@ -43,7 +44,7 @@ Por supuesto, la información de este recorrido puede ser útil para otras perso
 
 Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionarán conocimientos básicos y le permitirán acceder a documentación técnica detallada.
 
-Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. AEM Por lo tanto, si es nuevo en la creación de contenido y Commerce, Adobe recomienda comenzar por el principio y avanzar secuencialmente.
+Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. Por lo tanto, si es nuevo en el contenido de AEM y Commerce, Adobe recomienda empezar por el principio y avanzar secuencialmente.
 
 | # | Artículo | Descripción |
 |---|---|---|

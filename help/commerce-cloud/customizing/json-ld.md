@@ -4,7 +4,8 @@ description: Obtenga información sobre cómo habilitar y comprobar la función 
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
-source-git-commit: 6ee09ab274e26f6972a81e662b78030a71b3fc9b
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 3%
@@ -22,8 +23,8 @@ En esta guía se explica cómo habilitar y comprobar la función JSON+LD en AEM 
 ## Habilitar JSON+LD en la configuración de CIF {#enabling}
 
 De manera predeterminada, la casilla de verificación **Habilitar JSON+LD** no está visible en la configuración de CIF. Para habilitar esta función, el proyecto debe incluir la configuración OSGi necesaria, que permite mostrar la casilla de verificación. Esta configuración permite a los usuarios alternar la compatibilidad con scripts JSON+LD en las páginas de producto.
-Para que la casilla de verificación **Habilitar JSON+LD** esté disponible en la configuración de CIF, agregue la siguiente configuración OSGi al proyecto: &grave;
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;.
+Para que la casilla de verificación **Habilitar JSON+LD** esté disponible en la configuración de CIF, agregue la siguiente configuración OSGi al proyecto: `
+com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
 Para obtener más información sobre cómo agregar esta configuración, consulte [Agrega la configuración para Json-Ld](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) en el repositorio público aem-cif-guides-venia.
 
 Una vez que se agrega e implementa esta configuración, la casilla de verificación se vuelve visible en los ajustes de configuración de CIF y estos son los pasos para habilitar **JSON+LD**:

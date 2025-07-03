@@ -1,24 +1,25 @@
 ---
-title: CIF '[!DNL Live Search] componente de la ventana emergente de'
-description: CIF AEM Uso de componentes de para habilitar el componente  [!DNL Live Search] Popover en un sitio de
+title: '[!DNL Live Search] componente de CIF emergente'
+description: Uso de componentes de CIF para habilitar el componente emergente  [!DNL Live Search] en un sitio AEM
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
 
-# CIF [!DNL Live Search] Componente De Póver De {#live-search-popover}
+# [!DNL Live Search] Componente De CIF Emergente {#live-search-popover}
 
 La ventana emergente [!DNL Live Search] es el elemento que contiene los resultados [!DNL Live Search] mientras escribe en el campo de búsqueda.
-AEM En este tema se describe cómo integrar este componente en el sitio de.
+En este tema se describe cómo integrar este componente en el sitio de AEM.
 
 ## Estructura de archivos {#file-strucure}
 
-CIF Para habilitar el componente de, los archivos deben editarse y crearse.
+Para habilitar el componente CIF, los archivos deben editarse y crearse.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/.content.xml
 

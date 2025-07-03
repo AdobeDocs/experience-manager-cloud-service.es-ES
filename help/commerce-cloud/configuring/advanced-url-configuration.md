@@ -11,7 +11,8 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 9%
@@ -22,11 +23,11 @@ ht-degree: 9%
 
 >[!NOTE]
 >
-> La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. Como resultado, las preocupaciones de SEO deben abordarse en muchos proyectos en Adobe Experience Manager (AEM) as a Cloud Service. Consulte [Prácticas recomendadas para la administración de direcciones URL y SEO](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=es) para obtener más información.
+> La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. Como resultado, las preocupaciones de SEO deben abordarse en muchos proyectos en Adobe Experience Manager (AEM) as a Cloud Service. Consulte [Prácticas recomendadas para la administración de direcciones URL y SEO](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html) para obtener más información.
 
 Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) proporcionan configuraciones avanzadas para personalizar las direcciones URL de las páginas de productos y categorías. Muchas implementaciones personalizan estas direcciones URL con fines de optimización de los motores de búsqueda (SEO). En el siguiente vídeo se explica cómo configurar el `UrlProvider` servicio y las funciones de las [Asignaciones de Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para personalizar las direcciones URL de las páginas de productos y categorías.
 
->[!VIDEO](https://video.tv.adobe.com/v/38582/?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configuración {#configuration}
 
@@ -223,15 +224,15 @@ Las reescrituras de URL también se pueden lograr utilizando el servidor HTTP AE
 
 Como se mencionó antes de seleccionar uno de los formatos predeterminados disponibles, o incluso implementar un formato personalizado, depende en gran medida de las necesidades y requisitos de una tienda. Las siguientes sugerencias pueden ayudar a tomar una decisión informada.
 
-_&#x200B;**Use un formato de dirección URL de página de producto que contenga el SKU.**&#x200B;_
+_**Use un formato de dirección URL de página de producto que contenga el SKU.**_
 
 Los componentes principales de CIF utilizan el SKU como identificador principal en todos los componentes. Si el formato de URL de la página del producto no contiene el SKU, es necesario realizar una consulta GraphQL para resolverlo. Esta resolución puede afectar al tiempo hasta el primer byte. Además, es posible que los compradores puedan encontrar productos por SKU utilizando motores de búsqueda.
 
-_&#x200B;**Use un formato de dirección URL de página de producto que contenga el contexto de categoría.**&#x200B;_
+_**Use un formato de dirección URL de página de producto que contenga el contexto de categoría.**_
 
 Algunas características del proveedor de URL de CIF solo están disponibles cuando se usan formatos de URL de productos que codifican el contexto de categoría, como la categoría `url_key` o la categoría `url_path`. Incluso si estas funciones pueden no ser necesarias para una tienda nueva, el uso de uno de estos formatos de URL al principio ayuda a reducir los esfuerzos de migración en el futuro.
 
-_&#x200B;**Equilibrio entre la longitud de la dirección URL y la información codificada.**&#x200B;_
+_**Equilibrio entre la longitud de la dirección URL y la información codificada.**_
 
 Según el tamaño del catálogo y, en particular, el tamaño y la profundidad del árbol de categorías, puede que no sea razonable codificar todo el `url_path` de categorías en la dirección URL. En ese caso, la longitud de la dirección URL podría reducirse incluyendo solo el `url_key` de la categoría. Este método admite la mayoría de las características disponibles al usar la categoría `url_path`.
 
@@ -256,5 +257,5 @@ El proyecto [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-gui
 ## Recursos adicionales {#additional}
 
 * [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia)
-* [Asignación de recursos de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=es)
+* [Asignación de recursos de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Asignaciones de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

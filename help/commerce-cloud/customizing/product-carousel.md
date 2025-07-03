@@ -1,9 +1,11 @@
 ---
 title: Atributos personalizados para crear un carrusel de productos de CIF
-description: AEM CIF Obtenga información sobre cómo ampliar el componente Carrusel de productos de la actualizando el modelo Sling y personalizando el marcado.
+description: Obtenga información sobre cómo ampliar el componente Carrusel de productos de AEM CIF actualizando el modelo Sling y personalizando el marcado.
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
+exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 4%
@@ -30,7 +32,7 @@ El componente Carrusel de productos se amplía a través de este tutorial. Como 
 
 Puede ampliar la lógica empresarial del carrusel de productos implementando un modelo Sling:
 
-1. CIF En su IDE, vaya al módulo principal a `core/src/main/java/com/venia/core/models/commerce` y cree una interfaz de carrusel personalizada que amplíe la interfaz de carrusel de productos de la:
+1. En su IDE, vaya al módulo principal a `core/src/main/java/com/venia/core/models/commerce` y cree una interfaz CustomCarousel que extienda la interfaz ProductCarousel de CIF:
 
    ```
    package com.venia.core.models.commerce;
@@ -38,7 +40,6 @@ Puede ampliar la lógica empresarial del carrusel de productos implementando un 
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
-
 1. A continuación, cree una clase de implementación `CustomCarouselImpl.java` en `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
 El patrón de delegación para modelos Sling permite que `CustomCarouselImpl` haga referencia al modelo `ProductCarousel` a través de la propiedad `sling:resourceSuperType`:
 
@@ -87,4 +88,4 @@ Para personalizar aún más el marcado:
    ..
    ```
 
-1. AEM Guarde los cambios e implemente las actualizaciones para que se implementen mediante el comando de Maven, desde un terminal de línea de comandos. Podrá ver el valor del atributo personalizado `accessory_gemstone_addon` para los productos seleccionados en la página.
+1. Guarde los cambios e implemente las actualizaciones en AEM con el comando Maven desde un terminal de línea de comandos. Podrá ver el valor del atributo personalizado `accessory_gemstone_addon` para los productos seleccionados en la página.

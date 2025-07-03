@@ -1,37 +1,38 @@
 ---
 title: Introducción a la creación de CIF
-description: CIF Introducción a la creación de.
+description: Introducción a la creación de CIF.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 2%
 
 ---
 
-# AEM CIF Introducción a la creación de {#getting-started}
+# Introducción a la creación de AEM CIF {#getting-started}
 
-Obtenga información acerca de Adobe Experience Manager AEM CIF () y la creación de informes
+Obtenga información sobre la creación de CIF en Adobe Experience Manager (AEM).
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
-AEM En el documento anterior de este recorrido AEM de contenido y Commerce de la, [Información sobre el contenido y Commerce AEM](/help/commerce-cloud/introduction.md), aprendió la teoría básica y los conceptos de CMS sin encabezado y Contenido de la y Commerce.
+En el documento anterior de este recorrido de Contenido y Commerce de AEM, [Obtenga información sobre el Contenido de AEM y Commerce](/help/commerce-cloud/introduction.md), ha aprendido la teoría y los conceptos básicos de Contenido y Commerce de AEM sin encabezado y CMS.
 
 Este artículo se basa en estos aspectos básicos.
 
 ## Objetivo {#objective}
 
-CIF Este documento le ayuda a comprender cómo utilizar la creación de contenido y la creación específica de Commerce. Después de leer, debería haber logrado lo siguiente:
+Este documento le ayuda a comprender cómo utilizar CIF para la creación de contenido y Commerce específicos. Después de leer, debería haber logrado lo siguiente:
 
-* CIF AEM Comprensión de los conceptos de creación de páginas de con el Editor de páginas en
-* AEM Cómo acceder a los datos del catálogo de productos en el uso de selectores de productos y categorías en el
-* AEM Cómo acceder a los datos de contenido y comercio mediante la cabina de productos y el acceso a la plataforma de datos de Omnisearch y el acceso a la plataforma de datos de Omnisearch
+* Comprender los conceptos de creación de CIF mediante el Editor de páginas en AEM
+* Cómo acceder a los datos del catálogo de productos en AEM mediante selectores de productos y categorías
+* Cómo acceder a los datos de contenido y comercio mediante la cabina de productos y AEM Omnisearch
 
-## CIF AEM Creación de en el editor de páginas {#cif-authoring}
+## Creación de CIF en el editor de páginas de AEM {#cif-authoring}
 
-CIF AEM Extendemos el Editor de páginas con capacidades de para acceder a los datos de productos en tiempo real sin salir del contexto, de la siguiente manera:
+CIF amplía el editor de páginas en AEM con funciones para acceder a los datos de productos en tiempo real sin salir del contexto:
 
 Abra el panel lateral y seleccione &quot;Productos&quot; en la lista desplegable.
 ![Seleccionar tipo de producto](assets/asset-finder-overview.png)
@@ -43,7 +44,7 @@ Los productos se pueden soltar en componentes compatibles con lanzamientos de pr
 
 ## Seleccionadores de productos y categorías {#pickers}
 
-AEM AEM Si se requieren datos de producto y categoría en los componentes de comercio o en los cuadros de diálogo de administración de la aplicación, los autores de la aplicación pueden utilizar selectores, que son elementos de la interfaz de usuario, para buscar y seleccionar cómodamente los datos del catálogo de productos.
+Si se requieren datos de producto y categoría en los componentes de comercio o en los cuadros de diálogo de back-office de AEM, los autores de AEM pueden utilizar selectores que son elementos de la interfaz de usuario para buscar y seleccionar cómodamente los datos del catálogo de productos.
 
 ### Selector de productos
 
@@ -84,22 +85,22 @@ Puede abrir las propiedades del producto haciendo clic en el icono de propiedad.
 Todas las propiedades del producto son de solo lectura porque los datos se cargan en tiempo real desde el servidor conectado. El cambio de las propiedades del producto debe realizarse en el sistema back-end, que es el sistema de registro. La pestaña **Variants** solo aparece si el producto tiene variaciones. Al hacer clic en la pestaña, se muestran todas las variaciones con sus atributos.
 ![variantes de productos en la cabina](assets/cockpit-properties-variants.png)
 
-AEM Las pestañas restantes muestran todo el contenido de la asociado con el producto. Estas pestañas se analizan en uno de los siguientes módulos.
+Las pestañas restantes muestran todo el contenido de AEM asociado con el producto. Estas pestañas se analizan en uno de los siguientes módulos.
 
-## AEM Búsqueda de Omnisearch {#omnisearch}
+## AEM Omnisearch {#omnisearch}
 
-AEM El uso de Omnisearch es una manera fácil de encontrar contenido de la mediante la búsqueda de texto completo. CIF AEM Extendemos Omnisearch con la búsqueda de texto completo de catálogos de productos con su contenido asociado de la.
+El uso de Omnisearch es una manera sencilla de encontrar contenido de AEM mediante la búsqueda de texto completo. CIF amplía Omnisearch con la búsqueda de texto completo de catálogos de productos con su contenido de AEM asociado.
 ![elemento de menú de comercio](assets/omnisearch.png)
 
-Omnisearch ejecuta una búsqueda de texto completo en el backend del comercio para encontrar todos los productos relacionados. El resultado se enumera en **Ver todos los productos**. AEM Omnisearch también busca contenido asociado con el producto buscado en el menú de búsqueda de la página de la página de búsqueda. AEM Los resultados se enumeran en las respectivas categorías de. En este ejemplo, un fragmento de contenido está relacionado con el producto.
+Omnisearch ejecuta una búsqueda de texto completo en el backend del comercio para encontrar todos los productos relacionados. El resultado se enumera en **Ver todos los productos**. Omnisearch también busca en AEM contenido asociado al producto buscado. Los resultados se enumeran en las respectivas categorías de AEM. En este ejemplo, un fragmento de contenido está relacionado con el producto.
 
 ## Siguientes pasos {#what-is-next}
 
 Ahora que ha completado esta parte del recorrido, debe:
 
-* CIF Comprensión de los conceptos de creación de páginas mediante el uso del Editor de páginas
-* AEM Cómo acceder al catálogo de productos en el uso de selectores de productos y categorías en el
-* AEM Cómo acceder a los datos de contenido y comercio mediante la cabina de productos y el acceso a la plataforma de datos de Omnisearch y el acceso a la plataforma de datos de Omnisearch
+* Comprender los conceptos de creación de CIF con el editor de páginas
+* Cómo acceder al catálogo de productos en AEM mediante selectores de productos y categorías
+* Cómo acceder a los datos de contenido y comercio mediante la cabina de productos y AEM Omnisearch
 
 Aproveche este conocimiento y continúe con su recorrido revisando el documento [Administrar páginas y plantillas de catálogo de productos](catalog-templates.md), donde aprenderá a crear y personalizar su primera experiencia con el catálogo de productos.
 

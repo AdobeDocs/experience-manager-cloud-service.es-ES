@@ -1,27 +1,28 @@
 ---
-title: CIF '[!DNL Live Search] componente de la página de lista de productos de la lista de productos'
-description: CIF AEM Uso de componentes de la lista de productos para habilitar el componente de página de lista de productos  [!DNL Live Search] en un sitio de la lista de productos de la lista de productos de la
+title: Componente CIF de la página de lista de productos [!DNL Live Search]
+description: Usar componentes de CIF para habilitar el componente  [!DNL Live Search] Página de lista de productos en un sitio de AEM
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
-# CIF [!DNL Live Search] Componente de {#live-search-cif-component}
+# [!DNL Live Search] componente de CIF {#live-search-cif-component}
 
 Live Search para Adobe Commerce ofrece una experiencia de búsqueda rápida, relevante e intuitiva sin coste adicional. Live Search con tecnología Adobe Sensei usa inteligencia artificial y algoritmos de aprendizaje automático para realizar un análisis profundo de los datos agregados del visitante. Cuando se combinan estos datos con su catálogo de Adobe Commerce, las experiencias de compra resultan relevantes y personalizadas.
 
-AEM CIF AEM En este tema se describe cómo utilizar un componente de la lista de productos (PLP) de la clase de la página de la lista de productos () de la clase [!DNL Live Search] para implementar el widget de la página de lista de productos (PLP) en el sitio del usuario.
+En este tema se describe cómo utilizar un componente CIF de AEM para implementar el widget de página de lista de productos (PLP) [!DNL Live Search] en el sitio de AEM.
 
 ## Requisitos previos {#prerequisites}
 
-AEM En este tema se da por hecho que tiene configurado un [entorno de trabajo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es) local.
+En este tema se supone que tiene configurado un [entorno de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es) local.
 
-CIF El componente PLP requiere que se instale [[!DNL Live Search] Popover componente de](live-search-popover.md). El widget PLP requiere una variable de sesión del explorador generada por la ventana emergente.
+El componente PLP requiere que se instale [[!DNL Live Search] Popover CIF component](live-search-popover.md). El widget PLP requiere una variable de sesión del explorador generada por la ventana emergente.
 
 ## Compositor de actualizaciones {#update-composer}
 
@@ -335,7 +336,7 @@ Se deben actualizar varios archivos para habilitar la funcionalidad [!DNL Live S
 
 ## Páginas que no son PLP {#non-plp-pages}
 
-Puede haber algunas categorías en las que se desee la categoría predeterminada o la página del catálogo en lugar de utilizar el widget PLP. AEM En la práctica, estas páginas de categoría deben configurarse manualmente.
+Puede haber algunas categorías en las que se desee la categoría predeterminada o la página del catálogo en lugar de utilizar el widget PLP. En AEM, estas páginas de categoría deben configurarse manualmente.
 
 1. En la página Autor, seleccione una plantilla de página de categoría. _Tienda Venia - Inicio_ > _Página del catálogo_ > _Tienda Venia - Página de categoría_ y selecciona &quot;Ver el aspecto&quot; o crea una nueva plantilla de página.
 

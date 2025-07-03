@@ -4,7 +4,8 @@ description: Obtenga información sobre cómo administrar páginas y plantillas 
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -15,9 +16,9 @@ ht-degree: 2%
 
 Obtenga información sobre cómo administrar páginas y plantillas de catálogo de productos.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de trabajo de creación de contenido y Commerce de la, [Introducción a los conceptos básicos de creación de contenido y AEM](getting-started.md), ha aprendido los conceptos básicos de la creación de contenido y de AEM CIF CIF, y ha aprendido los conceptos básicos de la creación de contenido de la.
+En el documento anterior del recorrido de creación de contenido de AEM y Commerce, [Introducción a los conceptos básicos de creación de AEM CIF](getting-started.md), ha aprendido los conceptos básicos de la creación de CIF.
 
 Este artículo se basa en estos aspectos básicos.
 
@@ -33,7 +34,7 @@ Este documento le ayuda a comprender cómo administrar las páginas y plantillas
 
 La tienda Venia incluye una experiencia típica de catálogo de productos con navegación y aterrizaje, categoría (PLP) y páginas de detalles de producto (PDP).
 
-AEM CIF Las páginas de catálogo se crean dinámicamente mediante una plantilla de catálogo de de datos y datos de producto en tiempo real que se recuperan del extremo de comercio cuando es necesario. Cada catálogo tiene una plantilla genérica para páginas de productos y categorías.
+Las páginas de catálogo se crean dinámicamente mediante una plantilla de catálogo de AEM CIF y datos de productos en tiempo real que se recuperan del extremo de comercio cuando es necesario. Cada catálogo tiene una plantilla genérica para páginas de productos y categorías.
 ![estructura de catálogo](assets/catalog-structure.png)
 
 El componente de navegación muestra el contenido y las páginas del catálogo. Es posible mostrar la página de aterrizaje del catálogo o las categorías de primer nivel en la navegación. Al pasar el ratón por encima de una categoría, se mostrarán las categorías de segundo nivel como una segunda línea.
@@ -63,7 +64,7 @@ Las plantillas se pueden editar abriendo directamente la página de la plantilla
 
 ### Plantillas específicas de categoría o producto {#specific}
 
-CIF La aplicación admite varias plantillas en solo unos clics. Para crear otra plantilla, seleccione la plantilla genérica de la categoría correspondiente y cree una página con la acción **Crear**.
+CIF admite varias plantillas en solo unos clics. Para crear otra plantilla, seleccione la plantilla genérica de la categoría correspondiente y cree una página con la acción **Crear**.
 
 ![crear página de plantilla](assets/create-template-page.png)
 
@@ -109,11 +110,11 @@ Ahora que ha completado esta parte del recorrido, debe:
 * cómo funcionan las plantillas genéricas
 * ha creado una plantilla individual
 
-Aproveche este conocimiento y continúe con su recorrido AEM revisando el documento [Administrar experiencias de catálogo de productos clasificados](staged-catalog.md), donde aprenderá a trabajar con datos de productos clasificados y lanzamientos de productos en fase de ejecución ().
+Aproveche este conocimiento y continúe con su recorrido revisando el documento [Administrar experiencias de catálogo de productos clasificados](staged-catalog.md), donde aprenderá a trabajar con datos de productos clasificados y lanzamientos de AEM.
 
 ## Recursos adicionales {#additional-resources}
 
 Aunque se recomienda pasar a la siguiente parte del recorrido revisando el documento [Administrar experiencias del catálogo de productos clasificados](staged-catalog.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado:
 
 * [Creación de páginas de múltiples productos y categorías](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Guía de migración para el Experience Manager Cloud Service AEM](/help/commerce-cloud/migration.md) - Cómo migrar al complemento Commerce integration framework CIF de la () desde una versión antigua
+* [Guía de migración para Experience Manager Cloud Service](/help/commerce-cloud/migration.md): Migración al complemento AEM Commerce integration framework (CIF) desde una versión antigua

@@ -1,17 +1,18 @@
 ---
-title: Componente y GraphQL Borrar caché
+title: Borrar caché del componente y de GraphQL
 description: Obtenga información sobre cómo habilitar y comprobar la función de borrar caché en AEM CIF.
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '883'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# Componente y GraphQL Borrar caché {#clear-cache}
+# Borrar caché del componente y de GraphQL {#clear-cache}
 
 Este documento proporciona una guía completa sobre la activación y verificación de la función clear-cache en AEM CIF.
 
@@ -31,7 +32,6 @@ De forma predeterminada, la función de borrado de caché está desactivada en l
 * Habilite la escucha para borrar la caché de cada instancia de AEM (publicación y autor) agregando la configuración `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` en su proyecto como se muestra [aquí](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
    * La configuración debe habilitarse tanto para instancias de autor como de publicación.
    * Habilitar la caché de Dispatcher (opcional): puede habilitar la configuración Borrar caché de Dispatcher estableciendo la propiedad `enableDispatcherCacheInvalidation` en true en la configuración anterior. Esto proporciona funcionalidad para borrar la caché de Dispatcher.
-
      >[!NOTE]
      >
      > Esto solo funciona con instancias de publicación.
@@ -64,7 +64,6 @@ Ahora, para comprobar si las cachés se están borrando correctamente:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 Si todo va bien, los nuevos cambios se reflejan en cada instancia. Si los cambios no están visibles en la instancia de publicación, intente acceder a las páginas PLP y PDP relevantes en una ventana privada o de incógnito del explorador.
 
 >[!NOTE]
