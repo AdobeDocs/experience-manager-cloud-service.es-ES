@@ -7,9 +7,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 source-git-commit: 0656e923c4b50d0554780ecf56dd08302a165fa9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1113'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -356,12 +356,12 @@ Para comprobar que los componentes principales de Formularios adaptables están 
 
    Si existen dependencias, los componentes principales de Formularios adaptables se habilitan para su entorno.
 
-### ¿Por qué los formularios basados en componentes principales no se pueden procesar en el proyecto?
+### ¿Por qué los formularios basados en componentes principales no se pueden representar en el proyecto?
 
-Es posible que los formularios basados en componentes principales no se puedan procesar debido a una discrepancia de versiones entre el paquete de componentes principales de Forms y la versión incluida en el arquetipo de proyecto. Este problema suele ocurrir cuando la versión especificada en el tipo de archivo del proyecto es igual o superior a la versión empaquetada con el paquete de componentes principales de Forms. Para resolver este problema, realice una de las siguientes acciones:
+Es posible que los formularios basados en componentes principales no se puedan representar debido a una discrepancia de versiones entre el paquete de componentes principales de Forms y la versión incluida en el arquetipo de proyecto. Este problema suele ocurrir cuando la versión especificada en el arquetipo del proyecto es igual o superior a la versión empaquetada con el paquete de componentes principales de Forms. Para resolver este problema, realice una de las siguientes acciones:
 
-* Utilice una versión inferior del paquete de componentes principales de Forms en el tipo de archivo del proyecto.
-* Elimine la dependencia de los componentes principales de Forms del tipo de archivo del proyecto, ya que la versión requerida ya se incluye con AEM as a Cloud Service. El paquete de componentes principales de Forms está empaquetado con AEM as a Cloud SDK a partir de la versión 20133, por ejemplo, `AEM SDK v2025.3.20133.20250325T063357Z-250300`.
+* Utilice una versión inferior del paquete de componentes principales de Forms en el arquetipo del proyecto.
+* Elimine la dependencia de los componentes principales de Forms del arquetipo del proyecto, ya que la versión requerida ya está incluida con AEM as a Cloud Service. El paquete de componentes principales de Forms está empaquetado con el SDK de AEM as a Cloud a partir de la versión 20133, por ejemplo, `AEM SDK v2025.3.20133.20250325T063357Z-250300`.
 
 >[!MORELIKETHIS]
 >
