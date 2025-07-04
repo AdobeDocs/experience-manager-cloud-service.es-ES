@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
 role: Admin
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: 8a9438f095a060ebd334f627c681e7e1473ce3c9
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
@@ -49,11 +49,12 @@ Además, se admiten propiedades de campo de cuadro de diálogo estándar como `n
 >[!CAUTION]
 >
 >El componente `cifproductfield` requiere clientlib `cif.shell.picker`. Para agregar clientlib a un cuadro de diálogo, puede utilizar la propiedad extraClientlibs.
->&#x200B;>[!CAUTION]
+
+>[!CAUTION]
 >
 >A partir de la versión 2.0.0 de los componentes principales de CIF, se quitó la compatibilidad con `id` y se reemplazó con `uid`. Adobe recomienda usar `sku` o `slug` como identificador de producto. Adobe sigue admitiendo `id` solamente en proyectos que usan la versión 1.x de los componentes principales de CIF.
 
-Se puede encontrar un ejemplo de trabajo completo de `cifproductfield` en el proyecto de [componentes principales de CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consulte también [Personalización de cuadros de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=es#customizing-dialogs) en la documentación de los componentes principales de AEM.
+Se puede encontrar un ejemplo de trabajo completo de `cifproductfield` en el proyecto de [componentes principales de CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consulte también [Personalización de cuadros de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) en la documentación de los componentes principales de AEM.
 
 ## Selector de categoría {#category-picker}
 
@@ -78,8 +79,9 @@ Además, se admiten propiedades de campo de cuadro de diálogo estándar como `n
 
 >[!CAUTION]
 >
->Igual que el componente `cifproductfield`, el componente `cifcategoryfield` también requiere la clientlib `cif.shell.picker`. Para agregar clientlib a un cuadro de diálogo, puede utilizar la propiedad `extraClientlibs`. Consulte [Personalización de cuadros de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=es#customizing-dialogs) en la documentación de los componentes principales de AEM.
->&#x200B;>[!CAUTION]
+>Igual que el componente `cifproductfield`, el componente `cifcategoryfield` también requiere la clientlib `cif.shell.picker`. Para agregar clientlib a un cuadro de diálogo, puede utilizar la propiedad `extraClientlibs`. Consulte [Personalización de cuadros de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) en la documentación de los componentes principales de AEM.
+
+>[!CAUTION]
 >
 >A partir de la versión 2.0.0 de los componentes principales de CIF, se quitó la compatibilidad con `id` y se reemplazó con `uid`. Adobe recomienda usar `uid` o `urlPath` como identificador de categoría. Adobe seguirá admitiendo `id` y `idAndUrlPath` solo en proyectos que utilicen la versión 1.x de los componentes principales de CIF.
 
