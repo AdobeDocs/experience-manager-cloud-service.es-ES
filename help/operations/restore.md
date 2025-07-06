@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo restaurar el contenido de AEM as a
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fee4921b7087fd64b2f65b086998aedde8aaafb0
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1339'
 ht-degree: 49%
 
 ---
@@ -27,7 +27,7 @@ Cloud Manager ofrece dos tipos de copias de seguridad desde las que puede restau
 * **Punto en el tiempo (PIT):** Este tipo restaura a partir de las copias de seguridad continuas del sistema de las últimas 24 horas desde el momento actual.
 * **Última semana:** este tipo restaura de las copias de seguridad del sistema en los últimos siete días, excluyendo las 24 horas anteriores.
 
-AEM En ambos casos, la versión del código personalizado y la versión de la permanecen sin cambios.
+En ambos casos, la versión del código personalizado y la versión de AEM permanecen sin cambios.
 
 >[!TIP]
 >
@@ -56,7 +56,7 @@ De forma predeterminada, ningún usuario tendrá permiso para ejecutar restaurac
 
 1. Cree un perfil de producto con un nombre expresivo que haga referencia a la restauración de contenido.
 1. Proporcione el permiso **Acceso al programa** en el programa requerido.
-1. Proporcione el permiso **Restauración de contenido** en el entorno necesario o en todos los entornos del programa, según el caso de uso.
+1. Proporcione el permiso **Crear restauración del entorno** en el entorno requerido o en todos los entornos del programa, según el caso de uso.
 1. Asigne usuarios a ese perfil.
 
 Para obtener más información sobre la administración de permisos, consulte la documentación de [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md).
@@ -93,7 +93,7 @@ En primer lugar, determine el lapso de tiempo del contenido que desea restaurar.
 
    ![Copias de seguridad disponibles](assets/backup-available.png)
 
-1. AEM Busque la copia de seguridad que desea restaurar mediante el icono de información para ver información sobre la versión del código y el lanzamiento incluidos en dicha copia de seguridad y tenga en cuenta las implicaciones de una restauración cuando [elija la copia de seguridad](#choosing-the-right-backup).
+1. Busque la copia de seguridad que desea restaurar mediante el icono de información para ver información sobre la versión del código y la versión de AEM incluidos en la copia de seguridad y tenga en cuenta las implicaciones de una restauración cuando [elija la copia de seguridad](#choosing-the-right-backup).
 
    ![Información de copia de seguridad](assets/backup-info.png)
 
@@ -114,7 +114,7 @@ Cuando la restauración se complete correctamente, el entorno hará lo siguiente
 
 ## Elección de la copia de seguridad adecuada {#choosing-backup}
 
-El proceso de restauración de autoservicio de Cloud Manager AEM solo restaura el contenido a los recursos de la. Por este motivo, debe tener en cuenta cuidadosamente los cambios que se hayan realizado en el código entre el punto de restauración deseado y el momento actual revisando el historial de compromiso entre el ID de compromiso actual y el que se está restaurando.
+El proceso de restauración de autoservicio de Cloud Manager solo restaura el contenido en AEM. Por este motivo, debe tener en cuenta cuidadosamente los cambios que se hayan realizado en el código entre el punto de restauración deseado y el momento actual revisando el historial de compromiso entre el ID de compromiso actual y el que se está restaurando.
 
 Existen varios escenarios.
 
