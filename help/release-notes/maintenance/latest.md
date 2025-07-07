@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 26c42152bdebc069dd60cc4f5f070276eb1a1f46
 workflow-type: tm+mt
 source-wordcount: '1780'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -146,7 +146,7 @@ La activación de funcionalidades 2025.7.0 proporciona el conjunto completo de f
 
 ### Problemas conocidos {#known-issues-21331}
 
-* SITES-33177: los estilos de sección almacenados como cadenas separadas por comas se rompen.
+* SITES-33177: los estilos de sección almacenados como cadenas separadas por comas están dañados.
 * SITES-33262: los bloques sin propiedad de nombre producen un error en la representación y publicación de la página.
 
 ### Características y API obsoletas {#deprecated-21331}
