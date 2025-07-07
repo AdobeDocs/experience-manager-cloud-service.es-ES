@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 67a69970399298c3d35f1851111a0e586f32ab4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -455,7 +455,7 @@ Las propiedades para los siguientes PID de componentes de OSGi están en desuso 
 
 ### Configuraciones de OSGi no modificables {#unmodifiable-osgi-properties}
 
-Las propiedades de los siguientes PID de componente OSGi no se pueden modificar, por lo que no deben configurarse.
+Las propiedades de los siguientes PID de componentes OSGi no se pueden modificar, por lo que no deben configurarse.
 
 | **ID de componente de OSGI** | **Propiedades no modificables** |
 |---|---|
@@ -475,7 +475,7 @@ Las propiedades de los siguientes PID de componente OSGi no se pueden modificar,
 
 ### Futuras restricciones de propiedad de OSGi aplicadas {#future-restrictions-osgi-properties}
 
-En el futuro, Adobe aplicará las siguientes restricciones de propiedades OSGi. Para los PID mencionados, solo se permite configurar las propiedades enumeradas.
+En el futuro, Adobe aplicará las siguientes restricciones a las propiedades de OSGi. Para los PID mencionados, solo se permite configurar las propiedades enumeradas.
 
 | PID de componente de OSGi |   | Requerido | Tipo | Restricción (si es aplicable) |
 |---|---|---|---|---|
