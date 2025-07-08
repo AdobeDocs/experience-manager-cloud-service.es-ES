@@ -5,10 +5,10 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
+source-git-commit: ebbf38563be65c28384276f7a0baa100f9f384b2
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 93%
+source-wordcount: '1620'
+ht-degree: 90%
 
 ---
 
@@ -202,10 +202,6 @@ Para comparar una versión anterior con la página actual, haga lo siguiente:
 
 Deformación de tiempo es una función diseñada para simular el estado *publicado* de una página en periodos específicos en el pasado.
 
->[!TIP]
->
->[La Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro](/help/sites-cloud/authoring/launches/preview.md).
-
 Debido a que la creación de contenido es un proceso continuo y colaborativo, el propósito de Deformación de tiempo es permitir que los creadores rastreen el sitio web publicado a lo largo del tiempo para comprender cómo ha cambiado el contenido. Esta función emplea las versiones de página para determinar el estado del entorno de publicación.
 
 Para usar esta función, haga lo siguiente:
@@ -214,6 +210,16 @@ Para usar esta función, haga lo siguiente:
 * Significa que la versión mostrada se creó o activó *antes del* punto temporal seleccionado en Deformación de tiempo.
 * Al navegar a una página que se haya eliminado, también se procesa, siempre que las versiones anteriores de la página estén disponibles en el repositorio.
 * Si no se encuentran versiones publicadas, Deformación de tiempo volverá al estado actual de la página en el entorno de creación (para evitar una página de error/404, lo que impediría la navegación).
+
+>[!NOTE]
+>
+>Deformación de tiempo funciona, y está pensado para utilizarse, para páginas de AEM: versiones para el historial y lanzamientos para estados de contenido futuros.
+>
+>No funciona para lanzamientos anidados o cuando se utilizan fragmentos de experiencia.
+
+>[!TIP]
+>
+>[La Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro](/help/sites-cloud/authoring/launches/preview.md).
 
 ### Utilizar la Deformación de tiempo {#using-timewarp}
 
@@ -240,6 +246,7 @@ Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en 
 * **Las versiones eliminadas afectan a la función Deformación de tiempo**: si las versiones se eliminan del repositorio, Deformación de tiempo no puede mostrar resultados correctos.
 * **Deformación de tiempo es de solo lectura**: no se puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, deberá hacerlo manualmente mediante la [restauración](#revert-to-a-version).
 * **Deformación de tiempo se basa en el contenido de la página**: si han cambiado los elementos para procesar el sitio web, como código, CSS y recursos, la vista difiere de la original. Estos elementos no tienen versiones en el repositorio.
+* Deformación de tiempo no funciona para inicios anidados o cuando se utilizan fragmentos de experiencia.
 
 >[!CAUTION]
 >
