@@ -1,20 +1,20 @@
 ---
-title: AEM Edición del contenido de la página con el editor de páginas de la
-description: AEM El editor de páginas de es una potente herramienta para crear contenido.
+title: Edición del contenido de la página con el editor de páginas de AEM
+description: El editor de páginas de AEM es una potente herramienta para crear contenido.
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1628'
 ht-degree: 34%
 
 ---
 
-# AEM Edición del contenido de la página con el editor de páginas de la {#edit-content}
+# Edición del contenido de la página con el editor de páginas de AEM {#edit-content}
 
-AEM El editor de páginas de es una potente herramienta para crear el contenido de una página. Aprenda a utilizarlo para arrastrar y soltar contenido y editar contenido in situ.
+El editor de páginas de AEM es una potente herramienta para crear el contenido de una página. Aprenda a utilizarlo para arrastrar y soltar contenido y editar contenido in situ.
 
 ## Información general {#overview}
 
@@ -24,13 +24,17 @@ Hay tres acciones básicas que puede realizar en el editor de páginas para edit
 1. [Agregando nuevos recursos](#adding-asset) arrastrándolos y soltándolos en la página.
 1. [Editando componentes in situ](#edit-in-place) que ya existen en la página.
 
-AEM El editor de páginas de proporciona una interfaz de usuario intuitiva para realizar estas tareas, además de proporcionar acceso a funciones más avanzadas.
+El editor de páginas de AEM proporciona una interfaz de usuario intuitiva para realizar estas tareas, además de dar acceso a funciones más avanzadas.
 
 Además, el editor le permite organizar el contenido existente en su página permitiéndole lo siguiente
 
 * [Mover componentes](#moving-components)
 * [Editar diseño del componente](#editing-component-layout)
 * [Editar herencia del componente](#inherited-components)
+
+>[!NOTE]
+>
+>El equipo del proyecto puede personalizar el editor si es necesario. Consulte [Personalización de la creación de páginas](/help/implementing/developing/extending/page-authoring.md) para obtener más información.
 
 ## Agregando componentes {#adding-components}
 
