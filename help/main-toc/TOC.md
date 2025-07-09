@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c23a9512f8599394ee589ce249cc566f85606456
-workflow-type: ht
-source-wordcount: '6325'
-ht-degree: 100%
+source-git-commit: 82367f603eede5de4cdca25bb2ef11650a0df41d
+workflow-type: tm+mt
+source-wordcount: '6337'
+ht-degree: 99%
 
 ---
 
@@ -1068,7 +1068,9 @@ ht-degree: 100%
       + [Redireccionamientos](/help/edge/docs/redirects.md)
    + Creación de formularios  {#build-forms}
       + [Información general](/help/edge/docs/forms/overview.md)
+      + [Configuración del envío para Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Preguntas frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + [Prácticas recomendadas para crear formularios](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md)
       + Creación de WYSIWYG {#universal-editor}
          + [Introducción al editor universal de formularios para Edge Delivery Services: Guía completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Cómo empezar a crear con el editor universal: tutorial paso a paso](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
