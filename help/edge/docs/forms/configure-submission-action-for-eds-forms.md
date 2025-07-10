@@ -46,6 +46,7 @@ El [servicio de envío de Forms](/help/forms/forms-submission-service.md) es un 
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
+
 ![Envío de Forms](/help/forms/assets/eds-fss.png)
 
 Este diagrama de flujo muestra cómo el servicio de envío de Forms toma los datos enviados y los envía a una hoja de cálculo configurada o a un correo electrónico.
@@ -144,6 +145,7 @@ La página donde desea que aparezca el formulario (llamémoslo &quot;Página de 
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
+
 ![Arquitectura de formulario incrustado](/help/forms/assets/eds-embedded-form.png)
 Este diagrama muestra la página del host recuperándose de HTML desde Form Source y mostrándose. El envío utiliza el extremo configurado del formulario original.
 
