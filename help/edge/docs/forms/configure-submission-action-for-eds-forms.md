@@ -3,13 +3,13 @@ title: Configuración de acciones de envío para AEM Forms con Edge Delivery Ser
 description: Obtenga información sobre cómo configurar acciones de envío en AEM Forms mediante Edge Delivery Services. Elija entre el servicio de envío de Forms y la acción de envío de publicación de AEM para gestionar los datos de formulario de forma segura y eficaz.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 1%
 
 ---
-
 
 # Configuración de los envíos de formularios: ¿Dónde se dirigen los datos?
 
@@ -46,7 +46,6 @@ El [servicio de envío de Forms](/help/forms/forms-submission-service.md) es un 
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
-
 ![Envío de Forms](/help/forms/assets/eds-fss.png)
 
 Este diagrama de flujo muestra cómo el servicio de envío de Forms toma los datos enviados y los envía a una hoja de cálculo configurada o a un correo electrónico.
@@ -145,7 +144,6 @@ La página donde desea que aparezca el formulario (llamémoslo &quot;Página de 
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
-
 ![Arquitectura de formulario incrustado](/help/forms/assets/eds-embedded-form.png)
 Este diagrama muestra la página del host recuperándose de HTML desde Form Source y mostrándose. El envío utiliza el extremo configurado del formulario original.
 

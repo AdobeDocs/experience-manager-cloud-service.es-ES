@@ -3,7 +3,8 @@ title: Prácticas recomendadas para diseñar Forms de alto rendimiento
 description: Conozca las prácticas recomendadas esenciales para crear formularios fáciles de usar, accesibles y de alto rendimiento con AEM Forms. Mejore la calidad de los datos, la experiencia del usuario y las tasas de éxito de envío.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
