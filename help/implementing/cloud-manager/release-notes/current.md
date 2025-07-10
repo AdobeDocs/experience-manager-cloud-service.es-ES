@@ -49,7 +49,7 @@ Actualmente están disponibles las siguientes oportunidades:
 
 Vuelva rápidamente a una implementación anterior si el código de origen del cliente más reciente no funciona como se esperaba; no es necesario volver a ejecutar la canalización completa ni revertir las confirmaciones manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaure el código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos anterior muestra la opción **Restaurar**>**Código anterior implementado**para un entorno seleccionado.*
+![Restaure el código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos anterior muestra la opción **Restaurar**>**Código anterior implementado**&#x200B;para un entorno seleccionado.*
 
 
 ![Restaurar código anterior implementado en el cuadro de diálogo](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
@@ -57,7 +57,7 @@ Vuelva rápidamente a una implementación anterior si el código de origen del c
 
 
 ![Restaurando activación](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**hasta que finalice la implementación.*
+*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**&#x200B;hasta que finalice la implementación.*
 
 
 ![Versión del código Source en uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vista de detalles del entorno, vista arriba, ahora también muestra la versión activa del código fuente en uso.*
