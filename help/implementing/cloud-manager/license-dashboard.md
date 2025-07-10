@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
+source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 24%
+source-wordcount: '938'
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager proporciona un tablero para facilitar la visualización de las aut
 
 >[!IMPORTANT]
 >
->El tablero de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
+>El tablero de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
 >
 >Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte [Navegación por la interfaz de usuario de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -77,6 +77,8 @@ La ventana **Detalles de uso de sitios** presenta gráficos que ofrecen una desc
 La parte izquierda de la ventana presenta un gráfico circular que muestra el desglose del contrato para el año de contrato seleccionado en el menú desplegable **Ver año de contrato**.
 
 El lado derecho de la ventana presenta un gráfico de áreas que muestra el uso desglosado por programa a lo largo del tiempo para el año de contrato seleccionado. Al pasar el ratón por encima, aparece una ventana emergente con detalles por programa para el momento seleccionado.
+
+Cerca de la esquina superior derecha de la página del panel, puede hacer clic en **Descargar informe** para exportar los datos como archivo CSV. Esta descarga simplifica el análisis y el uso compartido de las tendencias de uso.
 
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
