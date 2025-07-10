@@ -4,7 +4,7 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: ff500e08e31e53f5452eed6cfe06539cabe2ecdd
+source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 62%
@@ -18,7 +18,7 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 21484 {#21484}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 21484, que se publicó el miércoles, 08 de julio de 2025. La versión de mantenimiento anterior fue la 21331.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 21484, que se publicó el viernes, 10 de julio de 2025. La versión de mantenimiento anterior fue la 21331.
 
 La activación de funcionalidades 2025.7.0 proporciona el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
