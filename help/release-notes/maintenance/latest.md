@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ Ninguna.
 
 #### Guías de AEM {#guides-21484}
 
-* GUIDES-29781: cuando se agrega un comentario XML dentro de un elemento en la vista de Source, los espacios iniciales y finales alrededor del comentario se pierden al cambiar de vista.
-* GUIDES-29078: al abrir un tema en la vista Autor después de actualizar el explorador, las etiquetas aplicadas anteriormente en el panel Propiedades del archivo no se conservan y la adición de nuevas etiquetas sobrescribe las existentes, especialmente cuando hay un gran número de etiquetas disponibles para su selección.
-* GUIDES-28214: Los intentos de crear tareas de revisión a través del flujo de trabajo de AEM fallan de forma consistente porque no se crea el nodo de revisión.
-* GUIDES-28104: al publicar un mapa DITA con el atributo `chunk=to-content`, se crean nodos JCR duplicados en la nueva salida de AEM Sites, lo que da como resultado una estructura de contenido redundante en AEM Sites.
-* GUIDES-29065, GUIDES-28793: Los problemas de rendimiento como tiempos de carga más largos y tiempos de espera intermitentes se observan al trabajar con colecciones grandes.
+* GUIDES-29781: cuando se añade un comentario XML dentro de un elemento en la vista Fuente, los espacios iniciales y finales alrededor del comentario se pierden al cambiar de vista.
+* GUIDES-29078: al abrir un tema en la vista Autor después de actualizar el explorador, las etiquetas aplicadas anteriormente en el panel Propiedades de archivo no se conservan y la adición de nuevas etiquetas sobrescribe las existentes, especialmente cuando hay un gran número de etiquetas disponibles para su selección.
+* GUIDES-28214: los intentos de crear tareas de revisión a través del flujo de trabajo de AEM fallan de forma consistente porque el nodo de revisión no está creado.
+* GUIDES-28104: al publicar un mapa DITA con el atributo `chunk=to-content`, se crean nodos JCR duplicados en la nueva salida de AEM Sites, lo que da lugar a una estructura de contenido redundante en AEM Sites.
+* GUIDES-29065, GUIDES-28793: se observan problemas de rendimiento como tiempos de carga más largos y tiempos de espera intermitentes al trabajar con colecciones grandes.
 
 Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en la versión, consulte la [hoja de ruta de la versión de Experience Manager Guides](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
