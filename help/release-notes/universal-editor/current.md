@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2025.06.19 del editor universal
-description: Estas son las notas de la versión 2025.06.19 del editor universal.
+title: Notas de la versión 2025.07.09 del editor universal
+description: Estas son las notas de la versión 2025.07.09 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 5ffae9e548ca952975b3ea805808e227102ec99f
-workflow-type: ht
-source-wordcount: '297'
-ht-degree: 100%
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 25%
 
 ---
 
 
-# Notas de la versión 2025.06.19 del editor universal {#release-notes}
+# Notas de la versión 2025.07.09 del editor universal {#release-notes}
 
-Estas son las notas de la versión del 19 de junio de 2025 del editor universal.
+Estas son las notas de la versión del editor universal del 9 de julio de 2025.
 
 >[!TIP]
 >
@@ -22,29 +22,35 @@ Estas son las notas de la versión del 19 de junio de 2025 del editor universal.
 
 ## Novedades {#what-is-new}
 
-* **Compatibilidad con varios campos en el carril Propiedades** -
-  Ahora se puede usar [el componente contenedor](/help/implementing/universal-editor/field-types.md#container) para crear propiedades de varios campos.
-* **Compatibilidad con propiedades anidadas**: el campo [`name`](/help/implementing/universal-editor/field-types.md#nesting) ahora admite rutas para habilitar el anidamiento de propiedades.
-* **Panel derecho redimensionable**: ahora se puede cambiar el tamaño del panel lateral para tener en cuenta el contenido más largo que se muestra en el panel lateral.
+* [Al hacer clic en el botón de barra de herramientas **Agregar** en los contenedores,](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) si solo se permite un tipo de componente, se inserta inmediatamente sin que sea necesario seleccionar en el menú desplegable.
+* [La opción de la barra de herramientas del encabezado de autenticación](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) se ha colocado detrás de una opción de característica, ya que no resulta útil en la mayoría de los casos.
+* [Dado que no se permite anidar contenedores para varios campos en el panel de propiedades,](/help/implementing/universal-editor/field-types.md#fields) la rutina de procesamiento ahora filtra los contenedores anidados de la lista de campos para evitar el anidamiento no válido.
 
 ## Funciones de adopción anticipada {#early-adopter}
 
-Para tener la oportunidad de probar algunas de las próximas funciones, forme parte del programa de adopción anticipada de Adobe.
+Si le interesa probar estas próximas funciones y compartir sus comentarios, envíe un correo electrónico a Customer Success Manager de Adobe desde la dirección de correo electrónico asociada a su Adobe ID.
 
-### **Deshacer/Rehacer** {#undo-redo}
+### Nuevo RTE {#new-rte}
+
+El nuevo RTE de ProseMirror, con un selector de páginas en el cuadro de diálogo de vínculos, ya está disponible en el panel derecho.
+
+### Deshacer/Rehacer {#undo-redo}
 
 Deshacer y rehacer ya está disponible para los autores de contenido del editor universal.
 
 * Esto incluye las ediciones realizadas en el contexto y las realizadas a través del panel Propiedades, así como la adición (o duplicación), el movimiento y la eliminación de bloques.
 * Deshacer y rehacer está limitado a la sesión actual del explorador.
 
-Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a su Adobe Customer Success Manager desde la dirección de correo electrónico asociada a su ID de Adobe.
-
 ## Otras mejoras {#other-improvements}
 
-* Se han corregido errores de colisión de claves de recursos al mover bloques entre contenedores.
-* Se ha corregido un problema que hacía que fallara la duplicación del último bloque de un contenedor.
-* La lista desplegable Añadir acción ahora solo enumera los componentes que tienen un complemento adecuado definido en el archivo `component-definition.json`.
-* La fecha de modificación utilizada por el cuadro de diálogo de publicación se corrigió donde, en algunas circunstancias, las páginas no se reconocieron como modificadas y no se volvieron a publicar.
-* Se ha corregido el comportamiento de herencia de MSM en el que al editar un contenedor se cancelaba la herencia para nodos secundarios.
-* `fetchUrl` se ha corregido y se han restaurado los bloques en movimiento de un contenedor a otro.
+* Se ha corregido un problema en el cual la eliminación de una sola referencia de recurso no era posible al editar mediante el carril de propiedades.
+* Se ha corregido un problema en el cual el panel Propiedades se cargaba indefinidamente porque las referencias de recursos se convertían automáticamente en matrices, lo que provocaba un estado de carga infinito.
+   * Los valores de referencia de recursos ahora se almacenan tal cual, sin conversión automática a matrices.
+* Se corrigió un problema en el cual el panel Propiedades no mostraba campos cuando se definía un modelo, pero no contenía contenido.
+   * Esto provocaba un estado de carga infinito para el panel Propiedades para respuestas de detalle vacías, como fragmentos de contenido vacíos.
+* La configuración de ESLint se ha refactorizado para garantizar la compatibilidad con la versión 9, incluidas las reglas actualizadas y la compatibilidad con complementos.
+
+## Degradaciones {#deprecations}
+
+* El componente `text-input` ya está oficialmente obsoleto.
+   * En `model-definition.json`, utilice el componente Texto para crear entradas de texto para el panel Propiedades.

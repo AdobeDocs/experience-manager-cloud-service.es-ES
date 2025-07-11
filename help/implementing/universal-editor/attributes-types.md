@@ -4,9 +4,9 @@ description: Obtenga información sobre los atributos de datos y los tipos de el
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1a122fee45fadfb32239d9407aeac0a59b4b2470
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 45%
 
 ---
@@ -52,6 +52,6 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 * No se requiere directamente en la etiqueta donde está establecido `data-aue-type`.
 * En caso de que no se establezca, se utilizará el atributo `data-aue-resource` de como elemento principal más cercano.
 
-`data-aue-prop` es necesario siempre que desee editar en el contexto el, excepto para un contenedor en el que es opcional (si se establece, el contenedor es un fragmento de contenido y la prop apunta a un campo de referencias múltiples).
+`data-aue-prop` es necesario siempre que desee editar en contexto, excepto en el caso de un contenedor en el que es opcional (si se establece, el contenedor es un fragmento de contenido y la prop apunta a un campo de referencias múltiples).
 
 * `data-aue-prop` es el atributo que se va a actualizar para la clave principal de `data-aue-resource`.

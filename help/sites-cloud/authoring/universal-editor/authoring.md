@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2252'
 ht-degree: 11%
 
 ---
@@ -129,6 +129,8 @@ Según las necesidades del flujo de trabajo, es posible que desee editar el frag
 1. A continuación, seleccione el icono de añadir en el panel de propiedades.
 
    ![Seleccionar icono de agregar](assets/add-icon.png)
+
+1. Si se permite más de un componente para el contenedor, seleccione el que desee insertar en la lista desplegable. Si solo se permite un componente, se inserta automáticamente.
 
 El componente se inserta en el contenedor y se puede editar en el editor.
 

@@ -4,9 +4,9 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1568'
 ht-degree: 11%
 
 ---
@@ -101,7 +101,7 @@ Un objeto de campo tiene la siguiente definición de tipo.
 | `readOnly` | `boolean` | Es el campo de solo lectura | No |
 | `hidden` | `boolean` | El campo está oculto de forma predeterminada | No |
 | `condition` | `RulesLogic` | Regla para mostrar u ocultar el campo según una [condición](/help/implementing/universal-editor/customizing.md#conditionally-hide) | No |
-| `multi` | `boolean` | ¿El campo es un campo múltiple? | No |
+| `multi` | `boolean` | ¿El campo es un campo múltiple<br/>Tenga en cuenta que no se permite anidar contenedores para campos múltiples en el panel de propiedades | No |
 | `validation` | `ValidationType` | Regla o reglas de validación para el campo | No |
 | `raw` | `unknown` | Datos sin procesar que el componente puede utilizar | No |
 
@@ -289,7 +289,7 @@ Similar a un booleano, un tipo de componente de grupo de casillas de verificaci�
 
 #### Contenedor {#container}
 
-Un tipo de componente contenedor permite agrupar componentes, incluida la compatibilidad con varios campos. Ofrece una configuración adicional.
+Un tipo de componente contenedor permite agrupar componentes, incluida la compatibilidad con varios campos. Ofrece una configuración adicional. Tenga en cuenta que no se permite anidar contenedores para campos múltiples en el panel de propiedades
 
 | Configuración | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
