@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2488'
 ht-degree: 36%
 
 ---
@@ -161,9 +161,13 @@ Si desea proporcionar [redes avanzadas](/help/security/configuring-advanced-netw
    ![Ver detalles del entorno](assets/view-environment-details.png)
 
 
-## Restaurar contenido de un entorno (Alpha) {#restore-environment}
+## Restaurar contenido de un entorno {#restore-environment}
 
-Ver [Restauración de contenido en AEM as a Cloud Service](/help/operations/restore.md).
+Ver [Restaurar contenido en AEM as a Cloud Service](/help/operations/restore.md).
+
+## Restaurar el código anterior implementado {#restore-previous-code-deployed}
+
+Ver [Restaurar código anterior implementado en AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
 
 ### Acceso al servicio de vista previa {#access-preview-service}
@@ -304,7 +308,7 @@ Se abre una nueva pestaña en el explorador con la página de inicio de sesión 
 
 Solo un usuario con la función **Desarrollador** tendrá acceso a la **Consola de desarrollador**. Sin embargo, para los programas de zonas protegidas, cualquier usuario con acceso a la zona protegida tiene acceso a **Developer Console**.
 
-Consulte [Entornos de zona protegida en hibernación y cancelación de la hibernación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obtener más información.
+Consulte [Entornos de zona protegida en hibernación y cancelación de la hibernación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obtener más información.
 
 Esta opción también está disponible en la ficha **Entorno** de la ventana **Información general** al hacer clic en el ![icono Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de un entorno individual.
 

@@ -4,9 +4,9 @@ description: Obtenga información sobre la versión 2025.7.0 de Cloud Manager en
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: cf36a5f22132695be47c3d52292f59f785a0fd52
+source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1210'
 ht-degree: 60%
 
 ---
@@ -49,7 +49,7 @@ Actualmente están disponibles las siguientes oportunidades:
 
 Vuelva rápidamente a una implementación anterior si el código de origen del cliente más reciente no funciona como se esperaba; no es necesario volver a ejecutar la canalización completa ni revertir las confirmaciones manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaure el código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos anterior muestra la opción **Restaurar**>**Código anterior implementado**&#x200B;para un entorno seleccionado.*
+![Restaure el código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos anterior muestra la opción **Restaurar**>**Código anterior implementado**para un entorno seleccionado.*
 
 
 ![Restaurar código anterior implementado en el cuadro de diálogo](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
@@ -57,12 +57,14 @@ Vuelva rápidamente a una implementación anterior si el código de origen del c
 
 
 ![Restaurando activación](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**&#x200B;hasta que finalice la implementación.*
+*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**hasta que finalice la implementación.*
 
 
 ![Versión del código Source en uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vista de detalles del entorno, vista arriba, ahora también muestra la versión activa del código fuente en uso.*
 
 Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un mensaje de correo electrónico a [restorecode@adobe.com](mailto:restorecode@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
+
+Ver [Restaurar el código anterior implementado en AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
 Vea también [Restauración de contenido en AEM as a Cloud Service](/help/operations/restore.md).
 

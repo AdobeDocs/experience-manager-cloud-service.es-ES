@@ -1,13 +1,13 @@
 ---
-title: Restauración de contenidos en AEM as a Cloud Service
+title: Restaurar contenido en AEM as a Cloud Service
 description: Obtenga información sobre cómo restaurar el contenido de AEM as a Cloud Service desde la copia de seguridad mediante Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 26%
+source-wordcount: '1359'
+ht-degree: 23%
 
 ---
 
@@ -20,7 +20,7 @@ Puede restaurar el contenido de AEM as a Cloud Service desde la copia de segurid
 
 El proceso de restauración de autoservicio de Cloud Manager copia los datos de las copias de seguridad del sistema de Adobe y los restaura a su entorno original. Se realiza una restauración para devolver los datos que se han perdido, dañado o eliminado accidentalmente a su estado original.
 
-El proceso de restauración solo afecta al contenido, no modifica el código ni la versión de AEM. Puede iniciar una operación de restauración de entornos individuales en cualquier momento.
+El proceso de restauración solo afecta al contenido, no modifica el código ni la versión de AEM. Puede iniciar una operación de restauración de entornos individuales en cualquier momento. (Si necesita restaurar el código fuente implementado anteriormente de manera fácil y rápida, sin necesidad de iniciar una nueva ejecución de canalización, puede usar [Restaurar el código anterior implementado](/help/operations/restore-previous-code-deployed.md)).
 
 Cloud Manager ofrece dos tipos de copias de seguridad desde las que puede restaurar contenido.
 
@@ -87,7 +87,7 @@ Para obtener más información sobre la administración de permisos, consulte [P
      >
      >La tarjeta **Entornos** solo enumera tres entornos. Haga clic en **Mostrar todo** en la tarjeta para ver *todos* los entornos del programa.
 
-1. En la tabla Entornos, a la derecha de un entorno cuyo contenido desee restaurar, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, haga clic en **Restaurar contenido**.
+1. En la tabla Entornos, a la derecha de un entorno cuyo contenido desea restaurar, haga clic en ![Icono de más o icono de menú de puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, haga clic en **Restaurar contenido**.
 
    ![Opción Restaurar contenido del menú de los tres puntos](/help/operations/assets/environments-ellipsis-menu.png)
 
