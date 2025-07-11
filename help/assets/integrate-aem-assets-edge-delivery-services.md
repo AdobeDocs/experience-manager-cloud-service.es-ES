@@ -3,9 +3,9 @@ title: Integrar [!DNL AEM Assets] al crear contenido para [!DNL Edge Delivery Se
 description: Aprenda a integrar [!DNL AEM Assets] con [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] con [!DNL Microsoft Word] y [!DNL Google Docs], integrate [!DNL AEM Assets] con [!DNL Universal Editor], integrate [!DNL Dynamic Media] con [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Universal Editor] e integrar [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Microsoft Word] y [!DNL Google Docs].
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,11 @@ También puede utilizar los recursos entregados mediante [!DNL Dynamic Media wit
 * Administración (referencias frente a copias del recurso), que ayuda a la propagación automática de eventos del ciclo vital de recursos como caducidad, eliminación y actualizaciones.
 * Representaciones de imágenes dinámicas y recorte inteligente.
 * Entrega y optimización de medios enriquecidos, como la transmisión de vídeo adaptable de forma predeterminada y la entrega de recursos originales para PDF.
-* Informe de impresiones de nivel de recurso ([disponibilidad limitada](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
+<!--
+
+* Asset-level impressions report ([limited availability](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
+
+-->
 
 Para obtener más información sobre las capacidades, consulte la documentación de [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
 

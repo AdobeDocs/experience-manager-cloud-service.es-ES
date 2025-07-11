@@ -5,9 +5,9 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '893'
 ht-degree: 69%
 
 ---
@@ -67,13 +67,17 @@ Reciba una solución de administración de activos digitales que comprende las d
 
 [![Consulte la guía](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
-### Perspectivas para tomar decisiones basadas en datos {#insights-data}
+<!--
 
-Para mantener el ritmo de la velocidad del contenido son esenciales perspectivas procesables. La vista de Assets ofrece perspectivas avanzadas dentro de Mi Workspace, lo que proporciona datos valiosos sobre el rendimiento de los recursos, el uso de la audiencia y las participaciones. Los especialistas en marketing pueden tomar decisiones basadas en datos, optimizar las estrategias de contenido y refinar su envío descendente para lograr resultados óptimos. Gracias al acceso a datos significativos, las empresas pueden adelantarse a la competencia e impulsar resultados excepcionales.
+### Insights to take data-driven decisions {#insights-data}
 
-![Información general sobre Insights](assets/insights-overview.gif)
+To keep pace with content velocity, actionable insights are essential. The Assets view offers advanced insights within the My Workspace, providing valuable data on asset performance, audience usage, and engagements. Marketers can make data-driven decisions, optimize content strategies, and refine their downstream delivery to achieve optimal results. With access to meaningful insights, businesses can stay ahead of the competition and drive exceptional outcomes.
 
-[![Consulte la guía](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+![Insights overview](assets/insights-overview.gif)
+
+[![See the Guide](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+
+-->
 
 ### Integración de Adobe Photoshop Express para acelerar la colaboración {#accelerate-collaboration}
 
