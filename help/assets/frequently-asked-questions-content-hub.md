@@ -2,10 +2,10 @@
 title: Preguntas frecuentes (FAQ) sobre Content Hub
 description: Obtenga respuestas a algunas de las preguntas más frecuentes (FAQ) sobre Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '1293'
-ht-degree: 100%
+source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
+workflow-type: tm+mt
+source-wordcount: '1496'
+ht-degree: 87%
 
 ---
 
@@ -44,7 +44,7 @@ Es posible evaluar Content Hub sin afectar a los usuarios ni al contenido de pro
 
 Hay un programa de acceso rápido a Content Hub en los programas de zona protegida y sus entornos de producción de creación. Para más información, consulte [Introducción a los programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Para obtener más información sobre el programa de acceso anticipado, póngase en contacto con el equipo de cuentas de Adobe.
 
-Content Hub aún no está disponible en entornos que no sean de producción (ensayo y desarrollo). La disponibilidad prevista en los entornos de ensayo/desarrollo de Assets Ultimate es marzo de 2025.
+Content Hub aún no está disponible en entornos que no sean de producción (ensayo y desarrollo). La disponibilidad prevista para los entornos de ensayo/desarrollo para Assets Ultimate es marzo de 2025.
 
 ## ¿Por qué no veo ningún recurso después de iniciar sesión en Content Hub? {#no-assets-in-content-hub}
 
@@ -97,3 +97,42 @@ Adobe proporciona asistencia para la migración del Brand Portal a Content Hub q
 ## ¿Por qué no puedo ver la opción de ajustes/configuración del producto en Content Hub? {#ui-configuration-option-missing}
 
 Para acceder a la [interfaz de usuario de configuración](/help/assets/configure-content-hub-ui-options.md), debes ser [administrador de Content Hub](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). Si se le asigna el perfil de producto de administradores de AEM en la instancia de creación de producción en Adobe Admin Console y sigue sin poder ver la opción de configuración, asegúrese de que no se haya cambiado el nombre del perfil de producto de administradores de AEM. Consulte [Perfiles de equipo y producto de AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) para obtener más información.
+
+## ¿Cómo aborda Content Hub las limitaciones de Brand Portal? {#content-hub-brand-portal-comparison}
+
+
+En la tabla siguiente se describen las principales diferencias entre las dos soluciones:
+
+| Área | Capacidad | Content Hub | Brand Portal |
+|---|---|----|----|
+| Configuración de la experiencia de distribución | Configuración de metadatos para filtros, detalles de recursos y página de adición de recursos | ✓ | − |
+|  | Configuración de vínculos externos desde el portal | ✓ | − |
+|  | Configurar la mensajería de banner | ✓ | ✓ |
+|  | Configurar la imagen del titular para la marca | ✓ | ✓ |
+|  | Configure los colores primarios y secundarios para la interfaz de usuario según los requisitos de marca | ✓ | − |
+| Uso compartido de recursos desde DAM | Uso compartido de recursos aprobados originales desde DAM | ✓ | ✓ |
+|  | Cambios de recursos aprobados sincronizados automáticamente | ✓ | − |
+| Búsqueda y filtros | Filtros dinámicos (las opciones se muestran dinámicamente en función de los recursos mostrados) | ✓ | − |
+|  | Historial de búsqueda | ✓ | − |
+| Carga de recursos | Unidad local | ✓ | ✓ |
+|  | Añadir metadatos configurables al cargar recursos | ✓ | − |
+| Descarga y representaciones | Descargar recurso original | ✓ | ✓ |
+|  | Compartir y descargar representaciones estáticas desde DAM | ✓ | ✓ |
+|  | Descargar representaciones dinámicas (ajustes preestablecidos y cultivos inteligentes) | ✓ | ✓ |
+|  | Capacidad para restringir la visualización y descarga de recursos caducados | ✓ | − |
+| Uso compartido de vínculos y colecciones | Vínculos compartidos para usuarios que han iniciado sesión | ✓ | ✓ |
+|  | Colecciones públicas | ✓ | ✓ |
+|  | Buscar en colecciones | ✓ | − |
+|  | Vínculos compartidos anónimos | ✓ | ✓ |
+|  | Colecciones privadas | ✓ | ✓ |
+| Permisos | Permisos basados en ACL | − | ✓ |
+|  | Control de acceso basado en atributos | ✓ | − |
+| Integración rápida | Edite Content Hub Assets en Adobe Express y guárdelo en DAM | ✓ | − |
+| Paneles e informes | Panel de perspectivas | ✓ | − |
+| Extensibilidad de la IU | Puntos de extensión personalizados en la página de detalles del recurso | Disponibilidad limitada | − |
+| Innovaciones próximamente | Colecciones favoritas por usuario | ✓ | − |
+|  | Colecciones ancladas por el administrador | ✓ | − |
+|  | Búsqueda semántica | ✓ | − |
+|  | Búsqueda localizada y visualización de metadatos | ✓ | − |
+
+
