@@ -1,14 +1,14 @@
 ---
 title: API de comunicaciones de AEM Forms as a Cloud Service
-description: Genere, manipule y proteja documentos con las API de comunicación de AEM Forms en la nube
+description: Generar, manipular y proteger documentos con las API de comunicaciones de AEM Forms en la nube
 Keywords: document generation, PDF manipulation, document security, batch processing, document conversion, PDF/A compliance
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a5bbcd19b41b3aeff94f900da13e98de65651f8c
+source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
 workflow-type: tm+mt
-source-wordcount: '2497'
-ht-degree: 90%
+source-wordcount: '2663'
+ht-degree: 89%
 
 ---
 
@@ -17,34 +17,34 @@ ht-degree: 90%
 
 > **Disponibilidad de la versión**
 >
-> * **AEM 6.5**: [Información general de AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=es)
+> * **AEM 6.5**: [Información general de los servicios de documentos de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=es)
 > * **AEM as a Cloud Service**: este artículo
 
 ## Introducción
 
-Las API de comunicaciones de AEM Forms as a Cloud Service le ayudan a crear documentos estandarizados, personalizados y aprobados por la marca para sus necesidades comerciales. Estas API potentes le permiten generar, manipular y proteger documentos mediante programación, ya sea bajo demanda o en procesos por lotes de gran volumen.
+Las API de comunicaciones de AEM Forms as a Cloud Service le ayudan a crear documentos aprobados por la marca, personalizados y estandarizados para sus necesidades empresariales. Estas potentes API le permiten generar, manipular y proteger documentos mediante programación, ya sea bajo demanda o en procesos por lotes de gran volumen.
 
-### Ventajas principales
+### Principales ventajas
 
-* **Generación de documentos optimizada**: cree documentos personalizados combinando plantillas con datos de clientes
-* **Potente manipulación de documentos**: combine, reorganice y valide documentos de PDF mediante programación
-* **Opciones de implementación flexibles**: use API a petición para necesidades de baja latencia o API por lotes para operaciones de alto rendimiento
+* **Generación de documentos optimizada**: cree documentos personalizados combinando plantillas con los datos de clientes
+* **Potente manipulación de documentos**: combine, reorganice y valide documentos PDF mediante programación
+* **Opciones de implementación flexibles**: use las API bajo demanda para las necesidades de baja latencia o las API por lotes para operaciones de alto rendimiento
 * **Seguridad mejorada**: aplique firmas digitales, certificación y cifrado para proteger documentos confidenciales
-* **Arquitectura nativa de la nube**: aproveche la infraestructura de nube escalable y segura sin sobrecarga de mantenimiento
+* **Arquitectura nativa en la nube**: aproveche la infraestructura en la nube escalable y segura sin sobrecarga de mantenimiento
 
-## Resumen de capacidades de API
+## Resumen de las funcionalidades de las API
 
-Las API de comunicaciones proporcionan un conjunto completo de funcionalidades de procesamiento de documentos organizadas en las siguientes áreas funcionales:
+Las API de comunicaciones ofrecen un conjunto completo de funcionalidades de procesamiento de documentos organizadas en las siguientes áreas funcionales:
 
-| Generación de documentos | Manipulación de documentos | Extracción de documentos | Conversión de documentos | Seguro del documento |
+| Generación de documentos | Manipulación de documentos | Extracción de documentos | Conversión de documentos | Garantía de documentos |
 |---------------------|----------------------|---------------------|---------------------|-------------------|
-| Generar documentos personalizados combinando plantillas con datos en varios formatos, incluidos PDF y los formatos de impresión. | Combine, reorganice y valide documentos de PDF mediante programación para crear nuevos paquetes de documentos. | Extraiga propiedades, metadatos y contenido de documentos de PDF para un procesamiento posterior. | Convierta documentos entre formatos, incluida la validación de la conformidad con PDF/A para las necesidades de archivo. | Aplique firmas digitales, certificación y cifrado para proteger y proteger documentos. |
+| Genere documentos personalizados combinando plantillas con datos en varios formatos, incluidos los formatos PDF y de impresión. | Combine, reorganice y valide documentos PDF mediante programación para crear nuevos paquetes de documentos. | Extraiga propiedades, metadatos y contenido de documentos PDF para un procesamiento posterior. | Convierta documentos entre formatos, incluida la validación de la conformidad con PDF/A para las necesidades de archivo. | Aplique firmas digitales, certificación y cifrado para asegurar y proteger documentos. |
 
 La [documentación de referencia de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) ofrece información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios que ofrecen las API. La documentación de referencia de la API también está disponible en formato YAML. Puede descargar el archivo YAML y cargarlo en Postman para comprobar la funcionalidad de las API.
 
 ## Generación de documentos
 
-Las API de generación de documentos de comunicaciones ayudan a combinar una plantilla (XFA o PDF) con datos de clientes (XML) para generar documentos en formatos de PDF y de impresión, como PS, PCL, DPL, IPL y ZPL. Estas API utilizan plantillas PDF y XFA con [datos XML](communications-known-issues-limitations.md#form-data) para generar un solo documento bajo demanda o varios documentos usando un trabajo por lotes.
+Las API de generación de documentos de comunicaciones ayudan a combinar una plantilla (XFA o PDF) con datos de clientes (XML) para generar documentos en PDF, AFP (presentación de funciones avanzadas) y formatos de impresión como PS, PCL, DPL, IPL y ZPL. Estas API utilizan plantillas de PDF y XFA con [datos XML](communications-known-issues-limitations.md#form-data) para generar un solo documento bajo demanda o varios documentos mediante un trabajo por lotes.
 
 Normalmente, crea una plantilla mediante [Designer](use-forms-designer.md) y utiliza las API de comunicaciones para combinar los datos con la plantilla. Su aplicación puede enviar el documento de salida a una impresora de red, una impresora local o a un sistema de almacenamiento para su archivo. Los flujos de trabajo personalizados y típicos listos para usarse tienen el siguiente aspecto:
 
@@ -52,16 +52,30 @@ Normalmente, crea una plantilla mediante [Designer](use-forms-designer.md) y uti
 
 En función del caso de uso, también puede hacer que estos documentos estén disponibles para su descarga mediante su sitio web o un servidor de almacenamiento.
 
-### Capacidades clave de generación de documentos
+### Principales funcionalidades de la generación de documentos
 
-#### Crear documentos PDF {#create-pdf-documents}
+#### Crear documentos en formatos electrónicos PDF/AFP
 
-Puede utilizar las API de generación de documentos para crear un documento PDF basado en un diseño de formulario y datos de formulario XML. El resultado es un documento de PDF no interactivo. Es decir, los usuarios no pueden introducir ni modificar los datos del formulario. Un flujo de trabajo básico es combinar los datos del formulario XML con un diseño de formulario para crear un documento PDF. La siguiente ilustración muestra la combinación de un diseño de formulario y datos del formulario XML para producir un documento PDF.
+Puede utilizar las API de generación de documentos para crear un documento en formatos PDF o AFP basado en un diseño de formulario y datos de formulario XML. El resultado es un documento no interactivo. Es decir, los usuarios no pueden introducir ni modificar los datos del formulario. Un flujo de trabajo básico es combinar los datos del formulario XML con un diseño de formulario para crear un documento. La siguiente ilustración muestra la combinación de un diseño de formulario y datos del formulario XML para producir un documento PDF.
 
-![Crear documentos PDF](assets/outPutPDF_popup.png)
-Figura: Flujo de trabajo típico para crear un documento PDF
+![Crear documentos de PDF](assets/outPutPDF_popup.png)
+Imagen: flujo de trabajo típico para crear un documento
 
-La API de generación de documentos devuelve el documento del PDF generado. Si lo desea, también puede cargar los PDF generados en el almacenamiento del blob de Azure.
+La siguiente tabla muestra la diferencia entre los formatos AFP y PDF:
+
+| **Característica** | **AFP (presentación de funciones avanzadas)** | **PDF (formato de documento portátil)** |
+|---------------------------|--------------------------------------------------------------------|-------------------------------------------------------------|
+| **Propósito** | Impresión y producción de gran volumen de documentos transaccionales | Uso compartido y visualización de documentos de uso general |
+| **Caso práctico** | Extractos bancarios, facturas, facturas, documentos de seguros | Libros electrónicos, formularios, informes, currículos, manuales |
+| **Origen de plataforma** | Desarrollado por IBM | Desarrollado por Adobe |
+| **Estructura** | Formato orientado a páginas con campos y objetos estructurados | Orientado a páginas pero con diseño fijo |
+| **Editabilidad** | Diseñado para la impresión en producción y rara vez se edita | Se puede editar con varias herramientas, como Adobe Acrobat |
+| **Tamaño y rendimiento de archivo** | Optimizado para el rendimiento en entornos de impresión de alta velocidad | Puede ser más grande y estar menos optimizado para la salida en bloque |
+| **Interactividad** | Mínimo a ninguno; páginas estáticas | Admite elementos interactivos como formularios, vínculos o JavaScript |
+| **Control de salida** | Control preciso del diseño de las impresoras | Diseño visual optimizado para pantalla e impresión |
+| **Fuentes y gráficos** | Utiliza referencias de fuentes y recursos; requiere que los procesadores interpreten | Incrusta fuentes e imágenes directamente en el archivo |
+
+La API de generación de documentos devuelve el documento de PDF o el documento AFP generado. Si lo desea, también puede cargar los PDF generados en el almacenamiento del blob de Azure.
 
 <span class="preview"> La carga de los PDF generados mediante la API de generación de documentos a la capacidad de Azure Blob Storage se encuentra en [Programa de adopción anticipada](/help/forms/early-access-ea-features.md). Puede enviar un correo electrónico a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa para primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
@@ -77,9 +91,9 @@ Puede utilizar las API de generación de documentos para crear documentos indepe
 
 ## Manipulación de documentos
 
-Las API de manipulación de documentos de comunicaciones (transformación de documentos) ayudan a combinar y reorganizar documentos PDF. Normalmente, crea un DDX y lo envía a las API de manipulación de documentos para montar o reorganizar un documento. El [documento DDX](https://helpx.adobe.com/content/dam/help/es/experience-manager/forms-cloud-service/ddxRef.pdf) ofrece instrucciones sobre cómo utilizar los documentos de origen para producir un conjunto de documentos necesarios. La documentación de referencia DDX proporciona información detallada acerca de todas las operaciones admitidas.
+Las API de manipulación de documentos de comunicaciones (transformación de documentos) ayudan a combinar y reorganizar documentos PDF. Normalmente, crea un DDX y lo envía a las API de manipulación de documentos para montar o reorganizar un documento. El [documento DDX](https://helpx.adobe.com/content/dam/help/es/experience-manager/forms-cloud-service/ddxRef.pdf) ofrece instrucciones sobre cómo utilizar los documentos de origen para producir un conjunto de documentos necesarios. La documentación de referencia DDX ofrece información detallada sobre todas las operaciones compatibles. 
 
-### Capacidades clave de manipulación de documentos
+### Principales funcionalidades de la manipulación de documentos
 
 #### Montar los documentos PDF
 
@@ -132,7 +146,7 @@ Las API de conversión de documentos de comunicaciones ayudan a convertir un doc
 
 Convierte un documento PDF a un archivo XDP. Para que un documento PDF se convierta correctamente en un archivo XDP, el documento PDF debe contener un flujo XFA en el diccionario.
 
-## Seguro del documento {#doc-assurance}
+## Garantía de documentos {#doc-assurance}
 
 El servicio DocAssurance incluye las API de firma y de cifrado:
 
@@ -151,16 +165,16 @@ Las API de firmas permiten a su organización proteger la seguridad y la privaci
 
 ### Las API de cifrado
 
-Las API de cifrado permiten encriptar y desencriptar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento PDF está cifrado con una contraseña, el usuario debe escribir la contraseña de apertura para poder ver el documento en Adobe Reader o Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
+Las API de cifrado permiten cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Un usuario autorizado puede descifrar el documento para obtener acceso a su contenido. Si un documento PDF está cifrado con una contraseña, el usuario debe escribir la contraseña de apertura para poder ver el documento en Adobe Reader o Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
-Puede realizar estas tareas mediante las API de encriptado:
+Puede realizar estas tareas mediante las API de cifrado:
 
-* Encriptar un documento PDF con una contraseña.
-* Quitar el encriptado de contraseña de un documento PDF.
+* Cifrar un documento PDF con una contraseña.
+* Quitar el cifrado de contraseña de un documento PDF.
 * Recupera el tipo de seguridad aplicada a un documento PDF.
 * Devolver el tipo de seguridad aplicado a un documento PDF.
 
-Tanto las API de firma como las de encriptado son [API sincrónicas](#types-of-communications-apis-types).
+Tanto las API de firma como las de cifrado son [API sincrónicas](#types-of-communications-apis-types).
 
 ### Utilidades de documento {#doc-utility}
 
@@ -259,4 +273,4 @@ Después de la incorporación, para habilitar la capacidad de comunicaciones par
 * [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 * [Arquitectura de AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-architecture.md)
 * [Documentación de referencia de API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-* [Características del programa de usuarios pioneros](/help/forms/early-access-ea-features.md)
+* [Funciones del programa para primeros usuarios](/help/forms/early-access-ea-features.md)

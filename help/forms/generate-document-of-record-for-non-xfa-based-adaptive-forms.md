@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo generar una plantilla para un docu
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
-workflow-type: ht
-source-wordcount: '4170'
-ht-degree: 100%
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+workflow-type: tm+mt
+source-wordcount: '4225'
+ht-degree: 98%
 
 ---
 
@@ -347,7 +347,7 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
    1. **Propiedades básicas**:
       * **Plantilla**: si elige una plantilla personalizada, busque y seleccione un XDP en el servidor [!DNL AEM Forms]. Si desea utilizar una plantilla que no esté ya en el servidor [!DNL AEM Forms], primero debe cargar el XDP en el servidor [!DNL AEM Forms].
-      * **Color de contraste**: el color en el que se muestra el texto de encabezado y las líneas de separación en el documento de registro en PDF.
+      * **Color de contraste**: el color en el que se muestra el texto de encabezado y las líneas separadoras en el documento de registro en PDF.
       * **Familia tipográfica**: la familia de fuentes de texto del Documento de registro en PDF.
 
         >[!NOTE]
@@ -395,6 +395,14 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
    ```
 
 1. Para guardar los cambios de personalización de marca, seleccione **[!UICONTROL Listo]**.
+
+>[!NOTE]
+> 
+> Para mostrar un título de formulario personalizado en el documento de registro, edite **Título de formulario personalizado** en **Propiedades del documento de registro** > **Propiedades de la página maestra**. Este título personalizado:
+> 
+> * Aparece en el encabezado del PDF generado
+> * Aparece como Título en las propiedades del documento de PDF
+> * Aparece como el Título de la vista inicial cuando se abre PDF
 
 ## Asistencia del Documento de registro en el Editor de formularios adaptables {#dor-support-in-adaptiveform}
 

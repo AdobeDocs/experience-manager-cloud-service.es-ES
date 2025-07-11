@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
-workflow-type: ht
-source-wordcount: '1332'
-ht-degree: 100%
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+workflow-type: tm+mt
+source-wordcount: '1810'
+ht-degree: 90%
 
 ---
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -59,6 +59,33 @@ Ahora puede importar formularios de metadatos de la vista Administrador directam
 Content Hub ahora le permite [controlar el acceso a las colecciones durante la creación, asegurando así que solo los usuarios autorizados puedan ver o administrar los recursos agrupados](/help/assets/collections-content-hub.md##create-collections). Garantiza una mayor seguridad, una mejor colaboración, una administración de recursos organizada y un control simplificado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+* [Editor universal para Forms adaptable y fragmentos de formulario](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): El editor universal ahora admite la creación de Forms adaptable y fragmentos de formulario reutilizables. Los autores pueden crear formularios de forma visual, configurar acciones de envío y agregar la validación reCAPTCHA, todo en un entorno de creación simplificado de WYSIWYG. Esta capacidad acelera la creación de formularios, mejora la coherencia y la protección contra el correo no deseado y el uso indebido automatizado.
+
+### Características previas al lanzamiento
+
+* [Generar y sincronizar representaciones AFP desde Forms adaptable](/help/forms/document-generation-afp-api.md): La API de sincronización de salida AFP permite a los administradores y usuarios generar la salida AFP (presentación de funciones avanzadas) desde Forms adaptable y sincronizar la salida con sistemas externos o ubicaciones de almacenamiento. AFP es un formato de documento de alto rendimiento optimizado para la impresión, utilizado a menudo en entornos empresariales a gran escala.
+
+* [Biblioteca de documentos de SharePoint - Guardar archivos adjuntos con nombres de archivo originales](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): ahora tiene la opción de guardar los archivos adjuntos del formulario utilizando sus nombres de archivo originales al almacenarlos en una biblioteca de documentos de SharePoint. Esta mejora simplifica la identificación y administración de los archivos cargados.
+
+* **Editor de reglas**:
+   * [Condición binaria con evento de clic en la cláusula &quot;When&quot;](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): El editor de reglas ahora permite combinar un evento de clic en botón (_Se hace clic_) con otras condiciones dentro de la cláusula &quot;When&quot;. Esto permite un control más preciso de la ejecución de reglas en función de la interacción del usuario y otros factores. Nota: Cuando se utilizan varias condiciones, el evento de clic debe ser la primera condición de la lista.
+   * [Condiciones de validación para campos y paneles](/help/forms/rule-editor-core-components-usecases.md): el editor de reglas ahora incluye las condiciones _IsValid_ y _IsNotValid_. Esto le permite comprobar el estado de validación de campos específicos o paneles completos (incluidos diseños como pestañas horizontales, pestañas verticales, acordeones y asistentes), lo que facilita la navegación mejorada del formulario y la experiencia del usuario basada en los resultados de validación.
+* [Administración de ámbito mejorada para listas de SharePoint](/help/forms/connect-forms-to-sharepoint-list.md): Los sitios de SharePoint ahora admiten todas las rutas administradas, por ejemplo, /sitios y /equipos. Esta mejora permite una integración más amplia en varias estructuras del sitio de SharePoint, lo que ofrece una mayor flexibilidad para conectarse al contenido de la organización.
+* [Compatibilidad para guardar documentos de registro en listas de SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Formularios creados mediante un modelo de datos de formulario (FDM) basado en listas de SharePoint ahora pueden guardar el documento de registro (DoR) en listas de SharePoint configurando la propiedad de campo Referencia de enlace de documento de registro. Esta mejora permite la integración perfecta de los datos de formulario y los documentos compatibles con el almacenamiento de SharePoint.
+
+### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
+
+El programa para acceso rápido de AEM Forms ofrece una oportunidad única de obtener acceso exclusivo a innovaciones punteras y ayudar a dar forma a su desarrollo.
+
+En estas notas de la versión se indican las innovaciones de la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
+
+#### Integración de Adobe Experience Platform (AEP) con Forms
+
+* [Integración de AEM Forms con Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): el conector de AEM Forms a Adobe Experience Platform permite una integración perfecta entre Forms adaptable y Adobe Experience Platform. Esta función permite asignar datos de formulario a esquemas XDM y enviarlos directamente a AEP en tiempo real. Simplifica la captura de datos para casos de uso de personalización y activación en todas las soluciones de Adobe Experience Cloud.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

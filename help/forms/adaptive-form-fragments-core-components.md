@@ -6,10 +6,10 @@ keywords: Agregar fragmentos de formulario adaptable, fragmentos de formulario a
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: a99bd181a079713571fd659ec2a04207c5eeee90
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 100%
+source-wordcount: '1479'
+ht-degree: 93%
 
 ---
 
@@ -119,15 +119,14 @@ Puede utilizar un fragmento de formulario basado en esquemas y no basado en esqu
 
 ![usar varios fragmentos en formularios adaptables](/help/forms/assets/using-multiple-fragment-af.gif)
 
-<!--
+## Compatibilidad con la asignación automática para fragmentos de un formulario adaptable
 
-## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
+Cuando crea un fragmento de formulario adaptable basado en una definición de esquema JSON, se puede reutilizar automáticamente en formularios creados a partir del mismo esquema.
+Si arrastra y suelta un objeto de esquema o cualquier objeto anidado que coincida con la asignación de definición de esquema JSON de un fragmento de formulario adaptable, el objeto se reemplazará por el fragmento de formulario adaptable coincidente. En lugar de agregar un panel con campos individuales, el formulario inserta el fragmento de formulario adaptable asignado.
 
-When you create an Adaptive Form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
+![Arrastrar y soltar un fragmento](/help/forms/assets/fragment.png)
 
-You can change the fragment asset and its bindings from the Edit component dialog.
-
-You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel. -->
+También puede arrastrar y soltar un fragmento de formulario adaptable enlazado desde la biblioteca de fragmentos de formularios adaptables en el buscador de contenido de AEM y proporcionar la referencia de enlace correcta desde el diálogo Editar componente del panel de fragmentos de formulario adaptable.
 
 ## Administrar fragmentos {#manage-fragments}
 
@@ -156,7 +155,7 @@ Puede realizar varias operaciones en los fragmentos de formularios adaptables me
    <td><p>Descarga el fragmento seleccionado.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Iniciar revisión/Administrar revisión</p> </td>
+   <td><p>Iniciar revisión y Administrar revisión</p> </td>
    <td><p>Permite iniciar y administrar una revisión del fragmento seleccionado. Para obtener más información, consulte <a>Crear y administrar revisiones</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>

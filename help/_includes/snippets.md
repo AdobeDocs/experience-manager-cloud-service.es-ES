@@ -1,8 +1,8 @@
 ---
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '1556'
-ht-degree: 100%
+source-git-commit: 6af7e8caa7be93da60e660468dd7d4f02a7e2c47
+workflow-type: tm+mt
+source-wordcount: '1560'
+ht-degree: 97%
 
 ---
 # Fragmentos de código {#snippets}
@@ -111,9 +111,9 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
    </td>
    </tr>
    <tr>
-    <td>Compatibilidad con ES10 </td>
-    <td>ES10 aún no es compatible. Solo admite funciones de JavaScript ES5. </td>
-    <td>Compatibilidad con funciones modernas de JavaScript, como las funciones let y arrow (compatibilidad con ES10) dentro de funciones personalizadas. 
+    <td>Compatibilidad con ES2022 </td>
+    <td>Aún no es compatible ES2022; la compatibilidad se limita a las funciones de JavaScript ES5. </td>
+    <td>La compatibilidad con las funciones modernas de JavaScript, por ejemplo, las funciones izquierda y flecha, hasta ES2022, está disponible dentro de las funciones personalizadas. 
    </td>
    </tr>
    </tr>
@@ -222,7 +222,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 **Registro de un vale de asistencia:**
 
-1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/es?support-tab=home#support) y cree un vale.
+1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un vale.
 1. Añada **Edge Delivery** en el título del ticket.
 1. En la descripción, proporcione los siguientes detalles además de la descripción del problema:
 

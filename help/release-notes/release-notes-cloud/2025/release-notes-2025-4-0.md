@@ -4,10 +4,10 @@ description: Notas de la versión 2025.4.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c1ff27a76309628f1fb7b816092172aca7c6a738
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 99%
+source-wordcount: '1828'
+ht-degree: 91%
 
 ---
 
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de abril de 2025 para ver un resumen de las funciones añadidas en la versión 2025.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464005?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -81,19 +81,21 @@ Ahora puede seleccionar y comparar rápidamente cualquier versión de un recurso
 
 ![comparar versiones del recurso](/help/assets/assets/version-compare2.png)
 
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Características previas al lanzamiento
 
-* [Editor universal - Fragmentos de formulario](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): El editor universal ahora le permite crear y reutilizar fragmentos de formulario para Formularios adaptables. Estos fragmentos son secciones de formulario reutilizables (por ejemplo, detalles de contacto, campos de consentimiento) que se pueden crear una vez y aplicar en varios formularios. Esta función optimiza la creación de formularios, garantiza la coherencia y mejora la eficacia de la creación.
+* [Editor universal para Forms adaptable y fragmentos de formulario](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): El editor universal ahora admite la creación de Forms adaptable y fragmentos de formulario reutilizables. Los autores pueden crear formularios de forma visual, configurar acciones de envío y agregar la validación reCAPTCHA, todo en un entorno de creación simplificado de WYSIWYG. Esta capacidad acelera la creación de formularios, mejora la coherencia y la protección contra el correo no deseado y el uso indebido automatizado.
 
 * [Biblioteca de documentos de SharePoint - Guardar archivos adjuntos con nombres de archivo originales](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): ahora tiene la opción de guardar los archivos adjuntos del formulario utilizando sus nombres de archivo originales al almacenarlos en una biblioteca de documentos de SharePoint. Esta mejora simplifica la identificación y administración de los archivos cargados.
 
 * **Editor de reglas**:
    * [Condición binaria con evento de clic en la cláusula &quot;When&quot;](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): El editor de reglas ahora permite combinar un evento de clic en botón (_Se hace clic_) con otras condiciones dentro de la cláusula &quot;When&quot;. Esto permite un control más preciso de la ejecución de reglas en función de la interacción del usuario y otros factores. Nota: Cuando se utilizan varias condiciones, el evento de clic debe ser la primera condición de la lista.
    * [Condiciones de validación para campos y paneles](/help/forms/rule-editor-core-components-usecases.md): el editor de reglas ahora incluye las condiciones _IsValid_ y _IsNotValid_. Esto le permite comprobar el estado de validación de campos específicos o paneles completos (incluidos diseños como pestañas horizontales, pestañas verticales, acordeones y asistentes), lo que facilita la navegación mejorada del formulario y la experiencia del usuario basada en los resultados de validación.
-* **Administración de ámbito mejorada para listas de SharePoint**: Los sitios de SharePoint ahora admiten todas las rutas administradas, por ejemplo, /sitios y /equipos. Esta mejora permite una integración más amplia en varias estructuras del sitio de SharePoint, lo que ofrece una mayor flexibilidad para conectarse al contenido de la organización.
-* **Compatibilidad para guardar documentos de registro en listas de SharePoint**: Formularios creados mediante un modelo de datos de formulario (FDM) basado en listas de SharePoint ahora pueden guardar el documento de registro (DoR) en listas de SharePoint configurando la propiedad de campo Referencia de enlace de documento de registro. Esta mejora permite la integración perfecta de los datos de formulario y los documentos compatibles con el almacenamiento de SharePoint.
+* [Administración de ámbito mejorada para listas de SharePoint](/help/forms/connect-forms-to-sharepoint-list.md): Los sitios de SharePoint ahora admiten todas las rutas administradas, por ejemplo, /sitios y /equipos. Esta mejora permite una integración más amplia en varias estructuras del sitio de SharePoint, lo que ofrece una mayor flexibilidad para conectarse al contenido de la organización.
+* [Compatibilidad para guardar documentos de registro en listas de SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Formularios creados mediante un modelo de datos de formulario (FDM) basado en listas de SharePoint ahora pueden guardar el documento de registro (DoR) en listas de SharePoint configurando la propiedad de campo Referencia de enlace de documento de registro. Esta mejora permite la integración perfecta de los datos de formulario y los documentos compatibles con el almacenamiento de SharePoint.
+* [Compatibilidad con asignación automática para fragmentos de formularios adaptables](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form): ahora, Forms adaptable admite la inserción automática de fragmentos coincidentes cuando los objetos de esquema se alinean con una estructura de fragmentos definida, lo que optimiza la creación de formularios y promueve la reutilización.
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
 
@@ -103,7 +105,7 @@ En estas notas de la versión se indican las innovaciones de la versión actual.
 
 #### Integración de Adobe Experience Platform (AEP) con Forms
 
-Las funcionalidades de integración entre Forms y AEP ya están disponibles para los usuarios que las adoptaron por primera vez.
+* [Integración de AEM Forms con Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): el conector de AEM Forms a Adobe Experience Platform permite una integración perfecta entre Forms adaptable y Adobe Experience Platform. Esta función permite asignar datos de formulario a esquemas XDM y enviarlos directamente a AEP en tiempo real. Simplifica la captura de datos para casos de uso de personalización y activación en todas las soluciones de Adobe Experience Cloud.
 
 ## Complemento CIF {#cloud-services-cif}
 

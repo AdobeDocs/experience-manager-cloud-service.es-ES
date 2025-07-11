@@ -4,10 +4,10 @@ description: Obtén información sobre cómo generar una plantilla para un docum
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
-workflow-type: ht
-source-wordcount: '3152'
-ht-degree: 100%
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+workflow-type: tm+mt
+source-wordcount: '3207'
+ht-degree: 98%
 
 ---
 
@@ -329,7 +329,7 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
    1. **Propiedades básicas**:
       * **Plantilla**: si elige una plantilla personalizada, busque y seleccione un XDP en su servidor [!DNL AEM Forms]. Si desea utilizar una plantilla que no esté disponible en el servidor [!DNL AEM Forms], primero debe cargar el XDP en su servidor [!DNL AEM Forms].
-      * **Color de contraste**: el color en el que se muestra el texto de encabezado y las líneas de separación en el documento de registro en PDF.
+      * **Color de contraste**: el color en el que se muestra el texto de encabezado y las líneas separadoras en el documento de registro en PDF.
       * **Familia tipográfica**: la familia de fuentes de texto del Documento de registro en PDF.
 
         >[!NOTE]
@@ -380,7 +380,13 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
 1. Para guardar los cambios de personalización de marca, seleccione **[!UICONTROL Listo]**.
 
-
+>[!NOTE]
+> 
+> Para mostrar un título de formulario personalizado en el documento de registro, edite **Título de formulario personalizado** en **Propiedades del documento de registro** > **Propiedades de la página maestra**. Este título personalizado:
+> 
+> * Aparece en el encabezado del PDF generado
+> * Aparece como Título en las propiedades del documento de PDF
+> * Aparece como el Título de la vista inicial cuando se abre PDF
 
 ## Diseños de tablas y columnas para paneles del documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
