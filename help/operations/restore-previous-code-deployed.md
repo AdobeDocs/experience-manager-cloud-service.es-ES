@@ -4,9 +4,10 @@ description: Aprenda a restaurar un entorno a su última compilación correcta &
 feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
+exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
+source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '522'
 ht-degree: 3%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->&#x200B;>La función descrita en este artículo solo está disponible a través del programa pionero alpha. Para suscribirse al alfa, vea [Reversión en un solo clic para implementaciones de canalización](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>La función descrita en este artículo solo está disponible a través del programa pionero alpha. Para suscribirse al alfa, vea [Reversión en un solo clic para implementaciones de canalización](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Use **Restaurar código anterior implementado** para revertir un entorno instantáneamente a su última compilación correcta; no se requiere la ejecución de la canalización.
 
@@ -29,12 +30,12 @@ Simplemente abre el menú ![Icono de más o el icono de menú de puntos suspensi
 
 La característica **Restaurar código anterior implementado** solo está disponible cuando la condición **every** que se muestra a continuación es verdadera:
 
-* Usted tiene el permiso **Crear restauración del entorno**. Para obtener más información sobre la administración de permisos, consulte [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md).
+* Usted tiene permisos de **Environment Restore Create**. Para obtener más información sobre la administración de permisos, consulte [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md).
 * Su organización está inscrita en el programa de adopción anticipada y el indicador de funcionalidad está activado.
-* El programa se ejecuta en **AEM as a Cloud Service**.
-* El entorno elegido es **DEV** (límite temporal de Alpha).
-* La última canalización para ese entorno finalizó **correctamente** y se ejecutó hace **menos de 10 días**.
-* El estado del entorno es **En ejecución** y no hay ninguna canalización en curso.
+* El programa se ejecuta en AEM as a Cloud Service.
+* El entorno elegido es `Development` (límite temporal de Alpha).
+* La última canalización para ese entorno se ejecutó correctamente hace **menos de 10 días**.
+* El estado del entorno es *En ejecución* y no hay ninguna canalización en curso.
 * La versión de código fuente de destino que desea restaurar se implementó **en un plazo de 30 días**.
 
 Si alguna comprobación falla, Cloud Manager abre el siguiente cuadro de diálogo que enumera una o más condiciones incumplidas y deshabilita **Confirm**, lo que impide la restauración.
