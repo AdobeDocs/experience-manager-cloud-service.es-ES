@@ -1,12 +1,12 @@
 ---
-title: Restaurar el código Source anterior implementado en AEM as a Cloud Service
+title: Restaurar el código de Source anterior implementado
 description: Aprenda a restaurar un entorno a su última compilación correcta &ndash; no se requiere la ejecución de la canalización.
 feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: d5a740aa3133504f394933bc77a735f7d14230ba
+source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '523'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->&#x200B;>La función descrita en este artículo solo está disponible a través del programa pionero alpha. Para suscribirse al alfa, vea [Reversión en un solo clic para implementaciones de canalización](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>>La función descrita en este artículo solo está disponible a través del programa pionero alpha. Para suscribirse al alfa, vea [Reversión en un solo clic para implementaciones de canalización](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Use **Restaurar código anterior implementado** para revertir un entorno instantáneamente a su última compilación correcta; no se requiere la ejecución de la canalización.
 
