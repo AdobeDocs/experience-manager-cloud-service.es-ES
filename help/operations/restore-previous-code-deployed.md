@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->>La función descrita en este artículo solo está disponible a través del programa pionero alpha. Para suscribirse al alfa, vea [Reversión en un solo clic para implementaciones de canalización](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>&#x200B;>La función descrita en este artículo solo está disponible a través del programa pionero alpha. Para suscribirse al alfa, vea [Reversión en un solo clic para implementaciones de canalización](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Use **Restaurar código anterior implementado** para revertir un entorno instantáneamente a su última compilación correcta; no se requiere la ejecución de la canalización.
 
