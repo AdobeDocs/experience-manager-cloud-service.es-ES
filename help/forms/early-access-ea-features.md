@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2219'
 ht-degree: 28%
 
 ---
@@ -72,21 +72,6 @@ Esto es lo que más Conversational Forms trae:
 
 
 Los Forms de conversación son algo más que un nuevo aspecto: cambian el panorama de la experiencia del usuario.  Aumente la participación, reduzca el abandono de formularios y haga que la interacción con su sitio web sea una experiencia más agradable para todos.
-
-
-### Creación de WYSIWYG para Edge Delivery Services
-
-La creación de WYSIWYG proporciona interfaces de WYSIWYG (editor universal y editor de Forms adaptable) para crear y publicar formularios adaptables en Edge Delivery Services. WYSIWYG Authoring ofrece todas las capacidades de [Creación basada en documentos](/help/edge/docs/forms/overview.md#document-based-authoring-features), además de una amplia gama de características adicionales:
-
-* Editor de reglas avanzado para crear lógica compleja.
-* Extensibilidad del lado del servidor para funcionalidades personalizadas.
-* Experiencia de edición WYSIWYG para facilitar la creación y visualización de formularios.
-* Funcionalidad de documento de registro para crear archivos a prueba de manipulaciones de los datos enviados.
-* Integración con Adobe Sign para firmas electrónicas.
-* Integración con varias fuentes de datos para rellenar previamente formularios y enviar datos.
-* El modelo de datos de formulario sirve para definir la estructura de datos y las interacciones con varias fuentes de datos.
-* Capacidad para elegir entre varias acciones de envío para administrar los envíos de formularios, incluido el envío de datos a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics y muchas más fuentes de datos.
-
 
 ### Conector de AEM Forms a Marketo
 

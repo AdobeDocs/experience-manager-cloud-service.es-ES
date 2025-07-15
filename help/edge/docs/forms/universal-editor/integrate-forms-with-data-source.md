@@ -4,10 +4,10 @@ description: Aprenda a crear formularios basados en un modelo de datos de formul
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1207'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1271'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ La integración de formularios con un modelo de datos de formulario (FDM) en el 
 
 * Si no ve el icono **Fuentes de datos** en su interfaz del editor universal o la propiedad **Referencia de enlace** en el panel de propiedades de la derecha, habilite la extensión **Fuente de datos** en **Extension Manager**.
 
-  ![Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![Captura de pantalla de la interfaz de Extension Manager del editor universal que muestra las extensiones disponibles, incluida la extensión de fuentes de datos que se puede habilitar para la integración de formularios](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
   Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar las extensiones del editor universal.
 
@@ -79,7 +79,7 @@ Cuando se crea un formulario basado en un esquema, se configura automáticamente
 
    Tan pronto como haga clic en **[!UICONTROL Crear]**, el formulario se abre en el editor universal para la creación.
 
-   ![Crear el formulario](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+   ![Captura de pantalla del editor universal que muestra un formulario basado en esquema con campos de formulario previamente rellenados y el explorador de contenido que muestra los elementos de origen de datos disponibles](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
    El formulario se crea utilizando los elementos de datos de la fuente de datos asociada, con los campos de formulario que tienen enlaces de datos preconfigurados.
 
@@ -131,7 +131,7 @@ Cuando se crea un formulario no basado en un esquema, no se configura ninguna fu
 
    También puede arrastrar y soltar estos elementos para crear su formulario adaptable. Al hacer clic en **[!UICONTROL Añadir]**, los elementos seleccionados en la pestaña **[!UICONTROL Fuente de datos]** se añaden al formulario y aparece una marca de verificación delante de los elementos añadidos.
 
-   ![Crear formulario](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
+   ![Captura de pantalla que muestra el editor universal con un formulario sin esquema que se está creando al arrastrar y soltar elementos de datos de la pestaña Data Source en la estructura del formulario](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
 Puede añadir un enlace de datos a un campo de formulario seleccionándolo en la propiedad **Referencia de enlace**. Por ejemplo, vamos a añadir una referencia de enlace de datos al cuadro de texto **Id** que ya está presente en el formulario.
 Para seleccionar el enlace de datos para el campo de formulario del árbol de fuentes de datos, realice los siguientes pasos:

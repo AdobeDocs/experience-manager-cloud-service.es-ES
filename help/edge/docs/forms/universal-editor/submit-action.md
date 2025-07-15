@@ -4,14 +4,52 @@ description: Configure acciones de envío para un formulario adaptable.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 78%
 
 ---
 
 # Acción de envío de un formulario adaptable
+
+## Información general
+
+El envío de formularios es el paso final crítico del recorrido del usuario, es donde se procesan los datos recopilados y se realizan las acciones. Este documento proporciona una guía completa para configurar y administrar las acciones de envío para Forms adaptable en el editor universal.
+
+### Lo que aprenderá
+
+Al final de este documento, comprenderá lo siguiente:
+
+* Configurar diferentes tipos de acciones de envío para los formularios
+* Configurar envíos de extremos REST para la integración con sistemas externos
+* Configuración de envíos de correos electrónicos para respuestas de formulario
+* Implementar acciones de envío personalizadas para necesidades comerciales específicas
+* Gestionar la validación del formulario y los escenarios de error durante el envío
+
+### Audiencia objetivo
+
+Esta guía está diseñada para:
+
+* **Desarrolladores de formularios** que implementan la lógica de envío
+* **Integradores de sistemas** que conectan formularios con sistemas back-end
+* **Analistas de negocios** están definiendo flujos de trabajo de formularios
+* **Arquitectos técnicos** diseñan procesos de envío de formularios
+
+### Acciones de envío disponibles
+
+El editor universal proporciona dos tipos de acciones de envío principales:
+
+1. **Enviar al extremo REST** * Enviar datos de formulario a los extremos de API
+2. **Enviar correo electrónico** * Enviar respuestas de formulario por correo electrónico
+
+### Requisitos previos
+
+Antes de configurar las acciones de envío, asegúrese de lo siguiente:
+
+* Acceso al editor universal
+* Permisos adecuados para la configuración del formulario
+* Comprensión del punto final de envío de destinatario o de la configuración de correo electrónico
 
 Una acción de envío especifica el destino de los datos recopilados mediante un formulario adaptable. El proceso de envío comienza cuando el usuario hace clic en el botón **[!UICONTROL Enviar]** del formulario. AEM Forms ofrece dos tipos de acciones de envío que se describen a continuación, y le permite crear y utilizar acciones de envío personalizadas para satisfacer sus necesidades específicas. Las acciones de envío listas para usar son las siguientes:
 
@@ -42,7 +80,7 @@ Para configurar un punto final REST:
 1. Especifique la URL de punto final REST.
 1. También puede **Habilitar la petición POST** y proporcionar una URL para publicar la solicitud. 
 
-![Habilitar petición de publicación para formularios adaptables](/help/forms/assets/enable-post-request-ue.png)
+![Captura de pantalla del panel de propiedades del Editor universal que muestra los campos de configuración del extremo REST, incluida la entrada de URL y la opción Habilitar solicitud POST para el envío de formularios](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -124,7 +162,7 @@ Para configurar una acción de envío como un correo electrónico para el envío
         * **Use External Template**: Enables the use of an external email template for formatting the email content. Provide the URL or path to the External template path to integrate a pre-designed email template hosted in your AEM Assets folder.
         * **Include Attachment**: Specifies whether the submitted form data should include an attachment submitted through the form in the email.
 
-    {width=50%,height=50%}![Enable post request for adaptive forms](/help/forms/assets/email-config-ue.png)
+    ![Screenshot of the Universal Editor email configuration panel showing fields for From, To, CC, BCC, Subject, and options for external templates and attachments](/help/forms/assets/email-config-ue.png)
 
 -->
 

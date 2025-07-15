@@ -4,10 +4,10 @@ description: En este artículo se explica cómo crear formularios adaptables sel
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
-workflow-type: ht
-source-wordcount: '1626'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1687'
+ht-degree: 95%
 
 ---
 
@@ -49,11 +49,11 @@ Diagrama de flujo de decisión como guía para la configuración y publicación 
 
 Siga estos pasos para crear formularios en AEM y publicarlos en Edge Delivery Services:
 
-[1. Elegir una plantilla y crear el formulario](#choose-a-template-and-create-the-form)
+[&#x200B;1. Elegir una plantilla y crear el formulario](#choose-a-template-and-create-the-form)
 
-[2. Crear el formulario](#author-the-form)
+[&#x200B;2. Crear el formulario](#author-the-form)
 
-[3. Publicar un formulario](#publish-a-form)
+[&#x200B;3. Publicar un formulario](#publish-a-form)
 
 ### Elegir una plantilla y crear el formulario
 
@@ -85,7 +85,7 @@ Siga estos pasos para elegir la plantilla y crear el formulario:
 
    Al hacer clic en **[!UICONTROL Creación]**, el formulario se abre en el editor universal para la creación.
 
-   ![Crear el formulario](/help/edge/assets/author-form.png)
+   ![Captura de pantalla del editor universal que muestra un formulario creado con la paleta de componentes a la izquierda, el lienzo del formulario en el centro y el panel de propiedades a la derecha](/help/edge/assets/author-form.png)
 1. Haga clic en **[!UICONTROL Crear]** para crear el formulario. Ahora, puede [crear el formulario mediante el editor universal](#author-the-form).
 
 >[!TAB Plantilla basada en componentes principales]
@@ -135,7 +135,7 @@ Realice los siguientes pasos para crear formularios mediante el editor universal
 
    La siguiente captura de pantalla muestra el `Registration Form` creado en el editor universal:
 
-   ![Formulario “Contáctenos”](/help/edge/assets/contact-us.png)
+   ![Captura de pantalla de un formulario de contacto completado en el editor universal que muestra campos de formulario para nombre, correo electrónico, teléfono y mensaje con estilo y diseño adecuados](/help/edge/assets/contact-us.png)
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ Para acceder al formulario en Edge Delivery Services, es obligatorio publicarlo.
 
 1. Publique el formulario haciendo clic en el botón **[!UICONTROL Publicar]** en la esquina superior derecha del editor universal.
 
-![publicar formulario](/help/edge/assets/publish-form.png)
+![Captura de pantalla del editor universal que muestra el cuadro de diálogo de publicación con opciones de publicación de formularios y botones de confirmación](/help/edge/assets/publish-form.png)
 
 >[!NOTE]
 >

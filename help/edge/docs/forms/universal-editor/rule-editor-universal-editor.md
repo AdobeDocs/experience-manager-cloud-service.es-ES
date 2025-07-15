@@ -4,17 +4,17 @@ description: El editor de reglas de formularios adaptables permite añadir un co
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2214'
-ht-degree: 99%
+source-wordcount: '2253'
+ht-degree: 98%
 
 ---
 
 
 # Introducción al editor de reglas en la creación de WYSIWYG
 
-<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es “adobe” y el nombre del repositorio es “abc”.</span>
 
 
 Puede añadir el comportamiento del formulario dinámico mediante el Editor de reglas, que le permite crear reglas. Estas reglas habilitan la visibilidad de campo condicional, automatizan los cálculos en función de los datos introducidos por el usuario y mejoran la experiencia general del usuario. Al optimizar el proceso de rellenado de formularios, el Editor de reglas garantiza tanto la precisión como la eficacia.
@@ -188,7 +188,7 @@ Ahora, vamos a explorar cómo [escribir reglas en el Editor de reglas](#write-ru
 
 Para comprender cómo escribir reglas en el Editor de reglas visual, veamos un ejemplo sencillo de un formulario de cálculo de impuestos:
 
-![Ejemplo del Editor de reglas](/help/edge/docs/forms/assets/rule-editor-1.png)
+![Captura de pantalla de la interfaz del Editor de reglas que muestra la creación de una regla condicional con lógica When-Then para la visibilidad del campo de formulario](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 En el formulario descrito anteriormente, el usuario introduce el salario bruto. En función de esta entrada, se muestra un campo condicional y se calcula el impuesto a pagar.
 
@@ -209,7 +209,7 @@ En el formulario descrito anteriormente, el usuario introduce el salario bruto. 
 
 Para escribir las reglas, realice los siguientes pasos:
 
-### 1. Crear un formulario
+### &#x200B;1. Crear un formulario
 
 Para crear un formulario en el Editor universal:
 
@@ -223,9 +223,9 @@ Para crear un formulario en el Editor universal:
    * Enviar (botón Enviar)
 1. Ocultar el campo de formulario `Additional Deduction` abriendo su `Properties`.
 
-   ![Ejemplo del Editor de reglas](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![Captura de pantalla de un formulario de cálculo de impuestos con campos de entrada para el salario bruto, el estado civil y los hijos a cargo, que muestra la estructura del formulario antes de que se apliquen las reglas](/help/edge/docs/forms/assets/rule-editor2.png)
 
-### 2. Agregar una regla de condición para un campo de formulario
+### &#x200B;2. Agregar una regla de condición para un campo de formulario
 
 Una vez haya creado el formulario, escriba la primera regla para mostrar el campo `Additional Deduction` solo si el salario bruto supera los 50 000 $. Para añadir una regla de condición:
 
@@ -261,7 +261,7 @@ La regla aparece de la siguiente manera en el Editor de reglas.
 >
 > Como alternativa, puede escribir una regla Show en el campo Deducción adicional, en lugar de una regla When en el campo Salario bruto, para implementar el mismo comportamiento.
 
-### 3. Añadir reglas de cálculo para los campos de formulario
+### &#x200B;3. Añadir reglas de cálculo para los campos de formulario
 
 A continuación, escriba una regla para calcular `Taxable Income`, que es la diferencia entre `Gross Salary` y `Additional Deduction` (si corresponde). Para añadir una regla de cálculo en el campo **[!UICONTROL Ingresos gravables]**, realice los siguientes pasos:
 
@@ -278,7 +278,6 @@ A continuación, escriba una regla para calcular `Taxable Income`, que es la dif
    * Seleccione **[!UICONTROL Menos]** en el campo **[!UICONTROL Seleccionar operador]**.
 
    * Seleccione o arrastre y suelte desde la pestaña Objeto de formularios el campo **[!UICONTROL Deducción adicional]** en el otro campo **[!UICONTROL Soltar objeto o seleccionar aquí]**.
-
      ![Ejemplo15 del Editor de reglas](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Seleccione **[!UICONTROL Listo]** para guardar la regla.
@@ -296,7 +295,6 @@ A continuación, escriba una regla para calcular `Taxable Income`, que es la dif
    * Seleccione **[!UICONTROL Multiplicado por]** en el campo **[!UICONTROL Seleccionar operador]**.
 
    * Seleccione **Número** del campo **[!UICONTROL Seleccionar opción]** e introduzca el valor como `10` en el campo **[!UICONTROL Escribir un número]**.
-
      ![Ejemplo18 del Editor de reglas](/help/edge/docs/forms/assets/rule-editor21.png)
 1. A continuación, seleccione el área resaltada alrededor del campo de expresión y haga clic en **[!UICONTROL Ampliar expresión]**.
    ![Ejemplo19 del Editor de reglas](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -304,7 +302,7 @@ A continuación, escriba una regla para calcular `Taxable Income`, que es la dif
    ![Ejemplo20 del Editor de reglas](/help/edge/docs/forms/assets/rule-editor23.png)
 1. Seleccione **[!UICONTROL Listo]** para guardar la regla.
 
-### 4. Previsualizar un formulario
+### &#x200B;4. Previsualizar un formulario
 
 Ahora, al obtener una vista previa del formulario e introducir el **Salario bruto** como `60,000`, aparecerá el campo **Deducción adicional**, y se calcularán en consecuencia los **Ingresos gravables** e **Impuestos por pagar**.
 
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![Añadir una función personalizada](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Uso de una función personalizada en el Editor de reglas
@@ -387,6 +384,6 @@ En este artículo se ofrece información limitada sobre el Editor de reglas disp
 
 {{see-also-rule-editor}}
 
-## Consulte también
+## Vea también
 
 {{universal-editor-see-also}}

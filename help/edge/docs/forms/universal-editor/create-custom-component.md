@@ -4,16 +4,16 @@ description: Creación de componentes personalizados para un formulario EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1773'
-ht-degree: 98%
+source-wordcount: '1841'
+ht-degree: 95%
 
 ---
 
 # Generación de componentes personalizados en creación de WYSIWYG
 
-<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es “adobe” y el nombre del repositorio es “abc”.</span>
 
 
 Los formularios de Edge Delivery Services ofrecen personalización, lo que permite a los desarrolladores front-end generar componentes de formulario personalizados. Estos componentes personalizados se integran a la perfección en la experiencia de creación de WYSIWYG, lo que permite a los autores de formularios añadirlos, configurarlos y administrarlos fácilmente dentro del editor de formularios. Con los componentes personalizados, los autores pueden mejorar la funcionalidad a la vez que garantizan un proceso de creación fluido e intuitivo.
@@ -39,11 +39,11 @@ Añadir un componente personalizado en el Editor universal significa que hay un 
 
 Veamos un ejemplo de creación de un nuevo componente personalizado denominado **rango**. El componente de rango aparece como una línea recta, sin mostrar valores como el valor mínimo, máximo o seleccionado.
 
-![Estilo del componente de rango](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![Representación visual de un componente de intervalo que muestra un control deslizante con valores mínimos y máximos y un indicador de valor seleccionado](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 Al final de este artículo, aprenderá a crear componentes personalizados desde cero.
 
-### 1. Añadir una estructura para el nuevo componente personalizado
+### &#x200B;1. Añadir una estructura para el nuevo componente personalizado
 
 Para poder utilizar un componente personalizado, debe registrarse para que el Editor universal lo reconozca como una opción disponible. Esto se logra a través de una definición de componente, que incluye un identificador único, propiedades predeterminadas y la estructura del componente. Realice los siguientes pasos para que el componente personalizado esté disponible para la creación de formularios:
 
@@ -106,7 +106,7 @@ El archivo `_range.json`, después de agregar la definición del componente, es 
 >
 > Todos los componentes relacionados con formularios siguen el mismo enfoque que los sitios al añadir bloques al Editor universal. Consulte el artículo [Creación de bloques instrumentados para su uso con el Editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) para obtener más información.
 
-### 2. Definir las propiedades del componente personalizado para la creación
+### &#x200B;2. Definir las propiedades del componente personalizado para la creación
 
 El componente personalizado incluye un modelo de componente que especifica qué propiedades puede configurar el autor del formulario. Estas propiedades aparecen en el cuadro de diálogo **Propiedades** del Editor universal, lo que permite a los autores ajustar la configuración, como etiquetas, reglas de validación, estilos y otros atributos. Para definir propiedades:
 
@@ -253,7 +253,7 @@ Por lo tanto, el archivo `_range.json` final, después de añadir la definición
 ![definición y modelo del componente](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
 
 
-### 3. Hacer visible el componente personalizado en la lista de componentes de WYSIWYG
+### &#x200B;3. Hacer visible el componente personalizado en la lista de componentes de WYSIWYG
 
 Un filtro define en qué sección se puede utilizar el componente personalizado en el Editor universal. Esto garantiza que el componente solo se pueda usar en las secciones adecuadas, lo que mantiene la estructura y la facilidad de uso.
 
@@ -299,7 +299,7 @@ Para asegurarse de que el componente personalizado aparece en la lista de compon
 
 ![filtro de componente](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
-### 4. Registro del componente personalizado
+### &#x200B;4. Registro del componente personalizado
 
 Para habilitar que el bloque de formulario reconozca el componente personalizado y cargue sus propiedades definidas en el modelo de componente durante la creación del formulario, añada el valor `fd:viewType` de la definición del componente al archivo `mappings.js`.
 Para registrar un componente:
@@ -324,15 +324,15 @@ const OOTBComponentDecorators = ['file-input',
 
 Después de completar los pasos anteriores, el componente personalizado aparece en la lista de componentes del formulario en el Editor universal. A continuación, puede arrastrarlo y soltarlo en la sección del formulario.
 
-![componente de rango](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![Captura de pantalla de la paleta de componentes del editor universal que muestra el componente de rango personalizado disponible para arrastrar y soltar en formularios](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 La captura de pantalla siguiente muestra las propiedades del componente `range` agregado al modelo de componentes, que especifica las propiedades que el autor del formulario puede configurar:
 
-![Propiedades del componente de rango](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![Captura de pantalla del panel de propiedades del Editor universal que muestra la configuración configurable del componente rango, incluidas las propiedades básicas, las reglas de validación y las opciones de estilo](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 Ahora puede definir el comportamiento en tiempo de ejecución del componente personalizado añadiendo estilo y funcionalidad.
 
-### 5. Añadir el comportamiento de tiempo de ejecución para el componente personalizado
+### &#x200B;5. Añadir el comportamiento de tiempo de ejecución para el componente personalizado
 
 Puede modificar los componentes personalizados mediante marcado predefinido, tal como se explica en [Estilo de los campos de formulario](/help/edge/docs/forms/style-theme-forms.md). Esto se puede lograr con CSS personalizado (hojas de estilo en cascada) y código personalizado para mejorar el aspecto del componente. Añada el comportamiento de tiempo de ejecución del componente:
 
@@ -392,7 +392,6 @@ Puede modificar los componentes personalizados mediante marcado predefinido, tal
    float: right;
    }
    ```
-
    El código le ayuda a definir el estilo y el aspecto visual del componente personalizado.
 
 1. Para agregar la funcionalidad, vaya al archivo `/blocks/form/components/range/range.js` y añada la línea de código siguiente:
@@ -457,7 +456,7 @@ Puede modificar los componentes personalizados mediante marcado predefinido, tal
    Después de incorporar un estilo y una funcionalidad personalizados, se mejora el aspecto y el comportamiento del componente de rango. El diseño actualizado refleja los estilos aplicados, mientras que la funcionalidad añadida garantiza una experiencia del usuario más dinámica e interactiva.
 La siguiente captura de pantalla ilustra el componente de rango actualizado.
 
-![Estilo del componente de rango](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![El último componente de intervalo en acción que muestra un control deslizante con estilo, con una presentación de burbujas de valores y una funcionalidad interactiva en el editor universal](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## Preguntas frecuentes
 
@@ -510,6 +509,6 @@ Los tipos de campo admitidos para los formularios son los siguientes:
 * image
 * button
 
-## Consulte también
+## Vea también
 
 {{universal-editor-see-also}}
