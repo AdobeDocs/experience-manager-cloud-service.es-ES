@@ -3,10 +3,10 @@ title: Propiedades del Selector de recursos para la personalización
 description: Utilice el selector de recursos para buscar y recuperar metadatos y representaciones de recursos dentro de la aplicación.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 39%
+source-wordcount: '1420'
+ht-degree: 37%
 
 ---
 
@@ -47,16 +47,16 @@ Puede utilizar las propiedades del Selector de recursos para personalizar la for
 | *filterRepoList* | Función | No |  | Puede utilizar la función de devolución de llamada `filterRepoList` que llama al repositorio de Experience Manager y devuelve una lista filtrada de repositorios. |
 | *expiryOptions* | Función | | | Puede usar entre las dos propiedades siguientes: **getExpiryStatus**, que proporciona el estado de un recurso caducado. La función devuelve `EXPIRED`, `EXPIRING_SOON` o `NOT_EXPIRED` según la fecha de caducidad del recurso que proporcione. Consulte [personalizar recursos caducados](/help/assets/asset-selector-customization.md#customize-expired-assets). Además, puede usar **allowSelectionAndDrag**, en el que el valor de la función puede ser `true` o `false`. Cuando el valor se establece en `false`, el recurso caducado no se puede seleccionar ni arrastrar al lienzo. |
 | *showToast* | | No | | Permite que el Selector de recursos muestre un mensaje de mensaje personalizado para el recurso caducado. |
-| *metadataSchema* | Matriz | No | | Añada una matriz de campos que proporcione para recopilar metadatos del usuario. Con esta propiedad, también puede utilizar metadatos ocultos que se asignan automáticamente a un recurso, pero que no son visibles para el usuario. |
-| *onMetadataFormChange* | Función Callback | No | | Consta de `property` y `value`. `Property` es igual a *mapToProperty* del campo pasado desde *metadataSchema* cuyo valor se está actualizando. Mientras que `value` es igual al nuevo valor proporcionado como entrada. |
-| *targetUploadPath* | Cadena |  | `"/content/dam"` | La ruta de carga de destino para los archivos que tiene el valor predeterminado de raíz del repositorio de recursos. |
-| *hideUploadButton* | Booleano | | Falso | Garantiza si el botón de carga interno debe estar oculto o no. |
-| *onUploadStart* | Función | No |  | Es una función de llamada de retorno que se utiliza para pasar el origen de carga entre Dropbox, OneDrive o local. La sintaxis es `(uploadInfo: UploadInfo) => void` |
-| *importSettings* | Función | | | Habilita la compatibilidad para importar recursos de origen de terceros. `sourceTypes` utiliza una matriz de los orígenes de importación que desea habilitar. Las fuentes compatibles son Onedrive y Dropbox. La sintaxis es `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }` |
-| *onUploadComplete* | Función | No | | Es una función de llamada de retorno que se utiliza para pasar el estado de carga del archivo entre correcto, fallido o duplicado. La sintaxis es `(uploadStats: UploadStats) => void` |
-| *onFilesChange* | Función | No | | Es una función de llamada de retorno que se utiliza para mostrar el comportamiento de carga cuando se cambia un archivo. Pasa la nueva matriz de archivos pendientes de carga y el tipo de origen de la carga. El tipo de Source puede ser nulo en caso de error. La sintaxis es `(newFiles: File[], uploadType: UploadType) => void` |
-| *uploadingPlaceholder* | Cadena | | | Es una imagen de marcador de posición que reemplaza el formulario de metadatos cuando se inicia una carga del recurso. La sintaxis es `{ href: string; alt: string; } ` |
-| *uploadConfig* | Objeto | | | Es un objeto que contiene una configuración personalizada para la carga. |
+| *uploadConfig* | Objeto | | | Es un objeto que contiene una configuración personalizada para la carga. Consulte [configuración de carga](#asset-selector-customization.md#upload-config) para ver la facilidad de uso. |
+| *metadataSchema* | Matriz | No | | Esta propiedad está anidada en la propiedad `uploadConfig`. Añada una matriz de campos que proporcione para recopilar metadatos del usuario. Con esta propiedad, también puede utilizar metadatos ocultos que se asignan automáticamente a un recurso, pero que no son visibles para el usuario. |
+| *onMetadataFormChange* | Función Callback | No | | Esta propiedad está anidada en la propiedad `uploadConfig`. Consta de `property` y `value`. `Property` es igual a *mapToProperty* del campo pasado desde *metadataSchema* cuyo valor se está actualizando. Mientras que `value` es igual al nuevo valor proporcionado como entrada. |
+| *targetUploadPath* | Cadena |  | `"/content/dam"` | Esta propiedad está anidada en la propiedad `uploadConfig`. La ruta de carga de destino para los archivos que tiene el valor predeterminado de raíz del repositorio de recursos. |
+| *hideUploadButton* | Booleano | | Falso | Garantiza si el botón de carga interno debe estar oculto o no. Esta propiedad está anidada en la propiedad `uploadConfig`. |
+| *onUploadStart* | Función | No |  | Es una función de llamada de retorno que se utiliza para pasar el origen de carga entre Dropbox, OneDrive o local. La sintaxis es `(uploadInfo: UploadInfo) => void`. Esta propiedad está anidada en la propiedad `uploadConfig`. |
+| *importSettings* | Función | | | Habilita la compatibilidad para importar recursos de origen de terceros. `sourceTypes` utiliza una matriz de los orígenes de importación que desea habilitar. Las fuentes compatibles son Onedrive y Dropbox. La sintaxis es `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }`. Además, esta propiedad está anidada en la propiedad `uploadConfig`. |
+| *onUploadComplete* | Función | No | | Es una función de llamada de retorno que se utiliza para pasar el estado de carga del archivo entre correcto, fallido o duplicado. La sintaxis es `(uploadStats: UploadStats) => void`. Además, esta propiedad está anidada en la propiedad `uploadConfig`. |
+| *onFilesChange* | Función | No | | Esta propiedad está anidada en la propiedad `uploadConfig`. Es una función de llamada de retorno que se utiliza para mostrar el comportamiento de carga cuando se cambia un archivo. Pasa la nueva matriz de archivos pendientes de carga y el tipo de origen de la carga. El tipo de Source puede ser nulo en caso de error. La sintaxis es `(newFiles: File[], uploadType: UploadType) => void` |
+| *uploadingPlaceholder* | Cadena | | | Es una imagen de marcador de posición que reemplaza el formulario de metadatos cuando se inicia una carga del recurso. La sintaxis es `{ href: string; alt: string; }`. Además, esta propiedad está anidada en la propiedad `uploadConfig`. |
 | *featureSet* | Matriz | Cadena | | La propiedad `featureSet:[ ]` se usa para habilitar o deshabilitar una funcionalidad en particular en la aplicación Selector de recursos. Para habilitar el componente o una función, puede pasar un valor de cadena en la matriz o dejar la matriz vacía para deshabilitar ese componente.  Por ejemplo, si desea habilitar la funcionalidad de carga en el Selector de recursos, utilice la sintaxis `featureSet:[0:"upload"]`. Del mismo modo, puede usar `featureSet:[0:"collections"]` para habilitar colecciones en el Selector de recursos. Además, use `featureSet:[0:"detail-panel"]` para habilitar [el panel de detalles](overview-asset-selector.md#asset-details-and-metadata) de un recurso. Para usar estas características juntas, la sintaxis es `featureSet:["upload", "collections", "detail-panel"]`. |
 
 <!--

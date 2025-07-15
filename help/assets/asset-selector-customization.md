@@ -3,9 +3,9 @@ title: Personalizar la aplicación Selector de recursos
 description: Utilice funciones para personalizar el selector de recursos en la aplicación.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1261'
 ht-degree: 25%
 
 ---
@@ -408,9 +408,10 @@ const filterSchema = useMemo ((); => {
 
 ## Cargar en el selector de recursos {#upload-in-asset-selector}
 
-Puede cargar archivos o carpetas en el Selector de recursos desde su sistema de archivos local. Para cargar archivos mediante el sistema de archivos local, suele ser necesario utilizar una función de carga proporcionada por una aplicación de microfront-end del Selector de recursos. Varios fragmentos de código necesarios para invocar la carga en el selector de recursos implican:
+Puede cargar archivos o carpetas en el Selector de recursos desde su sistema de archivos local. Para cargar archivos mediante el sistema de archivos local, suele ser necesario utilizar una función de carga proporcionada por una aplicación de microfront-end del Selector de recursos. `upload` varios fragmentos de código necesarios para invocar la carga en el selector de recursos implican:
 
 * [Fragmento de código de formulario de carga básico](#basic-upload)
+* [Cargar configuración](#upload-config)
 * [Cargar con metadatos](#upload-with-metadata)
 * [Carga personalizada](#customized-upload)
 * [Carga mediante fuentes de terceros](#upload-using-third-party-source)
@@ -449,6 +450,25 @@ export const UploadExample = () => {
     )
 }
 ```
+
+### Cargar configuración {#upload-config}
+
+```
+uploadConfig: {
+        onUploadStart: action('onUploadStart'),
+        onUploadComplete: action('onUploadComplete'),
+        metadataSchema: [
+            {
+                mapToProperty: 'dam:assetStatus',
+                value: 'approved',
+                element: 'hidden',
+            },
+        ],
+        ... more properties
+     }, 
+```
+
+*Más propiedades incluyen `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`,`uploadingPlaceholder`*. Consulte [Propiedades del selector de recursos](#asset-selector-properties.md) para obtener más información.
 
 ### Cargar con metadatos {#upload-with-metadata}
 
