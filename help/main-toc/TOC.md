@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '6362'
 ht-degree: 99%
@@ -1075,7 +1075,6 @@ ht-degree: 99%
       + [Información general](/help/edge/docs/forms/overview.md)
       + [Configuración del envío para Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Preguntas frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-      + [Prácticas recomendadas para crear formularios](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
       + Creación de WYSIWYG {#universal-editor}
          + [Introducción al editor universal de formularios para Edge Delivery Services: Guía completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Cómo empezar a crear con el editor universal: tutorial paso a paso](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1110,6 +1109,7 @@ ht-degree: 99%
          + [Proteger los formularios: añadir seguridad reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Generar componentes de formulario personalizados: Guía para desarrolladores](/help/edge/docs/forms/custom-components-forms.md)
          + [Supervisar el rendimiento del formulario: guías de telemetría operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+   + [Prácticas recomendadas para crear formularios](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
    + Recursos de Edge Delivery  {#resources}
       + Barra de tareas  {#sidekick}
          + [Uso de la barra de tareas](/help/edge/docs/sidekick.md)
