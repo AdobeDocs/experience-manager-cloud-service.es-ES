@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
+source-git-commit: 5d00bed4008c70e81f3a70d219ddc411ec8bdc59
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '387'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Para obtener más información sobre las funciones nuevas y mejoradas y los prob
 
 ### Problemas conocidos {#known-issues-21484}
 
-Ninguna.
+* El SDK disponible en el portal de distribución de software tiene problemas para ejecutarse localmente. Continúe utilizando el SDK anterior para las pruebas locales.
 
 ### Características y API obsoletas {#deprecated-21484}
 
