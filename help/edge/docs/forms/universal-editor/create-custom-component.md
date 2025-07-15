@@ -4,16 +4,16 @@ description: Creación de componentes personalizados para un formulario EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1804'
 ht-degree: 95%
 
 ---
 
 # Generación de componentes personalizados en creación de WYSIWYG
 
-<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es “adobe” y el nombre del repositorio es “abc”.</span>
+<span class="preview"> Esta es una característica previa al lanzamiento disponible a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal previo al lanzamiento</a>. </span>
 
 
 Los formularios de Edge Delivery Services ofrecen personalización, lo que permite a los desarrolladores front-end generar componentes de formulario personalizados. Estos componentes personalizados se integran a la perfección en la experiencia de creación de WYSIWYG, lo que permite a los autores de formularios añadirlos, configurarlos y administrarlos fácilmente dentro del editor de formularios. Con los componentes personalizados, los autores pueden mejorar la funcionalidad a la vez que garantizan un proceso de creación fluido e intuitivo.
@@ -392,7 +392,6 @@ Puede modificar los componentes personalizados mediante marcado predefinido, tal
    float: right;
    }
    ```
-
    El código le ayuda a definir el estilo y el aspecto visual del componente personalizado.
 
 1. Para agregar la funcionalidad, vaya al archivo `/blocks/form/components/range/range.js` y añada la línea de código siguiente:
