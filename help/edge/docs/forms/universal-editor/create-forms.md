@@ -79,6 +79,7 @@ Siga estos pasos para elegir la plantilla y crear el formulario:
 
    1. Especifique el **Nombre** y **Título**.
    1. Especifique la **URL de GitHub**. Por ejemplo, si el repositorio de GitHub se llama `edsforms` y está ubicado en la cuenta `wkndforms`, la URL es la siguiente:
+
       `https://github.com/wkndforms/edsforms`
 
    ![Asistente para crear formularios](/help/edge/assets/create-form-wizard.png)
