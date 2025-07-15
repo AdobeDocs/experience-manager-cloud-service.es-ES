@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
+source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '507'
 ht-degree: 3%
 
 ---
@@ -34,9 +34,8 @@ La característica **Restaurar código anterior implementado** solo está dispon
 * Su organización está inscrita en el programa de adopción anticipada y el indicador de funcionalidad está activado.
 * El programa se ejecuta en AEM as a Cloud Service.
 * El entorno elegido es `Development` (límite temporal de Alpha).
-* La última canalización para ese entorno se ejecutó correctamente hace **menos de 10 días**.
+* La última canalización para ese entorno se ejecutó correctamente hace **menos de 30 días**.
 * El estado del entorno es *En ejecución* y no hay ninguna canalización en curso.
-* La versión de código fuente de destino que desea restaurar se implementó **en un plazo de 30 días**.
 
 Si alguna comprobación falla, Cloud Manager abre el siguiente cuadro de diálogo que enumera una o más condiciones incumplidas y deshabilita **Confirm**, lo que impide la restauración.
 
