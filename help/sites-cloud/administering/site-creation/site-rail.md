@@ -1,14 +1,14 @@
 ---
 title: Uso del panel del sitio para administrar el tema del sitio
-description: Conozca las potentes funciones del panel del sitio para ayudarle a personalizar y administrar fácilmente el tema del sitio.
+description: Conozca las potentes funciones del panel del sitio para ayudarle a personalizar y administrar fácilmente el tema del sitio para proyectos de creación tradicionales de AEM con envío de publicación.
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 076005e1ed1ca3303ed5843a3f27e0d707df5022
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 31%
+source-wordcount: '607'
+ht-degree: 36%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 31%
 
 {{traditional-aem}}
 
-Conozca las potentes funciones del panel del sitio para ayudarle a personalizar y administrar fácilmente el tema del sitio.
+Conozca las potentes funciones del panel del sitio para ayudarle a personalizar y administrar fácilmente el tema del sitio para proyectos de creación tradicionales de AEM con envío de publicación.
 
 ## Información general {#overview}
 
-El panel Sitio permite administrar los recursos de tema y plantilla del sitio. [Al igual que otros paneles](/help/sites-cloud/authoring/sites-console/console-side-panel.md), como el Árbol de contenido, Referencias o Línea de tiempo, el panel Sitio se muestra como el panel situado más a la izquierda en la consola Sitios y muestra información sobre el elemento seleccionado. A diferencia de otros paneles, el panel Sitio solo se aplica a las raíces del sitio.
+El panel Sitio permite administrar los recursos de temas y plantillas del sitio para los proyectos de creación tradicionales de AEM con [envío de publicación.](/help/sites-cloud/authoring/author-publish.md) [Al igual que otros paneles](/help/sites-cloud/authoring/sites-console/console-side-panel.md), como los paneles Árbol de contenido, Referencias o Línea de tiempo, el panel Sitio se muestra como el panel situado más a la izquierda en la consola Sitios y muestra información sobre el elemento seleccionado. A diferencia de otros paneles, el panel Sitio solo se aplica a las raíces del sitio.
 
 El panel Sitio se utiliza para administrar la información relacionada con el tema y la plantilla para el sitio, que incluye:
 
@@ -36,7 +36,7 @@ El panel Sitio se utiliza para administrar la información relacionada con el te
 
 ## Descarga de fuentes de temas {#downloading-theme-sources}
 
-Cuando crea un sitio en AEM basado en una [plantilla del sitio](site-templates.md), puede descargar el [tema del sitio](site-themes.md) mediante el panel Sitio.
+Cuando crea un sitio en AEM basado en una [plantilla de sitio](site-templates.md), puede descargar el [tema del sitio](site-themes.md) mediante el panel Sitio.
 
 Con el panel Sitio en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio.
 
@@ -46,7 +46,7 @@ Seleccione **Descargar fuentes de temas** para descargar una copia local del tem
 
 ## Descarga de recursos de plantilla {#downloading-template-resources}
 
-[Plantillas de sitio](site-templates.md) pueden contener información además de la estructura de contenido del sitio y el [tema del sitio](site-themes.md). Las plantillas de sitio pueden contener diseños de malla metálica u otros archivos relacionados con el sitio, por ejemplo.
+[Plantillas de sitio](site-templates.md) puede contener información además de la estructura de contenido del sitio y [tema del sitio.](site-themes.md) Las plantillas de sitio pueden contener diseños de malla metálica u otros archivos relacionados con el sitio, por ejemplo.
 
 Si el sitio se basa en una plantilla de sitio, y el panel Sitio se muestra en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio, incluidos los recursos del sitio adicionales.
 
@@ -86,4 +86,4 @@ Con el panel Sitio en la consola Sitios, seleccione la raíz del sitio para most
 
 ![Habilitar canalización front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 
-Para obtener más información, consulte el documento [Habilitar la canalización front-end](enable-front-end-pipeline.md).
+Para obtener más información, consulte el documento [Activación de la canalización front-end.](enable-front-end-pipeline.md)

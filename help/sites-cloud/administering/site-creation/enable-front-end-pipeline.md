@@ -1,26 +1,27 @@
 ---
 title: Activación de la canalización front-end
-description: Descubra cómo puede habilitar la canalización front-end para que los sitios existentes utilicen temas del sitio para personalizar el sitio más rápidamente.
+description: Descubra cómo puede habilitar la canalización front-end para los sitios de creación tradicionales de AEM existentes con envío de publicación para utilizar temas de sitio y personalizar el sitio más rápidamente.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 6ee55bed8ca09470291e0488321732beed7bab42
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 25%
+source-wordcount: '930'
+ht-degree: 24%
 
 ---
+
 
 # Activación de la canalización front-end {#enable-front-end-pipeline}
 
 {{traditional-aem}}
 
-Descubra cómo puede habilitar la canalización front-end para que los sitios existentes utilicen temas del sitio para personalizar el sitio más rápidamente.
+Descubra cómo puede habilitar la canalización front-end para los sitios de creación tradicionales de AEM existentes con envío de publicación para utilizar temas de sitio y personalizar el sitio más rápidamente.
 
 ## Información general {#overview}
 
-La canalización front-end es un mecanismo que puede implementar rápidamente solo el código front-end de sus sitios web en función de [temas del sitio](site-themes.md) y [plantillas de sitio](site-templates.md).
+La canalización front-end es un mecanismo para la creación tradicional de proyectos de AEM con [envío de publicación](/help/sites-cloud/authoring/author-publish.md) que puede implementar rápidamente solo el código front-end de sus sitios web en función de [temas del sitio](site-themes.md) y [plantillas de sitio](site-templates.md).
 
 Esta canalización solo administra el código front-end, lo que hace que el proceso de implementación sea más rápido que las implementaciones de pila completa. Permite a los desarrolladores de front-end personalizar el sitio fácilmente sin necesidad de tener conocimientos de AEM.
 
@@ -46,7 +47,7 @@ Al activar la canalización front-end para un sitio, AEM realiza los siguientes 
 
 ## Requisitos  {#requirements}
 
-AEM puede adaptar automáticamente el sitio existente para utilizar la canalización front-end. Para poder realizar este flujo de trabajo, el sitio debe usar [v2 o posterior del componente de página de los componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/wcm-components/page).
+AEM puede adaptar automáticamente el sitio existente para utilizar la canalización front-end. Para poder realizar este flujo de trabajo, el sitio debe usar [v2 o posterior del componente de página de los componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page).
 
 ## Activación de la canalización front-end {#enabling}
 
