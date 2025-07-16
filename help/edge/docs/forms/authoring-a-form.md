@@ -7,9 +7,9 @@ exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 hidefromToC: true
 source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1075'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,30 +79,30 @@ En la siguiente tabla se ofrece una comparación detallada de las característic
 | **Composición unificada con Sites** | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **Compatible con la incorporación de formularios** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Reglas (comportamiento dinámico)** | Editor de reglas avanzadas con funciones personalizadas | Editor de reglas avanzadas con funciones personalizadas | Editor de reglas avanzadas con funciones personalizadas | Limitado: mostrar/ocultar, calcular valor, funciones personalizadas | Limitado: requiere implementación personalizada |
-| **Compatible con los archivos adjuntos** | ✅ | ✅ | ✅ | ℹ️ (Acceso rápido) | ❌ |
+| **Compatible con los archivos adjuntos** | ✅ | ✅ | ✅ | ℹ   (Acceso anticipado) | ❌ |
 | **Compatibilidad con CAPTCHA** | reCAPTCHA v2/Enterprise, hCaptcha (EA), Turnstile (EA) | reCAPTCHA v2/Enterprise, Captcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | Requiere una integración personalizada |
-| **Características de envío** | Punto final REST, correo electrónico, modelo de datos de formulario (FDM), invocar flujo de trabajo de AEM, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | Punto final REST, correo electrónico, modelo de datos de formulario (FDM), invocar flujo de trabajo de AEM, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | Punto final REST, correo electrónico, modelo de datos de formulario (FDM), invocar flujo de trabajo de AEM, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | Sólo hoja de cálculo | Puntos finales de API personalizados |
+| **Características de envío** | Punto final REST, correo electrónico, modelo de datos de formulario (FDM), invocar flujo de trabajo de AEM, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | Punto final REST, correo electrónico, modelo de datos de formulario (FDM), invocar flujo de trabajo de AEM, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | Punto final REST, correo electrónico, modelo de datos de formulario (FDM), invocar flujo de trabajo de AEM, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion (EA) | Solo hoja de cálculo | Puntos finales de API personalizados |
 | **Esquema de datos** | FDM, personalizado | FDM, personalizado | FDM, personalizado | Personalizado | Personalizado |
 | **Relleno previo** | ✅ | ✅ | 💡 (a través del asistente) | ✅ | Implementación personalizada |
 | **Fragmentos** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **Editor de reglas visuales** | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **Localización** | ✅ | ✅ | 💡 (a través de Sites) | ℹ️ (Excel: manual, función de hojas de Google) | Implementación personalizada |
-| **Esquema de datos (árbol de datos)** | ✅ | ✅ | 💡 (a través de la extensión de IU) | ❌ | Implementación personalizada |
+| **Esquema de datos (árbol de datos)** | ✅ | ✅ | 💡 (a través de la extensión de la IU) | ❌ | Implementación personalizada |
 | **Compatible con plantillas** | ✅ | ✅ | Solo contenido inicial, sin directivas | ❌ | Implementación personalizada |
 | **Portal** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **Creación DoR** | ✅ | ✅ | 💡 (a través de Derlina) | ❌ | ❌ |
-| **Generación de DoR** | ✅ | ✅ | 💡 (FORMS-2475 Nuevo) | ❌ | ❌ |
+| **Creación de DoR** | ✅ | ✅ | 💡 (a través de Derlina) | ❌ | ❌ |
+| **Generación de DoR** | ✅ | ✅ | 💡 (Nuevo: FORMS-2475) | ❌ | ❌ |
 | **Tema** | ✅ | ✅ | ℹ️ (a nivel de proyecto) | ℹ️ (a nivel de proyecto) | Implementación personalizada |
 | **Componente personalizado** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **OOTB y funciones personalizadas** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Referencia al fragmento** | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **Integración de Sign** | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **Integración a Sign** | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **Compatibilidad con RTL** | ❌ | ✅ | 💡 | 💡 | Implementación personalizada |
 | **Experimentación** | ❌ | ❌ | ✅ | ✅ | Implementación personalizada |
 | **Administración de tareas mediante Workfront** | ❌ | ❌ | ✅ | ❌ | ❌ |
 | **Extensión de la personalización** | ❌ | ❌ | 💡 | ❌ | Implementación personalizada |
-| **Personalización del editor** | ❌ | ❌ | ✅ (a través de la extensión de IU) | ❌ | Implementación personalizada |
-| **Acción de envío** | ✅ | ✅ | ✅ | Sólo hoja de cálculo | Implementación personalizada |
+| **Personalización del editor** | ❌ | ❌ | ✅ (a través de la extensión de la IU) | ❌ | Implementación personalizada |
+| **Acción de envío** | ✅ | ✅ | ✅ | Solo hoja de cálculo | Implementación personalizada |
 
 
 ## Artículo relacionado
