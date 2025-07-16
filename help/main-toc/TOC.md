@@ -370,7 +370,7 @@ ht-degree: 99%
       + [Su bandeja de entrada](/help/sites-cloud/authoring/inbox.md)
       + [Consola Componentes](/help/sites-cloud/authoring/components-console.md)
       + [Selección de la ruta](/help/sites-cloud/authoring/path-selection.md)
-      + [Solución de problemas](/help/sites-cloud/authoring/troubleshooting.md)
+      + [Resolución de problemas](/help/sites-cloud/authoring/troubleshooting.md)
       + Consola Sites {#sites-console}
          + [La Consola Sites](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [Panel lateral de la consola](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
@@ -941,7 +941,7 @@ ht-degree: 99%
       + [Referencia de la API de comunicaciones del Cloud Service de AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [Referencia de la API de JavaScript del Cloud Service de AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [Referencia de la API de Java del Cloud Service de AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
-   + Solución de problemas {#troubleshooting-aem-forms-cloud-service}
+   + Resolución de problemas {#troubleshooting-aem-forms-cloud-service}
       + [Instalación y configuración](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Almacenamiento en caché de Dispatcher y CDN](/help/forms/troubleshooting-caching-performance.md)
       + [Reinicio del SDK de AEM](/help/forms/restart-aem-sdk.md)
@@ -1073,7 +1073,7 @@ ht-degree: 99%
       + [Redireccionamientos](/help/edge/docs/redirects.md)
    + Creación de formularios  {#build-forms}
       + [Información general](/help/edge/docs/forms/overview.md)
-      + [Configuración del envío para Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Configuración del envío de formularios de Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Preguntas frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + Creación de WYSIWYG {#universal-editor}
          + [Introducción al editor universal de formularios para Edge Delivery Services: Guía completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
