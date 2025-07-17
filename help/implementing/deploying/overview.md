@@ -4,7 +4,7 @@ description: Obtenga información acerca de los aspectos básicos y las práctic
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d6c5c70e8b6565a20866d392900aef219d3fd09d
 workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 93%
@@ -17,7 +17,7 @@ ht-degree: 93%
 
 Los fundamentos del desarrollo de código son similares en AEM as a Cloud Service en comparación con las soluciones AEM On Premise y Managed Services. Los desarrolladores escriben el código y lo prueban localmente, para a continuación enviarlo a entornos de AEM as a Cloud Service remotos. Se requiere Cloud Manager, que era una herramienta de entrega de contenido opcional para Managed Services. Esta herramienta de envío es ahora el único mecanismo para implementar código en entornos de desarrollo, fase y producción de AEM as a Cloud Service. Para ejecutar una validación y una depuración rápidas de las funcionalidades antes de implementar los entornos mencionados, el código se puede sincronizar de un entorno local a un [Entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-La actualización de la [versión de AEM](/help/implementing/deploying/aem-version-updates.md) siempre es un evento de implementación independiente de la inserción de [código personalizado](#customer-releases). Visto de otra manera, las versiones de código personalizado deben probarse con la versión de AEM que está en producción, ya que es la que se implementa en primer lugar. AEM Las actualizaciones de versión que se producen posteriormente (que son frecuentes y se aplican automáticamente), están pensadas para ser compatibles con versiones anteriores del código de cliente ya implementado.
+La actualización de la [versión de AEM](/help/implementing/deploying/aem-version-updates.md) siempre es un evento de implementación independiente de la inserción de [código personalizado](#customer-releases). Visto de otra manera, las versiones de código personalizado deben probarse con la versión de AEM que está en producción, ya que es la que se implementa en primer lugar. Las actualizaciones de versión de AEM que se producen posteriormente (que son frecuentes y se aplican automáticamente) están pensadas para ser compatibles con versiones anteriores del código de cliente ya implementado.
 
 El resto de este documento describe cómo los desarrolladores deben adaptar sus prácticas para que funcionen tanto con las actualizaciones de versiones de AEM as a Cloud Service como con las actualizaciones de clientes.
 
@@ -41,7 +41,7 @@ Para desarrollar un código personalizado para una versión interna, debe descar
 
 El siguiente vídeo proporciona información general de alto nivel sobre cómo implementar los códigos en AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/34039?quality=9&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -56,8 +56,8 @@ El siguiente vídeo proporciona información general de alto nivel sobre cómo i
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-Los clientes implementan código personalizado en entornos de nube a través de Cloud Manager. Cloud Manager transforma los paquetes de contenido ensamblados localmente en un artefacto que se ajusta al Modelo de funciones de Sling, que es el modo en que se describe una aplicación AEM as a Cloud Service al ejecutarse en un entorno de nube. Como resultado, al consultar los paquetes en [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en entornos de Cloud, el nombre incluye “cp2fm” y los paquetes transformados tienen todos los metadatos eliminados. No se puede interactuar con ellos, lo que significa que no se pueden descargar, replicar ni abrir. Para obtener documentación detallada sobre el convertidor, consulte [&#128279;](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)
-sling-org-apache-sling-feature-cpconverter en GitHub.
+Los clientes implementan código personalizado en entornos de nube a través de Cloud Manager. Cloud Manager transforma los paquetes de contenido ensamblados localmente en un artefacto que se ajusta al Modelo de funciones de Sling, que es el modo en que se describe una aplicación AEM as a Cloud Service al ejecutarse en un entorno de nube. Como resultado, al consultar los paquetes en [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en entornos de Cloud, el nombre incluye “cp2fm” y los paquetes transformados tienen todos los metadatos eliminados. No se puede interactuar con ellos, lo que significa que no se pueden descargar, replicar ni abrir. Para obtener documentación detallada sobre el convertidor, consulte [
+sling-org-apache-sling-feature-cpconverter en GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Los paquetes de contenido escritos para aplicaciones AEM as a Cloud Service deben tener una clara separación entre contenido inmutable y mutable. Cloud Manager solo instala el contenido mutable, lo que también genera el siguiente mensaje:
 
@@ -112,16 +112,16 @@ Después de cambiar a una nueva versión de la aplicación:
    * Configuración según el contexto (cualquier elemento en `/conf`) (agregar, modificar, eliminar)
    * Scripts (los paquetes pueden activar Instalar vínculos en varias etapas del proceso de instalación del paquete). Consulte la [documentación de Jackrabbit Filevault](https://jackrabbit.apache.org/filevault/installhooks.html) acerca de instalar vínculos. Tenga en cuenta que CS de AEM actualmente utiliza la versión 3.4.0 de Filevault, que limita instalar vínculos a usuarios que son administradores, usuarios del sistema y miembros del grupo de administradores.
 
-Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. AEM AEM La reestructuración para reflejar esta separación se llevó a cabo en la versión 6.5 de la y los detalles sobre la reestructuración recomendada del proyecto se encuentran en la [documentación de la versión 6.5 del proyecto](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es).
+Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. La reestructuración para reflejar esta separación se realizó en AEM 6.5 y los detalles sobre la reestructuración recomendada del proyecto se encuentran en la [documentación de AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es).
 
 >[!NOTE]
 >Los paquetes de contenido se implementan en todos los tipos de entorno (des., fase, prod.). No es posible limitar la implementación a un entorno específico. Esta limitación se aplica para garantizar la opción de una ejecución de prueba de ejecución automatizada. El contenido específico de un entorno requiere una instalación manual mediante el [administrador de paquetes](/help/implementing/developing/tools/package-manager.md).
 
-Además, no hay ningún mecanismo para revertir los cambios del paquete de contenido mutable después de haberlos aplicado. Si los clientes detectan un problema, pueden optar por solucionarlo en su próxima versión de código o, como último recurso, restaurar todo el sistema a un punto en el tiempo antes de la implementación.
+Además, no hay ningún mecanismo para restablecer los cambios del paquete de contenido mutable después de haberlos aplicado. Si los clientes detectan un problema, pueden optar por solucionarlo en su próxima versión de código o, como último recurso, restaurar todo el sistema a un punto en el tiempo antes de la implementación.
 
 Cualquier paquete de terceros incluido debe validarse como compatible con AEM as a Cloud Service; de lo contrario, su inclusión dará como resultado un error de implementación.
 
-AEM Como se mencionó anteriormente, los clientes con bases de código existentes deben ajustarse al ejercicio de reestructuración de repositorios necesario por los cambios de repositorio de 6.5 descritos en la [documentación de 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es).
+Como se mencionó anteriormente, los clientes con bases de código existentes deben ajustarse al ejercicio de reestructuración de repositorios necesario por los cambios de repositorio de la versión 6.5 descritos en la [documentación de AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es).
 
 ## RepoInit {#repoinit}
 
@@ -279,7 +279,7 @@ Cambiar los usuarios del servicio o las ACL que acceden al contenido o al códig
 
 ### Cambios en el índice {#index-changes}
 
-Si se realizan cambios en los índices, es importante que la versión nueva siga utilizando sus índices hasta que finalice, mientras que la versión antigua utiliza su propio conjunto modificado de índices. El desarrollador debe seguir las técnicas de administración de índices descritas en [Búsqueda de contenido e indexación](/help/operations/indexing.md).
+Si se realizan cambios en los índices, es importante que la versión antigua siga utilizando sus índices hasta que finalice, mientras que la nueva versión utiliza su propio conjunto modificado de índices. El desarrollador debe seguir las técnicas de administración de índices descritas en [Búsqueda de contenido e indexación](/help/operations/indexing.md).
 
 ### Codificación conservadora para retrocesos {#conservative-coding-for-rollbacks}
 
