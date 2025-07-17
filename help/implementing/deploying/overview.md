@@ -41,7 +41,7 @@ Para desarrollar un código personalizado para una versión interna, debe descar
 
 El siguiente vídeo proporciona información general de alto nivel sobre cómo implementar los códigos en AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/34039?quality=9&captions=spa)
 
 <!--
 >[!NOTE]
