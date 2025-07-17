@@ -15,7 +15,7 @@ ht-degree: 4%
 
 La implementación modernizada de OpenAPI de la API de administración de fragmentos de contenido permite a los desarrolladores realizar mediante programación operaciones de Crear, Leer, Actualizar y Eliminar en AEM Author para administrar modelos de fragmentos de contenido y fragmentos de contenido almacenados en AEM. Estas API admiten una serie de casos de uso.
 
-El uso existente de [Assets HTTP API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) para fragmentos de contenido debe migrarse a la nueva OpenAPI de administración de fragmentos de contenido. Para obtener documentación completa, consulte [API de administración de fragmentos de contenido](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+El uso existente de [Assets HTTP API](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) para fragmentos de contenido debe migrarse a la nueva OpenAPI de administración de fragmentos de contenido. Para obtener documentación completa, consulte [API de administración de fragmentos de contenido](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
 
 >[!NOTE]
 >
