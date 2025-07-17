@@ -77,7 +77,7 @@ Para controlar 500 errores, el nombre de archivo de la secuencia de comandos del
 >[!NOTE]
 >
 >En AEM as a Cloud Service, la CDN proporciona una página de error genérica cuando se recibe un error 5XX del backend. Para permitir que pase la respuesta real del servidor, debe agregar el siguiente encabezado a la respuesta: `x-aem-error-pass: true`.
->>Esto solo funciona para respuestas procedentes de AEM o de la capa Apache/Dispatcher. Otros errores inesperados procedentes de capas de infraestructura intermedias seguirán mostrando la página de error genérica.
+>&#x200B;>Esto solo funciona para respuestas procedentes de AEM o de la capa Apache/Dispatcher. Otros errores inesperados procedentes de capas de infraestructura intermedias seguirán mostrando la página de error genérica.
 
 >[!CAUTION]
 >
