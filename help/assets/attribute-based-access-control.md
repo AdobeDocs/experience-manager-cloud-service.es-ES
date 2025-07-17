@@ -2,10 +2,11 @@
 title: Control de acceso basado en atributos
 description: Obtenga información sobre cómo habilitar el control de acceso basado en atributos para definir reglas basadas en metadatos para definir el nivel de acceso a los recursos disponibles en Content Hub
 role: Admin
-source-git-commit: 49a70e1564a5b1de4ff16a40ccd8f06df53530e7
+exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
+source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 0%
+source-wordcount: '976'
+ht-degree: 4%
 
 ---
 
@@ -25,11 +26,22 @@ Algunas de las ventajas clave del control de acceso basado en atributos son:
 
 * Permite a los administradores cargar recursos y determinar de forma retroactiva las estructuras de permisos
 
-* Reduce el número de duplicados: mejora la integridad del recurso. Los duplicados son necesarios en los permisos basados en carpetas cuando los mismos recursos se comparten con diferentes grupos.
+* Reduce el número de duplicados: mejora la integridad de los recursos. Los duplicados son necesarios en los permisos basados en carpetas cuando los mismos recursos se comparten con diferentes grupos.
 
 ## ¿Cómo se habilita el control de acceso basado en atributos? {#enable-attribute-based-access-control}
 
-Por el momento, no puede crear reglas de control de acceso basadas en atributos por su cuenta mediante la interfaz de usuario de Content Hub. Cree un vale de soporte de Adobe para definir reglas en una hoja de cálculo utilizando las directrices definidas en este artículo.
+Por el momento, no puede crear reglas de control de acceso basadas en atributos por su cuenta mediante la interfaz de usuario de Content Hub.
+
+Haga clic en **Descargar hoja de cálculo** para descargar y definir reglas en una hoja de cálculo. Cree un ticket de asistencia de Adobe y proporcione las reglas definidas en la hoja de cálculo a Adobe.
+
+[!BADGE Descargar hoja de cálculo]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+
+
+Defina las reglas en la hoja de cálculo siguiendo las directrices definidas en este artículo.
+
+>[!IMPORTANT]
+>
+> Después de definir las reglas, vaya a la ficha **Errores de validación** de la hoja de cálculo y haga clic en **Ejecutar validaciones ABAC**. **Todas las validaciones pasadas** confirman que puede proporcionar las reglas definidas a Adobe.
 
 ## Ejemplo de caso de uso de Control de acceso basado en atributos {#example-metadata-based-rules}
 
@@ -84,13 +96,3 @@ Esto le permite escribir reglas sencillas y expresivas, como: ALLOW if region = 
 * Capture la intención comercial de la regla en un comentario, independientemente de si la condición está escrita correctamente, ya que la intención nos ayuda a validar y corregir la lógica, si es necesario.
 
 * Los archivos PDF de licencia, que se establecen para DRM deben ser visibles para todos, de modo que los usuarios puedan verlos cuando descarguen el recurso con la licencia.
-
-
-
-
-
-
-
-
-
-
