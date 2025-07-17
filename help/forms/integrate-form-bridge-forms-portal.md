@@ -21,7 +21,7 @@ ht-degree: 82%
 <span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
-FormBridge es una API de HTML5 Forms Bridge que le permite interactuar con un formulario. Para obtener la referencia de la API de FormBridge, consulte [Referencia de la API de FormBridge](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).
+FormBridge es una API de HTML5 Forms Bridge que le permite interactuar con un formulario. Para obtener la referencia de la API de FormBridge, consulte [Referencia de la API de FormBridge](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).
 
 Puede utilizar la API de FormBridge para obtener o establecer los valores de los campos de formulario de la página HTML y enviar el formulario. Por ejemplo, puede utilizar la API para crear una experiencia similar a un asistente.
 

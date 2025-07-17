@@ -79,7 +79,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registrar un widget personalizado con el motor de scripts XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Cuando el código del widget personalizado esté listo, registre el widget con el motor de scripts mediante la `registerConfig` API para el [formulario Bridge](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis). Toma widgetConfigObject como entrada.
+Cuando el código del widget personalizado esté listo, registre el widget con el motor de scripts mediante la `registerConfig` API para el [formulario Bridge](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis). Toma widgetConfigObject como entrada.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
