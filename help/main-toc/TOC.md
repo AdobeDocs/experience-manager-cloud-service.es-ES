@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '6362'
+source-wordcount: '6521'
 ht-degree: 99%
 
 ---
@@ -908,6 +908,35 @@ ht-degree: 99%
          + [Creación y administración de revisiones para un formulario adaptable](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [Palabras clave en formularios adaptables](/help/forms/adaptive-forms-keywords.md)
       + [Vista previa de un formulario](/help/forms/previewing-forms.md)
+   + Formularios HTML5 {#html5-forms}
+      + [Introducción a los formularios HTML5](/help/forms/introductionhtml5.md)
+      + [Introducción a los formularios HTML5](/help/forms/get-started.md)
+      + [Arquitectura de los formularios HTML5](/help/forms/html5-forms-architecture.md)
+      + [Diferenciar entre las características de formularios HTML5 y PDF](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
+      + [Preguntas más frecuentes sobre formularios HTML5](/help/forms/faqhtml5.md)
+      + [Diseñar plantillas de formulario para formularios HTML5](/help/forms/designing-form-template.md)
+      + [Prácticas recomendadas para formularios HTML5](/help/forms/best-practices-for-html5-forms.md)
+      + [Diseñar formularios HTML5 accesibles](/help/forms/design-accessible-html5-forms.md)
+      + [Generar previsualización HTML5 de un formulario XDP](/help/forms/preview-xdp-forms-html.md)
+      + [Representar la plantilla de formulario para formularios HTML5](/help/forms/rendering-form-template.md)
+      + [Activar archivos adjuntos en un formulario HTML5](/help/forms/enabling-attachments-html5-form.md)
+      + [Proxy de servicio de formularios HTML5](/help/forms/service-proxy.md)
+      + [Optimizar formularios HTML5](/help/forms/optimize-html5-forms.md)
+      + [Lectores de pantalla para formularios HTML5](/help/forms/screen-readers.md)
+      + [Crear un perfil personalizado para formularios HTML5](/help/forms/custom-profile.md)
+      + [Idiomas que se escriben de derecha a izquierda en formularios HTML5](/help/forms/right-left-languages.md)
+      + [Integrar Form Bridge con el portal personalizado para formularios HTML5](/help/forms/integrate-form-bridge-forms-portal.md)
+      + [Crear apariciones personalizadas en formularios HTML5](/help/forms/custom-widgets.md)
+      + [Cambiar los estilos predeterminados de los formularios HTML5](/help/forms/changing-default-styles.md)
+      + [Compatibilidad con cláusula de imagen para formularios HTML5](/help/forms/picture-clause-support.md)
+      + [Crear tablas complejas accesibles en formularios HTML5](/help/forms/accessible-tables.md)
+      + [Crear estilos CSS para formularios HTML5](/help/forms/css-styles.md)
+      + [Personalizar mensajes de error para formularios HTML5](/help/forms/customzing-errors-html5-forms.md)
+      + [Guardar un formulario HTML5 como borrador](/help/forms/saving-html5-form-draft.md)
+      + [Habilitar el registro para formularios HTML5](/help/forms/enable-logs.md)
+      + [Depurar formularios HTML5](/help/forms/debug.md)
+      + [Compatibilidad con scripts para formularios HTML5](/help/forms/scripting-support.md)
+      + [Conjunto de formularios en AEM Forms](/help/forms/formset-in-aem-forms.md)
    + Comunicación interactiva {#interactive-communocation}
       + [Introducción a la comunicación interactiva](/help/forms/introduction-to-interactive-communication.md)
       + [Crear su primera comunicación interactiva](/help/forms/create-your-first-communication.md)

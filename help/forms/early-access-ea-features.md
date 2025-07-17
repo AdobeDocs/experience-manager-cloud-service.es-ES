@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 28%
+source-wordcount: '2467'
+ht-degree: 25%
 
 ---
 
@@ -130,6 +130,30 @@ Interactive Communications en Cloud es una potente solución para crear, adminis
 Puede conectar AEM Forms con Adobe Experience Platform (AEP) para aprovechar los perfiles y datos de los clientes con el fin de ofrecer experiencias de formulario personalizadas y flujos de trabajo descendentes de déclencheur basados en los envíos de formularios. Al enviar datos de formulario directamente a conjuntos de datos de AEP, puede enriquecer los perfiles de los clientes y obtener perspectivas más profundas sobre las interacciones de los usuarios.
 
 ¿Listo para empezar? [Más información sobre la integración de AEM Forms con Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+
+### AEM FORMS HTML5 FORMS
+
+AEM Forms HTML5 Forms le permite procesar plantillas de formulario XFA (arquitectura de Forms XML) existentes en formato HTML5, por lo que son accesibles en exploradores modernos y dispositivos móviles en los que no se admite PDF basado en XFA. Esta capacidad reduce la brecha entre PDF forms tradicional y las experiencias web modernas.
+
+![Vista previa de HTML5 Forms](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
+
+**Funcionalidades clave:**
+
+* **Procesamiento basado en HTML5 de plantillas de formulario XFA**: procese los formularios existentes basados en XFA en formato HTML5 para expandir la plataforma de cliente a dispositivos móviles (Apple iPad, tabletas Android, smartphones, etc.) compatibles con HTML5 pero que no admiten Adobe Reader con XFA Forms.
+
+* **Formularios preparados para dispositivos móviles**: HTML5 Forms ofrece numerosas funciones preparadas para dispositivos móviles, lo que le ayuda a ampliar sus soluciones y flujos de trabajo actuales a tabletas o smartphones con exploradores HTML5.
+
+* **Compatibilidad con accesibilidad**: HTML5 Forms utiliza el estándar de accesibilidad ARIA HTML5 y admite la navegación con pestañas, lo que los hace compatibles con lectores de pantalla comunes como JAWS y VoiceOver.
+
+* **Funciones de personalización**: puede personalizar el aspecto de los widgets existentes, crear sus propios widgets personalizados o utilizar estilos personalizados en formularios mediante tecnologías web estándar como CSS y JavaScript.
+
+* **Compatibilidad con idiomas de derecha a izquierda**: HTML5 Forms admite idiomas de derecha a izquierda como el hebreo, lo que permite mostrar y rellenar formularios en idiomas RTL.
+
+* **Compatibilidad con archivos adjuntos**: cargue, previsualice y envíe archivos adjuntos con formularios HTML5 para mejorar la recopilación de datos.
+
+* **Borrador al guardar**: guarde un formulario HTML5 como borrador y vuelva a rellenarlo en una fase posterior.
+
+¿Listo para empezar? La [Introducción a los formularios HTML5](/help/forms/introductionhtml5.md) proporciona una descripción general completa y una guía de introducción para esta innovación.
 
 ## Innovaciones adicionales de acceso anticipado
 
