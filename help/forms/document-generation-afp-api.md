@@ -3,16 +3,17 @@ title: ¿Cómo se utiliza la API de sincronización de salida AFP?
 description: Aprenda a utilizar la API de sincronización de salida AFP para recuperar y sincronizar representaciones de salida.
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
-source-git-commit: 0b86f3bf71505b69ef995369045b7c682d7db8e3
+exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
+source-git-commit: b6316401bea7d6593d89d15e70c50536df5f116c
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 10%
+source-wordcount: '235'
+ht-degree: 11%
 
 ---
 
 # Generar salida AFP mediante la API de AEM Forms
 
-<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a esta en el [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
+<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder en el [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
 
 Presentación de funciones avanzadas (AFP) es un formato de documento de alto rendimiento diseñado principalmente para fines de impresión.\
 Esta guía describe todos los pasos y configuraciones necesarios para generar la salida AFP mediante AEM Forms.
@@ -100,4 +101,4 @@ Puede descargar el archivo .yaml y cargarlo en Postman para comprobar la funcion
 
 Puede guardar la respuesta y abrir el archivo guardado en el lector AFP para verlo.
 
-![lector de PDF](/help/forms/assets/afp-pdf.png)
+<!-- ![PDF reader](/help/forms/assets/afp-pdf.png) -->
