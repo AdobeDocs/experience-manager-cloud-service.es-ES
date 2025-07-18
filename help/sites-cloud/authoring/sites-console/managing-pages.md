@@ -1,24 +1,24 @@
 ---
 title: Administrar páginas
-description: AEM Obtenga información sobre cómo administrar las páginas de su sitio web en las que se incluye el movimiento, la copia y la eliminación de sitios web en la.
+description: Obtenga información sobre cómo administrar las páginas de su sitio web en AEM, como mover, copiar y eliminar.
 exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 64%
+source-wordcount: '1329'
+ht-degree: 61%
 
 ---
 
 # Administrar páginas {#managing-pages}
 
-AEM Obtenga información sobre cómo administrar las páginas de su sitio web en las que se incluye el movimiento, la copia y la eliminación de sitios web en la.
+Obtenga información sobre cómo administrar las páginas de su sitio web en AEM, como mover, copiar y eliminar.
 
 >[!TIP]
 >
->AEM Antes de empezar a administrar las páginas, familiarícese con [cómo se organizan las páginas en la organización de las páginas en la organización de las páginas en la organización de las páginas en la organización de las páginas en el sitio](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
+>Antes de empezar a administrar las páginas, familiarícese con [la organización de las páginas en AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 >[!TIP]
 >
@@ -46,7 +46,7 @@ Después de [crear una página](/help/sites-cloud/authoring/sites-console/creati
    Botón ![Editar](/help/sites-cloud/authoring/assets/edit.png)
 
 1. La página se abre y puede editarla según sea necesario. Dependiendo de cómo se haya creado la página seleccionada, la acción **Editar** abrirá el editor correspondiente.
-   * AEM [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas creadas con el Editor de páginas de la página de la
+   * [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas creadas con el Editor de páginas de AEM
    * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas creadas con el Editor universal
 
 ## Copiar y pegar una página    {#copying-and-pasting-a-page}
@@ -106,7 +106,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    ![Botón Mover](/help/sites-cloud/authoring/assets/move.png)
 
-1. En el paso **Rename** del asistente puede:
+1. El paso **Rename** del asistente le proporciona **información** sobre la página, incluida la fecha de creación, la ruta y el número de referencias directas. Desde aquí puede hacer lo siguiente:
 
    * Especifique el nombre que desea que tenga la página cuando se haya movido y, a continuación, seleccione **Siguiente** para continuar.
    * **Haga clic en Cancelar** para anular el proceso.
@@ -144,7 +144,8 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    >[!NOTE]
    >
-   >Si la página no está vinculada ni se hace referencia a ella, este paso no estará disponible.
+   >* Si la página no está vinculada ni se hace referencia a ella, este paso no estará disponible.
+   >* En este paso se enumeran las referencias directas e indirectas. Esto puede diferir de la cantidad informada en el paso **Rename** del asistente, así como de las referencias notificadas por el carril de referencias, que solo informan de referencias directas por motivos de rendimiento.
 
    ![Volver a publicar la página al moverla](/help/sites-cloud/authoring/assets/move-page-republish.png)
 

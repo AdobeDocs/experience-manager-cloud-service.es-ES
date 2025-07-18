@@ -1,11 +1,11 @@
 ---
 title: Panel lateral de la consola Sites
-description: AEM Aprenda a utilizar el panel lateral de la consola Sitios de la para comprender mejor el contenido y navegar por él.
+description: Aprenda a utilizar el panel lateral de la consola Sitios de AEM para comprender mejor el contenido y navegar por él.
 exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 23%
@@ -14,7 +14,7 @@ ht-degree: 23%
 
 # Panel lateral de la consola Sites {#side-panel}
 
-AEM Aprenda a utilizar el panel lateral en la consola de **Sitios** de la para comprender mejor su contenido y navegar por él.
+Aprenda a utilizar el panel lateral de la consola de AEM **Sites** para comprender mejor su contenido y navegar por él.
 
 ## Orientación {#orientation}
 
@@ -99,8 +99,8 @@ La vista **Referencias** muestra una lista de tipos de referencias hacia o desde
 
 Seleccione el tipo de referencia adecuado para obtener más información. En determinadas situaciones, hay disponibles acciones adicionales al seleccionar una referencia específica, como las siguientes:
 
-* **Vínculos entrantes**, proporciona una lista de páginas que hacen referencia a la página, así como acceso directo a **Editar** una de esas páginas cuando selecciona un vínculo específico.
-   * Esto solo puede mostrar vínculos estáticos, no vínculos generados dinámicamente como del componente Lista.
+* **Vínculos entrantes**, proporciona una lista de páginas que hacen referencia directamente a la página seleccionada, junto con acceso directo a **Editar** una de esas páginas cuando selecciona un vínculo específico.
+   * Esto solo muestra vínculos estáticos, no vínculos generados dinámicamente como del componente Lista.
 * [Lanzamientos](/help/sites-cloud/authoring/launches/overview.md), que proporciona acceso a lanzamientos relacionados.
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md) muestra las rutas de todas las Live Copies que se basan en el recurso seleccionado.
 * [Modelo](/help/sites-cloud/administering/msm/best-practices.md), proporciona detalles y diversas acciones
