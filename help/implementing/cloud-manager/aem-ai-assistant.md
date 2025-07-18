@@ -81,7 +81,7 @@ Los administradores deben tener en cuenta el control normal de Cloud Manager. De
 
 ![Creación de vale de soporte técnico en el asistente de IA de AEM de Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-Para ver una guía guiada sobre la configuración de usuarios y grupos en AEM as a Cloud Service, consulte [Configuración del acceso a AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview).
+Para ver una guía guiada sobre la configuración de usuarios y grupos en AEM as a Cloud Service, consulte [Configuración del acceso a AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/accessing/overview).
 
 Consulte también [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md).
 
