@@ -9,12 +9,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+hide: true
+hidefromtoc: true
+source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
 workflow-type: tm+mt
-source-wordcount: '2806'
-ht-degree: 99%
+source-wordcount: '2803'
+ht-degree: 98%
 
 ---
+
 
 # Conjunto de formularios en AEM Forms{#form-set-in-aem-forms}
 
@@ -34,7 +37,7 @@ Los conjuntos de formularios también se admiten en la aplicación de AEM Forms
 
 Puede asociar varios XDP o plantillas de formulario creados con Designer a un conjunto de formularios. Los conjuntos de formularios se pueden utilizar para procesar de forma selectiva los XDP en función de los valores introducidos por los usuarios en los formularios iniciales y sus perfiles.
 
-Use la [Interfaz de usuario de AEM Forms](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) para administrar todos los formularios, conjuntos de formularios y recursos relacionados.
+Use la [Interfaz de usuario de AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) para administrar todos los formularios, conjuntos de formularios y recursos relacionados.
 
 ### Crear un conjunto de formularios {#create-a-form-set}
 
@@ -65,7 +68,7 @@ Para crear un conjunto de formularios, haga lo siguiente:
 
    * Orden del formulario: arrastre y suelte los formularios para reordenarlos. El orden del formulario define el orden en el que se muestran los formularios al usuario final en la aplicación de AEM Forms y en la representación independiente.
    * Identificador de formulario: especifica una identidad única para los formularios que se van a utilizar en las expresiones de idoneidad.
-   * Raíz de datos: para cada formulario del conjunto de formularios, el autor puede configurar el XPATH en el que los datos de ese formulario en particular se colocan en el XML enviado. El valor predeterminado es /. Si todos los formularios del conjunto de formularios están enlazados a un esquema y comparten el mismo esquema XML, puede cambiar este valor. Se recomienda que cada campo del formulario incluya el enlace de datos adecuado especificado en el XDP. Si dos campos de dos formularios diferentes comparten el enlace de datos común, el campo del segundo formulario muestra los valores rellenados previamente del primer formulario. No enlace dos subformularios con el mismo contenido interno al mismo nodo XML. Para obtener más información sobre la estructura XML del conjunto de formularios, consulte [Rellenar previamente XML para un conjunto de formularios](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
+   * Raíz de datos: para cada formulario del conjunto de formularios, el autor puede configurar el XPATH en el que los datos de ese formulario en particular se colocan en el XML enviado. El valor predeterminado es /. Si todos los formularios del conjunto de formularios están enlazados a un esquema y comparten el mismo esquema XML, puede cambiar este valor. Se recomienda que cada campo del formulario incluya el enlace de datos adecuado especificado en el XDP. Si dos campos de dos formularios diferentes comparten el enlace de datos común, el campo del segundo formulario muestra los valores rellenados previamente del primer formulario. No enlace dos subformularios con el mismo contenido interno al mismo nodo XML. Para obtener más información sobre la estructura XML del conjunto de formularios, consulte [Rellenar previamente XML para un conjunto de formularios](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
    * Expresión de idoneidad: especifica una expresión de JavaScript que evalúa un valor booleano e indica si un formulario de un conjunto de formularios es apto para rellenarlo. Si es false, no se pregunta al usuario ni se le muestra el formulario que se va a rellenar. Normalmente, la expresión se basa en los valores de los campos capturados antes de este formulario. Las expresiones también contienen llamadas a la API fs.valueOf del conjunto de formularios para extraer los valores rellenados por el usuario en un campo de uno de los formularios del conjunto de formularios:
 
    *fs.valueOf(&lt;Form Identifier>, &lt;fieldSom expression>) > &lt;value>*
