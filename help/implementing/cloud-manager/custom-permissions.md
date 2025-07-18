@@ -5,9 +5,9 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1490'
 ht-degree: 38%
 
 ---
@@ -48,7 +48,7 @@ En esta sección se detallan estos pasos. Puede que le resulte útil consultar l
 
 ### Crear un nuevo perfil de producto {#create}
 
-Cree primero un perfil de producto antes del cual pueda asignar permisos personalizados.
+En primer lugar, cree un perfil de producto al que pueda asignar permisos personalizados.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
@@ -174,7 +174,7 @@ Los elementos de permisos hacen referencia al ámbito donde se aplica el permiso
 
 | Tipo de elemento de permiso | Ejemplos | Descripción |
 | --- | --- | --- |
-| Organización | organization:companyA | Todos los recursos aplicables de una organización. Un recurso puede ser un programa, un entorno o una canalización. Si el usuario añade una organización para cualquier permiso, todos los recursos nuevos de esa organización también tendrán ese permiso. |
+| Organización | organización:companyA | Todos los recursos aplicables de una organización. Un recurso puede ser un programa, un entorno o una canalización. Si el usuario añade una organización para cualquier permiso, todos los recursos nuevos de esa organización también tendrán ese permiso. |
 | Programa | Programa A | Todos los recursos aplicables de un programa. |
 | Entorno | Programa A: entorno | Aplicable a un entorno específico. |
 | Canalización | Programa A: canalización | Aplicable a una canalización específica. |
