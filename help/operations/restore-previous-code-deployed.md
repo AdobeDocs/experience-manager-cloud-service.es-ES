@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
+source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '504'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->La función descrita en este artículo solo está disponible a través del programa pionero alpha. Para suscribirse al alfa, vea [Reversión en un solo clic para implementaciones de canalización](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>La función descrita en este artículo solo está disponible a través del programa alfa. Para suscribirse al alfa, vea [Reversión en un solo clic para implementaciones de canalización](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Use **Restaurar código anterior implementado** para revertir un entorno instantáneamente a su última compilación correcta; no se requiere la ejecución de la canalización.
 
@@ -31,7 +31,7 @@ Simplemente abre el menú ![Icono de más o el icono de menú de puntos suspensi
 La característica **Restaurar código anterior implementado** solo está disponible cuando la condición **every** que se muestra a continuación es verdadera:
 
 * Usted tiene permisos de **Environment Restore Create**. Para obtener más información sobre la administración de permisos, consulte [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md).
-* Su organización está inscrita en el programa de adopción anticipada y el indicador de funcionalidad está activado.
+* Su organización está inscrita en el programa alfa y el indicador de funciones está activado.
 * El programa se ejecuta en AEM as a Cloud Service.
 * El entorno elegido es `Development` (límite temporal de Alpha).
 * La última canalización para ese entorno se ejecutó correctamente hace **menos de 30 días**.
