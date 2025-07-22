@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 13124956fcce105ad42767f67b700284c8250012
+source-git-commit: a4e023ca44c93124627912bae08dc3535d48400c
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '622'
 ht-degree: 34%
 
 ---
@@ -61,7 +61,7 @@ La activación de funcionalidades 2025.7.0 proporciona el conjunto completo de f
 * CQ-4359863: búsqueda de etiquetas interrumpida para palabras clave desordenadas en el editor de fragmentos de contenido/editor de recursos.
 * CQ-4359958: Hacer compatible openapi-support con AEM 6.5.22.0 y versiones posteriores.
 * CQ-4360256: incluya la ruta de contexto del servlet en la ruta de solicitud para las solicitudes HTTP administradas mediante el contexto del servlet `/adobe`.
-* CQ-4360317: método Add para establecer el encabezado de fecha de ocaso al crear respuestas.
+* CQ-4360317: método Add para establecer el encabezado de fecha Sunset al crear respuestas.
 * GRANITE-60311: Quickstart de AEM SDK: NPE en &quot;Impresora de configuración del instalador OSGi&quot;.
 * GS-15285: los usuarios se muestran como desactivados.
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
-| AEM Oak | 1.80.0 | [API Oak 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
+| AEM Oak | 1.80.0 | [API Oak 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html) |
 | API AEM SLING | 2.27.6 | [API de Apache Sling 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [Especificación de idioma de la plantilla HTML](https://github.com/adobe/htl-spec) |
 | Servidor HTTP Apache | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
