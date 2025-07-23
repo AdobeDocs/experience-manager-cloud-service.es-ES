@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2663'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ La [documentación de referencia de la API](https://developer.adobe.com/experien
 
 ## Generación de documentos
 
-Las API de generación de documentos de comunicaciones ayudan a combinar una plantilla (XFA o PDF) con datos de clientes (XML) para generar documentos en PDF, AFP (presentación de funciones avanzadas) y formatos de impresión como PS, PCL, DPL, IPL y ZPL. Estas API utilizan plantillas de PDF y XFA con [datos XML](communications-known-issues-limitations.md#form-data) para generar un solo documento bajo demanda o varios documentos mediante un trabajo por lotes.
+Las API de generación de documentos de comunicaciones combinan una plantilla (XFA o PDF) con datos de clientes (XML) para generar documentos en formatos PDF, AFP (Advanced Function Presentation) y de impresión, como PS, PCL, DPL, IPL y ZPL. Estas API utilizan plantillas PDF y XFA con [datos XML](communications-known-issues-limitations.md#form-data) para generar un solo documento bajo demanda o varios documentos usando un trabajo por lotes.
 
 Normalmente, crea una plantilla mediante [Designer](use-forms-designer.md) y utiliza las API de comunicaciones para combinar los datos con la plantilla. Su aplicación puede enviar el documento de salida a una impresora de red, una impresora local o a un sistema de almacenamiento para su archivo. Los flujos de trabajo personalizados y típicos listos para usarse tienen el siguiente aspecto:
 
@@ -56,26 +56,26 @@ En función del caso de uso, también puede hacer que estos documentos estén di
 
 #### Crear documentos en formatos electrónicos PDF/AFP
 
-Puede utilizar las API de generación de documentos para crear un documento en formatos PDF o AFP basado en un diseño de formulario y datos de formulario XML. El resultado es un documento no interactivo. Es decir, los usuarios no pueden introducir ni modificar los datos del formulario. Un flujo de trabajo básico es combinar los datos del formulario XML con un diseño de formulario para crear un documento. La siguiente ilustración muestra la combinación de un diseño de formulario y datos del formulario XML para producir un documento PDF.
+Puede utilizar las API de generación de documentos para crear un documento con los formatos PDF o AFP que se basa en un diseño de formulario y datos de formulario XML. El resultado es un documento no interactivo. Es decir, los usuarios no pueden introducir ni modificar los datos del formulario. Un flujo de trabajo básico es combinar los datos del formulario XML con un diseño de formulario para crear un documento. La siguiente ilustración muestra la combinación de un diseño de formulario y datos del formulario XML para producir un documento PDF.
 
-![Crear documentos de PDF](assets/outPutPDF_popup.png)
-Imagen: flujo de trabajo típico para crear un documento
+![Crear documentos PDF](assets/outPutPDF_popup.png)
+Figura: flujo de trabajo típico para crear un documento
 
-La siguiente tabla muestra la diferencia entre los formatos AFP y PDF:
+En la siguiente tabla se muestra la diferencia entre los formatos AFP y PDF:
 
-| **Característica** | **AFP (presentación de funciones avanzadas)** | **PDF (formato de documento portátil)** |
+| **Función** | **AFP (Advanced Function Presentation)** | **PDF (Portable Document Format)** |
 |---------------------------|--------------------------------------------------------------------|-------------------------------------------------------------|
 | **Propósito** | Impresión y producción de gran volumen de documentos transaccionales | Uso compartido y visualización de documentos de uso general |
 | **Caso práctico** | Extractos bancarios, facturas, facturas, documentos de seguros | Libros electrónicos, formularios, informes, currículos, manuales |
 | **Origen de plataforma** | Desarrollado por IBM | Desarrollado por Adobe |
 | **Estructura** | Formato orientado a páginas con campos y objetos estructurados | Orientado a páginas pero con diseño fijo |
-| **Editabilidad** | Diseñado para la impresión en producción y rara vez se edita | Se puede editar con varias herramientas, como Adobe Acrobat |
-| **Tamaño y rendimiento de archivo** | Optimizado para el rendimiento en entornos de impresión de alta velocidad | Puede ser más grande y estar menos optimizado para la salida en bloque |
-| **Interactividad** | Mínimo a ninguno; páginas estáticas | Admite elementos interactivos como formularios, vínculos o JavaScript |
+| **Editabilidad** | Diseñado para la impresión en producción y que rara vez se edita | Se puede editar con varias herramientas, como, por ejemplo, Adobe Acrobat |
+| **Tamaño y rendimiento de archivo** | Optimizado para el rendimiento en entornos de impresión de alta velocidad | Puede ser más grande y estar menos optimizado para la salida masiva |
+| **Interactividad** | Mínima a ninguna; páginas estáticas | Admite elementos interactivos como formularios, vínculos, JavaScript |
 | **Control de salida** | Control preciso del diseño de las impresoras | Diseño visual optimizado para pantalla e impresión |
 | **Fuentes y gráficos** | Utiliza referencias de fuentes y recursos; requiere que los procesadores interpreten | Incrusta fuentes e imágenes directamente en el archivo |
 
-La API de generación de documentos devuelve el documento de PDF o el documento AFP generado. Si lo desea, también puede cargar los PDF generados en el almacenamiento del blob de Azure.
+La API de generación de documentos devuelve el documento PDF o el documento AFP generado. Si lo desea, también puede cargar los PDF generados en el almacenamiento del blob de Azure.
 
 <span class="preview"> La carga de los PDF generados mediante la API de generación de documentos a la capacidad de Azure Blob Storage se encuentra en [Programa de adopción anticipada](/help/forms/early-access-ea-features.md). Puede enviar un correo electrónico a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa para primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 

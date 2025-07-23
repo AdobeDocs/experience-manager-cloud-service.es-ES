@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1804'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Generación de componentes personalizados en creación de WYSIWYG
 
-<span class="preview"> Esta es una característica previa al lanzamiento disponible a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal previo al lanzamiento</a>. </span>
+<span class="preview"> Es una función de la versión preliminar y se puede acceder a ella a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal de versiones preliminares</a>. </span>
 
 
 Los formularios de Edge Delivery Services ofrecen personalización, lo que permite a los desarrolladores front-end generar componentes de formulario personalizados. Estos componentes personalizados se integran a la perfección en la experiencia de creación de WYSIWYG, lo que permite a los autores de formularios añadirlos, configurarlos y administrarlos fácilmente dentro del editor de formularios. Con los componentes personalizados, los autores pueden mejorar la funcionalidad a la vez que garantizan un proceso de creación fluido e intuitivo.
@@ -39,7 +39,7 @@ Añadir un componente personalizado en el Editor universal significa que hay un 
 
 Veamos un ejemplo de creación de un nuevo componente personalizado denominado **rango**. El componente de rango aparece como una línea recta, sin mostrar valores como el valor mínimo, máximo o seleccionado.
 
-![Representación visual de un componente de intervalo que muestra un control deslizante con valores mínimos y máximos y un indicador de valor seleccionado](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![Representación visual de un componente de rango que muestra un regulador con valores mínimos y máximos y un indicador de valor seleccionado](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 Al final de este artículo, aprenderá a crear componentes personalizados desde cero.
 
@@ -324,11 +324,11 @@ const OOTBComponentDecorators = ['file-input',
 
 Después de completar los pasos anteriores, el componente personalizado aparece en la lista de componentes del formulario en el Editor universal. A continuación, puede arrastrarlo y soltarlo en la sección del formulario.
 
-![Captura de pantalla de la paleta de componentes del editor universal que muestra el componente de rango personalizado disponible para arrastrar y soltar en formularios](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![Captura de pantalla de la paleta de componentes del editor universal que muestra el componente de rango personalizado disponible para arrastrar y soltar en los formularios](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 La captura de pantalla siguiente muestra las propiedades del componente `range` agregado al modelo de componentes, que especifica las propiedades que el autor del formulario puede configurar:
 
-![Captura de pantalla del panel de propiedades del Editor universal que muestra la configuración configurable del componente rango, incluidas las propiedades básicas, las reglas de validación y las opciones de estilo](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![Captura de pantalla del panel de propiedades del editor universal que muestra los ajustes configurables del componente de rango, incluidas las propiedades básicas, las reglas de validación y las opciones de estilo](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 Ahora puede definir el comportamiento en tiempo de ejecución del componente personalizado añadiendo estilo y funcionalidad.
 
@@ -392,7 +392,6 @@ Puede modificar los componentes personalizados mediante marcado predefinido, tal
    float: right;
    }
    ```
-
    El código le ayuda a definir el estilo y el aspecto visual del componente personalizado.
 
 1. Para agregar la funcionalidad, vaya al archivo `/blocks/form/components/range/range.js` y añada la línea de código siguiente:
@@ -457,7 +456,7 @@ Puede modificar los componentes personalizados mediante marcado predefinido, tal
    Después de incorporar un estilo y una funcionalidad personalizados, se mejora el aspecto y el comportamiento del componente de rango. El diseño actualizado refleja los estilos aplicados, mientras que la funcionalidad añadida garantiza una experiencia del usuario más dinámica e interactiva.
 La siguiente captura de pantalla ilustra el componente de rango actualizado.
 
-![El último componente de intervalo en acción que muestra un control deslizante con estilo, con una presentación de burbujas de valores y una funcionalidad interactiva en el editor universal](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![El componente de rango final en acción que muestra un regulador con estilo, con una presentación de burbujas de valores y una funcionalidad interactiva en el editor universal](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## Preguntas frecuentes
 

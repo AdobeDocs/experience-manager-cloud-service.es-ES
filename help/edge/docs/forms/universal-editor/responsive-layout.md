@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1248'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
 # Modo adaptable en la creación de WYSIWYG
 
-<span class="preview"> Esta es una característica previa al lanzamiento disponible a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal previo al lanzamiento</a>. </span>
+<span class="preview"> Es una función de la versión preliminar y se puede acceder a ella a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal de versiones preliminares</a>. </span>
 
 ## Introducción a los formularios adaptables
 

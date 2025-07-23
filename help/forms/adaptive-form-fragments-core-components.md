@@ -7,9 +7,9 @@ feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
 source-git-commit: a99bd181a079713571fd659ec2a04207c5eeee90
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1479'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ Puede utilizar un fragmento de formulario basado en esquemas y no basado en esqu
 ## Compatibilidad con la asignación automática para fragmentos de un formulario adaptable
 
 Cuando crea un fragmento de formulario adaptable basado en una definición de esquema JSON, se puede reutilizar automáticamente en formularios creados a partir del mismo esquema.
-Si arrastra y suelta un objeto de esquema o cualquier objeto anidado que coincida con la asignación de definición de esquema JSON de un fragmento de formulario adaptable, el objeto se reemplazará por el fragmento de formulario adaptable coincidente. En lugar de agregar un panel con campos individuales, el formulario inserta el fragmento de formulario adaptable asignado.
+Si arrastra y suelta un objeto de esquema o cualquier objeto anidado que coincida con la asignación de definición de esquema JSON de un fragmento de formulario adaptable, el objeto se reemplazará por el fragmento de formulario adaptable coincidente. En lugar de añadir un panel con campos individuales, el formulario inserta el fragmento de formulario adaptable asignado.
 
 ![Arrastrar y soltar un fragmento](/help/forms/assets/fragment.png)
 

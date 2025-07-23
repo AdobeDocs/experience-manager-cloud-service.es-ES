@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2166'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,6 @@ El [servicio de envío de formularios](/help/forms/forms-submission-service.md) 
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
-
 ![Envío de formularios](/help/forms/assets/eds-fss.png)
 
 Este diagrama de flujo muestra cómo el servicio de envío de formularios toma los datos enviados y los envía a una hoja de cálculo o a un correo electrónico configurados.
@@ -145,7 +144,6 @@ La página donde desea que aparezca el formulario (llamémosla “página host�
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
-
 ![Arquitectura de formulario incrustado](/help/forms/assets/eds-embedded-form.png)
 Este diagrama muestra la página host obteniendo el código HTML de la fuente del formulario y mostrándolo. El envío utiliza el punto final configurado del formulario original.
 
@@ -313,7 +311,7 @@ El contenido principal de su sitio web se crea en la creación de documentos (DA
    * Esto suele deberse a que el filtro de referente de Sling en la instancia de publicación de AEM no permite solicitudes desde el dominio de EDS. Compruebe su configuración.
    * También podría ser un problema de autenticación/autorización si el punto final de envío de AEM lo requiere, aunque los envíos de formularios estándar suelen ser anónimos.
 
-## Siguientes pasos
+## Próximos pasos
 
 Esta guía proporciona información general sobre el uso de formularios con Edge Delivery Services de AEM. Para obtener instrucciones paso a paso más detalladas sobre configuraciones específicas, consulte la documentación oficial de Adobe Experience Manager:
 

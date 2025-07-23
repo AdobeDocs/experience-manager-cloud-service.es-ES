@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '930'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -15,41 +15,41 @@ ht-degree: 78%
 
 ## Información general
 
-El envío de formularios es el paso final crítico del recorrido del usuario, es donde se procesan los datos recopilados y se realizan las acciones. Este documento proporciona una guía completa para configurar y administrar las acciones de envío para Forms adaptable en el editor universal.
+El envío de formularios es el paso final crucial del recorrido del usuario: es donde se procesan los datos recopilados y se realizan las acciones. Este documento proporciona una guía completa para configurar y administrar las acciones de envío de formularios adaptables en el editor universal.
 
 ### Lo que aprenderá
 
-Al final de este documento, comprenderá lo siguiente:
+Al final de este documento, aprenderá a:
 
-* Configurar diferentes tipos de acciones de envío para los formularios
-* Configurar envíos de extremos REST para la integración con sistemas externos
-* Configuración de envíos de correos electrónicos para respuestas de formulario
+* Configurar diferentes tipos de acciones de envío de formularios
+* Configurar envíos de puntos finales REST para la integración con sistemas externos
+* Configurar envíos de correos electrónicos para respuestas de formulario
 * Implementar acciones de envío personalizadas para necesidades comerciales específicas
-* Gestionar la validación del formulario y los escenarios de error durante el envío
+* Gestionar la validación de formularios y los escenarios de error durante el envío
 
-### Audiencia objetivo
+### Público destinatario
 
 Esta guía está diseñada para:
 
 * **Desarrolladores de formularios** que implementan la lógica de envío
 * **Integradores de sistemas** que conectan formularios con sistemas back-end
-* **Analistas de negocios** están definiendo flujos de trabajo de formularios
-* **Arquitectos técnicos** diseñan procesos de envío de formularios
+* **Analistas de negocios** que definen los flujos de trabajo de formularios
+* **Arquitectos técnicos** que diseñan procesos de envío de formularios
 
 ### Acciones de envío disponibles
 
 El editor universal proporciona dos tipos de acciones de envío principales:
 
-1. **Enviar al extremo REST** * Enviar datos de formulario a los extremos de API
-2. **Enviar correo electrónico** * Enviar respuestas de formulario por correo electrónico
+1. **Enviar al punto final REST** * Enviar datos de formulario a los puntos finales de la API
+2. **Enviar por correo electrónico** * Enviar respuestas de formulario por correo electrónico
 
 ### Requisitos previos
 
-Antes de configurar las acciones de envío, asegúrese de lo siguiente:
+Antes de configurar las acciones de envío, asegúrese de que:
 
-* Acceso al editor universal
-* Permisos adecuados para la configuración del formulario
-* Comprensión del punto final de envío de destinatario o de la configuración de correo electrónico
+* Tiene acceso al editor universal
+* Tiene los permisos adecuados para la configuración del formulario
+* Conoce el punto final de envío o la configuración de correo electrónico de destino
 
 Una acción de envío especifica el destino de los datos recopilados mediante un formulario adaptable. El proceso de envío comienza cuando el usuario hace clic en el botón **[!UICONTROL Enviar]** del formulario. AEM Forms ofrece dos tipos de acciones de envío que se describen a continuación, y le permite crear y utilizar acciones de envío personalizadas para satisfacer sus necesidades específicas. Las acciones de envío listas para usar son las siguientes:
 
@@ -80,7 +80,7 @@ Para configurar un punto final REST:
 1. Especifique la URL de punto final REST.
 1. También puede **Habilitar la petición POST** y proporcionar una URL para publicar la solicitud. 
 
-![Captura de pantalla del panel de propiedades del Editor universal que muestra los campos de configuración del extremo REST, incluida la entrada de URL y la opción Habilitar solicitud POST para el envío de formularios](/help/forms/assets/enable-post-request-ue.png)
+![Captura de pantalla del panel de propiedades del editor universal que muestra los campos de configuración del punto final REST, incluida la entrada de URL y el conmutador Habilitar solicitud POST para el envío de formularios](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >

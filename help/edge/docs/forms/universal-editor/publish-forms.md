@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Publicación del formulario adaptable en Edge Delivery Services
 
-<span class="preview"> Esta es una característica previa al lanzamiento disponible a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal previo al lanzamiento</a>. </span>
+<span class="preview"> Es una función de la versión preliminar y se puede acceder a ella a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal de versiones preliminares</a>. </span>
 
 
 Cuando el formulario esté terminado y listo para usarse, puede publicarlo para que sus clientes puedan acceder a él para recopilar y enviar datos. La publicación garantiza que el formulario esté disponible en Edge Delivery, lo que permite a los usuarios interactuar con él sin problemas. Este proceso permite a los clientes rellenar y enviar el formulario en tiempo real, lo que garantiza una captura de datos eficiente y un procesamiento optimizado.
@@ -57,7 +57,6 @@ Modifique `submitBaseUrl` en el archivo **constant.js** dentro del bloque del fo
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
-
 **Para desarrollo local:**
 
 ```js
@@ -80,7 +79,6 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
-
 Para el desarrollo local, consulte la [documentación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) para habilitar CORS desde su **URL de host de IU de desarrollo**.
 
 ### Configuración del Filtro de referente

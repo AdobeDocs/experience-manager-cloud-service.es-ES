@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Para crear un fragmento de formulario en el editor universal, realice los siguie
 
    La siguiente captura de pantalla muestra el `contact fragment` creado en el editor universal.
 
-   ![Captura de pantalla de un fragmento de formulario de detalles de contacto completado en el editor universal que muestra campos para nombre, teléfono, correo electrónico y dirección que pueden reutilizarse en varios formularios](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![Captura de pantalla de un fragmento de formulario de detalles de contacto completado en el editor universal que muestra los campos para el nombre, teléfono, correo electrónico y dirección que pueden reutilizarse en varios formularios](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
    Una vez creado el fragmento, puede [añadir el fragmento creado en Edge Delivery Services Forms](#adding-form-fragments-in-forms).
 
@@ -140,7 +140,7 @@ Vamos a crear un formulario `Employee Details` simple que incluya información s
 
    El fragmento de formulario se añade por referencia al formulario y permanece sincronizado con el fragmento de formulario independiente. 
 
-   ![Captura de pantalla que muestra el fragmento de detalles de contacto integrado correctamente en un formulario de empleado dentro del editor universal, que muestra cómo los fragmentos mantienen su estructura cuando se reutilizan](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![Captura de pantalla que muestra el fragmento de detalles de contacto integrado correctamente en un formulario del empleado dentro del editor universal, que muestra cómo los fragmentos mantienen su estructura cuando se reutilizan](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    Puede obtener una vista previa del formulario para ver cómo aparece en el modo **Vista previa**.
 

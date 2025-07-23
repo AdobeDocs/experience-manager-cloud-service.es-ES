@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,6 @@ Siga estos pasos para elegir la plantilla y crear el formulario:
 
    1. Especifique el **Nombre** y **Título**.
    1. Especifique la **URL de GitHub**. Por ejemplo, si el repositorio de GitHub se llama `edsforms` y está ubicado en la cuenta `wkndforms`, la URL es la siguiente:
-
       `https://github.com/wkndforms/edsforms`
 
    ![Asistente para crear formularios](/help/edge/assets/create-form-wizard.png)
@@ -136,7 +135,7 @@ Realice los siguientes pasos para crear formularios mediante el editor universal
 
    La siguiente captura de pantalla muestra el `Registration Form` creado en el editor universal:
 
-   ![Captura de pantalla de un formulario de contacto completado en el editor universal que muestra campos de formulario para nombre, correo electrónico, teléfono y mensaje con estilo y diseño adecuados](/help/edge/assets/contact-us.png)
+   ![Captura de pantalla de un formulario de contacto completado en el editor universal que muestra los campos de formulario para el nombre, correo electrónico, teléfono y mensaje con el estilo y el diseño adecuados](/help/edge/assets/contact-us.png)
 
 >[!NOTE]
 >

@@ -1,13 +1,13 @@
 ---
 title: Información general sobre Edge Delivery Services para AEM Forms
-description: Cree y entregue formularios de alto rendimiento en Adobe Experience Manager Edge Delivery Services, con énfasis en el enfoque de creación del editor universal.
+description: Cree y envíe formularios de alto rendimiento en Adobe Experience Manager Edge Delivery Services, haciendo énfasis en el enfoque de creación del editor universal.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -29,33 +29,33 @@ utiliza HTML simples, CSS modernos y JavaScript convencionales para crear experi
 ## Elección de un método de creación
 
 
-Adobe Experience Manager (AEM) Edge Delivery Services (EDS) le permite ofrecer experiencias web increíblemente rápidas y escalables desde el perímetro de. En esta guía se explica **cómo crear y publicar formularios para esas experiencias**, con una jerarquía de recomendaciones clara:
+Adobe Experience Manager (AEM) Edge Delivery Services (EDS) le permite ofrecer experiencias web increíblemente rápidas y escalables desde el principio. En esta guía se explica **cómo crear y publicar formularios para esas experiencias**, con una jerarquía de recomendaciones clara:
 
 * **Editor universal (UE): la mejor opción para la mayoría de los equipos**
 * **Creación basada en documentos (documentos/hojas): ideal para formularios rápidos y sencillos**
-* **Creación de documentos (DA): se utiliza para incrustar formularios en páginas creadas por DA**
+* **Creación de documentos (DA): se utiliza para incrustar formularios en páginas creadas con DA**
 
-Al final, podrá elegir el método de creación adecuado, comprender las opciones de envío y seguir los pasos siguientes hacia formularios listos para la producción.
+Al final, podrá elegir el método de creación adecuado, comprender las opciones de envío y seguir los próximos pasos para obtener formularios listos para la producción.
 
 
-| Equipo y requisitos | Método recomendado | Por qué |
+| Equipo y requisito | Método recomendado | ¿Por qué? |
 |--------------------|--------------------|-----|
-| Los especialistas en marketing y los diseñadores necesitan un control visual, lógica condicional o integraciones de AEM | **Editor universal** | Arrastrar y soltar, reglas avanzadas, envíos a FSS o AEM Publish |
-| Los autores de contenido ya trabajan en Word / Google Docs / Hojas; captura de datos sencilla para hoja de cálculo / correo electrónico | **Creación basada en documentos** | Herramientas familiares, la ruta más rápida para los formularios básicos |
-| Páginas del sitio web creadas en **Creación de documentos (DA)** | **Incrustar** un formulario basado en UE o Doc en la página de DA | DA no crea formularios por sí mismo |
+| Los expertos en marketing y los diseñadores necesitan un control visual, lógica condicional o integraciones de AEM | **Editor universal** | Arrastrar y soltar, reglas avanzadas, envíos a FSS o AEM Publish |
+| Los autores de contenido ya trabajan en Word / GoogleDocs / Sheets; captura sencilla de datos en hojas de cálculo/por correo electrónico | **Creación basada en documentos** | Herramientas familiares, la ruta más rápida para los formularios básicos |
+| Páginas del sitio web creadas en **Creación de documentos (DA)** | **Incrustar** un formulario basado en UE o Doc en la página de DA | La DA no crea formularios por sí misma |
 
 
-## Métodos de creación en detalle
+## Métodos de creación detallados
 
 ### Editor universal
 
-<span class="preview"> Esta es una característica previa al lanzamiento disponible a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal previo al lanzamiento</a>. </span>
+<span class="preview"> Es una función de la versión preliminar y se puede acceder a ella a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal de versiones preliminares</a>. </span>
 
-[Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) es una herramienta visual de creación de arrastrar y soltar para los especialistas en marketing y los diseñadores que combina la velocidad con la potencia de nivel empresarial:
+[Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) es una herramienta visual de creación de tipo arrastrar y soltar para los expertos en marketing y los diseñadores que combina la velocidad con la potencia de nivel empresarial:
 
 * Edición de WYSIWYG en tiempo real y previsualizaciones de dispositivos.
 * Integración directa con recursos de AEM, flujos de trabajo y el modelo de datos de formulario (FDM).
-* Entrega perfecta a los desarrolladores de componentes personalizados en JS/CSS de vainilla.
+* Entrega perfecta a los desarrolladores de componentes personalizados en JS/CSS sin modificaciones.
 * Editor de reglas avanzado para crear lógica compleja.
 * Extensibilidad del lado del servidor para funcionalidades personalizadas.
 * Experiencia de edición WYSIWYG para facilitar la creación y visualización de formularios.
@@ -65,14 +65,14 @@ Al final, podrá elegir el método de creación adecuado, comprender las opcione
 * Integración con varias fuentes de datos para rellenar previamente formularios y enviar datos.
 * El modelo de datos de formulario sirve para definir la estructura de datos y las interacciones con varias fuentes de datos.
 * Capacidad para elegir entre varias acciones de envío para administrar los envíos de formularios, incluido el envío de datos a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics y muchas más fuentes de datos.
-* Enviar mediante el servicio de envío de Forms (FSS) o las acciones de envío de publicación de AEM
+* Envío mediante el servicio de envío de formularios (FSS) o las acciones de envío de AEM Publish
 
-**Recomendación**: Inicie cada nuevo proyecto de formulario con el Editor universal a menos que su equipo esté 100 % centrado en documentos y el formulario sea muy básico.
+**Recomendación**: inicie cada nuevo proyecto de formulario con el editor universal a menos que su equipo esté 100 % centrado en los documentos y el formulario sea muy básico.
 
 
-### Creación basada en documentos (con Microsoft Docs o Google Sheets)
+### Creación basada en documentos (mediante Microsoft Docs o Google Sheets)
 
-[La creación basada en documentos](/help/edge/docs/forms/tutorial.md) es más adecuada para crear formularios sencillos y de baja complejidad con herramientas conocidas, como Microsoft Word, Google Docs o Hojas de cálculo de Google. Este método es ideal para equipos de contenido que requieren una forma rápida y directa de crear formularios.
+La [creación basada en documentos](/help/edge/docs/forms/tutorial.md) es ideal para crear formularios sencillos y poco complejos con herramientas conocidas, como Microsoft Word, Google Docs o Google Sheets. Este método es ideal para los equipos de contenido que necesitan una forma rápida y directa de crear formularios.
 
 * Componentes accesibles para una experiencia fácil de usar.
 * Estructura del HTML estandarizada para un procesamiento coherente.
@@ -84,13 +84,13 @@ Al final, podrá elegir el método de creación adecuado, comprender las opcione
 * Supervise el rendimiento de los formularios mediante la telemetría operativa
 
 
-### Incrustación de Forms en la creación de documentos (DA)
+### Incorporación de formularios en la creación de documentos (DA)
 
-La creación de documentos (DA) está diseñada para crear contenido de página estructurado y no admite la creación de formularios nativos. Para agregar un formulario a una página creada por AD, puede crearlo con el **Editor universal** (recomendado) o la creación basada en documentos e incrustar el formulario en la página de creación de documentos.
+La creación de documentos (DA) está diseñada para crear contenido de página estructurado y no admite la creación de formularios nativos. Para añadir un formulario a una página creada por AD, puede crearla con el **editor universal** (recomendado) o mediante la creación basada en documentos e incorporar el formulario a la página de creación de documentos.
 
-## Publicación de Edge Delivery Services Forms {#edge-overview}
+## Publicación de formularios en Edge Delivery Services {#edge-overview}
 
-En el diagrama siguiente se ilustra cómo puede editar formularios en Microsoft Excel o Google Sheets (creación basada en documentos) y publicarlos en Edge Delivery Services. También muestra el método de publicación AEM mediante WYSIWYG Authoring (Universal Editor).
+En el diagrama siguiente se ilustra cómo puede editar formularios en Microsoft Excel o Google Sheets (creación basada en documentos) y publicarlos en Edge Delivery Services. También muestra el método de publicación de AEM utilizando la creación WYSIWYG (editor universal).
 
 ![Publicación en Edge Delivery Services y AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
@@ -111,12 +111,12 @@ En el diagrama siguiente se ilustra cómo puede editar formularios en Microsoft 
 
 -->
 
-## Siguientes pasos
+## Próximos pasos
 
-* [Funciones y capacidades del Editor universal para Edge Delivery Services para Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [Creación de su primer formulario con el Editor universal](/help/edge/docs/forms/universal-editor/create-forms.md)
-* [Cree su primer formulario con hojas de Google o Excel de Microsoft](/help/edge/docs/forms/tutorial.md).
-* [Incrustar Forms en Document Authoring (DA)](https://www.aem.live/developer/da-tutorial)
+* [Funciones y funcionalidades del editor universal de Edge Delivery Services para formularios](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [Crear el primer formulario con el editor universal](/help/edge/docs/forms/universal-editor/create-forms.md)
+* [Cree su primer formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/tutorial.md).
+* [Incorporar formularios en la creación de documentos (DA)](https://www.aem.live/developer/da-tutorial)
 
 
 Ya está listo para crear su primer formulario de alto rendimiento con AEM Edge Delivery Services.

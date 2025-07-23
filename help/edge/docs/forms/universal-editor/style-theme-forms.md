@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1833'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Personalización del aspecto de los formularios
 
-<span class="preview"> Esta es una característica previa al lanzamiento disponible a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal previo al lanzamiento</a>. </span>
+<span class="preview"> Es una función de la versión preliminar y se puede acceder a ella a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal de versiones preliminares</a>. </span>
 
 
 Los formularios son esenciales para la interacción de los usuarios en los sitios web, ya que les permite introducir datos. Puede utilizar Hojas de estilo en cascada (CSS) para aplicar estilo a los campos de un formulario, mejorar la presentación visual de los formularios y mejorar la experiencia del usuario.
@@ -54,7 +54,7 @@ El Bloque de formularios adaptables ofrece una estructura de HTML estandarizada 
 
 * **Actualizar estilos predeterminados**: puede modificar los estilos predeterminados de un formulario si edita `/blocks/form/form.css file`. Este archivo proporciona un estilo completo para un formulario, que admite formularios de asistente de varios pasos. Hace hincapié en el uso de variables CSS personalizadas para facilitar la personalización, el mantenimiento y el estilo uniforme en todos los formularios.
 
-* **Estilo CSS para formularios**: para asegurarse de que los estilos se aplican correctamente, ajuste el CSS específico del formulario dentro del selector `main .form form`. Esto garantiza que los estilos se dirijan únicamente a los elementos del formulario dentro del área de contenido principal, evitando conflictos con otras partes del sitio web.
+* **Estilo CSS para formularios**: para asegurarse de que los estilos se aplican correctamente, ajuste el CSS específico del formulario dentro del selector `main .form form`. Esto garantiza que los estilos se dirijan solo a los elementos del formulario dentro del área de contenido principal y evita conflictos con otras partes del sitio web.
 
   Ejemplo:
 
@@ -93,10 +93,10 @@ Todos los campos de formulario, excepto los menús desplegables, los grupos de o
 ```
 
 * Clases: el elemento div tiene varias clases para dirigirse a elementos y estilos específicos. Necesita las clases `{Type}-wrapper` o `field-{Name}` para desarrollar un selector de CSS para aplicar estilo a un campo de formulario:
-* {Type}: identifica el componente por tipo de campo. Por ejemplo, texto (ajustador de texto), número (ajustador de número), fecha (ajustador de fecha).
+* {Type}: identifica el componente por el tipo de campo. Por ejemplo, texto (ajustador de texto), número (ajustador de número), fecha (ajustador de fecha).
 * {Name}: identifica el componente por su nombre. El nombre del campo solo puede tener caracteres alfanuméricos. Los múltiples guiones consecutivos del nombre se sustituyen por un solo guion `(-)`, y los guiones inicial y final del nombre de un campo se eliminan. Por ejemplo, nombre (campo-nombre ajustador de campo).
-* {FieldId}: es un identificador único para el campo, generado automáticamente.
-* {Required}: es un booleano que indica si el campo es obligatorio.
+* {FieldId}: es un identificador único para el campo, se genera automáticamente.
+* {Required}: es un valor booleano que indica si el campo es obligatorio.
 * Etiqueta: el elemento `label` proporciona un texto descriptivo para el campo y lo asocia al elemento de entrada mediante el atributo `for`.
 * Entrada: el elemento `input` define el tipo de datos que se van a introducir. Por ejemplo, texto, número, correo electrónico.
 * Descripción (opcional): la `div` con clase `field-description` proporciona información o instrucciones adicionales para el usuario.
@@ -142,9 +142,8 @@ Todos los campos de formulario, excepto los menús desplegables, los grupos de o
   }
   
 ```
-
 * `.{Type}-wrapper`: segmenta el elemento `div` exterior basado en el tipo de campo. Por ejemplo, `.text-wrapper` se dirige a todos los campos de texto.
-* `.field-{Name}`: selecciona además el elemento en función del nombre de campo específico. Por ejemplo, `.field-first-name` se dirige al campo de texto “Nombre”. Aunque este selector se puede utilizar para elementos de destino con la clase field-{Name}, es importante tener cuidado. En este caso específico, no sería útil para aplicar estilo a los campos de entrada porque se dirigiría no solo a la entrada en sí, sino también a los elementos de etiqueta y descripción. Se recomienda utilizar selectores más específicos como los que tiene para segmentar los campos de entrada de texto (entrada .text-wrapper).
+* `.field-{Name}`: selecciona además el elemento en función del nombre de campo específico. Por ejemplo, `.field-first-name` se dirige al campo de texto “Nombre”. Aunque este selector se puede utilizar para elementos de segmentación con la clase field-{Name}, es importante actuar con precaución. En este caso específico, no sería útil para aplicar estilo a los campos de entrada porque se dirigiría no solo a la entrada en sí, sino también a los elementos de etiqueta y descripción. Se recomienda utilizar selectores más específicos como los que tiene para segmentar los campos de entrada de texto (entrada .text-wrapper).
 
 **Ejemplo de selectores CSS para componentes generales**
 
@@ -220,7 +219,6 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
-
 * Segmentar el envolvente: el primer selector (`.drop-down-wrapper`) segmenta el elemento envolvente exterior, lo que garantiza que los estilos se apliquen a todo el componente desplegable.
 * Diseño del Flexbox: este organiza la etiqueta, la lista desplegable y la descripción verticalmente para conseguir un diseño limpio.
 * Estilo de etiqueta: la etiqueta destaca por su grosor de fuente más negrita y un margen ligero.
@@ -230,7 +228,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
-&#x200B;---
+---
 
 ### Grupos de radio
 
@@ -284,7 +282,6 @@ Al igual que los componentes desplegables, los grupos de radio tienen su propia 
     padding: 10px;
   }
 ```
-
 Este selector se dirige a cualquier fieldset con la clase radio-group-wrapper. Esto sería útil para aplicar estilos generales a todo el grupo de radio.
 
 * Segmentación de etiquetas de botones de radio
@@ -465,8 +462,8 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * El elemento fieldset actúa como contenedor de panel con la clase panel-wrapper y clases adicionales para el estilo basadas en el nombre del panel (field-login).
-* El elemento leyenda (&lt;legend>) sirve como título del panel con el texto “Información de inicio de sesión” y la etiqueta de campo de clase. El atributo data-visible=&quot;false&quot; se puede utilizar con JavaScript para controlar la visibilidad del título.
-* Dentro del fieldset, varios.{Type} elementos de contenedor (.text-wrapper y .password-wrapper en este caso) representan campos de formulario individuales dentro del panel.
+* El elemento leyenda (<legend>) sirve como título del panel con el texto “Información de inicio de sesión” y la etiqueta de campo de clase. El atributo data-visible=&quot;false&quot; se puede utilizar con JavaScript para controlar la visibilidad del título.
+* Dentro del fieldset, varios.Los elementos {Type}-wrapper (.text-wrapper y .password-wrapper en este caso) representan campos de formulario individuales dentro del panel.
 * Cada contenedor contiene una etiqueta, un campo de entrada y una descripción, similares a los ejemplos anteriores.
 
 +++
@@ -626,7 +623,6 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
-
 Este selector aplica estilo a todos los contenedores de campo dentro de un panel repetible, manteniendo un espaciado coherente entre los campos.
 
 * Segmentación de campos específicos (dentro de un panel):

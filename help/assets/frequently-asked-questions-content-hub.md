@@ -3,9 +3,9 @@ title: Preguntas frecuentes (FAQ) sobre Content Hub
 description: Obtenga respuestas a algunas de las preguntas más frecuentes (FAQ) sobre Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1496'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Es posible evaluar Content Hub sin afectar a los usuarios ni al contenido de pro
 
 Hay un programa de acceso rápido a Content Hub en los programas de zona protegida y sus entornos de producción de creación. Para más información, consulte [Introducción a los programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Para obtener más información sobre el programa de acceso anticipado, póngase en contacto con el equipo de cuentas de Adobe.
 
-Content Hub aún no está disponible en entornos que no sean de producción (ensayo y desarrollo). La disponibilidad prevista para los entornos de ensayo/desarrollo para Assets Ultimate es marzo de 2025.
+Content Hub aún no está disponible en entornos que no sean de producción (ensayo y desarrollo). La disponibilidad prevista en los entornos de ensayo/desarrollo de Assets Ultimate es marzo de 2025.
 
 ## ¿Por qué no veo ningún recurso después de iniciar sesión en Content Hub? {#no-assets-in-content-hub}
 
@@ -84,7 +84,7 @@ Hay algunas configuraciones sobre cómo se asignan los usuarios a [!DNL Content 
    >
    >El usuario asignado a los perfiles de producto Express y Assets en dos Admin Consoles necesita tener la misma dirección de correo electrónico y usar una cuenta de empresa **Enterprise o School**, y no la cuenta **Personal**. La configuración ideal es tener ambas Admin Consoles configuradas como **Federated ID** con una relación de confianza configurada entre ellas, de modo que el usuario tenga una experiencia de inicio de sesión único sin problemas. Algunos de los planes Express (por ejemplo, Equipos Express) no admiten el inicio de sesión único/Federated ID.
 
-Además de las autorizaciones de producto adecuadas, la integración de Adobe Express en Content Hub requiere que el usuario asignado tenga al menos permisos [!UICONTROL Puede editar] en el entorno de creación de Assets que alimenta Content Hub, en al menos la jerarquía de carpetas **[!UICONTROL # /content/dam/hydroloaded-assets/]**, en la que los usuarios de Content Hub pueden guardar el contenido que han creado mediante Express. Consulte [Administración de permisos](/help/security/touch-ui-principal-view.md) en la vista de administración (IU táctil) o la [administración de permisos simplificada en la vista de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Además de las autorizaciones de producto adecuadas, la integración de Adobe Express en Content Hub requiere que el usuario asignado tenga al menos permisos [!UICONTROL Puede editar] en el entorno de creación de Assets que alimenta Content Hub, en al menos la jerarquía de carpetas **[#UICONTROL /content/dam/hydroloaded-assets/]**, en la que los usuarios de Content Hub pueden guardar el contenido que han creado mediante Express. Consulte [Administración de permisos](/help/security/touch-ui-principal-view.md) en la vista de administración (IU táctil) o la [administración de permisos simplificada en la vista de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## ¿Puedo configurar Content Hub para que las directrices de marca de mi organización se muestren como un vínculo en la página de inicio? {#content-hub-setup-brand-guidelines}
 
@@ -107,30 +107,30 @@ En la tabla siguiente se describen las principales diferencias entre las dos sol
 |---|---|----|----|
 | Configuración de la experiencia de distribución | Configuración de metadatos para filtros, detalles de recursos y página de adición de recursos | ✓ | − |
 |  | Configuración de vínculos externos desde el portal | ✓ | − |
-|  | Configurar la mensajería de banner | ✓ | ✓ |
-|  | Configurar la imagen del titular para la marca | ✓ | ✓ |
-|  | Configure los colores primarios y secundarios para la interfaz de usuario según los requisitos de marca | ✓ | − |
+|  | Configuración de la mensajería del banner | ✓ | ✓ |
+|  | Configuración de la imagen del banner para la promoción de la marca | ✓ | ✓ |
+|  | Configuración de los colores principales y secundarios para la interfaz de usuario según los requisitos de la marca | ✓ | − |
 | Uso compartido de recursos desde DAM | Uso compartido de recursos aprobados originales desde DAM | ✓ | ✓ |
-|  | Cambios de recursos aprobados sincronizados automáticamente | ✓ | − |
+|  | Los cambios en los recursos aprobados se sincronizan automáticamente | ✓ | − |
 | Búsqueda y filtros | Filtros dinámicos (las opciones se muestran dinámicamente en función de los recursos mostrados) | ✓ | − |
 |  | Historial de búsqueda | ✓ | − |
 | Carga de recursos | Unidad local | ✓ | ✓ |
-|  | Añadir metadatos configurables al cargar recursos | ✓ | − |
-| Descarga y representaciones | Descargar recurso original | ✓ | ✓ |
-|  | Compartir y descargar representaciones estáticas desde DAM | ✓ | ✓ |
-|  | Descargar representaciones dinámicas (ajustes preestablecidos y cultivos inteligentes) | ✓ | ✓ |
-|  | Capacidad para restringir la visualización y descarga de recursos caducados | ✓ | − |
-| Uso compartido de vínculos y colecciones | Vínculos compartidos para usuarios que han iniciado sesión | ✓ | ✓ |
+|  | Añadir metadatos configurables durante la carga de recursos | ✓ | − |
+| Descarga y representaciones | Descarga del recurso original | ✓ | ✓ |
+|  | Compartición y descarga de representaciones estáticas desde DAM | ✓ | ✓ |
+|  | Descarga de representaciones dinámicas (ajuste preestablecido y recortes inteligentes) | ✓ | ✓ |
+|  | Posibilidad de restringir la vista y descargar los recursos caducados | ✓ | − |
+| Uso compartido de vínculos y colecciones | Uso compartido de vínculos para usuarios que han iniciado sesión | ✓ | ✓ |
 |  | Colecciones públicas | ✓ | ✓ |
-|  | Buscar en colecciones | ✓ | − |
-|  | Vínculos compartidos anónimos | ✓ | ✓ |
+|  | Búsqueda dentro de colecciones | ✓ | − |
+|  | Uso compartido de vínculos anónimos | ✓ | ✓ |
 |  | Colecciones privadas | ✓ | ✓ |
 | Permisos | Permisos basados en ACL | − | ✓ |
 |  | Control de acceso basado en atributos | ✓ | − |
-| Integración rápida | Edite Content Hub Assets en Adobe Express y guárdelo en DAM | ✓ | − |
-| Paneles e informes | Panel de perspectivas | ✓ | − |
+| Integración rápida | Editar recursos de Content Hub en Adobe Express y guardarlos en DAM | ✓ | − |
+| Paneles e informes | Panel de información | ✓ | − |
 | Extensibilidad de la IU | Puntos de extensión personalizados en la página de detalles del recurso | Disponibilidad limitada | − |
-| Innovaciones próximamente | Colecciones favoritas por usuario | ✓ | − |
+| Innovaciones disponibles próximamente | Colecciones favoritas por usuario | ✓ | − |
 |  | Colecciones ancladas por el administrador | ✓ | − |
 |  | Búsqueda semántica | ✓ | − |
 |  | Búsqueda localizada y visualización de metadatos | ✓ | − |
