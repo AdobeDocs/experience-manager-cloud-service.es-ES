@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo buscar y descubrir recursos en la 
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 94%
+source-wordcount: '2277'
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 [!DNL Assets view] proporciona una búsqueda efectiva que funciona de forma predeterminada. La búsqueda es exhaustiva, ya que es de texto completo. La potente funcionalidad de búsqueda le permite descubrir rápidamente el recurso adecuado y ayudarle a mejorar la velocidad del contenido. [!DNL Assets view] proporciona búsquedas de texto completo e incluso búsquedas mediante metadatos como etiquetas inteligentes, título, fecha de creación y copyright.
 
-Para buscar recursos, haga lo siguiente:
+Para buscar recursos:
 
 * Haga clic en el cuadro de búsqueda que hay en la parte superior de la página. De forma predeterminada, busca dentro de la carpeta que está explorando actualmente. Realice una de las acciones siguientes:
 
@@ -120,6 +120,40 @@ Para eliminar filtros personalizados:
 1. En el cuadro de diálogo **[!UICONTROL Administración de filtros personalizados]**, anule la selección de los filtros que debe eliminar de la lista de filtros existente.
 
 1. Haga clic en **[!UICONTROL Confirmar]** para eliminar los filtros de la interfaz de usuario.
+
+## Búsqueda semántica {#semantic-search}
+
+La búsqueda semántica es una capacidad de búsqueda avanzada que comprende el significado y la intención detrás de la consulta de un usuario en lugar de depender de coincidencias de palabras clave exactas. Utiliza inteligencia artificial (IA), procesamiento de lenguajes naturales (NLP) y aprendizaje automático para ofrecer resultados más precisos y sensibles al contexto.
+
+A diferencia de la búsqueda tradicional basada en palabras clave, que busca términos exactos, la búsqueda semántica interpreta las relaciones entre palabras, conceptos e intención del usuario. Esto garantiza que los usuarios encuentren lo que están buscando, incluso si su consulta está redactada de forma diferente, contiene errores tipográficos o está en otro idioma.
+
+Algunos de sus beneficios clave incluyen:
+
+* **Soporte multilingüe**: busque en varios idiomas sin requerir traducciones exactas. Los usuarios pueden encontrar contenido relevante independientemente del idioma de la consulta.
+
+* **Controla los errores ortográficos**: corrige o interpreta automáticamente los errores ortográficos y ortográficos, lo que garantiza resultados precisos incluso con entradas imperfectas.
+
+* **Entiende los sinónimos**: Proporciona resultados para términos y frases relacionados, por lo que los usuarios no necesitan adivinar la palabra clave correcta.
+
+* **Búsqueda según el contexto**: Reconoce la intención detrás de una consulta, no solo las palabras.
+
+* **Buscar en función de mensajes basados en texto**: Experience Manager Assets aplica filtros al contenido y muestra automáticamente los resultados apropiados en función de mensajes basados en texto simples.
+
+>[!IMPORTANT]
+>
+> Especifique tres o más palabras para que la búsqueda semántica muestre los resultados adecuados.
+
+### Ejemplos de búsqueda semántica {#examples-semantic-search}
+
+**Mensaje de ejemplo**: *Mujer tomando café*
+
+La búsqueda tradicional basada en palabras clave busca coincidencias exactas de los metadatos de recursos, como Mujer, Café, etc., y devuelve recursos que incluyen estas palabras clave.
+
+Sin embargo, la búsqueda semántica busca palabras similares como `Girl`, `Lady` en el caso de `Woman` y opciones de café, como `Cappuccino` y `Latte` en el caso de `Coffee`.
+
+Del mismo modo, puede especificar este mensaje en español o escribir incorrectamente `Woman` como `Wman` y seguir obteniendo los mismos resultados.
+
+![Búsqueda semántica en la vista de Assets](assets/semantic-search.png)
 
 ## Búsqueda de recursos con [!DNL Adobe Firefly] {#search-firefly}
 
@@ -343,6 +377,6 @@ Si necesita facilitar comentarios sobre la función de búsqueda contextual, hag
 
 * Facilite comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar un problema] ![crear un problema de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha.
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)
 
 
