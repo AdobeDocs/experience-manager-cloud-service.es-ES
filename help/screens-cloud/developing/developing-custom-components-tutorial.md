@@ -1,19 +1,19 @@
 ---
 title: Desarrollo de un componente personalizado para Screens as a Cloud Service
-description: El siguiente tutorial muestra los pasos para crear un componente personalizado para AEM Screens. AEM Screens AEM reutiliza muchos patrones de diseño y tecnologías existentes de otros productos de la. El tutorial destaca las diferencias y las consideraciones especiales al desarrollar para AEM Screens.
+description: El siguiente tutorial muestra los pasos para crear un componente personalizado para AEM Screens. AEM Screens reutiliza muchos patrones de diseño y tecnologías existentes de otros productos de AEM. El tutorial destaca las diferencias y las consideraciones especiales al desarrollar para AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2039'
 ht-degree: 2%
 
 ---
 
-# Desarrollo de un componente personalizado para un as a Cloud Service de AEM Screens{#developing-a-custom-component-for-aem-screens}
+# Desarrollo de un componente personalizado para AEM Screens as a Cloud Service{#developing-a-custom-component-for-aem-screens}
 
-El siguiente tutorial muestra los pasos para crear un componente personalizado para AEM Screens. AEM Screens AEM reutiliza muchos patrones de diseño y tecnologías existentes de otros productos de la. El tutorial destaca las diferencias y las consideraciones especiales al desarrollar para AEM Screens.
+El siguiente tutorial muestra los pasos para crear un componente personalizado para AEM Screens. AEM Screens reutiliza muchos patrones de diseño y tecnologías existentes de otros productos de AEM. El tutorial destaca las diferencias y las consideraciones especiales al desarrollar para AEM Screens.
 
 ## Información general {#overview}
 
@@ -30,19 +30,19 @@ Para completar este tutorial, necesita lo siguiente:
 
 1. Entorno de desarrollo local
 
-Los pasos y las capturas de pantalla del tutorial se realizan con **CRXDE Lite**. Los IDE también se pueden utilizar para completar el tutorial. AEM Encontrará más información sobre el uso de un IDE para desarrollar [con aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=es).
+Los pasos y las capturas de pantalla del tutorial se realizan con **CRXDE Lite**. Los IDE también se pueden utilizar para completar el tutorial. Encontrará más información sobre el uso de un IDE para desarrollar [con AEM aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
 
 
 ## Configuración del proyecto {#project-setup}
 
-El código fuente de un proyecto de Screens se administra normalmente como un proyecto Maven de varios módulos. AEM Para adelantar el tutorial, se generó un proyecto previamente usando el [Arquetipo de proyecto 13](https://github.com/adobe/aem-project-archetype) de . AEM Consulte [Configuración del proyecto](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=es) para obtener más información sobre cómo crear un proyecto con el tipo de archivo del proyecto Maven.
+El código fuente de un proyecto de Screens se administra normalmente como un proyecto Maven de varios módulos. Para adelantar el tutorial, se generó previamente un proyecto usando el [Arquetipo de proyecto de AEM 13](https://github.com/adobe/aem-project-archetype). Consulte [Configuración del proyecto](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html) para obtener más información sobre cómo crear un proyecto con el tipo de archivo del proyecto Maven AEM.
 
 1. Descargue e instale los siguientes paquetes con [CRX Package Manager](http://localhost:4502/crx/packmgr/index.jsp):
 
 [Obtener archivo](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
 
    [Obtener archivo](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
-   **Opcionalmente** si trabaja con Eclipse u otro IDE, descargue el siguiente paquete de origen. AEM Implemente el proyecto en una instancia de local mediante el comando Maven:
+   **Opcionalmente** si trabaja con Eclipse u otro IDE, descargue el siguiente paquete de origen. Implemente el proyecto en una instancia local de AEM mediante el comando Maven:
 
    **`mvn -PautoInstallPackage clean install`**
 
@@ -67,7 +67,7 @@ El código fuente de un proyecto de Screens se administra normalmente como un pr
    >
    >En este tutorial, no se escribe ningún código Java™. Si se necesita una lógica empresarial más compleja, se puede crear e implementar el back-end Java™ mediante el paquete Java™ principal.
 
-   ![Representación del código ui.apps en el CRXDE Lite](/help/screens-cloud/developing/assets/uipps-contents.png)
+   ![Representación del código ui.apps en CRXDE Lite](/help/screens-cloud/developing/assets/uipps-contents.png)
 
    Representación del código ui.apps en CRXDE Lite
 
@@ -79,11 +79,11 @@ El código fuente de un proyecto de Screens se administra normalmente como un pr
    * `/content/dam/we-retail-run`
    * `/content/screens/we-retail-run`
 
-   Este paquete contiene el contenido de inicio y la estructura de configuración necesaria para el proyecto. **`/conf/we-retail-run`** contiene todas las configuraciones para el proyecto de ejecución de We.Retail. **`/content/dam/we-retail-run`** incluye el inicio de recursos digitales para el proyecto. **`/content/screens/we-retail-run`** contiene la estructura de contenido de Screens. AEM El contenido debajo de estas rutas se actualiza principalmente en la sección de. Para promover la coherencia entre entornos (local, Dev, Stage, Prod), a menudo se guarda una estructura de contenido base en el control de código fuente.
+   Este paquete contiene el contenido de inicio y la estructura de configuración necesaria para el proyecto. **`/conf/we-retail-run`** contiene todas las configuraciones para el proyecto de ejecución de We.Retail. **`/content/dam/we-retail-run`** incluye el inicio de recursos digitales para el proyecto. **`/content/screens/we-retail-run`** contiene la estructura de contenido de Screens. El contenido debajo de estas rutas se actualiza principalmente en AEM. Para promover la coherencia entre entornos (local, Dev, Stage, Prod), a menudo se guarda una estructura de contenido base en el control de código fuente.
 
 1. **Vaya al proyecto AEM Screens > We.Retail Run:**
 
-   AEM En el menú Inicio de la > Haga clic en el icono Screens. Compruebe que se puede ver el proyecto de ejecución de We.Retail.
+   En Navegación global de AEM > Haga clic en Screens y en el icono. Compruebe que se puede ver el proyecto de ejecución de We.Retail.
 
    ![we-retaiul-run-starter](/help/screens-cloud/developing/assets/we-retaiul-run-starter.png)
 
@@ -131,9 +131,9 @@ AEM Screens tiene algunas restricciones interesantes que no son necesariamente v
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   Los componentes de Screens requieren dos procesamientos diferentes según el [modo de creación](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=es#page-modes) que se esté usando:
+   Los componentes de Screens requieren dos procesamientos diferentes según el [modo de creación](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) que se esté usando:
 
-   1. **Producción**: modo de vista previa o Publish (wcmmode=disabled)
+   1. **Producción**: modo de vista previa o publicación (wcmmode=disabled)
    1. **Editar**: se usa para todos los demás modos de creación, es decir, edición, diseño, andamiaje, desarrollador...
 
    `helloworld.html` actúa como un conmutador, comprobando qué modo de creación está activo y redirigiendo a otro script HTL. Una convención común utilizada por los componentes de pantallas es tener un script `edit.html` para el modo de edición y un script `production.html` para el modo de producción.
@@ -157,7 +157,7 @@ AEM Screens tiene algunas restricciones interesantes que no son necesariamente v
 
    El componente procesa una etiqueta `div` y una etiqueta `h1` con texto. `${properties.message}` es una parte del script HTL que genera el contenido de una propiedad JCR llamada `message`. Más adelante se crea un cuadro de diálogo que permite al usuario escribir un valor para el texto de la propiedad `message`.
 
-   Tenga en cuenta también que la notación BEM (Modificador de elementos de bloque) se utiliza con el componente. BEM es una convención de codificación CSS que facilita la creación de componentes reutilizables. AEM BEM es la notación utilizada por [componentes principales de la clase ](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions) de la clase <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->.
+   Tenga en cuenta también que la notación BEM (Modificador de elementos de bloque) se utiliza con el componente. BEM es una convención de codificación CSS que facilita la creación de componentes reutilizables. BEM es la notación utilizada por [los componentes principales de AEM](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
 
 1. Crear un archivo debajo de `/apps/weretail-run/components/content/helloworld` con el nombre `edit.html.`
 
@@ -265,7 +265,7 @@ AEM Screens tiene algunas restricciones interesantes que no son necesariamente v
 
 ## Creación de bibliotecas del lado del cliente {#clientlibs}
 
-Las bibliotecas del lado del cliente proporcionan un mecanismo para organizar y administrar los archivos CSS y JavaScript AEM necesarios para una implementación de.
+Las bibliotecas del lado del cliente proporcionan un mecanismo para organizar y administrar los archivos CSS y JavaScript necesarios para una implementación de AEM.
 
 Los componentes de AEM Screens se representan de forma diferente en el modo de edición frente al modo de previsualización/producción. Se crean dos bibliotecas de cliente: una para el modo de edición y otra para la vista previa/producción.
 
@@ -307,7 +307,7 @@ Los componentes de AEM Screens se representan de forma diferente en el modo de e
 
    ![2018-04-30_at_3_11pm](/help/screens-cloud/developing/assets/2018-04-30_at_3_11pm.png)
 
-   En lugar de escribir CSS directamente, este tutorial utiliza LESS. [LESS](https://lesscss.org/) es un precompilador de CSS popular que admite variables, mezclas y funciones CSS. AEM Las bibliotecas de cliente de admiten de forma nativa la compilación LESS. AEM Sass u otros pre-compiladores pueden ser utilizados pero deben ser compilados fuera de la.
+   En lugar de escribir CSS directamente, este tutorial utiliza LESS. [LESS](https://lesscss.org/) es un precompilador de CSS popular que admite variables, mezclas y funciones CSS. Las bibliotecas de cliente de AEM admiten de forma nativa la compilación LESS. Sass u otros precompiladores pueden utilizarse, pero deben compilarse fuera de AEM.
 
 1. Rellene `/apps/weretail-run/components/content/helloworld/clientlibs/shared/css/styles.less` con lo siguiente:
 
@@ -378,7 +378,7 @@ Se puede usar una tercera categoría clientlibrary: `cq.screens.components.edit`
 
 ## Crear una página de diseño {#design-page}
 
-AEM Screens usa [plantillas de página estáticas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=es) y [configuraciones de diseño](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=es) para los cambios globales. Las configuraciones de diseño se utilizan frecuentemente para configurar los componentes permitidos para Parsys en un canal. Una práctica recomendada es almacenar estas configuraciones de una manera específica de la aplicación.
+AEM Screens usa [plantillas de página estáticas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) y [configuraciones de diseño](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) para los cambios globales. Las configuraciones de diseño se utilizan frecuentemente para configurar los componentes permitidos para Parsys en un canal. Una práctica recomendada es almacenar estas configuraciones de una manera específica de la aplicación.
 
 A continuación se crea una página de diseño de ejecución de We.Retail que almacena todas las configuraciones específicas del proyecto de ejecución de We.Retail.
 
@@ -386,7 +386,7 @@ A continuación se crea una página de diseño de ejecución de We.Retail que al
 1. Cree un nodo debajo de la carpeta de diseños, denominado `we-retail-run` con un tipo de `cq:Page`.
 1. Bajo la página `we-retail-run`, agregue otro nodo denominado `jcr:content` de tipo `nt:unstructured`. Agregue las siguientes propiedades al nodo `jcr:content`:
 
-   | Nombre | Tipo | Valor |
+   | Nombre | Tipo | Valor  |
    |---|---|---|
    | jcr:title | Cadena | Ejecución de We.Retail |
    | sling:resourceType | Cadena | wcm/core/components/designer |
@@ -400,7 +400,7 @@ A continuación se crea una página de diseño de ejecución de We.Retail que al
 
 El componente Hello World está diseñado para utilizarse en un canal de secuencias. Para probar el componente, se crea un nuevo Canal de secuencia.
 
-1. AEM En el menú Inicio de la, vaya a **Screens** > **We.Retail Run** n > y seleccione **Canales**.
+1. En AEM Global Navigation, vaya a **Screens** > **We.Retail Run** n > y seleccione **Canales**.
 
 1. Haga clic en el botón **Crear**
 
@@ -447,7 +447,7 @@ El componente Hello World está diseñado para utilizarse en un canal de secuenc
 
 ## Plantilla para controladores personalizados {#custom-handlers}
 
-Si el componente personalizado utiliza recursos externos, como recursos (imágenes, vídeos, fuentes e iconos), representaciones de recursos específicas o bibliotecas del lado del cliente (css y js), estos recursos no se añaden automáticamente a la configuración sin conexión. El motivo es que el Adobe solo agrupa el marcado del HTML de forma predeterminada.
+Si el componente personalizado utiliza recursos externos, como recursos (imágenes, vídeos, fuentes e iconos), representaciones de recursos específicas o bibliotecas del lado del cliente (css y js), estos recursos no se añaden automáticamente a la configuración sin conexión. El motivo es que Adobe solo agrupa el marcado de HTML de forma predeterminada.
 
 Para permitirle personalizar y optimizar los recursos exactos que se descargan en el reproductor, Adobe ofrece un mecanismo de extensión para que los componentes personalizados expongan sus dependencias a la lógica de almacenamiento en caché sin conexión en Screens.
 
@@ -548,7 +548,7 @@ El siguiente vídeo muestra el componente terminado y cómo se puede añadir a u
 
 ## Código finalizado {#finished-code}
 
-A continuación se muestra el código terminado del tutorial. AEM **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** y **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** son los paquetes compilados de la. El **&#x200B; &#x200B;**&#x200B;SRC-screens-weretail-run-0.0.1.zip es el código fuente no compilado que se puede implementar mediante Maven.
+A continuación se muestra el código terminado del tutorial. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** y **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** son los paquetes compilados de AEM. El ** **SRC-screens-weretail-run-0.0.1.zip es el código fuente no compilado que se puede implementar mediante Maven.
 
 [Obtener archivo](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 
