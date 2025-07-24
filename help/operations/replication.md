@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service usa la capacidad [Sling Content Dist
 >[!NOTE]
 >
 >Si le interesa publicar contenido en lotes, cree un flujo de trabajo con el [Paso del flujo de trabajo de activación de árbol](#tree-activation), que puede administrar de manera eficiente las cargas útiles grandes.
->>No se recomienda crear su propio código personalizado de publicación en lotes.
->>Si debe personalizar por cualquier motivo, puede almacenar en déclencheur un flujo de trabajo con este paso mediante las API de flujo de trabajo existentes.
->>Siempre es recomendable publicar solo el contenido que se debe publicar. Y sea prudente al no intentar publicar grandes cantidades de contenido, si no es necesario. Sin embargo, no hay límites en cuanto a la cantidad de contenido que se puede enviar a través de flujos de trabajo con el paso de flujo de trabajo de activación de árbol.
+>&#x200B;>No se recomienda crear su propio código personalizado de publicación en lotes.
+>&#x200B;>Si debe personalizar por cualquier motivo, puede almacenar en déclencheur un flujo de trabajo con este paso mediante las API de flujo de trabajo existentes.
+>&#x200B;>Siempre es recomendable publicar solo el contenido que se debe publicar. Y sea prudente al no intentar publicar grandes cantidades de contenido, si no es necesario. Sin embargo, no hay límites en cuanto a la cantidad de contenido que se puede enviar a través de flujos de trabajo con el paso de flujo de trabajo de activación de árbol.
 
 ### Cancelación/publicación rápida: cancelación/publicación planeada {#publish-unpublish}
 
@@ -193,6 +193,7 @@ A continuación se muestran ejemplos de registros generados durante un flujo de 
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
+
 </details>
 
 ### API de replicación {#replication-api}
