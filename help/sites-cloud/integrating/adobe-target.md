@@ -42,7 +42,7 @@ Para integrarse con Target, realice las siguientes tareas:
 
 >[!CAUTION]
 >
->En AEM as a Cloud Service, el agente de replicación que sincroniza Ofertas y actividades de AEM a Adobe Target está deshabilitado de forma predeterminada. Póngase en contacto con el equipo de [Soporte de Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=es#support) si necesita volver a habilitar el agente de replicación.
+>En AEM as a Cloud Service, el agente de replicación que sincroniza Ofertas y actividades de AEM a Adobe Target está deshabilitado de forma predeterminada. Póngase en contacto con el equipo de [Soporte de Adobe](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support) si necesita volver a habilitar el agente de replicación.
 
 >[!NOTE]
 >
