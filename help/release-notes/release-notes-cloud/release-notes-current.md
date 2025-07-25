@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 83aceb71ead66763b94ec523c9d9c76c4286c762
+source-git-commit: b4aec70b13575366c1d40ccf935481580a1fb6d8
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 100%
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -63,9 +63,11 @@ Content Hub ahora le permite [controlar el acceso a las colecciones durante la c
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Editor universal para formularios adaptables y fragmentos de formulario](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): ahora el editor universal permite crear formularios adaptables y fragmentos de formulario reutilizables. Los autores pueden crear formularios de forma visual, configurar acciones de envío y añadir la validación reCAPTCHA, todo ello en un entorno de creación simplificado de WYSIWYG. Esta posibilidad acelera la creación de formularios, mejora la coherencia y la protección contra el correo no deseado y el uso indebido automatizado.
+
 
 ### Características previas al lanzamiento
+
+* [Editor universal para formularios adaptables y fragmentos de formulario](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): ahora el editor universal permite crear formularios adaptables y fragmentos de formulario reutilizables. Los autores pueden crear formularios de forma visual, configurar acciones de envío y añadir la validación reCAPTCHA, todo ello en un entorno de creación simplificado de WYSIWYG. Esta posibilidad acelera la creación de formularios, mejora la coherencia y la protección contra el correo no deseado y el uso indebido automatizado.
 
 * [Generar y sincronizar representaciones AFP desde formularios adaptables](/help/forms/document-generation-afp-api.md): la API de sincronización de salida AFP permite a los administradores y usuarios generar la salida AFP (presentación de funciones avanzadas) desde formularios adaptables y sincronizar la salida con sistemas externos o ubicaciones de almacenamiento. AFP es un formato de documento de alto rendimiento optimizado para la impresión, que se usa a menudo en entornos empresariales a gran escala.
 
