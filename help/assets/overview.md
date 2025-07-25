@@ -57,11 +57,11 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+   <a href="https://experienceleague.adobe.com/es/docs/experience-manager-desktop-app/using/using">
    <img alt="Uso de la aplicación de escritorio de AEM" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+      <a href="https://experienceleague.adobe.com/es/docs/experience-manager-desktop-app/using/using">
       <strong>Usar la aplicación de escritorio de AEM</strong>
       </a>
    </div>
@@ -267,11 +267,11 @@ AEM Assets proporciona funciones que le permiten llegar al recurso correcto en p
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=es">
    <img alt="Prácticas recomendadas de administración de metadatos" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=es">
       <strong>Prácticas recomendadas de administración de metadatos</strong>
       </a>
    </div>
@@ -517,7 +517,7 @@ Puede integrar el Selector de recursos con una aplicación de Adobe o que no sea
 
 * **Integración con Adobe Workfront**: [!DNL Adobe Workfront] es una aplicación de administración de trabajo que le ayuda a administrar todo el ciclo de vida del trabajo en un solo lugar. La integración entre [!DNL Workfront] y [!DNL Adobe Experience Manager Assets] permite a las organizaciones mejorar la velocidad del contenido y el tiempo de salida al mercado, conectando intrínsecamente el trabajo con la administración de recursos digitales. En el contexto de la administración de su trabajo en Workfront, los usuarios tienen acceso a los documentos e imágenes necesarios.
 
-  Adobe ofrece [integrar [!DNL Workfront] y [!DNL Adobe Experience Manager Assets] de forma nativa](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
+  Adobe ofrece [integrar [!DNL Workfront] y [!DNL Adobe Experience Manager Assets] de forma nativa](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=es).
 
 * **Integración con Figma**: AEM Assets se integra de forma nativa con Figma, lo que permite a los diseñadores acceder directamente a los recursos almacenados en los AEM Assets desde la interfaz de usuario de Figma. Puede colocar contenido administrado en AEM Assets en el lienzo Figma y, a continuación, guardar contenido nuevo o editado en un repositorio de AEM Assets. Para acceder al conector de AEM Assets disponible en la página de la comunidad Figma, haga clic [aquí](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
@@ -583,11 +583,11 @@ Si ya tiene un sitio web de [!DNL Edge Delivery Services], consulte la documenta
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/es/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Integración con Adobe Journey Optimizer" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/es/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>Integración con Adobe Journey Optimizer</strong>
       </a>
    </div>
@@ -596,11 +596,11 @@ Si ya tiene un sitio web de [!DNL Edge Delivery Services], consulte la documenta
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+   <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
    <img alt="Integración con Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+      <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
       <strong>Integración con Commerce</strong>
       </a>
    </div>
