@@ -4,10 +4,10 @@ description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '1922'
-ht-degree: 100%
+source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -111,8 +111,8 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
 1. Ahora que tiene la carpeta de contenido configurada, es hora de vincularla al proyecto en GitHub que creó anteriormente con el elemento repetitivo de AEM Forms. Para conectarse, haga lo siguiente:
 
    1. Vaya al repositorio de GitHub que creó anteriormente con el elemento repetitivo de AEM Forms.
-   1. Abra `fstab.yaml` para editarlo.
-   1. Reemplace la referencia existente por la ruta de acceso a la carpeta que compartió con el usuario de AEM (forms@adobe.com).
+   1. Agregue el archivo `fstab.yaml` en la carpeta raíz.
+   1. Agregue la referencia con la ruta a la carpeta compartida con el usuario de AEM (forms@adobe.com).
 
       ![Contenido de muestra en Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
       Para obtener más información sobre la administración de archivos en Microsoft SharePoint, consulte [Cómo utilizar Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
-   1. Confirme el archivo actualizado `fsatb.yaml`, una vez que haya actualizado la referencia y todo se vea bien. Si tiene algún problema con la compilación, consulte [Solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
+   1. Confirme el archivo `fsatb.yaml`, una vez que haya agregado la referencia y todo se vea bien. Si tiene algún problema con la compilación, consulte [Solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
 
       ![Confirme el archivo fsatab.yaml actualizado](/help/edge/assets/commit-updated-fstab-yaml.png)
 

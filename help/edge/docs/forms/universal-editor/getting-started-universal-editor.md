@@ -4,10 +4,10 @@ description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1853'
-ht-degree: 100%
+source-git-commit: 0e7375adb146c370a189127838d736290d1860ad
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,6 @@ AEM Forms proporciona un bloque, conocido como bloque de formularios adaptables,
 ![Flujo de trabajo de repositorio de Github](/help/edge/assets/repo-workflow.png){width=auto}
 
 Este tutorial le guía a través de la creación, previsualización y publicación de su propio formulario con un proyecto de sitio de Adobe Experience Manager nuevo o existente mediante la creación de WYSIWYG en el editor universal.
-
 
 ## Requisitos previos
 
@@ -66,16 +65,16 @@ La plantilla repetitiva de AEM Forms le permite empezar rápidamente con un proy
 1. Ahora, vincule el repositorio de GitHub que ha creado con el elemento repetitivo de AEM Forms a su entorno de creación de proyectos de AEM. Para conectarse, haga lo siguiente:
 
    1. Vaya al repositorio de GitHub que creó anteriormente con el elemento repetitivo de AEM Forms.
-   1. Abra el archivo **fstab.yaml** para editarlo.
+   1. Agregue el archivo **fstab.yaml** en la carpeta raíz.
 
       ![abrir archivo fstab.yaml](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. Edite el archivo **fstab.yaml** para actualizar el punto de montaje del proyecto. Reemplace la URL por la URL de la instancia de creación de AEM as a Cloud Service.
+   1. Agregue el punto de montaje de su proyecto al archivo **fstab.yaml**. Añada la dirección URL de la instancia de creación de AEM as a Cloud Service.
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![editar archivo fstab.yaml](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-   1. Confirme el archivo actualizado **fstab.yaml**, una vez haya actualizado la referencia y todo se vea bien. 
+   1. Confirme el archivo **fstab.yaml**, una vez que haya agregado la referencia y todo se vea bien.
 
       ![confirme los cambios](/help/edge/docs/forms/assets/commit-fstab-changes.png)
 
@@ -177,7 +176,7 @@ Para integrar, realice lo siguiente:
    * archivo [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 
    * archivo [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
 1. Vaya al archivo `/scripts/editor-support.js` de su proyecto de AEM y actualícelo con el [archivo editor-support.js en el elemento repetitivo de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
-1. Vaya a `/models/_section.json` en su proyecto de AEM y anexe &quot;form&quot; y &quot;embed-adaptive-form&quot; a la matriz de componentes del objeto `filters`:
+1. Vaya a `/models/_section.json` en su proyecto de AEM y anexe form y embed-adaptive-form a la matriz de componentes del objeto `filters`:
 
    ```
        "filters": [
