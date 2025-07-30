@@ -1,14 +1,14 @@
 ---
-title: Agregar una asignación de dominio
+title: Añadir una asignación de dominio
 description: Obtenga información sobre cómo agregar una asignación de dominio para un sitio de Edge Delivery o un entorno de Cloud Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: c2229d040c8df7c9089d141d57ca59ff2f4ce8a7
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 9%
+source-wordcount: '542'
+ht-degree: 8%
 
 ---
 
@@ -53,3 +53,22 @@ Consulte también [CDN administrada por Adobe](https://www.aem.live/docs/byo-cdn
    | Otro proveedor de CDN | Seleccione esta opción si está utilizando su propio proveedor de CDN y no la CDN administrada por Adobe que está disponible.<br>En **Detalles de configuración**, en la lista desplegable **Dominio**, seleccione el nombre de dominio que desee usar.<br>No hay dominios comprobados disponibles en la lista desplegable? Consulte [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 
 1. Haga clic en **Guardar**.
+
+   Adobe recomienda probar la asignación de dominio.
+
+## Prueba de la asignación de dominio {#test-domain-mapping}
+
+Puede comprobar que una nueva asignación de dominio está activa en la CDN administrada por Adobe sin esperar la propagación pública de DNS.
+
+Ejecute un comando **curl** que anule la resolución de DNS y que apunte directamente al perímetro de CDN:
+
+```bash
+curl -svo /dev/null https://www.example.com \
+--resolve www.example.com:443:151.101.3.10
+```
+
+* Reemplace **`www.example.com`** por su dominio.
+* Sustituya **151.101.3.10** por la dirección IP de Edge que se muestra en Cloud Manager para esta asignación.
+
+El indicador `--resolve` fuerza la solicitud a la IP especificada y devuelve el resultado correcto solo después de que el certificado y el enrutamiento para su dominio se hayan instalado correctamente.
+
