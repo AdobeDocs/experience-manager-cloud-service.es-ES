@@ -5,9 +5,9 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2430'
 ht-degree: 74%
 
 ---
@@ -130,10 +130,10 @@ A continuación se ofrece una descripción general de cada tipo de propiedad y d
 | Casilla de verificación | Añada un valor booleano. Se almacena como TRUE o FALSE una vez que se guarda un valor. |
 | Fecha | Añada un componente de fecha. |
 | Lista desplegable | Añada una lista desplegable. |
-| Estado | Añadir la propiedad de estado del repositorio (asignada a repo:state) |
-| Estado de los recursos | Añadir la propiedad predeterminada Estado del recurso (asignada a dam:assetStatus) |
-| Etiquetas | Añada una etiqueta de los valores almacenados en Administración de taxonomía (asignados a xcm:tags). |
-| Palabras clave | Añada palabras clave de forma libre (asignadas a dc:subject). |
+| Estado | Agregar la propiedad de estado del repositorio (asignada al repositorio :state) |
+| Estado de los recursos | Agregar la propiedad predeterminada Estado del recurso (asignada a dam:assetStatus) |
+| Etiquetas | Agregue una etiqueta de los valores almacenados en Taxonomy Management (asignados a xcm:tags). |
+| Palabras clave | Agregar palabras clave de forma libre (asignadas a dc:subject). |
 | Etiquetas inteligentes | Añada para aumentar las capacidades de búsqueda añadiendo automáticamente etiquetas de metadatos. |
 
 ### Asignar un formulario de metadatos a una carpeta {#assign-metadata-form-folder}
@@ -228,9 +228,6 @@ Para habilitar los metadatos generados por IA:
 
 * Debes firmar un acuerdo con GenAI Rider. Para obtener más información, póngase en contacto con su representante de Adobe.
 
-  >[!IMPORTANT]
-  >
-  > El título de un recurso generado por IA solo se muestra en la tarjeta Recurso cuando no se ha definido el título del recurso. No sobrescribe el título del recurso especificado por usted.
 
 ### Uso de metadatos generados por IA {#using-ai-generated-smart-tags}
 
@@ -253,7 +250,9 @@ Para utilizar la función de etiquetas inteligentes mejorada, ejecute los siguie
 
 1. [Opcional]: puede agregar etiquetas adicionales o crear las suyas propias si cree que faltan etiquetas relevantes. Para ello, escriba sus etiquetas en el campo **[!UICONTROL Palabras clave generadas]** y haga clic en **[!UICONTROL Guardar]**.
 
-## Siguientes pasos {#next-steps}
+Para obtener información sobre cómo deshabilitar los metadatos generados por IA, consulte [Deshabilitar metadatos generados por IA](/help/assets/smart-tags.md#disable-ai-generated-metadata).
+
+## Próximos pasos {#next-steps}
 
 * [Vea un vídeo para administrar formularios de metadatos en la vista de Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=es)
 
@@ -261,7 +260,7 @@ Para utilizar la función de etiquetas inteligentes mejorada, ejecute los siguie
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

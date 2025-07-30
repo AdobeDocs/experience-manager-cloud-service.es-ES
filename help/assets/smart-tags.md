@@ -4,9 +4,9 @@ description: Etiquete recursos con un servicio artificialmente inteligente que a
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2696'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets sin etiquetar en DAM {#smart-tag-existing-assets}
 
-Los recursos existentes o anteriores de DAM no se etiquetan automáticamente de forma inteligente. Debe [volver a procesar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=es#adjusting-load) Assets manualmente para poder generarles etiquetas inteligentes. Una vez completado el proceso, vaya a la página [!UICONTROL Propiedades] de cualquier recurso de la carpeta. Las etiquetas agregadas automáticamente se ven en la sección [!UICONTROL Etiquetas inteligentes] de la pestaña [!UICONTROL Básico]. Estas etiquetas inteligentes aplicadas se ordenan en orden descendente de [puntuación de confianza](#confidence-score).
+Los recursos existentes o anteriores de DAM no se etiquetan automáticamente de forma inteligente. Debe [volver a procesar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manualmente para poder generarles etiquetas inteligentes. Una vez completado el proceso, vaya a la página [!UICONTROL Propiedades] de cualquier recurso de la carpeta. Las etiquetas agregadas automáticamente se ven en la sección [!UICONTROL Etiquetas inteligentes] de la pestaña [!UICONTROL Básico]. Estas etiquetas inteligentes aplicadas se ordenan en orden descendente de [puntuación de confianza](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -227,9 +227,23 @@ Para habilitar los metadatos generados por IA:
 
 * Debes firmar un acuerdo con GenAI Rider. Para obtener más información, póngase en contacto con su representante de Adobe.
 
-  >[!IMPORTANT]
-  >
-  > El título de un recurso generado por IA solo se muestra en la tarjeta Recurso cuando no se ha definido el título del recurso. No sobrescribe el título del recurso especificado por usted.
+### Configuración de títulos generados por IA {#configure-ai-generated-titles}
+
+AEM permite configurar la visualización de los títulos de los recursos en la vista de tarjetas o en la vista de lista de la página de exploración de recursos. Puede elegir mostrar el título del recurso definido por usted, el título generado mediante IA o utilizar un título generado por IA solo si no hay ningún título existente para el recurso.
+
+Para configurar títulos generados por IA:
+
+1. Vaya a **[!UICONTROL Herramientas > Assets > Configuración de Assets > Configuración de mejora de etiquetas inteligentes]**.
+
+1. Seleccione una de las siguientes opciones:
+
+   * **Título de DC de visualización (predeterminado)**: especifique el título en el campo **[!UICONTROL Título]** disponible en las propiedades del recurso para mostrarlo en la vista de tarjeta o en la vista de lista. Si el título del recurso no está definido, AEM Assets muestra el nombre del archivo.
+
+   * **Mostrar título generado por IA**: muestra el título generado por IA e ignora el título especificado en las propiedades del recurso. Si el título generado por IA no está disponible para un recurso, AEM Assets muestra el título de recurso predeterminado disponible en sus propiedades.
+
+   * **Mostrar el título generado por IA solo si el título de DC no existe**: AEM Assets muestra el título generado por IA solo si el título del recurso no está definido para un recurso.
+
+     ![Configurar títulos generados por IA](assets/configure-title-ai-generated.png)
 
 ### Uso de metadatos generados por IA {#using-ai-generated-smart-tags}
 
@@ -251,6 +265,26 @@ Para utilizar la función de etiquetas inteligentes mejorada, ejecute los siguie
    * **[!UICONTROL Palabras clave generadas]:** Las palabras clave son términos de destino que representan los temas principales de un recurso y que ayudan a etiquetar y filtrar el contenido.
 
 1. [Opcional]: puede agregar etiquetas adicionales o crear las suyas propias si cree que faltan etiquetas relevantes. Para ello, escriba sus etiquetas en el campo **[!UICONTROL Palabras clave generadas]** y haga clic en **[!UICONTROL Guardar]**.
+
+### Deshabilitar metadatos generados por IA {#disable-ai-generated-metadata}
+
+Puede deshabilitar los metadatos generados por IA en el nivel de carpeta. Todas las carpetas secundarias heredan las propiedades de la carpeta principal.
+
+Para deshabilitar los metadatos generados por IA en el nivel de carpeta:
+
+1. Vaya a **[!UICONTROL Adobe Experience Manager > Assets > Archivos]**.
+
+1. Seleccione la carpeta y haga clic en **[!UICONTROL Propiedades]**.
+
+1. En la ficha **[!UICONTROL Procesamiento de recursos]**, vaya a la carpeta **[!UICONTROL Mejoras de etiquetas inteligentes para imágenes]**. Seleccione uno de los siguientes valores de la lista desplegable:
+
+   * Heredada: la carpeta hereda las opciones de activación o desactivación de la carpeta principal.
+
+   * Habilitar: habilita los metadatos generados por IA para la carpeta seleccionada.
+
+   * Deshabilitar: deshabilita los metadatos generados por IA para la carpeta seleccionada.
+
+     ![Deshabilitar metadatos generados por IA](assets/disable-ai-generated-metadata.png)
 
 ## Limitaciones y prácticas recomendadas relacionadas con las etiquetas inteligentes {#limitations-best-practices-smart-tags}
 
