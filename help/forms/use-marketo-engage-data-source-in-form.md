@@ -5,10 +5,10 @@ Keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Mar
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
-workflow-type: ht
-source-wordcount: '463'
-ht-degree: 100%
+source-git-commit: ce4646d8db1870f8ec85faddeb4e0a6a04f4c46e
+workflow-type: tm+mt
+source-wordcount: '738'
+ht-degree: 81%
 
 ---
 
@@ -38,28 +38,75 @@ Requisito previo para utilizar la fuente de datos de Marketo Engage con formular
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
 
-Para configurar un formulario adaptable con la fuente de datos de Marketo Engage, realice los siguientes pasos:
+>[!BEGINTABS]
+
+>[!TAB Componente Base]
+
+Para configurar un formulario adaptable basado en componentes de base con la fuente de datos de Marketo Engage, realice los siguientes pasos:
+
 1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms].
+1. Abra el formulario adaptable para editarlo y vaya a la sección **[!UICONTROL Modelo de datos]** de las propiedades del contenedor del formulario adaptable y seleccione un modelo de formulario como **Conector**.
+1. Seleccione el **[!UICONTROL Conector]** en la lista desplegable.
+1. Después de seleccionar el **[!UICONTROL Conector]**, puede seleccionar la configuración de la nube.
 
-2. Abra el formulario adaptable para editarlo.
-3. Abra el árbol de contenido y seleccione **[!UICONTROL Contenedor de guía]**.
-4. Haga clic en el icono de las ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar la fuente de datos.
-5. Abra la pestaña **[!UICONTROL Modelo de datos]** y seleccione un modelo de formulario como **Conector**.
-6. Seleccione el **[!UICONTROL Conector]** en la lista desplegable.
-
-7. Después de seleccionar el **[!UICONTROL Conector]**, puede seleccionar la configuración de la nube.
-
-   ![Seleccionar conector de Marketo](/help/forms/assets/select-marketo-connector.png)
+   ![Seleccionar conector de Marketo](/help/forms/assets/select-marketo-connector-af1.png){width=50%, height=50%}
 
    En función de la configuración de Marketo Engage seleccionada, los elementos del formulario se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
 
-   ![Fuente de datos de Marketo](/help/forms/assets/marketo-engage-data-source.png)
+   ![Fuente de datos de Marketo](/help/forms/assets/marketo-engage-data-source-af1.png){width=50%, height=50%}
 
-8. Haga clic en **[!UICONTROL Listo]**.
+1. Haga clic en **[!UICONTROL Listo]**.
 
 También puede editar las propiedades del formulario adaptable para cambiar su configuración asociada.
 
 El formulario adaptable ahora está configurado con la fuente de datos de la instancia de Marketo Engage conectada. Ahora, configúrelo para enviar datos a Adobe Marketo Engage.
+
+>[!TAB Componente principal]
+
+Para configurar un formulario adaptable basado en componentes principales con la fuente de datos de Marketo Engage, realice los siguientes pasos:
+
+1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms].
+
+1. Abra el formulario adaptable para editarlo.
+1. Abra el árbol de contenido y seleccione **[!UICONTROL Contenedor de guía]**.
+1. Haga clic en el icono de las ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar la fuente de datos.
+1. Abra la pestaña **[!UICONTROL Modelo de datos]** y seleccione un modelo de formulario como **Conector**.
+1. Seleccione el **[!UICONTROL Conector]** en la lista desplegable.
+
+1. Después de seleccionar el **[!UICONTROL Conector]**, puede seleccionar la configuración de la nube.
+
+   ![Seleccionar conector de Marketo](/help/forms/assets/select-marketo-connector.png){width=50%, height=50%}
+
+   En función de la configuración de Marketo Engage seleccionada, los elementos del formulario se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
+
+   ![Fuente de datos de Marketo](/help/forms/assets/marketo-engage-data-source.png){width=50%, height=50%}
+
+1. Haga clic en **[!UICONTROL Listo]**.
+
+También puede editar las propiedades del formulario adaptable para cambiar su configuración asociada.
+
+El formulario adaptable ahora está configurado con la fuente de datos de la instancia de Marketo Engage conectada. Ahora, configúrelo para enviar datos a Adobe Marketo Engage.
+
+>[!TAB Editor universal]
+
+Para configurar un formulario adaptable creado en el Editor universal con la fuente de datos de Marketo Engage, realice los siguientes pasos:
+
+1. Abra las propiedades del formulario para editarlo.
+1. Seleccione **[!UICONTROL Modelo de formulario]**.
+1. Seleccione **Conector** del **[!UICONTROL Modelo de formulario]**.
+1. Después de seleccionar el **[!UICONTROL Conector]**, puede seleccionar la configuración de la nube.
+
+   ![Seleccionar conector de Marketo](/help/forms/assets/select-marketo-connector-ue.png)
+
+1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
+
+En función de la configuración de Marketo Engage seleccionada, los elementos del formulario se muestran en la pestaña **[!UICONTROL Fuente de datos]** del Explorador de contenido en el Panel de propiedades. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
+
+![Fuente de datos de Marketo](/help/forms/assets/marketo-engage-data-source-ue.png)
+
+El formulario ahora está configurado con la fuente de datos de la instancia de Marketo Engage conectada. Ahora, configúrelo para enviar datos a Adobe Marketo Engage.
+
+>[!ENDTABS]
 
 ## Preguntas más frecuentes (FAQ)
 

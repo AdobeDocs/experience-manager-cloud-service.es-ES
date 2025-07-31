@@ -3,12 +3,12 @@ title: ¿Cómo integrar un formulario adaptable con Microsoft&reg; Power Automat
 description: Integre un formulario adaptable con Microsoft&reg; Power Automate.
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: conectar AEM Forms a Power Automate, automatización de Power Automate AEM Forms, Integrar Power Automate con Formularios adaptables, enviar datos de Formularios adaptables a Power Automate
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 8d0814642fa0e5eb3f92a499202d0b79d90f91e3
-workflow-type: ht
-source-wordcount: '1243'
-ht-degree: 100%
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+workflow-type: tm+mt
+source-wordcount: '1531'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ Puede configurar un formulario adaptable para ejecutar un flujo de nube de Micro
 
 El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar datos de formularios adaptables, archivos adjuntos y documentos de registro al flujo de nube de Power Automate. 
 
-AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
+AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/aem-forms-submit-action.md).
 
 
 ## Ventajas
@@ -140,12 +140,17 @@ Su instancia de Forms as a Cloud Service ahora está conectada con Microsoft® P
 
 Tras [conectar su instancia de Forms as a Cloud Service con Microsoft® Power Automate](#connect-forms-server-with-power-automate), realice la siguiente acción para configurar el formulario adaptable y enviar los datos capturados a un flujo de Microsoft® al enviar el formulario.
 
+>[!BEGINTABS]
+
+>[!TAB Componente Base]
+
 1. Inicie sesión en la instancia de autor, seleccione su formulario adaptable y haga clic en **[!UICONTROL Propiedades]**.
 1. En el contenedor de configuración, examine y seleccione el contenedor creado en la sección [Crear la configuración de nube de Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) y seleccione **[!UICONTROL Guardar y cerrar]**.
 1. Abra el formulario adaptable para editarlo y vaya a la sección **[!UICONTROL Envío]** de las propiedades del contenedor del formulario adaptable.
 1. En el contenedor de propiedades, para las **[!UICONTROL Acciones de envío]** seleccione la opción **[!UICONTROL Invocar un flujo de Power Automate]** y un **[!UICONTROL Flujo de Power Automate]**. Seleccione el flujo necesario y los datos de formularios adaptables se envían en el momento del envío.
 
    ![Configurar la acción de envío](assets/submission.png)
+1. Haga clic en **[!UICONTROL Listo]**.
 
 >[!NOTE]
 >
@@ -210,6 +215,167 @@ Tras [conectar su instancia de Forms as a Cloud Service con Microsoft® Power Au
             }
         }
 ```
+
+>[!TAB Componente principal]
+
+1. Inicie sesión en la instancia de autor, seleccione su formulario adaptable y haga clic en **[!UICONTROL Propiedades]**.
+1. En el contenedor de configuración, examine y seleccione el contenedor creado en la sección [Crear la configuración de nube de Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) y seleccione **[!UICONTROL Guardar y cerrar]**.
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
+1. Haga clic en la pestaña **[!UICONTROL Envío]**.
+1. Seleccione la opción **[!UICONTROL Invocar un flujo de Power Automate]** de la lista desplegable Enviar acción y seleccione un **[!UICONTROL flujo de Power Automate]**. Seleccione el flujo necesario y los datos de formularios adaptables se envían en el momento del envío.
+
+   ![Configurar la acción de envío](/help/forms/assets/power-automate-cc.png)
+1. Haga clic en **[!UICONTROL Listo]**.
+
+>[!NOTE]
+>
+> Antes de enviar el formulario adaptable, asegúrese de que se añada el activador `When an HTTP Request is received` con el esquema JSON a continuación a su flujo de Power Automate.
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!TAB Editor universal]
+
+1. Inicie sesión en la instancia de autor y seleccione su formulario adaptable.
+1. En el contenedor de configuración, examine y seleccione el contenedor creado en la sección [Crear la configuración de nube de Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) y seleccione **[!UICONTROL Guardar y cerrar]**.
+1. Abra el formulario adaptable para editarlo.
+1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
+Aparecerá el cuadro de diálogo **Propiedades del formulario**.
+
+   >[!NOTE]
+   >
+   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
+   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+
+
+1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Invocar un flujo de Power Automate]**. Seleccione el flujo necesario y los datos de formularios adaptables se envían en el momento del envío.
+
+   ![Configurar la acción de envío](/help/forms/assets/power-automate-ue.png)
+1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
+
+>[!NOTE]
+>
+> Antes de enviar el formulario adaptable, asegúrese de que se añada el activador `When an HTTP Request is received` con el esquema JSON a continuación a su flujo de Power Automate.
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!ENDTABS]
 
 <!--
 ## See also

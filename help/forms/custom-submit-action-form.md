@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 82a3016149645701abe829ad89c493f480956267
-workflow-type: ht
-source-wordcount: '1705'
-ht-degree: 100%
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+workflow-type: tm+mt
+source-wordcount: '1697'
+ht-degree: 94%
 
 ---
 
@@ -94,7 +94,7 @@ Si la acción no ofrece una ruta de reenvío, el servlet de envío redirecciona 
 
 ## Acción de envío {#submit-action}
 
-Una acción de envío es sling:Folder, que incluye lo siguiente:
+Una acción de envío es un sling:Folder que incluye lo siguiente:
 
 * **addfields.jsp**: Este script aporta los campos de acción que se añaden al archivo HTML durante la representación. Utilice este script para agregar los parámetros de entrada ocultos necesarios durante el envío en el script post.POST.jsp.
 * **dialog.xml**: Este script es similar al cuadro de diálogo Componente CQ. Aporta información de configuración que el autor personaliza. Los campos se muestran en la pestaña Acciones de envío, del cuadro de diálogo Editar formulario adaptable, al seleccionar la acción de envío.
@@ -117,7 +117,7 @@ Realice los siguientes pasos para crear una acción de envío personalizada que 
 
 1. Inicie sesión en CRXDE Lite en la URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Cree un nodo con la propiedad sling:Folder y el nombre store_and_mail en la carpeta /apps/custom_submit_action. Cree la carpeta custom_submit_action si todavía no existe.
 
-   ![Captura de pantalla que representa la creación de un nodo con la propiedad sling:Folder](assets/step1.png)
+   ![Captura de pantalla que muestra la creación de un nodo con la propiedad sling:Folder](assets/step1.png)
 
 2. **Facilite los campos de configuración obligatorios.**
 
@@ -209,7 +209,7 @@ Realice los siguientes pasos para crear una acción de envío personalizada que 
 
 ## Utilizar la propiedad submitService para las acciones de envío personalizadas {#submitservice-property}
 
-Al establecer la acción de envío personalizada, que incluye la propiedad `submitService`, el formulario activa [FormSubmitActionService](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) en el momento del envío. `FormSubmitActionService` utiliza el método `getServiceName` para recuperar el valor de la propiedad `submitService`. En función del valor de la propiedad `submitService`, el servicio invoca el método de envío adecuado. Incluya `FormSubmitActionService` al paquete personalizado que carga en el servidor de [!DNL AEM Forms].
+Al establecer la acción de envío personalizada, que incluye la propiedad `submitService`, el formulario activa [FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) en el momento del envío. `FormSubmitActionService` utiliza el método `getServiceName` para recuperar el valor de la propiedad `submitService`. En función del valor de la propiedad `submitService`, el servicio invoca el método de envío adecuado. Incluya `FormSubmitActionService` al paquete personalizado que carga en el servidor de [!DNL AEM Forms].
 
 Añada la propiedad `submitService` de tipo cadena a `sling:Folder` de su acción de envío personalizada para habilitar [!DNL Adobe Sign] para el formulario adaptable. Puede seleccionar la opción **[!UICONTROL Habilitar Adobe Sign]** en la sección **[!UICONTROL Firma electrónica]** de las propiedades del contenedor del formulario adaptable solo después de establecer el valor de la propiedad `submitService` de su acción de envío personalizada.
 
@@ -217,6 +217,7 @@ Añada la propiedad `submitService` de tipo cadena a `sling:Folder` de su acció
 
 
 ![Enviar propiedad de servicio](assets/submit-service-property.png)
+
 
 <!-- You can't do comments within comments, so I changed comment tags to <start-comment> <end-comment> -->
 

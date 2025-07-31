@@ -2,13 +2,13 @@
 Title: How to integrate Adaptive Form to a SharePoint Document Library?
 Description: This article explains how to send data from your Adaptive Form to a SharePoint  Document library when you submit the form.
 keywords: Cómo conectar la biblioteca de documentos de SharePoint para un formulario adaptable, Enviar a SharePoint, Crear una configuración de biblioteca de documentos de SharePoint, Utilizar la acción de envío Enviar a SharePoint en un formulario adaptable, Biblioteca de documentos de SharePoint del modelo de datos de AEM Forms, Biblioteca de documentos de SharePoint del modelo de datos de Forms, Integrar el modelo de datos de Forms a la biblioteca de documentos de SharePoint
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 75%
+source-wordcount: '964'
+ht-degree: 63%
 
 ---
 
@@ -21,7 +21,7 @@ Para usar la acción de envío **[!UICONTROL Enviar a Biblioteca de documentos d
 1. [Crear una configuración de Biblioteca de documentos de SharePoint](#1-create-a-sharepoint-document-library-configuration): conecta AEM Forms a su almacenamiento de Microsoft® SharePoint.
 2. [Utilice la acción de envío Enviar a SharePoint en un formulario adaptable](#2-use-sharepoint-document-library-configuration-in-an-adaptive-form): conecta el formulario adaptable al Microsoft® SharePoint configurado.
 
-## 1. Cree una configuración de SharePoint Document Library
+## &#x200B;1. Cree una configuración de SharePoint Document Library
 
 Para conectar AEM Forms a su almacenamiento de la biblioteca de documentos de Microsoft® Sharepoint:
 
@@ -59,30 +59,73 @@ Para conectar AEM Forms a su almacenamiento de la biblioteca de documentos de Mi
 
 Ahora puede utilizar esta configuración de SharePoint Sites para la acción de envío en un formulario adaptable.
 
-### 2. Utilizar la configuración de la biblioteca de documentos de SharePoint en un formulario adaptable
+### &#x200B;2. Utilizar la configuración de la biblioteca de documentos de SharePoint en un formulario adaptable
 
-Puede utilizar la configuración de la biblioteca de documentos de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una carpeta de SharePoint. Siga estos pasos para usar una configuración de almacenamiento de la biblioteca de documentos de SharePoint en un formulario adaptable como el siguiente:
+Puede utilizar la configuración de la biblioteca de documentos de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una carpeta de SharePoint.
 
-1. Crear un [Formulario adaptable](/help/forms/creating-adaptive-form-core-components.md).
+>[!NOTE]
+>
+> * Seleccione el mismo [!UICONTROL Contenedor de configuración] para un formulario adaptable, donde haya creado su almacenamiento de la biblioteca de documentos de SharePoint.
+> * Si no se selecciona ningún [!UICONTROL Contenedor de configuración], a continuación, las carpetas globales [!UICONTROL Configuración de almacenamiento] aparecen en la ventana de propiedades de la acción de envío.
 
-   >[!NOTE]
-   >
-   > * Seleccione el mismo [!UICONTROL Contenedor de configuración] para un formulario adaptable, donde haya creado su almacenamiento de la biblioteca de documentos de SharePoint.
-   > * Si no se selecciona ningún [!UICONTROL Contenedor de configuración], a continuación, las carpetas globales [!UICONTROL Configuración de almacenamiento] aparecen en la ventana de propiedades de la acción de envío.
+>[!BEGINTABS]
 
-1. Seleccionar **Acción de envío** como **[!UICONTROL Enviar a SharePoint]**.
+>[!TAB Componente Base]
+
+Realice los siguientes pasos para utilizar una configuración de almacenamiento de la biblioteca de documentos de SharePoint en un formulario adaptable basado en un componente de base como:
+
+1. Abra el formulario adaptable para editarlo y vaya a la sección **[!UICONTROL Envío]** de las propiedades del contenedor del formulario adaptable.
+1. En la lista desplegable **[!UICONTROL Enviar acción]**, seleccione **Enviar acción** como **[!UICONTROL Enviar a SharePoint]**.
+   ![GIF de Sharepoint](/help/forms/assets/submit-to-sharepoint-fc.png){width=50%}
+1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
+1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración de envío.
+
+>[!NOTE]
+>
+> * Cuando envía el formulario, los datos se guardan en el almacenamiento de la biblioteca de documentos de Microsoft® Sharepoint especificado. La estructura de carpetas para guardar datos es `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Los archivos adjuntos también se almacenan en el directorio `/folder_name/form_name/year/month/date/submission_id/data`. Sin embargo, si selecciona **Guardar archivos adjuntos con el nombre original**, los archivos adjuntos se almacenarán en la carpeta utilizando sus nombres de archivo originales.
+
+>[!TAB Componente principal]
+
+Realice los siguientes pasos para utilizar una configuración de almacenamiento de la biblioteca de documentos de SharePoint en un formulario adaptable basado en un componente principal como:
+
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
+1. Haga clic en la pestaña **[!UICONTROL Envío]**.
+1. En la lista desplegable **[!UICONTROL Enviar acción]**, seleccione **Enviar acción** como **[!UICONTROL Enviar a SharePoint]**.
    ![GIF de Sharepoint](/help/forms/assets/sharedrive-video.gif)
 1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
 1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración de envío.
 
 >[!NOTE]
 >
-> Cuando envía el formulario, los datos se guardan en el almacenamiento de la biblioteca de documentos de Microsoft® Sharepoint especificado. La estructura de carpetas para guardar datos es `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Cuando envía el formulario, los datos se guardan en el almacenamiento de la biblioteca de documentos de Microsoft® Sharepoint especificado. La estructura de carpetas para guardar datos es `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Los archivos adjuntos también se almacenan en el directorio `/folder_name/form_name/year/month/date/submission_id/data`. Sin embargo, si selecciona **Guardar archivos adjuntos con el nombre original**, los archivos adjuntos se almacenarán en la carpeta utilizando sus nombres de archivo originales.
+
+>[!TAB Editor universal]
+
+Realice los siguientes pasos para utilizar una configuración de almacenamiento de la biblioteca de documentos de SharePoint en un formulario adaptable creado en el editor universal como:
+
+1. Abra el formulario adaptable para editarlo.
+1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
+Aparecerá el cuadro de diálogo **Propiedades del formulario**.
+
+   >[!NOTE]
+   >
+   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
+   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+
+1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Enviar a SharePoint]**.
+   ![GIF de Sharepoint](/help/forms/assets/submit-to-sharepoint-ue.png)
+1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
+1. Haga clic en **[!UICONTROL Guardar y cerrar]** para guardar la configuración de envío.
 
 >[!NOTE]
 >
-> Los archivos adjuntos también se almacenan en el directorio `/folder_name/form_name/year/month/date/submission_id/data`. Sin embargo, si selecciona **Guardar archivos adjuntos con el nombre original**, los archivos adjuntos se almacenarán en la carpeta utilizando sus nombres de archivo originales.
-> ![image](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
+> * Cuando envía el formulario, los datos se guardan en el almacenamiento de la biblioteca de documentos de Microsoft® Sharepoint especificado. La estructura de carpetas para guardar datos es `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Los archivos adjuntos también se almacenan en el directorio `/folder_name/form_name/year/month/date/submission_id/data`. Sin embargo, si selecciona **Guardar archivos adjuntos con el nombre original**, los archivos adjuntos se almacenarán en la carpeta utilizando sus nombres de archivo originales.
+
+>[!ENDTABS]
 
 ## Artículos relacionados
 

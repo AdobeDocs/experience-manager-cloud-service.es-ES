@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '6492'
-ht-degree: 100%
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+workflow-type: tm+mt
+source-wordcount: '6727'
+ht-degree: 99%
 
 ---
 
@@ -417,7 +417,7 @@ Vamos a comprender cómo crear una regla en el editor visual utilizando el sigui
 La sección Loan Requirements (requisitos de préstamo) del formulario de solicitud de ejemplo requiere que los solicitantes especifiquen su estado civil, su salario y, si están casados, el salario de su cónyuge. En función de las entradas del usuario, la regla calcula la cantidad de idoneidad para el préstamo y se muestra en el campo Loan Eligibility (elegibilidad del préstamo). Aplique las siguientes reglas para implementar el escenario:
 
 * El campo Spouse’s Salary (salario del cónyuge) solo se muestra cuando en el estado civil (Marital Status) se indica que se está casado o casada (Married).
-* La cantidad de la elegibilidad del préstamo es el 50 % del salario total.
+* La cantidad de la idoneidad del préstamo es el 50 % del salario total.
 
 Para escribir las reglas, realice los siguientes pasos:
 
@@ -537,7 +537,7 @@ Para escribir las reglas, realice los siguientes pasos:
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/es/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -600,8 +600,8 @@ Muestra los parámetros utilizados por la función. Una función puede tener var
 * **Sintaxis**
 de tipo de retorno: `@return {type}`
 O bien, puede usar `@returns {type}`.
-Agrega información sobre la función, como su objetivo. 
-{type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
+Agrega información sobre la función, como su objetivo.
+  {type} representa el tipo devuelto de la función. Los tipos de valor devuelto permitidos son:
 
    1. cadena
    1. número
@@ -731,6 +731,22 @@ var c = {
 >
 >Asegúrese de utilizar `jsdoc` para cada función personalizada. Aunque `jsdoc` se recomienda comentar, incluya uno vacío `jsdoc` para marcar la función como función personalizada. Permite la gestión predeterminada de la función personalizada.
 
+### Compatibilidad con funciones personalizadas en expresiones de validación {#supporting-custom-functions-in-validation-expressions-br}
+
+A veces, si hay **reglas de validación complejas**, el script de validación exacta reside en funciones personalizadas y el autor llama a estas funciones personalizadas desde la expresión de validación de campo. Para que esta biblioteca de funciones personalizadas sea conocida y esté disponible mientras se realizan las validaciones del lado del servidor, el autor del formulario puede configurar el nombre de la biblioteca de cliente de AEM en la pestaña **[!UICONTROL Básico]** de las propiedades del contenedor del formulario adaptable como se muestra a continuación.
+
+![Compatibilidad con funciones personalizadas en expresiones de validación](assets/clientlib-cat.png)
+
+Compatibilidad con funciones personalizadas en expresiones de validación
+
+El autor puede configurar la biblioteca customJavaScript para formularios adaptables. En la biblioteca, mantenga solo las funciones reutilizables, que dependen de las bibliotecas de terceros jquery y underscore.js.
+
+## Tratamiento de errores en la acción de envío {#error-handling-on-submit-action}
+
+Como parte de las directrices de seguridad y endurecimiento de AEM, configure las páginas de error personalizadas como 400.jsp, 404.jsp y 500.jsp. Se llama a estos controladores cuando aparecen errores 400, 404 o 500 al enviar un formulario. También se llama a los controladores cuando estos códigos de error se activan en el nodo Publish. También puede crear páginas JSP para otros códigos de error HTTP.
+
+Cuando rellena previamente un modelo de datos de formulario (FDM) o un formulario adaptable basado en un esquema, con datos XML o JSON que se ajustan a un esquema que no contiene las etiquetas `<afData>`, `<afBoundData>` y `</afUnboundData>`, los datos de los campos ilimitados del formulario adaptable se perderán. El esquema puede ser un esquema XML, JSON o un modelo de datos de formulario (FDM). Los campos sin límites son campos de formularios adaptables sin la propiedad `bindref`.
+
 ## Administrar reglas {#manage-rules}
 
 Cualquier regla existente en un objeto de formulario aparece enumerada al seleccionar el objeto y seleccionar ![edit-rules1](assets/edit-rules-icon.svg). Puede ver el título y una vista previa del resumen de la regla. Además, la IU le permite expandir y ver el resumen completo de las reglas, cambiar el orden, editarlas y eliminarlas.
@@ -780,11 +796,11 @@ Para copiar y pegar reglas, haga lo siguiente:
 
 El editor de reglas permite utilizar varios operadores AND y OR para crear reglas anidadas. Puede combinar varios operadores AND y OR en las reglas.
 
-A continuación verá un ejemplo de una regla anidada que muestra un mensaje al usuario sobre la elegibilidad para la custodia de un niño cuando se cumplen las condiciones requeridas.
+A continuación verá un ejemplo de una regla anidada que muestra un mensaje al usuario sobre la idoneidad para la custodia de un niño cuando se cumplen las condiciones requeridas.
 
 ![Expresión compleja](assets/complexexpression.png)
 
-También puede arrastrar y soltar condiciones dentro de una regla para editarla. Seleccione y pase el ratón por encima del controlador (![controlador](assets/drag-handle.svg)) antes de una condición. Una vez que el puntero se convierta en el símbolo de mano como se muestra a continuación, arrastre y suelte la condición en cualquier lugar dentro de la regla. La estructura de la regla cambia.
+También puede arrastrar y soltar condiciones dentro de una regla para editarla. Seleccione y pase el puntero por encima del controlador (![controlador](assets/drag-handle.svg)) antes de una condición. Una vez que el puntero se convierta en el símbolo de mano como se muestra a continuación, arrastre y suelte la condición en cualquier lugar dentro de la regla. La estructura de la regla cambia.
 
 ![Arrastrar y soltar](assets/drag-and-drop.png)
 

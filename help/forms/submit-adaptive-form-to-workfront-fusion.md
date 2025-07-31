@@ -3,13 +3,13 @@ title: Integración de Adobe Workfront Fusion con el envío de AEM Forms
 description: Adobe Workfront Fusion le permite centrarse en nuevas tareas en lugar de centrarse en tareas repetitivas. Puede conectar Adobe Workfront Fusion a un formulario adaptable mediante el envío de formularios.
 keywords: Envío de un formulario adaptable a Adobe Workfront Fusion, Integración de Adobe Workfront Fusion con el envío de AEM Forms, Adobe Workfront Fusion con AEM Forms, Workfront Fusion con AEM Forms, Conexión de Workfront Fusion a AEM Forms, AEM Forms y Workfront Fusion, ¿Cómo conectar Workfront Fusion con AEM Forms?, Conexión de Workfront Fusion a un formulario
 topic-tags: author, developer
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 98%
+source-wordcount: '1287'
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ Para establecer una conexión entre Workfront Fusion y AEM Forms, es necesario l
 
 ## Integración de AEM Forms con Adobe Workfront Fusion
 
-### 1. Crear un escenario de Workfront {#workflow-scenario}
+### &#x200B;1. Crear un escenario de Workfront {#workflow-scenario}
 
 Para crear un escenario de Workfront, realice los siguientes pasos:
 
@@ -51,6 +51,7 @@ Para crear un escenario de Workfront, realice los siguientes pasos:
 #### Crear un escenario {#create-scenario}
 
 Para crear un escenario:
+
 1. Inicie sesión en su [cuenta de Workfront Fusion](https://app-qa.workfrontfusion.com/).
 1. Haga clic en **[!UICONTROL Escenarios]** ![icono Compartir](/help/forms/assets/Smock_ShareAndroid_18_N.svg) en el panel izquierdo.
 1. Haga clic en **[!UICONTROL Crear un nuevo escenario]** en la esquina superior derecha de la página. Aparece en pantalla una página para crear un nuevo escenario.
@@ -84,7 +85,7 @@ Para añadir un webhook:
 
 >[!NOTE]
 >
-> Asegúrese de que la cuenta técnica sea miembro del grupo **forms-users**; de lo contrario, se producirá un error al agregar un webhook.
+> Asegúrese de que la cuenta técnica sea miembro del grupo **usuarios de formularios**; de lo contrario, se producirá un error al añadir un webhook.
 
 #### Añadir una conexión a un webhook {#add-connection}
 
@@ -143,49 +144,56 @@ Para añadir una conexión, haga lo siguiente:
 >
 > Si no activa el escenario de Workfront, no se detectará el envío del formulario y establecer la acción de envío en Workfront provocará un envío fallido.
 
-### 2. Configurar la acción de envío de un formulario adaptable para Workfront Fusion
+### &#x200B;2. Configurar la acción de envío de un formulario adaptable para Workfront Fusion
 
-Puede configurar la acción de envío para Workfront Fusion para:
-* [Nuevos Formularios adaptables](#new-af-submit-action)
-* [Formularios adaptables existentes](#existing-af-submit-action)
+>[!BEGINTABS]
 
-#### Configuración de la acción de envío del nuevo formulario adaptable para Workfront Fusion {#new-af-submit-action}
+>[!TAB Componente Base]
 
-Para configurar la acción de envío del nuevo formulario adaptable para Workfront Fusion:
+Para configurar la acción de envío de un formulario adaptable basado en componentes de base para Workfront Fusion:
 
-1. Inicie sesión en la instancia de AEM. 
-1. Ir a **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]** > **[!UICONTROL Crear]** > **[!UICONTROL Formulario adaptable]**. Aparece el asistente **[!UICONTROL Crear formulario]**.
-1. Seleccione una plantilla de formulario adaptable de la pestaña **[!UICONTROL Origen]**.
-1. Seleccione la temática en la pestaña **[!UICONTROL Estilo]**.
+1. Abra el formulario adaptable para editarlo y vaya a la sección **[!UICONTROL Envío]** de las propiedades del contenedor del formulario adaptable.
+1. En la lista desplegable **[!UICONTROL Enviar acción]**, seleccione **[!UICONTROL Invocar un escenario de Workfront Fusion]**.
+   ![Acción de envío para Workfront Fusion](/help/forms/assets/workfront-fusion-fc.png)
 
-   ![Acción de envío para Workfront Fusion](/help/forms/assets/workfront-scenario-new-af.png)
+1. Seleccione **[!UICONTROL Escenario de Workfront Fusion]** en la lista desplegable.
+1. Haga clic en **[!UICONTROL Listo]**.
 
-1. Seleccione **[!UICONTROL Invocar un escenario de Workfront Fusion]** desde la pestaña **[!UICONTROL Envío]**.
-1. Seleccione el webhook creado en la pestaña **[!UICONTROL Opciones]** en la ventana **[!UICONTROL Propiedades]**.
+
+>[!TAB Componente principal]
+
+Para configurar la acción de envío de un formulario adaptable basado en componentes principales para Workfront Fusion:
+
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
+1. Haga clic en la pestaña **[!UICONTROL Envío]**.
+1. En la lista desplegable **[!UICONTROL Enviar acción]**, seleccione **[!UICONTROL Invocar un escenario de Workfront Fusion]**.
+
+   ![Acción de envío para Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
+1. Seleccione **[!UICONTROL Escenario de Workfront Fusion]** en la lista desplegable.
+1. Haga clic en **[!UICONTROL Listo]**.
+
+>[!TAB Editor universal]
+
+Para configurar la acción de envío de un formulario adaptable creado con el Editor universal:
+
+1. Abra el formulario adaptable para editarlo.
+1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
+Aparecerá el cuadro de diálogo **Propiedades del formulario**.
 
    >[!NOTE]
    >
-   > El nombre del webhook del escenario de Workfront aparece en la lista desplegable **Opciones**.
+   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
+   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
 
-1. Haga clic en **[!UICONTROL Crear]**.
-1. Especifique el nombre del nuevo formulario adaptable y haga clic en **[!UICONTROL Crear]**.
+1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Invocar un escenario de Workfront Fusion]**.
 
-#### Configurar la acción de envío de un formulario adaptable existente para Workfront Fusion {#existing-af-submit-action}
+   ![Acción de envío para Workfront Fusion](/help/forms/assets/workfront-fusion-ue.png)
 
-Para configurar la acción de envío de un formulario adaptable existente para Workfront Fusion:
-
-1. Inicie sesión en la instancia de AEM. 
-1. Vaya a **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
-1. Seleccione un formulario adaptable y ábralo en modo de edición.
-1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
-1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
-
-   ![Acción de envío para Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
-
-1. Abra la pestaña **[!UICONTROL Envío]**.
-1. Seleccione una **[!UICONTROL acción de envío]** como **[!UICONTROL Invocar un escenario de Workfront Fusion]**
 1. Seleccione **[!UICONTROL Escenario de Workfront Fusion]** en la lista desplegable.
-1. Haga clic en **[!UICONTROL Listo]**.
+1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
+
+>[!ENDTABS]
 
 ## Prácticas recomendadas {#best-practices}
 

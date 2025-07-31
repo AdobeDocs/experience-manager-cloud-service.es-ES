@@ -2,16 +2,16 @@
 Title: How to send data to a SharePoint List storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: ¿Cómo conectar la lista de SharePoint para un formulario adaptable?, Enviar a SharePoint, Crear una configuración de lista de SharePoint, Utilizar la acción de envío Enviar a SharePoint en un formulario adaptable, Conectar un formulario adaptable a Microsoft&reg; Lista de SharePoint.
-feature: Adaptive Forms, Core Components
-title: ¿Configurar una acción de envío para un formulario adaptable?
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+title: ¿Cómo configurar una acción de envío para un formulario adaptable?
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
+source-git-commit: 64edcfe1bf94638ae5d9510a5a6ac660cf1bcd0a
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 87%
 
 ---
-
 
 # Conectar un formulario adaptable a la lista de Microsoft® SharePoint {#connect-af-sharepoint-list}
 
@@ -22,7 +22,7 @@ Para usar la acción de envío [!UICONTROL Enviar a lista de SharePoint] en un f
 1. [Crear una configuración de lista de SharePoint](#1-create-a-sharepoint-list-configuration): conecta AEM Forms a su almacenamiento de de lista de Sharepoint de Microsoft®.
 1. [Utilice la acción de envío Enviar con un modelo de datos de formulario (FDM) en un formulario adaptable](#2-use-the-submit-using-form-data-model-fdm-in-an-adaptive-form-use-submit-using-fdm): conecta el formulario adaptable a Microsoft® SharePoint configurado.
 
-## 1. Crear una configuración de lista de SharePoint
+## &#x200B;1. Crear una configuración de lista de SharePoint
 
 Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 
@@ -44,7 +44,7 @@ Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para la lista de SharePoint de Microsoft®.
 
 
-## 2. Utilizar Enviar mediante el modelo de datos de formulario (FDM) en un formulario adaptable {#use-submit-using-fdm}
+## &#x200B;2. Utilizar Enviar mediante el modelo de datos de formulario (FDM) en un formulario adaptable {#use-submit-using-fdm}
 
 Puede utilizar la configuración de lista de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una lista de SharePoint. Siga estos pasos para usar una lista de SharePoint en un formulario adaptable como:
 

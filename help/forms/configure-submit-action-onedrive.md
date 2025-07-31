@@ -1,15 +1,15 @@
 ---
-Title: How to submit data from an Adaptive Form to Microsoft® OneDrive?
-Description: Explore the streamlined process of connecting AEM Forms with Microsoft® OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
+Title: How to submit data from an Adaptive Form to Microsoft&reg; OneDrive?
+Description: Explore the streamlined process of connecting AEM Forms with Microsoft&reg; OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
 keywords: Integración de AEM Forms OneDrive, Conexión a Microsoft AEM OneDrive, Configuración de OneDrive con formularios de AEM
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
-title: “¿Cómo configurar una acción de envío para un formulario adaptable?”
+title: ¿Cómo configurar una acción de envío para un formulario adaptable?
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
+source-wordcount: '865'
+ht-degree: 73%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 La acción de envío **[!UICONTROL Enviar a OneDrive]** conecta un formulario adaptable con un Microsoft® OneDrive. Puede enviar los datos del formulario, archivos, archivos adjuntos o el documento de registro al almacenamiento de Microsoft® OneDrive conectado.
 
-AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
+AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/aem-forms-submit-action.md).
 
 ## Ventajas
 
@@ -69,21 +69,61 @@ Ahora puede usar esta configuración de almacenamiento de OneDrive para la acci�
 
 ### Usar la configuración de OneDrive en un formulario adaptable {#use-onedrive-configuartion-in-af}
 
-Puede usar la configuración de almacenamiento de OneDrive creada en un formulario adaptable para guardar datos o el documento de registro generado en una carpeta de OneDrive. Siga estos pasos para usar la configuración de almacenamiento de OneDrive en un formulario adaptable como:
-1. Crear un [Formulario adaptable](/help/forms/creating-adaptive-form.md).
+Puede usar la configuración de almacenamiento de OneDrive creada en un formulario adaptable para guardar datos o el documento de registro generado en una carpeta de OneDrive.
 
-   >[!NOTE]
-   >
-   > * Seleccione el mismo [!UICONTROL Contenedor de configuración] para un formulario adaptable, donde ha creado su almacenamiento de OneDrive.
-   > * Si no se selecciona el [!UICONTROL Contenedor de configuración], a continuación, las carpetas [!UICONTROL Configuración de almacenamiento] globales aparecen en la ventana de propiedades de la acción de envío.
+>[!NOTE]
+>
+> * Seleccione el mismo [!UICONTROL Contenedor de configuración] para un formulario adaptable, donde ha creado su almacenamiento de OneDrive.
+> * Si no se selecciona el [!UICONTROL Contenedor de configuración], a continuación, las carpetas [!UICONTROL Configuración de almacenamiento] globales aparecen en la ventana de propiedades de la acción de envío.
 
-1. Seleccione **Acción de envío** como **[!UICONTROL Enviar a OneDrive]**.
-   ![GIF de OneDrive](/help/forms/assets/onedrive-video.gif)
+>[!BEGINTABS]
+
+>[!TAB Componente Base]
+
+Realice los siguientes pasos para utilizar la configuración de almacenamiento de OneDrive en un formulario adaptable basado en un componente de base como:
+
+1. Abra el formulario adaptable para editarlo y vaya a la sección **[!UICONTROL Envío]** de las propiedades del contenedor del formulario adaptable.
+1. En la lista desplegable **[!UICONTROL Enviar acción]**, selecciona **[!UICONTROL Enviar a OneDrive]**.
+   ![OneDrive GIF](/help/forms/assets/wubmit-to-onedrive-fc.png){width=50%,height=50%}
+También puede guardar el documento de registro (DoR) en OneDrive.
 1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
 1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración de envío.
 
 Al enviar el formulario, los datos se guardan en el almacenamiento de Microsoft® OneDrive especificado.
 La estructura de carpetas para guardar datos es `/folder_name/form_name/year/month/date/submission_id/data`.
+
+>[!TAB Componente principal]
+
+Realice los siguientes pasos para utilizar la configuración de almacenamiento de OneDrive en un formulario adaptable basado en un componente principal como:
+
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
+1. Haga clic en la pestaña **[!UICONTROL Envío]**.
+1. En la lista desplegable **[!UICONTROL Enviar acción]**, selecciona **[!UICONTROL Enviar a OneDrive]**.
+   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
+También puede guardar el documento de registro (DoR) en OneDrive.
+1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
+1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración de envío.
+
+>[!TAB Editor universal]
+
+Realice los siguientes pasos para utilizar la configuración de almacenamiento de OneDrive en un formulario adaptable creado en el Editor universal:
+
+1. Abra el formulario adaptable para editarlo.
+1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
+Aparecerá el cuadro de diálogo **Propiedades del formulario**.
+
+   >[!NOTE]
+   >
+   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
+   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+1. Haz clic en la pestaña **Envío** y selecciona **[!UICONTROL Enviar a OneDrive]**.
+   ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
+Si selecciona **Guardar archivos adjuntos con el nombre original**, los archivos adjuntos se almacenarán en la carpeta utilizando sus nombres de archivo originales. También puede guardar el documento de registro (DoR) en Azure Blob Storage.
+1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
+1. Haga clic en **[!UICONTROL Guardar y cerrar]**
+
+>[!ENDTABS]
 
 ## Artículos relacionados
 

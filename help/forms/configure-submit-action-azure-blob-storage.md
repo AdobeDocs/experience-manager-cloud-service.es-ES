@@ -2,14 +2,14 @@
 Title: How to connect AEM Adaptive Forms with Azure Blob Storage?
 Description: Learn how to create an Azure Blob Storage Configuration in AEM Forms and use it within your Adaptive Forms for efficient data storage.
 keywords: Integración de Azure Blob Storage con AEM Forms, envío de datos al almacenamiento de Azure, creación de la configuración de Azure Storage en AEM Forms, uso del almacenamiento de Azure Blob en la acción de envío de formularios adaptables
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
-title: “¿Cómo configurar una acción de envío para un formulario adaptable?”
+title: ¿Cómo configurar una acción de envío para un formulario adaptable?
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 100%
+source-wordcount: '795'
+ht-degree: 68%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 La acción de envío **[!UICONTROL Enviar al almacenamiento de Azure Blob]** conecta un formulario adaptable con un portal de Microsoft® Azure. Puede enviar los datos del formulario, archivos, archivos adjuntos o el documento de registro a los contenedores de almacenamiento de Azure conectados. 
 
-AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
+AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/aem-forms-submit-action.md).
 
 ## Ventajas
 
@@ -36,6 +36,7 @@ Para usar el almacenamiento de Azure Blob en la acción de envío de formularios
 ### Crear un contenedor de almacenamiento de Azure Blob {#create-azure-configuration}
 
 Para conectar AEM Forms a los contenedores de almacenamiento de Azure:
+
 1. Vaya a su instancia de **Autor de AEM Forms** > **[!UICONTROL Herramientas]** > **[!UICONTROL Servicios de nube]** >  **[!UICONTROL Almacenamiento de Azure]**.
 1. Una vez seleccionado el **[!UICONTROL Almacenamiento de Azure]**, se le redirigirá a **[!UICONTROL Explorador de almacenamiento de Azure]**.
 1. Seleccione un **Contenedor de configuración** La configuración se almacena en el contenedor de configuración seleccionado.
@@ -51,8 +52,8 @@ Para conectar AEM Forms a los contenedores de almacenamiento de Azure:
     >[!NOTE]
     >
     > The URL for **[!UICONTROL Azure Blob Endpoint]** is automatically appended to the textbox when a value is entered for **[!UICONTROL Azure Storage Account]**. You can update the Azure Blob End Point URL with your custom domain. Steps to update URL for **[!UICONTROL Azure Blob End Point]**:
-    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=es)
-    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=es)
+    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
     > 1. [Map custom domain to azure blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal)
 -->
 
@@ -62,22 +63,76 @@ Ahora puede utilizar esta configuración del contenedor de almacenamiento de Azu
 
 ### Uso de la configuración de almacenamiento de Azure en un formulario adaptable {#use-azure-storage-configuartion-in-af}
 
-Puede utilizar la configuración del contenedor de almacenamiento de Azure creada en un formulario adaptable para guardar datos o el documento de registro generado en el contenedor de almacenamiento de Azure. Realice los siguientes pasos para utilizar la configuración del contenedor de almacenamiento de Azure en un formulario adaptable como:
-1. Crear un [Formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
+Puede utilizar la configuración del contenedor de almacenamiento de Azure creada en un formulario adaptable para guardar datos o el documento de registro generado en el contenedor de almacenamiento de Azure.
 
-   >[!NOTE]
-   >
-   > * Seleccione el mismo [!UICONTROL Contenedor de configuración] para un formulario adaptable, donde ha creado su almacenamiento de OneDrive.
-   > * Si no se selecciona ningún [!UICONTROL Contenedor de configuración], aparecerán las carpetas globales [!UICONTROL Configuración de almacenamiento] en la ventana de propiedades de la acción de envío.
+>[!NOTE]
+>
+> * Seleccione el mismo [!UICONTROL Contenedor de configuración] para un formulario adaptable, donde ha creado su almacenamiento de OneDrive.
+> * Si no se selecciona el [!UICONTROL Contenedor de configuración], a continuación, las carpetas [!UICONTROL Configuración de almacenamiento] globales aparecen en la ventana de propiedades de la acción de envío.
 
-1. Seleccionar **Acción de envío** como **[!UICONTROL Enviar a almacenamiento de Azure Blob]**.
-   ![GIF de almacenamiento de Azure Blob](/help/forms/assets/azure-submit-video.gif)
+>[!BEGINTABS]
 
-1. Seleccione la **[!UICONTROL Configuración de almacenamiento]** donde desee guardar los datos.
+>[!TAB Componente Base]
+
+Realice los siguientes pasos para utilizar la configuración del contenedor de almacenamiento de Azure en un formulario adaptable basado en componentes de base como:
+
+1. Abra el formulario adaptable para editarlo y vaya a la sección **[!UICONTROL Envío]** de las propiedades del contenedor del formulario adaptable.
+1. En la lista desplegable **[!UICONTROL Enviar acción]**, seleccione **[!UICONTROL Enviar a Azure Blob Storage]**.
+
+   ![GIF de almacenamiento de blob de Azure](/help/forms/assets/submit-to-azure-blob-fc.png){width=50%,height=50%}
+
+   También puede guardar el documento de registro (DoR) en Azure Blob Storage.
+
+1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
 1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración de envío.
 
 Al enviar el formulario, los datos se guardan en la configuración especificada del contenedor de almacenamiento de Azure.
 La estructura de carpetas para guardar datos es `/configuration_container/form_name/year/month/date/submission_id/data`.
+
+>[!TAB Componente principal]
+
+Realice los siguientes pasos para utilizar la configuración del contenedor de almacenamiento de Azure en un formulario adaptable basado en componentes principales como:
+
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
+1. Haga clic en la pestaña **[!UICONTROL Envío]**.
+1. En la lista desplegable **[!UICONTROL Enviar acción]**, seleccione **[!UICONTROL Enviar a Azure Blob Storage]**.
+
+   ![GIF de almacenamiento de Azure Blob](/help/forms/assets/azure-submit-video.gif)
+
+   También puede guardar el documento de registro (DoR) en Azure Blob Storage.
+
+1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
+1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración de envío.
+
+Al enviar el formulario, los datos se guardan en la configuración especificada del contenedor de almacenamiento de Azure.
+La estructura de carpetas para guardar datos es `/configuration_container/form_name/year/month/date/submission_id/data`.
+
+>[!TAB Editor universal]
+
+Siga estos pasos para utilizar la configuración del contenedor de almacenamiento de Azure en un formulario adaptable creado en el Editor universal:
+
+1. Abra el formulario adaptable para editarlo.
+1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
+Aparecerá el cuadro de diálogo **Propiedades del formulario**.
+
+   >[!NOTE]
+   >
+   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
+   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+
+1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Enviar al almacenamiento del blob de Azure]**.
+   ![Almacenamiento de blob de Azure](/help/forms/assets/azure-blob-storage-ue.png)
+
+   Si selecciona **Guardar archivos adjuntos con el nombre original**, los archivos adjuntos se almacenarán en la carpeta utilizando sus nombres de archivo originales. También puede guardar el documento de registro (DoR) en Azure Blob Storage.
+
+1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
+1. Haga clic en **[!UICONTROL Guardar y cerrar]** para guardar la configuración de envío.
+
+Al enviar el formulario, los datos se guardan en la configuración especificada del contenedor de almacenamiento de Azure.
+La estructura de carpetas para guardar datos es `/configuration_container/form_name/year/month/date/submission_id/data`.
+
+>[!ENDTABS]
 
 ## Artículos relacionados
 
