@@ -77,6 +77,6 @@ Ambos modelos pueden coexistir dentro del mismo programa de Cloud Manager, lo qu
 : Si almacena el código del sitio fuera de Adobe Git, complete la incorporación de BYOG.
 
 3. Licencia de Edge Delivery
-- Asegúrese de que su programa tenga licencia para Edge Delivery Services.
+&#x200B;- Asegúrese de que su programa tenga licencia para Edge Delivery Services.
 
 
