@@ -1,87 +1,64 @@
 ---
-title: Introducción y descripción general
-description: Descubra cómo utilizar y administrar Experience Manager Content y Commerce as a Cloud Service.
+title: Introducción e información general
+description: Comprender las diferentes opciones de la tienda
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 145cd4961bd9c0c7bb7e39a1d6dae67f240ecb4d
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 98%
+source-wordcount: '635'
+ht-degree: 1%
 
 ---
 
 
 # Content and Commerce {#content-commerce}
 
-Con Content y Commerce de Adobe Experience Manager, las marcas pueden escalar e innovar con mayor rapidez para diferenciar las experiencias comerciales y captar un gasto en línea acelerado. AEM Content and Commerce combina las experiencias inmersivas, omnicanal y personalizadas en Experience Manager con cualquier cantidad de soluciones de comercio para aportar experiencias diferenciadas a todas las partes del recorrido de compras, reducir el tiempo de obtención de valor e impulsar una mayor conversión.
+A medida que aumentan las expectativas de los clientes en cuanto a experiencias de comercio basadas en la intención y de alto rendimiento, las marcas se ven presionadas a ofrecer más contenido más rápidamente, sin sacrificar la calidad. Con Adobe Experience Manager, las marcas pueden escalar e innovar más rápido para crear experiencias de comercio envolventes y capturar más tráfico y un creciente gasto en línea.
 
-## Cómo Content and Commerce ayudan a los clientes a tener éxito {#successful}
+Adobe Experience Manager ofrece potentes herramientas para crear y administrar experiencias del cliente personalizadas y enriquecidas en contenido. Al integrar AEM con una solución de comercio, como Adobe Commerce, Salesforce Commerce, SAP Commerce Cloud o cualquier otra solución, las marcas pueden unificar el contenido y el comercio para ofrecer recorridos de compra sin problemas en todos los canales.
 
-Con expectativas crecientes de los clientes en cuanto a experiencias de comercio en línea, las marcas se ven presionadas para ofrecer experiencias diferenciadas y más contenido con mayor rapidez. Sin embargo, la implementación de una plataforma de administración de contenido a menudo requiere fuertes inversiones en tiempo y presupuesto para desarrollar elementos fundamentales, tales como componentes personalizados y herramientas de creación, y acumula costes en mantenimiento y actualizaciones. Experience Manager Sites ofrece Content and Commerce como módulo complementario de Experience Manager as a Cloud Service, que proporciona componentes comerciales básicos, herramientas de creación y un escaparate de referencia predeterminados para acelerar el lanzamiento, permitir una colaboración fluida entre los equipos e impulsar la conversión.
+## Información general sobre enfoques de tienda {#overview}
 
-Las marcas pueden integrar Experience Manager con Adobe Commerce, parte de Adobe Experience Cloud, así como con cualquier motor de comercio que elijan. Con Experience Manager Content and Commerce, las marcas pueden hacer lo siguiente:
+AEM puede proporcionarle asistencia en función de su situación y sus preferencias. Utilice las siguientes directrices para elegir el enfoque adecuado para usted:
 
-* Escalar e innovar más rápidamente
-* Personalizar experiencias para impulsar la conversión
-* Crear una vez y publicar en todas partes
-* Enriquecer y diferenciar experiencias para los clientes
-* Optimizar la creación con acceso a datos de Commerce
+* [Usar Edge Delivery Services (recomendado)](#edge)
+* [Usar su propia tienda (integración de AEM sin encabezado)](#own-storefront)
+* [Usar la tienda de AEM CIF](#cif)
 
-## Introducción a AEM Commerce Integration Framework (CIF) {#cif-intro}
+### Usar Edge Delivery Services (recomendado) {#edge}
 
-Estos proyectos tienen que hacer frente a la complejidad de integrar una solución de comercio. Una solución de comercio puede ser cualquier cosa, desde una solución comercial como Adobe Commerce Cloud hasta un conjunto de servicios de comercio personalizados. La integración depende en gran medida del ecosistema y de los casos de uso. Suele afectar a varios lugares y toma diferentes formas:
+Si tu empresa quiere la tienda más rápida y compatible con IA en la web y los desarrolladores quieren una experiencia de desarrollador de última generación, usa [Edge Delivery Services.](../edge/overview.md) Edge Delivery Services cumple todos los requisitos actuales y futuros. Según el servidor y la solución, tiene diferentes opciones:
 
-* Integración de un ecosistema complejo y dinámico (por ejemplo, catálogos de productos)
-* Las empresas deben administrar el contenido de los productos con su propio ciclo de vida de forma eficiente y omnicanal
-* Creación de recorridos de compra, complejos y personalizados, para varios destinatarios
-* Capacidad de adaptarse e innovar rápidamente en el back-end y front-end
-* Ejecutar una infraestructura E2E escalable y estable que esté preparada para rendir al máximo (venta flash, Black Friday, etc.). Esto incluye la búsqueda unificada y la administración de la caché.
+#### &#x200B;1. Integración con Adobe Commerce as a Cloud Service {#acaacs}
 
-Esta complejidad abre la puerta a posibles fallos, un incremento del coste total de propiedad (TCO), retrasos y menor realización de valor. Estas razones han llevado al desarrollo de Commerce Integration Framework (CIF), que es un complemento de Experience Manager. CIF amplía Experience Manager con capacidades comerciales y estandariza la integración con un motor de comercio. El resultado es una solución estable, escalable y preparada para el futuro con un menor coste total de propiedad (TCO). Desbloquea la innovación técnica y empresarial con herramientas ágiles y funciones integradas para crear experiencias comerciales atractivas.
+Esta es la solución perfecta si usas Edge Delivery y [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) como punto de partida. La tienda viene con una plantilla que está preintegrada con los servicios de Adobe Commerce, las API y ofrece una variedad de componentes de Commerce para crear rápidamente una tienda.
 
-![Elementos del CIF](./assets/CIF/CIF_Overview.png)
+Buen ajuste: experiencia típica de tienda con Adobe Commerce as a Cloud Service
 
-## CIF apoya con éxito a sus clientes desde 2013 {#support}
+#### &#x200B;2. Integración con Adobe Commerce Optimizer (para cualquier solución de terceros) {#aco}
 
-Con más de 200 clientes, CIF se ha consolidado como un ingrediente exitoso para un proyecto de Content and Commerce con éxito. Esto aporta valor a la TI y a las empresas hoy y en el futuro. Los proyectos recientes de los clientes describen CIF como un “Gran acelerador y un gran ahorro de tiempo con mucho valor&quot;.
+Si desea integrar su solución de comercio existente y mejorar el rendimiento de su catálogo, la recomendación de Adobe es usar [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) como la capa de integración moderna. Commerce Optimizer mejora su solución comercial con servicios SaaS de alto rendimiento para catálogos y comercialización. Al igual que con Adobe Commerce as a Cloud Service, [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) funciona de forma predeterminada con él.
 
-## Beneficios del CIF {#cif-benefits}
+Hay integraciones disponibles para soluciones de comercio comercial como Salesforce Commerce. Hable con su representante de Adobe.
 
-CIF proporciona componentes básicos predeterminados que reducen la necesidad de usar un código personalizado, lo que acelera el tiempo de salida al mercado de las marcas. Todos los componentes principales están integrados de forma predeterminada con la capa de datos del lado del cliente de Adobe para integrar los perfiles de los clientes, como el perfil unificado. Este perfil captura en detalle el comportamiento de un visitante, que puede utilizarse para predecir y personalizar el recorrido del cliente en tiempo real.
+Buen ajuste: experiencia típica de tienda con una solución de comercio existente
 
-El complemento CIF introduce el contexto del producto en Experience Manager y proporciona herramientas de creación, como una consola de producto y selectores de producto/categoría, que permiten al experto en marketing crear y ofrecer experiencias de compra en Experience Manager sin depender del desarrollador. Las ventajas incluyen las siguientes:
+#### &#x200B;3. Integración personalizada {#custom}
 
-### Experiencias {#experiences}
+Adobe también recomienda utilizar Edge Delivery Services si desea crear una integración personalizada. Puede empezar desde cero o reutilizar los componentes de comercio del marco JS existentes (por ejemplo, para la parte transaccional) en la tienda de Edge Delivery. De esta manera, sus clientes obtendrán una experiencia de compra increíblemente rápida, que es amigable con el medio ambiente, mientras que usted puede reutilizar sus inversiones existentes para aumentar la TV. El punto de partida es la [plantilla de Edge Delivery](https://www.aem.live/developer/tutorial) predeterminada.
 
-Las potentes herramientas del CIF en AEM permiten a los creadores de contenido crear rápidamente experiencias de comercio ricas y personalizadas de una manera escalable y sin depender del envío para aprovechar las oportunidades del negocio.
+Buen ajuste: bajo valor de la tienda de Edge Delivery
 
-![Elementos del CIF](./assets/CIF/CIF_Product_Experience_Management.png)
+### Utilice su propia tienda (integración de AEM sin encabezado) {#own-storefront}
 
-### Tiempo de creación de valor (TTV) {#ttv}
+Tiene una tienda existente (por ejemplo, creada con React JS) y quiere usar Adobe Experience Manager para la administración y entrega de contenido (fragmentos de contenido), recursos y edición en contexto (editor universal). El punto de partida para una integración es [Introducción a Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction) y el [complemento de CIF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content). El complemento de CIF permite una integración perfecta de los datos de sus productos en AEM (busque, examine y encuentre productos dentro de la interfaz de usuario de AEM) que puede utilizar para crear experiencias específicas del comercio.
 
-Acelera el desarrollo de proyectos con los [Componentes principales AEM](https://www.aemcomponents.dev/), [AEM Venia reference storefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) y patrones de integración para PWA (Content and Commerce sin encabezado).
+### Tienda de AEM CIF {#cif}
 
-CIF está pensado para la innovación continua con un complemento siempre actualizado, que permite al cliente acceder a funciones nuevas y mejoradas.
+La arquitectura de referencia y recomendación de Adobe es utilizar Edge Delivery Services. La tienda de CIF con los componentes principales de AEM CIF ahora se encuentra en modo de mantenimiento y no debe usarse en nuevos proyectos. Como referencia, consulte la [documentación de CIF.](/help/commerce-cloud/cif-introduction.md)
 
-### Integraciones {#integrations}
-
-Conecte el ecosistema (por ejemplo, la solución de comercio) con Experience Cloud mediante [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS sin servidor basado en microservicios y la [Implementación de referencia de CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
-
-## Patrones comprobados y prácticas recomendadas {#proven}
-
-CIF admite clientes con patrones de integración estandarizados basados en prácticas recomendadas. Esto ayuda a los clientes a tener éxito hoy y tener la flexibilidad para crecer con el cliente y adaptarse a los requisitos futuros:
-
-* Elimina los desafíos típicos relacionados con las integraciones de catálogos de productos que pueden producirse. Por ejemplo:
-   * Problemas de rendimiento con mayor volumen o complejidad del catálogo
-   * No tener acceso a los datos clasificados
-   * Necesidad de experiencias y datos de productos en tiempo real
-* La creciente madurez digital hace necesaria la administración de la experiencia. CIF incluye capacidades de administración de experiencia de producto que se pueden incorporar gradualmente sin necesidad de un esfuerzo adicional en TI.
-* Listo para el omnicanal: CIF admite una variedad de tecnologías de puntos de contacto (del lado del servidor, híbridas, del lado del cliente) con patrones, aceleradores y componentes principales.
-
-## Recorrido {#journey}
-
-Si está siguiendo el Recorrido de Commerce, vaya al siguiente paso:
-
-* El [Recorrido de autor de contenido de AEM](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+>[!NOTE]
+>
+>Los clientes existentes que deseen aprovechar la nueva funcionalidad de AEM/Commerce deben trasladar su sitio web a Edge Delivery. Un patrón común es empezar moviendo solo un subconjunto de páginas a Edge Delivery y ejecutar las páginas de Edge Delivery y CIF en paralelo. También es posible reemplazar los componentes de AEM CIF con los nuevos [componentes integrados de Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) para aprovechar las nuevas funcionalidades de Commerce.
