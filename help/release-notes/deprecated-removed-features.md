@@ -1,11 +1,12 @@
 ---
 title: Funciones en desuso y eliminadas
 description: Notas de versión específicas de las funciones en desuso y eliminadas de  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+mini-toc-levels: 2
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 67a69970399298c3d35f1851111a0e586f32ab4b
-workflow-type: ht
+source-git-commit: 6c7d7823fbe8440d414461c61d37681c5f205418
+workflow-type: tm+mt
 source-wordcount: '3193'
 ht-degree: 100%
 
