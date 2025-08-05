@@ -3,7 +3,7 @@ title: Implementar  [!DNL Content Hub]
 description: Obtenga información sobre cómo implementar y activar Content Hub y proporcionar acceso a usuarios con diferentes tipos de privilegios (cargar recursos, usuarios de Adobe Express) y cómo proporcionar privilegios de administrador a usuarios.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 367406ff325eb71a4c75018c4440eae6535f20dc
+source-git-commit: 797d1e275bcb8e949171d322871b377582e72a71
 workflow-type: tm+mt
 source-wordcount: '1586'
 ht-degree: 6%
@@ -20,7 +20,7 @@ Este artículo proporciona un flujo de trabajo completo para proporcionar acceso
 
 Consulte este vídeo para aprender a habilitar Content Hub para Experience Manager Assets:
 
->[!VIDEO](https://video.tv.adobe.com/v/3469851)
+>[!VIDEO](https://video.tv.adobe.com/v/3470434)
 
 Las variaciones de privilegios en Content Hub incluyen:
 
