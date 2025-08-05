@@ -3,9 +3,9 @@ title: Descarga de recursos desde Content Hub
 description: Obtenga información sobre cómo descargar uno o varios recursos y sus representaciones desde el portal de Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -138,6 +138,10 @@ Más información sobre [ver y administrar representaciones en [!DNL Experience 
   Las representaciones de recorte inteligente se muestran y solo están disponibles para su descarga si tiene acceso a [Dynamic Media con capacidades OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Las representaciones de recorte inteligente solo están disponibles para los recursos de imagen.
 
   ![Tipos de representaciones](/help/assets/assets/renditions-types.png)
+
+  >[!NOTE]
+  > 
+  > El panel Descargar solo muestra representaciones estáticas personalizadas. Las miniaturas predeterminadas `cq5dam.*` no se muestran en Content Hub.
 
 ### Habilitar representaciones dinámicas {#enable-dynamic-media-renditions}
 
