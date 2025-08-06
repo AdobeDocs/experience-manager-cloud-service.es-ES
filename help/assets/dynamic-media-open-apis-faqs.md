@@ -3,22 +3,21 @@ title: Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI
 description: Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1520'
-ht-degree: 100%
+source-git-commit: 4c346ea4bd3ddea7f5f9f14af56a0b3ec779f9f9
+workflow-type: tm+mt
+source-wordcount: '1572'
+ht-degree: 87%
 
 ---
 
 # Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI {#new-dynaminc-media-apis-frequently-asked-questions}
 
-+++**¿Están todos los recursos del repositorio de Experience Manager Assets as a Cloud Service disponibles para su búsqueda y entrega mediante Dynamic Media con funciones de OpenAPI?**
+## ¿Todos los recursos del repositorio de Experience Manager Assets as a Cloud Service están disponibles para la búsqueda y la entrega mediante Dynamic Media con funciones de OpenAPI? {#assets-available-for-search}
 
 No, solo la [versión aprobada y más reciente de los recursos](/help/assets/approve-assets.md) está disponible para su búsqueda y entrega mediante Dynamic Media con funciones de OpenAPI, lo que garantiza la uniformidad de la marca en todos los canales y aplicaciones.
 
-+++
 
-+++**¿Cómo pueden los administradores marcar los recursos nuevos y existentes añadidos a una carpeta como aprobados?**
+## ¿Cómo pueden los administradores marcar los recursos nuevos y existentes agregados a una carpeta como aprobados? {#add-assets-to-folder-as-approved}
 
 El estado de un recurso en Experience Manager Assets se rige por la propiedad `jcr:content/metadata/dam:status`. Los valores de esta propiedad pueden ser:
 
@@ -50,15 +49,12 @@ Del mismo modo, Experience Manager Assets distingue el estado Rechazado en la vi
 ![Recursos rechazados en la vista Recursos](/help/assets/assets/rejected-assets-admin-view.png)
 
 
-+++
-
-+++**¿Cómo puede obtener el ID de usuario o grupo de Adobe IMS (servicios de Identity Management de Adobe) para establecer los roles en los recursos en la vista Administrador de Experience Manager, a fin de proteger la experiencia de entrega y búsqueda?**
+## ¿Cómo puede obtener el ID de usuario o grupo de Adobe IMS (Adobe Identity Management Services) para configurar las funciones en los recursos en la vista de administración de Experience Manager, a fin de proteger la experiencia de entrega y búsqueda? {#set-roles-secure-delivery-search}
 
 Los usuarios que necesitan acceder al entorno de creación de Experience Manager se administran como usuarios de Adobe IMS en Admin Console de Adobe. Para obtener información sobre qué son los usuarios de Adobe IMS y cómo se accede a ellos y se administran en Admin Console, consulte [Usuarios de Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=es).
 
-+++
 
-+++**¿Puede aprobar varios recursos simultáneamente dentro de una carpeta?**
+## ¿Puede aprobar varios recursos simultáneamente dentro de una carpeta? {#approve-multiple-assets-in-folder}
 
 Sí, puede aprobar varios recursos dentro de una carpeta simultáneamente.
 
@@ -78,9 +74,7 @@ Del mismo modo, para aprobar varios recursos simultáneamente dentro de una carp
 1. Haga clic en **[!UICONTROL Guardar]**.
 
 
-+++
-
-+++**¿Cómo puedo asegurar la entrega de recursos y la búsqueda de las OpenAPI de Dynamic Media?**
+## ¿Cómo puedo asegurar la entrega de recursos y la búsqueda de las API abiertas de Dynamic Media? {#secure-asset-delivery}
 
 La administración central de recursos en Experience Manager permite a los administradores de DAM o a los administradores de marca administrar el acceso a los recursos. Pueden restringir el acceso configurando funciones o estableciendo el tiempo de activación y desactivación de los recursos aprobados en el lado de la creación, específicamente en la instancia de autor de AEM as a Cloud Service.
 
@@ -88,21 +82,18 @@ Los usuarios finales que buscan o utilizan URL de entrega pueden obtener acceso 
 
 Para obtener más información, consulte [Restringir el acceso a los recursos en Experience Manager](restrict-assets-delivery.md#authoring).
 
-+++
 
-+++**¿Cómo puede obtener permisos para editar el estado de aprobación de un recurso?**
+## ¿Cómo puede obtener permisos para editar el estado de aprobación de un recurso? {#permissions-edit-approval-status}
 
 Como usuario de DAM, es posible que no tenga permisos para [aprobar recursos](approve-assets.md#approve-assets). Para obtener permisos para editar el estado de aprobación de un recurso, los administradores pueden editar el esquema de metadatos predeterminado o cualquier otro esquema de metadatos aplicado a la carpeta de recursos para proporcionar permisos de edición en el campo **[!UICONTROL Estado de revisión]**. Para obtener más información, consulte [cómo deshabilitar la edición para el campo Estado de revisión](approve-assets.md#configuration).
 
-+++
 
-+++**¿Cuál es el tamaño de archivo admitido para los vídeos?**
+## ¿Cuál es el tamaño de archivo admitido para los vídeos? {#supported-file-formats-videos}
 
 Las funcionalidades de Dynamic Media con OpenAPI ahora son compatibles con vídeos de formato largo. Los vídeos de formato largo pueden admitir hasta 50 GB y 2 horas.
 
-+++
 
-+++**¿En qué se diferencia Dynamic Media con funciones de OpenAPI de la solución Dynamic Media?**
+## ¿En qué se diferencia Dynamic Media con las funcionalidades de OpenAPI de la solución Dynamic Media? {#dynamic-media-and-dynamic-media-with-openapi-differences}
 
 Dynamic Media con funciones de OpenAPI y Dynamic Media son soluciones distintas y cada una de ellas ofrece funciones de entrega especializadas. Es imprescindible revisar a fondo sus requisitos específicos para determinar qué solución se ajusta mejor a sus necesidades.
 
@@ -124,9 +115,8 @@ A continuación, se indican algunas de las diferencias clave entre Dynamic Media
 | Codificaciones de vídeo dinámicas, que garantizan que se proporcionan las mejores codificaciones en función del vídeo de entrada. No se requiere ninguna configuración para el envío de vídeo nativo. | Codificaciones de norma 3 independientemente del vídeo de entrada (puede afectar al rendimiento del envío de vídeo). Debe configurar manualmente diferentes codificaciones para diferentes tasas de bits de vídeo. |
 | URL basadas en UID de recursos difíciles de adivinar (permite la ofuscación de URL), pero optimizadas para SEO. | La ofuscación de URL solo está disponible para parámetros de consulta de URL. Los ID de los recursos (nombres de los recursos) en las URL son reconocibles. |
 
-+++
 
-+++**¿Cómo aborda Dynamic Media con funciones de OpenAPI las limitaciones de la función de Recursos de red?**
+## ¿Cómo Dynamic Media con las capacidades de OpenAPI aborda las limitaciones de la función de Assets conectado? {#dynamic-media-openapi-addresses-connected-assets-limitations}
 
 En la tabla siguiente se describen las principales diferencias entre las dos soluciones:
 
@@ -141,4 +131,14 @@ En la tabla siguiente se describen las principales diferencias entre las dos sol
 | Cualquier cambio realizado en los recursos aprobados disponibles en la implementación remota de DAM, incluidas las actualizaciones de versión y las modificaciones de metadatos, se reflejan automáticamente en la instancia de Sites en un corto tiempo de vida (TTL) de 10 minutos. | Las actualizaciones de recursos en la implementación remota de DAM se gestionan mediante eventos de ciclo vital automáticamente, pero tardan mucho más tiempo que Dynamic Media con funciones de OpenAPI. |
 | Los metadatos de recursos en la implementación remota de DAM también están disponibles en la instancia de AEM Sites. | Los metadatos de recursos en la implementación remota de DAM no están disponibles en la instancia de AEM Sites. |
 
-+++
+## Algunos modificadores están marcados como Disponibilidad limitada. ¿Cómo puedo empezar a usarlos? {#use-limited-availability-modifiers}
+
+Para habilitar el uso de producción de modificadores en disponibilidad limitada en su cuenta:
+
+1. [Cree un caso de soporte de Adobe con Admin Console](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+
+1. Mencione los siguientes detalles en el caso de asistencia de Adobe:
+
+   * Organización de IMS
+
+   * Lista de modificadores que se van a habilitar
