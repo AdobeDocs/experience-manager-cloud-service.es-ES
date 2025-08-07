@@ -3,9 +3,9 @@ title: Restaurar el código de Source anterior implementado
 description: Aprenda a restaurar un entorno a su última compilación correcta &ndash; no se requiere la ejecución de la canalización.
 feature: Operations
 role: Admin
-badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
+source-git-commit: fcc066945d1e44072c4718dd9c1d887dd97be0b6
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->La función descrita en este artículo solo está disponible a través del programa alfa. Para suscribirse al alfa, vea [Reversión en un solo clic para implementaciones de canalización](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>La función descrita en este artículo solo está disponible a través del programa beta de. Para registrarse en la versión beta, consulte [Reversión en un solo clic para implementaciones de canalización](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Use **Restaurar código anterior implementado** para revertir un entorno instantáneamente a su última compilación correcta; no se requiere la ejecución de la canalización.
 
@@ -31,9 +31,9 @@ Simplemente abre el menú ![Icono de más o el icono de menú de puntos suspensi
 La característica **Restaurar código anterior implementado** solo está disponible cuando la condición **every** que se muestra a continuación es verdadera:
 
 * Usted tiene permisos de **Environment Restore Create**. Para obtener más información sobre la administración de permisos, consulte [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md).
-* Su organización está inscrita en el programa alfa y el indicador de funciones está activado.
+* Su organización está inscrita en el programa beta y el indicador de funcionalidad está activado.
 * El programa se ejecuta en AEM as a Cloud Service.
-* El entorno elegido es `Development` (límite temporal de Alpha).
+* El entorno elegido es `Development` (límite temporal de Beta).
 * La última canalización para ese entorno se ejecutó correctamente hace **menos de 30 días**.
 * El estado del entorno es *En ejecución* y no hay ninguna canalización en curso.
 
