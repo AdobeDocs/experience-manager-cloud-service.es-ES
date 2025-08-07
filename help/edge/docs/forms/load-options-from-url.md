@@ -4,10 +4,10 @@ description: Las opciones de la lista desplegable se incluyen en una hoja de cá
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 87%
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
 
@@ -19,16 +19,16 @@ Los formularios suelen incluir menús desplegables para que los usuarios selecci
 
 Las ventajas de cargar una lista desplegable desde una hoja de cálculo independiente son las siguientes:
 
-* Administración simplificada: mantenga las opciones desplegables en una ubicación centralizada para facilitar las actualizaciones y adiciones.
-* Mayor eficiencia: elimine la necesidad de añadir manualmente listas de opciones largas dentro de la definición del formulario.
+- Administración simplificada: mantenga las opciones desplegables en una ubicación centralizada para facilitar las actualizaciones y adiciones.
+- Mayor eficiencia: elimine la necesidad de añadir manualmente listas de opciones largas dentro de la definición del formulario.
 
 ![Opciones desplegables](/help/forms/assets/drop-down-options.png)
 
 
 Al final de este artículo, aprenderá lo siguiente:
 
-* [Definir opciones en una hoja de cálculo independiente](#define-options)
-* [Añadir URL para cargar las opciones de la lista desplegable](#add-url)
+- [Definir opciones en una hoja de cálculo independiente](#define-options)
+- [Añadir URL para cargar las opciones de la lista desplegable](#add-url)
 
 ## Definir opciones en una hoja independiente {#define-options}
 
@@ -39,8 +39,8 @@ Definición de opciones en una hoja de cálculo independiente
    1. Añada una nueva hoja. Por ejemplo, &quot;shared-country&quot;.
 1. Definir columnas de opciones: 
 Añada dos columnas: &quot;Opción&quot; y &quot;Valor&quot;.
-   * &quot;Opción&quot; define el texto que se muestra en el menú desplegable.
-   * &quot;Valor&quot; define el valor enviado cuando un usuario selecciona la opción.
+   - &quot;Opción&quot; define el texto que se muestra en el menú desplegable.
+   - &quot;Valor&quot; define el valor enviado cuando un usuario selecciona la opción.
 
    >[!NOTE]
    >
@@ -55,7 +55,7 @@ Introduzca las opciones de país en la columna &quot;Opción&quot; (y la columna
 
 1. Previsualice y publique la hoja `shared-country` usando [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Por ejemplo, si el repositorio de su proyecto se llama &quot;wefinance&quot;, se encuentra en el propietario de la cuenta &quot;wkndform&quot; y está utilizando la rama &quot;main&quot;, la dirección URL que muestra la hoja `shared-country`:
+   Por ejemplo, si el repositorio de su proyecto se llama &quot;wefinance”, está ubicado bajo el propietario de la cuenta “wkndform” y utiliza la rama “principal”, la dirección URL que muestra la hoja `shared-country` es la siguiente:
    `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
    <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
@@ -81,14 +81,9 @@ Puede consultar la [hoja de cálculo de consulta](/help/edge/assets/enquiry.xlsx
 
 Después de integrar la dirección URL en la definición de formulario para cargar las opciones de la lista desplegable, las opciones de la lista desplegable `Destination` empiezan a aparecer desde la URL.
 
-Por ejemplo, si el repositorio de su proyecto se llama &quot;wefinance&quot;, está ubicado bajo el propietario de la cuenta &quot;wkndform&quot; y está utilizando la rama &quot;main&quot;, la siguiente URL muestra el formulario `enquiry` con las opciones guardadas en la hoja independiente:
+Por ejemplo, si el repositorio de su proyecto se llama &quot;wefinance&quot;, está ubicado bajo el propietario de la cuenta &quot;wkndform&quot; y está utilizando la rama &quot;principal&quot;, la siguiente URL muestra el formulario `enquiry` con las opciones guardadas en la hoja independiente:
 
 `https://main--wefinance--wkndform.aem.live/enquiry-form`
-<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
--->
 
-## Consulte también
-
-{{see-more-forms-eds}}
 
 

@@ -4,7 +4,7 @@ description: Utiliza temáticas de formularios adaptables para aplicar estilos y
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 99%
@@ -212,7 +212,7 @@ El editor de temáticas se divide en dos paneles:
 
 * **Lienzo** - Aparece en el lado derecho. Muestra un formulario adaptable de ejemplo <!--  or interactive communication --> en el que todos los cambios de estilo se reflejan instantáneamente. También puede seleccionar objetos directamente del lienzo para buscar los estilos asociados a ellos y editarlos. Una regla de resolución de dispositivo en la parte superior gobierna el lienzo. Al seleccionar un punto de interrupción de resolución en la regla, se muestra la vista previa del formulario de ejemplo <!--  or interactive communication --> para la resolución correspondiente. El lienzo se analiza en detalle [a continuación](themes.md#using-canvas).
 
-* **Barra lateral**- Aparece en el lado izquierdo. Tiene los siguientes elementos:
+* **Barra lateral*** Aparece en el lado izquierdo. Tiene los siguientes elementos:
 
    * **Selector:** muestra el componente seleccionado para el estilo y sus propiedades que puede aplicar. El selector representa todos los componentes de un tipo. Si selecciona un componente de cuadro de texto en una temática para el estilo, todos los cuadros de texto del formulario <!-- or interactive communication --> heredan dicho estilo. Los selectores permiten seleccionar un componente genérico o un componente específico para el estilo. Por ejemplo, un componente de campo es un componente genérico y un cuadro de texto es un componente específico.
 

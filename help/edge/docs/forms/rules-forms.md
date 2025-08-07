@@ -4,8 +4,8 @@ description: Edge Delivery Services para AEM Forms están diseñados para ofrece
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 100%
 
@@ -21,16 +21,16 @@ En este artículo se explica cómo utilizar varias propiedades de bloque de form
 
 Las reglas son como instrucciones que nos dicen qué hacer en diferentes situaciones. Una regla suele tener las siguientes construcciones:
 
-* Condiciones: especifican las circunstancias en las que se aplica la regla. Piense en ellas como si fueran una pregunta que debe responderse (sí o no).
+- Condiciones: especifican las circunstancias en las que se aplica la regla. Piense en ellas como si fueran una pregunta que debe responderse (sí o no).
 
-* Acciones: definen lo que sucede cuando se cumple la condición (verdadero) o no se cumple (falso).
+- Acciones: definen lo que sucede cuando se cumple la condición (verdadero) o no se cumple (falso).
 
 
 Por ejemplo, para mostrar un cuadro de correo electrónico, cuando se selecciona una casilla de verificación:
 
-* Condición: La casilla de verificación &quot;¿Do you like to subscribe for Magazine &amp; Activities?&quot; (Le gustaría suscribirse a Magazine &amp; Activities?) está seleccionada. (¿Sí o no?). Esta condición se establece en la propiedad `Visible` del formulario.
-* Acción (Verdadero): se muestra el cuadro de correo electrónico. (Qué sucede si es sí). `Visibility Expression`utiliza la condición definida para la propiedad `visible` para mostrar dinámicamente los campos.
-* Acción (Falso): el cuadro de correo electrónico está oculto. (Qué sucede si es no). `Visibility Expression` utiliza la condición definida para que `Value` oculte dinámicamente los campos.
+- Condición: La casilla de verificación &quot;¿Do you like to subscribe for Magazine &amp; Activities?&quot; (Le gustaría suscribirse a Magazine &amp; Activities?) está seleccionada. (¿Sí o no?). Esta condición se establece en la propiedad `Visible` del formulario.
+- Acción (Verdadero): se muestra el cuadro de correo electrónico. (Qué sucede si es sí). `Visibility Expression`utiliza la condición definida para la propiedad `visible` para mostrar dinámicamente los campos.
+- Acción (Falso): el cuadro de correo electrónico está oculto. (Qué sucede si es no). `Visibility Expression` utiliza la condición definida para que `Value` oculte dinámicamente los campos.
 
 Para obtener instrucciones detalladas paso a paso, consulte [nostrar/ocultar un campo de correo electrónico en función de una condición](#example-1-conditional-email-field)
 
@@ -41,8 +41,8 @@ Para obtener instrucciones detalladas paso a paso, consulte [nostrar/ocultar un 
 
 Imagine un interruptor de luz para su campo de formulario. La propiedad `Visible` es como ese interruptor. Controla si el campo es visible inicialmente en el formulario la primera vez que se carga.
 
-* Verdadero (como si el interruptor de luz estuviera &quot;activado&quot;): el campo se muestra en el formulario.
-* Falso (como si el interruptor de luz estuviera &quot;desactivado&quot;): el campo está oculto en el formulario.
+- Verdadero (como si el interruptor de luz estuviera &quot;activado&quot;): el campo se muestra en el formulario.
+- Falso (como si el interruptor de luz estuviera &quot;desactivado&quot;): el campo está oculto en el formulario.
 
 Puede utilizar la fórmula SpreadSheet (incluida la etiqueta = ) para escribir una fórmula utilizando una lógica de hoja de cálculo para determinar la visibilidad del campo. Puede utilizar los valores de otros campos del formulario dentro de esta fórmula. Por ejemplo, si un usuario selecciona &quot;Individual&quot; en un campo de tipo de registro, puede ocultar el campo de correo electrónico con una fórmula que compruebe ese valor.
 
@@ -73,10 +73,10 @@ Utilice `=FORMULATEXT("Address of the corresponding Value property)` para llevar
 
 A continuación, mostramos una analogía para afianzar estos conceptos:
 
-* Visible: imagine que un formulario es como una casa. La propiedad &quot;Visible&quot; es como el interruptor de la luz de cada habitación (campo). Usted decide si la habitación está inicialmente iluminada (visible) u oscura (oculta) cuando alguien entra en la casa (abre el formulario).
-* Expresión visible: es como un interruptor de la luz con un sensor de movimiento. La habitación (campo) puede estar inicialmente oscura (oculta), pero una fórmula (sensor de movimiento) puede activarla (mostrar el campo) si alguien pasa por allí (cambia el valor en otro campo).
-* Valor: es como un regulador de intensidad preajustado de la luz (datos iniciales del campo). Los usuarios pueden ajustar el brillo (modificar el valor).
-* Expresión de valor: es como una calculadora de lujo integrada en la etiqueta de precio de un producto en la casa (formulario). La etiqueta de precio (campo) muestra el precio final en función de una fórmula (por ejemplo, añadir impuestos al precio base) que utiliza otra información como el precio base (valor de otro campo).
+- Visible: imagine que un formulario es como una casa. La propiedad &quot;Visible&quot; es como el interruptor de la luz de cada habitación (campo). Usted decide si la habitación está inicialmente iluminada (visible) u oscura (oculta) cuando alguien entra en la casa (abre el formulario).
+- Expresión visible: es como un interruptor de la luz con un sensor de movimiento. La habitación (campo) puede estar inicialmente oscura (oculta), pero una fórmula (sensor de movimiento) puede activarla (mostrar el campo) si alguien pasa por allí (cambia el valor en otro campo).
+- Valor: es como un regulador de intensidad preajustado de la luz (datos iniciales del campo). Los usuarios pueden ajustar el brillo (modificar el valor).
+- Expresión de valor: es como una calculadora de lujo integrada en la etiqueta de precio de un producto en la casa (formulario). La etiqueta de precio (campo) muestra el precio final en función de una fórmula (por ejemplo, añadir impuestos al precio base) que utiliza otra información como el precio base (valor de otro campo).
 
 Al combinar estas propiedades con [funciones de hoja de cálculo](#spreadsheet-functions-for-rules), puede lograr una amplia gama de comportamientos dinámicos en sus formularios.
 
@@ -86,19 +86,19 @@ El bloque de formularios adaptables admite diversas funciones de hoja de cálcul
 
 ### Funciones lógicas
 
-* [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): invierte el estado lógico (TRUE se convierte en FALSE y viceversa).
-* [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): devuelve TRUE sólo si todas las condiciones especificadas son TRUE.
-* [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): devuelve TRUE si al menos una de las condiciones especificadas es TRUE.
+- [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): invierte el estado lógico (TRUE se convierte en FALSE y viceversa).
+- [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): devuelve TRUE sólo si todas las condiciones especificadas son TRUE.
+- [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): devuelve TRUE si al menos una de las condiciones especificadas es TRUE.
 
 ### Funciones condicionales
 
-* [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): evalúa una condición y devuelve un valor específico si es TRUE y otro valor si es FALSE.
+- [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): evalúa una condición y devuelve un valor específico si es TRUE y otro valor si es FALSE.
 
 ### Funciones matemáticas
 
-* [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): añade valores de un rango de celdas especificado.
-* [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): redondea un número hasta un número determinado de decimales.
-* [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): devuelve el valor más pequeño de un rango de celdas especificado.
+- [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): añade valores de un rango de celdas especificado.
+- [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): redondea un número hasta un número determinado de decimales.
+- [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): devuelve el valor más pequeño de un rango de celdas especificado.
 
 ## Creación de una regla
 
@@ -156,7 +156,7 @@ Estos son algunos ejemplos de las funciones de hoja de cálculo más utilizadas:
 
 **Funciones lógicas**:
 
-* **NOT():** invierte el estado lógico (TRUE se convierte en FALSE y viceversa).
+- **NOT():** invierte el estado lógico (TRUE se convierte en FALSE y viceversa).
 
   Ejemplo: ocultar un campo &quot;Confirmar correo electrónico&quot; si el campo de correo electrónico se deja en blanco.
 
@@ -170,9 +170,9 @@ Estos son algunos ejemplos de las funciones de hoja de cálculo más utilizadas:
       ![Fórmula de expresión visible de AEM Forms](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
 
-* AND(): devuelve TRUE sólo si todas las condiciones especificadas son TRUE.
+- AND(): devuelve TRUE sólo si todas las condiciones especificadas son TRUE.
 
-   * Ejemplo: habilitar un botón de &quot;envío&quot; sólo si se rellenan todos los campos obligatorios.
+   - Ejemplo: habilitar un botón de &quot;envío&quot; sólo si se rellenan todos los campos obligatorios.
 
    1. Establezca la propiedad `Visible` del botón &quot;enviar&quot; en:
 
@@ -202,9 +202,9 @@ Estos son algunos ejemplos de las funciones de hoja de cálculo más utilizadas:
 
       Esta fórmula muestra el botón &quot;Enviar&quot; (TRUE) sólo si se rellenan todos los campos (nombre, correo electrónico, teléfono) (NOT(()) devuelve TRUE para cada uno), de lo contrario oculta el botón (AND(multiple FALSES) = FALSE).
 
-* OR(): devuelve TRUE si al menos una de las condiciones especificadas es TRUE.
+- OR(): devuelve TRUE si al menos una de las condiciones especificadas es TRUE.
 
-   * Ejemplo: Aplicar un descuento si un usuario introduce cualquiera de los códigos del cupón descuento aplicables.
+   - Ejemplo: Aplicar un descuento si un usuario introduce cualquiera de los códigos del cupón descuento aplicables.
 
    1. Establezca la propiedad `Visible` del campo “importe final” en:
 
@@ -229,9 +229,9 @@ Estos son algunos ejemplos de las funciones de hoja de cálculo más utilizadas:
 
 **Funciones de texto:**
 
-* IF(): evalúa una condición y devuelve un valor específico si es TRUE y otro valor si es FALSE.
+- IF(): evalúa una condición y devuelve un valor específico si es TRUE y otro valor si es FALSE.
 
-   * Ejemplo: Visualización de un mensaje personalizado basado en una categoría de producto elegida.
+   - Ejemplo: Visualización de un mensaje personalizado basado en una categoría de producto elegida.
 
    1. Establezca la propiedad `Value` del campo `message` en `Only upto 7 kg check-in lagguage is allowed!`:
 
@@ -264,7 +264,7 @@ Estos son algunos ejemplos de las funciones de hoja de cálculo más utilizadas:
 
 **Funciones matemáticas:**
 
-* SUM(): añade valores desde un rango de celdas especificado.
+- SUM(): añade valores desde un rango de celdas especificado.
 
   Ejemplo: Cálculo del coste total de los artículos de un carro de compras.
 
@@ -273,7 +273,7 @@ SUM(precio * cantidad)
 
   Esta fórmula supone que tiene campos separados para &quot;precio&quot; y &quot;cantidad&quot; de cada artículo. Los multiplica y utiliza SUM() para sumar el coste total de todos los artículos del carro de compras.
 
-* ROUND(): redondea un número hasta un número determinado de decimales.
+- ROUND(): redondea un número hasta un número determinado de decimales.
 
   Ejemplo: Redondear una cantidad de descuento calculada a dos decimales.
 
@@ -282,7 +282,7 @@ ROUND(descuento, 2)
 
   Esta fórmula redondea el valor de descuento a dos decimales.
 
-* MIN(): devuelve el valor más pequeño de un rango de celdas especificado.
+- MIN(): devuelve el valor más pequeño de un rango de celdas especificado.
 
   Ejemplo: Búsqueda de la edad mínima requerida para un formulario de suscripción basado en un país seleccionado.
 
@@ -304,9 +304,9 @@ El bloque de formularios adaptables listo para usar (OOTB) proporciona implement
 
 Las funciones personalizadas residen en el archivo `[Adaptive form block]/functions.js`. El proceso de creación suele incluir los siguientes pasos:
 
-* Declaración de función: defina el nombre de la función y sus parámetros (las entradas que acepta).
-* Implementación lógica: escriba el código que describe los cálculos o manipulaciones específicos realizados por la función.
-* Exportación de funciones: haga que la función sea accesible dentro de las reglas exportándola desde el archivo correspondiente.
+- Declaración de función: defina el nombre de la función y sus parámetros (las entradas que acepta).
+- Implementación lógica: escriba el código que describe los cálculos o manipulaciones específicos realizados por la función.
+- Exportación de funciones: haga que la función sea accesible dentro de las reglas exportándola desde el archivo correspondiente.
 
 ### Ejemplo: Función Year
 
@@ -315,9 +315,9 @@ En este ejemplo se muestran dos funciones personalizadas que imitan la función 
 
 ```JavaScript
 /**
- * Get the current date and time
- * @name now
- * @returns {Date} The current date and time as a Date object
+ - Get the current date and time
+ - @name now
+ - @returns {Date} The current date and time as a Date object
  */
 function now() {
   const today = new Date();
@@ -325,11 +325,11 @@ function now() {
 }
 
 /**
- * Get the year from a Date object
- * @name year
- * @param {Date} date The date object
- * @throws {TypeError} If the input is not a Date object
- * @returns {number} The year as a number
+ - Get the year from a Date object
+ - @name year
+ - @param {Date} date The date object
+ - @throws {TypeError} If the input is not a Date object
+ - @returns {number} The year as a number
  */
 function year(date) {
   let inputDate = new Date(date)

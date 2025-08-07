@@ -4,13 +4,13 @@ description: Aprenda a crear un formulario adaptable mediante  [!DNL Experience 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 18%
+source-wordcount: '711'
+ht-degree: 19%
 
 ---
-
 
 # Crear un formulario adaptable (componentes principales) basado en plantillas de formulario XFA
 
@@ -25,7 +25,7 @@ Puede cambiar el propósito de la plantilla de formulario XFA o de los archivos 
 Algunas de las ventajas de crear formularios basados en plantillas de formulario XFA o archivos XDP son:
 
 * **Ahorro de tiempo**: puede reutilizar rápidamente las plantillas de formulario XFA existentes (archivos XDP) sin necesidad de volver a crear la estructura del formulario, lo que ahorra tiempo y esfuerzo durante el proceso de creación.
-* **Migración sin esfuerzo**: Si ya tiene plantillas de formulario XFA en uso, esta opción proporciona una ruta de migración sencilla a Forms AEM adaptable, lo que le permite aprovechar las ventajas de los componentes principales modernos de los formularios sin perder la lógica y los datos de formulario existentes.
+* **Migración sin esfuerzo**: Si ya tiene plantillas de formulario XFA en uso, esta opción proporciona una ruta de migración sencilla a Forms adaptable, lo que le permite aprovechar las ventajas de los componentes principales modernos de AEM sin perder los datos y la lógica de formulario existentes.
 * **Experiencia del usuario mejorada**: Los Forms adaptables son más adaptables y personalizables que los formularios XFA. Al realizar la transición a un Forms adaptable, puede garantizar una experiencia más fácil de usar en diferentes dispositivos y tamaños de pantalla.
 * **Integración mejorada**: el Forms adaptable se integra mejor con otras características, como flujos de trabajo, enlaces de datos y envíos de formularios, lo que permite flujos de trabajo más suaves y una mejor administración general de los formularios.
 
@@ -84,7 +84,7 @@ Siga estos pasos para crear un formulario adaptable mediante plantillas de formu
 
    >[!NOTE]
    >
-   > Después de seleccionar **Plantillas de formulario** en la ficha Modelo de formulario **3&rbrace;, no se puede cambiar.**
+   > Después de seleccionar **Plantillas de formulario** en la ficha Modelo de formulario **3}, no se puede cambiar.**
 
 
 Se crea un formulario adaptable que se abre en el editor de formularios adaptables. El editor muestra el contenido disponible en la plantilla.  En función del tipo de formulario adaptable, los elementos del formulario presentes en la plantilla de formulario XFA asociada se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** de la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
@@ -93,7 +93,3 @@ Se crea un formulario adaptable que se abre en el editor de formularios adaptabl
 >
 > Puede deshabilitar los scripts para los campos de formulario XDP mediante la barra de herramientas del panel del campo agregado. Cree lógicas para los campos agregados usando el [Editor visual de reglas](/help/forms/rule-editor-core-components.md).
 
-## Consulte también
-
-{{see-also}}
-* [Adición de un comportamiento dinámico a los formularios mediante el editor de reglas](/help/forms/rule-editor-core-components.md)

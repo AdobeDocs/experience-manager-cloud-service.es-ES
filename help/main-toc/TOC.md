@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e55162f7faf34f6bedf4e25dba9e1e91396fb8d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '6553'
+source-wordcount: '6563'
 ht-degree: 99%
 
 ---
@@ -1106,8 +1106,6 @@ ht-degree: 99%
       + [Redireccionamientos](/help/edge/docs/redirects.md)
    + Creación de formularios  {#build-forms}
       + [Información general](/help/edge/docs/forms/overview.md)
-      + [Configuración del envío de formularios de Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
-      + [Preguntas frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + Creación de WYSIWYG {#universal-editor}
          + [Introducción al editor universal de formularios para Edge Delivery Services: Guía completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Cómo empezar a crear con el editor universal: tutorial paso a paso](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1121,6 +1119,7 @@ ht-degree: 99%
          + [Cómo publicar e implementar formularios: Guía de publicación del editor universal](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Generar componentes de formulario personalizados: Guía del editor universal para desarrolladores](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Integración del modelo de datos de formulario: integración de formularios con el modelo de datos de formulario](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Configurar el servicio de relleno previo: complete la guía paso a paso para configurar el servicio de relleno previo](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [Segmentos reutilizables, modulares e independientes: creación y uso de fragmentos de formulario en formularios](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
          + [Solución de problemas de Error 403 Prohibido en el envío de formularios de Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + Creación basada en documentos {#getting-started-edge-delivery-services-forms}
@@ -1142,6 +1141,8 @@ ht-degree: 99%
          + [Proteger los formularios: añadir seguridad reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Generar componentes de formulario personalizados: Guía para desarrolladores](/help/edge/docs/forms/custom-components-forms.md)
          + [Supervisar el rendimiento del formulario: guías de telemetría operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+      + [Configuración del envío de formularios de Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Preguntas más frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Prácticas recomendadas para crear formularios](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
    + Recursos de Edge Delivery  {#resources}
       + Barra de tareas  {#sidekick}

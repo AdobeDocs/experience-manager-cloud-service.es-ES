@@ -4,10 +4,10 @@ description: Aprenda a crear secciones o campos repetibles en un formulario adap
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '1258'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -49,6 +49,7 @@ Para repetir un panel en el formulario o quitar paneles repetibles, un autor de 
 ![Pestaña Accesibilidad](/help/forms/assets/repeat-panel.png)
 
 Para hacer que un panel sea repetible, realice los siguientes pasos:
+
 1. Seleccione un contenedor de panel y seleccione ![cmppr](/help/forms/assets/cmppr.png).
 1. Haga clic en **repetir panel** y active la opción para **hacer repetible el panel**.
 1. Establezca **repeticiones mínimas** según sea necesario para las secciones mínimas repetibles. Puede establecer las **repeticiones mínimas** a cero para la no repetición de paneles o para quitar los paneles repetidos. De forma predeterminada, el valor de repetición mínima es cero.
@@ -135,30 +136,9 @@ El elemento principal del panel debe contener un botón de eliminación para eli
 >
 >
 
-<!-- 
->For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).      
--->
-
 >[!NOTE]
 >
-> Cuando todas las instancias de un panel se quiten de un formulario adaptable, para agregar una instancia del panel quitado, utilice la sintaxis _panelName para capturar el Instance Manager del panel y use la API addInstance de Instance Manager para agregar la instancia eliminada. Por ejemplo, _panelName.addInstance(). Añade una instancia del panel eliminado.
-
-<!--
-![panel-repeatability-video](/help/adaptive-forms/assets/panel-repeatability-video.mp4)
--->
-
-<!--
-
-## Using the accordion layout for the parent panel &nbsp; {#using-the-accordion-layout-for-the-parent-panel-nbsp}
-
-A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
-
-1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
-
-   Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
-
--->
+> Cuando todas las instancias de un panel se quiten de un formulario adaptable, para agregar una instancia del panel quitado, utilice la sintaxis _panelName para capturar el Instance Manager del panel y use la API addInstance de Instance Manager para agregar la instancia eliminada. Por ejemplo, &#39;_panelName.addInstance()&#39;. Añade una instancia del panel eliminado.
 
 ## Usar subformularios repetibles de la plantilla de formulario (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 

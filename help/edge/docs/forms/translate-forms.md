@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '546'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '544'
 ht-degree: 100%
 
 ---
@@ -21,8 +21,8 @@ En Edge Delivery Services, la traducción de formularios implica convertir el co
 
 Al final de este artículo, aprenderá lo siguiente:
 
-* [A traducir formularios en Google Drive](#translate-form-google-drive)
-* [A traducir formularios en el sitio de SharePoint](#translate-form-sharepoint)
+- [A traducir formularios en Google Drive](#translate-form-google-drive)
+- [A traducir formularios en el sitio de SharePoint](#translate-form-sharepoint)
 
 ## A traducir formularios en Google Drive {#translate-form-google-drive}
 
@@ -68,11 +68,11 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 ## Problemas conocidos {#known-issues}
 
-* Las etiquetas del formulario se traducen al idioma localizado especificado en la hoja `shared-default`, pero los mensajes de error se muestran en el idioma predeterminado del explorador.
+- Las etiquetas del formulario se traducen al idioma localizado especificado en la hoja `shared-default`, pero los mensajes de error se muestran en el idioma predeterminado del explorador.
 
   ![Mensaje de error](/help/forms/assets/translate-error-message.png)
 
-* Al abrir el calendario, la lista desplegable de calendario se muestra en el idioma predeterminado del explorador.
+- Al abrir el calendario, la lista desplegable de calendario se muestra en el idioma predeterminado del explorador.
 
   ![Mensaje de error](/help/forms/assets/translate-calender-display.png)
 
@@ -83,16 +83,13 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 **R**: para introducir texto en un idioma localizado específico, ajuste la configuración de teclado en el dispositivo. Consulte los siguientes vínculos para obtener instrucciones sobre cómo hacerlo:
 
-* [Configure su Mac para recibir entradas en otro idioma](https://support.apple.com/es-ES/guide/mac-help/mchlp1406/mac)
-* [Configure su Windows para recibir entradas en otro idioma](https://support.microsoft.com/es-ES/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-* [Configure su Android o iPhone/iPads para recibir entradas en otro idioma](https://support.google.com/gboard/answer/7068494?hl=en&amp;co=GENIE.Platform%3DAndroid)
+- [Configure su Mac para recibir entradas en otro idioma](https://support.apple.com/es-ES/guide/mac-help/mchlp1406/mac)
+- [Configure su Windows para recibir entradas en otro idioma](https://support.microsoft.com/es-ES/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
+- [Configure su Android o iPhone/iPads para recibir entradas en otro idioma](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
 
 
 **P**: ¿Cómo puedo recuperar una lista de configuraciones regionales utilizadas en la función `GOOGLETRANSLATE`?
 
 **R**: Puede consultar la [documentación oficial de Google](https://cloud.google.com/translate/docs/languages) para obtener una lista completa de las configuraciones regionales utilizadas en el TRADUCTOR DE GOOGLE.
 
-## Consulte también
-
-{{see-more-forms-eds}}
 

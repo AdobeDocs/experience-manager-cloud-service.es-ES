@@ -5,9 +5,9 @@ topic-tags: forms-manager
 feature: Adaptive Forms, Foundation Components
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '704'
 ht-degree: 100%
 
 ---
@@ -97,7 +97,7 @@ Esta sección describe lo que sucede cuando se **actualiza o finaliza una revisi
 
    Quitar un revisor
 
-   1. Si la tarea asignada está incompleta, finaliza.
+   1. Si la tarea asignada está incompleta, termina.
    1. El revisor ya no puede comentar en el formulario.
 
 1. Si se agrega un revisor:
@@ -111,22 +111,8 @@ Esta sección describe lo que sucede cuando se **actualiza o finaliza una revisi
 
 1. Cuando finaliza una revisión:
 
-   1. **Revisores**: se finaliza la tarea incompleta relacionada con la revisión de cada uno de los revisores. La tarea ya no aparece como “Pendiente” en la sección Notificaciones del revisor.
+   1. **Revisores**: se termina la tarea incompleta relacionada con la revisión de cada uno de los revisores. La tarea ya no aparece como “Pendiente” en la sección Notificaciones del revisor.
    1. **Iniciador**: la tarea asignada al iniciador de la revisión se marca como completada y se quita de la sección Notificación del iniciador de la revisión.
    1. **Todos**: la revisión se muestra en la sección Revisiones anteriores. No se pueden añadir más comentarios.
 
    ![revisión completa](assets/review-complete-imgg.png)
-
-
-## Vea también {#see-also}
-
-{{see-also}}
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Associating submission reviewers with a form](/help/forms/adding-reviewers-form.md)
-
--->

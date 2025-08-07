@@ -4,9 +4,9 @@ description: Este documento proporciona información general sobre los component
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1009'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1007'
 ht-degree: 100%
 
 ---
@@ -26,17 +26,17 @@ A continuación se muestra una descripción general de los componentes disponibl
 
 ### Campos de entrada
 
-* Todos los [tipos de entrada](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/input#input_types) HTML5 válidos y el [área de texto](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/textarea). Por ejemplo, botón, casilla de verificación, color, fecha, fecha, fecha-hora local, correo electrónico, archivo, oculto, imagen, mes, número, contraseña, radio, intervalo, restablecer, enviar, teléfono, texto, hora, URL y semana.
+- Todos los [tipos de entrada](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/input#input_types) HTML5 válidos y el [área de texto](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/textarea). Por ejemplo, botón, casilla de verificación, color, fecha, fecha, fecha-hora local, correo electrónico, archivo, oculto, imagen, mes, número, contraseña, radio, intervalo, restablecer, enviar, teléfono, texto, hora, URL y semana.
 
 ### Controles de selección
 
-* [Grupos de casillas](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/input/checkbox): para seleccionar varias opciones.
-* [Grupos de radio](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/input/radio): para seleccionar una sola opción de un grupo.
-* [Menús desplegables](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/select): para mostrar un menú de opciones. Por ejemplo, el cuadro desplegable.
+- [Grupos de casillas](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/input/checkbox): para seleccionar varias opciones.
+- [Grupos de radio](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/input/radio): para seleccionar una sola opción de un grupo.
+- [Menús desplegables](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/select): para mostrar un menú de opciones. Por ejemplo, el cuadro desplegable.
 
 ### Contenedores
 
-* Paneles/contenedores: para agrupar elementos de formulario relacionados y mejorar su organización. Es una combinación de [fieldset](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/fieldset) y [legend](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/legend).
+- Paneles/contenedores: para agrupar elementos de formulario relacionados y mejorar su organización. Es una combinación de [fieldset](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/fieldset) y [legend](https://developer.mozilla.org/es-es/docs/Web/HTML/Element/legend).
 
 
 ## Propiedades de componentes
@@ -64,8 +64,3 @@ Cada componente del formulario incluye varias propiedades que le permiten contro
 | Repetible | Todos | Una propiedad booleana para `fieldset` indica que un fieldset en particular se puede repetir para `Min` y `Max` las veces especificadas. La propiedad `Min` debe establecerse en 1 o superior. No establezca la propiedad `Min` en 0. |
 | Expresión visible | Todos | Una expresión visible hace referencia a una fórmula de hoja de cálculo, indicada por la etiqueta &quot;=&quot;, que se utiliza para controlar la visibilidad de un campo. En esta fórmula, solo se puede emplear la propiedad value de otros campos, lo que permite administrar de forma directa la visibilidad de los campos dentro del sistema. |
 | Expresión de valor | Todos | Una expresión de valor hace referencia a una fórmula de hoja de cálculo, indicada por la etiqueta &quot;=&quot;, que se utiliza para controlar el valor de un campo. En esta fórmula, solo se puede utilizar la propiedad value de otros campos, lo que permite una administración directa del valor de campo dentro del sistema. |
-
-
-## Consulte también
-
-{{see-more-forms-eds}}

@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '195'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 94%
 
 ---
 
@@ -25,10 +25,10 @@ Estas son algunas expresiones regulares que puede utilizar para mejorar la valid
 
 Garantiza al menos ocho caracteres con lo siguiente:
 
-* Letras minúsculas (a-z)
-* Letras mayúsculas (A-Z)
-* Dígitos (0-9)
-* Caracteres especiales (@$!%*?&amp;)
+- Letras minúsculas (a-z)
+- Letras mayúsculas (A-Z)
+- Dígitos (0-9)
+- Caracteres especiales (@$!%*?&amp;)
 
 
 ## Dirección de correo electrónico

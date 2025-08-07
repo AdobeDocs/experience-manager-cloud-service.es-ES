@@ -4,7 +4,7 @@ description: Con un diseño interactivo, las mismas experiencias se pueden mostr
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Con un diseño interactivo, las mismas experiencias se pueden mostrar de forma e
 
 >[!TIP]
 >
->AEM Este documento proporciona información general sobre el diseño adaptable para desarrolladores y cómo se aplican las funciones en los entornos de trabajo de la aplicación de diseño de la aplicación de la aplicación de forma. Hay recursos adicionales disponibles:
+>Este documento proporciona información general sobre el diseño interactivo para desarrolladores y cómo se aplican las funciones en AEM. Hay recursos adicionales disponibles:
 >
 >* Para los autores de contenido, los detalles de cómo utilizar las características de diseño adaptables en una página de contenido están disponibles en el documento [Diseño adaptable.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 >* Para los administradores del sitio, los detalles sobre cómo configurar el contenedor de diseño para sus sitios se describen en el documento [Configuración del contenedor de diseño y el modo de diseño.](/help/sites-cloud/administering/responsive-layout.md)
@@ -35,7 +35,7 @@ Diseñe sus experiencias para que se adapten a la ventanilla del cliente en la q
 
 ![Ejemplos de diseño interactivo](assets/responsive-example.png)
 
-Desarrolle aplicaciones de Adobe Experience Manager AEM () que generen HTML5, que se adapta a múltiples tamaños y orientaciones de ventana. Por ejemplo, los siguientes intervalos de anchuras de ventanilla móvil se corresponden con varios tipos de dispositivos y orientaciones
+Desarrollar aplicaciones de Adobe Experience Manager (AEM) que generen HTML5 que se adapte a múltiples tamaños y orientaciones de ventana. Por ejemplo, los siguientes intervalos de anchuras de ventanilla móvil se corresponden con varios tipos de dispositivos y orientaciones
 
 * Anchura máxima de 480 píxeles (teléfono, vertical)
 * Anchura máxima de 767 píxeles (teléfono, horizontal)
@@ -53,7 +53,7 @@ A medida que diseñe, use el **Emulador** de la barra de herramientas para obten
 
 ## Antes de desarrollar {#before-you-develop}
 
-AEM Antes de desarrollar la aplicación que admite sus páginas web, se deben tomar varias decisiones de diseño. Por ejemplo, necesita tener la siguiente información:
+Antes de desarrollar la aplicación de AEM compatible con sus páginas web, se deben tomar varias decisiones de diseño. Por ejemplo, necesita tener la siguiente información:
 
 * Los dispositivos a los que está dirigiendo
 * Tamaños de las ventanillas móviles de destino
@@ -61,14 +61,14 @@ AEM Antes de desarrollar la aplicación que admite sus páginas web, se deben to
 
 ### Estructura de aplicación {#application-structure}
 
-AEM La estructura típica de la aplicación de la comunidad admite todas las implementaciones de diseño interactivo:
+La estructura típica de la aplicación de AEM admite todas las implementaciones de diseño adaptables:
 
 * Los componentes de página residen debajo de `/apps/<application_name>/components`
 * Las plantillas residen debajo de `/apps/<application_name>/templates`
 
 ## Uso de consultas de medios {#using-media-queries}
 
-Las consultas de medios permiten el uso selectivo de estilos CSS para el procesamiento de páginas. AEM Las herramientas y características de desarrollo de la le permiten implementar de forma eficaz y eficiente las consultas de medios en sus aplicaciones.
+Las consultas de medios permiten el uso selectivo de estilos CSS para el procesamiento de páginas. Las herramientas y funciones de desarrollo de AEM le permiten implementar de forma eficaz las consultas de medios en sus aplicaciones.
 
 El grupo W3C proporciona la recomendación [Consultas de medios](https://www.w3.org/TR/css3-mediaqueries/) que describe esta característica CSS3 y la sintaxis.
 
@@ -83,9 +83,9 @@ En el archivo CSS, defina consultas de medios basadas en las propiedades de los 
 
 El [tutorial de WKND](develop-wknd-tutorial.md) utiliza esta estrategia para definir estilos en el diseño del sitio. El archivo CSS utilizado por WKND se encuentra en `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
 
-### AEM Uso de consultas de medios con páginas de {#using-media-queries-with-aem-pages}
+### Uso de consultas de medios con páginas de AEM {#using-media-queries-with-aem-pages}
 
-AEM [El proyecto de ejemplo WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) y [Arquetipo de proyecto de la](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) utilizan el [componente principal de página](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=es), que incluye los clientlibs a través de la directiva de página.
+[El proyecto de muestra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) y [Arquetipo de proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) utilizan el [Componente principal de página](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), que incluye los clientlibs a través de la directiva de página.
 
 Si su propio componente de página no se basa en el componente principal de página, también puede incluir la carpeta de biblioteca de cliente en el script HTL o JSP del mismo. Al hacerlo, se genera y se hace referencia al archivo CSS con las consultas de medios necesarias para que funcione la cuadrícula adaptable.
 
@@ -102,7 +102,7 @@ Si su propio componente de página no se basa en el componente principal de pág
 <ui:includeClientLib categories="apps.weretail.all"/>
 ```
 
-El script JSP genera el siguiente código de HTML que hace referencia a las hojas de estilo:
+El script JSP genera el siguiente código HTML que hace referencia a las hojas de estilo:
 
 ```xml
 <link rel="stylesheet" href="/etc/designs/weretail/clientlibs-all.css" type="text/css">
@@ -137,14 +137,14 @@ Las páginas adaptables se adaptarán dinámicamente al dispositivo en el que se
 
 [El componente de imagen del componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=es) incluye características como la selección de imágenes adaptables.
 
-* De manera predeterminada, el componente de imagen usa el [servlet de imagen adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=es) para entregar la representación adecuada.
+* De manera predeterminada, el componente de imagen usa el [servlet de imagen adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) para entregar la representación adecuada.
 * [Entrega de imágenes optimizadas para la web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=es) también está disponible a través de una sencilla casilla de verificación en su directiva, que ofrece recursos de imagen de DAM en formato WebP y puede reducir el tamaño de descarga de una imagen en aproximadamente un 25 % en promedio.
 
 ## El contenedor de diseño {#layout-container}
 
-AEM contenedor de diseño le permite implementar de forma eficiente y eficaz el diseño adaptable para adaptar las dimensiones de la página a la ventanilla del cliente.
+El contenedor de diseño de AEM le permite implementar de forma eficiente y eficaz el diseño interactivo para adaptar las dimensiones de la página a la ventanilla del cliente.
 
->AEM AEM [La documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) de la cuadrícula adaptable es una referencia que se puede dar a los desarrolladores de front-end para que puedan usar la cuadrícula de la fuera de la red de, por ejemplo, al crear maquetas de HTML AEM estáticos para un sitio de futuro.
+>[La documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) de la cuadrícula adaptable es una referencia que se puede dar a los desarrolladores de front-end para que puedan usar la cuadrícula de AEM fuera de AEM, por ejemplo, al crear maquetas de HTML estáticas para un sitio de AEM futuro.
 
 >[!TIP]
 >

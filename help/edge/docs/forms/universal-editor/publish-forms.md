@@ -1,91 +1,163 @@
 ---
-title: Publicación de formularios de AEM para Edge Delivery Services.
-description: Publique sus formularios de Edge Delivery Services de forma rápida y fluida.
+title: Publicar Forms adaptable con Edge Delivery Services
+description: Obtenga información sobre cómo publicar, configurar y acceder a Forms adaptable mediante Edge Delivery Services para uso en producción.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+level: Intermediate
+keywords: [Publicación de formularios, Edge Delivery Services, configuración de formularios, CORS, filtro de referente]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: ht
-source-wordcount: '477'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: 756
+ht-degree: 2%
 
 ---
 
-# Publicación del formulario adaptable en Edge Delivery Services
+# Publicar Forms adaptable con Edge Delivery Services
 
-<span class="preview"> Es una función de la versión preliminar y se puede acceder a ella a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal de versiones preliminares</a>. </span>
+## Información general
 
+La publicación de un formulario adaptable hace que esté disponible en Edge Delivery Services para que los usuarios finales accedan y lo envíen. Este proceso implica tres fases principales: publicar el formulario, configurar la seguridad y acceder al formulario activo.
 
-Cuando el formulario esté terminado y listo para usarse, puede publicarlo para que sus clientes puedan acceder a él para recopilar y enviar datos. La publicación garantiza que el formulario esté disponible en Edge Delivery, lo que permite a los usuarios interactuar con él sin problemas. Este proceso permite a los clientes rellenar y enviar el formulario en tiempo real, lo que garantiza una captura de datos eficiente y un procesamiento optimizado.
+**Lo que va a lograr:**
+
+- Publicación del formulario en Edge Delivery Services
+- Configure las opciones de seguridad para enviar formularios
+- Acceso y verificación del formulario publicado
+- Configurar el enrutamiento de URL y las políticas CORS adecuados
 
 ## Requisitos previos
 
-* Un formulario creado con la **plantilla de Edge Delivery Services (EDS)**. [Más información](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) sobre la creación de un formulario basado en EDS.
+- **Requisitos de formulario:**
+   - Formulario adaptable creado con una plantilla de Edge Delivery Services
+   - Formulario probado y listo para el uso en producción
 
-## Publicación del formulario
+- **Requisitos de acceso:**
+   - Permisos de autor de AEM Forms
+   - Acceso a Cloud Manager (para la configuración de producción)
+   - Acceso de desarrollador al código de bloque de formulario (para la configuración del envío)
 
-Puede publicar cualquier **formulario adaptable basado en EDS** en Edge Delivery siguiendo estos pasos:
+- **Documentación relacionada:**
+   - [Creación de formularios con Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+   - [Configuración de acciones de envío](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
 
-<!--1. Select the **Adaptive Form** that you want to publish and click the **Edit** ![edit icon](/help/forms/assets/edit.svg) icon.
-   ![Select EDS-Based Form](/help/forms/assets/select-eds-based-form.png)-->
+## Fase 1: Publicar el formulario
 
-1. Abra el formulario adaptable en el editor y haga clic en el icono **Publicar** en el carril superior.
+### Paso 1: Inicio de la publicación
+
+1. **Acceda a su formulario**: abra su formulario adaptable en el editor universal
+2. **Comenzar a publicar**: Haga clic en el icono **Publicar** de la barra de herramientas
+
    ![Haga clic en Publicar](/help/forms/assets/publish-icon-eds-form.png)
 
-1. Al hacer clic en **Publicar**, aparece una pantalla o una ventana emergente que muestra los recursos de publicación, incluido el título del formulario. En este ejemplo, se usa la plantilla **Wknd_Form**.
+### Paso 2: Revisar y confirmar
+
+1. **Revisar recursos de publicación**: el sistema muestra todos los recursos que se están publicando, incluido el formulario
+
    ![Publicación al hacer clic](/help/forms/assets/on-click-publish.png)
 
-1. Vuelva a hacer clic en **Publicar** y aparecerá una ventana emergente de confirmación que indica que el formulario se ha publicado.
+2. **Confirmar publicación**: Haga clic en **Publicar** para continuar
+3. **Verificar éxito**: busque el mensaje de confirmación
+
    ![Éxito de publicación](/help/forms/assets/publish-success.png)
 
-1. Para comprobar el estado de publicación del formulario, vuelva a hacer clic en **Publicar**.
-   ![Estado de publicación](/help/forms/assets/publish-status.png)
+### Paso 3: Verificar el estado de publicación
 
-1. Para **cancelar la publicación** de un formulario, ábralo en el editor, haga clic en el menú de tres puntos en la esquina superior derecha y haga clic en **Cancelar la publicación**.
-   ![Cancelar publicación](/help/forms/assets/unpublish--form.png)
+**Comprobar estado**: vuelve a hacer clic en el icono **Publicar** para ver el estado actual.
 
-## Habilitar el envío de formularios en Edge Delivery mediante la configuración de un filtro de referente para AEM Publisher
+![Estado de publicación](/help/forms/assets/publish-status.png)
 
-Para garantizar el envío seguro del formulario, debe configurar un **Filtro de referente** en AEM Publisher. Este filtro garantiza que solo las solicitudes autorizadas de Edge Delivery puedan realizar operaciones de escritura (POST, PUT, DELETE, COPY, MOVE), lo que evita modificaciones no autorizadas. A continuación se indican los pasos necesarios para configurar un filtro de referente para AEM Publisher:
+**Punto de comprobación de validación:**
 
-### Actualización de la URL de instancia de AEM en Edge Delivery
+- El formulario muestra el estado &quot;Publicado&quot; en el editor
+- No hay mensajes de error durante el proceso de publicación
+- El formulario aparece en la lista de recursos publicados
 
-Modifique `submitBaseUrl` en el archivo **constant.js** dentro del bloque del formulario para especificar la URL de la instancia de AEM:
+### Administración de Forms publicado
 
-**Para la configuración de nube:**
+**Para cancelar la publicación de un formulario:**
 
-```js
+1. Abra el formulario en el editor
+2. Haga clic en el menú de tres puntos (⋯) en la esquina superior derecha
+3. Seleccionar **Cancelar publicación**
+
+![Cancelar publicación de formulario](/help/forms/assets/unpublish--form.png)
+
+## Fase 2: Configurar opciones de seguridad
+
+### Por qué se requiere la configuración de seguridad
+
+Para habilitar los envíos de formularios seguros, debe configurar opciones de seguridad que:
+
+- Permitir que Edge Delivery Services envíe datos a AEM
+- Impedir el acceso no autorizado a la instancia de AEM
+- Habilitar CORS (Intercambio de recursos de origen cruzado) para envíos de formularios
+- Filtrar solicitudes para permitir solo dominios de Edge Delivery legítimos
+
+>[!IMPORTANT]
+>
+>**Necesario para producción**: estas configuraciones son obligatorias para que los envíos de formularios funcionen en entornos de producción.
+
+### Paso 1: Configurar la URL de envío del formulario
+
+**Propósito**: enviar formularios directamente a su instancia de AEM
+
+**Ubicación de archivo**: `blocks/form/constant.js` en su proyecto de Edge Delivery Services
+
+**Ejemplos de configuración:**
+
+```javascript
+// Production Environment
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
-```
-**Para desarrollo local:**
 
-```js
+// Local Development Environment  
 export const submitBaseUrl = 'http://localhost:4503';
+
+// Staging Environment
+export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com';
 ```
 
-### Modificación de la configuración de CORS
+**Punto de comprobación de validación:**
 
-Ajuste la **configuración de CORS** para permitir las solicitudes de envío de formularios de los dominios de Edge Delivery. Consulte la [Guía de configuración de CORS](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) para obtener más información.
+- `constant.js` archivo actualizado con la URL de publicación de AEM correcta
+- La dirección URL coincide con su entorno (producción, ensayo o local)
+- No hay barra diagonal en la dirección URL
 
-**Ejemplo de configuración de CORS:**
+### Paso 2: Configuración de CORS
+
+**Propósito**: permitir solicitudes de envío de formularios de dominios de Edge Delivery Services
+
+**Implementación**: agregue la configuración CORS a su configuración de AEM Dispatcher o Apache
 
 ```apache
-# Developer Localhost
+# Local Development Environment
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
 
-# Franklin Stage
-SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
+# Edge Delivery Services - Preview/Stage Environment  
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true
 
-# Franklin Live
+# Edge Delivery Services - Production Environment
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
-Para el desarrollo local, consulte la [documentación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) para habilitar CORS desde su **URL de host de IU de desarrollo**.
 
-### Configuración del Filtro de referente
+**Punto de comprobación de validación:**
 
-Configure **Filtro de referente** en AEM Cloud Service mediante Cloud Manager. [Más información](https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) acerca de la configuración del filtro de referente en una instancia de AEM Cloud Service mediante un administrador de nube.
+- Reglas CORS aplicadas a la configuración de Dispatcher
+- Se incluyen todos los dominios necesarios (localhost, hlx.page, hlx.live)
+- Configuración implementada en el entorno de destino
 
-**Configuración JSON para el filtro de referente:**
+**Documentación de referencia:**
+
+- [Guía de configuración de CORS](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [Documentación del filtro de referente](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+
+### Paso 3: Configurar el filtro de referente
+
+**Propósito**: Restringir las operaciones de escritura a dominios de Edge Delivery Services autorizados
+
+**Método de implementación**: configure mediante Cloud Manager en AEM as a Cloud Service
+
+**Archivo de configuración**: Agregue a la configuración OSGi de su proyecto
 
 ```json
 {
@@ -97,7 +169,7 @@ Configure **Filtro de referente** en AEM Cloud Service mediante Cloud Manager. [
   ],
   "filter.methods": [
     "POST",
-    "PUT",
+    "PUT", 
     "DELETE",
     "COPY",
     "MOVE"
@@ -108,24 +180,91 @@ Configure **Filtro de referente** en AEM Cloud Service mediante Cloud Manager. [
 }
 ```
 
-Esta configuración especifica qué métodos HTTP se filtran, qué referentes se permiten y qué agentes de usuario se excluyen del filtro. Al implementar estas configuraciones, **los envíos de formularios a través de Edge Delivery** se protegerán y restringirán solo a fuentes autorizadas.
+**Desglose de configuración:**
 
-### Acceso al formulario adaptado publicado
+- **`allow.empty`**: rechaza solicitudes sin encabezados de referente
+- **`allow.hosts.regexp`**: permite solicitudes de dominios de Edge Delivery Services
+- **`filter.methods`**: aplica el filtrado a estos métodos HTTP
+- **`exclude.agents.regexp`**: agentes de usuario excluidos del filtrado
 
-Ahora se puede acceder al formulario adaptable a través de **Edge Delivery** con el siguiente formato de dirección URL:
+**Punto de comprobación de validación:**
+
+- Configuración del filtro de referente implementada mediante Cloud Manager
+- Configuración activa en la instancia de publicación de AEM
+- El envío de formularios de prueba funciona desde el dominio de Edge Delivery Services
+- Los dominios no autorizados no pueden enviar formularios
+
+**Documentación de referencia:**
+
+- [Configurar el filtro de referente a través de Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+
+## Fase 3: Acceso Al Formulario Publicado
+
+### Estructura URL de Edge Delivery Services
+
+**Formato de dirección URL estándar:**
 
 ```
-https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>
+https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>
 ```
 
-Por ejemplo, la dirección URL de **Wknd-Form** es:
+**Componentes de URL:**
+
+- **`<branch>`**: nombre de rama Git (normalmente `main`)
+- **`<repo>`**: nombre del repositorio
+- **`<owner>`**: organización de GitHub o nombre de usuario
+- **`<form_name>`**: nombre del formulario (en minúsculas, con guiones)
+
+**URL específicas del entorno:**
 
 ```
+# Production Environment (.aem.live)
 https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
+
+# Preview Environment (.aem.page) 
+https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 ```
 
+### Pasos finales de validación
 
-## Vea también
+**Verificar accesibilidad del formulario:**
 
-{{universal-editor-see-also}}
+1. **Probar la carga del formulario**: Visite la dirección URL del formulario y confirme que se carga correctamente
+2. **Probar el envío de formularios**: complete y envíe el formulario para verificar el procesamiento de datos
+3. **Comprobar diseño interactivo**: probar el formulario en diferentes dispositivos y tamaños de pantalla
+4. **Validar seguridad**: Asegúrese de que CORS y el filtro de referente funcionan correctamente
 
+**Resultados esperados:**
+
+- El formulario se carga sin errores
+- Todos los campos de formulario se representan correctamente
+- Procesos de envío de formularios correctamente
+- Los datos aparecen en el destino configurado (hoja de cálculo, correo electrónico, etc.)
+- No hay errores de consola relacionados con CORS o políticas de seguridad
+
+
+## Próximos pasos
+
+**Acciones inmediatas:**
+
+- Pruebe exhaustivamente el formulario publicado
+- Monitorización de datos de envío de formularios
+- Configure el seguimiento de análisis si es necesario
+
+**Temas avanzados:**
+
+- [Configurar acciones de envío de formularios](/help/edge/docs/forms/universal-editor/submit-action.md)
+- [Aplicar estilo y temática a los formularios](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+- [Añadir protección reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+- [Crear diseños de formulario adaptables](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+
+## Resumen
+
+Ha realizado correctamente lo siguiente:
+
+- Ha publicado su formulario adaptable en Edge Delivery Services
+- Configuración de seguridad configurada para el envío de formularios
+- Configurar el acceso correcto a las URL para los usuarios finales
+- Funcionalidad y accesibilidad comprobadas del formulario
+
+El formulario ya está activo y listo para su uso en producción.

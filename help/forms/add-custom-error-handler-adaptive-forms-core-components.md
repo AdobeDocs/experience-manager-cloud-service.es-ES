@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2332'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '2330'
+ht-degree: 98%
 
 ---
 
@@ -99,6 +99,7 @@ Con las mejoras en las funciones y las actualizaciones posteriores en las versio
 > * Asegúrese de que el encabezado **ContentType** es **application/problem+json**.
 
 Donde:
+
 * `type (required)` especifica el tipo de error. Puede tener uno de los siguientes valores:
    * `SERVER_SIDE_VALIDATION` indica un error debido a la validación del lado del servidor.
    * `FORM_SUBMISSION` indica un error durante el envío del formulario
@@ -185,6 +186,7 @@ Utilizando la acción del [Servicio de invocación del editor de reglas](https:/
 > * De forma predeterminada, se proporciona el controlador de errores para mostrar los mensajes de error en los campos si la respuesta de error está en el esquema estándar. También puede llamar al controlador de error predeterminado desde la función del controlador de error personalizado.
 
 Con el editor de reglas, se puede hacer lo siguiente:
+
 * [Añadir la función del controlador de errores predeterminado](#add-default-errror-handler)
 * [Añadir función del controlador de errores personalizado](#add-custom-errror-handler)
 
@@ -198,7 +200,7 @@ Para comprender cómo utilizar un controlador de errores predeterminado con la a
 1. Seleccione **[!UICONTROL Crear]**.
 1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, **cuando se cambia[Nombre del campo ID de mascota]**. Seleccione “se ha cambiado” de la lista desplegable **Seleccionar estado**.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.
-1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
+1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **Pet ID**, selecciona un **servicio Post** como **GET /pet/{petId}** y selecciona **Pet ID** en la sección **Entrada**.
 1. Seleccione los enlaces de datos en la sección **Salida**. Seleccione **Nombre de mascota** en la sección **Salida**.
 1. Seleccione **[!UICONTROL Controlador de errores personalizado]** en la sección **Controlador de errores**.
 1. Haga clic en **[!UICONTROL Listo]**.
@@ -223,10 +225,11 @@ El controlador de errores personalizado es una función (Biblioteca de cliente) 
 Para comprender cómo crear y utilizar un controlador de errores personalizado con la acción [Invocar servicio del editor de reglas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=es#invoke), vamos a ver un ejemplo de formulario adaptable con dos campos, **ID de mascota** y **Nombre de mascota**. Además, usar un controlador de errores personalizado en el campo **ID de mascota** para comprobar si hay varios errores devueltos por el punto final REST configurado para invocar un servicio externo, por ejemplo, `200 - OK`, `404 - Not Found` y `400 - Bad Request`.
 
 Para añadir y utilizar un controlador de errores personalizado en un formulario adaptable, realice los siguientes pasos:
+
 1. [Crear un controlador de errores personalizado](#create-custom-error-message)
 1. [Utilice el Editor de reglas para configurar el controlador de errores personalizado](#use-custom-error-handler)
 
-#### 1. Crear un controlador de errores personalizado {#create-custom-error-message}
+#### &#x200B;1. Crear un controlador de errores personalizado {#create-custom-error-message}
 
 Para crear una función de error personalizada, realice los siguientes pasos:
 
@@ -256,6 +259,7 @@ Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respu
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
+
    En el código anterior, `return true` invoca automáticamente el controlador de errores predeterminado. Para evitar que se llame al controlador de errores predeterminado de forma predeterminada, incluya `return false`.
 
    >[!NOTE]
@@ -294,7 +298,7 @@ Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respu
 
 Una vez que la canalización se haya ejecutado correctamente, el controlador de errores personalizado estará disponible en el editor de reglas del formulario adaptable. Ahora, vamos a comprender cómo configurar y utilizar un controlador de errores personalizado mediante el servicio Invocar del Editor de reglas de AEM Forms.
 
-#### 2. Utilizar el Editor de reglas para configurar el controlador de errores personalizado {#use-custom-error-handler}
+#### &#x200B;2. Utilizar el Editor de reglas para configurar el controlador de errores personalizado {#use-custom-error-handler}
 
 Antes de implementar el controlador de error personalizado en un formulario adaptable, asegúrese de que el nombre de la biblioteca de cliente en la **[!UICONTROL Categoría de biblioteca del cliente]** corresponda con el nombre especificado en la opción de categorías del archivo `.content.xml`.
 
@@ -306,7 +310,7 @@ Para utilizar un controlador de errores personalizado utilizando la acción **[!
 1. Seleccione **[!UICONTROL Crear]**.
 1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, cuando se ha cambiado el **[Nombre del campo ID de mascota]**, seleccione **se ha cambiado** en la lista desplegable **Seleccionar estado**.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.
-1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
+1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **Pet ID**, selecciona un **servicio Post** como **GET /pet/{petId}** y selecciona **Pet ID** en la sección **Entrada**.
 1. Seleccione los enlaces de datos en la sección **Salida**. Por ejemplo, seleccione **Nombre de mascota** en la sección **Salida**.
 1. Seleccione **[!UICONTROL Controlador de errores personalizado]** en la sección **[!UICONTROL Controlador de errores]**.
 1. Haga clic en **[!UICONTROL Listo]**.

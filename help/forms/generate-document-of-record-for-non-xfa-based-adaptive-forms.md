@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo generar una plantilla para un docu
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
-workflow-type: ht
-source-wordcount: '4225'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '4221'
+ht-degree: 98%
 
 ---
 
@@ -281,7 +281,6 @@ En la tabla siguiente se describen los componentes de formulario adaptable y los
 | Componente de formulario adaptable | Componente XFA correspondiente | Notas |
 |---|---|---|
 | Imagen | Imagen | Los componentes TextDraw e Image, estén enlazados o no, siempre aparecen en el documento de registro de un formulario adaptable basado en XSD, a menos que se excluyan en la configuración del documento de registro. |
-| Texto | Texto |
 
 ### Tablas {#tables}
 
@@ -364,7 +363,7 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
       * **Mostrar solo los valores seleccionados para los componentes Casilla de verificación y Botón de radio**: al configurar esta propiedad solo se muestran los valores seleccionados de la casilla de verificación y el botón de radio en [!UICONTROL Documento de registro].
       * **Separador para varios valores**: puede elegir cualquier separador, como comas o saltos de línea, para mostrar varios valores.
       * **Alineación de opciones**: puede seleccionar la alineación deseada (Horizontal, Vertical o Igual que el formulario adaptable) para establecer la alineación de los campos, como la casilla de verificación o el botón de radio, que se mostrarán en [!UICONTROL Documento de registro]. De forma predeterminada, la alineación vertical está establecida para los campos de [!UICONTROL Documento de registro]. Al configurar las propiedades desde la variable [!UICONTROL Propiedades del campo de formulario] del documento, se sobrescriben las propiedades establecidas en la variable [!UICONTROL Alineación de elementos] para los campos de un formulario adaptable. En caso de que seleccione la opción [!UICONTROL Igual que el formulario adaptable], se utiliza la alineación tal y como está configurada en una instancia de autor del formulario adaptable para los campos de [!UICONTROL Documento de registro].
-      * **Número de opciones de alineación horizontal**: puede definir el número de opciones que se mostrarán en el Documento de registro para la alineación horizontal.
+      * **Número de opciones de alineación horizontal**:You puede establecer el número de opciones que se mostrarán en el documento de registro para la alineación horizontal.
 
       ![Propiedades del campo de formulario](/help/forms/assets/formfieldpropertiesdor.png)
 
@@ -414,9 +413,7 @@ Realice los siguientes pasos desde la instancia de autor del editor de formulari
 1. Haga clic en el icono ![Icono Configurar](/help/forms/assets/configure-icon.svg) para abrir las **[!UICONTROL Propiedades]** del contenedor del formulario adaptable.
 1. Abra la pestaña **[!UICONTROL Plantilla del documento de registro]** y seleccione una de las siguientes opciones:
    * **[!UICONTROL Ninguna]**: cuando se selecciona esta opción, no se crea ninguna plantilla de [!UICONTROL Documento de registro] para el formulario adaptable.
-
-   * **[!UICONTROL Plantilla de formulario asociado como plantilla de documento de registro]**: cuando se selecciona esta opción, el formulario XFA se utiliza como plantilla para el documento de registro.
-
+   * **[!UICONTROL Asociar plantilla de formulario como plantilla de documento de registro]**:When Si se selecciona esta opción, el formulario XFA se utilizará como plantilla para el documento de registro.
    * **[!UICONTROL Generar documento de registro]**: cuando se selecciona esta opción, la plantilla del [!UICONTROL documento de registro] se genera automáticamente para el formulario adaptable.
 
 1. Seleccione ![Guardar](/help/forms/assets/check-button.png) para guardar las propiedades.
@@ -474,7 +471,7 @@ Un archivo XCI ayuda a establecer varias propiedades de un documento. Forms as a
 | config/present/pdf/scriptModel | Controla si la información específica de XFA se incluye en el documento PDF de salida. |
 | config/present/common/data/adjustData | Controla si la aplicación XFA ajusta los datos después de la combinación. |
 | config/present/pdf/renderPolicy | Controla si la generación del contenido de la página se realiza en el servidor o se difiere al cliente. |
-| config/present/common/locale | Especifica la ubicación predeterminada utilizada en el documento de salida. |
+| config/present/common/locale | Especifica la configuración regional predeterminada utilizada en el documento de salida. |
 | config/present/destination | Cuando está contenido en un elemento presente, especifica el formato de salida. Cuando está contenido en un elemento openAction, especifica la acción que se debe realizar al abrir el documento en un cliente interactivo. |
 | config/present/output/type | Especifica el tipo de compresión que se aplicará a un archivo o el tipo de salida que se producirá. |
 | config/present/common/temp/uri | Especifica el URI del formulario. |

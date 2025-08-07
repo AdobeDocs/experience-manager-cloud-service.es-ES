@@ -4,8 +4,8 @@ description: Aprenda a crear y suministrar formularios de alto rendimiento en Ad
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 100%
 
@@ -41,11 +41,11 @@ Al final, podrá elegir el método de creación adecuado, comprender las opcione
 
 El editor universal es una herramienta visual de creación de tipo arrastrar y soltar para expertos en marketing y diseñadores que combina velocidad con potencia de nivel empresarial:
 
-* Edición de WYSIWYG en tiempo real y previsualizaciones de dispositivos.
-* Reglas avanzadas e IU de validación: no se requiere código.
-* Integración directa con recursos de AEM, flujos de trabajo y el modelo de datos de formulario (FDM).
-* Entrega perfecta a los desarrolladores de componentes personalizados en JS/CSS sin modificaciones.
-* Objetivos de envío flexibles: empiece con el **servicio de envío de formularios (FSS)** o cambie a las **acciones de envío de AEM Publish** a medida que sus necesidades aumenten.
+- Edición de WYSIWYG en tiempo real y previsualizaciones de dispositivos.
+- Reglas avanzadas e IU de validación: no se requiere código.
+- Integración directa con recursos de AEM, flujos de trabajo y el modelo de datos de formulario (FDM).
+- Entrega perfecta a los desarrolladores de componentes personalizados en JS/CSS sin modificaciones.
+- Objetivos de envío flexibles: empiece con el **servicio de envío de formularios (FSS)** o cambie a las **acciones de envío de AEM Publish** a medida que sus necesidades aumenten.
 
 > **Recomendación**: inicie cada nuevo proyecto de formulario con el editor universal a menos que su equipo esté 100 % centrado en los documentos y el formulario sea muy básico.
 
@@ -54,10 +54,10 @@ El editor universal es una herramienta visual de creación de tipo arrastrar y s
 
 La creación basada en documentos es ideal para crear formularios sencillos y poco complejos con herramientas conocidas, como Microsoft Word, Google Docs o Google Sheets. Este método es ideal para los equipos de contenido que necesitan una forma rápida y directa de crear formularios.
 
-* Defina campos de formulario dentro de una tabla (Docs) o como filas (Sheets).
-* Admite la validación de campos básica y Google reCAPTCHA para la protección contra spam.
-* Los envíos de formularios se administran exclusivamente a través del servicio de envío de formularios.
-* Publicación instantánea: cualquier cambio realizado en el documento de origen se refleja inmediatamente en el sitio sin requerir una canalización de implementación.
+- Defina campos de formulario dentro de una tabla (Docs) o como filas (Sheets).
+- Admite la validación de campos básica y Google reCAPTCHA para la protección contra spam.
+- Los envíos de formularios se administran exclusivamente a través del servicio de envío de formularios.
+- Publicación instantánea: cualquier cambio realizado en el documento de origen se refleja inmediatamente en el sitio sin requerir una canalización de implementación.
 
 
 ### Incorporación de formularios en la creación de documentos (DA)

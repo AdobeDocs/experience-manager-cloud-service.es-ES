@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 hide: true
 hidefromToC: true
-source-git-commit: 565336d96a718a46f23d0acfa6155a6fd78ad87d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '928'
+ht-degree: 100%
 
 ---
 
@@ -23,20 +23,20 @@ El envío de formularios es el paso final crucial del recorrido del usuario: es 
 
 Al final de este documento, aprenderá a:
 
-* Configurar diferentes tipos de acciones de envío de formularios
-* Configurar envíos de puntos finales REST para la integración con sistemas externos
-* Configurar envíos de correos electrónicos para respuestas de formulario
-* Implementar acciones de envío personalizadas para necesidades comerciales específicas
-* Gestionar la validación de formularios y los escenarios de error durante el envío
+- Configurar diferentes tipos de acciones de envío de formularios
+- Configurar envíos de puntos finales REST para la integración con sistemas externos
+- Configurar envíos de correos electrónicos para respuestas de formulario
+- Implementar acciones de envío personalizadas para necesidades comerciales específicas
+- Gestionar la validación de formularios y los escenarios de error durante el envío
 
 ### Público destinatario
 
 Esta guía está diseñada para:
 
-* **Desarrolladores de formularios** que implementan la lógica de envío
-* **Integradores de sistemas** que conectan formularios con sistemas back-end
-* **Analistas de negocios** que definen los flujos de trabajo de formularios
-* **Arquitectos técnicos** que diseñan procesos de envío de formularios
+- **Desarrolladores de formularios** que implementan la lógica de envío
+- **Integradores de sistemas** que conectan formularios con sistemas back-end
+- **Analistas de negocios** que definen los flujos de trabajo de formularios
+- **Arquitectos técnicos** que diseñan procesos de envío de formularios
 
 ### Acciones de envío disponibles
 
@@ -49,16 +49,16 @@ El editor universal proporciona dos tipos de acciones de envío principales:
 
 Antes de configurar las acciones de envío, asegúrese de que:
 
-* Tiene acceso al editor universal
-* Tiene los permisos adecuados para la configuración del formulario
-* Conoce el punto final de envío o la configuración de correo electrónico de destino
+- Tiene acceso al editor universal
+- Tiene los permisos adecuados para la configuración del formulario
+- Conoce el punto final de envío o la configuración de correo electrónico de destino
 
 Una acción de envío especifica el destino de los datos recopilados mediante un formulario adaptable. El proceso de envío comienza cuando el usuario hace clic en el botón **[!UICONTROL Enviar]** del formulario. AEM Forms ofrece dos tipos de acciones de envío que se describen a continuación, y le permite crear y utilizar acciones de envío personalizadas para satisfacer sus necesidades específicas. Las acciones de envío listas para usar son las siguientes:
 
 <!--To define a Submit Action for an Adaptive Form, you use the Properties dialog of the **Adaptive Form block** in the **Editor**-->
 
-* [Enviar al punto final REST](#rest-endpoint-submission-ue)
-* [Enviar correo electrónico](#email-submission-ue)
+- [Enviar al punto final REST](#rest-endpoint-submission-ue)
+- [Enviar correo electrónico](#email-submission-ue)
 
 
 ### Enviar al punto final REST {#rest-endpoint-submission-ue}
@@ -66,9 +66,9 @@ Una acción de envío especifica el destino de los datos recopilados mediante un
 La acción Enviar al punto final REST se utiliza para enviar los datos de formulario enviados a un punto final REST especificado. El punto final puede pertenecer a un servidor interno donde se aloja el formulario o a un servidor externo mediante una ruta relativa o una ruta absoluta. Para enviar datos al servidor de AEM que aloja el formulario, utilice una ruta relativa correspondiente a la ruta raíz del servidor de AEM. Por ejemplo, `/content/forms/af/SampleForm.html`. Para enviar datos a cualquier otro servidor, utilice la ruta absoluta.
 
 <!--Configuring the Submit Action to REST Endpoint for Adaptive Forms offers several benefits such as:  
-* It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
-* Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
-* Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
+- It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
+- Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
+- Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
 -->
 
 
@@ -86,8 +86,8 @@ Para configurar un punto final REST:
 
 >[!NOTE]
 >
-> * Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, `/content/restEndPoint`. Para esas peticiones POST se utiliza la información de autenticación de la solicitud de envío.
-> * Para enviar datos a un servidor externo, proporcione una URL. El formato de la URL es el siguiente `https://host:port/path_to_rest_end_point`. Asegúrese de configurar la ruta para controlar la petición POST de forma anónima.
+> - Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, `/content/restEndPoint`. Para esas peticiones POST se utiliza la información de autenticación de la solicitud de envío.
+> - Para enviar datos a un servidor externo, proporcione una URL. El formato de la URL es el siguiente `https://host:port/path_to_rest_end_point`. Asegúrese de configurar la ruta para controlar la petición POST de forma anónima.
 
 ### Enviar correo electrónico {#email-submission-ue}
 
@@ -176,11 +176,8 @@ La opción En envío le ayuda a configurar un mensaje de acción de envío al en
 1. Seleccione su **[!UICONTROL bloque de formulario adaptable]**.
 1. Haga clic en el icono de propiedades ![propiedades](/help/forms/assets/Smock_Properties_18_N.svg).
 1. Al hacer clic, verá la siguiente opción:
-   * **[!UICONTROL En envío]**: le ayuda a personalizar un mensaje que se mostrará cuando se envíe un formulario. De forma predeterminada, se muestra un mensaje personalizado &quot;Gracias por enviar el formulario&quot; al usuario cuando se envía un formulario correctamente.
+   - **[!UICONTROL En envío]**: le ayuda a personalizar un mensaje que se mostrará cuando se envíe un formulario. De forma predeterminada, se muestra un mensaje personalizado &quot;Gracias por enviar el formulario&quot; al usuario cuando se envía un formulario correctamente.
 También puede personalizar el mensaje de agradecimiento al enviar el formulario, seleccionando la opción para **[!UICONTROL Mostrar mensaje]**, y añadir o editar el mensaje en el **Editor** de texto enriquecido.
 
 
-## Véase también
-
-{{universal-editor-see-also}}
 
