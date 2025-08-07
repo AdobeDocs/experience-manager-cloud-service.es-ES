@@ -58,16 +58,16 @@ El siguiente vídeo proporciona una guía paso a paso sobre los requisitos previ
 Antes de configurar el conector de AEP en AEM Forms, asegúrese de completar lo siguiente en Adobe Experience Platform:
 
 1. Configuración del esquema
-   * [Crear un esquema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [Habilitar esquema para la generación de perfiles](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
-   * [Definir campo de identidad](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Crear un esquema XDM](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [Habilitar esquema para la generación de perfiles](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Definir campo de identidad](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. Configuración de datos
-   * [Crear un conjunto de datos](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [Configure la conexión de flujo continuo](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (necesita la dirección URL del extremo de flujo continuo más tarde, así que anótela ahora).
+   * [Crear un conjunto de datos](https://experienceleague.adobe.com/es/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [Configure la conexión de flujo continuo](https://experienceleague.adobe.com/es/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (necesita la dirección URL del extremo de flujo continuo más tarde, así que anótela ahora).
 
 3. Autenticación
-   * [Generar credenciales de API](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (ID de cliente y secreto de cliente) desde Adobe Developer Console
+   * [Generar credenciales de API](https://experienceleague.adobe.com/es/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (ID de cliente y secreto de cliente) desde Adobe Developer Console
 
 
 ## Pasos de implementación
@@ -249,7 +249,7 @@ R: Este conector funciona tanto con los componentes principales de Forms adaptab
 R: Actualmente, cada formulario solo puede enviarse a un conjunto de datos.
 
 **Q: ¿Hay un límite en la cantidad de envíos de formularios que se pueden procesar?**
-R: Los envíos de formularios están sujetos a sus [límites de cuotas y tasa](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota) de ingesta de transmisión de AEP.
+R: Los envíos de formularios están sujetos a sus [límites de cuotas y tasa](https://experienceleague.adobe.com/es/docs/experience-platform/data-lifecycle/api/quota) de ingesta de transmisión de AEP.
 
 <!-- >
 **Q: Can form attachments be sent to AEP?**
@@ -287,10 +287,10 @@ Para empezar con esta integración:
 ## Recursos relacionados {#related-resources}
 
 * [Documentación de AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=es)
-* [Documentación de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
-* [Información general del sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
-* [Ingesta de transmisión en Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
-* [Información general del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* [Documentación de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=es)
+* [Información general del sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=es)
+* [Ingesta de transmisión en Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=es)
+* [Información general del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=es)
 * [Funciones de acceso anticipado de AEM Forms](/help/forms/early-access-ea-features.md)
 * [Creación de Forms adaptable con componentes principales](/help/forms/creating-adaptive-form-core-components.md)
 * [Uso de modelos de datos de formulario en AEM Forms](/help/forms/using-form-data-model.md)

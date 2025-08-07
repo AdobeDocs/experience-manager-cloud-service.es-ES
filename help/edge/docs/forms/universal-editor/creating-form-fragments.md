@@ -15,7 +15,7 @@ ht-degree: 97%
 
 <!--<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>-->
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>-->
 
 Los formularios suelen incluir secciones comunes como la información de contacto, detalles de identificación o acuerdos de consentimiento. Los desarrolladores de formularios crean estas secciones cada vez que generan un nuevo formulario, lo que resulta repetitivo y lleva tiempo.
 Para eliminar esta duplicación de esfuerzos, el editor universal proporciona una forma de crear segmentos de formulario reutilizables, como, por ejemplo, paneles o grupos de campos, una sola vez y reutilizarlos en varios formularios. Estos segmentos reutilizables e independientes se denominan fragmentos de formulario. Por ejemplo, el mismo fragmento de contacto de emergencia se puede utilizar en diferentes secciones de un formulario, como, por ejemplo, para los detalles de contacto del empleado y el supervisor.
