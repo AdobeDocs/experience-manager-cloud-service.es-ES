@@ -3,9 +3,9 @@ title: Búsqueda de recursos en Content Hub
 description: Obtenga información sobre cómo buscar recursos en  [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '642'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Por ejemplo, busque todas las imágenes de **[!UICONTROL JPEG]** con la palabra 
 
 ## Reduzca los resultados de búsqueda mediante filtros {#narrow-down-search-results}
 
-Utilice el panel Filtros para buscar recursos basados en metadatos. Puede filtrar los resultados de búsqueda según varios predicados de búsqueda. Puede seleccionar todos los predicados adecuados para minimizar o reducir los resultados de búsqueda. Cuando se seleccionan varias opciones dentro de un filtro, Content Hub muestra los recursos que coinciden con cualquiera de las opciones seleccionadas dentro de un filtro. Sin embargo, cuando selecciona varias opciones en distintos filtros, Content Hub solo muestra los recursos que coinciden con todas las opciones seleccionadas en todos los filtros para reducir los resultados de búsqueda.
+Utilice el panel Filtros para buscar recursos basados en metadatos. Puede filtrar los resultados de búsqueda según varios predicados de búsqueda. Puede seleccionar todos los predicados adecuados para minimizar o reducir los resultados de búsqueda. Puede elegir más de 10 predicados al filtrar los resultados de búsqueda. Cuando se seleccionan varias opciones dentro de un filtro, Content Hub muestra los recursos que coinciden con cualquiera de las opciones seleccionadas dentro de un filtro. Sin embargo, cuando selecciona varias opciones en distintos filtros, Content Hub solo muestra los recursos que coinciden con todas las opciones seleccionadas en todos los filtros para reducir los resultados de búsqueda.
 
 Los filtros predeterminados incluyen formato de archivo, aprobado por, fecha de aprobación, recursos caducados y no caducados y fecha de caducidad. Los administradores también pueden configurar los filtros que se muestran en la lista de filtros. Para obtener más información, consulte [Configuración de la interfaz de usuario de Content Hub](configure-content-hub-ui-options.md#configure-filters-content-hub).
 

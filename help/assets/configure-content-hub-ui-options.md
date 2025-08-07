@@ -2,10 +2,10 @@
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+source-git-commit: e8932e6490008368e0e22ebec3331553b7b54c59
 workflow-type: tm+mt
-source-wordcount: '2089'
-ht-degree: 10%
+source-wordcount: '2189'
+ht-degree: 9%
 
 ---
 
@@ -177,11 +177,20 @@ Como administrador, personalice el portal [!DNL Content Hub] para que cumpla con
 ![restablecer predeterminado](/help/assets/assets/reset-default-content-hub.png)
 En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Promoción de marca]**, use las secciones **[!UICONTROL Banner]**, **[!UICONTROL Colores]** y **[!UICONTROL Imagen de banner]** para ejecutar las siguientes personalizaciones:
 
+1. [Cambiar la imagen del logotipo de la sección [!UICONTROL Imagen del logotipo]](#Change-the-logo-image)
 1. [Cambiar la imagen del titular de la sección [!UICONTROL Imagen del titular]](#Change-the-banner-image)
 1. [Actualice el título y el texto del cuerpo del titular y cambie el color del texto de la sección [!UICONTROL Titular]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [Cambie el color principal y secundario de la sección [!UICONTROL Colores] para aplicar un esquema de colores que se ajuste al tema de su marca](#Change-the-primary-and-secondary-color)
 
 Seleccione la opción **[!UICONTROL Restablecer valores predeterminados]** para revertir los cambios y restaurar el tema predeterminado.
+
+#### Cambio de la imagen del logotipo{#change-the-logo-image}
+
+En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Promoción de marca]**, ejecute los siguientes pasos para cambiar la imagen del logotipo de su implementación de [!DNL Content Hub]:
+
+1. Haga clic en ![seleccionar imagen](/help/assets/assets/Browse.svg) **[!UICONTROL Seleccionar imagen]** para seleccionar una imagen de logotipo mediante el cuadro de diálogo del selector de recursos. El selector de recursos solo muestra las imágenes aprobadas.
+1. Seleccione la imagen, haga clic en **[!UICONTROL Seleccionar]** y, a continuación, haga clic en **[!UICONTROL Guardar]** para mostrarla como la imagen del logotipo de su implementación de [!DNL Content Hub].
+   ![imagen de titular](/help/assets/assets/logo-image-content-hub1.png)
 
 #### Cambiar la imagen del titular{#Change-the-banner-image}
 
@@ -190,6 +199,12 @@ En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!U
 1. Haga clic en ![seleccionar imagen](/help/assets/assets/Browse.svg) **[!UICONTROL Seleccionar de la galería]** para seleccionar una imagen de titular mediante el cuadro de diálogo del selector de recursos. El selector de recursos solo muestra las imágenes aprobadas.
 1. Seleccione la imagen, haga clic en **[!UICONTROL Seleccionar]** y, a continuación, haga clic en **[!UICONTROL Guardar]** para mostrarla como la imagen de titular de su implementación de [!DNL Content Hub].
    ![imagen de titular](/help/assets/assets/banner-image-content-hub1.png)
+
+>[!NOTE]
+>
+> * El tamaño recomendado para **Imagen de titular** es `height = 200 to 450px` y `width = 1920 to 2560px`.
+> * El tamaño recomendado para **Imagen del logotipo** es `height = 80 to 120px` y `width = 120 to 200px`.
+> * Los **tipos MIME admitidos** para las imágenes de titular y logotipo son `'JPG', value: 'image/jpeg'`, `'PNG', value: 'image/png'`, `'WEBP', value: 'image/webp'`, `'TIFF', value: 'image/tiff'`, `'SVG', value: 'image/svg+xml'`, `'GIF', value: 'image/gif'`.
 
 #### Añada un título y texto independiente al titular y cambie el color del texto{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
@@ -233,7 +248,7 @@ Si la visibilidad de los recursos caducados está habilitada, Content Hub tambi�
 
 ### Representaciones {#renditions-content-hub}
 
-Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para ello, ejecute los siguientes pasos:
 

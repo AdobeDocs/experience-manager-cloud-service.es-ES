@@ -3,10 +3,10 @@ title: Novedades de Content Hub
 description: Obtenga más información sobre algunas de las funciones de Content Hub recién lanzadas
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: dfbe7a639f69c2e5a8a6fc864b6071e1aa1fb7ba
+source-git-commit: 9f185b48405cd6924ea1483ca79b2acbf36b1be9
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 41%
+source-wordcount: '628'
+ht-degree: 31%
 
 ---
 
@@ -24,7 +24,23 @@ El siguiente vídeo muestra las funciones clave de Content Hub:
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de la funcionalidad Content Hub (2025.6.0) es el 26 de junio de 2025 (igual que la de la versión de AEM as a Cloud Service). La siguiente versión con funcionalidades (2025.7.0) está planificada para el viernes, 31 de julio de 2025.
+La fecha de lanzamiento de la versión de la funcionalidad Content Hub (2025.7.0) es el 7 de agosto de 2025 (igual que la de la versión de AEM as a Cloud Service). La próxima versión con funcionalidades (2025.8.0) está planificada para el viernes, 28 de agosto de 2025.
+
+## Funciones de la versión de julio {#july-release-features}
+
+**Flexibilidad mejorada de personalización de marca en Content Hub**
+
+Basándose en las funciones de personalización existentes, Content Hub ahora permite a los administradores adaptar aún más su implementación añadiendo imágenes de logotipo personalizadas. También se ha añadido compatibilidad con el formato de archivo TIFF para imágenes de banner y logotipo, lo que permite una mayor flexibilidad de diseño.
+
+**Uso compartido más inteligente con vínculos con título**
+
+Ahora puede agregar un título al generar un vínculo compartido, ya sea desde la vista de detalles del recurso o después de seleccionar uno o varios recursos. Esto ayuda a los destinatarios a identificar fácilmente el propósito de cada vínculo, especialmente cuando reciben varios recursos compartidos.
+
+![vínculo privado y público](/help/assets/assets/shared-link-for-assets.png)
+
+**Se ha mejorado la navegación por filtros**
+
+Content Hub ahora incluye la opción **Mostrar todo** dentro de los filtros, lo que permite a los usuarios ver todas las facetas disponibles junto con los recuentos de recursos de la limitación actual de ver solo diez facetas. Las funciones mejoradas de búsqueda y ordenación dentro de cada filtro facilitan la detección y administración de recursos de forma más eficaz.
 
 ## Funciones de la versión de junio {#june-release-features}
 
@@ -34,7 +50,7 @@ Content Hub ahora permite controlar el acceso a las colecciones durante la creac
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
+[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
 ## Funciones de la versión de mayo {#may-release-features}
 
@@ -64,7 +80,7 @@ Algunas de las ventajas clave del control de acceso basado en atributos son:
 
 * Reduce el número de duplicados: mejora la integridad de los recursos. Los duplicados son necesarios en los permisos basados en carpetas cuando los mismos recursos se comparten con diferentes grupos.
 
-[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
+[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
 
 ### Personalización de IU {#ui-branding}
 
@@ -72,7 +88,7 @@ Content Hub ahora permite a los administradores personalizar la interfaz de usua
 
 ![Personalización de marca de la interfaz de usuario](/help/assets/assets/content-hub-ui-branding.png)
 
-[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
 
 ### Uso compartido de vínculos públicos {#public-link-sharing}
 
@@ -80,13 +96,13 @@ Content Hub ahora admite la generación de vínculos que se pueden compartir par
 
 ![Personalización de marca de la interfaz de usuario](/help/assets/assets/public-and-private-link.png)
 
-[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
 ### Descargar varios recursos como ZIP {#download-multiple-assets-as-zip}
 
 Content Hub ahora también le permite descargar los recursos seleccionados y sus representaciones en un archivo ZIP, y no como archivos independientes, lo que simplifica la administración de archivos.
 
-[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ### Representaciones de Dynamic Media en Content Hub {#dynamic-media-renditions}
 
@@ -94,4 +110,4 @@ Acceda a todas las representaciones de ajustes preestablecidos y recortes inteli
 
 ![Representaciones de medios dinámicos](/help/assets/assets/dm-renditions-content-hub.png)
 
-[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
