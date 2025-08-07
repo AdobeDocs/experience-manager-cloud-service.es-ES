@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 0a0a50a13122b328782e5395b759121acc76cfb6
 workflow-type: tm+mt
-source-wordcount: '6563'
+source-wordcount: '6566'
 ht-degree: 99%
 
 ---
@@ -841,6 +841,7 @@ ht-degree: 99%
                + [Ejemplos de un Editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-usecases.md)
                + [Usar funciones asincrónicas en un formulario adaptable](/help/forms/using-async-funct-in-rule-editor.md)
                + [Invocar mejoras de servicio en el editor de reglas visuales para formularios basados en componentes principales](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [Mejoras en el editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md)
             + Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales{#create-and-use-custom-function-core-component}
                + [Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales](/help/forms/create-and-use-custom-functions.md)
                + [Crear y utilizar una función personalizada para un Formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
