@@ -150,13 +150,14 @@ Configure el uso compartido de recursos de origen cruzado en el origen del formu
 
 2. **Ejemplo de configuración**:
 
-       # Configuración del sitio que aloja el formulario
+       &#x200B;# Configuración del sitio que aloja el formulario
        encabezados:
        - ruta: /forms/**
        personalizado:
        Access-Control-Allow-Origin: https://host-domain.com
        Métodos-Permiso-Control-Acceso: GET, OPTIONS
    
+
 ### Pasos de incrustación
 
 1. **Crear y publicar formulario**
