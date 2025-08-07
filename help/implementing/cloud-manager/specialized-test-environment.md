@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta privada" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 2d1b7385fec60a77f8c76f260fc87f9e5af428a3
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 8%
+source-wordcount: '519'
+ht-degree: 10%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->&#x200B;>La función descrita en este artículo solo está disponible a través del programa beta privado. Para registrarse en la versión beta privada, consulte [Entorno de prueba especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>La función descrita en este artículo solo está disponible a través del programa beta privado. Para registrarse en la versión beta privada, consulte [Entorno de prueba especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 El Entorno de prueba especializado, o DevXL, es un nuevo tipo de entorno de Cloud Manager que puede crear. Está diseñado para admitir casos de uso avanzados, como las Pruebas de aceptación de usuarios (UAT) y la validación de rendimiento. A diferencia de los entornos tradicionales de desarrollo, desarrollo rápido o ensayo, los entornos DevXL funcionan fuera de la canalización de implementación de producción. Por lo tanto, ofrecen una mayor flexibilidad a la vez que mantienen un aislamiento estricto para evitar interferencias con los flujos de trabajo de producción.
 
@@ -31,7 +31,7 @@ DevXL está diseñado para reflejar el tamaño, la escalabilidad y las configura
 | Tamaño del entorno | Coincide con el entorno de ensayo. |
 | Aislamiento | Totalmente aislado de otros entornos. |
 | Canalizaciones de código | Igual que el entorno de desarrollo (validación, compilación, implementación). |
-| Copia de contenido | Permitido desde el entorno de producción o de ensayo. |
+| Copiar contenido | Permitido desde producción, fase o un entorno de prueba especializado. |
 | Restauración de contenido | Igual que el entorno de desarrollo. |
 | Registros de acceso | Igual que el entorno de desarrollo. |
 | Developer Console | Igual que el entorno de desarrollo. |
@@ -52,9 +52,8 @@ Para agregar o editar un entorno, un usuario debe ser miembro del rol **Propieta
 
 1. Realice una de las siguientes acciones:
 
-   Si la opción **Agregar entorno** está atenuada (deshabilitada), puede deberse a la falta de permisos o a que depende de los recursos con licencia.
-
    * En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, en la tarjeta **Entornos**, haga clic en **Agregar entorno**.
+Si la opción **Agregar entorno** está atenuada (deshabilitada), puede deberse a la falta de permisos o a que depende de los recursos con licencia.
 
    ![Tarjeta Entornos](assets/no-environments.png)
 
@@ -69,7 +68,7 @@ Para agregar o editar un entorno, un usuario debe ser miembro del rol **Propieta
    * (Opcional) Proporcione una **Descripción** para el entorno.
    * Seleccione una **región principal** en la lista desplegable. Una vez creada, la región principal del entorno DevXL (por ejemplo, *Estados Unidos (oeste de EE. UU.)*) está bloqueada y no se puede cambiar.
 
-   ![Cuadro de diálogo Agregar entorno con el botón de opción Entorno de prueba especializado seleccionado](assets/specialized-test-environment.png)
+   ![Cuadro de diálogo Añadir entorno con el botón de opción Entorno de prueba especializado seleccionado](assets/specialized-test-environment.png)
 
 1. Haga clic en **Guardar**.
 

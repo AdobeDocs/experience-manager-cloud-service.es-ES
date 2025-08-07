@@ -3,27 +3,28 @@ title: Adición de repositorios externos en Cloud Manager
 description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta privada" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: b4bbf73cd49f6d7beb47d2edce0910d957879e39
+source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
 workflow-type: tm+mt
-source-wordcount: '2322'
+source-wordcount: '2321'
 ht-degree: 27%
 
 ---
 
 # Añadir repositorios privados en Cloud Manager {#external-repositories}
 
+<!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
+
 Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
 
-Los clientes ahora también pueden incorporar sus repositorios Git de Azure DevOps en Cloud Manager, con compatibilidad tanto con los repositorios modernos de Azure DevOps como con los repositorios VSTS heredados (Visual Studio Team Services).
+Los clientes ahora también pueden incorporar sus repositorios de Git de Azure DevOps (Beta) en Cloud Manager, con compatibilidad tanto con repositorios modernos de Azure DevOps como con repositorios VSTS heredados (Visual Studio Team Services).
 
 * Para los usuarios de Edge Delivery Services, el repositorio incorporado se puede utilizar para sincronizar e implementar el código del sitio.
 * Para los usuarios de AEM as a Cloud Service y Adobe Managed Services (AMS), el repositorio se puede vincular a canalizaciones de pila completa y de front-end.
 
 >[!NOTE]
 >
->Las funciones descritas en este artículo solo están disponibles a través del programa beta privado. Para obtener más información y registrarse en la versión beta privada, consulte [Traer su propio Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>La compatibilidad añadida para las operaciones de desarrollo de Azure que se describe en este artículo solo está disponible a través del programa beta privado. Para obtener más información y registrarse en la versión beta, consulte [Traer su propio Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts).
 
 
 ## Configurar un repositorio externo
@@ -120,7 +121,7 @@ Después de la validación, el repositorio externo estará listo para usarse y v
 
 Consulte también [Administrar tokens de acceso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
->[!TAB DevOps de Azure]
+>[!TAB DevOps de Azure (Beta)]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
@@ -238,7 +239,7 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
 | --- |
 | Estos eventos garantizan que Cloud Manager pueda validar las solicitudes de extracción, responder a inserciones de código e interactuar con comentarios para la coordinación de canalizaciones.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Solicitud de extracción: creada<li>Solicitud de extracción: actualizada<li>Solicitudes de extracción: combinadas<li>Solicitud de extracción: comentario<li>Repositorio: push</li></li></li></ul></ul></ul> |
 
->[!TAB DevOps de Azure]
+>[!TAB DevOps de Azure (Beta)]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
