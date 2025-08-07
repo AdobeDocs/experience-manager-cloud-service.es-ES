@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 25%
+source-wordcount: '2837'
+ht-degree: 21%
 
 ---
 
@@ -116,6 +116,8 @@ Interactive Communications en Cloud es una potente solución para crear, adminis
 
 * **Flexibilidad de formato**: Salida a los formatos PDF, HTML, PCL, PostScript® y ZPL.
 
+* **Editor de reglas**: cree acciones dinámicas impulsadas por datos directamente en sus documentos mediante una interfaz intuitiva que apunte y haga clic. Defina fácilmente la lógica condicional, automatice los flujos de trabajo y personalice el contenido sin escribir código.
+
 #### Casos de uso:
 
 * Instituciones financieras que generan extractos de cuentas
@@ -154,6 +156,38 @@ AEM Forms HTML5 Forms le permite procesar plantillas de formulario XFA (arquitec
 * **Borrador al guardar**: guarde un formulario HTML5 como borrador y vuelva a rellenarlo en una fase posterior.
 
 ¿Listo para empezar? La [Introducción a los formularios HTML5](/help/forms/introductionhtml5.md) proporciona una descripción general completa y una guía de introducción para esta innovación.
+
+### CLI de andamiaje de AEM Forms para componentes personalizados
+
+Acelere el desarrollo de AEM Forms Edge Delivery Services con la herramienta CLI de AEM Forms. Esta interfaz de línea de comandos le permite generar instantáneamente el código y el cableado necesarios para iniciar el desarrollo de componentes personalizados, sin plantillas ni problemas.
+
+>[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component-generator-aem-forms-cli-aem-forms-custom component-aem-forms-development tool)
+
+**Funcionalidades clave:**
+
+* **Andamiaje rápido**: genera instantáneamente la estructura y el código para los nuevos componentes personalizados, lo que reduce el tiempo de configuración manual.
+* **Prácticas recomendadas integradas**: La herramienta sigue los patrones recomendados para AEM Forms Edge Delivery Services, lo que garantiza coherencia y mantenimiento.
+* **Productividad del desarrollador**: Céntrese en la generación de lógica empresarial e interfaz de usuario, mientras que la CLI gestiona tareas de configuración repetitivas.
+* **Integración perfecta**: los componentes generados están listos para usarse e integrarse con sus proyectos de AEM Forms existentes.
+
+¿Listo para empezar? La herramienta CLI de AEM Forms está disponible en el programa de acceso anticipado para implementaciones de Forms as a Cloud Service. Para solicitar acceso, envía por correo electrónico tu ID de organización y los detalles del programa a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde tu dirección oficial.
+
+### Herramienta de integración de API para datos de formularios dinámicos
+
+La herramienta de integración de API permite a los autores de formularios crear formularios dinámicos e inteligentes que recuperan y rellenan automáticamente datos de API de REST externas en función de las interacciones del usuario. Esta capacidad de integración sin código transforma los formularios estáticos en interfaces de recopilación de datos interactivas.
+
+Las funciones clave incluyen:
+
+* **Interfaz de configuración visual**: cree integraciones de API a través de una interfaz intuitiva de apuntar y hacer clic sin codificación personalizada
+* **Población de datos en tiempo real**: Rellene automáticamente los campos de formulario en función de la ubicación del usuario (por ejemplo, rellenar automáticamente la ciudad y el estado cuando el usuario introduzca el código postal).
+* **Compatibilidad con API flexible**: conéctese a cualquier API de REST accesible públicamente con compatibilidad con métodos GET/POST, autenticación y respuestas JSON/XML
+* **Déclencheur basados en reglas**: defina cuándo se activan las llamadas a la API mediante el motor de reglas integrado (por ejemplo, cambios de campo, eventos de formulario)
+* **Asignación inteligente de datos**: configure cómo los datos de respuesta de API se asignan a campos de formulario específicos mediante las capacidades de análisis JSON de Adobe
+* **Experiencia del usuario mejorada**: Reduzca la entrada manual de datos, mejore la precisión de los datos y cree interacciones de formulario más atractivas
+
+Esta herramienta es especialmente útil para situaciones como la finalización automática de direcciones, la población desplegable dinámica, la validación en tiempo real con bases de datos externas y la creación de experiencias de formulario según el contexto que se adaptan en función de los datos introducidos por el usuario.
+
+
 
 ## Innovaciones adicionales de acceso anticipado
 

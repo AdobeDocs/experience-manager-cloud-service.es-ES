@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2117'
 ht-degree: 2%
 
 ---
@@ -182,8 +182,8 @@ El archivo `fstab.yaml` conecta el repositorio de GitHub con el entorno de creac
 
 **Validación:** Confirme la conexión del repositorio de GitHub a AEM.
 
->[!NOTE]
->
+    >[!NOTE]
+    >
 >¿Tiene problemas de compilación? Ver [solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
 
 +++
@@ -399,11 +399,11 @@ Vamos a recorrer cada paso:
 
    ```bash
    # Form block rule engine files
-    blocks/form/rules/formula/*
-    blocks/form/rules/model/*
-    blocks/form/rules/functions.js
-    scripts/editor-support.js
-    scripts/editor-support-rte.js
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
    ```
 
 2. **Actualizar .eslintrc.js**
@@ -648,7 +648,7 @@ Un entorno de desarrollo local le permite realizar cambios y verlos instantánea
    La CLI de AEM simplifica las tareas de desarrollo local:
 
    ```bash
-   npm install -g @adobe/aem-cli
+       npm install -g @adobe/aem-cli
    ```
 
 2. **Clonar el repositorio**
@@ -695,7 +695,7 @@ Un entorno de desarrollo local le permite realizar cambios y verlos instantánea
 
 ### Problemas comunes y soluciones
 
-+++Problemas de compilación de GitHub
+Problemas de compilación de +++GitHub
 
 **Problema:** errores de compilación o errores de vinculación
 

@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1606'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ Elija una de las plataformas compatibles:
 
 >[!TIP]
 >
->**¿Es nuevo en Edge Delivery Services?** Comience con el [Tutorial de introducción](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para configurar la base de su proyecto.
+>**¿Es nuevo en Edge Delivery Services?** Comience con el [Tutorial de introducción](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para configurar la base de su proyecto.
 
 ## Métodos de configuración
 
@@ -119,7 +119,7 @@ El servicio de envío de Forms ofrece dos métodos de configuración. Elija el m
 
 Antes de configurar cualquiera de los métodos, asegúrese de que la base del proyecto de AEM está lista:
 
-1. **Cree o actualice su proyecto de AEM** con el último bloque de Forms adaptable ([Tutorial de introducción](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+1. **Cree o actualice su proyecto de AEM** con el último bloque de Forms adaptable ([Tutorial de introducción](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
 
 2. **Actualización`fstab.yaml`** en la raíz del proyecto:
 
@@ -148,7 +148,7 @@ Cree la estructura del formulario con Hojas de cálculo de Google o Microsoft Ex
 1. **Abra la plataforma de hoja de cálculo** (Hojas de cálculo de Google o Excel de Microsoft)
 2. **Cree una nueva hoja de cálculo** para su proyecto de formulario
 3. **Asigne un nombre a la hoja** (debe ser `helix-default` o `shared-aem`)
-4. **Defina la estructura del formulario** mediante la [guía de creación de formularios](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **Defina la estructura del formulario** mediante la [guía de creación de formularios](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Definición de formulario](/help/forms/assets/form-submission-definition.png)
 *Ejemplo: definición de formulario con tipos de campo, etiquetas y reglas de validación*
@@ -217,8 +217,8 @@ Conceda acceso al servicio de envío de Adobe Forms a su hoja de cálculo.
 3. **Enviar la invitación para compartir**
 4. **Copie el vínculo de la hoja de cálculo** para el paso siguiente
 
-![Compartir hoja entrante](/help/forms/assets/form-submission-share-incoming.png)
-*Proceso de uso compartido paso a paso para conceder acceso al servicio de Adobe*
+   ![Compartir hoja entrante](/help/forms/assets/form-submission-share-incoming.png)
+   *Proceso de uso compartido paso a paso para conceder acceso al servicio de Adobe*
 
 **Instrucciones específicas de la plataforma:**
 
@@ -234,8 +234,8 @@ Conceda acceso al servicio de envío de Adobe Forms a su hoja de cálculo.
 - Configure el uso compartido de vínculos como &quot;Cualquier persona que tenga el vínculo puede editarlo&quot;
 - Copiar la URL para compartir
 
-![Copiar vínculo de la hoja entrante](/help/forms/assets/form-submission-copy-link.png)
-*Ejemplo: copiar el vínculo que se puede compartir para la configuración del formulario*
+  ![Copiar vínculo de la hoja entrante](/help/forms/assets/form-submission-copy-link.png)
+  *Ejemplo: copiando el vínculo que se puede compartir para la configuración del formulario*
 
 **Punto de comprobación de validación:**
 
@@ -254,8 +254,8 @@ Vincule la definición del formulario a la hoja de cálculo de envío.
 3. **Pegue el vínculo de hoja de cálculo copiado** en la columna **Acción** para el campo Enviar
 4. **Guardar los cambios** en su definición de formulario
 
-![Vincular una hoja de cálculo](/help/forms/assets/form-submission-sheet-linking.png)
-*Ejemplo: conectar la acción de envío a la hoja de cálculo de recopilación de datos*
+   ![Vincular una hoja de cálculo](/help/forms/assets/form-submission-sheet-linking.png)
+   *Ejemplo: conectar la acción de envío a la hoja de cálculo de recopilación de datos*
 
 **Publicando Su Formulario:**
 
@@ -337,29 +337,29 @@ Postman proporciona una interfaz fácil de usar para probar los envíos de API.
 
 **Configuración de solicitud:**
 
-```json
-POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
+    &quot;json
+PUBLICACIÓN https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-Headers:
+Encabezados:
 Content-Type: application/json
-x-adobe-routing: tier=live,bucket=main--your-repo--your-org
+x-adobe-routing: tier=live,bucket=main-your-repo-your-org
 
-Body (JSON):
+Cuerpo (JSON):
 {
-    "data": {
-        "startDate": "2025-01-10",
-        "endDate": "2025-01-25",
-        "destination": "Australia",
-        "class": "First Class",
-        "budget": "2000",
-        "amount": "1000000",
-        "name": "Mary",
-        "age": "35",
-        "subscribe": null,
-        "email": "mary@gmail.com"
-    }
+&quot;data&quot;: {
+&quot;startDate&quot;: &quot;10-01-2025&quot;,
+&quot;endDate&quot;: &quot;2025-01-25&quot;,
+&quot;destination&quot;: &quot;Australia&quot;,
+&quot;class&quot;: &quot;First Class&quot;,
+&quot;presupuesto&quot;: &quot;2000&quot;,
+&quot;amount&quot;: &quot;1000000&quot;,
+&quot;nombre&quot;: &quot;María&quot;,
+&quot;age&quot;: &quot;35&quot;,
+&quot;suscribir&quot;: nulo,
+&quot;correo electrónico&quot;: &quot;mary@gmail.com&quot;
 }
-```
+}
+&quot;
 
 **Respuesta esperada:**
 
@@ -387,29 +387,29 @@ Reemplace los siguientes marcadores de posición en los comandos siguientes:
 
 ```bash
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
-  --header "Content-Type: application/json" \
+    --header "Content-Type: application/json" \
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" \
-  --data '{
-    "data": {
-      "startDate": "2025-01-10",
-      "endDate": "2025-01-25",
-      "destination": "Australia",
-      "class": "First Class",
-      "budget": "2000",
-      "amount": "1000000",
-      "name": "Joe",
-      "age": "35",
-      "subscribe": null,
+    --data '{
+        "data": {
+            "startDate": "2025-01-10",
+            "endDate": "2025-01-25",
+            "destination": "Australia",
+            "class": "First Class",
+            "budget": "2000",
+            "amount": "1000000",
+            "name": "Joe",
+            "age": "35",
+            "subscribe": null,
       "email": "joe@example.com"
-    }
-  }'
-```
+                }
+            }'
+        ```
 
->[!TAB Símbolo del sistema de Windows]
-
+>[!TAB Windows Command Prompt]
+     
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
-  --header "Content-Type: application/json" ^
+    --header "Content-Type: application/json" ^
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" ^
   --data "{\"data\": {\"startDate\": \"2025-01-10\", \"endDate\": \"2025-01-25\", \"destination\": \"Australia\", \"class\": \"First Class\", \"budget\": \"2000\", \"amount\": \"1000000\", \"name\": \"Joe\", \"age\": \"35\", \"subscribe\": null, \"email\": \"joe@example.com\"}}"
 ```
@@ -436,13 +436,13 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
-### Respuesta y verificación de API
+### API Response & Verification
 
-**Respuesta correcta:**
+**Successful Response:**
 
 ```http
 HTTP/1.1 201 Created
@@ -522,7 +522,7 @@ Solutions:
 
 - **Problemas de acceso anticipado:** Correo electrónico [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 - **Documentación de la API:** [Referencia del desarrollador](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **Soporte de la comunidad:** [Comunidad de Adobe Experience League](https://experienceleaguecommunities.adobe.com/?profile.language=es)
+- **Soporte de la comunidad:** [Comunidad de Adobe Experience League](https://experienceleaguecommunities.adobe.com/)
 
 ## Próximos pasos
 
@@ -530,7 +530,7 @@ Ahora que tiene configurado el servicio de envío de Forms, explore estos temas 
 
 ### **Mejore su Forms**
 
-- **[Crear Forms avanzado](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)**: agregue validación, lógica condicional y estilo personalizado
+- **[Crear Forms avanzado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)**: agregue validación, lógica condicional y estilo personalizado
 - **[Guía de componentes de formulario](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)**: explore los tipos de campos de formulario disponibles
 
 ### **Métodos de envío alternativos**
