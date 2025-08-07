@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '1815'
 ht-degree: 1%
@@ -17,6 +17,7 @@ ht-degree: 1%
 # Creación de Forms adaptable con editor universal
 
 Los usuarios acceden a formularios en una amplia gama de dispositivos, incluidos escritorios, tabletas y smartphones. El diseño de formularios adaptables garantiza una experiencia óptima para todos los usuarios, independientemente del dispositivo. En esta guía se explica cómo diseñar, probar y optimizar formularios para cualquier tamaño de pantalla con el Editor universal.
+
 
 La creación de formularios adaptables implica dos actividades principales:
 

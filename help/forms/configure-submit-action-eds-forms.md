@@ -4,13 +4,13 @@ description: Un formulario adaptable proporciona varias acciones de envío. Una 
 keywords: Obtenga información sobre cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de SharePoint, conectar un formulario adaptable a una biblioteca de documentos de SharePoint, conectar un formulario adaptable al modelo de datos de formulario (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
+source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 22%
 
 ---
-
 
 # Acciones de envío para Edge Delivery Services Forms
 
@@ -33,7 +33,7 @@ Puede crear Edge Delivery Services Forms con [Universal Editor](/help/edge/docs/
 * [Invocar un flujo de Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Enviar a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Invocar Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Enviar mediante el modelo de datos de formulario (FDM)](/help/forms/using-form-data-model.md)
+* [Enviar mediante el modelo de datos de formulario (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Enviar a Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Enviar a extremo REST](/help/forms/configure-submit-action-restpoint.md)
 * [Enviar a OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -68,4 +68,3 @@ Forms basado en documentos admite el envío solo a hojas de cálculo. Para apren
 ## Véase también {#see-also}
 
 {{af-submit-action}}
-

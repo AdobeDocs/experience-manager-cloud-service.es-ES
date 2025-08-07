@@ -6,10 +6,10 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: 628e60e43d0810ef9e871dd77ed1674d7646072b
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 1%
+source-wordcount: '2047'
+ht-degree: 3%
 
 ---
 
@@ -51,21 +51,23 @@ El siguiente vídeo proporciona una guía paso a paso sobre los requisitos previ
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457850/)
 
+<span> Este vídeo solo es aplicable a los componentes principales. Para componentes UE/Foundation, consulte el artículo.</span>
+
 ## Requisitos previos {#prerequisites}
 
 Antes de configurar el conector de AEP en AEM Forms, asegúrese de completar lo siguiente en Adobe Experience Platform:
 
 1. Configuración del esquema
-   * [Crear un esquema XDM](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [Habilitar esquema para la generación de perfiles](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
-   * [Definir campo de identidad](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Crear un esquema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [Habilitar esquema para la generación de perfiles](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Definir campo de identidad](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. Configuración de datos
-   * [Crear un conjunto de datos](https://experienceleague.adobe.com/es/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [Configure la conexión de flujo continuo](https://experienceleague.adobe.com/es/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (necesita la dirección URL del extremo de flujo continuo más tarde, así que anótela ahora).
+   * [Crear un conjunto de datos](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [Configure la conexión de flujo continuo](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (necesita la dirección URL del extremo de flujo continuo más tarde, así que anótela ahora).
 
 3. Autenticación
-   * [Generar credenciales de API](https://experienceleague.adobe.com/es/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (ID de cliente y secreto de cliente) desde Adobe Developer Console
+   * [Generar credenciales de API](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (ID de cliente y secreto de cliente) desde Adobe Developer Console
 
 
 ## Pasos de implementación
@@ -90,12 +92,17 @@ Antes de configurar el conector de AEP en AEM Forms, asegúrese de completar lo 
 
 ### &#x200B;2. Creación de formularios con integración de esquemas XDM {#form-creation}
 
+>[!BEGINTABS]
+
+>[!TAB Componente Base]
+
+Realice los siguientes pasos para crear un formulario adaptable basado en componentes de base con integración de esquemas:
+
 1. Acceda al asistente de creación de formularios:
    * Vaya a su **instancia de Adobe Experience Manager** > **Forms** > **Forms y documentos**.
    * Haga clic en **Crear** > **Formulario adaptable**.
-1. En la ficha **origen**, seleccione una plantilla
+1. En la ficha **origen**, seleccione una plantilla base.
 1. En la ficha **Datos**, seleccione la opción **Adobe Experience Platform**.
-
 1. En el panel de propiedades, seleccione la configuración de nube.
 
    ![](/help/forms/assets/xdm-schema-integration.png)
@@ -121,6 +128,85 @@ Antes de configurar el conector de AEP en AEM Forms, asegúrese de completar lo 
    * Ruta de almacenamiento
 1. Agregue el botón Enviar al formulario. El formulario está listo para enviar datos a AEP.
 
+>[!TAB Componente principal]
+
+Realice los siguientes pasos para crear un formulario adaptable basado en componentes principales con integración de esquemas:
+
+1. Acceda al asistente de creación de formularios:
+   * Vaya a su **instancia de Adobe Experience Manager** > **Forms** > **Forms y documentos**.
+   * Haga clic en **Crear** > **Formulario adaptable**.
+1. En la ficha **origen**, seleccione una plantilla basada en componentes principales.
+1. En la ficha **Datos**, seleccione la opción **Adobe Experience Platform**.
+1. En el panel de propiedades, seleccione la configuración de nube.
+
+   ![](/help/forms/assets/xdm-schema-integration.png)
+
+   El sistema carga todos los esquemas disponibles de Adobe Experience Platform
+
+   >[!NOTE]
+   >
+   >
+   > * Solo se recuperan los esquemas habilitados para perfiles y no generados por el sistema.
+   > * La carga inicial del esquema puede tardar algún tiempo en configurarse por primera vez.
+
+1. Seleccione los campos adecuados/obligatorios del esquema. (Vea el vídeo para ver los pasos detallados)
+1. En la pestaña Envío:
+   * Seleccione la acción de envío **Enviar a Adobe Experience Platform**
+   * Configure las opciones de envío de formularios para **Envío de datos de AEM Forms a Experience Platform**
+1. En el panel de propiedades:
+   * Añada la URL de flujo continuo (obtenida desde Orígenes de AEP > Conexión de flujo continuo).
+   * Añada el ID del flujo de datos (que se encuentra en Fuentes de AEP > Flujo > Información de uso de API)
+1. Haga clic en **Guardar**. Proporcione los detalles del formulario:
+   * Título
+   * Nombre
+   * Ruta de almacenamiento
+1. Agregue el botón Enviar al formulario. El formulario está listo para enviar datos a AEP.
+
+>[!TAB Editor universal]
+
+Realice los siguientes pasos para crear un formulario adaptable creado con el Editor universal con integración de esquemas:
+
+1. Acceda al asistente de creación de formularios:
+   * Vaya a su **instancia de Adobe Experience Manager** > **Forms** > **Forms y documentos**.
+   * Haga clic en **Crear** > **Formulario adaptable**.
+1. En la ficha **origen**, seleccione Plantilla basada en Edge Delivery.
+1. En la ficha **Datos**, seleccione la opción **Adobe Experience Platform**.
+1. En el panel de propiedades, seleccione la configuración de nube.
+
+   ![integración de esquemas](/help/forms/assets/xdm-schema-integration.png)
+
+   El sistema carga todos los esquemas disponibles de Adobe Experience Platform
+
+   >[!NOTE]
+   >
+   >
+   > * Solo se recuperan los esquemas habilitados para perfiles y no generados por el sistema.
+   > * La carga inicial del esquema puede tardar algún tiempo en configurarse por primera vez.
+
+1. Seleccione los campos adecuados/obligatorios del esquema. (Vea el vídeo para ver los pasos detallados)
+1. En la pestaña Envío:
+   * Seleccione la acción de envío **Enviar a Adobe Experience Platform**
+   * Configure las opciones de envío de formularios para **Envío de datos de AEM Forms a Experience Platform**
+
+     >[!NOTE]
+     >
+     >* Si no ve el icono Fuentes de datos en su interfaz de Universal Editor o en la propiedad Referencia de enlace en el panel de propiedades derecho, habilite la extensión **Fuente de datos** en Extension Manager.
+     >* Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
+     > 
+     > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+
+   Actualmente no se admite el servicio de rellenado previo para formularios en el editor universal.
+
+1. En el panel de propiedades:
+   * Añada la URL de flujo continuo (obtenida desde Orígenes de AEP > Conexión de flujo continuo).
+   * Añada el ID del flujo de datos (que se encuentra en Fuentes de AEP > Flujo > Información de uso de API)
+1. Haga clic en **Guardar**. Proporcione los detalles del formulario:
+   * Título
+   * Nombre
+   * Ruta de almacenamiento
+1. Agregue el botón Enviar al formulario. El formulario está listo para enviar datos a AEP.
+
+>[!ENDTABS]
 
 ## Notas importantes {#important-notes}
 
@@ -163,7 +249,7 @@ R: Este conector funciona tanto con los componentes principales de Forms adaptab
 R: Actualmente, cada formulario solo puede enviarse a un conjunto de datos.
 
 **Q: ¿Hay un límite en la cantidad de envíos de formularios que se pueden procesar?**
-R: Los envíos de formularios están sujetos a sus [límites de cuotas y tasa](https://experienceleague.adobe.com/es/docs/experience-platform/data-lifecycle/api/quota) de ingesta de transmisión de AEP.
+R: Los envíos de formularios están sujetos a sus [límites de cuotas y tasa](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota) de ingesta de transmisión de AEP.
 
 <!-- >
 **Q: Can form attachments be sent to AEP?**
@@ -201,10 +287,10 @@ Para empezar con esta integración:
 ## Recursos relacionados {#related-resources}
 
 * [Documentación de AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=es)
-* [Documentación de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=es)
-* [Información general del sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=es)
-* [Ingesta de transmisión en Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=es)
-* [Información general del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=es)
+* [Documentación de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+* [Información general del sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
+* [Ingesta de transmisión en Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [Información general del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [Funciones de acceso anticipado de AEM Forms](/help/forms/early-access-ea-features.md)
 * [Creación de Forms adaptable con componentes principales](/help/forms/creating-adaptive-form-core-components.md)
 * [Uso de modelos de datos de formulario en AEM Forms](/help/forms/using-form-data-model.md)

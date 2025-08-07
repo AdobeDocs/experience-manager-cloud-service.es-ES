@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2358'
 ht-degree: 4%
 
 ---
@@ -180,14 +180,14 @@ La **Barra de herramientas del editor universal** contiene sus herramientas prin
 **Propósito:** Ver el formulario en una nueva pestaña sin la interfaz del editor\
 **Cuándo se debe usar:** Para pruebas a pantalla completa, compartir con los interesados para su revisión
 
-¡    ![Abrir página](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
+![Abrir página](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
 #### **Publicar**
 
 **Propósito:** hacer que el formulario esté activo y accesible para los usuarios\
 **Cuándo se debe usar:** Después de realizar pruebas exhaustivas en los modos Vista previa y Adaptable
 
-¡    ![Publicar](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
+![Publicar](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 **Lista de comprobación de validación antes de la publicación:**
 
@@ -216,12 +216,22 @@ La **Barra de herramientas del editor universal** contiene sus herramientas prin
 
 **Estas herramientas se utilizan en escenarios específicos o en configuraciones avanzadas:**
 
-#### **Editar propiedades del formulario**
+#### **Propiedades de formulario AEM**
 
 **Propósito:** configure las opciones de nivel de formulario, como el modelo de datos de formulario (FDM) y las fechas de publicación\
 **Cuándo se debe usar:** Configuración de integraciones de datos, programación de publicaciones
 
 ![Propiedades del formulario](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+![Asistente de propiedades de formulario](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+
+El panel Propiedades del formulario incluye las siguientes secciones:
+
+- **Envío**: defina lo que sucede después de que un usuario envíe el formulario. Elija entre varias acciones de envío, como enviar datos por correo electrónico, enviar a SharePoint, utilizar un modelo de datos de formulario o integrar con servicios como Adobe Experience Platform o Microsoft Power Automate. Para obtener una lista completa de las acciones de envío admitidas, consulte el artículo [Enviar acción](/help/edge/docs/forms/universal-editor/submit-action.md).
+
+- **Rellenar previamente**: configure cómo se rellenan automáticamente los campos de formulario antes de que el usuario interactúe con el formulario. Puede conectarse a fuentes de datos como un modelo de datos de formulario (FDM) o utilizar parámetros de URL para rellenar previamente los campos, lo que mejora la experiencia del usuario y reduce los datos introducidos manualmente. Para obtener más información, consulte el artículo [Servicio de relleno previo](/help/edge/docs/forms/universal-editor/prefill-form.md).
+
+- **Gracias**: Personalice lo que los usuarios ven después de enviar el formulario. Puede mostrar un mensaje de confirmación o redirigirlo a otra página web, lo que garantiza una experiencia de finalización fluida y profesional. Para obtener información sobre cómo configurar un mensaje de agradecimiento para formularios, consulte el artículo [Configurar mensaje de agradecimiento](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md).
 
 #### **Editor de reglas** (acceso anticipado)
 
@@ -521,4 +531,3 @@ Ahora que comprende la interfaz del editor universal:
 4. **Editor de reglas maestro** - Agregar comportamientos dinámicos con la [Guía del editor de reglas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 
 **Recuerde:** El editor universal está diseñado para hacer que la creación de formularios sea intuitiva. Empiece con lo esencial y explore gradualmente las funciones avanzadas a medida que sus necesidades crezcan.
-
