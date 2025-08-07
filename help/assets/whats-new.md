@@ -50,7 +50,7 @@ Content Hub ahora permite controlar el acceso a las colecciones durante la creac
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
+[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
 ## Funciones de la versión de mayo {#may-release-features}
 
@@ -80,7 +80,7 @@ Algunas de las ventajas clave del control de acceso basado en atributos son:
 
 * Reduce el número de duplicados: mejora la integridad de los recursos. Los duplicados son necesarios en los permisos basados en carpetas cuando los mismos recursos se comparten con diferentes grupos.
 
-[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
+[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
 
 ### Personalización de IU {#ui-branding}
 
@@ -88,7 +88,7 @@ Content Hub ahora permite a los administradores personalizar la interfaz de usua
 
 ![Personalización de marca de la interfaz de usuario](/help/assets/assets/content-hub-ui-branding.png)
 
-[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
 
 ### Uso compartido de vínculos públicos {#public-link-sharing}
 
@@ -96,13 +96,13 @@ Content Hub ahora admite la generación de vínculos que se pueden compartir par
 
 ![Personalización de marca de la interfaz de usuario](/help/assets/assets/public-and-private-link.png)
 
-[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
 ### Descargar varios recursos como ZIP {#download-multiple-assets-as-zip}
 
 Content Hub ahora también le permite descargar los recursos seleccionados y sus representaciones en un archivo ZIP, y no como archivos independientes, lo que simplifica la administración de archivos.
 
-[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ### Representaciones de Dynamic Media en Content Hub {#dynamic-media-renditions}
 
@@ -110,4 +110,4 @@ Acceda a todas las representaciones de ajustes preestablecidos y recortes inteli
 
 ![Representaciones de medios dinámicos](/help/assets/assets/dm-renditions-content-hub.png)
 
-[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE Profundizar en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
