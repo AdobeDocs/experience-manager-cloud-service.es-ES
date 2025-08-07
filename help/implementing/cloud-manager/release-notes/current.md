@@ -4,7 +4,7 @@ description: Obtenga información sobre la versión 2025.8.0 de Cloud Manager en
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 34e17f63809de261dcd2c6b741f525058600a987
+source-git-commit: cb841b9614ccf5c6bcfeef7524fd6306b3b1ac35
 workflow-type: tm+mt
 source-wordcount: '1414'
 ht-degree: 62%
@@ -67,16 +67,13 @@ Actualmente están disponibles las siguientes oportunidades:
 
 Vuelva rápidamente a una implementación anterior si el código fuente del cliente más reciente no funciona como se esperaba; no es necesario volver a ejecutar la canalización completa ni revertir las confirmaciones manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**&#x200B;para un entorno seleccionado.*
-
+![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**para un entorno seleccionado.*
 
 ![Cuadro de diálogo Restaurar código anterior implementado](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *En el cuadro de diálogo **Restaurar código anterior implementado**, revise la versión implementada actualmente y la versión que desea restaurar, luego haga clic en **Confirmar***.
 
-
 ![Activación de Restaurando](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**&#x200B;hasta que finalice la implementación.*
-
+*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**hasta que finalice la implementación.*
 
 ![Versión del código fuente en uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vista de detalles del entorno, vista desde arriba, ahora también muestra la versión activa del código fuente en uso.*
 
