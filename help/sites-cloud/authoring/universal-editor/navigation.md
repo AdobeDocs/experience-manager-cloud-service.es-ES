@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: afae63ae84d3807cc3563f6b0fbff73931ff051b
+source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1782'
 ht-degree: 24%
 
 ---
@@ -154,10 +154,6 @@ La barra de ubicación muestra la dirección de la página que está editando. S
 Seleccione el icono de configuración del encabezado de autenticación si necesita [establecer un encabezado de autenticación personalizado con fines de desarrollo local](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Botón de configuración del encabezado de autenticación](assets/authentication-header-settings.png)
-
->[!NOTE]
->
->Este botón está oculto de forma predeterminada, ya que en la mayoría de los casos tiene un valor limitado. Si lo necesita, envíe un correo electrónico a Customer Success Manager de Adobe desde la dirección de correo electrónico asociada a su Adobe ID.
 
 #### Configuración del emulador {#emulator}
 
@@ -338,6 +334,6 @@ El editor universal ofrece una experiencia de creación personalizable y ampliab
 * Para obtener más información sobre las posibilidades de extensión, consulte [Ampliación del editor universal.](/help/implementing/universal-editor/extending.md)
 * Para obtener más información sobre cómo instalar una extensión individual, consulte la [documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 Ahora que sabe cómo acceder al Editor universal y navegar por él, está listo para [crear contenido con él](/help/sites-cloud/authoring/universal-editor/authoring.md).

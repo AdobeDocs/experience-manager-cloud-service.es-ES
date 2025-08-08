@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2025.07.09 del editor universal
-description: Estas son las notas de la versión 2025.07.09 del editor universal.
+title: Notas de la versión 2025.07.31 del editor universal
+description: Estas son las notas de la versión 2025.07.31 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
-workflow-type: ht
-source-wordcount: '368'
-ht-degree: 100%
+source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 56%
 
 ---
 
 
-# Notas de la versión 2025.07.09 del editor universal {#release-notes}
+# Notas de la versión 2025.07.31 del editor universal {#release-notes}
 
-Estas son las notas de la versión del 9 de julio de 2025 del editor universal.
+Estas son las notas de la versión del editor universal del 31 de julio de 2025.
 
 >[!TIP]
 >
@@ -22,9 +22,15 @@ Estas son las notas de la versión del 9 de julio de 2025 del editor universal.
 
 ## Novedades {#what-is-new}
 
-* [Al hacer clic en el botón de la barra de herramientas **Añadir** en los contenedores,](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) si solo se permite un tipo de componente, se inserta inmediatamente sin que sea necesario seleccionarlo en el menú desplegable.
-* [La opción de la barra de herramientas del encabezado de autenticación](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) se ha colocado detrás de una opción de función, ya que no resulta útil en la mayoría de los casos.
-* [Dado que no se permite anidar contenedores para múltiples campos en el panel de propiedades,](/help/implementing/universal-editor/field-types.md#fields) la rutina de renderizado ahora filtra los contenedores anidados de la lista de campos para evitar anidamientos no válidos.
+* [La opción de la barra de herramientas del encabezado de autenticación](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) permanece detrás de una alternancia de características como se introdujo en la [versión 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
+   * Sin embargo, ahora está habilitado de forma predeterminada.
+* Nuevas funciones para [usuarios que adoptaron por primera vez RTE](#new-rte)
+   * Se ha añadido compatibilidad con el modo oscuro.
+   * Se ha añadido compatibilidad con la alineación de texto.
+      * Deshabilitado de forma predeterminada y solo disponible para proyectos sin encabezado
+   * Se ha añadido la compatibilidad con sangría.
+      * Deshabilitado de forma predeterminada y solo disponible para proyectos sin encabezado
+   * Los saltos (`<br>`) ahora se insertan al presionar mayús+intro.
 
 ## Funciones de adopción anticipada {#early-adopter}
 
@@ -43,14 +49,12 @@ Deshacer y rehacer ya está disponible para los autores de contenido del editor 
 
 ## Otras mejoras {#other-improvements}
 
-* Se ha solucionado un problema por el que no era posible eliminar referencias de recursos individuales al editar mediante el carril de propiedades.
-* Se ha solucionado un problema por el que el panel Propiedades se cargaba indefinidamente porque las referencias de los recursos se convertían automáticamente en matrices, lo que provocaba un estado de carga infinita.
-   * Los valores de referencia de los recursos ahora se almacenan tal cual, sin conversión automática a matrices.
-* Se ha solucionado un problema por el que el panel Propiedades no mostraba campos cuando se definía un modelo, pero no contenía ningún contenido.
-   * Esto provocaba un estado de carga infinita para el panel Propiedades para respuestas de detalles vacías, como los fragmentos de contenido vacíos.
-* La configuración de ESLint se ha rediseñado para garantizar la compatibilidad con la versión 9, incluidas las reglas actualizadas y la compatibilidad con los complementos.
+* Correcciones para el RTE de usuario que adoptó por primera vez
+   * Al presionar Intro ahora se crea un nuevo elemento de lista (`<li>`) cuando se encuentra dentro de una lista.
+* Los vídeos ahora se actualizan correctamente al utilizar DAM remoto.
+* Se agregó compatibilidad de servicio para 6.5 LTS.
 
 ## Componentes obsoletos {#deprecations}
 
-* El componente `text-input` ya está oficialmente obsoleto.
+* Los componentes `text-input` y `text-area` quedaron oficialmente obsoletos con la [versión 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
    * En `model-definition.json`, utilice el componente de texto para crear entradas de texto para el panel Propiedades.
