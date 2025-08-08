@@ -249,7 +249,7 @@ Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 3. Elegir **vista previa como HTML**
 4. Pruebe el relleno previo añadiendo parámetros a la dirección URL:
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **Ejemplo:**
 
@@ -269,19 +269,19 @@ El formulario debe rellenarse automáticamente con datos basados en el parámetr
 
     &quot;
     
-    {
-    &quot;afBoundData&quot;: {
-    &quot;user&quot;: {
+    &lbrace;
+    &quot;afBoundData&quot;: &lbrace;
+    &quot;user&quot;: &lbrace;
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    }
+    &rbrace;
     ,
-    &quot;afUnBoundData&quot;: {
+    &quot;afUnBoundData&quot;: &lbrace;
     &quot;additionalInfo&quot;: &quot;Preferencias de usuario cargado &quot;
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     &quot;
 
