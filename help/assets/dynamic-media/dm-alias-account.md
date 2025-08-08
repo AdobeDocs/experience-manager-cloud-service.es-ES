@@ -24,7 +24,7 @@ hidefromtoc: yes
 <!-- 
 >[!NOTE]
 >
->This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
 -->
 
 Las direcciones URL de Dynamic Media y el código incrustado de visualizador contienen el nombre de la cuenta de empresa. Este nombre de cuenta se creó en el momento del aprovisionamiento de Dynamic Media. Puede haber casos en los que su empresa haya sufrido una adquisición o un cambio de marca, o simplemente desee utilizar un nombre más memorable. En estos casos, no es fácil actualizar manualmente el nombre de la cuenta de su empresa en todas las direcciones URL y el código incrustado de visor que aparece de forma predeterminada. Además, existe la posibilidad de que afecte a su repositorio de Dynamic Media existente o al contenido en directo. Para resolver este problema, puede configurar una cuenta de alias de empresa de Dynamic Media.
