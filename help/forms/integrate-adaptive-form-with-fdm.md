@@ -3,7 +3,7 @@ title: Cómo integrar el modelo de datos de formulario (FDM) para un formulario 
 description: Aprenda a crear formularios basados en un modelo de datos de formulario (FDM). Genere y edite datos de muestra para objetos del modelo de datos en el modelo de datos de formulario (FDM).
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 31%
@@ -54,6 +54,7 @@ Realice los siguientes pasos para configurar el modelo de datos de formulario co
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 1. Haga clic en la pestaña **[!UICONTROL Envío]**.
 1. En la lista desplegable **[!UICONTROL Enviar acción]**, seleccione **[Enviar mediante el modelo de datos de formulario]**.
+
    ![enviar mediante modelo de datos de formulario](/help/forms/assets/submit-uisng-fdm-cc.png)
 
 1. Seleccione el modelo de datos **[!UICONTROL creado para enviar]** la configuración.

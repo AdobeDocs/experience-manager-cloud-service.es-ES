@@ -8,7 +8,7 @@ badge: label="Beta privada" type="Positive" url="/help/implementing/cloud-manage
 hide: false
 index: false
 hidefromtoc: false
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 4%
@@ -26,9 +26,12 @@ Un usuario debe tener la función **[Administrador de implementación](/help/onb
 >
 >No se puede configurar una canalización de Edge Delivery hasta que se haya producido lo siguiente:
 >
->* Se crea un programa que contiene un sitio de Edge Delivery Services y un dominio asignado. De lo contrario, la opción **Agregar canalización de Edge Delivery** aparece deshabilitada en la interfaz de usuario y una información de objeto explica los requisitos que faltan. <!-- CMGR‑69680 -->
+>* Se crea un programa que contiene un sitio de Edge Delivery Services y un dominio asignado. De lo contrario, la opción **Agregar canalización de Edge Delivery** aparece deshabilitada en la interfaz de usuario y una información de objeto explica los requisitos que faltan.
 >* El repositorio de Git tiene al menos una rama.
 >* Se crean los entornos de producción y ensayo.
+
+<!-- CMGR‑69680 -->
+
 
 Antes de comenzar a implementar el código, establece la configuración de la canalización desde [!UICONTROL Cloud Manager].
 

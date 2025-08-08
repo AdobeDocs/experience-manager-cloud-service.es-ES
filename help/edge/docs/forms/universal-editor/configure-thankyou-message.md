@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo se puede redirigir a los usuarios 
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 52%
@@ -27,8 +27,8 @@ Puede configurar la acción de envío para los formularios creados en el editor 
 
 >[!NOTE]
 >
-> * Si no ve el icono **Propiedades del formulario** en su interfaz de Universal Editor, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
-> * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+>* Si no ve el icono **Propiedades del formulario** en su interfaz de Universal Editor, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
+>* Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
 
 ## ¿Cómo configurar el redireccionamiento o el mensaje de agradecimiento?
 
@@ -37,9 +37,9 @@ Al enviar un formulario, puede redirigir al usuario a otra página web o mostrar
 Para configurar la página de redireccionamiento o el mensaje de agradecimiento:
 
 1. Abra el formulario adaptable para editarlo.
-2. Abra el árbol de contenido y seleccione **[!UICONTROL Contenedor de guía]**.
-3. Haga clic en el icono de las ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar modelos de datos.
-4. Abra la pestaña **[!UICONTROL Entrega]**. Se muestran las opciones para configurar una página de redireccionamiento o un mensaje:
+1. Abra el árbol de contenido y seleccione **[!UICONTROL Contenedor de guía]**.
+1. Haga clic en el icono de las ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar modelos de datos.
+1. Abra la pestaña **[!UICONTROL Entrega]**. Se muestran las opciones para configurar una página de redireccionamiento o un mensaje:
 
    ![Cuadro de diálogo de envío del contenedor de guía para configurar una página de redirección o un mensaje](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 
