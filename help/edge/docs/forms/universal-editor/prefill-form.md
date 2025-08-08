@@ -140,9 +140,9 @@ El editor universal proporciona dos opciones de servicio de relleno previo:
 
 6. Haga clic en **Listo** para guardar el argumento y en **Guardar** para guardar el FDM
 
-       >[!NOTA]
+       >[ !NOTA]
        >
-   > Obtenga más información acerca de la configuración de servicios FDM en [Trabajar con el modelo de datos de formulario (FDM)](/help/forms/work-with-form-data-model.md).
+       > Obtenga más información acerca de la configuración de servicios FDM en [Trabajar con el modelo de datos de formulario (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -267,19 +267,19 @@ El formulario debe rellenarse automáticamente con datos basados en el parámetr
 
     &quot;
     
-    {
-    &quot;afBoundData&quot;: {
-    &quot;user&quot;: {
+    &lbrace;
+    &quot;afBoundData&quot;: &lbrace;
+    &quot;user&quot;: &lbrace;
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    }
+    &rbrace;
     ,
-    &quot;afUnBoundData&quot;: {
+    &quot;afUnBoundData&quot;: &lbrace;
     &quot;additionalInfo&quot;: &quot;Preferencias de usuario cargado &quot;
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     &quot;
 
@@ -433,6 +433,7 @@ Puede configurar un servicio de relleno previo principal por formulario. Sin emb
 +++
 
 =
+
 ## Temas relacionados
 
 - [Integración de formularios con el modelo de datos de formulario en el editor universal](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
