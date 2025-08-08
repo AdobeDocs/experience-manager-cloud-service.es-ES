@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: prerrellenar formularios adaptables, servicios de entrega de Edge de formularios adaptables, autorrellenar formularios adaptables
-source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
+source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 3%
+source-wordcount: '1829'
+ht-degree: 4%
 
 ---
 
@@ -140,9 +140,9 @@ El editor universal proporciona dos opciones de servicio de relleno previo:
 
 6. Haga clic en **Listo** para guardar el argumento y en **Guardar** para guardar el FDM
 
-       >[ !NOTA]
-       >
-       > Obtenga más información acerca de la configuración de servicios FDM en [Trabajar con el modelo de datos de formulario (FDM)](/help/forms/work-with-form-data-model.md).
+   >[!NOTE]
+   >
+   > Obtenga más información acerca de la configuración de servicios FDM en [Trabajar con el modelo de datos de formulario (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -151,35 +151,36 @@ El editor universal proporciona dos opciones de servicio de relleno previo:
 ### Paso 3: Crear un formulario adaptable
 
 1. Vaya a **Adobe Experience Manager** > **Forms** > **Forms y documentos**
-2. Seleccione **Crear** > **Forms adaptable**
-3. En la ficha **Source**, seleccione una plantilla de Edge Delivery Services:
+1. Seleccione **Crear** > **Forms adaptable**
+1. En la ficha **Source**, seleccione una plantilla de Edge Delivery Services:
 
-   ¡    ![Plantilla de Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
-   
-4. Haga clic en **Crear** para abrir el asistente de **Crear formulario**
-5. Especifique los detalles del formulario:
+   ![Plantilla de Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
+
+1. Haga clic en **Crear** para abrir el asistente de **Crear formulario**
+1. Especifique los detalles del formulario:
+
    - **Nombre**: escriba un nombre descriptivo para el formulario
    - **Título**: proporcione un título descriptivo
    - **URL de GitHub**: escribe la URL del repositorio (por ejemplo, `https://github.com/wkndforms/edsforms`)
 
-6. Haga clic en **Crear**
+1. Haga clic en **Crear**
 
-   ¡    ![Crear formulario basado en esquema](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
-   
+   ![Crear formulario basado en esquema](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
+
 El formulario se abrirá en el editor universal para la creación.
 
 ### Paso 4: Configurar Source de datos de formulario
 
 1. Seleccione el formulario y haga clic en **Propiedades**
 
-   ¡    ![Seleccionar propiedades de formulario](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
-   
+   ![Seleccionar propiedades de formulario](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
+
 2. Abra la ficha **Modelo de formulario**
 3. En el menú desplegable **Seleccionar de**, elija **Modelo de datos de formulario (FDM)**
 4. Seleccione el modelo de datos de formulario creado (por ejemplo, PetFDM) en la lista desplegable
 
-   ¡    ![Seleccione la pestaña Modelo de formulario](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
-   
+   ![Seleccionar pestaña Modelo de formulario](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
+
 5. Haga clic en **Guardar y cerrar**
 6. Abra el formulario para editarlo en el editor universal
 
@@ -193,6 +194,7 @@ Los elementos de formulario del FDM aparecen en la pestaña **Origen de datos** 
    ![Captura de pantalla del editor universal que muestra el formulario basado en esquemas](/help/edge/docs/forms/universal-editor/assets/ue-form.png)
 
 3. Agregar enlaces de datos a campos de formulario:
+
    - Seleccionar un campo de formulario
    - En el panel **Propiedades**, busque la propiedad **Referencia de enlace**
    - Seleccione la referencia de enlace de datos adecuada
@@ -208,12 +210,14 @@ Los elementos de formulario del FDM aparecen en la pestaña **Origen de datos** 
 Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 
 1. **Extensión de propiedades de formularios AEM**
+
    - Abrir **Extension Manager** en el editor universal
    - Habilitar la extensión **Propiedades de formulario AEM**
 
    ![Icono de propiedades de formulario](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
-2. **Extensión de Data Source**
+1. **Extensión de Data Source**
+
    - Habilite la extensión **Fuente de datos** si no ve el icono **Fuentes de datos**
 
    ![Captura de pantalla de Universal Editor Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
@@ -232,8 +236,8 @@ Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 3. Haga clic en la ficha **Rellenar previamente**
 4. Seleccionar **servicio de prerrellenado del modelo de datos de formulario**
 
-   ¡    ![Seleccionar servicio de relleno previo](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
-   
+   ![Seleccionar servicio de relleno previo](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
+
 5. Haga clic en **Guardar y cerrar**
 
 +++
@@ -247,14 +251,14 @@ Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 3. Elegir **vista previa como HTML**
 4. Pruebe el relleno previo añadiendo parámetros a la dirección URL:
 
-       https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
-   
+   https://your-preview-url.com?<bindreferencefield>=<value>
+
    **Ejemplo:**
 
-       https://your-preview-url.com?petid=12345
-       
-   ¡    ![Rellenar previamente formulario](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
-   
+   https://your-preview-url.com?petid=12345
+
+   ![Rellenar previamente formulario](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
+
 El formulario debe rellenarse automáticamente con datos basados en el parámetro proporcionado.
 
 +++
@@ -267,19 +271,19 @@ El formulario debe rellenarse automáticamente con datos basados en el parámetr
 
     &quot;
     
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
+    {
+    &quot;afBoundData&quot;: {
+    &quot;user&quot;: {
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    &rbrace;
+    }
     ,
-    &quot;afUnBoundData&quot;: &lbrace;
+    &quot;afUnBoundData&quot;: {
     &quot;additionalInfo&quot;: &quot;Preferencias de usuario cargado &quot;
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     &quot;
 
@@ -306,11 +310,11 @@ Las siguientes direcciones URL son solo ilustrativas y no funcionarán tal cual.
 
 **Prueba de relleno previo básica:**
 
-    https://preview.example.com/form.html?userId=12345
+`https://preview.example.com/form.html?userId=12345`
 
 **Prueba de varios parámetros:**
 
-    https://preview.example.com/form.html?userId=12345&amp;category=premium
+`https://preview.example.com/form.html?userId=12345&category=premium`
 
 
 ## Resolución de problemas
@@ -330,21 +334,25 @@ Las siguientes direcciones URL son solo ilustrativas y no funcionarán tal cual.
 +++Pasos de depuración
 
 1. **Verificar configuración de FDM:**
+
    - Comprobar si los servicios están correctamente configurados
    - Probar los servicios FDM de forma independiente
    - Validar conectividad de fuente de datos
 
 2. **Comprobar configuración del formulario:**
+
    - Confirmar que el formulario está asociado al FDM correcto
    - Comprobar valores de campo `bindRef`
    - Formulario de prueba sin relleno previo primero
 
 3. **Flujo de datos de prueba:**
+
    - Utilizar las herramientas para desarrolladores de exploradores para inspeccionar solicitudes de red
    - Buscar errores de JavaScript en la consola
    - Validar formato de datos de respuesta
 
 4. **Mensajes de error comunes:**
+
    - &quot;Servicio de relleno previo no encontrado&quot;: comprobar la configuración del servicio
    - &quot;Error en el enlace de datos&quot;: Comprobar la precisión de `bindRef`
    - &quot;Formato de datos no válido&quot;: Asegúrese de que los datos coincidan con el esquema
