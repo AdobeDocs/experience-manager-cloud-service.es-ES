@@ -93,7 +93,7 @@ Por lo tanto, debe continuar con su recorrido de incorporación revisando el doc
 Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
 * [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md): obtenga información sobre los tipos de entornos que puede crear y cómo crearlos para su proyecto de Cloud Manager
-* [Uso de entornos de Adobe Cloud Manager:](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/environments) los entornos de Cloud Manager están compuestos por los servicios de publicación, creación y Dispatcher de AEM. Descubra cómo los distintos entornos admiten diferentes funciones y se pueden utilizar con diferentes canalizaciones de CD/CI.
+* [Uso de entornos de Adobe Cloud Manager:](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/cloud-manager/environments) los entornos de Cloud Manager están compuestos por los servicios de publicación, creación y Dispatcher de AEM. Descubra cómo los distintos entornos admiten diferentes funciones y se pueden utilizar con diferentes canalizaciones de CD/CI.
 * [Entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md): Consulte esta documentación para obtener detalles sobre cómo utilizar un RDE.
 <!-- ERROR: Not Found (HTTP error 404) FIND AN ALTERNATE RESOURCE? * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
 
