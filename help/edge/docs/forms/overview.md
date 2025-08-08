@@ -50,7 +50,7 @@ Al final, podrá elegir el método de creación adecuado, comprender las opcione
 ### Editor universal
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">pre-release channel</a>. </span>
 -->
 
 [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) es una herramienta visual de creación de tipo arrastrar y soltar para los expertos en marketing y los diseñadores que combina la velocidad con la potencia de nivel empresarial:
