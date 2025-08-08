@@ -1,15 +1,14 @@
 ---
-Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
-Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
+description: Descubra los pasos para configurar el extremo REST al enviar un formulario adaptable.
 keywords: Punto final REST de AEM Forms, Enviar a punto final REST, Publicar datos en URL REST, Configurar acción de punto final REST
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 title: ¿Cómo configurar una acción de envío para un formulario adaptable?
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 76%
+source-wordcount: '1481'
+ht-degree: 74%
 
 ---
 
@@ -116,13 +115,13 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
 
    También puede **[!UICONTROL Habilitar la petición POST]** y proporcionar una URL para publicar la solicitud. Para enviar datos al servidor de AEM que aloja el formulario, utilice una ruta relativa correspondiente a la ruta raíz del servidor de AEM. Por ejemplo, `/content/forms/af/SampleForm.html`. Para enviar datos a cualquier otro servidor, utilice la ruta absoluta.
 
-   +++
++++
 
    +++Configuración
 
    Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el Explorador de configuración de AEM. Puede seleccionar la configuración creada para el tipo de autenticación de extremo de REST de servicio y los tipos de contenido. Para obtener más información sobre el tipo de autenticación y los tipos de contenido, visite [configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-   +++
++++
 
 1. Haga clic en **[!UICONTROL Listo]**.
 
@@ -173,13 +172,13 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
 
    También puede **[!UICONTROL Habilitar la petición POST]** y proporcionar una URL para publicar la solicitud. Para enviar datos al servidor de AEM que aloja el formulario, utilice una ruta relativa correspondiente a la ruta raíz del servidor de AEM. Por ejemplo, `/content/forms/af/SampleForm.html`. Para enviar datos a cualquier otro servidor, utilice la ruta absoluta.
 
-   +++
++++
 
    +++Configuración
 
    Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el Explorador de configuración de AEM. Puede seleccionar la configuración creada para el tipo de autenticación de extremo de REST de servicio y los tipos de contenido. Para obtener más información sobre el tipo de autenticación y los tipos de contenido, visite [configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-   +++
++++
 
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 

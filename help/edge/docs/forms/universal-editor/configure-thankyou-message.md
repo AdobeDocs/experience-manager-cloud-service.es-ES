@@ -1,13 +1,13 @@
 ---
-title: ¿Cómo configurar una página de redireccionamiento o un mensaje de agradecimiento?
+title: Cómo configurar una página de redireccionamiento o un mensaje de agradecimiento
 description: Obtenga información sobre cómo se puede redirigir a los usuarios a una página web que los autores de formularios pueden configurar al crear el formulario o cómo se puede mostrar a los usuarios un mensaje de agradecimiento.
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 52%
+ht-degree: 50%
 
 ---
 

@@ -1,18 +1,18 @@
 ---
-Title: How to configure a SharePoint Site with limited access using authorization scope?
-Description: Learn how to configure SharePoint Site with limited access using the authorization scope.
+title: ¿Cómo configurar un sitio de SharePoint con acceso limitado mediante el ámbito de autorización?
+description: Obtenga información sobre cómo configurar el sitio de SharePoint con acceso limitado mediante el ámbito de autorización.
 keywords: Configuración del sitio de SharePoint con acceso limitado?, Configuración de SharePoint con acceso limitado, Uso del ámbito de autorización para limitar el acceso al sitio de SharePoint.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 25%
+source-wordcount: '842'
+ht-degree: 24%
 
 ---
 
-
-<span class="preview">: la característica está disponible en el programa de usuarios que la adoptaron por primera vez. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta funcionalidad. </span>
+<span class="preview">: la característica está disponible en el programa de usuarios que la adoptaron por primera vez. Puede enviar un correo electrónico a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa para primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
 # Configuración del sitio de SharePoint con acceso limitado mediante el ámbito de autorización
 
@@ -37,7 +37,7 @@ Ventajas para proporcionar acceso limitado al sitio de SharePoint:
 Siga los pasos a continuación para configurar SharePoint Sites con acceso limitado mediante ámbitos de autorización:
 
 1. [Cree una aplicación con ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
-1. [AEM Establecer el ámbito de autorización en la instancia de la](#set-the-authorization-scope-at-aem-instance)
+1. [Definir el ámbito de autorización en la instancia de AEM](#set-the-authorization-scope-at-aem-instance)
 
 ### Crear una aplicación con el permiso limitado en el portal de Azure
 
@@ -54,7 +54,7 @@ Para usar el permiso de API `Sites.Selected` se requiere una aplicación registr
 
 Consulte el [artículo del blog - Desarrollar aplicaciones que usan Sites.Permisos seleccionados para sitios de SPO](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) para obtener instrucciones sobre el desarrollo de aplicaciones que usan permisos de `Sites.Selected` para sitios de SharePoint Online.
 
-### AEM Establecer el ámbito de autorización en la instancia de la
+### Definir el ámbito de autorización en la instancia de AEM
 
 Para proporcionar acceso limitado a un sitio SharePoint de Microsoft, es esencial establecer correctamente el ámbito de autorización. Para establecer el ámbito de autorización y conectar AEM Forms a su almacenamiento de Microsoft® SharePoint:
 

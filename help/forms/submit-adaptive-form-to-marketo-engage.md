@@ -1,14 +1,14 @@
 ---
-Title: How to configure submit action to Marketo Engage for forms?
-Description: Learn how to configure the submit action of Adaptive Form to send data to Marketo Engage.
-Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: Configurar la acción de envío en Marketo Engage para formularios
+description: Obtenga información sobre cómo configurar la acción de envío del formulario adaptable para enviar datos a Marketo Engage.
+keywords: Enviar datos para que Marketo Engage configure la acción de envío como Enviar a Marketo Engage
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 15%
+source-wordcount: '772'
+ht-degree: 14%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 15%
 
 ![Flujo de trabajo](/help/forms/assets/workflow-marketo-3.png)
 
-El editor de Forms adaptable proporciona la acción de envío **Enviar a Marketo Engage** para enviar datos de Forms adaptables a Adobe Marketo Engage para su procesamiento. Puede configurar un formulario adaptable existente para enviar datos a [Adobe Marketo Engage](https://experienceleague.adobe.com/es/docs/marketo/using/home) en el envío.
+El editor de Forms adaptable proporciona la acción de envío **Enviar a Marketo Engage** para enviar datos de Forms adaptables a Adobe Marketo Engage para su procesamiento. Puede configurar un formulario adaptable existente para enviar datos a [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) en el envío.
 
 Hay disponibles varias acciones de envío listas para usar para administrar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
 
@@ -97,7 +97,7 @@ Después de configurar la acción de envío para el formulario adaptable como **
 
 ## Siguiente paso
 
-También puede conectar un formulario adaptable con la [biblioteca de Munchkin](https://experienceleague.adobe.com/es/docs/marketo/using/product-docs/administration/setup/munchkin) para hacer un seguimiento del número de visitas, clics y envíos de formularios.
+También puede conectar un formulario adaptable con la [biblioteca de Munchkin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) para hacer un seguimiento del número de visitas, clics y envíos de formularios.
 
 ## Artículos relacionados
 
