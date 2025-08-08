@@ -4,10 +4,10 @@ description: Creación de componentes personalizados para un formulario EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1789'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -44,11 +44,14 @@ Al final de este artículo, aprenderá a crear componentes personalizados desde 
 
 Para poder utilizar un componente personalizado, debe registrarse para que el Editor universal lo reconozca como una opción disponible. Esto se logra a través de una definición de componente, que incluye un identificador único, propiedades predeterminadas y la estructura del componente. Realice los siguientes pasos para que el componente personalizado esté disponible para la creación de formularios:
 
-1. **Añadir carpetas y archivos nuevos**
-Agregue carpetas y archivos nuevos para el nuevo componente personalizado en su proyecto de AEM.
+1. **Agregar carpeta y archivos nuevos**
+
+   Agregue carpetas y archivos nuevos para el nuevo componente personalizado en su proyecto de AEM.
+
    1. Abra el proyecto de AEM y navegue hasta `../blocks/form/components/`.
    1. Añada una carpeta nueva para el componente personalizado en `../blocks/form/components/<component_name>`. En este ejemplo, creamos una carpeta denominada `range`.
    1. Vaya a la carpeta recién creada en `../blocks/form/components/<component_name>`. Por ejemplo, vaya a `../blocks/form/components/range` y agregue los siguientes archivos:
+
       - `/blocks/form/components/range/_range.json`: contiene la definición del componente personalizado.
       - `../blocks/form/components/range/range.css`: define el estilo del componente personalizado.
       - `../blocks/form/components/range/range.js`: personaliza el componente personalizado durante la ejecución.
@@ -358,18 +361,18 @@ Puede modificar los componentes personalizados mediante marcado predefinido, tal
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /- Dark Blue */
-   border: 3px solid #00008B; /- Dark Blue */
+   background: #00008B; /* Dark Blue */
+   border: 3px solid #00008B; /* Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /- Dark Blue */
+   border-color: #00008B; /* Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /- Dark Blue */
+   color: #00008B; /* Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -407,7 +410,7 @@ Puede modificar los componentes personalizados mediante marcado predefinido, tal
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
+   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),

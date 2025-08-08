@@ -1,18 +1,17 @@
 ---
-title: Rellenado previo de los campos del formulario adaptable
+title: Cómo rellenar previamente los campos de formulario adaptable
 description: Utilice los datos existentes para rellenar previamente los campos de un formulario adaptable. Los usuarios pueden rellenar previamente la información básica de un formulario iniciando sesión con sus perfiles sociales.
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: prerrellenar formularios adaptables, servicios de entrega de Edge de formularios adaptables, autorrellenar formularios adaptables
-source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1829'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
-
 
 # Configuración del servicio de relleno previo en Forms adaptable mediante Edge Delivery Services
 
@@ -37,9 +36,9 @@ El diagrama siguiente ilustra el proceso de relleno previo automático que se pr
 El proceso de rellenado previo incluye cuatro pasos clave:
 
 1. **El usuario abre el formulario**: El usuario accede a un formulario adaptable a través de una URL o navegación
-2. **Identificar Source de datos**: el servicio de relleno previo determina el origen de datos configurado (modelo de datos de formulario o servicio de borrador)
-3. **Recuperar datos**: el sistema recupera datos de usuario relevantes en función del contexto, los parámetros o la identificación del usuario
-4. **Asignar y mostrar**: los datos se asignan a campos de formulario con las propiedades `bindRef` y el formulario rellenado se muestra al usuario
+1. **Identificar Source de datos**: el servicio de relleno previo determina el origen de datos configurado (modelo de datos de formulario o servicio de borrador)
+1. **Recuperar datos**: el sistema recupera datos de usuario relevantes en función del contexto, los parámetros o la identificación del usuario
+1. **Asignar y mostrar**: los datos se asignan a campos de formulario con las propiedades `bindRef` y el formulario rellenado se muestra al usuario
 
 Este proceso automatizado garantiza que los usuarios vean un formulario previamente rellenado con su información relevante, lo que mejora significativamente la experiencia del usuario y las tasas de finalización del formulario.
 
@@ -62,7 +61,6 @@ El formato de datos debe coincidir con el modelo de formulario:
 - **Formularios de esquema JSON**: JSON compatible con el esquema
 - **Formularios de modelo de datos de formulario (FDM)**: JSON que coincide con la estructura de FDM
 - **Formularios sin esquema**: todos los campos son independientes y utilizan XML independiente
-
 
 ## Requisitos previos
 
@@ -106,39 +104,39 @@ El editor universal proporciona dos opciones de servicio de relleno previo:
 
 ## Configurar el servicio de rellenado previo para un formulario
 
-
 +++Fase 1: Configuración del modelo de datos de formulario
 
 ### Paso 1: Crear un modelo de datos de formulario
 
 1. Inicie sesión en la instancia de as a Cloud Service de AEM Forms
-2. Vaya a **Adobe Experience Manager** > **Forms** > **Integraciones de datos**
-3. Seleccione **Crear** > **Modelo de datos de formulario**
-4. Elija su **Configuración de Data Source** y seleccione el **Source de datos** configurado
+1. Vaya a **Adobe Experience Manager** > **Forms** > **Integraciones de datos**
+1. Seleccione **Crear** > **Modelo de datos de formulario**
+1. Elija su **Configuración de Data Source** y seleccione el **Source de datos** configurado
 
    ![Modelo de datos de formulario creado](/help/edge/docs/forms/universal-editor/assets/create-fdm.png)
 
    >[!TIP]
    >
-   > Para obtener instrucciones detalladas sobre la creación de modelos de datos de formulario, consulte [Crear un modelo de datos de formulario](/help/forms/create-form-data-models.md).
+   >Para obtener instrucciones detalladas sobre la creación de modelos de datos de formulario, consulte [Crear un modelo de datos de formulario](/help/forms/create-form-data-models.md).
 
 ### Paso 2: Configurar los servicios de FDM
 
 1. Vaya a **Adobe Experience Manager** > **Forms** > **Integraciones de datos**
-2. Abra el modelo de datos de formulario en el modo Edición
-3. Seleccione un objeto del modelo de datos y haga clic en **Editar propiedades**
-4. Configure los servicios **Read** y **Write** para los objetos del modelo de datos seleccionado
+1. Abra el modelo de datos de formulario en el modo Edición
+1. Seleccione un objeto del modelo de datos y haga clic en **Editar propiedades**
+1. Configure los servicios **Read** y **Write** para los objetos del modelo de datos seleccionado
 
    ![Configurar servicio de lectura/escritura](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
-5. Configure los argumentos del servicio:
+1. Configure los argumentos del servicio:
+
    - Haga clic en el icono de edición del argumento del servicio de lectura
    - Enlace el argumento a un **atributo de perfil de usuario**, **atributo de solicitud** o **valor literal**
    - Especifique el valor del enlace (por ejemplo, `petid` para un formulario de registro de mascota)
 
    ![Configurar el argumento del ID de la mascota](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
 
-6. Haga clic en **Listo** para guardar el argumento y en **Guardar** para guardar el FDM
+1. Haga clic en **Listo** para guardar el argumento y en **Guardar** para guardar el FDM
 
    >[!NOTE]
    >
@@ -251,7 +249,7 @@ Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 3. Elegir **vista previa como HTML**
 4. Pruebe el relleno previo añadiendo parámetros a la dirección URL:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Ejemplo:**
 
@@ -271,19 +269,19 @@ El formulario debe rellenarse automáticamente con datos basados en el parámetr
 
     &quot;
     
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
+    {
+    &quot;afBoundData&quot;: {
+    &quot;user&quot;: {
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    &rbrace;
+    }
     ,
-    &quot;afUnBoundData&quot;: &lbrace;
+    &quot;afUnBoundData&quot;: {
     &quot;additionalInfo&quot;: &quot;Preferencias de usuario cargado &quot;
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     &quot;
 
