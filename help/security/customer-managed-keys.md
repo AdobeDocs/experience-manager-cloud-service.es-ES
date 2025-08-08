@@ -7,7 +7,7 @@ exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 source-git-commit: 6db226bf1cd6de0e64cd07de35137ab4bd3b9b22
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -40,8 +40,8 @@ También se le guiará a través de los siguientes pasos para crear y configurar
 1. Configurar su entorno
 1. Obtener un ID de aplicación de Adobe
 1. Crear un nuevo grupo de recursos
-1. Creación de un almacén de claves
-1. Conceder acceso de Adobe al almacén de claves
+1. Crear un almacén de claves
+1. Conceder a Adobe acceso al almacén de claves
 1. Crear una clave de cifrado
 
 Deberá compartir la dirección URL del almacén de claves, el nombre de la clave de cifrado y la información sobre el almacén de claves con Adobe.
@@ -50,7 +50,7 @@ Deberá compartir la dirección URL del almacén de claves, el nombre de la clav
 
 La interfaz de línea de comandos (CLI) de Azure es el único requisito de esta guía. Si todavía no tiene instalada la CLI de Azure, siga las instrucciones de instalación oficiales [aquí](https://learn.microsoft.com/es-es/cli/azure/install-azure-cli).
 
-Antes de continuar con el resto de esta guía, inicie sesión en su CLI con `az login`.
+Antes de continuar con el resto de esta guía, inicie sesión en la CLI con `az login`.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Antes de continuar con el resto de esta guía, inicie sesión en su CLI con `az 
 
 ## Iniciar el proceso de configuración de CMK para AEM as a Cloud Service {#request-cmk-for-aem-as-a-cloud-service}
 
-Debe solicitar la configuración de claves administradas por el cliente (CMK) para su entorno de AEM as a Cloud Service a través de la interfaz de usuario de. Para ello, vaya a la interfaz de usuario de AEM Home Security, en la sección **Claves administradas por el cliente**.
+Debe solicitar la configuración de las claves administradas por el cliente (CMK) para su entorno de AEM as a Cloud Service a través de la interfaz de usuario. Para ello, vaya a la interfaz de usuario de AEM Home Security, en la sección **Claves administradas por el cliente**.
 A continuación, puede iniciar el proceso de incorporación haciendo clic en el botón **Iniciar incorporación**.
 
 ![Iniciar la incorporación de un sitio web mediante la interfaz de usuario de CMK](./assets/cmk/step1.png)
@@ -67,13 +67,13 @@ A continuación, puede iniciar el proceso de incorporación haciendo clic en el 
 
 ## Obtener un ID de aplicación de Adobe {#obtain-an-application-id-from-adobe}
 
-Después de iniciar el proceso de incorporación, Adobe proporcionará un ID de aplicación adicional. Este ID de aplicación es necesario para el resto de la guía y se utilizará para crear una entidad de seguridad de servicio que permita a Adobe acceder a su almacén de claves. Si todavía no tiene un ID de aplicación, debe esperar hasta que Adobe lo proporcione.
+Después de iniciar el proceso de incorporación, Adobe proporcionará un ID de aplicación de Entra. Este ID de aplicación es necesario para el resto de la guía y se utilizará para crear un principal de servicio que permita a Adobe acceder a su almacén de claves. Si todavía no tiene un ID de aplicación, debe esperar hasta que Adobe se lo proporcione.
 
-![La solicitud se está procesando. Espere a que Adobe proporcione el identificador de aplicación adicional](./assets/cmk/step2.png)
+![La solicitud se está procesando. Espere a que Adobe proporcione el identificador de aplicación de Entra](./assets/cmk/step2.png)
 
 Una vez completada la solicitud, podrá ver el ID de la aplicación en la interfaz de usuario de CMK.
 
-![Adobe ha proporcionado el identificador de aplicación adicional](./assets/cmk/step3.png)
+![Adobe ha proporcionado el identificador de aplicación de Entra](./assets/cmk/step3.png)
 
 ## Crear un nuevo grupo de recursos {#create-a-new-resource-group}
 
@@ -92,7 +92,7 @@ Si ya dispone de un grupo de recursos, no dude en utilizarlo en su lugar. En el 
 
 ## Crear un almacén de claves {#create-a-key-vault}
 
-Deberá crear un almacén de claves que contenga la clave de cifrado. El almacén de claves debe tener habilitada la protección contra depuración. La protección contra depuración es necesaria para cifrar datos en reposo desde otros servicios de Azure. El acceso a la red pública debe estar habilitado para garantizar que los servicios de Adobe puedan acceder al almacén de claves.
+Deberá crear un almacén de claves que contenga la clave de cifrado. El almacén de claves debe tener habilitada la protección contra depuración. La protección contra depuración es necesaria para cifrar datos en reposo desde otros servicios de Azure. El acceso a la red pública también debe estar habilitado para garantizar que los servicios de Adobe puedan acceder al almacén de claves.
 
 >[!IMPORTANT]
 >La creación de Key Vault con el acceso a la red pública desactivado exige que todas las operaciones relacionadas con Key Vault, como la creación o rotación de claves, se ejecuten desde un entorno que tenga acceso de red a KeyVault, por ejemplo, una VM que pueda acceder a KeyVault.
@@ -120,7 +120,7 @@ az keyvault create `
 
 En este paso permitirá que Adobe acceda a su almacén de claves a través de una aplicación Entra. Adobe debería haber proporcionado ya el ID de la aplicación Entra.
 
-En primer lugar, debe crear una entidad de seguridad de servicio adjunta a la aplicación Entra y asignarle los roles **Key Vault Reader** y **Key Vault Crypto User**. Las funciones se limitan al almacén de claves creado en esta guía.
+En primer lugar, debe crear una entidad principal de servicio adjunta a la aplicación Entra y asignarle las funciones **Key Vault Reader** y **Key Vault Crypto User**. Las funciones se limitan al almacén de claves creado en esta guía.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -180,7 +180,6 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
 Proporcione esta información en la interfaz de usuario de CMK:
 ![Rellene la información de la interfaz de usuario](./assets/cmk/step3a.png)
 
@@ -197,11 +196,11 @@ Una vez que haya proporcionado la información necesaria en la interfaz de usuar
 ![Espere a que Adobe configure el entorno.](./assets/cmk/step4.png)
 
 
-## Completar la configuración de CMK {#complete-the-cmk-setup}
+## Complete la configuración de CMK {#complete-the-cmk-setup}
 
 Una vez completado el proceso de configuración, podrá ver el estado de la configuración de CMK en la interfaz de usuario. También puede ver el almacén de claves y la clave de cifrado.
 ![El proceso se ha completado](./assets/cmk/step5.png)
 
-## Preguntas y asistencia {#questions-and-support}
+## Preguntas y asistencia  {#questions-and-support}
 
 Póngase en contacto con nosotros si tiene alguna pregunta, consulta o necesita ayuda con la configuración de claves administradas por el cliente para AEM as a Cloud Service. El Soporte de Adobe puede ayudarle con cualquier pregunta que pueda tener.
