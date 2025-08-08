@@ -4,10 +4,10 @@ description: Obtenga información sobre la versión 2025.8.0 de Cloud Manager en
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3111e74e844fb37afa0c7d218c37014d32ad0a64
+source-git-commit: c465542d5e89dbae0eb1c380ca1e7756d0beb2b6
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 60%
+source-wordcount: '1308'
+ht-degree: 59%
 
 ---
 
@@ -25,11 +25,6 @@ La fecha de lanzamiento de Cloud Manager 2025.8.0 en AEM as a Cloud Service fue 
 
 La próxima versión está planificada para el viernes, 04 de septiembre de 2025.
 
-
-
-
-
-
 ## Novedades {#what-is-new}
 
 * **La licencia de Edge Delivery Services se puede incluir en un programa HIPAA en forma de autoservicio**
@@ -42,7 +37,7 @@ La próxima versión está planificada para el viernes, 04 de septiembre de 2025
 
 * **Aprovisionamiento automatizado para el nuevo complemento de Forms**
 
-  Los clientes solo de Sites suelen necesitar una forma ligera y de bajo coste de crear formularios de marketing. El nuevo complemento de AEM Forms Sites satisface esas necesidades al agregar funciones limitadas de Forms a un programa de Sites. También crea una ruta de actualización clara a la oferta completa de AEM Forms, si lo desea. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+  Los clientes solo de Sites suelen necesitar una forma ligera y de bajo coste de crear formularios de marketing. El nuevo complemento de AEM Forms Sites satisface esas necesidades al agregar funciones limitadas de Forms a un programa de Sites. También crea una ruta de actualización clara a la oferta completa de AEM Forms. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
   El complemento:
    * Se adjunta a un programa de Sites y se implementa junto a él; no hay programa de Forms ni asignación de derechos independientes.
@@ -67,13 +62,13 @@ Actualmente están disponibles las siguientes oportunidades:
 
 Vuelva rápidamente a una implementación anterior si el código fuente del cliente más reciente no funciona como se esperaba; no es necesario volver a ejecutar la canalización completa ni revertir las confirmaciones manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**&#x200B;para un entorno seleccionado.*
+![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**para un entorno seleccionado.*
 
 ![Cuadro de diálogo Restaurar código anterior implementado](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *En el cuadro de diálogo **Restaurar código anterior implementado**, revise la versión implementada actualmente y la versión que desea restaurar, luego haga clic en **Confirmar***.
 
 ![Activación de Restaurando](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**&#x200B;hasta que finalice la implementación.*
+*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**hasta que finalice la implementación.*
 
 ![Versión del código fuente en uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vista de detalles del entorno, vista desde arriba, ahora también muestra la versión activa del código fuente en uso.*
 
@@ -82,7 +77,6 @@ Si le interesa probar esta nueva función y compartir sus comentarios, envíe un
 Consulte [Restaurar el código anterior implementado en AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
 Consulte [Restauración de contenido en AEM as a Cloud Service](/help/operations/restore.md).
-
 
 ### Entorno de pruebas especializadas {#specialized-test-environment}
 
@@ -158,7 +152,7 @@ Ahora se admiten las canalizaciones de configuración para los sitios creados co
 
 Ver [Agregar canalización de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 
-Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ## Correcciones de errores
