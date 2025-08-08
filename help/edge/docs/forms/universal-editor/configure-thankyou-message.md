@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo se puede redirigir a los usuarios 
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 958891216e117acc03c50446ae92f85108d275a7
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 52%
@@ -56,5 +56,3 @@ Para configurar la página de redireccionamiento o el mensaje de agradecimiento:
 ![gracias](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 Los autores de formularios pueden configurar una página para cada formulario, a la cual se redirigirá a los usuarios una vez enviado.
-
-

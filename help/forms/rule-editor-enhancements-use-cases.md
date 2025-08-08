@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -59,7 +59,7 @@ En la regla anterior, el botón **Siguiente** comprueba si los campos de la secc
 
 >[!NOTE]
 >
-> Puede usar el método **validate()** en formularios, fragmentos o campos individuales. Cuando se incluye un fragmento en un formulario, tanto el formulario como el fragmento aparecen como opciones en el contexto de validación. En este caso, el fragmento hace referencia a los campos que contiene, mientras que el formulario hace referencia al formulario principal en el que está incrustado el fragmento.
+>Puede usar el método **validate()** en formularios, fragmentos o campos individuales. Cuando se incluye un fragmento en un formulario, tanto el formulario como el fragmento aparecen como opciones en el contexto de validación. En este caso, el fragmento hace referencia a los campos que contiene, mientras que el formulario hace referencia al formulario principal en el que está incrustado el fragmento.
 
 ## Descargar documento como función OOTB en el editor de reglas
 
@@ -67,7 +67,7 @@ El uso de la función **DownloadDor()** predeterminada (OOTB) en el Editor de re
 
 >[!NOTE]
 >
-> Si el formulario no está configurado para el documento de registro, se muestra un mensaje de error cuando se aplica la regla con la función **downloadDoR()** al botón.
+>Si el formulario no está configurado para el documento de registro, se muestra un mensaje de error cuando se aplica la regla con la función **downloadDoR()** al botón.
 
 **Escenario**: una agencia gubernamental proporciona un formulario de solicitud digital para emitir certificados. Después de enviar el formulario, los solicitantes a menudo necesitan una copia del formulario completado para sus registros o para compartirlo con otro departamento. Para mejorar la experiencia del usuario, la agencia quiere dar a los solicitantes la opción de descargar un documento de registro (DoR) inmediatamente después del envío o en cualquier etapa antes del envío final.
 
