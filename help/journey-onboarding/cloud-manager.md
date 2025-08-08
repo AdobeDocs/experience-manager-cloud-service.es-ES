@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo acceder a Cloud Manager para confi
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1040'
-ht-degree: 100%
+source-git-commit: 4cad0ea1be4cba1c7f1af55cc760fb65fdc3cc4a
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 75%
 
 ---
 
@@ -17,9 +17,9 @@ En esta parte del [recorrido de incorporación](overview.md), aprenderá a acced
 
 ## Objetivo {#objective}
 
-En el artículo anterior de este recorrido de incorporación, [Asignar integrantes del equipo a perfiles de producto de Cloud Manager](assign-profiles-cloud-manager.md), ha concedido a su equipo de AEMaaCS las funciones adecuadas. Ahora aprenda a acceder a Cloud Manager para poder configurar los recursos de su proyecto que utilizará su equipo.
+En el artículo anterior de este recorrido de incorporación, [Asignar integrantes del equipo a perfiles de producto de Cloud Manager](assign-profiles-cloud-manager.md), ha concedido a su equipo de AEMaaCS las funciones adecuadas. Obtenga información sobre cómo acceder a Cloud Manager para configurar los recursos del proyecto que desea utilizar su equipo.
 
-Desde que ha completado el paso anterior en este recorrido, su equipo puede acceder a Cloud Manager. Cloud Manager se utiliza para crear y administrar los recursos de sus proyectos, como programas y entornos.
+Desde que ha completado el paso anterior en este recorrido, su equipo puede acceder a Cloud Manager. Cloud Manager se utiliza para crear y administrar los recursos del proyecto, como programas y entornos.
 
 Después de leer este documento, debería poder comprender lo siguiente:
 
@@ -30,23 +30,23 @@ Después de leer este documento, debería poder comprender lo siguiente:
 
 Cloud Manager es un componente esencial de AEM as a Cloud Service y sirve como punto de entrada único para su equipo. Admite clientes con configuraciones de desarrollo empresarial con sus canalizaciones de CD/CI creadas específicamente, que están equipadas para garantizar pruebas exhaustivas y la máxima calidad de código para ofrecer experiencias excepcionales. Cloud Manager proporciona todo lo necesario para comenzar en forma de autoservicio, incluida la capacidad de crear los recursos y entornos de la nube.
 
-Normalmente, un miembro del equipo asignado al perfil de producto **Propietario empresarial** es responsable de añadir los recursos de la nube, como programas y entornos. Esta persona comprende las necesidades comerciales y completa la configuración inicial de Cloud Manager.
+Normalmente, un miembro del equipo asignado al perfil de producto **Propietario empresarial** es responsable de agregar los recursos de la nube, como programas y entornos. Esta persona comprende las necesidades comerciales y completa la configuración inicial de Cloud Manager.
 
 A efectos de este recorrido de incorporación, usted, como administrador del sistema, ya se ha asignado el perfil de producto **Propietario empresarial** y configurará los recursos de la nube. Dependiendo de los requisitos reales del proyecto, los propietarios del negocio pueden ser o no iguales que el administrador del sistema.
 
 ## Acceder a Cloud Manager como administrador del sistema y propietario empresarial {#access-sysadmin-bo}
 
-Antes de los integrantes del equipo que usted asignó a la función **Propietario del negocio** puede acceder a cloud manager y empezar a crear recursos en la nube, el administrador del sistema debe tener asignada la función **Propietario del negocio**. También deben iniciar sesión en Cloud Manager como lo hizo en el paso anterior en este recorrido de incorporación.
+Antes de que los integrantes del equipo que asignó a la función **Propietario empresarial** puedan acceder a Cloud Manager y comenzar a crear recursos en la nube, se debe asignar al administrador del sistema la función **Propietario empresarial**. También deben iniciar sesión en Cloud Manager como lo hizo en el paso anterior en este recorrido de incorporación.
 
 1. Asegúrese de que, como administrador del sistema, tiene la función **Propietario empresarial** asignada.
 
-   * Regrese al paso anterior de este recorrido, [Asignar integrantes del equipo a perfiles de producto de Cloud Manager](assign-profiles-cloud-manager.md), para obtener más información sobre cómo asignar la función **Propietario del negocio** al administrador del sistema si aún no lo ha hecho.
+   Vuelva al paso anterior, [Asignar integrantes del equipo a perfiles de producto de Cloud Manager](assign-profiles-cloud-manager.md), para obtener detalles sobre cómo asignar el rol **Propietario empresarial** al administrador del sistema.
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y aparecerá la página de aterrizaje normal.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-Al iniciar sesión correctamente como administrador del sistema con la función **Propietario empresarial**, inicialice Cloud Manager para que lo utilicen los demás usuarios con la función **Propietario empresarial**. No recibe ninguna confirmación ni ningún mensaje. Basta con iniciar sesión.
+Al iniciar sesión correctamente como administrador del sistema con la función **Propietario empresarial**, inicializa Cloud Manager para que lo usen los demás usuarios con la función **Propietario empresarial**. No recibe ninguna confirmación ni ningún mensaje. Basta con iniciar sesión.
 
-Hasta que inicie sesión en Cloud Manager como administrador del sistema con la función **Propietario del negocio**, otros usuarios con la función **Propietario del negocio** no puede crear programas en Cloud Manager. Esta regla es verdadera aunque se les asignen las funciones correctas.
+Hasta que inicie sesión en Cloud Manager como administrador del sistema con la función **Propietario empresarial**, los demás usuarios con la función **Propietario empresarial** no podrán crear programas en Cloud Manager. Esta regla es verdadera aunque se les asignen las funciones correctas.
 
 ## Navegar a Cloud Manager {#navigate-cloud-manager}
 
@@ -61,9 +61,9 @@ Los usuarios con la función **Propietario del negocio** recibirán un correo el
    >
    >También puede navegar directamente a la página de inicio de sesión de Cloud Manager desde `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Añada esta página a marcadores para volver a ella en el futuro.
 
-1. Se le dirigirá a la página de aterrizaje de Cloud Manager.
+1. Se le dirigirá a la página de destino de Cloud Manager.
 
-También puede navegar hasta la página **Programas y productos** de Cloud Manager desde la página de inicio de Adobe Experience Cloud siguiendo estos pasos
+También puede navegar a la página **Programas y productos** de Cloud Manager desde la página de inicio de Adobe Experience Cloud siguiendo estos pasos.
 
 1. Vaya directamente a [Adobe Experience Cloud](https://experience.adobe.com) e inicie sesión con su Adobe ID.
 
@@ -75,7 +75,7 @@ También puede navegar hasta la página **Programas y productos** de Cloud Manag
 
    ![Página principal de AEM](/help/journey-onboarding/assets/setup-resources3.png)
 
-1. Después de iniciar sesión correctamente, se le dirigirá a la página de aterrizaje de Cloud Manager. Consulte [Visualización de los programas de Cloud Manager](#viewing-programs) para obtener más información.
+1. Después de iniciar sesión correctamente, se le dirigirá a la página de destino de Cloud Manager. Consulte [Visualización de los programas de Cloud Manager](#viewing-programs) para obtener más información.
 
 La forma de acceder a sus programas y productos a través de Cloud Manager depende de usted y no tiene ningún efecto en cómo utiliza Cloud Manager ni en cómo administra sus programas.
 
@@ -89,19 +89,19 @@ Una vez que acceda correctamente a Cloud Manager, lo que vea dependerá del esta
 
 ### Cuando no existen programas {#no-programs}
 
-Si su organización no cuenta con ningún programa, la página de aterrizaje le indicará que cree su primer programa.
+Si su organización no cuenta con ningún programa, la página de destino le indicará que cree su primer programa.
 
 ![Sin programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
 ### Cuando los programas ya existen {#programs-exist}
 
-Si los programas ya existen en su organización, la página de aterrizaje muestra los programas existentes y también ofrece un botón para agregar programas adicionales.
+Si los programas ya existen en su organización, la página de destino muestra los programas existentes y también ofrece un botón para agregar programas adicionales.
 
 ![Existen programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
 ### Cuando existe un programa y usted es administrador del sistema {#programs-exist-sysadmin}
 
-Si los programas ya existen en su organización y usted es administrador del sistema, su página de aterrizaje incluye el botón **Administrar acceso** junto con la opción **Agregar programa**.
+Si hay programas en su organización y usted es administrador del sistema, la página de aterrizaje muestra el botón **Administrar acceso** junto con la opción **Agregar programa**.
 
 ![Vista del administrador del sistema](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
