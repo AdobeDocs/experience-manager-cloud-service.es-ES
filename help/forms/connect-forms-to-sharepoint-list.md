@@ -1,14 +1,14 @@
 ---
+title: ¿Cómo enviar datos a un almacenamiento de lista de SharePoint al enviar un formulario adaptable?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: ¿Cómo conectar la lista de SharePoint para un formulario adaptable?, Enviar a SharePoint, Crear una configuración de lista de SharePoint, Utilizar la acción de envío Enviar a SharePoint en un formulario adaptable, Conectar un formulario adaptable a Microsoft&reg; Lista de SharePoint.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
-title: ¿Cómo configurar una acción de envío para un formulario adaptable?
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 81%
+source-wordcount: '460'
+ht-degree: 80%
 
 ---
 

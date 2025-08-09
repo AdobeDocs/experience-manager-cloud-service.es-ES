@@ -4,10 +4,10 @@ description: Utilice el editor universal de Edge Delivery Services para formular
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
+source-wordcount: '984'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Tanto si gestiona un renderizado ligero del lado del cliente, garantiza la compa
 
 | ![Estilo](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Servicios de rellenado previo](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![Pruebas A/B](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Estilo**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Servicios de rellenado previo** (próximamente) | [**Pruebas A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**Estilo**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[Rellenar previamente formularios](/help/edge/docs/forms/universal-editor/prefill-form.md)** | [**Pruebas A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | Aplicar estilo con CSS permite a los desarrolladores personalizar el aspecto de los elementos del formulario y crear un diseño visualmente atractivo que se ajuste a la estética del sitio web. | Los servicios de rellenado previo completan de forma automática los campos de formulario con datos de usuario relevantes de varias fuentes, lo que reduce la entrada manual y mejora la experiencia del usuario. | Las pruebas A/B permiten a las organizaciones experimentar con diferentes diseños de formulario, diseños y características para identificar las variantes de mejor rendimiento. |
 
 | ![Análisis y seguimiento](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Fragmentos de formulario](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Enlace de datos](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |

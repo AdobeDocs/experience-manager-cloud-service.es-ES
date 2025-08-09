@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '2383'
 ht-degree: 1%
 
 ---
@@ -16,8 +16,9 @@ ht-degree: 1%
 
 # Creación de Forms adaptable con editor universal
 
-Los usuarios acceden a formularios en una amplia gama de dispositivos, incluidos escritorios, tabletas y smartphones. El diseño de formularios adaptables garantiza una experiencia óptima para todos los usuarios, independientemente del dispositivo. En esta guía se explica cómo diseñar, probar y optimizar formularios para cualquier tamaño de pantalla con el Editor universal.
+El panorama web moderno exige formularios que funcionen sin problemas en un espectro cada vez más amplio de dispositivos y tamaños de pantalla. Desde grandes monitores de escritorio hasta pantallas compactas para smartphones, los usuarios esperan experiencias consistentes e intuitivas independientemente del dispositivo que elijan. La creación de formularios adaptables ya no es opcional: es un requisito fundamental para ofrecer experiencias digitales profesionales, accesibles y optimizadas para la conversión.
 
+Universal Editor proporciona herramientas y metodologías completas para desarrollar formularios adaptables que se adaptan de forma inteligente a varias dimensiones de pantalla, métodos de entrada y contextos de usuario. Esta guía explora los fundamentos técnicos, las estrategias de implementación y las técnicas de optimización necesarias para crear formularios que funcionen de forma excepcional en todos los dispositivos, al tiempo que mantienen la facilidad de uso, la accesibilidad y el atractivo visual.
 
 La creación de formularios adaptables implica dos actividades principales:
 
@@ -160,115 +161,116 @@ Los patrones de diseño determinan la forma en que el contenido del formulario s
 
 ### Diseño de panel
 
-**Propósito:** organiza el contenido relacionado en secciones visualmente distintas que se pueden ver simultáneamente.
+El diseño del panel organiza el contenido relacionado en secciones visualmente distintas, lo que permite a los usuarios ver varias secciones a la vez. Este diseño es ideal para los formularios con información clasificada que se beneficia de una presentación simultánea en pantallas más grandes.
 
 ![Ejemplo de diseño de panel](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
-**Comportamiento interactivo:**
+**Comportamiento interactivo**
 
-- **Escritorio (1200px+):** paneles se muestran uno al lado del otro o en una cuadrícula
-- **Tablet (768px-1199px):** paneles apilados verticalmente con espaciado
-- **Móvil (320px-767px):** Diseño de una sola columna con saltos de sección claros
+- **Escritorio (1200 px y superior):** paneles se muestran uno al lado del otro o en una cuadrícula para obtener la máxima visibilidad.
+- **Tableta (768px-1199px):** Los paneles se apilan verticalmente con el espaciado adecuado para mantener la claridad.
+- **Móvil (320px-767px):** Los paneles se presentan en un diseño de una sola columna, con una clara separación entre las secciones para facilitar la navegación.
 
-**Pasos de implementación:**
+**Cómo implementar**
 
-1. Usar [componente Panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
-2. Agrupar campos relacionados dentro de cada panel.
-3. Agregue encabezados claros para cada sección.
-4. Asegúrese de que haya un espacio adecuado entre los paneles.
+1. Agregue el [componente Panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) al formulario.
+2. Agrupe los campos relacionados dentro de cada panel para mantener la organización lógica.
+3. Asigne encabezados claros y descriptivos a cada sección del panel.
+4. Asegúrese de que haya suficiente espacio entre los paneles para evitar el desorden visual.
 
-**Prácticas recomendadas:**
+**Prácticas recomendadas**
 
-- Limite entre 3 y 4 paneles en el escritorio para evitar abrumar a los usuarios.
-- Utilice títulos descriptivos para cada panel.
-- Agrupar lógicamente los campos relacionados para reducir la carga cognitiva.
-- Pruebe la navegación del panel en dispositivos táctiles.
+- Limite el número de paneles a 3 o 4 en el escritorio para evitar abrumar a los usuarios.
+- Utilice títulos concisos y descriptivos para cada panel para ayudar a los usuarios a comprender mejor.
+- Organice los campos dentro de los paneles de forma lógica para minimizar la carga cognitiva.
+- Pruebe la navegación del panel en dispositivos táctiles para garantizar la facilidad de uso en todas las plataformas.
 
-**Casos de uso de ejemplo:**
+**Casos de uso comunes**
 
-- **Solicitud de empleo:** Información personal, educación, experiencia, referencias
-- **Registro del producto:** Detalles básicos, especificaciones técnicas, información sobre la garantía
-- **Forms de encuesta:** datos demográficos, preferencias, comentarios, contacto
+- **Solicitud de empleo:** secciones de información personal, educación, experiencia y referencias.
+- **Registro del producto:** paneles para obtener detalles básicos, especificaciones técnicas e información sobre la garantía.
+- **Forms de encuesta:** agrupaciones para datos demográficos, preferencias, comentarios e información de contacto.
 
 ### Diseño de asistente
 
-**Propósito:** guía a los usuarios a través de procesos complejos paso a paso, reduciendo la carga cognitiva y mejorando las tasas de finalización.
+El diseño del asistente guía a los usuarios a través de un proceso de varios pasos, presentando una sección a la vez. Este diseño es especialmente eficaz para formularios complejos, ya que reduce la carga cognitiva y aumenta las tasas de finalización al dividir el proceso en pasos manejables.
 
 ![Ejemplo de diseño del asistente](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
-**Comportamiento interactivo:**
+**Comportamiento interactivo**
 
-- **Todos los dispositivos:** Mantiene el enfoque de un solo paso para una experiencia móvil óptima.
-- **Contenido del paso:** se adapta en cada paso (apilado o en paralelo).
-- **Navegación:** Botones táctiles con suficiente espacio.
-- **Indicador de progreso:** Escala correctamente el tamaño de la pantalla.
+- **Todos los dispositivos:** Mantiene un enfoque de un solo paso, lo cual es óptimo para los usuarios móviles.
+- **Contenido del paso:** Cada paso se adapta de forma responsable, apilando campos u organizándolos uno al lado del otro según corresponda para el tamaño de pantalla.
+- **Navegación:** Incluye botones táctiles con un espaciado adecuado para facilitar la interacción.
+- **Indicador de progreso:** Las barras de progreso o los indicadores de paso se escalan correctamente para diferentes dispositivos, lo que proporciona información clara sobre el estado de finalización.
 
-**Pasos de implementación:**
+**Cómo implementar**
 
-1. Usar el [componente Asistente](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
-2. Divida los formularios complejos en pasos lógicos (los pasos de 3 a 7 son óptimos).
-3. Incluya indicadores de progreso para la orientación del usuario.
-4. Proporcione controles de navegación claros (Siguiente, Atrás, Guardar).
+1. Inserte el [componente Asistente](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) en el formulario.
+2. Divida el formulario en pasos lógicos, idealmente entre 3 y 7, para mantener cada paso centrado y manejable.
+3. Añada indicadores de progreso para ayudar a los usuarios a comprender su posición en el proceso.
+4. Proporciona controles de navegación claros, como los botones Siguiente, Atrás y Guardar.
 
-**Optimización móvil:**
+**Consejos de optimización móvil**
 
-- Utilice destinos táctiles grandes (mínimo 44 píxeles) para los botones de navegación.
-- Asegúrese de que los indicadores de paso sean claros y visibles en las pantallas pequeñas.
-- Limite el número de campos por paso para reducir el desplazamiento.
-- Habilite el guardado automático para evitar la pérdida de datos.
+- Utilice destinos táctiles grandes (al menos 44 píxeles de altura) para los controles de navegación a fin de mejorar la accesibilidad.
+- Asegúrese de que los indicadores de paso sean visibles y legibles en las pantallas pequeñas.
+- Limite el número de campos por paso para minimizar el desplazamiento y mejorar el enfoque.
+- Habilite la funcionalidad de guardado automático para evitar la pérdida de datos si los usuarios abandonan el formulario.
 
-**Prácticas recomendadas:**
+**Prácticas recomendadas**
 
-- Asegúrese de la progresión lógica del paso: cada paso debe basarse en el anterior.
-- Utilice títulos de pasos claros para que los usuarios sepan qué esperar.
-- Valide la entrada en cada paso para detectar los errores de forma temprana.
-- Permite a los usuarios navegar hacia atrás para revisar o editar la información.
+- Diseñe pasos para seguir una progresión lógica, con cada paso basándose en el anterior.
+- Utilice títulos claros y descriptivos para cada paso a fin de establecer las expectativas del usuario.
+- Valide los datos introducidos por el usuario en cada paso para detectar los errores de forma temprana y reducir la frustración.
+- Permite a los usuarios retroceder para revisar o editar la información anterior sin perder datos.
 
-**Casos de uso de ejemplo:**
+**Casos de uso comunes**
 
-- **Reclamos de seguro:** Incidente → Evidencia → Revisión de → personal
-- **Configuración de cuenta:** Información básica → Preferencias → Confirmación de → de seguridad
-- **Proceso de pedido:** Productos → Envío → Resumen de → de pago
+- **Reclamos de seguro:** pasos para obtener detalles del incidente, envío de pruebas, información personal y revisión.
+- **Configuración de cuenta:** fases para obtener información básica, preferencias, configuración de seguridad y confirmación.
+- **Proceso de pedido:** Pasos para la selección de productos, la información de envío, los detalles de pago y el resumen del pedido.
 
 ### Diseño de acordeón
 
-**Objetivo:** Ahorra espacio al organizar el contenido en secciones contraíbles, lo que resulta ideal para la información opcional o secundaria.
+El diseño de acordeón ahorra espacio al organizar el contenido en secciones contraíbles, lo que lo hace ideal para información opcional o secundaria. Esta presentación es especialmente eficaz para los formularios con contenido que se puede agrupar lógicamente y no necesita mostrarse todo a la vez.
 
 ![Ejemplo de diseño de acordeón](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
-**Comportamiento interactivo:**
+**Comportamiento interactivo**
 
-- **Excelente rendimiento móvil:** Solo se muestra contenido relevante.
-- **Encabezados táctiles:** Fácil de tocar y expandir secciones.
-- **Animaciones suaves:** Proporcione comentarios visuales para las interacciones.
-- **Espacio eficiente:** minimiza el desplazamiento en todos los dispositivos.
+- **Rendimiento móvil:** Solo se expande la sección relevante, lo que reduce la necesidad de desplazarse y mejora los tiempos de carga.
+- **Encabezados táctiles optimizados:** Los encabezados de sección son fáciles de tocar y expandir y admiten gestos naturales en dispositivos móviles.
+- **Animaciones suaves:** Las secciones de expansión y contracción proporcionan comentarios visuales sobre las interacciones del usuario.
+- **Eficiencia de espacio:** Las secciones contraídas minimizan el espacio vertical, lo que facilita la navegación del formulario en todos los dispositivos.
 
-**Pasos de implementación:**
+**Cómo implementar**
 
-1. Usar el [componente Acordeón](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
-2. Agrupar contenido opcional relacionado en cada sección.
-3. Utilice encabezados de sección descriptivos.
-4. Establezca los estados abiertos/cerrados predeterminados adecuados.
+1. Agregue el [componente Acordeón](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) al formulario.
+2. Agrupar contenido opcional o secundario relacionado dentro de cada sección de acordeón.
+3. Utilice encabezados claros y descriptivos para cada sección a fin de ayudar a los usuarios a comprender qué información incluye.
+4. Establezca los estados predeterminados adecuados de apertura o cierre para cada sección en función de la importancia y las necesidades del usuario.
 
-**Ventajas móviles:**
+**Ventajas móviles**
 
-- Reduce el desplazamiento al contraer las secciones no utilizadas.
-- Interacción táctil con gestos naturales de expansión/contracción.
-- Carga más rápida: solo está visible el contenido activo.
-- Enfoque mejorado: los usuarios solo ven lo que necesitan.
+- Reduce el desplazamiento al contraer las secciones no utilizadas, lo que permite a los usuarios centrarse en una sección a la vez.
+- La interacción táctil admite gestos de expansión/contracción naturales.
+- Carga más rápida, ya que solo está visible el contenido activo.
+- Se ha mejorado el enfoque, ya que los usuarios solo ven la información que necesitan en un momento determinado.
 
-**Prácticas recomendadas:**
+**Prácticas recomendadas**
 
-- Utilice encabezados de sección claros para que los usuarios sepan qué hay dentro antes de expandirlo.
-- Agrupe el contenido relacionado lógicamente dentro de cada sección.
-- Configure las secciones importantes para que comiencen a expandirse si es necesario.
-- Proporcione vistas previas de sección breves para ayudar a los usuarios a decidir qué expandir.
+- Utilice encabezados de sección claros para que los usuarios sepan qué esperar antes de expandir una sección.
+- Agrupe el contenido relacionado lógicamente dentro de cada sección para ayudar a la comprensión.
+- Establecer secciones importantes para que comiencen a expandirse si se requiere atención inmediata.
+- Proporcione resúmenes o vistas previas de secciones breves para ayudar a los usuarios a decidir qué secciones expandir.
 
-**Casos de uso de ejemplo:**
+**Casos de uso comunes**
 
-- **Configuración del producto:** Accesorios → básicos → avanzados de →
-- **Preguntas más frecuentes sobre Forms:** Cuenta → Facturación → Técnico → General
-- **Configuración Forms:** Notificaciones de → de privacidad → Apariencia → avanzada
+- **Configuración del producto:** secciones para Opciones básicas, Configuración avanzada, Accesorios y Soporte técnico.
+- **Preguntas más frecuentes sobre Forms:** agrupaciones para preguntas de cuenta, facturación, técnicas y generales.
+- **Configuración Forms:** secciones para Privacidad, Notificaciones, Apariencia y Opciones avanzadas.
+
 
 ## Parte 3: Prácticas recomendadas de diseño interactivo
 
@@ -276,42 +278,42 @@ Los patrones de diseño determinan la forma en que el contenido del formulario s
 
 +++Optimización móvil (320px-767px)
 
-**Prácticas esenciales:**
+**Diseño e interacción:**
 
-- Utilice un diseño de una sola columna para todo el contenido.
-- Proporcionar botones grandes y táctiles (altura mínima de 44 píxeles).
-- Simplifique la navegación con opciones claras de atrás/siguiente.
-- Minimice el desplazamiento dentro de cada sección.
-- Enfoque automático en el primer campo para mostrar el teclado.
+- Utilice un diseño de una sola columna para todo el contenido del formulario para maximizar la legibilidad y facilidad de uso.
+- Asegúrese de que todos los botones y elementos interactivos tengan al menos 44 píxeles de altura para una interacción táctil fiable.
+- Proporciona una navegación clara y sencilla con botones visibles atrás y siguiente.
+- Minimice la necesidad de desplazarse dentro de cada sección separando los formularios largos.
+- Céntrese automáticamente en el primer campo de entrada para preguntar al teclado móvil.
 
-**Directrices específicas de campo:**
+**Directrices de campo:**
 
-- **Entradas de texto:** Anchura completa con relleno amplio.
-- **desplegables:** Use elementos seleccionados nativos para una mejor experiencia táctil.
-- **Selector de fecha:** Use entradas de fecha nativas para la compatibilidad móvil.
-- **Cargas de archivos:** Proporciona áreas de carga grandes y claras.
+- Los campos de texto deben abarcar el ancho completo de la pantalla con suficiente relleno para la entrada táctil.
+- Utilice elementos nativos de lista desplegable/selección para una óptima facilidad de uso móvil.
+- Implemente selectores de fechas nativos para obtener una experiencia móvil coherente.
+- Ampliar las áreas de carga de archivos y etiquetarlas con claridad para facilitar el acceso.
 
 +++
 
 +++Optimización de tableta (768px-1199px)
 
-**Estrategias de diseño:**
+**Diseño y uso:**
 
-- Utilice diseños de dos columnas para los campos relacionados.
-- Pruebe las orientaciones vertical y horizontal.
-- Admite interacciones táctiles y con el ratón.
-- Proporcione áreas de contenido más grandes sin perder la legibilidad.
+- Utilice diseños de dos columnas para campos relacionados para aprovechar el mayor espacio en pantalla.
+- Pruebe el aspecto y la facilidad de uso del formulario en orientación vertical y horizontal.
+- Diseñe tanto para la entrada táctil como para la del ratón, lo que garantiza que todos los controles sean fácilmente accesibles.
+- Aumente el tamaño del área de contenido al tiempo que mantiene una jerarquía visual y una legibilidad claras.
 
 +++
 
 +++Optimización de sobremesas (1200 px+)
 
-**Características avanzadas:**
+**Características avanzadas y diseño:**
 
-- Utilice diseños de varias columnas para un uso eficiente del espacio.
-- Ofrezca métodos abreviados del teclado para los usuarios avanzados.
-- Implemente estados de desplazamiento para los comentarios interactivos.
-- Proporcionar validación avanzada con mensajes de error detallados.
+- Utilice diseños de varias columnas para utilizar de forma eficaz el espacio horizontal y reducir el desplazamiento vertical.
+- Proporcione métodos abreviados del teclado para realizar acciones frecuentes con el fin de admitir usuarios avanzados.
+- Implementar estados de desplazamiento y comentarios visuales para elementos interactivos.
+- Ofrezca validación avanzada con mensajes de error claros y detallados para formularios complejos.
 
 +++
 
@@ -321,52 +323,52 @@ Los patrones de diseño determinan la forma en que el contenido del formulario s
 
 +++Saltos de diseño de formulario en dispositivos móviles
 
-**Causas comunes:**
+**Causas posibles:**
 
-- Elementos de ancho fijo que no se escalan
-- CSS diseñado para diseños que empiezan por el escritorio
-- Imágenes o contenido que rebosan sus contenedores
+- Elementos de ancho fijo que no se adaptan a pantallas más pequeñas
+- CSS con prioridad de escritorio que anula los estilos móviles
+- Las imágenes o el contenido desbordan sus contenedores
 
-**Soluciones:**
+**Corrección:**
 
-- Asegúrese de que las imágenes y los contenedores se adaptan al tamaño de pantalla.
-- Utilice un diseño con prioridad móvil con mejora progresiva.
-- Realice pruebas tanto con emuladores de dispositivos como con dispositivos reales.
-- Utilice un tamaño flexible en lugar de dimensiones fijas.
+- Asegúrese de que todas las imágenes y contenedores utilizan un tamaño relativo o basado en porcentajes.
+- Comience con un enfoque CSS basado en dispositivos móviles y cree capas de mejoras para pantallas más grandes.
+- Pruebe formularios utilizando emuladores de dispositivos y dispositivos reales.
+- Evite las dimensiones fijas; utilice diseños flexibles.
 
 +++
 
 +++Tocar destinos demasiado pequeños
 
-**Causas comunes:**
+**Causas posibles:**
 
-- Botones menores de 44 px × 44 px
+- Botones o vínculos de menos de 44 por 44 píxeles
 - Elementos interactivos colocados demasiado juntos
-- CSS personalizado que anula los valores predeterminados táctiles
+- CSS personalizado que reduce el tamaño de destino táctil predeterminado
 
-**Soluciones:**
+**Corrección:**
 
-- Asegúrese de que todos los elementos interactivos tengan al menos 44 px × 44 px.
-- Añada espaciado entre botones y vínculos.
-- Pruebe la interacción táctil con los dedos reales, no solo con un ratón.
-- Aumente las áreas de destino táctiles para facilitar los toques.
+- Asegúrese de que cada elemento interactivo tenga al menos 44 por 44 píxeles.
+- Agregue el espaciado adecuado entre botones, vínculos y otros controles.
+- Pruebe con dispositivos táctiles reales, no solo con un ratón.
+- Expanda las áreas de destino táctiles según sea necesario para la accesibilidad.
 
 +++
 
 +++Problemas de desbordamiento de contenido
 
-**Causas comunes:**
+**Causas posibles:**
 
 - Texto largo o etiquetas que no se ajustan
-- Contenedores de ancho fijo
-- Imágenes que no se escalan correctamente
+- Contenedores con anchuras fijas
+- Imágenes que no se escalan de forma responsable
 
-**Soluciones:**
+**Corrección:**
 
-- Habilite el ajuste de texto para el contenido largo.
-- Utilice imágenes adaptables que se escalen correctamente.
-- Implementar diseños flexibles que se adapten al contenido.
-- Realizar pruebas con varias longitudes de contenido.
+- Habilite el ajuste de texto para todas las etiquetas y el contenido.
+- Utilice imágenes adaptables que se escalen con el contenedor.
+- Diseñe diseños flexibles que se adapten a distintas longitudes de contenido.
+- Realice pruebas con contenido corto y largo para garantizar la adaptabilidad.
 
 +++
 
@@ -374,18 +376,18 @@ Los patrones de diseño determinan la forma en que el contenido del formulario s
 
 +++Carga lenta en dispositivos móviles
 
-**Causas comunes:**
+**Causas posibles:**
 
-- Imágenes grandes no optimizadas para dispositivos móviles
-- Ejecución excesiva de JavaScript
-- Se están cargando demasiados campos de formulario a la vez
+- Imágenes grandes sin optimizar
+- JavaScript pesado o excesivo
+- Demasiados campos de formulario cargándose simultáneamente
 
-**Soluciones:**
+**Corrección:**
 
-- Optimizar imágenes para diferentes tamaños de pantalla.
-- Cargue contenido no crítico solo cuando sea necesario.
-- Utilice técnicas para acelerar la carga móvil.
-- Minimice los scripts y widgets de terceros.
+- Optimice las imágenes para dispositivos móviles y utilice los formatos de archivo adecuados.
+- Aplazar o cargar de forma diferida contenido no crítico.
+- Minimice el uso de scripts y widgets de terceros.
+- Optimice los campos de formulario para cargar solo lo necesario.
 
 +++
 
@@ -393,18 +395,18 @@ Los patrones de diseño determinan la forma en que el contenido del formulario s
 
 +++Diferencias entre emulador y dispositivo real
 
-**Causas comunes:**
+**Causas posibles:**
 
-- Diferencias de procesamiento específicas del explorador
-- Diferencias en la interacción táctil frente al ratón
-- Variaciones de velocidad de red
+- Diferencias en los motores de renderización del explorador
+- Interacción táctil no simulada con precisión con el ratón
+- Discrepancias de velocidad de red
 
-**Soluciones:**
+**Corrección:**
 
-- Realizar pruebas en dispositivos reales siempre que sea posible.
-- Utilice varios exploradores para probar el emulador.
-- Simule diferentes velocidades de red durante la prueba.
-- Valide con usuarios reales en entornos de destino.
+- Realice pruebas siempre en dispositivos reales, además de en emuladores.
+- Utilice varios exploradores y dispositivos para realizar pruebas exhaustivas.
+- Simule varias velocidades de red para identificar cuellos de botella de rendimiento.
+- Recopile comentarios de usuarios reales en la audiencia de destino.
 
 +++
 
@@ -412,33 +414,34 @@ Los patrones de diseño determinan la forma en que el contenido del formulario s
 
 +++Indicadores clave de rendimiento
 
-**Métricas de experiencia del usuario:**
+**Experiencia del usuario:**
 
-- **Tasa de finalización de formularios:** Destino: 85%+ en dispositivos móviles
-- **Tiempo para finalizar:** El tiempo de finalización del móvil debe estar dentro del 20% del escritorio
-- **Tasa de error:** Menos del 5% de errores de validación
-- **Puntos de abandono:** Identificar dónde abandonan los usuarios
+- **Tasa de finalización de formularios:** El objetivo es alcanzar el 85 % o más en dispositivos móviles.
+- **Tiempo para completar:** Los usuarios de dispositivos móviles deben completar los formularios en un plazo del 20 % de las horas de finalización del escritorio.
+- **Tasa de error:** Mantener los errores de validación por debajo del 5%.
+- **Puntos de abandono:** identifique y solucione los pasos en los que los usuarios abandonan el sitio.
 
 **Rendimiento técnico:**
 
-- **Tiempo de carga de la página:** Menos de 3 segundos en redes 3G
-- **Datos básicos vitales para la web:** supera todos los puntos de referencia de rendimiento de Google
-- **Puntuación de accesibilidad:** Cumplimiento de WCAG 2.1 AA
-- **Compatibilidad entre exploradores:** funcionalidad superior al 98 % en los exploradores principales
+- **Tiempo de carga de página:** Menos de 3 segundos en una conexión 3G.
+- **Elementos Web básicos:** Cumplen o sobrepasan los umbrales recomendados por Google.
+- **Accesibilidad:** Consiga el cumplimiento de WCAG 2.1 AA.
+- **Compatibilidad de exploradores:** Garantice una funcionalidad superior al 98 % en todos los exploradores principales.
 
 +++
 
 +++Lista de comprobación de pruebas
 
-**Antes de la publicación:**
+**Lista de comprobación previa a la publicación:**
 
-- Pruebe el formulario en dispositivos móviles reales.
+- Pruebe el formulario en dispositivos móviles reales (no solo en emuladores).
 - Asegúrese de que todos los objetivos táctiles tengan al menos 44 × 44 píxeles.
-- Compruebe la legibilidad del texto en todos los tamaños de pantalla.
-- Confirmar que la validación del formulario funciona en todos los dispositivos.
-- Asegúrese de que el tiempo de carga sea inferior a 3 segundos en el móvil.
-- Compruebe que todos los elementos interactivos sean accesibles.
+- Compruebe la legibilidad del texto en todos los tamaños de pantalla admitidos.
+- Confirme que la validación del formulario funciona de forma coherente en todos los dispositivos y exploradores.
+- Asegúrese de que el tiempo de carga del móvil sea inferior a 3 segundos.
+- Compruebe que todos los elementos interactivos sean accesibles mediante el teclado y los lectores de pantalla.
 - Probar el envío del formulario en todos los dispositivos compatibles.
+
 
 +++
 

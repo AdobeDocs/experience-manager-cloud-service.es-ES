@@ -1,13 +1,13 @@
 ---
+title: ¿Cómo enviar un correo electrónico al enviar un formulario adaptable?
 description: Explore el proceso para configurar las notificaciones por correo electrónico al enviar un formulario adaptable.
 keywords: cómo enviar un correo electrónico para un formulario adaptable, acción de envío de correo electrónico, correo electrónico del formulario adaptable, correo electrónico de envío de formulario, guía para enviar correo electrónico
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
-title: ¿Cómo configurar una acción de envío para un formulario adaptable?
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '841'
 ht-degree: 84%
 
 ---
@@ -56,7 +56,7 @@ Para configurar una acción de envío Enviar correo electrónico para el compone
 1. Añada una plantilla de correo electrónico para configurar la acción de envío Enviar correo electrónico.
    * Puede especificar la ruta a la plantilla de correo electrónico externa guardada en los recursos de AEM mediante la opción **[!UICONTROL Plantilla externa]**.
    * También puede añadir una plantilla de correo electrónico personalizada para el envío del formulario en el cuadro de texto **[!UICONTROL Plantilla de correo electrónico]**.
-1. [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
+1.  [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
 1. Haga clic en **[!UICONTROL Listo]**.
 
 >[!TAB Componente principal]
@@ -76,7 +76,7 @@ Para configurar la acción de envío Enviar correo electrónico para el componen
 1. Añada una plantilla de correo electrónico para configurar la acción de envío Enviar correo electrónico.
    * Puede especificar la ruta a la plantilla de correo electrónico externa guardada en los recursos de AEM mediante la opción **[!UICONTROL Plantilla externa]**.
    * También puede añadir una plantilla de correo electrónico personalizada para el envío del formulario en el cuadro de texto **[!UICONTROL Plantilla de correo electrónico]**.
-1. [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
+1.  [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
 1. Haga clic en **[!UICONTROL Listo]**.
 
 >[!TAB Editor universal]
@@ -104,7 +104,7 @@ Aparecerá el cuadro de diálogo **Propiedades del formulario**.
 1. Añada una plantilla de correo electrónico para configurar la acción de envío Enviar correo electrónico.
    * Puede especificar la ruta a la plantilla de correo electrónico externa guardada en los recursos de AEM mediante la opción **[!UICONTROL Plantilla externa]**.
    * También puede añadir una plantilla de correo electrónico personalizada para el envío del formulario en el cuadro de texto **[!UICONTROL Plantilla de correo electrónico]**.
-1. [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
+1.  [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
 >[!ENDTABS]

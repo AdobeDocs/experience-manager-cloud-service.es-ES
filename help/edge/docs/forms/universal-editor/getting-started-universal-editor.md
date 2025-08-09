@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '2117'
-ht-degree: 2%
+source-wordcount: '2609'
+ht-degree: 1%
 
 ---
 
@@ -48,45 +48,47 @@ Seleccione el enfoque que coincida con su escenario:
 
 ## Requisitos previos
 
-Antes de empezar, asegúrese de que dispone de lo siguiente:
+Para garantizar una experiencia agradable y sin problemas con Edge Delivery Services para AEM Forms mediante el editor universal, revise y confirme los siguientes requisitos previos antes de continuar:
 
-### Acceso obligatorio
+### Requisitos de acceso
 
-- **Cuenta de GitHub** con permiso para crear repositorios
-- **Acceso de creación de AEM as a Cloud Service**
+- **Cuenta de GitHub**: debe tener una cuenta de GitHub con permisos para crear nuevos repositorios. Esto es esencial para administrar el código fuente del proyecto y colaborar con el equipo.
+- **Acceso de creación de AEM as a Cloud Service**: Asegúrese de que tenga acceso de nivel de autor a su entorno de AEM as a Cloud Service. Este acceso es necesario para crear, editar y publicar formularios.
 
 ### Requisitos técnicos
 
-- **Conceptos básicos de Git**: clonar, confirmar, operaciones push
-- **Tecnologías web**: HTML, CSS, aspectos básicos de JavaScript
-- **Node.js** (versión 16 o posterior recomendada) para desarrollo local
-- **npm** o administrador de paquetes **yarn**
+- **Familiaridad con Git**: debería sentirse cómodo realizando operaciones básicas de Git, como clonar repositorios, confirmar cambios y enviar actualizaciones. Estas habilidades son fundamentales para el control de código fuente y la colaboración en proyectos.
+- **Comprensión de las tecnologías web**: se recomienda tener conocimientos prácticos de HTML, CSS y JavaScript. Estas tecnologías forman la base de la personalización y solución de problemas de los formularios.
+- **Node.js (versión 16 o superior)**: Se requiere Node.js para el desarrollo local y la ejecución de las herramientas de compilación. Asegúrese de que tiene instalada la versión 16 o posterior de en el sistema.
+- **Administrador de paquetes (npm o yarn)**: Necesitará npm (Administrador de paquetes de nodos) o yarn para administrar dependencias y scripts de proyectos.
 
-### Conocimientos recomendados
+### Fondo recomendado
 
-- Comprensión básica de los conceptos de AEM Sites
-- Familiaridad con los principios de diseño de formularios
-- Experiencia con editores de WYSIWYG
+- **Conceptos de AEM Sites**: Una comprensión básica de AEM Sites, que incluye la estructura del sitio y la creación de contenido, le ayudará a desplazarse por los formularios e integrarlos de manera eficaz.
+- **Principios de diseño de formularios**: La familiaridad con las prácticas recomendadas en el diseño de formularios, como la facilidad de uso, la accesibilidad y la validación de datos, le permitirá crear formularios eficaces y fáciles de usar.
+- **Experiencia con editores de WYSIWYG**: La experiencia previa con editores de What You See Is What You Get (WYSIWYG) le ayudará a aprovechar las capacidades de creación visual del editor universal de forma más eficaz.
 
 >[!TIP]
 >
 > ¿Es nuevo en AEM? Comience con la [Guía de introducción de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=es).
 
-## Ruta A: Crear nuevo proyecto con Forms
+## Ruta A: Crear un nuevo proyecto con Forms
 
-**Lo mejor para:** Nuevas implementaciones o revisión de conceptos
+**Recomendado para:** Proyectos nuevos, proyectos piloto o iniciativas de prueba de concepto
 
-La plantilla de AEM Forms proporciona una plantilla preconfigurada con un bloque de Forms adaptable integrado.
+Aproveche las plantillas de AEM Forms para acelerar la configuración del proyecto. Esta plantilla ofrece una plantilla lista para usar que integra perfectamente el bloque de Forms adaptable, lo que le permite crear e implementar rápidamente formularios en su sitio de AEM.
 
-### Información general sobre los pasos
+### Información general
 
-1. Configurar un repositorio de GitHub desde la plantilla
-2. Instalar AEM Code Sync
-3. Configuración de la conexión del proyecto AEM
-4. Creación y publicación de un sitio de AEM
-5. Agregar formularios mediante el Editor universal
+Para iniciar correctamente el nuevo proyecto con formularios integrados, deberá:
 
-Vamos a recorrer cada paso:
+1. Cree un repositorio de GitHub con la plantilla de plantillas de AEM Forms.
+2. Configure AEM Code Sync para automatizar la sincronización de contenido entre AEM y el repositorio.
+3. Configure la conexión entre el proyecto de GitHub y el entorno de AEM.
+4. Establezca y publique un nuevo sitio de AEM.
+5. Agregar y administrar formularios mediante el Editor universal.
+
+Las siguientes secciones le guiarán a través de cada paso en detalle, lo que garantiza una experiencia de configuración del proyecto fluida y eficiente.
 
 +++Paso 1: Crear un repositorio de GitHub a partir de una plantilla
 
@@ -184,7 +186,7 @@ El archivo `fstab.yaml` conecta el repositorio de GitHub con el entorno de creac
 
     >[!NOTE]
     >
-    >¿Tiene problemas de compilación? Ver [solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
+>¿Tiene problemas de compilación? Ver [solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
 
 +++
 
@@ -320,20 +322,26 @@ Si ya tiene un proyecto de AEM con Edge Delivery Services, puede agregar funcion
 
 ### Requisitos previos para la ruta B
 
-- Proyecto AEM existente creado con [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)
-- Configuración del entorno de desarrollo local
-- Acceso de Git al repositorio del proyecto
+Para continuar con la integración de formularios en el proyecto de AEM existente, asegúrese de que se cumplan los siguientes requisitos previos:
 
-**¿Utiliza AEM Forms Boilerplate?** Si el proyecto se creó con [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), los formularios ya están integrados. Pasar a [Crear su primer formulario](#create-your-first-form).
+- Ya tiene un proyecto de AEM creado con la [Plataforma de AEM XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
+- Tiene un [entorno de desarrollo local configurado](#set-up-local-development-environment)
+- Dispone de acceso Git al repositorio del proyecto, lo que le permite clonar, modificar y enviar cambios según sea necesario.
 
-Vamos a recorrer cada paso:
+>[!NOTE]
+>
+> Si el proyecto se configuró originalmente usando [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), la funcionalidad del formulario ya se ha incluido. En este caso, puede pasar a la sección [Crear su primer formulario](#create-your-first-form).
 
-### Información general sobre los pasos
+La siguiente guía proporciona un enfoque estructurado para agregar capacidades de formulario al proyecto existente. Cada paso está diseñado para garantizar una integración perfecta y una funcionalidad óptima dentro del entorno del editor universal.
 
-1. Copiar archivos de bloque de Forms adaptable
-2. Actualizar configuración del proyecto
-3. Configurar reglas de ESLint
-4. Generar y confirmar cambios
+### Información general
+
+Completará los siguientes pasos de alto nivel:
+
+1. Copie los archivos del bloque de Forms adaptable en el proyecto.
+2. Actualice la configuración del proyecto para reconocer y admitir componentes de formulario.
+3. Ajuste las reglas de ESLint para dar cabida a los nuevos archivos y patrones de codificación.
+4. Cree el proyecto y confirme los cambios en el repositorio.
 
 +++Paso 1: Copiar archivos de bloque de Forms
 
@@ -494,19 +502,31 @@ Vamos a recorrer cada paso:
 
 ## Creación De Su Primer Formulario
 
-**Se aplica a:** Usuarios de las rutas A y B
+**Quién debe seguir esta sección:**\
+Esta sección es relevante para los usuarios que siguen la Ruta A (nuevo proyecto) o la Ruta B (proyecto existente).
 
-Ahora que el proyecto está configurado con funcionalidades de formulario, vamos a crear el primer formulario con la interfaz de WYSIWYG del Editor universal.
+Ahora que el proyecto está preparado para crear formularios, ya puede crear el primer formulario con el entorno de creación intuitivo de WYSIWYG del Editor universal. Los siguientes pasos proporcionan un enfoque estructurado para diseñar, configurar y publicar un formulario en el sitio de AEM.
 
-### Información general sobre el proceso de creación de formularios
+### Información general
 
-1. **Agregar bloque de formulario adaptable** a su página
-2. **Agregar componentes de formulario** (entradas de texto, botones, etc.)
-3. **Configurar propiedades de componentes**
-4. **Previsualizar y probar** su formulario
-5. **Publicar** la página actualizada
+El proceso de creación de un formulario en el Editor universal consta de varias fases clave:
 
-Vamos a recorrer cada paso:
+1. **Insertar el bloque de formulario adaptable**\
+   Comience agregando el bloque de formulario adaptable a la página elegida.
+
+2. **Agregar componentes de formulario**\
+   Rellene el formulario insertando componentes como campos de texto, botones y otros elementos de entrada.
+
+3. **Configurar propiedades del componente**\
+   Ajuste la configuración y las propiedades de cada componente para satisfacer los requisitos del formulario.
+
+4. **Previsualizar y probar el formulario**\
+   Utilice la funcionalidad de vista previa para validar el aspecto y el comportamiento del formulario antes de publicarlo.
+
+5. **Publicar la página actualizada**\
+   Una vez satisfecho, publique la página para que el formulario esté disponible para los usuarios finales.
+
+Las siguientes secciones le guiarán en detalle por cada uno de estos pasos, lo que garantiza una experiencia de creación de formularios fluida y eficaz.
 
 +++Paso 1: Agregar bloque de formulario adaptable
 
@@ -695,7 +715,7 @@ Un entorno de desarrollo local le permite realizar cambios y verlos instantánea
 
 ### Problemas comunes y soluciones
 
-+++Problemas de compilación de GitHub
+Problemas de compilación de +++GitHub
 
 **Problema:** errores de compilación o errores de vinculación
 
