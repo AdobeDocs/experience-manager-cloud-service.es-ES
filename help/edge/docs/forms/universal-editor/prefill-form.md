@@ -249,7 +249,7 @@ Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 3. Elegir **vista previa como HTML**
 4. Pruebe el relleno previo añadiendo parámetros a la dirección URL:
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **Ejemplo:**
 
