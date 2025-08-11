@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 4%
@@ -41,10 +41,12 @@ Antes de empezar, determine qué tipo de plantilla se ajusta a sus necesidades:
 
 **Guía de decisión:**
 
+![Decisión de selección de plantilla](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 - Use **Componentes principales** para flujos de trabajo complejos, integración profunda con AEM o si usa recursos de AEM existentes.
 - Use **Edge Delivery Services** para obtener rendimiento, simplicidad y prácticas de desarrollo modernas.
 
-![Decisión de selección de plantilla](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 *Diagrama de flujo de decisión para elegir el tipo de plantilla apropiado*
 
 ## Requisitos previos
@@ -506,7 +508,7 @@ Si los problemas persisten:
 
 1. Compruebe el estado del servicio de Adobe Experience Cloud.
 2. Revise [documentación de Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=es).
-3. Visite la [Comunidad de Adobe Experience League](https://experienceleaguecommunities.adobe.com/?profile.language=es).
+3. Visite la [Comunidad de Adobe Experience League](https://experienceleaguecommunities.adobe.com/).
 4. Póngase en contacto con el Servicio de atención al cliente de Adobe.
 
 +++

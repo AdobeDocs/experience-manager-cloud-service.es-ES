@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: prerrellenar formularios adaptables, servicios de entrega de Edge de formularios adaptables, autorrellenar formularios adaptables
-source-git-commit: 074b81f9cb1050eac5175bdc46796f9371f3a35b
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 3%
@@ -249,7 +249,7 @@ Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 3. Elegir **vista previa como HTML**
 4. Pruebe el relleno previo añadiendo parámetros a la dirección URL:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Ejemplo:**
 
@@ -422,17 +422,19 @@ Compruebe que todos los campos tengan `bindRef` valores correctos que coincidan 
 
 +++
 
++++¿Puedo utilizar varios servicios de rellenado previo en un formulario?
+
+Puede configurar un servicio de relleno previo principal por formulario. Sin embargo, puede combinar diferentes fuentes de datos dentro de un solo modelo de datos de formulario para lograr una funcionalidad similar.
+
++++
+
 +++¿Cómo administro la autenticación para los servicios de relleno previo?
 
 La autenticación depende de la configuración de la fuente de datos. Para el prerrellenado basado en FDM, configure la autenticación en la configuración de la fuente de datos. Para rellenar previamente borradores, los usuarios suelen tener que iniciar sesión para acceder a los borradores guardados.
 
 +++
 
-+++¿Puedo utilizar varios servicios de rellenado previo en un formulario?
 
-Puede configurar un servicio de relleno previo principal por formulario. Sin embargo, puede combinar diferentes fuentes de datos dentro de un solo modelo de datos de formulario para lograr una funcionalidad similar.
-
-+++
 
 ## Temas relacionados
 

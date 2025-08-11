@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 1%
@@ -308,7 +308,7 @@ Se creará un formulario que:
 
 1. **Abrir editor universal**:
    - Vaya a la consola de AEM Sites, seleccione su página y haga clic en **Editar**
-   - Asegúrese de que tiene el [Editor universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=es) configurado correctamente
+   - Asegúrese de que tiene el [Editor universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) configurado correctamente
 
 2. **Agregar componentes de formulario en este orden**:
    - Título (H2): &quot;Formulario de cálculo de impuestos&quot;
@@ -664,7 +664,7 @@ Forms se convierte en potentes herramientas para la recopilación de datos, la c
 
 +++
 
-+++ Próximos pasos
+## Próximos pasos
 
 **Ruta de aprendizaje recomendada**:
 
@@ -676,8 +676,7 @@ Forms se convierte en potentes herramientas para la recopilación de datos, la c
 
 **Recursos adicionales**:
 
-- [Documentación del editor universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=es) para un contexto más amplio
+- [Documentación del editor universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) para un contexto más amplio
 - [Guía de Extension Manager](/help/implementing/developing/extending/extension-manager.md) para habilitar funciones adicionales
 - [Formularios Edge Delivery Services](/help/edge/docs/forms/overview.md) para obtener instrucciones completas de desarrollo de formularios
 
-+++

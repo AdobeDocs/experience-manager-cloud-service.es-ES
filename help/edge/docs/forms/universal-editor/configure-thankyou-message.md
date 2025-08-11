@@ -4,292 +4,248 @@ description: Obtenga información sobre cómo se puede redirigir a los usuarios 
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 40%
+source-wordcount: '1133'
+ht-degree: 3%
 
 ---
 
 
 # Configuración de mensajes de agradecimiento y redirección de URL
 
-Los fragmentos de formulario son componentes reutilizables que eliminan el trabajo de desarrollo repetitivo y garantizan la coherencia en los formularios de la organización. En lugar de volver a crear secciones comunes como información de contacto, detalles de direcciones o acuerdos de consentimiento para cada formulario, puede generar estos elementos una vez como fragmentos y reutilizarlos en varios formularios.
+Las experiencias posteriores al envío afectan significativamente a la satisfacción del usuario y a las tasas de finalización del formulario. El editor universal de Adobe proporciona opciones completas para configurar lo que los usuarios ven después de enviar formularios, ya sea mediante mensajes de agradecimiento personalizados o redirecciones estratégicas a páginas específicas.
 
-**Lo que va a lograr en este artículo:**
-
-- Comprenda el valor comercial y las capacidades técnicas de los fragmentos de formulario
-- Crear fragmentos de formulario reutilizables mediante el editor universal
-- Integrar fragmentos en formularios existentes con la configuración adecuada
-- Administrar el ciclo vital de los fragmentos y mantener la coherencia en todos los formularios
-
-**Beneficios empresariales:**
-
-- **Tiempo de desarrollo reducido**: genere secciones de formulario comunes una vez y reúna en todas partes
-- **Coherencia mejorada**: diseños y contenido estandarizados en todos los formularios
-- **Mantenimiento simplificado**: actualice un fragmento una vez para reflejar los cambios en todos los formularios que lo utilicen
-- **Cumplimiento mejorado**: Asegúrese de que las secciones de regulación sigan siendo coherentes y estén actualizadas
-
-Los fragmentos de formulario de Edge Delivery Services admiten funciones avanzadas que incluyen fragmentos anidados, varias instancias dentro de un solo formulario e integración perfecta con fuentes de datos.
-
-## Explicación de fragmentos de formulario
-
-Los fragmentos de formulario de Edge Delivery Services ofrecen potentes funciones para el desarrollo de formularios modulares:
-
-**Funciones principales:**
-
-- **Administración de coherencia**: los fragmentos mantienen diseños y contenido idénticos en varios formularios. Con el enfoque &quot;cambiar una vez, reflejar en todas partes&quot;, las actualizaciones de un fragmento se aplican automáticamente a todos los formularios en el modo de vista previa.
-- **Uso múltiple**: agregue el mismo fragmento varias veces dentro de un solo formulario, cada una con enlaces de datos independientes a diferentes fuentes de datos o elementos de esquema.
-- **Estructuras anidadas**: cree jerarquías complejas incrustando fragmentos dentro de otros fragmentos para arquitecturas de formulario sofisticadas.
-
-**Requisitos técnicos:**
-
-- **Coherencia de URL de GitHub**: tanto el fragmento como cualquier formulario que lo utilice deben especificar la misma URL de repositorio de GitHub
-- **Edición independiente**: los fragmentos solo se pueden modificar en su formulario independiente; no se pueden realizar cambios en el formulario host
-
-**Comportamiento de publicación:**
-
->[!IMPORTANT]
->
->En el modo de Vista previa, los cambios de fragmento se reflejarán inmediatamente en todos los formularios. En el modo Publicación, debe volver a publicar el fragmento y los formularios que lo utilicen para ver las actualizaciones.
-
->[!CAUTION]
->
->Evite las referencias de fragmento recursivas (anidar un fragmento dentro de sí mismo), ya que esto provoca errores de procesamiento y comportamiento inesperado.
+Este artículo proporciona directrices detalladas sobre la implementación de mensajes de agradecimiento y redirecciones URL, incluidas consideraciones técnicas, prácticas recomendadas y directrices de experiencia del usuario para maximizar la eficacia de los envíos de formularios.
 
 ## Requisitos previos
 
-**Requisitos de configuración técnica:**
+Antes de configurar las experiencias posteriores al envío, asegúrese de lo siguiente:
 
-- [Repositorio de GitHub configurado](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) con conexión establecida entre su entorno de AEM y el repositorio de GitHub
-- [Último bloque de Forms adaptable](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) añadido a su repositorio de GitHub (para proyectos de Edge Delivery Services existentes)
-- Instancia de autor de AEM Forms con plantilla de Edge Delivery Services disponible
-- Acceso a la URL de la instancia de autor de AEM Forms as a Cloud Service y a la URL del repositorio de GitHub
+**Configuración técnica:**
 
-**Conocimientos y permisos requeridos:**
+- Acceso al editor universal con los permisos adecuados
+- Un formulario adaptable existente creado en el editor universal
+- Comprensión de los requisitos de URL de redireccionamiento de su organización
 
-- Comprensión básica de los conceptos de diseño de formulario y la jerarquía de componentes
-- Familiaridad con la interfaz del editor universal y los flujos de trabajo de creación de formularios
-- Permisos de nivel de autor en AEM Forms para crear y administrar recursos de formulario
-- Comprensión de los estándares de formularios de su organización y los requisitos de componentes reutilizables
+**Consideraciones de planificación:**
 
-## Uso de fragmentos de formulario de Edge Delivery Services
+- **Estrategia de mensajes**: defina el tono, la longitud y la información específica que se va a incluir en los mensajes de agradecimiento
+- **Estrategia de redireccionamiento**: identifique las páginas de destino y asegúrese de que estén optimizadas para las experiencias posteriores a la finalización del formulario
+- **Integración de Analytics**: Planifique cómo rastrear las interacciones del usuario con mensajes de agradecimiento o destinos de redirección
 
-Puede crear fragmentos de formulario de Edge Delivery Services en el editor universal y añadir los fragmentos creados a los formularios de Edge Delivery Services. Puede realizar las siguientes acciones con fragmentos de formulario de Edge Delivery Services:
+## Configurar mensajes de agradecimiento
 
-- [Creación de fragmentos de formulario](#creating-form-fragments)
-- [Adición de fragmentos de formulario a un formulario](#adding-form-fragments-to-a-form)
-- [Administración de fragmentos de formulario](#managing-form-fragments)
+Los mensajes de agradecimiento proporcionan un reconocimiento inmediato del envío correcto del formulario y pueden incluir contenido personalizado, pasos siguientes o información importante relacionada con el envío del usuario.
 
-+++ Creación de fragmentos de formulario
+### Cuándo usar mensajes de agradecimiento
 
-Para crear un fragmento de formulario en el editor universal, realice los siguientes pasos:
+Los mensajes de agradecimiento funcionan mejor cuando:
 
-1. Inicie sesión en la instancia de autor de AEM Forms as a Cloud Service.
-1. Seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
-1. Haga clic en **Crear > fragmento de formulario adaptable**.
+- **Reconocimiento simple**: los usuarios necesitan confirmación sin requisitos de navegación adicionales
+- **Contenido informativo**: debe proporcionar los pasos siguientes específicos o información importante
+- **Coherencia de la marca**: el mensaje se puede diseñar para que se ajuste al estilo de comunicación de su organización
+- **Experiencia de una sola página**: Los usuarios deben permanecer en la página actual para que el flujo de trabajo continúe
 
-   ![Crear fragmento](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
+### Pasos de implementación
 
-   Aparece el asistente **Crear fragmento de formulario adaptable**.
-1. Seleccione la plantilla basada en Edge Delivery Services en la pestaña **Seleccionar plantilla** y haga clic en **[!UICONTROL Siguiente]**.
-   ![Seleccionar plantilla de Edge Delivery Services](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
+**1. Obtener acceso a propiedades de formulario**
 
-1. Especifique el título, el nombre, la descripción y las etiquetas del fragmento. Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, el fragmento no se creará.
-1. Especifique la **URL de GitHub**. Por ejemplo, si el repositorio de GitHub se llama `edsforms` y se encuentra en la cuenta `wkndforms`, la dirección URL es `https://github.com/wkndforms/edsforms`.
+Abra el formulario adaptable en el editor universal y haga clic en el icono **Editar propiedades del formulario** de la barra de herramientas. Esto abre el cuadro de diálogo de propiedades del formulario completo.
 
-   ![Propiedades básicas](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
+**2. Vaya a la configuración de agradecimiento**
 
-1. (Opcional) Haga clic para abrir la pestaña **modelo de formulario** y desde el menú desplegable **Seleccionar de**, seleccione uno de los siguientes modelos para el fragmento:
+En el cuadro de diálogo Propiedades del formulario, seleccione la pestaña **Gracias** para acceder a las opciones de configuración posteriores al envío.
 
-   ![Muestra el tipo de modelo en la pestaña Modelo de formulario](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
+**3. Configurar la visualización del mensaje**
 
-   - **Modelo de datos de formulario (FDM)**: integre objetos y servicios de modelo de datos desde las fuentes de datos en su fragmento. Elija Modelo de datos de formulario (FDM) si el formulario requiere leer y escribir datos de varias fuentes.
+Seleccione **Mostrar mensaje** de las opciones disponibles. Esto activa el editor de contenido del mensaje con funciones de texto enriquecido.
 
-   - **Esquema JSON**: integre su formulario con un sistema back-end asociando un esquema JSON que defina la estructura de datos. Le permite añadir contenido dinámico mediante los elementos de esquema.
-   - **Ninguno**: especifica que se cree el fragmento desde cero sin usar ningún modelo de formulario.
+**4. Crear el contenido del mensaje**
 
-   >[!NOTE]
-   >
-   > Para aprender a integrar formularios o fragmentos con un modelo de datos de formulario (FDM) en el editor universal para utilizar diversas fuentes de datos back-end, consulte [Integrar formularios con el modelo de datos de formulario en el editor universal](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
+En el campo **Contenido del mensaje**, cree su mensaje de agradecimiento con el editor de texto enriquecido. El editor admite:
 
-1. (Opcional) Especifique la **Fecha de publicación** o la **Fecha de cancelación de publicación** del fragmento en la pestaña **Avanzado**.
+- **Formato de texto**: opciones de negrita, cursiva, subrayado y color
+- **Listas**: Listas numeradas y con viñetas para organizar la información
+- **Vínculos**: Vínculos directos a recursos relevantes o pasos siguientes
+- **Edición en pantalla completa**: haga clic en el icono de expansión para ampliar el área de trabajo de edición
 
-   ![Ficha avanzada](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
-1. Haga clic en **Crear** para generar el fragmento. Aparecerá un cuadro de diálogo de éxito con opciones de edición.
+### Consideraciones técnicas
 
-   ![Editar fragmento](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png)
+**Comportamiento de visualización del mensaje:**
 
-1. Haga clic en **Editar** para abrir el fragmento en el editor universal con la plantilla predeterminada aplicada.
+- Los mensajes aparecen en una superposición modal inmediatamente después del envío del formulario
+- El contenido admite el formato HTML y mantiene un diseño interactivo
+- Los usuarios pueden descartar los mensajes o configurarlos con temporizadores de cierre automático
 
-   ![Fragmento en el editor universal para la creación](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
+**Directrices de contenido:**
 
-1. **Diseñe el contenido de su fragmento**: agregue componentes de formulario (campos de texto, desplegables, casillas de verificación) para generar la sección reutilizable. Para obtener instrucciones detalladas sobre los componentes, consulte [Introducción a Edge Delivery Services para AEM Forms mediante el editor universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
+- Mantenga los mensajes concisos mientras proporciona la información necesaria
+- Incluya los siguientes pasos claros cuando corresponda
+- Considere incluir números de referencia o detalles de confirmación
+- Garantizar un formato compatible con dispositivos móviles
 
-1. **Configurar propiedades del componente**: establezca los nombres de los campos, las reglas de validación y los valores predeterminados según sea necesario para su caso de uso.
+### Implementación de ejemplo
 
-1. **Guardar y previsualizar**: guarda el fragmento y usa el modo de vista previa para comprobar el diseño y la funcionalidad.
+    ¡Gracias por su envío!
+    
+    Se ha recibido su solicitud y se le ha asignado el número de referencia #REF-2024-001234.
+    
+    **Qué sucede a continuación:**
+    - Recibirá un correo electrónico de confirmación en un plazo de 15 minutos
+    - Nuestro equipo revisará su envío en un plazo de 2 días hábiles
+    - Nos pondremos en contacto con usted directamente si necesita información adicional
+    
+    **Necesita asistencia?** Póngase en contacto con nuestro equipo de asistencia en support@example.com
 
-   ![Captura de pantalla de un fragmento de formulario de detalles de contacto completado en el editor universal que muestra los campos para el nombre, teléfono, correo electrónico y dirección que pueden reutilizarse en varios formularios](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+## Configuración de URL de redireccionamiento
 
-**Punto de comprobación de validación:**
+Las direcciones URL de redireccionamiento dirigen automáticamente a los usuarios a páginas específicas después del envío del formulario, lo que permite una integración perfecta con los flujos de trabajo existentes o dirige a los usuarios al contenido relevante.
 
-- Cargas de fragmentos sin errores en el editor universal
-- Todos los componentes del formulario se representan correctamente
-- Las propiedades de campo y las reglas de validación funcionan según lo esperado
-- El fragmento se guardará y estará disponible en la consola Forms y documentos
+### Cuándo usar URL de redireccionamiento
 
-Una vez completado el fragmento, puedes [integrarlo en cualquier formulario de Edge Delivery Services](#adding-form-fragments-to-a-form).
+Las direcciones URL de redireccionamiento son óptimas para:
 
-+++
+- **Integración del flujo de trabajo**: Dirigiendo a los usuarios a paneles, páginas de cuenta o pasos siguientes en un proceso
+- **Entrega de contenido**: muestra productos, servicios o información relevantes basados en las respuestas del formulario
+- **Seguimiento de Analytics**: Direccionar a páginas con implementaciones de seguimiento específicas
+- **Procesos de varios pasos**: Mover usuarios a la siguiente fase de flujos de trabajo complejos
 
+### Pasos de implementación
 
-+++ Adición de fragmentos de formulario a un formulario
+**1. Obtener acceso a propiedades de formulario**
 
-En este ejemplo se muestra la creación de un formulario `Employee Details` que utiliza el fragmento `Contact Details` para las secciones de información de empleados y supervisores. Este enfoque garantiza una recopilación de datos coherente y reduce los esfuerzos de desarrollo.
+Abra el formulario adaptable en el editor universal y haga clic en el icono **Editar propiedades del formulario** para abrir el cuadro de diálogo de configuración del formulario.
 
-Para integrar un fragmento de formulario en el formulario:
+**2. Vaya a la configuración de agradecimiento**
 
-1. Abra el formulario en modo de edición. 
-1. Añada el componente Fragmento de formulario al formulario.
-1. Abra el explorador de contenido y vaya al componente **[!UICONTROL Formulario adaptable]** en el **Árbol de contenido**.
-1. Vaya a la sección, donde desea añadir un fragmento. Por ejemplo, vaya al panel **Detalles del empleado**.
+Seleccione la ficha **Gracias** en el cuadro de diálogo Propiedades del formulario para acceder a las opciones de configuración de redireccionamiento.
 
-   ![Navegar hasta la sección](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
+**3. Habilitar funcionalidad de redireccionamiento**
 
-1. Haga clic en el icono de **[!UICONTROL Añadir]** y añada el componente **[!UICONTROL Fragmento de formulario]** en la lista **Componentes de formularios adaptables**.
-   ![Añadir fragmento de formulario](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
+Elija **Redirigir a la dirección URL** de las opciones disponibles después del envío.
 
-   Al seleccionar el componente **[!UICONTROL Fragmento de formulario]**, el fragmento se añade a su formulario. Puede configurar las propiedades del fragmento añadido abriendo sus **Propiedades**. Por ejemplo, oculte el título del fragmento de sus **propiedades**.
+**4. Configurar URL de destino**
 
-   ![Configuración de las propiedades del fragmento](/help/edge/docs/forms/universal-editor/assets/fragment-properties.png)
+Introduzca la dirección URL de destino en el campo proporcionado. El sistema admite varios formatos de URL para una implementación flexible.
 
-1. Seleccione la **Referencia de fragmento** en la pestaña **Básico**. Aparecerán todos los fragmentos disponibles para su formulario, según el modelo del formulario.
+### Opciones de configuración de URL
 
-   Por ejemplo, vaya a `/content/forms/af` y seleccione el fragmento `Contact Details`.
+**URL absolutas**
 
-   ![Seleccionar fragmento](/help/edge/docs/forms/universal-editor/assets/select-fragment.png)
+Direcciones web completas, incluidos protocolo y dominio:
 
-1. Haga clic en **[!UICONTROL Seleccionar]**.
+    https://www.example.com/thank-you
+    https://dashboard.example.com/user/profile
 
-   El fragmento de formulario se agrega por referencia al formulario y permanece sincronizado con el fragmento de formulario independiente.
+**Rutas relativas**
 
-   ![Captura de pantalla que muestra el fragmento de detalles de contacto integrado correctamente en un formulario del empleado dentro del editor universal, que muestra cómo los fragmentos mantienen su estructura cuando se reutilizan](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+Rutas relativas a su dominio actual:
 
-   Puede obtener una vista previa del formulario para ver cómo aparece en el modo **Vista previa**.
+    /thank-you
+    /dashboard/user-profile
+    ../confirmation-page.html
 
-   ![Vista previa](/help/edge/docs/forms/universal-editor/assets/preview-form-with-fragment.png)
+**Referencias de página AEM Sites**
 
-   Del mismo modo, puede repetir los pasos 3 al 7 para insertar el fragmento `Contact Details` para el panel `Supervisor Details`.
+Referencias a otras páginas dentro de la implementación de AEM Sites:
 
-   ![Formulario de detalles de empleado](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
+    /content/mysite/en/thank-you
+    /content/mysite/en/next-step
 
-+++
+### Consideraciones técnicas
 
+**Comportamiento de redirección:**
 
+- Las redirecciones se producen inmediatamente después de enviar correctamente el formulario
+- El historial del explorador incluye la redirección para la correcta funcionalidad del botón Atrás
+- La temporización de redireccionamiento se puede configurar con retrasos opcionales
 
-+++ Administración de fragmentos de formulario
+**Validación de URL:**
 
-Puede realizar varias operaciones en los fragmentos de formulario mediante la interfaz de usuario de AEM Forms.
+- El sistema valida el formato de la URL antes de permitir la configuración
+- Las direcciones URL relativas se resuelven en el dominio actual
+- Las direcciones URL externas requieren la configuración adecuada de CORS si es necesario
 
-1. Inicie sesión en la instancia de autor de AEM Forms as a Cloud Service.
-1. Seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
+## Prácticas recomendadas y recomendaciones
 
-1. Seleccione un fragmento de formulario y la barra de herramientas mostrará las siguientes operaciones que puede realizar en el fragmento seleccionado.
+### Directrices de experiencia del usuario
 
-   ![Administrar fragmento](/help/edge/docs/forms/universal-editor/assets/manage-fragment.png)
+**Optimización de mensajes:**
 
-   <table>
-    <tbody>
-    <tr>
-   <td><p><strong>Operación</strong></p> </td>
-   <td><p><strong>Descripción</strong></p> </td>
-    </tr>
-    <tr>
-   <td><p>Editar</p> </td>
-   <td><p>Abre el fragmento de formulario en el modo de edición.<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Propiedades</p> </td>
-   <td><p>Proporciona opciones para modificar las propiedades del fragmento de formulario.<br /> <br /> </p> </td>
-    </tr>
-    <td><p>Copiar</p> </td>
-   <td><p> Proporciona opciones para copiar el fragmento de formulario y pegarlo en la ubicación deseada. <br /> <br /> </p> </td>
-    </tr>
-   <tr>
-   <td><p>Vista previa</p> </td>
-   <td><p>Proporciona opciones para previsualizar el fragmento como HTML o realizar una vista previa personalizada combinando los datos de un archivo XML con el fragmento.<br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Descargar</p> </td>
-   <td><p>Descarga el fragmento seleccionado.<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Iniciar revisión y Administrar revisión</p> </td>
-   <td><p>Permite iniciar y administrar una revisión del fragmento seleccionado.<br /> <br />  </p> </td>
-    </tr>
-    <!--<tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-    </tr>-->
-    <tr>
-   <td><p>Publicar o cancelar la publicación</p> </td>
-   <td><p>Publica/cancela la publicación del fragmento seleccionado.<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Eliminar</p> </td>
-   <td><p>Elimina el fragmento seleccionado.<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Comparar</p> </td>
-   <td><p>Compara dos fragmentos de formulario diferentes para obtener una vista previa.<br /> <br /> </p> </td>
-    </tr>
-    </tbody>
-    </table>
+- **Claridad primero**: Asegúrese de que los usuarios entiendan inmediatamente que su envío se realizó correctamente
+- **Valor añadido**: proporcione información que ayude a los usuarios en los pasos siguientes
+- **Marca coherente**: mantenga el estilo visual y de voz de su organización
+- **Consideración móvil**: Probar mensajes en varios tamaños de pantalla
 
-+++
+**Optimización de redireccionamiento:**
 
-## Prácticas recomendadas
+- **Optimización de página**: Asegúrese de que los destinos de redireccionamiento estén optimizados para los visitantes posteriores al formulario
+- **Rendimiento de carga**: compruebe que las páginas de redireccionamiento se cargan rápidamente para mantener la experiencia del usuario
+- **Relevancia del contenido**: Asegúrese de que el contenido de redireccionamiento es relevante para el contexto del formulario
 
-**Diseño y nombre del fragmento:**
+### Consideraciones de seguridad
 
-- **Use nombres descriptivos y únicos**: Elija nombres que indiquen claramente el propósito del fragmento (por ejemplo, &quot;detalles de contacto con validación&quot; en lugar de &quot;fragmento1&quot;)
-- **Plan de reutilización**: diseñe fragmentos para que sean independientes del contexto y funcionen en diferentes tipos de formularios
-- **Mantener los fragmentos centrados**: cree fragmentos de un solo propósito en lugar de componentes complejos multifunción
+**Validación de URL:**
 
-**Flujo de trabajo de desarrollo:**
+- Implemente la validación adecuada para las direcciones URL de redireccionamiento para evitar redirecciones malintencionadas
+- Considere los enfoques de lista blanca para los dominios de redireccionamiento permitidos
+- Monitorice los patrones de redirección para detectar actividades inusuales
 
-- **Probar fragmentos de forma independiente**: compruebe la funcionalidad del fragmento antes de integrarlo en los formularios
-- **Mantener URL de GitHub coherentes**: asegúrese de que se utiliza la misma URL de repositorio en todos los fragmentos y formularios relacionados
-- **Propósito del fragmento de documento**: incluya descripciones y etiquetas claras para ayudar a los integrantes del equipo a comprender cuándo usar cada fragmento
+**Seguridad de contenido:**
 
-**Publicación y mantenimiento:**
+- Desinfectar el contenido del mensaje de agradecimiento para evitar la inyección de secuencias de comandos
+- Implementar directivas de seguridad de contenido adecuadas para el contenido de texto enriquecido
+- Revisiones de seguridad periódicas de los destinos de redireccionamiento
 
-- **Coordinar publicación**: al actualizar fragmentos, planee volver a publicar todos los formularios dependientes simultáneamente
-- **Control de versiones**: use mensajes de confirmación significativos al actualizar fragmentos para realizar un seguimiento de los cambios a lo largo del tiempo
-- **Supervisar dependencias**: haga un seguimiento de qué formularios utilizan cada fragmento para evaluar el impacto de la actualización
+### Análisis y seguimiento
 
->[!TIP]
->
->Los estilos, scripts y expresiones de fragmento se conservan cuando se incrustan, por lo que debe diseñarse teniendo en cuenta esta herencia.
+**Consideraciones de implementación:**
 
-## Resumen
+- **Seguimiento de metas**: configure metas de análisis tanto para las vistas de mensajes de agradecimiento como para las finalizaciones de redireccionamiento
+- **Asignación de recorrido de usuario**: Rastree cómo los usuarios interactúan con las experiencias posteriores al envío
+- **Optimización de conversión**: mensajes de agradecimiento y destinos de redirección de la prueba A/B diferentes
 
-Ha aprendido correctamente a aprovechar los fragmentos de formulario en Edge Delivery Services para mejorar la eficacia del desarrollo y mantener la coherencia en los formularios de su organización.
+**Estrategias de medición:**
 
-**Logros clave:**
+- Monitorice el tiempo empleado en los mensajes de agradecimiento antes del despido
+- Rastrear tasas de clics para vínculos dentro de mensajes de agradecimiento
+- Analizar el comportamiento del usuario en las páginas de destino de redirección
 
-- **Comprensión**: Se ha comprendido el valor comercial y las capacidades técnicas de los fragmentos de formulario
-- **Creación**: fragmentos de formulario reutilizables creados usando el Editor universal con la configuración adecuada
-- **Integración**: se agregaron fragmentos a los formularios con la configuración de referencia y de propiedad correctas
-- **Administración**: Operaciones de ciclo de vida de fragmento exploradas y flujos de trabajo de mantenimiento
+## Puntos de comprobación de validación
 
-**Pasos siguientes:**
+Después de configurar la experiencia posterior al envío:
 
-- Cree una biblioteca de fragmentos de uso común para su organización
-- Establezca convenciones de nomenclatura y políticas de gobernanza para el uso de fragmentos
-- Explore la integración avanzada con [Modelos de datos de formulario](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) para fragmentos dinámicos impulsados por datos
-- Implementar plantillas de formulario basadas en fragmentos para lograr experiencias de usuario coherentes
+**Verificación de configuración:**
 
-Sus formularios ahora se benefician de una arquitectura modular y mantenible que se adapta eficazmente entre proyectos, a la vez que garantiza experiencias de usuario coherentes.
+- Las propiedades del formulario muestran correctamente la opción de agradecimiento seleccionada
+- El contenido del mensaje se muestra correctamente en el modo de vista previa
+- Las direcciones URL de redireccionamiento tienen el formato correcto y son accesibles
+- Todos los vínculos de los mensajes funcionan correctamente
+
+**Pruebas de experiencia del usuario:**
+
+- Envíe formularios de prueba para verificar la correcta visualización del mensaje de agradecimiento
+- Prueba de la funcionalidad de redireccionamiento en distintos navegadores
+- Verificar la respuesta móvil de los mensajes de agradecimiento
+- Confirmar que los destinos de redirección se cargan correctamente
+
+**Configuración de Analytics:**
+
+- Códigos de seguimiento correctamente implementados para los mensajes de agradecimiento
+- Seguimiento de destino de redirección configurado
+- Se activan correctamente los eventos de finalización de objetivos
+
+## Próximos pasos
+
+Después de configurar correctamente la experiencia posterior al envío:
+
+- **Monitorizar el rendimiento**: revise los análisis para comprender la participación del usuario con los mensajes de agradecimiento o las páginas de redirección
+- **Iterar y mejorar**: Use los comentarios de los usuarios y las perspectivas de datos para refinar su estrategia posterior al envío
+- **Implementación de escala**: aplique patrones exitosos en otros formularios de su organización
+
+**Documentación relacionada:**
+
+- [Guía de configuración de envío de formularios](submit-action.md)
+- [Prácticas recomendadas de experiencia del usuario](responsive-layout.md)
 

@@ -4,9 +4,9 @@ description: Un formulario adaptable proporciona varias acciones de envío. Una 
 keywords: Obtenga información sobre cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de SharePoint, conectar un formulario adaptable a una biblioteca de documentos de SharePoint, conectar un formulario adaptable al modelo de datos de formulario (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: d221959bbf19a874ec65eb414c4c49811df291ca
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 50%
 
 ---
@@ -20,7 +20,6 @@ ht-degree: 50%
 | AEM as a Cloud Service (componentes principales) | [Haga clic aquí](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Este artículo |
 
-## Información general
 
 El envío de formularios es el paso final crucial del recorrido del usuario: es donde se procesan los datos recopilados y se realizan las acciones. Este documento proporciona una guía completa para configurar y administrar las acciones de envío de formularios adaptables en el editor universal.
 

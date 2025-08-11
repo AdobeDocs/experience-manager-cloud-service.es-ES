@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo crear fragmentos de formulario en 
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 40%
@@ -12,12 +12,6 @@ ht-degree: 40%
 ---
 
 # Creación de fragmentos de formulario en el editor universal
-
-<!--
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
--->
 
 Los fragmentos de formulario son componentes reutilizables que eliminan el trabajo de desarrollo repetitivo y garantizan la coherencia en los formularios de la organización. En lugar de volver a crear secciones comunes como información de contacto, detalles de direcciones o acuerdos de consentimiento para cada formulario, puede generar estos elementos una vez como fragmentos y reutilizarlos en varios formularios.
 

@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2358'
 ht-degree: 4%
@@ -507,19 +507,19 @@ Domine estos métodos abreviados para crear formularios de forma más rápida y 
 - **Planificar antes de generar**: esboce la estructura del formulario antes de comenzar
 - **Manténgalo simple** - Evite abrumar a los usuarios con demasiados campos
 
-### **Optimización del rendimiento**
-
-- **Minimizar componentes**: utilice solo los campos de formulario necesarios
-- **Optimizar imágenes**: comprima todas las imágenes utilizadas en los formularios
-- **Prueba en dispositivos móviles**: garantiza un buen rendimiento en conexiones móviles más lentas
-- **Validar antes**: configure la validación adecuada para evitar errores de envío
-
 ### **Experiencia del usuario**
 
 - **Realizar pruebas con frecuencia**: usar el modo de vista previa después de cada cambio importante
 - **Piense como usuarios**: considere la posibilidad de rellenar todos los formularios
 - **Proporcionar etiquetas claras**: haga que los propósitos de los campos sean obvios para los usuarios
 - **Agregar texto útil** - Usar texto de ayuda para campos complejos
+
+### **Optimización del rendimiento**
+
+- **Minimizar componentes**: utilice solo los campos de formulario necesarios
+- **Optimizar imágenes**: comprima todas las imágenes utilizadas en los formularios
+- **Prueba en dispositivos móviles**: garantiza un buen rendimiento en conexiones móviles más lentas
+- **Validar antes**: configure la validación adecuada para evitar errores de envío
 
 ## Próximos pasos
 

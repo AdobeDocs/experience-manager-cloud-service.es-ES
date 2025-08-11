@@ -4,7 +4,7 @@ description: Utilice el editor universal de Edge Delivery Services para formular
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 99%
@@ -173,11 +173,13 @@ Por supuesto. El editor universal admite el enlace de datos sin problemas con si
 **P: ¿es posible personalizar los componentes del formulario?**
 Sí, el editor universal permite a los desarrolladores crear componentes personalizados adaptados a necesidades organizativas específicas. Además, puede ampliar la funcionalidad del editor mediante extensiones de interfaz de usuario y flujos de trabajo personalizados.
 
+**P: ¿Qué tipo de análisis puedo obtener de los formularios?**
+El editor universal incluye herramientas de seguimiento y análisis integradas para monitorizar las interacciones del usuario, las tasas de envío de formularios y las métricas de conversión. Estas perspectivas ayudan a optimizar los formularios para obtener un mejor rendimiento.
+
 **P: ¿Cómo administra la accesibilidad el editor universal?**
 El editor universal está diseñado con un estricto cumplimiento de los estándares de accesibilidad, incluidas las WCAG (Directrices de accesibilidad al contenido web). Esto garantiza que las personas con discapacidad puedan utilizar los formularios, lo que proporciona una experiencia inclusiva.
 
-**P: ¿Qué tipo de análisis puedo obtener de los formularios?**
-El editor universal incluye herramientas de seguimiento y análisis integradas para monitorizar las interacciones del usuario, las tasas de envío de formularios y las métricas de conversión. Estas perspectivas ayudan a optimizar los formularios para obtener un mejor rendimiento.
+
 
 
 
