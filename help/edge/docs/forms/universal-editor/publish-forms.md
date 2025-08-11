@@ -4,11 +4,11 @@ description: Obtenga información sobre cómo publicar, configurar y acceder a F
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
-keywords: [Publicación de formularios, Edge Delivery Services, configuración de formularios, CORS, filtro de referente]
+keywords: publicar formularios, Edge Delivery Services, configuración de formulario, CORS, filtro de referente
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
 workflow-type: tm+mt
-source-wordcount: 746
+source-wordcount: '746'
 ht-degree: 2%
 
 ---
