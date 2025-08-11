@@ -186,7 +186,7 @@ El archivo `fstab.yaml` conecta el repositorio de GitHub con el entorno de creac
 
     >[!NOTE]
     >
->¿Tiene problemas de compilación? Ver [solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
+    >¿Tiene problemas de compilación? Ver [solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
 
 +++
 
@@ -715,7 +715,7 @@ Un entorno de desarrollo local le permite realizar cambios y verlos instantánea
 
 ### Problemas comunes y soluciones
 
-Problemas de compilación de +++GitHub
++++Problemas de compilación de GitHub
 
 **Problema:** errores de compilación o errores de vinculación
 
