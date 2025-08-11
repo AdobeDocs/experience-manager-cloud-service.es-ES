@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 1cb24ca4aabf3ccd12c514cc9d74ad0c1cc8e2fb
+source-git-commit: 401eaaaa0bb8dad054c7105533cbd4486964c484
 workflow-type: tm+mt
-source-wordcount: '2271'
-ht-degree: 50%
+source-wordcount: '2269'
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -88,7 +88,7 @@ Content Hub ahora incluye la opción **Mostrar todo** dentro de los filtros, lo 
 
 Disfrute de una carga automatizada de nuevos archivos y carpetas, operaciones de archivos mejoradas, una detección de recursos más inteligente y una integración perfecta con AEM, lo que hace que la administración de contenido sea más rápida, clara e intuitiva.
 
-Para obtener la lista completa de características, consulte [Notas de la versión de la aplicación de escritorio](https://experienceleague.adobe.com/es/docs/experience-manager-desktop-app/using/release-notes).
+Para obtener la lista completa de características, consulte [Notas de la versión de la aplicación de escritorio](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Nuevas funciones en Dynamic Media con funciones de OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -177,12 +177,11 @@ Acelere el desarrollo de AEM Forms Edge Delivery Services con esta herramienta C
 
 La herramienta de integración de API permite a los autores de formularios crear formularios dinámicos e inteligentes que recuperan y rellenan automáticamente datos de API de REST externas en función de las interacciones del usuario. Esta capacidad de integración sin código transforma los formularios estáticos en interfaces de recopilación de datos interactivas.
 
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Vista principal para la administración de permisos {#principal-view}
+### Vista de nodos para la administración de permisos {#node-view}
 
-AEM presenta la administración de permisos para usuarios y grupos. La funcionalidad principal sigue siendo la misma que la IU clásica, pero es más fácil de usar y eficiente. Consulte el [artículo específico](/help/security/touch-ui-principal-view.md) para obtener más información.
+AEM presenta la administración de permisos de la vista de nodos. La funcionalidad principal sigue siendo la misma que la IU clásica, pero es más fácil de usar y eficiente. Consulte el [artículo específico](/help/security/touch-ui-principal-view.md) para obtener más información.
 
 ### Proceso de desuso actualizado {#updated-deprecation-process}
 
@@ -225,7 +224,7 @@ Propiedades de OSGi:
 
 ### Desuso de tiempo de ejecución de Java 11 {#java11-runtime-deprecation}
 
-**Tiempo de ejecución de Java 11*- ya está obsoleto y la mayoría de los entornos ya se han actualizado al tiempo de ejecución de &#x200B;** Java 21** con mayor rendimiento.
+**Tiempo de ejecución de Java 11*- ya está obsoleto y la mayoría de los entornos ya se han actualizado al tiempo de ejecución de **Java 21** con mayor rendimiento.
 
 Si su entorno no se ha podido actualizar debido a dependencias no admitidas (consulte [Requisitos de tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), debería haber recibido un correo electrónico de Adobe con los siguientes pasos específicos. Asegúrese de que todas las actualizaciones requeridas se hayan completado el **28 de agosto de 2025** para que su entorno se pueda actualizar sin interrupciones.
 
