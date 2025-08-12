@@ -134,7 +134,7 @@ Puede activar una replicación de árbol seleccionando **Herramientas - Flujo de
 
 No invoque el modelo original. En su lugar, asegúrese de copiar primero el modelo e invocar esa copia.
 
-Al igual que todos los flujos de trabajo, también se puede invocar mediante una API. Para obtener más información, vea [Interactuar con flujos de trabajo mediante programación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
+Al igual que todos los flujos de trabajo, también se puede invocar mediante una API. Para obtener más información, vea [Interactuar con flujos de trabajo mediante programación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=es#extending-aem).
 
 También puede crear un modelo de flujo de trabajo que utilice el paso de proceso `Publish Content Tree`.
 
