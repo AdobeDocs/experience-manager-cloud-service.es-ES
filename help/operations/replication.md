@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service usa la capacidad [Sling Content Dist
 >[!NOTE]
 >
 >Si le interesa publicar contenido en lotes, cree un flujo de trabajo con el [Paso del flujo de trabajo de activación de árbol](#tree-activation), que puede administrar de manera eficiente las cargas útiles grandes.
->>No se recomienda crear su propio código personalizado de publicación en lotes.
->>Si debe personalizar por cualquier motivo, puede almacenar en déclencheur un flujo de trabajo con este paso mediante las API de flujo de trabajo existentes.
->>Siempre es recomendable publicar solo el contenido que se debe publicar. Y sea prudente al no intentar publicar grandes cantidades de contenido, si no es necesario. Sin embargo, no hay límites en cuanto a la cantidad de contenido que se puede enviar a través de flujos de trabajo con el paso de flujo de trabajo de activación de árbol.
+>&#x200B;>No se recomienda crear su propio código personalizado de publicación en lotes.
+>&#x200B;>Si debe personalizar por cualquier motivo, puede almacenar en déclencheur un flujo de trabajo con este paso mediante las API de flujo de trabajo existentes.
+>&#x200B;>Siempre es recomendable publicar solo el contenido que se debe publicar. Y sea prudente al no intentar publicar grandes cantidades de contenido, si no es necesario. Sin embargo, no hay límites en cuanto a la cantidad de contenido que se puede enviar a través de flujos de trabajo con el paso de flujo de trabajo de activación de árbol.
 
 ### Cancelación/publicación rápida: cancelación/publicación planeada {#publish-unpublish}
 

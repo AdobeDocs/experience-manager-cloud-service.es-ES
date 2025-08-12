@@ -1109,6 +1109,7 @@ Puede utilizar selectores de CSS para segmentar tipos de campo específicos y ap
   text-align: center;
 }
 ```
+
 +++
 
 +++ Estilo basado en el nombre del campo

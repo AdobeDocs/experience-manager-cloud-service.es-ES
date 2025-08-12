@@ -637,6 +637,7 @@ El selector aplica estilo a todos los paneles que se pueden repetir, lo que gara
   margin-bottom: 10px;
 }
 ```
+
 Este selector aplica estilo a todos los contenedores de campo dentro de un panel repetible, manteniendo un espaciado coherente entre los campos.
 
 - Segmentación de campos específicos (dentro de un panel):

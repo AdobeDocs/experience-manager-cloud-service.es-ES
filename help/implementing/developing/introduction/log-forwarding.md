@@ -93,7 +93,7 @@ Los clientes con una licencia con un proveedor de registro o que alojen un produ
     </tr>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ Utilice la tabla siguiente para ver cuáles son los requisitos para la configura
       <td>Sí</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >El que los registros aparezcan desde una sola dirección IP viene determinado por la configuración de red avanzada que haya elegido.  Debe utilizarse una salida dedicada para facilitar esto.
