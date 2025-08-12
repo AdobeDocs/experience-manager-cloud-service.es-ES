@@ -115,6 +115,7 @@ Ahora, configure el controlador de autenticación OIDC. Se pueden configurar var
       "storeRefreshToken": false
    }
    ```
+
 1. A continuación, configure sus propiedades como se indica a continuación:
    * `groupsInIdToken`: Se establece en true si los grupos se envían con el token de ID. Si el valor es false o no se especifica, los grupos se leen desde el extremo UserInfo.
    * `groupsClaimName`: el nombre de la notificación contiene los grupos que se van a sincronizar en AEM.
