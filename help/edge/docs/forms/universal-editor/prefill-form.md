@@ -6,7 +6,8 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: prerrellenar formularios adaptables, servicios de entrega de Edge de formularios adaptables, autorrellenar formularios adaptables
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 3%
@@ -249,7 +250,7 @@ Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 3. Elegir **vista previa como HTML**
 4. Pruebe el relleno previo añadiendo parámetros a la dirección URL:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
 
    **Ejemplo:**
 

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2333'
-ht-degree: 41%
+source-wordcount: '2327'
+ht-degree: 42%
 
 ---
 
@@ -68,12 +68,11 @@ En palabras simples, una regla When típica está estructurada de la siguiente m
 
 `Action 2 on Object B;`
 `AND`
-&grave;Acción 3 sobre el objeto C;
+`Action 3 on Object C;`
 
 `Else, do the following:`
 
 `Action 2 on Object C;`
-_
 
 Cuando tiene un componente de varios valores, como botones de opción o lista, mientras crea una regla para ese componente, las opciones se recuperan automáticamente y se ponen a disposición del creador de reglas. No es necesario volver a escribir los valores de las opciones.
 
@@ -352,7 +351,7 @@ Para obtener más información sobre cómo crear una regla para navegar en un pa
 
 #### [!UICONTROL Llamada de función asincrónica]
 
-<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
+<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder en el [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
 
 El tipo de regla **[!UICONTROL Llamada de función asincrónica]** le permite ejecutar funciones asincrónicas. Permite iniciar una llamada a una función que funciona independientemente del subproceso de ejecución principal, lo que permite que otros procesos sigan ejecutándose sin esperar a que se complete la función asincrónica.
 

@@ -4,9 +4,9 @@ description: Obtenga información sobre los diferentes eventos que envía el edi
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '510'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ La carga útil es el contenido del componente y, opcionalmente, su esquema.
 }
 ```
 
-### aue:mover contenido {#content-move}
+### aue:content-move {#content-move}
 
 El evento `aue:content-move` se activa cuando se mueve un componente.
 
@@ -108,7 +108,7 @@ La carga útil es un parche JSON de las propiedades actualizadas.
 }
 ```
 
-### aue:eliminar contenido {#content-remove}
+### aue:content-remove {#content-remove}
 
 El evento `aue:content-remove` se activa cuando se quita un componente de un contenedor.
 
@@ -219,7 +219,7 @@ La carga útil son las dimensiones de la ventanilla móvil.
 }
 ```
 
-### aue:inicializado {#initialized}
+### aue:initialized {#initialized}
 
 El evento `aue:initialized` se activa para informar a la página remota de que se ha cargado correctamente en el editor universal.
 

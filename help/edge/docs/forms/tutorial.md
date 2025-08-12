@@ -4,10 +4,10 @@ description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1921'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -241,7 +241,7 @@ Para ponerse en marcha con un entorno de desarrollo de AEM local en poco tiempo,
        npm install -g @adobe/aem-cli
    ```
 
-1. Clone su proyecto de GitHub: clone su repositorio de proyecto desde GitHub mediante el siguiente comando, reemplazando &lt;owner> con el propietario del repositorio y &lt;repo> con el nombre del repositorio:
+1. Clone su proyecto de GitHub: Clone su repositorio de proyecto desde GitHub usando el siguiente comando, reemplazando `<owner>` con el propietario del repositorio y `<repo>` con el nombre del repositorio:
 
    ```
    git clone https://github.com/<owner>/<repo>

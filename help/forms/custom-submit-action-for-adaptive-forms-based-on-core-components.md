@@ -4,17 +4,17 @@ description: Obtenga información sobre cómo crear una acción de envío person
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
-source-git-commit: b703d4c0b0bb25ecc57e5335b672069f7ad2199d
+exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 24%
 
 ---
 
-
 # Crear una acción de envío personalizada para un Forms adaptable (componentes principales)
 
-Una acción de envío permite a los usuarios seleccionar el destino de los datos capturados desde un formulario y definir la funcionalidad adicional que se ejecutará al enviarlo. AEM El formulario de datos admite varias [acciones de envío listas para usar (OOTB)](/help/forms/configure-submit-actions-core-components.md), como enviar un correo electrónico o guardar datos en SharePoint o OneDrive.
+Una acción de envío permite a los usuarios seleccionar el destino de los datos capturados desde un formulario y definir la funcionalidad adicional que se ejecutará al enviarlo. El formulario de AEM admite varias [acciones de envío listas para usar (OOTB)](/help/forms/configure-submit-actions-core-components.md), como enviar un correo electrónico o guardar datos en SharePoint o OneDrive.
 
 También puede crear una acción de envío personalizada para agregar una funcionalidad que no esté incluida en las [opciones predeterminadas](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action). Por ejemplo, integre los datos del formulario con una aplicación de terceros o envíe un déclencheur de notificación SMS personalizado en función de los datos introducidos por el usuario.
 
@@ -81,7 +81,7 @@ El diagrama siguiente muestra los pasos para crear una acción de envío persona
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`: reemplazar &lt;app-id> con su ID de aplicación real.
+   `Important`: reemplace `<app-id>` por su ID de aplicación real.
 
 1. Cree un nuevo archivo de configuración.
 Dentro de la carpeta `customsubmitaction`, cree un nuevo archivo con el nombre `.content.xml`.
@@ -134,7 +134,7 @@ Dentro de la carpeta `customsubmitaction`, cree un nuevo archivo con el nombre `
 
 1. Vaya al siguiente directorio dentro de su `[AEMaaCS project directory]`:
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`: reemplazar &lt;app-id> con su ID de aplicación real.
+   `Important`: reemplace `<app-id>` por su ID de aplicación real.
 1. Cree un nuevo archivo Java para implementar el servicio para la acción de envío agregada. Por ejemplo, agregue el nuevo archivo Java como `CustomSubmitService.java`.
 
    ![Carpeta de acción de envío personalizada](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -206,7 +206,7 @@ Dentro de la carpeta `customsubmitaction`, cree un nuevo archivo con el nombre `
 
 **Implementar el código para el entorno de Cloud Service**
 
-* Implemente AEM as a Cloud Service `[AEMaaCS project directory]` en el entorno de su Cloud Service. Para implementarlo en el entorno de Cloud Service:
+* Implemente AEM as a Cloud Service `[AEMaaCS project directory]` en su entorno de Cloud Service. Para implementarlo en el entorno de Cloud Service:
 
    1. Confirme los cambios:
 
@@ -241,7 +241,7 @@ Dentro de la carpeta `customsubmitaction`, cree un nuevo archivo con el nombre `
 
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
-1. Abra la pestaña **[!UICONTROL Envío]**.
+1. Haga clic en la pestaña **[!UICONTROL Envío]**.
 1. En la lista desplegable **[!UICONTROL Enviar acción]**, seleccione la acción de envío. Por ejemplo, seleccione la acción de envío como `Custom Submit Action`.
 
    ![Formulario de envío personalizado](/help/forms/assets/custom-submit-action-select-submit-action.png)

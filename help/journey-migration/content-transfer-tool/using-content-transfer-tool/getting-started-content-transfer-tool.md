@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo empezar a utilizar la herramienta 
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: 0c76419b5efa6d45cf4db51990633fea3b489063
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 14%
@@ -48,7 +48,7 @@ Es posible que la instancia de AEM de origen se esté ejecutando detrás de un c
 
 A veces, es difícil comprender los problemas de conexión SSL/TLS. Para solucionar problemas de conexión durante un proceso de extracción, puede habilitar el registro SSL a través de la consola del sistema del entorno de AEM de origen siguiendo estos pasos:
 
-1. Vaya a la consola web de Adobe Experience Manager en la instancia de origen, en **Herramientas > Operaciones > Consola web** o directamente a la dirección URL en *https://serveraddress:serverport/system/console/configMgr*
+1. Vaya a la consola web de Adobe Experience Manager en la instancia de origen, en **Herramientas > Operaciones > Consola web** o directamente a la URL en *https://serveraddress:serverport/system/console/configMgr*
 1. Buscar **Configuración del servicio de extracción de herramienta de transferencia de contenido**
 1. Utilice el botón del icono de lápiz para editar sus valores de configuración
 1. Habilite la opción **Habilitar el registro ssl para la extracción** y, a continuación, presione **Guardar**:
@@ -56,6 +56,7 @@ A veces, es difícil comprender los problemas de conexión SSL/TLS. Para solucio
    ![imagen](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
 >[!NOTE]
+>
 >Este indicador solo sirve para depurar problemas SSL. Asegúrese de que el indicador esté deshabilitado antes de ejecutar la extracción, ya que puede requerir una gran cantidad de espacio en disco. Esto podría llenar la capacidad de la unidad y provocar el fallo del proceso de extracción.
 
 ## Ejecución de la herramienta de transferencia de contenido {#running-tool}
@@ -64,7 +65,7 @@ A veces, es difícil comprender los problemas de conexión SSL/TLS. Para solucio
 >id="aemcloud_ctt_demo"
 >title="Ejecución de la herramienta de transferencia de contenido"
 >abstract="Obtenga información acerca de cómo utilizar la herramienta de transferencia de contenido para migrar el contenido a AEM as a Cloud Service (autor/publicación)."
->additional-url="https://video.tv.adobe.com/v/327076/?quality=12&learn=on&captions=spa" text=" Consulte la demostración"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Consulte la demostración"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=es#migration" text="Tutorial: uso de la herramienta de transferencia de contenido"
 
 La siguiente sección se aplica a la nueva versión de la herramienta de transferencia de contenido. Siga esta sección para aprender a utilizar la herramienta de transferencia de contenido para migrar contenido a AEM as a Cloud Service:
@@ -101,7 +102,7 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
    >[!NOTE]
    >
-   >El nombre debe seguir las mismas convenciones de un nodo AEM, por lo que no puede contener ninguno de estos caracteres: &grave;. / : [ ] | * &lt; > ^ ? { } % # &quot;ni ningún símbolo o emojis inusual.
+   >El nombre debe seguir las mismas convenciones de un nodo AEM, por lo que no puede contener ninguno de estos caracteres: `. / : [ ] | * < > ^ ? { } % # ` ni ningún símbolo o emojis inusual.
 
 1. Ahora debería ver la lista de migración en la vista de lista. Seleccione el símbolo de tres puntos (**...**) para abrir la lista desplegable y seleccione **Copiar clave de extracción**. Necesita esta clave durante la fase de extracción. Copie esta clave de extracción.
 
@@ -148,7 +149,6 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
       >A partir de la versión de CTT (3.0.24), se han incluido nuevas funciones en la herramienta de transferencia de contenido, lo que mejora el proceso de incluir y excluir rutas. Anteriormente, las rutas debían seleccionarse una por una, lo que resultaba tedioso y laborioso. Ahora, los usuarios pueden incluir rutas directamente desde la interfaz de usuario o cargar un archivo CSV según sus preferencias.  El archivo CSV debe tener una ruta por línea y sin comas.
 
    1. **Rutas que se incluirán**: use el explorador de rutas para seleccionar las rutas que deben migrarse. El selector de rutas acepta entradas escribiendo o seleccionando. Los usuarios solo pueden seleccionar una opción para incluir las rutas: desde la interfaz de usuario de o cargando un archivo CSV.
-
       >[!IMPORTANT]
       >Las siguientes rutas están restringidas al crear un conjunto de migración:
       >* `/apps`

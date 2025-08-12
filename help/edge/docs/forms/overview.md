@@ -4,7 +4,7 @@ description: Cree y envíe formularios de alto rendimiento en Adobe Experience M
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
@@ -50,7 +50,7 @@ Al final, podrá elegir el método de creación adecuado, comprender las opcione
 ### Editor universal
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) es una herramienta visual de creación de tipo arrastrar y soltar para los expertos en marketing y los diseñadores que combina la velocidad con la potencia de nivel empresarial:
@@ -137,6 +137,7 @@ Ya está listo para crear su primer formulario de alto rendimiento con AEM Edge 
 - [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 - [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
 - [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
+-->
 
 <!-- 
 
@@ -229,6 +230,5 @@ Ya está listo para crear su primer formulario de alto rendimiento con AEM Edge 
 
 
 </br>
-
 
 -->

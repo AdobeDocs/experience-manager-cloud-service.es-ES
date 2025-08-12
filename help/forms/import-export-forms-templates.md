@@ -5,21 +5,19 @@ topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 100%
 
 ---
 
-
+# Importar o exportar formularios adaptables y recursos de AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | Este artículo |
-
-# Importar o exportar formularios adaptables y recursos de AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
 Puede mover formularios adaptables y recursos relacionados, como temáticas de formulario adaptable, modelo de datos de formulario (FDM), plantillas de formularios adaptables, fragmentos y PDF forms, entre las instancias de [!DNL AEM Forms].
 
@@ -136,7 +134,7 @@ Para crear una carpeta:
 
 Se muestra una nueva carpeta con el título que haya definido en la ubicación actual de la lista de recursos.
 
-Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el puntero sobre el icono de error ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) que aparece junto al campo de nombre.
+Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el puntero por encima del icono de error ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) que aparece junto al campo de nombre.
 
 Puede seleccionar la carpeta creada para entrar en ella y crear recursos o carpetas dentro de la carpeta. Además, puede seleccionar una carpeta y elegir colocarla en la cola para descargarla, eliminarla o editar su nombre.
 

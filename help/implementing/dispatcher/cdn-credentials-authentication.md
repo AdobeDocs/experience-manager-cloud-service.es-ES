@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar las credenciales y la a
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: bfe0538660474d445a60fa1c8174d7a690b1dc4c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1939'
 ht-degree: 3%
@@ -65,7 +65,7 @@ data:
 
 Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades que aparecen por encima del nodo `data`. El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en `1`.
 
-Consulte el tutorial [Configurar e implementar la regla CDN de validación de encabezado HTTP](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obtener más información.
+Consulte el tutorial [Configurar e implementar la regla CDN de validación de encabezado HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obtener más información.
 
 Entre las propiedades adicionales se incluyen:
 
@@ -187,7 +187,7 @@ Entre las propiedades adicionales se incluyen:
 >[!NOTE]
 >La clave de purga debe configurarse como [secreto de tipo Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), antes de que se implemente la configuración que hace referencia a ella. Se recomienda utilizar una clave aleatoria única de al menos 32 bytes de longitud; por ejemplo, la biblioteca criptográfica Open SSL puede generar una clave aleatoria ejecutando el comando openssl rand -hex 32
 
-Puede hacer referencia a [un tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) centrado en la configuración de claves de depuración y en la depuración de la caché de la CDN.
+Puede hacer referencia a [un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) centrado en la configuración de claves de depuración y en la depuración de la caché de la CDN.
 
 ## Autenticación básica {#basic-auth}
 
@@ -241,6 +241,7 @@ Además, la sintaxis incluye lo siguiente:
    * action: debe especificar &quot;authentication&quot;, con el autenticador deseado referenciado, que es basic-auth para este escenario
 
 >[!NOTE]
+>
 >Las contraseñas deben configurarse como [variables de entorno Cloud Manager de tipo secreto](/help/operations/config-pipeline.md#secret-env-vars), antes de que se implemente la configuración que hace referencia a ellas.
 
 ## Rotación de secretos {#rotating-secrets}

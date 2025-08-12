@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '1389'
-ht-degree: 100%
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
+source-wordcount: '1388'
+ht-degree: 98%
 
 ---
 
@@ -144,180 +144,180 @@ El formulario adaptable utiliza la información disponible en el esquema JSON pa
 >[!TAB Esquema JSON v4]
 
 ```json
-{
-"$schema": "https://json-schema.org/draft-04/schema#",
-"definitions": {
-  "employee": {
-  "type": "object",
-  "properties": {
-    "userName": {
-     "type": "string"
-   },
-    "dateOfBirth": {
-     "type": "string",
-     "format": "date"
+  {
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "employee": {
+    "type": "object",
+    "properties": {
+      "userName": {
+       "type": "string"
+     },
+      "dateOfBirth": {
+       "type": "string",
+       "format": "date"
+      },
+      "email": {
+      "type": "string",
+      "format": "email"
+      },
+      "language": {
+       "type": "string"
+     },
+      "personalDetails": {
+       "$ref": "#/definitions/personalDetails"
+     },
+      "projectDetails": {
+       "$ref": "#/definitions/projectDetails"
+      }
     },
-    "email": {
-    "type": "string",
-    "format": "email"
+    "required": [
+     "userName",
+     "dateOfBirth",
+     "language"
+    ]
     },
-    "language": {
-     "type": "string"
-   },
-    "personalDetails": {
-     "$ref": "#/definitions/personalDetails"
-   },
+      "personalDetails": {
+     "type": "object",
+    "properties": {
+       "GeneralDetails": {
+      "$ref": "#/definitions/GeneralDetails"
+     },
+      "Family": {
+       "$ref": "#/definitions/Family"
+      },
+      "Income": {
+       "$ref": "#/definitions/Income"
+     }
+     }
+       },
     "projectDetails": {
-     "$ref": "#/definitions/projectDetails"
+     "type": "array",
+     "items": {
+     "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     },
+     "projects": {
+      "$ref": "#/definitions/projects"
+     }
     }
-  },
-  "required": [
-   "userName",
-   "dateOfBirth",
-   "language"
-  ]
-  },
-    "personalDetails": {
-   "type": "object",
-  "properties": {
-     "GeneralDetails": {
-    "$ref": "#/definitions/GeneralDetails"
    },
-    "Family": {
-     "$ref": "#/definitions/Family"
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "projects": {
+   "type": "array",
+   "items": {
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     },
+     "projectsAdditional": {
+      "$ref": "#/definitions/projectsAdditional"
+     }
+    }
+   },
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "projectsAdditional": {
+   "type": "array",
+   "items": {
+    "properties": {
+     "Additional_name": {
+      "type": "string"
+     },
+     "Additional_areacode": {
+      "type": "number"
+     }
+    }
+   },
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "GeneralDetails": {
+   "type": "object",
+   "properties": {
+    "age": {
+     "type": "number"
+    },
+    "married": {
+     "type": "boolean"
+    },
+    "phone": {
+     "type": "number",
+     "aem:afProperties": {
+      "sling:resourceType": "/libs/fd/af/components/guidetelephone",
+      "guideNodeClass": "guideTelephone"
+     }
+    },
+    "address": {
+     "type": "string"
+    }
+   }
+  },
+  "Family": {
+   "type": "object",
+   "properties": {
+    "spouse": {
+     "$ref": "#/definitions/spouse"
+    },
+    "kids": {
+     "$ref": "#/definitions/kids"
+    }
+   }
+  },
+  "Income": {
+   "type": "object",
+   "properties": {
+    "monthly": {
+     "type": "number"
+    },
+    "yearly": {
+     "type": "number"
+    }
+   }
+  },
+  "spouse": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
     },
     "Income": {
      "$ref": "#/definitions/Income"
+    }
    }
-   }
-     },
-  "projectDetails": {
-   "type": "array",
-   "items": {
-   "properties": {
-   "name": {
-    "type": "string"
-   },
-   "age": {
-    "type": "number"
-   },
-   "projects": {
-    "$ref": "#/definitions/projects"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"projects": {
- "type": "array",
- "items": {
-  "properties": {
-   "name": {
-    "type": "string"
-   },
-   "age": {
-    "type": "number"
-   },
-   "projectsAdditional": {
-    "$ref": "#/definitions/projectsAdditional"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"projectsAdditional": {
- "type": "array",
- "items": {
-  "properties": {
-   "Additional_name": {
-    "type": "string"
-   },
-   "Additional_areacode": {
-    "type": "number"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"GeneralDetails": {
- "type": "object",
- "properties": {
-  "age": {
-   "type": "number"
-  },
-  "married": {
-   "type": "boolean"
-  },
-  "phone": {
-   "type": "number",
-   "aem:afProperties": {
-    "sling:resourceType": "/libs/fd/af/components/guidetelephone",
-    "guideNodeClass": "guideTelephone"
-   }
-  },
-  "address": {
-   "type": "string"
-  }
- }
-},
-"Family": {
- "type": "object",
- "properties": {
-  "spouse": {
-   "$ref": "#/definitions/spouse"
   },
   "kids": {
-   "$ref": "#/definitions/kids"
-  }
- }
-},
-"Income": {
- "type": "object",
- "properties": {
-  "monthly": {
-   "type": "number"
-  },
-  "yearly": {
-   "type": "number"
-  }
- }
-},
-"spouse": {
- "type": "object",
- "properties": {
-  "name": {
-   "type": "string"
-  },
-  "Income": {
-   "$ref": "#/definitions/Income"
-  }
- }
-},
-"kids": {
- "type": "array",
- "items": {
-  "properties": {
-   "name": {
-    "type": "string"
+   "type": "array",
+   "items": {
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     }
+    }
    },
-   "age": {
-    "type": "number"
-   }
+   "minItems": 1,
+   "maxItems": 4
   }
  },
- "minItems": 1,
- "maxItems": 4
-}
-},
-"type": "object",
-"properties": {
-"employee": {
- "$ref": "#/definitions/employee"
-}
-}
+ "type": "object",
+ "properties": {
+  "employee": {
+   "$ref": "#/definitions/employee"
+  }
+ }
 }
 ```
 
@@ -453,6 +453,7 @@ El formulario adaptable utiliza la información disponible en el esquema JSON pa
 >[!ENDTABS]
 
 Los cambios clave de las especificaciones del esquema JSON V4 a la versión 2020-12 son los siguientes:
+
 * El ID se ha declarado como `$id`
 * las definiciones se han declarado como `$defs`
 

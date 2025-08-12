@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar el tráfico de CDN decl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---
@@ -172,7 +172,7 @@ En la tabla siguiente se explican las acciones disponibles.
 |     | var | Quita una variable especificada. |
 |     | queryParamMatch | Quita todos los parámetros de consulta que coinciden con una expresión regular especificada. |
 |     | queryParamDoesNotMatch | Quita todos los parámetros de consulta que no coinciden con una expresión regular especificada. |
-| **transformar** | op:replace, (reqProperty o reqHeader o queryParam o reqCookie o var), match, replace | Reemplaza parte del parámetro de solicitud (solo se admite la propiedad &quot;path&quot;), el encabezado de solicitud, el parámetro de consulta, la cookie o la variable por un nuevo valor. |
+| **transformar** | op:replace, (reqProperty o reqHeader o queryParam o reqCookie o var), coincidencia, reemplazo | Reemplaza parte del parámetro de solicitud (solo se admite la propiedad &quot;path&quot;), el encabezado de solicitud, el parámetro de consulta, la cookie o la variable por un nuevo valor. |
 |              | op:tolower, (reqProperty o reqHeader o queryParam o reqCookie o var) | Establece el parámetro de solicitud (solo se admite la propiedad &quot;path&quot;), el encabezado de solicitud, el parámetro de consulta, la cookie o la variable en minúsculas. |
 
 Las acciones de reemplazo admiten grupos de captura, como se muestra a continuación:

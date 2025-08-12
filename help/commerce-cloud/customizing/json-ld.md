@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -23,8 +23,11 @@ En esta guía se explica cómo habilitar y comprobar la función JSON+LD en AEM 
 ## Habilitar JSON+LD en la configuración de CIF {#enabling}
 
 De manera predeterminada, la casilla de verificación **Habilitar JSON+LD** no está visible en la configuración de CIF. Para habilitar esta función, el proyecto debe incluir la configuración OSGi necesaria, que permite mostrar la casilla de verificación. Esta configuración permite a los usuarios alternar la compatibilidad con scripts JSON+LD en las páginas de producto.
-Para que la casilla de verificación **Habilitar JSON+LD** esté disponible en la configuración de CIF, agregue la siguiente configuración OSGi al proyecto: &grave;
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;.
+
+Para que la casilla de verificación **Habilitar JSON+LD** esté disponible en la configuración de CIF, agregue la siguiente configuración OSGi a su proyecto:
+
+`com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
+
 Para obtener más información sobre cómo agregar esta configuración, consulte [Agrega la configuración para Json-Ld](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) en el repositorio público aem-cif-guides-venia.
 
 Una vez que se agrega e implementa esta configuración, la casilla de verificación se vuelve visible en los ajustes de configuración de CIF y estos son los pasos para habilitar **JSON+LD**:
@@ -38,7 +41,7 @@ Una vez que se agrega e implementa esta configuración, la casilla de verificaci
 
 Para ilustrar los pasos para verificar JSON+LD, se utiliza el proyecto Venia como ejemplo, donde ya se ha añadido la configuración JSON+LD necesaria para habilitar la función. Estos son los pasos a seguir:
 
-1. Vaya a la instancia local de AEM y abra la Página de detalles del producto (PDP): http://localhost:4502/editor.html/content/venia/us/en/products/product-page.html
+1. Vaya a la instancia local de AEM y abra la página de detalles del producto (PDP): http://localhost:4502/editor.html/content/venia/us/en/products/product-page.html
 1. Cree un producto en la página de detalles del producto (PDP).
 1. Cambiar al modo **Ver como Publicar**.
 1. Abra **Ver página Source** en su explorador.

@@ -1,10 +1,11 @@
 ---
 title: Introducción a las herramientas de refactorización
 description: Obtenga información sobre cómo empezar a utilizar las herramientas de refactorización en AEM as a Cloud Service
-source-git-commit: 20bb756c4a2eb37341da4582f19cf41e4d60304a
+exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=es" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -26,7 +27,7 @@ ht-degree: 2%
 
 Utilice la herramienta de refactorización para migrar el código para comprobar la compatibilidad con AEM as a Cloud Service.
 
-1. Si todavía no ha creado ningún proyecto CAM, consulte [Creación y administración de un proyecto en CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project).
+1. Si todavía no ha creado un proyecto CAM, consulte [Creación y administración de un proyecto en CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project).
 1. Haga clic en la tarjeta **Refactorización de código** para cargar el código fuente.
 
    ![imagen](/help/journey-migration/refactoring-tools/assets/rscam1.png)
@@ -34,8 +35,6 @@ Utilice la herramienta de refactorización para migrar el código para comprobar
 1. Cuando acceda por primera vez a la **Vista de código Source**, verá un estado vacío que le pedirá que cargue el código fuente.
 
    ![imagen](/help/journey-migration/refactoring-tools/assets/rscam2.png)
-
-&#x200B;---
 
 ## Cargando código Source {#uploading}
 
@@ -67,12 +66,12 @@ Cuando los clientes acceden por primera vez a **Herramientas de refactorización
    ![imagen](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
+>
 >Si se carga un proyecto nuevo, se eliminará el existente. Asegúrese de guardar los datos necesarios antes de continuar.
 
 >[!NOTE]
+>
 >Los trabajos de refactorización solo se pueden ejecutar si la carga del código fuente se realiza correctamente.
-
-&#x200B;---
 
 ## Trabajos de refactorización {#refactoring-jobs}
 
@@ -89,9 +88,8 @@ Al hacer clic en la ficha **Trabajo de refactorización**, verá una lista de lo
 ![imagen](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
+>
 >Puede almacenar en déclencheur trabajos de refactorización individuales o ejecutar todas las herramientas disponibles de una sola vez mediante la opción **Todas las herramientas juntas**.
-
-&#x200B;---
 
 ### &#x200B;2. Estado del puesto
 
@@ -110,5 +108,5 @@ Cuando el trabajo se complete correctamente, el botón **Descargar** estará dis
 ![imagen](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
 >[!NOTE]
+>
 >Cada trabajo puede tardar hasta 1 hora en completarse. Si el estado no se actualiza, póngase en contacto con el Soporte técnico de Adobe.
-

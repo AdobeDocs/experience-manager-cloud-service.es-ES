@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '886'
 ht-degree: 3%
 
 ---
@@ -25,6 +25,7 @@ Este documento proporciona una guía completa sobre la activación y verificaci�
 De forma predeterminada, la función de borrado de caché está desactivada en la configuración de CIF. Para habilitarlo, debe agregar lo siguiente a sus proyectos correspondientes:
 
 * Habilite el servlet `/bin/cif/invalidate-cache`, que le ayuda a activar la API de borrar caché con sus solicitudes correspondientes agregando la configuración `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` en su proyecto como se muestra [aquí](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json).
+
   >[!NOTE]
   >
   > La configuración solo debe habilitarse para las instancias de autor.
@@ -50,6 +51,7 @@ Para comprobar que todo está configurado correctamente:
 * Compruebe que se ha creado el mismo nodo en cada instancia de publicación.
 
 Ahora, para comprobar si las cachés se están borrando correctamente:
+
 1. Navegue hasta las páginas PLP y PDP correspondientes.
 2. Actualice el nombre de un producto o categoría en el motor de comercio. Los cambios no se reflejan en AEM inmediatamente en función de las configuraciones de caché.
 3. Almacene en déclencheur la API de servlet como se muestra aquí:
@@ -57,7 +59,7 @@ Ahora, para comprobar si las cachés se están borrando correctamente:
    ```
    curl --location '{Author AEM Instance Url}/bin/cif/invalidate-cache' \
    --header 'Content-Type: application/json' \
-   --header 'Authorization: ••••••' \ // Mandatory
+   --header 'Authorization: ******' \ // Mandatory
    --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
    --data '{
        "productSkus": ["Sku1", "Sku2"], // Optional: Pass the corresponding sku which got updated.
@@ -109,7 +111,7 @@ Esta tabla muestra la propiedad obligatoria que debe pasarse en cada llamada de 
 ```
 curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/invalidate-cache' \
 --header 'Content-Type: application/json' \
---header 'Authorization: ••••••' \
+--header 'Authorization: ******' \
 --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
 --data '{
 "productSkus": ["VP01", "VT10"], // This will clear cache for the corresponding pages related with mentioned skus.

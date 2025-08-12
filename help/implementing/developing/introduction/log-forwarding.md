@@ -4,7 +4,7 @@ description: Obtenga información acerca del reenvío de registros a proveedores
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 3%
@@ -19,22 +19,6 @@ ht-degree: 3%
 
 Los clientes con una licencia con un proveedor de registro o que alojen un producto de registro pueden hacer que los registros de AEM (incluido Apache/Dispatcher) y los registros de CDN se reenvíen al destino de registro asociado. AEM as a Cloud Service admite los siguientes destinos de registro:
 
-&lt;html>
-&lt;style>
-table &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  table-layout: fixed;
-&rbrace;
-th, td &lbrace;
-  width: 5%;
-  max-width: 100%;
-  border: 1px solid black;
-  padding: 8px;
-  word-wrap: break-word;
-&rbrace;
-&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +93,7 @@ th, td &lbrace;
     </tr>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >
@@ -200,14 +184,7 @@ Otro escenario es deshabilitar el reenvío de los registros de CDN o de AEM (inc
 Algunas organizaciones eligen restringir qué tráfico pueden recibir los destinos de registro, otras pueden requerir el uso de puertos que no sean HTTPS (443).  Si es así, será necesario configurar [Redes avanzadas](/help/security/configuring-advanced-networking.md) antes de implementar la configuración del reenvío de registros.
 
 Utilice la tabla siguiente para ver cuáles son los requisitos para la configuración de Red avanzada y Registro en función de si está utilizando el puerto 443 o no, y de si necesita que los registros aparezcan o no desde una dirección IP fija.
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-&rbrace;
-&lt;/style>
+
 <table>
   <tbody>
     <tr>
@@ -239,7 +216,7 @@ table, th, td &lbrace;
       <td>Sí</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >El que los registros aparezcan desde una sola dirección IP viene determinado por la configuración de red avanzada que haya elegido.  Debe utilizarse una salida dedicada para facilitar esto.
@@ -270,6 +247,7 @@ data:
 Para los registros de CDN, puede incluir en la lista de permitidos las direcciones IP, tal como se describe en [Documentación de Fastly: Lista de IP públicas](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si esa lista de direcciones IP compartidas es demasiado grande, considere la posibilidad de enviar tráfico a un servidor https o a un almacén de blobs de Azure (que no sea de Adobe) donde se pueda escribir lógica para enviar los registros de una IP conocida a su destino final.
 
 >[!NOTE]
+>
 >No es posible que los registros de CDN aparezcan desde la misma dirección IP desde la que aparecen los registros de AEM, esto se debe a que los registros se envían directamente desde Fastly y no desde AEM Cloud Service.
 
 ## Configuración de destino de registro {#logging-destinations}
@@ -304,15 +282,15 @@ Para utilizar el S3 Log Forwarder, deberá preconfigurar un usuario de AWS IAM c
 La directiva IAM debe permitir al usuario utilizar `s3:putObject`.  Por ejemplo:
 
 ```json
-{
-   "Version": "2012-10-17",
-   "Statement": [{
-       "Effect": "Allow",
-       "Action": [
-           "s3:PutObject"
-       ],
-       "Resource": "arn:aws:s3:::your_bucket_name/*"
-   }]
+ {
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "s3:PutObject"
+        ],
+        "Resource": "arn:aws:s3:::your_bucket_name/*"
+    }]
 }
 ```
 
@@ -512,6 +490,7 @@ El reenvío de registros a New Relic aprovecha la API HTTPS de New Relic para su
 ```
 
 >[!NOTE]
+>
 >El reenvío de registros a New Relic solo está disponible para cuentas de New Relic propiedad del cliente.
 >
 >Envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acceso.
@@ -538,6 +517,7 @@ El atributo de ámbito &quot;Ingesta de registros&quot; es necesario para el tok
 ```
 
 >[!NOTE]
+>
 > Envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acceso.
 
 ### Splunk {#splunk}
@@ -630,6 +610,7 @@ Cuando esté listo para migrar, simplemente configure el archivo YAML como se de
 Se recomienda, pero no es obligatorio, que se implemente una configuración en todos los entornos para que todos estén bajo control de autoservicio. Si no es así, es posible que olvide qué entornos ha configurado Adobe frente a los configurados de forma automática.
 
 >[!NOTE]
+>
 >Los valores del campo `sourcetype` enviados a su índice de Splunk pueden haber cambiado, así que ajústelos en consecuencia.
 >
 >Cuando se implementa el reenvío de registros en un entorno previamente configurado por el soporte de Adobe, es posible que reciba registros duplicados durante un máximo de unas horas. Esto finalmente se resolverá automáticamente.

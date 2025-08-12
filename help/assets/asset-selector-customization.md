@@ -3,10 +3,10 @@ title: Personalizar la aplicación Selector de recursos
 description: Utilice funciones para personalizar el selector de recursos en la aplicación.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 25%
+source-wordcount: '1246'
+ht-degree: 23%
 
 ---
 
@@ -170,18 +170,18 @@ En la tabla siguiente se describen algunas de las propiedades importantes del ob
 
 | Propiedad | Tipo | Descripción |
 |---|---|---|
-| *repo:repositoryId* | cadena | Identificador único del repositorio en el que se almacena el recurso. |
-| *repo:id* | cadena | Identificador único del recurso. |
-| *repo:assetClass* | cadena | La clasificación del recurso (por ejemplo, imagen o vídeo, documento). |
-| *repo:name* | cadena | Nombre del recurso, incluida la extensión de archivo. |
-| *repo:size* | número | El tamaño del recurso en bytes. |
-| *repo:path* | cadena | La ubicación del recurso dentro del repositorio. |
-| *repo:ancestors* | `Array<string>` | Matriz de elementos antecesores del recurso en el repositorio. |
-| *repo:state* | cadena | Estado actual del recurso en el repositorio (por ejemplo, activo, eliminado, etc.). |
-| *repo:createdBy* | cadena | El usuario o sistema que creó el recurso. |
-| *repo:createDate* | cadena | La fecha y la hora en que se creó el recurso. |
-| *repo:modifiedBy* | cadena | Usuario o sistema que modificó el recurso por última vez. |
-| *repo:modifyDate* | cadena | La fecha y la hora en que se modificó el recurso por última vez. |
+| *repositorio:repositoryId* | cadena | Identificador único del repositorio en el que se almacena el recurso. |
+| *repositorio:id* | cadena | Identificador único del recurso. |
+| *repositorio:assetClass* | cadena | La clasificación del recurso (por ejemplo, imagen o vídeo, documento). |
+| *repositorio:name* | cadena | Nombre del recurso, incluida la extensión de archivo. |
+| *repositorio:size* | número | El tamaño del recurso en bytes. |
+| *repositorio:path* | cadena | La ubicación del recurso dentro del repositorio. |
+| *repositorio:ancestors* | `Array<string>` | Matriz de elementos antecesores del recurso en el repositorio. |
+| *repositorio:state* | cadena | Estado actual del recurso en el repositorio (por ejemplo, activo, eliminado, etc.). |
+| *repositorio:createdBy* | cadena | El usuario o sistema que creó el recurso. |
+| *repositorio:createDate* | cadena | La fecha y la hora en que se creó el recurso. |
+| *repositorio:modifiedBy* | cadena | Usuario o sistema que modificó el recurso por última vez. |
+| *repositorio:modifyDate* | cadena | La fecha y la hora en que se modificó el recurso por última vez. |
 | *dc:format* | cadena | El formato del recurso, como el tipo de archivo (por ejemplo, JPEG, PNG, etc.). |
 | *tiff:imageWidth* | número | La anchura de un recurso. |
 | *tiff:imageLength* | número | Altura de un recurso. |
@@ -255,6 +255,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 

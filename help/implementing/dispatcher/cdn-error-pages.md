@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo anular la página de error predete
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Configuración de páginas de error de CDN {#cdn-error-pages}
 
-En el improbable caso de que [CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) administrado por el Adobe AEM no pueda alcanzar el origen de la, la CDN proporciona de forma predeterminada una página de error genérica sin marca que indica que no se puede llegar al servidor. Puede anular la página de error predeterminada alojando archivos estáticos en un almacenamiento autoalojado como Amazon S3 o Azure Blob Storage y haciendo referencia a ellos en un archivo de configuración que se implementa mediante la canalización de Cloud Manager [config](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+En el improbable caso de que la [CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) administrada por Adobe no pueda alcanzar el origen de AEM, la CDN muestra de forma predeterminada una página de error genérica sin marca que indica que no se puede llegar al servidor. Puede anular la página de error predeterminada alojando archivos estáticos en un almacenamiento autoalojado como Amazon S3 o Azure Blob Storage y haciendo referencia a ellos en un archivo de configuración que se implementa mediante la canalización de Cloud Manager [config](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ## Configuración {#setup}
 
@@ -30,7 +30,7 @@ Para poder anular la página de error predeterminada, debe hacer lo siguiente:
 
 ### Sintaxis {#syntax}
 
-SPA La página de error se implementa como una aplicación de una sola página () y hace referencia a un puñado de propiedades, como se muestra en el ejemplo siguiente.  Los archivos estáticos a los que hacen referencia las direcciones URL deben alojarse en un servicio accesible por Internet como Amazon S3 o Azure Blob Storage.
+La página de error se implementa como una aplicación de una sola página (SPA) y hace referencia a un puñado de propiedades, como se muestra en el ejemplo siguiente.  Los archivos estáticos a los que hacen referencia las direcciones URL deben alojarse en un servicio accesible por Internet como Amazon S3 o Azure Blob Storage.
 
 Ejemplo de configuración:
 
@@ -60,7 +60,7 @@ Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipel
 
 ### Ejemplo de HTML generado {#sample-generated-html}
 
-El código de HTML generado por la CDN y entregado al cliente, como un explorador, se parecerá (pero no es idéntico) al siguiente fragmento:
+El código HTML generado por la CDN y suministrado al cliente, como un explorador, se parecerá (pero no es idéntico) al siguiente fragmento de código:
 
 ```
 <!DOCTYPE html>
@@ -93,6 +93,6 @@ De este modo, se almacena directamente en déclencheur el controlador de error d
 
 ### Tutorial
 
-Consulte el tutorial [Páginas de error de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obtener instrucciones paso a paso sobre cómo crear, implementar y probar las páginas de error del servidor CDN.
+Consulte el tutorial [Páginas de error de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obtener instrucciones paso a paso sobre cómo crear, implementar y probar las páginas de error del servidor CDN.
 
 

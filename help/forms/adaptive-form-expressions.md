@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '2686'
-ht-degree: 100%
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
+source-wordcount: '2682'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ JavaScript™ es el lenguaje de expresión de los formularios adaptables. Todas 
 
 * Al escribir expresiones, para acceder a campos y paneles, puede utilizar el nombre del campo o panel. Para acceder al valor de un campo, utilice la propiedad “value”. Por ejemplo, `field1.value`
 * Utilice nombres únicos para los campos y paneles de todo el formulario. Ayuda a evitar posibles conflictos con los nombres de campo utilizados al escribir expresiones.
-* Cuando escriba expresiones de varias líneas, utilice un punto y coma para finalizar un enunciado.
+* Cuando escriba expresiones de varias líneas, utilice un punto y coma para terminar un enunciado.
 
 ## Prácticas recomendadas para expresiones que implican un panel de repetición {#best-practices-for-expressions-involving-repeating-panel}
 
@@ -217,9 +217,9 @@ GuideBridge es una colección de API que se pueden usar para interactuar con for
 
 #### Uso de GuideBridge en varias expresiones {#guidebridge-usage-in-various-expressions}
 
-* Para restablecer los campos del formulario, puede habilitar la `guideBridge.reset()` API en la expresión “click” de un botón. Del mismo modo, existe una API de envío que puede llamarse expresión “click” `guideBridge.submit()`**.**
+* Para restablecer los campos del formulario, puede habilitar la `guideBridge.reset()` API en la expresión “click” de un botón. Del mismo modo, existe una API de envío que puede llamarse expresión de clic `guideBridge.submit()`.
 
-* Puede usar la `setFocus()` API establecer el enfoque en varios campos o paneles (para el panel, el enfoque se establecerá en el primer campo automáticamente). `setFocus()` proporciona una amplia gama de opciones para navegar, como la navegación entre paneles, la travesía anterior o siguiente, la configuración del enfoque en un campo concreto y mucho más. Por ejemplo, para desplazarse al siguiente panel, puede utilizar lo siguiente: `guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;).
+* Puede usar la `setFocus()` API establecer el enfoque en varios campos o paneles (para el panel, el enfoque se establecerá en el primer campo automáticamente). `setFocus()` proporciona una amplia gama de opciones para navegar, como la navegación entre paneles, la travesía anterior/siguiente, la configuración del enfoque en un campo en particular y mucho más. Por ejemplo, para pasar al siguiente panel, puede utilizar: `guideBridge.setFocus(this.panel.somExpression, 'nextItem')`.
 
 * Para validar un formulario adaptable o sus paneles específicos, utilice `guideBridge.validate(errorList, somExpression).`
 

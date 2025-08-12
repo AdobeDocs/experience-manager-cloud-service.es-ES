@@ -4,10 +4,10 @@ description: Notas de la versión 2025.5.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: b7a21533-9db1-4111-814c-cab917041be4
-source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2162'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de mayo de 2025 para ver un resumen de las funciones añadidas en la versión 2025.5.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464353?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -108,13 +108,13 @@ Acceda a todas las [representaciones de ajustes preestablecidos y recortes intel
 
 [Integración nativa de Experience Manager (AEM) Dynamic Media con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/content-management/combine/aem-dynamic), lo que permite a los expertos en marketing incrustar fácilmente los recursos de Dynamic Media de AEM (representación y plantilla de DM) en el contenido de AJO y ofrecer actualizaciones en tiempo real y experiencias personalizadas al máximo en todos los canales.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463785/?learn=on&enablevpops=&autoplay=true&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Características previas al lanzamiento
 
-* [Editor universal para Forms adaptable y fragmentos de formulario](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): El editor universal ahora admite la creación de Forms adaptable y fragmentos de formulario reutilizables. Los autores pueden crear formularios de forma visual, configurar acciones de envío y agregar la validación reCAPTCHA, todo en un entorno de creación simplificado de WYSIWYG. Esta capacidad acelera la creación de formularios, mejora la coherencia y la protección contra el correo no deseado y el uso indebido automatizado.
+* [Editor universal para formularios adaptables y fragmentos de formulario](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): ahora el editor universal permite crear formularios adaptables y fragmentos de formulario reutilizables. Los autores pueden crear formularios de forma visual, configurar acciones de envío y añadir la validación reCAPTCHA, todo ello en un entorno de creación simplificado de WYSIWYG. Esta posibilidad acelera la creación de formularios, mejora la coherencia y la protección contra el correo no deseado y el uso indebido automatizado.
 
 * [Biblioteca de documentos de SharePoint - Guardar archivos adjuntos con nombres de archivo originales](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): ahora tiene la opción de guardar los archivos adjuntos del formulario utilizando sus nombres de archivo originales al almacenarlos en una biblioteca de documentos de SharePoint. Esta mejora simplifica la identificación y administración de los archivos cargados.
 
@@ -132,7 +132,7 @@ En estas notas de la versión se indican las innovaciones de la versión actual.
 
 #### Integración de Adobe Experience Platform (AEP) con Forms
 
-* [Integración de AEM Forms con Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): el conector de AEM Forms a Adobe Experience Platform permite una integración perfecta entre Forms adaptable y Adobe Experience Platform. Esta función permite asignar datos de formulario a esquemas XDM y enviarlos directamente a AEP en tiempo real. Simplifica la captura de datos para casos de uso de personalización y activación en todas las soluciones de Adobe Experience Cloud.
+* [Integración de AEM Forms con Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): el conector de AEM Forms a Adobe Experience Platform permite una integración perfecta entre los formularios adaptables y Adobe Experience Platform. Esta función permite asignar datos de formulario a esquemas XDM y enviarlos directamente a AEP en tiempo real. Simplifica la captura de datos para casos de uso de personalización y activación en todas las soluciones de Adobe Experience Cloud.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

@@ -4,7 +4,7 @@ description: Obtenga información acerca de la distribución y la resolución de
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 31%
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service usa la capacidad [Sling Content Dist
 >[!NOTE]
 >
 >Si le interesa publicar contenido en lotes, cree un flujo de trabajo con el [Paso del flujo de trabajo de activación de árbol](#tree-activation), que puede administrar de manera eficiente las cargas útiles grandes.
->&#x200B;>No se recomienda crear su propio código personalizado de publicación en lotes.
->&#x200B;>Si debe personalizar por cualquier motivo, puede almacenar en déclencheur un flujo de trabajo con este paso mediante las API de flujo de trabajo existentes.
->&#x200B;>Siempre es recomendable publicar solo el contenido que se debe publicar. Y sea prudente al no intentar publicar grandes cantidades de contenido, si no es necesario. Sin embargo, no hay límites en cuanto a la cantidad de contenido que se puede enviar a través de flujos de trabajo con el paso de flujo de trabajo de activación de árbol.
+>>No se recomienda crear su propio código personalizado de publicación en lotes.
+>>Si debe personalizar por cualquier motivo, puede almacenar en déclencheur un flujo de trabajo con este paso mediante las API de flujo de trabajo existentes.
+>>Siempre es recomendable publicar solo el contenido que se debe publicar. Y sea prudente al no intentar publicar grandes cantidades de contenido, si no es necesario. Sin embargo, no hay límites en cuanto a la cantidad de contenido que se puede enviar a través de flujos de trabajo con el paso de flujo de trabajo de activación de árbol.
 
 ### Cancelación/publicación rápida: cancelación/publicación planeada {#publish-unpublish}
 
@@ -126,8 +126,7 @@ El flujo de trabajo procesa el contenido en fragmentos, cada uno de los cuales r
 >
 >Esta función queda obsoleta y prefiere el paso de activación de árbol, que es más eficiente y se puede incluir en un flujo de trabajo personalizado.
 
-<details>
-<summary>Haga clic aquí para obtener más información sobre esta función obsoleta.</summary>
++++ Haga clic aquí para obtener más información sobre esta función obsoleta.
 
 Puede activar una replicación de árbol seleccionando **Herramientas - Flujo de trabajo - Modelos** y copiando el modelo de flujo de trabajo integrado **Árbol de contenido de publicación**, como se muestra a continuación:
 
@@ -135,7 +134,7 @@ Puede activar una replicación de árbol seleccionando **Herramientas - Flujo de
 
 No invoque el modelo original. En su lugar, asegúrese de copiar primero el modelo e invocar esa copia.
 
-Al igual que todos los flujos de trabajo, también se puede invocar mediante una API. Para obtener más información, vea [Interactuar con flujos de trabajo mediante programación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=es#extending-aem).
+Al igual que todos los flujos de trabajo, también se puede invocar mediante una API. Para obtener más información, vea [Interactuar con flujos de trabajo mediante programación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 También puede crear un modelo de flujo de trabajo que utilice el paso de proceso `Publish Content Tree`.
 
@@ -194,7 +193,7 @@ A continuación se muestran ejemplos de registros generados durante un flujo de 
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
 
-</details>
++++
 
 ### API de replicación {#replication-api}
 

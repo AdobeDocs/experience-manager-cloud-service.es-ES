@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '321'
 ht-degree: 4%
 
 ---
@@ -22,10 +22,15 @@ El componente Carrusel de productos se amplía a través de este tutorial. Como 
 1. Inserte un nuevo componente Carrusel de productos en el contenedor de diseño principal de la página.
    ![Componente de carrusel de productos](/help/commerce-cloud/assets/product-carousel-component.png)
 1. Expanda el panel lateral (si no está activado) y cambie la lista desplegable del buscador de recursos a **Productos**.
-     ![Productos de carrusel](/help/commerce-cloud/assets/carousel-products.png)    
+
+   ![Productos de carrusel](/help/commerce-cloud/assets/carousel-products.png)
+
 1. Esto debería mostrar una lista de los productos disponibles de una instancia de Adobe Commerce conectada.
+
    ![Instancia conectada](/help/commerce-cloud/assets/connected-instance.png)
+
 1. Los productos se mostrarán como se muestra a continuación con las propiedades predeterminadas:
+
    ![Producto mostrado con propiedades](/help/commerce-cloud/assets/discount.png)
 
 ## Actualización del modelo de Sling {#update-sling-model}
@@ -50,7 +55,7 @@ El patrón de delegación para modelos Sling permite que `CustomCarouselImpl` ha
    private ProductCarousel productCarousel;
    ```
 
-1. La anotación @PostConstruct garantiza que se llame a este método cuando se inicialice el modelo Sling. La consulta de GraphQL del producto ya se ha ampliado utilizando el método extendProductQueryWith para recuperar atributos. Actualice la consulta de GraphQL para incluir el  en la consulta parcial:
+1. La anotación @PostConstruct garantiza que se llame a este método cuando se inicialice el modelo Sling. La consulta de GraphQL del producto ya se ha ampliado utilizando el método extendProductQueryWith para recuperar atributos. Actualice la consulta de GraphQL para incluir el atributo en la consulta parcial:
 
    ```
    @PostConstruct

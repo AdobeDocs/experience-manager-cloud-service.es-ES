@@ -5,7 +5,7 @@ keywords: Agregar una función personalizada, utilizar una función personalizad
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 13%
@@ -45,6 +45,7 @@ Antes de empezar a agregar una función personalizada a su Forms adaptable, aseg
 Cree una biblioteca de cliente para llamar a funciones personalizadas en el editor de reglas. Para obtener más información, consulte [Uso de bibliotecas del lado del cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=es#developing).
 
 Los pasos para crear funciones personalizadas son los siguientes:
+
 1. [Crear una biblioteca de cliente](#create-client-library)
 1. [Agregar una biblioteca de cliente a un formulario adaptable](#use-custom-function)
 
@@ -54,7 +55,7 @@ Puede agregar funciones personalizadas agregando una biblioteca de cliente. Para
 
 **Clonar el repositorio**
 
-Clonar su [repositorio as a Cloud Service de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git):
+Clone su [Repositorio de AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git):
 
 1. Abra la línea de comandos o la ventana de terminal.
 
@@ -150,7 +151,7 @@ Agregue lo siguiente a la carpeta de biblioteca de cliente agregada:
 
 ![xml de filtro de función personalizada](/help/forms/assets/custom-function-filterxml.png)
 
-AEM **Implemente la carpeta Client library recién creada en su entorno** de la biblioteca de cliente
+**Implemente la carpeta de la biblioteca de cliente recién creada en su entorno de AEM**
 
 Implemente AEM as a Cloud Service, [directorio del proyecto AEMaaCS], en su entorno de Cloud Service. Para implementarlo en el entorno de Cloud Service:
 
@@ -228,13 +229,13 @@ Vamos a previsualizar el formulario para observar cómo se implementan las funci
 
 >[!NOTE]
 >
-> Puede hacer referencia a la carpeta [función personalizada](/help/forms/assets//customfunctions.zip) siguiente. AEM Descargue e instale esta carpeta en su instancia de mediante el [Administrador de paquetes](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+> Puede hacer referencia a la carpeta [función personalizada](/help/forms/assets//customfunctions.zip) siguiente. Descargue e instale esta carpeta en su instancia de AEM mediante [Administrador de paquetes](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
 ## Características de las funciones personalizadas
 
-AEM Las funciones personalizadas de los formularios de la aplicación ofrecen una solución sólida para ampliar y personalizar la funcionalidad de los formularios. Puede utilizar las funciones personalizadas para satisfacer las necesidades específicas de su organización.
+Las funciones personalizadas de los formularios AEM ofrecen una solución sólida para ampliar y personalizar la funcionalidad de los formularios. Puede utilizar las funciones personalizadas para satisfacer las necesidades específicas de su organización.
 
-Estas funciones admiten varias funciones, como trabajar con campos específicos, utilizar campos globales y operaciones asincrónicas, así como incorporar mecanismos de almacenamiento en caché. Esta flexibilidad garantiza que los formularios se puedan adaptar a requisitos complejos y ofrecer una experiencia de usuario eficiente y adaptada. AEM Al aprovechar estas funciones avanzadas, puede mejorar las interacciones de los formularios y optimizar el rendimiento, lo que hace que los formularios de la aplicación sean más funcionales y adaptables.
+Estas funciones admiten varias funciones, como trabajar con campos específicos, utilizar campos globales y operaciones asincrónicas, así como incorporar mecanismos de almacenamiento en caché. Esta flexibilidad garantiza que los formularios se puedan adaptar a requisitos complejos y ofrecer una experiencia de usuario eficiente y adaptada. Al aprovechar estas funciones avanzadas, puede mejorar las interacciones entre formularios y optimizar el rendimiento, lo que hace que los formularios de AEM sean más funcionales y adaptables.
 
 Vamos a profundizar en las funciones personalizadas.
 
@@ -260,7 +261,7 @@ Los Forms adaptables implementan el almacenamiento en caché de funciones person
 
 En caso de que se modifiquen las funciones personalizadas, el almacenamiento en caché se invalidará y se analizará.
 
-## Solución de problemas
+## Resolución de problemas
 
 * Si el archivo JavaScript que contiene código para funciones personalizadas tiene un error, las funciones personalizadas no aparecen en el editor de reglas de un formulario adaptable. Para comprobar la lista de funciones personalizadas, puede desplazarse al archivo `error.log` en busca del error. En caso de error, la lista de funciones personalizadas aparece vacía:
 
@@ -274,6 +275,6 @@ En caso de que se modifiquen las funciones personalizadas, el almacenamiento en 
 
 Veamos ahora varios [ejemplos de funciones personalizadas para un formulario adaptable basadas en componentes principales](/help/forms/custom-function-core-components-use-cases.md).
 
-## Consulte también
+## Véase también
 
 {{see-also-rule-editor}}

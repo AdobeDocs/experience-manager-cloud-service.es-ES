@@ -4,7 +4,7 @@ description: Personalice el tema y el estilo de Edge Delivery Services para AEM 
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 98%
@@ -476,7 +476,7 @@ Este selector se dirige a cualquier fieldset con la clase radio-group-wrapper. E
 ```
 
 - El elemento fieldset actúa como contenedor de panel con la clase panel-wrapper y clases adicionales para el estilo basadas en el nombre del panel (field-login).
-- El elemento leyenda (&lt;legend>) sirve como título del panel con el texto “Información de inicio de sesión” y la etiqueta de campo de clase. El atributo data-visible=&quot;false&quot; se puede utilizar con JavaScript para controlar la visibilidad del título.
+- El elemento de leyenda (`<legend>`) sirve como título del panel con el texto &quot;Información de inicio de sesión&quot; y la etiqueta de campo de clase. El atributo data-visible=&quot;false&quot; se puede utilizar con JavaScript para controlar la visibilidad del título.
 - Dentro del fieldset, varios.Los elementos {Type}-wrapper (.text-wrapper y .password-wrapper en este caso) representan campos de formulario individuales dentro del panel.
 - Cada contenedor contiene una etiqueta, un campo de entrada y una descripción, similares a los ejemplos anteriores.
 
@@ -637,7 +637,6 @@ El selector aplica estilo a todos los paneles que se pueden repetir, lo que gara
   margin-bottom: 10px;
 }
 ```
-
 Este selector aplica estilo a todos los contenedores de campo dentro de un panel repetible, manteniendo un espaciado coherente entre los campos.
 
 - Segmentación de campos específicos (dentro de un panel):

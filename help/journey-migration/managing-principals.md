@@ -2,8 +2,8 @@
 title: Administración de principales
 description: Administración de principales para la migración mediante Admin Console
 exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
-source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Antes de transferir contenido al entorno en la nube de AEM as a Cloud Service, hay algunas tareas que se pueden llevar a cabo en Admin Console.  Estas tareas son crear usuarios, crear grupos y asignar usuarios a grupos; estos usuarios y grupos existirán en IMS, el servicio Identity Management de Adobe, que se utiliza para administrar usuarios y grupos para todos los servicios basados en la nube de Adobe.
 
-### Creación de grupos y sus usuarios en Admin Console
+## Creación de grupos y sus usuarios en Admin Console
 
 [Uso de Admin Console para principales de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/ims-support#how-to-set-up) proporciona instrucciones detalladas sobre cómo crear usuarios y grupos en IMS, y cómo añadir los usuarios a los grupos al mismo tiempo o más tarde.  El documento incluye tres opciones para crearlos: manualmente con Admin Console, con la carga de CSV a través de Admin Console y con una herramienta de sincronización de usuarios.
 

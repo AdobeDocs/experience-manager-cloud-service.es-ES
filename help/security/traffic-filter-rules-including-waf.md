@@ -4,8 +4,8 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '4582'
 ht-degree: 100%
 
@@ -745,8 +745,8 @@ Añada las siguientes reglas a la configuración existente:
    * Después de implementar esta regla, analice cuidadosamente los registros de la CDN para comprobar que las solicitudes legítimas no se estén indicando incorrectamente. Una vez que esté seguro de que ningún tráfico legítimo se verá afectado, cambie al modo de bloqueo.
 
 >[!NOTE]
-> Nuestra experiencia indica que los falsos positivos asociados al indicador ATTACK son raros. Por lo tanto, puede ser una estrategia práctica bloquear inmediatamente todo el tráfico sospechoso, incluso si se sabe que la dirección IP no es maliciosa, y posteriormente utilizar el análisis de registro de CDN para identificar e introducir reglas de permiso para el tráfico legítimo. Cada organización debe evaluar su propia tolerancia al riesgo, sopesando los beneficios de una mayor protección contra el riesgo de bloquear inadvertidamente las solicitudes legítimas.
 >
+> Nuestra experiencia indica que los falsos positivos asociados al indicador ATTACK son raros. Por lo tanto, puede ser una estrategia práctica bloquear inmediatamente todo el tráfico sospechoso, incluso si se sabe que la dirección IP no es maliciosa, y posteriormente utilizar el análisis de registro de CDN para identificar e introducir reglas de permiso para el tráfico legítimo. Cada organización debe evaluar su propia tolerancia al riesgo, sopesando los beneficios de una mayor protección contra el riesgo de bloquear inadvertidamente las solicitudes legítimas.
 
 ```
     # blocks likely attack traffic, which also comes from suspected IPs
@@ -773,8 +773,7 @@ Añada las siguientes reglas a la configuración existente:
 
 Antes de julio de 2025, Adobe recomendaba las reglas WAF enumeradas a continuación, que siguen siendo válidas y efectivas para defenderse del tráfico malicioso. Consulte el tutorial para ver algunas consideraciones sobre la migración a las nuevas reglas recomendadas.
 
-<details>
-  <summary>Amplíe para ver las reglas WAF recomendadas heredadas.</summary>
++++ Amplíe para ver las reglas WAF recomendadas heredadas.
 
 ```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
@@ -799,7 +798,8 @@ Antes de julio de 2025, Adobe recomendaba las reglas WAF enumeradas a continuaci
           - PRIVATEFILE
           - NULLBYTE
 ```
-</details>
+
++++
 
 ## Tutorial {#tutorial}
 
@@ -813,7 +813,3 @@ Los tutoriales incluyen:
 * Prueba de reglas con herramientas para simular tráfico malintencionado
 * Análisis de los resultados mediante las herramientas de análisis de registro
 * Prácticas recomendadas
-
-
-
-

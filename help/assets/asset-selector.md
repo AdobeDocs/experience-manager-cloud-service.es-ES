@@ -5,9 +5,9 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '5372'
+source-wordcount: '5357'
 ht-degree: 38%
 
 ---
@@ -172,7 +172,7 @@ Las propiedades de `ImsAuthProps` definen la información de autenticación y el
 | `imsClientId` | Valor de cadena que representa el ID de cliente de IMS utilizado con fines de autenticación. Este valor lo proporciona Adobe y es específico de su organización de Adobe AEM CS. |
 | `imsScope` | Describe los ámbitos utilizados en la autenticación. Los ámbitos determinan el nivel de acceso que la aplicación tiene a los recursos de su organización. Los ámbitos múltiples se pueden separar con comas. |
 | `redirectUrl` | Representa la dirección URL a la que se redirige al usuario después de la autenticación. Este valor se suele establecer en la dirección URL actual de la aplicación. Si no se proporciona `redirectUrl`, `ImsAuthService` usa la redirectUrl utilizada para registrar `imsClientId` |
-| `modalMode` | Un booleano que indica si el flujo de autenticación debe mostrarse en un modal (emergente) o no. Si se establece en `true`, el flujo de autenticación se mostrará en una ventana emergente. Si se establece en `false`, el flujo de autenticación se mostrará en una recarga de página completa. _Nota:_ para una mejor experiencia de usuario, puede controlar dinámicamente este valor si el usuario tiene deshabilitada la ventana emergente del explorador. |
+| `modalMode` | Un booleano que indica si el flujo de autenticación debe mostrarse en un modal (emergente) o no. Si se establece en `true`, el flujo de autenticación se mostrará en una ventana emergente. Si se establece en `false`, el flujo de autenticación se mostrará en una recarga de página completa. _Note :_para un mejor UX, puede controlar dinámicamente este valor si el usuario tiene deshabilitada la ventana emergente del navegador. |
 | `onImsServiceInitialized` | Una función de llamada de retorno que se llama cuando se inicializa el servicio de autenticación IMS de Adobe. Esta función toma un parámetro, `service`, que es un objeto que representa el servicio IMS de Adobe. Consulte [`ImsAuthService`](#imsauthservice-ims-auth-service) para obtener más detalles. |
 | `onAccessTokenReceived` | Una función de llamada de retorno que se llama cuando se recibe un `imsToken` del servicio de autenticación IMS de Adobe. Esta función toma un parámetro, `imsToken`, que es una cadena que representa el token de acceso. |
 | `onAccessTokenExpired` | Función de llamada de retorno a la que se llama cuando ha caducado un token de acceso. Esta función se utiliza generalmente para almacenar en déclencheur un nuevo flujo de autenticación para obtener un nuevo token de acceso. |
@@ -790,18 +790,18 @@ En la tabla siguiente se describen algunas de las propiedades importantes del ob
 
 | Propiedad | Tipo | Descripción |
 |---|---|---|
-| *repo:repositoryId* | cadena | Identificador único del repositorio en el que se almacena el recurso. |
-| *repo:id* | cadena | Identificador único del recurso. |
-| *repo:assetClass* | cadena | La clasificación del recurso (por ejemplo, imagen o vídeo, documento). |
-| *repo:name* | cadena | Nombre del recurso, incluida la extensión de archivo. |
-| *repo:size* | número | El tamaño del recurso en bytes. |
-| *repo:path* | cadena | La ubicación del recurso dentro del repositorio. |
-| *repo:ancestors* | `Array<string>` | Matriz de elementos antecesores del recurso en el repositorio. |
-| *repo:state* | cadena | Estado actual del recurso en el repositorio (por ejemplo, activo, eliminado, etc.). |
-| *repo:createdBy* | cadena | El usuario o sistema que creó el recurso. |
-| *repo:createDate* | cadena | La fecha y la hora en que se creó el recurso. |
-| *repo:modifiedBy* | cadena | Usuario o sistema que modificó el recurso por última vez. |
-| *repo:modifyDate* | cadena | La fecha y la hora en que se modificó el recurso por última vez. |
+| *repositorio:repositoryId* | cadena | Identificador único del repositorio en el que se almacena el recurso. |
+| *repositorio:id* | cadena | Identificador único del recurso. |
+| *repositorio:assetClass* | cadena | La clasificación del recurso (por ejemplo, imagen o vídeo, documento). |
+| *repositorio:name* | cadena | Nombre del recurso, incluida la extensión de archivo. |
+| *repositorio:size* | número | El tamaño del recurso en bytes. |
+| *repositorio:path* | cadena | La ubicación del recurso dentro del repositorio. |
+| *repositorio:ancestors* | `Array<string>` | Matriz de elementos antecesores del recurso en el repositorio. |
+| *repositorio:state* | cadena | Estado actual del recurso en el repositorio (por ejemplo, activo, eliminado, etc.). |
+| *repositorio:createdBy* | cadena | El usuario o sistema que creó el recurso. |
+| *repositorio:createDate* | cadena | La fecha y la hora en que se creó el recurso. |
+| *repositorio:modifiedBy* | cadena | Usuario o sistema que modificó el recurso por última vez. |
+| *repositorio:modifyDate* | cadena | La fecha y la hora en que se modificó el recurso por última vez. |
 | *dc:format* | cadena | El formato del recurso, como el tipo de archivo (por ejemplo, JPEG, PNG, etc.). |
 | *tiff:imageWidth* | número | La anchura de un recurso. |
 | *tiff:imageLength* | número | Altura de un recurso. |
@@ -840,6 +840,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 

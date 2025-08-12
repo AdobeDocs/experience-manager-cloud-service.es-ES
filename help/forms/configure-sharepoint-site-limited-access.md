@@ -5,16 +5,16 @@ keywords: Configuración del sitio de SharePoint con acceso limitado?, Configura
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 24%
 
 ---
 
-<span class="preview">: la característica está disponible en el programa de usuarios que la adoptaron por primera vez. Puede enviar un correo electrónico a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa para primeros usuarios y solicitar acceso a esta funcionalidad. </span>
-
 # Configuración del sitio de SharePoint con acceso limitado mediante el ámbito de autorización
+
+<span class="preview">: la característica está disponible en el programa de usuarios que la adoptaron por primera vez. Puede enviar un correo electrónico a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa para primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
 El propósito del acceso limitado o restringido es mejorar la administración de la seguridad, ya que permite a los administradores controlar el acceso de los usuarios a un sitio de SharePoint en particular o a un grupo de sitios de SharePoint. El nivel de permiso es útil cuando necesita conceder a un usuario o grupo acceso a un sitio específico sin permitirle ver ningún otro sitio de SharePoint no permitido.
 
