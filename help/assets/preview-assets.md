@@ -27,7 +27,7 @@ Asegúrese de que dispone de:
 
 * Acceso a [!DNL AEM Assets as a Cloud Service].
 * Permiso para editar la propiedad Status de los recursos.
-* [Se ha agregado el valor [!UICONTROL Vista previa] a la propiedad de metadatos [!UICONTROL  Status] disponible en la pestaña [!UICONTROL Básico]](/help/assets/metadata-assets-view.md#edit-metadata-forms) del formulario de metadatos aplicado a la carpeta que contiene los recursos que se van a previsualizar.
+* [Se ha agregado el valor [!UICONTROL Vista previa] a la propiedad de metadatos [!UICONTROL &#x200B; Status] disponible en la pestaña [!UICONTROL Básico]](/help/assets/metadata-assets-view.md#edit-metadata-forms) del formulario de metadatos aplicado a la carpeta que contiene los recursos que se van a previsualizar.
   ![Agregar opción de vista previa](/help/assets/assets/metedata-form-preview.png)
 * Clave para generar el token de vista previa. [Póngase en contacto con el soporte técnico de Adobe](https://helpx.adobe.com/in/contact.html) y envíe una solicitud para la clave.
 
