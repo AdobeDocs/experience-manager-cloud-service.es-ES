@@ -4,7 +4,7 @@ description: Personalice de forma eficaz el tema y el estilo de los formularios 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 55%
@@ -308,7 +308,7 @@ El bloque de formularios adaptables ofrece una estructura HTML coherente para va
 
 Todos los campos de formulario, excepto los menús desplegables, los grupos de opción y los grupos de casillas de verificación, tienen la siguiente estructura HTML:
 
-#### Estructura HTML de los componentes generales
+### Estructura HTML de los componentes generales
 
 ```HTML
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
@@ -1051,7 +1051,7 @@ Puede aplicar estilo a los campos de formulario en función de su tipo específi
 
 Puede utilizar selectores de CSS para segmentar tipos de campo específicos y aplicar estilos de forma coherente.
 
-#### Estructura HTML
+### Estructura HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -1092,7 +1092,7 @@ Puede utilizar selectores de CSS para segmentar tipos de campo específicos y ap
 
 
 
-#### Ejemplo de selectores CSS
+### Ejemplo de selectores CSS
 
 ```CSS
 /- Primary Pattern: Target all text input fields */

@@ -4,7 +4,8 @@ description: Un formulario adaptable proporciona varias acciones de envío. Una 
 keywords: Obtenga información sobre cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de SharePoint, conectar un formulario adaptable a una biblioteca de documentos de SharePoint, conectar un formulario adaptable al modelo de datos de formulario (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 50%
@@ -23,7 +24,7 @@ ht-degree: 50%
 
 El envío de formularios es el paso final crucial del recorrido del usuario: es donde se procesan los datos recopilados y se realizan las acciones. Este documento proporciona una guía completa para configurar y administrar las acciones de envío de formularios adaptables en el editor universal.
 
-### Lo que aprenderá
+## Lo que aprenderá
 
 Al final de este documento, aprenderá a:
 
@@ -33,7 +34,7 @@ Al final de este documento, aprenderá a:
 - Implementar acciones de envío personalizadas para necesidades comerciales específicas
 - Gestionar la validación de formularios y los escenarios de error durante el envío
 
-### Público destinatario
+## Público destinatario
 
 Esta guía está diseñada para:
 
@@ -77,6 +78,3 @@ Puede configurar la acción de envío para los formularios creados en el editor 
 >
 > - Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
 > - Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
-
-
-
