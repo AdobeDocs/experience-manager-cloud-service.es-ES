@@ -1,13 +1,13 @@
 ---
 title: Acerca de Experience Hub
-description: Obtenga información acerca de la página de Experience Hub de AEM.
+description: Obtenga información acerca de la página de Experience Hub de Adobe.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f02457a115d00262b61f09769b9ac0e210942059
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 7%
@@ -20,7 +20,7 @@ Experience Hub presenta un punto de partida centralizado para administrar conten
 
 Vea un recorrido rápido por el espacio de trabajo reinventado de AEM Experience Hub (1 minuto y 27 segundos).
 
->[!VIDEO](https://video.tv.adobe.com/v/3463270?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3463267?quality=12&learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
