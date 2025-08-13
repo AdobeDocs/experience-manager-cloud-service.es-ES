@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2038e0884718a2c0cd0b661ebe0426540a32e35a
+source-git-commit: 8689041bffbdd6edb048a1ba50f0ebd82ad740e7
 workflow-type: tm+mt
-source-wordcount: '6605'
+source-wordcount: '6604'
 ht-degree: 97%
 
 ---
@@ -745,7 +745,6 @@ ht-degree: 97%
 + Formularios {#forms}
    + Información general {#forms-overview}
       + [Introducción](/help/forms/home.md)
-      + [Introducción](/help/forms/home2.md)
       + [Principales innovaciones de Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
       + [Funciones de acceso rápido (EA)](/help/forms/early-access-ea-features.md)
       + [Cambios importantes](/help/forms/notable-changes.md)
