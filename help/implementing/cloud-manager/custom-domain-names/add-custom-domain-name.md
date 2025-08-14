@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 16%
+source-wordcount: '1089'
+ht-degree: 15%
 
 ---
 
@@ -94,13 +94,18 @@ Para establecer esta configuración, determine si se debe configurar un registro
 >
 >Para los CDN administrados por Adobe, al utilizar certificados DV (validación de dominio), solo se permiten sitios con validación ACME.
 
-#### Requisitos  {#adobe-managed-cert-dv-requirements}
 
-Complete estos requisitos antes de configurar los registros DNS.
+### Configurar DNS{#config-dns}
+
+>[!WARNING]
+>
+>El principio de &quot;registrarse antes de anunciar&quot; se aplica aquí. Es decir, la configuración de DNS solo se debe realizar *después de* de haber agregado correctamente la asignación de dominio. Al hacerlo, se asegura de que Cloud Manager reconozca y valide que el dominio existe en su propia configuración para poder responder a las solicitudes que le realicen. También evita cualquier intento de adquisición de dominio.
+
+Asegúrese de cumplir los siguientes requisitos *antes* de configurar los registros DNS:
 
 * Identifique el host de dominio o el registrador si aún no lo conoce.
 * Puede editar los registros DNS del dominio de su organización o ponerse en contacto con la persona adecuada que pueda hacerlo.
-* Ya debe haber verificado el nombre de dominio personalizado configurado tal como se describe en el documento [Comprobación del estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+* Ya ha verificado su nombre de dominio personalizado configurado como se describe en el documento [Comprobación del estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 #### Registro CNAME {#adobe-managed-cert-cname-record}
 
