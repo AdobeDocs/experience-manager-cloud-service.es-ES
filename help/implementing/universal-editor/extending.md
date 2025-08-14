@@ -4,9 +4,9 @@ description: Obtenga información acerca de las distintas opciones para ampliar 
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Si desea explorar las posibilidades de crear sus propias extensiones, consulte l
 
 >[!TIP]
 >
->Si prefiere aprender con el ejemplo, consulte el [tutorial de extensibilidad de la IU de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Aunque se centra en ampliar la consola de fragmentos de contenido, los conceptos para implementar una extensión de interfaz de usuario en el editor universal son los mismos.
+>Si prefiere aprender con el ejemplo, consulte el [tutorial de extensibilidad de la IU de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Aunque se centra en ampliar la consola de fragmentos de contenido, los conceptos para implementar una extensión de interfaz de usuario en el editor universal son los mismos.
 
 [Con Extension Manager en AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), puede habilitar o deshabilitar las extensiones por instancia, tener acceso a las extensiones de origen de Adobe, incluidas las del editor universal, y mucho más.
 
@@ -59,6 +59,6 @@ Si desea explorar las posibilidades de crear sus propias extensiones, consulte l
 
 Además de la extensibilidad de la interfaz de usuario, el editor universal ofrece muchos otros puntos de extensión flexibles para permitir la integración perfecta de los requisitos empresariales personalizados.
 
-* **[Bloques](/help/edge/developer/block-collection.md)**: en formato JSON simple, los proyectos pueden ajustar los bloques y las características de uso disponibles para la creación de contenido.
+* **[Bloques](https://www.aem.live/developer/block-collection)**: con un formato JSON simple, los proyectos pueden ajustar los bloques y las características de uso disponibles para la creación de contenido.
 * **[Interfaz de usuario personalizada](#extending-ui)**: las extensiones pueden mostrar la interfaz de usuario necesaria en paneles laterales o cuadros de diálogo modales.
 * **[Eventos](/help/implementing/universal-editor/events.md)**: las extensiones reciben eventos sobre las acciones y selecciones del autor en la página para responder correctamente.

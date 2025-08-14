@@ -4,9 +4,9 @@ description: Notas de la versión 2024.8.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
-source-git-commit: 4b8086920bc3e3b9c5ed2a74934645fbc69acf71
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1174'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ Ahora se admite la funcionalidad de [herencia](/help/sites-cloud/authoring/unive
 
 Además, ahora se admiten las siguientes funciones de administración de páginas:
 
-* Las [etiquetas AEM](/help/sites-cloud/authoring/sites-console/tags.md) se pueden exportar como [taxonomía](/help/edge/wysiwyg-authoring/taxonomy.md) a Edge Delivery Services.
+* Las [etiquetas AEM](/help/sites-cloud/authoring/sites-console/tags.md) se pueden exportar como [taxonomía](https://www.aem.live/docs/authoring-taxonomy) a Edge Delivery Services.
 * Próximamente, habrá [plantillas](/help/sites-cloud/authoring/universal-editor/templates.md) disponibles para Edge Delivery Services.
 
 ### Programa para primeros usuarios {#sites-early-adopter}

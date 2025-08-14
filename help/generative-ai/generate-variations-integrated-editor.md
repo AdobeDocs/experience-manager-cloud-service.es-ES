@@ -4,9 +4,9 @@ description: Obtenga información sobre Generar variaciones, a la que se puede a
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
-workflow-type: ht
-source-wordcount: '1416'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '1417'
 ht-degree: 100%
 
 ---
@@ -168,11 +168,11 @@ La administración del uso depende de la acción realizada:
 
 * Generar variaciones
 
-  Una generación de una variante de copia es igual a una acción generativa. Como cliente, dispone de un determinado número de acciones generativas que vienen con su licencia de AEM. Una vez que haya consumido los derechos básicos, podrá adquirir acciones adicionales.
+  Una generación de una variante de copia es igual a una acción generativa. Como cliente, dispone de un determinado número de acciones generativas que vienen con su licencia de AEM. Una vez que haya consumido los derechos básicos, podrá comprar acciones adicionales.
 
   >[!NOTE]
   >
-  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/es/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea adquirir acciones más generativas.
+  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea comprar acciones más generativas.
 
 ## Acceso a “Generar variaciones” {#access-generate-variations}
 
@@ -198,7 +198,7 @@ Para conceder acceso a usuarios específicos, asigne su cuenta de usuario al per
 
 ### Acceso desde AEM Sidekick para la creación basada en documentos {#access-aem-sidekick}
 
-El acceso desde AEM Sidekick se usa para la [creación basada en documentos](/help/edge/wysiwyg-authoring/authoring.md).
+El acceso desde AEM Sidekick se usa para la [creación basada en documentos](https://www.aem.live/docs/aem-authoring).
 
 Es necesario realizar alguna configuración antes de poder acceder a “Generar variaciones” desde la barra de tareas (de Edge Delivery Services).
 

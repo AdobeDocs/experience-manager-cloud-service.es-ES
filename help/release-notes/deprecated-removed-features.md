@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: fbe20eb0e57be3a6d02d163d92b13be060ac8ba6
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '3193'
+source-wordcount: '3194'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Se ha anunciado que la funcionalidad de la tabla siguiente ya no se utiliza, per
 | ------------ | ------------------ | ----------- |
 | Sites | [Compatibilidad con fragmentos de contenido en la API HTTP de Assets](/help/assets/content-fragments/assets-api-content-fragments.md) | [Envío de fragmentos de contenido con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>junto con<br> [Fragmentos de contenido y OpenAPI de administración de modelos de fragmentos de contenido](/help/headless/content-fragment-openapis.md) |
 | Sites | [Características de PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Ninguno |
-| Sites | [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) | Los editores preferidos para administrar el contenido sin encabezado en AEM son: <br> el [Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para la edición visual.<br>- [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición basada en formularios. |
+| Sites | [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) | Los editores preferidos para administrar el contenido sin encabezado en AEM son: <br> el [Editor universal](https://www.aem.live/docs/aem-authoring) para la edición visual.<br>- [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición basada en formularios. |
 | [!DNL Sites] | [API de uso de JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API de uso de Java](https://experienceleague.adobe.com/es/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Propiedades de Fragmentos de experiencias para **Estado de los medios sociales**. | Está previsto eliminar esta función en breve. |
 | Sites | [Automatización de la configuración de Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Ninguno |

@@ -4,9 +4,9 @@ description: Notas de la versión 2025.1.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1703'
 ht-degree: 92%
 
 ---
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de enero de 2025 para ver un resumen de las funciones añadidas en la versión 2025.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3456077?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3456072?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -68,7 +68,7 @@ El [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) ha qued
 
 Los editores preferidos para administrar contenido sin encabezado en AEM ahora son:
 
-* [El editor universal](/help/edge/wysiwyg-authoring/authoring.md) para la edición visual.
+* [El editor universal](https://www.aem.live/docs/aem-authoring) para la edición visual.
 * [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición de contenido sin encabezado basada en formularios.
 
 #### Funciones de PWA {#pwa-features}
@@ -180,7 +180,7 @@ Cualquiera puede acceder a la versión beta pública haciendo clic en el botón 
 
 ## Guías de [!DNL Experience Manager] {#guides}
 
-Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2412-release/fixed-issues-2024-12-0).
+Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2412-release/fixed-issues-2024-12-0).
 
 ## Cloud Manager {#cloud-manager}
 

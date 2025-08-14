@@ -4,7 +4,7 @@ description: Notas de la versión 2023.9.0 de la versión de  [!DNL Adobe Experi
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 81%
@@ -40,11 +40,11 @@ Eche un vistazo al vídeo Información general sobre la versión de septiembre d
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
-## AEM Edge Delivery Services de {#edge-delivery}
+## AEM Edge Delivery Services {#edge-delivery}
 
 Edge Delivery es un nuevo conjunto de servicios componibles centrados en maximizar el impacto del contenido para impulsar resultados comerciales mensurables en el punto de interacción del cliente.
 
-Obtenga más información acerca de los Edge Delivery Services en el artículo [aquí](/help/edge/overview.md).
+Obtenga más información acerca de Edge Delivery Services en el artículo [aquí](/help/edge/overview.md).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,9 +58,9 @@ Ahora puede asignar un formulario de metadatos a una carpeta específica dentro 
 
 ### Nuevas funciones de la vista Administrador {#admin-view-features}
 
-* **Integrar AEM Assets as a Cloud Service con la creación basada en documentos para Edge Delivery Services**: integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web [utilicen imágenes disponibles en repositorios de AEM Assets al crear documentos en Microsoft Word o Google Docs](/help/edge/using.md#integrate-assets-edge).
+* **Integrar AEM Assets as a Cloud Service con la creación basada en documentos para Edge Delivery Services**: integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web [utilicen imágenes disponibles en repositorios de AEM Assets al crear documentos en Microsoft Word o Google Docs](/help/edge/overview.md).
 
-* **Extraer archivos ZIP**: Posibilidad de seleccionar archivos ZIP que se administran en el Experience Manager y [extraer los archivos directamente en el Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sin descargarlos.
+* **Extraer archivos ZIP**: Posibilidad de seleccionar archivos ZIP administrados en Experience Manager y [extraer los archivos directamente en Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sin descargarlos.
 
   ![Fijar elementos para grupos](/help/release-notes/assets/extract-archive.png)
 

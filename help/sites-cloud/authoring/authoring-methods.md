@@ -5,10 +5,10 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 0%
+source-wordcount: '570'
+ht-degree: 1%
 
 ---
 
@@ -57,7 +57,7 @@ Si utiliza los servicios de Edge Delivery, puede optar por crear su contenido co
 
 Con la creación basada en documentos, los autores pueden utilizar las herramientas que ya conocen y seguir beneficiándose de la velocidad y el rendimiento del Edge Delivery Services de AEM para publicar su contenido. La creación basada en documentos no requiere el uso de la consola de AEM.
 
-Para obtener más información acerca de la creación basada en documentos, consulte [Creación y publicación de contenido](/help/edge/docs/authoring.md).
+Para obtener más información acerca de la creación basada en documentos, consulte [Creación y publicación de contenido](https://www.aem.live/docs/aem-authoring).
 
 ## Editor de fragmentos de contenido de AEM {#cf-editor}
 

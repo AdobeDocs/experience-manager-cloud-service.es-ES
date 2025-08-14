@@ -1,7 +1,7 @@
 ---
-source-git-commit: 70363b7dce1f7df5e933d99f8f9af7f6e6c702b3
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1623'
 ht-degree: 98%
 
 ---
@@ -168,11 +168,11 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >[!IMPORTANT]
 >
 >La canalización front-end requiere que se añada de antemano la siguiente Lista de IP permitidas a Cloud Manager.
->&#x200B;>Si es necesario, [añada la Lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando el bloque de direcciones siguiente. Cada dirección está separada por una coma. Pegue el bloque en el campo **Dirección IP/CIDR** del cuadro de diálogo **Agregar lista de IP permitidas**. Coloque el cursor justo después de la primera coma en la lista de direcciones y presione **Intro**. Guarde la lista.
->&#x200B;>Para evitar que se interrumpa la ejecución de la canalización front-end, asegúrese de añadir esta Lista de IP permitidas a Cloud Manager *antes* de habilitar la canalización.
+>>Si es necesario, [añada la Lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando el bloque de direcciones siguiente. Cada dirección está separada por una coma. Pegue el bloque en el campo **Dirección IP/CIDR** del cuadro de diálogo **Agregar lista de IP permitidas**. Coloque el cursor justo después de la primera coma en la lista de direcciones y presione **Intro**. Guarde la lista.
+>>Para evitar que se interrumpa la ejecución de la canalización front-end, asegúrese de añadir esta Lista de IP permitidas a Cloud Manager *antes* de habilitar la canalización.
 >
 >**Lista de IP permitidas de Cloud Manager**
->&#x200B;>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Añadir una Lista de IP permitidas de Cloud Manager y canalizaciones front-end {#add-cm-allowlist-frontend-pipeline}
@@ -180,7 +180,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >[!IMPORTANT]
 >
 >Si utiliza (o tiene intención de utilizar) la canalización front-end para desarrollar sitios, debe añadir de antemano la Lista de IP permitidas de Cloud Manager.
->&#x200B;>Consulte [Uso de la Lista de IP permitidas de Cloud Manager con la canalización front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>>Consulte [Uso de la Lista de IP permitidas de Cloud Manager con la canalización front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## Listas de IP permitidas y el editor universal {#ip-allow-lists-ue}
 
@@ -221,7 +221,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 **Registro de un vale de asistencia:**
 
-1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/es?support-tab=home#support) y cree un vale.
+1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un vale.
 1. Añada **Edge Delivery** en el título del ticket.
 1. En la descripción, proporcione los siguientes detalles además de la descripción del problema:
 
@@ -234,7 +234,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 >
 >El editor de SPA [ha quedado obsoleto](/help/implementing/developing/hybrid/spa-editor-deprecation.md) para nuevos proyectos. Sigue siendo compatible con Adobe para los proyectos existentes, pero no debe utilizarse para nuevos proyectos. Los editores preferidos para administrar contenido en AEM ahora son:
 >
->* [El Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para editar contenido sin encabezado de forma visual.
+>* [El Editor universal](https://www.aem.live/docs/aem-authoring) para editar contenido sin encabezado de forma visual.
 >* [El Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición de contenido sin encabezado basada en formularios.
 
 ## Editor universal{#ue-see-also}

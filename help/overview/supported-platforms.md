@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ La interfaz de usuario de Adobe Experience Manager funciona con las siguientes p
 
 * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [Creación basada en documentos](/help/edge/docs/authoring.md) mediante [Sidekick](/help/edge/docs/sidekick.md)
+* [Creación basada en documentos](https://www.aem.live/docs/aem-authoring) mediante [Sidekick](https://www.aem.live/docs/sidekick)
 
 Todos los exploradores se prueban con el conjunto predeterminado de complementos.
 
@@ -64,4 +64,4 @@ Todos los exploradores se prueban con el conjunto predeterminado de complementos
 
 La compatibilidad del explorador con los sitios web procesados por AEM depende de la implementación de las plantillas de página, los bloques, el diseño y la salida de componentes de AEM. Por lo tanto, los desarrolladores que implementan el proyecto tienen el control final de la compatibilidad del sitio.
 
-El [elemento repetitivo del proyecto,](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project) los [componentes principales](/help/implementing/developing/components/overview.md#aem-core-components) y el [sitio de muestra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) son todos compatibles con todos los exploradores modernos de AEM.
+El [elemento repetitivo del proyecto,](https://www.aem.live/developer/ue-tutorial#create-github-project) los [componentes principales](/help/implementing/developing/components/overview.md#aem-core-components) y el [sitio de muestra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) son todos compatibles con todos los exploradores modernos de AEM.

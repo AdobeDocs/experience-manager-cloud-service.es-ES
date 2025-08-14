@@ -4,10 +4,10 @@ description: Introducción a la arquitectura de Adobe Experience Manager as a Cl
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: ht
-source-wordcount: '2712'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '2711'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="intro_aem_cloudservice_architecture"
 >title="Introducción a la arquitectura de AEM as a Cloud Service"
 >abstract="En esta pestaña, puede ver la nueva arquitectura de AEM as a Cloud Service y comprender los cambios. AEM ha resultado en una arquitectura dinámica con un número variable de imágenes, por lo que es importante tomarse un tiempo para comprender la arquitectura de la nube."
->additional-url="https://video.tv.adobe.com/v/346180?captions=spa" text="Información general sobre la arquitectura"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Información general sobre la arquitectura"
 
 Adobe Experience Manager (AEM) as a Cloud Service ofrece un conjunto de servicios componibles para la creación y gestión de experiencias de alto impacto.
 
@@ -53,7 +53,7 @@ Existen cuatro tipos de [entornos](/help/implementing/cloud-manager/manage-envir
 
 * Entorno de ensayo:
 
-   * Este siempre se asocia a un único entorno de producción individual.
+   * Un entorno de ensayo suele estar asociado a un entorno de producción en una relación de 1:1.
    * El entorno de ensayo está concebido principalmente para pruebas automatizadas antes de que los cambios en la aplicación se inserten en el entorno de producción.
       * Esto es independiente de los cambios que se inician por Adobe como parte de una actualización de mantenimiento o por las implementaciones de código.
       * También puede realizar pruebas manuales en el caso de una implementación de código.
@@ -238,5 +238,5 @@ La nueva arquitectura de AEM as a Cloud Service presenta algunos cambios e innov
    * [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:
    * [Información general de AEM as a Cloud Service: con Edge Delivery Services](/help/edge/overview.md)
-   * [Uso de Edge Delivery Services](/help/edge/using.md)
+   * [Uso de Edge Delivery Services](/help/edge/overview.md)
    * [Explora la arquitectura subyacente y las piezas importantes de la arquitectura AEM as a Cloud Service con Edge Delivery Services.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=es)

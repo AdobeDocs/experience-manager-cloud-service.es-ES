@@ -4,10 +4,10 @@ description: Comprenda en detalle el contrato JSON entre la definición del comp
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 1%
+source-wordcount: '602'
+ht-degree: 2%
 
 ---
 
@@ -21,11 +21,11 @@ El archivo `component-definition.json` define los componentes disponibles para l
 
 >[!TIP]
 >
->Para obtener una descripción general del proceso de modelado de contenido, consulte el documento [Modelado de contenido para la creación de WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
+>Para obtener una descripción general del proceso de modelado de contenido, consulte el documento [Modelado de contenido para la creación de WYSIWYG con proyectos de Edge Delivery Services.](https://www.aem.live/developer/component-model-definitions)
 
 >[!TIP]
 >
->No necesita crear su propio archivo de `component-definition.json` desde cero. La plantilla de proyecto que usas para [arrancar tu proyecto](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) contiene un [archivo `component-definition.json` que funciona por completo](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) y que puedes adaptar a tus necesidades.
+>No necesita crear su propio archivo de `component-definition.json` desde cero. La plantilla de proyecto que usas para [arrancar tu proyecto](https://www.aem.live/developer/ue-tutorial) contiene un [archivo `component-definition.json` que funciona por completo](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) y que puedes adaptar a tus necesidades.
 
 ## Ejemplo de definición de componente {#example}
 

@@ -4,9 +4,9 @@ description: Aunque el Editor SPA sigue siendo compatible con Adobe, conozca qu�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '915'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ La desuso significa que los siguientes SDK están ahora inmovilizados de funcion
 
 El reemplazo más adecuado para el Editor SPA depende de las necesidades de sus proyectos.
 
-* **[El editor universal](/help/edge/wysiwyg-authoring/authoring.md)** es el mejor reemplazo directo del editor de SPA.
+* **[El editor universal](https://www.aem.live/docs/aem-authoring)** es el mejor reemplazo directo del editor de SPA.
    * El editor universal también es un editor visual y se diseñó específicamente para implementaciones disociadas, incorporando toda la experiencia de Adobe del editor de SPA.
    * El editor universal también se ha [lanzado para AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (con la versión 2024.11.05 de AEM 6.5) y, por lo tanto, admite AMS y casos de uso locales además de Cloud Services.
 * **[El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)** es una alternativa para aquellos que prefieren un editor basado en formularios.
