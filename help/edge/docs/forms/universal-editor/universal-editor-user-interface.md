@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2355'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,11 @@ ht-degree: 4%
 
 # Vaya a la interfaz del editor universal para AEM Forms
 
-El [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) proporciona una interfaz visual para crear AEM Forms con Edge Delivery Services. Esta guía le ayuda a comprender la interfaz para crear formularios de forma eficaz.
+El [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) proporciona una interfaz visual para crear AEM Forms con Edge Delivery Services. Ofrece una experiencia **What You See Is What You Get (WYSIWYG)** que muestra exactamente cómo aparecerán los formularios a los usuarios.
 
 ![Información general sobre la interfaz de editor universal](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## Información general
-
-El editor universal ofrece una experiencia **What You See Is What You Get (WYSIWYG)** que muestra exactamente cómo aparecerán los formularios a los usuarios. Tanto si es nuevo en la creación de formularios como si es un desarrollador experimentado, esta guía le ayudará a lo siguiente:
+Esta guía le ayuda a comprender la interfaz para crear formularios de forma eficaz. Tanto si es nuevo en la creación de formularios como si es un desarrollador experimentado, esta guía le ayudará a lo siguiente:
 
 **Aprender habilidades esenciales:**
 
@@ -37,6 +35,8 @@ El editor universal ofrece una experiencia **What You See Is What You Get (WYSIW
 - Creación de formularios desde el concepto hasta la publicación
 - Probar y previsualizar formularios en varios dispositivos
 - Colaborar con integrantes del equipo en proyectos de formularios
+
+
 
 ## Introducción rápida
 
@@ -459,7 +459,7 @@ Domine estos métodos abreviados para crear formularios de forma más rápida y 
 
 ### **Problemas De Interfaz**
 
-+++Los Elementos De La Interfaz No Se Cargan
++++Elementos de interfaz no cargados
 
 **Problema:** Los botones de la barra de herramientas, el panel de propiedades u otros elementos de la interfaz no aparecen
 

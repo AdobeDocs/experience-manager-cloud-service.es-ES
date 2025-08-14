@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a36829e621e97de6ca7548ad07bd1b6343dd9af6
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 97%
@@ -1095,7 +1095,6 @@ ht-degree: 97%
          + [Validación de campos de formulario: añadir comprobaciones de errores a los formularios](/help/edge/docs/forms/validate-forms.md)
          + [Diseñar formularios atractivos: Guía de estilo y personalización](/help/edge/docs/forms/style-theme-forms.md)
          + [Crear mensajes de éxito: personalizar la página de agradecimiento del formulario](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Guía de envío de formularios: uso del servicio de envío de formularios](/help/forms/forms-submission-service.md)
          + [Campos de formulario dinámico: cargar opciones desde direcciones URL](/help/edge/docs/forms/load-options-from-url.md)
          + [Añadir comportamiento inteligente: Guía de reglas y lógica de formulario](/help/edge/docs/forms/rules-forms.md)
          + [Validación avanzada de formularios: Guía de expresiones regulares](/help/edge/docs/forms/regex-forms.md)
@@ -1106,6 +1105,7 @@ ht-degree: 97%
          + [Generar componentes de formulario personalizados: Guía para desarrolladores](/help/edge/docs/forms/custom-components-forms.md)
          + [Supervisar el rendimiento del formulario: guías de telemetría operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Configuración del envío de formularios de Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Guía de envío de formularios: uso del servicio de envío de formularios](/help/forms/forms-submission-service.md)
       + [Preguntas más frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Prácticas recomendadas para crear formularios](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Sin encabezado {#headless}

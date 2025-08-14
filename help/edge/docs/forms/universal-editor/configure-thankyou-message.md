@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo se puede redirigir a los usuarios 
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 3%
