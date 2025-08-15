@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
+source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 15%
@@ -95,7 +95,7 @@ Para establecer esta configuración, determine si se debe configurar un registro
 >Para los CDN administrados por Adobe, al utilizar certificados DV (validación de dominio), solo se permiten sitios con validación ACME.
 
 
-### Configurar DNS{#config-dns}
+## Configurar DNS{#config-dns}
 
 >[!WARNING]
 >
@@ -107,7 +107,7 @@ Asegúrese de cumplir los siguientes requisitos *antes* de configurar los regist
 * Puede editar los registros DNS del dominio de su organización o ponerse en contacto con la persona adecuada que pueda hacerlo.
 * Ya ha verificado su nombre de dominio personalizado configurado como se describe en el documento [Comprobación del estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
-#### Registro CNAME {#adobe-managed-cert-cname-record}
+### Registro CNAME {#adobe-managed-cert-cname-record}
 
 Un nombre canónico o registro CNAME es un tipo de registro DNS que asigna un nombre de alias a un nombre de dominio verdadero o canónico. Los registros CNAME generalmente se utilizan para asignar un subdominio como `www.example.com` al dominio que hospeda el contenido de ese subdominio.
 
@@ -117,7 +117,7 @@ Inicie sesión en el proveedor de servicios DNS y cree un registro `CNAME` para 
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### registro APEX {#adobe-managed-cert-apex-record}
+### registro APEX {#adobe-managed-cert-apex-record}
 
 Un dominio Apex es un dominio personalizado que no contiene un subdominio, como `example.com`. Un dominio Apex está configurado con un registro `A`, `ALIAS` o `ANAME` a través de su proveedor DNS. Los dominios Apex deben apuntar a direcciones IP específicas.
 
