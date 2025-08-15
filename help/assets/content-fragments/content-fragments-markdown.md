@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: ea85381d63954af3093c34f612babd953c466e1e
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 79%
+source-wordcount: '595'
+ht-degree: 77%
 
 ---
 
@@ -136,7 +136,7 @@ Puede tener citas de bloque anidadas. Por ejemplo:
 
 Puede crear listas ordenadas y desordenadas.
 
-Para crear una lista desordenada, utilice el símbolo &ast; antes de los elementos de la lista. Por ejemplo:
+Para crear una lista desordenada, utilice el símbolo &amp;ast; antes de los elementos de la lista. Por ejemplo:
 
     `* item in list`
 
@@ -172,7 +172,7 @@ Puede aplicar negrita al texto de la siguiente manera:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Para indicar un intervalo de código, encapsúlelo con acentos graves (&grave;). A diferencia de los bloques de código con formato previo, un intervalo de código indica el código dentro de un párrafo normal.
+Para indicar un intervalo de código, encapsúlelo con acentos graves (`` ` ``). A diferencia de los bloques de código con formato previo, un intervalo de código indica el código dentro de un párrafo normal.
 
 Por ejemplo:
 
