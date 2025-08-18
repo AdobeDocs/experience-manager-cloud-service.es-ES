@@ -4,9 +4,9 @@ description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
 workflow-type: tm+mt
-source-wordcount: '5981'
+source-wordcount: '5984'
 ht-degree: 73%
 
 ---
@@ -109,7 +109,7 @@ Con GraphQL puede realizar consultas para devolver lo siguiente:
 
 * Una **[lista de entradas](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM proporciona funcionalidades para convertir consultas (de ambos tipos) a [consultas persistentes, que pueden almacenar en caché](/help/headless/graphql-api/persisted-queries.md) Dispatcher y la red de distribución de contenido (CDN).
+AEM proporciona funciones para convertir consultas (ambos tipos) en [Consultas persistentes](/help/headless/graphql-api/persisted-queries.md) que Dispatcher y la red de distribución de contenido (CDN) pueden almacenar en caché.
 
 ### Prácticas recomendadas para consultas de GraphQL (Dispatcher y CDN) {#graphql-query-best-practices}
 
@@ -169,7 +169,7 @@ Además, el usuario debe tener acceso a un extremo de GraphQL para poder ejecuta
 
 ## Generación de esquemas {#schema-generation}
 
-GraphQL es una API con establecimiento inflexible de tipos, lo que significa que los datos deben estar claramente estructurados y organizados por tipo.
+GraphQL es una API muy tipificada, lo que significa que los datos deben estar claramente estructurados y organizados por tipo.
 
 La especificación de GraphQL proporciona una serie de directrices sobre cómo crear una API robusta para buscar datos en una instancia determinada. Para ello, un cliente debe obtener el [Esquema](#schema-generation), que contiene todos los tipos necesarios para una consulta.
 
@@ -375,7 +375,7 @@ Puede ver todos los tipos de metadatos de GraphQL si ve el esquema de GraphQL ge
 >[!NOTE]
 >
 >**Diferencia entre metadatos normales y de matriz**
->&#x200B;>Tenga en cuenta que `StringMetadata` y `StringArrayMetadata` hacen referencia a lo que se almacena en el repositorio, no a cómo se recuperan.
+>>Tenga en cuenta que `StringMetadata` y `StringArrayMetadata` hacen referencia a lo que se almacena en el repositorio, no a cómo se recuperan.
 >
 >Por ejemplo, llamando al campo `stringMetadata`, recibirá una matriz de todos los metadatos almacenados en el repositorio como `String`, y si llama a `stringArrayMetadata` recibirá una matriz de todos los metadatos almacenados en el repositorio como `String[]`.
 
@@ -1171,7 +1171,7 @@ Las limitaciones actuales son:
 
   >[!NOTE]
   >
-  >A continuación, la dirección URL completa debe crearse en el lado del cliente en función de la [API de entrega de recursos](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+  >A continuación, la dirección URL completa debe crearse en el lado del cliente en función de la [API de entrega de recursos](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 * Solo los *recursos aprobados* estarán disponibles para su consulta en los repositorios remotos
 * Si se elimina un recurso al que se hace referencia del repositorio remoto, se producirá una referencia a un recurso de fragmento de contenido roto.

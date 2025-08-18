@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
 workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 6%
@@ -267,7 +267,7 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 
@@ -354,9 +354,9 @@ Existen algunas limitaciones al hacer referencia a recursos remotos:
 
 * No se exponen metadatos de recursos mediante la API de administración o la API de envío. Debe utilizar la API de metadatos del recurso para recuperar los detalles de los metadatos del recurso:
 
-   * los metadatos de recursos individuales: [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+   * los metadatos de recursos individuales: [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
 
-   * obtener información de metadatos masiva mediante la API de búsqueda (experimental): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+   * obtener información de metadatos masiva mediante la API de búsqueda (experimental): [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >

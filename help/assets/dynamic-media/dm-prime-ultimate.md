@@ -3,7 +3,7 @@ title: Dynamic Media Prime y Ultimate
 description: Obtenga más información acerca de Dynamic Media Prime y Ultimate, sus ventajas y diferencias entre ambos.
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 12%
@@ -45,13 +45,13 @@ Además de las funciones de Dynamic Media Prime, como la integración de AEM Ass
 * [Dynamic Media con funciones avanzadas de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) como:
 
    * Entrega segura de recursos,
-   * [Recorte inteligente, imágenes inteligentes, ajustes preestablecidos de imagen y modificadores de imagen adicionales](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+   * [Recorte inteligente, imágenes inteligentes, ajustes preestablecidos de imagen y modificadores de imagen adicionales](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 * [Solución de Dynamic Media en AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), que también incluye las siguientes funcionalidades clave:
 
    * [Plantillas de Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [Conceptos básicos de plantilla](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [Configuración visual](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [Conceptos básicos de plantilla](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [Configuración visual](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Requisitos previos {#pre-requisites-dm-ultimate}
 
