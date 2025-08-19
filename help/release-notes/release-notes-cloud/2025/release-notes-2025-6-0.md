@@ -3,10 +3,11 @@ title: Notas de la versión 2025.6.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2025.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+exl-id: 6bd35c41-4caf-481c-8cf5-b739307e70da
+source-git-commit: 92077a34aa02daf177ca760dafca1a6190a8acb8
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 98%
+source-wordcount: '1363'
+ht-degree: 99%
 
 ---
 
@@ -32,15 +33,11 @@ La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Ex
 
 Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help/release-notes/maintenance/latest.md).
 
-<!-- 
+## Vídeo de la versión {#release-video}
 
-## Release Video {#release-video}
+Eche un vistazo al vídeo Información general sobre la versión de junio de 2025 para ver un resumen de las funciones añadidas en la versión 2025.6.0.
 
-Have a look at the June 2025 Release Overview video for a summary of the features added in the 2025.6.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3470878?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -70,7 +67,7 @@ Consulte el [artículo sobre el proceso de desuso](/help/release-notes/deprecate
 
 Amplíe la lista siguiente para ver las API y las configuraciones de OSGi en desuso que deben dejar de usarse. Para obtener información detallada (incluidas las fechas de eliminación), consulte el artículo sobre el proceso de desuso.
 
-+++Amplíe para ver las obsolescencias.
++++Amplíe para ver qué va a quedar en desuso
 
 API de Java:
 
