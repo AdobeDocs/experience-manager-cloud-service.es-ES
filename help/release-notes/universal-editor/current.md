@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2025.07.31 del editor universal
-description: Estas son las notas de la versión 2025.07.31 del editor universal.
+title: Notas de la versión 2025.08.14 del editor universal
+description: Estas son las notas de la versión 2025.08.14 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+source-git-commit: f3003f8e607121c8dd9a8ccef5e0d5a3dd35255f
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 56%
+source-wordcount: '233'
+ht-degree: 69%
 
 ---
 
 
-# Notas de la versión 2025.07.31 del editor universal {#release-notes}
+# Notas de la versión 2025.08.14 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 31 de julio de 2025.
+Estas son las notas de la versión del editor universal del 14 de agosto de 2025.
 
 >[!TIP]
 >
@@ -22,15 +22,8 @@ Estas son las notas de la versión del editor universal del 31 de julio de 2025.
 
 ## Novedades {#what-is-new}
 
-* [La opción de la barra de herramientas del encabezado de autenticación](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) permanece detrás de una alternancia de características como se introdujo en la [versión 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
-   * Sin embargo, ahora está habilitado de forma predeterminada.
-* Nuevas funciones para [usuarios que adoptaron por primera vez RTE](#new-rte)
-   * Se ha añadido compatibilidad con el modo oscuro.
-   * Se ha añadido compatibilidad con la alineación de texto.
-      * Deshabilitado de forma predeterminada y solo disponible para proyectos sin encabezado
-   * Se ha añadido la compatibilidad con sangría.
-      * Deshabilitado de forma predeterminada y solo disponible para proyectos sin encabezado
-   * Los saltos (`<br>`) ahora se insertan al presionar mayús+intro.
+* Nueva característica para [usuarios que adoptaron por primera vez RTE](#new-rte)
+   * Se ha añadido una opción de configuración para deshabilitar el destino en el cuadro de diálogo de vínculo RTE.
 
 ## Funciones de adopción anticipada {#early-adopter}
 
@@ -49,10 +42,9 @@ Deshacer y rehacer ya está disponible para los autores de contenido del editor 
 
 ## Otras mejoras {#other-improvements}
 
-* Correcciones para el RTE de usuario que adoptó por primera vez
-   * Al presionar Intro ahora se crea un nuevo elemento de lista (`<li>`) cuando se encuentra dentro de una lista.
-* Los vídeos ahora se actualizan correctamente al utilizar DAM remoto.
-* Se agregó compatibilidad de servicio para 6.5 LTS.
+* Se ha corregido un problema con el desplazamiento de pantalla completa en el [nuevo RTE](#new-rte).
+* Se corrigió el comportamiento persistente al editar campos condicionales.
+* `aem-content-fragment` se habilitó para cambiar entre variaciones.
 
 ## Componentes obsoletos {#deprecations}
 
