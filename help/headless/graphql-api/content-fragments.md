@@ -4,7 +4,7 @@ description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 73%
@@ -28,7 +28,7 @@ El uso de la API de GraphQL en AEM permite la entrega eficiente de fragmentos de
 >
 >GraphQL se utiliza actualmente en dos escenarios (independientes) en Adobe Experience Manager (AEM) as a Cloud Service:
 >
->* [AEM Commerce consume datos de una plataforma de Commerce a través de GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [AEM Commerce consume datos de una plataforma Commerce a través de GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* Los fragmentos de contenido de AEM trabajan junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar) para ofrecer contenido estructurado para su uso en aplicaciones.
 
 >[!NOTE]
@@ -259,7 +259,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Número | `Float`, `[Float]` | Se utiliza para mostrar números de coma flotante y números regulares |
 | Booleano | `Boolean` | Se utiliza para mostrar casillas de verificación → instrucciones simples verdaderas/falsas |
 | Fecha y hora | `Calendar` | Se utiliza para mostrar la fecha y la hora en formato ISO 8601. Según el tipo seleccionado, hay tres variantes disponibles para usar en AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
-| Lista desglosada | `String` | Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
+| Enumeración | `String` | Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
 | Etiquetas | `[String]` | Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
 | Referencia de contenido | `String`, `[String]` | Se utiliza para mostrar la ruta hacia otro recurso en AEM |
 | Referencia de contenido (UUID) | `String`, `[String]` | Se utiliza para mostrar la ruta, representada por un UUID hacia otro recurso en AEM |
@@ -375,7 +375,7 @@ Puede ver todos los tipos de metadatos de GraphQL si ve el esquema de GraphQL ge
 >[!NOTE]
 >
 >**Diferencia entre metadatos normales y de matriz**
->&#x200B;>Tenga en cuenta que `StringMetadata` y `StringArrayMetadata` hacen referencia a lo que se almacena en el repositorio, no a cómo se recuperan.
+>>Tenga en cuenta que `StringMetadata` y `StringArrayMetadata` hacen referencia a lo que se almacena en el repositorio, no a cómo se recuperan.
 >
 >Por ejemplo, llamando al campo `stringMetadata`, recibirá una matriz de todos los metadatos almacenados en el repositorio como `String`, y si llama a `stringArrayMetadata` recibirá una matriz de todos los metadatos almacenados en el repositorio como `String[]`.
 

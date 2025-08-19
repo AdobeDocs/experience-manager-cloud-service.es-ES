@@ -5,10 +5,10 @@ feature: Content Fragments, GraphQL API
 role: Developer, Architect
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 95%
+source-wordcount: '736'
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ Esto se logra usando los fragmentos de contenido, junto con la API de GraphQL de
 >
 >GraphQL se utiliza actualmente en dos escenarios (independientes) en Adobe Experience Manager (AEM) as a Cloud Service:
 >
->* [AEM Commerce consume datos de una plataforma de Commerce a través de GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [AEM Commerce consume datos de una plataforma de comercio a través de GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* [Los fragmentos de contenido de AEM trabajan junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar) para ofrecer contenido estructurado para su uso en aplicaciones](/help/headless/graphql-api/content-fragments.md).
 
 ## CMS sin encabezado {#headless-cms}
@@ -103,7 +103,7 @@ La **[Referencia de fragmento](/help/sites-cloud/administering/content-fragments
 
 ## Análisis de la estructura de fragmentos de contenido {#analyzing-content-fragments-structure}
 
-AEM Para ayudar con el análisis, proporciona varios métodos para ver la estructura de los fragmentos desde el [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md).
+Para ayudar con el análisis, AEM proporciona varios métodos para ver la estructura de los fragmentos desde el [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 Consulte [Análisis de la estructura de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/analysis.md) para obtener más información:
 
