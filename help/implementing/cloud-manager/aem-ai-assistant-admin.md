@@ -1,24 +1,32 @@
 ---
-title: Configuración del asistente de IA en Adobe Experience Manager
+title: Configuración del asistente de IA en AEM
 description: Obtenga información sobre cómo configurar el asistente de IA mediante Admin Console en Adobe Experience Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+badge: label="Beta" type="Positive"
 hide: true
+index: false
 hidefromtoc: true
 exl-id: a7f3dc14-29f7-473a-9870-d52393e6fa6e
-source-git-commit: e853e7b46c762ab724d5eecb344897a83e4fb724
+source-git-commit: 7779f24244cce198e1c6a9b243a616c96f05ac8d
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 3%
+source-wordcount: '1099'
+ht-degree: 2%
 
 ---
 
-# Configuración del asistente de IA en Adobe Experience Manager {#aem-ai-asst-admin-setup}
+# Configuración del asistente de IA en AEM {#aem-ai-asst-admin-setup}
 
-Un administrador debe configurar el acceso, los permisos y la configuración para que los usuarios de su organización puedan utilizar las funciones del asistente de IA de AEM (Adobe Experience Manager).
+<!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
 
-El proceso de configuración del Asistente de IA de AEM consta de los siguientes pasos:
+Para utilizar el asistente de IA en AEM (Adobe Experience Manager), su organización debe registrarse en el nivel de Admin Console. Un administrador de productos crea (o elige) un grupo de usuarios y le concede el nuevo permiso &quot;Asistente de IA&quot;. Cualquier persona agregada a ese grupo accede instantáneamente al asistente de IA en AEM. Si el objetivo es la disponibilidad en toda la compañía, el administrador simplemente asigna todos los usuarios a ese grupo.
+
+Desde la perspectiva de un empleado, el proceso es sencillo: identifique al administrador de productos de Adobe Experience Manager en su organización y solicite que se le añada al grupo de usuarios con IA habilitada. Una vez que aparezca en ese grupo, el icono Ayudante se mostrará automáticamente la próxima vez que inicie sesión.
+
+Los administradores deben tener en cuenta el control normal de Cloud Manager. Mantenga los derechos de administrador de productos en Admin Console para crear perfiles, administrar grupos de usuarios o editar permisos. Si los usuarios también necesitan la característica **Crear vale de soporte** integrada del Ayudante, agregue el rol estándar **Administrador de soporte** (rol estándar de Admin Console) a las mismas personas o grupos.
+
+El proceso de configuración del asistente de IA en AEM consta de los siguientes pasos:
 
 1. [Crear un nuevo perfil de producto en Adobe Admin Console](#create-profile).
 1. [Habilite el permiso Conocimiento del producto del Asistente para IA](#enable-permission).
@@ -43,15 +51,15 @@ Antes de empezar, asegúrese de cumplir los siguientes requisitos previos:
 
 ## 1 - Crear un nuevo perfil de producto en Adobe Admin Console{#create-profile}
 
-1. Siga las instrucciones detalladas de [Crear un nuevo perfil de producto en Adobe Admin Console](https://experienceleague.adobe.com/es/docs/experience-platform/access-control/ui/create-profile) que se encuentra en la documentación de Experience Platform.
+1. Siga las instrucciones detalladas de [Crear un nuevo perfil de producto en Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) que se encuentra en la documentación de Experience Platform.
 
 1. Al crear el nuevo perfil de producto, puede utilizar los siguientes valores sugeridos para el asistente de IA.
 
    | Campo de texto | Valor sugerido |
    | --- | --- |
-   | Nombre del perfil del producto | `AEM AI Assistant` (o su nombre descriptivo preferido) |
+   | Nombre del perfil del producto | `AI Assistant in AEM` (o su nombre descriptivo preferido) |
    | Nombre para mostrar (opcional) | `AI Assistant` |
-   | Descripción (opcional) | `Product profile for managing AEM AI Assistant access` |
+   | Descripción (opcional) | `Product profile for managing AI Assistant in AEM access` |
    | Notificación | Configure en función de las preferencias de su organización |
 
 
@@ -59,9 +67,9 @@ Antes de empezar, asegúrese de cumplir los siguientes requisitos previos:
 
 El proceso de asignación de permisos personalizados a perfiles de producto sigue el flujo de trabajo estándar de permisos personalizados de Adobe Cloud Manager.
 
-Artículo de referencia: [Asignar permisos personalizados al nuevo perfil de producto](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+Artículo de referencia: [Asignar permisos personalizados al nuevo perfil de producto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
-1. En Admin Console, haga clic en el nombre del perfil de producto recién creado (`AEM AI Assistant`)
+1. En Admin Console, haga clic en el nombre del perfil de producto recién creado (`AI Assistant in AEM`)
 
    ![Captura de pantalla](/help/implementing/cloud-manager/assets/ai-assistant-console.png)
 
@@ -102,8 +110,8 @@ Artículo de referencia: [Asignar permisos personalizados al nuevo perfil de pro
 
    | Opción | Valor sugerido |
    | --- | --- |
-   | Nombre del grupo de usuarios | `AEM AI Assistant` (o su nombre preferido) |
-   | Descripción (opcional) | `User group for managing AEM AI Assistant access` |
+   | Nombre del grupo de usuarios | `AI Assistant in AEM` (o su nombre preferido) |
+   | Descripción (opcional) | `User group for managing AI Assistant in AEM access` |
 
    ![Crear una nueva página de grupo de usuarios](/help/implementing/cloud-manager/assets/ai-assistant-create-new-user-group.png)
 
@@ -125,18 +133,18 @@ Puede utilizar un grupo de usuarios de AEM existente si cumple los requisitos de
 
 1. En la página **Grupos de usuarios**, en la tabla **Nombre de grupo**, haga clic en el nombre del grupo de usuarios que acaba de crear o en un nombre de grupo de usuarios existente.
 
-   ![Página de grupos de usuarios que muestra el nombre del grupo de usuarios del Asistente de IA de AEM en la tabla](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
+   ![Página de grupos de usuarios que muestra el Asistente de IA en el nombre del grupo de usuarios de AEM en la tabla](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
 
-1. En la página **Grupos de usuarios** del **Asistente de IA de AEM**, haga clic en la ficha **Usuarios** y, a continuación, haga clic en **Agregar usuarios**.
+1. En la página **Grupos de usuarios** para el **Asistente de IA en AEM**, haga clic en la ficha **Usuarios** y, a continuación, haga clic en **Agregar usuarios**.
 
-   ![La página de grupos de usuarios del Asistente de IA de AEM, que muestra la pestaña Usuarios y la botón Agregar usuarios](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
+   ![El Asistente de IA en la página de grupos de usuarios de AEM, que muestra la ficha Usuarios y la botón Agregar usuarios](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
 
-1. En la página **`Add users to this user group`**, busque y seleccione usuarios que necesiten acceso al Asistente de IA de AEM.
+1. En la página **`Add users to this user group`**, busque y seleccione usuarios que necesiten acceder al asistente de IA en AEM.
 
    ![Agregar usuarios a esta página de grupo de usuarios](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
 1. En la esquina inferior derecha de la página, haga clic en **Guardar**.
-1. Ahora, asigne el perfil de producto al grupo de usuarios &lbrack;#assign-product-profile).
+1. Ahora, [asigne el perfil de producto al grupo de usuarios](#assign-product-profile).
 
 >[!TAB Agregar usuarios de forma masiva]
 
@@ -144,7 +152,7 @@ Puede utilizar la función de carga masiva en Admin Console.
 
 1. Prepare un archivo CSV con información de usuario.
 1. Utilice la opción **`Add users by CSV`** para una adición masiva eficiente.
-1. Ahora, asigne el perfil de producto al grupo de usuarios &lbrack;#assign-product-profile).
+1. Ahora, [asigne el perfil de producto al grupo de usuarios](#assign-product-profile).
 
 >[!ENDTABS]
 
@@ -155,10 +163,10 @@ Este paso sigue el flujo de trabajo estándar de Adobe Admin Console para asigna
 
 Artículo de referencia: [Administrar perfiles de producto para usuarios empresariales](https://helpx.adobe.com/es/enterprise/using/manage-product-profiles.html?lang=es)
 
-1. Mientras sigue en el grupo de usuarios del Asistente de IA de AEM desde [4 - Agregar usuarios al grupo de usuarios](#add-users), haga clic en la ficha **Perfiles de producto asignados**.
+1. Mientras sigue en el asistente de IA en el grupo de usuarios de AEM desde [4 - Agregar usuarios al grupo de usuarios](#add-users), haga clic en la ficha **Perfiles de producto asignados**.
 1. Haga clic en **Asignar perfil**.
 
-   ![Página del grupo de usuarios del Asistente de IA de AEM con la ficha Perfiles de producto asignados seleccionada](/help/implementing/cloud-manager/assets/ai-assistant-assign-profile.png)
+   ![Asistente de IA en la página del grupo de usuarios de AEM con la ficha Perfiles de producto asignados seleccionada](/help/implementing/cloud-manager/assets/ai-assistant-assign-profile.png)
 
 1. En la página **Asignar productos y perfiles**, en el cuadro de diálogo **Seleccionar perfiles de producto**, busque y seleccione su perfil de producto **Asistente de IA**.
 
@@ -167,7 +175,7 @@ Artículo de referencia: [Administrar perfiles de producto para usuarios empresa
 1. Cerca de la esquina inferior derecha del cuadro de diálogo, haga clic en **Aplicar**.
 1. Cerca de la esquina inferior derecha de la página **Asignar productos y perfiles**, haga clic en **Guardar**.
 
-   ![Se muestra el perfil de producto del Asistente de IA asignado al grupo de usuarios del Asistente de IA de AEM](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
+   ![Se muestra el perfil de producto del Asistente de IA asignado al Asistente de IA en el grupo de usuarios de AEM](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
 
 
 ## Compruebe la configuración
@@ -187,7 +195,8 @@ Haga que un usuario del grupo asignado haga lo siguiente:
 
 ## Véase también
 
-* [Control de acceso de Adobe Experience Platform](https://experienceleague.adobe.com/es/docs/experience-platform/access-control/ui/overview)
+* [Asistente de IA en AEM](/help/implementing/cloud-manager/aem-ai-assistant.md)
+* [Control de acceso de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 * [Permisos personalizados de Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md)
 
 
