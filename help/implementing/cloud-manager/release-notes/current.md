@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 05cd6bd0a4e4a65ac81053e6058cfd39cbd08148
 workflow-type: tm+mt
 source-wordcount: '1403'
-ht-degree: 55%
+ht-degree: 93%
 
 ---
 
@@ -21,9 +21,9 @@ Consulte también las [notas de la versión actual de Adobe Experience Manager a
 
 ## Fechas de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2025.8.0 en AEM as a Cloud Service fue el viernes, 07 de agosto de 2025.
+La fecha de lanzamiento de Cloud Manager 2025.8.0 en AEM as a Cloud Service fue el 7 de agosto de 2025.
 
-La próxima versión está planificada para el viernes, 04 de septiembre de 2025.
+La próxima versión está planificada para el 4 de septiembre de 2025.
 
 ## Novedades {#what-is-new}
 
@@ -35,32 +35,32 @@ La próxima versión está planificada para el viernes, 04 de septiembre de 2025
 
 * **La licencia de Edge Delivery Services se puede incluir en un programa HIPAA en forma de autoservicio**
 
-  Las organizaciones con requisitos de datos confidenciales o de atención médica ahora pueden utilizar Edge Delivery Services en forma de autoservicio, lo que permite que la HIPAA cumpla con estándares regulatorios estrictos. <!-- CMGR-70016 -->
+  Las organizaciones con requisitos de datos sanitarios o confidenciales ahora pueden utilizar Edge Delivery Services en forma de autoservicio, lo que les permite cumplir con la normativa HIPAA para satisfacer los estrictos estándares reglamentarios. <!-- CMGR-70016 -->
 
 * **BYOG ya está disponible para Edge Delivery Services**
 
-  Cloud Manager ahora permite configurar repositorios Git externos, lo que permite flujos de trabajo flexibles de administración de código. <!--(CMGR‑69010, CMGR‑70988) --> También le permite extraer código de una rama elegida directamente en la interfaz de usuario de Cloud Manager, lo que reduce las tareas manuales del repositorio. Ver [Configuración del sitio de Edge Delivery para usar un repositorio Git externo](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md) <!-- (CMGR‑68085)(CMGR-69015) --> <!-- KT: https://wiki.corp.adobe.com/display/DMSArchitecture/%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+with+EDS -->
+  Cloud Manager ahora permite configurar repositorios Git externos, lo que permite flujos de trabajo flexibles para la administración de código. <!--(CMGR‑69010, CMGR‑70988) --> También le permite extraer código de una rama elegida directamente en la interfaz de usuario de Cloud Manager, lo que reduce las tareas manuales del repositorio. Consulte [Configuración del sitio de Edge Delivery para usar un repositorio Git externo](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md) <!-- (CMGR‑68085)(CMGR-69015) --> <!-- KT: https://wiki.corp.adobe.com/display/DMSArchitecture/%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+with+EDS -->
 
 * **Aprovisionamiento automatizado para el nuevo complemento de Forms**
 
-  Los clientes solo de Sites suelen necesitar una forma ligera y de bajo coste de crear formularios de marketing. El nuevo complemento de AEM Forms Sites satisface esas necesidades al agregar funciones limitadas de Forms a un programa de Sites. También crea una ruta de actualización clara a la oferta completa de AEM Forms. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+  Los clientes que solo son de Sites suelen necesitar una forma ligera y de bajo coste para crear formularios de marketing. El nuevo complemento de AEM Forms Sites satisface esas necesidades al añadir funciones limitadas de Forms a un programa Sites. También crea una ruta de actualización clara a la oferta completa de AEM Forms. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
   El complemento:
-   * Se adjunta a un programa de Sites y se implementa junto a él; no hay programa de Forms ni asignación de derechos independientes.
+   * Se adjunta a un programa Sites y se implementa junto con él; sin necesidad de un programa Forms independiente ni derechos adicionales.
    * Se dirige a casos de uso de formularios de marketing sencillos.
-   * Aparece en la lista **Soluciones y complementos** durante la creación del programa de producción o la edición del programa de producción, solo cuando la organización de IMS tiene licencias de complemento de Forms disponibles.
+   * Aparece en la lista **Soluciones y complementos** durante la creación del programa de producción o la edición del programa de producción, solo cuando la organización de IMS tiene licencias del complemento de Forms disponibles.
 
-     ![Complementos de Forms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on.png) *El complemento de Forms solo se puede agregar en el programa si las licencias de complemento de Forms están disponibles en su organización de IMS.*
+     ![Complementos de Forms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on.png) *El complemento de Forms solo se puede añadir en el programa si las licencias del complemento de Forms están disponibles en su organización de IMS.*
 
-     ![Complemento de Forms en soluciones y complementos al crear un programa de producción](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *Durante la creación del programa, puede seleccionar el complemento de Forms en la solución Sites.*
+     ![Complemento de Forms en soluciones y complementos al crear un programa de producción](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *Durante la creación del programa, puede seleccionar el complemento de Forms en la solución de Sites.*
 
-     ![Complemento de Forms al editar un programa de producción](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *En **Editar programa**, seleccione el complemento de Forms para el programa de Sites y, a continuación, ejecute la canalización para activarla en los entornos.*
+     ![Complemento de Forms al editar un programa de producción](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *En **Editar programa**, seleccione el complemento de Forms para el programa Sites y, a continuación, ejecute la canalización para activarla en los entornos.*
 
      Para obtener más información, consulte [Crear un programa de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
-## Programas de Beta {#private-beta-program}
+## Programas Beta {#private-beta-program}
 
-Participe en los programas beta de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
+Participe en los programas Beta de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
 
 Actualmente están disponibles las siguientes oportunidades:
 
@@ -68,13 +68,13 @@ Actualmente están disponibles las siguientes oportunidades:
 
 Vuelva rápidamente a una implementación anterior si el código fuente del cliente más reciente no funciona como se esperaba; no es necesario volver a ejecutar la canalización completa ni revertir las confirmaciones manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**&#x200B;para un entorno seleccionado.*
+![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**para un entorno seleccionado.*
 
 ![Cuadro de diálogo Restaurar código anterior implementado](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *En el cuadro de diálogo **Restaurar código anterior implementado**, revise la versión implementada actualmente y la versión que desea restaurar, luego haga clic en **Confirmar***.
 
 ![Activación de Restaurando](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**&#x200B;hasta que finalice la implementación.*
+*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**hasta que finalice la implementación.*
 
 ![Versión del código fuente en uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vista de detalles del entorno, vista desde arriba, ahora también muestra la versión activa del código fuente en uso.*
 
@@ -91,7 +91,7 @@ Cloud Manager ahora admite la adición de un nuevo tipo de entorno denominado **
 **Mejoras recientes**
 
 * Ahora puede configurar un entorno de prueba especializado en una canalización que no sea de producción a través de un flujo de trabajo más sencillo e intuitivo. La configuración optimizada acelera la finalización y reduce los errores de configuración.
-* **Copiar contenido** ahora se admite en Entornos de prueba especializados. Ahora puede ejecutar **Copiar contenido** de forma segura en entornos de prueba aislados que reflejen Producción. <!-- (CMGR‑68900) -->
+* **Copiar contenido** ahora se admite en entornos de prueba especializados. Ahora puede ejecutar **Copiar contenido** de forma segura en entornos de prueba aislados que reflejen la producción. <!-- (CMGR‑68900) -->
 
 Consulte [Adición de un entorno de prueba especializado](/help/implementing/cloud-manager/specialized-test-environment.md).
 
@@ -105,7 +105,7 @@ Consulte [Adición de un entorno de prueba especializado](/help/implementing/clo
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
 
 
-### Trae tu propio Git (BYOG) {#gitlab-bitbucket-azure-vsts}
+### Traiga su propio Git (BYOG) {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -128,7 +128,7 @@ Consulte [Adición de repositorios externos en Cloud Manager](/help/implementing
 |---|---|
 | *¿Cómo puede un proyecto volver al repositorio de Git administrado por Adobe si es necesario?* | Volver atrás es sencillo. [Actualice las canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) para que apunten al repositorio de Adobe y quite el repositorio externo si ya no es necesario. |
 | *¿Es posible configurar diferentes repositorios para diferentes entornos (por ejemplo, no producción frente a producción) para permitir primero las pruebas en no producción?* | Sí, se pueden configurar diferentes repositorios para entornos independientes. Por ejemplo, la canalización de desarrollo o de calidad del código puede apuntar a un repositorio externo, mientras que la canalización de producción permanece conectada al repositorio de Adobe. Asegúrese de que el trabajo de sincronización entre los dos repositorios permanece activo durante esta configuración. |
-| *¿La configuración existente, como las listas de `IP Allow`, sigue funcionando?* | Sí, las listas de `IP Allow` existentes siguen funcionando como de costumbre. Sin embargo, si el repositorio de Git externo está protegido por un firewall, las [direcciones IP de Adobe necesarias deben añadirse a la lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
+| *¿Continúa funcionando la configuración existente, como las listas de `IP Allow`?* | Sí, las listas de `IP Allow` existentes siguen funcionando como de costumbre. Sin embargo, si el repositorio de Git externo está protegido por un firewall, las [direcciones IP de Adobe necesarias deben añadirse a la lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
 | *¿Funcionan todas las URL del repositorio de GitLab? La URL del repositorio en uso sigue el formato `https://gitlab_dedicated_url.com/path/repo-name.git`, que difiere del ejemplo de la documentación.* | Sí, se admite cualquier repositorio de GitLab que admita API V3 o V4, incluidas las URL de GitLab autoalojado como la descrita en [Añadir repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
 
 
@@ -146,30 +146,30 @@ Ahora se admiten las canalizaciones de configuración para los sitios creados co
 
 **Mejora reciente**
 
-* Las canalizaciones de Edge Delivery Services ahora muestran **Configuración** en la columna **Código implementado**, lo que permite identificar instantáneamente las implementaciones solo de configuración. <!-- CMGR‑69681 -->
-* Cloud Manager muestra **Agregar canalización de Edge Delivery** una vez que un programa contiene al menos un sitio de Edge Delivery Services y un dominio asignado. De lo contrario, la opción aparece desactivada y la información del objeto explica los requisitos que faltan. <!-- CMGR‑69680 -->
+* Las canalizaciones de Edge Delivery Services ahora muestran **Configuración** en la columna **Código implementado**, lo que permite identificar instantáneamente las implementaciones que son solo de configuración. <!-- CMGR‑69681 -->
+* Cloud Manager muestra **Añadir canalización de Edge Delivery** cuando un programa contiene al menos un sitio de Edge Delivery Services y un dominio asignado. De lo contrario, la opción aparece desactivada y una ayuda contextual explica los requisitos que faltan. <!-- CMGR‑69680 -->
 * La pestaña **Edge Delivery** muestra un nuevo widget de **canalizaciones Edge Delivery** que enumera el nombre, el estado, el repositorio y la rama de cada canalización. <!-- (CMGR-69052) -->
 
-  ![widget de canalización de Edge Delivery que muestra el nombre, el estado, el repositorio y la rama de la canalización](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
+  ![Widget de canalización de Edge Delivery que muestra el nombre, el estado, el repositorio y la rama de la canalización](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
 
-* El panel **Filtros** agrega una sección **Tipo de entrega**; incluye **envío de Edge** y **envío de publicación** casillas de verificación. <!-- (CMGR-69682) -->
+* El panel **Filtros** añade una sección **Tipo de envío**; incluye las casillas de verificación **Envío de Edge** y **Envío de publicación**. <!-- (CMGR-69682) -->
 
-  ![Panel de filtro que muestra el nuevo tipo de entrega de Edge y la entrega de publicación](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
+  ![Panel de filtro que muestra el nuevo tipo de envío de Edge y el envío de publicación](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
 ![Añadir canalización de Edge Delivery a la lista desplegable Añadir canalización](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adición de una canalización de Edge Delivery desde la página **Información general del programa**, tarjeta **Canalizaciones**.*
 
 ![Cuadro de diálogo Añadir canalización de Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Cuadro de diálogo Añadir canalización de Edge Delivery.*
 
-Ver [Agregar canalización de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
+Consulte [Añadir canalización de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 
 Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
 
 
 ## Correcciones de errores
 
-* Las canalizaciones ahora solo entregan variables a la configuración de dominio de Edge Delivery Services activa, lo que omite cualquier configuración eliminada durante la recreación de la canalización. <!-- (CMGR‑70039) -->
-* La ejecución de la canalización ahora se inicia de forma fiable; se ha corregido un problema por el que algunas canalizaciones no se iniciaban debido a errores de administración de recursos internos. <!-- (CMGR‑58167) -->
-* La copia de contenido valida los permisos de Cloud Manager y bloquea los inicios de los usuarios que carecen de derechos de administrador o administrador de implementación. <!-- (CMGR‑62097) -->
+* Las canalizaciones ahora solo entregan variables a la configuración del dominio de Edge Delivery Services activa, lo que omite cualquier configuración eliminada durante la recreación de la canalización. <!-- (CMGR‑70039) -->
+* La ejecución de canalización ahora se inicia de forma fiable; se ha corregido un problema por el que algunas canalizaciones no se iniciaban debido a errores de gestión de recursos internos. <!-- (CMGR‑58167) -->
+* La copia de contenido valida los permisos de Cloud Manager y bloquea los inicios de los usuarios que carecen de derechos de administrador de la implementación o de administrador. <!-- (CMGR‑62097) -->
 
 
 <!-- ## Known issues {#known-issues} -->
