@@ -134,7 +134,7 @@ Todas las solicitudes de imagen de OpenAPI ahora aprovechan totalmente las imág
 
 * **Tratamiento de errores mejorado para tipos de archivos restringidos**
 
-  [Ahora se admite la administración de errores para los tipos de archivo restringidos](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab), lo que bloquea las cargas de archivos no admitidas. Cuando los usuarios intentan enviar un archivo cambiando su tipo a un formato no compatible, el formulario genera un error durante el envío.
+  [Ahora se admite la administración de errores para los tipos de archivo restringidos](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab), lo que bloquea las cargas de archivos no admitidas. Cuando los usuarios intentan enviar un archivo cambiando su tipo a un formato no compatible, el formulario genera un error durante el envío.
 
 
 <!--
