@@ -45,7 +45,7 @@ Según sus necesidades, puede configurar el servicio reCAPTCHA para habilitar lo
 
    1. Vaya a **[!UICONTROL Herramientas > General > Explorador de configuración]**.
    1. Seleccione una carpeta o cree una carpeta y habilítela para las configuraciones de nube mediante los siguientes pasos:
-      1. En el Explorador de configuración, selecciona la carpeta y selecciona	**[!UICONTROL Propiedades]**.
+      1. En el Explorador de configuración, selecciona la carpeta y selecciona **[!UICONTROL Propiedades]**.
       1. En el cuadro de diálogo Propiedades de configuración, habilite **[!UICONTROL Configuraciones de nube]**.
       1. Selecciona **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
 
