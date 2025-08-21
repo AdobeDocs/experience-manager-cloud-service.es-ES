@@ -1,101 +1,72 @@
 ---
-title: 'Asistente de IA de AEM Forms: biblioteca de solicitud'
+title: 'Forms Experience Builder: biblioteca de mensajes'
 description: Colección de patrones de solicitud probados y ejemplos para crear formularios con la asistencia de IA en la IU para la administración de formularios, el editor de formularios adaptables y el editor universal.
 feature: Edge Delivery Services
 hide: true
+index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
-source-git-commit: abcd5be06b0bf24ebe8737827fb4abdbf148b1b0
-workflow-type: ht
-source-wordcount: '1613'
-ht-degree: 100%
+exl-id: c8f64082-a23f-4919-ad66-042faad77d31
+source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+workflow-type: tm+mt
+source-wordcount: '1338'
+ht-degree: 28%
 
 ---
 
-# Asistente de IA de AEM Forms: biblioteca de solicitud
 
-Colección de patrones de solicitud reutilizables y ejemplos para escenarios comunes de creación de formularios. Estas plantillas pueden adaptarse a sus necesidades específicas. Cada sección cubre un caso de uso particular con instrucciones sobre cuándo utilizarlo y ejemplos comprobados.
+# Forms Experience Builder: biblioteca de mensajes
+
+Colección de patrones de mensajes reutilizables y ejemplos optimizados para Forms Experience Builder. Esta biblioteca optimizada se centra en los dos métodos de creación principales: Crear desde cero e Importar y convertir, con compatibilidad mejorada para campos inteligentes con tecnología LLM y coherencia de marca.
 
 >[!NOTE]
 >
-> El Asistente de IA para AEM Forms está disponible en el programa para primeros usuarios. Envíe un correo electrónico desde su dirección de trabajo a mailto:aem-forms-ea@adobe.com para solicitar acceso.
+> Forms Experience Builder está disponible en el programa de usuarios que lo adoptaron por primera vez. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 >[!IMPORTANT]
 >
-> **Documentación sujeta a cambios**: esta biblioteca de solicitud se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que el Asistente de IA para AEM Forms sigue evolucionando durante el programa para primeros usuarios.
+> **Documentación sujeta a cambios**: esta biblioteca de solicitud se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Los indicadores, los ejemplos y las prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa de los primeros usuarios.
 
-## Prácticas recomendadas para resultados óptimos
+## Usar esta biblioteca de mensajes
 
-Para sacar el máximo partido al Asistente de IA, tenga en cuenta estos consejos:
+Esta biblioteca proporciona patrones de solicitud reutilizables para escenarios comunes de creación de formularios. Para conocer las prácticas recomendadas completas, consulte la [Guía de introducción a Forms Experience Builder](forms-ai-assistant-getting-started.md#best-practices).
 
-### Empiece de forma sencilla y vaya avanzando poco a poco
+### Sugerencias rápidas para esta biblioteca
 
-Comience con comandos más pequeños y específicos (por ejemplo, Añadir una entrada de texto para &quot;Nombre&quot;) en lugar de solicitudes con varios pasos demasiado complejas inicialmente. Este método garantiza la precisión y facilita la resolución de problemas si algo no funciona según lo previsto.
+- **Empiece con ejemplos**: use las indicaciones proporcionadas como plantillas y adáptelas a sus necesidades
+- **Dos métodos de creación**: elija los enfoques Crear desde cero o Importar y convertir
+- **Sea específico**: agregue sus propios detalles a los ejemplos genéricos
+- **Realizar pruebas exhaustivas**: validar siempre los resultados en el entorno específico
 
-**Ejemplo de inicio simple:**
+### Plantillas y estilos de marca
+
+**Prepare los recursos de marca con antelación para crear formularios de forma coherente:**
+
+- **Plantillas de marca**: cree plantillas de formulario estandarizadas con los colores, las fuentes y los patrones de diseño de su organización
+- **Directrices de estilo**: defina un estilo de campo, diseños de botón y estándares de espaciado coherentes
+- **Biblioteca de componentes**: cree componentes de formulario reutilizables que coincidan con la identidad de su marca
+- **Visual Assets**: prepare logotipos, iconos y elementos de fondo para la integración de formularios
+
+**Ejemplo de solicitud de plantilla de marca:**
 
 ```
-Add a text input field for "First Name" with placeholder "Enter your first name"
+Create a brand template for financial services forms with:
+- Corporate blue (#003366) and silver (#C0C0C0) color scheme
+- Open Sans font family for all text
+- 16px minimum font size for accessibility
+- Consistent 24px spacing between sections
+- Corporate logo in header with proper sizing
+- Professional button styling with hover effects
 ```
 
-**Luego avance poco a poco:**
+>[!NOTE]
+>
+>**Componentes personalizados**: consulte con su equipo de desarrollo sobre el uso de componentes específicos de la organización y su compatibilidad con Forms Experience Builder antes de implementar elementos de marca personalizados.
 
-```
-Make @firstName mandatory and add validation message "First name is mandatory"
-```
+>[!NOTE]
+>
+> Esta biblioteca de mensajes se ha actualizado para reflejar las funciones optimizadas de Forms Experience Builder. Algunas de las funciones avanzadas de integración y prueba que se muestran en los ejemplos pueden requerir una configuración adicional.
 
-### Use terminología de AEM Forms
-
-Utilice términos como &quot;panel&quot;, &quot;campo de entrada de texto&quot;, &quot;grupo de casillas de verificación&quot;, &quot;acción de envío&quot;, &quot;regla&quot;, etc., para que el asistente los entienda mejor. Esto garantiza que la IA interprete sus solicitudes correctamente en el contexto de AEM Forms.
-
-**Términos preferidos:**
-
-- &quot;campo de entrada de texto&quot; en lugar de &quot;cuadro de texto&quot;
-- &quot;grupo de casillas de verificación&quot; en lugar de &quot;casillas de verificación&quot;
-- &quot;lista desplegable&quot; en lugar de &quot;lista de selección&quot;
-- &quot;panel&quot; en lugar de &quot;sección&quot; o &quot;contenedor&quot;
-- &quot;acción de envío&quot; en lugar de &quot;envío de formulario&quot;
-- &quot;regla&quot; en lugar de &quot;lógica&quot; o &quot;condición&quot;
-
-### Haga referencia clara a los campos
-
-Al configurar los campos existentes, utilice la notación @fieldName (por ejemplo, &quot;Hacer que @firstName sea obligatorio&quot;). Esto ayuda a la IA a identificar exactamente a qué campo hace referencia, especialmente en formularios complejos con muchos campos.
-
-**Ejemplos:**
-
-- `Make @email mandatory with real-time validation`
-- `Show @spouseInfo panel when @maritalStatus equals "Married"`
-- `Set @country default value to "United States"`
-
-### Revisar siempre los planes
-
-Revise siempre los planes cuidadosamente para ver los cambios propuestos por el asistente en el Editor universal antes de hacer clic en &quot;Aplicar&quot;. La IA le mostrará lo que piensa hacer: dedique un momento a verificar que coincida con sus expectativas.
-
-### Validar manualmente
-
-Una vez que el asistente haya realizado los cambios, obtenga siempre una vista previa del formulario y pruébelo para asegurarse de que se comporta y tiene el aspecto esperado. La IA es una herramienta potente, pero la validación final es clave para garantizar la calidad.
-
-**Lista de comprobación de validación:**
-
-- Probar la funcionalidad del formulario en el modo de vista previa
-- Verificar que la lógica condicional funciona correctamente
-- Comprobar la capacidad de respuesta móvil
-- Probar envío de formulario
-- Validar las funciones de accesibilidad
-
-### Iteración y perfeccionamiento
-
-Si la primera solicitud no arroja el resultado exacto, intente reformular o desglosar la solicitud en pasos más pequeños. La IA aprende del contexto, por lo que proporcionar detalles más específicos a menudo mejora los resultados.
-
-**Ejemplo de iteración:**
-
-1. Primer intento: &quot;Hacer que el formulario sea compatible con dispositivos móviles&quot;
-2. Perfeccionado: &quot;Optimizar el diseño del formulario para pantallas móviles de menos de 768 píxeles con diseño de una sola columna y destinos táctiles más grandes&quot;
-
-### Facilitar comentarios
-
-Utilice el mecanismo de comentarios integrado para ayudar al asistente a aprender y mejorar. Sus comentarios ayudan a mejorar la IA para todos.
 
 
 ## Ejemplos de desarrollo incremental
@@ -142,205 +113,307 @@ Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "S
 Create a user registration form with personal information panel
 ```
 
-**Paso 2 - Añadir campos principales:**
+**Paso 2 - Agregar campos obligatorios:**
 
 ```
-Add text input fields: @firstName, @lastName, @email, @phone to the personal information panel
+Add fields for @firstName, @lastName, @email, @phoneNumber with appropriate validation
 ```
 
-**Paso 3 - Añadir validación:**
+**Paso 3 - Agregar lógica empresarial:**
 
 ```
-Make @firstName, @lastName, and @email mandatory with real-time validation
+Create a rule: if @age is under 18, show parent/guardian information section
 ```
 
-**Paso 4 - Añadir información de la cuenta:**
+**Paso 4 - Mejorar con preferencias:**
 
 ```
-Create a new panel "Account Information" with @username and @password fields
+Add a preferences panel with @newsletterSubscription, @marketingConsent, @termsAccepted
 ```
 
-**Paso 5 - Mejorar la seguridad:**
+**Paso 5 - Agregar carga de archivo:**
 
 ```
-Add password confirmation field @confirmPassword with validation to match @password
+Include a file upload field for @profilePicture with size limit of 5MB
 ```
 
-**Paso 6 - Añadir preferencias:**
+## Creación y administración de formularios
+
+**Cuándo usar:** Cuando necesite crear formularios nuevos o modificar los existentes.
+
+**Cómo usar:** Elija uno de los dos métodos: Crear desde cero o Importar y convertir (consulte [Guía de introducción](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
+
+**Mensaje de ejemplo - Creación de formulario simple:**
 
 ```
-Create "Preferences" panel with @newsletter checkbox and @communicationMethod radio group (Email, SMS, Phone)
+Create a customer feedback form with:
+- Product rating (1-5 stars)
+- Comment field for detailed feedback
+- Customer email (optional)
+- Submit to email notification
 ```
 
-Este enfoque incremental le ayuda a:
-
-- Detectar problemas antes de que se agraven
-- Probar cada función de forma exhaustiva
-- Realizar ajustes según los comentarios del usuario
-- Mantener un mejor control sobre el proceso de desarrollo
-
-## Inicio de nuevos formularios
-
-**Cuándo se debe usar:** al principio de cualquier proyecto de formulario. Esta solicitud ayuda a la IA a comprender sus necesidades y a crear la estructura de base.
-
-**Cómo se usa:** comience con la estructura básica y los requisitos principales. Especifique el tipo de formulario, el público destinatario y la finalidad principal. Añada complejidad en las solicitudes posteriores.
-
-**Solicitud de ejemplo - Inicio de forma sencilla:**
+**Mensaje de ejemplo - Creación de formularios complejos:**
 
 ```
-Create a **customer onboarding form** for new bank account applications with:
+Create a comprehensive employee onboarding form with:
 
-**Purpose:** Collect personal information for account setup
-**Target Users:** New customers applying for checking/savings accounts
-**Basic Structure:** Single panel with essential fields
-**Core Fields:** Name, email, phone, account type selection
+**Personal Information Section:**
+- Full name (first, middle, last)
+- Date of birth with age validation
+- Contact information (email, phone, address)
+- Emergency contact details
 
-Start with a simple layout that we can enhance step by step.
+**Employment Details:**
+- Position and department selection
+- Start date with business day validation
+- Salary information with confidentiality notice
+- Reporting structure
+
+**Document Upload:**
+- Resume/CV upload (PDF, DOC, DOCX)
+- ID verification documents
+- Tax forms and banking information
+- Signed employment agreement
+
+**Preferences:**
+- Benefits selection with cost calculator
+- Work schedule preferences
+- Training requirements
+- Equipment needs
+
+**Validation Rules:**
+- Email format validation
+- Phone number format validation
+- Age must be 18 or older
+- All required documents must be uploaded
+- Terms and conditions must be accepted
+
+**Submit Actions:**
+- Send confirmation email to new employee
+- Notify HR department
+- Create employee record in HR system
+- Schedule orientation meeting
 ```
 
-**Luego avance poco a poco:**
+**Indicadores de administración de formularios:**
 
 ```
-Add an address panel to @customerOnboardingForm with street address, city, state, and zip code fields
-```
-
-```
-Add employment information panel with @employer, @jobTitle, and @annualIncome fields
-```
-
-```
-Add file upload field @identityDocuments for identity verification (Accept: .pdf,.jpg,.png)
-```
-
-**Solicitudes de inicio simples alternativas:**
-
-```
-Create a basic **event registration form** with name, email, and event selection fields
-```
-
-```
-Build a simple **contact form** with name, email, and message fields
-```
-
-```
-Design a basic **feedback survey** with rating scale and comments field
-```
-
-## Estructura y diseño del formulario
-
-**Cuándo se debe usar:** cuando se necesitan organizar formularios complejos o mejorar la experiencia del usuario mediante un mejor diseño.
-
-**Cómo se usa:** céntrese en el recorrido del usuario y en la agrupación lógica de la información. Especifique las preferencias de diseño y los patrones de navegación.
-
-**Solicitud de ejemplo - Estructura de formulario de varios pasos:**
-
-```
-Convert this single-page form into a **3-step wizard** with:
-
-**Step 1: Personal Information**
-- Name, email, phone, address fields
-- Progress indicator showing "Step 1 of 3"
-- "Next" button (validate mandatory fields before proceeding)
-
-**Step 2: Preferences & Requirements** 
-- Service selection (checkbox group)
-- Budget range (dropdown)
-- Timeline preferences (radio group)
-- Special requirements (text input field)
-
-**Step 3: Review & Submit**
-- Summary of all entered information
-- Edit links to go back to specific steps
-- Terms and conditions checkbox
-- Submit button with confirmation
-
-Include "Previous" and "Next" buttons, allow users to jump between completed steps, save progress automatically.
-```
-
-**Solicitudes de optimización del diseño:**
-
-```
-Reorganize this form using a **wizard layout** for desktop and single column for mobile. 
+Import this PDF application form and convert it to an adaptive form with enhanced validation
 ```
 
 ```
-Convert this long form into an **accordion layout** where users can expand/collapse sections.
+Update the existing contact form to include social media handles and preferred contact method
 ```
 
 ```
-Create a **vertical tabbed interface** for this form with tabs for: Basic Info, Contact Details, Preferences, and Review.
+Reorganize the registration form into a 3-step wizard: personal info, preferences, confirmation
 ```
 
-## Administración y validación de campos
+## Administración y configuración de campos
 
-**Cuándo se debe usar:** cuando necesite añadir, modificar o mejorar campos de formulario con reglas y comportamientos de validación específicos.
+**Cuándo se debe usar:** Cuándo se deben agregar, modificar o configurar los campos de formulario.
 
-**Cómo se usa:** sea específico sobre los tipos de campo, los requisitos de validación y las expectativas de la experiencia del usuario. Haga referencia a los campos existentes mediante la sintaxis @fieldName.
+**Cómo usar:** Sea específico acerca de los tipos de campo, las reglas de validación y los requisitos de experiencia del usuario.
 
-**Solicitud de ejemplo - Mejora de campo:**
-
-```
-Enhance the form fields with these specific requirements:
-
-**Email Field (@email):**
-- Make mandatory with real-time validation
-- Show green checkmark when valid format entered
-- Display helpful error message: "Please enter a valid email address"
-- Add placeholder: "your.email@company.com"
-
-**Phone Number (@phone):**
-- Type: tel for mobile optimization
-- Make mandatory for business customers, optional for personal
-- Add placeholder: "Enter your phone number"
-
-**Date of Birth (@dateOfBirth):**
-- Type: date with date picker
-- Validate age is 18+ for account opening
-- Show error if under 18: "Must be 18 or older to open account"
-
-**File Upload (@documents):**
-- Accept: .pdf,.doc,.docx
-- Multiple: true for multiple document upload
-- Show upload progress and file names after upload
-```
-
-**Solicitudes específicas de cada campo:**
+**Mensaje de ejemplo - Adición de campo básico:**
 
 ```
-Add a **file upload field** for resume with these specs: Accept only PDF/DOC/DOCX files, allow multiple files, show upload progress, display file names after upload.
+Add a text input field for "Company Name" with placeholder "Enter your company name"
+```
+
+**Mensaje de ejemplo - Configuración avanzada de campo:**
+
+```
+Add a comprehensive address section with:
+
+**Street Address:**
+- Address line 1 (required, max 100 characters)
+- Address line 2 (optional, max 100 characters)
+- City (required, dropdown with common cities)
+- State/Province (required, dropdown)
+- Postal code (required, format validation)
+- Country (required, default to "United States")
+
+**Validation Rules:**
+- Postal code must match state selection
+- Address line 1 cannot be empty
+- City must be a valid city for selected state
+
+**User Experience:**
+- Auto-complete for address fields
+- Clear labels and help text
+- Mobile-friendly input fields
+- Accessibility compliance
+```
+
+**Indicadores de configuración de campo:**
+
+```
+Make @email field required with real-time validation and custom error message
 ```
 
 ```
-Create a **dropdown field** for country selection with all countries listed. Set default value based on user's location if available.
+Add a dropdown for @country with options for USA, Canada, UK, Germany, France, and "Other"
 ```
 
 ```
-Build a **repeatable panel** for work experience where users can add/remove multiple jobs. Each entry needs: company, title, start date, end date, description.
+Configure @phoneNumber field with format (XXX) XXX-XXXX and validation
 ```
 
-## Lógica condicional y reglas
+```
+Add a file upload field for @resume with PDF and DOC restrictions, max 5MB
+```
 
-**Cuándo se debe usar:** cuando se necesita un comportamiento de formulario dinámico basado en la entrada del usuario o en reglas empresariales.
+## Campos inteligentes mejorados LLM
 
-**Cómo se usa:** defina claramente las condiciones y las acciones resultantes. Utilice referencias de campo y operadores lógicos específicos.
+**Cuándo usar:** Cuando necesite campos con opciones previamente rellenadas que aprovechen la base de conocimiento de la IA.
 
-**Solicitud de ejemplo - Lógica condicional compleja:**
+**Cómo usar:** Solicitar campos que requieran conjuntos de datos completos; la inteligencia artificial puede rellenar automáticamente las opciones utilizando sus conocimientos integrados.
+
+### Campos geográficos y de ubicación
+
+**Aeropuertos y transporte:**
 
 ```
-Implement these conditional rules for the application form:
+Add a dropdown for departure airports with all major international airports
+Add arrival airport field with IATA codes and full names
+Create a field for nearest airport to user location
+Add a selection of train stations for European cities
+```
 
-**Business vs Personal Account Logic:**
-- If @accountType equals "Business", show:
-  - Business name field (mandatory)
-  - Tax ID field (mandatory)
-  - Business address section
-  - Number of employees dropdown
-- If @accountType equals "Personal", hide all business fields
+**Regiones administrativas:**
 
-**Income-Based Requirements:**
-- If @annualIncome is less than 25000:
-  - Show additional verification section
-  - Make co-signer information mandatory
+```
+Add a complete list of US states with abbreviations
+Create a country dropdown with ISO codes and full names
+Add a field for major world cities with time zones
+Include a dropdown of Canadian provinces and territories
+Add a field for UK counties and postal areas
+```
+
+### Datos empresariales e industriales
+
+**Clasificaciones de la compañía:**
+
+```
+Add a field for industry classification with NAICS codes
+Create a dropdown of business entity types (LLC, Corporation, Partnership, etc.)
+Add a field for company size categories (startup, SME, enterprise)
+Include department selection for large organizations
+Add a field for professional service types
+```
+
+**Clasificaciones profesionales:**
+
+```
+Add a field for job titles with common industry roles
+Create a dropdown of professional certifications by field
+Include education levels with degree types
+Add a field for years of experience ranges
+Create a selection for programming languages and frameworks
+```
+
+### Normas y regulaciones
+
+**Asuntos financieros y legales:**
+
+```
+Add a field for currency codes with symbols and exchange rates
+Create a dropdown of tax ID types by country
+Include a field for legal document types
+Add payment method options with security features
+Create a selection for banking institutions by country
+```
+
+**Estándares técnicos:**
+
+```
+Add a dropdown of file format types with extensions
+Include network protocol options
+Add a field for database types and versions
+Create a selection for API authentication methods
+```
+
+### Sanidad y medicina
+
+**Clasificaciones médicas:**
+
+```
+Add a field for medical specialties
+Create a dropdown of common medications with generic names
+Include a field for insurance provider types
+Add a selection for medical emergency contact relationships
+Create a field for dietary restrictions and allergies
+```
+
+### Inteligencia de tiempo y calendario
+
+**Campos de fecha y hora:**
+
+```
+Add a field for business hours with time zone handling
+Create a dropdown of public holidays by country
+Include seasonal options with date ranges
+Add a field for conference room booking with availability
+Create a selection for recurring meeting patterns
+```
+
+### Categorías de productos y servicios
+
+**Clasificaciones de comercio electrónico:**
+
+```
+Add a field for product categories with subcategories
+Create a dropdown of shipping methods with delivery estimates
+Include a field for return policy options
+Add a selection for customer priority levels
+Create a field for subscription billing cycles
+```
+
+**Indicadores de campo inteligente de ejemplo:**
+
+```
+"Add a departure airport field with all major airports worldwide including IATA codes and city names"
+```
+
+```
+"Create a comprehensive industry field using standard NAICS classification with technology subcategories"
+```
+
+```
+"Include a professional certification dropdown that adapts based on the selected job field"
+```
+
+```
+"Add an international phone number field that formats based on the selected country"
+```
+
+```
+"Create a university selection field with major institutions organized by country and ranking"
+```
+
+## Creación de reglas y lógica empresarial
+
+**Cuándo usar:** Cuando necesite implementar lógica condicional, reglas de validación o procesos empresariales.
+
+**Cómo usar:** Describa claramente la lógica empresarial, especificando condiciones y acciones.
+
+**Mensaje de ejemplo - Lógica condicional simple:**
+
+```
+Create a rule that shows @spouseInformation panel only when @maritalStatus equals "Married"
+```
+
+**Mensaje de ejemplo - Reglas comerciales complejas:**
+
+```
+Implement comprehensive loan application validation:
+
+**Income Validation:**
+- If @annualIncome is less than 30000:
+  - Show warning message: "Income may be insufficient for requested loan amount"
+  - Require additional income documentation
   - Display message: "Additional documentation may be required"
 - If @annualIncome is greater than 100000:
   - Show premium services options
@@ -359,15 +432,15 @@ Implement these conditional rules for the application form:
 **Solicitudes específicas de cada regla:**
 
 ```
-Create a **visibility rule** that shows @spouseInformation panel only when @maritalStatus equals "Married" or "Domestic Partnership".
+Create a **visibility rule** that shows @spouseInformation panel only when @maritalStatus equals "Married" or "Domestic Partnership"
 ```
 
 ```
-Add **progressive disclosure** where additional questions appear based on previous answers. Start with basic info, then show relevant follow-ups.
+Add **progressive disclosure** where additional questions appear based on previous answers. Start with basic info, then show relevant follow-ups
 ```
 
 ```
-Implement **smart defaults** where @country selection auto-sets related fields. Allow manual override.
+Implement **smart defaults** where @country selection auto-sets related fields. Allow manual override
 ```
 
 ## Integración y envío de datos
@@ -398,7 +471,7 @@ Add email notification to @applicationForm: Send confirmation email to @email ad
 Add CRM integration to @applicationForm: Create new lead record with @firstName, @lastName, @email, and set Status to "New Application"
 ```
 
-**Solicitud de ejemplo - Envío multicanal avanzado:**
+**Mensaje de ejemplo - Envío multicanal estándar:**
 
 ```
 Configure form submission with multiple data destinations:
@@ -430,22 +503,22 @@ Configure form submission with multiple data destinations:
 **Solicitudes específicas de la integración:**
 
 ```
-Connect this form to **CRM system** to create new leads. Map @firstName to FirstName, @email to Email, set LeadSource to "Web Form", and Status to "New".
+Connect this form to **CRM system** to create new leads. Map @firstName to FirstName, @email to Email, set LeadSource to "Web Form", and Status to "New"
 ```
 
 ```
-Set up **workflow trigger** when form is submitted. Pass all form data and trigger approval workflow with manager notification.
+Set up **workflow trigger** when form is submitted. Pass all form data and trigger approval workflow with manager notification
 ```
 
 ```
-Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents.
+Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents
 ```
 
-## Diseño, importación y conversión
+## Importar y convertir Forms existente
 
-**Cuándo se debe usar:** cuando tenga diseños de formulario existentes (PDF, Figma e imágenes) que necesitan convertirse en formularios AEM funcionales.
+**Cuándo se debe usar:** Si ya tiene formularios, documentos o diseños para transformarlos en formularios modernos de AEM.
 
-**Cómo se debe usar:** proporcione un contexto claro sobre el diseño de origen y especifique las modificaciones o mejoras necesarias.
+**Cómo usar:** Cargue el archivo de origen y describa los requisitos de conversión (consulte [Guía de importación](forms-ai-assistant-getting-started.md#2-import-and-convert)).
 
 **Solicitud de ejemplo - Conversión de formulario PDF:**
 
@@ -476,21 +549,21 @@ Convert this uploaded **PDF application form** into a functional AEM adaptive fo
 - Ensure consistent spacing and alignment
 - Add subtle animations for better user experience
 
-Preserve all original field labels and help text, but improve the user experience with modern form interactions.
+Preserve all original field labels and help text, but improve the user experience with modern form interactions
 ```
 
 **Solicitudes de importación de diseño:**
 
 ```
-Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness.
+Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness
 ```
 
 ```
-Analyze this **image of a paper form** and recreate it digitally. Improve the layout for better mobile experience while keeping all mandatory fields.
+Analyze this **image of a paper form** and recreate it digitally. Improve the layout for better mobile experience while keeping all mandatory fields
 ```
 
 ```
-Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes.
+Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes
 ```
 
 ## Optimización y capacidad de respuesta móviles
@@ -542,313 +615,360 @@ Optimize this form for **mobile-first responsive design**:
 - Horizontal form sections for related fields
 - Sidebar navigation for long forms
 - Hover states and advanced interactions
-
-**Touch Optimization:**
-- Larger checkbox and radio button targets
-- Swipe gestures for multi-step navigation
-- Pull-to-refresh for saved drafts
-- Touch-friendly date/time pickers
-
-**Performance:**
-- Lazy load non-critical form sections
-- Optimize images and icons for mobile
-- Minimize JavaScript for faster loading
-- Progressive enhancement approach
 ```
 
-**Solicitudes simples específicas para móviles:**
+**Indicadores específicos para móviles:**
 
 ```
-Make @checkoutForm mobile-optimized with large buttons and one-thumb navigation
+Make this form **touch-friendly** with larger buttons and simplified navigation for mobile users
 ```
 
 ```
-Add touch-friendly controls to @surveyForm for tablet users
+Optimize form for **tablet users** with appropriate field sizes and navigation patterns
 ```
 
 ```
-Enable offline functionality for @applicationForm with local data saving
+Add **swipe gestures** for multi-step form navigation on mobile devices
 ```
 
 ## Accesibilidad y conformidad
 
-**Cuándo se debe usar:** cuando los formularios deben cumplir los requisitos de accesibilidad (WCAG 2.1 AA) o de conformidad.
+**Cuándo se debe usar:** Cuándo los formularios deben cumplir los estándares de accesibilidad (WCAG) o los requisitos de cumplimiento.
 
-**Cómo se debe usar:** especifique los requisitos de accesibilidad y los estándares de cumplimiento que deben cumplirse.
+**Cómo se usa:** Especifique el nivel de cumplimiento requerido y las características de accesibilidad específicas que se necesitan.
 
-**Solicitud de ejemplo - Implementación de accesibilidad:**
+**Mensaje de ejemplo - Accesibilidad básica:**
 
 ```
-Make this form **WCAG 2.1 AA compliant** with these accessibility features:
+Make @contactForm accessible with:
 
-**Keyboard Navigation:**
-- Logical tab order through all form elements
-- Skip links to main content and form sections
-- Keyboard shortcuts for common actions
-- Focus indicators clearly visible on all interactive elements
-
-**Screen Reader Support:**
+**Basic Accessibility:**
 - Proper ARIA labels for all form fields
-- Descriptive error messages announced to screen readers
-- Form section headings with proper hierarchy (h1, h2, h3)
-- Progress announcements for multi-step forms
-
-**Visual Accessibility:**
-- Color contrast ratio minimum 4.5:1 for text
-- Don't rely solely on color to convey information
-- Text size minimum 16px for body text
-- Scalable up to 200% without horizontal scrolling
-
-**Motor Accessibility:**
-- Large click targets (minimum 44x44px)
-- Generous spacing between interactive elements
-- No time limits or provide extension options
-- Alternative input methods support
-
-**Cognitive Accessibility:**
-- Clear, simple language in all instructions
-- Consistent navigation and layout patterns
-- Error prevention and clear error recovery
-- Help text and examples for complex fields
-
-**Testing Requirements:**
-- Test with screen readers (NVDA, JAWS, VoiceOver)
-- Verify keyboard-only navigation
-- Check color contrast with automated tools
-- Validate HTML for semantic correctness
+- Keyboard navigation support
+- High contrast color scheme
+- Screen reader compatibility
+- Focus indicators for all interactive elements
 ```
 
-**Solicitudes específicas de cumplimiento:**
+**Mensaje de ejemplo - Accesibilidad avanzada:**
 
 ```
-Ensure this **healthcare form meets HIPAA requirements** with proper data encryption, audit logging, and privacy controls.
+Implement comprehensive accessibility for @applicationForm:
+
+**WCAG 2.1 AA Compliance:**
+- Semantic HTML structure with proper headings
+- ARIA landmarks and roles for navigation
+- Color contrast ratio of at least 4.5:1
+- Keyboard-only navigation support
+- Screen reader announcements for dynamic content
+
+**Form-Specific Accessibility:**
+- Error messages announced to screen readers
+- Field validation with clear error descriptions
+- Progress indicators for multi-step forms
+- Skip navigation links for keyboard users
+- Alternative text for all images and icons
+
+**User Experience:**
+- Clear focus indicators on all interactive elements
+- Logical tab order through form fields
+- Descriptive link text and button labels
+- Help text available for complex fields
+- Timeout warnings for session expiration
+```
+
+**Indicadores específicos de accesibilidad:**
+
+```
+Add **screen reader support** to this form with proper ARIA labels and announcements
 ```
 
 ```
-Make this **financial form PCI DSS compliant** with secure payment field handling and data protection measures.
+Implement **keyboard navigation** for all form interactions and navigation elements
 ```
 
 ```
-Create a **government form meeting Section 508 standards** with full accessibility and plain language requirements.
+Ensure **color contrast** meets WCAG AA standards for all text and interactive elements
+```
+
+## Optimización de rendimiento
+
+**Cuándo se deben usar:** Cuando los formularios deben cargarse rápidamente y funcionar correctamente en diversas condiciones.
+
+**Cómo usar:** Especifique los requisitos de rendimiento y las estrategias de optimización.
+
+**Mensaje de ejemplo - Rendimiento básico:**
+
+```
+Optimize @contactForm for performance:
+
+**Loading Optimization:**
+- Lazy load non-critical form sections
+- Minimize initial bundle size
+- Optimize images and assets
+- Enable caching for static resources
+```
+
+**Mensaje de ejemplo - Rendimiento avanzado:**
+
+```
+Implement comprehensive performance optimization for @applicationForm:
+
+**Loading Performance:**
+- Progressive loading of form sections
+- Optimize images with WebP format
+- Minimize JavaScript bundle size
+- Enable gzip compression for all assets
+
+**Runtime Performance:**
+- Debounce validation calls to reduce API requests
+- Optimize conditional logic execution
+- Cache frequently used data
+- Implement virtual scrolling for long lists
+
+**User Experience:**
+- Show loading indicators for async operations
+- Provide offline capability for form data
+- Auto-save form progress every 30 seconds
+- Optimize form submission with retry logic
+
+**Monitoring:**
+- Track form load times and user interactions
+- Monitor validation performance
+- Measure submission success rates
+- Alert on performance degradation
+```
+
+**Indicadores específicos de rendimiento:**
+
+```
+Optimize form **loading speed** by implementing progressive loading and asset optimization
+```
+
+```
+Add **auto-save functionality** to prevent data loss during form completion
+```
+
+```
+Implement **offline support** so users can complete forms without internet connection
 ```
 
 ## Pruebas y control de calidad
 
-**Cuándo se debe usar:** cuando se necesita validar la funcionalidad del formulario, la experiencia del usuario y el rendimiento técnico.
+**Cuándo se debe usar:** Cuando los formularios necesitan pruebas exhaustivas para garantizar la fiabilidad y la satisfacción del usuario.
 
-**Cómo se debe usar:** especifique los escenarios de prueba, los casos extremos y los criterios de calidad que deben verificarse.
+**Cómo usar:** Especifique escenarios de prueba, requisitos de validación y métricas de calidad.
 
-**Solicitud de ejemplo - Pruebas de formulario completas:**
+**Mensaje de ejemplo - Prueba básica:**
 
 ```
-Create a **comprehensive testing plan** for this application form:
+Add comprehensive testing for @contactForm:
 
 **Functional Testing:**
-- Test all field validations with valid and invalid data
-- Verify conditional logic shows/hides fields correctly
-- Test file upload with various file types and sizes
-- Validate calculation fields update correctly
-- Test form submission with complete and incomplete data
+- Test all form field validations
+- Verify submit functionality works correctly
+- Test error handling and user feedback
+- Validate conditional logic and rules
+```
+
+**Mensaje de ejemplo - Pruebas avanzadas:**
+
+```
+Implement comprehensive testing strategy for @applicationForm:
+
+**Functional Testing:**
+- Unit tests for all validation rules
+- Integration tests for submit actions
+- End-to-end testing for complete user flows
+- Cross-browser compatibility testing
 
 **User Experience Testing:**
-- Test form completion time (target: under 10 minutes)
-- Verify error messages are helpful and actionable
-- Test progress saving and restoration
-- Validate mobile touch interactions
-- Check form accessibility with assistive technologies
+- Usability testing with target user groups
+- Accessibility testing with screen readers
+- Mobile device testing on various screen sizes
+- Performance testing under load conditions
 
-**Edge Case Testing:**
-- Test with extremely long text inputs
-- Verify behavior with special characters and emojis
-- Test with slow internet connections
-- Validate offline functionality if applicable
-- Test browser back/forward button behavior
+**Quality Assurance:**
+- Automated testing for regression prevention
+- Manual testing for edge cases and scenarios
+- Security testing for data protection
+- Compliance testing for regulatory requirements
 
-**Performance Testing:**
-- Measure form load time (target: under 3 seconds)
-- Test with large file uploads
-- Verify memory usage with long form sessions
-- Test concurrent user submissions
-- Validate database performance under load
-
-**Security Testing:**
-- Test input sanitization and XSS prevention
-- Verify CSRF protection is working
-- Test file upload security restrictions
-- Validate data encryption in transit and at rest
-- Check authentication and authorization controls
-
-**Cross-Browser Testing:**
-- Test on Chrome, Firefox, Safari, Edge
-- Verify mobile browsers (iOS Safari, Chrome Mobile)
-- Test on different operating systems
-- Validate older browser fallbacks
-- Check print functionality across browsers
+**Monitoring:**
+- Track form completion rates and abandonment
+- Monitor error rates and user feedback
+- Measure performance metrics and load times
+- Analyze user behavior and interaction patterns
 ```
 
 **Solicitudes específicas de pruebas:**
 
 ```
-Create **automated test scripts** for this form's critical user paths: successful submission, validation errors, and conditional logic.
+Add **automated testing** for all form validations and submit functionality
 ```
 
 ```
-Design a **user acceptance testing plan** with realistic scenarios and success criteria for business stakeholders.
+Implement **user acceptance testing** scenarios for complete form workflows
 ```
 
 ```
-Set up **performance monitoring** to track form completion rates, abandonment points, and submission success rates.
+Set up **performance monitoring** to track form load times and user interactions
 ```
 
-## Funciones e integraciones avanzadas
+## Resolución de problemas
 
-**Cuándo se debe usar:** cuando se necesitan capacidades de formulario sofisticadas, como la asistencia de IA, flujos de trabajo avanzados o integraciones complejas.
+Soluciones rápidas para problemas comunes del Forms Experience Builder:
 
-**Cómo se debe usar:** defina claramente los requisitos avanzados de funcionalidad e integración.
+| Problema | Corrección rápida |
+|-------|-----------|
+| El formulario no se envía | Comprobar la configuración de la acción de envío y las reglas de validación |
+| Errores de validación que no se muestran | Verificar la configuración de validación de campos y la ubicación de mensajes de error |
+| Problemas de diseño de Mobile | Revisar la configuración de diseño interactivo y el tamaño de los campos |
+| Los campos no aparecen | Comprobación de la lógica condicional y las reglas de visibilidad |
+| Errores de importación | Comprobar la compatibilidad y los límites de tamaño del formato de archivo |
+| Errores de integración | Validar extremos de API y credenciales de autenticación |
+| Problemas de rendimiento | Optimizar el recuento de campos y eliminar validaciones innecesarias |
+| Problemas de accesibilidad | Revisar las etiquetas de campo, los atributos ARIA y el orden de tabulación |
 
-**Solicitud de ejemplo - Formulario mejorado con IA:**
+**Indicador de modo de depuración:**
 
 ```
-Add **AI-powered features** to enhance this application form:
+Enable debug mode to identify issues with form submission and field validation
+```
 
-**Smart Auto-Complete:**
-- Use AI to suggest company names as user types
-- Auto-populate address fields from partial input
-- Suggest job titles based on industry selection
-- Provide intelligent form completion suggestions
+**Mensaje de análisis de error:**
 
-**Dynamic Question Generation:**
-- Generate follow-up questions based on previous answers
-- Adapt form complexity to user's experience level
-- Show relevant optional fields based on user profile
-- Personalize form sections for different user types
+```
+Analyze form errors: check validation rules, API responses, and user input patterns
+```
 
-**Intelligent Validation:**
-- Use AI to detect potentially incorrect information
-- Suggest corrections for common data entry errors
-- Validate business information against public databases
-- Flag suspicious or inconsistent responses
+## Análisis e información avanzados
 
-**Content Optimization:**
-- A/B test different form layouts automatically
-- Optimize field order based on completion patterns
-- Adjust form length based on user engagement
-- Personalize help text based on user behavior
+**Cuándo usar:** Cuando necesite comprender el rendimiento del formulario y el comportamiento del usuario.
+
+**Cómo usar:** Especifique los requisitos y perspectivas de análisis necesarios.
+
+**Mensaje de ejemplo - Análisis básico:**
+
+```
+Add analytics to @contactForm:
+
+**Basic Metrics:**
+- Form completion rates
+- Field abandonment rates
+- Submit success/failure rates
+- User session duration
+```
+
+**Mensaje de ejemplo - Análisis avanzado:**
+
+```
+Implement comprehensive analytics for @applicationForm:
+
+**User Behavior Analytics:**
+- Track field completion rates and abandonment
+- Monitor user session duration and patterns
+- Analyze form navigation and user flow
+- Identify bottlenecks and friction points
+
+**Performance Analytics:**
+- Measure form load times and performance
+- Track API response times and failures
+- Monitor validation rule effectiveness
+- Analyze submission success rates
+
+**Business Intelligence:**
+- Generate reports on form effectiveness
+- Track conversion rates and ROI
+- Monitor user satisfaction and feedback
+- Identify opportunities for optimization
 
 **Predictive Analytics:**
-- Predict likelihood of form completion
-- Identify users who might need assistance
-- Suggest optimal times for form completion reminders
-- Analyze drop-off points and suggest improvements
-
-**Natural Language Processing:**
-- Allow voice input for text fields
-- Convert speech to text for accessibility
-- Analyze open-text responses for sentiment
-- Extract structured data from unstructured input
+- Predict form completion likelihood
+- Identify users likely to abandon
+- Recommend form improvements
+- Optimize user experience based on data
 ```
 
-**Solicitudes de integración avanzada:**
+**Indicadores específicos de Analytics:**
 
 ```
-Integrate with **CRM system** to pre-populate known customer data, update records in real-time, and trigger automated follow-up sequences.
+Add **conversion tracking** to measure form completion rates and user behavior
 ```
 
 ```
-Connect to **payment gateway** for secure transaction processing with PCI compliance, fraud detection, and multiple payment methods.
+Implement **A/B testing** to compare different form designs and optimize performance
 ```
 
 ```
-Implement **blockchain verification** for document authenticity, immutable audit trails, and decentralized identity verification.
+Create **analytics dashboard** to monitor form performance and user insights
 ```
 
-## Solución de problemas y optimización
+## Seguridad y protección de datos
 
-**Cuándo se debe usar:** cuando los formularios experimentan problemas de rendimiento, problemas de experiencia del usuario o dificultades técnicas.
+**Cuándo usar:** Cuando los formularios administran datos confidenciales y necesitan medidas de seguridad.
 
-**Cómo se debe usar:** describa claramente el problema específico y el resultado deseado.
+**Cómo usar:** Especifique los requisitos de seguridad y las medidas de protección de datos.
 
-**Solicitud de ejemplo - Optimización de rendimiento:**
-
-```
-Optimize this form for **better performance and user experience**:
-
-**Current Issues:**
-- Form takes 8+ seconds to load on mobile
-- Users are abandoning at the address section (60% drop-off)
-- File uploads frequently fail or timeout
-- Validation errors are confusing users
-
-**Performance Improvements:**
-- Implement lazy loading for non-critical form sections
-- Optimize images and reduce bundle size
-- Add progressive loading indicators
-- Cache frequently used data (country lists, etc.)
-- Minimize JavaScript execution time
-
-**User Experience Fixes:**
-- Simplify the address section with auto-complete
-- Add inline validation with helpful error messages
-- Implement smart defaults based on user location
-- Add progress saving every 30 seconds
-- Provide clear instructions for each section
-
-**Technical Optimizations:**
-- Implement chunked file uploads with resume capability
-- Add client-side validation before server submission
-- Optimize database queries for faster responses
-- Implement proper error handling and retry logic
-- Add comprehensive logging for debugging
-
-**Monitoring & Analytics:**
-- Set up form analytics to track user behavior
-- Monitor completion rates by section
-- Track error rates and types
-- Measure performance metrics continuously
-- A/B test improvements with real users
-```
-
-**Solución de problemas de solicitudes:**
+**Mensaje de ejemplo - Seguridad básica:**
 
 ```
-**Debug this form submission error:** Users report getting "500 Internal Server Error" when submitting. Check validation logic, server endpoints, and data formatting.
+Add security measures to @contactForm:
+
+**Basic Security:**
+- HTTPS encryption for all data transmission
+- Input validation and sanitization
+- CSRF protection for form submissions
+- Secure session management
 ```
 
+**Mensaje de ejemplo - Seguridad avanzada:**
+
 ```
-**Fix mobile layout issues:** Form fields are overlapping on iPhone screens and submit button is not visible. Ensure proper responsive design.
+Implement comprehensive security for @applicationForm:
+
+**Data Protection:**
+- End-to-end encryption for sensitive data
+- PII data masking and anonymization
+- Secure file upload with virus scanning
+- Data retention and deletion policies
+
+**Access Control:**
+- Role-based access control for form data
+- Multi-factor authentication for admin access
+- Audit logging for all data access
+- Secure API authentication and authorization
+
+**Compliance:**
+- GDPR compliance for data handling
+- HIPAA compliance for health information
+- PCI DSS compliance for payment data
+- SOC 2 compliance for data security
+
+**Monitoring:**
+- Real-time security monitoring and alerts
+- Intrusion detection and prevention
+- Data breach notification systems
+- Regular security audits and assessments
+```
+
+**Indicadores específicos de seguridad:**
+
+```
+Implement **data encryption** for sensitive form submissions and user information
 ```
 
 ```
-**Resolve validation conflicts:** Some users can't submit even with valid data. Review validation rules for conflicts and edge cases.
+Add **access control** to restrict form data access based on user roles and permissions
 ```
 
-## Prácticas recomendadas para el entorno
-
-### IU de administración de formularios
-
-**Cuándo se debe usar:** para tareas de administración y creación de formularios de alto nivel.
-
 ```
-In Forms Management UI, create a new **customer survey template** that can be reused across different departments. Include standard branding, common field types, and configurable sections.
+Set up **security monitoring** to detect and prevent unauthorized access to form data
 ```
 
-### Editor de formularios adaptables
+## Referencia de comandos
 
-**Cuándo se debe usar:** para obtener información detallada sobre la configuración de formularios y la creación de reglas complejas.
-
-```
-In the Adaptive Forms Editor, configure **advanced business rules** for this loan application: calculate debt-to-income ratio, determine eligibility, and show appropriate next steps.
-```
-
-### Editor universal
-
-**Cuándo se debe usar:** para formularios de Edge Delivery Services con edición visual.
-
-```
-In Universal Editor, create a **responsive contact form** for the company website. Ensure it matches the site design and integrates with the existing content management workflow.
-```
-
-## Guía rápida de consulta de comandos
+### Comandos esenciales
 
 | Comando | Mejor caso de uso | Ejemplos |
 |---------|---------------|---------|
@@ -862,81 +982,81 @@ In Universal Editor, create a **responsive contact form** for the company websit
 | `/configure-submit` | Configuración de la gestión de datos | `/configure-submit to CRM and send confirmation email` |
 | `/help` | Obtención de ayuda | `/help how to implement multi-step validation?` |
 
-## Referencia de propiedades de componentes compatibles
+### Referencias de campo
 
-### Propiedades universales (todos los componentes)
+Utilice la sintaxis `@fieldName` para hacer referencia a los campos existentes en las indicaciones:
 
-- **Tipo**: tipo de componente (texto, correo electrónico, número, teléfono, fecha, casilla de verificación, radio, menú desplegable, archivo, etc.)
+- `@email` - Campo de correo electrónico de referencia
+- `@firstName` - Campo de nombre de referencia
+- `@maritalStatus` - Campo de estado civil de referencia
+
+### Tipos de componentes
+
+**Componentes de entrada:**
+
+- `text`, `email`, `number`, `tel`, `date`, `checkbox`, `radio`, `dropdown`, `file`, `textarea`
+
+**Componentes de contenedor:**
+
+- `fieldset`, `panel`, `repeatable`, `wizard`
+
+### Propiedades del componente
+
+**Propiedades universales (todos los componentes):**
+
+- **Tipo**: Tipo de componente
 - **Nombre**: identificador de campo para el envío del formulario
 - **Etiqueta**: texto que se muestra para el campo
 - **Descripción**: texto de ayuda para el campo
 - **Visible**: booleano para visibilidad inicial
 - **Obligatorio**: booleano para campos obligatorios
 
-### Propiedades del campo de entrada
+**Propiedades del campo de entrada:**
 
 - **Valor**: valor predeterminado/inicial
 - **Marcador de posición**: texto de sugerencia para los campos de entrada
 - **Mín.**: valor mínimo (para números/fechas)
 - **Máx.**: valor máximo (para números/fechas)
 
-### Propiedades de carga de archivos
+**Propiedades de carga de archivos:**
 
 - **Aceptar**: tipos de archivo (.pdf, .doc, .docx, .jpg, .png, etc.)
 - **Múltiple**: booleano para la selección de varios archivos
 
-### Propiedades del control de selección
+**Propiedades del control de selección:**
 
 - **Opciones**: opciones para menús desplegables (lista separada por comas)
 - **Marcado**: selección predeterminada para las casillas de verificación/botones de opción
 
-### Propiedades del contenedor
+**Propiedades del contenedor:**
 
 - **Conjunto de campos**: agrupación de campos relacionados
 - **Repetible**: booleano para secciones repetibles
 
-### Propiedades avanzadas
+**Propiedades avanzadas:**
 
 - **Expresión visible**: fórmula para la visibilidad condicional (=fórmula)
 - **Expresión de valor**: fórmula para los valores calculados (=fórmula)
 
-## Resumen de las prácticas recomendadas
+### Comandos de integración
 
-### Directrices técnicas
+**Acciones de envío:**
 
-- **Use únicamente las propiedades compatibles** de la especificación oficial del componente de AEM Forms
-- **Siga la sintaxis correcta** para las referencias de campo (@fieldName) y las expresiones (=fórmula)
-- **Realice pruebas de forma incremental** después de cada cambio para detectar los problemas con antelación
-- **Planifique la accesibilidad** desde el principio, no como algo secundario
-- **Tenga en cuenta a los usuarios móviles** en cada decisión de diseño
-- **Documente las reglas complejas** para el mantenimiento futuro y la colaboración en equipo
+- Notificaciones por correo electrónico
+- Envíos de API de REST
+- Almacenamiento en la nube (Azure, SharePoint)
+- Automatización del flujo de trabajo (Power Automate, Workfront Fusion)
+- Plataformas de marketing (Marketo)
+- Integraciones de CRM
 
-### Enfoque estratégico
+### Instrucciones de sintaxis de indicador
 
-- **Empiece con las necesidades de los usuarios**. Céntrese en lo que los usuarios necesitan lograr, no solo en las características técnicas
-- **Diseño para completar**: minimice la fricción y la carga cognitiva en el diseño de formularios
-- **Planifique el flujo de datos** antes de tiempo: considere cómo se procesarán, almacenarán y utilizarán los datos
-- **Crear para escalar**: diseñe formularios que puedan gestionar el volumen de usuario y el crecimiento de datos previstos
-- **Implementar una mejora progresiva**: asegúrese de que la funcionalidad básica funcione y añada características avanzadas
+- **Referencias de campo**: use `@fieldName` para los campos existentes
+- **Comandos**: use `/command` para acciones específicas
+- **Lenguaje natural**: Describa los requisitos de forma clara y específica
 
-### Errores comunes que se deben evitar
+### Lista de comprobación de validación
 
-- **Solicitudes iniciales excesivamente complejas**: divida las tareas grandes en pasos más pequeños y manejables
-- **Usar propiedades no compatibles** que no se encuentran en la especificación de AEM Forms
-- **Ignorar la experiencia móvil** hasta tarde en el proceso de desarrollo
-- **Omitir pruebas de usuario** con escenarios reales y casos extremos
-- **Suponer que la IA conoce el contexto** sin proporcionar instrucciones claras y específicas
-- **Olvidarse de la accesibilidad** y los requisitos de cumplimiento
-- **No validar los cambios** antes de pasar al siguiente paso
+Para obtener prácticas recomendadas y directrices de validación completas, consulte la [Guía de introducción a Forms Experience Builder](forms-ai-assistant-getting-started.md#best-practices).
 
-### Enfoque sobre el control de calidad
-
-1. **Vista previa con frecuencia**: compruebe su trabajo en el modo de vista previa después de cada cambio significativo
-2. **Probar casos extremos**: pruebe entradas inusuales, textos largos y caracteres especiales
-3. **Validar en todos los dispositivos**: realice pruebas en dispositivos móviles, tabletas y en el escritorio
-4. **Comprobar la accesibilidad**: compruebe la navegación con el teclado y la compatibilidad con los lectores de pantalla
-5. **Prueba de rendimiento**: asegúrese de que los formularios se carguen rápidamente y respondan sin problemas
-6. **Pruebas de aceptación de usuarios**: haga que usuarios reales prueben el formulario antes de la implementación
-
-
-*Esta biblioteca de solicitud se actualiza continuamente en función de los comentarios de los usuarios y las nuevas capacidades del Asistente de IA. Para obtener las últimas funciones y ejemplos, consulte la [documentación de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=es).*
+*Esta biblioteca de mensajes se actualiza continuamente en función de los comentarios de los usuarios y de las nuevas funciones de Forms Experience Builder. Para obtener las últimas funciones y ejemplos, consulte la [documentación de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=es).*
