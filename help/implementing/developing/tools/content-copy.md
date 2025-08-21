@@ -4,10 +4,10 @@ description: La herramienta de copia de contenido permite a los usuarios copiar 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 35%
+source-wordcount: '1340'
+ht-degree: 34%
 
 ---
 
@@ -133,6 +133,7 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
       * Producción
       * Ensayo
       * Desarrollo / RDE
+   * De forma predeterminada, la copia de contenido entre programas está desactivada. Sin embargo, si el cliente lo solicita, se puede habilitar, lo que hará que esté disponible el campo de entrada **Programa de destino** adicional.
 
 1. Si es necesario, también puede seleccionar **Incluir listas de control de acceso** en el proceso de copia.
 
@@ -193,7 +194,6 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 
 * El contenido no se puede copiar de un entorno inferior a un entorno superior.
 * El contenido solo se puede copiar desde y hacia los servicios de creación.
-* No es posible copiar contenido entre programas.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
 * Se pueden especificar hasta 50 rutas por conjunto de contenido. No hay limitación en las rutas excluidas.
 * No utilice la herramienta de copia de contenido como herramienta de clonación o creación de reflejo porque no puede realizar el seguimiento del contenido movido o eliminado en el origen.
