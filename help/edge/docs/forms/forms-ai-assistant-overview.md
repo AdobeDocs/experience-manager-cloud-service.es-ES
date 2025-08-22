@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1113'
 ht-degree: 2%
 
 ---
@@ -175,11 +175,9 @@ Forms Experience Builder sigue un enfoque sencillo y conversacional:
 Transforme sus formularios existentes en potentes experiencias digitales con la conversión mediante IA.
 
 
-### 📄 de PDF a Digital
+#### Transformación de PDF forms a Forms digital
 
-**De documentos estáticos a formularios interactivos**
-
-Transforme PDF forms con más de 50 campos en experiencias digitales dinámicas con cálculos automatizados y diseño interactivo para dispositivos móviles.
+Transforme PDF forms con varios campos en experiencias digitales dinámicas mediante cálculos automatizados y un diseño interactivo para dispositivos móviles.
 
 **Ventajas principales:**
 
@@ -188,17 +186,10 @@ Transforme PDF forms con más de 50 campos en experiencias digitales dinámicas 
 - Optimización de diseño adaptable para móviles
 - Reducción del 95 % de los errores de procesamiento
 
-**Ideal para:** formularios de impuestos, solicitudes gubernamentales, documentos comerciales complejos
 
-**Ahorro de tiempo:** de 2 a 3 horas → 15 minutos por formulario
+#### Modernización de formularios basados en XFA heredados
 
-
-
-### 🏛️ modernización XFA heredada
-
-**Da nueva vida a formas obsoletas**
-
-Convierta aplicaciones XFA complejas en asistentes modernos de varios pasos con validación en tiempo real y cumplimiento de la accesibilidad.
+Puede convertir aplicaciones XFA complejas en modernos asistentes de varios pasos con validación en tiempo real y cumplimiento de la accesibilidad.
 
 **Ventajas principales:**
 
@@ -207,37 +198,21 @@ Convierta aplicaciones XFA complejas en asistentes modernos de varios pasos con 
 - Integración de bases de datos gubernamentales
 - Cumplimiento de la accesibilidad WCAG 2.1 completo
 
-**Ideal para:** permisos gubernamentales, aplicaciones empresariales y formularios de cumplimiento
 
-**Impacto:** 70% más rápido de finalizar, 90% menos de errores
+#### Convertir captura de pantalla de un formulario en un formulario digital
 
-
-
-
-### 📱 captura de pantalla en digital
-
-**Convierta cualquier formulario en papel en una experiencia digital**
-
-Cargue una imagen de cualquier formulario en papel y vea extraer campos de IA, optimizar el diseño y crear formularios digitales listos para la integración.
+Puede convertir cualquier formulario en papel en una experiencia digital. AEM Forms optimiza automáticamente el diseño y crea formularios digitales listos para la integración a partir de una captura de pantalla.
 
 **Ventajas principales:**
 
-- Detección inteligente del tipo de campo (precisión del 99 %)
+- Detección inteligente del tipo de campo
 - Generación de diseños adaptables optimizados
 - Validación mejorada más allá del papel original
 - Arquitectura lista para la integración
 
-**Ideal para:** aplicaciones en papel, formularios escritos a mano y documentos heredados
+#### Importación y mejora de formularios web existentes
 
-**Tiempo de procesamiento:** 2 horas → 5 minutos por formulario
-
-
-
-### 🌐 mejora de HTML
-
-**Sobrecarga tus formularios web existentes**
-
-Agregue validación avanzada, lógica condicional y envío multicanal a los formularios básicos de HTML sin romper la funcionalidad existente.
+Puede importar el formulario web existente y agregar validación avanzada, lógica condicional y envío multicanal a los formularios sin romper la funcionalidad existente.
 
 **Ventajas principales:**
 
@@ -245,11 +220,6 @@ Agregue validación avanzada, lógica condicional y envío multicanal a los form
 - Comportamientos y flujos de trabajo de campo condicionales
 - Opciones de envío multicanal
 - Análisis y seguimiento del rendimiento integrados
-
-**Ideal para:** Formularios de contacto, formularios de registro, aplicaciones web simples
-
-**Mejora de la conversión:** +40% con experiencia de usuario mejorada
-
 
 ## Forms Experience Builder y desarrollo tradicional
 

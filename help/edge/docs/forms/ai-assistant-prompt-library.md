@@ -6,13 +6,14 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
-source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
+exl-id: c8f64082-a23f-4919-ad66-042faad77d31
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 28%
 
 ---
+
 
 # Forms Experience Builder: biblioteca de mensajes
 
@@ -140,7 +141,7 @@ Include a file upload field for @profilePicture with size limit of 5MB
 
 **Cuándo usar:** Cuando necesite crear formularios nuevos o modificar los existentes.
 
-**Cómo usar:** Elija uno de los dos métodos: Crear desde cero o Importar y convertir (consulte [Guía de introducción](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
+**Cómo usar:** Elija uno de los dos métodos: Crear desde cero o Importar y convertir (consulte [Guía de introducción](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
 
 **Mensaje de ejemplo - Creación de formulario simple:**
 
@@ -517,7 +518,7 @@ Configure **database integration** to save form submissions as records. Create n
 
 **Cuándo se debe usar:** Si ya tiene formularios, documentos o diseños para transformarlos en formularios modernos de AEM.
 
-**Cómo usar:** Cargue el archivo de origen y describa los requisitos de conversión (consulte [Guía de importación](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
+**Cómo usar:** Cargue el archivo de origen y describa los requisitos de conversión (consulte [Guía de importación](forms-ai-assistant-getting-started.md#2-import-and-convert)).
 
 **Solicitud de ejemplo - Conversión de formulario PDF:**
 
