@@ -80,7 +80,7 @@ El diseño de pestañas horizontales también se conoce como Tabulaciones en el 
 
 Diseño de pestañas horizontales
 
-Puede usar el componente [pestañas horizontales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para agregar el diseño de pestañas horizontales en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de pestañas horizontales, consulte el artículo [componente de pestañas horizontales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+Puede usar el componente [pestañas horizontales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para agregar el diseño de pestañas horizontales en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de pestañas horizontales, consulte el artículo [componente de pestañas horizontales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
 >[!TAB Diseño de acordeón]
