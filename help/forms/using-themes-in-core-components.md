@@ -5,10 +5,10 @@ keywords: formularios adaptables que aplican estilo a los componentes principale
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2816'
-ht-degree: 100%
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+workflow-type: tm+mt
+source-wordcount: '2803'
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 ### Configurar su entorno
 
-* [Habilite los componentes principales de formularios adaptables](/help/forms/enable-adaptive-forms-core-components.md) para su entorno de desarrollo local y de Cloud Service.
+* Instale la última versión para habilitar los componentes principales adaptables de Forms para su entorno de AEM Cloud Service.
 * Configure una [canalización de implementación front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=es) para su entorno de Cloud Service. Como alternativa, puede configurar la canalización más adelante, lo que le ofrece la flexibilidad de priorizar la prueba y el refinamiento del tema antes de configurar la canalización de implementación.
 
 <!-- 
@@ -96,7 +96,7 @@ Los ejemplos proporcionados en el documento se basan en la temática **Lienzo**,
 
 Empecemos con un proceso para crear una experiencia de marca para sus formularios adaptables basados en el componente principal mediante temáticas.
 
-#### 1. Clonar una temática {#download-a-theme-core-components}
+#### &#x200B;1. Clonar una temática {#download-a-theme-core-components}
 
 Para clonar una temática para componentes principales basados en formularios adaptables, elija una de las siguientes temáticas:
 
@@ -125,7 +125,7 @@ Para copiar una temática, realice los siguientes pasos:
    Después de ejecutar el comando correctamente, tendrá una copia local de la temática disponible en la carpeta `aem-forms-theme-canvas` de su equipo. 
 
 
-#### 2. Establecer el nombre de una temática {#set-name-of-theme}
+#### &#x200B;2. Establecer el nombre de una temática {#set-name-of-theme}
 
 1. Abra la carpeta de temáticas en su IDE. Por ejemplo, para abrir la carpeta `aem-forms-theme-canvas` en el editor de código de Visual Studio.
 
@@ -169,7 +169,7 @@ Para copiar una temática, realice los siguientes pasos:
 * Se recomienda actualizar el tema `version` en el archivo `Package.json` y el archivo `Package-lock.json` para reflejar con precisión los cambios y mejoras realizados con el tiempo en el tema.
 * Para obtener la información importante sobre el uso, las instrucciones de instalación y otros detalles relevantes, se recomienda actualizar el nombre del tema en el archivo `ReadMe`.
 
-#### 3. Personalizar una temática {#customize-the-theme}
+#### &#x200B;3. Personalizar una temática {#customize-the-theme}
 
 Puede personalizar componentes individuales o realizar cambios en el nivel de temática mediante variables globales de una temática. Cualquier cambio realizado en las variables globales afecta a todos los componentes individuales. Por ejemplo, puede utilizar variables globales para cambiar el color del borde de todos los componentes de un formulario adaptable y un color de relleno brillante para establecer CTA (llamada a la acción) mediante el componente de botón:
 
@@ -211,7 +211,7 @@ También puede cambiar la fuente, el color, el tamaño y otras propiedades CSS d
    >
    > Cuando se define un estilo tanto a nivel de temática como de componente, el estilo definido en el nivel de componente tiene prioridad.
 
-#### 4. Probar una temática personalizada {#test-the-theme}
+#### &#x200B;4. Probar una temática personalizada {#test-the-theme}
 
 Para obtener una vista previa y probar los cambios en el entorno local y personalizar la temática según los requisitos de diferentes componentes de la AEM, realice los siguientes pasos:
 
@@ -311,7 +311,7 @@ También puede probar la temática del formulario adaptable alojado en la instan
 
 Puede obtener una vista previa del formulario adaptable con los cambios más recientes. Una vez que esté satisfecho con las modificaciones realizadas en una carpeta de temas, implemente el tema en el entorno de AEM Cloud Service mediante la canalización front-end.
 
-#### 5. Implementar una temática {#deploy-the-theme}
+#### &#x200B;5. Implementar una temática {#deploy-the-theme}
 
 Para implementar la temática en el entorno del Cloud Service mediante la canalización front-end, haga lo siguiente:
 
@@ -441,12 +441,7 @@ Las temáticas se utilizan como parte de una plantilla de formulario adaptable p
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
-
-
->[!MORELIKETHIS]
->
->* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 
@@ -458,4 +453,3 @@ Las temáticas se utilizan como parte de una plantilla de formulario adaptable p
 * [Generar documento de registro para formularios adaptables (Componentes principales](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creación de un formulario adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
 * [Plantillas temáticas y modelos de datos de formularios de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
-* [Habilitar los componentes principales de formularios adaptables en el entorno AEM Forms as a Cloud Service y en el de desarrollo local.](/help/forms/enable-adaptive-forms-core-components.md)

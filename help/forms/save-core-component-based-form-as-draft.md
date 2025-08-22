@@ -4,9 +4,9 @@ description: Aprenda a guardar formularios adaptables basados en componentes pri
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: b0c2523a6ca8b097cb7cc101b71162c06e424e52
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1373'
 ht-degree: 15%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 15%
 
 # Guardar formularios como borradores y mostrarlos en la página de Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Considere a un usuario que comienza a rellenar un formulario pero necesita pausar y volver más tarde. AEM ofrece la opción `save-as-draft`, que permite al usuario guardar el formulario como borrador para una futura finalización. Para facilitarle este proceso, AEM proporciona el componente **Borradores y envíos** del portal de Forms de forma predeterminada, que muestra borradores y envíos en páginas de AEM Sites. El componente enumera los formularios que se han guardado como borradores para su posterior finalización, así como los que se han enviado. Solo los usuarios que inicien sesión pueden editar sus borradores o ver los formularios enviados. Sin embargo, si un usuario anónimo navega por la lista de formularios usando el componente **Buscar y listar** y guarda un formulario como borrador, ese borrador no aparecerá en la lista del componente **Borradores y envíos**. Para ver los borradores y los envíos, los usuarios deben haber iniciado sesión en el momento del envío del formulario.
 
@@ -22,7 +22,7 @@ Considere a un usuario que comienza a rellenar un formulario pero necesita pausa
 
 ## Requisitos previos
 
-* [Habilite los componentes principales de Forms adaptable para su entorno](/help/forms/enable-adaptive-forms-core-components.md).
+* Instale la última versión para habilitar los componentes principales adaptables de Forms para su entorno de AEM Cloud Service.
 
   Después de implementar los componentes principales más recientes en su entorno, los componentes del Portal de formularios pasan a ser accesibles en el entorno de creación.
 
@@ -169,7 +169,7 @@ Cuando se selecciona **[!UICONTROL Seleccionar tipo]** como **Forms enviado** en
 
 También puede descartar los formularios haciendo clic en los puntos suspensivos (...) que aparecen en la esquina inferior derecha del formulario.
 
-## Siguientes pasos
+## Próximos pasos
 
 En el artículo siguiente, aprenderemos [cómo agregar referencias a formularios en la página de Sites mediante el componente Vínculo al portal de Forms](/help/forms/add-form-link-to-aem-sites-page.md).
 

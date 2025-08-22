@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '719'
 ht-degree: 19%
 
 ---
@@ -33,7 +33,7 @@ Algunas de las ventajas de crear formularios basados en plantillas de formulario
 
 Para crear un formulario adaptable basado en componentes principales que utilicen plantillas de formulario XFA o archivos XDP, es necesario lo siguiente:
 
-* [Habilite los componentes principales de Forms adaptable para su entorno](enable-adaptive-forms-core-components.md).
+* Instale la última versión para habilitar los componentes principales adaptables de Forms para su entorno de AEM Cloud Service.
 * Se recomienda estar familiarizado con las siguientes áreas:
    * Crear un formulario adaptable
    * XFA (arquitectura de formularios en XML)
@@ -84,7 +84,7 @@ Siga estos pasos para crear un formulario adaptable mediante plantillas de formu
 
    >[!NOTE]
    >
-   > Después de seleccionar **Plantillas de formulario** en la ficha Modelo de formulario **3&rbrace;, no se puede cambiar.**
+   > Después de seleccionar **Plantillas de formulario** en la ficha Modelo de formulario **3}, no se puede cambiar.**
 
 
 Se crea un formulario adaptable que se abre en el editor de formularios adaptables. El editor muestra el contenido disponible en la plantilla.  En función del tipo de formulario adaptable, los elementos del formulario presentes en la plantilla de formulario XFA asociada se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** de la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.

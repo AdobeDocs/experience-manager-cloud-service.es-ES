@@ -6,8 +6,10 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 0656e923c4b50d0554780ecf56dd08302a165fa9
-workflow-type: ht
+hide: true
+hidefromtoc: true
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
+workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 100%
 
@@ -42,12 +44,12 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los component
 
 1. Inicie sesión en [Cloud Manager](https://my.cloudmanager.adobe.com/) y seleccione su organización y programa.
 
-1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa** y pulse el botón **Acceder a la info del repositorio** para acceder y administrar su repositorio de Git. La página incluye la siguiente información:
+1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa** y haga clic en el botón **Acceder a la info del repositorio** para acceder y administrar su repositorio de Git. La página incluye la siguiente información:
 
    * La dirección URL del repositorio de Git de Cloud Manager.
    * Credenciales del nombre de usuario del repositorio de Git (nombre de usuario y contraseña).
 
-   Pulse en **Generar contraseña** para ver o generar la contraseña.
+   Haga clic en **Generar contraseña** para ver o generar la contraseña.
 
 1. Abra el terminal o el símbolo de comando en el equipo local de su ordenador y ejecute el siguiente comando:
 

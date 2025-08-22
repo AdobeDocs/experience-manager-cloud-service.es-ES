@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
 workflow-type: tm+mt
-source-wordcount: '1962'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Requisito previo
 
-**Habilitar los componentes principales de formularios adaptables para su entorno**: al crear un programa, los componentes principales de formularios adaptables ya están habilitados para su entorno. Si tiene un entorno de formularios as a Cloud Service basado en [AEM Archetype 39 o anterior](https://github.com/adobe/aem-project-archetype), [habilite los componentes principales de formularios adaptables para su entorno](enable-adaptive-forms-core-components.md).
+**Habilitar los componentes principales de Forms adaptable para su entorno**: al crear un programa, los componentes principales de Forms adaptable ya están habilitados para su entorno.Instale la última versión para habilitar los componentes principales de Forms adaptable para su entorno de AEM Cloud Service.
 
 >[!NOTE]
 >

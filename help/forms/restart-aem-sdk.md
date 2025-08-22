@@ -4,9 +4,9 @@ description: Prácticas recomendadas para reiniciar el SDK de AEM
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 5fec2a93-1dda-4240-8690-24a6afae5c2b
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
-source-wordcount: '107'
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+workflow-type: tm+mt
+source-wordcount: '102'
 ht-degree: 100%
 
 ---
@@ -28,4 +28,4 @@ Se recomienda utilizar el comando “Ctrl + C” para reiniciar el SDK. El reini
 ## Consulte también
 
 * [Configurar un entorno de desarrollo local para AEM Forms](/help/forms/setup-local-development-environment.md)
-* [Habilitar los componentes principales de los formularios adaptables](/help/forms/enable-adaptive-forms-core-components.md)
+

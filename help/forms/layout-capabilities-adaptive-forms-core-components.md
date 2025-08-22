@@ -2,13 +2,13 @@
 title: ¿Cuáles son las funciones de diseño de los Forms adaptables basadas en componentes principales?
 description: El diseño y el aspecto visual de los formularios adaptables en diferentes dispositivos se rigen por la configuración de diseño. Obtenga información sobre los distintos diseños y cómo aplicarlos.
 feature: Adaptive Forms, Core Components
-keywords: AEM Diseño de un formulario adaptable basado en componentes principales, diferentes diseños para formularios, diseños de formularios dinámicos, diseños de formularios de AEM Cloud Service AEM, tipos de diseños de formulario en componentes principales, diseños de formularios adaptables, diseños de formularios adaptables, etc., y diseños de formularios adaptables, entre otros.
+keywords: Diseño de un formulario adaptable basado en componentes principales, diferentes diseños para formularios, diseños de formularios dinámicos, AEM, diseños de formulario de AEM Cloud Service, tipos de diseños de formulario en los componentes principales de AEM, diseños de formularios adaptables
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2104'
-ht-degree: 3%
+source-wordcount: '2106'
+ht-degree: 21%
 
 ---
 
@@ -27,7 +27,7 @@ Adaptive Forms proporciona componentes de primera clase para diseñar y diseñar
 
 ## Requisito previo
 
-Antes de explorar las distintas funcionalidades de un diseño, asegúrese de que los componentes principales estén habilitados para su entorno. Para obtener instrucciones detalladas sobre cómo habilitar los componentes principales para su entorno, [haga clic aquí](/help/forms/enable-adaptive-forms-core-components.md).
+Antes de explorar las distintas funcionalidades de un diseño, asegúrese de que los componentes principales estén habilitados para su entorno. Instale la última versión para habilitar los componentes principales adaptables de Forms para su entorno de AEM Cloud Service.
 
 ## Tipos de diseño de Forms adaptables
 
@@ -42,23 +42,23 @@ El formulario adaptable basado en componentes principales admite los siguientes 
 
 >[!TAB Diseño de panel]
 
-El diseño del panel es útil para organizar los campos relacionados de una manera que facilite la navegación y la búsqueda del contenido correspondiente. El diseño del panel organiza los componentes del formulario en secciones o paneles distintos de un formulario adaptable.
+El diseño de panel es útil para organizar los campos relacionados de una manera que facilite la navegación y la búsqueda del contenido correspondiente. El diseño del panel organiza los componentes del formulario en secciones o paneles distintos de un formulario adaptable.
 
 ![Diseño de panel](/help/forms/assets/panel-layout.png)
 
 Diseño de panel
 
-Puede usar [componente de panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) para agregar el diseño de panel en un formulario. Para obtener instrucciones detalladas sobre cómo configurar varias propiedades del componente del panel, consulte el artículo [componente del panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+Puede usar el [componente de panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) para añadir el diseño de panel en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de panel, consulte el artículo [componente de panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
->[!TAB Diseño del asistente]
+>[!TAB Diseño de asistente]
 
-El diseño del asistente ayuda a simplificar un formulario complejo dividiéndolo en pasos distintos. Cada paso representa una parte diferente del proceso y los usuarios navegan por los pasos secuencialmente, a menudo con los botones **Siguiente** y **Anterior**. Puede utilizar el diseño de asistente para crear un formulario que incluya varias secciones o pasos.
+El diseño de asistente ayuda a simplificar un formulario complejo dividiéndolo en distintos pasos. Cada paso representa una parte diferente del proceso y los usuarios navegan por los pasos secuencialmente, a menudo con los botones **Siguiente** y **Anterior**. Puede utilizar el diseño de asistente para crear un formulario que incluya varias secciones o pasos.
 
-![Diseño del asistente](/help/forms/assets/wizard-layout-compare.gif)
+![Diseño de asistente](/help/forms/assets/wizard-layout-compare.gif)
 
-Diseño del asistente
+Diseño de asistente
 
-Puede usar el [componente de asistente](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para agregar el diseño de asistente en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de asistente, consulte el artículo [componente de asistente](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+Puede usar el [componente de asistente](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para añadir el diseño de asistente en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de asistente, consulte el artículo [componente de asistente](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 >[!TAB Diseño de fichas verticales]
 
@@ -80,18 +80,18 @@ El diseño de pestañas horizontales también se conoce como Tabulaciones en el 
 
 Diseño de pestañas horizontales
 
-Puede usar el componente [pestañas horizontales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para agregar el diseño de pestañas horizontales en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de pestañas horizontales, consulte el artículo [componente de pestañas horizontales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+Puede usar el componente [pestañas horizontales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para agregar el diseño de pestañas horizontales en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de pestañas horizontales, consulte el artículo [componente de pestañas horizontales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
 >[!TAB Diseño de acordeón]
 
-El diseño de acordeón muestra el contenido en secciones o paneles contraíbles de un formulario adaptable. Cuando se expande una sección, muestra el contenido dentro de, mientras que otras secciones permanecen contraídas. Este diseño es ideal para mostrar grandes cantidades de información en un formulario compacto.
+El diseño de acordeón muestra el contenido en secciones o paneles contraíbles en un formulario adaptable. Cuando se expande una sección, se muestra el contenido incluido en ella, mientras que las demás secciones permanecen contraídas. Este diseño es ideal para mostrar grandes cantidades de información en un formulario compacto.
 
 ![Diseño de acordeón](/help/forms/assets/accordion-layout-compare.gif)
 
 Diseño de acordeón
 
-Puede usar el [componente de acordeón](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para agregar el diseño de acordeón en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de acordeón, consulte el artículo [componente de acordeón](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+Puede usar el [componente de acordeón](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para añadir el diseño de acordeón en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de acordeón, consulte el artículo [componente de acordeón](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
 >[!ENDTABS]
 
@@ -101,13 +101,13 @@ Para aprender a insertar un diseño y agregarle componentes de formulario, consu
 
 Es importante seleccionar el diseño de formulario adaptable adecuado para optimizar la experiencia del usuario y la funcionalidad del formulario. La tabla le ayuda a comprender las diferentes opciones de diseño disponibles y le guía en la selección del diseño más adecuado según sus necesidades específicas y casos de uso:
 
-| Funcionalidad | Diseño de panel | Diseño del asistente | Fichas del diseño de fichas superior/vertical | Fichas del diseño de pestañas izquierda/horizontal | Diseño de acordeón |
+| Funcionalidad | Diseño de panel | Diseño de asistente | Fichas del diseño de fichas superior/vertical | Fichas del diseño de pestañas izquierda/horizontal | Diseño de acordeón |
 |--------------------------|-----------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|--------|
-| **Propósito** | Agrupa el contenido relacionado en secciones distintas | Guía a los usuarios a través de un formulario o un proceso de varios pasos | Permite cambiar entre secciones o vistas en la misma página | Similar a las pestañas superiores, pero organizado verticalmente a la izquierda | Organiza el contenido en secciones contraíbles |
+| **Propósito** | Agrupa el contenido relacionado en secciones distintas | Guía a los usuarios a través de un proceso o formulario con varias etapas | Permite cambiar entre secciones o vistas en la misma página | Similar a las pestañas superiores, pero organizado verticalmente a la izquierda | Organiza el contenido en secciones contraíbles |
 | **Estructura** | Secciones distintas | Pasos/páginas secuenciales | Tabulaciones horizontales en la parte superior | Tabulaciones verticales a la izquierda | Paneles/secciones contraíbles |
-| **Navegación** | Haga clic en los encabezados del panel para desplazarse | - Adelante: botón &quot;Siguiente&quot;<br>- Atrás: botón &quot;Atrás&quot;<br>- Pasos de omisión opcionales | Haga clic en las pestañas para cambiar de sección | Haga clic en las pestañas para cambiar de sección | Haga clic en los encabezados para expandir o contraer secciones |
+| **Navegación** | Haga clic en los encabezados del panel para navegar | - Adelante: botón “Siguiente”<br>- Atrás: botón “Atrás”<br>- Omisión opcional de pasos | Haga clic en las pestañas para cambiar de sección | Haga clic en las pestañas para cambiar de sección | Haga clic en los encabezados para expandir o contraer secciones |
 | **Experiencia del usuario** | Organiza grandes cantidades de contenido de una manera manejable | Guía paso a paso para reducir la sobrecarga | Conmutación entre vistas clara y accesible | Uso eficiente del espacio vertical, pestañas siempre visibles | Vista compacta con secciones expandidas/contraídas |
-| **Caso práctico** | Formularios complejos con secciones categorizadas | Configuración de procesos, formularios complejos | Organización de configuraciones o categorías de contenido | Paneles, vistas de datos complejas | Preguntas más frecuentes, menús de configuración y secciones de contenido detalladas |
+| **Caso práctico** | Formularios complejos con secciones clasificadas | Configuración de procesos, formularios complejos | Organización de configuraciones o categorías de contenido | Paneles, vistas de datos complejas | Preguntas frecuentes, menús de configuración, secciones de contenido detalladas |
 
 
 ## ¿Cómo se inserta un diseño y se le agregan componentes de formulario?
@@ -126,7 +126,7 @@ Considere el **formulario de solicitud de TI** que se muestra en la sección [Ti
 
 Exploremos el proceso paso a paso para insertar un diseño y agregarle componentes. En este ejemplo, se inserta un diseño de pestañas horizontales en un formulario.
 
-### 1. Insertar un componente de diseño en un formulario
+### &#x200B;1. Insertar un componente de diseño en un formulario
 
 1. Inicie sesión en su instancia de [!DNL Experience Manager Forms].
 1. En la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.
@@ -139,11 +139,11 @@ Exploremos el proceso paso a paso para insertar un diseño y agregarle component
 1. Busque la sección en el editor de formularios que le permite agregar un diseño.
 
    ![Editor de formularios](/help/forms/assets/form-editor.png)
-1. Haga clic en el icono **Agregar**. El icono es un signo más (+) que significa la opción de agregar nuevos componentes.
+1. Haga clic en el icono **Añadir**. El icono es un signo más (+) que representa la opción de añadir nuevos componentes.
 
    ![Insertar diseño](/help/forms/assets/insert-layout-add-icon.png)
 
-   Al hacer clic en el icono **Agregar**, se muestra un cuadro de diálogo **Insertar nuevo componente** que muestra varios componentes para su inserción.
+   Al hacer clic en el icono **Añadir** aparece un cuadro de diálogo **Insertar nuevo componente** que muestra varios componentes para su inserción.
 
    >[!NOTE]
    >
@@ -168,7 +168,7 @@ Por ejemplo, en este caso, agregamos el nombre del componente de pestañas horiz
 
 Una vez añadido el componente de diseño en el formulario, modifique el número de paneles según los requisitos.
 
-### 2. Agregar paneles al diseño
+### &#x200B;2. Agregar paneles al diseño
 
 Agregar un nuevo panel al componente de pestañas horizontales:
 
@@ -216,17 +216,17 @@ Agregar un nuevo panel al componente de pestañas horizontales:
 
 Del mismo modo, también puede ocultar los títulos de los otros dos paneles. Una vez finalizado, puede continuar agregando componentes de formulario a cada panel.
 
-### 3. Agregar componentes de formulario al panel
+### &#x200B;3. Agregar componentes de formulario al panel
 
 <!-- You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
 1. Busque la sección dentro del panel que le permite agregar componentes.
-1. Haga clic en el icono **Agregar**. El icono es un signo más (+) que significa la opción de agregar nuevos componentes.
+1. Haga clic en el icono **Añadir**. El icono es un signo más (+) que representa la opción de añadir nuevos componentes.
    ![Insertar diseño](/help/forms/assets/tabs-on-top-add-component.png)
 
-   Al hacer clic en el icono **Agregar**, se muestra un cuadro de diálogo **Insertar nuevo componente** que muestra varios componentes para su inserción.
+   Al hacer clic en el icono **Añadir** aparece un cuadro de diálogo **Insertar nuevo componente** que muestra varios componentes para su inserción.
 
    ![Insertar nuevo componente (Cuadro de diálogo)](/help/forms/assets/insert-new-component.png)
 
@@ -359,7 +359,7 @@ Para arrastrar y soltar componentes en el editor de formularios, realice los sig
 
 1. Suelte el componente en el panel soltando el ratón.
 
-## Siguientes pasos
+## Próximos pasos
 
 Una vez que conozca las distintas funcionalidades de diseño de un formulario adaptable basado en componentes principales, puede pasar a los siguientes pasos:
 
@@ -368,6 +368,6 @@ Una vez que conozca las distintas funcionalidades de diseño de un formulario ad
 
 
 
-## Consulte también
+## Véase también
 
 {{see-also}}

@@ -3,17 +3,17 @@ title: ¿Cómo se enumeran los formularios en una página de Adobe Experience Ma
 description: Obtenga información sobre cómo enumerar formularios en una página de AEM Sites.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+exl-id: 37e3ddd9-b20d-4156-b52e-64e36c455184
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 14%
+source-wordcount: '675'
+ht-degree: 35%
 
 ---
 
-
 # Mostrar una lista de formularios en la página de Sites
 
-Imagine que un usuario visita el sitio web del banco en busca de un formulario de apertura de cuenta. El banco utiliza el componente Portal de Forms para ayudar a los usuarios a encontrar rápidamente el formulario introduciendo palabras clave específicas o filtrando por categorías como &quot;Nuevas cuentas&quot; o &quot;Banca personal&quot; y permite a los usuarios localizar fácilmente el formulario deseado sin tener que desplazarse por listas largas.
+Imaginen a un usuario visitando el sitio web del banco en busca de un formulario de apertura de cuenta. El banco utiliza el componente Portal de Forms para ayudar a los usuarios a encontrar rápidamente el formulario introduciendo palabras clave específicas o filtrando por categorías como &quot;Nuevas cuentas&quot; o &quot;Banca personal&quot; y permite a los usuarios localizar fácilmente el formulario deseado sin tener que desplazarse por listas largas.
 
 El componente **Buscar y listar** del portal de Forms le permite mostrar y listar formularios en una página de Sites. Los usuarios pueden configurar y presentar una lista completa de formularios basados en criterios específicos para satisfacer los requisitos de la organización. Los usuarios anónimos pueden visitar la página de Sites para ver y examinar los formularios disponibles. Los formularios enumerados se pueden ordenar en orden ascendente o descendente mediante la opción desplegable **Ordenar por** ubicada en la esquina superior derecha de la pantalla.
 
@@ -21,14 +21,14 @@ El componente **Buscar y listar** del portal de Forms le permite mostrar y lista
 
 ## Requisito previo
 
-Antes de explorar las distintas funcionalidades de un componente del portal de Forms, asegúrese de que los componentes principales estén habilitados para su entorno. Para obtener instrucciones detalladas sobre cómo habilitar los componentes principales para su entorno, [haga clic aquí](/help/forms/enable-adaptive-forms-core-components.md).
+Antes de explorar las distintas funcionalidades de un componente del Portal de formularios, asegúrese de que los componentes principales estén habilitados para su entorno. Instale la última versión para habilitar los componentes principales adaptables de Forms para su entorno de AEM Cloud Service.
 
 <!--
 ## Enable Forms Portal components for your existing environment
 
 To enable out-of-the-box Forms Portal components on existing AEM Forms as a Cloud Service, perform the following steps:
 
-1. **Clone Cloud Manager Git repository on your local development instance:**  Your Cloud Manager Git repository contains a default AEM project. It is based on [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. For details on accessing the repository, see [Accessing Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=es).  
+1. **Clone Cloud Manager Git repository on your local development instance:**  Your Cloud Manager Git repository contains a default AEM project. It is based on [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. For details on accessing the repository, see [Accessing Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).  
 
 1. **Create [!DNL Experience Manager Forms] as a [Cloud Service] project:** Create [!DNL Experience Manager Forms] as a [Cloud Service] project based on [AEM Archetype 50](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-50) or later. The archetype help developers easily start developing for [!DNL AEM Forms] as a Cloud Service. It also includes some sample themes and templates to help you started quickly.
 
@@ -46,31 +46,31 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
     `mvn -PautoInstallPackage clean install`
 
-    For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=es#building-and-installing)
+    For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
-1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=es#embeddeds). -->
+1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds). -->
 
-Después de implementar los componentes principales más recientes en su entorno, los componentes del portal de Forms pasan a ser accesibles en el entorno de creación.
+Después de implementar los componentes principales más recientes en su entorno, los componentes del Portal de formularios pasan a ser accesibles en el entorno de creación.
 
 ## Mostrar una lista de formularios en la página de Sites
 
 Para agregar el componente de portal **Buscar y listar** a su página de Sites, realice los siguientes pasos:
 
-1. Abra la página de AEM Sites en modo **Editar**.
+1. Abra la página de AEM Sites en el modo **Editar**.
 1. Vaya a la **[!UICONTROL Información de la página]** > **[!UICONTROL Editar plantilla]**
-   ![Editar directiva de plantilla](/help/forms/assets/save-form-as-draft-edit-template.png)
+   ![Editar la política de plantilla](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. AEM Haga clic en la **[!UICONTROL directiva]** y seleccione la casilla de verificación **[!UICONTROL Buscar y listar]** bajo el **[Nombre de proyecto de tipo de archivo] - Forms y el portal de comunicaciones**.
+1. Haga clic en la **[!UICONTROL directiva]** y seleccione la casilla de verificación **[!UICONTROL Buscar y listar]** bajo el **[Nombre de proyecto de tipo de archivo de AEM] - Portal de Forms y comunicaciones**.
 
-   ![Selección de directiva](/help/forms/assets/search-lister-enable-policy.png)
+   ![Selección de política](/help/forms/assets/search-lister-enable-policy.png)
 
 1. Haga clic en **[!UICONTROL Listo]**.
-1. A continuación, vuelva a abrir la página de AEM Sites en el modo Autor.
-1. Busque la sección en el editor de páginas que le permite agregar el componente Portal de Forms.
+1. A continuación, vuelva a abrir la página de AEM Sites en el modo de creación.
+1. Busque la sección en el editor de páginas que le permite añadir el componente del Portal de formularios.
 
-1. Haga clic en el icono **Agregar**. El icono es un signo más (+) que significa la opción de agregar nuevos componentes.
+1. Haga clic en el icono **Añadir**. El icono es un signo más (+) que representa la opción de añadir nuevos componentes.
 
-   Al hacer clic en el icono **Agregar**, se muestra un cuadro de diálogo **Insertar nuevo componente** que muestra varios componentes para su inserción.
+   Al hacer clic en el icono **Añadir** aparece un cuadro de diálogo **Insertar nuevo componente** que muestra varios componentes para su inserción.
 
    >[!NOTE]
    >
@@ -88,12 +88,12 @@ Puede personalizar fácilmente las propiedades del componente **Buscar y listar*
 
 ### Pestaña Mostrar
 
-![Ficha de visualización](/help/forms/assets/search-and-lister-display-tab.png)
+![Pestaña Mostrar](/help/forms/assets/search-and-lister-display-tab.png)
 
 1. En **[!UICONTROL Título]**, especifique el título del componente Buscar y listar. Un título indicativo permite a los usuarios realizar una búsqueda rápida en toda la lista de formularios.
 1. En la lista **[!UICONTROL Diseño]**, seleccione el diseño para representar los formularios en formato de tarjeta o lista.
 1. Seleccione **[!UICONTROL Ocultar búsqueda]** y **[!UICONTROL Ocultar orden]** para ocultar la búsqueda y ordenar por características.
-1. En **[!UICONTROL Información de objeto]**, proporcione la información de objeto que aparece al pasar el ratón por encima del componente.
+1. En **[!UICONTROL Información de objeto]**, proporcione la información de objeto que aparece al pasar el puntero por encima del componente.
 
 ### Pestaña Recurso
 
@@ -104,7 +104,7 @@ Puede personalizar fácilmente las propiedades del componente **Buscar y listar*
 
 ### Pestaña Resultados
 
-![Ficha de visualización](/help/forms/assets/search-and-lister-result-tab.png)
+![Pestaña Mostrar](/help/forms/assets/search-and-lister-result-tab.png)
 
 En la pestaña **[!UICONTROL Resultados]** configure el número máximo de formularios que se mostrarán por página. El valor predeterminado es de ocho formularios por página.
 
@@ -139,7 +139,7 @@ Perform the following steps to configure Unified Storage Connector for AEM Workf
 
 ## Enable Forms Portal Components {#enable-forms-portal-components}
 
-To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=es#create-proxy-components). 
+To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components). 
 
 Once a portal component is enabled, you can use it in the author instance of your sites page.
 
@@ -221,7 +221,7 @@ You can configure the auto-save feature for an adaptive form as follows:
 -->
 
 
-## Siguientes pasos
+## Próximos pasos
 
 En el artículo siguiente, aprenderemos [cómo guardar formularios como borradores y enumerarlos en una página de Sites mediante el componente Borradores y envíos del portal de Forms](/help/forms/save-core-component-based-form-as-draft.md).
 
