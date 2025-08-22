@@ -58,7 +58,7 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 * **[Convertir un formulario adaptable en fragmento de experiencia](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** convierta un formulario adaptable agregado a una página de AEM Sites en un fragmento de experiencia para reutilizar el formulario en varias páginas de AEM Sites.
 
-* **[Crear y agregar un formulario adaptable personalizado a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):****[!UICONTROL puede utilizar el componente contenedor de formulario adaptable]** para crear un formulario completamente nuevo desde cero y adaptarlo específicamente a sus necesidades y preferencias de diseño.
+* **[Crear y agregar un formulario adaptable personalizado a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):**&#x200B;**[!UICONTROL puede utilizar el componente contenedor de formulario adaptable]** para crear un formulario completamente nuevo desde cero y adaptarlo específicamente a sus necesidades y preferencias de diseño.
 
 * **[Crear y agregar un formulario adaptable personalizado a los fragmentos de experiencias](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** puede ampliar el alcance de los formularios añadiéndolos a los fragmentos de experiencias de AEM, lo que permite una reutilización perfecta en varias páginas o sitios.
 

@@ -13,7 +13,7 @@ ht-degree: 99%
 
 # Configurar un entorno de desarrollo local para AEM Forms {#overview}
 
-Al establecer y configurar un [!DNL  Adobe Experience Manager Forms] como entorno de[!DNL  Cloud Service], configura entornos de desarrollo, de puesta en escena y de producción en la nube. Además, también puede establecer y configurar un entorno de desarrollo local.
+Al establecer y configurar un [!DNL &#x200B; Adobe Experience Manager Forms] como entorno de[!DNL &#x200B; Cloud Service], configura entornos de desarrollo, de puesta en escena y de producción en la nube. Además, también puede establecer y configurar un entorno de desarrollo local.
 
 Puede utilizar el entorno de desarrollo local para realizar las siguientes acciones sin iniciar sesión en el entorno de desarrollo de la nube:
 
@@ -272,7 +272,7 @@ Utilice este proyecto para crear formularios adaptables, implementar actualizaci
 >[!NOTE]
 >
 > Configure la versión 30 o posterior del tipo de archivo del proyecto AEM para poder utilizar el modelo de datos de formulario (Form Data Model, FDM) de Microsoft® Dynamics 365 y Salesforce con AEM Forms as a Cloud Service.
-> > Configure la versión 32 o posterior de AEM Archetype para obtener y utilizar los temas Tranquil, Urbane y Ultramarine con AEM Forms as a Cloud Service.
+> &#x200B;> Configure la versión 32 o posterior de AEM Archetype para obtener y utilizar los temas Tranquil, Urbane y Ultramarine con AEM Forms as a Cloud Service.
 
 Para configurar el proyecto, haga lo siguiente:
 
