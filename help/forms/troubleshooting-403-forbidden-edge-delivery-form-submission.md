@@ -3,13 +3,13 @@ title: Solución de problemas de errores 403 prohibidos en el envío de formular
 description: Obtenga información sobre cómo diagnosticar y resolver errores prohibidos 403 al enviar formularios de Edge Delivery Services a AEM Publish. Esta guía cubre causas comunes, incluidos CORS, reglas de Dispatcher y problemas del Filtro de referente.
 feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
+exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
+source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 3%
 
 ---
-
 
 # Solución de problemas de errores 403 prohibidos en el envío de formularios Edge Delivery Services {#troubleshooting-403-forbidden-edge-delivery}
 
@@ -169,7 +169,7 @@ Configure el Filtro de referente para permitir los dominios de sitio específico
 
 >[!IMPORTANT]
 >
->**Configuraciones sin fin:** Debe agregar cada dominio de sitio individualmente a la matriz `allow.hosts`. El uso de solo patrones de regex puede no ser suficiente para todos los escenarios. Incluya dominios específicos y patrones de regex para una cobertura completa.
+>**Para las configuraciones de reprocesamiento:** Debe agregar cada dominio de sitio individualmente a la matriz `allow.hosts`. El uso de solo patrones de regex puede no ser suficiente para todos los escenarios. Incluya dominios específicos y patrones de regex para una cobertura completa.
 
 >[!WARNING]
 >
@@ -269,7 +269,7 @@ Con las arquitecturas Helix-5 y repoless, siga estas directrices:
 ## Temas relacionados
 
 - [Configuración de acciones de envío](/help/forms/configuring-submit-actions.md)
-- [Servicio de envío de Forms](/help/forms/forms-submission-service.md)
+- [Servicio de envío de formularios](/help/forms/forms-submission-service.md)
 - [Información general de Edge Delivery Services](/help/edge/overview.md)
 
 
