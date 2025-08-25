@@ -1,0 +1,75 @@
+---
+title: Crear una plantilla de comunicación interactiva
+description: Cree plantillas de comunicación interactiva en AEM Forms para definir diseños reutilizables, garantizar la coherencia de la marca y optimizar la creación de comunicaciones personalizadas basadas en datos.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Interactive Communication
+role: User, Developer, Admin
+hide: true
+index: false
+hidefromtoc: true
+source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 3%
+
+---
+
+
+# Crear una plantilla de comunicación interactiva
+
+Las plantillas de comunicación interactiva de AEM permiten a los usuarios definir estructuras de diseño reutilizables, como encabezados, pies de página, logotipos y estilo predeterminado. Estas plantillas sirven de base para crear comunicaciones coherentes, de marca y eficientes.
+
+## Requisitos previos
+
+* [Asegúrese de que el autor sea miembro del grupo forms-users y del grupo template-authors.](/help/forms/setup-forms-cloud-service.md#configure-users)
+
+* Asegúrese de que está instalado [AEM Archetype versión 55](https://github.com/adobe/aem-project-archetype) o posterior.
+
+## Crear una plantilla de comunicación interactiva
+
+Para crear un fragmento de comunicación interactiva, realice los siguientes pasos:
+
+1. Abra **Adobe Experience Manager (AEM) Forms as a Cloud Service**.
+
+1. Vaya a **Herramientas**
+
+   ![Buscar documento CI](/help/forms/interactive-communication/assets/aem.png)
+
+1. Vaya a **Herramientas > General > Plantillas**.
+
+   ![Buscar documento CI](/help/forms/interactive-communication/assets/template.png)
+
+1. Crear o elegir una carpeta
+
+   Cree una nueva carpeta o elija una existente en la que desee crear la plantilla de comunicación interactiva.
+
+   ![Buscar documento CI](/help/forms/interactive-communication/assets/choosefolder.png)
+
+1. Cree una nueva plantilla, haga clic en **Crear** y seleccione Plantilla genérica de comunicación interactiva.
+
+   ![Buscar documento CI](/help/forms/interactive-communication/assets/create1.png)
+
+   ![Buscar documento CI](/help/forms/interactive-communication/assets/choose.png)
+
+1. Escriba la **plantilla**, por ejemplo:
+
+   * Título
+   * Nombre
+   * Descripción (opcional)
+
+   ![Buscar documento CI](/help/forms/interactive-communication/assets/create2.png)
+
+1. Haga clic en el botón **Crear**, plantilla de comunicación interactiva creada correctamente.
+
+   ![Buscar documento CI](/help/forms/interactive-communication/assets/enabled.png)
+
+1. Habilitar la **plantilla** , esta acción permite al usuario usar la plantilla para crear comunicaciones interactivas.
+
+![Buscar documento CI](/help/forms/interactive-communication/assets/enable.png)
+
+Al seguir los pasos anteriores, puede crear correctamente una plantilla de comunicación interactiva. Una vez habilitadas, estas plantillas se pueden reutilizar para crear documentos de comunicación coherentes y personalizados de forma eficaz.
+
+## Próximos pasos
+
+[Crear una comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication.md)
+[Crear un fragmento de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
