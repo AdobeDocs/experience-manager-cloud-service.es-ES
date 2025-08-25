@@ -7,9 +7,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d36eb5807718f3d20ea0c3de4491981cb7942b44
+exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
+source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1263'
 ht-degree: 1%
 
 ---
@@ -33,7 +34,7 @@ Está directamente incrustado en AEM y es accesible desde AEM Experience Hub, Cl
 
 El siguiente vídeo de 3 minutos y 39 segundos ofrece una guía paso a paso del asistente de IA en AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470358?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Obtenga acceso al asistente de IA en AEM{#get-access}
 
@@ -44,17 +45,15 @@ Para conceder a los usuarios acceso al Asistente de IA en AEM, el administrador 
 
 Las solicitudes del asistente de IA en AEM se autentican mediante Adobe Identity Management Services (IMS). Para obtener más información, consulte la [descripción general de los servicios de Adobe Identity Management](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
->[!NOTE]
-> 
->Las organizaciones de clientes deben aceptar términos legales adicionales para habilitar el asistente de IA. Póngase en contacto con el representante de su cuenta de Adobe para obtener más información.
-
 **Para obtener acceso al Asistente de IA en AEM:**
 
-1. [Los clientes deben firmar el controlador de IA general con Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1).
+1. Los clientes deben disponer de un acuerdo adicional para acceder a la mayoría de las funciones agénticas y con tecnología de IA de Adobe Experience Manager. Póngase en contacto con su representante de Adobe para obtener más información.
 
-   GenAI Rider es un acuerdo legal entre un cliente y Adobe, requerido para utilizar la mayoría de las capacidades de IA y agénticas. Póngase en contacto con el Servicio de atención al cliente de Adobe para obtener más información.
+<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
 
-1. El administrador de AEM configura el asistente de IA para su uso en la organización. Consulte [Configuración del asistente de IA en AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md).
+    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+
+1. El administrador de AEM configura el asistente de IA para su uso en la organización. Consulte [Configuración del asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md).
 
 <!--
 >[!IMPORTANT]
@@ -93,7 +92,7 @@ El conocimiento del producto engloba conceptos y temas derivados de la documenta
 | Aprendizaje puntual | <ul><li>¿Qué es el editor universal?</li><li>¿Cómo se crea un programa en Cloud Manager?</li></ul> |
 | Abrir detección | <ul><li>¿Cómo se utiliza el editor universal?</li><li>¿Hay alguna manera de copiar contenido de un entorno a otro?</li></ul> |
 | Resolución de problemas | <ul><li>¿Por qué no puedo acceder al editor universal?</li><li>¿Por qué falla mi canalización?</li></ul> |
-| **Creación de ticket de asistencia** | **Disponible solo para administradores de soporte técnico &#x200B;**<br>**Ejemplos** |
+| **Creación de ticket de asistencia** | **Disponible solo para administradores de soporte técnico **<br>**Ejemplos** |
 | Creación automatizada de tickets de asistencia que captura el historial y el contexto de chat del asistente de IA | <ul><li>Crea un ticket de asistencia para mí.</li></ul> |
 | Recuperar el estado del ticket de asistencia | <ul><li>Muéstrame todos los boletos de soporte que he abierto.</li><li>Muéstrame el estado del ticket &quot;E-----------&quot;</li></ul> |
 
@@ -133,7 +132,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -148,7 +147,11 @@ Puede restablecer el asistente de IA en AEM e iniciar una nueva conversación cu
 
    ![Icono del Asistente de IA en la barra de herramientas](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
-1. En el cuadro de texto del panel **Ayudante de IA** situado cerca de la parte inferior, escriba su pregunta y, a continuación, presione `Enter` o haga clic en ![Enviar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+1. En el cuadro de texto del panel **Ayudante de IA** cerca de la parte inferior, escriba su pregunta o mensaje, luego presione `Enter` o haga clic en ![Enviar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+
+   >[!NOTE]
+   >
+   >Los datos personales no deben incluirse en sus entradas, ya que no son necesarios para utilizar esta herramienta.
 
    ![Cuadro de texto en la parte inferior del panel del Asistente de IA](/help/implementing/cloud-manager/assets/ai-assistant-prompt-text-box.png)
 
@@ -168,7 +171,7 @@ El asistente de IA de AEM incluye una función de detección que le ayudará a e
    *Panel que muestra categorías de mensajes en el Asistente para IA.*
 
 1. Seleccione una categoría para ver una lista de peticiones de datos relacionadas.
-1. Seleccione un mensaje para ver ejemplos de los tipos de preguntas que el Ayudante de AEM AI puede responder.
+1. Seleccione un mensaje para ver ejemplos de los tipos de preguntas que el Asistente de inteligencia artificial puede responder.
 
 1. Para ocultar el panel de detección de mensajes, vuelva a hacer clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
 

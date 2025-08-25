@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '2468'
-ht-degree: 100%
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+workflow-type: tm+mt
+source-wordcount: '2496'
+ht-degree: 98%
 
 ---
 
@@ -364,6 +364,10 @@ La estructura del contenido suele contener los siguientes componentes principale
 
 * **activos:** Este nodo contiene información adicional utilizada para la creación de formularios. Por ejemplo, detalles del modelo del formulario, detalles de localización, etc.
 
-## Ver también {#see-also}
+## Asistente de IA en AEM
+
+Para los clientes que han [completado criterios de requisitos previos](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), el Asistente de IA en AEM está disponible para los usuarios de su organización. Ver [Asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
+## Véase también {#see-also}
 
 {{see-also}}
