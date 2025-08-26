@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: d065397b874cc24fb7af53e1258520f3e8270c55
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 35%
+source-wordcount: '1489'
+ht-degree: 33%
 
 ---
 
@@ -55,7 +55,7 @@ Una canalización que no es de producción sirve principalmente para ejecutar an
 
 Las canalizaciones también pueden variar según el tipo de código que implementan, además de los entornos de producción y de no producción.
 
-* AEM **[Canalizaciones de pila completa](#full-stack-pipeline)**: Implementan simultáneamente generaciones de código back-end y front-end que contienen una o más aplicaciones de servidor de la junto con configuraciones de HTTPD/Dispatcher.
+* **[Canalizaciones de pila completa](#full-stack-pipeline)**: Implementan simultáneamente generaciones de código back-end y front-end que contienen una o más aplicaciones de servidor de AEM junto con configuraciones de HTTPD/Dispatcher.
 * **[Canalizaciones de configuración](#config-deployment-pipeline)**: puede implementar rápidamente configuraciones para características como reenvío de registros y tareas de mantenimiento relacionadas con la depuración. También incluye varias configuraciones de CDN (red de distribución de contenido), como reglas de filtro de tráfico, incluidas las reglas de Firewall de aplicaciones web (WAF). Además, puede administrar transformaciones de solicitud y respuesta, selectores de origen, redirecciones del lado del cliente, páginas de error, claves CDN, claves API de depuración y autenticación básica. Consulte [Usar canalizaciones de configuración](/help/operations/config-pipeline.md) para obtener más información.
 * **[Canalizaciones front-end](#front-end)**: Implementan compilaciones de código front-end que contienen una o más aplicaciones de interfaz de usuario del lado del cliente.
 * **[Canalizaciones de configuración de nivel web](#web-tier-config-pipelines)**: Implementa configuraciones de HTTPD/Dispatcher.
@@ -68,7 +68,7 @@ La siguiente tabla resume las canalizaciones disponibles en Cloud Manager y sus 
 
 | Tipo de canalización | Implementación o calidad del código | código Source | Función | Notas |
 | --- | --- | --- | --- | ---|
-| Producción o no producción | Implementación | De pila completa | Implementa simultáneamente generaciones de código de back-end y front-end junto con configuraciones de HTTPD/Dispatcher | AEM Se utiliza cuando el código front-end debe implementarse simultáneamente con el código de servidor de la. Se utiliza cuando aún no se han adoptado las canalizaciones front-end o las canalizaciones de configuración de nivel web. |
+| Producción o no producción | Implementación | De pila completa | Implementa simultáneamente generaciones de código de back-end y front-end junto con configuraciones de HTTPD/Dispatcher | Se utiliza cuando el código front-end debe implementarse simultáneamente con el código de servidor de AEM. Se utiliza cuando aún no se han adoptado las canalizaciones front-end o las canalizaciones de configuración de nivel web. |
 | Producción o no producción | Implementación | Front-end | Implementa la generación de código front-end que contiene una o más aplicaciones de interfaz de usuario del lado del cliente | Admite varias canalizaciones front-end simultáneas<br>Mucho más rápido que las implementaciones full-stack. |
 | Producción o no producción | Implementación | Configuración del nivel web | Implementa configuraciones de HTTPD/Dispatcher | Implementa en minutos |
 | Producción o no producción | Implementación | Configuración | Implementa la configuración [para una serie de características](/help/operations/config-pipeline.md) relacionadas con la red de distribución de contenido (CDN), el reenvío de registros y la depuración de tareas de mantenimiento | Implementa en minutos |
@@ -82,7 +82,7 @@ El siguiente diagrama ilustra las configuraciones de canalización de Cloud Mana
 
 ## Canalizaciones de pila completa {#full-stack-pipeline}
 
-AEM Las canalizaciones de pila completa implementan configuraciones de código back-end, código front-end y nivel web para el tiempo de ejecución de la al mismo tiempo.
+Las canalizaciones de pila completa implementan configuraciones de código back-end, código front-end y nivel web para el tiempo de ejecución de AEM al mismo tiempo.
 
 * Código back-end: contenido inmutable como código Java, configuraciones OSGi, informes y contenido mutable
 * Código front-end: recursos de la interfaz de usuario de la aplicación como JavaScript, CSS, fuentes
@@ -102,7 +102,7 @@ Se aplican las siguientes restricciones.
 Además, tenga en cuenta cómo se comporta la canalización de pila completa si elige introducir una [canalización de configuración de nivel web](#web-tier-config-pipelines).
 
 * La canalización de pila completa para un entorno ignora la configuración de Dispatcher si existe la canalización de configuración de nivel web correspondiente.
-* Si la canalización de configuración del nivel web correspondiente para el entorno no existe, el usuario puede configurar la canalización de pila completa incluir o ignorar la configuración de Dispatcher.
+* Si la canalización de configuración del nivel web correspondiente para el entorno no existe, el usuario puede configurar la canalización de pila completa para incluir o ignorar la configuración de Dispatcher.
 
 Las canalizaciones de pila completa pueden ser canalizaciones de calidad del código o implementación.
 
@@ -126,7 +126,7 @@ Consulte [Agregar una canalización que no sea de producción](/help/implementin
 
 El código front-end es cualquier código que sirve como archivos estáticos. Es independiente del código de la IU que sirve AEM y puede incluir temas del sitio, SPA definidos por el cliente, SPA y otras soluciones.
 
-Las canalizaciones front-end ayudan a sus equipos a optimizar su proceso de diseño y desarrollo al permitir la implementación acelerada del código front-end, asincrónica del desarrollo back-end. Esta canalización dedicada implementa JavaScript AEM AEM y CSS en la capa de distribución de la como tema, lo que da como resultado una nueva versión del tema, a la que se puede hacer referencia desde páginas que entrega el usuario.
+Las canalizaciones front-end ayudan a sus equipos a optimizar su proceso de diseño y desarrollo al permitir la implementación acelerada del código front-end, asincrónica del desarrollo back-end. Esta canalización dedicada implementa JavaScript y CSS en la capa de distribución de AEM como tema, lo que da como resultado una nueva versión del tema, a la que se puede hacer referencia desde páginas que ofrece AEM.
 
 >[!NOTE]
 >
@@ -138,7 +138,7 @@ Las canalizaciones front-end pueden ser de calidad del código o implementación
 
 ### Antes de configurar canalizaciones front-end {#before-start}
 
-Antes de configurar las canalizaciones front-end, revise el [Recorrido de creación de sitios rápidos de AEM](/help/journey-sites/quick-site/overview.md) para obtener una guía completa a través de la herramienta de creación de sitios rápidos de AEM fácil de usar. Este recorrido AEM le ayuda a optimizar su desarrollo front-end y le permite personalizar su sitio rápidamente sin conocimientos del back-end de la interfaz de usuario (back-end) de la interfaz de usuario de su sitio.
+Antes de configurar las canalizaciones front-end, revise el [Recorrido de creación de sitios rápidos de AEM](/help/journey-sites/quick-site/overview.md) para obtener una guía completa a través de la herramienta de creación de sitios rápidos de AEM fácil de usar. Este recorrido le ayuda a optimizar su desarrollo front-end y le permite personalizar su sitio rápidamente sin conocimientos del back-end de AEM.
 
 ### Configuración de una canalización front-end {#configure-front-end}
 
@@ -153,7 +153,7 @@ Consulte [Desarrollo de sitios con canalización front-end](/help/implementing/d
 
 ## Canalizaciones de configuración de nivel web {#web-tier-config-pipelines}
 
-Las canalizaciones de configuración de nivel web permiten la implementación exclusiva de la configuración de HTTPD/Dispatcher AEM en el tiempo de ejecución de la, desacoplándola de otros cambios de código. Es una canalización optimizada que proporciona a los usuarios que solo desean implementar los cambios de configuración de Dispatcher, un medio acelerado para hacerlo en solo unos minutos.
+Las canalizaciones de configuración de nivel web permiten la implementación exclusiva de la configuración de HTTPD/Dispatcher en el tiempo de ejecución de AEM, desacoplándola de otros cambios de código. Es una canalización optimizada que proporciona a los usuarios que solo desean implementar los cambios de configuración de Dispatcher, un medio acelerado para hacerlo en solo unos minutos.
 
 >[!TIP]
 >
@@ -161,7 +161,7 @@ Las canalizaciones de configuración de nivel web permiten la implementación ex
 
 Se aplican las siguientes restricciones.
 
-* AEM Estar en la versión de la `2021.12.6151.20211217T120950Z` o más reciente para utilizar canalizaciones de configuración de nivel web.
+* Estar en la versión de AEM `2021.12.6151.20211217T120950Z` o posterior para utilizar canalizaciones de configuración de nivel web.
 * [Opte por el modo flexible de las herramientas de Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para usar canalizaciones de configuración de nivel web.
 * El usuario debe registrarse con la función de **Administrador de implementación** para configurar o ejecutar canalizaciones.
 * En cualquier momento, solo puede haber una canalización de configuración de nivel web por entorno.
