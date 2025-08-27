@@ -4,25 +4,21 @@ description: Obtenga información sobre cómo supervisar problemas y mejorar el 
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
+source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 14%
+source-wordcount: '458'
+ht-degree: 22%
 
 ---
 
 # Publicar Go-Live {#post-go-live}
 
-<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="Troubleshooting AEM"
->abstract="Review best practices for continuous development and management of logs. Learn about tools like Developer Console and CRXDE Lite to help with troubleshooting issues with AEM."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
->additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
-
--->
+>title="Solución de problemas de AEM"
+>abstract="Revise las prácticas recomendadas para el desarrollo y la administración continuos de los registros. Obtenga información acerca de herramientas como Developer Console y CRXDE Lite para ayudar con la solución de problemas con AEM."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-logs" text="Acceder y administrar registros"
+>additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
 
 Este recorrido es la última parte, por lo que aprenderá a monitorizar los problemas y mejorar el rendimiento una vez completada la migración. Asegúrese de limpiar los archivos temporales, revise las prácticas recomendadas para un desarrollo continuo y administre los registros.
 
