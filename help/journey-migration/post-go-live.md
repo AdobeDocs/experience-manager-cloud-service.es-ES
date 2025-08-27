@@ -17,7 +17,7 @@ ht-degree: 22%
 >id="aemcloud_golive_troubleshooting"
 >title="Solución de problemas de AEM"
 >abstract="Revise las prácticas recomendadas para el desarrollo y la administración continuos de los registros. Obtenga información acerca de herramientas como Developer Console y CRXDE Lite para ayudar con la solución de problemas con AEM."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-logs" text="Acceder y administrar registros"
+>additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-logs" text="Acceder y administrar registros"
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
 
 Este recorrido es la última parte, por lo que aprenderá a monitorizar los problemas y mejorar el rendimiento una vez completada la migración. Asegúrese de limpiar los archivos temporales, revise las prácticas recomendadas para un desarrollo continuo y administre los registros.
