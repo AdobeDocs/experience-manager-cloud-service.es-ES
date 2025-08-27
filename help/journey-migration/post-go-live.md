@@ -4,25 +4,29 @@ description: Obtenga información sobre cómo supervisar problemas y mejorar el 
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
+source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 22%
+source-wordcount: '417'
+ht-degree: 14%
 
 ---
 
 # Publicar Go-Live {#post-go-live}
 
+<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="Solución de problemas de AEM"
->abstract="Revise las prácticas recomendadas para el desarrollo y la administración continuos de los registros. Obtenga información acerca de herramientas como Developer Console y CRXDE Lite para ayudar con la solución de problemas con AEM."
->additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Acceder y administrar registros"
->additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
+>title="Troubleshooting AEM"
+>abstract="Review best practices for continuous development and management of logs. Learn about tools like Developer Console and CRXDE Lite to help with troubleshooting issues with AEM."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
+
+-->
 
 Este recorrido es la última parte, por lo que aprenderá a monitorizar los problemas y mejorar el rendimiento una vez completada la migración. Asegúrese de limpiar los archivos temporales, revise las prácticas recomendadas para un desarrollo continuo y administre los registros.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
 En el paso anterior del recorrido, aprendió a realizar la migración y [Go-live](/help/journey-migration/go-live.md) una vez que el código y el contenido estaban listos para moverse a AEM as a Cloud Service.
 
@@ -34,7 +38,7 @@ En este documento se describen las herramientas disponibles para solucionar prob
 * **CRXDE Lite**
 * **Administración de registros**
 
-## Consola de desarrollador {#developer-console}
+## Developer Console {#developer-console}
 
 La depuración de los entornos de desarrollador de AEM as a Cloud Service está disponible en Developer Console para los entornos de desarrollo, fase y producción.
 
@@ -47,7 +51,7 @@ Como usuario, puede acceder a CRXDE Lite en el entorno de desarrollo, pero no en
 >[!IMPORTANT]
 >Si se escribe en repositorios inmutables, como `/libs` y `/apps` en tiempo de ejecución, se producirán errores. Además, no tiene acceso a las herramientas para desarrolladores para entornos de ensayo y producción.
 
-Consulte [Desarrollo con CRXDE Lite AEM](/help/implementing/developing/tools/crxde.md) para obtener más información sobre cómo desarrollar su aplicación de forma que utilice el CRXDE Lite de la aplicación de la aplicación de la aplicación.
+Consulte [Desarrollo con CRXDE Lite](/help/implementing/developing/tools/crxde.md) para obtener más información sobre cómo desarrollar la aplicación de AEM mediante CRXDE Lite.
 
 ## Administración de registros {#managing-logs}
 
@@ -63,7 +67,7 @@ Consulte [Acceso y administración de registros](/help/implementing/cloud-manage
 >abstract="Póngase en contacto con el equipo de Soporte AEM de Adobe para obtener aclaraciones o solucionar cualquier problema."
 >additional-url="https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html" text="Compatibilidad con Experience Cloud"
 
-Si tienes preguntas sobre el acceso a Cloud Service, ponte en contacto con el Adobe o con [Soporte técnico para Experience Cloud](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para obtener más información.
+Si tienes alguna pregunta sobre el acceso a Cloud Service, ponte en contacto con tu representante de Adobe o con [Soporte técnico de Experience Cloud](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para obtener más información.
 
 ## Aprendizajes de documentos {#document-learnings}
 
@@ -71,7 +75,7 @@ Una vez completada la migración, documente los conocimientos adquiridos durante
 
 * ¿Qué funcionó bien y qué no?
 * ¿Cuáles fueron los principales puntos problemáticos?
-* Recommendations si hay una migración futura.
+* Recomendaciones si hay una migración futura.
 
 Comparta estos conocimientos posteriores a la migración con las partes interesadas y los equipos de su organización.
 

@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
+source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 17%
+source-wordcount: '1100'
+ht-degree: 12%
 
 ---
 
@@ -17,12 +17,16 @@ ht-degree: 17%
 
 Obtenga información acerca de las herramientas de autoservicio que proporciona Cloud Manager para instalar y administrar certificados SSL (Secure Socket Layer).
 
+<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
->title="Administrar certificados SSL"
->abstract="Descubra la forma en la que Cloud Manager proporciona herramientas de autoservicio para instalar y administrar certificados SSL con el fin de proteger su sitio en beneficio de sus usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros."
->additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Ver, actualizar y reemplazar un certificado SSL"
->additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Comprobar el estado de un certificado SSL"
+>title="Manage SSL certificates"
+>abstract="Learn how Cloud Manager has self-service tools to install and manage SSL certificates to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="View, Updating & Replace an SSL Certificate"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Check Status of an SSL Certificate"
+
+-->
 
 ## ¿Qué son los certificados SSL? {#overview}
 
@@ -47,7 +51,7 @@ Ambos modelos ofrecen las siguientes funciones generales para administrar los ce
 
 * Cada entorno de Cloud Manager puede utilizar varios certificados.
 * Una clave privada puede emitir varios certificados SSL.
-* El servicio TLS de plataforma enruta las solicitudes al servicio CDN del cliente en función del certificado SSL utilizado para finalizar y el servicio CDN que aloja ese dominio.
+* El servicio TLS de plataforma enruta las solicitudes al servicio CDN del cliente en función del certificado SSL utilizado para terminar y el servicio CDN que aloja ese dominio.
 
 >[!IMPORTANT]
 >
