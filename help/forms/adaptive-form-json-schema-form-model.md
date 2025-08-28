@@ -8,7 +8,7 @@ exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -490,7 +490,7 @@ El ejemplo anterior define un registro de cliente en el que cada cliente tiene u
 
 ## Preconfigurar campos en la definición del esquema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Puede usar la propiedad **aem:afProperties** para preconfigurar el campo del esquema JSON y asignarlo a un componente de formulario adaptable personalizado. A continuación se muestra un ejemplo:
+Puede usar la propiedad **AEM:afProperties** para preconfigurar el campo del esquema JSON y asignarlo a un componente de formulario adaptable personalizado. A continuación se muestra un ejemplo:
 
 ```json
 {
@@ -922,7 +922,7 @@ Tiene dos opciones:
 
 La extensión del archivo de esquema JSON debe ser .schema.json. Por ejemplo, &lt;filename>.schema.json.
 
-## Ver también {#see-also}
+## Véase también {#see-also}
 
 {{see-also}}
 

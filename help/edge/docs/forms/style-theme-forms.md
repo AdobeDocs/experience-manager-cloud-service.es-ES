@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1901'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -89,11 +89,11 @@ Todos los campos de formulario, excepto los menús desplegables, los grupos de o
 </div>
 ```
 
-- Clases: el elemento div tiene varias clases para dirigirse a elementos y estilos específicos. Necesita las clases `{Type}-wrapper` o `field-{Name}` para desarrollar un selector de CSS para aplicar estilo a un campo de formulario:
+- Clases: el elemento div tiene varias clases para segmentar elementos y estilos específicos. Necesita las clases `{Type}-wrapper` o `field-{Name}` para desarrollar un selector de CSS para aplicar estilo a un campo de formulario:
    - {Type}: identifica el componente por el tipo de campo. Por ejemplo, texto (text-wrapper), número (number-wrapper) o fecha (date-wrapper).
    - {Name}: identifica el componente por su nombre. El nombre del campo solo puede tener caracteres alfanuméricos. Los guiones múltiples consecutivos del nombre se sustituyen por un solo guion `(-)`, y los guiones iniciales y finales del nombre de un campo se eliminan. Por ejemplo: first-name (field-first-name field-wrapper).
-   - {FieldId}: es un identificador único para el campo, generado automáticamente
-   - {Required}: es un booleano que indica si el campo es obligatorio
+   - {FieldId}: es un identificador único para el campo, se genera automáticamente.
+   - {Required}: es un valor booleano que indica si el campo es obligatorio.
 - Etiqueta: el elemento `label` proporciona un texto descriptivo para el campo y lo asocia al elemento de entrada mediante el atributo `for`.
 - Entrada: el elemento `input` define el tipo de datos que se van a introducir. Por ejemplo, texto, número o correo electrónico.
 - Descripción (opcional): el elemento `div` con clase `field-description` proporciona información o instrucciones adicionales para el usuario.
@@ -240,7 +240,7 @@ Para los menús desplegables, se utiliza el elemento `select` en lugar de un ele
 
 Al igual que los componentes desplegables, los grupos de radio tienen su propia estructura HTML y estructura CSS:
 
-+++ Estructura HTML del grupo de radio
++++ Estructura HTML del grupo de radio 
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -308,11 +308,11 @@ Este selector se dirige a cualquier fieldset con la clase radio-group-wrapper. E
 }
 ```
 
-+++
++++ 
 
 ### Grupos de casillas de verificación
 
-+++ Estructura HTML del grupo de casillas de verificación
++++ Estructura HTML del grupo de casillas de verificación 
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -434,7 +434,7 @@ Este selector se dirige a cualquier fieldset con la clase radio-group-wrapper. E
      }
   ```
 
-+++
++++ 
 
 ### Componentes de panel/contenedor
 
@@ -476,11 +476,11 @@ Este selector se dirige a cualquier fieldset con la clase radio-group-wrapper. E
 ```
 
 - El elemento fieldset actúa como contenedor de panel con la clase panel-wrapper y clases adicionales para el estilo basadas en el nombre del panel (field-login).
-- El elemento de leyenda (`<legend>`) sirve como título del panel con el texto &quot;Información de inicio de sesión&quot; y la etiqueta de campo de clase. El atributo data-visible=&quot;false&quot; se puede utilizar con JavaScript para controlar la visibilidad del título.
+- El elemento de leyenda (`<legend>`) sirve como título del panel con el texto “Información de inicio de sesión” y la etiqueta de campo de clase. El atributo data-visible=“false” se puede utilizar con JavaScript para controlar la visibilidad del título.
 - Dentro del fieldset, varios.Los elementos {Type}-wrapper (.text-wrapper y .password-wrapper en este caso) representan campos de formulario individuales dentro del panel.
 - Cada contenedor contiene una etiqueta, un campo de entrada y una descripción, similares a los ejemplos anteriores.
 
-+++
++++ 
 
 +++ Ejemplo de selectores CSS para componentes de panel/contenedor
 
@@ -608,7 +608,7 @@ Cada panel tiene la misma estructura que el ejemplo del panel único, con atribu
 
 - ID y nombres únicos: cada elemento del panel tiene un ID único (por ejemplo, name-1, email-1) y un atributo de nombre basado en el índice del panel (por ejemplo, name=&quot;contacts[0].name&quot;). Esto permite una recopilación de datos adecuada cuando se envían varios paneles.
 
-+++
++++ 
 
 +++ Selectores CSS para un panel repetible
 
@@ -698,7 +698,7 @@ Este selector aplica estilo a todos los contenedores de campo dentro de un panel
 - Los atributos id y name del elemento de entrada coinciden con el nombre del archivo adjunto (claim_form).
 - La sección de lista de archivos está vacía inicialmente. Se rellena dinámicamente con JavaScript cuando se cargan los archivos.
 
-+++
++++ 
 
 +++ Selectores CSS para el componente Archivo adjunto
 
@@ -816,7 +816,7 @@ Puede utilizar selectores de CSS para segmentar tipos de campo específicos y ap
 - Cada campo tiene una etiqueta correspondiente, un elemento de entrada y posibles elementos adicionales como marcadores de posición y descripciones.
 
 
-+++
++++ 
 
 
 +++ Ejemplo de selectores CSS
@@ -864,7 +864,7 @@ También puede segmentar campos individuales por nombre para aplicar estilos ún
 </div>
 ```
 
-+++
++++ 
 
 +++ Ejemplo de selector de CSS
 
@@ -878,5 +878,5 @@ También puede segmentar campos individuales por nombre para aplicar estilos ún
 
 Este CSS identifica todos los elementos de entrada que se encuentran dentro de un elemento que tiene la clase `field-otp`. La estructura HTML del formulario sigue las convenciones del bloque de formularios adaptables, lo que implica que hay un contenedor marcado con la clase “field-otp” que contiene el campo con el nombre “otp”.
 
-+++
++++ 
 

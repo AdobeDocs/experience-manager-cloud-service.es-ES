@@ -1,5 +1,5 @@
 ---
-title: Crear y publicar Forms adaptable con Edge Delivery Services
+title: Crear y publicar formularios adaptables con Edge Delivery Services
 description: Instrucciones paso a paso para crear, crear y publicar Forms adaptable con plantillas de Edge Delivery Services en AEM, con un enfoque en la precisión y la claridad técnicas.
 keywords: formularios adaptables, servicios de envío Edge, editor universal, creación de formularios, formularios AEM, publicación de formularios
 feature: Edge Delivery Services
@@ -9,21 +9,21 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '1005'
-ht-degree: 2%
+ht-degree: 87%
 
 ---
 
 
-# Crear y publicar Forms adaptable con Edge Delivery Services
+# Crear y publicar formularios adaptables con Edge Delivery Services
 
 Este documento proporciona instrucciones paso a paso para crear, configurar y publicar Forms adaptable con plantillas de Edge Delivery Services en AEM. Abarca todo el flujo de trabajo, desde la creación del formulario a la implementación de producción.
 
-Al final de esta guía, aprenderá a hacer lo siguiente:
+Al final de la guía, aprenderá a hacer lo siguiente:
 
 - Creación de formularios con plantillas de Edge Delivery Services
 - Crear formularios con el Editor universal
-- Configuración y publicación de formularios en Edge Delivery Services
-- Acceso a los formularios publicados y verificación de la implementación
+- Configurar y publicar de formularios en Edge Delivery Services
+- Acceder a los formularios publicados y verificar la implementación
 
 
 
@@ -32,21 +32,21 @@ Al final de esta guía, aprenderá a hacer lo siguiente:
 Asegúrese de que se cumplen los siguientes requisitos previos para continuar:
 
 
-- **AEM Forms as a Cloud Service**: instancia de autor activa con licencia de Forms.
+- **Formularios de AEM as a Cloud Service**: instancia de autor activa con licencia de Forms.
 - **Cuenta de GitHub**: cuenta personal u organizativa para la administración de repositorios.
 - **Configuración del repositorio**: elija una de las siguientes opciones:
-   - **Nuevo proyecto**: [Cree un nuevo proyecto AEM con el bloque Forms adaptable](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block). El repositorio está preconfigurado para Edge Delivery Services.
-   - **Proyecto existente**: [Agregue un bloque de Forms adaptable a un repositorio existente](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) y actualice la configuración.
+   - **Nuevo proyecto**: [cree un nuevo proyecto de AEM con el bloque de formularios adaptable](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block). El repositorio está preconfigurado para Edge Delivery Services.
+   - **Proyecto existente**: [añada un bloque de formularios adaptables a un repositorio existente](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) y actualice la configuración.
 
-- **Conexión de AEM-GitHub**: [Establezca una conexión](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) entre su instancia de AEM y el repositorio de GitHub.
-- **Edge Delivery Services**: Asegúrese de que el repositorio esté configurado para la implementación automática.
-- **Permisos**: Compruebe que dispone de los derechos de acceso necesarios para la creación y publicación de formularios.
+- **Conexión entre AEM y GitHub**: [establezca una conexión](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) entre su instancia de AEM y el repositorio de GitHub.
+- **Edge Delivery Services**: asegúrese de que el repositorio esté configurado para la implementación automática.
+- **Permisos**: compruebe que dispone de los derechos de acceso necesarios para la creación y publicación de formularios.
 
-- Confirme que el repositorio de GitHub contiene el bloque de Forms adaptable.
+- Confirme que el repositorio de GitHub contiene el bloque de formularios adaptables.
 
 
 
-## Creación y publicación de formularios
+## Flujo de trabajo de la creación y publicación de formularios
 
 El proceso consta de tres fases principales:
 
@@ -59,57 +59,57 @@ Cada fase incluye pasos de validación para confirmar la configuración correcta
 
 ### Paso 1: Creación de formularios
 
-1. **Creación de formularios de acceso**
-   - Inicie sesión en la instancia de autor de AEM Forms as a Cloud Service.
+1. **Acceder a la creación de formularios**
+   - Inicie sesión en su instancia de autor de AEM Forms as a Cloud Service.
    - Vaya a **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
-   - Haga clic en **Crear** > **Forms adaptable**.
+   - Haga clic en **Crear** > **Formularios adaptables**. 
 
 1. **Seleccionar plantilla**
-   - En la ficha **Source**, seleccione una **plantilla basada en Edge Delivery Services**.
-   - El botón **Crear** se activa.
+   - En la pestaña **Fuente**, seleccione una **plantilla basada en Edge Delivery Services**.
+   - El botón **Crear** se habilita.
 
      ![Creación de formularios EDS](/help/edge/assets/create-eds-forms.png)
 
 1. **Configurar opciones (opcional)**
-   - **Ficha Data Source**: seleccione la integración de datos si es necesario.
-   - **Ficha Envío**: elija una acción de envío (se puede configurar más adelante).
+   - **Pestaña Fuente de datos**: seleccione la integración de datos si es necesario.
+   - **Pestaña Envío**: elija una acción de envío (se puede configurar más adelante).
    - **Pestaña Entrega**: establezca la programación de publicación/cancelación de publicación.
 
 1. **Completar la configuración del formulario**
-   - Haga clic en **Crear** para abrir el Asistente para la creación de formularios.
+   - Haga clic en **Crear** para abrir el Asistente para crear formulario.
    - Escriba lo siguiente:
-      - **Nombre**: Identificador interno (sin espacios, use guiones).
-      - **Título**: Nombre para mostrar del formulario.
+      - **Nombre**: identificador interno (sin espacios, use guiones).
+      - **Título**: nombre para mostrar del formulario.
       - **URL de GitHub**: URL del repositorio (por ejemplo, `https://github.com/your-org/your-repo`).
 
    ![Asistente para crear formulario](/help/edge/assets/create-form-wizard.png)
 
 1. **Validación**
-   - Después de hacer clic en **Crear**, verifique:
-      - El formulario se abrirá en el Editor universal.
+   - Después de hacer clic en **Crear**, verifique lo siguiente:
+      - El formulario se abre en el editor universal. 
       - La URL de GitHub está vinculada correctamente.
       - La paleta de componentes está disponible.
       - El lienzo del formulario es visible.
 
-   ![Interfaz de editor universal](/help/edge/assets/author-form.png)
+   ![Interfaz del editor universal](/help/edge/assets/author-form.png)
 
-**Resultado:** El formulario está listo para la creación en el Editor universal.
+**Resultado:** el formulario está listo para la creación en el editor universal.
 
 ### Paso 2: Creación y diseño de formularios
 
 
 1. **Acceder a la biblioteca de componentes**
-   - Abra el Explorador de contenido en el Editor universal.
+   - Abra el explorador de contenido en el editor universal.
    - Vaya al componente **Formulario adaptable** en el árbol de contenido.
 
-   ![Navegación por el árbol de contenido](/help/edge/assets/content-tree.png)
+   ![Navegación del árbol de contenido](/help/edge/assets/content-tree.png)
 
-1. **Agregar campos de formulario**
-   - Haga clic en el icono **Agregar** para abrir la biblioteca de componentes.
-   - Seleccione componentes de la lista **Componentes de formulario adaptable**.
+1. **Añadir campos de formulario**
+   - Haga clic en el icono **Añadir** para abrir la biblioteca de componentes.
+   - Seleccione los componentes en la lista **Componentes de formularios adaptables**.
    - Arrastre y suelte los componentes en el lienzo del formulario.
 
-   ![Agregar componentes](/help/edge/assets/add-component.png)
+   ![Añadir componentes](/help/edge/assets/add-component.png)
 
 1. **Diseñar el formulario**
    - Configure las propiedades de campo en el panel Propiedades.
@@ -127,17 +127,17 @@ Cada fase incluye pasos de validación para confirmar la configuración correcta
 
 #### Próximos pasos
 
-- [Configurar acciones de envío](/help/edge/docs/forms/universal-editor/submit-action.md) para la administración de datos.
+- [Configure acciones de envío](/help/edge/docs/forms/universal-editor/submit-action.md) para la administración de datos.
 - [Guía del editor universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg) para funciones avanzadas.
 
 ### Paso 3: Configuración y publicación
 
 Configure Edge Delivery Services y publique el formulario.
 
-**Configuración:** Automática (no se requiere configuración manual).
+**Configuración:** automática (no se requiere configuración manual).
 
 - La conexión al repositorio de GitHub y la configuración de Edge Delivery Services se crean durante la creación del formulario.
-- Los extremos de publicación se configuran automáticamente.
+- Los puntos finales de publicación se configuran automáticamente.
 
 **Verificación:**
 
@@ -146,13 +146,13 @@ Configure Edge Delivery Services y publique el formulario.
 
 ![Configuración automática de EDS](/help/edge/assets/aem-instance-eds-configuration.png)
 
-#### Publicación del formulario
+#### Publicar el formulario
 
-1. En el Editor universal, haga clic en el botón **Publicar** (esquina superior derecha).
+1. En el editor universal, haga clic en el botón **Publicar** (esquina superior derecha).
 2. Confirme la publicación correcta en el cuadro de diálogo.
 3. Tenga en cuenta las direcciones URL generadas para las versiones ensayadas y activas.
 
-   ![Publicación de editor universal](/help/edge/assets/publish-form.png)
+   ![Publicar con el editor universal](/help/edge/assets/publish-form.png)
 
 - [Guía de publicación](/help/edge/docs/forms/universal-editor/publish-forms.md)
 
@@ -162,13 +162,13 @@ Los formularios publicados son accesibles a través de las direcciones URL de Ed
 
 ### Estructura de URL
 
-- **En prueba (vista previa/prueba):**
+- **Ensayo (vista previa/prueba):**
 
   ```
   https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>
   ```
 
-- **Activo (Producción):**
+- **Activo (producción):**
 
   ```
   https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>
@@ -181,7 +181,7 @@ Los formularios publicados son accesibles a través de las direcciones URL de Ed
 - `<owner>`: organización de GitHub o nombre de usuario (por ejemplo, `company-name`)
 - `<form_name>`: identificador de formulario tal como se define en AEM (por ejemplo, `contact-us`)
 
-#### Ejemplos
+#### Ejemplo
 
 Ejemplo del formulario `contact-us` en el repositorio `forms-project` de la organización `acme-corp`:
 
@@ -190,8 +190,8 @@ Ejemplo del formulario `contact-us` en el repositorio `forms-project` de la orga
 
 #### Diferencias de entorno
 
-- **Almacenado en zona intermedia (.page):** Cambios más recientes para realizar pruebas.
-- **Contenido en vivo (.live):** Contenido publicado para producción.
+- **Ensayo (.page):** cambios más recientes para realizar pruebas.
+- **Activo (.live):** contenido publicado para producción.
 
 ![Estructura URL](/help/edge/docs/forms/universal-editor/assets/url-structure.svg)
 *Desglose de estructura de URL de formularios Edge Delivery Services*
@@ -200,8 +200,8 @@ Ejemplo del formulario `contact-us` en el repositorio `forms-project` de la orga
 
 **Plantilla de Edge Delivery Services:**
 
-- En fase: ![Formulario de registro en fase ](/help/forms/assets/registration-form-staged-version.png)
-- Activo: ![Formulario de registro versión activa](/help/forms/assets/registration-form-live-version.png)
+- Ensayo: ![versión de ensayo de formulario de registro](/help/forms/assets/registration-form-staged-version.png)
+- Activo: ![versión activa de formulario de registro](/help/forms/assets/registration-form-live-version.png)
 
 ## Resolución de problemas
 
@@ -209,20 +209,20 @@ A continuación, se muestran problemas comunes y soluciones para AEM Forms con E
 
 +++Formulario no cargado
 
-**Problema:** La dirección URL del formulario devuelve 404 o una página en blanco.
+**Problema:** la dirección URL del formulario devuelve 404 o una página en blanco.
 
 **Resolución:**
 
 - Quitar la extensión `.html` de las direcciones URL.
 - Compruebe que el formulario esté publicado.
-- Compruebe el repositorio de GitHub del bloque de Forms adaptable.
+- Compruebe el repositorio de GitHub del bloque de formularios adaptables.
 - Asegúrese de que el nombre del formulario coincida con la dirección URL (con distinción entre mayúsculas y minúsculas).
 
 +++
 
 +++Problemas de configuración
 
-**Problema:** La configuración de Edge Delivery Services no funciona.
+**Problema:** la configuración de Edge Delivery Services no funciona.
 
 **Resolución:**
 
@@ -235,11 +235,11 @@ A continuación, se muestran problemas comunes y soluciones para AEM Forms con E
 
 +++Problemas de publicación
 
-**Problema:** Los cambios no aparecen en el sitio activo.
+**Problema:** los cambios no aparecen en el sitio activo.
 
 **Resolución:**
 
-- Espere de 2 a 3 minutos para actualizar la caché de CDN.
+- Espere de 2 a 3 minutos para actualizar la caché de la CDN.
 - Confirme que el flujo de trabajo de publicación se ha completado.
 - Pruebe primero en el entorno de ensayo (.page).
 - Asegúrese de que el repositorio de GitHub esté actualizado.
@@ -248,7 +248,7 @@ A continuación, se muestran problemas comunes y soluciones para AEM Forms con E
 
 +++Problemas del editor universal
 
-**Problema:** No se puede editar el formulario o los componentes que no se cargan.
+**Problema:** no se puede editar el formulario o los componentes no cargan.
 
 **Resolución:**
 
@@ -261,26 +261,26 @@ A continuación, se muestran problemas comunes y soluciones para AEM Forms con E
 
 +++Errores de envío de formularios
 
-**Problema:** Los envíos de formularios no funcionan.
+**Problema:** los envíos de formularios no funcionan.
 
 **Resolución:**
 
 - Configure la acción de envío en las propiedades del formulario.
-- Probar los extremos de envío manualmente.
-- Compruebe la configuración de CORS si incrusta formularios.
+- Pruebe los extremos de envío manualmente.
+- Compruebe la configuración de CORS en caso de incrustar formularios.
 - Compruebe que los campos obligatorios están configurados.
 
 +++
 
 +++Problemas de rendimiento
 
-**Problema:** Carga lenta del formulario o rendimiento deficiente.
+**Problema:** carga lenta del formulario o rendimiento deficiente.
 
 **Resolución:**
 
 - Optimizar imágenes.
 - Elimine los componentes innecesarios.
-- Aproveche Edge Delivery Services CDN.
+- Use la CDN de Edge Delivery Services.
 - Minimice el uso de JavaScript/CSS personalizado.
 
 +++
@@ -290,9 +290,9 @@ A continuación, se muestran problemas comunes y soluciones para AEM Forms con E
 Si los problemas persisten:
 
 1. Compruebe el estado del servicio de Adobe Experience Cloud.
-2. Revise [documentación de Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=es).
-3. Visite la [Comunidad de Adobe Experience League](https://experienceleaguecommunities.adobe.com/?profile.language=es).
-4. Póngase en contacto con el Servicio de atención al cliente de Adobe.
+2. Revise la [documentación de Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=es).
+3. Visite la [Comunidad de Adobe Experience League](https://experienceleaguecommunities.adobe.com/).
+4. Contacte con el Servicio de atención al cliente de Adobe.
 
 +++
 
@@ -300,8 +300,8 @@ Si los problemas persisten:
 
 Después de completar la creación y publicación del formulario, tenga en cuenta lo siguiente:
 
-- [Configurar acciones de envío](/help/edge/docs/forms/universal-editor/submit-action.md): configure la administración de datos y las integraciones.
+- [Configure acciones de envío](/help/edge/docs/forms/universal-editor/submit-action.md): configure la administración de datos y las integraciones.
 - [Modelos de datos de formulario](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md): conecte formularios a orígenes de datos back-end.
-- [Prácticas recomendadas de Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=es): Maximice el rendimiento.
-- [Form Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): efectúe el seguimiento del rendimiento del formulario y del comportamiento del usuario.
+- [Prácticas recomendadas de Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=es): maximice el rendimiento.
+- [Form Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html?lang=es): efectúe el seguimiento del rendimiento del formulario y del comportamiento del usuario.
 

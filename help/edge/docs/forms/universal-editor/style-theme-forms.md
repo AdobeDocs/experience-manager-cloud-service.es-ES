@@ -1,5 +1,5 @@
 ---
-title: Personalice el tema y el estilo de un Edge Delivery Services para AEM Forms
+title: Personalizar el tema y estilo de Edge Delivery Services para AEM Forms
 description: Personalice de forma eficaz el tema y el estilo de los formularios de AEM que se entregan a través de Edge Delivery Services, lo que garantiza una experiencia del usuario coherente y con marca.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
@@ -7,27 +7,27 @@ exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 # Personalización del aspecto de los formularios
 
-El estilo de los formularios en Edge Delivery Services para AEM Forms requiere una comprensión sofisticada de las propiedades personalizadas de CSS, la arquitectura basada en bloques y las estrategias de segmentación específicas de componentes. A diferencia de los enfoques tradicionales de estilo de formulario, el bloque de Forms adaptable implementa un sistema de token de diseño sistemático que permite una temática coherente y, al mismo tiempo, mantiene las ventajas de rendimiento y accesibilidad de Edge Delivery Services.
+El estilo de los formularios en Edge Delivery Services para AEM Forms requiere una comprensión sofisticada de las propiedades personalizadas de CSS, la arquitectura basada en bloques y las estrategias de segmentación específicas de componentes. A diferencia de los enfoques tradicionales de estilo de formulario, el bloque de formularios adaptables implementa un sistema de token de diseño sistemático que permite una temática coherente y, al mismo tiempo, mantiene las ventajas de rendimiento y accesibilidad de Edge Delivery Services.
 
-La arquitectura de bloques de Forms adaptable genera estructuras de HTML estandarizadas en todos los componentes del formulario, lo que crea patrones predecibles para la segmentación y personalización de CSS. Esta coherencia permite a los desarrolladores implementar sistemas de estilo completos que se escalan en implementaciones de formularios complejos, al tiempo que preservan las optimizaciones de rendimiento basadas en bloques que hacen que Edge Delivery Services sea excepcionalmente rápido.
+La arquitectura de bloques de formularios adaptables genera estructuras de HTML estandarizadas en todos los componentes del formulario, lo que crea patrones predecibles para la segmentación y personalización de CSS. Esta coherencia permite a los desarrolladores implementar sistemas de estilo completos que se escalan en implementaciones de formularios complejos, al tiempo que preservan las optimizaciones de rendimiento basadas en bloques que hacen que Edge Delivery Services sea excepcionalmente rápido.
 
-Esta guía completa cubre los fundamentos técnicos del estilo de los formularios dentro del ecosistema de Edge Delivery Services, incluidos los sistemas de propiedades personalizadas CSS, los patrones de estructura HTML de componentes y las técnicas avanzadas de estilo. La documentación proporciona comprensión teórica y orientación práctica sobre la implementación para crear experiencias de formulario sofisticadas y con marca.
+Esta guía completa cubre los fundamentos técnicos del estilo de los formularios dentro del ecosistema de Edge Delivery Services, incluidos los sistemas de propiedades personalizadas de CSS, los patrones de estructura HTML de componentes y las técnicas avanzadas de estilo. La documentación proporciona información teórica y orientación práctica sobre la implementación para crear experiencias de formulario sofisticadas y de marca.
 
-## Lo que dominarás
+## Lo que dominará
 
-**Dominio de propiedades personalizadas de CSS**: Comprenda el sistema de variables completo que controla el aspecto del formulario, incluidos los esquemas de color, las escalas tipográficas, los sistemas de espaciado y los parámetros de diseño. Aprenda a anular y ampliar estas propiedades para implementar temas de marca completos.
+**Dominio de propiedades personalizadas de CSS**: comprenda el sistema de variables completo que controla el aspecto del formulario, incluidos los esquemas de color, las escalas tipográficas, los sistemas de espaciado y los parámetros de diseño. Aprenda a anular y ampliar estas propiedades para implementar temas de marca completos.
 
-**Comprensión de la arquitectura del componente**: obtenga información detallada sobre los patrones de estructura de HTML que usa cada tipo de componente de formulario, lo que permite una personalización y un direccionamiento CSS precisos sin romper la funcionalidad subyacente ni las características de accesibilidad.
+**Comprensión de la arquitectura del componente**: obtenga información detallada sobre los patrones de estructura HTML que usa cada tipo de componente de formulario, lo que permite una personalización y un direccionamiento CSS precisos sin causar problemas en la funcionalidad subyacente ni en las características de accesibilidad.
 
-**Técnicas de estilo avanzadas**: Implemente patrones de estilo sofisticados, incluidos el estilo basado en estados, la integración de diseño interactivo y las estrategias de personalización optimizadas para el rendimiento que mantienen las características de carga rápida de Edge Delivery Services.
+**Técnicas de estilo avanzadas**: implemente patrones de estilo sofisticados, incluidos el estilo basado en estados, la integración de diseño interactivo y las estrategias de personalización optimizadas para el rendimiento que mantienen las características de carga rápida de Edge Delivery Services.
 
-**Estrategias de implementación profesionales**: conozca los enfoques estándar del sector para el estilo de formularios, incluida la integración del sistema de diseño, la arquitectura CSS mantenible y las técnicas de solución de problemas para escenarios de estilo complejos.
+**Estrategias de implementación profesionales**: conozca los enfoques estándar del sector para crear el estilo de formularios, incluida la integración del sistema de diseño, la arquitectura CSS sostenible y las técnicas de solución de problemas para escenarios de estilo complejos.
 
 ## Explicación de los tipos de campo de formulario
 
@@ -51,23 +51,23 @@ Entender los [conceptos fundamentales de CSS](https://www.w3schools.com/css/css_
 
 
 
-## Estilo de formulario completo con propiedades personalizadas de CSS
+## Creación de estilos de formulario completa con propiedades personalizadas de CSS
 
-El bloque de Forms adaptable utiliza una sofisticada arquitectura CSS basada en propiedades personalizadas (variables CSS) que permite aplicar un tema sistemático y un estilo coherente a todos los componentes del formulario. Comprender esta estructura es esencial para personalizar y personalizar eficazmente el formulario.
+El bloque de formularios adaptable utiliza una sofisticada arquitectura CSS basada en propiedades personalizadas (variables CSS) que permite aplicar un tema de manera sistemática y un estilo coherente a todos los componentes del formulario. Entender cómo funciona esta estructura es esencial para personalizar y dar personilidad de marca al formulario con éxito.
 
 ### Explicación de la arquitectura de forms.css
 
 Los estilos de formulario predeterminados se encuentran en el repositorio del proyecto en `/blocks/form/form.css` y siguen un enfoque estructurado que da prioridad al mantenimiento, la coherencia y la flexibilidad de personalización. La arquitectura consta de varios componentes clave:
 
-**Base de propiedades personalizadas de CSS**: el sistema de estilo se basa en propiedades personalizadas de CSS definidas en el nivel `:root`, lo que proporciona un sistema de temas centralizado que se aplica en cascada a todos los componentes del formulario. Estas variables establecen tokens de diseño para colores, tipografía, espaciado y propiedades de diseño.
+**Base de propiedades personalizadas de CSS**: el sistema de estilo se basa en propiedades personalizadas de CSS definidas en el nivel `:root`, lo que proporciona un sistema de temas centralizado que se aplica en cascada a todos los componentes del formulario. Estas variables establecen tokens de diseño para los colores, la tipografía, el espaciado y las propiedades de diseño.
 
 **Estructura CSS basada en bloques**: Edge Delivery Services emplea una arquitectura basada en bloques en la que la clase `.form` sirve como el área de nombres principal para todos los estilos relacionados con el formulario, lo que garantiza un aislamiento adecuado del ámbito y evita conflictos de CSS con otros componentes de la página.
 
 **Estilo específico del componente**: los componentes de formulario individuales están diseñados con patrones de contenedor coherentes (`.{Type}-wrapper`) que proporcionan un direccionamiento predecible para distintos tipos de campo a la vez que mantienen la integridad general del sistema de diseño.
 
-### Referencia y personalización de propiedades personalizadas de CSS
+### Referencia y personalización de las propiedades personalizadas de CSS
 
-El sistema de estilo de formularios incluye más de 50 propiedades personalizadas de CSS que controlan todos los aspectos de la apariencia y el comportamiento del formulario. La comprensión de estas propiedades permite una personalización completa y, al mismo tiempo, mantiene la coherencia del diseño.
+El sistema de creación de estilos de formularios incluye más de 50 propiedades personalizadas de CSS que controlan todos los aspectos de la apariencia y el comportamiento del formulario. Al entender el funcionamiento de estas propiedades, podrá realizar una personalización completa y, al mismo tiempo, mantener la coherencia del diseño.
 
 +++ Variables de color y temática
 
@@ -94,7 +94,7 @@ El sistema de colores establece una base visual completa para los formularios a 
 }
 ```
 
-**Ejemplo práctico de personalización**: Para implementar un tema oscuro en los formularios, reemplace las variables de color base:
+**Ejemplo práctico de personalización**: para implementar un tema oscuro en los formularios, anule las variables de color base:
 
 ```css
 :root {
@@ -135,7 +135,7 @@ Las variables de tipografía y espaciado proporcionan un control exhaustivo sobr
 }
 ```
 
-**Ejemplo práctico de personalización**: Para crear un diseño de formulario más compacto con una tipografía más pequeña:
+**Ejemplo práctico de personalización**: para crear un diseño de formulario más compacto con una tipografía más pequeña:
 
 ```css
 :root {
@@ -174,7 +174,7 @@ Las variables de diseño controlan las dimensiones del formulario, el comportami
 }
 ```
 
-**Ejemplo práctico de personalización**: Para crear un formulario de estilo de tarjeta con una profundidad visual mejorada:
+**Ejemplo práctico de personalización**: para crear un formulario de estilo de tarjeta con una profundidad visual mejorada:
 
 ```css
 :root {
@@ -199,7 +199,7 @@ Las variables de diseño controlan las dimensiones del formulario, el comportami
 
 ### Patrones de estilo CSS y prácticas recomendadas
 
-El bloque de Forms adaptable sigue patrones CSS específicos que garantizan un mantenimiento, un rendimiento y un estilo coherente en todos los componentes.
+El bloque de formularios adaptable sigue patrones CSS específicos que garantizan un mantenimiento, un rendimiento y un estilo coherente en todos los componentes.
 
 +++ Patrones de estilo principales
 
@@ -216,7 +216,7 @@ El bloque de Forms adaptable sigue patrones CSS específicos que garantizan un m
 }
 ```
 
-**Patrones de contenedor de componentes**: Dirija tipos de campo específicos usando clases de contenedor coherentes:
+**Patrones de elementos envolventes de componentes**: céntrese en tipos de campo específicos usando clases de elementos envolventes coherentes:
 
 ```css
 /* Text input fields */
@@ -252,11 +252,11 @@ El bloque de Forms adaptable sigue patrones CSS específicos que garantizan un m
 }
 ```
 
-+++
++++ 
 
 +++ Patrones de personalización avanzados
 
-**Segmentación específica de campo**: Segmente los campos individuales por nombre para los requisitos de estilo únicos:
+**Segmentación específica de los campos**: segmente los campos individuales por nombre para los requisitos de estilo únicos:
 
 ```css
 /* Style specific fields */
@@ -274,7 +274,7 @@ El bloque de Forms adaptable sigue patrones CSS específicos que garantizan un m
 }
 ```
 
-**Estilo basado en estado**: Implementar estados de validación e interacción:
+**Estilo basado en estado**: implemente estados de validación e interacción:
 
 ```css
 /* Validation states */
@@ -320,7 +320,7 @@ Todos los campos de formulario, excepto los menús desplegables, los grupos de o
   </div>
 ```
 
-- Clases: el elemento div tiene varias clases para dirigirse a elementos y estilos específicos. Necesita las clases `{Type}-wrapper` o `field-{Name}` para desarrollar un selector de CSS para aplicar estilo a un campo de formulario:
+- Clases: el elemento div tiene varias clases para segmentar elementos y estilos específicos. Necesita las clases `{Type}-wrapper` o `field-{Name}` para desarrollar un selector de CSS para aplicar estilo a un campo de formulario:
 - {Type}: identifica el componente por el tipo de campo. Por ejemplo, texto (ajustador de texto), número (ajustador de número), fecha (ajustador de fecha).
 - {Name}: identifica el componente por su nombre. El nombre del campo solo puede tener caracteres alfanuméricos. Los múltiples guiones consecutivos del nombre se sustituyen por un solo guion `(-)`, y los guiones inicial y final del nombre de un campo se eliminan. Por ejemplo, nombre (campo-nombre ajustador de campo).
 - {FieldId}: es un identificador único para el campo, se genera automáticamente.
@@ -368,9 +368,9 @@ Todos los campos de formulario, excepto los menús desplegables, los grupos de o
 }
 ```
 
-- `.form .{Type}-wrapper`: segmenta el elemento envolvente de campo en función del tipo de campo. Por ejemplo, `.form .text-wrapper` identifica todos los contenedores de campo de texto.
-- `.form .{Type}-wrapper input`: segmenta los elementos de entrada reales dentro del contenedor. Este es el patrón recomendado para aplicar estilo a las entradas del formulario.
-- `.form .field-{Name}`: elementos de destino basados en el nombre de campo específico. Por ejemplo, `.form .field-first-name` se dirige al contenedor de campos &quot;Nombre&quot;. Use `.form .field-{Name} input` para dirigirse específicamente al elemento de entrada.
+- `.form .{Type}-wrapper`: se centra en el elemento envoltorio del campo en función del tipo de campo. Por ejemplo, `.form .text-wrapper` se centra en todos los contenedores de campo de texto.
+- `.form .{Type}-wrapper input`: se centra en los elementos de entrada reales dentro del contenedor. Este es el patrón recomendado para aplicar estilo a las entradas del formulario.
+- `.form .field-{Name}`: se centra en los elementos basados en el nombre de campo específico. Por ejemplo, `.form .field-first-name` se centra en el contenedor del campo “Nombre”. Use `.form .field-{Name} input` para centrarse específicamente en el elemento de entrada.
 - **Evitar**: `main .form form .{Type}-wrapper`: esto crea una especificidad CSS innecesaria y es más difícil de mantener.
 
 **Ejemplo de selectores CSS para componentes generales**
@@ -763,7 +763,7 @@ Este selector se dirige a cualquier fieldset con la clase radio-group-wrapper. E
 ```
 
 - El elemento fieldset actúa como contenedor de panel con la clase panel-wrapper y clases adicionales para el estilo basadas en el nombre del panel (field-login).
-- El elemento de leyenda (`<legend>`) sirve como título del panel con el texto &quot;Información de inicio de sesión&quot; y la etiqueta de campo de clase. El atributo data-visible=&quot;false&quot; se puede utilizar con JavaScript para controlar la visibilidad del título.
+- El elemento de leyenda (`<legend>`) sirve como título del panel con el texto “Información de inicio de sesión” y la etiqueta de campo de clase. El atributo data-visible=“false” se puede utilizar con JavaScript para controlar la visibilidad del título.
 - Dentro del fieldset, varios.Los elementos {Type}-wrapper (.text-wrapper y .password-wrapper en este caso) representan campos de formulario individuales dentro del panel.
 - Cada contenedor contiene una etiqueta, un campo de entrada y una descripción, similares a los ejemplos anteriores.
 
@@ -1158,26 +1158,26 @@ main .form .field-otp input {
 }
 ```
 
-Este CSS identifica todos los elementos de entrada que se encuentran dentro de un elemento que tiene la clase `field-otp`. La estructura del formulario de Edge Delivery Services sigue las convenciones de bloque de Forms adaptable, donde los contenedores se marcan con clases específicas del campo como &quot;field-top&quot; para campos con el nombre &quot;otp&quot;.
+Este CSS identifica todos los elementos de entrada que se encuentran dentro de un elemento que tiene la clase `field-otp`. La estructura del formulario de Edge Delivery Services sigue las convenciones de bloque de formularios adaptables, donde los contenedores se marcan con clases específicas del campo como “field-top” para campos con el nombre “otp”.
 
 
-## Implementación y estructura de archivos CSS
+## Estructura e implementación de archivos CSS
 
 ### **Implementación de referencia**
 
-La referencia de estilo del formulario completo está disponible en el repositorio de plantillas de AEM Forms:
+La referencia de estilo del formulario completo está disponible en el repositorio de elementos repetitivos de AEM Forms:
 
 ```
 https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/blocks/form/form.css
 ```
 
-Este archivo sirve como implementación canónica del sistema de propiedades personalizadas CSS y proporciona la base para todo el estilo del formulario. Incluye definiciones completas para todas las variables CSS, patrones de estilo de componentes e implementaciones de diseño interactivo.
+Este archivo sirve como implementación canónica del sistema de propiedades personalizadas de CSS y proporciona la base para todo el estilo del formulario. Incluye definiciones completas para todas las variables de CSS, patrones de estilo de componentes e implementaciones de diseño interactivo.
 
 +++
 
-+++ Integración de proyectos
++++ Integración del proyecto
 
-En el proyecto de Edge Delivery Services, implemente el estilo de los formularios mediante este método estructurado:
+En el proyecto de Edge Delivery Services, implemente el estilo de los formularios mediante este enfoque estructurado:
 
 ```
 /blocks/form/form.css          // Core form block styles (copied from boilerplate)
@@ -1202,7 +1202,7 @@ En el proyecto de Edge Delivery Services, implemente el estilo de los formulario
 ```
 
 **Personalizaciones específicas de componentes**:
-Añada un estilo específico del componente y mantenga el sistema de variables CSS:
+Añada un estilo específico del componente y mantenga el sistema de variables de CSS:
 
 ```css
 /* Enhanced component styling */
@@ -1239,7 +1239,7 @@ En esta sección se muestra cómo crear un formulario moderno con marca mediante
 
 +++ &#x200B;1. Variables de tema de marca
 
-Defina la paleta de colores, el espaciado y la tipografía de su marca con propiedades personalizadas de CSS.
+Defina la paleta de colores, el espaciado y la tipografía de su marca mediante propiedades personalizadas de CSS.
 
 ```css
 /* Custom brand theme */
@@ -1404,7 +1404,7 @@ Puede ampliar aún más el estilo del formulario segmentando campos, estados o c
 }
 ```
 
-Este completo enfoque muestra cómo las propiedades personalizadas de CSS permiten una temática sofisticada, a la vez que mantienen las funciones de integridad estructural y accesibilidad del sistema de bloques de Forms adaptable.
+Este completo enfoque muestra cómo las propiedades personalizadas de CSS permiten una temática sofisticada, a la vez que mantienen las funciones de integridad estructural y accesibilidad del sistema de bloques de formularios adaptables.
 
 +++
 
@@ -1431,7 +1431,7 @@ main .form .text-wrapper input {
 
 +++
 
-+++ Problemas de anulación de variables CSS
++++ Problemas de anulación de variables de CSS
 
 ```css
 /- ❌ Problem: Variables not working */
@@ -1474,7 +1474,7 @@ main .form .text-wrapper input {
 
 +++
 
-+++ Errores del selector común
++++ Errores del selector comunes
 
 ```css
 /- ❌ Incorrect: Assumes direct nesting */
@@ -1527,7 +1527,7 @@ main .form form .text-wrapper input {
 
 +++
 
-+++ Diseño de formulario adaptable
++++ Diseño de imagen interactiva
 
 ```css
 /- Mobile-first approach */
@@ -1550,11 +1550,11 @@ main .form form .text-wrapper input {
 ## Resumen de las prácticas recomendadas
 
 1. **Usar propiedades personalizadas de CSS**: aproveche las variables para lograr una temática coherente
-2. **Seguir arquitectura basada en bloques**: usar `.form` como selector de bloques principal
-3. **Evitar la sobreespecificidad**: No use `main .form form` a menos que sea necesario
-4. **Contenedores de destino**: use `.{Type}-wrapper` patrones para la segmentación de componentes
+2. **Seguir arquitectura basada en bloques**: use `.form` como selector de bloques principal
+3. **Evitar la especificidad excesiva**: no use `main .form form` a menos que sea necesario
+4. **Contenedores de destino**: use patrones `.{Type}-wrapper` para la segmentación de componentes
 5. **Mantener coherencia**: utilice los mismos patrones de selector en todo el proyecto
-6. **Realizar pruebas en todos los dispositivos**: Asegúrese de que los formularios funcionan bien en dispositivos móviles, tabletas y de escritorio
-7. **Validar accesibilidad**: Asegúrese de que los estilos no interfieran con los lectores de pantalla ni con la navegación mediante el teclado
+6. **Realizar pruebas en todos los dispositivos**: asegúrese de que los formularios funcionan bien en dispositivos móviles, tabletas y de escritorio
+7. **Validar accesibilidad**: asegúrese de que los estilos no interfieran con los lectores de pantalla ni con la navegación mediante el teclado
 
 

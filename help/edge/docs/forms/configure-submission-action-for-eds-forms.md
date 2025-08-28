@@ -7,22 +7,22 @@ exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 13%
+ht-degree: 79%
 
 ---
 
-# Configuración de acciones de envío para AEM Forms
+# Configurar acciones de envío para formularios de AEM Forms
 
-Configure la administración del envío de formularios para enrutar datos a hojas de cálculo, correo electrónico o sistemas back-end mediante AEM Forms con Edge Delivery Services.
+Configure el control del envío de formularios para enrutar datos a hojas de cálculo, correo electrónico o sistemas back-end mediante AEM Forms con Edge Delivery Services.
 
 ## Guía de decisión rápida
 
 Elija el método de envío:
 
-| Método | Ideal para | Complejidad de configuración | Casos de uso |
+| Método | Ideal para | Complejidad de la configuración | Casos de uso |
 |--------|----------|------------------|-----------|
-| **Servicio de envío de Forms** | Captura de datos sencilla | Bajo | Formularios de contacto, encuestas, recopilación de datos básicos |
-| **Envío de publicación de AEM** | Flujos de trabajo complejos | Alto | Integraciones empresariales, procesamiento personalizado, flujos de trabajo |
+| **Servicio de envío de formularios** | Captura de datos sencilla | Bajo | Formularios de contacto, encuestas, recopilación de datos básicos |
+| **Envío a la instancia de publicación de AEM** | Flujos de trabajo complejos | Alto | Integraciones empresariales, procesamiento personalizado, flujos de trabajo |
 
 ## Requisitos previos
 
@@ -30,12 +30,12 @@ Antes de configurar las acciones de envío, asegúrese de que:
 
 - Instancia de AEM Forms as a Cloud Service
 - Proyecto de Edge Delivery Services configurado
-- Formulario creado con la creación de documentos o el editor universal
-- Permisos necesarios para destinos de destino (hojas de cálculo, sistemas de correo electrónico o AEM)
+- Formulario creado mediante la creación de documentos o el editor universal
+- Permisos necesarios para destinos objetivo (hojas de cálculo, sistemas de correo electrónico o AEM)
 
-+++ Método 1: Servicio de envío de Forms
++++ Método 1: Servicio de envío de formularios
 
-El servicio de envío de Forms es un punto de conexión alojado en Adobe ideal para escenarios sencillos de captura de datos.
+El servicio de envío de formularios es un punto final hospedado en Adobe ideal para situaciones sencillas de captura de datos.
 
 ### Destinos admitidos
 
@@ -49,15 +49,15 @@ El servicio de envío de Forms es un punto de conexión alojado en Adobe ideal p
    - Para correo electrónico: compruebe que se puede acceder a las direcciones de correo electrónico del destinatario
 
 2. **Configurar el envío de formularios**
-   - Abra el formulario en el entorno de creación.
-   - Establecer la acción de envío en &quot;Servicio de envío de Forms&quot;
-   - Especifique la URL o direcciones de correo electrónico de la hoja de cálculo
+   - Abrir el formulario en el entorno de creación
+   - Establecer la acción de envío en “Servicio de envío de formularios”
+   - Especificar la URL o las direcciones de correo electrónico de la hoja de cálculo de destino
    - Guardar y publicar el formulario
 
 3. **Envío de prueba**
-   - Envío de datos de prueba mediante el formulario
+   - Enviar datos de prueba mediante el formulario
    - Comprobar si los datos aparecen en el destino
-   - Comprobar registros de errores si falla el envío
+   - Comprobar registros de errores si el envío falla
 
 ### Notas importantes
 
@@ -65,7 +65,7 @@ El servicio de envío de Forms es un punto de conexión alojado en Adobe ideal p
 - Las notificaciones por correo electrónico se envían inmediatamente al enviar el formulario
 - La validación de datos se produce en el nivel de servicio
 
-![Flujo de servicio de envío de Forms](/help/forms/assets/eds-fss.png)
+![Flujo del servicio de envío de formularios](/help/forms/assets/eds-fss.png)
 
 +++
 
@@ -73,7 +73,7 @@ El servicio de envío de Forms es un punto de conexión alojado en Adobe ideal p
 
 Envíe datos de formulario directamente a la instancia de publicación de AEM as a Cloud Service para un procesamiento complejo.
 
-### Cuándo se debe utilizar AEM Publish
+### Cuándo se debe utilizar la publicación de AEM
 
 - Flujos de trabajo de AEM personalizados necesarios después del envío
 - Integración del modelo de datos de formulario (FDM) con bases de datos
@@ -84,9 +84,9 @@ Envíe datos de formulario directamente a la instancia de publicación de AEM as
 ### Acciones de envío disponibles
 
 - [Enviar al punto final REST](/help/forms/configure-submit-action-restpoint.md)
-- [Envío de correo electrónico mediante los servicios de correo de AEM](/help/forms/configure-submit-action-send-email.md)
+- [Enviar correo electrónico a través de servicios de correo de AEM](/help/forms/configure-submit-action-send-email.md)
 - [Enviar mediante el modelo de datos de formulario](/help/forms/configure-data-sources.md)
-- [Invocar flujo de trabajo de AEM](/help/forms/aem-forms-workflow-step-reference.md)
+- [Invocar el flujo de trabajo de AEM](/help/forms/aem-forms-workflow-step-reference.md)
 - [Enviar a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 - [Enviar a OneDrive](/help/forms/configure-submit-action-onedrive.md)
 - [Enviar a Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
@@ -195,9 +195,9 @@ Configure your Edge Delivery CDN to route submissions:
 
 #### &#x200B;4. Configuración de formularios
 
-1. Crear formularios en el editor universal
-2. Configurar la acción de envío para segmentar la acción de AEM Forms
-3. Especificar ruta de extremo de envío
+1. Crear formulario en el editor universal
+2. Configurar la acción de envío para dirigirla a la acción de AEM Forms
+3. Especificar ruta de punto final de envío
 4. Publicar formulario en el sitio de Edge Delivery
 
 +++
@@ -254,11 +254,11 @@ Configure Cross-Origin Resource Sharing on the form source:
 
 | Problema | Solución |
 |-------|----------|
-| **Error al enviar el formulario** | Compruebe los errores de la consola, compruebe la URL del extremo y confirme los permisos |
-| **El formulario incrustado no aparece** | Configure los encabezados CORS en el origen del formulario y compruebe la URL del formulario |
+| **Error al enviar el formulario** | Comprobar los errores de la consola, verificar la URL del punto final y confirmar permisos |
+| **El formulario incrustado no aparece** | Configurar los encabezados CORS en el origen del formulario y verificar la URL del formulario |
 | **Errores 403/401 con AEM** | Actualizar el filtro de referente de Sling, comprobar la configuración de autenticación |
-| **Los datos no llegan a la hoja de cálculo** | Verificar que `forms@adobe.com` tenga acceso de edición, comprobar URL de hoja de cálculo |
-| **Errores CORS** | Agregar los encabezados adecuados de `Access-Control-Allow-Origin` al origen del formulario |
+| **Los datos no llegan a la hoja de cálculo** | Verificar que `forms@adobe.com` tiene acceso de edición, comprobar la URL de hoja de cálculo |
+| **Errores CORS** | Agregar los encabezados `Access-Control-Allow-Origin` adecuados a la fuente del formulario |
 
 +++
 
@@ -266,38 +266,38 @@ Configure Cross-Origin Resource Sharing on the form source:
 
 +++ Formulario basado en documentos con envío de hoja de cálculo
 
-1. Crear una estructura de formulario en Google Docs/Hojas
-2. Configurar el extremo del servicio de envío de Forms
+1. Crear estructura de formulario en Hojas de cáclculo o Documentos de Google
+2. Configurar punto final de servicio de envío de formularios
 3. Conceder acceso de edición de `forms@adobe.com` a la hoja de cálculo de destino
-4. Publicar documento en el sitio de Edge Delivery
+4. Publicar el documento en el sitio de Edge Delivery.
 5. Probar el envío de formularios y el flujo de datos
 
 +++
 
-+++ Formulario de editor universal con flujo de trabajo AEM
++++ Formulario de editor universal con flujo de trabajo de AEM
 
-1. Crear formularios en el editor universal
-2. Configure la acción de envío para &quot;Invocar el flujo de trabajo de AEM&quot;
-3. Configuración de Dispatcher y el filtro de referente en AEM Publish
+1. Generar formulario en el editor universal
+2. Configurar la acción de envío para “Invocar flujo de trabajo de AEM”
+3. Configurar Dispatcher y el filtro de referente en publicación de AEM
 4. Configurar reglas de enrutamiento de CDN
-5. Publicación de formularios y ejecución de flujo de trabajo de prueba
+5. Publicar formularios y probar la ejecución del flujo de trabajo
 
 +++
 
 ## Prácticas recomendadas
 
-- **Usar el servicio de envío de Forms** para escenarios sencillos de captura de datos
-- **Elija Publicación de AEM** cuando se requieran integraciones o procesamiento complejos
+- **Usar el servicio de envío de formularios** para escenarios sencillos de captura de datos
+- **Elegir la publciación de AEM** cuando se requieran integraciones o procesamiento complejos
 - **Realizar pruebas exhaustivas** en el entorno de ensayo antes de la implementación de producción
-- **Supervisar los envíos** mediante registros de AEM y errores de consola
-- **Implementar la administración de errores adecuada** para los envíos erróneos
+- **Monitorizar los envíos** mediante registros de AEM y errores de consola
+- **Implementar el control de errores adecuado** para los envíos fallidos
 - **Validar datos** tanto a nivel de cliente como de servidor
 - **Usar HTTPS** para todos los envíos de formularios y la transmisión de datos
 
 ## Temas relacionados
 
-- [Creación basada en documentos con EDS Forms](/help/edge/docs/forms/tutorial.md)
-- [Editor universal con EDS Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+- [Creación basada en documentos con formularios EDS](/help/edge/docs/forms/tutorial.md)
+- [Editor universal con formularios EDS](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 - [Servicio de envío de formularios de AEM Forms](/help/forms/forms-submission-service.md)
-- [Configuración de fuentes de datos](/help/forms/configure-data-sources.md)
-- [Referencia de flujo de trabajo AEM Forms](/help/forms/aem-forms-workflow-step-reference.md)
+- [Configurar fuentes de datos](/help/forms/configure-data-sources.md)
+- [Referencia de flujo de trabajo de formularios de AEM](/help/forms/aem-forms-workflow-step-reference.md)
