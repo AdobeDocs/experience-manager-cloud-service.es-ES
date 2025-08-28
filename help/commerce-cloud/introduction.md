@@ -1,6 +1,6 @@
 ---
 title: Introducción e información general
-description: Comprender las diferentes opciones de la tienda
+description: Aprenda las diferentes opciones de escaparate
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 feature: Commerce Integration Framework
@@ -33,13 +33,13 @@ Si tu empresa quiere la tienda más rápida y compatible con IA en la web y los 
 
 #### &#x200B;1. Integración con Adobe Commerce as a Cloud Service {#acaacs}
 
-Adobe recomienda usar Edge Delivery y [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es) como punto de partida. La tienda viene con una plantilla que está preintegrada con los servicios de Adobe Commerce, las API y ofrece una variedad de componentes de Commerce para crear rápidamente una tienda.
+Adobe recomienda usar Edge Delivery y [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) como punto de partida. La tienda viene con una plantilla que está preintegrada con los servicios de Adobe Commerce, las API y ofrece una variedad de componentes de Commerce para crear rápidamente una tienda.
 
 Buen ajuste: experiencia típica de tienda con Adobe Commerce as a Cloud Service
 
 #### &#x200B;2. Integración con Adobe Commerce Optimizer (para cualquier solución de terceros) {#aco}
 
-Si desea integrar su solución de comercio existente y mejorar el rendimiento de su catálogo, la recomendación de Adobe es usar [Adobe Commerce Optimizer](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) como la capa de integración moderna. Commerce Optimizer mejora su solución comercial con servicios SaaS de alto rendimiento para catálogos y comercialización. Al igual que con Adobe Commerce as a Cloud Service, [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es) funciona de forma predeterminada con él.
+Si desea integrar su solución de comercio existente y mejorar el rendimiento de su catálogo, la recomendación de Adobe es usar [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) como la capa de integración moderna. Commerce Optimizer mejora su solución comercial con servicios SaaS de alto rendimiento para catálogos y comercialización. Al igual que con Adobe Commerce as a Cloud Service, [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) funciona de forma predeterminada con él.
 
 Hay integraciones disponibles para soluciones de comercio comercial como Salesforce Commerce. Hable con su representante de Adobe.
 
@@ -53,7 +53,7 @@ Buen ajuste: bajo valor de la tienda de Edge Delivery
 
 ### Utilice su propia tienda (integración de AEM sin encabezado) {#own-storefront}
 
-Tiene una tienda existente (por ejemplo, creada con React JS) y quiere usar Adobe Experience Manager para la administración y entrega de contenido (fragmentos de contenido), recursos y edición en contexto (editor universal). El punto de partida para una integración es [Introducción a Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/headless/introduction) y el [complemento de CIF](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content). El complemento de CIF permite una integración perfecta de los datos de sus productos en AEM (busque, examine y encuentre productos dentro de la interfaz de usuario de AEM) que puede utilizar para crear experiencias específicas del comercio.
+Tiene una tienda existente (por ejemplo, creada con React JS) y quiere usar Adobe Experience Manager para la administración y entrega de contenido (fragmentos de contenido), recursos y edición en contexto (editor universal). El punto de partida para una integración es [Introducción a Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction) y el [complemento de CIF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content). El complemento de CIF permite una integración perfecta de los datos de sus productos en AEM (busque, examine y encuentre productos dentro de la interfaz de usuario de AEM) que puede utilizar para crear experiencias específicas del comercio.
 
 ### Tienda de AEM CIF {#cif}
 
@@ -61,4 +61,4 @@ La arquitectura de referencia y recomendación de Adobe es utilizar Edge Deliver
 
 >[!NOTE]
 >
->Los clientes existentes que deseen aprovechar la nueva funcionalidad de AEM/Commerce deben trasladar su sitio web a Edge Delivery. Un patrón común es empezar moviendo solo un subconjunto de páginas a Edge Delivery y ejecutar las páginas de Edge Delivery y CIF en paralelo. También es posible reemplazar los componentes de AEM CIF con los nuevos [componentes integrados de Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=es) para aprovechar las nuevas funcionalidades de Commerce.
+>Los clientes existentes que deseen aprovechar la nueva funcionalidad de AEM/Commerce deben trasladar su sitio web a Edge Delivery. Un patrón común es empezar moviendo solo un subconjunto de páginas a Edge Delivery y ejecutar las páginas de Edge Delivery y CIF en paralelo. También es posible reemplazar los componentes de AEM CIF con los nuevos [componentes integrados de Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) para aprovechar las nuevas funcionalidades de Commerce.
