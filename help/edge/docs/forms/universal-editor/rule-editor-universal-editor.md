@@ -1,51 +1,51 @@
 ---
-title: Editor de reglas para Dynamic Forms en el editor universal
-description: Cree formularios inteligentes y dinámicos con el Editor de reglas en el Editor universal. Agregue lógica condicional, cálculos y comportamientos interactivos sin codificación.
+title: Editor de reglas para formularios dinámicos en el editor universal
+description: Cree formularios dinámicos e inteligentes con el editor de reglas en el editor universal. Añada lógica condicional, cálculos y comportamientos interactivos sin codificación.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2598'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Editor de reglas para Dynamic Forms en el editor universal
+# Editor de reglas para formularios dinámicos en el editor universal
 
-El Editor de reglas permite a los autores convertir formularios estáticos en experiencias interactivas e inteligentes, sin necesidad de escribir código. Puede mostrar campos de forma condicional, realizar cálculos, validar datos, guiar a los usuarios a través de flujos e integrar la lógica empresarial que se adapta a medida que las personas escriben.
+El editor de reglas permite a los autores convertir formularios estáticos en experiencias adaptables e inteligentes, sin necesidad de escribir código. Puede mostrar campos de forma condicional, realizar cálculos, validar datos, guiar a los usuarios a través de flujos e integrar la lógica empresarial que se adapta a medida que las personas escriben.
 
-## Qué va a aprender
+## Lo que aprenderá
 
-Al final de esta guía, deberá ser capaz de:
+Al final de esta guía, podrá hacer lo siguiente:
 
-- Comprender cómo funcionan las reglas y cuándo utilizar diferentes tipos de reglas
-- Habilite y acceda al Editor de reglas en el Editor universal
-- Crear una lógica condicional para mostrar u ocultar campos dinámicamente
-- Implementación de cálculos automatizados y validación de datos
-- Crear funciones personalizadas para reglas empresariales complejas
-- Aplicar las prácticas recomendadas para el rendimiento, el mantenimiento y la experiencia de usuario
+- Comprender cómo funcionan las reglas y cuándo utilizar diferentes tipos de reglas.
+- Habilitar el editor de reglas y acceder a él en el editor universal.
+- Crear una lógica condicional para mostrar u ocultar campos dinámicamente.
+- Implementar cálculos automatizados y validación de datos.
+- Crear funciones personalizadas para reglas empresariales complejas.
+- Aplicar las prácticas recomendadas para el rendimiento, el mantenimiento y la experiencia de usuario.
 
-## ¿Por qué utilizar el Editor de reglas?
+## ¿Por qué utilizar el editor de reglas?
 
-- **Lógica condicional**: muestra los campos relevantes solo cuando sea necesario para reducir el ruido y la carga cognitiva.
-- **Cálculos dinámicos**: Calcule los valores automáticamente (totales, tasas e impuestos) mientras los usuarios escriben.
-- **Validación de datos**: Evite errores antes de tiempo con comprobaciones en tiempo real y mensajes claros.
+- **Lógica condicional**: muestre los campos pertinentes solo cuando es necesario para reducir el ruido y la carga cognitiva.
+- **Cálculos dinámicos**: calcule los valores automáticamente (totales, tasas e impuestos) mientras los usuarios escriben.
+- **Validación de datos**: evite errores antes de tiempo con comprobaciones en tiempo real y mensajes claros.
 - **Experiencias guiadas**: guíe a los usuarios a través de pasos lógicos (asistentes, ramas).
 - **Creación sin código**: configure un comportamiento eficaz mediante una interfaz visual.
 
-Los escenarios comunes incluyen calculadoras de impuestos, estimadores de préstamos y primas, flujos de elegibilidad, aplicaciones de varios pasos y encuestas con preguntas condicionales.
+Los escenarios comunes incluyen calculadoras de impuestos, estimadores de préstamos y primas, flujos de idoneidad, aplicaciones de varios pasos y encuestas con preguntas condicionales.
 
 ## Funcionamiento de las reglas
 
 Una regla define lo que debe suceder cuando se cumple una condición. Conceptualmente, una regla tiene dos partes:
 
-- **Condición**: Una instrucción que se evalúa como verdadera o falsa.
-   - Ejemplos: &quot;Ingresos > 50 000&quot;, &quot;Cobertura = &#39;Sí&#39;&quot;, &quot;El campo está vacío&quot;
-- **Acción**: Lo que ocurre cuando la condición es verdadera (y opcionalmente, cuando es falsa).
-   - Ejemplos: Mostrar/ocultar un campo, Establecer/borrar un valor, Validar entrada, Habilitar/deshabilitar un botón
+- **Condición**: una instrucción que se evalúa como verdadera o falsa.
+   - Ejemplos: “Ingresos > 50 000”, “Cobertura = &#39;Sí&#39;”, “El campo está vacío”
+- **Acción**: lo que ocurre cuando la condición es verdadera (y opcionalmente, cuando es falsa).
+   - Ejemplos: mostrar/ocultar un campo, establecer/borrar un valor, validar entrada, habilitar/deshabilitar un botón
 
 +++ Patrones de lógica de reglas
 
@@ -58,7 +58,7 @@ Una regla define lo que debe suceder cuando se cumple una condición. Conceptual
 
   Lo mejor para la visibilidad condicional y la revelación progresiva.
 
-- **Condición de ← de acción (establecer si/solo si)**
+- **Acción ← Condición (Establecer si/Solo si)**
 
   ```text
   SET Taxable Income = Gross Salary - Deductions
@@ -67,7 +67,7 @@ Una regla define lo que debe suceder cuando se cumple una condición. Conceptual
 
   Ideal para cálculos y transformaciones de datos.
 
-- **Si → Entonces → (acción alternativa)**
+- **Si → Entonces → Si no (acción alternativa)**
 
   ```text
   IF Income > 50000
@@ -81,9 +81,9 @@ Una regla define lo que debe suceder cuando se cumple una condición. Conceptual
 
 +++ Ejemplo real
 
-- **Condición**: &quot;El salario bruto supera los 50.000 dólares&quot;
-- **Acción principal**: mostrar &quot;Deducción adicional&quot;
-- **Acción alternativa**: ocultar &quot;Deducción adicional&quot;
+- **Condición**: “El salario bruto supera los 50 000 dólares”
+- **Acción principal**: mostrar “Deducción adicional”
+- **Acción alternativa**: ocultar “Deducción adicional”
 - **Resultado**: los usuarios solo ven los campos que se les aplican
 
 +++
@@ -97,14 +97,14 @@ Una regla define lo que debe suceder cuando se cumple una condición. Conceptual
 
 - **AEM as a Cloud Service**: acceso de creación con permisos de edición de formularios
 - **Editor universal**: instalado y configurado en su entorno
-- **Extensión del editor de reglas**: Habilitado mediante [Extension Manager](/help/implementing/developing/extending/extension-manager.md)
-- **Permisos de edición de formularios**: capacidad para crear y modificar componentes de formulario en el Editor universal
+- **Extensión del editor de reglas**: habilitado mediante [Extension Manager](/help/implementing/developing/extending/extension-manager.md)
+- **Permisos de edición de formularios**: capacidad para crear y modificar componentes de formulario en el editor universal
 
-**Pasos de comprobación**:
+**Pasos de verificación**:
 
-1. Confirme que puede acceder al editor universal desde la consola de AEM Sites.
-2. Compruebe que puede crear y editar componentes de formulario
-3. Compruebe que aparece el icono del Editor de reglas ![edit-rules](/help/forms/assets/edit-rules-icon.svg) al seleccionar componentes de formulario
+1. Confirmar que puede acceder al editor universal desde la consola de AEM Sites.
+2. Comprobar que puede crear y editar componentes de formulario
+3. Comprobar que aparece el icono del Editor de reglas ![edit-rules](/help/forms/assets/edit-rules-icon.svg) al seleccionar componentes de formulario
 
 +++
 
@@ -118,59 +118,59 @@ Una regla define lo que debe suceder cuando se cumple una condición. Conceptual
 
 **Opcional para uso avanzado**:
 
-- **Aspectos básicos de JavaScript**: Necesario solo para crear funciones personalizadas (tipos de datos, funciones, sintaxis básica)
+- **Aspectos básicos de JavaScript**: necesario solamente para crear funciones personalizadas (tipos de datos, funciones, sintaxis básica)
 - **Comprensión de JSON**: útil para la manipulación de datos complejos y las integraciones de API
 
 **Preguntas de evaluación**:
 
 - ¿Puede crear un formulario básico con entradas de texto y un botón de envío en el editor universal?
-- ¿Sabe cuándo los campos deben ser obligatorios o opcionales en el contexto empresarial?
+- ¿Sabe cuándo los campos deben ser obligatorios u opcionales en el contexto empresarial?
 - ¿Puede identificar qué elementos de formulario necesitan visibilidad condicional en su caso de uso?
 
 +++
 
 +++ Habilitar la extensión del Editor de reglas
 
-**Importante**: La extensión del Editor de reglas no está habilitada de manera predeterminada en los entornos del Editor universal.
+**Importante**: la extensión del Editor de reglas no está habilitada de forma predeterminada en entornos del editor universal. 
 
 **Pasos de activación**:
 
-1. Vaya a [Extension Manager](/help/implementing/developing/extending/extension-manager.md) en su entorno de AEM
-2. Busque la extensión &quot;Editor de reglas&quot; en la lista de extensiones disponibles
-3. Haga clic en **Habilitar** y confirme la activación
-4. Espere a que se actualice el sistema (puede tardar entre 1 y 2 minutos)
+1. Ir a [Extension Manager](/help/implementing/developing/extending/extension-manager.md) en su entorno de AEM
+2. Buscar la extensión “Editor de reglas” en la lista de extensiones disponibles
+3. Hacer clic en **Habilitar** y confirmar la activación
+4. Esperar a que se actualice el sistema (puede tardar entre 1 y 2 minutos)
 
 **Verificación**:
 
-- Después de habilitarlo, el icono Editor de reglas aparece al seleccionar un componente de formulario: ![edit-rules](/help/forms/assets/edit-rules-icon.svg)
+- Después de habilitarlo, el icono del Editor de reglas aparece al seleccionar un componente de formulario: ![edit-rules](/help/forms/assets/edit-rules-icon.svg)
 
 ![Editor universal de reglas](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
-Figura: El icono Editor de reglas aparece al seleccionar componentes de formulario
+Figura: El icono del Editor de reglas aparece al seleccionar componentes de formulario
 
 Para abrir el Editor de reglas:
 
-1. Seleccione un componente de formulario en el Editor universal.
-2. Haga clic en el icono Editor de reglas.
-3. El Editor de reglas se abrirá en un panel lateral.
+1. Seleccione un componente de formulario en el editor universal.
+2. Haga clic en el icono del Editor de reglas.
+3. El Editor de reglas se abre en un panel lateral. 
 
 ![Interfaz de usuario del Editor de reglas](/help/edge/docs/forms/assets/rule-editor-for-field.png)
-Imagen: interfaz del Editor de reglas para editar reglas de componentes
+Imagen: Interfaz del Editor de reglas para editar reglas de componentes
 
 >[!NOTE]
 >
-> En este artículo, &quot;componente de formulario&quot; y &quot;objeto de formulario&quot; hacen referencia a los mismos elementos (por ejemplo, entradas, botones o paneles).
+> En este artículo, “componente de formulario” y “objeto de formulario” hacen referencia a los mismos elementos (por ejemplo, entradas, botones o paneles).
 
 ## Introducción a la interfaz del Editor de reglas
 
 ![Interfaz de usuario del Editor de reglas](/help/edge/docs/forms/assets/rule-editor-interface.png)
-Imagen: interfaz completa del editor de reglas con componentes numerados
+Imagen: Interfaz completa del editor de reglas con componentes numerados
 
 - **Título del componente y tipo de regla**: confirma el componente seleccionado y el tipo de regla activo.
-- **Panel de funciones y objetos de formulario**:
+- **Objetos de formulario y panel Funciones**:
    - Objetos de formulario: vista jerárquica de campos y contenedores para hacer referencia a ellos en las reglas
-   - Funciones: ayudantes de validación, fecha, cadena y matemáticas integrados
+   - Funciones: ayudantes matemáticas, cadena, fecha y validación integrados
 - **Alternar panel**: muestra u oculta el panel de objetos y funciones para aumentar el espacio de trabajo
-- **Generador de reglas visual**: Compositor de reglas desplegable y de arrastrar y soltar
+- **Generador de reglas visual**: compositor de reglas de arrastrar y soltar y desplegable
 - **Controles**: Listo (guardar), Cancelar (descartar). Pruebe siempre las reglas antes de guardar.
 
 +++
@@ -179,11 +179,11 @@ Imagen: interfaz completa del editor de reglas con componentes numerados
 
 Cuando un componente ya tiene reglas, puede:
 
-- **Vista**: ver lógica y resúmenes de reglas
-- **Editar**: Modificar condiciones y acciones
-- **Reordenar**: cambie el orden de ejecución (de arriba abajo)
+- **Ver**: ver resúmenes y lógica de reglas
+- **Editar**: modificar condiciones y acciones
+- **Reordenar**: cambiar el orden de ejecución (de arriba abajo)
 - **Habilitar/Deshabilitar**: alternar reglas para pruebas
-- **Eliminar**: quite las reglas de forma segura
+- **Eliminar**: quitar las reglas de forma segura
 
 >[!TIP]
 >
@@ -197,17 +197,17 @@ Elija el tipo de regla que mejor se adapte a sus intenciones.
 
 +++ Lógica condicional
 
-- **When**: regla principal para comportamiento condicional complejo (condición → acción ± Else)
+- **Cuando**: regla principal para comportamiento condicional complejo (Condición → Acción ± Si no)
 - **Ocultar/Mostrar**: controla la visibilidad en función de una condición (divulgación progresiva)
-- **Habilitar/Deshabilitar**: controla si un campo es interactivo (por ejemplo, deshabilita Enviar hasta que los campos obligatorios sean válidos)
+- **Habilitar/Deshabilitar**: controla si un campo es interactivo (por ejemplo, deshabilitar Enviar hasta que los campos obligatorios sean válidos)
 
 +++
 
 +++ Manipulación de datos
 
-- **Establecer valor de**: Rellene automáticamente valores (por ejemplo, fechas, totales, copias)
-- **Borrar valor de**: quite datos cuando cambien las condiciones
-- **Formato**: transforme el formato de visualización (moneda, teléfono, fecha) sin alterar los valores almacenados
+- **Establecer valor de**: rellenar automáticamente valores (por ejemplo, fechas, totales, copias)
+- **Borrar valor de**: quitar datos cuando cambien las condiciones
+- **Formato**: transformar el formato de visualización (moneda, teléfono, fecha) sin alterar los valores almacenados
 
 +++
 
@@ -219,47 +219,47 @@ Elija el tipo de regla que mejor se adapte a sus intenciones.
 
 +++ Cálculo
 
-- **Expresión matemática**: Calcular valores en tiempo real (totales, impuestos, proporciones)
+- **Expresión matemática**: calcular valores en tiempo real (totales, impuestos, proporciones)
 
 +++
 
 +++ Interfaz de usuario
 
-- **Definir enfoque**: mueva el enfoque a un campo específico (utilícelo con moderación)
-- **Establecer propiedad**: modifique las propiedades del componente de forma dinámica (marcador de posición, opciones, etc.)
+- **Definir enfoque**: mover el enfoque a un campo específico (utilícelo con moderación)
+- **Establecer propiedad**: modificar las propiedades del componente de forma dinámica (marcador de posición, opciones, etc.)
 
 +++
 
 +++ Control de formulario
 
-- **Enviar formulario**: envíe el formulario mediante programación (solo después de que pasen las validaciones)
-- **Restablecer formulario**: Borrar y restablecer al estado inicial (confirmar antes de usar)
+- **Enviar formulario**: envíear el formulario mediante programación (solo después de que se superen las validaciones)
+- **Restablecer formulario**: borrar y restablecer al estado inicial (confirmar antes de usar)
 - **Guardar formulario**: guardar como borrador para utilizarlo posteriormente (formularios largos, varias sesiones)
 
 +++
 
 +++ Avanzado 
 
-- **Invocar servicio**: llame a API o servicios externos (controle la carga y los errores).
-- **Agregar o quitar instancia**: administre secciones repetibles (por ejemplo, dependientes, direcciones)
+- **Invocar servicio**: llamar a API o servicios externos (controle la carga y los errores)
+- **Añadir o quitar instancia**: administrar secciones repetibles (por ejemplo, dependientes, direcciones)
 - **Navegar a**: ruta a otros formularios/páginas (conservar datos antes de la navegación)
-- **Navegar entre paneles**: navegación y omisión de la etapa del Asistente para control
-- **Evento de envío**: Almacene en Déclencheur eventos personalizados para integraciones o análisis
+- **Navegar entre paneles**: controlar la navegación por los pasos del asistente y la omisión de estos
+- **Evento de envío**: desencadenar eventos personalizados para integraciones o análisis
 
 +++
 
 ## Tutorial paso a paso: Creación de una calculadora de impuestos inteligente
 
-+++ Resumen del tutorial
++++ Información general del tutorial
 
-Este ejemplo muestra la visibilidad condicional y los cálculos automáticos.
+En este ejemplo se muestra la visibilidad condicional y los cálculos automáticos.
 
-![Captura de pantalla de la interfaz del Editor de reglas que muestra la creación de una regla condicional con lógica When-Then para la visibilidad del campo de formulario](/help/edge/docs/forms/assets/rule-editor-1.png)
-Imagen: formulario de cálculo de impuestos con campos condicionales inteligentes
+![Captura de pantalla de la interfaz del Editor de reglas que muestra la creación de una regla condicional con la lógica Cuando-Entonces para la visibilidad del campo de formulario](/help/edge/docs/forms/assets/rule-editor-1.png)
+Figura: Formulario de cálculo de impuestos con campos condicionales inteligentes
 
-Se creará un formulario que:
+Creará un formulario que:
 
-1. Se adapta a los datos introducidos por el usuario mostrando los campos relevantes
+1. Se adapta a los datos introducidos por el usuario mostrando los campos pertinentes
 2. Calcula valores en tiempo real
 3. Valida datos para mejorar la precisión
 
@@ -269,10 +269,10 @@ Se creará un formulario que:
 
 | Nombre del campo | Tipo | Función | Comportamiento |
 |-------------------------|---------------|--------------------------------|-----------------------------------------|
-| Salario bruto | Entrada de número | Ingresos anuales del usuario | Lógica condicional de Déclencheur |
-| Deducción adicional | Entrada de número | Deducciones adicionales (si procede) | Solo visible cuando el salario es > 50 000 $ |
+| Salario bruto | Entrada de número | Ingresos anuales del usuario | Lógica condicional de desencadenadores |
+| Deducción adicional | Entrada de número | Deducciones adicionales (si procede) | Solo visible cuando el salario es > 50 000 USD |
 | Ingresos gravables | Entrada de número | Valor calculado | Sólo lectura, actualizaciones al cambiar |
-| Impuestos a pagar | Entrada de número | Valor calculado | Solo lectura, calculado a una tasa fija |
+| Impuestos que se deben pagar | Entrada de número | Valor calculado | Solo lectura, calculado a una tasa fija |
 
 +++
 
@@ -293,7 +293,7 @@ Se creará un formulario que:
   (Only when Additional Deduction applies)
   ```
 
-- **Regla 3: Cálculo de impuestos a pagar**
+- **Regla 3: Cálculo de impuestos que se deben pagar**
 
   ```text
   SET Tax Payable = Taxable Income × 10%
@@ -302,87 +302,87 @@ Se creará un formulario que:
 
 +++
 
-+++ Paso 1: Crear el formulario base
++++ Paso 1: Crear el formulario adaptable
 
-**Objetivo**: genera el formulario base con todos los campos y la configuración inicial.
+**Objetivo**: generar el formulario base con todos los campos y la configuración inicial.
 
 1. **Abrir editor universal**:
    - Vaya a la consola de AEM Sites, seleccione su página y haga clic en **Editar**
-   - Asegúrese de que tiene el [Editor universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=es) configurado correctamente
+   - Asegúrese de que tiene el [editor universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=es) configurado correctamente
 
-2. **Agregar componentes de formulario en este orden**:
-   - Título (H2): &quot;Formulario de cálculo de impuestos&quot;
-   - Entrada de número: &quot;salario bruto&quot; (obligatorio: sí, marcador de posición: &quot;introducir salario anual&quot;)
-   - Entrada de número: &quot;Deducción adicional&quot; (obligatorio: No, marcador de posición: &quot;Introducir deducciones adicionales&quot;)
+2. **Añadir componentes de formulario en este orden**:
+   - Título (H2): “Formulario de cálculo de impuestos”
+   - Entrada de número: &quot;Salario bruto&quot; (obligatorio: sí, marcador de posición: &quot;Introducir salario anual&quot;)
+   - Entrada de número: &quot;Deducción adicional&quot; (obligatorio: no, marcador de posición: &quot;Introducir deducciones adicionales&quot;)
    - Entrada de número: &quot;Ingresos gravables&quot; (solo lectura: sí)
-   - Introducción de número: &quot;Impuesto a pagar&quot; (solo lectura: sí)
+   - Introducción de número: &quot;Impuestos que se deben pagar&quot; (solo lectura: sí)
    - Botón Enviar: &quot;Calcular Impuesto&quot;
 
 3. **Configurar propiedades del campo inicial**:
-   - Ocultar &quot;Deducción adicional&quot; (conjunto visible: No en el panel Propiedades)
-   - Establezca &quot;Ingresos gravables&quot; e &quot;Impuestos por pagar&quot; en Solo lectura: Sí
+   - Ocultar &quot;Deducción adicional&quot; (establecer Visible: No en el panel Propiedades)
+   - Establecer &quot;Ingresos gravables&quot; e &quot;Impuestos que se deben pagar&quot; en Solo lectura: Sí
 
 ![Captura de pantalla de un formulario de cálculo de impuestos con campos de entrada para el salario bruto, el estado civil y los hijos a cargo, que muestra la estructura del formulario antes de que se apliquen las reglas](/help/edge/docs/forms/assets/rule-editor2.png)
-Figura: Estructura del formulario inicial con componentes básicos configurados
+Figura: Estructura inicial del formulario con los componentes básicos configurados.
 
-**Punto de comprobación**: debería tener un formulario con todos los campos obligatorios donde Deducción adicional esté oculta y los campos calculados sean de sólo lectura.
+**Punto de comprobación**: debería tener un formulario con todos los campos obligatorios donde el campo “Deducción adicional” esté oculto y los campos calculados sean de solo lectura.
 
 +++
 
 +++ Paso 2: Añadir una regla de visibilidad condicional
 
-**Objetivo**: mostrar el campo &quot;Deducción adicional&quot; solo cuando el salario bruto supere los 50 000 $.
+**Objetivo**: mostrar el campo &quot;Deducción adicional&quot; solo cuando el salario bruto supere los 50 000 USD.
 
 1. **Seleccione el campo Salario bruto** y haga clic en el icono del Editor de reglas ![edit-rules](/help/forms/assets/edit-rules-icon.svg)
-2. **Crear nueva regla**:
+2. **Crear una nueva función**:
    - Haga clic en **Crear**
-   - Cambiar tipo de regla de &quot;Set Value Of&quot; a **&quot;When&quot;**
+   - Cambiar tipo de regla de &quot;Establecer valor de&quot; a **&quot;Cuando&quot;**
 3. **Configurar la condición**:
-   - Seleccione **&quot;es mayor que&quot;** en el menú desplegable
+   - Seleccione **&quot;es mayor que&quot;** en la lista desplegable
    - Escriba `50000` en el campo de número
-4. **Establecer la acción Then**:
-   - Elija **&quot;Mostrar&quot;** de la lista desplegable Seleccionar acción
-   - Arrastre o seleccione el campo **&quot;Deducción adicional&quot;** de Objetos de formulario
-5. **Agregar la acción Else**:
-   - Haga clic en **&quot;Agregar otra sección&quot;**
-   - Elija **&quot;Ocultar&quot;** de la lista desplegable Seleccionar acción
-   - Seleccione el campo **&quot;Deducción adicional&quot;**
+4. **Establecer la acción Entonces**:
+   - Elija **“Mostrar”** en la lista desplagable Seleccionar acción
+   - Arrastre o seleccione el campo **“Deducción adicional”** en Objetos de formulario
+5. **Añadir la acción Si no**:
+   - Haga clic en **”Añadir acción Si no”**
+   - Elija **“Ocultar”** ene la lista desplegable Seleccionar acción
+   - Seleccione el campo **“Deducción adicional”**
 6. **Guardar la regla**: haga clic en **Listo**
 
 >[!NOTE]
 >
-> Enfoque alternativo: Puede lograr el mismo resultado creando una regla Mostrar/Ocultar directamente en el campo &quot;Deducción adicional&quot; en lugar de una regla When en &quot;Salario bruto&quot;.
+> Enfoque alternativo: puede lograr el mismo resultado creando una regla Mostrar/Ocultar directamente en el campo “Deducción adicional” en lugar de una regla Cuando en “Salario bruto”.
 
 +++
 
 +++ Paso 3: Añadir reglas de cálculo
 
-**Objetivo**: Calcular automáticamente &quot;Ingresos gravables&quot; e &quot;Impuestos por pagar&quot; según los datos proporcionados por el usuario.
+**Objetivo**: calcular automáticamente “Ingresos gravables” e “Impuestos que se deben pagar” según los datos proporcionados por el usuario.
 
 **Configurar cálculo de ingresos gravables**:
 
-1. **Seleccione el campo &quot;Ingresos gravables&quot;** y abra el Editor de reglas
-2. **Crear expresión matemática**:
+1. **Seleccione el campo “Ingresos gravables”** y abra el Editor de reglas
+2. **Crear la expresión matemática**:
    - Haga clic en **Crear** → Seleccionar **&quot;Expresión matemática&quot;**
-   - Expresión de compilación: **salario bruto − deducción adicional**
-   - Arrastre &quot;Salario bruto&quot; al primer campo
-   - Seleccionar operador **&quot;Menos&quot;**
-   - Arrastre &quot;Deducción adicional&quot; al segundo campo
-3. **Guardar**: Haga Clic En **Listo**
+   - Crear expresión: **Salario bruto − Deducción adicional**
+   - Arrastre “Salario bruto” al primer campo
+   - Seleccione el operador **“Menos”**
+   - Arrastre “Deducción adicional” al segundo campo
+3. **Guardar**: haga clic cn **Listo**
 
-**Configurar cálculo de impuestos a pagar**:
+**Configurar el cálculo de impuestos que se deben pagar**:
 
-1. **Seleccione el campo &quot;Impuesto a pagar&quot;** y abra el Editor de reglas
-2. **Crear expresión matemática**:
-   - Haga clic en **Crear** → Seleccionar **&quot;Expresión matemática&quot;**
-   - Expresión de compilación: **Ingresos gravables × 10 ÷ 100**
-   - Arrastre &quot;Ingresos gravables&quot; al primer campo
-   - Seleccione el operador **&quot;Multiplied by&quot;**
-   - Escriba `10` como número
-   - Haga clic en **&quot;Extender expresión&quot;**
-   - Seleccionar operador **&quot;dividido por&quot;**
-   - Escriba `100` como número
-3. **Guardar**: Haga Clic En **Listo**
+1. **Seleccione el campo “Impuesto que se deben pagar”** y abra el Editor de reglas
+2. **Crear la expresión matemática**:
+   - Haga clic en **Crear** → Seleccionar **“Expresión matemática”**
+   - Crear expresión: **Ingresos gravables × 10 ÷ 100**
+   - Arrastrar &quot;Ingresos gravables&quot; al primer campo
+   - Seleccione el operador **“Multiplicado por”**
+   - Introducir `10` como número
+   - Haga clic en **“Extender expresión”**
+   - Seleccione el operador **“Dividido por”**
+   - Introducir `100` como número
+3. **Guardar**: haga clic en **Listo**
 
 +++
 
@@ -390,34 +390,34 @@ Figura: Estructura del formulario inicial con componentes básicos configurados
 
 **Compruebe su implementación probando el flujo completo**:
 
-1. **Vista previa del formulario**: haga clic en el modo de vista previa en el editor universal
+1. **Previsualizar el formulario**: haga clic en el modo Previsualización en el editor universal
 2. **Probar la lógica condicional**:
-   - Ingresar salario bruto = `30000` → &quot;Deducción adicional&quot; debe permanecer oculto
-   - Ingresar salario bruto = `60000` → debería aparecer &quot;Deducción adicional&quot;
-3. **Cálculos de pruebas**:
-   - Con el salario bruto = `60000`, especifique la deducción adicional = `5000`
-   - Verificar ingreso gravable = `55000` (60000 - 5000)
-   - Verificar Impuesto A Pagar = `5500` (55000 × 10%)
+   - Introduzca Salario bruto = `30000` → “Deducción adicional” debe permanecer oculto
+   - Introduzca Salario bruto = `60000` → “Deducción adicional” debe aparecer
+3. **Probar los cálculos**:
+   - Con Salario bruto = `60000`, introduzca Deducción adicional = `5000`
+   - Verificar Ingresos gravables = `55000` (60 000 - 5000)
+   - Verificar Impuestos que se deben pagar = `5500` (55 000 × 10 %)
 
-![Vista previa de un formulario](/help/edge/docs/forms/assets/rule-editor-form.png)
-Imagen: calculadora de impuestos completada con campos condicionales y cálculos automáticos
+![Previsualizar un formulario](/help/edge/docs/forms/assets/rule-editor-form.png)
+Imagen: Calculadora de impuestos completada con campos condicionales y cálculos automáticos
 
 **Criterios de éxito**: el formulario debe mostrar u ocultar campos de forma dinámica y calcular valores en tiempo real a medida que los usuarios escriben.
 
 
 +++
 
-## Avanzadas: Funciones personalizadas
+## Avanzado: funciones personalizadas
 
 Para obtener una lógica empresarial compleja que vaya más allá de las capacidades integradas, puede crear funciones de JavaScript personalizadas que se integren a la perfección con el Editor de reglas.
 
-+++ Cuándo utilizar funciones personalizadas
++++ Cuándo se deben utilizar las funciones personalizadas
 
 **Escenarios ideales para funciones personalizadas**:
 
-- **Cálculos complejos**: los cálculos de varios pasos no se expresan fácilmente en la regla de expresiones matemáticas
+- **Cálculos complejos**: los cálculos de varios pasos no se expresan fácilmente en la regla Expresión matemática
 - **Validaciones específicas de la empresa**: lógica de validación personalizada específica de su organización o sector
-- **Transformaciones de datos**: Conversiones de formato, manipulaciones de cadenas o análisis de datos
+- **Transformaciones de datos**: conversiones de formato, manipulaciones de cadenas o análisis de datos
 - **Integraciones externas**: llamadas a API internas o servicios de terceros (con limitaciones)
 
 **Ventajas de las funciones personalizadas**:
@@ -425,30 +425,30 @@ Para obtener una lógica empresarial compleja que vaya más allá de las capacid
 - **Capacidad de reutilización**: escriba una vez y utilícelo en varios formularios y reglas
 - **Mantenimiento**: lógica centralizada más fácil de actualizar y depurar
 - **Rendimiento**: ejecución de JavaScript optimizada comparada con cadenas de reglas complejas
-- **Flexibilidad**: Administre casos extremos y escenarios complejos no abordados por reglas estándar
+- **Flexibilidad**: administre casos extremos y escenarios complejos no abordados por reglas estándar
 
 +++
 
 +++ Creación e implementación de funciones personalizadas
 
-**Ubicación de archivo**: todas las funciones personalizadas deben definirse en `/blocks/form/functions.js` en su proyecto de Edge Delivery Services.
+**Ubicación de archivos**: todas las funciones personalizadas deben definirse en `/blocks/form/functions.js` en el proyecto de Edge Delivery Services.
 
 **Flujo de trabajo de desarrollo**:
 
-1. **Diseño de función**
-   - Utilice nombres de funciones descriptivos y orientados a la acción
+1. **Diseño de funciones**
+   - Utilizar nombres de funciones descriptivos y orientados a la acción
    - Definir tipos de parámetros claros y valores devueltos
-   - Gestión correcta de casos extremos e entradas no válidas
+   - Gestionar correctamente casos extremos y entradas no válidas
 
-2. **Implementación**
-   - Escriba JavaScript limpio y bien comentado
+2. **Implementation**
+   - Escribir JavaScript limpio y bien comentado
    - Incluir validación de entrada y control de errores
-   - Prueba de funciones independiente antes de la integración
+   - Probar funciones independientemente antes de la integración
 
 3. **Documentación**
    - Añadir comentarios JSDoc completos
    - Incluir ejemplos de uso y descripciones de parámetros
-   - Documente cualquier limitación o dependencia
+   - Documentar cualquier limitación o dependencia
 
 4. **Implementación**
    - Exportar funciones mediante exportaciones con nombre
@@ -501,8 +501,8 @@ function days(endDate, startDate) {
 export { getFullName, days };
 ```
 
-![Agregando función personalizada](/help/edge/docs/forms/assets/create-custom-function.png)
-Imagen: adición de funciones personalizadas al archivo functions.js
+![Adición de función personalizada](/help/edge/docs/forms/assets/create-custom-function.png)
+Imagen: Adición de funciones personalizadas al archivo functions.js
 
 +++
 
@@ -510,42 +510,42 @@ Imagen: adición de funciones personalizadas al archivo functions.js
 
 **Pasos de integración**:
 
-1. **Agregar función al proyecto**
-   - Cree o edite `/blocks/form/functions.js` en su proyecto
-   - Incluya la función en la instrucción de exportación
+1. **Añadir función a proyecto**
+   - Crear o editar `/blocks/form/functions.js` en el proyecto
+   - Incluir la función en la instrucción de exportación
 
 2. **Implementar y compilar**
    - Confirmar cambios en el repositorio
-   - Asegúrese de que el proceso de compilación se complete correctamente
-   - Deje tiempo para actualizaciones de la caché de CDN
+   - Asegurarse de que el proceso de compilación se complete correctamente
+   - Dejar tiempo para actualizaciones de la caché de CDN
 
-3. **Acceso en el editor de reglas**
-   - Abra el Editor de reglas para cualquier componente del formulario
-   - Seleccione **&quot;Salida de función&quot;** en el menú desplegable **Seleccionar acción**
-   - Elija la función personalizada de la lista de funciones disponibles
+3. **Acceso en el Editor de reglas**
+   - Abrir el Editor de reglas para cualquier componente de formulario
+   - Seleccionar **“Salida de función”** en el menú desplegable **Seleccionar acción**
+   - Elegir la función personalizada en la lista de funciones disponibles
    - Configurar parámetros de función mediante campos de formulario o valores estáticos
 
 4. **Realizar pruebas exhaustivas**
-   - Vista previa del formulario para comprobar el comportamiento de la función
-   - Pruebe con varias combinaciones de entrada, incluidos los casos de borde
-   - Comprobar el impacto del rendimiento en la carga y la interacción del formulario
+   - Previsualizar el formulario para verificar el comportamiento de la función
+   - Probar con varias combinaciones de entrada, incluidos los casos extremos
+   - Verificar el impacto del rendimiento en la carga y la interacción del formulario
 
-![Función personalizada en el editor de reglas](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
-Imagen: selección y configuración de funciones personalizadas en la interfaz del Editor de reglas
+![Función personalizada en el Editor de reglas](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
+Imagen: Selección y configuración de funciones personalizadas en la interfaz del Editor de reglas
 
 **Prácticas recomendadas para el uso de funciones**:
 
-- **Control de errores**: Incluya siempre el comportamiento de reserva para los errores de funciones
+- **Control de errores**: incluir siempre el comportamiento de reserva para los errores de funciones
 - **Rendimiento**: funciones de perfil con volúmenes de datos realistas
-- **Seguridad**: valide todas las entradas para evitar vulnerabilidades de seguridad
-- **Pruebas**: cree casos de prueba que cubran casos normales y extremos
+- **Seguridad**: validar todas las entradas para evitar vulnerabilidades de seguridad
+- **Pruebas**: crear casos de prueba que cubran casos normales y extremos
 
 +++
 
 ## Prácticas recomendadas para el desarrollo de reglas
 
 
-+++ Optimización del rendimiento
++++ Optimización de rendimiento
 
 - Minimice la complejidad de la regla; divida la lógica grande en reglas pequeñas y centradas
 - Ordenar reglas por frecuencia (más común primero)
@@ -554,21 +554,21 @@ Imagen: selección y configuración de funciones personalizadas en la interfaz d
 
 +++
 
-+++ Experiencia de usuario
++++ Experiencia del usuario
 
 - Proporcionar una validación clara y comentarios en línea
-- Evite los cambios visuales molestos; utilice mostrar/ocultar cuidadosamente
-- Pruebas entre dispositivos y diseños
+- Evitar los cambios visuales molestos; utilizar la función de mostrar/ocultar cuidadosamente
+- Probar entre dispositivos y diseños
 
 +++
 
 +++ Higiene del desarrollo
 
-- Prueba con casos extremos y valores conocidos
+- Probar con casos extremos y valores conocidos
 - Verificar en los distintos navegadores
 - Documentar la intención detrás de reglas complejas, no solo la mecánica
 - Mantener un inventario de reglas para formularios grandes
-- Utilice una nomenclatura uniforme para los componentes y las reglas
+- Utilizar una nomenclatura uniforme para los componentes y las reglas
 - Funciones personalizadas de versión y pruebas en entornos que no son de producción
 
 +++
@@ -588,25 +588,25 @@ Imagen: selección y configuración de funciones personalizadas en la interfaz d
 +++ Comportamiento incorrecto
 
 - Revisar operadores y agrupación (Y/O)
-- Fragmentos de expresión de prueba individualmente
+- Probar fragmentos de expresión individualmente
 - Confirmar tipos de datos (números o cadenas)
 
 +++
 
 +++ Problemas de rendimiento
 
-- Simplificación de las condiciones profundamente anidadas
-- Funciones personalizadas de perfil
+- Simplificar las condiciones profundamente anidadas
+- Crear perfiles de funciones personalizadas
 - Minimizar las llamadas externas dentro de las reglas
-- Uso de selectores y referencias específicos
+- Usar selectores y referencias específicos
 
 +++
 
 +++ Problemas de funciones personalizadas
 
-- Confirmar ruta de archivo: `/blocks/form/functions.js`
-- Asegúrese de que las exportaciones con nombre sean correctas
-- Confirme que la compilación incluye los cambios.
+- Confirmar la ruta del archivo: `/blocks/form/functions.js`
+- Asegurarse de que las exportaciones con nombre son correctas
+- Confirmar que la compilación incluye los cambios.
 - Borrar la caché del explorador después de la implementación
 - Validar tipos de parámetros y gestión de errores
 
@@ -614,10 +614,10 @@ Imagen: selección y configuración de funciones personalizadas en la interfaz d
 
 +++ Integración del editor universal
 
-- Confirme que la extensión del Editor de reglas esté habilitada.
-- Seleccione un componente compatible
-- Utilice un navegador compatible (Chrome, Firefox, Safari)
-- Compruebe que tiene los permisos necesarios
+- Confirmar que la extensión del Editor de reglas está habilitada.
+- Seleccionar un componente compatible
+- Utilizar un explorador compatible (Chrome, Firefox, Safari)
+- Comprobar que tiene los permisos necesarios
 
 ## Limitaciones importantes
 
@@ -635,32 +635,32 @@ Imagen: selección y configuración de funciones personalizadas en la interfaz d
 > Consideraciones sobre la producción:
 >
 > - Realizar pruebas exhaustivas en el ensayo
-> - Monitorización del rendimiento después de la implementación
+> - Monitorizar el rendimiento después de la implementación
 > - Tener un plan de reversión para los problemas de reglas
-> - Considere las redes lentas y los dispositivos de baja especificación
+> - Considerar las redes lentas y los dispositivos de baja especificación
 
 ## Resumen
 
-El editor de reglas del editor universal transforma los formularios estáticos en experiencias inteligentes y adaptables que se adaptan a los datos introducidos por el usuario en tiempo real. Al aprovechar la lógica condicional, los cálculos automatizados y las reglas empresariales personalizadas, puede crear flujos de trabajo de formulario sofisticados sin escribir código de aplicación.
+El Editor de reglas del editor universal transforma los formularios estáticos en experiencias inteligentes y adaptables que se adaptan a los datos introducidos por el usuario en tiempo real. Al aprovechar la lógica condicional, los cálculos automatizados y las reglas empresariales personalizadas, puede crear flujos de trabajo de formulario sofisticados sin escribir código de aplicación.
 
 **Funciones clave que ha aprendido**:
 
-- **Lógica condicional**: muestra y oculta campos basados en los datos proporcionados por el usuario para crear experiencias relevantes y enfocadas
-- **Cálculos dinámicos**: Calcule automáticamente valores (impuestos, totales, tasas) a medida que los usuarios interactúen con el formulario
-- **Validación de datos**: implementa la validación en tiempo real con mensajes de comentarios claros y procesables
-- **Funciones personalizadas**: amplíe las capacidades con JavaScript para integraciones y lógica empresarial compleja
-- **Optimización del rendimiento**: aplique las prácticas recomendadas para un desarrollo de reglas eficiente y que se pueda mantener
+- **Lógica condicional**: mostrar y ocultar campos basados en los datos proporcionados por el usuario para crear experiencias relevantes y enfocadas
+- **Cálculos dinámicos**: calcular automáticamente valores (impuestos, totales, tasas) a medida que los usuarios interactúan con el formulario
+- **Validación de datos**: implementar la validación en tiempo real con mensajes de comentarios claros y procesables
+- **Funciones personalizadas**: ampliar las capacidades con JavaScript para integraciones y lógica empresarial compleja
+- **Optimización del rendimiento**: aplicar las prácticas recomendadas para un desarrollo de reglas eficiente y que se pueda mantener
 
 **Valor entregado**:
 
-- **Experiencia del usuario mejorada**: Reduzca la carga cognitiva con revelación progresiva y flujos de formularios inteligentes
-- **Errores reducidos**: Impida los envíos no válidos mediante validación en tiempo real y entrada guiada
-- **Mayor eficiencia**: Automatice los cálculos y la entrada de datos para minimizar el esfuerzo del usuario
-- **Soluciones que se pueden mantener**: Cree reglas reutilizables y bien documentadas que se escalen en toda la organización
+- **Experiencia del usuario mejorada**: reducir la carga cognitiva con revelación progresiva y flujos de formularios inteligentes
+- **Errores reducidos**: impedir los envíos no válidos mediante validación en tiempo real y entrada guiada
+- **Mayor eficiencia**: automatice los cálculos y la entrada de datos para minimizar el esfuerzo del usuario
+- **Soluciones que se pueden mantener**: crear reglas reutilizables y bien documentadas que se escalen en toda la organización
 
 **Impacto empresarial**:
 
-Forms se convierte en potentes herramientas para la recopilación de datos, la calificación de posibles clientes y la participación del usuario. El Editor de reglas permite a los autores no técnicos implementar una lógica empresarial sofisticada, reducir los costes de desarrollo y mejorar las tasas de finalización de los formularios y la calidad de los datos.
+Los formularios se convierten en potentes herramientas para la recopilación de datos, la calificación de posibles clientes y la participación del usuario. El Editor de reglas permite a los autores no técnicos implementar una lógica empresarial sofisticada, reducir los costes de desarrollo y mejorar las tasas de finalización de los formularios y la calidad de los datos.
 
 +++
 
@@ -668,15 +668,15 @@ Forms se convierte en potentes herramientas para la recopilación de datos, la c
 
 **Ruta de aprendizaje recomendada**:
 
-1. **Empiece con lo básico**: cree reglas sencillas de mostrar y ocultar para comprender los conceptos principales
-2. **Práctica con tutoriales**: Utiliza el ejemplo de la calculadora de impuestos como base para tus propios formularios
-3. **Expandir gradualmente**: Agregue expresiones matemáticas y reglas de validación a medida que aumente su confianza
-4. **Implementar funciones personalizadas**: Desarrolle funciones de JavaScript para los requisitos empresariales especializados
-5. **Optimizar y escalar**: aplique las prácticas recomendadas de rendimiento y mantenga la documentación de reglas
+1. **Empezar con lo básico**: crear reglas sencillas de mostrar y ocultar para comprender los conceptos principales
+2. **Practicar con tutoriales**: utilizar el ejemplo de la calculadora de impuestos como base para sus propios formularios
+3. **Expandir gradualmente**: añadir expresiones matemáticas y reglas de validación a medida que aumente la confianza
+4. **Implementar funciones personalizadas**: desarrollar funciones de JavaScript para los requisitos empresariales especializados
+5. **Optimizar y escalar**: aplicar las prácticas recomendadas de rendimiento y mantener la documentación de reglas
 
 **Recursos adicionales**:
 
 - [Documentación del editor universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=es) para un contexto más amplio
 - [Guía de Extension Manager](/help/implementing/developing/extending/extension-manager.md) para habilitar funciones adicionales
-- [Formularios Edge Delivery Services](/help/edge/docs/forms/overview.md) para obtener instrucciones completas de desarrollo de formularios
+- [Formularios de Edge Delivery Services](/help/edge/docs/forms/overview.md) para obtener instrucciones completas de desarrollo de formularios
 

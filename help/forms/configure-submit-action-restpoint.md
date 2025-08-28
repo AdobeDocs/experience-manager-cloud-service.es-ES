@@ -1,20 +1,20 @@
 ---
 title: ¿Cómo configurar la acción de envío Enviar al punto final REST para un formulario adaptable?
-description: Descubra los pasos para configurar el extremo REST al enviar un formulario adaptable.
+description: Descubra los pasos para configurar el punto final REST al enviar un formulario adaptable.
 keywords: Punto final REST de AEM Forms, Enviar a punto final REST, Publicar datos en URL REST, Configurar acción de punto final REST
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1471'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Configurar un formulario adaptable para la acción de envío del punto final REST
 
-<span class="preview">: la capacidad para especificar el extremo REST mediante la configuración es un programa que lo adopta por anticipado y solo se aplica a los componentes principales y a Edge Delivery Services Forms. Puede escribir a `aem-forms-ea@adobe.com` desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad. </span>
+<span class="preview"> La capacidad para especificar el punto final REST mediante la configuración es un programa para primeros usuarios y solo se aplica a los componentes principales y a formularios de Edge Delivery Services. Puede escribir a `aem-forms-ea@adobe.com` desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
 Utilice la acción **[!UICONTROL Enviar al punto final REST]** para publicar los datos enviados en una URL de REST. La URL puede ser de un servidor interno (el servidor en el que se procesa el formulario) o externo.
 
@@ -33,7 +33,7 @@ Algunas de las ventajas de configurar la acción de envío **[!UICONTROL Enviar 
 
 >[!BEGINTABS]
 
->[!TAB Componente Base]
+>[!TAB Componente base]
 
 Para configurar la acción de envío basada en la especificación de API abierta de Swagger para formularios adaptables basados en componentes de base, haga lo siguiente:
 
@@ -42,8 +42,8 @@ Para configurar la acción de envío basada en la especificación de API abierta
 
    ![Configuración de la acción de Enviar a punto final REST](/help/forms/assets/submit-action-restendpoint.png)
 
-   Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, `/content/restEndPoint`. Para estas peticiones POST se utiliza la información de autenticación de la solicitud de envío.
-Esta opción le permite introducir directamente el extremo REST de destinatario
+   Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, `/content/restEndPoint`. Para esas solicitudes POST se utiliza la información de autenticación de la solicitud de envío.
+Esta opción le permite introducir directamente el punto final REST de destino.
 Para enviar datos a un servidor externo, proporcione una URL. El formato de la URL es el siguiente `https://host:port/path_to_rest_end_point`. Asegúrese de configurar la ruta para controlar la petición POST de forma anónima.
    ![Asignación de valores de campo pasados como parámetros de la página de agradecimiento](assets/post-enabled-actionconfig.png)
 
@@ -58,7 +58,7 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
-   En este ejemplo, `data` almacena los datos XML y `att` almacena los datos adjuntos.
+   En este ejemplo, `data` almacena los datos XML y `att` almacena datos de archivos adjuntos.
 La acción de envío **[!UICONTROL Enviar al punto final REST]** envía los datos rellenados en el formulario a una página de confirmación configurada como parte de la petición HTTP GET. Puede añadir el nombre de los campos que desea solicitar. El formato de la solicitud es el siguiente:
    `{fieldName}={request parameter name}`
 
@@ -81,13 +81,13 @@ Para configurar la acción de envío basada en la especificación de API abierta
 
    ![Configuración del punto final REST](assets/rest-service-endpoint-config.png)
 
-   Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, `/content/restEndPoint`. Para esas peticiones POST se utiliza la información de autenticación de la solicitud de envío.
+   Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, `/content/restEndPoint`. Para esas solicitudes POST se utiliza la información de autenticación de la solicitud de envío.
 
-   Tiene dos opciones para especificar el extremo REST:
+   Tiene dos opciones para especificar el punto final REST:
 
    +++URL
 
-   Esta opción le permite introducir directamente el extremo REST de destinatario
+   Esta opción le permite introducir directamente el punto final REST de destino.
 Para enviar datos a un servidor externo, proporcione una URL. El formato de la URL es el siguiente `https://host:port/path_to_rest_end_point`. Asegúrese de configurar la ruta para controlar la petición POST de forma anónima.
 
    ![Asignación de valores de campo pasados como parámetros de la página de agradecimiento](assets/post-enabled-actionconfig.png)
@@ -115,36 +115,36 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
 
    También puede **[!UICONTROL Habilitar la petición POST]** y proporcionar una URL para publicar la solicitud. Para enviar datos al servidor de AEM que aloja el formulario, utilice una ruta relativa correspondiente a la ruta raíz del servidor de AEM. Por ejemplo, `/content/forms/af/SampleForm.html`. Para enviar datos a cualquier otro servidor, utilice la ruta absoluta.
 
-   +++
++++
 
    +++Configuración
 
-   Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el Explorador de configuración de AEM. Puede seleccionar la configuración creada para el tipo de autenticación de extremo de REST de servicio y los tipos de contenido. Para obtener más información sobre el tipo de autenticación y los tipos de contenido, visite [configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
+   Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el explorador de configuración de AEM. Puede seleccionar la configuración creada para su tipo de autenticación de punto final REST de servicio y los tipos de contenido. Para obtener más información acerca del tipo de autenticación y los tipos de contenido, visite [Configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
 
-   +++
++++
 
 1. Haga clic en **[!UICONTROL Listo]**.
 
 >[!TAB Editor universal]
 
-Para configurar la acción de envío basada en la especificación de la API abierta de Swagger para el formulario adaptable creado en el Editor universal, haga lo siguiente:
+Para configurar la acción de envío basada en la especificación de la API abierta de Swagger para el formulario adaptable creado en el editor universal, haga lo siguiente:
 
 1. Abra el formulario adaptable para editarlo.
 1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
-Aparecerá el cuadro de diálogo **Propiedades del formulario**.
+Aparece el cuadro de diálogo **Propiedades del formulario**.
    >[!NOTE]
    >
-   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
-   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
-1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Enviar al extremo REST]**.
+   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
+   > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar las extensiones del editor universal.
+1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Enviar al punto final REST]**.
 
-   Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, `/content/restEndPoint`. Para esas peticiones POST se utiliza la información de autenticación de la solicitud de envío.
+   Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, `/content/restEndPoint`. Para esas solicitudes POST se utiliza la información de autenticación de la solicitud de envío.
 
-   Tiene dos opciones para especificar el extremo REST:
+   Tiene dos opciones para especificar el punto final REST:
 
    +++URL
 
-   Esta opción le permite introducir directamente el extremo REST de destinatario
+   Esta opción le permite introducir directamente el punto final REST de destino.
 Para enviar datos a un servidor externo, proporcione una URL. El formato de la URL es el siguiente `https://host:port/path_to_rest_end_point`. Asegúrese de configurar la ruta para controlar la petición POST de forma anónima.
 
    ![Asignación de valores de campo pasados como parámetros de la página de agradecimiento](assets/post-enabled-actionconfig.png)
@@ -172,13 +172,13 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
 
    También puede **[!UICONTROL Habilitar la petición POST]** y proporcionar una URL para publicar la solicitud. Para enviar datos al servidor de AEM que aloja el formulario, utilice una ruta relativa correspondiente a la ruta raíz del servidor de AEM. Por ejemplo, `/content/forms/af/SampleForm.html`. Para enviar datos a cualquier otro servidor, utilice la ruta absoluta.
 
-   +++
++++
 
    +++Configuración
 
-   Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el Explorador de configuración de AEM. Puede seleccionar la configuración creada para el tipo de autenticación de extremo de REST de servicio y los tipos de contenido. Para obtener más información sobre el tipo de autenticación y los tipos de contenido, visite [configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
+   Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el explorador de configuración de AEM. Puede seleccionar la configuración creada para su tipo de autenticación de punto final REST de servicio y los tipos de contenido. Para obtener más información acerca del tipo de autenticación y los tipos de contenido, visite [configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
 
-   +++
++++
 
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 

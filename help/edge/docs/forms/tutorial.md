@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1921'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -111,8 +111,8 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
 1. Ahora que tiene la carpeta de contenido configurada, es hora de vincularla al proyecto en GitHub que creó anteriormente con el elemento repetitivo de AEM Forms. Para conectarse, haga lo siguiente:
 
    1. Vaya al repositorio de GitHub que creó anteriormente con el elemento repetitivo de AEM Forms.
-   1. Agregue el archivo `fstab.yaml` en la carpeta raíz.
-   1. Agregue la referencia con la ruta a la carpeta compartida con el usuario de AEM (forms@adobe.com).
+   1. Agregue el archivo `fstab.yaml` a la carpeta raíz.
+   1. Añada la referencia por la ruta de acceso a la carpeta que compartió con el usuario de AEM (forms@adobe.com).
 
       ![Contenido de muestra en Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
       Para obtener más información sobre la administración de archivos en Microsoft SharePoint, consulte [Cómo utilizar Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
-   1. Confirme el archivo `fsatb.yaml`, una vez que haya agregado la referencia y todo se vea bien. Si tiene algún problema con la compilación, consulte [Solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
+   1. Confirme el archivo actualizado `fsatb.yaml`, una vez que haya actualizado la referencia y todo se vea bien. Si tiene algún problema con la compilación, consulte [Solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
 
       ![Confirme el archivo fsatab.yaml actualizado](/help/edge/assets/commit-updated-fstab-yaml.png)
 
@@ -241,7 +241,7 @@ Para ponerse en marcha con un entorno de desarrollo de AEM local en poco tiempo,
        npm install -g @adobe/aem-cli
    ```
 
-1. Clone su proyecto de GitHub: Clone su repositorio de proyecto desde GitHub usando el siguiente comando, reemplazando `<owner>` con el propietario del repositorio y `<repo>` con el nombre del repositorio:
+1. Clone su proyecto de GitHub: clone su repositorio de proyecto desde GitHub usando el siguiente comando, reemplazando `<owner>` con el propietario del repositorio y `<repo>` con el nombre del repositorio:
 
    ```
    git clone https://github.com/<owner>/<repo>

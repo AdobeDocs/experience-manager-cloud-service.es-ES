@@ -6,9 +6,9 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 role: User, Developer
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '242'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: Cómo integrar el flujo de trabajo de AEM con un formulario adaptable
-description: Explore el proceso de inicio automatizado del flujo de trabajo con la acción de envío de AEM Forms.
+title: Integración del flujo de trabajo de AEM con un formulario adaptable
+description: Explore el proceso de inicio automatizado del flujo de trabajo con la acción de envío de formularios de AEM Forms.
 keywords: Flujo de trabajo de AEM, Integración del formulario adaptable con el flujo de trabajo de AEM, Invocar la acción de envío del flujo de trabajo de AEM
 feature: Adaptive Forms, Core Components
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
 role: User, Developer
 source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1434'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -45,12 +45,12 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 >[!BEGINTABS]
 
->[!TAB Componente Base]
+>[!TAB Componente base]
 
-Para configurar un proceso automatizado con [Flujo de trabajo de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es#extending-aem) para un formulario adaptable basado en componentes de base, realice los siguientes pasos:
+Para configurar el proceso automatizado con el [flujo de trabajo de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es#extending-aem) para un formulario adaptable basado en los componentes de base, realice los siguientes pasos:
 
 1. Abra el formulario adaptable para editarlo y vaya a la sección **[!UICONTROL Envío]** de las propiedades del contenedor del formulario adaptable.
-1. En la lista desplegable **[!UICONTROL Enviar acción]**, seleccione **Enviar acción** como **[!UICONTROL Invocar un flujo de trabajo de AEM]**.
+1. En la lista desplegable **[!UICONTROL Acción de envío]**, seleccione la opción **Acción de envío** como **[!UICONTROL Invocar un flujo de trabajo de AEM]**.
 1. Seleccione el modelo de flujo de trabajo en la lista desplegable **[!UICONTROL Modelo de flujo de trabajo]**.
 1. Seleccione una opción en la lista desplegable **[!UICONTROL Almacenar archivo de datos usando]**.
 
@@ -73,7 +73,7 @@ Para configurar un proceso automatizado con [Flujo de trabajo de AEM](https://ex
 
 >[!TAB Componente principal]
 
-Para configurar el proceso automatizado con [Flujo de trabajo de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es#extending-aem) para un formulario adaptable basado en componentes principales, realice los siguientes pasos:
+Para configurar el proceso automatizado con el [flujo de trabajo de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es#extending-aem) para un formulario adaptable basado en componentes de base, realice los siguientes pasos:
 
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
@@ -102,16 +102,16 @@ Para configurar el proceso automatizado con [Flujo de trabajo de AEM](https://ex
 
 >[!TAB Editor universal]
 
-Para configurar el proceso automatizado con [Flujo de trabajo de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es#extending-aem) para un formulario adaptable creado en el editor universal, realice los siguientes pasos:
+Para configurar el proceso automatizado con el [flujo de trabajo de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es#extending-aem) para un formulario adaptable creado en el editor universal, realice los siguientes pasos:
 
 1. Abra el formulario adaptable para editarlo.
 1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
-Aparecerá el cuadro de diálogo **Propiedades del formulario**.
+Aparece el cuadro de diálogo **Propiedades del formulario**.
 
    >[!NOTE]
    >
-   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
-   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
+   > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar las extensiones del editor universal.
 
 1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Invocar un flujo de trabajo de AEM]**.
 

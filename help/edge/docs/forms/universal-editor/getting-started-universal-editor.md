@@ -1,50 +1,50 @@
 ---
 title: Introducción a Edge Delivery Services para AEM Forms con el editor universal
-description: Aprenda a crear y publicar formularios de alto rendimiento con Edge Delivery Services con la creación de WYSIWYG en el Editor universal.
+description: Aprenda a crear y publicar formularios de alto rendimiento con Edge Delivery Services con la creación de WYSIWYG en el editor universal.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2609'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
 # Introducción a Edge Delivery Services para AEM Forms con el editor universal
 
-| Método de creación | Guía  |
+| Método de creación | Guía |
 |---------------------------------|-----------------------------------------------------------------------|
 | **Editor universal (WYSIWYG)** | Este artículo |
 | **Creación basada en documentos** | [Tutorial basado en documentos](/help/edge/docs/forms/tutorial.md) |
 
 Edge Delivery Services para AEM Forms combina la entrega web de alto rendimiento con la creación de WYSIWYG en el editor universal. Esta guía explica cómo crear, personalizar y publicar formularios de carga rápida.
 
-## Lo que vas a lograr
+## Objetivos
 
-Al final de este tutorial, deberá hacer lo siguiente:
+Al final de este tutorial, podrá hacer lo siguiente:
 
-- Configuración de un repositorio de GitHub con el bloque de Forms adaptable
-- Creación de un sitio de AEM integrado con Edge Delivery Services
-- Generar y publicar formularios con el Editor universal
-- Configuración del entorno de desarrollo local
+- Configurar un repositorio de GitHub con el bloque de formularios adaptables.
+- Crear un sitio de AEM integrado con Edge Delivery Services.
+- Generar y publicar formularios con el editor universal.
+- Configurar su entorno de desarrollo local
 
-## Elija su ruta
+## Elegir la ruta
 
 Seleccione el enfoque que coincida con su escenario:
 
-![Elegir La Guía De Decisión De Ruta](/help/edge/docs/forms/universal-editor/assets/choose-your-path.svg)
+![Guía de decisión para elegir la ruta](/help/edge/docs/forms/universal-editor/assets/choose-your-path.svg)
 *Figura: Guía visual para ayudarlo a elegir la ruta de implementación correcta*
 
-| **Ruta A: Nuevo Proyecto** | **Ruta B: Proyecto Existente** |
+| **Ruta A: nuevo proyecto** | **Ruta B: proyecto existente** |
 |----------------------------------------|-------------------------------------------|
-| Comience con una plantilla preconfigurada | Añadir formularios al proyecto actual de AEM |
-| **Lo mejor para:** Nuevas implementaciones | **Mejor para:** AEM Sites existente |
-| **Lo que obtienes:** Bloque preconfigurado de Forms | **Lo que obtienes:** Forms se agregó al sitio existente |
-| **Pasos:** → de plantilla → Forms | **Pasos:** Integración → Configuración → Forms |
-| [Iniciar con ruta de acceso A](#path-a-create-new-project-with-forms) | [Iniciar con ruta de acceso B](#path-b-add-forms-to-existing-project) |
+| Comenzar con una plantilla preconfigurada | Añadir formularios al proyecto actual de AEM |
+| **Lo mejor para:** nuevas implementaciones | **Lo mejor para:** AEM Sites existente |
+| **Lo que obtiene:** bloque de formularios preconfigurado | **Lo que obtienes:** formularios añadidos al sitio existente |
+| **Pasos:** Plantilla → Configuración → Formularios | **Pasos:** Integración → Configuración → Formularios |
+| [Empezar con la ruta A](#path-a-create-new-project-with-forms) | [Empezar con la ruta B](#path-b-add-forms-to-existing-project) |
 
 ## Requisitos previos
 
@@ -53,67 +53,67 @@ Para garantizar una experiencia agradable y sin problemas con Edge Delivery Serv
 ### Requisitos de acceso
 
 - **Cuenta de GitHub**: debe tener una cuenta de GitHub con permisos para crear nuevos repositorios. Esto es esencial para administrar el código fuente del proyecto y colaborar con el equipo.
-- **Acceso de creación de AEM as a Cloud Service**: Asegúrese de que tenga acceso de nivel de autor a su entorno de AEM as a Cloud Service. Este acceso es necesario para crear, editar y publicar formularios.
+- **Acceso de creación de AEM as a Cloud Service**: asegúrese de que tenga acceso de nivel de autor a su entorno de AEM as a Cloud Service. Este acceso es necesario para crear, editar y publicar formularios.
 
 ### Requisitos técnicos
 
 - **Familiaridad con Git**: debería sentirse cómodo realizando operaciones básicas de Git, como clonar repositorios, confirmar cambios y enviar actualizaciones. Estas habilidades son fundamentales para el control de código fuente y la colaboración en proyectos.
 - **Comprensión de las tecnologías web**: se recomienda tener conocimientos prácticos de HTML, CSS y JavaScript. Estas tecnologías forman la base de la personalización y solución de problemas de los formularios.
-- **Node.js (versión 16 o superior)**: Se requiere Node.js para el desarrollo local y la ejecución de las herramientas de compilación. Asegúrese de que tiene instalada la versión 16 o posterior de en el sistema.
-- **Administrador de paquetes (npm o yarn)**: Necesitará npm (Administrador de paquetes de nodos) o yarn para administrar dependencias y scripts de proyectos.
+- **Node.js (versión 16 o superior)**: se requiere Node.js para el desarrollo local y la ejecución de las herramientas de compilación. Asegúrese de que tiene instalada la versión 16 o posterior en el sistema.
+- **Administrador de paquetes (npm o yarn)**: necesitará npm (Administrador de paquetes de nodos) o yarn para administrar dependencias y scripts de proyectos.
 
 ### Fondo recomendado
 
-- **Conceptos de AEM Sites**: Una comprensión básica de AEM Sites, que incluye la estructura del sitio y la creación de contenido, le ayudará a desplazarse por los formularios e integrarlos de manera eficaz.
-- **Principios de diseño de formularios**: La familiaridad con las prácticas recomendadas en el diseño de formularios, como la facilidad de uso, la accesibilidad y la validación de datos, le permitirá crear formularios eficaces y fáciles de usar.
-- **Experiencia con editores de WYSIWYG**: La experiencia previa con editores de What You See Is What You Get (WYSIWYG) le ayudará a aprovechar las capacidades de creación visual del editor universal de forma más eficaz.
+- **Conceptos de AEM Sites**: una comprensión básica de AEM Sites, que incluye la estructura del sitio y la creación de contenido, le ayudará a desplazarse por los formularios e integrarlos de manera eficaz.
+- **Principios de diseño de formularios**: la familiaridad con las prácticas recomendadas en el diseño de formularios, como la facilidad de uso, la accesibilidad y la validación de datos, le permitirá crear formularios eficaces y fáciles de usar.
+- **Experiencia con editores de WYSIWYG**: la experiencia previa con editores de tipo What You See Is What You Get (WYSIWYG, es decir, lo que ve es lo que obtiene) le ayudará a aprovechar las capacidades de creación visual del editor universal de forma más eficaz.
 
 >[!TIP]
 >
 > ¿Es nuevo en AEM? Comience con la [Guía de introducción de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=es).
 
-## Ruta A: Crear un nuevo proyecto con Forms
+## Ruta A: Crear un nuevo proyecto con formularios
 
-**Recomendado para:** Proyectos nuevos, proyectos piloto o iniciativas de prueba de concepto
+**Recomendado para:** proyectos nuevos, proyectos piloto o iniciativas de prueba de concepto
 
-Aproveche las plantillas de AEM Forms para acelerar la configuración del proyecto. Esta plantilla ofrece una plantilla lista para usar que integra perfectamente el bloque de Forms adaptable, lo que le permite crear e implementar rápidamente formularios en su sitio de AEM.
+Aproveche los elementos repetitivos de AEM Forms para acelerar la configuración del proyecto. Este elemento repetitivo está listo para usar e integra perfectamente el bloque de formularios adaptables, lo que le permite crear e implementar rápidamente formularios en su sitio de AEM.
 
 ### Información general
 
 Para iniciar correctamente el nuevo proyecto con formularios integrados, deberá:
 
-1. Cree un repositorio de GitHub con la plantilla de plantillas de AEM Forms.
-2. Configure AEM Code Sync para automatizar la sincronización de contenido entre AEM y el repositorio.
-3. Configure la conexión entre el proyecto de GitHub y el entorno de AEM.
-4. Establezca y publique un nuevo sitio de AEM.
-5. Agregar y administrar formularios mediante el Editor universal.
+1. Crear un repositorio de GitHub con la plantilla de elemento repetitivo de AEM Forms.
+2. Establecer la sincronización de código de AEM para automatizar la sincronización de contenido entre AEM y el repositorio.
+3. Configurar la conexión entre el proyecto de GitHub y el entorno de AEM.
+4. Establecer y publicar un nuevo sitio de AEM.
+5. Añadir y administrar formularios mediante el editor universal.
 
-Las siguientes secciones le guiarán a través de cada paso en detalle, lo que garantiza una experiencia de configuración del proyecto fluida y eficiente.
+Las siguientes secciones le guiarán a través de cada paso detalladamente, lo que garantiza una experiencia de configuración del proyecto fluida y eficiente.
 
 +++Paso 1: Crear un repositorio de GitHub a partir de una plantilla
 
-1. **Acceder a la plantilla de plantillas de AEM Forms**
-   - Ir a [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms)
+1. **Acceder a la plantilla de elementos repetitivos de AEM Forms**
+   - Vaya a [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
-   ![Plantilla de plantillas de AEM Forms](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
-   *Figura: Repositorio de plantillas de AEM Forms con bloque de Forms adaptable preconfigurado*
+   ![Plantilla de elementos repetitivos de AEM Forms](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
+   *Figura: Repositorio de elementos repetitivos de AEM Forms con bloque de formularios adaptables preconfigurado*
 
 2. **Crear su repositorio**
-   - Haga clic en **Usar esta plantilla** > **Crear un nuevo repositorio**
+   - Haga clic en **Usar esta plantilla** > **Crear un nuevo repositorio**.
 
-   ![Crear repositorio a partir de la plantilla](/help/edge/docs/forms/assets/use-eds-form-template.png)
-   *Imagen: uso de la plantilla para crear un nuevo repositorio*
+   ![Crear un repositorio a partir de una plantilla](/help/edge/docs/forms/assets/use-eds-form-template.png)
+   *Imagen: Uso de la plantilla para crear un nuevo repositorio*
 
-3. **Configurar la configuración del repositorio**
+3. **Configurar el repositorio**
    - **Propietario**: seleccione su cuenta u organización de GitHub
-   - **Nombre del repositorio**: Elija un nombre descriptivo (por ejemplo, `my-forms-project`)
-   - **Visibilidad**: Seleccione **Público** (recomendado para Edge Delivery Services)
-   - Haga clic en **Crear repositorio**
+   - **Nombre del repositorio**: elija un nombre descriptivo (por ejemplo, `my-forms-project`)
+   - **Visibilidad**: seleccione **Público** (recomendado para Edge Delivery Services)
+   - Haga clic en **Crear repositorio**.
 
    ![Configuración del repositorio](/help/edge/docs/forms/assets/name-eds-repo.png)
    *Imagen: Configuración del nuevo repositorio con visibilidad pública*
 
-**Validación:** Confirme que tiene un nuevo repositorio de GitHub basado en la plantilla de plantillas de AEM Forms.
+**Validación:** confirme que tiene un nuevo repositorio de GitHub basado en la plantilla de elementos repetitivos de AEM Forms.
 
 +++
 
@@ -121,18 +121,18 @@ Las siguientes secciones le guiarán a través de cada paso en detalle, lo que g
 
 AEM Code Sync sincroniza automáticamente los cambios de contenido entre el entorno de creación de AEM y el repositorio de GitHub.
 
-1. **Instalar la aplicación de GitHub**
-   - Ir a [https://github.com/apps/aem-code-sync/installations/new](https://github.com/apps/aem-code-sync/installations/new)
+1. **Instalación de la aplicación de GitHub**
+   - Vaya a [https://github.com/apps/aem-code-sync/installations/new](https://github.com/apps/aem-code-sync/installations/new).
 
 2. **Configurar permisos de acceso**
-   - Seleccionar **Solo seleccionar repositorios**
-   - Elija el repositorio recién creado
-   - Haga clic en **Guardar**
+   - Seleccione **Solo seleccionar repositorios**.
+   - Elija el repositorio recién creado.
+   - Haga clic en **Guardar**.
 
-   ![Instalación de sincronización de código de AEM](/help/edge/docs/forms/assets/aem-code-sync-up.png)
+   ![Instalación de AEM Code Sync](/help/edge/docs/forms/assets/aem-code-sync-up.png)
    *Imagen: instalando AEM Code Sync con permisos específicos del repositorio*
 
-**Punto de comprobación:** La sincronización de código de AEM ya está instalada y tiene acceso a su repositorio.
+**Punto de comprobación:** AEM Code Sync ya está instalado y tiene acceso a su repositorio.
 
 +++
 
@@ -142,16 +142,16 @@ El archivo `fstab.yaml` conecta el repositorio de GitHub con el entorno de creac
 
 1. **Vaya a su repositorio**
    - Vaya al repositorio de GitHub recién creado
-   - Debería ver los archivos de plantillas de AEM Forms
+   - Debería ver los archivos Boilerplate de AEM Forms
 
 2. **Crear el archivo fstab.yaml**
    - Haga clic en **Agregar archivo** > **Crear nuevo archivo** en el directorio raíz
-   - Asigne un nombre al archivo `fstab.yaml`
+   - Nombre al archivo `fstab.yaml`
 
-   ![Creando archivo fstab.yaml](/help/edge/docs/forms/assets/open-fstab.png)
-   *Figura: Creando el archivo de configuración fstab.yaml*
+   ![Creación del archivo fstab.yaml](/help/edge/docs/forms/assets/open-fstab.png)
+   *Figura: crear el archivo de configuración fstab.yaml*
 
-3. **Agregue sus detalles de conexión de AEM**
+3. **Agregue sus datos de conexión de AEM**
 
    Copie y pegue la siguiente configuración, reemplazando los marcadores de posición:
 
@@ -172,21 +172,21 @@ El archivo `fstab.yaml` conecta el repositorio de GitHub con el entorno de creac
      /: https://author-p12345-e67890.adobeaemcloud.com/bin/franklin.delivery/mycompany/my-forms-project/main
    ```
 
-   ![Editando archivo fstab.yaml](/help/edge/docs/forms/assets/edit-fstab-file.png)
-   *Figura: Configuración del punto de montaje para la integración de AEM*
+   ![Editar el archivo fstab.yaml](/help/edge/docs/forms/assets/edit-fstab-file.png)
+   *Figura: configuración del punto de montaje para la integración de AEM*
 
-4. **Confirmar la configuración**
-   - Añada un mensaje de compromiso: &quot;Add AEM integration configuration&quot;
+4. **Confirme la configuración**
+   - Añada el mensaje de compromiso: “Añadir configuración de la integración de AEM”
    - Haga clic en **Confirmar nuevo archivo**
 
-   ![Confirmando cambios fstab](/help/edge/docs/forms/assets/commit-fstab-changes.png)
+   ![Confirmar cambios de fstab](/help/edge/docs/forms/assets/commit-fstab-changes.png)
    *Figura: confirmando la configuración de fstab.yaml*
 
-**Validación:** Confirme la conexión del repositorio de GitHub a AEM.
+**Validación:** confirme la conexión del repositorio de GitHub a AEM.
 
-    >[!NOTE]
+    >[!NOTA]
     >
-    >¿Tiene problemas de compilación? Ver [solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
+>¿Tiene problemas de compilación? Consulte [Solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
 
 +++
 
@@ -194,92 +194,92 @@ El archivo `fstab.yaml` conecta el repositorio de GitHub con el entorno de creac
 
 1. **Acceder a la consola de AEM Sites**
    - Inicie sesión en la instancia de creación de AEM as a Cloud Service.
-   - Vaya a **Sitios**
+   - Vaya a **Sites**
 
-   ![Consola AEM Sites](/help/edge/assets/select-sites.png)
-   *Imagen: acceso a la consola de AEM Sites*
+   ![Consola de AEM Sites](/help/edge/assets/select-sites.png)
+   *Figura: acceso a la consola de AEM Sites*
 
-2. **Iniciar la creación del sitio**
-   - Haga clic en **Crear** > **Sitio a partir de la plantilla**
+2. **Iniciar creación de sitios**
+   - Haga clic en **Crear** > **Sitio a partir de una plantilla**
 
-   ![Crear opción de sitio](/help/edge/docs/forms/assets/create-sites.png)
-   *Imagen: creando un nuevo sitio a partir de una plantilla*
+   ![Opción de creación de sitio](/help/edge/docs/forms/assets/create-sites.png)
+   *Figura: creación de un nuevo sitio a partir de una plantilla*
 
-3. **Seleccione la plantilla de Edge Delivery Services**
-   - Elija la plantilla **Edge Delivery Services Site**
+3. **Seleccionar plantilla de Edge Delivery Services**
+   - Elija la plantilla **sitio de Edge Delivery Services**
    - Haga clic en **Siguiente**
 
-   ![Selección de plantilla del sitio](/help/edge/docs/forms/assets/select-site-template.png)
+   ![Selección de plantilla de sitio](/help/edge/docs/forms/assets/select-site-template.png)
    *Figura: seleccionar la plantilla del sitio de Edge Delivery Services*
 
    >[!NOTE]
    >
-   >¿No está disponible la plantilla **?** Si no ve la plantilla de Edge Delivery Services:
+   >**¿Plantilla no disponible?** Si no ve la plantilla de Edge Delivery Services:
    >
    >1. Haga clic en **Importar** para cargar la plantilla
    >2. Descargar plantillas de [versiones de GitHub](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
 
-4. **Configurar el sitio**
+4. **Configure el sitio**
 
    Especifique la siguiente información:
 
-   | Campo | Valor | Ejemplos |
+   | Campo | Valor | Ejemplo |
    |-----------------|-----------------------------|-----------------------------------------|
    | **Título del sitio** | Nombre descriptivo del sitio | &quot;Mi proyecto de Forms&quot; |
-   | **Nombre del sitio** | Nombre descriptivo de la URL | &quot;my-forms-project&quot; |
-   | **URL de GitHub** | La URL de su repositorio | `https://github.com/mycompany/my-forms-project` |
+   | **Nombre del sitio** | Nombre descriptivo de la URL | &quot;mi-proyecto-forms&quot; |
+   | **URL de GitHub** | URL del repositorio | `https://github.com/mycompany/my-forms-project` |
 
    ![Configuración del sitio](/help/edge/docs/forms/assets/create-aem-site.png)
-   *Imagen: Configuración del nuevo sitio de AEM con la integración de GitHub*
+   *Figura: configuración del nuevo sitio de AEM con la integración de GitHub*
 
-5. **Creación completa del sitio**
-   - Revise la configuración
+5. **Creación completa de sitios**
+   - Revise sus ajustes
    - Haga clic en **Crear**
 
-   ![Confirmar la creación del sitio](/help/edge/docs/forms/assets/click-ok-aem-site.png)
-   *Imagen: confirmando la creación del sitio*
+   ![Confirmar creación del sitio](/help/edge/docs/forms/assets/click-ok-aem-site.png)
+   *Figura: confirmación de la creación del sitio*
 
-   **¡Correcto!**: el sitio de AEM se ha creado y conectado a GitHub.
+   **¡Correcto!** El sitio de AEM se ha creado y conectado a GitHub.
 
-6. **Abrir en editor universal**
+6. **Abrir en el editor universal**
    - En la consola Sitios, busque el nuevo sitio
-   - Seleccionar la página `index`
-   - Haga clic en **Editar**
+   - Seleccione la página `index`
+   - Haga clic en **Editar**.
 
    ![Editar sitio en el editor universal](/help/edge/docs/forms/assets/edit-site.png)
-   *Imagen: abriendo el sitio para editarlo*
+   *Imagen: abrir el sitio para editarlo*
 
    El editor universal se abre en una nueva pestaña, que proporciona funciones de creación de WYSIWYG.
 
-   ![Interfaz de editor universal](/help/edge/docs/forms/assets/site-in-universal-editor.png)
+   ![Interfaz del editor universal](/help/edge/docs/forms/assets/site-in-universal-editor.png)
    *Imagen: el sitio se abrió en el editor universal para la edición de WYSIWYG*
 
-**Validación:** Confirme que su sitio de AEM está listo para la creación de formularios.
+**Validación:** confirme que su sitio de AEM está listo para la creación de formularios.
 
 +++
 
 +++Paso 5: Publicación del sitio
 
-La publicación hace que el sitio esté disponible en Edge Delivery Services para el acceso global.
+La publicación hace que el sitio esté disponible en Edge Delivery Services para su acceso global.
 
 1. **Publicación rápida desde la consola Sitios**
    - Vuelva a la consola de AEM Sites.
    - Seleccione las páginas del sitio (o seleccione todo con Ctrl+A)
    - Haga clic en **Publicación rápida**
 
-   ![Publicando sitio de AEM](/help/edge/docs/forms/assets/publish-sites.png)
-   *Imagen: seleccionando páginas para la publicación rápida*
+   ![Editar sitio de AEM](/help/edge/docs/forms/assets/publish-sites.png)
+   *Figura: seleccionando páginas para la publicación rápida*
 
 2. **Confirmar publicación**
    - En el cuadro de diálogo de confirmación, haga clic en **Publicar**
 
-   ![Cuadro De Diálogo De Publicación Rápida](/help/edge/docs/forms/assets/quick-publish.png)
-   *Figura: Confirmando la acción de publicación*
+   ![Cuadro de diálogo de publicación rápida](/help/edge/docs/forms/assets/quick-publish.png)
+   *Figura: confirmando la acción de publicación*
 
-   **Alternativa:** También puede publicar directamente desde el Editor universal con el botón Publicar.
+   **Alternativa:** también puede publicar directamente desde el Editor universal pulsando el botón Publicar.
 
    ![Publicar desde el editor universal](/help/edge/docs/forms/assets/qui.png)
-   *Figura: Publicación directamente desde el editor universal*
+   *Figura: publicación directamente desde el editor universal*
 
 3. **Acceda a su sitio activo**
 
@@ -301,7 +301,7 @@ La publicación hace que el sitio esté disponible en Edge Delivery Services par
    https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
    ```
 
-**Validación:** Confirma que tu sitio está activo en Edge Delivery Services.
+**Validación:** confirme que su sitio está activo en Edge Delivery Services.
 
 >[!TIP]
 >
@@ -310,13 +310,13 @@ La publicación hace que el sitio esté disponible en Edge Delivery Services par
 > - **Página de inicio:** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
 > - **Otras páginas:** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<page-name>`
 
-**Siguiente:** [Cree su primer formulario](#create-your-first-form)
+**Siguiente:**[creación del primer formulario](#create-your-first-form)
 
 +++
 
 ## Ruta B: Agregar Forms a un proyecto existente
 
-**Ideal para:** AEM Sites existente con Edge Delivery Services
+**Ideal para:** AEM Sites existentes con Edge Delivery Services
 
 Si ya tiene un proyecto de AEM con Edge Delivery Services, puede agregar funcionalidades de formulario integrando el bloque de Forms adaptable.
 
@@ -324,7 +324,7 @@ Si ya tiene un proyecto de AEM con Edge Delivery Services, puede agregar funcion
 
 Para continuar con la integración de formularios en el proyecto de AEM existente, asegúrese de que se cumplan los siguientes requisitos previos:
 
-- Ya tiene un proyecto de AEM creado con la [Plataforma de AEM XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
+- Ya tiene un proyecto de AEM creado con [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 - Tiene un [entorno de desarrollo local configurado](#set-up-local-development-environment)
 - Dispone de acceso Git al repositorio del proyecto, lo que le permite clonar, modificar y enviar cambios según sea necesario.
 
@@ -351,9 +351,9 @@ Completará los siguientes pasos de alto nivel:
    cd /path/to/your/aem-project
    ```
 
-2. **Descargar los archivos necesarios de las plantillas de AEM Forms**
+2. **Descargue los archivos necesarios de las plantillas de AEM Forms**
 
-   Copie estos archivos del [repositorio de plantillas de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms):
+   Copie estos archivos del [repositorio de AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms):
 
    | Origen | Destino | Función |
    |------------------------------------------------------------------------|----------------------------|----------------------------|
@@ -362,9 +362,9 @@ Completará los siguientes pasos de alto nivel:
    | [`scripts/form-editor-support.css`](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) | `scripts/form-editor-support.css` | Estilo del editor |
 
 3. **Compatibilidad con el editor de actualizaciones**
-   - Reemplace su archivo de `/scripts/editor-support.js` por [editor-support.js de AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
+   - Reemplace su archivo `/scripts/editor-support.js` por [editor-support.js de AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
 
-**Validación:** Confirme que los archivos de bloque de formulario se encuentran en el proyecto.
+**Validación:** confirme que los archivos de bloque de formulario se encuentran en el proyecto.
 
 +++
 
@@ -391,9 +391,9 @@ Completará los siguientes pasos de alto nivel:
    }
    ```
 
-   **Lo que hace esto:** Habilita los componentes de formulario en el selector de componentes del editor universal.
+   **Qué hace:** habilita los componentes de formulario en el selector de componentes del editor universal.
 
-**Validación:** Confirmar que los componentes de formulario aparecen en el Editor universal.
+**Validación:** confirme que los componentes de formulario aparecen en el editor universal.
 
 +++
 
@@ -403,7 +403,7 @@ Completará los siguientes pasos de alto nivel:
 
 1. **Actualizar .eslintignore**
 
-   Agregar estas líneas a `/.eslintignore`:
+   Añada estas líneas a `/.eslintignore`:
 
    ```bash
    # Form block rule engine files
@@ -416,7 +416,7 @@ Completará los siguientes pasos de alto nivel:
 
 2. **Actualizar .eslintrc.js**
 
-   Agregar estas reglas al objeto `rules` en `/.eslintrc.js`:
+   Añada estas reglas al objeto `rules` en `/.eslintrc.js`:
 
    ```javascript
    {
@@ -458,13 +458,13 @@ Completará los siguientes pasos de alto nivel:
    }
    ```
 
-**Validación:** Confirme que ESLint funciona con los componentes del formulario.
+**Validación:** confirme que ESLint funciona con los componentes del formulario.
 
 +++
 
 +++Paso 4: Creación e implementación
 
-1. **Instalar dependencias y compilar**
+1. **Instalar dependencias y generar**
 
    ```bash
    # Install any new dependencies
@@ -494,107 +494,107 @@ Completará los siguientes pasos de alto nivel:
    git push origin main
    ```
 
-**Validación:** Confirme que su proyecto incluye capacidades de formulario.
+**Validación:** confirme que el proyecto incluye capacidades de formulario.
 
 +++
 
-**Siguiente:** [Cree Su Primer Formulario](#create-your-first-form)
+**Siguiente:** [Crear el primer formulario](#create-your-first-form)
 
-## Creación De Su Primer Formulario
+## Crear el primer formulario
 
 **Quién debe seguir esta sección:**\
-Esta sección es relevante para los usuarios que siguen la Ruta A (nuevo proyecto) o la Ruta B (proyecto existente).
+Esta sección es relevante para los usuarios que siguen la ruta A (nuevo proyecto) o la ruta B (proyecto existente).
 
-Ahora que el proyecto está preparado para crear formularios, ya puede crear el primer formulario con el entorno de creación intuitivo de WYSIWYG del Editor universal. Los siguientes pasos proporcionan un enfoque estructurado para diseñar, configurar y publicar un formulario en el sitio de AEM.
+Ahora que el proyecto está preparado para crear formularios, ya puede crear el primer formulario mediante el entorno de creación intuitivo WYSIWYG del editor universal. En los siguientes pasos se proporciona un enfoque estructurado para diseñar, configurar y publicar un formulario en el sitio de AEM.
 
 ### Información general
 
-El proceso de creación de un formulario en el Editor universal consta de varias fases clave:
+El proceso de creación de un formulario en el editor universal consta de varias fases clave:
 
 1. **Insertar el bloque de formulario adaptable**\
-   Comience agregando el bloque de formulario adaptable a la página elegida.
+   Comience añadiendo el bloque de formulario adaptable a la página elegida.
 
-2. **Agregar componentes de formulario**\
+2. **Añadir componentes de formulario**\
    Rellene el formulario insertando componentes como campos de texto, botones y otros elementos de entrada.
 
-3. **Configurar propiedades del componente**\
+3. **Configurar propiedades de los componentes**\
    Ajuste la configuración y las propiedades de cada componente para satisfacer los requisitos del formulario.
 
 4. **Previsualizar y probar el formulario**\
    Utilice la funcionalidad de vista previa para validar el aspecto y el comportamiento del formulario antes de publicarlo.
 
-5. **Publicar la página actualizada**\
-   Una vez satisfecho, publique la página para que el formulario esté disponible para los usuarios finales.
+5. **Publicar la página cargada**\
+   Cuando esté satisfecho con la página, publíquela para que el formulario esté disponible para los usuarios finales.
 
-Las siguientes secciones le guiarán en detalle por cada uno de estos pasos, lo que garantiza una experiencia de creación de formularios fluida y eficaz.
+Las siguientes secciones le guiarán detalladamente por cada uno de estos pasos, lo que garantiza una experiencia de creación de formularios fluida y eficaz.
 
-+++Paso 1: Agregar bloque de formulario adaptable
++++Paso 1: Añadir bloque de formulario adaptable
 
 1. **Abrir la página en el editor universal**
-   - Vaya a la consola **Sitios** en AEM
-   - Seleccione la página donde desea agregar un formulario (por ejemplo, `index`)
-   - Haga clic en **Editar**
+   - Vaya a la consola **Sitios** en AEM.
+   - Seleccione la página donde desea añadir un formulario (por ejemplo, `index`).
+   - Haga clic en **Editar**.
 
-   La página se abrirá en el Editor universal para la edición de WYSIWYG.
+   La página se abrirá en el editor universal para la edición WYSIWYG.
 
-2. **Agregar el componente de formulario adaptable**
-   - Abra el panel **Árbol de contenido** (barra lateral izquierda)
-   - Vaya a la sección donde desee agregar el formulario
-   - Haga clic en el icono **Agregar** (+)
-   - Seleccione **Formulario adaptable** de la lista de componentes
+2. **Añadir el componente de formulario adaptable**
+   - Abra el panel **Árbol de contenido** (barra lateral izquierda).
+   - Vaya a la sección donde desee añadir el formulario.
+   - Haga clic en el icono **Añadir** (+). 
+   - Seleccione **Formulario adaptable** en la lista de componentes.
 
-   ![Agregando bloque de formulario adaptable](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
-   *Imagen: agregando un bloque de formulario adaptable a su página*
+   ![Adición de un bloque de formulario adaptable](/help/edge/docs/forms/assets/add-adaptive-form-block.png).
+   *Figura: Añadir un bloque de formulario adaptable a la página*
 
-**Validación:** Confirme que tiene un contenedor de formulario vacío.
+**Validación:** confirme que tiene un contenedor de formulario vacío.
 
 +++
 
-+++Paso 2: Agregar componentes de formulario
++++Paso 2: Añadir componentes de formulario
 
-1. **Vaya a su bloque de formulario**
-   - En el árbol de contenido, busque la sección Formulario adaptable recién agregado
+1. **Vaya al bloque de formulario**
+   - En el árbol de contenido, busque la sección Formulario adaptable recién añadida.
 
-   ![Bloque de formulario adaptable agregado](/help/edge/docs/forms/assets/adative-form-block.png)
+   ![Bloque de formulario adaptable añadido](/help/edge/docs/forms/assets/adative-form-block.png)
    *Figura: bloque de formulario adaptable en el árbol de contenido*
 
-2. **Agregar componentes de formulario**
+2. **Añadir componentes de formulario**
 
-   Puede agregar componentes de dos formas:
+   Puede añadir componentes de las siguientes dos maneras:
 
-   **Método A: haga clic para agregar**
-   - Haga clic en el icono **Agregar** (+) de la sección del formulario
-   - Seleccionar componentes de la lista **Componentes de formulario adaptable**
+   **Método A: haga clic en Agregar**
+   - Haga clic en el icono **Agregar** (+) en la sección del formulario
+   - Seleccione los componentes de la lista **Componentes de formularios adaptables**.
 
    **Método B: Arrastrar y soltar**
-   - Arrastre componentes directamente desde el panel de componentes al formulario
+   - Arrastre los componentes directamente desde el panel de componentes al formulario
 
-   ![Agregando componentes de formulario](/help/edge/docs/forms/assets/add-component.png)
-   *Imagen: agregando componentes al formulario*
+   ![Añadir componentes al formulario](/help/edge/docs/forms/assets/add-component.png)
+   *Figura: añadir componentes al formulario*
 
-   **Componentes de inicio recomendados:**
-   - Entrada de texto (para nombre, correo electrónico)
+   **Componentes de inicio recomendados**
+   - Entrada de texto (para el nombre, correo electrónico)
    - Área de texto (para mensajes)
    - Botón Enviar
 
-3. **Configurar propiedades de componentes**
-   - Seleccionar cualquier componente del formulario
+3. **Configure propiedades de los componentes**
+   - Seleccione cualquier componente del formulario
    - Utilice el panel **Propiedades** (barra lateral derecha) para configurar:
       - Etiquetas y marcadores de posición
       - Reglas de validación
-      - Configuración de campo obligatoria
+      - Configuración de campos obligatoria
 
-   ![Panel de propiedades del componente](/help/edge/docs/forms/assets/component-properties.png)
-   *Figura: Configurar propiedades del componente*
+   ![Panel de propiedades de componentes](/help/edge/docs/forms/assets/component-properties.png)
+   *Figura: configuración de propiedades del componente*
 
-4. **Vista previa del formulario**
+4. **Seleccionar un formulario**
 
    El formulario tendrá un aspecto similar al siguiente:
 
    ![Vista previa del formulario completado](/help/edge/docs/forms/assets/added-form-aem-sites.png)
-   *Figura: Formulario de ejemplo creado con el editor universal*
+   *Figura: formulario de ejemplo creado con el editor universal*
 
-**Validación:** Confirme que el formulario está listo para la publicación.
+**Validación:** confirme que el formulario está listo para su publicación.
 
 >[!IMPORTANT]
 >
@@ -608,20 +608,20 @@ Las siguientes secciones le guiarán en detalle por cada uno de estos pasos, lo 
    - Haga clic en el botón **Publicar** del Editor universal
 
    ![Formulario de publicación](/help/edge/docs/forms/assets/publish-form.png)
-   *Imagen: publicando el formulario desde el Editor universal*
+   *Imagen: publicación del formulario desde el Editor universal*
 
 2. **Confirmar publicación**
-   - En el cuadro de diálogo de confirmación, haga clic en **Publicar**
+   - En el cuadro de diálogo de confirmación, haga clic en **Publicar**.
 
    ![Confirmación de publicación](/help/edge/docs/forms/assets/publish-form1.png)
-   *Figura: Confirmando la acción de publicación*
+   *Figura: confirmando la acción de publicación*
 
-   Verá un mensaje de éxito que confirma la publicación.
+   Verá un mensaje que confirma la publicación con éxito.
 
    ![Éxito de publicación](/help/edge/docs/forms/assets/publish-form2.png)
-   *Imagen: confirmación de publicación correcta*
+   *Figura: confirmación de publicación correcta*
 
-3. **Ver tu formulario activo**
+3. **Ver el formulario activo**
 
    El formulario ya está activo en:
 
@@ -636,9 +636,9 @@ Las siguientes secciones le guiarán en detalle por cada uno de estos pasos, lo 
    ```
 
    ![Página de formulario activo](/help/edge/docs/forms/assets/publish-index-page.png)
-   *Imagen: tu página de formulario publicada en Edge Delivery Services*
+   *Imagen: la página de formulario publicada en Edge Delivery Services*
 
-**¡Felicitaciones!** El formulario está ahora activo y listo para recopilar envíos.
+**¡Enhorabuena!** El formulario está ahora activo y listo para recopilar envíos.
 
 +++
 
@@ -646,16 +646,16 @@ Las siguientes secciones le guiarán en detalle por cada uno de estos pasos, lo 
 
 Ahora que tiene un formulario en funcionamiento, puede:
 
-- **Personalizar estilo** al editar archivos CSS y JavaScript
+- **Personalizar el estilo** al editar archivos CSS y JavaScript
 - **Agregar características de formulario avanzadas** como reglas de validación y lógica condicional
-- **Configure el desarrollo local** para una iteración más rápida
-- **Crear formularios independientes** para casos de uso específicos
+- **Configure un entorno local** para una iteración más rápida
+- **Cree formularios independientes** para casos de uso específicos
 
 >[!TIP]
 >
-> **Más información:** [Crear formularios independientes en el editor universal](/help/edge/docs/forms/universal-editor/create-forms.md)
+> **Más información:** [cree formularios independientes en el editor universal](/help/edge/docs/forms/universal-editor/create-forms.md)
 
-## Configuración del entorno de desarrollo local
+## Configuración de un entorno de desarrollo de local
 
 **Ideal para:** desarrolladores que desean personalizar el estilo y el comportamiento del formulario
 
@@ -663,7 +663,7 @@ Un entorno de desarrollo local le permite realizar cambios y verlos instantánea
 
 +++Configure la CLI de AEM y el desarrollo local
 
-1. **Instalar CLI de AEM**
+1. **Instalación de la CLI de AEM**
 
    La CLI de AEM simplifica las tareas de desarrollo local:
 
@@ -671,16 +671,16 @@ Un entorno de desarrollo local le permite realizar cambios y verlos instantánea
        npm install -g @adobe/aem-cli
    ```
 
-2. **Clonar el repositorio**
+2. **Clone su repositorio**
 
    ```bash
    git clone https://github.com/<owner>/<repo>
    cd <repo>
    ```
 
-   Reemplace `<owner>` y `<repo>` por sus detalles reales de GitHub.
+   Reemplace `<owner>` y `<repo>` con la información real de GitHub.
 
-3. **Iniciar el servidor de desarrollo local**
+3. **Inicie el servidor de desarrollo local**
 
    ```bash
    aem up
@@ -688,15 +688,15 @@ Un entorno de desarrollo local le permite realizar cambios y verlos instantánea
 
    Esto inicia un servidor local con capacidades de recarga en caliente.
 
-4. **Realizar personalizaciones**
+4. **Realice personalizaciones**
 
-   - Editar archivos en el directorio `blocks/form/` para el estilo y el comportamiento del formulario
-   - Modificar `form.css` para el estilo
-   - Actualizar `form.js` para el comportamiento
+   - Editar archivos en el directorio `blocks/form/` para determinar el estilo y el comportamiento del formulario
+   - Modifique `form.css` para determinar el estilo
+   - Actualice `form.js` para determinar el comportamiento
 
-   **Ver cambios al instante** en el explorador a las `http://localhost:3000`
+   **Vea los cambios al instante** en el explorador en `http://localhost:3000`
 
-5. **Implemente sus cambios**
+5. **Implemente los cambios**
 
    ```bash
    git add .
@@ -711,7 +711,7 @@ Un entorno de desarrollo local le permite realizar cambios y verlos instantánea
 +++
 
 
-## Solución de problemas
+## Resolución de problemas
 
 ### Problemas comunes y soluciones
 
@@ -719,12 +719,12 @@ Un entorno de desarrollo local le permite realizar cambios y verlos instantánea
 
 **Problema:** errores de compilación o errores de vinculación
 
-**Solución 1: Controlar Errores De Vinculación**
+**Solución 1: Controlar errores de vinculación**
 
 Si se producen errores de vinculación:
 
 1. Abra `package.json` en la raíz del proyecto
-2. Buscar el script `lint`:
+2. Busque el script `lint`:
 
    ```json
    "scripts": {
@@ -742,12 +742,12 @@ Si se producen errores de vinculación:
 
 4. Confirmar e insertar los cambios
 
-**Solución 2: errores de ruta de módulo**
+**Solución 2: Errores de ruta de módulo**
 
 Si ve &quot;No se puede resolver la ruta al módulo &#39;/scripts/lib-franklin.js&#39;&quot;:
 
 1. Navegue hasta `blocks/form/form.js`
-2. Actualice la instrucción import:
+2. Actualice la instrucción de importación:
 
    ```javascript
    // Change this:
@@ -761,29 +761,29 @@ Si ve &quot;No se puede resolver la ruta al módulo &#39;/scripts/lib-franklin.j
 
 +++Problemas de funcionalidad del formulario
 
-**Problema:** Los envíos de formularios no funcionan
+**Problema:** los envíos de formularios no funcionan
 
 **Soluciones:**
 
 - Asegúrese de que tiene un componente de botón de envío
-- Comprobar configuración de URL de acción de formulario
-- Verificar reglas de validación de formularios
-- Probar primero en el modo de vista previa
+- Compruebe la configuración de la URL de acción del formulario
+- Verifique las reglas de validación de formularios
+- Pruebe primero en el modo de vista previa
 
 **Problema:** Problemas de estilo
 
 **Soluciones:**
 
-- Comprobar rutas de archivo CSS en `blocks/form/`
-- Borrar caché del explorador
-- Verificar sintaxis CSS
-- Realizar pruebas en el entorno de desarrollo local
+- Compruebe las rutas de archivo CSS en `blocks/form/`
+- Borre la caché del explorador
+- Verifique la sintaxis CSS
+- Haga la prueba en el entorno de desarrollo local
 
 +++
 
 +++Problemas del editor universal
 
-**Problema:** Los componentes de formulario no aparecen en el editor universal
+**Problema:** los componentes del formulario no aparecen en el editor universal
 
 **Soluciones:**
 
@@ -792,12 +792,12 @@ Si ve &quot;No se puede resolver la ruta al módulo &#39;/scripts/lib-franklin.j
 - Asegúrese de que la instancia de AEM tenga habilitado el acceso anticipado
 - Confirmar que `component-definition.json` incluye componentes de formulario
 
-**Problema:** Los cambios no son visibles después de la publicación
+**Problema:** los cambios no son visibles después de la publicación
 
 **Soluciones:**
 
-- Esperar a que se actualice la caché de CDN
-- Compruebe la caché del explorador (pruebe de incógnito/modo privado)
+- Espere a que se actualice la caché de la CDN
+- Compruebe la caché del explorador (pruebe el modo incógnito/privado)
 - Compruebe que se está utilizando el formato de dirección URL correcto
 
 +++

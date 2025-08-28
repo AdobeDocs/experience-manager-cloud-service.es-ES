@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2682'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -155,7 +155,7 @@ El script de implementación de valor se activa cuando:
 
 **Tipo de devolución:** El valor script de implementación de valor no devuelve ningún valor. Si alguna expresión devuelve un valor, este se ignorará.
 
-**Ejemplo:**&#x200B;Para convertir el caso de los alfabetos introducidos en el campo a mayúsculas en el momento de la confirmación, la expresión de implementación de valor es:
+**Ejemplo:**Para convertir el caso de los alfabetos introducidos en el campo a mayúsculas en el momento de la confirmación, la expresión de implementación de valor es:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -217,9 +217,9 @@ GuideBridge es una colección de API que se pueden usar para interactuar con for
 
 #### Uso de GuideBridge en varias expresiones {#guidebridge-usage-in-various-expressions}
 
-* Para restablecer los campos del formulario, puede habilitar la `guideBridge.reset()` API en la expresión “click” de un botón. Del mismo modo, existe una API de envío que puede llamarse expresión de clic `guideBridge.submit()`.
+* Para restablecer los campos del formulario, puede habilitar la `guideBridge.reset()` API en la expresión “click” de un botón. Del mismo modo, existe una API de envío que puede llamarse expresión “clic” `guideBridge.submit()`.
 
-* Puede usar la `setFocus()` API establecer el enfoque en varios campos o paneles (para el panel, el enfoque se establecerá en el primer campo automáticamente). `setFocus()` proporciona una amplia gama de opciones para navegar, como la navegación entre paneles, la travesía anterior/siguiente, la configuración del enfoque en un campo en particular y mucho más. Por ejemplo, para pasar al siguiente panel, puede utilizar: `guideBridge.setFocus(this.panel.somExpression, 'nextItem')`.
+* Puede usar la API `setFocus()` para establecer el enfoque en varios campos o paneles (para el panel, el enfoque se establece en el primer campo automáticamente). `setFocus()` proporciona una amplia gama de opciones de navegación, como la navegación entre paneles, el desplazamiento anterior/siguiente, el enfoque en un campo concreto, etc. Por ejemplo, para desplazarse al siguiente panel, puede utilizar lo siguiente: `guideBridge.setFocus(this.panel.somExpression, 'nextItem')`
 
 * Para validar un formulario adaptable o sus paneles específicos, utilice `guideBridge.validate(errorList, somExpression).`
 
@@ -274,11 +274,11 @@ Como se ha mencionado anteriormente, los formularios adaptables permiten al auto
 Realice los siguientes pasos para crear un motivo personalizado para un tipo de campo específico y reutilizarlo para otros campos del mismo tipo:
 
 1. Navegue hasta CRXDE Lite de la instancia de autor.
-1. Cree una carpeta para mantener los motivos personalizados. En el directorio /apps, cree un nodo de tipo sling:folder. Por ejemplo, cree un nodo con el nombre `customPatterns`. Bajo este nodo, cree otro nodo de tipo `nt:unstructed` y asígnele un nombre `textboxpatterns`. Este nodo contiene los distintos motivos personalizados que desea agregar.
+1. Cree una carpeta para mantener los motivos personalizados. En el directorio /apps, cree un nodo de tipo sling::folder. Por ejemplo, cree un nodo con el nombre `customPatterns`. Bajo este nodo, cree otro nodo de tipo `nt:unstructed` y asígnele un nombre `textboxpatterns`. Este nodo contiene los distintos motivos personalizados que desea agregar.
 1. Abra la pestaña Propiedades del nodo que ha creado. Por ejemplo, abra la pestaña Propiedades de `textboxpatterns`. Agregue la propiedad `guideComponentType` a este nodo y establezca su valor en *fd/af/components/formatter/guideTextBox*.
 
 1. El valor de esta propiedad varía según el campo para el que desee definir los motivos. Para el campo numérico, el valor de la propiedad `guideComponentType` es *fd/af/components/formatter/guideNumericBox*. El valor del campo Marcador de datos es *fd/af/components/formatter/guideDatepicker*.
-&grave;&grave;
+``
 1. Puede agregar un motivo personalizado al asignar una propiedad al `textboxpatterns` nodo. Agrega una propiedad con un nombre (por ejemplo, `pattern1`) y establece su valor en el motivo que desees agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El motivo estará disponible para todos los cuadros de texto que utilice en formularios adaptables.
 
    ![Crear motivos personalizados para campos en CrxDe](assets/creating-custom-patterns.png)

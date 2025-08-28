@@ -6,9 +6,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2197'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
 
    donde:
 
-   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL &#x200B; Adobe Acrobat Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
+   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL  Adobe Acrobat Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -135,7 +135,7 @@ Ahora puede [usar Agregar campos de Adobe Acrobat Sign a un formulario adaptable
 >
 > Para configurar la zona protegida de Adobe Sign, puede seguir los mismos pasos de configuración explicados en [Adobe Sign](#adobe-sign).
 
-#### Solución de problemas {#resolve-config-error}
+#### Resolución de problemas {#resolve-config-error}
 
 Cuando conecta [!DNL Adobe Acrobat Sign] con [!DNL AEM Forms] y busca un error `Unable to authorize access because the client configuration is invalid: invalid_request` tal como se muestra en la imagen siguiente. Para solucionarlo, siga los pasos que se indican a continuación:
 
@@ -225,7 +225,7 @@ El representante genera y comparte credenciales con usted. En la siguiente secci
 
    donde:
 
-   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL &#x200B; Adobe Acrobat Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
+   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL  Adobe Acrobat Sign] apuntan a la [partición correcta](https://helpx.adobe.com/es/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -262,7 +262,7 @@ De forma predeterminada, los servicios del planificador [!DNL Adobe Acrobat Sign
 
 Para cambiar el intervalo predeterminado, especifique una [expresión Cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) para la propiedad **sign.status.exp** de la configuración del **servicio de configuración de Adobe Acrobat Sign**.
 
-Por ejemplo, para ejecutar el servicio de configuración diariamente a las 00:00 a. m., establezca la propiedad **sign.status.exp** de la configuración de **Adobe Acrobat Sign Configuration Service** para especificar `0 0 0 1/1 * ? *`. El siguiente archivo JSON muestra el ejemplo para ejecutar el servicio de configuración diariamente a las 00:00 a. m.:
+Por ejemplo, para ejecutar el servicio de configuración diariamente a las 00:00 a. m., establezca la propiedad **sign.status.exp** de la configuración del **servicio de configuración de Adobe Acrobat Sign** para especificar `0 0 0 1/1 * ? *`. El siguiente archivo JSON muestra el ejemplo para ejecutar el servicio de configuración diariamente a las 00:00 a. m.:
 
 ```json
 {
@@ -270,7 +270,7 @@ Por ejemplo, para ejecutar el servicio de configuración diariamente a las 00:00
 }
 ```
 
-Para establecer los valores de una configuración, [Generar configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
+Para establecer los valores de una configuración, [Genere las configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
 
 ## Preguntas frecuentes
 

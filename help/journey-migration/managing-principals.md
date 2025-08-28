@@ -3,7 +3,7 @@ title: Administración de principales
 description: Administración de principales para la migración mediante Admin Console
 exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '311'
 ht-degree: 100%
 

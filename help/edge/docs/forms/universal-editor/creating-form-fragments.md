@@ -1,13 +1,13 @@
 ---
-title: Cómo crear fragmentos de formulario para la creación basada en WYSIWYG
+title: Creación de fragmentos de formulario para la creación basada en WYSIWYG
 description: Obtenga información sobre cómo crear fragmentos de formulario en el editor universal y añadirlos a formularios.
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1670'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
@@ -15,30 +15,30 @@ ht-degree: 40%
 
 Los fragmentos de formulario son componentes reutilizables que eliminan el trabajo de desarrollo repetitivo y garantizan la coherencia en los formularios de la organización. En lugar de volver a crear secciones comunes como información de contacto, detalles de direcciones o acuerdos de consentimiento para cada formulario, puede generar estos elementos una vez como fragmentos y reutilizarlos en varios formularios.
 
-**Lo que va a lograr en este artículo:**
+**Objetivos de este artículo:**
 
-- Comprenda el valor comercial y las capacidades técnicas de los fragmentos de formulario
+- Comprender el valor empresarial y las capacidades técnicas de los fragmentos de formulario
 - Crear fragmentos de formulario reutilizables mediante el editor universal
 - Integrar fragmentos en formularios existentes con la configuración adecuada
 - Administrar el ciclo vital de los fragmentos y mantener la coherencia en todos los formularios
 
-**Beneficios empresariales:**
+**Beneficios para empresas:**
 
-- **Tiempo de desarrollo reducido**: genere secciones de formulario comunes una vez y reúna en todas partes
+- **Tiempo de desarrollo reducido**: genere secciones de formulario comunes una vez y reutilícelas en todas partes
 - **Coherencia mejorada**: diseños y contenido estandarizados en todos los formularios
 - **Mantenimiento simplificado**: actualice un fragmento una vez para reflejar los cambios en todos los formularios que lo utilicen
-- **Cumplimiento mejorado**: Asegúrese de que las secciones de regulación sigan siendo coherentes y estén actualizadas
+- **Cumplimiento mejorado**: asegúrese de que las secciones normativas sigan siendo coherentes y estén actualizadas
 
 Los fragmentos de formulario de Edge Delivery Services admiten funciones avanzadas que incluyen fragmentos anidados, varias instancias dentro de un solo formulario e integración perfecta con fuentes de datos.
 
-## Explicación de fragmentos de formulario
+## Comprensión de los fragmentos de formulario
 
 Los fragmentos de formulario de Edge Delivery Services ofrecen potentes funciones para el desarrollo de formularios modulares:
 
 **Funciones principales:**
 
-- **Administración de coherencia**: los fragmentos mantienen diseños y contenido idénticos en varios formularios. Con el enfoque &quot;cambiar una vez, reflejar en todas partes&quot;, las actualizaciones de un fragmento se aplican automáticamente a todos los formularios en el modo de vista previa.
-- **Uso múltiple**: agregue el mismo fragmento varias veces dentro de un solo formulario, cada una con enlaces de datos independientes a diferentes fuentes de datos o elementos de esquema.
+- **Administración de coherencia**: los fragmentos mantienen diseños y contenido idénticos en varios formularios. Con un enfoque “cambiar una vez, reflejar en todas partes”, las actualizaciones realizadas en un fragmento se aplican automáticamente a todos los formularios en modo Previsualización.
+- **Uso múltiple**: añada el mismo fragmento varias veces dentro de un solo formulario, cada vez con enlaces de datos independientes a diferentes fuentes de datos o elementos de esquema.
 - **Estructuras anidadas**: cree jerarquías complejas incrustando fragmentos dentro de otros fragmentos para arquitecturas de formulario sofisticadas.
 
 **Requisitos técnicos:**
@@ -50,20 +50,20 @@ Los fragmentos de formulario de Edge Delivery Services ofrecen potentes funcione
 
 >[!IMPORTANT]
 >
->En el modo de Vista previa, los cambios de fragmento se reflejarán inmediatamente en todos los formularios. En el modo Publicación, debe volver a publicar el fragmento y los formularios que lo utilicen para ver las actualizaciones.
+>En el modo Previsualización, los cambios de fragmento se reflejarán inmediatamente en todos los formularios. En el modo Publicación, debe volver a publicar el fragmento y los formularios que lo utilicen para ver las actualizaciones.
 
 >[!CAUTION]
 >
->Evite las referencias de fragmento recursivas (anidar un fragmento dentro de sí mismo), ya que esto provoca errores de procesamiento y comportamiento inesperado.
+>Evite las referencias de fragmento recursivas (anidar un fragmento dentro de sí mismo), ya que esto provoca errores de procesamiento y un comportamiento inesperado.
 
 ## Requisitos previos
 
 **Requisitos de configuración técnica:**
 
 - [Repositorio de GitHub configurado](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) con conexión establecida entre su entorno de AEM y el repositorio de GitHub
-- [Último bloque de Forms adaptable](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) añadido a su repositorio de GitHub (para proyectos de Edge Delivery Services existentes)
+- [Último bloque de formularios adaptables](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) añadido a su repositorio de GitHub (para proyectos de Edge Delivery Services existentes)
 - Instancia de autor de AEM Forms con plantilla de Edge Delivery Services disponible
-- Acceso a la URL de la instancia de autor de AEM Forms as a Cloud Service y a la URL del repositorio de GitHub
+- Acceso a la URL de instancia de autor de AEM Forms as a Cloud Service y a la URL del repositorio de GitHub
 
 **Conocimientos y permisos requeridos:**
 
@@ -84,7 +84,7 @@ Puede crear fragmentos de formulario de Edge Delivery Services en el editor univ
 
 Para crear un fragmento de formulario en el editor universal, realice los siguientes pasos:
 
-1. Inicie sesión en la instancia de autor de AEM Forms as a Cloud Service.
+1. Inicie sesión en su instancia de autor de AEM Forms as a Cloud Service.
 1. Seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 1. Haga clic en **Crear > fragmento de formulario adaptable**.
 
@@ -95,7 +95,7 @@ Para crear un fragmento de formulario en el editor universal, realice los siguie
    ![Seleccionar plantilla de Edge Delivery Services](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. Especifique el título, el nombre, la descripción y las etiquetas del fragmento. Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, el fragmento no se creará.
-1. Especifique la **URL de GitHub**. Por ejemplo, si el repositorio de GitHub se llama `edsforms` y se encuentra en la cuenta `wkndforms`, la dirección URL es `https://github.com/wkndforms/edsforms`.
+1. Especifique la **URL de GitHub**. Por ejemplo, si el repositorio de GitHub se llama `edsforms`, está ubicado en la cuenta `wkndforms` y la URL es `https://github.com/wkndforms/edsforms`.
 
    ![Propiedades básicas](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
 
@@ -110,24 +110,24 @@ Para crear un fragmento de formulario en el editor universal, realice los siguie
 
    >[!NOTE]
    >
-   > Para aprender a integrar formularios o fragmentos con un modelo de datos de formulario (FDM) en el editor universal para utilizar diversas fuentes de datos back-end, consulte [Integrar formularios con el modelo de datos de formulario en el editor universal](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
+   > Para aprender a integrar formularios o fragmentos con un modelo de datos de formulario (FDM) en el editor universal para utilizar diversas fuentes de datos back-end, consulte [Integración de formularios con el modelo de datos de formulario en el editor universal](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
 
-1. (Opcional) Especifique la **Fecha de publicación** o la **Fecha de cancelación de publicación** del fragmento en la pestaña **Avanzado**.
+1. (Opcional) Especifique la **fecha de publicación** o la **de cancelación de publicación** del fragmento en la pestaña **Avanzado**.
 
-   ![Ficha avanzada](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
+   ![Pestaña Avanzado](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
 1. Haga clic en **Crear** para generar el fragmento. Aparecerá un cuadro de diálogo de éxito con opciones de edición.
 
    ![Editar fragmento](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png)
 
 1. Haga clic en **Editar** para abrir el fragmento en el editor universal con la plantilla predeterminada aplicada.
 
-   ![Fragmento en el editor universal para la creación](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
+   ![Fragmento del editor universal para la creación](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
 
-1. **Diseñe el contenido de su fragmento**: agregue componentes de formulario (campos de texto, desplegables, casillas de verificación) para generar la sección reutilizable. Para obtener instrucciones detalladas sobre los componentes, consulte [Introducción a Edge Delivery Services para AEM Forms mediante el editor universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
+1. **Diseñar el contenido del fragmento**: añada componentes de formulario (campos de texto, listas desplegables, casillas de verificación) para generar la sección reutilizable. Para obtener instrucciones detalladas sobre los componentes, consulte [Introducción a Edge Delivery Services para AEM Forms con el editor universal (WYSIWYG)](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
 
 1. **Configurar propiedades del componente**: establezca los nombres de los campos, las reglas de validación y los valores predeterminados según sea necesario para su caso de uso.
 
-1. **Guardar y previsualizar**: guarda el fragmento y usa el modo de vista previa para comprobar el diseño y la funcionalidad.
+1. **Guardar y previsualizar**: guarde el fragmento y use el modo Previsualización para comprobar el diseño y la funcionalidad.
 
    ![Captura de pantalla de un fragmento de formulario de detalles de contacto completado en el editor universal que muestra los campos para el nombre, teléfono, correo electrónico y dirección que pueden reutilizarse en varios formularios](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
@@ -136,9 +136,9 @@ Para crear un fragmento de formulario en el editor universal, realice los siguie
 - Cargas de fragmentos sin errores en el editor universal
 - Todos los componentes del formulario se representan correctamente
 - Las propiedades de campo y las reglas de validación funcionan según lo esperado
-- El fragmento se guardará y estará disponible en la consola Forms y documentos
+- El fragmento se guardará y estará disponible en la consola Formularios y documentos
 
-Una vez completado el fragmento, puedes [integrarlo en cualquier formulario de Edge Delivery Services](#adding-form-fragments-to-a-form).
+Una vez completado el fragmento, puede [integrarlo en cualquier formulario de Edge Delivery Services](#adding-form-fragments-to-a-form).
 
 +++
 
@@ -171,7 +171,7 @@ Para integrar un fragmento de formulario en el formulario:
 
 1. Haga clic en **[!UICONTROL Seleccionar]**.
 
-   El fragmento de formulario se agrega por referencia al formulario y permanece sincronizado con el fragmento de formulario independiente.
+   El fragmento de formulario se añade por referencia al formulario y permanece sincronizado con el fragmento de formulario independiente. 
 
    ![Captura de pantalla que muestra el fragmento de detalles de contacto integrado correctamente en un formulario del empleado dentro del editor universal, que muestra cómo los fragmentos mantienen su estructura cuando se reutilizan](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
@@ -181,7 +181,7 @@ Para integrar un fragmento de formulario en el formulario:
 
    Del mismo modo, puede repetir los pasos 3 al 7 para insertar el fragmento `Contact Details` para el panel `Supervisor Details`.
 
-   ![Formulario de detalles de empleado](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
+   ![Formulario de detalles del empleado](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
 
 +++
 
@@ -191,7 +191,7 @@ Para integrar un fragmento de formulario en el formulario:
 
 Puede realizar varias operaciones en los fragmentos de formulario mediante la interfaz de usuario de AEM Forms.
 
-1. Inicie sesión en la instancia de autor de AEM Forms as a Cloud Service.
+1. Inicie sesión en su instancia de autor de AEM Forms as a Cloud Service.
 1. Seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 
 1. Seleccione un fragmento de formulario y la barra de herramientas mostrará las siguientes operaciones que puede realizar en el fragmento seleccionado.
@@ -252,7 +252,7 @@ Puede realizar varias operaciones en los fragmentos de formulario mediante la in
 
 **Diseño y nombre del fragmento:**
 
-- **Use nombres descriptivos y únicos**: Elija nombres que indiquen claramente el propósito del fragmento (por ejemplo, &quot;detalles de contacto con validación&quot; en lugar de &quot;fragmento1&quot;)
+- **Usar nombres descriptivos y únicos**: elija nombres que indiquen claramente el propósito del fragmento (por ejemplo, “detalles de contacto con validación” en lugar de “fragmento1”)
 - **Plan de reutilización**: diseñe fragmentos para que sean independientes del contexto y funcionen en diferentes tipos de formularios
 - **Mantener los fragmentos centrados**: cree fragmentos de un solo propósito en lugar de componentes complejos multifunción
 
@@ -266,11 +266,11 @@ Puede realizar varias operaciones en los fragmentos de formulario mediante la in
 
 - **Coordinar publicación**: al actualizar fragmentos, planee volver a publicar todos los formularios dependientes simultáneamente
 - **Control de versiones**: use mensajes de confirmación significativos al actualizar fragmentos para realizar un seguimiento de los cambios a lo largo del tiempo
-- **Supervisar dependencias**: haga un seguimiento de qué formularios utilizan cada fragmento para evaluar el impacto de la actualización
+- **Monitorizar dependencias**: haga un seguimiento de qué formularios utilizan cada fragmento para evaluar el impacto de la actualización
 
 >[!TIP]
 >
->Los estilos, scripts y expresiones de fragmento se conservan cuando se incrustan, por lo que debe diseñarse teniendo en cuenta esta herencia.
+>Los estilos, scripts y expresiones de fragmento se conservan cuando se incrustan, por lo que debe realizar el diseño teniendo en cuenta esta herencia.
 
 ## Resumen
 
@@ -278,18 +278,18 @@ Ha aprendido correctamente a aprovechar los fragmentos de formulario en Edge Del
 
 **Logros clave:**
 
-- **Comprensión**: Se ha comprendido el valor comercial y las capacidades técnicas de los fragmentos de formulario
-- **Creación**: fragmentos de formulario reutilizables creados usando el Editor universal con la configuración adecuada
-- **Integración**: se agregaron fragmentos a los formularios con la configuración de referencia y de propiedad correctas
-- **Administración**: Operaciones de ciclo de vida de fragmento exploradas y flujos de trabajo de mantenimiento
+- **Comprensión**: se ha comprendido el valor comercial y las capacidades técnicas de los fragmentos de formulario
+- **Creación**: fragmentos de formulario reutilizables creados usando el editor universal con la configuración adecuada
+- **Integración**: se añadieron fragmentos a los formularios con la configuración de referencia y de propiedad correctas
+- **Administración**: operaciones de ciclo de vida de fragmento exploradas y flujos de trabajo de mantenimiento
 
-**Pasos siguientes:**
+**Próximos pasos:**
 
-- Cree una biblioteca de fragmentos de uso común para su organización
-- Establezca convenciones de nomenclatura y políticas de gobernanza para el uso de fragmentos
-- Explore la integración avanzada con [Modelos de datos de formulario](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) para fragmentos dinámicos impulsados por datos
+- Crea una biblioteca de fragmentos de uso común para su organización
+- Establecer convenciones de nomenclatura y políticas de gobernanza para el uso de fragmentos
+- Explorar la integración avanzada con [modelos de datos de formulario](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) para fragmentos dinámicos impulsados por datos
 - Implementar plantillas de formulario basadas en fragmentos para lograr experiencias de usuario coherentes
 
-Sus formularios ahora se benefician de una arquitectura modular y mantenible que se adapta eficazmente entre proyectos, a la vez que garantiza experiencias de usuario coherentes.
+Ahora, sus formularios se benefician de una arquitectura modular y fácil de mantener que se adapta de manera eficiente a todos los proyectos, al tiempo que garantiza experiencias de usuario coherentes.
 
 

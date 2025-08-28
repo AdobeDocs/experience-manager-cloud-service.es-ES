@@ -5,9 +5,9 @@ role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
 source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1258'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -138,7 +138,7 @@ El elemento principal del panel debe contener un botón de eliminación para eli
 
 >[!NOTE]
 >
-> Cuando todas las instancias de un panel se quiten de un formulario adaptable, para agregar una instancia del panel quitado, utilice la sintaxis _panelName para capturar el Instance Manager del panel y use la API addInstance de Instance Manager para agregar la instancia eliminada. Por ejemplo, &#39;_panelName.addInstance()&#39;. Añade una instancia del panel eliminado.
+> Cuando todas las instancias de un panel se quiten de un formulario adaptable, para agregar una instancia del panel quitado, utilice la sintaxis _panelName para capturar el Instance Manager del panel y use la API addInstance de Instance Manager para agregar la instancia eliminada. Por ejemplo, “_panelName.addInstance()”. Añade una instancia del panel eliminado.
 
 ## Usar subformularios repetibles de la plantilla de formulario (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
@@ -207,7 +207,7 @@ En el siguiente código, el panel `SampleType` utiliza la propiedad minOccours y
 ```
 
 
-## Consulte también {#see-also}
+## Véase también {#see-also}
 
 {{see-also}}
 

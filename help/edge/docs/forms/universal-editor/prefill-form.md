@@ -1,59 +1,59 @@
 ---
-title: Cómo rellenar previamente los campos de formulario adaptable
-description: Utilice los datos existentes para rellenar previamente los campos de un formulario adaptable. Los usuarios pueden rellenar previamente la información básica de un formulario iniciando sesión con sus perfiles sociales.
+title: Rellenado previo de los campos del formulario adaptable
+description: Utilice los datos existentes para rellenar previamente los campos de un formulario adaptable. Los usuarios pueden rellenar previamente la información básica de un formulario iniciando sesión con sus perfiles de redes sociales.
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
-keywords: prerrellenar formularios adaptables, servicios de entrega de Edge de formularios adaptables, autorrellenar formularios adaptables
+keywords: rellenar previamente un formulario adaptable, edge delivery services con formularios adaptables, autorrellenar formularios adaptables
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1787'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Configuración del servicio de relleno previo en Forms adaptable mediante Edge Delivery Services
+# Configuración del servicio de rellenado previo en formularios adaptables mediante Edge Delivery Services
 
-El rellenado previo de formularios es el proceso de rellenar automáticamente los campos de formulario con datos relevantes de fuentes externas en cuanto un usuario abre el formulario. Al aprovechar la información de perfiles de usuario, bases de datos, borradores guardados u otros sistemas backend, el rellenado previo optimiza la experiencia de rellenado de formularios, lo que reduce la entrada manual, minimiza los errores y acelera la finalización. Esto no solo mejora la satisfacción del usuario, sino que también aumenta la probabilidad de que los envíos de formularios se realicen correctamente.
+El rellenado previo de formularios es el proceso de cumplimentar automáticamente los campos de formulario con datos pertinentes de fuentes externas en cuanto un usuario abre el formulario. Al aprovechar la información de perfiles de usuario, bases de datos, borradores guardados u otros sistemas back-end, el rellenado previo optimiza la experiencia de cumplimentación de formularios, lo que reduce la entrada manual, minimiza los errores y acelera la finalización. Esto no solo mejora la satisfacción del usuario, sino que también aumenta la probabilidad de que los envíos de formularios se realicen correctamente.
 
 ## Ventajas del rellenado previo de formularios
 
-| Beneficio | Descripción |
+| Ventaja | Descripción |
 |---------|-------------|
 | **Finalización más rápida** | Reduce la entrada manual de datos, lo que ayuda a los usuarios a completar formularios rápidamente |
-| **Experiencia de usuario mejorada** | Forms se siente más personalizado y conveniente, especialmente para los usuarios que regresan |
+| **Experiencia del usuario mejorada** | Los formularios dan la sensación de ser más personalizados y prácticos, especialmente para los usuarios que regresan |
 | **Tasas de conversión más altas** | Reduce el abandono de formularios minimizando el esfuerzo necesario del usuario |
 | **Errores de entrada reducidos** | Los datos de fuentes de confianza reducen los errores tipográficos y las entradas incorrectas |
 | **Mejor calidad de datos** | Garantiza datos estructurados, precisos y coherentes para los sistemas back-end |
 
-## Funcionamiento del relleno previo
+## Funcionamiento del rellenado previo
 
-El diagrama siguiente ilustra el proceso de relleno previo automático que se produce cuando un usuario abre un formulario adaptable:
+En el diagrama siguiente se ilustra el proceso de rellenado previo automático que se produce cuando un usuario abre un formulario adaptable:
 
 ![Flujo del proceso de rellenado previo de formularios](/help/edge/docs/forms/universal-editor/assets/prefill-process-flow.svg)
 
 El proceso de rellenado previo incluye cuatro pasos clave:
 
-1. **El usuario abre el formulario**: El usuario accede a un formulario adaptable a través de una URL o navegación
-1. **Identificar Source de datos**: el servicio de relleno previo determina el origen de datos configurado (modelo de datos de formulario o servicio de borrador)
-1. **Recuperar datos**: el sistema recupera datos de usuario relevantes en función del contexto, los parámetros o la identificación del usuario
-1. **Asignar y mostrar**: los datos se asignan a campos de formulario con las propiedades `bindRef` y el formulario rellenado se muestra al usuario
+1. **El usuario abre el formulario**: el usuario accede a un formulario adaptable a través de una URL o mediante navegación
+1. **Identificar la fuente de datos**: el servicio de rellenado previo determina el origen de datos configurado (modelo de datos de formulario o servicio de borrador)
+1. **Recuperar datos**: el sistema recupera datos de usuario pertinentes en función del contexto, los parámetros o la identificación del usuario
+1. **Asignar y mostrar**: los datos se asignan a campos de formulario mediante propiedades `bindRef` y el formulario rellenado se muestra al usuario
 
-Este proceso automatizado garantiza que los usuarios vean un formulario previamente rellenado con su información relevante, lo que mejora significativamente la experiencia del usuario y las tasas de finalización del formulario.
+Este proceso automatizado garantiza que los usuarios vean un formulario previamente rellenado con su información pertinente, lo que mejora significativamente la experiencia del usuario y las tasas de finalización del formulario.
 
-## Estructura de datos para relleno previo
+## Estructura de datos para rellenado previo
 
-El Forms adaptable admite dos tipos de campos:
+Los formularios adaptables admiten dos tipos de campos:
 
-- **Campos enlazados**: Campos conectados a un origen de datos con una propiedad `bindRef` que no está vacía
-- **Campos no enlazados**: Campos independientes con valores `bindRef` vacíos
+- **Campos enlazados**: campos conectados a una fuente de datos con una propiedad `bindRef` que no está vacía
+- **Campos no enlazados**: campos independientes con valores `bindRef` vacíos
 
-La estructura de datos de relleno previo incluye:
+La estructura de datos de rellenado previo incluye:
 
 - **afBoundData**: contiene datos para campos y paneles enlazados
-- **afUnBoundData**: contiene datos para campos independientes
+- **afUnBoundData**: contiene datos para campos no enlazados
 
 El formato de datos debe coincidir con el modelo de formulario:
 
@@ -61,83 +61,83 @@ El formato de datos debe coincidir con el modelo de formulario:
 - **Formularios de esquema XML**: XML que coincide con la estructura de esquema
 - **Formularios de esquema JSON**: JSON compatible con el esquema
 - **Formularios de modelo de datos de formulario (FDM)**: JSON que coincide con la estructura de FDM
-- **Formularios sin esquema**: todos los campos son independientes y utilizan XML independiente
+- **Formularios sin esquema**: ninguno de los campos está enlazado y todos ellos utilizan XML sin enlazar
 
 ## Requisitos previos
 
-Antes de configurar los servicios de relleno previo, asegúrese de lo siguiente:
+Antes de configurar los servicios de rellenado previo, asegúrese de que tiene lo siguiente:
 
-### Ajustes necesarios
+### Configuración exigida
 
 - [Repositorio de GitHub configurado para Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)
-- [Bloque de Forms adaptable añadido al proyecto](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)
+- [Bloque de formularios adaptable añadido al proyecto](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)
 - [Fuente de datos configurada](/help/forms/configure-data-sources.md)
-- [Modelo de datos de formulario (FDM) creado](/help/forms/create-form-data-models.md)
+- [Modelo de datos de formulario creado](/help/forms/create-form-data-models.md)
 
 ### Requisitos de acceso
 
 - Acceso a AEM Forms as a Cloud Service
 - Permisos para crear y editar formularios
-- Acceso al Editor universal con las extensiones requeridas habilitadas
+- Acceso al editor universal con las extensiones requeridas habilitadas
 
 >[!TIP]
 >
-> También puede editar formularios para integrar el Modelo de datos de formulario (FDM) en el Editor universal para recuperar datos de varias fuentes back-end. Para obtener más información, consulte el artículo [Integrar formularios con el modelo de datos de formulario en el editor universal](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
+> También puede editar formularios para integrar el modelo de datos de formulario (FDM) en el editor universal para recuperar datos de varias fuentes back-end. Para obtener más información, consulte el artículo [Integración de formularios con el modelo de datos de formulario en el editor universal](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
 
-## Opciones del servicio de prerrellenar
+## Opciones del servicio de rellenado previo
 
-El editor universal proporciona dos opciones de servicio de relleno previo:
+El editor universal proporciona dos opciones de servicio de rellenado previo:
 
 | Tipo de servicio | Función | Fuente de datos | Ideal para |
 |--------------|---------|-------------|----------|
-| **Relleno Previo Del Borrador Del Portal De Formularios** | Reanuda los formularios parcialmente completados | Borradores guardados en Forms Portal | Continuación de aplicaciones incompletas |
-| **Relleno previo del modelo de datos de formulario** | Rellena campos de sistemas externos | Bases de datos back-end mediante FDM | Rellenado automático de datos de perfil de usuario |
+| **Rellenado previo de borradores en el portal de formularios** | Reanuda los formularios parcialmente completados | Borradores guardados en el portal de formularios | Continuación de aplicaciones incompletas |
+| **Rellenado previo el modelo de datos del formulario** | Rellena campos de sistemas externos | Bases de datos back-end mediante FDM | Rellenado automático de datos de perfil del usuario |
 
 ### Comparación detallada
 
-| Función | Servicio de relleno previo de borrador | Servicio de relleno previo de FDM |
+| Función | Servicio de rellenado previo de borradores | Servicio de rellenado FDM |
 |---------|----------------------|---------------------|
-| **Autenticación** | Requiere el inicio de sesión del usuario para acceder al borrador | Configurable según la fuente de datos |
-| **Complejidad de la instalación** | Configuración mínima | Requiere configuración y asignación de FDM |
+| **Autenticación** | Requiere el inicio de sesión del usuario para acceder a los borradores | Configurable según la fuente de datos |
+| **Complejidad de la configuración** | Configuración mínima | Requiere configuración y asignación de FDM |
 | **Tipo de datos** | Datos guardados estáticos | Datos dinámicos en tiempo real |
 | **Caso práctico** | Reanudar aplicaciones guardadas | Rellenar previamente desde perfiles de usuario o bases de datos |
 
 
-## Configurar el servicio de rellenado previo para un formulario
+## Configurar servicio de rellenado previo para un formulario
 
 +++Fase 1: Configuración del modelo de datos de formulario
 
 ### Paso 1: Crear un modelo de datos de formulario
 
-1. Inicie sesión en la instancia de as a Cloud Service de AEM Forms
-1. Vaya a **Adobe Experience Manager** > **Forms** > **Integraciones de datos**
-1. Seleccione **Crear** > **Modelo de datos de formulario**
-1. Elija su **Configuración de Data Source** y seleccione el **Source de datos** configurado
+1. Iniciar sesión en la instancia de AEM Forms as a Cloud Service
+1. Ir a **Adobe Experience Manager** > **Formularios** > **Integraciones de datos**
+1. Seleccione **Crear** > **Modelo de datos de formulario**.
+1. Elegir la información pertinente en **Configuración de fuente de datos** y seleccionar la opción **Fuente de datos** configurada
 
    ![Modelo de datos de formulario creado](/help/edge/docs/forms/universal-editor/assets/create-fdm.png)
 
    >[!TIP]
    >
-   >Para obtener instrucciones detalladas sobre la creación de modelos de datos de formulario, consulte [Crear un modelo de datos de formulario](/help/forms/create-form-data-models.md).
+   >Para obtener instrucciones detalladas sobre la creación de modelos de datos de formulario, consulte [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md).
 
 ### Paso 2: Configurar los servicios de FDM
 
-1. Vaya a **Adobe Experience Manager** > **Forms** > **Integraciones de datos**
-1. Abra el modelo de datos de formulario en el modo Edición
-1. Seleccione un objeto del modelo de datos y haga clic en **Editar propiedades**
-1. Configure los servicios **Read** y **Write** para los objetos del modelo de datos seleccionado
+1. Ir a **Adobe Experience Manager** > **Formularios** > **Integraciones de datos**
+1. Abrir el modelo de formulario de datos en modo de edición
+1. Seleccionar un objeto de modelo de datos y haga clic en **Editar propiedades**
+1. Configurar los servicios **Lectura** y **Escritura** para los objetos del modelo de datos seleccionados
 
    ![Configurar servicio de lectura/escritura](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
 1. Configure los argumentos del servicio:
 
-   - Haga clic en el icono de edición del argumento del servicio de lectura
-   - Enlace el argumento a un **atributo de perfil de usuario**, **atributo de solicitud** o **valor literal**
-   - Especifique el valor del enlace (por ejemplo, `petid` para un formulario de registro de mascota)
+   - Hacer clic en el icono de edición del argumento del servicio de lectura
+   - Enlazar el argumento a un **atributo de perfil de usuario**, **atributo de solicitud** o **valor literal**
+   - Especificar el valor del enlace (por ejemplo, `petid` para un formulario de registro de mascota)
 
-   ![Configurar el argumento del ID de la mascota](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
+   ![Configurar argumento de ID de mascota](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
 
-1. Haga clic en **Listo** para guardar el argumento y en **Guardar** para guardar el FDM
+1. Hacer clic en **Listo** para guardar el argumento y en **Guardar** para guardar el FDM
 
    >[!NOTE]
    >
@@ -149,60 +149,60 @@ El editor universal proporciona dos opciones de servicio de relleno previo:
 
 ### Paso 3: Crear un formulario adaptable
 
-1. Vaya a **Adobe Experience Manager** > **Forms** > **Forms y documentos**
-1. Seleccione **Crear** > **Forms adaptable**
-1. En la ficha **Source**, seleccione una plantilla de Edge Delivery Services:
+1. Ir a **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**
+1. Seleccionar **Crear** > **Formularios adaptables**
+1. En la pestaña **Fuente**, seleccione una plantilla basada en Edge Delivery Services:
 
    ![Plantilla de Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
 
-1. Haga clic en **Crear** para abrir el asistente de **Crear formulario**
+1. Hacer clic en **Crear** para abrir el asistente de **Crear formulario**
 1. Especifique los detalles del formulario:
 
-   - **Nombre**: escriba un nombre descriptivo para el formulario
-   - **Título**: proporcione un título descriptivo
-   - **URL de GitHub**: escribe la URL del repositorio (por ejemplo, `https://github.com/wkndforms/edsforms`)
+   - **Nombre**: escribir un nombre descriptivo para el formulario
+   - **Título**: proporcionar un título descriptivo
+   - **URL de GitHub**: escribir la URL del repositorio (por ejemplo, `https://github.com/wkndforms/edsforms`)
 
 1. Haga clic en **Crear**
 
    ![Crear formulario basado en esquema](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
 
-El formulario se abrirá en el editor universal para la creación.
+El formulario se abre en el editor universal para la creación.
 
-### Paso 4: Configurar Source de datos de formulario
+### Paso 4: Configurar la fuente de datos de formulario
 
-1. Seleccione el formulario y haga clic en **Propiedades**
+1. Seleccionar el formulario y hacer clic en **Propiedades**
 
-   ![Seleccionar propiedades de formulario](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
+   ![Seleccionar propiedades del formulario](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
 
-2. Abra la ficha **Modelo de formulario**
-3. En el menú desplegable **Seleccionar de**, elija **Modelo de datos de formulario (FDM)**
-4. Seleccione el modelo de datos de formulario creado (por ejemplo, PetFDM) en la lista desplegable
+2. Abrir la pestaña **Modelo de formulario**
+3. En la lista desplegable **Seleccionar de**, elegir **Modelo de datos de formulario (FDM)**
+4. Seleccionar el modelo de datos de formulario creado (por ejemplo, PetFDM) en la lista desplegable
 
    ![Seleccionar pestaña Modelo de formulario](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
 
-5. Haga clic en **Guardar y cerrar**
-6. Abra el formulario para editarlo en el editor universal
+5. Hacer clic en **Guardar y cerrar**
+6. Abrir el formulario para editarlo en el editor universal
 
-Los elementos de formulario del FDM aparecen en la pestaña **Origen de datos** del **Explorador de contenido**.
+Los elementos de formulario del FDM aparecen en la pestaña **Fuente de datos** de **Explorador de contenido**.
 
-### Paso 5: Agregar el enlace de datos a los campos de formulario
+### Paso 5: Añadir el enlace de datos a los campos de formulario
 
-1. Seleccione elementos de datos de la ficha **Origen de datos**
-2. Haga clic en **Agregar** o arrastre y suelte elementos para crear el formulario
+1. Seleccionar elementos de datos de la pestaña **Fuente de datos**
+2. Hacer clic en **Añadir** o arrastrar y soltar elementos para crear el formulario
 
    ![Captura de pantalla del editor universal que muestra el formulario basado en esquemas](/help/edge/docs/forms/universal-editor/assets/ue-form.png)
 
-3. Agregar enlaces de datos a campos de formulario:
+3. Añada enlace de datos a los campos del formulario:
 
    - Seleccionar un campo de formulario
-   - En el panel **Propiedades**, busque la propiedad **Referencia de enlace**
-   - Seleccione la referencia de enlace de datos adecuada
+   - En el panel **Propiedades**, buscar la propiedad **Referencia de enlace**
+   - Seleccionar la referencia de enlace de datos adecuada
 
      ![Enlace de datos](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding1.png)
 
 +++
 
-+++Fase 3: Configuración del servicio de relleno previo
++++Fase 3: Configuración del servicio de rellenado previo
 
 ### Paso 6: Habilitar las extensiones necesarias
 
@@ -215,40 +215,40 @@ Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 
    ![Icono de propiedades de formulario](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
-1. **Extensión de Data Source**
+1. **Extensión de fuente de datos**
 
-   - Habilite la extensión **Fuente de datos** si no ve el icono **Fuentes de datos**
+   - Habilitar la extensión **Fuente de datos** si no ve el icono **Fuentes de datos**
 
-   ![Captura de pantalla de Universal Editor Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+   ![Captura de pantalla de Extension Manager del editor universal](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
    >[!TIP]
    >
-   > Para obtener instrucciones detalladas sobre la administración de extensiones, consulte [Características destacadas de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+   > Para obtener instrucciones detalladas sobre la administración de extensiones, consulte [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
-### Paso 7: Configurar el servicio de relleno previo
+### Paso 7: Configurar el servicio de rellenado previo
 
-1. Abra el formulario adaptable en el editor universal
-2. Haga clic en el icono de extensión **Propiedades de formulario AEM**
+1. Abrir el formulario adaptable en el editor universal
+2. Hacer clic en el icono de extensión **Propiedades de formulario AEM**
 
-   ![Seleccionar icono de propiedades de formulario](/help/edge/docs/forms/universal-editor/assets/select-fdm-properties-icon.png)
+   ![Seleccionar el icono de propiedades de formulario](/help/edge/docs/forms/universal-editor/assets/select-fdm-properties-icon.png)
 
-3. Haga clic en la ficha **Rellenar previamente**
-4. Seleccionar **servicio de prerrellenado del modelo de datos de formulario**
+3. Hacer clic en la pestaña **Prerrellenar**.
+4. Seleccionar **Servicio de rellenado previo del modelo de datos de formulario**
 
-   ![Seleccionar servicio de relleno previo](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
+   ![Seleccionar servicio de rellenado previo](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
 
-5. Haga clic en **Guardar y cerrar**
+5. Hacer clic en **Guardar y cerrar**
 
 +++
 
-+++Fase 4: Prueba De La Configuración De Relleno Previo
++++Fase 4: Prueba de la configuración de rellenado previo
 
-### Paso 8: Previsualización y pruebas
+### Paso 8: Previsualizar y probar
 
-1. Ir a **Forms** > **Forms y documentos**
-2. Seleccione el formulario adaptable
-3. Elegir **vista previa como HTML**
-4. Pruebe el relleno previo añadiendo parámetros a la dirección URL:
+1. Ir a **Formularios** > **Formularios y documentos**
+2. Seleccionar el formulario adaptable
+3. Elegir **Vista previa como HTML**
+4. Pruebe el rellenado previo añadiendo parámetros a la URL:
 
    https://your-preview-url.com?`<bindreferencefield>`=`<value>`
 
@@ -256,7 +256,7 @@ Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 
    https://your-preview-url.com?petid=12345
 
-   ![Rellenar previamente formulario](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
+   ![Rellenado previo de un formulario](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
 
 El formulario debe rellenarse automáticamente con datos basados en el parámetro proporcionado.
 
@@ -264,7 +264,7 @@ El formulario debe rellenarse automáticamente con datos basados en el parámetr
 
 ## Ejemplos
 
-### Estructuras de datos de relleno previo de muestra
+### Estructuras de datos de rellenado previo de muestras
 
 **Ejemplo de JSON para formulario basado en FDM:**
 
@@ -299,11 +299,11 @@ El formulario debe rellenarse automáticamente con datos basados en el parámetr
   </afData>
 ```
 
-### URL de relleno previo de ejemplo
+### URL de rellenado previo de ejemplo
 
-Las siguientes direcciones URL son solo ilustrativas y no funcionarán tal cual. Reemplace el host y los parámetros por los relevantes para su propio entorno al probar la funcionalidad de relleno previo.
+Las siguientes URL son solo ilustrativas y no funcionarán tal cual. Reemplace el host y los parámetros por los que sean pertinentes para su propio entorno al probar la funcionalidad de rellenado previo.
 
-**Prueba de relleno previo básica:**
+**Prueba de rellenado previo básica:**
 
 `https://preview.example.com/form.html?userId=12345`
 
@@ -319,10 +319,10 @@ Las siguientes direcciones URL son solo ilustrativas y no funcionarán tal cual.
 | Problema | Causa posible | Solución |
 |-------|----------------|----------|
 | **Los campos de formulario no se rellenan previamente** | Valores `bindRef` incorrectos | Verificar que `bindRef` coincida exactamente con los nombres de campo de FDM |
-| **Errores de formato de datos** | Estructura de datos no coincidente | Asegúrese de que los datos de relleno previo coincidan con el esquema del modelo de formulario |
-| **Servicio no encontrado** | Problemas de configuración de FDM | Compruebe que los servicios de FDM estén correctamente configurados y guardados |
+| **Errores de formato de datos** | Estructura de datos no coincidente | Asegurarse de que los datos de rellenado previo coincidan con el esquema del modelo de formulario |
+| **No se ha encontrado el servicio** | Problemas de configuración de FDM | Comprobar que los servicios de FDM estén correctamente configurados y guardados |
 | **Errores de autenticación** | Conectividad de fuente de datos | Verificar las credenciales y la conectividad de la fuente de datos |
-| **Carga parcial de datos** | Faltan asignaciones de campo | Asegúrese de que todos los campos obligatorios tengan enlaces de datos adecuados |
+| **Carga parcial de datos** | Faltan asignaciones de campo | Asegurarse de que todos los campos obligatorios tengan enlaces de datos adecuados |
 
 +++
 
@@ -337,8 +337,8 @@ Las siguientes direcciones URL son solo ilustrativas y no funcionarán tal cual.
 2. **Comprobar configuración del formulario:**
 
    - Confirmar que el formulario está asociado al FDM correcto
-   - Comprobar valores de campo `bindRef`
-   - Formulario de prueba sin relleno previo primero
+   - Comprobar valores `bindRef` de campo
+   - Probar formulario sin rellenado previo primero
 
 3. **Flujo de datos de prueba:**
 
@@ -348,9 +348,9 @@ Las siguientes direcciones URL son solo ilustrativas y no funcionarán tal cual.
 
 4. **Mensajes de error comunes:**
 
-   - &quot;Servicio de relleno previo no encontrado&quot;: comprobar la configuración del servicio
-   - &quot;Error en el enlace de datos&quot;: Comprobar la precisión de `bindRef`
-   - &quot;Formato de datos no válido&quot;: Asegúrese de que los datos coincidan con el esquema
+   - “Servicio de rellenado previo no encontrado”: comprobar la configuración del servicio
+   - “Error en el enlace de datos”: verificar la precisión de `bindRef`
+   - “Formato de datos no válido”: asegurarse de que los datos coincidan con el esquema
 
 +++
 
@@ -358,51 +358,51 @@ Las siguientes direcciones URL son solo ilustrativas y no funcionarán tal cual.
 
 +++Prácticas recomendadas de configuración
 
-- **Use un nombre descriptivo**: Asigne un nombre claro a sus FDM y servicios
-- **Validar esquemas de datos**: Asegúrese de que la estructura de datos coincida con los requisitos del formulario
-- **Probar de forma incremental**: configure y pruebe un campo a la vez
-- **Asignaciones de documentos**: realice un seguimiento de las asignaciones de campo a datos
+- **Usar nombres descriptivos**: asignar un nombre claro a FDM y servicios
+- **Validar esquemas de datos**: asegurarse de que la estructura de datos coincida con los requisitos del formulario
+- **Probar de forma incremental**: configurar y probar un campo a la vez
+- **Asignaciones de documentos**: realizar un seguimiento de las asignaciones de campo a datos
 
 +++
 
 +++Optimización del rendimiento
 
-- **Minimizar el volumen de datos**: rellenar solo los campos necesarios
-- **Usar almacenamiento en caché**: configure el almacenamiento en caché apropiado para los datos a los que se accede con frecuencia
-- **Optimizar consultas**: Asegúrese de que las consultas de base de datos sean eficientes
-- **Monitorizar el rendimiento**: haga un seguimiento de los tiempos de carga de los formularios con el relleno previo habilitado
+- **Minimizar el volumen de datos**: rellenar previamente solo los campos necesarios
+- **Usar almacenamiento en caché**: configurar el almacenamiento en caché apropiado para los datos a los que se accede con frecuencia
+- **Optimizar consultas**: asegurarse de que las consultas de base de datos sean eficientes
+- **Monitorizar el rendimiento**: hacer un seguimiento de los tiempos de carga de los formularios con el rellenado previo habilitado
 
 +++
 
-+++Consideraciones de seguridad
++++Consideraciones sobre la seguridad
 
 - **Validar parámetros de entrada**: validar siempre los parámetros de URL
-- **Sanear datos**: limpie los datos antes de rellenar previamente los formularios
-- **Implementar controles de acceso**: Asegúrese de que los usuarios solo puedan tener acceso a sus propios datos
-- **Usar HTTPS**: Use siempre conexiones seguras para la transmisión de datos
+- **Sanear los datos**: limpiar los datos antes de rellenar previamente los formularios
+- **Implementar controles de acceso**: asegurarse de que los usuarios solo puedan acceder a sus propios datos
+- **Usar HTTPS**: usar siempre conexiones seguras para la transmisión de datos
 
 +++
 
-+++Directrices de experiencia del usuario
++++Directrices sobre la experiencia del usuario
 
-- **Proporcionar comentarios**: Mostrar indicadores de carga durante la captura de datos
+- **Proporcionar comentarios**: mostrar indicadores de carga durante la captura de datos
 - **Controlar correctamente los errores**: mostrar mensajes de error útiles
-- **Permitir invalidaciones**: permita que los usuarios modifiquen los datos rellenados previamente
-- **Mantener coherencia**: utilice un comportamiento de relleno previo coherente en todos los formularios
+- **Permitir invalidaciones**: permitir que los usuarios modifiquen los datos rellenados previamente
+- **Mantener coherencia**: utilizar un comportamiento de rellenado previo coherente en todos los formularios
 
 +++
 
 ## Preguntas frecuentes
 
-+++¿Cómo puedo probar si el relleno previo funciona correctamente?
++++¿Cómo puedo probar si el rellenado previo funciona correctamente?
 
-Obtenga una vista previa del formulario y anexe parámetros de relleno previo a la dirección URL con este formato: `?<bindreferencefield>=<value>`. Asegúrese de que el campo tenga un(a) `bindRef` válido(a) que coincida con la estructura de datos. Utilice las herramientas para desarrolladores de navegadores para inspeccionar las solicitudes de red y comprobar que los datos se recuperan correctamente.
+Obtenga una vista previa del formulario y anexe parámetros de rellenado previo a la URL con este formato: `?<bindreferencefield>=<value>`. Asegúrese de que el campo tenga un `bindRef` válido que coincida con la estructura de datos. Utilice las herramientas para desarrolladores de explorador para inspeccionar las solicitudes de red y comprobar que los datos se recuperan correctamente.
 
 +++
 
-+++¿Qué formatos de datos se admiten para rellenar previamente Forms adaptable?
++++¿Qué formatos de datos se admiten para rellenar previamente formularios adaptables?
 
-Los Forms adaptables admiten varios formatos según el modelo de formulario:
+Los formularios adaptables admiten varios formatos según el modelo de formulario:
 
 - **Formularios XFA**: XML que coincide con el esquema XFA
 - **Formularios de esquema JSON**: los datos JSON cumplen con el esquema
@@ -419,19 +419,19 @@ Sí, puede rellenar previamente ambos tipos de campos. Los campos enlazados util
 
 +++¿Qué debo hacer si solo se rellenan previamente algunos campos?
 
-Compruebe que todos los campos tengan `bindRef` valores correctos que coincidan exactamente con su FDM. Compruebe que el origen de datos contiene todos los campos obligatorios y que la estructura de datos coincide con el esquema del modelo de formulario.
+Compruebe que todos los campos tengan valores `bindRef` correctos que coincidan exactamente con el FDM. Verifique que la fuente de datos contenga todos los campos obligatorios y que la estructura de datos coincida con el esquema del modelo de formulario.
 
 +++
 
 +++¿Puedo utilizar varios servicios de rellenado previo en un formulario?
 
-Puede configurar un servicio de relleno previo principal por formulario. Sin embargo, puede combinar diferentes fuentes de datos dentro de un solo modelo de datos de formulario para lograr una funcionalidad similar.
+Puede configurar un servicio de rellenado previo principal por formulario. Sin embargo, puede combinar diferentes fuentes de datos dentro de un solo modelo de datos de formulario para lograr una funcionalidad similar.
 
 +++
 
-+++¿Cómo administro la autenticación para los servicios de relleno previo?
++++¿Cómo manipulo la autenticación para los servicios de rellenado previo?
 
-La autenticación depende de la configuración de la fuente de datos. Para el prerrellenado basado en FDM, configure la autenticación en la configuración de la fuente de datos. Para rellenar previamente borradores, los usuarios suelen tener que iniciar sesión para acceder a los borradores guardados.
+La autenticación depende de la configuración de la fuente de datos. Para el rellenado previo basado en FDM, configure la autenticación en la configuración de la fuente de datos. Para rellenar previamente borradores, los usuarios suelen tener que iniciar sesión para acceder a los borradores guardados.
 
 +++
 
@@ -440,7 +440,7 @@ La autenticación depende de la configuración de la fuente de datos. Para el pr
 ## Temas relacionados
 
 - [Integración de formularios con el modelo de datos de formulario en el editor universal](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-- [Crear modelos de datos de formulario](/help/forms/create-form-data-models.md)
+- [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
 - [Trabajar con el modelo de datos de formulario (FDM)](/help/forms/work-with-form-data-model.md)
-- [Configuración de fuentes de datos](/help/forms/configure-data-sources.md)
-- [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+- [Configurar fuentes de datos](/help/forms/configure-data-sources.md)
+- [Introducción a Edge Delivery Services para AEM Forms. ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)

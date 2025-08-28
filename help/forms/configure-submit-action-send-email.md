@@ -6,13 +6,13 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Configuración de la acción de envío Enviar correo electrónico para un formulario adaptable
+# Configurar la acción de envío Enviar correo electrónico para un formulario adaptable
 
 La acción de envío **[!UICONTROL Enviar correo electrónico]** le permite enviar un correo electrónico a uno o varios destinatarios cuando el formulario se haya enviado correctamente. Esta acción de envío le permite crear un correo electrónico que incluya datos de formulario en un formato predefinido. Por ejemplo, considere la siguiente plantilla en la que el nombre del cliente, la dirección de envío, el nombre del estado y el código postal se recuperan de los datos del formulario enviado:
 
@@ -40,9 +40,9 @@ Algunas ventajas de configurar un formulario adaptable con la acción de envío 
 
 >[!BEGINTABS]
 
->[!TAB Componente Base]
+>[!TAB Componente base]
 
-Para configurar una acción de envío Enviar correo electrónico para el componente Base:
+Para configurar una acción de envío Enviar correo electrónico para el componente de base:
 
 1. Abra el formulario adaptable para editarlo y vaya a la sección **[!UICONTROL Envío]** de las propiedades del contenedor del formulario adaptable.
 1. En la lista desplegable **[!UICONTROL Acción de envío]** seleccione la opción **[!UICONTROL Enviar correo electrónico]**.
@@ -56,7 +56,7 @@ Para configurar una acción de envío Enviar correo electrónico para el compone
 1. Añada una plantilla de correo electrónico para configurar la acción de envío Enviar correo electrónico.
    * Puede especificar la ruta a la plantilla de correo electrónico externa guardada en los recursos de AEM mediante la opción **[!UICONTROL Plantilla externa]**.
    * También puede añadir una plantilla de correo electrónico personalizada para el envío del formulario en el cuadro de texto **[!UICONTROL Plantilla de correo electrónico]**.
-1. [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
+1.  [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
 1. Haga clic en **[!UICONTROL Listo]**.
 
 >[!TAB Componente principal]
@@ -76,7 +76,7 @@ Para configurar la acción de envío Enviar correo electrónico para el componen
 1. Añada una plantilla de correo electrónico para configurar la acción de envío Enviar correo electrónico.
    * Puede especificar la ruta a la plantilla de correo electrónico externa guardada en los recursos de AEM mediante la opción **[!UICONTROL Plantilla externa]**.
    * También puede añadir una plantilla de correo electrónico personalizada para el envío del formulario en el cuadro de texto **[!UICONTROL Plantilla de correo electrónico]**.
-1. [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
+1.  [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
 1. Haga clic en **[!UICONTROL Listo]**.
 
 >[!TAB Editor universal]
@@ -85,12 +85,12 @@ Para configurar la acción de envío Enviar correo electrónico en el editor uni
 
 1. Abra el formulario adaptable para editarlo.
 1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
-Aparecerá el cuadro de diálogo **Propiedades del formulario**.
+Aparece el cuadro de diálogo **Propiedades del formulario**.
 
    >[!NOTE]
    >
-   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
-   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
+   > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar las extensiones del editor universal.
 
 
 1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Enviar correo electrónico]**.
@@ -104,7 +104,7 @@ Aparecerá el cuadro de diálogo **Propiedades del formulario**.
 1. Añada una plantilla de correo electrónico para configurar la acción de envío Enviar correo electrónico.
    * Puede especificar la ruta a la plantilla de correo electrónico externa guardada en los recursos de AEM mediante la opción **[!UICONTROL Plantilla externa]**.
    * También puede añadir una plantilla de correo electrónico personalizada para el envío del formulario en el cuadro de texto **[!UICONTROL Plantilla de correo electrónico]**.
-1. [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
+1.  [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
 >[!ENDTABS]

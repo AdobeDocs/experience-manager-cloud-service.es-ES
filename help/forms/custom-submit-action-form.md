@@ -6,9 +6,9 @@ role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1697'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Si la acción no ofrece una ruta de reenvío, el servlet de envío redirecciona 
 
 ## Acción de envío {#submit-action}
 
-Una acción de envío es un sling:Folder que incluye lo siguiente:
+Una acción de envío es una :Folder sling, que incluye lo siguiente:
 
 * **addfields.jsp**: Este script aporta los campos de acción que se añaden al archivo HTML durante la representación. Utilice este script para agregar los parámetros de entrada ocultos necesarios durante el envío en el script post.POST.jsp.
 * **dialog.xml**: Este script es similar al cuadro de diálogo Componente CQ. Aporta información de configuración que el autor personaliza. Los campos se muestran en la pestaña Acciones de envío, del cuadro de diálogo Editar formulario adaptable, al seleccionar la acción de envío.
@@ -115,9 +115,9 @@ Una acción de envío es un sling:Folder que incluye lo siguiente:
 
 Realice los siguientes pasos para crear una acción de envío personalizada que guarde los datos en el repositorio CRX y luego le envíe un correo electrónico. El formulario adaptable contiene el contenido del almacén de acciones de envío OOTB (obsoleto) que guarda los datos en el repositorio CRX. Además, AEM facilitará un API de [Correo electrónico](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) que se puede utilizar para enviar correos electrónicos. Antes de usar el API de correo electrónico, configure el servicio Day CQ Mail mediante la consola del sistema. Puede reutilizar la acción Almacenar contenido (obsoleta) para almacenar los datos en el repositorio. La acción Almacenar contenido (obsoleta) está disponible en la ubicación /libs/fd/af/components/guidesubmittype/store en el repositorio CRX.
 
-1. Inicie sesión en CRXDE Lite en la URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Cree un nodo con la propiedad sling:Folder y el nombre store_and_mail en la carpeta /apps/custom_submit_action. Cree la carpeta custom_submit_action si todavía no existe.
+1. Inicie sesión en CRXDE Lite en la URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Cree un nodo con la propiedad sling::Folder y el nombre store_and_mail en la carpeta /apps/custom_submit_action. Cree la carpeta custom_submit_action si todavía no existe.
 
-   ![Captura de pantalla que muestra la creación de un nodo con la propiedad sling:Folder](assets/step1.png)
+   ![Captura de pantalla que representa la creación de un nodo con la propiedad sling::Folder](assets/step1.png)
 
 2. **Facilite los campos de configuración obligatorios.**
 
@@ -127,7 +127,7 @@ Realice los siguientes pasos para crear una acción de envío personalizada que 
 
 3. **Falicite campos de configuración para solicitar al autor que configure el correo electrónico.**
 
-   El formulario adaptable también ofrece una acción de correo electrónico que envía correos electrónicos a los usuarios. Personalice esta acción según sus necesidades. Vaya a /libs/fd/af/components/guidesubmittype/email/dialog. Copie los nodos dentro del nodo cq:dialog al nodo cq:dialog de su acción de envío (/apps/custom_submit_action/store_and_email/dialog).
+   El formulario adaptable también ofrece una acción de correo electrónico que envía correos electrónicos a los usuarios. Personalice esta acción según sus necesidades. Vaya a /libs/fd/af/components/guidesubmittype/email/dialog. Copie los nodos dentro del nodo cq:dialog al nodo cq:dialog de su acción de envío (/apps/custom_submit_action/store_and_email/dialog).
 
    ![Personalizar la acción de correo electrónico](assets/step3.png)
 
@@ -139,7 +139,7 @@ Realice los siguientes pasos para crear una acción de envío personalizada que 
 
    * **guideDataModel** de tipo **Cadena** y valor **<!--xfa, -->xsd, básico**
 
-   * **jcr:description** de tipo **Cadena** y valor **Acción de almacenamiento y correo electrónico**
+   * **jcr:description** de tipo **String** y valor **Acción de almacenamiento y correo electrónico**
 
    * **submitService** de tipo **Cadena** y valor **Almacenamiento y correo electrónico**. Para obtener más información, consulte [Programar el envío del formulario adaptable para acciones personalizadas](#schedule-adaptive-form-submission).
 
@@ -209,7 +209,7 @@ Realice los siguientes pasos para crear una acción de envío personalizada que 
 
 ## Utilizar la propiedad submitService para las acciones de envío personalizadas {#submitservice-property}
 
-Al establecer la acción de envío personalizada, que incluye la propiedad `submitService`, el formulario activa [FormSubmitActionService](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) en el momento del envío. `FormSubmitActionService` utiliza el método `getServiceName` para recuperar el valor de la propiedad `submitService`. En función del valor de la propiedad `submitService`, el servicio invoca el método de envío adecuado. Incluya `FormSubmitActionService` al paquete personalizado que carga en el servidor de [!DNL AEM Forms].
+Al establecer la acción de envío personalizada, que incluye la propiedad `submitService`, el formulario activa [FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) en el momento del envío. `FormSubmitActionService` utiliza el método `getServiceName` para recuperar el valor de la propiedad `submitService`. En función del valor de la propiedad `submitService`, el servicio invoca el método de envío adecuado. Incluya `FormSubmitActionService` al paquete personalizado que carga en el servidor de [!DNL AEM Forms].
 
 Añada la propiedad `submitService` de tipo cadena a `sling:Folder` de su acción de envío personalizada para habilitar [!DNL Adobe Sign] para el formulario adaptable. Puede seleccionar la opción **[!UICONTROL Habilitar Adobe Sign]** en la sección **[!UICONTROL Firma electrónica]** de las propiedades del contenedor del formulario adaptable solo después de establecer el valor de la propiedad `submitService` de su acción de envío personalizada.
 

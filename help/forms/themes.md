@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
 source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5558'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -678,6 +678,6 @@ Puede ver el CSS generado mediante las siguientes opciones:
 Si desea proporcionar información como un logotipo, el nombre de la empresa en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.
 
 
-## Ver también {#see-also}
+## Véase también {#see-also}
 
 {{see-also}}

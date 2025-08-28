@@ -7,13 +7,13 @@ feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Com
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1304'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Envío de un formulario adaptable a Adobe Workfront Fusion
+# Enviar un formulario adaptable a Adobe Workfront Fusion
 
 <span class="preview"> La funcionalidad está disponible en el programa de primeros usuarios. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
@@ -31,7 +31,7 @@ AEM Forms as a Cloud Service proporciona un conector predeterminado para conecta
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
-<span> Este vídeo solo es aplicable a los componentes principales. Para componentes UE/Foundation, consulte el artículo.</span>
+<span> Este vídeo solo es aplicable a los componentes principales. Para componentes del editor universal o de base, consulte el artículo.</span>
 
 ## Requisitos previos para integrar AEM Forms con Adobe Workfront Fusion {#prerequisites}
 
@@ -150,12 +150,12 @@ Para añadir una conexión, haga lo siguiente:
 
 >[!BEGINTABS]
 
->[!TAB Componente Base]
+>[!TAB Componente base]
 
 Para configurar la acción de envío de un formulario adaptable basado en componentes de base para Workfront Fusion:
 
 1. Abra el formulario adaptable para editarlo y vaya a la sección **[!UICONTROL Envío]** de las propiedades del contenedor del formulario adaptable.
-1. En la lista desplegable **[!UICONTROL Enviar acción]**, seleccione **[!UICONTROL Invocar un escenario de Workfront Fusion]**.
+1. En la lista desplegable **[!UICONTROL Acción de envío]**, seleccione la opción **[!UICONTROL Invocar un escenario de WorkFront Fusion]**.
    ![Acción de envío para Workfront Fusion](/help/forms/assets/workfront-fusion-fc.png)
 
 1. Seleccione **[!UICONTROL Escenario de Workfront Fusion]** en la lista desplegable.
@@ -169,7 +169,7 @@ Para configurar la acción de envío de un formulario adaptable basado en compon
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 1. Haga clic en la pestaña **[!UICONTROL Envío]**.
-1. En la lista desplegable **[!UICONTROL Enviar acción]**, seleccione **[!UICONTROL Invocar un escenario de Workfront Fusion]**.
+1. En la lista desplegable **[!UICONTROL Acción de envío]**, seleccione la opción **[!UICONTROL Invocar un escenario de WorkFront Fusion]**.
 
    ![Acción de envío para Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
 1. Seleccione **[!UICONTROL Escenario de Workfront Fusion]** en la lista desplegable.
@@ -177,18 +177,18 @@ Para configurar la acción de envío de un formulario adaptable basado en compon
 
 >[!TAB Editor universal]
 
-Para configurar la acción de envío de un formulario adaptable creado con el Editor universal:
+Para configurar la acción de envío de un formulario adaptable creado con el editor universal:
 
 1. Abra el formulario adaptable para editarlo.
 1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
-Aparecerá el cuadro de diálogo **Propiedades del formulario**.
+Aparece el cuadro de diálogo **Propiedades del formulario**.
 
    >[!NOTE]
    >
-   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
-   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
+   > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar las extensiones del editor universal.
 
-1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Invocar un escenario de Workfront Fusion]**.
+1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Invocar un escenario de WorkFront Fusion]**.
 
    ![Acción de envío para Workfront Fusion](/help/forms/assets/workfront-fusion-ue.png)
 

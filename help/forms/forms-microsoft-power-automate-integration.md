@@ -6,9 +6,9 @@ keywords: conectar AEM Forms a Power Automate, automatización de Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
 source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1531'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -142,7 +142,7 @@ Tras [conectar su instancia de Forms as a Cloud Service con Microsoft® Power Au
 
 >[!BEGINTABS]
 
->[!TAB Componente Base]
+>[!TAB Componente base]
 
 1. Inicie sesión en la instancia de autor, seleccione su formulario adaptable y haga clic en **[!UICONTROL Propiedades]**.
 1. En el contenedor de configuración, examine y seleccione el contenedor creado en la sección [Crear la configuración de nube de Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) y seleccione **[!UICONTROL Guardar y cerrar]**.
@@ -154,7 +154,7 @@ Tras [conectar su instancia de Forms as a Cloud Service con Microsoft® Power Au
 
 >[!NOTE]
 >
-> Antes de enviar el formulario adaptable, asegúrese de que se añada el activador `When an HTTP Request is received` con el esquema JSON a continuación a su flujo de Power Automate.
+> Antes de enviar el formulario adaptable, asegúrese de añadir el activador `When an HTTP Request is received` con el esquema JSON a continuación al flujo de Power Automate.
 
 ```
         {
@@ -223,14 +223,14 @@ Tras [conectar su instancia de Forms as a Cloud Service con Microsoft® Power Au
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 1. Haga clic en la pestaña **[!UICONTROL Envío]**.
-1. Seleccione la opción **[!UICONTROL Invocar un flujo de Power Automate]** de la lista desplegable Enviar acción y seleccione un **[!UICONTROL flujo de Power Automate]**. Seleccione el flujo necesario y los datos de formularios adaptables se envían en el momento del envío.
+1. Seleccione la opción **[!UICONTROL Invocar un flujo de Power Automate]** de la lista desplegable Enviar acción y seleccione un elemento en **[!UICONTROL Flujo de Power Automate]**. Seleccione el flujo necesario y los datos de formularios adaptables se envían en el momento del envío.
 
    ![Configurar la acción de envío](/help/forms/assets/power-automate-cc.png)
 1. Haga clic en **[!UICONTROL Listo]**.
 
 >[!NOTE]
 >
-> Antes de enviar el formulario adaptable, asegúrese de que se añada el activador `When an HTTP Request is received` con el esquema JSON a continuación a su flujo de Power Automate.
+> Antes de enviar el formulario adaptable, asegúrese de que se añada el activador `When an HTTP Request is received` con el esquema JSON a continuación al flujo de Power Automate.
 
 ```
         {
@@ -294,16 +294,16 @@ Tras [conectar su instancia de Forms as a Cloud Service con Microsoft® Power Au
 
 >[!TAB Editor universal]
 
-1. Inicie sesión en la instancia de autor y seleccione su formulario adaptable.
+1. Inicie sesión en la instancia Autor, seleccione su formulario adaptable.
 1. En el contenedor de configuración, examine y seleccione el contenedor creado en la sección [Crear la configuración de nube de Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) y seleccione **[!UICONTROL Guardar y cerrar]**.
 1. Abra el formulario adaptable para editarlo.
 1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
-Aparecerá el cuadro de diálogo **Propiedades del formulario**.
+Aparece el cuadro de diálogo **Propiedades del formulario**.
 
    >[!NOTE]
    >
-   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
-   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del Editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
+   > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar las extensiones del editor universal.
 
 
 1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Invocar un flujo de Power Automate]**. Seleccione el flujo necesario y los datos de formularios adaptables se envían en el momento del envío.
@@ -313,7 +313,7 @@ Aparecerá el cuadro de diálogo **Propiedades del formulario**.
 
 >[!NOTE]
 >
-> Antes de enviar el formulario adaptable, asegúrese de que se añada el activador `When an HTTP Request is received` con el esquema JSON a continuación a su flujo de Power Automate.
+> Antes de enviar el formulario adaptable, asegúrese de añadir el activador `When an HTTP Request is received` con el esquema JSON a continuación a su flujo de Power Automate.
 
 ```
         {

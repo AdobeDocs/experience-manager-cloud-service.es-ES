@@ -3,9 +3,9 @@ title: Preguntas frecuentes (FAQ) sobre Content Hub
 description: Obtenga respuestas a algunas de las preguntas más frecuentes (FAQ) sobre Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Hay algunas configuraciones sobre cómo se asignan los usuarios a [!DNL Content 
    >
    >El usuario asignado a los perfiles de producto Express y Assets en dos Admin Consoles necesita tener la misma dirección de correo electrónico y usar una cuenta de empresa **Enterprise o School**, y no la cuenta **Personal**. La configuración ideal es tener ambas Admin Consoles configuradas como **Federated ID** con una relación de confianza configurada entre ellas, de modo que el usuario tenga una experiencia de inicio de sesión único sin problemas. Algunos de los planes Express (por ejemplo, Equipos Express) no admiten el inicio de sesión único/Federated ID.
 
-Además de las autorizaciones de producto adecuadas, la integración de Adobe Express en Content Hub requiere que el usuario asignado tenga al menos permisos [!UICONTROL Puede editar] en el entorno de creación de Assets que alimenta Content Hub, en al menos la jerarquía de carpetas **[!UICONTROL # /content/dam/hydroloaded-assets/]**, en la que los usuarios de Content Hub pueden guardar el contenido que han creado mediante Express. Consulte [Administración de permisos](/help/security/touch-ui-principal-view.md) en la vista de administración (IU táctil) o la [administración de permisos simplificada en la vista de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Además de las autorizaciones de producto adecuadas, la integración de Adobe Express en Content Hub requiere que el usuario asignado tenga al menos permisos [!UICONTROL Puede editar] en el entorno de creación de Assets que alimenta Content Hub, en al menos la jerarquía de carpetas **[#UICONTROL /content/dam/hydroloaded-assets/]**, en la que los usuarios de Content Hub pueden guardar el contenido que han creado mediante Express. Consulte [Administración de permisos](/help/security/touch-ui-principal-view.md) en la vista de administración (IU táctil) o la [administración de permisos simplificada en la vista de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## ¿Puedo configurar Content Hub para que las directrices de marca de mi organización se muestren como un vínculo en la página de inicio? {#content-hub-setup-brand-guidelines}
 
@@ -137,26 +137,26 @@ En la tabla siguiente se describen las principales diferencias entre las dos sol
 
 ## ¿Cómo puedo seleccionar un repositorio para ver los recursos solo del entorno seleccionado? {#select-repository-multiple-environments}
 
-Cuando haya configurado Content Hub para producción y otros entornos inferiores para el mismo programa, puede seleccionar el repositorio y mostrar los recursos del entorno seleccionado. Ejecute los siguientes pasos:
+Cuando haya configurado el centro de contenido para producción y otros entornos inferiores para el mismo programa, puede seleccionar el repositorio y mostrar los recursos del entorno seleccionado. Ejecute los siguientes pasos:
 
 1. Haga clic en el icono de usuario en el panel derecho.
 
-1. En la sección **[!UICONTROL Configuración del producto]**, seleccione **[!UICONTROL Seleccionar repositorio]**.
+1. En la sección **[!UICONTROL Configuración del producto]**, elija **[!UICONTROL Seleccionar repositorio]**.
 
 1. Seleccione el repositorio en el menú desplegable **[!UICONTROL Repositorio]** y haga clic en **[!UICONTROL Aceptar]** para confirmar.
 
-   Content Hub ahora muestra los recursos del entorno seleccionado.
+   El centro de contenido ahora muestra los recursos del entorno seleccionado.
 
-## ¿Cómo puede Content Hub mostrar la previsualización de miniaturas para el tipo de archivo .ZIP? {#thumbnail-preview-zip-file}
+## ¿Cómo puede el centro de contenido mostrar una previsualziación en miniatura para el tipo de archivo .ZIP? {#thumbnail-preview-zip-file}
 
-Para proporcionar una vista previa en miniatura de los tipos de archivo como .ZIP en Content Hub, puede agregar una representación con el nombre `cq5dam.preview.jpg` o `cq5dam.preview.png` a la raíz de la ruta de acceso donde el .ZIP está disponible en el entorno de creación de AEM as a Cloud Service.
+Para proporcionar una previsualización en miniatura de los tipos de archivo, como .ZIP, en el centro de contenido, puede añadir una representación denominada `cq5dam.preview.jpg` o `cq5dam.preview.png` a la raíz de la ruta donde el archivo .ZIP está disponible en el entorno de creación de AEM as a Cloud Service.
 
-La imagen que agregue como representación:
+La imagen que añada como representación:
 
 * Puede estar en formato JPG, JPEG o PNG.
 
-* Debe ser inferior a 50 MB
+* Debe ser inferior a 50 MB
 
-Cuando está disponible, Content Hub muestra la imagen como miniatura de vista previa del archivo .ZIP en Content Hub.
+Cuando está disponible, el centro de contenido muestra la imagen como miniatura de previsualización del archivo .ZIP en dicho centro.
 
 

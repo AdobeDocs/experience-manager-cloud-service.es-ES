@@ -1,13 +1,13 @@
 ---
-title: Creación de componentes personalizados para un formulario EDS
-description: Creación de componentes personalizados para un formulario EDS
+title: Crear componentes personalizados para un formulario EDS
+description: Crear componentes personalizados para un formulario EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1789'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -301,7 +301,7 @@ Para asegurarse de que el componente personalizado aparece en la lista de compon
 
 ### &#x200B;4. Registro del componente personalizado
 
-Para permitir que el bloque de formulario reconozca el componente personalizado y cargue sus propiedades definidas en el modelo de componente durante la creación del formulario, agregue el valor `fd:viewType` de la definición del componente al archivo `mappings.js`.
+Para habilitar que el bloque de formulario reconozca el componente personalizado y cargue sus propiedades definidas en el modelo de componente durante la creación del formulario, añada el `fd:viewType`valor de la definición del componente al archivo `mappings.js`.
 
 Para registrar un componente:
 

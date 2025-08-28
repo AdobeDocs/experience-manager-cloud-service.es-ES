@@ -1,14 +1,14 @@
 ---
-title: Configuración de datos de Marketo Engage para Forms adaptable
-description: Aprenda a utilizar el esquema de Marketo Engage en Forms adaptable.
-keywords: Utilizar la fuente de datos de Marketo Engage en Forms adaptable, Cómo conectar una fuente de datos de instancia de Marketo con un formulario , Conecte un formulario a Marketo.
+title: Configuración de datos de Marketo Engage para los formularios adaptables
+description: Aprenda a utilizar el esquema de Marketo Engage en formularios adaptables.
+keywords: Utilizar la fuente de datos de Marketo Engage en formularios adaptables, Conexión de una fuente de datos de instancia de Marketo con un formulario, Conectar un formulario a Marketo.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
 source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '797'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -38,11 +38,11 @@ Requisito previo para utilizar la fuente de datos de Marketo Engage con formular
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
 
-<span> Este vídeo solo es aplicable a los componentes principales. Para componentes UE/Foundation, consulte el artículo.</span>
+<span> Este vídeo solo es aplicable a los componentes principales. Para componentes del editor universal o de base, consulte el artículo.</span>
 
 >[!BEGINTABS]
 
->[!TAB Componente Base]
+>[!TAB Componente base]
 
 Para configurar un formulario adaptable basado en componentes de base con la fuente de datos de Marketo Engage, realice los siguientes pasos:
 
@@ -91,18 +91,18 @@ El formulario adaptable ahora está configurado con la fuente de datos de la ins
 
 >[!TAB Editor universal]
 
-Para configurar un formulario adaptable creado en el Editor universal con la fuente de datos de Marketo Engage, realice los siguientes pasos:
+Para configurar un formulario adaptable creado en el editor universal con la fuente de datos de Marketo Engage, realice los siguientes pasos:
 
 1. Abra las propiedades del formulario para editarlo.
 1. Seleccione **[!UICONTROL Modelo de formulario]**.
-1. Seleccione **Conector** del **[!UICONTROL Modelo de formulario]**.
+1. Seleccione **Conector** en **[!UICONTROL Modelo de formulario]**.
 1. Después de seleccionar el **[!UICONTROL Conector]**, puede seleccionar la configuración de la nube.
 
    ![Seleccionar conector de Marketo](/help/forms/assets/select-marketo-connector-ue.png)
 
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
-En función de la configuración de Marketo Engage seleccionada, los elementos del formulario se muestran en la pestaña **[!UICONTROL Fuente de datos]** del Explorador de contenido en el Panel de propiedades. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
+En función de la configuración de Marketo Engage seleccionada, los elementos del formulario se muestran en la pestaña **[!UICONTROL Fuente de datos]** del explorador de contenido en el panel Propiedades. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
 
 ![Fuente de datos de Marketo](/help/forms/assets/marketo-engage-data-source-ue.png)
 
