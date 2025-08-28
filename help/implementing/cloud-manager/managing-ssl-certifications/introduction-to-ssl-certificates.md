@@ -21,8 +21,8 @@ Obtenga información acerca de las herramientas de autoservicio que proporciona 
 >id="aemcloud_golive_sslcert"
 >title="Administrar certificados SSL"
 >abstract="Descubra la forma en la que Cloud Manager proporciona herramientas de autoservicio para instalar y administrar certificados SSL con el fin de proteger su sitio en beneficio de sus usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="Ver, actualizar y reemplazar un certificado SSL"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="Comprobar el estado de un certificado SSL"
+>additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="Ver, actualizar y reemplazar un certificado SSL"
+>additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="Comprobar el estado de un certificado SSL"
 
 ## ¿Qué son los certificados SSL? {#overview}
 
