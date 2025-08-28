@@ -3,16 +3,16 @@ title: Búsqueda de recursos en Content Hub
 description: Obtenga información sobre cómo buscar recursos en  [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
+source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
 
 # Buscar Assets en [!DNL Content Hub] {#search-assets}
 
-Cuando tiene un gran número de recursos en el repositorio, la búsqueda del recurso adecuado requiere tiempo. La búsqueda de [!DNL The Content Hub] le permite buscar los recursos aprobados para que pueda realizar acciones adicionales en ellos, como descargar, compartir o crear colecciones. Puede utilizar varias funciones para reducir los resultados de búsqueda, como, por ejemplo, realizar búsquedas basadas en texto, utilizar filtros, realizar búsquedas específicas de etiquetas inteligentes o etiquetas inteligentes, buscar un formato de archivo determinado, etc.
+Cuando tiene un gran número de recursos en el repositorio, la búsqueda del recurso adecuado requiere tiempo. La búsqueda de [!DNL The Content Hub] le permite buscar los recursos aprobados para que pueda realizar acciones adicionales en ellos, como descargar, compartir o crear colecciones. Puede utilizar varias funciones para reducir los resultados de búsqueda, como realizar búsquedas basadas en texto, utilizar filtros, realizar búsquedas específicas de etiquetas inteligentes o etiquetas inteligentes, buscar un formato de archivo determinado, etc.
 
 ## Requisitos previos {#prerequisites}
 
@@ -148,6 +148,24 @@ Los filtros predeterminados incluyen formato de archivo, aprobado por, fecha de 
 
 -->
 
+## Búsqueda masiva {#bulk-search}
+
+La búsqueda masiva de recursos permite buscar varios recursos simultáneamente al introducir una lista de identificadores (como nombres, formatos de archivo, colores, etiquetas, etc.). En lugar de buscar recursos uno por uno, la búsqueda masiva de [!DNL Content Hub] acelera la detección de los recursos que necesita. Con esta capacidad, puede introducir varios valores para cualquier propiedad de filtro (separados por un delimitador (por ejemplo, varios ID de SKU)) y recuperar instantáneamente todos los recursos coincidentes con una sola búsqueda.
+
+Para buscar varios recursos a la vez, escriba varios valores en una sola consulta separándolos con delimitadores ` [ , | \t | \r | \n | \r\n ]`. También puede añadir más delimitadores según el caso de uso. Consulte [Configurar la búsqueda en lotes](configure-content-hub-ui-options.md#bulk-search-configuration).
+
+Para realizar una búsqueda masiva en [!DNL Content Hub], ejecute los pasos siguientes:
+
+1. Una vez que la búsqueda masiva esté [configurada](configure-content-hub-ui-options.md#bulk-search-configuration), podrá ver la opción Búsqueda masiva en las propiedades de filtro [!DNL Content Hub] que configuró. Puede habilitarlo o deshabilitarlo según los requisitos.
+
+1. Agregue una consulta de búsqueda que contenga delimitadores especificados en la configuración. La consulta de búsqueda debe contener una cadena acompañada de varios valores separados por comas.
+
+![IU de búsqueda masiva](assets/bulk-search-ui.png)
+
 ## Haga más con la búsqueda {#do-more-with-search}
 
 [!DNL The Content Hub] no se limita a la búsqueda, sino que le permite realizar acciones adicionales, como [descargar](download-assets-content-hub.md), [compartir](share-assets-content-hub.md) y [agregar recursos a la colección](collections-content-hub.md), directamente desde la interfaz de búsqueda o vista previa. Seleccione los recursos en la página de resultados de búsqueda para ver estas opciones.
+
+Más información sobre [configurar recursos en [!DNL Content Hub]](configure-content-hub-ui-options.md).
+
+
