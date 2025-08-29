@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo acceder a Cloud Manager para confi
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 84%
@@ -42,7 +42,7 @@ Antes de los integrantes del equipo que usted asignó a la función **Propietari
 
    Regrese al paso anterior de este recorrido, [Asignar integrantes del equipo a perfiles de producto de Cloud Manager](assign-profiles-cloud-manager.md), para obtener detalles sobre cómo asignar la función **Propietario del negocio** al administrador del sistema.
 
-1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com/).
+1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
 1. En la agrupación Acceso rápido, haga clic en **Experience Manager**.
 1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
 
