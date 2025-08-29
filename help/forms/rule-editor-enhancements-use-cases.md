@@ -122,7 +122,7 @@ El campo **Costo de envío total** se actualiza dinámicamente para reflejar tan
 >[!NOTE]
 >
 > También puede agregar la función **Obtener valor de variable** en la condición When.
-> > ![Obtener función de valor de variable en la condición When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> &#x200B;> ![Obtener función de valor de variable en la condición When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Este método permite realizar cálculos dinámicos en tiempo real sin agregar campos adicionales al formulario, lo que mantiene la estructura limpia y fácil de usar.
 
