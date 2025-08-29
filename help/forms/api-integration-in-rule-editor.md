@@ -5,13 +5,13 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: al integrar la API en el editor de reglas, invoque las mejoras del servicio
-source-git-commit: 5d25204516cb46334c4d594c16852b033f3e6c90
+exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
-
 
 # Integración de API en el editor de reglas
 
@@ -25,7 +25,7 @@ Además, el Editor de reglas visuales le permite definir **controladores de éxi
 
 >[!NOTE]
 >
-> La integración de API en el Editor de reglas también es aplicable a Edge Delivery Services Forms.
+> La integración de API en el Editor de reglas también se aplica a [Edge Delivery Services Forms creado en el Editor universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Comparación: métodos de integración de API
 
@@ -76,6 +76,8 @@ La captura de pantalla siguiente muestra la ventana de configuración de integra
    * **Agregar/Eliminar**: Agregue nuevas asignaciones o elimine las existentes.
 
 ## Caso de uso: Rellenar campos de país en un formulario de solicitud de visa
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471606/rule-editor-api-integration/?quality=12&learn=on)
 
 **Escenario**: una agencia gubernamental proporciona un formulario de solicitud de visa en línea con los siguientes campos:
 

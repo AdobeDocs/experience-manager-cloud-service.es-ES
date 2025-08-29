@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -105,6 +105,8 @@ Para evitar saturar el formulario con campos ocultos, la empresa decide almacena
 
 **Implementación mediante las funciones Establecer valor de variable y Obtener valor de variable en el Editor de reglas**
 
+>[!VIDEO](https://video.tv.adobe.com/v/3471607/get-set-variable-final-video/?quality=12&learn=on)
+
 Se ha configurado una regla en el fragmento **Address** mediante la función **Set Variable Value** para asignar una variable temporal denominada **extracharge**. El valor de esta variable cambia dinámicamente según el país seleccionado. Por ejemplo:
 
 * Si el usuario selecciona Estados Unidos, **extracharge** se establece en 500.
@@ -122,7 +124,7 @@ El campo **Costo de envío total** se actualiza dinámicamente para reflejar tan
 >[!NOTE]
 >
 > También puede agregar la función **Obtener valor de variable** en la condición When.
-> &#x200B;> ![Obtener función de valor de variable en la condición When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Obtener función de valor de variable en la condición When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Este método permite realizar cálculos dinámicos en tiempo real sin agregar campos adicionales al formulario, lo que mantiene la estructura limpia y fácil de usar.
 
@@ -135,6 +137,9 @@ El editor de reglas mejorado admite la administración de eventos personalizados
 En lugar de enlazar la lógica directamente a los campos, el formulario usa un método basado en eventos con **Evento de envío** y **Evento de Déclencheur** para mejorar la modularidad y la capacidad de mantenimiento.
 
 **Implementación mediante evento de envío y evento de Déclencheur**
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 El fragmento de inicio de sesión se agrega al formulario, que contiene campos predefinidos para Nombre de usuario y Contraseña. Se ha configurado una regla en el botón **Obtener OTP** para mostrar el **Panel de validación**, que incluye el campo de entrada para introducir y validar el OTP.
 
