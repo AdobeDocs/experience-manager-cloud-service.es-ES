@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: bda1ef43d452222036e9df20b6f3acee7bec8855
+source-git-commit: b09452637fd86af8fc71101f98e05597a8fe630e
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 39%
+source-wordcount: '2885'
+ht-degree: 37%
 
 ---
 
@@ -246,18 +246,83 @@ Abra el fragmento para su edición:
 
 ## Copiar un fragmento de contenido {#copy-a-content-fragment}
 
+<!--
+**Copy** creates a copy of the selected fragment at its location.
+
+* In the **Copy** action you can select whether to **Copy with children** (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
+
+  * Creates a copy of the selected Content Fragment at its location.
+  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the original referenced fragment.
+
+* The copy of the selected fragment will reference the copies of the referenced fragments.
+
+* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
+
+* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
+
+So, if we start with:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+   FragmentB
+```
+
+Copying FragmentA to FolderC, would result in:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+    FragmentB
+    Copy_of_FragmentB
+
+FolderC
+    Copy_of_FragmentA
+    | 
+    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
+```
+-->
+
+<!-- CQDOC-22785 - will replace above text -->
+
 **Copiar** crea una copia del fragmento seleccionado en su ubicación.
 
-* En la acción **Copiar** puede seleccionar si desea **Copiar con elementos secundarios** (fragmentos a los que se hace referencia). Esto le permite copiar el fragmento de contenido seleccionado y todos los fragmentos referenciados. AEM:
+* En la acción **Copiar** puede seleccionar si desea **Copiar también los fragmentos de contenido a los que se hace referencia**. Esto le permite copiar el fragmento de contenido seleccionado y todos los fragmentos referenciados. AEM:
 
    * Crea una copia del fragmento de contenido seleccionado en su ubicación.
-   * Crea copias de todos los fragmentos a los que hace referencia el fragmento seleccionado; se copian en la misma ubicación que el fragmento original al que se hace referencia.
+   * Crea copias de todos los fragmentos a los que hace referencia el fragmento seleccionado.
+
+     Las [ubicaciones en las que se copian los fragmentos a los que se hace referencia](#locations-that-the-referenced-fragments-are-copied-to) dependen de la opción que seleccione:
+
+      * **Copiar a la carpeta seleccionada**
+Cuando se seleccionan, los fragmentos a los que se hace referencia se copian en la misma ubicación que el fragmento seleccionado original.
+
+      * **Copiar a sus ubicaciones originales**
+Los fragmentos a los que se hace referencia se copian en la misma ubicación que el fragmento original al que se hace referencia. Esta es la opción predeterminada y se utilizará cuando no se seleccione ninguna opción.
 
 * La copia del fragmento seleccionado hará referencia a las copias de los fragmentos a los que se hace referencia.
 
 * Se realiza una copia profunda, por lo que si un fragmento de contenido al que se hace referencia también hace referencia a fragmentos, estos también se copian.
 
 * La acción **Copiar** no afecta a otro contenido al que se hace referencia, como recursos o imágenes. La referencia (referencia de contenido) se copia como parte del nuevo fragmento, pero no el propio contenido del recurso o la imagen.
+
+### Ubicaciones en las que se copian los fragmentos referenciados {#locations-that-the-referenced-fragments-are-copied-to}
+
+Al copiar fragmentos de contenido, puede especificar dónde se deben copiar los fragmentos a los que se hace referencia con **Copiar también los fragmentos de contenido a los que se hace referencia** y las opciones relacionadas:
+
+![Copiar fragmentos](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
+
+#### Copiar a sus ubicaciones originales {#copy-to-their-original-locations}
+
+Al seleccionar **Copiar a sus ubicaciones originales**, los fragmentos a los que se hace referencia se copian en la misma ubicación que el fragmento original al que se hace referencia. Esta es también la acción predeterminada cuando no se realiza ninguna selección.
 
 Por lo tanto, si empezamos con:
 
@@ -289,75 +354,11 @@ FolderC
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
 
-<!-- CQDOC-22785 - will replace above text -->
+#### Copiar a la carpeta seleccionada {#copy-to-the-selected-folder}
 
-<!--
-**Copy** creates a copy of the selected fragment at its location.
+Cuando se seleccionan, los fragmentos a los que se hace referencia se copian en la misma ubicación que el fragmento seleccionado original.
 
-* In the **Copy** action you can select whether to **Copy also referenced content fragments**. This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
-
-  * Creates a copy of the selected Content Fragment at its location.
-  * Creates copies of all fragments that are referenced by the selected fragment.
-
-    The [locations that the referenced fragments are copied to](#locations-that-the-referenced-fragments-are-copied-to) depends on the option you select:
-
-    * **Copy to the selected folder**
-      When selected, the referenced fragments are copied to the same location as the original selected fragment. 
-
-    * **Copy to their original locations**
-      The referenced fragments are copied to the same location as the original referenced fragment. This is the default, and will be used when no option is selected.
-
-* The copy of the selected fragment will reference the copies of the referenced fragments.
-
-* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
-
-* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
-
-### Locations that the referenced fragments are copied to {#locations-that-the-referenced-fragments-are-copied-to}
-
-When copying Content Fragments you can specify where referenced fragments should be copied to with **Copy also referenced content fragments** and the related options:
-
-![Copy fragments](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
-
-#### Copy to their original locations {#copy-to-their-original-locations}
-
-When you select **Copy to their original locations**, the referenced fragments are copied to the same location as the original referenced fragment. This is also the default action when no selection is made.
-
-So, if we start with:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-   FragmentB
-```
-
-Copying FragmentA to FolderC, would result in:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-    FragmentB
-    Copy_of_FragmentB
-
-FolderC
-    Copy_of_FragmentA
-    | 
-    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
-```
-
-#### Copy to the selected folder {#copy-to-the-selected-folder}
-
-When selected, the referenced fragments are copied to the same location as the original selected fragment.
-
-So, if we start with:
+Por lo tanto, si empezamos con:
 
 ```xml
 FolderA 
@@ -370,7 +371,7 @@ FolderB
    FragmentB
 ```
 
-Copying FragmentA to FolderC, would result in:
+Copiar el fragmento A en la carpeta C resultaría en lo siguiente:
 
 ```xml
 FolderA 
@@ -388,7 +389,6 @@ FolderC
    |___./Copy_of_FragmentB (referenced by FragmentA)
    Copy_of_FragmentB
 ```
--->
 
 ## Ver y administrar etiquetas {#manage-tags}
 
