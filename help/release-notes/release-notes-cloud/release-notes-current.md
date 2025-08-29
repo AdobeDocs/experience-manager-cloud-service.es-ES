@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 69147d156a6a3d441aca3cb9da089a3768dc593c
+source-git-commit: 4a1dcc9f069bdf8f5cf8abaa3f784f5ebd4922cc
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 47%
@@ -130,7 +130,7 @@ La compilación predeterminada de JavaScript de la biblioteca del lado del clien
 
 ### Próximas obsolescencias de la API de Java {#java-api-deprecation}
 
-Varias API obsoletas pretenden eliminarse el 31 de agosto, por lo que ya no se debe hacer referencia a ellas. A principios de septiembre, se enviarán notificaciones del Centro de actividades si se detecta uso de la API y, después del 25 de septiembre, aparecerán avisos durante las compilaciones de Cloud Manager para reforzar la importancia de eliminar el uso. Consulte el [artículo en desuso](/help/release-notes/deprecated-removed-features.md#aem-apis) para obtener información detallada, pero para su comodidad, estas API se enumeran a continuación:
+Varias API obsoletas pretenden eliminarse el 31 de agosto, por lo que ya no se debe hacer referencia a ellas. A principios de septiembre, las notificaciones del Centro de acciones se enviarán si se detecta uso de la API y, después del 25 de septiembre, aparecerán avisos durante las compilaciones de Cloud Manager para reforzar la importancia de eliminar el uso. Consulte el [artículo en desuso](/help/release-notes/deprecated-removed-features.md#aem-apis) para obtener información detallada, pero para su comodidad, estas API se enumeran a continuación:
 
 <details>
   <summary>Amplíe para ver las obsolescencias de la API de Java</summary>
