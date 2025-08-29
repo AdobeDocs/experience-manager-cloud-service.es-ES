@@ -6,10 +6,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2d2a206fea14d7e786a98e848bc2f2592ac65429
+source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -43,14 +43,14 @@ En este tema se explican las dos formas de implementar Edge Delivery Services en
 
 Edge Delivery Services se puede configurar mediante una de las dos opciones siguientes. Cada una tiene diferentes capacidades.
 
-|  | Opción de implementación | Documento de clave | Capacidad | Mejor para |
+|  | Opción de implementación | Documento de clave | Capacidad | Ideal para |
 | --- | --- | --- | --- | --- |
 | Opción 1 | *Con* un entorno de AEM as a Cloud Service (AEMaaCS) existente | [Configurar un proxy desde un entorno existente](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment) | La canalización de configuración suele estar disponible para entornos AEMaaCS | Equipos que ya ejecutan Sites en Cloud Manager y desean un aumento rápido y de bajo riesgo del rendimiento. |
 | Opción 2 | *Sin* un entorno AEMaaCS existente; conocido como &quot;entorno Edge&quot; independiente. | [Configurar un sitio de Edge Delivery sin un entorno existente](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | Actualmente, la canalización de configuración solo está disponible para entornos de Edge a través del programa limitado de Beta.<br>Consulte [Agregar canalización de configuración de Edge Delivery](help/implementing/cloud-manager/release-notes/current.md##add-eds-pipeline). | Nuevas compilaciones o migraciones que deseen adoptar la arquitectura de Edge Delivery completa y el enrutamiento granular. |
 
 <!-- Ultimately this URL above will need to be updated on GA -->
 
-| Opción | Resumen | Mejor para | Documentos clave |
+| Opción | Resumen | Ideal para | Documentos clave |
 | --- | --- | --- | --- |
 | Proxy CDN administrado por Adobe | Frentes de CDN administrados por Adobe y un entorno de AEM Sites existente. Su canalización actual de Sites sigue siendo el &quot;origen&quot;, mientras que AMC-D gestiona el almacenamiento en caché de Edge y la finalización de TLS. | Equipos que ya ejecutan Sites en Cloud Manager y desean un aumento rápido y de bajo riesgo del rendimiento. | Configuración de un proxy AMC-D |
 | Configuración de la canalización con originSelectors | Una canalización de configuración de Edge Delivery dedicada publica contenido estático y dinámico directamente en Edge. `originSelectors` enruta el tráfico entre AMC-D y sus niveles de autor/publicación de AEM. | Nuevas compilaciones o migraciones que deseen adoptar la arquitectura de Edge Delivery completa y el enrutamiento granular. | Configuración de la canalización de Edge Delivery |
@@ -70,13 +70,10 @@ Ambos modelos pueden coexistir dentro del mismo programa de Cloud Manager, lo qu
 
 ## Requisitos previos {#prerequisites}
 
-1. Incorporar el sitio en Cloud Manager
-: Necesario para ambos modelos de implementación. Seguir Incorporación a un sitio de AEM.
+1. Incorporar el sitio en Cloud Manager: necesario para ambos modelos de implementación. Seguir Incorporación a un sitio de AEM.
 
-2. Traer su propio Git (BYOG) (opcional)
-: Si almacena el código del sitio fuera de Adobe Git, complete la incorporación de BYOG.
+2. Traer su propio Git (BYOG) (opcional): si almacena el código del sitio fuera de Adobe Git, complete la incorporación de BYOG.
 
-3. Licencia de Edge Delivery
-&#x200B;- Asegúrese de que su programa tenga licencia para Edge Delivery Services.
+3. Licencia de Edge Delivery: Asegúrese de que su programa tenga licencia para Edge Delivery Services.
 
 
