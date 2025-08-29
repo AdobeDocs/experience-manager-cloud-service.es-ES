@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 24%
+source-wordcount: '1137'
+ht-degree: 23%
 
 ---
 
@@ -268,7 +268,14 @@ Dentro de la carpeta `customsubmitaction`, cree un nuevo archivo con el nombre `
 
    >[!NOTE]
    >
-   > Para ver los registros de errores en el entorno de AEM as a Cloud Service, puede utilizar Splunk.
+   > * Para ver los registros de errores en el entorno de AEM as a Cloud Service, puede utilizar Splunk.
+   > * Si un servicio de acción de envío personalizada encuentra un error no controlado, AEM as a Cloud Service devuelve una página de error 502 HTML.
+
+
+## Preguntas frecuentes
+
+**Q: ¿Por qué mi formulario adaptable muestra una página de error 5.x.x después del envío?**
+Error no controlado en el servicio de acción de envío personalizada. A continuación, AEM Cloud Service devuelve su página de error predeterminada.
 
 <!--
 ## Best practices

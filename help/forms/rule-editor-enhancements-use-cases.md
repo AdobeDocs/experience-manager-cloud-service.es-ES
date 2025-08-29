@@ -4,22 +4,21 @@ description: Este artículo explora varios casos de uso del editor de reglas en 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
+source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1975'
 ht-degree: 0%
 
 ---
 
 # Mejoras y casos de uso del Editor de reglas
 
-<span class="preview">: estas son funciones previas al lanzamiento disponibles a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal previo al lanzamiento</a>.
+<span class="preview">: estas son funciones previas al lanzamiento disponibles a través de nuestro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">canal previo al lanzamiento</a>. Estas mejoras también se aplican a Edge Delivery Services Forms.
 
 Este artículo presenta las últimas mejoras del editor de reglas en Forms adaptable. Estas actualizaciones están diseñadas para ayudarle a definir el comportamiento del formulario con mayor facilidad, sin necesidad de escribir código personalizado, y para crear experiencias de formulario más dinámicas, adaptables y personalizadas.
 
-En la tabla siguiente se enumeran las mejoras recientes del editor de reglas en Forms adaptable, junto con una breve descripción y las ventajas clave de cada función.:
+En la tabla siguiente se enumeran las mejoras recientes del editor de reglas en Forms adaptable, junto con una breve descripción y las ventajas clave de cada función:
 
 | Mejora | Descripción | Ventajas |
 |---|----|---|
@@ -29,6 +28,10 @@ En la tabla siguiente se enumeran las mejoras recientes del editor de reglas en 
 | **Reglas personalizadas basadas en eventos** | Defina reglas que respondan a eventos personalizados más allá de los déclencheur estándar. | - Admite casos de uso avanzados <br> - Mayor control sobre cuándo y cómo se ejecutan las reglas <br> - Mejora la interactividad |
 | **Ejecución repetible de panel según el contexto** | Las reglas ahora se ejecutan en el contexto correcto para cada panel repetido, en lugar de solo la última instancia. | - Aplicación precisa de reglas para cada instancia repetida <br> - Reduce los errores en las secciones dinámicas <br> - Mejora la experiencia del usuario con el contenido repetido |
 | **Compatibilidad con parámetros de cadena de consulta, UTM y explorador** | Cree reglas que adapten el comportamiento del formulario en función de parámetros de URL o valores específicos del explorador. | - Habilita la personalización basada en el origen o el entorno <br> - Útil para el marketing o los flujos específicos de seguimiento <br> - No es necesario realizar scripts ni personalizaciones adicionales |
+
+>[!NOTE]
+>
+> Las mejoras realizadas en el Editor de reglas también se aplican a Edge Delivery Services Forms.
 
 Ahora vamos a explorar en detalle cada método con casos de uso específicos para ayudarle a comprender cómo se pueden utilizar estas funciones para ofrecer una experiencia personalizada a los usuarios
 
@@ -89,58 +92,63 @@ Si el formulario está configurado para la generación de DoR, esta función gen
 
 ## Compatibilidad con variables dinámicas en reglas
 
-El editor de reglas mejorado ahora admite la creación y el uso de variables dinámicas (temporales). Estas variables se pueden establecer y recuperar a lo largo del ciclo de vida del formulario mediante las funciones integradas **Establecer valor de variable** y **Obtener valor de variable**.
+El editor de reglas mejorado admite la creación y el uso de variables dinámicas (temporales). Estas variables se pueden establecer y recuperar a lo largo del ciclo de vida del formulario mediante las funciones integradas **Establecer valor de variable** y **Obtener valor de variable**.
 Estas variables:
 
 * No se envían con los datos del formulario.
 * Puede contener valores intermedios o calculados.
 * Se puede utilizar en lógica condicional y acciones.
 
-**Escenario**: una empresa de comercio electrónico proporciona un formulario de pedido en el que los usuarios pueden seleccionar un producto y un método de envío preferido. Aunque el precio del producto se captura mediante un campo de formulario, el coste de envío se determina dinámicamente en función del método seleccionado y del país elegido.
+**Escenario**: un formulario de compra en línea permite a los usuarios seleccionar un producto, introducir una cantidad y elegir un país para el envío. El precio del producto es un valor fijo capturado a través de un campo de formulario, mientras que los gastos de envío varían dinámicamente según el país seleccionado.
 
-Para mantener la estructura del formulario limpia y evitar agregar campos ocultos innecesarios, la empresa desea administrar los gastos de envío como un valor temporal que admita el cálculo en tiempo real de la cantidad total.
+Para evitar saturar el formulario con campos ocultos, la empresa decide almacenar los gastos de envío en una variable temporal y utilizarla para cálculos en tiempo real.
 
 **Implementación mediante las funciones Establecer valor de variable y Obtener valor de variable en el Editor de reglas**
 
-Una regla está configurada para establecer una variable temporal denominada **extracharge** mediante la función **Set Variable Value**. El valor de esta variable depende del país seleccionado. Por ejemplo, si el usuario selecciona &quot;Estados Unidos&quot;, el valor se establece en 50. Para cualquier otro país, se establece en 100.
+Se ha configurado una regla en el fragmento **Address** mediante la función **Set Variable Value** para asignar una variable temporal denominada **extracharge**. El valor de esta variable cambia dinámicamente según el país seleccionado. Por ejemplo:
+
+* Si el usuario selecciona Estados Unidos, **extracharge** se establece en 500.
+* Para cualquier otro país, **extracharge** está establecido en 100.
 
 ![Establecer valor de variable](/help/forms/assets/setvalue.png)
 
-Más adelante, al calcular el costo total del envío, la función **Obtener valor de variable** recupera el valor **extracharge** en función del país seleccionado.
+Más adelante, cuando se calcule el **Costo total de envío**, se utilizará la función **Obtener valor de variable** para recuperar el valor de **extracharge**. Este valor se agrega a **Precio del producto × Cantidad del producto** para calcular el importe final a pagar al hacer clic en el botón.
 
 ![Obtener valor de variable](/help/forms/assets/getvalue.png)
 
-Este valor se agrega a los gastos de envío del producto y el resultado se muestra en el campo **Costo total de envío**.
-
+El campo **Costo de envío total** se actualiza dinámicamente para reflejar tanto el costo del producto como el cargo de envío a medida que el usuario cambia el país o la cantidad.
 ![salida](/help/forms/assets/getsetvalue-output.png)
 
-Este método permite calcular y mostrar cargas adicionales de forma dinámica sin almacenarlas en un campo visible, lo que permite una experiencia de usuario limpia, adaptable y sin código.
+>[!NOTE]
+>
+> También puede agregar la función **Obtener valor de variable** en la condición When.
+> > ![Obtener función de valor de variable en la condición When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
+Este método permite realizar cálculos dinámicos en tiempo real sin agregar campos adicionales al formulario, lo que mantiene la estructura limpia y fácil de usar.
 
 ## Compatibilidad con reglas basadas en eventos personalizados
 
 El editor de reglas mejorado admite la administración de eventos personalizados mediante las funciones **Evento de envío** y **Evento de Déclencheur**. Estas funciones permiten que diferentes partes del formulario se comuniquen emitiendo y escuchando eventos personalizados, lo que permite una lógica modular más limpia sin acoplar estrechamente las acciones a campos específicos.
 
-**Escenario**: un formulario de solicitud de trabajo está integrado con un sistema de recursos humanos externo que realiza la verificación en segundo plano. Una vez completada la comprobación, el sistema actualiza el formulario con la **Verificación en segundo plano completada.** mensaje. El formulario debe ajustar dinámicamente lo que ve el solicitante en función de este resultado.
+**Escenario**: se ha creado un formulario de inicio de sesión con un fragmento de inicio de sesión reutilizable que contiene los campos **Introducir nombre de usuario** y **Introducir contraseña**. Cuando un usuario proporciona credenciales válidas, el formulario valida la entrada e inicia el proceso **Obtener OTP**. Una vez que el usuario introduce un OTP válido, se le redirige a la página adecuada.
 
-En lugar de enlazar la lógica directamente al campo que recibe el estado, el formulario utiliza un método personalizado basado en eventos para mejorar la modularidad y la capacidad de mantenimiento.
+En lugar de enlazar la lógica directamente a los campos, el formulario usa un método basado en eventos con **Evento de envío** y **Evento de Déclencheur** para mejorar la modularidad y la capacidad de mantenimiento.
 
 **Implementación mediante evento de envío y evento de Déclencheur**
 
-Cuando se actualiza el estado de la comprobación en segundo plano, una regla usa **Evento de envío** para emitir un evento personalizado como **bgvmsg** junto con el resultado del estado. Una regla independiente escucha este evento con **Evento de Déclencheur**.
+El fragmento de inicio de sesión se agrega al formulario, que contiene campos predefinidos para Nombre de usuario y Contraseña. Se ha configurado una regla en el botón **Obtener OTP** para mostrar el **Panel de validación**, que incluye el campo de entrada para introducir y validar el OTP.
 
-Las capturas de pantalla a continuación muestran las reglas aplicadas a &quot;¿Se completó la verificación de fondo?&quot; y el campo de texto &quot;bgvmsg&quot;.
+![Obtener regla OTP](/help/forms/assets/get-otp-rule.png)
 
-![evento de envío](/help/forms/assets/dispatch-event-rule.png)
+En el **Panel de validación**, hay una regla configurada en el botón Validar. La integración de API se usa para validar el OTP introducido en el campo **Introducir OTP**. Si la validación es correcta, se activará un **evento de envío** denominado **LoggedIn** con la carga útil de evento que contiene la respuesta de API.
 
-![en evento de déclencheur](/help/forms/assets/trigger-event-rule.png)
+![En regla de evento de déclencheur](/help/forms/assets/trigger-event-rule.png)
 
-Cuando se detecta el evento, comprueba el estado y actualiza el formulario en consecuencia. Por ejemplo:
+A nivel de formulario, hay una regla configurada para escuchar el evento **LoggedIn**. Cuando se activa este evento, la regla muestra el mensaje de redirección y lleva al usuario a la página del panel.
 
-* Si se pasa la comprobación en segundo plano, el formulario muestra un mensaje de confirmación.
-* Si se necesitan documentos adicionales, el formulario muestra una sección en la que se solicita al solicitante que cargue la información necesaria, junto con un mensaje de alerta.
+![regla de evento de envío](/help/forms/assets/dispatch-event-rule.png)
 
-![Salida de evento de envío](/help/forms/assets/dispatch-trigger-output.png)
+Cuando el usuario envía el formulario con las credenciales correctas y una OTP válida, el inicio de sesión se realiza correctamente y se redirige al usuario a su panel.
 
 Compatibilidad con eventos personalizados que permite a los desarrolladores crear y almacenar en déclencheur eventos personalizados que pueden utilizarse como condiciones en el editor de reglas.
 
@@ -192,3 +200,7 @@ Si el valor del parámetro **utm_source** es igual a &quot;google&quot;, se most
 Esto permite a los especialistas en marketing enviar contenido relevante a los usuarios en función de la campaña que los llevó al formulario sin requerir la entrada manual del campo ni scripts personalizados.
 
 Estas mejoras amplían considerablemente las capacidades del editor de reglas de Forms adaptable, lo que proporciona a los desarrolladores potentes herramientas para crear formularios más dinámicos, interactivos e inteligentes. Cada mejora aborda las necesidades comerciales específicas, a la vez que mantiene la facilidad de uso que hace que el Editor de reglas sea accesible tanto para los usuarios técnicos como para los no técnicos.
+
+## Recursos adicionales
+
+{{see-also-rule-editor}}

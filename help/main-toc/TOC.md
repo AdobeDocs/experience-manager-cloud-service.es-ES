@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 95ec735cc1f95a23f0fea14aef2fc4011058d317
+source-git-commit: 4b41412a2c71d3e43ce5d6387ffb6d40fac2b18f
 workflow-type: tm+mt
-source-wordcount: '6557'
+source-wordcount: '6569'
 ht-degree: 98%
 
 ---
@@ -853,6 +853,7 @@ ht-degree: 98%
                + [Usar funciones asincrónicas en un formulario adaptable](/help/forms/using-async-funct-in-rule-editor.md)
                + [Invocar mejoras de servicio en el editor de reglas visuales para formularios basados en componentes principales](/help/forms/invoke-service-enhancements-rule-editor.md)
                + [Mejoras en el editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md)
+               + [Integración de API en el editor de reglas](/help/forms/api-integration-in-rule-editor.md)
             + Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales{#create-and-use-custom-function-core-component}
                + [Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales](/help/forms/create-and-use-custom-functions.md)
                + [Crear y utilizar una función personalizada para un Formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
@@ -959,7 +960,6 @@ ht-degree: 98%
       + [Crear un fragmento de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [Introducción a la comunicación interactiva](/help/forms/introduction-to-interactive-communication.md)
       + [Crear su primera comunicación interactiva](/help/forms/create-your-first-communication.md)
-      + [Generar salida AFP mediante la API de AEM Forms](/help/forms/document-generation-afp-api.md)
       + [Preguntas frecuentes](/help/forms/interactive-communications-faq.md)
    + Flujos de trabajo centrados en formularios  {#create-form-centric-workflows}
       + [Introducción a los flujos de trabajo centrados en formularios](/help/forms/aem-forms-workflow.md)
@@ -972,6 +972,7 @@ ht-degree: 98%
       + [Introducción a las API de comunicaciones](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [API de comunicaciones: procesamiento sincrónico](/help/forms/aem-forms-cloud-service-communications.md)
       + [API de comunicaciones: procesamiento por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Generar salida AFP mediante la API de AEM Forms](/help/forms/document-generation-afp-api.md)
       + [Instalación y configuración de Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Uso de Forms Designer para crear plantillas](/help/forms/use-forms-designer.md)
       + [Cambiar el contenido de la página cero en Designer](/help/forms/changing-page-zero-content-designer.md)
@@ -994,6 +995,7 @@ ht-degree: 98%
       + [Almacenamiento en caché de Dispatcher y CDN](/help/forms/troubleshooting-caching-performance.md)
       + [Reinicio del SDK de AEM](/help/forms/restart-aem-sdk.md)
       + [Resolver errores de creación de formularios](/help/forms/form-creation-failing.md)
+      + [502 Página de error en acción de envío personalizada](/help/forms/custom-submit-action-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
    + Información general para Screens as a Cloud Service  {#overview}
       + [Introducción](/help/screens-cloud/introduction/introduction.md)

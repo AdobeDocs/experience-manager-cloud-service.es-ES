@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: invocar mejoras del servicio en VRE, rellenar opciones desplegables utilizando invocar servicio, establecer panel repetible utilizando la salida del servicio de invocación, establecer panel utilizando la salida del servicio de invocación, usar el parámetro de salida del servicio de invocación para validar otro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1586'
 ht-degree: 2%
 
 ---
@@ -218,6 +218,10 @@ Cree una regla en el cuadro de texto `Pet ID` para invocar el servicio `getPetBy
 Escriba `102` en el cuadro de texto `Pet ID` y el botón **Enviar** estará oculto.
 
 ![Salida](/help/forms/assets/output4.png)
+
+>[!NOTE]
+>
+> También puede [integrar la API directamente en la interfaz del Editor de reglas](/help/forms/api-integration-in-rule-editor.md) sin usar un modelo de datos de formulario predefinido.
 
 ## Preguntas frecuentes
 

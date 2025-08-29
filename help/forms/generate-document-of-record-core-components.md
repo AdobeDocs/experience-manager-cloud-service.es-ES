@@ -4,10 +4,10 @@ description: Obtén información sobre cómo generar una plantilla para un docum
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
-workflow-type: ht
-source-wordcount: '3207'
-ht-degree: 100%
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+workflow-type: tm+mt
+source-wordcount: '3244'
+ht-degree: 98%
 
 ---
 
@@ -348,7 +348,7 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
       * **Mostrar solo los valores seleccionados para los componentes Casilla de verificación y Botón de radio**: al configurar esta propiedad solo se muestran los valores seleccionados de la casilla de verificación y el botón de radio en [!UICONTROL Documento de registro].
       * **Separador para varios valores**: puede elegir cualquier separador, como comas o saltos de línea, para mostrar varios valores.
       * **Alineación de opciones**: puede seleccionar la alineación deseada (Horizontal, Vertical o Igual que el formulario adaptable) para establecer la alineación de los campos, como la casilla de verificación o el botón de radio, que se mostrarán en [!UICONTROL Documento de registro]. De forma predeterminada, la alineación vertical está establecida para los campos de [!UICONTROL Documento de registro]. Al configurar las propiedades desde la variable [!UICONTROL Propiedades del campo de formulario] del documento, se sobrescriben las propiedades establecidas en la variable [!UICONTROL Alineación de elementos] para los campos de un formulario adaptable. En caso de que seleccione la opción [!UICONTROL Igual que el formulario adaptable], se utiliza la alineación tal y como está configurada en una instancia de autor del formulario adaptable para los campos de [!UICONTROL Documento de registro].
-      * **Número de opciones de alineación horizontal**: puede definir el número de opciones que se mostrarán en el Documento de registro para la alineación horizontal.
+      * **Número de opciones de alineación horizontal**:You: puede definir el número de opciones que se mostrarán en el Documento de registro para la alineación horizontal.
 
 
 
@@ -382,7 +382,7 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
 >[!NOTE]
 > 
-> Para mostrar un título de formulario personalizado en el documento de registro, edite **título del formulario personalizado** en **Propiedades del documento de registro** > **Propiedades de la página maestra**. Este título personalizado:
+> Para mostrar un título de formulario personalizado en el documento de registro, edite el **título del formulario personalizado** en **Propiedades del documento de registro** > **Propiedades de la página maestra**. Este título personalizado:
 > 
 > * Aparece en el encabezado del PDF generado
 > * Aparece como título en las propiedades del documento del PDF
@@ -415,6 +415,7 @@ La configuración del componente de documento de registro está disponible en su
 * **Mostrar panel como tabla:** al establecer la propiedad, se muestra el panel como tabla en el documento de registro si el panel tiene menos de 6 campos. Solo aplicable para paneles.
 * **Excluir título del documento de registro:** al establecer la propiedad, se excluye el título del panel o tabla del documento de registro. Aplicable solo para paneles y tablas.
 * **Excluir descripción del documento de registro:** al establecer la propiedad, se excluye la descripción del panel o la tabla del documento de registro. Aplicable solo para paneles y tablas.
+* **Excluir campos ocultos del documento de registro**: al seleccionar esta propiedad se excluyen los campos ocultos del documento de registro. Se aplica a todos los campos de formulario. De manera predeterminada, la opción **Excluir campos ocultos del documento de registro** no está seleccionada.
 
 **Configuración del nivel de formulario**
 

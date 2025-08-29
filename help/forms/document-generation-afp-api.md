@@ -4,10 +4,10 @@ description: Aprenda a utilizar la API de sincronización de salida AFP para rec
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: b6316401bea7d6593d89d15e70c50536df5f116c
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 11%
+source-wordcount: '237'
+ht-degree: 14%
 
 ---
 
@@ -101,4 +101,4 @@ Puede descargar el archivo .yaml y cargarlo en Postman para comprobar la funcion
 
 Puede guardar la respuesta y abrir el archivo guardado en el lector AFP para verlo.
 
-<!-- ![PDF reader](/help/forms/assets/afp-pdf.png) -->
+![lector de PDF](/help/forms/assets/afp-pdf.png)
