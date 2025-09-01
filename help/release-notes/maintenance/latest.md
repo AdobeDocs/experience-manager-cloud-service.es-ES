@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3067e88f8adea50f6b6b05e0466974bc57bc4a4e
+source-git-commit: 3884f53d56a8fc5bb71b736dd0b1368906c05623
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 38%
+source-wordcount: '632'
+ht-degree: 37%
 
 ---
 
@@ -65,6 +65,8 @@ Para obtener más información sobre las funciones nuevas y mejoradas y los prob
 ### Problemas conocidos {#known-issues-21994}
 
 * Apache HTTPD versión 2.4.65 introduce cambios que pueden afectar a determinadas configuraciones debido a las nuevas restricciones implementadas como parte de las correcciones de seguridad. Estas correcciones corrigen las vulnerabilidades al garantizar que las directivas como `RequestHeader set`, `edit` y `edit_r` utilizadas para modificar el encabezado Content-Type ahora se limiten correctamente a los encabezados de solicitud. Este cambio evita modificaciones no deseadas en los encabezados de respuesta, especialmente para el contenido estático.
+* Apache HTTPD versión 2.4.65 introduce cambios en mod_proxy al utilizar conexiones ProxyRemote. Si tiene problemas, establezca el indicador disablereuse en Activado.
+  ```ProxyPass "/example" "http://backend.example.com" disablereuse=on```
 
 ### Características y API obsoletas {#deprecated-21994}
 
