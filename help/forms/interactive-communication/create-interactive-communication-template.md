@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 3%
+source-wordcount: '317'
+ht-degree: 9%
 
 ---
 
-
 # Crear una plantilla de comunicación interactiva
+
+>[!NOTE]
+>
+> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
+
+>[!IMPORTANT]
+>
+> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Los indicadores, los ejemplos y las prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa de los primeros usuarios.
 
 Las plantillas de comunicación interactiva de AEM permiten a los usuarios definir estructuras de diseño reutilizables, como encabezados, pies de página, logotipos y estilo predeterminado. Estas plantillas sirven de base para crear comunicaciones coherentes, de marca y eficientes.
 
