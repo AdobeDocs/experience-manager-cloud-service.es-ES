@@ -4,16 +4,19 @@ description: La herramienta de copia de contenido permite a los usuarios copiar 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
+source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 34%
+source-wordcount: '1450'
+ht-degree: 31%
 
 ---
 
 # La herramienta Copia de contenido {#content-copy}
 
 La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción en AEM as a Cloud Service a entornos más bajos para realizar pruebas.
+
+>[!NOTE]
+>Aunque el flujo de copia de contenido principal va desde entornos superiores a entornos inferiores, una capacidad adicional - **Flujo de avance** - permite copiar desde entornos inferiores que no sean de producción a entornos superiores que no sean de producción (por ejemplo, Desarrollo → ensayo, RDE → ensayo). Consulte [Limitaciones](#limitations) para obtener más información, incluidos los requisitos de disponibilidad.
 
 ## Introducción {#introduction}
 
@@ -132,7 +135,7 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
    * El contenido solo se puede copiar de un entorno superior a un entorno inferior o entre entornos de desarrollo/RDE donde la jerarquía de entornos es la siguiente (de mayor a menor):
       * Producción
       * Ensayo
-      * Desarrollo / RDE
+      * Desarrollo/RDE
    * De forma predeterminada, la copia de contenido entre programas está desactivada. Sin embargo, si el cliente lo solicita, se puede habilitar, lo que hará que esté disponible el campo de entrada **Programa de destino** adicional.
 
 1. Si es necesario, también puede seleccionar **Incluir listas de control de acceso** en el proceso de copia.
@@ -192,7 +195,9 @@ Los registros se descargan en el equipo local. Si la descarga no comienza, compr
 
 La herramienta de copia de contenido tiene las siguientes limitaciones.
 
-* El contenido no se puede copiar de un entorno inferior a un entorno superior.
+* La herramienta de copia de contenido admite dos modos de flujo:
+   1. Flujo descendente: el contenido se puede copiar desde entornos superiores a entornos inferiores (por ejemplo, Producción → Ensayo, Ensayo → Desarrollo/RDE).
+   2. Flujo de avance (nueva función): el contenido también se puede copiar desde un entorno inferior que no sea de producción a un entorno superior que no sea de producción (por ejemplo, Desarrollo → fase, EDR → fase). Esta función solo está disponible bajo solicitud explícita y permanece habilitada hasta que se solicite explícitamente que se deshabilite. Los entornos de producción nunca son destinos válidos para el flujo de reenvío.
 * El contenido solo se puede copiar desde y hacia los servicios de creación.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
 * Se pueden especificar hasta 50 rutas por conjunto de contenido. No hay limitación en las rutas excluidas.
