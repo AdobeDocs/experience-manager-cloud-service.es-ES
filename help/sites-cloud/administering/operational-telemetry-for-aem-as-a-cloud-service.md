@@ -4,9 +4,9 @@ description: Obtenga información acerca de Operational Telemetry , un servicio 
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 41d9fd628eec8ce757447bed13d50211e71785de
+source-git-commit: d02569f5fcca0e53c8f258be8a193663364ac31f
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1134'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ El servicio de telemetría operativa está diseñado para minimizar la recopilac
 * Nombre de host del sitio que se está visitando, por ejemplo: `experienceleague.adobe.com`
 * El tipo de agente de usuario y sistema operativo generales que se utilizan para mostrar la página, como: `desktop:windows` o `mobile:ios`
 * La hora de la recopilación de datos, como: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* Dirección URL de la página que se está visitando, por ejemplo: `https://experienceleague.adobe.com/docs?lang=es`
+* Dirección URL de la página que se está visitando, por ejemplo: `https://experienceleague.adobe.com/docs`
 * La URL del referente (la URL de la página que está vinculada a la página actual, si el usuario ha seguido un vínculo)
 * Identificador de la vista de página generado aleatoriamente, con un formato similar al siguiente: `2Ac6`
 * El peso o la inversa de la tasa de muestreo, como: `100`. Significa que solo se registra una de cada cien vistas de página
@@ -104,3 +104,14 @@ Here are key considerations for customers to keep in mind when interpreting thei
    Adobe recomienda utilizar la telemetría operativa debido a sus importantes ventajas y que permitirá a Adobe ayudarle a optimizar sus experiencias digitales mejorando el rendimiento del sitio web. El servicio está diseñado para ser ininterrumpido y no tiene ningún impacto en el rendimiento de su sitio web.
 
    La exclusión puede significar perder la oportunidad de mejorar la participación del tráfico en el sitio web. Sin embargo, si encuentra algún problema, puede deshabilitar la telemetría operativa estableciendo una variable de entorno en Cloud Manager[ denominada ](/help/implementing/cloud-manager/environment-variables.md#add-variables) con el valor `AEM_OPTEL_DISABLED`. `true` Si desea volver a activar la Telemetría operativa en un momento posterior, simplemente elimine de nuevo esa variable de entorno.
+
+1. **¿Puedo usar una política de seguridad de contenido con un nonce?
+
+   La compatibilidad con la telemetría operativa contiene una función experimental para admitir una política de seguridad de contenido con un nonce. Esta característica se puede habilitar [estableciendo una variable de entorno en Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) denominada `AEM_OPTEL_NONCE` con el valor `true`. Si desea volver a deshabilitar esto más adelante, simplemente quite esa variable de entorno de nuevo.
+
+   Si tiene algún problema con esta función, póngase en contacto con el Soporte técnico de Adobe.
+
+1. **¿Cómo puedo habilitar la telemetría operativa solo para determinadas páginas?**
+
+   De forma predeterminada, la telemetría operativa está habilitada para todas las páginas por debajo de la carpeta `/content` en el repositorio. Al [establecer una variable de entorno en Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) denominada `AEM_OPTEL_INCLUDED_PATHS` en una lista de rutas separadas por comas en el repositorio, la telemetría operativa solo se habilitará para esas páginas. Además, puede establecer `AEM_OPTEL_EXCLUDED_PATHS` en una lista de rutas de acceso en el repositorio que se excluirán. Con la combinación de estos dos ajustes, puede ajustar la inclusión de Telemetría Operativa a sus necesidades.
+

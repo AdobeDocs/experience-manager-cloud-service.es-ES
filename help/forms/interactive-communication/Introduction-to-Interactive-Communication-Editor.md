@@ -8,14 +8,22 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 8d9ce330caf2693d86a01b80ba23ad7abfaa5cf4
+source-git-commit: 3bab153b3dbace4c0d31670f954b9e952a5ecd43
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 6%
 
 ---
 
 # Introducción al editor de comunicaciones interactivas
+
+>[!NOTE]
+>
+> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
+
+>[!IMPORTANT]
+>
+> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Los indicadores, los ejemplos y las prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa de los primeros usuarios.
 
 ## ¿Qué es el editor de comunicaciones interactivas?
 
