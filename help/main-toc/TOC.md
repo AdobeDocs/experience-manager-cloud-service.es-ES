@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4b41412a2c71d3e43ce5d6387ffb6d40fac2b18f
+source-git-commit: 29b1f3f24a92d45c4be7429fe3401147eb4c782a
 workflow-type: tm+mt
-source-wordcount: '6569'
+source-wordcount: '6571'
 ht-degree: 98%
 
 ---
@@ -298,7 +298,7 @@ ht-degree: 98%
       + [Instalación](/help/journey-sites/demos-add-on/installation.md)
       + [Creación de un programa](/help/journey-sites/demos-add-on/create-program.md)
       + [Creación de un sitio de muestra](/help/journey-sites/demos-add-on/create-site.md)
-      + [Activar Screens](/help/journey-sites/demos-add-on/screens.md)
+      + [Habilitar Screens](/help/journey-sites/demos-add-on/screens.md)
       + [Administración del sitio de muestra](/help/journey-sites/demos-add-on/manage.md)
    + Otros conceptos de incorporación  {#concepts}
       + [Introducción a Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
@@ -395,7 +395,7 @@ ht-degree: 98%
          + [Versiones de página](/help/sites-cloud/authoring/sites-console/page-versions.md)
          + [Diferencias de página](/help/sites-cloud/authoring/sites-console/page-diff.md)
          + [Uso de etiquetas](/help/sites-cloud/authoring/sites-console/tags.md)
-         + [Activación de las funciones progresivas de la aplicación web](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
+         + [Habilitación de las funciones progresivas de la aplicación web](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
          + [Métodos abreviados de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
          + [Exportar a CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
       + Editor de páginas {#page-editor}
@@ -445,7 +445,7 @@ ht-degree: 98%
          + [Uso del contenido de destino de varios sitios](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
          + [Estructurar la administración de diversos sitios para el contenido segmentado](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [Administración de actividades](/help/sites-cloud/authoring/personalization/activities.md)
-         + [Administrar audiencias](/help/sites-cloud/authoring/personalization/audiences.md)
+         + [Administrar públicos](/help/sites-cloud/authoring/personalization/audiences.md)
          + [Creación y administración de ofertas (consola Ofertas)](/help/sites-cloud/authoring/personalization/offers.md)
          + [Información acerca de la segmentación](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Configuración de la segmentación con ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -684,6 +684,7 @@ ht-degree: 98%
          + [Previsualización de recursos](/help/assets/preview-assets.md)
          + [Preguntas frecuentes](/help/assets/dynamic-media-open-apis-faqs.md)
          + [Configuración del dominio personalizado](/help/assets/configure-custom-domain.md)
+         + [Optimización de imágenes](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
    + Uso de la vista Recursos  {#assets-view}
       + [Introducción](/help/assets/assets-view-introduction.md)
       + [Introducción](/help/assets/get-started-assets-view.md)
@@ -935,7 +936,7 @@ ht-degree: 98%
       + [Diseñar formularios HTML5 accesibles](/help/forms/design-accessible-html5-forms.md)
       + [Generar previsualización HTML5 de un formulario XDP](/help/forms/preview-xdp-forms-html.md)
       + [Representar la plantilla de formulario para formularios HTML5](/help/forms/rendering-form-template.md)
-      + [Activar archivos adjuntos en un formulario HTML5](/help/forms/enabling-attachments-html5-form.md)
+      + [Habilitar archivos adjuntos en un formulario HTML5](/help/forms/enabling-attachments-html5-form.md)
       + [Proxy de servicio de formularios HTML5](/help/forms/service-proxy.md)
       + [Optimizar formularios HTML5](/help/forms/optimize-html5-forms.md)
       + [Lectores de pantalla para formularios HTML5](/help/forms/screen-readers.md)
@@ -982,9 +983,9 @@ ht-degree: 98%
    + Informes de transacciones {#using-communications}
       + [API facturables de informes de transacciones](/help/forms/transaction-reports-billable-apis.md)
       + [Registrar una transacción para una implementación personalizada](/help/forms/record-transaction-custom-implementation.md)
-   + Panel de realización de valor   {#vr-dashboard}
-      + [Información sobre el panel de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md)
-      + [Uso del panel de realización de valor para analizar las tendencias de uso de formularios y documentos](/help/forms/using-the-value-realization-dashboard.md)
+   + Panel de control de realización de valor   {#vr-dashboard}
+      + [Información sobre el panel de control de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md)
+      + [Uso del panel de control de realización de valor para analizar las tendencias de uso de formularios y documentos](/help/forms/using-the-value-realization-dashboard.md)
    + Referencia de la API del desarrollador  {#aem-forms-developer-api-reference}
       + [Referencia de la API de los formularios adaptables](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Referencia de la API de comunicaciones del Cloud Service de AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1266,7 +1267,7 @@ ht-degree: 98%
             + [Información general sobre las pruebas funcionales](/help/implementing/cloud-manager/functional-testing.md)
             + [Prueba funcional de Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Pruebas de IU](/help/implementing/cloud-manager/ui-testing.md)
-         + [Tablero de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+         + [Panel de control de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Acceder y administrar registros](/help/implementing/cloud-manager/manage-logs.md)
       + [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md)
       + [Crear informes de SLA](/help/implementing/cloud-manager/sla-reporting.md)
@@ -1301,9 +1302,9 @@ ht-degree: 98%
          + [Añadir una lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
          + [Aplicación y cancelación de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [Administrar listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
-      + [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md)
+      + [Panel de control de licencias](/help/implementing/cloud-manager/license-dashboard.md)
       + [Explicación de las solicitudes de contenido de Cloud Service](/help/implementing/cloud-manager/content-requests.md)
-      + [Tablero de rendimiento de CDN](/help/implementing/cloud-manager/cdn-performance.md)
+      + [Panel de control de rendimiento de CDN](/help/implementing/cloud-manager/cdn-performance.md)
       + [Preguntas frecuentes sobre Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Desarrollo para AEM as a Cloud Service {#developing}
       + [Estructura del proyecto AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
@@ -1343,7 +1344,7 @@ ht-degree: 98%
             + [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
             + [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=es)
             + [Exportador JSON para servicios de contenido](/help/implementing/developing/components/json-exporter.md)
-            + [Activación de la exportación de JSON para un componente](/help/implementing/developing/components/enabling-json-exporter.md)
+            + [Habilitación de la exportación de JSON para un componente](/help/implementing/developing/components/enabling-json-exporter.md)
             + [Editor de imágenes](/help/implementing/developing/components/image-editor.md)
             + [Etiquetas de decoración](/help/implementing/developing/components/decoration-tag.md)
             + [Uso de Ocultar condiciones](/help/implementing/developing/components/hide-conditions.md)
@@ -1378,7 +1379,7 @@ ht-degree: 98%
       + [Administración de experiencias sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=es)
       + Desarrollo híbrido y de SPA  {#hybrid}
          + [Híbrido y SPA con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [Activación de la exportación de JSON para un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=es)
+         + [Habilitación de la exportación de JSON para un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=es)
          + [Finalización del soporte para el editor de SPA](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [Introducción y tutorial de SPA](/help/implementing/developing/hybrid/introduction.md)
          + [Tutorial de SPA WKND](/help/implementing/developing/hybrid/wknd-tutorial.md)
@@ -1394,7 +1395,7 @@ ht-degree: 98%
          + [El componente RemotePage](/help/implementing/developing/hybrid/remote-page.md)
          + [Edición de un SPA externo dentro de AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [Componentes compuestos en SPA](/help/implementing/developing/hybrid/composite-components.md)
-         + [Activación de la exportación de JSON para un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=es)
+         + [Habilitación de la exportación de JSON para un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=es)
          + [Integración de Launch](/help/implementing/developing/hybrid/launch-integration.md)
          + [Documentos de referencia de SPA](/help/implementing/developing/hybrid/reference-materials.md)
    + Herramientas para desarrolladores {#developer-tools}
