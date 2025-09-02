@@ -198,6 +198,7 @@ Esta completa guía para la resolución de problemas le ayuda a identificar, dia
        - Mensaje (área de texto requerida, máximo 500 caracteres)
        - Enviar a notificación por correo electrónico
    
+
 ### Problemas de diseño y estilo
 
 **Síntomas:**
