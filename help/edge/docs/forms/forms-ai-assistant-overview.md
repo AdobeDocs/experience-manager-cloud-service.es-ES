@@ -101,7 +101,7 @@ Forms Experience Builder sigue un enfoque sencillo y conversacional:
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg?lang=es)
 
 **Transformar PDF forms a Forms digital**
 
@@ -117,7 +117,7 @@ Transforme aplicaciones XFA complejas en experiencias digitales modernas y acces
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/image.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/image.svg?lang=es)
 
 **Convertir capturas de pantalla a Forms digital**
 
@@ -150,7 +150,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=es)
 
 **Creación de formularios democratizados**
 
@@ -158,7 +158,7 @@ Habilite a los usuarios no técnicos para crear formularios sofisticados sin con
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg?lang=es)
 
 **Tiempo de respuesta reducido (TTV)**
 
@@ -166,7 +166,7 @@ Acelere drásticamente el desarrollo de formularios de días a horas, lo que per
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg?lang=es)
 
 **Simplicidad de interfaz**
 
