@@ -6,10 +6,10 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 2%
+source-wordcount: '946'
+ht-degree: 3%
 
 ---
 
@@ -20,46 +20,21 @@ ht-degree: 2%
 >
 > **Documentación sujeta a cambios**: esta documentación se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las funciones, los comandos y los ejemplos pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa de los primeros usuarios.
 
-Forms Experience Builder incorpora la potencia de la inteligencia artificial a Adobe Experience Manager (AEM) Forms. Esta solución innovadora transforma la forma en que las organizaciones crean, administran y optimizan sus formularios digitales a través de interacciones en lenguajes naturales y automatización inteligente.
+AEM Forms Experience Builder aprovecha el poder de la IA generativa para democratizar y acelerar la creación y actualización de experiencias de formularios digitales. Al habilitar flujos de trabajo basados en la intención e impulsados por interacciones de lenguajes naturales, permite a los usuarios diseñar, modificar y optimizar formularios sin problemas con velocidad y sencillez.
 
-Basado en tecnologías web modernas y con tecnología de servicios de IA avanzados, Forms Experience Builder permite a los usuarios técnicos y no técnicos crear formularios sofisticados de calidad profesional mediante interfaces conversacionales. Tanto si es un analista empresarial que necesita un formulario de registro sencillo como si es un desarrollador que crea flujos de trabajo complejos de varios pasos, Forms Experience Builder optimiza todo el proceso de creación de formularios.
+Basado en tecnologías web modernas y con tecnología de servicios de IA avanzados, Forms Experience Builder permite a los usuarios técnicos y no técnicos crear formularios sofisticados de calidad profesional mediante interfaces conversacionales. Este revolucionario enfoque reduce el tiempo de respuesta de días a horas, elimina las barreras técnicas mediante la simplicidad de la interfaz y escala los esfuerzos de modernización en todo el ecosistema de formularios.
 
-## Interfaz de conversación
 
-Forms Experience Builder proporciona una interfaz intuitiva basada en chat que simplifica tanto la creación de formularios como la realización de una conversación:
-
-```
-┌─────────────────────────────────────────────────────────┐
-│ Forms Experience Builder                               │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│  👤 User: Create a customer feedback form              │
-│                                                         │
-│  🤖 AI: I'll help you create a feedback form. What    │
-│       type of feedback do you want to collect?         │
-│                                                         │
-│  👤 User: Product reviews with ratings and comments    │
-│                                                         │
-│  🤖 AI: Perfect! I've created a feedback form with:   │
-│       * Product rating (1-5 stars)                     │
-│       * Comment field                                   │
-│       * Customer email (optional)                       │
-│       * Submit to email notification                    │
-│                                                         │
-│  👤 User: Add a field for product category             │
-│                                                         │
-│  🤖 AI: Added a dropdown field with common categories  │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
 
 ## Capacidades principales
 
-### Creación de formularios con tecnología de IA
+Forms Experience Builder ofrece dos flujos de trabajo principales para crear formularios digitales potentes:
+
+### &#x200B;1. Creación de formularios con tecnología de IA
 
 **Generación de formularios en lenguaje natural**
 
-Cree formularios completos desde cero con descripciones simples en inglés. Describa simplemente sus necesidades, como &quot;Crear un formulario de comentarios de cliente con escalas de clasificación y campos de comentarios&quot;, y Forms Experience Builder generará la estructura de formulario, los tipos de campo y las reglas de validación adecuados.
+Cree formularios completos desde cero con descripciones simples en inglés. Describa simplemente sus necesidades, como &quot;Crear un formulario de comentarios de cliente con escalas de clasificación y campos de comentarios&quot;, y Forms Experience Builder generará la estructura de formulario adecuada. Puede usar el generador de experiencias de los editores visuales para agregar más campos, reglas de validación y lógica de envío.
 
 **Administración dinámica de campos**
 
@@ -67,27 +42,7 @@ Agregar, modificar o quitar campos de formulario mediante comandos conversaciona
 
 **Optimización del diseño**
 
-Actualizar los diseños y las configuraciones de formulario mediante lenguaje natural. Solicite cambios como &quot;Facilite el uso del formulario para dispositivos móviles&quot; o &quot;Reorganice los campos en un flujo lógico&quot;, y Forms Experience Builder aplicará los ajustes de estilo y diseño adecuados.
-
-### Importación y conversión inteligentes
-
-**Conversión de PDF a formulario**
-
-Transforme documentos estáticos de PDF en formularios interactivos y dinámicos. Cargue cualquier documento de PDF y Forms Experience Builder analizará la estructura para crear un formulario digital correspondiente con los tipos de campo y la validación adecuados.
-
-**Conversión de URL a formulario**
-
-Convierta formularios o páginas web existentes en AEM Forms. Solo tiene que proporcionar una dirección URL, y Forms Experience Builder extrae elementos de formulario y los vuelve a crear como AEM Forms nativo con funciones mejoradas.
-
-**Compatibilidad con archivos multiformato**
-
-Gestionar varios tipos de archivos para la creación de formularios, incluidos PDF, imágenes, capturas de pantalla y plantillas de formulario existentes. Forms Experience Builder puede procesarlos y convertirlos en AEM Forms funcional.
-
-### Lógica de formulario avanzada e integración
-
-**Generación inteligente de reglas**
-
-Cree reglas complejas de validación de formularios y lógica empresarial mediante lenguaje natural. Forms Experience Builder puede generar sofisticadas reglas de validación, dependencias de campo y lógica condicional que normalmente requerirían amplios conocimientos de codificación.
+Actualizar los diseños y las configuraciones de formulario mediante lenguaje natural. Solicite cambios como &quot;Cambiar el diseño del formulario al diseño del asistente&quot; y Forms Experience Builder aplicará los ajustes de estilo y diseño adecuados.
 
 **Configuración completa de la acción de envío**
 
@@ -100,126 +55,86 @@ Configure los envíos de formularios para integrarlos con los sistemas empresari
 - **Plataformas de mercadotecnia**: Integración directa con Marketo para la administración de clientes potenciales
 - **Flujos de trabajo de AEM**: aproveche las capacidades existentes del flujo de trabajo de AEM
 
-**Análisis de rendimiento**
 
-Analizar el rendimiento de la conversión de formularios y los patrones de participación del usuario. Forms Experience Builder proporciona perspectivas sobre la eficacia del formulario y sugiere optimizaciones para mejorar las tasas de finalización y la experiencia del usuario.
+### &#x200B;2. Importación y conversión inteligentes
+
+**Formatos de importación compatibles**
+
+Transforme formularios y documentos existentes en experiencias digitales interactivas. Forms Experience Builder es compatible con:
+
+- **Acroforms**: PDF forms interactivo con estructuras de campo existentes
+- **PDF XFA**: arquitecturas de formularios complejas basadas en XML
+- **PDF planos**: documentos estáticos convertidos en formularios interactivos
+- **Imágenes y capturas de pantalla**: Formatos JPG y PNG (consultar con el equipo las limitaciones de tamaño)
+- **Forms dibujado a mano**: bocetos y fotografías en papel
+
+
+**Proceso de conversión inteligente**
+
+El contenido cargado se analiza en:
+
+- Detectar tipos de campo y relaciones
+- Conservar el diseño en la medida de lo posible
+- Mejore con un diseño interactivo moderno
+- Agregar validación avanzada y lógica condicional
+- Optimizar para accesibilidad y experiencia móvil
 
 ## Cómo funciona
 
 Forms Experience Builder sigue un enfoque sencillo y conversacional:
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  1. Describe    │───▶│  2. AI Creates  │───▶│  3. Refine &    │
-│  Your Form      │    │  Initial Form   │    │  Configure      │
-│  Requirements   │    │                 │    │                 │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         │                       │                       │
-         ▼                       ▼                       ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  "Create a loan application form"  →  Form with relevant        │
-│  "Add conditional logic"           →  fields and basic          │
-│  "Connect to CRM system"           →  validation rules          │
-└─────────────────────────────────────────────────────────────────┘
-```
+    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+    │ 1. Describir    │───▶│ 2. AI crea │───▶│ 3. Restringir y    │
+    │ su formulario      │    │ formulario inicial   │    │ Configurar      │
+    │ requisitos   │    │                 │    │                 │
+    └─────────────────┘    └─────────────────┘    └─────────────────┘
+    │                       │                       │
+    │                       │                       │
+    ▼                       ▼                       ▼
+    ┌───────────────────────────────────────────────────────────────────────────┐
+    │ &quot;Crear un formulario de solicitud de préstamo&quot; → formulario con datos relevantes                  │
+    │ &quot;Agregar campo de correo electrónico&quot;           → y campos básicos                          │
+    │ &quot;Establecer valor de campo de correo electrónico en @firstname@gmail.com&quot; → reglas de validación   │
+    └───────────────────────────────────────────────────────────────────────────┘
 
-## Ejemplos de casos de uso
+## Ejemplos de escenarios
 
-### Formulario de solicitud de préstamo
+:::: landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg)
 
-```
-┌─────────────────────────────────────────────────────────┐
-│ Loan Application - Multi-Step Form                    │
-├─────────────────────────────────────────────────────────┤
-│ Step 1: Personal Information                           │
-│  🏠 Property Type: [Primary] [Investment] [Commercial] │
-│  💰 Loan Amount: [$_______] (triggers different paths) │
-│  📊 Income Verification: [W2] [Self-Employed] [Other]  │
-│                                                         │
-│ Step 2: Financial Details (conditional based on above) │
-│  ↳ If Self-Employed: Show tax returns, profit/loss     │
-│  ↳ If W2: Show employment history, pay stubs           │
-│  ↳ Complex debt-to-income calculations                 │
-│                                                         │
-│ Step 3: Compliance & Review                            │
-│  📋 Regulatory disclosures, digital signatures         │
-│  🔍 Automated eligibility pre-screening                │
-└─────────────────────────────────────────────────────────┘
-```
+**Transformar PDF forms a Forms digital**
 
-### Formulario de reclamación de seguro
+Convierta AcroForms, PDF XFA o documentos PDF planos en formularios digitales interactivos y adaptables con funcionalidad mejorada.
+:::
 
-```
-┌─────────────────────────────────────────────────────────┐
-│ Insurance Claim - Adaptive Form                        │
-├─────────────────────────────────────────────────────────┤
-│ 🚗 Claim Type: [Auto] [Property] [Health] [Business]   │
-│                                                         │
-│ ↳ Auto Selected: Shows accident details, police report │
-│ ↳ Property: Shows damage assessment, repair estimates  │
-│ ↳ Health: Shows medical provider network, pre-auth     │
-│                                                         │
-│ 📎 Dynamic Document Requirements:                       │
-│   * Photos/videos of damage                            │
-│   * Police reports (auto only)                         │
-│   * Medical records (health only)                      │
-│   * Repair estimates (property only)                   │
-│                                                         │
-│ 🔄 Real-time claim status updates                      │
-└─────────────────────────────────────────────────────────┘
-```
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/data-transfer-up.svg)
 
-### Escenarios de migración y conversión
+**Modernizar Forms XFA heredado**
 
-Transforme sus formularios existentes en potentes experiencias digitales con la conversión mediante IA.
+Transforme aplicaciones XFA complejas en experiencias digitales modernas y accesibles con flujos de trabajo de usuario mejorados.
+:::
 
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/image.svg)
 
-#### Transformación de PDF forms a Forms digital
+**Convertir capturas de pantalla a Forms digital**
 
-Transforme PDF forms con varios campos en experiencias digitales dinámicas mediante cálculos automatizados y un diseño interactivo para dispositivos móviles.
+Convierta imágenes, capturas de pantalla o formularios dibujados a mano en experiencias digitales completamente funcionales.
+:::
+::::
 
-**Ventajas principales:**
+<!-- #### Import and Enhance Web Forms
 
-- Cálculos de impuestos automatizados y dependencias de campo
-- Firmas digitales e integración de archivado electrónico
-- Optimización de diseño adaptable para móviles
-- Reducción del 95 % de los errores de procesamiento
+Import existing HTML forms and enhance them with advanced features while preserving existing functionality.
 
+**Key benefits:**
 
-#### Modernización de formularios basados en XFA heredados
-
-Puede convertir aplicaciones XFA complejas en modernos asistentes de varios pasos con validación en tiempo real y cumplimiento de la accesibilidad.
-
-**Ventajas principales:**
-
-- Interfaz de asistente de varios pasos optimizada
-- Validación en tiempo real con ayuda contextual
-- Integración de bases de datos gubernamentales
-- Cumplimiento de la accesibilidad WCAG 2.1 completo
-
-
-#### Convertir captura de pantalla de un formulario en un formulario digital
-
-Puede convertir cualquier formulario en papel en una experiencia digital. AEM Forms optimiza automáticamente el diseño y crea formularios digitales listos para la integración a partir de una captura de pantalla.
-
-**Ventajas principales:**
-
-- Detección inteligente del tipo de campo
-- Generación de diseños adaptables optimizados
-- Validación mejorada más allá del papel original
-- Arquitectura lista para la integración
-
-#### Importación y mejora de formularios web existentes
-
-Puede importar el formulario web existente y agregar validación avanzada, lógica condicional y envío multicanal a los formularios sin romper la funcionalidad existente.
-
-**Ventajas principales:**
-
-- Lógica y reglas de validación avanzadas
-- Comportamientos y flujos de trabajo de campo condicionales
-- Opciones de envío multicanal
-- Análisis y seguimiento del rendimiento integrados
+- Advanced validation and business logic
+- Conditional field behaviors
+- Multi-channel submission options
+- Enhanced user experience design -->
 
 ## Forms Experience Builder y desarrollo tradicional
 
@@ -228,46 +143,83 @@ Puede importar el formulario web existente y agregar validación avanzada, lógi
 | **Tiempo para crear** | 2 a 3 días | 2 a 3 horas |
 | **Conocimientos técnicos** | Requerido | No obligatorio |
 | **Reglas de validación** | Codificación manual | Lenguaje natural |
-| **Optimización móvil** | CSS/JS manual | Automático |
 | **Accesibilidad** | Implementación manual | Cumplimiento de normas integrado |
-| **Actualizaciones** | Cambios de código necesarios | Lenguaje natural |
 
 
 ## Ventajas para las organizaciones
 
-### Creación de formularios democratizados
+:::: landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
 
-Habilite a los usuarios no técnicos para crear formularios sofisticados sin conocimientos de programación. Los analistas de negocio, los expertos en la materia y los creadores de contenido pueden traducir directamente sus requisitos en formularios funcionales a través de conversaciones en lenguaje natural.
+**Creación de formularios democratizados**
 
-### Tiempo de respuesta reducido (TTV)
+Habilite a los usuarios no técnicos para crear formularios sofisticados sin conocimientos de programación a través de conversaciones en lenguajes naturales.
+:::
 
-Acelerar drásticamente el desarrollo de formularios de días a horas. Lo que antes requería ciclos de desarrollo extensos ahora se puede lograr en una sola sesión a través de IA conversacional, lo que permite una salida al mercado más rápida para las iniciativas digitales.
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg)
 
-### Simplicidad de interfaz
+**Tiempo de respuesta reducido (TTV)**
 
-Elimine la curva de aprendizaje con una interfaz conversacional intuitiva. Los usuarios pueden crear formularios complejos utilizando un lenguaje natural en lugar de aprender herramientas técnicas de creación de formularios, lo que reduce el tiempo de formación y aumenta la adopción.
+Acelere drásticamente el desarrollo de formularios de días a horas, lo que permite una comercialización más rápida de iniciativas digitales.
+:::
 
-### Ampliación de los esfuerzos de modernización
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg)
 
-Modernice los portafolios de formularios heredados de forma eficaz. Convierta los formularios PDF, XFA y HTML existentes en experiencias digitales adaptables, al tiempo que preserva la lógica empresarial y mejora la experiencia del usuario en todo el ecosistema de formularios.
+**Simplicidad de interfaz**
+
+Elimine la curva de aprendizaje con una interfaz conversacional intuitiva, reduciendo el tiempo de formación y aumentando la adopción.
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/layers.svg)
+
+**Esfuerzos de modernización de escala**
+
+Modernice los portafolios de formularios heredados de forma eficaz, preservando la lógica empresarial y mejorando la experiencia del usuario en todo el ecosistema de formularios.
+:::
+::::
+
+## Incorporación
+
+Forms Experience Builder está disponible actualmente como parte del programa de acceso anticipado (EA). Para participar y obtener acceso, necesitará la siguiente información:
+
+### Información necesaria
+
+- **ID de organización de IMS**: su identificador de organización de Adobe
+- **ID de programa**: el identificador de programa específico dentro de Adobe Experience Cloud
+- **Detalles del proyecto**: escala de tiempo, ámbito y casos de uso previstos
+- **Correo electrónico de trabajo oficial**: asociado a la cuenta de Adobe de su organización
+
+
+### Cómo obtener el ID de organización de IMS y el ID de programa
+
+Para ver los pasos detallados para localizar el ID de organización de IMS y el ID de programa, consulte:
+
+- [Guía de configuración de Adobe Experience Cloud Organization](/help/onboarding/cloud-manager-introduction.md)
+- [Administración de programas y entornos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+
+### Solicitar acceso
+
+1. Recopile su ID de organización de IMS y el ID de programa mediante las guías anteriores
+2. Enviar un correo electrónico a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acceso
+3. Incluya en su solicitud:
+   - Nombre de organización e ID de organización de IMS
+   - ID de programa
+   - Cronología y ámbito del proyecto
+   - Casos de uso previstos y objetivos empresariales
+
+>[!IMPORTANT]
+>
+> **Programa de disponibilidad limitada**: el acceso a Forms Experience Builder está sujeto a la aprobación de los interesados internos. Adobe revisará su solicitud en función de la capacidad del programa y la alineación con los criterios de acceso anticipado. La aprobación no está garantizada y depende de la disponibilidad actual del programa.
+
+Para obtener más información acerca del programa de acceso anticipado y sus características, consulte la [documentación de acceso anticipado de AEM Forms](/help/forms/early-access-ea-features.md).
+
 
 ## Introducción
 
 Para empezar a usar Forms Experience Builder, visite la [documentación de Forms Experience Builder](forms-ai-assistant-getting-started.md). Puede acceder a Forms Experience Builder a través del Editor de AEM Forms o del Editor universal, según el flujo de trabajo que prefiera.
 
 Para organizaciones que pretenden transformar sus procesos de creación de formularios, Forms Experience Builder ofrece una solución potente e intuitiva que combina la flexibilidad de la IA conversacional con la solidez de la administración de formularios de nivel empresarial.
-
-## Incorporación y acceso anticipado
-
-Forms Experience Builder está disponible actualmente como parte del programa de acceso anticipado (EA). Para participar y obtener acceso, siga estos pasos:
-
-1. Asegúrese de que está utilizando su dirección de correo electrónico de trabajo oficial asociada a su organización.
-2. Envíe un correo electrónico a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acceso a Forms Experience Builder.
-3. Incluya el nombre de su organización y cualquier detalle relevante del proyecto en su solicitud para acelerar el proceso de incorporación.
-
->[!NOTE]
->
-> El acceso al Forms Experience Builder está limitado a los participantes aprobados en el programa de acceso anticipado. Adobe revisará su solicitud y proporcionará más instrucciones para la incorporación si reúne los requisitos.
-
-Para obtener más información acerca del programa de acceso anticipado y sus características, consulte la [documentación de acceso anticipado de AEM Forms](/help/forms/early-access-ea-features.md).
-

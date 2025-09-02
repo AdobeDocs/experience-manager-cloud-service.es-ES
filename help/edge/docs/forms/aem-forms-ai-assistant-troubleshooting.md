@@ -6,10 +6,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+exl-id: 6a7810fd-2860-410b-867d-8d29afd5297d
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2282'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -197,7 +198,6 @@ Esta completa guía para la resolución de problemas le ayuda a identificar, dia
        - Mensaje (área de texto requerida, máximo 500 caracteres)
        - Enviar a notificación por correo electrónico
    
-
 ### Problemas de diseño y estilo
 
 **Síntomas:**
