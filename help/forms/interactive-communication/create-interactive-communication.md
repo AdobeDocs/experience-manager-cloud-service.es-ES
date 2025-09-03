@@ -7,7 +7,7 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 6%
@@ -28,7 +28,7 @@ Interactive Communications le permite crear, administrar y entregar comunicacion
 
 Imagine que necesita enviar un extracto bancario, una póliza de seguro o una factura de servicios públicos a miles de clientes. Cada una tiene el mismo diseño, pero con datos personalizados. La comunicación interactiva (CI) lo hace posible de forma eficaz.
 
-![Buscar documento CI](/help/forms/interactive-communication/assets/Picture1.png)
+![Buscar documento CI](/help/forms/interactive-communication/assets/introimg.png)
 
 La producción manual de estos documentos puede llevar mucho tiempo y, a menudo, genera incoherencias, especialmente cuando se requieren la personalización y la integración de datos. Con el editor de comunicaciones interactivas, los usuarios pueden agilizar el proceso de creación de comunicaciones interactivas.
 
