@@ -5,10 +5,10 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: 39af50d05fcbd22b3f4b4664f2c99590e7fb9da9
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 14%
+source-wordcount: '310'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,9 @@ Un usuario con el rol **Propietario del negocio** o **Administrador de implement
 
 **Para agregar una Lista de permitidos IP:**
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
+1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com/experiencemanager/).
+
+1. En el menú de la izquierda, haga clic en Cloud Manager y, a continuación, seleccione la organización adecuada.
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 
@@ -38,7 +40,12 @@ Un usuario con el rol **Propietario del negocio** o **Administrador de implement
 
 1. En el cuadro de diálogo **Agregar Lista de permitidos IP**, en el campo **Nombre de Lista de permitidos IP**, escriba un nombre que desee usar para hacer referencia a la Lista de permitidos IP. Este nombre es meramente informativo. Asegúrese de que sea lo suficientemente descriptivo como para ayudarle a identificar la lista.
 
-1. En el campo **Dirección IP / CIDR**, introduzca un bloque CIDR IP o IP. Separe varios bloques con una coma o una tabulación.
+1. En el campo **Dirección IP / CIDR**, ingrese hasta 50 direcciones IP o bloques CIDR. Puede agregarlos de cualquiera de las siguientes maneras:
+
+   * Uno a la vez: escriba una dirección y luego presione `Enter`. Repita el proceso para cada dirección adicional.
+   * Múltiples a la vez: escriba direcciones separadas por comas (,) o tabulaciones y, a continuación, presione `Enter` para que cada dirección se reconozca de forma individual.
+
+1. Cuando termine de escribir la última dirección IP o bloque CIDR, presione `Enter` para confirmar la entrada. La entrada se reconoce solo después de presionar `Enter`, y el botón **Guardar** se activa.
 
 1. Haga clic en **Guardar**.
 
