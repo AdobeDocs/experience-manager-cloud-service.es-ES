@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -85,7 +85,7 @@ Cree URL mnemónicas para la entrega de recursos en DM con OpenAPI y sustituya l
 
 **Componente de entrada de fecha y hora**
 
-Ya está disponible el componente [Fecha y hora](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component), que permite a los usuarios seleccionar la fecha y la hora mediante una interfaz de calendario y reloj, o introduciendo valores manualmente en un formato compatible.
+Ya está disponible el componente [Fecha y hora](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component), que permite a los usuarios seleccionar la fecha y la hora mediante una interfaz de calendario y reloj, o introduciendo valores manualmente en un formato compatible.
 
 **Control de errores mejorado para cargas de archivos**
 
@@ -129,7 +129,7 @@ En estas notas de la versión se indican las innovaciones de ofrecidas en la ver
 
 **Componente de firma manuscrita**
 
-Ahora puede usar el [componente Firma manuscrita](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) para ayudar a los usuarios a agregar sus firmas a un formulario, como en un formulario de acuerdo. El componente permite a los usuarios dibujar su firma directamente dentro del formulario con un ratón, un lápiz o una pantalla táctil.
+Ahora puede usar el [componente Firma manuscrita](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) para ayudar a los usuarios a agregar sus firmas a un formulario, como en un formulario de acuerdo. El componente permite a los usuarios dibujar su firma directamente dentro del formulario con un ratón, un lápiz o una pantalla táctil.
 
 **Integración directa de API en el editor de reglas**
 

@@ -1,5 +1,5 @@
 ---
-title: Notas de la versión 2025.08.22 del editor universal
+title: Notas de la versión 2025.08.22 del Editor universal
 description: Estas son las notas de la versión 2025.08.22 del editor universal.
 feature: Release Information
 role: Admin
@@ -7,12 +7,12 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: cd717eac1e4eb6eda3b2a60fc28ad63d92e858ec
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 67%
+ht-degree: 71%
 
 ---
 
 
-# Notas de la versión 2025.08.22 del editor universal {#release-notes}
+# Notas de la versión 2025.08.22 del Editor universal {#release-notes}
 
 Estas son las notas de la versión del editor universal del 22 de agosto de 2025.
 
