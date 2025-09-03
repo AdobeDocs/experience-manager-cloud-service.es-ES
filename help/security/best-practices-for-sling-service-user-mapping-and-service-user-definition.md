@@ -5,9 +5,9 @@ exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1883'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ La secuencia para obtener un servicio `Session/ResourceResolver` funciona de la 
 
 1. Obtener nombres principales de `ServiceUserMapper` = > inicie sesión en el repositorio previo a la autenticación como se describe a continuación
 1. Recuperar ID de usuario de `ServiceUserMapper`
-1. Buscar `1ServiceUserConfiguration` obsoleto para el identificador de usuario actual
+1. Compruebe si hay `1ServiceUserConfiguration` obsoletas para el ID de usuario actual
 1. Inicio de sesión predeterminado del servicio Sling con el ID de usuario (por ejemplo, una secuencia de `createAdministrativeSession` y suplantar para el ID de usuario del servicio)
 
 La nueva asignación con nombres principales da como resultado el siguiente inicio de sesión simplificado en el repositorio:

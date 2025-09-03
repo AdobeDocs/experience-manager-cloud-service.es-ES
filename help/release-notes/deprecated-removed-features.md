@@ -6,7 +6,7 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3194'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Durante el plazo de tiempo hasta la entrada en desuso, Adobe recordará a los cl
 
 ## Funcionalidad en desuso {#deprecated-features}
 
-Se ha anunciado que la funcionalidad de la tabla siguiente ya no se utiliza, pero aún no se ha eliminado.  El uso de la funcionalidad debe interrumpirse antes de la fecha de eliminación objetivo o se corre el riesgo de que se produzcan problemas relacionados con el rendimiento, la disponibilidad y la seguridad.
+Se ha anunciado que la funcionalidad de la tabla siguiente ya no se utiliza, pero aún no se ha eliminado. El uso de la funcionalidad debe interrumpirse antes de la fecha de eliminación objetivo o se corre el riesgo de que se produzcan problemas relacionados con el rendimiento, la disponibilidad y la seguridad.
 
 | Capacidades | Función en desuso | Reemplazo |
 | ------------ | ------------------ | ----------- |
@@ -127,7 +127,7 @@ Se ha anunciado que las API de la tabla siguiente (haga clic para ampliar y verl
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
-    <td>AEM as a Cloud Service no admite esta API de inicio de sesión posterior interna. <a href="#ch.qos.logback">Consulte las notas de eliminación a continuación.</a></td>
+    <td>AEM as a Cloud Service no admite esta API interna de registro. <a href="#ch.qos.logback">Consulte las notas de eliminación a continuación.</a></td>
     <td>27/1/2022</td>
     <td>31/8/2025</td>
   </tr>
