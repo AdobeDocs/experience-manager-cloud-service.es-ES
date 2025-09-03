@@ -35,7 +35,7 @@ La documentación empresarial de Adobe ofrece más que una colección de guías 
 ### Content and Commerce
 
 + [[!DNL Experience Manager as a Cloud Service]](experience-manager-cloud-service.md)
-+ [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)
++ [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/es/docs/experience-manager-sites-optimizer/content/home)
 + [Experience Manager 6.5 LTS](experience-manager-65-lts.md)
 + [Experience Manager 6.5](experience-manager-65.md)
 + [Experience Manager ](experience-manager-release-information#/help/using/aem-previous-versions.md)
@@ -87,8 +87,8 @@ La documentación empresarial de Adobe ofrece más que una colección de guías 
 
 ### Documentación
 
-+ [Información y asistencia de Acrobat](https://helpx.adobe.com/support/acrobat.html)
-+ [Información y asistencia de Acrobat Sign](https://helpx.adobe.com/support/sign.html)
++ [Información y asistencia de Acrobat](https://helpx.adobe.com/es/support/acrobat.html)
++ [Información y asistencia de Acrobat Sign](https://helpx.adobe.com/es/support/sign.html)
 
 ### Desarrollador
 
@@ -97,8 +97,8 @@ La documentación empresarial de Adobe ofrece más que una colección de guías 
 
 ### Recursos útiles para Document Cloud
 
-+ [Información y asistencia de Document Cloud](https://helpx.adobe.com/support/document-cloud.html)
-+ [Tutoriales de Document Cloud para empresas](https://experienceleague.adobe.com/docs/home-tutorials.html#document-cloud-tutorials)
++ [Información y asistencia de Document Cloud](https://helpx.adobe.com/es/support/document-cloud.html)
++ [Tutoriales de Document Cloud para empresas](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=es#document-cloud-tutorials)
 + [Estado de Adobe](https://status.adobe.com/)
 + [Guía de administración](https://helpx.adobe.com/es/enterprise/admin-guide.html)
 
@@ -106,7 +106,7 @@ La documentación empresarial de Adobe ofrece más que una colección de guías 
 
 ### Documentación
 
-+ [Información y asistencia de Creative Cloud](https://helpx.adobe.com/support/creative-cloud.html)
++ [Información y asistencia de Creative Cloud](https://helpx.adobe.com/es/support/creative-cloud.html)
 
 ### Recursos útiles para Creative Cloud for Enterprise
 
@@ -119,7 +119,7 @@ La documentación empresarial de Adobe ofrece más que una colección de guías 
 
 ### Recursos en toda la nube
 
-+ [Eventos de Experience League](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html#events)
++ [Eventos de Experience League](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=es#events)
 + [Estado de Adobe](https://status.adobe.com/)
 + [Adobe Developer](https://developer.adobe.com/)
 + [Guía de administración](https://helpx.adobe.com/es/enterprise/admin-guide.html)
@@ -135,10 +135,10 @@ La documentación empresarial de Adobe ofrece más que una colección de guías 
 
 + [Notas de la versión de Experience Cloud](release-notes#experience-cloud)
 + [Tutoriales](home-tutorials.md)
-+ [Listas de reproducción](https://experienceleague.adobe.com/en/playlists)
++ [Listas de reproducción](https://experienceleague.adobe.com/es/playlists)
 + [Certificación](certification#program)
 + [Foro de la comunidad](https://experienceleaguecommunities.adobe.com)
-+ [Soporte](https://experienceleague.adobe.com/?support-solution=General&support-tab=home&lang=es#support)
++ [Soporte](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home&lang=es#support)
 
 <!--
 + [Events](events.md)
