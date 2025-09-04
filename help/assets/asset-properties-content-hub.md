@@ -3,9 +3,9 @@ title: Vista previa del recurso y sus propiedades en  [!DNL the Content Hub]
 description: Obtenga información sobre cómo obtener una vista previa de recursos y propiedades en  [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+source-git-commit: 45e731d2286b07db5852138ae1ac914a56b13a6a
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '636'
 ht-degree: 11%
 
 ---
@@ -45,7 +45,7 @@ Antes de usar, compartir o descargar un recurso, puede verlo más de cerca. La f
 * **K:** Cerrar pantalla de vista previa
 * **L:** información de un recurso que incluye título, formato, tamaño, resolución, etiquetas, etiquetas de color y etiquetas inteligentes.
 
-## Formatos de archivo compatibles {#supported-formats}
+## Formatos de recurso admitidos {#supported-formats}
 
 [!DNL Content Hub] admite todos los tipos de recursos y formatos que admite el repositorio [!DNL Assets] subyacente. En la tabla siguiente se enumeran los formatos de archivo clave de [!DNL the Content Hub], que proporcionan compatibilidad adicional para obtener una vista previa de los recursos visualmente:
 
@@ -54,23 +54,16 @@ Antes de usar, compartir o descargar un recurso, puede verlo más de cerca. La f
      <tr>
       <th><strong>Tipo de archivo</strong></th>
       <th><strong>Formatos compatibles</strong></th>
-      <th><strong>Tamaño</strong></th>
      </tr>
      <tr>
-        <td rowspan="4"> Imagen </td>
+        <td rowspan="3"> Imagen </td>
     </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8000 X 8000 píxeles, máximo 40 MB</td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8000 X 8000 píxeles, máximo 40 MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL SVG]</td>
-        <td> Máximo 250 KB</td>
     </tr>
     <tr>
         <td rowspan="4"> Vídeo </td>
@@ -78,15 +71,12 @@ Antes de usar, compartir o descargar un recurso, puede verlo más de cerca. La f
     </tr>
     <tr>
         <td>[!UICONTROL Quicktime]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
-        <td> 3840 X 3840 píxeles, máximo 200 MB</td>
     </tr>
     <tr>
         <td>[!UICONTROL MPEG]</td>
-        <td> 200 MB como máximo </td>
     </tr>
     <tr>
         <td rowspan="4"> Documento </td>
@@ -94,15 +84,12 @@ Antes de usar, compartir o descargar un recurso, puede verlo más de cerca. La f
     </tr>
     <tr>
         <td>[!UICONTROL txt] (sin formato)</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL Doc/Docx]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL XML]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td rowspan="2"> Medios de impresión </td>
@@ -110,7 +97,6 @@ Antes de usar, compartir o descargar un recurso, puede verlo más de cerca. La f
     </tr>
     <tr>
         <td>[!UICONTROL PDF]</td>
-        <td> - </td>
     </tr>
     </tbody>
 </table>
@@ -125,7 +111,7 @@ Algunas propiedades de los recursos mostrados en [!DNL Content Hub] se derivan o
 
 * **Etiquetas inteligentes:** [!DNL The Content Hub] utiliza los servicios de contenido inteligente de Adobe Sensei para entrenar recursos mediante el algoritmo de reconocimiento en la estructura basada en etiquetas. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. Las etiquetas inteligentes aumentan la velocidad del contenido de los proyectos al ayudarle a encontrar recursos relevantes rápidamente. Las etiquetas inteligentes son un ejemplo de información de recursos que no está contenida en la imagen. [!DNL Experience Manager Assets] aplica automáticamente las etiquetas inteligentes a los recursos, de manera predeterminada.
 
-* **Etiquetas de color:** [Las etiquetas de color](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=es) le ayudan a reconocer un recurso mediante colores que se identifican automáticamente en un recurso mediante las funciones de IA de Sensei de Adobe.
+* **Etiquetas de color:** [Las etiquetas de color](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) le ayudan a reconocer un recurso mediante colores que se identifican automáticamente en un recurso mediante las funciones de IA de Sensei de Adobe.
 
 * Fecha de carga
 

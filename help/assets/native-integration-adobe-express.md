@@ -4,9 +4,9 @@ description: La integración nativa de AEM Assets con Adobe Express permite acce
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '646'
 ht-degree: 9%
 
 ---
@@ -50,7 +50,10 @@ Después de incorporar las modificaciones adecuadas en el lienzo Express, puede 
 
    ![Guardar recursos en AEM](assets/adobe-express-share.png)
 
-2. En la sección Almacenamiento del panel derecho, seleccione **AEM Assets**. Adobe Express muestra el cuadro de diálogo de carga.
+2. En la sección **[!UICONTROL Recomendado]** del panel derecho, seleccione **AEM Assets**. Adobe Express muestra el cuadro de diálogo de carga.
+
+   ![Guardar recursos en AEM](assets/adobe-express-aem.png)
+
 3. Seleccione **Página actual** o **Todas las páginas**. Especifique un nombre y un formato para los recursos que desea exportar. Puede exportar el contenido del lienzo en los formatos PNG, JPEG, PDF, MP4, MP4+PNG o MP4+JPEG. El formato se ajusta automáticamente en función de los recursos de las páginas de lienzo.
 Al seleccionar **Página actual**, se guardará el recurso de la página actual en la carpeta de destino. Si selecciona **Todas las páginas** y el formato de exportación no es PDF, todas las páginas de lienzo se guardarán como archivos independientes en una nueva carpeta dentro de la carpeta de destino. Si el formato de exportación es PDF, todas las páginas de lienzo se guardan como un solo archivo PDF en la carpeta de destino.
 
@@ -65,20 +68,12 @@ Como práctica recomendada, Adobe recomienda especificar valores en el resto de 
 
 7. Haga clic en **[!UICONTROL Cargar]** para cargar los recursos a los AEM Assets.
 
-Consulte [Formatos de archivo compatibles](asset-properties-content-hub.md#supported-formats).
-
-[!DNL Content Hub] admite todos los tipos de recursos y formatos que admite el repositorio [!DNL Assets] subyacente. En la tabla siguiente se enumeran los formatos de archivo clave de [!DNL the Content Hub], que proporcionan compatibilidad adicional para obtener una vista previa de los recursos visualmente:
-
 <table> 
     <tbody>
      <tr>
-      <th><strong>Tipo de archivo</strong></th>
       <th><strong>Formatos compatibles</strong></th>
       <th><strong>Tamaño</strong></th>
      </tr>
-     <tr>
-        <td rowspan="4"> Imagen </td>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
@@ -93,44 +88,11 @@ Consulte [Formatos de archivo compatibles](asset-properties-content-hub.md#suppo
         <td> Máximo 250 KB</td>
     </tr>
     <tr>
-        <td rowspan="4"> Vídeo </td>
     </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Quicktime]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
         <td> 3840 X 3840 píxeles, máximo 200 MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL MPEG]</td>
-        <td> 200 MB como máximo </td>
-    </tr>
-    <tr>
-        <td rowspan="4"> Documento </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL txt] (sin formato)</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL XML]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td rowspan="2"> Medios de impresión </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL PDF]</td>
-        <td> - </td>
     </tr>
     </tbody>
 </table>
@@ -139,7 +101,7 @@ Consulte [Formatos de archivo compatibles](asset-properties-content-hub.md#suppo
 
 1. Para importar y exportar, el tipo de archivo de vídeo admitido es MP4.
 
-2. Para la **importación de vídeo MP4**, consulte los [formatos de archivo compatibles](asset-properties-content-hub.md#supported-formats). Tampoco se admiten vídeos con fondos transparentes (canal alfa).
+2. Para la **importación de vídeo MP4**, no se admiten vídeos con fondos transparentes (canal alfa).
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
