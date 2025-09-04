@@ -4,10 +4,10 @@ description: La integración nativa de AEM Assets con Adobe Express permite acce
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: d68ed456b3fe838e71465461f8ab4c7508c7668c
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 8%
+source-wordcount: '702'
+ht-degree: 10%
 
 ---
 
@@ -22,7 +22,6 @@ AEM Assets se integra de forma nativa con Adobe Express, lo que le permite acced
 ## Requisitos previos {#prerequisites}
 
 Derechos para acceder a Adobe Express y al menos a un entorno dentro de los AEM Assets. El entorno puede ser cualquiera de los repositorios de Assets as a Cloud Service o Assets Essentials.
-
 
 ## Uso de AEM Assets en el editor de Adobe Express {#use-aem-assets-in-express}
 
@@ -66,19 +65,88 @@ Como práctica recomendada, Adobe recomienda especificar valores en el resto de 
 
 7. Haga clic en **[!UICONTROL Cargar]** para cargar los recursos a los AEM Assets.
 
+## Formatos de archivo compatibles {#supported-formats}
+
+[!DNL Content Hub] admite todos los tipos de recursos y formatos que admite el repositorio [!DNL Assets] subyacente. En la tabla siguiente se enumeran los formatos de archivo clave de [!DNL the Content Hub], que proporcionan compatibilidad adicional para obtener una vista previa de los recursos visualmente:
+
+<table> 
+    <tbody>
+     <tr>
+      <th><strong>Tipo de archivo</strong></th>
+      <th><strong>Formatos compatibles</strong></th>
+      <th><strong>Tamaño</strong></th>
+     </tr>
+     <tr>
+        <td rowspan="4"> Imagen </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+        <td> 8000 X 8000 píxeles, máximo 40 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+        <td> 8000 X 8000 píxeles, máximo 40 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL SVG]</td>
+        <td> Máximo 250 KB</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Vídeo </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+        <td> 3840 X 3840 píxeles, máximo 200 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+        <td> 200 MB como máximo </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Documento </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt] (sin formato)</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> Medios de impresión </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+        <td> - </td>
+    </tr>
+    </tbody>
+   </table>
+
 ## Limitaciones {#limitations}
 
 1. Para importar y exportar, el tipo de archivo de vídeo admitido es MP4.
 
-2. Para importar vídeo MP4:
+2. Para la **importación de vídeo MP4**, consulte los [formatos de archivo compatibles](#supported-formats). Tampoco se admiten vídeos con fondos transparentes (canal alfa).
+   <!--
+   1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
+   2. The maximum supported resolution is 3840 X 3840 pixels.
+   3. Videos with transparent backgrounds (alpha channel) are not supported.
+   -->
 
-   1. El tamaño máximo de archivo admitido es de 200 MB. Si este límite supera, se muestra un mensaje de alerta.
-   2. La resolución máxima admitida es de 3840 X 3840 píxeles.
-   3. No se admiten vídeos con fondos transparentes (canal alfa).
-
-3. Para exportar vídeo MP4:
-
-   1. El tamaño máximo de archivo admitido es de 200 MB. Si se supera este límite, se recomienda recortar el vídeo a 200 MB o menos o cargarlo manualmente en la carpeta de destino de AEM Assets después de descargarlo.
+3. Para la **exportación de vídeo MP4**, el tamaño máximo de archivo admitido es de 200 MB. Si se supera este límite, se recomienda recortar el vídeo a 200 MB o menos o cargarlo manualmente en la carpeta de destino de AEM Assets después de descargarlo.
 
 
 
