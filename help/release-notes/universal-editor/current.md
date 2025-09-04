@@ -4,7 +4,7 @@ description: Estas son las notas de la versión 2025.09.04 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8ca329ad8fe64ab4c45b01ce5906d51c8db45155
+source-git-commit: 0c380e0faca1db0966d22d056dd1f824a731a7bc
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 71%
@@ -24,6 +24,13 @@ Estas son las notas de la versión del editor universal del 4 de septiembre de 2
 
 * Copiar y pegar está disponible para [usuarios que lo adoptaron por primera vez](#copy-paste)
 
+### Deshacer/Rehacer {#undo-redo}
+
+Deshacer y rehacer ya está disponible para los autores de contenido del editor universal.
+
+* Esto incluye las ediciones realizadas en el contexto y las realizadas a través del panel Propiedades, así como la adición (o duplicación), el movimiento y la eliminación de bloques.
+* Deshacer y rehacer está limitado a la sesión actual del explorador.
+
 ## Funciones de adopción anticipada {#early-adopter}
 
 Si le interesa probar estas nuevas funciones y compartir sus comentarios, envíe un correo electrónico a su Adobe Customer Success Manager desde la dirección de correo electrónico asociada a su Adobe ID.
@@ -31,13 +38,6 @@ Si le interesa probar estas nuevas funciones y compartir sus comentarios, envíe
 ### Nuevo RTE {#new-rte}
 
 El nuevo RTE de ProseMirror, que cuenta con un selector de páginas en el cuadro de diálogo de vínculos, ya está disponible en el panel derecho.
-
-### Deshacer/Rehacer {#undo-redo}
-
-Deshacer y rehacer ya está disponible para los autores de contenido del editor universal.
-
-* Esto incluye las ediciones realizadas en el contexto y las realizadas a través del panel Propiedades, así como la adición (o duplicación), el movimiento y la eliminación de bloques.
-* Deshacer y rehacer está limitado a la sesión actual del explorador.
 
 ### Copiar/Pegar {#copy-paste}
 
