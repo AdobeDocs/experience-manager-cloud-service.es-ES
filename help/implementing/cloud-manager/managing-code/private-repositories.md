@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo configurar Cloud Manager para que 
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 33%
+source-wordcount: '1000'
+ht-degree: 34%
 
 ---
 
@@ -20,8 +20,9 @@ Si configura Cloud Manager para que se integre con su GitHub Cloud privado (repo
 >También puede añadir los siguientes tipos de repositorios con los webhooks:
 >
 >* Repositorios de GitHub Enterprise Server (versión autoalojada de GitHub)
->* Repositorios de GitLab (tanto `gitlab.com` como versiones autoalojadas de GitLab)
->* Repositorios de Bitbucket (tanto `bitbucket.org` como Bitbucket Server, la versión autoalojada de BitBucket)
+>* Repositorios de GitLab (tanto `gitlab.com` como versiones autohospedadas de GitLab).
+>* Repositorios de Bitbucket (tanto `bitbucket.org` como Bitbucket Server, la versión autoalojada de BitBucket).
+>* Repositorios de Azure DevOps (tanto [dev.azure.com](http://dev.azure.com) como versiones autohospedadas de Azure DevOps).
 >
 >Consulte [Agregar repositorios externos en Cloud Manager - beta privada](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -153,13 +154,13 @@ Los repositorios privados validados se pueden asociar a [canalizaciones de pila 
 
 
 
-## Notas de uso {#usage-notes}
+## Limitaciones {#limitations}
 
-* Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados.
+Se aplican ciertas restricciones al usar repositorios privados con Cloud Manager.
+
 * No se creará ni insertará ninguna etiqueta de Git al utilizar repositorios privados en canalizaciones de producción de pila completa.
 * Si la aplicación de Adobe GitHub se elimina de su organización de GitHub, se elimina la función de validación de solicitudes de extracción de todos los repositorios.
 * Las canalizaciones que utilizan repositorios privados de GitHub Cloud y el déclencheur de compilación &quot;en el momento de la confirmación&quot; no se inician automáticamente cuando se inserta una nueva confirmación en la rama seleccionada.
 * La [funcionalidad de reutilización de artefactos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) no se aplica a repositorios privados.
-* No puede pausar la validación de la solicitud de extracción utilizando la comprobación de GitHub desde Cloud Manager.
-Si el repositorio de GitHub se valida en Cloud Manager, Cloud Manager siempre intenta validar las solicitudes de extracción creadas para ese repositorio.
-* Si la organización de GitHub tiene restricciones de IP, cree un caso de asistencia para recibir la lista de direcciones IP permitidas.
+* No se puede pausar la validación de la solicitud de extracción mediante la comprobación de GitHub desde Cloud Manager. Si el repositorio de GitHub se valida en Cloud Manager, Cloud Manager siempre intenta validar las solicitudes de extracción creadas para ese repositorio.
+* Si su organización de GitHub aplica restricciones de IP, abra un caso de asistencia para obtener la lista de direcciones IP que deben permitirse.

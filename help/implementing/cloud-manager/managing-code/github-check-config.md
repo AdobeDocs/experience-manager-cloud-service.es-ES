@@ -1,28 +1,28 @@
 ---
-title: Configuración de comprobación de GitHub para repositorios privados
+title: Extraer solicitudes de comprobación de repositorios privados
 description: Obtenga información sobre cómo controlar las canalizaciones que se crean automáticamente para validar cada solicitud de extracción en un repositorio privado.
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0a08d5fc033f4f4f57b824492766e5b42a801b6e
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 33%
+source-wordcount: '296'
+ht-degree: 28%
 
 ---
 
-# Configuración de comprobación de GitHub para repositorios privados {#github-check-config}
+# La solicitud de extracción comprueba los repositorios privados {#github-check-config}
 
 Obtenga información sobre cómo controlar las canalizaciones que se crean automáticamente para validar cada solicitud de extracción en un repositorio privado.
 
-## Configuración de las comprobaciones de GitHub {#configuration}
+## Configuración de comprobaciones de repositorios privados {#configuration}
 
 Cuando se usan [repositorios privados](private-repositories.md#using), se crea automáticamente una [canalización de calidad de código de pila completa](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). Esta canalización se inicia en cada actualización de solicitud de extracción.
 
 Puede controlar estas comprobaciones creando un archivo de configuración de `.cloudmanager/pr_pipelines.yml` en la rama predeterminada del repositorio privado.
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
   shouldSkipCheckAnnotations: false
 pipelines:
