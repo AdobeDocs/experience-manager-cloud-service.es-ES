@@ -4,10 +4,10 @@ description: Obtenga información sobre la versión 2025.9.0 de Cloud Manager en
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 98182e835e10b0b29aa2ae21c2a02562ca64111a
+source-git-commit: 2b82e3b848be828fbf8c316244031a0e06f512ca
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 90%
+source-wordcount: '1125'
+ht-degree: 89%
 
 ---
 
@@ -41,15 +41,12 @@ La próxima versión está planificada para el viernes, 02 de octubre de 2025.
 
   Cloud Manager ahora admite canalizaciones de configuración con repositorios privados en GitHub, Bitbucket, Azure DevOps y GitLab. Consulte [Comprobaciones de solicitudes de extracción para repositorios privados](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
-* **Cloud Manager añade compatibilidad con los certificados SSL de ECDSA (Elliptic Curve Digital Signature Algorithm)**
+<!--
+### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
 
-  Cloud Manager ahora admite certificados ECDSA. La función ofrece una gran seguridad con tamaños de clave más pequeños, lo que permite a los clientes aplicar criptografía moderna y ligera en sus configuraciones de CDN. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
+Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
 
-### Canalizaciones solo de fase y de producción {#staging-production-only-pipelines}
-
-Se ha introducido la compatibilidad con las [canalizaciones solo de ensayo y solo de producción](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md), lo que le permite dividir canalizaciones de implementación de la producción de pila completa en implementaciones más pequeñas y especializadas.
-
-Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a `Grp-cloudmanager_splitpipelines@adobe.com` desde su dirección de correo electrónico asociada a su Adobe ID.
+If you are interested in testing this new feature and sharing your feedback, send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. -->
 
 
 ## Programas Beta {#private-beta-program}
@@ -66,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Vuelva rápidamente a una implementación anterior si el código fuente del cliente más reciente no funciona como se esperaba; no es necesario volver a ejecutar la canalización completa ni revertir las confirmaciones manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**&#x200B;para un entorno seleccionado.*
+![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**para un entorno seleccionado.*
 
 ![Cuadro de diálogo Restaurar código anterior implementado](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *En el cuadro de diálogo **Restaurar código anterior implementado**, revise la versión implementada actualmente y la versión que desea restaurar, luego haga clic en **Confirmar***.
 
 ![Activación de Restaurando](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**&#x200B;hasta que finalice la implementación.*
+*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**hasta que finalice la implementación.*
 
 ![Versión del código fuente en uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vista de detalles del entorno, vista desde arriba, ahora también muestra la versión activa del código fuente en uso.*
 
