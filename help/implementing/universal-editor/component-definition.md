@@ -4,9 +4,9 @@ description: Comprenda en detalle el contrato JSON entre la definición del comp
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: 2b945504385ad78ddfb58d210db4212382e9872c
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '606'
 ht-degree: 2%
 
 ---
@@ -94,9 +94,9 @@ El siguiente es un ejemplo completo, pero simple `component-definition.json`.
 
 `plugins` define qué complemento es responsable de mantener el componente. Los complementos comunes incluyen:
 
-* `aem` para AEM as a Cloud Service.
-* `aem5` para AEM 6.5.
-* `xwalk` para la creación de AEM as a Cloud Service WYSIWYG.
+* `aem` para [AEM as a Cloud Service.](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service)
+* `aem65` para [AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+* `xwalk` para [crear con AEM Sites para Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` o `cf` {#page-cf}
 
