@@ -50,9 +50,9 @@ AEM as a Cloud Service es una herramienta flexible para el modelo de implementac
 
 ## Sus primeros pasos {#first-steps}
 
-Hay varios recursos disponibles para empezar a utilizar las funciones sin encabezado de AEM. Cada guía está diseñada para diferentes casos de uso y audiencias.
+Hay varios recursos disponibles para empezar a utilizar las funciones sin encabezado de AEM. Cada guía está diseñada para diferentes casos de uso y públicos.
 
-| Recurso | Descripción | Tipo | Audiencia | EST Hora |
+| Recurso | Descripción | Tipo | Público | EST Hora |
 |---|---|---|---|---|
 | [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | **Para desarrolladores nuevos en las tecnologías de AEM y sin encabezado**, es recomendable empezar aquí para ver una introducción completa a AEM y sus características sin encabezado, desde la teoría sobre esta tecnología hasta publicar su primer proyecto sin encabezado. | Guía  | Desarrolladores **nuevos en las tecnologías de AEM y sin encabezado** | 1 hora |
 | [Configuración sin encabezado](/help/headless/setup/introduction.md) | **Para usuarios de AEM con experiencia** que necesiten un breve resumen de las funciones principales de AEM sin encabezado, se recomienda consultar esta descripción general de inicio rápido. | Configuración de referencia | Desarrolladores, administradores **con experiencia en AEM** | 20 minutos |

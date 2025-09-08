@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
 role: Admin, Developer, User
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 100%
 
@@ -38,22 +38,22 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="Rastreador de envíos de formularios"
->abstract="Este gráfico representa el recuento de los envíos de formularios adaptables durante períodos de tiempo específicos. El aumento de los envíos podría indicar que el formulario está ganando popularidad o que es necesario recopilar más datos de los usuarios. **Nota:** El gráfico proporciona datos específicos de la instancia actual, lo que le permite analizar rápidamente las tendencias y tomar decisiones fundamentadas. Para enviar datos de otras instancias, acceda simplemente al panel de la instancia correspondiente."
+>abstract="Este gráfico representa el recuento de los envíos de formularios adaptables durante períodos de tiempo específicos. El aumento de los envíos podría indicar que el formulario está ganando popularidad o que es necesario recopilar más datos de los usuarios. **Nota:** El gráfico proporciona datos específicos de la instancia actual, lo que le permite analizar rápidamente las tendencias y tomar decisiones fundamentadas. Para enviar datos de otras instancias, acceda simplemente al panel de control de la instancia correspondiente."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
 >title="Rastreador de representación de documentos"
->abstract="Este gráfico representa el recuento de la representación de documentos durante períodos de tiempo específicos. **Nota:** El gráfico proporciona datos específicos de la instancia actual, lo que le permite analizar rápidamente las tendencias y tomar decisiones fundamentadas. Para enviar datos de otras instancias, acceda simplemente al panel de la instancia correspondiente."
+>abstract="Este gráfico representa el recuento de la representación de documentos durante períodos de tiempo específicos. **Nota:** El gráfico proporciona datos específicos de la instancia actual, lo que le permite analizar rápidamente las tendencias y tomar decisiones fundamentadas. Para enviar datos de otras instancias, acceda simplemente al panel de control de la instancia correspondiente."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="Nuevo rastreador de formularios"
->abstract="El gráfico proporciona información sobre el número de formularios de nueva creación durante periodos de tiempo específicos. **Nota:** El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de la instancia correspondiente."
+>abstract="El gráfico proporciona información sobre el número de formularios de nueva creación durante periodos de tiempo específicos. **Nota:** El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de control de la instancia correspondiente."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Rastreador de formularios publicados"
->abstract="El gráfico proporciona información sobre el número de formularios que se han publicado con éxito durante periodos de tiempo específicos. **Nota:** El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
+>abstract="El gráfico proporciona información sobre el número de formularios que se han publicado con éxito durante periodos de tiempo específicos. **Nota:** El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de control de la instancia correspondiente."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
@@ -63,18 +63,18 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Duración media de creación de formularios"
->abstract="El gráfico muestra el tiempo medio que se tarda en crear y publicar un formulario, medido desde el día inicial en que se abrió el formulario para editarlo. **Nota:** El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de la instancia correspondiente."
+>abstract="El gráfico muestra el tiempo medio que se tarda en crear y publicar un formulario, medido desde el día inicial en que se abrió el formulario para editarlo. **Nota:** El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de control de la instancia correspondiente."
 
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
 >title="Rastreador de fragmentos de formularios"
->abstract="Este gráfico le ayuda a ver cuántos fragmentos de formularios utiliza la gente en sus formularios. **Nota:** El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
+>abstract="Este gráfico le ayuda a ver cuántos fragmentos de formularios utiliza la gente en sus formularios. **Nota:** El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de control de la instancia correspondiente."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="Rastreador de tiempo medio de fragmento de formulario"
->abstract="El gráfico muestra el tiempo medio que se tarda en crear un fragmento de formulario, medido desde el día inicial en que se abrió el fragmento de formulario para editarlo. **Nota:** El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
+>abstract="El gráfico muestra el tiempo medio que se tarda en crear un fragmento de formulario, medido desde el día inicial en que se abrió el fragmento de formulario para editarlo. **Nota:** El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de control de la instancia correspondiente."
 
 
 <!-- 
@@ -100,55 +100,55 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a></td>
    <td>Creates Adobe PDF from supported file types.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
    <td>Creates Adobe PDF from supported file types.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td>
    <td>Converts Adobe PDF to supported file types. </td>
    <td>Documents Processed<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td>
    <td>Converts Adobe PDF to supported file types. </td>
    <td>Documents Processed<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
    <td>Converts Adobe PDF to supported file types. </td>
    <td>Documents Processed<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td>
    <td><p>Creates PDF from HTML pages.</p> </td>
    <td>Documents Processed<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf</a></td>
    <td>Creates PDF from URLs pointing to an HTML page.</td>
    <td>Documents Processed<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf2-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf2-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf2</a></td>
    <td>Creates PDF from URLs pointing to an HTML page.</td>
    <td>Documents Processed<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td>
    <td>Optimizes PDF to reduce file size by stripping unnecessary metadata without affecting the quality.</td>
    <td>Documents Processed<br /> </td>
    <td> </td>
@@ -171,13 +171,13 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a><br /> </td>
    <td>Creates Adobe PDF from supported file types.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
    <td>Creates Adobe PDF from supported file types.</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -211,43 +211,43 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td> </td>
   </tr>
   <!--<tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td>
    <td>Converts Adobe PDF to supported file types. </td>
    <td>Documents Processed<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td>
    <td>Converts Adobe PDF to supported file types. </td>
    <td>Documents Processed<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
    <td>Converts Adobe PDF to supported file types. </td>
    <td>Documents Processed<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td>
    <td><p>Creates PDF from HTML pages.</p> </td>
    <td>Documents Processed<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf</a></td>
    <td>Creates PDF from URLs pointing to an HTML page.</td>
    <td>Documents Processed<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf2-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf2-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf2</a></td>
    <td>Creates PDF from URLs pointing to an HTML page.</td>
    <td>Documents Processed<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td>
    <td>Optimizes PDF to reduce file size by stripping unnecessary metadata without affecting the quality.</td>
    <td>Documents Processed<br /> </td>
    <td> </td>
@@ -281,7 +281,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-batch/#tag/Batch-Configuration/operation/CreateBatchConfig" target="_blank">generatePDFOutputBatch</a></td>
    <td>Combina datos y plantillas para crear un conjunto de documentos PDF.</td>
    <td>Documentos procesados</td>
-   <td> <!-- The generatePDFOutputBatch API combines a form template with a record and generates a PDF. When you process a batch of records, the transaction reporting service counts each record as a separate PDF rendition. <br> You can use the <a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> flag to combine multiple renditions to single PDF file. Irrespective of the status of flag, the service counts each record as a separate PDF rendition. --> </td>
+   <td> <!-- The generatePDFOutputBatch API combines a form template with a record and generates a PDF. When you process a batch of records, the transaction reporting service counts each record as a separate PDF rendition. <br> You can use the <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> flag to combine multiple renditions to single PDF file. Irrespective of the status of flag, the service counts each record as a separate PDF rendition. --> </td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutput" target="_blank">generatePrintedOutput</a></td>
@@ -361,13 +361,13 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
    <td>Renders PDF Form from XDP templates. The XP templates are created in Forms Designer.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
    <td>Extracts data from a PDF Form or XDP templates</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -388,13 +388,13 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toImage</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toImage</a></td>
    <td>Converts a PDF document to a list of image documents. Supported image formats are JPEG, JPEG2K, PNG, and TIFF.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td>
    <td>Converts a Flat PDF file to PostScript format using the options specified in the option spec.</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -415,7 +415,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decode</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decode</a></td>
    <td>Decodes all the barcodes in a Document object and returns an org.w3c.dom.Document object that contains data that was retrieved from the barcode.</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -448,7 +448,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/#tag/DDX-execution/operation/InvokeDDX" target="_blank">invoke</a></td>
    <td>Ejecuta el DDX en los documentos de entrada dados y devuelve un objeto que contiene los documentos de resultado</td>
    <td>Documentos procesados</td>
-   <td>Todos los formatos de archivo de entrada compatibles con Generador de PDF, Formularios y Servicios de salida; el servicio Ensamblador admite todos esos formatos como formatos de archivo de salida. </td>
+   <td>Todos los formatos de archivo de entrada compatibles con Generador de PDF, Formularios y Servicios de salida; el servicio Assembler admite todos esos formatos como formatos de archivo de salida. </td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/#tag/Document-conversion/operation/ConvertToPDFA">toPDFA</a></td>
@@ -468,8 +468,8 @@ El uso de la API de invocación se cuenta como una transacción cuando realiza u
 
 >[!NOTE]
 >
->* El API de invocación del servicio de ensamblador puede llamar internamente a un API facturable de otro servicio en función de la entrada. Por lo tanto, la API de invocación puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende de la entrada y las API internas invocadas.
->* Un documento PDF único producido mediante el servicio de ensamblador puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende del código proporcionado.
+>* El API de invocación del servicio Assembler puede llamar internamente a un API facturable de otro servicio en función de la entrada. Por lo tanto, la API de invocación puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende de la entrada y las API internas invocadas.
+>* Un documento PDF único producido mediante el servicio Assembler puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende del código proporcionado.
 >
 
 <!--
@@ -484,7 +484,7 @@ El uso de la API de invocación se cuenta como una transacción cuando realiza u
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
    <td>Converts a PDF document into an XDP file. In order for a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the AcroForm dictionary.</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -609,7 +609,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
    <td>Generates the PDF version of an interactive communication.</td>
    <td>Documents Rendered</td>
    <td>
