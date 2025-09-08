@@ -95,7 +95,7 @@ El siguiente es un ejemplo completo, pero simple `component-definition.json`.
 `plugins` define qué complemento es responsable de mantener el componente. Los complementos comunes incluyen:
 
 * `aem` para [AEM as a Cloud Service.](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service)
-* `aem65` para [AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+* `aem65` para [AEM 6.5.](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 * `xwalk` para [crear con AEM Sites para Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` o `cf` {#page-cf}
