@@ -4,10 +4,10 @@ description: Obtenga información sobre la versión 2025.9.0 de Cloud Manager en
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2b82e3b848be828fbf8c316244031a0e06f512ca
+source-git-commit: 8092f18ec350a68bc192a11afbd0ca440f72e282
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 89%
+source-wordcount: '1137'
+ht-degree: 88%
 
 ---
 
@@ -33,13 +33,13 @@ La próxima versión está planificada para el viernes, 02 de octubre de 2025.
 
   ![renovación de certificado SSL](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* **Se ha agregado compatibilidad con Azure DevOps para repositorios privados**
+* **Se ha agregado compatibilidad con las operaciones de desarrollo de Azure (repositorios privados)**
 
   Las actualizaciones de la documentación incluyen pasos de configuración para Traer su propio Git con Azure DevOps y validación de solicitudes de extracción. Consulte [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-* **Comprobaciones de solicitudes de extracción para repositorios privados**
+* **Brinde su propia compatibilidad con Git (BYOG) a las canalizaciones de configuración (repositorios privados)**
 
-  Cloud Manager ahora admite canalizaciones de configuración con repositorios privados en GitHub, Bitbucket, Azure DevOps y GitLab. Consulte [Comprobaciones de solicitudes de extracción para repositorios privados](/help/implementing/cloud-manager/managing-code/github-check-config.md).
+  Cloud Manager ahora admite canalizaciones de configuración con repositorios privados en GitHub, Bitbucket, Azure DevOps y GitLab. Esta compatibilidad acelera aún más el ciclo de desarrollo. Consulte [Comprobaciones de solicitudes de extracción para repositorios privados](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -63,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Vuelva rápidamente a una implementación anterior si el código fuente del cliente más reciente no funciona como se esperaba; no es necesario volver a ejecutar la canalización completa ni revertir las confirmaciones manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**&#x200B;para un entorno seleccionado.*
+![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**para un entorno seleccionado.*
 
 ![Cuadro de diálogo Restaurar código anterior implementado](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *En el cuadro de diálogo **Restaurar código anterior implementado**, revise la versión implementada actualmente y la versión que desea restaurar, luego haga clic en **Confirmar***.
 
 ![Activación de Restaurando](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**&#x200B;hasta que finalice la implementación.*
+*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**hasta que finalice la implementación.*
 
 ![Versión del código fuente en uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vista de detalles del entorno, vista desde arriba, ahora también muestra la versión activa del código fuente en uso.*
 
