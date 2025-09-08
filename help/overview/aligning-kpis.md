@@ -4,9 +4,9 @@ description: Aprenda a elegir los KPI adecuados para su implementación de AEM
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9960de2a1f5d36ebbaf95b2c3a3670a955a7d4b0
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '476'
 ht-degree: 100%
 
 ---
@@ -17,14 +17,12 @@ ht-degree: 100%
 >id="aemcloud_alignkpis"
 >title="Alineación de los KPI"
 >abstract="En un mundo digital, se puede medir casi todo. Elegir los indicadores clave de rendimiento (KPI) adecuados para la implementación de Adobe Experience Manager ayudará a su equipo a enfocarse en lo más importante."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=es" text="Evaluación de los indicadores clave de rendimiento (KPI)"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=es" text="Elección del equipo adecuado"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="Evaluación de los indicadores clave de rendimiento (KPI)"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="Elección del equipo adecuado"
 
 En un mundo digital, se puede medir casi todo. Elegir tres KPI para la implementación de Adobe Experience Manager ayuda a su equipo a centrarse en lo que más importa.
 
-
 ## **Siga estos seis pasos para poder decidir qué medir y cómo**
-
 
 1. **Comience con sus metas empresariales.** Por ejemplo: las metas de su negocio podrían ser aumentar los ingresos en línea, reducir los gastos operativos o reducir los gastos legales asociados con las violaciones de Digital Rights Management (DRM).
 
@@ -38,8 +36,10 @@ En un mundo digital, se puede medir casi todo. Elegir tres KPI para la implement
 
 1. **Cree una metodología mensurable para cada KPI.** Después de elegir los KPI, descargue la plantilla de metodología de KPI de Adobe para guiarle a través del resto del proceso.
 
-1. **Defina la audiencia para cada KPI.** El último paso de esta semana es identificar el grupo de partes interesadas que más se preocupan por cada KPI. La próxima semana trabajará con cada grupo para confirmar el KPI, refinar la metodología y acordar el formato y el momento de los informes.
+1. **Defina el público para cada KPI.** El último paso de esta semana es identificar el grupo de partes interesadas que más se preocupan por cada KPI. La próxima semana trabajará con cada grupo para confirmar el KPI, refinar la metodología y acordar el formato y el momento de los informes.
 
+<!--
 >[!TIP]
 >
->[**Descargar la plantilla de metodología de los KPI**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=es)
+>[**Download the KPI Methodology template**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+-->
