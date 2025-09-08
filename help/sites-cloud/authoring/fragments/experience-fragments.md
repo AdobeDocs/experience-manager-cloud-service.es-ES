@@ -5,10 +5,10 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 93%
+source-wordcount: '2142'
+ht-degree: 91%
 
 ---
 
@@ -334,10 +334,10 @@ Al editar un fragmento de experiencia, los bloques de creación disponibles se m
 
 La personalización en el Fragmento de experiencia le permite, como experto en marketing, definir un público objetivo para el Fragmento de experiencia solo una vez y, a continuación, reutilizar el fragmento en cualquier página. Así pues:
 
-* elimina la necesidad de especificar las variaciones necesarias para cada audiencia cada vez que se utiliza el fragmento
+* elimina la necesidad de especificar las variaciones necesarias para cada público cada vez que se utiliza el fragmento
 * mantiene el estilo en todas las ofertas
 
-Puede crear un Fragmento de experiencia con varios componentes agrupados dentro de este fragmento único. También puede crear variaciones del fragmento para cada segmento de audiencia específico y luego reutilizar estos Fragmentos de experiencias en los canales requeridos.
+Puede crear un Fragmento de experiencia con varios componentes agrupados dentro de este fragmento único. También puede crear variaciones del fragmento para cada segmento del público específico y luego reutilizar estos Fragmentos de experiencias en los canales requeridos.
 
 La personalización se logra definiendo las propiedades de la variable **Personalización** en el Fragmento de experiencia, en la variación o en la carpeta que contiene los fragmentos; esto significa que la herencia puede anular las propiedades de personalización.
 
@@ -445,6 +445,16 @@ Uso del selector de `.plain.` en la URL; puede acceder a la representación HTML
 La publicación del fragmento de experiencia es básicamente la misma que la [publicación de una página](/help/sites-cloud/authoring/sites-console/publishing-pages.md) (desde la consola o el editor de fragmentos de experiencias).
 
 También puede [publicar en previsualización](/help/sites-cloud/authoring/sites-console/previewing-content.md) (desde la consola o el editor de fragmentos de experiencias).
+
+>[!CAUTION]
+>
+>De forma predeterminada, al publicar la carpeta raíz de los fragmentos de experiencias (ubicada directamente en `/content/experience-fragments`):
+>
+>* solo publica la carpeta contenedora en sí
+>* no publica ningún elemento secundario
+>* cancela la publicación de los elementos secundarios ya publicados
+>
+>Para la publicación de todos los fragmentos de experiencias en la carpeta, cada uno debe publicarse por separado.
 
 ## Exportación de fragmentos de experiencias   {#exporting-experience-fragments}
 
