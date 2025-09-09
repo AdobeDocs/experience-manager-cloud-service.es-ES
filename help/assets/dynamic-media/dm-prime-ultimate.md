@@ -54,8 +54,8 @@ Además de las funciones de Dynamic Media Prime, como la integración de AEM Ass
 * [Solución de Dynamic Media en AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), que también incluye las siguientes funcionalidades clave:
 
    * [Plantillas de Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [Conceptos básicos de plantilla](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [Configuración visual](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [Conceptos básicos de plantilla](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [Configuración visual](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Requisitos previos {#pre-requisites-dm-ultimate}
 

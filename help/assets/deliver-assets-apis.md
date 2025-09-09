@@ -73,7 +73,7 @@ headers: {
     }
 ```
 
-Para invocar las API de entrega, se requiere un token de IMS en los detalles de `Authorization` para entregar un recurso restringido. El token de IMS se obtiene de una cuenta técnica. Consulte [Recuperar las credenciales de AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para crear una nueva cuenta técnica. Consulte [Generación del token de acceso](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para generar el token de IMS y utilizarlo correctamente en el encabezado de solicitud de las API de entrega.
+Para invocar las API de entrega, se requiere un token de IMS en los detalles de `Authorization` para entregar un recurso restringido. El token de IMS se obtiene de una cuenta técnica. Consulte [Recuperar las credenciales de AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para crear una nueva cuenta técnica. Consulte [Generación del token de acceso](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para generar el token de IMS y utilizarlo correctamente en el encabezado de solicitud de las API de entrega.
 
 
 Para ver ejemplos de solicitudes, ejemplos de respuestas y códigos de respuesta, consulte [API de entrega](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
