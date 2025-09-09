@@ -6,22 +6,25 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: invocar mejoras del servicio en VRE, rellenar opciones desplegables utilizando invocar servicio, establecer panel repetible utilizando la salida del servicio de invocación, establecer panel utilizando la salida del servicio de invocación, usar el parámetro de salida del servicio de invocación para validar otro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
+source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1598'
 ht-degree: 2%
 
 ---
 
-# Usar Invocar servicio en el Editor de reglas visuales para formularios basados en componentes principales
+# Integración de API externas con el Editor de reglas visuales en Forms de componentes principales
 
-El Editor de reglas visuales de un formulario adaptable admite la característica **Invocar servicio**, que le permite seleccionar un servicio de la lista de modelos de datos de formulario (FDM) configurados para su instancia. Puede asignar campos de formulario directamente a los parámetros de entrada del servicio. Para asignar campos de formulario a los parámetros de salida, utilice la opción de carga útil de evento para el servicio del modelo de datos de formulario especificado. Además, el editor de reglas visual le permite crear reglas para los controladores de éxito y de error para las operaciones **Invoke Service** en función de sus respuestas de salida. Los controladores de éxito administran la ejecución correcta de la operación **Invocar servicio**, mientras que los controladores de error resuelven cualquier error que se produzca.
+El Editor de reglas visuales de un formulario adaptable admite la característica **Invocar servicio**, que permite conectarse a API externas mediante modelos de datos de formulario (FDM) configurados para su instancia. Puede asignar campos de formulario directamente a los parámetros de entrada del servicio y utilizar la opción de carga útil de evento para asignar los parámetros de salida. El Editor de reglas visual también le permite definir reglas para los controladores de éxito y de error en función de la respuesta del servicio: los controladores de éxito administran las llamadas de API correctas, mientras que los controladores de error administran los errores.
+
+Esto le permite enviar fácilmente solicitudes de API desde el formulario, procesar las respuestas de la API y mostrar o utilizar los datos devueltos de forma dinámica dentro del formulario. Garantiza una integración perfecta entre el formulario adaptable y los sistemas externos o fuentes de datos.
+
 
 ## Ventajas de utilizar el servicio de invocación en el editor de reglas del formulario
 
 Estas son algunas ventajas de utilizar la operación Invocar servicio en el editor de reglas de un formulario adaptable:
 
-* **Integración optimizada**: el Editor de reglas visuales simplifica el proceso de integración de servicios externos o API en su Forms adaptable. Al usar **Invocar servicio**, puede conectar fácilmente formularios a varias fuentes de datos y servicios sin necesidad de codificación compleja, lo que hace que la integración de formularios sea más eficiente.
+* **Integración optimizada de API**: el Editor de reglas visual simplifica el proceso de integración de servicios externos o API en su Forms adaptable. Al usar **Invocar servicio**, puede conectar fácilmente formularios a varias fuentes de datos y servicios sin necesidad de codificación compleja, lo que hace que la integración de formularios sea más eficiente.
 
 * **Gestión dinámica de respuestas**: puede administrar las respuestas de éxito y error en función de las respuestas de salida de **Invocar servicio**, lo que permite que los formularios reaccionen dinámicamente a diferentes escenarios. Garantiza que los formularios gestionen varias condiciones de forma adecuada, lo que mejora la flexibilidad y el control.
 

@@ -1,21 +1,21 @@
 ---
-title: Editor de reglas para formularios dinámicos en el editor universal
+title: Editor de reglas para Edge Delivery Services Forms
 description: Cree formularios dinámicos e inteligentes con el editor de reglas en el editor universal. Añada lógica condicional, cálculos y comportamientos interactivos sin codificación.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 93%
+source-wordcount: '2780'
+ht-degree: 92%
 
 ---
 
 
-# Editor de reglas para formularios dinámicos en el editor universal
+# Editor de reglas para Edge Delivery Services Forms
 
-El editor de reglas permite a los autores convertir formularios estáticos en experiencias adaptables e inteligentes, sin necesidad de escribir código. Puede mostrar campos de forma condicional, realizar cálculos, validar datos, guiar a los usuarios a través de flujos e integrar la lógica empresarial que se adapta a medida que las personas escriben.
+El Editor de reglas permite a los autores convertir formularios estáticos en experiencias interactivas e inteligentes sin necesidad de escribir código. Puede mostrar campos de forma condicional, realizar cálculos, validar datos, guiar a los usuarios a través de flujos e integrar la lógica empresarial que se adapta a medida que las personas escriben.
 
 ## Lo que aprenderá
 
