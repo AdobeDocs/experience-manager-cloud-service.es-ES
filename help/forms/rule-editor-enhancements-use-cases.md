@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -31,7 +31,7 @@ En la tabla siguiente se enumeran las mejoras recientes del editor de reglas en 
 
 >[!NOTE]
 >
-> Las mejoras realizadas en el Editor de reglas también se aplican a Edge Delivery Services Forms.
+> Las mejoras también se aplican al [Editor de reglas de Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
 
 Ahora vamos a explorar en detalle cada método con casos de uso específicos para ayudarle a comprender cómo se pueden utilizar estas funciones para ofrecer una experiencia personalizada a los usuarios
 
@@ -124,7 +124,7 @@ El campo **Costo de envío total** se actualiza dinámicamente para reflejar tan
 >[!NOTE]
 >
 > También puede agregar la función **Obtener valor de variable** en la condición When.
-> &#x200B;> ![Obtener función de valor de variable en la condición When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Obtener función de valor de variable en la condición When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Este método permite realizar cálculos dinámicos en tiempo real sin agregar campos adicionales al formulario, lo que mantiene la estructura limpia y fácil de usar.
 

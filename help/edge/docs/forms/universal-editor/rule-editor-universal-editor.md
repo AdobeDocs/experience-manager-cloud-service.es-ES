@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
+source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 92%
+source-wordcount: '2824'
+ht-degree: 90%
 
 ---
 
@@ -165,13 +165,15 @@ Imagen: Interfaz del Editor de reglas para editar reglas de componentes
 ![Interfaz de usuario del Editor de reglas](/help/edge/docs/forms/assets/rule-editor-interface.png)
 Imagen: Interfaz completa del editor de reglas con componentes numerados
 
-- **Título del componente y tipo de regla**: confirma el componente seleccionado y el tipo de regla activo.
-- **Objetos de formulario y panel Funciones**:
+1. **Título del componente y tipo de regla**: confirma el componente seleccionado y el tipo de regla activo.
+2. **Objetos de formulario y panel Funciones**:
+
    - Objetos de formulario: vista jerárquica de campos y contenedores para hacer referencia a ellos en las reglas
    - Funciones: ayudantes matemáticas, cadena, fecha y validación integrados
-- **Alternar panel**: muestra u oculta el panel de objetos y funciones para aumentar el espacio de trabajo
-- **Generador de reglas visual**: compositor de reglas de arrastrar y soltar y desplegable
-- **Controles**: Listo (guardar), Cancelar (descartar). Pruebe siempre las reglas antes de guardar.
+
+3. **Alternar panel**: muestra u oculta el panel de objetos y funciones para aumentar el espacio de trabajo
+4. **Generador de reglas visual**: compositor de reglas de arrastrar y soltar y desplegable
+5. **Controles**: Listo (guardar), Cancelar (descartar). Pruebe siempre las reglas antes de guardar.
 
 +++
 
@@ -302,7 +304,7 @@ Creará un formulario que:
 
 +++
 
-+++ Paso 1: Crear el formulario adaptable
++++ Paso 1: Crear el formulario
 
 **Objetivo**: generar el formulario base con todos los campos y la configuración inicial.
 
@@ -533,6 +535,9 @@ Imagen: Adición de funciones personalizadas al archivo functions.js
 ![Función personalizada en el Editor de reglas](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Imagen: Selección y configuración de funciones personalizadas en la interfaz del Editor de reglas
 
+>
+>
+> Las mejoras realizadas en el Editor de reglas, incluidas las reglas personalizadas basadas en eventos, la compatibilidad con variables dinámicas y la integración de API, también están disponibles para Edge Delivery Services Forms. Para obtener más información sobre estas mejoras y cómo utilizarlas, consulte el artículo [Mejoras y casos de uso del editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md).
 
 **Prácticas recomendadas para el uso de funciones**:
 

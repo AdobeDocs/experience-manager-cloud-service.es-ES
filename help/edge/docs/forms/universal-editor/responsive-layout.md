@@ -6,15 +6,15 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2382'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2443'
+ht-degree: 93%
 
 ---
 
 
-# Crear formularios adaptables con el editor universal
+# Creación de Forms adaptable con editor universal: una guía completa
 
 El panorama web moderno exige formularios que funcionen sin problemas en un espectro cada vez más amplio de dispositivos y tamaños de pantalla. Desde grandes monitores de escritorio hasta pantallas compactas para teléfonos inteligentes, los usuarios esperan experiencias uniformes e intuitivas independientemente del dispositivo que elijan. La creación de formularios adaptables ya no es opcional: es un requisito fundamental para ofrecer experiencias digitales profesionales, accesibles y optimizadas para la conversión.
 
@@ -33,20 +33,21 @@ La creación de formularios adaptables implica dos actividades principales:
 - Solucionar problemas comunes de formularios adaptables
 - Optimizar formularios para el rendimiento móvil
 
-## Por qué son importantes los formularios adaptables
+<!--
+## Why Responsive Forms Are Important
 
-**Impacto en la experiencia del usuario:**
+**User Experience Impact:**
 
-- Más del 60 % de los usuarios acceden a formularios en dispositivos móviles
-- Las experiencias móviles deficientes generan una tasa de abandono un 67 % mayor
-- Los formularios adaptables pueden aumentar las tasas de finalización hasta en un 25 %
+- Over 60% of users access forms on mobile devices
+- Poor mobile experiences result in a 67% higher abandonment rate
+- Responsive forms can increase completion rates by up to 25%
 
-**Ventajas empresariales:**
+**Business Benefits:**
 
-- Tasas de finalización de formularios más altas
-- Mayor satisfacción del usuario
-- Mejora en el cumplimiento de accesibilidad
-- Menores costes de desarrollo y mantenimiento
+- Higher form completion rates
+- Improved user satisfaction
+- Enhanced accessibility compliance
+- Lower development and maintenance costs-->
 
 >[!TIP]
 >
@@ -276,7 +277,7 @@ El diseño de acordeón ahorra espacio al organizar el contenido en secciones co
 
 ### Prácticas recomendadas por tipo de dispositivo
 
-+++Optimización móvil (320 px - 767 px)
++++Optimización móvil (320 px-767 px)
 
 **Diseño e interacción:**
 
@@ -295,7 +296,7 @@ El diseño de acordeón ahorra espacio al organizar el contenido en secciones co
 
 +++
 
-+++Optimización de tableta (768 px - 1199 px)
++++Optimización de tableta (768 px-1199 px)
 
 **Diseño y uso:**
 
@@ -306,7 +307,7 @@ El diseño de acordeón ahorra espacio al organizar el contenido en secciones co
 
 +++
 
-+++Optimización para sobremesa (+1200 px)
++++Optimización de escritorio (1200 px+)
 
 **Características avanzadas y diseño:**
 
@@ -316,6 +317,40 @@ El diseño de acordeón ahorra espacio al organizar el contenido en secciones co
 - Ofrezca validación avanzada con mensajes de error claros y detallados para formularios complejos.
 
 +++
+
+## Configurar diseños personalizados con puntos de interrupción de consulta de medios
+
+Al crear diseños personalizados para componentes de Forms adaptable mediante **Editor universal**, debe definir un comportamiento adaptable mediante **puntos de interrupción de consultas de medios CSS**. Esto garantiza que los formularios se representen correctamente en diferentes dispositivos y tamaños de pantalla.
+
+**Puntos de interrupción recomendados (basados en los componentes principales de AEM)**
+
+| **Tipo de dispositivo** | **Punto de interrupción recomendado** |
+|-----------------|---------------------------|
+| **Escritorio** | `min-width: 1200px` |
+| **Tableta** | `min-width: 768px and max-width: 1199px` |
+| **Móvil** | `max-width: 767px` |
+
+**Puntos clave**
+
+- Utilice estos puntos de interrupción para controlar cómo los componentes cambian de tamaño, se apilan u ocultan en diferentes dispositivos.
+- Siga las directrices de diseño interactivo de su organización para obtener una experiencia de usuario coherente.
+- Pruebe los diseños en varios dispositivos y orientaciones para garantizar su uso y accesibilidad.
+
+```css
+/* Example: Stack form fields on smaller screens */
+@media (max-width: 767px) {
+  .custom-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+```
+
+>[!NOTE]
+>
+> El editor universal no proporciona una interfaz de usuario para definir un comportamiento interactivo. Todas las personalizaciones de diseño deben gestionarse mediante CSS.
+
+
 
 ## Resolución de problemas
 
@@ -393,7 +428,7 @@ El diseño de acordeón ahorra espacio al organizar el contenido en secciones co
 
 ### Problemas de prueba y validación
 
-+++Diferencias entre emulador y dispositivo real
++++Diferencias entre el emulador y el dispositivo real
 
 **Posibles causas:**
 
@@ -412,7 +447,7 @@ El diseño de acordeón ahorra espacio al organizar el contenido en secciones co
 
 ## Métricas de éxito de formularios adaptables
 
-+++Indicadores de rendimiento clave
++++Indicadores clave de rendimiento
 
 **Experiencia del usuario:**
 
@@ -430,7 +465,7 @@ El diseño de acordeón ahorra espacio al organizar el contenido en secciones co
 
 +++
 
-+++Lista de comprobación de prueba
++++Lista de comprobación de pruebas
 
 **Lista de comprobación previa a la publicación:**
 

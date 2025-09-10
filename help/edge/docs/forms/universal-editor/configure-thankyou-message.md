@@ -5,10 +5,10 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
-source-git-commit: ede73b19e4b50770f14ed52067c5fa04323b2ba4
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 100%
+source-wordcount: '1139'
+ht-degree: 99%
 
 ---
 
@@ -53,13 +53,19 @@ Los mensajes de agradecimiento funcionan mejor cuando:
 
 Abra el formulario adaptable en el editor universal y haga clic en el icono **Editar propiedades del formulario** de la barra de herramientas. Esto abre el cuadro de diálogo de propiedades del formulario completo.
 
+![Icono de propiedades de formulario](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. Ir a la configuración de agradecimiento**
 
 En el cuadro de diálogo Propiedades del formulario, seleccione la pestaña **Agradecimiento** para acceder a las opciones de configuración posteriores al envío.
 
+![Propiedades de formulario del editor universal](/help/forms/assets/ue-form-properties.png)
+
 **3. Configurar la visualización del mensaje**
 
-Seleccione **Mostrar mensaje** de las opciones disponibles. Esto activa el editor de contenido del mensaje con funciones de texto enriquecido.
+Seleccione **Mostrar mensaje** de las opciones disponibles.
+
+![gracias](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 **4. Crear el contenido del mensaje**
 
@@ -117,13 +123,19 @@ Las direcciones URL de redireccionamiento son óptimas para:
 
 Abra el formulario adaptable en el editor universal y haga clic en el icono **Editar propiedades del formulario** para abrir el cuadro de diálogo de configuración del formulario.
 
+![Icono de propiedades de formulario](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. Ir a la configuración de agradecimiento**
 
 Seleccione la pestaña **Agradecimiento** en el cuadro de diálogo Propiedades del formulario para acceder a las opciones de configuración de redireccionamiento.
 
+![Propiedades de formulario del editor universal](/help/forms/assets/ue-form-properties.png)
+
 **3. Habilitar funcionalidad de redireccionamiento**
 
 Elija **Redirigir a la dirección URL** de las opciones disponibles después del envío.
+
+![redireccionamiento](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
 
 **4. Configurar URL de destino**
 

@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2609'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2608'
+ht-degree: 96%
 
 ---
 
@@ -157,7 +157,10 @@ El archivo `fstab.yaml` conecta el repositorio de GitHub con el entorno de creac
 
    ```yaml
    mountpoints:
-     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     /: 
+     url: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     type: "markup" 
+     suffix: ".html" 
    ```
 
    **Reemplazar:**
@@ -184,9 +187,9 @@ El archivo `fstab.yaml` conecta el repositorio de GitHub con el entorno de creac
 
 **Validación:** confirme la conexión del repositorio de GitHub a AEM.
 
-    >[!NOTA]
-    >
->¿Tiene problemas de compilación? Consulte [Solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
+>[!NOTE]
+>
+> ¿Tiene problemas de compilación? Consulte [Solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).
 
 +++
 
@@ -258,7 +261,7 @@ El archivo `fstab.yaml` conecta el repositorio de GitHub con el entorno de creac
 
 +++
 
-+++Paso 5: Publicación del sitio
++++Paso 5: Publicar el sitio
 
 La publicación hace que el sitio esté disponible en Edge Delivery Services para su acceso global.
 
@@ -626,13 +629,13 @@ Las siguientes secciones le guiarán detalladamente por cada uno de estos pasos,
    El formulario ya está activo en:
 
    ```
-   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   https://<branch>--<repo>--<owner>.aem.live/content/<site-name>/
    ```
 
    **URL de ejemplo:**
 
    ```
-   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   https://main--my-forms-project--mycompany.aem.live/content/my-forms-project/
    ```
 
    ![Página de formulario activo](/help/edge/docs/forms/assets/publish-index-page.png)
@@ -661,7 +664,7 @@ Ahora que tiene un formulario en funcionamiento, puede:
 
 Un entorno de desarrollo local le permite realizar cambios y verlos instantáneamente sin pasar por el ciclo de publicación.
 
-+++Configure la CLI de AEM y el desarrollo local
++++Configurar la CLI de AEM y el desarrollo local
 
 1. **Instalación de la CLI de AEM**
 
@@ -759,7 +762,7 @@ Si ve &quot;No se puede resolver la ruta al módulo &#39;/scripts/lib-franklin.j
 
 +++
 
-+++Problemas de funcionalidad del formulario
++++Problemas de funcionalidad de formularios
 
 **Problema:** los envíos de formularios no funcionan
 

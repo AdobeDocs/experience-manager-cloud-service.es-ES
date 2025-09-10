@@ -6,10 +6,10 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 97%
+source-wordcount: '2390'
+ht-degree: 95%
 
 ---
 
@@ -112,11 +112,16 @@ La **Barra de herramientas del editor universal** proporciona acciones clave par
 
 **Para su primer formulario:**
 
-1. **Comenzar a generar** : agregar componentes mediante el botón **Añadir** (`a`)
-2. **Configurar campos**: seleccionar componentes y usar **Modo de propiedades** (`d`)
-3. **Probar el formulario**: usar **Modo de vista previa** (`p`) para interactuar con el formulario
-4. **Comprobar vista móvil**: cambiar a **Modo adaptable** para pruebas móviles
-5. **Activar**: hacer clic en **Publicar** cuando esté listo
+1. **Agregar un componente de formulario adaptable** - Inserte el componente `Adaptive Form` en una sección.
+2. **Comenzar a generar** : agregar componentes mediante el botón **Añadir** (`a`)
+3. **Configurar campos**: seleccionar componentes y usar **Modo de propiedades** (`d`)
+4. **Probar el formulario**: usar **Modo de vista previa** (`p`) para interactuar con el formulario
+5. **Comprobar vista móvil**: cambiar a **Modo adaptable** para pruebas móviles
+6. **Activar**: hacer clic en **Publicar** cuando esté listo
+
+>[!NOTE]
+>
+> Para conocer los pasos detallados para crear formularios en el editor universal, consulte [Crear y publicar Forms adaptable con Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 **Puntos de comprobación de validación:**
 
@@ -218,7 +223,7 @@ La **Barra de herramientas del editor universal** contiene las herramientas prin
 
 #### **Propiedades del formulario AEM**
 
-**Propósito:** configurar las opciones de nivel de formulario, como el modelo de datos de formulario (FDM) y las fechas de publicación\
+**Propósito:** configure las opciones de nivel de formulario, como el modelo de datos de formulario (FDM), la configuración de acciones de envío y las fechas de publicación\
 **Cuándo se debe usar:** configuración de integraciones de datos, programación de publicaciones
 
 ![Propiedades del formulario](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
@@ -264,7 +269,7 @@ El panel Propiedades del formulario incluye las siguientes secciones:
 
 El **Panel de propiedades** (lado derecho) es el centro de control para generar y configurar formularios. Cambia en función de lo que seleccione y proporciona diferentes herramientas para diferentes tareas.
 
-![Panel Propiedades](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+![Panel Propiedades](/help/edge/docs/forms/universal-editor/assets/text-properties-ue.png)
 
 ### **Herramientas de creación de formularios básicos**
 

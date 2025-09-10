@@ -6,8 +6,8 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: publicar formularios, Edge Delivery Services, configuración de formulario, CORS, filtro de referente
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: ht
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Cada fase se basa en la anterior para garantizar una implementación segura y fu
 1. **Acceder al formulario**: abrir el formulario adaptable en el editor universal
 2. **Comenzar a publicar**: hacer clic en el icono **Publicar** de la barra de herramientas
 
-   ![Haga clic en Publicar](/help/forms/assets/publish-icon-eds-form.png)
+   ![Haga clic en Publicar](/help/edge/docs/forms/universal-editor/assets/publish-form-ue.png)
 
 +++
 
@@ -58,12 +58,12 @@ Cada fase se basa en la anterior para garantizar una implementación segura y fu
 
 1. **Revisar recursos de publicación**: el sistema muestra todos los recursos que se están publicando, incluido el formulario
 
-   ![Publicación al hacer clic](/help/forms/assets/on-click-publish.png)
+   ![Publicación al hacer clic](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-review.png)
 
 2. **Confirmar publicación**: hacer clic en **Publicar** para continuar
 3. **Verificar que la oeperación es correcta**: buscar el mensaje de confirmación
 
-   ![Éxito de publicación](/help/forms/assets/publish-success.png)
+   ![Éxito de publicación](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-success.png)
 
 +++
 
@@ -72,7 +72,7 @@ Cada fase se basa en la anterior para garantizar una implementación segura y fu
 
 **Comprobar estado**: volver a hacer clic en el icono **Publicar** para ver el estado actual
 
-![Estado de la publicación](/help/forms/assets/publish-status.png)
+![Estado de la publicación](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-validate.png)
 
 **Punto de comprobación de validación:**
 
@@ -91,7 +91,7 @@ Cada fase se basa en la anterior para garantizar una implementación segura y fu
 2. Hacer clic en el menú de tres puntos (⋯) situado en la esquina superior derecha
 3. Seleccionar **Cancelar la publicación**
 
-![Cancelar publicación del formulario](/help/forms/assets/unpublish--form.png)
+![Cancelar publicación del formulario](/help/edge/docs/forms/universal-editor/assets/unpublish-ue.png)
 
 +++
 

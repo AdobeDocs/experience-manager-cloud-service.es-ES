@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: rellenar previamente un formulario adaptable, edge delivery services con formularios adaptables, autorrellenar formularios adaptables
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '1787'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1803'
+ht-degree: 94%
 
 ---
 
@@ -156,6 +156,11 @@ El editor universal proporciona dos opciones de servicio de rellenado previo:
    ![Plantilla de Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
 
 1. Hacer clic en **Crear** para abrir el asistente de **Crear formulario**
+
+   >
+   >
+   > Puede configurar el origen de datos desde la ficha **Datos** o posterior editando las propiedades del formulario.
+
 1. Especifique los detalles del formulario:
 
    - **Nombre**: escribir un nombre descriptivo para el formulario
@@ -202,7 +207,7 @@ Los elementos de formulario del FDM aparecen en la pestaña **Fuente de datos** 
 
 +++
 
-+++Fase 3: Configuración del servicio de rellenado previo
++++Fase 3: Configuración del servicio de relleno previo
 
 ### Paso 6: Habilitar las extensiones necesarias
 
@@ -241,7 +246,7 @@ Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 
 +++
 
-+++Fase 4: Prueba de la configuración de rellenado previo
++++Fase 4: Prueba De La Configuración De Relleno Previo
 
 ### Paso 8: Previsualizar y probar
 
@@ -250,7 +255,7 @@ Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 3. Elegir **Vista previa como HTML**
 4. Pruebe el rellenado previo añadiendo parámetros a la URL:
 
-   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
+   `https://your-preview-url.com?<bindreferencefield>=<value>`
 
    **Ejemplo:**
 
@@ -365,7 +370,7 @@ Las siguientes URL son solo ilustrativas y no funcionarán tal cual. Reemplace e
 
 +++
 
-+++Optimización del rendimiento
++++Optimización de rendimiento
 
 - **Minimizar el volumen de datos**: rellenar previamente solo los campos necesarios
 - **Usar almacenamiento en caché**: configurar el almacenamiento en caché apropiado para los datos a los que se accede con frecuencia
@@ -383,7 +388,7 @@ Las siguientes URL son solo ilustrativas y no funcionarán tal cual. Reemplace e
 
 +++
 
-+++Directrices sobre la experiencia del usuario
++++Directrices de experiencia del usuario
 
 - **Proporcionar comentarios**: mostrar indicadores de carga durante la captura de datos
 - **Controlar correctamente los errores**: mostrar mensajes de error útiles
@@ -394,13 +399,13 @@ Las siguientes URL son solo ilustrativas y no funcionarán tal cual. Reemplace e
 
 ## Preguntas frecuentes
 
-+++¿Cómo puedo probar si el rellenado previo funciona correctamente?
++++¿Cómo se comprueba si el relleno previo funciona correctamente?
 
 Obtenga una vista previa del formulario y anexe parámetros de rellenado previo a la URL con este formato: `?<bindreferencefield>=<value>`. Asegúrese de que el campo tenga un `bindRef` válido que coincida con la estructura de datos. Utilice las herramientas para desarrolladores de explorador para inspeccionar las solicitudes de red y comprobar que los datos se recuperan correctamente.
 
 +++
 
-+++¿Qué formatos de datos se admiten para rellenar previamente formularios adaptables?
++++¿Qué formatos de datos se admiten para rellenar previamente Forms adaptable?
 
 Los formularios adaptables admiten varios formatos según el modelo de formulario:
 
@@ -429,7 +434,7 @@ Puede configurar un servicio de rellenado previo principal por formulario. Sin e
 
 +++
 
-+++¿Cómo manipulo la autenticación para los servicios de rellenado previo?
++++¿Cómo administro la autenticación para los servicios de relleno previo?
 
 La autenticación depende de la configuración de la fuente de datos. Para el rellenado previo basado en FDM, configure la autenticación en la configuración de la fuente de datos. Para rellenar previamente borradores, los usuarios suelen tener que iniciar sesión para acceder a los borradores guardados.
 
