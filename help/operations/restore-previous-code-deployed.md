@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 650ef846b469337c96e728277af02ca890e85117
+source-git-commit: 519b1ec43f28f27809c727c2519f646c27ab646e
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '523'
 ht-degree: 3%
 
 ---
@@ -28,17 +28,16 @@ Simplemente abre el menú ![Icono de más o el icono de menú de puntos suspensi
 >
 >![Versión de código Source en uso](/help/operations/assets/environments-view-details-sourcecodeversion.png)
 
-La característica **Restaurar código anterior implementado** solo está disponible cuando la condición **every** que se muestra a continuación es verdadera:
+**Restaurar código anterior implementado** solo está disponible cuando se cumplen las siguientes condiciones:
 
 * Solo se permite una restauración por cada ejecución correcta de la canalización; para restaurar de nuevo, complete otra ejecución correcta de la canalización.
 * Usted tiene permisos de **Environment Restore Create**. Para obtener más información sobre la administración de permisos, consulte [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md).
 * Su organización está inscrita en el programa beta y el indicador de funcionalidad está activado.
 * El programa se ejecuta en AEM as a Cloud Service.
-* La restauración del código fuente anterior se puede realizar en un entorno `Development`, `Stage` o `Specialized Testng Environment`.
 * La última canalización para ese entorno se ejecutó correctamente hace **menos de 30 días**.
 * El estado del entorno es *En ejecución* y no hay ninguna canalización en curso.
+* **La restauración del código anterior implementado** se puede realizar en un entorno `Development`, `Stage` o `Specialized Testng Environment`.
 
-Restaurar El entorno elegido es un `Development`, un escenario o un entorno de prueba especializado.
 Si alguna comprobación falla, Cloud Manager abre el siguiente cuadro de diálogo que enumera una o más condiciones incumplidas y deshabilita **Confirm**, lo que impide la restauración.
 
 ![Restaurar el código anterior implementado en el cuadro de diálogo](/help/operations/assets/restore-previous-code-deployment-not-allowed.png).
