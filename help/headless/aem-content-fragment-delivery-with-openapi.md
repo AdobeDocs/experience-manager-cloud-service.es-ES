@@ -4,9 +4,9 @@ description: Obtenga información acerca de la entrega de fragmentos de contenid
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
+source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '607'
 ht-degree: 2%
 
 ---
@@ -81,6 +81,14 @@ Esta API no tiene en cuenta los orígenes permitidos de CORS definidos en el lad
 La API permite nuevas solicitudes a una velocidad de hasta 200 solicitudes por segundo, por entorno.
 
 Una vez superado este límite, la API empieza a enviar [429 respuestas de error](https://www.rfc-editor.org/rfc/rfc6585#section-4). Estos errores deben ser controlados por cualquier aplicación cliente, y las solicitudes fallidas se deben reintentar después de un reintento de retroceso exponencial. La respuesta HTTP incluye un encabezado específico, `Retry-After`, que indica al cliente cuánto tiempo debe esperar antes de volver a enviar la solicitud.
+
+## Solicitudes autenticadas {#authenticated-requests}
+
+La compatibilidad con solicitudes autenticadas se puede implementar con la [clave Edge de CDN de AEM](/help/implementing/dispatcher/cdn-credentials-authentication.md). El uso de la clave Edge de CDN de AEM le permite confiar en la CDN de AEM y asegurarse de que solo las solicitudes específicas puedan acceder a la API, en función del encabezado de clave de Edge proporcionado.
+
+>[!NOTE]
+>
+>Actualmente no se admite la autorización basada en las ACL específicas del repositorio.
 
 <!-- 
 ## Limitations {#limitations}
