@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 15f2096221d7c521d6e69fb9e425368e869dea09
+source-git-commit: 365e700b93d52448d1be8c3e0e6eb2185c605b18
 workflow-type: tm+mt
 source-wordcount: '6599'
 ht-degree: 98%
@@ -232,7 +232,7 @@ ht-degree: 98%
       + [Notas de la versión de Workfront para el conector mejorado de Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + Notas de la versión de “Generar variaciones” {#generate-variations}
       + [Notas de la versión actual para generar variaciones](/help/generative-ai/release-notes-generate-variations.md)
-   + Notas de la versión del editor universal  {#univeral-editor}
+   + Notas de la versión del editor universal  {#universal-editor}
       + [Notas de la versión actual del editor universal](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [Notas de la versión 2025.08.22](/help/release-notes/universal-editor/2025/2025-08-22.md)
@@ -524,7 +524,7 @@ ht-degree: 98%
       + [Exportación de fragmentos de contenido a Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integración con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=es)
+      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetría operativa para AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Recursos {#assets}
    + [Información general y novedades](/help/assets/overview.md)

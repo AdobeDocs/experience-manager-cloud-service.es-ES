@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 24%
+source-wordcount: '1854'
+ht-degree: 20%
 
 ---
 
@@ -89,15 +89,9 @@ Muestra la organización en la que ha iniciado sesión. Seleccione esta opción 
 
 ![Indicador de organización](assets/organization.png)
 
-#### Soluciones {#solutions}
+#### Centro de ayuda {#help}
 
-Al tocar o hacer clic en el conmutador de soluciones, puede ir rápidamente a otras soluciones de Experience Cloud.
-
-![Conmutador de soluciones](assets/solutions.png)
-
-#### Ayuda {#help}
-
-El icono de ayuda proporciona acceso rápido a los recursos de aprendizaje y asistencia.
+El icono del centro de ayuda proporciona acceso rápido a los recursos de aprendizaje y asistencia.
 
 ![Ayuda](assets/help.png)
 
@@ -107,9 +101,15 @@ Este icono tiene el número de [notificaciones](/help/implementing/cloud-manager
 
 ![Notificaciones](assets/notifications.png)
 
-#### Propiedades del usuario {#user-properties}
+#### Aplicaciones {#solutions}
 
-Seleccione el icono que representa a su usuario para acceder a la configuración. Si no tiene una imagen de usuario configurada, se le asigna un icono de forma aleatoria.
+Al tocar o hacer clic en el conmutador de aplicación, puede ir rápidamente a otras soluciones de Experience Cloud.
+
+![Conmutador de aplicación](assets/solutions.png)
+
+#### Cuenta {#user-properties}
+
+Seleccione el icono que representa al usuario para acceder a la configuración de la cuenta. Si no tiene una imagen de usuario configurada, se le asigna un icono de forma aleatoria.
 
 ![Propiedades del usuario](assets/user-properties.png)
 
@@ -135,6 +135,8 @@ En la página de inicio puede introducir la dirección URL del sitio que desea e
 >
 >Cualquier página que desee editar con el editor universal debe estar [instrumentada para admitir el editor universal](/help/implementing/universal-editor/getting-started.md).
 
+La sección **Vínculos rápidos** proporciona recursos de ayuda y la sección **Recientes** proporciona vínculos a páginas que ha abierto recientemente con el Editor universal.
+
 #### Barra de ubicación {#location-bar}
 
 La barra de ubicación muestra la dirección de la página que está editando. Seleccione para introducir la dirección de otra página que desea editar.
@@ -149,21 +151,32 @@ La barra de ubicación muestra la dirección de la página que está editando. S
 >
 >Cualquier página que desee editar con el editor universal debe estar [instrumentada para admitir el editor universal](/help/implementing/universal-editor/getting-started.md).
 
-#### Configuración del encabezado de autenticación {#authentication-settings}
+#### Deshacer y rehacer {#undo-redo}
 
-Seleccione el icono de configuración del encabezado de autenticación si necesita [establecer un encabezado de autenticación personalizado con fines de desarrollo local](/help/implementing/universal-editor/developer-overview.md#auth-header).
+Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edición en el editor. Consulte el documento [Creación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) para obtener más información.
+
+![Icono Deshacer](assets/undo.png)
+![Icono de rehacer](assets/redo.png)
+
+>[!TIP]
+>
+>Utilice la tecla de acceso directo `Command-Z` o `Shift-Command-Z` para deshacer o rehacer, respectivamente.
+
+#### Encabezados de autenticación {#authentication-settings}
+
+Seleccione el icono de encabezados de autenticación si necesita [establecer un encabezado de autenticación personalizado con fines de desarrollo local](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Botón de configuración del encabezado de autenticación](assets/authentication-header-settings.png)
 
-#### Configuración del emulador {#emulator}
+#### Modo adaptable {#emulator}
 
-Seleccione el icono de emulación para definir cómo el editor universal procesa la página.
+Seleccione el icono de modo interactivo para definir cómo el editor universal procesa la página.
 
-![Icono Emulador](assets/emulator.png)
+![Icono de modo interactivo](assets/emulator.png)
 
-Al tocar o hacer clic en el icono de emulación, se muestran las opciones.
+Al tocar o hacer clic en el icono de modo interactivo, se muestran las opciones.
 
-![Opciones de emulación](assets/emulation-options.png)
+![Opciones de modo interactivo](assets/emulation-options.png)
 
 De forma predeterminada, el editor se abre en un diseño de escritorio en el que el explorador define automáticamente la altura y la anchura.
 
@@ -173,7 +186,7 @@ En el editor universal, también puede emular un dispositivo móvil, además de 
 * Definir la anchura y la altura
 * Cambiar la orientación
 
-#### Modo de vista previa {#preview-mode}
+#### Vista previa {#preview-mode}
 
 En el modo de vista previa, la página se procesa en el editor tal como se vería en el servicio publicado. Esto permite al autor del contenido navegar por el contenido haciendo clic en vínculos, etc.
 

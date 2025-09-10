@@ -4,9 +4,9 @@ description: El editor de páginas sigue siendo compatible con Adobe, pero el ed
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 El editor de páginas sigue siendo compatible con Adobe, pero el editor universal ofrece posibilidades interesantes para sus nuevos proyectos.
 
-## Fondo {#background}
+## Información general {#background}
 
 Adobe presentó [Universal Editor](/help/implementing/universal-editor/introduction.md) en 2024 como un editor optimizado que adopta un enfoque de desarrollo moderno basado en Javascript. El editor universal es la visión de Adobe para una experiencia de creación de contenido visual fluida y ampliable.
 
@@ -63,7 +63,7 @@ Debido a que la brecha entre las características de los dos editores se está r
 | Cortar/copiar-pegar bloque | [!BADGE Disponible]{type=Positive} |  | [!BADGE No disponible]{type=Negative} | Planeado |
 | Aplicar estilos | [!BADGE Disponible]{type=Positive} | Los estilos se pueden aplicar a los componentes mediante [el sistema de estilos.](/help/sites-cloud/authoring/page-editor/style-system.md) | [!BADGE Disponible]{type=Positive} | Los estilos se pueden aplicar mediante propiedades de componente normal (o fragmento de contenido). El mismo selector de estilo no está disponible en el editor universal, pero con un widget de selección múltiple se puede lograr un UX muy similar. |
 | Aplicar diseño | [!BADGE Disponible]{type=Positive} | Los sitios deben implementar [AEM Responsive Grid](/help/implementing/developing/introduction/responsive-design.md) para permitir a los autores cambiar el tamaño de los componentes en tres puntos de interrupción predefinidos. | [!BADGE Disponible]{type=Positive} | Los diseños se pueden aplicar mediante propiedades de componente normales (o fragmento de contenido), pero la cuadrícula adaptable no es compatible. |
-| Deshacer-Rehacer | [!BADGE Disponible]{type=Positive} |  | [!BADGE No disponible]{type=Negative} | Planeado |
+| Deshacer-Rehacer | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | Publicar (también para previsualizar) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | [Iniciar flujo de trabajo](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Disponible como extensión |
 | Comentario | [!BADGE Disponible]{type=Positive} | Usando [anotaciones](/help/sites-cloud/authoring/page-editor/annotations.md) | [!BADGE No disponible]{type=Negative} | Planeado |

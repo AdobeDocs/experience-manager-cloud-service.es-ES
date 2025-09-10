@@ -4,10 +4,10 @@ description: Estas son las notas de la versión 2025.09.04 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 0c380e0faca1db0966d22d056dd1f824a731a7bc
+source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 71%
+source-wordcount: '215'
+ht-degree: 52%
 
 ---
 
@@ -23,13 +23,9 @@ Estas son las notas de la versión del editor universal del 4 de septiembre de 2
 ## Novedades {#what-is-new}
 
 * Copiar y pegar está disponible para [usuarios que lo adoptaron por primera vez](#copy-paste)
-
-### Deshacer/Rehacer {#undo-redo}
-
-Deshacer y rehacer ya está disponible para los autores de contenido del editor universal.
-
-* Esto incluye las ediciones realizadas en el contexto y las realizadas a través del panel Propiedades, así como la adición (o duplicación), el movimiento y la eliminación de bloques.
-* Deshacer y rehacer está limitado a la sesión actual del explorador.
+* [Deshacer y rehacer](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) ya está disponible para los autores de contenido.
+   * Se puede deshacer y rehacer para ediciones realizadas en contexto, ediciones realizadas a través del panel Propiedades, así como añadir, duplicar, mover y eliminar bloques.
+   * Deshacer y rehacer está limitado a la sesión actual del explorador.
 
 ## Funciones de adopción anticipada {#early-adopter}
 
@@ -47,8 +43,3 @@ Los autores de contenido ya pueden copiar y pegar componentes dentro de la misma
 
 * El estilo de la barra de herramientas del editor se ha actualizado para alinearse mejor con el próximo RTE nuevo.
 * Se han restaurado los filtros del cuadro de diálogo del selector de recursos.
-
-## Componentes obsoletos {#deprecations}
-
-* Los componentes `text-input` y `text-area` quedaron oficialmente obsoletos con la [versión 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
-   * En `model-definition.json`, utilice el componente de texto para crear entradas de texto para el panel Propiedades.

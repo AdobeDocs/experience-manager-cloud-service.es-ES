@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2319'
 ht-degree: 11%
 
 ---
@@ -172,13 +172,27 @@ El componente seleccionado se ha eliminado.
 
    ![Reordenación de componentes](assets/ue-reordering-components.png)
 
-1. El componente arrastrado se vuelve gris en el árbol de contenido, mientras que el punto de inserción se representa mediante una línea azul. Suelte el componente para colocarlo en su nueva ubicación.
+1. El componente arrastrado aparece atenuado en el árbol de contenido, mientras que el punto de inserción se representa mediante una línea azul. Suelte el componente para colocarlo en su nueva ubicación.
 
 Los componentes se reordenan tanto en el árbol de contenido como en el editor.
 
 >[!NOTE]
 >
 >Los componentes solo se pueden mover entre contenedores si el contenedor de destino [filtro de componentes](/help/implementing/universal-editor/filtering.md) permite el componente seleccionado.
+
+### Deshacer y rehacer {#undo-redo}
+
+Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edición en el editor.
+
+![Icono Deshacer](assets/undo.png)
+![Icono de rehacer](assets/redo.png)
+
+* Se puede deshacer y rehacer para ediciones realizadas en contexto, ediciones realizadas a través del panel Propiedades, así como añadir, duplicar, mover y eliminar bloques.
+* Deshacer y rehacer está limitado a la sesión actual del explorador.
+
+>[!TIP]
+>
+>Utilice la tecla de acceso directo `Command-Z` o `Shift-Command-Z` para deshacer o rehacer, respectivamente.
 
 ## Vista previa del contenido {#previewing-content}
 
