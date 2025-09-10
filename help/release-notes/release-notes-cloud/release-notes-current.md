@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1961'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.8.0) fue el viernes, 28 de agosto de 2025. La próxima versión con funcionalidades (2025.9.0) se planificó para el viernes, 25 de septiembre de 2025.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.8.0) fue el 28 de agosto de 2025. La próxima versión con funcionalidades (2025.9.0) se planificó para el 25 de septiembre de 2025.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -50,7 +50,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## Asistente de IA en AEM {#AI-assistant}
 
-El [Asistente de IA](/help/implementing/cloud-manager/ai-assistant-in-aem.md) para AEM ofrece una interfaz conversacional diseñada para que obtengas respuestas instantáneas a tus preguntas relacionadas con el producto de AEM (*disponible para todos los usuarios*) y para automatizar la creación de tickets de soporte (*disponible para los administradores de soporte*). Está directamente incrustado en AEM y es accesible desde AEM Experience Hub, Cloud Manager y la interfaz de usuario del autor.
+El [Asistente de IA](/help/implementing/cloud-manager/ai-assistant-in-aem.md) para AEM ofrece una interfaz conversacional diseñada para que obtenga respuestas instantáneas a sus preguntas relacionadas con el producto de AEM (*disponible para todos los usuarios*) y para automatizar la creación de tickets de asistencia (*disponible para los administradores de asistencia*). Está directamente incrustado en AEM y es accesible desde AEM Experience Hub, Cloud Manager y la interfaz de usuario del autor.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -73,7 +73,7 @@ Content Hub ahora acelera la detección de los recursos que necesita. Con la nue
 
 **DM compatible con SEO con URL de OpenAPI**
 
-Cree URL mnemónicas para la entrega de recursos en DM con OpenAPI y sustituya los UUID largos generados por el sistema con identificadores cortos y legibles. Esto hace que los vínculos sean fáciles de usar y estén mejor alineados con su marca o campañas. Las URL mnemónicas se resuelven automáticamente en el UUID del recurso original durante la ejecución sin interrumpir los flujos de trabajo existentes.
+Cree URL mnemónicas para la entrega de recursos en DM con OpenAPI y sustituya los UUID largos generados por el sistema con identificadores cortos y legibles. Esto hace que los vínculos sean compatibles con SEO y estén mejor alineados con su marca o campañas. Las URL mnemónicas se resuelven automáticamente en el UUID del recurso original durante la ejecución sin interrumpir los flujos de trabajo existentes.
 
 >[!NOTE]
 >
@@ -85,9 +85,9 @@ Cree URL mnemónicas para la entrega de recursos en DM con OpenAPI y sustituya l
 
 **Componente de entrada de fecha y hora**
 
-Ya está disponible el componente [Fecha y hora](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component), que permite a los usuarios seleccionar la fecha y la hora mediante una interfaz de calendario y reloj, o introduciendo valores manualmente en un formato compatible.
+Ahora hay disponible un componente [Fecha y hora](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component), que permite a los usuarios seleccionar tanto la fecha como la hora mediante una interfaz de calendario y reloj, o introduciendo manualmente los valores en un formato compatible.
 
-**Control de errores mejorado para cargas de archivos**
+**Tratamiento de errores mejorado para cargas de archivos**
 
 El [componente Archivo adjunto](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) ahora valida automáticamente el tipo de archivo cargado con la lista de permitidos. Si un usuario carga un archivo en un formato no compatible, el formulario muestra un error durante el envío. El componente también comprueba el contenido del archivo para validar su tipo, lo que mejora la seguridad general del formulario.
 
@@ -95,12 +95,12 @@ El [componente Archivo adjunto](https://experienceleague.adobe.com/es/docs/exper
 
 Cuando una [acción de envío personalizada](/help/forms/custom-submit-action-troubleshooting.md) encuentra un error no controlado, el sistema devuelve el código de error 502. Esto ayuda a identificar que el problema está relacionado con la acción de envío personalizada, lo que facilita la depuración.
 
-**Excluyendo campos ocultos del documento de registro**
+**Excluir los campos ocultos del documento de registro**
 
 Una nueva propiedad permite la exclusión de campos ocultos del [documento de registro](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings). De forma predeterminada, esta opción no está seleccionada y se aplica a todos los campos de formulario.
 
 
-### Funciones previas al lanzamiento en AEM Forms
+### Funciones de la versión preliminar de AEM Forms
 
 **Generar y sincronizar representaciones AFP**
 
@@ -108,16 +108,16 @@ Ahora puede usar la [API de comunicación de AEM Forms](/help/forms/document-gen
 
 **Mejoras en el Editor de reglas**
 
-* [Validar método en la lista de funciones](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): los métodos validate y reset ahora admiten la ejecución en los niveles de panel, campo y formulario. Anteriormente, solo eran compatibles en el nivel de formulario.
-* [Compatibilidad moderna con JavaScript](/help/forms/rule-editor-core-components-difference-tables.md): Se ha agregado compatibilidad con ECMAScript 2019 y funciones posteriores para funciones personalizadas, lo que le permite escribir código más eficiente, modular y reutilizable.
-* [Descargar opción DoR en el editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): se ha agregado una función para descargar el documento de registro (DoR) como una opción predeterminada (OOTB) en el editor de reglas.
+* [Método Validar en la lista de funciones](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): los métodos validar y restablecer ahora admiten la ejecución en los niveles de panel, campo y formulario. Anteriormente, solo eran compatibles en el nivel de formulario.
+* [Compatibilidad moderna con JavaScript](/help/forms/rule-editor-core-components-difference-tables.md): Se ha añadido compatibilidad con ECMAScript 2019 y funciones posteriores para funciones personalizadas, lo que le permite escribir código más eficiente, modular y reutilizable.
+* [Descargar opción DoR en el editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): se ha añadido una función para descargar el documento de registro (DoR) como una opción predeterminada (OOTB) en el editor de reglas.
 
   ![Documento de registro](/help/forms/assets/document-of-record-rn.gif)
 
 * [Variables dinámicas en el editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): ahora puede usar variables dinámicas (temporales) en el editor de reglas para tener más flexibilidad a la hora de definir condiciones y acciones. Los campos ocultos ya no son necesarios para almacenar valores temporales.
-* [Compatibilidad con reglas basadas en eventos personalizados](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): Ahora puede definir eventos personalizados y reglas de déclencheur basadas en esos eventos.
+* [Compatibilidad con reglas basadas en eventos personalizados](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): Ahora puede definir eventos personalizados y activar reglas basadas en esos eventos.
 * [Reglas de panel repetible según el contexto](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): en los paneles repetibles, las reglas ahora se ejecutan según el contexto, en lugar de aplicarse únicamente a la última instancia del panel.
-* [Reglas activadas por los parámetros](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): el Editor de reglas ahora admite la ejecución de reglas en función de parámetros de consulta, parámetros de UTM o parámetros de explorador.
+* [Reglas activadas por parámetros](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): el Editor de reglas ahora admite la ejecución de reglas en función de parámetros de consulta, parámetros de UTM o parámetros de explorador.
 * [Funciones personalizadas específicas de formularios](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): Edge Delivery Services Forms ahora admite scripts de funciones personalizadas específicos de formularios, lo que proporciona una mayor flexibilidad para administrar la lógica reutilizable.
 * [Importaciones estáticas para funciones personalizadas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): el Editor de reglas del Editor universal ahora admite importaciones estáticas, lo que permite a los desarrolladores organizar, compartir y reutilizar funciones en varios formularios.
 
@@ -129,11 +129,11 @@ En estas notas de la versión se indican las innovaciones de ofrecidas en la ver
 
 **Componente de firma manuscrita**
 
-Ahora puede usar el [componente Firma manuscrita](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) para ayudar a los usuarios a agregar sus firmas a un formulario, como en un formulario de acuerdo. El componente permite a los usuarios dibujar su firma directamente dentro del formulario con un ratón, un lápiz o una pantalla táctil.
+Ahora puede usar el [componente de Firma manuscrita](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) para ayudar a los usuarios a añadir sus firmas a un formulario, como en un formulario de acuerdo. El componente permite a los usuarios dibujar su firma directamente dentro del formulario con un ratón, un lápiz o una pantalla táctil.
 
 **Integración directa de API en el editor de reglas**
 
-Los Forms adaptables ahora admiten [integración directa de API](/help/forms/api-integration-in-rule-editor.md) en el Editor de reglas visuales sin requerir un modelo de datos de formulario. Los autores pueden configurar las API mediante una importación de URL o cURL, asignar parámetros de entrada/salida y proteger las llamadas con autenticación.
+Los Formularios adaptables ahora admiten [integración directa de API](/help/forms/api-integration-in-rule-editor.md) en el Editor de reglas visuales sin requerir un modelo de datos de formulario. Los autores pueden configurar las API mediante una importación de URL o cURL, asignar parámetros de entrada/salida y proteger las llamadas con autenticación.
 
 <!--
 **Forms Optimization opportunities**
@@ -159,10 +159,10 @@ La compilación predeterminada de JavaScript de la biblioteca del lado del clien
 
 ### Próximas obsolescencias de la API de Java {#java-api-deprecation}
 
-Varias API obsoletas pretenden eliminarse el 31 de agosto, por lo que ya no se debe hacer referencia a ellas. A principios de septiembre, las notificaciones del Centro de acciones se enviarán si se detecta uso de la API y, después del 25 de septiembre, aparecerán avisos durante las compilaciones de Cloud Manager para reforzar la importancia de eliminar el uso. Consulte el [artículo en desuso](/help/release-notes/deprecated-removed-features.md#aem-apis) para obtener información detallada, pero para su comodidad, estas API se enumeran a continuación:
+Varias API obsoletas pretenden eliminarse el 31 de agosto, por lo que ya no se debe hacer referencia a ellas. A principios de septiembre, las notificaciones del Centro de acciones se enviarán si se detecta uso de la API y, después del 25 de septiembre, aparecerán avisos durante las compilaciones de Cloud Manager para reforzar la importancia de eliminar el uso. Consulte el [artículo sobre obsolescencia](/help/release-notes/deprecated-removed-features.md#aem-apis) para obtener más detalles, pero, para mayor comodidad, estas API se enumeran a continuación:
 
 <details>
-  <summary>Amplíe para ver las obsolescencias de la API de Java</summary>
+  <summary>Expandir para ver las funciones obsoletas de la API de Java</summary>
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -204,14 +204,14 @@ Nota: La versión del tiempo de ejecución es independiente de la versión de co
 
 Como se indica en las notas de la versión de abril, los registros Java de AEM deben seguir un formato estándar para garantizar una monitorización de confianza en todos los entornos de clientes. Ya no se admiten las configuraciones de registro personalizadas, como los cambios en el formato de los registros, archivos de salida o niveles de registro predeterminados. Los registros deben permanecer dirigidos a los archivos predeterminados y se deben conservar los niveles de registro predeterminados para el código de producto de AEM. Consulte todos los detalles en el [Artículo de registro](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-A partir del **25 de septiembre**, se omitirán todas las invalidaciones de registro personalizadas no admitidas. Según nuestro análisis, la mayoría de los clientes no se verán afectados y Adobe se pondrá en contacto directamente con cualquier cliente cuya configuración actual pueda verse afectada.
+A partir del **25 de septiembre**, se ignorarán todas las modificaciones de registro personalizadas no compatibles. Según nuestro análisis, la mayoría de los clientes no se verán afectados y Adobe se pondrá en contacto directamente con cualquier cliente cuya configuración actual pueda verse afectada.
 
 Revise y actualice cualquier proceso descendente que dependa del comportamiento de registro personalizado. Por ejemplo:
 
 * Si el sistema de reenvío de registros espera un formato de registro personalizado, es posible que tenga que ajustar las reglas de ingesta.
 * Si anteriormente ha reducido los detalles de los registros cambiando los niveles de registro, tenga en cuenta que restablecer los niveles predeterminados podría aumentar el volumen del registro.
 
-### Informática Edge (programa Beta) {#edge-computing}
+### Computación de Edge (programa beta) {#edge-computing}
 
 La computación de Edge le permite ejecutar JavaScript en la capa de CDN, lo que acerca el procesamiento de datos al usuario final. Esto reduce la latencia y permite experiencias dinámicas y adaptables en Edge.
 
@@ -220,7 +220,7 @@ Los casos de uso comunes incluyen los siguientes:
 * Autenticación de usuarios con un proveedor de identidad antes de conceder acceso al contenido
 * Personalización de contenido en función de la geolocalización, el tipo de dispositivo o los atributos del usuario
 * Actuación como middleware entre la CDN y su origen
-* Volver a dar formato a las respuestas de API de terceros (y tal vez agregar varias respuestas de API) antes de enviarlas al explorador
+* Modificar el formato de las respuestas de API de terceros (y tal vez añadir las respuestas de varias API) antes de enviarlas al explorador
 * Composición y muestra de HTML procesado por el servidor en Edge con contenido reunido de varios backend
 * Exposición de un servidor MCP para LLM como ChatGPT y Claude para acceder a herramientas personalizadas
 
@@ -230,7 +230,7 @@ Tenemos un número limitado de oportunidades disponibles para el envío de publi
 
 La CDN administrada por Adobe ofrece opciones de configuración flexibles, tal como se describe en el [artículo de canalizaciones de configuración](/help/operations/config-pipeline.md#configurations). 
 
-Ahora en la versión beta, puede implementar una canalización de configuración para funciones que incluyen selectores de origen de CDN, transformaciones de respuesta y solicitud, reenvío de registros de CDN y más. Póngase en contacto con [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) con los detalles de su caso de uso.
+Ahora en versión Beta, puede implementar una canalización de configuración para funciones que incluyan selectores de origen de CDN, transformaciones de respuesta y solicitud, reenvío de registros de CDN, etc. Póngase en contacto con [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) con los detalles de su caso de uso.
 
 ### Instantáneas para los RDE (programa Alpha) {#rde-snapshot-program}
 
