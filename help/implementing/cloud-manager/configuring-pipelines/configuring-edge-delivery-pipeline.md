@@ -9,9 +9,9 @@ hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: dbd4ef8d782c9d05e50cab7479adbbc16d6a247d
+source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '518'
 ht-degree: 4%
 
 ---
@@ -22,13 +22,13 @@ Obtenga información sobre cómo configurar canalizaciones de Edge Delivery para
 
 Un usuario debe tener la función **[Administrador de implementación](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** para configurar las canalizaciones de producción.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >No se puede configurar una canalización de Edge Delivery hasta que se haya producido lo siguiente:
 >
->* Se crea un programa que contiene un sitio de Edge Delivery Services y un dominio asignado. De lo contrario, la opción **Agregar canalización de Edge Delivery** aparece deshabilitada en la interfaz de usuario y una información de objeto explica los requisitos que faltan.
->* El repositorio de Git tiene al menos una rama.
->* Se crean los entornos de producción y ensayo.
+>* Se crea un programa que contiene un sitio de Edge Delivery Services y un dominio asignado. De lo contrario, la opción **Agregar canalización de Edge Delivery** aparece deshabilitada en la interfaz de usuario y una información de objeto explica los requisitos que faltan. Ver [Crear un sitio de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+>* El repositorio de Git tiene al menos una rama. Ver [Administrar repositorios en Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+>* Se crean los entornos de producción y ensayo. Consulte [Introducción a las canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 <!-- CMGR‑69680 -->
 
@@ -41,7 +41,9 @@ Antes de comenzar a implementar el código, establece la configuración de la ca
 
 **Para agregar una canalización de Edge Delivery:**
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización que desee.
+1. Inicie sesión en Cloud Manager en [experience.adobe.com/experiencemanager](https://my.cloudmanager.adobe.com/) y, a continuación, en el panel lateral izquierdo, haga clic en **Cloud Manager**.
+
+1. Seleccione la organización que desee.
 
 1. En la página **Mis programas**, seleccione el programa que desee.
 

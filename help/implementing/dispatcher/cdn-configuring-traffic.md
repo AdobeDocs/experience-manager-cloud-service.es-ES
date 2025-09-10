@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar el tráfico de CDN decl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1523'
 ht-degree: 1%
 
 ---
@@ -445,8 +445,9 @@ Las conexiones a orígenes son solo SSL y utilizan el puerto 443.
 
 Hay escenarios en los que los selectores de origen deben utilizarse para enrutar el tráfico a través de AEM Publish a AEM Edge Delivery Services:
 
-* Parte del contenido se entrega mediante un dominio administrado por AEM Publish, mientras que otro contenido del mismo dominio se entrega mediante Edge Delivery Services
-* El contenido entregado por Edge Delivery Services se beneficiaría de las reglas implementadas mediante la canalización de configuración, incluidas las reglas de filtro de tráfico o las transformaciones de solicitud/respuesta
+* Parte del contenido se entrega mediante un dominio administrado por AEM Publish, mientras que el resto del contenido del mismo dominio se entrega mediante Edge Delivery Services.
+* El contenido entregado por Edge Delivery Services se beneficiaría de las reglas implementadas mediante la canalización de configuración, incluidas las reglas de filtro de tráfico o las transformaciones de solicitud/respuesta.
+* La canalización de configuración de Edge Delivery le permite configurar la CDN administrada por Adobe definiendo reglas como `trafficFilters`, `originSelectors` y `redirects`. <!-- https://wiki.corp.adobe.com/pages/editpage.action?pageId=3610084282 -->
 
 Este es un ejemplo de regla de selector de origen que puede lograr esto:
 
@@ -474,7 +475,8 @@ data:
 ```
 
 >[!NOTE]
-> Dado que se usa la CDN administrada por Adobe, asegúrese de configurar la invalidación push en el modo **managed**, siguiendo la [documentación de invalidación push de configuración](https://www.aem.live/docs/byo-dns#setup-push-invalidation) de Edge Delivery Services.
+>
+>Dado que se usa la CDN administrada por Adobe, asegúrese de configurar la invalidación push en el modo **managed**, siguiendo la [documentación de invalidación push de configuración](https://www.aem.live/docs/byo-dns#setup-push-invalidation) de Edge Delivery Services.
 
 
 ## Redirecciones del lado del servidor {#server-side-redirectors}
