@@ -4,9 +4,9 @@ description: Crear componentes personalizados para un formulario EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
+source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2121'
 ht-degree: 4%
 
 ---
@@ -443,7 +443,7 @@ Ahora aparece el componente de tarjeta personalizada, como se muestra a continua
 
 ![Componente personalizado de tarjeta](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## Confirmar y enviar cambios
+### &#x200B;3. Confirmar y enviar cambios
 
 Una vez que haya implementado JavaScript y CSS para el componente personalizado y lo haya verificado localmente, confirme e inserte los cambios en el repositorio de Git.
 
@@ -453,7 +453,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 Ha creado correctamente un componente de selección de tarjetas personalizado complejo en unos sencillos pasos.
 
-## Método manual o heredado para crear un componente personalizado
++++ ## Método manual o heredado para crear un componente personalizado
 
 La forma heredada de hacerlo es seguir manualmente los pasos que se describen a continuación:
 
@@ -522,13 +522,13 @@ La forma heredada de hacerlo es seguir manualmente los pasos que se describen a 
 
 10. **Actualizar _component-definition.json**: en `models/_component-definition.json`, actualice la matriz dentro del grupo con `id custom-components` con un objeto de la siguiente manera:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Esto es para proporcionar la referencia al nuevo componente de tarjetas que se va a crear con el resto de los componentes
+   Esto es para proporcionar la referencia al nuevo componente de tarjetas que se va a crear con el resto de los componentes
 
 11. **Ejecutar la compilación:json script**: Ejecute `npm run build:json` para compilar y combinar todas las definiciones JSON de componentes en un solo archivo que se servirá desde el servidor. Esto garantiza que el esquema del nuevo componente se incluya en la salida combinada.
 
