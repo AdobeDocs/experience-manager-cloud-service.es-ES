@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
 workflow-type: tm+mt
-source-wordcount: '2319'
+source-wordcount: '2422'
 ht-degree: 11%
 
 ---
@@ -193,6 +193,24 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 >[!TIP]
 >
 >Utilice la tecla de acceso directo `Command-Z` o `Shift-Command-Z` para deshacer o rehacer, respectivamente.
+
+### Copiar y pegar {#copy-paste}
+
+Puede copiar y pegar componentes que se encuentren dentro de [ contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible dentro de la misma página y si el [contenedor de destino permite pegar el componente.](/help/implementing/universal-editor/filtering.md)
+
+![Icono de copiar](assets/copy.png)
+![Icono de pegar](assets/paste.png)
+
+1. Seleccione un componente dentro del editor o en el árbol de contenido.
+1. El icono **Copiar** aparece en el panel de propiedades [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel): toque o haga clic en él.
+1. El icono **Pegar** aparece en el panel de propiedades.
+1. Seleccione el componente _after_ en el que desea pegar el componente copiado.
+1. Haga clic o pulse Pegar.
+1. El componente copiado se ha pegado _después de_ el componente seleccionado.
+
+>[!TIP]
+>
+>Use la tecla de acceso directo `Command-C` o `Command-V` para copiar o pegar, respectivamente.
 
 ## Vista previa del contenido {#previewing-content}
 

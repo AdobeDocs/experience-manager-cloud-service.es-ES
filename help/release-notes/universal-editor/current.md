@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2025.09.04 del Editor universal
-description: Estas son las notas de la versión 2025.09.04 del editor universal.
+title: Notas de la versión 2025.09.11 del Editor universal
+description: Estas son las notas de la versión 2025.09.11 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 52%
+source-wordcount: '220'
+ht-degree: 46%
 
 ---
 
 
-# Notas de la versión 2025.09.04 del Editor universal {#release-notes}
+# Notas de la versión 2025.09.11 del Editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 4 de septiembre de 2025.
+Estas son las notas de la versión del editor universal del 11 de septiembre de 2025.
 
 >[!TIP]
 >
@@ -22,10 +22,9 @@ Estas son las notas de la versión del editor universal del 4 de septiembre de 2
 
 ## Novedades {#what-is-new}
 
-* Copiar y pegar está disponible para [usuarios que lo adoptaron por primera vez](#copy-paste)
-* [Deshacer y rehacer](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) ya está disponible para los autores de contenido.
-   * Se puede deshacer y rehacer para ediciones realizadas en contexto, ediciones realizadas a través del panel Propiedades, así como añadir, duplicar, mover y eliminar bloques.
-   * Deshacer y rehacer está limitado a la sesión actual del explorador.
+* [Copiar y pegar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) ya está disponible para componentes dentro de contenedores en la misma página.
+* Ahora se admite 6.5 LTS SP1.
+* El editor universal ahora admite [herencia de administración de varios sitios](/help/sites-cloud/authoring/universal-editor/inheritance.md) para fragmentos de contenido, incluida la interrupción automática de la herencia cuando se edita un fragmento de contenido de Live Copy.
 
 ## Funciones de adopción anticipada {#early-adopter}
 
@@ -35,11 +34,11 @@ Si le interesa probar estas nuevas funciones y compartir sus comentarios, envíe
 
 El nuevo RTE de ProseMirror, que cuenta con un selector de páginas en el cuadro de diálogo de vínculos, ya está disponible en el panel derecho.
 
-### Copiar/Pegar {#copy-paste}
+### Copiar y pegar en varias páginas {#copy-paste}
 
-Los autores de contenido ya pueden copiar y pegar componentes dentro de la misma página.
+Ahora es posible copiar y pegar en todas las páginas, además de en la misma página.
 
 ## Otras mejoras {#other-improvements}
 
-* El estilo de la barra de herramientas del editor se ha actualizado para alinearse mejor con el próximo RTE nuevo.
-* Se han restaurado los filtros del cuadro de diálogo del selector de recursos.
+* Se han implementado varias pequeñas mejoras de rendimiento en torno al editor universal que funciona con AEM como sistema back-end.
+* Los fragmentos de contenido ahora se publican mediante la API abierta, lo que aporta mejoras de rendimiento y coherencia con la forma en que se publican el Editor de fragmentos de contenido y la consola.

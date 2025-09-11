@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1894'
 ht-degree: 20%
 
 ---
@@ -338,6 +338,19 @@ Al tocar o hacer clic en el botón Eliminar [se elimina el componente](/help/sit
 >[!TIP]
 >
 >Utilice la tecla de acceso directo `Shift+Backspace` para eliminar un componente seleccionado de un contenedor.
+
+##### Copiar y pegar {#copy-paste}
+
+Puede copiar y pegar componentes que se encuentren dentro de [contenedores.](/help/implementing/universal-editor/field-types.md#container)
+
+![Icono de copiar](assets/copy.png)
+![Icono de pegar](assets/paste.png)
+
+>[!TIP]
+>
+>Use la tecla de acceso directo `Command-C` o `Command-V` para copiar o pegar, respectivamente.
+
+Consulte el documento [Creación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) para obtener más información.
 
 #### Botones adicionales {#additional-properties-panel-buttons}
 
