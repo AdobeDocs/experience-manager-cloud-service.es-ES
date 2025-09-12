@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 67fbd48d8cf4ac58d3bcff1eb314045b4ebd24b3
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -21,23 +21,23 @@ Consulte también las [notas de la versión actual de Adobe Experience Manager a
 
 ## Fechas de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2025.9.0 en AEM as a Cloud Service fue el viernes, 04 de septiembre de 2025.
+La fecha de lanzamiento de Cloud Manager 2025.9.0 en AEM as a Cloud Service fue el 4 de septiembre de 2025.
 
-La próxima versión está planificada para el viernes, 02 de octubre de 2025.
+La próxima versión está planificada para el jueves, 2 de octubre de 2025.
 
 ## Novedades {#what-is-new}
 
-* **Renovar manualmente los certificados de validación de dominios administrados por Adobe**
+* **Renovación manual de los certificados de validación de dominios administrados por Adobe**
 
   Ahora puede renovar manualmente los certificados de validación de dominio (DV) administrados por Adobe que hayan dado error desde Cloud Manager o la API pública para actualizar los certificados de forma proactiva. <!-- CMGR-68738 -->
 
-  ![renovación de certificado SSL](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
+  ![Renovación de certificados SSL](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* **Se ha agregado compatibilidad con las operaciones de desarrollo de Azure (repositorios privados)**
+* **Se ha añadido compatibilidad con Azure DevOps (repositorios privados)**
 
-  Las actualizaciones de la documentación incluyen pasos de configuración para Traer su propio Git con Azure DevOps y validación de solicitudes de extracción. Consulte [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+  Las actualizaciones de la documentación incluyen los pasos de configuración para traer su propio Git (Bring Your Own Git) con Azure DevOps y la validación de solicitudes de extracción. Consulte [Adición de repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-* **Brinde su propia compatibilidad con Git (BYOG) a las canalizaciones de configuración (repositorios privados)**
+* **Se amplía la compatibilidad de Traer su propio Git (Bring Your Own Git, BYOG) a las canalizaciones de configuración (repositorios privados)**
 
   Cloud Manager ahora admite canalizaciones de configuración con repositorios privados en GitHub, Bitbucket, Azure DevOps y GitLab. Esta compatibilidad acelera aún más el ciclo de desarrollo. Consulte [Comprobaciones de solicitudes de extracción para repositorios privados](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
@@ -63,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Vuelva rápidamente a una implementación anterior si el código fuente del cliente más reciente no funciona como se esperaba; no es necesario volver a ejecutar la canalización completa ni revertir las confirmaciones manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**&#x200B;para un entorno seleccionado.*
+![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**para un entorno seleccionado.*
 
 ![Cuadro de diálogo Restaurar código anterior implementado](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *En el cuadro de diálogo **Restaurar código anterior implementado**, revise la versión implementada actualmente y la versión que desea restaurar, luego haga clic en **Confirmar***.
 
 ![Activación de Restaurando](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**&#x200B;hasta que finalice la implementación.*
+*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**hasta que finalice la implementación.*
 
 ![Versión del código fuente en uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vista de detalles del entorno, vista desde arriba, ahora también muestra la versión activa del código fuente en uso.*
 
@@ -135,7 +135,7 @@ Consulte [Administración de tokens de acceso](/help/implementing/cloud-manager/
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
-### Agregar canalización de configuración de Edge Delivery {#add-eds-pipeline}
+### Añadir canalización de configuración de Edge Delivery {#add-eds-pipeline}
 
 Ahora se admiten las canalizaciones de configuración para los sitios creados con Edge Delivery Services, lo que amplía esta capacidad más allá de los entornos de Cloud Service. Puede usar las **canalizaciones de configuración** para administrar las configuraciones como las reglas de filtrado de tráfico y las configuraciones WAF cuando corresponda. Consulte [Configuraciones compatibles](/help/operations/config-pipeline.md#configurations).
 

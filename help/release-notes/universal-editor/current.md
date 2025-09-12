@@ -1,5 +1,5 @@
 ---
-title: Notas de la versión 2025.09.11 del Editor universal
+title: Notas de la versión 2025.09.11 del editor universal
 description: Estas son las notas de la versión 2025.09.11 del editor universal.
 feature: Release Information
 role: Admin
@@ -12,7 +12,7 @@ ht-degree: 46%
 ---
 
 
-# Notas de la versión 2025.09.11 del Editor universal {#release-notes}
+# Notas de la versión 2025.09.11 del editor universal {#release-notes}
 
 Estas son las notas de la versión del editor universal del 11 de septiembre de 2025.
 
