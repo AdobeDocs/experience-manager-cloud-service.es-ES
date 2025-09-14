@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
+source-git-commit: 53e476981874597bfb7f9293e67b2d135c72b318
 workflow-type: tm+mt
-source-wordcount: '6603'
-ht-degree: 98%
+source-wordcount: '6619'
+ht-degree: 97%
 
 ---
 
@@ -525,7 +525,7 @@ ht-degree: 98%
       + [Exportación de fragmentos de contenido a Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integración con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=es)
+      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetría operativa para AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Recursos {#assets}
    + [Información general y novedades](/help/assets/overview.md)
@@ -1092,8 +1092,13 @@ ht-degree: 98%
 {#wysiwyg-authoring}
    + Creación de formularios  {#build-forms}
       + [Información general](/help/edge/docs/forms/overview.md)
+
       + Creación de WYSIWYG {#universal-editor}
-         + [Editor universal de Edge Delivery Services para formularios](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + Lista desplegable en cascada {#cascading-drop-down-list}
+            + [Introducción](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
+            + [Crear integración de API](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
+            + [Crear formulario](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
+            + [Editor universal de Edge Delivery Services para formularios](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Vaya a la interfaz del editor universal para AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Introducción a Edge Delivery Services para AEM Forms con el editor universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Crear y publicar formularios adaptables con Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
@@ -1108,7 +1113,8 @@ ht-degree: 98%
          + [Rellenado previo de los campos del formulario adaptable](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [Publicar formularios adaptables con Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Crear componentes personalizados para un formulario EDS](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Solución de problemas de Error 403 Prohibido en el envío de formularios de Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [Solución de problemas de errores 403 prohibidos en el envío de formularios Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [Crear objeto de posible cliente de Salesforce mediante integración de API](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
       + Creación basada en documentos {#getting-started-edge-delivery-services-forms}
          + [Creación del primer formulario: Guía de inicio rápido con Hojas de cálculo de Google y Excel](/help/edge/docs/forms/tutorial.md)
          + [Cómo crear formularios con Hojas de cálculo de Google o Excel: Guía paso a paso](/help/edge/docs/forms/create-forms.md)
