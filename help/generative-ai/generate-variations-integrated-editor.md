@@ -172,7 +172,7 @@ La administración del uso depende de la acción realizada:
 
   >[!NOTE]
   >
-  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/es/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea comprar acciones más generativas.
+  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea comprar acciones más generativas.
 
 ## Acceso a “Generar variaciones” {#access-generate-variations}
 
