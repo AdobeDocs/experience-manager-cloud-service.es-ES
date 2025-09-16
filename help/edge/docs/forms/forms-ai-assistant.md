@@ -9,17 +9,17 @@ role: Admin, Architect, Developer
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Introducción al Asistente de IA para AEM Forms (Forms Experience Builder)
+# Introducción al asistente de IA para AEM Forms (Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> La funcionalidad del Asistente de IA para AEM Forms (Forms Experience Builder) está disponible en el **programa para primeros usuarios**. Si está interesado, envíe un correo electrónico rápido desde su dirección de trabajo a mailto:aem-forms-ea@adobe.com para solicitar acceso a la funcionalidad.
+> La funcionalidad del Asistente de IA para AEM Forms (Forms Experience Builder) está disponible en el **programa para primeros usuarios**. Si le interesa, envíe un correo electrónico rápido desde su dirección de trabajo a mailto:aem-forms-ea@adobe.com para solicitar el acceso a la funcionalidad.
 
 >[!IMPORTANT]
 >
@@ -198,7 +198,7 @@ Cargue archivos para ayudar a la inteligencia artificial a comprender exactament
 |-----------|----------|-------------|
 | **Imágenes** (PNG, JPG, GIF) | Diseños de formularios, maquetas de IU, digitlizaciones de formularios en papel | &quot;Crear un formulario que coincida con este diseño&quot; |
 | **Archivos de PDF** | Formularios existentes para convertir, especificaciones | &quot;Convertir este formulario de PDF a digital&quot; |
-| **Archivos Sigma** | Diseño de prototipos, directrices de marca | &quot;Construir este formulario a partir de mi diseño Figma&quot; |
+| **Archivos Sigma** | Diseño de prototipos, directrices de marca | “Construir este formulario a partir de mi diseño Figma” |
 | **Archivos de diseño** | Referencias visuales, guías de estilo | &quot;Hacer coincidir el estilo de este diseño&quot; |
 
 ### Cómo utilizar los archivos adjuntos
@@ -293,7 +293,7 @@ Use `@fieldName` para hacer referencia a los campos existentes:
 - `@phoneNumber`: campo de número de teléfono
 - `@dateOfBirth`: campo de fecha de nacimiento
 
-### Tipos de componentes
+### tipos de componentes
 
 Utilice estos términos para obtener los mejores resultados:
 
@@ -307,7 +307,7 @@ Utilice estos términos para obtener los mejores resultados:
 - `file upload`: archivo adjunto
 - `panel`: contenedor para agrupar campos
 
-## Solución de problemas
+## Resolución de problemas
 
 ### Problemas comunes y soluciones
 
@@ -345,4 +345,4 @@ Ayúdenos a mejorar el asistente de IA:
 
 ## Recursos relacionados
 
-[Asistente de IA de AEM Forms: biblioteca de indicaciones ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+[Asistente de IA de AEM Forms: biblioteca de indicaciones](/help/edge/docs/forms/ai-assistant-prompt-library.md)

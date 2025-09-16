@@ -1,5 +1,5 @@
 ---
-title: 'Forms Experience Builder: biblioteca de mensajes'
+title: 'Forms Experience Builder: biblioteca de indicaciones'
 description: Colección de patrones de indicaciones probadas y ejemplos para crear formularios con la asistencia de IA en la IU para la administración de formularios, el editor de formularios adaptables y el editor universal.
 feature: Edge Delivery Services
 hide: true
@@ -10,33 +10,33 @@ exl-id: c8f64082-a23f-4919-ad66-042faad77d31
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 13%
+ht-degree: 39%
 
 ---
 
 
-# Forms Experience Builder: biblioteca de mensajes
+# Forms Experience Builder: biblioteca de indicaciones
 
-Colección de patrones de mensajes reutilizables y ejemplos optimizados para Forms Experience Builder. Esta biblioteca optimizada se centra en los dos métodos de creación principales: Crear desde cero e Importar y convertir, con compatibilidad mejorada para campos inteligentes con tecnología LLM y coherencia de marca.
+Colección de patrones de indicaciones reutilizables y ejemplos optimizados para Forms Experience Builder. Esta biblioteca optimizada se centra en los dos métodos de creación principales: Crear desde cero e Importar y convertir, con compatibilidad mejorada para campos inteligentes con tecnología LLM y coherencia de marca.
 
 >[!NOTE]
 >
-> Forms Experience Builder está disponible en el programa de usuarios que lo adoptaron por primera vez. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
+> Forms Experience Builder está disponible en el programa para primeros usuarios. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 >[!IMPORTANT]
 >
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Los indicadores, los ejemplos y las prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa de los primeros usuarios.
+> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
-## Usar esta biblioteca de mensajes
+## Uso de esta biblioteca de indicaciones
 
-Esta biblioteca proporciona patrones de solicitud reutilizables para escenarios comunes de creación de formularios. Para conocer las prácticas recomendadas completas, consulte la [Guía de introducción a Forms Experience Builder](forms-ai-assistant-getting-started.md#best-practices).
+Esta biblioteca proporciona patrones de indicaciones reutilizables para escenarios comunes de creación de formularios. Para conocer las prácticas recomendadas completas, consulte la [Guía de introducción a Forms Experience Builder](forms-ai-assistant-getting-started.md#best-practices).
 
 ### Sugerencias rápidas para esta biblioteca
 
 - **Empiece con ejemplos**: use las indicaciones proporcionadas como plantillas y adáptelas a sus necesidades
 - **Dos métodos de creación**: elija los enfoques Crear desde cero o Importar y convertir
-- **Sea específico**: agregue sus propios detalles a los ejemplos genéricos
-- **Realizar pruebas exhaustivas**: validar siempre los resultados en el entorno específico
+- **Especifique**: añada sus propios detalles a los ejemplos genéricos
+- **Haga pruebas exhaustivas**: valide siempre los resultados en el entorno específico
 
 ### Plantillas y estilos de marca
 
@@ -45,7 +45,7 @@ Esta biblioteca proporciona patrones de solicitud reutilizables para escenarios 
 - **Plantillas de marca**: prepare plantillas de formulario estandarizadas con los colores, las fuentes y los patrones de diseño de su organización
 - **Directrices de estilo**: defina un estilo de campo, diseños de botón y estándares de espaciado coherentes que Forms Experience Builder pueda aplicar.
 - **Biblioteca de componentes**: colabore con su equipo de desarrollo para preparar componentes de formulario reutilizables que coincidan con su identidad de marca
-- **Visual Assets**: prepare logotipos, iconos y elementos de fondo para la integración de formularios
+- **Recursos visuales**: prepare logotipos, iconos y elementos de fondo para la integración de formularios
 
 <!-- **Example Brand Application Prompt:**
 
@@ -100,11 +100,11 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
     Crear un formulario de registro de usuario con el panel de información personal
 
-**Paso 2 - Agregar campos obligatorios:**
+**Paso 2 - Añadir campos obligatorios:**
 
     Agregue campos para @firstName, @lastName, @email, @phoneNumber con la validación adecuada
 
-**Paso 3 - Agregar lógica empresarial:**
+**Paso 3 - Añadir lógica empresarial:**
 
     Crear una regla: si el @age es menor de 18 años, mostrar la sección de información para padres/tutores
 
@@ -112,17 +112,17 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
     Agregar un panel de preferencias con @newsletterSubscription, @marketingConsent, @termsAccepted
 
-**Paso 5 - Agregar carga de archivo:**
+**Paso 5 - Añadir carga de archivos:**
 
     Incluir un campo de carga de archivo para @profilePicture con un límite de tamaño de 5 MB
 
 ## Creación y administración de formularios
 
-**Cuándo usar:** Cuando necesite crear formularios nuevos o modificar los existentes.
+**Cuándo se usa:** cuando necesite crear formularios nuevos o modificar los existentes.
 
-**Cómo usar:** Elija uno de los dos métodos: Crear desde cero o Importar y convertir (consulte [Guía de introducción](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
+**Cómo se usa:** elija uno de los dos métodos: Crear desde cero o Importar y convertir (consulte [Guía de introducción](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
 
-**Mensaje de ejemplo - Creación de formulario simple:**
+**Indicación de ejemplo - Creación de formularios simples:**
 
     Crear un formulario de comentarios de clientes con:
     - Clasificación del producto (de 1 a 5 estrellas)
@@ -130,7 +130,7 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
     - Correo electrónico del cliente (opcional)
     - Enviar a notificación por correo electrónico
 
-**Mensaje de ejemplo - Creación de formularios complejos:**
+**Indicación de ejemplo - Creación de formularios complejos:**
 
     Crear un formulario de incorporación completo para empleados con:
     
@@ -171,7 +171,7 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
     - Crear registro de empleado en el sistema de RRHH
     - Programar reunión de orientación
 
-**Indicadores de administración de formularios:**
+**Indicaciones de administración de formularios:**
 
     Importe este formulario de solicitud de PDF y conviértalo en un formulario adaptable con validación mejorada
     
@@ -179,17 +179,17 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
     
     Reorganice el formulario de registro en un asistente de tres pasos: información personal, preferencias, confirmación
 
-## Administración y configuración de campos
+## Configuración y administración de campos
 
-**Cuándo se debe usar:** Cuándo se deben agregar, modificar o configurar los campos de formulario.
+**Cuándo se usa:** cuando deba añadir, modificar o configurar los campos de formulario.
 
-**Cómo usar:** Sea específico acerca de los tipos de campo, las reglas de validación y los requisitos de experiencia del usuario.
+**Cómo se usa:** especifique los tipos de campo, los requisitos de validación y las expectativas de la experiencia del usuario. 
 
-**Mensaje de ejemplo - Adición de campo básico:**
+**Indicación de ejemplo - Adición de campo básico:**
 
     Agregue un campo de entrada de texto para &quot;Nombre de la compañía&quot; con el marcador de posición &quot;Escriba el nombre de su compañía&quot;
 
-**Mensaje de ejemplo - Configuración avanzada de campo:**
+**Indicación de ejemplo - Configuración de campo avanzado:**
 
     Agregue una sección de dirección completa con:
     
@@ -212,7 +212,7 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
     - Campos de entrada compatibles con dispositivos móviles
     - Cumplimiento de la accesibilidad
 
-**Indicadores de configuración de campo:**
+**Indicaciones de configuración de campo:**
 
     Haga que @email campo sea obligatorio con validación en tiempo real y mensaje de error personalizado
     
@@ -224,9 +224,9 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 ## Campos inteligentes mejorados LLM
 
-**Cuándo usar:** Cuando necesite campos con opciones previamente rellenadas que aprovechen la base de conocimiento de la IA.
+**Cuándo se usa:** cuando necesite campos con opciones prerrellenadas que aprovechen la base de conocimiento de la IA.
 
-**Cómo usar:** Solicitar campos que requieran conjuntos de datos completos; la inteligencia artificial puede rellenar automáticamente las opciones utilizando sus conocimientos integrados.
+**Cómo se usa:** solicite campos que requieran conjuntos de datos completos; la IA puede rellenar automáticamente las opciones con sus conocimientos integrados.
 
 ### Campos geográficos y de ubicación
 
@@ -247,7 +247,7 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 ### Datos empresariales e industriales
 
-**Clasificaciones de la compañía:**
+**Clasificaciones de compañía:**
 
     Agregue un campo para la clasificación del sector con códigos NAICS
     Cree un menú desplegable de tipos de entidades comerciales (LLC, Corporation, Partnership, etc.)
@@ -273,7 +273,7 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
     Agregue opciones de métodos de pago con características de seguridad
     Cree una selección para instituciones bancarias por país
 
-**Estándares técnicos:**
+**Normas técnicas:**
 
     Agregar un menú desplegable de tipos de formato de archivo con extensiones
     Incluir opciones de protocolo de red
@@ -310,7 +310,7 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
     Agregue una selección para los niveles de prioridad de los clientes
     Cree un campo para los ciclos de facturación de suscripción
 
-**Indicadores de campo inteligente de ejemplo:**
+**Indicaciones de campo inteligente de ejemplo:**
 
     &quot;Agregar un campo de aeropuerto de salida con todos los principales aeropuertos del mundo, incluidos los códigos IATA y los nombres de ciudades&quot;
     
@@ -324,15 +324,15 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 ## Creación de reglas y lógica empresarial
 
-**Cuándo usar:** Cuando necesite implementar lógica condicional, reglas de validación o procesos empresariales.
+**Cuándo se usa:** cuando necesite implementar lógica condicional, reglas de validación o procesos empresariales.
 
-**Cómo usar:** Describa claramente la lógica empresarial, especificando condiciones y acciones.
+**Cómo se usa:** describa con claridad la lógica empresarial, especificando condiciones y acciones.
 
-**Mensaje de ejemplo - Lógica condicional simple:**
+**Indicación de ejemplo - Lógica condicional simple:**
 
-    Cree una regla que muestre @spouseInformation panel únicamente cuando @maritalStatus igual a &quot;Casado&quot;
+    Cree una regla que muestre el panel @spouseInformation solo cuando @maritalStatus sea igual a “Casado”
 
-**Mensaje de ejemplo - Reglas comerciales complejas:**
+**Indicación de ejemplo - Reglas empresariales complejas:**
 
     Implementar validación completa de solicitud de préstamo:
     
@@ -384,7 +384,7 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
     
     Agregar integración de CRM a @applicationForm: crear nuevo registro de cliente potencial con @firstName, @lastName, @email y establecer el estado en &quot;Nueva aplicación&quot;
 
-**Mensaje de ejemplo - Envío multicanal estándar:**
+**Indicación de ejemplo - Envío multicanal estándar:**
 
     Configurar el envío de formularios con varios destinos de datos:
     
@@ -694,11 +694,11 @@ Set up **performance monitoring** to track form load times and user interactions
 
 Utilice la sintaxis `@fieldName` para hacer referencia a los campos existentes en las indicaciones:
 
-- `@email` - Campo de correo electrónico de referencia
-- `@firstName` - Campo de nombre de referencia
-- `@maritalStatus` - Campo de estado civil de referencia
+- `@email`: campo de correo electrónico de referencia
+- `@firstName`: campo de nombre de referencia
+- `@maritalStatus`: campo de estado civil de referencia
 
-### Tipos de componentes
+### tipos de componentes
 
 **Componentes de entrada:**
 
@@ -712,7 +712,7 @@ Utilice la sintaxis `@fieldName` para hacer referencia a los campos existentes e
 
 **Propiedades universales (todos los componentes):**
 
-- **Tipo**: Tipo de componente
+- **Tipo**: tipo de componente
 - **Nombre**: identificador de campo para el envío del formulario
 - **Etiqueta**: texto que se muestra para el campo
 - **Descripción**: texto de ayuda para el campo
@@ -751,20 +751,20 @@ Utilice la sintaxis `@fieldName` para hacer referencia a los campos existentes e
 **Acciones de envío:**
 
 - Notificaciones por correo electrónico
-- Envíos de API de REST
+- Envíos de API REST
 - Almacenamiento en la nube (Azure, SharePoint)
 - Automatización del flujo de trabajo (Power Automate, Workfront Fusion)
 - Plataformas de marketing (Marketo)
 - Integraciones de CRM
 
-### Instrucciones de sintaxis de indicador
+### Instrucciones de sintaxis de indicación
 
 - **Referencias de campo**: use `@fieldName` para los campos existentes
 - **Comandos**: use `/command` para acciones específicas
-- **Lenguaje natural**: Describa los requisitos de forma clara y específica
+- **Lenguaje natural**: describa los requisitos de forma clara y específica
 
 ### Lista de comprobación de validación
 
 Para obtener prácticas recomendadas y directrices de validación completas, consulte la [Guía de introducción a Forms Experience Builder](forms-ai-assistant-getting-started.md#best-practices).
 
-*Esta biblioteca de mensajes se actualiza continuamente en función de los comentarios de los usuarios y de las nuevas funciones de Forms Experience Builder. Para obtener las últimas funciones y ejemplos, consulte la [documentación de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=es).*
+*Esta biblioteca de indicaciones se actualiza continuamente en función de los comentarios de los usuarios y las nuevas capacidades de Forms Experience Builder. Para obtener las últimas funciones y ejemplos, consulte la [documentación de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=es).*

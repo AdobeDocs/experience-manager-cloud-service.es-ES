@@ -9,18 +9,18 @@ exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '2390'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
 
 # Vaya a la interfaz del editor universal para AEM Forms
 
-El [editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) proporciona una interfaz visual para crear formularios de AEM Forms con Edge Delivery Services. Ofrece una experiencia **What You See Is What You Get (WYSIWYG)** que muestra exactamente cómo aparecerán los formularios a los usuarios.
+El [editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) proporciona una interfaz visual para crear formularios de AEM Forms con Edge Delivery Services. Ofrece una experiencia **lo que se ve es lo que se obtiene (WYSIWYG)** que muestra exactamente cómo se mostrarán los formularios a los usuarios.
 
 ![Información general sobre la interfaz del editor universal](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-Esta guía le ayuda a comprender la interfaz para crear formularios de forma eficaz. Tanto si es nuevo en la creación de formularios como si es un desarrollador experimentado, esta guía le ayudará a lo siguiente:
+Esta guía le ayuda a comprender la interfaz para generar formularios de forma eficaz. Tanto si es nuevo en la creación de formularios como si es un desarrollador experimentado, esta guía le ayudará a lo siguiente:
 
 **Aprender habilidades esenciales:**
 
@@ -383,7 +383,7 @@ El **Panel de propiedades** (lado derecho) es el centro de control para generar 
 
 +++
 
-+++Herramientas de Collaboration
++++Herramientas de colaboración
 
 #### **Administración de tareas**
 
@@ -464,7 +464,7 @@ Domine estos métodos abreviados para crear formularios de forma más rápida y 
 
 ### **Problemas de interfaz**
 
-+++Elementos de interfaz no cargados
++++Los elementos de la interfaz no se cargan
 
 **Problema:** los botones de la barra de herramientas, el Panel de propiedades u otros elementos de la interfaz no aparecen
 
@@ -490,7 +490,7 @@ Domine estos métodos abreviados para crear formularios de forma más rápida y 
 
 +++
 
-+++Problemas del modo de vista previa
++++Problemas del modo de previsualización
 
 **Problema:** el modo Previsualización no funciona correctamente o muestra errores
 

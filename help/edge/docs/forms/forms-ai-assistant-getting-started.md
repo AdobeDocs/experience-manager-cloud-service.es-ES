@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2013'
-ht-degree: 6%
+ht-degree: 53%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 6%
 
 >[!NOTE]
 >
-> La funcionalidad Forms Experience Builder está disponible en el **programa de acceso anticipado (EA)**. Si está interesado, envíe un mensaje de correo electrónico rápido desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso a la funcionalidad.
+> La funcionalidad Forms Experience Builder está disponible en el **programa de acceso anticipado (EA)**. Si está interesado, envíe un correo electrónico rápido desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso esta funcionalidad.
 
 >[!IMPORTANT]
 >
 > **Documentación sujeta a cambios**: esta documentación se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las funciones, los comandos y los ejemplos pueden cambiar a medida que Forms Experience Builder continúa evolucionando durante el programa de acceso anticipado.
 
-Esta guía completa le ayuda a empezar a crear y administrar formularios mediante la tecnología de IA conversacional. Tanto si es un principiante que busca crear su primer formulario como si es un usuario avanzado que busca aprovechar las sofisticadas funciones, encontrará información detallada y ejemplos prácticos para guiar a su recorrido a través de las funcionalidades de Forms Experience Builder.
+Esta guía completa le ayuda a empezar a crear y administrar formularios mediante la tecnología de IA conversacional. Tanto si no tiene experiencia y desea crear su primer formulario, como si tiene conocimientos avanzados y desea aprovechar las sofisticadas funciones, encontrará información detallada y ejemplos prácticos que le guiarán a través de las funcionalidades de Forms Experience Builder.
 
 ## Requisitos previos y configuración
 
@@ -60,9 +60,9 @@ Para ver los pasos detallados para localizar el ID de organización de IMS y el 
 >
 > **Programa de disponibilidad limitada**: el acceso a Forms Experience Builder está sujeto a la aprobación de los interesados internos. Adobe revisará su solicitud en función de la capacidad del programa y la alineación con los criterios de Acceso anticipado. La aprobación no está garantizada y depende de la disponibilidad actual del programa.
 
-### &#x200B;2. Compruebe que Forms está activado
+### &#x200B;2. Comprobar que Forms esté habilitado
 
-Antes de usar Forms Experience Builder, asegúrate de que [AEM Forms está habilitado para tu entorno](/help/forms/setup-forms-cloud-service.md).
+Antes de usar Forms Experience Builder, asegúrese de que [AEM Forms está habilitado para su entorno](/help/forms/setup-forms-cloud-service.md).
 
 
 ### &#x200B;3. Configurar el entorno
@@ -70,13 +70,13 @@ Antes de usar Forms Experience Builder, asegúrate de que [AEM Forms está habil
 
 - **Para Edge Delivery Services (EDS):**
 
-   - [Configuración del entorno para Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   - [Crear un nuevo formulario con la plantilla de Edge Delivery Forms](/help/edge/docs/forms/universal-editor/create-forms.md)
+   - [Configuración del entorno para los formularios de Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+   - [Creación de un nuevo formulario con la plantilla de Edge Delivery Forms](/help/edge/docs/forms/universal-editor/create-forms.md)
 
 - **Para formularios basados en componentes principales:**
 
-   - En la instancia de Adobe Experience Manager, acceda a Forms > Forms y documentos
-   - [Crear una nueva página con la plantilla de componentes principales](/help/forms/creating-adaptive-form-core-components.md)
+   - En la instancia de Adobe Experience Manager, vaya a Formularios > Formularios y documentos
+   - [Creación de una nueva página con la plantilla de componentes principales](/help/forms/creating-adaptive-form-core-components.md)
 
 
 ## Inicio rápido
@@ -109,7 +109,7 @@ Forms Experience Builder está disponible en la interfaz de usuario de administr
 1. Siga la [guía de configuración de Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) para crear su página EDS
 1. Navegue hasta la página EDS en el editor universal
 1. Busque el icono de Forms Experience Builder en el panel derecho
-1. Haga clic para abrir la interfaz de conversación
+1. Haga clic para abrir la interfaz conversacional
 
 
 
@@ -137,12 +137,12 @@ Forms Experience Builder está disponible en la interfaz de usuario de administr
 - `/configure-submit to email support@company.com` - Configura el envío de correo electrónico
 - `/help multi-step forms`: obtiene ayuda sobre la creación de formularios de varios pasos
 
-### Sugerencias para alcanzar el éxito
+### Sugerencias para el éxito
 
-- **Sea específico**: &quot;Agregar un campo de correo electrónico requerido con validación&quot; funciona mejor que &quot;agregar correo electrónico&quot;
-- **Hacer referencia a campos existentes**: usar `@fieldName` al modificar formularios
+- **Sea específico**: “Añadir un campo de correo electrónico obligatorio con validación” funciona mejor que “añadir correo electrónico”
+- **Haga referencia a campos existentes**: usar `@fieldName` al modificar formularios
 - **Pedir ayuda**: escriba `/help` seguido de su pregunta
-- **Iterar**: realice un cambio a la vez para obtener mejores resultados
+- **Iterar**: realice un cambio cada vez para obtener mejores resultados
 
 
 ## Formas de empezar a crear un formulario
@@ -154,8 +154,8 @@ Describa los requisitos de los formularios en lenguaje natural y Forms Experienc
 **Ejemplos:**
 
 - &quot;Crear un formulario de solicitud de préstamo con información personal, detalles financieros y cargas de documentos&quot;
-- &quot;Cree un formulario de comentarios de clientes con clasificaciones, comentarios y categorías de productos&quot;
-- &quot;Necesito un formulario de registro de varios pasos para una conferencia con procesamiento de pagos&quot;
+- “Crear un formulario de comentarios de los clientes con valoraciones, comentarios y categorías de productos”
+- “Necesito un formulario de registro con varios pasos para una conferencia con procesamiento de pagos”
 
 ### &#x200B;2. Importar y convertir
 
@@ -165,18 +165,18 @@ Transforme formularios y documentos existentes en experiencias modernas e intera
 
 - **PDF forms**: cargue archivos PDF estáticos para convertirlos en formularios digitales interactivos con validaciones.
 - **Capturas de pantalla o imágenes**: cargue una foto de formularios en papel para generar versiones digitales funcionales
-- **XFA Forms**: convierta formularios basados en XFA heredados a formularios adaptables modernos
+- **XFA Forms**: convierta formularios basados en XFA heredados en formularios adaptables modernos
 
 **Cómo importar:**
 
-1. Haga clic en el icono de datos adjuntos en la interfaz de Forms Experience Builder
+1. Haga clic en el icono de archivo adjunto en la interfaz de Forms Experience Builder
 2. Cargue el archivo (PDF, imagen, diseño Figma, etc.)
-3. Describa sus necesidades:
-   - &quot;Convertir este formulario de PDF a una versión digital&quot;
-   - &quot;Crear un formulario que coincida con este diseño de captura de pantalla&quot;
-   - &quot;Construir este formulario a partir de mi diseño Figma&quot;
+3. Describa sus requisitos:
+   - “Convertir este formulario PDF en una versión digital”
+   - “Crear un formulario que coincida con el diseño de esta captura de pantalla”
+   - “Construir este formulario a partir de mi diseño Figma”
 
-**Tipos de archivo compatibles:**
+**Tipos de archivo admitidos:**
 
 - **Imágenes** (PNG, JPG, GIF): diseños de formulario, maquetas de interfaz de usuario, formularios escaneados, bocetos dibujados a mano
 - **Archivos de PDF**: formularios, especificaciones, documentos, AcroForms y formularios XFA existentes
@@ -249,15 +249,15 @@ Transforme formularios y documentos existentes en experiencias modernas e intera
 
 ### Configuración de envío
 
-Forms Experience Builder puede configurar varios extremos de envío para conectar los formularios con sistemas y servicios externos:
+Forms Experience Builder puede configurar varios puntos finales de envío para conectar los formularios con sistemas y servicios externos:
 
-| Tipo de acción de envío | Comando de instalación | Caso práctico |
+| Tipo de acción de envío | Comando de configuración | Caso práctico |
 |------------------|---------------|----------|
-| **Correo electrónico** | &quot;Enviar formulario al correo electrónico&quot; | Notificaciones y confirmaciones para envíos de formularios |
-| **API DE REST** | &quot;Enviar al punto final REST&quot; | Aplicaciones personalizadas y sistemas de terceros |
-| **Almacenamiento en la nube** | &quot;Guardar en Azure/SharePoint&quot; | Almacenamiento de documentos y administración de archivos |
-| **Flujo de trabajo** | &quot;Conectarse a Power Automate&quot; | Automatización y aprobaciones de procesos empresariales |
-| **Marketing** | &quot;Integración con Marketo&quot; | Administración de posibles clientes y automatización de marketing |
+| **Correo electrónico** | “Enviar formulario al correo electrónico” | Notificaciones y confirmaciones para envíos de formularios |
+| **API DE REST** | “Enviar al punto final REST” | Aplicaciones personalizadas y sistemas de terceros |
+| **Almacenamiento en la nube** | “Guardar en Azure/SharePoint” | Almacenamiento de documentos y administración de archivos |
+| **Flujo de trabajo** | “Enviar a Power Automate” | Automatización de procesos empresariales y aprobaciones |
+| **Marketing** | “Integrar con Marketo” | Gestión de posibles clientes y automatización de marketing |
 
 **Ejemplos de configuración de envío avanzada:**
 
@@ -284,16 +284,16 @@ Cree una lógica empresarial y de validación sofisticada que responda a las int
     👤 Usted: &quot;Mostrar la sección de direcciones solo si el usuario selecciona &#39;Enviar a otra dirección&#39;&quot;
     🤖 AI: &quot;Se creó una regla condicional que muestra/oculta el panel de direcciones según la selección de la casilla de verificación&quot;
 
-### Creación de formularios de varios pasos
+### Creación de formulario de varios pasos
 
     👤 Usted: &quot;Crear un formulario progresivo con 3 pasos: información personal, preferencias, confirmación&quot;
     🤖 AI: &quot;Se creó un formulario progresivo con navegación entre pasos y validación en cada fase&quot;
 
-### Tipos de campo avanzados
+### Tipos de campos avanzados
 
-- Carga de archivos con restricciones de validación y tamaño para la administración de documentos
-- Selector de fechas con restricciones y reglas de negocio para la programación
-- Lista desplegable con opciones dinámicas que cambian según las selecciones de los usuarios
+- Carga de archivos con validación y restricciones de tamaño para la administración de documentos
+- Selectores de fechas con restricciones y reglas empresariales para la programación
+- Listas desplegables con opciones dinámicas que cambian según las selecciones de los usuarios
 - Botones de opción con lógica condicional para árboles de decisión complejos
 
 
@@ -308,7 +308,7 @@ Cree una lógica empresarial y de validación sofisticada que responda a las int
 
 ## Ayuda y aprendizaje del producto
 
-Forms Experience Builder también puede enseñarle sobre las funciones de AEM Forms:
+Forms Experience Builder también puede enseñarle las funciones de AEM Forms:
 
 ### Formule preguntas como:
 
@@ -329,32 +329,32 @@ Forms Experience Builder también puede enseñarle sobre las funciones de AEM Fo
 
 ### Diseño de formulario
 
-- **Simplifique**: Comience con campos esenciales y agregue complejidad solo cuando sea necesario para evitar abrumar a los usuarios
-- **Use etiquetas claras**: haga que los propósitos de los campos sean obvios con etiquetas descriptivas que guíen a los usuarios a través del formulario
-- **Proporcionar texto de ayuda**: guíe a los usuarios a través de campos complejos con ayuda contextual y ejemplos
-- **Realizar pruebas exhaustivas**: valide todas las rutas de usuario para asegurarse de que los formularios funcionan correctamente en todos los escenarios
+- **Simplifique**: comience con campos esenciales y añada complejidad solo cuando sea necesario para evitar abrumar a los usuarios
+- **Use etiquetas claras**: haga que los propósitos de los campos sean evidentes utilizando para ello etiquetas descriptivas que guíen a los usuarios por el formulario
+- **Proporcione texto de ayuda**: guíe a los usuarios por los campos complejos con ayuda contextual y ejemplos
+- **Realice pruebas exhaustivas**: valide todas las rutas de usuario para asegurarse de que los formularios funcionan correctamente en todos los escenarios
 
 ### Experiencia del usuario
 
-- **Divulgación progresiva**: mostrar campos relevantes basados en el contexto para reducir la carga cognitiva y mejorar las tasas de finalización
-- **Borrar navegación**: Ayude a los usuarios a comprender dónde se encuentran en el formulario y qué pasos quedan por realizar
-- **Diseño interactivo**: compruebe que los formularios funcionan en todos los dispositivos y tamaños de pantalla para lograr la máxima accesibilidad
+- **Divulgación progresiva**: muestre los campos relevantes según el contexto para reducir la carga cognitiva y mejorar las tasas de finalización
+- **Navegación clara**: ayude a los usuarios a comprender dónde se encuentran dentro del formulario y qué pasos quedan por realizar
+- **Diseño interactivo**: compruebe que los formularios funcionan en todos los dispositivos y tamaños de pantalla para ofrecer la máxima accesibilidad
 - **Accesibilidad**: siga las directrices de WCAG para que las personas con discapacidades puedan utilizar los formularios
 
 ### Rendimiento
 
-- **Optimizar recuento de campos**: solo pida la información necesaria para reducir el abandono de formularios y mejorar las tasas de finalización
-- **Use la validación apropiada**: Evite errores antes del envío para proporcionar comentarios y orientación inmediatos
-- **Tasas de finalización de pruebas**: supervise y mejore la efectividad de los formularios mediante análisis y comentarios de los usuarios
-- **Actualizaciones regulares**: mantenga los formularios al día con las necesidades de la empresa y las expectativas de los usuarios para obtener un rendimiento óptimo
+- **Optimice el recuento de campos**: solo pida la información necesaria para reducir el abandono de formularios y mejorar las tasas de finalización
+- **Use la validación apropiada**: evite errores antes del envío para proporcionar comentarios y orientación inmediatos
+- **Pruebe las tasas de finalización**: supervise y mejore la eficacia de los formularios mediante la realización de análisis y los comentarios de los usuarios
+- **Actualizaciones periódicas**: mantenga los formularios al día con las necesidades empresariales y las expectativas de los usuarios para obtener un rendimiento óptimo
 
 ### Coherencia de marca
 
-- **Crear plantillas de marca**: prepare plantillas de formulario con marca con los colores, las fuentes y el estilo de su organización antes de comenzar a crear formularios
-- **Definir estándares de estilo**: establezca estilos de botón, diseños de campo y directrices de espaciado coherentes a los que se pueda hacer referencia en las solicitudes
-- **Usar recursos de marca**: prepare logotipos, códigos de color y directrices de marca para facilitar la referencia al crear formularios
-- **Biblioteca de plantillas**: genere una colección de plantillas de formulario de marca para casos de uso comunes (contacto, registro, comentarios)
-- **Instrucciones de estilo**: Incluir instrucciones específicas de la marca: &quot;Usar azul de la compañía (#1234AB) para botones y fuentes corporativas Helvetica&quot;
+- **Cree plantillas de marca**: prepare plantillas de formulario con marca con los colores, las fuentes y el estilo de su organización antes de comenzar a crear formularios
+- **Defina estándares de estilo**: establezca estilos de botón, diseños de campo y directrices de espaciado coherentes a los que se pueda hacer referencia en las indicaciones
+- **Use recursos de marca**: prepare logotipos, códigos de color y directrices de marca para facilitar las referencias al crear formularios
+- **Biblioteca de plantillas**: genere una colección de plantillas de formulario con marca para casos de uso comunes (contacto, registro, comentarios)
+- **Indicaciones de estilo**: incluya instrucciones específicas de la marca: “Usar azul de la compañía (#1234AB) en botones y la fuente Helvetica corporativa”
 
 
 
@@ -363,12 +363,12 @@ Forms Experience Builder también puede enseñarle sobre las funciones de AEM Fo
 | Problema | Corrección rápida |
 |-------|-----------|
 | **La interfaz no se carga** | Actualice el explorador, compruebe la conexión a Internet |
-| **Los comandos no funcionan** | `/help` o use lenguaje natural en su lugar |
-| **@fieldName no reconocido** | Revise la ortografía, asegúrese de que el campo exista primero |
-| **Error al cargar el archivo** | Utilice PDF/JPG/PNG con menos de 10 MB |
-| **El formulario tiene un aspecto incorrecto** | Sea más específico: &quot;Hacerlo compatible con dispositivos móviles&quot; |
-| **Error en la configuración de envío** | Verificar las credenciales y los permisos de API |
+| **Los comandos no funcionan** | Pruebe `/help` o use lenguaje natural en su lugar |
+| **@fieldName no reconocido** | Revise la ortografía, asegúrese primero de que el campo existe |
+| **Error al cargar el archivo** | Utilice PDF/JPG/PNG de menos de 10 MB |
+| **El aspecto del formulario no es correcto** | Sea más específico: “Hacerlo compatible con dispositivos móviles” |
+| **Error en la configuración de envío** | Verificar las credenciales de API y los permisos |
 
-**¿Aún necesita ayuda?** escriba `/help` seguido de su pregunta específica o comuníquese con el administrador del sistema.
+**¿Aún necesita ayuda?** Escriba `/help` seguido de su pregunta específica o póngase en contacto con el administrador del sistema.
 
-Para obtener soporte adicional, consulte la [Biblioteca de mensajes de Forms Experience Builder](ai-assistant-prompt-library.md) principal o póngase en contacto con el administrador del sistema para obtener asistencia técnica.
+Para obtener soporte adicional, consulte la [Biblioteca de indicaciones de Forms Experience Builder](ai-assistant-prompt-library.md) principal o póngase en contacto con el administrador del sistema para recibir asistencia técnica.
