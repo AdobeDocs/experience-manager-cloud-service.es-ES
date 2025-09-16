@@ -1,14 +1,14 @@
 ---
-title: ¿Cómo se pueden crear y utilizar temáticas en los formularios adaptables?
+title: ¿Cómo se generan y utilizan las temáticas en el Forms adaptable?
 description: Puede utilizar temáticas para aplicar estilo y proporcionar una identidad visual a un formulario adaptable mediante los componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
-keywords: formularios adaptables que aplican estilo a los componentes principales uso de la temática en los componentes principales, aplicación de estilos a un formulario adaptable, personalización de temáticas
+keywords: temáticas de form builder, componentes principales de estilo de formularios adaptables, generador de temáticas de formulario, estilo de formularios adaptables, personalizar temáticas, crear temáticas de formulario
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: ht
-source-wordcount: '2803'
-ht-degree: 100%
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
+source-wordcount: '2806'
+ht-degree: 99%
 
 ---
 
@@ -404,7 +404,7 @@ La temática personalizada ayuda a crear una experiencia de marca para los formu
 
 Los pasos para aplicar una temática a un formulario adaptable son los siguientes:
 
-1. Inicie sesión en la instancia de creación de AEM Forms.
+1. Inicie sesión en la instancia de autor de AEM Forms.
 
 1. Seleccione **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
 
@@ -441,7 +441,7 @@ Las temáticas se utilizan como parte de una plantilla de formulario adaptable p
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 
@@ -449,7 +449,8 @@ Las temáticas se utilizan como parte de una plantilla de formulario adaptable p
 ## Ver también {#see-also}
 
 {{see-also}}
+
 * [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generar documento de registro para formularios adaptables (Componentes principales](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creación de un formulario adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
-* [Plantillas temáticas y modelos de datos de formularios de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
+* [Plantillas temáticas y modelos de datos de formulario de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)

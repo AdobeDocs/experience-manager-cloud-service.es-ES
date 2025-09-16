@@ -1,18 +1,18 @@
 ---
-title: ¿Cómo crear un formulario adaptable basado en componentes principales?
-description: Cree plantillas de formularios adaptables basadas en el componente principal para definir la estructura básica y el contenido inicial usando el editor de plantillas.
+title: Crear una plantilla de formulario adaptable con componentes principales
+description: Cree plantillas de formulario adaptable basadas en componentes principales para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 feature: Adaptive Forms, Core Components
-Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
+Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
-workflow-type: ht
-source-wordcount: '1951'
-ht-degree: 100%
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
+source-wordcount: '1949'
+ht-degree: 97%
 
 ---
 
-# Creación de una plantilla de formulario adaptable basado en componentes principales {#adaptive-form-templates}
+# Crear una plantilla de formulario adaptable con componentes principales {#adaptive-form-templates}
 
 Al crear un formulario, se agregan campos y componentes para definir la estructura del formulario, el contenido y las acciones en el editor. Los campos y componentes se agregan en el `guideRootPanel` del contenedor de formulario. Con el Editor de plantillas, puede crear una plantilla que contenga una estructura básica y contenido inicial que los autores puedan utilizar para crear formularios.
 
@@ -125,7 +125,7 @@ Los autores de formularios lo utilizan como base para crear un formulario. La es
 
 ![Encabezado y pie de página añadidos en la capa Contenido inicial](assets/header-and-footer.png)
 
-En la capa Contenido inicial, se creará la plantilla Formulario adaptable que los autores utilizan como base. La creación de una plantilla es similar a la de un formulario, se utilizan las opciones disponibles en la barra lateral. La barra lateral proporciona exploradores de contenido, propiedades, activos y componentes.
+En la capa Contenido inicial, se creará la plantilla de formulario adaptable que los autores utilizan como base. La creación de una plantilla es similar a la de un formulario, se utilizan las opciones disponibles en la barra lateral. La barra lateral proporciona exploradores de contenido, propiedades, activos y componentes.
 
 <!-- See [Sidebar](introduction-forms-authoring.md#sidebar). -->
 
@@ -156,7 +156,7 @@ Un formulario funciona con su plantilla. Cuando se descarga un formulario adapta
 
 >[!NOTE]
 >
-> * También puede configurar la plantilla [!UICONTROL Documento de registro] directamente desde el editor de formularios adaptables o desde el editor de plantillas de formulario adaptable. Para obtener más información, consulte [Generación de documento de registro para formularios adaptables](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * También puede configurar la plantilla [!UICONTROL Documento de registro] directamente desde el Generador de formularios adaptables o el Generador de plantillas de formulario adaptable. Para obtener más información, consulte [Generación de documento de registro para formularios adaptables](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 ## Asociación de un esquema del modelo de datos de formulario a una plantilla {#associating-form-data-model-schema-in-template}
 
@@ -202,7 +202,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### Adición de propiedades personalizadas a componentes de formulario adaptable mediante una política de plantillas
 
-Las propiedades personalizadas le permiten asociar atributos personalizados (pares clave-valor) a un componente principal del formulario adaptable mediante la plantilla de un formulario. Las propiedades personalizadas se reflejan en la sección de **[!UICONTROL propiedades]** de la representación sin encabezado del componente. Permite crear un comportamiento de formulario dinámico que se adapta en función de los valores de atributos personalizados. Por ejemplo, los desarrolladores pueden diseñar varias representaciones de un componente Forms sin encabezado para plataformas móviles, de escritorio o web, lo que mejora significativamente la experiencia del usuario en una amplia gama de dispositivos.
+Las propiedades personalizadas le permiten asociar atributos personalizados (pares clave-valor) a un componente principal del formulario adaptable mediante la plantilla de formulario. Las propiedades personalizadas se reflejan en la sección de **[!UICONTROL propiedades]** de la representación sin encabezado del componente. Permite crear un comportamiento de formulario dinámico que se adapta en función de los valores de atributos personalizados. Por ejemplo, los desarrolladores pueden diseñar varias representaciones de un componente Forms sin encabezado para plataformas móviles, de escritorio o web, lo que mejora significativamente la experiencia del usuario en una amplia gama de dispositivos.
 
 Los pasos para añadir propiedades personalizadas a los campos del componente principal del formulario adaptable son los siguientes:
 
@@ -295,6 +295,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## Ver también {#see-also}
 
 {{see-also}}
+
 * [Creación de estilos o temáticas para los formularios](using-themes-in-core-components.md)
 * [Creación de un formulario adaptable (componentes principales)](/help/forms/creating-adaptive-form-core-components.md)
 

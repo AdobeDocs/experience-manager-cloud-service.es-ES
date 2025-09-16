@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo generar una plantilla para un docu
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '4221'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -405,9 +405,9 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
 ## Asistencia del Documento de registro en el Editor de formularios adaptables {#dor-support-in-adaptiveform}
 
-Puede configurar la plantilla [!UICONTROL Documento de registro] directamente desde el editor de formularios adaptables o el editor de plantillas de formulario adaptable.
+Puede configurar la plantilla [!UICONTROL Documento de registro] directamente desde el Creador de formularios adaptables o el Creador de plantillas de formulario adaptable.
 
-Realice los siguientes pasos desde la instancia de autor del editor de formularios adaptables:
+Realice los siguientes pasos desde la instancia de autor del creador de formularios adaptables:
 
 1. Seleccione el componente **[!UICONTROL Contenedor de formulario adaptable (raíz)]**.
 1. Haga clic en el icono ![Icono Configurar](/help/forms/assets/configure-icon.svg) para abrir las **[!UICONTROL Propiedades]** del contenedor del formulario adaptable.
@@ -455,7 +455,7 @@ La configuración del componente de documento de registro está disponible en su
 **Configuración del nivel de formulario**
 
 * **Incluir campos no enlazados en el documento de registro:** al establecer la propiedad, se incluyen los campos no enlazados del formulario adaptable basado en el esquema en el documento de registro. De forma predeterminada, es True.
-* **Excluir campos de DoR si están ocultos:** establezca la propiedad para excluir los campos ocultos del documento de registro al enviar el formulario. Al activar [Revalidar en el servidor](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir dichos campos del documento de registro.
+* **Excluir campos de DoR si están ocultos:** establezca la propiedad para excluir los campos ocultos del documento de registro al enviar el formulario. Al habilitar [Revalidar en el servidor](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir dichos campos del documento de registro.
 
 ## Usar un archivo XCI personalizado
 

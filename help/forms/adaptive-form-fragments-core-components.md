@@ -6,10 +6,10 @@ keywords: Agregar fragmentos de formulario adaptable, fragmentos de formulario a
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '1479'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -67,7 +67,7 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Además, si ha seleccionado un esquema XML como modelo de formulario para el fragmento, aparecerá una nueva pestaña que mostrará la jerarquía del modelo de formulario en el buscador de contenido. Le permite arrastrar y soltar los elementos del modelo de formulario en el fragmento.<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
-Una vez creado el fragmento de formulario adaptable basado en un esquema o modelo de datos de formulario (FDM), los elementos del modelo de datos de formulario (FDM o del esquema aparecen en la pestaña Fuentes de datos del Explorador de contenido en el Editor de formularios adaptables. Puede arrastrar y soltar elementos del modelo de formulario en el fragmento. Los elementos del modelo de formulario agregados se convierten en componentes de formulario, al tiempo que se conservan las propiedades originales del esquema asociado.
+Una vez creado el fragmento de formulario adaptable basado en un esquema o modelo de datos de formulario (FDM), los elementos de modelo de datos de formulario (FDM) o esquema aparecen en la pestaña Fuentes de datos del Explorador de contenido en el Creador de formularios adaptables. Puede arrastrar y soltar elementos del modelo de formulario en el fragmento. Los elementos del modelo de formulario agregados se convierten en componentes de formulario, al tiempo que se conservan las propiedades originales del esquema asociado.
 
 
 ## Añadir un fragmento a un formulario adaptable {#insert-a-fragment-in-an-adaptive-form}

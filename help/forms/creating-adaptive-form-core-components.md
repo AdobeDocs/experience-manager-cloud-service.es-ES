@@ -1,18 +1,19 @@
 ---
-title: Creación de un formulario adaptable basado en componentes principales
-description: Obtenga información sobre cómo crear un formulario adaptable mediante  [!DNL Experience Manager Forms]. Los formularios adaptables son formularios HTML5 interactivos que agilizan la recopilación y el procesamiento de la información. Descubra más información sobre cómo crear un formulario adaptable basado en un modelo de datos de formulario (FDM) y un esquema XML o JSON.
+title: 'Creador de formularios: crear formularios con componentes principales'
+description: Aprenda a utilizar el generador de formularios de AEM Forms para crear formularios adaptables con componentes principales. Perfecto para creadores de formularios que necesitan formularios HTML5 interactivos que agilizan la recopilación y el procesamiento de la información.
+keywords: generador de formularios, componentes principales, crear formularios, creador de formularios, formularios adaptables, crear formularios, formularios AEM, formularios adaptables
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
-workflow-type: ht
-source-wordcount: '2340'
-ht-degree: 100%
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
+source-wordcount: '2348'
+ht-degree: 92%
 
 ---
 
-# Creación de un formulario adaptable (componentes principales) {#creating-an-adaptive-form-core-components}
+# Creador de formularios: crear formularios con componentes principales {#creating-an-adaptive-form-core-components}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -20,7 +21,7 @@ ht-degree: 100%
 | AEM as a Cloud Service | Este artículo |
 
 
-Los formularios adaptables le permiten crear formularios que son atractivos, receptivos, dinámicos y adaptables. AEM Forms ofrece un asistente empresarial fácil de usar que crea rápidamente formularios adaptables. El asistente dispone de una navegación rápida por pestañas para seleccionar fácilmente plantillas, estilos, campos y opciones de envío preconfiguradas para crear un formulario adaptable.
+El generador de formularios de AEM Forms le permite crear formularios atractivos, interactivos, dinámicos y adaptables. Tanto si es el creador de formularios que crea formularios profesionales como si necesita crear formularios adaptables rápidamente, AEM Forms le ofrece un asistente fácil de usar. El asistente dispone de un rápido desplazamiento por pestañas para seleccionar fácilmente plantillas, estilos, campos y opciones de envío preconfiguradas.
 
 Antes de empezar, obtenga información sobre el tipo de componentes de Forms disponibles para usted:
 
@@ -36,7 +37,7 @@ Antes de empezar, obtenga información sobre el tipo de componentes de Forms dis
 Para crear un formulario adaptable, es necesario lo siguiente:
 
 
-* **Habilitar los componentes principales de formularios adaptables para su entorno**: al crear un programa, los componentes principales de formularios adaptables ya están habilitados para su entorno.  Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service. Al habilitar los componentes principales para su entorno, las plantillas y las temáticas de **Formularios adaptables (componente principal)** se añaden a su entorno. Si su versión del SDK de AEM es anterior a la 2023.02.0, [compruebe que tiene `prerelease` activado el indicador en su entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features), ya que los componentes principales de formularios adaptables formaban parte de la versión preliminar anterior a la 2023.02.0.
+* **Habilitar los componentes principales de formularios adaptables para su entorno**: al crear un programa, los componentes principales de formularios adaptables ya están habilitados para su entorno.  Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service. Al habilitar los componentes principales para su entorno, las plantillas y las temáticas de **Formularios adaptables (componente principal)** se añaden a su entorno. Si su versión del SDK de AEM es anterior a la 2023.02.0, [compruebe que tiene `prerelease` habilitado el indicador en su entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features), ya que los componentes principales de formularios adaptables formaban parte de la versión preliminar anterior a la 2023.02.0.
 
 * **Una plantilla de formulario adaptable**: Una plantilla ofrece una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También ofrece opciones para definir una temática y una acción de envío. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. Por ejemplo, enviar los datos recopilados a una fuente de datos. El servicio en la nube proporciona una plantilla OOTB, denominada en blanco:
 
@@ -56,10 +57,10 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
-## Creación de un formulario adaptable  {#create-an-adaptive-form-core-components}
+## Crear un formulario adaptable  {#create-an-adaptive-form-core-components}
 
 1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms]. Puede ser una instancia de nube o una instancia de desarrollo local.
 
@@ -80,7 +81,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
    * Cuando la plantilla seleccionada especifica una temática, la temática se selecciona automáticamente en el asistente. También puede elegir una temática diferente de la pestaña Estilo.
 
-   * Si la plantilla seleccionada no especifica ninguna temática, puede utilizar la pestaña Estilo para elegir una temática. El botón **[!UICONTROL Crear]** solo se activa después de seleccionar una temática.
+   * Si la plantilla seleccionada no especifica ninguna temática, puede utilizar la pestaña Estilo para elegir una temática. El botón **[!UICONTROL Crear]** solo se habilita después de seleccionar una temática.
 
 1. (Opcional) En la pestaña Datos, seleccione un modelo de datos:
 
@@ -112,7 +113,7 @@ Ahora puede arrastrar y soltar los [componentes principales de formularios adapt
 >
 > También puede [crear formularios adaptables mediante plantillas de formulario XFA (archivos *.XDP)](/help/forms/create-adaptive-form-using-xfa-templates.md). Permite ahorrar tiempo reutilizando campos de archivos XDP directamente en los formularios adaptables.
 
-## Configuración de una acción de envío para un formulario adaptable {#configure-submit-action-for-form}
+## Configurar la acción de envío para un formulario adaptable {#configure-submit-action-for-form}
 
 Una acción de envío permite elegir el destino de los datos capturados mediante un formulario adaptable. Se activa una acción de envío cuando un usuario hace clic en el botón Enviar en un formulario adaptable. Los formularios adaptables incluyen algunas acciones de envío listas para usar. También puede ampliar las acciones de envío predeterminadas para crear su propia acción de envío personalizada. Para configurar una acción de envío para el formulario:
 
@@ -145,14 +146,14 @@ Al enviar un formulario, puede redirigir al usuario a otra página web o a un me
 
    * Para configurar un mensaje personalizado o de agradecimiento, por ejemplo, en la opción Enviar, seleccione la opción **[!UICONTROL Mostrar mensaje]** y proporcione un mensaje en la casilla **[!UICONTROL Contenido del mensaje.]** Es un cuadro de texto enriquecido, puede utilizar la opción de pantalla completa para ver todos los elementos de texto enriquecido disponibles.
 
-## Configuración de un esquema o un modelo de datos de formulario para un formulario adaptable{#configure-schema-or-data-model-for-form}
+## Configurar un esquema o un modelo de datos de formulario (FDM) para un formulario adaptable{#configure-schema-or-data-model-for-form}
 
 Puede utilizar el modelo de datos de formulario (FDM) para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido. En función del requisito, conecte el formulario a un esquema JSON o a un modelo de datos de formulario (FDM):
 
 * [Crear un esquema JSON y cargarlo en su entorno](/help/forms/adaptive-form-json-schema-form-model.md)
 * [Crear un modelo de datos de formulario (FDM)](/help/forms/create-form-data-models.md)
 
-### Configuración de un esquema JSON o un modelo de datos de formulario (FDM) para su formulario
+### Configurar un esquema JSON o un modelo de datos de formulario (FDM) para el formulario
 
 Para configurar un esquema JSON o un modelo de datos de formulario (FDM) para su formulario:
 
@@ -176,7 +177,7 @@ Puede utilizar el servicio de cumplimentación previa para rellenar automáticam
 * [Crear un servicio de rellenado previo personalizado](/help/forms/prepopulate-adaptive-form-fields.md)
 * [Servicio de rellenado previo de modelo de datos de formulario](#fdm-prefill-service)
 
-### Utilización del servicio de rellenado previo del modelo de datos de formulario para rellenar previamente los campos de un formulario adaptable {#fdm-prefill-service}
+### Utilice el servicio de prerrellenado del modelo de datos de formulario para rellenar previamente los campos de un formulario adaptable {#fdm-prefill-service}
 
 Puede utilizar el servicio de rellenado previo del modelo de datos de formulario para rellenar previamente los campos de un formulario adaptable mediante el uso de un modelo de datos de formulario o un servicio de rellenado previo personalizado. El servicio de rellenado previo del modelo de datos de formulario utiliza el [Obtener servicio del modelo de datos de formulario configurado](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) para recuperar datos. Para utilizar el servicio de rellenado previo del modelo de datos de formulario de un formulario adaptable, haga lo siguiente:
 
@@ -187,7 +188,7 @@ Puede utilizar el servicio de rellenado previo del modelo de datos de formulario
 1. Seleccione un modelo de datos de formulario. Abra la pestaña **[!UICONTROL Básico]**. En el servicio de rellenado previo, seleccione **[!UICONTROL Servicio de rellenado previo del modelo de datos de formulario]**.
 1. Haga clic en **[!UICONTROL Listo]**. El formulario adaptable ahora está configurado para utilizar el rellenado previo del modelo de datos de formulario. Ahora puede usar el [editor de reglas](rule-editor.md) para crear reglas para rellenar previamente los campos del formulario.
 
-## Edición de las propiedades del modelo de formulario de un formulario adaptable {#edit-form-model}
+## Editar las propiedades del modelo de formulario de un formulario adaptable {#edit-form-model}
 
 1. Seleccione el formulario adaptable e ![Información de página](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Abrir propiedades]**. Se abre la página Propiedades del formulario.
 
@@ -196,7 +197,7 @@ Puede utilizar el servicio de rellenado previo del modelo de datos de formulario
 1. Seleccione **[!UICONTROL Guardar]** para guardar las propiedades.
 
 
-## ¿Cómo se cambia el nombre a un formulario adaptable de AEM? {#rename-an-AEM-Adaptive-Form}
+## ¿Cómo cambiar el nombre de un formulario adaptable de AEM? {#rename-an-AEM-Adaptive-Form}
 
 Para cambiar el nombre de un formulario adaptable, realice los siguientes pasos:
 

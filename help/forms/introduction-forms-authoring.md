@@ -1,20 +1,20 @@
 ---
-title: Introducción a la creación de formularios adaptables
-description: AEM Forms proporciona una interfaz fácil de usar pero potente para la creación de formularios adaptables. Ofrece una serie de componentes y herramientas que puede utilizar para crear formularios.
+title: Introducción a la creación de Forms adaptable
+description: AEM Forms proporciona una interfaz fácil de usar pero potente para crear Forms adaptable. Ofrece una serie de componentes y herramientas que puede utilizar para crear formularios.
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '2496'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
-# Editor de formularios adaptables {#introduction-to-authoring-adaptive-forms}
+# Generador de Forms adaptable {#introduction-to-authoring-adaptive-forms}
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Los formularios adaptables creados con esta opción no utilizan ningún modelo d
 
   >[!NOTE]
   >
-  > Puede modificar las propiedades del modelo de formulario desde el editor de formularios adaptables o el editor de plantillas de formulario adaptable. Para obtener más información, consulte [Editar las propiedades del modelo de formulario de un formulario adaptable](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  > Puede modificar las propiedades del modelo del formulario desde el Creador de formularios adaptables o el Creador de plantillas de formulario adaptable. Para obtener más información, consulte [Editar las propiedades del modelo de formulario de un formulario adaptable](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Para crear un formulario adaptable, consulte [Creación de un formulario adaptable](creating-adaptive-form.md).
 
@@ -366,7 +366,7 @@ La estructura del contenido suele contener los siguientes componentes principale
 
 ## Asistente de IA en AEM
 
-Para los clientes que han [completado los criterios de requisitos previos](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), el asistente de IA en AEM está disponible para los usuarios de su organización. Ver [Asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Para los clientes que han [completado los criterios de requisitos previos](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), el Asistente de IA en AEM está disponible para los usuarios de su organización. Ver [Asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 ## Ver también {#see-also}
 

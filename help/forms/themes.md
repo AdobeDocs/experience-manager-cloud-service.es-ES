@@ -4,10 +4,10 @@ description: Utiliza temáticas de formularios adaptables para aplicar estilos y
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '5558'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -296,9 +296,9 @@ Al aplicar estilo a un componente, los estilos se almacenan en caché y se enume
 
 ![Estilo de fuente almacenado en caché para un componente disponible para otro](assets/font-style-cached1.png)
 
-En este ejemplo, se cambia el estilo de la etiqueta de campo y, cuando se selecciona Descripción del panel interrecurso para el estilo, se añade una entrada de lista en la biblioteca de recursos. La entrada de la biblioteca de recursos se puede utilizar para cambiar el estilo de Descripción del panel interactivo.
+En este ejemplo, se cambia el estilo de la etiqueta de campo y, cuando se selecciona Descripción del panel interrecurso para el estilo, se añade una entrada de lista en la biblioteca de recursos. La entrada de la biblioteca de recursos se puede utilizar para cambiar el estilo de Descripción del panel interrecurso.
 
-Cuando se añade un estilo en la biblioteca de recursos, está disponible para otras temáticas y para el [modo de estilo](inline-style-adaptive-forms.md) de la interfaz de usuario del editor de formularios. Del mismo modo, cuando se utiliza el modo de estilo de la interfaz de usuario del editor de formularios <!-- or interactive communication editor --> para dar estilo a un componente, el estilo se almacena en caché y está disponible en las temáticas.
+Cuando se agrega un estilo en la biblioteca de recursos, estará disponible para otras temáticas y para el [modo de estilo](inline-style-adaptive-forms.md) de la interfaz de usuario del generador de formularios. Del mismo modo, cuando se utiliza el modo de estilo de la interfaz de usuario del generador de formularios <!-- or interactive communication editor --> para dar estilo a un componente, el estilo se almacena en caché y está disponible en las temáticas.
 
 El botón “+” de la biblioteca de recursos permite guardar de forma permanente el estilo con el nombre que proporcione. El botón “+” guarda el estilo aunque no haga clic en el botón Guardar de la barra lateral para aplicarlo a un componente. El botón “+” para guardar un estilo para usarlo más tarde no está disponible en el modo de estilo.
 
@@ -672,12 +672,12 @@ Puede ver el CSS generado mediante las siguientes opciones:
 
   No se recomienda cambiar la anchura del diseño del panel contenedor. Cuando se especifica la anchura de un panel contenedor, este se vuelve estático y no se adapta a distintas pantallas.
 
-* **Utilización del editor de formularios o del editor de temáticas para trabajar con encabezado y pie de página**
+* **Cuándo usar el generador de formularios o el editor de temáticas para trabajar con encabezado y pie de página**
 
-  Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia. 
-Si desea proporcionar información como un logotipo, el nombre de la empresa en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.
+  Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia.
+Si desea proporcionar información como un logotipo, el nombre de la empresa en el encabezado e información de copyright en el pie de página, utilice las opciones de Form Builder.
 
 
-## Véase también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}

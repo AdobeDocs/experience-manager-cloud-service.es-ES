@@ -1,14 +1,14 @@
 ---
 title: Cómo crear el modelo de datos de formulario (FDM) para un formulario adaptable?
-description: Aprenda a crear formularios adaptables y fragmentos de formulario adaptable basados en un modelo de datos de formulario (FDM). Generar y editar datos de ejemplo para objetos de modelo de datos en el modelo de datos de formulario (FDM).
+description: Aprenda a crear formularios adaptables y fragmentos de formulario adaptable basados en un modelo de datos de formulario (FDM). Genere y edite datos de muestra para objetos del modelo de datos en el modelo de datos de formulario (FDM).
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -33,8 +33,8 @@ Un modelo de datos de formulario (FDM) es una extensión del esquema JSON que pu
 
 * [Crear formularios adaptables y fragmentos](#create-af)
   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
-* [Usar una vista previa con datos de ejemplo](#preview-ic)
-* [Usar el servicio del modelo de datos de formulario](#prefill)
+* [Vista previa con datos de muestra](#preview-ic)
+* [Uso del servicio del modelo de datos de formulario](#prefill)
 * [Escribir en diferido datos de formulario adaptable en fuentes de datos;](#write-af)
 * [Invocar servicios mediante reglas de formulario adaptable.](#invoke-services)
 
@@ -56,7 +56,7 @@ Puede crear [formularios adaptables](creating-adaptive-form.md) y fragmentos de 
 
    ![create-af-3](assets/create-af-3.png)
 
-   Una vez creado el formulario adaptable o el fragmento de formulario adaptable basado en un modelo de datos de formulario (FDM), los objetos de modelo de datos de formulario aparecen en la pestaña **[!UICONTROL Fuentes de datos]** del Explorador de contenido en el Editor de formularios adaptables.
+   Una vez creado el formulario adaptable o el fragmento de formulario adaptable basado en un modelo de datos de formulario (FDM), los objetos de modelo de datos de formulario aparecen en la pestaña **[!UICONTROL Fuentes de datos]** del Explorador de contenido en el Creador de formularios adaptables.
 
    >[!NOTE]
    >
@@ -86,9 +86,9 @@ For more information, see:
 
 [List fragments](lists.md) -->
 
-## Usar una vista previa con datos de ejemplo; {#preview-ic}
+## Vista previa con datos de muestra {#preview-ic}
 
-El editor del modelo de datos de formulario permite generar y editar datos de muestra para objetos de modelo de datos en el modelo de datos de formulario (FDM). Puede utilizar estos datos para previsualizar y probar formularios adaptables de <!--interactive communications and-->. Debe generar los datos de ejemplo antes de obtener la vista previa, tal como se describe en [Trabajo con el modelo de datos de formulario](work-with-form-data-model.md#sample).
+El editor del modelo de datos de formulario permite generar y editar datos de muestra para objetos de modelo de datos en el modelo de datos de formulario (FDM). Puede utilizar estos datos para previsualizar y probar formularios adaptables de <!--interactive communications and-->. Debe generar los datos de muestra antes de obtener la vista previa, tal como se describe en [Trabajo con el modelo de datos de formulario](work-with-form-data-model.md#sample).
 
 <!--To preview an interactive communication with sample Form Data Model data:
 
@@ -100,7 +100,7 @@ The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-Para obtener una vista previa de un formulario adaptable con datos de ejemplo, abra el formulario adaptable en el modo Autor y seleccione **[!UICONTROL Vista previa]**.
+Para obtener una vista previa de un formulario adaptable con datos de muestra, abra el formulario adaptable en el modo Autor y seleccione **[!UICONTROL Vista previa]**.
 
 ## Servicio de rellenado previo con el modelo de datos de formulario {#prefill}
 
@@ -124,7 +124,7 @@ Para configurar la acción de envío del modelo de datos de formulario:
 
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
-1. Abra la pestaña **[!UICONTROL Envío]**.
+1. Haga clic en la pestaña **[!UICONTROL Envío]**.
 1. En la lista desplegable **[!UICONTROL Acción de envío]**, seleccione la opción **[!UICONTROL Enviar mediante modelo de datos de formulario]**.
 
    ![Configuración de la acción](/help/forms/assets/configure-submit-action-invoke-fdm.png)
@@ -149,7 +149,7 @@ También puede enviar los archivos adjuntos del formulario a una fuente de datos
 
    Seleccione ![check-button](assets/save_icon.svg) para guardar las propiedades. El campo Archivo adjunto ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
 
-1. En la sección Envío de las propiedades del contenedor de formulario adaptable, active **[!UICONTROL Enviar archivos adjuntos del formulario]**. Esto envía el archivo adjunto del campo de propiedad binaria a la fuente de datos al enviar el formulario.
+1. En la sección Envío de las propiedades del contenedor de formulario adaptable, habilite **[!UICONTROL Enviar archivos adjuntos del formulario]**. Esto envía el archivo adjunto del campo de propiedad binaria a la fuente de datos al enviar el formulario.
 
 ## Invocar servicios desde formularios adaptables mediante reglas {#invoke-services}
 

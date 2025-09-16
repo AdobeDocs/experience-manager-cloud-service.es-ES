@@ -4,10 +4,10 @@ description: Aprenda a utilizar DocuSign con un formulario adaptable para recopi
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -177,7 +177,7 @@ Para crear un formulario adaptable habilitado para firmar:
 
    1. Seleccione el [contenedor de configuración](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creado al [integrarse [!DNL DocuSign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-   El contenedor de configuración contiene [!DNL DocuSign] Cloud Service configurado para su entorno. Estos servicios están disponibles para su selección en el editor de formularios adaptables.
+   El contenedor de configuración contiene [!DNL DocuSign] Cloud Service configurado para su entorno. Estos servicios están disponibles para su selección en el creador de formularios adaptables.
 
 1. En la pestaña **[!UICONTROL Modelo de formulario]**, seleccione una de las siguientes opciones:
 

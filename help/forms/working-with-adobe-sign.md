@@ -6,10 +6,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '3243'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 | AEM as a Cloud Service | Este artículo |
 
 
-[!DNL Adobe Sign] activa los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para áreas legales, de ventas, de nómina, de administración de recursos humanos y más.
+[!DNL Adobe Sign] habilita los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para áreas legales, de ventas, de nómina, de administración de recursos humanos y más.
 
 En un escenario típico de [!DNL Adobe Sign] y formularios adaptables, un usuario rellena un formulario adaptable para solicitar un servicio que requiera firmas de una o más partes. Por ejemplo, una solicitud de hipoteca y tarjeta de crédito requiere firmas legales de todos los prestatarios y cosolicitantes. Para habilitar los flujos de trabajo de firma electrónica para situaciones similares, se puede integrar [!DNL Adobe Sign] con un formulario adaptable. Algunos ejemplos más. Puede usar [!DNL Adobe Sign] para lo siguiente:
 
@@ -85,7 +85,7 @@ Para crear un formulario adaptable habilitado para firmar:
 
    1. Seleccione el [contenedor de configuración](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creado al [integrarse [!DNL Adobe Sign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-   El contenedor de configuración contiene [!DNL Adobe Sign] Cloud Service configurado para su entorno. Estos servicios están disponibles para su selección en el editor de formularios adaptables.
+   El contenedor de configuración contiene [!DNL Adobe Sign] Cloud Service configurado para su entorno. Estos servicios están disponibles para su selección en el creador de formularios adaptables.
 
 1. En la pestaña **[!UICONTROL Modelo de formulario]**, seleccione una de las siguientes opciones:
 
@@ -124,8 +124,8 @@ Para agregar campos a un formulario adaptable y personalizar varias opciones rel
 
    >[!NOTE]
    >
-   >  * El uso del bloque de [!DNL Adobe Sign] no es obligatorio para utilizar [!DNL Adobe Sign] en un formulario adaptable. Si no usa el bloque de [!DNL Adobe Sign] y agrega campos para los destinatarios, el campo de firma predeterminado se muestra al final de los documentos de firma.
-   >  * Use el bloque de [!DNL Adobe Sign] solo para los formularios adaptables que generan automáticamente el documento de registro. Si utiliza un XDP personalizado para generar un documento de registro o un formulario basado en un formulario adaptable, el bloque de [!DNL Adobe Sign] no es compatible.
+   > * El uso del bloque de [!DNL Adobe Sign] no es obligatorio para utilizar [!DNL Adobe Sign] en un formulario adaptable. Si no usa el bloque de [!DNL Adobe Sign] y agrega campos para los destinatarios, el campo de firma predeterminado se muestra al final de los documentos de firma.
+   > * Use el bloque de [!DNL Adobe Sign] solo para los formularios adaptables que generan automáticamente el documento de registro. Si utiliza un XDP personalizado para generar un documento de registro o una plantilla de formulario basada en un formulario adaptable, el bloque [!DNL Adobe Sign] no es compatible.
 
 
 1. Seleccione el componente **[!UICONTROL Adobe Sign Block]** y seleccione el icono **[!UICONTROL Editar]** ![Edit](assets/Smock_Edit_18_N.svg). Muestra las opciones para agregar campos y formatear la apariencia de un campo.
@@ -217,7 +217,7 @@ Puede tener uno o varios destinatarios para un acuerdo de Adobe Sign. Al agregar
 
    >[!NOTE]
    >
-   >    * De forma predeterminada, la autenticación basada en la identidad social proporciona una opción para autenticarse con Facebook, Google y LinkedIn. Puede ponerse en contacto con la ayuda técnica de [!DNL Adobe Sign] para habilitar otros proveedores de autenticación social.
+   > * De forma predeterminada, la autenticación basada en la identidad social proporciona una opción para autenticarse con Facebook, Google y LinkedIn. Puede ponerse en contacto con la ayuda técnica de [!DNL Adobe Sign] para habilitar otros proveedores de autenticación social.
    >
 
    * Campos de **[!DNL Adobe Sign]para rellenar o firmar:** seleccione campos de [!DNL Adobe Sign] para el destinatario. Un formulario adaptable puede tener varios campos de [!DNL Adobe Sign]. Puede elegir habilitar campos específicos para un destinatario. El campo muestra todos los bloques de [!DNL Adobe Sign] Block disponibles. Al seleccionar un bloque, se seleccionan todos los campos del bloque. Puede utilizar el icono X para anular la selección de un campo.

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Puede definir el aspecto y el estilo generales de un formulario adaptable especi
 
 Para añadir estilos en línea a un componente:
 
-1. Abra el formulario en el Editor de formularios y cambie el modo al modo Estilo. Para cambiar el modo al modo de estilo, en la barra de herramientas de la página, seleccione ![canvas-drop-down](assets/Smock_ChevronDown.svg) > **[!UICONTROL Estilo]**.
+1. Abra el formulario en el generador de formularios y cambie el modo al modo Estilo. Para cambiar el modo al modo de estilo, en la barra de herramientas de la página, seleccione ![canvas-drop-down](assets/Smock_ChevronDown.svg) > **[!UICONTROL Estilo]**.
 1. Seleccione un componente de la página y seleccione el botón Editar ![edit-button](assets/edit.svg). Las propiedades del estilo se abren en la barra lateral.
 
    También puede seleccionar componentes en el árbol de jerarquía del formulario de la barra lateral. El árbol de jerarquía del formulario está disponible como Objetos del formulario en la barra lateral.
