@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
-workflow-type: ht
-source-wordcount: '350'
-ht-degree: 100%
+source-git-commit: d73ccc454c89c7e06752de694af97ac26694be17
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 24%
 
 ---
 
@@ -16,47 +16,83 @@ ht-degree: 100%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 22171 {#22171}
+## Versión 22450 {#22450}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 22171, que se publicó el 2 de septiembre de 2025. La versión de mantenimiento anterior fue la 21994.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 22450, que se publicó el miércoles, 16 de septiembre de 2025. La versión de mantenimiento anterior fue la 22171.
 
 La activación de funcionalidades 2025.9.0 proporciona el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
-### Nuevas funciones  {#new-features-22171}
+### Nuevas funciones {#new-features-22450}
 
-* ASSETS-53136: compatibilidad con ID mnemónicos en Dynamic Media con OpenAPI.
+* SITES-32595: ahora se pueden identificar los flujos de trabajo que se completan con fragmentos omitidos o rechazados. Hay una nueva propiedad disponible en la respuesta de la API del flujo de trabajo que enumera fragmentos que se excluyeron por no ser válidos o tener referencias no válidas.
+* SITES-33642: Ahora se produce y consume un nuevo evento de API para los fragmentos de contenido modificados.
+* SITES-33320: Ahora es posible buscar un modelo de fragmento de contenido usando su `technicalName` a través de la API de búsqueda.
 
-### Mejoras {#enhancements-22171}
+### Mejoras {#enhancements-22450}
+
+* SITES-34023: el campo `technicalName` se ha agregado a las respuestas de los extremos del modelo de fragmento de contenido para una mejor identificación.
+* SITES-32766: las referencias de recursos de contenido en los modelos de fragmentos de contenido ahora admiten una gama más amplia de tipos de archivos binarios.
+* SITES-33974: Se ha mejorado la documentación de OpenAPI para que sea más precisa y fácil de usar.
+* SITES-9173: Caché `ContentPolicyStatus`.
+* SITES-9290: mejore el almacenamiento en caché de `TouchEditContext`.
+* SITES-33355: abra el nuevo editor de CF en &quot;Ver carga útil&quot; en la consola de flujo de trabajo.
+* SITES-33356: abre el nuevo editor de CF en Crear CF → ábralo en la IU táctil de la IU del administrador.
+* SITES-32952: Administración incoherente de los valores predeterminados para los campos CFM al utilizar la API de entrega.
+* SITES-31539: Edge Delivery con el editor universal: Agregue compatibilidad para las metaetiquetas de configuración del editor universal en `head.html`.
+* SITES-20672: Edge Delivery con editor universal: Añada compatibilidad con hojas de cálculo de metadatos masivas adicionales en la creación.
+* SITES-32963: Edge Delivery con editor universal: añada nuevos metadatos de experimentación para el objetivo de optimización, la asignación automática y el aprendizaje automático.
+* SITES-30847: Versión Componentes principales 2.30.0.
+* SITES-29617: el extremo referencedBy se ha actualizado para utilizar la clase ReferenceSearch, lo que mejora su rendimiento y fiabilidad.
+* SITES-19308: se ha mejorado el rendimiento del proceso de eliminación de páginas al optimizar el paso de validación de referencia.
+* SITES-34293: Se ha implementado la carga diferida para los recursos con plantillas para mejorar el rendimiento.
+* SITES-33892: se ha agregado una opción de función para omitir las comprobaciones de referencias de pseudopáginas, lo que puede mejorar el rendimiento.
+
+### Problemas solucionados {#fixed-issues-22450}
+
+* CQ-4360550: Se ha corregido una desaparición inesperada de la copia de idioma después de revertir el movimiento de página en AEM Cloud Service.
+* SITES-25232: los vínculos Establecer fecha y Deformación de tiempo de salida no tienen un indicador de enfoque visible.
+* SITES-25258: el enfoque no se administra con el cuadro de diálogo modal Eliminar anotación.
+* SITES-25305: la barra de herramientas Demográfica no recibe el enfoque en un orden lógico.
+* SITES-25366: El lector de pantalla no anuncia el estado de carga del modal de teaser.
+* SITES-34276: Edge Delivery con editor universal: corrija la política CORS creada automáticamente que no se aplica en el nivel de publicación.
+* SITES-34811: Edge Delivery con editor universal: corrija que el selector hlx no se agregue a los vínculos a hojas de cálculo en la creación.
+* SITES-31669: Cadenas no localizadas &quot;Esta página redirige a&quot; en Herramientas > Sites > Lanzamientos.
+* SITES-30879: cadenas no localizadas en Sites > Editor de páginas > Componente de búsqueda.
+* SITES-30959: cadenas no localizadas en el Editor de páginas > Componente de imagen.
+* SITES-21743: sin localizar &quot;Seleccione un documento para mostrar&quot; cadena en el Editor de páginas > Visor de PDF
+* SITES-19785: se deslocaliza Cadenas en el sitio de componentes principales > Pestañas.
+* SITES-22059: cadena sin localizar &quot;Vista previa de archivos no disponible&quot; en el sitio de componentes principales > Visor de PDF.
+* SITES-33360: &quot;Error&quot; no localizado durante la operación. La ruta proporcionada no es una cadena &quot;launch&quot; en Lanzamientos > Editar.
+* SITES-32975: formato de fecha no localizado en la IU sin encabezado > Lanzamientos > Comparar Lanzamiento con Source.
+* SITES-32973: cadenas codificadas en la IU sin encabezado > Lanzamientos > Rebase.
+* SITES-13540: cadenas no localizadas en Lanzamientos > Promoción.
+* SITES-13085: cadenas de error no localizadas en la página Sites > Creación de lanzamiento.
+* SITES-21499: la cadena no localizada es Sites > Lanzamientos > Editar.
+* SITES-14961: truncamiento del campo de fecha en Sitios > Propiedades > Modelo > Cuadro de diálogo de despliegue.
+* SITES-33764: Los filtros de lanzamiento (Ruta de Source/Lanzamientos creados por el flujo de trabajo) no funcionan.
+* SITES-33884: &quot;Promocionar la página actual y las páginas secundarias&quot; promociona de forma involuntaria páginas fuera de ámbito.
+* SITES-33611: La información general de Live Copy no funciona para mercados de gran volumen.
+* SITES-34331: tiempo de espera 503 al cargar la superposición de despliegue para usuarios no administradores.
+* SITES-34403: `NullPointerException` en `GraphqlClientImpl deactivate()` durante el apagado.
+* SITES-33817: se han resuelto problemas de sincronización entre el esquema de la interfaz de usuario y el modelo JCR para garantizar la coherencia.
+* SITES-31141: Las referencias de contenido que no se representan mediante una ruta ahora se devuelven correctamente en la respuesta de la API.
+* SITES-34080: el proceso de creación de fragmentos de contenido ahora es más robusto y no fallará si no se proporcionan campos a la solicitud.
+* SITES-30773: se ha mejorado la expresión regular para buscar palabras usando &quot;Buscar y reemplazar&quot; para que coincida correctamente con los caracteres UTF-8.
+* SITES-33742: se ha resuelto un error que impedía mover correctamente un fragmento de contenido al utilizar la API de flujo de trabajo.
+
+### Problemas conocidos {#known-issues-22450}
 
 Ninguna.
 
-### Problemas corregidos {#fixed-issues-22171}
-
-* ASSETS-52510: error al detectar nombres de archivo duplicados para los nombres de archivo que contienen Unicode `U+202F`.
-* ASSETS-53489: la eliminación de carpetas de la IU de vista de Assets no desaprueba todos los recursos contenidos.
-* ASSETS-54821: &quot;Error de servidor&quot; intermitente en Asset Link.
-* ASSETS-55024: imagen rota en la plantilla “Descargar por correo electrónico” de AEM Assets.
-* ASSETS-55325: las direcciones URL estáticas de Dynamic Media omiten la extensión de archivo después de cambiar el nombre de los recursos.
-* ASSETS-55334: el cuadro de diálogo Compartir vínculo parpadea brevemente y desaparece o no aparece nunca.
-* ASSETS-55382: los trabajos de recursos asincrónicos reiniciados crean una carpeta de destino duplicada.
-* ASSETS-55472: se ha omitido la opción Administrar publicación &quot;Incluir solo las páginas ya publicadas&quot;.
-* SITES-31600: error de Contexthub.js al romper la personalización.
-
-Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en la versión, consulte la [hoja de ruta de la versión de Experience Manager Guides](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Problemas conocidos {#known-issues-22171}
-
-Ninguna.
-
-### Características y API obsoletas {#deprecated-22171}
+### Características y API obsoletas {#deprecated-22450}
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-### Correcciones de seguridad {#security-22171}
+### Correcciones de seguridad {#security-22450}
 
-AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 7 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
+AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 18 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
 
-### Tecnologías integradas {#embedded-tech-22171}
+### Tecnologías integradas {#embedded-tech-22450}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|

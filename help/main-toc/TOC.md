@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1d75ad2487271f1839ed3a4f2b41597c3d183612
+source-git-commit: 875d87dff738b479aa915ca619510c0bfadd95e5
 workflow-type: tm+mt
-source-wordcount: '6618'
-ht-degree: 97%
+source-wordcount: '6624'
+ht-degree: 98%
 
 ---
 
@@ -98,6 +98,7 @@ ht-degree: 97%
    + Notas de la versión de mantenimiento de AEMaaCS  {#maintenance}
       + [Notas de la versión actuales sobre el mantenimiento](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [Notas de la versión de mantenimiento 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
          + [Notas de la versión de mantenimiento 2025.8.0](/help/release-notes/maintenance/2025/2025-8-0.md)
          + [Notas de la versión de mantenimiento 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
          + [Notas de la versión de mantenimiento 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
@@ -525,7 +526,7 @@ ht-degree: 97%
       + [Exportación de fragmentos de contenido a Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integración con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=es)
+      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetría operativa para AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Recursos {#assets}
    + [Información general y novedades](/help/assets/overview.md)
@@ -721,7 +722,7 @@ ht-degree: 97%
       + [Administrar informes](/help/assets/manage-reports-assets-view.md)
    + Content Hub {#content-hub}
       + [Información general](/help/assets/product-overview.md)
-      + [Novedades de Content Hub](/help/assets/whats-new.md)
+      + [Novedades del centro de contenido](/help/assets/whats-new.md)
       + [Implementación de Content Hub](/help/assets/deploy-content-hub.md)
       + [Carga o importación de recursos aprobados por la marca en Content Hub](/help/assets/upload-brand-approved-assets.md)
       + [Configuración de la interfaz de usuario de Content Hub](/help/assets/configure-content-hub-ui-options.md)
@@ -849,7 +850,7 @@ ht-degree: 97%
             + [Creación de una acción de envío personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Convertir formularios adaptables basados en componentes de base a formularios basados en componentes principales mediante la herramienta de utilidad de migración](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Plantillas de correo electrónico en formularios adaptables](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [Administrar publicación en Experience Manager Forms](/help/forms/manage-publication.md)
+            + [Administración de publicaciones en Experience Manager Forms](/help/forms/manage-publication.md)
             + Introducción al Editor de reglas para formularios adaptables basados en componentes principales{#rule-editor-core-components}
                + [Introducción al Editor de reglas para formularios adaptables basados en componentes principales](/help/forms/rule-editor-core-components.md)
                + [Interfaz de usuario del Editor de reglas para formularios adaptables basados en componentes principales](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1012,9 +1013,9 @@ ht-degree: 97%
       + [Generar variaciones](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
       + [Asistente de IA para AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-      + [Introducción al Asistente de IA para AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-      + [Introducción al Asistente de IA para AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-      + [Asistente de IA de AEM Forms: biblioteca de indicaciones ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+      + [Introducción al asistente de IA para AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
+      + [Introducción al asistente de IA para AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+      + [Asistente de IA de AEM Forms: biblioteca de indicaciones](/help/edge/docs/forms/ai-assistant-prompt-library.md)
       + [Forms Experience Builder: prácticas recomendadas](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
       + [Forms Experience Builder: Guía de resolución de problemas](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
@@ -1056,11 +1057,11 @@ ht-degree: 97%
    + [Preguntas frecuentes de Screens as a Cloud Service](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [Introducción e información general](/help/commerce-cloud/introduction.md)
-   + Edge Delivery Services Storefront {#edge-storefront}
+   + Escaparate de Edge Delivery Services {#edge-storefront}
       + [Introducción](/help/commerce-cloud/edge-storefront/introduction.md)
-   + Tienda de terceros {#thrid-party-storefront}
+   + Escaparate de terceros {#thrid-party-storefront}
       + [Introducción](/help/commerce-cloud/third-party-storefront/introduction.md)
-   + CIF Storefront {#cif-storefront}
+   + Escaparate de CIF {#cif-storefront}
       + [Introducción a CIF](/help/commerce-cloud/cif-storefront/introduction.md)
       + [Cambios importantes en AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/cif-storefront/changes.md)
       + Recorridos de Commerce  {#journeys}
@@ -1103,12 +1104,12 @@ ht-degree: 97%
       + [Migración](/help/commerce-cloud/cif-storefront/migration.md)
       + [Preguntas frecuentes](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Información general de Edge Delivery Services](/help/edge/overview.md)
+   + [Información general sobre Edge Delivery Services](/help/edge/overview.md)
 {#wysiwyg-authoring}
    + Creación de formularios  {#build-forms}
       + [Información general](/help/edge/docs/forms/overview.md)
 
-      + Creación de WYSIWYG {#universal-editor}
+      + Creación WYSIWYG {#universal-editor}
          + Lista desplegable en cascada {#cascading-drop-down-list}
             + [Introducción](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
             + [Crear integración de API](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
@@ -1116,7 +1117,7 @@ ht-degree: 97%
             + [Editor universal de Edge Delivery Services para formularios](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Vaya a la interfaz del editor universal para AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Introducción a Edge Delivery Services para AEM Forms con el editor universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Crear y publicar formularios adaptables con Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Creación y publicación de formularios adaptables con Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Crear formularios adaptables con el editor universal](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [Personalizar el tema y estilo de Edge Delivery Services para AEM Forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
          + [Editor de reglas para formularios dinámicos en el editor universal](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
