@@ -2,11 +2,11 @@
 title: Generar variaciones
 description: Obtenga información sobre “Generar variaciones”, accesible desde AEM as a Cloud Service y la barra de tareas de Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-feature: Generate Variations
+feature: Generate Variations, AI Tools
 role: Admin, Architect, Developer
-source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
-workflow-type: ht
-source-wordcount: '3294'
+source-git-commit: b99cc846a1efbbcd12244f68c770aa25ac4e985d
+workflow-type: tm+mt
+source-wordcount: '3295'
 ht-degree: 100%
 
 ---
@@ -163,7 +163,7 @@ Seleccione una variación, seguida de **Generar imagen**, para abrir directament
 
 Puede realizar más cambios:
 
-* [escriba su propia indicación en Adobe Express](https://helpx.adobe.com/es/firefly/using/tips-and-tricks.html) describiendo lo que le gustaría ver,
+* [escriba su propia indicación en Adobe Express](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) describiendo lo que le gustaría ver,
 * ajuste las opciones **Texto a imagen**,
 * luego **Actualice** las imágenes generadas.
 
@@ -182,7 +182,7 @@ Aquí puede pasar el ratón por encima de la imagen para mostrar los siguientes 
 
 >[!NOTE]
 >
->[Las Content Credentials](https://helpx.adobe.com/es/creative-cloud/help/content-credentials.html) no se conservan cuando se utilizan en la creación basada en documentos.
+>[Las Content Credentials](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) no se conservan cuando se utilizan en la creación basada en documentos.
 
 ### Utilizar el contenido {#use-content}
 
@@ -324,7 +324,7 @@ Cuando se selecciona, se abre el cuadro de diálogo **Guardar indicación**:
 >
 >Desde **Plantillas de indicación** puede eliminar las indicaciones (utilizando el menú al que se accede haciendo clic en los tres puntos) creadas por usted mismo o dentro de su organización IMS.
 
-## Audiencias {#audiences}
+## Públicos {#audiences}
 
 Para generar contenido personalizado, la IA generativa debe contar con información sobre el público. Adobe proporciona una serie de públicos predeterminados; también puede añadir los suyos propios.
 
@@ -408,15 +408,15 @@ La administración del uso depende de la acción realizada:
 
 * Generar variaciones
 
-  Una generación de una variante de copia es igual a una acción generativa. Como cliente, dispone de un determinado número de acciones generativas que vienen con su licencia de AEM. Una vez que haya consumido los derechos básicos, podrá adquirir acciones adicionales.
+  Una generación de una variante de copia es igual a una acción generativa. Como cliente, dispone de un determinado número de acciones generativas que vienen con su licencia de AEM. Una vez que haya consumido los derechos básicos, podrá comprar acciones adicionales.
 
   >[!NOTE]
   >
-  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/es/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea adquirir acciones más generativas.
+  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea comprar acciones más generativas.
 
 * Adobe Express
 
-  El uso de generación de imágenes se administra mediante derechos de Adobe Express y [créditos generativos](https://helpx.adobe.com/es/firefly/using/generative-credits-faq.html).
+  El uso de generación de imágenes se administra mediante derechos de Adobe Express y [créditos generativos](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
 
 ## Acceso a “Generar variaciones” {#access-generate-variations}
 
@@ -490,7 +490,7 @@ Para obtener más información, también puede leer:
 
 * [Generar variaciones de IA generativa en GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Experimentación de Edge Delivery Services](https://www.aem.live/docs/experimentation)
-* [Generativa en AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
+* [IA generativa de AEM as a Cloud Service](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## Preguntas frecuentes {#faqs}
 

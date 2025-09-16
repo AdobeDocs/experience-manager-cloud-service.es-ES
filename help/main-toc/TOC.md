@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 53e476981874597bfb7f9293e67b2d135c72b318
+source-git-commit: 3a8670061ce0e45f9ae70ab8d8f5df0604ed503a
 workflow-type: tm+mt
-source-wordcount: '6619'
+source-wordcount: '6618'
 ht-degree: 97%
 
 ---
@@ -525,7 +525,7 @@ ht-degree: 97%
       + [Exportación de fragmentos de contenido a Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integración con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=es)
+      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetría operativa para AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Recursos {#assets}
    + [Información general y novedades](/help/assets/overview.md)
@@ -1002,6 +1002,21 @@ ht-degree: 97%
       + [Reinicio del SDK de AEM](/help/forms/restart-aem-sdk.md)
       + [Resolver errores de creación de formularios](/help/forms/form-creation-failing.md)
       + [502 Página de error en acción de envío personalizada](/help/forms/custom-submit-action-troubleshooting.md)
++ IA en AEM {#ai-in-aem}
+   + [Información general](/help/ai-in-aem/overview.md)
+   + Asistente de IA {#ai-assistant}
+      + [Configuración del asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+      + [Acerca del asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+   + IA generativa {#generative-ai}
+      + [Generar variaciones: integrado en Editores AEM](/help/generative-ai/generate-variations-integrated-editor.md)
+      + [Generar variaciones](/help/generative-ai/generate-variations.md)
+   + Forms Experience Builder {#forms-experience-builder}
+      + [Asistente de IA para AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
+      + [Introducción al Asistente de IA para AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
+      + [Introducción al Asistente de IA para AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+      + [Asistente de IA de AEM Forms: biblioteca de indicaciones ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+      + [Forms Experience Builder: prácticas recomendadas](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+      + [Forms Experience Builder: Guía de resolución de problemas](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
    + Información general para Screens as a Cloud Service  {#overview}
       + [Introducción](/help/screens-cloud/introduction/introduction.md)
@@ -1216,19 +1231,6 @@ ht-degree: 97%
          + [Conceptos básicos de creación para usuarios sin encabezado con AEM](/help/journey-headless/author/basics.md)
          + [Obtenga información sobre el uso de referencias en fragmentos de contenido](/help/journey-headless/author/references.md)
          + [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](/help/journey-headless/author/metadata-tagging.md)
-+ Asistente de IA {#ai-assistant}
-   + [Configuración del asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
-   + [Acerca del asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
-+ IA generativa {#generative-ai}
-   + [IA generativa de AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
-   + [Generar variaciones: integrado en Editores AEM](/help/generative-ai/generate-variations-integrated-editor.md)
-   + [Generar variaciones](/help/generative-ai/generate-variations.md)
-   + [Asistente de IA para AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-   + [Introducción al Asistente de IA para AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [Introducción al Asistente de IA para AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-   + [Asistente de IA de AEM Forms: biblioteca de indicaciones ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-   + [Forms Experience Builder: prácticas recomendadas](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-   + [Forms Experience Builder: Guía de resolución de problemas](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Implementación  {#implementing}
    + [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
    + Uso de Cloud Manager  {#using-cloud-manager}
