@@ -163,7 +163,7 @@ Seleccione una variación, seguida de **Generar imagen**, para abrir directament
 
 Puede realizar más cambios:
 
-* [escriba su propia indicación en Adobe Express](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) describiendo lo que le gustaría ver,
+* [escriba su propia indicación en Adobe Express](https://helpx.adobe.com/es/firefly/using/tips-and-tricks.html) describiendo lo que le gustaría ver,
 * ajuste las opciones **Texto a imagen**,
 * luego **Actualice** las imágenes generadas.
 
@@ -182,7 +182,7 @@ Aquí puede pasar el ratón por encima de la imagen para mostrar los siguientes 
 
 >[!NOTE]
 >
->[Las Content Credentials](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) no se conservan cuando se utilizan en la creación basada en documentos.
+>[Las Content Credentials](https://helpx.adobe.com/es/creative-cloud/help/content-credentials.html) no se conservan cuando se utilizan en la creación basada en documentos.
 
 ### Utilizar el contenido {#use-content}
 
@@ -412,11 +412,11 @@ La administración del uso depende de la acción realizada:
 
   >[!NOTE]
   >
-  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea comprar acciones más generativas.
+  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/es/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea comprar acciones más generativas.
 
 * Adobe Express
 
-  El uso de generación de imágenes se administra mediante derechos de Adobe Express y [créditos generativos](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+  El uso de generación de imágenes se administra mediante derechos de Adobe Express y [créditos generativos](https://helpx.adobe.com/es/firefly/using/generative-credits-faq.html).
 
 ## Acceso a “Generar variaciones” {#access-generate-variations}
 
