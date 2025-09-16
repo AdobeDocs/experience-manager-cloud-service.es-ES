@@ -1,29 +1,29 @@
 ---
 title: Filtrado de componentes
-description: Descubra cómo puede restringir los componentes permitidos por contenedor en el Editor universal mediante filtros de componente.
+description: Descubra cómo puede restringir los componentes permitidos por contenedor en el editor universal mediante filtros de componente.
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
 source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '153'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Filtrado de componentes {#filtering-components}
 
-Descubra cómo puede restringir los componentes permitidos por contenedor en el Editor universal mediante filtros de componente.
+Descubra cómo puede restringir los componentes permitidos por contenedor en el editor universal mediante filtros de componente.
 
 ## Filtros {#filters}
 
-Al utilizar el Editor universal, puede restringir los componentes permitidos por componente de contenedor. Para ello, debe introducir una etiqueta de script adicional, que apunte a la definición del filtro.
+Al utilizar el editor universal, puede restringir los componentes permitidos por componente de contenedor. Para ello, debe introducir una etiqueta de script adicional que apunte a la definición del filtro.
 
 ```html
 <script type="application/vnd.adobe.aue.filter+json" src="/static/filter-definition.json"></script>
 ```
 
-Una definición de filtro puede tener el aspecto siguiente, que restringiría un contenedor para permitir únicamente agregar texto e imágenes.
+Una definición de filtro puede tener el aspecto siguiente, lo que restringiría un contenedor para permitir solo añadir texto e imágenes.
 
 ```json
 [
@@ -34,7 +34,7 @@ Una definición de filtro puede tener el aspecto siguiente, que restringiría un
 ]
 ```
 
-A continuación, puede hacer referencia a la definición del filtro desde el componente contenedor agregando la propiedad `data-aue-filter`, pasando el ID del filtro definido anteriormente.
+A continuación, puede hacer referencia a la definición del filtro desde el componente contenedor añadiendo la propiedad `data-aue-filter` y pasando el ID del filtro definido antes.
 
 ```html
 data-aue-filter="container-filter"

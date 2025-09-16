@@ -1,6 +1,6 @@
 ---
 source-git-commit: a90a561146901171d7e3eefecc5a98c73aa79f14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1623'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 [!BADGE Para crear contenido de AEM para Edge Delivery Services, haga clic aquí.]{type=Positive url="/help/edge/overview.md" tooltip="Creación de contenido de AEM para Edge Delivery Services"}
 
-## Véase también {#see-also}
+## Ver también {#see-also}
 
 * [Crear un formulario adaptable de AEM](/help/forms/creating-adaptive-form-core-components.md)
 * [Añadir un formulario adaptable de AEM a la página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
@@ -65,7 +65,7 @@ ht-degree: 100%
 * [Generar componentes de formulario personalizados](/help/edge/docs/forms/universal-editor/create-custom-component.md)
 * [Proteger los formularios del spam: añadir seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
-## Véase también {#see-more-forms-eds}
+## Ver también {#see-more-forms-eds}
 
 * [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
@@ -220,7 +220,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 **Registro de un vale de asistencia:**
 
-1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/es?support-tab=home#support) y cree un vale.
+1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un vale.
 1. Añada **Edge Delivery** en el título del ticket.
 1. En la descripción, proporcione los siguientes detalles además de la descripción del problema:
 
@@ -246,7 +246,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 * [Generar componentes de formulario personalizados](/help/edge/docs/forms/universal-editor/create-custom-component.md)
 * [Proteger los formularios del spam: añadir seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
-## Véase también {#see-more-eds-forms}
+## Ver también {#see-more-eds-forms}
 
 * [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)

@@ -1,33 +1,33 @@
 ---
-title: Aplicación de ejemplo de SecurBank para el editor universal
-description: Obtenga información sobre el editor universal con experiencia práctica mediante el uso de la aplicación SecurBank, diseñada para mostrar la potencia, flexibilidad y facilidad de uso del editor universal para acelerar la creación de contenido.
+title: Aplicación de muestra SecurBank para el editor universal
+description: Obtenga información sobre el editor universal con experiencia práctica mediante el uso de la aplicación SecurBank, diseñada para mostrar la potencia, flexibilidad y facilidad de uso del editor universal con el fin de acelerar la creación de contenido.
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Aplicación de ejemplo de SecurBank para el editor universal {#securbank}
+# Aplicación de muestra SecurBank para el editor universal {#securbank}
 
-Obtenga información sobre el editor universal con experiencia práctica mediante el uso de la aplicación SecurBank, diseñada para mostrar la potencia, flexibilidad y facilidad de uso del editor universal para acelerar la creación de contenido.
+Obtenga información sobre el editor universal con experiencia práctica mediante el uso de la aplicación SecurBank, diseñada para mostrar la potencia, flexibilidad y facilidad de uso del editor universal con el fin de acelerar la creación de contenido.
 
 ## Requisitos previos {#prerequisites}
 
-* Debe estar asignado al **Administrador de AEM** [perfil de producto](/help/journey-onboarding/assign-profiles-aem.md) para instalar la aplicación SecurBank.
-* Debe tener [Node.js](https://nodejs.org) versión 20 o superior instalado para el desarrollo local.
+* Debe estar asignado al [perfil de producto](/help/journey-onboarding/assign-profiles-aem.md) de **Administrador de AEM** para instalar la aplicación SecurBank.
+* Debe tener [Node.js](https://nodejs.org) versión 20 o superiores instalado para el desarrollo local.
 
 ## Instalación de SecurBank {#installation}
 
-La instalación de la aplicación de SecurBank es sencilla, pero como afecta a muchas áreas de AEM as a Cloud Service, hay que seguir una serie de pasos. A continuación se ofrece una descripción general de los pasos principales.
+La instalación de la aplicación SecurBank es sencilla, pero como afecta a muchas áreas de AEM as a Cloud Service, hay que seguir una serie de pasos. A continuación se ofrece información general sobre los pasos principales.
 
-1. [Crear un programa de zona protegida en Cloud Manager](#create-sandbox-program).
-1. [Clone el repositorio git del programa y actualícelo con el contenido del proyecto AEM de SecurBank](#clone-and-update).
-1. [Ejecute la canalización para implementar el proyecto AEM de SecurBank](#run-pipeline).
-1. [Recuperar credenciales de Cloud Manager para el desarrollo local de aplicaciones web](#retrieve-credentials).
+1. [Cree un programa de zona protegida en Cloud Manager](#create-sandbox-program).
+1. [Clone el repositorio Git del programa y actualícelo con el contenido del proyecto de AEM de SecurBank](#clone-and-update).
+1. [Ejecute la canalización para implementar el proyecto de AEM de SecurBank](#run-pipeline).
+1. [Recupere las credenciales de Cloud Manager para el desarrollo local de aplicaciones web](#retrieve-credentials).
 1. [Descargue y configure la aplicación web de SecurBank](#download-web-app).
 1. [Ejecute la aplicación web de SecurBank](#run-web-app).
 
@@ -44,29 +44,29 @@ Necesitará un nuevo programa de Cloud Manager donde pueda instalar SecurBank.
    * Use las opciones predeterminadas al seleccionar **Soluciones y complementos**.
    * Para obtener más información sobre cómo crear un programa de zona protegida, consulte el documento [Creación de programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
 
-### Clone el repositorio git del programa y actualícelo con el contenido del proyecto SecurBank AEM. {#clone-and-update}
+### Clone el repositorio Git del programa y actualícelo con el contenido del proyecto de AEM de SecurBank. {#clone-and-update}
 
-1. Una vez creado el programa, ábralo y en la ficha **Repositorios**, toque o haga clic en el botón **Acceder a la info del repositorio** para abrir el cuadro de diálogo **Información del repositorio** y ver las credenciales necesarias para acceder al repositorio de Git para el entorno de zona protegida.
+1. Una vez creado el programa, ábralo y en la pestaña **Repositorios**, toque o haga clic en el botón **Acceder a la información del repositorio** para abrir el cuadro de diálogo **Información del repositorio** y ver las credenciales necesarias para acceder al repositorio de Git para el entorno de zona protegida.
 
-   * Para obtener más información sobre cómo acceder a la información del repositorio, consulte el documento [Acceder a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+   * Para obtener más información sobre cómo acceder a la información del repositorio, consulte el documento [Acceso a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 1. Con las credenciales del cuadro de diálogo **Información del repositorio**, clone el repositorio en el equipo local.
 
-1. Busque la carpeta del clon local, ábrala y elimine todo el contenido excepto los archivos ocultos/de puntos.
+1. Busque la carpeta del clon local, ábrala y elimine todo el contenido excepto los archivos ocultos/con punto.
 
-1. Recupere el código más reciente del proyecto AEM de SecurBank desde GitHub en [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank) haciendo clic en **Código** y, a continuación, **Descargar ZIP** en el menú desplegable.
+1. Recupere el código más reciente del proyecto de AEM de SecurBank desde GitHub en [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank) haciendo clic en **Código** y, a continuación, **Descargar ZIP** en el menú desplegable.
 
-1. Descomprima el contenido del archivo zip en el sistema de archivos local y muévalo a la carpeta, ahora vacía, del clon local del programa de zona protegida.
+1. Descomprima el contenido del archivo ZIP en el sistema de archivos local y muévalo a la carpeta, ahora vacía, del clon local del programa de zona protegida.
 
-1. Con el terminal, cambie a la carpeta del proyecto clonado y confirme todo el contenido e instálelo en Git.
+1. Con el terminal, cambie a la carpeta del proyecto clonado y confirme todo el contenido y envíelo a Git.
 
    1. `git add --all`
    1. `git commit -m "Adding SecurBank app code"`
    1. `git push`
 
-### Ejecute la canalización para implementar el proyecto AEM de SecurBank. {#run-pipeline}
+### Ejecute la canalización para implementar el proyecto de AEM de SecurBank. {#run-pipeline}
 
-Con el proyecto de AEM para SecurBank comprometido con el repositorio de la zona protegida, se puede implementar con una canalización.
+Con el proyecto de AEM para SecurBank confirmado en el repositorio de la zona protegida, se puede implementar con una canalización.
 
 1. Vuelva a la pestaña **Información general** de su programa de zona protegida en Cloud Manager y ejecute la canalización de no producción de pila completa.
 
@@ -75,7 +75,7 @@ Con el proyecto de AEM para SecurBank comprometido con el repositorio de la zona
 
 ### Recupere las credenciales de Cloud Manager para el desarrollo de aplicaciones web locales. {#retrieve-credentials}
 
-Antes de poder ejecutar la aplicación de SecurBank, necesitará las credenciales de Cloud Manager para conectar la aplicación a Cloud Manager.
+Antes de poder ejecutar la aplicación SecurBank, necesitará las credenciales de Cloud Manager para conectar la aplicación a Cloud Manager.
 
 1. Mientras se ejecuta la canalización, vuelva a la pestaña **Información general** de Cloud Manager y toque o haga clic en el botón de puntos suspensivos situado junto al nombre del entorno y seleccione **Developer Console**.
 
@@ -83,34 +83,34 @@ Antes de poder ejecutar la aplicación de SecurBank, necesitará las credenciale
 
 1. Se genera un archivo JSON con el token de acceso. Copie solo el token en sí (el JSON restante no es necesario) a una ubicación segura para su uso en un paso futuro antes de cerrar Developer Console y volver a Cloud Manager.
 
-1. De nuevo en Cloud Manager, en la ficha **Información general**, haga clic con el botón secundario en la dirección URL del entorno para copiarla y guardarla en una ubicación segura para usarla en un paso futuro.
+1. De nuevo en Cloud Manager, en la pestaña **Información general**, haga clic con el botón derecho en la URL del entorno para copiarla y guardarla en una ubicación segura y usarla en un paso futuro.
 
-### Descargue y configure la aplicación web de SecurBank. {#download-web-app}
+### Descargue y configure la aplicación web SecurBank. {#download-web-app}
 
-Ahora puede descargar y configurar la aplicación web de SecurBank.
+Ahora puede descargar y configurar la aplicación web SecurBank.
 
 1. Recupere el último código de la aplicación SecurBank de GitHub en [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425/tree/ue-z-final-with-events`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425/tree/ue-z-final-with-events) haciendo clic en **Código** y luego en **Descargar ZIP** en el menú desplegable.
 
-1. Descomprima el contenido del archivo zip en el sistema de archivos local.
+1. Descomprima el contenido del archivo ZIP en su sistema de archivos local. 
 
-1. Inicie el editor de código que prefiera y abra el archivo de entorno oculto en el proyecto de aplicación de SecurBank en `summit-2024-l425-ue-z-final-with-events/react-app/.env`.
+1. Inicie el editor de código que prefiera y abra el archivo de entorno oculto en el proyecto de la aplicación SecurBank en `summit-2024-l425-ue-z-final-with-events/react-app/.env`.
 
-1. Realice los cambios siguientes en el archivo `.env` y guarde los cambios.
+1. Realice los cambios siguientes en el archivo `.env` y guárdelos.
 
-   * Para `REACT_APP_HOST_URI`, pegue el valor de la URL del entorno copiada anteriormente.
-   * Para `REACT_APP_DEV_TOKEN`, pegue el valor del token de desarrollo local copiado anteriormente.
+   * Para `REACT_APP_HOST_URI`, pegue el valor de la URL del entorno copiada antes.
+   * Para `REACT_APP_DEV_TOKEN`, pegue el valor del token de desarrollo local copiado antes.
 
-### Ejecute la aplicación web de SecurBank. {#run-web-app}
+### Ejecute la aplicación web SecurBank. {#run-web-app}
 
 Con todo configurado tanto en Cloud Manager como localmente, puede ejecutar la aplicación web de SecurBank.
 
-1. En la línea de comandos de su equipo local, vaya a la carpeta `react-app` del proyecto de aplicación de SecurBank que descargó y descomprimió.
+1. En la línea de comandos de su equipo local, vaya a la carpeta `react-app` del proyecto de la aplicación SecurBank que descargó y descomprimió.
 
 1. En la carpeta `react-app`, instale la aplicación SecurBank con el comando `node -i`.
 
-1. Una vez instalada, inicie la aplicación de SecurBank con el comando `npm start`.
+1. Una vez instalada, inicie la aplicación SecurBank con el comando `npm start`.
 
-1. Si la instalación y el inicio se han realizado correctamente, verá lo siguiente:
+1. Si la instalación y el inicio se han realizado de forma correcta, verá lo siguiente:
 
 * La siguiente salida en el terminal.
 
@@ -130,11 +130,11 @@ Con todo configurado tanto en Cloud Manager como localmente, puede ejecutar la a
 
    * Y una ventana del explorador abierta a la dirección URL `https://localhost:3000`.
 
-      * Tenga en cuenta que esto es para fines de desarrollo y, como tal, no se proporciona ningún certificado válido. Como tal, es posible que deba informar al explorador para que pueda acceder a la página.
+      * Tenga en cuenta que esto es para fines de desarrollo y, por ello, no se proporciona ningún certificado válido. Así, es posible que deba informar al explorador para que pueda acceder a la página.
 
-¡Enhorabuena! Ahora debería ver la aplicación de SecurBank ejecutándose correctamente en el explorador.
+¡Enhorabuena! Ahora debería ver la aplicación SecurBank ejecutándose correctamente en el explorador.
 
-Si el contenido aún no aparece, asegúrese de que la canalización **Implementar en desarrollador** que ejecutó se haya completado correctamente.
+Si el contenido aún no aparece, asegúrese de que la canalización **Implementar en desarrollo** que ejecutó se haya completado.
 
 ![Aplicación SecurBank en el explorador](assets/securbank.png)
 

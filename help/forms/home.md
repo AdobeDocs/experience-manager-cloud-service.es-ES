@@ -6,9 +6,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1201'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 83%
 <div class="version-selector">
   <p><strong>¿Busca documentación para una versión diferente?</strong></p>
   <ul>
-    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html?lang=es">Documentación de AEM 6.5 Forms</a></li>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">Documentación de AEM 6.5 Forms</a></li>
     <li><strong>AEM Forms as a Cloud Service</strong> (actual)</li>
   </ul>
 </div>
@@ -28,15 +28,15 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] ofrece una solución n
 
 El servicio siempre está actualizado, siempre está disponible, y aprende constantemente. Las organizaciones pueden utilizar [!DNL AEM Forms] as a Cloud Service y disfrutar de todas estas funciones en la nube sin necesidad de ninguna infraestructura local. El servicio también permite prescindir de los ciclos de actualización complejos, ya que siempre está actualizado con las últimas funciones.
 
-Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centrada en el cliente para admitir cada paso del recorrido del cliente.
+Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centrada en apoyar cada paso del recorrido del cliente.
 
 ## Digitalización y optimización de la experiencia de inscripción e incorporación
 
-Puede aprovechar el servicio para crear y desplegar formularios digitales interactivos y atractivos. Por ejemplo, imagine una organización que desea digitalizar su recorrido de inscripción de clientes. Tienen varias fuentes de datos con los datos de clientes existentes. Buscan una forma de rellenar previamente los formularios, agregarles firmas electrónicas y archivar los formularios rellenados como archivos PDF. Además, si la organización tiene varios formularios impresos (PDF forms), también está buscando convertir sus formularios impresos en formularios digitales.
+Puede aprovechar el servicio para crear y desplegar formularios digitales interactivos y atractivos. Por ejemplo, imagine una organización que desea digitalizar su recorrido de inscripción de clientes. Tienen varias fuentes de datos con los datos de clientes existentes. Buscan una forma de rellenar previamente los formularios, agregarles firmas electrónicas y archivar los formularios rellenados como archivos PDF. Además, si la organización cuenta con múltiples formularios impresos (PDF forms), y también quiere convertir todos sus formularios impresos en digitales.
 
 La organización puede utilizar [!DNL AEM Forms] as a Cloud Service para crear formularios digitales, conectar formularios a fuentes de datos existentes, integrar formularios con [!DNL Adobe Sign] para agregarles firmas electrónicas y generar el documento de registro (DoR) para archivar los formularios enviados como archivos PDF. Asimismo, pueden usar el servicio para convertir los PDF forms existentes en formularios digitales.
 
-En las grandes empresas, los formularios suelen crearse una vez y reutilizarse copiándolos a un sistema de gestión de contenidos. Mantener actualizada una gran base de datos de formularios y lograr que sean fáciles de encontrar puede suponer un reto considerable. AEM proporciona un portal de Forms personalizable que garantiza que los clientes encuentren y accedan a los formularios que necesitan en los canales web y móviles. Puede personalizar el aspecto, la marca y los logotipos del portal de Forms para satisfacer los requisitos específicos de su organización.
+En las grandes empresas, los formularios suelen crearse una vez y reutilizarse copiándolos a un sistema de gestión de contenidos. Mantener actualizada una gran base de datos de formularios y lograr que sean fáciles de encontrar puede suponer un reto considerable. AEM proporciona un portal de formularios personalizable que garantiza que los clientes puedan localizar y acceder a los formularios que necesitan en los canales web y móviles. Puede personalizar el aspecto, la promoción de la marca y los logotipos del Portal de formularios para satisfacer los requisitos específicos de su organización.
 
 ## Comunicaciones personalizadas
 
@@ -50,7 +50,7 @@ Los documentos personalizados, como los recibos, los kits de bienvenida y los ex
 
 ## Automatización de flujos de trabajo de back-office
 
-Utilice flujos de trabajo centrados en formularios para automatizar el procesamiento y el enrutamiento de los datos de formulario a varias partes interesadas, como los administradores o los departamentos, para su revisión, aprobación o procesamiento posterior. Estos flujos de trabajo ayudan a su organización a minimizar los riesgos y mantener el cumplimiento de las normas. Para ello, garantiza un procesamiento coherente y auditable de los datos del formulario, automatiza las tareas manuales, proporciona un control de acceso basado en funciones y ayuda a cumplir con los requisitos regulatorios.
+Utilice flujos de trabajo centrados en formularios para automatizar el procesamiento y el enrutamiento de los datos de formulario a varias partes interesadas, como los administradores o los departamentos, para su revisión, aprobación o procesamiento posterior. Estos flujos de trabajo ayudan a su organización a minimizar los riesgos y mantener el cumplimiento de las normas. Para ello, garantiza un procesamiento coherente y auditable de los datos del formulario, automatiza las tareas manuales, proporciona un control de acceso basado en funciones y ayuda a cumplir con los requisitos reglamentarios.
 
 
 ## Optimización del rendimiento de formularios
@@ -78,7 +78,7 @@ Genere, combine y envíe comunicaciones personalizadas:
 
 | Función | Descripción |
 |---|---|
-| API de comunicaciones | Automatice la creación, administración y entrega de comunicaciones personalizadas basadas en datos con API de RESTful a petición o a intervalos programados: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=es?#document-generation"> Generación de comunicaciones personalizadas </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=es?#document-manipulation"> Ensamblaje o desensamblaje de documentos PDF </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=es?#convert-to-and-validate-pdf%2Fa-compliant-documents">Creación de documentos compatibles con PDF/A </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=es">Proteja sus documentos con las API de DocAssurance</a></li></ul> |
+| API de comunicaciones | Automatice la creación, la administración y el envío de comunicaciones personalizadas basadas en datos con las API de RESTful bajo demanda o a intervalos programados: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=es?#document-generation"> Generación de comunicaciones personalizadas </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=es?#document-manipulation"> Ensamblaje o desensamblaje de documentos PDF </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=es?#convert-to-and-validate-pdf%2Fa-compliant-documents">Creación de documentos compatibles con PDF/A </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=es">Proteja sus documentos con las API de DocAssurance</a></li></ul> |
 | Documento de registro | Cree y administre registros de formularios enviados para la archivación y el cumplimiento: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=es"> Creación de un registro del formulario para archivarlo a largo plazo</a></li><li>Extensibilidad del lado del servidor para funcionalidades personalizadas</li><li>Funcionalidad de documento de registro para archivos a prueba de manipulaciones</li></ul> |
 
 ### Automatización de procesos y flujos de trabajo {#workflow}
@@ -87,8 +87,8 @@ Automatice los procesos empresariales y los flujos de trabajo relacionados con f
 
 | Función | Descripción |
 |---|---|
-| Flujos de trabajo de formularios | Automatice los procesos empresariales que implican servicios de formularios y documentos: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=es">Envío de un formulario o documento para su revisión</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es&#assign-task-step?lang=es">Creación de un flujo de trabajo de rechazo de aprobación</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=es#enabling-server-side-validation-br"> Envío de datos a un almacén o flujo de trabajo</a></li></ul> |
-| Firmas electrónicas | Integre con las soluciones Adobe Sign y Adobe Sign para Administración Pública para enviar fácilmente Forms y documentos a los usuarios para que los firmen por correo electrónico: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=es">Firma electrónica de un formulario adaptable con Adobe Sign </a></li><li>Pasos para <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es?#generate-document-of-record-step">Añadir un documento de registro </a>o <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es?#sign-document-step">firma electrónica </a>a un flujo de trabajo empresarial</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es?#sign-document-step">Firma electrónica de un documento con flujos de trabajo de Adobe Sign y AEM</a></li></ul> |
+| Flujos de trabajo de formularios | Automatice los procesos empresariales que implican servicios de formularios y documentos: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=es">Envío de un formulario o documento para su revisión</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#assign-task-step?lang=es">Creación de un flujo de trabajo de rechazo de aprobación</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=es#enabling-server-side-validation-br"> Envío de datos a un almacén o flujo de trabajo</a></li></ul> |
+| Firmas electrónicas | Se integra con las soluciones de Adobe Sign y Adobe Sign para gobiernos con el fin de facilitar el envío de formularios y documentos a los usuarios y que estos puedan usar la firma electrónica: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=es">Firma electrónica de un formulario adaptable con Adobe Sign </a></li><li>Pasos para <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es?#generate-document-of-record-step">Añadir un documento de registro </a>o <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es?#sign-document-step">firma electrónica </a>a un flujo de trabajo empresarial</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es?#sign-document-step">Firma electrónica de un documento con flujos de trabajo de Adobe Sign y AEM</a></li></ul> |
 
 ### Integración y análisis de datos {#data-integration}
 
@@ -103,11 +103,11 @@ Conecte los formularios a las fuentes de datos y obtenga información sobre el r
 
 ## Asistente de IA en AEM
 
-Para los clientes que han [completado criterios de requisitos previos](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), el Asistente de IA en AEM está disponible para los usuarios de su organización. Ver [Asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Para los clientes que han [completado los criterios de requisitos previos](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), el Asistente de IA en AEM está disponible para los usuarios de su organización. Consulte [Asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 >[!MORELIKETHIS]
 >
 >* [Crear un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
 >* [Incorporación al entorno de Cloud Service](/help/forms/setup-forms-cloud-service.md)
->* [Configuración de un entorno de desarrollo de local](/help/forms/setup-local-development-environment.md). 
+>* [Configuración de un entorno de desarrollo local](/help/forms/setup-local-development-environment.md).
 >* [Migración de AEM 6.5 Forms a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)

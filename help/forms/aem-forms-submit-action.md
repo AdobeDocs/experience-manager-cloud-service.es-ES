@@ -3,29 +3,29 @@ title: ¿Cómo configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: tm+mt
+exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
+source-git-commit: 558e26c6ad1c825498442ef3915fdcdd89ee9039
+workflow-type: ht
 source-wordcount: '667'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
+# Acciones de envío compatibles con los formularios adaptables
 
-# Acciones de envío compatibles con el Forms adaptable
-
-Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. Proporcionan una interfaz de usuario intuitiva y un conjunto de componentes predeterminados para diseñar y administrar formularios de forma eficaz. Puede configurar varias acciones de envío para enviar datos de formulario a servicios como OneDrive, SharePoint, Workfront Fusion y más.
+Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. Ofrecen una interfaz de usuario intuitiva y un conjunto completo de componentes predeterminados para diseñar y administrar formularios adaptables de forma eficiente. Puede configurar varias acciones de envío para enviar datos de formulario a servicios como OneDrive, SharePoint, Workfront Fusion y más.
 
 Se activa una acción de envío cuando un usuario hace clic en el botón **[!UICONTROL Enviar]** en un formulario adaptable. Forms as a Cloud Service proporciona varias acciones de envío listas para usar. Las acciones de envío integradas le permiten lo siguiente:
 
-* Enviar datos de formulario por correo electrónico sin esfuerzo
+* Enviar datos de formulario por correo electrónico sin esfuerzo.
 * Iniciar flujos de Microsoft® Power Automate o flujos de trabajo de AEM al transmitir los datos.
 * Transmitir directamente los datos del formulario al servidor de Microsoft® SharePoint, a Microsoft Azure Blob Storage o a Microsoft® OneDrive.
 * Enviar los datos sin problemas a una fuente de datos configurada mediante el modelo de datos de formulario (FDM).
 * Enviar cómodamente los datos a un punto final REST.
 
-## Acciones de envío compatibles con el Forms adaptable
+## Acciones de envío compatibles con los formularios adaptables
 
-Los formularios AEM ofrecen las siguientes acciones de envío listas para usar:
+Los formularios de AEM ofrecen las siguientes acciones de envío listas para usar:
 
 * [Enviar correo electrónico](/help/forms/configure-submit-action-send-email.md)
 * [Invocar un flujo de Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
@@ -49,20 +49,20 @@ También puede enviar un formulario adaptable a otras configuraciones de almacen
 
 La siguiente tabla muestra qué acciones de envío son compatibles en función del método de creación de formularios utilizado en AEM Forms:
 
-| Acción de envío | [Componentes de base](/help/forms/configuring-submit-actions.md) | [Componentes principales](/help/forms/configure-submit-actions-core-components.md) | [Editor universal](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [Forms basado en documentos](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
+| Acción de envío | [Componentes de base](/help/forms/configuring-submit-actions.md) | [Componentes principales](/help/forms/configure-submit-actions-core-components.md) | [Editor universal](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [Formularios basados en documentos](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
 |----------------------------|------------------------|------------------|------------------|------------------------|
-| Enviar un correo electrónico | Se admite ✅ | Se admite ✅ | Se admite ✅ |                        |
-| Flujo de Power Automate | Se admite ✅ | Se admite ✅ | Se admite ✅ |                        |
-| Enviar a SharePoint | Se admite ✅ | Se admite ✅ | Se admite ✅ |                        |
-| Workfront Fusion | Se admite ✅ | Se admite ✅ | Se admite ✅ |                        |
-| Enviar mediante FDM | Se admite ✅ | Se admite ✅ | Se admite ✅ |                        |
-| Enviar a AEP | Se admite ✅ | Se admite ✅ | Se admite ✅ |                        |
-| Almacenamiento de Azure Blob | Se admite ✅ | Se admite ✅ | Se admite ✅ |                        |
-| Enviar a extremo REST | Se admite ✅ | Se admite ✅ | Se admite ✅ |                        |
-| Enviar a Marketo Engage | Se admite ✅ | Se admite ✅ | Se admite ✅ |                        |
-| Enviar a OneDrive | Se admite ✅ | Se admite ✅ | Se admite ✅ |                        |
-| Invocar flujo de trabajo de AEM | Se admite ✅ | Se admite ✅ | Se admite ✅ |                        |
-| Enviar a hoja de cálculo |                        |                  | Se admite ✅ | Se admite ✅ |
+| Enviar un correo electrónico | ✅ Compatible | ✅ Compatible | ✅ Compatible |                        |
+| Flujo de Power Automate | ✅ Compatible | ✅ Compatible | ✅ Compatible |                        |
+| Enviar a SharePoint | ✅ Compatible | ✅ Compatible | ✅ Compatible |                        |
+| Workfront Fusion | ✅ Compatible | ✅ Compatible | ✅ Compatible |                        |
+| Enviar mediante FDM | ✅ Compatible | ✅ Compatible | ✅ Compatible |                        |
+| Enviar a AEP | ✅ Compatible | ✅ Compatible | ✅ Compatible |                        |
+| Azure Blob Storage | ✅ Compatible | ✅ Compatible | ✅ Compatible |                        |
+| Enviar al punto final REST | ✅ Compatible | ✅ Compatible | ✅ Compatible |                        |
+| Enviar a Marketo Engage | ✅ Compatible | ✅ Compatible | ✅ Compatible |                        |
+| Enviar a OneDrive | ✅ Compatible | ✅ Compatible | ✅ Compatible |                        |
+| Invocar el flujo de trabajo de AEM | ✅ Compatible | ✅ Compatible | ✅ Compatible |                        |
+| Enviar a hoja de cálculo |                        |                  | ✅ Compatible | ✅ Compatible |
 
 
 ## Revalidación del lado del servidor en formularios adaptables
@@ -76,7 +76,7 @@ La característica de revalidación del lado del servidor permite ejecutar tambi
 
 Todas las validaciones de campo listas para usar (OOTB) de un formulario adaptable que se vuelven a ejecutar en el servidor son las siguientes:
 
-* Requerido
+* Necesario
 * Cláusula de imagen de validación
 * Expresión de validación
 
@@ -115,7 +115,6 @@ As a part of AEM security and hardening guidelines, configure custom error pages
 
 When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.-->
 
-## Véase también
+## Ver también
 
 {{af-submit-action}}
-

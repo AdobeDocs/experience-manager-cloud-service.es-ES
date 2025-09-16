@@ -8,9 +8,9 @@ feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
 source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2335'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -171,7 +171,7 @@ Se puede ver el valor de dataRef en la ventana **[!UICONTROL Propiedades]** de u
 
 Antes de añadir un controlador de error mediante el servicio Invocar del Editor de reglas:
 
-* Instale la última versión para habilitar los componentes principales adaptables de Forms para su entorno de AEM Cloud Service.
+* Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service.
 
 * Obtenga información sobre cómo [crear funciones personalizadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=es#write-rules).
 
@@ -412,7 +412,7 @@ Using this custom error handler, the adaptive form converts the fields listed in
 * [Creación de estilos o temáticas para los formularios](/help/forms/using-themes-in-core-components.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
-## Véase también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}
 

@@ -1,34 +1,34 @@
 ---
 title: Definiciones del modelo, campos y tipos de componentes
-description: Obtenga información acerca de los campos y los tipos de componentes que el Editor universal puede editar en el panel de propiedades con ejemplos. Descubra cómo puede instrumentar su propia aplicación creando una definición de modelo y vinculándola al componente.
+description: Obtenga información acerca de los campos y los tipos de componentes que el editor universal puede editar en el panel de propiedades con ejemplos. Descubra cómo puede instrumentar su propia aplicación creando una definición de modelo y vinculándola al componente.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1569'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
 
 # Definiciones del modelo, campos y tipos de componentes {#field-types}
 
-Obtenga información acerca de los campos y los tipos de componentes que el Editor universal puede editar en el panel de propiedades con ejemplos. Descubra cómo puede instrumentar su propia aplicación creando una definición de modelo y vinculándola al componente.
+Obtenga información acerca de los campos y los tipos de componentes que el editor universal puede editar en el panel de propiedades con ejemplos. Descubra cómo puede instrumentar su propia aplicación creando una definición de modelo y vinculándola al componente.
 
 ## Información general {#overview}
 
-Al adaptar sus propias aplicaciones para utilizarlas con el editor universal, debe instrumentar los componentes y definir qué campos y tipos de componentes pueden manipular en el panel de propiedades del editor. Para ello, cree un modelo y vincúlelo a él desde el componente.
+Al adaptar sus propias aplicaciones para utilizarlas con el editor universal, debe instrumentar los componentes y definir qué campos y tipos de componentes pueden manipular en el panel de propiedades del editor. Para ello, cree un modelo y estableciendo el vínculo con él desde el componente.
 
 Este documento proporciona información general sobre la definición de un modelo, los campos y los tipos de componentes disponibles, así como configuraciones de ejemplo.
 
 >[!TIP]
 >
->Si no está familiarizado con cómo instrumentar su aplicación para el editor universal, consulte el documento [Información general del editor universal para desarrolladores de AEM](/help/implementing/universal-editor/developer-overview.md).
+>Si no sabe cómo instrumentar su aplicación para el editor universal, consulte el documento [Información general del editor universal para desarrolladores de AEM](/help/implementing/universal-editor/developer-overview.md).
 
 ## Estructura de definición de modelo {#model-structure}
 
-Para configurar un componente a través del panel de propiedades del Editor universal, debe existir una definición de modelo y vincularse al componente.
+Para configurar un componente a través del panel de propiedades del editor universal, debe existir una definición de modelo y estar vinculada al componente.
 
 La definición del modelo es una estructura JSON que comienza con una matriz de modelos.
 
@@ -47,13 +47,13 @@ Puede vincular un modelo a un componente de dos maneras: usando la [definición 
 
 ### Vinculación con la definición del componente {#component-definition}
 
-Este es el método preferido para vincular el modelo al componente. Al hacerlo, puede mantener el vínculo de forma centralizada en la definición del componente y permite arrastrar componentes a través de contenedores.
+Este es el método preferido para vincular el modelo al componente. Al hacerlo, puede mantener el vínculo de forma centralizada en la definición del componente, lo que permite arrastrar componentes entre distintos contenedores.
 
-Simplemente incluya la propiedad `model` en el objeto de componente en la matriz `components` del archivo `component-definition.json`.
+Solo hay que incluir la propiedad `model` en el objeto de componente en la matriz `components` del archivo `component-definition.json`.
 
-Para obtener más información, consulte el documento [Definición del componente.](/help/implementing/universal-editor/component-definition.md)
+Para obtener más información, consulte el documento [Definición de componente.](/help/implementing/universal-editor/component-definition.md)
 
-### Vinculación mediante instrumentación {#instrumentation}
+### Vinculación a través de la instrumentación {#instrumentation}
 
 Para usar la definición del modelo con un componente, se puede usar el atributo `data-aue-model`.
 
@@ -63,7 +63,7 @@ Para usar la definición del modelo con un componente, se puede usar el atributo
 
 >[!NOTE]
 >
->El editor universal comprueba primero si un modelo está vinculado mediante la instrumentación y lo utiliza antes de comprobar la definición del componente. Esto significa lo siguiente:
+>El editor universal comprueba primero si un modelo está vinculado a través de la instrumentación y utiliza eso antes de comprobar la definición del componente. Esto significa lo siguiente:
 >
 >* Los proyectos que hayan implementado el vínculo al modelo a través de la instrumentación seguirán funcionando tal cual sin necesidad de cambios.
 >* Si define el modelo en la [definición de componente](#component-definition) así como en la instrumentación, se utilizará siempre la instrumentación.
@@ -76,7 +76,7 @@ Una vez creado un modelo, se puede hacer referencia a él como un archivo extern
 <script type="application/vnd.adobe.aue.model+json" src="<url-of-model-definition>"></script>
 ```
 
-También puede definir el modelo en línea.
+De forma alternativa, también puede definir el modelo en línea.
 
 ```html
 <script type="application/vnd.adobe.aue.model+json">
@@ -88,24 +88,24 @@ También puede definir el modelo en línea.
 
 Un objeto de campo tiene la siguiente definición de tipo.
 
-| Configuración | Tipo de valor | Descripción | Requerido |
+| Configuración | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
 | `component` | `ComponentType` | Procesador del componente | Sí |
 | `name` | `string` | Propiedad [o ruta](#nesting) donde se mantendrán los datos | Sí |
 | `label` | `FieldLabel` | Etiqueta del campo | Sí |
 | `description` | `FieldDescription` | Descripción del campo | No |
-| `placeholder` | `string` | Marcador de posición para el campo | No |
+| `placeholder` | `string` | Marcador del campo | No |
 | `value` | `FieldValue` | Valor predeterminado | No |
-| `valueType` | `ValueType` | La validación estándar puede ser `string`, `string[]`, `number`, `date`, `boolean` | No |
-| `required` | `boolean` | ¿El campo es obligatorio? | No |
-| `readOnly` | `boolean` | Es el campo de solo lectura | No |
-| `hidden` | `boolean` | El campo está oculto de forma predeterminada | No |
+| `valueType` | `ValueType` | La validación estándar puede ser `string`, `string[]`, `number`, `date` o `boolean` | No |
+| `required` | `boolean` | ¿Es el campo obligatorio? | No |
+| `readOnly` | `boolean` | ¿Es el campo de solo lectura? | No |
+| `hidden` | `boolean` | Está oculto el campo de forma predeterminada | No |
 | `condition` | `RulesLogic` | Regla para mostrar u ocultar el campo según una [condición](/help/implementing/universal-editor/customizing.md#conditionally-hide) | No |
-| `multi` | `boolean` | ¿El campo es un campo múltiple<br/>Tenga en cuenta que no se permite anidar contenedores para campos múltiples en el panel de propiedades | No |
+| `multi` | `boolean` | ¿Es el campo un campo múltiple?<br/>Tenga en cuenta que no se permite anidar contenedores para campos múltiples en el panel de propiedades | No |
 | `validation` | `ValidationType` | Regla o reglas de validación para el campo | No |
 | `raw` | `unknown` | Datos sin procesar que el componente puede utilizar | No |
 
-### Nombre de campo y anidamiento {#nesting}
+### campo Nombre y anidamiento {#nesting}
 
 El campo `name` puede señalar directamente a una propiedad del recurso actual o, en el caso de los componentes de `cq:Pages`, también puede utilizar una ruta de acceso a una propiedad anidada. Por ejemplo:
 
@@ -113,7 +113,7 @@ El campo `name` puede señalar directamente a una propiedad del recurso actual o
 "name": "teaser/image/fileReference"
 ```
 
-### Tipos de componentes {#component-types}
+### tipos de componentes {#component-types}
 
 A continuación se indican los tipos de componentes que se pueden utilizar para procesar campos.
 
@@ -121,24 +121,24 @@ A continuación se indican los tipos de componentes que se pueden utilizar para 
 |---|---|
 | [Etiqueta de AEM](#aem-tag) | `aem-tag` |
 | [Contenido de AEM](#aem-content) | `aem-content` |
-| [Booleana](#boolean) | `boolean` |
+| [Booleano](#boolean) | `boolean` |
 | [Grupo de casillas de verificación](#checkbox-group) | `checkbox-group` |
 | [Contenedor](#container) | `container` |
 | [Fragmento de contenido](#content-fragment) | `aem-content-fragment` |
 | [Fecha y hora](#date-time) | `date-time` |
-| [Fragmento de experiencias](#experience-fragment) | `aem-experience-fragment` |
+| [Fragmento de experiencia](#experience-fragment) | `aem-experience-fragment` |
 | [Selección múltiple](#multiselect) | `multiselect` |
 | [Número](#number) | `number` |
-| [Grupo de radio](#radio-group) | `radio-group` |
+| [Grupo de opciones](#radio-group) | `radio-group` |
 | [Referencia](#reference) | `reference` |
 | [Texto enriquecido](#rich-text) | `richtext` |
 | [Seleccionar](#select) | `select` |
-| [Ficha](#tab) | `tab` |
+| [Pestaña](#tab) | `tab` |
 | [Texto](#text) | `text` |
 
 #### Etiqueta de AEM {#aem-tag}
 
-El tipo de componente de etiquetas de AEM habilita un selector de etiquetas de AEM, que se puede utilizar para adjuntar etiquetas al componente.
+El tipo de componente de etiquetas de AEM habilita un selector de etiquetas de AEM que se puede utilizar para adjuntar etiquetas al componente.
 
 >[!BEGINTABS]
 
@@ -160,21 +160,21 @@ El tipo de componente de etiquetas de AEM habilita un selector de etiquetas de A
 
 >[!TAB Captura de pantalla]
 
-![Captura de pantalla del tipo de componente de etiqueta AEM](assets/component-types/aem-tag-picker.png)
+![Captura de pantalla del tipo de componente de etiqueta de AEM](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
 >[!TIP]
 >
->Consulte el documento [Administración de datos de taxonomía](https://www.aem.live/docs/authoring-taxonomy) para obtener más información sobre cómo puede usar hojas de cálculo para administrar los datos de taxonomía de su proyecto de Edge Delivery Services.
+>Consulte el documento [Administración de datos de taxonomía](https://www.aem.live/docs/authoring-taxonomy) para obtener más información sobre cómo puede usar hojas de cálculo para gestionar los datos de taxonomía de su proyecto de Edge Delivery Services.
 
 #### Contenido de AEM {#aem-content}
 
 Un tipo de componente de contenido de AEM habilita un selector de contenido de AEM, que se puede utilizar para seleccionar cualquier recurso de AEM. A diferencia del [componente de referencia](#reference), que solo puede seleccionar recursos, el componente de contenido de AEM puede hacer referencia a cualquier contenido de AEM. Ofrece un tipo de validación adicional.
 
-| Tipo de validación | Tipo de valor | Descripción | Requerido |
+| Tipo de validación | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
-| `rootPath` | `string` | Ruta que abrirá el selector de contenido para que el usuario seleccione contenido de AEM, limitando la selección a ese directorio y subdirectorios | No |
+| `rootPath` | `string` | Ruta que abrirá el selector de contenido para que el usuario seleccione contenido de AEM, lo que limita la selección a ese directorio y subdirectorios | No |
 
 >[!BEGINTABS]
 
@@ -206,9 +206,9 @@ Un tipo de componente de contenido de AEM habilita un selector de contenido de A
 
 #### Booleano {#boolean}
 
-Un tipo de componente booleano almacena un valor true/false simple procesado como alternancia. Ofrece un tipo de validación adicional.
+Un tipo de componente booleano almacena un valor true/false simple procesado como conmutador. Ofrece un tipo de validación adicional.
 
-| Tipo de validación | Tipo de valor | Descripción | Requerido |
+| Tipo de validación | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
 | `customErrorMsg` | `string` | Mensaje que se muestra si el valor introducido no es un valor booleano | No |
 
@@ -291,9 +291,9 @@ Similar a un booleano, un tipo de componente de grupo de casillas de verificaci�
 
 Un tipo de componente contenedor permite agrupar componentes, incluida la compatibilidad con varios campos. Ofrece una configuración adicional. Tenga en cuenta que no se permite anidar contenedores para campos múltiples en el panel de propiedades
 
-| Configuración | Tipo de valor | Descripción | Requerido |
+| Configuración | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
-| `collapsible` | `boolean` | ¿El contenedor es contraíble? | No |
+| `collapsible` | `boolean` | ¿Es contraíble el contenedor? | No |
 
 >[!BEGINTABS]
 
@@ -332,7 +332,7 @@ Un tipo de componente contenedor permite agrupar componentes, incluida la compat
 
 ![Captura de pantalla del tipo de componente de contenedor](assets/component-types/container.png)
 
->[!TAB Compatibilidad con varios campos]
+>[!TAB Compatibilidad de varios campos]
 
 ```json
 {
@@ -367,15 +367,15 @@ Un tipo de componente contenedor permite agrupar componentes, incluida la compat
 
 El selector de fragmentos de contenido se puede usar para seleccionar un [fragmento de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md) y sus variaciones (si es necesario). Ofrece una configuración adicional.
 
-| Configuración | Tipo de valor | Descripción | Requerido |
+| Configuración | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
-| `variationName` | `string` | Nombre de variable para almacenar la variación seleccionada. Si no se define, no se muestra ningún selector de variaciones | No |
+| `variationName` | `string` | Nombre de variable para acceder a la variación seleccionada. Si no se define, no se muestra ningún selector de variación | No |
 
 También ofrece un tipo de validación adicional.
 
-| Tipo de validación | Tipo de valor | Descripción | Requerido |
+| Tipo de validación | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
-| `rootPath` | `string` | Ruta que abrirá el selector de contenido para que el usuario seleccione el fragmento de contenido, limitando la selección a ese directorio y subdirectorios | No |
+| `rootPath` | `string` | Ruta que abrirá el selector de contenido para que el usuario seleccione el fragmento de contenido, lo que limita la selección a ese directorio y subdirectorios | No |
 
 >[!NOTE]
 >
@@ -417,14 +417,14 @@ También ofrece un tipo de validación adicional.
 
 Un tipo de componente de fecha y hora permite especificar una fecha, una hora o una combinación de ambas. Ofrece configuraciones adicionales.
 
-| Configuración | Tipo de valor | Descripción | Requerido |
+| Configuración | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
 | `displayFormat` | `string` | Formato con el que se muestra la cadena de fecha | Sí |
-| `valueFormat` | `string` | Formato en el que se almacenará la cadena de fecha | Sí |
+| `valueFormat` | `string` | Formato en el que se almacena la cadena de fecha | Sí |
 
 También ofrece un tipo de validación adicional.
 
-| Tipo de validación | Tipo de valor | Descripción | Requerido |
+| Tipo de validación | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
 | `customErrorMsg` | `string` | Mensaje que se mostrará si no se cumple `valueFormat` | No |
 
@@ -504,19 +504,19 @@ También ofrece un tipo de validación adicional.
 
 >[!ENDTABS]
 
-#### Fragmento de experiencias {#experience-fragment}
+#### Fragmento de experiencia {#experience-fragment}
 
-El selector Fragmento de experiencia se puede usar para seleccionar un [Fragmento de experiencia](/help/sites-cloud/authoring/fragments/experience-fragments.md) y sus variaciones (si es necesario). Ofrece una configuración adicional.
+El selector Fragmento de experiencia se puede usar para seleccionar un [fragmento de experiencia](/help/sites-cloud/authoring/fragments/experience-fragments.md) y sus variaciones (si es necesario). Ofrece una configuración adicional.
 
-| Configuración | Tipo de valor | Descripción | Requerido |
+| Configuración | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
-| `variationName` | `string` | Nombre de variable para almacenar la variación seleccionada. Si no se define, no se muestra ningún selector de variaciones | No |
+| `variationName` | `string` | Nombre de variable para acceder a la variación seleccionada. Si no se define, no se muestra ningún selector de variación | No |
 
 También ofrece un tipo de validación adicional.
 
-| Tipo de validación | Tipo de valor | Descripción | Requerido |
+| Tipo de validación | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
-| `rootPath` | `string` | Ruta que abrirá el selector de contenido para que el usuario seleccione el fragmento de experiencia, limitando la selección a ese directorio y subdirectorios | No |
+| `rootPath` | `string` | Ruta que abrirá el selector de contenido para que el usuario seleccione el fragmento de experiencia, lo que limita la selección a ese directorio y subdirectorios | No |
 
 >[!BEGINTABS]
 
@@ -544,12 +544,12 @@ También ofrece un tipo de validación adicional.
 
 >[!TAB Captura de pantalla]
 
-![Captura de pantalla del selector de Fragmento de experiencia](assets/component-types/aem-experience-fragment.png)
+![Captura de pantalla del selector de fragmentos de experiencia](assets/component-types/aem-experience-fragment.png)
 
 >[!ENDTABS]
 
 
-#### Multiselect {#multiselect}
+#### Selección múltiple {#multiselect}
 
 Un tipo de componente de selección múltiple presenta varios elementos para su selección en una lista desplegable, incluida la capacidad de agrupar los elementos seleccionables.
 
@@ -612,8 +612,8 @@ Un tipo de componente de selección múltiple presenta varios elementos para su 
 
 >[!TAB Capturas de pantalla]
 
-![Captura de pantalla del tipo de componente multiselect](assets/component-types/multiselect.png)
-![Captura de pantalla de tipo de componente multiselección con agrupación](assets/component-types/multiselect-group.png)
+![Captura de pantalla del tipo de componente de selección múltiple](assets/component-types/multiselect.png)
+![Captura de pantalla del tipo de componente de selección múltiple con agrupación](assets/component-types/multiselect-group.png)
 
 >[!ENDTABS]
 
@@ -621,7 +621,7 @@ Un tipo de componente de selección múltiple presenta varios elementos para su 
 
 Un tipo de componente numérico permite introducir un número. Ofrece tipos de validación adicionales.
 
-| Tipo de validación | Tipo de valor | Descripción | Requerido |
+| Tipo de validación | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
 | `numberMin` | `number` | Número mínimo permitido | No |
 | `numberMax` | `number` | Número máximo permitido | No |
@@ -710,7 +710,7 @@ Un tipo de componente de grupo de radio permite una selección mutuamente excluy
 
 #### Referencia {#reference}
 
-Un tipo de componente de referencia habilita un selector de recursos de AEM, que se puede utilizar para seleccionar cualquier recurso de AEM al que hacer referencia. A diferencia del [componente de contenido de AEM](#aem-content), que puede seleccionar cualquier recurso de AEM, el componente de referencia solo puede hacer referencia a recursos. Ofrece un tipo de validación adicional.
+Un tipo de componente de referencia habilita un selector de recursos AEM, que se puede utilizar para seleccionar cualquier recurso de AEM al que hacer referencia. A diferencia del [componente de contenido de AEM](#aem-content), que puede seleccionar cualquier recurso de AEM, el componente de referencia solo puede hacer referencia a recursos. Ofrece un tipo de validación adicional.
 
 Un tipo de componente de referencia permite hacer referencia a otro objeto de datos del objeto actual.
 
@@ -768,7 +768,7 @@ El texto enriquecido permite la entrada de texto enriquecido multilínea.
 
 #### Seleccionar {#select}
 
-Un tipo de componente Seleccionar permite seleccionar una sola opción de una lista de opciones predefinidas en un menú desplegable.
+Un tipo de componente de selección permite seleccionar una sola opción de una lista de opciones predefinidas en un menú desplegable.
 
 >[!BEGINTABS]
 
@@ -802,7 +802,7 @@ Un tipo de componente Seleccionar permite seleccionar una sola opción de una li
 
 Un tipo de componente de pestaña le permite agrupar otros campos de entrada en varias pestañas para mejorar la organización del diseño para los autores.
 
-Una definición de `tab` se puede considerar como un separador en la matriz de `fields`. Todo lo que venga después de `tab` se colocará en esa ficha hasta que se encuentre un nuevo(a) `tab`, después de lo cual se colocarán los siguientes elementos en la nueva ficha.
+Una definición de `tab` se puede considerar como un separador en la matriz de `fields`. Todo lo que venga después de `tab` se colocará en esa pestaña hasta que se encuentre un nuevo `tab`, tras lo cual los siguientes elementos se situarán en la nueva pestaña.
 
 Si desea que los elementos aparezcan encima de todas las pestañas, deben definirse antes que las pestañas.
 
@@ -842,7 +842,7 @@ Si desea que los elementos aparezcan encima de todas las pestañas, deben defini
 
 >[!TAB Captura de pantalla]
 
-![Captura de pantalla del tipo de componente de ficha](assets/component-types/tab.png)
+![Captura de pantalla del tipo de componente de pestaña](assets/component-types/tab.png)
 
 >[!ENDTABS]
 
@@ -850,7 +850,7 @@ Si desea que los elementos aparezcan encima de todas las pestañas, deben defini
 
 El texto permite introducir una sola línea de texto.  Incluye tipos de validación adicionales.
 
-| Tipo de validación | Tipo de valor | Descripción | Requerido |
+| Tipo de validación | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
 | `minLength` | `number` | Número mínimo de caracteres permitidos | No |
 | `maxLength` | `number` | Número máximo de caracteres permitidos | No |

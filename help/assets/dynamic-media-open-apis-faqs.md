@@ -4,9 +4,9 @@ description: Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c3bac140c2e0b33cfc206cda7c0591fc75a47a1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1609'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Del mismo modo, para aprobar varios recursos simultáneamente dentro de una carp
 1. Haga clic en **[!UICONTROL Guardar]**.
 
 
-## ¿Cómo puedo asegurar la entrega de recursos y la búsqueda de Dynamic Media con las API abiertas? {#secure-asset-delivery}
+## ¿Cómo puedo asegurar la entrega de recursos y la búsqueda para Dynamic Media con OpenAPI? {#secure-asset-delivery}
 
 La administración central de recursos en Experience Manager permite a los administradores de DAM o a los administradores de marca administrar el acceso a los recursos. Pueden restringir el acceso configurando funciones o estableciendo el tiempo de activación y desactivación de los recursos aprobados en el lado de la creación, específicamente en la instancia de autor de AEM as a Cloud Service.
 
@@ -104,16 +104,16 @@ A continuación, se indican algunas de las diferencias clave entre Dynamic Media
 | Funcionalidades de Dynamic Media con OpenAPI | Dynamic Media |
 |---|---|
 | [Disponible solo con Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | También disponible con On-Premise o Adobe Managed Services con pasos de configuración y aprovisionamiento adicionales. |
-| [Conjunto completo de modificadores de imagen admitidos, como anchura, altura, rotación, voltear, calidad y formato](/help/assets/deliver-assets-apis.md) | Conjunto enriquecido de modificadores de imagen disponibles |
+| [Conjunto enriquecido de modificadores de imagen compatibles, como anchura, altura, girar, voltear, calidad y formato](/help/assets/deliver-assets-apis.md) | Conjunto enriquecido de modificadores de imagen disponibles |
 | [Entrega restringida de recursos en función de usuarios, funciones, fecha y hora](/help/assets/restrict-assets-delivery.md) | Todos los usuarios pueden acceder a los recursos publicados en Dynamic Media |
 | La mayoría de los desarrolladores están familiarizados con las especificaciones de OpenAPI. La extensibilidad de AEM Assets es muy sencilla con [Selector de recursos de Micro-Frontend](/help/assets/overview-asset-selector.md). | Las API basadas en SOAP, que suponen una barrera a la hora de desarrollar personalizaciones de integración. |
 | Cualquier cambio realizado en los recursos aprobados en DAM, incluidas las actualizaciones de la versión y las modificaciones de metadatos, se refleja automáticamente en las direcciones URL de entrega. Con un valor corto de tiempo de vida (TTL) de 10 minutos configurado para Dynamic Media con funciones de OpenAPI a través de CDN, las actualizaciones se pueden ver en todas las interfaces de creación y publicación en menos de 10 minutos. | TTL de CDN recomendado de 10 horas. Puede anular el valor de TTL mediante la acción de invalidación de la caché. |
 | Solo los recursos aprobados están disponibles para su envío a aplicaciones descendentes, lo que permite utilizar recursos de marca aprobados en experiencias digitales. | Las actualizaciones de un recurso publicado en Dynamic Media se publican automáticamente sin ningún flujo de trabajo de aprobación, lo que no garantiza que haya recursos de marca aprobados en las experiencias digitales. |
 | Informes de uso basados en el número de recursos entregados. Esta función estará disponible en breve. | Los informes de uso no están disponibles. Esta función estará disponible en breve. |
 | Los recursos marcados como Caducados en el repositorio de Assets as a Cloud Service ya no están disponibles para las aplicaciones descendentes. | No hay caducidad de recursos inherente. Un recurso permanece público hasta que se elimina del repositorio de AEM as a Cloud Service. |
-| No admite las funciones de recorte inteligente de vídeo. | Admite funciones de recorte inteligente de vídeo. |
+| No admite funciones de recorte inteligente de vídeo. | Admite funciones de recorte inteligente de vídeo. |
 | Codificaciones de vídeo dinámicas, que garantizan que se proporcionan las mejores codificaciones en función del vídeo de entrada. No se requiere ninguna configuración para el envío de vídeo nativo. | Codificaciones de norma 3 independientemente del vídeo de entrada (puede afectar al rendimiento del envío de vídeo). Debe configurar manualmente diferentes codificaciones para diferentes tasas de bits de vídeo. |
-| Habilita direcciones URL seguras y ocultas mediante UID de recursos sin poner en riesgo la SEO. | La ofuscación de URL solo está disponible para parámetros de consulta de URL. Los ID de los recursos (nombres de los recursos) en las URL son reconocibles. |
+| Habilita URL seguras y ocultas mediante UID de recursos sin poner en riesgo el SEO. | La ofuscación de URL solo está disponible para parámetros de consulta de URL. Los ID de los recursos (nombres de los recursos) en las URL son reconocibles. |
 
 
 ## ¿Cómo aborda Dynamic Media con funciones de OpenAPI las limitaciones de la función de Recursos de red? {#dynamic-media-openapi-addresses-connected-assets-limitations}
@@ -144,7 +144,7 @@ Para habilitar el uso de producción de [modificadores en Disponibilidad limitad
    * Lista de modificadores que se van a habilitar
 
 
-## ¿Cómo pruebo los modificadores experimentales? {#modifiers-not-generally-available}
+## ¿Cómo puedo probar los modificadores experimentales? {#modifiers-not-generally-available}
 
-Puede probar cualquier modificador, que generalmente no está disponible a través de API experimentales. Por ejemplo, &lt;/adobe/experimental/advancemodifiers-expires-YYYMMDD/assets>
+Puede probar cualquier modificador, lo cual no suele estar disponible a través de API experimentales. Por ejemplo, &lt;/adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
 Haga clic aquí para obtener más información sobre cómo usar las [API experimentales](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) y la [lista completa de modificadores](https://developer.adobe.com/experience-cloud/experience-manager-apis/).

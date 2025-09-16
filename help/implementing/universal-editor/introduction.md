@@ -5,9 +5,9 @@ exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 08997c760bf1d609dce1dd17de0c549a26083917
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '948'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ El editor universal es un editor visual versátil que forma parte de Adobe Exper
 * **Edición instantánea**: los autores pueden editar contenido directamente dentro de la experiencia de vista previa, lo que elimina la necesidad de localizar y navegar a orígenes de contenido individuales.
 * **Edición visual**: Mientras se realizan los cambios, los autores ven instantáneamente cómo afectan a la experiencia real del visitante, minimizando la fricción.
 * **Opciones reconocibles**: las opciones claramente etiquetadas y una interfaz de usuario intuitiva permiten a los autores configurar metadatos y componer diseños con facilidad.
-* **No técnico**: no se requiere experiencia especializada para hacer ediciones, mientras que las directrices de marca corporativa se aplican automáticamente, lo que facilita la escala de las tareas de contenido en toda la organización.
+* **No técnico**: no se requiere experiencia especializada para editar, mientras que las directrices de marca corporativa se aplican automáticamente, lo que facilita la escala de las tareas de contenido en toda la organización.
 * **Integración y extensibilidad**: totalmente integrados con AEM, los [puntos de extensión](#extensibility) flexibles del editor universal permiten que todas las herramientas esenciales estén unificadas en una sola interfaz coherente. Desde funciones con tecnología de IA hasta extensiones personalizadas adaptadas a sus necesidades empresariales únicas, permite a los equipos optimizar los flujos de trabajo y mejorar la productividad sin esfuerzo.
 
 En resumen:
@@ -61,23 +61,23 @@ Esta documentación es útil para utilizar el Editor universal con AEM as a Clou
 El editor universal ofrece muchas funciones que admiten una amplia gama de casos de uso para una administración de contenido eficaz.
 
 * **[WYSIWYG](/help/sites-cloud/authoring/universal-editor/authoring.md)**: realice la edición de lo que ve es lo que obtiene de cualquier forma de contenido web, incluido texto sin formato, texto enriquecido, multimedia y metadatos.
-* **[Composición](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)**: crea, edita, reordena, anida o elimina bloques de contenido de varios tipos (títulos, botones, teasers, secciones, incrustaciones, etc.).
+* **[Composición](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)**: cree, edite, reordene, anide o elimine bloques de contenido de varios tipos (títulos, botones, teasers, secciones, incrustaciones, etc.).
 * **[Diseño](/help/sites-cloud/authoring/universal-editor/templates.md)**: utilice plantillas de página, aplique estilos visuales y componga diseños con bloques como columnas, carruseles y acordeones.
-* **[Simulación de dispositivo](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)**: Previsualice y optimice el contenido para diferentes dispositivos de visitante mientras edita.
-* **Omnicanal**: reutiliza contenido estructurado y no estructurado en varios canales.
+* **[Simulación de dispositivo](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)**: previsualice y optimice el contenido para diferentes dispositivos de visitante mientras edita.
+* **Omnicanal**: reutilice contenido estructurado y no estructurado en varios canales.
 * **[Localización](/help/sites-cloud/authoring/universal-editor/inheritance.md)**: optimice los flujos de trabajo de traducción de contenido y administre de manera eficiente la herencia de contenido localizado con Multi-Site Manager.
-* **Coherencia**: Asegure el cumplimiento de las directrices de marca y mantenga la uniformidad en todo el contenido.
-* **Seguridad**: [Aplique control de acceso](/help/implementing/universal-editor/authentication.md), proteja la integridad del contenido y realice un seguimiento de los cambios con [control de versiones robusto.](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* **[Publicación](/help/sites-cloud/authoring/universal-editor/publishing.md)**: integra los flujos de trabajo de revisión, aprobación y publicación directamente en el editor.
-* **Unificado**: se integra completamente con herramientas de AEM como la consola de [Sites,](/help/sites-cloud/authoring/sites-console/introduction.md) [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md) y muchas más, lo que proporciona una experiencia de creación coherente.
+* **Coherencia**: asegure el cumplimiento de las directrices de marca y mantenga la uniformidad en todo el contenido.
+* **Seguridad**: [aplique control de acceso](/help/implementing/universal-editor/authentication.md), proteja la integridad del contenido y realice un seguimiento de los cambios con un [control de versiones sólido.](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* **[Publicación](/help/sites-cloud/authoring/universal-editor/publishing.md)**: integre los flujos de trabajo de revisión, aprobación y publicación directamente en el editor.
+* **Unificado**: se integra completamente con herramientas de AEM como la [Consola de Sites,](/help/sites-cloud/authoring/sites-console/introduction.md) el [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md) y muchas más, lo que proporciona una experiencia de creación coherente.
 
 ## Extensibilidad {#extensibility}
 
-El editor universal no solo es muy capaz de usar de forma predeterminada, sino que también ofrece una serie de posibilidades de extensión.
+El editor universal no solo es muy potente desde el primer momento, sino que ofrece numerosas posibilidades de ampliación.
 
-* **Las extensiones** son numerosas y están listas para usarse para admitir requisitos como flujos de trabajo, generar variaciones y habilitar la experimentación, entre otros.
-* **Una interfaz de usuario ampliable** le permite crear sus propias extensiones utilizando los mismos marcos subyacentes que aprovechan las extensiones listas para su uso, lo que permite la máxima flexibilidad para adaptarse a las necesidades de su proyecto.
-* Los **puntos de extensión**, como bloques, tipos de datos personalizados y eventos, permiten una integración perfecta de los requisitos empresariales personalizados más allá de la interfaz de usuario.
+* Las **extensiones** son numerosas y están listas para usarse para admitir requisitos como flujos de trabajo, generar variaciones y habilitar la experimentación, entre otros.
+* **Una IU ampliable** le permite crear sus propias extensiones utilizando los mismos marcos subyacentes que aprovechan las extensiones listas para su uso, lo que permite la máxima flexibilidad para adaptarse a las necesidades de su proyecto.
+* Los **puntos de extensión**, como bloques, tipos de datos personalizados y eventos, permiten una integración perfecta de los requisitos empresariales personalizados más allá de la IU.
 
 >[!TIP]
 >
@@ -85,7 +85,7 @@ El editor universal no solo es muy capaz de usar de forma predeterminada, sino q
 
 ## Editor universal y editor de fragmentos de contenido {#universal-editor-content-fragment-editor}
 
-A primera vista, podría parecer que el Editor universal y el Editor de fragmentos de contenido proporcionan funcionalidades de edición similares. Sin embargo, estos editores ofrecen capacidades muy diferentes y ejecutan diferentes trabajos del profesional del marketing.
+A primera vista, puede parecer que el editor universal y el editor de fragmentos de contenido proporcionan funciones de edición similares. Sin embargo, estos editores ofrecen capacidades muy diferentes y ejecutan diferentes trabajos del profesional del marketing.
 
 ### Editor de fragmentos de contenido {#content-fragment-editor}
 
@@ -101,17 +101,17 @@ Un profesional del marketing quiere crear contenido que esté adaptado al diseñ
 
 ## Limitaciones {#limitations}
 
-A medida que explore el editor universal y avance en la implementación de él en sus propios proyectos, tenga en cuenta las siguientes limitaciones.
+A medida que explore el editor universal y avance en su implementación en sus propios proyectos, tenga en cuenta las siguientes limitaciones.
 
-* No más de 25 recursos de AEM (fragmentos de contenido, páginas, fragmentos de experiencias, Assets, etc.) deben ser referencias como instrumentación en una sola página.
+* No más de 25 recursos de AEM (fragmentos de contenido, páginas, fragmentos de experiencias, recursos, etc.) deben ser referencias como instrumentación en una sola página.
 * AEM as a Cloud Service, [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) y [AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) son los únicos backends de AEM compatibles.
-* Se requiere la versión `2023.8.13099` o superior para AEM as a Cloud Service.
+* Se requiere la versión `2023.8.13099` o superiores para AEM as a Cloud Service.
 * Los autores de contenido deben tener sus propias cuentas de Experience Cloud individuales.
-* Como parte de AEM, el editor universal [ admite los mismos exploradores de escritorio que AEM.](/help/overview/supported-platforms.md)
+* Como parte de AEM, el editor universal [admite los mismos exploradores de escritorio que AEM.](/help/overview/supported-platforms.md)
    * Las versiones móviles de estos exploradores no son compatibles.
 
 {{ip-allow-lists-ue}}
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 Consulte el documento [Casos de uso y rutas de aprendizaje del editor universal](/help/implementing/universal-editor/use-cases.md) para obtener más información sobre casos de uso comunes del editor universal y descubrir los recursos de documentación adecuados para ayudarle en su proyecto.

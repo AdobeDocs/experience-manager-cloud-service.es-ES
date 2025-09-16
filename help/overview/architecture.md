@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2711'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 >id="intro_aem_cloudservice_architecture"
 >title="Introducción a la arquitectura de AEM as a Cloud Service"
 >abstract="En esta pestaña, puede ver la nueva arquitectura de AEM as a Cloud Service y comprender los cambios. AEM ha resultado en una arquitectura dinámica con un número variable de imágenes, por lo que es importante tomarse un tiempo para comprender la arquitectura de la nube."
->additional-url="https://video.tv.adobe.com/v/346180?captions=spa" text="Información general sobre la arquitectura"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Información general sobre la arquitectura"
 
 Adobe Experience Manager (AEM) as a Cloud Service ofrece un conjunto de servicios componibles para la creación y gestión de experiencias de alto impacto.
 
@@ -53,7 +53,7 @@ Existen cuatro tipos de [entornos](/help/implementing/cloud-manager/manage-envir
 
 * Entorno de ensayo:
 
-   * Un entorno de ensayo suele estar asociado a un entorno de producción en una relación de 1:1.
+   * Un entorno de ensayo siempre se asocia a un entorno de producción en una relación 1:1.
    * El entorno de ensayo está concebido principalmente para pruebas automatizadas antes de que los cambios en la aplicación se inserten en el entorno de producción.
       * Esto es independiente de los cambios que se inician por Adobe como parte de una actualización de mantenimiento o por las implementaciones de código.
       * También puede realizar pruebas manuales en el caso de una implementación de código.
@@ -74,7 +74,7 @@ Una vez configurados, AEM pueden hacer referencia a los repositorios de código 
 
 ## Arquitectura de servicios {#service-architecture}
 
- La lista de servicios de composición de alto nivel en AEM as a Cloud Service se puede representar con dos segmentos: Gestión de contenido y Entrega de experiencias.
+La lista de servicios de composición de alto nivel en AEM as a Cloud Service se puede representar con dos segmentos: Administración de contenido y Entrega de experiencias.
 
 ![Información general de AEM as a Cloud Service: con Edge Delivery Services](assets/architecture-aem-edge.png "Información general de AEM as a Cloud Service: con Edge Delivery Services")
 

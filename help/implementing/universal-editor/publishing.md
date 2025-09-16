@@ -1,45 +1,45 @@
 ---
 title: Cómo publica contenido el editor universal
-description: Descubra cómo publica su contenido el Editor universal, en qué se diferencia del proceso en la consola Sitios y las consideraciones al desarrollar sus propias aplicaciones para trabajar con él.
+description: Descubra cómo el editor universal publica su contenido, en qué se diferencia del proceso realizado en la consola Sitios y las consideraciones a la hora de desarrollar sus propias aplicaciones para trabajar con él.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
-workflow-type: tm+mt
+exl-id: 60f0bb4a-ee60-4f73-83ae-8568735474ad
+source-git-commit: b967a09df7c2e0f5094a6836fcf5311008081dc0
+workflow-type: ht
 source-wordcount: '564'
-ht-degree: 25%
+ht-degree: 100%
 
 ---
 
-
 # Cómo publica contenido el editor universal {#publishing}
 
-Descubra cómo publica su contenido el Editor universal, en qué se diferencia del proceso en la consola Sitios y las consideraciones al desarrollar sus propias aplicaciones para trabajar con él.
+Descubra cómo el editor universal publica su contenido, en qué se diferencia del proceso realizado en la consola Sitios y las consideraciones a la hora de desarrollar sus propias aplicaciones para trabajar con él.
 
 >[!TIP]
 >
->Este artículo cubre los detalles del proceso de publicación del editor universal para el desarrollador. Para el autor de contenido, [el proceso de publicación del contenido se describe aquí.](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>Este artículo explica los detalles del proceso de publicación del editor universal para el desarrollador. Para el autor de contenido, [el proceso de publicación de contenido se explica aquí.](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
-## Similitudes con el proceso de la consola Sites {#similarities}
+## Similitudes con el proceso de la consola Sitios {#similarities}
 
-Para los usuarios de [AEM Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md) y [Sites Console,](/help/sites-cloud/authoring/sites-console/introduction.md) el proceso de publicación de contenido con el editor universal funciona como está acostumbrado: al publicarse en AEM, el contenido se replica desde el servicio de creación al de publicación (o a [el servicio de vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md) si está disponible y según las opciones que el autor elija al publicar).
+Para los usuarios del [Editor de páginas de AEM](/help/sites-cloud/authoring/page-editor/introduction.md) y la [consola Sitios](/help/sites-cloud/authoring/sites-console/introduction.md), el proceso de publicación de contenido con el editor universal funciona de la manera habitual: al publicarlo en AEM, el contenido se replica desde el servicio de creación al de publicación (o al [servicio de vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md) si está disponible y según las opciones que el autor elija para la publicación).
 
 ## Diferencias {#differences}
 
 Lo que hace que la publicación con el editor universal sea un poco diferente no es tanto el editor en sí, sino el alojamiento externo de la aplicación que el editor universal hace posible.
 
-Cuando se aloja externamente, la aplicación web se preocupa de garantizar que el contenido se cargue desde el servicio de creación cuando los autores abran la aplicación dentro del editor y se cargue desde el servicio de publicación cuando los visitantes accedan a la aplicación.
+Cuando se aloja de forma externa, la aplicación web debe garantizar que el contenido se cargue desde el servicio de creación cuando los autores abren la aplicación en el editor, y que se cargue desde el servicio de publicación cuando los visitantes acceden a la aplicación.
 
 ## Detección del servicio en la aplicación {#detecting}
 
-La determinación de si se debe acceder al autor o al servicio de publicación se puede realizar mediante una sencilla instrucción condicional en la aplicación para elegir el extremo de autor o publicación adecuado al detectar que se está abriendo dentro del editor.
+La determinación de si se debe acceder al servicio de creación o de publicación se puede realizar mediante una simple afirmación condicional en la aplicación para elegir el autor apropiado o el punto final de publicación al detectar que se está abriendo en el editor.
 
-Otra opción es implementar la aplicación en dos entornos diferentes que estén configurados de forma diferente, de modo que uno recupere su contenido del servicio de creación y otro que lo recupere del servicio de publicación. Para permitir que los autores abran la dirección URL publicada en el Editor universal, se puede crear un pequeño script para &quot;convertir&quot; la dirección URL del lado de publicación a su equivalente en el entorno de creación (por ejemplo, anteponiendo un subdominio `author`), de modo que los autores se redirijan automáticamente.
+Otra opción es implementar la aplicación en dos entornos diferentes configurados de forma distinta, de modo que uno recupere su contenido del servicio de creación y que el otro lo recupere del servicio de publicación. Para permitir que los autores abran la URL publicada en el editor universal, se puede crear un pequeño script para “convertir” la URL del lado de publicación a su equivalente en el entorno de creación (por ejemplo, anteponiendo un subdominio `author`), de modo que los autores se redirijan automáticamente.
 
 ## Resumen {#summary}
 
 El objetivo del Editor universal es no imponer ninguna pauta particular, de manera que la implementación pueda lograr sus objetivos de una manera totalmente disociada, manteniendo todo sencillo y sin complicaciones para la implementación.
 
-Del mismo modo, el editor universal no establece ningún requisito sobre cómo debe proceder un proyecto en particular a la hora de determinar de qué servicio enviar el contenido. Más bien, permite varias posibilidades y permite al proyecto determinar qué solución es la mejor para sus propios requisitos.
+Del mismo modo, el editor universal no tiene ningún requisito sobre cómo un proyecto en particular debe determinar desde qué servicio enviar el contenido. En su lugar, habilita una serie de posibilidades y permite que sea el proyecto el que determine qué solución es la mejor para sus propios requisitos.
 
 ## Recursos adicionales {#additional-resources}
 

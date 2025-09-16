@@ -1,27 +1,27 @@
 ---
-title: Crear y publicar formularios adaptables con Edge Delivery Services
-description: Instrucciones paso a paso para crear, crear y publicar Forms adaptable con plantillas de Edge Delivery Services en AEM, con un enfoque en la precisión y la claridad técnicas.
-keywords: formularios adaptables, servicios de envío Edge, editor universal, creación de formularios, formularios AEM, publicación de formularios
+title: Creación y publicación de formularios adaptables con Edge Delivery Services
+description: Instrucciones paso a paso para generar, crear y publicar formularios adaptables mediante plantillas de Edge Delivery Services en AEM, con un enfoque en la precisión y la claridad técnicas.
+keywords: formularios adaptables, Edge Delivery Services, editor universal, creación de formularios, formularios AEM, publicación de formularios
 feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# Crear y publicar formularios adaptables con Edge Delivery Services
+# Creación y publicación de formularios adaptables con Edge Delivery Services
 
-Este documento proporciona instrucciones paso a paso para crear, configurar y publicar Forms adaptable con plantillas de Edge Delivery Services en AEM. Abarca todo el flujo de trabajo, desde la creación del formulario a la implementación de producción.
+Este documento proporciona instrucciones paso a paso para crear, configurar y publicar formularios adaptable con plantillas de Edge Delivery Services en AEM. Abarca todo el flujo de trabajo, desde la creación del formulario a la implementación de producción.
 
 Al final de la guía, aprenderá a hacer lo siguiente:
 
-- Creación de formularios con plantillas de Edge Delivery Services
-- Crear formularios con el Editor universal
+- Crear formularios con plantillas de Edge Delivery Services
+- Crear formularios mediante el editor universal
 - Configurar y publicar de formularios en Edge Delivery Services
 - Acceder a los formularios publicados y verificar la implementación
 
@@ -42,7 +42,7 @@ Asegúrese de que se cumplen los siguientes requisitos previos para continuar:
 - **Edge Delivery Services**: asegúrese de que el repositorio esté configurado para la implementación automática.
 - **Permisos**: compruebe que dispone de los derechos de acceso necesarios para la creación y publicación de formularios.
 
-- Confirme que el repositorio de GitHub contiene el bloque de formularios adaptables.
+- Confirmar que el repositorio de GitHub contenga el bloque de formularios adaptables.
 
 
 
@@ -113,7 +113,7 @@ Cada fase incluye pasos de validación para confirmar la configuración correcta
 
 1. **Diseñar el formulario**
    - Configure las propiedades de campo en el panel Propiedades.
-   - Establecer reglas y comportamientos de validación.
+   - Establezca reglas y comportamientos de validación.
    - Ajuste el estilo y el diseño según sea necesario.
 
    ![Formulario de registro completado](/help/edge/assets/contact-us.png)
@@ -207,7 +207,7 @@ Ejemplo del formulario `contact-us` en el repositorio `forms-project` de la orga
 
 A continuación, se muestran problemas comunes y soluciones para AEM Forms con Edge Delivery Services.
 
-+++Formulario no cargado
++++El formulario no se carga
 
 **Problema:** la dirección URL del formulario devuelve 404 o una página en blanco.
 
@@ -259,7 +259,7 @@ A continuación, se muestran problemas comunes y soluciones para AEM Forms con E
 
 +++
 
-+++Errores de envío de formularios
++++Errores de envío de formulario
 
 **Problema:** los envíos de formularios no funcionan.
 
@@ -291,7 +291,7 @@ Si los problemas persisten:
 
 1. Compruebe el estado del servicio de Adobe Experience Cloud.
 2. Revise la [documentación de Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=es).
-3. Visite la [Comunidad de Adobe Experience League](https://experienceleaguecommunities.adobe.com/?profile.language=es).
+3. Visite la [Comunidad de Adobe Experience League](https://experienceleaguecommunities.adobe.com/).
 4. Contacte con el Servicio de atención al cliente de Adobe.
 
 +++

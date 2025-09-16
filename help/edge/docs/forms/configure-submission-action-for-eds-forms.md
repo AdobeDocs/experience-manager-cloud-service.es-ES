@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Envíe datos de formulario directamente a la instancia de publicación de AEM as
 
 ### Requisitos de configuración
 
-#### &#x200B;1. Actualizar la URL de instancia de AEM en Edge Delivery
+#### &#x200B;1. Actualización de la URL de instancia de AEM en Edge Delivery
 
 Actualice la URL de instancia de AEM Cloud Service en el archivo `constant.js` del bloque `form` en `submitBaseUrl`. Puede configurar la URL en función de su entorno:
 
@@ -116,11 +116,11 @@ export const submitBaseUrl = 'http://localhost:<port-number>';
 
 #### &#x200B;2. Filtro de referente de OSGi
 
-Configure el Filtro de referente para permitir los dominios de sitio específicos de Edge Delivery:
+Configure el filtro de referente para permitir los dominios de sitio específicos de Edge Delivery:
 
-1. Crear o actualizar el archivo de configuración de OSGi: `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
+1. Cree o actualice el archivo de configuración OSGi: `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-2. Agregue la siguiente configuración con los dominios de sitio específicos:
+2. Añada la siguiente configuración con los dominios de sitio específicos:
 
    ```json
    {
@@ -148,11 +148,11 @@ Configure el Filtro de referente para permitir los dominios de sitio específico
    }
    ```
 
-3. Implementar la configuración mediante Cloud Manager
+3. Implementación de la configuración mediante Cloud Manager
 
-Para obtener la configuración detallada del filtro de referente de OSGi, consulte la guía [Filtro de referente](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
+Para obtener la configuración detallada del filtro de referente OSGi, consulte la guía [Filtro de referente](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
 
-#### &#x200B;3. Problemas del CORS (Intercambio de Recursos de Origen Cruzado)
+#### &#x200B;3. Problemas de CORS (uso compartido de recursos de origen cruzado)
 
 Configure las opciones de CORS en AEM para permitir solicitudes de los dominios de sitio específicos de Edge Delivery:
 
@@ -162,7 +162,7 @@ Configure las opciones de CORS en AEM para permitir solicitudes de los dominios 
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
 ```
 
-**Sitios de Edge Delivery: agregue cada dominio de sitio individualmente**
+**Sitios de Edge Delivery: añada cada dominio de sitio de forma individual**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
@@ -178,12 +178,12 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 >[!NOTE]
 >
->Reemplace `main--abc--adobe.aem.live` y `main--abc1--adobe.aem.live` por sus dominios de sitio reales. Cada sitio alojado desde el mismo repositorio requiere una entrada de configuración CORS independiente.
+>Reemplace `main--abc--adobe.aem.live` y `main--abc1--adobe.aem.live` con los dominios reales de su sitio. Cada sitio alojado desde el mismo repositorio requiere una entrada de configuración CORS independiente.
 
 Para obtener información detallada sobre la configuración de CORS, consulte la [Guía de configuración de CORS](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 
-Para habilitar CORS para su entorno de desarrollo local, consulte el artículo de [Comprender el Intercambio de Recursos de Origen Cruzado (CORS)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
+Para habilitar CORS para su entorno de desarrollo local, consulte el artículo [Comprensión del uso compartido de recursos de origen cruzado (CORS)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
 
 <!--
 #### 4. CDN Redirect Rules

@@ -1,41 +1,41 @@
 ---
 title: Eventos del editor universal
-description: Obtenga información sobre los diferentes eventos que envía el editor universal y que puede utilizar para reaccionar ante los cambios de contenido o de interfaz de usuario en la aplicación remota.
+description: Obtenga información sobre los diferentes eventos que envía el editor universal y que puede utilizar para reaccionar ante los cambios de contenido o de IU en la aplicación remota.
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Eventos del editor universal {#events}
 
-Obtenga información sobre los diferentes eventos que envía el editor universal y que puede utilizar para reaccionar ante los cambios de contenido o de interfaz de usuario en la aplicación remota.
+Obtenga información sobre los diferentes eventos que envía el editor universal y que puede utilizar para reaccionar ante los cambios de contenido o de IU en la aplicación remota.
 
 ## Introducción {#introduction}
 
 Las aplicaciones pueden tener diferentes requisitos para las actualizaciones de páginas o componentes. Por lo tanto, el editor universal envía eventos definidos a aplicaciones remotas. Si la aplicación remota no tiene un detector de eventos personalizado para el evento enviado, se ejecuta un [detector de eventos de reserva](#fallback-listeners) proporcionado por el paquete `universal-editor-cors`.
 
-Todos los eventos se invocan en el elemento DOM afectado de la página remota. Los eventos se propagan al elemento `BODY` donde está registrado el detector de eventos predeterminado proporcionado por el paquete `universal-editor-cors`. Hay eventos para el contenido y eventos para la interfaz de usuario.
+Todos los eventos se invocan en el elemento DOM afectado de la página remota. Los eventos se propagan al elemento `BODY`, donde está registrado el detector de eventos predeterminado proporcionado por el paquete `universal-editor-cors`. Hay eventos para el contenido y eventos para la IU.
 
-Todos los eventos siguen una convención de nombres.
+Todos los eventos siguen una convención de nomenclatura.
 
 * `aue:<content-or-ui>-<event-name>`
 
 Por ejemplo, `aue:content-update` y `aue:ui-select`
 
-Los eventos incluyen la carga útil de la solicitud y la respuesta y se activan una vez que la llamada correspondiente se realiza correctamente. Para obtener más información acerca de las llamadas y ejemplos de sus cargas útiles, consulte el documento [Llamadas al editor universal](/help/implementing/universal-editor/calls.md).
+Los eventos incluyen la carga útil de la solicitud y la respuesta y se activan una vez que la llamada correspondiente se realiza de forma correcta. Para obtener más información acerca de las llamadas y ejemplos de sus cargas útiles, consulte el documento [Llamadas del editor universal](/help/implementing/universal-editor/calls.md).
 
 ## Eventos de actualización de contenido {#content-events}
 
 ### aue:content-add {#content-add}
 
-El evento `aue:content-add` se activa cuando se agrega un nuevo componente a un contenedor.
+El evento `aue:content-add` se activa cuando se añade un nuevo componente a un contenedor.
 
-La carga útil es contenido del servicio Editor universal, con contenido de reserva de la definición del componente.
+La carga útil es contenido del servicio del editor universal, con contenido de reserva de la definición del componente.
 
 ```json
 {
@@ -57,7 +57,7 @@ La carga útil es contenido del servicio Editor universal, con contenido de rese
 
 El evento `aue:content-details` se activa cuando se carga un componente en el panel de propiedades.
 
-La carga útil es el contenido del componente y, opcionalmente, su esquema.
+La carga útil es el contenido del componente y, de forma opcional, su esquema.
 
 ```json
 {
@@ -140,11 +140,11 @@ La carga útil es el valor actualizado.
 }
 ```
 
-### Paso de cargas {#passing-payloads}
+### Paso de cargas útiles {#passing-payloads}
 
-Para todos los eventos de actualización de contenido, la carga útil solicitada, así como la carga útil de respuesta, se pasan al evento. Por ejemplo, para una llamada de actualización:
+Para todos los eventos de actualización de contenido, la carga útil solicitada, así como la carga útil de respuesta, se pasan al evento. P. ej., para una llamada de actualización:
 
-Solicitar carga útil:
+Carga útil de la solicitud:
 
 ```json
 {
@@ -164,7 +164,7 @@ Solicitar carga útil:
 }
 ```
 
-Carga de respuesta
+Carga útil de la respuesta
 
 ```json
 {
@@ -182,7 +182,7 @@ Carga de respuesta
 
 ### aue:ui-preview {#ui-preview}
 
-El evento `aue:ui-preview` se activa cuando el modo de edición de la página se cambia a **Vista previa**.
+El evento `aue:ui-preview` se activa cuando el modo de edición de la página se cambia a **Previsualizar**.
 
 La carga útil está vacía para este evento.
 
@@ -206,9 +206,9 @@ La carga útil está vacía para este evento.
 
 ### aue:ui-viewport-change {#ui-viewport-change}
 
-El evento `aue:ui-viewport-change` se activa cuando se cambia el tamaño de la ventanilla móvil.
+El evento `aue:ui-viewport-change` se activa cuando se cambia el tamaño del visor móvil.
 
-La carga útil son las dimensiones de la ventanilla móvil.
+La carga útil son las dimensiones del visor.
 
 ```json
 {
@@ -221,7 +221,7 @@ La carga útil son las dimensiones de la ventanilla móvil.
 
 ### aue:initialized {#initialized}
 
-El evento `aue:initialized` se activa para informar a la página remota de que se ha cargado correctamente en el editor universal.
+El evento `aue:initialized` se activa para informar a la página remota de que se ha cargado de forma correcta en el editor universal.
 
 La carga útil está vacía para este evento.
 
@@ -231,7 +231,7 @@ La carga útil está vacía para este evento.
 }
 ```
 
-## Escuchadores de eventos de reserva {#fallback-listeners}
+## Detectores de eventos de reserva {#fallback-listeners}
 
 ### Actualizaciones de contenido {#content-update-fallbacks}
 
@@ -242,15 +242,15 @@ La carga útil está vacía para este evento.
 | `aue:content-move` | Mover el contenido o la estructura del componente al área de destino |
 | `aue:content-patch` | Recarga de página |
 | `aue:content-remove` | Eliminación del elemento DOM |
-| `aue:content-update` | Actualizar `innerHTML` con la carga útil |
+| `aue:content-update` | Actualización de `innerHTML` con la carga útil |
 
 ### Eventos de IU {#ui-event-fallbacks}
 
 | Evento | Comportamiento |
 |---|---|
-| `aue:ui-select` | Desplazarse al elemento seleccionado |
-| `aue:ui-preview` | Agregar `class="adobe-ue-preview"` a la etiqueta de HTML |
-| `aue:ui-edit` | Agregar `class=adobe-ue-edit"` a la etiqueta de HTML |
+| `aue:ui-select` | Desplazamiento al elemento seleccionado |
+| `aue:ui-preview` | Adición de `class="adobe-ue-preview"` a la etiqueta HTML |
+| `aue:ui-edit` | Adición de `class=adobe-ue-edit"` a la etiqueta HTML |
 | `aue:ui-viewport-change` | No hacer nada |
 | `aue:initialized` | No hacer nada |
 

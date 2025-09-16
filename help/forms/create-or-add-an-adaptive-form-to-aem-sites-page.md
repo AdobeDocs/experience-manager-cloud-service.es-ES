@@ -6,9 +6,9 @@ Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites p
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
 source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3160'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -72,11 +72,11 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 Antes de empezar a crear o a crear un formulario adaptable, habilite los componentes principales de formularios adaptables y añada las bibliotecas de cliente de formularios adaptables a su página de AEM Sites:
 
-### Habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service
+### Habilite los componentes principales de formularios adaptables para su entorno de Cloud Service de AEM
 
-Instale la última versión para habilitar los componentes principales adaptables de Forms para su entorno de AEM Cloud Service.
+Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service.
 
-### Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites o de fragmento de experiencia
+### Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites o de fragmentos de experiencia
 
 Para habilitar la funcionalidad completa del componente Contenedor de formularios adaptables, añada las bibliotecas de cliente Customheaderlibs y Customfooterlibs a la página de AEM Sites mediante la canalización de implementación. Para añadir las bibliotecas:
 
