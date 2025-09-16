@@ -32,7 +32,7 @@ La fecha de lanzamiento de la versión de la funcionalidad Content Hub (2025.8.0
 
 Content Hub ahora acelera la detección de los recursos que necesita. Con la nueva función Búsqueda masiva, puede introducir varios valores para cualquier propiedad de filtro separadas por un delimitador (por ejemplo, varios ID de SKU) y recuperar al instante todos los recursos coincidentes mediante una sola búsqueda.
 
-[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
+[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
 ## Funciones de la versión de julio {#july-release-features}
 
