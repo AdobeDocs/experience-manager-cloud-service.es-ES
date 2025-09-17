@@ -16,14 +16,14 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
 >title="Uso de Best Practices Analyzer"
->abstract="Revise la documentación para utilizar Best Practices Analyzer (anteriormente Cloud Readiness Analyzer) y el informe generado. El informe de Best Practices Analyzer se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
+>abstract="Revise la documentación para utilizar Best Practices Analyzer (anteriormente Cloud Readiness Analyzer) y el informe generado. El informe del Analizador de prácticas recomendadas se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
 >additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Seminario web] Presentación de las herramientas para acelerar el recorrido a Adobe Experience Manager as a Cloud Service"
 
 ## Consideraciones importantes sobre el uso del Analizador de prácticas recomendadas {#imp-considerations}
 
 En la sección siguiente se comprenden las consideraciones importantes al ejecutar el Analizador de prácticas recomendadas (BPA):
 
-* El informe de BPA se ha creado a partir de los resultados de [Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=es) de Adobe Experience Manager (AEM). La versión de Pattern Detector utilizada por BPA se incluye en el paquete de instalación de BPA.
+* El informe de BPA se ha creado a partir de los resultados de [Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html) de Adobe Experience Manager (AEM). La versión de Pattern Detector utilizada por BPA se incluye en el paquete de instalación de BPA.
 
 * Solo el usuario **admin** o un usuario del grupo **administradores** pueden ejecutar BPA.
 
@@ -51,7 +51,7 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 Best Practices Analyzer se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de origen de Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Descargue el Analizador de prácticas recomendadas desde el portal [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html).
+>Descargue el Analizador de prácticas recomendadas desde el portal [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Conectividad del entorno de Source {#source-environment-connectivity}
 
@@ -167,7 +167,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >title="Interpretación del informe del Analizador de prácticas recomendadas"
 >abstract="Existen dos opciones para ver los resultados de los informes de BPA: IU y CSV. Cuando la herramienta Best Practices Analyzer se ejecuta en la instancia de AEM, el informe IU se muestra en los resultados de la ventana de las herramientas. El formato CSV del informe incluye información que se genera a partir de los resultados de Pattern Detector, ordenados y organizados por tipo de categoría, subtipo y nivel de importancia."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=es#analysis-report" text="Revisar el informe de Best Practices Analyzer"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=es" text="Explicación de las categorías del informe de Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=es" text="Explicación de las categorías del informe del Analizador de prácticas recomendadas"
 
 Cuando la herramienta Analizador de prácticas recomendadas se ejecuta en la instancia de AEM, el informe se muestra en los resultados de la ventana de herramientas.
 
@@ -286,8 +286,8 @@ El valor de esta propiedad es la duración de la caché en segundos. Un administ
 
 BPA utiliza una cuenta de usuario de servicio del sistema denominada `repository-reader-service` para ejecutar Pattern Detector. Esta cuenta está disponible en AEM 6.2 y posteriores. En AEM 6.1, esta cuenta debe crearse *antes de* la instalación de BPA siguiendo los pasos siguientes:
 
-1. Siga las instrucciones en [Crear un nuevo usuario de servicio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=es#creating-a-new-service-user) para crear un usuario. Establezca el UserID en `repository-reader-service` y deje la ruta intermedia vacía y luego haga clic en la marca de verificación verde.
+1. Siga las instrucciones en [Crear un nuevo usuario de servicio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) para crear un usuario. Establezca el UserID en `repository-reader-service` y deje la ruta intermedia vacía y luego haga clic en la marca de verificación verde.
 
-2. Siga las instrucciones en [Administrar usuarios y grupos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es#managing-users-and-groups), específicamente las instrucciones para Añadir usuarios a un grupo para agregar el `repository-reader-service` usuario al `administrators` grupo.
+2. Siga las instrucciones en [Administrar usuarios y grupos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), específicamente las instrucciones para Añadir usuarios a un grupo para agregar el `repository-reader-service` usuario al `administrators` grupo.
 
 3. Instale el paquete BPA mediante el Administrador de paquetes en la instancia de origen de AEM. (Esto agregará la modificación de configuración necesaria a la configuración de ServiceUserMapper para el usuario del servicio `repository-reader-service` del sistema).

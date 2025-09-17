@@ -11,7 +11,7 @@ ht-degree: 8%
 
 ---
 
-# Eliminación de un conjunto de migraciones {#delete-migration-set}
+# Eliminación de un conjunto de migración {#delete-migration-set}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_delete_migrationset"
