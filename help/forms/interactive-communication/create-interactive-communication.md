@@ -4,13 +4,10 @@ description: Crear comunicaciones personalizadas basadas en datos. Explore las f
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '585'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -22,7 +19,7 @@ ht-degree: 6%
 
 >[!IMPORTANT]
 >
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Los indicadores, los ejemplos y las prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa de los primeros usuarios.
+> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 Interactive Communications le permite crear, administrar y entregar comunicaciones personalizadas e interactivas, incluido el servicio de atención al cliente, la facturación, los documentos de incorporación, las cartas de oferta, las actualizaciones de cuenta y más. Está diseñado para admitir cualquier escenario en el que el contenido dinámico y específico del usuario mejore la experiencia de comunicación entre industrias.
 

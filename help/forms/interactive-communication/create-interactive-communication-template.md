@@ -4,13 +4,10 @@ description: Cree plantillas de comunicación interactiva en AEM Forms para defi
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 9%
+ht-degree: 18%
 
 ---
 
@@ -22,7 +19,7 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Los indicadores, los ejemplos y las prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa de los primeros usuarios.
+> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 Las plantillas de comunicación interactiva de AEM permiten a los usuarios definir estructuras de diseño reutilizables, como encabezados, pies de página, logotipos y estilo predeterminado. Estas plantillas sirven de base para crear comunicaciones coherentes, de marca y eficientes.
 
