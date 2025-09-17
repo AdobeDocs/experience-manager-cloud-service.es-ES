@@ -1,14 +1,14 @@
 ---
 title: Forms Experience Builder
-description: Elabore formularios potentes más rápido mediante fragmentos de formulario
+description: Introducción a Forms Experience Builder
 feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 6bbec984e1e22764c762d95ff52ae1f474c6b413
+source-git-commit: ce61bc434614e5d7b92de3f1290e7e15325d27b7
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '937'
 ht-degree: 40%
 
 ---
@@ -64,7 +64,6 @@ Transforme formularios y documentos existentes en experiencias digitales interac
 - **PDF planos**: documentos estáticos convertidos en formularios interactivos
 - **Imágenes y capturas de pantalla**: Formatos JPG y PNG (consultar con el equipo las limitaciones de tamaño)
 - **Forms dibujado a mano**: bocetos y fotografías en papel
-
 
 **Proceso de conversión inteligente**
 
@@ -206,7 +205,6 @@ Forms Experience Builder está disponible actualmente como parte del programa de
 - **Detalles del proyecto**: escala de tiempo, ámbito y casos de uso previstos
 - **Correo electrónico de trabajo oficial**: asociado a la cuenta de Adobe de su organización
 
-
 ### Cómo obtener el ID de organización de IMS y el ID de programa
 
 Para ver los pasos detallados para localizar el ID de organización de IMS y el ID de programa, consulte:
@@ -229,7 +227,6 @@ Para ver los pasos detallados para localizar el ID de organización de IMS y el 
 > **Programa de disponibilidad limitada**: el acceso a Forms Experience Builder está sujeto a la aprobación de los interesados internos. Adobe revisará su solicitud en función de la capacidad del programa y la alineación con los criterios de acceso anticipado. La aprobación no está garantizada y depende de la disponibilidad actual del programa.
 
 Para obtener más información acerca del programa de acceso anticipado y sus funciones, consulte la [documentación de acceso anticipado de AEM Forms](/help/forms/early-access-ea-features.md).
-
 
 ## Introducción
 
