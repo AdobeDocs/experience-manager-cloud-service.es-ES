@@ -6,9 +6,9 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: ae873f8d61f3f6b79f09df100d62714e41e3b849
-workflow-type: ht
-source-wordcount: '1070'
+source-git-commit: 20914cde3be3ff3061b061d930154bd72da45d11
+workflow-type: tm+mt
+source-wordcount: '1065'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Obtenga información sobre las funciones potentes y flexibles sin encabezado, su
 >id="aemcloud_headless_developer_resources"
 >title="Recursos para desarrolladores sin encabezado y documentación avanzada de AEM"
 >abstract="Todo lo que necesita para aprender acerca de CMS sin encabezado de AEM y crear y enviar mejores aplicaciones y experiencias más rápidas."
->additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es" text="Recursos para desarrolladores sin encabezado de AEM"
+
 
 ## Introducción {#introduction}
 
@@ -39,7 +39,7 @@ Esta guía le conduce por los temas de implementación sin encabezado en AEM, po
 >
 > Si prefiere **aprender haciendo** y si tiene conocimientos de AEM, visite los tutoriales de AEM sin encabezado, organizados por la API y el marco de trabajo disponibles en la [sección Recursos adicionales](#additional-resources) al final de este documento.
 
-## Audiencia {#audience}
+## Público {#audience}
 
 Este recorrido está diseñado para el desarrollador y expone los requisitos, pasos y enfoque de un proyecto de AEM sin encabezado desde la perspectiva del desarrollador. El recorrido define las personas adicionales con las que el desarrollador debe interactuar para que un proyecto tenga éxito, pero el punto de vista del recorrido es el del desarrollador.
 
@@ -47,7 +47,7 @@ Los siguientes son los perfiles que interactúan en este recorrido.
 
 | Grupo de usuarios | Descripción | Función en este recorrido |
 |---|---|---|
-| Desarrollador (audiencia de destino) | Tiene experiencia en el desarrollo de aplicaciones sin encabezado que consumen contenido de diferentes fuentes | Audiencia de destino de este recorrido |
+| Desarrollador (público destinatario) | Tiene experiencia en el desarrollo de aplicaciones sin encabezado que consumen contenido de diferentes fuentes | Público destinatario de este recorrido |
 | Autor de contenido | Crea y gestiona contenido que se suministra sin encabezado | Los autores de contenido crean contenido que el desarrollador entrega sin encabezado. |
 | Administrador | Gestiona la configuración base de AEM | El desarrollador trabaja con el administrador para realizar los cambios de configuración necesarios para el desarrollo. |
 | Arquitecto de contenido | Analiza los requisitos de los datos que deben entregarse sin encabezado y define la estructura de estos datos | Los desarrolladores trabajan con el arquitecto de contenido para comprender la estructura de los datos y los requisitos para ofrecerlos sin encabezado. |
