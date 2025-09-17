@@ -4,28 +4,29 @@ description: Descubra cómo AEM as a Cloud Service puede beneficiarse del rendim
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
-workflow-type: ht
-source-wordcount: '963'
-ht-degree: 100%
+source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 94%
 
 ---
 
 
 # Información general sobre Edge Delivery Services {#edge-delivery-services}
 
+>[!TIP]
+>
+>**¿Quiere ponerse manos a la obra de inmediato?**
+>
+>Si desea ponerse en contacto con Edge Delivery Services de inmediato, tiene dos opciones.
+>* [Empiece a crear de inmediato con un entorno de tutoriales prediseñado, completamente configurado y listo para usar.](https://www.aem.live/developer/ue-trial)
+>* Ingresa a más detalles y configura tu propio entorno en menos de 30 minutos [consultando el tutorial en aem.live.](https://www.aem.live/developer/ue-tutorial)
+
 ## ¿Qué es Edge Delivery Services? {#what-is-edge}
 
 Edge Delivery Services es un moderno marco de trabajo de entrega de contenidos que reinventa la forma en que se crean y envían los sitios web, optimizando la velocidad, la simplicidad y la escalabilidad. Es una parte esencial de Adobe Experience Manager y permite experiencias digitales más rápidas al llevar el renderizado y la entrega más cerca del usuario, al borde de la red.
 
 No reemplaza a una red de distribución de contenido (CDN), pero se integra a la perfección con su propia CDN o con la [CDN administrada por Adobe incluida.](/help/implementing/dispatcher/cdn.md)
-
->[!TIP]
->
->**¿Quiere ponerse manos a la obra de inmediato?**
->
->Si quiere ponerse manos a la obra de inmediato, puede iniciar su propio proyecto de Edge Delivery Services con la creación de AEM en menos de 30 minutos [consultando el tutorial en aem.live.](https://www.aem.live/developer/ue-tutorial)
-
 
 ## ¿Por qué Edge Delivery Services? {#why-edge}
 
