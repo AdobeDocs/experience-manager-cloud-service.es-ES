@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar el tráfico de CDN decl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
+source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1630'
 ht-degree: 1%
 
 ---
@@ -426,6 +426,8 @@ La acción disponible se explica en la tabla siguiente.
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | Nombre de uno de los orígenes definidos. |
 |     | skipCache (opcional, el valor predeterminado es false) | Indicar si se debe utilizar el almacenamiento en caché para las solicitudes que coinciden con esta regla. De forma predeterminada, las respuestas se almacenan en caché según el encabezado de almacenamiento en caché de respuestas (por ejemplo, Cache-Control o Expires) |
+| **selectAemOrigin** | originName | Nombre de uno de los orígenes predefinidos de AEM (valor admitido: `static`). |
+|     | skipCache (opcional, el valor predeterminado es false) | Indicar si se debe utilizar el almacenamiento en caché para las solicitudes que coinciden con esta regla. De forma predeterminada, las respuestas se almacenan en caché según el encabezado de almacenamiento en caché de respuestas (por ejemplo, Cache-Control o Expires) |
 
 **Orígenes**
 
@@ -441,6 +443,29 @@ Las conexiones a orígenes son solo SSL y utilizan el puerto 443.
 | **forwardAuthorization** (opcional, el valor predeterminado es falso) | Si se establece en true, el encabezado &quot;Autorización&quot; de la solicitud del cliente se pasará al backend; de lo contrario, se eliminará el encabezado Autorización. |
 | **tiempo de espera** (opcional; en segundos; el valor predeterminado es 60) | Número de segundos que la CDN debe esperar para que un servidor back-end envíe el primer byte de un cuerpo de respuesta HTTP. Este valor también se utiliza como tiempo de espera entre bytes para el servidor back-end. |
 
+### Proxy del dominio personalizado al nivel estático de AEM {#proxy-custom-domain-static}
+
+Los selectores de origen se pueden usar para enrutar el tráfico de publicación de AEM al contenido estático de AEM implementado mediante la [canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Los casos de uso incluyen el servicio de recursos estáticos en el mismo dominio que la página (por ejemplo, example.com/static) o en un dominio explícitamente diferente (por ejemplo, static.example.com).
+
+Este es un ejemplo de regla de selector de origen que puede lograr esto:
+
+```
+kind: CDN
+version: '1'
+metadata:
+  envTypes: ["dev"]
+data:
+  originSelectors:
+    rules:
+      - name: select-aem-static-origin
+        when:
+          reqProperty: domain
+          equals: static.example.com
+        action:
+          type: selectAemOrigin
+          originName: static
+```
+
 ### Proxy a Edge Delivery Services {#proxying-to-edge-delivery}
 
 Hay escenarios en los que los selectores de origen deben utilizarse para enrutar el tráfico a través de AEM Publish a AEM Edge Delivery Services:
@@ -454,6 +479,8 @@ Este es un ejemplo de regla de selector de origen que puede lograr esto:
 ```
 kind: CDN
 version: '1'
+metadata:
+  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
