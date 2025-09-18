@@ -19,7 +19,7 @@ Para obtener documentación completa, consulte [API de administración de fragme
 
 >[!NOTE]
 >
->El uso existente de [Assets HTTP API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) para fragmentos de contenido debe migrarse a la nueva OpenAPI de administración de fragmentos de contenido.
+>El uso existente de [Assets HTTP API](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) para fragmentos de contenido debe migrarse a la nueva OpenAPI de administración de fragmentos de contenido.
 
 >[!NOTE]
 >
