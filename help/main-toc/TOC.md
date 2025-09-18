@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c0eca900b5bb7c54135e763713821f2f62a2d898
+source-git-commit: 8a0d4b6d3228306d28c047ec947c5ce017bda77f
 workflow-type: tm+mt
-source-wordcount: '6642'
+source-wordcount: '6648'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Exportación de fragmentos de contenido a Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integración con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=es)
+      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetría operativa para AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Recursos {#assets}
    + [Información general y novedades](/help/assets/overview.md)
@@ -1474,6 +1474,7 @@ ht-degree: 98%
    + Implementación en AEM as a Cloud Service {#deploying}
       + [Implementación en AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [Actualizaciones de la versión de AEM](/help/implementing/deploying/aem-version-updates.md)
+      + [Horas tranquilas y períodos libres de actualización](/help/implementing/deploying/quiet-hours-update-free-periods.md)
       + [Configurar OSGI para AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
       + [Asignación de recursos](/help/implementing/deploying/resource-mapping.md)
    + Nivel de autor {#author-tier}
