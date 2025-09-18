@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
+source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 11%
+source-wordcount: '2495'
+ht-degree: 13%
 
 ---
 
@@ -21,7 +21,7 @@ Aprenda lo fácil e intuitivo que es para los autores crear contenido con el edi
 
 El editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para que pueda ofrecer experiencias excepcionales y aumentar la velocidad de contenido.
 
-Para ello, se proporciona una IU intuitiva que requiere una formación mínima para comenzar a editar contenido. Este documento describe la experiencia de creación del editor universal.
+Para ello, el Editor universal proporciona a los creadores de contenido una IU intuitiva que requiere una formación mínima para comenzar a editar contenido. Este documento describe la experiencia de creación del editor universal.
 
 >[!NOTE]
 >
@@ -80,6 +80,22 @@ El [panel de propiedades](/help/sites-cloud/authoring/universal-editor/navigatio
 ![Cuadro de diálogo de edición de texto enriquecido](assets/rich-text-canvas.png)
 
 Pulse o haga clic en **Cancelar** o **Listo** para descartar o guardar los cambios, respectivamente.
+
+#### Opciones de formato de texto enriquecido {#formatting-options}
+
+El editor de texto enriquecido (RTE) del editor universal permite al autor aplicar formato de texto estándar. De forma predeterminada, están disponibles las siguientes opciones.
+
+* Párrafo (h1, h2, h3, etc.)
+* Negrita
+* Cursiva
+* Subrayado
+* Superíndice
+* Subíndice
+* Lista con viñetas
+* Lista numerada
+* Vínculo
+
+El RTE se puede configurar para ocultar opciones o mostrar opciones adicionales según las necesidades de los autores. Consulte el documento [Configuración del RTE para el editor universal](/help/implementing/universal-editor/configure-rte.md) para obtener más información.
 
 ### Edición de medios {#edit-media}
 
@@ -351,7 +367,7 @@ Para obtener información sobre cómo habilitar esta extensión, [consulte la do
 
 Para aprender a publicar contenido con el editor universal, consulte este documento.
 
-* [Publicación de contenido con el editor universal](publishing.md): aprenda cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
+* [Publicación de contenido con el editor universal](publishing.md): descubra cómo el editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 
 Para obtener más información sobre los detalles técnicos del editor universal, consulte estos documentos para desarrolladores.
 

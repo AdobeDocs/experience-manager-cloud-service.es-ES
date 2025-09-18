@@ -5,16 +5,17 @@ contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 2c1b444d7b7dad94cc9ebda59783f9c6fde84a91
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
 
+
 # Configuración del editor de texto enriquecido {#configure-the-rich-text-editor}
 
-El Editor de texto enriquecido (RTE) proporciona a los autores una amplia gama de funcionalidades para editar contenido de texto. Se proporcionan iconos, cuadros de selección, barras de herramientas y menús para una experiencia de edición de texto WYSIWYG. Los administradores configuran el RTE para habilitar, deshabilitar y ampliar las funciones disponibles en los componentes de creación. Vea cómo los autores [utilizan RTE para crear](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) contenido web.
+El Editor de texto enriquecido (RTE) proporciona a los autores una amplia gama de funcionalidades para editar contenido de texto. Se proporcionan iconos, cuadros de selección, barras de herramientas y menús para una experiencia de edición de texto de WYSIWYG. Los administradores configuran el RTE para habilitar, deshabilitar y ampliar las funciones disponibles en los componentes de creación. Vea cómo los autores [utilizan RTE para crear](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) contenido web.
 
 A continuación se enumeran los conceptos y pasos de RTE necesarios para configurarlo.
 
@@ -24,6 +25,10 @@ A continuación se enumeran los conceptos y pasos de RTE necesarios para configu
 | [Tipos de modos de edición](#editingmodes) | [Activar complementos](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [Establecer propiedades de características](#aboutplugins) |
 | [Acerca de los complementos](#aboutplugins) | [Configurar barras de herramientas RTE](#dialogfullscreen) | [Configurar los modos de pegado](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
 
+>[!NOTE]
+>
+>El RTE descrito en este documento describe el que está disponible en el Editor de páginas. Si está usando el editor universal moderno, consulte el documento [Configuración del RTE para el editor universal](/help/implementing/universal-editor/configure-rte.md) para obtener detalles.
+
 ## Comprender la interfaz de usuario disponible para los autores {#understand-rte-ui}
 
 La interfaz RTE ofrece un [diseño interactivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) para el entorno de creación. La interfaz está diseñada para su uso en dispositivos táctiles y de escritorio.
@@ -32,7 +37,7 @@ La interfaz RTE ofrece un [diseño interactivo](/help/sites-cloud/authoring/page
 
 *Figura: barra de herramientas del Editor de texto enriquecido con todas las opciones disponibles habilitadas.*
 
-La barra de herramientas proporciona las opciones para la experiencia de creación WYSIWYG. Los administradores de [!DNL Experience Manager] pueden configurar las opciones disponibles en la barra de herramientas de la interfaz. Hay disponible un conjunto completo de opciones de edición de forma predeterminada en [!DNL Experience Manager]. Los desarrolladores pueden personalizar [!DNL Experience Manager] para agregar más opciones de edición.
+La barra de herramientas proporciona las opciones para la experiencia de creación de WYSIWYG. Los administradores de [!DNL Experience Manager] pueden configurar las opciones disponibles en la barra de herramientas de la interfaz. Hay disponible un conjunto completo de opciones de edición de forma predeterminada en [!DNL Experience Manager]. Los desarrolladores pueden personalizar [!DNL Experience Manager] para agregar más opciones de edición.
 
 ## Varios modos de edición {#editingmodes}
 
@@ -104,7 +109,7 @@ En la tabla siguiente se enumeran los complementos actuales, mostrando:
 | justificar | `justifyleft`, `justifycenter`, `justifyright` | Alineación de párrafo. |
 | vínculos | `modifylink`, `unlink`, `anchor` | [Hipervínculos y anclajes](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | listas | `ordered`, `unordered`, `indent`, `outdent` | Este complemento controla tanto la sangría [como las listas](configure-rich-text-editor-plug-ins.md#indentmargin); incluidas las listas anidadas. |
-| herramientas diversas | `specialchars`, `sourceedit` | Varias herramientas permiten a los autores introducir [caracteres especiales](configure-rich-text-editor-plug-ins.md#spchar) o editar el origen del HTML. Además, puede agregar un [rango de caracteres especiales](configure-rich-text-editor-plug-ins.md#definerangechar) si desea definir su propia lista. |
+| herramientas diversas | `specialchars`, `sourceedit` | Varias herramientas permiten a los autores introducir [caracteres especiales](configure-rich-text-editor-plug-ins.md#spchar) o editar el origen de HTML. Además, puede agregar un [rango de caracteres especiales](configure-rich-text-editor-plug-ins.md#definerangechar) si desea definir su propia lista. |
 | Paraformato | `paraformat` | Los formatos de párrafo predeterminados son Párrafo, Encabezado 1, Encabezado 2 y Encabezado 3 (`<p>`, `<h1>`, `<h2>` y `<h3>`). Puede [agregar más formatos de párrafo](configure-rich-text-editor-plug-ins.md#paraformats) o ampliar la lista. |
 | revisión ortográfica | `checktext` | [corrector ortográfico con reconocimiento de idioma](configure-rich-text-editor-plug-ins.md#adddict). |
 | estilos | `styles` | Compatibilidad con el estilo mediante una clase CSS. [Agregue nuevos estilos de texto](configure-rich-text-editor-plug-ins.md#textstyles) si desea agregar (o ampliar) su propio intervalo de estilos para usarlos con texto. |
@@ -154,7 +159,7 @@ Para obtener configuraciones detalladas de los complementos RTE, consulte [cómo
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-El [componente de texto de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=es#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE usando la interfaz de usuario como directivas de contenido, lo que elimina la necesidad de configuración técnica. Las políticas de contenido pueden funcionar con configuraciones de IU RTE como se describe en este documento. Para obtener más información, consulte [crear plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md) y la [documentación para desarrolladores de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=es).
+El [componente de texto de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE usando la interfaz de usuario como directivas de contenido, lo que elimina la necesidad de configuración técnica. Las políticas de contenido pueden funcionar con configuraciones de IU RTE como se describe en este documento. Para obtener más información, consulte [crear plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md) y la [documentación para desarrolladores de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >Para fines de referencia, los componentes de texto predeterminados (entregados como parte de una instalación estándar) se encuentran en:
 >
@@ -228,7 +233,7 @@ Las opciones disponibles en RTE fluyen hacia abajo desde las configuraciones de 
 * Si la configuración de interfaz de usuario del RTE se ha eliminado o no habilita un elemento, la directiva de contenido no puede configurarlo.
 * Un autor solo tiene acceso a las funciones que están disponibles en las configuraciones de interfaz de usuario y en las directivas de contenido.
 
-Por ejemplo, puede ver la [documentación del componente principal Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=es#the-text-component-and-the-rich-text-editor).
+Por ejemplo, puede ver la [documentación del componente principal Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizar la asignación entre los iconos y comandos de la barra de herramientas {#iconstoolbar}
 
