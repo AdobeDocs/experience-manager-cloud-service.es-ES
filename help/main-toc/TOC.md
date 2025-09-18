@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6dfcb0712f2c7208e100b52a290dcf4fbfe9d0e4
+source-git-commit: cd3a2735487b5b7383b24ab56a98d18e4584b4b4
 workflow-type: tm+mt
-source-wordcount: '6634'
+source-wordcount: '6639'
 ht-degree: 98%
 
 ---
@@ -351,8 +351,8 @@ ht-degree: 98%
          + [Extracción de contenido del origen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Ingesta de contenido en Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Indexación después de migrar contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
-         + [Visualización de registros del conjunto de migraciones](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
-         + [Eliminación de un conjunto de migraciones](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
+         + [Visualización de registros del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
+         + [Eliminación de un conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Ejecución de la herramienta de transferencia de contenido en una instancia de publicación](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Administración de principales después de la migración](/help/journey-migration/managing-principals-after-migration.md)
          + [Carga masiva de principales a IMS después de la migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Exportación de fragmentos de contenido a Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integración con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=es)
+      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetría operativa para AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Recursos {#assets}
    + [Información general y novedades](/help/assets/overview.md)
@@ -1152,6 +1152,7 @@ ht-degree: 98%
          + [Supervisar el rendimiento del formulario: guías de telemetría operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Guía de envío de formularios: uso del servicio de envío de formularios](/help/forms/forms-submission-service.md)
       + [Configuración del envío de formularios de Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Propiedades del campo de bloque de Forms adaptable](/help/edge/docs/forms/eds-form-field-properties.md)
       + [Preguntas más frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Prácticas recomendadas para crear formularios](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Sin encabezado {#headless}

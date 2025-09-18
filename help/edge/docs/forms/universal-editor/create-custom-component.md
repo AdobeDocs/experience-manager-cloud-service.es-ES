@@ -4,9 +4,9 @@ description: Crear componentes personalizados para un formulario EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
+source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2103'
 ht-degree: 4%
 
 ---
@@ -248,7 +248,7 @@ Ahora que el formulario contiene el componente personalizado, puede representar 
 
 Vamos a agregar una clase **card** al componente para aplicar estilo y agregar una imagen para cada radio; use el siguiente código para esto.
 
-**Aplicar estilo al componente personalizado mediante la función decorar en cards.js**
+**Aplicar estilo al componente mediante card.js**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -268,7 +268,7 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**Agregar comportamiento de tiempo de ejecución para el componente personalizado en cards.css**
+**Agregar comportamiento de tiempo de ejecución mediante cards.css**
 
 ```javascript
 .card .radio-wrapper {
@@ -505,13 +505,13 @@ La forma heredada de hacerlo es seguir manualmente los pasos que se describen a 
 
 10. **Actualizar _component-definition.json**: en `models/_component-definition.json`, actualice la matriz dentro del grupo con `id custom-components` con un objeto de la siguiente manera:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Esto es para proporcionar la referencia al nuevo componente de tarjetas que se va a crear con el resto de los componentes
+   Esto es para proporcionar la referencia al nuevo componente de tarjetas que se va a crear con el resto de los componentes
 
 11. **Ejecutar la compilación:json script**: Ejecute `npm run build:json` para compilar y combinar todas las definiciones JSON de componentes en un solo archivo que se servirá desde el servidor. Esto garantiza que el esquema del nuevo componente se incluya en la salida combinada.
 
@@ -587,7 +587,7 @@ Tenga en cuenta los siguientes puntos antes de crear su propio componente person
 
 ## Referencias
 
-- form-field-types: Base las estructuras y propiedades de HTML para todos los tipos de campo. [Haga clic aquí](/help/edge/docs/forms/eds-form-field-properties) para ver las estructuras y propiedades detalladas de los campos de formulario.
+- [form-field-types](/help/edge/docs/forms/eds-form-field-properties.md): base las estructuras y propiedades de HTML para todos los tipos de campo.
 
 - **bloques/formulario/modelos/componentes-formulario**: definiciones de propiedades de componentes personalizados y OOTB.
 
