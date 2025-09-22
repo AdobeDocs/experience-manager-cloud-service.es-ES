@@ -1,26 +1,26 @@
 ---
-title: Configuración de un dominio personalizado para el nivel de publicación
-description: Obtenga información sobre cómo configurar un dominio personalizado para el nivel de publicación en Adobe Cloud Manager.
+title: Configuración de un dominio personalizado para el nivel de entrega
+description: Obtenga información sobre cómo configurar un dominio personalizado para el nivel de entrega en Adobe Cloud Manager.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: d2859c547c87bd1856ba0e05fac835db434d824c
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 6%
 
 ---
 
-# Configurar un dominio personalizado para el nivel de publicación{#configure-custom-domain}
+# Configuración de un dominio personalizado para el nivel de entrega{#configure-custom-domain}
 
 En Adobe Cloud Manager, puede hacer que su sitio web destaque añadiendo un dominio personalizado. Aunque AEM as a Cloud Service viene con un dominio predeterminado, puede personalizarlo según sus necesidades.
 
 ## Antes de empezar
 
 * Debe tener un certificado TLS o SSL de varias SAN (nombre alternativo del sujeto).
-* El certificado SSL debe tener SAN distintas para el certificado asignado para el nivel de publicación dentro del mismo dominio.
+* El certificado SSL debe tener distintas SAN según el certificado asignado para el nivel de entrega dentro del mismo dominio.
 * La directiva de certificado debe adherirse a la directiva Validación extendida (EV) u Validación de organización (OV), y no a la directiva Validación de dominio (DV).
 
 
-## Configurar un dominio personalizado para el nivel de publicación
+## Configuración de un dominio personalizado para el nivel de entrega
 
 1. Vaya a **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Descripción general del programa]** > **[!UICONTROL Certificados SSL]** y agregue su certificado SSL.
    ![imagen](/help/assets/assets/ssl-certificate.png)
