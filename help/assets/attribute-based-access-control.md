@@ -3,7 +3,7 @@ title: Control de acceso basado en atributos
 description: Obtenga información sobre cómo habilitar el control de acceso basado en atributos para definir reglas basadas en metadatos para definir el nivel de acceso a los recursos disponibles en Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
+source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 4%
@@ -34,7 +34,7 @@ Por el momento, no puede crear reglas de control de acceso basadas en atributos 
 
 Haga clic en **Descargar hoja de cálculo** para descargar y definir reglas en una hoja de cálculo. Cree un ticket de asistencia de Adobe y proporcione las reglas definidas en la hoja de cálculo a Adobe.
 
-[!BADGE Descargar hoja de cálculo]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+[!BADGE Descargar hoja de cálculo]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 Defina las reglas en la hoja de cálculo siguiendo las directrices definidas en este artículo.
