@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
 workflow-type: tm+mt
-source-wordcount: '2824'
+source-wordcount: '2823'
 ht-degree: 6%
 
 ---
@@ -176,9 +176,9 @@ Consulte [Generar variaciones: integradas en editores de AEM](/help/generative-a
 
 Para eliminar una variación del fragmento de contenido:
 
-    >[!NOTE]
-    >
-    >No puede eliminar **Main**.
+>[!NOTE]
+>
+>No puede eliminar **Main**.
 
 1. Seleccione la opción Variación.
 
@@ -267,7 +267,7 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 
@@ -551,7 +551,7 @@ El panel **Campos** enumera todos los campos dentro del fragmento de contenido. 
    <td><p> <img src="assets/cf-authoring-date-time-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Lista desglosada</b></p> </td>
+   <td><p><b>Enumeración</b></p> </td>
    <td><p> <img src="assets/cf-authoring-enumeration-icon.png"> </p></td>
   </tr>
   <tr>
