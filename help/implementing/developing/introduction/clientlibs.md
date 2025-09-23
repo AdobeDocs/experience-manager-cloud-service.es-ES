@@ -4,9 +4,9 @@ description: AEM proporciona carpetas de biblioteca del lado del cliente, que le
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: da44719521546e81af60e4f8dd5452d83ff5e1e7
+source-git-commit: 66916e3864811cc7b7d030787a413ceb5ce4d8b3
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2428'
 ht-degree: 1%
 
 ---
@@ -127,7 +127,7 @@ Las bibliotecas de cliente se cargan a través de una plantilla de ayuda proporc
 
 Cada plantilla de ayuda espera una opción `categories` para hacer referencia a las bibliotecas de cliente deseadas. Esa opción puede ser una matriz de valores de cadena o una cadena que contenga una lista de valores separados por comas.
 
-[Consulte la documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=es#loading-client-libraries) para obtener más información sobre cómo cargar clientlibs a través de HTL.
+[Consulte la documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) para obtener más información sobre cómo cargar clientlibs a través de HTL.
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
@@ -288,7 +288,7 @@ Los preprocesadores conectables permiten un uso flexible que incluye:
 
 >[!NOTE]
 >
->De forma predeterminada, AEM utiliza el Compresor GCC para minimizar Javascript.
+>De manera predeterminada, AEM usa el Compresor GCC para minimizar Javascript y para traducir cualquier código a `ECMASCRIPT_2018`.
 
 >[!CAUTION]
 >
