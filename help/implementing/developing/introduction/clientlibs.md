@@ -127,7 +127,7 @@ Las bibliotecas de cliente se cargan a través de una plantilla de ayuda proporc
 
 Cada plantilla de ayuda espera una opción `categories` para hacer referencia a las bibliotecas de cliente deseadas. Esa opción puede ser una matriz de valores de cadena o una cadena que contenga una lista de valores separados por comas.
 
-[Consulte la documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) para obtener más información sobre cómo cargar clientlibs a través de HTL.
+[Consulte la documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=es#loading-client-libraries) para obtener más información sobre cómo cargar clientlibs a través de HTL.
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
