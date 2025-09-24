@@ -8,10 +8,11 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 24d78f19932a30026c0357db646124c9dd1fa759
+exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
+source-git-commit: 51318172b826eb81dff86b3e8dfb6f2ded648c4c
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 49%
+source-wordcount: '1052'
+ht-degree: 48%
 
 ---
 
@@ -81,7 +82,7 @@ Las canalizaciones de solo producción y fase se crean de forma similar a las [c
 
    ![Ficha Código Source en el cuadro de diálogo Agregar canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
-1. En la ficha **Auditoría de experiencias**, la dirección URL del sitio especificada es la dirección URL de publicación que Cloud Manager audita para la calidad de la página.
+1. En la ficha **Auditoría de experiencias**, la dirección URL del sitio especificada es la dirección URL publicada que Cloud Manager audita para la calidad de la página.
 
 1. En el campo **Ruta de página**, especifique qué páginas desea auditar y luego haga clic en **![Agregar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) Agregar página**.
 
@@ -100,7 +101,7 @@ Las canalizaciones de solo producción y fase se crean de forma similar a las [c
 
    Esta opción inserta una puerta de aprobación manual justo antes del paso de producción. La canalización se detiene y espera a que un aprobador (como un administrador de implementación o un propietario del negocio) apruebe o cancele la implementación de producción.
 
-   Utilícelo para realizar controles de cambios o comprobaciones de última hora.
+   Se utiliza para el control de cambios o comprobaciones de última hora.
 
 1. Haga clic en **Guardar** para crear la canalización de solo producción con estas opciones.
 
@@ -129,7 +130,7 @@ En los detalles de ejecución, aparece un botón **Promocionar compilación** de
 
 ![Ejecución de canalización de solo fase](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-Al hacer clic en **Promocionar compilación**, si existe una canalización solo de fase, se abre un cuadro de diálogo de confirmación para iniciarla. Haga clic en **Ejecutar**.
+Al hacer clic en **Promocionar compilación**, se abre un cuadro de diálogo para que confirme la ejecución de la canalización de solo producción relacionada. Haga clic en **Ejecutar** para iniciarlo.
 
 ![Promocionar compilación - Ejecutar cuadro de diálogo de canalización](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
@@ -144,4 +145,3 @@ Para una canalización de **solo producción**, Cloud Manager muestra los artefa
 
 
 ![Detalles del artefacto](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
-
