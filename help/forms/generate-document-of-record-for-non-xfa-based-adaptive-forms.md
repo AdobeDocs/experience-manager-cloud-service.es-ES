@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo generar una plantilla para un docu
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
 workflow-type: tm+mt
-source-wordcount: '4221'
+source-wordcount: '4217'
 ht-degree: 99%
 
 ---
@@ -142,7 +142,7 @@ Ahora, cuando se envía el formulario adaptable, se crea un documento actualizad
 
 Tenga en cuenta las siguientes consideraciones y limitaciones al trabajar en documentos de registro para formularios adaptables.
 
-* Las plantillas de documento de registro no admiten texto enriquecido. Por lo tanto, cualquier texto enriquecido del formulario adaptable estático o de la información rellenada por el usuario final aparece como texto sin formato en el documento de registro.
+* **Compatibilidad con texto enriquecido**: el documento de registro admite etiquetas de marcado HTML en campos de texto enriquecido. Para obtener información detallada sobre las etiquetas compatibles y las consideraciones de accesibilidad, consulte [Etiquetas de marcado HTML compatibles en el documento de registro](html-markup-tags-support-in-document-of-record.md).
 * Los fragmentos de documento de un formulario adaptable no aparecen en el documento de registro. Sin embargo, se admiten los fragmentos de formularios adaptables.
 * No se admite el enlace de contenido en el documento de registro generado para el formulario adaptable basado en el esquema XML.
 * La versión localizada del documento de registro se crea bajo demanda para una configuración regional cuando el usuario solicita la representación del documento de registro. La localización del documento de registro se produce junto con la localización del formulario adaptable. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
@@ -405,9 +405,9 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
 ## Asistencia del Documento de registro en el Editor de formularios adaptables {#dor-support-in-adaptiveform}
 
-Puede configurar la plantilla [!UICONTROL Documento de registro] directamente desde el Creador de formularios adaptables o el Creador de plantillas de formulario adaptable.
+Puede configurar la plantilla [!UICONTROL Documento de registro] directamente desde el editor de formularios adaptables o el editor de plantillas de formulario adaptable.
 
-Realice los siguientes pasos desde la instancia de autor del creador de formularios adaptables:
+Realice los siguientes pasos desde la instancia de autor del editor de formularios adaptables:
 
 1. Seleccione el componente **[!UICONTROL Contenedor de formulario adaptable (raíz)]**.
 1. Haga clic en el icono ![Icono Configurar](/help/forms/assets/configure-icon.svg) para abrir las **[!UICONTROL Propiedades]** del contenedor del formulario adaptable.
