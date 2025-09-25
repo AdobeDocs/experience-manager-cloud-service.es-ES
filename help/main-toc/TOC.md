@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
+source-git-commit: 94533c74b8254c1a16671ca28ccc021cbdfa903f
 workflow-type: tm+mt
-source-wordcount: '6675'
+source-wordcount: '6680'
 ht-degree: 97%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 97%
    + Notas de la versión de la función AEMaaCS  {#release-notes}
       + [Notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [Notas de la versión 2025.8.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md)
          + [Notas de la versión 2025.7.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md)
          + [Notas de la versión 2025.6.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md)
          + [Notas de la versión 2025.5.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
@@ -526,7 +527,7 @@ ht-degree: 97%
       + [Exportación de fragmentos de contenido a Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integración con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=es)
+      + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetría operativa para AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Recursos {#assets}
    + [Información general y novedades](/help/assets/overview.md)
@@ -1237,7 +1238,7 @@ ht-degree: 97%
          + [Publicar contenido traducido](/help/journey-headless/translation/publish-content.md)
       + Recorrido del autor de contenido sin encabezado {#author}
          + [Recorrido del autor de contenido sin encabezado de AEM: información general](/help/journey-headless/author/overview.md)
-         + [Creación para usuarios sin encabezado con AEM: una introducción](/help/journey-headless/author/introduction.md)
+         + [Creación para headless con AEM: una introducción](/help/journey-headless/author/introduction.md)
          + [Conceptos básicos de creación para usuarios sin encabezado con AEM](/help/journey-headless/author/basics.md)
          + [Obtenga información sobre el uso de referencias en fragmentos de contenido](/help/journey-headless/author/references.md)
          + [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](/help/journey-headless/author/metadata-tagging.md)

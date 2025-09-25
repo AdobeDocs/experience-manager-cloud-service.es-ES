@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 7213dfa6f4203d406efb5e0f4ac55fcefa59d388
+source-git-commit: bdc0e7623592efed5270a3cb8322ef22e50cbad9
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 100%
+source-wordcount: '2066'
+ht-degree: 69%
 
 ---
 
@@ -28,7 +28,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.8.0) fue el 28 de agosto de 2025. La próxima versión con funcionalidades (2025.9.0) se planificó para el 25 de septiembre de 2025.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.9.0) fue el viernes, 25 de septiembre de 2025. La próxima versión con funcionalidades (2025.10.0) se planificó para el viernes, 30 de octubre de 2025.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -40,34 +40,23 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## Experience Hub {#experience-hub}
-
-[Experience Hub](/help/experience-hub.md) es el punto de partida centralizado para acceder a todas las funcionalidades de AEM. Se personaliza en función de su personalidad de usuario y de las licencias disponibles para usted, lo que permite a cada usuario lograr sus resultados de forma eficaz.
-
-## Asistente de IA en AEM {#AI-assistant}
-
-El [Asistente de IA](/help/implementing/cloud-manager/ai-assistant-in-aem.md) para AEM ofrece una interfaz conversacional diseñada para que obtenga respuestas instantáneas a sus preguntas relacionadas con el producto de AEM (*disponible para todos los usuarios*) y para automatizar la creación de tickets de asistencia (*disponible para los administradores de asistencia*). Está directamente incrustado en AEM y es accesible desde AEM Experience Hub, Cloud Manager y la interfaz de usuario del autor.
-
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nuevas funciones de Experience Manager Sites {#enhancements-sites}
+### Nuevas funciones del prelanzamiento de Experience Manager Sites {#prerelease-sites}
 
-* En la IU de administración de fragmentos de contenido ahora puede ver el estado del flujo de trabajo de los fragmentos de contenido, con información detallada sobre los flujos de trabajo pasados y en ejecución para un fragmento seleccionado.
-* El rendimiento para abrir fragmentos de contenido en el nuevo editor de fragmentos de contenido se ha aumentado en un 25 % en escenarios comunes al abrir fragmentos mediante UUID en lugar de por ruta.
-* Al copiar fragmentos de contenido con fragmentos a los que se hace referencia, las copias de los fragmentos a los que se hace referencia ahora se almacenan en la misma ubicación que la copia del fragmento principal.
-* Ahora puede configurar un espacio de trabajo personalizado en la configuración de la carpeta para exportar los fragmentos de contenido al espacio de trabajo configurado en Adobe Target.
+El Editor del modelo de contenido para fragmentos de contenido de AEM se ha modernizado para alinearse con otras interfaces basadas en React Spectrum en AEM. Su implementación de interfaz de usuario y modelo de extensibilidad ahora son coherentes con el Editor de fragmentos de contenido y el Editor universal. El nuevo Editor de modelos ahora es predeterminado cuando se abre desde la nueva IU de administración del modelo de contenido. Al abrir un modelo de contenido en la IU táctil, se abre el editor de la IU táctil y se ofrecen ofertas para probar el nuevo editor.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuevas funciones en el centro de contenido {#new-features-content-hub}
+### Nuevas funciones en la vista de Assets {#new-features-assets-view}
 
-**Búsqueda masiva mediante propiedades de filtro**
+**Formato de texto mejorado con subcadenas en plantillas de Dynamic Media**
 
-Content Hub ahora acelera la detección de los recursos que necesita. Con la nueva función Búsqueda masiva, puede introducir varios valores para cualquier propiedad de filtro (separados por un delimitador (por ejemplo, varios ID de SKU)) y recuperar instantáneamente todos los recursos coincidentes mediante una sola búsqueda.
+Ahora puede aplicar formato a subcadenas dentro de capas de texto de plantillas de Dynamic Media. Una palabra o frase seleccionada se trata como una capa independiente, lo que le permite ajustar su fuente, tamaño de fuente, color, etc. La capa de subcadena está parametrizada para que pueda actualizarla en tiempo real mediante la dirección URL de entrega de la plantilla
 
 ### Nuevas funciones en Dynamic Media con funciones de OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -77,7 +66,25 @@ Cree URL mnemónicas para la entrega de recursos en DM con OpenAPI y sustituya l
 
 >[!NOTE]
 >
->Esta función estará disponible como función de disponibilidad limitada el 10 de septiembre. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
+>Esta función está disponible como función de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
+
+<!--
+
+### New Features in Content Hub {#new-features-content-hub}
+
+**Mark Collections as Favourites**
+
+You can now mark collections as Favorites in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the **Favourites** tab on the Content Hub home page.
+
+**Pin collections for quick access**
+
+Content Hub Administrators can now pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated **Pinned** section on the Collections home page, making it easier to keep important collections within reach.
+
+>[!NOTE]
+>
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+-->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -154,13 +161,29 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Actualización de compilación de JavaScript {#javascript-compilation}
+### Nuevas funciones en la gestión de versiones {#new-features-release-management}
 
-La compilación predeterminada de JavaScript de la biblioteca del lado del cliente (clientlibs) ahora se dirige a ECMASCRIPT_2018 en lugar de ECMASCRIPT5. Aunque reemplazable en el pasado, esta actualización permite mejoras de rendimiento, sintaxis moderna de JavaScript y funciones de forma predeterminada.
+**Pausar actualizaciones de mantenimiento automáticas**
+
+Días de lanzamiento, eventos en directo, ventas máximas: estos momentos no pueden romperse. [Nuestras nuevas características de autoservicio](/help/implementing/deploying/quiet-hours-update-free-periods.md) detienen las actualizaciones de mantenimiento automático cuando son importantes, para que sus equipos se mantengan enfocados.
+
+* Horas tranquilas: bloquea el mantenimiento automático durante las horas establecidas cada día. Ideal para horarios de trabajo, recorridos nocturnos o cortes matinales.
+* Período sin actualización: bloquear el mantenimiento automático durante una semana completa. Utilícelo para lanzamientos, promociones o bloqueos anuales.
+
+>[!NOTE]
+>
+>Disponible como función de disponibilidad limitada el 25 de septiembre.
+>>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
+
+### Nueva versión de las herramientas para desarrolladores de AEM para Eclipse {#aem-develeper-tools-for-eclipse}
+
+Se ha lanzado la versión 1.4.0 de las herramientas para desarrolladores de AEM para Eclipse. Esta versión agrega compatibilidad con Eclipse IDE 2022-12 o posterior y se ha validado con la versión actual (2025-09). La herramienta ahora funciona con versiones modernas del tipo de archivo del proyecto AEM e incorpora mejoras de la herramienta Sling IDE 1.3.0.
+
+Instale desde [Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) y consulte la [página de herramientas para desarrolladores de AEM](https://eclipse.adobe.com) para obtener más detalles.
 
 ### Próximas obsolescencias de la API de Java {#java-api-deprecation}
 
-Varias API obsoletas pretenden eliminarse el 31 de agosto, por lo que ya no se debe hacer referencia a ellas. A principios de septiembre, las notificaciones del Centro de acciones se enviarán si se detecta uso de la API y, después del 25 de septiembre, aparecerán avisos durante las compilaciones de Cloud Manager para reforzar la importancia de eliminar el uso. Consulte el [artículo sobre obsolescencia](/help/release-notes/deprecated-removed-features.md#aem-apis) para obtener más detalles, pero, para mayor comodidad, estas API se enumeran a continuación:
+Varias API obsoletas se marcaron para su eliminación el 31 de agosto, por lo que ya no se debe hacer referencia a ellas. Recibirá notificaciones del Centro de acciones si se detecta un uso de API obsoleto en el código y, después del 13 de noviembre, aparecerán avisos durante las compilaciones de Cloud Manager para reforzar la importancia de eliminar el uso. Consulte el [artículo sobre obsolescencia](/help/release-notes/deprecated-removed-features.md#aem-apis) para obtener más detalles, pero, para mayor comodidad, estas API se enumeran a continuación:
 
 +++ Expandir para ver las funciones obsoletas de la API de Java
 
@@ -194,17 +217,19 @@ OSGi properties:
 
 ### Desuso de tiempo de ejecución de Java 11 {#java11-runtime-deprecation}
 
-El tiempo de ejecución de *Java 11* ya está en desuso, y la mayoría de los entornos ya se han actualizado al tiempo de ejecución de **Java 21** con mayor rendimiento.
+El tiempo de ejecución de *Java 11* está obsoleto y la mayoría de los entornos ya se han actualizado al tiempo de ejecución de **Java 21 de mayor rendimiento**.
 
-Si su entorno no se ha podido actualizar debido a dependencias no admitidas (consulte [Requisitos de tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), debería haber recibido un correo electrónico de Adobe con los siguientes pasos específicos. Asegúrese de que todas las actualizaciones requeridas se hayan completado el **1 de octubre de 2025** para que su entorno se pueda actualizar sin interrupciones.
+Si su entorno no se pudo actualizar debido a dependencias no admitidas (consulte los [requisitos de tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), debería haber recibido un correo electrónico de Adobe con los pasos siguientes. Como se describió allí, Adobe actualizó sus entornos **Dev** y **RDE** el **18 de septiembre de 2025** para que pueda validar su sitio y sus procesos y solucionar cualquier problema. Las actualizaciones de **Stage** y **Production** continuarán el **14 de octubre de 2025**.
 
-Nota: La versión del tiempo de ejecución es independiente de la versión de compilación del código. Aunque recomendamos la compilación con Java 21, las compilaciones de Java 11 siguen siendo compatibles por ahora. En el futuro, se publicará un aviso independiente sobre el desuso de compilaciones de Java 11.
+>[!NOTE]
+>
+>La versión en tiempo de ejecución es independiente de la versión de compilación del código. Aunque recomendamos la compilación con Java 21, por ahora se siguen aceptando las compilaciones de Java 11. En el futuro, se publicará un aviso independiente sobre el desuso de compilaciones de Java 11.
 
 ### Aplicación de la directiva de configuración de registros Java de AEM {#logconfig-policy}
 
 Como se indica en las notas de la versión de abril, los registros Java de AEM deben seguir un formato estándar para garantizar una monitorización de confianza en todos los entornos de clientes. Ya no se admiten las configuraciones de registro personalizadas, como los cambios en el formato de los registros, archivos de salida o niveles de registro predeterminados. Los registros deben permanecer dirigidos a los archivos predeterminados y se deben conservar los niveles de registro predeterminados para el código de producto de AEM. Consulte todos los detalles en el [Artículo de registro](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-A partir del **25 de septiembre**, se ignorarán todas las modificaciones de registro personalizadas no compatibles. Según nuestro análisis, la mayoría de los clientes no se verán afectados y Adobe se pondrá en contacto directamente con cualquier cliente cuya configuración actual pueda verse afectada.
+A partir del **30 de octubre**, se omitirán todas las invalidaciones de registro personalizadas no admitidas. Según nuestro análisis, la mayoría de los clientes no se verán afectados y Adobe se pondrá en contacto directamente con cualquier cliente cuya configuración actual pueda verse afectada.
 
 Revise y actualice cualquier proceso descendente que dependa del comportamiento de registro personalizado. Por ejemplo:
 
@@ -217,7 +242,6 @@ La computación de Edge le permite ejecutar JavaScript en la capa de CDN, lo que
 
 Los casos de uso comunes incluyen los siguientes:
 
-* Autenticación de usuarios con un proveedor de identidad antes de conceder acceso al contenido
 * Personalización de contenido en función de la geolocalización, el tipo de dispositivo o los atributos del usuario
 * Actuación como middleware entre la CDN y su origen
 * Modificar el formato de las respuestas de API de terceros (y tal vez añadir las respuestas de varias API) antes de enviarlas al explorador
@@ -226,11 +250,22 @@ Los casos de uso comunes incluyen los siguientes:
 
 Tenemos un número limitado de oportunidades disponibles para el envío de publicaciones de AEM o para proyectos de Edge Delivery Services para sitios de producción en directo. Si está interesado en participar o desea obtener más información, envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descripción de su caso de uso.
 
-### Configuración de CDN para Edge Delivery Services (programa Beta) {#cdn-eds-beta}
+### Autenticación de Edge para Edge Delivery Services (programa Beta) {#edge-authentication}
 
-La CDN administrada por Adobe ofrece opciones de configuración flexibles, tal como se describe en el [artículo de canalizaciones de configuración](/help/operations/config-pipeline.md#configurations). 
+La autenticación de Edge le permite restringir el acceso a las páginas de Edge Delivery Services únicamente a aquellas que se hayan autenticado con su proveedor de identidad (IdP). Esto se logra mediante la implementación de un archivo YAML de configuración de OpenID Connect (OIDC).
 
-Ahora en versión Beta, puede implementar una canalización de configuración para funciones que incluyan selectores de origen de CDN, transformaciones de respuesta y solicitud, reenvío de registros de CDN, etc. Póngase en contacto con [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) con los detalles de su caso de uso.
+Si está interesado, envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descripción de su caso de uso y cualquier pregunta que pueda tener.
+
+Independientemente de Edge Delivery Services, tenga en cuenta que a principios de este año lanzamos una función para configurar Open ID Connect [para proyectos de nivel de publicación de AEM Cloud Service](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md) para proteger páginas de AEM.
+
+<!--
+### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
 
 ### Instantáneas para los RDE (programa Alpha) {#rde-snapshot-program}
 
@@ -245,6 +280,11 @@ Aunque los registros se pueden descargar desde Cloud Manager, muchas organizacio
 Ahora en la versión Beta, puede reenviar los registros de AEM a Amazon S3, Sumo Logic y a su propia cuenta de New Relic (no a la cuenta proporcionada por Adobe). Tenga en cuenta que los registros de AEM (incluido Apache/Dispatcher) son compatibles con los destinos de estos registros, pero no con los de CDN. Envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para obtener acceso.
 
 Obtenga más información en la [documentación de reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md).
+
+### Supervisión del rendimiento de las aplicaciones ampliadas (APM) (programa de Alpha) {#apm-alpha}
+
+Para que se pueda observar, AEM Cloud Service admite [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) proporcionado por Adobe y [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) administrado por el cliente. A medida que exploramos la compatibilidad con opciones de APM adicionales, escríbanos a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con su proveedor o tecnología preferidos, junto con los casos de uso.
+
 
 ## Guías de [!DNL Experience Manager] {#guides}
 
