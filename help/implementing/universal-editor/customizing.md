@@ -4,10 +4,10 @@ description: Obtenga información acerca de las distintas opciones para personal
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
-workflow-type: ht
-source-wordcount: '409'
-ht-degree: 100%
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 92%
 
 ---
 
@@ -54,6 +54,14 @@ Es posible que algunos flujos de trabajo de creación deban limitar la capacidad
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## Desactivación de Copiar y Pegar {#copy-paste}
+
+Es posible que algunos flujos de trabajo de creación deban limitar la capacidad del autor de contenido para copiar y pegar componentes. Puede deshabilitar [copiar y pegar iconos](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) agregando los siguientes metadatos.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="copy"/>
 ```
 
 ## Cambio del punto final {#custom-endpoint}

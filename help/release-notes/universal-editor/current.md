@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2025.09.18 del editor universal
-description: Estas son las notas de la versión 2025.09.18 del editor universal.
+title: Notas de la versión 2025.09.25 del editor universal
+description: Estas son las notas de la versión 2025.09.25 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 34ae65fb0f6f69ac1983484da6ed020453ea4419
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 67%
+source-wordcount: '224'
+ht-degree: 46%
 
 ---
 
 
-# Notas de la versión 2025.09.18 del editor universal {#release-notes}
+# Notas de la versión 2025.09.25 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 18 de septiembre de 2025.
+Estas son las notas de la versión del editor universal del 25 de septiembre de 2025.
 
 >[!TIP]
 >
@@ -22,8 +22,8 @@ Estas son las notas de la versión del editor universal del 18 de septiembre de 
 
 ## Novedades {#what-is-new}
 
-* [universal-editor-service.adobe.io](http://universal-editor-service.adobe.io/) se utiliza ahora como extremo de servicio para AMS en lugar de tener que alojar el servicio localmente.
-* Ahora se admiten campos múltiples compuestos al utilizar la creación de AEM.
+* [Ahora se puede ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)deshabilitar la característica de copiar y pegar[ mediante una metaetiqueta.](/help/implementing/universal-editor/customizing.md#copy-paste)
+* [Cuando se usa el editor universal en entornos de AEM hospedados (AMS),](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) el editor universal ahora usará el servicio de editor universal hospedado en AEM y ya no dependerá de una instalación de AMS local, lo que garantiza que siempre tenga el servicio de editor universal más reciente automáticamente.
 
 ## Funciones de adopción anticipada {#early-adopter}
 
@@ -39,5 +39,5 @@ Ya se puede copiar y pegar en todas las páginas, además de en la página actua
 
 ## Otras mejoras {#other-improvements}
 
-* Se han implementado algunas mejoras pequeñas de rendimiento en el editor universal que funciona con AEM como sistema back-end.
-* Los fragmentos de contenido ahora se publican mediante la API abierta, lo que aporta mejoras de rendimiento y coherencia en el modo de publicar del Editor de fragmentos de contenido y la consola.
+* El carril de propiedades se ha corregido al utilizarlo con la creación de documentos.
+* Se ha corregido un problema al editar varios campos de un fragmento de contenido al utilizar MSM.
