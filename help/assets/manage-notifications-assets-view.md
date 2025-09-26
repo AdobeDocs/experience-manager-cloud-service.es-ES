@@ -4,10 +4,10 @@ description: Monitorice las operaciones realizadas en los recursos o carpetas di
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4d31745d4ada9e68ffefbba3dc91995037f205b9
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 70%
+source-wordcount: '774'
+ht-degree: 46%
 
 ---
 
@@ -79,6 +79,8 @@ Para suscribirse a las categorías de notificación, haga lo siguiente:
 
 ## Visualización y ocultación de carpetas, activos o colecciones {#watch-unwatch-assets}
 
+Puede ver y dejar de ver carpetas, recursos o colecciones para mantenerse informado, lo que permite una mejor colaboración en torno a los recursos que está monitorizando.
+
 Después de la [suscripción a las categorías de notificación](#subscribe-to-notification-categories), debe suscribirse al contenido para comenzar a recibir notificaciones.
 
 >[!NOTE]
@@ -86,15 +88,49 @@ Después de la [suscripción a las categorías de notificación](#subscribe-to-n
 >* Para **[!UICONTROL Solicitudes]** y categorías de notificación **[!UICONTROL Asignado a mí]**, no es necesario suscribirse al contenido después de suscribirse a las categorías de notificación. Las notificaciones se envían automáticamente para las solicitudes creadas por usted y cuando se le asigna una tarea.
 >* La vista de Assets envía notificaciones solo cuando otros usuarios realizan acciones en el contenido suscrito. No recibe notificaciones por las acciones que realiza en el contenido suscrito.
 
-Para suscribirse al contenido, seleccione la carpeta, la colección o el recurso al que debe suscribirse y haga clic en **[!UICONTROL Ver]**.
+### Suscribirse al contenido {#subscribe-to-content}
 
-La vista de Assets muestra un mensaje de éxito. Puede hacer clic en **[!UICONTROL Ir a las preferencias de notificación]** disponibles en el mensaje de éxito para editar su [suscripción a categorías de notificación](#subscribe-to-notification-categories).
+Siga estos pasos para suscribirse a carpetas, recursos o colecciones:
 
-![Notificaciones en la vista de Assets](assets/watch-assets.png)
+1. Examine la carpeta, la colección o el recurso al que desee suscribirse y haga clic en **[!UICONTROL Ver]**.
 
-La vista Assets ahora envía notificaciones para las categorías suscritas. También puede seleccionar varios activos, colecciones o carpetas y hacer clic en **[!UICONTROL Ver]** para ahorrar tiempo. Sin embargo, si selecciona varias entidades de las cuales algunas de ellas ya están suscritas, la opción **[!UICONTROL Ver]** no se muestra.
+1. La vista Assets muestra un mensaje de éxito. Puede hacer clic en **[!UICONTROL Ir a las preferencias de notificación]** en el mensaje de éxito para editar su [suscripción a las categorías de notificación](#subscribe-to-notification-categories).
 
-Del mismo modo, para cancelar la suscripción, seleccione el recurso, la carpeta o la colección a la que se ha suscrito y haga clic en **[!UICONTROL Dejar de ver]**.
+   ![Notificaciones en la vista de Assets](assets/watch-assets.png)
+
+La vista de Assets ahora enviará notificaciones para las categorías suscritas. También puede seleccionar varios activos, colecciones o carpetas y hacer clic en **[!UICONTROL Ver]** para ahorrar tiempo. Sin embargo, si selecciona varios elementos y algunos ya están suscritos, no se mostrará la opción **[!UICONTROL Ver]**.
+
+### Ver contenido suscrito {#view-subscribed-content}
+
+Para ver el contenido suscrito, siga estos pasos:
+
+1. Vaya a **[!UICONTROL Assets inspeccionado]** en [!UICONTROL Administración de recursos].
+
+1. La vista de Assets muestra una lista de los recursos suscritos, incluidos su nombre, tipo y ruta. Seleccione un recurso, una carpeta o una colección de la lista para ver sus detalles, ubicación o para [cancelar la suscripción](#unsubscribe-to-content).
+
+   ![ver contenido suscrito](assets/view-watched-assets.png)
+
+### Ver suscriptores de contenido {#view-content-subscribers}
+
+Para ver los suscriptores de contenido, siga estos pasos:
+
+1. Navegue por la carpeta, la colección o el recurso y seleccione **[!UICONTROL Detalles]**.
+
+1. Haga clic en el ojo![icono de ojo](assets/do-not-localize/eye-icon.png) del panel derecho para ver una lista de observadores del contenido.
+
+   También puede hacer clic en ![icono de comentario](assets/do-not-localize/comment-icon.svg) en el panel derecho para ver los observadores de contenido.
+
+### Cancelar suscripción al contenido {#unsubscribe-to-content}
+
+Para cancelar la suscripción:
+
+1. Vaya a **[!UICONTROL Assets inspeccionado]** en [!UICONTROL Administración de recursos].
+
+1. Seleccione el recurso, la carpeta o la colección cuya suscripción desea cancelar y haga clic en **[!UICONTROL Dejar de ver]**.
+
+   ![cancelar la suscripción del contenido](assets/unsubscribe-assets.png)
+
+También puede examinar la carpeta, la colección o el recurso en [!UICONTROL Administración de recursos]. Seleccione el [recurso suscrito](#subscribe-to-content) y haga clic en **[!UICONTROL Dejar de ver]**.
 
 ## Ver notificaciones {#view-notifications}
 
