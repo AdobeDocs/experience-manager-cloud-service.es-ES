@@ -6,10 +6,10 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Uso de flujos de trabajo de AEM, uso de los pasos Asignar tarea, paso Convertir en PDF/A, paso Generar documento de registro, uso de flujos de trabajo, paso Firmar documento, paso Generar salida impresa, paso Generar salida de PDF no interactiva
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: ht
-source-wordcount: '7370'
-ht-degree: 100%
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+workflow-type: tm+mt
+source-wordcount: '7409'
+ht-degree: 99%
 
 ---
 
@@ -141,7 +141,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **[!UICONTROL Compartir configuración]**: la bandeja de entrada AEM proporciona opciones para compartir una o todas las tareas de la bandeja de entrada con otros usuarios:
    * Cuando la variable **[!UICONTROL Permitir que el usuario asignado comparta explícitamente en la bandeja de entrada]** está seleccionada, el usuario puede seleccionar la tarea en la bandeja de entrada AEM y compartirla con otro usuario de AEM.
    * Cuando la opción **[!UICONTROL Permitir que el usuario asignado comparta a través del uso compartido de la bandeja de entrada]** está seleccionada y los usuarios comparten sus elementos de la bandeja de entrada o permiten que otros usuarios accedan a sus elementos de la bandeja de entrada, solo las tareas con la opción previamente mencionada habilitada se comparten con otros usuarios.
-   * Cuando la opción de configuración **[!UICONTROL Permitir que el usuario asignado delegue mediante la configuración ‘Fuera de la oficina’]** está seleccionada. El usuario asignado puede activar la opción para delegar la tarea a otros usuarios junto con otras opciones fuera de la oficina. Las nuevas tareas asignadas al usuario fuera de la oficina se delegan (asignan) automáticamente a los usuarios mencionados en la configuración fuera de la oficina.
+   * Cuando la opción de configuración **[!UICONTROL Permitir que el usuario asignado delegue mediante la configuración ‘Fuera de la oficina’]** está seleccionada. El usuario asignado puede habilitar la opción para delegar la tarea a otros usuarios junto con otras opciones fuera de la oficina. Las nuevas tareas asignadas al usuario fuera de la oficina se delegan (asignan) automáticamente a los usuarios mencionados en la configuración fuera de la oficina.
 
   Permite que otros usuarios elijan tareas asignadas mientras está fuera de la oficina y no puede trabajar en tareas asignadas.
 
@@ -362,7 +362,12 @@ El paso para invocar el servicio de modelo de datos de formulario (FDM) tiene lo
 
    * **[!UICONTROL Relativo a la carga útil]**: utilice la opción para recuperar el archivo adjunto guardado en una ruta relativa a la carga útil. Seleccione la opción y especifique el nombre de la carpeta que incluye el archivo adjunto o especifique el nombre del archivo adjunto en el cuadro de texto.
 
-     Por ejemplo, si la carpeta Relativo a la carga útil en el repositorio CRX incluye un archivo adjunto en la ubicación `attachment\attachment-folder`, especifique `attachment\attachment-folder` en el cuadro de texto después de seleccionar la variable **[!UICONTROL Relativo a la carga útil]**.
+     >[!NOTE]
+     >
+     > El paso de flujo de trabajo **Invocar modelo de datos de formulario** admite metadatos del lado del flujo de trabajo para matrices de datos codificadas en Base64 en [Modelos de datos de formulario basados en la lista SharePoint](/help/forms/connect-forms-to-sharepoint-list.md) y permite que los flujos de trabajo pasen, almacenen y recuperen metadatos como nombre de archivo, tipo MIME o propiedades personalizadas para los archivos adjuntos.
+     > ![Archivos adjuntos de lista SP](/help/edge/docs/forms/assets/workflow-sp-list.png)
+     >
+     > La carpeta Relativo a carga útil incluye un archivo adjunto en la ubicación `attachment`, especifique `attachment` en el cuadro de texto después de seleccionar la opción **[!UICONTROL Relativo a carga útil]**.
 
    * **[!UICONTROL Notación de puntos JSON]**: utilice la opción cuando el valor que desea utilizar esté en un archivo JSON. Por ejemplo, insurance.customerDetails.emailAddress. La opción de notación de puntos JSON solo está disponible si se selecciona la opción Asignar campos de entrada desde la entrada JSON.
    * **[!UICONTROL Asignar campos de entrada desde la entrada JSON]**: especifique la ruta de un archivo JSON para obtener el valor de entrada de algunos argumentos de servicio del archivo JSON. La ruta del archivo JSON puede ser relativa a la carga útil, una ruta de acceso absoluta o puede seleccionar un documento JSON de entrada mediante una variable de tipo JSON o un modelo de datos de formulario (FDM).

@@ -5,9 +5,9 @@ keywords: Agregar una función personalizada, utilizar una función personalizad
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1360'
 ht-degree: 13%
 
 ---
@@ -28,6 +28,8 @@ Este artículo le guía a través de los pasos para crear funciones personalizad
    * Métodos de clase
    * Parámetros predeterminados
    * Parámetros REST
+
+* Las últimas funciones de ECMAScript están disponibles como Acceso anticipado (EA), mientras que ECMAScript 2019 se admite en disponibilidad general.
 
 ## Requisitos previos para crear una función personalizada
 
@@ -144,10 +146,10 @@ Agregue lo siguiente a la carpeta de biblioteca de cliente agregada:
 
 1. Vaya al archivo `/ui.apps/src/main/content/META-INF/vault/filter.xml` en su [directorio del proyecto AEMaaCS].
 
-1. Abra el archivo y añada la siguiente línea al final:
+2. Abra el archivo y añada la siguiente línea al final:
 
    `<filter root="/apps/experience-league" />`
-1. Guarde el archivo.
+3. Guarde el archivo.
 
 ![xml de filtro de función personalizada](/help/forms/assets/custom-function-filterxml.png)
 
@@ -275,6 +277,6 @@ En caso de que se modifiquen las funciones personalizadas, el almacenamiento en 
 
 Veamos ahora varios [ejemplos de funciones personalizadas para un formulario adaptable basadas en componentes principales](/help/forms/custom-function-core-components-use-cases.md).
 
-## Véase también
+## Ver también
 
 {{see-also-rule-editor}}

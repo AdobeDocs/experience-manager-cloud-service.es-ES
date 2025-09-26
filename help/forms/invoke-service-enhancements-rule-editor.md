@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: invocar mejoras del servicio en VRE, rellenar opciones desplegables utilizando invocar servicio, establecer panel repetible utilizando la salida del servicio de invocación, establecer panel utilizando la salida del servicio de invocación, usar el parámetro de salida del servicio de invocación para validar otro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1598'
-ht-degree: 2%
+source-wordcount: '1800'
+ht-degree: 3%
 
 ---
 
@@ -64,7 +64,7 @@ A continuación se muestran los requisitos previos que debe cumplir antes de usa
 
 * Asegúrese de haber configurado una fuente de datos. Para obtener instrucciones sobre cómo configurar un origen de datos, [haga clic aquí](/help/forms/configure-data-sources.md).
 * Crear un modelo de datos de formulario con la fuente de datos configurada. Para obtener instrucciones sobre cómo crear un modelo de datos de formulario, [haga clic aquí](/help/forms/create-form-data-models.md).
-* Asegúrese de que los componentes principales estén habilitados para su entorno. Instale la última versión para habilitar los componentes principales adaptables de Forms para su entorno de AEM Cloud Service.
+* Asegúrese de que los componentes principales estén habilitados para su entorno. Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service.
 
 ## Exploración del servicio de invocación mediante diferentes casos de uso
 
@@ -78,6 +78,7 @@ La tabla siguiente describe algunos escenarios en los que se puede usar **Invoca
 | **Establecer panel repetible con el resultado de Invocar servicio** | Configura un panel repetible mediante los datos de la salida Invocar servicio, lo que permite el uso de paneles dinámicos. [Haga clic aquí](#use-case-2-set-repeatable-panel-using-output-of-invoke-service) para ver la implementación. |
 | **Establecer panel con el resultado de Invocar servicio** | Establece el contenido o la visibilidad de un panel utilizando valores específicos de la salida Invocar servicio. [Haga clic aquí](#use-case-3-set-panel-using-output-of-invoke-service) para ver la implementación. |
 | **Use el parámetro de salida de Invocar servicio para validar otros campos** | Utiliza parámetros de salida específicos del servicio de invocación para validar los campos del formulario. [Haga clic aquí](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields) para ver la implementación. |
+| **Usar carga útil de evento al navegar a la acción en invocar servicio** | Utiliza la carga útil de evento para gestionar las respuestas de éxito y error, así como para pasar datos a la acción Navegar a durante la navegación. [Haga clic aquí](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) para ver la implementación. |
 
 Cree un formulario `Get Information` que recupere valores según la entrada escrita en el cuadro de texto `Pet ID`. La captura de pantalla siguiente muestra el formulario utilizado en estos casos de uso:
 
@@ -142,7 +143,6 @@ Publicemos el siguiente JSON usando el servicio [addPet](https://petstore.swagge
         "status": "available"
     }
 ```
-
 
 Las reglas y la lógica se implementan mediante la acción **Invocar servicio** en el editor de reglas del cuadro de texto `Pet ID` para mostrar los casos de uso mencionados.
 
@@ -222,9 +222,38 @@ Escriba `102` en el cuadro de texto `Pet ID` y el botón **Enviar** estará ocul
 
 ![Salida](/help/forms/assets/output4.png)
 
+### Caso de uso 5: Uso de la carga útil de eventos en la acción Navegar a en Invocar servicio
+
+Este caso de uso muestra cómo configurar una regla en el botón **Enviar** que llame a un **servicio Invoke** y luego redirija al usuario a otra página mediante la acción **Navegar a**.
+
+#### Implementación
+
+Cree una regla en el botón **Enviar** para invocar el servicio de API `redirect-api`. Este servicio es responsable de redirigir al usuario al formulario **Contáctenos**.
+
+Puede integrar directamente una API como el servicio de API `redirect-api` en su editor de reglas utilizando los datos JSON que se proporcionan a continuación:
+
+```json
+{
+  "id": "1",
+  "path": "/content/dam/formsanddocuments/contact-detail/jcr:content?wcmmode=disabled"
+}
+```
+
 >[!NOTE]
 >
-> También puede [integrar la API directamente en la interfaz del Editor de reglas](/help/forms/api-integration-in-rule-editor.md) sin usar un modelo de datos de formulario predefinido.
+> Para aprender a integrar la API directamente en la interfaz del Editor de reglas, [haga clic aquí](/help/forms/api-integration-in-rule-editor.md) sin usar un modelo de datos de formulario predefinido.
+
+En **[!UICONTROL Agregar controlador de éxito]**, configure la acción **Navegar a** para redirigir al usuario a la página **Contáctenos** con el parámetro `Event Payload`. Aquí, el usuario puede enviar sus datos de contacto.
+
+![Carga del evento](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+
+De forma opcional, configure un controlador de errores para que muestre un mensaje de error si falla la llamada de servicio.
+
+#### Salida
+
+Cuando se hace clic en el botón **Enviar**, se invoca el servicio de API `redirect-api`. Una vez finalizado correctamente, se redirigirá al usuario a la página **Contáctenos**.
+
+![Salida de carga útil de evento](/help/forms/assets/output5.gif)
 
 ## Preguntas frecuentes
 

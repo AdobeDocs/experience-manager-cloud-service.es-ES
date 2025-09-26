@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -22,12 +22,12 @@ En la tabla siguiente se enumeran las mejoras recientes del editor de reglas en 
 
 | Mejora | Descripción | Ventajas |
 |---|----|---|
-| **Validación mediante el método `validate()`** | Disponible en la lista de funciones para validar campos individuales, paneles o todo el formulario. | - Validación granular en el nivel de panel, campo o formulario <br> - Mejor experiencia del usuario con mensajes de error de destino <br> - Evita la progresión con datos incompletos <br> - Reduce los errores de envío del formulario |
-| **Descargar documento de registro** | Función predeterminada disponible en el editor de reglas para descargar el documento de registro (DoR). | - No se requiere desarrollo personalizado para descargar el documento de registro <br> - Experiencia de descarga coherente en todos los formularios |
-| **Variables dinámicas** | Cree reglas utilizando variables que cambien según los datos introducidos por el usuario u otras condiciones. | - Habilita condiciones de regla flexibles <br> - Reduce la necesidad de lógica duplicada <br> - Elimina el requisito de crear campos ocultos |
-| **Reglas personalizadas basadas en eventos** | Defina reglas que respondan a eventos personalizados más allá de los déclencheur estándar. | - Admite casos de uso avanzados <br> - Mayor control sobre cuándo y cómo se ejecutan las reglas <br> - Mejora la interactividad |
-| **Ejecución repetible de panel según el contexto** | Las reglas ahora se ejecutan en el contexto correcto para cada panel repetido, en lugar de solo la última instancia. | - Aplicación precisa de reglas para cada instancia repetida <br> - Reduce los errores en las secciones dinámicas <br> - Mejora la experiencia del usuario con el contenido repetido |
-| **Compatibilidad con parámetros de cadena de consulta, UTM y explorador** | Cree reglas que adapten el comportamiento del formulario en función de parámetros de URL o valores específicos del explorador. | - Habilita la personalización basada en el origen o el entorno <br> - Útil para el marketing o los flujos específicos de seguimiento <br> - No es necesario realizar scripts ni personalizaciones adicionales |
+| [Validación mediante el método validate()](#validate-method-in-function-list) | Disponible en la lista de funciones para validar campos individuales, paneles o todo el formulario. | - Validación granular en el nivel de panel, campo o formulario <br> - Mejor experiencia del usuario con mensajes de error de destino <br> - Evita la progresión con datos incompletos <br> - Reduce los errores de envío del formulario |
+| [Descargar documento de registro](#download-document-of-record) | Función predeterminada disponible en el editor de reglas para descargar el documento de registro (DoR). | - No se requiere desarrollo personalizado para descargar el documento de registro <br> - Experiencia de descarga coherente en todos los formularios |
+| [Variables dinámicas](#support-for-dynamic-variables-in-rules) | Cree reglas utilizando variables que cambien según los datos introducidos por el usuario u otras condiciones. | - Habilita condiciones de regla flexibles <br> - Reduce la necesidad de lógica duplicada <br> - Elimina el requisito de crear campos ocultos |
+| [Reglas personalizadas basadas en eventos](#custom-event-based-rules-support) | Defina reglas que respondan a eventos personalizados más allá de los déclencheur estándar. | - Admite casos de uso avanzados <br> - Mayor control sobre cuándo y cómo se ejecutan las reglas <br> - Mejora la interactividad |
+| [Ejecución repetible de panel según el contexto](#context-based-rule-execution-for-repeatable-panels) | Las reglas ahora se ejecutan en el contexto correcto para cada panel repetido, en lugar de solo la última instancia. | - Aplicación precisa de reglas para cada instancia repetida <br> - Reduce los errores en las secciones dinámicas <br> - Mejora la experiencia del usuario con el contenido repetido |
+| [Compatibilidad con parámetros de cadena de consulta, UTM y explorador](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Cree reglas que adapten el comportamiento del formulario en función de parámetros de URL o valores específicos del explorador. | - Habilita la personalización basada en el origen o el entorno <br> - Útil para el marketing o los flujos específicos de seguimiento <br> - No es necesario realizar scripts ni personalizaciones adicionales |
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ En la regla anterior, el botón **Siguiente** comprueba si los campos de la secc
 >
 >Puede usar el método **validate()** en formularios, fragmentos o campos individuales. Cuando se incluye un fragmento en un formulario, tanto el formulario como el fragmento aparecen como opciones en el contexto de validación. En este caso, el fragmento hace referencia a los campos que contiene, mientras que el formulario hace referencia al formulario principal en el que está incrustado el fragmento.
 
-## Descargar documento como función OOTB en el editor de reglas
+## Descargar documento de registro
 
 El uso de la función **DownloadDor()** predeterminada (OOTB) en el Editor de reglas permite al usuario descargar el documento de registro si el formulario está configurado para generar el documento de registro.
 
@@ -124,7 +124,7 @@ El campo **Costo de envío total** se actualiza dinámicamente para reflejar tan
 >[!NOTE]
 >
 > También puede agregar la función **Obtener valor de variable** en la condición When.
-> &#x200B;> ![Obtener función de valor de variable en la condición When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Obtener función de valor de variable en la condición When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Este método permite realizar cálculos dinámicos en tiempo real sin agregar campos adicionales al formulario, lo que mantiene la estructura limpia y fácil de usar.
 

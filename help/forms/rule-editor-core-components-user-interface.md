@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
-source-git-commit: 659351c76c53631834d20b032b6dff2a3b017ac4
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '2390'
-ht-degree: 70%
+source-wordcount: '2453'
+ht-degree: 68%
 
 ---
 
@@ -231,6 +231,12 @@ Puede escribir una regla combinada para controlar la visibilidad del campo Spous
 
 +++
 
+### Compatibilidad con funciones y expresiones matemáticas en parámetros de entrada
+
+Los parámetros de entrada ahora admiten ambas salidas de función, por ejemplo, concat, trim y join, así como expresiones matemáticas. Esta mejora permite a los autores de formularios pasar valores calculados dinámicamente directamente, lo que optimiza las configuraciones de reglas, reduce la necesidad de campos adicionales y hace que los formularios sean más adaptables a lógicas complejas y escenarios impulsados por el cálculo.
+
+![Compatibilidad con llamada a función y expresión matemática](/help/forms/assets/mathematical-function-support.png)
+
 ### Gestión de reglas incumplidas
 
 Las reglas a veces se pueden romper si se mueve o se elimina un campo al que se hace referencia. Cuando esto sucede, el Editor de reglas marca la regla afectada con un indicador de punto rojo.
@@ -247,7 +253,7 @@ Las reglas a veces se pueden romper si se mueve o se elimina un campo al que se 
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/es/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -349,7 +355,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=es#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -490,6 +496,6 @@ Para copiar y pegar reglas, haga lo siguiente:
 Para comprender los distintos tipos de operadores y eventos en el editor de reglas de un formulario adaptable, consulte el artículo [Tipos de operadores y eventos disponibles en el editor de reglas de un formulario adaptable](/help/forms/rule-editor-core-components-events-operators.md).
 
 
-## Véase también
+## Ver también
 
 {{see-also-rule-editor}}

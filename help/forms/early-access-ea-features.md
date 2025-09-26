@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '2837'
-ht-degree: 21%
+source-wordcount: '2940'
+ht-degree: 22%
 
 ---
 
@@ -83,7 +83,7 @@ Cuando alguien envía un formulario en su sitio web creado con AEM Adaptive Form
 
 Al optimizar el proceso de transferencia de datos, el conector puede ayudarle a mejorar las tasas de conversión del sitio web. Al enviar automáticamente datos de posibles clientes a Marketo, puede asegurarse de que los posibles clientes cualificados se introduzcan rápidamente en sus programas de nutrición.
 
-Básicamente, AEM Forms to Marketo Connector le ayuda a aprovechar las ventajas de ambas plataformas para crear un canal de marketing más eficiente y eficaz.
+Básicamente, AEM Forms to Marketo Connector le ayuda a aprovechar las ventajas de ambas plataformas para crear un funnel de marketing más eficiente y eficaz.
 
 ¿Listo para empezar? Los siguientes artículos proporcionan instrucciones detalladas para utilizar la innovación.
 
@@ -117,6 +117,11 @@ Interactive Communications en Cloud es una potente solución para crear, adminis
 * **Flexibilidad de formato**: Salida a los formatos PDF, HTML, PCL, PostScript® y ZPL.
 
 * **Editor de reglas**: cree acciones dinámicas impulsadas por datos directamente en sus documentos mediante una interfaz intuitiva que apunte y haga clic. Defina fácilmente la lógica condicional, automatice los flujos de trabajo y personalice el contenido sin escribir código.
+
+* **Vista previa de PDF:** Vista previa de la comunicación interactiva sin datos, archivos JSON locales o modelos de datos para realizar pruebas flexibles basadas en datos.
+* **Fuentes personalizadas:** Incruste fuentes personalizadas o aprobadas por la organización para garantizar un procesamiento de PDF coherente y de marca en todos los dispositivos.
+* **Importar y exportar:** migre y reutilice sin problemas la comunicación interactiva con sus fragmentos y modelos de datos entre entornos.
+
 
 #### Casos de uso:
 
@@ -161,7 +166,7 @@ AEM Forms HTML5 Forms le permite procesar plantillas de formulario XFA (arquitec
 
 Acelere el desarrollo de AEM Forms Edge Delivery Services con la herramienta CLI de AEM Forms. Esta interfaz de línea de comandos le permite generar instantáneamente el código y el cableado necesarios para iniciar el desarrollo de componentes personalizados, sin plantillas ni problemas.
 
->[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component-generator-aem-forms-cli-aem-forms-custom component-aem-forms-development tool)
+>[!VIDEO]&#x200B;(<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component-generator-aem-forms-cli-aem-forms-custom component-aem-forms-development tool)
 
 **Funcionalidades clave:**
 
@@ -174,7 +179,7 @@ Acelere el desarrollo de AEM Forms Edge Delivery Services con la herramienta CLI
 
 ### Herramienta de integración de API para datos de formularios dinámicos
 
-La herramienta de integración de API permite a los autores de formularios crear formularios dinámicos e inteligentes que recuperan y rellenan automáticamente datos de API de REST externas en función de las interacciones del usuario. Esta capacidad de integración sin código transforma los formularios estáticos en interfaces de recopilación de datos interactivas.
+La herramienta de integración de la API permite a los autores de formularios crear formularios dinámicos e inteligentes que recuperan y rellenan automáticamente datos de las API REST externas en función de las interacciones del usuario. Esta posibilidad de integración sin código transforma los formularios estáticos en interfaces de recopilación de datos adaptables.
 
 Las funciones clave incluyen:
 
@@ -253,7 +258,7 @@ Este es un desglose de lo que las API de Doc Assurance pueden hacer:
 
 * **Reader amplía sus documentos (aplica o edita los derechos de uso de los documentos de PDF)**: permite a su organización compartir fácilmente documentos interactivos de PDF al ampliar la funcionalidad de Adobe Reader con derechos de uso adicionales.
 
-  Las API de extensión de Reader (derechos de uso) agregan derechos de uso a un documento de PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento PDF con Adobe Reader, como agregar comentarios a un documento, rellenar formularios y guardar el documento. Los usuarios de terceros no requieren software ni complementos adicionales para trabajar con los documentos con derechos activados.
+  Las API de extensión de Reader (derechos de uso) agregan derechos de uso a un documento de PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento PDF con Adobe Reader, como agregar comentarios a un documento, rellenar formularios y guardar el documento. Los usuarios de terceros no requieren software ni complementos adicionales para trabajar con los documentos con derechos habilitados.
 
   Cuando se agregan los derechos de uso correspondientes a los documentos de PDF, los destinatarios pueden realizar actividades habilitadas desde Adobe Reader.
 
@@ -284,7 +289,11 @@ El almacenamiento de PDF en Azure Blob Storage permite una administración centr
 
 * **Rutas de almacenamiento personalizables**: La capacidad de definir rutas de directorio personalizadas garantiza que los archivos PDF generados se almacenen en ubicaciones organizadas y específicas de la aplicación, lo que mejora la administración de archivos.
 
-## Véase también
+### Mejoras en el Editor visual de reglas
+
+* El Editor de reglas visuales de Forms adaptable ahora admite la integración de [API directa sin requerir un modelo de datos de formulario](/help/forms/api-integration-in-rule-editor.md). Puede conectarse a un extremo de API introduciendo su URL JSON o importando la configuración mediante un comando cURL. Después de la integración, la API se puede invocar usando la acción `Invoke Service`.
+
+## Ver también
 
 * [Últimas innovaciones en AEM Forms](/help/forms/latest-innovations.md)
 
