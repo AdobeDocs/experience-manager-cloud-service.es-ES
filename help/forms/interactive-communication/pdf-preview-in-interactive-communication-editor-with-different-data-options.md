@@ -53,7 +53,7 @@ Obtenga una vista previa de las comunicaciones interactivas sin datos, datos loc
 
 +++&#x200B;2. Vista previa con datos JSON locales
 
-2.1. Prepare un archivo JSON estructurado. Como referencia, puede copiar los datos de ejemplo del esquema JSON [(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizado para la comunicación.
+2.1. Prepare un archivo JSON estructurado. Como referencia, puede copiar los datos de ejemplo del esquema JSON [(FDM)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizado para la comunicación.
 
 2.2. En el Editor IC, vaya a **Vista previa de PDF** > Uso de datos locales.
 
