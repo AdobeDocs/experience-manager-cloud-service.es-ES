@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bdc0e7623592efed5270a3cb8322ef22e50cbad9
+source-git-commit: 3eda41b89847e1011d818922826b745b880e4977
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 69%
+source-wordcount: '1905'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -90,43 +90,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Nuevas funciones de Experience Manager Forms {#new-features-forms}
 
-**Componente de entrada de fecha y hora**
+**Invocar paso de flujo de trabajo del modelo de datos de formulario para archivos adjuntos de lista de SharePoint**
 
-Ahora hay disponible un componente [Fecha y hora](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component), que permite a los usuarios seleccionar tanto la fecha como la hora mediante una interfaz de calendario y reloj, o introduciendo manualmente los valores en un formato compatible.
-
-**Tratamiento de errores mejorado para cargas de archivos**
-
-El [componente Archivo adjunto](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) ahora valida automáticamente el tipo de archivo cargado con la lista de permitidos. Si un usuario carga un archivo en un formato no compatible, el formulario muestra un error durante el envío. El componente también comprueba el contenido del archivo para validar su tipo, lo que mejora la seguridad general del formulario.
-
-**Respuesta de error especificada para la acción de envío personalizada**
-
-Cuando una [acción de envío personalizada](/help/forms/custom-submit-action-troubleshooting.md) encuentra un error no controlado, el sistema devuelve el código de error 502. Esto ayuda a identificar que el problema está relacionado con la acción de envío personalizada, lo que facilita la depuración.
-
-**Excluir los campos ocultos del documento de registro**
-
-Una nueva propiedad permite la exclusión de campos ocultos del [documento de registro](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings). De forma predeterminada, esta opción no está seleccionada y se aplica a todos los campos de formulario.
-
+El paso de flujo de trabajo Invocar modelo de datos de formulario ahora admite la administración de metadatos del lado del flujo de trabajo para matrices de datos adjuntos codificadas en Base64 en modelos de datos de formulario basados en listas de SharePoint. Con esta mejora, el paso del flujo de trabajo puede pasar, almacenar y recuperar metadatos como el nombre de archivo, el tipo MIME y las propiedades personalizadas para cada archivo adjunto. Esta capacidad permite una administración de datos más completa y facilita una integración descendente sin problemas. Para obtener más información, consulte [Compatibilidad mejorada en el paso del flujo de trabajo Invocar modelo de datos de formulario para los archivos adjuntos de la lista de SharePoint](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
 
 ### Funciones de la versión preliminar de AEM Forms
 
-**Generar y sincronizar representaciones AFP**
+**Mejoras en el editor de reglas**
 
-Ahora puede usar la [API de comunicación de AEM Forms](/help/forms/document-generation-afp-api.md) para convertir un archivo XDP al formato AFP. AFP es un formato de alto rendimiento ampliamente utilizado en la impresión empresarial a gran escala.
+El Editor de reglas ahora admite la navegación mejorada y permite el uso de expresiones matemáticas y de funciones en parámetros de entrada.
 
-**Mejoras en el Editor de reglas**
+**Navegación mejorada con compatibilidad con carga útil de evento**
 
-* [Método Validar en la lista de funciones](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): los métodos validar y restablecer ahora admiten la ejecución en los niveles de panel, campo y formulario. Anteriormente, solo eran compatibles en el nivel de formulario.
-* [Compatibilidad moderna con JavaScript](/help/forms/rule-editor-core-components-difference-tables.md): Se ha añadido compatibilidad con ECMAScript 2019 y funciones posteriores para funciones personalizadas, lo que le permite escribir código más eficiente, modular y reutilizable.
-* [Descargar opción DoR en el editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): se ha añadido una función para descargar el documento de registro (DoR) como una opción predeterminada (OOTB) en el editor de reglas.
+La acción `Navigate To` en los controladores de invocación de servicio ahora admite `EVENT_PAYLOAD`, lo que permite a los autores de formularios configurar acciones de seguimiento basadas en respuestas de eventos. Esta mejora ofrece una mayor flexibilidad para diseñar flujos de trabajo posteriores al envío, lo que garantiza transiciones más suaves y experiencias de usuario más personalizadas. Para obtener más información, consulte [Navegación mejorada con compatibilidad con carga útil de evento](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
 
-  ![Documento de registro](/help/forms/assets/document-of-record-rn.gif)
+**Compatibilidad con funciones y expresiones matemáticas en parámetros de entrada**
 
-* [Variables dinámicas en el editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): ahora puede usar variables dinámicas (temporales) en el editor de reglas para tener más flexibilidad a la hora de definir condiciones y acciones. Los campos ocultos ya no son necesarios para almacenar valores temporales.
-* [Compatibilidad con reglas basadas en eventos personalizados](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): Ahora puede definir eventos personalizados y activar reglas basadas en esos eventos.
-* [Reglas de panel repetible según el contexto](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): en los paneles repetibles, las reglas ahora se ejecutan según el contexto, en lugar de aplicarse únicamente a la última instancia del panel.
-* [Reglas activadas por parámetros](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): el Editor de reglas ahora admite la ejecución de reglas en función de parámetros de consulta, parámetros de UTM o parámetros de explorador.
-* [Funciones personalizadas específicas de formularios](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): Edge Delivery Services Forms ahora admite scripts de funciones personalizadas específicos de formularios, lo que proporciona una mayor flexibilidad para administrar la lógica reutilizable.
-* [Importaciones estáticas para funciones personalizadas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): el Editor de reglas del Editor universal ahora admite importaciones estáticas, lo que permite a los desarrolladores organizar, compartir y reutilizar funciones en varios formularios.
+Los parámetros de entrada ahora admiten llamadas a funciones y expresiones matemáticas, lo que permite a los autores de formularios pasar valores calculados dinámicamente directamente. Esta mejora optimiza las configuraciones de reglas, elimina la necesidad de campos adicionales y hace que los formularios sean más adaptables a lógicas complejas y escenarios impulsados por el cálculo. Para obtener más información, vea [Compatibilidad con funciones y expresiones matemáticas en Parámetros de entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 ### Nuevas funciones de acceso anticipado de AEM Forms {#forms-new-early-access-features}
 
@@ -134,13 +114,17 @@ El programa de acceso anticipado de AEM Forms ofrece una oportunidad única de o
 
 En estas notas de la versión se indican las innovaciones de ofrecidas en la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
 
-**Componente de firma manuscrita**
+**Vista previa de PDF en el editor de comunicaciones interactivas**
 
-Ahora puede usar el [componente de Firma manuscrita](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) para ayudar a los usuarios a añadir sus firmas a un formulario, como en un formulario de acuerdo. El componente permite a los usuarios dibujar su firma directamente dentro del formulario con un ratón, un lápiz o una pantalla táctil.
+Los usuarios pueden obtener una vista previa de los PDF de las comunicaciones interactivas sin datos, con archivos de datos JSON locales o con datos de un modelo de datos, lo que permite realizar pruebas flexibles basadas en datos. Para obtener más información, consulte [Vista previa de PDF en el editor de comunicaciones interactivas](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-**Integración directa de API en el editor de reglas**
+**Compatibilidad con fuentes personalizadas en la comunicación interactiva**
 
-Los Formularios adaptables ahora admiten [integración directa de API](/help/forms/api-integration-in-rule-editor.md) en el Editor de reglas visuales sin requerir un modelo de datos de formulario. Los autores pueden configurar las API mediante una importación de URL o cURL, asignar parámetros de entrada/salida y proteger las llamadas con autenticación.
+La función Fuentes personalizadas permite a los usuarios incrustar fuentes personalizadas o aprobadas por la organización en las comunicaciones interactivas, lo que garantiza un procesamiento de PDF coherente y con marca en todos los dispositivos y plataformas. Para obtener más información, consulte [Compatibilidad con fuentes personalizadas en la comunicación interactiva](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+
+**Importar y exportar comunicaciones interactivas**
+
+Esta función permite migrar y reutilizar las comunicaciones interactivas entre diferentes entornos. Ahora puede exportar una comunicación interactiva junto con sus fragmentos asociados y modelos de datos de un entorno e importarla en otro. Para obtener más información, consulte [Importar y exportar comunicaciones interactivas](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
 
 <!--
 **Forms Optimization opportunities**
@@ -173,7 +157,7 @@ Días de lanzamiento, eventos en directo, ventas máximas: estos momentos no pue
 >[!NOTE]
 >
 >Disponible como función de disponibilidad limitada el 25 de septiembre.
->&#x200B;>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
+>>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
 
 ### Nueva versión de las herramientas para desarrolladores de AEM para Eclipse {#aem-develeper-tools-for-eclipse}
 
@@ -283,7 +267,7 @@ Obtenga más información en la [documentación de reenvío de registros](/help/
 
 ### Supervisión del rendimiento de las aplicaciones ampliadas (APM) (programa de Alpha) {#apm-alpha}
 
-Para que se pueda observar, AEM Cloud Service admite [New Relic One](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) proporcionado por Adobe y [Dynatrace](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) administrado por el cliente. A medida que exploramos la compatibilidad con opciones de APM adicionales, escríbanos a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con su proveedor o tecnología preferidos, junto con los casos de uso.
+Para que se pueda observar, AEM Cloud Service admite [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) proporcionado por Adobe y [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) administrado por el cliente. A medida que exploramos la compatibilidad con opciones de APM adicionales, escríbanos a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con su proveedor o tecnología preferidos, junto con los casos de uso.
 
 
 ## Guías de [!DNL Experience Manager] {#guides}
