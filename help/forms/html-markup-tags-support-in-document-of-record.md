@@ -3,13 +3,13 @@ title: Etiquetas de marcado HTML compatibles en el documento de registro
 description: La guía de referencia para etiquetas de marcado de HTML ahora se admite en la generación de documentos de registro, incluidas las consideraciones de comportamiento de procesamiento y accesibilidad
 feature: Adaptive Forms
 role: Developer, User
-source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
+exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
+source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '438'
 ht-degree: 8%
 
 ---
-
 
 
 # Etiquetas de marcado HTML compatibles en el documento de registro
@@ -132,23 +132,10 @@ Estas etiquetas no son compatibles y no se renderizarán correctamente:
 <p>Einstein's equation: E=mc<sup>2</sup></p>
 ```
 
-## Información relacionada
+## Contenido relacionado
 
-### Documentación de AEM Forms
 
 - [Generar documento de registro para formularios adaptables](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - [Generar documento de registro para componentes principales](/help/forms/generate-document-of-record-core-components.md)
 - [Personalización de la plantilla del documento de registro](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
-
-### Referencias técnicas
-
-- [Especificación de XFA: atributos XHTML y CSS](https://www.adobe.com/devnet/acrobat/pdfs/XFA-3_3.pdf) (página 1187)
-- [Estándares de accesibilidad de PDF](https://www.w3.org/TR/WCAG21/)
-- [Asignaciones de API de accesibilidad principales](https://www.w3.org/TR/core-aam-1.2/#role-map-superscript)
-
-### Guías de prácticas recomendadas
-
-- [Creando PDF accesibles](https://www.adobe.com/accessibility/pdf.html)
-- [Prácticas recomendadas de texto enriquecido en formularios](/help/forms/creating-accessible-adaptive-forms.md)
-- [Estructura del documento para accesibilidad](/help/forms/creating-accessible-adaptive-forms.md)
 
