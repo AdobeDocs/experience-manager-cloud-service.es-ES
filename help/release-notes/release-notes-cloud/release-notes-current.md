@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3eda41b89847e1011d818922826b745b880e4977
+source-git-commit: 3f50bf40c55a8f61a9e20c83aa52c94c6d4afe53
 workflow-type: tm+mt
-source-wordcount: '1905'
-ht-degree: 48%
+source-wordcount: '1875'
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +157,7 @@ Días de lanzamiento, eventos en directo, ventas máximas: estos momentos no pue
 >[!NOTE]
 >
 >Disponible como función de disponibilidad limitada el 25 de septiembre.
->&#x200B;>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
+>>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
 
 ### Nueva versión de las herramientas para desarrolladores de AEM para Eclipse {#aem-develeper-tools-for-eclipse}
 
@@ -240,8 +240,6 @@ La autenticación de Edge le permite restringir el acceso a las páginas de Edge
 
 Si está interesado, envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descripción de su caso de uso y cualquier pregunta que pueda tener.
 
-Independientemente de Edge Delivery Services, tenga en cuenta que a principios de este año lanzamos una función para configurar Open ID Connect [para proyectos de nivel de publicación de AEM Cloud Service](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md) para proteger páginas de AEM.
-
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
@@ -267,7 +265,7 @@ Obtenga más información en la [documentación de reenvío de registros](/help/
 
 ### Supervisión del rendimiento de las aplicaciones ampliadas (APM) (programa de Alpha) {#apm-alpha}
 
-Para que se pueda observar, AEM Cloud Service admite [New Relic One](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) proporcionado por Adobe y [Dynatrace](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) administrado por el cliente. A medida que exploramos la compatibilidad con opciones de APM adicionales, escríbanos a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con su proveedor o tecnología preferidos, junto con los casos de uso.
+Para que se pueda observar, AEM Cloud Service admite [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) proporcionado por Adobe y [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) administrado por el cliente. A medida que exploramos la compatibilidad con opciones de APM adicionales, escríbanos a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con su proveedor o tecnología preferidos, junto con los casos de uso.
 
 
 ## Guías de [!DNL Experience Manager] {#guides}
