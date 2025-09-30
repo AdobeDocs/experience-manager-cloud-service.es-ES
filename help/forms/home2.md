@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 0%
 
 ---
-
 
 # Introducción a AEM Forms as a Cloud Service {#introduction}
 
@@ -95,7 +95,7 @@ Implemente [lógica condicional](/help/forms/rule-editor-core-components.md), di
 Procesar formularios basados en XFA como [formularios HTML5](/help/forms/introductionhtml5.md) para dispositivos móviles y exploradores heredados. HTML5 Forms proporciona una experiencia móvil nativa sin complementos mientras mantiene la lógica y validación del formulario de las plantillas XDP originales.
 
 **Comunicaciones interactivas**
-Cree comunicaciones centradas en el documento como extractos, facturas y avisos con un editor visual. [Comunicaciones interactivas](/help/forms/introduction-to-interactive-communication.md) combinan contenido estático con datos dinámicos para generar comunicaciones personalizadas entre los canales impreso y digital.
+Cree comunicaciones centradas en el documento como extractos, facturas y avisos con un editor visual. [Comunicaciones interactivas](/help/forms/interactive-communication/create-interactive-communication.md) combinan contenido estático con datos dinámicos para generar comunicaciones personalizadas entre los canales impreso y digital.
 
 ### Gobernar: revisión y cumplimiento {#govern}
 
@@ -249,7 +249,7 @@ Para requisitos complejos que implican varios sistemas, generación de documento
 **Servicios y comunicaciones de documentos:**
 
 1. **[Implementar API de comunicación](/help/forms/aem-forms-cloud-service-communications-introduction.md)** para la generación automatizada de documentos
-2. **[Crear comunicaciones interactivas](/help/forms/introduction-to-interactive-communication.md)** para avisos e instrucciones personalizadas
+2. **[Crear comunicaciones interactivas](/help/forms/interactive-communication/create-interactive-communication.md)** para avisos e instrucciones personalizadas
 3. **[Configurar el portal de Forms](/help/forms/configure-forms-portal.md)** para la administración centralizada de formularios
 
 ### Implementación empresarial: escala y administración {#enterprise-deployment}

@@ -4,14 +4,15 @@ description: Diseñe comunicaciones dinámicas impulsadas por datos con facilida
 feature: Release Information
 role: Admin
 hide: true
+index: false
 hidefromtoc: true
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
-
 
 # Comunicaciones interactivas
 
@@ -26,7 +27,7 @@ A diferencia de AEM Forms Desktop Designer, que sólo se puede instalar en equip
 Desde las instituciones financieras que generan estados de cuenta hasta las agencias gubernamentales que simplifican los avisos de beneficios, las comunicaciones interactivas son la herramienta de referencia para crear correspondencia de alta calidad, segura y compatible con la ley con facilidad y eficiencia.
 
 
-## Capacidades principales
+## Funciones principales
 
 Las funciones principales del editor de comunicaciones interactivas son:
 
@@ -41,9 +42,9 @@ Las funciones principales del editor de comunicaciones interactivas son:
 | Fragmentos de documento | Reutilice bloques de contenido modulares en varios documentos para mantener la coherencia y la eficacia | ✅ disponible |
 | Enlace de datos en línea | Enlace datos directamente dentro del contenido para una personalización en tiempo real sin configuraciones externas | ✅ disponible |
 | Varios componentes | Utilice diversos componentes para crear documentos complejos y atractivos | ✅ disponible |
-| Diseño multicanal. | Cree experiencias unificadas en los formatos impreso y digital con cumplimiento normativo | ?? Disponible parcialmente |
-| Contenido dinámico | Generar contenido personalizado mediante lógica empresarial y enlace de datos | ?? Disponible parcialmente |
-| Flexibilidad de formato | Salida a los formatos PDF, HTML, PCL, PostScript®️ y ZPL | ?? Disponible parcialmente |
+| Diseño multicanal. | Cree experiencias unificadas en los formatos impreso y digital con cumplimiento normativo | 🌓 parcialmente disponible |
+| Contenido dinámico | Generar contenido personalizado mediante lógica empresarial y enlace de datos | 🌓 parcialmente disponible |
+| Flexibilidad de formato | Salida a los formatos PDF, HTML, PCL, PostScript®️ y ZPL | 🌓 parcialmente disponible |
 | Compatibilidad de idiomas | Crear comunicaciones en varios idiomas con compatibilidad con fuentes personalizadas | ⏳ próximamente |
 
 ## Incorporación

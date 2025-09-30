@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '1932'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # AEM Forms as a Cloud Service {#aem-forms-platform}
 
@@ -102,7 +102,7 @@ Cree formularios utilizando el método de creación que mejor se adapte a sus ne
 | **Lo que hace:** Diseñe comunicaciones personalizadas que combinen contenido estático con datos dinámicos para canales impresos y digitales. |
 | **Cuándo usar:** extractos de clientes, facturas, avisos, comunicaciones personalizadas y flujos de trabajo con gran cantidad de documentos. |
 | 📄 Diseño de documento visual 📄 Integración dinámica de datos 📄 Salida multicanal 📄 Personalization |
-| [Introducción a las comunicaciones interactivas →](/help/forms/introduction-to-interactive-communication.md) |
+| [Introducción a las comunicaciones interactivas →](/help/forms/interactive-communication/create-interactive-communication.md) |
 
 ## Integración y datos de 🔗 {#data-integration}
 
@@ -304,7 +304,7 @@ Elija su punto de partida en función de sus necesidades inmediatas y requisitos
 
 **Para la modernización XFA:** Empiece con [HTML5 Forms](/help/forms/introductionhtml5.md)
 
-**Para comunicaciones de documentos:** Comience con [comunicaciones interactivas](/help/forms/introduction-to-interactive-communication.md)
+**Para comunicaciones de documentos:** Comience con [comunicaciones interactivas](/help/forms/interactive-communication/create-interactive-communication.md)
 
 ### Inicio rápido de integración de datos {#integration-start}
 
