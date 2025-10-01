@@ -3,10 +3,10 @@ title: Control de acceso basado en atributos
 description: Obtenga información sobre cómo habilitar el control de acceso basado en atributos para definir reglas basadas en metadatos para definir el nivel de acceso a los recursos disponibles en Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
+source-git-commit: 82630f69399c077dc5c8ca40e7552cd479ea5bc5
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 4%
+source-wordcount: '944'
+ht-degree: 5%
 
 ---
 
@@ -39,15 +39,19 @@ Haga clic en **Descargar hoja de cálculo** para descargar y definir reglas en u
 
 Defina las reglas en la hoja de cálculo siguiendo las directrices definidas en este artículo.
 
+<!--
+
 >[!IMPORTANT]
 >
-> Después de definir las reglas, vaya a la ficha **Errores de validación** de la hoja de cálculo y haga clic en **Ejecutar validaciones ABAC**. **Todas las validaciones pasadas** confirman que puede proporcionar las reglas definidas a Adobe.
+> After defining the rules, navigate to the **Validation Errors** tab of the spreadsheet and click **Run ABAC Validations**. **All validations passed** message confirms that you can provide the defined rules to Adobe.
+
+-->
 
 ## Ejemplo de caso de uso de Control de acceso basado en atributos {#example-metadata-based-rules}
 
 Para admitir una implementación de marketing a gran escala, varios integrantes del equipo de todas las regiones y marcas necesitan tener acceso a los recursos digitales. Cada persona tiene un ámbito específico basado en la región y la marca. ABAC aplica estas reglas automáticamente a través de los metadatos del recurso. La siguiente tabla ilustra los diferentes tipos de personas para este caso de uso y las reglas aplicadas:
 
-| Grupo de usuarios | Función | Descripción de rol | Identificador de grupo | Regla ABAC |
+| Persona | Función | Descripción de rol | Identificador de grupo | Regla ABAC |
 |---------------------|----------------|-----------------|------------|------------|
 | John | Responsable de marketing EMEA | Supervisa la ejecución de marketing en todas las marcas de EMEA. Necesita acceso a recursos aprobados para todas las marcas destinadas a los mercados de EMEA. | group-emea-marketing | region = &quot;EMEA&quot; |
 | Mike | Responsable de marketing de APAC | Supervisa la ejecución de marketing en todas las marcas de APAC. Necesita acceso a recursos aprobados para todas las marcas destinadas a los mercados APAC. | group-apac-marketing | region = &quot;APAC&quot; |
