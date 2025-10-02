@@ -4,10 +4,10 @@ description: Obtenga información sobre la versión 2025.10.0 de Cloud Manager e
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 4acedba631b3732b989794c648079356f9b79fdd
+source-git-commit: f0b28245213d77c23259fb753376a6670b408e5e
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 64%
+source-wordcount: '1284'
+ht-degree: 62%
 
 ---
 
@@ -37,7 +37,7 @@ La próxima versión está planificada para el viernes, 06 de noviembre de 2025.
    * Analiza las estructuras de contenido (modelos, Live Copies) y las configuraciones personalizadas.
    * Identifica dependencias obsoletas (AEM SDK, bibliotecas de terceros).
    * Indica problemas de calidad del código (anotaciones incorrectas, patrones ineficientes).
-   * Proporciona instrucciones procesables a través de paneles como **Centro de actividades**.
+   * Proporciona instrucciones procesables a través de paneles como **Centro de acciones**.
    * Admite la optimización proactiva mediante la detección y corrección tempranas de problemas.
 
   Los equipos pueden monitorizar y mejorar continuamente sus entornos de AEM para obtener un rendimiento más fluido, una seguridad más sólida y una capacidad de mantenimiento a largo plazo.
@@ -46,7 +46,7 @@ La próxima versión está planificada para el viernes, 06 de noviembre de 2025.
 
 * **Compatibilidad con la canalización de configuración**
 
-  Ahora se admiten las canalizaciones de configuración para los sitios creados con Edge Delivery Services, lo que amplía esta capacidad más allá de los entornos de Cloud Service. Puede usar las **canalizaciones de configuración** para administrar las configuraciones como las reglas de filtrado de tráfico y las configuraciones WAF cuando corresponda. Consulte [Configuraciones compatibles](/help/operations/config-pipeline.md#configurations).
+  Ahora se admiten las canalizaciones de configuración para los sitios creados con Edge Delivery Services, lo que amplía esta capacidad más allá de los entornos de Cloud Service. Puede usar **Canalizaciones de configuración** para administrar configuraciones como la configuración de CDN, incluidas las reglas de filtro de tráfico y los selectores de origen. Consulte [Configuraciones compatibles](/help/operations/config-pipeline.md#configurations).
 
   Las canalizaciones de configuración de Edge Delivery también admiten secretos a través de variables de canalización de Cloud Manager.
 
@@ -116,13 +116,13 @@ Un nuevo modelo de compilación compila solo los módulos modificados (en lugar 
 
 Vuelva rápidamente a una implementación anterior si el código fuente del cliente más reciente no funciona como se esperaba; no es necesario volver a ejecutar la canalización completa ni revertir las confirmaciones manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**&#x200B;para un entorno seleccionado.*
+![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**para un entorno seleccionado.*
 
 ![Cuadro de diálogo Restaurar código anterior implementado](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *En el cuadro de diálogo **Restaurar código anterior implementado**, revise la versión implementada actualmente y la versión que desea restaurar, luego haga clic en **Confirmar***.
 
 ![Activación de Restaurando](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**&#x200B;hasta que finalice la implementación.*
+*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**hasta que finalice la implementación.*
 
 ![Versión del código fuente en uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vista de detalles del entorno, vista desde arriba, ahora también muestra la versión activa del código fuente en uso.*
 
