@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="Disponibilidad limitada" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 350b288d30b3fb8d9d308dbd279f579cec0b292c
+source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >Esta característica estará disponible como característica de **disponibilidad limitada** a partir del 25 de septiembre. Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activar la función en sus programas.
+
+>[!WARNING]
+>Solo puedes usar las funciones Horas tranquilas y Actualizar periodos gratis una vez que te hayas incorporado a [Actualizaciones automáticas de mantenimiento](/help/implementing/deploying/aem-version-updates.md).
 
 Las [actualizaciones automáticas de mantenimiento](/help/implementing/deploying/aem-version-updates.md) de AEM as a Cloud Service garantizan que las instancias estén seguras y actualizadas con las últimas versiones de mantenimiento. Dicho esto, en algunos casos (como los eventos de go-live) es posible que tenga que &quot;proteger&quot; esas horas de trabajo críticas de cualquier interrupción potencial. Como tal, AEM as a Cloud Service ofrece la opción de establecer un intervalo de tiempo en el que no se produzcan actualizaciones automáticas para los programas en curso.
 
