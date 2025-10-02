@@ -313,10 +313,10 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 >AEM tiene protección contra recurrencias para:
 >
 >* Referencias de contenidos
->  >  Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencia a fragmento.
+>  &#x200B;>  Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencia a fragmento.
 >
 >* Referencias a fragmento en GraphQL
->  >  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
+>  &#x200B;>  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
 
 >[!CAUTION]
 >
