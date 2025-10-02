@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 38%
+source-wordcount: '2201'
+ht-degree: 31%
 
 ---
 
@@ -24,6 +24,14 @@ Esta página cubre cómo definir el modelo de fragmento de contenido mediante el
 >
 >Para obtener más información, consulte [API de AEM GraphQL para uso con fragmentos de contenido: limitaciones](/help/headless/graphql-api/content-fragments.md#limitations)
 
+>[!NOTE]
+>
+>Si crea un modelo con este nuevo editor, siempre debe utilizar este editor para ese modelo.
+>
+>Si abre el modelo con el [editor de modelos original](/help/assets/content-fragments/content-fragments-models.md), verá el siguiente mensaje:
+>
+>* &quot;Este modelo tiene configurado un esquema de IU personalizado. Es posible que el orden de los campos mostrados en esta interfaz de usuario no coincida con el esquema de la interfaz de usuario. Para ver los campos alineados con el esquema de la interfaz de usuario, debe cambiar al nuevo Editor de fragmentos de contenido&quot;.
+
 ## Definición del modelo de fragmento de contenido {#defining-your-content-fragment-model}
 
 El modelo de fragmento de contenido define de forma efectiva la estructura de los fragmentos de contenido resultantes mediante una selección de **[tipos de datos](#data-types)**. Con el editor de modelos puede añadir instancias de los tipos de datos y, a continuación, configurarlos para crear los campos obligatorios.
@@ -38,26 +46,46 @@ El modelo de fragmento de contenido define de forma efectiva la estructura de lo
    >
    >También puede abrir un modelo directamente después de [crearlo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
 
-1. Abra el modelo necesario para **Editar**; utilice la acción rápida o seleccione el modelo y, después, la acción en la barra de herramientas.
+1. Abra el modelo necesario para **Edit**; utilice uno de los vínculos de acción rápida o seleccione el modelo y, a continuación, la acción en la barra de herramientas.
 
-   Una vez abierto, el editor de modelos muestra lo siguiente:
-
-   * A la izquierda: los campos ya definidos.
-   * A la derecha: los **Tipos de datos** disponibles para crear campos (y **Propiedades** para su uso una vez creados los campos)
-
-   >[!NOTE]
-   >
-   >Cuando un campo se define como **Obligatorio**, la **Etiqueta** indicada en el panel izquierdo se marca con un asterisco (**&#42;**).
 
    ![Propiedades](assets/cf-cfmodels-empty-model.png)
 
+   Una vez abierto, el editor de modelos muestra lo siguiente:
+
+   * superior:
+      * Icono **Inicio**
+      * opción para alternar entre [original](/help/assets/content-fragments/content-fragments-models.md) y el nuevo editor
+      * **Cancelar**
+      * **Guardar**
+
+   * izquierda: **Tipos de datos** disponibles para crear campos
+
+   * en el medio: campos ya definidos junto con la opción **Agregar**
+
+   * a la derecha: usando los iconos del extremo derecho puede seleccionar entre:
+
+      * **Propiedades**: defina y vea las propiedades del campo seleccionado
+      * **Detalles del modelo**: mostrar el estado **Habilitado**, **Título del modelo**, **Etiquetas**, **Descripción** y **URL de vista previa**
+
 1. **Adición de un campo**
 
-   * Arrastre un tipo de datos requerido a la ubicación requerida para un campo.
+   * O bien, haga lo siguiente:
 
-     ![Arrastrar tipo de datos para crear el campo](assets/cf-cfmodels-create-field.png)
+      * Arrastre un tipo de datos desde el panel izquierdo a la ubicación requerida para un campo del panel central.
+      * Seleccione el icono **+** por tipo de datos para agregarlo al final de la lista de campos.
+      * Seleccione **Agregar** en el panel central y, a continuación, el tipo de datos requerido de la lista desplegable resultante para agregar un campo al final de la lista.
 
-   * Una vez agregado un campo al modelo, el panel derecho muestra las **Propiedades** que se pueden definir para ese tipo de datos en particular. Aquí puede definir lo que se requiere para ese campo.
+     >[!NOTE]
+     >
+     >**Los campos de marcador de posición de tabulación** siempre deben aparecer encima de los campos existentes.
+
+   * Puede cambiar la posición de un campo mediante la formación de puntos a la izquierda del cuadro de campo:
+
+     ![Mover campo](assets/cf-cfmodels-move-field-icon.png)
+
+   * Una vez agregado un campo al modelo (y seleccionado), el panel derecho muestra las **Propiedades** que se pueden definir para ese tipo de datos en particular. Aquí puede definir lo que se requiere para el específico
+field.
 
       * Muchas propiedades se explican por sí mismas; para obtener más información, consulte [Propiedades (tipos de datos)](#properties).
       * Escribir una **Etiqueta de campo** autocompleta **Nombre de propiedad**, si está vacío, y se puede actualizar de forma manual posteriormente.
@@ -72,15 +100,17 @@ El modelo de fragmento de contenido define de forma efectiva la estructura de lo
 
      ![Propiedades de campo](assets/cf-cfmodels-field-properties.png)
 
+     >[!NOTE]
+     >
+     >Cuando un campo se define como **Obligatorio**, la **Etiqueta** indicada en el panel central se marca con un asterisco (**&#42;**).
+
 1. **Eliminación de un campo**
 
-   Seleccione el campo requerido y, a continuación, seleccione el icono de la papelera. Se le solicitará que confirme la acción.
+   Seleccione el icono de la papelera para el campo correspondiente en el panel central.
 
    ![Quitar](assets/cf-cfmodels-remove-icon.png)
 
-1. Añada todos los campos obligatorios y defina las propiedades relacionadas, según sea necesario. Por ejemplo:
-
-   ![Guardar](assets/cf-cfmodels-save.png)
+1. Añada todos los campos obligatorios y defina las propiedades relacionadas, según sea necesario.
 
 1. Seleccione **Guardar** para mantener la definición.
 
@@ -112,12 +142,13 @@ Hay disponible una selección de tipos de datos para definir el modelo:
 * **Fecha y hora**
    * Adición de un campo de fecha u hora
 
-* **Lista desglosada**
+* **Enumeración**
    * Agregar un conjunto de campos de casilla de verificación, botones de opción o desplegables
       * Puede especificar las opciones disponibles para el autor del fragmento
 
 * **Etiquetas**
    * Permite a los autores de fragmentos acceder y seleccionar áreas de etiquetas
+
 * **Referencia al fragmento**
    * Referencias a otros fragmentos de contenido; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
    * El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
@@ -126,18 +157,16 @@ Hay disponible una selección de tipos de datos para definir el modelo:
       * Crear nuevas instancias del campo
    * La referencia especifica la ruta al recurso al que se hace referencia; por ejemplo `/content/dam/path/to/resource`
 
-* **Referencia de fragmento (UUID)**
-   * Referencias a otros fragmentos de contenido; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
-   * El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
-      * Editar directamente el fragmento al que se hace referencia.
-      * Crear un nuevo fragmento de contenido basado en el modelo adecuado
-      * Crear nuevas instancias del campo
-   * En el editor, las referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como ID único universal (UUID) que hace referencia al recurso
-      * No es necesario conocer el UUID; en el editor de fragmentos puede buscar el fragmento requerido
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >Los UUID son específicos del repositorio. Si usa la [herramienta de copia de contenido](/help/implementing/developing/tools/content-copy.md) para copiar fragmentos de contenido, los UUID se recalcularán en el entorno de destino.
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **Referencia de contenido**
    * Referencias a otros contenidos, de cualquier tipo; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
@@ -145,16 +174,16 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * El campo se puede configurar para permitir que los autores de fragmentos creen nuevas instancias del campo
    * La referencia especifica la ruta al recurso al que se hace referencia; por ejemplo `/content/dam/path/to/resource`
 
-* **Referencia de contenido (UUID)**
-   * Referencias a otros contenidos, de cualquier tipo; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
-   * Si se hace referencia a una imagen, puede optar por mostrar una miniatura
-   * El campo se puede configurar para permitir que los autores de fragmentos creen nuevas instancias del campo
-   * En el editor, las referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como ID único universal (UUID) que hace referencia al recurso
-      * No necesita conocer el UUID; en el editor de fragmentos puede navegar hasta el recurso de recurso requerido
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >Los UUID son específicos del repositorio. Si usa la [herramienta de copia de contenido](/help/implementing/developing/tools/content-copy.md) para copiar fragmentos de contenido, los UUID se recalcularán en el entorno de destino.
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **Objeto JSON**
    * Permite al autor del fragmento de contenido introducir la sintaxis JSON en los elementos correspondientes de un fragmento.
@@ -162,7 +191,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
       * El JSON se pasará y se emitirá como JSON en GraphQL.
       * Incluye resaltado de sintaxis JSON, autocompletado y resaltado de errores en el editor de fragmentos de contenido.
 
-* **Marcador de posición de pestaña**
+* **Marcador de posición de ficha**
    * Permite la introducción de pestañas para utilizarlas al editar el contenido del fragmento de contenido.
       * Se muestran como divisores en el editor de modelos, que separan las secciones de la lista de tipos de datos de contenido. Cada instancia representa el inicio de una nueva pestaña.
       * En el editor de fragmentos, cada instancia aparece como una pestaña.
@@ -170,6 +199,8 @@ Hay disponible una selección de tipos de datos para definir el modelo:
      >[!NOTE]
      >
      >Este tipo de datos se utiliza exclusivamente para dar formato; el esquema AEM GraphQL lo ignora.
+     >
+     >**Los campos de marcador de posición de tabulación** siempre deben aparecer encima de los campos existentes.
 
 ## Propiedades (tipos de datos) {#properties}
 
@@ -258,16 +289,12 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 
 * [Referencia de contenido](#content-reference)
    * Proporciona una sencilla referencia a otro contenido; de cualquier tipo.
-   * Proporcionado por los tipos de datos:
-      * **Referencia de contenido** - basado en ruta
-      * **Referencia de contenido (UUID)** - basada en UUID
+   * Proporcionado por el tipo de datos **Content Reference**
    * Se puede configurar para una o varias referencias (en el fragmento resultante).
 
 * [Referencia a fragmento](#fragment-reference-nested-fragments) (fragmentos anidados)
    * Hace referencia a otros fragmentos, según los modelos específicos definidos.
-   * Proporcionado por los tipos de datos:
-      * **Referencia de fragmento** - basado en ruta
-      * **Referencia de fragmento (UUID)** - basado en UUID
+   * Proporcionado por el tipo de datos **Referencia a fragmento**
    * Permite incluir o recuperar datos estructurados.
 
      >[!NOTE]
@@ -275,19 +302,21 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
      >Este método es de particular interés cuando se usa [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Se puede configurar para una o varias referencias (en el fragmento resultante).
 
+<!--
 >[!NOTE]
 >
->Consulte [Actualizar los fragmentos de contenido para referencias de UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) para obtener más información sobre las referencias de contenido/fragmento y las referencias de contenido/fragmento (UUID), y actualizar a los tipos de datos basados en UUID.
+>See [Upgrade your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md) for further information about Content/Fragment Reference and Content/Fragment Reference (UUID), and upgrading to the UUID-based data types.
+-->
 
 >[!NOTE]
 >
 >AEM tiene protección contra recurrencias para:
 >
->* Referencias de contenido
->Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencia a fragmento.
+>* Referencias de contenidos
+>  >  Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencia a fragmento.
 >
 >* Referencias a fragmento en GraphQL
->Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
+>  >  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
 
 >[!CAUTION]
 >
@@ -297,7 +326,7 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 
 ### Referencia de contenido {#content-reference}
 
-Los tipos de datos **Referencia de contenido** y **Referencia de contenido (UUID)** le permiten procesar contenido de otra fuente; por ejemplo, imagen, página o Fragmento de experiencia.
+El tipo de datos **Referencia de contenido** le permite procesar contenido de otra fuente; por ejemplo, imagen, página o Fragmento de experiencia.
 
 Además de las propiedades estándar, puede especificar las siguentes:
 
@@ -324,7 +353,7 @@ Además de las propiedades estándar, puede especificar las siguentes:
 
 ### Referencia a fragmento (fragmentos anidados) {#fragment-reference-nested-fragments}
 
-Los tipos de datos **Referencia de fragmento** y **Referencia de fragmento (UUID)** pueden hacer referencia a uno o más fragmentos de contenido. Esta función es de especial interés cuando se recupera contenido para utilizarlo en la aplicación, ya que le permite recuperar datos estructurados con varias capas.
+El tipo de datos **Referencia a fragmento** puede hacer referencia a uno o más fragmentos de contenido. Esta función es de especial interés cuando se recupera contenido para utilizarlo en la aplicación, ya que le permite recuperar datos estructurados con varias capas.
 
 Por ejemplo:
 
@@ -373,6 +402,6 @@ Esto especifica o representa una ruta raíz para los fragmentos a los que se hac
 
 >[!NOTE]
 >
->Existe un mecanismo de protección contra la recurrencia. Prohíbe que el usuario seleccione el fragmento de contenido actual en la Referencia a fragmento y puede provocar un cuadro de diálogo vacío del selector de Referencia a fragmento.
+>Existe un mecanismo de protección contra la periodicidad. Prohíbe que el usuario seleccione el fragmento de contenido actual en la Referencia a fragmento y puede provocar un cuadro de diálogo vacío del selector de Referencia a fragmento.
 >
 >También hay protección contra recurrencias para las referencias a fragmento en GraphQL. Si crea una consulta profunda en dos fragmentos de contenido que se hacen referencia entre sí, devolverá un valor nulo.
