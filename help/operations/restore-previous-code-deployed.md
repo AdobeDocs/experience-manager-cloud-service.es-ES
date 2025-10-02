@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 2fa7005eec0a53f632e1b1cb2f5cc5910bbf21f8
+source-git-commit: 7968668766ae4c8a966bbde93aa2f2ac0c401659
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '559'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,13 @@ Simplemente abre el menú ![Icono de más o el icono de menú de puntos suspensi
 * El programa se ejecuta en AEM as a Cloud Service.
 * La última canalización para ese entorno se ejecutó correctamente hace **menos de 30 días**.
 * El estado del entorno es *En ejecución* y no hay ninguna canalización en curso.
-* **La restauración del código anterior implementado** se puede realizar en un entorno `Development`, `Stage` o `Specialized Testing Environment`.
+
+**Restaurar código anterior implementado** funciona en el entorno `Production`, además del entorno `Development`, el entorno `Stage` y `Specialized Testing Environment`. Después de confirmarlo, Cloud Manager inicia la restauración y envía una notificación push al inicio y al finalizar correctamente.
+
+>[!IMPORTANT]
+>
+>Adobe recomienda validar el procedimiento en `Stage` *antes de* usarlo en `Production` para reducir el riesgo y garantizar la estabilidad.
+
 
 Si alguna comprobación falla, Cloud Manager abre el siguiente cuadro de diálogo que enumera una o más condiciones incumplidas y deshabilita **Confirm**, lo que impide la restauración.
 

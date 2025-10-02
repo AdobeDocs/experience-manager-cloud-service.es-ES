@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d065397b874cc24fb7af53e1258520f3e8270c55
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 33%
+source-wordcount: '1546'
+ht-degree: 32%
 
 ---
 
@@ -116,6 +116,11 @@ Consulte [Agregar una canalización que no sea de producción](/help/implementin
 Mediante una canalización de configuración, puede implementar rápidamente la configuración para el reenvío de registros, las tareas de mantenimiento relacionadas con la depuración y varias configuraciones de CDN, incluidas las reglas de filtro de tráfico (como las reglas de WAF (cortafuegos de aplicaciones web)). Además, puede administrar transformaciones de solicitud y respuesta, selectores de origen, redirecciones del lado del cliente, páginas de error, claves CDN administradas por el cliente, claves API de depuración y autenticación básica.
 
 Consulte [Usar canalizaciones de configuración](/help/operations/config-pipeline.md) para obtener una lista completa de las funciones admitidas y para aprender a administrar las configuraciones en el repositorio de modo que se implementen correctamente.
+
+>[!NOTE]
+>
+>Las canalizaciones de configuración de Edge Delivery no tienen entornos de desarrollo, ensayo y producción independientes. En AEM as a Cloud Service, los cambios se mueven a través de los niveles de desarrollo, fase y producción. Por el contrario, una canalización de configuración de Edge Delivery aplica su configuración directamente a todos los dominios de Edge Delivery Sites registrados en Cloud Manager. Para obtener más información, consulte [Agregar una canalización de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+
 
 ### Configurar canalizaciones de configuración {#configure-config-deployment}
 

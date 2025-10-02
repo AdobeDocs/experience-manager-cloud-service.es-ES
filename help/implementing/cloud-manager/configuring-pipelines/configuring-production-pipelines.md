@@ -1,20 +1,20 @@
 ---
-title: Agregar una canalización de producción
+title: Añadir una canalización de producción
 description: Aprenda a añadir una canalización de producción para crear e implementar su código en entornos de producción.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 39%
+source-wordcount: '1402'
+ht-degree: 34%
 
 ---
 
 
-# Agregar una canalización de producción {#configure-production-pipeline}
+# Añadir una canalización de producción {#configure-production-pipeline}
 
 Obtenga información sobre cómo configurar canalizaciones de producción para crear e implementar su código en entornos de producción. Una canalización de producción implementa el código primero en el entorno de ensayo. En el momento de la aprobación, implementa el mismo código en el entorno de producción.
 
@@ -36,13 +36,17 @@ Antes de comenzar a implementar el código, establece la configuración de la ca
 
 ## Adición de una nueva canalización de producción {#adding-production-pipeline}
 
-Una vez que haya configurado el programa y tenga al menos un entorno usando la interfaz de usuario de [!UICONTROL Cloud Manager], puede añadir una canalización de producción siguiendo estos pasos.
+Una vez que haya configurado el programa y tenga al menos un entorno usando la interfaz de usuario de [!UICONTROL Cloud Manager], podrá agregar una canalización de producción siguiendo estos pasos.
 
 >[!TIP]
 >
->AEM Antes de configurar una canalización front-end, consulte el [Recorrido AEM de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) de para obtener una guía completa a través de la herramienta de creación rápida de sitios de la aplicación de fácil uso de la herramienta de creación rápida de sitios de la interfaz de usuario de la interfaz de usuario de. Este recorrido AEM AEM puede ayudarle a optimizar el desarrollo front-end de su sitio de la, lo que le permite personalizar su sitio rápidamente sin conocimientos del back-end de la.
+>Antes de configurar una canalización front-end, consulte el [Recorrido de creación rápida de sitios de AEM](/help/journey-sites/quick-site/overview.md) para obtener una guía completa a través de la herramienta de creación rápida de sitios de AEM fácil de usar. Este recorrido puede ayudarle a optimizar el desarrollo front-end de su sitio de AEM, lo que le permite personalizar su sitio rápidamente sin conocimiento del back-end de AEM.
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
+1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
+1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
+1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
+1. Seleccione la organización que desee.
+1. En la consola **Mis programas**, haga clic en un programa.
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 
@@ -76,7 +80,7 @@ Los pasos para completar la creación de la canalización de producción varían
 
 ### Configuración de una canalización de código de pila completa {#full-stack-code}
 
-AEM Una canalización de código de pila completa implementa simultáneamente compilaciones de código de back-end y front-end que contienen una o más aplicaciones de servidor de junto con la configuración HTTPD/Dispatcher.
+Una canalización de código de pila completa implementa simultáneamente generaciones de código back-end y front-end que contienen una o más aplicaciones de servidor de AEM junto con la configuración HTTPD/Dispatcher.
 
 >[!NOTE]
 >
@@ -106,23 +110,24 @@ Introduzca los primeros caracteres del nombre de la rama y la función de autoco
 
 1. Proporcione las rutas que se incluirán en la auditoría de experiencias.
 
-   * Consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) para obtener más información.
+   * Consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) para obtener más información.
 
 1. Haga clic en **Guardar** para guardar la canalización.
 
-Cuando se ejecuta la canalización, las rutas configuradas para la auditoría de experiencias se envían y evalúan en función del rendimiento, la accesibilidad, la SEO, las prácticas recomendadas y las pruebas del PWA. Para obtener más información, consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md).
+Cuando se ejecuta la canalización, las rutas configuradas para la auditoría de experiencias se envían y evalúan en función del rendimiento, la accesibilidad, la SEO, las prácticas recomendadas y las pruebas de PWA. Para obtener más información, consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
 ### Configuración de una canalización de implementación de destino {#targeted-deployment}
 
-AEM Una implementación de destino implementa el código únicamente para partes seleccionadas de la aplicación de. En una implementación de este tipo, puede elegir **Incluir** uno de los siguientes tipos de código:
+Una implementación de destino implementa código solo para partes seleccionadas de la aplicación de AEM. En una implementación de este tipo, puede elegir **Incluir** uno de los siguientes tipos de código:
 
-* AEM **Configuración**: configure las opciones para varias características de su entorno de la.
-   * Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md) para obtener una lista de las configuraciones admitidas, que incluye el reenvío de registros, las tareas de mantenimiento relacionadas con la depuración y varias configuraciones de CDN, y para administrarlas en el repositorio de modo que se implementen correctamente.
-   * Al ejecutar una canalización de implementación de destino, se implementan las configuraciones, siempre que se hayan guardado en el entorno, el repositorio y la rama definidos en la canalización.
+* **Configuración**: configure las opciones para varias características de su entorno de AEM.
+   * Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md) para obtener una lista de las configuraciones admitidas, que incluyen el reenvío de registros, las tareas de mantenimiento relacionadas con la depuración y varias configuraciones de CDN, y para administrarlas en el repositorio de modo que se implementen correctamente.
+   * Al ejecutar una canalización de implementación de destino, se implementan las configuraciones, siempre que se guarden en el entorno, el repositorio y la rama definidos en la canalización.
    * En cualquier momento, solo puede haber una canalización de configuración por entorno.
-* **Código front-end**: configure JavaScript AEM y CSS para el front-end de la aplicación.
+* **Configurar canalización de configuración de Edge Delivery Services**: las canalizaciones de configuración de Edge Delivery no tienen entornos de desarrollo, ensayo y producción independientes. En AEM as a Cloud Service, los cambios se mueven a través de los niveles de desarrollo, fase y producción. Por el contrario, una canalización de configuración de Edge Delivery aplica su configuración directamente a todos los dominios de Edge Delivery Sites registrados en Cloud Manager. Para obtener más información, consulte [Agregar una canalización de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+* **Código front-end**: configure JavaScript y CSS para el front-end de su aplicación AEM.
    * Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
    * Consulte el documento [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
 * **Configuración de nivel web**: configure las propiedades de Dispatcher para almacenar, procesar y enviar páginas web al cliente.

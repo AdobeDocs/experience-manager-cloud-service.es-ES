@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 38%
@@ -67,7 +67,7 @@ La fase **Implementación de fase** incluye los siguientes pasos:
 | Paso de implementación de fase | Descripción |
 | --- | --- |
 | Validación | Garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente. por ejemplo, probar que la rama configurada existe y que los entornos están disponibles. |
-| Prueba de compilación y unidad | Ejecuta un proceso de generación en contenedores.<br>Consulte [Detalles del entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener detalles sobre el entorno de compilación. |
+| Pruebas de compilación y pruebas de unidad | Ejecuta un proceso de generación en contenedores.<br>Consulte [Detalles del entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener detalles sobre el entorno de compilación. |
 | Escaneado de códigos | Evalúa la calidad del código de la aplicación.<br>Consulte [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md) para obtener detalles sobre el proceso de prueba. |
 | Generar imágenes | Este proceso convierte el contenido y los paquetes de Dispatcher del paso Generar en imágenes Docker. También genera configuraciones de Kubernetes basadas en esos paquetes. |
 | Implementar para pruebas | La imagen se implementa en el entorno de ensayo como preparación para la [fase de prueba](#stage-testing). |
@@ -83,7 +83,7 @@ La fase **Prueba de fase** incluye los siguientes pasos:
 | Prueba funcional del producto | La canalización de Cloud Manager ejecuta pruebas que se ejecutan en el entorno de ensayo.<br>Véase también [Prueba funcional del producto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Prueba funcional personalizada | Este paso en la canalización siempre se ejecuta y no se puede omitir. Si la generación no produce un JAR de prueba, la prueba se aprueba automáticamente.<br>Vea también [Pruebas funcionales personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
 | Prueba de IU personalizada | Característica opcional que ejecuta automáticamente pruebas de interfaz de usuario creadas para aplicaciones personalizadas.<br>Las pruebas de IU están basadas en Selenium y empaquetadas en una imagen Docker para ofrecer flexibilidad en el idioma y los marcos de trabajo. Este método permite utilizar Java y Maven, Node y WebDriver.io, o cualquier marco o tecnología basados en Selenium.<br>Véase también [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
-| Auditoría de experiencias | Este paso en la canalización siempre se ejecuta y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencias después de realizar pruebas funcionales personalizadas que ejecutan las comprobaciones.<ul><li>Las páginas configuradas se envían al servicio y se evalúan.</li><li>Los resultados son informativos y muestran las puntuaciones y el cambio entre la puntuación actual y la anterior.</li><li>Este conocimiento es importante para determinar si hay una regresión que se introduce con la implementación actual.</li></ul>Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
+| Auditoría de experiencias | Este paso en la canalización siempre se ejecuta y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencias después de realizar pruebas funcionales personalizadas que ejecutan las comprobaciones.<ul><li>Las páginas configuradas se envían al servicio y se evalúan.</li><li>Los resultados son informativos y muestran las puntuaciones y el cambio entre la puntuación actual y la anterior.</li><li>Este conocimiento es importante para determinar si hay una regresión que se introduce con la implementación actual.</li></ul>Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/reports/report-experience-audit.md).</li></ul> |
 
 ![Fase de prueba](assets/stage-testing.png)
 

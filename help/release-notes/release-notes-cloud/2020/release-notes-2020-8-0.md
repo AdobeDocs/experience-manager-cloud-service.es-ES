@@ -1,10 +1,10 @@
 ---
 title: Notas de la versión 2020.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] notas de la versión as a Cloud Service para 2020.8.0."
+description: '[!DNL Adobe Experience Manager] Notas de la versión de as a Cloud Service para 2020.8.0.'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 35%
@@ -22,7 +22,7 @@ En la siguiente sección se describen las notas de la versión generales de Expe
 
 * Capacidad para [restaurar páginas y subpáginas (árboles de páginas) a una versión anterior](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
-* AEM SPA Capacidad para [crear lanzamientos](/help/sites-cloud/authoring/launches/overview.md) en el editor de la [&#128279;](/help/implementing/developing/hybrid/introduction.md).
+* Capacidad para [crear lanzamientos](/help/sites-cloud/authoring/launches/overview.md) en AEM [Editor de SPA](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -42,11 +42,11 @@ En la siguiente sección se describen las notas de la versión generales de Expe
 
 * Utilice un perfil de procesamiento para generar metadatos personalizados mediante Compute Service. Ver [metadatos personalizados con perfil de procesamiento](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Una experiencia de descarga más sencilla para los usuarios de Brand Portal, que los administradores pueden configurar. Ver [descripción general de la experiencia de descarga](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es#download-configurations).
+* Una experiencia de descarga más sencilla para los usuarios de Brand Portal, que los administradores pueden configurar. Ver [descripción general de la experiencia de descarga](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
-* Las previsualizaciones de documentos nativas y de PDF de alta fidelidad ya están disponibles en Brand Portal. Ver [descripción general del visor de documentos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es#doc-viewer).
+* Las previsualizaciones de documentos nativas y de alta fidelidad de PDF ya están disponibles en Brand Portal. Ver [descripción general del visor de documentos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* Ahora puede invalidar la caché de la red de distribución de contenido (CDN) directamente desde [!DNL Dynamic Media] en AEM as a Cloud Service (en lugar de usar [!DNL Dynamic Media Classic]). Garantiza que los recursos más recientes se proporcionen en minutos en lugar de horas. Ver [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* Ahora puede invalidar la caché de la red de distribución de contenido (CDN) directamente desde [!DNL Dynamic Media] en AEM as a Cloud Service (en lugar de usar [!DNL Dynamic Media Classic]). Garantiza que los recursos más recientes se proporcionen en minutos en lugar de horas. Consulte [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * La compatibilidad de accesibilidad mejorada se agrega a los controles de la interfaz de usuario, la navegación, la exploración y la experiencia de búsqueda en [!DNL Assets].
 
@@ -62,11 +62,11 @@ En la siguiente sección se describen las notas de la versión generales de Expe
 * La opción Relacionar y no relacionar no responde cuando se hace clic por primera vez. (CQ-4299022)
 * Al descargar un recurso, si selecciona la opción para recibirlo por correo electrónico, este no se envía. (CQ-4299146)
 
-## as a Cloud Service de Adobe Experience Manager Commerce {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Novedades {#what-is-new-commerce}
 
-* La función de consola de producto ya está disponible. AEM Esto permite a los especialistas en marketing/autores en el ámbito de la visualización y la navegación por las categorías y los productos almacenados en el back-end del comercio. También se proporciona compatibilidad con propiedades para categorías y productos en la Consola de producto.
+* La función de consola de producto ya está disponible. Esto permite a los especialistas en marketing/autores de AEM ver y navegar por las categorías y los productos almacenados en el servidor comercial. También se proporciona compatibilidad con propiedades para categorías y productos en la Consola de producto.
 
 * Se mejoraron los seleccionadores de productos y categorías para permitir que los especialistas en marketing seleccionen productos mediante SKU o categorías mediante ID de categoría.
 
@@ -74,7 +74,7 @@ En la siguiente sección se describen las notas de la versión generales de Expe
 
 ### Fecha de la versión {#release-date-cm}
 
-La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.8.0 es viernes, 06 de agosto de 2020.
+La fecha de lanzamiento de [!UICONTROL Cloud Manager] versión 2020.8.0 es el 6 de agosto de 2020.
 
 ### Novedades {#what-is-new-cloud-manager}
 
@@ -84,7 +84,7 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.8.0 es viernes,
   >[!NOTE]
   >Se ha cambiado el nombre de Auditoría de contenido a Auditoría de experiencias.
 
-  Consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obtener más información.
+  Consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/reports/report-experience-audit.md) para obtener más información.
 
 * Los entornos recién creados en los programas de Assets ahora se configurarán automáticamente con Smart Content Services.
 
@@ -134,7 +134,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de la versi�
 
 * La IU de versiones anteriores a veces mostraba una extracción correcta aunque el registro mostraba errores.
 
-## Herramientas de refactorización de código {#code-refactoring-tools}
+## Herramientas de refactorización de código  {#code-refactoring-tools}
 
 Siga esta sección para conocer las novedades y las actualizaciones de las herramientas de refactorización de código.
 
@@ -142,6 +142,6 @@ Siga esta sección para conocer las novedades y las actualizaciones de las herra
 
 * Complemento AIO-CLI lanzado para unificar las herramientas de refactorización de código para permitir que los desarrolladores invoquen y ejecuten las herramientas de refactorización de código desde un solo lugar. Consulte [Recurso de Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obtener más información.
 
-* AEM Convertidor de Dispatcher ampliado para admitir conversiones de configuraciones On-Premise y de Adobe de Managed Services Dispatcher en configuraciones de Dispatcher compatibles con AEM as a Cloud Service. Consulte [Recurso Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) para obtener más información.
+* AEM Dispatcher Converter se ha ampliado para admitir las conversiones de configuraciones On-Premise y Adobe Managed Services Dispatcher en configuraciones de Dispatcher compatibles con AEM as a Cloud Service. Consulte [Recurso Git: Conversor Dispatcher de AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) para obtener más información.
 
-* AEM Convertidor de Dispatcher reescrito en ` node.js ` e integrado con el complemento AIO-CLI.
+* AEM Dispatcher Converter se volvió a escribir en ` node.js ` y se integró con el complemento AIO-CLI.

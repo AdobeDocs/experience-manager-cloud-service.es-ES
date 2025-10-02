@@ -5,10 +5,10 @@ exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 91%
+source-wordcount: '165'
+ht-degree: 62%
 
 ---
 
@@ -25,9 +25,9 @@ Existen tres categorías de pruebas compatibles con las canalizaciones de Cloud 
 
 1. [Pruebas funcionales](/help/implementing/cloud-manager/functional-testing.md)
 
-   * Las pruebas funcionales forman parte del paso de la fase de prueba de una [canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y, opcionalmente, parte de la fase de prueba de una [canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * Las pruebas funcionales se ejecutan durante la fase de prueba de una [canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md). También se puede ejecutar, opcionalmente, durante la fase de prueba de una [canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
-1. [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+1. [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
    * Las pruebas de auditoría de experiencias están habilitadas en todas las canalizaciones de producción de Cloud Manager y no se pueden omitir.
 

@@ -5,9 +5,9 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: ea85deb74f759f8e74d314df0ba081ea23cb5aab
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '638'
 ht-degree: 14%
 
 ---
@@ -48,7 +48,7 @@ Si se está ejecutando una canalización, la administración de variables está 
    | --- | --- |
    | Nombre | Un nombre único de la variable de configuración. Identifica la variable específica que se utiliza en la canalización. Debe cumplir las siguientes convenciones de nomenclatura:<ul><li>Las variables solo pueden contener caracteres alfanuméricos y el guion bajo (`_`).</li><li>Los nombres deben estar en mayúsculas.</li><li>Hay un límite de 200 variables por canalización.</li><li>Cada nombre debe tener 100 caracteres o menos.</li><li>Cada `string` debe tener menos de 2048 caracteres.</li><li>Cada valor de la variable de tipo `secretString` debe tener 500 caracteres o menos.</li></ul> |
    | Valor | El valor que contiene la variable. |
-   | Paso aplicado | Requerido. El paso en la canalización al que se aplica la variable:<ul><li>**Compilación**: la variable se aplica durante el proceso de compilación.</li><li>**Prueba funcional**: la variable se usa durante el paso de prueba funcional.</li><li>**Pruebas de IU** - La variable se usa durante la fase de pruebas de IU.</li></ul> |
+   | Paso aplicado | Obligatorio. El paso en la canalización al que se aplica la variable:<ul><li>**Compilación**: la variable se aplica durante el proceso de compilación.</li><li>**Prueba funcional**: la variable se usa durante el paso de prueba funcional.</li><li>**Pruebas de IU** - La variable se usa durante la fase de pruebas de IU.</li>&lt;li&lt;**Implementar**: La variable se usa durante el paso de implementación. Por ejemplo, utilice esta variable para canalizaciones de Edge Delivery Services.</li></ul> |
    | Tipo | Seleccione si la variable es texto sin formato o cifrada como secreto. |
 
    ![Agregar variable](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)

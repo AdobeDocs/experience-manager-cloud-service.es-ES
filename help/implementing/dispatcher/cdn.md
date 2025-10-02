@@ -4,10 +4,10 @@ description: Aprenda a utilizar la CDN administrada por AEM y a apuntar su propi
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
+source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1744'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ Los clientes que deseen publicar en el nivel de Edge Delivery Services pueden ap
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## CDN administrado por Adobe {#aem-managed-cdn}
+## CDN administrada por Adobe {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
