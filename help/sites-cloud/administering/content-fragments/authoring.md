@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
+source-git-commit: 1fade922ac38340aaaee71794f96db738d492ed6
 workflow-type: tm+mt
-source-wordcount: '2823'
-ht-degree: 6%
+source-wordcount: '2778'
+ht-degree: 7%
 
 ---
 
@@ -44,7 +44,7 @@ Cuando abra el Editor de fragmentos de contenido por primera vez, verá cuatro �
 * barra de herramientas superior: para obtener información clave y acciones
    * un vínculo a la consola Fragmento de contenido (icono de Inicio)
    * información sobre el modelo y la carpeta
-   * vínculos a [vista previa (si el patrón de URL de vista previa predeterminado está configurado para el modelo)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
+   * vincula a [Vista previa](#preview-content-fragment); si el patrón de URL de vista previa predeterminado está configurado para el modelo
    * [Publicar](#publish-content-fragment) y [Cancelar la publicación](#unpublish-content-fragment) acciones
    * una opción para mostrar todo **Referencias principales** (icono de vínculo)
    * el fragmento **[Estado](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** y la información guardada por última vez
@@ -267,7 +267,7 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 
@@ -497,14 +497,7 @@ Para permitirle colaborar en el producto y en el contexto, la pestaña **Comenta
 
 ## Previsualización del fragmento {#preview-content-fragment}
 
-El editor de fragmentos de contenido proporciona a los autores la opción de previsualizar sus ediciones en una aplicación de front-end externa.
-
-Para utilizar esta función, primero debe:
-
-* Trabaje con su equipo de TI para configurar la aplicación de front-end externa que procesará el fragmento de contenido consumiendo su salida JSON.
-* Cuando se configura la aplicación de front-end externa, el **Patrón de URL de vista previa predeterminado** debe definirse como una [propiedad del modelo de fragmento de contenido apropiado](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
-
-Una vez definida la dirección URL, el botón **Vista previa** está activo. Puede seleccionar este botón para iniciar la aplicación externa (en una pestaña independiente) para procesar el fragmento de contenido.
+El editor de fragmentos de contenido proporciona a los autores la opción de previsualizar sus ediciones en una aplicación de front-end externa. Esto requiere que se defina el **[Patrón de URL de vista previa predeterminado](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** para activar el botón **Vista previa** en la barra de herramientas superior del editor. Puede seleccionar este botón para iniciar la aplicación externa (en una pestaña independiente) para procesar el fragmento de contenido.
 
 ## Publicación del fragmento {#publish-content-fragment}
 

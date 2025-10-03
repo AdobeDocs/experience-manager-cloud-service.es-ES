@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: baf9e56e65bc537e136310814f269a3a20a80dd3
+source-git-commit: a64e0ff18c1508a50400f1423543b3c907552d6a
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2459'
 ht-degree: 35%
 
 ---
@@ -132,20 +132,7 @@ Al seleccionar un modelo específico, se muestran las propiedades de dicho model
 * **Título**
 * **Etiquetas**
 * **Descripción**
-* **Patrón de URL de vista previa**
-
-  Los modelos de fragmentos de contenido permiten a los autores **obtener una vista previa** de su contenido en una aplicación de front-end externa. Una vez configurado el **servicio de vista previa**, agregue la dirección URL de la aplicación de front-end.
-
-  La URL de vista previa debe seguir este patrón:
-    `https://<preview_url>?param=${expression}`
-
-  Las expresiones disponibles son:
-
-   * `${contentFragment.path}`
-   * `${contentFragment.model.path}`
-   * `${contentFragment.model.name}`
-   * `${contentFragment.variation}`
-   * `${contentFragment.id}`
+* **[Patrón de URL de vista previa](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)**
 
 <!-- CHECK: currently under FT -->
 <!--
