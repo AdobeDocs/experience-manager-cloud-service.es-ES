@@ -4,10 +4,10 @@ description: Estas son las notas de la versión 2025.10.02 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 58%
+source-wordcount: '188'
+ht-degree: 55%
 
 ---
 
@@ -22,7 +22,7 @@ Estas son las notas de la versión del editor universal del 2 de octubre de 2025
 
 ## Novedades {#what-is-new}
 
-* [Se ha agregado una opción](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) al menú **Cuenta** de la barra de herramientas del encabezado de Experience Manager para cambiar entre los entornos de vista previa y producción.
+* [Se ha agregado una opción](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) al menú **Cuenta** de la barra de herramientas del encabezado de Experience Manager para cambiar entre la versión de producción actual del editor universal y la próxima versión de vista previa.
 
 ## Funciones de adopción anticipada {#early-adopter}
 

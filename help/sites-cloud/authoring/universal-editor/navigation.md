@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1954'
 ht-degree: 19%
 
 ---
@@ -113,11 +113,11 @@ Seleccione el icono que representa al usuario para acceder a la configuración d
 
 ![Propiedades del usuario](assets/user-properties.png)
 
-Al tocar o hacer clic en el icono Cuenta, se abre un menú con la configuración del usuario. Esta configuración se aplica a Cloud Manager en general y sus características se detallan [&#x200B; en esa documentación.](/help/implementing/cloud-manager/navigation.md)
+Al tocar o hacer clic en el icono Cuenta, se abre un menú con la configuración del usuario. Esta configuración se aplica a Cloud Manager en general y sus características se detallan [ en esa documentación.](/help/implementing/cloud-manager/navigation.md)
 
 ![Conmutador de entorno](assets/environment-switcher.png)
 
-Para el editor universal, [si tiene disponible el servicio de vista previa,](/help/sites-cloud/authoring/sites-console/previewing-content.md) también tiene la opción de cambiar entre los entornos de producción y vista previa bajo el encabezado **Configuración del producto**.
+Para el editor universal, bajo el encabezado **Configuración del producto**, hay una opción para cambiar entre la versión de producción actual del editor universal y la próxima versión de vista previa.
 
 ### Barra de herramientas del editor universal {#universal-editor-toolbar}
 
