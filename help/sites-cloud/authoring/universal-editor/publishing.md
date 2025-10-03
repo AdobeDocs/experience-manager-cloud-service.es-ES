@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 31%
+source-wordcount: '592'
+ht-degree: 32%
 
 ---
 
@@ -43,6 +43,10 @@ Cuando usted, como autor de contenido, esté listo para publicar su contenido, s
    Pulse o haga clic en la flecha hacia atrás situada junto al encabezado **Elementos** para volver a la descripción general.
 
 1. Pulse o haga clic en **Publicar** para publicar o en **Cancelar** para cancelar.
+
+>[!TIP]
+>
+>Si publica en su entorno de vista previa, [puede usar la opción del menú **Cuenta**](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) de la barra de herramientas del encabezado de Experience Manager para cambiar entre los entornos de vista previa y producción.
 
 >[!NOTE]
 >

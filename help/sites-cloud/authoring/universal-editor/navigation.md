@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 20%
+source-wordcount: '1953'
+ht-degree: 19%
 
 ---
 
@@ -20,7 +20,7 @@ Conozca los conceptos básicos del acceso y la navegación por el Editor univers
 
 El editor universal permite editar cualquier aspecto de todo tipo de contenido en todas las implementaciones para que pueda ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de última generación a los desarrolladores.
 
-Para ello, se proporciona una IU intuitiva que requiere una formación mínima para comenzar a editar contenido. En este documento se describe cómo desplazarse por el editor universal.
+Para ello, el Editor universal proporciona a los creadores de contenido una IU intuitiva que requiere una formación mínima para comenzar a editar contenido. En este documento se describe cómo desplazarse por el editor universal.
 
 >[!TIP]
 >
@@ -112,6 +112,12 @@ Al tocar o hacer clic en el conmutador de aplicación, puede ir rápidamente a o
 Seleccione el icono que representa al usuario para acceder a la configuración de la cuenta. Si no tiene una imagen de usuario configurada, se le asigna un icono de forma aleatoria.
 
 ![Propiedades del usuario](assets/user-properties.png)
+
+Al tocar o hacer clic en el icono Cuenta, se abre un menú con la configuración del usuario. Esta configuración se aplica a Cloud Manager en general y sus características se detallan [ en esa documentación.](/help/implementing/cloud-manager/navigation.md)
+
+![Conmutador de entorno](assets/environment-switcher.png)
+
+Para el editor universal, [si tiene disponible el servicio de vista previa,](/help/sites-cloud/authoring/sites-console/previewing-content.md) también tiene la opción de cambiar entre los entornos de producción y vista previa bajo el encabezado **Configuración del producto**.
 
 ### Barra de herramientas del editor universal {#universal-editor-toolbar}
 
