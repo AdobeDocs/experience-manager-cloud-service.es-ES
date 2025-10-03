@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo previsualizar los fragmentos de co
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 42dbf6138920c4f733d7dc74dfc81504dee1e0ae
+source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '394'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,8 @@ Puede obtener una vista previa del fragmento:
 <!--
 * with a HTML template, using **[Preview]()** from the Content Fragments console
 -->
+
+Por supuesto, también puede ver su fragmento en [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 >[!IMPORTANT]
 >
@@ -67,7 +69,7 @@ Una vez definida la dirección URL, el botón **[Vista previa](/help/sites-cloud
 
 ## Previsualizar instancia {#preview-instance}
 
-Puede **publicar** y **cancelar la publicación** de su fragmento en la instancia de vista previa (así como en su instancia de publicación).
+Puede **publicar** y **cancelar la publicación** de su fragmento en el **[servicio de vista previa](/help/headless/deployment/architecture.md)** (así como en su instancia de publicación).
 
 Puede publicar el fragmento desde el editor o desde la consola.
 
