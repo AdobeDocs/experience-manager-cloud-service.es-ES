@@ -113,7 +113,7 @@ Seleccione el icono que representa al usuario para acceder a la configuración d
 
 ![Propiedades del usuario](assets/user-properties.png)
 
-Al tocar o hacer clic en el icono Cuenta, se abre un menú con la configuración del usuario. Esta configuración se aplica a Cloud Manager en general y sus características se detallan [ en esa documentación.](/help/implementing/cloud-manager/navigation.md)
+Al tocar o hacer clic en el icono Cuenta, se abre un menú con la configuración del usuario. Esta configuración se aplica a Cloud Manager en general y sus características se detallan [&#x200B; en esa documentación.](/help/implementing/cloud-manager/navigation.md)
 
 ![Conmutador de entorno](assets/environment-switcher.png)
 
