@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
+source-git-commit: 90527b1a160e6bde35562d58407a9056ae1f0a3a
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 17%
@@ -156,7 +156,7 @@ Los siguientes comandos `openssl` se pueden utilizar para convertir certificados
 
 ## Limitación del número de certificados SSL instalados {#limitations}
 
-En cualquier momento dado, Cloud Manager admite hasta 50 certificados instalados. Estos certificados se pueden asociar a uno o más entornos de su programa e incluir también certificados caducados.
+En cualquier momento dado, Cloud Manager admite hasta 70 certificados instalados. Estos certificados se pueden asociar a uno o más entornos de su programa e incluir también certificados caducados.
 
 Si ha alcanzado el límite, revise los certificados y considere la posibilidad de eliminar cualquier certificado caducado. O bien, agrupe varios dominios en el mismo certificado, ya que un certificado puede abarcar varios dominios (hasta 100 SAN).
 
