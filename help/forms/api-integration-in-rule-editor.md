@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: al integrar la API en el editor de reglas, invoque las mejoras del servicio
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
+source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 2%
+source-wordcount: '1027'
+ht-degree: 3%
 
 ---
 
@@ -19,17 +19,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> El Editor de reglas visual admite la integración de API en Forms adaptable en función de componentes principales y Forms de Edge Delivery Services.
+> El editor de reglas visuales admite la integración de API en Forms adaptable en función de componentes principales y [Edge Delivery Services Forms creado en el editor universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 El Editor de reglas visual en Forms adaptable admite la integración directa de API sin crear un modelo de datos de formulario. Puede conectarse a un extremo de API introduciendo la dirección URL de la API (en formato JSON) o importando la configuración mediante un comando cURL. Una vez integrada, la acción **Invocar servicio** se puede usar para llamar a la API.
 
 Los campos de formulario se pueden asignar directamente a los parámetros de entrada definidos en la configuración de la API. Del mismo modo, los parámetros de salida se pueden asignar a campos de formulario mediante la opción **carga útil de evento** para la respuesta de API correspondiente.
 
 Además, el Editor de reglas visuales le permite definir **controladores de éxito** y **controladores de errores** al invocar un servicio. Los controladores de éxito especifican las acciones que se ejecutarán después de una llamada de API correcta, mientras que los controladores de error definen cómo debe responder el formulario cuando se produce un error.
-
->[!NOTE]
->
-> La integración de API en el Editor de reglas también se aplica a [Edge Delivery Services Forms creado en el Editor universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Comparación: métodos de integración de API
 
