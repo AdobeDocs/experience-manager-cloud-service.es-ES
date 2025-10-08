@@ -1,19 +1,19 @@
 ---
-title: Externalización de direcciones URL
+title: Externalización de URL
 description: El externalizador es un servicio OSGi que permite transformar mediante programación una ruta de recurso en una dirección URL externa y absoluta.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 0%
+source-wordcount: '647'
+ht-degree: 2%
 
 ---
 
-# Externalización de direcciones URL {#externalizing-urls}
+# Externalización de URL {#externalizing-urls}
 
-AEM En la práctica, **Externalizer** es un servicio OSGi que le permite transformar mediante programación una ruta de acceso de recursos (por ejemplo, `/path/to/my/page`) en una dirección URL externa y absoluta (por ejemplo, `https://www.mycompany.com/path/to/my/page`) al anteponer a la ruta de acceso un DNS preconfigurado.
+En AEM, **Externalizer** es un servicio OSGi que le permite transformar mediante programación una ruta de acceso de recursos (por ejemplo, `/path/to/my/page`) en una dirección URL externa y absoluta (por ejemplo, `https://www.mycompany.com/path/to/my/page`) al anteponer a la ruta de acceso un DNS preconfigurado.
 
 Dado que una instancia de AEM as a Cloud Service no puede conocer su dirección URL visible externamente y que a veces debe crearse un vínculo fuera del ámbito de la solicitud, este servicio proporciona un lugar central para configurar esas direcciones URL externas y crearlas.
 
@@ -21,7 +21,7 @@ Este artículo explica cómo configurar el servicio Externalizer y cómo utiliza
 
 ## Comportamiento predeterminado del externalizador y cómo anularlo {#default-behavior}
 
-AEM De forma predeterminada, el servicio externalizador asigna un puñado de identificadores de dominio a prefijos de URL absolutos que coinciden con las URL del servicio de que se han generado para el entorno, como `author https://author-p12345-e6789.adobeaemcloud.com` y `publish https://publish-p12345-e6789.adobeaemcloud.com`. Las direcciones URL base para cada uno de estos dominios predeterminados se leen desde variables de entorno definidas por Cloud Manager.
+De forma predeterminada, el servicio externalizador asigna un puñado de identificadores de dominio a prefijos de URL absolutos que coinciden con las URL de servicio de AEM que se han generado para el entorno, como `author https://author-p12345-e6789.adobeaemcloud.com` y `publish https://publish-p12345-e6789.adobeaemcloud.com`. Las direcciones URL base para cada uno de estos dominios predeterminados se leen desde variables de entorno definidas por Cloud Manager.
 
 Como referencia, la configuración predeterminada de OSGi para `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` es efectivamente:
 
@@ -42,7 +42,11 @@ Como referencia, la configuración predeterminada de OSGi para `com.day.cq.commo
 >
 >La implementación de un archivo personalizado `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` en AEM as a Cloud Service que omita cualquiera de estas asignaciones de dominio predeterminadas puede dar como resultado un comportamiento de aplicación impredecible.
 
-Para anular los valores `preview` y `publish`, use las variables de entorno de Cloud Manager como se describe en el artículo [Configuración de OSGi para AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) y configuración de las variables predefinidas `AEM_CDN_DOMAIN_PUBLISH` y `AEM_CDN_DOMAIN_PREVIEW`.
+No defina ni anule las variables de entorno `EXTERNALIZER` (por ejemplo, `AEM_EXTERNALIZER_AUTHOR`) en Cloud Manager. En su lugar, si necesita anular los valores de dominio `publish` o `preview`, defina y utilice las variables de entorno `AEM_CDN_DOMAIN_PUBLISH` y `AEM_CDN_DOMAIN_PREVIEW`. Estas variables se asignan automáticamente a los campos correspondientes de la configuración de Externalizer durante el inicio.
+
+<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
 
 ## Configuración del servicio externalizador {#configuring-the-externalizer-service}
 
@@ -79,11 +83,11 @@ Para definir una asignación de dominio para el servicio externalizador:
 
    * **`server`** es el nombre de host (un nombre de dominio o una dirección ip).
    * **`port`** (opcional) es el número de puerto.
-   * AEM **`contextpath`** (opcional) solo se establece si se instala la aplicación web como una aplicación web en una ruta de contexto diferente.
+   * **`contextpath`** (opcional) solo se establece si AEM está instalado como aplicación web en una ruta de contexto diferente.
 
    Por ejemplo: `production https://my.production.instance`
 
-   AEM Los siguientes nombres de asignación están predefinidos y siempre deben configurarse, ya que se basa en ellos:
+   Los siguientes nombres de asignación están predefinidos y siempre deben configurarse, ya que AEM depende de ellos:
 
    * `local`: la instancia local
    * `author`: DNS del sistema de creación
@@ -91,7 +95,7 @@ Para definir una asignación de dominio para el servicio externalizador:
 
    >[!NOTE]
    >
-   >AEM Una configuración personalizada le permite agregar una nueva categoría, como `production`, `staging` o incluso sistemas externos que no son de tipo de sistema, como `my-internal-webservice`, que no son de tipo de sistema (no de tipo de sistema), como . Es útil evitar codificar estas URL en diferentes lugares del código base de un proyecto.
+   >Una configuración personalizada le permite agregar una nueva categoría, como `production`, `staging` o incluso sistemas externos que no son de AEM, como `my-internal-webservice`. Es útil evitar codificar estas URL en diferentes lugares del código base de un proyecto.
 
 1. Haga clic en **Guardar** para guardar los cambios.
 
