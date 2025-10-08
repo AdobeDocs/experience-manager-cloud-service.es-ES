@@ -2,8 +2,8 @@
 title: Preguntas frecuentes (FAQ) sobre Content Hub
 description: Obtenga respuestas a algunas de las preguntas más frecuentes (FAQ) sobre Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
-workflow-type: ht
+source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 100%
 
@@ -96,7 +96,7 @@ Adobe proporciona asistencia para la migración del Brand Portal a Content Hub q
 
 ## ¿Por qué no puedo ver la opción de ajustes/configuración del producto en Content Hub? {#ui-configuration-option-missing}
 
-Para acceder a la [interfaz de usuario de configuración](/help/assets/configure-content-hub-ui-options.md), debes ser [administrador de Content Hub](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). Si se le asigna el perfil de producto de administradores de AEM en la instancia de creación de producción en Adobe Admin Console y sigue sin poder ver la opción de configuración, asegúrese de que no se haya cambiado el nombre del perfil de producto de administradores de AEM. Consulte [Perfiles de equipo y producto de AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) para obtener más información.
+Para acceder a la [interfaz de usuario de configuración](/help/assets/configure-content-hub-ui-options.md), debes ser [administrador de Content Hub](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). Si se le asigna el perfil de producto de administradores de AEM en la instancia de autor de producción en Adobe Admin Console y sigue sin poder ver la opción de configuración, asegúrese de que no se haya cambiado el nombre del perfil de producto de administradores de AEM. Consulte [Perfiles de equipo y producto de AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) para obtener más información.
 
 ## ¿Cómo aborda Content Hub las limitaciones de Brand Portal? {#content-hub-brand-portal-comparison}
 
@@ -128,7 +128,7 @@ En la tabla siguiente se describen las principales diferencias entre las dos sol
 | Permisos | Permisos basados en ACL | − | ✓ |
 |  | Control de acceso basado en atributos | ✓ | − |
 | Integración rápida | Editar recursos de Content Hub en Adobe Express y guardarlos en DAM | ✓ | − |
-| Paneles e informes | Panel de información | ✓ | − |
+| Paneles de control e informes | Panel de control de información | ✓ | − |
 | Extensibilidad de la IU | Puntos de extensión personalizados en la página de detalles del recurso | Disponibilidad limitada | − |
 | Innovaciones disponibles próximamente | Colecciones favoritas por usuario | ✓ | − |
 |  | Colecciones ancladas por el administrador | ✓ | − |
