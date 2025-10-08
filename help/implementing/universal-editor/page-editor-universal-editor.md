@@ -4,9 +4,9 @@ description: El editor de páginas sigue siendo compatible con Adobe, pero el ed
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1067'
 ht-degree: 99%
 
 ---
@@ -60,7 +60,7 @@ Debido a que la diferencia entre las funciones de los dos editores se está redu
 | [Generar variaciones](/help/generative-ai/generate-variations.md) | [!BADGE No disponible]{type=Negative} |  | [!BADGE Disponible]{type=Positive} | [Disponible como extensión](/help/implementing/universal-editor/extending.md) |
 | Insertar nuevo bloque | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | Reordenar bloque | [!BADGE Disponible]{type=Positive} | Es posible con arrastrar y soltar en contexto, pero no en el panel lateral de “vista de árbol” | [!BADGE Disponible]{type=Positive} | Es posible mediante arrastrar y soltar en el panel lateral de “vista de árbol”, pero aún no en contexto (planeado) |
-| Cortar/copiar-pegar bloque | [!BADGE Disponible]{type=Positive} |  | [!BADGE No disponible]{type=Negative} | Planeado |
+| Cortar/copiar-pegar bloque | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | Aplicar estilos | [!BADGE Disponible]{type=Positive} | Los estilos se pueden aplicar a los componentes mediante [el sistema de estilos.](/help/sites-cloud/authoring/page-editor/style-system.md) | [!BADGE Disponible]{type=Positive} | Los estilos se pueden aplicar mediante propiedades de componente normal (o fragmento de contenido). El mismo selector de estilo no está disponible en el editor universal, pero con un widget de selección múltiple se puede lograr una UX muy similar. |
 | Aplicar diseño | [!BADGE Disponible]{type=Positive} | Los sitios deben implementar la [cuadrícula adaptable de AEM](/help/implementing/developing/introduction/responsive-design.md) para permitir a los autores cambiar el tamaño de los componentes en tres puntos de interrupción predefinidos. | [!BADGE Disponible]{type=Positive} | Los diseños se pueden aplicar mediante propiedades de componente normales (o fragmento de contenido), pero la cuadrícula adaptable no es compatible. |
 | Deshacer-Rehacer | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |

@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
+source-git-commit: b30367d3892fb58d42533864ba9c354e355c7d7a
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 13%
@@ -212,7 +212,7 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 
 ### Copiar y pegar {#copy-paste}
 
-Puede copiar y pegar componentes que se encuentren dentro de [ contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible dentro de la misma página y si el [contenedor de destino permite pegar el componente.](/help/implementing/universal-editor/filtering.md)
+Puede copiar y pegar componentes que se encuentren dentro de [contenedores](/help/implementing/universal-editor/field-types.md#container) en la misma ficha del explorador. Esto solo es posible si el contenedor de destino [no tiene ningún filtro establecido.](/help/implementing/universal-editor/filtering.md)
 
 ![Icono de copiar](assets/copy.png)
 ![Icono de pegar](assets/paste.png)
