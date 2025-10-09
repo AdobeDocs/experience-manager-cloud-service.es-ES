@@ -3,7 +3,7 @@ title: Administrar colecciones en Content Hub
 description: Obtenga información sobre cómo administrar colecciones en Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
+source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 2%
@@ -193,11 +193,11 @@ Puede marcar colecciones como favoritas en Content Hub, lo que facilita su organ
 
    ![Marcar colecciones como favoritas](assets/mark-favorite-collection.png)
 
-   Las colecciones marcadas como Favoritos ahora aparecen en la ficha **[!UICONTROL Mis favoritos]**. También puede quitar las colecciones de **[!UICONTROL Mis favoritos]**. Para ello, haga clic en **[!UICONTROL Más acciones]** ![Icono de más acciones](assets/do-not-localize/more-actions.png) y seleccione **[!UICONTROL Quitar de Favoritos]**.
+   Las colecciones marcadas como favoritas ahora aparecen en la ficha **[!UICONTROL Mis favoritos]**. También puede quitar las colecciones de **[!UICONTROL Mis favoritos]**. Para ello, haga clic en **[!UICONTROL Más acciones]** ![Icono de más acciones](assets/do-not-localize/more-actions.png) y seleccione **[!UICONTROL Quitar de Favoritos]**.
 
    ![Quitar colección como favorita](assets/remove-favorite-collection.png)
 
 >[!NOTE]
 >
->[Anclar o desanclar colección](#pin-unpin-collection) y [Marcar colecciones como favoritas](#favorite-collection) son características de disponibilidad limitada. Puede crear y enviar un caso de Asistencia al cliente de Adobe para habilitarlo para su implementación.
+>[Anclar o desanclar colección](#pin-unpin-collection) y [Marcar colecciones como favoritas](#favorite-collection) son características de disponibilidad limitada. Puede [crear y enviar](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) un caso de asistencia al cliente de Adobe para habilitarlo para su implementación.
 
