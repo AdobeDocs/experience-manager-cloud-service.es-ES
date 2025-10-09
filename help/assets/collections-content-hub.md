@@ -3,9 +3,9 @@ title: Administrar colecciones en Content Hub
 description: Obtenga información sobre cómo administrar colecciones en Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
+source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -187,13 +187,13 @@ Los administradores de Content Hub pueden anclar colecciones en Content Hub para
 
 Puede marcar colecciones como favoritas en Content Hub, lo que facilita su organización y recuperación. Una vez agregadas, las colecciones favoritas estarán disponibles en la pestaña Favoritos de la página principal de Content Hub. Además, puede buscar recursos en Colecciones favoritas. Para marcar colecciones como Favoritos, siga estos pasos:
 
-1. Explore las colecciones que desea anclar o desanclar.
+1. Examine las colecciones que desea marcar como favoritas.
 
 1. Haga clic en **[!UICONTROL Más acciones]** ![Más acciones icono](assets/do-not-localize/more-actions.png) y seleccione **[!UICONTROL Agregar a Favoritos]** para marcar la colección como Favorita.
 
    ![Marcar colecciones como favoritas](assets/mark-favorite-collection.png)
 
-   Las colecciones marcadas como favoritas ahora aparecen en la ficha **[!UICONTROL Mis favoritos]**. También puede quitar las colecciones de **[!UICONTROL Mis favoritos]**. Para ello, haga clic en **[!UICONTROL Más acciones]** ![Icono de más acciones](assets/do-not-localize/more-actions.png) y seleccione **[!UICONTROL Quitar de Favoritos]**.
+   Las colecciones marcadas como Favoritos ahora se muestran en la ficha **[!UICONTROL Mis favoritos]**. También puede quitar las colecciones de **[!UICONTROL Mis favoritos]**. Para ello, haga clic en **[!UICONTROL Más acciones]** ![Icono de más acciones](assets/do-not-localize/more-actions.png) y seleccione **[!UICONTROL Quitar de Favoritos]**.
 
    ![Quitar colección como favorita](assets/remove-favorite-collection.png)
 
