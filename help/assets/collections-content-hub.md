@@ -3,10 +3,10 @@ title: Administrar colecciones en Content Hub
 description: Obtenga información sobre cómo administrar colecciones en Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 3%
+source-wordcount: '1327'
+ht-degree: 2%
 
 ---
 
@@ -25,6 +25,8 @@ Una colección hace referencia a un conjunto de recursos que se pueden compartir
 * **Descargar**: Descargue los recursos.
 * **Quitar**: quite recursos específicos de una colección.
 * **Eliminar**: elimine toda la colección.
+* **Fijar/Desfijar**: Fijar o desanclar la colección.
+* **Favorito**: marca la colección como favorita.
 
 Ayuda a los usuarios a acceder y administrar fácilmente los diversos recursos disponibles en [!DNL Content Hub].
 
@@ -40,7 +42,7 @@ Puede elegir [crear una nueva colección](#create-new-collection) o [agregar rec
 
 Siga estos pasos para controlar el acceso al crear colecciones:
 
-1. Vaya a la ficha **[!DNL Collections]** y haga clic en **[!UICONTROL Crear colección]**. Aparecerá la ventana Nueva colección.
+1. Vaya a la ficha **[!DNL Collections]** y haga clic en **[!UICONTROL Crear colección]**. Aparece una nueva ventana Colección.
 
 1. Agregue **[!UICONTROL Título]** y **[!UICONTROL Descripción]** para la colección.
 
@@ -163,5 +165,39 @@ Los recursos seleccionados se han eliminado correctamente de la colección.
 
 Solo los administradores y el creador pueden eliminar una colección. Para eliminar una colección, vaya a la ficha **[!UICONTROL Colecciones]** y haga clic en la colección que debe eliminar. Haga clic en el icono ![eliminar](assets/delete-icon.svg) para eliminar la colección.
 
+## Fijar o desanclar colección {#pin-unpin-collection}
 
+Los administradores de Content Hub pueden anclar colecciones en Content Hub para acceder rápidamente a ellas. Las colecciones ancladas se muestran en una sección anclada dedicada en la página de inicio Colecciones, lo que facilita mantener las colecciones importantes a mano. Para acceder rápidamente, puede anclar o desanclar una colección ejecutando los pasos a continuación:
+
+1. Explore las colecciones que desea anclar o desanclar.
+
+1. Haga clic en **[!UICONTROL Más acciones]** ![Más acciones](assets/do-not-localize/more-actions.png) y seleccione **[!UICONTROL Anclar para acceder rápidamente]**. Aparecerá un cuadro de confirmación.
+
+   ![colección de pines](assets/pin-collection.png)
+
+1. Haga clic en **[!UICONTROL Fijar]** para confirmar. El mensaje de advertencia aparece al anclar una colección privada.
+
+   ![Confirmar colección de anclajes](assets/confirm-pin-collection.png)
+
+   Las colecciones ancladas aparecen en la parte superior para acceder rápidamente a ellas. Como alternativa, para desanclar la colección, haga clic en **[!UICONTROL Más acciones]** ![Más acciones icono](assets/do-not-localize/more-actions.png) y seleccione **[!UICONTROL Desanclar]**.
+
+   ![Ver colecciones ancladas](assets/pinned-collections.png)
+
+## Marcar colecciones como favoritas {#favorite-collection}
+
+Puede marcar colecciones como favoritas en Content Hub, lo que facilita su organización y recuperación. Una vez agregadas, las colecciones favoritas estarán disponibles en la pestaña Favoritos de la página principal de Content Hub. Además, puede buscar recursos en Colecciones favoritas. Para marcar colecciones como Favoritos, siga estos pasos:
+
+1. Explore las colecciones que desea anclar o desanclar.
+
+1. Haga clic en **[!UICONTROL Más acciones]** ![Más acciones icono](assets/do-not-localize/more-actions.png) y seleccione **[!UICONTROL Agregar a Favoritos]** para marcar la colección como Favorita.
+
+   ![Marcar colecciones como favoritas](assets/mark-favorite-collection.png)
+
+   Las colecciones marcadas como Favoritos ahora aparecen en la ficha **[!UICONTROL Mis favoritos]**. También puede quitar las colecciones de **[!UICONTROL Mis favoritos]**. Para ello, haga clic en **[!UICONTROL Más acciones]** ![Icono de más acciones](assets/do-not-localize/more-actions.png) y seleccione **[!UICONTROL Quitar de Favoritos]**.
+
+   ![Quitar colección como favorita](assets/remove-favorite-collection.png)
+
+>[!NOTE]
+>
+>[Anclar o desanclar colección](#pin-unpin-collection) y [Marcar colecciones como favoritas](#favorite-collection) son características de disponibilidad limitada. Puede crear y enviar un caso de Asistencia al cliente de Adobe para habilitarlo para su implementación.
 
