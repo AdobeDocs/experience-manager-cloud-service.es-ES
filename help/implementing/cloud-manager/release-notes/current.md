@@ -4,10 +4,10 @@ description: Obtenga información sobre la versión 2025.10.0 de Cloud Manager e
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f0b28245213d77c23259fb753376a6670b408e5e
+source-git-commit: 673e6a2403026e33c3bbd225b7296a1fb8877404
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 62%
+source-wordcount: '1318'
+ht-degree: 61%
 
 ---
 
@@ -26,6 +26,10 @@ La fecha de lanzamiento de Cloud Manager 2025.10.0 en AEM as a Cloud Service fue
 La próxima versión está planificada para el viernes, 06 de noviembre de 2025.
 
 ## Novedades {#what-is-new}
+
+* **Canalizaciones de implementación dedicadas solo de fase y de producción**
+
+  Cloud Manager ahora ofrece canalizaciones de implementación dedicadas solo de fase y de producción, lo que proporciona una mayor flexibilidad para administrar implementaciones en entornos de ensayo y producción de forma independiente. Ver [Dividir canalizaciones solo de fase y solo de producción](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md).
 
 * **Servicio de evaluación de estado en la nube de AEM**
 
@@ -116,13 +120,13 @@ Un nuevo modelo de compilación compila solo los módulos modificados (en lugar 
 
 Vuelva rápidamente a una implementación anterior si el código fuente del cliente más reciente no funciona como se esperaba; no es necesario volver a ejecutar la canalización completa ni revertir las confirmaciones manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**&#x200B;para un entorno seleccionado.*
+![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**para un entorno seleccionado.*
 
 ![Cuadro de diálogo Restaurar código anterior implementado](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *En el cuadro de diálogo **Restaurar código anterior implementado**, revise la versión implementada actualmente y la versión que desea restaurar, luego haga clic en **Confirmar***.
 
 ![Activación de Restaurando](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**&#x200B;hasta que finalice la implementación.*
+*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**hasta que finalice la implementación.*
 
 ![Versión del código fuente en uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vista de detalles del entorno, vista desde arriba, ahora también muestra la versión activa del código fuente en uso.*
 
