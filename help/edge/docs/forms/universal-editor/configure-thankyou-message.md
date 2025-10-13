@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1139'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ Seleccione la pestaña **Agradecimiento** en el cuadro de diálogo Propiedades d
 
 Elija **Redirigir a la dirección URL** de las opciones disponibles después del envío.
 
-![redireccionamiento](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
+![redirigir](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
 
 **4. Configurar URL de destino**
 

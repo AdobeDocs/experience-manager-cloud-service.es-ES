@@ -5,9 +5,9 @@ role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
 source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Después de leer este documento, debería poder comprender lo siguiente:
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager es un componente esencial de AEM as a Cloud Service y sirve como punto de entrada único para su equipo. Admite clientes con configuraciones de desarrollo empresarial con sus canalizaciones de CD/CI creadas específicamente, que están equipadas para garantizar pruebas exhaustivas y la máxima calidad de código para ofrecer experiencias excepcionales. Cloud Manager proporciona todo lo necesario para comenzar en forma de autoservicio, incluida la capacidad de crear los recursos y entornos de la nube.
+Cloud Manager es un componente esencial de AEM as a Cloud Service y sirve como punto de entrada único para su equipo. Admite clientes con configuraciones de desarrollo empresarial con sus CI/CD Pipelines creadas específicamente, que están equipadas para garantizar pruebas exhaustivas y la máxima calidad de código para ofrecer experiencias excepcionales. Cloud Manager proporciona todo lo necesario para comenzar en forma de autoservicio, incluida la capacidad de crear los recursos y entornos de la nube.
 
 Normalmente, un miembro del equipo asignado al perfil de producto **Propietario empresarial** es responsable de añadir los recursos de la nube, como programas y entornos. Esta persona comprende las necesidades comerciales y completa la configuración inicial de Cloud Manager.
 
@@ -42,13 +42,13 @@ Antes de los integrantes del equipo que usted asignó a la función **Propietari
 
    Regrese al paso anterior de este recorrido, [Asignar integrantes del equipo a perfiles de producto de Cloud Manager](assign-profiles-cloud-manager.md), para obtener detalles sobre cómo asignar la función **Propietario del negocio** al administrador del sistema.
 
-1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
+1. Inicie sesión en Cloud Manager en [experiece.adobe.com](https://experience.adobe.com).
 1. En la agrupación Acceso rápido, haga clic en **Experience Manager**.
 1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
 
-   ![Cloud Manager en la consola](/help/journey-onboarding/assets/consol-cloud-manager.png)
+   ![Cloud Manager en consola](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
-Al iniciar sesión correctamente como administrador del sistema con la función **Propietario empresarial**, utilizará Cloud Manager para que lo utilicen los demás usuarios con la función **Propietario empresarial**. No recibe ninguna confirmación ni ningún mensaje. Basta con iniciar sesión.
+Al iniciar sesión correctamente como administrador del sistema con la función **Propietario de la empresa**, utiliza Cloud Manager para que lo utilicen los demás usuarios con la función **Propietario de la empresa**. No recibe ninguna confirmación ni ningún mensaje. Basta con iniciar sesión.
 
 Hasta que inicie sesión en Cloud Manager como administrador del sistema con la función **Propietario del negocio**, otros usuarios con la función **Propietario del negocio** no pueden crear programas en Cloud Manager. Esta regla es verdadera aunque se les asignen las funciones correctas.
 
@@ -110,21 +110,21 @@ Si los programas ya existen en su organización y usted es administrador del sis
 
 ![Vista del administrador del sistema](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
 
-## Compruebe las funciones de usuario {#verify-user-roles}
+## Verificación de las funciones del usuario {#verify-user-roles}
 
-Una vez que haya iniciado sesión correctamente en Cloud Manager, puede comprobar que tiene asignado el perfil de producto **Propietario empresarial**.
+Una vez haya iniciado sesión correctamente en Cloud Manager, puede verificar que se le ha asignado el perfil de producto **Propietario de la empresa**.
 
 1. Cerca de la esquina superior derecha de la página, haga clic en el icono **Cuenta**.
 
-1. Haga clic en **Roles de usuario**.
+1. Haga clic en **Funciones de usuario**.
 
    ![Roles del usuario](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
-1. En el cuadro de diálogo **Roles de usuario**, confirme que el usuario tiene el rol **Propietario del negocio**.
+1. En el cuadro de diálogo **Funciones de usuario**, confirme que el usuario tiene la función **Propietario de la empresa**.
 
    ![Lista de funciones de usuario](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
-Ha iniciado sesión correctamente en Cloud Manager como Propietario empresarial. Si no tiene asignada la función **Propietario empresarial**, póngase en contacto con el administrador del sistema.
+Ha iniciado sesión correctamente en Cloud Manager como Propietario de la empresa. Si no tiene asignada la función **Propietario empresarial**, póngase en contacto con el administrador del sistema.
 
 ## Siguientes pasos {#whats-next}
 

@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2608'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -261,7 +261,7 @@ El archivo `fstab.yaml` conecta el repositorio de GitHub con el entorno de creac
 
 +++
 
-+++Paso 5: Publicar el sitio
++++Paso 5: Publicación del sitio
 
 La publicación hace que el sitio esté disponible en Edge Delivery Services para su acceso global.
 
@@ -313,7 +313,7 @@ La publicación hace que el sitio esté disponible en Edge Delivery Services par
 > - **Página de inicio:** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
 > - **Otras páginas:** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<page-name>`
 
-**Siguiente:**&#x200B;[creación del primer formulario](#create-your-first-form)
+**Siguiente:**[creación del primer formulario](#create-your-first-form)
 
 +++
 
@@ -346,7 +346,7 @@ Completará los siguientes pasos de alto nivel:
 3. Ajuste las reglas de ESLint para dar cabida a los nuevos archivos y patrones de codificación.
 4. Cree el proyecto y confirme los cambios en el repositorio.
 
-+++Paso 1: Copiar archivos de bloque de Forms
++++Paso 1: Copiar archivos de bloque de formularios
 
 1. **Vaya a su proyecto local**
 
@@ -664,7 +664,7 @@ Ahora que tiene un formulario en funcionamiento, puede:
 
 Un entorno de desarrollo local le permite realizar cambios y verlos instantáneamente sin pasar por el ciclo de publicación.
 
-+++Configurar la CLI de AEM y el desarrollo local
++++Configure la CLI de AEM y el desarrollo local
 
 1. **Instalación de la CLI de AEM**
 
@@ -762,7 +762,7 @@ Si ve &quot;No se puede resolver la ruta al módulo &#39;/scripts/lib-franklin.j
 
 +++
 
-+++Problemas de funcionalidad de formularios
++++Problemas de funcionalidad del formulario
 
 **Problema:** los envíos de formularios no funcionan
 

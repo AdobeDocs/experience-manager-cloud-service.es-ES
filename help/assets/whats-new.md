@@ -4,9 +4,9 @@ description: Obtenga más información sobre algunas de las funciones de Content
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
 source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

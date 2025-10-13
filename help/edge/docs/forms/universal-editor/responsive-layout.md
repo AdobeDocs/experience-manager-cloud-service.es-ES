@@ -7,14 +7,14 @@ role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2443'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# Creación de Forms adaptable con editor universal: una guía completa
+# Creación de formularios adaptables con editor universal: una guía completa
 
 El panorama web moderno exige formularios que funcionen sin problemas en un espectro cada vez más amplio de dispositivos y tamaños de pantalla. Desde grandes monitores de escritorio hasta pantallas compactas para teléfonos inteligentes, los usuarios esperan experiencias uniformes e intuitivas independientemente del dispositivo que elijan. La creación de formularios adaptables ya no es opcional: es un requisito fundamental para ofrecer experiencias digitales profesionales, accesibles y optimizadas para la conversión.
 
@@ -277,7 +277,7 @@ El diseño de acordeón ahorra espacio al organizar el contenido en secciones co
 
 ### Prácticas recomendadas por tipo de dispositivo
 
-+++Optimización móvil (320 px-767 px)
++++Optimización móvil (320 px - 767 px)
 
 **Diseño e interacción:**
 
@@ -296,7 +296,7 @@ El diseño de acordeón ahorra espacio al organizar el contenido en secciones co
 
 +++
 
-+++Optimización de tableta (768 px-1199 px)
++++Optimización de tableta (768 px - 1199 px)
 
 **Diseño y uso:**
 
@@ -307,7 +307,7 @@ El diseño de acordeón ahorra espacio al organizar el contenido en secciones co
 
 +++
 
-+++Optimización de escritorio (1200 px+)
++++Optimización para escritorio (+1200 px)
 
 **Características avanzadas y diseño:**
 
@@ -320,7 +320,7 @@ El diseño de acordeón ahorra espacio al organizar el contenido en secciones co
 
 ## Configurar diseños personalizados con puntos de interrupción de consulta de medios
 
-Al crear diseños personalizados para componentes de Forms adaptable mediante **Editor universal**, debe definir un comportamiento adaptable mediante **puntos de interrupción de consultas de medios CSS**. Esto garantiza que los formularios se representen correctamente en diferentes dispositivos y tamaños de pantalla.
+Al crear diseños personalizados para componentes de Formularios adaptables mediante el **Editor universal**, debe definir un comportamiento adaptable mediante **puntos de interrupción de consultas de medios CSS**. Esto garantiza que los formularios se representen correctamente en diferentes dispositivos y tamaños de pantalla.
 
 **Puntos de interrupción recomendados (basados en los componentes principales de AEM)**
 
@@ -428,7 +428,7 @@ Al crear diseños personalizados para componentes de Forms adaptable mediante **
 
 ### Problemas de prueba y validación
 
-+++Diferencias entre el emulador y el dispositivo real
++++Diferencias entre emulador y dispositivo real
 
 **Posibles causas:**
 
@@ -465,7 +465,7 @@ Al crear diseños personalizados para componentes de Forms adaptable mediante **
 
 +++
 
-+++Lista de comprobación de pruebas
++++Lista de comprobación de prueba
 
 **Lista de comprobación previa a la publicación:**
 

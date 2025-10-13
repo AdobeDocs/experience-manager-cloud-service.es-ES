@@ -8,9 +8,9 @@ time: 45-60 minutes
 keywords: rellenar previamente un formulario adaptable, edge delivery services con formularios adaptables, autorrellenar formularios adaptables
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1803'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ El editor universal proporciona dos opciones de servicio de rellenado previo:
 | Tipo de servicio | Función | Fuente de datos | Ideal para |
 |--------------|---------|-------------|----------|
 | **Rellenado previo de borradores en el portal de formularios** | Reanuda los formularios parcialmente completados | Borradores guardados en el portal de formularios | Continuación de aplicaciones incompletas |
-| **Rellenado previo el modelo de datos del formulario** | Rellena campos de sistemas externos | Bases de datos back-end mediante FDM | Rellenado automático de datos de perfil del usuario |
+| **Rellenado previo el modelo de datos de formulario** | Rellena campos de sistemas externos | Bases de datos back-end mediante FDM | Rellenado automático de datos de perfil del usuario |
 
 ### Comparación detallada
 
@@ -159,7 +159,7 @@ El editor universal proporciona dos opciones de servicio de rellenado previo:
 
    >
    >
-   > Puede configurar el origen de datos desde la ficha **Datos** o posterior editando las propiedades del formulario.
+   > Puede configurar el origen de datos desde la ficha **Datos**, o más tarde, editando las propiedades del formulario.
 
 1. Especifique los detalles del formulario:
 
@@ -207,7 +207,7 @@ Los elementos de formulario del FDM aparecen en la pestaña **Fuente de datos** 
 
 +++
 
-+++Fase 3: Configuración del servicio de relleno previo
++++Fase 3: Configuración del servicio de rellenado previo
 
 ### Paso 6: Habilitar las extensiones necesarias
 
@@ -246,7 +246,7 @@ Asegúrese de que estas extensiones estén habilitadas en el editor universal:
 
 +++
 
-+++Fase 4: Prueba De La Configuración De Relleno Previo
++++Fase 4: Prueba de la configuración de rellenado previo
 
 ### Paso 8: Previsualizar y probar
 
@@ -399,13 +399,13 @@ Las siguientes URL son solo ilustrativas y no funcionarán tal cual. Reemplace e
 
 ## Preguntas frecuentes
 
-+++¿Cómo se comprueba si el relleno previo funciona correctamente?
++++¿Cómo puedo probar si el rellenado previo funciona correctamente?
 
 Obtenga una vista previa del formulario y anexe parámetros de rellenado previo a la URL con este formato: `?<bindreferencefield>=<value>`. Asegúrese de que el campo tenga un `bindRef` válido que coincida con la estructura de datos. Utilice las herramientas para desarrolladores de explorador para inspeccionar las solicitudes de red y comprobar que los datos se recuperan correctamente.
 
 +++
 
-+++¿Qué formatos de datos se admiten para rellenar previamente Forms adaptable?
++++¿Qué formatos de datos se admiten para rellenar previamente formularios adaptables?
 
 Los formularios adaptables admiten varios formatos según el modelo de formulario:
 
@@ -434,7 +434,7 @@ Puede configurar un servicio de rellenado previo principal por formulario. Sin e
 
 +++
 
-+++¿Cómo administro la autenticación para los servicios de relleno previo?
++++¿Cómo manipulo la autenticación para los servicios de rellenado previo?
 
 La autenticación depende de la configuración de la fuente de datos. Para el rellenado previo basado en FDM, configure la autenticación en la configuración de la fuente de datos. Para rellenar previamente borradores, los usuarios suelen tener que iniciar sesión para acceder a los borradores guardados.
 

@@ -4,9 +4,9 @@ description: Conozca conceptos clave como por qué utilizar Dynamic Media con fu
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
 source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Dynamic Media con funciones de OpenAPI ofrece las siguientes ventajas clave:
 
 * **Entrega optimizada para la web**: los recursos digitales se entregan en formatos optimizados para la web a fin de mejorar los elementos vitales principales de las experiencias digitales. Esto incluye compatibilidad con representaciones WebP para imágenes, streaming adaptable a través de protocolos HLS o DASH para vídeos y representaciones originales para documentos.
 
-* [Transformación dinámica de recursos](https://developer.adobe.com/experience-cloud/experience-manager-apis): nuestro sistema permite la transformación de imágenes sobre la marcha mediante parámetros de URL conocidos como modificadores de imagen. Por ejemplo, anchura, altura, rotación, voltear, calidad, recorte, formato y recorte inteligente. Las representaciones transformadas se generan dinámicamente y se entregan sin problemas a través de la CDN.
+* [Transformación dinámica de recursos](https://developer.adobe.com/experience-cloud/experience-manager-apis): nuestro sistema permite la transformación de imágenes sobre la marcha mediante parámetros de URL conocidos como modificadores de imagen. Por ejemplo, anchura, altura, girar, voltear, calidad, recorte, formato y recorte inteligente. Las representaciones transformadas se generan dinámicamente y se entregan sin problemas a través de la CDN.
 
 * **Entrega segura de recursos**: Dynamic Media con funciones de OpenAPI proporciona un mecanismo para controlar el acceso a sus recursos digitales. Puede especificar roles de usuario o grupos como metadatos para los recursos que se van a proteger y establecer un intervalo de tiempo predefinido durante el cual [solo los usuarios autorizados puedan acceder a estos recursos](/help/assets/restrict-assets-delivery.md). Las URL de entrega de los recursos protegidos no se resuelven para los usuarios no autorizados durante el período restringido.
 
@@ -38,11 +38,11 @@ Dynamic Media con funciones de OpenAPI ofrece las siguientes ventajas clave:
 
 ![Diagrama del flujo de datos de la API abierta de Dynamic Media](assets/dm-openapi-dfd.png)
 
-Para obtener información sobre las ofertas disponibles de Dynamic Media y sus capacidades, consulte [Dynamic Media Prime y Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
+Para obtener información sobre las ofertas de Dynamic Media disponibles, consulte [Dynamic Media Prime y Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
 
 >[!NOTE]
 >
->Los clientes de DM Prime pueden utilizar modificadores de imagen básicos como rotar, recortar, voltear, alto, ancho y calidad. Imágenes inteligentes no es compatible con AVIF para clientes de DM Prime.
+>Los clientes de DM Prime pueden utilizar modificadores de imagen básicos como rotar, recortar, voltear, alto, anchura y calidad. Las imágenes inteligentes no son compatibles con AVIF para clientes de DM Prime.
 
 
 ## Requisitos previos para acceder a Dynamic Media con funciones de OpenAPI {#prerequisites-dynaminc-media-open-apis}

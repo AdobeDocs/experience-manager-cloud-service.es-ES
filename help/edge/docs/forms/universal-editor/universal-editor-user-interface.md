@@ -7,9 +7,9 @@ role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2390'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ La **Barra de herramientas del editor universal** proporciona acciones clave par
 
 **Para su primer formulario:**
 
-1. **Agregar un componente de formulario adaptable** - Inserte el componente `Adaptive Form` en una sección.
+1. **Añadir un componente de formulario adaptable**: inserte el componente `Adaptive Form` en una sección.
 2. **Comenzar a generar** : agregar componentes mediante el botón **Añadir** (`a`)
 3. **Configurar campos**: seleccionar componentes y usar **Modo de propiedades** (`d`)
 4. **Probar el formulario**: usar **Modo de vista previa** (`p`) para interactuar con el formulario
@@ -121,7 +121,7 @@ La **Barra de herramientas del editor universal** proporciona acciones clave par
 
 >[!NOTE]
 >
-> Para conocer los pasos detallados para crear formularios en el editor universal, consulte [Crear y publicar Forms adaptable con Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
+> Para conocer los pasos detallados para crear formularios en el editor universal, consulte [Crear y publicar formularios adaptables con Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 **Puntos de comprobación de validación:**
 
@@ -223,7 +223,7 @@ La **Barra de herramientas del editor universal** contiene las herramientas prin
 
 #### **Propiedades del formulario AEM**
 
-**Propósito:** configure las opciones de nivel de formulario, como el modelo de datos de formulario (FDM), la configuración de acciones de envío y las fechas de publicación\
+**Objetivo:** Configurar las opciones a nivel de formulario, como el modelo de datos de formulario (FDM) mediante la configuración de acciones de envío y las fechas de publicación\
 **Cuándo se debe usar:** configuración de integraciones de datos, programación de publicaciones
 
 ![Propiedades del formulario](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)

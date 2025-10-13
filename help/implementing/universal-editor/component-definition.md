@@ -5,9 +5,9 @@ feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
 source-git-commit: b4e61ec6abcaf73119f8963d72317759b2bd7c76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '611'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ El siguiente es un `component-definition.json` de ejemplo completo pero simple.
 
 * `aem` para [AEM as a Cloud Service.](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service)
 * `aem65` para [AEM 6.5.](https://experienceleague.adobe.com/es/docs/experience-manager-65) y [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts)
-* `xwalk` para [crear con AEM Sites para Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
+* `xwalk` para [Creación con AEM Sites para Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` o `cf` {#page-cf}
 

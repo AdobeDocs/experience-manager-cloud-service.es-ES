@@ -1,21 +1,21 @@
 ---
-title: Editor de reglas para Edge Delivery Services Forms
+title: Editor de reglas para formularios de Edge Delivery Services
 description: Cree formularios dinámicos e inteligentes con el editor de reglas en el editor universal. Añada lógica condicional, cálculos y comportamientos interactivos sin codificación.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2824'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Editor de reglas para Edge Delivery Services Forms
+# Editor de reglas para formularios de Edge Delivery Services
 
-El Editor de reglas permite a los autores convertir formularios estáticos en experiencias interactivas e inteligentes sin necesidad de escribir código. Puede mostrar campos de forma condicional, realizar cálculos, validar datos, guiar a los usuarios a través de flujos e integrar la lógica empresarial que se adapta a medida que las personas escriben.
+El editor de reglas permite a los autores convertir formularios estáticos en experiencias adaptables e inteligentes, sin necesidad de escribir código. Puede mostrar campos de forma condicional, realizar cálculos, validar datos, guiar a los usuarios a través de flujos e integrar la lógica empresarial que se adapta a medida que las personas escriben.
 
 ## Lo que aprenderá
 
@@ -304,7 +304,7 @@ Creará un formulario que:
 
 +++
 
-+++ Paso 1: Crear el formulario
++++ Paso 1: Creación del formulario
 
 **Objetivo**: generar el formulario base con todos los campos y la configuración inicial.
 
@@ -537,7 +537,7 @@ Imagen: Selección y configuración de funciones personalizadas en la interfaz d
 
 >
 >
-> Las mejoras realizadas en el Editor de reglas, incluidas las reglas personalizadas basadas en eventos, la compatibilidad con variables dinámicas y la integración de API, también están disponibles para Edge Delivery Services Forms. Para obtener más información sobre estas mejoras y cómo utilizarlas, consulte el artículo [Mejoras y casos de uso del editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md).
+> Las mejoras realizadas en el editor de reglas, incluidas las reglas personalizadas basadas en eventos, la compatibilidad con variables dinámicas y la integración de API, también están disponibles para los formularios de Edge Delivery Services. Para obtener más información sobre estas mejoras y cómo utilizarlas, consulte el artículo [Mejoras y casos de uso del editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md).
 
 **Prácticas recomendadas para el uso de funciones**:
 
@@ -551,8 +551,8 @@ Imagen: Selección y configuración de funciones personalizadas en la interfaz d
 
 ### Importaciones estáticas para funciones personalizadas
 
-El editor de reglas universal admite importaciones estáticas, lo que permite organizar la lógica reutilizable en varios archivos y formularios. En lugar de mantener todas las funciones personalizadas en un solo archivo (/blocks/form/functions.js), puede importar funciones de otros módulos.
-Por ejemplo: Importación de funciones desde un archivo externo
+El editor de reglas del editor universal admite importaciones estáticas, lo que permite organizar la lógica reutilizable en varios archivos y formularios. En lugar de mantener todas las funciones personalizadas en un solo archivo (/blocks/form/functions.js), puede importar funciones de otros módulos.
+Por ejemplo: Importar funciones desde un archivo externo
 Tenga en cuenta la siguiente estructura de carpetas:
 
 ```
@@ -584,19 +584,19 @@ function getFullName(firstname, lastname) {
 export { getFullName, days};
 ```
 
-### Organización De Funciones Personalizadas En Diferentes Forms
+### Organización de funciones personalizadas en diferentes formularios
 
 Puede crear diferentes conjuntos de funciones en archivos o carpetas independientes y exportarlos según sea necesario:
 
 - Si desea que determinadas funciones estén disponibles únicamente en formularios específicos, puede proporcionar la ruta al archivo de funciones en la configuración del formulario.
 
-- Si el cuadro de texto de la ruta se deja en blanco, el Editor de reglas cargará de forma predeterminada las funciones de `/blocks/form/functions.js`
+- Si el cuadro de texto de la ruta se deja en blanco, el editor de reglas cargará de forma predeterminada las funciones de `/blocks/form/functions.js`
 
-![Función personalizada en UE](/help/forms/assets/custom-function-in-ue.png){width=50%}
+![Función personalizada en el editor universal (UE)](/help/forms/assets/custom-function-in-ue.png){width=50%}
 
-En la captura de pantalla anterior, la ruta de la función personalizada se agrega en el cuadro de texto Ruta de la función personalizada. Las funciones personalizadas de este formulario se cargan desde el archivo especificado (`cc_function.js`).
+En la captura de pantalla anterior, la ruta de la función personalizada se añade en el cuadro de texto Ruta de la función personalizada. Las funciones personalizadas de este formulario se cargan desde el archivo especificado (`cc_function.js`).
 
-Esto permite la flexibilidad al compartir funciones en varios formularios o mantenerlos aislados por formulario.
+Esto aporta flexibilidad al compartir funciones en varios formularios o mantenerlos aislados por formulario.
 
 ## Prácticas recomendadas para el desarrollo de reglas
 

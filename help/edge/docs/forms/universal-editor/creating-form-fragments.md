@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1693'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -295,7 +295,7 @@ Ha aprendido correctamente a aprovechar los fragmentos de formulario en Edge Del
 - Cree una biblioteca de fragmentos de uso común para su organización.
 - Establezca convenciones de nomenclatura y políticas de gobernanza para el uso de fragmentos.
 - Explorar la integración avanzada con [modelos de datos de formulario](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) para fragmentos dinámicos impulsados por datos
-- Implementar plantillas de formulario basadas en fragmentos para lograr experiencias de usuario coherentes.
+- Implemente plantillas de formulario basadas en fragmentos para lograr experiencias de usuario coherentes.
 
 Ahora, sus formularios se benefician de una arquitectura modular y fácil de mantener que se adapta de manera eficiente a todos los proyectos, al tiempo que garantiza experiencias de usuario coherentes.
 

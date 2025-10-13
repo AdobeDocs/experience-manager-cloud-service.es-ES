@@ -6,9 +6,9 @@ recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1348'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -43,12 +43,12 @@ Como resultado:
 El recorrido de incorporación para AEM as a Cloud Service se centra en los siguientes elementos principales:
 
 * **Contrato**: revise su contrato de Adobe para comprender los detalles clave del proceso de incorporación.
-* **Experience Hub**: utiliza [experience.adobe.com](https://experience.adobe.com/) como punto de entrada central para las funciones de AEM. Experience Hub se adapta a su personalidad y a sus derechos para que pueda trabajar de forma eficaz. Desde aquí, vaya a:
+* **Experience Hub**: utilice [experience.adobe.com](https://experience.adobe.com/) como punto de entrada central para las funciones de AEM. Experience Hub se adapta a su perfil y derechos de perfil para que pueda trabajar de manera eficaz. Desde aquí, vaya a:
    * **Admin Console**: administre usuarios y asigne funciones.
    * **Cloud Manager**: configure programas y entornos, acceda a Git y cree canalizaciones para administrar e implementar código personalizado.
-   * **Sitios**: cree, administre y entregue experiencias digitales. (Derechos basados en licencias)
+   * **Sites**: cree, administre y entregue experiencias digitales. (Derechos basados en licencias)
    * **Assets**: organice, almacene y distribuya sus recursos digitales. (Derechos basados en licencias)
-   * **Forms**: cree y administre formularios adaptables y adaptables. (Derechos basados en licencias)
+   * **Forms**: cree y administre formularios adaptables. (Derechos basados en licencias)
 
 Estos conceptos se detallarán en este recorrido de incorporación. El objetivo es que, al final del recorrido, pueda realizar lo siguiente:
 
@@ -66,10 +66,10 @@ El administrador del sistema administra todos los aspectos de los usuarios de AE
 
 | Grupo de usuarios | Descripción | Rol en el recorrido |
 | --- | --- | --- |
-| Administrador del sistema | El objetivo de este recorrido es proporcionar un aprovisionamiento inicial de recursos en la nube y asignar usuarios a roles adecuados en función de sus responsabilidades laborales. | La función le ayuda a administrar todos los aspectos de los usuarios, desde el acceso a los permisos. |
-| Autor de contenido | Crea y revisa el contenido en AEM. | Una vez que el administrador del sistema ha concedido los permisos, los autores pueden iniciar su propio recorrido en la creación de contenido. |
-| Desarrollador | Desarrolla aplicaciones de AEM que consumen contenido de diferentes fuentes. | Una vez que el administrador del sistema ha concedido los permisos, los desarrolladores pueden empezar su propio recorrido en el desarrollo de soluciones. |
-| Administrador de implementación | Agrega o actualiza un entorno, ejecuta la canalización e implementa un código para un entorno de AEM o con fines de calidad del código. | Una vez que el administrador del sistema ha concedido los permisos, los administradores de implementación pueden iniciar su propio recorrido y administrar las implementaciones. |
+| Administrador del sistema | El destinatario de este recorrido proporciona un aprovisionamiento inicial de recursos en la nube y asigna usuarios a funciones adecuadas en base a sus responsabilidades laborales. | La función le ayuda a administrar todos los aspectos de los usuarios, desde el acceso a los permisos. |
+| Autor de contenido | Crea y revisa el contenido en AEM. | Una vez que el administrador del sistema ha concedido los permisos, los autores pueden iniciar su propio recorrido y crear contenido. |
+| Desarrollador | Desarrolla aplicaciones de AEM que consumen contenido de diferentes fuentes. | Una vez que el administrador del sistema ha concedido los permisos, los desarrolladores pueden iniciar su propio recorrido y desarrollar soluciones. |
+| Administrador de implementación | Agrega o actualiza un entorno, ejecuta la canalización e implementa un código para un entorno de AEM o con fines de calidad del código. | Una vez que el administrador del sistema haya concedido los permisos, los administradores de implementación pueden iniciar su propio recorrido y administrar las implementaciones. |
 
 Esta guía de incorporación ilustra el proceso completo de incorporación como administrador del sistema. Los roles de los usuarios, desarrolladores y administradores de implementación de AEM se exploran brevemente como partes adicionales y opcionales del recorrido.
 
@@ -87,14 +87,14 @@ Los siguientes artículos describen en detalle los conceptos básicos de incorpo
 | 1 | [Preparación de la incorporación](preparation.md) | Antes de iniciar el proceso de incorporación, hay que realizar una serie de pasos preparatorios que el administrador del sistema debe conocer antes de iniciar sesión en el sistema. | Administrador del sistema |
 | 2 | [Terminología de AEM as a Cloud Service](terminology.md) | Antes de iniciar sesión en AEMaaCS por primera vez, resulta útil conocer parte de la terminología del sistema y su estructura básica. | Administrador del sistema |
 | 3 | [Admin Console](admin-console.md) | Obtenga información sobre qué es Admin Console, cómo iniciar sesión y cómo comprobar el perfil como administrador del sistema. | Administrador del sistema |
-| 4 | [Asignar perfiles de producto de Cloud Manager](assign-profiles-cloud-manager.md) | Revise los perfiles de producto de Cloud Manager y aprenda a asignar integrantes del equipo a perfiles de producto de Cloud Manager. | Administrador del sistema |
-| 5 | [Acceder a Experience Hub](/help/experience-hub.md) | Utilice Experience Hub, que sirve como punto de entrada unificado y personalizado al ecosistema de AEM. | Usuarios de AEM  |
+| 4 | [Asignar perfiles de producto de Cloud Manager](assign-profiles-cloud-manager.md) | Revise los perfiles de producto de Cloud Manager y aprenda a asignarle miembros del equipo a perfiles de producto. | Administrador del sistema |
+| 5 | [Acerca de Experience Hub](/help/experience-hub.md) | Utilice Experience Hub, que sirve como punto de entrada unificado y personalizado al ecosistema de AEM. | Usuarios de AEM |
 | 6 | [Acceder a Cloud Manager](cloud-manager.md) | Obtenga información sobre cómo acceder a Cloud Manager para configurar los recursos del proyecto. | Administrador del sistema |
 | 7 | [Crear un programa](create-program.md) | Obtenga información sobre cómo crear un programa mediante Cloud Manager. | Administrador del sistema |
 | 8 | [Crear entornos](create-environments.md) | Obtenga información sobre cómo crear un entorno con Cloud Manager. | Administrador del sistema |
 | 9 | [Asignar perfiles de producto de AEM](assign-profiles-aem.md) | Descubra cómo el administrador del sistema asigna los integrantes del equipo a los perfiles de producto en AEM as a Cloud Service. | Administrador del sistema |
-| 10 | [Tareas del desarrollador y del administrador de implementación](developers.md) | Opcional: como desarrollador, aprenda a acceder a Git de Cloud Manager y a administrarlo. Como Administrador de implementación, aprenda a configurar canalizaciones e implementar código en Cloud Manager. | Desarrolladores y administradores de implementación |
-| 11 | [Tareas del usuario de AEM](aem-users.md) | Opcional: Aprenda, como autor de AEM, cómo puede acceder a la instancia de AEM as a Cloud Service y familiarizarse con la creación de contenido para AEM as a Cloud Service. | Usuarios de AEM  |
+| 10 | [Tareas del desarrollador y del administrador de implementación](developers.md) | Opcional: como desarrollador, aprenda a acceder a Git de Cloud Manager y a administrarlo. Como administrador de implementación, aprenda a configurar canalizaciones e implementar su código en Cloud Manager. | Desarrolladores y administradores de implementación |
+| 11 | [Tareas del usuario de AEM](aem-users.md) | Opcional: Aprenda, como autor de AEM, cómo puede acceder a la instancia de AEM as a Cloud Service y familiarizarse con la creación de contenido para AEM as a Cloud Service. | Usuarios de AEM |
 
 ## Siguientes pasos {#what-is-next}
 
