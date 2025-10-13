@@ -7,7 +7,7 @@ exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
 source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Debido a que la diferencia entre las funciones de los dos editores se está redu
 El editor universal ofrece muchas ventajas, lo que lo convierte en una gran solución para nuevos proyectos.
 
 * **Edición visual:** al igual que para el editor de páginas, los autores pueden editar contenido directamente dentro de la vista previa y ver al instante cómo sus cambios afectan la experiencia del visitante.
-* **Revisión para el futuro:** La hoja de ruta de AEM da prioridad al Editor universal como editor visual. Su adopción garantiza el acceso a las últimas innovaciones y mejoras.
+* **Preparación para el futuro:** la hoja de ruta de AEM da prioridad al editor universal como editor visual. Su adopción garantiza el acceso a las últimas innovaciones y mejoras.
 * **Integración más sencilla:** no se requiere un SDK específico de AEM para usar el editor universal, lo que reduce el bloqueo de la pila tecnológica.
 * **Traer su propia aplicación:** el editor universal admite cualquier marco web o arquitectura, lo que permite la adopción sin requerir una refactorización compleja.
 * **Extensibilidad:** el editor universal se beneficia de un [marco de extensión](/help/implementing/universal-editor/extending.md) sólido, que incluye integraciones con GenAI, Workfront y más.

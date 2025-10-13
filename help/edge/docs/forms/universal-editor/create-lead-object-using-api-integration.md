@@ -12,17 +12,17 @@ index: false
 source-git-commit: 3a09a3fa9b8fb3dacef4c900979c4cc256551941
 workflow-type: tm+mt
 source-wordcount: '310'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 # Crear un objeto de posible cliente de Salesforce mediante integración de API
 
-Este caso de uso explica cómo crear un posible cliente en Salesforce mediante la integración de API. Al final del proceso, podrá hacer lo siguiente:
+Este caso de uso explica cómo crear un posible cliente en Salesforce mediante la integración de API. Al final del proceso, aprenderá a hacer lo siguiente:
 
-Configura una aplicación [conectada en Salesforce](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) para habilitar el acceso seguro a la API.
+Configurar una [aplicación conectada en Salesforce](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) para habilitar el acceso seguro a la API.
 
-Configure CORS (Intercambio de recursos de origen cruzado) para permitir que el código (como JavaScript) que se ejecuta en un explorador web se comunique con Salesforce desde un origen específico, añada el origen a la lista de permitidos como se muestra a continuación
+Configurar CORS (Intercambio de recursos de origen cruzado) para permitir que el código (como JavaScript) que se ejecuta en un explorador web se comunique con Salesforce desde un origen específico, añada el origen a la lista de permitidos como se muestra a continuación
 
 ![cors](assets/salesforce-cors.png)
 
@@ -41,10 +41,10 @@ En la aplicación conectada se utiliza la siguiente configuración. Puede asigna
 | URL de OAuth | https://login.salesforce.com/services/oauth2/authorize |
 | URL de token de acceso | https://`<your-domain>`/services/oauth2/token |
 | URL de token de actualización | https://`<your-domain>`/services/oauth2/token |
-| Ámbito de autorización | api chat_api id completo openid refresh_token visualforce web |
+| Ámbito de autorización | api chatter_api full id openid refresh_token visualforce web |
 | Encabezado de autorización | Portador de autorización |
 
-![integración de api](assets/salesforce-api-integration-create-lead.png)
+![api-integration](assets/salesforce-api-integration-create-lead.png)
 
 ## Parámetros de entrada y salida
 
@@ -57,19 +57,19 @@ Defina los parámetros de entrada para la llamada de API y asigne los parámetro
 }
 ```
 
-![entrada-salida](assets/create-lead-api-integration-input-output.png)
+![input-output](assets/create-lead-api-integration-input-output.png)
 
 ## Crear un formulario
 
 Cree un formulario adaptable simple con el editor universal para capturar los detalles del objeto de posible cliente como se muestra a continuación
-![formulario-objeto-de-posible cliente](assets/create-lead.png)
+![lead-object-form](assets/create-lead.png)
 
 Controle el evento de clic en la casilla de verificación Crear posible cliente con el editor de reglas. Asigne los parámetros de entrada a los valores de los objetos de formulario adecuados, como se muestra a continuación. Mostrar el identificador del objeto de posible cliente recién creado en el objeto TextField `leadid`
-![editor de reglas](assets/create-leade-rule-editor.png)
+![rule-editor](assets/create-leade-rule-editor.png)
 
 ## Prueba de la integración
 
-- Previsualización del formulario
-- Introduzca algunos valores significativos
-- Seleccione la casilla de verificación `Create Lead` para almacenar en déclencheur la llamada de API
+- Obtener una vista previa del formulario
+- Introducir algunos valores significativos
+- Seleccione la casilla de verificación `Create Lead` para activar la llamada de API
 - El identificador de posible cliente del objeto de posible cliente recién creado se mostrará en el campo de texto `Lead ID`.

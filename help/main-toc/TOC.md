@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: b6c3bfcdf5526e3cfbbcefd2791c77ef359574a7
 workflow-type: tm+mt
 source-wordcount: '6839'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -400,7 +400,7 @@ ht-degree: 95%
          + [Creación de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [Administrar páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [Propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md)
-         + [Edición de las propiedades de página  &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
+         + [Edición de las propiedades de página  ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
          + [Previsualizar páginas](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [Versiones de página](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -514,7 +514,7 @@ ht-degree: 95%
                + [Configuración de reglas de traducción](/help/journey-sites/translation/translation-rules.md)
                + [Traducir contenido](/help/journey-sites/translation/translate-content.md)
                + [Publicar contenido traducido](/help/journey-sites/translation/publish-content.md)
-            + [Recorrido de traducción sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=es)
+            + [Recorrido de traducción sin encabezado](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview)
             + [Traducción de contenido para sitios multilingües](/help/sites-cloud/administering/translation/overview.md)
             + [Preparación del contenido para su traducción](/help/sites-cloud/administering/translation/preparation.md)
             + [Administración de proyectos de traducción](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -591,7 +591,7 @@ ht-degree: 95%
       + [Creación y uso compartido de carpetas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
-      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
       + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
    + Configuración, administración y ampliación de [!DNL Assets] {#admin}
@@ -699,7 +699,7 @@ ht-degree: 95%
          + [Previsualización de recursos](/help/assets/preview-assets.md)
          + [Preguntas frecuentes](/help/assets/dynamic-media-open-apis-faqs.md)
          + [Configuración del dominio personalizado](/help/assets/configure-custom-domain.md)
-         + [Optimización de imágenes](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
+         + [Optimizar imágenes](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
          + [Creación de URL de vanidad](/help/assets/vanity-urls.md)
    + Uso de la vista Recursos  {#assets-view}
       + [Introducción](/help/assets/assets-view-introduction.md)
@@ -803,8 +803,8 @@ ht-degree: 95%
          + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuración de almacenamiento de  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configuración de los servicios en la nube de Salesforce](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
@@ -873,7 +873,7 @@ ht-degree: 95%
                + [Usar funciones asincrónicas en un formulario adaptable](/help/forms/using-async-funct-in-rule-editor.md)
                + [Invocar mejoras de servicio en el editor de reglas visuales para formularios basados en componentes principales](/help/forms/invoke-service-enhancements-rule-editor.md)
                + [Mejoras en el editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md)
-               + [Integración de API en el editor de reglas](/help/forms/api-integration-in-rule-editor.md)
+               + [Integración directa de API en el editor de reglas](/help/forms/api-integration-in-rule-editor.md)
             + Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales{#create-and-use-custom-function-core-component}
                + [Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales](/help/forms/create-and-use-custom-functions.md)
                + [Crear y utilizar una función personalizada para un Formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
@@ -1037,7 +1037,7 @@ ht-degree: 95%
       + [Reinicio del SDK de AEM](/help/forms/restart-aem-sdk.md)
       + [Resolver errores de creación de formularios](/help/forms/form-creation-failing.md)
       + [502 Página de error en acción de envío personalizada](/help/forms/custom-submit-action-troubleshooting.md)
-+ Asistente de IA en AEM {#ai-in-aem}
++ IA en AEM {#ai-in-aem}
    + [Información general](/help/ai-in-aem/overview.md)
    + Asistente de IA {#ai-assistant}
       + [Configuración del asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
@@ -1163,7 +1163,7 @@ ht-degree: 95%
          + [Rellenado previo de los campos del formulario adaptable](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [Publicar formularios adaptables con Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Crear componentes personalizados para un formulario EDS](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Solución de problemas de errores 403 prohibidos en el envío de formularios Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [Solución de problemas de errores 403 Prohibido en el envío de formularios de Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
          + [Crear objeto de posible cliente de Salesforce mediante integración de API](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
          + Lista desplegable en cascada {#cascading-drop-down-list}
             + [Introducción](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
@@ -1211,7 +1211,7 @@ ht-degree: 95%
       + Creación{#authoring}
          + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=es)
          + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
-      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=es)
+      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
       + [Vista previa de JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=es)
    + Selector de fragmentos de contenido {#content-fragment-selector}
@@ -1302,7 +1302,7 @@ ht-degree: 95%
          + [Uso de Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Uso de varios repositorios](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Configuración del equipo de desarrollo empresarial](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [Extraer solicitudes de comprobación de repositorios privados](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [Comprobaciones de solicitudes de extracción para repositorios privados](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [Anotaciones de comprobación de GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Variables de entorno](/help/implementing/cloud-manager/environment-variables.md)
       + Canalizaciones de CI-CD de Cloud Manager  {#cicd-pipelines}
