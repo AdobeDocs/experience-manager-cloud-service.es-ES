@@ -5,9 +5,9 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f60dc00fc031fa7ef73a18daec9c6c0e5570b018
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 78%
 
 ---
@@ -34,7 +34,7 @@ Una vez que tenga el contenido de la carpeta `it.tests`, puede utilizarlo como b
 
 Las mismas herramientas que utiliza Adobe para escribir pruebas funcionales de productos se pueden usar para escribir las pruebas funcionales personalizadas. Utilice las [pruebas funcionales del producto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) en GitHub como ejemplo de cómo escribir las pruebas.
 
-El código para la prueba funcional personalizada es el código Java™ ubicado en la carpeta `it.tests` del proyecto. Debe producir un único JAR con todas las pruebas funcionales. Si la generación produce más de un JAR de prueba, el JAR seleccionado no es determinista. Si no produce ningún JAR de prueba, el paso de prueba se aprueba de forma predeterminada. AEM Consulte [Tipo de archivo del proyecto de](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) para ver pruebas de ejemplo.
+El código para la prueba funcional personalizada es el código Java™ ubicado en la carpeta `it.tests` del proyecto. Debe producir un único JAR con todas las pruebas funcionales. Si la generación produce más de un JAR de prueba, el JAR seleccionado no es determinista. Si no produce ningún JAR de prueba, el paso de prueba se aprueba de forma predeterminada. Consulte [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) para ver pruebas de ejemplo.
 
 Las pruebas se ejecutan en una infraestructura de pruebas mantenida por Adobe que incluye al menos dos instancias de autor, dos instancias de publicación y una configuración de Dispatcher. Esta configuración significa que las pruebas funcionales personalizadas se ejecutan con toda la pila de AEM.
 
@@ -108,7 +108,7 @@ Consulte el [`aem-testing-clients`repositorio de GitHub](https://github.com/adob
 | CPU | 0,5 | Cantidad de tiempo de CPU reservado por ejecución de prueba |
 | Memoria | 0,5Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes. |
 | Tiempo de espera | 30 m | Límite de tiempo tras el cual se detiene la prueba. |
-| Duración recomendada | 15 m | El Adobe recomienda que las pruebas no tarden más de este tiempo. |
+| Duración recomendada | 15 m | Adobe recomienda escribir las pruebas para que no tarden más de este tiempo. |
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Los próximos cambios en la infraestructura en contenedores para ejecutar prueba
 >[!NOTE]
 >
 >Este cambio debe realizarse antes del 6 de abril de 2024.
->No actualizar la biblioteca de dependencias puede provocar errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
+>>No actualizar la biblioteca de dependencias puede provocar errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
 
 ### Ejecución de pruebas locales {#local-test-execution}
 

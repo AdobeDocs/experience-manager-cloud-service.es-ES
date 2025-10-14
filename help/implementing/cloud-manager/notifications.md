@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 79%
+source-wordcount: '585'
+ht-degree: 73%
 
 ---
 
@@ -35,7 +35,7 @@ La pestaña **Anuncios** incluye anuncios de productos de Adobe. Los anuncios ha
 
 ![Barra lateral de notificaciones](assets/notificaitons-announcements.png)
 
-Haga clic en una notificación o anuncio para ver sus detalles. Las notificaciones vinculadas a actividades como las implementaciones de canalización le llevan a los detalles de esa actividad, como la ventana de ejecución de la canalización.
+Haga clic en una notificación o un anuncio para ver los detalles. Las notificaciones vinculadas a actividades como las implementaciones de canalización le llevan a los detalles de esa actividad, como la ventana de ejecución de canalización.
 
 Haga clic en la opción **Ver todos** en la parte inferior del panel para ver todos los anuncios de la bandeja de entrada.
 
@@ -45,11 +45,9 @@ Haga clic en la opción **Marcar todo como leído** en la parte inferior del pan
 
 Puede personalizar cómo recibe las notificaciones y cuáles.
 
-Haga clic en el icono de engranaje en la parte superior de la barra lateral de notificaciones.
+Haga clic en el icono de engranaje en la parte superior de la barra lateral de notificaciones para abrir la ventana **preferencias de Experience Cloud**. Desde aquí, puede definir las suscripciones de notificación y cómo recibe las notificaciones.
 
 ![Icono de configuración de notificaciones](assets/notifications-configuration.png)
-
-Esto abre la ventana de **preferencias de Experience Cloud**, donde puede definir las suscripciones de notificación y cómo recibe las notificaciones.
 
 ### Suscripciones {#subscriptions}
 
@@ -57,13 +55,13 @@ Las suscripciones definen para qué productos recibe notificaciones y cuáles.
 
 ![Suscripciones de notificaciones](assets/notifications-subscriptions.png)
 
-De forma predeterminada, recibirá todas las notificaciones de todos los productos, tanto de la aplicación como por correo electrónico. Haga clic en las comillas angulares junto al nombre de un producto para mostrar las opciones detalladas y definir los tipos de notificaciones que recibe de ese producto. O bien, marque o desmarque las opciones en el nivel de producto para seleccionar o deseleccionar todas las opciones del producto.
+De forma predeterminada, recibe todas las notificaciones de todos los productos, tanto de la aplicación como por correo electrónico. Haga clic en las comillas angulares junto al nombre de un producto para mostrar las opciones detalladas y definir los tipos de notificaciones que recibe de ese producto. O bien, marque o desmarque las opciones en el nivel de producto para seleccionar o deseleccionar todas las opciones del producto.
 
 ![Personalización de la suscripción a notificaciones](assets/notifications-subscriptions-customize.png)
 
 ### Prioridad {#priority}
 
-Las alertas de prioridad se marcarán con la etiqueta **ALTA** y se pueden configurar para que se reciban exclusivamente como alertas. En la sección **Prioridad**, puede definir qué categorías se clasifican como notificaciones prioritarias.
+Las alertas de prioridad están marcadas con la etiqueta **HIGH**. Puede configurarlas para que se reciban exclusivamente como alertas. En la sección **Prioridad**, puede definir qué categorías se clasifican como notificaciones prioritarias.
 
 ![Prioridad de notificaciones](assets/notifications-priority.png)
 
@@ -93,4 +91,4 @@ De forma predeterminada, no se envían correos electrónicos. Puede optar por re
 * Cada día
 * Cada semana
 
-Cuando se selecciona **Notificaciones instantáneas**, los correos electrónicos se envían inmediatamente para cada notificación. Para **Resumen diario** y **Resumen semanal**, puede elegir cuándo se envía el compendio diario y en qué día y cuándo se envía el compendio semanal.
+Al elegir **Notificaciones inmediatas**, los mensajes de correo electrónico se envían inmediatamente para cada notificación. Para **Resumen diario** y **Resumen semanal**, puede elegir cuándo se envía el resumen diario y en qué día y cuándo se envía el resumen semanal.

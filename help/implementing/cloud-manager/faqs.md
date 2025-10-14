@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 81%
 
 ---
 
@@ -23,7 +23,7 @@ Sí. Añada el `maven-toolchains-plugin` con la configuración adecuada para Jav
 
 El proceso está documentado. Consulte el [Asistente para la creación de proyectos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
-Por ejemplo, consulte el [código de ejemplo del proyecto wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+Por ejemplo, vea el [código de ejemplo del proyecto WKND](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Mi generación falla con un error sobre maven-scr-plugin después de cambiar de Java™ 8 a Java™ 11. ¿Qué puedo hacer? {#build-fails-maven-scr-plugin}
 
@@ -43,13 +43,13 @@ Para las generaciones de Cloud Manager, el `maven-enforcer-plugin` puede fallar 
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-Este error es un problema conocido debido a que Cloud Manager utiliza una versión diferente de Java para ejecutar el comando de Maven, en comparación con el código de compilación. Simplemente omita `requireJavaVersion` de su configuraciones de `maven-enforcer-plugin`. 
+Este error es un problema conocido debido a que Cloud Manager utiliza una versión diferente de Java™ para ejecutar el comando Maven en comparación con el código de compilación. Simplemente omita `requireJavaVersion` de su configuraciones de `maven-enforcer-plugin`. 
 
 ## La comprobación de la calidad del código falló y la implementación se atascó. ¿Hay alguna manera de saltarse esta comprobación? {#deployment-stuck}
 
-Sí. Todos los errores de comprobación de la calidad del código, excepto la clasificación de seguridad, son métricas no críticas, por lo que se pueden evitar como parte de una canalización de implementación al expandir los elementos en la interfaz de usuario de los resultados.
+Sí. Todos los errores de comprobación de la calidad del código, excepto la clasificación de seguridad, son métricas no críticas. Como resultado, se pueden evitar como parte de una canalización de implementación expandiendo los elementos en la interfaz de usuario de los resultados.
 
-Un usuario con el rol de [Administrador de implementación, Administrador de proyectos o Propietario del negocio](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) puede anular los problemas, en cuyo caso la canalización continúa o aceptarlos, en cuyo caso la canalización se detendrá y producirá un error.
+Un usuario con la función [Administrador de implementación, Administrador de proyectos o Propietario empresarial](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) puede anular los problemas. En ese caso, la canalización continúa o aceptarán los problemas, en cuyo caso la canalización se detendrá y producirá un error.
 
 Consulte los documentos [Probar la calidad del código](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) y [Configurar canalizaciones que no sean de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) para obtener más información.
 
@@ -57,11 +57,11 @@ Consulte los documentos [Probar la calidad del código](/help/implementing/cloud
 
 Sí. Para implementaciones de desarrolladores, los archivos de la rama de Git `pom.xml` deben contener `-SNAPSHOT` al final del valor `<version>`.
 
-Este valor permite seguir instalando la implantación posterior cuando la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni se genera ninguna versión automática para la generación de Maven.
+Este valor permite que la implementación posterior se instale cuando la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni se genera ninguna versión automática para la generación de Maven.
 
 También puede establecer la versión a `-SNAPSHOT` para generaciones o implementaciones de fase y producción. Cloud Manager establece automáticamente un número de versión adecuado y crea una etiqueta en Git. Se puede hacer referencia a esta etiqueta más adelante, si es necesario.
 
-Para obtener más información acerca de la administración de versiones, consulte [Administrar versiones del proyecto de Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Para obtener más información acerca de la administración de versiones, vea [Administración de versiones del proyecto Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## ¿Cómo funcionan las versiones de paquetes para las implementaciones de fase y producción? {#snapshot-version}
 
@@ -94,7 +94,7 @@ La solución es agregar un script de [configuración de RepositoryInitializer OS
 
 En el ejemplo de error anterior, el paquete `myapp-base.ui.content-*.zip` incluye contenido en `/conf` y `/var/workflow`. Para que la implementación se realice correctamente, son necesarios los permisos del `sling-distribution-importer` en esas rutas.
 
-Este es un ejemplo de [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) configuración de OSGi que agrega permisos adicionales para el usuario `sling-distribution-importer`.  La configuración agrega permisos en `/var`. Esta configuración debe agregarse al paquete de aplicaciones en `/apps/myapp/config` (donde myapp es la carpeta donde se almacena el código de la aplicación).
+Este es un ejemplo de [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) configuración de OSGi que agrega permisos adicionales para el usuario `sling-distribution-importer`.  La configuración agrega permisos en `/var`. Esta configuración debe agregarse al paquete de la aplicación en `/apps/myapp/config` (donde `myapp` es la carpeta donde se almacena el código de la aplicación).
 
 ## Mi implementación de Cloud Manager falla en el paso de implementación en AEM as a Cloud Service y ya he agregado una configuración OSGi de RepositoryInitializer. ¿Qué más puedo hacer? {#build-failures}
 
@@ -109,7 +109,7 @@ Si [agregar una configuración OSGi de RepositoryInitializer](#cloud-manager-dep
 
 * Es posible que la implementación falle debido a algún otro error durante la replicación de los paquetes de contenido (distribución Sling) de las instancias de autor a publicación.
    * Siga estos pasos para simular el problema en una configuración local.
-      1. Instale una instancia de autor y publicación localmente mediante los últimos jars del SDK de AEM.
+      1. Instale una instancia de autor y una instancia de publicación localmente mediante los últimos jars de AEM SDK.
       1. Inicie sesión en la instancia de autor.
       1. Vaya a **Herramientas** > **Implementación** > **Distribución**.
       1. Distribuya los paquetes de contenido que forman parte de la base de código y vea si la cola se bloquea con un error.
