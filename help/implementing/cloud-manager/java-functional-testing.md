@@ -131,7 +131,7 @@ Los próximos cambios en la infraestructura en contenedores para ejecutar prueba
 >[!NOTE]
 >
 >Este cambio debe realizarse antes del 6 de abril de 2024.
->>No actualizar la biblioteca de dependencias puede provocar errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
+>&#x200B;>No actualizar la biblioteca de dependencias puede provocar errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
 
 ### Ejecución de pruebas locales {#local-test-execution}
 
