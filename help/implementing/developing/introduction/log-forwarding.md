@@ -4,9 +4,9 @@ description: Obtenga información acerca del reenvío de registros a proveedores
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
+source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2478'
 ht-degree: 3%
 
 ---
@@ -23,80 +23,70 @@ Los clientes con una licencia con un proveedor de registro o que alojen un produ
   <tbody>
     <tr>
       <th>Tecnología de registro</th>
-      <th>Private Beta*</th>
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>La red de distribución de contenido (CDN)</th>
     </tr>
     <tr>
       <td>Amazon S3</td>
-      <td style="background-color: #ffb3b3;">Sí</td>
       <td>Sí</td>
       <td>Sí</td>
-      <td style="background-color: #ffb3b3;">No</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
     <tr>
-      <td>Almacenamiento de Azure Blob</td>
-      <td>No</td>
+      <td>Azure Blob Storage</td>
       <td>Sí</td>
       <td>Sí</td>
       <td>Sí</td>
     </tr>
     <tr>
       <td>DataDog</td>
-      <td>No</td>
       <td>Sí</td>
       <td>Sí</td>
       <td>Sí</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
-      <td style="background-color: #ffb3b3;">Sí</td>
       <td>Sí</td>
       <td>Sí</td>
-      <td style="background-color: #ffb3b3;">No</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
     <tr>
       <td>Elasticsearch<br>OpenSearch</td>
-      <td>No</td>
       <td>Sí</td>
       <td>Sí</td>
       <td>Sí</td>
     </tr>
     <tr>
       <td>HTTPS</td>
-      <td>No</td>
       <td>Sí</td>
       <td>Sí</td>
       <td>Sí</td>
     </tr>
     <tr>
       <td>New Relic</td>
-      <td style="background-color: #ffb3b3;">Sí</td>
       <td>Sí</td>
       <td>Sí</td>
-      <td style="background-color: #ffb3b3;">No</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
     <tr>
       <td>Splunk</td>
-      <td>No</td>
       <td>Sí</td>
       <td>Sí</td>
       <td>Sí</td>
     </tr>
     <tr>
       <td>Lógica de sumo</td>
-      <td style="background-color: #ffb3b3;">Sí</td>
       <td>Sí</td>
       <td>Sí</td>
-      <td style="background-color: #ffb3b3;">No</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
   </tbody>
 </table>
 
 >[!NOTE]
 >
-> Para obtener acceso a tecnologías en Private Beta, envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acceso.
+> Para las próximas tecnologías de registro de CDN planificadas para el futuro, envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para registrar su interés.
 
 El reenvío de registros se configura en modo de autoservicio declarando una configuración en Git y se puede implementar mediante canalizaciones de configuración de Cloud Manager en los tipos de entorno de desarrollo, ensayo y producción. El archivo de configuración se puede implementar en entornos de desarrollo rápido (RDE) mediante herramientas de línea de comandos.
 
@@ -247,6 +237,8 @@ Para los registros de CDN, puede incluir en la lista de permitidos las direccion
 >[!NOTE]
 >
 >No es posible que los registros de CDN aparezcan desde la misma dirección IP desde la que aparecen los registros de AEM, esto se debe a que los registros se envían directamente desde Fastly y no desde AEM Cloud Service.
+>
+>Por este motivo, no es posible utilizar el reenvío de registros con configuraciones de VPN de red avanzadas.
 
 ## Configuración de destino de registro {#logging-destinations}
 
@@ -294,7 +286,10 @@ La directiva IAM debe permitir al usuario utilizar `s3:putObject`.  Por ejemplo:
 
 Consulte la [Documentación de la directiva de compartimento de AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) para obtener más información sobre cómo implementar.
 
-### Almacenamiento de Azure Blob {#azureblob}
+>[!NOTE]
+>La compatibilidad con los registros de CDN para AWS S3 está planificada para el futuro. Envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para registrar su interés.
+
+### Azure Blob Storage {#azureblob}
 
 ```yaml
 kind: "LogForwarding"
@@ -491,7 +486,7 @@ El reenvío de registros a New Relic aprovecha la API HTTPS de New Relic para su
 >
 >El reenvío de registros a New Relic solo está disponible para cuentas de New Relic propiedad del cliente.
 >
->Envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acceso.
+>La compatibilidad con el registro de CDN para la API de registro de New Relic está planificada para el futuro. Envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para registrar su interés.
 >
 >New Relic proporciona puntos finales específicos de la región en función de dónde se aprovisione su cuenta de New Relic.  Consulte [Documentación de New Relic](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) para obtener más información.
 
@@ -515,8 +510,7 @@ El atributo de ámbito &quot;Ingesta de registros&quot; es necesario para el tok
 ```
 
 >[!NOTE]
->
-> Envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acceso.
+>La compatibilidad con el registro de CDN para la API de registro de Dynatrace está planificada para el futuro. Envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para registrar su interés.
 
 ### Splunk {#splunk}
 
@@ -570,6 +564,8 @@ data:
 ```
 
 >[!NOTE]
+>La compatibilidad con el registro de CDN para SumoLogic está planificada para el futuro. Envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para registrar su interés.
+>
 > Necesitará una suscripción de Sumo Logic Enterprise para aprovechar la funcionalidad de campo &quot;índice&quot;.  Las suscripciones que no son de empresa tendrán sus registros enrutados a la partición `sumologic_default` como estándar.  Consulte la [Documentación de partición lógica de sumo](https://help.sumologic.com/docs/search/optimize-search-partitions/) para obtener más información.
 
 ## Formatos de entrada de registro {#log-formats}
