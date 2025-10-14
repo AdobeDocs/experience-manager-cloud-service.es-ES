@@ -66,8 +66,8 @@ Puede encontrar diferentes términos relacionados con la publicación al trabaja
 
 En la consola **Sites** hay dos opciones para la publicación:
 
-* [Publicación rápida ](#quick-publish)
-* [Administrar publicación    ](#manage-publication)
+* [Publicación rápida &#x200B;](#quick-publish)
+* [Administrar publicación    &#x200B;](#manage-publication)
 
 ### Publicación rápida  {#quick-publish}
 

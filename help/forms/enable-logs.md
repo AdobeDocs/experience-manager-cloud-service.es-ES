@@ -30,7 +30,7 @@ Siga estos pasos para configurar los registros del lado del servidor:
 
 1. Vaya a `https://'[server]:[port]'/system/console/configMgr`. Busque y abra la opción *Configuración del registrador de Sling de Apache*. Aparecerá un cuadro de diálogo:
 
-   ![ Cuadro de diálogo de la opción de configuración del registrador de registros de Sling](assets/logconfig.png)
+   ![&#x200B; Cuadro de diálogo de la opción de configuración del registrador de registros de Sling](assets/logconfig.png)
 
    Opción de configuración del registrador de registros de Sling
 

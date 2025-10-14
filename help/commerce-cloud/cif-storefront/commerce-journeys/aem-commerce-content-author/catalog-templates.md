@@ -95,7 +95,7 @@ Añada cualquier imagen en la parte superior de la página.
 
 La plantilla se puede previsualizar con cualquier categoría o producto. Abra **Información de la página** y seleccione **Ver con categoría/producto**. Seleccione el producto/categoría del selector para obtener una vista previa de este producto/categoría. Seleccione la categoría **Ver el aspecto** para obtener una vista previa de la plantilla actualizada.
 
-![crear plantilla ](assets/create-template-picker.png)
+![crear plantilla &#x200B;](assets/create-template-picker.png)
 
 Ahora tiene que asignar esta plantilla a la categoría específica. Abra las propiedades en el menú **Información de la página** y cambie a la pestaña de comercio. Haga clic en el icono de la carpeta para seleccionar la categoría **Ver el aspecto** del selector de categorías. Es posible asignar varias categorías a una plantilla e incluir también subcategorías activando la casilla de verificación.
 

@@ -29,7 +29,7 @@ También puede solicitar que se realice un procesamiento adicional de los recurs
 |---------------------|----------------|-----------------|
 | [Interfaz de usuario de la consola Assets](#upload-assets) | Carga ocasional, facilidad para presionar y arrastrar, carga del buscador. No utilice para cargar muchos recursos. | Todos los usuarios |
 | [Cargar API](#upload-using-apis) | Para las decisiones dinámicas durante la carga. | Desarrollador |
-| Aplicación de escritorio de [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es) | Ingesta de recursos de bajo volumen, pero no para la migración. | Administrador, Especialista en marketing |
+| Aplicación de escritorio de [[!DNL Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es) | Ingesta de recursos de bajo volumen, pero no para la migración. | Administrador, Especialista en marketing |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html?lang=es) | Resulta útil cuando los creativos y los especialistas en marketing trabajan en recursos desde las aplicaciones de escritorio de [!DNL Creative Cloud] admitidas. | Creative, experto en marketing |
 | [Ingestor masivo de recursos](#asset-bulk-ingestor) | Recomendado para migraciones a gran escala e ingestas masivas ocasionales. Solo para almacenes de datos compatibles. | Administrador, Desarrollador |
 
@@ -416,7 +416,7 @@ Los detalles técnicos de las API y el protocolo de carga, así como los víncul
 
 >[!MORELIKETHIS]
 >
->* Aplicación de escritorio de [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es)
+>* Aplicación de escritorio de [[!DNL Adobe Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es)
 >* [Acerca de [!DNL Adobe Asset Link]](https://www.adobe.com/es/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentación](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html?lang=es)
 >* [Referencia técnica para la carga de recursos](developer-reference-material-apis.md#asset-upload)

@@ -262,7 +262,7 @@ Otro método para obtener una vista previa de un recurso es seleccionar el recur
 ![Vista previa de un recurso basado en el ajuste preestablecido de visor de luz vertical de zoom](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Vista previa de un recurso en función del ajuste preestablecido de visualizador &quot;ZoomVertical_light&quot; seleccionado. El puntero del mouse (`+`) se movió sobre el reloj para aumentar la vista. Observe los botones URL e Incrustar._
 
-La representación anterior está activa. [Inténtelo](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
+La representación anterior está activa. [Inténtelo](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## Opcional: Más información
 

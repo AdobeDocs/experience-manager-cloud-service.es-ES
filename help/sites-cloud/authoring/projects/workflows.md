@@ -45,7 +45,7 @@ Para obtener más información sobre el uso de flujos de trabajo en AEM, consult
 
 * [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
 * [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md)
-* [Configuración de flujos de trabajo ](/help/sites-cloud/administering/workflows-administering.md)
+* [Configuración de flujos de trabajo &#x200B;](/help/sites-cloud/administering/workflows-administering.md)
 
 En esta sección se describen los flujos de trabajo disponibles para Proyectos.
 

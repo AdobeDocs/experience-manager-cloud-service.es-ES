@@ -189,7 +189,7 @@ Ejecute los siguientes pasos para dar formato a partes específicas de una caden
    * **Propiedades de fuente**: cambie la familia de fuentes, el color y el tamaño mediante las opciones de panel correspondientes.
      ![format-substring](/help/assets/assets/format-substring.png)
 
-[Cada parte de cadena con formato se muestra como una subcadena en el selector de subcadenas, disponible en el panel Parámetros. Agregue parámetros a estas partes con formato para aplicarles formato dinámico mediante la dirección URL de envío de la plantilla ](#substring-parameterisation).
+[Cada parte de cadena con formato se muestra como una subcadena en el selector de subcadenas, disponible en el panel Parámetros. Agregue parámetros a estas partes con formato para aplicarles formato dinámico mediante la dirección URL de envío de la plantilla &#x200B;](#substring-parameterisation).
 
 ### Agregar formas al lienzo {#add-shapes-to-the-canvas}
 

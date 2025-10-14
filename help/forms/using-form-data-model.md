@@ -132,7 +132,7 @@ Para configurar la acción de envío del modelo de datos de formulario:
 1. Especifique el **[!UICONTROL modelo de datos para enviar]**.
 1. Haga clic en **[!UICONTROL Listo]**.
 
-Al enviar el formulario, los datos del objeto de modelo de datos configurado se escriben en la fuente de datos correspondiente. Además, puede enviar a la fuente de datos un archivo adjunto de formulario mediante un modelo de datos de formulario (FDM) y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL AEM Forms] ](data-integration.md).
+Al enviar el formulario, los datos del objeto de modelo de datos configurado se escriben en la fuente de datos correspondiente. Además, puede enviar a la fuente de datos un archivo adjunto de formulario mediante un modelo de datos de formulario (FDM) y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL AEM Forms] &#x200B;](data-integration.md).
 
 <!--![data-submission](assets/data-submission.png)-->
 

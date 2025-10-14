@@ -93,7 +93,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **La ruta de acceso `/.rum` está bloqueada en mi sitio, ¿cómo debo corregirla?**
 
-   Se requiere la ruta de acceso `/.rum` para que funcione la colección de telemetría operativa. Si utiliza una CDN delante de AEM as a Cloud Service de Adobe, asegúrese de que la ruta `/.rum` se reenvíe al mismo origen de AEM que el resto del contenido de AEM. Y asegúrese de que no se ajuste de ninguna manera. Como alternativa, puede cambiar el host que se va a utilizar para la telemetría operativa a `rum.hlx.page` estableciendo una variable de entorno en Cloud Manager[ denominada ](/help/implementing/cloud-manager/environment-variables.md#add-variables) al valor `AEM_OPTEL_EXTERNAL`. `true` Si desea volver a cambiar a las mismas solicitudes de dominio en un momento posterior, simplemente elimine esa variable de entorno de nuevo.
+   Se requiere la ruta de acceso `/.rum` para que funcione la colección de telemetría operativa. Si utiliza una CDN delante de AEM as a Cloud Service de Adobe, asegúrese de que la ruta `/.rum` se reenvíe al mismo origen de AEM que el resto del contenido de AEM. Y asegúrese de que no se ajuste de ninguna manera. Como alternativa, puede cambiar el host que se va a utilizar para la telemetría operativa a `rum.hlx.page` estableciendo una variable de entorno en Cloud Manager[&#x200B; denominada &#x200B;](/help/implementing/cloud-manager/environment-variables.md#add-variables) al valor `AEM_OPTEL_EXTERNAL`. `true` Si desea volver a cambiar a las mismas solicitudes de dominio en un momento posterior, simplemente elimine esa variable de entorno de nuevo.
 
 1. **¿Cuenta la colección de telemetría operativa para las solicitudes de contenido con fines contractuales?**
 
@@ -103,7 +103,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Adobe recomienda utilizar la telemetría operativa debido a sus importantes ventajas y que permitirá a Adobe ayudarle a optimizar sus experiencias digitales mejorando el rendimiento del sitio web. El servicio está diseñado para ser ininterrumpido y no tiene ningún impacto en el rendimiento de su sitio web.
 
-   La exclusión puede significar perder la oportunidad de mejorar la participación del tráfico en el sitio web. Sin embargo, si encuentra algún problema, puede deshabilitar la telemetría operativa estableciendo una variable de entorno en Cloud Manager[ denominada ](/help/implementing/cloud-manager/environment-variables.md#add-variables) con el valor `AEM_OPTEL_DISABLED`. `true` Si desea volver a activar la Telemetría operativa en un momento posterior, simplemente elimine de nuevo esa variable de entorno.
+   La exclusión puede significar perder la oportunidad de mejorar la participación del tráfico en el sitio web. Sin embargo, si encuentra algún problema, puede deshabilitar la telemetría operativa estableciendo una variable de entorno en Cloud Manager[&#x200B; denominada &#x200B;](/help/implementing/cloud-manager/environment-variables.md#add-variables) con el valor `AEM_OPTEL_DISABLED`. `true` Si desea volver a activar la Telemetría operativa en un momento posterior, simplemente elimine de nuevo esa variable de entorno.
 
 1. **¿Puedo usar una directiva de seguridad de contenido con un nonce?**
 

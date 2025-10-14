@@ -66,4 +66,4 @@ La característica **Acceder a la info del repositorio** también está disponib
 
 Puede revocar una contraseña de acceso en cualquier momento.
 
-Para ello, [cree un vale de soporte técnico para esta solicitud](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&amp;support-tab=home&amp;lang=es#support). El billete se trata con alta prioridad y se suele revocar en el plazo de un día.
+Para ello, [cree un vale de soporte técnico para esta solicitud](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&support-tab=home&lang=es#support). El billete se trata con alta prioridad y se suele revocar en el plazo de un día.

@@ -103,7 +103,7 @@ Cuando selecciona una página de Live Copy, están disponibles las siguientes ac
 La consola **Estado de la relación** tiene dos pestañas que proporcionan una amplia gama de funcionalidades.
 
 * [Estado de la relación](#relationship-status-tab)
-* [Live Copy   ](#live-copy-tab)
+* [Live Copy   &#x200B;](#live-copy-tab)
 
 ### Estado de la relación {#relationship-status-tab}
 

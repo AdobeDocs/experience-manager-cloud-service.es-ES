@@ -84,7 +84,7 @@ La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.1.0 es e
 
 ### Correcciones de errores {#crt-bug-fixes}
 
-* AEM Se han realizado varias correcciones de errores en las herramientas Convertidor de Dispatcher y Modernizador de repositorios de. AEM Consulte [Conversor de Dispatcher ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) y [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* AEM Se han realizado varias correcciones de errores en las herramientas Convertidor de Dispatcher y Modernizador de repositorios de. AEM Consulte [Conversor de Dispatcher &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) y [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 

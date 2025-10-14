@@ -213,7 +213,7 @@ Puede tener uno o varios destinatarios para un acuerdo de Adobe Sign. Al agregar
      >
      >Asegúrese de que la dirección de correo electrónico del primer destinatario o del único destinatario (si hay solo uno) no sea idéntica al de la cuenta de [!DNL Adobe Sign] utilizada para configurar AEM Cloud Service.
 
-   * **[!UICONTROL Método de autenticación de destinatario]:** especifique el método para autenticar un destinatario antes de abrir el acuerdo de Adobe Sign. Puede elegir entre teléfono, base de conocimientos, autenticación social basada en identidad e [ID oficial ](https://helpx.adobe.com/es/sign/using/adobesign-authentication-government-id.html) para [!DNL Adobe Acrobat Sign]. Para [!DNL Adobe Acrobat Sign for Government], puede elegir entre autenticación telefónica y basada en conocimientos.
+   * **[!UICONTROL Método de autenticación de destinatario]:** especifique el método para autenticar un destinatario antes de abrir el acuerdo de Adobe Sign. Puede elegir entre teléfono, base de conocimientos, autenticación social basada en identidad e [ID oficial &#x200B;](https://helpx.adobe.com/es/sign/using/adobesign-authentication-government-id.html) para [!DNL Adobe Acrobat Sign]. Para [!DNL Adobe Acrobat Sign for Government], puede elegir entre autenticación telefónica y basada en conocimientos.
 
    >[!NOTE]
    >

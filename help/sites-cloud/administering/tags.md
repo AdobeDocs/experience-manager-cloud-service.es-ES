@@ -89,7 +89,7 @@ Se utiliza un área de nombres para organizar otras etiquetas. Se puede consider
 1. Proporcione la información necesaria.
 
    * **Título**: título del área de nombres mostrado al usuario en la interfaz de usuario (opcional)
-   * **Nombre**: si no se especifica un nombre, se crea un nombre de nodo válido a partir del **Título**. AEM Consulte el documento [Marco de etiquetado de ](/help/implementing/developing/introduction/tagging-framework.md#tagid)para obtener más información.
+   * **Nombre**: si no se especifica un nombre, se crea un nombre de nodo válido a partir del **Título**. AEM Consulte el documento [Marco de etiquetado de &#x200B;](/help/implementing/developing/introduction/tagging-framework.md#tagid)para obtener más información.
    * **Descripción**: una descripción del área de nombres (opcional)
 
 1. Una vez que ingrese la información requerida, seleccione **Crear**.

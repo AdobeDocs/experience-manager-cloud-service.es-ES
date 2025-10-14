@@ -43,7 +43,7 @@ Para obtener información detallada sobre cómo funcionan las plantillas editabl
 
 ## Antes de comenzar {#before-you-start}
 
-Antes de empezar, es importante tener en cuenta que la creación de una plantilla requiere colaboración. Por este motivo, para cada tarea se indica la [Función. ](#roles) Esto no afecta a cómo realmente utiliza una plantilla para crear una página, pero afecta al modo en que una página se relaciona con su plantilla.
+Antes de empezar, es importante tener en cuenta que la creación de una plantilla requiere colaboración. Por este motivo, para cada tarea se indica la [Función. &#x200B;](#roles) Esto no afecta a cómo realmente utiliza una plantilla para crear una página, pero afecta al modo en que una página se relaciona con su plantilla.
 
 >[!NOTE]
 >

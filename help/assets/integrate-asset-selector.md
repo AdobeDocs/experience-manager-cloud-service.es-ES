@@ -29,7 +29,7 @@ Puede realizar la autenticación sin definir algunas de las propiedades de IMS, 
 
 Puede integrar el Selector de recursos con varias aplicaciones, como:
 
-* [Integrar el Selector de recursos con una aplicación  [!DNL Adobe] ](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Integrar el Selector de recursos con una aplicación  [!DNL Adobe] &#x200B;](/help/assets/integrate-asset-selector-adobe-app.md)
 * [Integre el Selector de recursos con una aplicación que no sea de Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Integración de Dynamic Media con funciones de OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 

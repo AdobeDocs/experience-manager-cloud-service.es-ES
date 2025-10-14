@@ -269,7 +269,7 @@ El contenido asociado no se expone.
 
 El uso puede variar en función de si utiliza un entorno de AEM Author o Publish junto con el caso de uso específico.
 
-* Se recomienda que la creación esté enlazada a una instancia de autor ([ y actualmente no hay medios para replicar un fragmento para publicarlo mediante esta API (](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
+* Se recomienda que la creación esté enlazada a una instancia de autor ([&#x200B; y actualmente no hay medios para replicar un fragmento para publicarlo mediante esta API (](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
 * La entrega es posible desde ambos, ya que AEM sirve contenido solicitado solo en formato JSON.
 
    * El almacenamiento y el envío desde una instancia de autor de AEM deberían ser suficientes para las aplicaciones de biblioteca de medios detrás del cortafuegos.

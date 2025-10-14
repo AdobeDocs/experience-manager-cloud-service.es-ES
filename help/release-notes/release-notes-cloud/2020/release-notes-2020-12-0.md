@@ -74,7 +74,7 @@ La fecha de lanzamiento de Cloud Manager en Adobe Experience Manager AEM () as a
 
 ### Correcciones de errores {#crt-bug-fixes}
 
-* AEM Se han corregido varios errores en las herramientas Convertidor de Dispatcher y Modernizador de repositorios de. AEM Consulte [Conversor de Dispatcher ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) y [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* AEM Se han corregido varios errores en las herramientas Convertidor de Dispatcher y Modernizador de repositorios de. AEM Consulte [Conversor de Dispatcher &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) y [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ### Fecha de lanzamiento {#release-date-ctt}
 

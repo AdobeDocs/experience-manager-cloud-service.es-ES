@@ -45,7 +45,7 @@ Las principales diferencias se encuentran en las siguientes áreas:
 
 * [Eliminación de la IU clásica](#classic-ui)
 
-* [Entrega en el lado de publicación ](#publish-side-delivery)
+* [Entrega en el lado de publicación &#x200B;](#publish-side-delivery)
 
 * [Administración y entrega de recursos](#asset-handling)
 

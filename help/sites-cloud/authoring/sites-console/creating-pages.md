@@ -59,7 +59,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
    * **Nombre**:
 
       * Se usa para generar la URI. Si no se especifica, el nombre se obtiene a partir del título.
-      * AEM AEM Si proporciona una página **Name** al crear una página, [valida el nombre según las convenciones ](/help/implementing/developing/introduction/naming-conventions.md) impuestas por el JCR y el.
+      * AEM AEM Si proporciona una página **Name** al crear una página, [valida el nombre según las convenciones &#x200B;](/help/implementing/developing/introduction/naming-conventions.md) impuestas por el JCR y el.
       * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
 
    >[!TIP]

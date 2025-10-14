@@ -49,7 +49,7 @@ El nombre o ID del recurso `AdobeStock_28563982` está en verde. Observe que el 
 
 Y finalmente, hay algunos parámetros de procesamiento de imágenes, `?wid=1000&fmt=jpeg&qlt=85`, que se muestran en amarillo al final.
 
-La ruta de URL completa está activa. [Inténtelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target="_blank"}.
+La ruta de URL completa está activa. [Inténtelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&fmt=jpeg&qlt=85){target="_blank"}.
 
 Con la ventana del explorador aún abierta a la URL de Dynamic Media y a la imagen del reloj, veamos más de cerca cómo puede crear representaciones de la imagen solo cambiando la URL.
 
@@ -66,9 +66,9 @@ En el momento en que pulse **[!UICONTROL Intro]**, el explorador volverá al ser
 
 Dynamic Media tiene numerosos parámetros de procesamiento de imágenes que puede utilizar para ajustar los recursos de imagen en las páginas web. Puedes [ver una lista de ellos aquí](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=es).
 
-Ahora intente agregar un parámetro de rotación a la imagen del reloj. Y el final de la ruta de la dirección URL, inmediatamente después de `wid=1000`, escriba `&rotate=90` y, a continuación, presione **[!UICONTROL Entrar]**. [Inténtelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}.
+Ahora intente agregar un parámetro de rotación a la imagen del reloj. Y el final de la ruta de la dirección URL, inmediatamente después de `wid=1000`, escriba `&rotate=90` y, a continuación, presione **[!UICONTROL Entrar]**. [Inténtelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}.
 
-El reloj sigue un poco sesgado hacia la izquierda. Cambie el valor de giro de `90` a `92` y, a continuación, presione **[!UICONTROL Entrar]**. [Inténtelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}.
+El reloj sigue un poco sesgado hacia la izquierda. Cambie el valor de giro de `90` a `92` y, a continuación, presione **[!UICONTROL Entrar]**. [Inténtelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=9){target="_blank"}.
 
 De nuevo, en el momento en que presiona **[!UICONTROL Enter]**, se genera una nueva representación del reloj de forma casi instantánea. Puede ver el tipo de rendimiento que obtiene, lo que explica por qué Dynamic Media puede entregar más de 800 000 solicitudes de imagen, _por segundo_, en un fin de semana ajetreado o en vacaciones importantes.
 
@@ -163,7 +163,7 @@ _Inicio de la creación de un conjunto de imágenes._
 
 Para crear el conjunto de imágenes, elige **[!UICONTROL Conjunto de imágenes]** en el menú desplegable **[!UICONTROL Crear]**. Observe en el menú que también hay opciones para crear un **[!UICONTROL conjunto de medios mixtos]**, un **[!UICONTROL conjunto de giros]** y un **[!UICONTROL conjunto de carrusel]**. Estos conjuntos se crean de forma muy similar a un conjunto de imágenes.
 
-Un conjunto de medios mixtos puede contener imágenes, conjuntos de muestras, conjuntos de giros, vídeos y conjuntos de vídeos adaptables. [Inténtelo](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Un conjunto de giros simula el acto del mundo real de girar un objeto para examinarlo. Los conjuntos de giros permiten ver los detalles visuales clave desde cualquier ángulo. [Inténtelo](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target="_blank"}.
+Un conjunto de medios mixtos puede contener imágenes, conjuntos de muestras, conjuntos de giros, vídeos y conjuntos de vídeos adaptables. [Inténtelo](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Un conjunto de giros simula el acto del mundo real de girar un objeto para examinarlo. Los conjuntos de giros permiten ver los detalles visuales clave desde cualquier ángulo. [Inténtelo](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&stagesize=500,400){target="_blank"}.
 
 La creación de un conjunto de imágenes es sencilla. Simplemente, agregue los recursos de imagen que desee incluir en el conjunto.
 
@@ -189,13 +189,13 @@ Observe en la vista previa que puede seleccionar las muestras de zapatillas de r
 ![Conjunto de imágenes en ejecución con el visor flotante aplicado](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _El conjunto de imágenes `Running` con el visor flotante aplicado._
 
-En este caso, se seleccionó el visor `Flyout`. En este punto, puede obtener una vista previa del conjunto de imágenes en el visor. Sin embargo, es mejor verlo en su navegador, justo cómo lo ve un cliente. Selecciona **[!UICONTROL URL]** en la esquina inferior izquierda, luego copia la URL y péguela en el navegador. [Inténtelo](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target="_blank"}.
+En este caso, se seleccionó el visor `Flyout`. En este punto, puede obtener una vista previa del conjunto de imágenes en el visor. Sin embargo, es mejor verlo en su navegador, justo cómo lo ve un cliente. Selecciona **[!UICONTROL URL]** en la esquina inferior izquierda, luego copia la URL y péguela en el navegador. [Inténtelo](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout){target="_blank"}.
 
 La dirección URL única permite utilizar el conjunto de imágenes y el visor donde los necesite en el sitio web. Es posible que haya notado en el ejemplo anterior que **[!UICONTROL Embed]** está a la derecha del botón URL. Seleccionando **[!UICONTROL Incrustar]**, puede copiar el código para este conjunto/visor de imágenes y añadirlo a una página web o a un componente de Experience Manager Sites.
 
 El visor flotante es un visor predeterminado y listo para usar cuyas propiedades puede editar. O bien, como con la creación de un ajuste preestablecido de imagen, puede crear su propio visor personalizado.
 
-Ahora, supongamos que a su equipo de ventas y marketing no le gusta el visor flotante. Les gusta la función de zoom, pero quieren que los clientes vean el efecto de zoom directamente sobre los zapatos. En tal caso, simplemente aplique el visor InlineZoom al conjunto de imágenes y copie y pegue su URL en el explorador para ver cómo se comporta. [Inténtelo](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
+Ahora, supongamos que a su equipo de ventas y marketing no le gusta el visor flotante. Les gusta la función de zoom, pero quieren que los clientes vean el efecto de zoom directamente sobre los zapatos. En tal caso, simplemente aplique el visor InlineZoom al conjunto de imágenes y copie y pegue su URL en el explorador para ver cómo se comporta. [Inténtelo](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}.
 
 Cuando mueve el puntero del mouse sobre el zapato, se acerca a esa imagen y puede ver más detalles a medida que mueve el puntero. Y la razón es simplemente el tamaño de la imagen que se cargó inicialmente en Dynamic Media.
 
@@ -205,8 +205,8 @@ Acaba de leer acerca de los conjuntos de imágenes y visores. Veamos un par de o
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* `ZoomVertical_dark` visor aplicado a un recurso de imagen. [Inténtelo](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target="_blank"}.
-* `Zoom_light` visor aplicado a una imagen. [Inténtelo](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target="_blank"}.
+* `ZoomVertical_dark` visor aplicado a un recurso de imagen. [Inténtelo](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&config=jpearldemo/ZoomVertical_dark){target="_blank"}.
+* `Zoom_light` visor aplicado a una imagen. [Inténtelo](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&config=jpearldemo/Zoom_light){target="_blank"}.
 
 ## Opcional: Más información
 

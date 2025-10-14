@@ -55,7 +55,7 @@ Siga los pasos a continuación para utilizar las miniaturas en los vídeos:
 
 1. Seleccione el vídeo y haga clic en el icono Configurar (*wrench*) para abrir las propiedades del vídeo.
 
-   ![Imagen del recurso de vídeo seleccionado con una flecha que señala al icono Configurar y que se representa como una llave inglesa. en la barra de herramientas ](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
+   ![Imagen del recurso de vídeo seleccionado con una flecha que señala al icono Configurar y que se representa como una llave inglesa. en la barra de herramientas &#x200B;](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
 1. Se abre el cuadro de diálogo **Vídeo** en el que puede ver la zona de colocación de **Miniatura**.
 

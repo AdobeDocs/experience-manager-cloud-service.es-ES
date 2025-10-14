@@ -91,7 +91,7 @@ Si desea actualizar varias variables, el Adobe recomienda que utilice el cuadro 
 1. En el cuadro de diálogo **Configuración del entorno**, haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en la última columna de la fila de la variable que desea cambiar.
 1. En el menú desplegable, haga clic en **Editar**.
 
-   ![Variable Editar o eliminar ](assets/edit-delete-variable.png)
+   ![Variable Editar o eliminar &#x200B;](assets/edit-delete-variable.png)
 
 1. Actualice el valor de la variable de entorno según sea necesario.
 Al editar un secreto, el valor solo se puede actualizar, no ver.

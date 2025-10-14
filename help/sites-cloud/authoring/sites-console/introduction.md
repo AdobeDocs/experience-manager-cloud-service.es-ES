@@ -96,7 +96,7 @@ La consola **Sites** ofrece tres vistas diferentes de la jerarquía de contenido
 
 * [Vista de columna](#column-view)
 * [Vista de tarjeta](#card-view)
-* [Vista de lista   ](#list-view)
+* [Vista de lista   &#x200B;](#list-view)
 
 El icono **Ver** en el extremo derecho de la barra de herramientas de AEM indica la vista actual seleccionada.
 

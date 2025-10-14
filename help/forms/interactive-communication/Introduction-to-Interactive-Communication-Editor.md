@@ -58,7 +58,7 @@ El editor de comunicaciones interactivas (CI) está diseñado para ofrecer efici
 
 ## Incorporación
 
-La capacidad de comunicación interactiva (CI) está disponible a través del programa de acceso anticipado (EA). Para solicitar acceso, envíe un correo electrónico a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde su ID de correo electrónico oficial con su ID de entorno y el ID de organización. Una vez que Adobe confirme su inscripción, siga la [Documentación del ](/help/forms/setup-forms-cloud-service.md) para habilitar la comunicación interactiva en su entorno de AEM Forms.
+La capacidad de comunicación interactiva (CI) está disponible a través del programa de acceso anticipado (EA). Para solicitar acceso, envíe un correo electrónico a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde su ID de correo electrónico oficial con su ID de entorno y el ID de organización. Una vez que Adobe confirme su inscripción, siga la [Documentación del &#x200B;](/help/forms/setup-forms-cloud-service.md) para habilitar la comunicación interactiva en su entorno de AEM Forms.
 
 ## Próximos pasos
 
