@@ -68,7 +68,7 @@ Cuando termine el tutorial en la última sección Ejemplo, [su página web de de
 
 Pasos del vídeo interactivo:
 
-1. **(Opcional) Identifique las variables de Quickview** - Comience identificando las variables dinámicas utilizadas por la implementación de Quickview existente. Las variables se utilizan para asignar miniaturas de producto a la vista rápida de producto correspondiente al crear el vídeo interactivo. Consulte [(Opcional) Identificación de variables de vista rápida ](#optional-identifying-quickview-variables).
+1. **(Opcional) Identifique las variables de Quickview** - Comience identificando las variables dinámicas utilizadas por la implementación de Quickview existente. Las variables se utilizan para asignar miniaturas de producto a la vista rápida de producto correspondiente al crear el vídeo interactivo. Consulte [(Opcional) Identificación de variables de vista rápida &#x200B;](#optional-identifying-quickview-variables).
    **Este paso solo es necesario si se cumplen todas las condiciones siguientes:**
    * Desea añadir interactividad al vídeo activando en Vistas rápidas.
    * Su implementación de Experience Manager *no* utiliza un marco de trabajo de integración de comercio electrónico. No extrae datos de productos en Experience Manager desde soluciones como IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop.
@@ -148,10 +148,10 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
     <td><p>SKU único. Se encuentra en la cadena de consulta.</p> </td>
     <td><p>Las direcciones URL de vista rápida registradas incluyen lo siguiente:</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>La única parte de la variable en la dirección URL es el valor del parámetro de cadena de consulta <code>productId=</code> y es claramente un valor SKU. Por lo tanto, las miniaturas solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -167,9 +167,9 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
     <td><p>SKU e ID de categoría en la cadena de consulta.</p> </td>
     <td><p>Las direcciones URL de vista rápida registradas incluyen lo siguiente:</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>En este caso, la dirección URL consta de dos partes diferentes. El SKU se almacena en el parámetro <code>prodId</code> y el ID de categoría en el parámetro <code>category=</code>.</p> <p>Como tal, las definiciones de miniaturas son pares. Es decir, un valor SKU y una variable adicional llamada <code>categoryId</code>. Los pares resultantes son los siguientes:</p>
     <ul>
       <li>El SKU es <code>305466</code> y <code>categoryId</code> es <code>1100004</code></li>
@@ -234,7 +234,7 @@ Si lo desea, puede crear su propio ajuste preestablecido de visualizador de víd
 
 Un ajuste preestablecido de visualizador de vídeo interactivo procesa correctamente el vídeo y todos los segmentos de cronología que ha agregado. También utiliza una vista rápida predeterminada de ejemplo al seleccionar una miniatura de producto en el modo de vista previa, para poder probar su interactividad antes de publicar.
 
-Después de guardar el ajuste preestablecido de visualizador, su estado se establece automáticamente en **On **en la página Ajustes preestablecidos del visualizador. Este estado significa que está visible en el componente Dynamic Media y siempre que se obtiene una vista previa de un vídeo con él. Asegúrese de publicar también manualmente el nuevo ajuste preestablecido de visualizador.
+Después de guardar el ajuste preestablecido de visualizador, su estado se establece automáticamente en **On &#x200B;** en la página Ajustes preestablecidos del visualizador. Este estado significa que está visible en el componente Dynamic Media y siempre que se obtiene una vista previa de un vídeo con él. Asegúrese de publicar también manualmente el nuevo ajuste preestablecido de visualizador.
 
 Consulte [Crear un ajuste preestablecido de visor](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) para crear su propio ajuste preestablecido de visor de vídeo interactivo.
 
@@ -658,27 +658,27 @@ El proceso de construir la URL de vista rápida es opuesto al proceso de identif
   <tbody>
   <tr>
     <td><p>SKU único, encontrado en la cadena de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td>SKU único, encontrado en la ruta URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td><p>SKU e ID de categoría en la cadena de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   </tbody>
 </table>
