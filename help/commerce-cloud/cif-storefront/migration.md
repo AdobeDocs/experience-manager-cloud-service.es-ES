@@ -48,7 +48,7 @@ Ya no se admite la importación de datos del catálogo de productos. El uso de l
 
 >[!TIP]
 >
->Si no hay API en tiempo real disponibles, se debe utilizar una caché de producto externo con API para la integración. Ejemplo [Magento de código abierto.](https://business.adobe.com/products/magento/open-source.html)
+>Si no hay API en tiempo real disponibles, se debe utilizar una caché de producto externo con API para la integración. Ejemplo [Magento de código abierto.](https://business.adobe.com/es/products/magento/open-source.html)
 
 ## Experiencias del catálogo de productos con procesamiento en AEM {#aem-rendering}
 

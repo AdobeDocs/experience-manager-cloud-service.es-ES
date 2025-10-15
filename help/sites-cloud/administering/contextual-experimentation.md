@@ -33,7 +33,7 @@ Para los sitios que se ejecutan en Adobe Experience Manager, existe el **complem
 
 El complemento de experimentación se usa en el contexto de [Edge Delivery Services](/help/edge/overview.md), por lo que necesitarás una cuenta de Github, un repositorio de contenido como SharePoint o Google Drive, y también necesitarás [AEM Sidekick](https://www.aem.live/docs/sidekick). Consulte también la [Página de introducción - Tutorial para desarrolladores de Universal Editor](https://www.aem.live/developer/tutorial) y [Introducción - Tutorial para desarrolladores](https://www.aem.live/developer/tutorial).
 
-Después de configurar todo, **vea este vídeo** titulado [Experimentación instantánea](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) para ver una breve demostración del funcionamiento del complemento de experimentación.
+Después de configurar todo, **vea este vídeo** titulado [Experimentación instantánea](https://business.adobe.com/es/products/experience-manager/sites/testing-optimization.html) para ver una breve demostración del funcionamiento del complemento de experimentación.
 
 ## Términos más utilizados {#frequently-used-terms}
 

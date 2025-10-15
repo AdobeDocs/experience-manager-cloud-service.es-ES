@@ -19,7 +19,7 @@ Las etiquetas inteligentes son palabras clave que no solo aparecen en el texto, 
 
 Por ejemplo, las palabras ordenadas alfabéticamente en un diccionario son más fáciles de encontrar que las dispersas aleatoriamente. El etiquetado tiene un propósito similar. Organiza los recursos según la taxonomía empresarial, asegurándose de que los más relevantes aparezcan en los resultados de búsqueda. Por ejemplo, un fabricante de automóviles puede etiquetar imágenes de automóviles con nombres de modelos, de modo que solo se muestren imágenes relevantes al diseñar una campaña promocional. Tanto si se etiquetan como &quot;corredores&quot; o &quot;zapatillas de deporte&quot;, los usuarios no tienen que preocuparse por errores tipográficos, variaciones ortográficas o términos de búsqueda alternativos: las etiquetas inteligentes las reconocen todas.
 
-En segundo plano, la funcionalidad utiliza el marco artificial inteligente de [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) y aplica automáticamente las etiquetas inteligentes a los recursos cargados (de forma predeterminada), junto con el texto alineado con la taxonomía empresarial.
+En segundo plano, la funcionalidad utiliza el marco artificial inteligente de [Adobe Sensei](https://business.adobe.com/es/products/sensei/adobe-sensei.html) y aplica automáticamente las etiquetas inteligentes a los recursos cargados (de forma predeterminada), junto con el texto alineado con la taxonomía empresarial.
 
 ## Requisitos previos y configuración {#smart-tags-prereqs-config}
 

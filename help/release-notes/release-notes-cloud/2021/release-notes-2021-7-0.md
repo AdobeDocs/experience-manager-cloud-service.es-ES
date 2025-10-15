@@ -110,7 +110,7 @@ La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!
    * Indicador visual para datos de productos clasificados en el modo de creación para una mejor visibilidad de los próximos cambios
    * Nuevo componente de mapa del sitio para páginas de contenido y comercio
 
-* Compatibilidad con [Adobe Commerce Sensei Product Recommendations, con tecnología Adobe Sensei AEM](https://business.adobe.com/products/magento/product-recommendations.html) en la tienda mediante recomendaciones predefinidas o creadas sobre la marcha
+* Compatibilidad con [Adobe Commerce Sensei Product Recommendations, con tecnología Adobe Sensei AEM](https://business.adobe.com/es/products/magento/product-recommendations.html) en la tienda mediante recomendaciones predefinidas o creadas sobre la marcha
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 

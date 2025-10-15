@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Formación sobre etiquetas inteligentes
 
-La formación sobre etiquetas inteligentes permite entrenar las etiquetas para que pueda especificar los detalles si las etiquetas relevantes no están presentes. Utiliza un marco artificial inteligente de [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. [!DNL Experience Manager Assets] aplica automáticamente las etiquetas inteligentes a los recursos cargados, de manera predeterminada.
+La formación sobre etiquetas inteligentes permite entrenar las etiquetas para que pueda especificar los detalles si las etiquetas relevantes no están presentes. Utiliza un marco artificial inteligente de [Adobe Sensei](https://business.adobe.com/es/why-adobe/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. [!DNL Experience Manager Assets] aplica automáticamente las etiquetas inteligentes a los recursos cargados, de manera predeterminada.
 
 ## Determinación de los requisitos de la formación sobre etiquetas inteligentes {#smart-tag-training-requirement}
 

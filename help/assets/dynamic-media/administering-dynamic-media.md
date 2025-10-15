@@ -16,7 +16,7 @@ ht-degree: 8%
 
 {{work-with-dynamic-media}}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) le ayuda a administrar sus recursos al proporcionarle recursos de marketing y comercialización visual enriquecidos bajo demanda, escalados automáticamente para su consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen principales, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
+[Dynamic Media](https://business.adobe.com/es/products/experience-manager/assets/dynamic-media.html) le ayuda a administrar sus recursos al proporcionarle recursos de marketing y comercialización visual enriquecidos bajo demanda, escalados automáticamente para su consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen principales, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
