@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f5510d83ed2ff52496fd7e83ba29010684731938
+source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
 workflow-type: tm+mt
-source-wordcount: '1957'
-ht-degree: 47%
+source-wordcount: '1981'
+ht-degree: 44%
 
 ---
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -60,9 +60,9 @@ Ahora puede aplicar formato a subcadenas dentro de capas de texto de plantillas 
 
 ### Nuevas funciones en Dynamic Media con funciones de OpenAPI {#new-features-dynamic-media-with-openapi}
 
-**DM compatible con SEO con URL de OpenAPI**
+**URL de entrega de recursos legibles y de marca**
 
-Cree URL mnemónicas para la entrega de recursos en DM con OpenAPI y sustituya los UUID largos generados por el sistema con identificadores cortos y legibles. Esto hace que los vínculos sean compatibles con SEO y estén mejor alineados con su marca o campañas. Las URL mnemónicas se resuelven automáticamente en el UUID del recurso original durante la ejecución sin interrumpir los flujos de trabajo existentes.
+Mejore la legibilidad humana de Dynamic Media con las URL de OpenAPI aprovechando las URL mnemónicas de Dynamic Media con OpenAPI. Las URL mnemónicas permiten reemplazar los UUID largos, generados por el sistema y difíciles de memorizar en las URL de entrega de recursos con identificadores cortos controlados por la marca. Esto hace que las URL mnemónicas sean más cortas, fáciles de leer y compartir y permiten una mejor alineación con su marca o campañas. Las URL mnemónicas se resuelven automáticamente en el UUID del recurso original durante la ejecución sin interrumpir los flujos de trabajo existentes.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +157,7 @@ Días de lanzamiento, eventos en directo, ventas máximas: estos momentos no pue
 >[!NOTE]
 >
 >Disponible como función de disponibilidad limitada el 25 de septiembre.
->&#x200B;>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
+>>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
 
 ### Nueva versión de las herramientas para desarrolladores de AEM para Eclipse {#aem-develeper-tools-for-eclipse}
 
@@ -259,7 +259,7 @@ Enviar un correo electrónico a [aemcs-canary-deployments-beta@adobe.com](mailto
 
 ### Instantáneas para los RDE (programa Alpha) {#rde-snapshot-program}
 
-En Alpha, los entornos de desarrollo rápido (RDE) ahora admiten una función para tomar una instantánea del estado actual del código y el contenido, que se puede restaurar más adelante. Esto puede resultar útil al sincronizar código que puede ser necesario revertir o al cambiar entre el desarrollo de distintas características. También es posible restaurar solo el contenido mutable como punto de partida conocido para realizar pruebas.
+En Alpha, los Entornos de desarrollo rápido (RDE) ahora admiten una función para tomar una instantánea del estado actual del código y el contenido, que se puede restaurar más adelante. Esto puede resultar útil al sincronizar código que puede ser necesario revertir o al cambiar entre el desarrollo de distintas características. También es posible restaurar solo el contenido mutable como punto de partida conocido para realizar pruebas.
 
 Envíe un correo electrónico a [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) si tiene interés en ofrecer sus comentarios sobre esta función.
 
@@ -273,7 +273,7 @@ Obtenga más información en la [documentación de reenvío de registros](/help/
 
 ### Supervisión del rendimiento de las aplicaciones ampliadas (APM) (programa de Alpha) {#apm-alpha}
 
-Para que se pueda observar, AEM Cloud Service admite [New Relic One](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) proporcionado por Adobe y [Dynatrace](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) administrado por el cliente. A medida que exploramos la compatibilidad con opciones de APM adicionales, escríbanos a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con su proveedor o tecnología preferidos, junto con los casos de uso.
+Para que se pueda observar, AEM Cloud Service admite [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) proporcionado por Adobe y [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) administrado por el cliente. A medida que exploramos la compatibilidad con opciones de APM adicionales, escríbanos a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con su proveedor o tecnología preferidos, junto con los casos de uso.
 
 
 ## Guías de [!DNL Experience Manager] {#guides}

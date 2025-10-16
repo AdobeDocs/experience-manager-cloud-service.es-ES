@@ -3,10 +3,10 @@ title: Notas de la versión 2025.8.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2025.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 4187f9bb08d8af214054b937a5426e95c1de748d
+source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 89%
+source-wordcount: '1934'
+ht-degree: 86%
 
 ---
 
@@ -38,7 +38,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -69,9 +69,9 @@ Content Hub ahora acelera la detección de los recursos que necesita. Con la nue
 
 ### Nuevas funciones en Dynamic Media con funciones de OpenAPI {#new-features-dynamic-media-with-openapi}
 
-**DM compatible con SEO con URL de OpenAPI**
+**URL de entrega de recursos legibles y de marca**
 
-Cree URL mnemónicas para la entrega de recursos en DM con OpenAPI y sustituya los UUID largos generados por el sistema con identificadores cortos y legibles. Esto hace que los vínculos sean compatibles con SEO y estén mejor alineados con su marca o campañas. Las URL mnemónicas se resuelven automáticamente en el UUID del recurso original durante la ejecución sin interrumpir los flujos de trabajo existentes.
+Mejore la legibilidad humana de Dynamic Media con las URL de OpenAPI aprovechando las URL mnemónicas de Dynamic Media con OpenAPI. Las URL mnemónicas permiten reemplazar los UUID largos, generados por el sistema y difíciles de memorizar en las URL de entrega de recursos con identificadores cortos controlados por la marca. Esto hace que las URL mnemónicas sean más cortas, fáciles de leer y compartir y permiten una mejor alineación con su marca o campañas. Las URL mnemónicas se resuelven automáticamente en el UUID del recurso original durante la ejecución sin interrumpir los flujos de trabajo existentes.
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ Ahora en versión Beta, puede implementar una canalización de configuración pa
 
 ### Instantáneas para los RDE (programa Alpha) {#rde-snapshot-program}
 
-En Alpha, los entornos de desarrollo rápido (RDE) ahora admiten una función para tomar una instantánea del estado actual del código y el contenido, que se puede restaurar más adelante. Esto puede resultar útil al sincronizar código que puede ser necesario revertir o al cambiar entre el desarrollo de distintas características. También es posible restaurar solo el contenido mutable como punto de partida conocido para realizar pruebas.
+En Alpha, los Entornos de desarrollo rápido (RDE) ahora admiten una función para tomar una instantánea del estado actual del código y el contenido, que se puede restaurar más adelante. Esto puede resultar útil al sincronizar código que puede ser necesario revertir o al cambiar entre el desarrollo de distintas características. También es posible restaurar solo el contenido mutable como punto de partida conocido para realizar pruebas.
 
 Envíe un correo electrónico a [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) si tiene interés en ofrecer sus comentarios sobre esta función.
 
