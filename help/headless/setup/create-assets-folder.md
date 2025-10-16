@@ -4,10 +4,10 @@ description: Utilice modelos de fragmentos de contenido de AEM para definir la e
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 81%
+source-wordcount: '268'
+ht-degree: 77%
 
 ---
 
@@ -23,27 +23,11 @@ Sin embargo, primero debe crear una carpeta de recursos en la que almacenarlos.
 
 Las carpetas de recursos se utilizan para [organizar los recursos de contenido tradicionales](/help/assets/manage-digital-assets.md) como imágenes y vídeos, junto con los fragmentos de contenido.
 
-## Cómo crear una carpeta de recursos {#how-to-create-an-assets-folder}
+## Creación y configuración de una carpeta de Assets {#create-and-configure-an-assets-folder}
 
-Un administrador solo tendría que crear carpetas ocasionalmente para organizar el contenido a medida que se crea. Para los fines de esta guía de introducción, solo necesitamos crear una carpeta.
+Un administrador solo tendría que crear carpetas ocasionalmente para organizar el contenido a medida que se crea. Utilice la consola de Assets para crear la nueva carpeta.
 
-1. Inicie sesión en AEM as a Cloud Service y, en el menú principal, seleccione **Navegación > Assets > Archivos**.
-1. Seleccione **Crear > Carpeta**.
-1. Proporcione un **Título** y **Nombre** para su carpeta.
-   * El **Título** debe ser descriptivo.
-   * El **nombre** se convierte en el nombre de nodo del repositorio.
-      * Se genera automáticamente en función del título y se ajusta según las [convenciones de nomenclatura de AEM](/help/implementing/developing/introduction/naming-conventions.md).
-      * Se puede modificar si es necesario.
-
-   ![Crear carpeta](../assets/assets-folder-create.png)
-1. Seleccione la carpeta que ha creado pasando el puntero sobre ella y pulsando la marca de verificación. A continuación, seleccione **Propiedades** en la barra de herramientas (o utilice el `p` [método abreviado de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)).
-1. En la ventana **Propiedades**, seleccione la pestaña **Servicios de nube**.
-1. Para la **configuración de nube**, seleccione la [configuración que creó anteriormente](create-configuration.md).
-   ![Configurar la carpeta de recursos](../assets/assets-folder-configure.png)
-1. Seleccione **Guardar y cerrar**.
-1. Seleccione **Aceptar** en la ventana de confirmación.
-
-   ![Ventana de confirmación](../assets/assets-folder-confirmation.png)
+Una vez creada, debes aplicar tu [configuración](/help/headless/setup/create-configuration.md) a la carpeta. Para obtener más información, consulte [Aplicar la configuración a su carpeta](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder).
 
 Puede crear subcarpetas adicionales dentro de la carpeta que ha creado. Las subcarpetas heredarán la **Configuración de nube** de la carpeta principal. Sin embargo, esto se puede sobrescribir si desea utilizar modelos de otra configuración.
 

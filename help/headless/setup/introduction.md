@@ -4,22 +4,22 @@ description: Con esta guía de inicio rápido, conozca los aspectos básicos de 
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: b25d47cca15ac1fe3f06c1ae99f15495ed5f4752
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 94%
+source-wordcount: '284'
+ht-degree: 77%
 
 ---
 
 # Configuración sin encabezado {#introduction}
 
-A continuación se muestra una ruta sencilla para crear, administrar y ofrecer experiencias mediante AEM as a Cloud Service en cinco pasos para usuarios que ya están familiarizados con la tecnología sin encabezado y AEM. Cada guía se basa en la anterior, por lo que se recomienda explorarlas a fondo y en orden.
+A continuación se muestra una ruta sencilla para crear, administrar y ofrecer experiencias mediante AEM as a Cloud Service en cinco pasos para usuarios que ya están familiarizados con AEM y la tecnología sin encabezado (por lo que hacen referencia a la documentación detallada). Cada guía se basa en la anterior, por lo que se recomienda explorarlas a fondo y en orden.
 
-1. [Creación de una configuración](create-configuration.md)
-1. [Creación de un modelo de fragmento de contenido](create-content-model.md)
-1. [Creación de una carpeta de recursos](create-assets-folder.md)
-1. [Creación de un fragmento de contenido](create-content-fragment.md)
-1. [Creación de una solicitud de API](create-api-request.md)
+1. [Crear una configuración](/help/headless/setup/create-configuration.md)
+1. [Creación de un modelo de fragmento de contenido](/help/headless/setup/create-content-model.md)
+1. [Crear una carpeta de Assets](/help/headless/setup/create-assets-folder.md)
+1. [Creación de un fragmento de contenido](/help/headless/setup/create-content-fragment.md)
+1. [Creación de una solicitud de API](/help/headless/setup/create-api-request.md)
 
 >[!TIP]
 >
@@ -32,7 +32,7 @@ A continuación se muestra una ruta sencilla para crear, administrar y ofrecer e
 >* [Recorrido para autores de contenido sin encabezado](/help/journey-headless/author/overview.md)
 >* [Recorrido de traducción sin encabezado](/help/journey-headless/translation/overview.md).
 
-## Audiencia {#audience}
+## Público {#audience}
 
 Las tareas descritas son necesarias para una demostración completa básica de las capacidades sin encabezado de AEM. Cualquier persona con acceso de administrador a una instancia de AEM de prueba puede seguir estas guías para comprender la entrega sin encabezado en AEM, aunque es ideal alguien con experiencia de desarrollador.
 
