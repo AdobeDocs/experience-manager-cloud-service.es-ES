@@ -3,9 +3,9 @@ title: Notas de la versión de Universal Editor Preview
 description: Estas son las notas de la versión de la vista previa del editor universal.
 feature: Release Information
 role: Admin
-source-git-commit: fcccac27d9648cf8bc313583e4d8acc2ed6b1879
+source-git-commit: 7d30aa28b2409cdcb70c5491ee2d2d381d090dad
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Notas de la versión de Universal Editor Preview {#preview}
 
-Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 16 de octubre de 2025.
+Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 23 de octubre de 2025.
 
 Estas notas de la versión de **preview** se proporcionan para que sepa qué cambios se avecinan en el editor universal y pueda probarlos al [cambiar al entorno de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,9 +27,12 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 
 ## Próximas nuevas funciones {#what-is-new}
 
-* Se ha introducido la compatibilidad con varios campos para las actualizaciones.
+* Ahora se admite copiar y pegar en las pestañas del explorador.
+* Ahora puede deshabilitar el botón Cancelar la publicación con una metaetiqueta.
 
 ## Próximas mejoras {#other-improvements}
 
-* El host de `AemContentFragmentReference` se ha saneado.
-* Se ha agregado lógica para las configuraciones de Dispatcher SSL frente a no SSL.
+* Se ha mejorado el árbol de estructura.
+* Ahora se admiten las imágenes vinculadas.
+* Se mejoraron las operaciones de deshacer y rehacer.
+
