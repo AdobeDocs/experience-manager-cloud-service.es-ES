@@ -5,10 +5,10 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ Este artículo se basa en estos fundamentos para que entienda cómo preparar su 
 
 ## Objetivo {#objective}
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: aprenda a modelar la estructura de contenido y, a continuación, a llevar a cabo esa estructura utilizando modelos de fragmentos de contenido y fragmentos de contenido de AEM.
    * Introduzca conceptos y terminología relacionados con el modelado de datos/contenido.
    * Descubra por qué se necesita el modelado de contenido para la entrega de contenido sin encabezado.
@@ -182,10 +182,10 @@ AEM proporciona los siguientes tipos de datos para modelar el contenido:
 * Número
 * Booleano
 * Fecha y hora
-* Lista desglosada
+* Enumeración
 * Etiquetas
-* UUID de referencia de fragmento/referencia de fragmento
-* UUID de referencia de contenido/referencia de contenido
+* Referencia de fragmento/UUID de referencia de fragmento
+* Referencia de contenido/UUID de referencia de contenido
 * Objeto JSON
 * Marcador de posición de pestaña
 
@@ -214,11 +214,11 @@ Al principio, debe habilitar Modelos de fragmento de contenido para el sitio. Es
 >
 >Consulte Recursos adicionales: Fragmentos de contenido en el explorador de configuración
 
-A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Todo esto se puede hacer en la Consola de fragmento de contenido. En la consola, seleccione el panel para modelos de fragmentos de contenido, navegue hasta la carpeta adecuada y, a continuación, utilice **Crear** para abrir el cuadro de diálogo **Nuevo modelo de fragmento de contenido**.
+A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Todo esto se puede hacer en la Consola de fragmentos de contenido. En la consola, seleccione el panel para modelos de fragmentos de contenido, navegue hasta la carpeta adecuada y, a continuación, utilice **Crear** para abrir el cuadro de diálogo **Nuevo modelo de fragmento de contenido**.
 
 Una vez creado, puede editar el modelo. Por ejemplo:
 
-![Modelo de fragmento de contenido](assets/cfm-model.png)
+![Modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 >[!NOTE]
 >
@@ -230,7 +230,7 @@ Los fragmentos de contenido se basan siempre en un modelo de fragmento de conten
 
 ### Selección del modelo apropiado {#select-model}
 
-El primer paso para crear el contenido es crear un fragmento de contenido. Esto se hace con **Crear** desde la ficha **Fragmentos de contenido** de la consola Fragmentos de contenido.
+El primer paso para crear el contenido es crear un fragmento de contenido. Esto se hace con **Crear** desde la pestaña **Fragmentos de contenido** de la consola Fragmentos de contenido.
 
 ### Creación y edición de contenido estructurado {#create-edit-structured-content}
 
@@ -255,12 +255,6 @@ Después de seleccionar el modelo adecuado, se abre un fragmento de contenido pa
 >Consulte Recursos adicionales: trabajar con fragmentos de contenido.
 
 ## Introducción a algunos ejemplos {#getting-started-examples}
-
-<!--
-tbc...
-...and/or see the structures covered for the GraphQL samples...
-...will those (ever) be delivered as an official sample package?
--->
 
 Para obtener una estructura básica como ejemplo, consulte La estructura del fragmento de contenido de muestra.
 

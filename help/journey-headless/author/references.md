@@ -5,10 +5,10 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
 workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Este artículo se basa en estos conceptos para que pueda comprender cómo utiliz
 
 ## Objetivo {#objective}
 
-* **Audiencia**: avanzadas
+* **Público**: avanzado
 * **Objetivo**: introducir el uso de referencias para la creación de CMS sin encabezado. Qué tipos de referencias están disponibles y cuáles son sus propósitos:
 
    * Referencias de contenidos
@@ -49,7 +49,7 @@ Existen dos tipos:
 * **Referencia de contenido**
    * especifica la ruta del recurso al que se hace referencia
 * **Referencia de contenido (UUID)**
-   * En el editor, la referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como un ID único universal (UUID) que hace referencia al recurso
+   * En el editor, las referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como ID único universal (UUID) que hace referencia al recurso
 
 ## Referencias de recursos/medios {#assets-media-references}
 
@@ -85,14 +85,10 @@ Como autor, no es responsable de definir estas relaciones (lo hace el arquitecto
 
 Hay dos tipos:
 
-* **Referencia a fragmento**
+* **Referencia al fragmento**
    * especifica la ruta del recurso al que se hace referencia
 * **Referencia de fragmento (UUID)**
-   * En el editor, la referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como un ID único universal (UUID) que hace referencia al recurso
-
-<!--
-![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
--->
+   * En el editor, las referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como ID único universal (UUID) que hace referencia al recurso
 
 ### Creación de fragmentos anidados {#author-nested-fragment}
 

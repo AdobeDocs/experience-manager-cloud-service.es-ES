@@ -5,8 +5,8 @@ exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
+workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Comience aquí para obtener un recorrido guiado a través de las funciones poten
 
 ## Introducción {#introduction}
 
-La implementación sin encabezado es cada vez más importante para ofrecer experiencias a su audiencia, independientemente del canal y de dónde se encuentren.
+La implementación sin encabezado es cada vez más importante para ofrecer experiencias a su público, independientemente del canal y de dónde se encuentren.
 
 El contenido sin encabezado no se basa en la estructura tradicional de páginas y componentes. En su lugar, se basa en la creación de fragmentos de contenido neutros para el canal y reutilizables y su envío a través de canales.
 
@@ -40,7 +40,7 @@ Los recorridos de documentación están diseñados en torno a los principios de 
 
 Si quiere saber lo recomienda Adobe para resolver los casos empresariales sin encabezado con AEM, [Los recorridos de AEM sin encabezado](/help/journey-documentation/documentation-journeys.md) es dónde debe empezar.
 
-## Audiencia {#audience}
+## Público {#audience}
 
 Este recorrido está diseñado para el Autor de contenido. Como autor de contenido, usted crea el contenido real en los fragmentos de contenido.
 
@@ -64,16 +64,7 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 
 ## Siguientes pasos {#what-is-next}
 
-Ya está listo para empezar su recorrido de Adobe sin encabezado. Le animamos a que continúe con la siguiente parte del recorrido y lea el artículo [Creación de contenido sin encabezado de AEM as a Cloud Service: una introducción](introduction.md).
-
-<!--
-### Choose Your Own Adventure {#choose-your-path}
-
-However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So, consider these two options.
-
-* If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
-* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
--->
+Ya está listo para empezar su recorrido de Adobe sin encabezado. Le animamos a que continúe con la siguiente parte del recorrido y lea el artículo [Creación de contenido sin encabezado de AEM as a Cloud Service: una introducción](/help/journey-headless/author/introduction.md).
 
 ## Recursos adicionales {#additional-resources}
 

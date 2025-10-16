@@ -5,10 +5,10 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: d05c510f9845c006dfb1c4d58438c9632c1325d8
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -81,16 +81,15 @@ El arquitecto de contenido trabaja al principio del proyecto para definir esta e
 
 Dado que los modelos de contenido definen la estructura de tu contenido, debes saber qué campos de los modelos se deben traducir. Normalmente, se trabaja con el arquitecto de contenido para definir esto. Para examinar los campos de los modelos de contenido, siga los pasos a continuación.
 
-1. Vaya a **Herramientas** > **General**  >**Modelos de fragmento de contenido**.
+1. Vaya a la consola Fragmentos de contenido y seleccione la pestaña para Modelos de fragmentos de contenido.
 1. Los modelos de fragmento de contenido generalmente se almacenan en una estructura de carpetas. Selecciona la carpeta del proyecto.
-1. Se enumeran los modelos. Seleccione el modelo para ver los detalles.
-   ![Modelos de fragmentos de contenido](assets/content-fragment-models.png)
+1. Se enumeran los modelos. Seleccione el modelo y abra el editor.
 1. Se abrirá el **Editor de modelos de fragmento de contenido**.
-   1. La columna izquierda contiene los campos del modelo. Esta columna nos interesa.
-   1. La columna derecha contiene los campos que se pueden agregar al modelo. Esta columna se puede ignorar.
-      ![Editor del modelo de fragmentos de contenido](assets/content-fragment-model-editor.png)
-1. Seleccione uno de los campos del modelo. AEM los marca y los detalles de ese campo se muestran en la columna derecha.
-   ![Detalle del Editor de modelos de fragmento de contenido](assets/content-fragment-model-editor-detail.png)
+   ![Editor del modelo de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
+   1. El panel izquierdo enumera los tipos de datos posibles.
+   1. El panel derecho muestra las propiedades adecuadas para el campo seleccionado.
+   * El panel central contiene los campos que ha creado y definido (o definirá).
+1. Seleccione uno de los campos del modelo. AEM lo marca y los detalles de ese campo se muestran en el panel derecho.
 1. El arquitecto de contenido habilita el campo **Traducible** en todos los campos del modelo de contenido que deban traducirse.
 
 >[!TIP]

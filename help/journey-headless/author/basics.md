@@ -5,10 +5,10 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 100%
+source-wordcount: '1733'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Este artículo se basa en estos elementos para que pueda comprender cómo crear 
 
 ## Objetivo {#objective}
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: presentar los conceptos básicos de la creación de CMS sin encabezado.
    * Introducción a la creación con AEMaaCS.
    * Introducción a los fragmentos de contenido.
@@ -63,16 +63,10 @@ A continuación, puede utilizar el panel de navegación para acceder a las área
 
 El panel de navegación se puede abrir seleccionando el icono de Adobe en la parte superior izquierda, seguido del icono de la brújula pequeña.
 
-<!--
-The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
-
-![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
--->
-
 >[!NOTE]
 >Aunque los fragmentos de contenido son una funcionalidad de AEM **Sites**, se guardan como **Recursos**. Se trata de un detalle técnico que no debería afectarle, pero que es útil conocer.
 
-En la consola, puede seleccionar carpetas en el panel izquierdo para desplazarse hasta el fragmento de contenido; también puede filtrar o buscar.
+En la consola Fragmentos de contenido puede seleccionar carpetas en el panel izquierdo para desplazarse al fragmento de contenido. también puede filtrar o buscar.
 
 ![Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
@@ -80,20 +74,18 @@ En la consola, puede seleccionar carpetas en el panel izquierdo para desplazarse
 
 En la consola **Fragmentos de contenido** está disponible un rango de acciones para sus fragmentos de contenido desde la barra de herramientas.
 
-<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
-
 * **Abrir en Recursos**
 * **Crear**
 * La columna **Referenciado por** también proporciona un vínculo directo para mostrar todas las referencias principales de ese fragmento; incluida la referencia a fragmentos de contenido, fragmentos de experiencias y páginas.
-* Al pasar el ratón por encima del nombre de la carpeta, se mostrará la ruta JCR.
+* Al pasar el puntero por encima del nombre de la carpeta, se mostrará la ruta JCR.
 
-Después de seleccionar el fragmento, están disponibles todas las acciones apropiadas:
-
-<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
+Después de seleccionar el fragmento, hay más acciones disponibles (según corresponda):
 
 * **Abrir**
 * **Publicación** (y **Cancelar la publicación**)
+* **Administrar etiquetas**
 * **Copiar**
+* **Reemplazar**
 * **Mover**
 * **Cambiar nombre**
 * **Eliminar**
@@ -101,26 +93,6 @@ Después de seleccionar el fragmento, están disponibles todas las acciones apro
 >[!NOTE]
 >
 >Acciones como Publicar, Cancelar la publicación, Eliminar, Mover, Cambiar el nombre, Copiar, activar un trabajo asincrónico. El progreso de ese trabajo se puede monitorizar a través de la interfaz de usuario de trabajos asincrónicos de AEM.
-
-<!--
-The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
-
-The Quick Actions are available for a single resource, see **Basel** in the example below:
-
-![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
-
-The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
-
-![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
-
-You can select the format for viewing your resources with the View Selector:
-
-![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
-
-You can view additional information about items using the Rail Selector. This also gives access to additional actions.
-
-![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
--->
 
 ## Creación de fragmentos de contenido {#authoring-content-fragments}
 
