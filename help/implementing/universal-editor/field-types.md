@@ -4,10 +4,10 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '1569'
-ht-degree: 100%
+source-git-commit: efd96f179482dfe1f00bdce35e2824ac5cdf9813
+workflow-type: tm+mt
+source-wordcount: '1592'
+ht-degree: 98%
 
 ---
 
@@ -95,7 +95,7 @@ Un objeto de campo tiene la siguiente definición de tipo.
 | `label` | `FieldLabel` | Etiqueta del campo | Sí |
 | `description` | `FieldDescription` | Descripción del campo | No |
 | `placeholder` | `string` | Marcador del campo | No |
-| `value` | `FieldValue` | Valor predeterminado | No |
+| `value` | `FieldValue` | Es un valor predeterminado que sirve como marcador de posición. Este valor no determina ninguna actualización de contenido. Solo es una representación en la interfaz de usuario. | No |
 | `valueType` | `ValueType` | La validación estándar puede ser `string`, `string[]`, `number`, `date` o `boolean` | No |
 | `required` | `boolean` | ¿Es el campo obligatorio? | No |
 | `readOnly` | `boolean` | ¿Es el campo de solo lectura? | No |
