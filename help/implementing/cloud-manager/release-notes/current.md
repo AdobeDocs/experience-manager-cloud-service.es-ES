@@ -4,7 +4,7 @@ description: Obtenga información sobre la versión 2025.10.0 de Cloud Manager e
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 302248ade67683712bf1895fd8dfdd8853aae1ac
+source-git-commit: 85784a9611bc6f83a1d70b66ff7087117aa7ec0b
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 56%
@@ -110,7 +110,8 @@ Incruste experiencias personalizadas en Experience Hub para ampliar y personaliz
 
 Un nuevo modelo de compilación compila solo los módulos modificados (en lugar de todo el repositorio) mediante el almacenamiento en caché de nivel de módulo para acortar los tiempos de compilación. Se aplica a las canalizaciones de calidad de código, de pila completa y de solo ensayo.
 
-![Editar canalización que no sea de producción cuadro de diálogo que muestra las dos opciones de Estrategia de compilación que son Compilación completa y Compilación inteligente](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png) *Editar canalización que no sea de producción cuadro de diálogo que muestra las dos opciones de Estrategia de compilación que son Compilación completa y Compilación inteligente.*
+![Editar canalización que no sea de producción en el cuadro de diálogo que muestra las dos opciones de Estrategia de compilación que son Versión completa y Versión inteligente](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
+*Editar canalización que no sea de producción en el cuadro de diálogo que muestra las dos opciones de estrategia de compilación, compilación completa y compilación inteligente.*
 
 En el cuadro de diálogo **Agregar o editar canalización**, en la ficha **Código Source**, una nueva sección de **Estrategia de compilación** le permite elegir una de las siguientes opciones de compilación:
 
@@ -129,13 +130,13 @@ Usted controla qué canalizaciones utilizan **Smart Build**. Durante la versión
 
 Vuelva rápidamente a una implementación anterior si el código fuente del cliente más reciente no funciona como se esperaba; no es necesario volver a ejecutar la canalización completa ni revertir las confirmaciones manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**&#x200B;para un entorno seleccionado.*
+![Restaurar código fuente del cliente desde la tarjeta Entornos](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *La tarjeta Entornos muestra la opción **Restaurar**>**Código anterior implementado**para un entorno seleccionado.*
 
 ![Cuadro de diálogo Restaurar código anterior implementado](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *En el cuadro de diálogo **Restaurar código anterior implementado**, revise la versión implementada actualmente y la versión que desea restaurar, luego haga clic en **Confirmar***.
 
 ![Activación de Restaurando](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**&#x200B;hasta que finalice la implementación.*
+*Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando**hasta que finalice la implementación.*
 
 ![Versión del código fuente en uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vista de detalles del entorno, vista desde arriba, ahora también muestra la versión activa del código fuente en uso.*
 
