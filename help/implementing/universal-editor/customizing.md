@@ -4,10 +4,10 @@ description: Obtenga información acerca de las distintas opciones para personal
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 92%
+source-wordcount: '522'
+ht-degree: 78%
 
 ---
 
@@ -38,6 +38,26 @@ Por lo tanto, la opción **Previsualizar** de la ventana de publicación se pued
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## Desactivación de la publicación en directo {#publish-live}
+
+Algunos flujos de trabajo de creación pueden impedir la publicación en el servicio activo.
+
+Por lo tanto, la opción **Live** de la ventana de publicación se puede suprimir por completo en una aplicación si agrega los siguientes metadatos.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
+```
+
+## Desactivación de cancelación de publicación {#unpublish}
+
+Algunos flujos de trabajo de creación requieren un proceso de aprobación antes de cancelar la publicación del contenido. En estos casos, la opción de cancelar la publicación no debe estar disponible para ningún autor.
+
+Por lo tanto, el botón **Cancelar la publicación** se puede suprimir por completo en una aplicación si agrega los siguientes metadatos.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
 ```
 
 ## Desactivación de Abrir página {#open-page}
