@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 1fade922ac38340aaaee71794f96db738d492ed6
+source-git-commit: 117703794c84bebd659294a593ffd98f52ff89a2
 workflow-type: tm+mt
 source-wordcount: '2778'
 ht-degree: 7%
@@ -68,7 +68,7 @@ Cuando abra el Editor de fragmentos de contenido por primera vez, verá cuatro �
 
   >[!NOTE]
   >
-  >Según las definiciones del modelo subyacente, los campos pueden estar sujetos a ciertos tipos de [Validación](/help/assets/content-fragments/content-fragments-models.md#validation).
+  >Según las definiciones del modelo subyacente, los campos pueden estar sujetos a ciertos tipos de [Validación](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation).
 
 ![Editor de fragmentos de contenido: información general](assets/cf-authoring-overview.png)
 
@@ -267,7 +267,7 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 
