@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
 workflow-type: tm+mt
 source-wordcount: '1981'
-ht-degree: 44%
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.9.0) fue el viernes, 25 de septiembre de 2025. La próxima versión con funcionalidades (2025.10.0) se planificó para el viernes, 30 de octubre de 2025.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.9.0) fue el jueves, 25 de septiembre de 2025. La próxima versión con funcionalidades (2025.10.0) se planificó para el jueves, 30 de octubre de 2025.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -40,23 +40,23 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nuevas funciones del prelanzamiento de Experience Manager Sites {#prerelease-sites}
+### Nuevas funciones de la versión preliminar de Experience Manager Sites {#prerelease-sites}
 
-El Editor del modelo de contenido para fragmentos de contenido de AEM se ha modernizado para alinearse con otras interfaces basadas en React Spectrum en AEM. Su implementación de interfaz de usuario y modelo de extensibilidad ahora son coherentes con el Editor de fragmentos de contenido y el Editor universal. El nuevo Editor de modelos ahora es predeterminado cuando se abre desde la nueva IU de administración del modelo de contenido. Al abrir un modelo de contenido en la IU táctil, se abre el editor de la IU táctil y se ofrecen ofertas para probar el nuevo editor.
+El editor de modelos de contenido para fragmentos de contenido de AEM se ha modernizado para alinearse con otras interfaces basadas en React Spectrum en AEM. Su implementación de interfaz de usuario y modelo de extensibilidad ahora son coherentes con el editor de fragmentos de contenido y el editor universal. El nuevo editor de modelos ahora es predeterminado cuando se abre desde la nueva IU de administración del modelo de contenido. Al abrir un modelo de contenido en la IU táctil, se abre el editor de la IU táctil y se realizan ofertas para probar el nuevo editor.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuevas funciones en la vista de Assets {#new-features-assets-view}
+### Nuevas funciones de la vista Recursos {#new-features-assets-view}
 
 **Formato de texto mejorado con subcadenas en plantillas de Dynamic Media**
 
-Ahora puede aplicar formato a subcadenas dentro de capas de texto de plantillas de Dynamic Media. Una palabra o frase seleccionada se trata como una capa independiente, lo que le permite ajustar su fuente, tamaño de fuente, color, etc. La capa de subcadena está parametrizada para que pueda actualizarla en tiempo real mediante la dirección URL de entrega de la plantilla
+Ahora puede aplicar formato a subcadenas dentro de las capas de texto de plantillas de Dynamic Media. Una palabra o frase seleccionada se trata como una capa independiente, lo que le permite ajustar su fuente, tamaño de fuente, color, etc. La capa de la subcadena está parametrizada para que pueda actualizarla en tiempo real mediante la dirección URL de envío de la plantilla
 
 ### Nuevas funciones en Dynamic Media con funciones de OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -90,23 +90,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Nuevas funciones de Experience Manager Forms {#new-features-forms}
 
-**Invocar paso de flujo de trabajo del modelo de datos de formulario para archivos adjuntos de lista de SharePoint**
+**Paso de flujo de trabajo Invocar modelo de datos de formulario para archivos adjuntos de lista de SharePoint**
 
-El paso de flujo de trabajo Invocar modelo de datos de formulario ahora admite la administración de metadatos del lado del flujo de trabajo para matrices de datos adjuntos codificadas en Base64 en modelos de datos de formulario basados en listas de SharePoint. Con esta mejora, el paso del flujo de trabajo puede pasar, almacenar y recuperar metadatos como el nombre de archivo, el tipo MIME y las propiedades personalizadas para cada archivo adjunto. Esta capacidad permite una administración de datos más completa y facilita una integración descendente sin problemas. Para obtener más información, consulte [Compatibilidad mejorada en el paso del flujo de trabajo Invocar modelo de datos de formulario para los archivos adjuntos de la lista de SharePoint](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
+El paso del flujo de trabajo Invocar modelo de datos de formulario ahora admite la gestión de metadatos del lado del flujo de trabajo para matrices de archivos adjuntos codificados en Base64 en modelos de datos de formulario basados en la lista de SharePoint. Con esta mejora, el paso del flujo de trabajo puede pasar, almacenar y recuperar metadatos como el nombre de archivo, el tipo MIME y las propiedades personalizadas para cada archivo adjunto. Esta funcionalidad permite una administración de datos más completa y facilita una integración descendente sin problemas. Para obtener más información, consulte [Mayor compatibilidad en el paso del flujo de trabajo Invocar modelo de datos de formulario para los archivos adjuntos de lista de SharePoint](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
 
 ### Funciones de la versión preliminar de AEM Forms
 
 **Mejoras en el editor de reglas**
 
-El Editor de reglas ahora admite la navegación mejorada y permite el uso de expresiones matemáticas y de funciones en parámetros de entrada.
+El editor de reglas ahora admite una mejor navegación y permite el uso de expresiones matemáticas y de funciones en los parámetros de entrada.
 
-**Navegación mejorada con compatibilidad con carga útil de evento**
+**Mejor navegación con soporte para cargas útiles de eventos**
 
-La acción `Navigate To` en los controladores de invocación de servicio ahora admite `EVENT_PAYLOAD`, lo que permite a los autores de formularios configurar acciones de seguimiento basadas en respuestas de eventos. Esta mejora ofrece una mayor flexibilidad para diseñar flujos de trabajo posteriores al envío, lo que garantiza transiciones más suaves y experiencias de usuario más personalizadas. Para obtener más información, consulte [Navegación mejorada con compatibilidad con carga útil de evento](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+La acción `Navigate To` en los controladores de Invocar servicio ahora admite `EVENT_PAYLOAD`, lo que permite a los autores de formularios configurar acciones de seguimiento basadas en respuestas a eventos. Esta mejora ofrece una mayor flexibilidad para diseñar flujos de trabajo posteriores al envío, lo que garantiza transiciones más suaves y experiencias de usuario más personalizadas. Para obtener más información, consulte [Mejor navegación con soporte para cargas útiles de eventos](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
 
-**Compatibilidad con funciones y expresiones matemáticas en parámetros de entrada**
+**Compatibilidad con funciones y expresiones matemáticas en los parámetros de entrada**
 
-Los parámetros de entrada ahora admiten llamadas a funciones y expresiones matemáticas, lo que permite a los autores de formularios pasar valores calculados dinámicamente directamente. Esta mejora optimiza las configuraciones de reglas, elimina la necesidad de campos adicionales y hace que los formularios sean más adaptables a lógicas complejas y escenarios impulsados por el cálculo. Para obtener más información, vea [Compatibilidad con funciones y expresiones matemáticas en Parámetros de entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+Los parámetros de entrada ahora admiten llamadas a funciones y expresiones matemáticas, lo que permite a los autores de formularios pasar de forma directa valores calculados dinámicamente. Esta mejora optimiza las configuraciones de reglas, elimina la necesidad de campos adicionales y hace que los formularios sean más adaptables a lógicas complejas y escenarios basados en el cálculo. Para obtener más información, consulte [Compatibilidad con funciones y expresiones matemáticas en los parámetros de entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 ### Nuevas funciones de acceso anticipado de AEM Forms {#forms-new-early-access-features}
 
@@ -118,13 +118,13 @@ En estas notas de la versión se indican las innovaciones de ofrecidas en la ver
 
 Los usuarios pueden obtener una vista previa de los PDF de las comunicaciones interactivas sin datos, con archivos de datos JSON locales o con datos de un modelo de datos, lo que permite realizar pruebas flexibles basadas en datos. Para obtener más información, consulte [Vista previa de PDF en el editor de comunicaciones interactivas](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-**Compatibilidad con fuentes personalizadas en la comunicación interactiva**
+**Compatibilidad de las fuentes personalizadas en las comunicaciones interactivas**
 
-La función Fuentes personalizadas permite a los usuarios incrustar fuentes personalizadas o aprobadas por la organización en las comunicaciones interactivas, lo que garantiza un procesamiento de PDF coherente y con marca en todos los dispositivos y plataformas. Para obtener más información, consulte [Compatibilidad con fuentes personalizadas en la comunicación interactiva](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+La función Fuentes personalizadas permite que los usuarios incrusten fuentes personalizadas o aprobadas por la organización en las comunicaciones interactivas, lo que garantiza un procesamiento PDF coherente y acorde con la marca en todos los dispositivos y plataformas. Para obtener más información, consulte [Compatibilidad de las fuentes personalizadas en las comunicaciones interactivas](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
 
 **Importar y exportar comunicaciones interactivas**
 
-Esta función permite migrar y reutilizar las comunicaciones interactivas entre diferentes entornos. Ahora puede exportar una comunicación interactiva junto con sus fragmentos asociados y modelos de datos de un entorno e importarla en otro. Para obtener más información, consulte [Importar y exportar comunicaciones interactivas](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+Esta función permite migrar y reutilizar las comunicaciones interactivas entre diferentes entornos. Ahora puede exportar una comunicación interactiva junto con sus fragmentos asociados y modelos de datos desde un entorno e importarla a otro. Para obtener más información, consulte [Importar y exportar comunicaciones interactivas](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
 
 <!--
 **Forms Optimization opportunities**
@@ -147,27 +147,27 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ### Nuevas funciones en la gestión de versiones {#new-features-release-management}
 
-**Pausar actualizaciones de mantenimiento automáticas**
+**Pausar actualizaciones de mantenimiento automático**
 
-Días de lanzamiento, eventos en directo, ventas máximas: estos momentos no pueden romperse. [Nuestras nuevas características de autoservicio](/help/implementing/deploying/quiet-hours-update-free-periods.md) detienen las actualizaciones de mantenimiento automático cuando son importantes, para que sus equipos se mantengan enfocados.
+Días de lanzamiento, eventos en directo, picos de ventas: estos momentos no pueden fallar. [Nuestras nuevas funciones de autoservicio](/help/implementing/deploying/quiet-hours-update-free-periods.md) detienen las actualizaciones de mantenimiento automático cuando son importantes, para que sus equipos se mantengan enfocados.
 
-* Horas tranquilas: bloquea el mantenimiento automático durante las horas establecidas cada día. Ideal para horarios de trabajo, recorridos nocturnos o cortes matinales.
-* Período sin actualización: bloquear el mantenimiento automático durante una semana completa. Utilícelo para lanzamientos, promociones o bloqueos anuales.
+* Horas de descanso: bloquea el mantenimiento automático durante las horas establecidas cada día. Ideal para horarios de trabajo, ejecuciones nocturnas o transiciones matinales.
+* Período sin actualizaciones: bloquea el mantenimiento automático durante una semana completa. Utilícelo para lanzamientos, promociones o bloqueos anuales.
 
 >[!NOTE]
 >
->Disponible como función de disponibilidad limitada el 25 de septiembre.
->&#x200B;>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
+>Disponible como función de disponibilidad limitada desde el 25 de septiembre.
+>>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
 
 ### Nueva versión de las herramientas para desarrolladores de AEM para Eclipse {#aem-develeper-tools-for-eclipse}
 
-Se ha lanzado la versión 1.4.0 de las herramientas para desarrolladores de AEM para Eclipse. Esta versión agrega compatibilidad con Eclipse IDE 2022-12 o posterior y se ha validado con la versión actual (2025-09). La herramienta ahora funciona con versiones modernas del tipo de archivo del proyecto AEM e incorpora mejoras de la herramienta Sling IDE 1.3.0.
+Se ha lanzado la versión 1.4.0 de las herramientas para desarrolladores de AEM para Eclipse. Esta versión añade compatibilidad con Eclipse IDE 2022-12 o una versión más reciente y se ha validado con la versión actual (2025-09). Las herramientas ahora funcionan con versiones modernas del arquetipo de proyecto AEM e incorporan mejoras de Sling IDE Tooling 1.3.0.
 
-Instale desde [Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) y consulte la [página de herramientas para desarrolladores de AEM](https://eclipse.adobe.com) para obtener más detalles.
+Instale desde [Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) y consulte la [página de herramientas para desarrolladores de AEM](https://eclipse.adobe.com) para obtener más información.
 
 ### Próximas obsolescencias de la API de Java {#java-api-deprecation}
 
-Varias API obsoletas se marcaron para su eliminación el 31 de agosto, por lo que ya no se debe hacer referencia a ellas. Recibirá notificaciones del Centro de acciones si se detecta un uso de API obsoleto en el código y, después del 13 de noviembre, aparecerán avisos durante las compilaciones de Cloud Manager para reforzar la importancia de eliminar el uso. Consulte el [artículo sobre obsolescencia](/help/release-notes/deprecated-removed-features.md#aem-apis) para obtener más detalles, pero, para mayor comodidad, estas API se enumeran a continuación:
+Varias API obsoletas se marcaron para su eliminación el 31 de agosto, y por lo tanto, ya no deben utilizarse como referencia. Recibirá notificaciones del Centro de acciones si se detecta un uso de la API obsoleto en el código y, a partir del 13 de noviembre, aparecerán avisos durante las compilaciones de Cloud Manager para reforzar la importancia de eliminar su uso. Consulte el [artículo sobre obsolescencia](/help/release-notes/deprecated-removed-features.md#aem-apis) para obtener más detalles, pero, para mayor comodidad, estas API se enumeran a continuación:
 
 +++ Expandir para ver las funciones obsoletas de la API de Java
 
@@ -201,19 +201,19 @@ OSGi properties:
 
 ### Desuso de tiempo de ejecución de Java 11 {#java11-runtime-deprecation}
 
-El tiempo de ejecución de *Java 11* está obsoleto y la mayoría de los entornos ya se han actualizado al tiempo de ejecución de **Java 21 de mayor rendimiento**.
+El *entorno de ejecución de Java 11* ha quedado obsoleto, y la mayoría de los entornos ya se han actualizado al **entorno de ejecución de Java 21** que ofrece un mayor rendimiento.
 
-Si su entorno no se pudo actualizar debido a dependencias no admitidas (consulte los [requisitos de tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), debería haber recibido un correo electrónico de Adobe con los pasos siguientes. Como se describió allí, Adobe actualizó sus entornos **Dev** y **RDE** el **18 de septiembre de 2025** para que pueda validar su sitio y sus procesos y solucionar cualquier problema. Las actualizaciones de **Stage** y **Production** continuarán el **14 de octubre de 2025**.
+Si su entorno no se ha podido actualizar debido a dependencias no admitidas (consulte los [requisitos del entorno de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), debería haber recibido un correo electrónico de Adobe con los siguientes pasos. Como se describió allí, Adobe actualizó sus entornos **Dev** y **RDE** el **18 de septiembre de 2025** para que pueda validar su sitio y sus procesos y solucionar cualquier problema. Las actualizaciones de los entornos **Ensayo** y **Producción** continuarán el **14 de octubre de 2025**.
 
 >[!NOTE]
 >
->La versión en tiempo de ejecución es independiente de la versión de compilación del código. Aunque recomendamos la compilación con Java 21, por ahora se siguen aceptando las compilaciones de Java 11. En el futuro, se publicará un aviso independiente sobre el desuso de compilaciones de Java 11.
+>La versión del tiempo de ejecución es independiente de la versión de compilación del código. Aunque recomendamos la compilación con Java 21, las compilaciones de Java 11 siguen siendo compatibles por ahora. En el futuro, se publicará un aviso independiente sobre el desuso de compilaciones de Java 11.
 
 ### Aplicación de la directiva de configuración de registros Java de AEM {#logconfig-policy}
 
 Como se indica en las notas de la versión de abril, los registros Java de AEM deben seguir un formato estándar para garantizar una monitorización de confianza en todos los entornos de clientes. Ya no se admiten las configuraciones de registro personalizadas, como los cambios en el formato de los registros, archivos de salida o niveles de registro predeterminados. Los registros deben permanecer dirigidos a los archivos predeterminados y se deben conservar los niveles de registro predeterminados para el código de producto de AEM. Consulte todos los detalles en el [Artículo de registro](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-A partir del **30 de octubre**, se omitirán todas las invalidaciones de registro personalizadas no admitidas. Según nuestro análisis, la mayoría de los clientes no se verán afectados y Adobe se pondrá en contacto directamente con cualquier cliente cuya configuración actual pueda verse afectada.
+A partir del **30 de octubre**, se ignorarán todas las modificaciones de registro personalizadas no compatibles. Según nuestro análisis, la mayoría de los clientes no se verán afectados y Adobe se pondrá en contacto directamente con cualquier cliente cuya configuración actual pueda verse afectada.
 
 Revise y actualice cualquier proceso descendente que dependa del comportamiento de registro personalizado. Por ejemplo:
 
@@ -236,9 +236,9 @@ Tenemos un número limitado de oportunidades disponibles para el envío de publi
 
 ### Autenticación de Edge para Edge Delivery Services (programa Beta) {#edge-authentication}
 
-La autenticación de Edge le permite restringir el acceso a las páginas de Edge Delivery Services únicamente a aquellas que se hayan autenticado con su proveedor de identidad (IdP). Esto se logra mediante la implementación de un archivo YAML de configuración de OpenID Connect (OIDC).
+La autenticación de Edge le permite restringir el acceso a las páginas de Edge Delivery Services únicamente a aquellas personas que se hayan autenticado con su proveedor de identidad (IdP). Esto se logra mediante la implementación de un archivo YAML de configuración de OpenID Connect (OIDC).
 
-Si está interesado, envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descripción de su caso de uso y cualquier pregunta que pueda tener.
+Si le interesa, envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descripción de su caso de uso y cualquier pregunta que pueda tener.
 
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
@@ -249,13 +249,13 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 -->
 
-### Implementaciones de producción canarias para probar el código antes de aceptar tráfico en directo (programa Beta) {#canary-beta}
+### Implementaciones de producción controladas para probar el código antes de aceptar tráfico en directo (programa Beta) {#canary-beta}
 
-Valide una compilación de producción con tráfico de prueba solo interno antes de exponerla a los usuarios finales. Realizar envíos a producción, enrutar solo el tráfico canario (mediante un encabezado especial), monitorizar el comportamiento y, a continuación, promocionar al tráfico en directo o revertir, sin afectar a los clientes.
+Valide una compilación de producción con tráfico de prueba solamente interno antes de exponerla a los usuarios finales. Realice envíos a producción, dirija solo el tráfico controlado (mediante un encabezado especial), monitorice el comportamiento y, a continuación, promocione al tráfico en directo o revierta el proceso, sin afectar a los clientes.
 
-Implemente las versiones de código en producción, pero restrinja solo el tráfico de prueba interno antes de decidir si aceptar tráfico en directo en lugar de revertir.
+Implemente las versiones de código en producción, pero restrínjalas solo al tráfico de prueba interno antes de decidir si aceptar tráfico en directo en lugar de revertir el proceso.
 
-Enviar un correo electrónico a [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) para solicitar acceso y compartir comentarios.
+Envíe un correo electrónico a [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) para solicitar acceso y compartir comentarios.
 
 ### Instantáneas para los RDE (programa Alpha) {#rde-snapshot-program}
 
@@ -271,9 +271,9 @@ Ahora en la versión Beta, puede reenviar los registros de AEM a Amazon S3, Sumo
 
 Obtenga más información en la [documentación de reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md).
 
-### Supervisión del rendimiento de las aplicaciones ampliadas (APM) (programa de Alpha) {#apm-alpha}
+### Monitorización del rendimiento de las aplicaciones (APM) ampliadas (programa Alpha) {#apm-alpha}
 
-Para que se pueda observar, AEM Cloud Service admite [New Relic One](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) proporcionado por Adobe y [Dynatrace](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) administrado por el cliente. A medida que exploramos la compatibilidad con opciones de APM adicionales, escríbanos a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con su proveedor o tecnología preferidos, junto con los casos de uso.
+En cuanto a la observabilidad, AEM Cloud Service admite actualmente [New Relic One](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) proporcionado por Adobe y [Dynatrace](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) administrado por el cliente. Mientras exploramos la compatibilidad con opciones de APM adicionales, envíenos un correo electrónico [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con su proveedor o tecnología preferidos, junto con casos de uso.
 
 
 ## Guías de [!DNL Experience Manager] {#guides}

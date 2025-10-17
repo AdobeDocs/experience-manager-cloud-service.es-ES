@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 31c94576f6cfb0ffff0f37ece33ef1f91f98f356
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 50%
+ht-degree: 78%
 
 ---
 
@@ -18,7 +18,7 @@ Estas son las notas de la versión del editor universal del 16 de octubre de 202
 
 >[!TIP]
 >
->Si desea probar las **próximas** funciones del editor universal antes de su lanzamiento, consulte las [Notas de la versión del editor universal.](/help/release-notes/universal-editor/preview.md)
+>Si desea probar las **próximas** funciones del editor universal antes de su lanzamiento, consulte las [notas de la versión del editor universal.](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >
@@ -34,7 +34,7 @@ Si le interesa probar estas nuevas funciones y compartir sus comentarios, envíe
 
 ### Nuevo RTE {#new-rte}
 
-El nuevo RTE de ProseMirror, con un selector de páginas en el cuadro de diálogo de vínculos, ya está disponible en el panel derecho. [Este RTE cuenta con opciones de configuración flexibles.](/help/implementing/universal-editor/configure-rte.md)
+El nuevo RTE de ProseMirror, que cuenta con un selector de páginas en el cuadro de diálogo de vínculos, ya está disponible en el panel derecho. [Este RTE cuenta con opciones de configuración flexibles.](/help/implementing/universal-editor/configure-rte.md)
 
 ## Otras mejoras {#other-improvements}
 
