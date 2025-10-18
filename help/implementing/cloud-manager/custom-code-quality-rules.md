@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 30d128c914b1eea19fb324f6587a364da3ebba1d
+source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
 workflow-type: tm+mt
-source-wordcount: '4384'
-ht-degree: 65%
+source-wordcount: '4349'
+ht-degree: 64%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 65%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
->title="Reglas de calidad del código personalizadas"
+>title="Reglas de calidad de código personalizadas"
 >abstract="Obtenga información sobre las reglas de calidad del código personalizadas de Cloud Manager, basadas en las prácticas recomendadas de ingeniería de Adobe Experience Manager, para garantizar un código de alta calidad mediante pruebas exhaustivas."
 
 Obtenga información sobre las reglas de calidad de código personalizadas de Cloud Manager, basadas en las prácticas recomendadas de ingeniería de Adobe Experience Manager, para garantizar un código de alta calidad mediante pruebas exhaustivas. Ver también [pruebas de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md).
@@ -37,7 +37,7 @@ La siguiente sección detalla las reglas de SonarQube ejecutadas por Cloud Manag
 
 ### No utilizar funciones potencialmente peligrosas {#do-not-use-potentially-dangerous-functions}
 
-* **Clave**: CQRules: CWE-676
+* **Clave**: CQRules:CWE-676
 * **Tipo**: Vulnerabilidad
 * **Gravedad**: Principal
 * **Desde**: Versión 2018.4.0
@@ -93,7 +93,7 @@ public class DoThis implements Runnable {
 
 ### No usar cadenas de formato que puedan estar controladas externamente {#do-not-use-format-strings-which-may-be-externally-controlled}
 
-* **Clave**: CQRules: CWE-134
+* **Clave**: CQRules:CWE-134
 * **Tipo**: Vulnerabilidad
 * **Gravedad**: Principal
 * **Desde**: Versión 2018.4.0
@@ -117,7 +117,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Gravedad**: Crítico
 * **Desde**: Versión 2018.6.0
 
-Al realizar solicitudes HTTP dentro de una aplicación Experience Manager, es esencial configurar los tiempos de espera adecuados para evitar un consumo innecesario de subprocesos.
+Al realizar solicitudes HTTP dentro de una aplicación de Experience Manager, es esencial configurar los tiempos de espera adecuados para evitar un consumo de hilos innecesario.
 De forma predeterminada, tanto el cliente Java™ HTTP (java.net.HttpUrlConnection) como el cliente Apache HTTP Components, ampliamente utilizado, no imponen tiempos de espera, por lo que deben configurarse manualmente. Como práctica recomendada, los tiempos de espera deben establecerse en 60 segundos o menos.
 
 #### Código no conforme {#non-compliant-code-2}
@@ -235,7 +235,7 @@ public void orDoThis(Session session) throws Exception {
 * **Gravedad**: Principal
 * **Desde**: Versión 2018.4.0
 
-Como se describe en la [Documentación de Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html), se desaconseja enlazar los servlets por rutas. Los servlets enlazados a rutas no pueden utilizar controles de acceso JCR estándar y, como resultado, requieren un rigor de seguridad adicional. En lugar de utilizar servlets enlazados a rutas, se recomienda crear nodos en el repositorio y registrar servlets por tipo de recurso.
+Como se describe en la [`Sling` documentación](https://sling.apache.org/documentation/the-sling-engine/servlets.html), se desaconsejan los servlets de enlace por rutas. Los servlets enlazados a rutas no pueden utilizar controles de acceso JCR estándar y, como resultado, requieren un rigor de seguridad adicional. En lugar de utilizar servlets enlazados a rutas, se recomienda crear nodos en el repositorio y registrar servlets por tipo de recurso.
 
 #### Código no conforme {#non-compliant-code-5}
 
@@ -318,7 +318,7 @@ public void doThis() throws Exception {
 
 ### Evitar iniciar sesión en la información al gestionar solicitudes GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
-* **Clave**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
+* **Clave**: CQRules:CQBP-44---LogInfoInGetOrHeadRequests
 * **Tipo**: `Code Smell`
 * **Gravedad**: Menor
 
@@ -483,7 +483,7 @@ public void doThis() {
 * **Gravedad**: Menor
 * **Desde**: Versión 2018.4.0
 
-Las rutas que comienzan por `/libs` y `/apps` generalmente no deberían estar codificadas. Estas rutas generalmente se almacenan en relación con la ruta de búsqueda de Sling, que tiene el valor predeterminado `/libs,/apps`. El uso de la ruta absoluta puede introducir defectos sutiles que solo aparecerían más adelante en el ciclo de vida del proyecto.
+Las rutas que comienzan por `/libs` y `/apps` generalmente no deberían estar codificadas. Estas rutas generalmente se almacenan en relación con la ruta de búsqueda `Sling`, que tiene el valor predeterminado `/libs,/apps`. El uso de la ruta absoluta puede introducir defectos sutiles que solo aparecerían más adelante en el ciclo de vida del proyecto.
 
 #### Código no conforme {#non-compliant-code-13}
 
@@ -504,18 +504,18 @@ public void doThis(Resource resource) {
 ### El planificador de Sling no debe utilizarse {#sonarqube-sling-scheduler}
 
 * **Clave**: CQRules:AMSCORE-554
-* **Tipo**: `Code Smell`/Compatibilidad de Cloud Service
+* **Tipo**: `Code Smell`/Compatibilidad con Cloud Service
 * **Gravedad**: Menor
 * **Desde**: Versión 2020.5.0
 
-El planificador de Sling no debe utilizarse para tareas que requieren una ejecución garantizada. Los trabajos programados de Sling garantizan la ejecución y son más adecuados para los entornos agrupados y no agrupados.
+No use el Planificador `Sling` para tareas que requieran una ejecución garantizada. Los trabajos programados de Sling garantizan la ejecución y son más adecuados para los entornos agrupados y no agrupados.
 
-Consulte la [Documentación sobre eventos de Apache Sling y gestión de trabajos](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información acerca de cómo se administran los trabajos de Sling en entornos agrupados.
+Consulte [`Apache Sling` Eventos y administración de trabajos](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información sobre cómo se administran los trabajos de Sling en entornos agrupados.
 
 ### Las API en desuso de Experience Manager no deben usarse {#sonarqube-aem-deprecated}
 
 * **Clave**: AMSCORE-553
-* **Tipo**: `Code Smell`/Compatibilidad de Cloud Service
+* **Tipo**: `Code Smell`/Compatibilidad con Cloud Service
 * **Gravedad**: Menor
 * **Desde**: Versión 2020.5.0
 
@@ -532,9 +532,9 @@ Sin embargo, hay casos en los que una API está en desuso en el contexto de Expe
 * **Gravedad**: Menor
 * **Desde**: Versión 2023.11
 
-El proyecto de Apache Sling desaconseja el uso de la anotación `@Inject` en el contexto de los modelos Sling, ya que puede provocar un mal rendimiento cuando se combina con `DefaultInjectionStrategy.OPTIONAL` (ya sea en el nivel de campo o de clase). En su lugar, se deben utilizar inyecciones más específicas (como las anotaciones `@ValueMapValue` o `@OsgiInjector`).
+El proyecto `Apache Sling` desaconseja el uso de la anotación `@Inject` en el contexto de los modelos Sling, ya que puede provocar un mal rendimiento cuando se combina con `DefaultInjectionStrategy.OPTIONAL` (ya sea en el nivel de campo o de clase). En su lugar, se deben utilizar inyecciones más específicas (como las anotaciones `@ValueMapValue` o `@OsgiInjector`).
 
-Consulte la [Documentación de Apache Sling](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) para obtener más información acerca de las anotaciones recomendadas y por qué se hizo esta recomendación en primer lugar.
+Consulte la documentación de [`Apache Sling`](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) para obtener más información acerca de las anotaciones recomendadas y por qué se hizo esta recomendación en primer lugar.
 
 
 ### Reutilización de instancias de un HTTPClient {#sonarqube-reuse-httpclient}
@@ -544,7 +544,7 @@ Consulte la [Documentación de Apache Sling](https://sling.apache.org/documentat
 * **Gravedad**: Menor
 * **Desde**: Versión 2023.11
 
-AEM Las aplicaciones de Apache suelen conectarse con otras aplicaciones mediante el protocolo HTTP y Apache HttpClient es una biblioteca que se utiliza a menudo para lograr este fin. Sin embargo, la creación de este tipo de objeto HttpClient conlleva cierta sobrecarga, por lo que estos objetos deben reutilizarse en la medida de lo posible.
+Las aplicaciones de AEM suelen llegar a otras aplicaciones mediante el protocolo HTTP y Apache HttpClient es una biblioteca que se utiliza a menudo para lograr este fin. Sin embargo, la creación de este tipo de objeto HttpClient conlleva cierta sobrecarga, por lo que estos objetos deben reutilizarse en la medida de lo posible.
 
 Esta regla comprueba que un objeto HttpClient de este tipo no es privado dentro de un método, sino global en un nivel de clase, por lo que se puede reutilizar. En este caso, el campo HttpClient debe establecerse en el constructor de la clase o el método `activate()` (si esta clase es un componente o servicio OSGi).
 
@@ -579,7 +579,7 @@ La siguiente sección detalla las comprobaciones OakPAL ejecutadas por Cloud Man
 
 >[!NOTE]
 >
->OakPAL es un marco de trabajo, que valida paquetes de contenido usando un repositorio Oak independiente. Un socio Experience Manager, que ganó el premio Experience Manager Rockstar Norteamérica 2019, lo desarrolló.
+>OakPAL es un marco de trabajo, que valida paquetes de contenido usando un repositorio Oak independiente. Un socio de Experience Manager, que ganó el premio de 2019 Experience Manager Rockstar Norteamérica, lo desarrolló.
 
 ### Los clientes no deben implementar ni ampliar las API de producto anotadas con @ProviderType{#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -588,7 +588,7 @@ La siguiente sección detalla las comprobaciones OakPAL ejecutadas por Cloud Man
 * **Gravedad**: Crítico
 * **Desde**: Versión 2018.7.0
 
-La API de Experience Manager contiene interfaces y clases de Java™, que solo están pensadas para utilizarse, pero no para implementarse, mediante código personalizado. Por ejemplo, solo el Experience Manager debe implementar la interfaz `com.day.cq.wcm.api.Page`.
+La API de Experience Manager contiene interfaces y clases de Java™, que solo están pensadas para utilizarse (pero no para implementarse) mediante código personalizado. Por ejemplo, solo Experience Manager debe implementar la interfaz `com.day.cq.wcm.api.Page`.
 
 Cuando se agregan nuevos métodos a estas interfaces, esos métodos adicionales no afectan al código existente que utiliza estas interfaces. Como resultado, la adición de nuevos métodos a estas interfaces se considera compatible con versiones anteriores. Sin embargo, si el código personalizado implementa una de estas interfaces, dicho código personalizado ha introducido un riesgo de compatibilidad con versiones anteriores para el cliente.
 
@@ -720,7 +720,7 @@ Para que la búsqueda de recursos funcione correctamente en Experience Manager A
 * **Gravedad**: Crítico
 * **Desde**: Versión 2019.6.0
 
-Una práctica recomendada clásica es que el árbol de contenido `/libs` en el repositorio de contenido de Experience Manager debe considerarse de solo lectura por los clientes. Modificar nodos y propiedades en `/libs` crea un riesgo significativo para las actualizaciones principales y secundarias. Use el Adobe, a través de los canales oficiales, para realizar modificaciones en `/libs`.
+Una práctica recomendada clásica es que el árbol de contenido `/libs` en el repositorio de contenido de Experience Manager debe considerarse de solo lectura por los clientes. Modificar nodos y propiedades en `/libs` crea un riesgo significativo para las actualizaciones principales y secundarias. Use Adobe, a través de los canales oficiales, para realizar modificaciones en `/libs`.
 
 ### Los paquetes no deben contener configuraciones OSGi duplicadas {#oakpal-package-osgi}
 
@@ -802,7 +802,7 @@ Similar a la regla [Los paquetes no deben contener configuraciones OSGi duplicad
 ### El modo de creación predeterminado no debe ser la IU clásica {#oakpal-default-authoring}
 
 * **Clave**: ClassicUIAuthoringMode
-* **Tipo**: `Code Smell`/Compatibilidad de Cloud Service
+* **Tipo**: `Code Smell`/Compatibilidad con Cloud Service
 * **Gravedad**: Menor
 * **Desde**: Versión 2020.5.0
 
@@ -811,11 +811,11 @@ La configuración OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 ### Los componentes con cuadros de diálogo deben tener cuadros de diálogo de IU táctil {#oakpal-components-dialogs}
 
 * **Clave**: ComponentWithOnlyClassicUIDialog
-* **Tipo**: `Code Smell`/Compatibilidad de Cloud Service
+* **Tipo**: `Code Smell`/Compatibilidad con Cloud Service
 * **Gravedad**: Menor
 * **Desde**: Versión 2020.5.0
 
-Los componentes del Experience Manager que tengan un cuadro de diálogo de IU clásica siempre deben tener un cuadro de diálogo de IU táctil correspondiente. Ambos ofrecen una experiencia de creación óptima compatible con el modelo de implementación de Cloud Service, donde la IU clásica ya no es compatible. Esta regla verifica los siguientes escenarios:
+Los componentes de Experience Manager que tienen un cuadro de diálogo de IU clásica siempre deben tener un cuadro de diálogo de IU táctil correspondiente. Ambos ofrecen una experiencia de creación óptima compatible con el modelo de implementación de Cloud Service, donde la IU clásica ya no es compatible. Esta regla verifica los siguientes escenarios:
 
 * Un componente con un cuadro de diálogo de IU clásica (es decir, un nodo `dialog` secundario) debe tener un cuadro de diálogo correspondiente de la interfaz de usuario táctil (es decir, un nodo `cq:dialog` secundario).
 * Un componente con un cuadro de diálogo de diseño de IU clásica (es decir, un nodo `design_dialog`) debe tener un cuadro de diálogo de diseño de IU táctil correspondiente (es decir, un nodo secundario `cq:design_dialog`).
@@ -826,11 +826,11 @@ La documentación de Herramientas de modernización de Experience Manager propor
 ### Los paquetes no deben mezclar contenido mutable e inmutable {#oakpal-packages-immutable}
 
 * **Clave**: ImmutableMutableMixedPackage
-* **Tipo**: `Code Smell`/Compatibilidad de Cloud Service
+* **Tipo**: `Code Smell`/Compatibilidad con Cloud Service
 * **Gravedad**: Menor
 * **Desde**: Versión 2020.5.0
 
-Para que sean compatibles con el modelo de implementación de Cloud Service, los paquetes de contenido individuales deben incluir contenido para las áreas inmutables del repositorio (`/apps` y `/libs`) o el área modificable (todo lo que no está en `/apps` o `/libs`), pero no ambas. Por ejemplo, un paquete que incluye `/apps/myco/components/text` y `/etc/clientlibs/myco` no es compatible con el Cloud Service y causa que se informe de un problema.
+Para que sean compatibles con el modelo de implementación de Cloud Service, los paquetes de contenido individuales deben incluir contenido para las áreas inmutables del repositorio (`/apps` y `/libs`) o el área modificable (todo lo que no está en `/apps` o `/libs`), pero no ambas. Por ejemplo, un paquete que incluye `/apps/myco/components/text` y `/etc/clientlibs/myco` no es compatible con Cloud Service y causa que se informe de un problema.
 
 >[!NOTE]
 >
@@ -841,7 +841,7 @@ Consulte [Documentación de la estructura del proyecto de Experience Manager](/h
 ### No utilizar agentes de replicación inversa {#oakpal-reverse-replication}
 
 * **Clave**: ReverseReplication
-* **Tipo**: `Code Smell`/Compatibilidad de Cloud Service
+* **Tipo**: `Code Smell`/Compatibilidad con Cloud Service
 * **Gravedad**: Menor
 * **Desde**: Versión 2020.5.0
 
@@ -920,7 +920,7 @@ Los componentes de base heredados (es decir, los componentes de `/libs/foundatio
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Experience Manager as a Cloud Service aplica una estricta directiva de nomenclatura para los nombres de los modos de ejecución y un orden estricto para ellos. La lista de modos de ejecución admitidos se encuentra en el documento [Implementación en el as a Cloud Service Experience Manager](/help/implementing/deploying/overview.md#runmodes) y cualquier desviación de esta lista se identifica como un problema.
+Experience Manager as a Cloud Service aplica una estricta directiva de nomenclatura para los nombres de los modos de ejecución y un orden estricto para ellos. La lista de modos de ejecución admitidos se encuentra en el documento [Implementación en Experience Manager as a Cloud Service](/help/implementing/deploying/overview.md#runmodes) y cualquier desviación de esta lista se identifica como un problema.
 
 ### Los nodos de definición de índice de búsqueda personalizada deben ser tareas secundarias directas de `/oak:index` {#oakpal-custom-search}
 
@@ -992,7 +992,7 @@ Experience Manager as a Cloud Service prohíbe que las definiciones de índice d
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Experience Manager as a Cloud Service prohíbe que las definiciones de índice de búsqueda personalizadas (es decir, los nodos de tipo `oak:QueryIndexDefinition`) contengan una propiedad denominada `reindex`. La indexación que utiliza esta propiedad debe actualizarse antes de migrar a Experience Manager como
+Experience Manager as a Cloud Service prohíbe que las definiciones de índice de búsqueda personalizadas (es decir, los nodos de tipo `oak:QueryIndexDefinition`) contengan una propiedad denominada `reindex`. La indexación que utiliza esta propiedad debe actualizarse antes de migrar a Experience Manager as a
 Cloud Service. Consulte el documento [Búsqueda de contenido e indexación](/help/operations/indexing.md#how-to-use) para obtener más información.
 
 ### Los nodos lucene del recurso DAM personalizado no deben especificar `queryPaths` {#oakpal-damAssetLucene-queryPaths}
