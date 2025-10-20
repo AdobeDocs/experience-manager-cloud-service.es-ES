@@ -4,10 +4,10 @@ description: Obtenga información acerca de las distintas opciones para personal
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 78%
+source-wordcount: '403'
+ht-degree: 69%
 
 ---
 
@@ -20,69 +20,29 @@ Obtenga información acerca de las distintas opciones para personalizar el edito
 >
 >El editor universal también ofrece muchos [puntos de extensión](/help/implementing/universal-editor/extending.md) que le permiten ampliar su funcionalidad para satisfacer las necesidades de su proyecto.
 
-## Desactivación de la publicación {#disable-publish}
+## Uso de etiquetas de configuración de Meta {#meta-tags}
 
-Algunos flujos de trabajo de creación requieren que el contenido se revise antes de publicarse. En estos casos, la opción para publicar no debe estar disponible para ningún autor.
+Algunos flujos de trabajo de creación pueden requerir el uso de algunas funciones del editor universal, no de otras. Para admitir estos casos diversos, hay etiquetas meta disponibles para configurar o deshabilitar determinadas funciones o botones del editor.
 
-Por lo tanto, el botón **Publicar** se puede suprimir por completo en una aplicación añadiendo los siguientes metadatos.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish"/>
-```
-
-## Desactivación de la publicación en previsualización {#publish-preview}
-
-Algunos flujos de trabajo de creación podrían impedir la publicación en el [servicio de previsualización](/help/sites-cloud/authoring/sites-console/previewing-content.md) (si está disponible).
-
-Por lo tanto, la opción **Previsualizar** de la ventana de publicación se puede suprimir por completo en una aplicación añadiendo los siguientes metadatos.
+Use esta etiqueta en la sección `<head>` de la página para deshabilitar una o más características:
 
 ```html
-<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+<meta name="urn:adobe:aue:config:disable" content="..." />
 ```
 
-## Desactivación de la publicación en directo {#publish-live}
+Si desea deshabilitar varias funciones, proporcione una lista de valores separados por comas.
 
-Algunos flujos de trabajo de creación pueden impedir la publicación en el servicio activo.
+Los siguientes son los valores compatibles con `content`, es decir, las características que se pueden deshabilitar con las metaetiquetas.
 
-Por lo tanto, la opción **Live** de la ventana de publicación se puede suprimir por completo en una aplicación si agrega los siguientes metadatos.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
-```
-
-## Desactivación de cancelación de publicación {#unpublish}
-
-Algunos flujos de trabajo de creación requieren un proceso de aprobación antes de cancelar la publicación del contenido. En estos casos, la opción de cancelar la publicación no debe estar disponible para ningún autor.
-
-Por lo tanto, el botón **Cancelar la publicación** se puede suprimir por completo en una aplicación si agrega los siguientes metadatos.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
-```
-
-## Desactivación de Abrir página {#open-page}
-
-El botón **Abrir página** se puede eliminar por completo en una aplicación añadiendo los siguientes metadatos.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
-```
-
-## Desactivación del botón Duplicar {#duplicate-button}
-
-Es posible que algunos flujos de trabajo de creación deban limitar la capacidad del autor de contenido para duplicar componentes. Puede deshabilitar el [icono Duplicar](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) añadiendo los siguientes metadatos.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
-```
-
-## Desactivación de Copiar y Pegar {#copy-paste}
-
-Es posible que algunos flujos de trabajo de creación deban limitar la capacidad del autor de contenido para copiar y pegar componentes. Puede deshabilitar [copiar y pegar iconos](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) agregando los siguientes metadatos.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="copy"/>
-```
+| Valor de contenido | Descripción |
+|---|---|
+| `publish` | Deshabilitar [botón de publicación](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) |
+| `publish-live` | Deshabilitar publicación [activa](/help/sites-cloud/authoring/universal-editor/publishing.md) |
+| `publish-preview` | Deshabilitar la publicación de vista previa (si el [servicio de vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md) está disponible) |
+| `unpublish` | Deshabilita [botón para cancelar la publicación](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
+| `copy` | Deshabilita [los botones de copiar y pegar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
+| `duplicate` | Deshabilita [botón duplicado](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
+| `header-open-page` | Deshabilita [botón Abrir página](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
 
 ## Cambio del punto final {#custom-endpoint}
 
