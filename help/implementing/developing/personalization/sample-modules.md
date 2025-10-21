@@ -1,17 +1,17 @@
 ---
-title: Tipos de módulos de IU de ContextHub de muestra
+title: Tipos de módulos de IU de muestra de ContextHub
 description: ContextHub proporciona varios módulos de IU de ejemplo que puede utilizar en sus soluciones
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Tipos de módulos de IU de ContextHub de muestra {#sample-contexthub-ui-module-types}
+# Tipos de módulos de IU de muestra de ContextHub {#sample-contexthub-ui-module-types}
 
 ContextHub proporciona varios módulos de IU de ejemplo que puede utilizar en sus soluciones. Se proporciona la siguiente información:
 
@@ -40,7 +40,7 @@ El código fuente se encuentra en `/libs/granite/contexthub/code/ui/container/js
 Configure el módulo de la interfaz de usuario contexthub.base mediante un objeto JavaScript en formato JSON. Incluya cualquiera de las siguientes propiedades para configurar las funciones del módulo de interfaz de usuario:
 
 * **imagen:** Una dirección URL a una imagen para mostrarla como icono.
-* **icono:** El nombre de una clase [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html). Si especifica un valor para las propiedades icon e image, se utiliza la imagen.
+* **icono:** El nombre de una clase [Coral UI icon](https://opensource.adobe.com/coral-spectrum/examples/#icon). Si especifica un valor para las propiedades icon e image, se utiliza la imagen.
 * **título:** Un título para el módulo de interfaz de usuario. El título aparece cuando el puntero se detiene sobre el icono del módulo de interfaz de usuario.
 * **pantalla completa:** Valor booleano que indica si el módulo de interfaz de usuario admite el modo de pantalla completa. Use `true` para admitir la pantalla completa y `false` para evitar el modo de pantalla completa.
 * **plantilla:** Una plantilla de [Handlebars](https://handlebarsjs.com/) que especifica el contenido que se procesará en la barra de herramientas de ContextHub. Use como máximo dos etiquetas `<p>`.
@@ -52,11 +52,11 @@ Configure el módulo de la interfaz de usuario contexthub.base mediante un objet
    * selected: (Opcional) un valor booleano que especifica si este elemento se debe mostrar como seleccionado (true=selected). De forma predeterminada, los elementos seleccionados aparecen en negrita. Usar una propiedad `listType` para configurar otras apariencias (ver a continuación).
 * **listType:** estilo que se va a usar para los elementos de la lista emergente. Utilice uno de los siguientes valores:
    * marca de verificación
-   * casilla de verificación
+   * checkbox
    * radio
 * **popoverTemplate:** Una plantilla Handlebars que especifica el contenido que se procesará en la ventana emergente cuando se haga clic en el módulo UI. Si incluye este elemento, no incluya el elemento `list`.
 
-### Ejemplos {#example}
+### Ejemplo {#example}
 
 El ejemplo siguiente configura un módulo de interfaz de usuario c`ontexthub.base` para mostrar información de un almacén de [contexthub.emulators](sample-stores.md#granite-emulators-sample-store-candidate). El elemento `template` muestra cómo obtener datos del almacén utilizando la clave que establece el elemento `storeMapping`.
 
