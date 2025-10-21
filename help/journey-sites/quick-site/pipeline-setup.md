@@ -5,12 +5,14 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 100%
 
 ---
+
 
 # Configurar la canalización {#set-up-your-pipeline}
 
@@ -50,7 +52,7 @@ Esta parte del recorrido se aplica al administrador de Cloud Manager.
 
 El desarrollo de front-end implica la personalización de JavaScript, CSS y recursos estáticos que definen el estilo del sitio AEM. El desarrollador de front-end trabajará en sus propios entornos locales para realizar estas personalizaciones. Una vez que estén listos, los cambios se comprometen con el repositorio de Git AEM. Pero solo están comprometidos con el código fuente. Todavía no están creados.
 
-La canalización front-end lleva estas personalizaciones asignadas y las implementa en un entorno AEM, generalmente en entornos de producción o de prueba.
+La canalización front-end lleva estas personalizaciones asignadas y las implementa en un entorno AEM, generalmente en entornos de producción o que no sean de producción.
 
 De este modo, el desarrollo de front-end puede funcionar de forma independiente y paralela a cualquier desarrollo de back-end completo en AEM, ya que tiene sus propias canalizaciones de implementación.
 

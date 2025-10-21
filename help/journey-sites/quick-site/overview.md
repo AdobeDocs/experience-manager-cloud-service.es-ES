@@ -5,12 +5,14 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
 ---
+
 
 # AEM Recorrido de creación rápida de sitios {#quick-site-creation-journey}
 
@@ -40,9 +42,9 @@ Los recorridos de documentación están diseñados en torno a los principios de 
 
 Si desea saber cómo recomienda Adobe resolver los casos de sitios comerciales con AEM, los recorridos de AEM Sites son el punto de inicio.
 
-## Audiencia {#audience}
+## Público {#audience}
 
-Este recorrido describe los requisitos, pasos y enfoques para personalizar los temas de AEM Sites. Su audiencia principal es el desarrollador front-end, que no necesita saber de AEM. Sin embargo, para ilustrar todo el proceso, el recorrido incluye a los administradores, que se supone que tienen conocimientos básicos de AEM Sites y Cloud Manager. En la práctica, varias personas pueden desempeñar diversas funciones y este recorrido admite perspectivas tanto de administradores como de desarrolladores front-end.
+Este recorrido describe los requisitos, pasos y enfoques para personalizar los temas de AEM Sites. Su público principal es el desarrollador front-end, que no necesita saber de AEM. Sin embargo, para ilustrar todo el proceso, el recorrido incluye a los administradores, que se supone que tienen conocimientos básicos de AEM Sites y Cloud Manager. En la práctica, varias personas pueden desempeñar diversas funciones y este recorrido admite perspectivas tanto de administradores como de desarrolladores front-end.
 
 | Grupo de usuarios | Descripción | Rol en el recorrido |
 |---|---|---|

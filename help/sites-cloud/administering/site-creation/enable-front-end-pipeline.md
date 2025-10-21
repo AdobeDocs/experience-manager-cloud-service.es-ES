@@ -1,11 +1,12 @@
 ---
-title: Activación de la canalización front-end
+title: Habilitación de la canalización front-end
 description: Descubra cómo puede habilitar la canalización front-end para los sitios de creación tradicionales de AEM existentes con envío de publicación para utilizar temas de sitio y personalizar el sitio más rápidamente.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 6ee55bed8ca09470291e0488321732beed7bab42
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 24%
@@ -13,7 +14,7 @@ ht-degree: 24%
 ---
 
 
-# Activación de la canalización front-end {#enable-front-end-pipeline}
+# Habilitación de la canalización front-end {#enable-front-end-pipeline}
 
 {{traditional-aem}}
 
@@ -47,9 +48,9 @@ Al activar la canalización front-end para un sitio, AEM realiza los siguientes 
 
 ## Requisitos  {#requirements}
 
-AEM puede adaptar automáticamente el sitio existente para utilizar la canalización front-end. Para poder realizar este flujo de trabajo, el sitio debe usar [v2 o posterior del componente de página de los componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/wcm-components/page).
+AEM puede adaptar automáticamente el sitio existente para utilizar la canalización front-end. Para poder realizar este flujo de trabajo, el sitio debe usar [v2 o posterior del componente de página de los componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page).
 
-## Activación de la canalización front-end {#enabling}
+## Habilitación de la canalización front-end {#enabling}
 
 {{add-cm-allowlist-frontend-pipeline}}
 
@@ -76,7 +77,7 @@ La canalización front-end se puede usar con la característica de dominios pers
 
 ### Archivos front-end estáticos {#static-files}
 
-Los recursos front-end estáticos implementados mediante la canalización front-end se proporcionan, de forma predeterminada, desde el dominio estático predefinido de Adobe.
+De forma predeterminada, los recursos front-end estáticos implementados mediante la canalización front-end se proporcionan desde el dominio estático predefinido de Adobe.
 
 Si necesita un dominio personalizado para los recursos front-end, puede instalar un dominio personalizado en el nivel de publicación y configurar Dispatcher para que enrute rutas específicas (como `/static/`) a la ubicación de alojamiento estática de Adobe. Este método requiere la actualización de las [reglas de Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher) para reenviar y almacenar en caché correctamente las solicitudes de los recursos estáticos.
 
@@ -97,7 +98,7 @@ Si desea utilizar la función de dominios personalizados de Cloud Manager para s
    * Este valor también se puede sobrescribir manualmente según sea necesario.
 1. Compruebe la configuración.
    1. Después de la implementación, compruebe que las páginas hagan referencia correctamente a los artefactos de temas del dominio personalizado.
-   1. Abra las herramientas para desarrolladores del explorador e inspeccione las rutas de archivo `theme.css` y `theme.js` para confirmar que se han cargado desde el dominio correcto.
+   1. Abra las herramientas para desarrolladores del explorador e inspeccione las rutas de acceso de los archivos `theme.css` y `theme.js` para confirmar que se han cargado desde el dominio correcto.
 
 Las páginas del sitio hacen referencia a artefactos de temas de la dirección URL actualizada. A continuación, el despachante enruta las solicitudes de esos recursos al dominio estático.
 

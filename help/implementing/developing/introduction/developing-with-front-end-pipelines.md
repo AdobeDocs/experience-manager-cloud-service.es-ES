@@ -4,7 +4,8 @@ description: La canalización front-end mejora la independencia del desarrollado
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 3%
@@ -39,7 +40,7 @@ El entorno de compilación del front-end es compatible con las siguientes `Node.
 * 20
 * 18
 * 16
-* 14 (predeterminado)
+* 14 (valor predeterminado)
 * 12
 
 Puede usar la `NODE_VERSION` [variable de entorno](/help/implementing/cloud-manager/environment-variables.md) para establecer la versión deseada.

@@ -5,7 +5,8 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 076005e1ed1ca3303ed5843a3f27e0d707df5022
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 36%
@@ -28,7 +29,7 @@ El panel Sitio se utiliza para administrar la información relacionada con el te
 * [Descarga de fuentes de temas](#downloading-theme-sources)
 * [Descarga de recursos de plantilla, como mallas metálicas](#downloading-template-resources)
 * [Visualización y cambio de versiones de temas](#theme-vrsions)
-* [Activación de la canalización front-end](#enabling-the-front-end-pipeline)
+* [Habilitación de la canalización front-end](#enabling-the-front-end-pipeline)
 
 >[!TIP]
 >
@@ -76,7 +77,7 @@ Si AEM detecta que se ha implementado una versión más reciente del tema a trav
 
 Puede usar el botón **Seleccionar versión** para actualizar a la nueva versión del tema.
 
-## Activación de la canalización front-end {#enabling-front-end-pipeline}
+## Habilitación de la canalización front-end {#enabling-front-end-pipeline}
 
 Si el sitio no se creó con una plantilla de sitio, no es posible utilizar la canalización de front-end para personalizar e implementar su tema.
 
@@ -86,4 +87,4 @@ Con el panel Sitio en la consola Sitios, seleccione la raíz del sitio para most
 
 ![Habilitar canalización front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 
-Para obtener más información, consulte el documento [Activación de la canalización front-end.](enable-front-end-pipeline.md)
+Para obtener más información, consulte el documento [Habilitación de la canalización front-end.](enable-front-end-pipeline.md)

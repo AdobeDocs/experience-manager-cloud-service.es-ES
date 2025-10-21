@@ -5,12 +5,14 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 100%
 
 ---
+
 
 # Comprender Cloud Manager y el flujo de trabajo de creación rápida de sitios {#understand-cloud-manager}
 
@@ -81,7 +83,7 @@ Para el desarrollador front-end, no es necesario utilizar AEM.
 
 Cloud Manager es un componente esencial de AEM as a Cloud Service y sirve como punto de entrada único para la plataforma.
 
-Para dar compatibilidad a los clientes con configuraciones de desarrollo empresarial, AEM as a Cloud Service se integra completamente con Cloud Manager y sus canalizaciones de CD/CI creadas específicamente. La herramienta de creación rápida de sitios amplía estas funciones para admitir canalizaciones de desarrollo front-end dedicadas.
+Para dar compatibilidad a los clientes con configuraciones de desarrollo empresarial, AEM as a Cloud Service se integra completamente con Cloud Manager y sus CI/CD Pipelines creadas específicamente. La herramienta de creación rápida de sitios amplía estas funciones para admitir canalizaciones de desarrollo front-end dedicadas.
 
 A los efectos del presente recorrido, no es necesario tener una comprensión completa de Cloud Manager. En un nivel superior, Cloud Manager consta de varios niveles de estructura.
 
