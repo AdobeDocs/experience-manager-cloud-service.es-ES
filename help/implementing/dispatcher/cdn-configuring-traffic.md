@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar el tráfico de CDN decl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
+source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
@@ -408,6 +408,8 @@ data:
           type: selectOrigin
           originName: example-com
           # skipCache: true
+          # headers:
+          #   Authorization: ${{AUTH_TOKEN}}
     origins:
       - name: example-com
         domain: www.example.com
@@ -423,11 +425,13 @@ data:
 La acción disponible se explica en la tabla siguiente.
 
 | Nombre | Propiedades | Significado |
-|-----------|--------------------------|-------------|
+|---------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **selectOrigin** | originName | Nombre de uno de los orígenes definidos. |
-|     | skipCache (opcional, el valor predeterminado es false) | Indicar si se debe utilizar el almacenamiento en caché para las solicitudes que coinciden con esta regla. De forma predeterminada, las respuestas se almacenan en caché según el encabezado de almacenamiento en caché de respuestas (por ejemplo, Cache-Control o Expires) |
+|                     | skipCache (opcional, el valor predeterminado es false) | Indicar si se debe utilizar el almacenamiento en caché para las solicitudes que coinciden con esta regla. De forma predeterminada, las respuestas se almacenan en caché según el encabezado de almacenamiento en caché de respuestas (por ejemplo, Cache-Control o Expires) |
+|                     | encabezados (opcional, el valor predeterminado es `{}`) | Pares de clave-valor que contienen encabezados HTTP adicionales que se envían al backend seleccionado cuando se activa la regla. Con claves correspondientes a nombres de encabezado y valores correspondientes a valores de encabezado |
 | **selectAemOrigin** | originName | Nombre de uno de los orígenes predefinidos de AEM (valor admitido: `static`). |
-|     | skipCache (opcional, el valor predeterminado es false) | Indicar si se debe utilizar el almacenamiento en caché para las solicitudes que coinciden con esta regla. De forma predeterminada, las respuestas se almacenan en caché según el encabezado de almacenamiento en caché de respuestas (por ejemplo, Cache-Control o Expires) |
+|                     | skipCache (opcional, el valor predeterminado es false) | Indicar si se debe utilizar el almacenamiento en caché para las solicitudes que coinciden con esta regla. De forma predeterminada, las respuestas se almacenan en caché según el encabezado de almacenamiento en caché de respuestas (por ejemplo, Cache-Control o Expires) |
+|                     | encabezados (opcional, el valor predeterminado es `{}`) | Pares de clave-valor que contienen encabezados HTTP adicionales que se envían al backend seleccionado cuando se activa la regla. Con claves correspondientes a nombres de encabezado y valores correspondientes a valores de encabezado |
 
 **Orígenes**
 
@@ -539,7 +543,7 @@ data:
 
 | Nombre | Propiedades | Significado |
 |-----------|--------------------------|-------------|
-| **redireccionamiento** | ubicación | Valor del encabezado &quot;Ubicación&quot;. |
+| **redirigir** | ubicación | Valor del encabezado &quot;Ubicación&quot;. |
 |     | estado (opcional, el valor predeterminado es 301) | Estado HTTP que se utilizará en el mensaje de redirección, 301 de forma predeterminada, los valores permitidos son: 301, 302, 303, 307, 308. |
 
 Las ubicaciones de una redirección pueden ser literales de cadena (por ejemplo, https://www.example.com/page) o el resultado de una propiedad (por ejemplo, ruta) que se transforme opcionalmente, con la siguiente sintaxis:
