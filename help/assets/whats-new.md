@@ -3,10 +3,10 @@ title: Novedades del centro de contenido
 description: Obtenga más información sobre algunas de las funciones de Content Hub recién lanzadas
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
-workflow-type: ht
-source-wordcount: '699'
-ht-degree: 100%
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,21 @@ El siguiente vídeo muestra las funciones clave de Content Hub:
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de la funcionalidad Content Hub (2025.8.0) es el 28 de agosto de 2025 (igual que la de la versión de AEM as a Cloud Service). La próxima versión con funcionalidades (2025.9.0) se planificó para el 25 de septiembre de 2025.
+La fecha de lanzamiento de la versión de la funcionalidad Content Hub (2025.9.0) es el viernes, 25 de septiembre de 2025 (igual que la de la versión de AEM as a Cloud Service). La próxima versión con funcionalidades (2025.10.0) se planificó para el jueves, 30 de octubre de 2025.
+
+## Funciones de la versión de septiembre {#september-release-features}
+
+**Marcar colecciones como favoritas**
+
+Ahora puede marcar colecciones como Favoritos en Content Hub, lo que facilita su organización y recuperación. Una vez agregadas, tus colecciones favoritas estarán disponibles en la ficha **[!UICONTROL Favoritos]** de la página de inicio de Content Hub.
+
+**Colecciones de anclajes para acceso rápido**
+
+Los administradores de Content Hub ahora pueden anclar colecciones en Content Hub para acceder rápidamente a ellas. Las colecciones ancladas se muestran en una sección **[!UICONTROL Anclada]** específica de la página principal de Colecciones, lo que facilita mantener las colecciones importantes a mano.
+
+>[!IMPORTANT]
+>
+>Estas funciones están disponibles como funciones de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
 
 ## Funciones de la versión de agosto {#august-release-features}
 

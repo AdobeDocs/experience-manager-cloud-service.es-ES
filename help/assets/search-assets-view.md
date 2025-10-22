@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo buscar y descubrir recursos en la 
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 82%
+source-wordcount: '2255'
+ht-degree: 83%
 
 ---
 
@@ -137,8 +137,6 @@ Algunos de sus beneficios clave incluyen:
 
 * **Búsqueda según el contexto**: Reconoce la intención detrás de una consulta, no solo las palabras.
 
-* **Buscar en función de mensajes basados en texto**: Experience Manager Assets aplica filtros al contenido y muestra automáticamente los resultados apropiados en función de mensajes basados en texto simples.
-
 >[!IMPORTANT]
 >
 > Especifique tres o más palabras para que la búsqueda semántica muestre los resultados adecuados.
@@ -173,7 +171,7 @@ Para generar nuevos recursos mediante [!DNL Adobe Firefly]:
 
    ![Integración de Firefly](assets/firefly-integration.png)
 
-   Los nuevos recursos se han generado correctamente. Además, puede cambiar la descripción de la imagen escribiendo el nuevo mensaje de texto en el cuadro de descripción. [Aprenda a escribir un buen aviso de IA para generar contenido extraordinario y relevante](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html?lang=es). También puede [editar la imagen con otras características como cambiar el estilo, las dimensiones de la imagen y más](https://helpx.adobe.com/in/firefly/using/text-to-image.html?lang=es).
+   Los nuevos recursos se han generado correctamente. Además, puede cambiar la descripción de la imagen escribiendo la nueva indicación de texto en el cuadro de descripción. [Aprenda a escribir un buen aviso de IA para generar contenido extraordinario y relevante](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html?lang=es). También puede [editar la imagen con otras características como cambiar el estilo, las dimensiones de la imagen y más](https://helpx.adobe.com/in/firefly/using/text-to-image.html?lang=es).
 
    ![Integración de Firefly](assets/bugatti-type-57.png)
 
@@ -287,7 +285,7 @@ Puede obtener una vista previa para comprobar el diseño y el formato de la pág
 
 ## Búsqueda contextual {#contextual-search}
 
-También puede buscar recursos disponibles en el repositorio definiendo mensajes de texto. Experience Manager Assets transforma automáticamente esos mensajes de texto en filtros de búsqueda y muestra los resultados de la búsqueda. Puede ver y modificar los filtros automáticos mediante el panel Filtros para reducir aún más los resultados de la búsqueda.
+También puede buscar recursos disponibles en el repositorio definiendo indicaciones de texto. Experience Manager Assets transforma automáticamente esas indicaciones de texto en filtros de búsqueda y muestra los resultados de la búsqueda. Puede ver y modificar los filtros automáticos mediante el panel Filtros para reducir aún más los resultados de la búsqueda.
 
 ### Acceso a la búsqueda contextual {#access-contextual-search}
 
@@ -297,15 +295,15 @@ Para acceder a la búsqueda contextual en Experience Manager Assets:
 
    ![Búsqueda contextual](assets/access-contextual-search.png)
 
-1. Defina el mensaje de texto en el cuadro de texto de búsqueda y haga clic en **[!UICONTROL Búsqueda contextual]**.
+1. Defina la indicación de texto en el cuadro de texto de búsqueda y haga clic en **[!UICONTROL Búsqueda contextual]**.
 
-   ![Mensaje de texto de búsqueda contextual](/help/assets/assets/wknd-contextual-search.png)
+   ![Indicación de texto de búsqueda contextual](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] muestra los resultados de la búsqueda.
 
 ### Filtros admitidos {#supported-filters}
 
-La búsqueda contextual admite los siguientes filtros predeterminados. Base sus mensajes de texto en estos filtros para ver los resultados de búsqueda adecuados.
+La búsqueda contextual admite los siguientes filtros predeterminados. Base sus indicaciones de texto en estos filtros para ver los resultados de búsqueda adecuados.
 
 * Altura de la imagen
 
@@ -325,11 +323,11 @@ La búsqueda contextual admite los siguientes filtros predeterminados. Base sus 
 
 * Recursos caducados
 
-### Ejemplos de mensajes de texto {#text-prompts-examples}
+### Ejemplos de indicaciones de texto {#text-prompts-examples}
 
 **Ejemplo 1**
 
-**Mensaje de texto**: imágenes creadas este mes.
+**Indicación de texto**: imágenes creadas este mes.
 
 [!DNL Experience Manager Assets] aplica los siguientes filtros automáticamente y muestra los resultados de la búsqueda:
 
@@ -337,7 +335,7 @@ La búsqueda contextual admite los siguientes filtros predeterminados. Base sus 
 
 **Ejemplo 2**
 
-**Mensaje de texto**: Imágenes de al menos 200 píxeles de altura y 100 píxeles de anchura con playa y cielo despejado.
+**Indicación de texto**: Imágenes de al menos 200 píxeles de altura y 100 píxeles de anchura con playa y cielo despejado.
 
 [!DNL Experience Manager Assets] aplica los siguientes filtros automáticamente y muestra los resultados de la búsqueda:
 
@@ -345,13 +343,13 @@ La búsqueda contextual admite los siguientes filtros predeterminados. Base sus 
 
 **Ejemplo 3**
 
-**Mensaje de texto**: necesito imágenes de cielo azul de 1500 y 2500 píxeles de altura y creadas en el último mes que no hayan caducado ni estén aprobadas.
+**Indicación de texto**: necesito imágenes de cielo azul de 1500 y 2500 píxeles de altura y creadas en el último mes que no hayan caducado ni estén aprobadas.
 
 [!DNL Experience Manager Assets] aplica los siguientes filtros automáticamente y muestra los resultados de la búsqueda:
 
 ![Ejemplo 3 de búsqueda contextual](assets/contextual-search-example3.png)
 
-El siguiente vídeo ilustra el proceso de extremo a extremo desde el acceso a la interfaz de usuario de búsqueda contextual hasta la definición de mensajes de texto y la visualización de los resultados de la búsqueda.
+El siguiente vídeo ilustra el proceso de extremo a extremo desde el acceso a la interfaz de usuario de búsqueda contextual hasta la definición de indicaciones de texto y la visualización de los resultados de la búsqueda.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
@@ -369,7 +367,7 @@ Si necesita facilitar comentarios sobre la función de búsqueda contextual, hag
 
 ![Comentarios sobre la búsqueda contextual](assets/contextual-search-feedback.png)
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 * [Vea un vídeo para buscar recursos en la vista de Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=es)
 
@@ -377,6 +375,6 @@ Si necesita facilitar comentarios sobre la función de búsqueda contextual, hag
 
 * Facilite comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar un problema] ![crear un problema de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha.
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)
 
 

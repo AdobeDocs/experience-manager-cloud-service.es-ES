@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 96%
+source-wordcount: '2081'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -56,7 +56,21 @@ El editor de modelos de contenido para fragmentos de contenido de AEM se ha mode
 
 **Formato de texto mejorado con subcadenas en plantillas de Dynamic Media**
 
-Ahora puede aplicar formato a subcadenas dentro de las capas de texto de plantillas de Dynamic Media. Una palabra o frase seleccionada se trata como una capa independiente, lo que le permite ajustar su fuente, tamaño de fuente, color, etc. La capa de la subcadena está parametrizada para que pueda actualizarla en tiempo real mediante la dirección URL de envío de la plantilla
+Ahora puede aplicar formato a subcadenas dentro de las capas de texto de plantillas de Dynamic Media. Una palabra o frase seleccionada se trata como una capa independiente, lo que le permite ajustar su fuente, tamaño de fuente, color, etc. La capa de subcadena está parametrizada para que pueda actualizarla en tiempo real mediante la dirección URL de entrega de la plantilla.
+
+### Nuevas funciones en el centro de contenido {#new-features-content-hub}
+
+**Marcar colecciones como favoritas**
+
+Ahora puede marcar colecciones como Favoritos en Content Hub, lo que facilita su organización y recuperación. Una vez agregadas, tus colecciones favoritas estarán disponibles en la ficha **[!UICONTROL Favoritos]** de la página de inicio de Content Hub.
+
+**Colecciones de anclajes para acceso rápido**
+
+Los administradores de Content Hub ahora pueden anclar colecciones en Content Hub para acceder rápidamente a ellas. Las colecciones ancladas se muestran en una sección **[!UICONTROL Anclada]** específica de la página principal de Colecciones, lo que facilita mantener las colecciones importantes a mano.
+
+>[!IMPORTANT]
+>
+>Estas funciones están disponibles como funciones de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
 
 ### Nuevas funciones en Dynamic Media con funciones de OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -66,7 +80,7 @@ Mejore la legibilidad humana de Dynamic Media con las URL de OpenAPI aprovechand
 
 >[!NOTE]
 >
->Esta función está disponible como función de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
+>Esta función está disponible como función de disponibilidad limitada. Consulte [este artículo](/help/assets/vanity-urls.md) para comenzar.
 
 <!--
 
@@ -82,7 +96,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +171,7 @@ Días de lanzamiento, eventos en directo, picos de ventas: estos momentos no pue
 >[!NOTE]
 >
 >Disponible como función de disponibilidad limitada desde el 25 de septiembre.
->&#x200B;>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
+>>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
 
 ### Nueva versión de las herramientas para desarrolladores de AEM para Eclipse {#aem-develeper-tools-for-eclipse}
 
