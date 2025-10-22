@@ -5,8 +5,8 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-recommendations: display, noCatalog
-source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+recommendations: noDisplay, noCatalog
+source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 24%
@@ -48,7 +48,7 @@ Al activar la canalización front-end para un sitio, AEM realiza los siguientes 
 
 ## Requisitos  {#requirements}
 
-AEM puede adaptar automáticamente el sitio existente para utilizar la canalización front-end. Para poder realizar este flujo de trabajo, el sitio debe usar [v2 o posterior del componente de página de los componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/wcm-components/page).
+AEM puede adaptar automáticamente el sitio existente para utilizar la canalización front-end. Para poder realizar este flujo de trabajo, el sitio debe usar [v2 o posterior del componente de página de los componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page).
 
 ## Habilitación de la canalización front-end {#enabling}
 
