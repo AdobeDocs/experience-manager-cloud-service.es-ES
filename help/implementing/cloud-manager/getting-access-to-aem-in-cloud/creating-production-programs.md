@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
+source-git-commit: f99a0bfee76c7efd6f3e441db67d30f8a52707e5
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 11%
@@ -30,7 +30,7 @@ Ver [opciones adicionales del programa de producción](#options).
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, cerca de la esquina superior derecha, haga clic en **Agregar programa**.
 
-   ![Página de aterrizaje de Cloud Manager](assets/log-in.png)
+   ![Página de destino de Cloud Manager](assets/log-in.png)
 
 1. En el asistente *Vamos a crear su programa*, en el campo de texto **Nombre del programa**, escriba el nombre que desee para el programa.
 
@@ -91,7 +91,7 @@ La pestaña **Security** proporciona las opciones para activar **HIPAA**, **Prot
 
 Compatible con HIPAA de Adobe y WAF-DDOS (cortafuegos de aplicaciones web - denegación de servicio distribuida) facilita la seguridad basada en la nube como parte de un enfoque de varios niveles para la protección contra vulnerabilidades.
 
-* **HIPAA**: esta opción habilita la implementación de la solución compatible con HIPPA de Adobe.
+* **HIPAA**: esta opción habilita la implementación de la solución compatible con HIPAA de Adobe.
    * [Más información](https://www.adobe.com/trust/compliance/hipaa-ready.html) acerca de la implementación de la solución compatible con HIPAA de Adobe.
    * HIPAA no se puede habilitar o deshabilitar después de la creación del programa.
 * **Protección WAF-DDOS**: esta opción habilita el firewall de aplicaciones web mediante reglas para proteger la aplicación.
