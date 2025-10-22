@@ -3,9 +3,9 @@ title: Notas de la versión de Universal Editor Preview
 description: Estas son las notas de la versión de la vista previa del editor universal.
 feature: Release Information
 role: Admin
-source-git-commit: 7d30aa28b2409cdcb70c5491ee2d2d381d090dad
+source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 ## Próximas nuevas funciones {#what-is-new}
 
 * Ahora se admite copiar y pegar en las pestañas del explorador.
+   * Se limita a entre pestañas que están abiertas al mismo tiempo.
+   * No se admite copiar contenido y luego abrir una nueva pestaña.
 * Ahora puede deshabilitar el botón Cancelar la publicación con una metaetiqueta.
 
 ## Próximas mejoras {#other-improvements}
