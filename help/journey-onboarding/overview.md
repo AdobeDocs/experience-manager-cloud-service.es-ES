@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
-workflow-type: ht
-source-wordcount: '1348'
-ht-degree: 100%
+source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+workflow-type: tm+mt
+source-wordcount: '1362'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,9 @@ ht-degree: 100%
 
 ## Introducción {#introduction}
 
-Adobe Experience Manager es un potente conjunto de servicios de contenido de composición que ofrece rápidamente experiencias personalizadas y de gran impacto en cualquier canal, desbloqueando contenido para todos.  **Edge Delivery Services** es la última innovación de Adobe Experience Manager que permite una velocidad de contenido extrema y ofrece experiencias excepcionales. Obtenga información sobre cómo empezar a trabajar con Edge Delivery Services consultando [Información general de Edge Delivery Services](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/overview). Para comprender cómo usar Edge Delivery Services, consulte la página [Tutorial para desarrolladores](https://www.aem.live/developer/tutorial).
+Adobe Experience Manager (AEM) proporciona flexibilidad tanto en la entrega de contenido como en los enfoques de creación, lo que permite a los equipos elegir el mejor modelo para sus necesidades.
+
+Use [Edge Delivery Services](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/overview) para crear contenido de forma rápida e iterativa y con una alta velocidad, o use el servicio de publicación tradicional para un modelo de publicación empresarial sólido. Cualquier enfoque permite a las organizaciones ofrecer experiencias digitales excepcionales de la manera que mejor se adapte a sus necesidades. Para comenzar con Edge Delivery Services, explore la [Información general de Edge Delivery Services](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/overview) y para obtener más información sobre las opciones modernas de creación, consulte la [Guía de creación](https://www.aem.live/docs/authoring-guide).
 
 La incorporación es el proceso durante el cual un administrador designado del sistema configura AEM as a Cloud Service para su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones en función de sus responsabilidades laborales. Como resultado, cada miembro puede iniciar sesión y acceder a sus recursos de AEM as a Cloud Service.
 
