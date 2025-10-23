@@ -17,7 +17,7 @@ ht-degree: 99%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service | Este artículo |
 
 <span class="preview"> Si se encuentra en GovCloud y necesita conectarse a un inquilino de GCC (Government Cloud Computing), envíe un correo electrónico desde su dirección oficial a aem-forms-ea@adobe.com para solicitar acceso a través del programa para primeros usuarios. </span>
@@ -43,7 +43,7 @@ A continuación se muestran algunos ejemplos de lo que puede hacer después de i
 Para conectar un formulario adaptable con Microsoft® Power Automate, es necesario lo siguiente:
 
 * Licencia de Microsoft® Power Automate Premium.
-* Flujo de Microsoft® [Power Automate &#x200B;](https://docs.microsoft.com/es-es/power-automate/create-flow-solution) con el activador `When an HTTP request is received` para aceptar los datos de envío del formulario adaptable.
+* Flujo de Microsoft® [Power Automate ](https://docs.microsoft.com/es-es/power-automate/create-flow-solution) con el activador `When an HTTP request is received` para aceptar los datos de envío del formulario adaptable.
 * Un usuario de Experience Manager con privilegios de [autor de formularios](/help/forms/forms-groups-privileges-tasks.md) y [administrador de formularios](/help/forms/forms-groups-privileges-tasks.md)
 * La cuenta utilizada para conectarse a Microsoft® Power Automate es la propietaria del flujo de Power Automate configurada para recibir datos del formulario adaptable
 
