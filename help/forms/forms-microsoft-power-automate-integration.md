@@ -5,15 +5,20 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: conectar AEM Forms a Power Automate, automatización de Power Automate AEM Forms, Integrar Power Automate con Formularios adaptables, enviar datos de Formularios adaptables a Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: ht
-source-wordcount: '1531'
-ht-degree: 100%
+source-git-commit: 03f92d950744e653e4ef509bac3c3b4709477e41
+workflow-type: tm+mt
+source-wordcount: '1546'
+ht-degree: 99%
 
 ---
 
 
 # Conectar un formulario adaptable con Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service | Este artículo |
 
 <span class="preview"> Si se encuentra en GovCloud y necesita conectarse a un inquilino de GCC (Government Cloud Computing), envíe un correo electrónico desde su dirección oficial a aem-forms-ea@adobe.com para solicitar acceso a través del programa para primeros usuarios. </span>
 
@@ -294,7 +299,7 @@ Tras [conectar su instancia de Forms as a Cloud Service con Microsoft® Power Au
 
 >[!TAB Editor universal]
 
-1. Inicie sesión en la instancia Autor, seleccione su formulario adaptable.
+1. Inicie sesión en la instancia de autor, seleccione su formulario adaptable.
 1. En el contenedor de configuración, examine y seleccione el contenedor creado en la sección [Crear la configuración de nube de Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) y seleccione **[!UICONTROL Guardar y cerrar]**.
 1. Abra el formulario adaptable para editarlo.
 1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
@@ -302,7 +307,7 @@ Aparece el cuadro de diálogo **Propiedades del formulario**.
 
    >[!NOTE]
    >
-   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del Editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
+   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
    > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar las extensiones del editor universal.
 
 

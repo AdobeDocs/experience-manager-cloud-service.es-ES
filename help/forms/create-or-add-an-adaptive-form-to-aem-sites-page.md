@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
-workflow-type: ht
-source-wordcount: '3160'
-ht-degree: 100%
+source-git-commit: 958c166585ac7eeb667d73744403558b2dc5ce94
+workflow-type: tm+mt
+source-wordcount: '3339'
+ht-degree: 95%
 
 ---
 
@@ -34,8 +34,8 @@ AEM Forms Cloud Service proporciona el contenedor de formulario adaptable y los 
 Si ha creado formularios basados en componentes de base de formularios adaptables o en HTML simples para Sites en el pasado, Adobe recomienda que utilice los componentes principales de formularios adaptables para crear un formulario adaptable en una página de AEM Sites o un Fragmento de experiencia. Le permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios, lo que mejora la experiencia general de creación y administración de formularios adaptables. Vamos a explorar algunas de estas características:
 
 * **Versiones:** Las páginas de AEM Sites ofrecen [sólidas capacidades de versiones](/help/sites-cloud/authoring/sites-console/page-versions.md), lo que le permite realizar un seguimiento y administrar diferentes versiones de los formularios. Esto le permite realizar cambios y mejoras en los formularios al tiempo que se mantiene la capacidad de restablecer versiones anteriores si es necesario. El control de versiones garantiza un enfoque controlado y organizado del desarrollo y la evolución de los formularios.
-* **Segmentación (integración con Adobe Target):** Con las funcionalidades de segmentación de páginas de AEM Sites, también puede [personalizar la experiencia del formulario para diferentes audiencias](/help/sites-cloud/integrating/integrating-adobe-target.md). Al aprovechar los segmentos de usuario y los criterios de segmentación, puede adaptar el contenido, diseño o comportamiento del formulario a grupos específicos de usuarios. Esto le permite proporcionar una experiencia de formulario personalizada y relevante, lo que aumenta las tasas de participación y conversión.
-* **Traducción: Integración perfecta de** AEM Sites [con los servicios de traducción](/help/sites-cloud/administering/translation/overview.md), lo que le permite traducir fácilmente formularios a varios idiomas. Esta función simplifica el proceso de localización y garantiza que los formularios sean accesibles para una audiencia global. Puede administrar las traducciones de forma eficaz dentro de los proyectos de traducción de AEM, lo que reduce el tiempo y el esfuerzo necesarios para la asistencia con formularios multilingües. Consulte la sección de consideraciones para obtener más información sobre la traducción.
+* **Segmentación (integración con Adobe Target):** Con las funcionalidades de segmentación de páginas de AEM Sites, también puede [personalizar la experiencia del formulario para diferentes públicos](/help/sites-cloud/integrating/integrating-adobe-target.md). Al aprovechar los segmentos de usuario y los criterios de segmentación, puede adaptar el contenido, diseño o comportamiento del formulario a grupos específicos de usuarios. Esto le permite proporcionar una experiencia de formulario personalizada y relevante, lo que aumenta las tasas de participación y conversión.
+* **Traducción: Integración perfecta de** AEM Sites [con los servicios de traducción](/help/sites-cloud/administering/translation/overview.md), lo que le permite traducir fácilmente formularios a varios idiomas. Esta función simplifica el proceso de localización y garantiza que los formularios sean accesibles para un público global. Puede administrar las traducciones de forma eficaz dentro de los proyectos de traducción de AEM, lo que reduce el tiempo y el esfuerzo necesarios para la asistencia con formularios multilingües. Consulte la sección de consideraciones para obtener más información sobre la traducción.
 * **Administración de varios sitios y Live Copy:** AEM Sites proporciona [Funciones de administración de varios sitios y Live Copy](/help/sites-cloud/administering/msm/overview.md) sólidas, lo que permite crear y administrar varios sitios web en un único entorno. Ahora esta función le permite reutilizar formularios en diferentes sitios, lo que garantiza la consistencia y reduce los esfuerzos de duplicación. Con el control y la administración centralizados, puede mantener y actualizar de forma eficaz los formularios en varios sitios web.
 * **Temáticas:** Las páginas de AEM Sites proporcionan un marco de trabajo para diseñar y mantener estilos visuales coherentes en varias páginas web. Estas definen colores, fuentes, hojas de estilo y otros elementos visuales que contribuyen a la apariencia general del sitio web. [Puede utilizar las temáticas diseñadas para una página de AEM Sites para un formulario adaptable, lo que ahorra tiempo y esfuerzo](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes).
 * **Etiquetado:** Las páginas de AEM Sites le permiten [asignar etiquetas a una página, a un recurso o a otro contenido](/help/implementing/developing/introduction/tagging-framework.md). Las etiquetas son palabras clave o etiquetas de metadatos que proporcionan una forma de categorizar y organizar el contenido en función de criterios específicos. Puede asignar una o más etiquetas a páginas, recursos o a cualquier otro elemento de contenido dentro de AEM para mejorar la búsqueda y la clasificación de los archivos.
@@ -74,9 +74,11 @@ Antes de empezar a crear o a crear un formulario adaptable, habilite los compone
 
 ### Habilite los componentes principales de formularios adaptables para su entorno de Cloud Service de AEM
 
-Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service.
+Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM as a Cloud Service.
 
-### Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites o de fragmentos de experiencia
+### Añadir bibliotecas de cliente de Forms adaptables a su página o experiencia de AEM Sites
+
+**Caso 1: usar componentes de página de sitios independientes**
 
 Para habilitar la funcionalidad completa del componente Contenedor de formularios adaptables, añada las bibliotecas de cliente Customheaderlibs y Customfooterlibs a la página de AEM Sites mediante la canalización de implementación. Para añadir las bibliotecas:
 
@@ -121,6 +123,22 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
 
 1. [Ejecute la canalización de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=es) para implementar las bibliotecas de cliente en el entorno de AEM as a Cloud Service.
 
+>[!NOTE]
+>
+> Codifique la biblioteca de cliente de funciones personalizadas solo cuando sea necesaria para todos los formularios. Para las bibliotecas que difieren según el tipo de formulario, añádalas a través de directivas de página de plantilla, como se explica en la siguiente sección.
+
+**Caso 2: usar el mismo componente de página de sitios**
+
+Incluya las bibliotecas de cliente en tiempo de ejecución o las bibliotecas de funciones personalizadas en la directiva de página de la plantilla utilizada para crear páginas con formularios.
+
+1. Abra la página de AEM Sites o el Fragmento de experiencia para editarlos. Para abrir la página para editarla, selecciónela y haga clic en **[!UICONTROL Editar]**.
+2. Abra la plantilla de su página Sites o Fragmento de experiencia. Para abrir la plantilla, vaya a **[!UICONTROL Información de página]** ![Información de página](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Editar plantilla]**. Se abre la plantilla correspondiente en el editor de plantillas.
+3. Vaya a la sección **[!UICONTROL Información de página]** ![Información de página](/help/forms/assets/Smock_Properties_18_N.svg) de la plantilla y seleccione la opción **[!UICONTROL Política de página]**. Esto abre las propiedades de la plantilla de AEM Sites, donde puede definir funciones personalizadas o bibliotecas de cliente de tiempo de ejecución.
+4. Haga clic en el botón **[!UICONTROL Agregar]** de la ficha **[!UICONTROL Propiedades]** para agregar nuevas bibliotecas de funciones personalizadas o bibliotecas de tiempo de ejecución.
+5. Haga clic en **[Listo]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476178?quality=12&learn=on)
+
 ### Habilitar Contenedor de Formularios adaptables para su página de AEM Sites o Fragmento de experiencia
 
 Para habilitar el [!UICONTROL Contenedor de formularios adaptables] en la política de la plantilla, siga los siguientes pasos:
@@ -131,8 +149,6 @@ Para habilitar el [!UICONTROL Contenedor de formularios adaptables] en la polít
 1. Haga clic en **[!UICONTROL Listo]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
-
-+++
 
 ## Creación de un formulario adaptable {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 

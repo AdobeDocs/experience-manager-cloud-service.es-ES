@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
+source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
 workflow-type: tm+mt
-source-wordcount: '2503'
-ht-degree: 13%
+source-wordcount: '2534'
+ht-degree: 14%
 
 ---
 
@@ -203,7 +203,7 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 ![Icono Deshacer](assets/undo.png)
 ![Icono de rehacer](assets/redo.png)
 
-* Se puede deshacer y rehacer para ediciones realizadas en contexto, ediciones realizadas a través del panel Propiedades, así como añadir, duplicar, mover y eliminar bloques.
+* Se pueden deshacer y rehacer las ediciones realizadas en el contexto, las ediciones realizadas a través del panel Propiedades, así como añadir, duplicar, mover y eliminar bloques.
 * Deshacer y rehacer está limitado a la sesión actual del explorador.
 
 >[!TIP]
@@ -212,7 +212,9 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 
 ### Copiar y pegar {#copy-paste}
 
-Puede copiar y pegar componentes que se encuentren dentro de [contenedores](/help/implementing/universal-editor/field-types.md#container) en la misma ficha del explorador. Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permiten pegar el componente.
+Puede copiar y pegar componentes que se encuentren dentro de [ contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
+
+Copiar y pegar pueden estar en la misma pestaña del explorador o entre pestañas del explorador, siempre que las pestañas ya estén abiertas. No puede copiar un elemento y, a continuación, abrir una nueva pestaña del explorador para pegarlo.
 
 ![Icono de copiar](assets/copy.png)
 ![Icono de pegar](assets/paste.png)
@@ -227,6 +229,8 @@ Puede copiar y pegar componentes que se encuentren dentro de [contenedores](/hel
 >[!TIP]
 >
 >Use la tecla de acceso directo `Command-C` o `Command-V` para copiar o pegar, respectivamente.
+
+
 
 ## Vista previa del contenido {#previewing-content}
 

@@ -4,10 +4,10 @@ description: Obtenga información acerca de las distintas opciones para personal
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
+source-git-commit: 5be00b5f0ae606a583a07126892bf51af3048a71
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 67%
+source-wordcount: '410'
+ht-degree: 68%
 
 ---
 
@@ -39,7 +39,7 @@ Los siguientes son los valores compatibles con `content`, es decir, las caracter
 | `publish` | Deshabilite toda la funcionalidad [publishing](/help/sites-cloud/authoring/universal-editor/publishing.md), es decir, los botones [publicar](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) y [cancelar publicación](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
 | `publish-live` | Deshabilitar publicación [activa](/help/sites-cloud/authoring/universal-editor/publishing.md) |
 | `publish-preview` | Deshabilitar la publicación de vista previa (si el [servicio de vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md) está disponible) |
-| `unpublish` | Deshabilitar [botón para cancelar la publicación](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) ([característica de vista previa](/help/release-notes/universal-editor/preview.md)) |
+| `unpublish` | Deshabilitar [botón para cancelar la publicación](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
 | `copy` | Deshabilita [los botones de copiar y pegar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
 | `duplicate` | Deshabilita [botón duplicado](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
 | `header-open-page` | Deshabilita [botón Abrir página](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |

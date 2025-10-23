@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: ht
-source-wordcount: '3143'
-ht-degree: 100%
+source-git-commit: 958c166585ac7eeb667d73744403558b2dc5ce94
+workflow-type: tm+mt
+source-wordcount: '3323'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -77,7 +77,7 @@ Antes de empezar a incrustar un nuevo formulario adaptable o un formulario adapt
 
 ### Habilite los componentes principales de formularios adaptables para su entorno de Cloud Service de AEM
 
-Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service.
+Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM as a Cloud Service.
 
 ### Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites o de fragmentos de experiencia
 
@@ -85,12 +85,13 @@ Cuando la opción **[!UICONTROL Cuando el formulario abarca toda la anchura de u
 
 ![Cuando se selecciona la opción Formulario abarca todo el ancho de una página, y se utiliza un formulario adaptable con componentes principales](/help/forms/assets/overlaycorecomponent.gif)
 
+**Caso 1: usar componentes de página de sitios independientes**
 
 Añada las bibliotecas de cliente **Customheaderlibs** y **Customfoterlibs** a la página de AEM Sites mediante la canalización de implementación. Para añadir las bibliotecas de cliente, haga esto:
 
 1. Acceda a [Repositorio de Git de AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=es) y clónelo.
-1. Abra la carpeta Repositorio de Git de AEM Cloud Service en un editor de texto del plan. Por ejemplo, Microsoft® Visual Code.
-1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` y añada el siguiente código al archivo:
+2. Abra la carpeta Repositorio de Git de AEM Cloud Service en un editor de texto del plan. Por ejemplo, Microsoft® Visual Code.
+3. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` y añada el siguiente código al archivo:
 
    ```
        //Customheaderlibs.html
@@ -99,7 +100,7 @@ Añada las bibliotecas de cliente **Customheaderlibs** y **Customfoterlibs** a l
        </sly> 
    ```
 
-1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` y añada el siguiente código al archivo:
+4. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` y añada el siguiente código al archivo:
 
    ```
        //customfooterlibs.html
@@ -108,7 +109,7 @@ Añada las bibliotecas de cliente **Customheaderlibs** y **Customfoterlibs** a l
        </sly> 
    ```
 
-1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` y añada el siguiente código al archivo:
+5. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` y añada el siguiente código al archivo:
 
    ```
        //Customheaderlibs.html
@@ -117,7 +118,7 @@ Añada las bibliotecas de cliente **Customheaderlibs** y **Customfoterlibs** a l
        </sly> 
    ```
 
-1. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` y añada el siguiente código al archivo:
+6. Abra el archivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` y añada el siguiente código al archivo:
 
    ```
        //customfooterlibs.html
@@ -126,7 +127,23 @@ Añada las bibliotecas de cliente **Customheaderlibs** y **Customfoterlibs** a l
        </sly> 
    ```
 
-1. [Ejecute la canalización de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=es) para implementar las bibliotecas de cliente en el entorno de AEM as a Cloud Service.
+7. [Ejecute la canalización de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=es) para implementar las bibliotecas de cliente en el entorno de AEM as a Cloud Service.
+
+>[!NOTE]
+>
+> Codifique la biblioteca de cliente de funciones personalizadas solo cuando sea necesaria para todos los formularios. Para las bibliotecas que difieren según el tipo de formulario, añádalas a través de directivas de página de plantilla, como se explica en la siguiente sección.
+
+**Caso 2: usar el mismo componente de página de sitios**
+
+Incluya las bibliotecas de cliente en tiempo de ejecución o las bibliotecas de funciones personalizadas en la directiva de página de la plantilla utilizada para crear páginas con formularios.
+
+1. Abra la página de AEM Sites o el Fragmento de experiencia para editarlos. Para abrir la página para editarla, selecciónela y haga clic en **[!UICONTROL Editar]**.
+2. Abra la plantilla de su página Sites o Fragmento de experiencia. Para abrir la plantilla, vaya a **[!UICONTROL Información de página]** ![Información de página](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Editar plantilla]**. Se abre la plantilla correspondiente en el editor de plantillas.
+3. Vaya a la sección **[!UICONTROL Información de página]** ![Información de página](/help/forms/assets/Smock_Properties_18_N.svg) de la plantilla y seleccione la opción **[!UICONTROL Política de página]**. Esto abre las propiedades de la plantilla de AEM Sites, donde puede definir funciones personalizadas o bibliotecas de cliente de tiempo de ejecución.
+4. Haga clic en el botón **[!UICONTROL Agregar]** de la ficha **[!UICONTROL Propiedades]** para agregar nuevas bibliotecas de funciones personalizadas o bibliotecas de tiempo de ejecución.
+5. Haga clic en **[Listo]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476178?quality=12&learn=on)
 
 ### Habilitar formularios adaptables: incrustados (v2) para su página de AEM Sites o fragmento de experiencia
 
@@ -246,7 +263,7 @@ Puede personalizar la configuración avanzada del componente **[!UICONTROL Formu
 * **Después del envío**: seleccione la acción que debe activarse después del envío del formulario. Puede elegir mostrar un mensaje o una página de agradecimiento.
    * **Mostrar mensaje de agradecimiento**: escriba un mensaje usando el editor de texto enriquecido para mostrar en el envío del formulario. Esta opción solo está disponible cuando elige mostrar un mensaje de agradecimiento.
    * **Página de agradecimiento**: examine y seleccione la página que desea mostrar después al enviar el formulario. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
-   * **Redirigir a la página de agradecimiento**: active la opción para reemplazar la página que contiene el formulario adaptable incrustado por una página de agradecimiento. De lo contrario, la página de agradecimiento reemplaza al formulario adaptable en el componente **[!UICONTROL Formularios adaptables: incrustados]**, sin actualizar la página de Sites subyacente. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
+   * **Redirigir a la página de agradecimiento**: habilite la opción para reemplazar la página que contiene el formulario adaptable incrustado por una página de agradecimiento. De lo contrario, la página de agradecimiento reemplaza al formulario adaptable en el componente **[!UICONTROL Formularios adaptables: incrustados]**, sin actualizar la página de Sites subyacente. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
    * **Mensaje de agradecimientos**: confirmación breve o que se muestra en la pantalla después de enviar correctamente un formulario.
    * **Página de agradecimiento**: examine y seleccione la página que desea mostrar después del envío correcto de un formulario.
 

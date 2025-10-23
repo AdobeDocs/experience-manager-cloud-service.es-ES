@@ -3,17 +3,17 @@ title: Notas de la versión de Universal Editor Preview
 description: Estas son las notas de la versión de la vista previa del editor universal.
 feature: Release Information
 role: Admin
-source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
+source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 0%
+source-wordcount: '132'
+ht-degree: 1%
 
 ---
 
 
 # Notas de la versión de Universal Editor Preview {#preview}
 
-Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 23 de octubre de 2025.
+Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 30 de octubre de 2025.
 
 Estas notas de la versión de **preview** se proporcionan para que sepa qué cambios se avecinan en el editor universal y pueda probarlos al [cambiar al entorno de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,14 +27,9 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 
 ## Próximas nuevas funciones {#what-is-new}
 
-* Ahora se admite copiar y pegar en las pestañas del explorador.
-   * Se limita a entre pestañas que están abiertas al mismo tiempo.
-   * No se admite copiar contenido y luego abrir una nueva pestaña.
-* Ahora puede deshabilitar el botón Cancelar la publicación con una metaetiqueta.
+* Por determinar
 
 ## Próximas mejoras {#other-improvements}
 
-* Se ha mejorado el árbol de estructura.
-* Ahora se admiten las imágenes vinculadas.
-* Se mejoraron las operaciones de deshacer y rehacer.
+* Por determinar
 
