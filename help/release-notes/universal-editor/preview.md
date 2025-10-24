@@ -3,10 +3,10 @@ title: Notas de la versión de Universal Editor Preview
 description: Estas son las notas de la versión de la vista previa del editor universal.
 feature: Release Information
 role: Admin
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '194'
+ht-degree: 0%
 
 ---
 
@@ -27,9 +27,15 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 
 ## Próximas nuevas funciones {#what-is-new}
 
-* Por determinar
+* Insertar imagen para nuevo RTE
+* Nuevo extremo `/configuration`
 
 ## Próximas mejoras {#other-improvements}
 
-* Por determinar
-
+* Ahora se informa al evento de actualización si la acción se ha deshecho.
+* La cadena `No results` ahora depende de la configuración regional del explorador en las etiquetas del Editor universal.
+* Se ha corregido un salto de línea adicional en el botón de publicación del Editor universal.
+* Se ha realizado la limpieza para aplicar parches a la API.
+* El botón Seleccionar contenido ahora está visible en Safari.
+* Se corrigió la compilación de RPM.
+* Actualización de CORS para evitar volver a actualizar el texto editado después de guardarlo.
