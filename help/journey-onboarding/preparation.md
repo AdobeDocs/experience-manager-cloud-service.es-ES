@@ -33,7 +33,7 @@ No se preocupe si no está familiarizado con todos los términos utilizados en e
 
 This video summarizes the onboarding process laid out in this journey and is intended as an option overview. All topics in the video are presented in detail within the journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431502/?captions=spa&quality=12&learn=on)
 
 -->
 
