@@ -4,7 +4,7 @@ description: Conozca las directrices para el desarrollo en AEM as a Cloud Servic
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a352261034188cc66a0bc7f2472ef8340c778c13
+source-git-commit: c7ba218faac76c9f43d8adaf5b854676001344cd
 workflow-type: tm+mt
 source-wordcount: '2768'
 ht-degree: 4%
@@ -17,7 +17,7 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="Directrices de desarrollo de AEM as a Cloud Service"
 >abstract="Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS."
->additional-url="https://video.tv.adobe.com/v/345901?captions=spa" text="Demostración de la estructura del paquete"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Demostración de la estructura del paquete"
 
 Este documento presenta directrices para el desarrollo en AEM as a Cloud Service y sobre formas importantes en que difiere de AEM local y de AEM en AMS.
 
@@ -25,7 +25,7 @@ Este documento presenta directrices para el desarrollo en AEM as a Cloud Service
 
 El código que se ejecuta en AEM as a Cloud Service debe tener en cuenta que siempre se ejecuta en un clúster. Esto significa que siempre hay más de una instancia en ejecución. El código debe ser flexible, especialmente porque una instancia puede detenerse en cualquier momento.
 
-Durante la actualización de AEM as a Cloud Service, hay instancias con el código antiguo y el nuevo ejecutándose en paralelo. Por lo tanto, el código antiguo no debe romperse con el contenido creado por el nuevo código y el nuevo debe poder hacer frente al contenido antiguo.
+Durante la actualización de AEM as a Cloud Service, hay instancias con el código antiguo y el nuevo ejecutándose en paralelo. Por lo tanto, el código antiguo no debe romperse con el contenido creado por el nuevo, y el nuevo debe poder lidiar con el contenido antiguo.
 
 Si es necesario identificar el principal en el clúster, se puede utilizar la API de detección de Apache Sling para detectarlo.
 
@@ -35,17 +35,17 @@ El estado no debe conservarse en la memoria, sino que debe persistir en el repos
 
 ## Estado en el sistema de archivos {#state-on-the-filesystem}
 
-No utilice el sistema de archivos de la instancia en AEM as a Cloud Service. El disco es efímero y se elimina cuando las instancias se reciclan. Es posible el uso limitado del sistema de archivos para el almacenamiento temporal relacionado con el procesamiento de solicitudes únicas, pero no se debe abusar de él para archivos enormes. Esto se debe a que puede tener un impacto negativo en la cuota de uso de recursos y encontrarse con limitaciones de disco.
+No utilice el sistema de archivos de la instancia en AEM as a Cloud Service. El disco es efímero y se elimina cuando se reciclan las instancias. Es posible el uso limitado del sistema de archivos para el almacenamiento temporal relacionado con el procesamiento de solicitudes únicas, pero no se debe abusar de él para archivos enormes. Esto se debe a que puede tener un impacto negativo en la cuota de uso de recursos y encontrarse con limitaciones de disco.
 
 Por ejemplo, cuando no se admite el uso del sistema de archivos, el nivel de publicación debe garantizar que los datos que deban persistir se envíen a un servicio externo para un almacenamiento a largo plazo.
 
 ## Observación {#observation}
 
-De forma similar, con todo lo que sucede asincrónicamente, como actuar sobre eventos de observación, no se puede garantizar que se ejecute localmente y, por lo tanto, debe utilizarse con cuidado. Esto es así tanto para eventos JCR como para eventos de recursos de Sling. En el momento en que se produce un cambio, la instancia puede eliminarse y reemplazarse por una instancia diferente. Otras instancias de la topología que están activas en ese momento pueden reaccionar a ese evento. En este caso, sin embargo, esto no será un evento local y podría incluso no haber un líder activo en caso de una elección de líder en curso cuando se emita el evento.
+Del mismo modo, con todo lo que sucede asincrónicamente, como actuar sobre eventos de observación, no se puede garantizar que se ejecute localmente y, por lo tanto, debe utilizarse con cuidado. Esto es así tanto para eventos JCR como para eventos de recursos de Sling. En el momento en que se produce un cambio, la instancia puede eliminarse y reemplazarse por una instancia diferente. Otras instancias de la topología que están activas en ese momento pueden reaccionar a ese evento. En este caso, sin embargo, esto no será un evento local y podría incluso no haber un líder activo en caso de una elección de líder en curso cuando se emita el evento.
 
 ## Tareas de fondo y trabajos de larga duración {#background-tasks-and-long-running-jobs}
 
-El código ejecutado como tarea en segundo plano debe suponer que la instancia en la que se está ejecutando puede caerse en cualquier momento. Por lo tanto, el código debe ser flexible y, lo que es más importante, reanudable. Esto significa que si el código se vuelve a ejecutar no debe comenzar desde el principio de nuevo, sino más bien cerca de desde donde lo dejó. Aunque este no es un requisito nuevo para este tipo de código, en AEM as a Cloud Service es más probable que se produzca una eliminación de instancias.
+El código ejecutado como tarea en segundo plano debe suponer que la instancia en la que se está ejecutando puede caerse en cualquier momento. Por lo tanto, el código debe ser flexible y, lo que es más importante, reanudable. Esto significa que si el código se vuelve a ejecutar, no debe comenzar desde el principio de nuevo, sino más bien cerca de donde lo dejó. Aunque este no es un requisito nuevo para este tipo de código, en AEM as a Cloud Service es más probable que se produzca una eliminación de instancias.
 
 Para minimizar los problemas, si es posible deben evitarse los trabajos de larga duración y, como mínimo, deben poder reanudarse. Para ejecutar estos trabajos, utilice Trabajos de Sling, que tienen una garantía de al menos una vez y, por lo tanto, si se interrumpen, se vuelven a ejecutar lo antes posible. Pero probablemente no deberían empezar desde el principio de nuevo. Para programar estos trabajos, es mejor usar el programador [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), ya que esto nuevamente garantiza la ejecución de al menos una vez.
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service solo admite la interfaz de usuario táctil para el códig
 
 Los binarios y bibliotecas nativos no deben implementarse ni instalarse en entornos en la nube.
 
-Además, el código no debe intentar descargar binarios nativos o extensiones java nativas (por ejemplo, JNI) durante la ejecución.
+Además, el código no debe intentar descargar binarios nativos o extensiones Java nativas (por ejemplo, JNI) durante la ejecución.
 
 ## Sin binarios de streaming a través de AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -103,15 +103,15 @@ Los entornos de producción tienen un tamaño mayor para garantizar un funcionam
 
 Los entornos de desarrollo y de desarrollo rápido deben limitarse al desarrollo, el análisis de errores y las pruebas funcionales, y no están diseñados para procesar cargas de trabajo elevadas ni grandes cantidades de contenido.
 
-Por ejemplo, cambiar una definición de índice en un repositorio de contenido grande en un entorno de desarrollo puede resultar en una reindexación que resulta en un procesamiento excesivo. Las pruebas que requieren contenido sustancial deben ejecutarse en entornos de ensayo.
+Por ejemplo, cambiar una definición de índice en un repositorio de contenido grande en un entorno de desarrollo puede resultar en una reindexación, lo que resulta en un procesamiento excesivo. Las pruebas que requieren contenido sustancial deben ejecutarse en entornos de ensayo.
 
 ## Monitorización y depuración {#monitoring-and-debugging}
 
 ### Registros {#logs}
 
-Para el desarrollo local, las entradas de registros se escriben en archivos locales en la carpeta `/crx-quickstart/logs`.
+Para el desarrollo local, las entradas de registro se escriben en archivos locales en la carpeta `/crx-quickstart/logs`.
 
-En entornos de Cloud, los desarrolladores pueden descargar registros a través de Cloud Manager o utilizar una herramienta de línea de comandos para rastrearlos. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+En entornos en la nube, los desarrolladores pueden descargar registros a través de Cloud Manager o utilizar una herramienta de línea de comandos para rastrearlos. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Estableciendo el nivel de registro**
 
@@ -166,7 +166,7 @@ Los niveles de registro son los siguientes:
 
 ### Volcados de procesos {#thread-dumps}
 
-Los volcados de hilos en entornos de Cloud se recopilan de forma continua, pero no se pueden descargar de forma automática en este momento. Mientras tanto, póngase en contacto con el servicio de asistencia de AEM si son necesarios volcados de subprocesos para depurar un problema y especificar la ventana de tiempo exacta.
+Los volcados de hilos en entornos de Cloud se recopilan de forma continua, pero no se pueden descargar de forma automática en este momento. Mientras tanto, póngase en contacto con el servicio de asistencia de AEM si son necesarios volcados de procesos para depurar un problema y especificar la ventana de tiempo exacta.
 
 ## CRX/DE Lite y AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
@@ -215,11 +215,11 @@ También resulta útil para la depuración, ya que AEM as a Cloud Service Develo
 
 ![Consola de desarrollador 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Para los programas de producción, el acceso a AEM as a Cloud Service Developer Console se define mediante la &quot;Cloud Manager - Developer Role&quot; en Adobe Admin Console, mientras que para los programas de zona protegida, AEM as a Cloud Service Developer Console está disponible para cualquier usuario con un perfil de producto que le permita acceder a AEM as a Cloud Service. Para todos los programas, se necesita &quot;Cloud Manager: función de desarrollador&quot; para los volcados de estado y el explorador de repositorios y los usuarios también deben definirse en el perfil de producto de los usuarios de AEM o los administradores de AEM en los servicios de autor y publicación para ver los datos de ambos servicios. Para obtener más información sobre cómo configurar permisos de usuario, consulte [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=es).
+Para los programas de producción, el acceso a AEM as a Cloud Service Developer Console se define mediante la &quot;Cloud Manager - Developer Role&quot; en Adobe Admin Console, mientras que para los programas de zona protegida, AEM as a Cloud Service Developer Console está disponible para cualquier usuario con un perfil de producto que le permita acceder a AEM as a Cloud Service. Para todos los programas, se necesita &quot;Cloud Manager: función de desarrollador&quot; para los volcados de estado y el explorador de repositorios y los usuarios también deben definirse en el perfil de producto de los usuarios de AEM o los administradores de AEM en los servicios de autor y publicación para ver los datos de ambos servicios. Para obtener más información sobre cómo configurar permisos de usuario, consulte [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Monitorización del rendimiento {#performance-monitoring}
 
-Adobe supervisa el rendimiento de las aplicaciones y toma medidas para controlar si se observa deterioro. Actualmente, no se pueden observar las métricas de la aplicación.
+Adobe supervisa el rendimiento de las aplicaciones y toma medidas para corregir cualquier deterioro que se observe. Actualmente, no se pueden observar las métricas de la aplicación.
 
 ## Envío de correo electrónico {#sending-email}
 
@@ -235,22 +235,22 @@ De forma predeterminada, los puertos utilizados para enviar correo electrónico 
 
 Se recomienda configurar la red avanzada con un parámetro `kind` establecido en `flexiblePortEgress`, ya que Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible. Si se necesita una dirección IP de salida única, elija un parámetro `kind` de `dedicatedEgressIp`. Si ya ha configurado una VPN por otros motivos, también puede utilizar la dirección IP única proporcionada por esa variación avanzada de red.
 
-Debe enviar correo electrónico a través de un servidor de correo en lugar de directamente a los clientes de correo electrónico. De lo contrario, es posible que los correos electrónicos se bloqueen.
+Debe enviar un correo electrónico a través de un servidor de correo en lugar de directamente a los clientes de correo electrónico. De lo contrario, es posible que los correos electrónicos se bloqueen.
 
 ### Envío de correos electrónicos {#sending-emails}
 
-Se debe usar el servicio OSGI del servicio de correo CQ de [Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=es#configuring-the-mail-service) y los mensajes de correo electrónico se deben enviar al servidor de correo indicado en la solicitud de soporte en lugar de directamente a los destinatarios.
+Se debe usar el servicio OSGI del servicio de correo CQ de [Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service), y los mensajes de correo electrónico se deben enviar al servidor de correo indicado en la solicitud de soporte, en lugar de directamente a los destinatarios.
 
 ### Configuración {#email-configuration}
 
-Los mensajes de correo electrónico en AEM se deben enviar mediante el servicio OSGi [Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=es#configuring-the-mail-service).
+Los mensajes de correo electrónico en AEM se deben enviar mediante el servicio OSGi [Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Consulte la [documentación de AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=es) para obtener más información sobre cómo configurar el correo electrónico. Para AEM as a Cloud Service, tenga en cuenta los siguientes ajustes necesarios en el servicio `com.day.cq.mailer.DefaultMailService OSGI`:
+Consulte la [documentación de AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) para obtener más información sobre cómo configurar el correo electrónico. Para AEM as a Cloud Service, tenga en cuenta los siguientes ajustes necesarios en el servicio `com.day.cq.mailer.DefaultMailService OSGI`:
 
 * El nombre de host del servidor SMTP debe establecerse en $[env:AEM_PROXY_HOST;default=proxy.túnel]
 * El puerto del servidor SMTP debe establecerse en el valor del puerto proxy original establecido en el parámetro portForwards utilizado en la llamada de API al configurar la red avanzada. Por ejemplo, 30465 (en lugar de 465)
 
-El puerto del servidor SMTP debe establecerse como el valor `portDest` establecido en el parámetro portForwards utilizado en la llamada API al configurar la red avanzada y el valor `portOrig` debe ser un valor significativo que se encuentre dentro del intervalo requerido de 30000 - 30999. Por ejemplo, si el puerto del servidor SMTP es 465, el puerto 30465 debe usarse como el valor `portOrig`.
+El puerto del servidor SMTP debe establecerse como el valor `portDest` establecido en el parámetro portForwards utilizado en la llamada API al configurar la red avanzada, y el valor `portOrig` debe ser un valor significativo que se encuentre dentro del intervalo requerido de 30000 - 30999. Por ejemplo, si el puerto del servidor SMTP es 465, el puerto 30465 debe usarse como el valor `portOrig`.
 
 En este caso, y suponiendo que SSL necesita estar habilitado, en la configuración del servicio **Day CQ Mail Service OSGI**:
 
