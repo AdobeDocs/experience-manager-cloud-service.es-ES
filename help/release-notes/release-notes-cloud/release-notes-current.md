@@ -147,7 +147,7 @@ Días de lanzamiento, eventos en directo, picos de ventas: estos momentos no pue
 >[!NOTE]
 >
 >Disponible como función de disponibilidad limitada desde el 25 de septiembre.
->>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
+>&#x200B;>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
 
 ### Registro de reenvío de AEM a más destinos {#log-forwarding}
 
