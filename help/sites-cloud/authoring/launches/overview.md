@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
+source-git-commit: 20ad1d468ac0d8ec3933477f954120debe4e9240
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 76%
+source-wordcount: '1027'
+ht-degree: 73%
 
 ---
 
@@ -18,17 +18,15 @@ En Adobe Experience Manager (AEM) as a Cloud Service, los lanzamientos le permit
 
 Se crea un *Launch* para permitirle realizar cambios con el fin de prepararse para una publicación futura y, al mismo tiempo, mantener el contenido actual. Para las páginas de AEM, esto significa que está editando dos versiones al mismo tiempo: páginas que se publican actualmente y una versión de esas páginas, que se publicarán a la vez en el futuro. Una vez que llegue ese momento, puede reemplazar las páginas originales y publicar las nuevas versiones.
 
-<!--
 >[!NOTE]
 >
->Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>Los lanzamientos también están disponibles para los fragmentos de contenido. Los conceptos básicos son los mismos, pero hay diferencias en la forma de administrarlos en AEM.
 >
->For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>Para obtener información detallada, consulte [Inicios para fragmentos de contenido](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 Usted crea un *Lanzamiento* y, después de editar y actualizar sus páginas de *Lanzamiento*, las *Promociona* de nuevo a *Source*. A continuación, puede activar estas páginas de *Source* (nivel superior). La promoción duplica el contenido del lanzamiento en las páginas de origen y se puede realizar de forma manual o automática (según los campos establecidos a la hora de crear y editar el lanzamiento).
 
-Por ejemplo, las páginas de productos de temporada de su tienda en línea se actualizan trimestralmente para que los productos destacados se correspondan con la temporada actual. Para preparar la próxima actualización trimestral, se puede crear un lanzamiento de las páginas web correspondientes. Durante el trimestre, se acumulan los cambios siguientes en la copia de lanzamiento:
+Por ejemplo, las páginas de producto de temporada de su tienda en línea se actualizan trimestralmente para que los productos destacados se correspondan con la temporada actual. Para preparar la próxima actualización trimestral, se puede crear un lanzamiento de las páginas web correspondientes. Durante el trimestre, se acumulan los cambios siguientes en la copia de lanzamiento:
 
 * Cambios en las páginas de origen que se producen como resultado de tareas normales de mantenimiento. Estos cambios se duplican automáticamente en las páginas de lanzamiento.
 * Ediciones que se realizan en las páginas de lanzamiento directamente en preparación para el trimestre siguiente.
@@ -115,13 +113,11 @@ Los lanzamientos permiten realizar lo siguiente:
 
 ## La consola Lanzamientos {#the-launches-console}
 
-<!--
 >[!NOTE]
 >
->This console is only for Launches for Pages. 
+>Esta consola solo es para Lanzamientos para páginas.
 >
->To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>Para administrar los fragmentos de contenido, consulte [Inicios para fragmentos de contenido](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 La consola Lanzamientos proporciona una descripción general de los lanzamientos y le permite actuar sobre los enumerados.
 

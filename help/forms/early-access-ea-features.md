@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: a974859746ca20f1979b773668a66be0197f623d
 workflow-type: tm+mt
-source-wordcount: '2940'
+source-wordcount: '3019'
 ht-degree: 22%
 
 ---
@@ -121,6 +121,17 @@ Interactive Communications en Cloud es una potente solución para crear, adminis
 * **Vista previa de PDF:** Vista previa de la comunicación interactiva sin datos, archivos JSON locales o modelos de datos para realizar pruebas flexibles basadas en datos.
 * **Fuentes personalizadas:** Incruste fuentes personalizadas o aprobadas por la organización para garantizar un procesamiento de PDF coherente y de marca en todos los dispositivos.
 * **Importar y exportar:** migre y reutilice sin problemas la comunicación interactiva con sus fragmentos y modelos de datos entre entornos.
+
+* **Bloqueo de plantillas**: bloquea los elementos de contenido y diseño dentro de las plantillas para mantener la integridad de la marca y evitar modificaciones no autorizadas.
+
+* **Desbordamiento de contenido**: la opción &quot;Permitir saltos de página dentro del contenido&quot; permite diseños fluidos para una edición sin problemas de varias páginas y una mejor administración de texto para documentos complejos.
+
+* **Edición de archivos XDP**: ahora puede editar archivos XDP en un explorador en lugar de Forms Designer que se ejecuta únicamente en el escritorio de Microsoft Windows.
+
+##### Numeración dinámica de páginas
+
+Muestre automáticamente &quot;Page # of ##&quot; en las páginas maestras para una paginación clara y coherente en los documentos de varias páginas.
+
 
 
 #### Casos de uso:

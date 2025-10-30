@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
+source-git-commit: d1e5651dcad75df430e7055f4f8162e666d91f04
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2021'
 ht-degree: 35%
 
 ---
@@ -68,7 +68,7 @@ Sin embargo, probablemente no quiera usar el mismo contenido de *exacto* para to
 
 Los fragmentos de contenido le permiten lo siguiente:
 
-* Pensar en cómo llegar a las audiencias de destino de forma eficaz en todos los canales.
+* Pensar en cómo llegar a los públicos destinatarios de forma eficaz en todos los canales.
 * Crear y administrar contenido editorial neutro para el canal.
 * Creargrupos de contenido para una amplia gama de canales.
 * Diseñar variaciones de contenido para canales específicos.
@@ -103,6 +103,7 @@ Una vez creados los fragmentos, puede:
 * [Analice](/help/sites-cloud/administering/content-fragments/analysis.md) la estructura del fragmento de contenido mediante el editor
 * [Acceda a sus fragmentos con GraphQL para enviarlos sin encabezado a sus aplicaciones](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 * [Integrar y usar los fragmentos de contenido en Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+* Crear y administrar [lanzamientos para fragmentos de contenido](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * [O use sus fragmentos para la creación de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]

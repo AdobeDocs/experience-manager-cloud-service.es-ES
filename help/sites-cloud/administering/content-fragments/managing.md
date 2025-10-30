@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 6df762075346971aa10536c1f6c09fcd4272a19a
+source-git-commit: d97082c733b9bcae762f4ffbff012cfdbbada3bd
 workflow-type: tm+mt
-source-wordcount: '2920'
+source-wordcount: '2927'
 ht-degree: 36%
 
 ---
@@ -63,7 +63,9 @@ Aquí se pueden ver tres áreas principales:
    * Aquí puede ocultar o mostrar el árbol de carpetas
    * Puede seleccionar una rama específica del árbol
    * Se puede cambiar el tamaño para mostrar carpetas anidadas
-   * Además de los fragmentos de contenido, puede ver [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) o [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); también puede comprimir o expandir los vínculos a los paneles
+   * Además de los fragmentos de contenido, puede:
+      * Ver [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) o [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); también puede comprimir o expandir los vínculos a los paneles
+      * Crear y administrar [lanzamientos para fragmentos de contenido](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * Panel principal/derecho, desde aquí puede hacer lo siguiente:
    * Consulte la lista de todos los fragmentos de contenido en la rama seleccionada del árbol:
       * Se mostrarán los fragmentos de contenido de la carpeta seleccionada y todas las carpetas secundarias:
