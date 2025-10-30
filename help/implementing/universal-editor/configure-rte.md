@@ -3,13 +3,13 @@ title: Configuración del RTE para el editor universal
 description: Descubra cómo puede configurar el editor de texto enriquecido (RTE) en el editor universal.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 60699db418e5f02b8bdb0471eb2996c9caf5694b
+exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
+source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '497'
 ht-degree: 1%
 
 ---
-
 
 # Configuración del RTE para el editor universal {#configure-rte}
 
@@ -73,7 +73,7 @@ La configuración de la barra de herramientas controla qué opciones de edición
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink"],
+    "insert": ["link", "unlink", "image"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -158,6 +158,27 @@ Las acciones de vínculo admiten el control de atributos de destino para adminis
 * `hideTarget`: `true` - Excluir completamente el atributo de destino de los vínculos
 
 La acción `unlink` solo aparece cuando el cursor se coloca dentro de un vínculo existente. Quita el formato del vínculo y conserva el contenido del texto.
+
+### Acciones de imagen {#image}
+
+Las acciones de imagen admiten el ajuste de elementos de imagen para generar un marcado de imagen interactivo. Las secciones disponibles son las siguientes:
+
+```json
+{
+  "actions": {
+    "image": {
+      "wrapInPicture": false,     // Use <img> tag (default)
+      "shortcut": "Mod-Shift-I",  // Custom keyboard shortcut
+      "label": "Insert Image"     // Custom button label
+    }
+  }
+}
+```
+
+#### Opciones de configuración de imagen {#image-options}
+
+* `wrapInPicture`: `false` (predeterminado) - Generar elementos `<img>` simples
+* `wrapInPicture`: `true`: ajuste de imágenes en `<picture>` elementos para un diseño interactivo
 
 ### Otras acciones {#other}
 

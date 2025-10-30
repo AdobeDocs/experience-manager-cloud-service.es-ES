@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2025.10.24 del editor universal
-description: Estas son las notas de la versión 2025.10.24 del editor universal.
+title: Notas de la versión 2025.10.30 del editor universal
+description: Estas son las notas de la versión 2025.10.30 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
+source-git-commit: e3e571bef450ddc09eb30ab7d73b144ea521a87b
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 63%
+source-wordcount: '224'
+ht-degree: 58%
 
 ---
 
 
-# Notas de la versión 2025.10.24 del editor universal {#release-notes}
+# Notas de la versión 2025.10.30 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal de 24 de octubre de 2025.
+Estas son las notas de la versión del editor universal del 30 de octubre de 2025.
 
 >[!TIP]
 >
@@ -26,10 +26,8 @@ Estas son las notas de la versión del editor universal de 24 de octubre de 2025
 
 ## Novedades {#what-is-new}
 
-* [Ahora se admite copiar y pegar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) en las fichas del explorador.
-   * Se limita a entre pestañas que están abiertas al mismo tiempo.
-   * No se admite copiar contenido y luego abrir una nueva pestaña.
-* Ahora puede deshabilitar el botón Cancelar la publicación con una [etiqueta meta.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* [El nuevo RTE](#new-rte) ahora puede insertar imágenes.
+   * Esta característica está deshabilitada para OtB y debe habilitarse explícitamente mediante una definición de filtro [Filter.](/help/implementing/universal-editor/configure-rte.md#toolbar)
 
 ## Funciones de adopción anticipada {#early-adopter}
 
@@ -41,6 +39,10 @@ El nuevo RTE de ProseMirror, que cuenta con un selector de páginas en el cuadro
 
 ## Otras mejoras {#other-improvements}
 
-* Se ha mejorado el árbol de estructura.
-* Ahora se admiten las imágenes vinculadas.
-* Se mejoraron las operaciones de deshacer y rehacer.
+* Ahora se informa al evento de actualización si la acción se ha deshecho.
+* La cadena `No results` ahora depende de la configuración regional del explorador en las etiquetas del Editor universal.
+* Se ha corregido un salto de línea adicional en el botón de publicación del Editor universal.
+* Se ha realizado la limpieza para aplicar parches a la API.
+* El botón Seleccionar contenido ahora está visible en Safari.
+* Se corrigió la compilación de RPM.
+* Actualización de CORS para evitar volver a actualizar el texto editado después de guardarlo.
