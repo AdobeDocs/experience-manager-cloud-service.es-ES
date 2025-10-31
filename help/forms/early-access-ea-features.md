@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: a974859746ca20f1979b773668a66be0197f623d
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '3019'
-ht-degree: 22%
+source-wordcount: '3076'
+ht-degree: 21%
 
 ---
 
@@ -302,7 +302,11 @@ El almacenamiento de PDF en Azure Blob Storage permite una administración centr
 
 ### Mejoras en el Editor visual de reglas
 
-* El Editor de reglas visuales de Forms adaptable ahora admite la integración de [API directa sin requerir un modelo de datos de formulario](/help/forms/api-integration-in-rule-editor.md). Puede conectarse a un extremo de API introduciendo su URL JSON o importando la configuración mediante un comando cURL. Después de la integración, la API se puede invocar usando la acción `Invoke Service`.
+* [Integración directa de API](/help/forms/api-integration-in-rule-editor.md): el editor de reglas visuales de Forms adaptable ahora admite la integración directa de API sin requerir un modelo de datos de formulario. Puede conectarse a un extremo de API introduciendo su URL JSON o importando la configuración mediante un comando cURL. Después de la integración, la API se puede invocar usando la acción `Invoke Service`.
+
+* [Navegación mejorada con compatibilidad con carga útil de evento](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service): la acción **Navegar a** de los controladores de invocación de servicio admite `EVENT_PAYLOAD`, lo que permite a los autores de formularios configurar acciones de seguimiento basadas en respuestas de eventos.
+
+* [Compatibilidad con funciones y expresiones matemáticas en parámetros de entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): los parámetros de entrada ahora admiten llamadas a funciones y expresiones matemáticas, lo que permite a los autores de formularios pasar valores calculados dinámicamente directamente.
 
 ## Ver también
 

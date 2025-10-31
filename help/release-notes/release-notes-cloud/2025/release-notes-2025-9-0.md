@@ -3,10 +3,10 @@ title: Notas de la versión 2025.9.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2025.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: e41828b04a33cc36ee2fc8a4704d9c3cf352830b
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 92%
+source-wordcount: '2083'
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -107,19 +107,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 El paso del flujo de trabajo Invocar modelo de datos de formulario ahora admite la gestión de metadatos del lado del flujo de trabajo para matrices de archivos adjuntos codificados en Base64 en modelos de datos de formulario basados en la lista de SharePoint. Con esta mejora, el paso del flujo de trabajo puede pasar, almacenar y recuperar metadatos como el nombre de archivo, el tipo MIME y las propiedades personalizadas para cada archivo adjunto. Esta funcionalidad permite una administración de datos más completa y facilita una integración descendente sin problemas. Para obtener más información, consulte [Mayor compatibilidad en el paso del flujo de trabajo Invocar modelo de datos de formulario para los archivos adjuntos de lista de SharePoint](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
 
-### Funciones de la versión preliminar de AEM Forms
-
-**Mejoras en el editor de reglas**
-
-El editor de reglas ahora admite una mejor navegación y permite el uso de expresiones matemáticas y de funciones en los parámetros de entrada.
-
-**Mejor navegación con soporte para cargas útiles de eventos**
-
-La acción `Navigate To` en los controladores de Invocar servicio ahora admite `EVENT_PAYLOAD`, lo que permite a los autores de formularios configurar acciones de seguimiento basadas en respuestas a eventos. Esta mejora ofrece una mayor flexibilidad para diseñar flujos de trabajo posteriores al envío, lo que garantiza transiciones más suaves y experiencias de usuario más personalizadas. Para obtener más información, consulte [Mejor navegación con soporte para cargas útiles de eventos](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-
-**Compatibilidad con funciones y expresiones matemáticas en los parámetros de entrada**
-
-Los parámetros de entrada ahora admiten llamadas a funciones y expresiones matemáticas, lo que permite a los autores de formularios pasar de forma directa valores calculados dinámicamente. Esta mejora optimiza las configuraciones de reglas, elimina la necesidad de campos adicionales y hace que los formularios sean más adaptables a lógicas complejas y escenarios basados en el cálculo. Para obtener más información, consulte [Compatibilidad con funciones y expresiones matemáticas en los parámetros de entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+<!-- ### Pre-Release features in AEM Forms -->
 
 ### Nuevas funciones de acceso anticipado de AEM Forms {#forms-new-early-access-features}
 
@@ -127,17 +115,25 @@ El programa de acceso anticipado de AEM Forms ofrece una oportunidad única de o
 
 En estas notas de la versión se indican las innovaciones de ofrecidas en la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
 
-**Vista previa de PDF en el editor de comunicaciones interactivas**
+* **Vista previa de PDF en el editor de comunicaciones interactivas**
 
-Los usuarios pueden obtener una vista previa de los PDF de las comunicaciones interactivas sin datos, con archivos de datos JSON locales o con datos de un modelo de datos, lo que permite realizar pruebas flexibles basadas en datos. Para obtener más información, consulte [Vista previa de PDF en el editor de comunicaciones interactivas](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
+  Los usuarios pueden obtener una vista previa de los PDF de las comunicaciones interactivas sin datos, con archivos de datos JSON locales o con datos de un modelo de datos, lo que permite realizar pruebas flexibles basadas en datos. Para obtener más información, consulte [Vista previa de PDF en el editor de comunicaciones interactivas](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-**Compatibilidad de las fuentes personalizadas en las comunicaciones interactivas**
+* **Compatibilidad de las fuentes personalizadas en las comunicaciones interactivas**
 
-La función Fuentes personalizadas permite que los usuarios incrusten fuentes personalizadas o aprobadas por la organización en las comunicaciones interactivas, lo que garantiza un procesamiento PDF coherente y acorde con la marca en todos los dispositivos y plataformas. Para obtener más información, consulte [Compatibilidad de las fuentes personalizadas en las comunicaciones interactivas](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+  La función Fuentes personalizadas permite que los usuarios incrusten fuentes personalizadas o aprobadas por la organización en las comunicaciones interactivas, lo que garantiza un procesamiento PDF coherente y acorde con la marca en todos los dispositivos y plataformas. Para obtener más información, consulte [Compatibilidad de las fuentes personalizadas en las comunicaciones interactivas](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
 
-**Importar y exportar comunicaciones interactivas**
+* **Importar y exportar comunicaciones interactivas**
 
-Esta función permite migrar y reutilizar las comunicaciones interactivas entre diferentes entornos. Ahora puede exportar una comunicación interactiva junto con sus fragmentos asociados y modelos de datos desde un entorno e importarla a otro. Para obtener más información, consulte [Importar y exportar comunicaciones interactivas](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+  Esta función permite migrar y reutilizar las comunicaciones interactivas entre diferentes entornos. Ahora puede exportar una comunicación interactiva junto con sus fragmentos asociados y modelos de datos desde un entorno e importarla a otro. Para obtener más información, consulte [Importar y exportar comunicaciones interactivas](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+
+* **Mejoras en el editor de reglas**
+
+  El editor de reglas ahora admite una mejor navegación y permite el uso de expresiones matemáticas y de funciones en los parámetros de entrada.
+
+   * **Navegación mejorada con compatibilidad con carga útil de evento**: la acción `Navigate To` en los controladores de invocación de servicio ahora admite `EVENT_PAYLOAD`, lo que permite a los autores de formularios configurar acciones de seguimiento basadas en respuestas de eventos. Esta mejora ofrece una mayor flexibilidad para diseñar flujos de trabajo posteriores al envío, lo que garantiza transiciones más suaves y experiencias de usuario más personalizadas. Para obtener más información, consulte [Mejor navegación con soporte para cargas útiles de eventos](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+
+   * **Compatibilidad con funciones y expresiones matemáticas en parámetros de entrada**: los parámetros de entrada ahora admiten llamadas a funciones y expresiones matemáticas, lo que permite a los autores de formularios pasar valores calculados dinámicamente directamente. Esta mejora optimiza las configuraciones de reglas, elimina la necesidad de campos adicionales y hace que los formularios sean más adaptables a lógicas complejas y escenarios basados en el cálculo. Para obtener más información, consulte [Compatibilidad con funciones y expresiones matemáticas en los parámetros de entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 <!--
 **Forms Optimization opportunities**
@@ -170,7 +166,7 @@ Días de lanzamiento, eventos en directo, picos de ventas: estos momentos no pue
 >[!NOTE]
 >
 >Disponible como función de disponibilidad limitada desde el 25 de septiembre.
->&#x200B;>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
+>>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
 
 ### Nueva versión de las herramientas para desarrolladores de AEM para Eclipse {#aem-develeper-tools-for-eclipse}
 
