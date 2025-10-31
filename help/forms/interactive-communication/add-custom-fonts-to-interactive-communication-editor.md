@@ -4,10 +4,7 @@ description: Agregue fuentes personalizadas en el editor de comunicaciones inter
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 25%
@@ -39,5 +36,5 @@ La función de fuentes personalizadas le permite mejorar el aspecto de sus comun
 
 >[!NOTE]
 >
-> Para ver los pasos de configuración detallados, los usuarios pueden seguir la guía [Usar fuentes personalizadas](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
-> &#x200B;>Después de completar los pasos y ejecutar la canalización, las fuentes personalizadas están disponibles para su uso directamente en el Editor de comunicaciones interactivas.
+> Para ver los pasos de configuración detallados, los usuarios pueden seguir la guía [Usar fuentes personalizadas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> >Después de completar los pasos y ejecutar la canalización, las fuentes personalizadas están disponibles para su uso directamente en el Editor de comunicaciones interactivas.

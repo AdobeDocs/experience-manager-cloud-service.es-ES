@@ -4,10 +4,7 @@ description: La administración del desbordamiento de contenido en el Editor de 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 17%
@@ -27,8 +24,7 @@ ht-degree: 17%
 
 ## Introducción
 
-La función Gestión de desbordamiento de contenido del Editor de comunicaciones interactivas mejora el comportamiento del texto dentro de los diseños de posición y posición variable.
-Garantiza la continuidad del contenido sin problemas para los diseños fluidos y proporciona alertas visuales para los diseños colocados, lo que proporciona a los autores un mejor control y flexibilidad al diseñar las comunicaciones.
+La función Gestión de desbordamiento de contenido del Editor de comunicaciones interactivas mejora el comportamiento del texto dentro de los diseños de posición y posición variable. Garantiza la continuidad del contenido sin problemas para los diseños fluidos y proporciona alertas visuales para los diseños colocados, lo que proporciona a los autores un mejor control y flexibilidad al diseñar las comunicaciones.
 
 ## Capacidades clave
 
