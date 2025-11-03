@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 78%
+source-wordcount: '832'
+ht-degree: 77%
 
 ---
 
@@ -110,10 +110,6 @@ Consulte el [`aem-testing-clients`repositorio de GitHub](https://github.com/adob
 | Tiempo de espera | 30 m | Límite de tiempo tras el cual se detiene la prueba. |
 | Duración recomendada | 15 m | Adobe recomienda escribir las pruebas para que no tarden más de este tiempo. |
 
->[!NOTE]
->
-> Si necesita más recursos, cree un caso de uso con el Servicio de atención al cliente y descríbalo. El equipo de Adobe revisará su solicitud y proporcionará la asistencia adecuada.
-
 #### Dependencias
 
 * aem-cloud-testing-customers:
@@ -131,7 +127,7 @@ Los próximos cambios en la infraestructura en contenedores para ejecutar prueba
 >[!NOTE]
 >
 >Este cambio debe realizarse antes del 6 de abril de 2024.
->&#x200B;>No actualizar la biblioteca de dependencias puede provocar errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
+>No actualizar la biblioteca de dependencias puede provocar errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
 
 ### Ejecución de pruebas locales {#local-test-execution}
 
