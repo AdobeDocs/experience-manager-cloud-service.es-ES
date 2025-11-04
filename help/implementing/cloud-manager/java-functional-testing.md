@@ -5,12 +5,13 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
+source-git-commit: 369e49e5a047bcfb41712aeb952a30ca90f7802f
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 77%
 
 ---
+
 
 # Prueba funcional de Java™
 
@@ -102,7 +103,6 @@ Consulte el [`aem-testing-clients`repositorio de GitHub](https://github.com/adob
 
 1. La infraestructura contenerizada que se contempla para las pruebas funcionales está limitada por los siguientes límites:
 
-
 | Tipo | Valor | Descripción |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0,5 | Cantidad de tiempo de CPU reservado por ejecución de prueba |
@@ -153,8 +153,6 @@ Las propiedades del sistema son las siguientes:
 | `sling.it.instance.adminUser.2` | Configúrelo en usuario administrador de publicación. | `admin` |
 | `sling.it.instance.adminPassword.2` | Configúrelo en Contraseña de administrador de publicación. |                         |
 
-
-
 #### Ejecución de todas las pruebas con Maven {#using-maven}
 
 1. Abra un shell y vaya a la carpeta `it.tests` en el repositorio.
@@ -170,4 +168,3 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
-
