@@ -4,7 +4,7 @@ description: Etiquete recursos con un servicio artificialmente inteligente que a
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Las etiquetas inteligentes son palabras clave que no solo aparecen en el texto, 
 
 Por ejemplo, las palabras ordenadas alfabéticamente en un diccionario son más fáciles de encontrar que las dispersas aleatoriamente. El etiquetado tiene un propósito similar. Organiza los recursos según la taxonomía empresarial, asegurándose de que los más relevantes aparezcan en los resultados de búsqueda. Por ejemplo, un fabricante de automóviles puede etiquetar imágenes de automóviles con nombres de modelos, de modo que solo se muestren imágenes relevantes al diseñar una campaña promocional. Tanto si se etiquetan como &quot;corredores&quot; o &quot;zapatillas de deporte&quot;, los usuarios no tienen que preocuparse por errores tipográficos, variaciones ortográficas o términos de búsqueda alternativos: las etiquetas inteligentes las reconocen todas.
 
-En segundo plano, la funcionalidad utiliza el marco artificial inteligente de [Adobe Sensei](https://business.adobe.com/es/products/sensei/adobe-sensei.html) y aplica automáticamente las etiquetas inteligentes a los recursos cargados (de forma predeterminada), junto con el texto alineado con la taxonomía empresarial.
+En segundo plano, la funcionalidad utiliza el marco artificial inteligente de [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) y aplica automáticamente las etiquetas inteligentes a los recursos cargados (de forma predeterminada), junto con el texto alineado con la taxonomía empresarial.
 
 ## Requisitos previos y configuración {#smart-tags-prereqs-config}
 
@@ -47,7 +47,7 @@ Las etiquetas inteligentes se implementan en los AEM Assets de mediante el sigui
 
 1. Cree o cargue un recurso en AEM. Se generan etiquetas listas para usar para Assets basadas en imágenes, vídeos y texto.
 
-1. Si descubre que no se generan etiquetas específicas, puede entrenar las etiquetas de tipo imagen en consecuencia. Consulte [Formación sobre etiquetas inteligentes](#smart-tags-training.md).
+1. Si descubre que no se generan etiquetas específicas, puede entrenar las etiquetas de tipo imagen en consecuencia. Consulte [Formación sobre etiquetas inteligentes](/help/assets/smart-tags-training.md).
 
 ## Formatos de archivo compatibles con las etiquetas inteligentes {#supported-file-formats}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets sin etiquetar en DAM {#smart-tag-existing-assets}
 
-Los recursos existentes o anteriores de DAM no se etiquetan automáticamente de forma inteligente. Debe [volver a procesar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=es#adjusting-load) Assets manualmente para poder generarles etiquetas inteligentes. Una vez completado el proceso, vaya a la página [!UICONTROL Propiedades] de cualquier recurso de la carpeta. Las etiquetas agregadas automáticamente se ven en la sección [!UICONTROL Etiquetas inteligentes] de la pestaña [!UICONTROL Básico]. Estas etiquetas inteligentes aplicadas se ordenan en orden descendente de [puntuación de confianza](#confidence-score).
+Los recursos existentes o anteriores de DAM no se etiquetan automáticamente de forma inteligente. Debe [volver a procesar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manualmente para poder generarles etiquetas inteligentes. Una vez completado el proceso, vaya a la página [!UICONTROL Propiedades] de cualquier recurso de la carpeta. Las etiquetas agregadas automáticamente se ven en la sección [!UICONTROL Etiquetas inteligentes] de la pestaña [!UICONTROL Básico]. Estas etiquetas inteligentes aplicadas se ordenan en orden descendente de [puntuación de confianza](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -256,7 +256,7 @@ Las etiquetas inteligentes se pueden configurar y aplicar en cualquier carpeta d
 
 +++**¿Cómo puedo saber que el etiquetado necesita entrenamiento?**
 
-Consulte [Determinación de los requisitos de la formación sobre etiquetas inteligentes](#smart-tags-training.md#smart-tag-training-requirement).
+Consulte [Determinación de los requisitos de la formación sobre etiquetas inteligentes](/help/assets/smart-tags-training.md#smart-tag-training-requirement).
 
 +++
 
