@@ -44,7 +44,7 @@ Ahora puede marcar colecciones como Favoritos en Content Hub, lo que facilita su
 
 Los administradores de Content Hub ahora pueden anclar colecciones en Content Hub para acceder rápidamente a ellas. Las colecciones ancladas se muestran en una sección **[!UICONTROL Anclada]** específica de la página principal de Colecciones, lo que facilita mantener las colecciones importantes a mano.
 
-[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
