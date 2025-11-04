@@ -3,15 +3,20 @@ title: Mejore la detección de contenido con metadatos generados por IA en la vi
 description: Aprenda a mejorar la detección de contenido con metadatos generados por IA en la vista de administración
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: d73ca2317d594b0d98bb9765796870cc28aa1158
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 7%
+source-wordcount: '646'
+ht-degree: 8%
 
 ---
 
 
 # Mejora de la detección de contenido con metadatos generados por IA {#ai-smart-tags}
+
+| IU | Vínculo del artículo |
+| -------- | ---------------------------- |
+| Vista de recursos | [Haga clic aquí](/help/assets/ai-generated-metadata-assets-view.md) |
+| Vista de administrador | Este artículo |
 
 En lugar de depender de la entrada manual, IA asigna automáticamente etiquetas descriptivas a los recursos digitales. Estas etiquetas generadas por IA mejoran la calidad de los metadatos, lo que facilita la búsqueda, la categorización y la recomendación de recursos. Este enfoque no solo mejora la eficacia al eliminar el etiquetado manual, sino que también garantiza la coherencia y la escalabilidad en grandes volúmenes de contenido digital. Por ejemplo, si el recurso es una imagen, la IA puede identificar objetos, escenas, emociones o incluso logotipos de marca dentro de él y generar etiquetas relevantes como &quot;puesta de sol&quot;, &quot;playa&quot;, &quot;vacaciones&quot; o &quot;sonrisa&quot;. El contenido generado por IA puede mejorar la búsqueda de recursos mediante técnicas de búsqueda semánticas y léxicas. Ver más [Buscar en Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
