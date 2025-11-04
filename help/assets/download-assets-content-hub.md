@@ -3,9 +3,9 @@ title: Descarga de recursos desde Content Hub
 description: Obtenga información sobre cómo descargar uno o varios recursos y sus representaciones desde el portal de Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
+source-git-commit: f1d036b2e114730c4cce8df8848359e854943153
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '941'
 ht-degree: 1%
 
 ---
@@ -22,23 +22,35 @@ Ver los [tipos de representaciones disponibles en Content Hub](#types-of-renditi
 
 Para descargar uno o varios recursos y sus representaciones, ejecute los siguientes pasos:
 
-1. Para descargar un recurso, seleccione ![descargar](/help/assets/assets/download-icon.svg) disponible en la tarjeta de recursos para obtener una vista previa del recurso, seleccione las representaciones disponibles y haga clic en la opción **[!UICONTROL Descargar]** del cuadro de diálogo para descargar las representaciones seleccionadas como archivo ZIP. Si el cuadro de diálogo muestra una licencia de recurso (para un recurso con licencia), acepte los términos y condiciones de licencia y haga clic en **[!UICONTROL Descargar]**.
-   ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+* Para descargar un solo recurso y sus representaciones:
+   1. Seleccione ![descargar](/help/assets/assets/download-icon.svg) disponible en la tarjeta de recursos para obtener una vista previa del recurso y sus representaciones disponibles.
+   1. Seleccione las representaciones disponibles y haga clic en la opción **[!UICONTROL Descargar]** del cuadro de diálogo para descargar las representaciones seleccionadas como archivo ZIP. Si el cuadro de diálogo muestra una licencia de recurso (para un recurso con licencia), acepte los términos y condiciones de licencia y haga clic en **[!UICONTROL Descargar]**.
+      ![descargar un recurso](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+También puede hacer clic en la miniatura del recurso y, a continuación, hacer clic en ![descargar](/help/assets/assets/download-icon.svg) para seleccionar y ver las representaciones disponibles en el cuadro de diálogo antes de descargarlas.
 
-   También puede hacer clic en la miniatura del recurso y seleccionar ![descargar](/help/assets/assets/download-icon.svg) para seleccionar y ver las representaciones disponibles en el cuadro de diálogo antes de descargarlas.
+* Para descargar varios recursos y sus representaciones:
+   1. Seleccione los recursos, haga clic en ![descargar](/help/assets/assets/download-icon.svg) **[!UICONTROL Descargar]** y revise la lista de recursos seleccionados en el cuadro de diálogo **[!UICONTROL Descargar recursos]**. Haga clic en ![anular la selección](/help/assets/assets/Close.svg) junto a un recurso para anular su selección en la lista.
+   1. Seleccione una o varias representaciones para descargarlas como archivo ZIP. Al seleccionar **[!UICONTROL Recorte inteligente]** y **[!UICONTROL Representaciones estáticas]**, se descargarán todas las representaciones estáticas y de recorte inteligente disponibles de cada recurso seleccionado.
+   1. Opcional: anule la selección de **[!UICONTROL Crear una carpeta independiente para cada recurso]** para descargar los recursos seleccionados y sus representaciones como una jerarquía plana dentro de una carpeta en el archivo zip. De manera predeterminada, [!DNL Content Hub] descarga los recursos seleccionados y sus representaciones en carpetas independientes dentro de un archivo zip.
 
-1. Para descargar varios recursos, selecciónelos, haga clic en ![descargar](/help/assets/assets/download-icon.svg) **[!UICONTROL Descargar]** y revise la lista de recursos seleccionados en el cuadro de diálogo **[!UICONTROL Descargar recursos]**. Haga clic en ![anular la selección](/help/assets/assets/Close.svg) junto a un recurso para anular su selección en la lista. Seleccione una o más representaciones y haga clic en **[!UICONTROL Descargar]** para descargarlas como un solo archivo ZIP. Al seleccionar **[!UICONTROL Recorte inteligente]** y **[!UICONTROL Representaciones estáticas]**, se descargarán todas las representaciones estáticas y de recorte inteligente disponibles de cada recurso seleccionado.
-   ![descargar varios recursos](/help/assets/assets/download-multiple-assets-CH.png)
+      >[!NOTE]
+      >
+      > * Content Hub guarda su selección (**[!UICONTROL Cree una carpeta independiente para cada recurso]**) como su preferencia y la conserva para futuras descargas.
+      > * **[!UICONTROL La opción Crear una carpeta independiente para cada recurso]** solo está disponible para los usuarios autenticados [!DNL Content Hub]. [!DNL Content Hub] permite que los usuarios públicos descarguen recursos como recursos individuales.
+
+   1. Haga clic en **[!UICONTROL Descargar]** para descargar los recursos seleccionados y sus representaciones.
+      ![descargar varios recursos](/help/assets/assets/bulk-asset-download-content-hub.png)
+
 Puede seguir usando [!DNL Content Hub] mientras la descarga está en curso. Content Hub no interrumpe el flujo de trabajo durante el proceso de descarga.
-   ![descargar varios recursos](/help/assets/assets/download-assets-notification-ch.png)
+![descargar varios recursos](/help/assets/assets/download-assets-notification-ch.png)
 Si el cuadro de diálogo **[!UICONTROL Descargar recursos]** muestra los recursos y las licencias, seleccione cada licencia en el panel izquierdo (sección [!UICONTROL Documentos de T&amp;C]) para obtener una vista previa de la licencia y mostrar los recursos seleccionados asociados con la licencia en el panel central del cuadro de diálogo. Después de revisar cada licencia, selecciona las representaciones, haz clic en **[!UICONTROL He leído y aceptado los términos y condiciones mencionados arriba]** y selecciona **[!UICONTROL Descargar]** para descargarlos.
-   ![descargar varios recursos](/help/assets/assets/download-multiple-licensed-assets-CH.png)
+![descargar varios recursos](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
-   >[!NOTE]
-   >
-   >* Las representaciones se muestran únicamente si su visibilidad está habilitada mediante la interfaz de usuario de [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   >* Los usuarios con acceso a [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) pueden ver y descargar representaciones de recortes dinámicas e inteligentes.
-   >* La vista previa de la licencia solo se mostrará si el recurso se ha aprobado mediante el entorno de creación [!DNL Assets as a Cloud Service]. Para obtener más información, consulte [Administración de recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+>[!NOTE]
+>
+>* Las representaciones se muestran únicamente si su visibilidad está habilitada mediante la interfaz de usuario de [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+>* Los usuarios con acceso a [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) pueden ver y descargar representaciones de recortes dinámicas e inteligentes.
+>* La vista previa de la licencia solo se mostrará si el recurso se ha aprobado mediante el entorno de creación [!DNL Assets as a Cloud Service]. Para obtener más información, consulte [Administración de recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
 
@@ -123,7 +135,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 ## Tipos de representaciones {#types-of-renditions}
 
-Las representaciones de recursos son diferentes representaciones del archivo original de un recurso. Pueden incluir miniaturas, versiones optimizadas para web o móvil, archivos con marca de agua o protegidos por DRM o incluso elementos dinámicos como cultivos inteligentes. No necesitan coincidir con el tipo de archivo original, sino que sirven para representar el recurso en varios casos de uso.
+Las representaciones de recursos son diferentes representaciones del archivo original de un recurso. Estas representaciones pueden incluir miniaturas, versiones optimizadas para web o móvil, archivos con marca de agua o protegidos por DRM o incluso elementos dinámicos como cultivos inteligentes. No necesitan coincidir con el tipo de archivo original, sino que sirven para representar el recurso en varios casos de uso.
 
 Más información sobre [ver y administrar representaciones en [!DNL Experience Manager Assets]](/help/assets/renditions.md).
 
