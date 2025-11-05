@@ -2,10 +2,10 @@
 title: Preguntas frecuentes (FAQ) sobre Content Hub
 description: Obtenga respuestas a algunas de las preguntas más frecuentes (FAQ) sobre Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+source-git-commit: cc29a94e4193f7563bb83ad39aa459ea0ba9306a
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 100%
+source-wordcount: '1635'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ Al habilitar Content Hub en un programa de producción, se implementa como parte
 
 Si no desea proporcionar Content Hub a los usuarios una vez implementado, no asigne ningún usuario al perfil de producto de Content Hub en Admin Console. Consulte [Implementar Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile) para obtener más información.
 
-## ¿Cómo puedo evaluar Content Hub en mi organización, si solo está disponible para programas de producción o entornos de creación de producción? {#how-can-i-evaluate-content-hub}
+## ¿Cómo puedo evaluar Content Hub en mi organización? {#how-can-i-evaluate-content-hub}
 
 Content Hub es una función que Adobe proporciona y mantiene, y no tiene ningún código personalizado que requiera una validación típica mediante desarrollo, ensayo o producción. Además, el acceso a la función para los usuarios está completamente controlado por el administrador, por lo que puede evaluarla sin exponerla a todos los usuarios.
 
@@ -43,8 +43,6 @@ Es posible evaluar Content Hub sin afectar a los usuarios ni al contenido de pro
 * Una vez finalizada la evaluación, los usuarios de AEM en la instancia de autor pueden eliminar la aprobación de los recursos de prueba, aprobar los recursos de producción para Content Hub y, a continuación, el administrador de Admin Console puede añadir a todos los usuarios que necesiten acceder a Content Hub y al contenido aprobado. Enhorabuena, Content Hub ya está activo.
 
 Hay un programa de acceso rápido a Content Hub en los programas de zona protegida y sus entornos de producción de creación. Para más información, consulte [Introducción a los programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Para obtener más información sobre el programa de acceso anticipado, póngase en contacto con el equipo de cuentas de Adobe.
-
-Content Hub aún no está disponible en entornos que no sean de producción (ensayo y desarrollo). La disponibilidad prevista en los entornos de ensayo/desarrollo de Assets Ultimate es marzo de 2025.
 
 ## ¿Por qué no veo ningún recurso después de iniciar sesión en Content Hub? {#no-assets-in-content-hub}
 
