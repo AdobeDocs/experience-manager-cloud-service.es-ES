@@ -24,7 +24,7 @@ Obtenga información sobre cómo editar [las propiedades de una página](/help/s
 
 Puede editar las propiedades de página desde varios lugares de AEM.
 
-* [Desde el ](#from-the-sites-console)
+* [Desde el &#x200B;](#from-the-sites-console)
 * [Desde el editor de páginas](#from-the-page-editor)
 * [Desde el editor universal](#from-the-universal-editor)
 

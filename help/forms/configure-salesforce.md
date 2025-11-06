@@ -30,7 +30,7 @@ Los servicios en la nube de [!DNL Salesforce] y el modelo de datos de formulario
 
 Antes de configurar los servicios en la nube de [!DNL Salesforce], asegúrese de realizar las siguientes tareas:
 
-* [Cree una aplicación de  [!DNL Salesforce]  conectada y habilitada para OAuth ](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&type=5). Al crear la aplicación conectada de [!DNL Salesforce], especifique la URL de devolución de llamada con el siguiente formato:
+* [Cree una aplicación de  [!DNL Salesforce]  conectada y habilitada para OAuth &#x200B;](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&type=5). Al crear la aplicación conectada de [!DNL Salesforce], especifique la URL de devolución de llamada con el siguiente formato:
 
   ```
   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
@@ -63,7 +63,7 @@ Para acceder al modelo de datos de formulario (FDM):
 1. Vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integraciones de datos]**.
 1. Seleccione el nombre de la carpeta, el **[!UICONTROL Modelo de datos de Salesforce]** y el icono ![Editar](assets/edit.png) para ver el modelo de datos de formulario.
 
-Después de configurar el ](#configure-salesforce-cloud-service)servicio de configuración en la nube de [[!DNL Salesforce] , podrá integrar formularios adaptables con el modelo de datos predeterminado de [!DNL Salesforce].
+Después de configurar el [&#128279;](#configure-salesforce-cloud-service)servicio de configuración en la nube de [!DNL Salesforce] , podrá integrar formularios adaptables con el modelo de datos predeterminado de [!DNL Salesforce].
 
 >[!MORELIKETHIS]
 >

@@ -52,7 +52,7 @@ Con los elementos estructurales disponibles en RTE a través de las opciones de 
 
 ## Uso de la función Source Edit {#use-of-the-source-edit-feature}
 
-En algunos casos, los autores de contenido deberán examinar y ajustar el código fuente de HTML creado con RTE. Por ejemplo, un fragmento de contenido creado dentro de RTE puede requerir más marcado para garantizar el cumplimiento de WCAG 2.0. Esto se puede hacer con la opción [source edit](rich-text-editor.md#aboutplugins) de RTE. Puede especificar la característica [`sourceedit` en el complemento `misctools` ](rich-text-editor.md#aboutplugins).
+En algunos casos, los autores de contenido deberán examinar y ajustar el código fuente de HTML creado con RTE. Por ejemplo, un fragmento de contenido creado dentro de RTE puede requerir más marcado para garantizar el cumplimiento de WCAG 2.0. Esto se puede hacer con la opción [source edit](rich-text-editor.md#aboutplugins) de RTE. Puede especificar la característica [`sourceedit` en el complemento `misctools` &#x200B;](rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
