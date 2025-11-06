@@ -22,7 +22,7 @@ Este documento le ayuda a comprender la creación y administración de canales p
 
 * Obtenga información sobre cómo crear canales para el proveedor de contenido de Screens
 * administrar y editar contenido en sus canales
-* administre la asignación y la programación de activación de sus canales en [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
+* administre la asignación y la programación de activación de sus canales en [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=es)
 
 ## Pasos para crear un nuevo canal de secuencia en Screens as a Cloud Service {#create-new-channel}
 

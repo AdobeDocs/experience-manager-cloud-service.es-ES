@@ -140,7 +140,7 @@ Cuando el usuario hace clic en la URL de vanidad, [!DNL Dynamic Media with OpenA
 
 ## Escalar mediante URL de vanidad{#scale-using-vanity-url}
 
-AEM as a Cloud Service le permite [personalizar los nombres DNS y CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) en sus direcciones web. Use estas capacidades de AEM CS con sus URL personales para transformarlas en direcciones web únicas, limpias, descriptivas, con marca, intuitivas y que proporcionen los [beneficios mencionados](#key-benefits).
+AEM as a Cloud Service le permite [personalizar los nombres DNS y CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) en sus direcciones web. Use estas capacidades de AEM CS con sus URL personales para transformarlas en direcciones web únicas, limpias, descriptivas, con marca, intuitivas y que proporcionen los [beneficios mencionados](#key-benefits).
 
 Consulte la siguiente URL de vanidad y sus componentes personalizables:
 
@@ -190,7 +190,7 @@ Consulte la siguiente URL de vanidad y sus componentes personalizables:
 Ejecute los siguientes pasos para reescribir las reglas de CDN para la entrega:
 
 1. Vaya al repositorio de AEM para crear un archivo de configuración de YAML.
-2. Ejecute los pasos de la sección [setup](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para configurar las reglas de CDN e implementar la configuración a través de la canalización de configuración de Cloud Manager.
+2. Ejecute los pasos de la sección [setup](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para configurar las reglas de CDN e implementar la configuración a través de la canalización de configuración de Cloud Manager.
 Siga estas [prácticas recomendadas](#best-practices) para crear su ruta de dominio.
    [Más información acerca de las reglas de reescritura de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 

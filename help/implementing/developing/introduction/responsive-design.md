@@ -85,7 +85,7 @@ El [tutorial de WKND](develop-wknd-tutorial.md) utiliza esta estrategia para def
 
 ### Uso de consultas de medios con páginas de AEM {#using-media-queries-with-aem-pages}
 
-[El proyecto de muestra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) y [Arquetipo de proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) utilizan el [Componente principal de página](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), que incluye los clientlibs a través de la directiva de página.
+[El proyecto de muestra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) y [Arquetipo de proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) utilizan el [Componente principal de página](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=es), que incluye los clientlibs a través de la directiva de página.
 
 Si su propio componente de página no se basa en el componente principal de página, también puede incluir la carpeta de biblioteca de cliente en el script HTL o JSP del mismo. Al hacerlo, se genera y se hace referencia al archivo CSS con las consultas de medios necesarias para que funcione la cuadrícula adaptable.
 
@@ -137,7 +137,7 @@ Las páginas adaptables se adaptarán dinámicamente al dispositivo en el que se
 
 [El componente de imagen del componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=es) incluye características como la selección de imágenes adaptables.
 
-* De manera predeterminada, el componente de imagen usa el [servlet de imagen adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) para entregar la representación adecuada.
+* De manera predeterminada, el componente de imagen usa el [servlet de imagen adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=es) para entregar la representación adecuada.
 * [Entrega de imágenes optimizadas para la web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=es) también está disponible a través de una sencilla casilla de verificación en su directiva, que ofrece recursos de imagen de DAM en formato WebP y puede reducir el tamaño de descarga de una imagen en aproximadamente un 25 % en promedio.
 
 ## El contenedor de diseño {#layout-container}

@@ -117,4 +117,4 @@ No puede usar etiquetas inteligentes, vínculo [!DNL Asset], selector [!DNL Asse
 >[!MORELIKETHIS]
 >
 >* [Funciones DAM en [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=es)
->* [[!DNL Experience Manager] como [!DNL Cloud Service] descripción del producto](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] como [!DNL Cloud Service] descripción del producto](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

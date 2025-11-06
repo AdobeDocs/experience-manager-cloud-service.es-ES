@@ -59,7 +59,7 @@ Si AEM proporciona una API, prefiera esta en lugar de Sling, JCR y OSGi. Si AEM 
 
 >[!TIP]
 >
->Para obtener más información sobre estas directrices, consulte el documento [Comprender las prácticas recomendadas de la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html).
+>Para obtener más información sobre estas directrices, consulte el documento [Comprender las prácticas recomendadas de la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=es).
 
 ## API y servicios de envío y administración de contenido de AEM {#delivery-apis}
 
