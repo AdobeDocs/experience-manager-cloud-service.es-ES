@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Descubra qué significa implementar para App Builder y cómo implementar su aplicación de App Builder mediante la CLI de Adobe I/O.
 
->[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343290/?captions=spa&quality=12&learn=on)

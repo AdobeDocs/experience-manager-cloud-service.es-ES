@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de mayo de 2025 para ver un resumen de las funciones añadidas en la versión 2025.5.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3464353?captions=spa&quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -108,7 +108,7 @@ Acceda a todas las [representaciones de ajustes preestablecidos y recortes intel
 
 [Integración nativa de Experience Manager (AEM) Dynamic Media con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/content-management/combine/aem-dynamic), lo que permite a los expertos en marketing incrustar fácilmente los recursos de Dynamic Media de AEM (representación y plantilla de DM) en el contenido de AJO y ofrecer actualizaciones en tiempo real y experiencias personalizadas al máximo en todos los canales.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463785/?captions=spa&learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

@@ -22,10 +22,10 @@ ht-degree: 0%
 
 Obtenga información acerca de la arquitectura impulsada por eventos, los eventos de Adobe I/O y los eventos personalizados.
 
->[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343684/?captions=spa&quality=12&learn=on)
 
 ## Creación de aplicaciones de App Builder impulsadas por eventos
 
->[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343691/?captions=spa&quality=12&learn=on)
 
 Obtenga información sobre cómo generar publicaciones que pueden consumir eventos en una aplicación de App Builder.

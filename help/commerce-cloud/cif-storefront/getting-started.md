@@ -57,7 +57,7 @@ Hay dos opciones para configurar el punto de conexión:
 
 ### Mediante la interfaz de usuario de Cloud Manager (predeterminada) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343270?captions=spa&quality=12&learn=on)
 
 Esta configuración se puede realizar mediante un cuadro de diálogo en la página Detalles del entorno. Al ver esta página para un programa habilitado para Commerce, se muestra un botón si el punto de conexión no está configurado actualmente:
 

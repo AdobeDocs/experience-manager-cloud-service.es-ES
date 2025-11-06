@@ -20,22 +20,22 @@ ht-degree: 0%
 
 Descubra qué es Adobe Developer Console y cómo acceder a él y navegar por él.
 
->[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342292/?captions=spa&quality=12&learn=on)
 
 ## Trabajar con proyectos y plantillas
 
 Obtenga información sobre cómo crear un proyecto de App Builder con la plantilla App Builder de Adobe Developer Console.
 
->[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342317/?captions=spa&quality=12&learn=on)
 
 ## Credenciales del proyecto
 
 Aprenda a utilizar las opciones del menú de credenciales de Adobe Developer Console y el proceso de aprobación.
 
->[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342310/?captions=spa&quality=12&learn=on)
 
 ## Información y uso de cuotas
 
 Obtenga información sobre las perspectivas de aplicación de App Builder y el uso de cuotas.
 
->[!VIDEO](https://video.tv.adobe.com/v/339165/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342284/?captions=spa&quality=12&learn=on)

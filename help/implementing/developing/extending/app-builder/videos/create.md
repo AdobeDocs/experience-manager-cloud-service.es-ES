@@ -22,13 +22,13 @@ ht-degree: 0%
 
 Conozca los aspectos básicos de la creación de su primer proyecto de App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339168/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342302/?captions=spa&quality=12&learn=on)
 
 ## Configurar el entorno de desarrollo local
 
 Aprenda a configurar su entorno local para el desarrollo de App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342276/?captions=spa&quality=12&learn=on)
 
 ## Inicialice su primer proyecto
 
@@ -40,4 +40,4 @@ Obtenga información sobre cómo inicializar un proyecto de App Builder.
 
 Obtenga información sobre cómo generar, ejecutar y probar la aplicación de App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342231/?captions=spa&quality=12&learn=on)
