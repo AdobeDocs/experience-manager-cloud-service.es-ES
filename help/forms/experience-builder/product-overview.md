@@ -7,10 +7,10 @@ index: false
 hidefromtoc: true
 role: Admin, Developer
 exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 31%
+source-wordcount: '590'
+ht-degree: 32%
 
 ---
 
@@ -18,27 +18,40 @@ ht-degree: 31%
 
 AEM Forms Experience Builder aprovecha la IA generativa para acelerar la creación de formularios digitales a través del lenguaje natural. Esta potente herramienta permite a los usuarios técnicos y no técnicos diseñar, modificar y optimizar formularios de nivel profesional mediante una interfaz sencilla y conversacional.
 
-Este enfoque revolucionario democratiza la creación de formularios, reduce drásticamente el tiempo de respuesta de días a horas y escala los esfuerzos de modernización en todo el ecosistema de formularios.
+Forms Experience Builder permite la creación rápida de formularios mediante IA conversacional, a la vez que permite a los usuarios no técnicos crear formularios sofisticados sin conocimientos de codificación. Puede diseñar diseños complejos, implementar reglas de validación y configurar acciones de envío mediante sencillos comandos conversacionales.
+
+## Funcionalidades principales
+
+Forms Experience Builder ofrece dos flujos de trabajo principales para crear formularios digitales potentes:
+
+### Creación de formularios con tecnología de IA
+
+**Generación de formularios de lenguaje natural**
+
+Cree formularios completos desde cero con descripciones simples en inglés. Describa con sencillez sus necesidades, como “Crear un formulario de comentarios de cliente con escalas de clasificación y campos de comentarios”, y Forms Experience Builder generará la estructura de formulario adecuada. Puede usar el generador de experiencias de los editores visuales para añadir más campos, reglas de validación y lógica de envío.
+
+**Administración dinámica de campos**
+
+Añada, modifique o quite campos de formulario mediante comandos conversacionales. La IA comprende el contexto y puede sugerir de forma inteligente tipos de campo, reglas de validación y mejoras en la interfaz de usuario en función de sus necesidades.
+
+**Optimización del diseño**
+
+Actualice los diseños y las configuraciones de formulario mediante lenguaje natural. Solicite cambios como “Cambiar el diseño del formulario al diseño del asistente” y Forms Experience Builder aplicará los ajustes de estilo y diseño adecuados.
+
+### Importación y conversión inteligentes
+
+Transforme los documentos existentes en experiencias digitales interactivas. Forms Experience Builder admite varios formatos, y analiza el contenido cargado para detectar tipos de campos, conservar diseños y mejorar formularios con un diseño interactivo y una lógica avanzada. Los formatos admitidos son:
+
+- **Acroforms**: PDF forms interactivo con estructuras de campo existentes
+- **PDF XFA**: arquitecturas de formularios complejas basadas en XML
+- **PDF planos**: documentos estáticos convertidos en formularios interactivos
+- **Imágenes y capturas de pantalla**: JPG, formatos PNG
+- **Formularios dibujados a mano**: bocetos y fotografías en papel
+
 
 ## Demostración de Forms Experience Builder {#forms-experience-builder-demo}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463164/)
-
-## ¿Por qué Forms Experience Builder?
-
-Forms Experience Builder ofrece las siguientes ventajas clave:
-
-**Crear formularios con descripciones en lenguaje natural**
-
-AEM Forms sirve como una única fuente fiable y Forms Experience Builder permite crear formularios rápidamente mediante IA conversacional, lo que reduce drásticamente el tiempo de desarrollo de días a horas.
-
-**Funciones inteligentes de importación y conversión**
-
-Transforme los documentos existentes en experiencias digitales interactivas. Forms Experience Builder admite varios formatos, y analiza el contenido cargado para detectar tipos de campos, conservar diseños y mejorar formularios con un diseño interactivo y una lógica avanzada.
-
-**Habilite a los usuarios no técnicos para crear formularios profesionales**
-
-Forms Experience Builder le permite crear formularios sofisticados sin conocimientos de codificación. Puede diseñar diseños complejos, implementar reglas de validación y configurar acciones de envío mediante sencillos comandos conversacionales.
 
 ## Incorporación y requisitos previos
 
@@ -151,56 +164,21 @@ Experience Builder requiere el entorno de creación de producción de AEM Forms 
 </td>
 </table> -->
 
-## Funcionalidades principales
-
-Forms Experience Builder ofrece dos flujos de trabajo principales para crear formularios digitales potentes:
-
-### Creación de formularios con tecnología de IA
-
-**Generación de formularios de lenguaje natural**
-
-Cree formularios completos desde cero con descripciones simples en inglés. Describa con sencillez sus necesidades, como “Crear un formulario de comentarios de cliente con escalas de clasificación y campos de comentarios”, y Forms Experience Builder generará la estructura de formulario adecuada. Puede usar el generador de experiencias de los editores visuales para añadir más campos, reglas de validación y lógica de envío.
-
-**Administración dinámica de campos**
-
-Añada, modifique o quite campos de formulario mediante comandos conversacionales. La IA comprende el contexto y puede sugerir de forma inteligente tipos de campo, reglas de validación y mejoras en la interfaz de usuario en función de sus necesidades.
-
-**Optimización del diseño**
-
-Actualice los diseños y las configuraciones de formulario mediante lenguaje natural. Solicite cambios como “Cambiar el diseño del formulario al diseño del asistente” y Forms Experience Builder aplicará los ajustes de estilo y diseño adecuados.
-
-**Configuración completa de la acción de envío**
-
-Configure los envíos de formularios para integrarlos con los sistemas empresariales existentes:
-
-- **Integración de correo electrónico**: configuración de notificaciones y confirmaciones de correo electrónico automatizadas
-- **Puntos finales de API REST**: conexión con aplicaciones y servicios personalizados
-- **Almacenamiento en la nube**: integración con Azure Blob Storage, SharePoint y OneDrive
-- **Automatización del flujo de trabajo**: Conexión con Power Automate y Workfront Fusion
-- **Plataformas de mercadotecnia**: integración directa con Marketo para la gestión de posibles clientes
-- **Flujos de trabajo de AEM**: utilización de las capacidades existentes del flujo de trabajo de AEM
 
 
-### Importación y conversión inteligentes
+<!--
+**Comprehensive Submit Action Configuration**
 
-Transforme los documentos existentes en experiencias digitales interactivas. Forms Experience Builder admite varios formatos, y analiza el contenido cargado para detectar tipos de campos, conservar diseños y mejorar formularios con un diseño interactivo y una lógica avanzada. Los formatos admitidos son:
+Configure form submissions to integrate with your existing business systems:
 
-- **Acroforms**: PDF forms interactivo con estructuras de campo existentes
-- **PDF XFA**: arquitecturas de formularios complejas basadas en XML
-- **PDF planos**: documentos estáticos convertidos en formularios interactivos
-- **Imágenes y capturas de pantalla**: JPG, formatos PNG
-- **Formularios dibujados a mano**: bocetos y fotografías en papel
+- **Email Integration**: Set up automated email notifications and confirmations
+- **REST API Endpoints**: Connect to custom applications and services
+- **Cloud Storage**: Integrate with Azure Blob Storage, SharePoint, and OneDrive
+- **Workflow Automation**: Connect to Power Automate and Workfront Fusion
+- **Marketing Platforms**: Direct integration with Marketo for lead management
+- **AEM Workflows**: Leverage existing AEM workflow capabilities
+-->
 
-
-
-## Forms Experience Builder frente al desarrollo tradicional
-
-| Aspecto | Creación de formularios tradicionales | Forms Experience Builder |
-|--------|---------------------------|----------------------|
-| **Hora de crear** | 2-3 días | 2-3 horas |
-| **Conocimiento técnico** | Necesario | No es necesario |
-| **Reglas de validación** | Codificación manual | Lenguaje natural |
-| **Accesibilidad** | Implementación manual | Cumplimiento integrado |
 
 ## Comenzar a explorar
 
@@ -214,22 +192,24 @@ A continuación se indican algunas formas de empezar a explorar Forms Experience
 
 - **Integre con sus sistemas**: configure los envíos de formularios para conectarse con los flujos de trabajo empresariales existentes, ya sea enviando datos a una API de REST, creando un nuevo posible cliente en su CRM o guardando documentos en el almacenamiento en la nube. [Más información](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#data-integration--submission).
 
-## Incorporación
+<!-- ## Onboarding
 
-Forms Experience Builder está disponible actualmente a través de un programa de acceso anticipado. Para solicitar acceso, siga estos pasos:
+The Forms Experience Builder is currently available through an Early Access Program. To request access, follow these steps:
 
-1. **Reúna su información**: Necesitará los siguientes detalles:
-   - ID de organización IMS
-   - ID del programa
-   - Detalles del proyecto (cronología, ámbito, casos de uso)
-   - Su correo electrónico de trabajo oficial
+1. **Gather your information**: You will need the following details:
+    - IMS Organization ID
+    - Program ID
+    - Project Details (timeline, scope, use cases)
+    - Your Official Work Email
 
-   Si necesita ayuda para encontrar su ID de organización de IMS y su ID de programa, consulte la [Guía de configuración de la organización de Adobe Experience Cloud](/help/onboarding/cloud-manager-introduction.md) y la documentación de [Administración de programas y entornos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+   If you need help finding your IMS Organization ID and Program ID, refer to the [Adobe Experience Cloud Organization Setup Guide](/help/onboarding/cloud-manager-introduction.md) and the [Program and Environment Management](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) documentation.
 
-2. **Enviar una solicitud de acceso**: Envíe un correo electrónico a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con toda la información recopilada en el paso anterior.
+2. **Send an access request**: Email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with all the information gathered in the previous step. 
 
-   El acceso al Forms Experience Builder es limitado y está sujeto a aprobación en función de la capacidad del programa y la alineación con los criterios de acceso anticipado.
+    Access to the Forms Experience Builder is limited and subject to approval based on program capacity and alignment with early access criteria. 
 
-## Introducción
+## Getting started
 
-Para empezar a usar Forms Experience Builder, visite la [documentación de Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
+To get started with the Forms Experience Builder, visit the [Forms Experience Builder documentation](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
+
+-->

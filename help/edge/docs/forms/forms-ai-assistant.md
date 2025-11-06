@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1134'
 ht-degree: 100%
 
 ---
@@ -170,9 +170,11 @@ Estos son ejemplos reales de lo que se puede lograr con un lenguaje simple y nat
 "Update the layout to match the attached wireframe"
 ```
 
-### Envío e integración
+<!-- 
 
-**Envío básico:**
+### Submission and Integration
+
+**Basic submission:**
 
 ```
 "Send form data to our email"
@@ -180,13 +182,15 @@ Estos son ejemplos reales de lo que se puede lograr con un lenguaje simple y nat
 "Redirect to a thank you page"
 ```
 
-**Integración avanzada:**
+**Advanced integration:**
 
 ```
 "Send form submissions to hr@company.com and create a case in our CRM system"
 "Submit data to our REST API endpoint and trigger the new customer workflow"
 "Email responses to the sales team and add the lead to our marketing automation platform"
 ```
+
+-->
 
 ## Cómo trabajar con archivos adjuntos
 
@@ -281,8 +285,11 @@ Escriba `/` para ver los métodos abreviados disponibles:
 | `/update-field` | Modificar propiedades de campo | `/update-field @email to be required` |
 | `/create-rule` | Añadir comportamiento dinámico | `/create-rule show @spouse if married` |
 | `/create-panel` | Añadir contenedores de campo | `/create-panel Personal Information` |
-| `/configure-submit` | Configurar el envío de formularios | `/configure-submit to email support` |
 | `/help` | Obtener ayuda | `/help multi-step forms` |
+
+<!-- 
+| `/configure-submit` | Set up form submission | `/configure-submit to email support` |
+-->
 
 ### Sintaxis de referencia de campo
 
