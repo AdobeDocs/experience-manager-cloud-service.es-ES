@@ -3,8 +3,8 @@ title: Configurar formularios de búsqueda
 description: Configuración de Search Forms para Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 Adobe Experience Manager as a Cloud Service viene con un potente mecanismo de [búsqueda](/help/sites-cloud/authoring/search.md).
 
-En combinación con esto, también hay un conjunto de opciones predefinidas para ayudarle a filtrar su contenido. Contienen facetas predefinidas como **Fecha de modificación**, **Estado de Publish** o **Estado de Live Copy** para ayudarle a explorar en profundidad los recursos que necesita.
+En combinación con esto, también hay un conjunto de opciones predefinidas para ayudarle a filtrar su contenido. Contienen facetas predefinidas como **Fecha de modificación**, **Estado de publicación** o **Estado de Live Copy** para ayudarle a explorar en profundidad los recursos que necesita.
 
 ![uso de búsqueda y filtro](assets/csf-usage.png)
 
@@ -80,7 +80,7 @@ Los siguientes predicados están disponibles, según la configuración:
   <tr>
    <th>Predicado</th>
    <th>Función</th>
-   <th>Ajustes</th>
+   <th>Configuración</th>
   </tr>
   <tr>
    <td>Análisis</td>
@@ -147,7 +147,7 @@ Los siguientes predicados están disponibles, según la configuración:
     </ul> </td>
   </tr>
   <tr>
-   <td>Intervalo de fechas</td>
+   <td>Intervalo de fecha</td>
    <td>Busque recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de inicio y finalización.</td>
    <td>
     <ul>
@@ -249,7 +249,7 @@ Los siguientes predicados están disponibles, según la configuración:
      <li>Etiqueta de campo</li>
      <li>Marcador de posición</li>
      <li>Nombre de propiedad*</li>
-     <li>Compatibilidad con el delimitador</li>
+     <li>Compatibilidad con delimitadores</li>
      <li>Delimitadores de entrada</li>
      <li>Ignorar mayúsculas y minúsculas</li>
      <li>Descripción</li>
@@ -264,7 +264,7 @@ Los siguientes predicados están disponibles, según la configuración:
      <li>Etiqueta de campo</li>
      <li>Nombre de propiedad*</li>
      <li>Selección única</li>
-     <li>Agregar opciones</li>
+     <li>Añadir opciones</li>
      <li>Manual</li>
      <li>Descripción</li>
     </ul> </td>
@@ -288,7 +288,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de propiedad de Publish*</li>
+     <li>Nombre de propiedad de publicación*</li>
      <li>Nombre de propiedad de páginas bloqueadas*</li>
      <li>Descripción</li>
     </ul> </td>
@@ -541,10 +541,10 @@ Igual que en la práctica **Ruta de opciones**, solo que esto se encuentra en el
 * **Selección única**
 Si se selecciona, las opciones se representan como casillas de verificación que permiten solo una selección. Si se selecciona por error, se puede anular la selección de una casilla de verificación.
 
-* **Nombres de propiedades de Publish y Live Copy**
+* **Nombre(s) de propiedad de publicación y Live Copy**
 Las etiquetas de las casillas de verificación de publicación y Live Copy para el predicado específico de Sites.
 
-* &ast; en las etiquetas de campo de la ficha **Configuración** significa que los campos son obligatorios y, si se deja en blanco, aparecerá un mensaje de error.
+* &amp;ast; en las etiquetas de campo de la ficha **Configuración** significa que los campos son obligatorios y, si se deja en blanco, aparecerá un mensaje de error.
 
 ## Configuración de Search Forms {#configuring-your-search-forms}
 

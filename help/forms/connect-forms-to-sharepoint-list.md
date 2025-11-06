@@ -5,10 +5,10 @@ keywords: ¿Cómo conectar la lista de SharePoint para un formulario adaptable?,
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '460'
-ht-degree: 80%
+ht-degree: 84%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-<span> Este vídeo solo es aplicable a los componentes principales. Para componentes UE/Foundation, consulte el artículo.</span>
+<span> Este vídeo solo es aplicable a los componentes principales. Para componentes del editor universal o de base, consulte el artículo.</span>
 
 Para usar la acción de envío [!UICONTROL Enviar a la lista SharePoint] en un formulario adaptable:
 
@@ -59,6 +59,7 @@ Al enviar el formulario, los datos se guardan en el almacenamiento de lista de S
 >[!NOTE]
 >
 > En la lista de Microsoft® SharePoint, no se admiten los siguientes tipos de columnas:
+>
 > * columna de imagen
 > * columna de metadatos
 > * columna de persona

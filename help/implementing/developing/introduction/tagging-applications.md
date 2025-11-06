@@ -1,10 +1,10 @@
 ---
 title: Creación del etiquetado en aplicaciones de AEM
-description: AEM Trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de personalizada
+description: Trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de AEM personalizada
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Creación del etiquetado en aplicaciones de AEM {#building-tagging-into-aem-applications}
 
-AEM Con el fin de trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de personalizada, este documento describe el uso de
+Con el fin de trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de AEM personalizada, este documento describe el uso de la variable
 
 * [API de etiquetado](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -28,7 +28,7 @@ Para obtener información relacionada con el etiquetado:
 
 ## Información general sobre la API de etiquetado {#overview-of-the-tagging-api}
 
-AEM La implementación del [marco de etiquetado](tagging-framework.md) en las etiquetas permite la administración de etiquetas y el contenido de etiquetas mediante la API de JCR. `TagManager` garantiza que las etiquetas introducidas como valores en la propiedad de matriz de cadenas `cq:tags` no se dupliquen, elimina `TagID`s que apuntan a etiquetas no existentes y actualiza `TagID`s para etiquetas movidas o combinadas. `TagManager` usa un detector de observación JCR que revierte cualquier cambio incorrecto. Las clases principales se encuentran en el paquete [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html):
+La implementación del [marco de etiquetado](tagging-framework.md) en AEM permite administrar las etiquetas y el contenido de las etiquetas mediante la API JCR. `TagManager` garantiza que las etiquetas introducidas como valores en la propiedad de matriz de cadenas `cq:tags` no se dupliquen, elimina `TagID`s que apuntan a etiquetas no existentes y actualiza `TagID`s para etiquetas movidas o combinadas. `TagManager` usa un detector de observación JCR que revierte cualquier cambio incorrecto. Las clases principales se encuentran en el paquete [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html):
 
 * `JcrTagManagerFactory` - devuelve una implementación basada en JCR de `TagManager`. Es la implementación de referencia de la API de etiquetado.
 * `TagManager`: permite resolver y crear etiquetas por rutas y nombres.
@@ -155,7 +155,7 @@ La API del lado del servidor ha localizado `title` métodos relacionados:
    * `createTagByTitle(String tagTitlePath, Locale locale)`
    * `resolveByTitle(String tagTitlePath, Locale locale)`
 
-AEM En la práctica, el idioma se puede obtener en el idioma de la página o en el idioma del usuario.
+En AEM, el idioma se puede obtener del idioma de la página o del idioma del usuario.
 
 Para el etiquetado, la localización depende del contexto, ya que la etiqueta `titles` se puede mostrar en el idioma de la página, en el idioma del usuario o en cualquier otro idioma.
 
@@ -170,4 +170,4 @@ El finés está ahora disponible en el cuadro de diálogo de etiquetas de las pr
 
 >[!NOTE]
 >
->AEM El nuevo idioma debe ser uno de los idiomas reconocidos por la comunidad de idiomas de los que se dispone en la. Es decir, debe estar disponible como nodo debajo de `/libs/wcm/core/resources/languages`.
+>El nuevo idioma debe ser uno de los idiomas reconocidos por AEM. Es decir, debe estar disponible como nodo debajo de `/libs/wcm/core/resources/languages`.

@@ -3,15 +3,15 @@ title: Agregar una canalización de Edge Delivery
 description: Aprenda a añadir una canalización de Edge Delivery para crear e implementar su código en entornos de producción.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 9ad50747b46b75c33cb5b034e8b8e41d5079e967
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '613'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 

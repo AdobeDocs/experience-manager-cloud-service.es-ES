@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo empezar a utilizar la herramienta 
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 14%
+source-wordcount: '1653'
+ht-degree: 13%
 
 ---
 
@@ -29,7 +29,7 @@ La herramienta de transferencia de contenido se puede descargar como un archivo 
 Solo se admite la versión 2.0.0 y posteriores, y es aconsejable utilizar la versión más reciente.
 
 >[!NOTE]
->Descargue Content Transfer Tool desde el portal de [distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+>Descargue la herramienta de transferencia de contenido desde el portal de [distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Conectividad del entorno de Source {#source-environment-connectivity}
 
@@ -65,7 +65,7 @@ A veces, es difícil comprender los problemas de conexión SSL/TLS. Para solucio
 >id="aemcloud_ctt_demo"
 >title="Ejecución de la herramienta de transferencia de contenido"
 >abstract="Obtenga información acerca de cómo utilizar la herramienta de transferencia de contenido para migrar el contenido a AEM as a Cloud Service (autor/publicación)."
->additional-url="https://video.tv.adobe.com/v/327076/?quality=12&learn=on&captions=spa" text=" Consulte la demostración"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" Consulte la demostración"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=es#migration" text="Tutorial: uso de la herramienta de transferencia de contenido"
 
 La siguiente sección se aplica a la nueva versión de la herramienta de transferencia de contenido. Siga esta sección para aprender a utilizar la herramienta de transferencia de contenido para migrar contenido a AEM as a Cloud Service:
@@ -149,8 +149,10 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
       >A partir de la versión de CTT (3.0.24), se han incluido nuevas funciones en la herramienta de transferencia de contenido, lo que mejora el proceso de incluir y excluir rutas. Anteriormente, las rutas debían seleccionarse una por una, lo que resultaba tedioso y laborioso. Ahora, los usuarios pueden incluir rutas directamente desde la interfaz de usuario o cargar un archivo CSV según sus preferencias.  El archivo CSV debe tener una ruta por línea y sin comas.
 
    1. **Rutas que se incluirán**: use el explorador de rutas para seleccionar las rutas que deben migrarse. El selector de rutas acepta entradas escribiendo o seleccionando. Los usuarios solo pueden seleccionar una opción para incluir las rutas: desde la interfaz de usuario de o cargando un archivo CSV.
+
       >[!IMPORTANT]
       >Las siguientes rutas están restringidas al crear un conjunto de migración:
+      >
       >* `/apps`
       >* `/libs`
       >* `/home`

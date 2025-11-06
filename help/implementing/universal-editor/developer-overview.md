@@ -3,9 +3,9 @@ title: Información general del editor universal para desarrolladores de AEM
 description: Si es un desarrollador de AEM interesado en cómo funciona el editor universal y cómo utilizarlo en su proyecto, este documento le ofrece una guía de introducción de extremo a extremo de la instrumentación del proyecto de WKND para trabajar con el editor universal.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 100%
 

@@ -4,15 +4,14 @@ description: Colección de patrones de indicaciones probadas y ejemplos para cre
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 38%
+ht-degree: 99%
 
 ---
-
 
 # Forms Experience Builder: biblioteca de indicaciones
 
@@ -41,8 +40,8 @@ Esta biblioteca proporciona patrones de indicaciones reutilizables para escenari
 
 **Prepare los recursos de marca con antelación para crear formularios de forma coherente:**
 
-- **Plantillas de marca**: prepare plantillas de formulario estandarizadas con los colores, las fuentes y los patrones de diseño de su organización
-- **Directrices de estilo**: defina un estilo de campo, diseños de botón y estándares de espaciado coherentes que Forms Experience Builder pueda aplicar.
+- **Plantillas de marca**: prepare plantillas de formularios estandarizadas con los colores, las fuentes y los patrones de diseño de su organización
+- **Directrices de estilo**: defina un estilo de campo, diseños de botón y estándares de espaciado coherentes que Forms Experience Builder pueda aplicar
 - **Biblioteca de componentes**: colabore con su equipo de desarrollo para preparar componentes de formulario reutilizables que coincidan con su identidad de marca
 - **Recursos visuales**: prepare logotipos, iconos y elementos de fondo para la integración de formularios
 
@@ -55,23 +54,23 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 **Paso 1 - Inicio de forma sencilla:**
 
-    Crear un formulario de contacto básico con campos de nombre, correo electrónico y mensaje
+    Cree un formulario de contacto básico con campos de nombre, correo electrónico, teléfono y mensaje
 
 **Paso 2 - Añadir validación:**
 
     Haga que los campos @name y @email sean obligatorios con la validación adecuada
 
-**Paso 3: Mejorar la experiencia del usuario:**
+**Paso 3 - Mejorar la experiencia del usuario:**
 
-    Agregar texto de marcador de posición: @name &quot;Su nombre completo&quot;, @email &quot;your.email@company.com&quot;, @message &quot;Díganos cómo podemos ayudarle&quot;
+    Añada texto de marcador de posición: @name “Su nombre completo”, @email “your.email@company.com”, @message “Díganos cómo podemos ayudarle”
 
 **Paso 4 - Añadir características avanzadas:**
 
-    Agregue un tipo de consulta desplegable con las opciones: &quot;Pregunta general&quot;, &quot;Solicitud de soporte&quot;, &quot;Consulta de ventas&quot;, &quot;Asociación&quot;
+    Añada un inquiryType desplegable con las opciones: “Pregunta general”, “Solicitud de asistencia”, “Consulta de ventas”, “Colaboración”
 
 **Paso 5 - Implementar la lógica condicional:**
 
-    /create-rule muestra @urgencyLevel lista desplegable (baja, Medium, alta) solo cuando @inquiryType es igual a &quot;Solicitud de asistencia&quot;
+    /create-rule muestra la lista desplegable @urgencyLevel (Low, Medium, High) solo cuando @inquiryType es igual a “Solicitud de asistencia”
 
 ### Ejemplo 2: Creación incremental de un formulario de registro
 
@@ -81,19 +80,19 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 **Paso 2 - Añadir campos obligatorios:**
 
-    Agregue campos para @firstName, @lastName, @email, @phoneNumber con la validación adecuada
+    Añada campos para @firstName, @lastName, @email, @phoneNumber con la validación adecuada
 
 **Paso 3 - Añadir lógica empresarial:**
 
-    Crear una regla: si el @age es menor de 18 años, mostrar la sección de información para padres/tutores
+    Cree una regla: si @age es menor de 18 años, mostrar la sección de información para padres/tutores
 
 **Paso 4 - Mejorar con preferencias:**
 
-    Agregar un panel de preferencias con @newsletterSubscription, @marketingConsent, @termsAccepted
+    Añada un panel de preferencias con @newsletterSubscription, @marketingConsent, @termsAccepted
 
 **Paso 5 - Añadir carga de archivos:**
 
-    Incluir un campo de carga de archivo para @profilePicture con un límite de tamaño de 5 MB
+    Incluya un campo de carga de archivo para @profilePicture con un límite de tamaño de 5 MB
 
 ## Creación y administración de formularios
 
@@ -103,7 +102,7 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 **Indicación de ejemplo - Creación de formularios simples:**
 
-    Crear un formulario de comentarios de clientes con:
+    Cree un formulario de comentarios de clientes con:
     - Clasificación del producto (de 1 a 5 estrellas)
     - Campo de comentarios para comentarios detallados
     - Correo electrónico del cliente (opcional)
@@ -111,28 +110,28 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 **Indicación de ejemplo - Creación de formularios complejos:**
 
-    Crear un formulario de incorporación completo para empleados con:
+    Cree un formulario de incorporación completo para empleados con:
     
     **Sección de información personal:**
-    - Nombre completo (primero, segundo, último)
+    - Nombre completo (nombre y apellidos)
     - Fecha de nacimiento con validación de edad
     - Información de contacto (correo electrónico, teléfono, dirección)
-    - Detalles de contacto de emergencia
+    - Datos de contacto de emergencia
     
-    **Detalles de empleo:**
+    **Datos de empleo:**
     - Selección de puesto y departamento
     - Fecha de inicio con validación de día laborable
     - Información de salario con aviso de confidencialidad
     - Estructura de informes
     
-    **Carga de documento:**
+    **Cargar documento:**
     - Reanudar/cargar el CV (PDF, DOC, DOC, DOCX)
-    - Documentos de verificación de identidad
+    - Documentos para verificación de identidad
     - Formularios fiscales e información bancaria
     - Contrato de trabajo firmado
     
     **Preferencias:**
-    - Selección de beneficios con calculadora de costos
+    - Selección de beneficios con calculadora de costes
     - Preferencias de horario de trabajo
     - Requisitos de capacitación
     - Necesidades de equipo
@@ -140,21 +139,21 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
     **Reglas de validación:**
     - Validación de formato de correo electrónico
     - Validación de formato de número de teléfono
-    - Edad debe ser 18 o mayor
-    - Todos los documentos requeridos deben ser subido
-    - Se deben aceptar los términos y condiciones
+    - Edad debe ser mayor de 18
+    - Deben subirse todos los documentos necesarios
+    - Deben aceptarse los términos y condiciones
     
     **Acciones de envío:**
     - Enviar correo electrónico de confirmación al nuevo empleado
-    - Notificar al departamento de RRHH
-    - Crear registro de empleado en el sistema de RRHH
+    - Notificar al departamento de RR. HH.
+    - Crear registro de empleado en el sistema de RR. HH.
     - Programar reunión de orientación
 
 **Indicaciones de administración de formularios:**
 
     Importe este formulario de solicitud de PDF y conviértalo en un formulario adaptable con validación mejorada
     
-    Actualice el formulario de contacto existente para incluir identificadores de medios sociales y el método de contacto preferido
+    Actualice el formulario de contacto existente para incluir identificadores de redes sociales y el método de contacto preferido
     
     Reorganice el formulario de registro en un asistente de tres pasos: información personal, preferencias, confirmación
 
@@ -166,11 +165,11 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 **Indicación de ejemplo - Adición de campo básico:**
 
-    Agregue un campo de entrada de texto para &quot;Nombre de la compañía&quot; con el marcador de posición &quot;Escriba el nombre de su compañía&quot;
+    Añada un campo de entrada de texto para “Nombre de la empresa” con el marcador de posición “Escriba el nombre de su empresa”
 
 **Indicación de ejemplo - Configuración de campo avanzado:**
 
-    Agregue una sección de dirección completa con:
+    Añada una sección de dirección completa con:
     
     **Dirección de la calle:**
     - Línea de dirección 1 (obligatorio, máximo 100 caracteres)
@@ -178,15 +177,15 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
     - Ciudad (obligatorio, desplegable con ciudades comunes)
     - Estado/provincia (obligatorio, desplegable)
     - Código postal (obligatorio, validación de formato)
-    - País (obligatorio, predeterminado en &quot;Estados Unidos&quot;)
+    - País (obligatorio, predeterminado en “Estados Unidos”)
     
     **Reglas de validación:**
     - El código postal debe coincidir con la selección de estado
-    - 1 no puede estar vacía
+    - La línea de dirección 1 no puede estar vacía
     - La ciudad debe ser una ciudad válida para el estado seleccionado
     
     **Experiencia del usuario:**
-    - Completar automáticamente para los campos de dirección
+    - Autocompletar en los campos de dirección
     - Borrar etiquetas y texto de ayuda
     - Campos de entrada compatibles con dispositivos móviles
     - Cumplimiento de la accesibilidad
@@ -195,11 +194,11 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
     Haga que @email campo sea obligatorio con validación en tiempo real y mensaje de error personalizado
     
-    Agregue un menú desplegable para @country con opciones para EE. UU., Canadá, Reino Unido, Alemania, Francia y &quot;Otros&quot;
+    Añada un menú desplegable para @country con opciones para EE. UU., Canadá, Reino Unido, Alemania, Francia y “Otros”
     
-    Configure @phoneNumber campo con el formato (XXX) XXX-XXXX y la validación
+    Configure el campo @phoneNumber con el formato (XXX) XXX-XXXX y la validación
     
-    Agregue un campo de carga de archivo para @resume con restricciones de PDF y DOC, máximo de 5 MB
+    Añada un campo de carga de archivo en @resume con restricciones de PDF y DOC, máximo 5 MB
 
 ## Campos inteligentes mejorados LLM
 
@@ -211,95 +210,95 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 **Aeropuertos y transporte:**
 
-    Agregue un menú desplegable para los aeropuertos de salida con todos los aeropuertos internacionales principales
-    Agregue un campo de aeropuerto de llegada con códigos IATA y nombres completos
+    Añada un menú desplegable para los aeropuertos de salida con todos los aeropuertos internacionales principales
+    Añada un campo de aeropuerto de llegada con códigos IATA y nombres completos
     Cree un campo para el aeropuerto más cercano a la ubicación del usuario
-    Agregue una selección de estaciones de tren para las ciudades europeas
+    Añada una selección de estaciones de tren para las ciudades europeas
 
 **Regiones administrativas:**
 
-    Agregar una lista completa de estados de EE. UU. con abreviaturas
-    Crear un menú desplegable de países con códigos ISO y nombres completos
-    Agregar un campo para las principales ciudades del mundo con husos horarios
-    Incluir un menú desplegable de provincias y territorios canadienses
-    Agregar un campo para los condados y áreas postales del Reino Unido
+    Añada una lista completa de estados de EE. UU. con abreviaturas
+    Cree un menú desplegable de países con códigos ISO y nombres completos
+    Añada un campo para las principales ciudades del mundo con husos horarios
+    Incluya un menú desplegable de provincias y territorios canadienses
+    Añada un campo para los condados y áreas postales del Reino Unido
 
 ### Datos empresariales e industriales
 
 **Clasificaciones de compañía:**
 
-    Agregue un campo para la clasificación del sector con códigos NAICS
+    Añada un campo para la clasificación del sector con códigos NAICS
     Cree un menú desplegable de tipos de entidades comerciales (LLC, Corporation, Partnership, etc.)
-    Agregar un campo para categorías de tamaño de compañía (inicio, PYMES, empresa)
-    Incluir la selección de departamentos para organizaciones grandes
-    Agregar un campo para tipos de servicios profesionales
+    Añada un campo para categorías de tamaño de empresa (startup, PYMES, empresa)
+    Incluya la selección de departamentos para organizaciones grandes
+    Añada un campo para tipos de servicios profesionales
 
 **Clasificaciones profesionales:**
 
-    Agregue un campo para los puestos con funciones comunes en el sector
+    Añada un campo para los puestos laborales con funciones comunes en el sector
     Cree un menú desplegable de certificaciones profesionales por campo
     Incluya niveles de educación con tipos de títulos
-    Agregue un campo para rangos de años de experiencia
+    Añada un campo para rangos de años de experiencia
     Cree una selección de lenguajes y marcos de trabajo de programación
 
 ### Normas y regulaciones
 
 **Asuntos financieros y legales:**
 
-    Agregue un campo para códigos de moneda con símbolos y tipos de cambio
+    Añada un campo para códigos de moneda con símbolos y tipos de cambio
     Cree un menú desplegable de tipos de identificación fiscal por país
     Incluya un campo para tipos de documentos legales
-    Agregue opciones de métodos de pago con características de seguridad
+    Añada opciones de métodos de pago con características de seguridad
     Cree una selección para instituciones bancarias por país
 
 **Normas técnicas:**
 
-    Agregar un menú desplegable de tipos de formato de archivo con extensiones
-    Incluir opciones de protocolo de red
-    Agregar un campo para tipos y versiones de base de datos
-    Crear una selección para métodos de autenticación de API
+    Añada un menú desplegable de tipos de formato de archivo con extensiones
+    Incluya opciones de protocolo de red
+    Añada un campo para tipos y versiones de base de datos
+    Cree una selección para métodos de autenticación de API
 
 ### Sanidad y medicina
 
 **Clasificaciones médicas:**
 
-    Agregue un campo para especialidades médicas
+    Añada un campo para especialidades médicas
     Cree un menú desplegable de medicamentos comunes con nombres genéricos
     Incluya un campo para los tipos de proveedores de seguros
-    Agregue una selección para las relaciones de contacto de emergencia médica
+    Añada una selección para las relaciones de contacto de emergencia médica
     Cree un campo para las restricciones dietéticas y las alergias
 
 ### Inteligencia de tiempo y calendario
 
 **Campos de fecha y hora:**
 
-    Agregue un campo para el horario laboral con administración de husos horarios
+    Añada un campo para el horario laboral con gestión de husos horarios
     Cree un menú desplegable de días festivos por país
     Incluya opciones de temporada con intervalos de fechas
-    Agregue un campo para la reserva de salas de conferencias con disponibilidad
+    Añada un campo para la reserva de salas de conferencias con disponibilidad
     Cree una selección para patrones de reuniones recurrentes
 
 ### Categorías de productos y servicios
 
 **Clasificaciones de comercio electrónico:**
 
-    Agregue un campo para las categorías de productos con subcategorías
+    Añada un campo para las categorías de productos con subcategorías
     Cree un menú desplegable de métodos de envío con estimaciones de entrega
     Incluya un campo para opciones de directivas de devolución
-    Agregue una selección para los niveles de prioridad de los clientes
+    Añada una selección para los niveles de prioridad de los clientes
     Cree un campo para los ciclos de facturación de suscripción
 
 **Indicaciones de campo inteligente de ejemplo:**
 
-    &quot;Agregar un campo de aeropuerto de salida con todos los principales aeropuertos del mundo, incluidos los códigos IATA y los nombres de ciudades&quot;
+    “Añada un campo de aeropuerto de salida con todos los principales aeropuertos del mundo, incluidos los códigos IATA y los nombres de ciudades”
     
-    &quot;Crear un campo industrial completo utilizando la clasificación estándar de NAICS con subcategorías tecnológicas&quot;
+    “Cree un campo del sector exhaustivo utilizando la clasificación estándar de NAICS con subcategorías tecnológicas”
     
-    &quot;Incluir un menú desplegable de certificación profesional que se adapte en función del campo de trabajo seleccionado&quot;
+    “Incluya un menú desplegable de certificación profesional que se adapte en función del campo de trabajo seleccionado”
     
-    &quot;Agregar un campo de número de teléfono internacional que dé formato según el país seleccionado&quot;
+    “Añada un campo de número de teléfono internacional que dé formato según el país seleccionado”
     
-    &quot;Crear un campo de selección universitaria con las principales instituciones organizadas por país y clasificación&quot;
+    “Cree un campo de selección universitaria con las principales instituciones organizadas por país y clasificación”
 
 ## Creación de reglas y lógica empresarial
 
@@ -313,33 +312,33 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 **Indicación de ejemplo - Reglas empresariales complejas:**
 
-    Implementar validación completa de solicitud de préstamo:
+    Implemente la validación completa de la solicitud de préstamo:
     
     **Validación de ingresos:**
-    - Si el @annualIncome es menor que 30000:
-    - Mostrar mensaje de advertencia: &quot;Los ingresos pueden ser insuficientes para el importe solicitado del préstamo&quot;
+    - Si @annualIncome es menor que 30 000:
+    - Mostrar mensaje de advertencia: “Los ingresos pueden ser insuficientes para el importe solicitado del préstamo”
     - Requerir documentación de ingresos adicional
-    - Mostrar mensaje: &quot;Puede requerirse documentación adicional&quot;
-    - Si el @annualIncome es mayor que el 100000:
+    - Mostrar mensaje: “Puede requerirse documentación adicional”
+    - Si @annualIncome es mayor que el 100 000:
     - Mostrar opciones de servicios premium
     - Habilitar la casilla de verificación de procesamiento de prioridad
     
     **Validación basada en la edad:**
-    - Si el @age es menor de 18:
-    - Mostrar información del tutor section
-    - Hacer obligatoria la carga de firma principal
-    - Cambiar el texto del botón de envío a &quot;Enviar para revisión&quot;
-    - Si @age 65 años o más:
-    - Mostrar las opciones de descuento de categoría superior
-    - Agregar la sección de preferencias de accesibilidad
+    - Si @age es menor de 18:
+    - Mostrar sección de información del tutor
+    - Hacer obligatoria la carga de firma del progenitor
+    - Cambiar el texto del botón de envío a “Enviar para revisión”
+    - Si @age mayor de 65 años:
+    - Mostrar las opciones de descuento para personas mayores
+    - Añadir la sección de preferencias de accesibilidad
 
 **Indicaciones específicas de cada regla:**
 
-    Cree una **regla de visibilidad** que muestre @spouseInformation panel únicamente cuando @maritalStatus igual a &quot;Casado&quot; o &quot;Asociación doméstica&quot;
+    Cree una **regla de visibilidad** que muestre el panel @spouseInformation únicamente cuando @maritalStatus igual a “Casado” o “Pareja de hecho” 
     
-    Agregue **divulgación progresiva** donde aparezcan preguntas adicionales basadas en respuestas anteriores. Comience con información básica y, a continuación, muestre los seguimientos relevantes
+    Añada **divulgación progresiva** donde aparezcan preguntas adicionales basadas en respuestas anteriores. Comience con información básica y, a continuación, muestre los seguimientos relevantes
     
-    Implemente **valores predeterminados inteligentes** donde la selección de @country configura automáticamente los campos relacionados. Permitir invalidación manual
+    Implemente **valores predeterminados inteligentes** donde la selección de @country configura automáticamente los campos relacionados. Permita la anulación manual
 
 ## Integración y envío de datos
 
@@ -349,52 +348,52 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 **Indicación de ejemplo - Empiece con el envío básico:**
 
-    Configurar el envío de formulario básico para @applicationForm:
+    Configure el envío de formulario básico para @applicationForm:
     
     **Envío principal:**
-    - Enviar datos de formulario al extremo REST: `/api/v1/applications`
+    - Enviar datos de formulario al punto final REST: `/api/v1/applications`
     - Dar formato a los datos como JSON
-    - Mostrar mensaje de éxito: &quot;La solicitud se envió correctamente&quot;
-    - Mostrar mensaje de error si el envío falla: &quot;Error en el envío, inténtelo de nuevo&quot;
+    - Mostrar mensaje de éxito: “La solicitud se envió correctamente”
+    - Mostrar mensaje de error si el envío falla: “Error en el envío, inténtelo de nuevo”
 
 **Luego añada acciones secundarias de forma incremental:**
 
-    Agregar notificación por correo electrónico a @applicationForm: enviar correo electrónico de confirmación a @email dirección con el número de referencia de la aplicación
+    Añadir notificación por correo electrónico a @applicationForm: enviar correo electrónico de confirmación a la dirección de correo electrónico @email con el número de referencia de la aplicación
     
-    Agregar integración de CRM a @applicationForm: crear nuevo registro de cliente potencial con @firstName, @lastName, @email y establecer el estado en &quot;Nueva aplicación&quot;
+    Añadir integración de CRM a @applicationForm: crear nuevo registro de cliente potencial con @firstName, @lastName, @email y establecer el estado en “Nueva aplicación”
 
 **Indicación de ejemplo - Envío multicanal estándar:**
 
     Configurar el envío de formularios con varios destinos de datos:
     
     **Envío principal:**
-    - Enviar datos de formulario al extremo REST: `/api/v1/applications`
+    - Enviar datos de formulario al punto final REST: `/api/v1/applications`
     - Incluir encabezado de autenticación con clave de API
     - Dar formato a los datos como JSON con objetos anidados para la dirección y el empleo
     - Controlar la respuesta correcta (201) mostrando el mensaje de agradecimiento
     
     **Acciones secundarias:**
-    - Enviar correo electrónico de notificación al solicitante en la dirección @email
+    - Enviar correo electrónico de notificación al solicitante en la dirección de correo electrónico @email
     - Copiar los datos de la solicitud en el sistema de seguimiento
-    - Flujo de Déclencheur para el proceso de aprobación
-    - Crear en el registro CRM con estado de posible cliente &quot;Nueva aplicación&quot;
+    - Activar flujo de trabajo para el proceso de aprobación
+    - Crear registro en CRM con estado de posible cliente “Nueva solicitud”
     
     **Gestión de errores:**
     - Si falla el envío principal, guarde los datos localmente y vuelva a intentarlo
-    - Mostrar mensaje de error descriptivo: &quot;Envío no disponible temporalmente&quot;
+    - Mostrar mensaje de error descriptivo: “Envío no disponible temporalmente”
     - Proporcionar opción para descargar datos de formulario como copia de seguridad
     - Enviar correo electrónico de alerta al equipo de administración sobre el envío fallido
     
     **Flujo de éxito:**
-    - Redirigir a la página de confirmación con número de referencia de aplicación
+    - Redirigir a la página de confirmación con número de referencia de solicitud
     - Enviar correo electrónico de confirmación con pasos siguientes
     - Mostrar cronología estimada del procesamiento
 
 **Indicaciones específicas de la integración:**
 
-    Conecte este formulario a **CRM system** para crear nuevos posibles clientes. Asigne @firstName a FirstName, @email a Email, establezca LeadSource en &quot;Formulario web&quot; y Status en &quot;Nuevo&quot;
+    Conecte este formulario a **sistema de CRM** para crear nuevos posibles clientes. Asigne @firstName a FirstName, @email a Email, establezca LeadSource en “Formulario web” y Status en “Nuevo”
     
-    Configurar **déclencheur de flujo de trabajo** cuando se envíe el formulario. Pase todos los datos de formulario y el flujo de trabajo de aprobación de déclencheur con la notificación del administrador 
+    Configure **activador de flujo de trabajo** cuando se envíe el formulario. Pase todos los datos de formulario y active el flujo de trabajo de aprobación con la notificación del administrador 
     
     Configure **integración de base de datos** para guardar los envíos de formularios como registros. Crear nueva carpeta para cada envío con documentos cargados
 

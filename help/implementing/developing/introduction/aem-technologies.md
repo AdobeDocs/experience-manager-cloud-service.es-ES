@@ -1,27 +1,27 @@
 ---
 title: Fundamentos técnicos de AEM
-description: AEM AEM Una visión general de los fundamentos técnicos de la, incluido cómo se estructura la y las tecnologías fundamentales como JCR, Sling y OSGi.
+description: Una visión general de los fundamentos técnicos de AEM, incluido cómo AEM está estructurado y utiliza tecnologías fundamentales como JCR, Sling y OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 0%
+source-wordcount: '2129'
+ht-degree: 1%
 
 ---
 
 # Fundamentos técnicos de AEM {#aem-technical-foundations}
 
-AEM es una plataforma sólida basada en tecnologías probadas, escalables y flexibles. AEM AEM Este documento ofrece una descripción detallada de las distintas partes que componen la y está diseñado como un apéndice técnico para un desarrollador de paquetes de pila completa. No pretende ser una guía de introducción. AEM Si es nuevo en el desarrollo de la, consulte [Introducción al desarrollo de AEM Sites - Tutorial de WKND](develop-wknd-tutorial.md) como primer paso.
+AEM es una plataforma sólida basada en tecnologías probadas, escalables y flexibles. Este documento ofrece información general detallada sobre las distintas partes que componen AEM y está diseñado como apéndice técnico para un desarrollador de AEM de pila completa. No pretende ser una guía de introducción. Si es nuevo en el desarrollo de AEM, consulte [Introducción al desarrollo de AEM Sites - Tutorial de WKND](develop-wknd-tutorial.md) como primer paso.
 
 >[!TIP]
 >
->AEM Antes de sumergirse en las tecnologías principales de la, Adobe recomienda completar [Introducción al desarrollo de AEM Sites - Tutorial de WKND](develop-wknd-tutorial.md).
+>Antes de sumergirse en las tecnologías principales de AEM, Adobe recomienda completar el [Tutorial de WKND de introducción al desarrollo de AEM Sites](develop-wknd-tutorial.md).
 
 ## Aspectos básicos {#fundamentals}
 
-AEM Al ser un sistema moderno de gestión de contenidos, se basa en las tecnologías web estándar, que son:
+Como sistema moderno de administración de contenido, AEM se basa en tecnologías web estándar:
 
 * El ciclo de solicitud-respuesta (XMLHttpRequest / XMLHttpResponse)
 * HTML
@@ -40,23 +40,23 @@ El estándar del repositorio de contenido Java™ (JCR), [JSR 283](https://devel
 
 El paquete [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), `javax.jcr.*`, se usa para el acceso directo y la manipulación del contenido del repositorio.
 
-AEM La se basa en un JCR.
+AEM se basa en un JCR.
 
 ## Apache Jackrabbit Oak {#jackrabbit-oak}
 
 [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/) es una implementación de un repositorio de contenido jerárquico escalable y de alto rendimiento que se usará como base de sitios web modernos de primera clase y otras aplicaciones de contenido exigentes, de conformidad con el estándar JCR.
 
-Jackrabbit Oak (también denominado simplemente Oak AEM) es la implementación del estándar JCR en el que se basa la creación de la.
+Jackrabbit Oak (también denominado simplemente Oak) es la implementación del estándar JCR sobre el que se crea AEM.
 
 ## Procesamiento de solicitudes de Sling {#sling-request-processing}
 
-AEM Se ha creado usando [Sling](https://sling.apache.org/index.html), un marco de aplicación web basado en principios REST que proporciona un fácil desarrollo de aplicaciones orientadas a contenido. Sling utiliza un repositorio JCR, como Apache Jackrabbit Oak, como almacén de datos. Sling ha sido colaborador de Apache Software Foundation; puede encontrar más información en Apache.
+AEM se creó con [Sling](https://sling.apache.org/index.html), un módulo de aplicaciones web basado en los principios de REST que facilita el desarrollo de aplicaciones orientadas a contenido. Sling utiliza un repositorio JCR, como Apache Jackrabbit Oak, como almacén de datos. Sling ha sido colaborador de Apache Software Foundation; puede encontrar más información en Apache.
 
 ### Introducción a Sling {#introduction-to-sling}
 
 Con Sling, el tipo de contenido que se procesará no es la primera consideración de procesamiento. En su lugar, la consideración principal es si la URL se resuelve en un objeto de contenido para el que se puede encontrar una secuencia de comandos para realizar la renderización. Este proceso proporciona un soporte excelente para que los autores de contenido web creen páginas que se personalicen fácilmente según sus necesidades.
 
-Las ventajas de esta flexibilidad son evidentes en aplicaciones con una amplia gama de elementos de contenido diferentes o cuando necesita páginas que se puedan personalizar fácilmente. AEM En concreto, al implementar un sistema de administración de contenido web como, por ejemplo, la administración de contenido web, se puede hacer lo siguiente
+Las ventajas de esta flexibilidad son evidentes en aplicaciones con una amplia gama de elementos de contenido diferentes o cuando necesita páginas que se puedan personalizar fácilmente. En concreto, al implementar un sistema de administración de contenido web como AEM.
 
 Consulte [Discover Sling en 15 minutos](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) para conocer los primeros pasos para desarrollar con Sling.
 
@@ -64,7 +64,7 @@ El diagrama siguiente explica la resolución de scripts de Sling. Muestra cómo 
 
 ![Explicación de la resolución de scripts de Apache Sling](assets/sling-cheatsheet-01.png)
 
-En el diagrama siguiente se explican los parámetros de solicitud ocultos pero eficaces que se pueden usar con `SlingPostServlet`, el controlador predeterminado para todas las solicitudes de POST. El controlador le ofrece un sinfín de opciones para crear, modificar, eliminar, copiar y mover nodos en el repositorio.
+En el diagrama siguiente se explican los parámetros de solicitud ocultos pero eficaces que se pueden usar con `SlingPostServlet`, el controlador predeterminado para todas las solicitudes POST. El controlador le ofrece un sinfín de opciones para crear, modificar, eliminar, copiar y mover nodos en el repositorio.
 
 ![Usando SlingPostServlet](assets/sling-cheatsheet-02.png)
 
@@ -142,7 +142,7 @@ La ruta especificada por `sling:resourceType` puede ser:
 
 >[!TIP]
 >
->El Adobe recomienda las rutas relativas a medida que aumentan la portabilidad.
+>Adobe recomienda las rutas relativas a medida que aumentan la portabilidad.
 
 Todos los scripts de Sling se almacenan en subcarpetas de `/apps` (scripts mutables, de usuario) o `/libs` (scripts inmutables, del sistema), en las que se busca en este orden.
 
@@ -151,14 +151,14 @@ Otros puntos que hay que tener en cuenta son:
 * Cuando se requiere el método (GET, POST), se especifica en mayúsculas según la especificación HTTP, por ejemplo, `jobs.POST.esp`
 * Se admiten varios motores de scripts, pero los scripts comunes recomendados son HTL y JavaScript.
 
-AEM La lista de motores de scripts admitidos por la instancia determinada de se enumera en la consola de administración de Felix ( `http://<host>:<port>/system/console/slingscripting`).
+La lista de motores de scripts admitidos por la instancia determinada de AEM se enumera en la Consola de administración Felix ( `http://<host>:<port>/system/console/slingscripting`).
 
 En el ejemplo anterior, si `sling:resourceType` es `hr/jobs`, para:
 
 * Solicitudes y direcciones URL de GET/HEAD que terminan en `.html` (tipos de solicitud predeterminados, formato predeterminado)
    * El script es `/apps/hr/jobs/jobs.esp`; la última sección de `sling:resourceType` forma el nombre del archivo.
-* Solicitudes de POST (todos los tipos de solicitud excepto GET/HEAD, el nombre del método debe estar en mayúsculas)
-   * Se utiliza el POST en el nombre del script.
+* Solicitudes POST (todos los tipos de solicitud excepto GET/HEAD, el nombre del método debe estar en mayúsculas)
+   * POST se utiliza en el nombre del script.
    * El script es `/apps/hr/jobs/jobs.POST.esp`.
 * Direcciones URL en otros formatos, que no terminan con `.html`
    * Por ejemplo, `../content/corporate/jobs/developer.pdf`
@@ -236,7 +236,7 @@ En Sling, no se puede llamar directamente a los scripts porque rompería el conc
 
 Si llama a la representación (la secuencia de comandos) directamente, oculta el recurso dentro de la secuencia de comandos, por lo que el marco de trabajo (Sling) ya no sabe nada de él. Por lo tanto, se pierden ciertas funciones:
 
-* Gestión automática de métodos http distintos de la GET, incluidos:
+* Gestión automática de métodos http distintos de GET, incluidos:
    * POST, PUT, DELETE que se gestiona con una implementación predeterminada de sling
    * El script `POST.jsp` en su ubicación `sling:resourceType`
 * Su arquitectura de código ya no es tan limpia ni está tan claramente estructurada como debería ser; es de suma importancia para el desarrollo a gran escala
@@ -270,7 +270,7 @@ A continuación, un marco OSGi le ofrece carga/descarga dinámica, configuració
 >
 >En particular, su página de Educación Básica contiene una colección de presentaciones y tutoriales.
 
-Esta arquitectura le permite ampliar Sling con módulos específicos de la aplicación. AEM Sling y, por lo tanto, la implementación de OSGi utiliza la implementación [Apache Felix](https://felix.apache.org/documentation/index.html). Ambas son colecciones de paquetes OSGi que se ejecutan dentro de un marco OSGi.
+Esta arquitectura le permite ampliar Sling con módulos específicos de la aplicación. Sling y, por lo tanto, AEM, utilizan la implementación [Apache Felix](https://felix.apache.org/documentation/index.html) de OSGi. Ambas son colecciones de paquetes OSGi que se ejecutan dentro de un marco OSGi.
 
 Esta funcionalidad permite realizar las siguientes acciones en cualquiera de los paquetes de la instalación:
 
@@ -292,7 +292,7 @@ La siguiente lista ofrece información general sobre la estructura que se ve den
 * `/content`: contenido creado para su sitio web.
 * `/etc`
 * `/home` - Información de usuario y grupo.
-* AEM `/libs` - Bibliotecas y definiciones que pertenecen al núcleo de la. AEM Las subcarpetas de `/libs` representan las características de la aplicación listas para usar No se puede modificar el contenido de `/libs`. Las características específicas del sitio web deben realizarse en `/apps`.
+* `/libs`: bibliotecas y definiciones que pertenecen al núcleo de AEM. Las subcarpetas de `/libs` representan las características de AEM listas para usar. No se puede modificar el contenido de `/libs`. Las características específicas del sitio web deben realizarse en `/apps`.
 * `/tmp` - Área de trabajo temporal.
 * `/var`: archivos que cambian y son actualizados por el sistema; como registros de auditoría, estadísticas y control de eventos.
 

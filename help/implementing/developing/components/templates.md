@@ -3,10 +3,10 @@ title: Plantillas editables
 description: Obtenga información sobre cómo se utilizan las plantillas editables al crear una página, y definir su contenido inicial, contenido estructurado, políticas de creación y diseño.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3442'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ Este documento:
 * Ofrece información general sobre la creación de una plantilla editable
 * Describe las tareas de administrador/desarrollador necesarias para crear plantillas editables
 * Describe los fundamentos técnicos de las plantillas editables
-* AEM Describe cómo evalúa la disponibilidad de una plantilla de manera
+* Describe cómo AEM evalúa la disponibilidad de una plantilla
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Para organizar las plantillas, puede utilizar las siguientes carpetas:
 >
 >Aunque puede anidar las carpetas, cuando el usuario las vea en la consola **Templates**, se presentarán como una estructura plana.
 
-AEM En una instancia estándar, la carpeta `global` ya existe en la consola de plantillas. Contiene plantillas predeterminadas y actúa como alternativa en caso de que no se encuentre ninguna política ni ningún tipo de plantilla en la carpeta actual. Puede agregar las plantillas predeterminadas a esta carpeta o crear una carpeta (recomendado).
+En una instancia estándar de AEM, la carpeta `global` ya existe en la consola de plantillas. Contiene plantillas predeterminadas y actúa como alternativa en caso de que no se encuentre ninguna política ni ningún tipo de plantilla en la carpeta actual. Puede agregar las plantillas predeterminadas a esta carpeta o crear una carpeta (recomendado).
 
 >[!NOTE]
 >
@@ -177,12 +177,12 @@ Se crea una lista de todas las entradas permitidas. Si alguna configuración se 
 
 Para crear una carpeta, puede hacer lo siguiente:
 
-* Mediante programación o con el CRXDE Lite
+* Mediante programación o con CRXDE Lite
 * Usando el [Explorador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Uso del CRXDE Lite {#using-crxde-lite}
 
-1. Se puede crear una nueva carpeta (en /conf) para su instancia mediante programación o con el CRXDE Lite.
+1. Se puede crear una nueva carpeta (en /conf) para su instancia mediante programación o con CRXDE Lite.
 
    Se debe utilizar la siguiente estructura:
 
@@ -235,7 +235,7 @@ Las carpetas de plantillas para el [tutorial de WKND](/help/implementing/develop
 
 #### El grupo de autores de plantillas {#the-template-authors-group}
 
-AEM El grupo `template-authors` es el grupo que se usa para administrar el acceso a las plantillas y viene de serie con las plantillas, pero está vacío. Los usuarios deben agregarse al grupo para el proyecto o sitio.
+El grupo `template-authors` es el grupo que se usa para administrar el acceso a las plantillas y viene de serie con AEM, pero está vacío. Los usuarios deben agregarse al grupo para el proyecto o sitio.
 
 >[!CAUTION]
 >
@@ -328,7 +328,7 @@ Los tipos de plantilla predeterminados se almacenan en:
 
 >[!CAUTION]
 >
->No debe cambiar nada en la ruta de acceso `/libs`. AEM Esto se debe a que el contenido de `/libs` se puede sobrescribir en cualquier momento mediante una actualización de la dirección de correo electrónico de la dirección de correo electrónico de.
+>No debe cambiar nada en la ruta de acceso `/libs`. Esto se debe a que el contenido de `/libs` se puede sobrescribir en cualquier momento mediante una actualización a AEM.
 
 Los tipos de plantilla específicos del sitio deben almacenarse en la ubicación comparable de:
 
@@ -370,7 +370,7 @@ When creating an editable template, the value is copied from the template type t
 Si ha creado una plantilla que puede servir de base a otras plantillas, puede copiar esta plantilla como un tipo de plantilla.
 
 1. Cree una plantilla como lo haría con cualquier plantilla de página. Vea [Plantillas para crear páginas editables con el editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Esto servirá de base para el tipo de plantilla.
-1. Con el CRXDE Lite, copie la plantilla creada desde el nodo `templates` al nodo `template-types` en la [carpeta de plantillas](#template-folders).
+1. Con CRXDE Lite, copie la plantilla creada desde el nodo `templates` al nodo `template-types` en la [carpeta de plantillas](#template-folders).
 1. Elimine la plantilla del nodo `templates` en la [carpeta de plantillas](#template-folders).
 1. En la copia de la plantilla que se encuentra bajo el nodo `template-types`, elimine todas las propiedades `cq:template` y `cq:templateType` de todos los nodos `jcr:content`.
 
@@ -433,7 +433,7 @@ Los elementos principales son:
    * ` [policies](#policies)`
    * `thumbnail.png`
 
-### jcr:contenido {#jcr-content}
+### jcr:content {#jcr-content}
 
 Este nodo contiene propiedades para la plantilla:
 
@@ -501,7 +501,6 @@ Las directivas de página le permiten definir la [directiva de contenido](#conte
    * Estableciendo la propiedad status en el nodo `jcr:content`.
 
       * Por ejemplo, en:
-
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Defina la propiedad:
@@ -514,7 +513,6 @@ Las directivas de página le permiten definir la [directiva de contenido](#conte
 
    * [Defina las rutas de plantilla permitidas en **Propiedades de página**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) de la página o página raíz apropiada de una subrama.
    * Establezca la propiedad:
-
      `cq:allowedTemplates`
 En el nodo `jcr:content` de la rama requerida.
 

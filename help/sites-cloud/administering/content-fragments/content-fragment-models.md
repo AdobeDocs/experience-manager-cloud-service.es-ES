@@ -2,10 +2,10 @@
 title: Definición de los modelos de fragmento de contenido
 description: Descubra cómo los modelos de fragmentos de contenido sirven de base para los fragmentos de contenido en AEM, lo que le permite crear contenido estructurado para utilizarlo en entregas sin encabezado o en la creación de páginas.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 31%
@@ -313,10 +313,10 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 >AEM tiene protección contra recurrencias para:
 >
 >* Referencias de contenidos
->  &#x200B;>  Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencia a fragmento.
+>  Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencia a fragmento.
 >
 >* Referencias a fragmento en GraphQL
->  &#x200B;>  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
+>  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
 
 >[!CAUTION]
 >
@@ -331,6 +331,7 @@ El tipo de datos **Referencia de contenido** le permite procesar contenido de ot
 Además de las propiedades estándar, puede especificar las siguentes:
 
 * La **Ruta raíz**, que especifica o representa dónde almacenar el contenido referenciado
+
   >[!NOTE]
   >
   >Esto es obligatorio si desea cargar directamente y hacer referencia a imágenes en este campo al utilizar el editor de fragmentos de contenido.
@@ -338,6 +339,7 @@ Además de las propiedades estándar, puede especificar las siguentes:
   >Consulte [Imágenes de referencia](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) para obtener más información.
 
 * Los tipos de contenido a los que se puede hacer referencia
+
   >[!NOTE]
   >
   >Deben incluir **Image** si desea cargar directamente y hacer referencia a las imágenes de este campo al utilizar el editor de fragmentos de contenido.
@@ -346,6 +348,7 @@ Además de las propiedades estándar, puede especificar las siguentes:
 
 * Las limitaciones de los tamaños de archivo
 * Si se hace referencia a una imagen:
+
    * Mostrar miniatura
    * Restricciones de imagen de altura y anchura
 

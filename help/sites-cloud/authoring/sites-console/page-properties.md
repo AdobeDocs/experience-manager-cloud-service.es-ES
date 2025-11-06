@@ -6,7 +6,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: b9328a22ff544f2c663868d33d7b06e02819f1d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2138'
 ht-degree: 33%
@@ -35,17 +35,23 @@ Las propiedades de página pueden controlar muchos aspectos de una página, desd
 ### Título y etiquetas {#title-tags}
 
 * **Título**: define el metatítulo de la página para fines de SEO, así como el título mostrado en el contenido de la página (a menos que se anule)
+
    * El título de la página se muestra en varias ubicaciones de la interfaz de usuario de AEM, incluidas las vistas de lista o tarjeta **Sitios** de la consola [Sitios](/help/sites-cloud/authoring/sites-console/introduction.md).
    * Este es un campo obligatorio.
+
 * **Etiquetas**: define las metaetiquetas de la página para fines de SEO
+
    * Puede agregar o quitar etiquetas de la página al actualizar la lista en el cuadro de diálogo de selección.
    * Utilice la lista desplegable para seleccionar entre las etiquetas existentes.
    * Después de seleccionar una etiqueta, aparece debajo del cuadro de selección. Puede quitar una etiqueta de esta lista utilizando la x.
    * Se puede especificar una etiqueta completamente nueva si se escribe el nombre en un cuadro de selección vacío.
+
       * La etiqueta nueva se crea al pulsar Intro.
       * La nueva etiqueta se mostrará con una pequeña estrella a la derecha que indicará que es una etiqueta nueva.
+
    * Aparece una x cuando pasa el ratón sobre una entrada de etiqueta en el cuadro de selección, que se puede utilizar para quitar esa etiqueta para esa página.
    * Para obtener más información sobre las etiquetas, vea [Usar la etiqueta.](/help/sites-cloud/authoring/sites-console/tags.md)
+
 * **Ocultar en navegación**: indica si se muestra o se oculta la página en la navegación por páginas del sitio resultante
 
 ### Personalización de marca {#branding}
@@ -53,9 +59,13 @@ Las propiedades de página pueden controlar muchos aspectos de una página, desd
 Aplique una identidad de marca uniforme en todas las páginas adjuntando un slug de marca al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de los [Componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 
 * **Anotaciones de marca**
+
    * **Sobrescribir**: marque para definir el slug de marca en esta página.
+
       * El valor lo hereda cualquier página secundaria a menos que también tenga valores establecidos de **Sobrescribir**.
+
    * **Sobrescribir valor**: el texto del slug de marca que se añadirá al título de la página.
+
       * El valor se anexa al título de la página después de un carácter de barra vertical como `Cycling Tuscany | Always ready for the WKND`
 
 ### ID HTML {#html-id}
@@ -65,10 +75,14 @@ Aplique una identidad de marca uniforme en todas las páginas adjuntando un slug
 ### Más títulos y descripciones {#more-titles}
 
 * **Título de página**: un título que se usará en la página
+
    * Normalmente, lo utilizan los componentes de título.
    * Si está vacío, se utiliza **Título**.
+
 * **Título de navegación**: puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea algo más conciso).
+
    * Si está vacío, se usa **Page Title**.
+
 * **Subtítulo**: un subtítulo para usar en la página
 * **Descripción**: la descripción de la página, su propósito o cualquier otro detalle que desee agregar
 
@@ -97,11 +111,11 @@ Deje estos campos (**Tiempo de activación** y **Tiempo de inactividad**) vacío
 
 ### URL mnemónica {#vanity-url}
 
-Esta propiedad permite introducir una URL de vanidad para esta página, lo que permite tener una URL más corta o más expresiva. Por ejemplo, si la URL de vanidad se establece como `welcome` en la página identificada por la ruta `/v1.0/startpage` del sitio web `http://example.com`, entonces `http://example.com/welcome` es la URL de vanidad de `http://example.com/content/v1.0/startpage`.
+Esta propiedad permite introducir una URL de vanidad para esta página, lo que permite tener una URL más corta o más expresiva. Por ejemplo, si la URL mnemónica se establece como `welcome` en la página identificada por la ruta `/v1.0/startpage` del sitio web `http://example.com`, entonces `http://example.com/welcome` es la URL mnemónica de `http://example.com/content/v1.0/startpage`.
 
 >[!CAUTION]
 >
->URL de vanidad:
+>URL mnemónica:
 >
 >* Debe ser único.
 >* No admiten patrones regex.
@@ -117,7 +131,7 @@ Esta propiedad permite introducir una URL de vanidad para esta página, lo que p
 ### Configuración {#settings}
 
 * **Idioma**: el idioma de la página
-* **Raíz del idioma**: si la página es la raíz de una copia en un idioma, es necesario marcar esta opción
+* **Raíz del idioma**: si la página es la raíz de una copia de idioma, es necesario marcar esta opción
 * **Redireccionar**: indica la página a la que esta página debe redireccionarse automáticamente con un estado de HTML `302 Found`
    * **Redirección permanente**: cuando se selecciona, la página redirige a la ruta de destino proporcionada junto con un estado HTML `301 Moved Permanently`.
 * **Design**

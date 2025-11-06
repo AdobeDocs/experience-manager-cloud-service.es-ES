@@ -1,19 +1,19 @@
 ---
 title: Personalización de consolas
-description: AEM Obtenga información acerca de las distintas opciones que proporciona para personalizar las consolas de la instancia de creación.
+description: Obtenga información sobre las distintas opciones que proporciona AEM para personalizar las consolas de la instancia de creación.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # Personalización de consolas {#customizing-consoles}
 
-AEM proporciona opciones para personalizar las consolas (y la [funcionalidad de creación de páginas](/help/implementing/developing/extending/page-authoring.md)) de la instancia de creación.
+AEM proporciona opciones para personalizar las consolas (y la [funcionalidad de creación de páginas](/help/implementing/developing/extending/page-authoring.md)) de su instancia de creación.
 
 ## Clientlibs {#clientlibs}
 
@@ -23,9 +23,9 @@ Ver [Uso de bibliotecas del lado del cliente en AEM as a Cloud Service](/help/im
 
 ## Superposiciones {#overlays}
 
-Las superposiciones se basan en definiciones de nodo y le permiten superponer la funcionalidad estándar que se encuentra en `/libs` con su propia funcionalidad personalizada en `/apps`. Al crear una superposición, no se requiere una copia individual del original, ya que [la fusión de recursos Sling](/help/implementing/developing/introduction/sling-resource-merger.md) permite la herencia.
+Las superposiciones se basan en definiciones de nodo y le permiten superponer la funcionalidad estándar que se encuentra en `/libs` con su propia funcionalidad personalizada en `/apps`. Al crear una superposición, no se requiere una copia 1:1 del original, ya que la [fusión de recursos Sling](/help/implementing/developing/introduction/sling-resource-merger.md) permite la herencia.
 
-AEM Las superposiciones se pueden utilizar de muchas maneras para ampliar las consolas de la. En las secciones siguientes se proporcionan varios ejemplos.
+Las superposiciones se pueden utilizar de muchas maneras para ampliar las consolas de AEM. En las secciones siguientes se proporcionan varios ejemplos.
 
 Ver también [Superposiciones para Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 

@@ -1,17 +1,17 @@
 ---
-title: Personalizar vistas de propiedades de página
+title: Personalización de las vistas de propiedades de página
 description: Obtenga información sobre cómo los autores ven y editan las propiedades de la página.
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Personalizar vistas de propiedades de página{#customizing-views-of-page-properties}
+# Personalización de las vistas de propiedades de página{#customizing-views-of-page-properties}
 
 Cada página tiene un conjunto de [propiedades](/help/sites-cloud/authoring/sites-console/page-properties.md) que los usuarios pueden ver y editar. Algunos son necesarios al crear la página (vista de creación), otros se pueden ver y editar (vista de edición) en una fase posterior. Estas propiedades de página se definen y se ponen a disposición mediante el cuadro de diálogo (`cq:dialog`) del componente de página correspondiente.
 
@@ -35,7 +35,7 @@ Los campos deben configurarse específicamente si se requiere algún cambio. Est
 
 >[!TIP]
 >
->Consulte el tutorial [Ampliación de propiedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=es) para obtener una guía sobre cómo personalizar las propiedades de página.
+>Consulte el tutorial [Ampliación de propiedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obtener una guía sobre cómo personalizar las propiedades de página.
 
 ## Configuración de las propiedades de página {#configuring-your-page-properties}
 

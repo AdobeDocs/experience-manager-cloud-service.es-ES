@@ -3,10 +3,10 @@ title: Superposiciones para Adobe Experience Manager as a Cloud Service
 description: AEM as a Cloud Service utiliza el principio de las superposiciones para permitirle ampliar y personalizar las consolas y otras funcionalidades
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ En una instancia estándar, la funcionalidad predefinida se mantiene en `/libs` 
 
       * Reconstruir la estructura `/libs` adecuada en `/apps`.
 
-        Esta reestructuración no requiere una copia 1:1 porque [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) se usa para hacer referencia a las definiciones originales que se requieren. La fusión de recursos de Sling proporciona servicios para acceder y combinar recursos con mecanismos de diferencia.
+        Esta reestructuración no requiere una copia de 1:1 porque [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) se usa para hacer referencia a las definiciones originales que se requieren. La fusión de recursos de Sling proporciona servicios para acceder y combinar recursos con mecanismos de diferencia.
 
       * En `/apps`, realice cambios.
 
@@ -47,6 +47,6 @@ Cualquier cambio que realice puede perderse, ya que esta rama puede cambiar cada
 
 ## Rutas de búsqueda {#search-paths}
 
-AEM utiliza una ruta de búsqueda para buscar un recurso, buscando primero (de forma predeterminada) la rama `/apps` y, a continuación, la rama `/libs`. Este mecanismo significa que la superposición en `/apps` (y las personalizaciones definidas) tiene prioridad.
+AEM usa una ruta de búsqueda para encontrar un recurso, buscando primero (de forma predeterminada) la rama `/apps` y, a continuación, la rama `/libs`. Este mecanismo significa que la superposición en `/apps` (y las personalizaciones definidas) tiene prioridad.
 
 En el caso de las superposiciones, el recurso enviado es un agregado de los recursos y las propiedades recuperados, según las rutas de búsqueda definidas en la configuración OSGi.

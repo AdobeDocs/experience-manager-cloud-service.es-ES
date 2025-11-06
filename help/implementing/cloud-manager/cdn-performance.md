@@ -1,11 +1,11 @@
 ---
-title: Tablero de rendimiento de CDN
+title: Panel de control de rendimiento de CDN
 description: Comprenda cómo Cloud Manager evalúa el rendimiento de la red de entrega de contenido (CDN) y lo que puede aprender del tablero.
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 4%
@@ -60,7 +60,7 @@ La proporción de visitas de caché mide cuántas solicitudes de contenido puede
 
 >[!TIP]
 >
->El Adobe recomienda que los usuarios busquen una proporción de visitas de caché del 99 %.
+>Adobe recomienda que los usuarios busquen una proporción de visitas de caché del 99 %.
 
 ```text
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)

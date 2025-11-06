@@ -4,7 +4,7 @@ description: En esta página se describe cómo crear y administrar canales en Sc
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Este documento le ayuda a comprender la creación y administración de canales p
 
 * Obtenga información sobre cómo crear canales para el proveedor de contenido de Screens
 * administrar y editar contenido en sus canales
-* administre la asignación y la programación de activación de sus canales en [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=es)
+* administre la asignación y la programación de activación de sus canales en [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
 
 ## Pasos para crear un nuevo canal de secuencia en Screens as a Cloud Service {#create-new-channel}
 
@@ -114,6 +114,7 @@ Esta capacidad permite definir una programación de activación predeterminada p
    ![imagen](/help/screens-cloud/assets/display/Assignments3.png)
 
 Este mosaico muestra la siguiente información:
+
 * Prioridad predeterminada del canal en la visualización.
 * Las fechas de inicio y finalización de la activación indican cuándo está programado que se reproduzca el canal.
 * Vista sintética de la recurrencia (por hora/diario/semanal/mensual/anual y nombre dado a esa recurrencia).

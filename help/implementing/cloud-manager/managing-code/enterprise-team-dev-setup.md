@@ -4,8 +4,8 @@ description: Aprenda a configurar y escalar su equipo de desarrollo empresarial 
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: cbeb3d8f5fa5cbf1839e1e8c5e651329b06e60a4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 40%
@@ -14,7 +14,7 @@ ht-degree: 40%
 
 # Configuración del equipo de desarrollo empresarial para AEM as a Cloud Service {#enterprise-setup}
 
-AEM Aprenda a configurar y escalar su equipo de desarrollo empresarial y vea cómo el as a Cloud Service de (Adobe Experience Manager) puede ayudarle con su proceso de desarrollo.
+Aprenda a configurar y escalar su equipo de desarrollo empresarial y vea cómo AEM (Adobe Experience Manager) as a Cloud Service puede ayudarle con su proceso de desarrollo.
 
 ## Introducción {#introduction}
 
@@ -44,7 +44,7 @@ Cloud Manager admite configuraciones flexibles de varios equipos que se pueden a
 
 Cada empresa tiene diferentes requisitos, incluida la configuración de equipos, los procesos y los flujos de trabajo de desarrollo. Adobe utiliza la configuración que se describe a continuación para varios proyectos que ofrecen experiencias además de AEM as a Cloud Service.
 
-Por ejemplo, las aplicaciones de Adobe Creative Cloud, como Adobe Photoshop o Adobe Illustrator, incluyen recursos de contenido como tutoriales, ejemplos y guías para los usuarios finales. Las aplicaciones cliente consumen contenido de AEM as a Cloud Service sin encabezado. AEM Realizan llamadas de la API al nivel de publicación de Cloud para recuperar contenido estructurado como flujos JSON. Además, la [red de distribución de contenido (CDN) en AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) se usa para ofrecer contenido estructurado y no estructurado con un rendimiento óptimo.
+Por ejemplo, las aplicaciones de Adobe Creative Cloud, como Adobe Photoshop o Adobe Illustrator, incluyen recursos de contenido como tutoriales, ejemplos y guías para los usuarios finales. Las aplicaciones cliente consumen contenido de AEM as a Cloud Service sin encabezado. Realizan llamadas de API al nivel de publicación de AEM Cloud para recuperar contenido estructurado como flujos JSON. Además, la [red de distribución de contenido (CDN) en AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) se usa para ofrecer contenido estructurado y no estructurado con un rendimiento óptimo.
 
 Los equipos que contribuyen a este proyecto se adhieren al siguiente proceso.
 
@@ -54,7 +54,7 @@ La incorporación de un nuevo proyecto requiere la inclusión en el archivo de p
 
 ![Diagrama del flujo de trabajo](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-AEM AEM El repositorio Git para cada uno se configura con el [Arquetipo de proyecto de GitType](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview) y, por lo tanto, sigue las prácticas recomendadas para configurar proyectos de GitName La única excepción es la configuración de Dispatcher, que se realiza en el repositorio de Git compartido como se ha descrito anteriormente.
+El repositorio Git para cada uno se configura con el [Arquetipo de proyecto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview) y, por lo tanto, sigue las prácticas recomendadas para configurar proyectos de AEM. La única excepción es la configuración de Dispatcher, que se realiza en el repositorio de Git compartido como se ha descrito anteriormente.
 
 Cada equipo utiliza un flujo de trabajo de Git simplificado con dos ramas + N, según el modelo de flujo de Git:
 
@@ -83,7 +83,7 @@ Las inserciones en la rama de desarrollo se administran de forma diferente. Una 
 
 La ejecución de la canalización de producción incluye la comprobación del código de todos los equipos a través de las puertas de calidad proporcionadas. Una vez implementado el código en la fase, las pruebas y auditorías se ejecutan para que todo funcione según lo esperado. Cuando se pasan todas las puertas, los cambios se implementan en producción sin interrupciones ni tiempo de inactividad.
 
-Para el desarrollo local, se utiliza [SDK para AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing). El SDK permite configurar el autor, la publicación y el Dispatcher locales. Este flujo de trabajo permite el desarrollo sin conexión y tiempos de respuesta rápidos. A veces solo se utiliza el entorno de creación para el desarrollo, pero la configuración rápida de los entornos de Dispatcher y publicación permite probar todo localmente antes de insertarlo en el repositorio de Git.
+Para el desarrollo local, se utiliza [SDK para AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing). SDK permite configurar el autor, la publicación y la Dispatcher locales. Este flujo de trabajo permite el desarrollo sin conexión y tiempos de respuesta rápidos. A veces solo se utiliza el entorno de creación para el desarrollo, pero la configuración rápida de los entornos de Dispatcher y publicación permite probar todo localmente antes de insertarlo en el repositorio de Git.
 
 Los miembros de cada equipo suelen comprobar el código de Git compartido para su propio código de proyecto. No hay necesidad de comprobar otros proyectos porque son independientes.
 
@@ -93,7 +93,7 @@ Esta configuración del mundo real puede utilizarse como modelo y luego personal
 
 >[!TIP]
 >
->Consulte [Trabajar con varios repositorios de Git de Source](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) para obtener más información sobre esta configuración.
+>Consulte [Trabajar con varios repositorios de Git de Source](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) para obtener más información sobre esta configuración.
 
 ### Consideraciones para una configuración de varios equipos {#considerations}
 
@@ -101,7 +101,7 @@ Con el repositorio Git de Cloud Manager y la canalización de producción, el c�
 
 Por el contrario, sin un sistema de este tipo, ya que cada equipo puede realizar implementaciones por separado, existe el riesgo de que una actualización de un equipo único pueda provocar problemas de estabilidad de la producción. Además, se requiere coordinación y tiempo de inactividad planificado para implementar actualizaciones. Con un número cada vez mayor de equipos, el esfuerzo de coordinación será mucho más complejo y se hará inmanejable rápidamente.
 
-Si se detecta un problema en las puertas de calidad, la producción no se verá afectada y el problema podrá detectarse y solucionarse sin que el personal de Adobe tenga que intervenir. Sin Cloud Service y sin probar siempre toda la implementación, las implementaciones parciales pueden ocasionar interrupciones que requieran una solicitud de restablecimiento o incluso una restauración completa desde una copia de seguridad. Las pruebas parciales también pueden causar problemas adicionales que deben resolverse más adelante, lo que una vez más requiere la coordinación y el apoyo del personal del Adobe.
+Si se detecta un problema en las puertas de calidad, la producción no se verá afectada y el problema podrá detectarse y solucionarse sin que el personal de Adobe tenga que intervenir. Sin Cloud Service y sin probar siempre toda la implementación, las implementaciones parciales pueden ocasionar interrupciones que requieran una solicitud de restablecimiento o incluso una restauración completa desde una copia de seguridad. Las pruebas parciales también pueden causar problemas adicionales que deben resolverse más adelante, lo que una vez más requiere la coordinación y el apoyo del personal de Adobe.
 
 >[!TIP]
 >

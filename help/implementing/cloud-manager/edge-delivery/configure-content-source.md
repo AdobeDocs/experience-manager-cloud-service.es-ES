@@ -2,10 +2,10 @@
 title: Configuración de la fuente de contenido
 description: Obtenga información sobre cómo configurar la fuente de contenido del sitio de Edge Delivery. Utilice “fstab.yaml” con la arquitectura Helix 4 o utilice el asistente guiado en Cloud Manager (o la API del servicio de configuración) con la arquitectura Helix 5.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
-source-git-commit: 71618a5603328990603db2ee7554048c9020a883
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 100%
 

@@ -3,11 +3,11 @@ title: Guía rápida de WCAG 2.1
 description: Guía rápida de las Directrices de accesibilidad del contenido web (WCAG) versión 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1749'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -23,11 +23,11 @@ Las [Directrices de accesibilidad al contenido web (WCAG) versión 2.1](https://
 
 >[!NOTE]
 >
->Dado que estos documentos se escribieron en la [versión actualizada de las directrices, WCAG 2.2](https://www.w3.org/TR/WCAG/) se publicó en octubre de 2023.
+>Desde que estos documentos se escribieron, la [versión actualizada de las directrices, WCAG 2.2](https://www.w3.org/TR/WCAG/), se publicó en octubre de 2023.
 >
 >Ver [Comparación con WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) y [Nuevas características de WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
-WCAG 2.1 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades. Brindan asesoramiento a autores, diseñadores y desarrolladores de contenido web para garantizar que los recursos que producen sean lo suficientemente accesibles para la mayor cantidad de personas, independientemente de cualquier discapacidad que tengan; por ejemplo, problemas visuales o auditivos, dificultades de aprendizaje, limitaciones relacionadas con la edad, entre otras.
+WCAG 2.1 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para crear contenido web accesible para, y utilizable por, personas con discapacidades. Brindan asesoramiento a autores, diseñadores y desarrolladores de contenido web para garantizar que los recursos que producen sean lo suficientemente accesibles para la mayor cantidad de personas, independientemente de cualquier discapacidad que tengan; por ejemplo, problemas visuales o auditivos, dificultades de aprendizaje, limitaciones relacionadas con la edad, entre otras.
 
 Por ejemplo, describir una imagen (o cualquier otro contenido no textual) mediante el uso del `alt` atributo en HTML beneficia en gran medida a las personas no videntes o con visión parcial. La descripción textual del `alt` atributo puede convertirse en salida de voz o transmitirse a pantallas de braille actualizables electrónicas.
 
@@ -66,8 +66,8 @@ WCAG 2.1 consta de cuatro principios fundamentales para el diseño accesible, a 
 1. **Sólido**: ¿está disponible el contenido web de la forma prevista en una amplia gama de entornos de navegación, incluidos los entornos de navegación antiguos y emergentes?
 
 Para obtener más detalles:
-* Cada **principio** consiste en una o más **directrices**.
 
+* Cada **principio** consiste en una o más **directrices**.
 * Las guías están redactadas como instrucciones, que son positivas (haga esto...) o negativas (no haga esto...).
 * Las directrices se numeran de 1.1 a 4.1, donde el primer número corresponde al principio superior.
 * Cada directriz consta de uno o más **criterios de éxito**.
@@ -85,6 +85,7 @@ Si bien WCAG 2.1 es un documento estable y no cambiará, la mayoría de estos re
 ### Recursos WCAG 2.1 {#wcag-resources}
 
 Esta lista no pretende ser exhaustiva, sino que presenta una introducción a los recursos disponibles:
+
 * [Esquema de todos los documentos relacionados con el Grupo de Trabajo sobre el Cambio Climático](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [Resumen de los diferentes documentos](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 * [Directrices de accesibilidad del contenido web (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)

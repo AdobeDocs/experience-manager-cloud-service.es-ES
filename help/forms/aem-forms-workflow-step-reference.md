@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Uso de flujos de trabajo de AEM, uso de los pasos Asignar tarea, paso Convertir en PDF/A, paso Generar documento de registro, uso de flujos de trabajo, paso Firmar documento, paso Generar salida impresa, paso Generar salida de PDF no interactiva
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '7409'
 ht-degree: 99%
@@ -177,6 +177,7 @@ El paso para convertir a PDF/A tiene las siguientes propiedades:
 **[!UICONTROL Documento de entrada]**: el documento de entrada puede ser relativo a la carga útil, tener una ruta de acceso absoluta, puede proporcionarse como carga útil o almacenarse en una variable de tipo de datos de Documento.
 
 **[!UICONTROL Opciones de conversión]**: con esta propiedad, se especifica la configuración para convertir documentos de PDF a documentos de PDF/A. Hay varias opciones disponibles en esta pestaña:
+
 * **[!UICONTROL Cumplimiento]**: especifica el estándar que debe cumplir el documento PDF/A de salida. Admite diferentes estándares de PDF, como PDF/A-1b, PDF/A-2b o PDF/A-3b.
 * **[!UICONTROL Nivel de resultado]**: especifica el nivel de resultado como Superado/No superado, Resumen o Detallado, para la salida de conversión.
 * **[!UICONTROL Espacio de color]**: especifica el espacio de color predefinido como S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED o SWOP, que se puede utilizar para archivos PDF/A de salida.
@@ -255,11 +256,13 @@ Document Description XML (DDX) es un lenguaje declarativo de marcado cuyos eleme
 El paso Invocar DDX tiene las siguientes propiedades:
 
 **[!UICONTROL Documentos de entrada]**: se utiliza para establecer las propiedades de un documento de entrada. Hay varias opciones disponibles en esta pestaña:
+
 * **[!UICONTROL Especificar DDX mediante]**: especifica el documento de entrada que puede ser relativo a la carga útil, tener una ruta de acceso absoluta, puede proporcionarse como carga útil o almacenarse en una variable con un tipo de datos tipo Doc.
 * **[!UICONTROL Crear Mapa de Carga útil]**: agregue todos los documentos de la carpeta de carga útil al Mapa del documento de entrada para la API de invocación en el Ensamblador. El nombre de nodo de cada documento se utiliza como clave en el mapa.
 * **[!UICONTROL Mapa del documento de entrada]**: la opción se usa para agregar varias entradas mediante el botón **[!UICONTROL AGREGAR]**. Cada entrada representa la clave del documento en el mapa y el origen del documento.
 
 **[!UICONTROL Opciones de entorno]**: esta opción se utiliza para definir la configuración de procesamiento de la API de invocación. Hay varias opciones disponibles en esta pestaña:
+
 * **[!UICONTROL Validar solo]**: comprueba la validez del documento DDX de entrada.
 * **[!UICONTROL Finalizar al producirse un error]**: valor booleano que indica si el servicio de API de invocación falla, en caso de error o no. De forma predeterminada, su valor se establece en False.
 * **[!UICONTROL Primer número Bates]**: especifica el número, que incrementa de forma automática. Este número de aumento automático se muestra en cada página consecutiva de forma automática.
@@ -270,12 +273,13 @@ El paso Invocar DDX tiene las siguientes propiedades:
 >Las opciones de entorno se mantienen sincronizadas con las API de HTTP.
 
 **[!UICONTROL Documentos de salida]**: especifica la ubicación para guardar el archivo de salida. Hay varias opciones disponibles en esta pestaña:
+
 * **[!UICONTROL Guardar salida en carga útil]**: guarda los documentos de salida en la carpeta de carga útil o sobrescribe la carga útil, en caso de que esta sea un archivo.
 * **[!UICONTROL Mapa del documento de salida]**: especifica la ubicación para guardar cada archivo de documento explícitamente, añadiendo una entrada por documento. Cada entrada representa el documento y la ubicación donde guardarlo. Si hay varios documentos de salida, se utiliza esta opción.
 
 ## Paso para invocar el servicio de modelo de datos de formulario (FDM) {#invoke-form-data-model-service-step}
 
-Puede usar la integración de datos de [[!DNL AEM Forms] &#x200B;](data-integration.md) para configurar y conectarse a fuentes de datos dispares. Estas fuentes de datos pueden ser un servicio web, un servicio REST, un servicio OData y una solución CRM. La integración de datos de [!DNL AEM Forms] le permite crear un modelo de datos de formulario (FDM) que incluya varios servicios para realizar operaciones de recuperación, adición y actualización de datos en la base de datos configurada. Puede usar el **[!UICONTROL paso para invocar el servicio de modelo de datos]** para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a distintos orígenes de datos.
+Puede usar la integración de datos de [[!DNL AEM Forms] ](data-integration.md) para configurar y conectarse a fuentes de datos dispares. Estas fuentes de datos pueden ser un servicio web, un servicio REST, un servicio OData y una solución CRM. La integración de datos de [!DNL AEM Forms] le permite crear un modelo de datos de formulario (FDM) que incluya varios servicios para realizar operaciones de recuperación, adición y actualización de datos en la base de datos configurada. Puede usar el **[!UICONTROL paso para invocar el servicio de modelo de datos]** para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a distintos orígenes de datos.
 
 Para explicar las entradas de los campos del paso, se utilizan como ejemplo la siguiente tabla de base de datos y el archivo JSON:
 

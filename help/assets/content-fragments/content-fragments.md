@@ -5,7 +5,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 5054b843a8bb6053bb6617e9efdfc16dd1eac6ca
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 57%
@@ -75,7 +75,7 @@ Sin embargo, probablemente no desee utilizar el mismo contenido para todos los c
 
 Los fragmentos de contenido le permiten lo siguiente:
 
-* Pensar en cómo llegar a las audiencias de destino de forma eficaz en todos los canales.
+* Pensar en cómo llegar a los públicos destinatarios de forma eficaz en todos los canales.
 * Crear y administrar contenido editorial neutro para el canal.
 * Creargrupos de contenido para una amplia gama de canales.
 * Diseñar variaciones de contenido para canales específicos.
@@ -87,6 +87,7 @@ Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en v
 >[!NOTE]
 >
 >Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md)** son funciones distintas de AEM:
+>
 >* Los **fragmentos de contenido** son contenidos editoriales, con definición y estructura, pero sin diseño y/o maquetación visuales adicionales. Pueden utilizarse para acceder a datos estructurados, incluidos textos, números y fechas, entre otros.
 >* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web.
 >

@@ -7,19 +7,20 @@ feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manag
 role: User, Developer
 level: Intermediate
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: d8294c358bcc31b7c5e41e3103ec73adc05da6d9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '945'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
 
-# &#x200B;Administrar publicación en Experience Manager Forms
+# Administración de publicaciones en Experience Manager Forms
 
 Como administrador de Forms de Adobe Experience Manager (AEM), puede publicar formularios de su instancia de autor en Experience Manager Forms. También tiene la opción de programar la publicación de un formulario o carpeta para una fecha u hora posterior. Una vez publicados, los usuarios pueden acceder a los formularios y rellenarlos.
 
 En Experience Manager Forms, puede publicar un formulario mediante uno de los métodos siguientes:
+
 * [Opción de publicación](#publish-forms-using-the-publish-option)
 * [Opción Administrar publicación](#publish-forms-using-the-manage-publication-option)
 
@@ -32,7 +33,7 @@ En Experience Manager Forms, puede publicar un formulario mediante uno de los m�
 
 La opción **Publicar** le permite publicar inmediatamente un formulario. Para publicar un formulario de Experience Manager mediante el botón **Publicar** de la barra de herramientas. Para publicar formularios mediante la opción Publicar, haga lo siguiente:
 
-1. En la consola de Experience Manager Forms, vaya a la carpeta principal y seleccione el formulario que desee publicar.
+1. En la consola de Experience Manager Forms, vaya a la carpeta principal y seleccione el formulario que desea publicar.
 1. Haga clic en la opción **Publicar** en la barra de herramientas y observe todos los recursos de referencia que se publicarían con el formulario.
 1. Haga clic en **[!UICONTROL Publicar]**.
 
@@ -63,7 +64,7 @@ Después de publicar correctamente el formulario mediante la opción **Publicar*
 
 Administrar publicación le permite publicar o cancelar la publicación de contenido desde y hacia el destino seleccionado, agregar contenido a la lista de publicaciones desde la carpeta `forms&documents`, seleccionar referencias para publicar y programar la publicación a una fecha u hora posterior.  Para publicar formularios con la opción **Administrar publicación**, haga lo siguiente:
 
-1. En la consola de Experience Manager Forms, vaya a la carpeta principal y seleccione el formulario que desee publicar.
+1. En la consola de Experience Manager Forms, vaya a la carpeta principal y seleccione el formulario que desea publicar.
 1. Haga clic en la opción **[!UICONTROL Administrar publicación]** en la barra de herramientas.
 
    ![Opción Administrar publicación](/help/forms/assets/manage-publication-option.png)

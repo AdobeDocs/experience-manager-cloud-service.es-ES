@@ -3,11 +3,11 @@ title: Personalizar y ampliar fragmentos de contenido
 description: Un fragmento de contenido amplía un recurso estándar. Descubra cómo puede personalizarlos.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1689'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -44,7 +44,7 @@ Los fragmentos de contenido individuales se basan en modelos de fragmentos de co
 
 ### Integración de Sites con Assets {#integration-of-sites-with-assets}
 
-La administración de fragmentos de contenido (CFM) forma parte de Adobe Experience Manager AEM () Assets como:
+La administración de fragmentos de contenido (CFM) forma parte de Adobe Experience Manager (AEM) Assets como:
 
 * Los fragmentos de contenido son recursos.
 * Utilizan la funcionalidad existente de Assets.
@@ -63,7 +63,6 @@ Los fragmentos de contenido, basados en un modelo de fragmento de contenido, se 
 * Todo el contenido se almacena en el nodo `jcr:content/data` del recurso:
 
    * Los datos del elemento se almacenan en el subnodo maestro:
-
      `jcr:content/data/master`
 
    * Las variaciones se almacenan en un subnodo que lleva el nombre de la variación:
@@ -99,9 +98,9 @@ Para integrar con Assets Core:
 
 >[!CAUTION]
 >
->El componente [Fragmento de contenido forma parte de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es). Consulte [Desarrollar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es) para obtener más información.
+>El componente [Fragmento de contenido forma parte de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es). Consulte [Desarrollar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obtener más información.
 
-AEM Se puede hacer referencia a los fragmentos de contenido desde páginas de recursos de la misma manera que desde cualquier otro tipo de recurso. AEM proporciona el **[componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es)**: un [componente que permite incluir fragmentos de contenido en las páginas](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar este **[fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es)** componente principal.
+Se puede hacer referencia a los fragmentos de contenido desde páginas de AEM, como cualquier otro tipo de recurso. AEM proporciona el **[componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es)**: un [componente que le permite incluir fragmentos de contenido en sus páginas](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar este **[fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** componente principal.
 
 * El componente utiliza la propiedad `fragmentPath` para hacer referencia al fragmento de contenido real. La propiedad `fragmentPath` se administra de la misma manera que propiedades similares de otros tipos de recursos; por ejemplo, cuando el fragmento de contenido se mueve a otra ubicación.
 
@@ -133,7 +132,7 @@ Los fragmentos de contenido se pueden integrar con:
 
 * **Traducciones**
 
-  AEM Los fragmentos de contenido están totalmente integrados con el [flujo de trabajo de traducción de la](/help/sites-cloud/administering/translation/overview.md). A nivel arquitectónico, esto significa:
+  Los fragmentos de contenido están totalmente integrados con el [flujo de trabajo de traducción de AEM](/help/sites-cloud/administering/translation/overview.md). A nivel arquitectónico, esto significa:
 
    * Las traducciones individuales de un fragmento de contenido son fragmentos independientes; por ejemplo:
 
@@ -149,7 +148,7 @@ Los fragmentos de contenido se pueden integrar con:
 
   >[!NOTE]
   >
-  >AEM El flujo de trabajo de traducción de funciona con `/content`:
+  >El flujo de trabajo de traducción de AEM funciona con `/content`:
   >
   >* Como los modelos de fragmento de contenido residen en `/conf`, no se incluyen en dichas traducciones. Puede internacionalizar las cadenas de interfaz de usuario.
 
@@ -173,7 +172,7 @@ Puede utilizar la API del lado del servidor para acceder a sus fragmentos de con
 
 >[!CAUTION]
 >
->El Adobe recomienda utilizar la API del lado del servidor en lugar de acceder directamente a la estructura de contenido.
+>Adobe recomienda utilizar la API del lado del servidor en lugar de acceder directamente a la estructura de contenido.
 
 ### Interfaces clave {#key-interfaces}
 
@@ -255,13 +254,13 @@ Se pueden adaptar las siguientes opciones:
 
 ### Advertencias {#caveats}
 
-Cabe señalar que:
+Cabe señalar lo siguiente:
 
 * La API completa está diseñada para **no** mantener los cambios automáticamente (a menos que se indique lo contrario en el JavaDoc de la API). Por lo tanto, asigne siempre el solucionador de recursos de la solicitud correspondiente (o el solucionador que esté utilizando).
 
 * Tareas que pueden requerir un esfuerzo adicional:
 
-   * El Adobe recomienda crear variaciones a partir de `ContentFragment`. Esto garantiza que todos los elementos compartan esta variación y que las estructuras de datos globales adecuadas se actualicen según sea necesario para reflejar la nueva variación en la estructura de contenido.
+   * Adobe recomienda crear variaciones de `ContentFragment`. Esto garantiza que todos los elementos compartan esta variación y que las estructuras de datos globales adecuadas se actualicen según sea necesario para reflejar la nueva variación en la estructura de contenido.
 
    * Al eliminar las variaciones existentes mediante un elemento, mediante `ContentElement.removeVariation()`, no se actualizan las estructuras de datos globales asignadas a la variación. Para asegurarse de que estas estructuras de datos se mantienen sincronizadas, use `ContentFragment.removeVariation()` en su lugar, lo que elimina una variación de forma global.
 
@@ -285,11 +284,11 @@ Consulte lo siguiente:
 >
 >Tenga en cuenta esta información básica. Se supone que no debe cambiar nada aquí (ya que está marcado como un *área privada* en el repositorio), pero a veces puede ayudar comprender cómo funcionan las cosas bajo el capó.
 
-La edición de un fragmento de contenido, que puede abarcar varias vistas (= páginas de HTML), es atómica. AEM Como estas capacidades atómicas de edición con varias vistas no son un concepto típico de la edición, los fragmentos de contenido utilizan lo que se denomina una *sesión de edición*.
+La edición de un fragmento de contenido, que puede abarcar varias vistas (= páginas de HTML), es atómica. Como estas funciones atómicas de edición de varias vistas no son un concepto típico de AEM, los fragmentos de contenido utilizan lo que se denomina *sesión de edición*.
 
 Se inicia una sesión de edición cuando el usuario abre un fragmento de contenido en el editor. La sesión de edición finaliza cuando el usuario abandona el editor seleccionando **Guardar** o **Cancelar**.
 
-AEM Técnicamente, todas las ediciones se realizan en contenido *live*, al igual que con todas las demás ediciones de la. Cuando se inicia la sesión de edición, se crea una versión del estado actual sin editar. Si un usuario cancela una edición, se restaura esa versión. Si el usuario hace clic en **Guardar**, no se realiza ninguna acción específica, ya que la edición se ejecutó en contenido de *live*, por lo que todos los cambios ya se han mantenido. Además, hacer clic en **Guardar** déclencheur algunos procesos en segundo plano, como la creación de información de búsqueda de texto completo, la administración de recursos de medios mixtos o ambos.
+Técnicamente, todas las ediciones se realizan en contenido *live*, como con todas las demás ediciones de AEM. Cuando se inicia la sesión de edición, se crea una versión del estado actual sin editar. Si un usuario cancela una edición, se restaura esa versión. Si el usuario hace clic en **Guardar**, no se realiza ninguna acción específica, ya que la edición se ejecutó en contenido de *live*, por lo que todos los cambios ya se han mantenido. Además, hacer clic en **Guardar** déclencheur algunos procesos en segundo plano, como la creación de información de búsqueda de texto completo, la administración de recursos de medios mixtos o ambos.
 
 Existen algunas medidas de seguridad para los casos extremos; por ejemplo, si el usuario intenta salir del editor sin guardar o cancelar la sesión de edición. Además, hay disponible un guardado automático periódico para evitar la pérdida de datos.
 Dos usuarios pueden editar el mismo fragmento de contenido simultáneamente y, por lo tanto, sobrescribir los cambios de los demás. Para evitarlo, el fragmento de contenido debe bloquearse aplicando la acción *Checkout* de la administración DAM en el fragmento.

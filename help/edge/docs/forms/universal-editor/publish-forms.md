@@ -2,12 +2,12 @@
 title: Publicar formularios adaptables con Edge Delivery Services
 description: Obtenga información sobre cómo publicar y configurar los formularios adaptables, así como acceder a ellos, mediante Edge Delivery Services para uso en producción.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 keywords: publicar formularios, Edge Delivery Services, configuración de formulario, CORS, filtro de referente
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 

@@ -4,7 +4,7 @@ description: Notas de la versión 2023.7.0 de la versión de  [!DNL Adobe Experi
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 feature: Release Information
 role: Admin
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Eche un vistazo al vídeo Información general sobre la versión de julio de 202
 
 * MSM para fragmentos de contenido. El Administrador de varios sitios de AEM ya está disponible para los fragmentos de contenido, lo que permite crear Live Copies de fragmentos de contenido para la distribución de contenido por lotes. Los controles de herencia granulares están disponibles hasta el nivel de Variación y Elemento de fragmentos de contenido.
 
-### Nuevas funciones en el canal de prelanzamiento de [!DNL Experience Manager Sites] {#prerelease-sites}
+### Nuevas funciones en la versión preliminar de [!DNL Experience Manager Sites] {#prerelease-sites}
 
 * La [Consola de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es) ahora permite a los usuarios ver etiquetas y buscar por etiquetas aplicadas como metadatos a fragmentos de contenido. Los usuarios ya no tendrán que cambiar a la IU de Assets para esta capacidad, lo que reduce el cambio de contexto y mejora la eficacia.
 
@@ -87,7 +87,7 @@ Assets Essentials ahora ordena los resultados de la búsqueda según la relevanc
 * [**Crear formularios adaptables con secciones repetibles**](/help/forms/create-forms-repeatable-sections.md): ahora puede hacer repetibles los componentes [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms//adaptive-forms-components/accordion.html?lang=es), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=es), [Panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) y [pestañas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=es) basados en formularios adaptables para capturar varios registros de datos.  Estas secciones repetibles le permiten proporcionar varias entradas de datos fácilmente. Resulta útil cuando se desconocen de antemano las instancias de datos requeridas. El usuario que rellena el formulario puede agregar o quitar secciones fácilmente, lo que permite que los formularios se adapten a diferentes escenarios de entrada de datos y simplifica la recopilación de varias ocurrencias de los mismos datos.
 
 
-### Funciones previas al lanzamiento disponibles en [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### Funciones de versión preliminar disponibles en [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
 * [**Soporte empresarial de Google reCAPTCHA**](/help/forms/captcha-adaptive-forms.md): utilice Google reCAPTCHA empresarial en un formulario adaptable para proporcionar una protección mejorada contra la actividad fraudulenta y el correo no deseado, lo que ofrece una experiencia de usuario más segura. Con un análisis de riesgos avanzado y una integración optimizada, los usuarios compradores pueden enviar fácilmente formularios mientras los bots están bloqueados de manera efectiva.
 
@@ -115,6 +115,7 @@ Suscríbase a notificaciones por correo electrónico que le avisen cuando ocurra
 ### Programa de adopción temprana de reglas CDN y WAF {#waf-early-adopter}
 
 Filtre el tráfico en la red de distribución de contenido (CDN) en función de lo siguiente:
+
 * encabezados y propiedades de solicitud (por ejemplo, dirección IP)
 * patrones de tráfico asociados a tráfico malintencionado
 

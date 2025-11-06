@@ -1,12 +1,12 @@
 ---
-title: 'Administrar los recursos digitales '
+title: Administrar los recursos digitales
 description: Obtenga información acerca de los distintos métodos de administración y edición de recursos
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 10%
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Este artículo describe cómo administrar y editar recursos en [!DNL Adobe Experience Manager Assets]. Para administrar [!DNL Content Fragments], vea [[!DNL Content Fragments]](content-fragments/content-fragments.md) recursos.
@@ -59,10 +59,10 @@ Para extraer los archivos ZIP, realice los siguientes pasos:
 
    ![extracción zip](assets/zip-extraction.png)
 
->[!NOTE]
->
->* El tamaño máximo de archivo ZIP admitido es de 15 GB.
->* Puede extraer un máximo de tres archivos ZIP al mismo tiempo.
+   >[!NOTE]
+   >
+   >* El tamaño máximo de archivo ZIP admitido es de 15 GB.
+   >* Puede extraer un máximo de tres archivos ZIP al mismo tiempo.
 
 ## Previsualización de recursos {#previewing-assets}
 
@@ -70,7 +70,6 @@ Para obtener una vista previa de un recurso, siga estos pasos.
 
 1. En la interfaz de usuario de Assets, vaya a la ubicación del recurso que desea previsualizar.
 1. Seleccione el recurso que desee para abrirlo.
-
 1. En el modo de vista previa, hay opciones de zoom disponibles para [tipos de imagen compatibles](/help/assets/file-format-support.md) (con edición interactiva).
 
    Para ampliar un recurso, seleccione `+` (o seleccione la lupa del recurso). Para alejar, seleccione `-`. Al acercar, puede mirar de cerca cualquier área de la imagen si realiza una panorámica. La flecha para restablecer el zoom le devuelve a la vista original.
@@ -80,7 +79,6 @@ Para obtener una vista previa de un recurso, siga estos pasos.
 ## Editar propiedades {#editing-properties}
 
 1. Vaya a la ubicación del recurso cuyos metadatos desee editar.
-
 1. Seleccione el recurso y seleccione **[!UICONTROL Propiedades]** en la barra de herramientas para ver las propiedades del recurso. También puede elegir la acción rápida **[!UICONTROL Propiedades]** en la tarjeta de recursos.
 
    ![propiedades_quickaction](assets/properties_quickaction.png)
@@ -97,17 +95,17 @@ Para obtener una vista previa de un recurso, siga estos pasos.
 
 1. Para desactivar el recurso después de una duración determinada, elija la fecha y la hora de desactivación del selector de fechas situado junto al campo **[!UICONTROL Tiempo de inactividad]**. La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Transcurrido el [!UICONTROL tiempo de inactividad], un recurso y sus representaciones no estarán disponibles a través de la interfaz web de Assets ni a través de la API HTTP.
 
-   <!--![chlimage_1-218](assets/chlimage_1-218.png)
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)-->
+
 1. En el campo **[!UICONTROL Etiquetas]**, seleccione una o más etiquetas. Para agregar una etiqueta personalizada, escriba el nombre en el cuadro y seleccione la clave `Enter`. La nueva etiqueta se guardó en [!DNL Experience Manager].
 
    YouTube requiere que las etiquetas se publiquen y que tengan un vínculo a YouTube (si se encuentra un vínculo adecuado).
 
    >[!NOTE]
    >
-   > Para crear etiquetas, debe tener permiso de escritura en la ruta de acceso `/content/cq:tags/default` del repositorio de CRX.
+   >Para crear etiquetas, debe tener permiso de escritura en la ruta de acceso `/content/cq:tags/default` del repositorio de CRX.
 
 1. Seleccione **[!UICONTROL Guardar y cerrar]**.
-
 1. Vaya a la interfaz de usuario de Assets. Las propiedades de metadatos editadas, incluidos el título, la descripción y las etiquetas, se muestran en la tarjeta de recursos en la vista de tarjeta y en las columnas relevantes de la vista de lista.
 
 <!-- TBD: Uncomment after verification for Dec release.
@@ -659,7 +657,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Para obtener más información, consulte cómo [examinar recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#browse-search-preview-assets) y [cómo utilizar Adobe Asset Link](https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Para obtener más información, consulte cómo [examinar recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) y [cómo utilizar Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
 **Consulte también**
 

@@ -5,11 +5,11 @@ index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1402'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
@@ -42,7 +42,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
 >
 >Antes de configurar una canalización front-end, consulte el [Recorrido de creación rápida de sitios de AEM](/help/journey-sites/quick-site/overview.md) para obtener una guía completa a través de la herramienta de creación rápida de sitios de AEM fácil de usar. Este recorrido puede ayudarle a optimizar el desarrollo front-end de su sitio de AEM, lo que le permite personalizar su sitio rápidamente sin conocimiento del back-end de AEM.
 
-1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
+1. Inicie sesión en Cloud Manager en [experiece.adobe.com](https://experience.adobe.com).
 1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
 1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
 1. Seleccione la organización que desee.

@@ -5,10 +5,10 @@ keywords: Punto final REST de AEM Forms, Enviar a punto final REST, Publicar dat
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -115,13 +115,13 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
 
    También puede **[!UICONTROL Habilitar la petición POST]** y proporcionar una URL para publicar la solicitud. Para enviar datos al servidor de AEM que aloja el formulario, utilice una ruta relativa correspondiente a la ruta raíz del servidor de AEM. Por ejemplo, `/content/forms/af/SampleForm.html`. Para enviar datos a cualquier otro servidor, utilice la ruta absoluta.
 
-+++
+   +++
 
    +++Configuración
 
    Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el explorador de configuración de AEM. Puede seleccionar la configuración creada para su tipo de autenticación de punto final REST de servicio y los tipos de contenido. Para obtener más información acerca del tipo de autenticación y los tipos de contenido, visite [Configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
 
-+++
+   +++
 
 1. Haga clic en **[!UICONTROL Listo]**.
 
@@ -131,11 +131,14 @@ Para configurar la acción de envío basada en la especificación de la API abie
 
 1. Abra el formulario adaptable para editarlo.
 1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
-Aparece el cuadro de diálogo **Propiedades del formulario**.
+
+   Aparece el cuadro de diálogo **Propiedades del formulario**.
+
    >[!NOTE]
    >
    > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
    > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar las extensiones del editor universal.
+
 1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Enviar al punto final REST]**.
 
    Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, `/content/restEndPoint`. Para esas solicitudes POST se utiliza la información de autenticación de la solicitud de envío.
@@ -172,13 +175,13 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
 
    También puede **[!UICONTROL Habilitar la petición POST]** y proporcionar una URL para publicar la solicitud. Para enviar datos al servidor de AEM que aloja el formulario, utilice una ruta relativa correspondiente a la ruta raíz del servidor de AEM. Por ejemplo, `/content/forms/af/SampleForm.html`. Para enviar datos a cualquier otro servidor, utilice la ruta absoluta.
 
-+++
+   +++
 
    +++Configuración
 
    Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el explorador de configuración de AEM. Puede seleccionar la configuración creada para su tipo de autenticación de punto final REST de servicio y los tipos de contenido. Para obtener más información acerca del tipo de autenticación y los tipos de contenido, visite [configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
 
-+++
+   +++
 
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 

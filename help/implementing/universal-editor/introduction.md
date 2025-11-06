@@ -3,9 +3,9 @@ title: Introducción al editor universal
 description: El editor universal es una herramienta moderna de creación visual diseñada para permitir que su organización de marketing produzca experiencias web impactantes.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 08997c760bf1d609dce1dd17de0c549a26083917
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ El editor universal ofrece muchas funciones que admiten una amplia gama de casos
 * **[Diseño](/help/sites-cloud/authoring/universal-editor/templates.md)**: utilice plantillas de página, aplique estilos visuales y componga diseños con bloques como columnas, carruseles y acordeones.
 * **[Simulación de dispositivo](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)**: previsualice y optimice el contenido para diferentes dispositivos de visitante mientras edita.
 * **Omnicanal**: reutilice contenido estructurado y no estructurado en varios canales.
-* **[Localización](/help/sites-cloud/authoring/universal-editor/inheritance.md)**: optimice los flujos de trabajo de traducción de contenido y administre de manera eficiente la herencia de contenido localizado con Multi-Site Manager.
+* **[Localización](/help/sites-cloud/authoring/universal-editor/inheritance.md)**: optimice los flujos de trabajo de traducción de contenido y administre de manera eficiente la herencia de contenido localizado con el Administrador de varios sitios.
 * **Coherencia**: asegure el cumplimiento de las directrices de marca y mantenga la uniformidad en todo el contenido.
 * **Seguridad**: [aplique control de acceso](/help/implementing/universal-editor/authentication.md), proteja la integridad del contenido y realice un seguimiento de los cambios con un [control de versiones sólido.](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * **[Publicación](/help/sites-cloud/authoring/universal-editor/publishing.md)**: integre los flujos de trabajo de revisión, aprobación y publicación directamente en el editor.

@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3615'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -65,7 +65,7 @@ La audiencia que mejor se adapta a los lectores de este recorrido son los siguie
 
 ## ¿Qué es Dynamic Media y cómo puede ayudarle? {#dm-journey-a}
 
-Dynamic Media le ayuda a ofrecer recursos de marketing y comercialización visuales enriquecidos bajo demanda. También le ayuda a crear y ofrecer experiencias de visualización interactivas, como zoom, giro de 360 grados y vídeo. Los recursos se escalan dinámicamente para su consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen principales, como imágenes, vídeo y 3D, Dynamic Media genera y ofrece varias variaciones de este contenido enriquecido, en tiempo real a través de su CDN (red de distribución de contenido) global, escalable y optimizada para el rendimiento.
+Dynamic Media le ayuda a ofrecer recursos de marketing y comercialización visuales enriquecidos bajo demanda. También le ayuda a crear y ofrecer experiencias de visualización interactivas, como zoom, giro de 360 grados y vídeo. Los recursos se escalan dinámicamente para su consumo en sitios web, móviles y redes sociales. Mediante un conjunto principal de recursos de origen, como imágenes, vídeo y 3D, Dynamic Media genera y ofrece varias variaciones de este contenido enriquecido, en tiempo real a través de su CDN (red de distribución de contenido) global, escalable y optimizada para el rendimiento.
 
 Dynamic Media incorpora los flujos de trabajo de la solución de administración de recursos digitales de Adobe Experience Manager Assets para simplificar y optimizar el proceso de administración de campañas digitales.
 
@@ -125,7 +125,7 @@ Para resolver este problema, Dynamic Media le permite crear _conjuntos de vídeo
 
 Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo que se codifican en diferentes velocidades de bits y formatos.
 
-Empiece con el vídeo original principal, que carga en el sistema. Dynamic Media cambia el tamaño automáticamente o _transcodifica_ ese vídeo en varios vídeos. A continuación, en el momento de la entrega, determina de forma inteligente qué pantalla de vídeo, qué calidad y qué formato utilizar, y la envía al teléfono, a la tableta o al equipo de escritorio.
+Empiece con el vídeo original principal, que cargue en el sistema. Dynamic Media cambia el tamaño automáticamente o _transcodifica_ ese vídeo en varios vídeos. A continuación, en el momento del envío, determina de forma inteligente qué pantalla de vídeo, qué calidad y qué formato utilizar, y la envía al teléfono, a la tableta o al equipo del escritorio.
 
 Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 4G, 5G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptables. El vídeo se transmite a dispositivos móviles, tabletas o equipos de escritorio.
 
@@ -284,8 +284,8 @@ _Dynamic Media Help topics_
 
 _Tutoriales de Dynamic Media_
 
-* [Usar Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=es)
-* [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/es?lang=en#recommended/solutions/experience-manager) (buscar en _Dynamic Media_)
+* [Usar Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (buscar en _Dynamic Media_)
 
 _Visores de Dynamic Media_
 

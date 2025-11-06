@@ -4,8 +4,8 @@ description: Notas de la versión [!DNL Workfront for Experience Manager enhance
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
 
@@ -175,7 +175,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 * Experience Manager muestra `SERVER_ERROR` en la pantalla **[!UICONTROL Vincular archivos y carpetas externos]** al acceder a las carpetas de recursos debido a permisos no válidos en `/content/dam/collections`.
 
-* Al activar la opción **[!UICONTROL Publicar recursos en Brand Portal]** en la página de configuración del conector mejorado de Workfront se crea un evento incorrecto. El evento no se elimina incluso después de desactivar la opción.
+* Al habilitar la opción **[!UICONTROL Publicar recursos en Brand Portal]** en la página de configuración del conector mejorado de Workfront se crea un evento incorrecto. El evento no se elimina incluso después de desactivar la opción.
 
   Para solucionar el problema:
 
@@ -183,7 +183,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
    1. Desactive la opción **[!UICONTROL Publicar recursos en Brand Portal]** en la configuración avanzada.
 
-   1. Active la opción **[!UICONTROL Publicar recursos en Brand Portal]**.
+   1. Habilite la opción **[!UICONTROL Publicar recursos en Brand Portal]**.
 
    1. Elimine las suscripciones de evento erróneas.
 
@@ -201,13 +201,13 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
          Asegúrese de que el contenido entre `"objId": "",` y `"url"` coincide con la respuesta JSON. El método recomendado para hacerlo es copiar desde cualquier suscripción de evento que tenga un `objId` y, a continuación, eliminar el número.
 
       1. Tenga en cuenta el ID de suscripción del evento.
-
       1. Elimine la suscripción de evento errónea. Realice una llamada de la API de eliminación a `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
          `200` ya que el código de respuesta significa que se han eliminado correctamente las suscripciones a eventos erróneos.
-  >[!NOTE]
-  >
-  >Si ya ha eliminado las suscripciones a eventos erróneos antes de ejecutar los pasos mencionados en este procedimiento, puede omitir el último paso de este procedimiento.
+
+         >[!NOTE]
+         >
+         >Si ya ha eliminado las suscripciones a eventos erróneos antes de ejecutar los pasos mencionados en este procedimiento, puede omitir el último paso de este procedimiento.
 
 ### Versión de octubre de 2022 {#october-2022-release}
 
@@ -246,7 +246,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 * Cuando se ejecuta un flujo de trabajo Crear tarea para un recurso, la excepción Puntero nulo se muestra en los mensajes de registro.
 
-* Al activar la opción de configuración `Replace Spaces with DASH` en Configuración avanzada en Experience Manager, se produce la creación de carpetas duplicadas en Workfront.
+* Al habilitar la opción de configuración `Replace Spaces with DASH` en Configuración avanzada en Experience Manager, se produce la creación de carpetas duplicadas en Workfront.
 
 ### Versión de junio de 2022 {#june-2022-release}
 

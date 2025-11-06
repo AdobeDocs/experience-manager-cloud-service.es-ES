@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: invocar mejoras del servicio en VRE, rellenar opciones desplegables utilizando invocar servicio, establecer panel repetible utilizando la salida del servicio de invocación, establecer panel utilizando la salida del servicio de invocación, usar el parámetro de salida del servicio de invocación para validar otro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 3%
@@ -64,7 +64,7 @@ A continuación se muestran los requisitos previos que debe cumplir antes de usa
 
 * Asegúrese de haber configurado una fuente de datos. Para obtener instrucciones sobre cómo configurar un origen de datos, [haga clic aquí](/help/forms/configure-data-sources.md).
 * Crear un modelo de datos de formulario con la fuente de datos configurada. Para obtener instrucciones sobre cómo crear un modelo de datos de formulario, [haga clic aquí](/help/forms/create-form-data-models.md).
-* Asegúrese de que los componentes principales estén habilitados para su entorno. Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service.
+* Asegúrese de que los componentes principales estén habilitados para su entorno. Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM as a Cloud Service.
 
 ## Exploración del servicio de invocación mediante diferentes casos de uso
 
@@ -87,6 +87,7 @@ Cree un formulario `Get Information` que recupere valores según la entrada escr
 **Campos de formulario**
 
 Agregue los campos siguientes al formulario:
+
 * **Introducir ID de mascota**: Cuadro de texto
 * **Seleccionar URL de fotos**: desplegable
 * **Etiquetas**: Panel
@@ -103,6 +104,7 @@ Agregue los campos siguientes al formulario:
 **Configurar paneles**
 
 Defina los paneles como repetitivos con las restricciones siguientes:
+
 * Valor mínimo: 1
 * Valor máximo: 4
 

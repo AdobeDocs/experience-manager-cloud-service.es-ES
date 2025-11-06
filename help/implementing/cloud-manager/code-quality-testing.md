@@ -4,11 +4,11 @@ description: Descubra cómo funcionan las pruebas de calidad del código de las 
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
@@ -29,13 +29,13 @@ Consulte la [Configuración de la canalización de CI/CD](/help/implementing/clo
 
 ## Reglas de calidad de código {#understanding-code-quality-rules}
 
-Las pruebas de calidad del código analizan el código fuente para asegurarse de que cumple determinados criterios de calidad. Una combinación de SonarQube y un examen a nivel de paquete de contenido usando OakPAL implementa este paso. AEM Hay más de 100 reglas, que combinan reglas genéricas de Java y reglas específicas de la. AEM AEM Algunas reglas específicas de los se basan en las prácticas recomendadas de ingeniería de códigos y se conocen como [reglas de calidad de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Las pruebas de calidad del código analizan el código fuente para asegurarse de que cumple determinados criterios de calidad. Una combinación de SonarQube y un examen a nivel de paquete de contenido usando OakPAL implementa este paso. Hay más de 100 reglas, que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas reglas específicas de AEM se basan en las prácticas recomendadas de AEM Engineering y se conocen como [reglas de calidad de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
-Puede descargar la lista completa actual de reglas [mediante este vínculo](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+Puede descargar la lista completa de reglas [mediante este vínculo](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 >[!IMPORTANT]
 >
->A partir del jueves, 13 de febrero de 2025 (Cloud Manager 2025.2.0), Calidad del código de Cloud Manager utilizará una versión actualizada de SonarQube 9.9 y una lista actualizada de reglas que puede [descargar aquí](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
+>A partir del jueves, 13 de febrero de 2025 (Cloud Manager 2025.2.0), la Calidad del código de Cloud Manager utilizará una versión actualizada de SonarQube 9.9 y una lista actualizada de reglas que puede [descargar aquí](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
 
 ### Clasificaciones en tres niveles {#three-tiered-gate}
 

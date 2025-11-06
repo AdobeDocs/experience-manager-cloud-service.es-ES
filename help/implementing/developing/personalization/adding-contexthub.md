@@ -1,17 +1,17 @@
 ---
-title: Adición de ContextHub a las páginas y acceso a las tiendas
+title: Adición de ContextHub a páginas y acceso a almacenes
 description: Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y para vincular a las bibliotecas de JavaScript de ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Adición de ContextHub a las páginas y acceso a las tiendas {#adding-contexthub-to-pages-and-accessing-stores}
+# Adición de ContextHub a páginas y acceso a almacenes {#adding-contexthub-to-pages-and-accessing-stores}
 
 Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y para vincular a las bibliotecas de JavaScript de ContextHub.
 
@@ -42,13 +42,13 @@ Todos los tipos de almacén son extensiones de la clase [`ContextHub.Store.Core`
 
 Las tiendas de Context Hub utilizan uno de los siguientes modos de persistencia:
 
-* **Local:** Utiliza localStorage de HTML5 para mantener los datos. El almacenamiento local se mantiene en el explorador entre sesiones.
-* **Sesión:** Utiliza sessionStorage de HTML5 para mantener los datos. El almacenamiento de sesión se mantiene durante la sesión del explorador y está disponible para todas las ventanas del explorador.
+* **Local:** Utiliza HTML5 localStorage para mantener los datos. El almacenamiento local se mantiene en el explorador entre sesiones.
+* **Sesión:** Utiliza HTML5 sessionStorage para mantener los datos. El almacenamiento de sesión se mantiene durante la sesión del explorador y está disponible para todas las ventanas del explorador.
 * **Cookie:** Utiliza la compatibilidad nativa del explorador con las cookies para el almacenamiento de datos. Los datos de cookies se envían y reciben del servidor en solicitudes HTTP.
 * **Window.name:** Utiliza la propiedad window.name para mantener los datos.
 * **Memoria:** Utiliza un objeto JavaScript para mantener los datos.
 
-De forma predeterminada, ContextHub utiliza el modo de persistencia local. Si el explorador no admite ni permite el almacenamiento local de HTML5, se utiliza la persistencia de la sesión. Si el explorador no admite ni permite sessionStorage de HTML5, se utiliza la persistencia Window.name.
+De forma predeterminada, ContextHub utiliza el modo de persistencia local. Si el explorador no admite ni permite el almacenamiento local de HTML5, se utiliza la persistencia de la sesión. Si el explorador no admite ni permite el sessionStorage de HTML5, se utiliza la persistencia Window.name.
 
 ### Almacenar datos {#store-data}
 

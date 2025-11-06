@@ -3,15 +3,15 @@ title: Uso de la fusión de recursos de Sling en Adobe Experience Manager as a C
 description: La fusión de recursos de Sling proporciona servicios para acceder y combinar recursos
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 1%
 
 ---
 
-# Usar la fusión de recursos de Sling en AEM as a Cloud Service {#using-the-sling-resource-merger-in-aem}
+# Usar la combinación de recursos de Sling en AEM as a Cloud Service {#using-the-sling-resource-merger-in-aem}
 
 ## Función {#purpose}
 
@@ -31,9 +31,9 @@ Con la fusión de recursos de Sling, los recursos de superposición/anulación o
 >
 >La fusión de recursos de Sling y los métodos relacionados solo se pueden usar con la interfaz de usuario táctil (que es la única interfaz de usuario disponible para AEM as a Cloud Service).
 
-### AEM Metas para la {#goals-for-aem}
+### Objetivos para AEM {#goals-for-aem}
 
-AEM Los objetivos para utilizar la fusión de recursos de Sling en son los siguientes:
+Los objetivos para utilizar la fusión de recursos de Sling en AEM son:
 
 * asegúrese de que no se realicen cambios de personalización en `/libs`.
 * reduzca la estructura que se replica desde `/libs`.
@@ -198,7 +198,7 @@ Estas funciones, junto con las funciones estándar, permiten:
       * tipo: `String[]`
       * value: una lista de los nodos secundarios (tal como se definen en `/libs`) que se deben ocultar o omitir
 
-      El comodín &ast; se puede usar para ocultar o ignorar todos los nodos secundarios.
+      El comodín &amp;ast; se puede usar para ocultar o ignorar todos los nodos secundarios.
 
 * **Reordenar nodos**
 

@@ -4,13 +4,13 @@ description: Obtenga información sobre cómo editar las propiedades de una pág
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 83e61ae4af3dcd76ad51722decd0032cceb737a5
+exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 24%
 
 ---
-
 
 # Edición de las propiedades de página   {#page-properties}
 
@@ -24,7 +24,7 @@ Obtenga información sobre cómo editar [las propiedades de una página](/help/s
 
 Puede editar las propiedades de página desde varios lugares de AEM.
 
-* [Desde el &#x200B;](#from-the-sites-console)
+* [Desde el ](#from-the-sites-console)
 * [Desde el editor de páginas](#from-the-page-editor)
 * [Desde el editor universal](#from-the-universal-editor)
 
@@ -87,14 +87,18 @@ Solo se pueden editar por lotes las siguientes páginas:
 La ventana de edición en bloque se divide en dos:
 
 * A la izquierda se muestra una lista de las páginas seleccionadas para la edición por lotes.
+
    * Puede seleccionar o deseleccionar las páginas según sea necesario.
    * De forma predeterminada, todas están seleccionadas.
+
 * La derecha es una lista de [propiedades disponibles para la edición en lotes.](/help/implementing/developing/extending/bulk-editor.md)
+
    * Las propiedades se ordenan en pestañas, al igual que cuando se visualizan las propiedades de una página.
    * Se pueden ver las propiedades que están disponibles en todas las páginas seleccionadas (deben haberse marcado específicamente como disponibles para la edición por lotes).
    * Si reduce la selección de páginas a una sola página, se verán todas las propiedades.
    * Solo se muestran las propiedades con un valor común.
    * Cuando el campo tiene varios valores (por ejemplo, Etiquetas), los valores solo se mostrarán si *todos* son comunes. Si solo algunas son comunes, solo se mostrarán al editar.
+
 * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se indican con un valor especial; por ejemplo, el texto `<Mixed Entries>`.
 
 Puede actualizar los valores en los campos disponibles en las páginas seleccionadas. Los nuevos valores se aplicarán a todas las páginas seleccionadas al seleccionar **Listo**. Cuando el campo tiene varios valores (por ejemplo, Etiquetas), puede anexar un nuevo valor o quitar un valor común.

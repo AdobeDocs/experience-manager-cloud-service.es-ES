@@ -3,8 +3,8 @@ title: Reenvío de registros para AEM as a Cloud Service
 description: Obtenga información acerca del reenvío de registros a proveedores de registro en AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 3%
@@ -88,7 +88,7 @@ Los clientes con una licencia con un proveedor de registro o que alojen un produ
 >
 > Para las próximas tecnologías de registro de CDN planificadas para el futuro, envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para registrar su interés.
 
-El reenvío de registros se configura en modo de autoservicio declarando una configuración en Git y se puede implementar mediante canalizaciones de configuración de Cloud Manager en los tipos de entorno de desarrollo, ensayo y producción. El archivo de configuración se puede implementar en entornos de desarrollo rápido (RDE) mediante herramientas de línea de comandos.
+El reenvío de registros se configura en modo de autoservicio declarando una configuración en Git y se puede implementar mediante canalizaciones de configuración de Cloud Manager en los tipos de entorno de desarrollo, ensayo y producción. El archivo de configuración se puede implementar en Entornos de desarrollo rápido (RDE) mediante herramientas de línea de comandos.
 
 Hay una opción para que los registros de AEM y Apache/Dispatcher se enruten a través de la infraestructura de red avanzada de AEM, como la IP de salida dedicada.
 

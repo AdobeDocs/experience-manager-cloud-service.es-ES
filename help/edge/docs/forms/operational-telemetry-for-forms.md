@@ -4,10 +4,10 @@ description: La telemetría operativa para Edge Delivery Services para AEM Forms
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 100%
 
@@ -22,29 +22,29 @@ Sin embargo, la telemetría operativa prioriza la privacidad del visitante. Util
 
 ## Requisitos previos
 
-Puede ver el panel de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service en la siguiente URL:
+Puede ver el panel de control de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service en la siguiente URL:
 
 https://data.aem.live/?ext=forms
 
 ![Pantalla de inicio de sesión de la telemetría operativa para Edge Delivery Services for Forms](/help/edge/assets/rum-login-screen.png)
 
-Para iniciar sesión en el tablero de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service, introduzca lo siguiente:
+Para iniciar sesión en el panel de control de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service, introduzca lo siguiente:
 
-- **URL**: la dirección URL es específica del sitio o dominio del usuario. Los usuarios tienen la opción de filtrar el sitio o dominio para ver el panel según sus necesidades.
+- **URL**: la dirección URL es específica del sitio o dominio del usuario. Los usuarios tienen la opción de filtrar el sitio o dominio para ver el panel de control según sus necesidades.
 
 - **Clave de dominio**: el usuario genera manualmente la clave de dominio. Para obtener claves de dominio para los formularios, póngase en contacto con el representante de Adobe.
 
-### Panel de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service
+### Panel de control de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service
 
-Después de introducir la URL y las claves de dominio en la pantalla de inicio de sesión, se accede al panel de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service.
+Después de introducir la URL y las claves de dominio en la pantalla de inicio de sesión, se accede al panel de control de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service.
 
-En la siguiente ilustración se muestra el tablero de Edge Delivery Services para AEM Forms as a Cloud Service:
+En la siguiente ilustración se muestra el panel de control de Edge Delivery Services para AEM Forms as a Cloud Service:
 
-![Tablero de formularios de telemetría operativa](/help/edge/assets/rum-forms-dashboard.png)
+![Panel de control de formularios de telemetría operativa](/help/edge/assets/rum-forms-dashboard.png)
 
-### Diferentes métricas clave del panel para formularios {#different-metrics-operational-telemetry-dashboard-forms}
+### Diferentes métricas clave del panel de control para formularios {#different-metrics-operational-telemetry-dashboard-forms}
 
-Este panel proporciona información clave sobre cómo los visitantes interactúan con los formularios del sitio web de Adobe Experience Manager (AEM). Al monitorizar estas métricas, puede identificar áreas que deben mejorarse y optimizar los formularios para mejorar la experiencia del usuario y las tasas de conversión:
+Este panel de control proporciona información clave sobre cómo los visitantes interactúan con los formularios del sitio web de Adobe Experience Manager (AEM). Al monitorizar estas métricas, puede identificar áreas que deben mejorarse y optimizar los formularios para mejorar la experiencia del usuario y las tasas de conversión:
 
 - **Vistas de formularios**: realice un seguimiento de la cantidad total de veces que se muestran los formularios
 - **Envíos de formularios**: rastree el número total de envíos completados

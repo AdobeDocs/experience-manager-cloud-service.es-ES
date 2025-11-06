@@ -3,8 +3,8 @@ title: Referencia de la API de JavaScript de ContextHub
 description: La API de JavaScript de ContextHub está disponible para los scripts cuando se agrega el componente ContextHub a la página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
@@ -80,7 +80,7 @@ Esta función no tiene parámetros.
 
 Un objeto que contiene todos los almacenes de ContextHub. Cada almacén es un objeto que utiliza el mismo nombre que el almacén.
 
-##### Ejemplos {#example-}
+##### Ejemplo {#example-}
 
 El ejemplo siguiente recupera todos los almacenes y, a continuación, recupera el almacén de geolocalización:
 
@@ -101,7 +101,7 @@ Recupera un almacén como un objeto JavaScript.
 
 Un objeto que representa el almacén.
 
-##### Ejemplos {#example-getstore-name}
+##### Ejemplo {#example-getstore-name}
 
 El siguiente ejemplo recupera el almacén de geolocalización:
 
@@ -385,7 +385,7 @@ Configura los detalles para conectarse al servicio JSONP que utiliza este objeto
 
 * **`serviceConfig`:** Un objeto que contiene las siguientes propiedades:
    * `host`: (Cadena) El nombre del servidor o la dirección IP.
-   * `jsonp`: (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.El objeto *Object.name*&rbrace; se ha agregado al objeto service.params.
+   * `jsonp`: (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.El objeto *Object.name*} se ha agregado al objeto service.params.
    * `params`: parámetros de URL (objeto) representados como propiedades de objeto. Los nombres de parámetro son nombres de propiedad y los valores de parámetro son valores de propiedad.
    * `path`: (Cadena) Ruta de acceso al servicio.
    * `port`: (Número) El número de puerto del servicio.
@@ -412,7 +412,7 @@ Recupera el objeto de servicio para este objeto ContextHub.Store.JSONPStore. El 
 Un objeto con las siguientes propiedades:
 
 * **`host`:** (String) El nombre del servidor o la dirección IP.
-* **`jsonp`:** (Booleano) Un valor de true indica que el servicio es un servicio JSONP, false en caso contrario. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.El objeto *Object.name*&rbrace; se ha agregado al objeto service.params.
+* **`jsonp`:** (Booleano) Un valor de true indica que el servicio es un servicio JSONP, false en caso contrario. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.El objeto *Object.name*} se ha agregado al objeto service.params.
 * **`params`:** parámetros de URL (objeto) representados como propiedades de objeto. Los nombres de parámetro son nombres de propiedad y los valores de parámetro son valores de propiedad.
 * **`path`:** (String) La ruta de acceso al servicio.
 * **`port`:** (Número) El número de puerto del servicio.
@@ -509,7 +509,7 @@ Registra un procesador de módulos de IU con ContextHub. Una vez registrado el p
 * **`renderer`:** (String) Nombre de la clase que procesa el módulo de interfaz de usuario.
 * **`dontRender`:** (booleano) Se establece en `true` para evitar que la interfaz de usuario de ContextHub se represente después de registrar el procesador. El valor predeterminado es `false`.
 
-##### Ejemplos {#example-registerrenderer}
+##### Ejemplo {#example-registerrenderer}
 
 En el ejemplo siguiente se registra un procesador como tipo de módulo `contexthub.browserinfo`.
 
@@ -535,7 +535,7 @@ Determina si existe una cookie.
 
 El valor `boolean` true indica que la cookie existe.
 
-##### Ejemplos {#example-exists}
+##### Ejemplo {#example-exists}
 
 ```javascript
 if (ContextHub.Utils.Cookie.exists("name")) {
@@ -559,7 +559,7 @@ Devuelve todas las cookies que tienen claves que coinciden con un filtro.
 
 Un objeto de cookies. Las propiedades de objeto son claves de cookie y los valores de clave son valores de cookie.
 
-##### Ejemplos {#example-getallitems}
+##### Ejemplo {#example-getallitems}
 
 ```javascript
 ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
@@ -577,7 +577,7 @@ Devuelve un valor de cookie.
 
 El valor de la cookie o `null` si no se encontró ninguna cookie para la clave.
 
-##### Ejemplos {#example-getitem-1}
+##### Ejemplo {#example-getitem-1}
 
 ```javascript
 ContextHub.Utils.Cookie.getItem("name");
@@ -599,7 +599,7 @@ Devuelve una matriz de claves de cookies existentes que coinciden con un filtro.
 
 Matriz de cadenas en la que cada cadena es la clave de una cookie que coincide con el filtro.
 
-##### Ejemplos {#example-getkeys-1}
+##### Ejemplo {#example-getkeys-1}
 
 ```javascript
 ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
@@ -618,7 +618,7 @@ Quita una cookie. Para eliminar la cookie, el valor se establece en una cadena v
 
 Esta función no devuelve un valor.
 
-##### Ejemplos {#example-removeitem-1}
+##### Ejemplo {#example-removeitem-1}
 
 ```javascript
 ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
@@ -641,7 +641,7 @@ Crea una cookie de la clave y el valor dados y agrega la cookie al documento act
 
 La cookie con el valor establecido.
 
-##### Ejemplos {#example-setitem-1}
+##### Ejemplo {#example-setitem-1}
 
 ```javascript
 ContextHub.Utils.Cookie.setItem("name", "mycookie", {
@@ -704,7 +704,7 @@ Cuando el argumento `triggerForPastEvents` es `true`, esta función devuelve un 
 
 Si `triggerForPastEvents` es `false`, esta función no devuelve ningún valor.
 
-##### Ejemplos {#example-on}
+##### Ejemplo {#example-on}
 
 En el ejemplo siguiente se enlaza una función al evento de datos del almacén de geolocalización. La función rellena un elemento de la página con el valor del elemento de datos de latitud del almacén.
 
@@ -777,7 +777,7 @@ Analiza un valor de cadena como JSON y lo convierte en un objeto javascript.
 
 Un objeto JavaScript.
 
-##### Ejemplos {#example-parse}
+##### Ejemplo {#example-parse}
 
 El código:
 
@@ -807,7 +807,7 @@ Serializa valores y objetos JavaScript en valores de cadena en formato JSON.
 
 El valor de cadena serializado. Cuando `data` es un valor R `egExp`, esta función devuelve un objeto vacío. Cuando `data` es una función, devuelve `undefined`.
 
-##### Ejemplos {#example-stringify}
+##### Ejemplo {#example-stringify}
 
 El siguiente código:
 
@@ -869,7 +869,7 @@ Recupera el valor de un objeto para la clave.
 
 El valor que corresponde a la clave. Cuando la clave tiene claves secundarias, esta función devuelve un objeto complejo. Cuando el tipo del valor de la clave es `undefined`, se devuelve `null`.
 
-##### Ejemplos {#example-getitem-2}
+##### Ejemplo {#example-getitem-2}
 
 Considere el siguiente objeto de JavaScript:
 
@@ -927,7 +927,7 @@ Recupera todas las claves del árbol de datos de un objeto. De forma opcional, p
 
 Una matriz de claves.
 
-##### Ejemplos {#example-getkeys-2}
+##### Ejemplo {#example-getkeys-2}
 
 Considere el siguiente objeto:
 
@@ -967,7 +967,7 @@ Crea una copia de un objeto determinado, quita la rama especificada del árbol d
 
 Una copia del objeto de datos original sin la clave.
 
-##### Ejemplos {#example-removeitem-2}
+##### Ejemplo {#example-removeitem-2}
 
 Considere el siguiente objeto:
 
@@ -1021,7 +1021,7 @@ Utilice la matriz resultante para crear una clave utilizable.
 
 Matriz de `string` valores donde cada cadena es la parte de `key` que fue demarcada con barras oblicuas. representa la clave saneada. Si la matriz saneada tiene una longitud de cero, esta función devuelve `null`.
 
-##### Ejemplos {#example-sanitizekey}
+##### Ejemplo {#example-sanitizekey}
 
 El siguiente código sanea una cadena para producir la matriz `["this", "is", "a", "path"]` y, a continuación, genera la clave `"/this/is/a/path"` de la matriz:
 
@@ -1045,7 +1045,7 @@ Agrega un par clave/valor al árbol de datos de una copia de un objeto. Para obt
 
 Una copia del objeto `tree` que incluye el par `key`/ `value`.
 
-##### Ejemplos {#example-setitem-2}
+##### Ejemplo {#example-setitem-2}
 
 Considere el siguiente código JavaScript:
 
@@ -1119,7 +1119,7 @@ La prioridad es un número que indica la importancia de las tiendas con el mismo
 * **`priority`:** (Número) Prioridad del candidato a almacén.
 * **`applies`:** (Función) La función a invocar que evalúa la aplicabilidad del almacén en el entorno actual. La función debe devolver `true` si el almacén es aplicable y `false` en caso contrario. El valor predeterminado es una función que devuelve true: `function() {return true;}`
 
-##### Ejemplos {#example-registerstorecandidate}
+##### Ejemplo {#example-registerstorecandidate}
 
 ```javascript
 ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,

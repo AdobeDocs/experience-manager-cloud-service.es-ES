@@ -3,11 +3,11 @@ title: Exportador JSON para servicios de contenido
 description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido desde o hacia AEM, más allá del enfoque en las páginas web. Proporcionan la entrega de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -72,9 +72,9 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 * API HTTP de recursos
    * [API HTTP de recursos](/help/assets/developer-reference-material-apis.md)
 * Modelos Sling:
-   * [Modelos Sling: asociando una clase de modelo con un tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Modelos Sling: asociando una clase de modelo con un tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html?lang=es#associating-a-model-class-with-a-resource-type-since-130)
 * AEM con JSON:
-   * [Activación de la exportación de JSON para un componente](enabling-json-exporter.md)
+   * [Habilitación de la exportación de JSON para un componente](enabling-json-exporter.md)
 
 ## Documentación relacionada {#related-documentation}
 

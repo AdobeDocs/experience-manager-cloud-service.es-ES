@@ -3,13 +3,13 @@ title: Optimización de imágenes con Dynamic Media con las funciones de OpenAPI
 description: Aprenda a optimizar imágenes sobre la marcha antes de la entrega pública mediante las funciones de optimización de imágenes de Dynamic Media con las funciones de OpenAPI
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 3d5ae3bae9635625912a4afb2f74d002cd0ab670
+exl-id: 7822732b-e2b9-4b35-b92b-cb7b31d84489
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1268'
 ht-degree: 0%
 
 ---
-
 
 # Optimización de imágenes con Dynamic Media con las funciones de OpenAPI{#Optimize-images-using-Dynamic-Media-with-OpenAPI-Capabilities}
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [Recorte inteligente](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request) es una capacidad de tamaño dinámico de [!DNL Dynamic Media with OpenAPI capabilities]. [!DNL Smart Crop] es una técnica de procesamiento de imágenes avanzada que utiliza el recorte según contenido con tecnología de IA para recortar imágenes de forma inteligente para varios tamaños de pantalla y, al mismo tiempo, preservar el contexto visual en las versiones recortadas. La IA analiza la imagen para identificar el punto focal o el punto de interés deseado y, a continuación, recorta automáticamente la imagen para conservar el punto focal en todas las versiones recortadas. [!DNL Smart Crop], un elemento clave del diseño interactivo, ofrece una forma rentable y eficiente en cuanto a tiempo de recortar imágenes.
 
-Consulte el artículo [Perfiles de imagen de Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles) para obtener información sobre cómo [crear representaciones de recorte inteligente](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles) en [!DNL Admin View], [aplicarlas a carpetas](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders) o [editar representaciones](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image) ya aplicadas a una imagen o carpeta. Aprenda a crear un [!DNL Smart Crop] paso a paso en este [vídeo](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+Consulte el artículo [Perfiles de imagen de Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles) para obtener información sobre cómo [crear representaciones de recorte inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles) en [!DNL Admin View], [aplicarlas a carpetas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders) o [editar representaciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image) ya aplicadas a una imagen o carpeta. Aprenda a crear un [!DNL Smart Crop] paso a paso en este [vídeo](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
 El parámetro [!DNL Smart Crop] espera que named-smartcrop-profiles existan y se hayan aplicado al recurso. Consulte [Perfiles de recorte inteligente](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request) para obtener más información sobre el parámetro [!DNL Smart Crop] y cómo se aplican los perfiles con nombre [!DNL Smart Crop].
 
@@ -35,7 +35,7 @@ Transforme imágenes sobre la marcha utilizando la capacidad [Ajustes preestable
 
 Puede aplicar un solo ajuste preestablecido a varias imágenes a través de sus [!DNL Dynamic Media with OpenAPI] direcciones URL de entrega. Esto garantiza un formato coherente en todos los recursos sin editar manualmente cada uno.
 
-Consulte el artículo [administración de ajustes preestablecidos de imagen](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets) para obtener información sobre [cómo crear ajustes preestablecidos de imagen en la vista de administrador](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets) y [cómo crear ajustes preestablecidos de imagen adaptables](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset) que adaptan automáticamente los recursos para adaptarlos a diferentes tamaños de pantalla.
+Consulte el artículo [administración de ajustes preestablecidos de imagen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets) para obtener información sobre [cómo crear ajustes preestablecidos de imagen en la vista de administrador](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets) y [cómo crear ajustes preestablecidos de imagen adaptables](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset) que adaptan automáticamente los recursos para adaptarlos a diferentes tamaños de pantalla.
 
 ### Ventajas de utilizar ajustes preestablecidos de imagen{#benefits-of-image-presets}
 
@@ -56,7 +56,7 @@ Después de crear [!DNL Image Presets], puede usarlos para los siguientes flujos
 
 #### Usar ajustes preestablecidos en la URL de entrega de imágenes{#use-presets-in-delivery-urls}
 
-Los ajustes preestablecidos hacen que las direcciones URL de envío sean más cortas y fáciles de usar.  Cada nombre de ajuste preestablecido sirve como identificador único en la dirección URL de envío. En lugar de añadir varios modificadores a la URL de entrega de un recurso, haga referencia al nombre del ajuste preestablecido para generar su representación instantáneamente. [Aprenda a aplicar ajustes preestablecidos de imagen de Dynamic Media a su imagen](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).
+Los ajustes preestablecidos hacen que las direcciones URL de envío sean más cortas y fáciles de usar.  Cada nombre de ajuste preestablecido sirve como identificador único en la dirección URL de envío. En lugar de añadir varios modificadores a la URL de entrega de un recurso, haga referencia al nombre del ajuste preestablecido para generar su representación instantáneamente. [Aprenda a aplicar ajustes preestablecidos de imagen de Dynamic Media a su imagen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).
 En el siguiente ejemplo se compara una dirección URL con un ajuste preestablecido y una dirección URL sin un ajuste preestablecido.
 
 **URL sin ajuste preestablecido (URL larga)**:
@@ -77,6 +77,7 @@ La miniatura preestablecida agrupa la misma configuración de modificador de ima
 
 Los autores pueden seleccionar [!DNL Image Presets] durante la edición de la página en la página de creación de [!DNL AEM Sites] cuando se habilita la compatibilidad con [!DNL Dynamic Media].
 Siga estos pasos para utilizar los ajustes preestablecidos de imagen en la página de creación:
+
 1. Vaya a la página de creación de Sites.
 1. Ejecute los pasos de [Acceder a recursos remotos en la sección Editor de páginas de AEM](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) para usar el panel [!DNL Asset Selector] y seleccionar un recurso.
 1. En el panel [!DNL asset selector], desplácese hacia abajo hasta **[!UICONTROL Tipo de ajuste preestablecido]**, especifique `Preset=Preset Name` en el campo **[!UICONTROL Modificadores de imagen]** y haga clic en **[!UICONTROL Listo]**.
@@ -114,7 +115,7 @@ Deshabilite `auto-format` estableciendo el parámetro de consulta en `false` y, 
 
 Las imágenes se optimizan automáticamente en función de las condiciones de red del cliente para garantizar una entrega más rápida y una carga más fluida. Los parámetros [Quality](#quality-parameter) y [Max-quality](#max-quality-parameter) ajustan automáticamente la calidad controlando los niveles de compresión de la imagen, con valores que van del 1 al 100.
 
-Vea los siguientes comportamientos clave de `quality` y `max-quality `parámetros:
+Vea los siguientes comportamientos clave de `quality` y `max-quality` parámetros:
 
 * Si se especifican [!DNL quality] y [!DNL max-quality], [!DNL quality] tiene prioridad.
 * Si solo se especifica [!DNL quality], la calidad se entrega independientemente del tiempo de carga en función de la velocidad de la red.

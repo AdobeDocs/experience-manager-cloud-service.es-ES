@@ -2,11 +2,11 @@
 title: Editor de reglas para formularios de Edge Delivery Services
 description: Cree formularios dinámicos e inteligentes con el editor de reglas en el editor universal. Añada lógica condicional, cálculos y comportamientos interactivos sin codificación.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 100%
 
@@ -535,7 +535,7 @@ Imagen: Adición de funciones personalizadas al archivo functions.js
 ![Función personalizada en el Editor de reglas](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Imagen: Selección y configuración de funciones personalizadas en la interfaz del Editor de reglas
 
->
+>[!NOTE]
 >
 > Las mejoras realizadas en el editor de reglas, incluidas las reglas personalizadas basadas en eventos, la compatibilidad con variables dinámicas y la integración de API, también están disponibles para los formularios de Edge Delivery Services. Para obtener más información sobre estas mejoras y cómo utilizarlas, consulte el artículo [Mejoras y casos de uso del editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md).
 

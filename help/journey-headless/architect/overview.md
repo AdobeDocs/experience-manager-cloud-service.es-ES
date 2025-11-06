@@ -4,9 +4,9 @@ description: Comience aquí para obtener un recorrido guiado a través de las fu
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 0c1d930f3fcffc27b6564449db3ff1968b077720
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Comience aquí para obtener un recorrido guiado a través de las funciones poten
 
 ## Introducción {#introduction}
 
-La implementación sin encabezado es cada vez más importante para ofrecer experiencias a su audiencia, independientemente del canal y dónde se encuentren.
+La implementación sin encabezado es cada vez más importante para ofrecer experiencias a su público, independientemente del canal y dónde se encuentren.
 
 La implementación sin encabezado renuncia a la administración de páginas y componentes, ya que es tradicional en soluciones de pila completa y se centra en la creación de fragmentos de contenido neutros y reutilizables para el canal y en su entrega multicanal. Es un patrón de desarrollo moderno y dinámico para implementar experiencias digitales.
 
@@ -36,7 +36,7 @@ Los recorridos de documentación están diseñados en torno a los principios de 
 
 Si quiere saber lo recomienda Adobe para resolver los casos empresariales sin encabezado con AEM, [Los recorridos de AEM sin encabezado](/help/journey-documentation/documentation-journeys.md) es dónde debe empezar.
 
-## Audiencia {#audience}
+## Público {#audience}
 
 Este recorrido está diseñado para los arquitectos de contenido. Como arquitecto de contenido, usted define la estructura del contenido. Estas definiciones las utilizan los autores de contenido cuando crean los contenidos propiamente dichos.
 

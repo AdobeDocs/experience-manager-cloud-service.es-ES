@@ -4,8 +4,8 @@ description: Aprenda a utilizar Cloud Manager para crear su propio programa de z
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 15%
@@ -24,7 +24,7 @@ Obtenga más información acerca de los tipos de programas en el documento [Expl
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, cerca de la esquina superior derecha, haga clic en **Agregar programa**.
 
-   ![Página de aterrizaje de Cloud Manager](assets/log-in.png)
+   ![Página de destino de Cloud Manager](assets/log-in.png)
 
 1. En el asistente *Vamos a crear su programa*, en el campo de texto **Nombre del programa**, escriba el nombre que desee para el programa.
 

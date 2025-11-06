@@ -4,8 +4,8 @@ description: Aprenda a escribir pruebas funcionales de Java &trade; para AEM as 
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 369e49e5a047bcfb41712aeb952a30ca90f7802f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 77%

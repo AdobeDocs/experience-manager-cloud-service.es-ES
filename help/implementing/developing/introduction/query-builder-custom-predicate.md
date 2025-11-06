@@ -1,23 +1,23 @@
 ---
-title: Implementación de un evaluador de predicados personalizado para el Generador de consultas
-description: AEM El Generador de consultas de ofrece una forma fácil y personalizable de consultar el repositorio de contenido en la que se encuentra
+title: Implementación de un evaluador de predicados personalizado para Query Builder
+description: Query Builder de AEM ofrece una forma sencilla y personalizable de consultar el repositorio de contenido
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Implementación de un evaluador de predicados personalizado para el Generador de consultas {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
+# Implementación de un evaluador de predicados personalizado para Query Builder {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
 Este documento describe cómo ampliar [Query Builder](query-builder-api.md) implementando un evaluador de predicados personalizado.
 
 ## Información general {#overview}
 
-[Query Builder](query-builder-api.md) es una forma sencilla de consultar el repositorio de contenido. AEM viene con [un conjunto de evaluadores de predicados](#query-builder-predicates.md) que le ayudarán a realizar consultas en los datos.
+[Query Builder](query-builder-api.md) es una forma sencilla de consultar el repositorio de contenido. AEM incluye [un conjunto de evaluadores de predicados](#query-builder-predicates.md) que le ayudarán a consultar sus datos.
 
 Sin embargo, es posible que desee simplificar las consultas implementando un evaluador de predicados personalizado que oculte cierta complejidad y garantice una mejor semántica.
 
@@ -101,13 +101,13 @@ Agrupar predicados de metadatos de replicación con un evaluador de predicados p
 
 >[!TIP]
 >
->AEM [el tutorial de WKND](develop-wknd-tutorial.md) explica en detalle la configuración de nuevos proyectos de, incluido el uso de maven.
+>La configuración de nuevos proyectos de AEM, incluido el uso de maven, se explica en detalle en [el tutorial de WKND](develop-wknd-tutorial.md).
 
 En primer lugar, debe actualizar las dependencias Maven del proyecto. El objeto `PredicateEvaluator` forma parte del artefacto `cq-search`, por lo que debe agregarse al archivo Pom de Maven.
 
 >[!NOTE]
 >
->El ámbito de la dependencia `cq-search` se ha establecido en `provided` porque el contenedor `OSGi` ha proporcionado `cq-search`.
+>El ámbito de la dependencia `cq-search` se ha establecido en `provided` porque el contenedor `cq-search` ha proporcionado `OSGi`.
 
 El siguiente fragmento muestra las diferencias en el archivo `pom.xml`, en [formato de diferencia unificado](https://en.wikipedia.org/wiki/Diff#Unified_format)
 

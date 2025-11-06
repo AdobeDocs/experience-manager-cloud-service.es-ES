@@ -3,11 +3,11 @@ title: Materiales de referencia de la API
 description: AEM tiene API amplias y potentes que puede utilizar para su proyecto de experiencia digital.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -59,7 +59,7 @@ Si AEM proporciona una API, prefiera esta en lugar de Sling, JCR y OSGi. Si AEM 
 
 >[!TIP]
 >
->Para obtener más información sobre estas directrices, consulte el documento [Comprender las prácticas recomendadas de la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=es).
+>Para obtener más información sobre estas directrices, consulte el documento [Comprender las prácticas recomendadas de la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html).
 
 ## API y servicios de envío y administración de contenido de AEM {#delivery-apis}
 
@@ -69,7 +69,7 @@ AEM ofrece componentes personalizables y opciones de entrega de contenido.
 |---|---|
 | [Los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) | Componentes estandarizados de administración de contenido web (WCM) para AEM a fin de acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de los sitios web |
 | [Exportador JSON](/help/implementing/developing/components/json-exporter.md) | Enviar el contenido de cualquier página de AEM en formato de modelo de datos JSON |
-| [Activación de la exportación de JSON para un componente](/help/implementing/developing/components/enabling-json-exporter.md) | Generar una exportación JSON del contenido del componente en función de un marco de modelado |
+| [Habilitación de la exportación de JSON para un componente](/help/implementing/developing/components/enabling-json-exporter.md) | Generar una exportación JSON del contenido del componente en función de un marco de modelado |
 | [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) | API abiertas de modelos de fragmentos de contenido y fragmentos de contenido |
 | [Envío de fragmentos de contenido de AEM con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) | Una API de REST HTTP en AEM Edge Delivery Services, diseñada para entregar contenido estructurado desde fragmentos de contenido en formato JSON. |
 | [API de GraphQL de fragmento de contenido](/help/headless/graphql-api/content-fragments.md) | Habilite la entrega eficiente de fragmentos de contenido a clientes de JavaScript en implementaciones de CMS sin encabezado |

@@ -5,7 +5,7 @@ keywords: Utilizar la fuente de datos de Marketo Engage en formularios adaptable
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 100%
@@ -47,7 +47,7 @@ Para configurar un formulario adaptable basado en componentes de base con la fue
 
    ![Seleccionar conector de Marketo](/help/forms/assets/select-marketo-connector-af1.png){width=50%, height=50%}
 
-   En función de la configuración de Marketo Engage seleccionada, los elementos del formulario se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
+   En función de la configuración de Marketo Engage seleccionada, los elementos del formulario se muestran en la pestaña **[!UICONTROL Objetos de modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
 
    ![Fuente de datos de Marketo](/help/forms/assets/marketo-engage-data-source-af1.png){width=50%, height=50%}
 
@@ -73,7 +73,7 @@ Para configurar un formulario adaptable basado en componentes principales con la
 
    ![Seleccionar conector de Marketo](/help/forms/assets/select-marketo-connector.png){width=50%, height=50%}
 
-   En función de la configuración de Marketo Engage seleccionada, los elementos del formulario se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
+   En función de la configuración de Marketo Engage seleccionada, los elementos del formulario se muestran en la pestaña **[!UICONTROL Objetos de modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
 
    ![Fuente de datos de Marketo](/help/forms/assets/marketo-engage-data-source.png){width=50%, height=50%}
 
@@ -109,8 +109,10 @@ El formulario ahora está configurado con la fuente de datos de la instancia de 
 **P: ¿Qué sucede cuando cambia el conector del formulario?**\
 **R:** Si cambia el conector del formulario, los enlaces existentes dejarán de ser válidos.
 
-**P: ¿Cuáles son las tres operaciones disponibles en Invocar servicio del Editor de reglas para los formularios integrados con Marketo Engage?**\
+**P: ¿Cuáles son las tres operaciones disponibles en Invocar servicio del Editor de reglas para los formularios integrados con Marketo Engage?**
+
 **P:** Las tres operaciones predeterminadas disponibles en **Invocar servicio** para los formularios integrados con Marketo Engage son:
+
 * Sincronizar posible cliente
 * Obtener posible cliente por el ID
 * Obtener posible cliente por el tipo de filtro

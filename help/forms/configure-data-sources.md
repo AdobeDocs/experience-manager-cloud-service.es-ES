@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2339'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -39,6 +39,7 @@ La integración de datos es compatible con los tipos de autenticación OAuth2.0(
 ### Requisitos previos
 
 Antes de configurar bases de datos relacionales mediante la configuración de la consola web de [!DNL Experience Manager], es obligatorio lo siguiente:
+
 * [Habilitar las redes avanzadas mediante la API de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=es), ya que los puertos están deshabilitados de forma predeterminada.
 * [Añadir dependencias de controladores JDBC en Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=es#mysql-driver-dependencies).
 
@@ -128,7 +129,7 @@ Los servicios web RESTful se pueden describir con las [especificaciones de Swagg
 >[!NOTE]
 > Para configurar el servicio web RESTful en [!DNL Experience Manager] as a Cloud Service, asegúrese de que dispone del archivo [!DNL Swagger] ([versión 2.0 de Swagger](https://swagger.io/specification/v2/)) o [!DNL Swagger] ([versión 3.0 de Swagger](https://swagger.io/specification/v3/)) en su sistema de archivos o la URL donde se hospeda el archivo.
 
-### Configuración de servicios RESTful para la especificación de API abierta versión 2.0 {#configure-restful-services-open-api-2.0}
+### Configure los servicios RESTful para la versión 2.0 de la especificación de API abierta {#configure-restful-services-open-api-2.0}
 
 1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 
@@ -153,7 +154,7 @@ Los servicios web RESTful se pueden describir con las [especificaciones de Swagg
 
 1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para el servicio RESTful.
 
-### Configuración de servicios RESTful para la especificación de API abierta versión 3.0 {#configure-restful-services-open-api-3.0}
+### Configurar servicios RESTful para la versión 3.0 de la especificación de API abierta {#configure-restful-services-open-api-3.0}
 
 1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 
@@ -173,6 +174,7 @@ Los servicios web RESTful se pueden describir con las [especificaciones de Swagg
 1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para el servicio RESTful.
 
 Algunas de las operaciones no admitidas por los servicios de la especificación de API abierta versión 3.0 son las siguientes:
+
 * Rellamadas
 * Uno de/cualquiera de
 * Referencia remota
@@ -206,11 +208,11 @@ Consulte [Especificación de OpenAPI 3.0](https://swagger.io/specification/v3/) 
    ![Tipo de autenticación de punto final de servicio](/help/forms/assets/service-endpoint-authtype.png)
 1. Haga clic en Crear.
 
-### Configuración del cliente HTTP del modelo de datos del formulario (FDM) para optimizar el rendimiento {#fdm-http-client-configuration}
+### Configuración del cliente HTTP del modelo de datos de formulario (FDM) para optimizar el rendimiento {#fdm-http-client-configuration}
 
 Modelo de datos del formulario [!DNL Experience Manager Forms] al integrarse con los servicios web RESTful, ya que la fuente de datos incluye configuraciones de cliente HTTP para la optimización del rendimiento.
 
-Establezca las siguientes propiedades de la **[!UICONTROL Configuración del cliente HTTP del modelo de datos del formulario para fuente de datos de REST]** para especificar la expresión regular:
+Establezca las siguientes propiedades de la configuración **[!UICONTROL Configuración del cliente HTTP del modelo de datos de formulario para fuente de datos de REST]** para especificar la expresión regular:
 
 * Utilice la propiedad `http.connection.max.per.route` para establecer el número máximo de conexiones permitidas entre el modelo de datos de formulario (FDM) y los servicios web RESTful. El valor predeterminado es 20 conexiones.
 
@@ -236,9 +238,9 @@ El siguiente archivo JSON muestra un ejemplo:
 } 
 ```
 
-1. Seleccione **[!UICONTROL Configuración del cliente HTTP del modelo de datos del formulario para fuente de datos de REST]**.
+1. Seleccione **[!UICONTROL Configuración del cliente HTTP del modelo de datos de formulario para fuente de datos de REST]**.
 
-1. En el diálogo [!UICONTROL Configuración del cliente HTTP del modelo de datos del formulario para fuente de datos de REST]:
+1. En el diálogo [!UICONTROL Configuración del cliente HTTP del modelo de datos de formulario para fuente de datos de REST]:
 
    * Especifique el número máximo de conexiones permitidas entre el modelo de datos de formulario (FDM) y los servicios web RESTful en el campo **[!UICONTROL Límite de conexión en total]**. El valor predeterminado es 20 conexiones.
 
@@ -316,19 +318,19 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para el servicio OData.
 
 <!--
-## Configure Microsoft® SharePoint List {#config-sharepoint-list}
+## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-To save data in a tabular form use, Microsoft® SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
+To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
     * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
     * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft&reg; Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
     * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
       >[!NOTE]
@@ -337,7 +339,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft&reg; SharePointList.
 
 -->
 

@@ -3,8 +3,8 @@ title: Referencia de predicados del generador de consultas
 description: Referencia de predicado para la API de Query Builder en AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 1%
@@ -181,7 +181,7 @@ Un predicado solo de filtrado y no puede utilizar un índice de búsqueda. No ad
 
 ### language {#language}
 
-AEM Este predicado encuentra páginas en un idioma específico para el usuario. Examina tanto la propiedad de idioma de la página como la ruta de página que a menudo incluye el idioma o la configuración regional en una estructura de sitio de nivel superior.
+Este predicado encuentra páginas de AEM en un idioma específico. Examina tanto la propiedad de idioma de la página como la ruta de página que a menudo incluye el idioma o la configuración regional en una estructura de sitio de nivel superior.
 
 Un predicado solo de filtrado y no puede utilizar un índice de búsqueda.
 

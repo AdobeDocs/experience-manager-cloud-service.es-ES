@@ -3,8 +3,8 @@ title: La herramienta Copia de contenido
 description: La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción en AEM as a Cloud Service a entornos más bajos para realizar pruebas.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 31%
@@ -43,8 +43,8 @@ Para utilizar la herramienta de copia de contenido, se requieren ciertos permiso
 
 | Función de copia de contenido | Grupo de administradores de AEM | Función Administrador de implementación |
 |---|---|---|
-| Crear y modificar [conjuntos de contenido](#create-content-set) | No necesario | Requerido |
-| Iniciar o cancelar el [proceso de copia de contenido](#copy-content) | Requerido | Requerido |
+| Crear y modificar [conjuntos de contenido](#create-content-set) | No es necesario | Necesario |
+| Iniciar o cancelar el [proceso de copia de contenido](#copy-content) | Necesario | Necesario |
 
 Para obtener más información sobre los permisos y cómo establecerlos, consulte [Perfiles de equipo y producto de AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
@@ -146,13 +146,13 @@ Se inicia el proceso de copia. El estado del proceso de copia se refleja en la c
 
 ## Actividad de la copia de contenido {#copy-activity}
 
-Puede controlar el estado de los procesos de la copia en la página **Copiar actividad de contenido**.
+Puede controlar el estado de los procesos de la copia en la página **Actividad de copia de contenido**.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Vaya a la página **Copiar actividad de contenido** en la pantalla **Entornos**.
+1. Vaya a la página **Actividad de copia de contenido** en la pantalla **Entornos**.
 
 ![Actividad de la copia de contenido](assets/copy-content-activity.png)
 

@@ -10,9 +10,9 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2032'
 ht-degree: 95%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 95%
 
 # Preguntas más frecuentes sobre formularios HTML5{#frequently-asked-questions-faq-for-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 Existen preguntas más frecuentes (FAQ) sobre la presentación, la compatibilidad con scripts y el ámbito de los formularios HTML5.
@@ -121,7 +121,7 @@ Existen preguntas más frecuentes (FAQ) sobre la presentación, la compatibilida
 
    Para los formularios PDF, Adobe Acrobat tiene un motor XTG integrado para crear objetos y estructuras de datos intermedias. Acrobat también se encarga del diseño y de los scripts.
 
-   Para los formularios HTML5, los exploradores no tienen ningún motor XTG incorporado para crear estructuras de datos intermedias y objetos a partir de bytes XDP sin procesar. Por tanto, para los formularios HTML5, las estructuras intermedias se generan en el servidor y se envían al cliente. En el cliente, el script basado en JavaScript y el motor de diseño utilizan estas estructuras intermedias.
+   Para los formularios HTML5, los exploradores no tienen ningún motor XTG integrado para crear estructuras de datos intermedias y objetos a partir de bytes XDP sin procesar. Por tanto, para los formularios HTML5, las estructuras intermedias se generan en el servidor y se envían al cliente. En el cliente, el script basado en JavaScript y el motor de diseño utilizan estas estructuras intermedias.
 
    El tamaño de la estructura intermedia depende del tamaño del XDP original y de los datos combinados con el XDP.
 
@@ -180,7 +180,7 @@ Respuesta: El campo Fecha acepta el formato ISO, AAAA-MM-DD. Si especifica una f
 
 ### Crear scripts {#scripting}
 
-1. ¿Existen limitaciones en la implementación de JavaScript para HTML Forms?
+1. ¿Existen limitaciones en la implementación de JavaScript para formularios HTML?
 
    Respuesta:
 

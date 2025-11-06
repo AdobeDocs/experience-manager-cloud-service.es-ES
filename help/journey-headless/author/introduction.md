@@ -4,9 +4,9 @@ description: Una introducción al uso de las características de Adobe Experienc
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: cc2e73da123d3e0676a8e175a18c1dc0bdff1daa
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ En esta parte del [recorrido del autor de contenido sin encabezado de AEM](overv
 
 ## Objetivo {#objective}
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: presentar los conceptos y la terminología relevantes para la creación sin encabezado.
 
 ## Sistema de administración de contenido (CMS) {#content-management-system}
@@ -82,12 +82,12 @@ Ahora que ya conoce los conceptos y la terminología, el siguiente paso es [Apre
 
 * [Tutoriales de contenido sin encabezado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
 
-* Recorrido para desarrolladores de AEM sin encabezado
+* Recorrido para desarrolladores de AEM headless
    * [Obtenga más información acerca del desarrollo de CMS sin encabezado](/help/journey-headless/developer/learn-about.md)
    * [Aprenda cómo modelar el contenido](/help/journey-headless/developer/model-your-content.md)
 
 * [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
 
-* [Recorrido para arquitectos de contenido sin encabezado de AEM](/help/journey-headless/architect/overview.md)
+* [Recorrido de arquitecto de contenido de AEM sin encabezado](/help/journey-headless/architect/overview.md)
 
 * [Recorrido de traducción de contenidos sin encabezado de AEM](/help/journey-headless/translation/overview.md)

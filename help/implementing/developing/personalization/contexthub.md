@@ -3,8 +3,8 @@ title: ContextHub
 description: ContextHub es un marco para almacenar, manipular y presentar datos de contexto
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%
@@ -30,7 +30,7 @@ La [barra de herramientas de ContextHub](/help/sites-cloud/authoring/personaliza
 Cada módulo de IU de ContextHub es una instancia de un tipo de módulo predefinido:
 
 * ContextHub proporciona [tipos de módulos de ejemplo](sample-modules.md).
-* AEM Use consolas de consola para [agregar módulos de interfaz de usuario](configuring-contexthub.md#adding-a-ui-module) y para [agruparlas en modos de interfaz de usuario](configuring-contexthub.md#adding-a-ui-mode).
+* Use las consolas de AEM para [agregar módulos de interfaz de usuario](configuring-contexthub.md#adding-a-ui-module) y [agruparlos en modos de interfaz de usuario](configuring-contexthub.md#adding-a-ui-mode).
 * Los desarrolladores pueden [crear tipos de módulos personalizados](extending-contexthub.md#creating-contexthub-ui-module-types).
 
 Los desarrolladores deben [agregar el componente ContextHub a la página](configuring-contexthub.md).
@@ -42,7 +42,7 @@ ContextHub almacena datos de contexto persistentes en el cliente. La API de Java
 Cada tienda de ContextHub es una instancia de un tipo de tienda predefinido:
 
 * ContextHub proporciona [tipos de almacén de muestra](sample-stores.md).
-* AEM Use consolas de consola para [crear tiendas](configuring-contexthub.md#creating-a-contexthub-store).
+* Use las consolas de AEM para [crear tiendas](configuring-contexthub.md#creating-a-contexthub-store).
 * Los desarrolladores pueden [crear tipos de almacén personalizados](extending-contexthub.md#creating-custom-store-candidates).
 * Los desarrolladores pueden [acceder a los datos del almacén](adding-contexthub.md#interacting-with-contexthub-stores) a través de JavaScript.
 

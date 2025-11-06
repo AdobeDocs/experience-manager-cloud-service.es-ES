@@ -3,8 +3,8 @@ title: SDK de AEM as a Cloud Service
 description: Descripción general del kit de desarrollo de software de AEM as a Cloud Service.
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 82f5078740b2cf6ac481d83df40bbbc4fb3c1a77
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Además, algunos clientes que se implementaron anteriormente con AEM 6.5 o versi
 
 ## Creación para SDK {#building-for-the-sdk}
 
-AEM as a Cloud Service SDK se utiliza para generar e implementar código personalizado. Consulte la [documentación del tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/using). En un nivel superior, se realizan los siguientes pasos:
+AEM as a Cloud Service SDK se utiliza para generar e implementar código personalizado. Consulte la [documentación del tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using). En un nivel superior, se realizan los siguientes pasos:
 
 * **Código de compilación**: el código Source se ha compilado, lo que genera los paquetes de contenido resultantes.
 * **Artefactos de compilación**: los artefactos se crean durante este proceso.
@@ -42,12 +42,12 @@ Cloud Manager ejecuta los mismos pasos al implementar en entornos de nube. La re
 
 >[!NOTE]
 >
->AEM as a Cloud Service SDK debe generarse con una distribución y versión de Java compatibles con [entorno de compilación de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Los clientes de AEM as a Cloud Service pueden descargar el JDK de Oracle desde [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html). Tienen compatibilidad ampliada con Java 11 hasta septiembre de 2026 debido a los términos de licencia y compatibilidad de Adobe para la tecnología Java de Oracle en proyectos de Adobe Experience Manager.
+>AEM as a Cloud Service SDK debe generarse con una distribución y versión de Java compatibles con [entorno de compilación de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Los clientes de AEM as a Cloud Service pueden descargar el JDK de Oracle desde [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Tienen compatibilidad ampliada con Java 11 hasta septiembre de 2026 debido a los términos de licencia y compatibilidad de Adobe para la tecnología Java de Oracle en proyectos de Adobe Experience Manager.
 
 ## Acceso a AEM as a Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * Puede consultar el icono de AEM Admin Console **Acerca de Adobe Experience Manager** para saber la versión de AEM que está ejecutando en producción.
-* QuickStart Jar y Dispatcher Tools se pueden descargar como archivo zip desde [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html). El acceso a los listados de SDK está limitado a las personas que tienen entornos en AEM Managed Services o AEM as a Cloud Service.
+* QuickStart Jar y Dispatcher Tools se pueden descargar como archivo zip desde [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). El acceso a los listados de SDK está limitado a las personas que tienen entornos en AEM Managed Services o AEM as a Cloud Service.
 * Java™ API Jar y Javadoc Jar se pueden descargar a través de la herramienta Maven, ya sea con la línea de comandos o con su IDE preferido.
 * Los POM del proyecto de Maven deben hacer referencia al siguiente paquete JAR de API. También se debe hacer referencia a la dependencia de cualquier pom de subpaquete.
 

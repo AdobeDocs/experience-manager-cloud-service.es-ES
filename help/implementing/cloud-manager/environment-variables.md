@@ -4,11 +4,11 @@ description: Las variables de entorno estándar se pueden configurar y administr
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
@@ -37,7 +37,7 @@ Los casos de uso habituales para usar variables de entorno son los siguientes:
 
 ## Agregar una variable de entorno {#add-variables}
 
-Si desea agregar varias variables, Adobe recomienda que agregue la primera variable y, a continuación, use ![Agregar icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Agregar** en el cuadro de diálogo **Configuración del entorno** para agregar las variables adicionales. Este método significa que puede agregarlos con una actualización al entorno.
+Si desea agregar varias variables, Adobe recomienda que agregue la primera variable y, a continuación, utilice ![Agregar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Agregar** en el cuadro de diálogo **Configuración del entorno** para agregar las variables adicionales. Este método significa que puede agregarlos con una actualización al entorno.
 
 Para agregar, actualizar o eliminar variables de entorno, debe ser miembro del rol [**Administrador de implementación**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
 
@@ -59,7 +59,7 @@ Si agrega una variable de entorno por primera vez, haga clic en **Agregar config
    | --- | --- |
    | Nombre | Un nombre único de la variable de configuración. Identifica la variable específica que se utiliza en el entorno. Debe cumplir las siguientes convenciones de nomenclatura:<ul><li>Las variables solo pueden contener caracteres alfanuméricos y el guion bajo (`_`).</li><li>Hay un límite de 200 variables por entorno.</li><li>Cada nombre debe tener 100 caracteres o menos.</li></ul> |
    | Valor | El valor que contiene la variable. |
-   | Paso aplicado | Seleccione el servicio al que se aplica la variable. Seleccione **Todos** para que la variable se aplique a todos los servicios.<ul><li>**Todos**</li><li>**Autor**</li><li>**Publish**</li><li>**Previsualizar**</li></ul> |
+   | Paso aplicado | Seleccione el servicio al que se aplica la variable. Seleccione **Todos** para que la variable se aplique a todos los servicios.<ul><li>**Todos**</li><li>**Autor**</li><li>**Publicar**</li><li>**Vista previa**</li></ul> |
    | Tipo | Seleccione si la variable es normal o un secreto. |
 
    ![Agregar una variable](assets/add-variable.png)
@@ -78,7 +78,7 @@ Si agrega una variable de entorno por primera vez, haga clic en **Agregar config
 
 Una vez que haya creado variables de entorno, puede actualizarlas con ![Agregar/Actualizar - Agregar icono de círculo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Agregar/Actualizar** para abrir el cuadro de diálogo **Configuración del entorno**.
 
-Si desea actualizar varias variables, el Adobe recomienda que utilice el cuadro de diálogo **Configuración del entorno** para actualizar todas las variables necesarias a la vez antes de hacer clic en **Guardar**. De este modo, puede agregarlas con una actualización al entorno.
+Si desea actualizar varias variables, Adobe recomienda usar el cuadro de diálogo **Configuración del entorno** para actualizar todas las variables necesarias a la vez antes de hacer clic en **Guardar**. De este modo, puede agregarlas con una actualización al entorno.
 
 **Para actualizar una variable de entorno:**
 
@@ -91,7 +91,7 @@ Si desea actualizar varias variables, el Adobe recomienda que utilice el cuadro 
 1. En el cuadro de diálogo **Configuración del entorno**, haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en la última columna de la fila de la variable que desea cambiar.
 1. En el menú desplegable, haga clic en **Editar**.
 
-   ![Variable Editar o eliminar &#x200B;](assets/edit-delete-variable.png)
+   ![Variable Editar o eliminar ](assets/edit-delete-variable.png)
 
 1. Actualice el valor de la variable de entorno según sea necesario.
 Al editar un secreto, el valor solo se puede actualizar, no ver.
@@ -138,7 +138,7 @@ Las variables de entorno se pueden utilizar en varios lugares de la siguiente ma
 | Dónde se pueden utilizar variables de entorno | Descripción |
 | --- | --- |
 | Creación, previsualización y publicación | Tanto las variables de entorno normales como los secretos se pueden usar en los entornos de creación, previsualización y publicación. |
-| Dispatcher | Solo se pueden usar variables de entorno normales con [Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher).<ul><li>Los secretos no se pueden usar.</li><li>No se pueden usar variables de entorno en directivas `IfDefine`.</li><li>Debe validar el uso de variables de entorno con [Dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=es) antes de la implementación.</li></ul> |
+| Dispatcher | Solo se pueden usar variables de entorno normales con [Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher).<ul><li>Los secretos no se pueden usar.</li><li>No se pueden usar variables de entorno en directivas `IfDefine`.</li><li>Debe validar el uso de variables de entorno con [Dispatcher localmente](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) antes de la implementación.</li></ul> |
 | Configuraciones de OSGi | En [Configuraciones OSGi](/help/implementing/deploying/configuring-osgi.md) se pueden usar tanto variables de entorno regulares como secretos. |
 | Variables de canalización | Además de las variables de entorno, también hay variables de canalización que se exponen durante la fase de compilación. Obtenga más información acerca de las variables de canalización en [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables). |
 

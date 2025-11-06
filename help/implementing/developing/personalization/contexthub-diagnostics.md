@@ -3,8 +3,8 @@ title: Diagnóstico de ContextHub
 description: ContextHub proporciona una página de diagnóstico en la que puede ver una descripción general del marco de trabajo de ContextHub
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Diagnóstico de ContextHub {#contexthub-diagnostics}
 
-ContextHub proporciona una página de diagnóstico en la que puede ver una descripción general del marco de trabajo de ContextHub. AEM Para abrir la página, vaya a la página `contexthub.diagnostics.html` de la instancia de autor de la, por ejemplo:
+ContextHub proporciona una página de diagnóstico en la que puede ver una descripción general del marco de trabajo de ContextHub. Para abrir la página, vaya a la página `contexthub.diagnostics.html` de la instancia de autor de AEM, por ejemplo:
 
 `http://<host>:<port>/conf/<site>/settings/cloudsettings/default/contexthub.diagnostics.html`
 

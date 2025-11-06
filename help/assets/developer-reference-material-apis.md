@@ -3,12 +3,12 @@ title: Referencias de desarrollador para  [!DNL Assets]
 description: '[!DNL Assets] API y contenido de referencia de desarrollador le permite administrar recursos, incluidos archivos binarios, metadatos, representaciones, comentarios y  [!DNL Content Fragments].'
 contentOwner: AG
 feature: Assets HTTP API
-role: Developer, Architect, Admin
+role: Developer, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1870'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 | × | No compatible. No utilice. |
 | - | No disponible |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API de Java | [Servicio de cómputo de recursos](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=es) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=es#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API de Java | [Servicio de cómputo de recursos](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=es) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **binario original** |  |  |  |  |  |  |
 | Crear original | ✓ | × | - | × | × | - |
@@ -167,9 +167,9 @@ Una vez cargadas todas las partes de un archivo binario, envíe una solicitud HT
 
 | Campos | Tipo | Requerido o no | Descripción |
 |---|---|---|---|
-| `fileName` | Cadena | Requerido | El nombre del recurso, tal como lo proporcionaron los datos de inicio. |
-| `mimeType` | Cadena | Requerido | El tipo de contenido HTTP del binario, tal como lo proporcionaron los datos de inicio. |
-| `uploadToken` | Cadena | Requerido | Cargue el token para el binario, tal como lo proporcionaron los datos de inicio. |
+| `fileName` | Cadena | Necesario | El nombre del recurso, tal como lo proporcionaron los datos de inicio. |
+| `mimeType` | Cadena | Necesario | El tipo de contenido HTTP del binario, tal como lo proporcionaron los datos de inicio. |
+| `uploadToken` | Cadena | Necesario | Cargue el token para el binario, tal como lo proporcionaron los datos de inicio. |
 | `createVersion` | Booleano | Opcional | Si `True` y existe un recurso con el nombre especificado, [!DNL Experience Manager] crea una nueva versión del recurso. |
 | `versionLabel` | Cadena | Opcional | Si se crea una nueva versión, la etiqueta asociada a la nueva versión de un recurso |
 | `versionComment` | Cadena | Opcional | Si se crea una nueva versión, los comentarios asociados con la versión. |

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -222,6 +222,7 @@ Vamos a aprender cómo las funciones personalizadas utilizan los objetos globale
 
 La siguiente línea de código:
 `globals.functions.submitForm(globals.functions.exportData(), false);` se usa para enviar los datos del formulario después de la manipulación.
+
 * El primer argumento son los datos que se van a enviar.
 * El segundo argumento representa si el formulario se debe validar antes del envío. Es `optional` y se establece como `true` de manera predeterminada.
 * El tercer argumento es el `contentType` del envío, que también es opcional con el valor predeterminado `multipart/form-data`. Los otros valores pueden ser `application/json` y `application/x-www-form-urlencoded`.
@@ -523,7 +524,7 @@ Consulte el archivo gif siguiente, que muestra que cuando se hace clic en el bot
   `const pattern = new RegExp("^abc$");`
 Refactorice las expresiones regulares para utilizar el constructor RegExp y garantizar una ejecución coherente y fiable.
 
-## Solución de problemas
+## Resolución de problemas
 
 * Si el controlador de envío personalizado no funciona como se espera en los formularios o proyectos de AEM existentes, realice los siguientes pasos:
    * Asegúrese de que la versión de los componentes principales [se haya actualizado a la versión 3.0.18 y posteriores](https://github.com/adobe/aem-core-forms-components). Sin embargo, para los proyectos y formularios de AEM existentes, hay que seguir algunos pasos adicionales:
@@ -532,6 +533,6 @@ Refactorice las expresiones regulares para utilizar el constructor RegExp y gara
 
    * En el caso de los formularios existentes, si los controladores de envío personalizados no funcionan correctamente, el usuario debe abrir y guardar la regla `submitForm` en el botón **Enviar** mediante el Editor de reglas. Esta acción reemplaza la regla existente de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` en el formulario.
 
-## Véase también
+## Ver también
 
 {{see-also-rule-editor}}

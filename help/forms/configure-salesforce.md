@@ -3,13 +3,13 @@ title: Configurar los modelos de datos de formulario predeterminados de Salesfor
 description: Aprenda a integrar Salesforce con Forms adaptable.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 71%
 
 ---
-
 
 # Configuración de Salesforce para AEM Forms {#configure-azure-storage}
 
@@ -30,7 +30,7 @@ Los servicios en la nube de [!DNL Salesforce] y el modelo de datos de formulario
 
 Antes de configurar los servicios en la nube de [!DNL Salesforce], asegúrese de realizar las siguientes tareas:
 
-* [Cree una aplicación de  [!DNL Salesforce]  conectada y habilitada para OAuth &#x200B;](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&type=5). Al crear la aplicación conectada de [!DNL Salesforce], especifique la URL de devolución de llamada con el siguiente formato:
+* [Cree una aplicación de  [!DNL Salesforce]  conectada y habilitada para OAuth ](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&type=5). Al crear la aplicación conectada de [!DNL Salesforce], especifique la URL de devolución de llamada con el siguiente formato:
 
   ```
   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
@@ -59,10 +59,11 @@ Siga estos pasos para configurar el servicio en la nube de [!DNL Salesforce]:
 Hay disponible un modelo de datos de formulario (FDM) de [!DNL Salesforce] de forma predeterminada en el servidor de [!DNL AEM Forms] cuando [se configura un proyecto de desarrollo de formularios basado en el arquetipo de Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 Para acceder al modelo de datos de formulario (FDM):
+
 1. Vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integraciones de datos]**.
 1. Seleccione el nombre de la carpeta, el **[!UICONTROL Modelo de datos de Salesforce]** y el icono ![Editar](assets/edit.png) para ver el modelo de datos de formulario.
 
-Después de configurar el [&#128279;](#configure-salesforce-cloud-service)servicio de configuración en la nube de [!DNL Salesforce] , podrá integrar formularios adaptables con el modelo de datos predeterminado de [!DNL Salesforce].
+Después de configurar el ](#configure-salesforce-cloud-service)servicio de configuración en la nube de [[!DNL Salesforce] , podrá integrar formularios adaptables con el modelo de datos predeterminado de [!DNL Salesforce].
 
 >[!MORELIKETHIS]
 >

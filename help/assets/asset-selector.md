@@ -5,7 +5,7 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5357'
 ht-degree: 38%
@@ -106,7 +106,7 @@ Puede realizar la autenticación sin definir algunas de las propiedades de IMS, 
 
 Puede integrar el Selector de recursos con varias aplicaciones, como:
 
-* [Integrar el Selector de recursos con una aplicación  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
+* [Integrar el Selector de recursos con una aplicación  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Integre el Selector de recursos con una aplicación que no sea de Adobe](#adobe-non-app-integration)
 * [Integración de Dynamic Media con funciones de OpenAPI](#adobe-app-integration-polaris)
 
@@ -473,7 +473,7 @@ La dirección URL de envío dinámico tiene la siguiente sintaxis:
 +++
 
 +++**Listo para elegir la URL de envío dinámico**
-Todos los recursos seleccionados están a cargo de la función `handleSelection` que actúa como objeto JSON. Por ejemplo, `JsonObj`. La URL de envío dinámico se crea combinando los siguientes operadores:
+La función `handleSelection` que actúa como objeto JSON lleva todos los recursos seleccionados. Por ejemplo, `JsonObj`. La URL de envío dinámico se crea combinando los siguientes operadores:
 
 | Objeto | JSON |
 |---|---|
@@ -915,7 +915,7 @@ Utilice el siguiente fragmento de código para mostrar el mensaje de mensaje par
 
 El Selector de recursos le permite agregar un filtro de selector de etiquetas. Admite un grupo de etiquetas que combina todas las etiquetas relevantes con un grupo de etiquetado concreto. Además, le permite seleccionar etiquetas adicionales correspondientes al recurso que está buscando. Además, también puede establecer los grupos de etiquetas predeterminados en el filtro de invocación contextual que utiliza principalmente para que le sean accesibles en sus desplazamientos.
 
->
+>[!NOTE]
 >
 > * Se debe añadir un fragmento de código de invocación contextual para habilitar el filtro de etiquetado en la búsqueda.
 > * Es obligatorio usar la propiedad name correspondiente al tipo de grupo de etiquetas `(property=xcm:keywords.id=)`.

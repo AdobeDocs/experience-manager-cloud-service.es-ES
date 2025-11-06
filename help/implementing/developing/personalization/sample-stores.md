@@ -1,17 +1,17 @@
 ---
-title: Candidatos de tienda de ContextHub de muestra
+title: Candidatos de almacenes de muestra de ContextHub
 description: ContextHub proporciona varios candidatos de tienda de muestra que puede utilizar en sus soluciones
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Candidatos de tienda de ContextHub de muestra {#sample-contexthub-store-candidates}
+# Candidatos de almacenes de muestra de ContextHub {#sample-contexthub-store-candidates}
 
 ContextHub proporciona varios candidatos de tienda de muestra que puede utilizar en sus soluciones. Se proporciona la siguiente información para cada muestra:
 
@@ -105,7 +105,7 @@ El almacén utiliza un árbol de datos similar al siguiente ejemplo:
 
 >[!NOTE]
 >
->Una directiva de seguridad introducida en Chrome 50.x requiere que todas las llamadas relacionadas con la geolocalización se realicen a través de una conexión segura. AEM AEM Por lo tanto, se fuerza el uso de https para las llamadas a la API de geolocalización si también se está ejecutando en https, por lo que también se fuerza el uso de https. De lo contrario, http se utiliza para cumplir la directiva del mismo origen.
+>Una directiva de seguridad introducida en Chrome 50.x requiere que todas las llamadas relacionadas con la geolocalización se realicen a través de una conexión segura. Por lo tanto, AEM fuerza el uso de https para las llamadas a la API de geolocalización si AEM también se ejecuta en https. De lo contrario, http se utiliza para cumplir la directiva del mismo origen.
 >
 >Consulte [esta publicación de blog de Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obtener más información sobre el cambio en Chrome.
 

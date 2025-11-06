@@ -5,7 +5,7 @@ keywords: Configuración del sitio de SharePoint con acceso limitado?, Configura
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 24%
@@ -36,7 +36,7 @@ Ventajas para proporcionar acceso limitado al sitio de SharePoint:
 
 Siga los pasos a continuación para configurar SharePoint Sites con acceso limitado mediante ámbitos de autorización:
 
-1. [Cree una aplicación con &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [Cree una aplicación con ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [Definir el ámbito de autorización en la instancia de AEM](#set-the-authorization-scope-at-aem-instance)
 
 ### Crear una aplicación con el permiso limitado en el portal de Azure
@@ -46,6 +46,7 @@ Cree una aplicación en [Microsoft Azure Portal](https://portal.azure.com/#home)
 ![Sitio seleccionado de SharePoint](/help/forms/assets/sharepoint-selected-site.png)
 
 Para obtener información sobre cómo recuperar `Client ID`, `Client Secret` y `Tenant ID` para `OAuth URL`, consulte la [documentación de Microsoft®](https://learn.microsoft.com/es-es/graph/auth-register-app-v2).
+
 * En el portal de Microsoft® Azure, añada el URI de redireccionamiento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Reemplace `[author-instance]` por la URL de su instancia de autor.
 * Agregue el ámbito de permisos `offline_access` y `Sites.Selected` en la API de Graph de Microsoft para proporcionar acceso restringido a los sitios.
 * Para la URL de OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Reemplace `<tenant-id>` por el `tenant-id` de su aplicación desde el portal de Microsoft® Azure.
@@ -91,6 +92,7 @@ Ahora puede usar esta configuración de [SharePoint Sites para la acción de env
 ## Bytes adicionales
 
 Para recuperar el valor de `SharePoint Site ID`:
+
 1. Vaya a las [API de Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 1. En el panel izquierdo, debajo de las API `SharePoint Sites`, haga clic en `Search for a SharePoint site by keyword`.
 1. Reemplace el marcador de posición `contoso` por el nombre real del sitio de SharePoint para recuperar el ID de sitio correspondiente.

@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo actualizar los fragmentos de conte
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 2%
@@ -110,7 +110,7 @@ La actualización de contenido se puede administrar mediante el extremo: `/libs/
 
 ### Iniciar una actualización de contenido {#start-a-content-upgrade}
 
-| Punto final | Tipo de solicitud HTTP | Comentar |
+| Punto final | Tipo de solicitud HTTP | Comentario |
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json` | `POST` | |
 | **Parámetros de solicitud** | **Valor** | |
@@ -180,7 +180,7 @@ Content-Length: 386
 
 ### Obtener el estado de una actualización de contenido {#get-the-status-of-a-content-upgrade}
 
-| Punto final | Tipo de solicitud HTTP | Comentar |
+| Punto final | Tipo de solicitud HTTP | Comentario |
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json` | `GET` | |
 | **Parámetros de solicitud** | **Valor** | |
@@ -297,7 +297,7 @@ com.adobe.cq.dam.cfm.impl.servicing.PhaseChainProcessor Phase phase-x, processed
 >
 >Utilice esta acción con precaución.
 
-| Punto final | Tipo de solicitud HTTP | Comentar |
+| Punto final | Tipo de solicitud HTTP | Comentario |
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json` | `POST` | |
 | **Parámetros de solicitud** | **Valor** | |

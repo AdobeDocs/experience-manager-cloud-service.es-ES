@@ -6,8 +6,8 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 100%
 
@@ -22,6 +22,7 @@ ht-degree: 100%
 Por ejemplo, con Workfront Fusion puede crear un escenario para recopilar datos con formularios adaptables, procesar los datos y enviarlos a un almacén de datos para su archivo. Una vez configurado un escenario, Workfront Fusion ejecuta automáticamente las tareas cada vez que se rellena un formulario, actualizando el almacén de datos sin problemas.
 
 AEM Forms as a Cloud Service proporciona un conector predeterminado para conectarse y enviar un formulario adaptable a Adobe Workfront Fusion. El envío de un formulario a Adobe Workfront Fusion puede ofrecer varias ventajas:
+
 * Permitía la transferencia perfecta de datos de los envíos de formularios a los flujos de trabajo de Workfront Fusion.
 * Ayuda a automatizar varias tareas activadas por los envíos de formularios. Esto puede incluir el inicio de proyectos, la asignación de tareas a integrantes del equipo específicos, el envío de notificaciones y la actualización de los estados de los proyectos, todo sin intervención manual.
 * Todos los envíos de formularios capturados en Workfront Fusion proporcionan una única fuente fiable para la información relacionada con el proyecto

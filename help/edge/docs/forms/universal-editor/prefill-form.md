@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: rellenar previamente un formulario adaptable, edge delivery services con formularios adaptables, autorrellenar formularios adaptables
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 100%
 
@@ -125,7 +125,7 @@ El editor universal proporciona dos opciones de servicio de rellenado previo:
 1. Ir a **Adobe Experience Manager** > **Formularios** > **Integraciones de datos**
 1. Abrir el modelo de formulario de datos en modo de edición
 1. Seleccionar un objeto de modelo de datos y haga clic en **Editar propiedades**
-1. Configurar los servicios **Lectura** y **Escritura** para los objetos del modelo de datos seleccionados
+1. Configurar los servicios **Lectura** y **Escritura** para los objetos de modelo de datos seleccionados
 
    ![Configurar servicio de lectura/escritura](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
@@ -157,7 +157,7 @@ El editor universal proporciona dos opciones de servicio de rellenado previo:
 
 1. Hacer clic en **Crear** para abrir el asistente de **Crear formulario**
 
-   >
+   >[!NOTE]
    >
    > Puede configurar el origen de datos desde la ficha **Datos**, o más tarde, editando las propiedades del formulario.
 

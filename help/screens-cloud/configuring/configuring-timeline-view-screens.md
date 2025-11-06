@@ -4,10 +4,10 @@ description: En esta página se describe cómo configurar una vista de cronolog�
 exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '813'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 En esta sección se describe cómo crear una vista de línea de tiempo para AEM Screens.
 
-AEM proporciona un conjunto de funciones que permiten a varias personas de grupos de una organización colaborar en la creación, administración y uso del canal.
+AEM proporciona un conjunto de funciones que permiten a varias personas en grupos de una organización colaborar en la creación, administración y uso del canal.
 La cronología, ubicada en la barra izquierda, describe los canales, la ubicación o el ciclo de vida de cualquier carpeta de pantalla en orden temporal para transmitir lo que le ha sucedido a lo largo de su vida útil. Esto se puede filtrar por tipo.
 El raíl de cronología proporciona las siguientes funciones además de los registros de ciclo de vida.
 
@@ -36,7 +36,7 @@ Las secciones siguientes describen estos pasos en detalle.
 ### Agregar un comentario {#addcomment}
 
 Los comentarios disponibles a través de la cronología permiten a los usuarios crear un registro centralizado e histórico para las discusiones que tienen lugar sobre el canal, la ubicación o cualquier carpeta de la pantalla.
-AEM Los comentarios proporcionan una buena manera consolidada para que los usuarios de la discutan una manera que puede persistir, permitiendo que otros entiendan las decisiones clave.
+Los comentarios proporcionan una buena manera consolidada para que los usuarios de AEM discutan una manera que puede persistir, lo que permite a otros comprender las decisiones clave.
 
 1. Desplácese hasta el canal para el que desee agregar un comentario.
 1. Seleccione el canal.
@@ -52,6 +52,7 @@ La información de la cronología se actualiza para indicar que se ha añadido e
 ### Guardar una versión {#saveversion}
 
 El control de versiones crea una &quot;captura de pantalla&quot; de un canal en un momento específico. Con las versiones, se pueden realizar las siguientes operaciones:
+
 * Cree una versión de un canal.
 * Restaurar un canal a una versión anterior; por ejemplo:
    * para deshacer un cambio realizado en la página.
@@ -123,7 +124,7 @@ Durante la creación, puede invocar flujos de trabajo para realizar acciones en 
 A la hora de aplicar el flujo de trabajo, se especifica la siguiente información:
 
 * Flujo de trabajo que se va a aplicar.
-* De forma opcional, un título que ayude a identificar la instancia de flujo de trabajo en la bandeja de entrada de un usuario.
+* De forma opcional, un título que ayude a identificar la instancia de flujo de trabajo en la bandeja de entrada del usuario.
 * La carga útil del flujo de trabajo.
 
 #### Inicio del flujo de trabajo

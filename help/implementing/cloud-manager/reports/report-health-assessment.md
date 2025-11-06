@@ -3,11 +3,11 @@ title: Evaluación del estado de los entornos de producción y ensayo
 description: Aprenda a utilizar la evaluación de estado de Cloud Manager. Puede analizar entornos de AEM, ejecutar y revisar informes, ver detalles del problema, exportar PDF y administrar ejecuciones anteriores.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1406'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -31,7 +31,7 @@ Consulte también [Patrones de evaluación de estado](#ha-patterns) para ver las
 
 ## Acceso a la página Evaluación de estado {#access-health-assessment}
 
-1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
+1. Inicie sesión en Cloud Manager en [experiece.adobe.com](https://experience.adobe.com).
 1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
 1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
 1. Seleccione la organización que desee. La siguiente imagen es para ilustrarla. Seleccione su propio nombre de organización.
@@ -126,11 +126,11 @@ A continuación se muestra la lista completa de antipatrones y problemas que la 
 | Nombre del patrón | Categoría | Tipo | Descripción | Impacto | ¿Auto-arreglado? |
 | --- | --- | --- | --- | --- | --- |
 | Grupos de AEM personalizados con adiciones de usuarios directos | Seguridad | Análisis de contenido | Los usuarios se agregan directamente a los grupos de AEM en lugar de agregar grupos de IMS como miembros. | La administración de permisos y la gobernanza de seguridad pueden complicarse. [Compatibilidad con IMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/ims-support) | No |
-| Falta el nodo de contenido JCR en las páginas | Estructura del repositorio | Análisis de contenido | Falta el nodo `jcr:content` en la página. | Limitaciones funcionales en Experience Manager as a Cloud Service. [Detección de patrones - ACV](https://experienceleague.adobe.com/es/docs/experience-manager-pattern-detection/table-of-contents/acv) | No |
-| Falta el tipo de medio de Sling en las páginas | Estructura del repositorio | Análisis de contenido | Falta `sling:resourceType` en la página. | Limitaciones funcionales en Experience Manager as a Cloud Service. [Detección de patrones - ACV](https://experienceleague.adobe.com/es/docs/experience-manager-pattern-detection/table-of-contents/acv) | No |
-| Páginas con recuento excesivo de nodos | Rendimiento | Análisis de contenido | Las páginas contienen un gran número de nodos en su estructura. | Tiempos de carga de la página lentos y mala experiencia del usuario. [Detección de patrones - PCX](https://experienceleague.adobe.com/es/docs/experience-manager-pattern-detection/table-of-contents/pcx) | No |
-| Demasiadas instancias de flujo de trabajo en ejecución | Rendimiento | Análisis de contenido | Se están ejecutando demasiadas instancias de flujo de trabajo. | Degradación general del rendimiento del sistema. [Tareas de mantenimiento](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/maintenance) | No |
-| Instancias de flujo de trabajo completadas sin depurar | Rendimiento | Análisis de contenido | Las instancias de flujo de trabajo completadas anteriores no se depuran. | Reducción de la eficacia del sistema y aumento de los costes de almacenamiento. [Tareas de mantenimiento](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/maintenance) | No |
+| Falta el nodo de contenido JCR en las páginas | Estructura del repositorio | Análisis de contenido | Falta el nodo `jcr:content` en la página. | Limitaciones funcionales en Experience Manager as a Cloud Service. [Detección de patrones - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | No |
+| Falta el tipo de medio de Sling en las páginas | Estructura del repositorio | Análisis de contenido | Falta `sling:resourceType` en la página. | Limitaciones funcionales en Experience Manager as a Cloud Service. [Detección de patrones - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | No |
+| Páginas con recuento excesivo de nodos | Rendimiento | Análisis de contenido | Las páginas contienen un gran número de nodos en su estructura. | Tiempos de carga de la página lentos y mala experiencia del usuario. [Detección de patrones - PCX](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | No |
+| Demasiadas instancias de flujo de trabajo en ejecución | Rendimiento | Análisis de contenido | Se están ejecutando demasiadas instancias de flujo de trabajo. | Degradación general del rendimiento del sistema. [Tareas de mantenimiento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) | No |
+| Instancias de flujo de trabajo completadas sin depurar | Rendimiento | Análisis de contenido | Las instancias de flujo de trabajo completadas anteriores no se depuran. | Reducción de la eficacia del sistema y aumento de los costes de almacenamiento. [Tareas de mantenimiento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) | No |
 | Estadísticas de uso de fragmentos de contenido | Estadísticas | Análisis de contenido | Registra el número de fragmentos de contenido en uso. | N/D | N/D |
 | Estadísticas de uso del modelo de fragmento de contenido | Estadísticas | Análisis de contenido | Registra el número de modelos de fragmento de contenido en uso. | N/D | N/D |
 | MSM: gran cantidad de modelos | Estadísticas | Análisis de contenido | Registra el número de modelos. | Puede aumentar la complejidad de la administración y dificultar la gobernanza del contenido. | N/A |

@@ -2,11 +2,11 @@
 title: Introducción a Edge Delivery Services para AEM Forms con el editor universal
 description: Aprenda a crear y publicar formularios de alto rendimiento con Edge Delivery Services con la creación de WYSIWYG en el editor universal.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2608'
 ht-degree: 100%
 
@@ -164,7 +164,7 @@ El archivo `fstab.yaml` conecta el repositorio de GitHub con el entorno de creac
    ```
 
    **Reemplazar:**
-   - `<aem-author>`: su URL de autor de AEM as a Cloud Service (por ejemplo, `author-p12345-e67890.adobeaemcloud.com`)
+   - `<aem-author>`: su URL del autor de AEM as a Cloud Service (por ejemplo, `author-p12345-e67890.adobeaemcloud.com`)
    - `<owner>`: su nombre de usuario u organización de GitHub
    - `<repository>`: el nombre de su repositorio
 
@@ -791,7 +791,7 @@ Si ve &quot;No se puede resolver la ruta al módulo &#39;/scripts/lib-franklin.j
 **Soluciones:**
 
 - Compruebe que AEM Code Sync está instalado y en ejecución
-- Compruebe que `fstab.yaml` tenga la dirección URL de autor de AEM correcta
+- Compruebe que `fstab.yaml` tenga la dirección URL del autor de AEM correcta
 - Asegúrese de que la instancia de AEM tenga habilitado el acceso anticipado
 - Confirmar que `component-definition.json` incluye componentes de formulario
 

@@ -4,7 +4,7 @@ description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Exp
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 79%
@@ -277,11 +277,13 @@ Cuando `CACHE_GRAPHQL_PERSISTED_QUERIES` está habilitado para Dispatcher, los p
 Para evitar esta situación:
 
    * Habilite `DispatcherNoCanonURL` en Dispatcher.
-Esto indicará a Dispatcher AEM que reenvíe la dirección URL original a la dirección URL, lo que evitará que se dupliquen las codificaciones.
+Esto indicará a Dispatcher que reenvíe la URL original a AEM para evitar codificaciones duplicadas.
 Sin embargo, esta configuración actualmente solo funciona en el nivel `vhost`, por lo que si ya tiene configuraciones de Dispatcher para reescribir direcciones URL (por ejemplo, al usar direcciones URL abreviadas), puede que necesite un `vhost` independiente para las direcciones URL de consultas persistentes.
 
    * Enviar `/` o `\` caracteres sin codificar.
-Al llamar a la dirección URL de la consulta persistente, asegúrese de que todos los caracteres `/` o `\` permanezcan sin codificar en el valor de las variables de consulta persistentes.
+
+     Al llamar a la dirección URL de la consulta persistente, asegúrese de que todos los caracteres `/` o `\` permanezcan sin codificar en el valor de las variables de consulta persistentes.
+
      >[!NOTE]
      >
      >Esta opción solo se recomienda cuando la solución `DispatcherNoCanonURL` no se puede implementar por algún motivo.

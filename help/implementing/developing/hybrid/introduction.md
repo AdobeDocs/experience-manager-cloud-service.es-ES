@@ -3,9 +3,9 @@ title: Introducción y tutorial de SPA
 description: Este artículo presenta los conceptos de un SPA y explica cómo usar una aplicación de SPA básica para la creación, mostrando cómo se relaciona con el Editor de SPA de AEM subyacente.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 93%
@@ -94,10 +94,12 @@ Al realizar el procesamiento en el lado del cliente, los elementos de página re
 >[!TIP]
 >
 >Para obtener detalles técnicos sobre cómo funcionan las SPA en AEM, consulte los artículos:
+>
 >* [Introducción a SPA en AEM usando React](getting-started-react.md)
 >* [Introducción a SPA en AEM usando Angular](getting-started-angular.md)
 >
 >Para obtener una vista más detallada del diseño, la arquitectura y el flujo de trabajo técnico del Editor de SPA, consulte el artículo:
+>
 >* [Información general del editor de SPA](editor-overview.md).
 
 ## Experiencia de edición de contenido con SPA {#content-editing-experience-with-spa}
@@ -223,7 +225,7 @@ En la siguiente sección analizaremos el contrato que permite al Editor de SPA r
 
    `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
-1. Con las herramientas de desarrollador incorporadas del explorador, inspeccione el contenido de la página. Usando la herramienta de selección, seleccione un componente editable en la página y vea los detalles del elemento.
+1. Con las herramientas de desarrollador integradas del explorador, inspeccione el contenido de la página. Usando la herramienta de selección, seleccione un componente editable en la página y vea los detalles del elemento.
 
    El componente tiene un nuevo atributo de datos `data-cq-data-path`.
 

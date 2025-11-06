@@ -3,9 +3,9 @@ title: Información general sobre Edge Delivery Services
 description: Descubra cómo AEM as a Cloud Service puede beneficiarse del rendimiento y las puntuaciones perfectas de Lighthouse que ofrecen los Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-role: Admin, Architect, Developer
-source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 100%
 
@@ -19,6 +19,7 @@ ht-degree: 100%
 >**¿Quiere ponerse manos a la obra de inmediato?**
 >
 >Si desea ponerse en contacto con Edge Delivery Services de inmediato, tiene dos opciones.
+>
 >* [Empiece a crear de inmediato con un entorno de tutoriales prediseñado, completamente configurado y listo para usar.](https://www.aem.live/developer/ue-trial)
 >* Profundice en los detalles y configure su propio entorno en menos de 30 minutos [consultando el tutorial en aem.live.](https://www.aem.live/developer/ue-tutorial)
 

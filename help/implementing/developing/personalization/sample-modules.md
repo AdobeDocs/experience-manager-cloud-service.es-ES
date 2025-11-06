@@ -3,8 +3,8 @@ title: Tipos de módulos de IU de muestra de ContextHub
 description: ContextHub proporciona varios módulos de IU de ejemplo que puede utilizar en sus soluciones
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 1%

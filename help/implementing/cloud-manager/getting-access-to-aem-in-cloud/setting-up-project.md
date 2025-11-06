@@ -1,11 +1,11 @@
 ---
 title: Configuración del proyecto
-description: AEM Conozca cómo se crean los proyectos de con Maven y los estándares que debe observar al crear su propio proyecto.
+description: Descubra cómo se crean los proyectos de AEM con Maven y los estándares que debe observar al crear su propio proyecto.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 68%
@@ -14,11 +14,11 @@ ht-degree: 68%
 
 # Configuración del proyecto {#project-setup}
 
-AEM Conozca cómo se crean los proyectos de con Maven y los estándares que debe observar al crear su propio proyecto.
+Descubra cómo se crean los proyectos de AEM con Maven y los estándares que debe observar al crear su propio proyecto.
 
 ## Detalles de configuración del proyecto {#project-setup-details}
 
-Para generar e implementar proyectos correctamente con Cloud Manager AEM, es necesario que se cumplan las siguientes directrices:
+Para generar e implementar proyectos correctamente con Cloud Manager, AEM debe cumplir las siguientes directrices:
 
 * Los proyectos deben crearse con [Apache Maven](https://maven.apache.org).
 * Debe haber un archivo `pom.xml` en la raíz del repositorio de Git. El archivo `pom.xml` puede hacer referencia a tantos submódulos (que a su vez pueden tener otros submódulos) como sea necesario.
@@ -70,7 +70,7 @@ Por ejemplo, si desea que salga un mensaje simple cuando la generación se ejecu
 
 >[!NOTE]
 >
->Para probar este perfil en una estación de trabajo de desarrolladores, puede activarlo en la línea de comandos (con `-PcmBuild`) o en su entorno de desarrollo integrado (IDE).
+>Para probar este perfil en una estación de trabajo de desarrolladores, puede habilitarlo en la línea de comandos (con `-PcmBuild`) o en su entorno de desarrollo integrado (IDE).
 
 Y si desea que salga un mensaje simple cuando la generación se ejecuta solamente fuera de Cloud Manager, debe hacer lo siguiente:
 
@@ -110,7 +110,7 @@ Y si desea que salga un mensaje simple cuando la generación se ejecuta solament
 
 >[!NOTE]
 >
->Implemente los artefactos de repositorios Maven protegidos por contraseña con cuidado, ya que Cloud Manager no evalúa este código con sus [reglas de calidad del código](/help/implementing/cloud-manager/custom-code-quality-rules.md). AEM Este método debe reservarse para situaciones excepcionales y aplicarse únicamente a código no relacionado con la. El Adobe recomienda incluir las fuentes Java y todo el código fuente del proyecto junto con el binario. Al hacerlo, se garantiza una mayor transparencia y mantenimiento a lo largo del proceso de implementación.
+>Implemente los artefactos de repositorios Maven protegidos por contraseña con cuidado, ya que Cloud Manager no evalúa este código con sus [reglas de calidad del código](/help/implementing/cloud-manager/custom-code-quality-rules.md). Este método debe reservarse para situaciones excepcionales y aplicarse únicamente a código no relacionado con AEM. Adobe recomienda incluir las fuentes Java y todo el código fuente del proyecto junto con el binario. Al hacerlo, se garantiza una mayor transparencia y mantenimiento a lo largo del proceso de implementación.
 
 **Para usar un repositorio Maven protegido por contraseña en Cloud Manager:**
 

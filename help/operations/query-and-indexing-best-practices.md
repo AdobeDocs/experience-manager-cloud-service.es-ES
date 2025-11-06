@@ -5,9 +5,9 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3088'
+source-wordcount: '3086'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Además, al diseñar una taxonomía, es importante tener en cuenta si la ordenac
 
 ### Consultas en componentes {#queries-in-components}
 
-AEM Dado que las consultas pueden ser una de las operaciones más gravosas realizadas en un sistema de, es aconsejable evitarlas en los componentes. Tener varias consultas ejecutándose cada vez que se procesa una página puede a menudo degradar el rendimiento del sistema. Hay dos estrategias que se pueden usar para evitar la ejecución de consultas al procesar componentes: **[nodos de recorrido](#traversing-nodes)** y **[resultados de recuperación previa](#prefetching-results)**.
+Dado que las consultas pueden ser una de las operaciones más gravosas realizadas en un sistema de AEM, es aconsejable evitarlas en los componentes. Tener varias consultas ejecutándose cada vez que se procesa una página puede a menudo degradar el rendimiento del sistema. Hay dos estrategias que se pueden usar para evitar la ejecución de consultas al procesar componentes: **[nodos de recorrido](#traversing-nodes)** y **[resultados de recuperación previa](#prefetching-results)**.
 
 ### Recorrido de nodos {#traversing-nodes}
 
@@ -69,7 +69,7 @@ AEM as a Cloud Service proporciona la [Herramienta de rendimiento de consultas](
 * Muestra las consultas ya ejecutadas con sus características de rendimiento relevantes y el plan de consulta.
 * Permite realizar consultas ad hoc en varios niveles, desde mostrar el plan de la consulta hasta ejecutar la consulta completa.
 
-Se puede acceder a la herramienta de rendimiento de consultas a través de [Developer Console en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries). La herramienta de rendimiento de consultas de AEM as a Cloud Service AEM ofrece más información sobre los detalles de la ejecución de consultas a lo largo de la versión 6.x de la misma en la que se ejecuta la consulta de la manera más sencilla posible.
+Se puede acceder a la herramienta de rendimiento de consultas a través de [Developer Console en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries). La herramienta de rendimiento de consultas de AEM as a Cloud Service ofrece más información sobre los detalles de la ejecución de consultas en la versión de AEM 6.x.
 
 Este gráfico ilustra el flujo general para utilizar la herramienta de rendimiento de consultas para optimizar las consultas.
 
@@ -112,6 +112,7 @@ Consulte la sección [Consultas con grandes conjuntos de resultados](#queries-wi
 ## Herramienta de rendimiento de consultas {#query-performance-tool}
 
 La herramienta de rendimiento de consultas (ubicada en `/libs/granite/operations/content/diagnosistools/queryPerformance.html` y disponible a través de [Developer Console en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=es#queries)) proporciona:
+
 * Una lista de cualquier &quot;Consulta lenta&quot;; definida actualmente como aquellas que leen o analizan más de 5000 filas.
 * Una lista de &#39;Consultas populares&#39;
 * La herramienta &quot;Explicar consulta&quot; para comprender cómo Oak ejecutará una consulta en particular.
@@ -119,6 +120,7 @@ La herramienta de rendimiento de consultas (ubicada en `/libs/granite/operations
 ![Herramienta de rendimiento de consultas](assets/query-performance-tool.png)
 
 Las tablas &quot;Consultas lentas&quot; y &quot;Consultas populares&quot; incluyen:
+
 * La propia instrucción de consulta.
 * Detalles del último subproceso que ejecutó la consulta, lo que permite identificar la página o función de la aplicación que ejecuta la consulta.
 * Una puntuación de &quot;Optimización de lectura&quot; para la consulta.
@@ -155,6 +157,7 @@ Para explicar una consulta, haga lo siguiente:
 
 Después de seleccionar `Explain`, aparece una ventana emergente que describe el resultado de la explicación de la consulta (y la ejecución, si está seleccionada).
 Esta ventana emergente incluye detalles de lo siguiente:
+
 * Los índices utilizados al ejecutar la consulta (o ningún índice si la consulta se ejecutaría usando [Recorrido del repositorio](#repository-traversal)).
 * El tiempo de ejecución (si se marcó la casilla de verificación `Include Execution Time`) y el recuento de resultados leídos (si se marcaron las casillas de verificación `Read first page of results` o `Include Node Count`).
 * El plan de ejecución, que permite un análisis detallado de cómo se ejecuta la consulta. Consulte [Leyendo el plan de ejecución de la consulta](#reading-query-execution-plan) para saber cómo interpretar esto.
@@ -172,6 +175,7 @@ Tenga en cuenta la siguiente consulta:
 ```
 
 ... que contiene -
+
 * 3 restricciones
    * Tipo de nodo (`dam:Asset`)
    * Ruta (descendientes de `/content/dam`)
@@ -191,11 +195,12 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 Esta sección del plan establece que:
+
 * Se utiliza un índice para ejecutar esta consulta:
    * En este caso, se utilizará el índice Lucene `/oak:index/damAssetLucene-9`, por lo que el resto de la información se encuentra en Sintaxis de consultas de Lucene.
 * Las 3 restricciones se gestionan mediante el índice:
    * La restricción del tipo de nodo
-      * implícito, ya que `damAssetLucene-9` solo indexa nodos de tipo dam:Asset.
+      * implícito, porque `damAssetLucene-9` solo indiza nodos de tipo dam:Asset.
    * La restricción de ruta
       * porque `+:ancestors:/content/dam` aparece en la consulta de Lucene.
    * La restricción de propiedad
@@ -212,6 +217,7 @@ Consideración de una consulta diferente:
 ```
 
 ... que contiene -
+
 * 3 restricciones
    * Tipo de nodo (`dam:Asset`)
    * Ruta (descendientes de `/content/dam`)
@@ -231,9 +237,10 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 ```
 
 Esta sección del plan establece que:
+
 * Solo 2 (de las 3) restricciones son manejadas por el índice -
    * La restricción del tipo de nodo
-      * implícito, ya que `damAssetLucene-9` solo indexa nodos de tipo dam:Asset.
+      * implícito, porque `damAssetLucene-9` solo indiza nodos de tipo dam:Asset.
    * La restricción de ruta
       * porque `+:ancestors:/content/dam` aparece en la consulta de Lucene.
 * La restricción de propiedad `jcr:content/metadata/myProperty = "My Property Value"` no se ejecuta en el índice, sino que se aplicará como filtrado del motor de consulta en los resultados de la consulta de Lucene subyacente.
@@ -255,9 +262,9 @@ Para optimizar el rendimiento de esta segunda consulta, cree una versión person
 
 ## Hoja de características clave de consulta JCR {#jcr-query-cheatsheet}
 
-Para admitir la creación de consultas JCR y definiciones de índice eficientes, la [Hoja de referencia de consultas JCR](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=es#jcrquerycheatsheet) está disponible para su descarga y uso como referencia durante el desarrollo.
+Para admitir la creación de consultas JCR y definiciones de índice eficientes, la [Hoja de referencia de consultas JCR](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet) está disponible para su descarga y uso como referencia durante el desarrollo.
 
-Contiene consultas de ejemplo para QueryBuilder, XPath y SQL-2, que cubren varios escenarios que se comportan de forma diferente en términos de rendimiento de la consulta. También proporciona recomendaciones sobre cómo crear o personalizar índices de Oak. El contenido de esta hoja de referencia se aplica a AEM as a Cloud Service AEM y a la versión 6 5.
+Contiene consultas de ejemplo para QueryBuilder, XPath y SQL-2, que cubren varios escenarios que se comportan de forma diferente en términos de rendimiento de la consulta. También proporciona recomendaciones sobre cómo crear o personalizar índices de Oak. El contenido de esta hoja de referencia se aplica a AEM as a Cloud Service y AEM 6.5.
 
 ## Prácticas recomendadas de definición de índice {#index-definition-best-practices}
 
@@ -284,7 +291,7 @@ Las comprobaciones automatizadas de canalización de Cloud Manager aplicarán al
 
 Aunque se recomienda evitar consultas con grandes conjuntos de resultados, hay casos válidos en los que deben procesarse grandes conjuntos de resultados. A menudo, el tamaño del resultado no se conoce por adelantado, por lo que se deben tomar algunas precauciones para que el procesamiento sea fiable.
 
-* La consulta no debe ejecutarse dentro de una solicitud. AEM En su lugar, la consulta debe ejecutarse como parte de un trabajo de Sling o de un flujo de trabajo de. No tienen limitaciones en su tiempo de ejecución total y se reinician en caso de que la instancia se desactive durante el procesamiento de la consulta y sus resultados.
+* La consulta no debe ejecutarse dentro de una solicitud. En su lugar, la consulta debe ejecutarse como parte de un trabajo de Sling o de un flujo de trabajo de AEM. No tienen limitaciones en su tiempo de ejecución total y se reinician en caso de que la instancia se desactive durante el procesamiento de la consulta y sus resultados.
 * Para superar el límite de consultas de 100 000 nodos, debería considerar la posibilidad de usar [Paginación del conjunto de claves](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) y dividir la consulta en varias subconsultas.
 
 ## Recorrido del repositorio {#repository-traversal}

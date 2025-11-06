@@ -3,8 +3,8 @@ title: Fragmentos de contenido Configurar componentes para procesamiento
 description: Fragmentos de contenido Configurar componentes para procesamiento
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 5%
@@ -22,7 +22,7 @@ Esta información es necesaria cuando:
 * Debe implementar su propio componente basado en fragmentos de contenido,
 * Y necesita usar los servicios avanzados.
 
-El Adobe recomienda utilizar los componentes principales.
+Adobe recomienda utilizar los componentes principales.
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ La configuración de OSGi es:
  </thead>
  <tbody>
   <tr>
-   <td><strong>Tipo de medio</strong></td>
+   <td><strong>Tipo de recurso</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
    <td>El tipo de recurso que se va a registrar; por ejemplo, <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
@@ -134,9 +134,9 @@ Para algunas funciones, el componente deberá adherirse a las convenciones prede
  </tbody>
 </table>
 
-## Ejemplos {#example}
+## Ejemplo {#example}
 
-AEM Por ejemplo, consulte lo siguiente (en una instancia de aplicación predeterminada de la interfaz de usuario de la interfaz de usuario de la aplicación de configuración de la aplicación de configuración de la aplicación de configuración de la aplicación):
+Por ejemplo, consulte lo siguiente (en una instancia de AEM predeterminada):
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config

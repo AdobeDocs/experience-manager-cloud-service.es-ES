@@ -3,9 +3,9 @@ title: Información general sobre Edge Delivery Services para AEM Forms
 description: Cree y envíe formularios de alto rendimiento en Adobe Experience Manager Edge Delivery Services, haciendo énfasis en el enfoque de creación del editor universal.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-role: Admin, Architect, Developer
-source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ Al final, podrá elegir el método de creación adecuado, comprender las opcione
 ### Editor universal
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) es una herramienta visual de creación de tipo arrastrar y soltar para los expertos en marketing y los diseñadores que combina la velocidad con la potencia de nivel empresarial:

@@ -5,15 +5,15 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '4303'
+source-wordcount: '4302'
 ht-degree: 2%
 
 ---
 
-# Configuración de los complementos del Editor de texto enriquecido {#configure-the-rich-text-editor-plug-ins}
+# Configuración de los complementos del editor de texto enriquecido {#configure-the-rich-text-editor-plug-ins}
 
 Las funcionalidades de RTE están disponibles a través de una serie de complementos, cada uno con la propiedad features. Puede configurar la propiedad features para activar o desactivar una o varias funciones RTE. Este artículo describe cómo configurar específicamente los complementos RTE.
 
@@ -21,7 +21,7 @@ Para obtener más información sobre las otras configuraciones de RTE, consulte 
 
 >[!NOTE]
 >
->Al trabajar con el CRXDE Lite, se recomienda guardar los cambios con regularidad usando la opción [!UICONTROL Guardar todo].
+>Al trabajar con CRXDE Lite, se recomienda guardar los cambios con regularidad usando la opción [!UICONTROL Guardar todo].
 
 ## Activar un complemento y configurar la propiedad features {#activateplugin}
 
@@ -64,7 +64,7 @@ Después de activar un complemento, siga estas instrucciones para configurar la 
 | | Habilitar todas las funciones | Active algunas funciones específicas. | Deshabilite todas las funciones. |
 |---|---|---|---|
 | Nombre | características | características | características |
-| Tipo | Cadena | `String` (varias cadenas; establezca el Tipo en `String` y haga clic en `Multi` en el CRXDE Lite) | Cadena |
+| Tipo | Cadena | `String` (varias cadenas; establezca el Tipo en `String` y haga clic en `Multi` en CRXDE Lite) | Cadena |
 | Valor | `*` (un asterisco) | Defina uno o más valores de función. | - |
 
 ## Comprensión del complemento findreplace {#findreplace}
@@ -134,7 +134,7 @@ En el caso de los vínculos, también puede definir los protocolos que se acepta
 Para configurar qué formatos se permiten al pegar texto en [!DNL Experience Manager] desde otro programa:
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/edit`. Cree los nodos si el nodo no existe. Para obtener más información, consulte [activar un complemento](#activateplugin).
-1. Cree un nodo bajo el nodo `edit` para mantener las reglas de pegado de HTML:
+1. Cree un nodo bajo el nodo `edit` para guardar las reglas de pegado de HTML:
 
    * **Nombre** `htmlPasteRules`
    * **Tipo** `nt:unstructured`
@@ -243,7 +243,7 @@ A continuación, especifique las ubicaciones de las hojas de estilos a las que d
 
 1. Guarde todos los cambios.
 
-Al utilizar RTE en un cuadro de diálogo (IU clásica) Puede especificar hojas de estilo optimizadas para la edición de texto enriquecido. Debido a restricciones técnicas, el contexto CSS se pierde en el editor, por lo que puede emular este contexto para mejorar la experiencia WYSIWYG.
+Al utilizar RTE en un cuadro de diálogo (IU clásica) Puede especificar hojas de estilo optimizadas para la edición de texto enriquecido. Debido a restricciones técnicas, el contexto CSS se pierde en el editor, por lo que puede emular este contexto para mejorar la experiencia de WYSIWYG.
 
 El Editor de texto enriquecido utiliza un elemento DOM contenedor con un identificador de `CQrte` que proporciona diferentes estilos para ver y editar:
 
@@ -436,7 +436,7 @@ Puede configurar el RTE para que la selección de caracteres esté disponible; y
 
    * **Nombre** `entity`
    * **Tipo** `String`
-   * **Valor** representa el HTML del carácter requerido; por ejemplo, `&189;` para la fracción de la mitad.
+   * **Valor** representa en HTML el carácter requerido; por ejemplo, `&189;` para la fracción de la mitad.
 
 1. Guarde los cambios.
 
@@ -455,12 +455,10 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. C
 1. Bajo este nodo (denominado según su intervalo especial de caracteres), agregue las dos propiedades siguientes:
 
    * **Nombre** `rangeStart`
-
      **Tipo** `Long`
      **Value** representa [Unicode](https://unicode.org/) (decimal) del primer carácter del intervalo
 
    * **Nombre** `rangeEnd`
-
      **Tipo** `Long`
      **Valor**: la representación [Unicode](https://unicode.org/) (decimal) del último carácter del intervalo
 
@@ -500,8 +498,8 @@ Los estilos suelen aplicarse en el texto, pero también se puede aplicar un conj
    >* **Tipo** `String[]`
    >
    >* **Valor** uno o ambos de los siguientes, según sea necesario:
-   >* `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
-   >* `cellprops` para permitir la edición de propiedades de celda, incluidos los estilos.
+   >   * `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
+   >   * `cellprops` para permitir la edición de propiedades de celda, incluidos los estilos.
 
 1. Defina la ubicación de las hojas de estilos CSS para hacer referencia a ellas. Consulte [Especificación de la ubicación de la hoja de estilos](#locationofstylesheet), ya que es lo mismo que al definir [estilos para texto](#textstyles). La ubicación puede definirse si ha definido otros estilos.
 1. En el nodo `table`, cree los siguientes nodos según sea necesario:
@@ -565,7 +563,7 @@ Cuando se activa el complemento corrector ortográfico, RTE utiliza diccionarios
 >
 >El mensaje &quot;Fallo en la revisión ortográfica&quot;. se ve si se prueba una comprobación para un idioma que no está instalado.
 
-Una instalación de Experience Manager estándar incluye los diccionarios para:
+Una instalación estándar de Experience Manager incluye los diccionarios para:
 
 * Inglés (en_us)
 * Inglés británico (en_gb)

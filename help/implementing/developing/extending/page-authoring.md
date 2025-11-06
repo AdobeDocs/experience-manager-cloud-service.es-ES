@@ -3,11 +3,11 @@ title: Personalización de la creación de páginas
 description: Obtenga información sobre los mecanismos que proporciona AEM as a Cloud Service para personalizar la funcionalidad de creación de páginas.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 3%
+source-wordcount: '936'
+ht-degree: 4%
 
 ---
 
@@ -30,7 +30,7 @@ Ver [Uso de bibliotecas del lado del cliente en AEM as a Cloud Service](/help/im
 
 Las superposiciones se basan en definiciones de nodo y le permiten superponer la funcionalidad estándar de `/libs` con su propia funcionalidad personalizada en `/apps`.
 
-Al crear una superposición, no se requiere una copia individual del original, ya que la [fusión de recursos de sling](/help/implementing/developing/introduction/sling-resource-merger.md) permite la herencia.
+Al crear una superposición, no se requiere una copia 1:1 del original, ya que la [fusión de recursos de sling](/help/implementing/developing/introduction/sling-resource-merger.md) permite la herencia.
 
 Para obtener más información, consulte [Conjunto de documentación de JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
@@ -38,11 +38,11 @@ Para obtener más información sobre las superposiciones, consulte [Superposicio
 
 ## Añadir nueva capa (modo) {#add-new-layer-mode}
 
-Cuando está editando una página, hay varios [modos](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) disponibles. Estos modos se implementaron usando [layers](/help/implementing/developing/introduction/ui-structure.md#layer). Permiten acceder a diferentes tipos de funcionalidades para el mismo contenido de página. AEM Los modos estándar incluyen Edición, Diseño, Desarrollador, Deformación de tiempo, Estado de Live Copy y Segmentación.
+Cuando está editando una página, hay varios [modos](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) disponibles. Estos modos se implementaron usando [layers](/help/implementing/developing/introduction/ui-structure.md#layer). Permiten acceder a diferentes tipos de funcionalidades para el mismo contenido de página. Los modos de AEM estándar incluyen Edición, Diseño, Desarrollador, Deformación de tiempo, Estado de Live Copy y Segmentación.
 
 ### Ejemplo de capa: estado de Live Copy {#layer-example-live-copy-status}
 
-AEM Una instancia de estándar proporciona la capa de MSM. Esto accede a los datos relacionados con la [administración de varios sitios](/help/sites-cloud/administering/msm/overview.md) y los resalta en la capa.
+Una instancia estándar de AEM proporciona la capa MSM. Esto accede a los datos relacionados con la [administración de varios sitios](/help/sites-cloud/administering/msm/overview.md) y los resalta en la capa.
 
 Para verlo en acción, puede editar cualquier copia de idioma en el [contenido de muestra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) y seleccionar el modo **Estado de Live Copy**.
 
@@ -135,7 +135,7 @@ A continuación se muestra un ejemplo de definición de relaciones de aspecto pa
 
 >[!NOTE]
 >
->AEM Las proporciones de recorte de la propiedad `ratio` se definen como **altura/anchura**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios autores no notarán ninguna diferencia siempre que defina claramente la propiedad `name`, ya que esto es lo que se muestra en la interfaz de usuario.
+>Las proporciones de recorte de AEM establecidas por la propiedad `ratio` se definen como **altura/anchura**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios autores no notarán ninguna diferencia siempre que defina claramente la propiedad `name`, ya que esto es lo que se muestra en la interfaz de usuario.
 
 #### Creación de un nuevo editor in situ {#creating-a-new-in-place-editor}
 
@@ -154,7 +154,7 @@ Para implementar un nuevo editor in situ (dentro de la clientlib):
 
 #### Ejemplo de código para crear un nuevo editor en contexto {#code-sample-for-creating-a-new-in-place-editor}
 
-AEM `aem-authoring-extension-inplace-editor` es un paquete de muestra que muestra cómo crear un editor local en el sitio de la aplicación de la.
+`aem-authoring-extension-inplace-editor` es un paquete de muestra que muestra cómo crear un editor local en AEM.
 
 Puedes encontrar el código de esta página en [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor).
 

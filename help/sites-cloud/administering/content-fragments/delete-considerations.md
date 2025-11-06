@@ -2,10 +2,10 @@
 title: 'Fragmentos de contenido: Eliminar consideraciones'
 description: Revise estas consideraciones importantes antes de definir las políticas de eliminación de fragmentos de contenido en AEM. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse detenidamente.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 46%
@@ -14,7 +14,7 @@ ht-degree: 46%
 
 # Eliminar consideraciones para fragmentos de contenido {#delete-considerations-content-fragments}
 
-AEM Revise estas consideraciones importantes antes de definir las políticas de eliminación para los fragmentos de contenido en la lista de elementos que se van a. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse detenidamente.
+Revise estas consideraciones importantes antes de definir las políticas de eliminación para los fragmentos de contenido en AEM. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse detenidamente.
 
 ## Permisos: Eliminar o no eliminar {#permissions-delete-or-not-delete}
 
@@ -36,7 +36,7 @@ En relación con los permisos de eliminación, los fragmentos de contenido deben
 
 >[!NOTE]
 >
->AEM Consulte también Cómo auditar las operaciones de administración de usuarios en la sección de administración de usuarios de la.
+>Consulte también Cómo auditar las operaciones de administración de usuarios en AEM.
 
 ## Permisos necesarios para la funcionalidad del editor únicamente {#permissions-required-for-editor-functionality-only}
 

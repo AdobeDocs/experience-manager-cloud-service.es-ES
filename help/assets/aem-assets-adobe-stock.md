@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2208'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -16,10 +16,10 @@ ht-degree: 4%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
-El servicio [!DNL Adobe Stock] proporciona a diseñadores y empresas acceso a millones de fotografías, vectores, ilustraciones, vídeos, plantillas y recursos 3D de alta calidad, depurados y libres de derechos para todos sus proyectos creativos.
+El servicio [!DNL Adobe Stock] proporciona a diseñadores y empresas acceso a millones de fotos, vectores, ilustraciones, vídeos, plantillas y recursos 3D de alta calidad, depurados y libres de derechos para todos sus proyectos creativos.
 
 [!DNL Adobe Stock] para la oferta empresarial, de forma predeterminada, incluye derechos de uso compartido en toda la organización. Una vez que un usuario de la organización ha concedido una licencia a un recurso, otros usuarios de la organización pueden identificar, descargar y utilizar este recurso sin tener que volver a obtener la licencia. Una vez que su organización ha concedido una licencia a un recurso, el derecho a utilizarlo es perpetuo.
 
@@ -200,11 +200,12 @@ To configure the IMS account:
 -->
 
 1. [Configurar un programa en  [!DNL Developer Console]](#set-up-a-program-in-developer-console)
-1. [Agregar configuración en la instancia de autor  [!DNL AEM] &#x200B;](#add-configuration-in-the-aem-author-instance)
+1. [Agregar configuración en la instancia de autor  [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
 
 ### Configurar un programa en [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
 Ejecute los siguientes pasos para configurar un programa en [!DNL Developer Console]:
+
 1. Vaya a [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/14431/user/servicesandapis) e inicie sesión en su organización.
 1. Seleccione **[!UICONTROL Crear nuevo proyecto]** disponible en el tablero **[!UICONTROL Proyectos]**.
    ![integrar aem assets con adobe stock](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
@@ -212,8 +213,11 @@ Ejecute los siguientes pasos para configurar un programa en [!DNL Developer Cons
 1. Seleccione **[!UICONTROL Adobe Stock]** y haga clic en **[!UICONTROL Siguiente]**.
 1. Especifique un **[!UICONTROL nombre de credencial]**, compruebe que está seleccionado **[!UICONTROL Servidor a servidor OAuth]** y haga clic en **[!UICONTROL Siguiente]**.
 1. Seleccione **[!UICONTROL AEM Assets]** **[!UICONTROL Perfil del producto]** y haga clic en **[!UICONTROL Guardar la API configurada]**. Aparece un mensaje de confirmación para confirmar que creó un proyecto en [!DNL Developer Console]. Se abre el tablero del proyecto, con el nombre del proyecto en la parte superior, **[!UICONTROL Adobe Stock]** en **[!UICONTROL API]** y **[!UICONTROL AEM Assets]** en **[!UICONTROL Perfil del producto]** y la tarjeta de credenciales de **[!UICONTROL OAuth de servidor a servidor]** en **[!UICONTROL Credenciales conectadas]**.
+
    ![integrar aem assets y adobe stock](/help/assets/assets/adc-project-name.png)
+
 1. Seleccione la tarjeta de credenciales **[!UICONTROL OAuth Server-to-Server]** y se mostrarán los **[!UICONTROL detalles de credenciales]**. Use estos [!DNL OAuth Server-to-Server] detalles de credenciales de su proyecto, como **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto de cliente]**, **[!UICONTROL Ámbito]**, **[!UICONTROL Nombre de credencial]**, **[!UICONTROL ID de cuenta técnica]**, **[!UICONTROL ID de organización]** para [agregar configuración en la instancia de autor de AEM](#add-configuration-in-the-aem-author-instance).
+
    ![recursos aem y adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
 ### Agregar configuración en la instancia de autor [!DNL AEM] {#add-configuration-in-the-aem-author-instance}
@@ -226,21 +230,21 @@ Ejecute los siguientes pasos para agregar la configuración en su instancia de a
 #### Configurar un(a) nuevo(a) [!DNL Adobe Stock IMS configuration] en su instancia [!DNL AEM author] {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
 
 Ejecute los siguientes pasos para configurar un nuevo [!DNL Adobe Stock IMS configuration] en su instancia de autor de [!DNL AEM]:
+
 1. Vaya a la instancia de autor [!DNL AEM].
 1. Haga clic en ![recursos de AEM y Adobe Stock](/help/assets/assets/Hammer.svg), seleccione **[!UICONTROL Seguridad]** y **[!UICONTROL Configuraciones de IMS de Adobe]**.
 1. Haga clic en **[!UICONTROL Crear]** para crear una nueva configuración de IMS. La página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]** muestra varios campos, como **[!UICONTROL Solución en la nube]**, **[!UICONTROL Título]**, **[!UICONTROL Servidor de autorización]**, **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto de cliente]**, **[!UICONTROL Ámbito]** e **[!UICONTROL ID de organización]**. Siga estas instrucciones para especificar los detalles en estos campos:
+
    * **[!UICONTROL Solución de nube]**: Seleccione **[!UICONTROL Adobe Stock]**.
    * **[!UICONTROL Título]**: especifique un nombre para esta integración.
    * **[!UICONTROL Servidor de autorización]**: Agregue [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/) como servidor de autorización.
    * **[!UICONTROL ID de cliente]**: vaya al panel del proyecto, haga clic en la opción **[!UICONTROL Servidor a servidor OAuth]**, disponible en el panel izquierdo, seleccione **[!UICONTROL Detalles de credencial]**, copie el **[!UICONTROL ID de cliente]** y péguelo aquí (consulte [paso 7](#set-up-a-program-in-developer-console)).
-
    * **[!UICONTROL Secreto de cliente]**: Vaya al panel del proyecto, haga clic en la opción **[!UICONTROL Servidor a servidor OAuth]**, disponible en el panel izquierdo, seleccione **[!UICONTROL Detalles de credencial]**, haga clic en **[!UICONTROL Recuperar secreto de cliente]**, copie el **[!UICONTROL secreto de cliente]** y péguelo aquí (consulte [paso 7](#set-up-a-program-in-developer-console)).
-
    * **[!UICONTROL Ámbito]**: vaya al panel del proyecto, haga clic en la opción **[!UICONTROL Servidor a servidor OAuth]**, disponible en el panel izquierdo, seleccione **[!UICONTROL Detalles de credencial]**, copie el **[!UICONTROL Ámbito]** y péguelo aquí (consulte [paso 7](#set-up-a-program-in-developer-console)).
-
    * **[!UICONTROL ID de organización]**: vaya al panel del proyecto, haga clic en la opción **[!UICONTROL Servidor a servidor de OAuth]**, disponible en el panel izquierdo, seleccione **[!UICONTROL Detalles de credencial]**, copie el **[!UICONTROL ID de organización]** y péguelo aquí (consulte [paso 7](#set-up-a-program-in-developer-console)).
 
-     ![recursos aem y adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
+   ![recursos aem y adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
+
 1. Haga clic en **[!UICONTROL Crear]**, se abrirá la página **[!UICONTROL Configuraciones de IMS de Adobe]** y se mostrará la integración de [!DNL Adobe Stock] que ha creado.
 
 #### Agregar la configuración de nube para conectarse a [!DNL Adobe Stock] {#add-cloud-configuration-to-connect-adobe-stock}
@@ -249,12 +253,17 @@ Ejecute los siguientes pasos para agregar la configuración de nube para conecta
 
 1. Vaya a la instancia de [!DNL AEM author].
 1. Haga clic en ![aem assets y Adobe Stock](/help/assets/assets/Hammer.svg), seleccione **[!UICONTROL Cloud Services]**, examine y seleccione **[!UICONTROL Adobe Stock]**.
+
    ![usando adobe stock con aem](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)
+
 1. Haga clic en **[!UICONTROL Crear]** y la página **[!UICONTROL Configuración de Adobe Stock]** mostrará varios campos. Siga estas instrucciones para especificar los detalles en estos campos:
+
    * **[!UICONTROL Título]**: vaya a la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]** (consulte el [paso 3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)), copie el título y péguelo aquí.
    * **[!UICONTROL Configuración de Adobe IMS asociada]**: seleccione la integración [!DNL Adobe Stock] que creó.
    * **[!UICONTROL Configuración regional]**: seleccione **[!UICONTROL Inglés (Estados Unidos)]**.
+
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
+
    ![usando adobe stock con aem](/help/assets/assets/adobe-stock-config-page.png)
 
 <!--
@@ -276,6 +285,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 1. Click **[!UICONTROL Save & Close]**. 
 -->
+
 Su instancia de autor de [!DNL Experience Manager Assets] ahora está integrada con [!DNL Adobe Stock]. Puede crear varias configuraciones de [!DNL Adobe Stock] (por ejemplo, configuraciones basadas en la configuración regional). Ahora puede obtener acceso, buscar y obtener una licencia de los recursos de [!DNL Adobe Stock] desde la interfaz de usuario de [!DNL Experience Manager].
 
 ![search-stock-assets](assets/aem-stock-searchstocks.png)
@@ -368,7 +378,7 @@ En la tabla siguiente se explica cómo funcionan los permisos de usuario al obte
 
 | Usuario | Grupo | Permisos | Aceptar configuración de Stock en Preferencias de usuario | Acceso a Assets | Acceso a Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
-| administrador | N/D | Todos | N/D | Sí | Sí |
+| administrador | N/A | Todos | N/A | Sí | Sí |
 | test-doc1 | Usuario DAM | /conf/global/settings/stock/cloud-config | Sí | Sí | Sí |
 | test-doc1 | Usuario DAM | /conf/global/settings/stock/cloud-config | No | Error: Error al cargar los datos | No |
 | test-doc1 | Usuario DAM | **permitir**: /conf/global/settings/stock **denegar**: /cloud-config | La configuración de Stock no es visible | Sí | No |
@@ -525,6 +535,6 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 >[!MORELIKETHIS]
 >
->* [Tutorial de vídeo sobre el uso de recursos de Adobe Stock con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=es)
->* [Ayuda del plan empresarial de Adobe Stock](https://helpx.adobe.com/es/enterprise/using/adobe-stock-enterprise.html)
->* [Preguntas frecuentes sobre Adobe Stock](https://helpx.adobe.com/es/stock/faq.html)
+>* [Tutorial de vídeo sobre el uso de recursos de Adobe Stock con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Ayuda del plan empresarial de Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Preguntas frecuentes sobre Adobe Stock](https://helpx.adobe.com/stock/faq.html)

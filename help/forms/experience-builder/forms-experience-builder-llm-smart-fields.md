@@ -4,14 +4,14 @@ description: Aprenda a crear campos de formulario inteligentes con opciones rell
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 0%
+ht-degree: 24%
 
 ---
-
 
 # Campos inteligentes mejorados con LLM en Forms Experience Builder {#llm-enhanced-smart-fields}
 
@@ -47,10 +47,10 @@ Cree campos basados en la ubicación con datos geográficos completos e informac
 
 **Aeropuertos internacionales con códigos IATA:**
 
-    Agregue un menú desplegable para los aeropuertos de salida con todos los aeropuertos internacionales principales
-    Agregue un campo de aeropuerto de llegada con códigos IATA y nombres completos
+    Añada un menú desplegable para los aeropuertos de salida con todos los aeropuertos internacionales principales
+    Añada un campo de aeropuerto de llegada con códigos IATA y nombres completos
     Cree un campo para el aeropuerto más cercano a la ubicación del usuario
-    Agregue una selección de estaciones de tren para las ciudades europeas
+    Añada una selección de estaciones de tren para las ciudades europeas
 
 **Mensajes de ejemplo:**
 
@@ -62,11 +62,11 @@ Cree campos basados en la ubicación con datos geográficos completos e informac
 
 **Países, estados y provincias:**
 
-    Agregar una lista completa de estados de EE. UU. con abreviaturas
-    Crear un menú desplegable de países con códigos ISO y nombres completos
-    Agregar un campo para las principales ciudades del mundo con husos horarios
-    Incluir un menú desplegable de provincias y territorios canadienses
-    Agregar un campo para los condados y áreas postales del Reino Unido
+    Añada una lista completa de estados de EE. UU. con abreviaturas
+    Cree un menú desplegable de países con códigos ISO y nombres completos
+    Añada un campo para las principales ciudades del mundo con husos horarios
+    Incluya un menú desplegable de provincias y territorios canadienses
+    Añada un campo para los condados y áreas postales del Reino Unido
 
 **Mensajes de ejemplo:**
 
@@ -83,11 +83,11 @@ Aproveche las clasificaciones comerciales completas y los datos profesionales pa
 
 **Tipos de entidades empresariales y del sector:**
 
-    Agregue un campo para la clasificación del sector con códigos NAICS
+    Añada un campo para la clasificación del sector con códigos NAICS
     Cree un menú desplegable de tipos de entidades comerciales (LLC, Corporation, Partnership, etc.)
-    Agregar un campo para categorías de tamaño de compañía (inicio, PYMES, empresa)
-    Incluir la selección de departamentos para organizaciones grandes
-    Agregar un campo para tipos de servicios profesionales
+    Añada un campo para categorías de tamaño de empresa (startup, PYMES, empresa)
+    Incluya la selección de departamentos para organizaciones grandes
+    Añada un campo para tipos de servicios profesionales
 
 **Mensajes de ejemplo:**
 
@@ -99,10 +99,10 @@ Aproveche las clasificaciones comerciales completas y los datos profesionales pa
 
 **Títulos y certificaciones de trabajo:**
 
-    Agregue un campo para los puestos con funciones comunes en el sector
+    Añada un campo para los puestos laborales con funciones comunes en el sector
     Cree un menú desplegable de certificaciones profesionales por campo
     Incluya niveles de educación con tipos de títulos
-    Agregue un campo para rangos de años de experiencia
+    Añada un campo para rangos de años de experiencia
     Cree una selección de lenguajes y marcos de trabajo de programación
 
 **Mensajes de ejemplo:**
@@ -119,10 +119,10 @@ Acceda a códigos, clasificaciones e información reglamentaria estandarizados p
 
 **Información de moneda, impuestos y pagos:**
 
-    Agregue un campo para códigos de moneda con símbolos y tipos de cambio
+    Añada un campo para códigos de moneda con símbolos y tipos de cambio
     Cree un menú desplegable de tipos de identificación fiscal por país
     Incluya un campo para tipos de documentos legales
-    Agregue opciones de métodos de pago con características de seguridad
+    Añada opciones de métodos de pago con características de seguridad
     Cree una selección para instituciones bancarias por país
 
 **Mensajes de ejemplo:**
@@ -135,10 +135,10 @@ Acceda a códigos, clasificaciones e información reglamentaria estandarizados p
 
 **Formatos de archivo y protocolos:**
 
-    Agregar un menú desplegable de tipos de formato de archivo con extensiones
-    Incluir opciones de protocolo de red
-    Agregar un campo para tipos y versiones de base de datos
-    Crear una selección para métodos de autenticación de API
+    Añada un menú desplegable de tipos de formato de archivo con extensiones
+    Incluya opciones de protocolo de red
+    Añada un campo para tipos y versiones de base de datos
+    Cree una selección para métodos de autenticación de API
 
 **Mensajes de ejemplo:**
 
@@ -154,10 +154,10 @@ Datos médicos y sanitarios especializados para formularios específicos de la i
 
 **Datos médicos y especialidades:**
 
-    Agregue un campo para especialidades médicas
+    Añada un campo para especialidades médicas
     Cree un menú desplegable de medicamentos comunes con nombres genéricos
     Incluya un campo para los tipos de proveedores de seguros
-    Agregue una selección para las relaciones de contacto de emergencia médica
+    Añada una selección para las relaciones de contacto de emergencia médica
     Cree un campo para las restricciones dietéticas y las alergias
 
 **Mensajes de ejemplo:**
@@ -174,10 +174,10 @@ Campos de fecha y hora inteligentes con inteligencia de contexto empresarial y p
 
 **Horario de trabajo y programación:**
 
-    Agregue un campo para el horario laboral con administración de husos horarios
+    Añada un campo para el horario laboral con gestión de husos horarios
     Cree un menú desplegable de días festivos por país
     Incluya opciones de temporada con intervalos de fechas
-    Agregue un campo para la reserva de salas de conferencias con disponibilidad
+    Añada un campo para la reserva de salas de conferencias con disponibilidad
     Cree una selección para patrones de reuniones recurrentes
 
 **Mensajes de ejemplo:**
@@ -194,10 +194,10 @@ Campos de comercio electrónico y orientados a servicios con una categorización
 
 **Datos de productos y servicios:**
 
-    Agregue un campo para las categorías de productos con subcategorías
+    Añada un campo para las categorías de productos con subcategorías
     Cree un menú desplegable de métodos de envío con estimaciones de entrega
     Incluya un campo para opciones de directivas de devolución
-    Agregue una selección para los niveles de prioridad de los clientes
+    Añada una selección para los niveles de prioridad de los clientes
     Cree un campo para los ciclos de facturación de suscripción
 
 **Mensajes de ejemplo:**
@@ -296,4 +296,3 @@ Combine el conocimiento de LLM con los datos de su organización:
 * [Creación de formularios con tecnología de IA](forms-experience-builder-prompt-examples-library.md)
 * [Creación de reglas y lógica empresarial](forms-experience-builder-prompt-examples-library.md#rule-creation--business-logic)
 * [Envío e integración de formularios](form-submission-integration.md)
-

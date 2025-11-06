@@ -5,7 +5,7 @@ contentOwner: khsingh
 feature: Adaptive Forms
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 100%
@@ -30,6 +30,7 @@ Para habilitar la opción **[!UICONTROL Forms]**:
 1. Seleccione la opción **[!UICONTROL Forms]** y haga clic en **[!UICONTROL Guardar]**.
 
    ![Selección de la opción Forms](assets/installation-configuration-select-forms-option.png)
+
 1. [Cree](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=es#how-to-use) y [ejecute](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es) canalizaciones de producción y de no producción.
 
 Una vez construida e implementada la canalización, la opción **[!UICONTROL Forms]** en la página **[!UICONTROL Navegación]**.

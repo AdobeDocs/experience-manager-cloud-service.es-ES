@@ -4,7 +4,7 @@ description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 73%
@@ -97,7 +97,7 @@ GraphQL utiliza lo siguiente:
 * **[Punto de conexión de GraphQL](graphql-endpoint.md)**
    * La ruta en AEM que responde a las consultas de GraphQL y proporciona acceso a los esquemas de GraphQL.
 
-   * Consulte [Activación del punto de conexión de GraphQL](graphql-endpoint.md) para obtener más información.
+   * Consulte [Habilitación del punto de conexión de GraphQL](graphql-endpoint.md) para obtener más información.
 
 Consulte la [Introducción a GraphQL (GraphQL.org)](https://graphql.org/learn/) para obtener información detallada, incluidas las [Prácticas recomendadas](https://graphql.org/learn/best-practices/).
 
@@ -375,7 +375,7 @@ Puede ver todos los tipos de metadatos de GraphQL si ve el esquema de GraphQL ge
 >[!NOTE]
 >
 >**Diferencia entre metadatos normales y de matriz**
->&#x200B;>Tenga en cuenta que `StringMetadata` y `StringArrayMetadata` hacen referencia a lo que se almacena en el repositorio, no a cómo se recuperan.
+>Tenga en cuenta que `StringMetadata` y `StringArrayMetadata` hacen referencia a lo que se almacena en el repositorio, no a cómo se recuperan.
 >
 >Por ejemplo, llamando al campo `stringMetadata`, recibirá una matriz de todos los metadatos almacenados en el repositorio como `String`, y si llama a `stringArrayMetadata` recibirá una matriz de todos los metadatos almacenados en el repositorio como `String[]`.
 
@@ -770,6 +770,7 @@ La solución de GraphQL significa que puede hacer lo siguiente:
 >[!NOTE]
 >
 >Se puede usar una **referencia de contenido** tanto para recursos DAM como para recursos de Dynamic Media. Al recuperar la URL adecuada se utilizan parámetros diferentes:
+>
 >* `_dynamicUrl` : un recurso DAM
 >* `_dmS7Url` : un recurso de Dynamic Media
 > 
@@ -784,13 +785,17 @@ La estructura y la sintaxis son las siguientes:
 * `format`: una enumeración con todos los formatos admitidos por su extensión: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL o WEBPLY
 * `seoName`: una cadena que se utiliza como nombre de archivo en lugar del nombre de nodo
 * `crop`: una subestructura de fotograma, si se omite la anchura o la altura, estas se utilizan como el mismo valor
+
    * `xOrigin`: el origen x del fotograma, es obligatorio
    * `yOrigin`: el origen y del fotograma, es obligatorio
    * `width`: la anchura del fotograma
    * `height`: la altura del fotograma
+
 * `size`: una subestructura de dimensión, si se omite la anchura o la altura, estas se utilizan como el mismo valor
+
    * `width`: la anchura de la dimensión
    * `height`: la altura de la dimensión
+
 * `rotation`: una enumeración de todas las rotaciones admitidas: R90, R180, R270
 * `flip`: una enumeración de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: un entero entre 1 y 100 que indica el porcentaje de calidad de la imagen
@@ -980,6 +985,7 @@ La solución de GraphQL significa que puede hacer lo siguiente:
 ### Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: referencia de imagen{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 A continuación se muestra un ejemplo de consulta:
+
 * para varios fragmentos de contenido de tipo `team` y `person`, devolviendo un `ImageRef`
 
 ```graphql
@@ -1007,6 +1013,7 @@ query allTeams {
 ### Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: varias referencias{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 A continuación se muestra un ejemplo de consulta:
+
 * para varios fragmentos de contenido de tipo `team` y `person`, devolviendo un `ImageRef`, `MultimediaRef` y `DocumentRef`:
 
 ```graphql
@@ -1209,10 +1216,11 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
    * Consulte [Consulta de muestra para varios fragmentos de contenido y sus variaciones de un modelo determinado](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
+  >
   >El filtro `includeVariations` y el campo generado por el sistema `_variation` no se pueden usar juntos en la misma definición de consulta.
 
 * Si desea utilizar un OR lógico:
-   * use ` _logOp: OR`
+   * use `_logOp: OR`
    * Consulte [Consulta de muestra: todas las personas que tienen el apellido “Jobs” o “Smith”](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * El AND lógico también existe, pero (a menudo) está implícito

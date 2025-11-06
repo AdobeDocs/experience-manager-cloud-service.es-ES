@@ -6,7 +6,7 @@ exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 16%
@@ -54,6 +54,6 @@ La lógica empresarial y la comunicación back-end con Adobe Commerce para los c
 
 Dentro de los proyectos, los componentes principales de AEM CIF y los componentes de proyecto personalizados pueden recuperar fácilmente el cliente configurado para una tienda de Adobe Commerce asociado a una página de AEM mediante la configuración según el contexto de Sling.
 
-## Búsqueda {#search}
+## Búsqueda
 
-CIF proporciona de forma predeterminada un [Componente principal de búsqueda](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) que es una experiencia de búsqueda procesada en el lado del servidor basada en la API de [Commerce GraphQL.](https://developer.adobe.com/commerce/webapi/graphql/) clientes de Commerce tienen la opción de usar [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=es) en su lugar. Siga este [vínculo](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md) para obtener más información sobre la integración de CIF con Live Search.
+CIF proporciona de forma predeterminada un [Componente principal de búsqueda](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) que es una experiencia de búsqueda procesada en el lado del servidor basada en la API de [Commerce GraphQL.](https://developer.adobe.com/commerce/webapi/graphql/) clientes de Commerce tienen la opción de usar [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) en su lugar. Siga este [vínculo](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md) para obtener más información sobre la integración de CIF con Live Search.

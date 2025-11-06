@@ -1,23 +1,23 @@
 ---
-title: Activación de la exportación de JSON para un componente
+title: Habilitación de la exportación de JSON para un componente
 description: Los componentes se pueden adaptar para generar la exportación JSON de su contenido en función de un marco de trabajo del modelador.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
-# Activación de la exportación de JSON para un componente {#enabling-json-export-for-a-component}
+# Habilitación de la exportación de JSON para un componente {#enabling-json-export-for-a-component}
 
 Los componentes se pueden adaptar para generar la exportación JSON de su contenido en función de un marco de trabajo del modelador.
 
 ## Información general {#overview}
 
-La exportación de JSON se basa en [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html) y en el marco de [Exportador de modelos Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (que a su vez se basa en [anotaciones Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
+La exportación de JSON se basa en [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html?lang=es) y en el marco de [Exportador de modelos Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (que a su vez se basa en [anotaciones Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
 Esto significa que el componente debe tener un modelo Sling si debe exportar JSON. Por lo tanto, siga estos dos pasos para habilitar la exportación de JSON en cualquier componente.
 
@@ -70,7 +70,7 @@ La interfaz del modelo Sling correspondiente (`MyComponent`) se anotaría usando
 
 La interfaz del modelo debe estar anotada correctamente para definir qué métodos se deben serializar. De forma predeterminada, todos los métodos que respetan la convención de nombres habitual de los captadores se serializan y derivan sus nombres de propiedades JSON de forma natural de los nombres de captadores. Esto se puede evitar o sobrescribir usando `@JsonIgnore` o `@JsonProperty` para cambiar el nombre de la propiedad JSON.
 
-## Ejemplos {#example}
+## Ejemplo {#example}
 
 [Los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) admiten la exportación de JSON y se pueden usar como referencia.
 

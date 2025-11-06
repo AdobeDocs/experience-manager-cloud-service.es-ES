@@ -1,10 +1,10 @@
 ---
 title: AEM Repo Tool
-description: AEM AEM La Herramienta de Repo es una solución sencilla para transferir contenido JCR entre el sistema de archivos local y el servidor de la a través de una línea de comandos comparable a la de FTP.
+description: La herramienta AEM Repo Tool es una solución sencilla para transferir contenido JCR entre el sistema de archivos local y el servidor de AEM a través de la línea de comandos comparable a FTP.
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%
@@ -13,25 +13,25 @@ ht-degree: 2%
 
 # AEM Repo Tool {#aem-repo-tool}
 
-AEM AEM La Herramienta de Repo es una solución sencilla para transferir contenido JCR entre el sistema de archivos local y el servidor de la a través de una línea de comandos comparable a la de FTP. AEM La herramienta de repo de datos es similar al [complemento Jackrabbit FileVault Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin), pero es más rápida, tiene dependencias mínimas y es un script bash simple.
+La herramienta AEM Repo Tool es una solución sencilla para transferir contenido JCR entre el sistema de archivos local y el servidor de AEM a través de la línea de comandos comparable a FTP. La herramienta AEM Repo Tool es similar al [complemento Jackrabbit FileVault Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin), pero es más rápida, tiene dependencias mínimas y es un script bash simple.
 
 Esta herramienta simplifica la transferencia de archivos para el desarrollador y también se puede integrar en Eclipse e IntelliJ para hacer el desarrollo aún más eficiente.
 
 ## Información general {#overview}
 
-AEM Para una ruta determinada dentro de una estructura de `jcr_root` FileVault en el sistema de archivos, la herramienta de repositorio de datos crea un paquete con un solo filtro para todo el subárbol y lo inserta en el servidor (similar a FTP `put`), lo recupera del servidor ( `get`) o compara las diferencias ( `status` y `diff`).
+Para una ruta determinada dentro de una estructura de `jcr_root` FileVault en el sistema de archivos, la herramienta AEM Repo crea un paquete con un solo filtro para todo el subárbol y lo inserta en el servidor (similar a FTP `put`), lo recupera del servidor ( `get`) o compara las diferencias ( `status` y `diff`).
 
 La herramienta no admite varias rutas de filtro o `filter.xml` de FileVault.
 
 >[!CAUTION]
 >
->AEM La herramienta de repositorio de datos siempre sobrescribe todo el archivo o directorio especificado.
+>La herramienta AEM Repo siempre sobrescribe todo el archivo o directorio especificado.
 
 ## Descarga y documentación {#download-and-documentation}
 
-AEM La herramienta de repo [está disponible en GitHub a través de este enlace](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) junto con instrucciones detalladas de instalación y uso.
+La herramienta [AEM Repo Tool está disponible en GitHub a través de este enlace](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) junto con instrucciones detalladas de instalación y uso.
 
-AEM Si desea descargar la fuente de la herramienta de repo de, consulte el proyecto de GitHub vinculado a continuación.
+Si desea descargar el origen de la herramienta AEM Repo Tool, consulte el proyecto de GitHub vinculado a continuación.
 
 CÓDIGO EN GITHUB
 

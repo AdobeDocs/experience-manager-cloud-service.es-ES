@@ -1,10 +1,10 @@
 ---
 title: Editor de imágenes
-description: AEM El editor de imágenes es un elemento central de la y los componentes lo pueden utilizar para facilitar la manipulación de imágenes por parte de los autores de contenido.
+description: El editor de imágenes es una parte esencial de AEM y los componentes lo pueden utilizar para facilitar la manipulación de imágenes por parte de los autores de contenido.
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Editor de imágenes {#image-editor}
 
-AEM El editor de imágenes es un elemento central de la y los componentes lo pueden utilizar para facilitar la manipulación de imágenes por parte de los autores de contenido.
+El editor de imágenes es una parte esencial de AEM y los componentes lo pueden utilizar para facilitar la manipulación de imágenes por parte de los autores de contenido.
 
 ## Unidades relativas para mapa de imagen {#relative-units-for-image-map}
 
@@ -48,7 +48,7 @@ En determinadas situaciones, las acciones de creación deben restringirse para d
 
 Los complementos del Editor de imágenes se pueden habilitar selectivamente por tipo MIME al establecer una propiedad `supportedMimeTypes` en el nodo de configuración del complemento individual.
 
-### Ejemplos {#example}
+### Ejemplo {#example}
 
 Por ejemplo, supongamos que la capacidad de recorte solo debe permitirse para imágenes de GIF, JPEG, PNG, WEBP y TIFF.
 

@@ -4,8 +4,8 @@ description: Descubra cómo los entornos de un programa de zona protegida entran
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 42%
@@ -106,7 +106,7 @@ Cualquier usuario con un perfil de producto que le permita acceder a AEM as a Cl
 
 Cuando un usuario realiza una solicitud de explorador al servicio de autor, vista previa o publicación de un entorno hibernado, se encuentra con una página de aterrizaje. En esta página se explica el estado de hibernación del entorno y se proporciona un vínculo a Developer Console para la anulación de la hibernación.
 
-![Página de aterrizaje del servicio en hibernación](assets/de-hibernation-img5.png)
+![Página de destino del servicio en hibernación](assets/de-hibernation-img5.png)
 
 ## Implementaciones y actualizaciones de AEM {#deployments-updates}
 

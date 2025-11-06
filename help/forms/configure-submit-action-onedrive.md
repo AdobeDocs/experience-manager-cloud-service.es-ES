@@ -5,8 +5,8 @@ keywords: Integración de AEM Forms OneDrive, Conexión a Microsoft AEM OneDrive
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ Para conectar AEM Forms al almacenamiento de Microsoft® OneDrive:
    >[!NOTE]
    >
    >* De forma predeterminada, `forms-ootb-storage-adaptive-forms-submission` está presente en el contenedor de OneDrive.
-   > * Cree una carpeta como `forms-ootb-storage-adaptive-forms-submission`, si no está presente haciendo clic en **Crear carpeta**.
+   >* Cree una carpeta como `forms-ootb-storage-adaptive-forms-submission`, si no está presente haciendo clic en **Crear carpeta**.
 
 Ahora puede usar esta configuración de almacenamiento de OneDrive para la acción de envío en un formulario adaptable.
 
@@ -116,7 +116,7 @@ Aparece el cuadro de diálogo **Propiedades del formulario**.
 
    >[!NOTE]
    >
-   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del edito universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
+   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
    > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar las extensiones del editor universal.
 1. Haga clic en la pestaña **Envío** y seleccione **[!UICONTROL Enviar a OneDrive]**.
    ![GIF de OneDrive](/help/forms/assets/submit-to-onedrive-ue.png)

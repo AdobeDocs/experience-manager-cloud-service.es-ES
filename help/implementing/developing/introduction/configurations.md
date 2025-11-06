@@ -3,8 +3,8 @@ title: Configuraciones y el explorador de configuración
 description: Comprenda las configuraciones de Adobe Experience Manager (AEM) y cómo administran la configuración del espacio de trabajo en AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%
@@ -40,7 +40,7 @@ Se pueden crear configuraciones para muchas funciones diferentes dentro de AEM.
 * [Plantillas editables](/help/sites-cloud/authoring/page-editor/templates.md)
 * varias configuraciones de nube
 
-### Ejemplos {#administrator-example}
+### Ejemplo {#administrator-example}
 
 Por ejemplo, un administrador puede crear dos configuraciones para Plantillas editables.
 
@@ -74,7 +74,7 @@ Es sencillo crear una configuración en AEM mediante el Explorador de configurac
 1. Seleccione **Crear**.
 1. Proporcione un **Título** y **Nombre** para su configuración.
 
-   ![Crear configuración](assets/configuration-create.png)
+   ![Creación de configuración](assets/configuration-create.png)
 
    * El **Título** debe ser descriptivo.
    * El **nombre** se convierte en el nombre de nodo del repositorio.
@@ -127,7 +127,7 @@ Aunque el administrador y los usuarios de [pueden considerar las configuraciones
 
 El contenido hace referencia a su configuración asociada mediante una propiedad `cq:conf`. AEM realiza una búsqueda basada en el contenido y su propiedad `cq:conf` contextual para encontrar la configuración adecuada.
 
-### Ejemplos {#developer-example}
+### Ejemplo {#developer-example}
 
 Para este ejemplo, supongamos que tiene código de aplicación interesado en la configuración de DAM.
 

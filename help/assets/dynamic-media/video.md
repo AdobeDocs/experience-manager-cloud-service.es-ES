@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 5514aec10184d67c24d00d2ed783a154e6587035
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '10070'
+source-wordcount: '10063'
 ht-degree: 2%
 
 ---
@@ -48,19 +48,18 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
       * [Cargue sus vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/file-format-support.md).
 
-   * Supervise el progreso de la codificación de vídeo [1&rbrace; desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
+   * Supervise el progreso de la codificación de vídeo [1} desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
 
 1. **Administre sus vídeos de Dynamic Media** mediante cualquiera de las siguientes acciones:
 
    * Organizar, examinar y buscar recursos de vídeo
 
-      * [Organización de recursos digitales](/help/assets/organize-assets.md)
+      * [Organizar recursos digitales](/help/assets/organize-assets.md)
       * [Buscar recursos de vídeo](/help/assets/search-assets.md#custompredicates) o [Buscando recursos](/help/assets/manage-digital-assets.md#search-assets)
 
    * Previsualización y publicación de recursos de vídeo
 
       * Vea el vídeo de origen y las representaciones codificadas del vídeo junto con sus miniaturas asociadas:
-
         [Previsualizar vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) o [Previsualizar recursos](/help/assets/dynamic-media/previewing-assets.md)
         [Administrar representaciones de vídeo](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -70,7 +69,6 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
    * Trabajo con metadatos de vídeo
 
       * Edite las propiedades del vídeo, como el título, la descripción y las etiquetas, y campos de metadatos personalizados:
-
         [Editar propiedades de vídeo](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Administración de metadatos para recursos digitales](/help/assets/manage-metadata.md)
@@ -95,11 +93,9 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
    * Si utiliza un sistema WCM de terceros, puede vincular o incrustar vídeos a sus páginas web.
 
       * Integrar vídeo con URL:
-
         [Vincular URL a su aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integración de vídeo mediante código incrustado en una página web:
-
         [Incrustar el visor de vídeo en una página web](/help/assets/dynamic-media/embed-code.md).
 
    * [Generar informes de vídeo](#viewing-video-reports).
@@ -135,7 +131,7 @@ Al administrar un solo vídeo y conjuntos de vídeos adaptables, se admiten los 
 * Organice, examine y busque vídeos con compatibilidad total con metadatos para una administración eficaz de los recursos de vídeo.
 * Ofrezca conjuntos de vídeos adaptables a la web y a equipos de escritorio, tabletas y dispositivos móviles.
 
-La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
+La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -151,7 +147,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulte también [Visualizadores solo para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Visualizadores solo para Experience Manager Assets](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) en la [Guía de referencia de visualizadores de Dynamic Media](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources).
+Consulte también [Visualizadores solo para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Visualizadores solo para Experience Manager Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) en la [Guía de referencia de visualizadores de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 ## Práctica recomendada: Uso del visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -163,7 +159,7 @@ En la parte de reproducción del visor, detecta automáticamente la capacidad de
 
 Puede combinar en un solo reproductor la capacidad de diseñar los componentes de reproducción mediante HTML5 y CSS. Puede tener reproducción integrada y utilizar flujo adaptable y progresivo según la capacidad del explorador. Toda esta funcionalidad significa que puede ampliar el alcance del contenido multimedia enriquecido tanto para usuarios de escritorio como móviles, así como garantizar una experiencia de vídeo optimizada.
 
-Consulte también [Solo visores para Experience Manager Assets](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) en la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources).
+Consulte también [Solo visores para Experience Manager Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) en la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 
 ### Reproducción de vídeo en equipos de escritorio y dispositivos móviles mediante el visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -183,7 +179,7 @@ DASH es el estándar internacional y HLS es un estándar de Apple. Ambos se util
 
 El vídeo progresivo se proporciona descargando y almacenando el vídeo localmente en el sistema de escritorio o el dispositivo móvil de un usuario.
 
-En la tabla siguiente se describe el dispositivo, el explorador y el método de reproducción de vídeos en equipos de escritorio y dispositivos móviles que utilizan el [Visor de vídeo HTML5 de Dynamic Media](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
+En la tabla siguiente se describe el dispositivo, el explorador y el método de reproducción de vídeos en equipos de escritorio y dispositivos móviles que utilizan el [Visor de vídeo HTML5 de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
 
 <table>
  <tbody>
@@ -316,7 +312,7 @@ En la tabla siguiente se describe cómo se traducen los resultados de la fórmul
 | 1,33 | 4:3 |
 | 0,75 | 3:4 |
 | 1,78 | 16:9 |
-| 0,56 | 09:16 |
+| 0,56 | 9:16 |
 
 Por ejemplo, un vídeo de 1440 de anchura × 1080 de altura tiene una relación de aspecto de 1440/1080 o 1,33. En este caso, elija un ajuste preestablecido de codificación de vídeo con una relación de aspecto de 4:3 para codificar el archivo de vídeo.
 
@@ -460,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=es).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -605,7 +601,7 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y Adobe VTT. A
    ![Opciones para crear subtítulos.](/help/assets/dynamic-media/assets/msma-createcaption.png)
    *El menú desplegable Crear pie de ilustración le ofrece tres opciones: Cargar archivos, Convertir pistas de audio y Traducir pie de ilustración.*
 
-+++**Opción 1:** *Tengo mis propios archivos de subtítulos preexistentes en los idiomas que deseo usar* (opción **[!UICONTROL Cargar archivos]**)
+   +++**Opción 1:** *Tengo mis propios archivos de subtítulos preexistentes en los idiomas que deseo usar* (opción **[!UICONTROL Cargar archivos]**)
 
    1. Cerca de la parte superior derecha de la página, haz clic en **[!UICONTROL Crear pie de ilustración]** > **[!UICONTROL Cargar archivos]**.
    1. Vaya a uno o varios de los `.vtt` archivos preexistentes y selecciónelos, y ábralos.
@@ -629,9 +625,9 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y Adobe VTT. A
    1. Si seleccionaste **[!UICONTROL Guardar y cerrar]** en el paso anterior, en lugar de seleccionar **[!UICONTROL Guardar]**, aún puedes ver el estado de procesamiento de los archivos cargados. Ver [Ver el estado del ciclo de vida de los archivos de subtítulos y pistas de audio cargados](#lifecycle-status-video).
    1. Continúe con el paso 8.
 
-+++
+   +++
 
-+++**Opción 2:** *Quiero que AI genere mis archivos de subtítulos en varios idiomas* (**[!UICONTROL Opción Convertir pistas de audio]**)
+   +++**Opción 2:** *Quiero que AI genere mis archivos de subtítulos en varios idiomas* (**[!UICONTROL Opción Convertir pistas de audio]**)
 
    1. Cerca de la esquina superior derecha de la página, haga clic en **[!UICONTROL Crear pie de ilustración]** > **[!UICONTROL Convertir pistas de audio]**.
 
@@ -663,9 +659,9 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y Adobe VTT. A
       Puede cambiar o editar ciertos metadatos de subtítulos más adelante, si es necesario. Cuando se publica el vídeo, los detalles de estos metadatos se reflejan en las direcciones URL públicas de los vídeos publicados.
    1. Continúe con el paso 8.
 
-+++
+   +++
 
-+++**Opción 3:** *El texto de un archivo de subtítulos (`.vtt`) debe corregirse, volver a cargarse para reemplazar el archivo `.vtt` antiguo y, a continuación, hacer que AI traduzca el archivo corregido* (**[!UICONTROL Opción Traducir subtítulos]**)
+   +++**Opción 3:** *El texto de un archivo de subtítulos (`.vtt`) debe corregirse, volver a cargarse para reemplazar el archivo `.vtt` antiguo y, a continuación, hacer que AI traduzca el archivo corregido* (**[!UICONTROL Opción Traducir subtítulos]**)
 
    1. Haga clic en **[!UICONTROL Crear subtítulo]** > **[!UICONTROL Traducir subtítulos]**. Esta opción está disponible si ya se han agregado y procesado uno o más archivos de rótulo.
 
@@ -698,7 +694,7 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y Adobe VTT. A
 
    1. Continúe con el paso 8.
 
-+++
+   +++
 
 1. (Opcional) Previsualice el vídeo antes de publicarlo para garantizar que los subtítulos y el audio funcionan según lo esperado. Ver [Vista previa de un vídeo con varios subtítulos y pistas de audio](#preview-video-audio-subtitle).
 1. Publique el vídeo. Consulte [Publicar recursos](publishing-dynamicmedia-assets.md).
@@ -920,7 +916,7 @@ Consulte también [Accesibilidad en Dynamic Media](/help/assets/dynamic-media/ac
 
 Dynamic Media puede convertir archivos de rótulo al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear/indexar el contenido para que los vídeos sean más fáciles de descubrir y dar a los clientes más detalles sobre el contenido del vídeo.
 
-Consulte [Servicio de contenido estático (que no es de imagen)](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
+Consulte [Servicio de contenido estático (que no es de imagen)](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
 
 **Para agregar subtítulos a un vídeo:**
 
@@ -1539,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1568,7 +1564,7 @@ With multiple caption and audio track capability in Dynamic Media, you can easil
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case | 
+| Type | Use case |
 | --- | --- |
 | Captions | Multiple language support<br>Descriptive text for accessibility |
 | Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |

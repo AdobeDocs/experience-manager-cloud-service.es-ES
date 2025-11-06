@@ -6,10 +6,10 @@ keywords: Captcha&reg; service, Forms adaptable, desafío CAPTCHA, prevención d
 feature: Adaptive Forms, Core Components
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 41%
 CAPTCHA (prueba de Turing completamente automática y pública para diferenciar ordenadores de humanos) es un programa que se utiliza comúnmente en transacciones en línea para distinguir entre humanos y programas o bots automatizados. Plantea un desafío y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el sitio. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o con fines malintencionados.
 
 AEM Forms as a Cloud Service es compatible con las siguientes soluciones CAPTCHA:
+
 * [hCaptcha](#integrate-aem-forms-environment-with-hcaptcha-captcha)
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
 * [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
@@ -47,7 +48,7 @@ Para integrar AEM Forms con el servicio hCaptcha®, realice los siguientes pasos
    1. En el Explorador de configuración, puede seleccionar una carpeta existente o crear una carpeta. Crear una carpeta y habilitar la opción Configuraciones de la nube para ella o Habilitar la opción Configuraciones de nube de la carpeta existente:
 
       * Para crear una carpeta y habilitar la opción Configuraciones de la nube para ella, haga lo siguiente:
-         1. En el Explorador de configuración, pulse **[!UICONTROL Crear]**.
+         1. En el Explorador de configuración, haga clic en **[!UICONTROL Crear]**.
          1. En el cuadro de diálogo Crear configuración, especifique un nombre, un título y seleccione la opción **[!UICONTROL Configuraciones de nube]**.
          1. Haga clic en **[!UICONTROL Crear]**.
       * Para habilitar la opción Configuraciones de la nube para una carpeta existente, haga lo siguiente:
@@ -57,10 +58,8 @@ Para integrar AEM Forms con el servicio hCaptcha®, realice los siguientes pasos
 
 1. Configure Cloud Service:
    1. En la instancia de autor de AEM, vaya a ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** y seleccione **[!UICONTROL hCaptcha®]**.
-
       ![hCaptcha® en la interfaz de usuario](assets/hcaptcha-in-ui.png)
    1. Seleccione un contenedor de configuración, creado o actualizado, como se describe en la sección anterior. Seleccione **[!UICONTROL Crear]**.
-
       ![Configuración hCaptcha®](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]** y **[!UICONTROL Secret Key]** para el servicio hCaptcha® [obtenido en Prerequisite](#prerequisite). Seleccione **[!UICONTROL Crear]**.
 
@@ -71,7 +70,7 @@ Para integrar AEM Forms con el servicio hCaptcha®, realice los siguientes pasos
 
    Una vez configurado el servicio hCAPTCHA, estará disponible para su uso en un [formulario adaptable basado en componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
-## Usar hCaptcha® en componentes principales de Forms adaptable {#using-hCaptcha®-core-components}
+## Uso de hCaptcha® en componentes principales de Forms adaptable {#using-hCaptcha&reg;-core-components}
 
 1. Abra la instancia AEM Forms as a Cloud Service.
 1. Vaya a **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
@@ -112,6 +111,6 @@ Ahora, solo se permiten para el envío del formulario los formularios legítimos
 * **Q: ¿Puedo usar más de un componente Captcha en un formulario adaptable?**
 * **R:** No se admite el uso de más de un componente Captcha en un formulario adaptable. Además, no se recomienda utilizar un componente Captcha en un fragmento o panel marcado para la carga diferida.
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}

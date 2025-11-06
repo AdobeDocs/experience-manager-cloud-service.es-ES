@@ -5,8 +5,8 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2197'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html?lang=es#adobe-acrobat-sign-for-government) |
 | AEM as a Cloud Service | Este artículo |
 
-[!DNL Adobe Acrobat Sign] activa los flujos de trabajo de firma electrónica para flujos de trabajo adaptables de Forms y de AEM. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para el área legal, ventas, nóminas, administración de recursos humanos y muchas más.
+[!DNL Adobe Acrobat Sign] habilita los flujos de trabajo de firma electrónica para flujos de trabajo adaptables de Forms y de AEM. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para el área legal, ventas, nóminas, administración de recursos humanos y muchas más.
 
 Cuando se trabaja con [!DNL Adobe Acrobat Sign] y los formularios adaptables, normalmente los usuarios rellenan un formulario adaptable para solicitar un servicio. Por ejemplo, una solicitud de tarjeta de crédito y un formulario de solicitud para una prestación. Cuando un usuario rellena, envía y firma el formulario de solicitud, este se envía al proveedor de servicios para que realice más acciones. El proveedor de servicios revisa la solicitud y utiliza [!DNL Adobe Acrobat Sign] para marcarla como aprobada. AEM Forms es compatible tanto con Adobe Acrobat Sign como con Adobe Acrobat Sign Solutions para el gobierno. Según la licencia y los requisitos, puede integrar o conectar AEM Forms con cualquiera de las soluciones:
 
@@ -89,7 +89,7 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
    >[!NOTE]
    >
    >* Mantenga abierta la página **Crear la configuración de Adobe Acrobat Sign**. No la cierre. Puede recuperar la **ID de cliente** y el **Secreto de cliente** después de configurar OAuth para la aplicación [!DNL Adobe Acrobat Sign] como se describe en los pasos siguientes.
-   > * Después de iniciar sesión en su cuenta de Adobe Sign, vaya a la **[!UICONTROL API de Acrobat Sign]** > **[!UICONTROL Información de API]** > **[!UICONTROL Documentación de métodos de API de REST]** > **[!UICONTROL Token de acceso de OAuth]** para acceder a información relacionada con la URL de OAuth de Adobe Sign y la URL del token de acceso.
+   >* Después de iniciar sesión en su cuenta de Adobe Sign, vaya a la **[!UICONTROL API de Acrobat Sign]** > **[!UICONTROL Información de API]** > **[!UICONTROL Documentación de métodos de API de REST]** > **[!UICONTROL Token de acceso de OAuth]** para acceder a información relacionada con la URL de OAuth de Adobe Sign y la URL del token de acceso.
 
 1. Configure OAuth para la aplicación [!DNL Adobe Acrobat Sign]:
 
@@ -158,7 +158,7 @@ La conexión de AEM Forms con Adobe Acrobat Sign Solutions para el gobierno es u
 ![Flujo de trabajo de Adobe Sign Government](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
 
 
-AEM Forms as a Cloud Service proporciona entornos de desarrollo, de fase y de producción. Puede comenzar conectando su entorno de desarrollo para con Adobe Acrobat Sign Solutions para el gobierno y conectar los entornos de fase y producción más adelante.
+AEM Forms as a Cloud Service proporciona entornos de desarrollo, de ensayo y de producción. Puede comenzar conectando su entorno de desarrollo para con Adobe Acrobat Sign Solutions para el gobierno y conectar los entornos de ensayo y producción más adelante.
 
 ### Antes de comenzar {#prerequisites-for-adobe-sign-for-acrobat-sign-for-government}
 

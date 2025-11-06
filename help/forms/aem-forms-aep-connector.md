@@ -6,8 +6,8 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2047'
 ht-degree: 100%
 
@@ -167,7 +167,7 @@ Siga estos pasos para crear un formulario adaptable basado en componentes princi
 Siga estos pasos para crear un formulario adaptable mediante el editor universal con integración de esquemas:
 
 1. Acceda al asistente de creación de formularios:
-   * Vaya a su **instancia de Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
+   * Vaya a su **instancia de Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
    * Haga clic en **Crear** > **Formulario adaptable**.
 1. En la pestaña **Fuente**, seleccione una plantilla basada en Edge Delivery.
 1. En la pestaña **Datos**, seleccione la opción **Adobe Experience Platform**.
@@ -193,7 +193,7 @@ Siga estos pasos para crear un formulario adaptable mediante el editor universal
      >* Si no ve el icono Fuentes de datos en su interfaz del editor universal o la propiedad Referencia de enlace en el panel de propiedades de la derecha, habilite la extensión **Fuente de datos** en Extension Manager.
      >* Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
      > 
-     > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar las extensiones del editor universal.
+     >* Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar las extensiones del editor universal.
 
    Actualmente no se admite el servicio de rellenado previo para formularios en el editor universal.
 

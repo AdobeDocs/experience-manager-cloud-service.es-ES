@@ -1,14 +1,14 @@
 ---
-title: Accesibilidad en [!DNL Experience Manager Assets]
+title: Accesibilidad en  [!DNL Experience Manager Assets]
 description: Conoce cómo las características de accesibilidad de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ayudan a los usuarios con discapacidades.
 contentOwner: AG
 feature: Accessibility, Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1923'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -161,7 +161,7 @@ Al examinar el repositorio de recursos, la siguiente funcionalidad mejora la acc
 * Some enhancements to metadata properties UI?
 -->
 
-## Administrar los recursos digitales  {#manage-assets}
+## Administrar los recursos digitales {#manage-assets}
 
 Muchas tareas de administración de recursos, como las operaciones de CRUD, la descarga de un recurso y la adición de metadatos, son accesibles en varios grados. [!DNL Assets] le permite realizar las tareas utilizando diversas tecnologías de asistencia, especialmente un lector de pantalla y un teclado.
 
@@ -175,7 +175,7 @@ Para las operaciones de metadatos que suelen realizar funciones como especialist
 * La funcionalidad de arrastrar mediante el teclado funciona correctamente en [!UICONTROL Editor de esquemas de metadatos] en el modo de exploración del lector de pantalla.
 * Un usuario puede mover el enfoque mediante el teclado al campo Agregar usuario o grupo bajo [!UICONTROL Grupo de usuarios cerrado] en la ficha [!UICONTROL Permisos] de la carpeta [!UICONTROL Propiedades].
 
-## Buscar recursos digitales {#search-assets}
+## Búsqueda de recursos digitales {#search-assets}
 
 Una experiencia de búsqueda de recursos rápida y perfecta aumenta la velocidad de contenido. Los casos de uso de velocidad de contenido forman parte de la funcionalidad principal [!DNL Assets]. Para iniciar una búsqueda desde la barra Omnisearch, los usuarios pueden usar el método abreviado de teclado `/` o utilizar `Tab` junto con lectores de pantalla para localizar rápidamente la opción de búsqueda. El lector de pantalla narra el nombre de la opción como &quot;Botón de búsqueda&quot; cuando el enfoque está en la opción de búsqueda ![opción de búsqueda](assets/do-not-localize/search_icon.png). Los usuarios pueden seleccionar `Return` para abrir el cuadro Omnisearch. El lector de pantalla no sólo narra la palabra clave escrita en el cuadro de búsqueda, sino también las sugerencias ofrecidas por [!DNL Experience Manager Assets]. Los usuarios pueden usar una combinación de teclas de dirección, `Return` y `Tab` para tener acceso a las distintas opciones para almacenar en déclencheur una búsqueda.
 

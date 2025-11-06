@@ -5,7 +5,7 @@ keywords: temáticas de form builder, componentes principales de estilo de formu
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2806'
 ht-degree: 99%
@@ -70,7 +70,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 ### Configurar su entorno
 
-* Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service.
+* Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM as a Cloud Service.
 * Configure una [canalización de implementación front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=es) para su entorno de Cloud Service. Como alternativa, puede configurar la canalización más adelante, lo que le ofrece la flexibilidad de priorizar la prueba y el refinamiento del tema antes de configurar la canalización de implementación.
 
 <!-- 
@@ -207,7 +207,7 @@ También puede cambiar la fuente, el color, el tamaño y otras propiedades CSS d
 
    ![Editar CSS del cuadro de texto](/help/forms/assets/edit_color_textbox.png)
 
-   >
+   >[!NOTE]
    >
    > Cuando se define un estilo tanto a nivel de temática como de componente, el estilo definido en el nivel de componente tiene prioridad.
 
@@ -313,7 +313,7 @@ Puede obtener una vista previa del formulario adaptable con los cambios más rec
 
 #### &#x200B;5. Implementar una temática {#deploy-the-theme}
 
-Para implementar la temática en el entorno del Cloud Service mediante la canalización front-end, haga lo siguiente:
+Para implementar la temática en el entorno de Cloud Service mediante la canalización front-end, haga lo siguiente:
 
 * 5.1 [Crear un repositorio para la temática](#create-a-new-theme-repo)
 * 5.2 [Insertar los cambios en el repositorio](#committing-the-changes)
@@ -339,8 +339,8 @@ Se necesita un repositorio para implementar la temática. Inicie sesión en el [
 
    >[!NOTE]
    > 
-   > * Puede utilizar un único repositorio para varias temáticas.
-   > * Para implementar diferentes temáticas, debe crear canalizaciones front-end independientes.
+   >* Puede utilizar un único repositorio para varias temáticas.
+   >* Para implementar diferentes temáticas, debe crear canalizaciones front-end independientes.
    >* Por ejemplo, puede utilizar el mismo repositorio que `custom-canvas-theme-repo` para la temática Lienzo, la temática WKND y la temática Cabellete. Sin embargo, para implementar los temas, debe crear canalizaciones front-end independientes. Las futuras personalizaciones de un tema específico se implementan mediante la canalización front-end correspondiente.
 
 ##### 5.2. Insertar los cambios en el repositorio {#committing-the-changes}
@@ -377,7 +377,7 @@ La temática se implementa mediante la [canalización front-end](https://experie
 
 1. Inicie sesión en el repositorio de AEM Cloud Manager.
 1. Haga clic en el botón **[!UICONTROL Añadir]** en la sección **[!UICONTROL Canalizaciones]**.
-1. Seleccione **[!UICONTROL Agregar canalización que no sea de producción]** o **[!UICONTROL Agregar canalización de producción]** en función del entorno Cloud Service. Por ejemplo, aquí la opción **[!UICONTROL Agregar canalización de producción]** está seleccionada.
+1. Seleccione **[!UICONTROL Agregar canalización que no sea de producción]** o **[!UICONTROL Agregar canalización de producción]** en función del entorno de Cloud Service. Por ejemplo, aquí la opción **[!UICONTROL Agregar canalización de producción]** está seleccionada.
 1. En el cuadro de diálogo **[!UICONTROL Añadir canalización de producción]** como parte de los pasos de **[!UICONTROL Configuración]**, indique el nombre de la canalización. Por ejemplo, el nombre de la canalización es `customcanvastheme`.
 1. Haga clic en **[!UICONTROL Continuar]**.
 1. Seleccione **[!UICONTROL Implementación objetivo]** > las opciones **[!UICONTROL Código front-end]**, 
@@ -441,7 +441,7 @@ Las temáticas se utilizan como parte de una plantilla de formulario adaptable p
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 

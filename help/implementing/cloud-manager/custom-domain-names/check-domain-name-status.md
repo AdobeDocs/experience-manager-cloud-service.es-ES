@@ -4,8 +4,8 @@ description: Obtenga información sobre cómo comprobar que Cloud Manager ha con
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 17%
@@ -98,6 +98,6 @@ El mensaje desaparece después de migrar todas las configuraciones de entorno pr
 
 Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para obtener más información.
 
-## Pasos siguientes {#next-steps}
+## Próximos pasos {#next-steps}
 
 Después de comprobar el estado del dominio en Cloud Manager, configure las opciones de DNS agregando registros DNS, CNAME o APEX que apunten a AEM as a Cloud Service. Continúe con el documento [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para continuar configurando el nombre de dominio personalizado.

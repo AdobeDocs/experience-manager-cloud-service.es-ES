@@ -4,7 +4,7 @@ description: Notas de la versión 2025.4.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 97%
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de abril de 2025 para ver un resumen de las funciones añadidas en la versión 2025.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464005?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -63,7 +63,7 @@ Además, los clientes que utilizan AEM 6.5 deben tener en cuenta que la pila de 
 
 **Creación de informes**
 
-Desde abril de 2025, la pestaña Ancho de banda del panel de informes de Dynamic Media Classic ya no es compatible.
+Desde abril de 2025, la pestaña Ancho de banda del panel de control de informes de Dynamic Media Classic ya no es compatible.
 
 Véase [Ancho de banda y almacenamiento, tipos de informes](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
@@ -84,7 +84,7 @@ Ahora puede seleccionar y comparar rápidamente cualquier versión de un recurso
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Características previas al lanzamiento
+### Características de versión preliminar
 
 * [Editor universal para formularios adaptables y fragmentos de formulario](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): ahora el editor universal permite crear formularios adaptables y fragmentos de formulario reutilizables. Los autores pueden crear formularios de forma visual, configurar acciones de envío y añadir la validación reCAPTCHA, todo ello en un entorno de creación simplificado de WYSIWYG. Esta posibilidad acelera la creación de formularios, mejora la coherencia y la protección contra el correo no deseado y el uso indebido automatizado.
 
@@ -143,7 +143,7 @@ La CDN administrada por Adobe ofrece opciones de configuración flexibles, tal c
 
 #### Propiedades de región, continente y organización como condiciones coincidentes {#matching-conditions}
 
-Las reglas de CDN ahora pueden coincidir en función de la región, el continente y la organización para casos de uso, incluidos el bloqueo del tráfico y las redirecciones. `clientRegion` y `clientContinent` aumentan `clientCountry`, que ya es compatible, para que coincida en función de la ubicación geográfica, mientras que `clientAsName` y `clientAsNumber` coinciden con los sistemas autónomos para identificar ISP, compañías o proveedores de la nube grandes. Obtenga más información sobre estas [propiedades de solicitud recientemente expuestas](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
+Las reglas de CDN ahora pueden coincidir en función de la región, el continente y la organización para casos de uso, incluidos el bloqueo del tráfico y las redirecciones. `clientRegion` y `clientContinent` aumentan `clientCountry`, que ya es compatible, para que coincida en función de la ubicación geográfica, mientras que `clientAsName` y `clientAsNumber` coinciden con los sistemas autónomos para identificar ISP, compañías o proveedores grandes de servicios en la nube. Obtenga más información sobre estas [propiedades de solicitud recientemente expuestas](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
 
 #### Establecer valor de cookie {#cookie-attributes}
 
@@ -164,12 +164,14 @@ El **entorno de ejecución** de Java 21 de mayor rendimiento se implementará au
 Para garantizar una monitorización eficaz de los entornos de los clientes, los registros de Java de AEM deben mantener un formato coherente y no deben anularse con configuraciones personalizadas. La salida de registro debe permanecer dirigida a los archivos predeterminados. Para el código de producto de AEM, se deben conservar los niveles de registro predeterminados. Sin embargo, es aceptable ajustar los niveles de registro para el código desarrollado por el cliente.
 
 Para ello, no deben realizarse cambios en las siguientes propiedades OSGi:
+
 * **Configuración del registro de Apache Sling** (PID: `org.apache.sling.commons.log.LogManager`) — *todas las propiedades*
 * **Configuración del registrador de Apache Sling** (PID de fábrica: `org.apache.sling.commons.log.LogManager.factory.config`):
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
 A mediados de mayo, AEM aplicará una directiva en la que se ignorarán las modificaciones personalizadas a estas propiedades. Revise y ajuste sus procesos descendentes en consecuencia. Por ejemplo, si utiliza la función de reenvío de registros:
+
 * Si el destino de registro espera un formato de registro personalizado (no predeterminado), es posible que tenga que actualizar las reglas de ingesta.
 * Si los cambios en los niveles de registro reducen la cantidad de registros, tenga en cuenta que los niveles de registro predeterminados pueden provocar un aumento significativo del volumen de registros.
 

@@ -3,8 +3,8 @@ title: Uso de los adaptadores de Sling
 description: Sling ofrece un patrón de adaptador para traducir convenientemente los objetos que implementan la interfaz adaptable
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 3%
@@ -94,7 +94,7 @@ En el primer caso, los documentos de Java™ pueden indicar qué `adaptTo-target
    <td>Si es un recurso basado en JCR (nodo o propiedad)</td>
   </tr>
   <tr>
-   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html">Asignar</a></td>
+   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Map.html">Mapa</a></td>
    <td>Devuelve un mapa de las propiedades, si es un recurso basado en nodos JCR (u otro recurso que admita asignaciones de valores)</td>
   </tr>
   <tr>

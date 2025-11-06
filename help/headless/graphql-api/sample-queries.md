@@ -4,10 +4,10 @@ description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encab
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 90%
+source-wordcount: '1927'
+ht-degree: 89%
 
 ---
 
@@ -1980,10 +1980,10 @@ Los siguientes fragmentos se utilizan para el modelo adecuado.
 
 | Nombre | País | Población | Categorías |
 |--- |--- |--- |--- |
-| Basilea | Suiza | 172258 | city:emea |
+| Basilea | Suiza | 172258 | ciudad:emea |
 | Berlín | Alemania | 3669491 | city:capital<br>city:emea |
 | Bucarest | Rumanía | 1821000 | city:capital<br>city:emea |
 | San Francisco | EE. UU. | 883306 | city:beach<br>city:na |
-| San José | EE. UU. | 102635 | city:na |
-| Stuttgart | Alemania | 634830 | city:emea |
+| San José | EE. UU. | 102635 | ciudad:na |
+| Stuttgart | Alemania | 634830 | ciudad:emea |
 | Zúrich | Suiza | 415367 | city:capital<br>city:emea |

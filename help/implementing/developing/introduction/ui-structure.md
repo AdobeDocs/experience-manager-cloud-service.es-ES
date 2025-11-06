@@ -1,10 +1,10 @@
 ---
 title: Estructura de la IU de AEM
-description: AEM La interfaz de usuario de tiene varios principios subyacentes y consta de varios elementos clave
+description: La IU de AEM tiene varios principios subyacentes y consta de varios elementos clave
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 3%
@@ -13,13 +13,13 @@ ht-degree: 3%
 
 # Estructura de la IU de AEM {#structure-of-the-aem-ui}
 
-AEM La interfaz de usuario de tiene varios principios subyacentes y consta de varios elementos clave:
+La interfaz de usuario de AEM tiene varios principios subyacentes y consta de varios elementos clave:
 
 ## Consolas {#consoles}
 
 ### Diseño básico y cambio de tamaño {#basic-layout-and-resizing}
 
-AEM La interfaz de usuario se adapta tanto a los dispositivos móviles como de escritorio, aunque en lugar de crear dos estilos, utiliza un estilo que funciona para todas las pantallas y dispositivos.
+La interfaz de usuario se adapta tanto a los dispositivos móviles como de escritorio, aunque, en lugar de crear dos estilos, AEM utiliza un estilo que funciona para todas las pantallas y dispositivos.
 
 Todos los módulos utilizan el mismo diseño básico:
 
@@ -33,11 +33,11 @@ Por ejemplo, cuando la resolución es inferior a 1024 píxeles (como en un dispo
 
 ### Barra de encabezado {#header-bar}
 
-AEM ![barra de encabezado de la](assets/ui-header-bar.png)
+![Barra de encabezado de AEM](assets/ui-header-bar.png)
 
 La barra de encabezado muestra elementos globales como:
 
-* El logotipo y el producto/solución específico que está utilizando actualmente. AEM Por ejemplo, este elemento también forma un vínculo a la navegación global
+* El logotipo y el producto/solución específico que está utilizando actualmente. Para AEM, este elemento también forma un vínculo a la navegación global
 * Búsqueda
 * Icono para acceder a los recursos de ayuda
 * Icono para acceder a otras soluciones
@@ -144,7 +144,7 @@ Una capa es un paquete independiente de funciones que se puede activar para:
 
 Las capas proporcionan una funcionalidad sofisticada para toda la página, en lugar de acciones específicas en un componente individual.
 
-AEM La función incluye varias capas ya implementadas para la creación de páginas; por ejemplo, las capas de edición, previsualización y anotación.
+AEM incluye varias capas ya implementadas para la creación de páginas; por ejemplo, las capas de edición, previsualización y anotación.
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Para obtener más información técnica, consulte [Conjunto de documentación de
 
 ### Unified Shell {#unified-shell}
 
-Consulte [AEM as a Cloud Service AEM en Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) si utiliza Unified Shell como interfaz de usuario de la interfaz de usuario de la aplicación de la.
+Consulte [AEM as a Cloud Service en Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) si utiliza Unified Shell como interfaz de usuario de AEM.
 
 Si necesita realizar o ya ha realizado personalizaciones, la opción Unificada se puede desactivar:
 

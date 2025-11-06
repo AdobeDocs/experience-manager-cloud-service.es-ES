@@ -3,9 +3,9 @@ title: Generar variaciones
 description: Obtenga información sobre “Generar variaciones”, accesible desde AEM as a Cloud Service y la barra de tareas de Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations, AI Tools
-role: Admin, Architect, Developer
-source-git-commit: b99cc846a1efbbcd12244f68c770aa25ac4e985d
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '3295'
 ht-degree: 100%
 
@@ -163,7 +163,7 @@ Seleccione una variación, seguida de **Generar imagen**, para abrir directament
 
 Puede realizar más cambios:
 
-* [escriba su propia indicación en Adobe Express](https://helpx.adobe.com/es/firefly/using/tips-and-tricks.html) describiendo lo que le gustaría ver,
+* [escriba su propia indicación en Adobe Express](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) describiendo lo que le gustaría ver,
 * ajuste las opciones **Texto a imagen**,
 * luego **Actualice** las imágenes generadas.
 
@@ -182,7 +182,7 @@ Aquí puede pasar el ratón por encima de la imagen para mostrar los siguientes 
 
 >[!NOTE]
 >
->[Las Content Credentials](https://helpx.adobe.com/es/creative-cloud/help/content-credentials.html) no se conservan cuando se utilizan en la creación basada en documentos.
+>[Las Content Credentials](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) no se conservan cuando se utilizan en la creación basada en documentos.
 
 ### Utilizar el contenido {#use-content}
 
@@ -412,11 +412,11 @@ La administración del uso depende de la acción realizada:
 
   >[!NOTE]
   >
-  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/es/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea comprar acciones más generativas.
+  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea comprar acciones más generativas.
 
 * Adobe Express
 
-  El uso de generación de imágenes se administra mediante derechos de Adobe Express y [créditos generativos](https://helpx.adobe.com/es/firefly/using/generative-credits-faq.html).
+  El uso de generación de imágenes se administra mediante derechos de Adobe Express y [créditos generativos](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
 
 ## Acceso a “Generar variaciones” {#access-generate-variations}
 

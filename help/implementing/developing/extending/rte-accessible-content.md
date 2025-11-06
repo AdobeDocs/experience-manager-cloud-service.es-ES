@@ -4,8 +4,8 @@ description: Aprenda a configurar el Editor de texto enriquecido para crear siti
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
@@ -35,9 +35,9 @@ Para obtener instrucciones para configurar RTE, consulte [configurar la página 
 * [Activar un complemento y configurar la propiedad features](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configuración de otras funcionalidades de RTE](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Para activar algunas o todas las funciones de un complemento, configúrelo en la rama secundaria `rtePlugins` adecuada del CRXDE Lite.
+Para activar algunas o todas las funciones de un complemento, configúrelo en la rama secundaria `rtePlugins` correspondiente de CRXDE Lite.
 
-![CRXDE Lite que muestra un ejemplo rtePlugin](assets/example-rteplugin-crxde-lite.png)
+![CRXDE Lite con rtePlugin de ejemplo](assets/example-rteplugin-crxde-lite.png)
 
 ### Ejemplo para especificar formatos de párrafo disponibles en el campo de selección RTE {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
@@ -52,7 +52,7 @@ Con los elementos estructurales disponibles en RTE a través de las opciones de 
 
 ## Uso de la función Source Edit {#use-of-the-source-edit-feature}
 
-En algunos casos, los autores de contenido encontrarán necesario examinar y ajustar el código fuente del HTML creado con RTE. Por ejemplo, un fragmento de contenido creado dentro de RTE puede requerir más marcado para garantizar el cumplimiento de WCAG 2.0. Esto se puede hacer con la opción [source edit](rich-text-editor.md#aboutplugins) de RTE. Puede especificar la característica [`sourceedit` en el complemento `misctools` &#x200B;](rich-text-editor.md#aboutplugins).
+En algunos casos, los autores de contenido deberán examinar y ajustar el código fuente de HTML creado con RTE. Por ejemplo, un fragmento de contenido creado dentro de RTE puede requerir más marcado para garantizar el cumplimiento de WCAG 2.0. Esto se puede hacer con la opción [source edit](rich-text-editor.md#aboutplugins) de RTE. Puede especificar la característica [`sourceedit` en el complemento `misctools` ](rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
@@ -150,4 +150,4 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Guía rápida de los estándares WCAG](/help/compliance/accessibility/quick-guide-wcag.md)
->* [Cómo crear contenido accesible en el Experience Manager](/help/sites-cloud/authoring/page-editor/accessible-content.md)
+>* [Cómo crear contenido accesible en Experience Manager](/help/sites-cloud/authoring/page-editor/accessible-content.md)

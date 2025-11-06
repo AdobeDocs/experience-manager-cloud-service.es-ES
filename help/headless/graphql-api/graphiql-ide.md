@@ -4,10 +4,10 @@ description: Aprenda a utilizar el IDE de GraphiQL en Adobe Experience Manager.
 feature: Headless, Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 90%
+source-wordcount: '1135'
+ht-degree: 88%
 
 ---
 
@@ -25,6 +25,7 @@ Hay una implementación del IDE de [GraphiQL](https://graphql.org/learn/serving-
 >Debe tener [configurados los puntos de conexión](/help/headless/graphql-api/graphql-endpoint.md) en el [explorador de configuración](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) antes de utilizar el IDE de GraphiQL.
 
 La herramienta **GraphiQL** le permite probar y depurar sus consultas de GraphQL permitiéndole lo siguiente:
+
 * seleccionar el **punto de conexión** adecuado para la configuración de sitios que desee utilizar en sus consultas
 * introducir directamente nuevas consultas
 * crear y acceder a **[consultas persistentes](/help/headless/graphql-api/persisted-queries.md)**

@@ -4,9 +4,9 @@ description: Empiece aquí un recorrido guiado a través de la traducción de co
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 100%
 
@@ -18,9 +18,9 @@ Empiece aquí un recorrido guiado a través de la traducción de contenido sin e
 
 ## Introducción {#introduction}
 
-La implementación sin encabezado es cada vez más importante para ofrecer experiencias a su audiencia, independientemente del canal, la región o la configuración regional.
+La implementación sin encabezado es cada vez más importante para ofrecer experiencias a su público, independientemente del canal, la región o la configuración regional.
 
-La implementación sin encabezado renuncia a la administración de páginas y componentes, ya que es tradicional en soluciones de pila completa y se centra en la creación de fragmentos de contenido neutros y reutilizables para el canal y en su entrega multicanal. Mediante las potentes herramientas de traducción de AEM, estos fragmentos reutilizables se pueden traducir fácilmente y enviar a su audiencia dondequiera que se encuentren.
+La implementación sin encabezado renuncia a la administración de páginas y componentes, ya que es tradicional en soluciones de pila completa y se centra en la creación de fragmentos de contenido neutros y reutilizables para el canal y en su entrega multicanal. Mediante las potentes herramientas de traducción de AEM, estos fragmentos reutilizables se pueden traducir fácilmente y enviar a su público dondequiera que se encuentren.
 
 Esta guía le lleva a través de los temas más importantes de la traducción sin encabezado para que al terminar:
 
@@ -41,7 +41,7 @@ Los recorridos de documentación están diseñados en torno a los principios de 
 
 Si quiere saber lo recomienda Adobe para resolver los casos empresariales sin encabezado con AEM, [Los recorridos de AEM sin encabezado](/help/journey-documentation/documentation-journeys.md) es dónde debe empezar.
 
-## Audiencia {#audience}
+## Público {#audience}
 
 Este recorrido está diseñado para el especialista en traducción, a menudo denominado gestor de proyectos de traducción o TPM. Este recorrido establece los requisitos, pasos y métodos para traducir contenido sin encabezado en AEM. El recorrido puede definir usuarios adicionales con los que debe interactuar el especialista en traducción, pero el punto de vista del recorrido es el del especialista en traducción.
 
@@ -51,7 +51,7 @@ Los siguientes son los perfiles que interactúan en este recorrido.
 
 | Grupo de usuarios | Descripción | Rol en el recorrido |
 |---|---|---|
-| Especialista en traducción | Define qué contenido debe traducirse y gestiona esos flujos de trabajo | Audiencia de este recorrido |
+| Especialista en traducción | Define qué contenido debe traducirse y gestiona esos flujos de trabajo | Público de este recorrido |
 | Autor de contenido | Crea y administra contenido que se entrega sin encabezado | Los autores de contenido crean contenido que el especialista en traducción debe traducir. |
 | Administrador | Gestiona la configuración base de AEM | El especialista en traducción trabaja con el administrador para realizar los cambios de configuración necesarios para la traducción, como instalar un conector de traducción. |
 | Arquitecto de contenido | Analiza los requisitos de los datos que deben entregarse sin encabezado y define la estructura de estos datos | Los especialistas en traducción trabajan con el arquitecto de contenido para definir la organización del contenido y así poder traducirlo fácilmente. |

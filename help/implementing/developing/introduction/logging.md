@@ -3,8 +3,8 @@ title: Registro para AEM as a Cloud Service
 description: Obtenga información sobre cómo utilizar el registro para AEM as a Cloud Service con el fin de configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 10%
@@ -158,6 +158,7 @@ Configure el registro java para paquetes Java personalizados mediante las config
 El cambio de otras propiedades de configuración de LogManager OSGi puede provocar problemas de disponibilidad en AEM as a Cloud Service.
 
 Como se indica en una sección anterior, para garantizar una monitorización eficaz de los entornos de los clientes:
+
 * El nivel de registro de la configuración de registro predeterminada de AEM (Configuración de registro de Apache Sling) no debe modificarse a partir de su valor predeterminado &quot;INFO&quot;.
 * Es aceptable establecer los niveles de registro en DEPURACIÓN para paquetes individuales de código de producto (utilizando instancias de la fábrica de configuración OSGi &quot;Configuración del registrador de Apache Sling&quot;), pero utilícela con moderación para evitar la degradación del rendimiento y restaurar a INFO cuando ya no sea necesaria.
 * Es aceptable ajustar los niveles de registro para el código desarrollado por el cliente.
@@ -165,8 +166,10 @@ Como se indica en una sección anterior, para garantizar una monitorización efi
 * La salida de registro debe permanecer dirigida al archivo predeterminado &quot;logs/error.log&quot;.
 
 Para ello, no deben realizarse cambios en las siguientes propiedades OSGi:
+
 * **Configuración del registro de Apache Sling** (PID: `org.apache.sling.commons.log.LogManager`) — *todas las propiedades*
 * **Configuración del registrador de Apache Sling** (PID de fábrica: `org.apache.sling.commons.log.LogManager.factory.config`):
+
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
@@ -588,7 +591,7 @@ Los registros de AEM y los registros de Dispatcher para las regiones de publicac
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
 ```
 
-### El SDK local {#local-sdk}
+### SDK local {#local-sdk}
 
 AEM as a Cloud Service SDK proporciona archivos de registro para admitir el desarrollo local.
 
@@ -630,7 +633,7 @@ Según el tráfico y la cantidad de instrucciones de registro escritas por Debug
 
 Aunque los registros se pueden descargar desde Cloud Manager, para algunas organizaciones resulta beneficioso reenviarlos a un destino de registro preferido. AEM admite registros de flujo continuo a los siguientes destinos:
 
-* Almacenamiento de Azure Blob
+* Azure Blob Storage
 * Datadog
 * HTTPD
 * Elasticsearch (y OpenSearch)

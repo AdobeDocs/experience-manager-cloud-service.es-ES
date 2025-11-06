@@ -1,13 +1,13 @@
 ---
-title: Extraer solicitudes de comprobación de repositorios privados
+title: Comprobaciones de solicitudes de extracción para repositorios privados
 description: Obtenga información sobre cómo controlar las canalizaciones que se crean automáticamente para validar cada solicitud de extracción en un repositorio privado.
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 28%
+ht-degree: 30%
 
 ---
 

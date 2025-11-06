@@ -4,14 +4,14 @@ description: Aprenda a utilizar Forms Experience Builder para crear y administra
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 977f227e-e941-4797-ba74-53d5b8c60ca9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1404'
-ht-degree: 32%
+ht-degree: 74%
 
 ---
-
 
 # Implementación y configuración de Forms Experience Builder
 
@@ -21,7 +21,7 @@ ht-degree: 32%
 
 >[!IMPORTANT]
 >
-> **Documentación sujeta a cambios**: esta documentación se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las funciones, los comandos y los ejemplos pueden cambiar a medida que Forms Experience Builder continúa evolucionando durante el programa de acceso anticipado.
+> **Documentación sujeta a cambios**: esta documentación se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las funciones, los comandos y los ejemplos pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa de acceso anticipado.
 
 Esta guía completa le ayuda a empezar a crear y administrar formularios mediante la tecnología de IA conversacional. Tanto si no tiene experiencia y desea crear su primer formulario, como si tiene conocimientos avanzados y desea aprovechar las sofisticadas funciones, encontrará información detallada y ejemplos prácticos que le guiarán a través de las funcionalidades de Forms Experience Builder.
 
@@ -81,8 +81,8 @@ Para los formularios enviados mediante Edge Delivery Services, el generador est�
 
 | Ejemplo de conversación |   |
 |--------------------------------------------------------------------------------------------------------------------------------------------|---|
-| **Intente esta conversación para crear un formulario de contacto completo (basado en la demostración de la Cumbre):**<br><br>**Usted:** &quot;Cree un formulario de contacto para capturar información personal, como el nombre completo, la dirección de correo electrónico, el número de teléfono, el nombre de la empresa, el puesto y un campo de mensaje para consultas&quot;<br><br>**AI:** Seleccione una plantilla<br>    Lista desplegable para seleccionar una plantilla <br><br>**AI:** Seleccione un tema<br>    Menú desplegable para seleccionar un tema <br><br>**IA:** Crear formulario | ![Su primer formulario](/help/edge/docs/forms/assets/create-form.png) |
-| <br>**AI:** Abrir formulario creado | </br> El formulario se crea y se abre en el editor |
+| **Intente esta conversación para crear un formulario de contacto completo (basado en la demostración de la Cumbre):**<br><br>**Usted:** “Crea un formulario de contacto para capturar información personal, como el nombre completo, la dirección de correo electrónico, el número de teléfono, el nombre de la empresa, el puesto y un campo de mensaje para consultas”<br><br>**IA:** seleccione una plantilla<br>    Lista desplegable para seleccionar una plantilla <br><br>**IA:** seleccione un tema<br>    Menú desplegable para seleccionar un tema <br><br>**IA:** crear formulario | ![Su primer formulario](/help/edge/docs/forms/assets/create-form.png) |
+| <br>**IA:** abrir formulario creado | </br> El formulario se crea y se abre en el editor |
 
 
 ### Comandos esenciales
@@ -91,15 +91,15 @@ Para los formularios enviados mediante Edge Delivery Services, el generador est�
 |--------|---------|---------------|
 | `/` | Acciones rápidas y métodos abreviados | `/create-form contact form`, `/help validation rules`, `/update-layout wizard` |
 | `@` | Hacer referencia a campos de formulario existentes | `@email`, `@firstName`, `Make @phoneNumber required` |
-| Texto sin formato | Conversación natural | &quot;Agregar un campo de número de teléfono requerido&quot;, &quot;Crear validación para correo electrónico&quot; |
+| Texto sin formato | Conversación natural | “Añade un campo de número de teléfono requerido”, “Crea una validación para correo electrónico” |
 
 **Ejemplos de comandos específicos:**
 
 * `/create-form customer survey` - Crea un nuevo formulario de encuesta a clientes
-* `/add-field @email validation` - Agrega validación al campo de correo electrónico existente
+* `/add-field @email validation` - Añade validación al campo de correo electrónico existente
 * `/create-rule show @spouse if @maritalStatus equals married` - Crea una lógica condicional
 * `/configure-submit to email support@company.com` - Configura el envío de correo electrónico
-* `/help multi-step forms`: obtiene ayuda sobre la creación de formularios de varios pasos
+* `/help multi-step forms` - Obtiene ayuda sobre la creación de formularios de varios pasos
 
 ### Sugerencias de éxito
 
@@ -128,63 +128,63 @@ Describa los requisitos de los formularios en lenguaje natural y Forms Experienc
 
 **Incorporaciones básicas:**
 
-    👤 Usted: &quot;Agregar una sección para información personal&quot;
-    👤 Usted: &quot;Incluir una carga de archivo para la reanudación&quot;
-    👤 Usted: &quot;Agregar un menú desplegable para la selección de país&quot;
+    👤 Usted: “añade una sección para información personal”
+    👤 Usted: “incluye una carga de archivo para la reanudación”
+    👤 Usted: “añade un menú desplegable para la selección de país”
 
 **Especificaciones detalladas:**
 
-    👤 Usted: &quot;Agregar un panel de información personal con campos para nombre completo, fecha de nacimiento, número de teléfono y dirección de correo electrónico&quot;
-    👤 Usted: &quot;Incluir un componente de carga de archivos seguro para documentos, limitado a archivos de PDF de menos de 5 MB&quot;
-    👤 Usted: &quot;Agregar un menú desplegable de país con opciones para EE. UU., Canadá, Reino Unido y Alemania&quot;
+    👤 Usted: “añade un panel de información personal con campos para nombre completo, fecha de nacimiento, número de teléfono y dirección de correo electrónico”
+    👤 Usted: “incluye un componente de carga de archivos seguro para documentos, limitado a archivos de PDF de menos de 5 MB”
+    👤 Usted: “añade un menú desplegable de país con opciones para EE. UU., Canadá, Reino Unido y Alemania”
 
 #### Creación de un comportamiento dinámico
 
 **Lógica simple:**
 
-    👤 Usted: &quot;Mostrar campos adicionales cuando se selecciona &#39;Otro&#39;&quot;
-    🤖 AI: &quot;Se creó una regla condicional que muestra campos adicionales cuando se elige &#39;Otro&#39;&quot;
+    👤 Usted: “Muestra campos adicionales cuando se selecciona &#39;Otro&#39;”
+    🤖 IA: “Se creó una regla condicional que muestra campos adicionales cuando se elige &#39;Otro&#39;”
     
-    👤 Usted: &quot;Hacer que el campo de correo electrónico sea obligatorio&quot;
-    🤖 AI: &quot;Se ha actualizado el campo de correo electrónico para que sea necesario con la validación&quot;
+    👤 Usted: “Haz que el campo de correo electrónico sea obligatorio”
+    🤖 IA: “Se ha actualizado el campo de correo electrónico para que sea obligatorio con la validación&quot;
     
-    👤 Usted: &quot;Calcular el total automáticamente&quot;
-    🤖 AI: &quot;Se ha agregado la lógica de cálculo para calcular los totales automáticamente&quot;
+    👤 Usted: “Calcula el total automáticamente”
+    🤖 IA: “Se ha añadido la lógica de cálculo para calcular los totales automáticamente”
 
 **Reglas empresariales complejas:**
 
-    👤 Usted: &quot;Mostrar los campos de información del cónyuge solamente cuando el estado civil está establecido en &#39;Casado&#39;&quot;
-    🤖 AI: &quot;Se creó una regla condicional que muestra los campos del cónyuge basados en el estado civil&quot;
+    👤 Usted: “Muestra los campos de información del cónyuge solamente cuando el estado civil está establecido en &#39;Casado&#39;”
+    🤖 IA: “Se creó una regla condicional que muestra los campos del cónyuge basados en el estado civil”
     
-    👤 Usted: &quot;Calcula el costo total multiplicando la cantidad y el precio, luego agrega el 10% de impuestos&quot;
-    🤖 AI: &quot;Se agregó la lógica de cálculo con el cálculo de cantidad, precio e impuestos&quot;
+    👤 Usted: “Calcula el costo total multiplicando la cantidad y el precio, luego añade el 10 % de impuestos”
+    🤖 IA: “Se añadió la lógica de cálculo con el cálculo de cantidad, precio e impuestos”
     
-    👤 Usted: &quot;Habilita el botón de envío solo cuando se completan todos los campos obligatorios y se aceptan los términos&quot;
-    🤖 AI: &quot;Se creó la lógica de validación que permite el envío solo cuando se cumplen todas las condiciones&quot;
+    👤 Usted: “Habilita el botón de envío solo cuando se completan todos los campos obligatorios y se aceptan los términos”
+    🤖 IA: “Se creó la lógica de validación que permite el envío solo cuando se cumplen todas las condiciones”
 
 #### Diseño y presentación del formulario
 
 **Cambios en el diseño:**
 
-    👤 Usted: &quot;Convertir este formulario en un formulario de varios pasos&quot;
-    🤖 AI: &quot;Se convirtió el formulario en un diseño progresivo con navegación&quot;
+    👤 Usted: “Convierte este formulario en un formulario de varios pasos”
+    🤖 IA: “Se convirtió el formulario en un diseño progresivo con navegación”
     
-    👤 Usted: &quot;Organizar campos en dos columnas&quot;
-    🤖 AI: &quot;Se actualizó el diseño para mostrar campos en una disposición de dos columnas&quot;
+    👤 Usted: “Organiza campos en dos columnas”
+    🤖 IA: “Se actualizó el diseño para mostrar campos en una disposición de dos columnas”
     
-    👤 Usted: &quot;Convertir en un diseño de acordeón&quot;
-    🤖 AI: &quot;Se transformó el formulario para utilizar secciones de estilo de acordeón&quot;
+    👤 Usted: “Conviértelo en un diseño de acordeón”
+    🤖 IA: “Se transformó el formulario para utilizar secciones de estilo de acordeón”
 
 **Mejoras en el diseño:**
 
-    👤 Usted: &quot;Crear un formulario de estilo asistente con 3 pasos: información personal, preferencias y revisión&quot;
-    🤖 AI: &quot;Se creó un formulario de asistente con tres pasos y navegación distintos&quot;
+    👤 Usted: “Crea un formulario de estilo asistente con 3 pasos: información personal, preferencias y revisión”
+    🤖 IA: “Se creó un formulario de asistente con tres pasos y navegación distintos”
     
-    👤 Usted: &quot;Organizar los campos de dirección en un diseño compacto de dos columnas&quot;
-    🤖 AI: &quot;Campos de dirección organizados en un formato compacto de dos columnas&quot;
+    👤 Usted: “Organiza los campos de dirección en un diseño compacto de dos columnas”
+    🤖 IA: “Campos de dirección organizados en un formato compacto de dos columnas”
     
-    👤 Usted: &quot;Actualizar el diseño para que coincida con el modelo de alambres adjunto&quot;
-    🤖 AI: &quot;Se ha modificado el diseño para que coincida con la referencia de diseño proporcionada&quot;
+    👤 Usted: “Actualiza el diseño para que coincida con la malla metálica adjunta”
+    🤖 IA: “Se ha modificado el diseño para que coincida con la referencia de diseño proporcionada”
 
 ### Enviar configuración
 
@@ -200,14 +200,14 @@ Forms Experience Builder puede configurar varios puntos finales de envío para c
 
 **Ejemplos de configuración de envío avanzada:**
 
-    👤 Usted: &quot;Enviar envíos de formularios a hr@company.com y crear un caso en nuestro sistema CRM&quot;
-    🤖 AI: &quot;Envío de correo electrónico configurado y acción de envío de CRM&quot;
+    👤 Usted: “Envía envíos de formularios a hr@company.com y crea un caso en nuestro sistema CRM”
+    🤖 IA: “Envío de correo electrónico configurado y acción de envío de CRM”
     
-    👤 Usted: &quot;Enviar datos a nuestro extremo de API de REST y déclencheur el nuevo flujo de trabajo del cliente&quot;
-    🤖 AI: &quot;Configurar el envío de API de REST con déclencheur de flujo de trabajo&quot;
+    👤 Usted: “Envía datos a nuestro punto final de API de REST y activa el nuevo flujo de trabajo del cliente”
+    🤖 IA: “Configurado el envío de API de REST con activadores de flujo de trabajo”
     
-    👤 Usted: &quot;Enviar respuestas por correo electrónico al equipo de ventas y agregar el posible cliente a nuestra plataforma de automatización de marketing&quot;
-    🤖 AI: &quot;Envío multicanal configurado con automatización de correo electrónico y marketing&quot;
+    👤 Usted: “Envía respuestas por correo electrónico al equipo de ventas y añade el posible cliente a nuestra plataforma de automatización de marketing”
+    🤖 IA: “Envío multicanal configurado con automatización de correo electrónico y marketing”
 
 
 
@@ -220,13 +220,13 @@ Forms Experience Builder puede configurar varios puntos finales de envío para c
 
 Cree una lógica empresarial y de validación sofisticada que responda a las interacciones del usuario y garantice la integridad de los datos:
 
-    👤 Usted: &quot;Mostrar la sección de direcciones solo si el usuario selecciona &#39;Enviar a otra dirección&#39;&quot;
-    🤖 AI: &quot;Se creó una regla condicional que muestra/oculta el panel de direcciones según la selección de la casilla de verificación&quot;
+    👤 Usted: “Muestra la sección de direcciones solo si el usuario selecciona &#39;Enviar a otra dirección&#39;”
+    🤖 IA: “Se creó una regla condicional que muestra/oculta el panel de direcciones según la selección de la casilla de verificación”
 
 ### Creación de formularios de varios pasos
 
-    👤 Usted: &quot;Crear un formulario progresivo con 3 pasos: información personal, preferencias, confirmación&quot;
-    🤖 AI: &quot;Se creó un formulario progresivo con navegación entre pasos y validación en cada fase&quot;
+    👤 Usted: “Crea un formulario progresivo con 3 pasos: información personal, preferencias, confirmación”
+    🤖 IA: “Se creó un formulario progresivo con navegación entre pasos y validación en cada fase”
 
 ### Tipos de campo avanzados
 
@@ -238,8 +238,8 @@ Cree una lógica empresarial y de validación sofisticada que responda a las int
 
 ### Conversión de PDF a formulario
 
-    👤 Usted: &quot;Convertir este PDF en un formulario interactivo&quot;
-    🤖 AI: &quot;Analizó el PDF y creó un formulario con los tipos de campo y la validación adecuados&quot;
+    👤 Usted: “Convierte este PDF en un formulario interactivo”
+    🤖 IA: “Se analizó el PDF y se creó un formulario con los tipos de campo y la validación adecuados”
 
 
 

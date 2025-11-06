@@ -2,9 +2,9 @@
 title: Creación de componentes personalizados para un formulario EDS
 description: Crear componentes personalizados para un formulario EDS
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2103'
 ht-degree: 99%
@@ -505,13 +505,13 @@ La forma heredada de hacerlo es seguir manualmente los pasos que se describen a 
 
 10. **Actualice _component-definition.json**: en `models/_component-definition.json`, actualice la matriz dentro del grupo con `id custom-components` con un objeto de la siguiente manera:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Esto es para proporcionar la referencia al nuevo componente de tarjetas que se va a crear con el resto de los componentes
+   Esto es para proporcionar la referencia al nuevo componente de tarjetas que se va a crear con el resto de los componentes
 
 11. **Ejecute la compilación:json script**: Ejecute `npm run build:json` para compilar y combinar todas las definiciones JSON de componentes en un solo archivo que se servirá desde el servidor. Esto garantiza que el esquema del nuevo componente se incluya en la salida combinada.
 

@@ -3,8 +3,8 @@ title: 'Reglamentos de protección de datos y privacidad de datos: preparación 
 description: Obtenga información acerca de la compatibilidad de Adobe Experience Manager as a Cloud Service AEM con los distintos reglamentos de protección y privacidad de datos, y cómo cumplirlas al implementar un nuevo proyecto de AEM as a Cloud Service. Estas regulaciones incluyen el Reglamento general de protección de datos (RGPD) de la UE y la Ley de Privacidad del Consumidor de California.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 100%
@@ -99,6 +99,6 @@ Consulte la [Preparación de AEM Sites para el reglamento general de protección
 Las integraciones de Adobe Experience Manager as a Cloud Service con Adobe Target y Adobe Analytics se implementan con servicios preparados para la protección de datos y la privacidad (por ejemplo, RGPD). No se almacenan datos personales de Adobe Target o Adobe Analytics en AEM en relación con las integraciones.
 Para obtener más información, consulte lo siguiente:
 
-* [Adobe Target: Información general de privacidad](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=es)
+* [Adobe Target: Información general de privacidad](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
 
 * [Flujo de trabajo de privacidad de datos de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=es)

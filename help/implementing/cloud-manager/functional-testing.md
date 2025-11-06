@@ -4,8 +4,8 @@ description: Obtenga información sobre los tres tipos diferentes de pruebas fun
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 5%
@@ -58,7 +58,7 @@ El diagrama siguiente proporciona una vista detallada de las puertas de calidad 
 
 Se recomienda proporcionar las pruebas unitarias para la aplicación de AEM, que son la base de cada estrategia de prueba. Están pensados para correr rápido y a menudo y dar una respuesta temprana y rápida. Están totalmente integrados en los flujos de trabajo de los desarrolladores, su propio CD/CI y las canalizaciones de implementación del servicio en la nube de AEM.
 
-Se implementan mediante JUnit y se ejecutan con Maven. Consulte el [módulo principal del tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) para ver un ejemplo de prueba unitaria de AEM y cómo empezar.
+Se implementan mediante JUnit y se ejecutan con Maven. Consulte el [módulo principal del tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) para ver un ejemplo de prueba unitaria de AEM y cómo empezar.
 
 ### Calidad de código
 

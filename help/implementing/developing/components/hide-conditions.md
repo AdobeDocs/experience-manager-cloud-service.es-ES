@@ -3,8 +3,8 @@ title: Uso de Ocultar condiciones
 description: Ocultar condiciones se puede utilizar para determinar si un recurso de componente se procesa o no.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Uso de Ocultar condiciones {#using-hide-conditions}
 
-Ocultar condiciones se puede utilizar para determinar si un recurso de componente se procesa o no. Un ejemplo de esto sería cuando un autor de plantillas configure el componente principal [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=es) en el [editor de plantillas](/help/sites-cloud/authoring/page-editor/templates.md) y decida deshabilitar las opciones para generar la lista basada en páginas secundarias. Al deshabilitar esta opción en el cuadro de diálogo de diseño, se establece una propiedad de modo que cuando se procese el componente de lista, se evalúe la condición de ocultar y no se muestre la opción para mostrar páginas secundarias.
+Ocultar condiciones se puede utilizar para determinar si un recurso de componente se procesa o no. Un ejemplo de esto sería cuando un autor de plantillas configure el componente principal [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) en el [editor de plantillas](/help/sites-cloud/authoring/page-editor/templates.md) y decida deshabilitar las opciones para generar la lista basada en páginas secundarias. Al deshabilitar esta opción en el cuadro de diálogo de diseño, se establece una propiedad de modo que cuando se procese el componente de lista, se evalúe la condición de ocultar y no se muestre la opción para mostrar páginas secundarias.
 
 ## Información general {#overview}
 
@@ -49,9 +49,9 @@ Al definir la expresión Hide, tenga en cuenta:
 * Los valores son de solo lectura.
 * Las funciones (si es necesario) deben limitarse a un conjunto determinado proporcionado por el servicio.
 
-## Ejemplos {#example}
+## Ejemplo {#example}
 
-AEM Se pueden encontrar ejemplos de condiciones de ocultación en todo el sitio y en los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) en particular. Por ejemplo, considere el [componente principal de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=es) tal como se implementó en el [tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+Se pueden encontrar ejemplos de condiciones de ocultación en AEM y en los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) en particular. Por ejemplo, considere el [componente principal de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) tal como se implementó en el [tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 [Con el editor de plantillas](/help/sites-cloud/authoring/page-editor/templates.md), el autor de la plantilla puede definir en el cuadro de diálogo de diseño qué opciones del componente de lista están disponibles para el autor de la página. Pueden habilitarse o deshabilitarse opciones como permitir que la lista sea una lista estática, una lista de páginas secundarias, una lista de páginas etiquetadas, etc.
 

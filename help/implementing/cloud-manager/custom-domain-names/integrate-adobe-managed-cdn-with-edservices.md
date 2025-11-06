@@ -3,10 +3,10 @@ title: Integración de Edge Delivery Services con CDN administrada por Adobe en 
 description: null
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Edge Delivery Services se puede configurar mediante una de las dos opciones sigu
 |  | Opción de implementación | Documento de clave | Capacidad | Ideal para |
 | --- | --- | --- | --- | --- |
 | Opción 1 | *Con* un entorno de AEM as a Cloud Service (AEMaaCS) existente | [Configurar un proxy desde un entorno existente](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment) | La canalización de configuración suele estar disponible para entornos AEMaaCS | Equipos que ya ejecutan Sites en Cloud Manager y desean un aumento rápido y de bajo riesgo del rendimiento. |
-| Opción 2 | *Sin* un entorno AEMaaCS existente; conocido como &quot;entorno Edge&quot; independiente. | [Configurar un sitio de Edge Delivery sin un entorno existente](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | Actualmente, la canalización de configuración solo está disponible para entornos de Edge a través del programa limitado de Beta.<br>Consulte [Agregar canalización de configuración de Edge Delivery](help/implementing/cloud-manager/release-notes/current.md##add-eds-pipeline). | Nuevas compilaciones o migraciones que deseen adoptar la arquitectura de Edge Delivery completa y el enrutamiento granular. |
+| Opción 2 | *Sin* un entorno AEMaaCS existente; conocido como &quot;entorno Edge&quot; independiente. | [Configurar un sitio de Edge Delivery sin un entorno existente](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | Actualmente, la canalización de configuración solo está disponible para entornos de Edge a través del programa limitado de Beta.<br>Consulte [Agregar canalización de configuración de Edge Delivery](/help/implementing/cloud-manager/release-notes/current.md#add-eds-pipeline). | Nuevas compilaciones o migraciones que deseen adoptar la arquitectura de Edge Delivery completa y el enrutamiento granular. |
 
 <!-- Ultimately this URL above will need to be updated on GA -->
 

@@ -4,7 +4,7 @@ description: Notas de la versión 2023.8.0 de la versión de  [!DNL Adobe Experi
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 100%
@@ -36,6 +36,7 @@ Echa un vistazo al vídeo Información general sobre la versión de agosto de 20
   ![Nuevo editor de fragmentos de contenido](/help/release-notes/assets/newCFEditor.png)
 
 El nuevo editor de fragmentos de contenido ofrece las siguientes ventajas que no están disponibles en el editor original:
+
 * Guardado automático para mejorar la eficacia de la creación y evitar la pérdida accidental de ediciones.
 * Vista jerárquica de un fragmento de contenido y sus referencias mediante el árbol de estructura para una navegación rápida dentro de un fragmento profundamente estructurado.
   ![Árbol de estructura en el editor de fragmentos de contenido](/help/release-notes/assets/newCFEditor_StructureTree.png)
@@ -90,7 +91,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * Experience Manager Assets ahora incluye la nueva versión 9 del índice de `damAssetLucene`. `damAssetLucene-9` cambia el comportamiento del recuento de facetas de Oak Query [ para dejar de evaluar el control de acceso en los recuentos de facetas ](/help/assets/search-assets.md) devueltos por el índice de búsqueda subyacente, lo que resulta en tiempos de respuesta de búsqueda más rápidos.
 
-### Funciones previas al lanzamiento disponibles en [!DNL Experience Manager Assets] {#prerelease-features-assets}
+### Funciones de versión preliminar disponibles en [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
 * **Dynamic Media**: [compatibilidad con subtítulos y pistas de audio múltiples para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma). Ahora se pueden añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
@@ -108,7 +109,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * [**Soporte Google reCAPTCHA Enterprise**](/help/forms/captcha-adaptive-forms.md): utilice Google reCAPTCHA Enterprise en un formulario adaptable para obtener una protección mejorada contra la actividad fraudulenta, el correo no deseado y una experiencia de usuario más segura. Con un análisis de riesgos avanzado y una integración optimizada, los usuarios compradores pueden enviar fácilmente formularios mientras los bots están bloqueados de manera efectiva.
 
 
-### Nuevas funciones disponibles en [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### Funciones de versión preliminar disponibles en [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
 * **Adobe Analytics con automatización de la configuración de Experience Cloud para Forms**: ahora se puede habilitar Adobe Analytics con la automatización de la configuración de Experience Cloud con un par de botones. Esto permite conectar AEM Forms as a Cloud Service con las etiquetas de Experience Platform y Adobe Analytics para capturar y rastrear las métricas de rendimiento de los formularios publicados.
 

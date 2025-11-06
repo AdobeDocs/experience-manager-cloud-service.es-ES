@@ -4,8 +4,8 @@ description: Introducción al uso de las funciones de Adobe Experience Manager a
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
@@ -23,7 +23,7 @@ Este documento le ayuda a comprender la entrega de contenido sin encabezado, có
 
 ## Objetivo {#objective}
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: introducir los conceptos y la terminología relevantes para el Modelado de contenido sin encabezado.
 
 ## Entrega de contenido de pila completa {#full-stack}
@@ -81,7 +81,7 @@ Ahora que ha aprendido los conceptos y la terminología, el siguiente paso consi
 
 ## Recursos adicionales {#additional-resources}
 
-* Recorrido para desarrolladores de AEM sin encabezado
+* Recorrido para desarrolladores de AEM headless
    * [Obtenga más información acerca del desarrollo de CMS sin encabezado](/help/journey-headless/developer/learn-about.md)
    * [Aprenda cómo modelar el contenido](/help/journey-headless/developer/model-your-content.md)
 

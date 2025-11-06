@@ -3,8 +3,8 @@ title: Herramientas para desarrolladores de AEM para Eclipse
 description: Aprenda a utilizar AEM Developer Tools para Eclipse, un complemento de Eclipse basado en el complemento de Eclipse para Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 676a10a98f850dbc803b2c7b367a61fce51089f4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 2%
@@ -121,7 +121,7 @@ Siga estos pasos para crear el proyecto de ejemplo:
 
    >[!TIP]
    >
-   >Para obtener más información sobre la depuración del proyecto que se ejecuta en un SDK de AEM local, consulte el documento [Depuración remota de SDK de AEM.](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+   >Para obtener más información sobre la depuración del proyecto que se ejecuta en un SDK de AEM local, consulte el documento [Depuración remota de SDK de AEM.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
 
 1. Haga clic en **Finalizar**.
 

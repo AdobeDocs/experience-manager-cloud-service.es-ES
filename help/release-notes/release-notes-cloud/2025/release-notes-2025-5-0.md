@@ -4,10 +4,10 @@ description: Notas de la versión 2025.5.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: b7a21533-9db1-4111-814c-cab917041be4
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2162'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de mayo de 2025 para ver un resumen de las funciones añadidas en la versión 2025.5.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464353?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,7 +58,7 @@ AEM Assets se integra de forma nativa con Figma, lo que permite a los diseñador
 
 **Control de acceso basado en atributos (ABAC)**
 
-[El centro de contenido ahora le permite aplicar restricciones basadas en reglas para acceder a los recursos](/help/assets/attribute-based-access-control.md). Los permisos de recursos garantizan el control y también se aseguran de que solo los recursos relevantes sean accesibles para los usuarios.
+[El centro de contenido ahora le permite aplicar restricciones basadas en reglas para acceder a los recursos](/help/assets/attribute-based-access-control.md). Los permisos de recursos garantizan el control y también aseguran que los usuarios solo puedan acceder a los recursos relevantes.
 
 Las reglas de restricción de recursos se basan en metadatos y, si las condiciones definidas en la regla coinciden con los metadatos del recurso, este se muestra a los grupos de usuarios.
 
@@ -108,11 +108,11 @@ Acceda a todas las [representaciones de ajustes preestablecidos y recortes intel
 
 [Integración nativa de Experience Manager (AEM) Dynamic Media con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/content-management/combine/aem-dynamic), lo que permite a los expertos en marketing incrustar fácilmente los recursos de Dynamic Media de AEM (representación y plantilla de DM) en el contenido de AJO y ofrecer actualizaciones en tiempo real y experiencias personalizadas al máximo en todos los canales.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463785/?learn=on&enablevpops=&autoplay=true&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Características previas al lanzamiento
+### Características de versión preliminar
 
 * [Editor universal para formularios adaptables y fragmentos de formulario](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): ahora el editor universal permite crear formularios adaptables y fragmentos de formulario reutilizables. Los autores pueden crear formularios de forma visual, configurar acciones de envío y añadir la validación reCAPTCHA, todo ello en un entorno de creación simplificado de WYSIWYG. Esta posibilidad acelera la creación de formularios, mejora la coherencia y la protección contra el correo no deseado y el uso indebido automatizado.
 
@@ -150,6 +150,7 @@ Amplíe la lista siguiente para ver las API y las configuraciones de OSGi en des
   <summary>Amplíe para ver qué va a quedar en desuso</summary>
 
 API de Java:
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`

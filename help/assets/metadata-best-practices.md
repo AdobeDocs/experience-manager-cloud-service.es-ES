@@ -4,7 +4,7 @@ description: Conozca las prácticas recomendadas sobre metadatos para administra
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%
@@ -97,7 +97,7 @@ Determine de dónde proviene la información y examine los detalles de la estrat
 
 >[!NOTE]
 >
->Aprenda a [administrar metadatos de sus recursos digitales](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=es).
+>Aprenda a [administrar metadatos de sus recursos digitales](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Ser coherente con la estrategia de metadatos
 
@@ -107,11 +107,13 @@ En la administración de metadatos en toda la empresa, la coherencia es importan
 
 Estas son algunas de las prácticas recomendadas a seguir:
 
-* **Evitar valores duplicados:** Si tiene una colección de imágenes de una campaña de marketing, use nombres coherentes y evite duplicados.<br>
-Por ejemplo, en lugar de usar nombres duplicados como *campaign_image_001* y *campaign_image_002*, implemente una convención de nombres sistemática como *event_promotion* y *product_launch*, que garantice una identificación clara y ordenada.
+* **Evitar valores duplicados:** Si tiene una colección de imágenes de una campaña de marketing, use nombres coherentes y evite duplicados.
 
-* **Use vocabularios controlados de forma eficaz:** Implemente vocabularios controlados empleando términos estandarizados para las etiquetas. Aprenda a implementar [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md) de forma eficaz.  <br>
-Por ejemplo, use términos como *product_launch* o *event_promotion* de forma consistente al etiquetar imágenes con temas para mantener una secuencia sistemática.
+  Por ejemplo, en lugar de usar nombres duplicados como *campaign_image_001* y *campaign_image_002*, implemente una convención de nombres sistemática como *event_promotion* y *product_launch*, que garantice una identificación clara y ordenada.
+
+* **Use vocabularios controlados de forma eficaz:** Implemente vocabularios controlados empleando términos estandarizados para las etiquetas. Aprenda a implementar [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md) de forma eficaz.
+
+  Por ejemplo, use términos como *product_launch* o *event_promotion* de forma consistente al etiquetar imágenes con temas para mantener una secuencia sistemática.
 
 * **Mantener la precisión y la integridad:** Para mantener la coherencia, la precisión, la integridad y la alineación de los metadatos en varios orígenes son cruciales.
 Por ejemplo, al agregar metadatos a un documento de PDF, compruebe que detalles como los nombres de autor y las palabras clave sean precisos y completos.
@@ -136,7 +138,7 @@ Puede agregar varias palabras clave y organizarlas según su prioridad.
    1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 Busque el recurso con las palabras clave agregadas. El recurso aparece entre los resultados de búsqueda principales.
 
-  Aprenda a [aumentar la búsqueda en Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=es).
+  Aprenda a [aumentar la búsqueda en Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 * **Campos de metadatos personalizados:** Personalice los campos de metadatos para capturar información adicional sobre los recursos. Por ejemplo, agregue campos específicos para los detalles del proyecto, la información de copyright o cualquier otro dato relevante que mejore las capacidades de búsqueda. Aprenda [a editar o agregar metadatos personalizados](meta-edit.md) en Experience Manager Assets.
 
@@ -162,8 +164,8 @@ Pruebe las siguientes prácticas recomendadas para simplificar los metadatos:
 
 ### Analizar recorrido de contenido
 
-Examine la cadena de suministro de contenido para encontrar fuentes de metadatos e incluir a todas las partes interesadas, empezando por la parte superior, para obtener un enfoque exhaustivo de las prácticas recomendadas. Incluir a diferentes miembros del personal para garantizar un apoyo completo en toda la organización. <br>Incorpore metadatos en varias etapas para compartir la responsabilidad de proporcionar detalles de recursos durante la carga. Por ejemplo, integrar [!DNL Experience Manager Assets] y [!DNL Workfront] ofrece beneficios sustanciales en términos de administración de metadatos, mejorando la eficiencia y la colaboración en la creación y administración de contenido. Esta integración garantiza la sincronización efectiva de los metadatos de los recursos vinculados, actualizando automáticamente los detalles del proyecto cuando se realizan cambios en [!DNL Workfront].
+Examine supply chain de contenido para encontrar fuentes de metadatos e incluir a todas las partes interesadas, empezando por la parte superior, para obtener un enfoque exhaustivo de las prácticas recomendadas. Incluir a diferentes miembros del personal para garantizar un apoyo completo en toda la organización. <br>Incorpore metadatos en varias etapas para compartir la responsabilidad de proporcionar detalles de recursos durante la carga. Por ejemplo, integrar [!DNL Experience Manager Assets] y [!DNL Workfront] ofrece beneficios sustanciales en términos de administración de metadatos, mejorando la eficiencia y la colaboración en la creación y administración de contenido. Esta integración garantiza la sincronización efectiva de los metadatos de los recursos vinculados, actualizando automáticamente los detalles del proyecto cuando se realizan cambios en [!DNL Workfront].
 
 Comunicar los objetivos, el progreso, los hitos y los desafíos desde el principio para recibir las aportaciones y la cooperación de todas las partes interesadas. Fomente la colaboración en toda la organización para crear procesos eficientes y metadatos valiosos.
 
-Obtenga más información acerca de [metadatos y sus conceptos relacionados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=es) para administrar de manera eficaz sus metadatos de Experience Manager.
+Obtenga más información acerca de [metadatos y sus conceptos relacionados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) para administrar de manera eficaz sus metadatos de Experience Manager.

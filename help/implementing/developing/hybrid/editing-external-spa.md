@@ -3,9 +3,9 @@ title: Edición de un SPA externo dentro de AEM
 description: En este documento se describen los pasos recomendados para cargar un SPA independiente en una instancia de AEM, añadir secciones de contenido editables y habilitar la creación.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2370'
 ht-degree: 1%
@@ -28,9 +28,9 @@ En este documento se describen los pasos recomendados para cargar un SPA indepen
 Los requisitos previos son simples.
 
 * Asegúrese de que una instancia de AEM se esté ejecutando localmente.
-* Cree un proyecto base de la SPA de AEM con [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es&#available-properties).
+* Cree un proyecto base de la SPA de AEM con [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Forms es la base del proyecto de AEM que se actualiza para incluir el SPA externo.
-   * Para los ejemplos de este documento, Adobe está usando el punto de partida de [el proyecto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es#spa-editor).
+   * Para los ejemplos de este documento, Adobe está usando el punto de partida de [el proyecto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Tenga a mano el SPA de React externo de trabajo que desea integrar.
 
 ## Cargar SPA en un proyecto de AEM {#upload-spa-to-aem-project}
@@ -372,10 +372,10 @@ El componente RemotePage espera que la implementación proporcione un manifiesto
 
 El siguiente material de referencia puede resultar útil para comprender las SPA en el contexto de AEM.
 
-* [Modelos con encabezado y sin encabezado en AEM](/help/implementing/developing/headful-headless.md)
+* [Modelos con y sin encabezado en AEM](/help/implementing/developing/headful-headless.md)
 * [El arquetipo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 * [El proyecto de SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es)
 * [Introducción a SPA en AEM con React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [Materiales de referencia de SPA (referencias de API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [Modelo SPA y PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
-* [Enrutamiento de modelo SPA](/help/implementing/developing/hybrid/routing.md)
+* [Enrutamiento de modelos de SPA](/help/implementing/developing/hybrid/routing.md)

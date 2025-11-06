@@ -4,8 +4,8 @@ description: Obtenga información sobre cómo determinar si la configuración de
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 25%
@@ -21,7 +21,7 @@ Obtenga información sobre cómo determinar si la configuración de DNS se resue
 
 Un nombre de dominio personalizado no puede servir tráfico en directo hasta que el DNS se resuelva correctamente. En Cloud Manager, puede determinar si su nombre de dominio se resuelve correctamente en el sitio web de AEM as a Cloud Service.
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
 Complete estos requisitos antes de comprobar el estado de un registro DNS mediante Cloud Manager.
 
@@ -52,6 +52,6 @@ Un dominio personalizado puede tener uno de los siguientes estados en Cloud Mana
 | Resolución de DNS en curso | La resolución está en curso. Este estado suele verse después de seleccionar el icono **Resolver de nuevo** junto al estado. |
 | Las DNS se han resuelto correctamente | La configuración de DNS es correcta. El sitio está sirviendo a los visitantes. |
 
-## Pasos siguientes {#next-steps}
+## Próximos pasos {#next-steps}
 
 Ha configurado correctamente su dominio personalizado para utilizarlo con Cloud Manager. Consulte el documento [Administrar nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para obtener más información sobre cómo administrar los nombres de dominio personalizados mediante Cloud Manager.

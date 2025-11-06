@@ -4,8 +4,8 @@ description: En esta parte del Recorrido para desarrolladores de contenido sin e
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
@@ -39,15 +39,15 @@ Este documento le ayudará a comprender el contenido sin encabezado de AEM dentr
 
 Antes de poder definir el proyecto sin encabezado dentro de AEM, es importante comprender algunos conceptos básicos.
 
-### Ejemplo de autor {#author}
+### Instancia de autor {#author}
 
-En su versión más sencilla, AEM consta de un ejemplo de autor y un [ejemplo de publicación](#publish) que trabajan juntos para crear, gestionar y publicar el contenido.
+En su versión más sencilla, AEM consta de una instancia de autor y una [instancia de publicación](#publish) que trabajan juntos para crear, gestionar y publicar el contenido.
 
-El contenido comienza con el ejemplo del autor. Aquí es donde los autores crean su contenido. El entorno de creación ofrece varias herramientas para que los autores creen, organicen y reutilicen su contenido.
+El contenido comienza con la instancia de autor. Aquí es donde los autores crean su contenido. El entorno de creación ofrece varias herramientas para que los autores creen, organicen y reutilicen su contenido.
 
 ### Instancia de publicación {#publish}
 
-Una vez creado el contenido en el ejemplo de autor, debe publicarse para que esté disponible para otros servicios que lo consuman. Una instancia de publicación contiene todo el contenido que se ha publicado.
+Una vez creado el contenido en la instancia de autor, debe publicarse para que esté disponible para otros servicios que lo consuman. Una instancia de publicación contiene todo el contenido que se ha publicado.
 
 ### Servicio de previsualización {#preview}
 
@@ -55,13 +55,13 @@ Antes de publicar en la instancia de publicación, también puede publicar el fr
 
 ### Replicación {#replication}
 
-La replicación es el acto de transferir contenido del ejemplo de autor al ejemplo de publicación. Esto se hace automáticamente AEM cuando un autor u otro usuario con los derechos adecuados publica contenido.
+La replicación es el acto de transferir contenido de la instancia de autor a la instancia de publicación. Esto se hace automáticamente AEM cuando un autor u otro usuario con los derechos adecuados publica contenido.
 
 ### Resumen de fundamentos de AEM {#aem-basics-summary}
 
 En su nivel más sencillo, la creación de experiencias digitales en AEM requiere los siguientes pasos:
 
-1. Sus autores de contenido crean su contenido sin encabezado en el ejemplo de autor.
+1. Los autores de contenido crean su contenido sin encabezado en la instancia de autor.
 1. Cuando este contenido está listo, se replica en el ejemplo de publicación.
 1. Luego se puede llamar a las API para recuperar este contenido.
 
@@ -114,7 +114,7 @@ Este nivel de integración se basa en el primer nivel, pero también permite que
 
 Este nivel tiene la ventaja de permitir que los autores de contenido creen contenido de forma flexible de AEM de forma progresiva, con su contenido presentado en contexto con una SPA externa integrada, a la vez que siguen entregando el contenido sin encabezado.
 
-#### Nivel 3: incrustar y activar completamente la SPA en AEM, modelo híbrido {#level-3}
+#### Nivel 3: incrustar y habilitar completamente la SPA en AEM, modelo híbrido {#level-3}
 
 Este nivel de integración se basa en el nivel dos al permitir que la mayoría del contenido de la SPA externa se pueda editar dentro de AEM.
 
@@ -287,7 +287,7 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin 
 * Una [Introducción a AEM como CMS sin encabezado](/help/headless/introduction.md)
 * El [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
 * [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.
-* [Administración de contenido sin encabezado mediante las API de GraphQL](https://experienceleague.adobe.com/es?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=es#courses): siga este curso para obtener una descripción general de la API de GraphQL implementada en AEM. Se requiere autenticación con AdobeID.
+* [Administración de contenido sin encabezado mediante las API de GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=es#courses): siga este curso para obtener una descripción general de la API de GraphQL implementada en AEM. Se requiere autenticación con AdobeID.
 * [AEM Guides de WKND, GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): este proyecto de GitHub incluye aplicaciones de ejemplo que destacan las API de GraphQL de AEM.
 * [Conceptos sobre la creación](/help/sites-cloud/authoring/author-publish.md): documentación técnica para el entorno de creación de AEM que incluye detalles sobre la configuración de creación y publicación
 * [Publicación de páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md): documentación técnica para la publicación de contenido en AEM

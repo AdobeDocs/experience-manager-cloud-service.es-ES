@@ -1,11 +1,11 @@
 ---
-title: Tablero de licencias
-description: Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
+title: Panel de control de licencias
+description: Cloud Manager proporciona un panel de control para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 23%
@@ -19,7 +19,7 @@ Cloud Manager proporciona un tablero para facilitar la visualización de las aut
 
 >[!IMPORTANT]
 >
->El tablero de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
+>El tablero de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
 >
 >Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte [Navegación por la interfaz de usuario de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -37,9 +37,9 @@ El panel de licencias de Cloud Manager proporciona un acceso fácil a las autori
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) en el [encabezado de Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Esta acción revela las pestañas.
 1. Haga clic en la opción **Licencia** en la pestaña.
 
-![Tablero de licencias](assets/license-dashboard.png)
+![Panel de control de licencias](assets/license-dashboard.png)
 
-El tablero se divide en tres secciones que le muestran lo siguiente:
+El panel de control se divide en tres secciones que le muestran lo siguiente:
 
 * **Soluciones** - Qué soluciones tiene licencia. Por ejemplo, Sites, Edge Delivery Services y Assets, entre otros.
 

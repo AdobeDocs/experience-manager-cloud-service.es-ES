@@ -3,8 +3,8 @@ title: Introducción al editor universal en AEM
 description: Obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 8e1610e2835a9e85de2d2bffa6a883777c92fe96
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 100%
@@ -131,7 +131,7 @@ Si tiene un proyecto de AEM existente que usa [el editor de páginas](/help/site
 1. Defina para qué rutas de contenido o `sling:resourceType` se debe abrir el editor universal.
 
    * En el campo **Asignación de apertura del editor universal**, proporcione las rutas para las que se abre el editor universal.
-   * En el campo **Sling:resourceTypes, que abrirá el editor universal**, indique una lista de recursos que el editor universal abrirá directamente.
+   * En el campo **Sling:resourceTypes que abrirá el editor universal**, proporcione una lista de recursos que el editor universal abrirá directamente.
 
 1. Haga clic en **Guardar**.
 
@@ -143,19 +143,19 @@ Si tiene un proyecto de AEM existente que usa [el editor de páginas](/help/site
    "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
    ```
 
-Una vez completados estos pasos de configuración, AEM abrirá el editor universal para las páginas en el siguiente orden.
+Una vez completados estos pasos de configuración, AEM abrirá el editor universal para páginas en el siguiente orden.
 
-1. AEM comprobará las asignaciones de `Universal Editor Opening Mapping` y, si el contenido se encuentra en alguna de las rutas definidas, se abrirá para él el editor universal.
+1. AEM comprobará las asignaciones de `Universal Editor Opening Mapping` y, si el contenido se encuentra en alguna de las rutas definidas, se abrirá el editor universal para él.
 1. Para el contenido que no se encuentra en las rutas definidas en `Universal Editor Opening Mapping`, AEM comprueba si el `resourceType` del contenido coincide con los definidos en **Sling:resourceTypes, que abrirá el editor universal**. Si el contenido coincide con uno de esos tipos, el editor universal se abre para él en `${author}${path}.html`.
 1. De lo contrario, AEM abre el editor de páginas.
 
 Las siguientes variables están disponibles para definir las asignaciones en el campo **Asignación de apertura del editor universal**.
 
 * `path`: ruta de contenido del recurso que se va a abrir
-* `localhost`: entrada del externalizador para `localhost` sin esquema, p. ej., `localhost:4502`
-* `author`: entrada del externalizador para el autor sin esquema, p. ej., `localhost:4502`
-* `publish`: entrada del externalizador para la publicación sin esquema, p. ej., `localhost:4503`
-* `preview`: entrada del externalizador para la vista previa sin esquema, p. ej., `localhost:4504`
+* `localhost`: entrada del externalizador para `localhost` sin esquema, p. ej., `localhost:4502`
+* `author`: entrada del externalizador para el autor sin esquema, p. ej., `localhost:4502`
+* `publish`: entrada del externalizador para publicación sin esquema, p. ej., `localhost:4503`
+* `preview`: entrada del externalizador para vista previa sin esquema, p. ej., `localhost:4504`
 * `env`: `prod`, `stage`, `dev` según los modos de ejecución de Sling definidos
 * `token`: token de consulta necesario para `QueryTokenAuthenticationHandler`
 

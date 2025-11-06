@@ -1,17 +1,17 @@
 ---
-title: Ampliación del Administrador de varios sitios
+title: Ampliación del administrador de varios sitios
 description: Obtenga información sobre cómo ampliar la funcionalidad del Administrador de varios sitios.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 1%
+source-wordcount: '2336'
+ht-degree: 2%
 
 ---
 
-# Ampliación del Administrador de varios sitios {#extending-the-multi-site-manager}
+# Ampliación del administrador de varios sitios {#extending-the-multi-site-manager}
 
 Este documento le ayuda a comprender cómo ampliar la funcionalidad del Administrador de varios sitios y abarca los siguientes temas.
 
@@ -169,7 +169,7 @@ La nueva configuración de despliegue está disponible al establecer configuraci
 
 Para crear una configuración de despliegue:
 
-1. Abrir CRXDE Lite en `https://<host>:<port>/crx/de`.
+1. Abra CRXDE Lite en `https://<host>:<port>/crx/de`.
 
 1. Vaya a `/apps/msm/<your-project>/rolloutconfigs`, la versión personalizada del proyecto de `/libs/msm/wcm/rolloutconfigs`.
 
@@ -183,17 +183,14 @@ Para crear una configuración de despliegue:
 1. Agregue las siguientes propiedades a este nodo:
 
    * **Nombre**: `jcr:title`
-
      **Tipo**: `String`
      **Valor**: un título de identificación que aparecerá en la interfaz de usuario
 
    * **Nombre**: `jcr:description`
-
      **Tipo**: `String`
      **Valor**: una descripción opcional.
 
    * **Nombre**: `cq:trigger`
-
      **Tipo**: `String`
      **Valor**: [Déclencheur de despliegue](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) que se va a usar
       * `rollout`
@@ -507,7 +504,7 @@ La siguiente clase `LiveActionFactory` implementa un `LiveAction` que registra m
    mvn -PautoInstallPackage clean install
    ```
 
-1. AEM El archivo `error.log` debe indicar que el paquete se ha iniciado, visible en los registros de `https://<host>:<port>/system/console/status-slinglogs`.
+1. El archivo de AEM `error.log` debe indicar que el paquete está iniciado, visible en los registros de `https://<host>:<port>/system/console/status-slinglogs`.
 
    ```text
    13.08.2013 14:34:55.450 *INFO* [OsgiInstallerImpl] com.adobe.example.msm.MyLiveActionFactory-bundle BundleEvent RESOLVED
@@ -525,13 +522,13 @@ Cree la configuración de despliegue de MSM que usa el `LiveActionFactory` que c
 
    * **Título**: Configuración de despliegue de ejemplo
    * **Nombre**: examplerolloutconfig
-   * **cq:déclencheur**: `publish`
+   * **cq:trigger**: `publish`
 
 ### Añadir la acción Live a la configuración de despliegue de ejemplo {#add-the-live-action-to-the-example-rollout-configuration}
 
 Configure la configuración de despliegue que creó en el procedimiento anterior para que utilice la clase `ExampleLiveActionFactory`.
 
-1. Abra el CRXDE Lite.
+1. Abra CRXDE Lite.
 
 1. Cree el siguiente nodo en `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
@@ -588,7 +585,7 @@ La lista de idiomas se almacena debajo del nodo `/libs/wcm/core/resources/langua
 
 Para modificar los idiomas:
 
-1. Abra el CRXDE Lite.
+1. Abra CRXDE Lite.
 1. Seleccione la carpeta `/apps`, haga clic en **Crear** y luego en **Crear carpeta.**
 
 1. Asigne un nombre a la nueva carpeta `wcm`.
@@ -639,7 +636,6 @@ La propiedad dialog controla si una propiedad de página está sujeta a desplieg
       * **Tipo**: `String`
       * **Value**: contiene el nombre de la propiedad en consideración y es comparable al valor de la propiedad `name`
          * Por ejemplo, consulte
-
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Cuando se ha definido `cq-msm-lockable`, romper/cerrar la cadena interactuará con MSM de la siguiente manera:

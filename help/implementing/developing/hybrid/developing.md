@@ -3,9 +3,9 @@ title: Desarrollo de SPA para AEM
 description: Este artículo presenta preguntas importantes que se deben tener en cuenta al contratar a un desarrollador front-end para desarrollar una SPA para AEM. También ofrece una descripción general de la arquitectura de AEM en relación con las SPA que se deben tener en cuenta al implementar una SPA desarrollada en AEM.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 8%
@@ -209,7 +209,7 @@ La arquitectura general de AEM, incluidos los entornos de desarrollo, creación 
 >
 >Dentro de AEM, no es necesario ejecutar los mecanismos de compilación de JavaScript ni ejecutar el propio JavaScript. AEM solo aloja los artefactos compilados de la aplicación SPA.
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 * [Introducción a SPA en AEM con React](getting-started-react.md) muestra cómo se crea un SPA básico para trabajar con el Editor de SPA en AEM con React.
 * [Introducción a SPA en AEM con Angular](getting-started-angular.md) muestra cómo se crea un SPA básico para trabajar con el Editor de SPA en AEM con Angular.

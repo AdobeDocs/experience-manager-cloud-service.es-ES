@@ -3,21 +3,22 @@ title: Creación de direcciones URL mnemónicas mediante Dynamic Media con funci
 description: Utilice las funcionalidades de OpenAPI de Dynamic Media para transformar las URL de entrega de recursos largas en URL de vanidad cortas y de marca. Una URL de vanidad es una versión corta, limpia, fácil de recordar y legible de su URL de envío compleja. Puede incluir su nombre de marca, nombres de productos y palabras clave relevantes en la URL de vanidad para aumentar la visibilidad de su marca y la participación del usuario
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: d9223a8af5d531e66a91e9054201de765be50961
+exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 0%
 
 ---
 
-
 # Usar URL de vanidad{#vanity-urls}
 
 Use [!DNL Dynamic Media with OpenAPI capabilities] para transformar las URL de entrega de recursos largas en URL de vanidad cortas y con marca. Las direcciones URL de envío de recursos estándar incluyen UUID de recursos generados por el sistema que hacen que la dirección URL de envío sea compleja, difícil de recordar y compartir. Reemplace estos UUID de recurso con identificadores simples (ID de vanidad) para generar una URL de vanidad. Una URL de vanidad es una versión corta, limpia y legible de la URL de envío compleja.
 
 Consulte los siguientes formatos de URL para comprender su diferencia:
+
 * [URL de envío estándar](#standard-urls)
-* [URL de vanidad](#vanity-url)
+* [URL mnemónica](#vanity-url)
 
 Las direcciones URL de envío estándar utilizan `aaid` seguidas de un UUID, mientras que las direcciones URL de vanidad utilizan `avid` seguidas de un identificador personalizado (identificador personalizado).
 
@@ -39,7 +40,7 @@ La dirección URL de envío estándar incluye `aaid` (*identificador de recurso 
 
 En el ejemplo anterior, `43341ab1-4086-44d2-b7ce-ee546c35613b` es el UUID.
 
-## URL de vanidad{#vanity-url}
+## URL mnemónica{#vanity-url}
 
 Las URL de vanidad incluyen un identificador mnemónico en lugar del UUID del recurso y tienen el siguiente formato.
 
@@ -81,6 +82,7 @@ Para crear la URL de vanidad, asegúrate de que ya has [aprobado los recursos pa
 ## Crear URL de vanidad{#create-vanity-urls}
 
 Siga estos pasos para crear URL de vanidad:
+
 1. [Configurar metadatos de recursos](#set-up-asset-metadata)
 1. [Crear y asignar una variable de entorno de Cloud Manager](#map-cloud-manager-environment-variable)
 1. [Aprobar los recursos que requieren una URL de vanidad para la entrega](/help/assets/manage-organize-assets-view.md#manage-asset-status)
@@ -89,18 +91,22 @@ Siga estos pasos para crear URL de vanidad:
 ### Configurar metadatos de recursos{#set-up-asset-metadata}
 
 Ejecute lo siguiente para configurar el ID mnemónico en el formulario de metadatos del recurso:
+
 1. Vaya a la página de detalles de la carpeta que contiene los recursos para la entrega de [!DNL Dynamic Media with OpenAPI].
 1. [Edite ese formulario de metadatos](/help/assets/metadata-assets-view.md#edit-metadata-forms) mediante uno de los procedimientos siguientes:
+
    * Añada un nuevo campo de metadatos y especifique el ID mnemónico requerido como valor de ese campo.
    * Actualice el campo existente reemplazando el valor de una propiedad de metadatos existente por el ID de vanidad requerido. Conozca las [prácticas recomendadas](#best-practices) para crear el ID de vanidad.
-     ![ID de vanidad](/help/assets/assets/vanity-id-metadata.png)
-Más información sobre [esquemas de metadatos](/help/assets/metadata-schemas.md).
 
-     >[!NOTE]
-     >
-     > * Utilice ID mnemónicos únicos para cada recurso. Compruebe siempre que los recursos que comparten el mismo formulario de metadatos tengan ID de vanidad únicos para DM con entrega OpenAPI a través de URL de vanidad. Si dos recursos comparten el mismo ID mnemónico, DM con OpenAPI entrega el recurso que recibió ese ID más recientemente, anulando el derecho anterior del ID a otro recurso.
-     >
-     > * Un solo recurso puede tener varios ID de vanidad. [Póngase en contacto con el soporte técnico de Adobe](https://helpx.adobe.com/in/contact.html) y envíe una solicitud para generar los ID de vanidad necesarios.
+   ![ID de vanidad](/help/assets/assets/vanity-id-metadata.png)
+
+   Más información sobre [esquemas de metadatos](/help/assets/metadata-schemas.md).
+
+   >[!NOTE]
+   >
+   > * Utilice ID mnemónicos únicos para cada recurso. Compruebe siempre que los recursos que comparten el mismo formulario de metadatos tengan ID de vanidad únicos para DM con entrega OpenAPI a través de URL de vanidad. Si dos recursos comparten el mismo ID mnemónico, DM con OpenAPI entrega el recurso que recibió ese ID más recientemente, anulando el derecho anterior del ID a otro recurso.
+   >
+   > * Un solo recurso puede tener varios ID de vanidad. [Póngase en contacto con el soporte técnico de Adobe](https://helpx.adobe.com/in/contact.html) y envíe una solicitud para generar los ID de vanidad necesarios.
 
 Después de configurar el identificador personalizado en el formulario de metadatos del recurso, [asigne este campo de metadatos al mecanismo de envío del sistema](#map-cloud-manager-environment-variable).
 
@@ -134,7 +140,7 @@ Cuando el usuario hace clic en la URL de vanidad, [!DNL Dynamic Media with OpenA
 
 ## Escalar mediante URL de vanidad{#scale-using-vanity-url}
 
-AEM as a Cloud Service le permite [personalizar los nombres DNS y CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) en sus direcciones web. Use estas capacidades de AEM CS con sus URL personales para transformarlas en direcciones web únicas, limpias, descriptivas, con marca, intuitivas y que proporcionen los [beneficios mencionados](#key-benefits).
+AEM as a Cloud Service le permite [personalizar los nombres DNS y CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) en sus direcciones web. Use estas capacidades de AEM CS con sus URL personales para transformarlas en direcciones web únicas, limpias, descriptivas, con marca, intuitivas y que proporcionen los [beneficios mencionados](#key-benefits).
 
 Consulte la siguiente URL de vanidad y sus componentes personalizables:
 
@@ -184,7 +190,7 @@ Consulte la siguiente URL de vanidad y sus componentes personalizables:
 Ejecute los siguientes pasos para reescribir las reglas de CDN para la entrega:
 
 1. Vaya al repositorio de AEM para crear un archivo de configuración de YAML.
-2. Ejecute los pasos de la sección [setup](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para configurar las reglas de CDN e implementar la configuración a través de la canalización de configuración de Cloud Manager.
+2. Ejecute los pasos de la sección [setup](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para configurar las reglas de CDN e implementar la configuración a través de la canalización de configuración de Cloud Manager.
 Siga estas [prácticas recomendadas](#best-practices) para crear su ruta de dominio.
    [Más información acerca de las reglas de reescritura de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 

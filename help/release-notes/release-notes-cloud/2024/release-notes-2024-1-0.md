@@ -4,10 +4,10 @@ description: Notas de la versión 2024.1.0 de la versión de  [!DNL Adobe Experi
 exl-id: 9f5d97c6-6536-4593-acbf-cbe8bf9b5eeb
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 90%
+source-wordcount: '1018'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de enero de 2024 para ver un resumen de las funciones añadidas en la versión 2024.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448932?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -60,7 +60,7 @@ Estamos buscando activamente comentarios y nuevos casos de uso para las extensio
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Funciones de prelanzamiento de vista de administrador {#admin-view-prerelease}
+### Funciones de versión preliminar de vista de administrador {#admin-view-prerelease}
 
 **Previsualizar representaciones para todos los tipos de vídeo admitidos**
 
@@ -87,7 +87,7 @@ Ahora, Assets Essentials permite definir una lista de bloqueados compuesta por p
 
 * **[Envío de un formulario adaptable a un escenario de Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service ofrece opciones listas para usar para conectar fácilmente un formulario adaptable con Adobe Workfront.  Esto simplifica el proceso de envío de un formulario adaptable a un escenario de Adobe Workfront, permitiéndole activar un escenario de Workfront Fusion al enviar un formulario adaptable.
 
-* **[Compatibilidad con idiomas de derecha a izquierda](/help/forms/supporting-new-language-localization-core-components.md)**: los formularios adaptables creados en los componentes principales ahora se pueden presentar en un idioma de derecha a izquierda (RTL) como árabe, persa y urdu.  Más de 2000 millones de personas en todo el mundo hablan los idiomas RTL.  El uso de un formulario en idioma RTL le permite ampliar el alcance de sus formularios adaptables para adaptarse a estas diversas audiencias y seleccionar en los mercados RTL. En ciertas regiones, también es un mandato legal proporcionar formularios en el idioma local.  Al adaptarse a los idiomas locales, no solo abre las puertas a una audiencia más amplia, sino que también garantiza el cumplimiento de las leyes y regulaciones relevantes.
+* **[Compatibilidad con idiomas de derecha a izquierda](/help/forms/supporting-new-language-localization-core-components.md)**: los formularios adaptables creados en los componentes principales ahora se pueden presentar en un idioma de derecha a izquierda (RTL) como árabe, persa y urdu.  Más de 2000 millones de personas en todo el mundo hablan los idiomas RTL.  El uso de un formulario en idioma RTL le permite ampliar el alcance de sus formularios adaptables para adaptarse a estos diversos públicos y seleccionar en los mercados RTL. En ciertas regiones, también es un mandato legal proporcionar formularios en el idioma local.  Al adaptarse a los idiomas locales, no solo abre las puertas a un público más amplio, sino que también garantiza el cumplimiento de las leyes y regulaciones relevantes.
 
   ![Compatibilidad con idiomas de derecha a izquierda](/help/forms/assets/right-to-left-language-support.png)
 
@@ -112,7 +112,8 @@ Los [Entornos de desarrollo rápido (RDE)](/help/implementing/developing/introdu
 
 ### Programa de adopción temprana de asignación de dominios {#cdn-config-early-adopter}
 
-Además de las recientemente lanzadas [Reglas de filtrado de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluyen las reglas del firewall de aplicaciones web (Web Application Firewall, WAF) con licencia opcional, existe la posibilidad de utilizar la canalización de configuración para declarar e implementar [otros tipos de configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Únase al programa para primeros usuarios enviando un correo electrónico a **aemcs-cdn-config-adopter@adobe.com** para obtener acceso a:
+Además de las recientemente lanzadas [Reglas de filtrado de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluyen las reglas del firewall de aplicaciones web (Web Application Firewall, WAF) con licencia opcional, existe la posibilidad de utilizar la canalización de configuración para declarar e implementar [otros tipos de configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Únase al programa de usuarios que lo adoptaron por correo electrónico **`aemcs-cdn-config-adopter@adobe.com`** para obtener acceso a:
+
 * Redirecciones del lado del cliente 301/302
 * solicitudes de proxy en el perímetro a orígenes arbitrarios
 * transformaciones de URL

@@ -4,8 +4,8 @@ description: Obtenga información sobre cómo implementar su código mediante ca
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 38%
@@ -48,7 +48,7 @@ Todas las implementaciones de Cloud Service siguen un proceso gradual para garan
 
 1. En la página **Implementar en producción**, haga clic en **Generar**.
 
-   ![Pantalla Ejecutar canalización](assets/deploy-code2.png)
+   ![Pantalla Ejecución de canalización](assets/deploy-code2.png)
 
 El proceso de generación implementa el código en las tres fases ordenadas siguientes:
 

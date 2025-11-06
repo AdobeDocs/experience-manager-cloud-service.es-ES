@@ -1,34 +1,34 @@
 ---
 title: Marco de trabajo de etiquetado de AEM
-description: AEM Etiquete el contenido y utilice la infraestructura de etiquetado de la para categorizarlo y organizarlo.
+description: Etiquete contenido y utilice la infraestructura de Etiquetado de AEM para categorizarlo y organizarlo.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
 
-# AEM El marco de etiquetado de {#aem-tagging-framework}
+# El marco de etiquetado de AEM {#aem-tagging-framework}
 
 El etiquetado permite clasificar y organizar el contenido. Las etiquetas se pueden clasificar por un área de nombres y una taxonomía. Para obtener información detallada sobre el uso de etiquetas:
 
 * Consulte [Uso de etiquetas](/help/sites-cloud/authoring/sites-console/tags.md) para obtener información sobre cómo etiquetar contenido como autor de contenido.
 * Consulte Administración de etiquetas para conocer la perspectiva de un administrador sobre la creación y administración de etiquetas y sobre las etiquetas de contenido que se han aplicado.
 
-AEM Este artículo se centra en el marco de trabajo subyacente que admite el etiquetado en los entornos de y en cómo utilizarlo como desarrollador.
+Este artículo se centra en el marco de trabajo subyacente que admite el etiquetado en AEM y en cómo utilizarlo como desarrollador.
 
 ## Introducción {#introduction}
 
-AEM Para etiquetar contenido y utilizar la infraestructura de etiquetado de:
+Para etiquetar contenido y utilizar la infraestructura de etiquetado de AEM:
 
 * La etiqueta debe existir como un nodo de tipo [`cq:Tag`](#cq-tag-node-type) bajo el [nodo raíz de taxonomía](#taxonomy-root-node).
 * El nodo de contenido etiquetado `NodeType` debe incluir el mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 * [`TagID`](#tagid) se agrega a la propiedad [`cq:tags`](#cq-tags-property) del nodo de contenido y se resuelve en un nodo de tipo [`cq:Tag`](#cq-tag-node-type).
 
-## cq:Tipo de nodo de etiqueta {#cq-tag-node-type}
+## cq:Tag tipo de nodo {#cq-tag-node-type}
 
 La declaración de una etiqueta se captura en el repositorio en un nodo de tipo `cq:Tag.`
 
@@ -62,7 +62,7 @@ Cuando se etiqueta contenido, si aún no existe, la propiedad [`cq:tags`](#cq-ta
 
 El nodo raíz de taxonomía es la ruta base para todas las etiquetas del repositorio. El nodo raíz de taxonomía debe *no* ser un nodo de tipo `cq:Tag`.
 
-AEM En la ruta de acceso base es `/content/cq:tags` y el nodo raíz es de tipo `cq:Folder`.
+En AEM, la ruta de acceso base es `/content/cq:tags` y el nodo raíz es del tipo `cq:Folder`.
 
 ### Área de nombres de etiqueta {#tag-namespace}
 
@@ -113,15 +113,15 @@ La denegación de permisos de lectura para determinadas etiquetas o áreas de no
 
 Una práctica típica incluye:
 
-* Permitiendo el acceso de escritura de grupo/función `tag-administrators` a todas las áreas de nombres (agregar/modificar en `/content/cq:tags`). AEM Este grupo incluye a los usuarios que ya están preparados para su uso en el momento de la compra.
+* Permitiendo el acceso de escritura de grupo/función `tag-administrators` a todas las áreas de nombres (agregar/modificar en `/content/cq:tags`). Este grupo incluye AEM de forma predeterminada.
 * Permite a los usuarios/autores acceder a todas las áreas de nombres que deben poder leerlas (principalmente todas).
 * Permitir que los usuarios y los autores escriban en las áreas de nombres en las que los usuarios y los autores deben definir libremente las etiquetas (`add_node` en `/content/cq:tags/some_namespace`)
 
-## Contenido etiquetable : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## Contenido etiquetable: cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 Para que los desarrolladores de aplicaciones adjunten el etiquetado a un tipo de contenido, el registro del nodo ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) debe incluir el mixin `cq:Taggable` o el mixin `cq:OwnerTaggable`.
 
-El mixin `cq:OwnerTaggable`, que hereda de `cq:Taggable`, tiene la intención de indicar que el propietario/autor puede clasificar el contenido. AEM En el caso de los usuarios, solo es un atributo del nodo `cq:PageContent`. El marco de etiquetado no requiere el mixin `cq:OwnerTaggable`.
+El mixin `cq:OwnerTaggable`, que hereda de `cq:Taggable`, tiene la intención de indicar que el propietario/autor puede clasificar el contenido. En AEM, solo es un atributo del nodo `cq:PageContent`. El marco de etiquetado no requiere el mixin `cq:OwnerTaggable`.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ El mixin `cq:OwnerTaggable`, que hereda de `cq:Taggable`, tiene la intención de
 
 Las definiciones del tipo de nodo existen en el repositorio como archivos CDN. La notación CDN se define como parte de [documentación JCR](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
-AEM Las definiciones esenciales para los tipos de nodo incluidos en la lista de nombres de dominio son las siguientes:
+Las definiciones esenciales para los tipos de nodo incluidos en AEM son las siguientes:
 
 ```xml
 [cq:Tag] > mix:title, nt:base
@@ -151,13 +151,13 @@ AEM Las definiciones esenciales para los tipos de nodo incluidos en la lista de 
     mixin
 ```
 
-## propiedad cq:tags {#cq-tags-property}
+## Propiedad cq:tags {#cq-tags-property}
 
 La propiedad `cq:tags` es una matriz `String` que se usa para almacenar uno o más `TagID` cuando los autores o visitantes del sitio los aplican al contenido. La propiedad solo tiene significado cuando se agrega a un nodo que se define con el mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 
 >[!NOTE]
 >
->AEM Para utilizar la funcionalidad de etiquetado de la etiqueta, las aplicaciones desarrolladas personalizadas no deben definir propiedades de etiqueta distintas de `cq:tags`.
+>Para utilizar la funcionalidad de etiquetado de AEM, las aplicaciones desarrolladas personalizadas no deben definir propiedades de etiquetas distintas de `cq:tags`.
 
 ## Mover y combinar etiquetas {#moving-and-merging-tags}
 

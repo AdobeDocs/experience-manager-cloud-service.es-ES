@@ -4,8 +4,8 @@ description: Obtenga información sobre cómo agregar un nombre de dominio perso
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 15%
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 Aprenda a agregar un nombre de dominio personalizado mediante **Configuración de dominio** en Cloud Manager.
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
 Complete estos requisitos antes de agregar un nombre de dominio personalizado en Cloud Manager.
 

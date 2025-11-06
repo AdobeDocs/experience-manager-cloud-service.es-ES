@@ -4,10 +4,10 @@ description: Aprenda a integrar Microsoft Dynamics 365 con Forms adaptable.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 15%
 # Configuración de Microsoft® Dynamics 365 para AEM Forms
 
 La integración de datos de Adobe Experience Manager Forms proporciona una configuración de servicio en la nube para integrar formularios con el servidor de Microsoft Dynamics. Permite crear el modelo de datos de formulario (FDM) en función de las entidades, atributos y servicios definidos en el servicio de Microsoft Dynamics. El modelo de datos de formulario (FDM) se puede utilizar para crear Forms adaptable que interactúe con el servidor de Microsoft Dynamics para habilitar flujos de trabajo empresariales. Por ejemplo:
+
 * consultar datos en el servidor de Microsoft Dynamics y rellenar previamente Forms adaptable;
 * escribir datos en Microsoft Dynamics sobre el envío de formularios adaptables;
 * escribir datos en Microsoft Dynamics a través de entidades personalizadas definidas en el modelo de datos de formulario (FDM);
@@ -47,7 +48,9 @@ Antes de integrar [!DNL Microsoft® Dynamics 365] con AEM Forms as a Cloud Servi
    >[!VIDEO](https://video.tv.adobe.com/v/3444389/)
 
 1. **Crear una cuenta en el Centro de administración de Power Platform**
-Cree una cuenta en el **Centro de administración de Power Platform** para:
+
+   Cree una cuenta en el **Centro de administración de Power Platform** para:
+
    * Agregar Dataverse
    * Habilitar aplicaciones de Microsoft Dynamics 365
 
@@ -63,18 +66,18 @@ Cree una cuenta en el **Centro de administración de Power Platform** para:
 
    >[!NOTE]
    >
-   > * Para crear la aplicación [!DNL Microsoft® Dynamics 365] conectada, seleccione **Web** como plataforma y especifique el **URI de redireccionamiento** con el siguiente formato: `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html`.
-   > * Asegúrese de guardar el ID de cliente (también conocido como ID de aplicación) y el secreto de cliente para referencia futura.
+   >* Para crear la aplicación [!DNL Microsoft® Dynamics 365] conectada, seleccione **Web** como plataforma y especifique el **URI de redireccionamiento** con el siguiente formato: `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html`.
+   >* Asegúrese de guardar el ID de cliente (también conocido como ID de aplicación) y el secreto de cliente para referencia futura.
 
 ## Conectar Forms a Microsoft® Dynamics 365
 
 Una vez configurados los requisitos previos anteriores, puede continuar con la integración de Forms adaptable con Microsoft® Dynamics 365. Para enviar datos a Microsoft® Dynamics 365 al enviar el formulario, siga los siguientes pasos:
 
-[1. Configurar el servicio en la nube de Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
+[&#x200B;1. Configurar el servicio en la nube de Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
 
-[2. Crear un modelo de datos de formulario (FDM)](#2-create-form-data-model-fdm)
+[&#x200B;2. Crear un modelo de datos de formulario (FDM)](#2-create-form-data-model-fdm)
 
-### 1. Configurar el servicio en la nube de Microsoft Dynamics
+### &#x200B;1. Configurar el servicio en la nube de Microsoft Dynamics
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444370/cloudconfiguration-dataintegration-adobeexperiencemanager-aemforms-microsoftdynamics)
 
@@ -123,7 +126,7 @@ Puede copiar la **URL del entorno** desde el **Centro de administración de Powe
 1. Inicie sesión con sus credenciales de [!DNL Microsoft® Dynamics 365] y haga clic en Aceptar para permitir que la configuración del servicio en la nube se conecte al servicio de [!DNL Microsoft® Dynamics 365]. Si la conexión se ha realizado correctamente, se le redirigirá a la página de configuración del servicio en la nube de [!DNL Microsoft® Dynamics 365], la cual mostrará un mensaje de éxito.
 1. Seleccione **[!UICONTROL Crear]** para guardar la configuración.
 
-### 2. Crear un modelo de datos de formulario (FDM)
+### &#x200B;2. Crear un modelo de datos de formulario (FDM)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444367/aemforms-adobeexperiencemanager-formdatamodel--dataintegration-digitalforms)
 
@@ -133,7 +136,7 @@ Puede usar la variable crear el modelo de datos de formulario (FDM) utilizando l
    ![Crear modelo de datos de formulario](/help/forms/assets/dynamics-create-fdm.png)
 
 1. Haga clic en **[!UICONTROL Crear]** y seleccione **[!UICONTROL Modelo de datos de formulario]**.
-   ![Seleccionar modelo de datos de formulario](/help/forms/assets/dynamics-select-fdm.png)
+   ![Seleccionar el modelo de datos de formulario](/help/forms/assets/dynamics-select-fdm.png)
 
    Aparece el asistente **Crear modelo de datos de formulario**.
 1. Haga clic en **[!UICONTROL Siguiente]**.

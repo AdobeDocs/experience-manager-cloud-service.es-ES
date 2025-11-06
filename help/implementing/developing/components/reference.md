@@ -3,23 +3,23 @@ title: Guía de referencia de componentes
 description: Una guía de referencia para desarrolladores para los detalles de los componentes y su estructura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3481'
+source-wordcount: '3476'
 ht-degree: 1%
 
 ---
 
 # Guía de referencia de componentes {#components-reference-guide}
 
-AEM Los componentes son el núcleo de la creación de una experiencia en la. AEM Los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [tipo de archivo del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) facilitan la introducción a un conjunto de herramientas de componentes sólidos y listos para usar. AEM El [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) guía al desarrollador sobre cómo usar estas herramientas y cómo crear componentes personalizados para crear un sitio de la.
+Los componentes son esenciales para crear una experiencia en AEM. Los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) facilitan la introducción a un conjunto de herramientas de componentes sólidos y listos para usar. El [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) guía al desarrollador sobre cómo usar estas herramientas y cómo crear componentes personalizados para crear un sitio de AEM.
 
 >[!TIP]
 >
->AEM Antes de hacer referencia a este documento, asegúrese de haber completado el [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) y, por lo tanto, de estar familiarizado con los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [Arquetipo de proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es).
+>Antes de hacer referencia a este documento, asegúrese de haber completado el [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) y, por lo tanto, de estar familiarizado con los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es).
 
-Dado que el tutorial de WKND cubre la mayoría de los casos de uso, este documento está diseñado únicamente como complemento de esos recursos. AEM Ofrece detalles técnicos detallados sobre cómo se estructuran y configuran los componentes en los componentes de y no está diseñado como guía de introducción a la configuración de los componentes de.
+Dado que el tutorial de WKND cubre la mayoría de los casos de uso, este documento está diseñado únicamente como complemento de esos recursos. Proporciona detalles técnicos detallados sobre cómo se estructuran y configuran los componentes en AEM y no está diseñado como guía de introducción.
 
 ## Información general {#overview}
 
@@ -34,7 +34,7 @@ Antes de empezar a configurar o codificar el componente, debe preguntar lo sigui
 * ¿Requerirá su componente lógica para seleccionar o manipular el contenido?
    * La lógica debe mantenerse separada de la capa de interfaz de usuario. HTL está diseñado para ayudar a garantizar que esto suceda.
 * ¿Necesitará el componente formato CSS?
-   * El formato CSS debe mantenerse separado de las definiciones de componentes. Defina convenciones para asignar un nombre a los elementos del HTML para que pueda modificarlos a través de archivos CSS externos.
+   * El formato CSS debe mantenerse separado de las definiciones de componentes. Defina convenciones para asignar un nombre a los elementos de HTML para que pueda modificarlos a través de archivos CSS externos.
 * ¿Qué implicaciones de seguridad puede introducir su nuevo componente?
 
 ### Reutilización de componentes existentes {#reusing-components}
@@ -65,13 +65,13 @@ Esta filosofía es compatible con [HTL](https://experienceleague.adobe.com/docs/
 
 Esta lógica (opcional) se puede implementar de diferentes maneras y se invoca desde HTL con comandos específicos:
 
-* Uso de Java: [La API para uso de Java de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=es) permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada. Esto permite utilizar código Java para implementar la lógica de selección y configuración del contenido del componente.
-* Uso de JavaScript: [La API de uso de JavaScript de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=es) permite que un archivo HTL acceda al código de ayuda escrito en JavaScript. Esto permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
+* Uso de Java: [La API para uso de Java de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada. Esto permite utilizar código Java para implementar la lógica de selección y configuración del contenido del componente.
+* Uso de JavaScript: [La API de uso de JavaScript de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) permite que un archivo HTL acceda al código de ayuda escrito en JavaScript. Esto permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
 * Uso de bibliotecas del lado del cliente: los sitios web modernos dependen en gran medida del procesamiento del lado del cliente impulsado por código CSS y JavaScript complejo. Consulte el documento [Uso de bibliotecas del lado del cliente en AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obtener más información.
 
 ## Estructura del componente {#structure}
 
-AEM La estructura de un componente de es potente y flexible. Las partes principales son:
+La estructura de un componente de AEM es potente y flexible. Las partes principales son:
 
 * [Tipo de medio](#resource-type)
 * [Definición de componente](#component-definition)
@@ -92,10 +92,10 @@ Esta es una abstracción que ayuda a garantizar que incluso cuando la apariencia
 
 La definición de un componente se puede desglosar de la siguiente manera:
 
-* AEM Los componentes de la se basan en [Sling](https://sling.apache.org/documentation.html).
-* AEM Los componentes de la se encuentran en `/libs/core/wcm/components`.
+* Los componentes de AEM se basan en [Sling](https://sling.apache.org/documentation.html).
+* Los componentes de AEM se encuentran en `/libs/core/wcm/components`.
 * Los componentes específicos del proyecto o sitio se encuentran en `/apps/<myApp>/components`.
-* AEM Los componentes estándar de la se definen como `cq:Component` y tienen los elementos clave:
+* Los componentes estándar de AEM se definen como `cq:Component` y tienen los elementos clave:
    * Propiedades de jcr: una lista de propiedades de jcr. Son variables y algunas pueden ser opcionales a través de la estructura básica de un nodo de componente, sus propiedades y subnodos están definidos por la definición `cq:Component`.
    * Recursos: definen los elementos estáticos utilizados por el componente.
    * Scripts: se utilizan para implementar el comportamiento de la instancia resultante del componente.
@@ -110,7 +110,7 @@ La definición de un componente se puede desglosar de la siguiente manera:
    * Consulte la sección [Icono de componente](#component-icon) para obtener más información.
 * **Nodos secundarios vitales**:
    * `cq:editConfig (cq:EditConfig)`: define las propiedades de edición del componente y permite que este aparezca en el Explorador de componentes.
-      * Si el componente tiene un cuadro de diálogo, aparecerá automáticamente en el explorador o Sidekick de componentes, aunque cq:editConfig no exista.
+      * Si el componente tiene un cuadro de diálogo, aparecerá automáticamente en el explorador de componentes o Sidekick, aunque cq:editConfig no exista.
    * `cq:childEditConfig (cq:EditConfig)`: controla los aspectos de la interfaz de usuario del autor para los componentes secundarios que no definen sus propios `cq:editConfig`.
    * `cq:dialog (nt:unstructured)` - Cuadro de diálogo para este componente. Define la interfaz que permite al usuario configurar el componente o editar contenido.
    * `cq:design_dialog (nt:unstructured)`: edición de diseño para este componente.
@@ -145,7 +145,7 @@ Para cancelar la herencia de los iconos de los supercomponentes, al establecer u
 
 La [Consola de componentes](/help/sites-cloud/authoring/components-console.md#component-details) muestra cómo se define el icono de un componente en particular.
 
-#### Ejemplo de icono de SVG {#svg-icon-example}
+#### Ejemplo del icono SVG {#svg-icon-example}
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -173,7 +173,7 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
 | `cq:dialog` | `nt:unstructured` | Esta es la definición del cuadro de diálogo de edición para el componente. |
 | `cq:design_dialog` | `nt:unstructured` | Esta es la definición del cuadro de diálogo de diseño para el componente. |
 | `cq:editConfig` | `cq:EditConfig` | Define la configuración de [edición del componente](#edit-behavior). |
-| `cq:htmlTag` | `nt:unstructured` | Esto devuelve atributos de etiquetas adicionales que se añaden a la etiqueta de HTML adyacente. Permite añadir atributos a los divs generados automáticamente. |
+| `cq:htmlTag` | `nt:unstructured` | Esto devuelve atributos de etiquetas adicionales que se añaden a la etiqueta de HTML circundante. Permite añadir atributos a los divs generados automáticamente. |
 | `cq:noDecoration` | `Boolean` | Si es true, el componente no se procesa con clases div y css generadas automáticamente. |
 | `cq:template` | `nt:unstructured` | Si se encuentra, este nodo se utiliza como plantilla de contenido cuando se agrega el componente desde el Explorador de componentes. |
 | `jcr:created` | `Date` | Es la fecha de creación del componente. |
@@ -205,7 +205,7 @@ Los cuadros de diálogo son un elemento clave del componente, ya que proporciona
 
 Según la complejidad del componente, el cuadro de diálogo puede necesitar una o más pestañas.
 
-AEM Cuadros de diálogo para componentes de la:
+Diálogos para componentes de AEM:
 
 * Son `cq:dialog` nodos de tipo `nt:unstructured`.
 * Se encuentran debajo de sus nodos `cq:Component` y junto a sus definiciones de componentes.
@@ -229,7 +229,7 @@ Los cuadros de diálogo de diseño son similares a los utilizados para editar y 
 
 ### IU de Coral e IU de Granite {#coral-and-granite}
 
-AEM La interfaz de usuario de Coral y la interfaz de usuario de Granite definen la apariencia de los recursos de la interfaz de usuario de.
+La interfaz de usuario de Coral y la interfaz de usuario de Granite definen la apariencia de AEM.
 
 * [La interfaz de usuario de Coral](https://opensource.adobe.com/coral-spectrum/documentation/) proporciona una interfaz de usuario uniforme en todas las soluciones de la nube.
 * [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) proporciona marcado de la interfaz de usuario de Coral envuelto en componentes de Sling para crear consolas y cuadros de diálogo de interfaz de usuario.
@@ -301,7 +301,7 @@ Las propiedades definidas dependen de las definiciones individuales. Aunque pued
 
 ## Jerarquía y herencia de componentes {#component-hierarchy-and-inheritance}
 
-AEM Los componentes dentro de los recursos están sujetos a la **Jerarquía de tipos de recursos**. Se usa para ampliar componentes con la propiedad `sling:resourceSuperType`. Esto permite que el componente herede de otro componente.
+Los componentes de AEM están sujetos a la **jerarquía de tipos de recursos**. Se usa para ampliar componentes con la propiedad `sling:resourceSuperType`. Esto permite que el componente herede de otro componente.
 
 Consulte la sección [Reutilización de componentes](#reusing-components) para obtener más información.
 
@@ -317,14 +317,14 @@ El comportamiento de edición de un componente se configura agregando un nodo `c
    * `cq:inplaceEditing` (tipo de nodo `cq:InplaceEditingConfig`): define una configuración de edición in situ para el componente
    * `cq:listeners` (tipo de nodo `cq:EditListenersConfig`): define lo que sucede antes o después de que se produzca una acción en el componente
 
-AEM Hay muchas configuraciones existentes en la. Puede buscar fácilmente propiedades específicas o nodos secundarios mediante la herramienta Consulta en **CRXDE Lite**.
+Hay muchas configuraciones existentes en AEM. Puede buscar fácilmente propiedades específicas o nodos secundarios mediante la herramienta Consulta en **CRXDE Lite**.
 
 ### Marcadores de posición de componentes {#component-placeholders}
 
 Los componentes siempre deben procesar algún HTML visible para el autor, incluso cuando el componente no tenga contenido. De lo contrario, podría desaparecer visualmente de la interfaz del editor, lo que lo haría técnicamente presente, pero invisible en la página y en el editor. En tal caso, los autores no podrán seleccionar e interactuar con el componente vacío.
 
 Por este motivo, los componentes deben representar un marcador de posición siempre que no representen ningún resultado visible cuando la página se procese en el editor de páginas (cuando el modo WCM sea `edit` o `preview`).
-El marcado de HTML típico para un marcador de posición es el siguiente:
+El marcado típico de HTML para un marcador de posición es el siguiente:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
@@ -352,9 +352,9 @@ En el ejemplo anterior, `model.text` es la variable que es verdadera solamente c
 
 Se puede ver un ejemplo de uso de esta plantilla en los componentes principales, [como en el componente Título](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27).
 
-### Configurar con nodos secundarios cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
+### Configurando con nodos secundarios cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
-#### Colocar Assets en un cuadro de diálogo: cq:dropTargets {#cq-droptargets}
+#### Colocando Assets en un cuadro de diálogo: cq:dropTargets {#cq-droptargets}
 
 El nodo `cq:dropTargets` (tipo de nodo `nt:unstructured`) define el destino de colocación que puede aceptar una colocación de un recurso arrastrado desde el buscador de contenido. Es un nodo de tipo `cq:DropTargetConfig`.
 
@@ -383,7 +383,7 @@ La siguiente configuración habilita la edición in situ del componente y define
         editorType="plaintext"/>
 ```
 
-### Gestión de eventos de campo - cq:listeners {#cq-listeners}
+### Administrar eventos de campo - cq:listeners {#cq-listeners}
 
 El método de administrar eventos en campos de diálogo se realiza con oyentes en una [biblioteca de cliente](/help/implementing/developing/introduction/clientlibs.md) personalizada.
 

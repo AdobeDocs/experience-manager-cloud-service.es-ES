@@ -5,16 +5,14 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '922'
-ht-degree: 20%
+ht-degree: 31%
 
 ---
-
-
-
 
 # Información general
 
@@ -161,7 +159,7 @@ Forms Experience Builder ofrece dos flujos de trabajo principales para crear for
 
 **Generación de formularios de lenguaje natural**
 
-Cree formularios completos desde cero con descripciones simples en inglés. Describa simplemente sus necesidades, como &quot;Crear un formulario de comentarios de cliente con escalas de clasificación y campos de comentarios&quot;, y Forms Experience Builder generará la estructura de formulario adecuada. Puede usar el generador de experiencias de los editores visuales para agregar más campos, reglas de validación y lógica de envío.
+Cree formularios completos desde cero con descripciones simples en inglés. Describa con sencillez sus necesidades, como “Crear un formulario de comentarios de cliente con escalas de clasificación y campos de comentarios”, y Forms Experience Builder generará la estructura de formulario adecuada. Puede usar el generador de experiencias de los editores visuales para añadir más campos, reglas de validación y lógica de envío.
 
 **Administración dinámica de campos**
 
@@ -169,7 +167,7 @@ Añada, modifique o quite campos de formulario mediante comandos conversacionale
 
 **Optimización del diseño**
 
-Actualice los diseños y las configuraciones de formulario mediante lenguaje natural. Solicite cambios como &quot;Cambiar el diseño del formulario al diseño del asistente&quot; y Forms Experience Builder aplicará los ajustes de estilo y diseño adecuados.
+Actualice los diseños y las configuraciones de formulario mediante lenguaje natural. Solicite cambios como “Cambiar el diseño del formulario al diseño del asistente” y Forms Experience Builder aplicará los ajustes de estilo y diseño adecuados.
 
 **Configuración completa de la acción de envío**
 
@@ -191,7 +189,7 @@ Transforme los documentos existentes en experiencias digitales interactivas. For
 - **PDF XFA**: arquitecturas de formularios complejas basadas en XML
 - **PDF planos**: documentos estáticos convertidos en formularios interactivos
 - **Imágenes y capturas de pantalla**: JPG, formatos PNG
-- **Forms dibujado a mano**: bocetos y fotografías en papel
+- **Formularios dibujados a mano**: bocetos y fotografías en papel
 
 
 
@@ -222,7 +220,7 @@ Forms Experience Builder está disponible actualmente a través de un programa d
 
 1. **Reúna su información**: Necesitará los siguientes detalles:
    - ID de organización IMS
-   - ID de programa
+   - ID del programa
    - Detalles del proyecto (cronología, ámbito, casos de uso)
    - Su correo electrónico de trabajo oficial
 

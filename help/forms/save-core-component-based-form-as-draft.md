@@ -4,7 +4,7 @@ description: Aprenda a guardar formularios adaptables basados en componentes pri
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: bf0a42e1376e4743fe8ce0650e1f807dfba2d050
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 16%
@@ -14,7 +14,7 @@ ht-degree: 16%
 
 # Guardar formularios como borradores y mostrarlos en la página de Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Considere a un usuario que comienza a rellenar un formulario pero necesita pausar y volver más tarde. AEM ofrece la opción `save-as-draft`, que permite al usuario guardar el formulario como borrador para una futura finalización. Para facilitarle este proceso, AEM proporciona el componente **Borradores y envíos** del portal de Forms de forma predeterminada, que muestra borradores y envíos en páginas de AEM Sites. El componente enumera los formularios que se han guardado como borradores para su posterior finalización, así como los que se han enviado. Solo los usuarios que inicien sesión pueden editar sus borradores o ver los formularios enviados. Sin embargo, si un usuario anónimo navega por la lista de formularios usando el componente **Buscar y listar** y guarda un formulario como borrador, ese borrador no aparecerá en la lista del componente **Borradores y envíos**. Para ver los borradores y los envíos, los usuarios deben haber iniciado sesión en el momento del envío del formulario.
 
@@ -22,7 +22,7 @@ Considere a un usuario que comienza a rellenar un formulario pero necesita pausa
 
 ## Requisitos previos
 
-* Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service.
+* Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM as a Cloud Service.
 
   Después de implementar los componentes principales más recientes en su entorno, los componentes del Portal de formularios pasan a ser accesibles en el entorno de creación.
 
@@ -104,9 +104,11 @@ Ahora, configure las propiedades del componente **Borradores y envíos** según 
 ## Configurar propiedades del componente Borradores y envíos
 
 Puede configurar las propiedades de **Borradores y envíos**:
+
 1. Seleccione el componente **Borradores y envíos**.
 1. Haga clic en el icono ![Configurar](assets/configure_icon.png) y aparecerá el cuadro de diálogo.
 1. En el cuadro de diálogo **[!UICONTROL Borradores y envíos]**, especifique lo siguiente:
+
    * **Título** Para identificar un componente en una página de Sites y de forma predeterminada, el título aparece en la parte superior del componente.
    * **Seleccionar tipo**: para indicar la lista de formularios como formularios en borrador o enviados. Si elige **Borrador de Forms**, se mostrarán los formularios guardados como borradores. Como alternativa, al seleccionar **Forms enviado** se muestran los formularios enviados por los usuarios que iniciaron sesión.
    * **Diseño**: para mostrar una lista de formularios en borrador o enviados en formato de tarjeta o lista.
@@ -116,6 +118,7 @@ Puede configurar las propiedades de **Borradores y envíos**:
 ## Configurar formularios para guardarlos como borradores
 
 Puede configurar Forms adaptable de las dos formas siguientes para guardarlos como borradores para usarlos más adelante:
+
 * [Acción del usuario](#user-action)
 * [Guardar automáticamente](#auto-save)
 

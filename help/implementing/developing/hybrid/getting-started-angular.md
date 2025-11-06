@@ -3,12 +3,12 @@ title: Introducción a SPA en AEM con Angular
 description: Este artículo presenta una aplicación de SPA de ejemplo, explica cómo se crea y le permite ponerse en marcha con su propia SPA rápidamente mediante el marco de trabajo de Angular.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '978'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -276,7 +276,7 @@ Normalmente, es necesario que los componentes de una aplicación de una sola pá
 * **Opción 2:** Compartir estados de componentes mediante una biblioteca de estado como NgRx.
 * **Opción 3:** Aproveche la jerarquía de objetos personalizando y extendiendo el componente contenedor.
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 * [Introducción a SPA en AEM con React](getting-started-react.md) muestra cómo se crea un SPA básico para trabajar con el Editor de SPA en AEM con React.
 * La [Información general del Editor de SPA](editor-overview.md) profundiza en el modelo de comunicación entre AEM y el SPA.

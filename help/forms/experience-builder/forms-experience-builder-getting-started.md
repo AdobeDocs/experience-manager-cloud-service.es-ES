@@ -4,14 +4,14 @@ description: Aprenda los conceptos básicos de la creación de su primer formula
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1133'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
-
 
 # Introducción a Forms Experience Builder {#getting-started-forms-experience-builder}
 
@@ -61,11 +61,11 @@ Cree formularios utilizando las descripciones en lenguaje natural de sus necesid
 
 **Ejemplo:**
 
-    Crear un formulario de comentarios de clientes con:
-    &#x200B;- Clasificación del producto (de 1 a 5 estrellas)
-    &#x200B;- Campo de comentarios para comentarios detallados
-    &#x200B;- Correo electrónico del cliente (opcional)
-    &#x200B;- Enviar a notificación por correo electrónico
+    Cree un formulario de comentarios de clientes con:
+    - Clasificación del producto (de 1 a 5 estrellas)
+    - Campo de comentarios para comentarios detallados
+    - Correo electrónico del cliente (opcional)
+    - Enviar a notificación por correo electrónico
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -75,7 +75,7 @@ Cree formularios utilizando las descripciones en lenguaje natural de sus necesid
 
 Transforme los documentos existentes en formularios digitales interactivos.
 
-Antes de utilizar esta opción, cargue el archivo PDF o una imagen del formulario. PDF puede ser un formulario de PDF basado en AcroForm o en XFA. Para [otros tipos de PDF forms](https://experienceleague.adobe.com/es/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), use la opción [Preparar formulario](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) en Adobe Acrobat para convertirlos en un AcroForm
+Antes de utilizar esta opción, cargue el archivo PDF o una imagen del formulario. PDF puede ser un formulario de PDF basado en AcroForm o en XFA. Para [otros tipos de PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), use la opción [Preparar formulario](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) en Adobe Acrobat para convertirlos en un AcroForm
 
 **Cuándo usar:**
 
@@ -100,7 +100,7 @@ Vamos a crear un formulario de contacto sencillo para comprender el flujo de tra
 
 Comience con una descripción básica del formulario:
 
-    Crear un formulario de contacto básico con campos de nombre, correo electrónico y mensaje
+    Cree un formulario de contacto básico con campos de nombre, correo electrónico, teléfono y mensaje
 
 Esto crea un formulario con tres campos esenciales.
 
@@ -121,7 +121,7 @@ El símbolo `@` hace referencia a campos específicos para las modificaciones de
 
 Añada texto de marcador de posición y directrices útiles:
 
-    Agregar texto de marcador de posición: @name &quot;Su nombre completo&quot;, @email &quot;your.email@company.com&quot;, @message &quot;Díganos cómo podemos ayudarle&quot;
+    Añada texto de marcador de posición: @name “Su nombre completo”, @email “your.email@company.com”, @message “Díganos cómo podemos ayudarle”
 
 ![Se ha agregado validación mediante peticiones de datos en lenguaje natural en el generador de experiencias de formularios](/help/forms/assets/forms-experience-builder-contact-us-form-add-placeholder.png)
 
@@ -131,9 +131,9 @@ Incluya funciones adicionales:
 
     Agregar dos desplegables
     
-    &#x200B;- queryType con opciones: &quot;Pregunta general&quot;, &quot;Solicitud de soporte&quot;, &quot;Consulta de ventas&quot;, &quot;Asociación&quot;
+    - queryType con opciones: &quot;Pregunta general&quot;, &quot;Solicitud de soporte&quot;, &quot;Consulta de ventas&quot;, &quot;Asociación&quot;
     
-    &#x200B;- priorityLevel con opciones (Baja, Medium, Alta)
+    - priorityLevel con opciones (Baja, Medium, Alta)
 
 
 ![Se ha agregado un menú desplegable de componentes utilizando indicaciones en lenguaje natural en el creador de experiencias de Forms](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
@@ -167,10 +167,10 @@ Usar `@fieldName` para hacer referencia a campos específicos:
 
 Describa lo que desea en un inglés sencillo:
 
-    &#x200B;- Agregar una sección para la información de la compañía
-    &#x200B;- Crear un menú desplegable para la selección de departamentos
-    &#x200B;- Incluir una carga de archivo para la reanudación
-    &#x200B;- Configurar notificaciones por correo electrónico cuando se envíe el formulario
+    - Agregar una sección para la información de la compañía
+    - Crear un menú desplegable para la selección de departamentos
+    - Incluir una carga de archivo para la reanudación
+    - Configurar notificaciones por correo electrónico cuando se envíe el formulario
 
 ### Generar gradualmente {#build-incrementally}
 
@@ -190,55 +190,55 @@ Empiece por lo simple y añada complejidad gradualmente:
 **Formulario de contacto básico:**
 
     Crear un formulario de contacto con:
-    &#x200B;- Nombre (obligatorio)
-    &#x200B;- Correo electrónico (obligatorio, validado)
-    &#x200B;- Lista desplegable de asunto (General, Soporte, Ventas, Asociación)
-    &#x200B;- Mensaje (obligatorio, multilínea)
-    &#x200B;- Botón de envío
+    - Nombre (obligatorio)
+    - Correo electrónico (obligatorio, validado)
+    - Lista desplegable de asunto (General, Soporte, Ventas, Asociación)
+    - Mensaje (obligatorio, multilínea)
+    - Botón de envío
 
 **Formulario de comentarios de clientes:**
 
-    Crear un formulario de comentarios de clientes con:
-    &#x200B;- Clasificación del producto (de 1 a 5 estrellas)
-    &#x200B;- Campo de comentarios para comentarios detallados
-    &#x200B;- Correo electrónico del cliente (opcional)
-    &#x200B;- Enviar a notificación por correo electrónico
+    Cree un formulario de comentarios de clientes con:
+    - Clasificación del producto (de 1 a 5 estrellas)
+    - Campo de comentarios para comentarios detallados
+    - Correo electrónico del cliente (opcional)
+    - Enviar a notificación por correo electrónico
 
 ### Formularios de registro e incorporación {#registration-onboarding-forms}
 
 **Registro de usuario:**
 
     Crear un formulario de registro de usuario con:
-    &#x200B;- Información personal (nombre, correo electrónico, teléfono)
-    &#x200B;- Preferencias de cuenta (newsletter, notificaciones)
-    &#x200B;- Aceptación de términos y condiciones
-    &#x200B;- Creación de contraseña con validación de seguridad
+    - Información personal (nombre, correo electrónico, teléfono)
+    - Preferencias de cuenta (newsletter, notificaciones)
+    - Aceptación de términos y condiciones
+    - Creación de contraseña con validación de seguridad
 
 **Incorporación de empleados:**
 
     Crear un formulario de incorporación de empleado con:
-    &#x200B;- Datos personales e información de contacto
-    &#x200B;- Información de empleo y fecha de inicio
-    &#x200B;- Cargas de documentos (currículum, ID, formularios de impuestos)
-    &#x200B;- Selección de beneficios y preferencias
+    - Datos personales e información de contacto
+    - Información de empleo y fecha de inicio
+    - Cargas de documentos (currículum, ID, formularios de impuestos)
+    - Selección de beneficios y preferencias
 
 ### Formularios de encuesta y evaluación {#survey-assessment-forms}
 
 **Encuesta de satisfacción del cliente:**
 
     Crear una encuesta de satisfacción del cliente con:
-    &#x200B;- Clasificación general (escala 1-10)
-    &#x200B;- Clasificaciones de categoría (producto, servicio, soporte técnico)
-    &#x200B;- Secciones de comentarios abiertos
-    &#x200B;- Información demográfica (opcional)
+    - Clasificación general (escala 1-10)
+    - Clasificaciones de categoría (producto, servicio, soporte técnico)
+    - Secciones de comentarios abiertos
+    - Información demográfica (opcional)
 
 **Evaluación de aptitudes:**
 
     Crear un formulario de evaluación de aptitudes con:
-    &#x200B;- Categorías de aptitudes con niveles de competencia
-    &#x200B;- Duración de la experiencia para cada aptitud
-    &#x200B;- Información de certificación y formación
-    &#x200B;- Autoevaluación y objetivos
+    - Categorías de aptitudes con niveles de competencia
+    - Duración de la experiencia para cada aptitud
+    - Información de certificación y formación
+    - Autoevaluación y objetivos
 
 ## Pruebas y validación {#testing-validation}
 

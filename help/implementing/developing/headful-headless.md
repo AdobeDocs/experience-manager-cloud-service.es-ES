@@ -3,8 +3,8 @@ title: Modelos con encabezado y sin encabezado en AEM
 description: Los proyectos de AEM se pueden implementar en un modelo con o sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 90%
@@ -25,11 +25,11 @@ Pero esto no tiene que ser una elección binaria. AEM ofrece una flexibilidad si
 
 ![Modelos de implementación de AEM](/help/headless/assets/aem-implementation-models.png)
 
-AEM AEM En un modelo con encabezado o de pila completa, el contenido se administra en el repositorio de y se utilizan componentes basados en Java, HTL, etc., para procesar el contenido para la experiencia del usuario. En este modelo, la creación del contenido, el estilo, la presentación y la entrega se realizan en AEM.
+En un modelo con encabezado o de pila completa, el contenido se administra en el repositorio de AEM y los componentes de AEM basados en Java, HTL, etc. se utilizan para procesar el contenido para la experiencia del usuario. En este modelo, la creación del contenido, el estilo, la presentación y la entrega se realizan en AEM.
 
 En un modelo sin encabezado, el contenido se administra en el repositorio de AEM, pero se envía mediante una API como REST y GraphQL a otro sistema para procesar el contenido para la experiencia del usuario. En este modelo, el contenido se crea en AEM, pero el diseño, la presentación y entrega se realiza en otra plataforma.
 
-Las aplicaciones de una sola página (SPA) suelen ser el destino del contenido que AEM entrega sin encabezado. SPA AEM Sin embargo, estos no tienen por qué ser totalmente externos a los usuarios de la red de distribución de la. AEM SPA AEM La opción le permite decidir en qué grado se integran sus en el que se encuentran los usuarios de la aplicación de la. Veamos un ejemplo.
+Las aplicaciones de una sola página (SPA) suelen ser el destino del contenido que AEM entrega sin encabezado. Sin embargo, no es necesario que estos SPA sean completamente externos a AEM. AEM le permite decidir en qué medida sus SPA están integrados en AEM. Veamos un ejemplo.
 
 ## Ejemplo de la tienda web {#web-shop-example}
 
@@ -45,7 +45,7 @@ La siguiente sección explora estos niveles de integración con más detalle.
 
 >[!NOTE]
 >
->Por supuesto, también puede volver a implementar la SPA de la tienda web como una SPA que funcione completamente en AEM [con el marco de trabajo de un Editor de SPA en AEM](/help/implementing/developing/hybrid/introduction.md). AEM SPA Si ya tiene una tienda web o un sitio web y desea crear una tienda web u otro tipo de tienda, este es el método recomendado, pero está fuera del ámbito de este documento.
+>Por supuesto, también puede volver a implementar la SPA de la tienda web como una SPA que funcione completamente en AEM [con el marco de trabajo de un Editor de SPA en AEM](/help/implementing/developing/hybrid/introduction.md). Si ya tiene AEM y desea crear una tienda web u otra SPA, este es el método recomendado, pero está fuera del ámbito de este documento.
 
 ## Niveles de integración de las SPA {#integration-levels}
 
@@ -81,7 +81,7 @@ Existen diferentes herramientas disponibles en AEM según el nivel de integraci�
 
 * **Nivel 1:** los fragmentos de contenido y el [marco de trabajo de AEM sin encabezado](/help/headless/introduction.md) se pueden utilizar para enviar contenido AEM a la SPA.
 * **Nivel 2:** Además del nivel uno:
-   * [El componente RemotePage](/help/implementing/developing/hybrid/remote-page.md) se puede utilizar para integrar la SPA externa en AEM donde el contenido de AEM se puede ver en contexto.
+   * [El componente RemotePage](/help/implementing/developing/hybrid/remote-page.md) se puede utilizar para incrustar la SPA externa en AEM donde el contenido de AEM se puede ver en contexto.
    * Algunos puntos de la SPA también se pueden habilitar para [permitir la edición limitada en AEM](/help/implementing/developing/hybrid/editing-external-spa.md).
 * **Nivel 3:** Además del nivel dos:
    * Se pueden habilitar zonas enteras de la SPA para permitir una edición completa en AEM.

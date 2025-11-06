@@ -3,8 +3,8 @@ title: Adobe Experience Manager as a Cloud Service y las directrices de accesibi
 description: Una introducción a Adobe Experience Manager as a Cloud Service y las directrices de accesibilidad web
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Adobe Experience Manager as a Cloud Service y las directrices de accesibilidad web {#aem-and-the-web-accessibility-guidelines}
 
-Existen muchas motivaciones sociales, económicas y legales para garantizar que el contenido web esté diseñado para ser lo más accesible posible a la audiencia de destino, sin importar la discapacidad o las limitaciones que pueda tener. Por lo tanto, la accesibilidad web con Adobe Experience Manager (AEM) as a Cloud Service es un aspecto cada vez más importante del buen diseño web.
+Existen muchas motivaciones sociales, económicas y legales para garantizar que el contenido web esté diseñado para ser lo más accesible posible al público destinatario, sin importar la discapacidad o las limitaciones que pueda tener. Por lo tanto, la accesibilidad web con Adobe Experience Manager (AEM) as a Cloud Service es un aspecto cada vez más importante del buen diseño web.
 
 Crear sitios web y contenidos accesibles con AEM as a Cloud Service afecta a:
 

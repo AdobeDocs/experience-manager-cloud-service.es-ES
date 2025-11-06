@@ -1,11 +1,11 @@
 ---
 title: 'Fragmentos de contenido: configuración'
-description: Obtenga información sobre cómo habilitar la funcionalidad Fragmento de contenido y GraphQL AEM para usarlas con funciones de envío sin encabezado y creación de páginas de la aplicación de forma independiente de la interfaz de usuario.
+description: Obtenga información sobre cómo habilitar la funcionalidad Fragmento de contenido y GraphQL para usarla con las funciones de entrega sin encabezado de AEM y la creación de páginas.
 feature: Content Fragments
-role: Developer, Architect
+role: Developer
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 37%
@@ -14,7 +14,7 @@ ht-degree: 37%
 
 # Fragmentos de contenido: configuración {#content-fragments-setup}
 
-Los fragmentos de contenido dentro del as a Cloud Service de Adobe Experience Manager AEM () le permiten preparar contenido listo para usar en varias ubicaciones y en varios canales. Esto es ideal para la entrega sin encabezado y la creación de páginas.
+Los fragmentos de contenido de Adobe Experience Manager (AEM) as a Cloud Service le permiten preparar contenido listo para usar en varias ubicaciones y en varios canales. Esto es ideal para la entrega sin encabezado y la creación de páginas.
 
 Para habilitar la instancia para la funcionalidad de fragmento de contenido, debe habilitar lo siguiente:
 
@@ -60,7 +60,7 @@ Para usar la funcionalidad de fragmento de contenido, de los modelos de fragment
 
    1. Especifique un **Título**.
    1. Tras la creación, **Name** se convierte en el nombre de nodo en el repositorio.
-Puede introducir un nombre. AEM Si deja el campo en blanco, se generará automáticamente en función del título y, a continuación, se ajustará según [convenciones de nomenclatura de la lista de nombres](/help/implementing/developing/introduction/naming-conventions.md); puede ajustar el resultado si es necesario.
+Puede introducir un nombre. Si deja el campo en blanco, se generará automáticamente basándose en el título y, a continuación, se ajustará según [las convenciones de nomenclatura de AEM](/help/implementing/developing/introduction/naming-conventions.md); puede ajustar el resultado si es necesario.
    1. Para habilitar su uso, seleccione
       * **Modelos de fragmentos de contenido**
       * **Consultas persistentes de GraphQL**
@@ -73,6 +73,6 @@ Puede introducir un nombre. AEM Si deja el campo en blanco, se generará automá
 
 Cuando la configuración **global** está habilitada para la funcionalidad de fragmento de contenido, se aplica a cualquier carpeta de Assets, accesible a través de la consola **Assets**.
 
-Para utilizar otras configuraciones (excluyendo, por lo tanto, las globales) con una carpeta de Assets comparable, debe definir la conexión. Para ello, seleccione la **configuración** adecuada en la ficha **Cloud Service** de las **propiedades de carpeta** de la carpeta correspondiente.
+Para utilizar otras configuraciones (excluyendo, por lo tanto, las globales) con una carpeta de Assets comparable, debe definir la conexión. Para ello, seleccione la **configuración** adecuada en la ficha **Cloud Services** de las **propiedades de carpeta** de la carpeta apropiada.
 
 ![Aplicar configuración](assets/cf-setup-apply-conf.png)

@@ -2,10 +2,10 @@
 title: Editor universal de Edge Delivery Services para formularios
 description: Utilice el editor universal de Edge Delivery Services para formularios y crear formularios adaptables.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 100%
 
@@ -161,7 +161,7 @@ El editor universal proporciona los siguientes componentes listos para usar de f
 ## Preguntas frecuentes
 
 **P: ¿Quién puede utilizar el editor universal?**
-El editor universal está diseñado para una audiencia amplia que incluye:
+El editor universal está diseñado para un público amplio que incluye:
 
 - Creadores de contenido que deseen crear formularios visualmente atractivos.
 - Desarrolladores que necesitan funcionalidades avanzadas de personalización e integración.
