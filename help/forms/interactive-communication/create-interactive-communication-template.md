@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 18%
@@ -33,7 +33,7 @@ Las plantillas de comunicación interactiva de AEM permiten a los usuarios defin
 
 ## Crear una plantilla de comunicación interactiva
 
-Para crear un fragmento de comunicación interactiva, realice los siguientes pasos:
+Para crear una plantilla de comunicación interactiva, realice los siguientes pasos:
 
 1. Abra **Adobe Experience Manager (AEM) Forms as a Cloud Service**.
 

@@ -4,10 +4,10 @@ description: Bloqueo de plantilla en el Editor de comunicaciones interactivas pe
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 11%
+source-wordcount: '505'
+ht-degree: 10%
 
 ---
 
@@ -27,6 +27,8 @@ ht-degree: 11%
 La función Bloqueo de plantilla del Editor de comunicaciones interactivas (IC) permite a los autores de plantillas restringir las modificaciones a elementos específicos de una plantilla de comunicación. Esto garantiza la coherencia del diseño, protege el contenido esencial e impone la gobernanza en todos los equipos que reutilizan plantillas para crear comunicaciones personalizadas.
 
 Cuando se aplican, los componentes bloqueados aparecen visualmente distintos y los autores o colaboradores que siguen el flujo no pueden modificarlos, según el tipo de bloqueo configurado. Esta función ayuda a mantener los estándares de marca, la integridad de los datos y la uniformidad del diseño en todas las comunicaciones derivadas.
+
+![Buscar documento CI](/help/forms/interactive-communication/assets/template-lock.png)
 
 ## &#x200B;2. Tipos de bloqueo
 
@@ -56,15 +58,29 @@ Cuando se aplica, los autores no pueden:
 
 - Cambiar el tamaño del ancho o alto del elemento
 
-## &#x200B;3. Comportamiento en comunicaciones derivadas
+## &#x200B;3. Cómo utilizar el bloqueo de plantilla en el editor de comunicaciones interactivas
 
-- Cuando se crea una comunicación a partir de una plantilla bloqueada, los elementos bloqueados aparecen como de solo lectura en el Editor IC para autores de comunicaciones.
+Siga los siguientes pasos para aplicar bloqueos de contenido o diseño en la plantilla de comunicación interactiva (CI):
 
-- Los componentes con bloqueo de contenido no pueden tener sus propiedades internas ni enlaces modificados.
+1. Abra La Plantilla
+Abra o cree una plantilla, siga la guía [Crear una plantilla de comunicación interactiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
-- Los componentes con bloqueo de diseño no se pueden mover ni cambiar de tamaño.
+1. Seleccione el componente
+Haga clic en el componente (cuadro de texto, imagen o subformulario) que desee restringir.
 
-Esto permite a los creadores de plantillas mantener el control sobre el diseño y la estructura, al tiempo que permite a otros usuarios centrarse en el contenido variable y la personalización basada en datos.
+1. Opciones de bloqueo de acceso
+En el panel Propiedades, vaya a la sección Bloqueo.
+
+1. Aplicar bloqueos
+
+   1. Bloqueo de contenido: evita las ediciones de texto, estilo y datos.
+
+   1. Bloqueo de diseño: Restringe el movimiento y el cambio de tamaño.
+
+   1. Puede habilitar ambas opciones para obtener una protección total.
+
+1. Guardar y verificar
+Guarde la plantilla y cree un nuevo IC basado en ella para confirmar que los elementos bloqueados no se pueden modificar.
 
 ## &#x200B;4. Prácticas recomendadas
 

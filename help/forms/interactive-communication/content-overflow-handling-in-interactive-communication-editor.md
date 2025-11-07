@@ -4,10 +4,10 @@ description: La administración del desbordamiento de contenido en el Editor de 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 17%
+source-wordcount: '487'
+ht-degree: 11%
 
 ---
 
@@ -25,6 +25,35 @@ ht-degree: 17%
 ## Introducción
 
 La función Gestión de desbordamiento de contenido del Editor de comunicaciones interactivas mejora el comportamiento del texto dentro de los diseños de posición y posición variable. Garantiza la continuidad del contenido sin problemas para los diseños fluidos y proporciona alertas visuales para los diseños colocados, lo que proporciona a los autores un mejor control y flexibilidad al diseñar las comunicaciones.
+
+![Buscar documento CI](/help/forms/interactive-communication/assets/content-overflow.png)
+
+## Cómo utilizar la gestión de desbordamiento de contenido en el editor de comunicaciones interactivas
+
+1. Abra el Editor de comunicaciones interactivas
+Abra la comunicación en el Editor IC para empezar a editar el diseño y el contenido.
+
+1. Seleccionar el tipo de diseño
+Elija el diseño que desee para el subformulario, de posición variable o variable en función de cómo desee que se comporte el contenido.
+
+1. Para diseños de posición variable
+
+   1. Asegúrese de que la jerarquía del subformulario principal está establecida en De posición variable.
+
+   1. En el panel Propiedades, habilite la opción Permitir saltos de página dentro del contenido (visible solo si está habilitada la opción &quot;Permitir saltos de página&quot; del subformulario principal).
+
+   1. Añada o pegue texto, cuando el contenido supera una página, continúa automáticamente en la siguiente página.
+
+1. Para diseños colocados
+
+   1. Agregar o editar texto dentro de un contenedor fijo.
+
+   1. Si el contenido supera la altura del contenedor, aparece un borde rojo en la parte inferior para indicar un desbordamiento.
+
+   1. Cambiar manualmente el tamaño del contenedor para dar cabida al contenido adicional.
+
+1. Previsualizar la comunicación
+Utilice la opción Vista previa de PDF para comprobar cómo fluye o desborda el contenido entre páginas para ambos tipos de diseño.
 
 ## Capacidades clave
 

@@ -1,10 +1,10 @@
 ---
-title: Objeto de campo numérico en el editor de comunicaciones interactivas
-description: El objeto de campo numérico en el editor de comunicaciones interactivas de AEM Forms permite a los autores recopilar entradas numéricas de los usuarios en un formato controlado.
+title: Componente de campo numérico en el editor de comunicaciones interactivas
+description: Componente de campo numérico en el editor de comunicaciones interactivas de AEM Forms para permitir a los autores recopilar entradas numéricas de los usuarios en un formato controlado.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 7%
@@ -12,7 +12,7 @@ ht-degree: 7%
 ---
 
 
-# Objeto de campo numérico en el editor de comunicaciones interactivas
+# Componente de campo numérico en el editor de comunicaciones interactivas
 
 >[!NOTE]
 >
@@ -130,6 +130,6 @@ Los autores pueden colocar campos numéricos dentro de contenedores de diseño o
 
 - Mantenga un aspecto y una tipografía coherentes para que coincidan con las directrices de marca.
 
-El objeto **Campo numérico** del editor de comunicaciones interactivas es una herramienta precisa y confiable para la recopilación de datos basados en dígitos. Gracias a sus sólidas opciones de formato, controles de visibilidad y enlace de datos, garantiza que las entradas numéricas se capturan sin problemas y se integran perfectamente en los formularios digitales. Cuando se diseña y configura correctamente, mejora significativamente la capacidad de uso del formulario y la precisión general de los datos.
+El componente **Campo numérico** del editor de comunicaciones interactivas es una herramienta precisa y confiable para la recopilación de datos basados en dígitos. Gracias a sus sólidas opciones de formato, controles de visibilidad y enlace de datos, garantiza que las entradas numéricas se capturan sin problemas y se integran perfectamente en los formularios digitales. Cuando se diseña y configura correctamente, mejora significativamente la capacidad de uso del formulario y la precisión general de los datos.
 
 

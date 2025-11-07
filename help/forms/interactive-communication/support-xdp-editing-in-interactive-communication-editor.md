@@ -4,9 +4,9 @@ description: La compatibilidad con la edición XDP en el Editor de comunicacione
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '433'
 ht-degree: 13%
 
 ---
@@ -25,6 +25,20 @@ ht-degree: 13%
 ## Introducción
 
 El editor de comunicaciones interactivas (CI) ahora ofrece compatibilidad perfecta de **para editar archivos XDP (Paquete de datos XML)** en el entorno de creación. Esta mejora permite a los autores administrar, modificar y mantener las plantillas XDP sin esfuerzo, sin depender de herramientas externas. Con esta capacidad, los usuarios pueden cargar, ver y editar archivos XDP directamente en el editor de CI, lo que permite un flujo de trabajo de diseño a envío unificado y eficaz.
+
+## Cómo utilizar la edición XDP de soporte en el editor de comunicaciones interactivas
+
+![Buscar documento CI](/help/forms/interactive-communication/assets/support-xdp.png)
+
+1. Vaya a **Forms > Forms y documentos**.
+
+1. Cargue su archivo .xdp utilizando la opción **Crear > Cargar archivo**.
+
+1. Abra el XDP en **Editor de comunicaciones interactivas**.
+
+1. Realice los cambios necesarios de **diseño o enlace de datos**.
+
+1. Guarde los cambios y las actualizaciones se reflejarán automáticamente en el archivo XDP de origen.
 
 ## Capacidades clave
 
@@ -46,18 +60,6 @@ Si falta un fragmento, el editor muestra un **mensaje de advertencia** que indic
 - **Reutilización de fragmentos en el editor:**
 Todos los fragmentos XDP existentes aparecen en el **panel Fragmentos** del editor de CI.
 Los autores pueden **arrastrar y soltar** estos fragmentos directamente en el lienzo. Las referencias se conservan, lo que garantiza que las actualizaciones de los fragmentos se propaguen en todos los XDP que las utilizan.
-
-## Ejemplo de uso
-
-1. Vaya a **Forms > Forms y documentos**.
-
-1. Cargue su archivo .xdp utilizando la opción **Crear > Cargar archivo**.
-
-1. Abra el XDP en **Editor de comunicaciones interactivas**.
-
-1. Realice los cambios necesarios de **diseño o enlace de datos**.
-
-1. Guarde los cambios y las actualizaciones se reflejarán automáticamente en el archivo XDP de origen.
 
 ## Ventajas
 
