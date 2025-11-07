@@ -3,7 +3,7 @@ title: Implementar  [!DNL Content Hub]
 description: Obtenga información sobre cómo implementar y activar Content Hub y proporcionar acceso a usuarios con diferentes tipos de privilegios (cargar recursos, usuarios de Adobe Express) y cómo proporcionar privilegios de administrador a usuarios.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: fbcfb88aa1b9510d1dc279475b26d85484ef3fe0
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 6%
@@ -38,12 +38,12 @@ La siguiente tabla resume los tipos de usuarios de Content Hub disponibles, los 
 
 | Función de usuario | Usuarios de Content Hub | Usuarios de Content Hub con derechos para añadir recursos | Usuarios de Content Hub con derechos para remezclar recursos | Administradores de Content Hub |
 |---------------|----------|----------|-------------------------|---|
-| **Capacidades** |
+| **Capacidades** |  |  |  |  |
 | Acceso a los recursos de marca aprobados en el portal de Content Hub | ✓ | ✓ | ✓ | ✓ |
 | Cargar recursos desde el portal de Content Hub | − | ✓ | ✓ | ✓ |
 | Uso de la integración de Adobe Express para editar imágenes | − | − | ✓ | − |
 | Acceso a la IU de configuración de Content Hub | − | − | − | ✓ |
-| **El usuario debe estar en estos perfiles de producto (Admin Console)** |
+| **El usuario debe estar en estos perfiles de producto (Admin Console)** |  |  |  |  |
 | AEM > Instancia de entrega > Usuarios limitados de AEM Assets | ✓ | ✓ | ✓ | ✓ |
 | AEM > Instancia de autor de producción > Usuarios de AEM | − | ✓ | ✓ | − |
 | AEM > Instancia de autor de producción > Administradores de AEM | − | − | − | ✓ |

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 10%
@@ -32,7 +32,7 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
    | ---------------------- | ------- |
    | Tamaño de lote | Número de recursos de un lote cuyos metadatos se van a importar. El valor predeterminado es 50. El valor máximo es 100. |
    | Separador de campos | El valor predeterminado es `,` (una coma). Puede especificar cualquier otro carácter. |
-   | Delimitador de varios valores | Separador para valores de metadatos. El valor predeterminado es `|`. |
+   | Delimitador de varios valores | Separador para valores de metadatos. El valor predeterminado es `\|`. |
    | Lanzar flujos de trabajo | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada está activa para el flujo de trabajo de escritura de metadatos DAM (que escribe metadatos en los datos binarios de XMP). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
    | Nombre de columna de ruta de activos | Define el nombre de columna del archivo CSV con recursos. |
 

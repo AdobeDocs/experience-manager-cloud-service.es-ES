@@ -4,14 +4,14 @@ description: AEM Forms proporciona temáticas de formularios adaptables de muest
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 100%
 
 ---
 
-# Temáticas de referencia, plantillas y modelos de datos de formularios {#reference-themes-templates-and-data-models}
+# Temáticas de referencia, plantillas y modelos de datos de formulario {#reference-themes-templates-and-data-models}
 
 
 | Se aplica a | Vínculo del artículo |
@@ -29,7 +29,7 @@ Las temáticas, las plantillas y los modelos de datos de formulario (FDM) inclui
 
 
 | Temáticas | Plantillas | Modelo de datos de formulario (FDM) |
----------|----------|---------
+|---------|----------|---------|
 | Canvas 3.0 | Basic | Microsoft Dynamics 365 |
 | Tranquilo | Blank | Salesforce |
 | Urbane |   |  |

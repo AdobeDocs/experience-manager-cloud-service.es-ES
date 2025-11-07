@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 91%
+source-wordcount: '2719'
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ El Administrador de varios sitios (MSM) le permite usar el mismo contenido del s
 Esta página proporciona información general sobre cómo reutilizar contenido con MSM. Las siguientes páginas tratan en detalle los problemas relacionados.
 
 * [Creación y sincronización de Live Copies](creating-live-copies.md)
-* [Información general de Live Copy](live-copy-overview.md)
+* [Información general de la consola de Live Copy](live-copy-overview.md)
 * [Configuración de la sincronización de Live Copy](live-copy-sync-config.md)
 * [Conflictos de despliegue de MSM](rollout-conflicts.md)
 * [Prácticas recomendadas de MSM](best-practices.md)
@@ -115,7 +115,7 @@ Se puede acceder directamente a MSM desde la IU mediante diversas opciones desde
 
 * **Crear sitio** (**Sitios**)
 
-   * MSM le ayuda a administrar varios sitios web que comparten contenido común. Por ejemplo: los sitios web suelen estar destinados a audiencias internacionales, de modo que la mayor parte del contenido es común en todos los países, con un subconjunto del contenido específico de cada país. MSM le permite [crear Live Copies que actualicen automáticamente uno o más sitios basados en su sitio de origen](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Esto también le ayuda a aplicar una estructura base común, utilizar el contenido general en varios sitios, mantener un aspecto y un enfoque comunes y enfocar los esfuerzos en administrar el contenido que difiere entre los sitios. Crear un sitio de esta manera:
+   * MSM le ayuda a administrar varios sitios web que comparten contenido común. Por ejemplo: los sitios web suelen estar destinados a públicos internacionales, de modo que la mayor parte del contenido es común en todos los países, con un subconjunto del contenido específico de cada país. MSM le permite [crear Live Copies que actualicen automáticamente uno o más sitios basados en su sitio de origen](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Esto también le ayuda a aplicar una estructura base común, utilizar el contenido general en varios sitios, mantener un aspecto y un enfoque comunes y enfocar los esfuerzos en administrar el contenido que difiere entre los sitios. Crear un sitio de esta manera:
       * Requiere una configuración de modelo predefinida para especificar el origen.
       * Crea una Live Copy del origen (predefinido).
       * Proporciona al usuario el botón **Despliegue**.
@@ -210,7 +210,7 @@ Cuando crea una Live Copy, las páginas de origen seleccionadas se reflejan en 1
 
 La forma básica de Live Copy tiene lo siguiente:
 
-* Páginas de Live Copy que reflejen las páginas de origen seleccionadas de forma individual.
+* Páginas de Live Copy que reflejen las páginas de origen seleccionadas de forma individual :1.
 * Una definición de configuración.
 * Una relación activa definida para cada recurso:
    * Vincule el recurso de Live Copy con su modelo u origen.
@@ -293,7 +293,7 @@ Las configuraciones de despliegue se pueden reutilizar, de modo que más de una 
 
 ### Despliegue de conflictos {#rollout-conflicts}
 
-Los despliegues se pueden complicar, especialmente cuando los autores editan contenido tanto en el origen como en la Live Copy. AEM Por lo tanto, es útil tener en cuenta cómo gestiona el usuario los [conflictos que puedan producirse durante el despliegue](rollout-conflicts.md).
+Los despliegues se pueden complicar, especialmente cuando los autores editan contenido tanto en el origen como en la Live Copy. Por lo tanto, es útil tener en cuenta cómo administra AEM los [conflictos que puedan producirse durante el despliegue](rollout-conflicts.md).
 
 ### Suspender y cancelar la herencia y sincronización {#suspending-and-cancelling-inheritance-and-synchronization}
 

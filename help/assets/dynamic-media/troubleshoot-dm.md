@@ -1,20 +1,20 @@
 ---
 title: Resolución de problemas de Dynamic Media
-description: Obtenga información sobre sugerencias para la resolución de problemas que puede probar al trabajar con imágenes, conjuntos y visores en Dynamic Media.
+description: Obtenga información acerca de sugerencias para la resolución de problemas que puede probar al trabajar con imágenes, conjuntos y visores en Dynamic Media.
 contentOwner: Rick Brough
 feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
 
 # Resolución de problemas de Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
-En el siguiente tema se describe la solución de problemas de Dynamic Media.
+En el siguiente tema se describe la solución de problemas para Dynamic Media.
 
 ## Nueva configuración de Dynamic Media {#new-dm-config}
 
@@ -26,11 +26,11 @@ A continuación se ofrecen algunos consejos y trucos generales para todos los re
 
 ### Propiedades del estado de sincronización de recursos {#asset-synchronization-status-properties}
 
-Las siguientes propiedades de recursos se pueden revisar en CRXDE Lite para confirmar que la sincronización del recurso de Adobe Experience Manager a Dynamic Media se haya realizado correctamente:
+Las siguientes propiedades de recursos se pueden revisar en CRXDE Lite para confirmar que la sincronización del recurso de Adobe Experience Manager a Dynamic Media se ha realizado correctamente:
 
 | **Propiedad** | **Ejemplo** | **Descripción** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Indicador general de que el nodo está vinculado a Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | Indicador general de que el nodo está vinculado a Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** o texto de error | Estado de carga del recurso en Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Debe rellenarse para generar direcciones URL en el recurso remoto de Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **éxito** o **error:`<error text>`** | Estado de sincronización de conjuntos (conjuntos de giros, conjuntos de imágenes, etc.), ajustes preestablecidos de imagen, ajustes preestablecidos de visualizador, actualizaciones de mapa de imagen para un recurso o imágenes que se han editado. |
@@ -45,7 +45,7 @@ Al reemplazar un recurso de Dynamic Media existente (mismo nombre y ubicación),
 
 * Al mantener ambos, se crea un recurso con un nombre único para la URL del recurso publicado. Por ejemplo, `image.jpg` es el recurso original y `image1.jpg` es el recurso que se acaba de cargar.
 
-* Dynamic Media no admite la creación de versiones. La nueva versión reemplaza el recurso existente en la entrega.
+* La creación de una versión no es compatible con Dynamic Media. La nueva versión reemplaza el recurso existente en la entrega.
 
 ## Imágenes y conjuntos {#images-and-sets}
 
@@ -70,7 +70,7 @@ Si tiene problemas con imágenes y conjuntos, consulte las siguientes directrice
     </ol> </td>
    <td><p>Actualizar página/navegar a otra página y volver (se debe volver a compilar el JSP del carril lateral)</p> <p>Si esto no funciona:</p>
     <ul>
-     <li>Recurso de Publish.</li>
+     <li>Publicar recurso.</li>
      <li>Vuelva a cargar el recurso y publíquelo.</li>
     </ul> </td>
   </tr>
@@ -134,12 +134,12 @@ Si tiene problemas con el vídeo, consulte las siguientes directrices para la re
    <td>El vídeo no está codificado</td>
    <td>
     <ul>
-     <li>Compruebe si el Cloud Service de Dynamic Media está configurado.</li>
+     <li>Compruebe si Dynamic Media Cloud Service está configurado.</li>
      <li>Compruebe si un perfil de vídeo está asociado a la carpeta de carga.</li>
     </ul> </td>
    <td>
     <ol>
-     <li>Compruebe que la Configuración de Dynamic Media en Cloud Service esté correctamente configurada.</li>
+     <li>Compruebe que la Configuración de Dynamic Media en Cloud Services esté configurada correctamente.</li>
      <li>Compruebe que la carpeta tenga un perfil de vídeo. Además, compruebe el perfil de vídeo.</li>
     </ol> </td>
   </tr>
@@ -187,7 +187,7 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para l
 **Solución**
 
 1. Vaya a la lista de ajustes preestablecidos de visor en las herramientas de administración: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
-1. Seleccione todos los ajustes preestablecidos de visor y, a continuación, seleccione **Publish**.
+1. Seleccione todos los ajustes preestablecidos de visor y, a continuación, seleccione **Publicar**.
 1. Vuelva al administrador de muestras y observe que el recuento de recursos no activados ahora es cero.
 
 ### Problema: La ilustración preestablecida del visualizador devuelve 404 desde Vista previa en los detalles del recurso o Copiar URL/Código incrustado {#viewer-preset-404}
@@ -216,7 +216,7 @@ Si los recursos de muestra o la ilustración preestablecida del visualizador no 
 1. Vaya al Administrador de paquetes de CRX: `https://localhost:4502/crx/packmgr/`.
 1. Busque el paquete de visor en la lista; comienza con `cq-dam-scene7-viewers-content`.
 1. Seleccione **Reinstalar**.
-1. En Cloud Service, vaya a la página Configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo de configuración de la configuración de Dynamic Media - S7.
+1. En Cloud Services, vaya a la página Configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo Configuración de Dynamic Media - S7.
 1. No realice cambios, seleccione **Guardar**.
 Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear y sincronizar los recursos de muestra, el CSS preestablecido de visualizador y las ilustraciones.
 
@@ -224,7 +224,7 @@ Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear
 
 **Solución**
 
-1. En Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. En Experience Manager, seleccione el logotipo de Experience Manager para acceder a la consola de navegación global y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. En el carril izquierdo, vaya a la carpeta de contenido de ejemplo en la siguiente ubicación:
 
    `/content/dam/_DMSAMPLE`
@@ -236,5 +236,5 @@ Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear
 
 1. Elimine la carpeta `viewer`.
 1. Cerca de la esquina superior izquierda de la página CRXDE Lite, seleccione **[!UICONTROL Guardar todo]**.
-1. En la esquina superior izquierda de la página del CRXDE Lite, seleccione el icono **Volver a inicio**.
-1. Volver a crear una configuración de [Dynamic Media en Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+1. En la esquina superior izquierda de la página CRXDE Lite, seleccione el icono **Volver a inicio**.
+1. Volver a crear una [configuración de Dynamic Media en Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).

@@ -5,7 +5,7 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 100%
@@ -55,10 +55,12 @@ Los distintos tipos de archivo tienen diferentes grados de compatibilidad con lo
 
 ## Búsqueda, utilización y edición de recursos {#support-to-search-use-edit}
 
+<!--writer - please check RAW files row below. There was an extra column, so I deleted a duplicate section. I think I did it right. -->
+
 | Tipo de recurso | [Descargar](/help/assets/manage-organize-assets-view.md#download) | Arrastrar y colocar | [Editor de imágenes](/help/assets/edit-images-assets-view.md) | [Buscar](/help/assets/search-assets-view.md) | [Etiquetas inteligentes](/help/assets/metadata-assets-view.md#tags) | [Cambiar nombre](/help/assets/manage-organize-assets-view.md) | [Versiones](/help/assets/manage-organize-assets-view.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | Rasterización de imágenes | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Archivos RAW | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Archivos RAW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Carpetas | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | Vídeos | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | Bibliotecas CC | − | − | − | − | − | ✓ | ✓ |

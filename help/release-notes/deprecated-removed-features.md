@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '3194'
 ht-degree: 100%
@@ -460,7 +460,7 @@ Las propiedades de los siguientes PID de componentes OSGi no se pueden modificar
 
 | **ID de componente de OSGI** | **Propiedades no modificables** |
 |---|---|
-| **`com.day.cq.auth.impl.cug.CugSupportImpl`** |
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** |  |
 | **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | todo |
 | **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | todo |
 | **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | todo |

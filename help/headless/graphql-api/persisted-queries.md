@@ -4,7 +4,7 @@ description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Exp
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 79%
@@ -301,7 +301,7 @@ De forma predeterminada, AEM invalidará la caché en función de una definició
 | Tipo de caché | [Encabezado de HTTP](https://developer.mozilla.org/es-ES/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configuración de OSGi  | Cloud Manager |
 |--- |--- |--- |--- |--- |
 | Explorador | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
-| La red de distribución de contenido (CDN) | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
+| La red de distribución de contenido (CDN) | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` \|60 |
 | La red de distribución de contenido (CDN) | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | La red de distribución de contenido (CDN) | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 

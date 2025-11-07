@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 2%
@@ -95,8 +95,7 @@ Ver también [Tablero de licencias](/help/implementing/cloud-manager/license-das
 | Tráfico de ataques DDOS | Excluido | Protección DDOS. AEM detecta automáticamente algunos de los ataques de DDOS y los bloquea. Los ataques de DDOS si se detectan no son facturables. |
 | Monitorización de AEM as a Cloud Service New Relic | Excluido | Monitorización global de AEM as a Cloud Service. |
 | URL para que los clientes supervisen su programa de Cloud Service | Excluido | Adobe recomienda usar la dirección URL para supervisar externamente la disponibilidad o la comprobación de estado.<br><br>`/system/probes/health` |
-| Servicio de calentamiento de AEM as a Cloud Service Pod | Excluido |
-| Agente: skyline-service-warmup/1.* |
+| Servicio de calentamiento de AEM as a Cloud Service Pod | Excluido | Agente: skyline-service-warmup/1.* |
 | Motores de búsqueda, redes sociales y bibliotecas HTTP conocidos (etiquetados por Fastly) | Excluido | Servicios conocidos que visitan el sitio con regularidad para actualizar el índice de búsqueda o el servicio:<br><br>Ejemplos:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Preguntar a Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br>· Móvil Google AdsBot<br>· Googlebot<br>· Móvil Googlebot<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteMejora<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br> |
 | Excluir llamadas de Commerce integration framework | Excluido | Las solicitudes realizadas a AEM que se reenvíen a Commerce integration framework (la dirección URL comienza con `/api/graphql`) para evitar el recuento doble, no se pueden facturar en Cloud Service. |
 | Excluir `manifest.json` | Excluido | El manifiesto no es una llamada de API. Se encuentra aquí para proporcionar información sobre cómo instalar sitios web en un escritorio o teléfono móvil. Adobe no debe contar la solicitud JSON a `/etc.clientlibs/*/manifest.json` |

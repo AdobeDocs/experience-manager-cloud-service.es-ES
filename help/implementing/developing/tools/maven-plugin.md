@@ -4,7 +4,7 @@ description: Utilice el complemento Maven del paquete de contenido para implemen
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
@@ -97,7 +97,7 @@ Los parámetros de la tabla siguiente son comunes a todas las metas, excepto cua
 | `failOnError` | `boolean` | No | `false` | Un valor de `true` hace que la compilación falle cuando se produce un error. Un valor de `false` hace que la compilación ignore el error. | Todas las metas excepto `package` |
 | `name` | `String` | `build`: Sí, `install`: No, `rm`: Sí | `build`: No predeterminado, `install`: El valor de la propiedad `artifactId` del proyecto Maven | Nombre del paquete sobre el que se va a actuar | Todas las metas excepto `ls` |
 | `password` | `String` | Sí | `admin` | La contraseña utilizada para la autenticación con AEM | Todas las metas excepto `package` |
-| `serverId` | `String` | No | Identificador de servidor desde el que se recuperan el nombre de usuario y la contraseña para la autenticación | Todas las metas excepto `package` |
+| `serverId` | `String` | No | Identificador de servidor desde el que se recuperan el nombre de usuario y la contraseña para la autenticación | Todas las metas excepto `package` |  |
 | `targetURL` | `String` | Sí | `http://localhost:4502/crx/packmgr/service.jsp` | La URL de la API del servicio HTTP del administrador de paquetes de AEM | Todas las metas excepto `package` |
 | `timeout` | `int` | No | `5` | Tiempo de espera de conexión para comunicarse con el servicio administrador de paquetes, en segundos | Todas las metas excepto `package` |
 | `useProxy` | `boolean` | No | `true` | Un valor de `true` hace que Maven use la primera configuración de proxy activa que se encontró para las solicitudes de proxy al Administrador de paquetes. | Todas las metas excepto `package` |

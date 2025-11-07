@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar Open ID Connect (OIDC) 
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 100%
@@ -156,7 +156,7 @@ A continuación, se muestran algunos de los atributos más relevantes que se van
 | `user.dynamicMembership` | Se recomienda habilitar la suscripción a grupos dinámicos | true |
 | `user.enforceDynamicMembership` | Se recomienda habilitar la aplicación de la suscripción a grupos dinámicos | true |
 | `group.dynamicGroups` | Se recomienda habilitar los grupos dinámicos | true |
-| user.propertyMapping | La implementación proporcionada de `UserInfoProcessor` sincroniza solo algunas propiedades. Se puede modificar y personalizar. | <code>&quot;profile/givenName=profile/given_name&quot;,</code><br><code>&quot;profile/familyName=profile/family_name&quot;,</code><br><code>&quot;rep:fullname=profile/name&quot;,</code><br><code>&quot;profile/email=profile/email&quot;,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>&quot;refresh_token=refresh_token&quot;</code> |  |
+| user.propertyMapping | La implementación proporcionada de `UserInfoProcessor` sincroniza solo algunas propiedades. Se puede modificar y personalizar. | <code>&quot;profile/givenName=profile/given_name&quot;,</code><br><code>&quot;profile/familyName=profile/family_name&quot;,</code><br><code>&quot;rep:fullname=profile/name&quot;,</code><br><code>&quot;profile/email=profile/email&quot;,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>&quot;refresh_token=refresh_token&quot;</code> |
 | `user.membershipNestingDepth` | Devuelve la profundidad máxima de anidamiento de grupos cuando se sincronizan las relaciones de suscripción. Un valor de 0 deshabilita de forma efectiva la búsqueda de miembros del grupo. El valor 1 solo añade los grupos directos de un usuario. Este valor no tiene ningún efecto cuando se sincronizan grupos individuales, únicamente cuando se sincroniza una ascendencia de suscripción de usuarios. | 1 |
 
 ### Configuración del módulo de inicio de sesión externo {#configure-the-external-login-module}

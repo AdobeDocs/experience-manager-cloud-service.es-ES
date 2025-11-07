@@ -4,7 +4,7 @@ description: Obtén información sobre cómo generar una plantilla para un docum
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 100%
@@ -262,7 +262,7 @@ En la tabla siguiente se describen los componentes de formulario adaptable y los
 | Componente de formulario adaptable | Componente XFA correspondiente | Notas |
 |---|---|---|
 | Imagen | Imagen | Los componentes TextDraw e Image, estén enlazados o no, siempre aparecen en el documento de registro de un formulario adaptable basado en XSD, a menos que se excluyan en la configuración del documento de registro. |
-| Texto | Texto |
+| Texto | Texto |  |
 
 ### Tablas {#tables}
 
