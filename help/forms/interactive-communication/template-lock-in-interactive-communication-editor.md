@@ -63,7 +63,7 @@ Cuando se aplica, los autores no pueden:
 Siga los siguientes pasos para aplicar bloqueos de contenido o diseño en la plantilla de comunicación interactiva (CI):
 
 1. Abra La Plantilla
-Abra o cree una plantilla, siga la guía [Crear una plantilla de comunicación interactiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Abra o cree una plantilla, siga la guía [Crear una plantilla de comunicación interactiva](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. Seleccione el componente
 Haga clic en el componente (cuadro de texto, imagen o subformulario) que desee restringir.
