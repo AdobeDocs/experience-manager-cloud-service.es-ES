@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
+source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 67%
+source-wordcount: '1871'
+ht-degree: 60%
 
 ---
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -76,7 +76,19 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 **Editor universal para formularios adaptables y fragmentos de formulario**
 
-El editor universal ahora ofrece una experiencia de creación unificada para crear Forms adaptable y fragmentos de formulario reutilizables. Los autores pueden diseñar formularios de forma visual, configurar acciones de envío e integrar la validación reCAPTCHA en un entorno intuitivo de WYSIWYG.
+El editor universal ahora ofrece una experiencia de creación unificada para crear Forms adaptable y fragmentos de formulario reutilizables. Los autores pueden diseñar formularios visualmente dentro de un entorno intuitivo de WYSIWYG, aprovechando las potentes extensiones y las completas capacidades de envío. El editor integra la validación reCAPTCHA para mejorar la seguridad, proporciona servicios de rellenado previo para reducir la entrada manual y admite el diseño interactivo en todos los dispositivos.
+
+**Extensiones disponibles:**
+
+* **Editor de reglas**: El editor de reglas visual permite a los autores de formularios agregar un comportamiento dinámico a los campos de formulario sin codificación, admitir reglas impulsadas por eventos, validación instantánea y control de errores.
+* **Propiedades del formulario**: Un asistente para ayudar a los usuarios a configurar acciones de envío, servicio de rellenado previo, mensaje de agradecimiento y otros comportamientos relacionados con los formularios directamente en el editor.
+* **Referencia de enlace y Source de datos de formulario**: la extensión de la fuente de datos permite a los autores de formularios agregar componentes asociados a un modelo de datos directamente en un formulario adaptable y seleccionar una referencia de enlace de una selección de árbol para todos los componentes.
+
+**Acciones de envío compatibles:**
+
+El editor universal admite una amplia gama de flujos de trabajo de envío, incluida la acción de envío personalizada, Enviar a Microsoft SharePoint, Enviar a Microsoft OneDrive, Enviar a Azure Blob Storage, Enviar a extremo REST, Invocar un flujo de trabajo de AEM, Invocar un flujo de Power Automate, Enviar a Marketo Engage, Enviar a Adobe Experience Platform (AEP), Enviar a hoja de cálculo, Enviar mediante el modelo de datos de formulario (FDM), Enviar a Workfront Fusion y Enviar correo electrónico.
+
+Para obtener información detallada, consulte [Editor universal para Edge Delivery Services para la documentación de Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md). Para obtener información sobre la configuración de acciones de envío, consulte [Acción de envío de formulario adaptable](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 <!-- ### Pre-Release features in AEM Forms 
 
