@@ -4,10 +4,10 @@ description: Una colección es un conjunto de recursos dentro de la vista de Exp
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 90%
+source-wordcount: '1084'
+ht-degree: 78%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 >title="Administrar colecciones"
 >abstract="Una colección es un conjunto de recursos, carpetas u otras colecciones dentro de la vista Assets. Utilice las colecciones para compartir recursos entre los usuarios. A diferencia de las carpetas, una colección puede incluir recursos de distintas ubicaciones. Puede compartir varias colecciones con un usuario. Cada colección contiene referencias a recursos. La integridad referencial de los recursos se mantiene entre colecciones."
 
-Una colección es un conjunto de recursos, carpetas u otras colecciones dentro de la vista de Adobe Experience Manager Assets. Utilice las colecciones para compartir recursos entre los usuarios.
+Una colección es un conjunto de recursos, carpetas u otras colecciones dentro de la vista Recursos de Adobe Experience Manager. Utilice las colecciones para compartir recursos entre los usuarios.
 
 A diferencia de las carpetas, una colección puede incluir recursos de distintas ubicaciones.
 
@@ -37,6 +37,8 @@ Puede realizar las siguientes tareas para administrar y utilizar colecciones:
 * [Agregar recursos a una colección](#add-assets-to-collection)
 
 * [Eliminación de recursos de una colección](#remove-assets-from-collection)
+
+* [Búsqueda dentro de colecciones](#search-collection)
 
 * [Crear una colección inteligente](#create-smart-collection)
 
@@ -93,6 +95,32 @@ Para quitar recursos de una colección:
 1. Haga clic en la colección y seleccione los elementos que debe quitar de la colección.
 
 1. Haga clic en **[!UICONTROL Quitar]**.
+
+## Búsqueda dentro de colecciones {#search-collection}
+
+Puede buscar dentro de una colección para encontrar fácilmente recursos relevantes. Para ello, ejecute los siguientes pasos:
+
+* Navegue hasta **[!DNL Collections]**. En la barra de búsqueda, escriba una palabra clave para localizar la colección deseada. La barra de búsqueda muestra la ubicación de la colección seleccionada.
+
+* Para restringir los resultados de búsqueda, abra **[!DNL Filters]** y asegúrese de que **[!DNL Collections]** está seleccionado en **[!DNL Asset Type]**.
+
+* En el menú desplegable **[!DNL Collection Visibility]**, elija una de las siguientes opciones:
+
+   * **[!DNL All]:** Muestra todas las colecciones, independientemente de la visibilidad.
+   * **[!DNL Public Collection]:** Muestra solamente las colecciones que son visibles para todos los usuarios.
+   * **[!DNL Private Collection]:** Muestra solamente las colecciones que están restringidas o son visibles para usuarios o grupos específicos.
+
+* En el menú desplegable [!DNL Collection Type], elija una de las siguientes opciones:
+
+   * **[!DNL All]:** muestra colecciones regulares e inteligentes.
+   * **[!DNL Collection]:** Muestra las colecciones creadas manualmente donde los recursos se agregan individualmente.
+   * **[!DNL Smart Collection]:** Muestra colecciones que incluyen automáticamente recursos guardados en [colecciones inteligentes](#manage-smart-collection).
+
+* La lista desplegable **[!DNL Created Date]** le permite filtrar colecciones en función del momento en que se crearon. Puede especificar un intervalo de fechas para buscar colecciones creadas recientemente o colecciones más antiguas.
+
+  ![Colección de búsquedas](assets/search-collection.png)
+
+Para obtener más información, consulte [buscar recursos](search-assets-view.md), [filtrar resultados de búsqueda](search-assets-view.md#refine-search-results) o [administrar búsquedas guardadas](search-assets-view.md##saved-search).
 
 ## Administración de una colección inteligente {#manage-smart-collection}
 
@@ -202,7 +230,7 @@ Para obtener información sobre cómo asignar los permisos disponibles a los gru
 
 Para obtener más información sobre el flujo de trabajo de extremo a extremo, consulte [Administración de permisos](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 * Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 

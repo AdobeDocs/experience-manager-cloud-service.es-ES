@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo buscar y descubrir recursos en la 
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '2255'
-ht-degree: 83%
+source-wordcount: '2277'
+ht-degree: 82%
 
 ---
 
@@ -33,22 +33,19 @@ Para buscar recursos:
 
 ## Filtrado de los resultados de búsqueda {#refine-search-results}
 
+Puede restringir los resultados de búsqueda para encontrar recursos relevantes aplicando varios filtros. Estos filtros, configurados por un administrador, se basan en archivos, carpetas y colecciones. Consulte [Personalizar filtros de búsqueda](custom-search-filters.md).
+
+![Filtros de búsqueda](assets/filters-panel.gif)
+
 Puede filtrar los resultados de búsqueda según los parámetros siguientes.
 
-![Filtros de búsqueda](assets/filters1.png)
-
-*Imagen: filtre los recursos buscados según varios parámetros.*
-
 * Estado de los activos: filtre los resultados de búsqueda mediante un estado del activo `Approved`, `Rejected` o `No Status`.
-
 * Tipo de archivo: filtre los resultados de búsqueda según los tipos de archivos admitidos, es decir, `Images`, `Documents` y `Videos`.
 * Tipo de MIME: filtre uno o varios formatos de archivo compatibles. <!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * Tamaño de imagen: proporcione una o más de las dimensiones mínimas y máximas para filtrar imágenes. El tamaño se proporciona en dimensiones en píxeles y no es el tamaño de archivo de las imágenes.
 * Fecha de creación: la fecha de creación del recurso tal como se indica en los metadatos. El formato de fecha estándar utilizado es `yyyy-mm-dd`.
 * Fecha de modificación: fecha de la última modificación de los recursos. El formato de fecha estándar utilizado es `yyyy-mm-dd`.
-
 * Fecha de caducidad: filtre los resultados de búsqueda en función de un `Expired` estado del activo. Además, puede especificar un intervalo de fechas de caducidad para los recursos para filtrar aún más los resultados de búsqueda.
-
 * Filtros personalizados: [Agregue filtros personalizados](#custom-filters) a la interfaz de usuario de la vista de Assets. Aplique esos filtros personalizados además de los filtros estándar para restringir los resultados de búsqueda.
 
 Puede ordenar los recursos buscados en orden creciente o descendente de `Name`, `Relevance`, `Size`, `Modified` y `Created`. Los recursos buscados se ordenan según `Relevance`, de forma predeterminada.
@@ -375,6 +372,7 @@ Si necesita facilitar comentarios sobre la función de búsqueda contextual, hag
 
 * Facilite comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar un problema] ![crear un problema de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha.
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)
+
 
 

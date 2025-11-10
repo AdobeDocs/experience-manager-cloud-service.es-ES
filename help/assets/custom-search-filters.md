@@ -3,10 +3,10 @@ title: Filtros de búsqueda personalizados
 description: Obtenga información sobre cómo personalizar el formulario de filtros de búsqueda
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 13%
+source-wordcount: '1425'
+ht-degree: 12%
 
 ---
 
@@ -18,18 +18,41 @@ Ver más sobre [search](search-assets-view.md).
 
 Personalizar filtros de búsqueda Los AEM Assets solo se pueden asignar a entradas del índice de propiedades que permiten búsqueda. Asegúrese de que se incluyen los metadatos personalizados antes de configurar su experiencia de filtro personalizado. [!DNL Assets view] ayuda a personalizar los filtros de búsqueda para agilizar el proceso de búsqueda. Para personalizar los filtros de búsqueda personalizados de los AEM Assets, ejecute los siguientes pasos:
 
-1. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración general]**.
-1. Vaya a la ficha **[!UICONTROL Buscar]**. Haga clic en **[!UICONTROL Personalizar]** para configurar el formulario de búsqueda.
+1. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración general]** > **[!UICONTROL Buscar]**.
+
+   <!--1. Go to the **[!UICONTROL Search]** tab. Click **[!UICONTROL Customize]** to configure your search form.-->
 
    ![configuración del filtro de búsqueda personalizada](assets/custom-search-filter.png)
 
-1. Aparecerá el formulario [!UICONTROL Configurar filtros]. Asegúrese de que está en el modo de edición para poder realizar modificaciones en la plantilla. Puede cambiar a [!UICONTROL modo de vista previa] para ver la vista previa de un formulario de búsqueda existente.
-1. Suelte los elementos de filtro de los [filtros personalizados](#available-custom-filters) en el lienzo. Puede arrastrar y soltar el componente para reordenarlo si es necesario.
+1. En la sección **[!UICONTROL Filtros]**, puede configurar lo siguiente:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3443080)
+   * **[!UICONTROL Archivos]:** La configuración de archivos implica tipos de archivo, formatos de archivo, estado de los recursos, tamaño de archivo, dimensiones de imagen, fecha de creación, fecha de modificación, etc.
+   * **[!UICONTROL Carpetas]:** La configuración de carpetas implica la fecha de creación, fecha de descarte, fecha de descarte, etc.
+   * **[!UICONTROL Colecciones]:** La configuración de colecciones implica visibilidad de la colección, tipo de colección, fecha de creación, etc.
 
-1. Haga clic en **[!UICONTROL Modo de vista previa]** para revisar los cambios.
-1. Haga clic en **[!UICONTROL Confirmar]** para guardar.
+1. Puede obtener una vista previa del formulario predeterminado **[!UICONTROL Filtros preestablecidos]** disponible para archivos, carpetas o colecciones. Por su parte, no se puede personalizar ni eliminar este formulario preexistente. Como alternativa, para crear un formulario de filtros personalizado, haga clic en **[!UICONTROL Agregar nuevo formulario]**.
+
+   >[!NOTE]
+   >
+   >Solo se puede crear un formulario de filtro personalizado por categoría (archivo, carpeta o colección).
+
+1. Haga clic en **[!UICONTROL Guardar]** para guardar los cambios.
+
+## Acciones en un formulario configurado {#Actions-on-configured-form}
+
+Puede utilizar las siguientes acciones en un formulario de filtros configurado:
+
+* **[!UICONTROL Personalizar]:** Haga clic para agregar o modificar el formulario. Puede soltar elementos de filtro de los [filtros personalizados](#available-custom-filters) en el lienzo o reordenarlos si es necesario.
+
+* **[!UICONTROL Vista previa]:** Haga clic para revisar los cambios.
+
+* **[!UICONTROL Establecer como predeterminado]:** Haga clic para establecer el formulario seleccionado como predeterminado.
+
+* **[!UICONTROL Eliminar un formulario]:** Haga clic en más opciones ![más opciones](assets/do-not-localize/more-icon.svg) y seleccione **[!UICONTROL Eliminar un formulario]** para eliminar el formulario de filtros seleccionado.
+
+* **[!UICONTROL Editar etiquetas de formulario]:** Haga clic en más opciones ![más opciones](assets/do-not-localize/more-icon.svg) y agregue nueva etiqueta y descripción al formulario de filtros personalizado.
+
+  ![editar etiquetas de formulario](assets/edit-form-labels.png)
 
 ## Filtros personalizados disponibles {#available-custom-filters}
 
@@ -404,6 +427,7 @@ Cada elemento de filtro está asociado a un conjunto de propiedades. Los AEM Ass
     </tr>
 </table>
 
+>[!VIDEO](https://video.tv.adobe.com/v/3443080)
 
 ## Eliminación de un elemento de filtro {#delete-a-filter-element}
 
