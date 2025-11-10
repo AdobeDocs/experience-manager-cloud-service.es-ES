@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0b330db401072c19aa3f8e65ffd6fc4a3e6a3d4b
+source-git-commit: 6496e7e7b3df494f2b5dd5b1b6563783a0c6e43b
 workflow-type: tm+mt
-source-wordcount: '6903'
+source-wordcount: '6918'
 ht-degree: 95%
 
 ---
@@ -406,7 +406,7 @@ ht-degree: 95%
          + [Creación de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [Administrar páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [Propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md)
-         + [Edición de las propiedades de página  &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
+         + [Edición de las propiedades de página  ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
          + [Previsualizar páginas](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [Versiones de página](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -599,7 +599,7 @@ ht-degree: 95%
       + [Creación y uso compartido de carpetas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
-      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
       + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
    + Configuración, administración y ampliación de [!DNL Assets] {#admin}
@@ -812,8 +812,8 @@ ht-degree: 95%
          + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuración de almacenamiento de  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configuración de los servicios en la nube de Salesforce](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
@@ -1023,9 +1023,13 @@ ht-degree: 95%
       + [Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM](/help/forms/manage-applications-inbox.md)
       + [Usar la opción Fuera de la oficina](/help/forms/configure-out-of-office-settings.md)
    + API de comunicaciones {#using-communications}
+      + [Información general sobre las API de comunicaciones](/help/forms/aem-forms-communication-api-overview.md)
       + [Introducción a las API de comunicaciones](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [Authentication-OAuth de servidor a servidor](/help/forms/oauth-api-authetication.md)
+      + [JWT de autenticación (token web JSON)](/help/forms/jwt-api-authentication.md)
       + [API de comunicaciones: procesamiento sincrónico](/help/forms/aem-forms-cloud-service-communications.md)
       + [API de comunicaciones: procesamiento por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [API de comunicaciones: procesamiento bajo demanda](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
       + [Generar salida AFP mediante la API de AEM Forms](/help/forms/document-generation-afp-api.md)
       + [Instalación y configuración de Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Uso de Forms Designer para crear plantillas](/help/forms/use-forms-designer.md)
@@ -1222,7 +1226,7 @@ ht-degree: 95%
       + Creación{#authoring}
          + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=es)
          + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
-      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=es)
+      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
    + Selector de fragmentos de contenido {#content-fragment-selector}
       + [Selector de fragmentos de contenido de Micro-Frontend: información general](/help/headless/content-fragment-selector/overview.md)

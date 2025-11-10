@@ -4,10 +4,10 @@ description: Crear comunicaciones personalizadas y orientadas a la marca
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
-workflow-type: ht
-source-wordcount: '1706'
-ht-degree: 100%
+source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+workflow-type: tm+mt
+source-wordcount: '1710'
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ Una operación por lotes es un proceso de generación de varios documentos de ti
 
 **Configuración del almacén de datos por lotes (USC)**: La configuración de datos por lotes le ayuda a configurar una instancia específica del almacenamiento de Blob para las API por lotes. Permite especificar las ubicaciones de entrada y salida en el almacenamiento del Blob de Microsoft Azure de propiedad del cliente.
 
-**API por lotes**: Permite crear configuraciones por lotes y realizar las ejecuciones por lotes en función de estas configuraciones para fusionar una plantilla PDF o XDP con datos y generar resultados en los formatos PDF, PS, PCL, DPL, IPL y ZPL. Las comunicaciones ofrecen API por lotes para la administración de la configuración y la ejecución por lotes.
+**API por lotes**: Permite crear configuraciones por lotes y realizar las ejecuciones por lotes en función de estas configuraciones para combinar una plantilla PDF o XDP con datos y generar resultados en los formatos PDF, PS, PCL, DPL, IPL y ZPL. Las comunicaciones ofrecen API por lotes para la administración de la configuración y la ejecución por lotes.
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
@@ -181,3 +181,4 @@ La documentación de referencia de la API ofrece información detallada sobre to
 >* [Arquitectura de AEM Forms as a Cloud Service para Formularios adaptables y API de comunicaciones](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Procesamiento de comunicaciones - API a petición](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
