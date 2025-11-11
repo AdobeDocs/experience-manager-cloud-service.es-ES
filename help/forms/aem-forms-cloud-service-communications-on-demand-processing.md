@@ -4,9 +4,9 @@ description: Configurar el entorno de desarrollo para las API sincrónicas de co
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
 source-wordcount: '2574'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Asegúrese de tener los derechos de acceso y los permisos necesarios antes de em
 
 >[!NOTE]
 >
-> Para obtener más información sobre la asignación de funciones y la concesión de acceso a los usuarios, consulte el artículo [Agregar usuarios y funciones](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Para obtener más información sobre la asignación de funciones y la concesión de acceso a los usuarios, consulte el artículo [Agregar usuarios y funciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Acceso a Cloud Manager**
 
@@ -118,7 +118,7 @@ Clone el repositorio Git de Cloud Manager para administrar sus archivos de confi
       ![Clonando el repositorio Git](/help/forms/assets/repo-clone.png)
 
 
-### Opciones de integración del repositorio Git
+**Opciones de integración del repositorio Git**
 
 Adobe Cloud Manager admite ambas opciones de repositorio:
 
@@ -788,7 +788,7 @@ Puede abrir el [PDF generado](/help/forms/assets/create-pdf.png) para verlo.
 **Síntomas:**
 
 - Las solicitudes de API devuelven `404 Not Found`
-- Mensaje de error: *No se encontró el recurso* o no se encontró el extremo de la API *3&rbrace;*
+- Mensaje de error: *No se encontró el recurso* o no se encontró el extremo de la API *3}*
 
 **Posibles causas:**
 

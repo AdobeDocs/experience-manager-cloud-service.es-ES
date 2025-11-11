@@ -4,16 +4,16 @@ description: Aprenda a utilizar la API de sincronización de salida AFP para rec
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 14%
+source-wordcount: '253'
+ht-degree: 13%
 
 ---
 
 # Generar salida AFP mediante la API de AEM Forms
 
-<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder en el [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
+<span class="preview"> Esta es una función de versión preliminar y se puede acceder en el [canal de versión preliminar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
 
 Presentación de funciones avanzadas (AFP) es un formato de documento de alto rendimiento diseñado principalmente para fines de impresión.\
 Esta guía describe todos los pasos y configuraciones necesarios para generar la salida AFP mediante AEM Forms.
@@ -39,12 +39,12 @@ Genera un archivo AFP (presentación de funciones avanzadas) mediante una planti
 
 ### Autorización
 
-Puede usar **BasicAuth** (credenciales de administrador) para entornos locales o la autorización de **BearerAuth** para instancias de AEM Cloud.
+Puede usar **BasicAuth** (credenciales de administrador) para entornos locales o la autorización de **OAuth Server-to-Server** para instancias de AEM Cloud.
 
 ### Solicitud
 
 **Punto final:**
-`POST http://<server>:<port>/adobe/forms/document/generate/afp`
+[https://[publish-url].adobeaemcloud.com/adobe/forms/doc/v1/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post)
 
 ### Encabezados
 
