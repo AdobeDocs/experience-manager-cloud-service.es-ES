@@ -116,7 +116,7 @@ Siga los pasos a continuación, que muestran cómo generar un token de acceso a 
 
 >[!NOTE]
 >
-> Para obtener más información sobre las credenciales del servicio y cómo generar un token de acceso mediante la API de IMS de Adobe, [haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
+> Para obtener más información sobre las credenciales del servicio y cómo generar un token de acceso mediante la API de IMS de Adobe, [haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 Ahora puede utilizar el token de acceso generado para hacer una llamada de API a entornos de desarrollo, fase o producción.
 
