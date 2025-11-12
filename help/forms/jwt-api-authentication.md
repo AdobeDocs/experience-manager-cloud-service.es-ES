@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
+source-git-commit: a9ef6553a7f480895f53f1240cd454c6f4fc7d24
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '451'
 ht-degree: 3%
 
 ---
@@ -78,7 +78,7 @@ Siga los pasos a continuación, que muestran cómo generar un token de acceso a 
 
 4. Generación de token de acceso
 
-   Genere tokens mediante programación utilizando la API de Adobe IMS:
+   Genere tokens mediante programación utilizando el comando cURL:
 
    **Credenciales requeridas:**
 
@@ -92,7 +92,7 @@ Siga los pasos a continuación, que muestran cómo generar un token de acceso a 
    https://ims-na1.adobelogin.com/ims/token/v3
    ```
 
-   **Solicitud de ejemplo (curl):**
+   **Solicitud de ejemplo (cURL):**
 
    ```bash
    curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
@@ -112,6 +112,11 @@ Siga los pasos a continuación, que muestran cómo generar un token de acceso a 
    "expires_in": 86399
    }
    ```
+
+
+>[!NOTE]
+>
+> Para obtener más información sobre las credenciales del servicio y cómo generar un token de acceso mediante la API de IMS de Adobe, [haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 Ahora puede utilizar el token de acceso generado para hacer una llamada de API a entornos de desarrollo, fase o producción.
 
