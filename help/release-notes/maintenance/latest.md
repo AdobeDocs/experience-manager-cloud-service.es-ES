@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c58e4645ddc9390728d6ac5cf92588caaeffae01
+source-git-commit: 5474d0c4295cf8eb576cc416589727c67ffafac7
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1195'
 ht-degree: 20%
 
 ---
@@ -106,7 +106,7 @@ Para obtener más información sobre las funciones nuevas y mejoradas y los prob
 
 ### Problemas conocidos {#known-issues-23320}
 
-Ninguna.
+* FORMS-22633: es posible que los envíos de formularios produzcan errores cuando se utilice código personalizado que dependa de las API de GuideBridge (`getData` o `getDataXML`). Si tiene este problema, póngase en contacto con el Soporte técnico de Adobe para obtener ayuda.
 
 ### Características y API obsoletas {#deprecated-23320}
 
