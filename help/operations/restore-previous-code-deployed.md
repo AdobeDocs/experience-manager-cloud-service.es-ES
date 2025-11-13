@@ -3,24 +3,27 @@ title: Restaurar el código de Source anterior implementado
 description: Aprenda a restaurar un entorno a su última compilación correcta &ndash; no se requiere la ejecución de la canalización.
 feature: Operations
 role: Admin
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 7968668766ae4c8a966bbde93aa2f2ac0c401659
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '578'
 ht-degree: 3%
 
 ---
 
 # Restaurar el código fuente anterior implementado en AEM as a Cloud Service {#restore-previous-code-deployed}
 
+<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+
 >[!NOTE]
 >
->La función descrita en este artículo solo está disponible a través del programa beta de. Para registrarse en la versión beta, consulte [Reversión en un solo clic para implementaciones de canalización](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
 
 Use **Restaurar código anterior implementado** para revertir un entorno instantáneamente a su última compilación correcta; no se requiere la ejecución de la canalización.
 
 Simplemente abre el menú ![Icono de más o el icono de menú de puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) del entorno seleccionado y elige **Restaurar** > **Código anterior implementado** para revertir el código fuente implementado más recientemente en segundos.
+
+Ver también [Restaurar contenido en AEM as a Cloud Service](/help/operations/restore.md).
 
 >[!TIP]
 >
@@ -32,7 +35,7 @@ Simplemente abre el menú ![Icono de más o el icono de menú de puntos suspensi
 
 * Solo se permite una restauración por cada ejecución correcta de la canalización; para restaurar de nuevo, complete otra ejecución correcta de la canalización.
 * Usted tiene permisos de **Environment Restore Create**. Para obtener más información sobre la administración de permisos, consulte [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md).
-* Su organización está inscrita en el programa beta y el indicador de funcionalidad está activado.
+* El indicador de características que protege esta característica está habilitado (activado).
 * El programa se ejecuta en AEM as a Cloud Service.
 * La última canalización para ese entorno se ejecutó correctamente hace **menos de 30 días**.
 * El estado del entorno es *En ejecución* y no hay ninguna canalización en curso.
@@ -41,7 +44,7 @@ Simplemente abre el menú ![Icono de más o el icono de menú de puntos suspensi
 
 >[!IMPORTANT]
 >
->Adobe recomienda validar el procedimiento en `Stage` *antes de* usarlo en `Production` para reducir el riesgo y garantizar la estabilidad.
+>Para el primer uso, Adobe recomienda encarecidamente validar el procedimiento en `Stage` *antes de* usándolo en `Production` para reducir el riesgo y garantizar la estabilidad.
 
 
 Si alguna comprobación falla, Cloud Manager abre el siguiente cuadro de diálogo que enumera una o más condiciones incumplidas y deshabilita **Confirm**, lo que impide la restauración.
@@ -81,3 +84,8 @@ Si solo desea restaurar los datos que se perdieron, dañaron o eliminaron accide
 1. Cloud Manager revierte el entorno a la versión anterior, mantiene el contenido y la configuración intactos y marca el entorno **Restaurando** en la página Entornos hasta que se complete la implementación.
 
    ![Restaurando activación](/help/operations/assets/restore-previous-code-deployed-restoring.png)
+
+1. Cerca de la esquina superior derecha de la página, haz clic en ![Icono de campana o en Icono de notificaciones ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notificaciones** para saber cuándo comienza y finaliza la restauración.
+
+   ![Restaurar notificaciones de código anteriores al iniciar la restauración y al finalizar la restauración](/help/operations/assets/restore-previous-code-notifications.png)
+   *Notificaciones para un trabajo de restauración de código anterior.*
