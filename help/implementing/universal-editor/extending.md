@@ -4,9 +4,9 @@ description: Obtenga información acerca de las distintas opciones para ampliar 
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '565'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,6 @@ Como servicio de Adobe Experience Cloud, la IU del editor universal se puede amp
 * **[Extensión de administración de sitios de AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: abra la consola de Sites en la ubicación de la página en el editor universal
 * **[Extensión de bloqueo de página de AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: vea y cambie el estado del bloqueo de página desde el editor universal
 * **[Extensión de flujos de trabajo de AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: inicie flujos de trabajo en la página y contenido de página desde el editor universal
-* **[Extensión de inicio de sesión para desarrolladores del editor universal de AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: autentíquese con facilidad en su SDK de AEM local cuando desarrolle localmente
 * **[Generar variaciones](/help/generative-ai/generate-variations-integrated-editor.md)**: use la inteligencia artificial generativa (IA) para crear variaciones para el contenido directamente en el panel de propiedades.
 * **[Selector de productos de AEM para el editor universal](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: integre datos de Adobe Commerce seleccionando o eliminando datos de productos del editor.
 * **[Borradores de contenido del editor universal](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: cree, edite y administre varios borradores de contenido.
