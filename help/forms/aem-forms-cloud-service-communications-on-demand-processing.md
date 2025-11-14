@@ -788,7 +788,7 @@ Puede abrir el [PDF generado](/help/forms/assets/create-pdf.png) para verlo.
 **Síntomas:**
 
 - Las solicitudes de API devuelven `404 Not Found`
-- Mensaje de error: *No se encontró el recurso* o no se encontró el extremo de la API *3}*
+- Mensaje de error: *No se encontró el recurso* o no se encontró el extremo de la API *3&rbrace;*
 
 **Posibles causas:**
 
