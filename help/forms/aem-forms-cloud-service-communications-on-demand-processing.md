@@ -6,9 +6,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
+source-git-commit: cb69041ff59ba1ff586e8c1c71090cc2eb9ad453
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2573'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Asegúrese de tener los derechos de acceso y los permisos necesarios antes de em
 
 >[!NOTE]
 >
-> Para obtener más información sobre la asignación de funciones y la concesión de acceso a los usuarios, consulte el artículo [Agregar usuarios y funciones](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Para obtener más información sobre la asignación de funciones y la concesión de acceso a los usuarios, consulte el artículo [Agregar usuarios y funciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Acceso a Cloud Manager**
 
@@ -183,7 +183,7 @@ Ejemplo: `https://author-p43162-e177398.adobeaemcloud.com`
 
    - URL: `https://publish-pXXXXX-eYYYYY.adobeaemcloud.com`
    - Contenedor: publish-pXXXXX-eYYYY
-Ejemplo: `https://publish-author-p43162-e177398.adobeaemcloud.com`
+Ejemplo: `https://publish-p43162-e177398.adobeaemcloud.com`
 
 >[!NOTE]
 >
@@ -318,7 +318,7 @@ Genere los tokens de acceso manualmente en Adobe Developer Console:
 
 **B. Para producción**
 
-Genere tokens mediante programación utilizando la API de Adobe IMS:
+Genere tokens mediante programación utilizando el comando cURL:
 
 **Credenciales requeridas:**
 
@@ -788,7 +788,7 @@ Puede abrir el [PDF generado](/help/forms/assets/create-pdf.png) para verlo.
 **Síntomas:**
 
 - Las solicitudes de API devuelven `404 Not Found`
-- Mensaje de error: *No se encontró el recurso* o no se encontró el extremo de la API *3&rbrace;*
+- Mensaje de error: *No se encontró el recurso* o no se encontró el extremo de la API *3}*
 
 **Posibles causas:**
 
