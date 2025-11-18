@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 4bebe8a3a283711a053320bfda4a8aac32096aa6
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 23%
+source-wordcount: '1026'
+ht-degree: 21%
 
 ---
 
@@ -19,13 +19,13 @@ Cloud Manager proporciona un tablero para facilitar la visualización de las aut
 
 >[!IMPORTANT]
 >
->El tablero de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
+>El tablero de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
 >
 >Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte [Navegación por la interfaz de usuario de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Información general {#overview}
 
-El panel de licencias de Cloud Manager proporciona un acceso fácil a las autorizaciones de la solución disponibles en todos sus programas, incluidos los que se utilizan y los que están disponibles. Además, las métricas de consumo de solicitud de contenido marcaron la tendencia por mes para la solución Sites.
+El tablero de licencias de Cloud Manager proporciona un acceso fácil a las autorizaciones de la solución disponibles en todos sus programas, incluida la cantidad utilizada y la disponible. Además, las métricas de consumo de solicitud de contenido marcaron la tendencia por mes para la solución Sites.
 
 ## Acceso al tablero de licencias {#using-dashboard}
 
@@ -67,6 +67,15 @@ Cada sección resume lo que está disponible y cómo se utiliza, si es que lo es
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
 El botón **Ver detalles de uso** del área de Licencias de Cloud Manager proporciona un desglose detallado del uso actual de los recursos. Al hacer clic en esta opción, se abre un informe o un tablero que muestra métricas importantes relacionadas con la licencia. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Esta funcionalidad le ayuda a supervisar y asegurarse de que se mantiene dentro de los límites del contrato y, al mismo tiempo, le ofrece perspectivas para una mejor planificación y optimización de los recursos.
+
+El botón **Ver detalles de uso** está *deshabilitado* (desactivado) en los siguientes casos:
+
+* La solución no forma parte de su contrato y no tiene créditos. El botón permanece disponible si existen créditos, incluso si se consumen todos los créditos.
+* No hay ningún programa de Cloud Manager configurado para esa solución.
+* Se deshabilita un indicador de funcionalidad que rige los detalles de uso. Debe estar *habilitado* (activado) para su organización antes de que el botón esté disponible.
+* El uso se deshabilita explícitamente para la solución. Actualmente, esta situación solo se aplica a Edge Delivery Services.
+
+
 
 ### Detalles de uso de sitios {#sites-usage-details}
 
