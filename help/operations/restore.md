@@ -77,11 +77,11 @@ Para obtener más información sobre la administración de permisos, consulte [P
 
 1. Enumere todos los entornos de la programa realizando una de las siguientes acciones:
 
-   * En el menú del lado izquierdo, en Servicios, haga clic en **** Entornos del icono![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)Datos **.**
+   * En el menú del lado izquierdo, en Servicios, haga clic en **&#x200B;**&#x200B;Entornos del icono![&#x200B; &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)Datos **.**
 
      ![Pestaña Entornos](assets/environments-1.png)
 
-   * En el menú de la izquierda, en Programa **, haga clic en****Descripción general** y, a continuación, en el tarjeta Entornos **, haga clic en** el ![icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Flujo de trabajo Mostrar Todos.**
+   * En el menú de la izquierda, en Programa **, haga clic en**&#x200B;**Descripción general** y, a continuación, en el tarjeta Entornos **, haga clic en** el ![icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Flujo de trabajo Mostrar Todos.**
 
      ![Mostrar todas las opciones](assets/environments-2.png)
 
@@ -98,7 +98,7 @@ Para obtener más información sobre la administración de permisos, consulte [P
    ![Restaurar pestaña de contenido de una entorno](/help/operations/assets/environments-content-restore-tab.png)
 
    * Si selecciona **Últimas 24 horas**, en el campo Hora **contiguo**, especifique el tiempo exacto dentro de las últimas 24 horas para la restauración.
-   * Si selecciona **Semana** pasada, en el campo Día contiguo ****, seleccione una fecha de los últimos siete días, excluyendo las 24 horas anteriores.
+   * Si selecciona **Semana** pasada, en el campo Día contiguo **&#x200B;**, seleccione una fecha de los últimos siete días, excluyendo las 24 horas anteriores.
 
 1. Una vez seleccionada una fecha o especificada una hora, la sección **Copias de seguridad disponibles**, más abajo, muestra una lista de las copias de seguridad disponibles que se pueden restaurar.
 
@@ -165,7 +165,7 @@ Si los clientes tienen preguntas específicas o justificadas sobre implementaci�
 Al determinar una asignación de área geográfica de datos adecuada, Adobe Systems aplica varios criterios priorizados:
 
 1. **No abandone el área geográfica global**\
-   Las implementaciones permanecen dentro de una de las principales regiones globales: **APAC,****EMEA** y **América.**
+   Las implementaciones permanecen dentro de una de las principales regiones globales: **APAC,**&#x200B;**EMEA** y **América.**
 
 2. **No abandones el continente**\
    Siempre que sea posible, la replicación de datos y la conmutación por error permanecen en el mismo continente.
