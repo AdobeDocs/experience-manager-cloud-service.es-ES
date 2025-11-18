@@ -4,16 +4,16 @@ description: Edite imágenes mediante opciones que se sirven de [!DNL Adobe Expr
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 744c76f29a37610313835074f2f13fdd8f098465
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 78%
+source-wordcount: '1151'
+ht-degree: 75%
 
 ---
 
 # Edición de imágenes en [!DNL Assets view] {#edit-images-in-assets-view}
 
-La IU de vista de Assets permite la edición básica de imágenes con tecnología de Adobe Express integrada en la IU. Esta edición incluye cambiar el tamaño, quitar el fondo, recortar y convertir formatos entre JPEG y PNG. Además, permite realizar ediciones avanzadas a través de la interfaz de Adobe Express incrustada en la interfaz de usuario de la vista de Assets.
+El Assets vista IU permite la edición básica de imágenes con tecnología Adobe Systems Express, integrada al IU. Esta edición incluye cambiar el tamaño, quitar el fondo, recortar y convertir formatos entre JPEG y PNG. Además, permite la edición avanzada a través de la interfaz Adobe Systems Express integrada dentro de la IU vista Assets.
 
 Después de editar una imagen, puede guardar la nueva como una nueva versión. El uso de versiones le ayuda a volver al recurso original más adelante, si es necesario. Para editar una imagen, [abra su previsualización](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) y haga clic en **Editar imagen**.
 
@@ -25,21 +25,21 @@ Después de editar una imagen, puede guardar la nueva como una nueva versión. E
 
 ## Editar imagen {#edit-image}
 
-Vaya a la interfaz de usuario de la vista Assets, use el vínculo [Vista de Assets](https://experience.adobe.com/#/assets) y seleccione el repositorio adecuado. Para obtener acceso, póngase en contacto con el administrador de su organización.
-Para obtener más información de referencia, consulte [Introducción a la vista de Adobe Experience Manager Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprender la interfaz de usuario de la vista de Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) y [Casos de uso de la vista de Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Vaya a Assets vista IU, utilizando el Ver vincular - [Assets](https://experience.adobe.com/#/assets) y seleccionando el repositorio correcto. Para obtener acceso, póngase en contacto con el administrador de su organización.
+Para obtener información de referencia adicional, consulte - [Introducción al uso de Adobe Experience Manager Assets Ver](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprender el Assets vista usuario interfaz](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) y [Assets Ver casos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases) de uso.
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
 >title="Adobe Express Integration"
 >abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
 
-### Editar imagen en la vista de Assets mediante Adobe Express {#edit-image-on-assets-view-using-adobe-express}
+### Editar Imagen en Assets Ver utilizando Adobe Systems Express {#edit-image-on-assets-view-using-adobe-express}
 
-Después de ir a la vista Assets, haz clic en **Assets**, selecciona una imagen y, a continuación, haz clic en **Editar** en el carril superior. La nueva pantalla muestra las opciones de edición disponibles con tecnología de Adobe Express, que incluye cambiar el tamaño, quitar el fondo, realizar recortes y convertir formatos entre JPEG y PNG.
+Después de navegar a Assets Ver, haga clic en **Assets**, seleccione una imagen y, a continuación, haga clic en **Editar** en el carril superior. La nueva pantalla muestra las opciones de edición disponibles con tecnología de Adobe Express, que incluye cambiar el tamaño, quitar el fondo, realizar recortes y convertir formatos entre JPEG y PNG.
 
 #### Cambiar tamaño de imagen {#resize-image-using-express}
 
-Cambiar el tamaño de una imagen a un tamaño específico es un caso de uso popular. La vista de Assets le permite cambiar rápidamente el tamaño de las imágenes para adaptarlas a los tamaños de foto comunes, ya que proporciona nuevas resoluciones calculadas previamente para tamaños de foto específicos. Para cambiar el tamaño de la imagen con la vista de Assets, siga los pasos a continuación:
+Cambiar el tamaño de una imagen a un tamaño específico es un caso de uso popular. Assets Ver le permite cambiar rápidamente el tamaño de las imágenes para que se ajusten a los tamaños de foto comunes al proporcionar nuevas resoluciones precalculadas para tamaños de foto específicos. Para cambiar el tamaño de la imagen mediante Assets Ver, seguir los pasos siguientes:
 
 1. Haga clic en **Cambiar tamaño de la imagen** en el panel izquierdo. Un cuadro de diálogo muestra las funciones de cambio de tamaño de imagen con tecnología de Adobe Express.
 1. Seleccione la plataforma de medios sociales adecuada en la lista desplegable Cambiar tamaño y el tamaño de la imagen en las opciones que se muestran.
@@ -85,12 +85,12 @@ Puede convertir rápidamente entre los formatos de imagen JPEG y PNG mediante Ad
 
 ### Edición de imágenes en el editor integrado de Adobe Express {#edit-images-in-adobe-express-embedded-editor}
 
-Los usuarios con derechos de acceso rápido pueden utilizar el editor Express integrado desde la vista de Assets para editar fácilmente el contenido y crear contenido nuevo con GenAI de Adobe Firefly. Esta función mejora la reutilización de contenidos y acelera su velocidad. También puede utilizar elementos predefinidos para que su recurso tenga un aspecto impresionante o realizar acciones rápidas para editar la imagen con solo unos clics.
+Los usuarios con derecho Express pueden usar el Express editor integrado desde el Ver Assets para editar fácilmente contenido y crear nuevos contenido con GenAI desde Adobe Systems Firefly. Esta función mejora la reutilización de contenidos y acelera su velocidad. También puede utilizar elementos predefinidos para que su recurso tenga un aspecto impresionante o realizar acciones rápidas para editar la imagen con solo unos clics.
 
-![express en la interfaz de usuario de essentials](/help/assets/assets/express-in-essentials-ui.jpg)
-Para editar imágenes con el editor incrustado [!DNL Adobe Express], siga los pasos a continuación:
+![Express in Essentials IU](/help/assets/assets/express-in-essentials-ui.jpg)
+Para editar imágenes con [!DNL Adobe Express] editor incrustado, seguir los pasos siguientes:
 
-1. Vaya a la vista de AEM Assets mediante el vínculo: [Vista de AEM Assets](https://experience.adobe.com/#/assets) y seleccione el repositorio adecuado.
+1. Vaya a Recursos AEM Ver utilizando el Ver vincular - [Recursos AEM](https://experience.adobe.com/#/assets) y seleccione el repositorio correcto.
 1. Haga clic en **Assets**, introduzca una carpeta y seleccione una imagen.
 1. Haga clic en **Abrir en Adobe Express**. La imagen se abre en un lienzo exprés.
 1. Realice los cambios necesarios en la imagen.
@@ -114,14 +114,14 @@ Para editar imágenes con el editor incrustado [!DNL Adobe Express], siga los pa
 
 * Tipo de archivo admitido: JPEG o PNG.
 * Tamaño máximo de archivo admitido: 40 MB.
-* Rango de anchura y altura admitido: entre 50 y 8000 píxeles.
+* Rango de ancho y altura compatible: 65MP (por ejemplo, 8K x 8K o 16K x 4K).
 * Vuelva a cargar la página para ver el nuevo recurso guardado más reciente en la carpeta de origen.
 
 ### Creación de nuevos recursos mediante Adobe Express {#create-new-embedded-editor}
 
 [!DNL Assets view] permite crear una nueva plantilla desde cero utilizando el editor integrado de [!DNL Adobe Express]. Para crear un nuevo recurso con [!DNL Adobe Express], ejecute los pasos siguientes:
 
-1. Vaya a **[!UICONTROL Mi Workspace]** y haga clic en **[!UICONTROL Crear]** en el banner de Adobe Express que aparece en la parte superior. El lienzo blanco de [!DNL Adobe Express] se muestra dentro de la interfaz de usuario de [!DNL Assets view].
+1. Vaya a **[!UICONTROL Mi Espacio de trabajo]** y haga clic en **[!UICONTROL Crear]** en la banner Adobe Systems Express que se muestra en la parte superior. El lienzo blanco de [!DNL Adobe Express] se muestra dentro de la interfaz de usuario de [!DNL Assets view].
 1. Cree su contenido mediante [Plantillas](https://helpx.adobe.com/es/express/using/work-with-templates.html). En caso contrario, vaya a **[!UICONTROL Sus cosas]** para modificar el contenido existente.
 1. Una vez completada la edición, haga clic en **[!UICONTROL Guardar]**.
 1. Especifique la ruta de destino del recurso creado y haga clic en **[!UICONTROL Guardar como nuevo recurso]**.
@@ -129,7 +129,8 @@ Para editar imágenes con el editor incrustado [!DNL Adobe Express], siga los pa
 #### Limitaciones {#limitations}
 
 * Solo puede modificar imágenes de los tipos de formato `JPEG` y `PNG`.
-* El tamaño del recurso debe ser inferior a 40 MB.
+* El tamaño recurso debe ser inferior a 80 MB para escritorio dispositivos y de 40 MB para dispositivos móviles.
+* El rango de anchura y altura admitido se sitúa entre 50 y 8.000 píxeles.
 * Puede guardar una imagen en los formatos `PDF`, `JPEG` o `PNG`.
 
 <!--
@@ -153,7 +154,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/es/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
@@ -192,7 +193,7 @@ TBD: Insert a video of the available social media options.
 
 ### Siguientes pasos {#next-steps}
 
-* Proporcione comentarios sobre el producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Assets.
+* Proporcione comentarios sobre productos mediante la [!UICONTROL opción Comentarios disponible en la interfaz de Assets] vista usuario.
 
 * Facilite comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar un problema] ![crear un problema de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha.
 
@@ -200,5 +201,5 @@ TBD: Insert a video of the available social media options.
 
 >[!MORELIKETHIS]
 >
->* [Acciones rápidas en Adobe Express](https://helpx.adobe.com/in/express/using/resize-image.html)
+>* [Acciones rápidas en Adobe Systems Express](https://helpx.adobe.com/in/express/using/resize-image.html)
 >* [Visualización del historial de versiones de un recurso](navigate-assets-view.md)
