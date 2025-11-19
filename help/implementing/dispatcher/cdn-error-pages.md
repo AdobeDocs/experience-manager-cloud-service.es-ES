@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo anular la página de error predete
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -37,8 +37,6 @@ Ejemplo de configuración:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   errorPages:
     spa:
@@ -93,6 +91,6 @@ De este modo, se almacena directamente en déclencheur el controlador de error d
 
 ### Tutorial
 
-Consulte el tutorial [Páginas de error de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obtener instrucciones paso a paso sobre cómo crear, implementar y probar las páginas de error del servidor CDN.
+Consulte el tutorial [Páginas de error de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obtener instrucciones paso a paso sobre cómo crear, implementar y probar las páginas de error del servidor CDN.
 
 
