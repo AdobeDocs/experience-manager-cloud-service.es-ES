@@ -3,9 +3,9 @@ title: Notas de la versión de Universal Editor Preview
 description: Estas son las notas de la versión de la vista previa del editor universal.
 feature: Release Information
 role: Admin
-source-git-commit: 87c0288356fd561dd15249e3da08850f7c5d031a
+source-git-commit: 434bf669f4a060f2d79dcc57f94fbcff27a840e1
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Notas de la versión de Universal Editor Preview {#preview}
 
-Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 20 de noviembre de 2025.
+Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 27 de noviembre de 2025.
 
 Estas notas de la versión de **preview** se proporcionan para que sepa qué cambios se avecinan en el editor universal y pueda probarlos al [cambiar al entorno de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,11 +27,11 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 
 ## Próximas nuevas funciones {#what-is-new}
 
-* Se han migrado notificaciones a una nueva interfaz de usuario.
+* Ahora hay disponible un menú contextual en el árbol estructurado al hacer clic con el botón derecho.
+* Se ha añadido una tecla de acceso directo a los componentes duplicados.
 
 ## Próximas mejoras {#other-improvements}
 
-* Se ha simplificado la gestión de los valores RTE.
-* Se ha resuelto una rara condición de carrera de barra de herramientas.
-* Se han eliminado las alternancias de funciones no utilizadas.
-* Se han actualizado las dependencias.
+* Se ha resuelto un problema con RTE, que no se guardaba correctamente en el lienzo.
+* Se ha corregido el recorte del árbol de carpetas del selector de contenido.
+* `componentId` ahora se proporciona durante la acción de agregar.
