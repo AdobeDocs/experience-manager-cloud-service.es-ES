@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="Disponibilidad limitada" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
+source-git-commit: 19ef83258bf2cf8fa69411977d40ebbb8ac6432b
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Puede configurar estos lapsos de tiempo mediante dos opciones de programación:
 * **Horas tranquilas**: puede definir un intervalo de tiempo diario (hasta 8 horas) en el que no se producirán actualizaciones.
 * **Actualizar períodos libres**: puede definir un período de tiempo de 7 días en el que no se producirán actualizaciones. Puede tener hasta tres períodos libres de actualización dentro de un lapso de tiempo de 12 meses.
 
-Las funciones de actualizar los periodos libres y las horas de inactividad se configuran por programa.
+Las funciones de actualizar los periodos libres y las horas de inactividad se configuran por programa. Tenga en cuenta que solo los usuarios con la &quot;función de usuario&quot; de **Propietario del negocio** y **Administrador de implementación** pueden ver y usar estas características.
 
 Además, para obtener información sobre los períodos de mantenimiento automático programados de AEM as a Cloud Service, consulte la página [Plan de lanzamiento de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -76,3 +76,13 @@ Vaya a **Actividades>Actualizaciones automáticas>Opciones de actualización**.
 ![Actualizar configuración de periodos libres](assets/update-free-periods.png)
 
 Se mostrará un icono **Activo** cerca del período libre de actualización activo y un icono **Completar** cerca de los períodos libres de actualización completados.
+
+## Períodos de exclusión de mantenimiento planificados {#planned-maintenance}
+
+Adobe tiene una serie de períodos de exclusión de mantenimiento planificados. Adobe define estos periodos para minimizar los riesgos relacionados con eventos críticos y, por lo general, se producen dos o tres veces al año. Puede ver la programación exacta de los períodos de exclusión de mantenimiento en la página [Plan de lanzamiento de mantenimiento](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+
+Para ayudarle a configurar con precisión los periodos sin actualizaciones, los periodos de exclusión de mantenimiento también se muestran en la interfaz de usuario Horas tranquilas y Actualizar periodos libres.
+
+![Períodos de Exclusión de Mantenimiento Planificados](assets/planned-maintenance.png)
+
+Tenga en cuenta que no puede crear un período libre de actualización durante los períodos de exclusión.
