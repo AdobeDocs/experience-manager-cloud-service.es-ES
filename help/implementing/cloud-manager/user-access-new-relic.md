@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1817'
 ht-degree: 39%
 
 ---
@@ -43,7 +43,7 @@ Para un programa recién creado, se crea una cuenta secundaria de New Relic One.
 
 >[!NOTE]
 >
->Un usuario con el rol **Propietario del negocio** o **Administrador de implementación** debe iniciar sesión para administrar la subcuenta de New Relic One.
+>Un usuario con el rol **Propietario del negocio** debe iniciar sesión para administrar la subcuenta de New Relic One.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 

@@ -1,40 +1,51 @@
 ---
 title: IA en AEM as a Cloud Service
 description: Obtenga información sobre la IA de Adobe Experience Manager as a Cloud Service
-feature: Generative AI, AI Assistant, AI Tools
+feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 016d0f155278d6bde5dd09175ec179b10e6acb75
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 82%
+source-wordcount: '440'
+ht-degree: 50%
 
 ---
 
+
 # IA en AEM as a Cloud Service {#ai-in-aem-as-a-cloud-service}
 
-La IA es una parte integral de Adobe Experience Manager as a Cloud Service y se utiliza para ayudar a los usuarios a encontrar información o generar experiencias.
+La inteligencia artificial (IA) es una parte integral de Adobe Experience Manager as a Cloud Service, que permite a los usuarios encontrar información o generar experiencias.
 
 ## Asistente de IA {#ai-assistant}
 
 El [Asistente de IA de Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) ofrece una interfaz conversacional diseñada para agilizar la búsqueda de respuestas a las consultas relacionadas con AEM.
 
+## Inteligencia artificial aplicada a la agencia en AEM {#agentic-ai-in-aem}
+
+AEM proporciona un rango de [agentes empresariales](/help/ai-in-aem/agents/overview.md) para acelerar la creación de contenido y organizar automáticamente los cambios:
+
+* [Agente de producción](/help/ai-in-aem/agents/production/overview.md)
+* [Agente de optimización de contenido](/help/ai-in-aem/agents/content-optimization/using.md)
+* [Agente de detección](/help/ai-in-aem/agents/discovery/using.md)
+* [Agente de desarrollo](/help/ai-in-aem/agents/development/overview.md)
+* [Agente de gobernanza](/help/ai-in-aem/agents/governance/overview.md)
+
 ## IA generativa en AEM {#generative-ai-in-aem}
 
 La IA generativa de Adobe para Adobe Experience Manager (AEM) as a Cloud Service permite a las marcas crear experiencias de alto rendimiento con la generación de copias e imágenes, todo ello dentro de la interfaz de edición. Con la IA generativa, puede crear contenido de forma autónoma con las siguientes características:
 
-* Imagen de marca: cree contenido que incorpore el tono de voz de la marca, las directrices de estilo y otros requisitos específicos.
-* Personalizado por el público: aproveche la información detallada del rendimiento del contenido para adaptar el contenido a cualquier personalidad en todos los canales.
-* Específico de la región: vaya más allá de la traducción y adapte el contenido en función de las preferencias regionales y los patrones de comportamiento.
-* Optimizado de forma continua: ejecute experimentos para determinar qué variaciones funcionan mejor y utilice la información para mejorar el contenido generado por IA en el futuro.
+* **Según la marca**: cree contenido que incorpore el tono de voz de la marca, las directrices de estilo y otros requisitos específicos.
+* **Personalizado por la audiencia**: aprovecha las perspectivas de rendimiento del contenido granular para adaptar el contenido a cualquier persona en todos los canales.
+* **Específico de la región**: vaya más allá de la traducción y adapte su contenido en función de las preferencias regionales y los patrones de comportamiento.
+* **Optimizado de forma continua**: ejecute experimentos para determinar qué variaciones funcionan mejor y use perspectivas para mejorar el contenido futuro generado por IA.
 
 La IA generativa se utiliza en todo AEM:
 
 * [Generar variaciones: integrado en Editores AEM](/help/generative-ai/generate-variations-integrated-editor.md)
 
-  Generar variaciones utiliza la inteligencia artificial (IA) generativa para crear variaciones de contenido basadas en los datos introducidos. Después de crear variaciones, puede usar el contenido de su sitio web y también medir su éxito usando la funcionalidad Experimentación de Edge Delivery Services.
+  Generar variaciones utiliza IA generativa para crear variaciones de contenido basadas en la entrada. Después de crear variaciones, puede utilizar el contenido de su sitio web y también medir su éxito mediante la funcionalidad Experimentación de Edge Delivery Services.
 
-   * Y la versión anterior de [Generar variaciones](/help/generative-ai/generate-variations.md)
+   * [La versión anterior Generar variaciones](/help/generative-ai/generate-variations.md) fuera del editor permanece disponible.
 
      >[!NOTE]
      >
