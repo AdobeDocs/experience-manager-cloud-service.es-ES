@@ -3,9 +3,9 @@ title: Aptitud para la creación de formularios
 description: Obtenga información acerca de las habilidades de creación de formularios de Experience Production Agent y cómo utilizar el lenguaje natural para crear formularios desde cero.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ comandos sencillos de lenguaje natural, lo que elimina la necesidad de aprender 
 
 ## Capacidades {#capabilitiess}
 
-* **Crear un nuevo formulario con solicitud de texto sin formato**: puede crear experiencias de formulario sin marca enviando sus requisitos en un idioma sin formato.
+* **Crear un nuevo formulario con solicitud de texto sin formato**: puede crear un formulario enviando los requisitos en un idioma sin formato. El agente genera automáticamente la estructura de formulario, los tipos de campo y las experiencias de marca adecuados en función de la descripción del lenguaje natural y la plantilla especificada. Esta capacidad acelera la creación de formularios a la vez que garantiza que se mantengan los estándares de conformidad y marca.
 
-* **Importar un PDF o una imagen y convertirla en un formulario**: puede importar y transformar imágenes existentes o documentos de PDF en formularios. El agente analiza el contenido cargado para detectar tipos de campos, conservar diseños y mejorar los formularios con una lógica de validación y diseño adaptable. Los formatos admitidos son Acroforms, PDF XFA, PDF planos, imágenes (JPG, PNG) y fotografías de formularios dibujados a mano.
+* **Importar un PDF o una imagen y convertirla en un formulario**: puede importar y transformar imágenes existentes o documentos de PDF en formularios. El agente analiza el contenido cargado para detectar tipos de campos, conservar diseños y mejorar los formularios con un diseño interactivo y una lógica de validación, a la vez que garantiza que se mantengan la marca y los estándares de conformidad. Los formatos admitidos son documentos de PDF, imágenes (JPG, PNG) y fotografías de formulario dibujadas a mano.
 
   Cuando utilice cualquiera de las funciones anteriores, se le pedirá que elija el tipo de formulario que desea crear, especifique una plantilla de formulario adaptable basada en los componentes principales o una plantilla de formulario adaptable basada en Edge Delivery Services, y que indique la ruta preferida para guardar el formulario. Si está creando un formulario basado en Edge Delivery Services, también puede especificar la dirección URL de GitHub del repositorio.
 
@@ -42,7 +42,7 @@ comandos sencillos de lenguaje natural, lo que elimina la necesidad de aprender 
 
 ## Próximos pasos {#refine-with-forms-experience-builder}
 
-Después de crear la estructura del formulario inicial mediante el Asistente de IA, puede utilizar la extensión de creación de Forms para lo siguiente:
+Después de crear la estructura inicial del formulario con el Asistente para IA, puede utilizar Forms Experience Builder para lo siguiente:
 
 * **Actualizar formularios**: agregue o modifique campos, ajuste tipos de campos y actualice el estilo según sea necesario mediante el editor visual.
 

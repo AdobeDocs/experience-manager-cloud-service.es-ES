@@ -3,9 +3,9 @@ title: Aptitud de creación de comunicación
 description: Obtenga información acerca de la capacidad de creación de comunicaciones del agente de producción de experiencia y cómo utilizar el lenguaje natural para crear comunicaciones interactivas.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Las comunicaciones interactivas son documentos personalizados basados en datos y diseñados para la correspondencia comercial, como extractos de cuentas, documentos de políticas, facturas, kits de bienvenida y avisos de beneficios. A diferencia de los formularios que recopilan entradas de los usuarios, las comunicaciones interactivas generan documentos de salida con contenido dinámico específico del destinatario.
 
-La aptitud de creación de comunicaciones es una capacidad de Experience Production Agent que está diseñada para desarrollar comunicaciones interactivas mediante interacciones en lenguajes naturales. Permite a los usuarios crear correspondencia personalizada basada en datos sin los procesos manuales tradicionales. Esta aptitud elimina la complejidad del diseño de la comunicación al interpretar las peticiones de datos conversacionales y generar automáticamente estructuras de documento, diseños y enlaces de datos adecuados. La aptitud se muestra a través del asistente de IA y Experience Hub.
+La aptitud de creación de comunicaciones es una capacidad de Experience Production Agent que está diseñada para desarrollar comunicaciones interactivas mediante indicadores de lenguaje natural. Esta aptitud genera automáticamente correspondencia personalizada y basada en datos para su impresión (en formato PDF). La aptitud se muestra a través del asistente de IA.
 
 Algunos de los beneficios clave de la habilidad de creación de comunicaciones incluyen:
 
@@ -23,13 +23,16 @@ Algunos de los beneficios clave de la habilidad de creación de comunicaciones i
 * **Correspondencia coherente y sin marca**: cree comunicaciones que sigan las directrices de estilo, plantillas y marca de su organización mediante plantillas y estilos aprobados.
 * **Barrera técnica inferior**: permite a los usuarios empresariales crear comunicaciones fácilmente, sin necesidad de conocimientos técnicos avanzados o de productos profundos.
 
-## Casos de uso e indicadores de ejemplo {#use-cases-prompts}
+## Capacidades {#capabilities}
 
-La aptitud de creación de comunicaciones le permite crear correspondencia en la marca enviando sus requisitos en un lenguaje sencillo.
+* **Crear comunicaciones personalizadas con un mensaje de texto sin formato**: puede crear documentos de comunicación para imprimirlos (en formato PDF) enviando los requisitos en lenguaje sin formato. El agente genera automáticamente las estructuras de documento, los diseños y los enlaces de datos adecuados en función de la descripción en lenguaje natural.
 
-Se le pedirá que especifique la plantilla, indique la ruta preferida para guardar la comunicación y proporcione los detalles del origen de datos. En función de estas selecciones, la aptitud de creación de comunicaciones genera automáticamente el documento adecuado.
+* **Crear a partir de plantillas**: puede usar plantillas organizativas aprobadas para garantizar la coherencia de la marca y los estándares de cumplimiento. El agente aprovecha las plantillas existentes y las directrices de estilo para crear correspondencia dentro de la marca que cumpla los requisitos regulatorios.
 
-### Ejemplos de peticiones de datos {#sample-prompts}
+* **Importar y convertir documentos existentes en comunicaciones interactivas**: puede importar y transformar documentos existentes en comunicaciones interactivas. El agente analiza el contenido cargado para detectar campos, conservar diseños y crear correspondencia basada en datos con capacidades de contenido dinámico. Los formatos admitidos son PDF, archivos XDP, imágenes (JPG, PNG) y plantillas dibujadas a mano.
+
+
+## Ejemplos de peticiones de datos {#sample-prompts}
 
 * *Crear un extracto de cuenta bancaria con la tabla del historial de transacciones y el gráfico de saldos*
 * *Genere un resumen del portafolio de inversiones con gráficos de rendimiento y desglose de activos*
@@ -47,6 +50,8 @@ Se le pedirá que especifique la plantilla, indique la ruta preferida para guard
 ## Próximos pasos {#refine-with-ic-editor}
 
 Después de crear la estructura de comunicación inicial mediante el Ayudante de IA o Experience Hub, puede utilizar el Editor de comunicaciones interactivas para refinar y mejorar el documento:
+
+* **Editar campos con indicaciones en lenguaje natural**: puede agregar, actualizar y quitar campos y sus propiedades sin esfuerzo dentro de los documentos con las indicaciones. El agente interpreta las instrucciones y realiza las modificaciones adecuadas a la estructura del documento y a las configuraciones de campo.
 
 * **Creación incremental de componentes**: agregue o modifique componentes individuales como texto, imágenes, gráficos, tablas y códigos de barras a través del editor visual.
 
