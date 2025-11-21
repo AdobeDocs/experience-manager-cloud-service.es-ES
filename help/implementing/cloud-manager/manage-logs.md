@@ -94,7 +94,7 @@ Environment Id Service    Name
 
 Consulte los siguientes recursos adicionales para obtener más información sobre la API de Cloud Manager y la CLI de Adobe I/O:
 
-* [ Documentación de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [&#x200B; Documentación de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [CLI de Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 Consulte los siguientes recursos adicionales para obtener más información sobre los archivos de registro en AEM as a Cloud Service:
