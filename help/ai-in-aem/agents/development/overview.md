@@ -1,19 +1,19 @@
 ---
-title: Información general de Experience Development Agent
-description: Obtenga información sobre cómo el Experience Development Agent de AEM analiza las canalizaciones con errores en Cloud Manager y los registros de compilación para sugerir correcciones de código y acelerar la depuración.
-feature: Edge Delivery Services, Agentic AI
+title: Información general del agente de desarrollo
+description: Obtenga información sobre cómo el agente de desarrollo de AEM analiza las canalizaciones con errores en Cloud Manager y los registros de compilación para sugerir correcciones de código y acelerar la depuración.
+feature: Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 1f20d2825befa0345f9ebde3a9854cab591de0f6
+source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
 
 
-# Información general de Experience Development Agent {#development-agent-overview}
+# Introducción al agente de desarrollo {#development-agent-overview}
 
-Experience Development Agent ayuda a los desarrolladores y administradores de AEM a crear, depurar, implementar y optimizar código de forma más eficaz.
+El agente de desarrollo ayuda a los desarrolladores y administradores de AEM a crear, depurar, implementar y optimizar código de forma más eficaz.
 
 En la actualidad, el agente puede recuperar los estados de canalización y ayudarle a solucionar errores en los pasos de generación sugiriendo correcciones, lo que ahorra tiempo al depurar implementaciones de AEM as a Cloud Service en entornos de desarrollo, fase y producción. Examina los registros de generación y el código relacionado para recomendar una corrección que puede aplicar manualmente.
 
@@ -27,11 +27,11 @@ En la actualidad, el agente puede recuperar los estados de canalización y ayuda
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-## Acceso a Experience Development Agent a través de Cloud Manager {#how-to-access-the-agent}
+## Acceso al agente de desarrollo a través de Cloud Manager {#how-to-access-the-agent}
 
-Puede acceder a Experience Development Agent a través del asistente de IA que se encuentra en las interfaces de usuario, incluidas Cloud Manager o Experience Hub.
+Puede acceder al agente de desarrollo a través del asistente de IA que se encuentra en las interfaces de usuario, incluidas Cloud Manager o Experience Hub.
 
-**Para tener acceso al Agente de desarrollo de experiencia a través de Cloud Manager:**
+**Para tener acceso al Agente de desarrollo a través de Cloud Manager:**
 
 1. Para empezar, haga clic en [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) para abrir su página principal.
 
@@ -73,7 +73,7 @@ Puede acceder a Experience Development Agent a través del asistente de IA que s
 
 ## Permisos {#permissions}
 
-El trabajo de solución de problemas de canalización del agente de desarrollo de experiencia requiere la función Cloud Manager - Desarrollador o Cloud Manager - Administrador de programas.
+El trabajo de solución de problemas de canalización del agente de desarrollo requiere la función Cloud Manager - Desarrollador o la función Cloud Manager - Administrador de programas.
 
 
 
