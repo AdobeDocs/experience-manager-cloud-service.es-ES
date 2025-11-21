@@ -3,9 +3,9 @@ title: Información general de Discovery Agent
 description: Aprenda a utilizar Discovery Agent para ofrecer contenido de AEM relevante bajo demanda mediante mensajes naturales y conversacionales para una experiencia de detección optimizada y sin clics.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d4b5b0e606e9e680b0950538cce267d094a57d13
+source-git-commit: 25ca9a85b3d3e9917ae144cd906dae7736adb2f0
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1273'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ Nota: Actualmente, la detección de formularios solo admite formularios de Edge 
 
 ### Recursos {#discovery-agent-search-results-assets}
 
-Discovery Agent devuelve los 20 resultados principales para cada consulta, ordenados por relevancia para garantizar que las coincidencias exactas aparezcan primero. El agente combina consultas impulsadas por metadatos con búsquedas semánticas para ensamblar un conjunto específico de coincidencias probables y, a continuación, utiliza un LLM para clasificarlas en función de la intención del usuario. Este enfoque combinado ofrece resultados precisos según el contexto, sin depender completamente de una coincidencia de palabra clave directa.
+Discovery Agent devuelve los resultados principales para cada consulta, ordenados por relevancia para garantizar que las coincidencias exactas aparezcan primero. El agente combina consultas impulsadas por metadatos con búsquedas semánticas para ensamblar un conjunto específico de coincidencias probables y, a continuación, utiliza un LLM para clasificarlas en función de la intención del usuario. Este enfoque combinado ofrece resultados precisos según el contexto, sin depender completamente de una coincidencia de palabra clave directa.
 
 Cada resultado incluye un nombre de recurso junto con metadatos de recurso clave como la ruta de recurso, el creador, la fecha de creación, el título, la descripción, el formato, el último modificador, la última fecha de modificación, el tamaño de archivo, las dimensiones, la [URL de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) y las etiquetas asociadas. Si un recurso está en estado aprobado, los resultados también incluyen [Dynamic Media con la URL de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md).
 
@@ -156,7 +156,7 @@ Puede utilizar estos detalles del recurso para evaluar rápidamente si un recurs
 
 ### Fragmentos de contenido {#discovery-agent-search-results-content-fragments}
 
-Discovery Agent proporciona capacidades de búsqueda de texto completo para fragmentos de contenido, y devuelve los 20 mejores resultados que mejor coinciden con el mensaje especificado. Cada resultado incluye el nombre del fragmento de contenido junto con campos de metadatos clave como la ruta del fragmento de contenido, el creador, la fecha de creación, las variaciones, el último modificador y los campos de la última fecha de modificación.
+Discovery Agent proporciona capacidades de búsqueda de texto completo para fragmentos de contenido, devolviendo los mejores resultados que mejor coinciden con el mensaje especificado. Cada resultado incluye el nombre del fragmento de contenido junto con campos de metadatos clave como la ruta del fragmento de contenido, el creador, la fecha de creación, las variaciones, el último modificador y los campos de la última fecha de modificación.
 
 ![Buscar fragmentos de contenido mediante el agente de detección](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
 
