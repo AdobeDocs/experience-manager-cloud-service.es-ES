@@ -3,9 +3,9 @@ title: Aptitud de creación de comunicación
 description: Obtenga información acerca de la capacidad de creación de comunicaciones del agente de producción de experiencia y cómo utilizar el lenguaje natural para crear comunicaciones interactivas.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
+source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -25,45 +25,44 @@ Algunos de los beneficios clave de la habilidad de creación de comunicaciones i
 
 ## Capacidades {#capabilities}
 
-* **Crear comunicaciones personalizadas con un mensaje de texto sin formato**: puede crear documentos de comunicación para imprimirlos (en formato PDF) enviando los requisitos en lenguaje sin formato. El agente genera automáticamente las estructuras de documento, los diseños y los enlaces de datos adecuados en función de la descripción en lenguaje natural.
+<!-- * **Create personalized communications with plain text prompt**: You can create communication documents for print (in PDF format) by submitting your requirements in plain language. The agent automatically generates appropriate document structures, layouts, and data bindings based on your natural language description. -->
 
 * **Crear a partir de plantillas**: puede usar plantillas organizativas aprobadas para garantizar la coherencia de la marca y los estándares de cumplimiento. El agente aprovecha las plantillas existentes y las directrices de estilo para crear correspondencia dentro de la marca que cumpla los requisitos regulatorios.
 
-* **Importar y convertir documentos existentes en comunicaciones interactivas**: puede importar y transformar documentos existentes en comunicaciones interactivas. El agente analiza el contenido cargado para detectar campos, conservar diseños y crear correspondencia basada en datos con capacidades de contenido dinámico. Los formatos admitidos son PDF, archivos XDP, imágenes (JPG, PNG) y plantillas dibujadas a mano.
+* **Importar y convertir imágenes y documentos existentes en comunicaciones interactivas**: puede importar y transformar documentos existentes en comunicaciones interactivas. El agente analiza el contenido cargado para detectar campos, conservar diseños y crear correspondencia basada en datos con capacidades de contenido dinámico. Los formatos admitidos son PDF, imágenes (JPG, PNG) y plantillas dibujadas a mano.
 
 
 ## Ejemplos de peticiones de datos {#sample-prompts}
 
-* *Crear un extracto de cuenta bancaria con la tabla del historial de transacciones y el gráfico de saldos*
-* *Genere un resumen del portafolio de inversiones con gráficos de rendimiento y desglose de activos*
-* *Crear un extracto de préstamo con programación de pago y saldo restante*
-* *Crear un documento de póliza de seguro con detalles de cobertura y desglose de primas*
-* *Generar un resumen de la reclamación con la escala de tiempo del estado y la información de pago*
-* *Crear un aviso de renovación de póliza con un gráfico de comparación de precios y términos actualizado*
-* *Crea una factura de servicios públicos con gráfico de uso, detalles de pago e historial de facturación*
-* *Generar una notificación de servicio con resumen de cuenta y elementos de acción*
-* *Crear un informe de uso anual con gráfico de consumo mensual y análisis de costos*
-* *Crear una carta de oferta de empleo con detalles de compensación y resumen de beneficios*
-* *Generar un documento de incorporación de empleado con directivas de empresa y formularios requeridos*
-* *Crear un aviso para el ciudadano con información oficial e instrucciones de respuesta*
+* *Cree una comunicación para un extracto de préstamo con la plantilla en https://[aem-author-url]/path/to/pdf/file*
+* *Cree una comunicación desde PDF en https://[aem-author-url]/path/to/pdf/file*
+* *Cree una comunicación a partir del archivo de imagen en https://[aem-author-url]/path/to/image/file*
+* Cree una carta utilizando el archivo PDF en https://[aem-author-url]/path/to/pdf/file
 
-## Próximos pasos {#refine-with-ic-editor}
+## Refine la comunicación {#refine-with-ic-editor}
 
-Después de crear la estructura de comunicación inicial mediante el Ayudante de IA o Experience Hub, puede utilizar el Editor de comunicaciones interactivas para refinar y mejorar el documento:
+Después de crear la estructura de comunicación inicial mediante el Ayudante de IA, puede utilizar el Editor de comunicaciones interactivas para refinar y mejorar el documento. En el Editor de comunicaciones interactivas, puede proporcionar indicadores en lenguaje natural para lo siguiente:
 
-* **Editar campos con indicaciones en lenguaje natural**: puede agregar, actualizar y quitar campos y sus propiedades sin esfuerzo dentro de los documentos con las indicaciones. El agente interpreta las instrucciones y realiza las modificaciones adecuadas a la estructura del documento y a las configuraciones de campo.
+* **Agregar campos y contenido**: agregue nuevos campos, bloques de texto, imágenes, gráficos, tablas y otros componentes a los documentos de comunicación utilizando indicaciones en lenguaje natural. El agente interpreta las instrucciones e inserta los elementos adecuados con la estructura y el formato adecuados.
 
-* **Creación incremental de componentes**: agregue o modifique componentes individuales como texto, imágenes, gráficos, tablas y códigos de barras a través del editor visual.
+* **Editar campos y contenido**: modifique los campos y el contenido existentes en los documentos de comunicación mediante comandos conversacionales. Actualice las propiedades del campo, cambie el contenido del texto, ajuste los enlaces de datos y perfeccione las configuraciones del componente.
 
-* **Enlace de datos dinámico**: configure orígenes de datos, configure asignaciones de campos y enlace componentes a datos back-end para su personalización.
+* **Quitar campos y contenido**: elimine campos, componentes o secciones no deseados de los documentos de comunicación mediante instrucciones en lenguaje natural. El agente elimina los elementos especificados manteniendo al mismo tiempo la estructura del documento y la integridad del diseño.
 
-* **Diseño y refinamiento del diseño**: ajuste la posición, el formato, el estilo y las páginas maestras para lograr una correspondencia píxel a píxel.
+* **Campos de estilo y contenido**: aplique formato y estilo a los campos y al contenido mediante mensajes en lenguaje natural. Ajuste fuentes, colores, alineación, espaciado y otras propiedades visuales para que coincidan con las directrices de marca y los requisitos de diseño.
 
-* **Creación y administración de fragmentos**: cree fragmentos de documento reutilizables como encabezados, pies de página, exenciones de responsabilidad y bloques de firma para mantener la coherencia.
+### Ejemplos de peticiones de datos para perfeccionar las comunicaciones {#sample-prompts-refining}
 
-* **Creación de reglas y lógica**: defina contenido condicional, configure reglas empresariales y configure validaciones mediante el editor de reglas.
+* *Generar una carta de liquidación de reclamación de seguro de vehículo*
+* *Poner en cursiva el texto de exención de responsabilidad*
+* *Cambiar el tamaño de fuente del texto de exención de responsabilidad a 12*
+* *Actualizar el color de fuente del texto de exención de responsabilidad a rojo*
+* *Actualizar el color de fondo de los cuadros de texto de encabezado y pie de página a gris claro*
+* *Agregar un nuevo panel de exención de responsabilidad con campos de firma y confirmación*
+* *Quitar el campo de texto de confirmación*
+* *Agregar una tabla de detalles de pago con tres columnas*
+* *Actualizar la alineación del campo de número de directiva al centro*
+* *Cambiar el interlineado de la sección de términos y condiciones a 1.5*
 
-* **Salida multicanal**: configure las versiones de los canales impreso y web para garantizar una presentación óptima en todos los formatos de entrega.
-
-Para obtener más información, consulte [Documentación de comunicaciones interactivas](/help/forms/introduction-to-interactive-communication.md).
+Para obtener más información sobre las capacidades del editor de comunicaciones interactivas, consulte [Documentación de comunicaciones interactivas](/help/forms/introduction-to-interactive-communication.md).
 

@@ -3,9 +3,9 @@ title: Aptitud para la creación de formularios
 description: Obtenga información acerca de las habilidades de creación de formularios de Experience Production Agent y cómo utilizar el lenguaje natural para crear formularios desde cero.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
+source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ comandos sencillos de lenguaje natural, lo que elimina la necesidad de aprender 
 
 * **Crear un nuevo formulario con solicitud de texto sin formato**: puede crear un formulario enviando los requisitos en un idioma sin formato. El agente genera automáticamente la estructura de formulario, los tipos de campo y las experiencias de marca adecuados en función de la descripción del lenguaje natural y la plantilla especificada. Esta capacidad acelera la creación de formularios a la vez que garantiza que se mantengan los estándares de conformidad y marca.
 
-* **Importar un PDF o una imagen y convertirla en un formulario**: puede importar y transformar imágenes existentes o documentos de PDF en formularios. El agente analiza el contenido cargado para detectar tipos de campos, conservar diseños y mejorar los formularios con un diseño interactivo y una lógica de validación, a la vez que garantiza que se mantengan la marca y los estándares de conformidad. Los formatos admitidos son documentos de PDF, imágenes (JPG, PNG) y fotografías de formulario dibujadas a mano.
+* **Importar un documento de PDF y convertirlo en formulario**: puede importar y transformar documentos de PDF existentes en formularios. El agente analiza el contenido cargado para detectar tipos de campos, conservar diseños y mejorar los formularios con un diseño interactivo y una lógica de validación, a la vez que garantiza que se mantengan la marca y los estándares de conformidad.
 
   Cuando utilice cualquiera de las funciones anteriores, se le pedirá que elija el tipo de formulario que desea crear, especifique una plantilla de formulario adaptable basada en los componentes principales o una plantilla de formulario adaptable basada en Edge Delivery Services, y que indique la ruta preferida para guardar el formulario. Si está creando un formulario basado en Edge Delivery Services, también puede especificar la dirección URL de GitHub del repositorio.
 
@@ -40,7 +40,7 @@ comandos sencillos de lenguaje natural, lo que elimina la necesidad de aprender 
 * *Cree un formulario de solicitud de tarjeta de crédito importando el archivo PDF disponible en &#39;https://[aem-author-url]/path/to/pdf/file*
 * *Crear un formulario de comentarios usando la repetidor en &#39;<https://github.com/wkndforms/wesecure>&#39;*
 
-## Próximos pasos {#refine-with-forms-experience-builder}
+## Acotamiento del formulario {#refine-with-forms-experience-builder}
 
 Después de crear la estructura inicial del formulario con el Asistente para IA, puede utilizar Forms Experience Builder para lo siguiente:
 
