@@ -3,7 +3,7 @@ title: Introducción a Assets as a Cloud Service para la administración de recu
 description: Introducción a Assets as a Cloud Service para la administración de recursos digitales en AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5078'
 ht-degree: 100%
 
@@ -191,7 +191,7 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
 </td>
 </table>
 
-**Imágenes inteligentes**: las imágenes inteligentes ofrecen un rendimiento aun mejor en el envío de recursos de la imagen ya que optimizan automáticamente el formato y el tamaño de archivo de una imagen en función de la capacidad del explorador del cliente. Funciona con los ajustes preestablecidos de la imagen existente y utiliza inteligencia en el envío. Esta inteligencia reduce aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red y del explorador.
+**Imágenes inteligentes**: las imágenes inteligentes ofrecen un rendimiento aun mejor en el envío de recursos de la imagen ya que optimizan automáticamente el formato y el tamaño de archivo de una imagen en función de la capacidad del explorador del cliente. Funciona con los ajustes preestablecidos de imagen existentes y utiliza inteligencia en el envío. Esta inteligencia reduce aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red y del explorador.
 
 **Recorte inteligente**: una capacidad de IA de Adobe Sensei para detectar automáticamente el punto focal en cualquier imagen o vídeo, y aplicar el recorte para mantenerlo. Captura el punto de interés deseado independientemente del tamaño de la pantalla y, por lo tanto, elimina las tareas manuales tediosas, y ofrece imágenes y vídeo de alta calidad y carga rápida que se ven bien en cualquier dispositivo o pantalla.
 
@@ -270,11 +270,11 @@ AEM Assets proporciona funciones que le ayudan a encontrar rápidamente el recur
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=es">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Prácticas recomendadas de administración de metadatos" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=es">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Prácticas recomendadas de administración de metadatos</strong>
       </a>
    </div>
@@ -701,7 +701,7 @@ Dynamic Media le ayuda a ofrecer recursos de marketing y comercialización visua
 
 Dynamic Media ofrece las siguientes funciones clave:
 
-* **Imágenes inteligentes**: las imágenes inteligentes ofrecen un rendimiento del envío de recursos de la imagen aún mejor ya que optimizan automáticamente el formato y el tamaño de archivo de una imagen en función de la capacidad del explorador del cliente. Funciona con los ajustes preestablecidos de la imagen existente y utiliza inteligencia en el envío. Esta inteligencia reduce aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red y del explorador.
+* **Imágenes inteligentes**: las imágenes inteligentes ofrecen un rendimiento del envío de recursos de la imagen aún mejor ya que optimizan automáticamente el formato y el tamaño de archivo de una imagen en función de la capacidad del explorador del cliente. Funciona con los ajustes preestablecidos de imagen existentes y utiliza inteligencia en el envío. Esta inteligencia reduce aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red y del explorador.
 
 * **Conjuntos de vídeos adaptables**: un conjunto de vídeos adaptables agrupa versiones del mismo vídeo que se codifican con diferentes formatos y velocidades de bits. Empiece con el vídeo original principal, que cargue en el sistema. Dynamic Media cambia automáticamente el tamaño de ese vídeo o lo transcodifica en varios vídeos. A continuación, en el momento del envío, determina de forma inteligente qué pantalla de vídeo, qué calidad y qué formato utilizar, y la envía al teléfono, a la tableta o al equipo del escritorio.
 
@@ -800,7 +800,7 @@ Para obtener información sobre las ofertas de Dynamic Media disponibles, consul
       </a>
    </div>
    <p>
-      <em>Conozca las ventajas clave y cómo se habilitan. </em>
+      <em>Conozca las ventajas clave y cómo habilitarlo. </em>
    </p>
 </td>
 
