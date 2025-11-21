@@ -3,7 +3,7 @@ title: Información general de Discovery Agent
 description: Aprenda a utilizar Discovery Agent para ofrecer contenido de AEM relevante bajo demanda mediante mensajes naturales y conversacionales para una experiencia de detección optimizada y sin clics.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: ab94d59ff93eb4cf29e15a8945063b8ae00c57e8
+source-git-commit: d4b5b0e606e9e680b0950538cce267d094a57d13
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 1%
@@ -156,7 +156,7 @@ Puede utilizar estos detalles del recurso para evaluar rápidamente si un recurs
 
 ### Fragmentos de contenido {#discovery-agent-search-results-content-fragments}
 
-Discovery Agent proporciona capacidades de búsqueda de texto completo para fragmentos de contenido, y devuelve los 20 mejores resultados que coinciden mejor con el mensaje especificado. Cada resultado incluye el nombre del fragmento de contenido junto con campos de metadatos clave como la ruta del fragmento de contenido, el creador, la fecha de creación, las variaciones, el último modificador y los campos de la última fecha de modificación.
+Discovery Agent proporciona capacidades de búsqueda de texto completo para fragmentos de contenido, y devuelve los 20 mejores resultados que mejor coinciden con el mensaje especificado. Cada resultado incluye el nombre del fragmento de contenido junto con campos de metadatos clave como la ruta del fragmento de contenido, el creador, la fecha de creación, las variaciones, el último modificador y los campos de la última fecha de modificación.
 
 ![Buscar fragmentos de contenido mediante el agente de detección](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
 
