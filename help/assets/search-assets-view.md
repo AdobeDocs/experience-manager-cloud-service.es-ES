@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo buscar y descubrir recursos en la 
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 79%
+source-wordcount: '1938'
+ht-degree: 77%
 
 ---
 
@@ -145,6 +145,19 @@ Sin embargo, la búsqueda de IA coincide con palabras similares como `Girl`, `La
 Del mismo modo, puede especificar este mensaje en español o escribir incorrectamente `Woman` como `Wman` y seguir obteniendo los mismos resultados.
 
 ![Búsqueda semántica en la vista de Assets](assets/semantic-search.png)
+
+### Habilitar o deshabilitar la búsqueda de IA en la vista de Assets {#enable-disable-ai-search}
+
+Siga estos pasos para habilitar o deshabilitar la búsqueda de IA:
+
+1. Vaya a **[!UICONTROL Configuración]** >> **[!UICONTROL Configuración general]** y seleccione la ficha **[!UICONTROL Buscar]**.
+
+1. En la sección **[!UICONTROL Buscar]**, seleccione **[!UICONTROL Búsqueda de IA]** para habilitar la Búsqueda de IA o **[!UICONTROL Palabra clave]** para deshabilitarla.
+
+   ![Búsqueda semántica en la vista de Assets](/help/assets/assets/enable-disable-ai-search.png)
+
+1. Haga clic en **[!UICONTROL Guardar]**.
+
 
 ## Búsqueda de recursos con [!DNL Adobe Firefly] {#search-firefly}
 
@@ -373,7 +386,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Facilite comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar un problema] ![crear un problema de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha.
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)
 
 
 
