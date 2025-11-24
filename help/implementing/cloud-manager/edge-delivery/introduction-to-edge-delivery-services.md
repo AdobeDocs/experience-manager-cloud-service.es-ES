@@ -4,7 +4,7 @@ description: Aprenda a enviar sus proyectos de Cloud Manager con Edge Delivery S
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 93%
@@ -73,7 +73,7 @@ Se puede añadir Edge Delivery Services de varias formas diferentes, en función
 
 La **lista de tareas pendientes de Edge Delivery** en Cloud Manager es una lista de comprobación de tareas de incorporación diseñada para guiarlo a través de la incorporación y administrar su sitio de Edge Delivery hasta [el lanzamiento](/help/journey-onboarding/go-live-checklist.md).
 
-![Lista de tareas pendientes del sitio de Edge Delivery en Cloud Manager.](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Lista de tareas pendientes del sitio de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Tarea | Descripción |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ La **lista de tareas pendientes de Edge Delivery** en Cloud Manager es una lista
 | 8 | Configuración de validación push | Ver [Configuración de validación push para un sitio Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Go-Live | Consulte [Lista de comprobación de lanzamiento](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441564?captions=spa&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registro de un vale de asistencia {#eds-support-ticket}
 

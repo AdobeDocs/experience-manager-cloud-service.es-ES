@@ -1,11 +1,11 @@
 ---
 title: Información general del agente de desarrollo
 description: Obtenga información sobre cómo el agente de desarrollo de AEM analiza las canalizaciones con errores en Cloud Manager y los registros de compilación para sugerir correcciones de código y acelerar la depuración.
-feature: Agentic AI
+feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 1%
 
 ---
@@ -81,8 +81,8 @@ El trabajo de solución de problemas de canalización del agente de desarrollo r
 
 | Indicación | Resultado |
 | --- | --- |
-| *Enumerar mis canalizaciones con errores para el programa principal.* | Aunque los resultados pueden variar, este mensaje debe generar una tabla de canalizaciones fallidas, con una sugerencia de seguimiento para hacer referencia a una canalización específica para analizar. |
-| *Analizar mi canalización con error llamada &quot;Canalización de desarrollo&quot;.* | Este mensaje debe resultar en un análisis de la canalización fallida con sugerencias para corregirla. |
+| *Enumerar mis canalizaciones con errores para el programa principal.* | Aunque los resultados pueden variar, este mensaje genera una tabla de canalizaciones fallidas, con una sugerencia de seguimiento para hacer referencia a una canalización específica para analizar. |
+| *Analizar mi canalización con error llamada &quot;Canalización de desarrollo&quot;.* | Este mensaje resulta en un análisis de la canalización fallida con sugerencias para corregir. |
 
 ## Funciones fuera de ámbito {#out-of-scope-features}
 

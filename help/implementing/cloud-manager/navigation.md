@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1594'
 ht-degree: 37%
 
 ---
@@ -67,7 +67,7 @@ La primera es la barra de navegación superior de Experience Platform, que es pe
 * El ![icono Mostrar menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (mostrar u ocultar menú lateral) le proporciona acceso a una variedad de fichas que pueden llevarle a partes específicas de un programa individual. O bien, puede cambiar entre el [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md) y la consola **[Mis programas](#my-programs-console)** en función del contexto.
 * El ![icono de Campana](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notificaciones](/help/implementing/cloud-manager/notifications.md)) le proporciona acceso a notificaciones y anuncios, entre otras cosas.
 
-Para obtener más información sobre la barra de navegación superior de Experience Platform, consulte la [guía de la interfaz de usuario de Adobe Experience Platform.](https://experienceleague.adobe.com/es/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Para obtener más información sobre la barra de navegación superior de Experience Platform, consulta la [guía de la interfaz de usuario de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
 
 #### Barra de herramientas del programa {#program-toolbar}
 
@@ -122,7 +122,7 @@ Una tarjeta (o fila en una tabla) representa cada programa, lo que proporciona u
 * Nombre asignado al programa. La imagen anterior muestra &quot;Ejemplo de SecurBank&quot; como nombre del programa.
 * Tipo de servicio:
    * **Experience Manager Cloud** para programas de AEM as a Cloud Service
-   * **Experience Manager** — para [programas de AMS (Adobe Managed Services)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — para [programas de AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Zona protegida
    * Producción
@@ -149,7 +149,7 @@ El icono ![Más](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_
 * Vaya a un ![icono de datos](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Entorno](/help/implementing/cloud-manager/manage-environments.md) particular del programa
 * Abra el ![icono de información general del programa](/help/implementing/cloud-manager/assets/program-overview.svg) [Información general del programa](#program-overview)
 * ![Editar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Editar el programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Eliminar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Eliminar un programa de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Eliminar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Eliminar un programa de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >

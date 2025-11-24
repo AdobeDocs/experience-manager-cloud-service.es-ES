@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1544'
 ht-degree: 29%
 
 ---
@@ -19,7 +19,7 @@ Obtenga información sobre el entorno de compilación de Cloud Manager y cómo c
 
 >[!TIP]
 >
->Este documento cubre el entorno de compilación de Cloud Manager para desarrollar su proyecto de AEM as a Cloud Service. Para obtener más información acerca de las plataformas cliente compatibles con AEM as a Cloud Service para la creación de contenido, consulte el documento [Plataformas de cliente compatibles.](/help/overview/supported-platforms.md)
+>Este documento cubre el entorno de compilación de Cloud Manager para desarrollar su proyecto de AEM as a Cloud Service. Para obtener más información sobre las plataformas cliente compatibles con AEM as a Cloud Service para la creación de contenido, consulte [Plataformas de cliente compatibles](/help/overview/supported-platforms.md).
 
 ## Generar detalles del entorno {#build-environment-details}
 
