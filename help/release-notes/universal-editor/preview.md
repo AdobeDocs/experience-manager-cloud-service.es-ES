@@ -3,9 +3,9 @@ title: Notas de la versión de Universal Editor Preview
 description: Estas son las notas de la versión de la vista previa del editor universal.
 feature: Release Information
 role: Admin
-source-git-commit: 434bf669f4a060f2d79dcc57f94fbcff27a840e1
+source-git-commit: b060b77954471124a5062fa4b08e905052bc9010
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,7 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 
 ## Próximas nuevas funciones {#what-is-new}
 
+* Se deshabilitaron los encabezados de autorización en favor del [inicio de sesión de desarrollador local.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
 * Ahora hay disponible un menú contextual en el árbol estructurado al hacer clic con el botón derecho.
 * Se ha añadido una tecla de acceso directo a los componentes duplicados.
 
