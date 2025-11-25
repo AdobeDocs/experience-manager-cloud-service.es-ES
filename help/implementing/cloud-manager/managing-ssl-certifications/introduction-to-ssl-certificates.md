@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 17%
+source-wordcount: '1263'
+ht-degree: 16%
 
 ---
 
@@ -154,11 +154,17 @@ Los siguientes comandos `openssl` se pueden utilizar para convertir certificados
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## Limitación del número de certificados SSL instalados {#limitations}
+## Limitaciones {#limitations}
+
+### Número de certificados SSL instalados {#number-installed-ssl-certs}
 
 En cualquier momento dado, Cloud Manager admite hasta 70 certificados instalados. Estos certificados se pueden asociar a uno o más entornos de su programa e incluir también certificados caducados.
 
 Si ha alcanzado el límite, revise los certificados y considere la posibilidad de eliminar cualquier certificado caducado. O bien, agrupe varios dominios en el mismo certificado, ya que un certificado puede abarcar varios dominios (hasta 100 SAN).
+
+### Vamos a cifrar los límites de velocidad para certificados DV administrados por Adobe
+
+Los certificados DV administrados por Adobe se basan en Let&#39;s Encrypt. Además del límite de Cloud Manager en los certificados instalados, Let&#39;s Encrypt aplica sus propios límites de tasa. Un límite de clave es **Nuevos certificados por conjunto exacto de identificadores**: se pueden emitir hasta 5 certificados para el mismo conjunto de nombres de host en un período de 7 días. Si se alcanza este límite, Cloud Manager muestra el error Let&#39;s Encrypt correspondiente y no puede crear más certificados para ese conjunto de nombres de host hasta que se restablezca la ventana de límite de velocidad. Para conocer los valores más recientes y otros límites relacionados, consulte la [documentación sobre el cifrado de límites de tasa](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## Más información {#learn-more}
 
