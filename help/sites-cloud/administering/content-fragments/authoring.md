@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
 workflow-type: tm+mt
-source-wordcount: '2778'
-ht-degree: 7%
+source-wordcount: '2819'
+ht-degree: 6%
 
 ---
 
@@ -135,6 +135,12 @@ Desde el editor puede:
 * [Eliminar una variación](#delete-variation)
 
 ### Crear una variación {#create-variation}
+
+>[!NOTE]
+>
+>Las variaciones añaden tiempo de procesamiento a un fragmento de contenido, en el entorno de creación y durante la entrega. Se recomienda mantener el número de variaciones a un mínimo manejable.
+>
+>Una práctica recomendada es no superar las diez variaciones por fragmento de contenido.
 
 Para crear una variación del fragmento de contenido:
 
@@ -267,7 +273,7 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 

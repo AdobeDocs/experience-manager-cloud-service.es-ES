@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
+source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 51%
+source-wordcount: '2571'
+ht-degree: 50%
 
 ---
 
@@ -429,7 +429,7 @@ Por ejemplo:
 
 * Volver a habilitar la herencia (si la herencia ya se ha cancelado)
 
-  ![Botón Volver a activar herencia](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+  ![Botón Volver a habilitar herencia](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
 
 <!--
 * Rollout action is also available in Live Copy source
@@ -444,6 +444,12 @@ Por ejemplo:
 Las variaciones le permiten tomar el contenido **Principal** y variar según el propósito (si es necesario).
 
 **Para crear una variación:**
+
+>[!NOTE]
+>
+>Las variaciones añaden tiempo de procesamiento a un fragmento de contenido, en el entorno de creación y durante la entrega. Se recomienda mantener el número de variaciones a un mínimo manejable.
+>
+>Una práctica recomendada es no superar las diez variaciones por fragmento de contenido.
 
 1. Abra el fragmento y asegúrese de que el panel lateral esté visible.
 1. Seleccione **Variaciones** en la barra de iconos del panel lateral.
@@ -502,7 +508,7 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 
 >[!CAUTION]
 >
->La sincronización solo está disponible para copiar cambios *de **Principal**&#x200B;a la variación*.
+>La sincronización solo está disponible para copiar cambios *de **Principal**a la variación*.
 >
 >Solo se sincroniza el elemento actual de la variación.
 >
