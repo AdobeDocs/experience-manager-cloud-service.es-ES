@@ -4,10 +4,10 @@ description: Descubra cómo puede ejecutar su propio servicio de editor universa
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Developer
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 0df573a3d869f2718983b4e661a86c769b4d3f1a
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 95%
+source-wordcount: '979'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ Descubra cómo puede ejecutar su propio servicio de editor universal para el des
 
 >[!NOTE]
 >
->Los servicios de editor universal locales no son necesarios ni se admiten en los proyectos que utilizan la creación de AEM con Edge Delivery Services.
+>Los servicios de editor universal local no son necesarios para los proyectos que utilizan la creación de AEM con Edge Delivery Services.
 
 ## Información general {#overview}
 
