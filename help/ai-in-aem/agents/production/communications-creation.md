@@ -3,9 +3,9 @@ title: Aptitud de creación de comunicación
 description: Obtenga información acerca de la capacidad de creación de comunicaciones del agente de producción de experiencia y cómo utilizar el lenguaje natural para crear comunicaciones interactivas.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
+source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -71,3 +71,39 @@ Después de crear la estructura de comunicación inicial mediante el Ayudante de
 * *Cambiar el interlineado de la sección de términos y condiciones a 1.5*
 
 Para obtener más información sobre las capacidades del editor de comunicaciones interactivas, consulte [Documentación de comunicaciones interactivas](/help/forms/introduction-to-interactive-communication.md).
+
+## Activación {#activation}
+
+Para habilitar el Experience Production Agent para su organización, la activación debe iniciarse mediante Adobe. Inicie el proceso poniéndose en contacto mediante:
+
+* Correo electrónico: `experience-production-agent@adobe.com`
+* O bien, póngase en contacto con el equipo de cuenta de Adobe designado.
+
+Para una experiencia de incorporación eficiente, prepare y proporcione los siguientes detalles:
+
+Para **AEM as a Cloud Service**, comparta los siguientes identificadores:
+
+* Id. de organización
+* `product_id`
+* `profile_id`
+
+El administrador de AEM puede localizarlos de las siguientes formas:
+
+1. Navegando a <https://adminconsole.adobe.com/>
+1. Seleccionando **Adobe Experience Manager as a Cloud Service**
+1. Elegir la instancia de AEM adecuada en su entorno
+1. Selección de un perfil con permisos de lectura y escritura para el contenido relevante
+1. Copiar la dirección URL completa del explorador desde esta página
+1. Extrayendo los valores `product_id` y `profile_id` de la dirección URL\
+   (por ejemplo, una dirección URL como `https://adminconsole.adobe.com/products/profiles/users` contiene estos parámetros).
+
+Para la creación de documentos de **Edge Delivery**, proporcione a su equipo de Adobe lo siguiente:
+
+* Dominios para su entorno de Edge Delivery Services
+* Detalles de GitHub correspondientes:
+   * Organización (Org)
+   * Repositorio (repositorio)
+   * Rama
+
+Proporcionar información completa y precisa acelera el proceso de activación y garantiza el aprovisionamiento oportuno del agente de producción de experiencia.
+
