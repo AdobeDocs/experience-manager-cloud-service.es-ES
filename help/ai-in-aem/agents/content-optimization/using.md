@@ -3,9 +3,9 @@ title: Agente de optimización de contenido
 description: Aprenda a utilizar el agente de optimización de contenido para transformar la forma en que los usuarios refinan y adaptan los recursos mediante la aplicación de instrucciones en lenguaje natural para crear variaciones preparadas para el canal.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: ab94d59ff93eb4cf29e15a8945063b8ae00c57e8
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -68,10 +68,9 @@ Los especialistas en marketing de canal, la persona clave para el agente de opti
 
 Los especialistas en marketing regional y los trabajadores de la agencia también pueden utilizar el agente de optimización de contenido para generar rápidamente variaciones de imagen preparadas para el canal que admitan una producción de contenido más rápida y coherente.
 
-
 ## ¿Cómo acceder al agente de optimización de contenido? {#access-content-optimization-agent}
 
-Puede acceder a los agentes empresariales de AEM a través del asistente de IA. Inicie sesión en experience.adobe.com y podrá empezar a interactuar con el Asistente de IA especificando el mensaje en lenguaje natural mediante el campo `Ask AI Assistant anything`:
+Puede acceder a los agentes en AEM a través del asistente de IA. Inicie sesión en experience.adobe.com y podrá empezar a interactuar con el Asistente de IA especificando el mensaje en lenguaje natural mediante el campo `Ask AI Assistant anything`:
 
 ![Agente de detección de acceso](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
