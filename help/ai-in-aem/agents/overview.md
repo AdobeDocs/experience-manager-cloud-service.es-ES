@@ -3,7 +3,7 @@ title: Información general sobre los agentes en AEM
 description: Obtenga información acerca de los agentes disponibles en AEM para acelerar la creación de contenido y organizar automáticamente los cambios.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: f981e7ed9f4bbd26226facf37c343f16a9e99263
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -32,11 +32,11 @@ El [agente de producción de experiencia](/help/ai-in-aem/agents/production/over
 
 ## Agente de optimización de contenido {#content-optimization-agent}
 
-El [Agente de optimización de contenido](/help/ai-in-aem/agents/content-optimization/using.md) transforma la forma en que los usuarios refinan y adaptan los recursos mediante la aplicación de instrucciones en lenguaje natural para crear variaciones preparadas para el canal. El agente interpreta la intención del usuario y realiza tareas de edición complejas de forma automática para realizar tareas que incluyen la generación de nuevas representaciones, el ajuste de propiedades visuales, el cambio de fondos o la preparación de recursos para canales digitales específicos.
+El [Agente de optimización de contenido](/help/ai-in-aem/agents/content-optimization/overview.md) transforma la forma en que los usuarios refinan y adaptan los recursos mediante la aplicación de instrucciones en lenguaje natural para crear variaciones preparadas para el canal. El agente interpreta la intención del usuario y realiza tareas de edición complejas de forma automática para realizar tareas que incluyen la generación de nuevas representaciones, el ajuste de propiedades visuales, el cambio de fondos o la preparación de recursos para canales digitales específicos.
 
 ## Agente de detección {#discovery-agent}
 
-[Discovery Agent](/help/ai-in-aem/agents/discovery/using.md) ofrece contenido de AEM para una experiencia de detección ágil y sin clics. Busca de forma inteligente en Assets, Fragmentos de contenido y Forms adaptable para ofrecer materiales relevantes como imágenes, vídeos, documentos de PDF, artículos y plantillas de formulario.
+[Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md) ofrece contenido de AEM para una experiencia de detección ágil y sin clics. Busca de forma inteligente en Assets, Fragmentos de contenido y Forms adaptable para ofrecer materiales relevantes como imágenes, vídeos, documentos de PDF, artículos y plantillas de formulario.
 
 ## Agente de desarrollo {#development-agent}
 
