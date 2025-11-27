@@ -1,23 +1,21 @@
 ---
 title: Generar previsualización HTML5 de un formulario XDP
 description: La pestaña Vista previa del HTML de LiveCycle Designer se puede utilizar para obtener una vista previa de los formularios tal y como aparecen en un explorador.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '807'
-ht-degree: 80%
+ht-degree: 83%
 
 ---
 
 # Generar previsualización HTML5 de un formulario XDP{#generate-html-preview-of-an-xdp-form}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 Al diseñar un formulario en AEM Forms Designer, además de obtener una vista previa de la representación de un formulario en PDF, también se puede obtener una vista previa de la representación de un formulario en HTML5. Puede usar la pestaña **Vista previa de HTML** para obtener una vista previa del formulario tal como aparecería en un explorador.
@@ -57,7 +55,7 @@ Para permitir que Designer genere una vista previa HTML de los formularios XDP, 
 
 ### Desactivación del modo protegido {#disable-protected-mode}
 
-El **modo protegido** está activado de forma predeterminada. Manténgalo activado para los entornos de producción. Puede desactivarlo para un entorno de desarrollo para previsualizar formularios HTML5 en Designer. Siga los siguientes pasos para desactivarlo:
+El **modo protegido** está activado de forma predeterminada. Manténgalo habilitado para los entornos de producción. Puede desactivarlo para un entorno de desarrollo para previsualizar formularios HTML5 en Designer. Siga los siguientes pasos para desactivarlo:
 
 1. Inicie sesión en la consola web de AEM como administrador.
 
@@ -90,7 +88,7 @@ El **modo protegido** está activado de forma predeterminada. Manténgalo activa
    >
    >Asegúrese de que el servidor de AEM Forms esté operativo. La vista previa HTML conecta con el servidor CRX para *generar* una vista previa.
 
-   ![Opciones de AEM Forms Designer &#x200B;](assets/server_options.png)
+   ![Opciones de AEM Forms Designer ](assets/server_options.png)
 
    Opciones de AEM Forms Designer
 
@@ -120,9 +118,9 @@ La prueba del formulario mediante una fuente de datos de ejemplo garantiza que l
 
 1. Seleccione **Archivo > Propiedades del formulario**.
 
-1. Haga clic en la pestaña **Vista previa** y, en el cuadro Archivo de datos, escriba la ruta completa del archivo de datos de prueba. También puede utilizar el botón Examinar para desplazarse hasta el archivo.
+2. Haga clic en la pestaña **Vista previa** y, en el cuadro Archivo de datos, escriba la ruta completa del archivo de datos de prueba. También puede utilizar el botón Examinar para desplazarse hasta el archivo.
 
-1. Haga clic en **Aceptar**. La próxima vez que obtenga una vista previa del formulario mediante la pestaña **Vista previa HTML**, aparecerán los valores de datos del archivo XML de ejemplo en los objetos correspondientes.
+3. Haga clic en **Aceptar**. La próxima vez que obtenga una vista previa del formulario mediante la pestaña **Vista previa HTML**, aparecerán los valores de datos del archivo XML de ejemplo en los objetos correspondientes.
 
 ## Vista previa de formularios en un repositorio {#html-preview-of-forms-in-forms-manager}
 

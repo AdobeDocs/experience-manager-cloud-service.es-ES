@@ -2,23 +2,22 @@
 title: Lectores de pantalla para formularios HTML5
 description: Enumera los lectores de pantalla compatibles con los formularios HTML5.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: HTML5 Forms,Mobile Forms
 exl-id: 07d20c2f-7d13-48ac-8d58-b367eb194558
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 65%
+ht-degree: 73%
 
 ---
 
 # Lectores de pantalla para formularios HTML5 {#screen-readers-for-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 Los componentes de formularios HTML5 representan la plantilla de formulario XFA en formato HTML5. Todos los exploradores estándar compatibles con HTML5 pueden procesar estos formularios. Para admitir una experiencia de captura de datos similar en los formularios PDF y HTML5, la presentación de los PDF se conserva en los formularios HTML5.

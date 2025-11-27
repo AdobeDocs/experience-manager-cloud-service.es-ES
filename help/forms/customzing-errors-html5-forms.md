@@ -1,22 +1,21 @@
 ---
 title: Personalizar mensajes de error para formularios HTML5
 description: Aprenda a personalizar la visualización de mensajes de error para formularios HTML5, incluido cómo cambiar su posición y apariencia.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 feature: HTML5 Forms,Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 52%
+ht-degree: 57%
 
 ---
 
 # Personalizar mensajes de error para formularios HTML5 {#customizing-error-messages-for-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 En los formularios HTML5, de forma predeterminada, los mensajes de error y las advertencias tienen una posición y aspecto fijos (fuente y color), el error se muestra solo para un campo seleccionado y solo se muestra un error.

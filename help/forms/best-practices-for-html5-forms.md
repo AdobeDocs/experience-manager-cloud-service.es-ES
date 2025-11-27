@@ -2,24 +2,22 @@
 title: Prácticas recomendadas para formularios HTML5
 description: Ajuste su formulario HTML5 basado en XFA para obtener el mejor rendimiento.
 contentOwner: khsingh
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 content-type: reference
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 94%
+source-wordcount: '1352'
+ht-degree: 92%
 
 ---
 
 # Prácticas recomendadas para formularios HTML5{#best-practices-for-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 ## Información general {#overview}
@@ -28,7 +26,7 @@ AEM Forms tiene un componente llamado Formularios HTML5. Ayuda a procesar formul
 
 La mayoría de los dispositivos móviles tienen una potencia de procesamiento y capacidades de memoria limitadas. Ayuda a mejorar el tiempo de espera de los dispositivos móviles. Los exploradores web que se ejecutan en un dispositivo móvil tienen acceso a recursos limitados (memoria limitada y capacidades de procesamiento). Una vez alcanzado el límite, el comportamiento del explorador se vuelve lento. Este documento proporciona recomendaciones para mantener el tamaño correcto de un formulario HTML5. Un formulario más pequeño no infringe los límites de memoria y potencia de procesamiento de un dispositivo y proporciona una experiencia fluida.
 
-Las recomendaciones que se examinan en este artículo están dirigidas a los formularios HTML5, pero son igualmente aplicables a los formularios PDF basados en XFA. Estas prácticas recomendadas contribuyen colectivamente al rendimiento general de los formularios HTML5. Requiere una planificación cuidadosa para desarrollar formularios eficientes y productivos. Empecemos:
+Las recomendaciones que se examinan en este artículo están dirigidas a los formularios HTML5, pero son igualmente aplicables a los formularios PDF basados en XFA. Estas prácticas recomendadas contribuyen colectivamente al rendimiento general de los formularios HTML5. Requiere una planificación cuidadosa para desarrollar formularios eficientes y productivos. Empecemos de una vez:
 
 ## Los nodos son la divisa de los formularios HTML5, inviértalos con prudencia {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
@@ -47,13 +45,13 @@ Por lo tanto, reducir el tamaño de los recursos externos y utilizar solo los re
 
 * Usar [imágenes comprimidas](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md). Reduce la actividad de red y la cantidad de memoria necesaria para procesar un formulario. Por lo tanto, el tiempo de carga del formulario disminuye sustancialmente.
 * Utilizar la opción minificar en el Administrador de configuración de AEM (Administrador de bibliotecas HTML Day CQ) para comprimir archivos JavaScript y CSS. Para obtener más información, consulte [Ajustes de la configuración de OSGi](/help/implementing/deploying/configuring-osgi.md).
-* Habilitar la compresión web. Reduce el tamaño de las solicitudes y respuestas originadas desde un formulario. Para obtener más información, consulte [Ajuste del rendimiento de AEM Forms Server](https://helpx.adobe.com/es/aem-forms/6-3/performance-tuning-aem-forms.html).
+* Habilitar la compresión web. Reduce el tamaño de las solicitudes y respuestas originadas desde un formulario. <!-- For details, see [Performance tuning of AEM Forms Server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html)-->
 
 ## Mantener vivo el interés, mostrar solo los campos obligatorios  {#keep-the-interest-alive-show-only-required-fields}
 
 Un formulario HTML5 puede tener cientos de páginas. Un formulario con un gran número de campos es lento de cargar en el explorador. Puede realizar las siguientes optimizaciones en un formulario XFA para optimizar los formularios con un gran número de campos y páginas:
 
-* Evaluar la división de los formularios grandes en varios formularios. También puede utilizar un conjunto de formularios para agrupar todos los formularios más pequeños y presentarlos como una sola unidad. Un conjunto de formularios solo carga los formularios necesarios. Además, en un conjunto de formularios, se pueden configurar campos comunes en distintos formularios para compartir enlaces de datos. Los enlaces de datos ayudan a los usuarios a rellenar la información común solo una vez; la información se rellenará automáticamente en formularios posteriores, lo que supone mejoras sustanciales del rendimiento. Para obtener más información sobre los conjuntos de formularios, consulte [Conjuntos de formularios en AEM Forms](https://helpx.adobe.com/es/aem-forms/6-3/formset-in-aem-forms.html).
+* Evaluar la división de los formularios grandes en varios formularios. También puede utilizar un conjunto de formularios para agrupar todos los formularios más pequeños y presentarlos como una sola unidad. Un conjunto de formularios solo carga los formularios necesarios. Además, en un conjunto de formularios, se pueden configurar campos comunes en distintos formularios para compartir enlaces de datos. Los enlaces de datos ayudan a los usuarios a rellenar la información común solo una vez; la información se rellena automáticamente en formularios posteriores, lo que produce mejoras sustanciales del rendimiento. <!-- For more details about form sets, see [Form set in AEM forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).-->
 * Considere la posibilidad de dividir secciones y mover cada sección a una página diferente. Los formularios HTML5 se cargan dinámicamente en cada página en la solicitud de desplazamiento de la página. Solo la página desplazada (la página que se muestra y las que la preceden) se almacenan en la memoria; el resto de las páginas se cargan bajo demanda. Por lo tanto, dividir y mover una sección en una página por su cuenta reduce el tiempo necesario para cargar un formulario. También puede utilizar la primera página del formulario como página de destino. Es similar a la tabla de contenidos (TOC) de un libro. Una página de destino de un formulario solo contiene vínculos a las demás secciones del formulario. Mejora significativamente el tiempo de carga de la primera página del formulario y mejora la experiencia del usuario.
 * Mantenga las secciones condicionales ocultas de forma predeterminada. Consiga que estas secciones solo sean visibles cuando se cumpla una determinada condición. Ayuda a reducir al mínimo el tamaño del DOM. También puede utilizar la navegación con pestañas para mostrar solo una sección a la vez.
 
@@ -64,7 +62,7 @@ Los formularios HTML5 pueden contener campos impulsados por datos (tablas y subf
 * Utilice scripts XFA para lograr que la navegación por páginas muestre campos impulsados por datos (tablas y subformularios). En la navegación por páginas, solo se muestran datos específicos en una página. Limita la operación paint del explorador a los campos que se muestran a la vez y facilita el desplazamiento por el formulario. Además, los usuarios de los dispositivos móviles solo están interesados en un subconjunto de datos. Le ayuda a ofrecer una buena experiencia de usuario y a reducir el tiempo necesario para cargar los datos necesarios. Se obtienen dos soluciones por el precio de una.  Tenga en cuenta también que la navegación por páginas no está disponible de forma predeterminada. Puede utilizar scripts XFA para desarrollar la navegación por páginas.
 
 * Evalúe la combinación de varias columnas de solo lectura en una sola columna. Reduce la memoria necesaria para mostrar el formulario. Además, evite mostrar las columnas que no requieran ninguna entrada de los usuarios.
-* Evaluar la división del formulario basado en datos en un [conjunto de formularios](https://helpx.adobe.com/es/aem-forms/6-3/formset-in-aem-forms.html), si las sugerencias anteriores no le proporcionan muchas mejoras. Por ejemplo, si una tabla tiene más de 1000 filas, mueva cada 100 filas a un formulario diferente. Ayudaría a mejorar el tiempo de carga y el rendimiento de los formularios. Tenga en cuenta también que un conjunto de formularios genera un XML de envío consolidado para todos los formularios. Para diferenciar los datos de cada formulario, utilice diferentes fuentes de datos. Para obtener más información, consulte [Conjunto de formularios en AEM Forms](https://helpx.adobe.com/es/aem-forms/6-3/formset-in-aem-forms.html).
+* Evaluar la división del formulario basado en datos en un conjunto de formularios, si las sugerencias anteriores no le proporcionan muchas mejoras. Por ejemplo, si una tabla tiene más de 1000 filas, mueva cada 100 filas a un formulario diferente. Ayudaría a mejorar el tiempo de carga y el rendimiento de los formularios. Tenga en cuenta también que un conjunto de formularios genera un XML de envío consolidado para todos los formularios. Para diferenciar los datos de cada formulario, utilice diferentes fuentes de datos. <!--For more information, see [Form set in AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).-->
 
 ## Poder de dos para Documentos de registro (DOR) {#power-of-two-for-document-of-record-dor}
 

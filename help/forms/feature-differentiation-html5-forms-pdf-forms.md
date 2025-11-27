@@ -3,23 +3,21 @@ title: Diferenciar entre las características de formularios HTML5 y PDF
 description: Obtenga información sobre las diferencias entre las características de los formularios HTML5 y PDF forms.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 74%
+ht-degree: 79%
 
 ---
 
 # Diferenciar entre las características de formularios HTML5 y PDF {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 La siguiente tabla especifica la compatibilidad de funciones proporcionada para los formularios HTML5 y PDF:

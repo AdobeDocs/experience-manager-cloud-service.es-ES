@@ -2,23 +2,22 @@
 title: Introducción a los formularios HTML5
 description: Para empezar, implemente el paquete de complementos de AEM Forms e importe los formularios HTML5 existentes en AEM.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: HTML5 Forms,Mobile Forms
 exl-id: a3245f05-6ea3-4f90-8981-bfa89d2e7335
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 56%
+ht-degree: 67%
 
 ---
 
 # Introducción a los formularios HTML5 {#getting-started-with-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 Los formularios HTML5 ofrecen numerosas funciones compatibles con dispositivos móviles. Esto le permite ampliar sus soluciones y flujos de trabajo actuales a tabletas o smartphones con exploradores HTML5. Ofrece, entre otras, las siguientes funcionalidades se encuentran:

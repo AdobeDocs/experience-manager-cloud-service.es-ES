@@ -2,23 +2,22 @@
 title: Optimizar formularios HTML5
 description: Puede optimizar el tamaño de salida de los formularios HTML5.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: HTML5 Forms,Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 91%
+source-wordcount: '310'
+ht-degree: 97%
 
 ---
 
 # Optimizar formularios HTML5 {#optimizing-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 Los formularios HTML5 procesan los formularios en formato HTML5. Dependiendo de factores como el tamaño del formulario y las imágenes que este contiene, la salida resultante puede tener un gran tamaño. El método recomendado para optimizar la transferencia de datos es comprimir la respuesta del HTML mediante el servidor web desde el que se suministra la solicitud. Este método reduce el tamaño de la respuesta, el tráfico de red y el tiempo necesario para transmitir los datos entre los equipos cliente y servidor.
@@ -86,4 +85,4 @@ Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
    </Location>
    ```
 
-1. Para acceder al servidor de AEM, utilice https://[Apache_server]:80.
+1. Para acceder al servidor de AEM, use https://[Apache_server]:80.

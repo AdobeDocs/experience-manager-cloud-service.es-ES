@@ -2,7 +2,6 @@
 title: Guardar un formulario HTML5 como borrador
 description: Guarde un formulario HTML5 como borrador y vuelva a rellenarlo en una fase posterior.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: HTML5 Forms,Mobile Forms
@@ -11,17 +10,17 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 80%
+ht-degree: 88%
 
 ---
 
 
 # Guardar un formulario HTML5 como borrador {#saving-an-html-form-as-a-draft}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 Se puede guardar un formulario HTML5 como borrador y seguir rellenándolo en una fase posterior. El portal de formularios permite a cualquier usuario guardar y restaurar un formulario HTML5. Para habilitar la funcionalidad Guardar como borrador, agregue las siguientes configuraciones al nodo de perfil:
@@ -78,4 +77,4 @@ Para habilitar la lista de formularios para el componente Borradores y envíos, 
  </tbody>
 </table>
 
-De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo /content/forms/fp de la instancia de publicación. Puede agregar su proveedor de almacenamiento personalizado; para obtener más información, consulte [Almacenamiento personalizado para el componente Borradores y envíos](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).
+De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo /content/forms/fp de la instancia de publicación. Puede agregar su proveedor de almacenamiento personalizado; para obtener más información, consulte [Almacenamiento personalizado para el componente Borradores y envíos](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).

@@ -1,28 +1,26 @@
 ---
 title: Introducción a los formularios HTML5
-description: HTML5 forms es una nueva funcionalidad del software Adobe Experience Manager 6.0 (AEM 6.0) que puede procesar plantillas de formulario XFA en formato HTML5.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: Los formularios HTML5 son una nueva funcionalidad del software Adobe Experience Manager que puede procesar plantillas de formulario XFA en formato HTML5.
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 80%
+source-wordcount: '416'
+ht-degree: 84%
 
 ---
 
 # Introducción a los formularios HTML5{#introduction-to-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
-HTML5 forms es una nueva funcionalidad del software Adobe Experience Manager 6.0 (AEM 6.0) que puede procesar plantillas de formulario XFA en formato HTML5. Esta capacidad permite procesar formularios tanto en dispositivos móviles como en exploradores de equipos de escritorio no compatibles con PDF basados en XFA. Los formularios HTML5 no solo son compatibles con las capacidades existentes de las plantillas de formulario XFA, sino que también agregan capacidades nuevas para dispositivos móviles, como la firma manuscrita.
+Los formularios HTML5 son una nueva funcionalidad del software Adobe Experience Manager que puede procesar plantillas de formulario XFA en formato HTML5. Esta capacidad permite procesar formularios tanto en dispositivos móviles como en exploradores de equipos de escritorio no compatibles con PDF basados en XFA. Los formularios HTML5 no solo son compatibles con las capacidades existentes de las plantillas de formulario XFA, sino que también agregan capacidades nuevas para dispositivos móviles, como la firma manuscrita.
 
-Los formularios HTML5 generan documentos basados en construcciones HTML5 estándares. Puede ver los formularios HTML5 en todos los navegadores modernos compatibles con HTML5. No es necesario instalar ningún complemento de explorador adicional en los exploradores. Para obtener más información sobre los exploradores compatibles, consulte [Plataformas de cliente compatibles](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
+Los formularios HTML5 generan documentos basados en construcciones HTML5 estándares. Puede ver los formularios HTML5 en todos los navegadores modernos compatibles con HTML5. No es necesario instalar ningún complemento de explorador adicional en los exploradores. <!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).-->
 
 ![Vista previa del formulario HTML5](assets/mobile_form_on_an_ipad_date_14.png)
 

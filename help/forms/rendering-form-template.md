@@ -2,23 +2,22 @@
 title: Representar la plantilla de formulario para formularios HTML5
 description: Los perfiles de formulario HTML5 están asociados a procesamientos de perfiles. Los procesamientos de perfiles son páginas JSP responsables de generar la representaciones HTML del formulario al llamar al servicio OSGi de Forms.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: HTML5 Forms,Mobile Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Representar la plantilla de formulario para formularios HTML5 {#rendering-form-template-for-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 ## Punto final de procesamiento {#render-endpoint}

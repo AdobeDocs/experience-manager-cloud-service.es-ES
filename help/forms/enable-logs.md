@@ -3,23 +3,21 @@ title: Habilitar el registro para formularios HTML5
 description: La utilidad logger habilita el registro de un formulario y le ayuda a depurar problemas relacionados con el formulario.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Habilitar el registro para formularios HTML5{#enable-logging-for-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 Puede configurar la utilidad del registrador para empezar a crear registros para los formularios HTML5. La utilidad del registrador tiene varios niveles, puede establecer un nivel según sus necesidades. Los formularios HTML5 tienen componentes de servidor y cliente. Puede configurar los registros de ambos componentes.
@@ -30,7 +28,7 @@ Siga estos pasos para configurar los registros del lado del servidor:
 
 1. Vaya a `https://'[server]:[port]'/system/console/configMgr`. Busque y abra la opción *Configuración del registrador de Sling de Apache*. Aparecerá un cuadro de diálogo:
 
-   ![&#x200B; Cuadro de diálogo de la opción de configuración del registrador de registros de Sling](assets/logconfig.png)
+   ![ Cuadro de diálogo de la opción de configuración del registrador de registros de Sling](assets/logconfig.png)
 
    Opción de configuración del registrador de registros de Sling
 
@@ -172,9 +170,9 @@ Por ejemplo:
 >[!NOTE]
 >
 >El nivel de registro predeterminado para cada categoría de registro a (xfa), b (xfaView) y c (xfaPerf) es 2 (ERROR). Por lo tanto, para la configuración de registros: 2-b6, los niveles de registro para diferentes categorías son:
->&#x200B;>a (xfa): 2 (nivel predeterminado ERROR)
->&#x200B;>b (xfaView): 6 (RASTRO especificado por el usuario)
->&#x200B;>a (xfaPerf): 2 (nivel predeterminado ERROR)
+>a (xfa): 2 (nivel predeterminado ERROR)
+>b (xfaView): 6 (RASTRO especificado por el usuario)
+>a (xfaPerf): 2 (nivel predeterminado ERROR)
 
 ### Habilitar el registro mediante el administrador de configuración {#enabling-logging-using-configuration-manager}
 

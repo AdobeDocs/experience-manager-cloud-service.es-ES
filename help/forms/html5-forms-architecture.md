@@ -3,25 +3,23 @@ title: Arquitectura de los formularios HTML5
 description: Los formularios HTML5 se implementan como un paquete en la instancia de AEM incrustada y exponen la funcionalidad como un extremo REST a través de HTTP/S mediante la arquitectura RESTful de Sling Apache.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '1991'
 ht-degree: 93%
 
 ---
 
 # Arquitectura de los formularios HTML5{#architecture-of-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 ## Arquitectura {#architecture}
@@ -36,7 +34,7 @@ La funcionalidad de los formularios HTML5 se implementa como un paquete en la in
 
 Para obtener más información sobre el extremo REST y los parámetros de solicitud admitidos, consulte [Plantilla de formulario de renderización](/help/forms/rendering-form-template.md).
 
-Cuando un usuario realiza una solicitud desde un dispositivo cliente, como un explorador iOS o Android™, Sling resuelve primero el nodo del perfil en función de la dirección URL de la solicitud. En este nodo de perfil, se lee **sling:resourceSuperType** y **sling:resourceType** para determinar todos los scripts disponibles que puedan administrar esta solicitud del procesador de Forms. A continuación, se utilizan selectores de solicitud de Sling junto con el método de solicitud para identificar el script más adecuado para administrar esta solicitud. Una vez que la solicitud llega a un JSP del procesador de perfiles, el JSP llama al servicio OSGi de Forms.
+Cuando un usuario realiza una solicitud desde un dispositivo cliente, como un explorador iOS o Android™, Sling resuelve primero el nodo del perfil en función de la dirección URL de la solicitud. Desde este nodo de perfil, se lee **sling:resourceSuperType** y **sling:resourceType** para determinar todos los scripts disponibles que puedan administrar esta solicitud del procesador de formularios. A continuación, se utilizan selectores de solicitud de Sling junto con el método de solicitud para identificar el script más adecuado para administrar esta solicitud. Una vez que la solicitud llega a un JSP del procesador de perfiles, el JSP llama al servicio OSGi de Forms.
 
 Para obtener más información sobre la resolución de scripts de Sling, consulte [Hoja de características de Sling de AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) o [Descomposición de la URL de Apache Sling](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 

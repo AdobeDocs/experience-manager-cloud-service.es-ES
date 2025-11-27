@@ -2,23 +2,22 @@
 title: Crear un perfil personalizado para formularios HTML5
 description: Un perfil de formularios HTML5 es un nodo de recursos en Apache Sling. Representa una versión personalizada del servicio de procesamiento de formularios HTML5.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: HTML5 Forms,Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '680'
 ht-degree: 92%
 
 ---
 
 # Crear un perfil personalizado para formularios HTML5 {#creating-a-custom-profile-for-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 Un perfil es un nodo de recursos en [Apache Sling](https://sling.apache.org/). Representa la versión personalizada del servicio de representación de formularios HTML5. Puede utilizar el servicio de representación de formularios HTML5 para personalizar el aspecto, el comportamiento y las interacciones de los formularios HTML5. Existe un nodo de perfil en la carpeta `/content` en el repositorio JCR. Puede colocar el nodo directamente debajo de la carpeta `/content` o cualquier subcarpeta de la carpeta `/content`.
@@ -67,7 +66,7 @@ Para crear un perfil personalizado, realice los siguientes pasos:
 
 1. Copie el nodo predeterminado y péguelo en una carpeta diferente (*/content/profiles*) con el nombre *hrform*.
 
-1. Seleccione el nodo nuevo, *hrform* y agregue una propiedad de cadena: *sling:resourceType* con valor: *hrform/demo*.
+1. Seleccione el nuevo nodo *hrform* y agregue una propiedad de cadena: *sling:resourceType* con valor: *hrform/demo*.
 
 1. Haga clic en Guardar todo en el menú de la barra de herramientas para guardar los cambios.
 

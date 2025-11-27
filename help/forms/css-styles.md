@@ -3,23 +3,22 @@ title: Crear estilos CSS para formularios HTML5
 description: Aprenda a cambiar el aspecto de los formularios HTML5 al modificar la clase CSS asociada al elemento del formulario HTML.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: HTML5 Forms,Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Crear estilos CSS para formularios HTML5 {#creating-css-styles-for-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 La representación HTML5 de una plantilla de formulario basada en XFA consta de varios elementos HTML. Estos elementos se organizan en un orden. Cada elemento tiene clases CSS bien definidas. Puede utilizar estas clases CSS para seleccionar y cambiar el aspecto de un elemento.
