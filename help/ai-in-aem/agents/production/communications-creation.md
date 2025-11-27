@@ -3,9 +3,9 @@ title: Aptitud de creación de comunicación
 description: Obtenga información acerca de la capacidad de creación de comunicaciones del agente de producción de experiencia y cómo utilizar el lenguaje natural para crear comunicaciones interactivas.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
+source-git-commit: 01fce6fcdf1c8ada0422a84fccb9a89f395e2a0e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -79,31 +79,5 @@ Para habilitar el Experience Production Agent para su organización, la activaci
 * Correo electrónico: `experience-production-agent@adobe.com`
 * O bien, póngase en contacto con el equipo de cuenta de Adobe designado.
 
-Para una experiencia de incorporación eficiente, prepare y proporcione los siguientes detalles:
-
-Para **AEM as a Cloud Service**, comparta los siguientes identificadores:
-
-* Id. de organización
-* `product_id`
-* `profile_id`
-
-El administrador de AEM puede localizarlos de las siguientes formas:
-
-1. Navegando a <https://adminconsole.adobe.com/>
-1. Seleccionando **Adobe Experience Manager as a Cloud Service**
-1. Elegir la instancia de AEM adecuada en su entorno
-1. Selección de un perfil con permisos de lectura y escritura para el contenido relevante
-1. Copiar la dirección URL completa del explorador desde esta página
-1. Extrayendo los valores `product_id` y `profile_id` de la dirección URL\
-   (por ejemplo, una dirección URL como `https://adminconsole.adobe.com/products/profiles/users` contiene estos parámetros).
-
-Para la creación de documentos de **Edge Delivery**, proporcione a su equipo de Adobe lo siguiente:
-
-* Dominios para su entorno de Edge Delivery Services
-* Detalles de GitHub correspondientes:
-   * Organización (Org)
-   * Repositorio (repositorio)
-   * Rama
-
-Proporcionar información completa y precisa acelera el proceso de activación y garantiza el aprovisionamiento oportuno del agente de producción de experiencia.
+Cuando contacte con, asegúrese de proporcionar su ID de organización de AEM as a Cloud Service.
 
