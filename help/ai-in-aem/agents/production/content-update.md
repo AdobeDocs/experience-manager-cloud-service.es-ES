@@ -3,9 +3,9 @@ title: Habilidad de actualización de contenido
 description: Descubra cuál es la aptitud de actualización de contenido del agente de producción de experiencia y qué puede hacer por usted.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: 437da39f61d7af2fe01a1617d3299fd60ee38ad5
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 La habilidad de actualización de contenido de Experience Production Agent automatiza la producción de contenido para acelerar las tareas diarias de Adobe Experience Manager (AEM) as a Cloud Service y Edge Delivery Services.
 
-La aptitud para la actualización de contenido actualiza el contenido existente en CMS, incluidos los fragmentos de contenido, las páginas, los formularios y los recursos. El agente puede realizar acciones como actualizar, quitar, reemplazar o agregar elementos de contenido para mantener las experiencias precisas y actualizadas. Las entradas pueden ser descripciones en lenguaje natural y, cuando se utilizan con PDF de Jira y capturas de pantalla, pueden proporcionar entradas a.
+La aptitud para la actualización de contenido actualiza el contenido existente, incluidos los fragmentos de contenido, las páginas, los formularios y los recursos. El agente puede realizar acciones como actualizar, quitar, reemplazar o agregar elementos de contenido para mantener las experiencias precisas y actualizadas. Las entradas pueden ser descripciones en lenguaje natural y, cuando se utilizan con PDF de Jira y capturas de pantalla, pueden proporcionar entradas a.
 
 ## Información general {#overview}
 
