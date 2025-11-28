@@ -3,9 +3,9 @@ title: Información general de Experience Production Agent
 description: Descubra cómo Experience Production Agent en AEM le ayuda a acelerar la creación de contenido y a organizar automáticamente los cambios.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c3757aff37a9896a7aaaa91a2d3a352a9f9e96d2
+source-git-commit: 229c91706cec0a2689d9449549a1e2b2e236b87d
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ El agente proporciona los siguientes trabajos:
 
 ### Actualización de contenido {#content-update}
 
-[Actualización de contenido](/help/ai-in-aem/agents/production/content-update.md) actualiza fácilmente el contenido existente en CMS, incluidos los fragmentos de contenido, páginas, formularios y recursos. El agente puede realizar acciones como actualizar, quitar, reemplazar o agregar elementos de contenido para mantener las experiencias precisas y actualizadas. Las entradas pueden ser descripciones en lenguaje natural y, cuando se utilizan con PDF de Jira y capturas de pantalla, pueden proporcionar entradas a.
+[Actualización de contenido](/help/ai-in-aem/agents/production/content-update.md) actualiza con facilidad el contenido existente, incluidos los fragmentos de contenido, las páginas, los formularios y los recursos. El agente puede realizar acciones como actualizar, quitar, reemplazar o agregar elementos de contenido para mantener las experiencias precisas y actualizadas. Las entradas pueden ser descripciones en lenguaje natural y, cuando se utilizan con PDF de Jira y capturas de pantalla, pueden proporcionar entradas a.
 
 ### Creación de formularios {#form-creation}
 
