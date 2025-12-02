@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 4935fbf5f0eb10f2f17280fb32f07d99f69eb875
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 7%
+source-wordcount: '584'
+ht-degree: 5%
 
 ---
 
@@ -36,28 +36,43 @@ Consulte también [CDN administrada por Adobe](https://www.aem.live/docs/byo-cdn
    | Quiero agregar una configuración de CDN a un *sitio Edge Delivery existente* en Cloud Manager | a. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en ![Icono de páginas web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Sitios Edge Delivery**.<br>b. En la tabla de Edge Delivery, al final de una fila que no tiene un dominio asociado, haga clic en ![Más iconos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Haga clic en **Configurar CDN**. |
    | Quiero añadir una configuración de CDN en Cloud Manager | a. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en ![Icono de red social](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Asignaciones de dominio**.<br>b. Cerca de la esquina superior derecha de la página Asignaciones de dominio, haga clic en **Agregar**. |
 
-1. En el cuadro de diálogo **Asignar dominio a CDN**, seleccione su tipo de CDN y la configuración asociada seleccionando una de las siguientes opciones:
+1. En el cuadro de diálogo **Asignar dominio a CDN**, seleccione uno de los siguientes tipos de CDN:
 
-   | Tipo de CDN | Detalles de configuración |
-   | --- | --- |
-   | CDN administrado por Adobe (recomendado) | En **Detalles de configuración**, haga lo siguiente:<br>a. En la lista desplegable **Dominio**, seleccione el nombre de dominio que desee usar.<br>No hay dominios comprobados disponibles en la lista desplegable? Consulte [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b.<!-- In the **SSL certificate** drop-down list, select a certificate that you want to use.<br>No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).--> |
-   | Otro proveedor de CDN | Seleccione esta opción si está utilizando su propio proveedor de CDN y no la CDN administrada por Adobe que está disponible.<br>En **Detalles de configuración**, en la lista desplegable **Dominio**, seleccione el nombre de dominio que desee usar.<br>No hay dominios comprobados disponibles en la lista desplegable? Consulte [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
+   * **CDN administrado por Adobe (recomendado)**: se usa una CDN administrada por Adobe para esta configuración. Incluye configuración y administración automatizadas, así como funciones de seguridad integradas.
+   * **Otro proveedor de CDN** - Se utiliza una red de proveedor de CDN autoadministrada para esta configuración.
 
-   ![Asignar dominio a CDN (cuadro de diálogo) con el botón de opción CDN administrado por Adobe seleccionado](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)
+1. En función del tipo de CDN seleccionado en el paso anterior, haga lo siguiente:
+
+   * **CDN administrado por Adobe**
+
+     ![Asignar dominio a CDN (cuadro de diálogo) con el botón de opción CDN administrado por Adobe seleccionado](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-adobe-managed.png)
+
+      1. En la lista desplegable **Origen**, seleccione una de las siguientes opciones:
+
+         | Lista desplegable Origen | Descripción |
+         | --- | --- |
+         | Sites | Seleccione un sitio de Edge Delivery. |
+         | Entorno | Seleccione un entorno de Cloud Service específico que desee segmentar en la configuración de AEM.<br>En la lista desplegable **Nivel**, seleccione una de las siguientes opciones:<br>· Seleccione **Publicar** para segmentar un entorno de producción activo en el que el contenido se entregue a los usuarios finales.<br>· Seleccione **Vista previa** para entornos de ensayo o de no producción donde pruebe los cambios antes de que se activen. |
+
+      1. En la lista desplegable **Dominio**, seleccione el nombre de dominio que desee usar.<br>No hay dominios comprobados disponibles en la lista desplegable? Consulte [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+
+      1. En la lista desplegable **certificado SSL**, seleccione el certificado que desee usar.<br>No hay certificados SSL disponibles en la lista desplegable? Consulte [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+
+      1. Haga clic en **Guardar**.
+
+   * **Otro proveedor de CDN**
+
+     ![Asignar dominio a CDN (cuadro de diálogo) con el botón de opción CDN administrado por Adobe seleccionado](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-other-provider.png)
+
+     Siga los pasos de configuración enumerados para aplicar la configuración necesaria en la CDN y confirmar la asignación. Consulte también [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+
+      1. Haga clic en **He configurado mi CDN**.
 
    <!-- OLD IMAGE/UI (/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)-->
 
-1. En el campo **Dominio**, escriba el nombre de host del cliente que desea usar (por ejemplo, `www.example.com`)
-1. en la lista desplegable **Origen**, seleccione una de las siguientes opciones:
+   <!-- In the **Domain** field, enter the customer-facing hostname you want to serve (for example, `www.example.com`) -->
 
-   | Lista desplegable Origen | Descripción |
-   | --- | --- |
-   | Sites | Seleccione un sitio de Edge Delivery. |
-   | Entorno | Seleccione un entorno de Cloud Service específico que desee segmentar en la configuración de AEM.<br>En la lista desplegable **Nivel**, seleccione una de las siguientes opciones:<br>· Seleccione **Publicar** para segmentar un entorno de producción activo en el que el contenido se entregue a los usuarios finales.<br>· Seleccione **Vista previa** para entornos de ensayo o de no producción donde pruebe los cambios antes de que se activen. |
-
-1. Haga clic en **Guardar configuración**.
-
-   Adobe recomienda probar la asignación de dominio.
+1. Adobe recomienda probar la asignación de dominio.
 
 ## Prueba de la asignación de dominio {#test-domain-mapping}
 
