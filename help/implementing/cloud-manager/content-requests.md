@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f9a767e3d5ae33cd46dc100c2ee59ec9ce8f63ac
+source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1976'
 ht-degree: 2%
 
 ---
@@ -113,6 +113,7 @@ Como se mencionó en la sección [Variaciones de solicitudes de contenido de Clo
 * Equilibre sus necesidades de actualización del contenido con el coste de licencia de AEM para cualquier rastreador de búsqueda personalizado que haya integrado con su sitio.  Un rastreador demasiado agresivo puede consumir muchas solicitudes de contenido.
 * Gestione cualquier redirección como del lado del servidor (estado 301 o 302) en lugar de hacerlo del lado del cliente (estado 200 con redirección de javascript) para evitar dos solicitudes de contenido independientes.
 * Combine o reduzca las llamadas de API, que son respuestas JSON de AEM que se pueden cargar para procesar la página.
+* Asegúrese de que el agente de usuario del explorador se pasa correctamente a AEM para aprovechar la regla de exclusión de solicitudes de contenido del &quot;motor de búsqueda conocido&quot; descrita anteriormente.  A veces, el agente de usuario de origen se pierde con ciertas implementaciones sin encabezado o configuraciones de CDN que pueden evitar la exclusión y dar lugar a solicitudes de contenido más altas que si el agente de usuario se pasara.
 
 ### Reglas de filtro de tráfico para administrar solicitudes de contenido {#traffic-filter-rules-to-manage-crs}
 

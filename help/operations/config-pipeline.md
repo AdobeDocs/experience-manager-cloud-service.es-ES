@@ -4,9 +4,9 @@ description: Descubra cómo puede utilizar las canalizaciones de configuración 
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e0626c57f233ac3814355d7efe7db010897d72b
+source-git-commit: ac04829b63ca5e2fee71f6c71d0730f21c576382
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1405'
 ht-degree: 2%
 
 ---
@@ -49,6 +49,7 @@ La siguiente tabla ofrece una lista completa de estas configuraciones con víncu
 | [Autenticación básica](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declare los nombres de usuario y contraseñas para un cuadro de diálogo de autenticación básico que proteja ciertas direcciones URL. | X | X |
 | [Tarea de mantenimiento de purga de versiones](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimizar el repositorio de AEM declarando reglas sobre cuándo se deben purgar las versiones de contenido | X |  |
 | [Tarea de mantenimiento de purga del registro de auditoría](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimice el registro de auditoría de AEM para obtener un mayor rendimiento declarando reglas sobre cuándo se deben purgar los registros | X |  |
+| [Tarea de mantenimiento de purga de flujo de trabajo](/help/operations/maintenance.md) | `MaintenanceTasks` | Minimice el número de instancias de flujo de trabajo para aumentar el rendimiento del motor de flujo de trabajo.<br><br>Consulte también [Depuración regular de instancias de flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances) | X |  |
 | [Reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure los puntos de conexión y las credenciales para reenviar registros a varios destinos, como Azure Blob Storage, Datadog, HTTPS, Elasticsearch y Splunk | X | X |
 | [Registro de un ID de cliente](/help/implementing/developing/open-api-based-apis.md) | `API` | Asigne proyectos de API de Adobe Developer Console a un entorno de AEM específico mediante el registro del ID de cliente. Necesario para el uso de API basadas en OpenAPI que requieren autenticación | X |  |
 
