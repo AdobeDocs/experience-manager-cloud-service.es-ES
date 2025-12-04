@@ -4,9 +4,9 @@ description: Aprenda a utilizar la CDN administrada por AEM y a apuntar su propi
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7f00e68eac0b1e0090bdb57a8188af7bbe21ad1b
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1768'
 ht-degree: 11%
 
 ---
@@ -157,6 +157,13 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 ```
 
 Este proceso permite verificar detalles como los valores de host, la configuración de autenticación perimetral y el valor del encabezado x-forwarded-host. También identifica si se establece una clave perimetral y qué clave se utiliza si existe una coincidencia.
+
+>[!NOTE]
+>
+>Puede utilizar un entorno de desarrollo rápido (RDE) para implementar y probar la configuración:
+>
+>* [Entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md)
+>* [Cómo usar el entorno de desarrollo rápido](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Configuraciones de proveedor de CDN de muestra {#sample-configurations}
 

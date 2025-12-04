@@ -4,10 +4,10 @@ description: Aprenda a añadir un sitio de Edge Delivery a su programa de produc
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7c990e7e42477120c7ce0720bdb6dc7d03308f92
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 92%
+source-wordcount: '581'
+ht-degree: 88%
 
 ---
 
@@ -58,6 +58,12 @@ Cerca de la esquina superior derecha de la página, haz clic en ![Icono de vínc
    | **3** | Cree una solicitud de extracción en el repositorio de Git para los cambios que acaba de crear y, a continuación, combínela en `main` para confirmar el código. |
 
 1. Haga clic en **Verificar**.
+
+   >[!NOTE]
+   >
+   >Si el sitio de Edge Delivery Services utiliza la autenticación Helix, no se puede acceder al desafío de verificación. Deshabilite temporalmente la autenticación, complete la verificación del sitio y vuelva a activar la autenticación.
+
+
 
 Una vez verificado el repositorio, se actualiza su estado en la tabla de sitios de Edge Delivery. El círculo verde con una marca de verificación blanca en el interior indica el estado.
 
