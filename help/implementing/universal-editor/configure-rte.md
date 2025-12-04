@@ -4,9 +4,9 @@ description: Descubra cómo puede configurar el editor de texto enriquecido (RTE
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0557379b8d70205043ed87e104d9576ed40a13ce
+source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # Configuración del RTE para el editor universal {#configure-rte}
 
 Descubra cómo puede configurar el editor de texto enriquecido (RTE) en el editor universal.
-
->[!NOTE]
->
->Esta documentación se aplica al nuevo RTE para el editor universal, que está disponible como función de adopción anticipada. Si está interesado en probar esta nueva característica, [consulte las notas de la versión para obtener detalles.](/help/release-notes/universal-editor/current.md#new-rte)
 
 ## Información general {#overview}
 

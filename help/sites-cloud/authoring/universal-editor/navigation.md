@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 6efb04369109fcae638b699e1daff09624224098
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1853'
 ht-degree: 17%
 
 ---
@@ -78,7 +78,7 @@ La barra de navegación superior del Experience Platform siempre está presente 
 
 ![El encabezado de Experience Cloud](assets/experience-cloud-header.png)
 
-Para obtener más información sobre la barra de navegación superior de Experience Platform, consulte la [guía de la interfaz de usuario de Adobe Experience Platform](https://experienceleague.adobe.com/es/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Para obtener más información sobre la barra de navegación superior de Experience Platform, consulte la [guía de la interfaz de usuario de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Cuenta {#user-properties}
 
@@ -136,12 +136,6 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 >[!TIP]
 >
 >Utilice la tecla de acceso directo `Command-Z` o `Shift-Command-Z` para deshacer o rehacer, respectivamente.
-
-#### Encabezados de autenticación {#authentication-settings}
-
-Seleccione el icono de encabezados de autenticación si necesita [establecer un encabezado de autenticación personalizado con fines de desarrollo local](/help/implementing/universal-editor/developer-overview.md#auth-header).
-
-![Botón de configuración del encabezado de autenticación](assets/authentication-header-settings.png)
 
 #### Inicio de sesión de desarrollador local {#local-developer-login}
 
@@ -265,6 +259,7 @@ En el modo de árbol de contenido, el panel muestra la jerarquía del contenido 
 
 * Al seleccionar un elemento en el árbol de contenido, el editor se desplaza hasta ese contenido y lo selecciona.
 * Al hacer doble clic en un elemento del árbol de contenido, el editor se desplaza hasta ese contenido, lo selecciona y también abre las propiedades asociadas en el modo de [propiedades.](#properties-mode)
+* Al hacer clic con el botón derecho en un elemento del árbol, se abrirá un menú contextual con las acciones adecuadas para el elemento.
 
 ![Árbol de contenido](assets/content-tree.png)
 
@@ -307,6 +302,10 @@ Si selecciona un componente dentro de un componente contenedor en el árbol de c
 ![Icono duplicado](assets/duplicate.png)
 
 Al tocar o hacer clic en el botón duplicado [se duplica el componente seleccionado](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
+
+>[!TIP]
+>
+>Utilice la tecla de acceso directo `Command+d` para eliminar un componente seleccionado de un contenedor.
 
 ##### Eliminar {#delete}
 

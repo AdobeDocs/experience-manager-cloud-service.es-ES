@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2025.11.20 del editor universal
-description: Estas son las notas de la versión 2025.11.20 del editor universal.
+title: Notas de la versión 2025.12.04 del editor universal
+description: Estas son las notas de la versión 2025.12.04 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e36ff1c7c3f03124941c464cc340deef0cdd403b
+source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 73%
+source-wordcount: '166'
+ht-degree: 57%
 
 ---
 
 
-# Notas de la versión 2025.11.20 del editor universal {#release-notes}
+# Notas de la versión 2025.12.04 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal de 20 de noviembre de 2025.
+Estas son las notas de la versión del editor universal del 4 de diciembre de 2025.
 
 >[!TIP]
 >
@@ -26,11 +26,9 @@ Estas son las notas de la versión del editor universal de 20 de noviembre de 20
 
 ## Novedades {#what-is-new}
 
-* Se han migrado notificaciones a una nueva interfaz de usuario.
-
-## Funciones de adopción anticipada {#early-adopter}
-
-Si le interesa probar estas nuevas funciones y compartir sus comentarios, envíe un correo electrónico a su Adobe Customer Success Manager desde la dirección de correo electrónico asociada a su Adobe ID.
+* Se deshabilitaron los encabezados de autorización en favor del [inicio de sesión de desarrollador local.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
+* Ahora hay disponible un menú contextual en el [árbol estructurado al hacer clic con el botón secundario.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* Se agregó una clave de acceso directo a [componentes duplicados.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
 
 ### Nuevo RTE {#new-rte}
 
@@ -38,7 +36,6 @@ El nuevo RTE de ProseMirror, que cuenta con un selector de páginas en el cuadro
 
 ## Otras mejoras {#other-improvements}
 
-* Se ha simplificado la gestión de los valores RTE.
-* Se ha resuelto una rara condición de carrera de barra de herramientas.
-* Se han eliminado las alternancias de funciones no utilizadas.
-* Se han actualizado las dependencias.
+* Se ha resuelto un problema con RTE, que no se guardaba correctamente en el lienzo.
+* Se ha corregido el recorte del árbol de carpetas del selector de contenido.
+* `componentId` ahora se proporciona durante la acción de agregar.
