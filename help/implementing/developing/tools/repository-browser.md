@@ -6,9 +6,9 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 414608955bce3feebd1249a91e4f77161144e51e
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->También puede ver [este clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=es) para ver un vídeo introductorio rápido sobre cómo usar el Explorador de repositorios para depurar AEM as a Cloud Service.
+>También puede ver [este clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) para ver un vídeo introductorio rápido sobre cómo usar el Explorador de repositorios para depurar AEM as a Cloud Service.
 
 ## Introducción {#introduction}
 
@@ -33,7 +33,7 @@ Se puede acceder a ella desde [AEM as a Cloud Service Developer Console](/help/i
 
 Se deben cumplir las siguientes condiciones para acceder a AEM as a Cloud Service Developer Console o al Explorador de repositorios
 
-Para obtener acceso a AEM as a Cloud Service Developer Console, consulte [Acceso a Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
+Para obtener acceso a AEM as a Cloud Service Developer Console, consulte [Acceso a Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
 Para acceder al Explorador de repositorios, los requisitos son los mismos que para AEM as a Cloud Service Developer Console (especificado anteriormente). Para ver el contenido del Explorador de repositorios de una instancia concreta:
 
@@ -41,7 +41,7 @@ Para acceder al Explorador de repositorios, los requisitos son los mismos que pa
 
 * Instancias de publicación: los usuarios con el perfil de producto de usuarios de AEM para la **instancia de publicación** pueden ver el explorador del repositorio con un acceso de lectura mínimo. Sin ese conjunto de perfiles de producto, los usuarios navegarán como usuarios anónimos y algunas rutas no aparecerán debido a permisos limitados.
 
-Para obtener más información sobre cómo configurar permisos de usuario, consulte la [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=es).
+Para obtener más información sobre cómo configurar permisos de usuario, consulte la [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### Inicio del Explorador de repositorios {#launching-the-repository-browser}
 
@@ -76,38 +76,42 @@ Además, al hacer clic en una carpeta, la dirección URL se modifica dinámicame
 
 Para la publicación, de forma predeterminada, el Explorador de repositorios solo muestra contenido público, por lo que ciertas carpetas como `/conf` o `/home` no están visibles.
 
-Para que esas ubicaciones sean visibles, haga lo siguiente.
+Para que esas ubicaciones sean visibles, utilice el Perfil del producto de publicación de administradores de AEM. Para obtener más información, consulte la [Documentación de perfiles de equipo y de producto](/help/onboarding/aem-cs-team-product-profiles.md).
 
-1. Haga clic en los tres puntos junto al entorno que elija y seleccione **Administrar acceso**
+<!-- Drafting because of CQDOC-23204
+
+1. Click the three dots next to the environment of your choice and select **Manage Access**
 
    ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
-1. Busque la instancia de publicación y haga clic en ella
+1. Find your publish instance, then click it
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. Cree un perfil de producto para administradores de publicación. En el ejemplo siguiente, se llama **DEV - AEM Administrators Publish**
+1. Create a product profile for publish administrators. In the example below, it is called **DEV - AEM Administrators Publish**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
-1. Añada los usuarios adecuados, correspondientes a quién debe poder navegar por el explorador del repositorio de publicación con acceso completo, al nuevo perfil de producto
+1. Add the appropriate users, corresponding to who should be able to navigate the publish repository browser with full access, to the new product profile
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. Espere unos minutos y, a continuación, abra la consola **AEM author**
-1. Agregue el grupo correspondiente al nuevo perfil de producto como miembro del grupo del administrador haciendo clic en **Herramientas - Seguridad - Grupos en autor** y, a continuación, haciendo clic en el grupo **administradores**. A continuación, añada el grupo como se muestra a continuación
+1. Wait for a few minutes, then open the **AEM author** console
+1. Add the group corresponding to the new product profile as a member of the administrator's group by clicking **Tools - Security - Groups on author**, then clicking the **administrators** group. Then, add the group as shown below
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. Active los **administradores** y el nuevo grupo **DEV - Administradores de AEM Publish** para que estén disponibles durante la publicación
+1. Activate the **administrators** and the new **DEV - AEM Administrators Publish** group so that they become available on publish
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. Como práctica de seguridad recomendada, quite el nuevo grupo **DEV - AEM Administrators Publish** del grupo del administrador en **author** para que el nuevo grupo quede aislado para la publicación
+1. As a good security practice, remove the new **DEV - AEM Administrators Publish** group from the administrator's group on **author** so the new group is isolated to publish 
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
-1. Al acceder al explorador del repositorio para una instancia de publicación, todas las carpetas son visibles, incluidas `/home` y `/conf`.
+1. Upon accessing repository browser for a publish instance, all folders are visible, including `/home` and `/conf`.
+
+-->
 
 ### Ver propiedades JCR {#view-jcr-properties}
 
