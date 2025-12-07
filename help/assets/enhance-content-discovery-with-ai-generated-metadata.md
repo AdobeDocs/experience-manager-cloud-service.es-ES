@@ -3,10 +3,10 @@ title: Mejore la detección de contenido con metadatos generados por IA en la vi
 description: Aprenda a mejorar la detección de contenido con metadatos generados por IA en la vista de administración
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 8%
+source-wordcount: '594'
+ht-degree: 9%
 
 ---
 
@@ -28,15 +28,13 @@ Para habilitar los metadatos generados por IA:
 
 * La versión mínima de AEM requerida es `20626`.
 
-* Debes firmar un acuerdo con GenAI Rider. Para obtener más información, póngase en contacto con su representante de Adobe.
-
 ## Configuración de títulos generados por IA {#configure-ai-generated-titles}
 
 AEM permite configurar la visualización de los títulos de los recursos en la vista de tarjetas o en la vista de lista de la página de exploración de recursos. Puede elegir mostrar el título del recurso definido por usted, el título generado mediante IA o utilizar un título generado por IA solo si no hay ningún título existente para el recurso.
 
 Para configurar títulos generados por IA:
 
-1. Vaya a **[!UICONTROL Herramientas > Assets > Configuración de Assets > Configuración de mejora de etiquetas inteligentes]**.
+1. Vaya a **[!UICONTROL Herramientas > Assets > Configuraciones de Assets > Configuración de mejora de etiquetas inteligentes]**.
 
 1. Seleccione una de las siguientes opciones:
 
@@ -71,20 +69,12 @@ Para utilizar la función de etiquetas inteligentes mejorada, ejecute los siguie
 
 ## Deshabilitar metadatos generados por IA {#disable-ai-generated-metadata}
 
-Puede deshabilitar los metadatos generados por IA en el nivel de carpeta. Todas las carpetas secundarias heredan las propiedades de la carpeta principal.
+Para deshabilitar los metadatos generados por IA:
 
-Para deshabilitar los metadatos generados por IA en el nivel de carpeta:
+1. Vaya a **[!UICONTROL Herramientas > Assets > Configuraciones de Assets > Configuración de mejora de etiquetas inteligentes]**.
 
-1. Vaya a **[!UICONTROL Adobe Experience Manager > Assets > Archivos]**.
+1. Seleccione **[!UICONTROL Deshabilitar mejoras en etiquetas inteligentes]**.
 
-1. Seleccione la carpeta y haga clic en **[!UICONTROL Propiedades]**.
+1. Haga clic en **[!UICONTROL Guardar]** .
 
-1. En la ficha **[!UICONTROL Procesamiento de recursos]**, vaya a la carpeta **[!UICONTROL Mejoras de etiquetas inteligentes para imágenes]**. Seleccione uno de los siguientes valores de la lista desplegable:
-
-   * Heredada: la carpeta hereda las opciones de activación o desactivación de la carpeta principal.
-
-   * Habilitar: habilita los metadatos generados por IA para la carpeta seleccionada.
-
-   * Deshabilitar: deshabilita los metadatos generados por IA para la carpeta seleccionada.
-
-     ![Deshabilitar metadatos generados por IA](assets/disable-ai-generated-metadata.png)
+Los metadatos generados por IA están desactivados para los nuevos recursos o carpetas que se cargan en los AEM Assets. Los recursos o carpetas existentes que ya tienen campos de metadatos generados por IA generados siguen mostrando estos campos.

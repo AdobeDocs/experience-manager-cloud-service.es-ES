@@ -4,9 +4,9 @@ description: Obtenga información acerca de la capacidad de extensibilidad de la
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,17 @@ Complete los siguientes requisitos para empezar a agregar el componente de exten
 1. Configure la aplicación utilizando la CLI de AIO para generar la estructura básica de extensión y el código requerido. Consulte [generación de código para [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/) para obtener información detallada.
 1. Pruebe las extensiones localmente para asegurarse de que funcionan según lo esperado antes de la implementación. Ejecute la extensión en un entorno totalmente aislado o con aislamiento parcial y conecte la extensión a la instancia de producción [!DNL AEM Assets View] para realizar pruebas. Consulte [Solución de problemas - [!DNL AEM Assets View] extensibilidad](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) para obtener información detallada.
 
-## Personalización de las acciones rápidas y la barra de acciones en la vista Assets {#customize-quick-actions-and-actions-bar}
+## Personalizar acciones en la vista de Assets {#customize-actions-assets-view}
 
-Puede personalizar las acciones que se muestran al seleccionar uno o varios recursos (barra de acciones) en la vista de Assets. La vista Assets también permite personalizar las acciones que se muestran al hacer clic en Más opciones (...) en la tarjeta de recursos. Para obtener más información, consulte [Vista de exploración](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+La vista AEM Assets permite personalizar las siguientes acciones en la vista Examinar:
+
+* Personalice las acciones que se muestran al seleccionar uno o varios recursos en la barra de acciones.
+
+* Personalice las acciones que se muestran al hacer clic en Más opciones (...) en la tarjeta de recursos.
+
+* Personalice las acciones disponibles en el menú Encabezado.
+
+Para obtener más información, consulte [Vista de exploración](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
 
 ## Abrir cuadros de diálogo personalizados en la vista Assets {#open-custom-dialogs-assets-view}
 

@@ -1,9 +1,9 @@
 ---
 title: Mejore la detección de contenido con metadatos generados por IA
 description: Aprenda a mejorar la detección de contenido con metadatos generados por IA
-source-git-commit: e5b4d7692c9c57ba3e9c76940f28d72ad14d9fc0
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '357'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,6 @@ Para habilitar los metadatos generados por IA:
 
 * La versión mínima de AEM requerida es `20626`.
 
-* Debes firmar un acuerdo con GenAI Rider. Para obtener más información, póngase en contacto con su representante de Adobe.
 
 ## Uso de metadatos generados por IA {#using-ai-generated-smart-tags}
 

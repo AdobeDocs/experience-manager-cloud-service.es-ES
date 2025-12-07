@@ -3,9 +3,9 @@ title: Información general de Discovery Agent
 description: Aprenda a utilizar Discovery Agent para ofrecer contenido de AEM relevante bajo demanda mediante mensajes naturales y conversacionales para una experiencia de detección optimizada y sin clics.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 0a23cdf1cbc7738d843438b8d1aad358101c918e
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1265'
 ht-degree: 1%
 
 ---
@@ -92,13 +92,13 @@ Ejemplos de mensajes:
 * Mostrar recursos modificados después de `Nov 1 2025` en la carpeta `WKND`.
 * Enumerar `lifestyle` imágenes en la carpeta `WKND`.
 
-**Detección de recursos basada en la resolución y el formato**
+**Descubrimiento de recursos basado en formato**
 
-Discovery Agent puede identificar recursos que cumplen con requisitos de calidad específicos, como formato de archivo o resolución mínima, lo que permite a los usuarios localizar rápidamente imágenes de producto que estén listas para una entrega y reutilización de alta calidad en todos los canales.
+Discovery Agent puede identificar recursos que cumplen con requisitos de calidad específicos, como el formato de archivo, lo que permite a los usuarios localizar rápidamente imágenes de productos que están listas para una entrega y reutilización de alta calidad en todos los canales.
 
 Mensaje de ejemplo:
 
-Encuentre imágenes PNG de empaquetado de productos de al menos 2000 píxeles de ancho.
+Busque imágenes PNG de empaquetado de productos.
 
 **Detección de contenido basado en la orientación**
 
