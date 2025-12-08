@@ -2,10 +2,10 @@
 title: Aprobación de recursos para Content Hub
 description: Obtenga información sobre cómo aprobar recursos en Assets as a Cloud Service para que estén disponibles en Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: aec2bd06ad498e92ce1e69ac587ee7fcd5106268
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 16%
+source-wordcount: '1194'
+ht-degree: 17%
 
 ---
 
@@ -83,10 +83,6 @@ Para establecer el objetivo de aprobación:
 
    Para obtener más información sobre las opciones disponibles, consulte [Destino de aprobación predeterminado y destinos de publicación para recursos aprobados](#default-approval-target-options-publish-destinations).
 
-   >[!NOTE]
-   >
-   >La configuración de un objetivo de aprobación es una función de disponibilidad limitada. Puede activarlo o desactivarlo creando un ticket de asistencia. Si tiene Dynamic Media con OpenAPI habilitado, está habilitado de forma predeterminada.
-
    ![Estado de aprobación](/help/assets/assets/approval-status-delivery.png)
 
 1. Especifique otras propiedades del recurso y haga clic en **[!UICONTROL Guardar]**.
@@ -121,17 +117,17 @@ Siga estos pasos para automatizar la aprobación de los recursos recién ingerid
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]**.
 1. Haga clic en **[!UICONTROL Crear]** en la parte superior derecha de la página.
 1. Agregue un título de perfil y haga clic en **[!UICONTROL Crear]**. El perfil de metadatos se ha creado correctamente.
-1. Seleccione el perfil de metadatos recién creado y haga clic en **[!UICONTROL Editar _(e)_]**. <br>El formulario **[!UICONTROL Editar perfil de metadatos]**&#x200B;se abre con la ficha **[!UICONTROL Básico]**&#x200B;resaltada.
+1. Seleccione el perfil de metadatos recién creado y haga clic en **[!UICONTROL Editar _(e)_]**. <br>El formulario **[!UICONTROL Editar perfil de metadatos]**se abre con la ficha **[!UICONTROL Básico]**resaltada.
 1. Arrastre y suelte un **[!UICONTROL campo de texto de una sola línea]** desde la sección **[!UICONTROL Generar formulario]** a la derecha de la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie **[!UICONTROL Etiqueta de campo]** por _Assets aprobado_.
-   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam:status_.
+   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam :status_.
    1. Cambie el valor predeterminado a _aprobado_.
 
 1. De forma similar al paso 6, arrastre un **[!UICONTROL campo de texto de una sola línea]** desde la sección **[!UICONTROL Generar formulario]** a la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie **[!UICONTROL Etiqueta de campo]** a _Destino de activación_.
-   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam:activationTarget_.
+   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam :activationTarget_.
    1. Cambie el valor predeterminado a _contenthub_.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
