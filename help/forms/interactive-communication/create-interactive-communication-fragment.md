@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '291'
 ht-degree: 18%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 18%
 
 Un fragmento de comunicación interactiva permite a los usuarios crear bloques de contenido modulares reutilizables, como encabezados, pies de página o exenciones de responsabilidad estándar, que se pueden utilizar en varios documentos de comunicación. Estos fragmentos ayudan a mantener la coherencia, reducir el trabajo repetitivo y acelerar el proceso de diseño al crear comunicaciones personalizadas e integradas en datos.
 
-## Requisitos previos
-
-* [Asegúrese de que el autor sea miembro del grupo forms-users](/help/forms/setup-forms-cloud-service.md#configure-users)
+>[!NOTE]
+>
+> [El autor debe ser miembro del grupo &quot;forms-users&quot;](/help/forms/setup-forms-cloud-service.md#configure-users)
 
 ## Crear un fragmento de comunicación interactiva
 
@@ -41,7 +41,7 @@ Para crear un fragmento de comunicación interactiva, realice los siguientes pas
 
 1. Al seleccionar un fragmento de comunicación interactiva, aparecerá una pantalla en la que definirá detalles clave del fragmento, como título, nombre, descripción, modelo de datos (una representación estructurada de los datos del servidor) y etiquetas.
 
-   Para obtener más información, consulte la [Guía de configuración del modelo de datos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Para obtener más información, consulte la [Guía de configuración del modelo de datos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![Buscar documento CI](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

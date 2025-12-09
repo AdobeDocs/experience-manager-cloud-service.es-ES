@@ -3,7 +3,7 @@ title: Notas de la versión 2025.9.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2025.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
+source-git-commit: ecc32b6b501be4a53bf26f170e501dc1407d1a57
 workflow-type: tm+mt
 source-wordcount: '2083'
 ht-degree: 89%
@@ -38,7 +38,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -117,15 +117,15 @@ En estas notas de la versión se indican las innovaciones de ofrecidas en la ver
 
 * **Vista previa de PDF en el editor de comunicaciones interactivas**
 
-  Los usuarios pueden obtener una vista previa de los PDF de las comunicaciones interactivas sin datos, con archivos de datos JSON locales o con datos de un modelo de datos, lo que permite realizar pruebas flexibles basadas en datos. Para obtener más información, consulte [Vista previa de PDF en el editor de comunicaciones interactivas](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
+  Los usuarios pueden obtener una vista previa de los PDF de las comunicaciones interactivas sin datos, con archivos de datos JSON locales o con datos de un modelo de datos, lo que permite realizar pruebas flexibles basadas en datos. Para obtener más información, consulte [Vista previa de PDF en el editor de comunicaciones interactivas](/help/forms/interactive-communication/generate-pdf-preview.md).
 
 * **Compatibilidad de las fuentes personalizadas en las comunicaciones interactivas**
 
-  La función Fuentes personalizadas permite que los usuarios incrusten fuentes personalizadas o aprobadas por la organización en las comunicaciones interactivas, lo que garantiza un procesamiento PDF coherente y acorde con la marca en todos los dispositivos y plataformas. Para obtener más información, consulte [Compatibilidad de las fuentes personalizadas en las comunicaciones interactivas](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+  La función Fuentes personalizadas permite que los usuarios incrusten fuentes personalizadas o aprobadas por la organización en las comunicaciones interactivas, lo que garantiza un procesamiento PDF coherente y acorde con la marca en todos los dispositivos y plataformas. Para obtener más información, consulte [Compatibilidad de las fuentes personalizadas en las comunicaciones interactivas](/help/forms/interactive-communication/add-custom-fonts.md).
 
 * **Importar y exportar comunicaciones interactivas**
 
-  Esta función permite migrar y reutilizar las comunicaciones interactivas entre diferentes entornos. Ahora puede exportar una comunicación interactiva junto con sus fragmentos asociados y modelos de datos desde un entorno e importarla a otro. Para obtener más información, consulte [Importar y exportar comunicaciones interactivas](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+  Esta función permite migrar y reutilizar las comunicaciones interactivas entre diferentes entornos. Ahora puede exportar una comunicación interactiva junto con sus fragmentos asociados y modelos de datos desde un entorno e importarla a otro. Para obtener más información, consulte [Importar y exportar comunicaciones interactivas](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md).
 
 * **Mejoras en el editor de reglas**
 
@@ -166,7 +166,7 @@ Días de lanzamiento, eventos en directo, picos de ventas: estos momentos no pue
 >[!NOTE]
 >
 >Disponible como función de disponibilidad limitada desde el 25 de septiembre.
->&#x200B;>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
+>Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
 
 ### Nueva versión de las herramientas para desarrolladores de AEM para Eclipse {#aem-develeper-tools-for-eclipse}
 

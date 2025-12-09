@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 542f0d7b295a87e2f64bc8e47cea4569b2a295aa
+source-git-commit: b2b85d1e802c7f287b875d53a9347ca07ea2b806
 workflow-type: tm+mt
-source-wordcount: '6978'
-ht-degree: 94%
+source-wordcount: '6886'
+ht-degree: 96%
 
 ---
 
@@ -412,7 +412,7 @@ ht-degree: 94%
          + [Creación de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [Administrar páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [Propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md)
-         + [Edición de las propiedades de página  &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
+         + [Edición de las propiedades de página  ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
          + [Previsualizar páginas](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [Versiones de página](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -605,7 +605,7 @@ ht-degree: 94%
       + [Creación y uso compartido de carpetas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
-      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
       + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
    + Configuración, administración y ampliación de [!DNL Assets] {#admin}
@@ -818,8 +818,8 @@ ht-degree: 94%
          + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuración de almacenamiento de  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configuración de los servicios en la nube de Salesforce](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
@@ -988,61 +988,64 @@ ht-degree: 94%
       + [Depurar formularios HTML5](/help/forms/debug.md)
       + [Compatibilidad con scripts para formularios HTML5](/help/forms/scripting-support.md)
       + [Conjunto de formularios en AEM Forms](/help/forms/formset-in-aem-forms.md)
-   + Comunicación interactiva {#interactive-communication}
-      + Información general {#overview}
-         + [Introducción al editor de comunicaciones interactivas](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
-         + [Crear una comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication.md)
-         + [Crear una plantilla de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-template.md)
-         + [Crear un fragmento de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-         + [Introducción a la comunicación interactiva](/help/forms/introduction-to-interactive-communication.md)
-         + [Crear la primera comunicación interactiva](/help/forms/create-your-first-communication.md)
-      + Componente {#component}
-         + [Componente Cuadro de texto en el editor de comunicaciones interactivas](/help/forms/interactive-communication/text-box-component-in-interactive-communication-editor.md)
-         + [Componente de imagen en el editor de comunicaciones interactivas](/help/forms/interactive-communication/image-component-in-interactive-communication-editor.md)
-         + [Componente de campo de imagen en el editor de comunicaciones interactivas](/help/forms/interactive-communication/image-field-component-in-interactive-communication-editor.md)
-         + [Componente Campo de texto en el editor de comunicaciones interactivas](/help/forms/interactive-communication/text-field-component-in-interactive-communication-editor.md)
-         + [Componente de campo numérico en el editor de comunicaciones interactivas](/help/forms/interactive-communication/numeric-field-component-in-interactive-communication-editor.md)
-         + [Componente de campo de fecha y hora en el editor de comunicaciones interactivas](/help/forms/interactive-communication/date-time-field-component-in-interactive-communication-editor.md)
-         + [Componente Campo de fecha en el editor de comunicaciones interactivas](/help/forms/interactive-communication/date-field-component-in-interactive-communication-editor.md)
-         + [Componente Casilla de verificación en el editor de comunicaciones interactivas](/help/forms/interactive-communication/check-box-component-in-interactive-communication-editor.md)
-         + [Componente Botón de opción del editor de comunicaciones interactivas](/help/forms/interactive-communication/radio-button-component-in-interactive-communication-editor.md)
-         + [Componente Subformulario en el editor de comunicaciones interactivas](/help/forms/interactive-communication/subform-component-in-interactive-communication-editor.md)
-         + [Componente Rectángulo en el editor de comunicaciones interactivas](/help/forms/interactive-communication/rectangle-component-in-interactive-communication-editor.md)
-         + [Componente Tabla en el editor de comunicaciones interactivas](/help/forms/interactive-communication/table-component-in-interactive-communication-editor.md)
-         + [Componente Línea en el editor de comunicaciones interactivas](/help/forms/interactive-communication/line-component-in-interactive-communication-editor.md)
-         + [Componente de código de barras en el editor de comunicaciones interactivas](/help/forms/interactive-communication/barcode-component-in-interactive-communication-editor.md)
-      + [Enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/data-binding-in-interactive-communication-editor.md)
-      + [Creación de reglas en el editor de comunicaciones interactivas](/help/forms/interactive-communication/rule-creation-in-interactive-communication-editor.md)
-      + [Importar y exportar comunicaciones interactivas](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
-      + [Agregar fuentes personalizadas al editor de comunicaciones interactivas](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
-      + [Vista previa de PDF en el editor de comunicaciones interactivas](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
-      + [Bloqueo de plantilla en el Editor de comunicaciones interactivas](/help/forms/interactive-communication/template-lock-in-interactive-communication-editor.md)
-      + [Numeración dinámica de páginas en el editor de comunicaciones interactivas](/help/forms/interactive-communication/dynamic-page-numbering-in-interactive-communicatio-editor.md)
-      + [Gestión del desbordamiento de contenido en el editor de comunicaciones interactivas](/help/forms/interactive-communication/content-overflow-handling-in-interactive-communication-editor.md)
-      + [Compatibilidad con la edición XDP en el editor de comunicaciones interactivas](/help/forms/interactive-communication/support-xdp-editing-in-interactive-communication-editor.md)
-      + [Preguntas frecuentes](/help/forms/interactive-communications-faq.md)
-   + Flujos de trabajo centrados en formularios  {#create-form-centric-workflows}
-      + [Introducción a los flujos de trabajo centrados en formularios](/help/forms/aem-forms-workflow.md)
-      + [Uso de pasos centrados en Forms en un flujo de trabajo + referencia de paso](/help/forms/aem-forms-workflow-step-reference.md)
-      + [Uso de variables en un flujo de trabajo centrado en Forms](/help/forms/variable-in-aem-workflows.md)
-      + [Selección dinámica de usuarios o grupos en el flujo de trabajo de AEM](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
-      + [Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM](/help/forms/manage-applications-inbox.md)
-      + [Usar la opción Fuera de la oficina](/help/forms/configure-out-of-office-settings.md)
-   + API de comunicaciones {#using-communications}
-      + [Información general sobre las API de comunicaciones](/help/forms/aem-forms-communication-api-overview.md)
-      + [Introducción a las API de comunicaciones](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [Authentication-OAuth de servidor a servidor](/help/forms/oauth-api-authetication.md)
-      + [JWT de autenticación (token web JSON)](/help/forms/jwt-api-authentication.md)
-      + [API de comunicaciones: procesamiento sincrónico](/help/forms/aem-forms-cloud-service-communications.md)
-      + [API de comunicaciones: procesamiento por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-      + [API de comunicaciones: procesamiento bajo demanda](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
-      + [Generar salida AFP mediante la API de AEM Forms](/help/forms/document-generation-afp-api.md)
-      + [Instalación y configuración de Forms Designer](/help/forms/installing-configuring-designer.md)
-      + [Uso de Forms Designer para crear plantillas](/help/forms/use-forms-designer.md)
-      + [Cambiar el contenido de la página cero en Designer](/help/forms/changing-page-zero-content-designer.md)
-      + [Uso de fuentes personalizadas en documentos PDF](/help/forms/use-custom-fonts.md)
-      + [Lista de fuentes admitidas en los documentos PDF](/help/forms/supported-out-of-the-box-fonts.md)
-      + [Problemas conocidos, prácticas recomendadas y preguntas más frecuentes](/help/forms/communications-known-issues-limitations.md)
++ Comunicación interactiva {#interactive-communication}
+   + Explicación de la comunicación interactiva {#overview}
+      + [Introducción](/help/forms/interactive-communication/introduction.md)
+      + [Introducción](/help/forms/interactive-communication/getting-started.md)
+      + [Crear comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication.md)
+      + [Crear plantilla de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [Crear fragmento de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+      + [Introducción a la comunicación interactiva](/help/forms/introduction-to-interactive-communication.md)
+      + [Crear la primera comunicación interactiva](/help/forms/create-your-first-communication.md)
+   + Componente {#component}
+      + [Cuadro de texto](/help/forms/interactive-communication/text-box.md)
+      + [Imagen](/help/forms/interactive-communication/image.md)
+      + [Campo de imagen](/help/forms/interactive-communication/image-field.md)
+      + [Campo de texto](/help/forms/interactive-communication/text-field.md)
+      + [Campo numérico](/help/forms/interactive-communication/numeric-field.md)
+      + [Campo de fecha y hora](/help/forms/interactive-communication/date-time-field.md)
+      + [Campo de fecha](/help/forms/interactive-communication/date-field.md)
+      + [Casilla de verificación](/help/forms/interactive-communication/check-box.md)
+      + [Botón de opción](/help/forms/interactive-communication/radio-button.md)
+      + [Subformulario](/help/forms/interactive-communication/subform.md)
+      + [Rectángulo](/help/forms/interactive-communication/rectangle.md)
+      + [Tabla](/help/forms/interactive-communication//table.md)
+      + [Línea](/help/forms/interactive-communication/line.md)
+      + [Código de barras](/help/forms/interactive-communication/barcode.md)
+   + Cómo {#howto}
+      + [Configurar enlace de datos](/help/forms/interactive-communication/configure-data-binding.md)
+      + [Importar y exportar la comunicación interactiva](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)
+      + [Agregar fuentes personalizadas](/help/forms/interactive-communication/add-custom-fonts.md)
+      + [Generar previsualización de PDF](/help/forms/interactive-communication/generate-pdf-preview.md)
+      + [Activar bloqueo de plantilla](/help/forms/interactive-communication/enable-template-lock.md)
+      + [Implementar la numeración dinámica de páginas](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
+      + [Gestionar desbordamiento de contenido](/help/forms/interactive-communication/handle-content-overflow.md)
+      + [Compatibilidad con la edición XDP](/help/forms/interactive-communication/support-xdp-editing.md)
+   + Asociar IU {#associateui}
+      + [Asociar interfaz de usuario en el editor de comunicaciones interactivas](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+   + [Preguntas frecuentes](/help/forms/interactive-communications-faq.md)
++ Flujos de trabajo centrados en formularios  {#create-form-centric-workflows}
+   + [Introducción a los flujos de trabajo centrados en formularios](/help/forms/aem-forms-workflow.md)
+   + [Uso de pasos centrados en Forms en un flujo de trabajo + referencia de paso](/help/forms/aem-forms-workflow-step-reference.md)
+   + [Uso de variables en un flujo de trabajo centrado en Forms](/help/forms/variable-in-aem-workflows.md)
+   + [Selección dinámica de usuarios o grupos en el flujo de trabajo de AEM](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+   + [Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM](/help/forms/manage-applications-inbox.md)
+   + [Usar la opción Fuera de la oficina](/help/forms/configure-out-of-office-settings.md)
++ API de comunicaciones {#using-communications}
+   + [Información general sobre las API de comunicaciones](/help/forms/aem-forms-communication-api-overview.md)
+   + [Introducción a las API de comunicaciones](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+   + [Authentication-OAuth de servidor a servidor](/help/forms/oauth-api-authetication.md)
+   + [JWT de autenticación (token web JSON)](/help/forms/jwt-api-authentication.md)
+   + [API de comunicaciones: procesamiento sincrónico](/help/forms/aem-forms-cloud-service-communications.md)
+   + [API de comunicaciones: procesamiento por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+   + [API de comunicaciones: procesamiento bajo demanda](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+   + [Generar salida AFP mediante la API de AEM Forms](/help/forms/document-generation-afp-api.md)
+   + [Instalación y configuración de Forms Designer](/help/forms/installing-configuring-designer.md)
+   + [Uso de Forms Designer para crear plantillas](/help/forms/use-forms-designer.md)
+   + [Cambiar el contenido de la página cero en Designer](/help/forms/changing-page-zero-content-designer.md)
+   + [Uso de fuentes personalizadas en documentos PDF](/help/forms/use-custom-fonts.md)
+   + [Lista de fuentes admitidas en los documentos PDF](/help/forms/supported-out-of-the-box-fonts.md)
+   + [Problemas conocidos, prácticas recomendadas y preguntas más frecuentes](/help/forms/communications-known-issues-limitations.md)
    + Informes de transacciones {#transaction-reports}
       + [API facturables de informes de transacciones](/help/forms/transaction-reports-billable-apis.md)
       + [Registrar una transacción para una implementación personalizada](/help/forms/record-transaction-custom-implementation.md)
@@ -1248,7 +1251,7 @@ ht-degree: 94%
       + Creación{#authoring}
          + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=es)
          + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
-      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=es)
+      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
    + Selector de fragmentos de contenido {#content-fragment-selector}
       + [Selector de fragmentos de contenido de Micro-Frontend: información general](/help/headless/content-fragment-selector/overview.md)
