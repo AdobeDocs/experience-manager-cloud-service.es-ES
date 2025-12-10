@@ -4,9 +4,9 @@ description: Descubra la interfaz de usuario asociada en el Editor de comunicaci
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 56e4195016c06177822ea31aa87ed4dfa24dc748
+source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -97,7 +97,7 @@ El autor puede seguir los pasos a continuación para configurar y publicar una c
 
 >[!NOTE]
 >
-> Componentes admitidos para asociado.
+> Componentes admitidos para asociados: campo de fecha, campo numérico, campo de texto.
 
 ### Creación de la CI
 
