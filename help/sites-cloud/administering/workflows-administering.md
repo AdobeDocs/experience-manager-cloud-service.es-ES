@@ -112,7 +112,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 Cuando falla un flujo de trabajo, AEM proporciona la consola **Errores** para que pueda investigar y tomar las medidas adecuadas una vez que se haya manejado la causa original:
 
 * **Detalles del error**
-Abre una ventana para mostrar **Mensaje de error**, **Paso y **Pila de errores**.
+Abre una ventana para mostrar **Mensaje de error**, **Paso y &#x200B;** Pila de errores**.
 
 * **Abrir historial**
 Muestra detalles del historial del flujo de trabajo.
