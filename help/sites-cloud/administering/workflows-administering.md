@@ -48,7 +48,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 
    >[!NOTE]
    >
-   > Para mantener la instancia de flujo de trabajo en buen estado, siga las prácticas recomendadas en [depuración regular de las instancias de flujo de trabajo](#regular-purging-of-workflow-instances) o [prácticas recomendadas del flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
+   > Para mantener la instancia de flujo de trabajo en buen estado, siga las prácticas recomendadas en [depuración regular de las instancias de flujo de trabajo](#regular-purging-of-workflow-instances) o [prácticas recomendadas del flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=es).
 
 ## Buscar instancias de flujo de trabajo {#search-workflow-instances}
 
