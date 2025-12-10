@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 98%
+source-wordcount: '1282'
+ht-degree: 90%
 
 ---
 
@@ -33,26 +33,22 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 1. **Flujos de trabajo en ejecución** muestra el número de flujos de trabajo en ejecución y su estado. por ejemplo, en las imágenes especificadas, se muestra el número de **Flujos de trabajo en ejecución** y el **Estado** de la instancia de AEM:
 
    * **Estado: correcto**
-
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Estado: incorrecto**
-
      ![estado-incorrecto](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. En **Detalles del estado** de instancias de flujo de trabajo, haga clic en **Detalles**, para mostrar el **número de instancias de flujos de trabajo en ejecución**, **instancias de flujo de trabajo completadas**, **instancias de flujo de trabajo anuladas**, **instancias de flujo de trabajo fallidas**, etc. por ejemplo, a continuación se muestran las imágenes determinadas que muestran **Detalles del estado** con:
 
    * **Detalles del estado: correcto**
-
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Detalles del estado: incorrecto**
-
      ![detalles-estado-incorrecto](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > Para mantener la instancia de flujo de trabajo en buen estado, siga las prácticas recomendadas en [depuración regular de las instancias de flujo de trabajo](#regular-purging-of-workflow-instances) o [prácticas recomendadas del flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=es).
+   > Para mantener la instancia de flujo de trabajo en buen estado, siga las prácticas recomendadas en [depuración regular de las instancias de flujo de trabajo](#regular-purging-of-workflow-instances) o [prácticas recomendadas del flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Buscar instancias de flujo de trabajo {#search-workflow-instances}
 
@@ -67,7 +63,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
    * Modelo de flujo de trabajo: Seleccionar un modelo de flujo de trabajo
    * Usuario asignado: Seleccione un usuario asignado del flujo de trabajo
    * Tipo: Tarea, elemento de flujo de trabajo o error de flujo de trabajo
-   * Estado de la tarea: activo, completado o finalizado
+   * Estado de la tarea: activo, completado o terminado
    * Donde Estoy: Propietario AND usuario asignado, solo propietario, solo usuario asignado
    * Fecha de inicio: Fecha de inicio antes o después de una fecha especificada
    * Fecha de finalización: Fecha de finalización anterior o posterior a una fecha especificada
@@ -81,14 +77,14 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 
    ![wf-96-1](/help/sites-cloud/administering/assets/wf-96-1.png)
 
-1. Seleccione un elemento específico y, a continuación, utilice **Finalizar**, **Suspender** o **Reanudar**, según proceda; confirmación o más detalles:
+1. Seleccione un elemento específico y, a continuación, utilice **Terminar**, **Suspender** o **Reanudar**, según proceda; confirmación o más detalles:
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
    >[!NOTE]
    >
    >
-   >Para finalizar o cancelar un flujo de trabajo, debe encontrarse en un estado de espera de intervención del usuario, como ocurre en la Etapa de participante. Es posible que al intentar anular un flujo de trabajo que está ejecutando trabajos en ese momento (subprocesos activos que están en ejecución) no se produzcan los resultados esperados.
+   >Para terminar o cancelar un flujo de trabajo, debe encontrarse en un estado de espera de intervención del usuario, como ocurre en la Etapa de participante. Es posible que al intentar anular un flujo de trabajo que está ejecutando trabajos en ese momento (subprocesos activos que están en ejecución) no se produzcan los resultados esperados.
 
 
 ## Visualización de flujos de trabajo archivados {#viewing-archived-workflows}
@@ -104,8 +100,8 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
    >
    >El estado de anulación se considera una terminación satisfactoria, ya que ocurre como resultado de la acción del usuario; por ejemplo:
    >
-   >* uso de la acción **Finalizar**
-   >* cuando se elimina (a la fuerza) una página sujeta a un flujo de trabajo, a continuación, el flujo de trabajo finaliza.
+   >* uso de la acción **Terminar**
+   >* cuando se elimina (a la fuerza) una página sujeta a un flujo de trabajo, a continuación, el flujo de trabajo termina.
 
 1. Seleccione un elemento específico y luego **Abrir historial** para ver más detalles:
 
@@ -116,16 +112,16 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 Cuando falla un flujo de trabajo, AEM proporciona la consola **Errores** para que pueda investigar y tomar las medidas adecuadas una vez que se haya manejado la causa original:
 
 * **Detalles del error**
-Abre una ventana para mostrar **Mensaje de error**, **Paso y &#x200B;** Pila de errores**.
+Abre una ventana para mostrar **Mensaje de error**, **Paso y **Pila de errores**.
 
 * **Abrir historial**
 Muestra detalles del historial del flujo de trabajo.
 
 * **Paso de reintento** Ejecuta de nuevo la instancia del componente Paso de script. Utilice el comando Paso de reintento después de haber corregido la causa del error original. Por ejemplo, vuelva a intentar el paso después de corregir un error en el script que ejecuta el Paso de proceso.
-* **Finalizar** Finalice el flujo de trabajo si el error ha provocado una situación irreconciliable. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio, que ya no son válidas para la instancia de flujo de trabajo.
-* **Finalizar y reintentar** similar a **Finalizar**, excepto que se inicia una nueva instancia de flujo de trabajo utilizando la carga útil, el título y la descripción originales.
+* **Terminar** Termine el flujo de trabajo si el error ha provocado una situación irreconciliable. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio, que ya no son válidas para la instancia de flujo de trabajo.
+* **Terminar y reintentar** similar a **Terminar**, excepto que se inicia una nueva instancia de flujo de trabajo utilizando la carga útil, el título y la descripción originales.
 
-Para investigar los errores y luego reanudar o finalizar el flujo de trabajo más tarde, siga estos pasos:
+Para investigar los errores y luego reanudar o terminar el flujo de trabajo más tarde, siga estos pasos:
 
 1. Mediante la Navegación, seleccione **Herramientas** y, luego, **Flujo de trabajo**.
 
@@ -150,39 +146,14 @@ Para configurar el servicio, puede configurar los archivos de configuración OSG
 >Como el servicio es un servicio de fábrica, el nombre del nodo `sling:OsgiConfig` requiere un sufijo de identificador, por ejemplo:
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
-<table>
- <tbody>
-  <tr>
-   <th>Nombre de propiedad (consola web)</th>
-   <th>Nombre de propiedad OSGi</th>
-   <th>Descripción</th>
-  </tr>
-  <tr>
-   <td>Nombre del trabajo</td>
-   <td>scheduledpurge.name</td>
-   <td>Un nombre descriptivo para la depuración programada.</td>
-  </tr>
-  <tr>
-   <td>Estado de flujo de trabajo</td>
-   <td>scheduledpurge.workflowStatus</td>
-   <td><p>El estado de las instancias de flujo de trabajo que se van a purgar. Los siguientes valores son válidos:</p>
-    <ul>
-     <li>COMPLETADO: las instancias de flujo de trabajo completadas se depuran.</li>
-     <li>EN EJECUCIÓN: las instancias de flujo de trabajo en ejecución se depuran.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Modelos para purgar</td>
-   <td>scheduledpurge.modelIds</td>
-   <td><p>El ID de los modelos de flujo de trabajo que se van a depurar. El ID es la ruta al nodo del modelo, por ejemplo:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> No especifique ningún valor para depurar instancias de todos los modelos de flujo de trabajo.</p> <p>Para especificar varios modelos, haga clic en el botón + de la consola web. </p> </td>
-  </tr>
-  <tr>
-   <td>Edad del flujo de trabajo</td>
-   <td>scheduledpurge.daysell</td>
-   <td>La antigüedad de las instancias de flujo de trabajo que se van a purgar, en días.</td>
-  </tr>
- </tbody>
-</table>
+| Nombre de propiedad (consola web) | Nombre de propiedad OSGi | Descripción |
+|--- |--- |--- |
+| Nombre de trabajo  | `scheduledpurge.name` | Un nombre descriptivo para la depuración programada. |
+| Estado de flujo de trabajo | `scheduledpurge.workflowStatus` | El estado de las instancias de flujo de trabajo que se van a purgar. Los siguientes valores son válidos:<br><br>- COMPLETADO: Las instancias de flujo de trabajo completadas se purgan.<br>- EN EJECUCIÓN: las instancias de flujo de trabajo en ejecución se purgan. |
+| Modelos para purgar | `scheduledpurge.modelIds` | El ID de los modelos de flujo de trabajo que se van a purgar.<br>El identificador es la ruta de acceso al nodo del modelo, por ejemplo:<br> `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br> No especifique ningún valor para purgar instancias de todos los modelos de flujo de trabajo.<br>Para especificar varios modelos, haga clic en el botón `+` de la consola web. |
+| Edad del flujo de trabajo | `scheduledpurge.daysold` | La antigüedad de las instancias de flujo de trabajo que se van a purgar, en días. |
+| Paquete de carga útil de flujo | `scheduledpurge.purgePackagePayload` | Indica si el paquete de carga útil se debe purgar; `true` o `false`. |
+
 
 ## Configuración del tamaño máximo de la bandeja de entrada {#setting-the-maximum-size-of-the-inbox}
 
@@ -204,7 +175,7 @@ Los datos procesados por flujos de trabajo se almacenan en el almacenamiento pro
 
 En el nivel del modelo de flujo de trabajo, se proporciona un indicador para indicar que el modelo (y sus instancias de tiempo de ejecución) tiene almacenamiento externo de metadatos. Las variables de flujo de trabajo no se mantendrán en JCR para las instancias de flujo de trabajo de los modelos marcados para almacenamiento externo.
 
-La propiedad *userMetadataPersistenceEnabled* se almacena en la variable *jcr:nodo de contenido* del modelo de flujo de trabajo. Este indicador se mantiene en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
+La propiedad *userMetadataPersistenceEnabled* se almacena en el nodo *jcr:content* del modelo de flujo de trabajo. Este indicador se mantiene en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
 
 La siguiente ilustración muestra cómo establecer el indicador en un flujo de trabajo.
 
