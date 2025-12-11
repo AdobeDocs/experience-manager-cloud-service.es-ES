@@ -4,10 +4,10 @@ description: Obtenga información sobre las tareas de mantenimiento en AEM as a 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
+source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 30%
+source-wordcount: '2054'
+ht-degree: 29%
 
 ---
 
@@ -29,6 +29,8 @@ En versiones anteriores de AEM, se podían configurar tareas de mantenimiento me
 >
 >Adobe se reserva el derecho de anular los ajustes de configuración de tareas de mantenimiento de un cliente para mitigar problemas como la degradación del rendimiento.
 
+### Tareas de mantenimiento {#maintenance-tasks}
+
 En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
 
 <table style="table-layout:auto">
@@ -47,14 +49,14 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
   <tr>
     <td>Depuración de la versión</td>
     <td>Cliente</td>
-    <td>La depuración de versiones está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
+    <td>La depuración de versiones está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Purga del registro de auditoría</td>
     <td>Cliente</td>
-    <td>La depuración del registro de auditoría está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración del registro de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
+    <td>La depuración del registro de auditoría está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración del registro de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
    </td>
    </td>
   </tr>
@@ -85,11 +87,15 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
     <td>Cliente</td>
     <td>
     <p>Debe hacerse en Git. Anule el nodo de configuración de la ventana de mantenimiento predeterminado en <code>/libs</code> creando propiedades en la carpeta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración.</p>
-    <p>Habilite la tarea de mantenimiento añadiendo otro nodo bajo el anterior (asígnele el nombre <code>granite_ProjectPurgeTask</code>) con las propiedades adecuadas. Consulte la lista de <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Propiedades OSGi</a> para <b>Configuración de purga de proyectos Adobe</b> .</p>
+    <p>Habilite la tarea de mantenimiento añadiendo otro nodo bajo el anterior (asígnele el nombre <code>granite_ProjectPurgeTask</code>) con las propiedades adecuadas. Consulte la lista de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Propiedades OSGi</a> para <b>Configuración de purga de proyectos Adobe</b> .</p>
   </td>
   </tr>
   </tbody>
 </table>
+
+### Configuraciones de ventana de mantenimiento {#maintenance-window-configurations}
+
+La siguiente tabla ilustra las configuraciones de ventana de mantenimiento disponibles.
 
 <table style="table-layout:auto">
  <tbody>
@@ -138,15 +144,15 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
     </tbody>
 </table>
 
-**Ubicaciones**:
+### Ubicaciones {#locations}
 
 * Diario: /apps/settings/granite/operations/maintenance/granite_daily
 * Semanal: /apps/settings/granite/operations/maintenance/granite_weekly
 * Mensual: /apps/settings/granite/operations/maintenance/granite_monthly
 
-**Muestras de código**:
+### Muestras de código {#code-samples}
 
-Muestra de código 1 (diario)
+**Ejemplo de código 1 (diario)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -161,7 +167,7 @@ Muestra de código 1 (diario)
  />
 ```
 
-Muestra de código 2 (semanal)
+**Ejemplo de código 2 (semanal)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -176,7 +182,7 @@ Muestra de código 2 (semanal)
    windowStartTime="14:30"/>
 ```
 
-Muestra de código 3 (mensual)
+**Muestra de código 3 (mensual)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -220,54 +226,54 @@ Declare un archivo de configuración e impleméntelo como se describe en los pas
 > 
 >Del mismo modo, una vez que implemente el nodo de depuración del registro de auditoría en el archivo de configuración, debe mantenerlo declarado y no eliminarlo.
 
-**1** Cree un archivo con el nombre `mt.yaml` o similar.
+1. Cree un archivo con el nombre `mt.yaml` o similar.
 
-**2** Coloque el archivo en algún lugar bajo una carpeta de nivel superior llamada `config` o similar, como se describe en [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#folder-structure).
+1. Coloque el archivo en algún lugar bajo una carpeta de nivel superior denominada `config` o similar, como se describe en [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#folder-structure).
 
-**3** - Declarar propiedades en el archivo de configuración, que incluyen:
+1. Declare las propiedades en el archivo de configuración, que incluyen:
 
-* Algunas propiedades encima del nodo de datos. Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción. El valor de la propiedad `kind` debe ser *MaintenanceTasks* y la versión debe establecerse en *1*.
+   * Algunas propiedades encima del nodo de datos. Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción. El valor de la propiedad `kind` debe ser *MaintenanceTasks* y la versión debe establecerse en *1*.
 
-* un objeto de datos con `versionPurge` y `auditLogPurge` objetos.
+   * un objeto de datos con `versionPurge` y `auditLogPurge` objetos.
 
-Vea las definiciones y sintaxis de los objetos `versionPurge` y `auditLogPurge` a continuación.
+   Vea las definiciones y sintaxis de los objetos `versionPurge` y `auditLogPurge` a continuación.
 
-La configuración es similar al siguiente ejemplo:
+   La configuración es similar al siguiente ejemplo:
 
-```
-kind: "MaintenanceTasks"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  versionPurge:
-    maximumVersions: 15
-    maximumAgeDays: 20
-    paths: ["/content"]
-    minimumVersions: 1
-    retainLabelledVersions: false
-  auditLogPurge:
-    rules:
-      - replication:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
-      - pages:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
-      - dam:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
-```
+   ```
+   kind: "MaintenanceTasks"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     versionPurge:
+       maximumVersions: 15
+       maximumAgeDays: 20
+       paths: ["/content"]
+       minimumVersions: 1
+       retainLabelledVersions: false
+     auditLogPurge:
+       rules:
+         - replication:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+         - pages:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+         - dam:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+   ```
 
-Tenga en cuenta que para que la configuración sea válida:
+   Tenga en cuenta que para que la configuración sea válida:
 
-* todas las propiedades deben estar definidas. No hay valores predeterminados heredados.
-* se deben respetar los tipos (enteros, cadenas, booleanos, etc.) de las tablas de propiedades siguientes.
+   * todas las propiedades deben estar definidas. No hay valores predeterminados heredados.
+   * se deben respetar los tipos (enteros, cadenas, booleanos, etc.) de las tablas de propiedades siguientes.
 
-**4**: cree una canalización de configuración en Cloud Manager, tal como se describe en el artículo [canalización de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Cree una canalización de configuración en Cloud Manager, tal como se describe en el [artículo de canalización de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Depuración de la versión {#version-purge}
 
@@ -308,7 +314,6 @@ Las columnas que indican *default* indican los valores predeterminados en el fut
 | maximumVersions | 5 | 0 (sin límite) | Sí | Entero | Se elimina cualquier versión anterior a la n-ª versión más reciente. Si el valor es 0, la depuración no se realiza según el número de versiones. |
 | minimumVersions | 1 | 1 | Sí | Entero | El número mínimo de versiones que se conservan independientemente de la edad. Tenga en cuenta que siempre se conserva al menos 1 versión; su valor debe ser 1 o superior. |
 | keepLabelsVersioned | false | false | Sí | booleano | Determina si se excluirán de la depuración las versiones etiquetadas explícitamente. Para mejorar la optimización del repositorio, se recomienda establecer este valor en false. |
-
 
 **Interacciones de propiedades**
 
@@ -366,7 +371,6 @@ Los entornos que se crearon antes de habilitar la depuración predeterminada ten
 Las propiedades permitidas se enumeran a continuación.
 
 Las columnas que indican *default* indican los valores predeterminados en el futuro, cuando se apliquen los valores predeterminados; *TBD* refleja un identificador de entorno que aún no se ha determinado.
-
 
 | Propiedades | valor predeterminado futuro para envs>TBD | valor predeterminado futuro para envs&lt;=TBD | Requerido | tipo | Valores |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
