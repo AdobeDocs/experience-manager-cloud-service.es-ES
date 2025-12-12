@@ -4,7 +4,7 @@ description: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud S
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 20d745a280cc57dff4680932736b28c8db6ccee1
+source-git-commit: 3ebd96b814a113ee8645aee37ee9e3e12cbf81ae
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 99%
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Producto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versión | 2025.11.0 |
+| Versión | 2025.12.0 |
 | Tipo | Actualizaciones continuas |
 | Fecha de disponibilidad | Actualización continua |
 

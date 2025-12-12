@@ -1,20 +1,18 @@
 ---
-title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Notas de la versión 2025.11.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2025.11.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 6d86413449dbde8566f0f653071a2f29ab9c13ab
+source-git-commit: 2cc6f1bea3fc9cd56a20048db0ce5357dbb5ee0e
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 64%
+source-wordcount: '1461'
+ht-degree: 68%
 
 ---
 
-# Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de la versión 2025.11.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión de la funcionalidad actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión de funciones de la versión 2025.11.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.12.0) fue el viernes, 11 de diciembre de 2025. La próxima versión de la funcionalidad (2026.1.0) está planificada para el viernes, 29 de enero de 2026.
+La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2025.11.0) de [!DNL Cloud Service] es el viernes, 20 de noviembre de 2025. La próxima versión de la funcionalidad (2025.12.0) está planificada para el viernes, 11 de diciembre de 2025.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -46,7 +44,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## Agentes en AEM {#agents-in-aem}
 
-AEM proporciona una serie de agentes que le permiten acelerar la creación de contenido y organizar automáticamente los cambios. Para obtener más información, vea [Información general sobre agentes en AEM](/help/ai-in-aem/agents/overview.md).
+AEM proporciona una serie de agentes que le permiten acelerar la creación de contenido y organizar automáticamente los cambios. Para obtener más información, vea [Información general de agentes](/help/ai-in-aem/agents/overview.md).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -111,7 +109,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Próximas obsolescencias de la API de Java {#java-api-deprecation}
 
-Varias API obsoletas se marcaron para su eliminación el 31 de agosto, y por lo tanto, ya no deben utilizarse como referencia. Recibirá notificaciones del Centro de acciones si se detecta un uso de API obsoleto en el código y, después del 29 de enero, aparecerán avisos durante las compilaciones de Cloud Manager para reforzar la importancia de eliminar el uso. Consulte el [artículo sobre obsolescencia](/help/release-notes/deprecated-removed-features.md#aem-apis) para obtener más detalles, pero, para mayor comodidad, estas API se enumeran a continuación:
+Varias API obsoletas se marcaron para su eliminación el 31 de agosto, y por lo tanto, ya no deben utilizarse como referencia. Recibirá notificaciones del Centro de acciones si se detecta un uso de API obsoleto en el código y, después del 3 de diciembre, aparecerán avisos durante las compilaciones de Cloud Manager para reforzar la importancia de eliminar el uso. Consulte el [artículo sobre obsolescencia](/help/release-notes/deprecated-removed-features.md#aem-apis) para obtener más detalles, pero, para mayor comodidad, estas API se enumeran a continuación:
 
 +++ Expandir para ver las funciones obsoletas de la API de Java
 
@@ -156,7 +154,7 @@ Adobe actualizó los entornos **Stage** y **Production** al tiempo de ejecución
 
 Como se indica en las notas de la versión de abril, los registros Java de AEM deben seguir un formato estándar para garantizar una monitorización de confianza en todos los entornos de clientes. Ya no se admiten las configuraciones de registro personalizadas, como los cambios en el formato de los registros, archivos de salida o niveles de registro predeterminados. Los registros deben permanecer dirigidos a los archivos predeterminados y se deben conservar los niveles de registro predeterminados para el código de producto de AEM. Consulte todos los detalles en el [Artículo de registro](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-A partir del **29 de enero**, se omitirán todas las invalidaciones de registro personalizadas no admitidas. Según nuestro análisis, la mayoría de los clientes no se verán afectados y Adobe se pondrá en contacto directamente con cualquier cliente cuya configuración actual pueda verse afectada.
+A partir del **10 de diciembre**, se omitirán todas las invalidaciones de registro personalizadas no admitidas. Según nuestro análisis, la mayoría de los clientes no se verán afectados y Adobe se pondrá en contacto directamente con cualquier cliente cuya configuración actual pueda verse afectada.
 
 Revise y actualice cualquier proceso descendente que dependa del comportamiento de registro personalizado. Por ejemplo:
 
@@ -198,6 +196,15 @@ La autenticación de Edge le permite restringir el acceso a las páginas de Edge
 
 Si le interesa, envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descripción de su caso de uso y cualquier pregunta que pueda tener.
 
+<!--
+#### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
+
 #### Implementaciones de producción controladas para probar el código antes de aceptar tráfico en directo (programa Beta) {#canary-beta}
 
 Valide una compilación de producción con tráfico de prueba solamente interno antes de exponerla a los usuarios finales. Realice envíos a producción, dirija solo el tráfico controlado (mediante un encabezado especial), monitorice el comportamiento y, a continuación, promocione al tráfico en directo o revierta el proceso, sin afectar a los clientes.
@@ -215,17 +222,17 @@ Nos estamos preparando para lanzar el programa Beta de respuestas de IA y ahora 
 
 Para solicitar participación o recibir actualizaciones, comuníquese con [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
-#### Instantáneas para RDE (Programa Beta) {#rde-snapshot-program}
-
-En la versión beta, los entornos de desarrollo rápido (RDE) ahora admiten una función para tomar una instantánea del estado actual del código y el contenido, que se puede restaurar más adelante. Esto puede resultar útil al sincronizar código que puede ser necesario revertir o al cambiar entre el desarrollo de distintas características. También es posible restaurar solo el contenido mutable como punto de partida conocido para realizar pruebas.
-
-Envíe un correo electrónico a [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) si está interesado en utilizar esta función y proporcionar comentarios sobre ella.
-
-#### Acelerar el desarrollo de AEM con IA (programa Alpha) {#ai-dev-alpha}
+#### Acelerar el desarrollo de AEM con IA (programa Alpha)  {#ai-dev-alpha}
 
 Los equipos de pila Java de AEM utilizan cada vez más el desarrollo asistido por IA en herramientas como Cursor, Claude Code, Visual Studio e IntelliJ para acelerar la entrega de características y mejorar la calidad del código. Estamos recopilando experiencias del mundo real para ayudar a dar forma a las futuras capacidades de IA compatibles con Adobe.
 
 Comparta lo que está funcionando para su equipo (y lo que desea que Adobe proporcione) enviando un correo electrónico a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+
+#### Instantáneas para los RDE (programa Alpha) {#rde-snapshot-program}
+
+En Alpha, los Entornos de desarrollo rápido (RDE) ahora admiten una función para tomar una instantánea del estado actual del código y el contenido, que se puede restaurar más adelante. Esto puede resultar útil al sincronizar código que puede ser necesario revertir o al cambiar entre el desarrollo de distintas características. También es posible restaurar solo el contenido mutable como punto de partida conocido para realizar pruebas.
+
+Envíe un correo electrónico a [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) si tiene interés en ofrecer sus comentarios sobre esta función.
 
 #### Monitorización del rendimiento de las aplicaciones (APM) ampliadas (programa Alpha) {#apm-alpha}
 
