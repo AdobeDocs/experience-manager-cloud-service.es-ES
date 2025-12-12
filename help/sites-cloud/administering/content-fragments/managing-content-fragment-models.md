@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2475'
 ht-degree: 35%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 35%
 Desde la consola de fragmentos de contenido puede administrar los modelos de fragmentos de contenido y, a continuación, [abrir el editor](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) para definir la estructura.
 
 Los modelos de fragmentos de contenido de Adobe Experience Manager (AEM) as a Cloud Service definen la estructura del contenido de sus [fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md). Estos fragmentos se pueden utilizar como base para el contenido sin encabezado o para la creación de páginas.
+
+>[!NOTE]
+>
+>Tenga en cuenta las [Prácticas recomendadas](/help/sites-cloud/administering/content-fragments/overview.md) al trabajar con los modelos de fragmentos de contenido y los fragmentos de contenido.
 
 >[!NOTE]
 >

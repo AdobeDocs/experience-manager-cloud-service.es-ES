@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2819'
-ht-degree: 6%
+source-wordcount: '2793'
+ht-degree: 7%
 
 ---
 
@@ -32,6 +32,10 @@ Este editor proporciona lo siguiente:
 * Capacidad para [ver detalles de la versión](#view-version-history) en el editor. También puede revertir a una versión seleccionada.
 * Capacidad para [ver y abrir referencias principales](#view-parent-references).
 * Una vista jerárquica del fragmento de contenido y sus referencias, usando el [árbol de estructura](#structure-tree).
+
+>[!NOTE]
+>
+>Tenga en cuenta las [Prácticas recomendadas](/help/sites-cloud/administering/content-fragments/overview.md) al trabajar con los modelos de fragmentos de contenido y los fragmentos de contenido.
 
 >[!WARNING]
 >
@@ -89,7 +93,7 @@ En el panel izquierdo puede ver lo siguiente:
 
 * la lista de **[variaciones](#variations)** que se han creado para este fragmento:
    * **Principal** es la variación que está presente cuando se crea por primera vez el fragmento de contenido; puede agregar otras más adelante
-   * puede utilizar Generate Variations(#generate-variations) para utilizar una plantilla basada en mensajes que Adobe ha creado para un caso de uso específico.
+   * puede usar [Generar variaciones](#generate-variations-ai) para usar una plantilla basada en mensajes que Adobe ha creado para un caso de uso específico.
    * también puede [crear una variación](#create-variation)
 * los **campos** dentro del fragmento y sus variaciones:
    * el icono indica [Tipo de datos](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -135,12 +139,6 @@ Desde el editor puede:
 * [Eliminar una variación](#delete-variation)
 
 ### Crear una variación {#create-variation}
-
->[!NOTE]
->
->Las variaciones añaden tiempo de procesamiento a un fragmento de contenido, en el entorno de creación y durante la entrega. Se recomienda mantener el número de variaciones a un mínimo manejable.
->
->Una práctica recomendada es no superar las diez variaciones por fragmento de contenido.
 
 Para crear una variación del fragmento de contenido:
 
@@ -273,7 +271,7 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 
