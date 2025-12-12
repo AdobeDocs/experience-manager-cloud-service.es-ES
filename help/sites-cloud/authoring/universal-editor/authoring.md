@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 87368be0b4c934bb4d4799833a90edfee72348e6
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2625'
 ht-degree: 14%
 
 ---
@@ -75,11 +75,15 @@ Los cambios se guardan automáticamente una vez que el enfoque abandona el campo
 
 #### El panel Propiedades {#properties-rail}
 
-El [panel de propiedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) muestra un elemento para el texto seleccionado. Pulse la entrada para abrir un cuadro de diálogo que presente un lienzo más grande para editar el texto.
+El [panel de propiedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) muestra una entrada para el componente de texto enriquecido seleccionado.
+
+![Componente de texto enriquecido en el panel de propiedades](assets/rich-text-properties-panel.png)
+
+Pulse la entrada para abrir un cuadro de diálogo que presente un lienzo más grande para editar el texto enriquecido.
 
 ![Cuadro de diálogo de edición de texto enriquecido](assets/rich-text-canvas.png)
 
-Pulse o haga clic en **Cancelar** o **Listo** para descartar o guardar los cambios, respectivamente.
+Pulse o haga clic en **Cancelar** o **Listo** para descartar o guardar los cambios, respectivamente. También puede pulsar la tecla escape para guardar los cambios y cerrar el cuadro de diálogo.
 
 #### Opciones de formato de texto enriquecido {#formatting-options}
 
@@ -92,8 +96,15 @@ El editor de texto enriquecido (RTE) del editor universal permite al autor aplic
 * Superíndice
 * Subíndice
 * Lista con viñetas
-* Lista numerada
+   * Utilice la tecla TAB para aplicar sangría y Mayús+Tab para anular la sangría
+* Lista ordenada
+   * Utilice la tecla TAB para aplicar sangría y Mayús+Tab para anular la sangría
 * Vínculo
+* Desvincular
+* Imagen
+* Quitar todo el formato
+
+Las tablas existentes se pueden editar con RTE, pero no se pueden crear nuevas tablas.
 
 El RTE se puede configurar para ocultar opciones o mostrar opciones adicionales según las necesidades de los autores. Consulte el documento [Configuración del RTE para el editor universal](/help/implementing/universal-editor/configure-rte.md) para obtener más información.
 
@@ -212,7 +223,7 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 
 ### Copiar y pegar {#copy-paste}
 
-Puede copiar y pegar componentes que se encuentren dentro de [&#x200B; contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
+Puede copiar y pegar componentes que se encuentren dentro de [ contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
 
 Copiar y pegar pueden estar en la misma pestaña del explorador o entre pestañas del explorador, siempre que las pestañas ya estén abiertas. No puede copiar un elemento y, a continuación, abrir una nueva pestaña del explorador para pegarlo.
 
@@ -230,7 +241,11 @@ Copiar y pegar pueden estar en la misma pestaña del explorador o entre pestaña
 >
 >Use la tecla de acceso directo `Command-C` o `Command-V` para copiar o pegar, respectivamente.
 
+## Opciones de contexto {#context-options}
 
+Cuando realice la edición in situ, el editor ofrecerá opciones relevantes para el contexto con un clic con el botón derecho, como duplicar, eliminar o copiar componentes.
+
+![Menú de opciones de contexto](assets/context-options-menu.png)
 
 ## Vista previa del contenido {#previewing-content}
 

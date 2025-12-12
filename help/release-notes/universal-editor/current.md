@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2025.12.04 del editor universal
-description: Estas son las notas de la versión 2025.12.04 del editor universal.
+title: Notas de la versión 2025.12.12 del editor universal
+description: Estas son las notas de la versión 2025.12.11 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
+source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 57%
+source-wordcount: '323'
+ht-degree: 21%
 
 ---
 
 
-# Notas de la versión 2025.12.04 del editor universal {#release-notes}
+# Notas de la versión 2025.12.12 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 4 de diciembre de 2025.
+Estas son las notas de la versión del editor universal del 12 de diciembre de 2025.
 
 >[!TIP]
 >
@@ -26,16 +26,27 @@ Estas son las notas de la versión del editor universal del 4 de diciembre de 20
 
 ## Novedades {#what-is-new}
 
-* Se deshabilitaron los encabezados de autorización en favor del [inicio de sesión de desarrollador local.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
-* Ahora hay disponible un menú contextual en el [árbol estructurado al hacer clic con el botón secundario.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* Se agregó una clave de acceso directo a [componentes duplicados.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
+* Se ha agregado compatibilidad a las tablas existentes en el [editor de texto enriquecido.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* La tecla de tabulación se ha habilitado para anidar listas en el [editor de texto enriquecido.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* La característica de inicio de sesión para desarrolladores ahora se puede deshabilitar mediante la [metaetiqueta `dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* Ahora, al hacer clic con el botón secundario en la sección de superposición, se muestra un [menú de opciones contextuales.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
+* [La sangría de ámbito](/help/implementing/universal-editor/configure-rte.md#indentation) ahora se admite en el [editor de texto enriquecido.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
-### Nuevo RTE {#new-rte}
+## Funciones de adopción anticipada {#early-adopter}
 
-El nuevo RTE de ProseMirror, que cuenta con un selector de páginas en el cuadro de diálogo de vínculos, ya está disponible en el panel derecho. [Este RTE cuenta con opciones de configuración flexibles.](/help/implementing/universal-editor/configure-rte.md)
+Si le interesa probar las próximas funciones enumeradas a continuación y compartir sus comentarios, envíe un correo electrónico a Customer Success Manager de Adobe desde la dirección de correo electrónico asociada a su Adobe ID.
+
+* Se ha implementado una copia superficial para los fragmentos de contenido.
 
 ## Otras mejoras {#other-improvements}
 
-* Se ha resuelto un problema con RTE, que no se guardaba correctamente en el lienzo.
-* Se ha corregido el recorte del árbol de carpetas del selector de contenido.
-* `componentId` ahora se proporciona durante la acción de agregar.
+* El carril de propiedades ahora se sincroniza cuando varios campos cambian en contexto.
+* El selector de Fragmentos de contenido ahora se abre como se espera en las instancias de AEM 6.5.
+* La tecla escape ahora cierra los cuadros de diálogo en el editor de texto enriquecido.
+* La acción **Quitar componente** ahora solo está disponible cuando se selecciona un componente.
+* El editor de fragmentos de contenido correcto (antiguo o nuevo) ahora se abre en función de la instancia utilizada (si el nombre de host es el patrón de AEM as a Cloud Service, utilice el nuevo editor; de lo contrario, utilice el editor heredado).
+* La validación del filtro se agrega a la acción duplicada.
+* Los títulos largos ahora se truncan en el carril de propiedades.
+* Las matrices de administradores de varios sitios con más de 10 valores ahora se administran correctamente.
+* Los errores de conflicto al crear varios componentes con el mismo nombre ahora se gestionan correctamente.
+* Se ha añadido la administración de matrices de administradores de varios sitios con valores >10.

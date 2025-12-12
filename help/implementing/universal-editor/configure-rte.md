@@ -4,9 +4,9 @@ description: Descubra cómo puede configurar el editor de texto enriquecido (RTE
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
+source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -176,6 +176,44 @@ Las acciones de imagen admiten el ajuste de elementos de imagen para generar un 
 * `wrapInPicture`: `false` (predeterminado) - Generar elementos `<img>` simples
 * `wrapInPicture`: `true`: ajuste de imágenes en `<picture>` elementos para un diseño interactivo
 
+### Configuración de sangría {#indentation}
+
+La sangría tiene una configuración de nivel de función que controla el ámbito del comportamiento de la sangría, además de configuraciones de acción individuales para métodos abreviados y etiquetas.
+
+```json
+{
+  "actions": {
+    // Feature-level configuration
+    "indentation": {
+      "scope": "all"  // Controls what content can be indented (default: "all")
+    },
+
+    // Individual action configurations
+    "indent": {
+      "shortcut": "Tab",           // Custom keyboard shortcut
+      "label": "Increase Indent"   // Custom button label
+    },
+    "outdent": {
+      "shortcut": "Shift-Tab",     // Custom keyboard shortcut
+      "label": "Decrease Indent"   // Custom button label
+    }
+  }
+}
+```
+
+#### Opciones del ámbito de sangría {#indentation-options}
+
+* `scope`: `all` (predeterminado): la sangría o anulación de sangría se aplica a todo el contenido:
+   * Listas: anidar/desanidar elementos de lista
+   * Párrafos y encabezamientos: Aumento/disminución del nivel general de sangría
+* `scope`: `lists` - La sangría o anulación de sangría solo se aplica a los elementos de la lista:
+   * Listas: anidar/desanidar elementos de lista
+   * Párrafos y encabezados: sin sangría (botones desactivados para estos)
+
+>[!NOTE]
+>
+>El anidamiento de listas mediante las teclas Tab/Mayús+Tab funciona independientemente de la configuración general de sangría.
+
 ### Otras acciones {#other}
 
 Todas las demás acciones admiten la personalización básica. Las secciones disponibles son las siguientes:
@@ -307,6 +345,35 @@ Use `wrapInParagraphs: true` cuando necesite:
 * Varios párrafos por elemento de lista
 * Estilo coherente a nivel de bloque
 
+### `wrapInPicture`{#wrapinpicture}
+
+La opción `wrapInPicture` para imágenes controla la estructura de HTML generada para el contenido de la imagen.
+
+#### wrapInPicture: false (predeterminado) {#wrapinpicture-false}
+
+```html
+<img src="image.jpg" alt="Description" />
+```
+
+#### wrapInPicture: true {#wrapinpicture-true}
+
+```html
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+```
+
+Use `wrapInPicture: true` cuando necesite:
+
+* Compatibilidad con imágenes interactivas con `<source>` elementos.
+* Funciones de dirección artística.
+* Protección de futuro para funciones de imagen avanzadas.
+* Estructura coherente del elemento de imagen.
+
+>[!NOTE]
+>
+>Cuando `wrapInPicture: true` está habilitado, las imágenes se pueden mejorar con `<source>` elementos adicionales para diferentes consultas y formatos de medios, lo que las hace más flexibles para un diseño interactivo.
+
 ### Opciones de destino de vínculo {#link-target}
 
 La opción `hideTarget` de los vínculos controla si el atributo `target` se incluye en los vínculos generados y si el cuadro de diálogo para la creación de vínculos incluye un campo para la selección de destinos.
@@ -318,11 +385,60 @@ La opción `hideTarget` de los vínculos controla si el atributo `target` se inc
 <a href="https://example.com" target="_blank">External link</a>
 ```
 
-### `hideTarget: true` {#hideTarget-true}
+#### `hideTarget: true` {#hideTarget-true}
 
 ```html
 <a href="https://example.com">Link text</a>
 ```
+
+### Desactivación de vínculos en imágenes {#disableforimages}
+
+La opción `disableForImages` de vínculos controla si los usuarios pueden crear vínculos en imágenes y elementos de imagen. Esto se aplica tanto a los elementos `<img>` en línea como a los elementos `<picture>` de nivel de bloque.
+
+#### `disableForImages: false` (predeterminada) {#disableforimages-false}
+
+Los usuarios pueden seleccionar imágenes y envolverlas en vínculos.
+
+```html
+<!-- Inline image with link -->
+<a href="https://example.com">
+  <img src="image.jpg" alt="Description" />
+</a>
+
+<!-- Block-level picture with link -->
+<a href="https://example.com">
+  <picture>
+    <img src="image.jpg" alt="Description" />
+  </picture>
+</a>
+```
+
+#### disableForImages: true {#disableforimages-true}
+
+El botón de vínculo se desactiva cuando se selecciona una imagen. Los usuarios solo pueden crear vínculos en el contenido de texto.
+
+```html
+<!-- Images remain standalone without links -->
+<img src="image.jpg" alt="Description" />
+
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+
+<!-- Links work normally on text -->
+<a href="https://example.com">Link text</a>
+```
+
+Utilice `disableForImages: true` cuando desee:
+
+* Mantenga la coherencia visual evitando las imágenes vinculadas.
+* Simplifique la estructura de contenido separando imágenes de la navegación.
+* Aplique políticas de contenido que restrinjan la vinculación de imágenes.
+* Reduzca la complejidad de la accesibilidad en su contenido.
+
+>[!NOTE]
+>
+>Esta configuración solo afecta a la capacidad de crear nuevos vínculos en imágenes. No elimina los vínculos existentes de las imágenes del contenido.
 
 ### Opciones de etiqueta {#tag}
 

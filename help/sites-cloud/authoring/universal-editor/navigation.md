@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6efb04369109fcae638b699e1daff09624224098
+source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
 workflow-type: tm+mt
-source-wordcount: '1853'
+source-wordcount: '1871'
 ht-degree: 17%
 
 ---
@@ -78,7 +78,7 @@ La barra de navegación superior del Experience Platform siempre está presente 
 
 ![El encabezado de Experience Cloud](assets/experience-cloud-header.png)
 
-Para obtener más información sobre la barra de navegación superior de Experience Platform, consulte la [guía de la interfaz de usuario de Adobe Experience Platform](https://experienceleague.adobe.com/es/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Para obtener más información sobre la barra de navegación superior de Experience Platform, consulte la [guía de la interfaz de usuario de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Cuenta {#user-properties}
 
@@ -224,6 +224,8 @@ El editor universal ofrece una experiencia de creación personalizable y ampliab
 El editor ocupa la mayor parte de la ventana y es donde se procesa la página especificada en [la barra de ubicación](#location-bar).
 
 ![Editor](assets/editor.png)
+
+De manera predeterminada, el editor se abre para que pueda [crear contenido](/help/sites-cloud/authoring/universal-editor/authoring.md) local o mediante el panel [propiedades.](#properties-rail)
 
 Si el editor se encuentra en [modo de vista previa](#preview-mode), el contenido se podrá navegar y podrá seguir los vínculos, pero no podrá editar el contenido.
 
