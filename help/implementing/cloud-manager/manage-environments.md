@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a254afed91dce2cd58df8762a6dbe39680fe9e5c
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2464'
 ht-degree: 37%
 
 ---
@@ -28,9 +28,11 @@ Un usuario con los permisos necesarios puede crear los siguientes tipos de entor
 | **Desarrollo rápido** | Un entorno de desarrollo rápido (RDE) permite a los desarrolladores implementar y revisar cambios rápidamente. Esta capacidad reduce el tiempo necesario para probar características que ya se han validado en un entorno de desarrollo local. Consulte [la documentación del entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obtener detalles acerca de cómo utilizar un RDE. |
 | **Entorno de prueba especializado** | Los entornos de prueba especializados proporcionan un espacio dedicado para validar funciones en condiciones próximas a la producción, lo que resulta ideal para pruebas de resistencia y comprobaciones avanzadas previas a la implementación. Ver [Agregar un entorno de prueba especializado](/help/implementing/cloud-manager/specialized-test-environment.md) |
 
+<!-- 
 >[!NOTE]
 >
->Actualmente, la característica **Entorno de prueba especializado** solo está disponible a través del programa beta privado. Para registrarse en la versión beta privada, consulte [Entorno de prueba especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>The **Specialized Testing Environment** feature is currently available only through the private beta program. To sign up for the private beta, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+-->
 
 Las capacidades de los entornos individuales dependen de las soluciones habilitadas en el [programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) del entorno.
 
@@ -308,7 +310,7 @@ Se abre una nueva pestaña en el explorador con la página de inicio de sesión 
 
 Solo un usuario con la función **Desarrollador** tendrá acceso a la **Consola de desarrollador**. Sin embargo, para los programas de zonas protegidas, cualquier usuario con acceso a la zona protegida tiene acceso a **Developer Console**.
 
-Consulte [Entornos de zona protegida en hibernación y cancelación de la hibernación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obtener más información.
+Consulte [Entornos de zona protegida en hibernación y cancelación de la hibernación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obtener más información.
 
 Esta opción también está disponible en la ficha **Entorno** de la ventana **Información general** al hacer clic en el ![icono Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de un entorno individual.
 

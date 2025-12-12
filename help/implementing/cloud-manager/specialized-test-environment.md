@@ -3,28 +3,31 @@ title: Añadir un entorno de prueba especializado
 description: Descubra cómo los entornos de prueba especializados en Cloud Manager proporcionan un espacio dedicado para validar funciones en condiciones casi de producción, ideal para pruebas de estrés y comprobaciones avanzadas previas a la implementación.
 feature: Cloud Manager, Developing
 role: Admin, Developer
-badge: label="Beta privada" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 837f1d0eb0bd0f8cf8c0e283db823255f4e53ae1
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 11%
+source-wordcount: '522'
+ht-degree: 12%
 
 ---
 
 # Añadir un entorno de prueba especializado{#add-special-test-enviro}
 
+<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+-->
+
 >[!NOTE]
 >
->&#x200B;>La función descrita en este artículo solo está disponible a través del programa beta privado. Para registrarse en la versión beta privada, consulte [Entorno de prueba especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>Ya se pueden adquirir entornos de prueba especializados. Póngase en contacto con su representante de Adobe para realizar un pedido.
 
-El Entorno de prueba especializado, o DevXL, es un nuevo tipo de entorno de Cloud Manager que puede crear. Está diseñado para admitir casos de uso avanzados, como las Pruebas de aceptación de usuarios (UAT) y la validación de rendimiento. A diferencia de los entornos tradicionales de desarrollo, desarrollo rápido o ensayo, los entornos DevXL funcionan fuera de la canalización de implementación de producción. Por lo tanto, ofrecen una mayor flexibilidad a la vez que mantienen un aislamiento estricto para evitar interferencias con los flujos de trabajo de producción.
 
-DevXL está diseñado para reflejar el tamaño, la escalabilidad y las configuraciones de un entorno de ensayo típico. Este enfoque garantiza que las pruebas realizadas en DevXL puedan proporcionar una perspectiva realista sobre cómo funcionan el código y el contenido en condiciones similares a la producción. El entorno también admite la copia directa de contenido desde Producción o Ensayo. También mantiene la paridad con los entornos de desarrollo en términos de flujos de trabajo de implementación, controles de acceso y configuraciones de red.
+El Entorno de prueba especializado es un nuevo tipo de entorno de Cloud Manager que puede crear. Está diseñado para admitir casos de uso avanzados, como las Pruebas de aceptación de usuarios (UAT) y la validación de rendimiento. A diferencia de los entornos tradicionales de desarrollo, desarrollo rápido o ensayo, los entornos de prueba especializada funcionan fuera de la canalización de implementación de producción. Por lo tanto, ofrecen una mayor flexibilidad a la vez que mantienen un aislamiento estricto para evitar interferencias con los flujos de trabajo de producción.
 
-## Características y configuraciones clave {#key-features}
+Un entorno de prueba especializado se crea para reflejar el tamaño, la escalabilidad y las configuraciones de un entorno de ensayo típico. Este método garantiza que las pruebas realizadas en el entorno de prueba especializado puedan proporcionar una perspectiva realista del rendimiento del código y el contenido en condiciones similares a las de producción. El entorno también admite la copia directa de contenido desde Producción o Ensayo. También mantiene la paridad con los entornos de desarrollo en términos de flujos de trabajo de implementación, controles de acceso y configuraciones de red.
 
-| Categoría | Comportamiento de DevXL |
+## Características y configuraciones clave de un entorno de prueba especializado {#key-features}
+
+| Categoría | Comportamiento |
 | --- | --- |
 | Función | UAT y pruebas de rendimiento. |
 | Tipo de canalización | No está en la canalización de producción. |
@@ -38,7 +41,7 @@ DevXL está diseñado para reflejar el tamaño, la escalabilidad y las configura
 | `IP Allow List` | Igual que el entorno de desarrollo. |
 | Redes | Igual que el entorno de desarrollo (servicios, nombre de dominio, certificados SSL, red avanzada). |
 
-Ver también [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md)
+Consulte también [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Añadir un entorno de prueba especializado {#add-specialized-testing-environment}
 
@@ -55,7 +58,7 @@ Para agregar o editar un entorno, un usuario debe ser miembro del rol **Propieta
    * En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, en la tarjeta **Entornos**, haga clic en **Agregar entorno**.
 Si la opción **Agregar entorno** está atenuada (deshabilitada), puede deberse a la falta de permisos o a que depende de los recursos con licencia.
 
-   ![Tarjeta Entornos](assets/no-environments.png)
+     ![Tarjeta Entornos](assets/no-environments.png)
 
    * En el panel lateral izquierdo, haga clic en ![Icono de datos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Entornos** y luego, en la página Entornos, cerca de la esquina superior derecha, haga clic en **Agregar entorno**.
 
@@ -66,10 +69,16 @@ Si la opción **Agregar entorno** está atenuada (deshabilitada), puede deberse 
    * Haga clic en **Entorno de prueba especializado**.
    * Proporcione un entorno **Name**. El nombre del entorno no se puede cambiar una vez creado el entorno.
    * (Opcional) Proporcione una **Descripción** para el entorno.
-   * Seleccione una **región principal** en la lista desplegable. Una vez creada, la región principal del entorno DevXL (por ejemplo, *Estados Unidos (oeste de EE. UU.)*) está bloqueada y no se puede cambiar.
+   * Seleccione una **región principal** en la lista desplegable. Una vez creada, la región principal del entorno de pruebas especializadas (por ejemplo, *Reino Unido (sur)*) está bloqueada y no se puede cambiar.
 
-   ![Cuadro de diálogo Añadir entorno con el botón de opción Entorno de prueba especializado seleccionado](assets/specialized-test-environment.png)
+     ![Cuadro de diálogo Añadir entorno con el botón de opción Entorno de prueba especializado seleccionado](assets/specialized-test-environment.png)
 
 1. Haga clic en **Guardar**.
 
    La página **Información general** ahora muestra su nuevo entorno en la tarjeta **Entornos**. Ahora puede configurar canalizaciones para su nuevo entorno.
+
+## Recursos adicionales {#additional-resources}
+
+* Vídeo: [Explicación de los tipos de entorno en AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md)
+
