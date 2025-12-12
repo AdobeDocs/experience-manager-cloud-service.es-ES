@@ -79,6 +79,6 @@ Si la opción **Agregar entorno** está atenuada (deshabilitada), puede deberse 
 
 ## Recursos adicionales {#additional-resources}
 
-* Vídeo: [Explicación de los tipos de entorno en AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* Vídeo: [Explicación de los tipos de entorno en AEM Cloud Manager](https://experienceleague.adobe.com/es/perspectives/cloud-manager-environment-types)
 * [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md)
 
