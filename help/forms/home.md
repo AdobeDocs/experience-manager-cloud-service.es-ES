@@ -19,7 +19,7 @@ ht-degree: 87%
 <div class="version-selector">
   <p><strong>¿Busca documentación para una versión diferente?</strong></p>
   <ul>
-    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">Documentación de AEM 6.5 Forms</a></li>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html?lang=es">Documentación de AEM 6.5 Forms</a></li>
     <li><strong>AEM Forms as a Cloud Service</strong> (actual)</li>
   </ul>
 </div>
