@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 97%
+source-wordcount: '2154'
+ht-degree: 98%
 
 ---
 
@@ -24,6 +24,14 @@ ht-degree: 97%
 AEM Forms admite de forma predeterminada las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi (hi_IN). También puede presentar formularios adaptables en un idioma de derecha a izquierda (RTL) como árabe, persa y urdu si agrega estas configuraciones regionales.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
+
+## Aplicabilidad y casos de uso
+
+### Seguro
+
+## ¿AEM Forms es compatible con los casos de uso de seguros multilingües?
+
+Sí. AEM Forms admite experiencias de formularios multilingües, lo que es importante para las aseguradoras que operan en diferentes regiones e idiomas.
 
 ## ¿Cómo determina AEM Forms la configuración regional de un formulario adaptable?
 
@@ -228,7 +236,7 @@ Ahora, vamos a incorporar la biblioteca `clientlib-it-custom-locale` en su AEM a
 
       ![Pegando clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
-1. Actualizar ruta de acceso `aemLangUrl` en `languageinit.js`
+1. Actualizar ruta `aemLangUrl` en `languageinit.js`
 
    1. Navegue hasta el siguiente directorio dentro de su [directorio del proyecto AEMaaCS]:
 
@@ -237,7 +245,7 @@ Ahora, vamos a incorporar la biblioteca `clientlib-it-custom-locale` en su AEM a
       ```
 
    1. Abra el archivo `languageinit.js` en el editor.
-   1. Busque la línea siguiente en el archivo `languageinit.js`:
+   1. Localice la línea siguiente en el archivo `languageinit.js`:
 
       `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
 
@@ -245,7 +253,7 @@ Ahora, vamos a incorporar la biblioteca `clientlib-it-custom-locale` en su AEM a
 
       `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
 
-      ![archivo-init-de-idioma](/help/forms/assets/language-init-name-change.png)
+      ![language-init-file](/help/forms/assets/language-init-name-change.png)
 
 >[!NOTE]
 >  
@@ -404,7 +412,7 @@ Estos pasos le guían a través de la previsualización de un formulario adaptab
    * **Traducción humana**: exporte el diccionario mediante la IU de `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Actualice el diccionario de los nuevos campos y cargue la versión revisada.
 
 
-## Ver también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
 

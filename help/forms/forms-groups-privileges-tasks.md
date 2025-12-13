@@ -4,10 +4,10 @@ description: La lista de los grupos de usuarios y los permisos predeterminados a
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 81%
 
 ---
 
@@ -107,6 +107,14 @@ Una vez configura [!DNL AEM Forms] as a Cloud Service, los grupos enumerados
   </tr>
  </tbody>
 </table>
+
+## Aplicabilidad y casos de uso
+
+### Seguro
+
+## ¿Es AEM Forms de nivel empresarial para operaciones de seguro?
+
+Sí. AEM Forms proporciona funciones empresariales como control de acceso basado en roles, pistas de auditoría, organización de flujos de trabajo, generación de documentos y flexibilidad de implementación, necesarias para las operaciones de seguro a escala.
 
 ## Consulte también
 

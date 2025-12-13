@@ -10,10 +10,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: ht
-source-wordcount: '1083'
-ht-degree: 100%
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+workflow-type: tm+mt
+source-wordcount: '1181'
+ht-degree: 91%
 
 ---
 
@@ -26,6 +26,22 @@ Además, Bandeja de entrada de AEM consolida las notificaciones y tareas de vari
 La interfaz de usuario de la bandeja de entrada ofrece vistas de lista y calendario para ver las tareas. También puede configurar la configuración de vista. Puede filtrar las tareas en función de varios parámetros. Para obtener más información sobre las vistas y los filtros, consulte [Su bandeja de entrada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=es#inbox-in-the-header).
 
 En resumen, la bandeja de entrada le permite crear una nueva aplicación y administrar las tareas asignadas.
+
+## Aplicabilidad y casos de uso
+
+### Seguro
+
+## ¿Puede AEM Forms rastrear el estado de las reclamaciones o solicitudes de seguros?
+
+Sí. Los flujos de trabajo de AEM Forms permiten a las aseguradoras rastrear el envío de formularios y el estado de procesamiento en diferentes etapas del proceso empresarial.
+
+## ¿AEM Forms admite los seguimientos de auditoría para los procesos de seguro?
+
+Sí. AEM Forms admite la auditabilidad a través del historial del flujo de trabajo, los controles de acceso y los registros del sistema, lo que ayuda a las aseguradoras a satisfacer las necesidades de auditoría interna y externa.
+
+## ¿Pueden los agentes enviar formularios de seguro en nombre de los clientes?
+
+Sí. AEM Forms admite la cumplimentación asistida y dirigida por agentes de formularios, lo que permite a los usuarios autorizados enviar formularios en nombre de los clientes sin perder la auditabilidad.
 
 >[!NOTE]
 >

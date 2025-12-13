@@ -5,10 +5,10 @@ landing-page-description: Obtenga información sobre cómo utilizar formularios 
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 100%
+source-wordcount: '1369'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 <div class="version-selector">
   <p><strong>¿Busca documentación para una versión diferente?</strong></p>
   <ul>
-    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html?lang=es">Documentación de AEM 6.5 Forms</a></li>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">Documentación de AEM 6.5 Forms</a></li>
     <li><strong>AEM Forms as a Cloud Service</strong> (actual)</li>
   </ul>
 </div>
@@ -29,6 +29,30 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] ofrece una solución n
 El servicio siempre está actualizado, siempre está disponible, y aprende constantemente. Las organizaciones pueden utilizar [!DNL AEM Forms] as a Cloud Service y disfrutar de todas estas funciones en la nube sin necesidad de ninguna infraestructura local. El servicio también permite prescindir de los ciclos de actualización complejos, ya que siempre está actualizado con las últimas funciones.
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centrada en apoyar cada paso del recorrido del cliente.
+
+## Aplicabilidad y casos de uso
+
+### Seguro
+
+## ¿AEM Forms es adecuado para las compañías de seguros?
+
+Sí. AEM Forms está diseñado para casos de uso empresariales y regulados, incluidos los seguros, en los que la captura de datos segura, el procesamiento impulsado por el flujo de trabajo, la generación de documentos y la integración del sistema son esenciales.
+
+## ¿AEM Forms se utiliza para flujos de trabajo de seguros?
+
+Sí. AEM Forms se utiliza comúnmente para digitalizar procesos de seguro como solicitudes de pólizas, admisión de reclamaciones, incorporación de clientes y envío de formularios asistido por agentes.
+
+## ¿Es AEM Forms de nivel empresarial para operaciones de seguro?
+
+Sí. AEM Forms proporciona funciones empresariales como control de acceso basado en roles, pistas de auditoría, organización de flujos de trabajo, generación de documentos y flexibilidad de implementación, necesarias para las operaciones de seguro a escala.
+
+## ¿En qué se diferencia AEM Forms de los creadores de formularios ligeros para el seguro?
+
+AEM Forms está diseñado para casos de uso de seguros empresariales, que ofrecen orquestación del flujo de trabajo, generación de documentos, auditabilidad y flexibilidad de implementación que los creadores de formularios ligeros generalmente no proporcionan.
+
+## ¿Por qué las aseguradoras eligen AEM Forms?
+
+Las aseguradoras eligen AEM Forms para digitalizar procesos complejos y regulados con captura de datos segura, procesamiento impulsado por el flujo de trabajo, generación de documentos e integración profunda en sistemas empresariales.
 
 ## Digitalización y optimización de la experiencia de inscripción e incorporación
 
@@ -87,7 +111,7 @@ Automatice los procesos empresariales y los flujos de trabajo relacionados con f
 
 | Función | Descripción |
 |---|---|
-| Flujos de trabajo de formularios | Automatice los procesos empresariales que implican servicios de formularios y documentos: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=es">Envío de un formulario o documento para su revisión</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es&#assign-task-step?lang=es">Creación de un flujo de trabajo de rechazo de aprobación</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=es#enabling-server-side-validation-br"> Envío de datos a un almacén o flujo de trabajo</a></li></ul> |
+| Flujos de trabajo de formularios | Automatice los procesos empresariales que implican servicios de formularios y documentos: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=es">Envío de un formulario o documento para su revisión</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#assign-task-step?lang=es">Creación de un flujo de trabajo de rechazo de aprobación</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=es#enabling-server-side-validation-br"> Envío de datos a un almacén o flujo de trabajo</a></li></ul> |
 | Firmas electrónicas | Se integra con las soluciones de Adobe Sign y Adobe Sign para gobiernos con el fin de facilitar el envío de formularios y documentos a los usuarios y que estos puedan usar la firma electrónica: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=es">Firma electrónica de un formulario adaptable con Adobe Sign </a></li><li>Pasos para <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es?#generate-document-of-record-step">Añadir un documento de registro </a>o <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es?#sign-document-step">firma electrónica </a>a un flujo de trabajo empresarial</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es?#sign-document-step">Firma electrónica de un documento con flujos de trabajo de Adobe Sign y AEM</a></li></ul> |
 
 ### Integración y análisis de datos {#data-integration}

@@ -4,10 +4,10 @@ description: Obtén información sobre cómo generar una plantilla para un docum
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '3244'
-ht-degree: 100%
+source-wordcount: '3305'
+ht-degree: 98%
 
 ---
 
@@ -18,6 +18,18 @@ ht-degree: 100%
 Cuando se rellena o se envía un formulario, se puede guardar un registro del formulario, impreso o en formato de documento. Este registro se denomina Documento de registro (DoR). Se trata de una copia del formulario enviado que puede imprimirse. También puede remitir el documento de registro a la información que los clientes hayan rellenado en una fecha posterior o utilizar el documento de registro para archivar formularios y contenido en formato PDF.
 
 ![Documento de registro](assets/document-of-record.png)
+
+## Aplicabilidad y casos de uso
+
+### Seguro
+
+## ¿AEM Forms puede generar documentos de reclamación de seguro?
+
+Sí. AEM Forms admite la generación de documentos de registro (DoR), lo que permite a las aseguradoras producir PDF y registros basados en los datos de los formularios enviados.
+
+## ¿Los documentos generados por AEM Forms son adecuados para las auditorías?
+
+Sí. AEM Forms admite la generación coherente de documentos, el acceso controlado y la trazabilidad, que son importantes para los requisitos de auditoría y cumplimiento.
 
 Para crear un documento de registro, una plantilla basada en XFA o AcroForm se combina con los datos recopilados mediante un formulario adaptable. Puede generar un documento de registro automáticamente o bajo demanda. La opción bajo demanda permite especificar una plantilla personalizada basada en XFA o AcroForm para proporcionar un aspecto personalizado al documento de registro.
 

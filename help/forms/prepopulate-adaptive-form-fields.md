@@ -5,10 +5,10 @@ topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '2007'
-ht-degree: 100%
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+workflow-type: tm+mt
+source-wordcount: '2044'
+ht-degree: 98%
 
 ---
 
@@ -26,6 +26,14 @@ ht-degree: 100%
 ## Introducción {#introduction}
 
 Puede rellenar previamente los campos de un formulario adaptable mediante los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos están rellenos previamente. Para rellenar previamente los datos en un formulario adaptable, haga que los datos de usuario estén disponibles como un XML/JSON de relleno en el formato que se adhiera a la estructura de datos de relleno previo del formulario adaptable.
+
+## Aplicabilidad y casos de uso
+
+### Seguro
+
+## ¿AEM Forms puede rellenar previamente los datos de solicitud de seguro?
+
+Sí. AEM Forms admite el rellenado previo de campos de formulario mediante fuentes de datos back-end, lo que permite a las aseguradoras reutilizar los datos de clientes o pólizas existentes y reducir la entrada manual.
 
 ## Estructura de los datos de relleno previo {#the-prefill-structure}
 
@@ -361,7 +369,7 @@ El paquete de plantillas (paquete de servicio de relleno previo de muestra) cont
 1. En el código, establezca el siguiente valor:
 
    - `nodePath:` La variable de ruta del nodo que señala a la ubicación del repositorio crx contiene la ruta del archivo de datos (relleno previo). Por ejemplo, /content/prefilldata.xml
-   - `label:` El parámetro Etiqueta especifica el nombre del servicio para mostrar. Por ejemplo, Servicio de relleno previo predeterminado
+   - `label:` El parámetro Etiqueta especifica el nombre para mostrar del servicio. Por ejemplo, Servicio de relleno previo predeterminado
 
 1. Guarde y cierre el archivo `Prefill.java`.
 1. Agregue el paquete `AEM Forms Client SDK` a la ruta de la versión del proyecto de las plantillas.
@@ -392,4 +400,4 @@ You can configure the [!DNL AEM Forms] server to perform the data merge action a
   * To disable, run the following cURL command:
     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->

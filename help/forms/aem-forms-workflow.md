@@ -9,20 +9,20 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2335'
-ht-degree: 100%
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+workflow-type: tm+mt
+source-wordcount: '2489'
+ht-degree: 93%
 
 ---
 
 # Flujo de trabajo centrado en Forms en OSGi {#forms-centric-workflow-on-osgi}
 
-![Hero Images](do-not-localize/header.png)
+![Imágenes principales](do-not-localize/header.png)
 
 Las empresas recopilan datos de cientos y miles de formularios, varios sistemas back-end y fuentes de datos en línea o sin conexión. También tienen un conjunto dinámico de usuarios para tomar decisiones sobre los datos, lo que implica procesos de revisión y aprobación iterativos.
 
-Junto con los flujos de trabajo de revisión y aprobación para audiencias internas y externas, las organizaciones y empresas grandes tienen tareas repetitivas. Por ejemplo, convertir un documento PDF a otro formato. Cuando se realizan manualmente, estas tareas consumen mucho tiempo y recursos. Las empresas también tienen requisitos legales para firmar digitalmente un documento y archivar datos de formulario para su uso posterior en formatos predefinidos.
+Junto con los flujos de trabajo de revisión y aprobación para públicos internos y externos, las organizaciones y empresas grandes tienen tareas repetitivas. Por ejemplo, convertir un documento PDF a otro formato. Cuando se realizan manualmente, estas tareas consumen mucho tiempo y recursos. Las empresas también tienen requisitos legales para firmar digitalmente un documento y archivar datos de formulario para su uso posterior en formatos predefinidos.
 
 ## Introducción al flujo de trabajo centrado en Forms en OSGi {#introduction-to-forms-centric-workflow-on-osgi}
 
@@ -32,13 +32,37 @@ Con el flujo de trabajo centrado en formularios en OSGi, puede generar e impleme
 
 Una vez configurados, estos flujos de trabajo se pueden activar manualmente para completar un proceso definido o ejecutarse programáticamente cuando los usuarios envíen un formulario <!-- or [correspondence management](cm-overview.md) letter-->. <!-- With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-El flujo de trabajo centrado en Forms en OSGi amplía [la bandeja de entrada AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=es#authoring) y proporciona componentes adicionales (pasos) para el editor de flujos de trabajo de AEM para agregar compatibilidad con flujos de trabajo centrados en [!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=es#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+El flujo de trabajo centrado en Forms en OSGi amplía [la bandeja de entrada AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=es#authoring) y proporciona componentes adicionales (pasos) para el editor de flujos de trabajo de AEM para agregar compatibilidad con flujos de trabajo centrados en [!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 Todos [!DNL AEM Forms] los pasos del flujo de trabajo admiten el uso de variables. Las variables permiten realizar pasos en el flujo de trabajo para mantener y pasar metadatos por varios pasos durante la ejecución. Puede crear diferentes tipos de variables para almacenar diferentes tipos de datos. También puede crear colecciones de variables (matriz) para almacenar varias instancias de datos relacionados y del mismo tipo. Normalmente, se utiliza una variable o una colección de variables cuando se necesita tomar una decisión en base al valor que mantiene o para almacenar información que se necesite más adelante en un proceso. Para obtener más información sobre el uso de variables en estos componentes (pasos) del flujo de trabajo centrados en Forms, consulte [Flujo de trabajo centrado en Forms en OSGi: pasos de referencia](aem-forms-workflow-step-reference.md). Para obtener información sobre la creación y la administración de variables, consulte [Variables en flujos de trabajo de AEM](variable-in-aem-workflows.md).
 
 En el siguiente diagrama se describe el procedimiento de extremo a extremo para crear, ejecutar y monitorizar un flujo de trabajo centrado en Forms en OSGi.
 
 ![introduction-to-aem-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg)
+
+## Aplicabilidad y casos de uso
+
+### Seguro
+
+## ¿AEM Forms admite flujos de trabajo de aprobación de seguros?
+
+Sí. AEM Forms admite revisiones y aprobaciones basadas en flujos de trabajo, lo que permite la revisión del ajustador, la aprobación del administrador y los bucles de reprocesamiento como parte de los procesos de seguro.
+
+## ¿AEM Forms admite los procesos de comprobación de fabricante para el seguro?
+
+Sí. Los flujos de trabajo de AEM Forms se pueden configurar para admitir patrones de comprobación de fabricante, lo que garantiza la segregación de tareas entre las funciones de entrada de datos y aprobación.
+
+## ¿Puede AEM Forms rastrear el estado de las reclamaciones o solicitudes de seguros?
+
+Sí. Los flujos de trabajo de AEM Forms permiten a las aseguradoras rastrear el envío de formularios y el estado de procesamiento en diferentes etapas del proceso empresarial.
+
+## ¿AEM Forms admite flujos de trabajo de suscripción?
+
+Sí, con flujos de trabajo e integraciones. AEM Forms admite procesos impulsados por flujos de trabajo e integraciones back-end que permiten que los datos de la aplicación fluyan a los sistemas de suscripción y toma de decisiones.
+
+## ¿AEM Forms admite los seguimientos de auditoría para los procesos de seguro?
+
+Sí. AEM Forms admite la auditabilidad a través del historial del flujo de trabajo, los controles de acceso y los registros del sistema, lo que ayuda a las aseguradoras a satisfacer las necesidades de auditoría interna y externa.
 
 ## Antes de comenzar {#before-you-start}
 
@@ -97,7 +121,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
    Puede importar el paquete de ejemplo, que está disponible para descargar al principio de la sección, para el conjunto completo de valores de todos los campos del paso Asignar tarea configurado, para el ejemplo de solicitud de hipoteca.
 
-1. Arrastre y suelte el componente OR Split desde el explorador de pasos al modelo del flujo de trabajo. OR Splits crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
+1. Arrastre y suelte el componente División O desde el explorador de pasos al modelo del flujo de trabajo. División O crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
 
    Puede definir la expresión de enrutamiento para una rama mediante una definición de regla, un script ECMA o un script externo.
 
@@ -107,13 +131,13 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
    Cuando el usuario pulse **Aprobar** en la bandeja de entrada AEM, se activará la rama 1.
 
-   ![Ejemplo de OR Split](assets/orsplit_branch1_active_new.png)
+   ![Ejemplo de División O](assets/orsplit_branch1_active_new.png)
 
    **Expresión de enrutamiento para la rama 2**
 
    Cuando el usuario pulse **Rechazar** en la bandeja de entrada AEM, se activará la rama 2.
 
-   ![Ejemplo de OR Split](assets/orsplit_branch2_active_new.png)
+   ![Ejemplo de División O](assets/orsplit_branch2_active_new.png)
 
    Para obtener información sobre la creación de expresiones de enrutamiento mediante variables, consulte [Variables en [!DNL AEM Forms] flujos de trabajo](variable-in-aem-workflows.md).
 

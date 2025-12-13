@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
-workflow-type: ht
-source-wordcount: '2663'
-ht-degree: 100%
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+workflow-type: tm+mt
+source-wordcount: '2720'
+ht-degree: 97%
 
 ---
 
@@ -41,6 +41,18 @@ Las API de comunicaciones ofrecen un conjunto completo de funcionalidades de pro
 | Genere documentos personalizados combinando plantillas con datos en varios formatos, incluidos los formatos PDF y de impresión. | Combine, reorganice y valide documentos PDF mediante programación para crear nuevos paquetes de documentos. | Extraiga propiedades, metadatos y contenido de documentos PDF para un procesamiento posterior. | Convierta documentos entre formatos, incluida la validación de la conformidad con PDF/A para las necesidades de archivo. | Aplique firmas digitales, certificación y cifrado para asegurar y proteger documentos. |
 
 La [documentación de referencia de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) ofrece información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios que ofrecen las API. La documentación de referencia de la API también está disponible en formato YAML. Puede descargar el archivo YAML y cargarlo en Postman para comprobar la funcionalidad de las API.
+
+## Aplicabilidad y casos de uso
+
+### Seguro
+
+## ¿Puede AEM Forms generar documentos de póliza de seguro?
+
+Sí. AEM Forms puede generar documentos relacionados con directivas mediante plantillas y datos estructurados capturados mediante formularios.
+
+## ¿AEM Forms puede gestionar operaciones de seguro a escala?
+
+Sí. Cuando se implementa mediante arquitecturas recomendadas en Adobe Managed Services o en la nube privada, AEM Forms admite envíos de formularios de gran volumen y cargas de trabajo a escala empresarial.
 
 ## Generación de documentos
 
@@ -129,7 +141,7 @@ Figura: Dividir un documento fuente basado en marcadores en varios documentos
 El servicio de extracción de documentos le permite obtener las propiedades de un documento PDF, como sus derechos de uso, las propiedades de PDF y los metadatos. Las funciones de extracción de documentos son:
 
 * Obtiene las propiedades de un documento PDF, como si el PDF tuviera datos adjuntos, comentarios, su versión de Acrobat y mucho más.
-* Extraer los derechos de uso activados en un documento PDF: los usuarios recuperan los derechos de uso activados o desactivados en un documento PDF para la extensibilidad de Adobe Acrobat Reader.
+* Extraer los derechos de uso habilitados en un documento PDF: los usuarios recuperan los derechos de uso habilitados o deshabilitados en un documento PDF para la extensibilidad de Adobe Acrobat Reader.
 * Obtener información de metadatos presente en un documento PDF: los metadatos son información sobre el documento (a diferencia del contenido del documento, como texto y gráficos). Extensible Metadata Platform (XMP) de Adobe es un estándar para administrar metadatos de documentos. El servicio Utilidades de XMP puede recuperar metadatos de documentos PDF y exportar los metadatos de XMP a documentos PDF.
 
 La [documentación de referencia de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) ofrece información detallada sobre todos los parámetros, los métodos de autenticación y los servicios que ofrecen las API. La documentación de referencia de la API también está disponible en formato YAML. Puede descargar el archivo YAML y cargarlo en Postman para comprobar la funcionalidad de las API.
@@ -197,7 +209,7 @@ Cuando se añaden los derechos de uso correspondientes a los documentos PDF, los
 * compartir documentos PDF con terceros para que los revisores puedan agregar comentarios mediante herramientas de marcado intuitivas. Entre estas herramientas se incluyen las notas adhesivas electrónicas, los sellos, los resaltados y el tachado de texto. Estas funciones también están disponibles en Acrobat;
 * Admitir la descodificación de formularios con códigos de barras.
 
-Estas funciones de uso especiales se activan automáticamente al abrir un documento PDF con los derechos habilitados en Adobe Reader. Cuando el usuario ha terminado de trabajar con un documento con los derechos habilitados, esas funciones vuelven a deshabilitarse en Adobe Reader. Permanecen desactivados hasta que el usuario recibe otro documento PDF con los derechos activados.
+Estas funciones de uso especiales se activan automáticamente al abrir un documento PDF con los derechos habilitados en Adobe Reader. Cuando el usuario ha terminado de trabajar con un documento con los derechos habilitados, esas funciones vuelven a deshabilitarse en Adobe Reader. Permanecen deshabilitados hasta que el usuario recibe otro documento PDF con los derechos habilitados.
 
 #### Habilitar o deshabilitar los derechos de uso
 

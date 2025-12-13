@@ -1,14 +1,14 @@
 ---
 title: Cómo crear el modelo de datos de formulario (FDM) para un formulario adaptable?
-description: Aprenda a crear formularios adaptables y fragmentos de formulario adaptable basados en un modelo de datos de formulario (FDM). Genere y edite datos de muestra para objetos del modelo de datos en el modelo de datos de formulario (FDM).
+description: Aprenda a crear formularios adaptables y fragmentos de formulario adaptable basados en un modelo de datos de formulario (FDM). Genere y edite datos de muestra para objetos de modelo de datos en el modelo de datos de formulario (FDM).
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 97%
+source-wordcount: '1417'
+ht-degree: 90%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 ![data-integration](do-not-localize/data-integeration.png)
 
-La integración de datos de [!DNL Experience Manager Forms] permite utilizar fuentes de datos de diferentes back-end para crear un modelo de datos de formulario (FDM) que se puede utilizar como esquema en varios flujos de trabajo de formularios adaptables de <!--and interactive communications-->. Para ello, es necesario configurar las fuentes de datos y crear un modelo de datos de formulario (FDM) basado en los objetos y servicios de modelo de datos disponibles en las fuentes de datos. Para obtener más información, consulte:
+La integración de datos de [!DNL Experience Manager Forms] permite utilizar fuentes de datos de diferentes back-end para crear un modelo de datos de formulario (FDM) que se puede utilizar como esquema en varios flujos de trabajo de formularios adaptables de <!--and interactive communications-->. Para ello, es necesario configurar las fuentes de datos y crear un modelo de datos de formulario (FDM) basado en los servicios y objetos de modelo de datos disponibles en las fuentes de datos. Para obtener más información, consulte:
 
 * [Integración de datos de [!DNL Experience Manager Forms]](data-integration.md)
 * [Configuración de las fuentes de datos](configure-data-sources.md)
@@ -37,6 +37,22 @@ Un modelo de datos de formulario (FDM) es una extensión del esquema JSON que pu
 * [Uso del servicio del modelo de datos de formulario](#prefill)
 * [Escribir en diferido datos de formulario adaptable en fuentes de datos;](#write-af)
 * [Invocar servicios mediante reglas de formulario adaptable.](#invoke-services)
+
+## Aplicabilidad y casos de uso
+
+### Seguro
+
+## ¿Se puede integrar AEM Forms con los sistemas principales de seguros?
+
+Sí. AEM Forms admite la integración mediante las API de REST y SOAP, lo que le permite conectarse con sistemas de administración de políticas, sistemas de administración de reclamaciones y CRM.
+
+## ¿AEM Forms puede escribir datos de formulario en sistemas de seguros?
+
+Sí. AEM Forms admite la reescritura de datos en sistemas back-end como parte del envío de formularios y la ejecución del flujo de trabajo.
+
+## ¿Pueden los clientes cargar documentos de reclamación de forma segura mediante AEM Forms?
+
+Sí. AEM Forms admite la carga segura de documentos como parte de los envíos de formularios, con controles de acceso y administración de datos seguros alineados con los requisitos de seguridad empresariales.
 
 ## Crear formularios adaptables y fragmentos; {#create-af}
 
@@ -132,7 +148,7 @@ Para configurar la acción de envío del modelo de datos de formulario:
 1. Especifique el **[!UICONTROL modelo de datos para enviar]**.
 1. Haga clic en **[!UICONTROL Listo]**.
 
-Al enviar el formulario, los datos del objeto de modelo de datos configurado se escriben en la fuente de datos correspondiente. Además, puede enviar a la fuente de datos un archivo adjunto de formulario mediante un modelo de datos de formulario (FDM) y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL AEM Forms] &#x200B;](data-integration.md).
+Al enviar el formulario, los datos del objeto de modelo de datos configurado se escriben en la fuente de datos correspondiente. Además, puede enviar a la fuente de datos un archivo adjunto de formulario mediante un modelo de datos de formulario (FDM) y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL AEM Forms] ](data-integration.md).
 
 <!--![data-submission](assets/data-submission.png)-->
 
@@ -140,7 +156,7 @@ Al enviar el formulario, los datos del objeto de modelo de datos configurado se 
 >
 > AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
 
-También puede enviar los archivos adjuntos del formulario a una fuente de datos mediante la propiedad de objeto del modelo de datos binaria. Haga lo siguiente para enviar archivos adjuntos a una fuente de datos JDBC:
+También puede enviar los archivos adjuntos del formulario a una fuente de datos mediante la propiedad de objeto de modelo de datos binaria. Haga lo siguiente para enviar archivos adjuntos a una fuente de datos JDBC:
 
 1. Añada un objeto de modelo de datos que incluya una propiedad binaria al modelo de datos de formulario.
 1. En el formulario adaptable, arrastre y coloque el componente **[!UICONTROL Archivo adjunto]** desde el explorador Componentes en el formulario adaptable.

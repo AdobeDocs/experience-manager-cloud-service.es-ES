@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 keywords: Diseño de un formulario adaptable basado en componentes principales, diferentes diseños para formularios, diseños de formularios dinámicos, AEM, diseños de formulario de AEM Cloud Service, tipos de diseños de formulario en los componentes principales de AEM, diseños de formularios adaptables
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2106'
-ht-degree: 22%
+source-wordcount: '2176'
+ht-degree: 21%
 
 ---
 
@@ -25,9 +25,21 @@ Adaptive Forms proporciona componentes de primera clase para diseñar y diseñar
 
 <!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
+## Aplicabilidad y casos de uso
+
+### Seguro
+
+## ¿AEM Forms admite formularios de reclamación de seguro de varios pasos?
+
+Sí. AEM Forms admite formularios adaptables guiados de varios pasos con lógica condicional, lo que permite a las aseguradoras recopilar información de las reclamaciones de forma progresiva en función del tipo y el contexto de las mismas.
+
+## ¿Pueden los clientes cargar documentos de reclamación de forma segura mediante AEM Forms?
+
+Sí. AEM Forms admite la carga segura de documentos como parte de los envíos de formularios, con controles de acceso y administración de datos seguros alineados con los requisitos de seguridad empresariales.
+
 ## Requisito previo
 
-Antes de explorar las distintas funcionalidades de un diseño, asegúrese de que los componentes principales estén habilitados para su entorno. Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service.
+Antes de explorar las distintas funcionalidades de un diseño, asegúrese de que los componentes principales estén habilitados para su entorno. Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM as a Cloud Service.
 
 ## Tipos de diseño de Forms adaptables
 
@@ -81,7 +93,7 @@ El diseño de pestañas horizontales también se conoce como Tabulaciones en el 
 
 Diseño de pestañas horizontales
 
-Puede usar el componente [pestañas horizontales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para agregar el diseño de pestañas horizontales en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de pestañas horizontales, consulte el artículo [componente de pestañas horizontales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+Puede usar el componente [pestañas horizontales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para agregar el diseño de pestañas horizontales en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de pestañas horizontales, consulte el artículo [componente de pestañas horizontales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
 >[!TAB Diseño de acordeón]
