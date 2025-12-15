@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 50%
+source-wordcount: '2610'
+ht-degree: 49%
 
 ---
 
@@ -352,9 +352,15 @@ Los modelos demasiado complejos generan fragmentos demasiado complejos que puede
 
 ### Campos de texto enriquecido {#rich-text-fields}
 
-Utilice campos de texto enriquecido (tipo de datos **Texto multilínea**) teniendo en cuenta lo siguiente.
+Utilice campos de texto enriquecido (tipo de datos **Texto multilínea**) teniendo en cuenta lo siguiente:
 
-Limite el número de campos de texto enriquecido por modelo. También la cantidad de texto almacenado en cada fragmento y la cantidad de formato de HTML. El contenido de texto enriquecido muy grande puede afectar negativamente al rendimiento del sistema.
+* Campos
+
+  Limite el número de campos de texto enriquecido por modelo. Por motivos de rendimiento, no se recomienda tener más de diez campos de texto enriquecido en un modelo. Si es necesario, se recomienda usar [fragmentos de contenido anidados](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content).
+
+* Contenido
+
+  También debe limitar la cantidad de texto almacenado en cada fragmento y la cantidad de formato de HTML. El contenido de texto enriquecido muy grande puede afectar negativamente al rendimiento del sistema.
 
 ### Número de variaciones {#number-of-variations}
 
