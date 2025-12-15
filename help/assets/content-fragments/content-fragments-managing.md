@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '1941'
 ht-degree: 62%
@@ -29,7 +29,7 @@ El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona
 
 >[!NOTE]
 >
->Tenga en cuenta las [Prácticas recomendadas](/help/assets/content-fragments/content-fragments.md) al trabajar con los modelos de fragmentos de contenido y los fragmentos de contenido.
+>Tenga en cuenta las [Prácticas recomendadas](/help/assets/content-fragments/content-fragments.md#best-practices) al trabajar con los modelos de fragmentos de contenido y los fragmentos de contenido.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones a
 
 >[!NOTE]
 >
->Muchas de ellas son [acciones estándar para Assets](/help/assets/manage-digital-assets.md) y/o la [aplicación de escritorio de AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=es).
+>Muchas de ellas son [acciones estándar para Assets](/help/assets/manage-digital-assets.md) y/o la [aplicación de escritorio de AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Apertura del editor de fragmentos {#opening-the-fragment-editor}
 

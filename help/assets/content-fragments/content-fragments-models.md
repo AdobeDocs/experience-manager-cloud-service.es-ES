@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '3604'
 ht-degree: 70%
@@ -25,7 +25,7 @@ Para usar modelos de fragmentos de contenido, haga lo siguiente:
 
 >[!NOTE]
 >
->Tenga en cuenta las [Prácticas recomendadas](/help/assets/content-fragments/content-fragments.md) al trabajar con los modelos de fragmentos de contenido y los fragmentos de contenido.
+>Tenga en cuenta las [Prácticas recomendadas](/help/assets/content-fragments/content-fragments.md#best-practices) al trabajar con los modelos de fragmentos de contenido y los fragmentos de contenido.
 
 >[!NOTE]
 >

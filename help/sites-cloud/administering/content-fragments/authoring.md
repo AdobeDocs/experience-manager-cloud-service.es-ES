@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '2793'
 ht-degree: 7%
@@ -35,7 +35,7 @@ Este editor proporciona lo siguiente:
 
 >[!NOTE]
 >
->Tenga en cuenta las [Prácticas recomendadas](/help/sites-cloud/administering/content-fragments/overview.md) al trabajar con los modelos de fragmentos de contenido y los fragmentos de contenido.
+>Tenga en cuenta las [Prácticas recomendadas](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) al trabajar con los modelos de fragmentos de contenido y los fragmentos de contenido.
 
 >[!WARNING]
 >
@@ -271,7 +271,7 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 
