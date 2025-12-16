@@ -4,7 +4,7 @@ description: Obtenga información acerca de las distintas opciones para personal
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 67%
@@ -43,7 +43,7 @@ Los siguientes son los valores compatibles con `content`, es decir, las caracter
 | `copy` | Deshabilita [los botones de copiar y pegar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
 | `duplicate` | Deshabilita [botón duplicado](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
 | `header-open-page` | Deshabilita [botón Abrir página](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
-| `dev-login` | Deshabilita [botón de inicio de sesión de desarrollador](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) |
+| `aem-dev-login` | Deshabilita [botón de inicio de sesión de desarrollador](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) |
 
 ## Cambio del punto final {#custom-endpoint}
 

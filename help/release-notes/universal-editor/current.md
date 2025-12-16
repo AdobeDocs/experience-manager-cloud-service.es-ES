@@ -4,7 +4,7 @@ description: Estas son las notas de la versión 2025.12.11 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 21%
@@ -28,7 +28,7 @@ Estas son las notas de la versión del editor universal del 12 de diciembre de 2
 
 * Se ha agregado compatibilidad a las tablas existentes en el [editor de texto enriquecido.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 * La tecla de tabulación se ha habilitado para anidar listas en el [editor de texto enriquecido.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* La característica de inicio de sesión para desarrolladores ahora se puede deshabilitar mediante la [metaetiqueta `dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* La característica de inicio de sesión para desarrolladores ahora se puede deshabilitar mediante la [metaetiqueta `aem-dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
 * Ahora, al hacer clic con el botón secundario en la sección de superposición, se muestra un [menú de opciones contextuales.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
 * [La sangría de ámbito](/help/implementing/universal-editor/configure-rte.md#indentation) ahora se admite en el [editor de texto enriquecido.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
