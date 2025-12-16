@@ -4,9 +4,9 @@ description: Aprenda a utilizar la CDN administrada por AEM y a apuntar su propi
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 7f00e68eac0b1e0090bdb57a8188af7bbe21ad1b
+source-git-commit: 29aded35239bb8c9a5cf71f9b9dd036c4c32f026
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1772'
 ht-degree: 11%
 
 ---
@@ -132,7 +132,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 El salto adicional entre la CDN del cliente y la CDN de AEM solo es necesario si se produce una pérdida de caché. Al utilizar las estrategias de optimización de caché descritas en este artículo, la adición de una CDN de cliente solo debe introducir una latencia insignificante.
 
-Esta configuración de CDN del cliente es compatible con el nivel de publicación, pero no delante del de creación.
+Esta configuración de CDN del cliente es compatible con el nivel de publicación y el de previsualización, pero no delante del de creación.
 
 ### Depuración de configuración
 
@@ -163,7 +163,7 @@ Este proceso permite verificar detalles como los valores de host, la configuraci
 >Puede utilizar un entorno de desarrollo rápido (RDE) para implementar y probar la configuración:
 >
 >* [Entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Cómo usar el entorno de desarrollo rápido](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Cómo usar el entorno de desarrollo rápido](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Configuraciones de proveedor de CDN de muestra {#sample-configurations}
 
