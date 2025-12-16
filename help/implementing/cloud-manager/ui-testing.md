@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
 workflow-type: tm+mt
-source-wordcount: '2601'
-ht-degree: 56%
+source-wordcount: '2664'
+ht-degree: 53%
 
 ---
 
@@ -62,7 +62,7 @@ En esta sección se describen los pasos necesarios para configurar las pruebas d
 
 1. Confirme su código en el repositorio de Cloud Manager y ejecute una canalización de Cloud Manager.
 
-## Generar pruebas de interfaz de usuario {#building-ui-tests}
+## Generación de pruebas de IU {#building-ui-tests}
 
 Un proyecto de Maven genera un contexto de generación de Docker. Este contexto de generación de Docker describe cómo crear una imagen de Docker que contenga las pruebas de IU, que Cloud Manager usa para generar una imagen de Docker que contenga las pruebas de IU reales.
 
@@ -182,11 +182,11 @@ Para incluir un archivo `testing.properties` en el artefacto de generación, agr
 [...]
 ```
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Si el proyecto no incluye esta línea, edite el archivo para optar por la prueba de IU.
 >
->El archivo puede contener una línea que aconseje no editarlo. El motivo es que se está introduciendo en el proyecto antes de que se introdujera la prueba de IU de inclusión y los clientes no tenían la intención de editar el archivo. Puede ignorar con seguridad el aviso.
+>El archivo puede contener una línea que diga *NO MODIFICAR*&quot;. Es simplemente una advertencia heredada de plantillas/muestras antiguas y *no* le impide realizar las ediciones de inclusión necesarias para las pruebas de IU de Cloud Manager. Puede ignorar con seguridad el aviso. Es decir, puede editar `assembly-ui-test-docker-context.xml` y `pom.xml` en *su proyecto* al seguir los pasos de inclusión (por ejemplo, para incluir `testing.properties`).
 
 Si está utilizando las muestras proporcionadas por Adobe:
 
@@ -202,11 +202,11 @@ Si está utilizando las muestras proporcionadas por Adobe:
 
 * Los ejemplos de prueba de Cypress y Java Selenium proporcionados por Adobe ya tienen el indicador de inclusión establecido.
 
-## Escribir pruebas de interfaz de usuario {#writing-ui-tests}
+## Escribir pruebas de IU {#writing-ui-tests}
 
 En esta sección se describen las convenciones que debe seguir la imagen de Docker que contiene las pruebas de IU. La imagen Docker se crea a partir del contexto de generación de Docker descrito en la sección anterior.
 
-### Variables de entorno {#environment-variables}
+### Variables del entorno {#environment-variables}
 
 Las siguientes variables de entorno se pasan a la imagen de Docker en tiempo de ejecución, en función del marco de trabajo.
 
@@ -273,6 +273,9 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 | Tiempo de espera | 30m | Cuánto tiempo dura la prueba. |
 | Duración recomendada | 15m | Adobe recomienda mantener las pruebas por debajo de este límite de tiempo. |
 
+* Si el autor/publicación de destino está protegido por una inclusión en la lista de permitidos IP, la infraestructura de prueba de la IU de la canalización debe estar incluida en la lista de permitidos o las pruebas de la IU pueden fallar con 403 Prohibido.
+Consulte también [Error en la prueba de IU en AEMaaCS debido a la Inclusión en la lista de permitidos de IP](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) y [Introducción a las Listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+
 >[!NOTE]
 >
 > Si necesita más recursos, cree un caso de servicio de atención al cliente y describa su caso de uso; Adobe revisa su solicitud y proporciona la asistencia adecuada.
@@ -283,7 +286,7 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 >
 >Esta sección solo se aplica cuando Selenium es la infraestructura de prueba elegida.
 
-### Esperando a que Selenium esté listo {#waiting-for-selenium}
+### Espera a que Selenium esté listo {#waiting-for-selenium}
 
 Antes de que comiencen las pruebas, es responsabilidad de la imagen Docker asegurarse de que el servidor Selenium funcione. Esperar por el servicio de Selenium es un proceso de dos pasos.
 
@@ -440,11 +443,11 @@ if (proxyServer !== '') {
 > Se puede encontrar una implementación de ejemplo en el módulo de prueba de muestra del dramaturgo en [GitHub](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
 
-## Ejecución de pruebas de IU locales {#run-ui-tests-locally}
+## Ejecutar pruebas de interfaz de usuario localmente {#run-ui-tests-locally}
 
 Antes de activar las pruebas de IU en una canalización de Cloud Manager, Adobe recomienda ejecutar las pruebas de IU localmente en [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md). O bien, ejecútelo con una instancia real de AEM as a Cloud Service.
 
-### Ejemplo de prueba de Cypress {#cypress-sample}
+### Muestra de prueba de ciprés {#cypress-sample}
 
 1. Abra un elemento shell y vaya a la carpeta `ui.tests/test-module` de su repositorio
 
@@ -480,7 +483,7 @@ Antes de activar las pruebas de IU en una canalización de Cloud Manager, Adobe 
 >
 >Para obtener más información, consulte [Repositorio de muestras de pruebas de AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
-### Muestra de prueba de WebdriverIO de JavaScript {#javascript-sample}
+### Muestra de prueba de JavaScript WebdriverIO {#javascript-sample}
 
 1. Abra un shell y vaya a la carpeta `ui.tests` en el repositorio.
 
@@ -504,7 +507,7 @@ Antes de activar las pruebas de IU en una canalización de Cloud Manager, Adobe 
 >
 >Para obtener más información, consulte [Repositorio de muestras de pruebas de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
-### Muestra de prueba de Playwright {#playwright-sample}
+### Muestra de prueba del dramaturgo {#playwright-sample}
 
 1. Abra un elemento shell y vaya a la carpeta `ui.tests` de su repositorio
 
@@ -533,7 +536,7 @@ Antes de activar las pruebas de IU en una canalización de Cloud Manager, Adobe 
 >Para obtener más información, consulte [Repositorio de muestras de pruebas de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
 
-### Ejemplo de prueba de Java Selenium WebDriver {#java-sample}
+### Ejemplo de prueba WebDriver de Java Selenium {#java-sample}
 
 1. Abra un elemento shell y vaya a la carpeta `ui.tests/test-module` de su repositorio
 
