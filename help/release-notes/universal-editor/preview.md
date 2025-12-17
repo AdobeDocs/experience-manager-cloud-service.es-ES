@@ -3,7 +3,7 @@ title: Notas de la versión de Universal Editor Preview
 description: Estas son las notas de la versión de la vista previa del editor universal.
 feature: Release Information
 role: Admin
-source-git-commit: 0f33ef46ea58ecbdbf30ac078f24f2193ae26395
+source-git-commit: 57b8a38219431ff7f264ef1f64de5506e283a650
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Notas de la versión de Universal Editor Preview {#preview}
 
-Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 18 de diciembre de 2025.
+Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 15 de enero de 2026.
 
 Estas notas de la versión de **preview** se proporcionan para que sepa qué cambios se avecinan en el editor universal y pueda probarlos al [cambiar al entorno de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
