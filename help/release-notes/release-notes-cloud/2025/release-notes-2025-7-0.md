@@ -223,7 +223,7 @@ Propiedades de OSGi:
 
 ### Desuso de tiempo de ejecución de Java 11 {#java11-runtime-deprecation}
 
-El **tiempo de ejecución de Java 11* ya está en desuso, y la mayoría de los entornos ya se han actualizado al **tiempo de ejecución de Java 21** de mayor rendimiento.
+El **tiempo de ejecución de Java 11* ya está en desuso, y la mayoría de los entornos ya se han actualizado al &#x200B;** tiempo de ejecución de Java 21** de mayor rendimiento.
 
 Si su entorno no se ha podido actualizar debido a dependencias no admitidas (consulte [Requisitos de tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), debería haber recibido un correo electrónico de Adobe con los siguientes pasos específicos. Asegúrese de que todas las actualizaciones requeridas se hayan completado el **28 de agosto de 2025** para que su entorno se pueda actualizar sin interrupciones.
 
