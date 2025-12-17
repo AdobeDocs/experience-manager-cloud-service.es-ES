@@ -3,10 +3,11 @@ title: Notas de la versión 2025.7.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2025.7.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 7787a195cc9ae39f8ac759da03c88a9f1e61226d
+exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
+source-git-commit: 76ccdf13f56d7020ef266bc54bebbcc6eff1067d
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 98%
+source-wordcount: '2273'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +39,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -80,7 +81,7 @@ Ahora puede añadir un título al generar un vínculo compartido, ya sea desde l
 
 **Se ha mejorado la navegación por filtros**
 
-Content Hub ahora incluye la opción **Mostrar todo** dentro de los filtros, lo que permite a los usuarios ver todas las facetas disponibles junto con los recuentos de recursos en lugar de la limitación actual de ver solo hasta 10 facetas. Las funciones mejoradas de búsqueda y ordenación dentro de cada filtro facilitan la detección y administración de recursos de forma más eficaz.
+Content Hub ahora incluye la opción **Mostrar todo** dentro de los filtros, lo que permite a los usuarios ver todas las facetas disponibles junto con el número de recursos en lugar de la limitación actual de ver solo hasta 10 facetas. Las funciones mejoradas de búsqueda y ordenación dentro de cada filtro facilitan la detección y administración de recursos de forma más eficaz.
 
 ### Aplicación de escritorio de AEM versión 3.0.0 {#desktop-app-release-3.0.0}
 
@@ -177,9 +178,9 @@ La herramienta de integración de la API permite a los autores de formularios cr
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Vista de nodos para la administración de permisos {#node-view}
+### Vista principal para la administración de permisos {#node-view}
 
-AEM presenta la administración de permisos de la vista de nodos. La funcionalidad principal sigue siendo la misma que la IU clásica, pero es más fácil de usar y eficiente. Consulte el [artículo específico](/help/security/touch-ui-principal-view.md) para obtener más información.
+AEM presenta la administración de permisos de la vista de nodos. La funcionalidad principal sigue siendo la misma que la de la interfaz de usuario clásica, pero es más fácil de usar y eficaz. Consulte el [artículo específico](/help/security/touch-ui-principal-view.md) para obtener más información.
 
 ### Proceso de desuso actualizado {#updated-deprecation-process}
 
@@ -222,7 +223,7 @@ Propiedades de OSGi:
 
 ### Desuso de tiempo de ejecución de Java 11 {#java11-runtime-deprecation}
 
-El **tiempo de ejecución de Java 11* ya está en desuso, y la mayoría de los entornos ya se han actualizado al &#x200B;** tiempo de ejecución de Java 21** de mayor rendimiento.
+El **tiempo de ejecución de Java 11* ya está en desuso, y la mayoría de los entornos ya se han actualizado al **tiempo de ejecución de Java 21** de mayor rendimiento.
 
 Si su entorno no se ha podido actualizar debido a dependencias no admitidas (consulte [Requisitos de tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), debería haber recibido un correo electrónico de Adobe con los siguientes pasos específicos. Asegúrese de que todas las actualizaciones requeridas se hayan completado el **28 de agosto de 2025** para que su entorno se pueda actualizar sin interrupciones.
 
@@ -241,18 +242,20 @@ Revise y actualice cualquier proceso descendente que dependa del comportamiento 
 
 ### Depuración predeterminada de versiones anteriores y registros de auditoría {#mt-defaults}
 
-Actualmente, las versiones de contenido y los registros de auditoría tienen sus *tareas de mantenimiento de depuración asociadas, deshabilitadas de forma predeterminada y, por lo tanto, no se eliminan datos a menos que se configuren explícitamente.
+Actualmente, las versiones de contenido y los registros de auditoría tienen sus *tareas de mantenimiento de depuración* asociadas deshabilitadas de forma predeterminada y, por lo tanto, no se eliminan datos a menos que se configuren explícitamente.
 
-Sin embargo, para optimizar el rendimiento del repositorio, la depuración se activará de forma predeterminada en una fecha anunciada futura, siguiendo estas directrices:
+Sin embargo, para optimizar el rendimiento del repositorio, la depuración se activará de forma predeterminada en una fecha anunciada futura.
+
+Para obtener más información, consulte el [artículo de tareas de mantenimiento](/help/operations/maintenance.md#defaults).
 
 #### Versiones de contenido {#mt-content}
 
-* **Nuevos entornos* (creados después de una fecha próxima (se comunicará más adelante)
-   * Las versiones con una antigüedad de más de **30 días* se eliminarán periódicamente.
+* **Nuevos entornos** (creados después de una fecha próxima y que se comunicarán más adelante):
+   * Las versiones con más de 30 días se eliminarán periódicamente.
    * Se conservan las cinco versiones más recientes de los últimos 30 días, junto con la versión más reciente y la versión actual, independientemente de su antigüedad.
 
-* **Entornos existentes* (creados antes de esta próxima fecha):
-   * Las versiones con una antigüedad de más de **7 años* se eliminarán periódicamente.
+* **Entornos existentes** (creados antes de esta próxima fecha):
+   * Las versiones anteriores a 7 años se eliminarán periódicamente.
    * Se conservan todas las versiones de los últimos 7 años.
    * Este alto umbral predeterminado evita la eliminación involuntaria de datos recientes. Sin embargo, se recomienda configurar valores más bajos para optimizar el rendimiento del repositorio.
 
@@ -260,18 +263,16 @@ Sin embargo, para optimizar el rendimiento del repositorio, la depuración se ac
 
 #### Registro de auditoría {#mt-auditlogs}
 
-* **Nuevos entornos* (creados después de una fecha próxima, que se comunicará por separado):
-   * Se eliminarán periódicamente los registros de replicación, DAM y auditoría de páginas de más de **7 días*.
+* **Nuevos entornos** (creados después de una fecha próxima, que se comunicará por separado):
+   * Se eliminarán periódicamente los registros de replicación, DAM y auditoría de página anteriores a 7 días.
    * Todos los eventos se registran de forma predeterminada.
 
-* **Entornos existentes* (creados antes de esta próxima fecha):
-   * Se eliminarán periódicamente los registros de replicación, DAM y auditoría de páginas de más de **7 años*.
+* **Entornos existentes** (creados antes de esta próxima fecha):
+   * Se eliminarán periódicamente los registros de replicación, DAM y auditoría de página anteriores a 7 años.
    * Todos los eventos se registran de forma predeterminada.
    * Este alto umbral predeterminado evita la eliminación involuntaria de datos recientes. Sin embargo, se recomienda configurar valores más bajos para optimizar el rendimiento del repositorio.
 
 * Puede modificar estos valores predeterminados mediante la configuración de YAML, implementada mediante la canalización de configuración.
-
-Para obtener más información, consulte el [artículo de tareas de mantenimiento](/help/operations/maintenance.md#defaults).
 
 ### Computación de Edge (programa Alpha) {#edge-computing}
 
@@ -296,7 +297,7 @@ Ahora en versión Beta, implemente una canalización de configuración para func
 
 ### Instantáneas para los RDE (programa Alpha) {#rde-snapshot-beta}
 
-En Alpha, los entornos de desarrollo rápido (RDE) ahora admiten una función para tomar una instantánea del estado actual del código y el contenido, que se puede restaurar más adelante. Esto puede resultar útil al sincronizar código que puede ser necesario revertir o al cambiar entre el desarrollo de distintas características. También es posible restaurar solo el contenido mutable como punto de partida conocido para realizar pruebas.
+En Alpha, los Entornos de desarrollo rápido (RDE) ahora admiten una función para tomar una instantánea del estado actual del código y el contenido, que se puede restaurar más adelante. Esto puede resultar útil al sincronizar código que puede ser necesario revertir o al cambiar entre el desarrollo de distintas características. También es posible restaurar solo el contenido mutable como punto de partida conocido para realizar pruebas.
 
 Envíe un correo electrónico a [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) si tiene interés en ofrecer sus comentarios sobre esta función.
 
