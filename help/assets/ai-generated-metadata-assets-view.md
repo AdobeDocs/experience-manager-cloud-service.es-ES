@@ -1,7 +1,7 @@
 ---
 title: Mejore la detección de contenido con metadatos generados por IA
 description: Aprenda a mejorar la detección de contenido con metadatos generados por IA
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 4%
@@ -43,4 +43,4 @@ Para utilizar la función de etiquetas inteligentes mejorada, ejecute los siguie
 
 1. [Opcional]: puede agregar etiquetas adicionales o crear las suyas propias si cree que faltan etiquetas relevantes. Para ello, escriba sus etiquetas en el campo **[!UICONTROL Palabras clave generadas]** y haga clic en **[!UICONTROL Guardar]**.
 
-Para obtener información sobre cómo deshabilitar los metadatos generados por IA, consulte [Deshabilitar metadatos generados por IA](/help/assets/smart-tags.md#disable-ai-generated-metadata).
+Para obtener información sobre cómo deshabilitar los metadatos generados por IA, consulte [Deshabilitar metadatos generados por IA](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata).

@@ -3,10 +3,10 @@ title: Mejore la detección de contenido con metadatos generados por IA en la vi
 description: Aprenda a mejorar la detección de contenido con metadatos generados por IA en la vista de administración
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '669'
+ht-degree: 8%
 
 ---
 
@@ -69,7 +69,9 @@ Para utilizar la función de etiquetas inteligentes mejorada, ejecute los siguie
 
 ## Deshabilitar metadatos generados por IA {#disable-ai-generated-metadata}
 
-Para deshabilitar los metadatos generados por IA:
+Puede deshabilitar los metadatos generados por IA para su entorno de AEM as a Cloud Service o puede deshabilitarlos en el nivel de carpeta.
+
+Para deshabilitar los metadatos generados por IA para el entorno de AEM as a Cloud Service:
 
 1. Vaya a **[!UICONTROL Herramientas > Assets > Configuraciones de Assets > Configuración de mejora de etiquetas inteligentes]**.
 
@@ -78,3 +80,15 @@ Para deshabilitar los metadatos generados por IA:
 1. Haga clic en **[!UICONTROL Guardar]** .
 
 Los metadatos generados por IA están desactivados para los nuevos recursos o carpetas que se cargan en los AEM Assets. Los recursos o carpetas existentes que ya tienen campos de metadatos generados por IA generados siguen mostrando estos campos.
+
+### Deshabilitar metadatos generados por IA para carpetas {#disable-ai-generated-metadata-folder-level}
+
+Para deshabilitar los metadatos generados por IA en el nivel de carpeta:
+
+1. Seleccione la carpeta y haga clic en **[!UICONTROL Propiedades]**.
+
+1. Seleccione la pestaña **[!UICONTROL Procesamiento de recursos]**.
+
+1. En la sección **[!UICONTROL Mejoras de etiquetas inteligentes para imágenes]**, seleccione **[!UICONTROL Deshabilitar]** en el menú desplegable.
+
+1. Haga clic en **[!UICONTROL Guardar y cerrar]** para deshabilitar los metadatos generados por IA para la carpeta seleccionada.
