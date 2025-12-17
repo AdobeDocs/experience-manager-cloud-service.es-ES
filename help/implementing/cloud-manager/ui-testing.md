@@ -5,9 +5,9 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
+source-git-commit: 770318fd14e28c8406650eb563df36fe88227359
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2662'
 ht-degree: 53%
 
 ---
@@ -186,7 +186,7 @@ Para incluir un archivo `testing.properties` en el artefacto de generación, agr
 >
 >Si el proyecto no incluye esta línea, edite el archivo para optar por la prueba de IU.
 >
->El archivo puede contener una línea que diga *NO MODIFICAR*&quot;. Es simplemente una advertencia heredada de plantillas/muestras antiguas y *no* le impide realizar las ediciones de inclusión necesarias para las pruebas de IU de Cloud Manager. Puede ignorar con seguridad el aviso. Es decir, puede editar `assembly-ui-test-docker-context.xml` y `pom.xml` en *su proyecto* al seguir los pasos de inclusión (por ejemplo, para incluir `testing.properties`).
+>El archivo puede contener una línea que diga *NO MODIFICAR*. Es simplemente una advertencia heredada de plantillas/muestras antiguas y *no* le impide realizar las ediciones de inclusión necesarias para las pruebas de IU de Cloud Manager. Puede ignorar con seguridad el aviso; puede editar `assembly-ui-test-docker-context.xml` y `pom.xml` en *su proyecto* al seguir los pasos de inclusión (por ejemplo, para incluir `testing.properties`).
 
 Si está utilizando las muestras proporcionadas por Adobe:
 
@@ -274,7 +274,7 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 | Duración recomendada | 15m | Adobe recomienda mantener las pruebas por debajo de este límite de tiempo. |
 
 * Si el autor/publicación de destino está protegido por una inclusión en la lista de permitidos IP, la infraestructura de prueba de la IU de la canalización debe estar incluida en la lista de permitidos o las pruebas de la IU pueden fallar con 403 Prohibido.
-Consulte también [Error en la prueba de IU en AEMaaCS debido a la Inclusión en la lista de permitidos de IP](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26654#) y [Introducción a las Listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Consulte también [Error en la prueba de IU en AEMaaCS debido a la Inclusión en la lista de permitidos de IP](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) y [Introducción a las Listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
