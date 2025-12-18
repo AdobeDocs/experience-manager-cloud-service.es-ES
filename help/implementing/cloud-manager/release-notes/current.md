@@ -4,10 +4,10 @@ description: Obtenga información sobre la versión 2025.12.0 de Cloud Manager e
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 431c3060b59dca852bdce14b6793dcb5c352139b
+source-git-commit: 7c1f1f1022fd63c190a493d312ab1f355859d15a
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 66%
+source-wordcount: '1149'
+ht-degree: 61%
 
 ---
 
@@ -88,11 +88,15 @@ If you are interested in testing this new feature and sharing your feedback, sen
   Ver [Crear tu primer sitio de Edge Delivery con un solo clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
 
 
-
-
 ## Programas Beta {#private-beta-program}
 
 Participe en los programas Beta de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
+
+>[!IMPORTANT]
+>
+>Las versiones de Beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar o admitir de otro modo (mediante los Servicios de soporte de Adobe o de otro modo) las versiones beta. Adobe recomienda a los clientes tener cuidado y no depender del funcionamiento o el rendimiento correctos de las versiones beta, ni de la documentación o los materiales adjuntos. Las funciones y las API de la versión beta están sujetas a cambios sin previo aviso. Por lo tanto, cualquier uso de las versiones beta es totalmente bajo el propio riesgo del cliente.
+
+Ver también [programas de AEM Beta](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
 Actualmente están disponibles las siguientes oportunidades:
 <!--

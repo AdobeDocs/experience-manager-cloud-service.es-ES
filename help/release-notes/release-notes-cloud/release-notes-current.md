@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 582faf38a341ecfe9f4e7d338a451e314924abb3
+source-git-commit: 50c3f49a6a629301076edac3c2462e1f220055dd
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 54%
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -58,7 +58,7 @@ El acceso anticipado a las funciones que Adobe está desarrollando permite a los
 **Programas beta actuales**
 Las siguientes secciones enumeran los programas beta activos.
 
-### Agentes en AEM (programa Beta)
+### Agentes en AEM (programa Beta) {#agents-in-aem-beta-program}
 
 Obtenga acceso anticipado a nuevas y potentes funciones agénticas de AEM en producción, gobernanza, optimización, descubrimiento y desarrollo. Sus comentarios definen directamente el plan de Adobe y las funciones finales. Consulte [Información general sobre agentes en AEM](/help/ai-in-aem/agents/overview.md) para obtener más información.
 
@@ -67,11 +67,11 @@ Para participar en este programa, envíe un correo electrónico a [aemagentsteam
 * Nombres y nombres de los miembros del equipo de Adobe ID que utilizarán agentes de forma activa.
 * Enumerar los agentes específicos que usted o su equipo desearán utilizar. O simplemente decir &quot;Todos los agentes&quot;.
 
-### AEM Foundation (programas de Beta)
+### AEM Foundation (programas de Beta) {#aem-foundation-beta-programs}
 
 Ver [programas beta de AEM Foundation](#foundation-early-adopter).
 
-### Cloud Manager (programas de Beta)
+### Cloud Manager (programas de Beta) {#cloud-manager-beta-programs}
 
 Ver [programas beta de Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
 
@@ -206,7 +206,7 @@ Días de lanzamiento, eventos en directo, picos de ventas: estos momentos no pue
 >Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
 >
 
-#### Computación de Edge (programa beta) {#edge-computing}
+#### Computación de Edge (programa beta)
 
 La computación de Edge le permite ejecutar JavaScript en la capa de CDN, lo que acerca el procesamiento de datos al usuario final. Esto reduce la latencia y permite experiencias dinámicas y adaptables en Edge.
 
