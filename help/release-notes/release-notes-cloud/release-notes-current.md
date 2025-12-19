@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d1b3753261bd103fff5267a95db90a88f6749e59
+source-git-commit: ed358f58ba0dd4d5a9b283291702f867774515e4
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 53%
+source-wordcount: '1857'
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -76,6 +76,24 @@ Ver [programas beta de AEM Foundation](#foundation-early-adopter).
 ### Cloud Manager (programas de Beta) {#cloud-manager-beta-programs}
 
 Ver [programas beta de Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
+
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+**Hay disponible una nueva versión del complemento Figma para la integración con AEM Assets**
+
+* Compatibilidad con archivos de vídeo (MP4, MOV, WebM), archivos animados (GIF) y archivos vectoriales (SVG) al importar recursos del repositorio de AEM al documento de Figma.
+
+* Compatibilidad para comprobar si hay alguna actualización de los recursos que se utilizan en el documento Figma en comparación con los recursos que existen en el repositorio de AEM y obtener la última versión de los recursos si hay alguna actualización.
+
+* Compatibilidad con configuraciones de exportación al exportar formatos de archivo PNG (escala) y JPG (escala y calidad de imagen).
+
+  ![Complemento Figma](/help/assets/assets/figma-v2-plugin.png)
+
+**Detección de malware para los recursos cargados**
+
+Los AEM Assets ahora incluyen el análisis automático de malware de los archivos cargados, lo que garantiza que los recursos sospechosos se pongan en cuarentena antes de entrar en DAM para proteger el repositorio de amenazas. Los administradores pueden configurar las opciones de análisis y las políticas de retención de cuarentena para optimizar los controles de seguridad.
+
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
