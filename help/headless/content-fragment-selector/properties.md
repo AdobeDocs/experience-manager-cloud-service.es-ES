@@ -3,9 +3,9 @@ title: Propiedades del selector de fragmentos de contenido de Micro-FrontEnd par
 description: Propiedades para configurar el Selector de fragmentos de contenido de Micro-FrontEnd para buscar, buscar y recuperar fragmentos de contenido de la aplicación.
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
+source-git-commit: 74b9493fc3cdba4a1fc64d1137f5c50c6bebca0a
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1074'
 ht-degree: 4%
 
 ---
@@ -25,13 +25,13 @@ Puede utilizar las siguientes propiedades para personalizar cómo se procesa el 
 | `repoId` | cadena | No | | ID del repositorio utilizado para el selector de fragmentos. Cuando se proporciona, el selector se conecta automáticamente al repositorio especificado y la lista desplegable de repositorios está oculta. Si no se proporciona, el usuario puede seleccionar un repositorio de la lista de repositorios disponibles a los que tiene acceso. |
 | `defaultRepoId` | cadena | No | | ID del repositorio que se seleccionará de forma predeterminada cuando se muestre el selector de repositorios. Solo se usa cuando no se proporciona `repoId`. Si se establece `repoId`, el selector del repositorio estará oculto y se omitirá este valor. |
 | `orgId` | cadena | No | | ID de organización utilizado para la autenticación. Si no se proporciona, el usuario puede seleccionar un repositorio de diferentes organizaciones a las que tiene acceso. Si el usuario no tiene acceso a ningún repositorio u organización, el contenido no se carga. |
-| `locale` | cadena | No | &quot;en-US&quot; | Configuración regional. |
+| `locale` | cadena | No | `en-US` | Configuración regional. |
 | `env` | cadena | No | | Entorno de implementación. Consulte el tipo `Env` para ver los nombres de entorno permitidos. |
 | `filters` | FragmentFilter | No | `{ folder: "/content/dam" }` | Filtros que se aplicarán a la lista de fragmentos de contenido. De forma predeterminada, se mostrarán los fragmentos de `/content/dam`. |
 | `isOpen` | booleano | No | `false` | Indicador que controla si el selector está abierto o cerrado. |
 | `noWrap` | booleano | No | `false` | Determina si el Selector de fragmentos se procesa sin un cuadro de diálogo de ajuste. Cuando se establece en `true`, el selector de fragmentos está incrustado directamente en el contenedor principal. Útil para integrar el selector en diseños o flujos de trabajo personalizados. |
 | `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | No | | Función de llamada de retorno activada cada vez que cambia la selección de fragmentos de contenido. Proporciona los fragmentos, el nombre de dominio, la información de inquilino, el ID de repositorio y los repositorios de envío seleccionados actualmente. |
-| `onDismiss` | () => void | No | | Función de llamada de retorno activada cuando se realiza la acción de descartar (por ejemplo, cerrar el selector). |
+| `onDismiss` | () => void | No | | Función de devolución de llamada que se activa cuando se realiza la acción de descartar; por ejemplo, cerrar el selector. |
 | `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | No | | Función de llamada de retorno activada cuando el usuario confirma su selección. Recibe los fragmentos de contenido, el nombre de dominio, la información del inquilino, el ID de repositorio y los repositorios de envío seleccionados. |
 | `theme` | &quot;claro&quot; u &quot;oscuro&quot; | No | | Tema para el selector de fragmentos. De forma predeterminada, se establece en el tema de entorno unifiedShell. |
 | `selectionType` | &quot;single&quot; o &quot;multiple&quot; | No | `single` | El tipo de selección se puede utilizar para restringir la selección del Selector de fragmentos. |
@@ -65,7 +65,7 @@ La clase `ImsAuthService` administra el flujo de autenticación para el Selector
 | Nombre de función | Descripción |
 |--- |--- |
 | `isSignedInUser` | Determina si el usuario ha iniciado sesión en el servicio y devuelve un valor booleano en consecuencia. |
-| `getImsToken` | Recupera la autenticación `imsToken` del usuario que ha iniciado sesión actualmente, que se puede usar para autenticar solicitudes en otros servicios como la generación de la representación del recurso _2&rbrace;._ |
+| `getImsToken` | Recupera la autenticación `imsToken` del usuario que ha iniciado sesión actualmente, que se puede usar para autenticar solicitudes en otros servicios como la generación de la representación del recurso _2}._ |
 | `signIn` | Inicia el proceso de inicio de sesión del usuario. Esta función utiliza `ImsAuthProps` para mostrar la autenticación en una ventana emergente o en una recarga de página completa. |
 | `signOut` | Cierra la sesión del usuario del servicio, invalidando su token de autenticación y obligándole a iniciar sesión de nuevo para acceder a los recursos protegidos. Al invocar esta función, se volverá a cargar la página actual. |
 | `refreshToken` | Actualiza el token de autenticación del usuario que ha iniciado sesión, lo que evita que caduque y garantiza un acceso ininterrumpido a los recursos protegidos. Devuelve un nuevo token de autenticación que puede utilizarse para solicitudes posteriores. |
