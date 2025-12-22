@@ -5,10 +5,10 @@ keywords: temáticas de form builder, componentes principales de estilo de formu
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: c0e0a700e85563ff65c703d5d20e6d6c1ff0651c
 workflow-type: tm+mt
-source-wordcount: '2806'
-ht-degree: 99%
+source-wordcount: '2897'
+ht-degree: 95%
 
 ---
 
@@ -389,6 +389,10 @@ en los pasos **[!UICONTROL Código fuente]**.
 
    Una vez completada la configuración de la canalización, se actualiza la tarjeta de llamada a la acción.
 
+   >[!NOTE]
+   >
+   > Para garantizar que la canalización front-end no falle en Cloud Manager, [establezca la versión de Node.js en 20](#set-the-nodejs-vesrion-to-20).
+
 1. Haga clic con el botón derecho en la canalización creada.
 1. Haga clic **[!UICONTROL Ejecutar]**.
 
@@ -416,6 +420,21 @@ Los pasos para aplicar una temática a un formulario adaptable son los siguiente
 
 Las temáticas se utilizan como parte de una plantilla de formulario adaptable para definir el estilo al crear un formulario adaptable.
 
+## Establezca la versión de Node.js en 20.
+
+Para establecer la versión de Node.js en 20 mediante la configuración de canalización:
+
+1. Vaya a la sección **Canalizaciones** y busque su canalización front-end.
+2. En el lado derecho de la canalización, haga clic en el menú de tres puntos **⋯** y, en el menú desplegable, seleccione **Ver/Editar variables**.
+3. En el cuadro de diálogo **Configuración de variables**, rellene los campos de la siguiente manera:
+   * **NOMBRE** - NODE_VERSION
+   * **VALOR** - 20
+   * **PASO APLICADO** - Compilación
+   * **TYPE** - Variable
+4. Haga clic en **Guardar** para aplicar la configuración.
+
+![configuración de canalización](/help/forms/assets/pipeline-config.png)
+
 ## Prácticas recomendadas {#best-practices}
 
 * **Evitar recursos de otra temática**
@@ -441,7 +460,7 @@ Las temáticas se utilizan como parte de una plantilla de formulario adaptable p
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 
