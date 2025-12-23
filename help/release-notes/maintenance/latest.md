@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
+source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1076'
 ht-degree: 19%
 
 ---
@@ -75,7 +75,7 @@ La activación de funcionalidades 2026.1.0 proporciona el conjunto completo de f
 * SITES-36570: La creación de Live Copies falla después de activar la opción Crear Live Copy fragmentada.
 * SITES-36158: el despliegue falla con el trabajo fallado debido a una excepción.
 * SITES-35655: el nuevo editor CF muestra la herencia activa después de que se haya roto.
-* SITES-31425: se muestra el mensaje de error no localizado &quot;Error: el campo {} es obligatorio&quot; en el flujo de trabajo de inicio en los sitios.
+* SITES-31425: mensaje de error no localizado `Error: {} field is required` mostrado en el flujo de trabajo de inicio en los sitios.
 * SITES-19802: Información de objeto no está localizado en el sitio de componentes principales > Tabla de contenido.
 * SITES-36543: se ha corregido un problema que permitía al administrador editar fragmentos de contenido retirados.
 * SITES-36967: se corrigieron las excepciones NullPointerExceptions que se producían al intentar generar datos de miniaturas para fragmentos de contenido rotos.
