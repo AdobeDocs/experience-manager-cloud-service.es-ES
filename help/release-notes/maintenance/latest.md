@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 68444ac15513bad7c1eaee97c474e21d36992d49
+source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 42%
+source-wordcount: '1080'
+ht-degree: 19%
 
 ---
 
@@ -16,67 +16,98 @@ ht-degree: 42%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 23482 {#23482}
+## Versión 23862 {#23862}
 
-A continuación se resumen las mejoras continuas de la versión de mantenimiento 23482, que se publicó el jueves, 03 de diciembre de 2025. La versión de mantenimiento anterior fue la 23385.
+A continuación se resumen las mejoras continuas de la versión de mantenimiento 23862, que se publicó el miércoles, 23 de diciembre de 2025. La versión de mantenimiento anterior fue la 23482.
 
-La activación de funcionalidades 2025.12.0 proporciona el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
+La activación de funcionalidades 2026.1.0 proporciona el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
+### Mejoras {#enhancements-23862}
 
-### Mejoras {#enhancements-23482}
+* CQ-4361812: se ha agregado compatibilidad con el parámetro opcional folderPath en la API de REST. Descripción: la API crea un nuevo proyecto de traducción y se colocará dentro de la ruta especificada por el parámetro `folderPath` opcional; de lo contrario, la ruta predeterminada del proyecto raíz es `/content/projects`.
+* FORMS-21960: se ha agregado compatibilidad con la edición de lienzo en local para comunicaciones interactivas, similar a forms-spa.
+* FORMS-22001: se ha agregado orientación para reducir el gran volumen de `/etc.clientlibs/toggles.json` solicitudes en AEM Forms as a Cloud Service.
+* FORMS-22496: exponer el cuerpo de respuesta sin procesar en invocar servicio.
+* FORMS-22495: agregue la propiedad placeholder en la regla SetProperty.
+* FORMS-21925: Formato de notas al pie de página de UBS: muestra todas las notas al pie en el formulario durante la carga del formulario.
+* FORMS-20536: expone una opción de respuesta completa en eventPayload en el editor de reglas sin asignación.
+* SITES-37199: la característica de anotación déclencheur el recorrido del repositorio a través de una llamada `authorizables.json` sin validar que causa una degradación del rendimiento.
+* SITES-37118: Compatibilidad con Commerce Optimizer en Product Cockpit.
+* SITES-38029: Agregar registros para rastrear los eventos push de MSM al modificar.
+* SITES-37050: Compatibilidad con &quot;forzar cancelación de la publicación&quot;, que permite cancelar la publicación de fragmentos de contenido a los que hacen referencia otros recursos publicados.
+* SITES-37142: capacidad añadida para registrar/extraer un fragmento de contenido mediante la PATCH de fragmentos de contenido.
+* SITES-37613: en la API de CF, el punto de conexión de permisos devuelve la comprobación de si el usuario puede registrar un fragmento de contenido o verificar si el usuario puede extraer un fragmento de contenido.
+* SITES-37835: al intentar crear varios fragmentos de contenido con el mismo título, pero sin nombre proporcionado, genere automáticamente un nuevo nombre en lugar de fallar debido a un conflicto.
+* SITES-36823: Edge Delivery con editor universal: elimine la necesidad de realizar asignaciones inversas para los índices.
+* SITES-34751: Edge Delivery con editor universal: error en los tipos de archivo no compatibles y rutas de acceso fuera de los límites al publicar (acceso anticipado).
+* SITES-37888: Edge Delivery con editor universal: utilice el sufijo Alt como sinónimo de Texto para los vínculos.
+* SITES-19850: Edge Delivery con editor universal: agregue compatibilidad con varias hojas de cálculo en las hojas de cálculo.
+* SITES-32490: Edge Delivery con el editor universal: agregue compatibilidad con el componente data-aue y la etiqueta data-aue definida por el usuario a los bloques y al contenido predeterminado.
+* SITES-37794: Edge Delivery con editor universal: simplifica el asistente de creación de páginas.
+* SITES-36963: Migre el extremo de audiencia/segmento a la API de Target v3 para la compatibilidad con Workspace.
 
-* ASSETS-49770: Agregar notificaciones de cuarentena para los resultados de análisis de malware.
-* ASSETS-54079: aplique un formulario de metadatos personalizado para la carpeta de cuarentena.
-* ASSETS-54083: Crear un mecanismo de limpieza de cuarentena programado.
-* ASSETS-54278: Quitar la propiedad `dam:avScanTime` de los recursos.
-* ASSETS-57284: Restringir las cargas de archivos a la carpeta de cuarentena (deshabilitar la función de arrastrar y soltar).
-* ASSETS-57428: oculta la carpeta de cuarentena en la IU de vista de Assets.
-* ASSETS-57626: mejore el comportamiento de reintentos para los trabajos de recursos asincrónicos.
-* ASSETS-57879: Agregar opción de combinación para trabajos asincrónicos de mover/copiar recursos.
-* ASSETS-58099: agregue la configuración para deshabilitar las etiquetas inteligentes mejoradas para todo el entorno.
-* ASSETS-58136: Implementar comentarios de paginación en Search OpenAPI.
-* ASSETS-59402: Añadir extremos de trabajo asincrónicos para la API de eliminación de carpetas: exportar paquetes a la región interna.
-* ASSETS-59966: cambie el nombre del grupo Administradores de malware a Administradores de cuarentena.
-* ASSETS-60166: utilice VideoViewer.js en lugar de direcciones URL basadas en iframe.
-* GRANITE-61378: Herramienta de depuración de permisos: API ListPrincipals.
-* GRANITE-63235: consulta para identificar sitios que utilizan la propiedad `cq:conf`, admite la detección de páginas o versiones antiguas.
-* SITES-30452: API de contenido con ASO: sugerencias de título y descripción, compatibilidad con XWalk, operaciones de parche JSON, enlace principal del servicio IMS.
+### Problemas solucionados {#fixed-issues-23862}
 
-### Problemas solucionados {#fixed-issues-23482}
+* CQ-4361831: se ha corregido un problema que causaba que genai_dropdown_span no estuviera definido.
+* CQ-4360895: se ha corregido el recuento de estado del trabajo de traducción incorrecto en el proyecto durante las actualizaciones simultáneas.
+* CQ-4361599: se ha corregido la omisión de fragmentos de contenido de los trabajos de traducción después de la actualización a 2025.7.
+* CQ-4360747: los trabajos de traducción repetibles fijos crean cargas útiles e déclencheur vacíos con demasiada frecuencia (NullPointerException en ScheduleRepeatTranslationProject).
+* CQ-4359994: se ha corregido la incoherencia del tipo de campo destinationLanguage para proyectos en uno o varios idiomas.
+* SITES-38153: corrige el proveedor de referencia de publicación cf para referencias basadas en uuid.
+* SITES-37594: mejoras de rendimiento para la funcionalidad de modelo por etiquetas.
+* SITES-37337: FragmentCreateProcessor: proporciona detalles de error adicionales en los registros.
+* SITES-33666: mensaje de error no localizado &quot;No se puede imprimir el JSON del fragmento&quot; en el Editor de fragmentos de contenido.
+* SITES-33675: cadena &quot;indefinida&quot; codificada en el Editor de fragmentos de contenido > Contenido asociado.
+* SITES-30715: cadena &#39;General&#39; no localizada en el Editor de fragmentos de contenido.
+* SITES-28592: cadenas no localizadas en el editor del modelo de fragmentos de contenido > Cuadro de diálogo El modelo está bloqueado.
+* SITES-977: Las cadenas &quot;Etiquetas&quot; y &quot;colecciones&quot; no están localizadas en la página Editar fragmento de contenido.
+* SITES-29699: tipos no localizados de recursos permitidos en el Editor de fragmentos de contenido.
+* SITES-25240: Los campos de Call to action del modo Teaser no tienen una etiqueta visible.
+* SITES-24869: información de objeto truncada en el Editor de plantillas > Separador > Política.
+* SITES-19313: El error no está localizado al arrastrar y soltar un componente en la plantilla eliminada en el Editor de plantillas.
+* SITES-18103: cadenas no localizadas en el Editor de páginas > Flujo de trabajo.
+* SITES-17501: cadenas no localizadas en el Editor de plantillas > Editor de directivas de componentes.
+* SITES-15091: las cadenas no están localizadas en las propiedades de componentes de texto del Fragmento de experiencia.
+* SITES-8113: la cadena &quot;Assets&quot; no está localizada en el cuadro de diálogo &quot;Seleccionar imagen&quot; para &quot;Plantillas&quot; en el menú Herramientas.
+* SITES-37587: la creación de Live Copy sigue fallando en PROD con NPE en RolloutManagerImpl.
+* SITES-37335: Propiedades de página de Live Copy que muestran un error en la consola relacionado con las etiquetas cq.
+* SITES-36972: Falta el botón &quot;Despliegue&quot; en la barra de herramientas editable.
+* SITES-36570: La creación de Live Copies falla después de activar la opción Crear Live Copy fragmentada.
+* SITES-36158: el despliegue falla con el trabajo fallado debido a una excepción.
+* SITES-35655: el nuevo editor CF muestra la herencia activa después de que se haya roto.
+* SITES-31425: se muestra el mensaje de error no localizado &quot;Error: el campo {} es obligatorio&quot; en el flujo de trabajo de inicio en los sitios.
+* SITES-19802: Información de objeto no está localizado en el sitio de componentes principales > Tabla de contenido.
+* SITES-36543: se ha corregido un problema que permitía al administrador editar fragmentos de contenido retirados.
+* SITES-36967: se corrigieron las excepciones NullPointerExceptions que se producían al intentar generar datos de miniaturas para fragmentos de contenido rotos.
+* SITES-37791: se ha corregido un problema por el que se producía un error al llamar a FindAndReplace para cadenas que contienen `$`.
+* SITES-37018: ventana emergente de error vacía al copiar la página con una ruta de plantilla no permitida.
+* SITES-36243: Edge Delivery con editor universal: corrija los errores 404 al publicar `sling:OrderedFolder`.
+* SITES-37684: Edge Delivery con editor universal: corrija la degradación del rendimiento en entornos con muchos sitios.
+* SITES-37840: Edge Delivery con editor universal: corrija los errores de publicación debido a un token de acceso obsoleto para Edge Delivery.
+* SITES-37933: Edge Delivery con el editor universal: corrija (cancele) los errores de publicación de los recursos eliminados en los lanzamientos.
+* SITES-37870: Edge Delivery con editor universal: corrija la representación rota de metadatos de página personalizados con la compatibilidad con varios campos habilitada.
+* SITES-37349: Edge Delivery con editor universal: procesa varios campos con entradas únicas como listas con un solo elemento de lista.
+* SITES-36148: Edge Delivery con editor universal: corrija data-aue-label para varios campos compuestos.
 
-* ASSETS-57430: corregir que la carga de vista de Assets omitiera el preprocesamiento: exportar el paquete `repoapi.preprocessing`, actualizar RAPI a la última versión.
-* ASSETS-58190: Reduzca el total de conjeturas innecesariamente alto en la IU de Colecciones.
-* ASSETS-58866: corregir el título, la descripción o el ID del recurso devuelto en las respuestas de OpenAPI.
-* ASSETS-58868: corrija la paginación al ordenar los campos que faltan en los recursos.
-* ASSETS-58920: Corrija la importación masiva de recursos omitiendo el preprocesamiento.
-* ASSETS-59168: corrige la hora de inicio y finalización del análisis que muestra una zona horaria incorrecta.
-* ASSETS-59702: corrija el orden de los eventos cuando el estado del recurso se establezca en Sin estado.
-* ASSETS-59830: volver a poner en cola los trabajos asincrónicos detenidos durante la finalización del pod.
-* ASSETS-49757: correcciones para los eventos de análisis de detección de malware.
-* GRANITE-61019: la corrección `gcMonitor` no se notificó en la primera ejecución después del reinicio de AEM.
-* GRANITE-62717: corrija la administración de contraseñas de `JSafe` con caracteres que no sean ASCII.
-* SITES-34331: se corrigió el tiempo de espera 503 que carga la superposición de despliegue para los usuarios no administradores (`cqLiveSyncCancelled index`).
-
-### Problemas conocidos {#known-issues-23482}
+### Problemas conocidos {#known-issues-23862}
 
 Ninguna.
 
-### Características y API obsoletas {#deprecated-23482}
+### Características y API obsoletas {#deprecated-23862}
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-### Correcciones de seguridad {#security-23482}
+### Correcciones de seguridad {#security-23862}
 
-AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 4 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
+AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 23 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
 
-### Tecnologías integradas {#embedded-tech-23482}
+### Tecnologías integradas {#embedded-tech-23862}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
-| AEM Oak | 1.88.0 | [API de Oak 1.88.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88/index.html) |
+| AEM Oak | 1.88.0 | [API de Oak 1.88.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88.0/index.html) |
 | API AEM SLING | 2.27.6 | [API de Apache Sling 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [Especificación de idioma de la plantilla HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principales de AEM | 2.30.2 | [Componentes principales de WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (valor predeterminado) | [Versiones de Node.js compatibles](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
-

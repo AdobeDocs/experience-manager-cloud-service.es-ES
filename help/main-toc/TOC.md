@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 431c3060b59dca852bdce14b6793dcb5c352139b
+source-git-commit: 94ad8373851ae70ce11abdf4c24732a17d3751ee
 workflow-type: tm+mt
-source-wordcount: '6903'
+source-wordcount: '6909'
 ht-degree: 96%
 
 ---
@@ -102,6 +102,7 @@ ht-degree: 96%
    + Notas de la versión de mantenimiento de AEMaaCS  {#maintenance}
       + [Notas de la versión actuales sobre el mantenimiento](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [Notas de la versión de mantenimiento 2025.12.0](/help/release-notes/maintenance/2025/2025-12-0.md)
          + [Notas de la versión de mantenimiento 2025.11.0](/help/release-notes/maintenance/2025/2025-11-0.md)
          + [Notas de la versión de mantenimiento 2025.10.0](/help/release-notes/maintenance/2025/2025-10-0.md)
          + [Notas de la versión de mantenimiento 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
@@ -415,7 +416,7 @@ ht-degree: 96%
          + [Creación de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [Administrar páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [Propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md)
-         + [Edición de las propiedades de página  &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
+         + [Edición de las propiedades de página  ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
          + [Previsualizar páginas](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [Versiones de página](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -609,7 +610,7 @@ ht-degree: 96%
       + [Creación y uso compartido de carpetas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
-      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
       + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
    + Configuración, administración y ampliación de [!DNL Assets] {#admin}
@@ -822,8 +823,8 @@ ht-degree: 96%
          + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuración de almacenamiento de  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configuración de los servicios en la nube de Salesforce](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
@@ -1256,7 +1257,7 @@ ht-degree: 96%
       + Creación{#authoring}
          + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=es)
          + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
-      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=es)
+      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
    + Selector de fragmentos de contenido {#content-fragment-selector}
       + [Selector de fragmentos de contenido de Micro-Frontend: información general](/help/headless/content-fragment-selector/overview.md)
@@ -1523,8 +1524,8 @@ ht-degree: 96%
       + [Configuración de la segmentación con ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=es)
    + Configuración y ampliación de AEM as a Cloud Service  {#configuring-and-extending}
       + Ampliación de AEM con App Builder {#app-builder}
-         + [Ampliación de AEM mediante el Generador de aplicaciones para desarrolladores de Adobe](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
-         + [Introducción al Generador de aplicaciones](/help/implementing/developing/extending/app-builder/videos/introduction.md)
+         + [Ampliación de AEM mediante App Builder para desarrolladores de Adobe](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
+         + [Introducción a App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
          + [SDK y CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
          + [Creación de una aplicación](/help/implementing/developing/extending/app-builder/videos/create.md)
