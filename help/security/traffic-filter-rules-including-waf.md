@@ -4,10 +4,10 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: d967706a000edc8c06193d1a8a39a1931fffbb99
 workflow-type: tm+mt
-source-wordcount: '4582'
-ht-degree: 100%
+source-wordcount: '4610'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ Las reglas de filtro de tráfico se pueden utilizar para bloquear o permitir sol
 
 La mayoría de estas reglas de filtro de tráfico están disponibles para todos los clientes Sites y Forms de AEM as a Cloud Service. Conocidas como *reglas filtro de tráfico estándar*, funcionan principalmente en las propiedades y en los encabezados de solicitud, entre ellas, la dirección IP, el nombre de host, la ruta y el agente de usuario. Las reglas de filtro de tráfico estándar incluyen reglas de límite de velocidad para evitar picos de tráfico.
 
-Una subcategoría de reglas de filtro de tráfico requiere una licencia de seguridad mejorada o una licencia de protección WAF-DDoS. Estas potentes reglas se conocen como reglas de filtro de tráfico WAF (Web Application Firewall) (o *reglas WAF* para abreviar) y tienen acceso a los [indicadores WAF](#waf-flags-list) que se describen más adelante en este artículo.
+Una subcategoría de reglas de filtro de tráfico requiere una licencia de Seguridad extendida (anteriormente denominada Protección WAF-DDoS) o Seguridad extendida para atención médica (anteriormente denominada Seguridad mejorada). Estas potentes reglas se conocen como reglas de filtro de tráfico WAF (Web Application Firewall) (o *reglas WAF* para abreviar) y tienen acceso a los [indicadores WAF](#waf-flags-list) que se describen más adelante en este artículo.
 
 Las reglas de filtro de tráfico se pueden implementar mediante canalizaciones de configuración de Cloud Manager para los tipos de entorno de desarrollo, ensayo y producción. El archivo de configuración se puede implementar en Entornos de desarrollo rápido (RDE) mediante herramientas de línea de comandos.
 
@@ -111,7 +111,7 @@ A continuación, se presenta un proceso de extremo a extremo recomendado de alto
 
 Puede configurar *reglas de filtro de tráfico* que coincidan en cuanto a patrones como direcciones IP, agente de usuario, encabezados de solicitud, nombre de host, ubicación geográfica y url.
 
-Los clientes que adquieran la oferta de seguridad mejorada o de seguridad de protección WAF-DDoS también pueden configurar una categoría especial de reglas de filtro de tráfico denominada *reglas de filtro de tráfico WAF* (o *reglas WAF* para abreviar) que hacen referencia a uno o varios [indicadores WAF](#waf-flags-list).
+Los clientes que conceden licencia para la oferta de seguridad extendida (anteriormente denominada Protección WAF-DDoS) o seguridad extendida para atención médica (anteriormente denominada Seguridad mejorada) también pueden configurar una categoría especial de reglas de filtro de tráfico denominadas *reglas de filtro de tráfico WAF* (o *reglas WAF* para abreviar) que hacen referencia a uno o más [indicadores WAF](#waf-flags-list).
 
 Este es un ejemplo de un conjunto de reglas de filtro de tráfico, que también incluye una regla WAF.
 
@@ -430,7 +430,7 @@ Los límites de velocidad se evalúan en función del tráfico que llega al bord
 
 **Ejemplo 1**
 
-Esta regla bloquea un cliente durante 5 milisegundos cuando supera un promedio de 60 solicitudes/segundo (por cada CDN POP) en los 10 últimos segundos:
+Esta regla bloquea a un cliente durante 5 minutos cuando supera un promedio de 60 req/seg (por POP de CDN) en los últimos 10 segundos:
 
 ```
 kind: "CDN"
@@ -641,7 +641,7 @@ Hay disponible [un tutorial](#tutorial) con instrucciones concretas sobre cómo 
 
 ## Reglas de inicio recomendadas {#recommended-starter-rules}
 
-Adobe recomienda empezar con las reglas de filtro de tráfico que se indican a continuación y perfeccionarlas con el tiempo. Las *reglas estándar* están disponibles con una licencia de Sites o Forms, mientras que las *reglas WAF* requieren una licencia de seguridad mejorada o de protección WAF-DDoS.
+Adobe recomienda empezar con las reglas de filtro de tráfico que se indican a continuación y perfeccionarlas con el tiempo. Las *reglas estándar* están disponibles con una licencia de Sites o Forms, mientras que las *reglas de WAF* requieren una licencia de seguridad extendida (anteriormente denominada Protección WAF-DDoS) o de seguridad extendida para atención médica (anteriormente denominada Seguridad mejorada).
 
 ### Reglas estándar recomendadas {#recommended-nonwaf-starter-rules}
 
