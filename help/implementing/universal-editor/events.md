@@ -4,10 +4,10 @@ description: Obtenga información sobre los diferentes eventos que envía el edi
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: ac361c31b116466cc9a718640c1de4e4ef396fba
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 100%
+source-wordcount: '530'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ Los eventos incluyen la carga útil de la solicitud y la respuesta y se activan 
 
 ## Eventos de actualización de contenido {#content-events}
 
-### aue:content-add {#content-add}
+### aue&amp;dos puntos;content-add {#content-add}
 
 El evento `aue:content-add` se activa cuando se añade un nuevo componente a un contenedor.
 
@@ -53,7 +53,7 @@ La carga útil es contenido del servicio del editor universal, con contenido de 
 }
 ```
 
-### aue:content-details {#content-details}
+### aue&amp;dos puntos;content-details {#content-details}
 
 El evento `aue:content-details` se activa cuando se carga un componente en el panel de propiedades.
 
@@ -70,7 +70,7 @@ La carga útil es el contenido del componente y, de forma opcional, su esquema.
 }
 ```
 
-### aue:content-move {#content-move}
+### aue&amp;dos puntos;content-move {#content-move}
 
 El evento `aue:content-move` se activa cuando se mueve un componente.
 
@@ -89,7 +89,7 @@ La carga útil es el componente, el contenedor de origen y el contenedor de dest
 }
 ```
 
-### aue:content-patch {#content-patch}
+### aue&amp;dos puntos;content-patch {#content-patch}
 
 El evento `aue:content-patch` se activa cuando los datos de un componente se actualizan en el panel de propiedades.
 
@@ -108,7 +108,7 @@ La carga útil es un parche JSON de las propiedades actualizadas.
 }
 ```
 
-### aue:content-remove {#content-remove}
+### aue&amp;dos puntos;eliminar contenido {#content-remove}
 
 El evento `aue:content-remove` se activa cuando se quita un componente de un contenedor.
 
@@ -124,7 +124,7 @@ La carga útil es el ID del elemento del componente eliminado.
 }
 ```
 
-### aue:content-update {#content-update}
+### aue&amp;dos puntos;content-update {#content-update}
 
 El evento `aue:content-update` se activa cuando las propiedades de un componente se actualizan en contexto.
 
@@ -180,7 +180,7 @@ Carga útil de la respuesta
 
 ## Eventos de IU {#ui-events}
 
-### aue:ui-preview {#ui-preview}
+### aue&amp;dos puntos;ui-preview {#ui-preview}
 
 El evento `aue:ui-preview` se activa cuando el modo de edición de la página se cambia a **Previsualizar**.
 
@@ -192,7 +192,7 @@ La carga útil está vacía para este evento.
 }
 ```
 
-### aue:ui-edit {#ui-edit}
+### aue&amp;dos puntos;ui-edit {#ui-edit}
 
 El evento `aue:ui-edit` se activa cuando el modo de edición de la página se cambia a **Editar**.
 
@@ -204,7 +204,7 @@ La carga útil está vacía para este evento.
 }
 ```
 
-### aue:ui-viewport-change {#ui-viewport-change}
+### aue&amp;dos puntos;ui-viewport-change {#ui-viewport-change}
 
 El evento `aue:ui-viewport-change` se activa cuando se cambia el tamaño del visor móvil.
 
@@ -219,7 +219,7 @@ La carga útil son las dimensiones del visor.
 }
 ```
 
-### aue:initialized {#initialized}
+### aue&amp;dos puntos;inicializado {#initialized}
 
 El evento `aue:initialized` se activa para informar a la página remota de que se ha cargado de forma correcta en el editor universal.
 
@@ -257,4 +257,3 @@ La carga útil está vacía para este evento.
 ## Recursos adicionales {#additional-resources}
 
 * [Llamadas del editor universal](/help/implementing/universal-editor/calls.md)
-
