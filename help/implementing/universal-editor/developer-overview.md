@@ -4,7 +4,7 @@ description: Si es un desarrollador de AEM interesado en cómo funciona el edito
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 392fdb0a0c1982f9be59cb530e86f13aeea3316b
 workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 100%
@@ -118,7 +118,7 @@ La cookie del token de inicio de sesión se envía a AEM como un dominio de terc
 
    ![Propiedad OSGi para cookies del mismo sitio](assets/dev-cross-origin-osgi.png)
 
-1. Cambie la propiedad **Atributo SameSite para la cookie de token de inicio de sesión** a `None`.
+1. Cambie la propiedad **Atributo SameSite para la cookie de token de inicio de sesión** a `Partitioned`.
 
 1. Guarde los cambios.
 
