@@ -4,9 +4,9 @@ description: Descubra cómo puede configurar el editor de texto enriquecido (RTE
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
+source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,13 @@ Descubra cómo puede configurar el editor de texto enriquecido (RTE) en el edito
 El editor universal proporciona un editor de texto enriquecido (RTE) tanto en el sitio como en el panel de propiedades para permitir a los autores aplicar cambios de formato a medida que editan su texto.
 
 Este RTE se puede configurar usando [filtros de componente.](/help/implementing/universal-editor/filtering.md) Este documento describe qué opciones de configuración están disponibles junto con ejemplos.
+
+>[!NOTE]
+>
+>Al iniciar un proyecto de editor universal, todas las funciones de texto enriquecido compatibles con el back-end (AEM con Edge Delivery o implementación sin encabezado) se activan automáticamente.
+>
+>* Puede desactivar las opciones que no necesite.
+>* No se admite la activación de opciones que no son compatibles con el tipo de proyecto.
 
 ## Estructura de configuración {#structure}
 
