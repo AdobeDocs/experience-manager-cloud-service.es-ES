@@ -4,7 +4,7 @@ Description: Learn how to configure an Azure SQL Database connection in AEM Form
 Keywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 40193d89f2a4ef864a564eb9932403531eaf1ff7
+source-git-commit: e29f70aa1a8164787c7d310a05c24d7e501803e5
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 15%
@@ -16,7 +16,7 @@ ht-degree: 15%
 Forms adaptable en Adobe Experience Manager (AEM) se puede integrar con bases de datos externas para almacenar o recuperar datos.
 Este artículo describe cómo conectar un formulario adaptable a una base de datos SQL de Azure mediante JDBC a través de AEM as a Cloud Service.
 
-> 
+>
 > 
 > Esta guía se aplica a entornos AEM as a Cloud Service que no son de zona protegida con redes avanzadas habilitadas.
 
@@ -40,7 +40,7 @@ La integración de Forms adaptable con Azure SQL ofrece varias ventajas:
 
   ![Crear Azure Db](/help/forms/assets/create-azure-db.png)
 
-* Habilite [red avanzada configurada con una IP de salida dedicada](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) para la base de datos de Azure creada.
+* Habilite [red avanzada configurada con una IP de salida dedicada](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) para la base de datos de Azure creada.
 
   >[!NOTE]
   >
@@ -53,7 +53,7 @@ La integración de Forms adaptable con Azure SQL ofrece varias ventajas:
    * **portDest**: `1433` (puerto predeterminado para Azure SQL)
 Por ejemplo: `portOrigin: 30433 → portDest: 1433`
 
-     > 
+     >
      > 
      > Puede ponerse en contacto con el servicio de asistencia de Adobe Cloud Manager para configurar el reenvío de puertos.
 
@@ -84,7 +84,7 @@ Incluya la [dependencia del controlador SQL](https://central.sonatype.com/artifa
 
 >[!NOTE]
 >
-> Para incluir la dependencia SQL en su proyecto, consulte la sección [Dependencias del controlador SQL](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
+> Para incluir la dependencia SQL en su proyecto, consulte la sección [Dependencias del controlador SQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
 
 **Paso 3: Agregar Configuración JDBC**
 
@@ -115,7 +115,7 @@ Incluya la [dependencia del controlador SQL](https://central.sonatype.com/artifa
        }
    ```
 
-   > 
+   >
    >
    > Reemplace `jdbc.username` con el nombre de usuario de Azure real y `jdbc.password` con la contraseña segura real.
 
