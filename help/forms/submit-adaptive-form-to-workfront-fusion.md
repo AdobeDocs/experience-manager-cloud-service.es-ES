@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 100%
+source-wordcount: '1437'
+ht-degree: 90%
 
 ---
 
@@ -88,7 +88,7 @@ Para añadir un webhook:
 
 >[!NOTE]
 >
-> Asegúrese de que la cuenta técnica sea miembro del grupo **usuarios de formularios**; de lo contrario, se producirá un error al añadir un webhook.
+> Asegúrese de que la cuenta técnica sea miembro del grupo **forms-users**; de lo contrario, se producirá un error al agregar un webhook. Para agregar la cuenta técnica al grupo forms-users en AEM, [haga clic aquí](#add-technical-account-to-the-forms-users-group).
 
 #### Añadir una conexión a un webhook {#add-connection}
 
@@ -197,6 +197,27 @@ Aparece el cuadro de diálogo **Propiedades del formulario**.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
 >[!ENDTABS]
+
+## Agregar una cuenta técnica al grupo forms-users
+
+Para agregar la cuenta técnica al grupo `forms-users` en AEM, realice los siguientes pasos:
+
+1. Vaya a **Herramientas** > **Seguridad** > **Usuarios**.
+1. En la lista de usuarios, busque el correo electrónico de la cuenta técnica de su organización. Por ejemplo, busquemos al usuario como `Workfront-test`.
+1. Haga clic en el usuario para ver sus detalles.
+1. En los detalles del usuario, seleccione la ficha **Grupos**.
+1. Seleccione `forms-users` de la lista desplegable **[!UICONTROL Seleccionar grupo]**.
+1. Haga clic en **Guardar y cerrar**.
+
+![Agregar cuenta técnica al grupo](/help/forms/assets/add-technical-account.png)
+
+También puede comprobar la pertenencia del usuario al grupo:
+
+1. Vaya a **Herramientas** > **Seguridad** > **Grupos**.
+1. Busque el grupo `forms-users`.
+1. Abra el grupo y vaya a la ficha **Miembros** y confirme que el usuario aparece en la lista de miembros del grupo.
+
+![grupo de verificación](/help/forms/assets/verify-group.png)
 
 ## Prácticas recomendadas {#best-practices}
 

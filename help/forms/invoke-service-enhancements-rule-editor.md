@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: invocar mejoras del servicio en VRE, rellenar opciones desplegables utilizando invocar servicio, establecer panel repetible utilizando la salida del servicio de invocación, establecer panel utilizando la salida del servicio de invocación, usar el parámetro de salida del servicio de invocación para validar otro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1860'
 ht-degree: 3%
 
 ---
@@ -39,6 +39,8 @@ Estas son algunas ventajas de utilizar la operación Invocar servicio en el edit
 El editor de reglas visual permite crear reglas para los controladores de éxito y de error para las operaciones **Invocar servicio** en función de sus respuestas de salida. La siguiente imagen muestra **Invocar servicio** en el editor de reglas visuales para un formulario adaptable:
 
 ![Invocar controladores de servicio](/help/forms/assets/invoke-service-rule-editor.png)
+
+### Agregar un controlador de éxito y un controlador de errores
 
 Para agregar el controlador de éxito o de error, haga clic en **[!UICONTROL Agregar controlador de éxito]** o en **[!UICONTROL Agregar controlador de error]**, respectivamente.
 
@@ -160,6 +162,10 @@ Para conseguirlo, cree una regla en el cuadro de texto `Pet ID` para invocar el 
 
 ![Establecer valor desplegable](/help/forms/assets/set-dropdownoption.png)
 
+>[!NOTE]
+>
+> Consulte la sección [Agregar controladores de éxito y de errores](#adding-success-handler-and-failure-handler) para obtener información sobre cómo establecer controladores de éxito y de errores.
+
 #### Salida
 
 Escriba `101` en el cuadro de texto `Pet ID` para rellenar dinámicamente las opciones desplegables en función del valor introducido.
@@ -181,6 +187,10 @@ Cree una regla en el cuadro de texto `Pet ID` para invocar el servicio `getPetBy
 
 ![Crear regla para el panel repetible](/help/forms/assets/create-rule-repeatable-panel.png)
 
+>[!NOTE]
+>
+> Consulte la sección [Agregar controladores de éxito y de errores](#adding-success-handler-and-failure-handler) para obtener información sobre cómo establecer controladores de éxito y de errores.
+
 #### Salida
 
 Escriba `101` en el cuadro de texto `Pet ID` para rellenar dinámicamente el panel repetible en función del valor de entrada.
@@ -199,6 +209,10 @@ Este caso de uso muestra cómo establecer dinámicamente el valor de un panel en
 #### Implementación
 
 Cree una regla en el cuadro de texto `Pet ID` para invocar el servicio `getPetById`. En **[!UICONTROL Agregar controlador de éxito]**, agregue otra respuesta de controlador de éxito. Establezca el valor del cuadro de texto `categoryname` en `category.name` en la regla.
+
+>[!NOTE]
+>
+> Consulte la sección [Agregar controladores de éxito y de errores](#adding-success-handler-and-failure-handler) para obtener información sobre cómo establecer controladores de éxito y de errores.
 
 ![Crear regla para el panel repetible](/help/forms/assets/set-panel-values.png)
 
