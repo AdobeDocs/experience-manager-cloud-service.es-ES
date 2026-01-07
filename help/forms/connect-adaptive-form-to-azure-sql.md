@@ -40,7 +40,7 @@ La integración de Forms adaptable con Azure SQL ofrece varias ventajas:
 
   ![Crear Azure Db](/help/forms/assets/create-azure-db.png)
 
-* Habilite [red avanzada configurada con una IP de salida dedicada](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) para la base de datos de Azure creada.
+* Habilite [red avanzada configurada con una IP de salida dedicada](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) para la base de datos de Azure creada.
 
   >[!NOTE]
   >
@@ -84,7 +84,7 @@ Incluya la [dependencia del controlador SQL](https://central.sonatype.com/artifa
 
 >[!NOTE]
 >
-> Para incluir la dependencia SQL en su proyecto, consulte la sección [Dependencias del controlador SQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
+> Para incluir la dependencia SQL en su proyecto, consulte la sección [Dependencias del controlador SQL](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
 
 **Paso 3: Agregar Configuración JDBC**
 
