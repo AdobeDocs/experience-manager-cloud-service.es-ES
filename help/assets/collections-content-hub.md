@@ -3,7 +3,7 @@ title: Administrar colecciones en Content Hub
 description: Obtenga información sobre cómo administrar colecciones en Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
+source-git-commit: 69140e717ebc25284f715f73a3abb0b36b66deb2
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 2%
@@ -136,7 +136,7 @@ Obtenga información sobre cómo [descargar un recurso de [!DNL Content Hub]](do
 
 ## Compartir recursos disponibles en una colección {#share-assets-available-within-collection}
 
-También puede compartir los recursos disponibles en una colección. Asegúrese de [habilitar el uso compartido de vínculos públicos en Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing). Vaya a la pestaña **[!UICONTROL Colecciones]**. Seleccione el icono ![compartir icono](assets/share.svg) en la tarjeta de colección. Se copia el vínculo compartido. Puede compartir el vínculo copiado con el destinatario. Más información sobre [compartir recursos en [!DNL Content Hub]](share-assets-content-hub.md).
+También puede compartir los recursos disponibles en una colección. Asegúrese de [habilitar el uso compartido de vínculos públicos en Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub). Vaya a la pestaña **[!UICONTROL Colecciones]**. Seleccione el icono ![compartir icono](assets/share.svg) en la tarjeta de recursos. Se copia el vínculo compartido. Puede compartir el vínculo copiado con el destinatario. Más información sobre [compartir recursos en [!DNL Content Hub]](share-assets-content-hub.md).
 
 Content Hub Collections proporciona herramientas de gobernanza completas para una administración eficaz de los recursos, incluidos permisos de uso compartido personalizables y funciones de colaboración. Desde el acceso de solo lectura hasta el control administrativo completo, esta configuración admite la buena gobernanza en la distribución de recursos. Al compartir un recurso de forma individual o como parte de una colección, el ámbito de acceso viene determinado por el nivel de acceso actual de la colección asignado al usuario. Como alternativa, no puede compartir una colección privada.
 
