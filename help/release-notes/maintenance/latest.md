@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
+source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1090'
 ht-degree: 19%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 19%
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
 ## Versión 23862 {#23862}
+
+>[!CAUTION]
+>
+> La 23862 de la versión se ha convertido en privada. Próximamente se proporcionará una nueva versión de mantenimiento.
 
 A continuación se resumen las mejoras continuas de la versión de mantenimiento 23862, que se publicó el miércoles, 23 de diciembre de 2025. La versión de mantenimiento anterior fue la 23482.
 
