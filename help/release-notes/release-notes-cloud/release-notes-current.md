@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d2e36674f6052d73c418a428e11e3c29075ab24c
+source-git-commit: 0411792d22efa70f98777971eb4f16700820abe5
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 50%
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -192,7 +192,7 @@ OSGi properties:
 
 #### Desuso de tiempo de ejecución de Java 11 {#java11-runtime-deprecation}
 
-Adobe actualizó los entornos **Stage** y **Production** al tiempo de ejecución de **Java 21 de mayor rendimiento** el 14 de octubre de 2025. A partir de **finales de enero**, ni AEM Cloud Service SDK ni ningún entorno de nube funcionarán con el tiempo de ejecución de Java 11.
+Adobe actualizó los entornos **Stage** y **Production** al tiempo de ejecución de **Java 21 de mayor rendimiento** el 14 de octubre de 2025. A partir del **9 de febrero**, ni AEM Cloud Service SDK ni ningún entorno de nube funcionarán con el tiempo de ejecución de Java 11.
 
 >[!NOTE]
 >
