@@ -6,59 +6,38 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 580d6505ffdf25f7bfb3a3a84f054dcf76c05cdd
+source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '965'
 ht-degree: 7%
 
 ---
 
 
-# API de comunicaciones AEM Forms: Información general
+# API de AEM Forms: Información general
 
-Las API de comunicaciones de AEM Forms proporcionan un completo conjunto de API nativas de la nube diseñadas para ayudar a las empresas a automatizar los flujos de trabajo de los documentos.
+Las API de AEM Forms proporcionan un completo conjunto de API nativas de la nube diseñadas para ayudar a las empresas a automatizar los flujos de trabajo de los documentos.
 
 Las API de AEM Forms están estructuradas y se accede a ellas a través de dos consolas principales:
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/): Adobe Developer Console es la puerta de enlace a las API de Adobe, los eventos, el tiempo de ejecución y App Builder.
 
-* [AEM Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console): AEM Developer Console proporciona herramientas para depurar e inspeccionar entornos de AEM as a Cloud Service.
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console): AEM Developer Console proporciona acceso a detalles, configuraciones, cuentas técnicas y credenciales de servicio a nivel de entorno para admitir tareas operativas y de integración.
 
-Cada consola proporciona acceso a diferentes API y servicios para tareas de procesamiento, generación, conversión, cifrado y comunicación de documentos. Las API admiten diferentes [métodos de autenticación](#authentication-methods).
+Diferentes API admiten diferentes [métodos de autenticación](#authentication-methods).
 
 ## Métodos de autenticación
 
-Las API admiten varios métodos de autenticación para la integración segura entre sus aplicaciones y los servicios de Adobe:
+Las distintas API de Forms utilizan diferentes métodos de autenticación en función de su cronología de lanzamiento:
 
-| Aspecto | Servidor a servidor OAuth (recomendado) | JWT (token web JSON) |
-|-------------|------------------------------------------|---------------------------|
-| Descripción | Método moderno y seguro para acceder a la API sin interacción del usuario. | Método antiguo que utiliza tokens firmados para el acceso. |
-| Configurar ubicación | ADOBE DEVELOPER CONSOLE y AEM DEVELOPER CONSOLE | Solo AEM Developer Console |
-| Seguridad | Alto: utiliza credenciales y ámbitos del cliente | Moderado: depende de la administración de claves |
-| Escalabilidad | Altamente escalable para integraciones back-end | Limitado, adecuado para uso heredado |
-| Administración de tokens | Generación y renovación automáticas | Firma y rotación manuales de tokens |
-| Estado | Recomendado | Obsoleto |
+* [Servidor a servidor de OAuth](/help/forms/oauth-api-authetication.md)
+* [Servidor a servidor JWT (token web JSON)](/help/forms/jwt-api-authentication.md)
 
+Las API anteriores admiten la autenticación de servidor a servidor basada en JWT, que se configura y administra mediante AEM Developer Console. Las API más recientes utilizan la autenticación de servidor a servidor OAuth y se configuran mediante Adobe Developer Console.
 
 >[!NOTE]
 >
-> Haga clic en los vínculos siguientes para obtener más información sobre :-
-> 
-> * [Servidor a servidor OAuth (recomendado)](/help/forms/oauth-api-authetication.md)
-> * [JWT (token web JSON)](/help/forms/jwt-api-authentication.md)
-
-<!--### Execution Models
-
-The following table highlights the key differences between Synchronous (On-Demand) and Asynchronous (Batch) execution models supported in AEM Forms Communications APIs:
-
-| Feature | Synchronous (On-Demand) | Batch (Asynchronous) |
-|---------|-------------------------|----------------------|
-| **Execution Model** | Real-time, immediate | Queued, scheduled |
-| **Response Time** | Seconds | Minutes to hours |
-| **Volume** | Single or few documents | Hundreds to thousands |
-| **Testing Environment** | Author & Publish | Author Only |
-| **Use Case** | User-triggered actions | Scheduled bulk operations |
-| **Console Access** | ADC & AEM Developer Console | AEM Developer Console Only |-->
+> Adobe está estandarizando el método de autenticación en todas las API y está incorporando gradualmente las API a Adobe Developer Console, que admite el método de autenticación de servidor a servidor OAuth.
 
 ## Resumen de clasificación de API
 
@@ -72,7 +51,7 @@ Todas las API de AEM Forms se dividen en dos partes principales:
 |--------------|----------------------------|--------------------------|
 | Función | Administrar las operaciones de tiempo de ejecución y entrega de formularios adaptables | Generación y manipulación de documentos |
 | Casos de uso | - Procesamiento de formularios<br>- Relleno previo de datos<br>- Envíos de formularios<br>- Administración de borradores | - Generación de PDF<br>- Combinación de documentos<br>- Procesamiento por lotes<br>- Operaciones de impresión |
-| Método de autorización | Admite métodos de autenticación de servidor a servidor/usuario de OAuth. | Solo admite la autenticación de servidor a servidor OAuth. |
+| Método de autorización | Admite métodos de autenticación de servidor a servidor/usuario de OAuth. | Admite la autenticación de servidor a servidor, ya sea JWT o OAuth según la API. Una API no puede admitir ambos métodos de autenticación. |
 
 ### API de comunicaciones de AEM Forms
 
@@ -85,66 +64,66 @@ En la tabla siguiente se enumeran todas las [API de comunicaciones de AEM Forms]
 
 | Punto final de API | Descripción | Modelo de ejecución | Método de autenticación |
 | ----- | ------ |------- | ------ |
-| [/adobe/forms/batch/output/config](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/CreateBatchConfig) | Crea una nueva configuración por lotes para los trabajos de generación de documentos. | Asincrónica/Por Lotes | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/{configName}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetBatchConfigbyName) | Recupera detalles de una configuración de lote específica. | Asincrónica/Por Lotes | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/configs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetAllBatchConfigs) | Devuelve una lista de todas las configuraciones por lotes disponibles. | Asincrónica/Por Lotes | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/{configName}/execution](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/StartBatchRun) | Inicia una ejecución de generación de resultados por lotes utilizando una configuración. | Asincrónica/Por Lotes | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/{configName}/execution/{executionId}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | Recupera el estado de ejecución de un trabajo por lotes. | Asincrónica/Por Lotes | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/{configName}/executions](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Enumera todas las instancias en ejecución para una configuración por lotes específica. | Asincrónica/Por Lotes | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | Genera resultados de PDF de forma sincrónica en función de plantillas y datos. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Genera formatos de salida listos para imprimir (por ejemplo, PCL, PostScript). | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | Genera salida AFP para impresión de gran volumen. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/document/generate/pdfform](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) | Procesa un formulario PDF Forms (XFA/XDP) con datos combinados. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/generate/pdfform/jobs/{id}/status](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobStatus) | Recupera el estado de un trabajo de generación de formularios de PDF. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/generate/pdfform/jobs/{id}/result](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobResult) | Obtiene el resultado de un trabajo de formulario de PDF completado. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/batch/output/config](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/CreateBatchConfig) | Crea una nueva configuración por lotes para los trabajos de generación de documentos. | Asincrónica/Por Lotes | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/{configName}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetBatchConfigbyName) | Recupera detalles de una configuración de lote específica. | Asincrónica/Por Lotes | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/configs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetAllBatchConfigs) | Devuelve una lista de todas las configuraciones por lotes disponibles. | Asincrónica/Por Lotes | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/{configName}/execution](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/StartBatchRun) | Inicia una ejecución de generación de resultados por lotes utilizando una configuración. | Asincrónica/Por Lotes | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/{configName}/execution/{executionId}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | Recupera el estado de ejecución de un trabajo por lotes. | Asincrónica/Por Lotes | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/{configName}/executions](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Enumera todas las instancias en ejecución para una configuración por lotes específica. | Asincrónica/Por Lotes | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | Genera resultados de PDF de forma sincrónica en función de plantillas y datos. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Genera formatos de salida listos para imprimir (por ejemplo, PCL, PostScript). | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | Genera salida AFP para impresión de gran volumen. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/generate/pdfform](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) | Procesa un formulario PDF Forms (XFA/XDP) con datos combinados. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/generate/pdfform/jobs/{id}/status](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobStatus) | Recupera el estado de un trabajo de generación de formularios de PDF. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/generate/pdfform/jobs/{id}/result](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobResult) | Obtiene el resultado de un trabajo de formulario de PDF completado. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
 
 
 #### API de manipulación de documentos
 
 | Punto final de API | Descripción | Modelo de ejecución | Método de autenticación |
 | ------------------ | ---------------- | ----------| ---------- |
-| [/adobe/forms/assembler/ddx/invoke](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/DDX-execution/operation/InvokeDDX) | Ejecuta instrucciones DDX para combinar, dividir o manipular archivos PDF. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/assembler/pdfa/convert](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-conversion/operation/ConvertToPDFA) | Convierte un documento de PDF al formato PDF/A. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/assembler/pdfa/validate](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-validation/operation/CheckIsPDFA) | Valida si un PDF cumple el estándar PDF/A. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/assembler/ddx/invoke](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/DDX-execution/operation/InvokeDDX) | Ejecuta instrucciones DDX para combinar, dividir o manipular archivos PDF. | Sincrónica | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/assembler/pdfa/convert](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-conversion/operation/ConvertToPDFA) | Convierte un documento de PDF al formato PDF/A. | Sincrónica | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/assembler/pdfa/validate](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-validation/operation/CheckIsPDFA) | Valida si un PDF cumple el estándar PDF/A. | Sincrónica | [JWT](/help/forms/jwt-api-authentication.md) |
 
 #### API de conversión de documentos
 
 | Punto final de API | Descripción | Modelo de ejecución | Método de autenticación |
 |--------- | -------|---------|----------------------|
-| [/adobe/document/convert/pdftoxdp](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Conversion/paths/~1convert~1pdftoxdp/post) | Convierte un formulario PDF en formato XDP. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/convert/pdftoxdp](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Conversion/paths/~1convert~1pdftoxdp/post) | Convierte un formulario PDF en formato XDP. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
 
 #### API de extracción de documento
 
 | Punto final de API | Descripción | Modelo de ejecución | Método de autenticación |
 |---------| -------|---------|----------------------|
-| [/adobe/forms/doc/v1/extract/pdfproperties](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1pdfproperties/post) | Extrae propiedades e información estructural de una PDF. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/extract/usagerights](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/extractUsageRights) | Extrae los derechos de uso incrustados en un PDF. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/extract/metadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1metadata/post) | Extrae metadatos como título, autor y palabras clave. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/extract/data](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/exportData) | Extrae datos de formulario (XML/JSON) de PDF forms. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/extract/security](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1security/post) | Extrae la configuración de seguridad, como permisos y cifrado. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/extract/pdfproperties](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1pdfproperties/post) | Extrae propiedades e información estructural de una PDF. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/extract/usagerights](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/extractUsageRights) | Extrae los derechos de uso incrustados en un PDF. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/extract/metadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1metadata/post) | Extrae metadatos como título, autor y palabras clave. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/extract/data](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/exportData) | Extrae datos de formulario (XML/JSON) de PDF forms. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/extract/security](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1security/post) | Extrae la configuración de seguridad, como permisos y cifrado. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
 
 #### API de transformación de documento
 
 
 | Punto final de API | Descripción | Modelo de ejecución | Método de autenticación |
 |--------|---------|---------|----------------------|
-| [/adobe/document/transform/metadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1transform~1metadata/post) | Actualiza o agrega metadatos en un documento de PDF. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/field/signature/add](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1add/post) | Agrega un campo de firma digital a un PDF. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/field/signature/clear](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1clear/post) | Borra el contenido de un campo de firma. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/field/signature/remove](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1remove/post) | Quita un campo de firma de un PDF. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/transform/metadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1transform~1metadata/post) | Actualiza o agrega metadatos en un documento de PDF. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/field/signature/add](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1add/post) | Agrega un campo de firma digital a un PDF. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/field/signature/clear](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1clear/post) | Borra el contenido de un campo de firma. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/field/signature/remove](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1remove/post) | Quita un campo de firma de un PDF. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
 
 #### API de Document Assurance
 
 | Punto final de API | Descripción | Modelo de ejecución | Método de autenticación |
 |---------|-------|---------|----------------------|
-| [/adobe/document/assurance/usagerights](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/applyUsageRights) | Aplica derechos de uso a un PDF (por ejemplo, comentario, relleno, firma). | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/secure/encrypt](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1encrypt/post) | Codifica un PDF con contraseña o seguridad de certificado. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/assurance/decrypt](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1decrypt/post) | Descifra un documento de PDF protegido. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/assurance/sign](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1sign/post) | Firma digitalmente un documento de PDF. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/assurance/certificfy](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1certify/post) | Certifica un PDF con un certificado digital. | Sincrónica | [Servidor OAuth a servidor](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/assurance/usagerights](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/applyUsageRights) | Aplica derechos de uso a un PDF (por ejemplo, comentario, relleno, firma). | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/secure/encrypt](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1encrypt/post) | Codifica un PDF con contraseña o seguridad de certificado. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/assurance/decrypt](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1decrypt/post) | Descifra un documento de PDF protegido. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/assurance/sign](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1sign/post) | Firma digitalmente un documento de PDF. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/assurance/certificfy](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1certify/post) | Certifica un PDF con un certificado digital. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
 
 
-## Próximos pasos
+## Pasos relacionados
 
 Obtenga información sobre cómo establecer el entorno para las API de comunicaciones de Forms sincrónicas (bajo demanda) y asincrónicas (por lotes):
 
