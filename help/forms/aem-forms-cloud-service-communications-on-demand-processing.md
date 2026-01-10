@@ -6,9 +6,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: 77da2f4ddcd9074a79883f18a33b6fe50e32b266
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2396'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Asegúrese de tener los derechos de acceso y los permisos necesarios antes de em
 
 >[!NOTE]
 >
-> Para obtener más información sobre la asignación de funciones y la concesión de acceso a los usuarios, consulte el artículo [Agregar usuarios y funciones](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Para obtener más información sobre la asignación de funciones y la concesión de acceso a los usuarios, consulte el artículo [Agregar usuarios y funciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Acceso al repositorio Git**
 
@@ -112,7 +112,7 @@ Puede ver o acceder a los detalles del entorno de AEM Cloud Service mediante cua
 
 >[!ENDTABS]
 
-#### &#x200B;4. Encontrar el extremo de AEM Forms
+#### 1.4. Encontrar el punto final de AEM Forms
 
 En la página de detalles de **Entorno**, observe su instancia de URL de AEM.
 
@@ -259,7 +259,7 @@ Genere los tokens de acceso manualmente en Adobe Developer Console:
 
 >[!TAB Para Producción]
 
-Generar tokens mediante programación usando la API [Adobe IMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Generar tokens mediante programación usando la API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenciales requeridas:**
 
@@ -369,6 +369,11 @@ A continuación se explican los parámetros de configuración:
 
 ### Paso 5: Configuración de la canalización
 
+#### 5.1 Iniciar sesión en Adobe Cloud Manager
+
+1. Vaya a [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+2. Inicie sesión con su Adobe ID
+
 #### 5.1 Localización de la tarjeta Canalizaciones
 
 1. Busque la tarjeta **Canalizaciones** en la página Información general del programa
@@ -441,7 +446,7 @@ e. Haga clic en **&quot;Guardar&quot;** para crear la canalización
 
 ### Paso 6: Implementar la configuración
 
-Ahora que se ha creado la canalización, implemente la configuración de `api.yaml`:
+Ahora que se ha creado la canalización, implemente la configuración de `api.yaml`
 
 #### 6.1 Desde la información general de las canalizaciones
 
@@ -740,7 +745,7 @@ Puede abrir el [PDF generado](/help/forms/assets/create-pdf.png) para verlo.
 **Síntomas:**
 
 - Las solicitudes de API devuelven `404 Not Found`
-- Mensaje de error: *No se encontró el recurso* o no se encontró el extremo de la API *3&rbrace;*
+- Mensaje de error: *No se encontró el recurso* o no se encontró el extremo de la API *3}*
 
 **Causa posible:**
 
