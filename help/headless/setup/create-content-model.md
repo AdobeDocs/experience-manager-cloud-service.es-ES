@@ -4,9 +4,9 @@ description: Defina la estructura del contenido que creará y servirá con las c
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '230'
 ht-degree: 50%
 
 ---
@@ -19,7 +19,7 @@ Defina la estructura del contenido que creará y servirá con las capacidades si
 
 [Ahora que ha creado una configuración](create-configuration.md), puede utilizarla para crear modelos de fragmentos de contenido.
 
-Los modelos de fragmentos de contenido definen la estructura de los datos y el contenido que creará y administrará en AEM. Sirven como una especie de andamiaje para el contenido. Al elegir crear contenido, los autores elegirán entre los modelos de fragmentos de contenido que defina, que los guiarán en la creación de contenido.
+Los Modelos de fragmento de contenido definen la estructura de los datos y el contenido que creará y gestionará en AEM. Sirven como una especie de andamiaje para el contenido. Al elegir crear contenido, los autores elegirán entre los modelos de fragmentos de contenido que defina, que los guiarán en la creación de contenido.
 
 ## Cómo crear un modelo de fragmento de contenido {#how-to-create-a-content-fragment-model}
 
