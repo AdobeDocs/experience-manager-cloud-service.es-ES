@@ -3,18 +3,15 @@ title: 'API de comunicaciones AEM Forms: Información general'
 description: Información general sobre las API de comunicaciones de AEM Forms, incluidos los métodos de autenticación y la referencia completa de la API
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '941'
 ht-degree: 7%
 
 ---
 
 
-# API de AEM Forms: Información general
+# API de comunicaciones AEM Forms: Información general
 
 Las API de AEM Forms proporcionan un completo conjunto de API nativas de la nube diseñadas para ayudar a las empresas a automatizar los flujos de trabajo de los documentos.
 
@@ -22,7 +19,7 @@ Las API de AEM Forms están estructuradas y se accede a ellas a través de dos c
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/): Adobe Developer Console es la puerta de enlace a las API de Adobe, los eventos, el tiempo de ejecución y App Builder.
 
-* [AEM Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console): AEM Developer Console proporciona acceso a detalles, configuraciones, cuentas técnicas y credenciales de servicio a nivel de entorno para admitir tareas operativas y de integración.
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console): AEM Developer Console proporciona acceso a detalles, configuraciones, cuentas técnicas y credenciales de servicio a nivel de entorno para admitir tareas operativas y de integración.
 
 Diferentes API admiten diferentes [métodos de autenticación](#authentication-methods).
 
@@ -35,9 +32,10 @@ Las distintas API de Forms utilizan diferentes métodos de autenticación en fun
 
 Las API anteriores admiten la autenticación de servidor a servidor basada en JWT, que se configura y administra mediante AEM Developer Console. Las API más recientes utilizan la autenticación de servidor a servidor OAuth y se configuran mediante Adobe Developer Console.
 
+<!--
 >[!NOTE]
 >
-> Adobe está estandarizando el método de autenticación en todas las API y está incorporando gradualmente las API a Adobe Developer Console, que admite el método de autenticación de servidor a servidor OAuth.
+> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.-->
 
 ## Resumen de clasificación de API
 
@@ -70,9 +68,9 @@ En la tabla siguiente se enumeran todas las [API de comunicaciones de AEM Forms]
 | [/adobe/forms/batch/output/config/{configName}/execution](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/StartBatchRun) | Inicia una ejecución de generación de resultados por lotes utilizando una configuración. | Asincrónica/Por Lotes | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/forms/batch/output/config/{configName}/execution/{executionId}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | Recupera el estado de ejecución de un trabajo por lotes. | Asincrónica/Por Lotes | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/forms/batch/output/config/{configName}/executions](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Enumera todas las instancias en ejecución para una configuración por lotes específica. | Asincrónica/Por Lotes | [JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | Genera resultados de PDF de forma sincrónica en función de plantillas y datos. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Genera formatos de salida listos para imprimir (por ejemplo, PCL, PostScript). | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | Genera salida AFP para impresión de gran volumen. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | Genera resultados de PDF de forma sincrónica en función de plantillas y datos. | Sincrónica | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Genera formatos de salida listos para imprimir (por ejemplo, PCL, PostScript). | Sincrónica | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | Genera salida AFP para impresión de gran volumen. | Sincrónica | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/document/generate/pdfform](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) | Procesa un formulario PDF Forms (XFA/XDP) con datos combinados. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
 | [/adobe/document/generate/pdfform/jobs/{id}/status](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobStatus) | Recupera el estado de un trabajo de generación de formularios de PDF. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
 | [/adobe/document/generate/pdfform/jobs/{id}/result](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobResult) | Obtiene el resultado de un trabajo de formulario de PDF completado. | Sincrónica | [OAuth](/help/forms/oauth-api-authetication.md) |
