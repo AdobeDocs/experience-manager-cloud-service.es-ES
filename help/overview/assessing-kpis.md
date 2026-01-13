@@ -1,13 +1,13 @@
 ---
-title: Acceso a los indicadores clave de rendimiento (KPI)
-description: Obtenga información sobre cómo acceder a los KPI y definir el proceso de creación de informes
+title: Evaluación de los indicadores clave de rendimiento (KPI)
+description: Obtenga información sobre cómo evaluar los KPI y definir el proceso de creación de informes
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 2a3c93d1a2e214a584fca5ede9a9189143d04889
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_assesskpis"
 >title="Evaluación de los indicadores clave de rendimiento (KPI)"
 >abstract="Antes de comenzar el lanzamiento de Adobe Experience Manager, todas las personas que tengan participación en el proyecto deben saber cuáles son los tres KPI principales y por qué importan."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=es" text="Alineación de los KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=es" text="Elección del equipo adecuado"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Alineación de los KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Elección del equipo adecuado"
 
 Antes de comenzar el lanzamiento de Adobe Experience Manager, todas las personas que tengan participación en el proyecto deben saber cuáles son los tres KPI principales y por qué importan.
 
@@ -29,7 +29,7 @@ En un estudio de 2018, IDC analizó el valor comercial que varias grandes empres
 
 Para obtener los mismos beneficios importantes, su organización necesita tener objetivos claros para la implementación de su Experience Manager. Y necesita tener KPI que ayuden a todos a centrarse en esos objetivos.
 
-## Acceso a los KPI
+## Evaluación de los indicadores clave de rendimiento (KPI)
 
 Al evaluar los KPI, asegúrese de que:
 
@@ -43,7 +43,7 @@ Después de confirmar que dispone de los KPI adecuados, debe averiguar cómo y c
 
 Al definir el proceso de creación de informes, tenga en cuenta las siguientes preguntas:
 
-1. ¿Quién es la audiencia de este informe de KPI? Para cada KPI, asegúrese de que ha identificado un patrocinador ejecutivo (alguien que hará que usted y el resto del equipo rindan cuentas de esa métrica), así como una lista más amplia de personas que deben recibir informes regulares.
+1. ¿Quién es el público de este informe de KPI? Para cada KPI, asegúrese de que ha identificado un patrocinador ejecutivo (alguien que hará que usted y el resto del equipo rindan cuentas de esa métrica), así como una lista más amplia de personas que deben recibir informes regulares.
 1. ¿Con qué frecuencia informará sobre este KPI?
 1. ¿Cómo se rastreará este KPI? ¿Quién extraerá los datos? ¿Qué fuentes de datos usará esa persona o equipo? ¿Hay algo que pueda hacer ahora mismo para facilitar ese proceso?
 1. ¿Cuál será el formato del informe?
