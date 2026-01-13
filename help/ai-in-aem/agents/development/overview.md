@@ -3,7 +3,7 @@ title: Información general del agente de desarrollo
 description: Obtenga información sobre cómo el agente de desarrollo de AEM analiza las canalizaciones con errores en Cloud Manager y los registros de compilación para sugerir correcciones de código y acelerar la depuración.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3e565ba0cd53d9064a9aed20f4d6663781759b63
+source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
@@ -17,7 +17,7 @@ El agente de desarrollo ayuda a los desarrolladores y administradores de AEM a c
 
 En la actualidad, el agente puede recuperar los estados de canalización y ayudarle a solucionar errores en los pasos de generación sugiriendo correcciones, lo que ahorra tiempo al depurar implementaciones de AEM as a Cloud Service en entornos de desarrollo, fase y producción. Examina los registros de generación y el código relacionado para recomendar una corrección que puede aplicar manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478010?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -77,8 +77,6 @@ Puede acceder al agente de desarrollo a través del asistente de IA que se encue
 
 El trabajo de solución de problemas de canalización del agente de desarrollo requiere la función Cloud Manager - Desarrollador o la función Cloud Manager - Administrador de programas.
 
-
-
 ## Ejemplos de peticiones de datos {#sample-prompts}
 
 | Indicación | Resultado |
@@ -93,4 +91,3 @@ La resolución de problemas de la canalización funciona en el paso de compilaci
 Ver [Registros de acceso y descarga](/help/implementing/cloud-manager/manage-logs.md).
 
 La solución de problemas de canalización no es compatible con los programas que utilizan BYOGIT (Traer su propio Git).
-
