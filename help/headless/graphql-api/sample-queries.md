@@ -4,7 +4,7 @@ description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encab
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6f90bfebf2c9898bf8c1ad2643f8edc4ff4dda53
 workflow-type: tm+mt
 source-wordcount: '1927'
 ht-degree: 89%
@@ -374,7 +374,7 @@ Entonces puede utilizar una consulta para devolver detalles de la `name` y `tags
 
 **Consulta de muestra**
 
-```xml
+```graphql
 query {
   cityList(
     includeVariations: true,
@@ -390,7 +390,7 @@ query {
 
 **Resultados de muestra**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -1662,7 +1662,7 @@ Esta consulta busca lo siguiente:
 
 **Consulta de muestra**
 
-```xml
+```graphql
 query {
   articleList(
     includeVariations: true  ){
@@ -1689,7 +1689,7 @@ Esta consulta busca lo siguiente:
 
 **Consulta de muestra**
 
-```xml
+```graphql
 {
   articleList(
     includeVariations: true,
