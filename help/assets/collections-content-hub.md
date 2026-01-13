@@ -3,16 +3,16 @@ title: Administrar colecciones en Content Hub
 description: Obtenga información sobre cómo administrar colecciones en Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 69140e717ebc25284f715f73a3abb0b36b66deb2
+source-git-commit: 91d8df7e002c899c3c4cfda0f10bb42af4423ca6
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1295'
 ht-degree: 2%
 
 ---
 
+
 # Administrar colecciones en [!DNL Content Hub] {#manage-collections}
 
-<!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![Administrar colecciones](assets/manage-collection.png)
 
 Una colección hace referencia a un conjunto de recursos que se pueden compartir entre los usuarios. Una colección puede incluir recursos de diferentes ubicaciones manteniendo al mismo tiempo su integridad referencial.
@@ -196,8 +196,3 @@ Puede marcar colecciones como favoritas en Content Hub, lo que facilita su organ
    Las colecciones marcadas como Favoritos ahora se muestran en la ficha **[!UICONTROL Mis favoritos]**. También puede quitar las colecciones de **[!UICONTROL Mis favoritos]**. Para ello, haga clic en **[!UICONTROL Más acciones]** ![Icono de más acciones](assets/do-not-localize/more-actions.png) y seleccione **[!UICONTROL Quitar de Favoritos]**.
 
    ![Quitar colección como favorita](assets/remove-favorite-collection.png)
-
->[!NOTE]
->
->[Anclar o desanclar colección](#pin-unpin-collection) y [Marcar colecciones como favoritas](#favorite-collection) son características de disponibilidad limitada. Puede [crear y enviar](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) un caso de asistencia al cliente de Adobe para habilitarlo para su implementación.
-
