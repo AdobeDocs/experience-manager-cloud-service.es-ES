@@ -27,7 +27,7 @@ Conectores de [!DNL Experience Manager] as a Cloud Service para [!DNL Adobe Targ
 
 * Una nueva implementación de interfaz de usuario reemplaza la implementación basada en la IU clásica.
 
-* Se han simplificado los cuadros de diálogo de la interfaz de usuario, lo que permite crear marcos de trabajo para la asignación de variables y otras configuraciones [!DNL Adobe Launch]. Consulte [Integración de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) e [Integración de Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
+* Se han simplificado los cuadros de diálogo de la interfaz de usuario, lo que permite crear marcos de trabajo para la asignación de variables y otras configuraciones [!DNL Adobe Launch]. Consulte [Integración de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html?lang=es) e [Integración de Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html?lang=es).
 
 * Las configuraciones ahora se almacenan en `/conf` lugar de `/etc/cloudsettings` en el repositorio de Experience Manager.
 
@@ -57,7 +57,7 @@ Conectores de [!DNL Experience Manager] as a Cloud Service para [!DNL Adobe Targ
 
 AEM Commerce ahora está disponible en Cloud Service.
 
-Consulte [Introducción a AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) para obtener más información.
+Consulte [Introducción a AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=es) para obtener más información.
 
 ## Componentes principales {#core-components}
 
@@ -68,7 +68,7 @@ La versión 2.11.0 de los [componentes principales de AEM](https://experiencelea
 * Introducción a un nuevo [componente visualizador de PDF](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * Ya está disponible la compatibilidad con las páginas móviles aceleradas (AMP) de los componentes principales. Produce experiencias de cliente más rápidas al hacer la transición de página instantáneamente al entrar al sitio desde un resultado de búsqueda móvil de Google, lo que mejora la participación del usuario y la optimización de los motores de búsqueda.
-Consulte [Compatibilidad con AMP para los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) para obtener más información.
+Consulte [Compatibilidad con AMP para los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=es) para obtener más información.
 
 * Compatibilidad con la versión 1.0.2 de [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es).
 
@@ -139,7 +139,7 @@ Consulte esta sección para conocer las novedades y las actualizaciones de Cloud
 
 * La versión anterior de CRA no se podía ejecutar en Adobe Experience Manager (AEM) 6.1. Se agregó compatibilidad explícita para permitir usuarios en el grupo de administradores.
 
-  Consulte [Instalar CRA en AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) para obtener más información.
+  Consulte [Instalar CRA en AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=es#installing-on-aem61) para obtener más información.
 
 * La marca de tiempo de caducidad que se muestra en el informe de resumen era incorrecta.
 
