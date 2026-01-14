@@ -17,7 +17,7 @@ ht-degree: 98%
 >id="intro_aem_cloudservice_architecture"
 >title="Introducción a la arquitectura de AEM as a Cloud Service"
 >abstract="En esta pestaña, puede ver la nueva arquitectura de AEM as a Cloud Service y comprender los cambios. AEM ha resultado en una arquitectura dinámica con un número variable de imágenes, por lo que es importante tomarse un tiempo para comprender la arquitectura de la nube."
->additional-url="https://video.tv.adobe.com/v/330542/" text="Información general sobre la arquitectura"
+>additional-url="https://video.tv.adobe.com/v/346180?captions=spa" text="Información general sobre la arquitectura"
 
 Adobe Experience Manager (AEM) as a Cloud Service ofrece un conjunto de servicios componibles para la creación y gestión de experiencias de alto impacto.
 
