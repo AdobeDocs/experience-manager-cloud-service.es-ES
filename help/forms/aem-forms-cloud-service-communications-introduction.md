@@ -5,9 +5,9 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: e2716b7f9612d5769c422a0fc2915a604ea40de5
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2789'
 ht-degree: 94%
 
 ---
@@ -298,10 +298,12 @@ Después de la incorporación, para habilitar la capacidad de comunicaciones par
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
-## Recursos adicionales {#see-also}
-
-* [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
-* [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [Arquitectura de AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-architecture.md)
-* [Documentación de referencia de API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-* [Funciones del programa para primeros usuarios](/help/forms/early-access-ea-features.md)
+>[!MORELIKETHIS]
+>
+>* [Introducción a Comunicaciones de AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitectura de AEM Forms as a Cloud Service para Formularios adaptables y API de comunicaciones](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [API de comunicaciones Forms - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [Documentación de referencia de API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+>* [Características del programa de adopción anticipada](/help/forms/early-access-ea-features.md)

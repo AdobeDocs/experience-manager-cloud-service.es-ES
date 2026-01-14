@@ -3,7 +3,7 @@ title: 'API de comunicaciones AEM Forms: Información general'
 description: Información general sobre las API de comunicaciones de AEM Forms, incluidos los métodos de autenticación y la referencia completa de la API
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 7%
@@ -19,7 +19,7 @@ Las API de AEM Forms están estructuradas y se accede a ellas a través de dos c
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/): Adobe Developer Console es la puerta de enlace a las API de Adobe, los eventos, el tiempo de ejecución y App Builder.
 
-* [AEM Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console): AEM Developer Console proporciona acceso a detalles, configuraciones, cuentas técnicas y credenciales de servicio a nivel de entorno para admitir tareas operativas y de integración.
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console): AEM Developer Console proporciona acceso a detalles, configuraciones, cuentas técnicas y credenciales de servicio a nivel de entorno para admitir tareas operativas y de integración.
 
 Diferentes API admiten diferentes [métodos de autenticación](#authentication-methods).
 
@@ -185,4 +185,4 @@ Obtenga información sobre cómo establecer el entorno para las API de comunicac
 >* [Arquitectura de AEM Forms as a Cloud Service para Formularios adaptables y API de comunicaciones](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [Procesamiento de comunicaciones - API a petición](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [API de comunicaciones Forms - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

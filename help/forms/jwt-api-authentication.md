@@ -3,10 +3,10 @@ title: Cómo configurar la autenticación JWT (token web JSON)
 description: Obtenga información sobre cómo configurar la autenticación JWT (token web JSON) para Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 3%
+source-wordcount: '427'
+ht-degree: 10%
 
 ---
 
@@ -20,7 +20,7 @@ La autenticación de servidor a servidor JWT en AEM Forms, especialmente para in
 Antes de empezar, asegúrese de que se cumplen los siguientes requisitos previos:
 
 * Asegúrese de que tiene acceso a [Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) específico del entorno que utiliza.
-* Asigne la función [Administrador del sistema o Desarrollador para acceder a Adobe Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Asigne la función [Administrador del sistema o Desarrollador para acceder a Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Cómo generar un token de acceso usando credenciales de JWT
 
@@ -106,7 +106,7 @@ Siga los pasos a continuación, que muestran cómo generar un token de acceso a 
 
 >[!NOTE]
 >
-> Para obtener más información sobre las credenciales del servicio y cómo generar un token de acceso mediante la API de IMS de Adobe, [haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
+> Para obtener más información sobre las credenciales del servicio y cómo generar un token de acceso mediante la API de IMS de Adobe, [haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 Ahora puede utilizar el token de acceso generado para hacer una llamada de API a entornos de desarrollo, fase o producción.
 
@@ -168,3 +168,10 @@ Obtenga información sobre cómo establecer el entorno para las API de comunicac
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
 
+>[!MORELIKETHIS]
+>
+>* [Introducción a Comunicaciones de AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitectura de AEM Forms as a Cloud Service para Formularios adaptables y API de comunicaciones](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [API de comunicaciones Forms - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

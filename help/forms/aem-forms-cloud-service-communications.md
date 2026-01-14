@@ -4,10 +4,10 @@ description: Combine datos automáticamente con plantillas XDP y PDF o genere sa
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 100%
+source-wordcount: '725'
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ Una operación sincrónica es un proceso de generación de documentos de forma l
 
 Las operaciones de API de un solo inquilino admiten dos tipos de autenticación:
 
-* **Autenticación básica**: la autenticación básica es un esquema de autenticación simple integrado en el protocolo HTTP. El cliente envía peticiones HTTP con el encabezado Autorización que contiene la palabra “Basic” seguida de un espacio y un nombre de usuario:contraseña de cadena codificados en Base64. Por ejemplo, para autorizar como administrador/administrador, el cliente envía Basic [nombre de usuario de cadena codificado en Base64]: [contraseña de cadena codificada en Base64].
+* **Autenticación básica**: la autenticación básica es un esquema de autenticación simple integrado en el protocolo HTTP. El cliente envía solicitudes HTTP con el encabezado Autorización que contiene la palabra Básico seguida de un espacio y un nombre de usuario de cadena codificado en Base64 :password. Por ejemplo, para autorizar como administrador/administrador, el cliente envía Basic [nombre de usuario de cadena codificado en Base64]: [contraseña de cadena codificada en Base64].
 
 * **Autenticación basada en tokens:** la autenticación basada en tokens utiliza un token de acceso (token de autenticación del portador) para realizar solicitudes a Experience Manager as a Cloud Service. AEM Forms as a Cloud Service proporciona API para recuperar de forma segura el token de acceso. Para recuperar y utilizar el token para autenticar una solicitud:
 
@@ -57,6 +57,9 @@ Las operaciones de API de un solo inquilino admiten dos tipos de autenticación:
   >
   >Adobe recomienda utilizar la autenticación basada en token en un entorno de producción.
 
+  >[!IMPORTANT]
+  >
+  > Para obtener más información, consulte [Autenticación servidor a servidor OAuth](/help/forms/oauth-api-authetication.md) y [Autenticación servidor a servidor JWT](/help/forms/jwt-api-authentication.md).
 <!-- 
 
 ### Authenticate a multi-tenant API
@@ -143,7 +146,7 @@ La [documentación de referencia de la API](https://developer.adobe.com/experien
 
 >[!NOTE]
 >
->Solo los miembros del grupo de usuarios de Forms pueden acceder a las API de Comunicaciones.
+> Conozca los pasos detallados para invocar las API de comunicación de AEM Forms. Consulte el artículo [Invocar las API de comunicaciones de AEM Forms mediante la autenticación de servidor a servidor OAuth](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md).
 
 >[!MORELIKETHIS]
 >
@@ -151,3 +154,4 @@ La [documentación de referencia de la API](https://developer.adobe.com/experien
 >* [Arquitectura de AEM Forms as a Cloud Service para Formularios adaptables y API de comunicaciones](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [API de comunicaciones Forms - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

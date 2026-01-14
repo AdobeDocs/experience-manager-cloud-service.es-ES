@@ -3,10 +3,10 @@ title: Cómo configurar la autenticación de servidor a servidor OAuth
 description: Obtenga información sobre cómo configurar la autenticación de servidor a servidor OAuth para Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 3%
+source-wordcount: '833'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ La autenticación de servidor a servidor OAuth permite un acceso seguro y basado
 
 Antes de empezar, asegúrese de que se cumplen los siguientes requisitos previos:
 
-* Asegúrese de que tiene [acceso a Adobe Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/access-rights) específico para el entorno que utiliza.
+* Asegúrese de que tiene [acceso a Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) específico para el entorno que utiliza.
 * [Asigne el rol de Administrador del sistema o Desarrollador en Adobe Admin Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) para habilitar el acceso a Adobe Developer Console.
 
 ## Cómo generar un token de acceso mediante la autenticación de servidor a servidor OAuth
@@ -177,7 +177,7 @@ Genere los tokens de acceso manualmente en Adobe Developer Console:
 
 >[!TAB Para Producción]
 
-Generar tokens mediante programación usando la API [Adobe IMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Generar tokens mediante programación usando la API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenciales requeridas:**
 
@@ -288,4 +288,10 @@ Obtenga información sobre cómo establecer el entorno para las API de comunicac
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-
+>[!MORELIKETHIS]
+>
+>* [Introducción a Comunicaciones de AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitectura de AEM Forms as a Cloud Service para Formularios adaptables y API de comunicaciones](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [API de comunicaciones Forms - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
