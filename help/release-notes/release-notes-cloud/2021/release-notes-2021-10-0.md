@@ -4,10 +4,10 @@ description: Notas de la versión 2021.10.0 de la versión de  [!DNL Adobe Exper
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
@@ -46,7 +46,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de octubre de 
 
 ### Nueva característica en el canal de prelanzamiento [!DNL Assets] {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] recorte inteligente y muestra de imagen ahora cuenta con la tecnología de los servicios de Sensei más recientes, que generan recortes y muestras mejorados. Además, se ha lanzado una mejora para generar diferentes contenidos de recorte, para la misma proporción de aspecto pero en diferentes resoluciones. Además, las ediciones manuales se conservan al reprocesar si no hay cambios en la anchura y la altura del perfil de imagen.
+* [!DNL Dynamic Media] recorte inteligente y muestra de imagen ahora cuenta con la tecnología de los servicios de IA más recientes, que generan recortes y muestras mejorados. Además, se ha lanzado una mejora para generar diferentes contenidos de recorte, para la misma proporción de aspecto pero en diferentes resoluciones. Además, las ediciones manuales se conservan al reprocesar si no hay cambios en la anchura y la altura del perfil de imagen.
 
 * Las etiquetas inteligentes se aplican automáticamente a los recursos mediante microservicios de recursos, en lugar de Smart Content Services. El modelo subyacente se actualiza para mejorar los resultados de etiquetado y reducir el sesgo. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -62,11 +62,11 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * **Analytics para Forms adaptable**: ahora puede capturar y realizar un seguimiento del comportamiento del inicio de sesión y no inicio de sesión (anónimo) mediante Adobe Analytics para Forms adaptable para recopilar información del usuario. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario.
 
-### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms-oct-2021}
+### Nuevas funciones disponibles en el canal de versión preliminar de [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
 * **Externalización de los datos de flujo de trabajo de AEM para un procesamiento seguro**: puede almacenar datos de flujos de trabajo AEM en el proceso (datos de variables de flujo de trabajo de AEM) que contengan elementos de datos personales sensibles (SPD) en un repositorio administrado por el cliente para un procesamiento seguro. Los elementos de datos y las variables de flujo de trabajo no se almacenan en el repositorio de AEM y se recuperan bajo demanda de un repositorio administrado por el cliente mientras se procesa el flujo de trabajo.
 
-### Características beta de [!DNL Forms] {#what-is-new-forms-oct2021-beta}
+### Características beta de [!DNL Forms]  {#what-is-new-forms-oct2021-beta}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=es) le ayudan a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modos sincrónico y por lotes.  Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
 
@@ -79,15 +79,15 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 ### Novedades {#what-is-new-cif}
 
-* CIF El complemento es compatible con la versión 2.4.3 más reciente de Commerce con nuevas API y esquemas de GraphQL
+* El complemento de CIF es compatible con la última versión 2.4.3 de Commerce con nuevas API y esquemas de GraphQL
 
-* Los autores pueden añadir vínculos a páginas de productos y catálogos en campos de texto mediante el editor de texto enriquecido (RTE). CIF Se ha añadido un icono de a la barra de herramientas de RTE que abre los selectores para buscar y seleccionar rápidamente el producto o la categoría sin salir del contexto.
+* Los autores pueden añadir vínculos a páginas de productos y catálogos en campos de texto mediante el editor de texto enriquecido (RTE). Se ha añadido un icono de CIF a la barra de herramientas de RTE que abre los selectores para buscar y seleccionar rápidamente el producto o la categoría sin salir del contexto.
 
-* AEM El carro de compras emergente y el cierre de compra existentes se han sustituido por páginas dedicadas al carro de compras y al cierre de compra de la. Los componentes de estas páginas se crean utilizando los componentes Peregrine ampliables de Adobe Commerce
+* El carro de compras emergente y el cierre de compra existentes se han sustituido por páginas de carro de compras y cierre de compra dedicadas de AEM. Los componentes de estas páginas se crean utilizando los componentes Peregrine ampliables de Adobe Commerce
 
-* Los comerciantes pueden ocultar determinadas categorías del catálogo de productos en la navegación mediante el backend de Commerce. CIF El componente principal Navegación de la aplicación respeta la configuración del backend de comercio &quot;incluir en el menú&quot; para mostrar u ocultar categorías en la navegación
+* Los comerciantes pueden ocultar determinadas categorías del catálogo de productos en la navegación mediante el backend de Commerce. El componente principal de navegación de CIF respeta la configuración del backend de comercio &quot;incluir en el menú&quot; para mostrar u ocultar categorías en la navegación
 
-* AEM Venia devuelve el error HTTP 404 si no se encuentra la categoría o la página del producto
+* Tienda AEM Venia devuelve el error HTTP 404 si no se encuentra la categoría o la página del producto
 
 ## Cloud Manager {#cloud-manager}
 
@@ -115,7 +115,7 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
 
 * El encabezado de respuesta `x-request-id` ahora está visible en el sitio de pruebas de la API en [www.adobe.io](https://www.adobe.io/). Este encabezado es útil cuando se envían problemas de servicio de atención al cliente para la resolución de problemas.
 
-* Como usuario, veo que la tarjeta de canalización con cero canalizaciones me proporciona la guía adecuada.
+* Como usuario, veo que la tarjeta de canalizaciones con cero canalizaciones me proporciona la guía adecuada.
 
 * Ya está disponible una nueva página Actividad donde se pueden ver actividades como las ejecuciones de canalización y código junto con los detalles asociados. Con el tiempo, las actividades enumeradas en esta página se ampliarán en alcance junto con los detalles proporcionados.
 
@@ -148,13 +148,13 @@ La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.10.0 es 
 
 * A fin de prepararse para algunos cambios, ahora se hará referencia a las canalizaciones de implementación existentes y se etiquetarán en la interfaz de usuario como canalizaciones de **Pila completa**.
 
-* La tarjeta de canalización se ha actualizado para que ahora muestre una sola cara integrada que muestre tanto las canalizaciones de producción como las que no son de producción y el usuario puede seleccionar Ejecutar/Pausar/Reanudar directamente en el menú de acción asociado con cada canalización.
+* La tarjeta de canalizaciones se ha actualizado para que ahora muestre una sola cara integrada que muestre tanto las canalizaciones de producción como las que no son de producción y el usuario puede seleccionar Ejecutar/Pausar/Reanudar directamente en el menú de acción asociado con cada canalización.
 
 * Un usuario con el rol de administrador de implementación ahora puede eliminar la canalización de producción de forma autoservicio mediante la interfaz de usuario.
 
 * Se han actualizado las experiencias de adición y edición de canalización para que ahora utilicen modelos modernos y conocidos.
 
-* Los usuarios de Cloud Manager ahora pueden enviar comentarios directamente desde la interfaz de usuario a través del botón **Comentarios** en la parte superior derecha de la página de aterrizaje.
+* Los usuarios de Cloud Manager ahora pueden enviar comentarios directamente desde la interfaz de usuario a través del botón **Comentarios** en la parte superior derecha de la página de destino.
 
 * Los gráficos SLA anuales ahora se pueden descargar desde la interfaz de usuario de Cloud Manager.
 

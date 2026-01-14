@@ -4,10 +4,10 @@ description: Notas de la versión 2021.11.0 de la versión de  [!DNL Adobe Exper
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 96%
+source-wordcount: '1059'
+ht-degree: 94%
 
 ---
 
@@ -36,9 +36,9 @@ Eche un vistazo al vídeo [Información general sobre la versión de diciembre d
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
-* El recorte inteligente y la muestra de la imagen de Dynamic Media ahora cuenta con la tecnología de los últimos servicios de Sensei, que generan recortes y muestras mejorados. Además, se ha lanzado una mejora para generar diferentes contenidos de recorte, para la misma proporción de aspecto pero en diferentes resoluciones. Además, las ediciones manuales se conservan al reprocesar si no hay cambios en la anchura y la altura del perfil de imagen.
+* El recorte inteligente y la muestra de imágenes de Dynamic Media ahora cuenta con la tecnología de los últimos servicios de IA de Adobe, que generan recortes y muestras mejorados. Además, se ha lanzado una mejora para generar diferentes contenidos de recorte, para la misma proporción de aspecto pero en diferentes resoluciones. Además, las ediciones manuales se conservan al reprocesar si no hay cambios en la anchura y la altura del perfil de imagen.
 
-### Nuevas funciones del canal de prelanzamiento de [!DNL Assets] {#assets-prerelease-features}
+### Nuevas funciones del canal de versión preliminar de [!DNL Assets] {#assets-prerelease-features}
 
 * [!DNL Dynamic Media]: ahora puede utilizar la interfaz de Dynamic Media de AEM para configurar los ajustes generales y de publicación en lugar de tener que pasar por la aplicación de escritorio Dynamic Media Classic.
 
@@ -52,7 +52,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de diciembre d
 
 * **Externalización de los datos de flujo de trabajo de AEM para un procesamiento seguro**: puede almacenar datos de flujos de trabajo AEM en el proceso (datos de variables de flujo de trabajo de AEM) que contengan elementos de datos personales sensibles (SPD) en un repositorio administrado por el cliente para un procesamiento seguro. Los elementos de datos y las variables de flujo de trabajo no se almacenan en el repositorio de AEM y se recuperan a petición de un repositorio administrado por el cliente mientras se procesa el flujo de trabajo.
 
-### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
+### Nuevas funciones disponibles en el canal de versión preliminar de [!DNL Forms] {#prerelease-features-forms}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=es) le ayudan a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modos sincrónico y por lotes.  Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
 
@@ -89,7 +89,7 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
 * Los usuarios ahora pueden aprovechar las nuevas canalizaciones de front-end para implementar exclusivamente el código front-end de forma acelerada. Consulte [Canalizaciones principales de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para obtener más información.
 
   >[!IMPORTANT]
-  >AEM Debe estar en la versión de la `2021.10.5933.20211012T154732Z` o superior para utilizar nuevas canalizaciones front-end.
+  >Debe estar en la versión de AEM `2021.10.5933.20211012T154732Z` o superior para utilizar nuevas canalizaciones front-end.
 
 * La duración de la canalización Calidad del código se reduce significativamente al realizar el análisis del código de una manera más eficiente sin necesidad de crear una imagen de AEM completa. Este cambio se implementará progresivamente durante las semanas siguientes a la publicación.
 
@@ -101,7 +101,7 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
 
 * El encabezado de respuesta `x-request-id` ahora está visible en el sitio de pruebas de la API en [www.adobe.io](https://www.adobe.io/). Este encabezado es útil cuando se envían problemas de servicio de atención al cliente para la resolución de problemas.
 
-* Como usuario, veo que la tarjeta de canalización con cero canalizaciones me proporciona la guía adecuada.
+* Como usuario, veo que la tarjeta de canalizaciones con cero canalizaciones me proporciona la guía adecuada.
 
 * Ya está disponible una nueva página Actividad donde se pueden ver actividades como las ejecuciones de canalización y código junto con los detalles asociados. Con el tiempo, las actividades enumeradas en esta página se ampliarán en alcance junto con los detalles proporcionados.
 

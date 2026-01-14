@@ -4,16 +4,16 @@ description: Notas de la versión 2022.6.0 de la versión de  [!DNL Adobe Experi
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 77%
+source-wordcount: '632'
+ht-degree: 74%
 
 ---
 
 # Notas de la versión 2022.6.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión de la función para la versión 2022.6.0 de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión de la funcionalidad para la versión 2022.6.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Eche un vistazo al vídeo Información general sobre la versión de junio de 202
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
-Experience Manager Assets utiliza las capacidades de Adobe Sensei AI para ahora [distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente al ingerirlos](/help/assets/color-tag-images.md). Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen. Puede configurar el número de colores, dentro de un rango de uno a 40, que están etiquetados en una imagen para que pueda buscar imágenes basadas en esos colores más adelante.
+Experience Manager Assets usa funcionalidades de Adobe AI para ahora [distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente al ingerirlos](/help/assets/color-tag-images.md). Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen. Puede configurar el número de colores, dentro de un rango de uno a 40, que están etiquetados en una imagen para que pueda buscar imágenes basadas en esos colores más adelante.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

@@ -1,13 +1,13 @@
 ---
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
-description: "[!DNL Adobe Experience Manager] notas de la versión as a Cloud Service para 2020.6.0."
+description: '[!DNL Adobe Experience Manager] Notas de la versión de as a Cloud Service para 2020.6.0.'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 92%
+source-wordcount: '1938'
+ht-degree: 91%
 
 ---
 
@@ -50,9 +50,9 @@ La versión 2.9.0 de los [componentes principales](https://experienceleague.adob
 
 ## Novedades de Foundations en AEM as a Cloud Service {#foundations}
 
-AEM AEM Los tiempos de generación de proyectos mejorarán si se eliminan todas las referencias del archivo pom.xml del proyecto de la al repositorio remoto `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+Los tiempos de generación de proyectos de AEM mejorarán si se eliminan todas las referencias del archivo pom.xml del proyecto de AEM al repositorio remoto `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-El Jar de API de SDK de AEM as a Cloud Service, que anteriormente estaba alojado en esa ubicación, ahora se encuentra en Maven Central, que es el repositorio de artefactos predeterminado de Maven.
+El Jar de la API de AEM as a Cloud Service SDK, que anteriormente estaba alojado en esa ubicación, ahora se encuentra en Maven Central, que es el repositorio de artefactos predeterminado de Maven.
 
 ## Novedades de Cloud Manager. {#cloud-manager}
 
@@ -60,7 +60,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 ### Novedades {#what-is-new-cloud-manager}
 
-* Un usuario con el rol de *Propietario del negocio* en Cloud Manager ahora puede eliminar un programa de zona protegida para pruebas de la página de aterrizaje (con el botón de acción rápida en tarjeta de programa) o desde el programa.
+* Un usuario con el rol de *Propietario del negocio* en Cloud Manager ahora puede eliminar un programa de zona protegida para pruebas de la página de destino (con el botón de acción rápida en tarjeta de programa) o desde el programa.
 
   Consulte [Eliminación de un programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=es) para obtener más información.
 
@@ -68,15 +68,15 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
   Consulte [Eliminación de un programa de zona protegida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=es) para obtener más información.
 
-* Marcas de entrenador en la página de aterrizaje para informar e instruir al usuario sobre la navegación básica.
+* Marcas de entrenador en la página de destino para informar e instruir al usuario sobre la navegación básica.
 
 * Marcas de entrenador en la página de **Información general de Programa** para informar e instruir al usuario sobre la navegación básica dentro de Cloud Manager para los primeros pasos.
 
 * Ahora hay disponible una página **LEARN** en Cloud Manager, a la que se puede acceder desde la barra de navegación superior. Esta página incluye recursos para ayudar a los usuarios a conocer los flujos de trabajo utilizados con más frecuencia según su rol asignado en Cloud Manager.
 
-* Los Programas de zona protegida ahora se identifican mediante un distintivo de **Zona protegida** que se muestra en la tarjeta de programa de la página de aterrizaje junto al nombre del programa en la página **Información general del Programa**.
+* Los Programas de zona protegida ahora se identifican mediante un distintivo de **Zona protegida** que se muestra en la tarjeta de programa de la página de destino junto al nombre del programa en la página **Información general del Programa**.
 
-* Un usuario con el rol de SysAdmin ahora tiene acceso con un solo clic a la ubicación de Admin Console desde la que se pueden administrar los roles de los usuarios o los permisos de Cloud Manager. Ahora está disponible el botón **Administrar acceso** en la página de aterrizaje junto al botón **Agregar Programa**.
+* Un usuario con el rol de SysAdmin ahora tiene acceso con un solo clic a la ubicación de Admin Console desde la que se pueden administrar los roles de los usuarios o los permisos de Cloud Manager. Ahora está disponible el botón **Administrar acceso** en la página de destino junto al botón **Agregar Programa**.
 
   Consulte [Tareas de SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=es#sysadmin-tasks) para obtener más información.
 
@@ -106,7 +106,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 ## Novedades de [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-**Experiencia del usuario guiada para etiquetas inteligentes mejoradas, con tecnología Adobe Sensei**
+**Experiencia del usuario guiada para etiquetas inteligentes mejoradas, con tecnología de Adobe AI**
 
 Las etiquetas inteligentes mejoradas permiten a las organizaciones formar modelos de etiquetado inteligente para reconocer imágenes basadas en etiquetas comerciales específicas del cliente, además de las etiquetas inteligentes genéricas.
 
@@ -119,7 +119,7 @@ Las organizaciones ahora pueden almacenar y utilizar archivos 3D en AEM Assets. 
 
 **Compatibilidad con Adobe Asset Link para Adobe XD**
 
-Con la última versión, [!DNL Experience Manager Assets] ofrece compatibilidad con un nuevo complemento [!DNL Adobe Asset Link] que se incluye en la versión [!DNL Adobe XD] v29.3. La integración permite a los diseñadores acceder y utilizar recursos desde [!DNL Experience Manager] en sus diseños, sin necesidad de salir de la aplicación [!DNL Adobe XD]. Consulte [Adobe Asset Link para obtener la documentación de Adobe XD](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link-for-xd.html).
+Con la última versión, [!DNL Experience Manager Assets] ofrece compatibilidad con un nuevo complemento [!DNL Adobe Asset Link] que se incluye en la versión [!DNL Adobe XD] v29.3. La integración permite a los diseñadores acceder y utilizar recursos desde [!DNL Experience Manager] en sus diseños, sin necesidad de salir de la aplicación [!DNL Adobe XD]. Consulte [Adobe Asset Link para obtener la documentación de Adobe XD](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
 
 Con esta versión, los usuarios y diseñadores creativos ahora pueden trabajar con recursos gestionados en [!DNL AEM Assets] el uso [!DNL Adobe Asset Link] en una serie de aplicaciones de escritorio de Creative Cloud, incluidas [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator]y [!DNL InDesign].
 
@@ -139,7 +139,7 @@ Los elementos de la interfaz de usuario son fáciles de leer en pantalla, son ac
    * No puede navegar a todas las sugerencias automáticas de la lista.
    * No narra las sugerencias automáticas mostradas para el cuadro combinado [!UICONTROL Añadir dirección de correo electrónico/Buscar]. (CQ-4294232)
 
-* Ahora se puede acceder a la página del [!UICONTROL Editor de Esquemas de metadatos] y a sus elementos con un teclado, y es fácil leerlos en la pantalla. (CQ-4272953) Los usuarios pueden arrastrar los componentes mediante el teclado en el modo de exploración NVDA. (CQ-4296326)
+* Ahora se puede acceder a la página del [!UICONTROL Editor de esquemas de metadatos] y a sus elementos con un teclado, y es fácil leerlos en la pantalla. (CQ-4272953) Los usuarios pueden arrastrar los componentes mediante el teclado en el modo de exploración NVDA. (CQ-4296326)
 
 * En la interfaz de usuario de Assets, no se puede acceder a la configuración de vista mediante el teclado. (CQ-4289038)
 

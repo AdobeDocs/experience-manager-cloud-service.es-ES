@@ -4,7 +4,7 @@ description: Notas de la versión 2021.6.0 de la versión de  [!DNL Adobe Experi
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 48%
@@ -32,12 +32,12 @@ La de la siguiente versión (2021.7.0) será el 29 de julio de 2021.
 
 Eche un vistazo al vídeo [Información general sobre la versión de junio de 2021](https://video.tv.adobe.com/v/334296) para ver un resumen de las funciones añadidas.
 
-## XML Documentation AEM para as a cloud Service {#xml-documentation}
+## XML Documentation para AEM as a cloud Service {#xml-documentation}
 
 ### Novedades {#what-is-new-xml-documentation}
 
 * XML Documentation para AEM as a Cloud Service ahora es GA.
-* Esto permitirá a los clientes existentes de AEM Cloud Service adquirir el complemento de XML Documentation AEM para importar, crear, administrar y entregar contenido técnico en varios canales, incluidos los sitios de
+* Esto permitirá a los clientes existentes de AEM Cloud Service adquirir el complemento de XML Documentation para importar, crear, administrar y entregar contenido técnico en varios canales, incluidos los sitios de AEM
 
 ## Cloud Manager {#cloud-manager}
 
@@ -46,7 +46,7 @@ Esta sección describe las notas de la versión para Cloud Manager en AEM as a C
 ### Fecha de lanzamiento {#release-date-june-cm}
 
 La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.6.0 es el 10 de junio de 2021.
-La próxima versión está planificada para el 15 de julio de 2021.
+La próxima versión está planificada para el viernes, 15 de julio de 2021.
 
 ### Novedades {#what-is-new-junecm}
 
@@ -104,7 +104,7 @@ La próxima versión está planificada para el 15 de julio de 2021.
 * La configuración de vista se mejora para permitir que los usuarios elijan una vista predeterminada y un parámetro de ordenación predeterminado.
 * La funcionalidad de descarga de Linkshare utiliza descargas asincrónicas que aumentan la velocidad de descarga.
 * Los usuarios pueden buscar y filtrar las carpetas en función de los predicados de propiedades.
-* [!DNL Experience Manager Assets] incrusta el visor de PDF con tecnología [!DNL Adobe Document Cloud] para obtener una vista previa de los documentos compatibles. Esta función permite a los usuarios previsualizar el PDF y otros archivos de varias páginas sin ningún procesamiento complejo. Esto mejora la paridad de las características con [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] incrusta el visor de PDF con tecnología [!DNL Adobe Document Cloud] para obtener una vista previa de los documentos compatibles. Esta función permite a los usuarios previsualizar PDF y otros archivos de varias páginas sin ningún procesamiento complejo. Esto mejora la paridad de las características con [!DNL Experience Manager] 6.5.
 
 ### Errores corregidos en [!DNL Assets] {#bugs-fixed-assets}
 
@@ -116,8 +116,8 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 ### Nuevas funciones de [!DNL Sites] {#ga-features-sites}
 
-* Publish para obtener una vista previa del nivel ahora se muestra como estado de página en la IU del administrador de sitios
-* Publish para el nivel de vista previa ahora muestra la URL de vista previa al final de la acción y mantiene la URL en las propiedades de la página para referencia posterior
+* Publicar en el nivel de vista previa ahora se muestra como estado de página en la IU del administrador de sitios
+* Publicar en el nivel de vista previa ahora muestra la URL de vista previa al final de la acción y mantiene la URL en las propiedades de página para referencia posterior
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -128,7 +128,7 @@ La próxima versión está planificada para el 15 de julio de 2021.
 * Se ha mejorado la velocidad y la precisión para detectar automáticamente secciones lógicas en los PDF forms de origen y convertirlas en los paneles de formularios adaptables correspondientes.
 * Se ha agregado la acción de mover un PDF o archivo XDP de una carpeta a otra.
 
-### Característica beta de [!DNL Forms] {#what-is-new-forms-prerelease}
+### Característica beta de [!DNL Forms]  {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en modo sincrónico.  Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    * Generar formularios finales al rellenar archivos de plantilla con datos XML.
@@ -146,7 +146,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
-En esta sección se describen las notas de la versión de AEM Screens as a Cloud Service.
+Esta sección describe las notas de la versión de AEM Screens as a Cloud Service.
 
 ### Fecha de lanzamiento {#release-date-june-screens}
 
@@ -155,7 +155,7 @@ La fecha de lanzamiento de AEM Screens as a Cloud Service es el 24 de junio de 2
 ### Novedades {#what-is-new-screens-june}
 
 >[!NOTE]
->Consulte la guía [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=es) para conocer los conceptos básicos necesarios para instalar, configurar y ejecutar correctamente el as a Cloud Service de Screens y vincular la documentación técnica de conceptos detallados.
+>Consulte la Guía de [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) para conocer los conceptos básicos necesarios para instalar, configurar y ejecutar correctamente Screens as a Cloud Service y acceder a la documentación técnica de conceptos detallados.
 
 * La administración del registro masivo de dispositivos significa que el aprovisionamiento de grandes cantidades de reproductores es más rápido y eficiente.
 
@@ -169,10 +169,10 @@ La fecha de lanzamiento de AEM Screens as a Cloud Service es el 24 de junio de 2
 
 ### Novedades {#what-is-new-cif}
 
-* CIF Nuevos tipos de datos de referencia de productos y categorías para fragmentos de contenido (incl. soporte de la interfaz de usuario del selector de productos/categorías)
+* Nuevos tipos de datos de referencia de productos y categorías de CIF para fragmentos de contenido (incl. soporte de la interfaz de usuario del selector de productos/categorías)
 * Nuevo componente principal de fragmento de contenido de Commerce
-* AEM Búsqueda de comercio de texto completo admitida en el back-end de la
-* Los componentes principales de Commerce admiten la recopilación de datos Adobe Commerce Sensei Recs
+* Búsqueda de comercio de texto completo admitida en el back-end de AEM
+* Los componentes principales de Commerce admiten la recopilación de datos Adobe Commerce AI Recs
 * Se han mejorado las URL compatibles con SEO para las páginas de categorías
 * Compatibilidad con encabezados HTTP personalizados por sitio/configuración
 
@@ -184,7 +184,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.5.4 e
 
 ### Novedades {#what-is-new-ctt-latest}
 
-* Se ha agregado compatibilidad con un paso [previo a la copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=es) opcional para utilizarlo con CTT. AEM El paso previo a la copia se puede utilizar para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido cuando la instancia de origen se configura para utilizar un almacén de datos de Amazon S3 o Azure Blob Storage.
+* Se ha agregado compatibilidad con un paso [previo a la copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) opcional para utilizarlo con CTT. El paso previo a la copia se puede utilizar para acelerar significativamente las fases de extracción e ingesta de la actividad de transferencia de contenido cuando la instancia de AEM de origen está configurada para utilizar un almacén de datos de Amazon S3 o Azure Blob Storage.
 
 * Se ha añadido una protección a CTT para evitar que los usuarios detengan una ingesta y corrompan los datos una vez que hayan alcanzado el punto crítico durante la fase de ingesta.
 
@@ -194,7 +194,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.5.4 e
 
 ### Correcciones de errores {#bug-fixes-ctt-latest}
 
-* Al detener una ingesta en la instancia de autor, la interfaz de usuario sobrescribió una ingesta previamente finalizada en la instancia de Publish en `STOPPED` desde `FINISHED`. Esto se ha corregido.
+* Al detener una ingesta en la instancia de autor, la interfaz de usuario sobrescribió una ingesta finalizada anteriormente en la instancia de publicación en `STOPPED` desde `FINISHED`. Esto se ha corregido.
 
 ## Analizador de prácticas recomendadas {#best-practices-analyzer}
 

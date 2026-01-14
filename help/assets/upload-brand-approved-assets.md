@@ -3,7 +3,7 @@ title: Cargue los recursos aprobados por la marca en  [!DNL Content Hub]
 description: Obtenga información sobre cómo cargar los recursos aprobados por la marca en Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: dc0f6b5faf75fb7303611e3f25febe89b43a834d
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 17%
@@ -27,7 +27,7 @@ Para mejorar aún más la búsqueda de recursos, Content Hub le permite:
 
 * Genere automáticamente más propiedades para cada recurso tras la carga correcta, como tamaño de archivo, formato, resolución y algunas otras propiedades.
 
-* Use la inteligencia artificial proporcionada por [Adobe Sensei](https://www.adobe.com/es/sensei.html) para aplicar automáticamente las etiquetas relevantes a todos los recursos cargados. Estas etiquetas, que reciben el adecuado nombre de Etiquetas inteligentes, aumentan la velocidad del contenido de los proyectos al ayudarle a encontrar recursos relevantes con rapidez.
+* Use la inteligencia artificial proporcionada por [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) para aplicar automáticamente las etiquetas relevantes a todos los recursos cargados. Estas etiquetas, que reciben el adecuado nombre de Etiquetas inteligentes, aumentan la velocidad del contenido de los proyectos al ayudarle a encontrar recursos relevantes con rapidez.
 
 Asegúrese de cargar únicamente los recursos aprobados por su marca [en Content Hub](/help/assets/approve-assets.md).
 

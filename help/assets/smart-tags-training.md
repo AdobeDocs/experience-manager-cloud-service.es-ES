@@ -1,19 +1,19 @@
 ---
-title: Etiquetado automático de recursos con  [!DNL Adobe Sensei] servicio inteligente
+title: Etiquetado automático de recursos con  [!DNL Adobe AI] servicio inteligente
 description: Etiquete recursos con un servicio artificialmente inteligente que aplique etiquetas comerciales contextuales y descriptivas.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: a579e2e25ecff93f6f1487ec0bcd317df09751cf
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1510'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
 
 # Formación sobre etiquetas inteligentes
 
-La formación sobre etiquetas inteligentes permite entrenar las etiquetas para que pueda especificar los detalles si las etiquetas relevantes no están presentes. Utiliza un marco artificial inteligente de [Adobe Sensei](https://business.adobe.com/es/why-adobe/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. [!DNL Experience Manager Assets] aplica automáticamente las etiquetas inteligentes a los recursos cargados, de manera predeterminada.
+La formación sobre etiquetas inteligentes permite entrenar las etiquetas para que pueda especificar los detalles si las etiquetas relevantes no están presentes. Utiliza un marco artificial inteligente de [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. [!DNL Experience Manager Assets] aplica automáticamente las etiquetas inteligentes a los recursos cargados, de manera predeterminada.
 
 ## Determinación de los requisitos de la formación sobre etiquetas inteligentes {#smart-tag-training-requirement}
 
@@ -118,7 +118,7 @@ Asegúrese de que las imágenes del conjunto de formación se ajusten a las sigu
 >[!NOTE]
 >
 >Puede utilizar las mismas imágenes para entrenar distintos modelos de etiquetas. Sin embargo, no asocie una imagen con más de una etiqueta en un modelo de etiqueta. Es posible etiquetar la misma imagen con diferentes etiquetas que pertenezcan a diferentes modelos de etiquetas.
->&#x200B;>No se puede deshacer la formación. Las directrices anteriores deberían ayudarle a elegir buenas imágenes para entrenar.
+>No se puede deshacer la formación. Las directrices anteriores deberían ayudarle a elegir buenas imágenes para entrenar.
 
 ## Capacite el modelo para las etiquetas personalizadas {#train-model}
 
@@ -161,15 +161,15 @@ Para comprobar si el servicio Etiquetas inteligentes ha recibido formación sobr
 >[!NOTE]
 >
 >¿Qué sucede si deseo transferir la formación sobre etiquetas inteligentes de una instancia a otra mediante una exportación?
->&#x200B;>No es necesario exportar la formación sobre etiquetas inteligentes si el entorno pertenece a la misma organización de IMS. Se comparte automáticamente. Si el entorno está en varias organizaciones de IMS, no hay forma de compartir o exportar la formación sobre etiquetas inteligentes.
+>No es necesario exportar la formación sobre etiquetas inteligentes si el entorno pertenece a la misma organización de IMS. Se comparte automáticamente. Si el entorno está en varias organizaciones de IMS, no hay forma de compartir o exportar la formación sobre etiquetas inteligentes.
 
 ## Limitaciones y prácticas recomendadas relacionadas con las etiquetas inteligentes {#limitations-smart-tags-training}
 
 * Para entrenar el modelo, utilice las imágenes más adecuadas. El curso de formación no se puede revertir o el modelo de formación no se puede eliminar. La precisión del etiquetado depende de la formación actual, por lo que debe hacerlo con cuidado.
-* No se puede entrenar el servicio que aplica etiquetas inteligentes a los vídeos que utilizan vídeos específicos. Funciona con la configuración predeterminada [!DNL Adobe Sensei].
+* No se puede entrenar el servicio que aplica etiquetas inteligentes a los vídeos que utilizan vídeos específicos. Funciona con la configuración predeterminada [!DNL Adobe AI].
 
 
 >[!NOTE]
 >
 >La capacidad de las etiquetas inteligentes para aprender sobre sus etiquetas y aplicarlas en otras imágenes depende de la calidad de las imágenes que utilice para la formación.
->&#x200B;>Para obtener los mejores resultados, Adobe recomienda utilizar imágenes visualmente similares para entrenar el servicio para cada etiqueta.
+>Para obtener los mejores resultados, Adobe recomienda utilizar imágenes visualmente similares para entrenar el servicio para cada etiqueta.

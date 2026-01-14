@@ -1,10 +1,10 @@
 ---
 title: Etiquetado inteligente de activos de vídeo
-description: Experience Manager agrega automáticamente etiquetas inteligentes contextuales y descriptivas a los vídeos mediante  [!DNL Adobe Sensei].
+description: Experience Manager agrega automáticamente etiquetas inteligentes contextuales y descriptivas a los vídeos mediante  [!DNL Adobe AI].
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: 87d0eea2-83a1-4cfa-a4a5-425d0e8abba6
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Etiquetado inteligente de activos de vídeo {#video-smart-tags}
 
-La creciente necesidad de nuevo contenido requiere menos esfuerzos manuales para ofrecer experiencias digitales atractivas en poco tiempo. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] admite el etiquetado automático de recursos de vídeo mediante inteligencia artificial. Etiquetar los vídeos manualmente puede llevar mucho tiempo. Sin embargo, la función de etiquetado inteligente de vídeo de [!DNL Adobe Sensei] con tecnología utiliza modelos de inteligencia artificial para analizar el contenido de vídeo y agregar etiquetas a los recursos de vídeo. Esto reduce el tiempo para que los usuarios de DAM entreguen experiencias enriquecidas a sus clientes. El servicio de aprendizaje automático de Adobe genera dos conjuntos de etiquetas para un vídeo. Mientras que un conjunto corresponde a objetos, escenas y atributos de ese vídeo; el otro conjunto se relaciona con acciones como beber, correr y trotar.
+La creciente necesidad de nuevo contenido requiere menos esfuerzos manuales para ofrecer experiencias digitales atractivas en poco tiempo. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] admite el etiquetado automático de recursos de vídeo mediante inteligencia artificial. Etiquetar los vídeos manualmente puede llevar mucho tiempo. Sin embargo, la función de etiquetado inteligente de vídeo de [!DNL Adobe AI] con tecnología utiliza modelos de inteligencia artificial para analizar el contenido de vídeo y agregar etiquetas a los recursos de vídeo. Esto reduce el tiempo para que los usuarios de DAM entreguen experiencias enriquecidas a sus clientes. El servicio de aprendizaje automático de Adobe genera dos conjuntos de etiquetas para un vídeo. Mientras que un conjunto corresponde a objetos, escenas y atributos de ese vídeo; el otro conjunto se relaciona con acciones como beber, correr y trotar.
 
 El etiquetado de vídeos está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. Sin embargo, puede [desactivar el etiquetado inteligente de vídeos](#opt-out-video-smart-tagging) en una carpeta. Los vídeos se etiquetan automáticamente al cargar vídeos nuevos o volver a procesar los existentes. [!DNL Experience Manager] también crea las miniaturas y extrae los metadatos de los archivos de vídeo. Las etiquetas inteligentes se muestran en orden descendente de [puntuación de confianza](#confidence-score-video-tag) en el recurso [!UICONTROL Propiedades].
 
 ## Etiquetado inteligente de vídeos al cargar {#smart-tag-assets-on-ingestion}
 
-Cuando [sube recursos de vídeo](add-assets.md#upload-assets) a [!DNL Adobe Experience Manager] como [!DNL Cloud Service], los vídeos se procesarán. Una vez completado el procesamiento, consulte la pestaña [!UICONTROL Básico] de la página del recurso [!UICONTROL Propiedades]. Las etiquetas inteligentes se agregan automáticamente al vídeo en [!UICONTROL Etiquetas inteligentes]. Los microservicios de recursos aprovechan [!DNL Adobe Sensei] para crear estas etiquetas inteligentes.
+Cuando [sube recursos de vídeo](add-assets.md#upload-assets) a [!DNL Adobe Experience Manager] como [!DNL Cloud Service], los vídeos se procesarán. Una vez completado el procesamiento, consulte la pestaña [!UICONTROL Básico] de la página del recurso [!UICONTROL Propiedades]. Las etiquetas inteligentes se agregan automáticamente al vídeo en [!UICONTROL Etiquetas inteligentes]. Los microservicios de recursos aprovechan [!DNL Adobe AI] para crear estas etiquetas inteligentes.
 
 Se han agregado ![etiquetas inteligentes a los vídeos, que se pueden ver en la ficha Básico de Propiedades del recurso](assets/smart-tags-added-to-videos.png)
 
@@ -111,7 +111,7 @@ El umbral predeterminado para las etiquetas de acción y objeto en [!DNL Adobe E
 
 Para agregar la configuración OSGI de puntuación de confianza al proyecto implementado en [!DNL Adobe Experience Manager] como [!DNL Cloud Service] hasta [!DNL Cloud Manager]:
 
-* En el proyecto [!DNL Adobe Experience Manager] (`ui.config` desde el tipo de archivo 24 o anteriormente `ui.apps`), la configuración OSGi `config.author`, incluya un archivo de configuración denominado `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` con el siguiente contenido:
+* En el proyecto [!DNL Adobe Experience Manager] (`ui.config` desde el tipo de archivo 24 o anteriormente `ui.apps`), la configuración OSGi `config.author`, incluya un archivo de configuración denominado `com.adobe.cq.assetcompute.impl.aisdk.AISdkImpl.cfg.json` con el siguiente contenido:
 
 ```json
 {
@@ -126,11 +126,11 @@ Para agregar la configuración OSGI de puntuación de confianza al proyecto impl
 
 ## Limitaciones {#video-smart-tagging-limitations}
 
-* No se puede entrenar el servicio que aplica etiquetas inteligentes a los vídeos que utilizan vídeos específicos. Funciona con la configuración predeterminada [!DNL Adobe Sensei].
+* No se puede entrenar el servicio que aplica etiquetas inteligentes a los vídeos que utilizan vídeos específicos. Funciona con la configuración predeterminada [!DNL Adobe AI].
 
 * No se muestra el progreso del etiquetado.
 
-* Solo los vídeos con un tamaño de archivo inferior a 300 MB se etiquetan automáticamente. El servicio [!DNL Adobe Sensei] omite los archivos de vídeo de mayor tamaño.
+* Solo los vídeos con un tamaño de archivo inferior a 300 MB se etiquetan automáticamente. El servicio [!DNL Adobe AI] omite los archivos de vídeo de mayor tamaño.
 
 * Solo están etiquetados los vídeos con los formatos de archivo y los códecs compatibles que se mencionan en [Etiquetas inteligentes](/help/assets/smart-tags.md#smart-tags-supported-file-formats).
 

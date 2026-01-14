@@ -2,10 +2,10 @@
 title: Introducción a Assets as a Cloud Service para la administración de recursos digitales en AEM
 description: Introducción a Assets as a Cloud Service para la administración de recursos digitales en AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '5078'
-ht-degree: 100%
+source-wordcount: '5075'
+ht-degree: 97%
 
 ---
 
@@ -86,9 +86,9 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
 
 >[!TAB Funciones con tecnología de IA]
 
-**Etiquetas inteligentes**: las etiquetas inteligentes utilizan un marco de trabajo de inteligencia artificial de Adobe Sensei para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. De forma predeterminada, AEM aplica etiquetas inteligentes a los recursos cargados.
+**Etiquetas inteligentes**: Las etiquetas inteligentes utilizan el marco de trabajo artificialmente inteligente de Adobe AI para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. De forma predeterminada, AEM aplica etiquetas inteligentes a los recursos cargados.
 
-**Etiquetado y búsqueda inteligentes basados en colores**: AEM Assets utiliza las capacidades de Adobe Sensei AI para distinguir entre los colores de una imagen y aplicar sus características como etiquetas automáticamente durante la ingesta. Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen.
+**Etiquetado y búsqueda inteligentes basados en color**: Los AEM Assets utilizan las capacidades de IA de Adobe para distinguir entre colores en una imagen y aplicar esos rasgos como etiquetas automáticamente al ingerirlos. Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen.
 
 **Metadatos generados por IA**: AEM Assets usa la IA para generar metadatos automáticamente, incluidos títulos, descripciones y palabras clave. Estos campos generados por IA mejoran la precisión de los metadatos, lo que facilita la búsqueda, la categorización y la recomendación de recursos. Este enfoque no solo mejora la eficacia al eliminar el etiquetado manual, sino que también garantiza la coherencia y la escalabilidad en grandes volúmenes de contenido digital.
 
@@ -193,7 +193,7 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
 
 **Imágenes inteligentes**: las imágenes inteligentes ofrecen un rendimiento aun mejor en el envío de recursos de la imagen ya que optimizan automáticamente el formato y el tamaño de archivo de una imagen en función de la capacidad del explorador del cliente. Funciona con los ajustes preestablecidos de imagen existentes y utiliza inteligencia en el envío. Esta inteligencia reduce aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red y del explorador.
 
-**Recorte inteligente**: una capacidad de IA de Adobe Sensei para detectar automáticamente el punto focal en cualquier imagen o vídeo, y aplicar el recorte para mantenerlo. Captura el punto de interés deseado independientemente del tamaño de la pantalla y, por lo tanto, elimina las tareas manuales tediosas, y ofrece imágenes y vídeo de alta calidad y carga rápida que se ven bien en cualquier dispositivo o pantalla.
+**Recorte inteligente**: una capacidad de IA de Adobe para detectar automáticamente el punto focal en cualquier imagen o vídeo y recortar para mantenerlo. Captura el punto de interés deseado independientemente del tamaño de la pantalla y, por lo tanto, elimina las tareas manuales tediosas, y ofrece imágenes y vídeo de alta calidad y carga rápida que se ven bien en cualquier dispositivo o pantalla.
 
 **Subtítulos de vídeo generados por IA**: los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función se ha diseñado para mejorar la accesibilidad y la experiencia del usuario gracias a la provisión de subtítulos precisos. Los subtítulos se generan a partir del audio original, de cualquier pista de audio adicional o de subtítulos adicionales proporcionados en la pestaña `Captions and Audio` de la página de propiedades del vídeo. Con compatibilidad con más de 60 idiomas, los subtítulos se pueden revisar y previsualizar antes de publicar el vídeo.
 <table>
@@ -270,11 +270,11 @@ AEM Assets proporciona funciones que le ayudan a encontrar rápidamente el recur
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=es">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Prácticas recomendadas de administración de metadatos" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=es">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Prácticas recomendadas de administración de metadatos</strong>
       </a>
    </div>
@@ -297,7 +297,7 @@ AEM Assets proporciona funciones que le ayudan a encontrar rápidamente el recur
 </td>
 </table>
 
-**Etiquetas inteligentes**: las etiquetas inteligentes utilizan un marco de trabajo de inteligencia artificial de Adobe Sensei para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. De forma predeterminada, AEM aplica etiquetas inteligentes a los recursos cargados.
+**Etiquetas inteligentes**: Las etiquetas inteligentes utilizan el marco de trabajo artificialmente inteligente de Adobe AI para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. De forma predeterminada, AEM aplica etiquetas inteligentes a los recursos cargados.
 
 **Buscar recursos**: una vez que disponga de los metadatos adecuados, AEM Assets permitirá realizar búsquedas mediante varios operadores, caracteres comodín, consultas avanzadas y filtros personalizados.
 
@@ -705,7 +705,7 @@ Dynamic Media ofrece las siguientes funciones clave:
 
 * **Conjuntos de vídeos adaptables**: un conjunto de vídeos adaptables agrupa versiones del mismo vídeo que se codifican con diferentes formatos y velocidades de bits. Empiece con el vídeo original principal, que cargue en el sistema. Dynamic Media cambia automáticamente el tamaño de ese vídeo o lo transcodifica en varios vídeos. A continuación, en el momento del envío, determina de forma inteligente qué pantalla de vídeo, qué calidad y qué formato utilizar, y la envía al teléfono, a la tableta o al equipo del escritorio.
 
-* **Recorte inteligente**: una capacidad de IA de Adobe Sensei para detectar automáticamente el punto focal en cualquier imagen o vídeo, y recortar la imagen para mantenerla. Captura el punto de interés deseado independientemente del tamaño de la pantalla y, por lo tanto, elimina las tareas manuales tediosas, y ofrece imágenes y vídeo de alta calidad y carga rápida que se ven bien en cualquier dispositivo o pantalla.
+* **Recorte inteligente**: una capacidad de IA de Adobe para detectar automáticamente el punto focal en cualquier imagen o vídeo, y recortar para mantenerlo. Captura el punto de interés deseado independientemente del tamaño de la pantalla y, por lo tanto, elimina las tareas manuales tediosas, y ofrece imágenes y vídeo de alta calidad y carga rápida que se ven bien en cualquier dispositivo o pantalla.
 
 * **Plantillas de Dynamic Media**: cree plantillas personalizables en tiempo real para sus titulares y prospectos con plantillas de Dynamic Media, un editor de plantillas de WYSIWYG. Publique la plantilla de Dynamic Media y utilícela en aplicaciones posteriores. Una plantilla de Dynamic Media incluye capas de imagen y texto. Añada parámetros a las capas de imagen y texto de la plantilla y utilice URL de Dynamic Media para cambiar la posición y el tamaño de la capa y actualizar su contenido en tiempo real.
 

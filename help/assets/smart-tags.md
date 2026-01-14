@@ -1,10 +1,10 @@
 ---
-title: Etiquetado automático de recursos con  [!DNL Adobe Sensei] servicio inteligente
+title: Etiquetado automático de recursos con  [!DNL Adobe AI] servicio inteligente
 description: Etiquete recursos con un servicio artificialmente inteligente que aplique etiquetas comerciales contextuales y descriptivas.
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Las etiquetas inteligentes son palabras clave que no solo aparecen en el texto, 
 
 Por ejemplo, las palabras ordenadas alfabéticamente en un diccionario son más fáciles de encontrar que las dispersas aleatoriamente. El etiquetado tiene un propósito similar. Organiza los recursos según la taxonomía empresarial, asegurándose de que los más relevantes aparezcan en los resultados de búsqueda. Por ejemplo, un fabricante de automóviles puede etiquetar imágenes de automóviles con nombres de modelos, de modo que solo se muestren imágenes relevantes al diseñar una campaña promocional. Tanto si se etiquetan como &quot;corredores&quot; o &quot;zapatillas de deporte&quot;, los usuarios no tienen que preocuparse por errores tipográficos, variaciones ortográficas o términos de búsqueda alternativos: las etiquetas inteligentes las reconocen todas.
 
-En segundo plano, la funcionalidad utiliza el marco artificial inteligente de [Adobe Sensei](https://business.adobe.com/es/products/sensei/adobe-sensei.html) y aplica automáticamente las etiquetas inteligentes a los recursos cargados (de forma predeterminada), junto con el texto alineado con la taxonomía empresarial.
+En segundo plano, la funcionalidad utiliza el marco artificial inteligente de [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) que aplica automáticamente las etiquetas inteligentes a los recursos cargados (de forma predeterminada) junto con el texto alineado con la taxonomía empresarial.
 
 ## Requisitos previos y configuración {#smart-tags-prereqs-config}
 
@@ -27,7 +27,7 @@ Etiquetas inteligentes se aprovisiona automáticamente para [!DNL Adobe Experien
 
 ## Flujo de trabajo Etiquetas inteligentes {#smart-tags-workflow}
 
-El etiquetado inteligente con tecnología de [!DNL Adobe Sensei] utiliza modelos de inteligencia artificial para analizar el contenido y agregar etiquetas a los recursos. Esto reduce el tiempo para que los usuarios de DAM entreguen experiencias enriquecidas a sus clientes. Las etiquetas inteligentes se muestran en orden descendente de [puntuación de confianza](#confidence-score) en las propiedades del recurso.
+El etiquetado inteligente con tecnología de [!DNL Adobe AI] utiliza modelos de inteligencia artificial para analizar el contenido y agregar etiquetas a los recursos. Esto reduce el tiempo para que los usuarios de DAM entreguen experiencias enriquecidas a sus clientes. Las etiquetas inteligentes se muestran en orden descendente de [puntuación de confianza](#confidence-score) en las propiedades del recurso.
 
 * **Recursos basados en imágenes**
 En el caso de las imágenes, las etiquetas inteligentes se basan en algún aspecto visual. Las imágenes en muchos formatos se etiquetan con los servicios de contenido inteligente. Las etiquetas inteligentes se aplican a los [tipos de archivo compatibles](#supported-file-formats) que generan representaciones en formato JPG y PNG.
@@ -35,7 +35,7 @@ En el caso de las imágenes, las etiquetas inteligentes se basan en algún aspec
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
 * **Recursos basados en vídeo**
-Para los recursos basados en vídeo, el etiquetado está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. Del mismo modo que las etiquetas basadas en imagen y texto, los vídeos también se etiquetan automáticamente al cargar vídeos nuevos o volver a procesar los existentes. [!DNL Adobe Sensei] genera dos conjuntos de etiquetas para un vídeo: un conjunto corresponde a objetos, escenas y atributos de ese vídeo, mientras que el otro conjunto se relaciona con acciones como beber, correr y trotar. Compruebe también [exclusión del etiquetado inteligente de vídeos](#opt-out-video-smart-tagging).
+Para los recursos basados en vídeo, el etiquetado está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. Del mismo modo que las etiquetas basadas en imagen y texto, los vídeos también se etiquetan automáticamente al cargar vídeos nuevos o volver a procesar los existentes. [!DNL Adobe AI] genera dos conjuntos de etiquetas para un vídeo: un conjunto corresponde a objetos, escenas y atributos de ese vídeo, mientras que el otro conjunto se relaciona con acciones como beber, correr y trotar. Compruebe también [exclusión del etiquetado inteligente de vídeos](#opt-out-video-smart-tagging).
 
 * **Recursos basados en texto**
 Para los recursos admitidos, [!DNL Experience Manager] ya extrae el texto, que se indiza y se usa para buscar los recursos. Sin embargo, las etiquetas inteligentes basadas en palabras clave en el texto proporcionan una faceta de búsqueda dedicada, estructurada y de mayor prioridad. Esto último ayuda a mejorar la detección de recursos en comparación con un índice de búsqueda.
@@ -74,7 +74,7 @@ Las etiquetas inteligentes se implementan en los AEM Assets de mediante el sigui
 
 ## Preparación de un recurso para el etiquetado inteligente predeterminado
 
-Cuando [carga recursos](add-assets.md#upload-assets) en [!DNL Adobe Experience Manager] como un [!DNL Cloud Service], los recursos cargados se procesan. Una vez completado el procesamiento, consulte la pestaña [!UICONTROL Básico] de la página del recurso [!UICONTROL Propiedades]. Las etiquetas inteligentes se agregan automáticamente a los recursos en [!UICONTROL Etiquetas inteligentes]. Los microservicios de recursos utilizan [!DNL Adobe Sensei] para crear estas etiquetas inteligentes.
+Cuando [carga recursos](add-assets.md#upload-assets) en [!DNL Adobe Experience Manager] como un [!DNL Cloud Service], los recursos cargados se procesan. Una vez completado el procesamiento, consulte la pestaña [!UICONTROL Básico] de la página del recurso [!UICONTROL Propiedades]. Las etiquetas inteligentes se agregan automáticamente a los recursos en [!UICONTROL Etiquetas inteligentes]. Los microservicios de recursos utilizan [!DNL Adobe AI] para crear estas etiquetas inteligentes.
 
 Se han agregado ![etiquetas inteligentes a los vídeos, que se pueden ver en la ficha Básico de Propiedades del recurso](assets/smart-tags-added-to-videos.png)
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets sin etiquetar en DAM {#smart-tag-existing-assets}
 
-Los recursos existentes o anteriores de DAM no se etiquetan automáticamente de forma inteligente. Debe [volver a procesar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=es#adjusting-load) Assets manualmente para poder generarles etiquetas inteligentes. Una vez completado el proceso, vaya a la página [!UICONTROL Propiedades] de cualquier recurso de la carpeta. Las etiquetas agregadas automáticamente se ven en la sección [!UICONTROL Etiquetas inteligentes] de la pestaña [!UICONTROL Básico]. Estas etiquetas inteligentes aplicadas se ordenan en orden descendente de [puntuación de confianza](#confidence-score).
+Los recursos existentes o anteriores de DAM no se etiquetan automáticamente de forma inteligente. Debe [volver a procesar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manualmente para poder generarles etiquetas inteligentes. Una vez completado el proceso, vaya a la página [!UICONTROL Propiedades] de cualquier recurso de la carpeta. Las etiquetas agregadas automáticamente se ven en la sección [!UICONTROL Etiquetas inteligentes] de la pestaña [!UICONTROL Básico]. Estas etiquetas inteligentes aplicadas se ordenan en orden descendente de [puntuación de confianza](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -113,7 +113,7 @@ The default threshold for action and object tags in [!DNL Adobe Experience Manag
 
 To add the confidence score OSGI configuration to the project deployed to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] through [!DNL Cloud Manager]:
 
-In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` with the following contents:
+In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.aisdk.AISdkImpl.cfg.json` with the following contents:
 
 ```json
 {
@@ -224,7 +224,7 @@ Estos modelos no siempre son perfectos para identificar etiquetas. La versión a
    * Aspectos no visuales, abstractos. Por ejemplo, el año o la temporada de lanzamiento de un producto, el estado de ánimo o la emoción evocados por una imagen y una connotación subjetiva de un vídeo.
    * Diferencias visuales finas en productos como camisas con y sin collares o logotipos de productos pequeños incrustados en productos.
 
-* Solo los vídeos con un tamaño de archivo inferior a 300 MB se etiquetan automáticamente. El servicio [!DNL Adobe Sensei] omite los archivos de vídeo de mayor tamaño.
+* Solo los vídeos con un tamaño de archivo inferior a 300 MB se etiquetan automáticamente. El servicio [!DNL Adobe AI] omite los archivos de vídeo de mayor tamaño.
 * Para buscar archivos con etiquetas inteligentes (regulares o mejoradas), use la búsqueda [!DNL Assets] (búsqueda de texto completo). No hay ningún predicado de búsqueda independiente para las etiquetas inteligentes.
 * En comparación con las etiquetas generales, los recursos etiquetados con taxonomía empresarial son más fáciles de identificar y recuperar mediante búsquedas basadas en etiquetas.
 
@@ -232,7 +232,7 @@ Estos modelos no siempre son perfectos para identificar etiquetas. La versión a
 
 +++**¿Cómo mejoran las etiquetas inteligentes la experiencia de búsqueda de un recurso?**
 
-[!DNL Adobe] Sensei etiqueta los recursos automáticamente una vez que los ha cargado. El proceso automatizado se ejecuta tan rápido en el backend que verá las etiquetas agregadas en los recursos después de unos segundos una vez que se complete la carga.
+[!DNL Adobe] AI etiqueta los recursos automáticamente una vez que los ha cargado. El proceso automatizado se ejecuta tan rápido en el backend que verá las etiquetas agregadas en los recursos después de unos segundos una vez que se complete la carga.
 
 +++
 

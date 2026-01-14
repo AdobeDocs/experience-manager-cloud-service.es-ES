@@ -4,9 +4,9 @@ description: Adobe Experience Manager Assets permite distinguir entre colores en
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1243'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 ![Banner De Etiquetado De Color](assets/banner-image.png)
 
-Adobe Experience Manager (AEM) Assets utiliza las funcionalidades de IA de Adobe Sensei para distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente al ingerirlos. Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen.
+Adobe Experience Manager (AEM) Assets utiliza las funcionalidades de IA de Adobe para distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente al ingerirlos. Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen.
 
 Puede configurar el número de colores, dentro de un rango de uno a 40, que están etiquetados en una imagen para que pueda buscar imágenes basadas en esos colores más adelante. Experience Manager Assets aplica las etiquetas en función de la cobertura de color de una imagen. También puede configurar el formato de visualización de una etiqueta de color.
 
