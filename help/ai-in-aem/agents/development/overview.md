@@ -3,9 +3,9 @@ title: Información general del agente de desarrollo
 description: Obtenga información sobre cómo el agente de desarrollo de AEM analiza las canalizaciones con errores en Cloud Manager y los registros de compilación para sugerir correcciones de código y acelerar la depuración.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
+source-git-commit: d10eb260195e402a6347ad40ddb851baf5949c83
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ El agente de desarrollo ayuda a los desarrolladores y administradores de AEM a c
 
 En la actualidad, el agente puede recuperar los estados de canalización y ayudarle a solucionar errores en los pasos de generación sugiriendo correcciones, lo que ahorra tiempo al depurar implementaciones de AEM as a Cloud Service en entornos de desarrollo, fase y producción. Examina los registros de generación y el código relacionado para recomendar una corrección que puede aplicar manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478010?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -28,6 +28,8 @@ En la actualidad, el agente puede recuperar los estados de canalización y ayuda
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
+
+Enviar un correo electrónico a [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) con comentarios o solicitudes para acceder a este agente.
 
 ## Acceso al agente de desarrollo a través de Cloud Manager {#how-to-access-the-agent}
 
@@ -81,13 +83,13 @@ El trabajo de solución de problemas de canalización del agente de desarrollo r
 
 | Indicación | Resultado |
 | --- | --- |
+| *Solucionar problemas de mi canalización con errores* | Realiza un análisis de por qué ha fallado una canalización; si no está claro a qué canalización se hace referencia, se formularán preguntas adicionales al usuario. |
 | *Enumerar mis canalizaciones con errores para el programa principal.* | Aunque los resultados pueden variar, este mensaje genera una tabla de canalizaciones fallidas, con una sugerencia de seguimiento para hacer referencia a una canalización específica para analizar. |
-| *Analizar mi canalización con error llamada &quot;Canalización de desarrollo&quot;.* | Este mensaje resulta en un análisis de la canalización fallida con sugerencias para corregir. |
+| *Analizar mi canalización con error llamada &quot;Canalización de desarrollo&quot;.* | Este mensaje resulta en un análisis de la canalización fallida con sugerencias para corregir. Si se producen varios errores, se formularán preguntas adicionales al usuario. |
+| *Solucionar problemas de ejecución de canalización 1234567* | Al proporcionar un ID de ejecución de canalización exacto, se realiza un análisis de canalización. |
 
 ## Funciones fuera de ámbito {#out-of-scope-features}
 
 La resolución de problemas de la canalización funciona en el paso de compilación de la canalización de pila completa. Para otros tipos y pasos de canalización, depure los errores descargando e inspeccionando los registros.
 
 Ver [Registros de acceso y descarga](/help/implementing/cloud-manager/manage-logs.md).
-
-La solución de problemas de canalización no es compatible con los programas que utilizan BYOGIT (Traer su propio Git).
