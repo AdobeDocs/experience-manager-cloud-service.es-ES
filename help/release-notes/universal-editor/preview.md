@@ -3,9 +3,9 @@ title: Notas de la versión de Universal Editor Preview
 description: Estas son las notas de la versión de la vista previa del editor universal.
 feature: Release Information
 role: Admin
-source-git-commit: 57b8a38219431ff7f264ef1f64de5506e283a650
+source-git-commit: 31429cfce9f38a3f492f3852fcfa88a38f9de7dd
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Notas de la versión de Universal Editor Preview {#preview}
 
-Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 15 de enero de 2026.
+Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 21 de enero de 2026.
 
 Estas notas de la versión de **preview** se proporcionan para que sepa qué cambios se avecinan en el editor universal y pueda probarlos al [cambiar al entorno de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,10 +27,13 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 
 ## Próximas nuevas funciones {#what-is-new}
 
-* Se ha añadido compatibilidad con la configuración y persistencia de los valores predeterminados de los campos de modelo.
+* Los bloques de texto del árbol de contenido muestran vistas previas de texto cortas.
+* Los campos de texto sin formato admiten áreas de texto multilínea.
+* Las extensiones pueden utilizar la API de Toast para mostrar notificaciones internas del producto.
 
 ## Próximas mejoras {#other-improvements}
 
-* La limpieza de datos ahora se realiza correctamente en el conmutador de contenido.
-* Ahora se admiten varias operaciones en la actualización de extensiones.
-* El botón Cerrar para que el desarrollador inicie sesión ahora se comporta según lo esperado.
+* El espacio en blanco inicial del editor de texto enriquecido se limpia correctamente, lo que ayuda a evitar peculiaridades de diseño y formato.
+* Al pulsar Intro de nuevo y correctamente, se déclencheur la edición en línea, restaurando el comportamiento de edición esperado.
+* Se han resuelto varios problemas de accesibilidad del explorador.
+* Se ha unificado el formato del acceso directo de teclado y se han ajustado los iconos de la paleta de comandos para ofrecer una experiencia más clara y coherente.

@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2025.12.12 del editor universal
-description: Estas son las notas de la versión 2025.12.11 del editor universal.
+title: Notas de la versión 2026.01.15 del editor universal
+description: Estas son las notas de la versión 2026.01.15 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 21%
+source-wordcount: '204'
+ht-degree: 34%
 
 ---
 
 
-# Notas de la versión 2025.12.12 del editor universal {#release-notes}
+# Notas de la versión 2026.01.15 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 12 de diciembre de 2025.
+Estas son las notas de la versión del editor universal del 15 de enero de 2026.
 
 >[!TIP]
 >
@@ -26,11 +26,10 @@ Estas son las notas de la versión del editor universal del 12 de diciembre de 2
 
 ## Novedades {#what-is-new}
 
-* Se ha agregado compatibilidad a las tablas existentes en el [editor de texto enriquecido.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* La tecla de tabulación se ha habilitado para anidar listas en el [editor de texto enriquecido.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* La característica de inicio de sesión para desarrolladores ahora se puede deshabilitar mediante la [metaetiqueta `aem-dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
-* Ahora, al hacer clic con el botón secundario en la sección de superposición, se muestra un [menú de opciones contextuales.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
-* [La sangría de ámbito](/help/implementing/universal-editor/configure-rte.md#indentation) ahora se admite en el [editor de texto enriquecido.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* Se ha agregado compatibilidad para establecer y mantener [valores predeterminados de los campos de modelo.](/help/implementing/universal-editor/field-types.md)
+   * Si no se establece ningún valor, el Editor universal persistirá independientemente de lo que se defina como `value` en la definición del modelo.
+   * Esto garantiza que lo que vea coincidirá con lo que se mantiene en el backend.
+   * Este es un cambio radical.
 
 ## Funciones de adopción anticipada {#early-adopter}
 
@@ -40,13 +39,6 @@ Si le interesa probar las próximas funciones enumeradas a continuación y compa
 
 ## Otras mejoras {#other-improvements}
 
-* El carril de propiedades ahora se sincroniza cuando varios campos cambian en contexto.
-* El selector de Fragmentos de contenido ahora se abre como se espera en las instancias de AEM 6.5.
-* La tecla escape ahora cierra los cuadros de diálogo en el editor de texto enriquecido.
-* La acción **Quitar componente** ahora solo está disponible cuando se selecciona un componente.
-* El editor de fragmentos de contenido correcto (antiguo o nuevo) ahora se abre en función de la instancia utilizada (si el nombre de host es el patrón de AEM as a Cloud Service, utilice el nuevo editor; de lo contrario, utilice el editor heredado).
-* La validación del filtro se agrega a la acción duplicada.
-* Los títulos largos ahora se truncan en el carril de propiedades.
-* Las matrices de administradores de varios sitios con más de 10 valores ahora se administran correctamente.
-* Los errores de conflicto al crear varios componentes con el mismo nombre ahora se gestionan correctamente.
-* Se ha añadido la administración de matrices de administradores de varios sitios con valores >10.
+* La limpieza de datos ahora se realiza correctamente en el conmutador de contenido.
+* Ahora se admiten varias operaciones en la actualización de extensiones.
+* El botón Cerrar para que el desarrollador inicie sesión ahora se comporta según lo esperado.

@@ -4,10 +4,10 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 98%
+source-wordcount: '1604'
+ht-degree: 97%
 
 ---
 
@@ -94,7 +94,7 @@ Un objeto de campo tiene la siguiente definición de tipo.
 | `name` | `string` | Propiedad [o ruta](#nesting) donde se mantendrán los datos | Sí |
 | `label` | `FieldLabel` | Etiqueta del campo | Sí |
 | `description` | `FieldDescription` | Descripción del campo | No |
-| `value` | `FieldValue` | Es un valor predeterminado que sirve como marcador de posición. Este valor no determina ninguna actualización de contenido. Solo es una representación en la interfaz de usuario. | No |
+| `value` | `FieldValue` | Es un valor predeterminado que sirve como marcador de posición. Si no se establece ningún valor, el Editor universal persistirá independientemente de lo que se defina como `value` en la definición del modelo. Esto garantiza que lo que vea coincidirá con lo que se mantiene en el backend. | No |
 | `valueType` | `ValueType` | La validación estándar puede ser `string`, `string[]`, `number`, `date` o `boolean` | No |
 | `required` | `boolean` | ¿Es el campo obligatorio? | No |
 | `readOnly` | `boolean` | ¿Es el campo de solo lectura? | No |
