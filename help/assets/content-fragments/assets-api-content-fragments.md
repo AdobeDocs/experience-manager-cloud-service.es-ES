@@ -4,9 +4,9 @@ description: Obtenga información acerca de la compatibilidad con fragmentos de 
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+source-git-commit: f55299d7054a9e1f8e1356cb975dfeee162ec202
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1856'
 ht-degree: 14%
 
 ---
@@ -87,6 +87,7 @@ Utiliza el extremo `/api/assets` y requiere la ruta del recurso para acceder a �
 Por ejemplo, para acceder a `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
+>
 >Acceso:
 >
 >* `/api/assets` **no** necesita el uso del selector `.model`.
@@ -170,8 +171,8 @@ Si la API de REST de Assets se utiliza en un entorno sin requisitos de autentica
 >
 >Para obtener más información, consulte:
 >
->* [Explicación de CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es)
->* [Vídeo: desarrollo para CORS con AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=es)
+>* [Explicación de CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Vídeo: desarrollo para CORS con AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 En entornos con requisitos de autenticación específicos, se recomienda OAuth.
@@ -269,7 +270,7 @@ El contenido asociado no se expone.
 
 El uso puede variar en función de si utiliza un entorno de AEM Author o Publish junto con el caso de uso específico.
 
-* Se recomienda que la creación esté enlazada a una instancia de autor ([&#x200B; y actualmente no hay medios para replicar un fragmento para publicarlo mediante esta API (](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
+* Se recomienda que la creación esté enlazada a una instancia de autor ([ y actualmente no hay medios para replicar un fragmento para publicarlo mediante esta API (](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
 * La entrega es posible desde ambos, ya que AEM sirve contenido solicitado solo en formato JSON.
 
    * El almacenamiento y el envío desde una instancia de autor de AEM deberían ser suficientes para las aplicaciones de biblioteca de medios detrás del cortafuegos.
@@ -329,7 +330,7 @@ Los siguientes códigos de estado se pueden ver en las circunstancias relevantes
   A continuación se enumeran los escenarios comunes en los que se devuelve este estado de error, junto con el mensaje de error (monoespacio) generado:
 
    * La carpeta principal no existe (al crear un fragmento de contenido mediante `POST`)
-   * No se ha proporcionado ningún modelo de fragmento de contenido (falta cq:model), no se puede leer (debido a una ruta no válida o a un problema de permisos) o no hay ningún modelo de fragmento válido:
+   * No se proporcionó ningún modelo de fragmento de contenido (falta cq:model), no se puede leer (debido a una ruta de acceso no válida o a un problema de permisos) o no hay ningún modelo de fragmento válido:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
@@ -383,4 +384,4 @@ Consulte aquí las referencias detalladas de la API:
 Para obtener más información, consulte lo siguiente:
 
 * [Documentación de la API HTTP de Assets](/help/assets/mac-api-assets.md)
-* [Sesión de AEM Gem: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=es)
+* [Sesión de AEM Gem: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)
