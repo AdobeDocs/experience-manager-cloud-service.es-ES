@@ -4,7 +4,7 @@ description: Obtenga información acerca de las distintas opciones para ampliar 
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 100%
@@ -60,4 +60,4 @@ Además de la extensibilidad de la IU, el editor universal ofrece muchos otros p
 
 * **[Bloques](https://www.aem.live/developer/block-collection)**: con un formato JSON simple, los proyectos pueden ajustar los bloques y las funciones UE disponibles para la creación de contenido.
 * **[Interfaz de usuario personalizada](#extending-ui)**: las extensiones pueden mostrar la IU necesaria en paneles laterales o cuadros de diálogo modales.
-* **[Eventos](/help/implementing/universal-editor/events.md)**: las extensiones reciben eventos sobre las acciones y selecciones del autor en la página para responder de forma adecuada.
+* **[Eventos](/help/implementing/universal-editor/events-universal-editor.md)**: las extensiones reciben eventos sobre las acciones y selecciones del autor en la página para responder de forma adecuada.
