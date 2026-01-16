@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0411792d22efa70f98777971eb4f16700820abe5
+source-git-commit: a1b860b4d691515f7f868e4e7e1a70bac0c20cbe
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 50%
+source-wordcount: '1944'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -93,6 +93,10 @@ Ver [programas beta de Cloud Manager](/help/implementing/cloud-manager/release-n
 **Detección de malware para los recursos cargados**
 
 Los AEM Assets ahora incluyen el análisis automático de malware de los archivos cargados, lo que garantiza que los recursos sospechosos se pongan en cuarentena antes de entrar en DAM para proteger el repositorio de amenazas. Los administradores pueden configurar las opciones de análisis y las políticas de retención de cuarentena para optimizar los controles de seguridad.
+
+**Metadatos generados por IA: actualización de idoneidad**
+
+Los metadatos generados por IA en AEM Assets ya no requieren que el piloto de GenAI se firme para habilitarlos. La función está ahora disponible tanto para los clientes que han firmado el GenAI Rider como para los clientes que aún no han sido validados. Los clientes que se hayan excluido explícitamente del uso de GenAI seguirán teniendo la función deshabilitada. Para administrar la habilitación de características en el nivel de entorno, consulta [Deshabilitar metadatos generados por IA](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata). Este cambio se realizará para los clientes en la versión de lanzamiento 23482 o posterior.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
