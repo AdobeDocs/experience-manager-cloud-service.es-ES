@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
+source-git-commit: be61c21e111e1655921325a35da6fa88545fb39f
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1095'
 ht-degree: 19%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 19%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 23862 {#23862}
+## Versión 23963 {#23963}
 
->[!CAUTION]
->
-> La 23862 de la versión se ha convertido en privada. Próximamente se proporcionará una nueva versión de mantenimiento.
-
-A continuación se resumen las mejoras continuas de la versión de mantenimiento 23862, que se publicó el miércoles, 23 de diciembre de 2025. La versión de mantenimiento anterior fue la 23482.
+A continuación se resumen las mejoras continuas de la versión de mantenimiento 23963, que se publicó el martes, 19 de enero de 2026. La versión de mantenimiento anterior fue la 23482.
 
 La activación de funcionalidades 2026.1.0 proporciona el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
-### Mejoras {#enhancements-23862}
+>[!NOTE]
+>
+>La 23862 de la versión se ha convertido en privada.
+
+### Mejoras {#enhancements-23963}
 
 * CQ-4361812: se ha agregado compatibilidad con el parámetro opcional folderPath en la API de REST. Descripción: la API crea un nuevo proyecto de traducción y se colocará dentro de la ruta especificada por el parámetro `folderPath` opcional; de lo contrario, la ruta predeterminada del proyecto raíz es `/content/projects`.
 * FORMS-21960: se ha agregado compatibilidad con la edición de lienzo en local para comunicaciones interactivas, similar a forms-spa.
@@ -50,13 +50,14 @@ La activación de funcionalidades 2026.1.0 proporciona el conjunto completo de f
 * SITES-37794: Edge Delivery con editor universal: simplifica el asistente de creación de páginas.
 * SITES-36963: Migre el extremo de audiencia/segmento a la API de Target v3 para la compatibilidad con Workspace.
 
-### Problemas solucionados {#fixed-issues-23862}
+### Problemas solucionados {#fixed-issues-23963}
 
 * CQ-4361831: se ha corregido un problema que causaba que genai_dropdown_span no estuviera definido.
 * CQ-4360895: se ha corregido el recuento de estado del trabajo de traducción incorrecto en el proyecto durante las actualizaciones simultáneas.
 * CQ-4361599: se ha corregido la omisión de fragmentos de contenido de los trabajos de traducción después de la actualización a 2025.7.
 * CQ-4360747: los trabajos de traducción repetibles fijos crean cargas útiles e déclencheur vacíos con demasiada frecuencia (NullPointerException en ScheduleRepeatTranslationProject).
 * CQ-4359994: se ha corregido la incoherencia del tipo de campo destinationLanguage para proyectos en uno o varios idiomas.
+* FORMS-23557: la API de uso no puede crear correctamente instancias de las causas de actualización de Rhino `*.js`.
 * SITES-38153: corrige el proveedor de referencia de publicación cf para referencias basadas en uuid.
 * SITES-37594: mejoras de rendimiento para la funcionalidad de modelo por etiquetas.
 * SITES-37337: FragmentCreateProcessor: proporciona detalles de error adicionales en los registros.
@@ -93,19 +94,19 @@ La activación de funcionalidades 2026.1.0 proporciona el conjunto completo de f
 * SITES-37349: Edge Delivery con editor universal: procesa varios campos con entradas únicas como listas con un solo elemento de lista.
 * SITES-36148: Edge Delivery con editor universal: corrija data-aue-label para varios campos compuestos.
 
-### Problemas conocidos {#known-issues-23862}
+### Problemas conocidos {#known-issues-23963}
 
 Ninguna.
 
-### Características y API obsoletas {#deprecated-23862}
+### Características y API obsoletas {#deprecated-23963}
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-### Correcciones de seguridad {#security-23862}
+### Correcciones de seguridad {#security-23963}
 
 AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 23 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
 
-### Tecnologías integradas {#embedded-tech-23862}
+### Tecnologías integradas {#embedded-tech-23963}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
