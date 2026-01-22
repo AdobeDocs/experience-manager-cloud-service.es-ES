@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 87368be0b4c934bb4d4799833a90edfee72348e6
+source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2657'
 ht-degree: 14%
 
 ---
@@ -25,11 +25,11 @@ Para ello, el Editor universal proporciona a los creadores de contenido una IU i
 
 >[!NOTE]
 >
->En este documento se da por hecho que ya está familiarizado con el acceso al Editor universal y la navegación por él. Si no lo está, vea [Acceso y navegación por el editor universal](/help/sites-cloud/authoring/universal-editor/navigation.md).
+>En este documento se da por hecho que ya está familiarizado con el acceso al Editor universal y la navegación por él. Si no lo está, vea [Acceso y navegación por el editor universal.](/help/sites-cloud/authoring/universal-editor/navigation.md)
 
 >[!TIP]
 >
->Para obtener una introducción más detallada al editor universal, consulte [Introducción al editor universal](/help/implementing/universal-editor/introduction.md).
+>Para obtener una introducción más detallada al editor universal, consulte [Introducción al editor universal.](/help/implementing/universal-editor/introduction.md)
 
 ## Edición de contenido {#editing-content}
 
@@ -39,9 +39,13 @@ La edición de contenido es sencilla e intuitiva. Al pasar el ratón sobre el co
 
 >[!TIP]
 >
->De forma predeterminada, al tocar o hacer clic en el contenido, se selecciona para editarlo. Si desea navegar por el contenido mediante los siguientes vínculos, cambie a [modo de vista previa](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
+>De forma predeterminada, al tocar o hacer clic en el contenido, se selecciona para editarlo. Si desea navegar por el contenido mediante los siguientes vínculos, cambie al [modo de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-Según el contenido que seleccione, es posible que tenga diferentes opciones de edición in situ, así como información y opciones adicionales para el contenido en el [panel de propiedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+Según el contenido que seleccione, es posible que tenga diferentes opciones de edición in situ, así como información y opciones adicionales para el contenido en el panel [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+
+Cada parte del contenido editable se etiqueta con el tipo de contenido que es. Según el contenido, puede hacer clic en este distintivo para acceder rápidamente a las acciones de edición.
+
+![Opciones de distintivo editables](assets/editable-badge.png)
 
 ### Edición de texto sin formato {#edit-plain-text}
 
@@ -51,7 +55,7 @@ Puede editar el texto en su lugar haciendo doble clic o pulsando dos veces el co
 
 El contorno azul delgado se convierte en un contorno azul grueso para indicar que se ha seleccionado y aparece un cursor. Realice los cambios y, a continuación, pulse intro/retorno o seleccione fuera del cuadro de texto para guardar los cambios.
 
-Al seleccionar el componente de texto, sus detalles se muestran en el [panel de propiedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). También puede editar el texto en el panel.
+Al seleccionar el componente de texto, sus detalles se muestran en el panel [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) También puede editar el texto en el panel.
 
 ![Edición de texto en el panel de propiedades](assets/ue-editing-text-component-rail.png)
 
@@ -110,7 +114,7 @@ El RTE se puede configurar para ocultar opciones o mostrar opciones adicionales 
 
 ### Edición de medios {#edit-media}
 
-Puede ver sus detalles en el [panel de propiedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+Puede ver sus detalles en el panel [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Editando medios](assets/ue-edit-media.png)
 
@@ -123,7 +127,7 @@ Los cambios se guardan automáticamente en el contenido.
 
 ### Edición de fragmentos de contenido {#edit-content-fragment}
 
-Si selecciona un [fragmento de contenido](/help/sites-cloud/administering/content-fragments/overview.md), puede editar sus detalles en el [panel de propiedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+Si selecciona un [fragmento de contenido](/help/sites-cloud/administering/content-fragments/overview.md), puede editar sus detalles en el [panel de propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Edición de un fragmento de contenido](assets/ue-edit-cf.png)
 
@@ -223,7 +227,7 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 
 ### Copiar y pegar {#copy-paste}
 
-Puede copiar y pegar componentes que se encuentren dentro de [&#x200B; contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
+Puede copiar y pegar componentes que se encuentren dentro de [ contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
 
 Copiar y pegar pueden estar en la misma pestaña del explorador o entre pestañas del explorador, siempre que las pestañas ya estén abiertas. No puede copiar un elemento y, a continuación, abrir una nueva pestaña del explorador para pegarlo.
 
@@ -251,7 +255,7 @@ Cuando realice la edición in situ, el editor ofrecerá opciones relevantes para
 
 Cuando haya terminado de editar el contenido, a menudo querrá navegar por él para ver cómo queda dentro del contenido de otras páginas. En el [modo de vista previa](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode), puede hacer clic en los vínculos para navegar por el contenido como lo haría un lector. El contenido se muestra en el editor tal y como se publicaría.
 
-En el modo de vista previa, tocar o hacer clic en el contenido reacciona como lo haría con un lector. Si desea seleccionar el contenido para editarlo, salga de [modo de vista previa](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
+En el modo de vista previa, tocar o hacer clic en el contenido reacciona como lo haría con un lector. Si desea seleccionar el contenido para editarlo, salga del [modo de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
 ## Edición de herencia de componentes {#inheritance}
 
@@ -261,7 +265,7 @@ Con el editor universal, puede cancelar la herencia del contenido con solo actua
 
 Si la extensión **AEM Multi-Site-Management (MSM) Extension** está habilitada para su programa, tiene [opciones adicionales de la barra de herramientas](#inheritance-extension) para ver y cambiar el estado de herencia de un componente individual en el Editor universal.
 
-Para obtener más información sobre cómo funciona la herencia mediante el Editor universal, consulte [Herencia de contenido en el Editor universal](/help/sites-cloud/authoring/universal-editor/inheritance.md).
+Para obtener más información acerca de cómo funciona la herencia mediante el Editor universal, vea [Herencia de contenido en el Editor universal.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
 
 ## Características opcionales de la barra de herramientas {#toolbar-options}
 

@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2026.01.15 del editor universal
-description: Estas son las notas de la versión 2026.01.15 del editor universal.
+title: Notas de la versión 2026.01.22 del editor universal
+description: Estas son las notas de la versión 2026.01.22 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 83653ef9938e02b58d3c82ebd6395773f293f1a4
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 34%
+source-wordcount: '243'
+ht-degree: 29%
 
 ---
 
 
-# Notas de la versión 2026.01.15 del editor universal {#release-notes}
+# Notas de la versión 2026.01.22 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 15 de enero de 2026.
+Estas son las notas de la versión del editor universal del 22 de enero de 2026.
 
 >[!TIP]
 >
@@ -26,10 +26,11 @@ Estas son las notas de la versión del editor universal del 15 de enero de 2026.
 
 ## Novedades {#what-is-new}
 
-* Se ha agregado compatibilidad para establecer y mantener [valores predeterminados de los campos de modelo.](/help/implementing/universal-editor/field-types.md)
-   * Si no se establece ningún valor, el Editor universal persistirá independientemente de lo que se defina como `value` en la definición del modelo.
-   * Esto garantiza que lo que vea coincidirá con lo que se mantiene en el backend.
-   * Este es un cambio radical.
+* Se agregaron etiquetas (como vistas previas de texto cortas) a bloques de texto en [el árbol de contenido.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* TextArea ahora se admite para campos de texto sin formato.
+* El extremo de configuración ahora se utiliza para las funcionalidades de la interfaz de usuario.
+* Ahora se admite TextArea de los fragmentos de contenido.
+* La API de Toast ahora está expuesta a las extensiones.
 
 ## Funciones de adopción anticipada {#early-adopter}
 
@@ -39,6 +40,12 @@ Si le interesa probar las próximas funciones enumeradas a continuación y compa
 
 ## Otras mejoras {#other-improvements}
 
-* La limpieza de datos ahora se realiza correctamente en el conmutador de contenido.
-* Ahora se admiten varias operaciones en la actualización de extensiones.
-* El botón Cerrar para que el desarrollador inicie sesión ahora se comporta según lo esperado.
+* Se ha corregido un problema con el diseño del lienzo al navegar mediante la barra de ubicación.
+* El espacio en blanco líder se desinfectó en el RTE.
+* La edición en línea se restauró al entrar.
+* La etiqueta de arrastre se revirtió para no mostrar todo el contenido.
+* Se han resuelto problemas de accesibilidad del explorador.
+* `selectEditables([])` se usa ahora para anular la selección de todos los componentes mediante la extensibilidad.
+* La tabla de metadatos se crea ahora en la ubicación correcta.
+* Se corrigió un problema en el cual los recursos de fragmento de contenido copiados apuntaban a `/data/undefined`.
+
