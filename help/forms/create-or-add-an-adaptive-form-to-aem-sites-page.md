@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 958c166585ac7eeb667d73744403558b2dc5ce94
+source-git-commit: bc9fa030aeab4f2dddafc2241fade7b5d0689926
 workflow-type: tm+mt
-source-wordcount: '3339'
+source-wordcount: '3312'
 ht-degree: 95%
 
 ---
@@ -72,9 +72,9 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 Antes de empezar a crear o a crear un formulario adaptable, habilite los componentes principales de formularios adaptables y añada las bibliotecas de cliente de formularios adaptables a su página de AEM Sites:
 
-### Habilite los componentes principales de formularios adaptables para su entorno de Cloud Service de AEM
+<!--### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
 
-Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM as a Cloud Service.
+Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment. -->
 
 ### Añadir bibliotecas de cliente de Forms adaptables a su página o experiencia de AEM Sites
 
