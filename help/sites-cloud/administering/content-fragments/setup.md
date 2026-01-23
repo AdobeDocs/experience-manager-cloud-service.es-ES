@@ -5,10 +5,10 @@ feature: Content Fragments
 role: Developer
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b3e1d3a3770531728d696be125f074881f179573
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 37%
+source-wordcount: '402'
+ht-degree: 36%
 
 ---
 
@@ -33,6 +33,10 @@ La configuración de la instancia ha finalizado:
 
 * al [habilitar la funcionalidad en el Explorador de configuración](#enable-content-fragment-functionality-configuration-browser)
 * a continuación, [aplicando la configuración a sus carpetas individuales de Assets](#apply-the-configuration-to-your-folder)
+
+>[!TIP]
+>
+>Los fragmentos de contenido se pueden [publicar en Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
 
 ## Habilitar la funcionalidad de fragmento de contenido en el explorador de configuración {#enable-content-fragment-functionality-configuration-browser}
 
