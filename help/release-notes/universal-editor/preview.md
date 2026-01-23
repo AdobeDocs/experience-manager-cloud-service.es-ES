@@ -3,9 +3,9 @@ title: Notas de la versión de Universal Editor Preview
 description: Estas son las notas de la versión de la vista previa del editor universal.
 feature: Release Information
 role: Admin
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: cb8f4911b5285b92894ab1d4458561c6607a2d9c
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 * Las definiciones se expusieron a la extensibilidad.
 * El método de componente de movimiento se expuso a `editorActions`.
 * El método Add component se expuso a `editorActions`.
-* Detalles del bloque implementado para la versión 2.
+* Se ha lanzado la versión 2.0 de la API de creación de documentos.
 
 ## Próximas mejoras {#other-improvements}
 
