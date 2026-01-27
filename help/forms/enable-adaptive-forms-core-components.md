@@ -32,7 +32,7 @@ Para los entornos **AEM 6.5 Forms** y **AEM 6.5 LTS Forms**, los componentes pri
 
 Siga las guías correspondientes:
 - Para AEM 6.5 Forms: [Habilitar los componentes principales de Forms adaptable en AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=es).
-- Para AEM 6.5 LTS Forms: [Habilitar componentes principales de Forms adaptable en AEM 6.5 LTS Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
+- Para AEM 6.5 LTS Forms: [Habilitar componentes principales de Forms adaptable en AEM 6.5 LTS Forms](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
 
 **Nota:** Si algún paso para habilitar los componentes principales de Forms adaptable en entornos de AEM 6.5 anteriores no está claro o si existen requisitos previos específicos del entorno, aclare estos requisitos antes de intentar la habilitación.
 
