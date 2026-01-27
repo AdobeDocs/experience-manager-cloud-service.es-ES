@@ -4,10 +4,10 @@ description: Comprenda en detalle el contrato JSON entre la definición del comp
 feature: Developing
 role: Admin, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 97%
 
 ---
 
@@ -94,9 +94,9 @@ El siguiente es un `component-definition.json` de ejemplo completo pero simple.
 
 `plugins` define qué complemento es responsable de mantener el componente. Los complementos comunes incluyen los siguientes:
 
-* `aem` para [AEM as a Cloud Service.](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service)
-* `aem65` para [AEM 6.5.](https://experienceleague.adobe.com/es/docs/experience-manager-65) y [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts)
+* `aem` para [AEM as a Cloud Service,](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service) [AEM 6.5.,](https://experienceleague.adobe.com/es/docs/experience-manager-65) y [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts)
 * `xwalk` para [Creación con AEM Sites para Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
+* `da` para [creación de documentos](https://docs.da.live/developers/reference/universal-editor)
 
 ## `page` o `cf` {#page-cf}
 

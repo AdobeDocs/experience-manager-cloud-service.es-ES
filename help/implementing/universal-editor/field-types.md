@@ -4,10 +4,10 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 97%
+source-wordcount: '1617'
+ht-degree: 96%
 
 ---
 
@@ -103,6 +103,10 @@ Un objeto de campo tiene la siguiente definición de tipo.
 | `multi` | `boolean` | ¿Es el campo un campo múltiple?<br/>Tenga en cuenta que no se permite anidar contenedores para campos múltiples en el panel de propiedades | No |
 | `validation` | `ValidationType` | Regla o reglas de validación para el campo | No |
 | `raw` | `unknown` | Datos sin procesar que el componente puede utilizar | No |
+
+>[!NOTE]
+>
+>No se permite el guion bajo (`_`) en los nombres de campo al usar los complementos [`aem` o `xwalk`.](/help/implementing/universal-editor/component-definition.md#plugins)
 
 ### campo Nombre y anidamiento {#nesting}
 
