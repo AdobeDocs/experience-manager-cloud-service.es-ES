@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 97%
+source-wordcount: '1904'
+ht-degree: 95%
 
 ---
 
@@ -28,11 +28,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Requisito previo
 
-**Habilitar los componentes principales de formularios adaptables para su entorno**: al crear un programa, los componentes principales de formularios adaptables ya están habilitados para su entorno. Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service.
-
->[!NOTE]
->
-> Al implementar el entorno Forms as a Cloud Service basado en Archetype 45, las plantillas **Formularios adaptables (componente principal)** y las temáticas basadas en componentes principales se añaden al entorno.
+Al implementar el entorno de Forms as a Cloud Service basado en el tipo de archivo 45, se añaden temáticas principales basadas en componentes al entorno.
 
 ## Trabajo con plantillas {#working-with-templates}
 

@@ -4,27 +4,23 @@ description: Aprenda a guardar formularios adaptables basados en componentes pri
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '1387'
-ht-degree: 16%
+source-wordcount: '1351'
+ht-degree: 13%
 
 ---
 
 
 # Guardar formularios como borradores y mostrarlos en la página de Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Considere a un usuario que comienza a rellenar un formulario pero necesita pausar y volver más tarde. AEM ofrece la opción `save-as-draft`, que permite al usuario guardar el formulario como borrador para una futura finalización. Para facilitarle este proceso, AEM proporciona el componente **Borradores y envíos** del portal de Forms de forma predeterminada, que muestra borradores y envíos en páginas de AEM Sites. El componente enumera los formularios que se han guardado como borradores para su posterior finalización, así como los que se han enviado. Solo los usuarios que inicien sesión pueden editar sus borradores o ver los formularios enviados. Sin embargo, si un usuario anónimo navega por la lista de formularios usando el componente **Buscar y listar** y guarda un formulario como borrador, ese borrador no aparecerá en la lista del componente **Borradores y envíos**. Para ver los borradores y los envíos, los usuarios deben haber iniciado sesión en el momento del envío del formulario.
 
 ![Icono Borradores](assets/drafts-component.png)
 
 ## Requisitos previos
-
-* Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM as a Cloud Service.
-
-  Después de implementar los componentes principales más recientes en su entorno, los componentes del Portal de formularios pasan a ser accesibles en el entorno de creación.
 
 * [Configurar el almacenamiento de Azure y el conector de almacenamiento unificado para el componente del portal de Forms Borradores y envíos](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
@@ -68,7 +64,7 @@ El componente **Borradores y envíos** necesita una configuración de almacenami
 
 >[!NOTE]
 >
-> Si necesita configurar una opción de almacenamiento que no sea Azure, escriba a aem-forms-ea@adobe.com desde su dirección de correo electrónico oficial con sus requisitos detallados.
+> Si necesita configurar una opción de almacenamiento que no sea Azure, escriba a <aem-forms-ea@adobe.com> desde su dirección de correo electrónico oficial con los requisitos detallados.
 
 Una vez que haya configurado correctamente el almacenamiento de Azure y el conector de almacenamiento unificado para almacenar los borradores y los formularios enviados, agregue el componente **Borradores y envíos** en la página de AEM Sites.
 

@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: invocar mejoras del servicio en VRE, rellenar opciones desplegables utilizando invocar servicio, establecer panel repetible utilizando la salida del servicio de invocación, establecer panel utilizando la salida del servicio de invocación, usar el parámetro de salida del servicio de invocación para validar otro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '1860'
-ht-degree: 3%
+source-wordcount: '1835'
+ht-degree: 2%
 
 ---
 
@@ -66,7 +66,6 @@ A continuación se muestran los requisitos previos que debe cumplir antes de usa
 
 * Asegúrese de haber configurado una fuente de datos. Para obtener instrucciones sobre cómo configurar un origen de datos, [haga clic aquí](/help/forms/configure-data-sources.md).
 * Crear un modelo de datos de formulario con la fuente de datos configurada. Para obtener instrucciones sobre cómo crear un modelo de datos de formulario, [haga clic aquí](/help/forms/create-form-data-models.md).
-* Asegúrese de que los componentes principales estén habilitados para su entorno. Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM as a Cloud Service.
 
 ## Exploración del servicio de invocación mediante diferentes casos de uso
 

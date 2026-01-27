@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo añadir vínculos de formularios a
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: ht
-source-wordcount: '536'
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+workflow-type: tm+mt
+source-wordcount: '481'
 ht-degree: 100%
 
 ---
@@ -17,11 +17,6 @@ En el escenario del sitio web del banco, el componente **Vínculo** del Portal d
 
 ![Icono de vínculo](/help/forms/assets/link-forms.png)
 
-## Requisito previo
-
-Antes de explorar las distintas funcionalidades de un componente del Portal de formularios, asegúrese de que los componentes principales estén habilitados para su entorno. Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service.
-
-Después de implementar los componentes principales más recientes en su entorno, los componentes del Portal de formularios pasan a ser accesibles en el entorno de creación.
 
 ## Añadir el componente Vínculo a la página de Sites
 

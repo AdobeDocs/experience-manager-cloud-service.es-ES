@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
-workflow-type: ht
-source-wordcount: '2335'
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+workflow-type: tm+mt
+source-wordcount: '2319'
 ht-degree: 100%
 
 ---
@@ -170,8 +170,6 @@ Se puede ver el valor de dataRef en la ventana **[!UICONTROL Propiedades]** de u
 ## Requisitos para añadir el controlador de error mediante el servicio Invocar del Editor de reglas {#before-you-start-to-add-error-handler}
 
 Antes de añadir un controlador de error mediante el servicio Invocar del Editor de reglas:
-
-* Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service.
 
 * Obtenga información sobre cómo [crear funciones personalizadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=es#write-rules).
 

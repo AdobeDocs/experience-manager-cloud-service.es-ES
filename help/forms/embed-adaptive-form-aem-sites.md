@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bc9fa030aeab4f2dddafc2241fade7b5d0689926
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 96%
+source-wordcount: '3280'
+ht-degree: 91%
 
 ---
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -58,7 +58,7 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 * **[Convertir un formulario adaptable en fragmento de experiencia](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** convierta un formulario adaptable agregado a una página de AEM Sites en un fragmento de experiencia para reutilizar el formulario en varias páginas de AEM Sites.
 
-* **[Crear y agregar un formulario adaptable personalizado a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):**&#x200B;**[!UICONTROL puede utilizar el componente contenedor de formulario adaptable]** para crear un formulario completamente nuevo desde cero y adaptarlo específicamente a sus necesidades y preferencias de diseño.
+* **[Crear y agregar un formulario adaptable personalizado a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):****[!UICONTROL puede utilizar el componente contenedor de formulario adaptable]** para crear un formulario completamente nuevo desde cero y adaptarlo específicamente a sus necesidades y preferencias de diseño.
 
 * **[Crear y agregar un formulario adaptable personalizado a los fragmentos de experiencias](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** puede ampliar el alcance de los formularios añadiéndolos a los fragmentos de experiencias de AEM, lo que permite una reutilización perfecta en varias páginas o sitios.
 
@@ -73,17 +73,14 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 ## Consideraciones para incrustar un formulario adaptable en una página de AEM Sites o un fragmento de experiencia de AEM {#before-you-start-embedding-an-adaptive-form}
 
-Antes de empezar a incrustar un nuevo formulario adaptable o un formulario adaptable preexistente mediante **[!UICONTROL Formularios adaptables: Incrustados (v2)]**, habilite **Componentes principales de Formularios adaptables** y agregue **Bibliotecas de cliente de Formularios adaptables** a su página de AEM Sites:
+Antes de empezar a incrustar un nuevo formulario adaptable o un formulario adaptable preexistente mediante **[!UICONTROL Forms adaptable - Incrustar(v2)]**, agregue **Bibliotecas de cliente de Forms adaptable** a su página de AEM Sites:
 
-<!--### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
-
-Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.-->
 
 ### Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites o de fragmentos de experiencia
 
-Cuando la opción **[!UICONTROL Cuando el formulario abarca toda la anchura de una página]** está seleccionada en el cuadro de diálogo de configuración de **[!UICONTROL Contenedores de formulario]** y se utilizan los Formularios adaptables con componentes principales, es necesario incluir las bibliotecas de cliente en la página del sitio correspondiente.
+Cuando la opción **[!UICONTROL Cuando el formulario abarca todo el ancho de una página]** está seleccionada en el cuadro de diálogo de configuración de **[!UICONTROL Contenedores de formulario]** y se utilizan Forms adaptables, es necesario incluir las bibliotecas de cliente en la página del sitio correspondiente.
 
-![Cuando se selecciona la opción Formulario abarca todo el ancho de una página, y se utiliza un formulario adaptable con componentes principales](/help/forms/assets/overlaycorecomponent.gif)
+![Cuando se selecciona la opción Formulario que cubre el ancho completo de una página y se utilizan formularios adaptables](/help/forms/assets/overlaycorecomponent.gif)
 
 **Caso 1: usar componentes de página de sitios independientes**
 
@@ -280,16 +277,16 @@ un marco en línea (iframe) es un elemento de HTML que carga un formulario adapt
 
    * Si la casilla de verificación **[!UICONTROL El formulario abarca toda la anchura del marco]** está seleccionada, significa que ese formulario adaptable ocupa la anchura completa del contenedor en el que se coloca. En este caso, no se utiliza un iframe para procesar el formulario. La presentación y el diseño de un formulario adaptable se ajustan para abarcar toda la anchura del contenedor, lo que lo hace adaptable y capaz de ajustarse a diferentes tamaños de pantalla. Esta opción permite incrustar varios Formularios adaptables en una página de AEM Sites.
 
-     >[!NOTE]
-     >
-     > Para incrustar varios formularios en una página de AEM Sites, seleccione la casilla de verificación **[!UICONTROL El formulario abarca toda la anchura del marco]**.
-
+         >[!NOTE]
+         >
+         > Para incrustar varios formularios en una página de AEM Sites, seleccione **[!UICONTROL El formulario abarca todo el ancho del marco]** casilla de verificación.
+     
    * Si la casilla de verificación **[!UICONTROL El formulario abarca toda la anchura del marco]** no está seleccionada, ese formulario adaptable no cubre toda la anchura del contenedor. En su lugar, se utiliza un iframe para procesar el formulario, que no se puede extender más allá de una anchura específica. Este método es útil cuando el formulario adaptable tiene límites definidos y necesita coexistir con otros componentes de AEM que se encuentran junto a él dentro del contenedor. Si esta opción no está seleccionada, solo permite incrustar un Formulario adaptable en la página de AEM Sites sin un iframe.
 
-     >[!NOTE]
-     >
-     > La página de AEM Sites solo admite que exista un formulario adaptable sin un iframe. Para agregar más Formularios adaptables con el componente **[!UICONTROL Formularios adaptables: incrustados]**, seleccione la opción **[!UICONTROL El formulario abarca toda la anchura del marco]**.
-
+         >[!NOTE]
+         >
+         > La página de AEM Sites solo admite que exista un formulario adaptable sin un iframe. Para agregar más Forms adaptable mediante el componente **[!UICONTROL Forms adaptable - Incrustar]**, seleccione **[!UICONTROL El formulario abarca toda la anchura del marco]** opción.
+     
 * **Altura**: especifique la altura del contenedor. Déjelo en blanco para cambiar automáticamente el tamaño del contenedor.
 * **Biblioteca de cliente CSS**: especifique la ruta a una biblioteca de cliente CSS.
 
@@ -386,5 +383,5 @@ Tenga en cuenta los siguientes puntos al incrustar formularios adaptables en pá
 
 ## Ver también {#see-also}
 
-* [Crear formularios adaptables independientes basados en los componentes principales](/help/forms/creating-adaptive-form-core-components.md)
-* [Creación de un formulario adaptable basado en componentes principales directamente en una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Creación de un formulario independiente](/help/forms/creating-adaptive-form-core-components.md)
+* [Crear un formulario directamente en una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

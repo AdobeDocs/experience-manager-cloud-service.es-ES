@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '2445'
-ht-degree: 89%
+source-wordcount: '2352'
+ht-degree: 88%
 
 ---
 
@@ -31,28 +31,12 @@ Antes de empezar, obtenga información sobre el tipo de componentes de Forms dis
 
 ![Asistente para crear un formulario adaptable](/help/release-notes/assets/wizard.png)
 
-## Aplicabilidad y casos de uso
-
-### Seguro
-
-## ¿Se puede utilizar AEM Forms para procesos de seguros internos y de cara al cliente?
-
-Sí. AEM Forms admite formularios digitales orientados al cliente, así como procesos internos dirigidos por el personal o el agente, como revisiones, aprobaciones y captura de datos asistida.
-
-## ¿Se puede utilizar AEM Forms para el envío de reclamaciones de seguro?
-
-Sí. AEM Forms admite formularios adaptables de varios pasos que permiten a los asegurados enviar reclamaciones de seguro de forma digital, incluida la captura de datos estructurados y documentación de apoyo.
-
-## ¿AEM Forms es compatible con las reclamaciones de seguros móviles?
-
-Sí. AEM Forms admite formularios adaptables y fáciles de usar en dispositivos móviles, lo que permite a los clientes y agentes enviar información de seguros desde dispositivos móviles.
 
 ## Requisitos previos
 
 Para crear un formulario adaptable, es necesario lo siguiente:
 
 
-* **Habilitar los componentes principales de formularios adaptables para su entorno**: al crear un programa, los componentes principales de formularios adaptables ya están habilitados para su entorno.  Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM as a Cloud Service. Al habilitar los componentes principales para su entorno, las plantillas y las temáticas de **Formularios adaptables (componente principal)** se añaden a su entorno. Si su versión del SDK de AEM es anterior a la 2023.02.0, [compruebe que tiene `prerelease` habilitado el indicador en su entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features), ya que los componentes principales de formularios adaptables formaban parte de la versión preliminar anterior a la 2023.02.0.
 
 * **Una plantilla de formulario adaptable**: Una plantilla ofrece una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También ofrece opciones para definir una temática y una acción de envío. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. Por ejemplo, enviar los datos recopilados a una fuente de datos. El servicio en la nube proporciona una plantilla OOTB, denominada en blanco:
 
@@ -72,7 +56,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Crear un formulario adaptable  {#create-an-adaptive-form-core-components}
@@ -225,3 +209,18 @@ Para cambiar el nombre de un formulario adaptable, realice los siguientes pasos:
 
 
 
+## Aplicabilidad y casos de uso
+
+### Seguro
+
+## ¿Se puede utilizar AEM Forms para procesos de seguros internos y de cara al cliente?
+
+Sí. AEM Forms admite formularios digitales orientados al cliente, así como procesos internos dirigidos por el personal o el agente, como revisiones, aprobaciones y captura de datos asistida.
+
+## ¿Se puede utilizar AEM Forms para el envío de reclamaciones de seguro?
+
+Sí. AEM Forms admite formularios adaptables de varios pasos que permiten a los asegurados enviar reclamaciones de seguro de forma digital, incluida la captura de datos estructurados y documentación de apoyo.
+
+## ¿AEM Forms es compatible con las reclamaciones de seguros móviles?
+
+Sí. AEM Forms admite formularios adaptables y fáciles de usar en dispositivos móviles, lo que permite a los clientes y agentes enviar información de seguros desde dispositivos móviles.

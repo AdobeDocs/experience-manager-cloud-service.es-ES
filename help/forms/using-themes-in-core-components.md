@@ -5,9 +5,9 @@ keywords: temáticas de form builder, componentes principales de estilo de formu
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: c0e0a700e85563ff65c703d5d20e6d6c1ff0651c
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2881'
 ht-degree: 95%
 
 ---
@@ -70,7 +70,6 @@ La personalización de una temática hace referencia al proceso de modificación
 
 ### Configurar su entorno
 
-* Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM as a Cloud Service.
 * Configure una [canalización de implementación front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=es) para su entorno de Cloud Service. Como alternativa, puede configurar la canalización más adelante, lo que le ofrece la flexibilidad de priorizar la prueba y el refinamiento del tema antes de configurar la canalización de implementación.
 
 <!-- 
@@ -453,16 +452,6 @@ Para establecer la versión de Node.js en 20 mediante la configuración de canal
 
 **R:** Cuando las personalizaciones se realizan tanto en el nivel global como en el nivel de componente, tiene prioridad la personalización en el nivel de componente.
 
-<!--
-
-## See next
-
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
-* [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-* [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
-
--->
 
 
 ## Ver también {#see-also}
@@ -470,6 +459,6 @@ Para establecer la versión de Node.js en 20 mediante la configuración de canal
 {{see-also}}
 
 * [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
-* [Generar documento de registro para formularios adaptables (Componentes principales](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+* [Generar documento de registro para formularios adaptables (Componentes principales)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creación de un formulario adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
 * [Plantillas temáticas y modelos de datos de formulario de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
