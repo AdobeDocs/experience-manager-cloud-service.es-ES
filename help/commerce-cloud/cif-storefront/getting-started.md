@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 9%
@@ -36,7 +36,7 @@ La incorporación de AEM Commerce as a Cloud Service es un proceso de dos pasos:
 
 El primer paso de incorporación lo realiza Adobe. Para obtener más información sobre precios y aprovisionamiento, debe ponerse en contacto con su representante de ventas.
 
-Una vez que se le haya proporcionado el complemento de CIF, se aplicará a cualquier programa de Cloud Manager existente. Si no tiene un programa de Cloud Manager, debe crear uno. Para obtener más información, consulte [Configurar el programa.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=es)
+Una vez que se le haya proporcionado el complemento de CIF, se aplicará a cualquier programa de Cloud Manager existente. Si no tiene un programa de Cloud Manager, debe crear uno. Para obtener más información, consulte [Configurar el programa.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)
 
 El segundo paso es el autoservicio para cada entorno de AEM as a Cloud Service. Hay algunas configuraciones adicionales que debe realizar después del aprovisionamiento inicial del complemento de CIF.
 
@@ -57,7 +57,7 @@ Hay dos opciones para configurar el punto de conexión:
 
 ### Mediante la interfaz de usuario de Cloud Manager (predeterminada) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/343270?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 Esta configuración se puede realizar mediante un cuadro de diálogo en la página Detalles del entorno. Al ver esta página para un programa habilitado para Commerce, se muestra un botón si el punto de conexión no está configurado actualmente:
 

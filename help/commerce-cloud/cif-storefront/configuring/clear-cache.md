@@ -5,7 +5,7 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 3%
@@ -41,7 +41,7 @@ De forma predeterminada, la función de borrado de caché está desactivada en l
 
    * Además, asegúrese de proporcionar el patrón correspondiente que se adapte a su producto, categoría y página de CMS debe añadirse al archivo de configuración anterior para eliminarlo de la caché de Dispatcher.
 
-* Para mejorar el rendimiento de las consultas SQL para encontrar la página correspondiente relacionada con el producto y la categoría, agregue el índice correspondiente en el proyecto (recomendado). Para obtener más información, consulte [cifCacheInvalidationSupport.](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml)
+* Para mejorar el rendimiento de las consultas SQL para encontrar la página correspondiente relacionada con el producto y la categoría, agregue el índice correspondiente en el proyecto (recomendado). Para obtener más información, vea [cifCacheInvalidationSupport.](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml)
 
 ## Verificación de la función Borrar caché {#verify-clear-cache}
 
@@ -83,17 +83,17 @@ Tipo de solicitud: `POST`
 
 ### Encabezados {#headers}
 
-| Parámetro | Valor | Obligatorio/Obligatorio | Comentar |
+| Parámetro | Valor | Obligatorio/Obligatorio | Comentario |
 |------------------------------|-------------------|---|---|
-| `Content-Type` | `application/json` | Requerido |  |
-| `Authorization` | Credenciales de usuario del autor correspondiente (tipo de autenticación: autenticación básica) | Requerido | Añada el nombre de usuario y la contraseña correspondientes. |
+| `Content-Type` | `application/json` | Necesario |  |
+| `Authorization` | Credenciales de usuario del autor correspondiente (tipo de autenticación: autenticación básica) | Necesario | Añada el nombre de usuario y la contraseña correspondientes. |
 
 
 ### Carga útil {#payload}
 
 La siguiente tabla muestra los atributos existentes que la función proporciona de forma predeterminada. Estas propiedades de `InvalidateType` deben proporcionarse en combinación con un atributo obligatorio (como `storePath`).
 
-| `invalidateType` | Valor | Tipo (Matriz/Cadena/Booleano) | ¿Borrará esto la caché de Dispatcher? | Comentar |
+| `invalidateType` | Valor | Tipo (Matriz/Cadena/Booleano) | ¿Borrará esto la caché de Dispatcher? | Comentario |
 |------------------------------|-------------------|---|---|---|
 | `productSkus` | Sku del producto, que debe invalidarse de la caché. | Matriz | Sí | Borre la caché de la memoria interna mediante el siguiente patrón:<br>```"\"sku\":\\s*\""```<br>Dispatcher<br><ul><li>Borre la caché de la página PDP de los SKU correspondientes</li><li>Borrar caché de la página de categorías correspondiente en la que existe(según la respuesta de graphql de commerce)</li><li>Borre la caché en función de la siguiente consulta:</li></ul><br>```SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content, '{storePath}')<br>AND ( (content.[product] IN ('sku1','sku2') AND content.[productType] = 'combinedSku')<br> OR (content.[selection] IN ('sku1','sku2') AND content.[selectionType] IN ('combinedSku', 'sku')))``` |
 | `categoryUids` | Uid de categoría: que debe invalidarse de la caché. | Matriz | Sí | Borre la caché de la memoria interna mediante el siguiente patrón:<br>```"\"uid\"\\s*:\\s*\\{\"id\"\\s*:\\s*\""```<br>Dispatcher<br><ul><li>Borre la memoria caché de las páginas de categorías para los datos correspondientes (incluida su página de categoría secundaria)</li><li>Borrar todas las páginas de PDP que tengan las categorías correspondientes</li><li>Borre la caché en función de la siguiente consulta:</li></ul><br>```SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content,'{storePath}')<br>AND ((content.[categoryId] in ('category1','category2')<br>AND content.[categoryIdType] in ('uid'))<br>OR (content.[category] in ('category1','category2') AND content.[categoryType] in ('uid')))``` |
@@ -103,7 +103,7 @@ La siguiente tabla muestra los atributos existentes que la función proporciona 
 
 Esta tabla muestra la propiedad obligatoria que debe pasarse en cada llamada de API:
 
-| Propiedad | Valor | Tipo (Matriz/Cadena/Booleano) | ¿Borrará esto la caché de Dispatcher? | Comentar |
+| Propiedad | Valor | Tipo (Matriz/Cadena/Booleano) | ¿Borrará esto la caché de Dispatcher? | Comentario |
 |------------------------------|-------------------|---|---|---|
 | `storePath` | Valor correspondiente de la ruta de acceso del sitio desde el que debe eliminarse la caché (Ejemplo: `/content/venia/us/en` como referencia con un proyecto de venia). | Cadena | Sí | Esto se debe administrar con la combinación de `invalidateType.` |
 

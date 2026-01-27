@@ -4,7 +4,7 @@ description: Aprenda a crear y a crear experiencias relacionadas con el comercio
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-El complemento de CIF amplía la creación de AEM con funciones específicas del comercio. Esto permite a los autores crear y administrar experiencias relacionadas con el comercio de forma eficaz, obteniendo acceso a los datos y al contenido del producto sin abandonar el contexto.
+El complemento de CIF amplía la creación de AEM con funciones específicas del comercio. Esto permite a los autores crear y administrar de forma eficaz las experiencias relacionadas con el comercio mediante el acceso a los datos y al contenido del producto sin abandonar el contexto.
 
 ## Seleccionadores {#pickers}
 
@@ -94,7 +94,7 @@ Los componentes mostrarán un indicador visual si la fecha utilizada está ensay
 
 ![Indicador de ensayo](../assets/authoring/staged-indicator.png)
 
-## Omnisearch {#omnisearch}
+## OmniSearch {#omnisearch}
 
 El uso de Omnisearch es una forma sencilla para que los profesionales encuentren contenido de AEM y datos del catálogo de productos mediante la búsqueda de texto completo. Omnisearch ejecutará la búsqueda de texto completo en AEM y en el backend de Commerce para encontrar objetos de catálogo de productos en el backend de Commerce y en el contenido de AEM. Los resultados de AEM también incluyen contenido etiquetado con datos de productos o categorías.
 
