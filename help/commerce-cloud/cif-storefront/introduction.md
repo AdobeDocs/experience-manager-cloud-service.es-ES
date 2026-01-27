@@ -62,7 +62,7 @@ CIF le ofrece compatibilidad con patrones de integración estandarizados basados
    * No tener acceso a los datos clasificados
    * Necesidad de experiencias y datos de productos en tiempo real
 * Una creciente madurez digital resulta en la necesidad de administrar la experiencia
-* 
+* &#x200B;
    * CIF incluye capacidades de administración de experiencia de producto que se pueden incorporar gradualmente sin necesidad de un esfuerzo adicional en TI.
 * Listo para omnicanal
    * CIF admite una variedad de tecnologías de puntos de contacto (del lado del servidor, híbrido, del lado del cliente) con patrones, aceleradores y componentes principales.
