@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: ea85381d63954af3093c34f612babd953c466e1e
+source-git-commit: 6173fc8a42525dcde435289da8ef8a533ea96de6
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -44,7 +44,7 @@ Para crear un encabezado, coloque una almohadilla (#) delante del encabezado. Se
 
     `### This is an H3`
 
-    `###### This is a H6`
+    `###### This is an H6`
 
 De forma opcional, puede crear un H1 subrayando el texto en signos iguales y un H2 subrayando el texto en signos menos. Por ejemplo:
 
@@ -72,7 +72,7 @@ Estos son ejemplos de vínculos en línea:
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -136,7 +136,7 @@ Puede tener citas de bloque anidadas. Por ejemplo:
 
 Puede crear listas ordenadas y desordenadas.
 
-Para crear una lista desordenada, utilice el símbolo &ast; antes de los elementos de la lista. Por ejemplo:
+Para crear una lista desordenada, utilice el símbolo &amp;ast; antes de los elementos de la lista. Por ejemplo:
 
     `* item in list`
 
@@ -156,7 +156,7 @@ Para crear una lista ordenada, añada los números, seguidos de un punto, antes 
 
 Puede añadir estilos de cursiva o negrita a su texto.
 
-Se agrega cursiva de la siguiente manera:
+Puede añadir cursiva de la siguiente manera:
 
     `*single asterisks*`
 
