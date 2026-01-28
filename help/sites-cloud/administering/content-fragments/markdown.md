@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 88%
+source-wordcount: '559'
+ht-degree: 79%
 
 ---
 
 # Markdown {#markdown}
 
-Cuando [crea](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) sus fragmentos de contenido, es posible que tenga [campos de texto de varias líneas](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) definidos con el **tipo predeterminado** de **Markdown**. El editor de fragmentos de contenido usa la sintaxis *markdown* para permitirle escribir fácilmente contenido, tanto para la creación de páginas como para la entrega sin encabezado:
+Cuando esté [creando](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) fragmentos de contenido, es posible que tenga [campos de texto de varias líneas](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) definidos con el **tipo predeterminado** de **Markdown**. El editor de fragmentos de contenido usa la sintaxis *markdown* para permitirle escribir fácilmente contenido, tanto para la creación de páginas como para la entrega sin encabezado:
 
 ![Campo Markdown de texto multilínea en el editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -32,7 +32,7 @@ Puede definir lo siguiente:
 
 ## Anotación de encabezado {#heading-notation}
 
-Para crear un encabezado, coloque una almohadilla (#) delante del encabezado. Se utiliza una almohadilla (#) para un H1, dos (##) para un H2 y así sucesivamente. Se pueden usar hasta seis almohadillas. Por ejemplo:
+Para crear un encabezado, coloque una almohadilla (#) delante del encabezado. Una almohadilla (#) indica un H1, dos (##) indica un H2, etc. Se pueden usar hasta seis almohadillas. Por ejemplo:
 
     `## This is an H2`
 
@@ -66,7 +66,7 @@ Estos son ejemplos de vínculos en línea:
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -130,7 +130,7 @@ Puede tener citas de bloque anidadas. Por ejemplo:
 
 Puede crear listas ordenadas y desordenadas.
 
-Para crear una lista desordenada, utilice el símbolo &ast; antes de los elementos de la lista. Por ejemplo:
+Para crear una lista desordenada, utilice el símbolo &amp;ast; antes de los elementos de la lista. Por ejemplo:
 
     `* item in list`
 
@@ -150,7 +150,7 @@ Para crear una lista ordenada, añada los números, seguidos de un punto, antes 
 
 Puede añadir estilos de cursiva o negrita a su texto.
 
-Se agrega cursiva de la siguiente manera:
+Puede añadir cursiva de la siguiente manera:
 
     `*single asterisks*`
 
@@ -182,7 +182,7 @@ Los bloques de código suelen emplearse para ilustrar el código fuente. Puede c
 
 ## Escapes de barra invertida {#backslash-escapes}
 
-Se pueden utilizar secuencias de escape de barra invertida para generar caracteres literales que tengan un significado especial en la sintaxis de formato. Por ejemplo, si desea rodear una palabra con asteriscos literales (en lugar de una &lt;em> etiqueta HTML), puede utilizar barras invertidas antes de los asteriscos, de esta manera:
+Puede utilizar secuencias de escape de barra invertida para generar caracteres literales que también tengan un significado especial en la sintaxis de formato. Por ejemplo, si desea rodear una palabra con asteriscos literales (en lugar de una etiqueta &lt;em> de HTML), puede utilizar barras invertidas antes de los asteriscos, de esta manera:
 
     `\\*literal asterisks\\*`
 
