@@ -1,15 +1,15 @@
 ---
 title: Accesibilidad en Dynamic Media
-description: Aprenda a trabajar con vídeo en Dynamic Media, como prácticas recomendadas para codificar vídeos, publicar vídeos en YouTube y ver informes de vídeo. También aprenderá a añadir subtítulos, subtítulos o marcadores de capítulo a los vídeos.
+description: Aprenda a trabajar con vídeos en Dynamic Media, como prácticas recomendadas para codificar vídeos y publicar vídeos en YouTube. También aprenderá a añadir subtítulos, subtítulos o marcadores de capítulo a los vídeos.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 4a09e74ae62dba40deb192b1dfe38860bdb43921
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '636'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ La inversión del enfoque sigue la ubicación natural del elemento de la interfa
 * En el editor de vídeo interactivo, puede utilizar `Spacebar` para seleccionar una imagen y agregarla a un segmento. Además, puede usar la clave `Backspace` para eliminar el elemento seleccionado de la ficha **[!UICONTROL Contenido]**. Además, si presiona `Tab`, funcionará como desee para desplazarse entre los elementos interactivos de la página.
 * En el editor de recorte inteligente/recorte inteligente de imágenes, puede hacer lo siguiente:
    * Utilice las teclas de flecha para recortar el tamaño del marco, cambiar la posición de la imagen o ambas cosas.
-   * La primera `Tab` detención resalta todo el marco de imagen. A continuación, puede utilizar las teclas de flecha del teclado para cambiar la posición del marco.
+   * La primera `Tab` detención resalta todo el marco de imagen. A continuación, puede utilizar las teclas de flecha del teclado para cambiar la posición del fotograma.
    * Las siguientes cuatro `Tab` paradas son las cuatro esquinas del fotograma. Cuando el enfoque se coloca en una esquina del marco, la esquina se resalta. De nuevo, puede utilizar las teclas de flecha del teclado para mover la esquina enfocada.
 Ver [Edición del recorte inteligente o la muestra inteligente de una sola imagen](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
@@ -55,12 +55,12 @@ Los elementos de la interfaz de usuario de Dynamic Media funcionan con tecnolog�
 
 Todos los componentes listos para usar de los visores de Dynamic Media admiten la accesibilidad del teclado para sus clientes.
 
-Consulte [Navegación y accesibilidad por teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=es) en la Guía de referencia de visores de Dynamic Media.
+Consulte [Navegación y accesibilidad por teclado](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility#) en la Guía de referencia de visores de Dynamic Media.
 
-## Compatibilidad con tecnología de asistencia en los visores de Dynamic Media {#assistive-technology=support-for-dm-viewers}
+## Compatibilidad con tecnología de asistencia en visores de Dynamic Media {#assistive-technology=support-for-dm-viewers}
 
 Todos los componentes del visualizador de Dynamic Media admiten los roles y atributos de ARIA (Aplicaciones de Internet enriquecidas accesibles) para mejorar la integración con tecnologías de asistencia como lectores de pantalla.
-Consulte el tema de ayuda **Compatibilidad con tecnología de asistencia** en cualquier tema de personalización de visualizadores de la Guía de referencia de visualizadores de Dynamic Media. Por ejemplo, consulte [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=es) para el visor de vídeo o [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=es#viewers-for-aem-assets-only) para el visor de imágenes interactivas.
+Consulte el tema de ayuda **Compatibilidad con tecnología de asistencia** en cualquier tema de personalización de visualizadores de la Guía de referencia de visualizadores de Dynamic Media. Por ejemplo, consulte [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive#) para el visor de vídeo o [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive#viewers-for-aem-assets-only) para el visor de imágenes interactivas.
 
 ## Compatibilidad con subtítulos ocultos en [!DNL Dynamic Media] {#closed-caption-support}
 
@@ -71,5 +71,5 @@ Ver [vídeo en Dynamic Media: agregar subtítulos opcionales al vídeo](/help/as
 
 >[!MORELIKETHIS]
 >
->* [Accesibilidad para las soluciones de Adobe](https://www.adobe.com/accessibility.html)
+>* [Accesibilidad para las soluciones de Adobe](https://www.adobe.com/trust/accessibility.html)
 >* [Accesibilidad en Experience Manager Assets](/help/assets/dynamic-media/accessibility-dm.md)
