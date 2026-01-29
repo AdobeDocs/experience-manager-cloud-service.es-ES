@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 14%
+source-wordcount: '2710'
+ht-degree: 13%
 
 ---
 
@@ -33,9 +33,13 @@ Para ello, el Editor universal proporciona a los creadores de contenido una IU i
 
 ## Edición de contenido {#editing-content}
 
-La edición de contenido es sencilla e intuitiva. Al pasar el ratón sobre el contenido en el editor, el contenido editable se resalta con un delgado contorno azul.
+La edición de contenido es sencilla e intuitiva. Al pasar el ratón sobre el contenido en el editor, el contenido editable se resalta con un contorno fino de color azul claro y un distintivo.
 
-![El contenido editable se resalta con un cuadro azul](assets/editable-content.png)
+![El contenido editable se resalta con un cuadro azul claro](assets/editable-content.png)
+
+Al tocar o hacer clic en el contenido resaltado, se selecciona y el contorno delgado de color azul claro se convierte en un contorno de color azul oscuro con un distintivo.
+
+![El contenido seleccionado está resaltado con un cuadro azul oscuro](assets/selected-content.png)
 
 >[!TIP]
 >
@@ -43,7 +47,11 @@ La edición de contenido es sencilla e intuitiva. Al pasar el ratón sobre el co
 
 Según el contenido que seleccione, es posible que tenga diferentes opciones de edición in situ, así como información y opciones adicionales para el contenido en el panel [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
-Cada parte del contenido editable se etiqueta con el tipo de contenido que es. Según el contenido, puede hacer clic en este distintivo para acceder rápidamente a las acciones de edición.
+### Menú contextual {#context-menu}
+
+Cada parte del contenido editable se etiqueta con el tipo de contenido que es.
+
+Puede hacer clic en este distintivo para acceder rápidamente a un menú contextual con acciones de edición. Al hacer clic con el botón derecho en un elemento editable no seleccionado, se selecciona automáticamente y también se abre el menú contextual.
 
 ![Opciones de distintivo editables](assets/editable-badge.png)
 
@@ -53,7 +61,7 @@ Puede editar el texto en su lugar haciendo doble clic o pulsando dos veces el co
 
 ![Edición de contenido](assets/editing-content.png)
 
-El contorno azul delgado se convierte en un contorno azul grueso para indicar que se ha seleccionado y aparece un cursor. Realice los cambios y, a continuación, pulse intro/retorno o seleccione fuera del cuadro de texto para guardar los cambios.
+El contorno delgado y azul claro se convierte en un contorno azul oscuro para indicar la selección y aparece un cursor. Realice los cambios y, a continuación, pulse intro/retorno o seleccione fuera del cuadro de texto para guardar los cambios.
 
 Al seleccionar el componente de texto, sus detalles se muestran en el panel [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) También puede editar el texto en el panel.
 
@@ -69,9 +77,9 @@ Puede editar el texto en su lugar haciendo doble clic o pulsando dos veces el co
 
 Para su comodidad, las opciones de formato y los detalles del texto están disponibles en dos lugares.
 
-#### El menú contextual {#context-menu}
+#### Menú contextual de texto enriquecido {#rich-text-context-menu}
 
-El menú contextual se abre encima del bloque de texto enriquecido y ofrece opciones de formato básicas en contexto. Debido a limitaciones de espacio, algunas opciones pueden estar ocultas detrás del botón de los tres puntos.
+Se abre un menú contextual sobre el bloque de texto enriquecido y ofrece opciones de formato básicas en contexto. Debido a limitaciones de espacio, algunas opciones pueden estar ocultas detrás del botón de los tres puntos.
 
 ![Menú contextual de texto enriquecido](assets/rich-text-context-menu.png)
 
@@ -227,7 +235,7 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 
 ### Copiar y pegar {#copy-paste}
 
-Puede copiar y pegar componentes que se encuentren dentro de [&#x200B; contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
+Puede copiar y pegar componentes que se encuentren dentro de [ contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
 
 Copiar y pegar pueden estar en la misma pestaña del explorador o entre pestañas del explorador, siempre que las pestañas ya estén abiertas. No puede copiar un elemento y, a continuación, abrir una nueva pestaña del explorador para pegarlo.
 
