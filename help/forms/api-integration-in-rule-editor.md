@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: al integrar la API en el editor de reglas, invoque las mejoras del servicio
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
+source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 3%
+source-wordcount: '1034'
+ht-degree: 4%
 
 ---
 
@@ -123,6 +123,10 @@ Por ejemplo, cuando el usuario abre **País de ciudadanía**, la lista de paíse
 
 Del mismo modo, **País de emisión de pasaporte** y **País de destino** utilizan la misma llamada de API, lo que garantiza datos coherentes y actualizados en los tres campos.
 
+>
+>
+> Puede [recuperar valores de propiedad de una matriz JSON invocando una API y utilizando una función personalizada](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Este método permite extraer valores y enlazarlos directamente a campos de formulario.
+
 ## Implementación del mecanismo de reintento para errores de API
 
 Cuando falla una solicitud de API, a menudo resulta útil volver a intentar la solicitud antes de informar de un error al usuario. Puede implementar un mecanismo de sondeo y reintentos escribiendo código personalizado en el archivo **function.js**.
@@ -195,10 +199,6 @@ function retryHandler(requestFn) {
 ```
 
 En el código anterior, la función **retryHandler** administra las solicitudes de API con reintentos automáticos en caso de error. Toma una función de solicitud (requestFn) e intenta la solicitud hasta dos veces, añadiendo metadatos para cada reintento.
-
->[!NOTE]
->
-> Para ver los pasos detallados sobre cómo agregar funciones personalizadas, consulte el artículo [Introducción a las funciones personalizadas para Forms adaptable basadas en componentes principales](/help/forms/create-and-use-custom-functions.md).
 
 ## Preguntas frecuentes
 

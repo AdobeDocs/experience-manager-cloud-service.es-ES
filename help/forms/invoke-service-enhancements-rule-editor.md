@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: invocar mejoras del servicio en VRE, rellenar opciones desplegables utilizando invocar servicio, establecer panel repetible utilizando la salida del servicio de invocación, establecer panel utilizando la salida del servicio de invocación, usar el parámetro de salida del servicio de invocación para validar otro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 2%
+source-wordcount: '2150'
+ht-degree: 1%
 
 ---
 
@@ -171,6 +171,10 @@ Escriba `101` en el cuadro de texto `Pet ID` para rellenar dinámicamente las op
 
 ![Resultado](/help/forms/assets/output1.png)
 
+> 
+>
+> Las opciones desplegables también se pueden rellenar dinámicamente invocando un servicio, analizando la respuesta JSON y aplicando funciones personalizadas. Para obtener más información, vea [esta sección](#retrieve-property-values-from-a-json-array).
+
 ### Caso de uso 2: Establecer un panel repetible con la salida del servicio de invocación
 
 Este caso de uso muestra cómo rellenar paneles repetibles de forma dinámica basándose en el resultado de un **servicio Invoke**.
@@ -269,6 +273,123 @@ De forma opcional, configure un controlador de errores para que muestre un mensa
 Cuando se hace clic en el botón **Enviar**, se invoca el servicio de API `redirect-api`. Una vez finalizado correctamente, se redirigirá al usuario a la página **Contáctenos**.
 
 ![Salida de carga útil de evento](/help/forms/assets/output5.gif)
+
+## Recuperar valores de propiedad de una matriz JSON
+
+El Forms adaptable admite la invocación de un servicio, el procesamiento de respuestas JSON y la cumplimentación dinámica de campos de formulario. En esta sección se describe cómo extraer valores de propiedad de una matriz JSON y enlazarlos a campos de formulario.
+
+### Respuesta JSON de muestra
+
+El siguiente ejemplo representa las regiones de ventas de EE. UU. y la lista de representantes de ventas:
+
+
+```json
+[
+  {
+    "region": "East",
+    "salesPerson": "Emily Carter"
+  },
+  {
+    "region": "South",
+    "salesPerson": "Michael Brown"
+  },
+  {
+    "region": "Midwest",
+    "salesPerson": "Sophia Martinez"
+  },
+  {
+    "region": "Southwest",
+    "salesPerson": "David Johnson"
+  },
+  {
+    "region": "West",
+    "salesPerson": "Linda Walker"
+  }
+]
+```
+
+### Función personalizada para extraer valores de propiedad
+
+<span class="preview"> Esta es una característica que adoptó por primera vez. Si está interesado, envíe un mensaje de correo electrónico rápido desde su dirección de trabajo a mailto:aem-forms-ea@adobe.com para solicitar acceso a la característica </a>. </span>
+
+Utilice la siguiente función personalizada para extraer valores de propiedad de la matriz JSON.
+
+```js
+/**
+ * Returns an array of values for a specific property from an array of objects.
+ *
+ * @name getPropertyValues
+ * @param {Object[]} jsonArray An array of objects
+ * @param {string} propertyName The property whose values should be extracted
+ * @returns {Array} An array containing the values of the specified property
+ *
+ */
+
+function getPropertyValues(jsonArray, propertyName)
+{
+    return jsonArray.map((obj) => obj[propertyName]);
+
+}
+```
+
+La función personalizada acepta:
+
+* **jsonArray**: la matriz JSON devuelta por el servicio
+* **propertyName**: propiedad para extraer el valor
+
+La función personalizada devuelve una matriz simple de valores.
+
+>[!NOTE]
+>
+> Para ver los pasos detallados sobre cómo agregar funciones personalizadas, consulte el artículo [Introducción a las funciones personalizadas para Forms adaptable basadas en componentes principales](/help/forms/create-and-use-custom-functions.md).
+
+
+### Uso de la función en el Editor de reglas
+
+Para recuperar el valor específico de la matriz JSON:
+
+```
+event.payload.invokeServiceResponse.rawPayloadBody
+```
+
+En el siguiente ejemplo se muestra cómo rellenar un formulario `Sales Department` con esta respuesta.
+
+Por ejemplo, vamos a crear un formulario `Sales Department` que incluya los menús desplegables `Select Region` y `Select Sales Representative`.
+
+**Paso 1: Invocar el servicio al inicializar el formulario**
+
+```
+WHEN
+    Form is initialized
+THEN
+    Invoke Service → salesdeptinfo
+```
+
+>[!NOTE]
+>
+> Para aprender a integrar la API sin crear un modelo de datos de formulario en el Editor de reglas visuales, [haga clic aquí](/help/forms/api-integration-in-rule-editor.md).
+
+**Paso 2: Rellene el menú desplegable Región**
+
+Agregue un controlador de éxito para la llamada de servicio y configure la siguiente acción:
+
+```
+Set enum → Region dropdown
+getPropertyValues(
+    event.payload.invokeServiceResponse.rawPayloadBody,
+    "region"
+)
+```
+
+Esta regla lee la matriz JSON, extrae los valores de propiedad `region` y asigna los valores a la lista desplegable `Select Region`.
+
+Del mismo modo, configure la acción para la lista desplegable `Select Sales Representative` en el controlador de éxito.
+
+![Carga útil de evento para la matriz JSON](/help/forms/assets/event-payload.png)
+
+Cuando el formulario se carga, se devuelven los datos JSON, la función personalizada extrae los valores de las propiedades y la lista desplegable se rellena automáticamente:
+
+![Formulario de carga útil de evento](/help/forms/assets/event-payload-form.png)
 
 ## Preguntas frecuentes
 

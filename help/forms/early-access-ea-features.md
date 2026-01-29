@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a2f686e7917d47138bdb9dcd4b5245732635bed7
 workflow-type: tm+mt
-source-wordcount: '3068'
+source-wordcount: '3096'
 ht-degree: 21%
 
 ---
@@ -312,6 +312,8 @@ El almacenamiento de PDF en Azure Blob Storage permite una administración centr
 * [Navegación mejorada con compatibilidad con carga útil de evento](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service): la acción **Navegar a** de los controladores de invocación de servicio admite `EVENT_PAYLOAD`, lo que permite a los autores de formularios configurar acciones de seguimiento basadas en respuestas de eventos.
 
 * [Compatibilidad con funciones y expresiones matemáticas en parámetros de entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): los parámetros de entrada ahora admiten llamadas a funciones y expresiones matemáticas, lo que permite a los autores de formularios pasar valores calculados dinámicamente directamente.
+
+* [Recuperar valores de propiedad de una matriz JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): invoque una API con una función personalizada para extraer valores de una matriz JSON y enlazarlos directamente a campos de formulario.
 
 ## Ver también
 
