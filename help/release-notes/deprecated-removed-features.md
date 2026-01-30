@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 2923a79a69ae537eaad591035e4fce9f3c593b23
+source-git-commit: 7ee534546cc8b9afd865b41f223caf9fd86ea45a
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 92%
+source-wordcount: '3548'
+ht-degree: 89%
 
 ---
 
@@ -341,6 +341,12 @@ Esta sección enumera las API que ya no se utilizan y se han eliminado. Algunas 
 ## Guía de eliminación de API {#api-removal-guidance}
 
 Esta sección presenta la guía de eliminación de API para las diversas API incluidas en las tablas anteriores.
+
+Para identificar qué API de Java en desuso usa su código, integre el [complemento Maven de AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) en su proyecto Maven y ejecútelo localmente. El informe enumera todos los usos de API obsoletos detectados e indica qué paquete OSGi hace referencia a cada API.
+
+Aunque debe corregir todas las API obsoletas con el tiempo, dé prioridad a cualquier API enumerada en la tabla de API obsoletas con una fecha de eliminación objetivo del 26 de febrero de 2026 (o anterior). En el informe de AEM Analyzer, estas API pueden aparecer con una fecha de eliminación efectiva del 31/8/2025.
+
+Después de actualizar el código, compruebe que no queda ningún uso obsoleto de la API en Cloud Manager comprobando los resultados del paso de calidad del código.
 
 ### Eliminación de `org.apache.sling.commons.auth*`  {#org.apache.sling.commons.auth}
 
