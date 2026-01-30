@@ -3,9 +3,9 @@ title: Información general de Experience Production Agent
 description: Descubra cómo Experience Production Agent en AEM le ayuda a acelerar la creación de contenido y a organizar automáticamente los cambios.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 229c91706cec0a2689d9449549a1e2b2e236b87d
+source-git-commit: a0a6c14da73ba6881e55aa5089fbde13880f9ec5
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '311'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,12 @@ El agente proporciona los siguientes trabajos:
 * [Actualización de contenido](#content-update)
 * [Creación de formularios](#form-creation)
 * [Creación de comunicaciones](#communications-creation)
-* [Migración del sitio](#site-migration)
 
 >[!IMPORTANT]
 >
 >Las respuestas generadas por IA pueden ser inexactas o engañosas. Asegúrese de volver a comprobar las correcciones y respuestas sugeridas.
 >
->Consulte también [Directrices de usuario de IA generativa de Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Consulte también [Directrices de usuario de IA generativa de Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### Actualización de contenido {#content-update}
 
@@ -44,15 +43,11 @@ La habilidad [Creación de comunicaciones](/help/ai-in-aem/agents/production/com
 
 >[!NOTE]
 >
-> La aptitud de creación de comunicaciones se encuentra actualmente en alfa. Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
-
-### Migración del sitio {#site-migration}
-
-La [migración de sitios](/help/ai-in-aem/agents/production/site-migration.md) migra sin problemas sitios que no son de AEM a entornos de AEM (servicios de entrega de experiencias), asegurándose de que tengan rendimiento, sean compatibles y estén preparados para agentes. El agente optimiza la configuración y la transformación, lo que reduce el esfuerzo manual y el tiempo de respuesta al valor.
-
-El agente debe poder trabajar con otras habilidades de agente, por ejemplo:
+> La aptitud de creación de comunicaciones se encuentra actualmente en alfa. Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [aem-forms-ea@adobe.com.](mailto:aem-forms-ea@adobe.com)
 
 ## Uso con otros agentes {#use-with-other-agents}
+
+El agente puede trabajar con otras habilidades de agente, por ejemplo:
 
 * Obtener recursos de origen de Experience Advisory Agent
 
