@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 46a5a8f48a139ca1be13b400552569dc40fedcdd
+source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
 workflow-type: tm+mt
-source-wordcount: '2161'
-ht-degree: 39%
+source-wordcount: '2145'
+ht-degree: 37%
 
 ---
 
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -115,43 +115,16 @@ Para obtener más información, consulte Búsqueda por IA en [Assets view](/help
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- ### Pre-Release features in AEM Forms 
+* [Mejoras en el marcador de posición de nota al pie en Forms adaptable (componentes de base)](/help/forms/footnotes-richtextsupport.md):
+   * La representación de notas al pie se ha refinado aún más para admitir el formato multilínea mediante saltos de línea, lo que permite una presentación más clara y expresiva del contenido de las notas al pie.
+   * Las notas al pie ahora permanecen visibles de forma persistente dentro del marcador de posición de nota al pie, independientemente de la visibilidad de los paneles asociados, lo que garantiza un acceso coherente a la información crítica.
 
-**Rule Editor Enhancements**
-
-The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
-
-**Enhanced Navigation with Event Payload Support**
- 
-The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-
-**Function and Mathematical Expression Support in Input Parameters**
- 
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). -->
 
 ### Nuevas funciones de acceso anticipado de AEM Forms {#forms-new-early-access-features}
 
-El programa de acceso anticipado de AEM Forms ofrece una oportunidad única de obtener acceso exclusivo a innovaciones punteras y ayudar a dar forma a su desarrollo.
+* [Recuperar valores de una matriz JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Las capacidades de integración de datos ampliadas ahora permiten invocar las API a través de funciones personalizadas para extraer valores de forma eficaz de matrices JSON y enlazarlos directamente a campos de formularios adaptables. Esta mejora optimiza el consumo de datos, minimiza la asignación manual y admite experiencias de formulario más dinámicas y basadas en datos.
 
-En estas notas de la versión se indican las innovaciones de ofrecidas en la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
-
-#### Mejoras en la comunicación interactiva
-
-##### Bloqueo de plantilla
-
-Bloquee el contenido y los elementos de diseño de las plantillas para mantener la integridad de la marca y evitar modificaciones no autorizadas. Esto garantiza la coherencia del diseño en todas las comunicaciones.
-
-##### Compatibilidad con desbordamiento de contenido
-
-Introducción a la opción &quot;Permitir saltos de página dentro del contenido&quot; para diseños de posición variable. Esta mejora permite una edición de varias páginas sin problemas y una mejor administración del texto para documentos complejos.
-
-##### Edición de archivos XDP
-
-El editor de comunicaciones interactivas ahora admite la edición XDP, incluida la integración de fragmentos. Ahora puede editar archivos XDP en un explorador en lugar de Forms Designer que solo se ejecuta en el escritorio de Microsoft Windows.
-
-##### Numeración dinámica de páginas
-
-Muestre automáticamente &quot;Page # of ##&quot; en las páginas maestras para una paginación clara y coherente en los documentos de varias páginas.
+* **Invocar la interfaz de usuario asociada en una instancia de publicación**: la compatibilidad ampliada ya está disponible para invocar la interfaz de usuario asociada directamente en instancias de publicación. Esta capacidad define la configuración, la estructura de carga útil y el flujo de invocación necesarios, lo que simplifica la integración y acelera la implementación en todos los entornos.
 
 <!--
 **Forms Optimization opportunities**

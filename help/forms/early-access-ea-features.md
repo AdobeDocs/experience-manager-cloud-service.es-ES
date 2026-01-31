@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: a2f686e7917d47138bdb9dcd4b5245732635bed7
+source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
 workflow-type: tm+mt
-source-wordcount: '3096'
+source-wordcount: '3133'
 ht-degree: 21%
 
 ---
@@ -127,6 +127,8 @@ Interactive Communications en Cloud es una potente solución para crear, adminis
 * **Desbordamiento de contenido**: la opción &quot;Permitir saltos de página dentro del contenido&quot; permite diseños fluidos para una edición sin problemas de varias páginas y una mejor administración de texto para documentos complejos.
 
 * **Edición de archivos XDP**: ahora puede editar archivos XDP en un explorador en lugar de Forms Designer que se ejecuta únicamente en el escritorio de Microsoft Windows.
+
+* **Invocar la interfaz de usuario asociada en una instancia de publicación**: ahora puede invocar la interfaz de usuario asociada directamente en instancias de publicación. Esta capacidad define la configuración, la estructura de carga útil y el flujo de invocación necesarios, lo que simplifica la integración y acelera la implementación en todos los entornos.
 
 ##### Numeración dinámica de páginas
 
