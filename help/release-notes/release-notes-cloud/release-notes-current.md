@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6dfc3fe7e939794a7881a5c24c51ccc43f9af348
+source-git-commit: f7fc0b6c65677217461c71aea2c6213489558d9c
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2128'
 ht-degree: 37%
 
 ---
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -119,6 +119,7 @@ Para obtener más información, consulte Búsqueda por IA en [Assets view](/help
 
 * Se ha agregado compatibilidad con [varias líneas con saltos de línea](/help/forms/footnotes-richtextsupport.md), lo que permite una presentación más clara y expresiva del contenido de las notas al pie.
 * Las notas al pie ahora permanecen visibles de forma persistente dentro del marcador de posición de nota al pie, independientemente de la visibilidad de los paneles asociados, lo que garantiza un acceso coherente a la información crítica.
+  ![Descripción de la nota al pie](/help/forms/assets/footnote-description.png)
 
 ### Nuevas funciones de acceso anticipado de AEM Forms {#forms-new-early-access-features}
 
