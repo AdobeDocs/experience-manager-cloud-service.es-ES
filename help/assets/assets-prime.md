@@ -4,9 +4,9 @@ description: Obtenga más información sobre los aspectos clave de Assets Prime,
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 504464ed1277c1d9629ae1f96892ebaa5ef701c8
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1100'
 ht-degree: 15%
 
 ---
@@ -36,8 +36,6 @@ Assets as a Cloud Service Prime incluye un DAM ligero que le permite realizar va
   >[!NOTE]
   >
   >Dynamic Media con capacidades OpenAPI, que le proporciona acceso a modificadores de imagen básicos como rotar, recortar (solo manual: sin recorte inteligente), voltear, alto, ancho, calidad, formato y flujo de vídeo adaptable, también está disponible con Assets Prime. Póngase en contacto con el equipo de la cuenta de Adobe para obtener más información.
-
-1. [Crear un nuevo programa](/help/journey-onboarding/create-program.md).
 
 Sin embargo, a medida que sus necesidades de DAM crezcan y necesite más funcionalidades, como extensibilidad de la interfaz de usuario, automatización impulsada por API e implementación de código personalizado, debe considerar la posibilidad de actualizar a [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
 
@@ -83,7 +81,7 @@ La instancia de AEM as a Cloud Service en Admin Console consta de los siguientes
 
 * Administradores de AEM
 
-* Usuarios de AEM 
+* Usuarios de AEM
 
 * [Usuarios colaboradores de AEM Assets](#onboard-collaborator-users)
 
