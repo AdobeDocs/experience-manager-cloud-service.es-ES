@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
+source-git-commit: 6dfc3fe7e939794a7881a5c24c51ccc43f9af348
 workflow-type: tm+mt
-source-wordcount: '2145'
+source-wordcount: '2126'
 ht-degree: 37%
 
 ---
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -115,16 +115,20 @@ Para obtener más información, consulte Búsqueda por IA en [Assets view](/help
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Mejoras en el marcador de posición de nota al pie en Forms adaptable (componentes de base)](/help/forms/footnotes-richtextsupport.md):
-   * La representación de notas al pie se ha refinado aún más para admitir el formato multilínea mediante saltos de línea, lo que permite una presentación más clara y expresiva del contenido de las notas al pie.
-   * Las notas al pie ahora permanecen visibles de forma persistente dentro del marcador de posición de nota al pie, independientemente de la visibilidad de los paneles asociados, lo que garantiza un acceso coherente a la información crítica.
+**Mejoras en el marcador de posición de nota al pie en Forms adaptable (componentes de base)**
 
+* Se ha agregado compatibilidad con [varias líneas con saltos de línea](/help/forms/footnotes-richtextsupport.md), lo que permite una presentación más clara y expresiva del contenido de las notas al pie.
+* Las notas al pie ahora permanecen visibles de forma persistente dentro del marcador de posición de nota al pie, independientemente de la visibilidad de los paneles asociados, lo que garantiza un acceso coherente a la información crítica.
 
 ### Nuevas funciones de acceso anticipado de AEM Forms {#forms-new-early-access-features}
 
-* [Recuperar valores de una matriz JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Las capacidades de integración de datos ampliadas ahora permiten invocar las API a través de funciones personalizadas para extraer valores de forma eficaz de matrices JSON y enlazarlos directamente a campos de formularios adaptables. Esta mejora optimiza el consumo de datos, minimiza la asignación manual y admite experiencias de formulario más dinámicas y basadas en datos.
+**Recuperar valores de una matriz JSON**
 
-* **Invocar la interfaz de usuario asociada en una instancia de publicación**: la compatibilidad ampliada ya está disponible para invocar la interfaz de usuario asociada directamente en instancias de publicación. Esta capacidad define la configuración, la estructura de carga útil y el flujo de invocación necesarios, lo que simplifica la integración y acelera la implementación en todos los entornos.
+Se han expandido las funcionalidades personalizadas para [extraer valores de matrices JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array), que se reciben a través de una llamada de API y enlazarlos directamente a los campos del formulario adaptable. Ahora puede desarrollar lógica y reglas empresariales con una asignación de datos manual mínima.
+
+**Ejecutar la IU asociada en una instancia de publicación**
+
+Ahora puede ejecutar la [IU asociada](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md) directamente en instancias de publicación. Esto permite a los agentes acceder a la interfaz de usuario de Associate y personalizar fácilmente las comunicaciones para los clientes.
 
 <!--
 **Forms Optimization opportunities**
