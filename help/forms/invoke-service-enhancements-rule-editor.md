@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: invocar mejoras del servicio en VRE, rellenar opciones desplegables utilizando invocar servicio, establecer panel repetible utilizando la salida del servicio de invocación, establecer panel utilizando la salida del servicio de invocación, usar el parámetro de salida del servicio de invocación para validar otro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
+source-git-commit: 17dfa6e28d2510484731a736c1cf7fda22961e66
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
@@ -276,6 +276,8 @@ Cuando se hace clic en el botón **Enviar**, se invoca el servicio de API `redir
 
 ## Recuperar valores de propiedad de una matriz JSON
 
+<span class="preview"> Esta es una característica que adoptó por primera vez. Si está interesado, envíe un mensaje de correo electrónico rápido desde su dirección de trabajo a mailto:aem-forms-ea@adobe.com para solicitar acceso a la característica </a>. </span>
+
 El Forms adaptable admite la invocación de un servicio, el procesamiento de respuestas JSON y la cumplimentación dinámica de campos de formulario. En esta sección se describe cómo extraer valores de propiedad de una matriz JSON y enlazarlos a campos de formulario.
 
 ### Respuesta JSON de muestra
@@ -309,8 +311,6 @@ El siguiente ejemplo representa las regiones de ventas de EE. UU. y la lista de 
 ```
 
 ### Función personalizada para extraer valores de propiedad
-
-<span class="preview"> Esta es una característica que adoptó por primera vez. Si está interesado, envíe un mensaje de correo electrónico rápido desde su dirección de trabajo a mailto:aem-forms-ea@adobe.com para solicitar acceso a la característica </a>. </span>
 
 Utilice la siguiente función personalizada para extraer valores de propiedad de la matriz JSON.
 
