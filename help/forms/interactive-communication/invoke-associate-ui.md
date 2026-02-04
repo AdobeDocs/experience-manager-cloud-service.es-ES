@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2f3badafddfdfe1dd21eb74be7189102aa0474bc
+source-git-commit: bfee883205f81012fea75cbd7dc5fddd7169fdbb
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '905'
 ht-degree: 2%
 
 ---
@@ -35,12 +35,13 @@ Antes de integrar la interfaz de usuario de Associate con su aplicación, asegú
 
 - Comunicación interactiva creada y publicada
 - Explorador con compatibilidad emergente habilitada
-- Los usuarios de la asociación [deben formar parte del grupo de asociados de formularios](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- Autenticación configurada - [SAML 2.0](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- Los usuarios de la asociación [deben formar parte del grupo de asociados de formularios](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Autenticación configurada utilizando cualquier mecanismo de autenticación [admitido por AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (por ejemplo, SAML 2.0, OAuth o controladores de autenticación personalizados)
 
 >[!NOTE]
 >
-> Para la interfaz de usuario asociada, se requieren configuraciones de SAML adicionales más allá de la configuración estándar explicada en el artículo [Autenticación SAML 2.0](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consulte la sección [Configuraciones adicionales de SAML para la interfaz de usuario asociada](#additional-saml-configurations-for-associate-ui) para obtener más información.
+>- Este artículo muestra la configuración de autenticación usando SAML 2.0 con [Microsoft Entra ID (Azure AD) como proveedor de identidad](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
+>- Para la interfaz de usuario asociada, se requieren configuraciones de SAML adicionales más allá de la configuración estándar explicada en el artículo [Autenticación SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consulte la sección [Configuraciones adicionales de SAML para la interfaz de usuario asociada](#additional-saml-configurations-for-associate-ui) para obtener más información.
 
 ### Configuraciones adicionales de SAML para la IU asociada
 
@@ -54,7 +55,7 @@ Crear el archivo `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg
   {
     "path": ["/libs/fd/associate"],
     "serviceProviderEntityId": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com",
-    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login",
+    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login"
     "idpUrl": "https://login.microsoftonline.com/{azure-tenant-id}/saml2",
     "idpCertAlias": "{your-certificate-alias}",
     "idpIdentifier": "https://sts.windows.net/{azure-tenant-id}/",
@@ -122,6 +123,8 @@ const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/
 ```
 
 Reemplace `{program-id}` y `{env-id}` por sus valores de entorno reales.
+
+Por motivos de seguridad, los parámetros como el ID de comunicación interactiva, el servicio de relleno previo y los parámetros de servicio no se pasan a través de la dirección URL. En su lugar, estos parámetros se pasan de forma segura mediante una función de JavaScript que se comunica con la interfaz de usuario de Associate a través de la API postMessage del explorador.
 
 ### Paso 2: Preparar la carga útil de datos
 
@@ -204,13 +207,13 @@ Llame a la función con los parámetros adecuados:
 launchAssociateUI('12345', '', {}, {});
 
 // With prefill service
-launchAssociateUI('12345', 'FdmTestData', 
+launchAssociateUI('12345', 'IC_FDM', 
   { customerId: '101'}, {});
 
 // With all parameters
-launchAssociateUI('12345', 'FdmTestData', 
-  { policyNumber: 'POL-123' }, 
-  { locale: 'en', acrobatVersion: 'Acrobat_11' });
+launchAssociateUI('12345', 'IC_FDM', 
+  { customerId: "101" }, 
+  { locale: 'en', includeAttachments: "true" });
 ```
 
 ## Prueba de la integración con una página de HTML de muestra
