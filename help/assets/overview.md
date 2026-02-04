@@ -2,10 +2,10 @@
 title: Introducción a Assets as a Cloud Service para la administración de recursos digitales en AEM
 description: Introducción a Assets as a Cloud Service para la administración de recursos digitales en AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d49bfaf7ca028b2386342d33fd68e566b8a2be1f
 workflow-type: tm+mt
-source-wordcount: '5075'
-ht-degree: 97%
+source-wordcount: '5626'
+ht-degree: 88%
 
 ---
 
@@ -88,7 +88,7 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
 
 **Etiquetas inteligentes**: Las etiquetas inteligentes utilizan el marco de trabajo artificialmente inteligente de Adobe AI para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. De forma predeterminada, AEM aplica etiquetas inteligentes a los recursos cargados.
 
-**Etiquetado y búsqueda inteligentes basados en color**: Los AEM Assets utilizan las capacidades de IA de Adobe para distinguir entre colores en una imagen y aplicar esos rasgos como etiquetas automáticamente al ingerirlos. Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen.
+**Etiquetado y búsqueda inteligentes basados en color**: Los AEM Assets utilizan las capacidades de Adobe AI para distinguir entre colores en una imagen y aplicar esos rasgos como etiquetas automáticamente al ingerirlos. Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen.
 
 **Metadatos generados por IA**: AEM Assets usa la IA para generar metadatos automáticamente, incluidos títulos, descripciones y palabras clave. Estos campos generados por IA mejoran la precisión de los metadatos, lo que facilita la búsqueda, la categorización y la recomendación de recursos. Este enfoque no solo mejora la eficacia al eliminar el etiquetado manual, sino que también garantiza la coherencia y la escalabilidad en grandes volúmenes de contenido digital.
 
@@ -108,7 +108,6 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
       <em>Aprenda a aplicar etiquetas inteligentes automáticamente a los recursos cargados.</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/color-tag-images.md">
@@ -193,7 +192,7 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
 
 **Imágenes inteligentes**: las imágenes inteligentes ofrecen un rendimiento aun mejor en el envío de recursos de la imagen ya que optimizan automáticamente el formato y el tamaño de archivo de una imagen en función de la capacidad del explorador del cliente. Funciona con los ajustes preestablecidos de imagen existentes y utiliza inteligencia en el envío. Esta inteligencia reduce aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red y del explorador.
 
-**Recorte inteligente**: una capacidad de IA de Adobe para detectar automáticamente el punto focal en cualquier imagen o vídeo y recortar para mantenerlo. Captura el punto de interés deseado independientemente del tamaño de la pantalla y, por lo tanto, elimina las tareas manuales tediosas, y ofrece imágenes y vídeo de alta calidad y carga rápida que se ven bien en cualquier dispositivo o pantalla.
+**Recorte inteligente**: una funcionalidad de Adobe AI que permite detectar automáticamente el punto focal en cualquier imagen o vídeo y recortar para mantenerlo. Captura el punto de interés deseado independientemente del tamaño de la pantalla y, por lo tanto, elimina las tareas manuales tediosas, y ofrece imágenes y vídeo de alta calidad y carga rápida que se ven bien en cualquier dispositivo o pantalla.
 
 **Subtítulos de vídeo generados por IA**: los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función se ha diseñado para mejorar la accesibilidad y la experiencia del usuario gracias a la provisión de subtítulos precisos. Los subtítulos se generan a partir del audio original, de cualquier pista de audio adicional o de subtítulos adicionales proporcionados en la pestaña `Captions and Audio` de la página de propiedades del vídeo. Con compatibilidad con más de 60 idiomas, los subtítulos se pueden revisar y previsualizar antes de publicar el vídeo.
 <table>
@@ -270,11 +269,11 @@ AEM Assets proporciona funciones que le ayudan a encontrar rápidamente el recur
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=es">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Prácticas recomendadas de administración de metadatos" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=es">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Prácticas recomendadas de administración de metadatos</strong>
       </a>
    </div>
@@ -375,7 +374,6 @@ También puede mantener versiones del recurso, establecer el estado del recurso 
       <em>Aprenda a realizar algunas tareas básicas y avanzadas de administración de recursos.</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/my-workspace-assets-view.md">
@@ -629,6 +627,123 @@ Si ya tiene un sitio web de [!DNL Edge Delivery Services], consulte la documenta
 
 +++
 
+>[!TAB Agentes de IA]
+
+## Agentes de IA {#ai-agents}
+
+AEM as a Cloud Service proporciona **agentes** inteligentes para mejorar la administración, optimización y control del contenido. Estos agentes permiten a los usuarios descubrir contenido rápidamente, optimizar campañas y garantizar el cumplimiento de las normas en los recursos digitales.
+
+**Agente de detección**
+
+Discovery Agent ofrece contenido de AEM bajo demanda a través de mensajes naturales y conversacionales para una experiencia de detección optimizada y sin clics. Busca de forma inteligente en **Assets, fragmentos de contenido y Forms adaptable** para ofrecer contenido relevante, como imágenes, vídeos, PDF, artículos y plantillas de formulario. Con el lenguaje natural, puede buscar sin crear consultas complejas ni aplicar filtros en la interfaz de AEM Assets. En función de la solicitud, el agente devuelve resultados depurados junto con metadatos de recursos y direcciones URL de entrega, listos para incrustarse en otras aplicaciones.
+
+Algunas de las ventajas clave de Discovery Agent son:
+
+* **Detección de contenido unificado:** Acceda a todo tipo de contenido de AEM, como imágenes, vídeos, documentos de PDF, artículos y formularios, desde una sola interfaz de conversación.
+* **Planificación de campañas más rápida:** recopile rápidamente imágenes y formularios para las campañas de marketing en los canales de correo electrónico, web y social.
+* **Productividad mejorada:** Reduzca el tiempo empleado en explorar repositorios o filtrar metadatos mediante búsquedas automatizadas basadas en la intención.
+* **Utilización coherente del contenido:** Garantiza la reutilización de los recursos y fragmentos aprobados, manteniendo la coherencia de la marca en todos los canales.
+
+**Habilidades:** descubrimiento de contenido en lenguaje natural, descubrimiento de recursos basados en etiquetas, descubrimiento de contenido basado en carpetas, descubrimiento de recursos basados en formato y orientación\
+**Personas:** Administradores de campañas, Especialistas en marketing de canal, Bibliotecarios de DAM, Agencias y socios\
+**Acceso:** mediante el Asistente de IA en AEM
+
+**Casos de uso comunes/Indicadores de ejemplo:**
+
+* Mostrar imágenes etiquetadas como &quot;office&quot; en la carpeta WKND.
+* Enumerar todos los fragmentos de contenido publicados para bebidas WKND.
+* Busque formularios para solicitar un trabajo.
+* Mostrar recursos con la persona en orientación horizontal.
+
+**Agente de optimización de contenido**
+
+El **Agente de optimización de contenido** ayuda a refinar y adaptar los recursos mediante mensajes en lenguaje natural. Puede generar nuevas representaciones, ajustar imágenes, cambiar fondos y crear variaciones listas para el canal automáticamente. Funciona con Discovery Agent y **Dynamic Media con OpenAPI** para una optimización perfecta.
+
+**Ventajas principales:**
+
+* **Transformación de recursos sin esfuerzo:** Cambiar el tamaño, enfocar, cambiar el color o reflejar imágenes.
+* **Salidas optimizadas para canales:** Generar representaciones para Instagram, banners web y otros canales de marketing.
+* **Mejoras de Creative a escala:** aplique cambios de fondo o superposiciones para flujos de trabajo de gran volumen.
+
+**Acceso:** mediante el Asistente de IA en AEM.
+
+**Indicadores de ejemplo:**
+
+* `Create a 2000px JPEG rendition.`
+* `Sharpen the image.`
+* `Change background color to #ff8932.`
+* `Create a rendition for an Instagram story.`
+
+**Limitaciones:** Algunas optimizaciones no son compatibles con los recursos PNG.
+
+**Agente de control**
+
+El agente de gobernanza ayuda a garantizar el cumplimiento, la coherencia de la marca y la aplicación de las políticas en todo el contenido de AEM. Identifica contenido que no cumple con los metadatos, la accesibilidad o las directrices corporativas.
+
+Algunas de las ventajas clave de Governance Agent son:
+
+* **Supervisión del cumplimiento:** Detecta infracciones de directivas en el contenido.
+* **Aplicación de metadatos:** Garantiza que los recursos tengan los metadatos requeridos para el control.
+* **Coherencia de la marca:** Indica contenido que no cumple con los estándares corporativos.
+
+**Habilidades:** comprobaciones de cumplimiento de directivas, validación de metadatos, auditoría de accesibilidad, alertas automatizadas para infracciones\
+**Personas:** administradores de DAM, funcionarios de cumplimiento, administradores de marcas\
+**Acceso:** mediante el Asistente de IA de AEM
+
+**Casos de uso comunes/Indicadores de ejemplo:**
+
+* Valide los metadatos de todos los recursos de la carpeta WKND.
+* Identificar los recursos que carecen de directrices de marca.
+* Auditar el contenido publicado para comprobar el cumplimiento de la accesibilidad.
+
+<table>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="Información general de Discovery Agent" src="./assets/discovery-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <strong>Información general del agente de detección</strong>
+      </a>
+   </div>
+   <p>
+      <em>Información general sobre Discovery Agent y sus capacidades de detección de contenido conversacional.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <img alt="Resumen de optimización de contenido" src="./assets/content-optimization-agent.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <strong>Información general del agente de optimización de contenido</strong>
+      </a>
+   </div>
+   <p>
+      <em>Información general sobre el agente de optimización de contenido y flujos de trabajo de optimización admitidos.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <img alt="Introducción al agente de gobernanza" src="./assets/governance-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <strong>Información general del agente de administración</strong>
+      </a>
+   </div>
+   <p>
+      <em>Información general del agente de gobernanza para el cumplimiento y la aplicación de políticas.</em>
+   </p>
+</td>
+</table>
+
+### **Cómo acceder a agentes en AEM**
+
+Se puede acceder a los agentes a través de **AI Assistant** en AEM Cloud Service. Inicie sesión en [experience.adobe.com](https://experience.adobe.com/) e interactúe con el asistente de IA utilizando indicaciones en lenguaje natural.
+
 >[!TAB Activación de recursos]
 
 ## Activación de recursos {#asset-activation}
@@ -705,7 +820,7 @@ Dynamic Media ofrece las siguientes funciones clave:
 
 * **Conjuntos de vídeos adaptables**: un conjunto de vídeos adaptables agrupa versiones del mismo vídeo que se codifican con diferentes formatos y velocidades de bits. Empiece con el vídeo original principal, que cargue en el sistema. Dynamic Media cambia automáticamente el tamaño de ese vídeo o lo transcodifica en varios vídeos. A continuación, en el momento del envío, determina de forma inteligente qué pantalla de vídeo, qué calidad y qué formato utilizar, y la envía al teléfono, a la tableta o al equipo del escritorio.
 
-* **Recorte inteligente**: una capacidad de IA de Adobe para detectar automáticamente el punto focal en cualquier imagen o vídeo, y recortar para mantenerlo. Captura el punto de interés deseado independientemente del tamaño de la pantalla y, por lo tanto, elimina las tareas manuales tediosas, y ofrece imágenes y vídeo de alta calidad y carga rápida que se ven bien en cualquier dispositivo o pantalla.
+* **Recorte inteligente**: una función de Adobe AI que detecta automáticamente el punto focal de cualquier imagen o vídeo, y recorta para mantenerlo. Captura el punto de interés deseado independientemente del tamaño de la pantalla y, por lo tanto, elimina las tareas manuales tediosas, y ofrece imágenes y vídeo de alta calidad y carga rápida que se ven bien en cualquier dispositivo o pantalla.
 
 * **Plantillas de Dynamic Media**: cree plantillas personalizables en tiempo real para sus titulares y prospectos con plantillas de Dynamic Media, un editor de plantillas de WYSIWYG. Publique la plantilla de Dynamic Media y utilícela en aplicaciones posteriores. Una plantilla de Dynamic Media incluye capas de imagen y texto. Añada parámetros a las capas de imagen y texto de la plantilla y utilice URL de Dynamic Media para cambiar la posición y el tamaño de la capa y actualizar su contenido en tiempo real.
 
