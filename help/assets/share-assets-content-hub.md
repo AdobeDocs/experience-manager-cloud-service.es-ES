@@ -14,7 +14,7 @@ ht-degree: 3%
 
 Cree un vínculo a los recursos seleccionados para compartirlos con otros fácilmente. Como usuario autorizado de [!DNL Content Hub], seleccione uno o más recursos disponibles en su entorno de [!DNL Content Hub], genere un vínculo y envíelo a otros usuarios privados o públicos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474922/?captions=spa&learn=on&enablevpops=on){transcript=true}
 
 ## Requisitos previos {#prerequisites}
 
