@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a842a5f0bd5561563a86f6f0b6e8abf8cfd679ec
+source-git-commit: f01a98604e045c48ab7167122aee3b2468db6d52
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '988'
 ht-degree: 24%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 24%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 24222 {#24222}
+## Versión 24288 {#24288}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 24222, que se publicó el miércoles, 03 de febrero de 2026. La versión de mantenimiento anterior fue la 23963.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 24288, que se publicó el jueves, 04 de febrero de 2026. La versión de mantenimiento anterior fue la 23963.
 
 La activación de funcionalidades 2026.2.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
-### Mejoras {#enhancements-24222}
+>[!NOTE]
+>
+>La 24222 de la versión se ha convertido en privada.
+
+### Mejoras {#enhancements-24288}
 
 * CNTBF-604: Crear nuevo paquete de flujo de retorno de contenido.
 * CQ-4361592: Agregue compatibilidad con TypeHint para la creación y actualización de proyectos.
@@ -58,7 +62,7 @@ La activación de funcionalidades 2026.2.0 proporcionará el conjunto completo d
 * SKYOPS-125574: Actualice los paquetes de herramientas de CA netcentric en Quickstart.
 * SKYOPS-126150: Mejorar el comando superior para volcados de hilos script generador.
 
-### Problemas solucionados {#fixed-issues-24222}
+### Problemas solucionados {#fixed-issues-24288}
 
 * FORMS-23687: corrige el error de validación de SSV cuando la regla contiene se utiliza sin valor predeterminado.
 * GRANITE-48472: Error de localización al cambiar la contraseña en la pestaña Editar configuración de usuario.
@@ -75,10 +79,11 @@ La activación de funcionalidades 2026.2.0 proporcionará el conjunto completo d
 * GRANITE-63293: Corrija el campo de ruta obligatorio que pierde el asterisco requerido después de la primera creación.
 * GRANITE-63360: Corrija la información incorrecta que se muestra cuando se seleccionan varias rutas.
 * SITES-36242: Reduzca la regex de ejecución de GraphQL para corregir la omisión del filtro de Dispatcher.
+* SITES-40122: corrección de la integración de Edge Delivery con el servicio Ims de distribución de contenido.
 * SKYOPS-84379: Utilice la última herramienta FACT para la selección de funciones adecuada por RDEs.
 * SKYOPS-121216: Revertir la actualización a las bibliotecas de Jackson 2.20.0.
 
-#### Guías de AEM {#guides-24222}
+#### Guías de AEM {#guides-24288}
 
 * GUIDES-38198 : Al actualizar una ecuación de MathML en línea mediante la opción Editar MathML del menú contextual, el valor actualizado no se refleja hasta que se actualiza la página.
 * GUIDES-38276: No se pueden quitar las etiquetas de Versión del panel Historial de versiones en la IU de Assets.
@@ -88,11 +93,11 @@ La activación de funcionalidades 2026.2.0 proporcionará el conjunto completo d
 
 Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en la versión, consulte la [hoja de ruta de la versión de Experience Manager Guides](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problemas conocidos {#known-issues-24222}
+### Problemas conocidos {#known-issues-24288}
 
 Ninguna.
 
-### Características y API obsoletas {#deprecated-24222}
+### Características y API obsoletas {#deprecated-24288}
 
 * AEMSRE-2896: Corrija la administración de la configuración personalizada de logmanager.
 * GRANITE-62802: quita la dependencia `commons-lang` obsoleta de `granite.auth.saml`.
@@ -109,11 +114,11 @@ Ninguna.
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-### Correcciones de seguridad {#security-24222}
+### Correcciones de seguridad {#security-24288}
 
 AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 10 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
 
-### Tecnologías integradas {#embedded-tech-24222}
+### Tecnologías integradas {#embedded-tech-24288}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
