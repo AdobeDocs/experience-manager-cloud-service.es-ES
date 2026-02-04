@@ -2,7 +2,7 @@
 title: Edición de imágenes en Content Hub mediante Adobe Express
 description: Edición de imágenes en Content Hub mediante Adobe Express
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 10%
@@ -12,6 +12,8 @@ ht-degree: 10%
 # Edición de imágenes en Content Hub {#edit-images-content-hub}
 
 Content Hub le permite crear contenido nuevo con Adobe Express. Puede editar el contenido existente con herramientas fáciles de usar, producir variaciones alineadas con la marca con plantillas y elementos de marca, y crear contenido nuevo con las últimas funciones de IA generativa de Adobe Firefly.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435003/?learn=on){transcript=true}
 
 ## Requisitos previos {#prereqs-edit-image-content-hub}
 
@@ -27,7 +29,7 @@ Para editar imágenes con Content Hub:
 
 1. Haga clic en **[!DNL Open in Adobe Express]**, disponible en la tarjeta de recursos de la imagen que debe editar. También puede hacer clic en la imagen para abrir sus detalles y, a continuación, hacer clic en el logotipo de [!DNL Adobe Express]. A continuación, el editor incrustado de Adobe Express se carga sin salir de Content Hub.
 
-   Puede aprovechar la funcionalidad [!DNL Adobe Express] para realizar todas las acciones relacionadas con la edición de imágenes, como [cambiar el tamaño de la imagen](https://helpx.adobe.com/es/express/using/resize-image.html), [quitar o cambiar el color de fondo](https://helpx.adobe.com/es/express/using/remove-background.html), [recortar imagen](https://helpx.adobe.com/es/express/using/crop-image.html), combinar la imagen con la imagen o el texto generados por IA y mucho más.
+   Puede aprovechar la funcionalidad [!DNL Adobe Express] para realizar todas las acciones relacionadas con la edición de imágenes, como [cambiar el tamaño de la imagen](https://helpx.adobe.com/express/using/resize-image.html), [quitar o cambiar el color de fondo](https://helpx.adobe.com/express/using/remove-background.html), [recortar imagen](https://helpx.adobe.com/express/using/crop-image.html), combinar la imagen con la imagen o el texto generados por IA y mucho más.
 
 1. Realice las modificaciones y haga clic en **[!UICONTROL Guardar]** para guardar el recurso editado en cualquiera de los tipos de formato:
 

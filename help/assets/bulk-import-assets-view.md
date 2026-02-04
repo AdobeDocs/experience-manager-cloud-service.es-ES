@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo importar recursos de forma masiva 
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 87%
+source-wordcount: '1874'
+ht-degree: 88%
 
 ---
 
@@ -26,6 +26,8 @@ Puede importar recursos desde las siguientes fuentes de datos:
 * Google Cloud
 * Dropbox
 * OneDrive
+
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## Requisitos previos {#prerequisites}
 
@@ -107,7 +109,7 @@ Ejecute los siguientes pasos para agregar permisos de API para la aplicación:
 1. Haga clic en **[!UICONTROL Permisos de API]** en el panel izquierdo y haga clic en **[!UICONTROL Agregar un permiso]**.
 1. Haga clic en **[!UICONTROL Gráfico de Microsoft]** > **[!UICONTROL Permisos delegados]**. La sección **[!UICONTROL Seleccionar permiso]** muestra los permisos disponibles.
 1. Seleccione el permiso `offline_access` de `OpenId permissions` y el permiso `Files.ReadWrite.All` de `Files`.
-1. Haga clic en **[!UICONTROL Agregar permisos]** para guardar los permisos.
+1. Haga clic en **[!UICONTROL Agregar permisos]** para guardar las actualizaciones.
 
 ## Crear configuración de importación masiva {#create-bulk-import-configuration}
 
@@ -225,7 +227,3 @@ Haga clic en el ![icono Más](assets/do-not-localize/more-icon.svg) correspondie
 ## Ir a los recursos después de realizar una importación masiva {#view-assets-after-bulk-import}
 
 Para ver la ubicación de destino de los recursos donde se importan después de ejecutar el trabajo de importación masiva, haga clic en el ![icono Más](assets/do-not-localize/more-icon.svg) correspondiente al nombre de la configuración y, a continuación, haga clic en **[!UICONTROL Ver recursos]**.
-
-## Vídeo: Importación masiva de recursos mediante la vista de Assets
-
->[!VIDEO](https://video.tv.adobe.com/v/3428012)

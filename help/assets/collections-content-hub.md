@@ -3,7 +3,7 @@ title: Administrar colecciones en Content Hub
 description: Obtenga información sobre cómo administrar colecciones en Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 91d8df7e002c899c3c4cfda0f10bb42af4423ca6
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 2%
@@ -29,6 +29,8 @@ Una colección hace referencia a un conjunto de recursos que se pueden compartir
 * **Favorito**: marca la colección como favorita.
 
 Ayuda a los usuarios a acceder y administrar fácilmente los diversos recursos disponibles en [!DNL Content Hub].
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Requisitos previos {#prerequisites}
 

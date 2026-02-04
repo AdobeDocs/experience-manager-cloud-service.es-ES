@@ -3,7 +3,7 @@ title: Control de acceso basado en atributos
 description: Obtenga información sobre cómo habilitar el control de acceso basado en atributos para definir reglas basadas en metadatos para definir el nivel de acceso a los recursos disponibles en Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 5%
@@ -27,6 +27,8 @@ Algunas de las ventajas clave del control de acceso basado en atributos son:
 * Permite a los administradores cargar recursos y determinar de forma retroactiva las estructuras de permisos
 
 * Reduce el número de duplicados: mejora la integridad de los recursos. Los duplicados son necesarios en los permisos basados en carpetas cuando los mismos recursos se comparten con diferentes grupos.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## ¿Cómo se habilita el control de acceso basado en atributos? {#enable-attribute-based-access-control}
 

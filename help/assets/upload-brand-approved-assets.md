@@ -3,7 +3,7 @@ title: Cargue los recursos aprobados por la marca en  [!DNL Content Hub]
 description: Obtenga información sobre cómo cargar los recursos aprobados por la marca en Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 17%
@@ -18,6 +18,8 @@ ht-degree: 17%
 >abstract="Añada recursos aprobados a Content Hub desde el sistema de archivos local o importe recursos desde OneDrive o fuentes de datos de Dropbox. Todos los recursos se muestran en el nivel superior de Content Hub, independientemente de la estructura de carpetas, para mejorar las capacidades de búsqueda."
 
 [Los usuarios de Content Hub con derechos para agregar recursos](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) pueden agregarlos a Content Hub desde el sistema de archivos local o importarlos desde fuentes de datos de OneDrive o Dropbox. Todos los recursos se muestran en el nivel superior en Content Hub, independientemente de la estructura de carpetas disponible en el sistema de archivos local o en las fuentes de datos de OneDrive y Dropbox, para mejorar las funciones de búsqueda.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 Los recursos marcados como `Approved` en Assets as a Cloud Service están disponibles automáticamente en Content Hub. Para obtener más información, consulte [Aprobar recursos para Content Hub](/help/assets/approve-assets-content-hub.md).
 

@@ -2,7 +2,7 @@
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 06373e14ff9199d97c03332d95a0d2b024b3220f
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '2265'
 ht-degree: 9%
@@ -34,6 +34,8 @@ Experience Manager Assets permite a los administradores configurar las opciones 
 * Contenido de marca que debe mostrar para su organización.
 
 * Cualquier vínculo personalizado que necesite incluir en Content Hub, además de los recursos, las colecciones y las perspectivas.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Requisitos previos {#prerequisites-configuration-ui}
 
@@ -262,7 +264,7 @@ Si la visibilidad de los recursos caducados está habilitada, Content Hub tambi�
 
 ### Representaciones {#renditions-content-hub}
 
-Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para ello, ejecute los siguientes pasos:
 
