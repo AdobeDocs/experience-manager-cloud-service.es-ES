@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
+source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
 workflow-type: tm+mt
-source-wordcount: '2710'
+source-wordcount: '2835'
 ht-degree: 13%
 
 ---
@@ -202,7 +202,32 @@ El componente seleccionado se ha eliminado.
 >
 >Utilice la tecla de acceso directo `Shift+Backspace` para eliminar el componente seleccionado de su contenedor.
 
-### Reordenación de componentes {#reordering-components}
+### Reordenación y movimiento de componentes {#reordering-components}
+
+Puede mover y reordenar los componentes mediante el menú contextual o el árbol de contenido.
+
+#### Mover componentes con el menú contextual {#move-context-menu}
+
+1. Haga clic con el botón secundario en un componente o haga clic en el distintivo del componente seleccionado para abrir el [menú contextual.](#context-menu)
+1. Seleccione la opción de movimiento que desee.
+   * Mover al principio
+   * Subir
+   * Bajar
+   * Mover al final
+     ![Mover opciones en el menú contextual](assets/move-options-in-conext-menu.png)
+
+El componente se mueve tanto en el editor como en el árbol de contenido.
+
+>[!TIP]
+>
+>Utilice las teclas de acceso rápido `Command-U` o `Shift-Command-U` para subir o subir, respectivamente.
+>Utilice las teclas de acceso rápido `Command-J` o `Shift-Command-J` para desplazarse hacia abajo o hacia abajo, respectivamente.
+
+>[!NOTE]
+>
+>Las opciones del menú contextual solo pueden mover componentes dentro de sus contenedores. Si desea mover componentes entre contenedores, [use el árbol de contenido.](#reorder-content-tree)
+
+#### Reordenar componentes con el árbol de contenido {#reorder-content-tree}
 
 1. Si aún no está en [modo de árbol de contenido](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), cambie a él.
 1. Seleccione un componente de contenedor en el árbol de contenido o en el editor.
@@ -235,7 +260,7 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 
 ### Copiar y pegar {#copy-paste}
 
-Puede copiar y pegar componentes que se encuentren dentro de [&#x200B; contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
+Puede copiar y pegar componentes que se encuentren dentro de [ contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
 
 Copiar y pegar pueden estar en la misma pestaña del explorador o entre pestañas del explorador, siempre que las pestañas ya estén abiertas. No puede copiar un elemento y, a continuación, abrir una nueva pestaña del explorador para pegarlo.
 

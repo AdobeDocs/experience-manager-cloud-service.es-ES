@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2026.01.29 del editor universal
-description: Estas son las notas de la versión 2026.01.29 del editor universal.
+title: Notas de la versión 2026.02.05 del editor universal
+description: Estas son las notas de la versión 2026.02.05 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
+source-git-commit: d832d202eaf7f74293e2d15cc470b0226e883e13
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 35%
+source-wordcount: '157'
+ht-degree: 45%
 
 ---
 
 
-# Notas de la versión 2026.01.29 del editor universal {#release-notes}
+# Notas de la versión 2026.02.05 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal de 29 de enero de 2026.
+Estas son las notas de la versión del editor universal del 5 de febrero de 2026.
 
 >[!TIP]
 >
@@ -26,12 +26,8 @@ Estas son las notas de la versión del editor universal de 29 de enero de 2026.
 
 ## Novedades {#what-is-new}
 
-* El método Remove component se expuso a `editorActions`.
-* El método de componente de copia se expuso a `editorActions`.
-* El método de componente de movimiento se expuso a `editorActions`.
-* El método Add component se expuso a `editorActions`.
-* Las definiciones se expusieron a [extensibilidad.](/help/implementing/universal-editor/extending.md)
-* Se ha lanzado la versión 2.0 de la API de creación de documentos.
+* La acción de mover ya está disponible en [el menú contextual.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
+* El RTE ahora admite [pegar como texto.](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
 
 ## Funciones de adopción anticipada {#early-adopter}
 
@@ -41,6 +37,4 @@ Si le interesa probar las próximas funciones enumeradas a continuación y compa
 
 ## Otras mejoras {#other-improvements}
 
-* Se cambió el nombre de la extensibilidad `content` a `details` para seguir el esquema de la API.
-* Se ha mejorado el comportamiento del menú contextual.
-* Se ha corregido un error al hacer clic en el distintivo de un elemento editable para que el menú contextual se abra correctamente.
+* La publicación para vista previa se habilitó para AEM 6.5 al usar el complemento [`xwalk`.](/help/implementing/universal-editor/component-definition.md#plugins)

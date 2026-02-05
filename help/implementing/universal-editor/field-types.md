@@ -4,10 +4,10 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
+source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 96%
+source-wordcount: '1637'
+ht-degree: 95%
 
 ---
 
@@ -138,6 +138,7 @@ A continuación se indican los tipos de componentes que se pueden utilizar para 
 | [Seleccionar](#select) | `select` |
 | [Pestaña](#tab) | `tab` |
 | [Texto](#text) | `text` |
+| [Área de texto](#textarea) | `textarea` |
 
 #### Etiqueta de AEM {#aem-tag}
 
@@ -906,5 +907,33 @@ El texto permite introducir una sola línea de texto.  Incluye tipos de validaci
 >[!TAB Captura de pantalla]
 
 ![Captura de pantalla del tipo de componente de texto](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
+
+#### Área de texto {#textarea}
+
+El área de texto permite varias líneas de entrada de texto.
+
+>[!BEGINTABS]
+
+>[!TAB Muestra]
+
+```json
+{
+  "id": "longertext",
+  "fields": [
+    {
+      "component": "textarea",
+      "name": "textarea",
+      "label": "Text Area",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Captura de pantalla]
+
+![Captura de pantalla del tipo de componente textarea](assets/component-types/textarea.png)
 
 >[!ENDTABS]

@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
+source-git-commit: cca471c5511e7df57d2156d39649194f7a18a79c
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1874'
 ht-degree: 17%
 
 ---
@@ -78,7 +78,7 @@ La barra de navegación superior del Experience Platform siempre está presente 
 
 ![El encabezado de Experience Cloud](assets/experience-cloud-header.png)
 
-Para obtener más información sobre la barra de navegación superior de Experience Platform, consulte la [guía de la interfaz de usuario de Adobe Experience Platform](https://experienceleague.adobe.com/es/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Para obtener más información sobre la barra de navegación superior de Experience Platform, consulte la [guía de la interfaz de usuario de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Cuenta {#user-properties}
 
@@ -86,7 +86,7 @@ Al tocar o hacer clic en el icono Cuenta, se abre un menú con la configuración
 
 ![Conmutador de entorno](assets/environment-switcher.png)
 
-Para el editor universal, bajo el encabezado **Configuración del producto**, hay una opción para cambiar entre la versión de producción actual del editor universal y la próxima versión de vista previa.
+Para el editor universal, bajo el encabezado **Configuración del producto**, use la opción **Cambiar al entorno de vista previa** para cambiar entre la versión de producción actual del editor universal y la próxima [versión de vista previa.](/help/release-notes/universal-editor/preview.md)
 
 ### Barra de herramientas del editor universal {#universal-editor-toolbar}
 

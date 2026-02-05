@@ -4,9 +4,9 @@ description: Descubra cómo puede configurar el editor de texto enriquecido (RTE
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
+source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,28 @@ La sangría tiene una configuración de nivel de función que controla el ámbit
 >[!NOTE]
 >
 >El anidamiento de listas mediante las teclas Tab/Mayús+Tab funciona independientemente de la configuración general de sangría.
+
+### Pegar como texto {#paste-as-text}
+
+La acción del editor `paste_text` habilita un flujo de trabajo estándar de pegar como texto sin formato.
+
+* **Método abreviado predeterminado:** Mod-Shift-v (Cmd+Mayús+V en macOS, Ctrl+Mayús+V en Windows/Linux)
+* **Comportamiento:** Pega desde texto/sin formato (se omite el formato de origen)
+   * En las listas, las líneas nuevas crean nuevos elementos de lista.
+
+```json
+{
+  "toolbar": {
+    "editor": ["removeformat", "paste_text"]
+  },
+  "actions": {
+    "paste_text": {
+      "shortcut": "Mod-Shift-v",
+      "label": "Paste as Text"
+    }
+  }
+}
+```
 
 ### Otras acciones {#other}
 
