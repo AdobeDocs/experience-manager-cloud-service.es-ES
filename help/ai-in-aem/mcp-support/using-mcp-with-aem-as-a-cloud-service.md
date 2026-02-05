@@ -3,7 +3,7 @@ title: Uso de MCP con AEM as a Cloud Service
 description: Aprenda a utilizar el protocolo de contexto de modelo con AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 243fbd007235949fc03852658f606d483ef9ce4d
+source-git-commit: a5eeb2cedb16f7d0ba0b31e838b3b9fa27b0bf3f
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Este paso lo realiza cada usuario (o un administrador de la aplicación cliente 
 
 A continuación, se muestran ejemplos de cómo se ve esto en cada aplicación compatible de alto nivel.
 
-**ChatGPT**
+### ChatGPT {#chatgpt}
 
 ![Configurar ChatGPT - Configuración](assets/chatgpt-1.png)
 
@@ -139,7 +139,7 @@ A continuación, se muestran ejemplos de cómo se ve esto en cada aplicación co
 
   *&quot;Mediante las herramientas configuradas de MCP de AEM, enumere todos los sitios en nuestro entorno de creación.&quot;*
 
-**Claude**
+### Claude {#claude}
 
 ![Configurar Claude - Configuración](assets/claude-1.png)
 
@@ -161,7 +161,7 @@ A continuación, se muestran ejemplos de cómo se ve esto en cada aplicación co
 * Asegúrese de que el servidor MCP esté seleccionado antes de iniciar la conversación
 * Pida a Claude que realice tareas relacionadas con AEM; Claude seleccionará las herramientas de AEM expuestas por el servidor MCP en función de su solicitud.
 
-**Cursor**
+### Cursor {#cursor}
 
 ![Configurar cursor - Configuración](assets/cursor-1.png)
 
@@ -178,7 +178,7 @@ A continuación, se muestran ejemplos de cómo se ve esto en cada aplicación co
 * Si lo desea, puede activar o desactivar las herramientas individuales haciendo clic en sus nombres. Todas las herramientas están habilitadas de forma predeterminada.
 * Utilice el editor o el chat del cursor para invocar las herramientas de AEM como parte de los flujos de trabajo de desarrollo o contenido.
 
-**Microsoft Copilot Studio**
+### Microsoft Copilot Studio {#microsoft-copilot-studio}
 
 ![Configurar copiloto - Agentes](assets/copilot-1.png)
 
