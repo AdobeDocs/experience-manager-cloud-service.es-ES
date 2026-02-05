@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 7ee534546cc8b9afd865b41f223caf9fd86ea45a
+source-git-commit: 90b1730522494cda0e777ecc0171703c2b2eff5b
 workflow-type: tm+mt
-source-wordcount: '3548'
-ht-degree: 89%
+source-wordcount: '3697'
+ht-degree: 85%
 
 ---
 
@@ -174,7 +174,7 @@ Se ha anunciado que las API de la tabla siguiente (haga clic para ampliar y verl
     <td>AEM as a Cloud Service no admite esta API interna de slf4j. <a href="#org.slf4j">Consulte las notas de eliminación a continuación.</a></td>
     <td>11/4/2022</td>
     <td>26/2/2026</td>
-  </tr> 
+  </tr>
     <tr>
     <td>com.drew.*</td>
     <td>La extracción de metadatos de imágenes y vídeos debe realizarse mediante Asset Compute en Cloud Service, o mediante Apache POI o Apache Tika.</td>
@@ -203,7 +203,7 @@ Se ha anunciado que las API de la tabla siguiente (haga clic para ampliar y verl
     <td>El uso de esta API no se admite en AEM as a Cloud Service.</td>
     <td>31/10/2022</td>
     <td>26/2/2026</td>
-  </tr>  
+  </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
@@ -348,6 +348,14 @@ Aunque debe corregir todas las API obsoletas con el tiempo, dé prioridad a cual
 
 Después de actualizar el código, compruebe que no queda ningún uso obsoleto de la API en Cloud Manager comprobando los resultados del paso de calidad del código.
 
+### Directrices generales
+
+Si utiliza una biblioteca de terceros que actualmente requiere una API obsoleta, intente actualizar a una versión más reciente de esa biblioteca de terceros.
+
+Si usa ACS AEM Commons, use al menos la versión 6.11.0 (se recomienda la versión más reciente) y asegúrese de [incluir la versión de Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) especificando el clasificador `cloud` para el paquete de contenido.
+
+Si la importación de una API obsoleta está marcada como `optional`, debe intentar eliminarla. Sin embargo, este uso opcional no bloqueará las implementaciones. Sin embargo, su implementación podría verse afectada, una vez que la importación opcional ya no se cumpla.
+
 ### Eliminación de `org.apache.sling.commons.auth*`  {#org.apache.sling.commons.auth}
 
 Si usa `org.apache.sling.commons.auth` o `org.apache.sling.commons.auth.spi` o ambos, el uso se puede reemplazar migrando el código a `org.apache.sling.auth` resp. `org.apache.sling.auth.spi`. Si está usando una versión antigua de [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), asegúrese de actualizarla a la versión más reciente.
@@ -447,6 +455,7 @@ Lista de acciones:
 
 * Actualizar ACS AEM Commons a la versión más reciente (6.11.0 como mínimo)
 * Quitar el código utilizando `org.slf4j.event` y `org.slf4j.spi`
+* Si está usando el cliente Apache Kafka e incluye el paquete de envoltorio OSGi de Apache ServiceMix (`org.apache.servicemix.bundles.kafka-clients`), reemplácelo por el [Envoltorio para cliente Apache Kafka de AEM](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/). Esta es la misma versión que la de Apache ServiceMix con solo el uso de esos dos paquetes eliminados.
 
 ### Uso de `org.apache.log4j` {#org.apache.log4j}
 
