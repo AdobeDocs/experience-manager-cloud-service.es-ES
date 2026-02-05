@@ -3,10 +3,10 @@ title: Notas de la versión de Universal Editor Preview
 description: Estas son las notas de la versión de la vista previa del editor universal.
 feature: Release Information
 role: Admin
-source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
+source-git-commit: b03ad4a29c55e6789b82d2da76708c6e31613c5e
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '170'
+ht-degree: 0%
 
 ---
 
@@ -27,8 +27,10 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 
 ## Próximas nuevas funciones {#what-is-new}
 
-* Por determinar
+* Ahora se admiten vínculos de Dynamic Media.
 
 ## Próximas mejoras {#other-improvements}
 
-* Por determinar
+* Se ha corregido un problema con las direcciones URL incorrectas para los vídeos.
+* La creación de varios componentes con el mismo nombre ya no devuelve un error 409.
+* El lienzo sin encabezado ahora persiste en las actualizaciones posteriores de un campo en el contenedor.
