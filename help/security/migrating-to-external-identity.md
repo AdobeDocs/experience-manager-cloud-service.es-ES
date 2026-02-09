@@ -4,10 +4,10 @@ description: Guía técnica para migrar usuarios y grupos locales a un modelo de
 solution: Experience Manager Sites
 feature: Security
 role: Developer, Admin
-source-git-commit: bb4b60523f60b1285c5f2fd2e49f6cc8cff24324
+source-git-commit: 1f8bd9eea249e0b2242f3fbe1490b3d51052f546
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2232'
+ht-degree: 1%
 
 ---
 
@@ -576,14 +576,14 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 
 ### Lista de comprobación previa a la migración {#pre-migration-checklist}
 
-* [ ] **Configurar usuario de servicio**: cree y configure el usuario de servicio (por ejemplo, `group-provisioner`) con los permisos adecuados
-* [ ] **Verificar configuración de ExternalPrincipal**: Asegúrese de que el usuario del servicio está configurado para omitir la protección en `rep:externalId` y `rep:externalPrincipalNames`
-* [ ] **Permisos de usuario del servicio de prueba**: compruebe que el usuario del servicio puede establecer propiedades de identidad externas en desarrollo
-* [ ] Identificar todo el código personalizado que crea usuarios o grupos
-* [ ]: revisar y actualizar el código personalizado para utilizar el modelo de identidad externo
-* [ ] Prueba de código actualizado en el entorno de desarrollo
-* [ ] Inventariar todos los usuarios y grupos locales existentes para migrar
-* [ ]: probar el proceso de migración en entornos más bajos
+* **Configurar usuario de servicio**: cree y configure el usuario de servicio (por ejemplo, `group-provisioner`) con los permisos adecuados
+* **Verificar configuración de ExternalPrincipal**: Asegúrese de que el usuario del servicio está configurado para omitir la protección en `rep:externalId` y `rep:externalPrincipalNames`
+* **Permisos de usuario del servicio de prueba**: compruebe que el usuario del servicio puede establecer propiedades de identidad externas en desarrollo
+* Identifique todo el código personalizado que cree usuarios o grupos
+* Revisar y actualizar el código personalizado para utilizar un modelo de identidad externo
+* Prueba de código actualizado en el entorno de desarrollo
+* Inventariar todos los usuarios y grupos locales existentes para migrar
+* Prueba del proceso de migración en entornos más bajos
 
 ### Pasos de ejecución {#execution-steps}
 
@@ -773,12 +773,12 @@ Como nivel de seguridad adicional, puede configurar reglas de CDN para restringi
 
 Antes de implementar los servlets de migración en la producción:
 
-* [ ]: crear integración de IMS en AEM Developer Console
-* [ ] Configurar servlets para validar el ID de cuenta técnica
-* [ ] Flujo de autenticación de prueba en entornos de desarrollo/ensayo
-* [ ] Considerar restricciones adicionales basadas en IP en el nivel CDN
-* [ ]: planee deshabilitar o quitar los servlets de migración una vez completada la migración
-* [ ]: auditar y registrar todo el acceso a los extremos de migración
+* Creación de la integración de IMS en AEM Developer Console
+* Configuración de servlets para validar el ID de cuenta técnica
+* Probar el flujo de autenticación en entornos de desarrollo/ensayo
+* Considere la posibilidad de aplicar restricciones adicionales basadas en IP en el nivel CDN
+* Planifique la desactivación o eliminación de los servlets de migración una vez completada la migración
+* Auditoría y registro de todo el acceso a los extremos de migración
 
 >[!IMPORTANT]
 >
@@ -787,6 +787,6 @@ Antes de implementar los servlets de migración en la producción:
 ## Recursos adicionales {#additional-resources}
 
 * [Sincronización de usuarios y grupos para el nivel de publicación](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-* [Controlador de autenticación SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=es)
+* [Controlador de autenticación SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)
 * [Proveedor de identidad externo](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)
 * [Pertenencia a grupo dinámico](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)
