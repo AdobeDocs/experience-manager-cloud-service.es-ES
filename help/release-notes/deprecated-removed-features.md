@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 5b049c6502cddf7009cf5c81b033e290216eb847
+source-git-commit: 910876ef77698680266a2ef99cd5650b0adbd1ac
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 85%
@@ -30,14 +30,15 @@ Durante el plazo de tiempo hasta la entrada en desuso, Adobe recordará a los cl
 >En algunos casos, es posible que se requiera la eliminación de una función antes de implementar una nueva compilación de Cloud Manager o de actualizar a la versión más reciente de AEM as a Cloud Service.
 
 >[!IMPORTANT]
->  Varias [API obsoletas](#aem-apis) están planeando la eliminación el **26 de febrero de 2026**. Revise estas fechas e impactos clave:
 >
-> * **A partir del 26 de enero de 2026**: los correos electrónicos de notificación del Centro de acciones se envían **semanalmente por entorno** como recordatorio para eliminar el uso de estas API.
-> * **26 de febrero de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **se pausarán** durante el paso **Calidad del código**. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular el problema para permitir que continúe la canalización.
-> * **26 de marzo de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **fallarán** durante el paso de **Calidad del código**, **bloqueando implementaciones** de nuevo código hasta que se elimine el uso.
-> * **30 de abril de 2026**: Es posible que los entornos que aún usan estas API **ya no reciban actualizaciones críticas de la versión de Adobe**.
+>Varias [API obsoletas](#aem-apis) están planeando la eliminación el **26 de febrero de 2026**. Revise estas fechas e impactos clave:
 >
-> Para evitar bloques de implementación, elimine el uso de la API antes del 26 de marzo de 2026.
+>* **A partir del 26 de enero de 2026**: los correos electrónicos de notificación del Centro de acciones se envían **semanalmente por entorno** como recordatorio para eliminar el uso de estas API.
+>* **26 de febrero de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **se pausarán** durante el paso **Calidad del código**. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular el problema para permitir que continúe la canalización.
+>* **26 de marzo de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **fallarán** durante el paso de **Calidad del código**, **bloqueando implementaciones** de nuevo código hasta que se elimine el uso.
+>* **30 de abril de 2026**: Es posible que los entornos que aún usan estas API **ya no reciban actualizaciones críticas de la versión de Adobe**.
+>
+>Para evitar bloques de implementación, elimine el uso de la API antes del 26 de marzo de 2026.
 
 ## Funcionalidad en desuso {#deprecated-features}
 
