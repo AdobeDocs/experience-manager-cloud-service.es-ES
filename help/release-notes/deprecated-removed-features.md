@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 90b1730522494cda0e777ecc0171703c2b2eff5b
+source-git-commit: 5b049c6502cddf7009cf5c81b033e290216eb847
 workflow-type: tm+mt
-source-wordcount: '3697'
+source-wordcount: '3695'
 ht-degree: 85%
 
 ---
@@ -61,6 +61,7 @@ Se ha anunciado que la funcionalidad de la tabla siguiente ya no se utiliza, per
 | [!DNL Foundation] | Las integraciones que utilizan credenciales generadas a partir de proyectos de Adobe Developer Console perderán gradualmente la compatibilidad con las credenciales de la cuenta de servicio (JWT). Desde el 1 de mayo de 2024, no se pueden crear nuevas credenciales de cuenta de servicio (JWT) en Adobe Developer Console. Las credenciales de la cuenta de servicio (JWT) existentes se pueden utilizar para las integraciones configuradas hasta el 1 de enero de 2025, después de lo cual dejan de funcionar y es necesario que los clientes migren a las credenciales de servidor a servidor de OAuth. [Más información](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) a las credenciales de servidor a servidor de OAuth. |
 | [!DNL Foundation] | Flujo de trabajo Publicar árbol de contenido y el paso de flujo de trabajo Publicar árbol de contenido relacionado, que se utilizaba para replicaciones de jerarquías de contenido. | Utilizar [Paso del flujo de trabajo de activación de árbol](/help/operations/replication.md#tree-activation), que es más eficaz. |
 | [!DNL Foundation] | Usar YUI para comprimir o minimizar las bibliotecas de cliente de JavaScript. Adobe no tiene previsto actualizar ya más la biblioteca de YUI. | Adobe recomienda a los clientes cambiar a Google Closure Compiler (GCC) para su implementación. |
+| [!DNL Foundation] | Compatibilidad con com.adobe.granite.oauth.server | Integración de IMS de Adobe |
 
 ## Funcionalidad eliminada {#removed-features}
 
@@ -76,7 +77,6 @@ Esta sección enumera las funcionalidades que se han eliminado.
 | [!DNL Foundation] | Compatibilidad con fuentes de datos de Apache Sling (paquete OSGi org.apache.sling.datasource) | N/D | Eliminado |
 | [!DNL Foundation] | Compatibilidad con plantillas de scripts JST (paquete OSGi org.apache.sling.scripting.jst) | N/D | Eliminado |
 | [!DNL Foundation] | Compatibilidad con la pizarra Apache Felix Http | Pizarra Http OSGi | Marzo de 2022 |
-| [!DNL Foundation] | Compatibilidad con com.adobe.granite.oauth.server | Integración de IMS de Adobe | Marzo de 2023 |
 | [!DNL Foundation] | Compatibilidad con la función org.apache.sling.serviceusermapping para [obtener el id de usuario del servicio](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/D | 30/08/24 |
 | [!DNL Foundation] | El tiempo de ejecución de Java 11 ya no se utiliza y Adobe lo ha sustituido por el tiempo de ejecución de Java 21. Tenga en cuenta que se puede seguir creando código con Java 11 (Java 17 y 21 son las otras opciones) | Se aplica el tiempo de ejecución de Java 21. Para garantizar la compatibilidad, es esencial actualizar las versiones de la biblioteca tal como se describe en [Requisitos de tiempo de ejecución](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) | 5 a 29 de marzo de 2025 |
 
