@@ -787,6 +787,6 @@ Antes de implementar los servlets de migración en la producción:
 ## Recursos adicionales {#additional-resources}
 
 * [Sincronización de usuarios y grupos para el nivel de publicación](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-* [Controlador de autenticación SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)
+* [Controlador de autenticación SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=es)
 * [Proveedor de identidad externo](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)
 * [Pertenencia a grupo dinámico](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)
