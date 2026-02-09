@@ -5,10 +5,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 3cc787fe9a0be9a687f7c20744d93f1df4b76f87
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 64%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ A continuación se describen dos métodos para la aplicación del registro.
 
 ### Gestionado por AEM {#aem-managed-registration}
 
-AEM Se puede escribir un código de registro personalizado que contenga, como mínimo, el nombre de usuario y la contraseña del usuario y que cree un registro de usuario en el que se pueda utilizar para autenticarse durante el inicio de sesión. Los siguientes pasos suelen utilizarse para construir este mecanismo de registro:
+Se puede escribir un código de registro personalizado que contenga, como mínimo, el nombre de usuario y la contraseña del usuario y que cree un registro de usuario en AEM que se pueda utilizar para autenticarse durante el inicio de sesión. Los siguientes pasos suelen utilizarse para construir este mecanismo de registro:
 
 1. Mostrar un componente de AEM personalizado que recopila información de registro
 1. Tras el envío, se utiliza un usuario de servicio aprovisionado correctamente para lo siguiente:
@@ -76,13 +76,13 @@ Los clientes pueden integrarse con un IdP (proveedor de identidad), que autentic
 
 **BASADO EN SAML**
 
-Los clientes pueden utilizar la autenticación basada en SAML a través de su SAML IdP preferido. AEM AEM AEM AEM Cuando se utiliza un IdP con el, el IdP es responsable de autenticar las credenciales del usuario e intermediar la autenticación del usuario con el, crear el registro de usuario en el que es necesario y administrar la pertenencia del usuario al grupo en el que es miembro, tal como se describe en la afirmación de SAML. El IdP es el responsable de la autenticación del usuario con el que es miembro, según se describe en la declaración de.
+Los clientes pueden utilizar la autenticación basada en SAML a través de su SAML IdP preferido. Cuando se utiliza un IdP con AEM, el IdP es responsable de autenticar las credenciales del usuario e intermediar la autenticación del usuario con AEM, crear el registro de usuario en AEM según sea necesario y administrar la membresía de grupo del usuario en AEM, como se describe en la afirmación de SAML.
 
 >[!NOTE]
 >
 >El IdP solo autentica la autenticación inicial de las credenciales del usuario y las solicitudes posteriores a AEM se realizan mediante una cookie de token de inicio de sesión de AEM, siempre que la cookie esté disponible.
 
-Consulte la documentación para obtener más información sobre [Controlador de autenticación SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=es).
+Consulte la documentación para obtener más información sobre [Controlador de autenticación SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html).
 
 **OAuth/SSO**
 
@@ -92,7 +92,7 @@ La interfaz `com.adobe.granite.auth.oauth.provider` se puede implementar con el 
 
 **Requisito previo:**
 
-Como práctica recomendada, confíe siempre en el idP (proveedor de identidad) como único punto de verdad al almacenar datos específicos del usuario. Si la información adicional del usuario se almacena en el repositorio local, que no forma parte del idP, habilite la [sincronización de datos](#data-synchronization-data-synchronization) enviando una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados. Además de la [sincronización de datos](#data-synchronization-data-synchronization), en el caso del proveedor de autenticación SAML, asegúrese de que la [pertenencia al grupo dinámico](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) esté habilitada.
+Como práctica recomendada, confíe siempre en el idP (proveedor de identidad) como único punto de verdad al almacenar datos específicos del usuario. Si la información adicional del usuario se almacena en el repositorio local, que no forma parte del idP, habilite la [sincronización de datos](#data-synchronization-data-synchronization) enviando una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados. Además de la [sincronización de datos](#data-synchronization-data-synchronization), en el caso del proveedor de autenticación SAML, asegúrese de que la [pertenencia al grupo dinámico](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) esté habilitada.
 
 ### Sesiones de persistencia y tokens encapsulados {#sticky-sessions-and-encapsulated-tokens}
 
@@ -109,7 +109,7 @@ Existen diversos enfoques para la persistencia de los datos, según la naturalez
 La información de perfil del usuario se puede escribir y leer de dos maneras:
 
 * Usando el lado del servidor con la Interfaz `com.adobe.granite.security.user` interfaz UserPropertiesManager, que colocará los datos bajo el nodo del usuario en `/home/users`. Asegúrese de que las páginas que son únicas por usuario no se almacenen en caché.
-* Usando el lado del cliente mediante ContextHub, tal como lo describe [la documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=es#personalization).
+* Usando el lado del cliente mediante ContextHub, tal como lo describe [la documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
 **Requisito previo:**
 
@@ -129,7 +129,7 @@ una solicitud al Servicio de atención al cliente indicando el programa y los en
 
 ## Permisos (grupos de usuarios cerrados) {#permissions-closed-user-groups}
 
-Las directivas de acceso de nivel de Publish AEM, también denominadas Grupos de usuarios cerrados (CUG), se definen en el autor de la; consulte [Creación de un grupo de usuarios cerrado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=es#applying-your-closed-user-group-to-content-pages). Para restringir ciertas secciones o páginas de un sitio web a algunos usuarios, aplique los CUG según sea necesario utilizando el autor de AEM, como se describe aquí, y duplíquelos en el nivel de publicación.
+Las directivas de acceso del nivel de publicación, también denominadas Grupos de usuarios cerrados (CUG), se definen en el autor de AEM. Consulte [Creación de un grupo de usuarios cerrado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Para restringir ciertas secciones o páginas de un sitio web a algunos usuarios, aplique los CUG según sea necesario utilizando el autor de AEM, como se describe aquí, y duplíquelos en el nivel de publicación.
 
 * Si los usuarios inician sesión al autenticarse con un proveedor de identidad (IdP) mediante SAML, el controlador de autenticación identificará las pertenencias de grupo del usuario (que deben coincidir con los CUG en el nivel de publicación) y persistirá la asociación entre el usuario y el grupo a través de un registro de repositorio.
 * Si el inicio de sesión se realiza sin integración de IdP, el código personalizado puede aplicar las mismas relaciones de estructura de repositorios.
@@ -140,15 +140,31 @@ Independientemente del inicio de sesión, el código personalizado también pued
 
 Los usuarios finales de sitios web esperan una experiencia coherente en cada solicitud de página web o incluso cuando inician sesión con un explorador diferente, aunque no sean conscientes de que se los lleva a diferentes nodos de servidor de la infraestructura del nivel de publicación. AEM as a Cloud Service lo consigue sincronizando rápidamente la jerarquía de carpetas `/home` (información de perfil de usuario, pertenencia a grupos, etc.) en todos los nodos del nivel de publicación.
 
-A diferencia de otras soluciones de AEM, la sincronización de usuarios y la pertenencia a grupos en AEM as a Cloud Service no utiliza un enfoque de mensajería de extremo a extremo, sino que implementa un enfoque de publicación-suscripción que no requiere la configuración del cliente.
+A diferencia de otras soluciones de AEM, la sincronización de usuarios y el abono a grupos en AEM as a Cloud Service no utiliza un enfoque de mensajería de extremo a extremo, sino que implementa un enfoque de publicación-suscripción que no requiere la configuración del cliente.
 
 >[!NOTE]
 >
->De forma predeterminada, la sincronización de perfiles de usuario y la pertenencia a grupos no está habilitada y, por lo tanto, los datos no se sincronizarán y ni siquiera persistirán de forma permanente en el nivel de publicación. Para habilitar la función, envíe una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados.
+>De forma predeterminada, la sincronización de perfiles de usuario y el abono a grupos no está habilitada y, por lo tanto, los datos no se sincronizarán y ni siquiera persistirán de forma permanente en el nivel de publicación. Para habilitar la función, envíe una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados.
 
 >[!IMPORTANT]
 >
 >Pruebe la implementación a escala antes de habilitar la sincronización de datos en el entorno de producción. Según el caso de uso y los datos que hayan persistido, podrían producirse algunos problemas de coherencia y latencia.
+
+### Requisitos de migración y código personalizado {#custom-code-and-migration-requirements}
+
+Los siguientes requisitos se aplican únicamente en los casos en que se utiliza código personalizado para crear usuarios o grupos locales. Cuando la sincronización de datos está habilitada, dicho código personalizado debe actualizarse para crear usuarios externos y grupos externos con pertenencia a grupo dinámico.
+
+**Pasos necesarios:**
+
+* **Modificaciones al código personalizado**: cualquier lógica personalizada responsable de crear usuarios o grupos debe actualizarse a:
+
+   * Crear usuarios externos estableciendo la propiedad `rep:externalId`
+   * Crear grupos externos estableciendo la propiedad `rep:externalId`
+   * Implemente la pertenencia a grupos dinámicos utilizando la propiedad `rep:externalPrincipalNames`, en lugar de utilizar relaciones directas de usuario a grupo
+
+* **Migración de datos preexistentes**: Se requiere que todos los usuarios y grupos locales existentes se migren al modelo de identidad externo antes de habilitar la sincronización de datos en entornos de producción.
+
+Para obtener instrucciones técnicas detalladas sobre cómo actualizar implementaciones personalizadas y migrar usuarios y grupos existentes, consulte [Migración a identidad externa y pertenencia a grupos dinámicos](/help/security/migrating-to-external-identity.md).
 
 ## Consideraciones de caché {#cache-considerations}
 
