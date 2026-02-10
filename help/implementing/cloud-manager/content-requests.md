@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 7bf48596f64dd9682fa2fb3e5d5db513a8a7fbdc
+source-git-commit: 4ddf90277a24e3ec30ebdd8a9c09b69f80825655
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: '2084'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Las solicitudes de contenido se miden independientemente de si la respuesta se p
 
 <!-- REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website engagement. -->
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement. -->
 
 ### Variaciones de solicitudes de contenido de Cloud Service {#content-requests-variances}
 
@@ -65,7 +65,7 @@ Consulte [Tablero de licencias](/help/implementing/cloud-manager/license-dashboa
 
 ## Reglas de recopilación del lado del servidor {#serverside-collection}
 
-AEM as a Cloud Service aplica reglas de recopilación del lado del servidor para contar las solicitudes de contenido. Estas reglas excluyen bots conocidos (como los rastreadores de motores de búsqueda), incluidos los rastreadores de AI/LLM reconocidos, y un conjunto de servicios de monitorización que hacen ping regularmente al sitio. Otro tráfico sintético, automatizado o de tipo de monitorización que no está en esta lista de exclusión se cuenta como solicitudes de contenido facturables.
+AEM as a Cloud Service aplica reglas de recopilación del lado del servidor para contar las solicitudes de contenido. Estas reglas excluyen bots conocidos (como rastreadores de motores de búsqueda), incluidos rastreadores de IA/LLM reconocidos, y un conjunto de servicios de monitorización que hacen ping regularmente al sitio. Otro tráfico sintético, automatizado o de tipo de monitorización que no está en esta lista de exclusión se cuenta como solicitudes de contenido facturables.
 
 En las tablas siguientes se enumeran los tipos de solicitudes de contenido incluidas y excluidas, con breves descripciones de cada una.
 
@@ -97,9 +97,9 @@ Ver también [Tablero de licencias](/help/implementing/cloud-manager/license-das
 | URL para que los clientes supervisen su programa de Cloud Service | Excluido | Adobe recomienda usar la dirección URL para supervisar externamente la disponibilidad o la comprobación de estado.<br><br>`/system/probes/health` |
 | Servicio de calentamiento de AEM as a Cloud Service Pod | Excluido | Agente: skyline-service-warmup/1.* |
 | Motores de búsqueda, redes sociales y bibliotecas HTTP conocidos (etiquetados por Fastly) | Excluido | Servicios conocidos que visitan el sitio con regularidad para actualizar el índice de búsqueda o el servicio:<br><br>Ejemplos:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Preguntar a Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br>· Móvil Google AdsBot<br>· Googlebot<br>· Móvil Googlebot<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteMejora<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br> |
-| Crawlers de IA/LLM muy conocidos (etiquetados por Fastly) | Excluido | Solicitudes de rastreadores AI/LLM reconocidos identificados como bots conocidos (por ejemplo, por `User-Agent` u otras señales de clasificación de bots). Estas solicitudes no son facturables.<br><br>Si un agente de IA no se identifica como un bot conocido (por ejemplo, usa un explorador genérico `User-Agent`), sus solicitudes se pueden contar como solicitudes de contenido facturables. |
+| Rastreadores de IA/LLM bien conocidos (etiquetados por Fastly) | Excluido | Solicitudes de rastreadores de IA/LLM reconocidos identificados como bots conocidos (por ejemplo, por `User-Agent` u otras señales de clasificación de bots). Estas solicitudes no son facturables.<br><br>Algunos ejemplos de bots excluidos son: ChatGPT, Gmail Image Proxy, Baidu Spider, Outbrain, Yahoo! Proxy de correo, aiHitBot, Mail.Ru Bot, DomainStatsBot, Rainmeter, MetaInspector y Yahoo Gemini.<br><br>Si un agente de IA no se identifica como un bot conocido (por ejemplo, usa un explorador genérico `User-Agent`), sus solicitudes se pueden contar como solicitudes de contenido facturables. |
 | Excluir llamadas de Commerce integration framework | Excluido | Las solicitudes realizadas a AEM que se reenvíen a Commerce integration framework (la dirección URL comienza con `/api/graphql`) para evitar el recuento doble, no se pueden facturar en Cloud Service. |
-| Excluir `manifest.json` | Excluido | El manifiesto no es una llamada de API. Se encuentra aquí para proporcionar información sobre cómo instalar sitios web en un escritorio o teléfono móvil. Adobe no debe contar la solicitud JSON a `/etc.clientlibs/*/manifest.json` |
+| Bibliotecas de cliente (/etc.clientlibs/*): Excluido | Excluido | Las solicitudes en /etc.clientlibs/* son recursos de biblioteca de cliente de nivel de plataforma y archivos de configuración de tiempo de ejecución utilizados por AEM. Estas solicitudes no proporcionan contenido creado por el cliente ni datos empresariales y, por lo tanto, no se cuentan como solicitudes de contenido. |
 | Excluir `favicon.ico` | Excluido | Aunque el contenido devuelto no debe ser HTML ni JSON, se ha observado que ciertos escenarios como los flujos de autenticación SAML devuelven iconos favoritos como HTML. Como resultado, los iconos favoritos se excluyen explícitamente del recuento. |
 | Fragmento de experiencia (XF): reutilización del mismo dominio | Excluido | Solicitudes realizadas a rutas XF (como `/content/experience-fragments/...`) desde páginas alojadas en el mismo dominio (identificado por el encabezado Referente que coincide con el host de solicitud).<br><br> Ejemplo: Una página de inicio en `aem.customer.com` que extrae un XF para un titular o una tarjeta del mismo dominio.<br><br>· La dirección URL coincide con /content/experience-fragments/...<br>· El dominio de referente coincide con `request_x_forwarded_host`<br><br>**Nota:** Si la ruta del fragmento de experiencia está personalizada (por ejemplo, mediante `/XFrags/...` o cualquier ruta de acceso fuera de `/content/experience-fragments/`), la solicitud no se excluye y se puede contar, incluso si es del mismo dominio. Adobe recomienda utilizar la estructura de rutas estándar de XF de Adobe para garantizar que la lógica de exclusión se aplique correctamente. |
 
@@ -111,7 +111,7 @@ Como se mencionó en la sección [Variaciones de solicitudes de contenido de Clo
 
 * Asegúrese de que todas las respuestas de Página no encontrada se envíen con un estado HTTP 404.  Si se devuelven con un estado 200, se cuentan para las solicitudes de contenido.
 * Enrute las herramientas de comprobación de estado o monitorización a la URL /system/probes/health o utilice el método HEAD en lugar de GET para evitar solicitudes de contenido.
-* Equilibre sus necesidades de actualización del contenido con el coste de licencia de AEM para cualquier rastreador de búsqueda personalizado que haya integrado con su sitio.  Un rastreador demasiado agresivo puede consumir muchas solicitudes de contenido.
+* Equilibre sus necesidades de actualización del contenido con el coste de la licencia de AEM para cualquier rastreador de búsqueda personalizada que haya integrado con su sitio.  Un rastreador demasiado agresivo puede consumir muchas solicitudes de contenido.
 * Gestione cualquier redirección como del lado del servidor (estado 301 o 302) en lugar de hacerlo del lado del cliente (estado 200 con redirección de JavaScript) para evitar dos solicitudes de contenido independientes.
 * Combine o reduzca las llamadas de API, que son respuestas JSON de AEM que se pueden cargar para procesar la página.
 * Asegúrese de que el agente de usuario del explorador se pasa correctamente a AEM. Al hacerlo, se aprovecha la regla de exclusión de solicitudes de contenido del &quot;motor de búsqueda conocido&quot; descrita anteriormente.  A veces, el agente de usuario de origen se pierde con ciertas implementaciones sin encabezado o configuraciones de CDN. Si esto sucede, puede evitar la exclusión y provocar solicitudes de contenido más altas que si se pasara el agente de usuario.
