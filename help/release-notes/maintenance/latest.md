@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f01a98604e045c48ab7167122aee3b2468db6d52
+source-git-commit: 18f270e92bcf41b45946491dbbbde306c2352416
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 24%
+source-wordcount: '999'
+ht-degree: 23%
 
 ---
 
@@ -20,7 +20,7 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 A continuación se resumen las mejoras continuas para la versión de mantenimiento 24288, que se publicó el jueves, 04 de febrero de 2026. La versión de mantenimiento anterior fue la 23963.
 
-La activación de funcionalidades 2026.2.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
+La activación de funciones 2026.2.0 proporciona el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Para obtener más información sobre las funciones nuevas y mejoradas y los prob
 
 ### Problemas conocidos {#known-issues-24288}
 
-Ninguna.
+* SITES-40408: el extremo de GraphQL devuelve 404 debido a las reglas de reescritura personalizadas del Dispatcher.
 
 ### Características y API obsoletas {#deprecated-24288}
 
