@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 64b6ce166baa892fcddd13c2e9c8b5e7e0053815
 workflow-type: tm+mt
-source-wordcount: '6649'
-ht-degree: 100%
+source-wordcount: '6682'
+ht-degree: 99%
 
 ---
 
@@ -538,7 +538,7 @@ Para escribir las reglas, realice los siguientes pasos:
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/es/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -556,6 +556,10 @@ While writing JavaScript code in the rule editor, the following visual cues help
 -->
 
 #### Funciones personalizadas en el editor de reglas {#custom-functions}
+
+>[!NOTE]
+>
+> Las funciones personalizadas deben ser compatibles con ECMAScript 5 (ES5). Foundation Forms solo es compatible con ES5; no se admite el uso de versiones más recientes de ECMAScript (ES6 y posteriores) y puede provocar errores o un comportamiento inesperado.
 
 Aparte de las funciones integradas, como *Sum of* que se enumeran en Salida de funciones, puede escribir funciones personalizadas que necesite con frecuencia. Asegúrese de que la función que escriba esté acompañada de una etiqueta `jsdoc` encima.
 
@@ -581,7 +585,7 @@ O bien, `,` puede usar: `@function funcName <Function Name>` **o** `@func` `func
 
 * **Sintaxis**
 de abonado: `@memberof namespace`
-adjunta un área de nombres a la función.
+adjunta un espacio de nombres a la función.
 
 * **Sintaxis**
 de parámetro: `@param {type} name <Parameter Description>`

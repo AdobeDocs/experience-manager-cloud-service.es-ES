@@ -5,10 +5,10 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: conectar AEM Forms a Power Automate, automatización de Power Automate AEM Forms, Integrar Power Automate con Formularios adaptables, enviar datos de Formularios adaptables a Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 03f92d950744e653e4ef509bac3c3b4709477e41
+source-git-commit: 64b6ce166baa892fcddd13c2e9c8b5e7e0053815
 workflow-type: tm+mt
-source-wordcount: '1546'
-ht-degree: 99%
+source-wordcount: '1635'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service | Este artículo |
 
 <span class="preview"> Si se encuentra en GovCloud y necesita conectarse a un inquilino de GCC (Government Cloud Computing), envíe un correo electrónico desde su dirección oficial a aem-forms-ea@adobe.com para solicitar acceso a través del programa para primeros usuarios. </span>
@@ -43,7 +43,7 @@ A continuación se muestran algunos ejemplos de lo que puede hacer después de i
 Para conectar un formulario adaptable con Microsoft® Power Automate, es necesario lo siguiente:
 
 * Licencia de Microsoft® Power Automate Premium.
-* Flujo de Microsoft® [Power Automate &#x200B;](https://docs.microsoft.com/es-es/power-automate/create-flow-solution) con el activador `When an HTTP request is received` para aceptar los datos de envío del formulario adaptable.
+* Flujo de Microsoft® [Power Automate ](https://docs.microsoft.com/es-es/power-automate/create-flow-solution) con el activador `When an HTTP request is received` para aceptar los datos de envío del formulario adaptable.
 * Un usuario de Experience Manager con privilegios de [autor de formularios](/help/forms/forms-groups-privileges-tasks.md) y [administrador de formularios](/help/forms/forms-groups-privileges-tasks.md)
 * La cuenta utilizada para conectarse a Microsoft® Power Automate es la propietaria del flujo de Power Automate configurada para recibir datos del formulario adaptable
 
@@ -140,6 +140,14 @@ Haga clic en `Add permissions` para guardar los permisos.
 1. En la página Publicar, seleccione **[!UICONTROL Todas las configuraciones]** y seleccione **[!UICONTROL Publicar]**. Publicar las configuraciones de nube de Power Automate Dataverse y Power Automate Flow Service.
 
 Su instancia de Forms as a Cloud Service ahora está conectada con Microsoft® Power Automate. Ahora puede enviar datos de formularios adaptables a un flujo de Power Automate.
+
+>[!IMPORTANT]
+>
+>Los tokens utilizados para la conexión de Microsoft® Power Automate caducan al cabo de 90 días.
+>
+> Para mantener la integración en funcionamiento, volver a autenticar y volver a publicar las configuraciones de nube de Microsoft® Power Automate Dataverse y Microsoft® Power Automate Flow Service antes o cuando caduque el token, siga los pasos documentados en [Publicar las configuraciones de nube de Microsoft® Power Automate Dataverse y Microsoft® Power Automate Flow Service](#publish-microsoft-power-automate-dataverse-cloud-configuration).
+>
+> Para obtener más información sobre las directivas de duración de tokens, consulte la [documentación de Microsoft Entra sobre las duraciones de tokens configurables](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens). Si el token no se renueva, es posible que los envíos de formularios a Power Automate no se realicen correctamente.
 
 ## Utilizar la acción de envío Invocar un flujo de Microsoft® Power Automate para enviar datos a un flujo de Power Automate {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
