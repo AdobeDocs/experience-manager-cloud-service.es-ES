@@ -3,13 +3,13 @@ title: Información general del agente de desarrollo
 description: Obtenga información sobre cómo el agente de desarrollo de AEM analiza las canalizaciones con errores en Cloud Manager y los registros de compilación para sugerir correcciones de código y acelerar la depuración.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 30b715d4e43bf83016622e3cf13f100062a1c08d
+exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
+source-git-commit: eeaa119711b480197b5807b85eb9c566a735f270
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
-
 
 # Introducción al agente de desarrollo {#development-agent-overview}
 
@@ -17,7 +17,7 @@ El agente de desarrollo ayuda a los desarrolladores y administradores de AEM a c
 
 En la actualidad, el agente puede recuperar los estados de canalización y ayudarle a solucionar errores en los pasos de generación sugiriendo correcciones, lo que ahorra tiempo al depurar implementaciones de AEM as a Cloud Service en entornos de desarrollo, fase y producción. Examina los registros de generación y el código relacionado para recomendar una corrección que puede aplicar manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478010?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -30,6 +30,8 @@ En la actualidad, el agente puede recuperar los estados de canalización y ayuda
 -->
 
 Para acceder a este agente, consulte las [notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) para obtener instrucciones sobre cómo inscribirse en el programa beta y asegúrese de indicar su interés en el agente de desarrollo. También puede enviar por correo electrónico comentarios específicos del agente de desarrollo a [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com).
+
+[Siga un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
 
 ## Acceso al agente de desarrollo a través de Cloud Manager {#how-to-access-the-agent}
 
