@@ -31,7 +31,7 @@ En la actualidad, el agente puede recuperar los estados de canalización y ayuda
 
 Para acceder a este agente, consulte las [notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) para obtener instrucciones sobre cómo inscribirse en el programa beta y asegúrese de indicar su interés en el agente de desarrollo. También puede enviar por correo electrónico comentarios específicos del agente de desarrollo a [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com).
 
-[Siga un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
+[Siga un tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
 
 ## Acceso al agente de desarrollo a través de Cloud Manager {#how-to-access-the-agent}
 
