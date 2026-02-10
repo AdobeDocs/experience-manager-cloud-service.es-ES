@@ -3,14 +3,15 @@ title: Habilitar la alternancia de funciones para integrar las funciones de pion
 description: La alternancia de funciones es una funcionalidad de AEM que permite a los administradores habilitar nuevas funciones en un entorno de tiempo de ejecución.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: User, Developer
-source-git-commit: cc4fccc51f487170bf6c14e4b302a8d5912c33a0
+exl-id: 3ad1370a-a399-4fbe-8168-c3a1cee06336
+source-git-commit: c1d62f0dd5a25da7fbeef537e1c28fa8421f42cd
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 5%
+source-wordcount: '404'
+ht-degree: 8%
 
 ---
 
-# Habilitar la alternancia de funciones en el kit de desarrollo de software de Adobe Experience (AEM SDK)
+# Habilitar la alternancia de funciones en el kit de desarrollo de software de Adobe Experience (SDK de AEM)
 
 La alternancia de funciones en AEM permite a los administradores habilitar o deshabilitar funciones en tiempo de ejecución, lo que resulta ideal para administrar las funciones de la versión preliminar y de la versión preliminar sin cambios en el código. Admite despliegues graduales, pruebas A/B y la desactivación rápida de funciones inestables.
 
@@ -34,11 +35,11 @@ Antes de habilitar los alternadores de funciones en la configuración de AEM SDK
 
 * El usuario es miembro del grupo `forms-users`.
 
-* Vaya a `http://<author-instance-url>:portnumber/system/console/bundles` y compruebe si el paquete **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** está presente o no. En caso de que no esté presente, [descargue el paquete desde el vínculo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+* Vaya a `http://<author-instance-url>:portnumber/system/console/bundles` y compruebe si el paquete **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** está presente o no. En caso de que no esté presente, [descargue el paquete desde el vínculo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]s/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.8.jar).
 
   ![Alternar característica](/help/forms/assets/aem-web-console-bundle.png)
 
-### Activar alternancia de función
+### Activar conmutador de función
 
 Siga estos pasos para habilitar los toggles de características en la instancia de AEM SDK:
 
@@ -82,4 +83,3 @@ Los conmutadores de funciones se administran en tiempo de ejecución y son los m
 >[!NOTE]
 >
 > Para habilitar la opción de funciones para el entorno de producción, póngase en contacto con el equipo de asistencia de Adobe.
-
