@@ -4,9 +4,9 @@ description: Obtenga información acerca del reenvío de registros a proveedores
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 41605c0feb5b8cf651ecb2971a05fde12bcb86d8
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2482'
 ht-degree: 3%
 
 ---
@@ -297,13 +297,13 @@ data:
 Se debe utilizar un token SAS para la autenticación. Debe crearse desde la página de firma de acceso compartido, en lugar de desde la página de token de acceso compartido, y debe configurarse con esta configuración:
 
 * Servicios permitidos: se debe seleccionar un blob.
-* Recursos permitidos: el objeto debe estar seleccionado.
-* Permisos permitidos: Write, Add, Create deben estar seleccionados.
+* Recursos permitidos: el objeto y el contenedor deben estar seleccionados.
+* Permisos permitidos: Leer, Escribir, Agregar, Lista, Crear deben estar seleccionados.
 * Una fecha/hora de inicio y de caducidad válidas.
 
 Esta es una captura de pantalla de un ejemplo de configuración de token SAS:
 
-![Configuración del token SAS de Azure Blob](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+![Configuración de token SAS de Azure Blob](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
 Si los registros han dejado de entregarse después de funcionar correctamente anteriormente, compruebe si el token SAS que configuró sigue siendo válido, ya que puede haber caducado.
 
@@ -332,7 +332,7 @@ aemcdn/
 
 Cada archivo contiene varias entradas de registro json, cada una en una línea independiente. Los formatos de entrada de registro se describen en [Registro para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md), y cada entrada de registro también incluye las propiedades adicionales que se mencionan en la sección [Formatos de entrada de registro](#log-formats) a continuación.
 
-#### Registros de Azure Blob Storage AEM {#azureblob-aem}
+#### Registros de AEM de almacenamiento de Azure Blob {#azureblob-aem}
 
 Los registros de AEM (incluido Apache/Dispatcher) aparecen debajo de una carpeta con la siguiente convención de nombres:
 
