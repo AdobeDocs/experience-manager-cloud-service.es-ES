@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 18f270e92bcf41b45946491dbbbde306c2352416
+source-git-commit: e58e1355b923e1da447e3dbcfd0a81086aee3e66
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1018'
 ht-degree: 23%
 
 ---
@@ -90,6 +90,10 @@ La activación de funciones 2026.2.0 proporciona el conjunto completo de funcion
 * GUIDES-36641: Al generar la salida de AEM Sites, los títulos de los mapas que contienen palabras clave y títulos de temas con el elemento `<ph>` no se incluyen en la salida publicada.
 * GUIDES-37837: Al intentar guardar un tema o asignación, la operación puede fallar intermitentemente con un error de No se pudo guardar el archivo, especialmente durante las tareas intensivas de procesamiento de recursos o los flujos de trabajo de traducción que se ejecutan en segundo plano.
 * GUIDES-27774: el informe Lista rota incluye incorrectamente vínculos externos, `keyrefs` válidos y palabras clave que se han resuelto correctamente en el ámbito del mapa actual.
+
+>[!NOTE]
+>
+> Hay un cambio importante en AEM Guides que se debe tener en cuenta: [Se mejoró el manejo de los archivos de solo lectura](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
 
 Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en la versión, consulte la [hoja de ruta de la versión de Experience Manager Guides](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
