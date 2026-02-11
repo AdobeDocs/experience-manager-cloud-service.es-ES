@@ -93,7 +93,7 @@ La activación de funciones 2026.2.0 proporciona el conjunto completo de funcion
 
 >[!NOTE]
 >
-> Hay un cambio importante en AEM Guides que se debe tener en cuenta: [Se mejoró el manejo de los archivos de solo lectura](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
+> Hay un cambio importante en AEM Guides que se debe tener en cuenta: [Se mejoró el manejo de los archivos de solo lectura](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
 
 Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en la versión, consulte la [hoja de ruta de la versión de Experience Manager Guides](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
