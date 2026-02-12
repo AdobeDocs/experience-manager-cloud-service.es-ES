@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
+source-git-commit: 98465743f73f38e2a766657dda8c9ff18ecea856
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '586'
 ht-degree: 11%
 
 ---
@@ -66,7 +66,7 @@ Las plantillas garantizan la coherencia de la marca y ahorran tiempo para los ti
 
 1. Abra la instancia de AEM Forms as a Cloud Service.
 1. Vaya a **Forms > Forms y documentos**, haga clic en **Crear > Comunicación interactiva**.
-1. En el formulario de creación, **seleccione** una plantilla habilitada de la lista desplegable.
+1. En el formulario de creación, **seleccione** una plantilla habilitada del selector de plantillas.
 1. Complete otros detalles como Título, Nombre, Autor, etc.
 1. Haga clic en **Crear** para diseñar la comunicación con la estructura de plantillas seleccionada.
 1. Se abre el Editor IC, donde puede empezar a diseñar la comunicación.
