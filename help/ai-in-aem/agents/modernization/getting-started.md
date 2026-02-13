@@ -3,9 +3,10 @@ title: Introducción a Experience Modernization Agent
 description: Conozca los primeros pasos para aumentar rápidamente la productividad con Experience Modernization Agent mediante Experience Modernization Console.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c80ce5a9fc5f208fd910d5cef72225085248fb4d
+exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
+source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ Conozca los primeros pasos para aumentar rápidamente la productividad con Exper
 
 1. Seleccione un repositorio [Edge Delivery Services](/help/edge/overview.md) para utilizarlo con la consola de modernización de experiencias.
    * Puede ser un proyecto existente de Edge Delivery Services o puede crear uno nuevo siguiendo el [tutorial para desarrolladores](https://www.aem.live/developer/tutorial) con el [repositorio de plantillas.](https://github.com/adobe/aem-boilerplate)
-1. Asegúrese de que la [aplicación GitHub de AEM](https://github.com/apps/aem-aemy) esté instalada en el repositorio.
+1. Asegúrese de que el [Conector de código AEM](https://github.com/apps/aem-code-connector) esté instalado en el repositorio.
    * Esto permite que la consola inspeccione el código.
 1. Asegúrese de que la [aplicación GitHub de sincronización de código de AEM](https://github.com/apps/aem-code-sync) esté instalada en el repositorio.
    * Esto permite a Edge Delivery Services sincronizar su código.
@@ -41,7 +42,7 @@ La consola le solicitará un repositorio la primera vez que inicie sesión.
 ![Primera pantalla de inicio de sesión de la consola](assets/first-sign-on.png)
 
 1. Haga clic en **Conectar repositorio**.
-1. Esto abre la aplicación AEM en una nueva pestaña del explorador. Haga clic en **Autorizar AEM AEMY**.
+1. Se abrirá la aplicación Conector de código de AEM en una nueva pestaña del explorador. Haga clic en **Autorizar conector de código AEM**.
 1. En la consola, seleccione **Propietario**, **Repositorio** y **Selección de rama** y haga clic en **Finalizar compra en el espacio de trabajo**.
    ![Conectando con el proyecto de GitHub](assets/connect-to-github-project.png)
 1. Cuando se le pida **Reemplazar el área de trabajo existente**, haga clic en **Reemplazar área de trabajo**.
