@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2026.02.05 del editor universal
-description: Estas son las notas de la versión 2026.02.05 del editor universal.
+title: Notas de la versión 2026.02.13 del editor universal
+description: Estas son las notas de la versión 2026.02.13 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: d832d202eaf7f74293e2d15cc470b0226e883e13
+source-git-commit: 33239a1725477d3325dc3245bcc99c438eb350c1
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 45%
+source-wordcount: '182'
+ht-degree: 39%
 
 ---
 
 
-# Notas de la versión 2026.02.05 del editor universal {#release-notes}
+# Notas de la versión 2026.02.13 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 5 de febrero de 2026.
+Estas son las notas de la versión del editor universal del 13 de febrero de 2026.
 
 >[!TIP]
 >
@@ -26,8 +26,8 @@ Estas son las notas de la versión del editor universal del 5 de febrero de 2026
 
 ## Novedades {#what-is-new}
 
-* La acción de mover ya está disponible en [el menú contextual.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
-* El RTE ahora admite [pegar como texto.](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
+* Ahora se admiten vínculos de Dynamic Media.
+* Ya están disponibles el esquema y el tipo de datos para crear bloques con [Document Authoring](https://docs.da.live/developers/reference/universal-editor).
 
 ## Funciones de adopción anticipada {#early-adopter}
 
@@ -37,4 +37,6 @@ Si le interesa probar las próximas funciones enumeradas a continuación y compa
 
 ## Otras mejoras {#other-improvements}
 
-* La publicación para vista previa se habilitó para AEM 6.5 al usar el complemento [`xwalk`.](/help/implementing/universal-editor/component-definition.md#plugins)
+* Se ha corregido un problema con las direcciones URL incorrectas para los vídeos.
+* La creación de varios componentes con el mismo nombre ya no devuelve un error 409.
+* El lienzo sin encabezado ahora persiste en las actualizaciones posteriores de un campo en el contenedor.
