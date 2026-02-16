@@ -4,15 +4,13 @@ description: Aprenda a integrar la interfaz de usuario de AEM Forms Associate co
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-hidefromtoc: true
-source-git-commit: b76f6dfe2462cec187d549234e9050f8ca9a8cdf
+exl-id: f946ccea-86d0-4086-8208-9583b8206244
+source-git-commit: 749ad181c7e9e59a0601e0eddd85b0bd0e761f08
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 2%
+source-wordcount: '1074'
+ht-degree: 1%
 
 ---
-
 
 # Integración de la interfaz de usuario asociada en la aplicación
 
@@ -26,13 +24,13 @@ Antes de integrar la interfaz de usuario de Associate con su aplicación, asegú
 
 - Comunicación interactiva creada y publicada
 - Explorador con compatibilidad emergente habilitada
-- Los usuarios de la asociación [deben formar parte del grupo de asociados de formularios](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- Autenticación configurada utilizando cualquier mecanismo de autenticación [admitido por AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/authentication/authentication) (por ejemplo, SAML 2.0, OAuth o controladores de autenticación personalizados)
+- Los usuarios de la asociación [deben formar parte del grupo de asociados de formularios](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Autenticación configurada utilizando cualquier mecanismo de autenticación [admitido por AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (por ejemplo, SAML 2.0, OAuth o controladores de autenticación personalizados)
 
 >[!NOTE]
 >
 >- Este artículo muestra la configuración de autenticación usando SAML 2.0 con [Microsoft Entra ID (Azure AD) como proveedor de identidad](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
->- Para la interfaz de usuario asociada, se requieren configuraciones de SAML adicionales más allá de la configuración estándar explicada en el artículo [Autenticación SAML 2.0](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consulte la sección [Configuraciones adicionales de SAML para la interfaz de usuario asociada](#additional-saml-configurations-for-associate-ui) para obtener más información.
+>- Para la interfaz de usuario asociada, se requieren configuraciones de SAML adicionales más allá de la configuración estándar explicada en el artículo [Autenticación SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consulte la sección [Configuraciones adicionales de SAML para la interfaz de usuario asociada](#additional-saml-configurations-for-associate-ui) para obtener más información.
 
 ### Configuraciones adicionales de SAML para la IU asociada
 
@@ -115,7 +113,11 @@ Esta sección le guiará a través del inicio de la interfaz de usuario de Assoc
 
 Para probar y comprender rápidamente cómo funciona la integración de la interfaz de usuario de Associate, utilice la siguiente página de muestra de HTML. Copie este código en un archivo de HTML y ábralo en su explorador.
 
-Este ejemplo proporciona una interfaz de formulario sencilla en la que puede introducir los detalles de la comunicación interactiva e iniciar la interfaz de usuario de Associate con un solo clic.
+>[!NOTE]
+>
+> Este HTML de ejemplo requiere un ID de CI y un servicio de relleno previo. Puede probarlo con su ID de CI y el servicio de relleno previo de ejemplo &quot;FdmTestData&quot;.&quot;
+
+El ejemplo de HTML proporciona una interfaz de formulario sencilla en la que puede introducir los detalles de la comunicación interactiva e iniciar la interfaz de usuario de Associate con un solo clic.
 
 ```html
 <!DOCTYPE html>
@@ -438,21 +440,28 @@ Ahora está listo para iniciar la interfaz de usuario de Associate mediante la p
 
 1. **Escriba el Id. de CI**: en el campo **Id. de CI**, escriba el identificador de la comunicación interactiva publicada. Este es el único campo obligatorio.
 
-2. **Configurar servicio de relleno previo** (opcional): si desea rellenar previamente la CI con datos dinámicos, escriba el nombre del servicio del modelo de datos de formulario en el campo **Servicio de relleno previo**. Por ejemplo, use `FdmTestData` para datos de ejemplo o `IC-FDM` para datos de prueba.
+1. **Configurar servicio de relleno previo**: Si desea rellenar previamente la CI con datos dinámicos, escriba el nombre del servicio del modelo de datos de formulario en el campo **Servicio de relleno previo**. Por ejemplo, use `FdmTestData` para datos de ejemplo.
 
-3. **Agregar parámetros de servicio** (opcional): en el campo **Parámetros de servicio (JSON)**, escriba un objeto JSON con los parámetros que requiere su servicio de relleno previo. Por ejemplo:
+   ![IU de muestra de HTML](/help/forms/assets/samplehtmlui.png)
+
+1. **Haga clic en Iniciar la interfaz de usuario asociada**: Haga clic en el botón **Iniciar la interfaz de usuario asociada**. Se abrirá una nueva ventana del explorador con la interfaz de usuario de Associate, precargada con la comunicación interactiva.
+
+Introduzca los datos y la interfaz de usuario asociada aparecerá como se muestra a continuación:
+
+![IU asociada](/help/forms/assets/associateui.png)
+
+>[!NOTE]
+>
+> Si la ventana no se abre, compruebe que el explorador permite ventanas emergentes para este sitio.
+
+
+<!--**Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
    ```json
    {"customerId": "101", "accountNumber": "ACC-98765"}
    ```
 
-4. **Establecer opciones de PDF** (opcional): en el campo **Opciones (JSON)**, configure opciones de procesamiento como configuración regional, archivos adjuntos o de accesibilidad.
-
-5. **Haga clic en Iniciar la interfaz de usuario asociada**: Haga clic en el botón **Iniciar la interfaz de usuario asociada**. Se abrirá una nueva ventana del explorador con la interfaz de usuario de Associate, precargada con la comunicación interactiva.
-
->[!NOTE]
->
-> Si la ventana no se abre, compruebe que el explorador permite ventanas emergentes para este sitio.
+  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
 
 ## Solución de problemas
 
