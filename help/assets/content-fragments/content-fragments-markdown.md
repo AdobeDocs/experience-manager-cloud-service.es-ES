@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: 6173fc8a42525dcde435289da8ef8a533ea96de6
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 76%
+ht-degree: 69%
 
 ---
 
@@ -38,7 +38,7 @@ Puede definir lo siguiente:
 
 ## Anotación de encabezado {#heading-notation}
 
-Para crear un encabezado, coloque una almohadilla (#) delante del encabezado. Se utiliza una almohadilla (#) para un H1, dos (##) para un H2 y así sucesivamente. Se pueden usar hasta seis almohadillas. Por ejemplo:
+Para crear un encabezado, coloque el símbolo de almohadilla (#) delante del encabezado. Se utiliza un símbolo hash (#) para un H1, dos símbolos hash (##) para un H2 y así sucesivamente. Se pueden usar hasta seis símbolos hash. Por ejemplo:
 
     `## This is an H2`
 
@@ -116,17 +116,13 @@ Puede citar texto añadiendo el símbolo > antes del texto. Por ejemplo:
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 Puede tener citas de bloque anidadas. Por ejemplo:
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -136,7 +132,7 @@ Puede tener citas de bloque anidadas. Por ejemplo:
 
 Puede crear listas ordenadas y desordenadas.
 
-Para crear una lista desordenada, utilice el símbolo &ast; antes de los elementos de la lista. Por ejemplo:
+Para crear una lista desordenada, utilice el símbolo &amp;ast; (asterisco) antes de los elementos de la lista. Por ejemplo:
 
     `* item in list`
 
