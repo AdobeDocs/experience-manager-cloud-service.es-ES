@@ -4,10 +4,10 @@ description: Aprenda a generar una PDF de envío a partir de los envíos de form
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ab11addd98629499726c011cc0faca5666de26fb
+source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
 workflow-type: tm+mt
-source-wordcount: '3233'
-ht-degree: 44%
+source-wordcount: '3208'
+ht-degree: 45%
 
 ---
 
@@ -166,12 +166,10 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
   Select the option to create an Adaptive Form without a form model. When the option is selected, the Document of Record is automatically generated for your Adaptive Form.
 
 * **[Associate form template as a Document of Record template](creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)**
-  
   Select the option to use an XFA Form as a template for Document of Record. 
 
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
-  
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -354,8 +352,6 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
       * **Ocultar descripción de paneles**: al establecer la propiedad, se excluye la descripción del panel o la tabla de la PDF de envío. Aplicable para paneles y tablas.
 
-
-
    1. **Propiedades del campo de formulario**:
 
       * **Mostrar solo los valores seleccionados para los componentes Casilla de verificación y Botón de radio**: al configurar esta propiedad solo se muestran los valores seleccionados de la casilla de verificación y el botón de radio en [!UICONTROL Documento de registro].
@@ -363,35 +359,33 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
       * **Alineación de opciones**: puede seleccionar la alineación deseada (Horizontal, Vertical o Igual que el formulario adaptable) para establecer la alineación de los campos, como la casilla de verificación o el botón de radio, que se mostrarán en [!UICONTROL Documento de registro]. De forma predeterminada, la alineación vertical está establecida para los campos de [!UICONTROL Documento de registro]. Al configurar las propiedades desde la variable [!UICONTROL Propiedades del campo de formulario] del documento, se sobrescriben las propiedades establecidas en la variable [!UICONTROL Alineación de elementos] para los campos de un formulario adaptable. En caso de que seleccione la opción [!UICONTROL Igual que el formulario adaptable], se utiliza la alineación tal y como está configurada en una instancia de autor del formulario adaptable para los campos de [!UICONTROL Documento de registro].
       * **Número de opciones de alineación horizontal**:You puede establecer el número de opciones que se mostrarán en la PDF de envío para la alineación horizontal.
 
-
-
    1. **Propiedades de página maestra**:
 
       * **Imagen del logotipo**: puede elegir usar la imagen del logotipo en el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
       * **Título del formulario**: título del documento de registro.
-* **Texto de encabezado**: Texto que aparece en la sección de encabezado del PDF de envío.
-* **Etiqueta de exención de responsabilidad**: Etiqueta de exención de responsabilidad.
-* **Descargo de responsabilidad**: texto que especifica el ámbito de derechos y obligaciones en la PDF de envío.
-* **Texto de exención de responsabilidad**: Texto de exención de responsabilidad.
+      * **Texto de encabezado**: Texto que aparece en la sección de encabezado del PDF de envío.
+      * **Etiqueta de descargo de responsabilidad**: etiqueta de descargo de responsabilidad.
+      * **Descargo de responsabilidad**: texto que especifica el ámbito de derechos y obligaciones en la PDF de envío.
+      * **Texto de descargo de responsabilidad**: texto del descargo de responsabilidad.
 
-      &lt;!—![Propiedades de la página maestra](/help/forms/assets/dorpropertiesimg.png)—>
-     
-     >[!NOTE]
-     >
-     >Si está utilizando una plantilla de formulario adaptable creada con una versión de Designer anterior a la 6.3, para que las propiedades Color de énfasis y Familia de fuentes funcionen, asegúrese de que lo siguiente esté presente en su plantilla de formulario adaptable bajo el subformulario raíz:
-     
-     &quot;xml
-     &lt;proto>
-     &lt;font typeface=&quot;Arial&quot;/>
-     &lt;fill>
-     &lt;color value=&quot;4,166,203&quot;/>
-     &lt;/fill>
-     &lt;edge>
-     &lt;color value=&quot;4,166,203&quot;/>
-     &lt;/edge>
-     &lt;/proto> 
-&quot;    
-  
+      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
+
+      >[!NOTE]
+      >
+      >Si está utilizando una plantilla de formulario adaptable creada con una versión del diseñador anterior a la 6.3, para que las propiedades Color de énfasis y Familia de fuentes funcionen, asegúrese de que lo siguiente esté presente en su plantilla de formulario adaptable bajo el subformulario raíz:
+
+      ```xml
+      <proto>
+      <font typeface="Arial"/>
+      <fill>
+      <color value="4,166,203"/>
+      </fill>
+      <edge>
+      <color value="4,166,203"/>
+      </edge>
+      </proto>
+      ```
+
 1. Para guardar los cambios de personalización de marca, seleccione **[!UICONTROL Listo]**.
 
 >[!NOTE]
@@ -444,4 +438,5 @@ La configuración del componente de documento de registro está disponible en su
 
 **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
 
-!->>
+-->
+
