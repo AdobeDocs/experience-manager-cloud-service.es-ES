@@ -1,24 +1,24 @@
 ---
-title: Etiquetas de marcado HTML compatibles en el documento de registro
-description: La guía de referencia para etiquetas de marcado de HTML ahora se admite en la generación de documentos de registro, incluidas las consideraciones de comportamiento de procesamiento y accesibilidad
+title: Etiquetas de marcado HTML compatibles en el PDF de envío (anteriormente, documento de registro)
+description: Guía de referencia para etiquetas de marcado de HTML admitida al generar un PDF de envío (anteriormente, documento de registro), incluidas las consideraciones de comportamiento de procesamiento y accesibilidad.
 feature: Adaptive Forms
 role: Developer, User
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
+source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 8%
+source-wordcount: '454'
+ht-degree: 6%
 
 ---
 
 
-# Etiquetas de marcado HTML compatibles en el documento de registro
+# Etiquetas de marcado HTML compatibles en el PDF de envío (anteriormente, documento de registro)
 
 ## ¿Qué abarca esta referencia?
 
-AEM Forms ahora admite etiquetas de marcado de HTML en campos de texto enriquecido al generar PDF con documento de registro (DoR). En esta guía se explica qué etiquetas de marcado de HTML se pueden utilizar de forma segura en Forms adaptable y cómo se representan en los documentos generados.
+AEM Forms ahora admite etiquetas de marcado de HTML en campos de texto enriquecido al generar un PDF de PDF de envío (anteriormente, documento de registro). En esta guía se explica qué etiquetas de marcado de HTML se pueden utilizar de forma segura en Forms adaptable y cómo se representan en el PDF de envío generado.
 
-Si agrega contenido de texto enriquecido (como formato de negrita, listas o vínculos) a los formularios, es importante comprender qué etiquetas son compatibles y las limitaciones que pueden tener. Esta referencia le ayuda a elegir las etiquetas adecuadas para garantizar que el contenido se muestra correctamente y permanece accesible en el documento de registro.
+Si agrega contenido de texto enriquecido (como formato de negrita, listas o vínculos) a los formularios, es importante comprender qué etiquetas son compatibles y las limitaciones que pueden tener. Esta referencia le ayuda a elegir las etiquetas adecuadas para garantizar que el contenido se muestra correctamente y permanece accesible en la PDF de envío.
 
 ## Antes de comenzar
 
@@ -27,18 +27,18 @@ Si agrega contenido de texto enriquecido (como formato de negrita, listas o vín
 Debe estar familiarizado con lo siguiente:
 
 - Sintaxis básica de marcado de HTML
-- [Documento de aspectos básicos de registro](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Aspectos básicos de PDF (anteriormente Documento de registro) de envío](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - Principios de accesibilidad y directrices WCAG
 - Requisitos de accesibilidad de PDF
 - Componentes de formularios adaptables que aceptan marcado de HTML
 
 ### Consideraciones
 
-El documento de registro (DoR) puede ser una PDF etiquetada, que ayuda a garantizar la accesibilidad y la estructura adecuada para las tecnologías de asistencia. Para habilitar la salida de PDF etiquetado, [establezca la propiedad XCI `config/present/pdf/tagged` en `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Después de generar el PDF, es importante comprobar que las etiquetas de accesibilidad se aplican correctamente. Puede usar [Adobe Acrobat para comprobar las etiquetas de accesibilidad](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) y asegurarse de que el documento cumpla los estándares de accesibilidad.
+El PDF de envío (anteriormente, documento de registro) puede ser un PDF etiquetado, que ayuda a garantizar la accesibilidad y la estructura adecuada para las tecnologías de asistencia. Para habilitar la salida de PDF etiquetado, [establezca la propiedad XCI `config/present/pdf/tagged` en `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Después de generar el PDF, es importante comprobar que las etiquetas de accesibilidad se aplican correctamente. Puede usar [Adobe Acrobat para comprobar las etiquetas de accesibilidad](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) y asegurarse de que el documento cumpla los estándares de accesibilidad.
 
 ### Novedades
 
-La compatibilidad con texto enriquecido en el documento de registro es una mejora reciente. Anteriormente, el contenido de texto enriquecido aparecía como texto sin formato en documentos generados. Esta nueva funcionalidad permite que el contenido formateado se represente correctamente en las salidas de PDF.
+La compatibilidad con texto enriquecido en PDF de envío es una mejora reciente. Anteriormente, el contenido de texto enriquecido aparecía como texto sin formato en documentos generados. Esta nueva funcionalidad permite que el contenido formateado se represente correctamente en las salidas de PDF.
 
 ## Referencia de compatibilidad con etiquetas de HTML
 
@@ -46,7 +46,7 @@ La compatibilidad con texto enriquecido en el documento de registro es una mejor
 
 Estas etiquetas son totalmente compatibles con la creación adecuada de nodos de accesibilidad:
 
-| Etiqueta de HTML | Descripción | Documento de compatibilidad de registro | Accesibilidad | Ejemplo |
+| Etiqueta de HTML | Descripción | Compatibilidad con PDF de envío | Accesibilidad | Ejemplo |
 |----------|-------------|-------------|---------------|---------|
 | `<p>` | Párrafo | Sí | Totalmente compatible: nodo `<P>` correcto | `<p>This is a paragraph.</p>` |
 | `<br/>` | Salto de línea | Sí | Totalmente compatible: en el nodo `<P>` | `<p>Line 1<br/>Line 2</p>` |
@@ -135,7 +135,7 @@ Estas etiquetas no son compatibles y no se renderizarán correctamente:
 ## Contenido relacionado
 
 
-- [Generar documento de registro para formularios adaptables](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-- [Generar documento de registro para componentes principales](/help/forms/generate-document-of-record-core-components.md)
-- [Personalización de la plantilla del documento de registro](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
+- [Generar PDF de envío (anteriormente documento de registro) para Forms adaptable](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Generar PDF de envío para componentes principales](/help/forms/generate-document-of-record-core-components.md)
+- [Personalización de plantillas de PDF de envío](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
 

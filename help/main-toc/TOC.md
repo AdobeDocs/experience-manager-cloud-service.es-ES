@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 35d6f1bf1387273bda1ea8d8a873f47cb3fb64a5
+source-git-commit: 6f919532c9764e4f0c34b89115b058c90545034f
 workflow-type: tm+mt
-source-wordcount: '6993'
+source-wordcount: '6998'
 ht-degree: 95%
 
 ---
@@ -427,7 +427,7 @@ ht-degree: 95%
          + [Creación de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [Administrar páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [Propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md)
-         + [Edición de las propiedades de página  &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
+         + [Edición de las propiedades de página  ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
          + [Previsualizar páginas](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [Versiones de página](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -621,7 +621,7 @@ ht-degree: 95%
       + [Creación y uso compartido de carpetas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
-      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
       + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
    + Configuración, administración y ampliación de [!DNL Assets] {#admin}
@@ -836,8 +836,8 @@ ht-degree: 95%
          + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuración de almacenamiento de  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Conectar el formulario adaptable a la base de datos SQL de Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configuración de los servicios en la nube de Salesforce](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
@@ -881,8 +881,8 @@ ht-degree: 95%
             + [Creación de temáticas para un formulario adaptable: componentes principales](/help/forms/using-themes-in-core-components.md)
             + [Creación de una plantilla de formulario adaptable basado en componentes principales](/help/forms/template-editor-core-components.md)
             + [Crear un formulario adaptable (componentes principales) basado en plantillas de formulario XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
-            + [Generar documento de registro para formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
-            + [Etiquetas de marcado HTML compatibles en el documento de registro](/help/forms/html-markup-tags-support-in-document-of-record.md)
+            + [Generar PDF de envío (anteriormente documento de registro) para Forms adaptable](/help/forms/generate-document-of-record-core-components.md)
+            + [Etiquetas de marcado HTML compatibles en Submission PDF](/help/forms/html-markup-tags-support-in-document-of-record.md)
             + [Utilizar la traducción automática o la traducción humana para traducir un formulario adaptable](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurar la página de redireccionamiento o el mensaje de agradecimiento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Crear formularios con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
@@ -966,7 +966,7 @@ ht-degree: 95%
             + [Añadir información de datos de usuario a los metadatos de envío de formularios](/help/forms/form-submission-metadata.md)
             + [API para invocar el servicio del modelo de datos de formulario (FDM) desde formularios adaptables](/help/forms/invoke-form-data-model-services.md)
          + [Rellene previamente los campos del formulario adaptable](/help/forms/prepopulate-adaptive-form-fields.md)
-         + [Generar documento de registro](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [Generar PDF de envío (anteriormente documento de registro)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [Agregar la compatibilidad con nuevas configuraciones regionales a un formulario adaptable](/help/forms/supporting-new-language-localization.md)
          + Adición o mejora de metadatos  {#manage-metadata}
             + [Adición, eliminación o edición de metadatos de un formulario adaptable](/help/forms/manage-form-metadata.md)
@@ -1278,7 +1278,7 @@ ht-degree: 95%
       + Creación{#authoring}
          + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=es)
          + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
-      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=es)
+      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
    + Selector de fragmentos de contenido {#content-fragment-selector}
       + [Selector de fragmentos de contenido de Micro-Frontend: información general](/help/headless/content-fragment-selector/overview.md)
