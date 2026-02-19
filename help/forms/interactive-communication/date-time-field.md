@@ -4,23 +4,19 @@ description: El componente Campo de fecha y hora del Editor de comunicaciones in
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 8%
+source-wordcount: '676'
+ht-degree: 2%
 
 ---
-
 
 # Componente de campo de fecha y hora en el editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 ## &#x200B;1. Introducción
 
@@ -141,4 +137,3 @@ Los autores pueden combinar el campo con contenedores de diseño, validaciones o
 - Enlace el campo a una ruta de esquema válida para garantizar una captura y un procesamiento de datos adecuados.
 
 El componente Campo de fecha y hora del editor de comunicaciones interactivas es un componente potente y fácil de usar que optimiza la entrada basada en el tiempo. Con la configuración correcta de estilo, administración de datos y controles de diseño, permite experiencias de formulario limpias, fiables e intuitivas tanto para usuarios como para sistemas back-end.
-

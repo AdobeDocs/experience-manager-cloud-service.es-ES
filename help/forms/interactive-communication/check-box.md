@@ -4,23 +4,19 @@ description: El componente Casilla de verificación del Editor de comunicaciones
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 8%
+source-wordcount: '619'
+ht-degree: 2%
 
 ---
-
 
 # Componente Casilla de verificación en el editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 ## &#x200B;1. Introducción
 
@@ -123,5 +119,3 @@ Las casillas de verificación se pueden colocar dentro de cuadrículas o paneles
 - Utilice reglas de visibilidad cuando las casillas de verificación dependan de entradas o condiciones anteriores.
 
 El componente Casilla de verificación del editor de comunicaciones interactivas es un componente simple pero esencial para las entradas binarias. Gracias a su compatibilidad con el estilo, la presencia condicional y el enlace de datos flexible, desempeña un papel clave en la mejora de la interactividad y el control de usuario en los formularios digitales inteligentes. Cuando se implementan con etiquetas reflexivas, un estilo coherente y una integración de datos significativa, las casillas de verificación contribuyen de manera significativa a una experiencia de formulario sencilla e intuitiva.
-
-

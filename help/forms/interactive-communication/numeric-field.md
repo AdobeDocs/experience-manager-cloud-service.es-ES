@@ -4,23 +4,19 @@ description: Componente de campo numérico en el editor de comunicaciones intera
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 1f6bda20-7bce-4cfd-9985-f8b49d6e50e0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 7%
+source-wordcount: '698'
+ht-degree: 2%
 
 ---
-
 
 # Componente de campo numérico en el editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 ## &#x200B;1. Introducción
 
@@ -131,5 +127,3 @@ Los autores pueden colocar campos numéricos dentro de contenedores de diseño o
 - Mantenga un aspecto y una tipografía coherentes para que coincidan con las directrices de marca.
 
 El componente **Campo numérico** del editor de comunicaciones interactivas es una herramienta precisa y confiable para la recopilación de datos basados en dígitos. Gracias a sus sólidas opciones de formato, controles de visibilidad y enlace de datos, garantiza que las entradas numéricas se capturan sin problemas y se integran perfectamente en los formularios digitales. Cuando se diseña y configura correctamente, mejora significativamente la capacidad de uso del formulario y la precisión general de los datos.
-
-

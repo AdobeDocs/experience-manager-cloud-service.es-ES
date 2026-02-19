@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 7f366823e1baeda8eacd8c92fe23300d10ec828a
+exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 8%
+source-wordcount: '557'
+ht-degree: 1%
 
 ---
-
 
 # Crear versiones y comentarios en el editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 Las comunicaciones interactivas (CI) permiten a las organizaciones crear documentos dinámicos basados en datos para una comunicación personalizada con los clientes. Para admitir una mejor colaboración, administración y flujos de trabajo de publicación controlados, el editor de comunicaciones interactivas proporciona funciones de versiones, revisión y comentarios.
 

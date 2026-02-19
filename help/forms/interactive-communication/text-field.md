@@ -4,23 +4,19 @@ description: Componente Campo de texto en el editor de comunicaciones interactiv
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 7%
+source-wordcount: '671'
+ht-degree: 1%
 
 ---
-
 
 # Componente Campo de texto en el editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 ## &#x200B;1. Introducción
 
@@ -133,5 +129,3 @@ Los autores pueden colocar el campo en subformularios o cuadrículas de diseño 
 - Enlace directamente al modelo de datos siempre que sea posible para un mantenimiento más sencillo.
 
 El componente Campo de texto del editor de CI es un bloque de creación versátil que optimiza la captura de datos. Cuando se configura cuidadosamente, con una tipografía bien elegida, etiquetas claras, una validación adecuada y un enlace de datos sólido, ofrece una experiencia fácil de usar y datos fiables para el procesamiento posterior.
-
-

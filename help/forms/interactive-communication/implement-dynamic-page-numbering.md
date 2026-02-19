@@ -4,23 +4,19 @@ description: La numeración de páginas dinámica en el editor de comunicaciones
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 14%
+source-wordcount: '364'
+ht-degree: 4%
 
 ---
-
 
 # Numeración dinámica de páginas en el editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 ## Introducción
 

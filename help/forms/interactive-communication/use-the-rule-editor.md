@@ -4,13 +4,13 @@ description: La creación de reglas en el Editor de comunicaciones interactivas 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: b2b85d1e802c7f287b875d53a9347ca07ea2b806
+exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 10%
+source-wordcount: '449'
+ht-degree: 2%
 
 ---
-
 
 # Editor de reglas en el editor de comunicaciones interactivas
 
@@ -18,11 +18,6 @@ ht-degree: 10%
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 
 ## &#x200B;1. Introducción
@@ -110,6 +105,3 @@ El editor de reglas se utiliza ampliamente para garantizar que los formularios y
 
 
 Al configurar las reglas con cuidado, los autores pueden crear comunicaciones que respondan de forma inteligente a los datos y a las acciones del usuario, lo que optimiza los procesos, reduce los errores y ofrece una experiencia personalizada y sin problemas.
-
-
-

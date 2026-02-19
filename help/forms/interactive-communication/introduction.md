@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 13%
+source-wordcount: '413'
+ht-degree: 4%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 13%
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 ## ¿Qué es el editor de comunicaciones interactivas?
 
@@ -58,7 +54,7 @@ El editor de comunicaciones interactivas (CI) está diseñado para ofrecer efici
 
 ## Incorporación
 
-La capacidad de comunicación interactiva (CI) está disponible a través del programa de acceso anticipado (EA). Para solicitar acceso, envíe un correo electrónico a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde su ID de correo electrónico oficial con su ID de entorno y el ID de organización. Una vez que Adobe confirme su inscripción, siga la [Documentación del &#x200B;](/help/forms/setup-forms-cloud-service.md) para habilitar la comunicación interactiva en su entorno de AEM Forms.
+La capacidad de comunicación interactiva (CI) está disponible a través del programa de acceso anticipado (EA). Para solicitar acceso, envíe un correo electrónico a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde su ID de correo electrónico oficial con su ID de entorno y el ID de organización. Una vez que Adobe confirme su inscripción, siga la [Documentación del ](/help/forms/setup-forms-cloud-service.md) para habilitar la comunicación interactiva en su entorno de AEM Forms.
 
 ## Próximos pasos
 

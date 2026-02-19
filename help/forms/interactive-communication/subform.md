@@ -4,23 +4,19 @@ description: El componente Subformulario del Editor de comunicaciones interactiv
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 60809974-1a39-4e69-9aa5-df9936a26362
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 10%
+source-wordcount: '479'
+ht-degree: 2%
 
 ---
-
 
 # Componente Subformulario en el editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 ## &#x200B;1. Introducción
 
@@ -110,5 +106,3 @@ Los subformularios también se pueden utilizar como contenedores para la alineac
 - Aplique reglas de visibilidad condicionales para optimizar la experiencia del usuario en formularios complejos.
 
 El componente **Subformulario** del editor de comunicaciones interactivas proporciona una forma eficaz de estructurar y controlar diseños de formulario complejos. Tanto si se organizan los campos de entrada como si se administra el contenido dinámico o se habilita el diseño modular, los subformularios mejoran tanto la facilidad de uso como el mantenimiento en todas las plantillas de documento.
-
-

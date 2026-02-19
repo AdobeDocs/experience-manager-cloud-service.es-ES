@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: fe99fc4ddc1e2b3bdd1b2a5b583f2b4cb681dee9
+exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 12%
+source-wordcount: '384'
+ht-degree: 3%
 
 ---
-
 
 # Copiar y pegar en el editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 La función Copiar y pegar del editor de comunicaciones interactivas (CI) permite a los autores duplicar una comunicación interactiva existente y reutilizarla en una carpeta o ubicación diferente. Esta capacidad ayuda a los equipos a trabajar de forma eficaz al habilitar varias variaciones de una CI sin modificar la versión original.
 
@@ -88,4 +84,3 @@ Después de pegar la comunicación interactiva:
 - Revise los enlaces de datos y los canales de salida después de la copia para garantizar su corrección.
 
 La función Copiar y pegar de la comunicación interactiva simplifica la reutilización y la personalización al permitir a los autores duplicar los IC existentes y modificarlos de forma independiente. Permite un desarrollo más rápido, una experimentación más segura y una entrega de comunicaciones coherentes, sin arriesgarse a realizar cambios en la comunicación interactiva original.
-

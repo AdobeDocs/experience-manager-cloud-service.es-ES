@@ -4,23 +4,19 @@ description: Bloqueo de plantilla en el Editor de comunicaciones interactivas pe
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 10%
+source-wordcount: '465'
+ht-degree: 2%
 
 ---
-
 
 # Bloqueo de plantilla en el Editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 ## &#x200B;1. Introducción
 
@@ -63,7 +59,7 @@ Cuando se aplica, los autores no pueden:
 Siga los siguientes pasos para aplicar bloqueos de contenido o diseño en la plantilla de comunicación interactiva (CI):
 
 1. Abra La Plantilla
-Abra o cree una plantilla, siga la guía [Crear una plantilla de comunicación interactiva](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Abra o cree una plantilla, siga la guía [Crear una plantilla de comunicación interactiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. Seleccione el componente
 Haga clic en el componente (cuadro de texto, imagen o subformulario) que desee restringir.

@@ -4,23 +4,19 @@ description: El objeto de campo de fecha del Editor de comunicaciones interactiv
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: f8cc1dd1-3b55-4cd9-b051-959c88195eb4
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 8%
+source-wordcount: '643'
+ht-degree: 2%
 
 ---
-
 
 # Objeto de campo de fecha en el editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 ## &#x200B;1. Introducción
 
@@ -139,5 +135,3 @@ Los autores pueden colocar el campo de fecha dentro de contenedores de diseño o
 - Oculte de forma dinámica los campos de fecha no relevantes mediante reglas de visibilidad.
 
 El objeto **Campo de fecha** del editor de comunicaciones interactivas es una potente herramienta para capturar datos con distinción de tiempo de forma precisa y sencilla. Cuando se diseña meticulosamente y se conecta a rutas de datos significativas, admite una experiencia de usuario perfecta y un procesamiento eficiente de entradas basadas en el tiempo.
-
-

@@ -4,23 +4,19 @@ description: Vista previa de PDF en el Editor de comunicaciones interactivas con
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 14%
+source-wordcount: '327'
+ht-degree: 3%
 
 ---
-
 
 # Vista previa de PDF en el editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 La función de vista previa de PDF permite a los usuarios obtener una vista previa de las comunicaciones interactivas de tres formas diferentes: sin datos, con datos locales basados en JSON o con datos de muestra del modelo de datos configurado.
 
@@ -50,7 +46,7 @@ Obtenga una vista previa de las comunicaciones interactivas sin datos, datos loc
 
 +++&#x200B;2. Vista previa con datos JSON locales
 
-2.1. Prepare un archivo JSON estructurado. Como referencia, puede copiar los datos de ejemplo del esquema JSON [(FDM)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizado para la comunicación.
+2.1. Prepare un archivo JSON estructurado. Como referencia, puede copiar los datos de ejemplo del esquema JSON [(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizado para la comunicación.
 
 2.2. En el Editor IC, vaya a **Vista previa de PDF** > Uso de datos locales.
 
@@ -69,4 +65,3 @@ Obtenga una vista previa de las comunicaciones interactivas sin datos, datos loc
 ![Buscar documento CI](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
-

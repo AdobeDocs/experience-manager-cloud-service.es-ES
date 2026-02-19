@@ -4,23 +4,19 @@ description: Cree fragmentos de comunicación interactiva en AEM Forms para crea
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
+exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 10%
+source-wordcount: '493'
+ht-degree: 3%
 
 ---
-
 
 # Enlace de datos en el editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 ## &#x200B;1. Introducción
 
@@ -83,4 +79,3 @@ Los autores suelen seleccionar el FDM al principio del proyecto, asignar visualm
 - **Proteger datos confidenciales:** Aplicar enmascaramiento, cifrado y acceso con menos privilegios para PII o detalles de pago.
 
 Al configurar el enlace de datos con cuidado, los autores crean un puente fiable entre el diseño y los datos, lo que acelera la creación de comunicaciones, garantiza la precisión y ofrece experiencias altamente personalizadas a escala.
-

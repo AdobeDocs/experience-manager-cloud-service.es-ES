@@ -4,23 +4,19 @@ description: El componente Botón de opción del Editor de comunicaciones intera
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 9%
+source-wordcount: '571'
+ht-degree: 2%
 
 ---
-
 
 # Componente Botón de opción del editor de comunicaciones interactivas
 
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 ## &#x200B;1. Introducción
 
@@ -118,5 +114,3 @@ Los autores pueden agrupar los botones de opción relacionados y colocarlos dent
 - Aplique un espaciado y una alineación coherentes para una mejor claridad visual, especialmente en diseños aptos para móviles.
 
 El componente Botón de opción del editor de comunicaciones interactivas es un componente de entrada fundamental que ofrece una toma de decisiones limpia y estructurada para los usuarios finales. Cuando se configura con etiquetas claras, espaciado cuidadoso y enlace de datos, garantiza una recopilación de datos confiable y una experiencia de usuario más fluida para formularios, encuestas y flujos de trabajo de incorporación.
-
-

@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 18%
+source-wordcount: '277'
+ht-degree: 6%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 18%
 >[!NOTE]
 >
 > La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
-
->[!IMPORTANT]
->
-> **Documentación sujeta a cambios**: esta biblioteca de indicaciones se está probando actualmente con el producto y está sujeta a actualizaciones y revisiones. Las indicaciones, ejemplos y prácticas recomendadas pueden cambiar a medida que Forms Experience Builder sigue evolucionando durante el programa para primeros usuarios.
 
 Las plantillas de comunicación interactiva de AEM permiten a los usuarios definir estructuras de diseño reutilizables, como encabezados, pies de página, logotipos y estilo predeterminado. Estas plantillas sirven de base para crear comunicaciones coherentes, de marca y eficientes.
 
