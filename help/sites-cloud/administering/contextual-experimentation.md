@@ -3,9 +3,11 @@ title: Experimentación contextual en AEM as a Cloud Service
 description: Aprenda a utilizar el complemento de experimentación para añadir capacidades de experimentación al sitio.
 feature: Administering
 role: Admin
-source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
+exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
+source-git-commit: eed3a4866e3018b2ff6bc6e5c201523ab271c35f
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -33,7 +35,7 @@ Para los sitios que se ejecutan en Adobe Experience Manager, existe el **complem
 
 El complemento de experimentación se usa en el contexto de [Edge Delivery Services](/help/edge/overview.md), por lo que necesitarás una cuenta de Github, un repositorio de contenido como SharePoint o Google Drive, y también necesitarás [AEM Sidekick](https://www.aem.live/docs/sidekick). Consulte también la [Página de introducción - Tutorial para desarrolladores de Universal Editor](https://www.aem.live/developer/tutorial) y [Introducción - Tutorial para desarrolladores](https://www.aem.live/developer/tutorial).
 
-Después de configurar todo, **vea este vídeo** titulado [Experimentación instantánea](https://business.adobe.com/es/products/experience-manager/sites/testing-optimization.html) para ver una breve demostración del funcionamiento del complemento de experimentación.
+Después de configurar todo, **vea este vídeo** titulado [Experimentación instantánea](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) para ver una breve demostración del funcionamiento del complemento de experimentación.
 
 ## Términos más utilizados {#frequently-used-terms}
 
