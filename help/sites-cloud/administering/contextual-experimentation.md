@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: eed3a4866e3018b2ff6bc6e5c201523ab271c35f
+source-git-commit: ef20e6df5e19596ea742e6ac267b1f37b7517cfa
 workflow-type: tm+mt
 source-wordcount: '1805'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 La experimentación es la práctica de probar el diseño, la funcionalidad y el código de su sitio para mejorar el rendimiento y hacer que el sitio sea más eficaz y optimizado. Esto se logra cambiando el contenido o la funcionalidad, comparando los resultados con una versión anterior y seleccionando las mejoras que tienen efectos mensurables.
 
-Cuando se hace correctamente, es un patrón potente para mejorar las conversiones, la participación y la experiencia del visitante. En general, hay un par de problemas que se deben evitar al intentar adoptar la práctica:
+Cuando se realiza correctamente, se trata de un patrón potente para mejorar las conversiones, la participación y la experiencia del visitante. En general, hay un par de problemas que se deben evitar al intentar adoptar la práctica:
 
 * **Demasiado poco**: la mayoría de las empresas no están experimentando lo suficiente y, cuando lo hacen, experimentan con muy poco tráfico para obtener resultados significativos.
 * **Demasiado lento**: muchos marcos de experimentación ralentizan tanto el sitio que las posibles nuevas conversiones no pueden compensar el tráfico perdido y las devoluciones debido a la lentitud del procesamiento.
@@ -35,7 +35,7 @@ Para los sitios que se ejecutan en Adobe Experience Manager, existe el **complem
 
 El complemento de experimentación se usa en el contexto de [Edge Delivery Services](/help/edge/overview.md), por lo que necesitarás una cuenta de Github, un repositorio de contenido como SharePoint o Google Drive, y también necesitarás [AEM Sidekick](https://www.aem.live/docs/sidekick). Consulte también la [Página de introducción - Tutorial para desarrolladores de Universal Editor](https://www.aem.live/developer/tutorial) y [Introducción - Tutorial para desarrolladores](https://www.aem.live/developer/tutorial).
 
-Después de configurar todo, **vea este vídeo** titulado [Experimentación instantánea](https://business.adobe.com/es/products/experience-manager/sites/testing-optimization.html) para ver una breve demostración del funcionamiento del complemento de experimentación.
+Después de configurar todo, **vea este vídeo** titulado [Experimentación instantánea](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) para ver una breve demostración del funcionamiento del complemento de experimentación.
 
 ## Términos más utilizados {#frequently-used-terms}
 
