@@ -4,9 +4,9 @@ description: Descubra cómo puede configurar el editor de texto enriquecido (RTE
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -87,9 +87,29 @@ La configuración de la barra de herramientas controla qué opciones de edición
 }
 ```
 
-## Configuración de acciones {#actions}
+## Configuración de la acción {#action}
 
 La configuración de acciones permite personalizar el comportamiento y el aspecto de las acciones de edición individuales. Estas son las secciones disponibles.
+
+### Opciones de acción comunes {#common-action-options}
+
+La mayoría de las acciones admiten las siguientes opciones comunes:
+
+* `shortcut?`: cadena: anula el método abreviado de teclado predeterminado para la acción (si existe)
+* `label?`: cadena: anula la etiqueta utilizada para la acción en la interfaz de usuario
+* `hideInline?`: booleano: cuando `true`, oculta esta acción de la barra de herramientas del editor RTE en contexto (en línea)
+
+```json
+{
+  "actions": {
+    "bold": {
+      "label": "Bold",
+      "shortcut": "Mod-B",
+      "hideInline": true
+    }
+  }
+}
+```
 
 ### Acciones de formato {#format}
 
@@ -134,6 +154,56 @@ Las acciones de lista admiten el ajuste de contenido para controlar la estructur
   }
 }
 ```
+
+### Acciones de tabla {#table-actions}
+
+Las acciones de tabla admiten el ajuste de contenido para controlar la estructura de HTML en las celdas de la tabla:
+
+```json
+{
+  "actions": {
+    "table": {
+      "wrapInParagraphs": false, // <td>content</td> (default)
+      "shortcut": "Mod-Alt-T",   // Custom shortcut
+      "label": "Insert Table"    // Custom label
+    }
+  }
+}
+```
+
+#### Opciones de configuración de tabla {#table-configuration-options}
+
+* `wrapInParagraphs`: `false` (predeterminado): las celdas de la tabla contienen contenido de texto sin ajustar
+* `wrapInParagraphs`: `true`: las celdas de la tabla ajustan el contenido en las etiquetas de párrafo
+
+Ejemplos:
+
+Cuando `wrapInParagraphs`: `false`:
+
+```html
+<!-- Single line -->
+<td>Cell content</td>
+
+<!-- Multiple paragraphs get <br> separation -->
+<td>Line 1<br />Line 2</td>
+```
+
+Cuando `wrapInParagraphs`: `true`:
+
+```html
+<!-- Single paragraph -->
+<td><p>Cell content</p></td>
+
+<!-- Multiple paragraphs preserved -->
+<td>
+  <p>Line 1</p>
+  <p>Line 2</p>
+</td>
+```
+
+>[!NOTE]
+>
+>Al desajustar párrafos (`wrapInParagraphs`: `false`), el desinfectador inserta automáticamente etiquetas `<br>` entre varios párrafos para conservar los saltos de línea visuales. Esto sigue los estándares de HTML y las prácticas comunes en los principales editores de texto enriquecido.
 
 ### Acciones de vínculo {#link}
 
@@ -487,3 +557,20 @@ Los métodos abreviados utilizan el formato `Mod-Key`, donde:
 
 * `Mod` = `Cmd` en Mac, `Ctrl` en Windows/Linux
 * Ejemplos: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+
+## HTML no compatible {#unsupported-html}
+
+De forma predeterminada, las etiquetas de HTML desconocidas se eliminan cuando el editor las analiza. Para conservarlos, realice la inclusión a través de la opción de configuración `unsupportedHtml`:
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true, // preserve unknown HTML tags (default: false)
+};
+```
+
+| Valor | Comportamiento |
+|---|---|
+| `false` (predeterminada) | Las etiquetas HTML desconocidas se pierden durante el análisis. |
+| `true` | Las etiquetas de HTML desconocidas están envueltas en un nodo de bloque no compatible personalizado para que el contenido pueda moverse de forma segura. |
+
+Cuando está habilitado, el editor procesa nodos no compatibles con una clase `rte-unsupported-block`. Las aplicaciones de consumo deben proporcionar el estilo para esta clase (por ejemplo, borde, relleno, fondo). La etiqueta dentro del bloque usa `rte-unsupported-label`, que también se puede personalizar.

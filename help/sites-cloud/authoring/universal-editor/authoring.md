@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 689daf210bc0d867a0cafad32abac4aa178927ff
+source-git-commit: 3a76f7dde028eb2ba50a7bca344b347d585cc9ea
 workflow-type: tm+mt
-source-wordcount: '2838'
-ht-degree: 13%
+source-wordcount: '2902'
+ht-degree: 12%
 
 ---
 
@@ -101,23 +101,30 @@ Pulse o haga clic en **Cancelar** o **Listo** para descartar o guardar los cambi
 
 El editor de texto enriquecido (RTE) del editor universal permite al autor aplicar formato de texto estándar. De forma predeterminada, están disponibles las siguientes opciones.
 
-* Párrafo (h1, h2, h3, etc.)
-* Negrita
-* Cursiva
-* Subrayado
-* Superíndice
-* Subíndice
-* Lista con viñetas
-   * Utilice la tecla TAB para aplicar sangría y Mayús+Tab para anular la sangría
-* Lista ordenada
-   * Utilice la tecla TAB para aplicar sangría y Mayús+Tab para anular la sangría
-* Vínculo
-* Desvincular
-* Imagen
-* Pegar como texto
-* Quitar todo el formato
-
-Las tablas existentes se pueden editar con RTE, pero no se pueden crear nuevas tablas.
+* **Estilo de párrafo**
+   * Párrafo, h1-h6, código
+* **Negrita**
+* **Cursiva**
+* **Subrayado**
+* **Tachado**
+* **Superíndice**
+* **Subíndice**
+* **Lista de viñetas**
+   * Utilice la tecla TAB para aplicar sangría y Mayús+Tab para anular la sangría.
+* **Lista ordenada**
+   * Utilice la tecla TAB para aplicar sangría y Mayús+Tab para anular la sangría.
+* **Vincular**
+   * Especifique una URL o utilice el Explorador de contenido para seleccionar una ruta en AEM.
+* **Desvincular**
+   * Quitar vínculo del texto seleccionado.
+* **Imagen**
+   * Especifique una URL o use [selector de recursos](/help/assets/overview-asset-selector.md#using-asset-selector) para seleccionar un recurso de AEM.
+* **Tabla**
+   * Utilice la lista desplegable para insertar una nueva tabla con el número seleccionado de columnas y filas, o insertar y quitar nuevas columnas/filas.
+* **Pegar como texto**
+   * Quite el formato del texto del portapapeles antes de pegarlo en el editor universal.
+* **Quitar todo el formato**
+   * Quitar todas las opciones de formato del texto seleccionado.
 
 El RTE se puede configurar para ocultar opciones o mostrar opciones adicionales según las necesidades de los autores. Consulte el documento [Configuración del RTE para el editor universal](/help/implementing/universal-editor/configure-rte.md) para obtener más información.
 
@@ -261,7 +268,7 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 
 ### Copiar y pegar {#copy-paste}
 
-Puede copiar y pegar componentes que se encuentren dentro de [&#x200B; contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
+Puede copiar y pegar componentes que se encuentren dentro de [ contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
 
 Copiar y pegar pueden estar en la misma pestaña del explorador o entre pestañas del explorador, siempre que las pestañas ya estén abiertas. No puede copiar un elemento y, a continuación, abrir una nueva pestaña del explorador para pegarlo.
 
