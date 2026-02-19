@@ -4,7 +4,7 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a58225edb8ca49db9743db6c9c5b08c786fa0144
+source-git-commit: c1e175128ab6e4b483e3940d9bd86a06540ef40f
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 27%
@@ -18,7 +18,7 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 24464 {#release-24464}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 24464, que se publicó el miércoles, 17 de febrero de 2026. La versión de mantenimiento anterior fue la 24288.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 24464, que se publicó el jueves, 18 de febrero de 2026. La versión de mantenimiento anterior fue la 24288.
 
 La activación de funciones 2026.2.0 proporciona el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
