@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo ver, editar y eliminar los tokens 
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '360'
 ht-degree: 3%
 
 ---
@@ -17,15 +17,9 @@ ht-degree: 3%
 
 Cloud Manager utiliza tokens de acceso para administrar repositorios alojados en plataformas Git externas. Anteriormente, si un token caducaba, el repositorio asociado tenía que volver a incorporarse para permanecer operativo.
 
-Ahora, la función **Administrar tokens de acceso** le permite administrar los tokens de manera más eficiente. Puede ver, cambiar el nombre o quitar tokens conectados a proveedores de Git externos admitidos, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
+Ahora, la característica **`Manage Access Tokens`** le permite administrar los tokens de forma más eficaz. Puede ver, cambiar el nombre o quitar tokens conectados a proveedores de Git externos admitidos, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
 
 Consulte también [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-<!--
->[!NOTE]
->
->The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
--->
 
 ## Ver tokens de acceso {#view-access-tokens}
 
@@ -60,4 +54,4 @@ Consulte también [Agregar repositorios externos en Cloud Manager](/help/impleme
 
    El icono está deshabilitado (![Eliminar icono de esquema](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)) para los tokens que se están utilizando en ese momento.
 
-1. En el cuadro de diálogo **Eliminar token de acceso**, haga clic en **Eliminar** para quitar el token de forma permanente.
+1. En el cuadro de diálogo **`Delete Access Token`**, haga clic en **Eliminar** para quitar el token de forma permanente.

@@ -4,10 +4,10 @@ description: Obtenga información sobre la versión 2026.1.0 de Cloud Manager en
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 54566e3ea99c4ac03e266eab52163a516701b611
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 66%
+source-wordcount: '583'
+ht-degree: 46%
 
 ---
 
@@ -34,7 +34,7 @@ La próxima versión planificada es el viernes, 05 de febrero de 2026.
   ![Opción Ver/Editar variables en el menú desplegable de una canalización seleccionada](/help/implementing/cloud-manager/release-notes/assets/view-edit-variables-option.png)
   *Opción Ver/Editar variables en el menú desplegable de una canalización seleccionada.*
 
-  ![Cuadro de diálogo Configuración de variables &#x200B;](/help/implementing/cloud-manager/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Cuadro de diálogo Configuración de variables.*
+  ![Cuadro de diálogo Configuración de variables ](/help/implementing/cloud-manager/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Cuadro de diálogo Configuración de variables.*
 
 * **Mayor estabilidad, rendimiento y confiabilidad**
 
@@ -86,42 +86,6 @@ Usted controla qué canalizaciones utilizan **Smart Build**. Durante la versión
 ¿Le interesa? Envíe un correo electrónico a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) con su identificador de organización de Adobe y el identificador de programa.
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
-
-### Traiga su propio Git (BYOG) {#gitlab-bitbucket-azure-vsts}
-
-<!-- BOTH CS & AMS -->
-
-Los clientes ahora pueden incorporar sus repositorios Git de Azure DevOps en Cloud Manager, con compatibilidad tanto con los repositorios modernos de Azure DevOps como con los repositorios heredados de VSTS (Visual Studio Team Services).
-
-* Para los usuarios de Edge Delivery Services, el repositorio incorporado se puede utilizar para sincronizar e implementar el código del sitio.
-* Para los usuarios de AEM as a Cloud Service y Adobe Managed Services (AMS), el repositorio se puede vincular a canalizaciones de pila completa y de front-end.
-
-La compatibilidad con tipos de canalización adicionales y la validación de solicitudes de extracción a través de canalizaciones de calidad de código estará disponible pronto.
-
-Consulte [Adición de repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-![Cuadro de diálogo Añadir repositorio](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
-
-**Preguntas frecuentes sobre BYOG**
-
-| Pregunta | Respuesta |
-|---|---|
-| *¿Cómo puede un proyecto volver al repositorio de Git administrado por Adobe si es necesario?* | Volver atrás es sencillo. [Actualice las canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) para que apunten al repositorio de Adobe y quite el repositorio externo si ya no es necesario. |
-| *¿Es posible configurar diferentes repositorios para diferentes entornos (por ejemplo, no producción frente a producción) para permitir primero las pruebas en no producción?* | Sí, se pueden configurar diferentes repositorios para entornos independientes. Por ejemplo, la canalización de desarrollo o de calidad del código puede apuntar a un repositorio externo, mientras que la canalización de producción permanece conectada al repositorio de Adobe. Asegúrese de que el trabajo de sincronización entre los dos repositorios permanece activo durante esta configuración. |
-| *¿Continúa funcionando la configuración existente, como las listas de `IP Allow`?* | Sí, las listas de `IP Allow` existentes siguen funcionando como de costumbre. Sin embargo, si el repositorio de Git externo está protegido por un firewall, las [direcciones IP de Adobe necesarias deben añadirse a la lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
-| *¿Funcionan todas las URL del repositorio de GitLab? La URL del repositorio en uso sigue el formato `https://gitlab_dedicated_url.com/path/repo-name.git`, que difiere del ejemplo de la documentación.* | Sí, se admite cualquier repositorio de GitLab que admita API V3 o V4, incluidas las URL de GitLab autoalojado como la descrita en [Añadir repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
-
-
-#### Administrar tókenes de acceso{#manage-access-tokens}
-
-Use **Administrar tokens de acceso** en Cloud Manager para ver, cambiar el nombre y eliminar los tokens de acceso asociados con repositorios BYOG externos, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
-
-Consulte [Administración de tokens de acceso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
-
 
 ## Correcciones de errores {#bug-fixes}
 
