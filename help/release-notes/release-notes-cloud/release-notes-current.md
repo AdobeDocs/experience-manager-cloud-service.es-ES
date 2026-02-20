@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 087c29ddd1dcfe0fc4bda7428d71a5e6157e1325
+source-git-commit: b42a713bb66d55c991dc1a341987d79b083c6ccd
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 40%
+source-wordcount: '1888'
+ht-degree: 43%
 
 ---
 
@@ -38,7 +38,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de enero de 2026 para ver un resumen de las funciones añadidas en la versión 2026.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479792/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## Programas de AEM Beta {#aem-beta-programs}
@@ -55,18 +55,20 @@ El acceso anticipado a las funciones que Adobe está desarrollando permite a los
 **Programas beta actuales**
 Las siguientes secciones enumeran los programas beta y Explorer activos.
 
-### Agentes en AEM (programa Explorer) {#agents-in-aem-beta-program}
+<!--
+### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
 
-Obtenga acceso anticipado a nuevas y potentes funciones agénticas de AEM en producción, gobernanza, optimización, descubrimiento y desarrollo. Sus comentarios definen directamente el plan de Adobe y las funciones finales. Consulte [Información general sobre agentes en AEM](/help/ai-in-aem/agents/overview.md) para obtener más información.
+Gain early access to powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development. Your feedback directly shapes Adobe's roadmap and final features. See [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md) to learn more.
 
-Este programa suele durar de 4 a 6 semanas, pero se puede adaptar para ser flexible en cuanto a su capacidad de participar activamente.
+This program typically lasts 4-6 weeks, but can be tailored to be flexible around your ability to actively participate. 
 
-Para participar en este programa, envíe un correo electrónico a [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) e incluya los siguientes detalles en la medida de lo posible:
+To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) and include the following details to the extent possible:
 
-* Nombres y nombres de los miembros del equipo de Adobe ID que utilizarán agentes de forma activa.
-* Enumerar los agentes específicos que usted o su equipo desearán utilizar. O simplemente decir &quot;Todos los agentes&quot;.
+* Names and Adobe ID's of team members who will actively use agents.
+* List Specific agents that you or your team will want to use. Or simply say "All Agents."
 
-Adobe notificará directamente a los clientes seleccionados para la participación. La participación está sujeta a consideraciones de elegibilidad, incluidas las licencias de cliente y la capacidad limitada del programa. Aunque no todas las solicitudes se pueden satisfacer inicialmente, es posible que en futuras olas beta se consideren clientes adicionales.
+Customers selected for participation will be notified directly by Adobe. Participation is subject to eligibility considerations, including customer licensing and limited program capacity. While not all requests can be accommodated initially, additional customers may be considered in future beta waves.
+-->
 
 ### AEM Foundation (programas de Beta) {#aem-foundation-beta-programs}
 
