@@ -38,7 +38,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de enero de 2026 para ver un resumen de las funciones añadidas en la versión 2026.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479792/?captions=spa&quality=12)
 
 
 ## Programas de AEM Beta {#aem-beta-programs}
