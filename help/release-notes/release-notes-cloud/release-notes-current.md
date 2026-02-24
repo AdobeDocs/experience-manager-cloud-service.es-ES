@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
+source-git-commit: 94207e0c93106cf2b0b9d4fdbbb22af05b8f5ed1
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 43%
@@ -38,7 +38,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de enero de 2026 para ver un resumen de las funciones añadidas en la versión 2026.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479792/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## Programas de AEM Beta {#aem-beta-programs}
@@ -153,7 +153,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Degradaciones de API de Java {#java-api-deprecation}
 
-Las API obsoletas destinadas a la eliminación del 30/2/2026 ya no deben utilizarse en el código. Para evitar bloques de implementación, elimine el uso de la API antes del 30 de marzo de 2026. Fechas importantes:
+Las API obsoletas destinadas a la eliminación del 26/2/2026 ya no deben utilizarse en el código. Para evitar bloques de implementación, elimine el uso de la API antes del 30 de marzo de 2026. Fechas importantes:
 
 * **A partir del 26 de enero de 2026**: los correos electrónicos de notificación del Centro de acciones se envían **semanalmente por entorno** como recordatorio para eliminar el uso de estas API.
 * **26 de febrero de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **se pausarán** durante el paso **Calidad del código**. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular el problema para permitir que continúe la canalización.
