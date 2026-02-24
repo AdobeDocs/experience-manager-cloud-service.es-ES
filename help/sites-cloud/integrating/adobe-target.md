@@ -12,7 +12,7 @@ ht-degree: 93%
 
 # Integración con Adobe Target{#integrating-with-adobe-target}
 
-Como parte de Adobe Experience Cloud, [Adobe Target](https://business.adobe.com/products/target/adobe-target.html?lang=es) permite aumentar la relevancia del contenido mediante la segmentación y efectúa mediciones en todos los canales. Los especialistas en marketing utilizan Adobe Target para diseñar y ejecutar pruebas en línea, crear segmentos de público sobre la marcha (basados en el comportamiento) y automatizar la segmentación del contenido y las experiencias en línea. AEM as a Cloud Service ha adoptado el flujo de trabajo de direccionamiento que se utiliza en Adobe Target Standard. Si utiliza Target, está familiarizado con el entorno de edición de segmentación en AEM as a Cloud Service.
+Como parte de Adobe Experience Cloud, [Adobe Target](https://business.adobe.com/es/products/target/adobe-target.html?lang=es) permite aumentar la relevancia del contenido mediante la segmentación y efectúa mediciones en todos los canales. Los especialistas en marketing utilizan Adobe Target para diseñar y ejecutar pruebas en línea, crear segmentos de público sobre la marcha (basados en el comportamiento) y automatizar la segmentación del contenido y las experiencias en línea. AEM as a Cloud Service ha adoptado el flujo de trabajo de direccionamiento que se utiliza en Adobe Target Standard. Si utiliza Target, está familiarizado con el entorno de edición de segmentación en AEM as a Cloud Service.
 
 Integre los AEM Sites con Adobe Target para poder personalizar el contenido de sus páginas:
 
@@ -43,7 +43,7 @@ Para integrarse con Target, realice las siguientes tareas:
 
 >[!CAUTION]
 >
->En AEM as a Cloud Service, el agente de replicación que sincroniza Ofertas y actividades de AEM a Adobe Target está deshabilitado de forma predeterminada. Póngase en contacto con el equipo de [Soporte de Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=es#support) si necesita volver a habilitar el agente de replicación.
+>En AEM as a Cloud Service, el agente de replicación que sincroniza Ofertas y actividades de AEM a Adobe Target está deshabilitado de forma predeterminada. Póngase en contacto con el equipo de [Soporte de Adobe](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support) si necesita volver a habilitar el agente de replicación.
 
 >[!NOTE]
 >
