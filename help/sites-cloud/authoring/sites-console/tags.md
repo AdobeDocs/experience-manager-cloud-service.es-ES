@@ -39,7 +39,7 @@ A la hora de diseñar la estructura de contenido para un sitio y el esquema de m
 
 En el entorno de creación, los creadores pueden aplicar etiquetas si acceden a las propiedades de página e introducen una o varias etiquetas en el campo **Etiquetas y palabras clave**.
 
-Para aplicar las etiquetas predefinidas, vaya a la ventana **Propiedades de página** para usar el campo **Etiquetas** y la ventana **Seleccionar etiquetas**. La pestaña Etiquetas estándar es el espacio de nombres predeterminado, lo que significa que no hay ningún  como prefijo en la taxonomía. ****`namespace-string:`<!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
+Para aplicar las etiquetas predefinidas, vaya a la ventana **Propiedades de página** para usar el campo **Etiquetas** y la ventana **Seleccionar etiquetas**. La pestaña Etiquetas estándar es el espacio de nombres predeterminado, lo que significa que no hay ningún  como prefijo en la taxonomía. **&#x200B;**`namespace-string:`<!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
 
 ![Seleccionar varias etiquetas](/help/sites-cloud/authoring/assets/tags-select.png)
 

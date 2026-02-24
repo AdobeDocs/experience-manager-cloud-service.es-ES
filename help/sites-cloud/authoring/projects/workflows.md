@@ -31,12 +31,12 @@ Según la plantilla Proyecto que seleccione, tendrá a su disposición determina
 | Solicitar lanzamiento | x |  |
 | Solicitar página de destino | x |  |
 | Solicitar correo electrónico | x | |
-| Creación de copia de idioma de DAM&amp;ast; |  | x |
-| Creación y traducción de copia de idioma de DAM&amp;ast; |   | x |
+| Creación de copia de idioma de DAM&ast; |  | x |
+| Creación y traducción de copia de idioma de DAM&ast; |   | x |
 
 >[!NOTE]
 >
->&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para recursos](/help/sites-cloud/administering/translation/managing-projects.md).
+>&ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para recursos](/help/sites-cloud/administering/translation/managing-projects.md).
 
 Los pasos para iniciar y completar flujos de trabajo son los mismos independientemente del flujo de trabajo que se elija. Solo cambian los pasos.
 
@@ -46,7 +46,7 @@ Para obtener más información sobre el uso de flujos de trabajo en AEM, consult
 
 * [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
 * [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md)
-* [Configuración de flujos de trabajo ](/help/sites-cloud/administering/workflows-administering.md)
+* [Configuración de flujos de trabajo &#x200B;](/help/sites-cloud/administering/workflows-administering.md)
 
 En esta sección se describen los flujos de trabajo disponibles para Proyectos.
 
