@@ -4,10 +4,11 @@ description: Obtenga información acerca de la extensión de referencias externa
 feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '295'
 ht-degree: 1%
 
 ---
@@ -30,7 +31,7 @@ Por ejemplo, para utilizar la extensión con AJO:
 
 >[!NOTE]
 >
->Consulte también [Integración de AJO](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/integrations/aem-fragments).
+>Consulte también [Integración de AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
 
 1. Abra la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 

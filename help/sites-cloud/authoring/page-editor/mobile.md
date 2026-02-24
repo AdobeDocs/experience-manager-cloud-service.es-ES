@@ -1,14 +1,15 @@
 ---
 title: Crear una página para dispositivos móviles
 description: Al crear contenido para dispositivos móviles, puede cambiar entre varios emuladores para ver lo que ve el usuario final
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 100%
+source-wordcount: '273'
+ht-degree: 98%
 
 ---
 
@@ -47,4 +48,4 @@ La página presenta un aspecto similar al siguiente:
 
 >[!NOTE]
 >
->Los emuladores se desactivan cuando se solicita una página de la instancia del autor desde un dispositivo móvil.
+>Los emuladores se desactivan cuando una página de la instancia de autor se solicita desde un dispositivo móvil.

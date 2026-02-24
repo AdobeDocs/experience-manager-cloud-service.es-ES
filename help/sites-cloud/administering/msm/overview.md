@@ -3,11 +3,12 @@ title: 'Reutilización del contenido: Administrador de varios sitios y Live Copy
 description: Obtenga una introducción para reutilizar contenido con las potentes Live Copies de AEM y las funciones del Administrador de varios sitios.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2719'
+source-wordcount: '2725'
 ht-degree: 90%
 
 ---
@@ -190,7 +191,7 @@ Una Live Copy de MSM es una copia de contenido de un sitio específico que mant
    * Profundo: la página, junto con sus páginas secundarias
 * Las reglas de sincronización, denominadas configuraciones de despliegue, determinan qué propiedades se sincronizan y cuándo se produce la sincronización.
 
-En el ejemplo anterior, `/content/wknd/language-masters/en` es la ubicación maestra global en inglés. Para reutilizar el contenido de este sitio, se crean Live Copies de MSM:
+En el ejemplo anterior, `/content/wknd/language-masters/en` es el sitio maestro global en inglés. Para reutilizar el contenido de este sitio, se crean Live Copies de MSM:
 
 * El contenido siguiente `/content/wknd/language-masters/en` es el origen.
 * El contenido siguiente `/content/wknd/language-masters/en` se copia debajo de `/content/wknd/us/en/` y `/content/wknd/ca/en` nodos. Estas son Live Copies.

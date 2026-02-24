@@ -1,13 +1,14 @@
 ---
 title: Editor de página de AEM
 description: El editor de páginas de AEM es una potente herramienta para crear contenido.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1437'
 ht-degree: 39%
 
 ---
@@ -75,7 +76,7 @@ Además, **Información de página** puede proporcionar acceso a análisis y rec
 
 #### Emulador {#emulator}
 
-Esto activa o desactiva la barra de herramientas del emulador [1&rbrace;, que se usa para emular el aspecto de la página en otro dispositivo. &#x200B;](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate) Esto se activa automáticamente en el modo de diseño.
+Esto activa o desactiva la barra de herramientas del emulador [1}, que se usa para emular el aspecto de la página en otro dispositivo. ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate) Esto se activa automáticamente en el modo de diseño.
 
 ![Botón Emulador](assets/page-editor-emulator.png)
 

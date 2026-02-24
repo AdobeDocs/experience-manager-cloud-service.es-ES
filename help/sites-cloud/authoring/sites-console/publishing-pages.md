@@ -1,13 +1,14 @@
 ---
 title: Publicación de páginas desde la consola Sitios
 description: Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante la consola Sitios.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1641'
 ht-degree: 73%
 
 ---
@@ -66,8 +67,8 @@ Puede encontrar diferentes términos relacionados con la publicación al trabaja
 
 En la consola **Sites** hay dos opciones para la publicación:
 
-* [Publicación rápida &#x200B;](#quick-publish)
-* [Administrar publicación    &#x200B;](#manage-publication)
+* [Publicación rápida ](#quick-publish)
+* [Administrar publicación    ](#manage-publication)
 
 ### Publicación rápida  {#quick-publish}
 
@@ -117,7 +118,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
      >[!TIP]
      >
-     >Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para finalizar el flujo de trabajo correspondiente.
+     >Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para terminar el flujo de trabajo correspondiente.
 
      >[!TIP]
      >
@@ -211,7 +212,7 @@ Al igual que [utiliza la opción Administrar publicación para publicar](#manage
 
    >[!NOTE]
    >
-   >Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para finalizar el flujo de trabajo correspondiente.
+   >Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para terminar el flujo de trabajo correspondiente.
 
    >[!NOTE]
    >Si tiene una [Vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md) del entorno, puede seleccionar **Destino** durante Administrar publicación.

@@ -4,13 +4,14 @@ description: Descubra cómo el Editor de páginas publica contenido.
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 5871e04d3bd78bdd8df55d42e7619c98ea3f38ca
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
+exl-id: dc11ac02-2a8d-4d82-ae10-e0fb97025063
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '351'
 ht-degree: 44%
 
 ---
-
 
 # Publicación de contenido con el Editor de sitios {#publishing}
 

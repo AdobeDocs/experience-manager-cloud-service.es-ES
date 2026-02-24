@@ -1,14 +1,15 @@
 ---
 title: Vista previa del futuro con el lanzamiento
 description: Con Deformación de tiempo, puede ver el contenido en función de sus lanzamientos.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 100%
+source-wordcount: '103'
+ht-degree: 96%
 
 ---
 

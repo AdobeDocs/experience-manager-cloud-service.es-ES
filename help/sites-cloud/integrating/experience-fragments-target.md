@@ -1,14 +1,15 @@
 ---
 title: Exportación de fragmentos de experiencias a Adobe Target
 description: Obtenga información sobre cómo exportar los fragmentos de experiencias a Adobe Target para probar y personalizar experiencias.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 95%
+source-wordcount: '2198'
+ht-degree: 93%
 
 ---
 
@@ -55,7 +56,7 @@ Los fragmentos de experiencias se pueden exportar al espacio de trabajo predeter
 >
 >* [Desarrollo de Adobe Target](https://developers.adobetarget.com/)
 >* [Componentes principales: fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
->* [Adobe Target: ¿Cómo utilizo los fragmentos de experiencia de Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=es)
+>* [Adobe Target: ¿Cómo utilizo los fragmentos de experiencia de Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
 >* [AEM 6.5: Configuración manual de la integración con Adobe Target: Creación de una configuración de nube de Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=es#creating-a-target-cloud-configuration)
 
 ## Requisitos previos {#prerequisites}
@@ -137,7 +138,7 @@ Para permitir que AEM interactúe con Adobe Target, cree una configuración de n
 
 La configuración de la nube de Target solo se crea una vez porque se puede asociar con varias campañas de AEM. Si tiene varios códigos de cliente de Adobe Target, cree una configuración para cada código de cliente.
 
-Puede configurar la configuración de nube para sincronizar segmentos desde Adobe Target. Si activa la sincronización, los segmentos se importan desde Target en segundo plano en cuanto se guarda la configuración de la nube.
+Puede configurar la configuración de nube para sincronizar segmentos desde Adobe Target. Si habilita la sincronización, los segmentos se importan desde Target en segundo plano en cuanto se guarda la configuración de la nube.
 
 Utilice el siguiente procedimiento para crear una configuración de nube de Target en AEM:
 
@@ -192,7 +193,7 @@ Ahora puede seleccionar la nueva configuración para editarla.
 
    * **Use objetivos precisos:** De forma predeterminada, esta casilla de verificación está seleccionada. Si se selecciona, la configuración del servicio en la nube esperará a que el contexto se cargue antes de cargar el contenido. Véase la nota siguiente.
 
-   * **Sincronizar segmentos desde Adobe Target:** Seleccione esta opción para descargar los segmentos definidos en Target y utilizarlos en AEM. Seleccione esta opción cuando la propiedad Tipo de API sea REST, ya que los segmentos en línea no son compatibles y siempre necesita utilizar segmentos de Target. AEM (El término de de &quot;segmento&quot; equivale a la &quot;audiencia&quot; de Target).
+   * **Sincronizar segmentos desde Adobe Target:** Seleccione esta opción para descargar los segmentos definidos en Target y utilizarlos en AEM. Seleccione esta opción cuando la propiedad Tipo de API sea REST, ya que los segmentos en línea no son compatibles y siempre necesita utilizar segmentos de Target. (El término de AEM de &quot;segmento&quot; equivale a la &quot;audiencia&quot; de Target).
 
    * **Biblioteca de cliente:** de forma predeterminada, AT.js (mbox.js está obsoleto).
 
@@ -270,7 +271,7 @@ Se crea el marco de trabajo. Para replicar el marco de trabajo en la instancia d
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=es).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -335,7 +336,7 @@ Para exportar un fragmento de experiencia de AEM a Target (después de especific
    >
    >Si el fragmento de experiencia ya se ha exportado, seleccione **Actualización del estado en Adobe Target**.
 
-1. Seleccione **Exportar sin publicar** o **Publish** según sea necesario.
+1. Seleccione **Exportar sin publicar** o **Publicar** según sea necesario.
 
    >[!NOTE]
    >

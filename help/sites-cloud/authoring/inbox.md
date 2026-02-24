@@ -1,13 +1,14 @@
 ---
 title: Su bandeja de entrada
 description: Aprenda a utilizar las notificaciones que llegan a la bandeja de entrada para administrar sus tareas.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '916'
 ht-degree: 88%
 
 ---
@@ -50,7 +51,7 @@ Para abrir la bandeja de entrada de notificaciones AEM:
 
 1. Seleccione el indicador en la barra de herramientas.
 
-1. Seleccione **Ver todo**. AEM Se abre la **Bandeja de entrada de**. La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
+1. Seleccione **Ver todo**. Se abre la **Bandeja de entrada de AEM**. La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
 1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se realiza con el selector de vistas (barra de herramientas, arriba a la derecha).
 
    Para ambas vistas también puede definir una [Configuración de vista](#inbox-view-settings). Las opciones disponibles dependen de la vista actual.
@@ -126,7 +127,7 @@ Para ambas vistas (Lista y Calendario) puede definir la siguiente configuración
    * **Abrir** un elemento; en función del tipo de elemento, esta acción puede:
 
       * Mostrar las propiedades del elemento.
-      * Abrir un tablero o un asistente apropiado para llevar a cabo acciones adicionales.
+      * Abrir un panel de control o un asistente apropiado para llevar a cabo acciones adicionales.
       * Abrir documentación relacionada.
 
    * **Retroceder** a una etapa anterior

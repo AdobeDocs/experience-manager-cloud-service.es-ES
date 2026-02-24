@@ -3,12 +3,13 @@ title: Crear un sitio
 description: Aprenda a utilizar AEM para crear un sitio mediante plantillas de sitio para definir el estilo y la estructura del sitio.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 55%
+source-wordcount: '732'
+ht-degree: 56%
 
 ---
 
@@ -29,7 +30,7 @@ Tómese tiempo para tener en cuenta el propósito de su sitio y el contenido pla
 
 Debido a que la estructura del sitio es tan importante para el éxito de un sitio, resulta conveniente tener estructuras predefinidas disponibles para implementar rápidamente un nuevo sitio en función de un conjunto de estándares existentes. Las plantillas de sitio son una forma de combinar el contenido básico del sitio en un paquete conveniente y reutilizable.
 
-Las plantillas del sitio suelen contener contenido y estructura base del sitio, así como información de estilo, para comenzar con uno nuevo rápidamente. Las plantillas son eficaces, ya que se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades comerciales.
+Las plantillas del sitio suelen contener contenido y estructura base del sitio, así como información de estilo, para comenzar con uno nuevo rápidamente. Las plantillas son eficaces, ya que se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades empresariales.
 
 >[!TIP]
 >
@@ -39,7 +40,7 @@ Las plantillas del sitio suelen contener contenido y estructura base del sitio, 
 >
 >La plantilla del sitio no debe confundirse con [plantillas de página.](/help/sites-cloud/authoring/page-editor/templates.md) Las plantillas de sitio definen la estructura general de un sitio. Una plantilla de página define la estructura y el contenido inicial de una página individual.
 
-### Plantillas de sitio proporcionadas por Adobe {#adobe-templates}
+### Plantillas del sitio proporcionadas por Adobe {#adobe-templates}
 
 {{adobe-templates}}
 

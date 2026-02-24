@@ -1,13 +1,14 @@
 ---
 title: Diseño adaptable
-description: AEM le permite crear un diseño adaptable para las páginas mediante el uso del componente Contenedor de diseño.
+description: AEM permite crear un diseño interactivo para las páginas mediante el componente Contenedor de diseño.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1795'
 ht-degree: 76%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 76%
 
 # Diseño adaptable {#responsive-layout}
 
-AEM le permite tener un diseño adaptable para sus páginas mediante el componente **Contenedor de diseño**.
+AEM le permite tener un diseño interactivo para sus páginas mediante el componente **Contenedor de diseño**.
 
 >[!TIP]
 >
@@ -68,7 +69,7 @@ Según el proyecto, el contenedor de diseño se puede utilizar como sistema de p
 
 Al crear el contenido de su sitio web desea asegurarse de que el contenido se muestre correctamente según el dispositivo utilizado para ello.
 
-AEM definir diseños según la anchura del dispositivo:
+AEM permite definir diseños en función del ancho del dispositivo:
 
 * El emulador permite emular estos diseños en una amplia gama de dispositivos. Además del tipo de dispositivo, la orientación, que se selecciona mediante la opción **Rotar dispositivo**, puede afectar al punto de interrupción seleccionado a medida que cambia la anchura.
 * Los puntos de interrupción son puntos que separan las definiciones de diseño.

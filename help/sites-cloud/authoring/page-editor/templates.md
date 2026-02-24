@@ -1,13 +1,14 @@
 ---
 title: Plantillas para crear páginas editables con el editor de páginas
 description: Puede usar el Editor de plantillas para crear plantillas que los autores de contenido puedan usar para crear páginas que se puedan editar con el Editor de páginas.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4415'
+source-wordcount: '4421'
 ht-degree: 77%
 
 ---
@@ -43,7 +44,7 @@ Para obtener información detallada sobre cómo funcionan las plantillas editabl
 
 ## Antes de comenzar {#before-you-start}
 
-Antes de empezar, es importante tener en cuenta que la creación de una plantilla requiere colaboración. Por este motivo, para cada tarea se indica la [Función. &#x200B;](#roles) Esto no afecta a cómo realmente utiliza una plantilla para crear una página, pero afecta al modo en que una página se relaciona con su plantilla.
+Antes de empezar, es importante tener en cuenta que la creación de una plantilla requiere colaboración. Por este motivo, para cada tarea se indica la [Función. ](#roles) Esto no afecta a cómo realmente utiliza una plantilla para crear una página, pero afecta al modo en que una página se relaciona con su plantilla.
 
 >[!NOTE]
 >
@@ -163,14 +164,14 @@ Para definir la miniatura de la plantilla, haga lo siguiente:
    * Si no es satisfactorio, selecciona **Borrar** para cargar otra imagen o volver a generar la miniatura.
 1. Cuando esté satisfecho con la miniatura, seleccione **Guardar y cerrar**.
 
-### Activación y autorización de una plantilla: autor de plantillas   {#enabling-and-allowing-a-template-template-author}
+### Habilitación y autorización de una plantilla: autor de plantillas   {#enabling-and-allowing-a-template-template-author}
 
 Para poder utilizar una plantilla al crear una página, debe:
 
-* [Activar la plantilla](#enabling-a-template-template-author) para que esté disponible para utilizarla al crear páginas.
+* [Habilitar la plantilla](#enabling-a-template-template-author) para que esté disponible para utilizarla al crear páginas.
 * [Permitir que la plantilla](#allowing-a-template-author) especifique las ramas de contenido en las que esta se puede utilizar.
 
-#### Activación de una plantilla: autor de plantillas {#enabling-a-template-template-author}
+#### Habilitación de una plantilla: autor de plantillas {#enabling-a-template-template-author}
 
 Una plantilla se puede habilitar o deshabilitar para que esté disponible o no en el asistente **Crear página**.
 
@@ -210,7 +211,7 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
 
 Como la plantilla se toma como referencia cuando se representa la página, la plantilla completamente configurada debe publicarse para que esté disponible en el entorno de publicación.
 
-Plantillas Publish que usan la **[Consola de plantillas](/help/sites-cloud/administering/templates-console.md)**.
+Publicar plantillas usando la **[Consola de plantillas](/help/sites-cloud/administering/templates-console.md)**.
 
 ## Edición de plantillas: autores de plantillas   {#editing-templates-template-authors}
 
@@ -401,7 +402,7 @@ Por ejemplo, para un componente de imagen, puede definir la proporción del reco
 
 >[!CAUTION]
 >
->AEM En las proporciones de recorte se definen como **height/width**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios de creación de páginas no notarán ninguna diferencia siempre que defina claramente el **Nombre**, ya que esto es lo que se muestra en la interfaz de usuario.
+>En AEM, las proporciones de recorte se definen como **altura/anchura**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios de creación de páginas no notarán ninguna diferencia siempre que defina claramente el **Nombre**, ya que esto es lo que se muestra en la interfaz de usuario.
 
 >[!NOTE]
 >
@@ -647,4 +648,4 @@ Al crear plantillas, debe tener en cuenta lo siguiente:
    >AEM proporciona advertencias explícitas al cambiar el estado de bloqueo de los componentes de las plantillas que ya no son borradores.
 
 1. [Creación de sus propias carpetas](#creating-a-template-folder-admin) para las plantillas específicas del sitio.
-1. [Publish usa tus plantillas](#publishing-a-template-template-author) desde la **[consola Plantillas]**(/help/sites-cloud/administering/templates-console.md).
+1. [Publicar sus plantillas](#publishing-a-template-template-author) desde la **[consola Plantillas]**(/help/sites-cloud/administering/templates-console.md).

@@ -1,13 +1,14 @@
 ---
 title: Creación de páginas
 description: Obtenga información sobre cómo crear nuevas páginas para el sitio web mediante la consola Sitios.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '483'
 ht-degree: 27%
 
 ---
@@ -19,7 +20,7 @@ Aprenda a crear páginas nuevas para el sitio web mediante la consola **Sitios**
 
 >[!TIP]
 >
->AEM Antes de empezar a crear páginas nuevas, familiarícese con [cómo se organizan las páginas en la organización de las páginas en la organización de las páginas en la organización de las páginas en la organización de las páginas en el sitio](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
+>Antes de empezar a crear páginas nuevas, familiarícese con [la organización de las páginas en AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 ## Privilegios de acceso {#access-privileges}
 
@@ -59,8 +60,8 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
    * **Nombre**:
 
       * Se usa para generar la URI. Si no se especifica, el nombre se obtiene a partir del título.
-      * AEM AEM Si proporciona una página **Name** al crear una página, [valida el nombre según las convenciones &#x200B;](/help/implementing/developing/introduction/naming-conventions.md) impuestas por el JCR y el.
-      * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
+      * Si proporciona una página **Name** al crear una página, AEM [valida el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR.
+      * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. Cuando AEM detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
 
    >[!TIP]
    >
@@ -84,7 +85,7 @@ Si vuelve a la consola, podrá ver la nueva página:
 
 >[!NOTE]
 >
->AEM Si crea una página con un nombre que ya existe en la misma ubicación, crea la página con una variación del nombre especificado agregando un número. Por ejemplo, si `beach` ya existe, la nueva página se convierte en `beach1`.
+>Si crea una página con un nombre que ya existe en la misma ubicación, AEM crea la página con una variación del nombre especificado añadiendo un número. Por ejemplo, si `beach` ya existe, la nueva página se convierte en `beach1`.
 
 >[!CAUTION]
 >

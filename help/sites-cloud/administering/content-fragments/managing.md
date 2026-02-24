@@ -3,11 +3,12 @@ title: Administración de los fragmentos de contenido
 description: Aprenda a administrar los fragmentos de contenido de AEM desde la consola y el editor, para crear contenido como base del contenido sin encabezado o para la creación de páginas.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2943'
 ht-degree: 36%
 
 ---

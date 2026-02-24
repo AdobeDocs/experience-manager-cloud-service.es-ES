@@ -1,30 +1,31 @@
 ---
 title: Personalización y segmentación de contenido
 description: Descubra cómo puede crear contenido personalizado y con objetivo con AEM
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 89%
+source-wordcount: '1060'
+ht-degree: 88%
 
 ---
 
 
 # Personalización y segmentación de contenido {#personalization-and-content-targeting}
 
-La personalización del contenido web que proporciona a los clientes significa adaptar esas experiencias a sus intereses y necesidades. Puede hacerlo en función de la información que tenga sobre ellos, por ejemplo, resúmenes de compras, edad, sexo y geografía, entre otros.
+La personalización del contenido web que proporciona a los clientes significa adaptar esas experiencias a sus intereses y necesidades. Puede hacerlo en función de la información que tenga sobre ellos, por ejemplo, resúmenes de compras, edad, género y geografía, entre otros.
 
-Con Adobe Experience Manager as a Cloud Service AEM () puede crear una selección de contenido y especificar qué audiencias (grupos de usuarios finales) ven cada experiencia individual. Esto significa que está segmentando las experiencias personalizadas a audiencias específicas.
+Con Adobe Experience Manager as a Cloud Service (AEM) puede crear una selección de contenido y especificar qué audiencias (grupos de usuarios finales) verán cada experiencia individual. Esto significa que está segmentando las experiencias personalizadas a públicos específicos.
 
 Cuando el lector esté en línea, el motor de segmentación revisará la información disponible sobre el usuario final y la comparará con las definiciones de las experiencias. A continuación, el motor *“decidirá”* qué experiencia personalizada se debe mostrar.
 
 AEM proporciona un marco de herramientas para:
 
-* Crear contenido con objetivo, adecuado para una amplia gama de audiencias, según la información de cliente disponible.
-* Definir las reglas utilizadas para determinar la información de usuario conocida con respecto a la definición de una audiencia.
+* Crear contenido con objetivo, adecuado para una amplia gama de públicos, según la información de cliente disponible.
+* Definir las reglas utilizadas para determinar la información de usuario conocida con respecto a la definición de un público.
 * Configurar las páginas para presentar experiencias personalizadas segmentadas, para procesar el contenido específico aplicable al usuario final actual.
 
 En la siguiente descripción general se presentan algunos de los términos utilizados para la personalización en AEM as a Cloud Service, seguidos de un orden de acción recomendado.
@@ -35,9 +36,9 @@ Una experiencia es el contenido que desea mostrar a los usuarios finales.
 
 ## Experiencia personalizada {#personalized-experience}
 
-Una experiencia personalizada es una experiencia que se muestra a una audiencia limitada. Usted define la audiencia y el contenido solo se muestra cuando la información conocida sobre el usuario final actual corresponde con esa definición de la audiencia.
+Una experiencia personalizada es una experiencia que se muestra a un público limitado. Usted define el público y el contenido solo se muestra cuando la información conocida sobre el usuario final actual corresponde con esa definición del público.
 
-Al crear páginas, puede definir varias experiencias, y cada experiencia se destina a una o más audiencias. Si no se especifica ninguna audiencia, entonces se muestra la experiencia predeterminada.
+Al crear páginas, puede definir varias experiencias, y cada experiencia se destina a uno o más públicos. Si no se especifica ningún público, entonces se muestra la experiencia predeterminada.
 
 ### Oferta {#offer}
 
@@ -45,29 +46,29 @@ Una oferta es una experiencia personalizada que, a menudo, está disponible dura
 
 Por ejemplo, una página de un sitio web de ejemplo puede utilizar ofertas para la imagen de teaser que aparece en la parte superior de la página. Una persona mayor de 30 años y una persona menor de 30 años pueden ver diferentes ofertas como teaser de experiencias.
 
-## Audiencia {#audience}
+## Público {#audience}
 
-Una audiencia es un grupo de usuarios finales al que desea dirigirse con contenido personalizado. Cuando un visitante abre una página web, la lógica de página determina la audiencia a la que pertenece en función de la información conocida. En función de esa evaluación, AEM muestra el contenido que ha creado para esa audiencia.
+Un público es un grupo de usuarios finales al que desea dirigirse con contenido personalizado. Cuando un visitante abre una página web, la lógica de página determina el público al que pertenece en función de la información conocida. En función de esa evaluación, AEM muestra el contenido que ha creado para ese público.
 
-Las audiencias se basan en segmentos de marketing. Se crean en AEM o en Adobe Target; puede crear audiencias de Adobe Target directamente en AEM usando la consola Audiencias.
+Los públicos se basan en segmentos de marketing. Se crean en AEM o en Adobe Target; puede crear públicos de Adobe Target directamente en AEM usando la consola Públicos.
 
 ### Segmento {#segment}
 
-En AEM ContextHub, una audiencia se define como un segmento basado en reglas (condiciones). A continuación, se determinan para procesar el contenido requerido.
+En AEM ContextHub, un público se define como un segmento basado en reglas (condiciones). A continuación, se determinan para procesar el contenido requerido.
 
 ## Actividad {#activity}
 
 Una actividad:
 
-* define la asignación de una audiencia específica (segmento) con una experiencia específica
+* define la asignación de un público específico (segmento) con una experiencia específica
 * define el periodo de tiempo durante el que se aplica la segmentación
 * identifica el [motor de segmentación](#targeting-engine) que utilizan las páginas
 
 La actividad puede ser una actividad de personalización o una actividad de prueba A/B (en el caso del flujo de trabajo de personalización de Adobe Target y AEM).
 
-Por ejemplo, una actividad puede definir las experiencias para dos audiencias independientes: mujeres mayores de 30 años y mujeres menores de 30 años. Una página del sitio web puede mostrar diferentes productos para cada audiencia.
+Por ejemplo, una actividad puede definir las experiencias para dos públicos independientes: mujeres mayores de 30 años y mujeres menores de 30 años. Una página del sitio web puede mostrar diferentes productos para cada público.
 
-U, otro ejemplo, el catálogo de productos puede incluir teasers que destaquen los productos de temporada. Así que una actividad de deportes de verano podría definir las audiencias a las que se dirigen los teasers durante los meses de verano.
+U, otro ejemplo, el catálogo de productos puede incluir teasers que destaquen los productos de temporada. Así que una actividad de deportes de verano podría definir los públicos a los que se dirigen los teasers durante los meses de verano.
 
 Utilice la [consola Actividades](/help/sites-cloud/authoring/personalization/activities.md) para crear y administrar las actividades de sus [marcas](#brand). También puede crear actividades a medida que crea su [contenido segmentado](/help/sites-cloud/authoring/personalization/targeted-content.md) con el [Modo de segmentación](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode).
 
@@ -114,7 +115,7 @@ Actualmente, AEM puede utilizar:
 
 ### AEM ContextHub {#aem-contexthub}
 
-AEM proporciona el motor de segmentación integrado de [ContextHub](/help/implementing/developing/personalization/contexthub.md) que procesa las solicitudes de páginas y determina el contenido que se debe mostrar. Al utilizar el motor de segmentación de AEM, el uso se limita a los segmentos que se crean en AEM para definir las audiencias de las experiencias.
+AEM proporciona el motor de segmentación integrado de [ContextHub](/help/implementing/developing/personalization/contexthub.md) que procesa las solicitudes de páginas y determina el contenido que se debe mostrar. Al utilizar el motor de segmentación de AEM, el uso se limita a los segmentos que se crean en AEM para definir los públicos de las experiencias.
 
 ### Adobe Target {#adobe-target}
 
@@ -134,12 +135,12 @@ Existen varios pasos y definiciones necesarias para entregar el contenido person
    1. Configurando [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
    1. Integrándolo con [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
-1. Configure las audiencias.
+1. Configure los públicos.
 
-   1. En función del motor de segmentación, defina la [Audiencia objetivo](https://experienceleague.adobe.com/docs/target/using/audiences/target.html?lang=es) o el [Segmento de ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md) junto con las reglas.
+   1. En función del motor de segmentación, defina el [Público destinatario](https://experienceleague.adobe.com/docs/target/using/audiences/target.html?lang=es) o el [Segmento de ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md) junto con las reglas.
 
 1. Cree su [Marca y actividades](/help/sites-cloud/authoring/personalization/activities.md).
 
-1. Cree la selección de experiencias que desea mostrar a las diferentes audiencias.
+1. Cree la selección de experiencias que desea mostrar a los diferentes públicos.
 
-1. Personalice estas experiencias [segmentándolas](/help/sites-cloud/authoring/personalization/targeted-content.md) para las audiencias específicas (segmentos).
+1. Personalice estas experiencias [segmentándolas](/help/sites-cloud/authoring/personalization/targeted-content.md) para los públicos específicos (segmentos).

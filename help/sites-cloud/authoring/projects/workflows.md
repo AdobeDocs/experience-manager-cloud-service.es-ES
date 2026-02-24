@@ -1,14 +1,15 @@
 ---
 title: Uso de flujos de trabajo de proyecto
 description: Hay una variedad de flujos de trabajo de proyecto disponibles de forma predeterminada.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 96%
+source-wordcount: '455'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +19,7 @@ Los flujos de trabajo de proyecto disponibles de forma predeterminada incluyen l
 
 * **Flujo de trabajo de aprobación del proyecto**: este flujo de trabajo le permite asignar contenido a un usuario, revisarlo y aprobarlo.
 * **Solicitar lanzamiento**: un flujo de trabajo solicita un lanzamiento.
-* **Solicitar página de aterrizaje**: este flujo de trabajo solicita una página de aterrizaje.
+* **Solicitar página de destino**: este flujo de trabajo solicita una página de destino.
 * **Solicitar correo electrónico**: flujo de trabajo para solicitar un correo electrónico.
 * **Crear y traducir copia DAM y crear copia de idioma DAM**: crea archivos binarios, metadatos y etiquetas traducidos para archivos y carpetas.
 
@@ -28,14 +29,14 @@ Según la plantilla Proyecto que seleccione, tendrá a su disposición determina
 |---|:-:|:-:|
 | Flujo de trabajo de aprobación del proyecto | x |  |
 | Solicitar lanzamiento | x |  |
-| Solicitar página de aterrizaje | x |  |
+| Solicitar página de destino | x |  |
 | Solicitar correo electrónico | x | |
-| Creación de copia de idioma de DAM&ast; |  | x |
-| Creación y traducción de copia de idioma de DAM&ast; |   | x |
+| Creación de copia de idioma de DAM&amp;ast; |  | x |
+| Creación y traducción de copia de idioma de DAM&amp;ast; |   | x |
 
 >[!NOTE]
 >
->&ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para recursos](/help/sites-cloud/administering/translation/managing-projects.md).
+>&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para recursos](/help/sites-cloud/administering/translation/managing-projects.md).
 
 Los pasos para iniciar y completar flujos de trabajo son los mismos independientemente del flujo de trabajo que se elija. Solo cambian los pasos.
 
@@ -45,7 +46,7 @@ Para obtener más información sobre el uso de flujos de trabajo en AEM, consult
 
 * [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
 * [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md)
-* [Configuración de flujos de trabajo &#x200B;](/help/sites-cloud/administering/workflows-administering.md)
+* [Configuración de flujos de trabajo ](/help/sites-cloud/administering/workflows-administering.md)
 
 En esta sección se describen los flujos de trabajo disponibles para Proyectos.
 
@@ -73,4 +74,4 @@ Este flujo de trabajo permite solicitar un lanzamiento.
 
 ## Crear (y traducir) el flujo de trabajo de copia de idioma de los activos {#create-and-translate-language-copy-workflow-for-assets}
 
-Los flujos de trabajo **Crear texto en idiomas** y **Crear y traducir texto en idiomas** se tratan detalladamente en la [creación de textos de idiomas para los recursos](/help/assets/translate-assets.md).
+Los flujos de trabajo **Crear copia de idioma** y **Crear y traducir copia de idioma** se tratan detalladamente en la [creación de copias de idioma para los recursos](/help/assets/translate-assets.md).

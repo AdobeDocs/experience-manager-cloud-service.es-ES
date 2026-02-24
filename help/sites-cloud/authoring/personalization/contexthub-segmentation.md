@@ -1,13 +1,14 @@
 ---
 title: Configuración de la segmentación con ContextHub
 description: Obtenga información sobre cómo configurar la segmentación mediante ContextHub.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1659'
 ht-degree: 87%
 
 ---
@@ -20,15 +21,15 @@ En función de la información que ya haya recopilado acerca de los visitantes d
 
 Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Las [Actividades](activities.md) definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
-AEM Le permite personalizar fácilmente las experiencias de los usuarios. También le permite verificar los resultados de las definiciones de segmentos.
+AEM permite personalizar fácilmente las experiencias de los usuarios. También le permite verificar los resultados de las definiciones de segmentos.
 
 ## Acceso a segmentos {#accessing-segments}
 
 La consola [Audiencies](audiences.md) se utiliza para administrar segmentos para ContextHub, así como públicos para su cuenta de Adobe Target. Esta documentación cubre la administración de segmentos para ContextHub.
 
-Para acceder a sus segmentos en la navegación global, seleccione **Navegación > Personalización > Audiencias**. Seleccione la configuración (por ejemplo, WKND Site) para ver los segmentos:
+Para acceder a sus segmentos en la navegación global, seleccione **Navegación > Personalización > Públicos**. Seleccione la configuración (por ejemplo, WKND Site) para ver los segmentos:
 
-![Administración de audiencias](../assets/contexthub-segmentation-audiences.png)
+![Administración de públicos](../assets/contexthub-segmentation-audiences.png)
 
 ## Editor de segmentos {#segment-editor}
 
@@ -215,7 +216,6 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 1. La carpeta aparece en la lista de segmentos.
    * La forma en que ordene las columnas afectará a dónde aparece la nueva carpeta en la lista.
    * Puede seleccionar los encabezados de columna para ajustar la ordenación.
-
      ![La nueva carpeta](../assets/contexthub-folder.png)
 
 ### Modificar carpetas existentes {#modify-folders}
@@ -291,4 +291,4 @@ Si ha configurado una actividad y experiencia, puede probar fácilmente el segme
 
 ## Uso del segmento {#using-your-segment}
 
-Los segmentos se utilizan para controlar el contenido real que ven determinadas audiencias de destino. Consulte [Administración de audiencias](audiences.md) para obtener más información sobre audiencias y segmentos, y [Creación de contenido de destino](targeted-content.md) acerca del uso de audiencias y segmentos para segmentar contenido.
+Los segmentos se utilizan para controlar el contenido real que ven determinados públicos destinatarios. Consulte [Administración de públicos](audiences.md) para obtener más información sobre públicos y segmentos, y [Creación de contenido objetivo](targeted-content.md) acerca del uso de públicos y segmentos para segmentar contenido.

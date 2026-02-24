@@ -1,13 +1,14 @@
 ---
 title: Administración de actividades
 description: La consola Actividades permite crear, organizar y administrar las actividades de marketing de las marcas
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1964'
 ht-degree: 85%
 
 ---
@@ -42,9 +43,9 @@ Las actividades se muestran con una etiqueta que describe qué tipo de actividad
 >
 >* Si la opción `xt_only` está habilitada en el inquilino de Adobe Target (clientcode) que se utiliza en AEM para conectarse a Adobe Target, puede crear **solo** actividades XT en AEM.
 >
->* Si la `xt_only` opción **no está** activada en el inquilino de Adobe Target (clientcode), puede crear actividades **&#x200B;**&#x200B;XT o A/B en AEM.
+>* Si la `xt_only` opción **no está** habilitada en el inquilino de Adobe Target (clientcode), puede crear actividades **** XT o A/B en AEM.
 >
->**Nota adicional:** La `xt_only` opción es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
+>**Nota adicional:** La `xt_only` opción es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede habilitar ni deshabilitar esta opción en AEM.
 
 >[!CAUTION]
 >
@@ -79,7 +80,7 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 * **Seleccione una configuración de Target:** (Solo Adobe Target) La configuración de nube que esta actividad debe utilizar para conectarse a Adobe Target. Esta opción solo aparece cuando Adobe Target está seleccionado como motor de segmentación.
 * **Tipo de actividad**: el tipo de actividad; prueba A/B o segmentación de experiencias
 * **Objetivo:** (Opcional) Una descripción de la actividad.
-* **Experiencias:** Asignaciones entre los nombres de audiencia y los segmentos de marketing a los que está dirigiendo.
+* **Experiencias:** Asignaciones entre los nombres de público y los segmentos de marketing a los que está dirigiendo.
 * **Porcentajes de tráfico:** Si se selecciona la prueba A/B, puede cambiar el tráfico (en porcentaje) que se destina a cada experiencia.
 * **Duración:** Período de tiempo en el que se aplica la actividad.
 * **Prioridad:** Prioridad relativa de la actividad. Cuando las actividades proporcionan contenido para los mismos segmentos de usuario, la actividad de la prioridad mayor prevalece por encima de la otra.
@@ -143,7 +144,7 @@ Para publicar o cancelar la publicación de actividades, haga lo siguiente:
 
    ![Publicación desde la consola de actividades](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. Para publicar, seleccione **Publish**. Para cancelar la publicación, seleccione **Cancelar la publicación**. Las actividades se publican (o no) y su estado cambia en la consola de actividades (es posible que sea necesaria una actualización).
+1. Para publicar, seleccione **Publicar**. Para cancelar la publicación, seleccione **Cancelar la publicación**. Las actividades se publican (o no) y su estado cambia en la consola de actividades (es posible que sea necesaria una actualización).
 
 ## Actividades en las instancias de autor y publicación {#activities-on-author-and-publish-instances}
 
@@ -190,7 +191,7 @@ Estas condiciones se aplican a las actividades de las instancias de publicación
 Cuando se sincroniza una actividad, se crea una campaña correspondiente en Adobe Target:
 
 * Las actividades de la instancia de publicación tienen el mismo nombre que la campaña de Adobe Target correspondiente.
-* Las actividades de la instancia de creación se corresponden con las campañas de Target que tienen el mismo nombre con el sufijo `_author`.
+* Las actividades de la instancia de autor se corresponden con las campañas de Target que tienen el mismo nombre con el sufijo `_author`.
 
 ![Sincronización con Adobe Target](/help/sites-cloud/authoring/assets/activities-synch.png)
 

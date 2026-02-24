@@ -1,11 +1,12 @@
 ---
 title: Crear contenido accesible para Adobe Experience Manager as a Cloud Service (conformidad con WCAG 2.1)
 description: Utilice AEM as a Cloud Service para ayudar a que el contenido web sea accesible para las personas con discapacidades y lo puedan utilizar
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: da192447ddc6edbca339c9a985f95dc063183cd3
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
 source-wordcount: '13672'
 ht-degree: 92%
@@ -169,7 +170,7 @@ Insertar contenido multimedia en sus páginas web de AEM es similar a insertar u
 
 >[!NOTE]
 >
->Al utilizar contenido multimedia con contenido informativo, también se deben crear vínculos a opciones alternativas. Por ejemplo, para incluir una transcripción textual, cree una página HTML para reproducir la transcripción y añada un vínculo debajo o junto al contenido del audio.
+>Al utilizar contenido multimedia con contenido informativo, también se deben crear vínculos a opciones alternativas. Por ejemplo, para mostrar una transcripción textual, cree una página HTML para mostrar la transcripción y añada un vínculo debajo o junto al contenido del audio.
 
 #### Más información: Solo audio y solo vídeo (pregrabado) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
@@ -195,7 +196,7 @@ Los subtítulos pueden ser:
 
 Utilice subtítulos cerrados siempre que sea posible, ya que proporciona a los usuarios la opción de verlos o no.
 
-Para los subtítulos cerrados debe crear y proporcionar un archivo de subtítulos sincronizados en un formato apropiado (como [SMIL](https://www.w3.org/AudioVideo/)) junto al archivo de vídeo (los detalles de cómo hacerlo exceden el ámbito de esta guía, pero se proporcionan vínculos a algunos tutoriales en [Más información: Subtítulos (pregrabados) (1.2.2)](#more-information-captions-prerecorded)). Asegúrese de proporcionar una nota o activar la función de subtítulo en el reproductor de vídeo para que los usuarios sepan que el vídeo tiene subtítulos disponibles.
+Para los subtítulos cerrados debe crear y proporcionar un archivo de subtítulos sincronizados en un formato apropiado (como [SMIL](https://www.w3.org/AudioVideo/)) junto al archivo de vídeo (los detalles de cómo hacerlo exceden el ámbito de esta guía, pero se proporcionan vínculos a algunos tutoriales en [Más información: Subtítulos (pregrabados) (1.2.2)](#more-information-captions-prerecorded)). Asegúrese de proporcionar una nota o habilitar la función de subtítulo en el reproductor de vídeo para que los usuarios sepan que el vídeo tiene subtítulos disponibles.
 
 Si necesita utilizar subtítulos abiertos, incruste el texto en la pista de vídeo. Esto se puede conseguir con aplicaciones de edición de vídeo que permiten superponer títulos.
 
@@ -314,7 +315,7 @@ AEM facilita construir contenido web con sentido semántico utilizando los eleme
 
 Puede garantizar que las páginas web tengan la estructura adecuada mediante los siguientes elementos, según corresponda:
 
-* **Encabezados:** siempre y cuando tenga las funciones de accesibilidad del RTE activadas, AEM ofrece tres niveles de encabezado de página. Puede utilizarlas para identificar secciones y subsecciones de contenido. El encabezado 1 es el nivel más alto, mientras que el encabezado 3 es el más bajo. El administrador del sistema puede configurar el sistema para permitir el uso de más niveles de encabezado.
+* **Encabezados:** siempre y cuando tenga las funciones de accesibilidad del RTE habilitadas, AEM ofrece tres niveles de encabezado de página. Puede utilizarlas para identificar secciones y subsecciones de contenido. El encabezado 1 es el nivel más alto, mientras que el encabezado 3 es el más bajo. El administrador del sistema puede configurar el sistema para permitir el uso de más niveles de encabezado.
 
 * **Listas**: Puede utilizar HTML para especificar tres tipos diferentes de listas:
    * El elemento `<ul>` se utiliza para listas *desordenadas* (o listas con viñetas). Los elementos de listas individuales se identifican utilizando el elemento `<li>`. En el RTE, utilice el icono **Lista con viñetas**.
@@ -364,7 +365,7 @@ Puede garantizar que las páginas web tengan la estructura adecuada mediante los
 
   >[!NOTE]
   >
-  >El atributo de identificación no se encuentra disponible en las instalaciones predeterminadas. Se puede activar configurando las normas HTML y el serializador en el RTE.
+  >El atributo de identificación no se encuentra disponible en las instalaciones predeterminadas. Se puede habilitar configurando las normas HTML y el serializador en el RTE.
 
   Por ejemplo, en la tabla siguiente, los encabezados y las identificaciones se comparan para crear una asociación programática para los usuarios de tecnología de asistencia.
 
@@ -523,8 +524,8 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 1.4.2](https://ww
 
 * Criterios de éxito 1.4.3
 * Nivel AA
-* Contraste (mínimo): la presentación visual del texto y las imágenes de texto tiene una relación de contraste de al menos 4.5:1, excepto en los siguientes casos:
-   * Texto grande: el texto y las imágenes de texto a gran escala mantienen una relación de contraste de al menos 3:1.
+* Contraste (mínimo): la presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 4,5:1, excepto en los casos siguientes:
+   * Texto grande: el texto a gran escala y las imágenes de texto a gran escala tienen una relación de contraste de al menos 3:1.
    * Secundario: el texto o las imágenes de texto que forman parte de un componente de interfaz de usuario inactivo, que son [puramente decorativos](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), que no son visibles para nadie o que forman parte de una fotografía que contiene otro contenido visual significativo, no tienen requisitos de contraste.
    * Logotipos: El texto que forma parte de un logotipo o del nombre de una marca no cuenta con un requisito mínimo de contraste.
 
@@ -547,9 +548,9 @@ Las personas con ciertas deficiencias visuales quizá no puedan distinguir entre
 
 Asegúrese de que el texto contraste lo suficiente con el fondo. Las relaciones de contraste dependen del tamaño y del estilo del texto en cuestión:
 
-* Para los textos cuyo tamaño es menor de 18 puntos (o 14 puntos en negrita), la relación de contraste entre el texto o las imágenes del texto y el fondo debería ser de al menos 4.5:1.
-* Para los textos cuyo tamaño es de al menos 18 puntos (o 14 puntos en negrita), la relación de contraste debería ser de al menos 3:1.
-* Ante un fondo estampado, el fondo alrededor de cualquier texto debería estar sombreado para que la relación 4.5:1 o 3:1 se mantenga.
+* Para el texto cuyo tamaño es menor de 18 puntos (o 14 puntos en negrita), la relación de contraste entre el texto o las imágenes del texto y el fondo debe ser de al menos 4,5:1.
+* Para el texto cuyo tamaño es de al menos 18 puntos (o 14 puntos en negrita), la relación de contraste debe ser de al menos 3:1.
+* Si el fondo es un patrón, el fondo alrededor de cualquier texto debe estar sombreado para que se mantenga la relación 4.5:1 o 3:1.
 
 >[!NOTE]
 >

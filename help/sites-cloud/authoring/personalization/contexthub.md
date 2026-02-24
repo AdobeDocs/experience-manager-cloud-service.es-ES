@@ -1,13 +1,14 @@
 ---
 title: Obtención de vista previa de páginas mediante los datos de ContextHub
 description: La barra de herramientas de ContextHub muestra datos de los almacenes de ContextHub, le permite cambiar datos de los almacenes y resulta útil para obtener una vista previa del contenido
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '366'
 ht-degree: 25%
 
 ---
@@ -25,7 +26,7 @@ ContextHub instala varios modos de interfaz de usuario y módulos de IU. Es posi
 
 ## Mostrar la barra de herramientas de ContextHub {#revealing-the-contexthub-toolbar}
 
-La barra de herramientas de ContextHub está disponible en el modo de vista previa. La barra de herramientas solo está disponible en instancias de autor y únicamente si el administrador la ha activado.
+La barra de herramientas de ContextHub está disponible en el modo de vista previa. La barra de herramientas solo está disponible en instancias de autor y únicamente si el administrador la ha habilitado.
 
 ![Barra de herramientas de ContextHub](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 

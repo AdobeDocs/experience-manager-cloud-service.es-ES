@@ -1,14 +1,15 @@
 ---
 title: Configuración del contenedor y el modo de diseño
 description: Aprenda a configurar el contenedor y el modo de diseño para habilitar los diseños adaptables para los autores de contenido.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 2%
+source-wordcount: '1383'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +63,7 @@ El modo **Diseño** le permite usar el emulador para ajustar el diseño del cont
 
 ### Configurar puntos de interrupción {#configure-breakpoints}
 
-Los puntos de interrupción son vitales para un diseño interactivo y definen cómo y cuándo se ajusta el contenido al dispositivo de destino. Sin embargo, tenga cuidado, ya que cada punto de interrupción que introduzca generará trabajo adicional para que los autores se adapten al contenido. Muchas veces, dos puntos de interrupción pueden ser suficientes, incluido el punto de interrupción predeterminado, que siempre está ahí. El Adobe recomienda no crear más de tres puntos de interrupción, incluido el predeterminado, es decir, no más de dos nodos por debajo de `cq:responsive/breakpoint`.
+Los puntos de interrupción son vitales para un diseño interactivo y definen cómo y cuándo se ajusta el contenido al dispositivo de destino. Sin embargo, tenga cuidado, ya que cada punto de interrupción que introduzca generará trabajo adicional para que los autores se adapten al contenido. Muchas veces, dos puntos de interrupción pueden ser suficientes, incluido el punto de interrupción predeterminado, que siempre está ahí. Adobe recomienda no crear más de tres puntos de interrupción, incluido el predeterminado; es decir, no más de dos nodos por debajo de `cq:responsive/breakpoint`.
 
 * Los puntos de interrupción tienen un título y un ancho:
    * El título describe la agrupación de dispositivos genéricos, con orientación si es necesario.
@@ -88,7 +89,7 @@ Debido a la herencia, solo debe hacerlo para la página raíz del contenido.
 
 #### Configuración de puntos de interrupción mediante CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
-1. Con el CRXDE Lite, vaya a:
+1. Con CRXDE Lite, vaya a:
 
    * Definición de la plantilla.
    * El nodo `jcr:content` de su página.
@@ -158,7 +159,7 @@ Los dos ejemplos siguientes ilustran la definición:
 
 #### CSS para puntos de interrupción con LESS {#css-for-breakpoints-using-less}
 
-AEM Utiliza LESS para generar partes del CSS necesario, que deben incluirse para los proyectos.
+AEM utiliza LESS para generar partes del CSS necesario, que deben incluirse para los proyectos.
 
 Debe crear una [biblioteca de cliente](/help/implementing/developing/introduction/clientlibs.md) para proporcionar configuraciones y llamadas a funciones adicionales. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
 
@@ -194,7 +195,7 @@ La definición de la cuadrícula base se encuentra en:
 
 #### Consideraciones de estilo {#styling-considerations}
 
-Los componentes contenidos en un contenedor interactivo cambian de tamaño (junto con sus respectivos elementos DOM HTML) según el tamaño de la cuadrícula interactiva. Por lo tanto, en estas circunstancias, se recomienda evitar (o actualizar) las definiciones de elementos DOM de ancho fijo (contenidos).
+Los componentes contenidos en un contenedor interactivo cambian de tamaño (junto con sus respectivos elementos DOM de HTML) según el tamaño de la cuadrícula interactiva. Por lo tanto, en estas circunstancias, se recomienda evitar (o actualizar) las definiciones de elementos DOM de ancho fijo (contenidos).
 
 Por ejemplo:
 

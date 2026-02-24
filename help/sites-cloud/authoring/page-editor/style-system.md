@@ -1,13 +1,14 @@
 ---
 title: Sistema de estilos
 description: El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: d2cd112de034ca6ea22590245fb480622acf258a
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1344'
 ht-degree: 83%
 
 ---
@@ -122,7 +123,7 @@ La versión 2 y versiones posteriores de los componentes principales están tota
 
 Los siguientes pasos solo son necesarios para habilitar el sistema de estilos para sus propios componentes personalizados o para [habilitar la pestaña Estilos opcional en el cuadro de diálogo Editar](#enable-styles-tab-edit).
 
-### Activar la pestaña Estilo en el cuadro de diálogo Diseño {#enable-styles-tab-design}
+### Habilitar la pestaña Estilo en el cuadro de diálogo Diseño {#enable-styles-tab-design}
 
 Para que un componente funcione con el sistema de estilos de AEM y se muestre la pestaña Estilo en el cuadro de diálogo de diseño, el desarrollador de componentes debe incluir la pestaña de estilo con la siguiente configuración del componente:
 
@@ -134,7 +135,7 @@ Para que un componente funcione con el sistema de estilos de AEM y se muestre la
 
 Con el componente configurado, los estilos configurados por los autores de la página son insertados automáticamente por AEM en el elemento de decoración que AEM envuelve automáticamente alrededor de cada componente editable. El componente en sí no necesita hacer nada más para que esto suceda.
 
-### Activar la pestaña Estilos en el cuadro de diálogo Editar {#enable-styles-tab-edit}
+### Habilitar la pestaña Estilos en el cuadro de diálogo Editar {#enable-styles-tab-edit}
 
 También hay disponible una pestaña Estilos opcional en el cuadro de diálogo Editar. A diferencia de la pestaña Cuadro de diálogo de diseño, la pestaña en el cuadro de diálogo Editar no es esencial para que funcione el sistema de estilos, pero es una interfaz alternativa opcional para que un autor de contenido defina estilos.
 
@@ -148,7 +149,7 @@ La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la
 
 >[!NOTE]
 >
->La pestaña Estilos del cuadro de diálogo Editar no está activada de forma predeterminada.
+>La pestaña Estilos del cuadro de diálogo Editar no está habilitada de forma predeterminada.
 
 ### Estilos con nombres de elemento       {#styles-with-element-names}
 

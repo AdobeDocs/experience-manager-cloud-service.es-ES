@@ -4,10 +4,11 @@ description: Obtenga información sobre cómo editar las propiedades de una pág
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '867'
 ht-degree: 24%
 
 ---
@@ -24,7 +25,7 @@ Obtenga información sobre cómo editar [las propiedades de una página](/help/s
 
 Puede editar las propiedades de página desde varios lugares de AEM.
 
-* [Desde el &#x200B;](#from-the-sites-console)
+* [Desde el ](#from-the-sites-console)
 * [Desde el editor de páginas](#from-the-page-editor)
 * [Desde el editor universal](#from-the-universal-editor)
 

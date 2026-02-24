@@ -3,12 +3,13 @@ title: Traducción y Administrador de varios sitios
 description: Aprenda a reutilizar el contenido en su proyecto y a administrar sitios web multilingües en AEM.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 96%
+source-wordcount: '415'
+ht-degree: 95%
 
 ---
 

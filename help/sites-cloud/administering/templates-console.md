@@ -4,10 +4,11 @@ description: Descubra cómo la consola de plantillas sirve como ubicación centr
 solution: Experience Manager Sites
 feature: Administering
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '863'
 ht-degree: 2%
 
 ---

@@ -1,14 +1,15 @@
 ---
-title: Métodos abreviados del teclado para las consolas
+title: 'Métodos abreviados del teclado para las consolas  '
 description: Ahorre tiempo durante la creación mediante estos métodos abreviados del teclado
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 61%
+source-wordcount: '384'
+ht-degree: 60%
 
 ---
 
@@ -50,19 +51,19 @@ Las teclas modificadoras utilizadas para los atajos de teclado varían en funci�
 
 ## Navegadores y métodos abreviados del teclado {#browsers-and-keyboard-shortcuts}
 
-AEM AEM evita los métodos abreviados comunes que ya utilizan los exploradores más populares, aunque el comportamiento predeterminado del explorador no se anula con los métodos abreviados de teclado de la barra de herramientas de la.
+AEM evita los métodos abreviados comunes que ya utilizan los exploradores más populares, aunque el comportamiento predeterminado del explorador no se anula con los métodos abreviados de AEM.
 
 Además, los métodos abreviados de teclado son los mismos para todas las configuraciones regionales y distribuciones de teclado.
 
 >[!NOTE]
 >
->AEM Los métodos abreviados de teclado no anulan el comportamiento predeterminado del explorador.
+>Los métodos abreviados de AEM no anulan el comportamiento predeterminado del explorador.
 >
->AEM AEM En caso de que se produzcan conflictos entre los accesos directos del explorador y los de la barra de herramientas, los accesos directos del explorador no funcionarán, lo que da lugar a la funcionalidad del explorador.
+>En caso de que se produzcan conflictos entre AEM y los accesos directos del explorador, los accesos directos de AEM no funcionarán, lo que da lugar a la funcionalidad del explorador.
 
 >[!CAUTION]
 >
->AEM Los métodos abreviados de teclado de la aplicación podrían interferir con los lectores de pantalla, algunas características del explorador y otras herramientas de accesibilidad.
+>Los métodos abreviados del teclado de AEM podrían interferir con los lectores de pantalla, algunas características del explorador y otras herramientas de accesibilidad.
 >
 >Adobe recomienda [desactivar los métodos abreviados del teclado de AEM](#deactivating-keyboard-shortcuts) al utilizar un lector de pantalla.
 

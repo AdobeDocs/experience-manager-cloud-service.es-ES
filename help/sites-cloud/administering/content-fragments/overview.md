@@ -3,11 +3,12 @@ title: Información general sobre los conceptos y las prácticas recomendadas pa
 description: Descubra cómo los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service le permiten crear y utilizar contenido estructurado; ideal para la entrega sin encabezado y la creación de páginas.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2408'
 ht-degree: 28%
 
 ---

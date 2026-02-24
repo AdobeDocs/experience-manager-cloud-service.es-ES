@@ -3,11 +3,12 @@ title: Creación y sincronización de Live Copies
 description: Aprenda a crear y sincronizar Live Copies para reutilizar el contenido en el sitio.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4270'
+source-wordcount: '4276'
 ht-degree: 94%
 
 ---
@@ -488,11 +489,11 @@ Cancele la herencia para cambiar el contenido del componente o eliminarlo:
 
    La barra de herramientas de componentes se actualiza para incluir todos los comandos de edición (adecuados).
 
-### Reactivación de la herencia para un componente {#re-enabling-inheritance-for-a-component}
+### Rehabilitación de la herencia para un componente {#re-enabling-inheritance-for-a-component}
 
 Para habilitar la herencia para un componente, seleccione el icono **Volver a habilitar la herencia** en la barra de herramientas de componentes.
 
-![Icono Reactivar herencia](../assets/re-enable-inheritance-icon.png)
+![Icono Rehabilitar herencia](../assets/re-enable-inheritance-icon.png)
 
 ### Cambio del orden de los componentes en una página Live Copy {#changing-the-order-of-components-on-a-live-copy-page}
 

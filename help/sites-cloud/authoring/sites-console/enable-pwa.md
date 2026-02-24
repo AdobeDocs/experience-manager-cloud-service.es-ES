@@ -1,19 +1,20 @@
 ---
-title: Activación de las funciones progresivas de la aplicación web
+title: Habilitación de las funciones progresivas de la aplicación web
 description: AEM Sites permite al autor del contenido habilitar funcionalidades de aplicación web progresiva en cualquier sitio a través de una configuración sencilla, en lugar de programarlas.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 index: false
-source-git-commit: 19a16bbfc23806f8bc655c0d19713df500e3b12b
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1902'
 ht-degree: 61%
 
 ---
 
-# Activación de las funciones progresivas de la aplicación web {#enabling-pwa}
+# Habilitación de las funciones progresivas de la aplicación web {#enabling-pwa}
 
 A través de una configuración sencilla, un autor de contenido ahora puede habilitar las funciones de aplicación web progresiva (PWA) para las experiencias creadas en AEM Sites.
 
@@ -103,7 +104,7 @@ Según el proyecto, es posible que desee incluir diferentes tipos de extensiones
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 ```
 
-## Activación de la PWA para el sitio {#enabling-pwa-for-your-site}
+## Habilitación de la PWA para el sitio {#enabling-pwa-for-your-site}
 
 Con [cumplidos los requisitos previos](#prerequisites), es fácil para un autor de contenido habilitar las características de PWA en un sitio. A continuación se muestra una descripción básica de cómo hacerlo. Las opciones individuales se detallan en la sección [Opciones detalladas](#detailed-options).
 

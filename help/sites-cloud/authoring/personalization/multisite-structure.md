@@ -1,13 +1,14 @@
 ---
 title: Estructurar la administración de diversos sitios para el contenido segmentado
 description: Un diagrama muestra cómo se estructura la compatibilidad con varios sitios para el contenido de destino
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '187'
 ht-degree: 39%
 
 ---
@@ -20,7 +21,7 @@ Las áreas aparecen debajo de **/content/campaigns/&lt;brand>** y, de forma pred
 
 ![Estructura de varios sitios](/help/sites-cloud/authoring/assets/multisite-structure.png)
 
-Para buscar contenido de destino, las páginas o sitios pueden asignarse a un área. AEM Si no hay ningún área configurada, vuelve a la zona principal para esta marca específica.
+Para buscar contenido de destino, las páginas o sitios pueden asignarse a un área. Si no hay ningún área configurada, AEM vuelve al área principal para esta marca específica.
 
 En el diagrama siguiente se muestra un ejemplo de cómo funciona la lógica para tres sitios, llamados site1, site2 y site3.
 

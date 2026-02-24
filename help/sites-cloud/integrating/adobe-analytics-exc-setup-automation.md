@@ -3,12 +3,13 @@ title: Integración de Adobe Analytics con la automatización de la configuraci�
 description: La automatización de la configuración de Experience Cloud proporciona una forma sencilla y automatizada de integrar e instrumentar Experience Manager Sites con las Etiquetas de Experience Platform y Adobe Analytics mediante una sencilla interfaz de asistente de IU. Aprenda a utilizar la configuración automatizada con su propio sitio.
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 solution: Experience Manager Sites
-source-git-commit: 4a3e65ef6a8aa08c8bc78db31f94272334994ac5
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 86%
+source-wordcount: '733'
+ht-degree: 87%
 
 ---
 
@@ -28,7 +29,7 @@ En este vídeo se explica cómo un sitio de AEM está integrado con etiquetas de
 
 ## Requisitos 
 
-La configuración de automatización está diseñada para funcionar de forma predeterminada con un sitio de AEM creado mediante [Componentes principales de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) con la [Capa de datos del cliente de Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es) activada. Puede generar un nuevo sitio que tenga estas funciones activadas automáticamente mediante el [Tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) o creando un sitio con una [Plantilla de sitio](/help/journey-sites/quick-site/create-site.md).
+La configuración de automatización está diseñada para funcionar de forma predeterminada con un sitio de AEM creado mediante [Componentes principales de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) con la [Capa de datos del cliente de Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=es) habilitada. Puede generar un nuevo sitio que tenga estas funciones habilitadas automáticamente mediante el [Tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) o creando un sitio con una [Plantilla de sitio](/help/journey-sites/quick-site/create-site.md).
 
 ## Requisitos previos {#prerequisites}
 

@@ -1,13 +1,14 @@
 ---
 title: Edición del contenido de la página con el editor de páginas de AEM
 description: El editor de páginas de AEM es una potente herramienta para crear contenido.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1634'
 ht-degree: 34%
 
 ---
@@ -256,7 +257,7 @@ Puede cancelar y volver a habilitar la herencia. Según el componente, estas opc
 
 * **Volver a habilitar la herencia** si la herencia ya se ha cancelado
 
-  ![Botón Volver a activar herencia](assets/edit-content-re-enable-inheritance.png)
+  ![Botón Volver a habilitar herencia](assets/edit-content-re-enable-inheritance.png)
 
 * **El despliegue** también está disponible en el modelo o en el origen de Live Copy
 

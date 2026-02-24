@@ -3,11 +3,12 @@ title: Despliegue de conflictos
 description: Obtenga información sobre cómo administrar y resolver conflictos de despliegue del Administrador de varios sitios.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '925'
 ht-degree: 61%
 
 ---
@@ -26,7 +27,7 @@ Para garantizar que el despliegue no esté bloqueado, las definiciones posibles 
 * Qué páginas se cambian de nombre y cómo
 * Cómo afecta esto a cualquier contenido publicado
 
-El comportamiento predeterminado de Adobe Experience Manager AEM () es que el contenido publicado no se ve afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, ese contenido se publica después de la gestión y el despliegue del conflicto.
+El comportamiento predeterminado de Adobe Experience Manager (AEM) es que el contenido publicado no se ve afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, ese contenido se publica después de la gestión y el despliegue del conflicto.
 
 Además de la funcionalidad estándar, se pueden agregar controladores de conflicto personalizados para implementar distintas reglas. También pueden permitir acciones de publicación como un proceso individual.
 
@@ -118,7 +119,7 @@ Los controladores de conflictos personalizados pueden hacer lo siguiente:
 
 ### Comportamiento cuando los controladores de conflicto están desactivados {#behavior-when-conflict-handling-deactivated}
 
-AEM Si [desactiva manualmente la administración de conflictos](#rollout-manager-and-conflict-handling), no realiza ninguna acción en las páginas que tengan conflictos con el usuario, ya que no realiza ninguna acción en las mismas. Las páginas que no entran en conflicto se despliegan según lo esperado.
+Si [desactiva manualmente la administración de conflictos](#rollout-manager-and-conflict-handling), AEM no realiza ninguna acción en ninguna página en conflicto. Las páginas que no entran en conflicto se despliegan según lo esperado.
 
 >[!CAUTION]
 >

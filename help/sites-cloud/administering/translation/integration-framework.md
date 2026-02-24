@@ -3,11 +3,12 @@ title: Configuración del marco de trabajo de integración de traducción
 description: Aprenda a configurar el marco de trabajo de integración de traducciones para conectarse con servicios de traducción de terceros.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1453'
 ht-degree: 69%
 
 ---
@@ -24,13 +25,13 @@ Para obtener información general sobre las funciones de traducción de contenid
 
 >[!TIP]
 >
->Si no tiene experiencia en la traducción de contenido, consulte el [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md), que es una ruta guiada a través de la traducción del contenido de AEM Sites AEM AEM mediante herramientas de traducción potentes que se utilizan para traducir contenido. Es ideal para aquellos que no tienen experiencia en traducción o en traducción de sitios.
+>Si es nuevo traduciendo contenido, consulte [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md), que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia ni en traducción ni en AEM.
 
 ## Conexión a un proveedor de servicios de traducción {#connecting-to-a-translation-service-provider}
 
-AEM Cree una configuración en la nube que se conecte con su proveedor de servicios de traducción de forma que pueda acceder a la.
+Cree una configuración en la nube que conecte AEM con su proveedor de servicios de traducción.
 
-AEM De forma predeterminada, incluye la capacidad de [conectar con Microsoft® Translator](connect-ms-translator.md). AEM Hay otros proveedores de tecnología de traducción con conectores de trabajo que son miembros del programa de socios de Adobe Exchange [aquí](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
+AEM incluye la capacidad de [conectarse a Microsoft® Translator](connect-ms-translator.md) de forma predeterminada. Otros proveedores de tecnología de traducción con conectores de AEM que son miembros del programa de socios de Adobe Exchange se encuentran [aquí](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
 
 Después de instalar un paquete de conector, puede crear una configuración de la nube para él. Normalmente, debe proporcionar sus credenciales para autenticarse en el servicio de traducción. Para obtener información sobre cómo agregar una configuración de nube para el conector de Microsoft® Translator, consulte [Integración con Microsoft® Translator](connect-ms-translator.md).
 
@@ -58,7 +59,7 @@ Después de configurar un marco de trabajo de integración de traducciones, pued
 
 Una sola configuración del marco de trabajo controla cómo se traducen el contenido de la página y los recursos. Para crear una nueva configuración de traducción haga lo siguiente:
 
-1. En el [menú de navegación global](/help/sites-cloud/authoring/basic-handling.md#global-navigation), seleccione **Herramientas > Cloud Service y Cloud Service de traducción**.
+1. En el [menú de navegación global](/help/sites-cloud/authoring/basic-handling.md#global-navigation), seleccione **Herramientas > Cloud Services y Cloud Services de traducción**.
 1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. A menudo se basa en un sitio en particular, pero puede ser global.
 1. Proporcione la siguiente información en los campos y seleccione **Crear**.:
    1. Seleccione **Tipo de configuración** en la lista desplegable.
@@ -79,7 +80,7 @@ La pestaña **Sitios** controla cómo se traduce el contenido de la página.
 | Categoría de contenido | (Solo traducción automática) Esta propiedad es una categoría que describe el contenido que está traduciendo. La categoría puede afectar a la elección de la terminología y el estilo al traducir el contenido. |
 | Traducir etiquetas | Esta opción permite traducir las etiquetas asociadas con la página. |
 | Traducir recursos de la página | Esta propiedad define cómo traducir recursos que se añaden a componentes del sistema de archivos o a los que se hace referencia desde recursos:<br>- No traducir: los recursos de la página no se traducen.<br>- Uso del flujo de trabajo de traducción de sitios: los recursos se gestionan según las propiedades de configuración de la pestaña **Sitios**.<br>- Uso del flujo de trabajo de traducción de recursos: los recursos se gestionan según las propiedades configuradas en la pestaña **Recursos**. |
-| Ejecutar traducción automáticamente | Active esta propiedad para ejecutar los trabajos de traducción automáticamente después de crear los proyectos. Cuando selecciona esta opción, no tiene la oportunidad de revisar y ampliar el ámbito del trabajo de traducción. |
+| Ejecutar traducción automáticamente | Habilite esta propiedad para ejecutar los trabajos de traducción automáticamente después de crear los proyectos. Cuando selecciona esta opción, no tiene la oportunidad de revisar y ampliar el ámbito del trabajo de traducción. |
 | Deshabilitar traducción de solo actualización | Cuando se activa esta opción, al actualizar el proyecto de traducción se envían todos los campos traducibles para su traducción, no solo los modificados desde la última traducción. |
 
 ### Propiedades de configuración de recursos {#assets-configuration-properties}

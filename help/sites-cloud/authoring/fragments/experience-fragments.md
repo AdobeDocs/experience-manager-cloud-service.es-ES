@@ -1,13 +1,14 @@
 ---
 title: Fragmentos de experiencias
 description: Utilice los fragmentos de experiencias de Adobe Experience Manager as a Cloud Service para que sus experiencias puedan reutilizarse y adaptarse.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2148'
 ht-degree: 91%
 
 ---

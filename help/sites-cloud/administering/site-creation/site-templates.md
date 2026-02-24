@@ -3,11 +3,12 @@ title: Plantillas de sitios
 description: Descubra cómo se pueden utilizar las plantillas de sitio AEM para predefinir la estructura del sitio y el contenido inicial para permitirle crear sitios rápidamente.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '493'
 ht-degree: 82%
 
 ---
@@ -23,7 +24,7 @@ Es práctico tener estructuras predefinidas disponibles para implementar rápida
 
 Las plantillas de sitio generalmente incluyen contenido y estructura base del sitio, así como información de estilo del sitio, conocida como [tema del sitio](site-themes.md), para poner en marcha un nuevo sitio rápidamente. Los administradores seleccionan una plantilla de sitio en la que basar el sitio [durante el proceso de creación del sitio.](create-site.md)
 
-Las plantillas son eficaces, ya que se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades comerciales.
+Las plantillas son eficaces, ya que se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades empresariales.
 
 >[!NOTE]
 >
@@ -31,7 +32,7 @@ Las plantillas son eficaces, ya que se pueden reutilizar y personalizar. Y como 
 >
 >Las plantillas de sitio de AEM no deben confundirse con los [temas de sitio de AEM.](site-themes.md) Los temas de sitio de AEM solo contienen la información de estilo de un sitio AEM. Las plantillas de sitio de AEM definen la estructura del sitio y el contenido inicial, y contienen un tema de sitio de AEM para permitir la [creación rápida del sitio.](create-site.md)
 
-### Plantillas de sitio proporcionadas por Adobe {#adobe-templates}
+### Plantillas del sitio proporcionadas por Adobe {#adobe-templates}
 
 {{adobe-templates}}
 

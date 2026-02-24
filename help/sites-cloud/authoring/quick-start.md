@@ -1,13 +1,14 @@
 ---
 title: Guía rápida de introducción para la creación
 description: Comience aquí para obtener una guía rápida y de alto nivel para empezar a crear contenido mediante la consola Sites.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '755'
 ht-degree: 3%
 
 ---
@@ -25,11 +26,11 @@ Comience aquí para obtener una guía rápida y de alto nivel que le ayudará a 
 
 Tanto si desea crear contenido nuevo como ver y administrar el contenido existente, la descripción general central es la consola **Sites**.
 
-AEM Cuando inicie sesión por primera vez en el servicio de asistencia de, llegará a la pantalla de navegación global de. Simplemente toque o haga clic en **Sitios** para abrir la consola **Sitios**.
+La primera vez que inicie sesión en AEM, llegará a la pantalla de navegación global. Simplemente toque o haga clic en **Sitios** para abrir la consola **Sitios**.
 
 ![Navegación global](assets/getting-started-global-navigation.png)
 
-AEM Para acceder a la navegación global desde cualquier otra ubicación de la red de navegación global, pulse o haga clic en el vínculo **Adobe Experience Manager AEM** en la parte superior izquierda de cualquier pantalla de la red de navegación global, lo que abre una superposición desplegable de la navegación global.
+Para acceder a la navegación global desde cualquier otra ubicación en AEM, toque o haga clic en el vínculo **Adobe Experience Manager** en la parte superior izquierda de cualquier pantalla de AEM, que abre una superposición desplegable de la navegación global.
 
 Una vez que estés en la consola **Sites**, el contenido será fácil de navegar y se presentará en una vista de columna de forma predeterminada.
 
@@ -68,7 +69,7 @@ En cualquier momento también puede utilizar el icono de búsqueda en la parte s
 
 La búsqueda aparece como una superposición desplegable sobre toda la consola. Escriba los términos de búsqueda para encontrar el contenido.
 
-## Creación de contenido {#creating}
+## Creación de contenido  {#creating}
 
 Para crear una página nueva, simplemente navegue hasta donde desee que esté en la jerarquía de contenido y, a continuación, toque o haga clic en el botón **Crear** de la barra de herramientas.
 
@@ -96,11 +97,11 @@ Para mover o copiar una página, selecciónela en la consola y, a continuación,
 
 ## Publicación de contenido {#publishing}
 
-Cuando haya terminado de realizar los cambios que desea realizar en el contenido mediante la consola **Sitios**, podrá publicar el contenido. Seleccione el contenido que desea publicar y toque o haga clic en el icono **Quick Publish** de la barra de herramientas.
+Cuando haya terminado de realizar los cambios que desea realizar en el contenido mediante la consola **Sitios**, podrá publicar el contenido. Seleccione el contenido que desea publicar y toque o haga clic en el icono **Publicación rápida** de la barra de herramientas.
 
 ![Publicación rápida](assets/getting-started-quick-publish.png)
 
-Confirme la publicación con otro toque o haga clic en **Publish** en el cuadro de diálogo.
+Confirme la publicación con otro toque o haga clic en **Publicar** en el cuadro de diálogo.
 
 ## Recursos adicionales {#additional-resources}
 
@@ -111,5 +112,5 @@ A continuación, se muestran algunos recursos más que analizan en detalle todas
 * [Gestión básica](/help/sites-cloud/authoring/basic-handling.md)
 * [Conceptos de creación](/help/sites-cloud/authoring/author-publish.md)
 * [Consola Sites](/help/sites-cloud/authoring/sites-console/introduction.md)
-* [Editor de página](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+* [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md)
+* [Publicación de páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md)

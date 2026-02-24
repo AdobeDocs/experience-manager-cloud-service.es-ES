@@ -1,13 +1,14 @@
 ---
 title: Información acerca de la segmentación
 description: La segmentación es una consideración clave al crear una campaña
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '542'
 ht-degree: 72%
 
 ---
@@ -36,24 +37,24 @@ Al analizar la segmentación, se emplea la siguiente terminología:
 
 * **Visitante**: Un visitante es una persona que visita un sitio web. La visita de esa persona suele comenzar desde una página de referencia y luego pasa a una o más vistas de página del sitio web. Se puede crear un perfil de comportamiento a partir de los detalles de la visita de esa persona.
 * **Usuario**: Un usuario es un visitante que se registra con el sitio web para recibir un perfil de cuenta. Para generar su perfil, proporcionan una identificación adicional, como una dirección de correo electrónico y el sexo, entre otros. También se puede recopilar información adicional, como actividad de la comunidad y patrones de compra, entre otros. A partir de la información proporcionada en el perfil, se puede crear un perfil demográfico.
-* **Pista**: Una pista es una característica o propiedad de un visitante que se puede usar para determinar la pertenencia en un segmento específico.
+* **Pista**: Una pista es una característica o propiedad de un visitante que se puede usar para determinar el abono a un segmento específico.
 * **Segmento**: Un segmento es un conjunto de visitantes que comparten determinadas características. Los segmentos deben ser distintivos, con un mínimo de superposición con otros segmentos.
 * **Características de comportamiento**: Las características de comportamiento son las que se relacionan con el comportamiento de un visitante en el sitio web. Entre estas características se incluyen:
    * Interés en el sitio web, incluyendo las páginas y los productos comprados
    * Interés en el sitio web de referencia, incluyendo los términos de búsqueda utilizados o los anuncios en los que se ha hecho clic
    * Interés en otros sitios; se determina con herramientas como Spyjax
-   * Fidelidad del visitante; duración de la visita, frecuencia de las visitas
+   * Lealtad del visitante; duración de la visita, frecuencia de las visitas
 * **Características demográficas** - Son características de población seleccionadas, incluidas:
    * Edad
    * Ingresos
    * Tamaño de familia
    * Estado civil
-   * Sexo
+   * Género
    * Lugar de residencia
 * **Características derivadas**: Algunas características demográficas son difíciles de determinar sin registro, pero se pueden obtener combinando características demográficas y de comportamiento.
    * Por ejemplo, la combinación de la dirección URL de referencia (como característica de comportamiento) con datos demográficos (adquiridos con herramientas como [Google Ad Planner](https://www.google.com/adplanner/)) permite que los propietarios del sitio obtengan características demográficas de los visitantes.
 * **Subsegmentos**: Un segmento se puede subdividir en varios subsegmentos. Esto se lleva a cabo definiendo características adicionales.
-* **Página teaser**: Una página de teaser se dirige a una audiencia específica. Incluye contenido reutilizable que se puede emplear en el párrafo de teaser.
+* **Página teaser**: Una página de teaser se dirige a un público específico. Incluye contenido reutilizable que se puede emplear en el párrafo de teaser.
 * **Campaña**: Una campaña es una colección de páginas de teaser y de páginas de marketing por correo electrónico como, por ejemplo, newsletters o invitaciones. Una campaña se suele llevar a cabo durante un período limitado y está precedida de otra campaña.
 * **Párrafo teaser**: Se trata de un párrafo que extrae el contenido de otra página que depende de una estrategia de selección. Esta estrategia de selección puede tener en cuenta segmentos y campañas.
 * **Lista**: Una lista se extrae de un segmento de usuarios registrados. Por ejemplo, la ubicación se utiliza para dirigir los contenidos del párrafo de teaser.

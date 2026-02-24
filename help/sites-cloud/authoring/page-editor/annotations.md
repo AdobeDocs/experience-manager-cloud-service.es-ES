@@ -1,20 +1,21 @@
 ---
 title: Adición de anotaciones de página
 description: Utilice el modo de anotación para dejar anotaciones y bocetos en páginas de la misma manera que utiliza notas adhesivas para ayudarle en el proceso de revisión de contenido.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '682'
 ht-degree: 72%
 
 ---
 
 # Adición de anotaciones de página {#adding-page-annotations}
 
-La creación de contenido para la experiencia digital suele requerir análisis y comentarios antes de la publicación. AEM Para facilitar este proceso de comentarios, le permite añadir anotaciones al contenido de, en su lugar de trabajo.
+La creación de contenido para la experiencia digital suele requerir análisis y comentarios antes de la publicación. Para facilitar este proceso de comentarios, AEM permite añadir anotaciones al contenido.
 
 Una anotación coloca un boceto simple o una nota (como las notas adhesivas reales) en la página. La anotación le permite dejar comentarios o preguntas para otros autores y revisores.
 

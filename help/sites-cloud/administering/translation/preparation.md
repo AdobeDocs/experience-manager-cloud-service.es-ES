@@ -3,11 +3,12 @@ title: Preparación del contenido para su traducción
 description: Aprenda a preparar el contenido para la traducción al desarrollar sitios web multilingües.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '762'
 ht-degree: 66%
 
 ---
@@ -18,7 +19,7 @@ Por lo general, los sitios web multilingües ofrecen contenido en varios idiomas
 
 >[!TIP]
 >
->Si no tiene experiencia en la traducción de contenido, consulte el [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md), que es una ruta guiada a través de la traducción del contenido de AEM Sites AEM AEM mediante herramientas de traducción potentes que se utilizan para traducir contenido. Es ideal para aquellos que no tienen experiencia en traducción o en traducción de sitios.
+>Si es nuevo traduciendo contenido, consulte [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md), que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia ni en traducción ni en AEM.
 
 El [Sitio del tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) incluye varias ramas de idioma y utiliza la siguiente estructura:
 
@@ -53,26 +54,26 @@ El [Sitio del tutorial de WKND](/help/implementing/developing/introduction/devel
 
 La copia de idioma para la que creó originalmente el contenido del sitio es el maestro de idioma. El maestro de idiomas es la fuente que se traduce a otros idiomas.
 
-Cada rama de idioma de un sitio se denomina copia de idioma. La página raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, `/content/wknd/fr` es la raíz del idioma para la copia en francés. Las copias de idioma deben usar una [raíz de idioma configurada correctamente](preparation.md#creating-a-language-root) para que el idioma correcto se dirija cuando se realicen traducciones de un sitio de origen.
+Cada rama de idioma de un sitio se denomina copia de idioma. La página raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, `/content/wknd/fr` es la raíz del idioma para la copia de idioma en francés. Las copias de idioma deben usar una [raíz de idioma configurada correctamente](preparation.md#creating-a-language-root) para que el idioma correcto se dirija cuando se realicen traducciones de un sitio de origen.
 
 Siga estos pasos para preparar su sitio para la traducción:
 
 1. Cree la raíz de idioma del maestro de idioma. Por ejemplo, la raíz de idioma del sitio de demostración de WKND en inglés es `/content/wknd/language-masters/en`. Asegúrese de que la raíz del idioma esté configurada correctamente según la información de [Creación de una raíz de idioma](preparation.md#creating-a-language-root).
 1. Cree el contenido del maestro de idioma.
-1. Cree la raíz de idioma de cada copia de idioma para su sitio. Por ejemplo, la copia en francés del sitio de muestra de WKND es `/content/wknd/language-masters/fr`.
+1. Cree la raíz de idioma de cada copia de idioma para su sitio. Por ejemplo, la copia de idioma en francés del sitio de muestra de WKND es `/content/wknd/language-masters/fr`.
 
-Después de preparar el contenido para la traducción, puede crear automáticamente las páginas que faltan en las copias de idioma y en los proyectos de traducción asociados. AEM (Consulte [Creación de un proyecto de traducción](managing-projects.md).) Para obtener una descripción general del proceso de traducción de contenido en la documentación, consulte [Traducción de contenido para sitios web multilingües](overview.md).
+Después de preparar el contenido para la traducción, puede crear automáticamente las páginas que faltan en las copias de idioma y en los proyectos de traducción asociados. (Consulte [Creación de un proyecto de traducción](managing-projects.md).) Para obtener una descripción general del proceso de traducción de contenido en AEM, consulte [Traducción de contenido para sitios web multilingües](overview.md).
 
 ## Creación de una raíz de idioma {#creating-a-language-root}
 
-Cree una raíz de idioma como la página raíz de una copia de idioma que identifique el idioma del contenido. Después de crear la raíz del idioma, puede crear proyectos de traducción que incluyan la copia del idioma.
+Cree una raíz de idioma como la página raíz de una copia de idioma que identifique el idioma del contenido. Después de crear la raíz del idioma, puede crear proyectos de traducción que incluyan la copia de idioma.
 
 Para crear la raíz de idioma, cree una página y utilice un código de idioma ISO como valor para la propiedad **Nombre**. El código de idioma debe tener uno de los siguientes formatos:
 
 * `<language-code>` - El código de idioma admitido es un código de dos letras como se define en la norma ISO-639-1, por ejemplo, `en`.
 * `<language-code>_<country-code>` o `<language-code>-<country-code>`: el código de país admitido es un código de dos letras en minúsculas o mayúsculas, tal como se define en la norma ISO 3166, por ejemplo, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Puede utilizar cualquiera de los dos formatos, según la estructura que haya elegido para el sitio global. Por ejemplo, la página raíz de la copia en francés del sitio WKND tiene `fr` como la propiedad **Nombre**. La propiedad **Name** se usa como nombre del nodo de página en el repositorio y, por lo tanto, determina la ruta de acceso de la página (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+Puede utilizar cualquiera de los dos formatos, según la estructura que haya elegido para el sitio global. Por ejemplo, la página raíz de la copia de idioma en francés del sitio WKND tiene `fr` como la propiedad **Nombre**. La propiedad **Name** se usa como nombre del nodo de página en el repositorio y, por lo tanto, determina la ruta de acceso de la página (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Vaya a Sitios.  
 1. Seleccione el sitio para el que desea crear una copia de idioma.

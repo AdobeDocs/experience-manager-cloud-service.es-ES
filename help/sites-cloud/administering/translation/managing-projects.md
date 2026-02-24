@@ -3,11 +3,12 @@ title: Administración de proyectos de traducción
 description: Aprenda a crear y administrar proyectos de traducción automática y humana en AEM.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
-source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4129'
+source-wordcount: '4135'
 ht-degree: 79%
 
 ---
@@ -18,7 +19,7 @@ Los proyectos de traducción le permiten administrar la traducción del contenid
 
 >[!TIP]
 >
->Si no tiene experiencia en la traducción de contenido, consulte el [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md), que es una ruta guiada a través de la traducción del contenido de AEM Sites AEM AEM mediante herramientas de traducción potentes que se utilizan para traducir contenido. Es ideal para aquellos que no tienen experiencia en traducción o en traducción de sitios.
+>Si es nuevo traduciendo contenido, consulte [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md), que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia ni en traducción ni en AEM.
 
 Cuando se añaden recursos a un proyecto de traducción, se crea un trabajo de traducción para ellos. Los trabajos proporcionan comandos e información de estado que se utilizan para administrar los flujos de trabajo de traducción humana y traducción automática que se ejecutan en los recursos.
 
@@ -32,16 +33,16 @@ Los proyectos y trabajos de traducción se crean con los flujos de trabajo de pr
 
 AEM detecta si se está creando un proyecto de traducción para la traducción inicial del contenido o para actualizar las copias de idioma ya traducidas. Cuando se crea un proyecto de traducción para una página y se indican las copias de idioma para las que se está traduciendo, AEM detecta si la página de origen ya existe en las copias de idioma de destino:
 
-* **La copia de idioma no incluye la página:** AEM trata esta situación como la traducción inicial. La página se copia inmediatamente en el texto del idioma y se incluye en el proyecto. Cuando la página traducida se importa a AEM, AEM la copia directamente en la copia del idioma.
+* **La copia de idioma no incluye la página:** AEM trata esta situación como la traducción inicial. La página se copia inmediatamente en la copia de idioma y se incluye en el proyecto. Cuando la página traducida se importa a AEM, AEM la copia directamente en la copia de idioma.
 * **La copia de idioma ya incluye la página:** AEM trata esta situación como una traducción actualizada. Se crea un lanzamiento, se añade una copia de la página a este y se incluye en el proyecto. Los lanzamientos permiten revisar las traducciones actualizadas antes de enviarlas a la copia de idioma:
 
    * Cuando la página traducida se importa a AEM, sobrescribe la página en el lanzamiento.
    * La página traducida sobrescribe la copia de idioma solo cuando se promociona el lanzamiento.
 
-Por ejemplo, la raíz lingüística `/content/wknd/fr` se crea para la traducción al francés del idioma principal `/content/wknd/en`. No hay más páginas en la copia en francés.
+Por ejemplo, la raíz lingüística `/content/wknd/fr` se crea para la traducción al francés del idioma principal `/content/wknd/en`. No hay más páginas en la copia de idioma en francés.
 
-* Se crea un proyecto de traducción para la página `/content/wknd/en/products` y todas las secundarias, destinado a la copia en francés. Como la copia de idioma no incluye la página `/content/wknd/fr/products`, AEM copia inmediatamente la página `/content/wknd/en/products` y todas las secundarias a la copia en francés. Las copias también se incluyen en el proyecto de traducción.
-* Se crea un proyecto de traducción para la página `/content/wknd/en` y todas las secundarias, destinado a la copia en francés. Como la copia de idioma incluye la página que corresponde con la página `/content/wknd/en` (la raíz del idioma), AEM copia la página `/content/wknd/en` y todas las secundarias y las añade a un lanzamiento. Las copias también se incluyen en el proyecto de traducción.
+* Se crea un proyecto de traducción para la página `/content/wknd/en/products` y todas las secundarias, destinado a la copia de idioma en francés. Como la copia de idioma no incluye la página `/content/wknd/fr/products`, AEM copia inmediatamente la página `/content/wknd/en/products` y todas las secundarias a la copia en francés. Las copias también se incluyen en el proyecto de traducción.
+* Se crea un proyecto de traducción para la página `/content/wknd/en` y todas las secundarias, destinado a la copia de idioma en francés. Como la copia de idioma incluye la página que corresponde con la página `/content/wknd/en` (la raíz del idioma), AEM copia la página `/content/wknd/en` y todas las secundarias y las añade a un lanzamiento. Las copias también se incluyen en el proyecto de traducción.
 
 ## Traducción desde la consola Sites {#performing-initial-translations-and-updating-existing-translations}
 
@@ -494,11 +495,11 @@ Ahora se ha movido la página de origen y se ha copiado la copia de idioma asoci
 
 ## Importación y exportación de trabajos de traducción {#import-export}
 
-AEM Aunque ofrece varias soluciones de traducción e interfaces, también es posible importar y exportar manualmente la información del trabajo de traducción.
+Aunque AEM ofrece varias soluciones de traducción e interfaces, también es posible importar y exportar manualmente la información del trabajo de traducción.
 
 ### Exportación de un trabajo de traducción {#exporting-a-translation-job}
 
-AEM Puede descargar el contenido de un trabajo de traducción, por ejemplo, para enviarlo a un proveedor de traducción que no esté integrado con a través de un conector o para revisar el contenido.
+Puede descargar el contenido de un trabajo de traducción, por ejemplo, para enviarlo a un proveedor de traducción que no esté integrado con AEM a través de un conector o para revisar el contenido.
 
 1. En el menú desplegable del mosaico del trabajo de traducción, seleccione **Exportar**.
 1. En el cuadro de diálogo, seleccione **Descargar archivo exportado** y, si es necesario, utilice el cuadro de diálogo del explorador web para guardar el archivo.
@@ -506,7 +507,7 @@ AEM Puede descargar el contenido de un trabajo de traducción, por ejemplo, para
 
 ### Importación de un trabajo de traducción {#importing-a-translation-job}
 
-AEM AEM Se puede importar contenido traducido a los recursos, por ejemplo, cuando el proveedor de traducción se lo envía porque no están integrados con los recursos a través de un conector de la aplicación de traducción de los recursos de la aplicación de la traducción de los recursos de la red de.
+Se puede importar contenido traducido a AEM, por ejemplo, cuando el proveedor de traducción se lo envía porque no están integrados con AEM a través de un conector.
 
 1. En el menú desplegable del mosaico del trabajo de traducción, seleccione **Importar**.
 1. Utilice el cuadro de diálogo del explorador web para seleccionar el archivo que desea importar.

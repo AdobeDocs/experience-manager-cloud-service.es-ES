@@ -1,20 +1,21 @@
 ---
-title: Configuración del entorno de la cuenta
-description: Adobe Experience Manager AEM () permite configurar la cuenta y ciertos elementos del entorno de creación.
+title: 'Configuración del entorno de la cuenta  '
+description: Adobe Experience Manager (AEM) permite configurar la cuenta y ciertos elementos del entorno de creación.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '507'
 ht-degree: 60%
 
 ---
 
 # Configuración del entorno de la cuenta   {#configuring-your-account-environment}
 
-Adobe Experience Manager AEM () permite configurar la cuenta y ciertos elementos del entorno de creación.
+Adobe Experience Manager (AEM) permite configurar la cuenta y ciertos elementos del entorno de creación.
 
 Mediante la opción [Usuario](#user-settings) del [encabezado](/help/sites-cloud/authoring/basic-handling.md#the-header) y el cuadro de diálogo [Mis preferencias](#my-preferences) asociado, puede modificar las opciones de usuario.
 
@@ -59,7 +60,7 @@ Cada usuario puede establecer sus propias propiedades preferidas.
 
 * **Mostrar las acciones del escritorio para Assets**
 
-  AEM Esta opción requiere que utilice la aplicación de escritorio de la aplicación de.
+  Esta opción requiere que utilice la aplicación de escritorio de AEM.
 
 * **Color de anotación**
 
@@ -70,7 +71,7 @@ Cada usuario puede establecer sus propias propiedades preferidas.
 
 * **Presentación de fecha relativa**
 
-  AEM Para mejorar la legibilidad, la función procesa las fechas dentro de los últimos siete días como fechas relativas (por ejemplo, hace tres días) y las fechas más antiguas como fechas exactas (por ejemplo, el 20 de marzo de 2017).
+  Para mejorar la legibilidad, AEM procesa las fechas dentro de los últimos siete días como fechas relativas (por ejemplo, hace tres días) y las fechas más antiguas como fechas exactas (por ejemplo, el 20 de marzo de 2017).
 
   Esta opción define el modo en que se muestran las fechas del sistema. Las opciones disponibles son las siguientes:
 
@@ -83,14 +84,14 @@ Cada usuario puede establecer sus propias propiedades preferidas.
 
 * **Habilitar métodos abreviados**
 
-  AEM La creación de formularios es compatible con varios métodos abreviados de teclado que hacen que la creación sea más eficaz.
+  AEM admite varios métodos abreviados de teclado para mejorar la eficacia de la creación de contenido.
 
    * [Métodos abreviados del teclado para editar páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
    * [Métodos abreviados del teclado para las consolas](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
 
   Esta opción habilita los métodos abreviados de teclado. De forma predeterminada, están habilitadas, pero se pueden deshabilitar, por ejemplo, si un usuario tiene ciertos requisitos de accesibilidad.
 
-* **Activar la página principal de los recursos**
+* **Habilitar la página principal de los recursos**
 
   Esta opción solo está disponible si el administrador del sistema ha habilitado la experiencia de la página principal de Assets para toda la organización.
 

@@ -3,11 +3,12 @@ title: 'Fragmentos de contenido: configuración'
 description: Obtenga información sobre cómo habilitar la funcionalidad Fragmento de contenido y GraphQL para usarla con las funciones de entrega sin encabezado de AEM y la creación de páginas.
 feature: Content Fragments
 role: Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '408'
 ht-degree: 36%
 
 ---

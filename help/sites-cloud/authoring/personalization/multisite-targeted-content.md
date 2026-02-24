@@ -1,13 +1,14 @@
 ---
 title: Uso del contenido de destino de varios sitios
 description: Si necesita administrar contenido de destino, como actividades, experiencias y ofertas, entre sus sitios, puede aprovechar el soporte integrado con varios sitios para el contenido de destino
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2850'
 ht-degree: 89%
 
 ---
@@ -98,7 +99,7 @@ Cada sitio comparte contenido personalizado en regiones geográficas:
 
 ![Diagrama de varios sitios](/help/sites-cloud/authoring/assets/multisite-diagram.png)
 
-Para el hemisferio norte, contamos con una actividad de invierno que se creó para una audiencia masculina, pero al vendedor de Norteamérica le gustaría tener una imagen de invierno diferente, por lo que la cambia en el sitio de los Estados Unidos.
+Para el hemisferio norte, contamos con una actividad de invierno que se creó para un público masculino, pero al vendedor de Norteamérica le gustaría tener una imagen de invierno diferente, por lo que la cambia en el sitio de los Estados Unidos.
 
 ![Versión de los Estados Unidos](/help/sites-cloud/authoring/assets/multisite-us.png)
 

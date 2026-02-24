@@ -3,12 +3,13 @@ title: Entrega de contenido sin encabezado mediante fragmentos de contenido con 
 description: Aprenda los conceptos básicos de realización de un CMS sin encabezado AEM utilizando fragmentos de contenido con GraphQL para la entrega de contenido sin encabezado.
 feature: Content Fragments, GraphQL API
 role: Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 91%
+source-wordcount: '742'
+ht-degree: 90%
 
 ---
 

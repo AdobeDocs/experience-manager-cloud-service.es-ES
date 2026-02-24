@@ -1,14 +1,15 @@
 ---
 title: Lanzamientos para páginas
 description: Aprenda a utilizar Lanzamientos para páginas en Adobe Experience Manager as a Cloud Service. Los lanzamientos permiten desarrollar contenido de forma eficaz para una versión futura sin perder de vista las páginas actuales.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 20ad1d468ac0d8ec3933477f954120debe4e9240
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 73%
+source-wordcount: '1033'
+ht-degree: 72%
 
 ---
 

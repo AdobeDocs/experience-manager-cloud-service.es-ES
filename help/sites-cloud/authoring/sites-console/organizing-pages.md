@@ -1,13 +1,14 @@
 ---
 title: Organización de páginas
 description: Aprenda a organizar su sitio web con AEM.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '805'
 ht-degree: 67%
 
 ---
@@ -118,7 +119,7 @@ Cuando se proporciona una página **Name** al crear una página, AEM [valida el 
 
 En AEM, una [plantilla](/help/sites-cloud/authoring/page-editor/templates.md) es un tipo especializado de página que se usa como base para cualquier página nueva que se cree.
 
-La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
+La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de producto, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
 
 AEM incluye varias plantillas listas para usar de forma predeterminada. Las plantillas disponibles dependen del sitio web individual. Los campos principales son:
 

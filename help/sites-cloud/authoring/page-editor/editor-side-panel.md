@@ -1,20 +1,21 @@
 ---
 title: Panel lateral del editor de páginas
-description: AEM Aprenda a utilizar el panel lateral en el editor de sitios de para agregar componentes y recursos a la página.
+description: Aprenda a utilizar el panel lateral del editor de sitios de AEM para agregar componentes y recursos a su página.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1128'
 ht-degree: 38%
 
 ---
 
 # Panel lateral del editor de páginas {#side-panel}
 
-AEM Aprenda a utilizar el panel lateral en el editor de sitios de para agregar componentes y recursos a la página.
+Aprenda a utilizar el panel lateral del editor de sitios de AEM para agregar componentes y recursos a su página.
 
 ## Modos del panel lateral {#modes}
 
@@ -30,7 +31,7 @@ Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha 
 
 ## Navegador de componentes   {#components-browser}
 
-AEM [Componentes](/help/implementing/developing/components/overview.md) son los componentes básicos que se usan para crear contenido con el editor de páginas de la página de la. Puede colocar varios componentes en una página y configurar sus opciones para crear la página de contenido.
+[Componentes](/help/implementing/developing/components/overview.md) son los componentes básicos utilizados para crear contenido con el editor de páginas de AEM. Puede colocar varios componentes en una página y configurar sus opciones para crear la página de contenido.
 
 El navegador de componentes muestra todos los componentes que se pueden utilizar en la página actual. Se pueden arrastrar a la ubicación adecuada y editarse para añadir contenido.
 

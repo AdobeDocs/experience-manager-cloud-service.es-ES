@@ -3,11 +3,12 @@ title: Identificación del contenido a traducir
 description: Descubra cómo las reglas de traducción identifican el contenido que necesita traducción.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1294'
 ht-degree: 88%
 
 ---
@@ -18,7 +19,7 @@ Las reglas de traducción identifican el contenido que se debe traducir para pá
 
 >[!TIP]
 >
->Si no tiene experiencia en la traducción de contenido, consulte el [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md), que es una ruta guiada a través de la traducción del contenido de AEM Sites AEM AEM mediante herramientas de traducción potentes que se utilizan para traducir contenido. Es ideal para aquellos que no tienen experiencia en traducción o en traducción de sitios.
+>Si es nuevo traduciendo contenido, consulte [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md), que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia ni en traducción ni en AEM.
 
 ## Fragmentos de contenido y reglas de traducción {#content-fragments}
 

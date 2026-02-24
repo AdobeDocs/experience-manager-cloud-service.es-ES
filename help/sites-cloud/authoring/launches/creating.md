@@ -1,20 +1,21 @@
 ---
 title: Creación de lanzamientos
-description: Puede crear un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará más adelante.
+description: Puede crear un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se habilitará más adelante.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 94%
+source-wordcount: '1106'
+ht-degree: 93%
 
 ---
 
 # Creación de lanzamientos {#creating-launches}
 
-Cree un lanzamiento para poder actualizar las páginas web existentes a la versión nueva que se activará más adelante. Al crear un lanzamiento, especificará un título y la página de origen:
+Cree un lanzamiento para poder actualizar las páginas web existentes a la versión nueva que se habilitará más adelante. Al crear un lanzamiento, especificará un título y la página de origen:
 
 * El título aparece en el carril [Referencias](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references); desde allí, los autores pueden acceder al título y trabajar con él.
 * Las páginas secundarias de la página de origen se incluyen en el lanzamiento de forma predeterminada. Si lo desea, puede utilizar únicamente la página de origen.

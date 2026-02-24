@@ -1,14 +1,15 @@
 ---
 title: Promoción de lanzamientos
 description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 98%
+source-wordcount: '818'
+ht-degree: 97%
 
 ---
 
@@ -135,7 +136,7 @@ Utilice modelos de flujo de trabajo para realizar procesamientos masivos de pág
 1. Cuando los autores promocionan páginas de lanzamiento, las guardan en el paquete de flujo de trabajo.
 1. Inicie un modelo de flujo de trabajo con el paquete como carga útil.
 
-Para iniciar un flujo de trabajo automáticamente cuando se promocionen páginas, configure un lanzador de flujos de trabajo para el nodo del paquete. <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
+Para iniciar un flujo de trabajo automáticamente cuando se promocionen páginas, configure un lanzador de flujo de trabajo para el nodo del paquete. <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
 
 Por ejemplo, puede generar automáticamente solicitudes de activación de página cuando los autores promocionen páginas de lanzamiento. Configure un lanzador de flujo de trabajo para iniciar el flujo de trabajo de activación de solicitud cuando se modifique el nodo del paquete.
 

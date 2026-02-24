@@ -1,13 +1,14 @@
 ---
 title: Participación en flujos de trabajo
 description: Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1513'
 ht-degree: 77%
 
 ---
@@ -16,12 +17,12 @@ ht-degree: 77%
 
 Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo. El usuario recibe una notificación y puede realizar las acciones adecuadas:
 
-* [Visualización de notificaciones &#x200B;](#notifications-of-available-workflow-actions)
-* [Finalización de una etapa de participante &#x200B;](#completing-a-participant-step)
-* [Delegación de una etapa de participante &#x200B;](#delegating-a-participant-step)
-* [Realización de una etapa hacia atrás en una etapa de participante &#x200B;](#performing-step-back-on-a-participant-step)
-* [Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas) &#x200B;](#opening-a-workflow-item-to-view-details-and-take-actions)
-* [Visualización de la carga útil del flujo de trabajo (varios recursos) &#x200B;](#viewing-the-workflow-payload-multiple-resources)
+* [Visualización de notificaciones ](#notifications-of-available-workflow-actions)
+* [Finalización de una etapa de participante ](#completing-a-participant-step)
+* [Delegación de una etapa de participante ](#delegating-a-participant-step)
+* [Realización de una etapa hacia atrás en una etapa de participante ](#performing-step-back-on-a-participant-step)
+* [Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas) ](#opening-a-workflow-item-to-view-details-and-take-actions)
+* [Visualización de la carga útil del flujo de trabajo (varios recursos) ](#viewing-the-workflow-payload-multiple-resources)
 
 ## Notificaciones de acciones de flujo de trabajo disponibles {#notifications-of-available-workflow-actions}
 
@@ -206,7 +207,7 @@ También puede utilizar la cronología para retroceder a un paso anterior:
 1. Seleccione la página necesaria y abra **Cronología** (o abra **Cronología** y seleccione la página).
 1. Seleccione el banner de alerta para mostrar las acciones disponibles. Seleccione **Restablecer**:
 
-   ![Retroceder un paso](/help/sites-cloud/authoring/assets/workflows-roll-back.png)
+   ![Restablecer un paso](/help/sites-cloud/authoring/assets/workflows-roll-back.png)
 
 1. Especifique la etapa a la que debe restablecerse el flujo de trabajo:
 
@@ -269,5 +270,5 @@ Para ver la carga útil y los recursos de la instancia del flujo de trabajo:
 1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo en el que desea actuar (seleccione la miniatura).
 1. Seleccione **Ver carga útil** de la barra de herramientas para abrir el cuadro de diálogo. 
-   * Dado que un paquete de flujo de trabajo es simplemente una colección de punteros a rutas dentro del repositorio, puede añadir, quitar o modificar las entradas aquí para ajustar los elementos a los que el paquete de flujo de trabajo hace referencia. Utilice el componente **Definición de medios** para añadir nuevas entradas.
+   * Dado que un paquete de flujo de trabajo es simplemente una colección de punteros a rutas dentro del repositorio, puede añadir, quitar o modificar las entradas aquí para ajustar los elementos a los que el paquete de flujo de trabajo hace referencia. Utilice el componente **Definición de recursos** para añadir nuevas entradas.
 1. Los vínculos se pueden utilizar para abrir las páginas individuales.

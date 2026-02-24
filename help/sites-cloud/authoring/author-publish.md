@@ -1,14 +1,15 @@
 ---
 title: Conceptos de creación y publicación
-description: AEM Aprenda los conceptos de creación en entornos de creación, publicación y previsualización de, usando el entorno de creación y publicación de.
+description: Aprenda los conceptos de creación en AEM, utilizando los entornos de creación, vista previa y publicación.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 29%
+source-wordcount: '444'
+ht-degree: 30%
 
 ---
 
@@ -17,9 +18,9 @@ ht-degree: 29%
 
 Para un autor de contenido, una instalación de AEM as a Cloud Service se puede considerar como tres niveles principales en su nivel más básico
 
-* Nivel de Author
+* Nivel de autor
 * Previsualizar nivel
-* Nivel de Publish
+* Publicar nivel
 
 Estos niveles interactúan para permitirle ofrecer contenido en su sitio web para que los visitantes puedan acceder a él. El flujo de trabajo básico es:
 
@@ -58,7 +59,7 @@ Consulte el documento [Guía de inicio rápido para la creación](/help/sites-cl
 
 ## Vista previa del contenido {#previewing-content}
 
-AEM También ofrece un servicio de vista previa que permite a los desarrolladores y autores de contenido previsualizar la experiencia final de un sitio web antes de que llegue al entorno de publicación y esté disponible públicamente.
+AEM también ofrece un servicio de vista previa que permite a los desarrolladores y autores de contenido previsualizar la experiencia final de un sitio web antes de que llegue al entorno de publicación y esté disponible públicamente.
 
 Consulte el documento [Vista previa del contenido](/help/sites-cloud/authoring/sites-console/previewing-content.md) para obtener más información.
 

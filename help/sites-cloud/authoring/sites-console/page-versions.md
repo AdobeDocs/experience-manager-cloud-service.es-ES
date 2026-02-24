@@ -1,13 +1,14 @@
 ---
 title: 'Uso de versiones de página  '
 description: Obtenga información sobre cómo crear, comparar y restaurar versiones de sus páginas en AEM.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ebbf38563be65c28384276f7a0baa100f9f384b2
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1626'
 ht-degree: 90%
 
 ---
@@ -40,7 +41,7 @@ Puede crear una versión de su recurso desde:
 * el [raíl de la cronología](#creating-a-new-version-timeline)
 * la opción [Crear](#creating-a-new-version-create-with-a-selected-resource) (cuando hay un recurso seleccionado)
 
-### Crear una nueva versión: línea de tiempo {#creating-a-new-version-timeline}
+### Crear una nueva versión: cronología {#creating-a-new-version-timeline}
 
 1. Desplácese hasta mostrar la página para la que desea crear una versión.
 1. Seleccione la página en [modo de selección](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -172,7 +173,7 @@ Puede obtener una vista previa de una versión específica:
 
 1. Desplácese hasta mostrar la página que desea comparar.
 1. Seleccione la página en [modo de selección](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**.
+1. Abra la columna **Cronología** y seleccione **Mostrar todo** o **Versiones**.
 1. Se muestran las versiones de la página. Seleccione la versión que desee previsualizar:
 
    ![Previsualizar versión](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -191,7 +192,7 @@ Para comparar una versión anterior con la página actual, haga lo siguiente:
 
 1. Desplácese hasta mostrar la página que desea comparar.
 1. Seleccione la página en [modo de selección](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**.
+1. Abra la columna **Cronología** y seleccione **Mostrar todo** o **Versiones**.
 1. Se muestran las versiones de la página. Seleccione la versión que desea comparar:
 
    ![Comparar versiones](/help/sites-cloud/authoring/assets/versions-revert.png)
