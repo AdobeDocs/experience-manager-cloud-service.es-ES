@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: c07c1f7e412e0c68338121d49781e33356f6c640
+source-git-commit: 012ce93f65d26d7f59fc874d1b225fbd458cf098
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2598'
 ht-degree: 5%
 
 ---
@@ -60,7 +60,7 @@ Los ajustes preestablecidos de imagen definen cómo Dynamic Media ofrece las im�
 
 ### Generación de representaciones en AEM as a Cloud Service{#rendition-generation-in-aemaacs}
 
-En AEM as a Cloud Service, las representaciones se generan mediante [Microservicios de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#). El flujo de trabajo de recursos de actualización de DAM no está disponible para la personalización en Cloud Service.
+En AEM as a Cloud Service, las representaciones se generan mediante [Microservicios de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#). El flujo de trabajo de recursos de actualización de DAM no está disponible para la personalización en Cloud Service.
 
 Entre las consideraciones importantes se incluyen las siguientes:
 
@@ -72,7 +72,7 @@ Los ajustes preestablecidos de imagen hacen referencia a las representaciones di
 
 **Para controlar qué representaciones se generan:**
 
-1. Cree o edite un [perfil de procesamiento](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
+1. Cree o edite un [perfil de procesamiento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
 2. Configure las definiciones de representación requeridas.
 3. Aplique el perfil de procesamiento a la carpeta adecuada.
 
@@ -191,7 +191,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 1. Select **[!UICONTROL Save]** to save the changes to the workflow.
 -->
 
-### Aumentar o reducir el número de ajustes preestablecidos de imagen que se muestran {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+## Aumentar o reducir el número de ajustes preestablecidos de imagen que se muestran {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Los ajustes preestablecidos de imagen que cree estarán disponibles como representaciones dinámicas al obtener una vista previa de los recursos. Experience Manager muestra varias representaciones dinámicas al ver un recurso desde **[!UICONTROL Vista de detalles > Representaciones]**. Puede aumentar o disminuir el límite de representaciones que se muestran.
 
@@ -210,7 +210,7 @@ Los ajustes preestablecidos de imagen que cree estarán disponibles como represe
 1. En la propiedad limit, cambie el número al deseado, por ejemplo, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Seleccione **[!UICONTROL Guardar todo]**.
 
-### Crear ajustes preestablecidos de imagen {#creating-image-presets}
+## Crear ajustes preestablecidos de imagen {#creating-image-presets}
 
 Cree ajustes preestablecidos de imagen para poder aplicar los ajustes de forma coherente en todas las imágenes cuando previsualice o publique.
 
@@ -243,7 +243,7 @@ Ver [formato de archivo de InDesign (INDD)](#indesign-indd-file-format).
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
-### Creación de un ajuste preestablecido de imagen interactivo {#creating-a-responsive-image-preset}
+## Crear un ajuste preestablecido de imagen interactivo {#creating-a-responsive-image-preset}
 
 Para crear un ajuste preestablecido de imagen interactivo, realice los pasos que se indican en [Crear ajustes preestablecidos de imagen](#creating-image-presets). Cuando introduzca la altura y anchura en la ventana **[!UICONTROL Editar ajuste preestablecido de imagen]**, borre los valores y déjelos en blanco.
 
@@ -267,7 +267,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones que se d
 
 * **[!UICONTROL Enfoque: Modo de remuestreo]** - Seleccione **[!UICONTROL Enfoque2]**.
 
-#### Opciones de pestaña básicas {#basic-tab-options}
+### Opciones de pestaña básicas {#basic-tab-options}
 
 | Campo | Descripción |
 | --- | --- |
@@ -276,7 +276,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones que se d
 | **Formato** | Elija un formato en el menú.<br>Elegir **JPEG** ofrece las siguientes opciones:<br>· **Calidad** - La escala de calidad de JPEG es de 1 a 100. La escala es visible al arrastrar el control deslizante.<br>· **Habilitar la disminución de resolución de crominancia en JPG**: como el ojo es menos sensible a la información de color de alta frecuencia que la luminancia de alta frecuencia, las imágenes de JPEG dividen la información de imagen en componentes de luminancia y color. Cuando se comprime una imagen de JPEG, el componente de luminancia se deja a resolución completa, mientras que los componentes de color se reducen de resolución promediando grupos de píxeles juntos. La disminución de resolución reduce el volumen de datos a la mitad o a un tercio con un impacto mínimo en la calidad percibida. La disminución de resolución no es aplicable a imágenes en escala de grises. Esta técnica reduce la cantidad de compresión útil para imágenes con alto contraste (por ejemplo, imágenes con texto superpuesto).<br><br>Elegir **GIF** o **GIF con alfa** proporciona estas opciones adicionales de **Cuantificación de color GIF**:<br>· **Tipo** - Seleccionar **Adaptable** (predeterminado), **Web** o **Macintosh**. Si selecciona **GIF con Alpha**, la opción Macintosh no estará disponible.<br>· **Tramado** - Seleccionar **Difuso** o **Desactivado**.<br>· **Número de colores** - Escriba un número de 2 a 256.<br>· **Lista de colores**: escriba una lista separada por comas. Por ejemplo, para blanco, gris y negro, escriba `000000,888888,ffffff`.<br><br>Elegir **PDF**, **TIFF** o **TIFF con alpha** proporciona esta opción adicional:<br>· **Compresión** - Seleccione un algoritmo de compresión. Las opciones de algoritmo para PDF son **None**, **Zip** y **Jpeg**; para TIFF son **None**, **LZW**, **Jpeg** y **Zip**; y para TIFF con Alpha son **None**, **LZW** y **Zip**.<br><br>Elegir **PNG**, **PNG con Alpha** o **EPS** no proporciona opciones adicionales. |
 | **Enfoque** | Seleccione **Activar enfoque simple** para aplicar un filtro de enfoque básico a la imagen después de cambiar su tamaño. El enfoque puede ayudar a compensar el desenfoque que puede producirse cuando se muestra una imagen en un tamaño diferente. |
 
-#### Opciones de pestaña avanzadas {#advanced-tab-options}
+### Opciones de pestaña avanzadas {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -326,7 +326,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones que se d
     </ul>
     <div>
       El enfoque se describe en
-     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Uso del enfoque de imágenes con Experience Manager Dynamic Media</a> vídeo, en <a href="https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Enfoque de una imagen</a> tema de la Ayuda en línea y en <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=es">Prácticas recomendadas para enfocar imágenes en Dynamic Media Classic</a> PDF descargable.
+     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Uso del enfoque de imágenes con Experience Manager Dynamic Media</a> vídeo, en <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Enfoque de una imagen</a> tema de la Ayuda en línea y en <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Prácticas recomendadas para enfocar imágenes en Dynamic Media Classic</a> PDF descargable.
     </div> </td>
   </tr>
   <tr>
@@ -346,7 +346,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones que se d
   </tr>
   <tr>
    <td><strong>Modificador de imagen</strong></td>
-   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que puede especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la <a href="https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">referencia de comando del protocolo Image Server</a>.</p> <p>Importante: No se admiten las siguientes funciones enumeradas en la API:</p>
+   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que puede especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">referencia de comando del protocolo Image Server</a>.</p> <p>Importante: No se admiten las siguientes funciones enumeradas en la API:</p>
     <ul>
      <li>Comandos básicos de creación de plantillas y procesamiento de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> y <code>textPs=</code></li>
      <li>Comandos de localización: <code>locale=</code> y <code>req=xlate</code></li>
@@ -361,9 +361,9 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones que se d
  </tbody>
 </table>
 
-### Definir opciones de ajustes preestablecidos de imagen con modificadores de imagen {#defining-image-preset-options-with-image-modifiers}
+## Definir opciones de ajustes preestablecidos de imagen con modificadores de imagen {#defining-image-preset-options-with-image-modifiers}
 
-Además de las opciones disponibles en las pestañas Básico y Avanzado, puede definir modificadores de imagen para que tenga más opciones al definir ajustes preestablecidos de imagen. El procesamiento de imágenes se basa en la API de procesamiento de imágenes de Dynamic Media y se define en detalle en la [Referencia de protocolo HTTP](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
+Además de las opciones disponibles en las pestañas Básico y Avanzado, puede definir modificadores de imagen para que tenga más opciones al definir ajustes preestablecidos de imagen. El procesamiento de imágenes se basa en la API de procesamiento de imágenes de Dynamic Media y se define en detalle en la [Referencia de protocolo HTTP](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
 
 A continuación se muestran algunos ejemplos básicos de lo que se puede hacer con los modificadores de imagen.
 
@@ -371,7 +371,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 >
 >Algunos modificadores de imagen [no se pueden usar en Experience Manager](#advanced-tab-options).
 
-* [op_invert](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert): invierte cada componente de color para obtener un efecto de imagen negativo.
+* [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert): invierte cada componente de color para obtener un efecto de imagen negativo.
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -379,7 +379,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur): aplica un filtro de desenfoque a la imagen.
+* [op_blur](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur): aplica un filtro de desenfoque a la imagen.
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -395,7 +395,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_bright](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness): disminuye o aumenta el brillo.
+* [op_bright](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness): disminuye o aumenta el brillo.
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -403,7 +403,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
   ![6_5_imagepreset-edit-bright](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac): ajusta la opacidad de la imagen. Permite reducir la opacidad en primer plano.
+* [opac](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac): ajusta la opacidad de la imagen. Permite reducir la opacidad en primer plano.
 
   ```xml {.line-numbers}
   opac=29
@@ -411,7 +411,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### Editar ajustes preestablecidos de imagen {#modifying-image-presets}
+## Editar ajustes preestablecidos de imagen {#modifying-image-presets}
 
 1. En Experience Manager, seleccione el logotipo de Experience Manager para acceder a la consola de navegación global y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**.
 
@@ -420,11 +420,11 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 1. Seleccione un ajuste preestablecido y luego seleccione **[!UICONTROL Editar]**. Se abre la ventana **[!UICONTROL Editar ajuste preestablecido de imagen]**.
 1. Realice cambios y seleccione **[!UICONTROL Guardar]** para guardar los cambios o **[!UICONTROL Cancelar]** para cancelar los cambios.
 
-### Publicar ajustes preestablecidos de imagen {#publishing-image-presets}
+## Publicar ajustes preestablecidos de imagen {#publishing-image-presets}
 
 Los ajustes preestablecidos de imagen se publican automáticamente.
 
-### Eliminar ajustes preestablecidos de imagen {#deleting-image-presets}
+## Eliminar ajustes preestablecidos de imagen {#deleting-image-presets}
 
 1. En Experience Manager, seleccione el logotipo de Experience Manager para acceder a la consola de navegación global y haga clic en el icono Herramientas.
 1. Vaya a **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**.
