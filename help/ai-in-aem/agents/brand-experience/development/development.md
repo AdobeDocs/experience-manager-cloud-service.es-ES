@@ -18,7 +18,7 @@ ht-degree: 1%
 
 El trabajo puede recuperar los estados de la canalización y ayudarle a solucionar problemas con los pasos de generación fallidos sugiriendo correcciones, lo que ahorra tiempo al depurar implementaciones de AEM as a Cloud Service en entornos de desarrollo, fase y producción. Examina los registros de generación y el código relacionado para recomendar una corrección que puede aplicar manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478010?captions=spa&quality=12&learn=on)
 
 >[!IMPORTANT]
 >
