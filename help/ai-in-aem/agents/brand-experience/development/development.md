@@ -32,7 +32,7 @@ El trabajo puede recuperar los estados de la canalización y ayudarle a solucion
 
 Para acceder a este trabajo, consulte las [notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) para obtener instrucciones sobre cómo inscribirse en el programa beta, asegurándose de indicar su interés en el trabajo de desarrollo. También puede enviar por correo electrónico comentarios específicos del trabajo de desarrollo a [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Siga un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
+[Siga un tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
 
 ## Acceso al trabajo de desarrollo mediante Cloud Manager {#how-to-access-the-job}
 
