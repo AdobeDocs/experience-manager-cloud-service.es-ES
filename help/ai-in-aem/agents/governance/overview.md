@@ -3,7 +3,8 @@ title: Introducción al agente de gobernanza
 description: Descubra cómo AEM Governance Agent protege la integridad de la marca y el cumplimiento de las normas en AEM
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 9b26cd1f30ad6fa23e28c9f36fe48091e069962e
+exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
+source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -72,4 +73,3 @@ Con el agente, puede administrar los derechos digitales de Assets en todo el eco
 * *¿Qué recursos caducaron recientemente?*
 * *Encontrarme recursos sin fecha de caducidad*
 * *Mostrarme todos los recursos en /content/dam/products que están a punto de caducar en los próximos 14 días*
-

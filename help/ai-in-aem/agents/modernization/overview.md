@@ -4,7 +4,7 @@ description: Descubra cómo Experience Modernization Agent incorpora nuevos siti
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
+source-git-commit: f286215d7094bffbec732c9ba6149d6bab168fc7
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Descubra cómo Experience Modernization Agent incorpora sitios web en Edge Deliv
 
 >[!NOTE]
 >
->El agente de modernización de experiencias reemplaza la habilidad de migración anterior de [Experience Production Agent.](/help/ai-in-aem/agents/production/overview.md)
+>El agente de modernización de experiencias reemplaza la habilidad de migración anterior de [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md)
 
 ## Introducción {#introduction}
 
@@ -44,7 +44,7 @@ Experience Modernization Agent ofrece habilidades para crear nuevos sitios de Ed
 
 * Acelera la creación de sitios web y las migraciones de meses a semanas o días, lo que reduce drásticamente el tiempo de respuesta para la adopción de Edge Delivery Services
 * Transforma sitios web de cualquier CMS, AEM heredado o sistema de diseño (como Figma) en proyectos de Edge Delivery Services listos para la producción
-* Ofrece todas las promesas de Edge Delivery Services: preparación para IA para capacidades auténticas, rendimiento rápido (Core Web Vitals optimizado), accesibilidad (WCAG 2.1 AA), diseño interactivo en todos los puntos de interrupción y agilidad de contenido y código
+* Ofrece todas las promesas de Edge Delivery Services: preparación para IA para funciones auténticas, rendimiento rápido (optimizado para Core Web Vitals), accesibilidad (WCAG 2.1 AA), diseño interactivo en todos los puntos de interrupción y agilidad de contenido y código
 
 Las habilidades detalladas incluyen migración de páginas, importación masiva, extracción de diseño, configuración de navegación y raspado web.
 
