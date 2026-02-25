@@ -5,9 +5,9 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 629cf9d88531b2e95627917ca139eed1fbddf09d
+source-git-commit: d9a6e7c56a786792599e91ca7a2734dcf15fcb23
 workflow-type: tm+mt
-source-wordcount: '4427'
+source-wordcount: '4441'
 ht-degree: 63%
 
 ---
@@ -519,9 +519,11 @@ Consulte [`Apache Sling` Eventos y administración de trabajos](https://sling.ap
 * **Gravedad**: Información, Menor o Principal
 * **Desde**: Versión 2026.1.0
 
-La superficie de la API de Experience Manager está en constante revisión para identificar las API para las que es necesario detener el uso. Esta API está en desuso y marcada con una fecha de eliminación.
+La superficie de la API de Experience Manager está en constante revisión para identificar las API para las que es necesario detener el uso. Estas API están en desuso y marcadas con una fecha de eliminación.
 
-Cuanto más cerca esté la fecha de eliminación, mayor será la gravedad de la infracción de esta regla. El uso de dicha API debe reemplazarse por una alternativa segura.
+Cuanto más cerca esté la fecha de eliminación, mayor será la gravedad de la infracción de esta regla. El uso de estas API debe reemplazarse por una alternativa segura.
+
+Consulte [este artículo](/help/release-notes/deprecated-removed-features.md#aem-apis) para obtener instrucciones sobre cómo quitar el uso de las API obsoletas.
 
 ### Las API en desuso de Experience Manager no deben usarse {#sonarqube-aem-deprecated}
 
