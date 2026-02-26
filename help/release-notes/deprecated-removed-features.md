@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 7e330f996e6726e4284b4cc168881f5eec3da5b4
+source-git-commit: 940fc779feb4b042a54b4ac5758377812df64537
 workflow-type: tm+mt
-source-wordcount: '3918'
-ht-degree: 79%
+source-wordcount: '4040'
+ht-degree: 76%
 
 ---
 
@@ -31,12 +31,12 @@ Durante el plazo de tiempo hasta la entrada en desuso, Adobe recordará a los cl
 
 >[!IMPORTANT]
 >
->Varias [API obsoletas](#aem-apis) están planeando la eliminación el **26 de febrero de 2026**. Revise estas fechas e impactos clave:
+>Se eliminarán varias [API obsoletas](#aem-apis) el **4 de mayo de 2026**. Revise estas fechas e impactos clave:
 >
->* **A partir del 26 de enero de 2026**: los correos electrónicos de notificación del Centro de acciones se envían **semanalmente por entorno** como recordatorio para eliminar el uso de estas API.
->* **26 de febrero de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **se pausarán** durante el paso **Calidad del código**. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular el problema para permitir que continúe la canalización.
->* **30 de marzo de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **fallarán** durante el paso de **Calidad del código**, **bloqueando implementaciones** de nuevo código hasta que se elimine el uso.
->* **30 de abril de 2026**: Es posible que los entornos que aún usan estas API **ya no reciban actualizaciones críticas de la versión de Adobe**.
+>* **A partir del 26 de enero de 2026**: los correos electrónicos de notificación del Centro de acciones se envían como recordatorio para eliminar el uso de estas API.
+>* **26 de febrero de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **se pausarán** durante el paso **Calidad del código**. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular el problema para permitir que continúe la canalización. *Esto puede ralentizar la validación y la publicación de cambios en el código.*
+>* **30 de marzo de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **producirán errores** durante el paso **Calidad del código**. Las implementaciones se bloquearán hasta que se elimine el uso de API obsoleto. *Esto puede impedir que publique actualizaciones con plazos específicos y podría afectar a las operaciones de su empresa.*
+>* **4 de mayo de 2026**: Los entornos que aún utilicen API obsoletas **no recibirán actualizaciones críticas de la versión de Adobe** y no estarán sujetos a los compromisos estándar de Adobe en cuanto a rendimiento y disponibilidad. Como resultado, no recibirá nuevas funciones ni correcciones de errores, la estabilidad y el tiempo de actividad de la aplicación podrían verse afectados negativamente y la exposición al riesgo de seguridad podría aumentar aún más.
 >
 >Para evitar bloques de implementación, elimine el uso de la API antes del 30 de marzo de 2026.
 
@@ -86,15 +86,15 @@ Esta sección enumera las funcionalidades que se han eliminado.
 Se ha anunciado que las API de la tabla siguiente (haga clic para ampliar y verlas) ya no se utilizan, pero aún no se han eliminado.  El uso de estas API debe interrumpirse antes de la fecha de eliminación objetivo o se corre el riesgo de que se produzcan problemas relacionados con el rendimiento, la disponibilidad y la seguridad. Algunas API hacen referencia a la sección Guía de eliminación de API que aparece a continuación.
 
 >[!IMPORTANT]
-> Se ha programado la eliminación de varias API el **26 de febrero de 2026**. Revise estas fechas e impactos clave:
 >
-> * **A partir del 26 de enero de 2026**: los correos electrónicos de notificación del Centro de acciones se envían **semanalmente por entorno** como recordatorio para eliminar el uso de estas API.
-> * **26 de febrero de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **se pausarán** durante el paso **Calidad del código**. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular el problema para permitir que continúe la canalización.
-> * **30 de marzo de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **fallarán** durante el paso de **Calidad del código**, **bloqueando implementaciones** de nuevo código hasta que se elimine el uso.
-> * **4 de mayo de 2026**: Es posible que los entornos que aún usan estas API **ya no reciban actualizaciones críticas de la versión de Adobe**.
+>Se eliminarán varias [API obsoletas](#aem-apis) el **4 de mayo de 2026**. Revise estas fechas e impactos clave:
 >
-> Para evitar bloques de implementación, elimine el uso de la API antes del 30 de marzo de 2026.
-
+>* **A partir del 26 de enero de 2026**: los correos electrónicos de notificación del Centro de acciones se envían como recordatorio para eliminar el uso de estas API.
+>* **26 de febrero de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **se pausarán** durante el paso **Calidad del código**. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular el problema para permitir que continúe la canalización. *Esto puede ralentizar la validación y la publicación de cambios en el código.*
+>* **30 de marzo de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **producirán errores** durante el paso **Calidad del código**. Las implementaciones se bloquearán hasta que se elimine el uso de API obsoleto. *Esto puede impedir que publique actualizaciones con plazos específicos y podría afectar a las operaciones de su empresa.*
+>* **4 de mayo de 2026**: Los entornos que aún utilicen API obsoletas **no recibirán actualizaciones críticas de la versión de Adobe** y no estarán sujetos a los compromisos estándar de Adobe en cuanto a rendimiento y disponibilidad. Como resultado, no recibirá nuevas funciones ni correcciones de errores, la estabilidad y el tiempo de actividad de la aplicación podrían verse afectados negativamente y la exposición al riesgo de seguridad podría aumentar aún más.
+>
+>Para evitar bloques de implementación, elimine el uso de la API antes del 30 de marzo de 2026.
 
 <details>
   <summary>Amplíe para ver la lista de API obsoletas.</summary>
@@ -374,7 +374,7 @@ Esta sección enumera las API que ya no se utilizan y se han eliminado. Algunas 
 
 Esta sección presenta la guía de eliminación de API para las diversas API incluidas en las tablas anteriores.
 
-Para identificar qué API de Java en desuso usa su código, integre el [complemento Maven de AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) en su proyecto Maven y ejecútelo localmente. El informe enumera todos los usos de API obsoletos detectados e indica qué paquete OSGi hace referencia a cada API. Haga referencia a [este tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) para aprender a utilizar el complemento de Maven.
+Para identificar qué API de Java en desuso usa su código, integre el [complemento Maven de AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) en su proyecto Maven y ejecútelo localmente. El informe enumera todos los usos de API obsoletos detectados e indica qué paquete OSGi hace referencia a cada API. Haga referencia a [este tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) para aprender a utilizar el complemento de Maven.
 
 Aunque debe corregir todas las API obsoletas con el tiempo, dé prioridad a cualquier API enumerada en la tabla de API obsoletas con una fecha de eliminación objetivo del 26 de febrero de 2026 (o anterior). En el informe de AEM Analyzer, estas API pueden aparecer con una fecha de eliminación efectiva del 31/8/2025.
 
