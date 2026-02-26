@@ -4,12 +4,13 @@ description: Estas son las notas de la versión de la vista previa del editor un
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 8ebc8184e642f26c004df88a16eece2563780437
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
+
 
 # Notas de la versión de Universal Editor Preview {#preview}
 
@@ -25,12 +26,11 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 >
 >El contenido de la versión real y la fecha de lanzamiento están sujetos a cambios.
 
-## Próximas mejoras {#other-improvements}
+## Próximas funciones {#upcoming-features}
 
-* El editor ya no establece el contenido predeterminado en `{}` antes de que llegue el contenido, lo que evita la pérdida de datos en determinadas situaciones.
-* Los cambios ya no se pierden al editar en el panel izquierdo y, a continuación, seleccionar otro elemento en la ventana del editor.
-* Ya no se requiere la importación manual de css al utilizar `headless-canvas`.
-* Para fines de CORS, se utilizan los puntos finales correctos para stage, preview y prod.
-* Se ha añadido una descripción a todos los campos de esquema.
-* Ahora se admiten actualizaciones de varios campos en fragmentos de contenido para ediciones en contexto.
-* La persistencia de los datos cuando el campo está enfocado se hizo más robusta.
+* Ahora hay disponible un selector de componentes en el menú en contexto.
+* Ya está disponible un selector de color para RTE.
+
+## Próximas mejoras {#upcoming-improvements}
+
+* Las opciones de alineación, dirección del texto y sangría ahora están [habilitadas de forma predeterminada en RTE](/help/implementing/universal-editor/configure-rte.md), siempre que el servidor las admita.
