@@ -154,7 +154,7 @@ Haga clic en el icono ![vista previa](assets/do-not-localize/preview-icon.svg) p
 
 ![Previsualizar representaciones de Dynamic Media](assets/native-express-dynamic-media-preview.png)
 
-Haga clic en **[!UICONTROL Agregar modificadores]**, especifique un modificador en el cuadro de texto y presione Entrar para aplicar la transformación a las representaciones en tiempo real. Del mismo modo, puede agregar varios modificadores a una representación y previsualizar esas transformaciones. Arrastre y suelte el recurso de la vista previa en el lienzo. La representación después de aplicar esos modificadores no se guarda. Consulte la lista de modificadores admitidos para [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) y [Dynamic Media con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Haga clic en **[!UICONTROL Agregar modificadores]**, especifique un modificador en el cuadro de texto y presione Entrar para aplicar la transformación a las representaciones en tiempo real. Del mismo modo, puede agregar varios modificadores a una representación y previsualizar esas transformaciones. Arrastre y suelte el recurso de la vista previa en el lienzo. La representación después de aplicar esos modificadores no se guarda. Consulte la lista de modificadores admitidos para [Dynamic Media Scene7](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) y [Dynamic Media con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 >[!IMPORTANT]
 > 
@@ -250,7 +250,7 @@ Como práctica recomendada, Adobe recomienda especificar valores en el resto de 
 
 ## Formatos de archivo compatibles {#supported-file-formats-import-assets}
 
-Adobe Express admite de forma nativa los formatos disponibles en [Revisar los requisitos mínimos de imagen](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Sin embargo, AEM Assets admite los siguientes tipos de formato:
+Adobe Express admite de forma nativa los formatos disponibles en [Revisar los requisitos mínimos de imagen](https://helpx.adobe.com/es/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Sin embargo, AEM Assets admite los siguientes tipos de formato:
 
 | Formato admitido | Dimensiones máximas/resolución | Tamaño máximo de archivo |
 |------------------|---------------------------------------------|---------------|
