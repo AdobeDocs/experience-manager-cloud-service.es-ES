@@ -5,7 +5,7 @@ keywords: temáticas de form builder, componentes principales de estilo de formu
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: c5bea0d9386617b8ff51309f5cba45e7068f71e8
+source-git-commit: 38ccd7f624867cef324c7934647e147532271c0d
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 95%
@@ -316,7 +316,7 @@ Para implementar la temática en el entorno de Cloud Service mediante la canaliz
 
 * 5.1 [Crear un repositorio para la temática](#create-a-new-theme-repo)
 * 5.2 [Insertar los cambios en el repositorio](#committing-the-changes)
-* 5.3 [Establezca la versión de Node.js en 20](#53-set-the-nodejs-version-to-20)
+* 5.3 [Establezca la versión de Node.js en 20](#53-set-the-nodejs-version-to-20-set-node)
 * 5.4. [Ejecutar la canalización de front-end](#run-a-frontend-pipeline)
 
 ##### 5.1 Crear un repositorio para la temática{#create-a-new-theme-repo}
@@ -369,7 +369,7 @@ Ahora, inserte los cambios en el repositorio de temáticas de AEM Forms Cloud Se
 
    ![Cambios confirmados](/help/forms/assets/cmd_git_push.png)
 
-##### 5.3 Establezca la versión de Node.js en 20
+##### 5.3 Establezca la versión de Node.js en 20 {#set-node}
 
 Para establecer la versión de Node.js en 20 mediante la configuración de canalización:
 
