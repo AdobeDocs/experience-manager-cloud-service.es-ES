@@ -3,13 +3,13 @@ title: Uso de MCP con AEM as a Cloud Service
 description: Aprenda a utilizar el protocolo de contexto de modelo con AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: a5eeb2cedb16f7d0ba0b31e838b3b9fa27b0bf3f
+exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
+source-git-commit: 5cbe2ae5afd6b6052f486cccc245fbc14e9569aa
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2100'
 ht-degree: 0%
 
 ---
-
 
 # Uso de MCP con AEM as a Cloud Service {#using-mcp-with-aem-as-a-cloud-service}
 
@@ -54,6 +54,7 @@ AEM expone los servidores MCP como extremos HTTP. Los extremos enumerados a cont
 |---|---|----------------------------------------------------------------------------------------------------------------------|
 | **Contenido** | `/content` | Todas las operaciones de contenido de bajo nivel, incluidas las de creación, lectura, actualización y eliminación (CRUD) de páginas, fragmentos y recursos. |
 | **Contenido (solo lectura)** | `/content-readonly` | Operaciones de contenido de solo lectura (Get, List/Search) para páginas, fragmentos y recursos. |
+| **Cloud Manager** | `/cloudmanager` | Administre entidades de Cloud Manager, incluidos programas, entornos, repositorios y canalizaciones, que también se pueden activar. <br><br>*Este servidor MCP está ahora en **beta**; para solicitar acceso, envíe un mensaje de correo electrónico a [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) con una descripción de su caso de uso.* |
 
 Las herramientas específicas expuestas por cada servidor MCP pueden evolucionar con el tiempo. En la práctica, puede pedir a su aplicación habilitada para MCP que descubra las herramientas a través de un mensaje como:
 

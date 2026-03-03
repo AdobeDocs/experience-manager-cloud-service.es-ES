@@ -4,10 +4,10 @@ description: Aprenda cómo el trabajo de desarrollo de AEM analiza las canalizac
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: a38d153194f977cf305bece1d9cae676800f52d6
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 1%
+source-wordcount: '625'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +18,17 @@ ht-degree: 1%
 
 El trabajo puede recuperar los estados de la canalización y ayudarle a solucionar problemas con los pasos de generación fallidos sugiriendo correcciones, lo que ahorra tiempo al depurar implementaciones de AEM as a Cloud Service en entornos de desarrollo, fase y producción. Examina los registros de generación y el código relacionado para recomendar una corrección que puede aplicar manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478010?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
 >Las respuestas generadas por IA pueden ser inexactas o engañosas. Asegúrese de volver a comprobar las correcciones y respuestas sugeridas.
 >
->Consulte también [Directrices de usuario de IA generativa de Adobe Experience Cloud.](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Consulte también [Directrices de usuario de IA generativa de Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+>[!NOTE]
+>
+>La resolución de problemas de canalización se limita a las canalizaciones de pila completa (implementación y calidad de código), pero la compatibilidad con la **canalización de configuración de nivel web** ya está disponible en versión beta. Para solicitar acceso, envíe un correo electrónico a [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Se requiere el acceso preexistente a los agentes en AEM.
 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
@@ -32,7 +36,7 @@ El trabajo puede recuperar los estados de la canalización y ayudarle a solucion
 
 Para acceder a este trabajo, consulte las [notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) para obtener instrucciones sobre cómo inscribirse en el programa beta, asegurándose de indicar su interés en el trabajo de desarrollo. También puede enviar por correo electrónico comentarios específicos del trabajo de desarrollo a [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Siga un tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
+[Siga un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
 
 ## Acceso al trabajo de desarrollo mediante Cloud Manager {#how-to-access-the-job}
 
@@ -91,6 +95,6 @@ El trabajo de desarrollo requiere la función Cloud Manager - Desarrollador o Cl
 
 ## Funciones fuera de ámbito {#out-of-scope-features}
 
-La resolución de problemas de la canalización funciona en el paso de compilación de la canalización de pila completa. Para otros tipos y pasos de canalización, depure los errores descargando e inspeccionando los registros.
+La resolución de problemas de canalización funciona en el paso Generar y prueba de unidad y el paso Escaneo de código en la implementación de pila completa y las canalizaciones de calidad de código. Para otros tipos y pasos de canalización, depure los errores descargando e inspeccionando los registros.
 
 Consulte [Registros de acceso y descarga](/help/implementing/cloud-manager/manage-logs.md) para obtener más información.
