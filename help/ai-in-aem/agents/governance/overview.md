@@ -4,9 +4,9 @@ description: Descubra cómo AEM Governance Agent protege la integridad de la mar
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
-source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
+source-git-commit: 1f40d8201456f5c1a735e2d92988607c25d34a09
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,8 @@ El agente de gobernanza puede validar el contenido con respecto a las directrice
 * *¿Sigue este(a) `https://www.website/en.html` las directrices de mensajería de marca?*
 * *Comprobar si `https://www.website/homepage` sigue las directrices de marca*
 * *Mostrarme las directrices de marca*
+
+El agente de gobernanza también incluye una capacidad de importación de políticas de marca impulsada por IA que utiliza IA para transformar los documentos de directrices de marca existentes de los clientes en comprobaciones de políticas estructuradas y aplicables que rigen, validan y guían automáticamente la creación de contenido compatible. Para obtener más información, consulte [Cómo importar una directiva de marca](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md).
 
 ### Permiso y Digital Rights Management {#permission-and-digital-rights-management}
 
