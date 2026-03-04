@@ -4,10 +4,10 @@ description: Aprenda a generar una PDF de envío a partir de los envíos de form
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
+source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
 workflow-type: tm+mt
-source-wordcount: '4117'
-ht-degree: 58%
+source-wordcount: '4202'
+ht-degree: 56%
 
 ---
 
@@ -367,6 +367,12 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
       ![Propiedades del campo de formulario](/help/forms/assets/formfieldpropertiesdor.png)
 
+      **Mostrar etiquetas para el menú desplegable de selección múltiple**
+
+      <span class="preview"> Esta característica está disponible a través del programa Acceso anticipado. Para solicitar acceso, envía un correo electrónico desde tu dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+      El PDF de envío ahora muestra las etiquetas de visualización seleccionadas para los componentes desplegables de selección múltiple en lugar de los valores almacenados internos. Por ejemplo, si un usuario selecciona &quot;California&quot; y &quot;Nueva York&quot; en un menú desplegable, la PDF de envío muestra las etiquetas seleccionadas en lugar de los valores internos como `CA` y `NY`.
+
    3. **Propiedades de página maestra**:
       * **Imagen del logotipo**: puede elegir usar la imagen del logotipo en el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
       * **Título del formulario**: título del documento de registro.
@@ -377,9 +383,10 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
       ![Propiedades de página maestra](/help/forms/assets/masterpagepropertiesdor.png)
 
-   >[!NOTE]
+   <!--
+   [!NOTE]
    >
-   >Si está utilizando una plantilla de formulario adaptable creada con una versión del diseñador anterior a la 6.3, para que las propiedades Color de énfasis y Familia de fuentes funcionen, asegúrese de que lo siguiente esté presente en su plantilla de formulario adaptable bajo el subformulario raíz:
+   >If you are using an Adaptive Form template created with a version of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your Adaptive Form template under the root subform:
 
    ```xml
    <proto>
@@ -391,7 +398,7 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
    <color value="4,166,203"/>
    </edge>
    </proto>
-   ```
+   ```-->
 
 1. Para guardar los cambios de personalización de marca, seleccione **[!UICONTROL Listo]**.
 
@@ -525,6 +532,11 @@ Un archivo XCI ayuda a establecer varias propiedades de un documento. Forms as a
 1. Especifique la ruta del archivo XCI y haga clic en **[!UICONTROL Guardar]**.
 
 
-## Véase también {#see-also}
+## Preguntas frecuentes {#faq}
+
+**Q: los cambios no aparecen en el PDF de envío.**
+**R:** Abra el formulario en el editor de Forms adaptable, realice una edición menor (por ejemplo, ajuste una etiqueta de campo o reordene un campo) y guarde el formulario. Esto regenera la plantilla de PDF de envío y los cambios aparecen en la siguiente PDF generada.
+
+## Ver también {#see-also}
 
 {{see-also}}
