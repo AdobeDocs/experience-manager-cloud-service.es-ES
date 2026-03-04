@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c1e175128ab6e4b483e3940d9bd86a06540ef40f
+source-git-commit: 4b05f571904384521b79dbaf0fa5f4a3a75fef2b
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 27%
+source-wordcount: '1561'
+ht-degree: 13%
 
 ---
 
@@ -16,92 +16,109 @@ ht-degree: 27%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 24464 {#release-24464}
+## Versión 24678 {#release-24678}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 24464, que se publicó el jueves, 18 de febrero de 2026. La versión de mantenimiento anterior fue la 24288.
+A continuación, se resumen las mejoras continuas para la versión de mantenimiento 24678, publicada el jueves, 04 de marzo de 2026. La versión de mantenimiento anterior fue la 24464.
 
-La activación de funciones 2026.2.0 proporciona el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
+La activación de funcionalidades 2026.3.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
-### Mejoras {#enhancements-24464}
+### Mejoras {#enhancements-24678}
 
-* AEMARCH-264: Agregar compatibilidad para validar solicitudes condicionales basadas en RequestEntity.
-* AEMARCH-269: Exponer las API de validación de JavaEE para implementaciones de OpenAPI.
-* AEMARCH-276: proporcionar compatibilidad con i18n a través de RequestEntity.
-* ASSETS-10995: establezca un límite en la cantidad de recursos en el zip de descarga.
-* ASSETS-50788: Actualice la API de búsqueda para utilizar la API de GET de metadatos del recurso.
-* ASSETS-50946: asigne el cuerpo de la solicitud mediante la API de GET de metadatos a los metadatos JCR.
-* ASSETS-55866: evite enviar una nueva solicitud para el mismo recurso hasta que se complete el procesamiento anterior.
-* ASSETS-60300: proporcione una API para recuperar el contexto y el resultado asincrónicos del trabajo.
-* ASSETS-60574: Añada compatibilidad con la última versión del paquete de API de Sling.
-* ASSETS-61049: Continuar con el desarrollo del paquete del administrador de metadatos.
-* ASSETS-61692: realice una búsqueda semántica de forma predeterminada en Buscar en la API abierta.
-* ASSETS-61696: ruta BAM y contenedor MFE en la vista de recursos.
-* ASSETS-61854: enviar la solución GenStudio en el mensaje de activación/desactivación.
-* ASSETS-61973: Cree una API en AEM para administrar las peticiones de datos.
-* ASSETS-62182: controlador de eventos de Asset Compute para la representación de manifiesto c2pa.
-* ASSETS-62311: Problemas de regresión de búsqueda.
-* ASSETS-62413: Agregue compatibilidad para el campo customModifier en cada capa del JSON.
-* ASSETS-62432: Combinar carpetas para eliminar API PR.
-* ASSETS-62540: aumente la versión optimizada para dispositivos táctiles en el inicio rápido.
-* ASSETS-62622: Controlar el modo de búsqueda en MatchQuery.
-* ASSETS-62671: Corregir el operador MatchQuery startsWith.
-* ASSETS-62780: Agregar opción de característica para la API de carpeta.
-* ASSETS-62988: oculta la representación de manifiesto c2pa para que no se muestre en la pestaña representaciones.
-* ASSETS-63336: La sincronización de plantillas de AEM a DM solo debe producirse para metadatos con espacio de nombres DAM.
-* ASSETS-63375: ponga las API abiertas experimentales de carga de recursos detrás de la alternancia de funciones.
-* ASSETS-63453: Asegúrese de que todos los usuarios puedan leer la configuración de omnisearch.
-* GRANITE-63744: permite conectar trabajos asincrónicos a trabajos de sling.
-* GRANITE-64567: deshabilitar automáticamente la búsqueda semántica para búsquedas de SKU.
-* GUIDES-41187: Añada encabezados para el uso de las guías.
-* SITES-30452: API de contenido con ASO: sugerencias de título y descripción.
-* SITES-33116: Corrija la validación de la ruta.
-* SITES-34234: Editor de páginas: conservar el estado del árbol de contenido.
+* FORMS-18927: se ha agregado compatibilidad con tipos MIME personalizados y extensiones de archivo en el componente Archivo adjunto de AEM Forms, lo que permite a los usuarios adjuntar una variedad más amplia de tipos de documentos.
+* FORMS-18211, FORMS-22936: Los usuarios experimentaron un problema de accesibilidad en el cual las casillas de verificación no se agrupaban correctamente dentro de un elemento `<fieldset>`, con la etiqueta de grupo no anidada en un elemento `<legend>` como primer elemento secundario. Esto afectaba a los usuarios con discapacidades que dependían de los lectores de pantalla para la navegación. Los componentes principales basados en Forms adaptable ahora han introducido la compatibilidad con conjuntos de campos y leyendas para proporcionar una mejor compatibilidad de accesibilidad.
+Se ha agregado la opción Conjunto de campos en el panel que permite a los usuarios organizar y agrupar los campos relacionados de forma más eficaz en sus formularios.
+* FORMS-23880: se ha agregado compatibilidad con el editor de temáticas en los componentes principales. Esta mejora permite a los usuarios personalizar y administrar los temas de forma más eficaz dentro de los componentes principales, lo que mejora su flexibilidad de diseño y flujo de trabajo.
+* FORMS-21772: se ha agregado compatibilidad con versiones a la IU de administración de Forms. Esta mejora permite a los usuarios crear y recuperar versiones para componentes principales basados en y en componentes básicos como Forms adaptable, fragmentos de formulario, temas y Assets binario, lo que mejora la administración de recursos y el control de versiones.
+* FORMS-23094: se ha agregado análisis del lado del cliente para Forms adaptable basado en componentes de base, lo que permite a los clientes empresariales migrar sus formularios a la nube. Esta mejora admite funciones de EcmaScript en las reglas del editor de código, que anteriormente no eran compatibles, lo que facilita un proceso de migración más fluido.
+* FORMS-23853: se ha agregado compatibilidad para anular reCAPTCHA en el componente sling. Esta mejora permite a los usuarios personalizar la configuración de reCAPTCHA, lo que mejora la flexibilidad y seguridad para los clientes empresariales.
+* SITES-34936: Edge Delivery con editor universal: agregue fragmentos de contenido de filtrado por modelo para la publicación.
+* SITES-36203: Edge Delivery con editor universal: agregue el código de alternancia para habilitar la compatibilidad con varios campos y campos múltiples compuestos.
+* SITES-37037: Edge Delivery con editor universal: mejore la importación de hojas de cálculo para detectar el delimitador automáticamente.
+* SITES-37804: Edge Delivery con editor universal: Agregue compatibilidad para la creación de grupos de usuarios cerrados (acceso anticipado).
+* SITES-38990: Edge Delivery con editor universal: agregue compatibilidad para exclusiones en asignaciones de rutas.
+* SITES-39171: Edge Delivery con editor universal: agregar compatibilidad con `cq:tags` en bloques y elementos de bloque.
+* SITES-40042: Edge Delivery con el editor universal: convierta el servicio de configuración en el predeterminado para los nuevos sitios.
+* SITES-37649: GraphQL: admite el filtrado de campos de texto multilínea en el nivel JCR.
+* SITES-37843: GraphQL: El filtrado para campos multivalor (colecciones) no es compatible con el nivel JCR.
+* SITES-37540: Replace y replaceAll operaciones para valores de campo CF (buscar y reemplazar para un nombre de campo determinado).
+* SITES-37741: agregue la propiedad &quot;tarjeta&quot; en obtener respuesta de variación de fragmento (vista de tarjeta en la IU del administrador).
+* SITES-37754: Publicar carpeta mediante API: validación de árbol bajo demanda cuando `validateReferences` está establecido en verdadero.
+* SITES-37756: muestra la información de estado de protección y desprotección de un fragmento de contenido.
+* SITES-37805: Actualización del esquema: los fragmentos MODIFICADOS no se pueden mover ni cambiar de nombre (documentación).
+* SITES-37847: rendimiento mejorado para la consulta del proveedor de referencia de contenido prestado SQL-2 (recuperación de contenido prestado).
+* SITES-39255: actualice la implementación de OpenAPI a los cambios recientes de la API de Java para el campo compuesto.
+* SITES-37096: elimina la lentitud de la consola Lanzamientos cuando hay nodos huérfanos.
+* SITES-38117: Encuentre una forma de consultar lanzamientos secundarios sin afectar al rendimiento.
+* SITES-38317: agregue el usuario que inició el flujo de trabajo a los metadatos (usuario real en lugar de genérico cuando lo ejecuta el usuario del servicio).
+* SITES-39203: muestra el usuario que inició el flujo de trabajo (en lugar del usuario genérico cuando lo ejecuta el usuario de servicio).
+* SITES-13083: Localice las cadenas de error en el cuadro de diálogo Sitios > Creación de Live Copy.
+* SITES-13389: localice la cadena &quot;Versión creada de... antes de promocionar el lanzamiento&quot; en Sites > Cronología.
+* SITES-16176: localice cadenas en el cuadro de diálogo de configuración del componente Editor de páginas > Imagen v3.
+* SITES-35702: cadena &quot;Live Copy actualizada con herencia limitada&quot; sin localizar en la pestaña &quot;Información general de Live Copy&quot;.
+* SITES-35748: etiqueta de casilla de verificación &quot;Habilitar selección de variante de producto&quot; no localizada en el Editor del modelo de fragmentos de contenido.
+* SITES-35750: marcador de posición &quot;SKU de producto&quot; sin localizar separado por `#` carácter&quot; en el campo de entrada en &quot;Editor del modelo de fragmentos de contenido&quot;.
+* SITES-37113: cuadro de diálogo &quot;Cancelar herencia&quot; no localizado en la pestaña &quot;Configuraciones de CIF&quot;.
+* SITES-25240: corrección de accesibilidad para el call to action modal de teaser.
+* SITES-25531: corrección de accesibilidad para el contraste de color en el modo de búsqueda.
+* SITES-37115: Iconos truncados en la tienda de demostración de Vienia.
 
-### Problemas solucionados {#fixed-issues-24464}
+### Problemas solucionados {#fixed-issues-24678}
 
-* ASSETS-43198: los correos electrónicos de notificación de caducidad de los recursos no respetan la preferencia de idioma del usuario.
-* ASSETS-51840: mejoras en el procesamiento de recursos.
-* ASSETS-52061: No se puede volver atrás después de seleccionar la búsqueda guardada.
-* ASSETS-53155: mejoras en el contenido de los recursos.
-* ASSETS-53745: El flujo de descarga de Dynamic Media requiere anular la selección del recurso original antes de elegir el ajuste preestablecido web.
-* ASSETS-54260: correcciones de contenido de recursos.
-* ASSETS-54787: mejoras en el contenido de los recursos.
-* ASSETS-57391: actualizaciones de contenido de recursos.
-* ASSETS-59213: cq-dynamicmedia-core depende de la biblioteca obsoleta de commons-lang.
-* ASSETS-59214: cq-scene7-imaging depende de la biblioteca obsoleta de commons-lang.
-* ASSETS-59546: cq-remotedam-client-core depende de la biblioteca obsoleta de commons-lang.
-* ASSETS-59703: cq-dam-core depende de la biblioteca obsoleta de commons-lang.
-* ASSETS-59705: cq-dam-handler depende de la biblioteca obsoleta de commons-lang.
-* ASSETS-59707: cq-dam-indesign depende de la biblioteca obsoleta de commons-lang.
-* ASSETS-59709: cq-scene7-core depende de la biblioteca obsoleta de commons-lang.
-* ASSETS-59929: el CSV de la exportación de metadatos se interrumpe cuando el campo tiene un carácter de nueva línea.
-* ASSETS-60241: El trabajo de movimiento asincrónico falla al cambiar el nombre de la carpeta.
-* ASSETS-61134: elimine las etiquetas comparisonVersion de los archivos pom.
-* ASSETS-61309: La operación de mover o copiar fragmentos de contenido ya no actualiza las referencias internas.
-* ASSETS-61730: La redirección al acceso binario directo debe respetar la codificación de los recursos.
-* ASSETS-62358: el CSV del informe de Assets muestra valores dañados en la ruta de contenido.
-* ASSETS-62610: botón de licencia de Adobe Stock deshabilitado en la interfaz de usuario de Assets.
-* ASSETS-62613: NPE en `downloadasset`/`saveas`.
-* ASSETS-62656: el indicador de Búsqueda por IA Omnisearch se muestra incorrectamente para las búsquedas que no son de Assets.
-* GRANITE-55387: Corregir la palabra entre comillas elimina toda la palabra.
-* GRANITE-61240: RCE a través de XSS almacenado en lazycontainer.js.
-* GRANITE-64101: Los índices OOTB convertidos a ES volvieron a Lucene al reiniciar.
-* SITES-24530: el destinatario táctil de los botones de cerrar/quitar en el modo de búsqueda no es lo suficientemente grande.
-* SITES-31425: mensaje de error no localizado en el flujo de trabajo de inicio.
+* CQ-4361552: se ha corregido el diccionario JSON de i18n que retenía el Unicode escapado de HTML en las traducciones importadas.
+* CQ-4361634: los fragmentos de experiencia fijos no se pueden seleccionar o no se agregan al proyecto de traducción.
+* CQ-4362072: Se ha corregido el flujo de trabajo de traducción de AEMaaCS - DE > El paso ES no puede agregar una página al proyecto de traducción.
+* FORMS-23741: Los usuarios experimentaron problemas en los que los pasos de carga de InvokeDDX y Asset no se ejecutaban en cascada, lo que requería dos ejecuciones de flujo de trabajo independientes. Esto afectó al entorno de producción al utilizar AEM as a Cloud Service con el complemento Sites and Forms.
+* FORMS-23877: Los usuarios experimentaron problemas con las funciones personalizadas que no se cargaban en tiempo de ejecución al crear formularios directamente en las páginas de Sites mediante una versión anterior de los componentes principales.
+* FORMS-24038: Los usuarios experimentaban problemas con el botón de navegación cuando se añadían más pestañas dinámicamente.
+* FORMS-23721: se ha corregido un problema por el que los patrones de validación configurados para las entradas de texto en el cuadro de diálogo de edición no persistían. Anteriormente, el valor del patrón se guardaba, pero no se conservaba ni se mostraba en la interfaz de usuario, lo que resultaba en confusión para los autores de formularios.
+* FORMS-23456: Los usuarios experimentaban anuncios erróneos de lectores de pantalla en dispositivos móviles para filas de encabezado ocultas en una tabla al utilizar el componente Tabla en Forms adaptable. Se anunció un encabezado de tabla oculto fuera de contexto, lo que causó confusión a los usuarios que dependen de iOS VoiceOver y Android TalkBack.
+* FORMS-23454: Los usuarios experimentaron problemas con el selector de fechas para componentes principales basados en Forms adaptable. Al introducir fechas no válidas, el sistema corregiría automáticamente para cerrar las posibles fechas.
+* FORMS-23117: Los usuarios experimentaron que Captcha no se traducía correctamente en componentes de base basados en Forms adaptable.
+* FORMS-22634: Los usuarios experimentaron un problema por el que los archivos adjuntos del correo electrónico no se incluían cuando las opciones &quot;Incluir datos adjuntos&quot; y &quot;Usar plantilla de HTML&quot; se utilizaban juntas.
+* FORMS-23288: Los usuarios han experimentado problemas con el Forms adaptable incrustado en los modelos Asset Share Commons. El formulario no se pudo cargar correctamente cuando la dirección URL contenía `.html` en la ruta intermedia.
+* FORMS-19198: Los usuarios experimentaron errores 404 al incrustar formularios mediante reglas de Dispatcher. Se han producido errores en direcciones URL como /etc.clientlibs/toggles.json, rum library y analyticsparserconfigparser.json, debido a que el reescritor de URL no puede reescribir estas direcciones URL.
+* SITES-33799: Edge Delivery con editor universal: corrija la representación de vídeo optimizada no publicada.
+* SITES-35082: Edge Delivery con el editor universal: elimina los párrafos vacíos, los saltos de línea iniciales y finales de los textos enriquecidos.
+* SITES-35524: Edge Delivery con editor universal: corrija los errores de publicación de las rutas que contienen caracteres especiales no ASCII.
+* SITES-38647: Edge Delivery con el editor universal: corrija los cuellos de botella de rendimiento en entornos con muchos sitios.
+* SITES-40521: Edge Delivery con el editor universal: corrija los nombres de clase duplicados para bloques y elementos de bloque.
+* SITES-37887: GraphQL: Las búsquedas de UUID para conjuntos de resultados más grandes pueden causar un aumento de los tiempos de respuesta.
+* SITES-38412: no se pueden aplicar parches a los fragmentos en Launch cuando existen campos/slug únicos (la restricción única ahora excluye los CF en lanzamientos).
+* SITES-38606: Error de validación al añadir una variación a CF con UUID de referencia de fragmento (hidrate los CF a los que hace referencia uuid en variaciones).
+* SITES-39489: la interfaz de usuario de Assets muestra fragmentos de carpetas cq:discarded (los archivos CF eliminados de forma suave se han eliminado de las respuestas de la API de administración).
+* SITES-39517: GET CF con un campo compuesto que contiene una enumeración falla con el error 500.
+* SITES-40072: los campos compuestos con pestañas devuelven valores de marcador de posición vacíos.
+* SITES-39575: al guardar Live Copy, se elimina `cq:rolloutConfigs`: se ha perdido la configuración de despliegue.
+* SITES-39694: Despliegues de producción fallidos con NPE.
+* SITES-39761: NavigationItem.getLink() devuelve nulo en el componente de navegación de CIF v2.
+* SITES-40519: el despliegue de MSM falla con NullPointerException cuando el recurso de destino de Live Copy es nulo.
+* SITES-17531: cadena codificada &quot;Vista previa de recorte inteligente&quot; en Editor de páginas > Imagen > Recorte inteligente.
+* SITES-31575: la información del objeto no es totalmente visible en Editor de páginas > Componente de carrusel > Propiedades.
+* SITES-34215: el componente JS autocompletado genera un error de validación inmediato en el campo de ruta requerido en la pestaña del cuadro de diálogo.
+* SITES-35218: Algunos componentes principales de AEM no representan correctamente la etiqueta alt vacía.
+* SITES-37114: Información sobre la herramienta &quot;Habilitar compatibilidad con UID de catálogo&quot; truncada en la pestaña &quot;Configuraciones de CIF&quot;.
+* SITES-36138: consulta sin índice detectado (incidente).
+* SITES-37682: anulación de tipo de contenido en `/libs/cq/Page/Page.css.jsp` y `/libs/cq/Page/Page.js.jsp.`
+* SITES-38709: El RTE de texto de la IU clásica muestra el HTML sin procesar después de la actualización a 6.5.24.
+* SITES-39630: Las actualizaciones de fragmentos de contenido anidadas no se reflejan en las ofertas de Target exportadas.
+* SITES-39696: el tiempo de activación/desactivación para programar la activación/desactivación no funciona.
+* SITES-39824: La exportación de fragmentos de experiencias a Adobe Target devuelve 500 (NPE).
+* SITES-40253: 500 errores intermitentes en `/bin/cif/invalidate-cache` - Conflictos de Oak en `/var/cif/cacheinvalidation`.
+* SITES-40341: corrija imágenes en línea base64 en la etiqueta de estilos en `HtmlToJsonConvertorImpl`.
 
-### Problemas conocidos {#known-issues-24464}
+### Problemas conocidos {#known-issues-24678}
 
 Ninguna.
 
-### Características y API obsoletas {#deprecated-24464}
+### Características y API obsoletas {#deprecated-24678}
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-### Correcciones de seguridad {#security-24464}
+### Correcciones de seguridad {#security-24678}
 
-AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 14 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
+AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 15 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
 
-### Tecnologías integradas {#embedded-tech-24464}
+### Tecnologías integradas {#embedded-tech-24678}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
