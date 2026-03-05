@@ -61,7 +61,7 @@ Para configurar una acción de envío Enviar correo electrónico para el compone
    >
    > También puede habilitar **[!UICONTROL Usar la plantilla de HTML]** para enviar correos electrónicos usando un diseño de HTML personalizado en lugar de la plantilla predeterminada. Cuando esta opción esté habilitada, especifique el archivo HTML en el campo **Ruta de la plantilla externa**. Esta función está disponible a través del programa Acceso anticipado. Para solicitar acceso, envía un correo electrónico desde tu dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
 
-1.  [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
+1. [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
 1. Haga clic en **[!UICONTROL Listo]**.
 
 >[!TAB Componente principal]
@@ -86,7 +86,7 @@ Para configurar la acción de envío Enviar correo electrónico para el componen
    >
    > También puede habilitar **[!UICONTROL Usar la plantilla de HTML]** para enviar correos electrónicos usando un diseño de HTML personalizado en lugar de la plantilla predeterminada. Cuando esta opción esté habilitada, especifique el archivo HTML en el campo **Ruta de la plantilla externa**. Esta función está disponible a través del programa Acceso anticipado. Para solicitar acceso, envía un correo electrónico desde tu dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
 
-1.  [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
+1. [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
 1. Haga clic en **[!UICONTROL Listo]**.
 
 >[!TAB Editor universal]
@@ -115,7 +115,7 @@ Aparece el cuadro de diálogo **Propiedades del formulario**.
    * Puede especificar la ruta a la plantilla de correo electrónico externa guardada en los recursos de AEM mediante la opción **[!UICONTROL Plantilla externa]**.
    * También puede añadir una plantilla de correo electrónico personalizada para el envío del formulario en el cuadro de texto **[!UICONTROL Plantilla de correo electrónico]**.
 
-1.  [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
+1. [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
 >[!ENDTABS]
