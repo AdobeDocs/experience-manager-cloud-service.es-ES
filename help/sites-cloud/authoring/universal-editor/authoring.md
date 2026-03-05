@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 1de2a860d96397863312f62b3c3c73e6deddd9d8
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2990'
 ht-degree: 12%
 
 ---
@@ -100,7 +100,7 @@ Pulse o haga clic en **Cancelar** o **Listo** para descartar o guardar los cambi
 
 #### Opciones de formato de texto enriquecido {#formatting-options}
 
-El editor de texto enriquecido (RTE) del editor universal permite al autor aplicar formato de texto estándar. De forma predeterminada, están disponibles las siguientes opciones.
+El editor de texto enriquecido (RTE) del editor universal permite al autor aplicar formato de texto estándar. Estas son las opciones disponibles.
 
 * **Estilo de párrafo**
    * Párrafo, h1-h6, código
@@ -108,6 +108,9 @@ El editor de texto enriquecido (RTE) del editor universal permite al autor aplic
 * **Cursiva**
 * **Subrayado**
 * **Tachado**
+* **Color de texto**
+   * Abre una paleta de colores donde puede seleccionar un color o especificar un valor hexadecimal
+   * Solo disponible en el editor modal, no en contexto
 * **Superíndice**
 * **Subíndice**
 * **Lista de viñetas**
@@ -122,12 +125,21 @@ El editor de texto enriquecido (RTE) del editor universal permite al autor aplic
    * Especifique una URL o use [selector de recursos](/help/assets/overview-asset-selector.md#using-asset-selector) para seleccionar un recurso de AEM.
 * **Tabla**
    * Utilice la lista desplegable para insertar una nueva tabla con el número seleccionado de columnas y filas, o insertar y quitar nuevas columnas/filas.
+* **Alineación**
+   * **Alinear a la izquierda**
+   * **Alinear al centro**
+   * **Alinear a la derecha**
+   * **Alinear justificación**
+* **De derecha a izquierda**
+* **De izquierda a derecha**
+* **Sangría**
+* **Anular sangría**
 * **Pegar como texto**
    * Quite el formato del texto del portapapeles antes de pegarlo en el editor universal.
 * **Quitar todo el formato**
    * Quitar todas las opciones de formato del texto seleccionado.
 
-El RTE se puede configurar para ocultar opciones o mostrar opciones adicionales según las necesidades de los autores. Consulte el documento [Configuración del RTE para el editor universal](/help/implementing/universal-editor/configure-rte.md) para obtener más información.
+Según el back-end, las opciones disponibles de forma predeterminada pueden variar. El RTE se puede configurar para ocultar opciones o mostrar opciones adicionales según las necesidades de los autores. Consulte el documento [Configuración del RTE para el editor universal](/help/implementing/universal-editor/configure-rte.md) para obtener más información.
 
 ### Edición de medios {#edit-media}
 
@@ -178,7 +190,13 @@ Según las necesidades del flujo de trabajo, es posible que desee editar el frag
 
    ![Seleccionar icono de agregar](assets/add-icon.png)
 
-1. Si se permite más de un componente para el contenedor, seleccione el que desee insertar en la lista desplegable. Si solo se permite un componente, se inserta automáticamente.
+1. Se abrirá el cuadro de diálogo Selector de componentes.
+   * Utilice la columna izquierda para filtrar los componentes por categoría o utilice la búsqueda para filtrar por nombre.
+   * Haga clic en el nombre del componente en la columna derecha para insertarlo en el contenedor.
+   * Si solo se permite un componente en el contenedor, se inserta automáticamente.
+   * Haga clic fuera del selector para cancelar la inserción del componente.
+
+   ![Selector de componentes](assets/component-picker.png)
 
 El componente se inserta en el contenedor y se puede editar en el editor.
 
@@ -269,7 +287,7 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 
 ### Copiar y pegar {#copy-paste}
 
-Puede copiar y pegar componentes que se encuentren dentro de [&#x200B; contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
+Puede copiar y pegar componentes que se encuentren dentro de [ contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
 
 Copiar y pegar pueden estar en la misma pestaña del explorador o entre pestañas del explorador, siempre que las pestañas ya estén abiertas. No puede copiar un elemento y, a continuación, abrir una nueva pestaña del explorador para pegarlo.
 

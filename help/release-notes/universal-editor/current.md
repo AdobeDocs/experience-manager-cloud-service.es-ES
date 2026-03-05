@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2026.02.26 del editor universal
-description: Estas son las notas de la versión 2026.02.26 del editor universal.
+title: Notas de la versión 2026.03.05 del editor universal
+description: Estas son las notas de la versión 2026.03.05 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
+source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 32%
+source-wordcount: '178'
+ht-degree: 39%
 
 ---
 
 
-# Notas de la versión 2026.02.26 del editor universal {#release-notes}
+# Notas de la versión 2026.03.05 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 26 de febrero de 2026.
+Estas son las notas de la versión del editor universal del 5 de marzo de 2026.
 
 >[!TIP]
 >
@@ -26,9 +26,8 @@ Estas son las notas de la versión del editor universal del 26 de febrero de 202
 
 ## Novedades {#what-is-new}
 
-* Se agregaron descripciones a todos los campos de esquema para ayudar a los desarrolladores a generar archivos de definición de modelo, filtro o componente.
-* Ahora se admiten actualizaciones de varios campos en fragmentos de contenido para ediciones en contexto.
-
+* [El selector de componentes](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) tiene un nuevo diseño.
+* [Ya está disponible un selector de color](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) para RTE.
 
 ## Funciones de adopción anticipada {#early-adopter}
 
@@ -38,7 +37,5 @@ Si le interesa probar las próximas funciones enumeradas a continuación y compa
 
 ## Otras mejoras {#other-improvements}
 
-* El editor ya no establece el contenido predeterminado en `{}` antes de que llegue el contenido, lo que evita la pérdida de datos en determinadas situaciones.
-* La persistencia de los datos cuando el campo está enfocado se hizo más robusta.
-* Los cambios ya no se pierden en determinadas situaciones al editar en el panel izquierdo y, a continuación, seleccionar otro elemento en la ventana del editor.
-* Se ha corregido un problema de persistencia con campos RTE para fragmentos de contenido al utilizar los extremos de OpenAPI.
+* Las opciones de alineación, dirección del texto y sangría ahora están [habilitadas de forma predeterminada en RTE](/help/implementing/universal-editor/configure-rte.md), siempre que el servidor las admita.
+* Las pestañas ahora se representan al utilizar un fragmento de contenido con API abierta y esquema de interfaz de usuario.
