@@ -28,7 +28,7 @@ La próxima versión planificada es para el viernes, 02 de abril de 2026.
 
 ## Novedades: Cloud Manager (en inglés) {#cloud-manager-whats-new}
 
-* **Cloud Manager ahora admite la opción** Borrar **para las importaciones de** Copia de contenido ****
+* **Cloud Manager ahora admite la opción** Borrar **para las importaciones de** Copia de contenido **&#x200B;**
 
   Cuando se habilita **Borrar**, Cloud Manager elimina el contenido existente en el destino antes de iniciar la importación, por lo que puede empezar desde una pizarra limpia y evitar conflictos con el contenido preexistente. Si deja **Borrar** deshabilitado, Cloud Manager importa el nuevo contenido sobre el contenido de destino existente. Aparece un mensaje de confirmación antes de que comience el borrado y Cloud Manager registra la acción de borrado y los detalles de importación para rastrear.
 
