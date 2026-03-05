@@ -1,10 +1,10 @@
 ---
-title: Resumen del trabajo de desarrollo
-description: Aprenda cómo el trabajo de desarrollo de AEM analiza las canalizaciones fallidas en Cloud Manager y los registros de compilación para sugerir correcciones de código y acelerar la depuración.
+title: Información general del agente de desarrollo
+description: Obtenga información sobre cómo el agente de desarrollo de AEM analiza las canalizaciones con errores en Cloud Manager y los registros de compilación para sugerir correcciones de código y acelerar la depuración.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: a38d153194f977cf305bece1d9cae676800f52d6
+source-git-commit: 95b54c3c90a4fd221a91e538b6c5c43e03b74b14
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 ---
 
 
-# Resumen del trabajo de desarrollo {#development-job-overview}
+# Información general del agente de desarrollo {#development-agent-overview}
 
-[Como parte de Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) el trabajo de desarrollo ayuda a los desarrolladores y administradores de AEM a crear, depurar, implementar y optimizar código de manera más eficiente.
+[Como parte de Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) el Agente de desarrollo ayuda a los desarrolladores y administradores de AEM a crear, depurar, implementar y optimizar código de manera más eficiente.
 
-El trabajo puede recuperar los estados de la canalización y ayudarle a solucionar problemas con los pasos de generación fallidos sugiriendo correcciones, lo que ahorra tiempo al depurar implementaciones de AEM as a Cloud Service en entornos de desarrollo, fase y producción. Examina los registros de generación y el código relacionado para recomendar una corrección que puede aplicar manualmente.
+El agente puede recuperar los estados de la canalización y ayudarle a solucionar problemas con los pasos de generación que fallan sugiriendo correcciones, lo que ahorra tiempo al depurar implementaciones de AEM as a Cloud Service en entornos de desarrollo, fase y producción. Examina los registros de generación y el código relacionado para recomendar una corrección que puede aplicar manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478010?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -34,13 +34,13 @@ El trabajo puede recuperar los estados de la canalización y ayudarle a solucion
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-Para acceder a este trabajo, consulte las [notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) para obtener instrucciones sobre cómo inscribirse en el programa beta, asegurándose de indicar su interés en el trabajo de desarrollo. También puede enviar por correo electrónico comentarios específicos del trabajo de desarrollo a [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
+Para acceder a este agente, consulte las [notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) para obtener instrucciones sobre cómo inscribirse en el programa beta, asegurándose de indicar su interés en el agente de desarrollo. También puede enviar por correo electrónico comentarios específicos del agente de desarrollo a [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Siga un tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
+[Siga un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
 
-## Acceso al trabajo de desarrollo mediante Cloud Manager {#how-to-access-the-job}
+## Acceso al agente de desarrollo a través de Cloud Manager {#how-to-access-the-agent}
 
-Puede acceder al trabajo de desarrollo a través del asistente de IA que se encuentra en las interfaces de usuario, incluidas Cloud Manager o Experience Hub.
+Puede acceder al agente de desarrollo a través del asistente de IA que se encuentra en las interfaces de usuario, incluidas Cloud Manager o Experience Hub.
 
 1. Para empezar, haga clic en [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) para abrir su página principal.
 
@@ -79,10 +79,9 @@ Puede acceder al trabajo de desarrollo a través del asistente de IA que se encu
 
    ![Mensaje del Asistente de IA y respuesta resultante](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-prompt-response.png)
 
-
 ## Permisos {#permissions}
 
-El trabajo de desarrollo requiere la función Cloud Manager - Desarrollador o Cloud Manager - Administrador de programas.
+El agente de desarrollo requiere la función Cloud Manager - Desarrollador o Cloud Manager - Administrador de programas.
 
 ## Ejemplos de peticiones de datos {#sample-prompts}
 

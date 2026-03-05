@@ -1,18 +1,18 @@
 ---
 title: Trabajo de creación de comunicación
-description: Obtenga información acerca del trabajo de creación de comunicaciones de los agentes de Brand Experience y cómo utilizar el lenguaje natural para crear comunicaciones interactivas.
+description: Obtenga información acerca del trabajo de creación de comunicaciones de los agentes de producción de experiencia y cómo utilizar el lenguaje natural para crear comunicaciones interactivas.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
-source-git-commit: 9be60c79ef001edf7590a8fd3fd64c1a9a1ab9f9
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
 
-# Aptitud de creación de comunicación {#ic-creation-skill}
+# Trabajo de creación de comunicación {#ic-creation-skill}
 
 <!-- UNCOMMENT ACTIVATION SECTION AT THE BOTTOM ONCE THIS IS NO LONGER ALPHA -->
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Las [comunicaciones interactivas](/help/forms/introduction-to-interactive-communication.md) son documentos personalizados basados en datos y diseñados para la correspondencia comercial, como extractos de cuentas, documentos de pólizas, facturas, kits de bienvenida y avisos de beneficios. A diferencia de los formularios que recopilan entradas de los usuarios, las comunicaciones interactivas generan documentos de salida con contenido dinámico específico del destinatario.
 
-El trabajo de creación de comunicaciones es una funcionalidad de [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) que está diseñada para desarrollar comunicaciones interactivas mediante mensajes en lenguaje natural. Este trabajo genera automáticamente correspondencia personalizada y basada en datos para su impresión (en formato PDF). El trabajo se muestra mediante el Asistente de IA.
+El trabajo de creación de comunicaciones forma parte de [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md), que está diseñado para desarrollar comunicaciones interactivas mediante mensajes en lenguaje natural. Este trabajo genera automáticamente correspondencia personalizada y basada en datos para su impresión (en formato PDF). El trabajo se muestra mediante el Asistente de IA.
 
 Algunos de los beneficios clave del trabajo de creación de comunicaciones incluyen:
 

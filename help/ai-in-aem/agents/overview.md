@@ -4,9 +4,9 @@ description: Obtenga información acerca de los agentes disponibles en AEM para 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 4070808ad3ac99f6112cb748a1f4288ffa974915
+source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Estos agentes están disponibles en Adobe Experience Manager (AEM) as a Cloud Se
 
 Tiene tres opciones para acceder a los agentes.
 
-1. Puede tener la opción de acceder a los agentes de AEM a través del programa [Probar antes de comprar](http://experienceleague.adobe.com/es/docs/experience-cloud-ai/experience-cloud-ai/agents/trial), que se está desplegando por fases. Su CSM o TAM pueden ayudarle a confirmar la disponibilidad de su organización.
+1. Puede tener la opción de acceder a los agentes de AEM a través del programa [Probar antes de comprar](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial), que se está desplegando por fases. Su CSM o TAM pueden ayudarle a confirmar la disponibilidad de su organización.
 1. Explore a los agentes de AEM [mediante una versión de prueba.](https://www.aem.live/developer/aem-playground)
 1. Conéctese con su CSM o TAM para discutir el acceso a través del SKU de Agentic si esto se ajusta a su hoja de ruta y planes de evaluación.
 
-A medida que se disponga de nuevas habilidades en la fase de lanzamiento anticipado, ofreceremos oportunidades adicionales para participar y compartir comentarios. Le recomendamos que vea [esta página](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) para ver las actualizaciones.
+A medida que se disponga de nuevas habilidades en la fase de lanzamiento anticipado, ofreceremos oportunidades adicionales para participar y compartir comentarios. Le recomendamos que vea [esta página](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) para ver las actualizaciones.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
@@ -51,10 +51,6 @@ El [Agente de Asesor de contenido](/help/ai-in-aem/agents/content-advisor/overvi
 * **Optimización de contenido**: transforme la forma en que los usuarios refinan y adaptan los recursos aplicando instrucciones en lenguaje natural para crear variaciones preparadas para el canal. Interprete la intención del usuario y realice tareas de edición complejas de forma automática para realizar tareas como generar nuevas representaciones, ajustar propiedades visuales, cambiar fondos o preparar recursos para canales digitales específicos.
 
 El agente interpreta la intención del usuario y realiza tareas de edición complejas de forma automática, incluida la generación de nuevas representaciones, el ajuste de propiedades visuales, el cambio de fondos o la preparación de recursos para canales digitales específicos.
-
-## Experience Modernization Agent {#site-modernization}
-
-[Experience Modernization Agent](/help/ai-in-aem/agents/modernization/overview.md) desbloquea todo el valor de Edge Delivery Services (incluida la creación de AEM) al hacer que el trabajo de migraciones de sitios web y la evolución continua sea rápido y sin fricciones.
 
 ## Agente de gobernanza {#governance-agent}
 
