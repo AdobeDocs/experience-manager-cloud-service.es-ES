@@ -5,10 +5,10 @@ keywords: temáticas de form builder, componentes principales de estilo de formu
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 38ccd7f624867cef324c7934647e147532271c0d
+source-git-commit: 105f68be315e527c513c923e23d8415a49fe8e88
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 95%
+source-wordcount: '3011'
+ht-degree: 91%
 
 ---
 
@@ -54,6 +54,10 @@ Forms as Cloud Service proporciona las siguientes temáticas de estilos de formu
 * [Temática Caballete](https://github.com/adobe/aem-forms-theme-easel)
 
 Puede [personalizar cualquiera de estas temáticas para crear una nueva](#customize-a-theme-core-components).
+
+>[!NOTE]
+>
+>Si su Forms adaptable está incrustado en páginas de AEM Sites, puede utilizar un solo tema tanto para el sitio como para los formularios incrustando un tema de Forms adaptable en el tema del sitio. Ver [Incrustar un tema de Forms adaptable en un tema de AEM Sites](/help/forms/embed-adaptive-forms-theme-in-site-theme.md).
 
 ![Flujo de trabajo de personalización de temas](/help/forms/assets/workflow-of-customization-of-theme.png)
 
@@ -125,6 +129,10 @@ Para copiar una temática, realice los siguientes pasos:
 
 
 #### &#x200B;2. Establecer el nombre de una temática {#set-name-of-theme}
+
+>[!NOTE]
+>
+>Este paso se aplica cuando implementa el tema como un paquete **independiente** a través de la canalización front-end (por ejemplo, un repositorio de temas de Forms dedicado). Si, en su lugar, **incrusta** el tema de Forms en el tema de AEM Sites, no necesita establecer un nombre de tema o una versión independientes para el tema del formulario; se usa el nombre del tema del sitio. Ver [Incrustar un tema de Forms adaptable en un tema de AEM Sites](/help/forms/embed-adaptive-forms-theme-in-site-theme.md).
 
 1. Abra la carpeta de temáticas en su IDE. Por ejemplo, para abrir la carpeta `aem-forms-theme-canvas` en el editor de código de Visual Studio.
 
@@ -458,6 +466,7 @@ Las temáticas se utilizan como parte de una plantilla de formulario adaptable p
 
 {{see-also}}
 
+* [Incrustar una temática de Forms adaptable en una temática de AEM Sites](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
 * [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generar documento de registro para formularios adaptables (Componentes principales)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creación de un formulario adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
