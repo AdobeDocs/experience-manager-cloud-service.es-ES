@@ -30,7 +30,7 @@ Una colección hace referencia a un conjunto de recursos que se pueden compartir
 
 Ayuda a los usuarios a acceder y administrar fácilmente los diversos recursos disponibles en [!DNL Content Hub].
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445303/?captions=spa&learn=on){transcript=true}
 
 ## Requisitos previos {#prerequisites}
 
