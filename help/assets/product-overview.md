@@ -2,10 +2,10 @@
 title: Información general sobre Content Hub
 description: Obtenga más información sobre Content Hub, sus principales ventajas, cómo acceder a él y cómo enviar comentarios sobre las opciones disponibles en él.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 797d1e275bcb8e949171d322871b377582e72a71
+source-git-commit: 0ad1fd40a108893333b9aa9beae1767f6b59c02b
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 68%
 
 ---
 
@@ -82,6 +82,36 @@ Siga estos pasos para configurar Content Hub para su equipo:
 1. [Acceda al portal de Content Hub](#access-content-hub).
 
 1. [Proporcione comentarios sobre Content Hub](#provide-content-hub-feedback).
+
+## Preguntas frecuentes {#faqs-content-hub-overview}
+
+### ¿Qué es Content Hub? {#what-is-content-hub}
+
+Content Hub es una función de Adobe Experience Manager as a Cloud Service que permite a equipos más amplios descubrir fácilmente recursos relevantes y aprobados a través de un portal intuitivo y adaptarlos rápidamente a sus necesidades. Permite la distribución de activos a escala y facilita la creación de variantes de contenido en la marca para mejorar la agilidad del marketing.
+
+### ¿Cuáles son los requisitos previos para acceder a Content Hub? {#prerequisites-for-content-hub}
+
+Content Hub requiere un entorno de creación de producción de Experience Manager as a Cloud Service, específicamente la versión 2024.6 o posterior (versión mínima 2024.6.16799).
+
+### ¿Cómo mejora Content Hub la experiencia de búsqueda de recursos aprobados por la marca? {#content-hub-improves-search-experience}
+
+Content Hub presenta todos los recursos aprobados en una jerarquía plana, lo que facilita la búsqueda y el uso compartido de los recursos aprobados por la marca a través de un portal intuitivo. Esta configuración optimiza el proceso de búsqueda y garantiza que los usuarios puedan localizar de forma eficaz los recursos que necesitan.
+
+### ¿Quién puede configurar la interfaz de usuario de Content Hub y qué aspectos se pueden configurar? {#content-hub-configuration}
+
+Un administrador puede configurar la interfaz de usuario de Content Hub, incluidos filtros para la búsqueda, campos para añadir o importar recursos, propiedades de recursos y contenido de titular para la promoción de la marca. Esto permite la personalización en función de los requisitos de la organización.
+
+### ¿Cómo permite Content Hub a los no creativos editar y remezclar contenido? {#content-hub-edit-remix-content}
+
+Content Hub permite a los usuarios que no son creativos editar contenido existente y crear nuevas variaciones en la marca utilizando herramientas fáciles de usar, plantillas y elementos de marca. Si los usuarios tienen derechos de Adobe Express, también pueden aprovechar las capacidades de Adobe Firefly GenAI para la creación de contenido avanzado.
+
+### ¿Cómo pueden acceder los usuarios a Content Hub? {#content-hub-access}
+
+Los usuarios pueden acceder a Content Hub a través de vínculos directos (https://experience.adobe.com/#/assets/contenthub) o iniciando sesión en experience.adobe.com y seleccionando Experience Manager Assets Content Hub en la sección Acceso rápido.
+
+### ¿Cuántos usuarios de Content Hub Limited se incluyen entre los AEM Assets? {#content-hub-limited-users-with-aem-assets}
+
+[Assets Ultimate](/help/assets/assets-ultimate-overview.md) y Assets as a Cloud Service incluyen cada uno 250 usuarios de Content Hub Limited, mientras que [Assets Prime](/help/assets/assets-prime.md) incluye 50 usuarios de Content Hub Limited.
 
 
 ## Más información sobre las funcionalidades clave {#key-capabilities-content-module}

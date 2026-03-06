@@ -3,10 +3,10 @@ title: Ver las perspectivas de recursos en Content Hub
 description: Obtenga información sobre cómo ver las perspectivas de recursos en  [!DNL Content Hub]
 role: User
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 17%
+source-wordcount: '465'
+ht-degree: 10%
 
 ---
 
@@ -50,3 +50,25 @@ También puede ver:
 * **[!UICONTROL Assets by Campaigns]**: recuento de recursos y porcentaje respectivo basado en campañas.
 * **[!UICONTROL Assets por canales]**: recuento de recursos y porcentaje respectivo basado en los canales utilizados.
 * **[!UICONTROL Assets por regiones]**: recuento de recursos y porcentaje respectivo en función de las regiones de uso de recursos.
+
+## Preguntas frecuentes {#faqs-assets-insights-content-hub}
+
+### ¿Qué necesitamos de Assets Insights en AEM Assets Content Hub?
+
+Assets Insights en AEM Assets Content Hub proporciona datos valiosos sobre las estadísticas de uso de recursos en campañas, canales y regiones, lo que ayuda a las partes interesadas en marketing a comprender el rendimiento del recurso y la popularidad para mejorar la experiencia del usuario.
+
+### ¿Quién puede acceder a las funciones descritas en Assets Insights?
+
+Los usuarios de Content Hub pueden realizar las acciones y acceder a las funciones mencionadas en la sección Perspectivas de Assets.
+
+### ¿Qué perspectivas de recursos están disponibles en la pestaña Perspectivas?
+
+Puede ver el número de recursos del repositorio, el número de colecciones, las cargas de Assets por año, mes o día, los usuarios activos por día o mes y la clasificación de recursos en función de los formatos de archivo.
+
+### ¿Cómo puedo ver las estadísticas de los recursos cargados en AEM Assets Content Hub?
+
+Para ver las estadísticas de los recursos y las colecciones cargados, vaya a la pestaña Información, donde puede realizar un seguimiento del historial de carga por año, mes o día.
+
+### ¿Qué métricas puedo analizar con respecto a la actividad del usuario en Content Hub?
+
+Puede analizar el número de usuarios activos por día o por mes, que se representa visualmente mediante un gráfico de líneas.

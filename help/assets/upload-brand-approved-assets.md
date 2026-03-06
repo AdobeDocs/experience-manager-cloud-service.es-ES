@@ -3,10 +3,10 @@ title: Cargue los recursos aprobados por la marca en  [!DNL Content Hub]
 description: Obtenga información sobre cómo cargar los recursos aprobados por la marca en Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 282ab15d8c498b3c0ddba8165b1262bc20729b75
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 17%
+source-wordcount: '1123'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 [Los usuarios de Content Hub con derechos para agregar recursos](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) pueden agregarlos a Content Hub desde el sistema de archivos local o importarlos desde fuentes de datos de OneDrive o Dropbox. Todos los recursos se muestran en el nivel superior en Content Hub, independientemente de la estructura de carpetas disponible en el sistema de archivos local o en las fuentes de datos de OneDrive y Dropbox, para mejorar las funciones de búsqueda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445378/?captions=spa&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 Los recursos marcados como `Approved` en Assets as a Cloud Service están disponibles automáticamente en Content Hub. Para obtener más información, consulte [Aprobar recursos para Content Hub](/help/assets/approve-assets-content-hub.md).
 
@@ -77,3 +77,30 @@ La visualización de los recursos cargados mediante Content Hub depende de si ha
 * Si la opción **[!UICONTROL Aprobación automática]** está deshabilitada, los recursos que cargue mediante Content Hub no se mostrarán automáticamente. Los recursos están disponibles en la carpeta `hydrated-assets` de su entorno de Assets as a Cloud Service. Vaya a la carpeta y [edite en lotes](#bulk-approve-assets-content-hub) el estado de esos recursos a `Approved` para que se muestren en Content Hub.
 
 ![Proceso de aprobación de Content Hub](/help/assets/assets/content-hub-approval.png)
+
+## Preguntas frecuentes {#faqs-content-hub-upload-assets}
+
+### ¿Qué tipos de recursos puedo cargar en Content Hub y desde dónde? {#asset-types-upload-to-content-hub}
+
+Los usuarios de Content Hub con derechos para añadir recursos pueden cargar recursos aprobados por la marca desde su sistema de archivos local. Todos los recursos cargados, independientemente de su estructura de carpetas original, se muestran en el nivel superior en Content Hub para mejorar las capacidades de búsqueda.
+
+### ¿Cómo mejora Content Hub la búsqueda y organización de recursos? {#search-content-hub}
+
+Content Hub mejora la búsqueda y organización de recursos al permitir que los usuarios definan detalles clave para cada carga, como el nombre de la campaña, las palabras clave, los canales, el periodo de tiempo y la región. También genera automáticamente propiedades adicionales para cada recurso (como el tamaño, el formato y la resolución del archivo) y utiliza Adobe AI para aplicar etiquetas inteligentes, lo que facilita y acelera la búsqueda de recursos relevantes.
+
+### ¿Cómo se cargan recursos desde mi sistema de archivos local a Content Hub? {#upload-assets-content-hub}
+
+Para cargar recursos desde el sistema de archivos local, haga clic en **Agregar Assets** para abrir el cuadro de diálogo de carga. Puede arrastrar y soltar archivos o carpetas, o bien examinar manualmente los archivos o carpetas para seleccionarlos. Debe agrupar los recursos con un nombre de campaña y se recomienda rellenar otros campos, como palabras clave, canales, periodo de tiempo y región, para mejorar la organización. Una vez que esté listo, haga clic en **Cargar**, revise los detalles y confirme que desea iniciar la carga.
+
+### ¿Cómo funciona el proceso de aprobación de recursos en Content Hub? {#asset-approval-content-hub}
+
+Si la opción Auto-approval está activada, los recursos cargados mediante Content Hub están disponibles automáticamente. Si está desactivado, los recursos cargados se colocan en la carpeta **hydroassets** de Assets as a Cloud Service y debe editar manualmente su estado en **Aprobado** para que se muestren en Content Hub.
+
+### ¿Puedo configurar los campos que son obligatorios u opcionales al cargar recursos en Content Hub? {#available-fields-while-uploading-assets-to-content-hub}
+
+Los administradores pueden utilizar la interfaz de usuario de configuración para definir los campos obligatorios u opcionales al cargar recursos en Content Hub.
+
+### ¿Qué debo hacer si los recursos cargados no se muestran automáticamente en Content Hub? {#assets-do-not-display-in-content-hub}
+
+Si los recursos no se muestran automáticamente, significa que la opción Aprobación automática está desactivada. Los recursos se encuentran en la carpeta **hydrated-assets** del entorno de as a Cloud Service de Assets. Debe editar en lotes su estado a **Aprobado** para que aparezcan en Content Hub.
+

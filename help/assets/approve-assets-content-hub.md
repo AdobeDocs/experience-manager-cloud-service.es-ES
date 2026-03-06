@@ -2,10 +2,10 @@
 title: Aprobación de recursos para Content Hub
 description: Obtenga información sobre cómo aprobar recursos en Assets as a Cloud Service para que estén disponibles en Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: aec2bd06ad498e92ce1e69ac587ee7fcd5106268
+source-git-commit: 282ab15d8c498b3c0ddba8165b1262bc20729b75
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 17%
+source-wordcount: '1698'
+ht-degree: 12%
 
 ---
 
@@ -117,7 +117,7 @@ Siga estos pasos para automatizar la aprobación de los recursos recién ingerid
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]**.
 1. Haga clic en **[!UICONTROL Crear]** en la parte superior derecha de la página.
 1. Agregue un título de perfil y haga clic en **[!UICONTROL Crear]**. El perfil de metadatos se ha creado correctamente.
-1. Seleccione el perfil de metadatos recién creado y haga clic en **[!UICONTROL Editar _(e)_]**. <br>El formulario **[!UICONTROL Editar perfil de metadatos]**&#x200B;se abre con la ficha **[!UICONTROL Básico]**&#x200B;resaltada.
+1. Seleccione el perfil de metadatos recién creado y haga clic en **[!UICONTROL Editar _(e)_]**. <br>El formulario **[!UICONTROL Editar perfil de metadatos]**se abre con la ficha **[!UICONTROL Básico]**resaltada.
 1. Arrastre y suelte un **[!UICONTROL campo de texto de una sola línea]** desde la sección **[!UICONTROL Generar formulario]** a la derecha de la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie **[!UICONTROL Etiqueta de campo]** por _Assets aprobado_.
@@ -153,3 +153,42 @@ La visualización de los recursos cargados mediante Content Hub depende de si ha
 * Si la opción **[!UICONTROL Aprobación automática]** está deshabilitada, los recursos que cargue mediante Content Hub no se mostrarán automáticamente. Los recursos están disponibles en la carpeta `hydrated-assets` de su entorno de Assets as a Cloud Service. Vaya a la carpeta y [edite en lotes](#bulk-approve-assets-content-hub) el estado de esos recursos a `Approved` para que se muestren en Content Hub.
 
 ![Proceso de aprobación de Content Hub](/help/assets/assets/content-hub-approval.png)
+
+## Preguntas frecuentes {#faqs-content-hub-approved-assets}
+
+### ¿Cuál es el propósito de aprobar recursos para Content Hub en Experience Manager as a Cloud Service? {#approving-assets-content-hub}
+
+La aprobación de recursos garantiza que solo las versiones más recientes y aprobadas estén disponibles para su uso en Content Hub, lo que mantiene una estricta coherencia de la marca en todos los canales y aplicaciones. Este proceso controlado optimiza la administración de recursos para los administradores de marca y los especialistas en marketing.
+
+### ¿Cuáles son los requisitos previos necesarios para aprobar recursos para Content Hub?
+
+Debe tener acceso a as a Cloud Service de AEM Assets y permisos de escritura para editar metadatos de recursos, específicamente el campo **Estado** en las propiedades del recurso.
+
+### ¿Cómo se aprueba un solo recurso con la vista Assets en AEM as a Cloud Service?
+
+Seleccione el recurso, haga clic en **Detalles** en la barra de herramientas, vaya a la pestaña **Básico**, elija **Aprobado** en la lista desplegable **Estado** y haga clic en **Guardar**. El recurso está disponible en Content Hub.
+
+### ¿Pueden aprobarse los recursos por lotes para Content Hub y, si es así, cómo?
+
+Sí, los recursos se pueden aprobar por lotes. En la vista de Assets, seleccione varios recursos, haga clic en **Edición masiva de metadatos**, seleccione **Aprobado** en el campo **Estado** en Propiedades y haga clic en **Guardar**. Todos los recursos seleccionados están disponibles en Content Hub.
+
+### ¿Cómo funciona el proceso de aprobación de recursos en Content Hub? {#asset-approval-content-hub}
+
+Si la opción Auto-approval está activada, los recursos cargados mediante Content Hub están disponibles automáticamente. Si está desactivado, los recursos cargados se colocan en la carpeta **hydroassets** de Assets as a Cloud Service y debe editar manualmente su estado en **Aprobado** para que se muestren en Content Hub.
+
+### ¿Qué es el campo Destino de aprobación y cómo afecta a la publicación de recursos?
+
+El campo **Destino de aprobación** de la página Detalles del recurso le permite elegir dónde se publican los recursos aprobados. Las opciones incluyen **Envío** (publica en Dynamic Media con OpenAPI y Content Hub) o solo **Content Hub**. Si no se selecciona ninguna opción, se aplica la predeterminada para el entorno de as a Cloud Service de Assets. Consulte [Destinos de aprobación predeterminados y destinos de publicación para recursos aprobados](#default-approval-target-options-publish-destinations) para obtener más información.
+
+
+### ¿Qué sucede si no ve el campo Destino de aprobación en la página de detalles del recurso de vista de Assets?
+
+Si falta el campo **Destino de aprobación** en la página de detalles del recurso de vista de Assets, debe editar el formulario de metadatos, arrastrar el campo **Aprobación para** desde los componentes disponibles hasta el formulario y hacer clic en **Guardar**. Esto le permite establecer objetivos de aprobación para los recursos.
+
+### ¿Cómo se puede automatizar la aprobación de los recursos recién ingeridos en la vista de administración?
+
+Cree una carpeta en el entorno de creación, vaya a **Herramientas** > **Assets** > **Perfiles de metadatos**, y cree y edite un perfil de metadatos. Agregue un campo de texto de una sola línea, etiquete **Aprobado por Assets** y asígnelo a &#39;./jcr:content/metadata/dam:status&#39; y establezca su valor predeterminado en `approved`. Aplicar el perfil de metadatos a la carpeta. Esto aprueba automáticamente los nuevos recursos agregados a la carpeta.
+
+### ¿Quién puede acceder a los recursos aprobados en Content Hub y qué controles existen?
+
+Los recursos aprobados están disponibles para los usuarios que forman parte de la misma organización en Content Hub. Los estrictos controles garantizan que solo se pueda acceder a las versiones más recientes y aprobadas, lo que ayuda a mantener la coherencia y seguridad de la marca.

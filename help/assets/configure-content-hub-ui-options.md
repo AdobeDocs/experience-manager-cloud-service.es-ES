@@ -2,10 +2,10 @@
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 30dc2465aacf9d586755a1aa69cc473f237d0103
 workflow-type: tm+mt
-source-wordcount: '2265'
-ht-degree: 9%
+source-wordcount: '2815'
+ht-degree: 8%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Manager Assets permite a los administradores configurar las opciones 
 
 * Cualquier vínculo personalizado que necesite incluir en Content Hub, además de los recursos, las colecciones y las perspectivas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472949/?captions=spa&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Requisitos previos {#prerequisites-configuration-ui}
 
@@ -236,7 +236,7 @@ En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!U
 
 **[!UICONTROL Color secundario]:** En la página de inicio de [!DNL Content Hub], el esquema de colores secundario se aplica a las opciones de la interfaz de usuario y a los campos de entrada disponibles en los cuadros de diálogo. Se aplica a todas las opciones de menú de configuración disponibles en la página [!UICONTROL Configuración], excepto a las acciones de selección, las casillas de verificación, las barras de búsqueda y los modificadores de alternancia.
 
-### Visibilidad del recurso{#asset-visibility-content-hub}
+### Visibilidad de recursos{#asset-visibility-content-hub}
 
 Los administradores pueden controlar si necesitan recursos caducados para que sean visibles en Content Hub. Si los activos caducados están visibles, también se puede definir si los usuarios pueden descargarlos.
 
@@ -264,7 +264,7 @@ Si la visibilidad de los recursos caducados está habilitada, Content Hub tambi�
 
 ### Representaciones {#renditions-content-hub}
 
-Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para ello, ejecute los siguientes pasos:
 
@@ -329,3 +329,59 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 Más información sobre [compartir recursos en [!DNL Content Hub]](share-assets-content-hub.md).
 
+## Preguntas frecuentes {#faqs-content-hub-upload-assets}
+
+### ¿Quién puede acceder a la configuración de la interfaz de usuario de Content Hub de AEM Assets y configurarla?
+
+Solo los usuarios con derechos de administrador de Content Hub pueden acceder a la configuración de la interfaz de usuario de Content Hub y establecerla. Los permisos administrativos deben concederse mediante Adobe Admin Console antes de acceder a la interfaz de configuración.
+
+### ¿Qué pueden configurar los administradores en la interfaz de usuario de Content Hub de AEM Assets?
+
+Los administradores pueden configurar las siguientes opciones en la interfaz de usuario de configuración de Content Hub para AEM Assets:
+
+* Importar campos de metadatos (incluidos campos obligatorios y configuración de aprobación automática)
+
+* Filtros de búsqueda mostrados en la página de búsqueda
+
+* Campos de metadatos buscables utilizados para la indexación
+
+* Metadatos de tarjetas de recursos (se muestran hasta seis campos en las tarjetas)
+
+* Propiedades de vista de detalles de recursos
+
+* Elementos de marca (logotipo, texto del titular, colores, imagen del titular)
+
+* Reglas de visibilidad de recursos (incluido el comportamiento de recursos caducados)
+
+* Opciones de representación y descarga
+
+* Vínculos de navegación personalizados (fichas externas)
+
+* Configuración de recopilación y uso compartido (vínculos públicos y permisos)
+
+Esta configuración controla tanto la experiencia visual como el comportamiento funcional de Content Hub para los usuarios finales.
+
+
+### ¿Cómo pueden los administradores añadir nuevos campos de metadatos para las cargas de recursos en AEM Assets Content Hub?
+
+Los administradores pueden agregar nuevos campos de metadatos para las cargas de recursos haciendo clic en **Agregar metadatos** en la pestaña **Importar**, especificando la etiqueta, asignándola a la propiedad adecuada desde el esquema de metadatos, seleccionando el tipo de entrada y decidiendo si el campo es obligatorio u opcional. Después de confirmar y guardar, el nuevo campo está disponible para los usuarios durante las cargas de recursos.
+
+### ¿Cuál es la configuración de Aprobación automática para los recursos de AEM Assets Content Hub y cómo funciona?
+
+La configuración de Aprobación automática, cuando está habilitada, permite que los nuevos recursos estén disponibles inmediatamente en Content Hub tras la carga. De forma predeterminada, esta configuración está desactivada, por lo que los autores o administradores de AEM deben aprobar manualmente los nuevos recursos antes de que se muestren en el portal de Content Hub.
+
+### ¿Cómo configuran los administradores los filtros para las búsquedas de recursos en AEM Assets Content Hub?
+
+Los administradores pueden configurar filtros para las búsquedas de recursos haciendo clic en **Agregar filtros**, especificando la etiqueta de filtro, asignándola a la propiedad de metadatos adecuada, seleccionando el tipo de datos y confirmando la adición. Los filtros están disponibles en la interfaz una vez que hay al menos un recurso que coincide con los criterios de filtro. Los cambios se aplican haciendo clic en **Guardar**.
+
+### ¿Qué propiedades de recursos se pueden mostrar en la vista Detalles del recurso y cómo se configuran en AEM Assets Content Hub?
+
+Las propiedades del recurso, como el nombre de archivo, el título, el formato, el tamaño y los campos personalizados, como las categorías, se pueden mostrar en la vista Detalles del recurso. Los administradores agregan estas propiedades haciendo clic en **Agregar metadatos**, especificando la etiqueta, asignándola al esquema de metadatos, seleccionando el tipo de datos, confirmando y guardando los cambios.
+
+### ¿Cómo pueden los administradores personalizar los detalles de los metadatos que se muestran en las tarjetas de recursos en AEM Assets Content Hub?
+
+Los administradores pueden personalizar los detalles de los metadatos que se muestran en las tarjetas de recursos haciendo clic en **Agregar metadatos** en la configuración de la tarjeta de recursos, especificando la etiqueta (por ejemplo, el formato de archivo), asignándola a la propiedad adecuada en el esquema de metadatos y confirmando la adición. Se pueden mostrar hasta seis campos de metadatos en las tarjetas de recursos.
+
+### ¿Pueden los administradores personalizar el portal de Content Hub de los AEM Assets para satisfacer los requisitos de marca de su organización?
+
+Sí. Los administradores pueden personalizar el aspecto de AEM Assets Content Hub editando el título y el texto del cuerpo del titular principal, seleccionando colores de texto mediante un selector de color o código hexadecimal y configurando colores secundarios y principales para el fondo, el texto y los .

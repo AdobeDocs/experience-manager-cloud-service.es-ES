@@ -3,9 +3,9 @@ title: Búsqueda de recursos en Content Hub
 description: Obtenga información sobre cómo buscar recursos en  [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 95d7935142e26b717e2c33a2bd0e8e2c2f52a623
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '1010'
 ht-degree: 1%
 
 ---
@@ -167,5 +167,20 @@ Para realizar una búsqueda masiva en [!DNL Content Hub], ejecute los pasos sigu
 [!DNL The Content Hub] no se limita a la búsqueda, sino que le permite realizar acciones adicionales, como [descargar](download-assets-content-hub.md), [compartir](share-assets-content-hub.md) y [agregar recursos a la colección](collections-content-hub.md), directamente desde la interfaz de búsqueda o vista previa. Seleccione los recursos en la página de resultados de búsqueda para ver estas opciones.
 
 Más información sobre [configurar recursos en [!DNL Content Hub]](configure-content-hub-ui-options.md).
+
+## Preguntas frecuentes {#faqs-deploy-content-hub}
+
+### ¿Cómo puedo reducir los resultados de búsqueda en AEM Assets Content Hub?
+
+Puede reducir los resultados de búsqueda en Content Hub mediante la búsqueda basada en texto, la aplicación de varios filtros (como formato de archivo, estado de aprobación, fecha de modificación, etc.), la búsqueda por etiquetas o etiquetas inteligentes y el uso del panel Filtros. La combinación de varios predicados u opciones de filtro le ayuda a segmentar con precisión los recursos que necesita.
+
+### ¿Puedo realizar una búsqueda masiva en AEM Assets Content Hub de varios recursos a la vez?
+
+Sí, puede realizar una búsqueda masiva en Content Hub introduciendo varios valores (como nombres, formatos de archivo y etiquetas) separados por delimitadores especificados. La función Búsqueda masiva le permite encontrar rápidamente varios recursos en una sola consulta, lo que lo hace más eficiente que buscar recursos uno por uno.
+
+
+### ¿Pueden los administradores personalizar los filtros disponibles en la búsqueda de AEM Assets Content Hub?
+
+Sí, los administradores pueden utilizar la interfaz de usuario de configuración de Content Hub de AEM Assets para configurar qué filtros están disponibles en la interfaz de búsqueda. Aunque los filtros predeterminados incluyen el formato de archivo, el estado de aprobación, la fecha de caducidad y mucho más, los administradores pueden adaptar estas opciones para adaptarlas a las necesidades de la organización.
 
 
