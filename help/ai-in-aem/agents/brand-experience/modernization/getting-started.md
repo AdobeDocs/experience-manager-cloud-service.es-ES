@@ -4,9 +4,9 @@ description: Conozca los primeros pasos para aumentar rápidamente la productivi
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,10 @@ Ahora que la consola puede acceder al código, está listo para empezar a pregun
 
 Ahora tiene el contenido y los estilos importados en la consola.
 
+>[!TIP]
+>
+>[Consulte la guía de mensajes](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) para obtener más ideas sobre cómo preguntar al agente y lo que pueden hacer sus habilidades.
+
 ## Cargar contenido {#upload-content}
 
 Para cargar el contenido en [Document Authoring](https://da.live):
@@ -136,5 +140,6 @@ Si insertó el código en una rama que no sea `main`, la vista previa abierta de
 Los siguientes documentos pueden resultar útiles a medida que continúa explorando Experience Modernization Agent y su consola.
 
 * [Consola de modernización de experiencias](/help/ai-in-aem/agents/brand-experience/modernization/console.md): detalles sobre la consola, sus vistas, opciones y capacidades
+* [Guía de solicitud del agente de modernización de experiencias](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md): ideas sobre cómo preguntar al agente y lo que pueden hacer sus habilidades
 * [Tutorial para desarrolladores de Edge Delivery Services](https://www.aem.live/developer/tutorial) - Útil si es nuevo en proyectos de AEM y Edge Delivery Services
 * [Creación de documentos](https://da.live): útil si es nuevo en la creación de documentos para la administración de contenido
