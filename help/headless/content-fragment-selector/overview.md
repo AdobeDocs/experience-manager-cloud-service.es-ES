@@ -1,14 +1,14 @@
 ---
 title: Selector de fragmentos de contenido de Micro-FrontEnd para Adobe Experience Manager as a Cloud Service
 description: Utilice el Selector de fragmentos de contenido de Micro-FrontEnd para buscar, buscar y recuperar fragmentos de contenido de su aplicación.
-role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+role: Admin, User, Developer
+exl-id: 5b18fb2c-26c8-4d9d-ba2e-9e53c09f5022
+source-git-commit: 006bfe9067267da1524ab456605a956162c889e3
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 11%
+source-wordcount: '833'
+ht-degree: 10%
 
 ---
-
 
 # Selector de fragmentos de contenido de Micro-FrontEnd {#micro-frontend-content-fragment-selector}
 
@@ -69,9 +69,11 @@ Usar el componente `ContentFragmentSelector`. Hay varias opciones de instalació
 
 Una vez configurado y autenticado el Selector de fragmentos de contenido para utilizar el Selector de fragmentos de contenido con la aplicación de AEM as a Cloud Service, puede seleccionar Fragmentos de contenido o realizar otras operaciones para buscar los fragmentos en el repositorio:
 
-![Selector de fragmentos de contenido](/help/headless/assets/content-fragment-selector-using.png)
+![Selector de fragmentos de contenido](/help/headless/assets/content-fragment-selector-unwrapped.png)
 
-* Con el selector **Repositorio** en la parte superior derecha, puede seleccionar el repositorio que desee usar
+* Desde la barra de herramientas superior puede:
+   * Utilice el selector **Repositorio** de la parte superior derecha para seleccionar el repositorio que desea utilizar
+   * Seleccionar el formato; lista o cuadrícula
 * En el panel del extremo izquierdo puede:
    * Ocultar o mostrar carpetas del repositorio seleccionado
    * Seleccione una carpeta específica para mostrar los fragmentos de contenido de esa carpeta
@@ -81,6 +83,9 @@ Una vez configurado y autenticado el Selector de fragmentos de contenido para ut
    * Ordenar la lista actual según varias columnas, tanto en orden ascendente como descendente
    * Consulte el indicador de formato de vista
    * Mostrar, ocultar y especificar filtros
+* En el panel del extremo derecho puede:
+   * Ver propiedades
+   * Ver referencias
 
 ### Ocultar/Mostrar panel {#hide-show-panel}
 
@@ -130,3 +135,16 @@ Puede ordenar los fragmentos en el Selector de fragmentos de contenido por varia
 El Selector de fragmentos de contenido permite ver el fragmento en:
 
 * **Vista de tabla**
+* **Vista de cuadrícula**
+
+La vista requerida se puede seleccionar desde los iconos de la barra de herramientas superior:
+
+![Selector de fragmentos de contenido - Tipo de vista](/help/headless/assets/content-fragment-selector-view-type.png)
+
+## Integración del Selector de fragmentos de contenido con las aplicaciones {#integrate-the-content-fragment-selector-with-applications}
+
+Puede integrar el Selector de fragmentos de contenido con varias aplicaciones, como:
+
+* [Integrar el Selector de fragmentos de contenido con una aplicación de Adobe](/help/headless/content-fragment-selector/integrate-adobe-application.md)
+* [Integración del Selector de fragmentos de contenido con aplicaciones que no sean de Adobe o de terceros](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+* [Integración del Selector de fragmentos de contenido mediante Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
