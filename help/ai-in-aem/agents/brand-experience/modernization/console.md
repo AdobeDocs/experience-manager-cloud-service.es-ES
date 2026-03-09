@@ -4,9 +4,9 @@ description: Guía de referencia para la interfaz y las funciones de la consola 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
+source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -67,19 +67,17 @@ La barra lateral izquierda permite un acceso rápido a vistas importantes de la 
 
 La vista **Home** es el punto de partida para usar la consola.
 
-* En la parte superior hay un [panel de solicitud](#prompt-panel) para realizar solicitudes de la consola.
-* Debajo del panel de mensajes se sugieren mensajes que se deben utilizar para iniciar el proyecto.
+* En la parte superior hay una [entrada de solicitud](#prompt-input) para realizar solicitudes de la consola.
+* Debajo del panel de mensajes hay sugerencias para comenzar con el proyecto.
 
-### Panel Preguntar {#prompt-panel}
+### Solicitar entrada {#prompt-input}
 
-El panel de mensajes proporciona controles para interactuar con la IA.
+La entrada del mensaje proporciona controles para interactuar con la IA.
 
 * **Modos de planificación/ejecución** (iconos de bombilla y varita mágica): alternar entre los modos de planificación y ejecución, respectivamente
    * **Modo de planificación**: la IA analiza las solicitudes y describe un método sin realizar cambios, lo que resulta útil para comprender la estrategia antes de comprometerse.
    * **Modo de ejecución**: la API lleva a cabo el plan y realiza cambios en el archivo.
 * **Adjuntar archivos** (icono de clip): cargue y adjunte archivos al mensaje para obtener contexto adicional (por ejemplo, diseños de referencia, capturas de pantalla, especificaciones técnicas)
-* **Configuración** (icono de engranaje): elige omitir las preguntas de confirmación de la API
-* **Borrar chat**: Esto restablece la conversación y borra la ventana de contexto de la IA. Utilice esta opción cuando inicie una nueva tarea que no esté relacionada con la conversación anterior.
 
 ## Vista de contenido {#content-view}
 
@@ -91,15 +89,32 @@ La **vista de contenido** proporciona herramientas para examinar y obtener una v
 
 ![Vista de contenido](assets/content-imported.png)
 
-El panel de vista previa ofrece tres modos:
+### Panel de chat {#chat-panel}
+
+El panel de chat le permite ver y continuar la conversación con el agente de modernización de experiencias. El panel de chat incluye el historial de mensajes de chat y una [entrada de solicitud](#prompt-input) para realizar solicitudes adicionales de la consola.
+
+* **Acciones de chat**
+   * **Borrar chat**: Esto restablece la conversación y borra la ventana de contexto de la IA. Utilice esta opción cuando inicie una nueva tarea que no esté relacionada con la conversación anterior.
+   * **Descargar chat**: Esto descarga el historial de conversaciones como un archivo Markdown.
+
+### Previsualizar panel {#preview-panel}
+
+El panel de vista previa ofrece hasta cuatro modos:
 
 * **Vista previa** (documento con lupa) para ver el contenido de HTML procesado
-* **Vista de HTML** (icono de documento) para ver la estructura de contenido de creación de documentos subyacente, respectivamente
-* **Modo de diseño** (icono de pincel) para seleccionar elementos de la página para el contexto del mensaje
+   * **Vista interactiva** para ver el contenido de HTML procesado en una vista de escritorio, tableta o móvil
+   * **Modo de diseño** (icono de pincel) para agregar elementos de la página al mensaje para obtener contexto adicional
+* **Vista de documento** (icono de documento) para ver la estructura de contenido de creación de documentos subyacente, respectivamente
+* **Vista de marcado (creación de AEM)** (icono de código) para ver la estructura de contenido de marcado subyacente
+* **Vista XML JCR (creación de AEM)** (icono de datos) para ver la estructura de contenido XML JCR resultante
 
 Siempre puede hacer clic en el icono **Actualizar vista previa** para actualizar el panel de vista previa.
 
-El botón **Cargar contenido** abre una ventana modal para cargar archivos en AEM Document Authoring.
+El botón **Eliminar** quita la página seleccionada del área de trabajo. El contenido visualizado previamente o publicado no se eliminará.
+
+El botón **Errores** (Creación en AEM) abre una ventana modal para ver los errores de la página seleccionada.
+
+El botón **Cargar contenido** abre una ventana modal para cargar archivos en AEM.
 
 * El campo **Organización** y **Repositorio** se han rellenado previamente si el proyecto tiene un archivo de `fstab.yaml`
 * La selección de archivos proporciona rutas de destino editables
@@ -111,15 +126,16 @@ El botón **Cargar contenido** abre una ventana modal para cargar archivos en AE
 
 La **vista Código** proporciona herramientas para examinar el código y administrar los cambios en el código. La vista se divide en tres paneles, de izquierda a derecha:
 
-* Panel Preguntar para interactuar con la consola y el proyecto
+* Panel de chat para interactuar con la consola y el proyecto
 * Explorador de archivos para obtener una descripción general de los archivos de código o cambios como diferencias
-* Panel de vista previa para ver un archivo de código o una comparación seleccionada en el explorador de archivos
+* Panel de vista previa para ver un archivo de código o los cambios seleccionados en el explorador de archivos
 
 ![Vista de código](assets/code-view.png)
 
 El panel de vista previa ofrece dos modos diferentes:
 
 * **Archivos de Workspace** para examinar los archivos de código del área de trabajo actual
+   * Use el botón **Agregar al chat** para agregar el archivo al panel de chat para obtener contexto.
 * **Cambios de Git** para ver las diferencias de los cambios de archivos creados por su trabajo en el proyecto
    * Haga clic en el icono `+` para almacenar en zona intermedia el archivo modificado
    * Haga clic en el icono de flecha para descartar el archivo modificado
@@ -145,6 +161,8 @@ La vista de configuración permite administrar la configuración básica de la c
 
 ![Vista de configuración](assets/settings-view.png)
 
+* **Proyecto** le permite ver y editar la configuración del proyecto, como personalizar la dirección URL de la biblioteca.
+* **Asistencia** le permite solicitar ayuda al equipo de asistencia de AEM.
 * **Credenciales** le permite especificar un token de acceso personal para Figma de modo que la [consola pueda acceder a los bloques de diseño de su proyecto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * El token requiere los siguientes ámbitos de solo lectura:
       * `file_content:read`

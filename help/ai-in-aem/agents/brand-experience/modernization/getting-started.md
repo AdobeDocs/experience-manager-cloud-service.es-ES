@@ -4,9 +4,9 @@ description: Conozca los primeros pasos para aumentar rápidamente la productivi
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
+source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ Conozca los primeros pasos para aumentar rápidamente la productividad con Exper
 >Si está interesado en utilizar la consola de modernización de experiencias, puede solicitar acceso para garantizar una experiencia de incorporación sin problemas.
 
 ## Preparación de un repositorio de GitHub de Edge Delivery {#prepare-repo}
+
+>[!NOTE]
+>
+>¿Utiliza un proyecto de AEM Sites y Universal Editor? Siga los pasos de configuración de [Introducción a AEM Sites/Editor universal](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md).
 
 1. Seleccione un repositorio [Edge Delivery Services](/help/edge/overview.md) para utilizarlo con la consola de modernización de experiencias.
    * Puede ser un proyecto existente de Edge Delivery Services o puede crear uno nuevo siguiendo el [tutorial para desarrolladores](https://www.aem.live/developer/tutorial) con el [repositorio de plantillas.](https://github.com/adobe/aem-boilerplate)
@@ -77,6 +81,10 @@ Ahora tiene el contenido y los estilos importados en la consola.
 >[Consulte la guía de mensajes](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) para obtener más ideas sobre cómo preguntar al agente y lo que pueden hacer sus habilidades.
 
 ## Cargar contenido {#upload-content}
+
+>[!TIP]
+>
+>Si está trabajando en un proyecto de AEM Sites y Universal Editor, la carga de contenido en AEM funciona de un modo ligeramente distinto. Consulte [Introducción al agente de modernización de experiencias para proyectos de AEM Sites/editor universal](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) para obtener instrucciones específicas sobre la carga.
 
 Para cargar el contenido en [Document Authoring](https://da.live):
 
