@@ -4,9 +4,9 @@ description: Descubra cómo Experience Modernization Agent incorpora nuevos siti
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 7e5450f853e04f12e3a25e4a996aa8c3afe383ca
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -66,13 +66,9 @@ La consola de modernización de experiencias de autoservicio suele estar disponi
 
 ## Modelo de envío {#delivery-model}
 
-Para migraciones complejas o resultados acelerados, Adobe ofrece el modelo de entrega del ingeniero de resultados del agente (AOE). Se trata de un servicio opcional en el que los ingenieros de Adobe gestionan las herramientas de IA en su nombre.
+Para migraciones complejas o resultados acelerados, Adobe ofrece el modelo de entrega del ingeniero de resultados del agente (AOE). Se trata de un servicio opcional en el que los ingenieros de Adobe gestionan las herramientas de IA en su nombre. Para obtener más información sobre este modelo de entrega, consulte el documento [Modelo de entrega de Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
 
-* Adobe AOE gestiona el agente a su lado, combinando la automatización de la IA con directrices expertas para ofrecer resultados listos para la producción a escala.
-* Esto proporciona una opción de restablecimiento estratégica para las empresas que se enfrentan a implementaciones estancadas o desafíos de modernización heredados.
-* El modelo de AOE ofrece un camino más rápido y de menor riesgo que aprovecha la automatización de la IA y garantiza la gobernanza, la calidad y los resultados exitosos.
-
-Para explorar más en profundidad el modelo de entrega de AOE:
+Si está interesado en el modelo AOE para la próxima migración:
 
 * Póngase en contacto con su representante de Adobe o con el equipo de la cuenta para iniciar el ámbito y la programación.
 * Adobe confirmará la idoneidad, estimará la participación y propondrá un plan de participación.
@@ -94,7 +90,7 @@ El agente no admite los siguientes destinos.
    * Las aptitudes se dirigen únicamente a Edge Delivery Services.
 * Patrones de envío sin encabezado, como envío solo de API o basado en SPA (por ejemplo, Next.js)
 
-Los siguientes requisitos aún no están cubiertos por las habilidades de automatización dedicadas y requieren un esfuerzo manual.
+Los siguientes requisitos no están cubiertos por las habilidades de automatización dedicadas y requieren un esfuerzo manual.
 
 * Perfección estricta de píxeles
    * Solo se automatiza la fidelidad práctica del diseño
