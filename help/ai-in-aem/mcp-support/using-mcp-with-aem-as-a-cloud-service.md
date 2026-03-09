@@ -4,7 +4,7 @@ description: Aprenda a utilizar el protocolo de contexto de modelo con AEM as a 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 8b77b992171623dcf7b065079d72992a5da3a01d
+source-git-commit: 2cbbb53c1bf5277ab54e6731152c0400b4e67aba
 workflow-type: tm+mt
 source-wordcount: '1757'
 ht-degree: 0%
@@ -146,8 +146,8 @@ A continuación se muestran guías paso a paso para cada aplicación admitida:
 
 #### Aplicaciones de chat (web y escritorio) {#setup-chat-applications}
 
-* [Claude antrópico](setup-claude.md)
-* [OpenAI ChatGPT](setup-chatgpt.md)
+* [Claude antrópico](/help/ai-in-aem/mcp-support/setup-claude.md)
+* [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 
 #### Herramientas para desarrolladores (extensiones IDE, aplicaciones de escritorio, CLI) {#setup-developer-tools}
 
@@ -155,7 +155,7 @@ A continuación se muestran guías paso a paso para cada aplicación admitida:
 * Aumentar código (CLI, JetBrains, código VS, cursor)
 * Aumentar aplicación de sangría para escritorio
 * Cline (JetBrains, código VS, cursor)
-* [Cursor](setup-cursor.md)
+* [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
 * Copiloto de GitHub (código VS)
 * Kiro (aplicación de escritorio, CLI)
 * Códice OpenAI (aplicación de escritorio)
@@ -164,7 +164,7 @@ A continuación se muestran guías paso a paso para cada aplicación admitida:
 
 #### Plataformas empresariales {#setup-enterprise-platforms}
 
-* [Microsoft Copilot Studio](setup-microsoft-copilot-studio.md)
+* [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
 
 ## Autenticación {#authentication}
 
