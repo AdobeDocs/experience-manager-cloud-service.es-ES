@@ -21,5 +21,5 @@ La integración se realiza importando el paquete Selector de fragmentos de conte
 
 Puede realizar la autenticación sin definir algunas de las propiedades de IMS, si:
 
-* está integrando una aplicación de Adobe en [Unified Shell](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)
+* está integrando una aplicación de Adobe en [Unified Shell](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)
 * ya se ha generado un token de IMS para la autenticación
