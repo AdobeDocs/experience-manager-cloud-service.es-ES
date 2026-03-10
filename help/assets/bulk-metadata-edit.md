@@ -1,6 +1,6 @@
 ---
 title: Edición masiva de metadatos en  [!DNL Assets View]
-description: Descubra cómo puede actualizar un conjunto predefinido de campos de metadatos estándar para varios recursos disponibles en [DNL! Vista de Assets] simultáneamente.
+description: Descubra cómo puede actualizar un conjunto predefinido de campos de metadatos estándar para varios recursos disponibles en [!DNL ! Vista de Assets] simultáneamente.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c

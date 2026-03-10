@@ -62,7 +62,7 @@ Ahora añada un parámetro de procesamiento de imagen al final de la dirección 
 
 Observe que se genera una nueva representación del reloj. Una clave para entender de este sencillo ejercicio de cambiar el ancho de la imagen, es que la imagen vista se genera 100% dinámicamente.
 
-Ahora cambie el valor de anchura de `500` píxeles a `1000` píxeles y, a continuación, presione **[!UICONTROL Entrar]**. [Pruébelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
+Ahora cambie el valor de anchura de `500` píxeles a `1000` píxeles y, a continuación, presione **[!UICONTROL Entrar]**. [Pruébelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=_blank}.
 En el momento en que pulse **[!UICONTROL Intro]**, el explorador volverá al servidor de imágenes de Dynamic Media. Genera una representación completamente nueva del reloj, en función del nuevo valor de anchura que acaba de introducir, devuelve la nueva imagen al explorador y la almacena en caché.
 
 Dynamic Media tiene numerosos parámetros de procesamiento de imágenes que puede utilizar para ajustar los recursos de imagen en las páginas web. Puedes [ver una lista de ellos aquí](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
