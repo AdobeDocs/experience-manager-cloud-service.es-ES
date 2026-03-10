@@ -1,12 +1,13 @@
 ---
 title: Vista de Mi Workspace para Assets
 description: Mi espacio de trabajo es una página que proporciona módulos visuales personalizables para acceder fácilmente a las áreas clave de la interfaz de usuario de Assets y a la información más relevante para el usuario.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '751'
 ht-degree: 84%
 
 ---
@@ -56,7 +57,7 @@ Para fijar un recurso, una carpeta o una colección, haga lo siguiente:
 
 **Perspectivas**
 
-Los administradores pueden ver un resumen del número de descargas y cargas realizadas en el entorno de Assets durante los últimos 30 días. Puede hacer clic en **[!UICONTROL Ver todo]** para acceder rápidamente a la página de perspectivas para ver paneles más detallados.
+Los administradores pueden ver un resumen del número de descargas y cargas realizadas en el entorno de Assets durante los últimos 30 días. Puede hacer clic en **[!UICONTROL Ver todo]** para acceder rápidamente a la página de perspectivas para ver paneles de control más detallados.
 
 También puede ver los términos más buscados junto con la cantidad de veces que se buscarán en su implementación de vista de Assets usando la sección **Insights** de Mi Workspace. También puede navegar hasta Insights detallados para ver las búsquedas principales durante los últimos 30 días o 12 meses.
 
@@ -82,7 +83,7 @@ La pestaña **[!UICONTROL Descargas principales]** muestra los diez recursos má
 
 ## Personalizar mi espacio de trabajo {#configure-widgets}
 
-Todos los widgets se muestran de forma predeterminada, pero puede activar o desactivar los widgets que se muestran en mi espacio de trabajo. Las preferencias son específicas de cada usuario.
+Todos los widgets se muestran de forma predeterminada, pero puede habilitar o deshabilitar los widgets que se muestran en mi espacio de trabajo. Las preferencias son específicas de cada usuario.
 
 1. Haga clic en **[!UICONTROL mi espacio de trabajo]** disponible en el panel de navegación izquierdo y haga clic en **[!UICONTROL Personalizar]**.
 

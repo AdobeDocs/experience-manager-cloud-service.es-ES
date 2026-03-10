@@ -4,11 +4,12 @@ description: Cargar, previsualizar, anotar y publicar recursos de vídeo en  [!D
 contentOwner: AG
 feature: Asset Management, Publishing, Collaboration, Video
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '4983'
-ht-degree: 6%
+source-wordcount: '4995'
+ht-degree: 7%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 6%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 El formato de vídeo es una parte esencial de los recursos digitales de una organización. [!DNL Adobe Experience Manager] ofrece ofertas y características consolidadas para administrar todo el ciclo de vida de los recursos de vídeo después de su creación.
@@ -410,7 +411,7 @@ Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. E
 1. En la esquina superior derecha de la página de propiedades del vídeo, seleccione **[!UICONTROL Guardar y cerrar]**.
 1. En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**.
 
-   Consulte también [Usar la administración de publicaciones con Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=es#page-authoring).
+   Consulte también [Usar la administración de publicaciones con Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring).
 
    Si lo desea, puede comprobar el vídeo publicado en el canal de YouTube.
 

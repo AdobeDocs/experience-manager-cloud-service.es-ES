@@ -1,12 +1,13 @@
 ---
 title: Creación de direcciones URL mnemónicas mediante Dynamic Media con funciones de OpenAPI
-description: Utilice las funcionalidades de OpenAPI de Dynamic Media para transformar las URL de entrega de recursos largas en URL de vanidad cortas y de marca. Una URL de vanidad es una versión corta, limpia, fácil de recordar y legible de su URL de envío compleja. Puede incluir su nombre de marca, nombres de productos y palabras clave relevantes en la URL de vanidad para aumentar la visibilidad de su marca y la participación del usuario
+description: Utilice las funcionalidades de OpenAPI de Dynamic Media para transformar las URL de entrega de recursos largas en URL de vanidad cortas y de marca. Una URL de vanidad es una versión corta, limpia, fácil de recordar y legible de su URL de envío compleja. Puede incluir su nombre de marca, nombres de productos y palabras clave relevantes en la URL de vanidad para aumentar su visibilidad de la marca y la participación del usuario
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1386'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Consulte los siguientes formatos de URL para comprender su diferencia:
 
 Las direcciones URL de envío estándar utilizan `aaid` seguidas de un UUID, mientras que las direcciones URL de vanidad utilizan `avid` seguidas de un identificador personalizado (identificador personalizado).
 
-Utilice identificadores mnemónicos cortos y simples para que su URL mnemónica sea corta, limpia, legible, fácil de recordar y compartir. Utilice su nombre de marca, nombres de productos y palabras clave relevantes como ID de vanidad para aumentar la visibilidad de su marca y la participación del usuario.
+Utilice identificadores mnemónicos cortos y simples para que su URL mnemónica sea corta, limpia, legible, fácil de recordar y compartir. Utilice su nombre de marca, nombres de productos y palabras clave relevantes como ID de vanidad para aumentar su visibilidad de la marca y la participación del usuario.
 
 Cuando el usuario hace clic en la URL de vanidad, [!DNL Dynamic Media with OpenAPI] se asigna automáticamente a la ubicación del recurso original en el momento de la ingesta y los resuelve correctamente en el momento de la entrega para entregar el recurso al usuario.
 
@@ -70,7 +71,7 @@ El uso de ID mnemónicos significativos para personalizar las URL de entrega de 
 
 * **Optimización de SEO:** Las direcciones URL que incluyen palabras clave relevantes mejoran la detección y clasificación de los motores de búsqueda.
 
-* **Visibilidad mejorada de la marca:** Las direcciones URL específicas de la marca refuerzan la presencia de la marca en todos los canales de marketing, incluidos el correo electrónico, los medios sociales y las campañas publicitarias.
+* **visibilidad de la marca mejorada:** Las direcciones URL específicas de la marca refuerzan la presencia de marca en todos los canales de marketing, incluidos el correo electrónico, los medios sociales y las campañas publicitarias.
 Además, el uso coherente de direcciones URL con marca en todas las comunicaciones refuerza la identidad y el reconocimiento de la marca.
 
 * **Seguimiento y análisis de campañas:** Use direcciones URL personales únicas para diferentes campañas y canales a fin de obtener información detallada sobre las fuentes de tráfico y el rendimiento de conversión.
@@ -140,7 +141,7 @@ Cuando el usuario hace clic en la URL de vanidad, [!DNL Dynamic Media with OpenA
 
 ## Escalar mediante URL de vanidad{#scale-using-vanity-url}
 
-AEM as a Cloud Service le permite [personalizar los nombres DNS y CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) en sus direcciones web. Use estas capacidades de AEM CS con sus URL personales para transformarlas en direcciones web únicas, limpias, descriptivas, con marca, intuitivas y que proporcionen los [beneficios mencionados](#key-benefits).
+AEM as a Cloud Service le permite [personalizar los nombres DNS y CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) en sus direcciones web. Use estas capacidades de AEM CS con sus URL personales para transformarlas en direcciones web únicas, limpias, descriptivas, con marca, intuitivas y que proporcionen los [beneficios mencionados](#key-benefits).
 
 Consulte la siguiente URL de vanidad y sus componentes personalizables:
 
@@ -190,7 +191,7 @@ Consulte la siguiente URL de vanidad y sus componentes personalizables:
 Ejecute los siguientes pasos para reescribir las reglas de CDN para la entrega:
 
 1. Vaya al repositorio de AEM para crear un archivo de configuración de YAML.
-2. Ejecute los pasos de la sección [setup](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para configurar las reglas de CDN e implementar la configuración a través de la canalización de configuración de Cloud Manager.
+2. Ejecute los pasos de la sección [setup](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para configurar las reglas de CDN e implementar la configuración a través de la canalización de configuración de Cloud Manager.
 Siga estas [prácticas recomendadas](#best-practices) para crear su ruta de dominio.
    [Más información acerca de las reglas de reescritura de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
@@ -242,6 +243,6 @@ type: transform
 Siga estas prácticas recomendadas para crear [ID de vanidad](#create-vanity-urls), [DNS personalizado](#customize-dns) y [nombres de CDN](#rewrite-cdn-rules):
 
 1. No utilice caracteres especiales en los ID de vanidad, como espacios, barras diagonales, guiones y mucho más. El sistema reemplaza los caracteres especiales de los ID de vanidad mediante una asignación predefinida.
-1. Use su nombre de marca, nombres de productos y palabras clave relevantes en sus [ID mnemónicos](#create-vanity-urls), [DNS personalizado](#customize-dns) y [nombres de CDN](#rewrite-cdn-rules) para aumentar la visibilidad de su marca y la participación de los usuarios.
+1. Use su nombre de marca, nombres de producto y palabras clave relevantes en sus [ID mnemónicos](#create-vanity-urls), [DNS personalizado](#customize-dns) y [nombres de CDN](#rewrite-cdn-rules) para aumentar su visibilidad de la marca y participación del usuario.
 1. Utilice palabras o cadenas cortas y descriptivas que transmitan significado.
 1. Utilice textos que inviten a usuarios a hacer clic.

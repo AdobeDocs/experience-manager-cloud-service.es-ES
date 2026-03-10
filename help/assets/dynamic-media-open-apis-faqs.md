@@ -2,11 +2,12 @@
 title: Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI
 description: Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: c3bac140c2e0b33cfc206cda7c0591fc75a47a1f
-workflow-type: ht
-source-wordcount: '1609'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 99%
 
 ---
 

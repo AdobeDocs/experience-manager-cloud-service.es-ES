@@ -1,12 +1,13 @@
 ---
 title: Utilice el Asesor de contenido para acceder a los AEM Assets de Adobe Express
 description: Utilice el Asesor de contenido para detectar y acceder a los AEM Assets directamente desde la integración nativa de Adobe Express.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 6d80567106fe7c32d8073ca093f895ff28500413
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2581'
+source-wordcount: '2587'
 ht-degree: 0%
 
 ---
@@ -154,7 +155,7 @@ Haga clic en el icono ![vista previa](assets/do-not-localize/preview-icon.svg) p
 
 ![Previsualizar representaciones de Dynamic Media](assets/native-express-dynamic-media-preview.png)
 
-Haga clic en **[!UICONTROL Agregar modificadores]**, especifique un modificador en el cuadro de texto y presione Entrar para aplicar la transformación a las representaciones en tiempo real. Del mismo modo, puede agregar varios modificadores a una representación y previsualizar esas transformaciones. Arrastre y suelte el recurso de la vista previa en el lienzo. La representación después de aplicar esos modificadores no se guarda. Consulte la lista de modificadores admitidos para [Dynamic Media Scene7](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) y [Dynamic Media con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Haga clic en **[!UICONTROL Agregar modificadores]**, especifique un modificador en el cuadro de texto y presione Entrar para aplicar la transformación a las representaciones en tiempo real. Del mismo modo, puede agregar varios modificadores a una representación y previsualizar esas transformaciones. Arrastre y suelte el recurso de la vista previa en el lienzo. La representación después de aplicar esos modificadores no se guarda. Consulte la lista de modificadores admitidos para [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) y [Dynamic Media con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 >[!IMPORTANT]
 > 
@@ -250,7 +251,7 @@ Como práctica recomendada, Adobe recomienda especificar valores en el resto de 
 
 ## Formatos de archivo compatibles {#supported-file-formats-import-assets}
 
-Adobe Express admite de forma nativa los formatos disponibles en [Revisar los requisitos mínimos de imagen](https://helpx.adobe.com/es/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Sin embargo, AEM Assets admite los siguientes tipos de formato:
+Adobe Express admite de forma nativa los formatos disponibles en [Revisar los requisitos mínimos de imagen](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Sin embargo, AEM Assets admite los siguientes tipos de formato:
 
 | Formato admitido | Dimensiones máximas/resolución | Tamaño máximo de archivo |
 |------------------|---------------------------------------------|---------------|

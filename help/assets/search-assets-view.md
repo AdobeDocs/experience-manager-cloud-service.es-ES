@@ -2,11 +2,12 @@
 title: ¿Desea saber cómo buscar y descubrir recursos en  [!DNL Assets view]?
 description: Obtenga información sobre cómo buscar y descubrir recursos en la vista de AEM Assets. La potente funcionalidad de búsqueda le permite descubrir rápidamente el recurso adecuado y ayudarle a mejorar la velocidad del contenido.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1627'
 ht-degree: 74%
 
 ---
@@ -124,9 +125,9 @@ To remove custom filters:
 
 ## Búsqueda de IA {#ai-search}
 
-La búsqueda de IA es una capacidad de búsqueda avanzada que comprende el significado y la intención detrás de la consulta de un usuario en lugar de depender de coincidencias de palabras clave exactas. Utiliza inteligencia artificial (IA) y aprendizaje automático para ofrecer resultados más precisos y sensibles al contexto.
+La búsqueda por IA es una función de búsqueda avanzada que comprende el significado y la intención detrás de la consulta de un usuario en lugar de depender de coincidencias de palabras clave exactas. Utiliza inteligencia artificial (IA) y aprendizaje automático para ofrecer resultados más precisos y sensibles al contexto.
 
-A diferencia de la búsqueda tradicional basada en palabras clave, que busca términos exactos, la búsqueda de IA interpreta las relaciones entre palabras, conceptos e intención del usuario. Esto garantiza que los usuarios encuentren lo que están buscando, incluso si su consulta está redactada de forma diferente, contiene errores tipográficos o está en otro idioma.
+A diferencia de la búsqueda tradicional basada en palabras clave, que busca términos exactos, la Búsqueda por IA interpreta las relaciones entre palabras, conceptos e intención del usuario. Esto garantiza que los usuarios encuentren lo que están buscando, incluso si su consulta está redactada de forma diferente, contiene errores tipográficos o está en otro idioma.
 
 Algunos de sus beneficios clave incluyen:
 
@@ -138,25 +139,25 @@ Algunos de sus beneficios clave incluyen:
 
 * **Búsqueda según el contexto**: Reconoce la intención detrás de una consulta, no solo las palabras exactas.
 
-### Ejemplos de búsqueda de IA {#examples-ai-search}
+### Ejemplos de Búsqueda por IA {#examples-ai-search}
 
 **Mensaje de ejemplo**: *Mujer tomando café*
 
 La búsqueda tradicional basada en palabras clave busca coincidencias exactas de los metadatos de recursos, como `Woman`, `drinking`, `Coffee`, y devuelve recursos que incluyen todos estos términos en los metadatos.
 
-Sin embargo, la búsqueda de IA coincide con palabras similares como `Girl`, `Lady` en el caso de `Woman` y `Cappuccino` y `Latte` en el caso de `Coffee`.
+Sin embargo, la Búsqueda por IA coincide con palabras similares como `Girl`, `Lady` en el caso de `Woman` y `Cappuccino` y `Latte` en el caso de `Coffee`.
 
 Del mismo modo, puede especificar este mensaje en español o escribir incorrectamente `Woman` como `Wman` y seguir obteniendo los mismos resultados.
 
 ![Búsqueda semántica en la vista de Assets](assets/semantic-search.png)
 
-### Habilitar o deshabilitar la búsqueda de IA en la vista de Assets {#enable-disable-ai-search}
+### Habilitar o deshabilitar la Búsqueda por IA en la vista de Assets {#enable-disable-ai-search}
 
-Siga estos pasos para habilitar o deshabilitar la búsqueda de IA:
+Siga estos pasos para habilitar o deshabilitar la Búsqueda por IA:
 
 1. Vaya a **[!UICONTROL Configuración]** >> **[!UICONTROL Configuración general]** y seleccione la ficha **[!UICONTROL Buscar]**.
 
-1. En la sección **[!UICONTROL Buscar]**, seleccione **[!UICONTROL Búsqueda de IA]** para habilitar la Búsqueda de IA o **[!UICONTROL Palabra clave]** para deshabilitarla.
+1. En la sección **[!UICONTROL Buscar]**, seleccione **[!UICONTROL Búsqueda por IA]** para habilitar la Búsqueda por IA o **[!UICONTROL Palabra clave]** para deshabilitarla.
 
    ![Búsqueda semántica en la vista de Assets](/help/assets/assets/enable-disable-ai-search.png)
 
@@ -394,7 +395,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Facilite comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar un problema] ![crear un problema de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha.
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)
 
 
 

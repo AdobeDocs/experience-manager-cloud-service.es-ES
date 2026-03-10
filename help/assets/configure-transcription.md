@@ -8,11 +8,12 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 84%
+source-wordcount: '1674'
+ht-degree: 83%
 
 ---
 
@@ -61,11 +62,11 @@ Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UIC
 
 Una vez que [!DNL Azure Media Services] esté configurado en Experience Manager Assets, el siguiente paso es crear un perfil de procesamiento de recursos para generar una transcripción basada en IA de los recursos de audio y vídeo. El perfil de procesamiento basado en IA genera transcripciones de los [recursos de audio o vídeo admitidos](#supported-file-formats-for-transcription) como una representación en Experience Manager Assets y almacena la transcripción (archivo .vtt) en la misma carpeta en la que reside el recurso original. Por lo tanto, es más fácil para los usuarios buscar y localizar el recurso y su representación de transcripción.
 
-Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de procesamiento]** y haga clic en el botón **[!UICONTROL Crear]** para crear un perfil de procesamiento basado en IA que genere la transcripción de sus archivos de audio y vídeo. De forma predeterminada, la página de procesamiento de perfiles refleja solo tres pestañas (Imagen, Vídeo y Personalizado). Sin embargo, hay una pestaña **[!UICONTROL Inteligencia artificial aplicada al contenido]** visible si ha configurado [!DNL Azure Media Services] en su instancia de [!DNL Experience Manager Assets]. Compruebe sus credenciales de [!DNL Azure] si no ve la pestaña **[!UICONTROL Inteligencia artificial aplicada al contenido]** al crear un perfil de procesamiento.
+Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de procesamiento]** y haga clic en el botón **[!UICONTROL Crear]** para crear un perfil de procesamiento basado en IA que genere la transcripción de sus archivos de audio y vídeo. De forma predeterminada, la página de perfil de procesamiento refleja solo tres pestañas (Imagen, Vídeo y Personalizado). Sin embargo, hay una pestaña **[!UICONTROL Inteligencia artificial aplicada al contenido]** visible si ha configurado [!DNL Azure Media Services] en su instancia de [!DNL Experience Manager Assets]. Compruebe sus credenciales de [!DNL Azure] si no ve la pestaña **[!UICONTROL Inteligencia artificial aplicada al contenido]** al crear un perfil de procesamiento.
 
 En la ficha **[!UICONTROL Inteligencia artificial aplicada al contenido]**, haga clic en el botón **[!UICONTROL Agregar nuevo]** para configurar la transcripción. Aquí puede incluir y excluir los formatos de archivo (tipos MIME) para generar transcripciones seleccionando tipos de archivo en la lista desplegable. En la siguiente ilustración, se incluyen todos los archivos de audio y vídeo compatibles y se excluyen los archivos de texto.
 
-Active **[!UICONTROL Crear transcripción VTT en el mismo directorio]** para crear y almacenar la representación de la transcripción (archivo .vtt) en la misma carpeta en la que reside el recurso original. Las demás representaciones también se generan mediante el flujo de trabajo predeterminado de procesamiento de recursos DAM, independientemente de esta configuración.
+Habilite **[!UICONTROL Crear transcripción VTT en el mismo directorio]** para crear y almacenar la representación de la transcripción (archivo .vtt) en la misma carpeta en la que reside el recurso original. Las demás representaciones también se generan mediante el flujo de trabajo predeterminado de procesamiento de recursos DAM, independientemente de esta configuración.
 
 ![configure-transcription-service](assets/configure-transcription-profile.png)
 
@@ -77,7 +78,7 @@ El perfil de vídeo también contiene las siguientes configuraciones personaliza
 
 ![configure-transcription-service](assets/video-processing-profile2.png)
 
-Ahora vamos a configurar la transcripción en este perfil de vídeo. Vaya a la pestaña **[!UICONTROL Inteligencia artificial aplicada al contenido]** y haga clic en el botón **[!UICONTROL Agregar nuevo]**. Incluya todos los archivos de audio y vídeo, y excluya los de imagen y aplicación. Active **[!UICONTROL Crear transcripción VTT en el mismo directorio]** y guarde la configuración.
+Ahora vamos a configurar la transcripción en este perfil de vídeo. Vaya a la pestaña **[!UICONTROL Inteligencia artificial aplicada al contenido]** y haga clic en el botón **[!UICONTROL Agregar nuevo]**. Incluya todos los archivos de audio y vídeo, y excluya los de imagen y aplicación. Habilite **[!UICONTROL Crear transcripción VTT en el mismo directorio]** y guarde la configuración.
 
 ![configure-transcription-service](assets/video-processing-profile1.png)
 
@@ -120,7 +121,7 @@ Actualmente, Experience Manager no admite la edición o la vista previa de texto
 
 ## Uso de transcripción en Dynamic Media {#using-transcription-in-dynamic-media}
 
-Si tiene [Dynamic Media configurado](/help/assets/dynamic-media/config-dm.md) en la instancia de Experience Manager Assets, puede publicar el recurso (archivo de audio o vídeo) y su transcripción (archivo .vtt) en Dynamic Media. Al hacerlo, el recurso original (archivo de audio o vídeo) y su representación transcrita (archivo .vtt) se publican en Dynamic Media en la misma carpeta. El administrador de Dynamic Media puede [activar la experiencia CC (Closed Caption o subtítulos ocultos)](/help/assets/dynamic-media/video.md#adding-captions-to-video) para el archivo de audio o vídeo que utiliza la representación de transcripción (archivo .vtt).
+Si tiene [Dynamic Media configurado](/help/assets/dynamic-media/config-dm.md) en la instancia de Experience Manager Assets, puede publicar el recurso (archivo de audio o vídeo) y su transcripción (archivo .vtt) en Dynamic Media. Al hacerlo, el recurso original (archivo de audio o vídeo) y su representación transcrita (archivo .vtt) se publican en Dynamic Media en la misma carpeta. El administrador de Dynamic Media puede [habilitar la experiencia CC (Closed Caption o subtítulos ocultos)](/help/assets/dynamic-media/video.md#adding-captions-to-video) para el archivo de audio o vídeo que utiliza la representación de transcripción (archivo .vtt).
 
 Consulte también lo siguiente:
 

@@ -4,10 +4,11 @@ description: Aprenda a trabajar con titulares de carrusel en Dynamic Media.
 contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '4492'
+source-wordcount: '4498'
 ht-degree: 1%
 
 ---
@@ -77,7 +78,7 @@ Para ponerse en marcha rápidamente:
 
    Añada una o más zonas interactivas o mapas de imagen a un titular de imagen. A continuación, asocie cada uno con una acción como un vínculo, una vista rápida o un fragmento de experiencia. Después de agregar puntos interactivos o mapas de imagen, finalice esta tarea publicando el conjunto de carrusel. La publicación crea el código incrustado que puede utilizar para copiar y aplicar en la página de aterrizaje del sitio web.
 
-   Consulte [&#x200B; (Opcional) Banners de carrusel de vista previa](#optional-previewing-carousel-banners) - Opcional. Si lo desea, puede ver una representación del conjunto de carrusel y probar su interactividad.
+   Consulte [ (Opcional) Banners de carrusel de vista previa](#optional-previewing-carousel-banners) - Opcional. Si lo desea, puede ver una representación del conjunto de carrusel y probar su interactividad.
 
 1. [Publicar titulares de carrusel](#publishing-carousel-banners).
 
@@ -147,10 +148,10 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
    <td>SKU único, encontrado en la cadena de consulta.</td>
    <td><p>Las direcciones URL de vista rápida registradas incluyen lo siguiente:</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>La única parte de la variable en la dirección URL es el valor del parámetro de cadena de consulta <code>productId=</code> y es claramente un valor SKU. Por lo tanto, las zonas interactivas o los mapas de imagen solo necesitan campos SKU con valores como <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -166,9 +167,9 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
    <td>SKU e ID de categoría en la cadena de consulta.</td>
    <td><p>Las direcciones URL de vista rápida registradas incluyen lo siguiente:</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>En este caso, la dirección URL consta de dos partes diferentes. El SKU se almacena en el parámetro <code>prodId</code> y el ID de categoría en el parámetro <code>category=</code>.</p> <p>Como tal, las definiciones de mapa de imagen/punto interactivo son pares. Es decir, un valor SKU y una variable adicional llamada <code>categoryId</code>. Los pares resultantes son los siguientes:</p>
     <ul>
      <li><p>El SKU es <strong><code>305466</code></strong> y <code>categoryId</code> es <code>1100004</code>.</p> </li>
@@ -231,7 +232,7 @@ Para cargar titulares de imagen, consulte [Cargar recursos](/help/assets/manage-
    >* Cambie el estilo de resaltado de un mapa de imagen o el icono utilizado para las zonas interactivas.
    >* Antes de editar un ajuste preestablecido de visualizador, elija el estilo en el que desea basarlo. Si no elige un estilo, cuando empiece a editar el ajuste preestablecido de visualizador, perderá todos los cambios si cambia a un ajuste preestablecido diferente.
 
-   También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [&#x200B; (Opcional) Vista previa de titulares de carrusel](#optional-previewing-carousel-banners).
+   También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [ (Opcional) Vista previa de titulares de carrusel](#optional-previewing-carousel-banners).
 
 1. Seleccione **[!UICONTROL Guardar]** cuando termine.
 
@@ -253,7 +254,7 @@ Recuerde guardar su trabajo a medida que añada puntos interactivos o mapas de i
 
 Cuando termine de crear el titular del carrusel, puede utilizar la opción Previsualizar para ver una representación de cómo se muestra el titular del carrusel a los clientes.
 
-Consulte [&#x200B; (Opcional) Vista previa de titulares de carrusel](#optional-previewing-carousel-banners).
+Consulte [ (Opcional) Vista previa de titulares de carrusel](#optional-previewing-carousel-banners).
 
 >[!NOTE]
 >
@@ -325,7 +326,7 @@ Ver [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-f
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [&#x200B; (Opcional) Vista previa de titulares de carrusel](#optional-previewing-carousel-banners).
+   También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [ (Opcional) Vista previa de titulares de carrusel](#optional-previewing-carousel-banners).
 
 1. Seleccione **[!UICONTROL Guardar]**.
 1. Publique el conjunto de carrusel. Al publicar, se crea el código incrustado o la dirección URL que puede utilizar en la página del sitio web. Si es cliente de Experience Manager Sites, agregue el conjunto de carrusel directamente a la página web.

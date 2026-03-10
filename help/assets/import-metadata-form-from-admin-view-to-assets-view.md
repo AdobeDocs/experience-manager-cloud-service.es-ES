@@ -4,10 +4,11 @@ description: Este artículo describe cómo importar el formulario de metadatos d
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 5fb4fe97-486a-4a91-af60-a7182efcc2f9
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -46,9 +47,8 @@ Como administrador, ejecute los siguientes pasos para importar los formularios d
 
    * Haga clic en el encabezado de columna para ordenar la tabla por [!UICONTROL Nombre], [!UICONTROL Modificado] o [!UICONTROL Autor].
    * Seleccione el formulario importado y haga clic en **[!UICONTROL Quitar de las carpetas]**; a continuación, compruebe el nombre de la carpeta en la ruta de acceso de la carpeta para confirmar que se ha transferido correctamente.
-
      ![comprobar página de formularios de metadatos](/help/assets/assets/confirm-ported-folder.png)
-   * Seleccione el formulario importado y haga clic en **[!UICONTROL Editar]** para ver todas las configuraciones admitidas del formulario de metadatos. Consulte [Configuración de Forms de metadatos](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) para obtener más información sobre los formularios de metadatos, sus componentes y campos.
+   * Seleccione el formulario importado y haga clic en **[!UICONTROL Editar]** para ver todas las configuraciones admitidas del formulario de metadatos. Consulte [Configuración de Forms de metadatos](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) para obtener más información sobre los formularios de metadatos, sus componentes y campos.
 
    ![comprobar página de formularios de metadatos](/help/assets/assets/verify-metadata-forms-page.png)
 
@@ -57,8 +57,8 @@ Como administrador, ejecute los siguientes pasos para importar los formularios d
 Después de importar los formularios de metadatos de [!DNL Admin View] a [!DNL Assets View], siga estos pasos para comprobar la importación:
 
 1. Vaya a cualquiera de las carpetas asociadas del formulario de metadatos importado.
-1. Vaya a la página de detalles de un [recurso](/help/assets/navigate-assets-view.md#preview-assets) y compruebe que los componentes de metadatos, los campos de componente y los valores de campo admitidos estén sincronizados desde [!DNL Admin View]. Consulte el artículo [Metadatos en Assets Essentials](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/metadata) para obtener más información sobre los componentes de metadatos, los campos de componente y los valores de campo.
+1. Vaya a la página de detalles de un [recurso](/help/assets/navigate-assets-view.md#preview-assets) y compruebe que los componentes de metadatos, los campos de componente y los valores de campo admitidos estén sincronizados desde [!DNL Admin View]. Consulte el artículo [Metadatos en Assets Essentials](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) para obtener más información sobre los componentes de metadatos, los campos de componente y los valores de campo.
 
    >[!NOTE]
    >
-   > En [[!DNL Assets View] página de detalles](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) o [[!DNL Admin View] página de propiedades](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/administer/metadata-schemas), los cambios en los valores de las propiedades de metadatos se sincronizan automáticamente entre las dos interfaces. Sin embargo, los cambios estructurales del formulario, como agregar o quitar campos u otras modificaciones, no se sincronizan.
+   > En [[!DNL Assets View] página de detalles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) o [[!DNL Admin View] página de propiedades](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas), los cambios en los valores de las propiedades de metadatos se sincronizan automáticamente entre las dos interfaces. Sin embargo, los cambios estructurales del formulario, como agregar o quitar campos u otras modificaciones, no se sincronizan.

@@ -2,11 +2,12 @@
 title: Interfaz de usuario [!DNL Assets view]
 description: Explicación de la interfaz de usuario de y la navegación en [!DNL Assets view].
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '986'
 ht-degree: 73%
 
 ---
@@ -40,7 +41,7 @@ Al buscar recursos en una carpeta, puede utilizar la interfaz para ver las minia
 * **Vistos recientemente**: lista de recursos que ha previsualizado recientemente. [!DNL Assets view] muestra solo los recursos que previsualiza. No muestra los recursos por los que pasa de largo al examinar los archivos o carpetas del repositorio.
 * [Colecciones](/help/assets/manage-collections-assets-view.md): una colección es un conjunto de recursos, carpetas u otras colecciones dentro de la vista Adobe Experience Manager Assets. Utilice las colecciones para compartir recursos entre los usuarios. A diferencia de las carpetas, una colección puede incluir recursos de distintas ubicaciones. Puede compartir varias colecciones con un usuario. Cada colección contiene referencias a recursos. La integridad referencial de los recursos se mantiene entre colecciones.
 
-* [Perspectivas](/help/assets/manage-reports-assets-view.md#view-live-statistics): En [!DNL Assets view], puede ver perspectivas en tiempo real en su panel. La vista Recursos le permite ver datos en tiempo real de su entorno de la vista Recursos con el tablero de Insights. Puede ver las métricas de eventos en tiempo real durante los últimos 30 días o 12 meses.
+* [Perspectivas](/help/assets/manage-reports-assets-view.md#view-live-statistics): En [!DNL Assets view], puede ver perspectivas en tiempo real en su panel de control. La vista Recursos le permite ver datos en tiempo real de su entorno de la vista Recursos con el panel de control de Insights. Puede ver las métricas de eventos en tiempo real durante los últimos 30 días o 12 meses.
 
 * **Papelera**: Enumere los recursos eliminados de la carpeta raíz **[!UICONTROL Assets]**. Puede seleccionar un recurso en la carpeta Papelera para restaurarlo a su ubicación original o eliminarlo permanentemente. Puede especificar una palabra clave o aplicar filtros, como el estado del recurso, tipo de archivo, tipo de MIME, tamaño de imagen, creación del recurso, y las fechas de modificación y caducidad, así como filtrar por los recursos que el usuario actual descarta. También puede aplicar filtros personalizados para buscar los recursos adecuados en la carpeta Papelera. Para obtener más información sobre el uso de filtros estándar y personalizados, consulte cómo [buscar recursos en la vista de Assets](/help/assets/search-assets-view.md).
 * **Configuración**: puede configurar varias opciones de la vista de Assets mediante **Configuración**, como formularios de metadatos, informes y administración de taxonomía.
@@ -97,7 +98,7 @@ Other use cases after previewing.
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es/home?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >

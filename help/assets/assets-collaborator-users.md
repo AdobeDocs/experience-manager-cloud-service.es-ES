@@ -3,10 +3,11 @@ title: Usuarios colaboradores de AEM Assets
 description: Obtenga información sobre cómo administrar los usuarios de Collaborator de AEM Assets y sus privilegios.
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: b0be28b8-821c-46a0-9437-2b2fccee95ee
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '149'
 ht-degree: 35%
 
 ---

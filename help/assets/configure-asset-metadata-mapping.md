@@ -1,13 +1,14 @@
 ---
 title: Configuración de la asignación de metadatos de recursos entre Workfront y Experience Manager Assets
 description: Asigne los campos de metadatos del recurso entre las aplicaciones de Adobe Workfront y Experience Manager as a Cloud Service. Como resultado de la asignación de campos de metadatos, cuando envía un recurso de Workfront a Experience Manager Assets, puede ver los metadatos del recurso asignado en Experience Manager Assets.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 4%
+source-wordcount: '1018'
+ht-degree: 5%
 
 ---
 
@@ -91,7 +92,6 @@ Para configurar la asignación de metadatos mediante un nuevo formulario de meta
    1. Especifique `Project Name` en el campo **[!UICONTROL Etiqueta de campo]**.
 
    1. Especifique `./jcr:content/metadata/wm:projectName` en el campo **[!UICONTROL Asignar a propiedad]**. Como guía, utilice la siguiente plantilla para definir las asignaciones de campos en Experience Manager Assets:
-
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Al configurar asignaciones en Workfront, ha asignado el campo `wm:projectName` de Experience Manager Assets al campo Proyecto > Nombre de Workfront.

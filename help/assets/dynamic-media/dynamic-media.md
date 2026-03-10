@@ -1,20 +1,21 @@
 ---
-title: Trabajar con Dynamic Media
+title: Uso de Dynamic Media
 description: Obtenga información sobre qué es Dynamic Media y puede utilizarlo para entregar recursos para su consumo en sitios web, móviles y sociales.
 contentOwner: Rick Brough
 feature: Dynamic Media,Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 3%
+source-wordcount: '661'
+ht-degree: 6%
 
 ---
 
-# Trabajar con Dynamic Media {#working-with-dynamic-media}
+# Uso de Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/es/products/experience-manager/assets/dynamic-media.html) ayuda a ofrecer recursos de marketing y comercialización visual enriquecidos bajo demanda, escalados automáticamente para el consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen principales, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ayuda a ofrecer recursos de marketing y comercialización visual enriquecidos bajo demanda, escalados automáticamente para el consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen principales, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
 Dynamic Media ofrece experiencias de visualización interactivas, como zoom, giro de 360° y vídeo. Dynamic Media incorpora de forma exclusiva los flujos de trabajo de la solución Adobe Experience Manager digital asset management (Assets) para simplificar y optimizar el proceso de administración de campañas digitales.
 
@@ -46,7 +47,7 @@ Las funciones solo de Dynamic Media incluyen lo siguiente:
 * [Imágenes panorámicas](panoramic-images.md)
 * [Conjuntos de giros](spin-sets.md)
 * [Vídeo](video.md)
-* [Entrega de Dynamic Media Assets](delivering-dynamic-media-assets.md)
+* [Entrega de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
 * [Administración de Assets](managing-assets.md)
 * [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
 

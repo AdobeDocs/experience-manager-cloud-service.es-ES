@@ -3,10 +3,11 @@ title: Integrar [!DNL AEM Assets] con [!DNL Figma].
 description: Aprenda a integrar [!DNL AEM Assets] con [!DNL Figma] para acceder a los recursos de su organización y utilizarlos en el flujo de trabajo de  [!DNL Figma] diseño.
 hide: false
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: a9c1f5472092b3b9fa7a5e5570feb92f32e9ef6c
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '552'
 ht-degree: 1%
 
 ---
@@ -40,13 +41,13 @@ También puedes acceder a [[!DNL Adobe Experience Manager (AEM) Assets Connector
 
 >[!NOTE]
 >
-> [Póngase en contacto con el Soporte técnico de Adobe](https://helpx.adobe.com/es/contact.html) para obtener ayuda si ve un mensaje de **[!UICONTROL Error de red]** después de iniciar sesión en su entorno de [!DNL AEM].
+> [Póngase en contacto con el Soporte técnico de Adobe](https://helpx.adobe.com/contact.html) para obtener ayuda si ve un mensaje de **[!UICONTROL Error de red]** después de iniciar sesión en su entorno de [!DNL AEM].
 
 ## Importar [!DNL AEM] recursos al lienzo [!DNL Figma]{#import-aem-assets-into-figma-workflow}
 
 [Acceda al [!UICONTROL panel] del conector Assets de Adobe Experience Manager (AEM)](#access-aem-assets-connector) dentro de su interfaz de diseño de [!DNL Figma] y haga lo siguiente:
 
-1. Busque recursos en el panel [!UICONTROL Conector de Assets de Adobe Experience Manager (AEM)]. Para obtener más información, consulte [uso del Selector de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Busque recursos en el panel [!UICONTROL Conector de Assets de Adobe Experience Manager (AEM)]. Para obtener más información, consulte [uso del Selector de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Arrastre y suelte el recurso en el lienzo o selecciónelo y haga clic en **[!UICONTROL Seleccionar]** para llevar el recurso al lienzo.
 

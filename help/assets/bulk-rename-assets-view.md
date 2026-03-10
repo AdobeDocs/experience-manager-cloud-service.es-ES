@@ -2,10 +2,11 @@
 title: Cambiar nombre y cambiar el nombre de los recursos en bloque en  [!DNL Assets view]
 description: Obtenga información sobre cómo cambiar el nombre de los recursos de forma masiva mediante la nueva interfaz de usuario de Assets (vista Assets). Permite cambiar el nombre de varios recursos a la vez.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: e041811b-0246-408f-9246-248da55f66a1
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '446'
 ht-degree: 15%
 
 ---
@@ -59,7 +60,7 @@ A continuación se muestran algunos ejemplos de cómo utilizar IA para cambiar e
 > * Utilice un nombre único para evitar mensajes de advertencia al cambiar el nombre de los recursos. Aunque puede intentarlo de nuevo con un nombre nuevo.
 > * También puede convertir caracteres Unicode o no alfanuméricos en texto.
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 * [Vea un vídeo para administrar formularios de metadatos en la vista de Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=es)
 
@@ -67,4 +68,4 @@ A continuación se muestran algunos ejemplos de cómo utilizar IA para cambiar e
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)

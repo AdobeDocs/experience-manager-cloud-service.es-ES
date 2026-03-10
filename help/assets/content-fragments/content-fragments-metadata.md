@@ -1,20 +1,21 @@
 ---
 title: 'Metadatos: Propiedades del fragmento (Assets: fragmentos de contenido)'
 description: Consulte cómo puede ver y editar las propiedades de metadatos de los fragmentos de contenido.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '291'
+ht-degree: 65%
 
 ---
 
 # Metadatos: propiedades del fragmento {#metadata-fragment-properties}
 
-AEM Consulte cómo puede ver y editar las propiedades de los metadatos de los fragmentos de contenido en la documentación de para ajustar el contenido sin encabezado en la documentación de la documentación de.
+Consulte cómo puede ver y editar las propiedades de metadatos de los fragmentos de contenido en AEM para ajustar el contenido sin encabezado.
 
 >[!NOTE]
 >

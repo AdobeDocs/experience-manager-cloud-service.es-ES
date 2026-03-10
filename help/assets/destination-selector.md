@@ -3,12 +3,13 @@ title: Selector de destino para AEM as a Cloud Service
 description: Utilice el Selector de destino de AEM para mostrar y seleccionar recursos que puede utilizar como copia del recurso original.
 contentOwner: Adobe
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 35%
+source-wordcount: '1880'
+ht-degree: 34%
 
 ---
 
@@ -128,18 +129,18 @@ En la tabla siguiente se describen algunas de las propiedades importantes del de
 
 | Propiedad | Tipo | Explicación |
 |---|---|---|
-| *repo:repositoryId* | cadena | Identificador único del repositorio en el que se almacena el recurso. |
-| *repo:id* | cadena | Identificador único del recurso. |
-| *repo:assetClass* | cadena | La clasificación del recurso (por ejemplo, imagen o vídeo, documento). |
-| *repo:name* | cadena | Nombre del recurso, incluida la extensión de archivo. |
-| *repo:size* | número | El tamaño del recurso en bytes. |
-| *repo:path* | cadena | La ubicación del recurso dentro del repositorio. |
-| *repo:ancestors* | `Array<string>` | Matriz de elementos antecesores del recurso en el repositorio. |
-| *repo:state* | cadena | Estado actual del recurso en el repositorio (por ejemplo, activo, eliminado, etc.). |
-| *repo:createdBy* | cadena | El usuario o sistema que creó el recurso. |
-| *repo:createDate* | cadena | La fecha y la hora en que se creó el recurso. |
-| *repo:modifiedBy* | cadena | Usuario o sistema que modificó el recurso por última vez. |
-| *repo:modifyDate* | cadena | La fecha y la hora en que se modificó el recurso por última vez. |
+| *repositorio:repositoryId* | cadena | Identificador único del repositorio en el que se almacena el recurso. |
+| *repositorio:id* | cadena | Identificador único del recurso. |
+| *repositorio:assetClass* | cadena | La clasificación del recurso (por ejemplo, imagen o vídeo, documento). |
+| *repositorio:name* | cadena | Nombre del recurso, incluida la extensión de archivo. |
+| *repositorio:size* | número | El tamaño del recurso en bytes. |
+| *repositorio:path* | cadena | La ubicación del recurso dentro del repositorio. |
+| *repositorio:ancestors* | `Array<string>` | Matriz de elementos antecesores del recurso en el repositorio. |
+| *repositorio:state* | cadena | Estado actual del recurso en el repositorio (por ejemplo, activo, eliminado, etc.). |
+| *repositorio:createdBy* | cadena | El usuario o sistema que creó el recurso. |
+| *repositorio:createDate* | cadena | La fecha y la hora en que se creó el recurso. |
+| *repositorio:modifiedBy* | cadena | Usuario o sistema que modificó el recurso por última vez. |
+| *repositorio:modifyDate* | cadena | La fecha y la hora en que se modificó el recurso por última vez. |
 | *dc:format* | cadena | El formato del recurso. |
 | *_página* | orderBy: string; count: number; | Incluye el número de página del documento. |
 

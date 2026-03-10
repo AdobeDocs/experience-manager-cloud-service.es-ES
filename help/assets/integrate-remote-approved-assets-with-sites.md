@@ -1,11 +1,12 @@
 ---
 title: Integración de AEM Assets remoto con AEM Sites
 description: Obtenga información sobre cómo configurar y conectar sitios de AEM con AEM Assets aprobados.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 12%
+source-wordcount: '1011'
+ht-degree: 13%
 
 ---
 
@@ -34,7 +35,6 @@ La compatibilidad con recursos remotos mediante Dynamic Media con funciones de O
 * Configure las [variables de entorno](/help/implementing/cloud-manager/environment-variables.md#add-variables) siguientes para AEM as a Cloud Service:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxx-eyyyyyy.adobeaemcloud.com&quot; <br>
-
      `pXXXX` hace referencia al ID de programa <br>
      `eYYYY` hace referencia al ID de entorno
 
@@ -42,7 +42,7 @@ La compatibilidad con recursos remotos mediante Dynamic Media con funciones de O
 
    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]: debe enviar un ticket de asistencia de Adobe para obtener el ID de cliente de IMS.
 
-     o configure la [configuración de OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=es) para AEM 6.5 en la instancia de AEM Sites siguiendo estos pasos:
+     o configure la [configuración de OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) para AEM 6.5 en la instancia de AEM Sites siguiendo estos pasos:
 
    1. Inicie sesión en la consola y haga clic en **[!UICONTROL OSGi] >** o
 usar la dirección URL directa; por ejemplo: `https://localhost:4502/system/console/configMgr`
@@ -63,7 +63,7 @@ donde `pXXXX` hace referencia al ID de programa
 
       ![Ventana de configuración OSGi de la configuración de Dynamic Media de próxima generación](/help/assets/assets/remote-assets-osgi.png)
 
-  Más información sobre la [autenticación IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html?lang=es).
+  Más información sobre la [autenticación IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
 
   Para obtener más información sobre cómo configurar OSGi, consulte los siguientes documentos:
 
@@ -119,7 +119,7 @@ Siga los siguientes pasos para utilizar recursos remotos dentro del fragmento de
 
    >[!NOTE]
    >
-   >Si no cuenta con el modelo de fragmento de contenido de AEM, es posible que tenga que [crear uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=es).
+   >Si no cuenta con el modelo de fragmento de contenido de AEM, es posible que tenga que [crear uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
 
 1. Haga clic en el icono de ![marca de verificación](/help/assets/assets/do-not-localize/checkmark-icon.svg) junto al componente de texto.
 1. Seleccione **[!UICONTROL Remoto]** para recuperar el recurso del DAM remoto. <br>

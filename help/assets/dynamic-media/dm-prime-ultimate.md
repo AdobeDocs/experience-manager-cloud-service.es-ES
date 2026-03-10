@@ -2,11 +2,12 @@
 title: Dynamic Media Prime y Ultimate
 description: Obtenga más información acerca de Dynamic Media Prime y Ultimate, sus ventajas y diferencias entre ambos.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 12%
+source-wordcount: '427'
+ht-degree: 18%
 
 ---
 
@@ -32,7 +33,7 @@ Algunas de las otras ventajas clave de Dynamic Media Prime son:
 
 >[!NOTE]
 >
->Los clientes de DM Prime pueden utilizar modificadores de imagen básicos como rotar, recortar, voltear, alto, ancho y calidad. Imágenes inteligentes no es compatible con AVIF para clientes de DM Prime.
+>Los clientes de DM Prime pueden utilizar modificadores de imagen básicos como rotar, recortar, voltear, alto, anchura y calidad. Las imágenes inteligentes no son compatibles con AVIF para clientes de DM Prime.
 
 ### Requisitos previos {#pre-requisites-dm-prime}
 
@@ -54,8 +55,8 @@ Además de las funciones de Dynamic Media Prime, como la integración de AEM Ass
 * [Solución de Dynamic Media en AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), que también incluye las siguientes funcionalidades clave:
 
    * [Plantillas de Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [Conceptos básicos de plantilla](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [Configuración visual](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [Conceptos básicos de plantilla](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [Configuración visual](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Requisitos previos {#pre-requisites-dm-ultimate}
 

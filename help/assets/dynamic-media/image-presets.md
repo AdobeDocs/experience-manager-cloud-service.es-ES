@@ -4,11 +4,12 @@ description: Aprenda a aplicar ajustes preestablecidos de imagen en Dynamic Medi
 contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 5%
+source-wordcount: '309'
+ht-degree: 7%
 
 ---
 

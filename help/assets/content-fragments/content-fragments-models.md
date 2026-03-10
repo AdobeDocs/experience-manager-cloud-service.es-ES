@@ -1,13 +1,14 @@
 ---
 title: 'Modelos de fragmentos de contenido (Assets: fragmentos de contenido)'
 description: Descubra cómo los modelos de fragmentos de contenido sirven de base para el contenido sin encabezado en AEM, lo que le permite crear fragmentos de contenido con contenido estructurado.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3604'
+source-wordcount: '3610'
 ht-degree: 70%
 
 ---

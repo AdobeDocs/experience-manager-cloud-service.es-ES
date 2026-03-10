@@ -2,11 +2,12 @@
 title: API de envío
 description: Aprenda a utilizar las API de entrega.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 9f7164e99abb6fce3b1bbc6401234996bcd43889
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 5%
+source-wordcount: '642'
+ht-degree: 15%
 
 ---
 
@@ -22,7 +23,7 @@ La siguiente imagen ilustra las direcciones URL de envío disponibles:
 
 La siguiente tabla ilustra el uso de las distintas API de envío disponibles:
 
-| API de envío | Descripción |
+| API de entrega | Descripción |
 |---|---|
 | [Representación binaria optimizada para la web del recurso en el formato de salida solicitado](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) | Devuelve la representación binaria optimizada para la web del recurso en el formato de salida solicitado en función del ID de recurso enviado en la solicitud. Además, puede definir varios modificadores de imagen, como anchura, altura, rotación, voltear, calidad, recorte, formato y [recorte inteligente](/help/assets/dynamic-media/image-profiles.md). Consulte los [detalles de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) para ver los formatos y modificadores de imagen admitidos.<br>Adobe recomienda usar esta API para todos los tipos de formato de imagen. |
 | [Representación binaria optimizada para la web del recurso](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAsset) | API de conveniencia que aplica valores predeterminados a una representación binaria optimizada para la web del recurso devuelto en la respuesta. Los valores predeterminados incluyen un formato JPEG/WEBP estándar, calidad => 65 y anchura => 1024. |
@@ -34,16 +35,16 @@ La siguiente tabla ilustra el uso de las distintas API de envío disponibles:
 
 >[!IMPORTANT]
 >
->Puede probar cualquier modificador, que generalmente no está disponible a través de API experimentales. Por ejemplo, `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
->&#x200B;>Haga clic aquí para obtener más información sobre cómo usar las [API experimentales](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) y la [lista completa de modificadores](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Puede probar cualquier modificador, lo cual no suele estar disponible a través de API experimentales. Por ejemplo, `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
+>Haga clic aquí para obtener más información sobre cómo usar las [API experimentales](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) y la [lista completa de modificadores](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 Dynamic Media con funciones de OpenAPI también admite vídeos de formularios largos. Los vídeos de formato largo pueden admitir hasta 50 GB y 2 horas.
 
-Para obtener información sobre las ofertas disponibles de Dynamic Media y sus capacidades, consulte [Dynamic Media Prime y Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
+Para obtener información sobre las ofertas de Dynamic Media disponibles, consulte [Dynamic Media Prime y Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
 
 >[!NOTE]
 >
->Los clientes de DM Prime pueden utilizar modificadores de imagen básicos como rotar, recortar, voltear, alto, ancho y calidad. Imágenes inteligentes no es compatible con AVIF para clientes de DM Prime.
+>Los clientes de DM Prime pueden utilizar modificadores de imagen básicos como rotar, recortar, voltear, alto, anchura y calidad. Las imágenes inteligentes no son compatibles con AVIF para clientes de DM Prime.
 
 ## Extremos de API de envío {#delivery-apis-endpoint}
 
@@ -73,7 +74,7 @@ headers: {
     }
 ```
 
-Para invocar las API de entrega, se requiere un token de IMS en los detalles de `Authorization` para entregar un recurso restringido. El token de IMS se obtiene de una cuenta técnica. Consulte [Recuperar las credenciales de AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para crear una nueva cuenta técnica. Consulte [Generación del token de acceso](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para generar el token de IMS y utilizarlo correctamente en el encabezado de solicitud de las API de entrega.
+Para invocar las API de entrega, se requiere un token de IMS en los detalles de `Authorization` para entregar un recurso restringido. El token de IMS se obtiene de una cuenta técnica. Consulte [Recuperar las credenciales de AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para crear una nueva cuenta técnica. Consulte [Generación del token de acceso](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para generar el token de IMS y utilizarlo correctamente en el encabezado de solicitud de las API de entrega.
 
 
 Para ver ejemplos de solicitudes, ejemplos de respuestas y códigos de respuesta, consulte [API de entrega](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).

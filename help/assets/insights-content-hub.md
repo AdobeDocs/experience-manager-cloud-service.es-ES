@@ -2,11 +2,12 @@
 title: Ver las perspectivas de recursos en Content Hub
 description: Obtenga información sobre cómo ver las perspectivas de recursos en  [!DNL Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 10%
+source-wordcount: '471'
+ht-degree: 11%
 
 ---
 

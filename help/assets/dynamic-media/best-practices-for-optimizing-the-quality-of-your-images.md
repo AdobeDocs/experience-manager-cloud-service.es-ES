@@ -4,10 +4,11 @@ description: Conozca las prácticas recomendadas que le ayudan a optimizar la ca
 contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1654'
 ht-degree: 1%
 
 ---
@@ -27,7 +28,7 @@ Adobe Experience Manager incluye más de 100 comandos de entrega de imágenes de
 **Imágenes inteligentes:**
 
 * Al habilitar Imágenes inteligentes en Dynamic Media, se optimiza automáticamente el formato, el tamaño y la calidad de la imagen en función de las funciones del explorador del cliente.
-¿Desea obtener más información? Vaya a [Imágenes inteligentes](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
+¿Desea obtener más información? Vaya a [Imágenes inteligentes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Mejora el rendimiento de la entrega de imágenes ajustando dinámicamente estos parámetros.
 * Puede evaluar imágenes inteligentes con la herramienta de autoevaluación [Snapshot](https://snapshot.scene7.com/).
 
@@ -87,7 +88,7 @@ El enfoque de imágenes es el aspecto más complejo del control de imágenes en 
 
 * El documento técnico sobre prácticas recomendadas [Prácticas recomendadas para la calidad y el enfoque de imágenes de Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica a Experience Manager.
 
-* Vea [Usar enfoque de imagen con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+* Vea [Usar enfoque de imagen con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
 Con Experience Manager, puede enfocar las imágenes durante la ingesta, la entrega o ambas cosas. Sin embargo, normalmente es mejor enfocar las imágenes con un solo método o con el otro, pero no con ambos. Enfoque de las imágenes en el momento de la entrega, en una dirección URL, normalmente le ofrece los mejores resultados.
 
@@ -111,7 +112,7 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
 
       * El documento técnico sobre prácticas recomendadas [Prácticas recomendadas para la calidad y el enfoque de imágenes de Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica a Experience Manager.
 
-      * Vea [Usar enfoque de imagen con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+      * Vea [Usar enfoque de imagen con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
       * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si se aplica máscara de enfoque a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
 
@@ -164,4 +165,4 @@ A medida que experimenta, las siguientes sugerencias generales son útiles para 
 
 * Pruebe diferentes parámetros en tiempo real directamente en una dirección URL.
 * Como práctica recomendada, recuerde que puede agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen son básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre del ajuste preestablecido personalizado en una ruta URL llama a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar comandos y configuraciones de calidad para diferentes patrones de uso de imágenes en el sitio web y acorta la longitud general de las direcciones URL.
-* Experience Manager también proporciona formas más avanzadas de ajustar la calidad de la imagen, como aplicar imágenes de enfoque al ingerir. Para ajustar y optimizar los resultados de procesamiento, [los servicios de consultoría de Adobe](https://business.adobe.com/es/customers/consulting-services/main.html) pueden ayudarle con información y prácticas recomendadas personalizadas.
+* Experience Manager también proporciona formas más avanzadas de ajustar la calidad de la imagen, como aplicar imágenes de enfoque al ingerir. Para ajustar y optimizar los resultados de procesamiento, [los servicios de consultoría de Adobe](https://business.adobe.com/customers/consulting-services/main.html) pueden ayudarle con las prácticas recomendadas y insight personalizadas.

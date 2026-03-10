@@ -4,11 +4,12 @@ description: Aprenda a aplicar ajustes preestablecidos de visualizador en Dynami
 contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 15%
+source-wordcount: '225'
+ht-degree: 17%
 
 ---
 

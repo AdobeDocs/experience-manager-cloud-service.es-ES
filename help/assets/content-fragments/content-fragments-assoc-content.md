@@ -1,20 +1,21 @@
 ---
 title: 'Contenido asociado (Assets: fragmentos de contenido)'
-description: AEM Comprenda cómo la función de contenido asociada para los fragmentos de contenido de proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento.
+description: Comprenda cómo la función de contenido asociada para los fragmentos de contenido de AEM proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '298'
+ht-degree: 43%
 
 ---
 
 # Contenido asociado{#associated-content}
 
-En el caso de los fragmentos de contenido de Adobe Experience Manager AEM () as a Cloud Service, la función de contenido asociada (disponible en el editor original) proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento. Esto proporciona flexibilidad al [proporcionar una serie de recursos a los que tener acceso al usar el fragmento de contenido](/help/assets/content-fragments/content-fragments.md#using-associated-content), a la vez que reduce el tiempo necesario para buscar el recurso adecuado. Esta función se puede utilizar tanto para la entrega de contenido sin encabezado como para la creación de páginas.
+Para los fragmentos de contenido de Adobe Experience Manager (AEM) as a Cloud Service, la función de contenido asociada (disponible en el editor original) proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento. Esto proporciona flexibilidad al [proporcionar una serie de recursos a los que tener acceso al usar el fragmento de contenido](/help/assets/content-fragments/content-fragments.md#using-associated-content), a la vez que reduce el tiempo necesario para buscar el recurso adecuado. Esta función se puede utilizar tanto para la entrega de contenido sin encabezado como para la creación de páginas.
 
 >[!NOTE]
 >

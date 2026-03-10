@@ -4,11 +4,12 @@ description: Procese sus recursos digitales mediante microservicios de procesami
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 100%
+source-wordcount: '843'
+ht-degree: 99%
 
 ---
 

@@ -3,13 +3,14 @@ title: Metadatos en cascada
 description: Este artículo describe cómo definir metadatos en cascada para los recursos en la vista de recursos.
 feature: Metadata
 role: Admin, User
-source-git-commit: 2bb309afc372fe18ce274a2813ed25cba22eb4de
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
+exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 5%
+source-wordcount: '1220'
+ht-degree: 6%
 
 ---
-
 
 # Vista de Assets de metadatos en cascada{#cascading-metadata-assets-view}
 
@@ -156,5 +157,4 @@ Para modificar un formulario de metadatos existente, siga los pasos a continuaci
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support)
-
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)

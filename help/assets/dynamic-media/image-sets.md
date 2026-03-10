@@ -4,10 +4,11 @@ description: Aprenda a trabajar con conjuntos de imágenes en Dynamic Media.
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2145'
+source-wordcount: '2151'
 ht-degree: 4%
 
 ---
@@ -34,7 +35,7 @@ Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas re
 
 | Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
-| Número de recursos duplicados por conjunto | No hay duplicados | 20 |
+| Número de recursos duplicados por conjunto | Sin duplicados | 20 |
 | Número máximo de imágenes por conjunto | 5-10 imágenes por conjunto | 1000 |
 
 Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
@@ -140,7 +141,7 @@ Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas re
 
 | Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
-| Número de recursos duplicados por conjunto | No hay duplicados | 20 |
+| Número de recursos duplicados por conjunto | Sin duplicados | 20 |
 | Número máximo de imágenes por conjunto | 5-10 imágenes por conjunto | 1000 |
 
 Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).

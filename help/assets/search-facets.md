@@ -3,10 +3,11 @@ title: Buscar facetas.
 description: En este artículo se describe cómo crear, modificar y utilizar facetas de búsqueda en Experience Manager.
 feature: Metadata
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2509'
 ht-degree: 19%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 19%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Una implementación de Adobe Experience Manager Assets en toda la empresa tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso adecuado puede resultar arduo y requerir tiempo si solo utiliza las capacidades de búsqueda genéricas de Experience Manager.
@@ -77,7 +78,7 @@ La propiedad `jcr:title` es un nombre descriptivo para la opción que se muestra
 
 Al seleccionar una opción, la búsqueda se realiza en función de la propiedad `value` del nodo de opción y sus nodos secundarios, si los hay. El árbol completo bajo el nodo de opción se atraviesa y la propiedad `value` de cada nodo secundario se combina mediante una operación OR para formar la consulta de búsqueda.
 
-Por ejemplo, si selecciona “Imágenes” para los tipos de archivo, la consulta de búsqueda de los recursos se genera combinando la propiedad `value` mediante una operación O. Por ejemplo, la búsqueda de imágenes se genera combinando los resultados coincidentes para *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg*, e *image/tiff* `jcr:content/metadata/dc:format` para la propiedad mediante una operación OR.
+Por ejemplo, si selecciona “Imágenes” para los tipos de archivo, la consulta de búsqueda de los recursos se genera combinando la propiedad `value` mediante una operación O. Por ejemplo, la consulta de imágenes se genera combinando los resultados coincidentes para *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg*, e *image/tiff*`jcr:content/metadata/dc:format` para la propiedad mediante una operación OR.
 
 La propiedad Value de un tipo de archivo, tal como se ve en CRXDE, se utiliza para que funcionen las consultas de búsqueda
 
@@ -228,7 +229,7 @@ De forma similar a la forma de agregar un predicado Propiedad o Opciones, puede 
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Intervalo de fechas</p> </td>
+   <td><p>Intervalo de fecha</p> </td>
    <td><p>Predicado de búsqueda para buscar recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de inicio y finalización mediante selectores de fechas.</p> </td>
    <td>
     <ul>

@@ -4,10 +4,12 @@ description: Obtenga información sobre cómo relacionar recursos digitales que 
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 77dab2731f8d442bf999bf1614ef060944794574
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
+exl-id: 89149283-bbf2-40d3-9a4c-5b27ff5f944e
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 9%
+source-wordcount: '538'
+ht-degree: 10%
 
 ---
 
@@ -40,7 +42,7 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
 
 1. Haga clic en **[!UICONTROL Seleccionar]**. Según la relación que haya elegido en el paso 3, el recurso relacionado se enumerará en una categoría adecuada de la sección **[!UICONTROL Relaciones de recurso]**. Por ejemplo, si el recurso que ha relacionado es el archivo de origen del recurso actual, aparece en **[!UICONTROL Source]**.
 
-   ![Ejemplo de relación de Assets](assets/asset-relations-example.png)
+   ![Ejemplo de relación de Recursos](assets/asset-relations-example.png)
 
 1. Haga clic en **[!UICONTROL Desrelacionar]** ![desrelacionar recursos](assets/do-not-localize/link-unrelate-icon.png) disponibles para todos los recursos relacionados en cada sección ([!UICONTROL Source], [!UICONTROL Derivado] y [!UICONTROL Otro]) para anular la relación de un recurso.
 
@@ -50,13 +52,13 @@ La creación de relaciones de origen/derivadas entre recursos mediante la funci�
 
 Ver [Traducir recursos en AEM](/help/assets/translate-assets.md).
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 * Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es/home?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >

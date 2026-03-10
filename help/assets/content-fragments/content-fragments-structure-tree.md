@@ -1,20 +1,21 @@
 ---
 title: Árbol de estructura de fragmentos de contenido (Assets - Fragmentos de contenido)
 description: Utilice la funcionalidad Árbol de estructura del Editor de fragmentos de contenido en AEM para comprender mejor el contenido sin encabezado.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '189'
+ht-degree: 42%
 
 ---
 
 # Árbol de estructura de fragmento de contenido {#content-fragment-structure-tree}
 
-AEM Utilice la función Árbol de estructura del Editor de fragmentos de contenido en la documentación de para comprender mejor el contenido, en particular para la entrega sin encabezado, en la.
+Utilice la función Árbol de estructura del Editor de fragmentos de contenido en AEM para comprender mejor el contenido, especialmente para la entrega sin encabezado.
 
 >[!NOTE]
 >

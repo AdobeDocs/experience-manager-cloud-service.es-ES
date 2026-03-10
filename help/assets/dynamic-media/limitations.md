@@ -7,11 +7,12 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 12%
+source-wordcount: '314'
+ht-degree: 14%
 
 ---
 
@@ -31,7 +32,7 @@ Al crear un conjunto de giros o un conjunto de imágenes, o al cargar PDF para l
 | Recurso: tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
 | **Imagen** - Cantidad de recortes inteligentes por imagen | 5 | 100 |
-| **Todos los conjuntos**: número de recursos duplicados por conjunto | No hay duplicados | 20 |
+| **Todos los conjuntos**: número de recursos duplicados por conjunto | Sin duplicados | 20 |
 | **Todos los conjuntos**: número máximo de recursos por conjunto | 5-10 imágenes por conjunto | 1000 |
 | **Conjunto de giros**: número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
 | **PDF**: número máximo de páginas de un PDF que se tendrán en cuenta para la extracción |  | 100 (para todos los PDF) |

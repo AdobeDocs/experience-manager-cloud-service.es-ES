@@ -2,11 +2,12 @@
 title: Administración de metadatos y prácticas recomendadas
 description: Conozca las prácticas recomendadas sobre metadatos para administrar sus recursos digitales de forma eficaz.
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -97,7 +98,7 @@ Determine de dónde proviene la información y examine los detalles de la estrat
 
 >[!NOTE]
 >
->Aprenda a [administrar metadatos de sus recursos digitales](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=es).
+>Aprenda a [administrar metadatos de sus recursos digitales](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Ser coherente con la estrategia de metadatos
 
@@ -138,7 +139,7 @@ Puede agregar varias palabras clave y organizarlas según su prioridad.
    1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 Busque el recurso con las palabras clave agregadas. El recurso aparece entre los resultados de búsqueda principales.
 
-  Aprenda a [aumentar la búsqueda en Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=es).
+  Aprenda a [aumentar la búsqueda en Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 * **Campos de metadatos personalizados:** Personalice los campos de metadatos para capturar información adicional sobre los recursos. Por ejemplo, agregue campos específicos para los detalles del proyecto, la información de copyright o cualquier otro dato relevante que mejore las capacidades de búsqueda. Aprenda [a editar o agregar metadatos personalizados](meta-edit.md) en Experience Manager Assets.
 
@@ -168,4 +169,4 @@ Examine supply chain de contenido para encontrar fuentes de metadatos e incluir 
 
 Comunicar los objetivos, el progreso, los hitos y los desafíos desde el principio para recibir las aportaciones y la cooperación de todas las partes interesadas. Fomente la colaboración en toda la organización para crear procesos eficientes y metadatos valiosos.
 
-Obtenga más información acerca de [metadatos y sus conceptos relacionados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=es) para administrar de manera eficaz sus metadatos de Experience Manager.
+Obtenga más información acerca de [metadatos y sus conceptos relacionados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) para administrar de manera eficaz sus metadatos de Experience Manager.

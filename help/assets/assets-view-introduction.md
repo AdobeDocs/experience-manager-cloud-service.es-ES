@@ -2,12 +2,13 @@
 title: ¿En qué le beneficia la vista de Assets en AEM?
 description: Obtenga más información sobre las ventajas clave de la vista de Assets en AEM. Adobe, con su experiencia en el empoderamiento de los profesionales creativos y de marketing, presenta una nueva experiencia de usuario que cambia el panorama.
 mini-toc-levels: 3
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '972'
 ht-degree: 69%
 
 ---
@@ -51,7 +52,7 @@ Puede acceder a la vista Recursos de las siguientes maneras:
 
 La vista Assets ofrece las siguientes ventajas clave que no están disponibles en la vista Administración:
 
-* [El panel Mi espacio de trabajo ofrece experiencias optimizadas](#my-workspace-for-streamlined-experience)
+* [El panel de control Mi espacio de trabajo ofrece experiencias optimizadas](#my-workspace-for-streamlined-experience)
 * [Enfoque de búsqueda prioritaria para mejorar la eficacia](#search-first)
 * [Perspectivas para tomar decisiones basadas en datos](#insights-data)
 * [Integración de Adobe Photoshop Express para acelerar la colaboración](#accelerate-collaboration)
@@ -59,9 +60,9 @@ La vista Assets ofrece las siguientes ventajas clave que no están disponibles e
 * [Suscripción al contenido del repositorio para una administración de recursos eficiente](#subscribe-content)
 * [Eliminación progresiva de recursos para proporcionar un mejor control a los administradores](#soft-delete-assets)
 
-### El panel Mi espacio de trabajo ofrece experiencias optimizadas {#my-workspace-for-streamlined-experience}
+### El panel de control Mi espacio de trabajo ofrece experiencias optimizadas {#my-workspace-for-streamlined-experience}
 
-Reciba una solución de administración de activos digitales que comprende las diversas necesidades de las funciones organizativas. La elegante vista de Assets prioriza la facilidad de uso y la velocidad, lo que se adapta a la preferencia de los especialistas en marketing por el atractivo visual y los espacios de trabajo sin desorden. Con un panel de Mi espacio de trabajo personalizable y específico del usuario, los especialistas en marketing pueden encontrar, previsualizar, editar, administrar y entregar recursos rápidamente con una eficacia notable. Despídase de las interminables horas invertidas en la búsqueda de activos específicos y dé la bienvenida a una experiencia optimizada que ponga todo lo que necesita al alcance de la mano.
+Reciba una solución de administración de activos digitales que comprende las diversas necesidades de las funciones organizativas. La elegante vista de Assets prioriza la facilidad de uso y la velocidad, lo que se adapta a la preferencia de los especialistas en marketing por el atractivo visual y los espacios de trabajo sin desorden. Con un panel de control de Mi espacio de trabajo personalizable y específico del usuario, los especialistas en marketing pueden encontrar, previsualizar, editar, administrar y entregar recursos rápidamente con una eficacia notable. Despídase de las interminables horas invertidas en la búsqueda de activos específicos y dé la bienvenida a una experiencia optimizada que ponga todo lo que necesita al alcance de la mano.
 
 ![Información general de Mi espacio de trabajo](assets/my-workspace-demo.gif)
 

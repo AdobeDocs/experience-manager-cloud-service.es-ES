@@ -4,10 +4,11 @@ description: Informes sobre sus recursos en  [!DNL Adobe Experience Manager Asse
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '978'
 ht-degree: 9%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 9%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Los informes de recursos le permiten evaluar la utilidad de su implementación de [!DNL Adobe Experience Manager Assets]. Con [!DNL Assets], puede generar varios informes para sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, cómo los usuarios interactúan con los recursos y cuáles son los recursos compartidos de <!-- downloaded and -->.
@@ -66,7 +67,7 @@ Los administradores de [!DNL Adobe Experience Manager] pueden generar y personal
 
    >[!NOTE]
    >
-   >Asigne un título a un **perfil de producto del administrador de AEM** para crear un informe de **Descargar**. Consulte [Asignación de perfiles de producto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para obtener un perfil de producto de administrador de AEM.
+   >Asigne un título a un **perfil de producto del administrador de AEM** para crear un informe de **Descargar**. Consulte [Asignación de perfiles de producto de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para obtener un perfil de producto de administrador de AEM.
 
    ![Seleccionar tipo de informe](assets/choose_report.png)
 

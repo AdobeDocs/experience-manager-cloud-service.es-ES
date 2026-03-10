@@ -2,11 +2,12 @@
 title: Dynamic Media con funciones de OpenAPI
 description: Conozca conceptos clave como por qué utilizar Dynamic Media con funciones de OpenAPI y cómo habilitarlo.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
-workflow-type: ht
-source-wordcount: '1106'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 99%
 
 ---
 

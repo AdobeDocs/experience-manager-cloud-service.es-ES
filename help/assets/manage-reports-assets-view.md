@@ -1,21 +1,22 @@
 ---
 title: Administración de informes en la vista Recursos
 description: Acceda a los datos de la sección de informes de la vista Recursos para evaluar el uso de productos y funciones, y obtener información sobre las métricas de éxito clave.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 86%
+source-wordcount: '1510'
+ht-degree: 87%
 
 ---
 
 # Administrar informes {#manage-reports}
 
-Los informes de recursos proporcionan a los administradores visibilidad de la actividad del entorno de vista de Adobe Experience Manager Assets. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto. Cualquier persona usuaria puede acceder al panel de Insights. Además, las personas asignadas al perfil de producto del rol de administrador pueden crear informes definidos por el usuario.
+La creación de informes de recursos proporciona a los administradores visibilidad de la actividad del entorno de la vista Recursos de Adobe Experience Manager. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto. Cualquier persona usuaria puede acceder al panel de control de Insights. Además, las personas asignadas al perfil de producto del rol de administrador pueden crear informes definidos por el usuario.
 
 ## Acceso a los informes {#access-reports}
 
@@ -52,7 +53,6 @@ El entorno de vista de los AEM Assets ofrece funcionalidades completas de creaci
    1. **Descripción:** añada una descripción opcional al informe.
    1. **Seleccionar ruta de la carpeta:** seleccione una ruta de la carpeta para generar el informe de los recursos cargados y descargados dentro de esa carpeta específica. Por ejemplo, si necesita que el informe de recursos se cargue en una carpeta, especifique la ruta a esa carpeta.
    1. **Seleccionar intervalo de fechas:** seleccione el intervalo de fechas para ver la actividad de carga o descarga dentro de la carpeta.
-
    <br>
 
    >[!NOTE]
@@ -143,7 +143,7 @@ Obtenga información de envío para los recursos que se envían con Dynamic Medi
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Requisitos previos {#prereqs-dynamic-media-delivery-reports}
@@ -205,7 +205,6 @@ Para programar un informe, siga los pasos que se indican a continuación:
    1. **Descripción**: añada una descripción opcional al informe.
    1. **Seleccionar ruta de carpeta:** seleccione una ruta de la carpeta para generar un informe para los recursos que se cargarán o descargarán de esa carpeta específica en el futuro.
    1. Marque **Programar informe:** marque para programar el informe para un momento posterior o para que se repita.
-
       ![programar informe](/help/assets/assets/schedule-reports1.svg)
 
    1. **Elegir frecuencia:** especifique el intervalo de generación del informe (por ejemplo, diario, semanal, mensual, anual o una vez) y establezca la fecha y la hora para ejecutar el informe junto con la fecha de finalización para la periodicidad. Para un informe único, seleccione el intervalo de fechas para el informe sobre el tipo de actividad seleccionado en el entorno de AEM. Por ejemplo, si necesita un informe sobre los recursos descargados del 10 al 29 (fechas futuras) de un mes específico, seleccione estas fechas en el campo **Seleccionar intervalo de fechas**.
@@ -238,7 +237,7 @@ Para reanudar la programación cancelada, seleccione la fila del informe y haga 
 
 ## Vista Insights {#view-live-statistics}
 
-La vista Recursos le permite ver datos en tiempo real de su entorno de la vista Recursos con el tablero de Insights. Puede ver las métricas de eventos en tiempo real durante los últimos 30 días o 12 meses.
+La vista Recursos le permite ver datos en tiempo real de su entorno de la vista Recursos con el panel de control de Insights. Puede ver las métricas de eventos en tiempo real durante los últimos 30 días o 12 meses.
 
 <!--![Toolbar options when you select an asset](assets/assets-view-live-statistics.png)-->
 

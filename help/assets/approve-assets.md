@@ -2,10 +2,11 @@
 title: Aprobar recursos en Experience Manager
 description: Obtenga información sobre cómo aprobar recursos en  [!DNL Experience Manager].
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1066'
 ht-degree: 7%
 
 ---
@@ -33,7 +34,7 @@ Si necesita ver la propiedad a la que está asignado el campo **[!UICONTROL Esta
 1. Arrastre y suelte un campo **[!UICONTROL Dropdown]** desde la sección **[!UICONTROL Generar formulario]** a la derecha de la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie **[!UICONTROL Etiqueta de campo]** a _Destino de aprobación_.
-   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam:activationTarget_.
+   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam :activationTarget_.
    1. Agregue las opciones con `contenthub` y `delivery` como valores de opción.
 
    >[!NOTE]
@@ -69,17 +70,17 @@ Optimice su flujo de trabajo aprobando rápidamente varios recursos a la vez. Pu
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]**.
 1. Haga clic en **[!UICONTROL Crear]** en la parte superior derecha de la página.
 1. Agregue un título de perfil y haga clic en **[!UICONTROL Crear]**. El perfil de metadatos se ha creado correctamente.
-1. Seleccione el perfil de metadatos recién creado y haga clic en **[!UICONTROL Editar _(e)_]**. <br>El formulario **[!UICONTROL Editar perfil de metadatos]**&#x200B;se abre con la ficha **[!UICONTROL Básico]**&#x200B;resaltada.
+1. Seleccione el perfil de metadatos recién creado y haga clic en **[!UICONTROL Editar _(e)_]**. <br>El formulario **[!UICONTROL Editar perfil de metadatos]**se abre con la ficha **[!UICONTROL Básico]**resaltada.
 1. Arrastre y suelte un **[!UICONTROL campo de texto de una sola línea]** desde la sección **[!UICONTROL Generar formulario]** a la derecha de la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie **[!UICONTROL Etiqueta de campo]** por _Assets aprobado_.
-   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam:status_.
+   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam :status_.
    1. Cambie el valor predeterminado a _aprobado_.
 
 1. Arrastre y suelte un campo **[!UICONTROL Dropdown]** desde la sección **[!UICONTROL Generar formulario]** a la derecha de la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie **[!UICONTROL Etiqueta de campo]** a _Destino de aprobación_.
-   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam:activationTarget_.
+   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam :activationTarget_.
    1. Agregue las opciones con `contenthub` y `delivery` como valores de opción.
 
    >[!NOTE]

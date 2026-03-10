@@ -2,11 +2,12 @@
 title: Edición de vídeos
 description: Edite vídeos con  [!DNL Adobe Express] opciones que se sirven de y guarde vídeos actualizados como versiones.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '785'
 ht-degree: 17%
 
 ---
@@ -92,13 +93,13 @@ El vídeo está disponible en formato GIF para su descarga. Puede guardar el rec
 
 * La funcionalidad no se puede abrir en un modo incógnito de un explorador web.
 
-### Siguientes pasos {#next-steps}
+### Próximos pasos {#next-steps}
 
 * Proporcione comentarios sobre el producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Assets.
 
 * Facilite comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar un problema] ![crear un problema de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha.
 
-* Contacte con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General#support).
+* Contacte con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es/home?support-solution=General#support).
 
 >[!MORELIKETHIS]
 >

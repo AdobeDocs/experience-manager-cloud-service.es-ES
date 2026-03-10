@@ -3,11 +3,12 @@ title: ¿Cómo se administran los metadatos en la vista Assets?
 description: Obtenga información sobre cómo administrar metadatos en la vista de Assets. Una mejor administración de los metadatos hace que un recurso sea más accesible, fácil de administrar y completo.
 role: User, Leader, Admin, Developer
 contentOwner: AG
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 8819dc84887f79e047b4beffd18e03dee3ee45a3
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2274'
 ht-degree: 77%
 
 ---
@@ -242,7 +243,7 @@ Siga estos pasos para editar un formulario de metadatos:
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

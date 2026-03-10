@@ -4,10 +4,11 @@ description: Obtenga información sobre cómo incrustar recursos de vídeo o ima
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '384'
 ht-degree: 21%
 
 ---
@@ -36,7 +37,7 @@ Ver [Enviar imágenes optimizadas para un sitio adaptable](responsive-site.md).
 
 1. Vaya al vídeo o recurso de imagen *publicado* cuyo código incrustado desee copiar.
 
-   Recuerde que el código incrustado solo está disponible para copiar *después* de *publicar* los recursos por primera vez. Además, también se debe publicar el ajuste preestablecido de visualizador o de imagen.
+   Recuerde que el código incrustado solo está disponible para copiar *después* de *publicar* los recursos por primera vez. Además, también se debe publicar el ajuste preestablecido de imagen o de visualizador.
 
    Ver [Publicar Assets](publishing-dynamicmedia-assets.md).
 

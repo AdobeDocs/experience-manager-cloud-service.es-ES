@@ -1,14 +1,15 @@
 ---
 title: 'Vista previa: representación JSON (Assets: fragmentos de contenido)'
 description: Obtenga información sobre cómo previsualizar fácilmente una representación de JSON de sus Fragmentos de contenido al implementar su solución de AEM sin encabezado.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 68%
+source-wordcount: '185'
+ht-degree: 67%
 
 ---
 

@@ -3,10 +3,11 @@ title: Administre sus documentos de PDF en  [!DNL Adobe Experience Manager].
 description: Administrar documentos de PDF en  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '841'
 ht-degree: 4%
 
 ---
@@ -47,7 +48,7 @@ El visualizador nativo de PDF Doc Cloud tiene los siguientes componentes en los 
 
 Adobe Experience Manager Assets permite previsualizar un documento de PDF que consta de varias páginas. Para obtener una vista previa de varias páginas de un documento de PDF, siga estos pasos:
 
-1. Siga los pasos para [cargar recursos en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=es).
+1. Siga los pasos para [cargar recursos en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Examine el documento de PDF que desea cargar y previsualizar.
 1. Abra el documento.
 1. El visualizador de documentos de PDF se carga de forma predeterminada. También puede seleccionar Representación de PDF en el panel Representación.
@@ -126,7 +127,7 @@ Además de los documentos de PDF, también puede obtener una vista previa de var
 
 Para la vista previa de varias páginas de otros formatos de documento admitidos, realice los siguientes pasos:
 
-1. Siga los pasos para [cargar recursos en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=es).
+1. Siga los pasos para [cargar recursos en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Examine el documento que desea cargar y previsualizar.
 1. Abra el documento.
 1. Seleccione PDF en la sección estática del panel izquierdo. El panel derecho muestra la vista previa de varias páginas de un recurso. Seleccione la miniatura del panel izquierdo para elegir la página que desea previsualizar.

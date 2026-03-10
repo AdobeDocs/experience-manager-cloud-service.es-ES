@@ -2,10 +2,11 @@
 title: Propiedades del Selector de recursos para la personalización
 description: Utilice el selector de recursos para buscar y recuperar metadatos y representaciones de recursos dentro de la aplicación.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1426'
 ht-degree: 37%
 
 ---
