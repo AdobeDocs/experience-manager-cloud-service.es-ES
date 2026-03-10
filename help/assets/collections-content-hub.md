@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo administrar colecciones en Content
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1953'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Una colección hace referencia a un conjunto de recursos que se pueden compartir
 
 Ayuda a los usuarios a acceder y administrar fácilmente los diversos recursos disponibles en [!DNL Content Hub].
 
->[!VIDEO](https://video.tv.adobe.com/v/3445303/?captions=spa&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Requisitos previos {#prerequisites}
 
@@ -210,17 +210,17 @@ Una colección en AEM Assets Content Hub hace referencia a un conjunto de recurs
 
 Para crear una nueva colección en AEM Assets Content Hub, ve a la pestaña Colecciones y haz clic en **Crear colección**. En la nueva ventana Colección, agrega un Título y una Descripción, selecciona el tipo de control de acceso en la lista desplegable **Quién puede acceder** y haz clic en **Crear**. A continuación, puede agregar recursos a la colección.
 
-### ¿Qué tipos de control de acceso están disponibles al crear una colección?
+### ¿Qué tipos de control de acceso están disponibles al crear una colección en AEM Assets Content Hub?
 
-Existen tres tipos de control de acceso: **Privado** - Solo el creador y los administradores pueden editar y acceder, **Público** - Solo ver - Todos pueden ver, pero solamente el creador y los administradores pueden editar, y **Público** - Ver y editar - Todos pueden acceder y editar la colección sin restricciones.
+Hay tres tipos de control de acceso en AEM Assets Content Hub: **Privado** - Solo el creador y los administradores pueden editar y acceder, **Público** - Solo ver - Todos pueden ver, pero solo el creador y los administradores pueden editar, y **Público** - Ver y editar - Todos pueden acceder y editar la colección sin restricciones.
 
-### ¿Quién puede realizar acciones en colecciones en Content Hub?
+### ¿Quién puede realizar acciones en colecciones en AEM Assets Content Hub?
 
-Los usuarios de Content Hub pueden realizar acciones como crear, ver, compartir, descargar, eliminar, fijar colecciones y marcarlas como favoritas. Los administradores tienen privilegios adicionales, como ver todas las opciones de acceso y eliminar colecciones.
+AEM Assets Los usuarios de Content Hub pueden realizar acciones como crear, ver, compartir, descargar, eliminar, fijar colecciones y marcarlas como favoritas. Los administradores tienen privilegios adicionales, como ver todas las opciones de acceso y eliminar colecciones.
 
 ### ¿Cómo se agregan recursos a una colección existente en AEM Assets Content Hub?
 
-Seleccione los recursos que desee agregar, haga clic en **Agregar a la colección** y elija la colección en la lista. También puede buscar colecciones utilizando la barra de búsqueda. Haga clic en **Agregar a la colección** para confirmar la acción.
+Para agregar recursos a una colección existente en AEM Assets Content Hub, seleccione los recursos que desee agregar, haga clic en **Agregar a la colección** y elija la colección en la lista. También puede buscar colecciones utilizando la barra de búsqueda. Haga clic en **Agregar a la colección** para confirmar la acción.
 
 ### ¿Pueden filtrarse y buscarse colecciones en AEM Assets Content Hub?
 
@@ -232,11 +232,11 @@ Para descargar recursos de una colección en AEM Assets Content Hub, vaya a la f
 
 ### ¿Cómo se pueden compartir recursos de una colección en AEM Assets Content Hub?
 
-Assets se puede compartir habilitando el uso compartido de vínculos públicos en Content Hub. Seleccione el icono de compartir en la tarjeta de recursos para copiar el vínculo compartido, que luego se puede enviar a los destinatarios. Tenga en cuenta que las colecciones privadas no se pueden compartir.
+Assets se puede compartir habilitando el uso compartido de vínculos públicos en AEM Assets Content Hub. Seleccione el icono de compartir en la tarjeta de recursos para copiar el vínculo compartido, que luego se puede enviar a los destinatarios. Tenga en cuenta que las colecciones privadas no se pueden compartir.
 
 ### ¿Quién puede eliminar recursos de una colección en AEM Assets Content Hub?
 
-Un propietario de la colección, un administrador o un usuario no administrador con derechos de edición pueden quitar uno o varios recursos de una colección. Para quitar, seleccione los recursos y haga clic en **Quitar de la colección** y confirme la eliminación.
+Un propietario de la colección, un administrador o un usuario no administrador con derechos de edición pueden quitar uno o varios recursos de una colección en AEM Assets Content Hub. Para quitar, seleccione los recursos y haga clic en **Quitar de la colección** y confirme la eliminación.
 
 ### ¿Quién puede eliminar una colección de AEM Assets Content Hub y cómo se hace?
 

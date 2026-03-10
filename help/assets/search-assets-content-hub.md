@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo buscar recursos en  [!DNL Content 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -173,11 +173,11 @@ Más información sobre [configurar recursos en [!DNL Content Hub]](configure-co
 
 ### ¿Cómo puedo reducir los resultados de búsqueda en AEM Assets Content Hub?
 
-Puede reducir los resultados de búsqueda en Content Hub mediante la búsqueda basada en texto, la aplicación de varios filtros (como formato de archivo, estado de aprobación, fecha de modificación, etc.), la búsqueda por etiquetas o etiquetas inteligentes y el uso del panel Filtros. La combinación de varios predicados u opciones de filtro le ayuda a segmentar con precisión los recursos que necesita.
+Puede reducir los resultados de búsqueda en AEM Assets Content Hub mediante la búsqueda basada en texto, la aplicación de varios filtros (como formato de archivo, estado de aprobación, fecha de modificación, etc.), la búsqueda por etiquetas o etiquetas inteligentes y el uso del panel . La combinación de varios predicados u opciones de filtro le ayuda a segmentar con precisión los recursos que necesita.
 
 ### ¿Puedo realizar una búsqueda masiva en AEM Assets Content Hub de varios recursos a la vez?
 
-Sí, puede realizar una búsqueda masiva en Content Hub introduciendo varios valores (como nombres, formatos de archivo y etiquetas) separados por delimitadores especificados. La función Búsqueda masiva le permite encontrar rápidamente varios recursos en una sola consulta, lo que lo hace más eficiente que buscar recursos uno por uno.
+Sí, puede realizar una búsqueda masiva en AEM Assets Content Hub introduciendo varios valores (como nombres, formatos de archivo y etiquetas) separados por delimitadores especificados. La función Búsqueda masiva le permite encontrar rápidamente varios recursos en una sola consulta, lo que lo hace más eficiente que buscar recursos uno por uno.
 
 
 ### ¿Pueden los administradores personalizar los filtros disponibles en la búsqueda de AEM Assets Content Hub?

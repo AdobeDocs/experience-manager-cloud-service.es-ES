@@ -4,9 +4,9 @@ description: Compartir Assets en  [!DNL the Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '931'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Cree un vínculo a los recursos seleccionados para compartirlos con otros fácilmente. Como usuario autorizado de [!DNL Content Hub], seleccione uno o más recursos disponibles en su entorno de [!DNL Content Hub], genere un vínculo y envíelo a otros usuarios privados o públicos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474922/?captions=spa&learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## Requisitos previos {#prerequisites}
 
@@ -74,7 +74,7 @@ Compartir recursos en AEM Assets Content Hub permite a los usuarios autorizados 
 
 ### ¿Cómo comparto recursos o colecciones con otros usuarios mediante AEM Assets Content Hub?
 
-Para compartir recursos o colecciones en Content Hub, vaya a la página principal de Content Hub, seleccione uno o varios recursos (o vaya a la pestaña Colecciones para ver las colecciones) y haga clic en el icono Compartir. En el cuadro de diálogo Compartir, puede obtener una vista previa de los recursos, quitar los que sean necesarios, agregar un título y una descripción, seleccionar quién puede acceder al vínculo (privado o público), establecer un período de caducidad y, a continuación, hacer clic en Obtener vínculo para generar y copiar la dirección URL que se puede compartir. A continuación, el vínculo se puede enviar a los integrantes del equipo o a las partes interesadas.
+Para compartir recursos o colecciones en AEM Assets Content Hub, vaya a la página principal de Content Hub, seleccione uno o varios recursos (o vaya a la pestaña Colecciones para las colecciones) y haga clic en el icono Compartir. En el cuadro de diálogo Compartir, puede obtener una vista previa de los recursos, quitar los que sean necesarios, agregar un título y una descripción, seleccionar quién puede acceder al vínculo (privado o público), establecer un período de caducidad y, a continuación, hacer clic en Obtener vínculo para generar y copiar la dirección URL que se puede compartir. A continuación, el vínculo se puede enviar a los integrantes del equipo o a las partes interesadas.
 
 ### ¿Qué opciones de acceso están disponibles al compartir recursos en AEM Assets Content Hub y en qué se diferencian?
 
@@ -86,11 +86,11 @@ Sí, los administradores pueden habilitar o deshabilitar la opción **Habilitar 
 
 ### ¿Puedo establecer fechas de caducidad para los vínculos de recursos compartidos en AEM Assets Content Hub y por qué es esto importante?
 
-Sí, puede establecer fechas de caducidad para los vínculos compartidos públicos y privados en Content Hub. En el caso de los vínculos públicos, puede elegir entre ajustes preestablecidos de 24 horas hasta una semana, mientras que los vínculos privados le permiten seleccionar entre ajustes preestablecidos o establecer una fecha de caducidad personalizada. Las fechas de caducidad son importantes porque, una vez que caduca el vínculo, ya no se puede utilizar para acceder a los recursos o descargarlos, lo que ayuda a mantener la seguridad y el control del contenido.
+Sí, puede establecer fechas de caducidad para los vínculos compartidos públicos y privados en AEM Assets Content Hub. En el caso de los vínculos públicos, puede elegir entre ajustes preestablecidos de 24 horas hasta una semana, mientras que los vínculos privados le permiten seleccionar entre ajustes preestablecidos o establecer una fecha de caducidad personalizada. Las fechas de caducidad son importantes porque, una vez que caduca el vínculo, ya no se puede utilizar para acceder a los recursos o descargarlos, lo que ayuda a mantener la seguridad y el control del contenido.
 
 ### ¿Qué pueden hacer los destinatarios con el vínculo de recursos compartidos creado con AEM Assets Content Hub y hay opciones para descargar diferentes representaciones?
 
-Los destinatarios que reciban un vínculo a un recurso compartido pueden abrirlo en su explorador para obtener una vista previa, seleccionar y descargar los recursos proporcionados. Si las representaciones de recursos están habilitadas en Content Hub, los destinatarios pueden elegir qué representaciones (como Original o Estático) desean descargar. Los recursos y las representaciones se descargan como un archivo zip, y los metadatos se pueden ver haciendo clic en la miniatura del recurso. El vínculo sigue funcionando hasta la fecha de caducidad establecida.
+Los destinatarios que reciban un vínculo a un recurso compartido pueden abrirlo en su explorador para obtener una vista previa, seleccionar y descargar los recursos proporcionados. Si las representaciones de recursos están habilitadas en AEM Assets Content Hub, los destinatarios pueden elegir qué representaciones (como Original o Estático) desean descargar. Los recursos y las representaciones se descargan como un archivo zip, y los metadatos se pueden ver haciendo clic en la miniatura del recurso. El vínculo sigue funcionando hasta la fecha de caducidad establecida.
 
 
 

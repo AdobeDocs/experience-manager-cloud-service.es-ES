@@ -3,10 +3,10 @@ title: Edición de imágenes en Content Hub mediante Adobe Express
 description: Edición de imágenes en Content Hub mediante Adobe Express
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 6%
+source-wordcount: '744'
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ Para editar imágenes con Content Hub:
 
 1. Haga clic en **[!DNL Open in Adobe Express]**, disponible en la tarjeta de recursos de la imagen que debe editar. También puede hacer clic en la imagen para abrir sus detalles y, a continuación, hacer clic en el logotipo de [!DNL Adobe Express]. A continuación, el editor incrustado de Adobe Express se carga sin salir de Content Hub.
 
-   Puede aprovechar la funcionalidad [!DNL Adobe Express] para realizar todas las acciones relacionadas con la edición de imágenes, como [cambiar el tamaño de la imagen](https://helpx.adobe.com/es/express/using/resize-image.html), [quitar o cambiar el color de fondo](https://helpx.adobe.com/es/express/using/remove-background.html), [recortar imagen](https://helpx.adobe.com/es/express/using/crop-image.html), combinar la imagen con la imagen o el texto generados por IA y mucho más.
+   Puede aprovechar la funcionalidad [!DNL Adobe Express] para realizar todas las acciones relacionadas con la edición de imágenes, como [cambiar el tamaño de la imagen](https://helpx.adobe.com/express/using/resize-image.html), [quitar o cambiar el color de fondo](https://helpx.adobe.com/express/using/remove-background.html), [recortar imagen](https://helpx.adobe.com/express/using/crop-image.html), combinar la imagen con la imagen o el texto generados por IA y mucho más.
 
 1. Realice las modificaciones y haga clic en **[!UICONTROL Guardar]** para guardar el recurso editado en cualquiera de los tipos de formato:
 
@@ -56,27 +56,27 @@ Los administradores también pueden configurar los campos obligatorios y opciona
 
 ### ¿Quién puede editar imágenes en AEM Assets Content Hub?
 
-Los usuarios con derechos para acceder a Adobe Express y a AEM Assets Content Hub, y que tengan derechos para remezclar recursos con nuevas variaciones, pueden editar imágenes con Content Hub.
+Los usuarios con derechos para acceder a Adobe Express y AEM Assets Content Hub, y que tengan derechos para remezclar recursos con nuevas variaciones, pueden editar imágenes con AEM Assets Content Hub.
 
 ### ¿Cómo edito una imagen con Adobe Express en AEM Assets Content Hub?
 
-Para editar una imagen, haga clic en **Abrir en Adobe Express** en la tarjeta de recursos de la imagen o abra los detalles de la imagen y haga clic en el logotipo de Adobe Express. Esto carga el editor de Adobe Express incrustado en AEM Assets Content Hub, lo que le permite realizar las ediciones sin salir de la plataforma.
+Para editar una imagen en AEM Assets Content Hub, haga clic en **Abrir en Adobe Express** en la tarjeta de recursos de la imagen o abra los detalles de la imagen y haga clic en el logotipo de Adobe Express. Esto carga el editor de Adobe Express incrustado en AEM Assets Content Hub, lo que le permite realizar las ediciones sin salir de la plataforma.
 
 ### ¿Qué funciones de edición proporciona Adobe Express en AEM Assets Content Hub?
 
-Adobe Express ofrece una variedad de funciones de edición de imágenes, como cambiar el tamaño de las imágenes, eliminar o cambiar el color de fondo, recortar imágenes y combinarlas con imágenes o texto generados por IA, entre otras funciones.
+Adobe Express ofrece una variedad de funciones de edición de imágenes en AEM Assets Content Hub, como cambiar el tamaño de las imágenes, eliminar o cambiar el color de fondo, recortar imágenes y combinarlas con imágenes o texto generados por IA, entre otras funciones.
 
 ### ¿Qué formatos de archivo puedo guardar mis imágenes editadas como en AEM Assets Content Hub?
 
-Puede guardar las imágenes editadas en los formatos PNG (buena calidad), JPG (adecuado para archivos pequeños) o PDF (adecuado para documentos).
+Puede guardar las imágenes editadas en los formatos PNG (buena calidad), JPG (adecuado para archivos pequeños) o PDF (adecuado para documentos) en AEM Assets Content Hub.
 
-### ¿Qué campos debo rellenar al guardar una imagen editada en Content Hub?
+### ¿Qué campos debo rellenar al guardar una imagen editada en AEM Assets Content Hub?
 
-Al guardar una imagen editada, debe especificar un nombre para el recurso en el campo **Guardar como** y un nombre de campaña en el campo **Nombre de campaña**. Adobe también recomienda especificar valores en campos adicionales como Palabras clave, Canales, Periodo de tiempo y Región para mejorar la capacidad de búsqueda y organización.
+Al guardar una imagen editada en AEM Assets Content Hub, debe especificar un nombre para el recurso en el campo **Guardar como** y un nombre de campaña en el campo **Nombre de campaña**. Adobe también recomienda especificar valores en campos adicionales como Palabras clave, Canales, Periodo de tiempo y Región para mejorar la capacidad de búsqueda y organización.
 
-### ¿Puedo guardar mis ediciones como un nuevo recurso en Content Hub?
+### ¿Puedo guardar mis ediciones como un nuevo recurso en AEM Assets Content Hub?
 
-Sí, después de editar, puede hacer clic en **Guardar como nuevo recurso** para guardar los cambios como un nuevo recurso en Content Hub.
+Sí, después de editar, puede hacer clic en **Guardar como nuevo recurso** para guardar los cambios como un nuevo recurso en AEM Assets Content Hub.
 
 ### ¿Pueden los administradores personalizar los campos al cargar recursos en AEM Assets Content Hub?
 

@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo obtener una vista previa de recurs
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '997'
 ht-degree: 7%
 
 ---
@@ -112,7 +112,7 @@ Algunas propiedades de los recursos mostrados en [!DNL Content Hub] se derivan o
 
 * **Etiquetas inteligentes:** [!DNL The Content Hub] utiliza los servicios de contenido inteligente de Adobe AI para entrenar recursos mediante el algoritmo de reconocimiento en la estructura basada en etiquetas. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. Las etiquetas inteligentes aumentan la velocidad del contenido de los proyectos al ayudarle a encontrar recursos relevantes rápidamente. Las etiquetas inteligentes son un ejemplo de información de recursos que no está contenida en la imagen. [!DNL Experience Manager Assets] aplica automáticamente las etiquetas inteligentes a los recursos, de manera predeterminada.
 
-* **Etiquetas de color:** [Las etiquetas de color](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=es) le ayudan a reconocer un recurso mediante colores que se identifican automáticamente en un recurso mediante las capacidades de IA de Adobe.
+* **Etiquetas de color:** [Las etiquetas de color](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) le ayudan a reconocer un recurso mediante colores que se identifican automáticamente en un recurso mediante las capacidades de IA de Adobe.
 
 * Fecha de carga
 
@@ -141,22 +141,22 @@ The date range allows you to select dates you want to see the assets. You can cu
 
 ### ¿Por qué se previsualizan los recursos y sus propiedades en AEM Assets Content Hub?
 
-La vista previa de recursos y sus propiedades en Content Hub permite a los usuarios ver de cerca los detalles de los recursos, que son esenciales para una distribución y administración eficientes de los mismos. A medida que la información digital crece, depender simplemente de nombres de archivo y miniaturas se vuelve inescalable. La visualización de propiedades detalladas ayuda a categorizar los recursos, los hace más accesibles, facilita la acción y garantiza que la información esté completa para todos los usuarios.
+La vista previa de recursos y sus propiedades en AEM Assets Content Hub permite a los usuarios ver de cerca los detalles de los recursos, que son esenciales para una distribución y administración eficientes de estos. A medida que la información digital crece, depender simplemente de nombres de archivo y miniaturas se vuelve inescalable. La visualización de propiedades detalladas ayuda a categorizar los recursos, los hace más accesibles, facilita la acción y garantiza que la información esté completa para todos los usuarios.
 
 ### ¿Cómo puedo ver e interactuar con las propiedades de un recurso en AEM Assets Content Hub?
 
-Para ver las propiedades de un recurso en Content Hub, vaya o busque el recurso y, a continuación, haga clic en él para abrir su página de propiedades. Aquí puede acercar o alejar la vista previa, deshacer el zoom, desplazarse a los recursos anteriores o siguientes, descargar el recurso, editarlo con Adobe Express, agregarlo a una colección o cerrar la vista previa. La página de propiedades muestra información detallada como título, formato, tamaño, resolución, etiquetas, etiquetas de color y etiquetas inteligentes.
+Para ver las propiedades de un recurso en AEM Assets Content Hub, vaya o busque el recurso y, a continuación, haga clic en él para abrir su página de propiedades. Aquí puede acercar o alejar la vista previa, deshacer el zoom, desplazarse a los recursos anteriores o siguientes, descargar el recurso, editarlo con Adobe Express, agregarlo a una colección o cerrar la vista previa. La página de propiedades muestra información detallada como título, formato, tamaño, resolución, etiquetas, etiquetas de color y etiquetas inteligentes.
 
 ### ¿Qué son las propiedades derivadas en AEM Assets Content Hub y cómo se generan?
 
-Las propiedades derivadas en Content Hub se generan automáticamente cuando se cargan y aprueban los recursos. Algunos ejemplos son el tamaño del recurso, las etiquetas inteligentes y las etiquetas de color. Las etiquetas inteligentes utilizan los servicios de contenido inteligente de Adobe AI para reconocer y aplicar automáticamente las etiquetas relevantes, lo que mejora la capacidad de detección de recursos. Las etiquetas de color también se identifican automáticamente mediante IA, lo que ayuda a los usuarios a reconocer los recursos por sus colores destacados.
+Las propiedades derivadas en AEM Assets Content Hub se generan automáticamente cuando se cargan y aprueban los recursos. Algunos ejemplos son el tamaño del recurso, las etiquetas inteligentes y las etiquetas de color. Las etiquetas inteligentes utilizan los servicios de contenido inteligente de Adobe AI para reconocer y aplicar automáticamente las etiquetas relevantes, lo que mejora la capacidad de detección de recursos. Las etiquetas de color también se identifican automáticamente mediante IA, lo que ayuda a los usuarios a reconocer los recursos por sus colores destacados.
 
-### ¿Pueden los administradores personalizar qué propiedades de recursos son visibles en Content Hub?
+### ¿Pueden los administradores personalizar qué propiedades de recursos están visibles en AEM Assets Content Hub?
 
-Sí, los administradores tienen la capacidad de configurar qué propiedades se muestran para cada recurso en Content Hub. Esto se puede hacer tanto para la interfaz de usuario de la vista previa de recursos como para las tarjetas de recursos en los resultados de búsqueda o en las colecciones, lo que garantiza que los usuarios vean la información más relevante en función de los requisitos.
+Sí, los administradores tienen la capacidad de configurar qué propiedades se muestran para cada recurso en la Content Hub de AEM Assets. Esto se puede hacer tanto para la interfaz de usuario de la vista previa de recursos como para las tarjetas de recursos en los resultados de búsqueda o en las colecciones, lo que garantiza que los usuarios vean la información más relevante en función de los requisitos.
 
-### ¿Cuáles son los formatos de archivo admitidos para la vista previa de recursos?
+### ¿Cuáles son los formatos de archivo admitidos para la vista previa de recursos en AEM Assets Content Hub?
 
-Los formatos de archivo admitidos son JPEG y PNG para imágenes, Quicktime, MP4 y MPEG para vídeos, TXT, DOC/DOCX y XML para documentos y PDF para medios de impresión.
+Los formatos de archivo admitidos en AEM Assets Content Hub incluyen JPEG y PNG para imágenes, Quicktime, MP4 y MPEG para vídeos, TXT, DOC/DOCX y XML para documentos y PDF para medios de impresión.
 
 

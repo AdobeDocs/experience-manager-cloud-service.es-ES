@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo descargar uno o varios recursos y 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1400'
 ht-degree: 1%
 
 ---
@@ -184,7 +184,7 @@ Para habilitar las representaciones dinámicas:
 
 ### ¿Cómo se descarga un solo recurso o varios desde AEM Assets Content Hub?
 
-Para descargar un solo recurso, haga clic en el icono de descarga de la tarjeta de recursos. Para varios recursos, selecciónelos y haga clic en Descargar en la barra de acciones. Content Hub comienza a descargar los recursos en su representación original si el administrador habilita las descargas. Si las representaciones de recursos están disponibles, puede seleccionar representaciones específicas antes de descargar.
+Para descargar un solo recurso en AEM Assets Content Hub, haga clic en el icono de descarga de la tarjeta de recursos. Para varios recursos, selecciónelos y haga clic en Descargar en la barra de acciones. Content Hub comienza a descargar los recursos en su representación original si el administrador habilita las descargas. Si las representaciones de recursos están disponibles, puede seleccionar representaciones específicas antes de descargar.
 
 ### ¿Hay alguna configuración administrada por el administrador en AEM Assets Content Hub que permita a los usuarios descargar los recursos originales o habilitar la disponibilidad de representaciones?
 
@@ -192,15 +192,15 @@ Sí, los administradores pueden habilitar o deshabilitar **Habilitar la disponib
 
 ### ¿Qué son las representaciones de recursos y qué tipos están disponibles en AEM Assets Content Hub?
 
-Las representaciones de recursos son diferentes representaciones del archivo de recursos original adaptadas a varios casos de uso. Los tipos incluyen representaciones estáticas (como miniaturas, versiones optimizadas para web o móvil o archivos de alta resolución para impresión), representaciones estáticas personalizadas y representaciones dinámicas (incluidas las versiones de recorte inteligente). Las representaciones estáticas se generan previamente, mientras que las representaciones dinámicas se crean en tiempo real en función de la solicitud.
+Las representaciones de recursos en AEM Assets Content Hub son diferentes representaciones del archivo de recursos original adaptadas a varios casos de uso. Los tipos incluyen representaciones estáticas (como miniaturas, versiones optimizadas para web o móvil o archivos de alta resolución para impresión), representaciones estáticas personalizadas y representaciones dinámicas (incluidas las versiones de recorte inteligente). Las representaciones estáticas se generan previamente, mientras que las representaciones dinámicas se crean en tiempo real en función de la solicitud.
 
 ### ¿Cómo funciona el Recorte inteligente con los recursos de AEM Assets Content Hub?
 
-El recorte inteligente es una función con tecnología de IA que identifica la parte más importante de una imagen y recorta de forma inteligente a su alrededor. Esto garantiza que los elementos visuales tengan un aspecto impecable en diferentes pantallas y formatos. Las representaciones de recorte inteligente están disponibles para los recursos de imagen si su organización admite las funciones de medios dinámicos.
+Recorte inteligente en AEM Assets Content Hub es una función con tecnología de IA que identifica la parte más importante de una imagen y recorta de forma inteligente a su alrededor. Esto garantiza que los elementos visuales tengan un aspecto impecable en diferentes pantallas y formatos. Las representaciones de recorte inteligente están disponibles para los recursos de imagen si su organización admite las funciones de medios dinámicos.
 
 ### ¿Cómo habilito las representaciones dinámicas en AEM Assets Content Hub?
 
-Para habilitar las representaciones dinámicas:
+Para habilitar las representaciones dinámicas en AEM Assets Content Hub:
 
 * Asegúrese de que Dynamic Media con las capacidades de OpenAPI esté habilitado. Los recursos aprobados están disponibles para su envío público.
 
@@ -212,9 +212,9 @@ Para habilitar las representaciones dinámicas:
 
 Las representaciones dinámicas solo son compatibles con los recursos de imagen.
 
-### ¿Cómo se descargan representaciones de recursos en Content Hub?
+### ¿Cómo descargo representaciones de recursos en AEM Assets Content Hub?
 
-Para descargar representaciones, seleccione el recurso y haga clic en la acción de descarga. Si el administrador habilita las representaciones, aparece un cuadro de diálogo en el que puede elegir las representaciones que desea descargar. Para los recursos con licencia, acepte los términos de licencia antes de descargar. Para varios recursos, selecciónelos, elija representaciones y descárguelos como archivo ZIP. Puede seleccionar todas las representaciones disponibles o algunas específicas, como las estáticas o dinámicas.
+Para descargar representaciones en AEM Assets Content Hub, seleccione el recurso y haga clic en la acción de descarga. Si el administrador habilita las representaciones, aparece un cuadro de diálogo en el que puede elegir las representaciones que desea descargar. Para los recursos con licencia, acepte los términos de licencia antes de descargar. Para varios recursos, selecciónelos, elija representaciones y descárguelos como archivo ZIP. Puede seleccionar todas las representaciones disponibles o algunas específicas, como las estáticas o dinámicas.
 
 
 
