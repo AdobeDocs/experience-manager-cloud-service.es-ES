@@ -4,9 +4,9 @@ description: Descubra cómo puede utilizar las canalizaciones de configuración 
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: ac04829b63ca5e2fee71f6c71d0730f21c576382
+source-git-commit: 66ea803dbf8e8b12fecf6256a88c94c2ca6fa112
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1445'
 ht-degree: 2%
 
 ---
@@ -19,9 +19,9 @@ Descubra cómo puede utilizar las canalizaciones de configuración para implemen
 
 Una canalización de configuración de Cloud Manager implementa archivos de configuración (creados en formato YAML) en un entorno de destino. Se pueden configurar varias funciones de AEM as a Cloud Service de esta manera, incluido el reenvío de registros, las tareas de mantenimiento relacionadas con la depuración y varias funciones de CDN.
 
-Para los proyectos de **Publish Delivery**, las canalizaciones de configuración se pueden implementar mediante Cloud Manager en los tipos de entorno de desarrollo, ensayo y producción. Los archivos de configuración se pueden implementar en entornos de desarrollo rápido (RDE) con [herramientas de línea de comandos](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+Para los proyectos de **Publish Delivery**, las canalizaciones de configuración se pueden implementar mediante Cloud Manager en los tipos de entorno de desarrollo, ensayo y producción. Los archivos de configuración se pueden implementar en entornos de desarrollo rápido (RDE) con [herramientas de línea de comandos](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline). Use una implementación de destino [**Canalización de entrega de publicación**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) ([Producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) o [No producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)) cuando necesite configurar el tráfico para un dominio adjunto a un entorno de entrega de publicación.
 
-Las canalizaciones de configuración también se pueden implementar a través de Cloud Manager para proyectos de **Edge Delivery**.
+Las canalizaciones de configuración también se pueden implementar a través de Cloud Manager para proyectos de **Edge Delivery**. Usar una [**canalización de Edge Delivery**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) cuando el dominio esté adjunto a un **sitio Edge Delivery**.
 
 Las siguientes secciones de este documento proporcionan información importante sobre cómo se pueden utilizar las canalizaciones de configuración y cómo se deben estructurar las configuraciones para ellas. Describe conceptos generales compartidos en todas las funciones o en un subconjunto de ellas compatibles con las canalizaciones de configuración.
 
@@ -50,7 +50,7 @@ La siguiente tabla ofrece una lista completa de estas configuraciones con víncu
 | [Tarea de mantenimiento de purga de versiones](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimizar el repositorio de AEM declarando reglas sobre cuándo se deben purgar las versiones de contenido | X |  |
 | [Tarea de mantenimiento de purga del registro de auditoría](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimice el registro de auditoría de AEM para obtener un mayor rendimiento declarando reglas sobre cuándo se deben purgar los registros | X |  |
 | [Tarea de mantenimiento de purga de flujo de trabajo](/help/operations/maintenance.md) | `MaintenanceTasks` | Minimice el número de instancias de flujo de trabajo para aumentar el rendimiento del motor de flujo de trabajo.<br><br>Consulte también [Depuración regular de instancias de flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances) | X |  |
-| [Reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure los puntos de conexión y las credenciales para reenviar registros a varios destinos, como Azure Blob Storage, Datadog, HTTPS, Elasticsearch y Splunk | X | X |
+| [Reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure los puntos de conexión y las credenciales para reenviar registros a varios destinos, incluido Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk | X | X |
 | [Registro de un ID de cliente](/help/implementing/developing/open-api-based-apis.md) | `API` | Asigne proyectos de API de Adobe Developer Console a un entorno de AEM específico mediante el registro del ID de cliente. Necesario para el uso de API basadas en OpenAPI que requieren autenticación | X |  |
 
 ## Creación y administración de canalizaciones de configuración {#creating-and-managing}
