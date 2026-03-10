@@ -1,12 +1,13 @@
 ---
 title: Administrar colecciones
 description: Una colección es un conjunto de recursos dentro de la vista de Experience Manager Assets. Utilice las colecciones para compartir recursos entre los usuarios.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1090'
 ht-degree: 78%
 
 ---
