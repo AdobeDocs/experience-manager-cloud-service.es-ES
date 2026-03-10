@@ -42,7 +42,7 @@ La compatibilidad con recursos remotos mediante Dynamic Media con funciones de O
 
    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]: debe enviar un ticket de asistencia de Adobe para obtener el ID de cliente de IMS.
 
-     o configure la [configuración de OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) para AEM 6.5 en la instancia de AEM Sites siguiendo estos pasos:
+     o configure la [configuración de OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=es) para AEM 6.5 en la instancia de AEM Sites siguiendo estos pasos:
 
    1. Inicie sesión en la consola y haga clic en **[!UICONTROL OSGi] >** o
 usar la dirección URL directa; por ejemplo: `https://localhost:4502/system/console/configMgr`
@@ -63,7 +63,7 @@ donde `pXXXX` hace referencia al ID de programa
 
       ![Ventana de configuración OSGi de la configuración de Dynamic Media de próxima generación](/help/assets/assets/remote-assets-osgi.png)
 
-  Más información sobre la [autenticación IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
+  Más información sobre la [autenticación IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html?lang=es).
 
   Para obtener más información sobre cómo configurar OSGi, consulte los siguientes documentos:
 
@@ -119,7 +119,7 @@ Siga los siguientes pasos para utilizar recursos remotos dentro del fragmento de
 
    >[!NOTE]
    >
-   >Si no cuenta con el modelo de fragmento de contenido de AEM, es posible que tenga que [crear uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
+   >Si no cuenta con el modelo de fragmento de contenido de AEM, es posible que tenga que [crear uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=es).
 
 1. Haga clic en el icono de ![marca de verificación](/help/assets/assets/do-not-localize/checkmark-icon.svg) junto al componente de texto.
 1. Seleccione **[!UICONTROL Remoto]** para recuperar el recurso del DAM remoto. <br>
