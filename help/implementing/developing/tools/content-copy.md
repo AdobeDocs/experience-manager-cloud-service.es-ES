@@ -4,10 +4,10 @@ description: La herramienta de copia de contenido permite a los usuarios copiar 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: 86205946b7c4b7173448eca728f4495ab7e35064
+source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 28%
+source-wordcount: '1574'
+ht-degree: 27%
 
 ---
 
@@ -143,7 +143,14 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
 1. (Opcional) Si lo desea, configure lo siguiente:
 
    * **Incluir listas de control de acceso**: seleccione esta opción si desea copiar los permisos de control de acceso del contenido junto con el contenido.
-   * **Borrar**: Seleccione esta opción para eliminar el contenido existente en el destino antes de iniciar la importación, de modo que pueda empezar desde una pizarra limpia y evitar conflictos con el contenido preexistente. Si deja **Borrar** sin seleccionar, Cloud Manager importa el contenido nuevo sobre el contenido de destino existente. Aparece un mensaje de confirmación antes de que comience el borrado y Cloud Manager registra la acción de borrado y los detalles de importación para rastrear.
+   * **Borrar**: seleccione esta opción para eliminar el contenido existente en el destino antes de iniciar la importación, de modo que pueda comenzar desde un estado limpio y evitar conflictos con contenido preexistente. Si deja **Borrar** sin seleccionar, Cloud Manager importa el contenido nuevo sobre el contenido de destino existente. Aparece un mensaje de confirmación antes de que comience el borrado y Cloud Manager registra la acción de borrado y los detalles de importación para rastrear.
+     ![Copia de contenido](assets/content_copy_wipe-destination.png)
+      * Al elegir la opción **Borrar destino antes de importar** y al hacer clic en **Copiar**, aparecerá una ventana emergente con una advertencia donde tendrá las opciones para:
+         * **Cancelar** (en este caso no se iniciará el flujo de **Copiar contenido**)
+         * **Confirmar** (el flujo de **Copiar contenido** se iniciará y el contenido del destino se borrará)
+           ![Copia de contenido](assets/content-copy-wipe-destination-warning.png)
+
+      * Si no elige **Borrar destino antes de importar**, el flujo de **Copiar contenido** funcionará como antes.
 
 1. Haga clic en **Copiar**.
 
