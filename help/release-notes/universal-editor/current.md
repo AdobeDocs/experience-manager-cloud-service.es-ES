@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2026.03.05 del editor universal
-description: Estas son las notas de la versión 2026.03.05 del editor universal.
+title: Notas de la versión 2026.03.12 del editor universal
+description: Estas son las notas de la versión 2026.03.12 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
+source-git-commit: ef6e65a72eaa5e7e8b15f8ec096cd43351bc2674
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 39%
+source-wordcount: '151'
+ht-degree: 47%
 
 ---
 
 
-# Notas de la versión 2026.03.05 del editor universal {#release-notes}
+# Notas de la versión 2026.03.12 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 5 de marzo de 2026.
+Estas son las notas de la versión del editor universal del 12 de marzo de 2026.
 
 >[!TIP]
 >
@@ -26,8 +26,7 @@ Estas son las notas de la versión del editor universal del 5 de marzo de 2026.
 
 ## Novedades {#what-is-new}
 
-* [El selector de componentes](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) tiene un nuevo diseño.
-* [Ya está disponible un selector de color](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) para RTE.
+* Ahora se pueden agregar componentes a través del [menú contextual](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) de contenedores.
 
 ## Funciones de adopción anticipada {#early-adopter}
 
@@ -37,5 +36,4 @@ Si le interesa probar las próximas funciones enumeradas a continuación y compa
 
 ## Otras mejoras {#other-improvements}
 
-* Las opciones de alineación, dirección del texto y sangría ahora están [habilitadas de forma predeterminada en RTE](/help/implementing/universal-editor/configure-rte.md), siempre que el servidor las admita.
-* Las pestañas ahora se representan al utilizar un fragmento de contenido con API abierta y esquema de interfaz de usuario.
+* Se corrigió un problema en el cual los subelementos de creación de documentos no obedecían las reglas nthChild.
