@@ -31,7 +31,7 @@ Algunas de las ventajas de la integración de Azure Blob Storage con AEM Forms s
 Para usar el almacenamiento de Azure Blob en la acción de envío de formularios adaptables:
 
 1. [Crear un contenedor de almacenamiento de Azure Blob](#create-a-azure-blob-storage-container-create-azure-configuration): conecta AEM Forms a los contenedores de almacenamiento de Azure.
-2. [Usar la configuración de almacenamiento de Azure en un formulario adaptable ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): conecta su formulario adaptable a los contenedores de almacenamiento de Azure configurados.
+2. [Usar la configuración de almacenamiento de Azure en un formulario adaptable &#x200B;](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): conecta su formulario adaptable a los contenedores de almacenamiento de Azure configurados.
 
 ### Crear un contenedor de almacenamiento de Azure Blob {#create-azure-configuration}
 

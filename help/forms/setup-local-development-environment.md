@@ -14,7 +14,7 @@ ht-degree: 99%
 
 # Configurar un entorno de desarrollo local para AEM Forms {#overview}
 
-Al establecer y configurar un [!DNL  Adobe Experience Manager Forms] como entorno de[!DNL  Cloud Service], configura entornos de desarrollo, de ensayo y de producción en la nube. Además, también puede establecer y configurar un entorno de desarrollo local.
+Al establecer y configurar un [!DNL &#x200B; Adobe Experience Manager Forms] como entorno de[!DNL &#x200B; Cloud Service], configura entornos de desarrollo, de ensayo y de producción en la nube. Además, también puede establecer y configurar un entorno de desarrollo local.
 
 Puede utilizar el entorno de desarrollo local para realizar las siguientes acciones sin iniciar sesión en el entorno de desarrollo de la nube:
 
@@ -379,7 +379,7 @@ La actualización del SDK a una nueva versión requiere reemplazar todo el entor
 
 ### Evitar la pérdida de contenido al actualizar el SDK {#avoid-content-loss-when-upgrading--SDK}
 
-Actualizar el SDK es crear de manera efectiva una nueva instancia Author y Publish, que incluyan un repositorio nuevo ([Configurar proyectos AEM ](#forms-cloud-service-local-development-environment)), lo que significa que se perderá cualquier cambio realizado en el repositorio de un SDK anterior. Para conocer estrategias viables que permitan mantener el contenido entre las actualizaciones del SDK, consulte [Evitar la pérdida de contenido al actualizar el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es#optional-local-aem-runtime-set-up-tasks)
+Actualizar el SDK es crear de manera efectiva una nueva instancia Author y Publish, que incluyan un repositorio nuevo ([Configurar proyectos AEM &#x200B;](#forms-cloud-service-local-development-environment)), lo que significa que se perderá cualquier cambio realizado en el repositorio de un SDK anterior. Para conocer estrategias viables que permitan mantener el contenido entre las actualizaciones del SDK, consulte [Evitar la pérdida de contenido al actualizar el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es#optional-local-aem-runtime-set-up-tasks)
 
 <!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/30191?quality=9).
 

@@ -106,7 +106,7 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 1. Crear una carpeta `languages` bajo `etc`, si no está presente.
 
 1. Agregue una propiedad de cadena de varios valores `languages` al nodo, si no está presente ya.
-1. Agregue los valores de configuración regional predeterminados `<locale-name>``de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
+1. Agregue los valores de configuración regional predeterminados `<locale-name>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
 
 1. Agregue `<locale>` a los valores de la propiedad `languages` de `/etc/languages`.
 1. Añada las carpetas recién creadas en `filter.xml`, en etc/META-INF/[jerarquía de carpetas]como:

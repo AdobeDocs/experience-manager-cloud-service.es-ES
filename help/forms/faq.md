@@ -40,7 +40,7 @@ Puede descargar la documentación de referencia de la API de Java™ en [!DNL Ma
    1. Abra el archivo index.html para ver la documentación de referencia de la API.
 
 * **¿Dónde puedo obtener la referencia de la API de [!DNL JavaScript™] para formularios adaptables?**
-Puede descargar la documentación de referencia de la API de [!DNL JavaScript™] en [!DNL  Maven Central Repository]. Para descargarla:
+Puede descargar la documentación de referencia de la API de [!DNL JavaScript™] en [!DNL &#x200B; Maven Central Repository]. Para descargarla:
    1. Abra [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Busque y abra la página que contiene la última versión del SDK de [!DNL Experience Manager Forms].
    1. Haga clic en la opción Ver todo para ver todos los archivos.

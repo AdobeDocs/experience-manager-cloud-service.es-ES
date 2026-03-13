@@ -121,7 +121,7 @@ Considere el siguiente fragmento de código, donde input2 se define como un par�
 
 La siguiente ilustración muestra el uso de la función personalizada `OptionalParameterFunction` en el editor de reglas:
 
-![Parámetros opcionales o requeridos ](/help/forms/assets/optional-default-params.png)
+![Parámetros opcionales o requeridos &#x200B;](/help/forms/assets/optional-default-params.png)
 
 Puede guardar la regla sin especificar un valor para los parámetros necesarios, pero la regla no se ejecuta y muestra un mensaje de advertencia como:
 
