@@ -7,10 +7,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 0c99c27e22fd14485b367fdda8dc76c03aff65dc
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 33%
+source-wordcount: '2211'
+ht-degree: 32%
 
 ---
 
@@ -161,11 +161,17 @@ Esta propiedad permite introducir una URL de vanidad para esta página, lo que p
 
 * **Habilitar**: habilita el uso de la autenticación para acceder a la página
 
->[!NOTE]
->
->Los grupos de usuarios cerrados para la página se definen en la pestaña **[Permisos](#permissions)**.
+  >[!NOTE]
+  >
+  >Los grupos de usuarios cerrados para la página se definen en la pestaña **[Permisos](#permissions)**.
 
 * **Página de inicio de sesión**: la página que se usará para iniciar sesión
+
+  >[!WARNING]
+  >
+  >La página de inicio de sesión especificada **no debe** apuntar a una página que esté protegida por un **requisito de autenticación**. Debe asegurarse de que la página de inicio de sesión sea pública y no esté protegida. Por ejemplo, una página dedicada como `/content/<mysite>/en/login` sin **requisito de autenticación** habilitado.
+  >
+  >Si la página de inicio de sesión configurada tiene **Enable** marcado, el requisito de autenticación de esa página se eliminará de forma silenciosa al inicio, por lo que será accesible públicamente.
 
 ### Exportar {#export}
 
