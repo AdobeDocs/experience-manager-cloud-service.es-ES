@@ -1,23 +1,24 @@
 ---
 title: Funciones actuales de acceso anticipado de  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-description: Características actuales de acceso anticipado de  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+description: Funciones actuales de acceso anticipado de  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 800bbd2adf423b4eb00e91b7bb4dd26a37a2e032
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3235'
 ht-degree: 20%
 
 ---
 
 # Programa de acceso anticipado de AEM Forms
 
-El programa AEM Forms Early Access ofrece una oportunidad única para que obtenga acceso exclusivo a funciones de vanguardia antes que nadie y ayude a dar forma a su desarrollo. El programa le ofrece lo siguiente:
+El programa AEM Forms Early Access ofrece una oportunidad única para que obtenga acceso exclusivo a funciones de vanguardia antes que nadie y le ayude a dar forma a su desarrollo. El programa le ofrece lo siguiente:
 
-* Sé uno de los primeros en acceder a tecnología de vanguardia antes de que llegue a la corriente mayoritaria.
+* Sea uno de los primeros en obtener acceso a tecnología de vanguardia antes de que llegue a la corriente principal.
 * Coinnovar con el equipo de productos, dando forma al futuro del producto en conjunto. Utilice sus casos de uso para guiar el desarrollo, asegurándose de que la innovación esté madura y aborde sus desafíos del mundo real.
 * Proporcione comentarios y ayúdenos a solucionar problemas antes del lanzamiento, lo que proporcionará una experiencia de usuario más fluida tras el lanzamiento completo.
 
@@ -33,7 +34,7 @@ La IA generativa para los formularios adaptables aporta un nuevo nivel de potenc
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435527)
 
-Las funciones de IA generativa que se ofrecen a través de AEM Forms AI Assistant son:
+Las funciones de IA generativa que se ofrecen a través del Asistente de IA de AEM Forms son las siguientes:
 
 * **Asistente de IA para consultas de productos**: obtenga respuestas instantáneas a sus preguntas relacionadas con AEM Forms. Nuestro asistente de IA actúa como su propia base de conocimiento personal, proporcionando orientación y recomendaciones reveladoras directamente dentro de la plataforma.
 
@@ -56,11 +57,11 @@ Con AEM Forms Workfront Fusion Connector, puede diseñar flujos de trabajo que s
 
 <!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
 
-### Forms de conversación
+### Conversational Forms
 
-La innovación de Conversational Forms te permite interactuar con formularios como un simpático bot de chat en cualquier página de AEM Sites.
+La innovación Conversational Forms le permite interactuar con formularios como un bot de chat sencillo en cualquier página de AEM Sites.
 
-Solo tiene que arrastrar y soltar el componente Conversational Forms en la página de AEM Sites y comenzar. No se requiere código, por lo que cualquiera puede crear rápidamente experiencias de Forms de conversación atractivas y fáciles de usar.
+Simplemente puede arrastrar y soltar el componente Conversational Forms en su página de AEM Sites y comenzar. No se requiere codificación, por lo que cualquier persona puede crear experiencias de Conversational Forms atractivas y fáciles de usar rápidamente.
 
 ![Forms de conversión, relleno de formulario de estilo Chatbot, Forms adaptable](/help/forms/assets/conversational-forms.png)
 
@@ -71,7 +72,7 @@ Esto es lo que más Conversational Forms trae:
 * **Vista previa antes de enviar**: Compruebe todo antes de pulsar Enviar. Previsualice el formulario completado para garantizar la precisión y evitar errores de último minuto.
 
 
-Los Forms conversacionales son más que una simple nueva apariencia: suponen un punto de inflexión para la experiencia del usuario.  Aumente la participación, reduzca el abandono de formularios y haga que la interacción con su sitio web sea una experiencia más agradable para todos.
+Los Forms de conversación son algo más que un nuevo aspecto: cambian el panorama de la experiencia del usuario.  Aumente la participación, reduzca el abandono de formularios y haga que la interacción con su sitio web sea una experiencia más agradable para todos.
 
 ### Conector de AEM Forms a Marketo
 
@@ -79,13 +80,13 @@ El [conector de AEM Forms a Marketo](/help/forms/integrate-form-to-marketo-engag
 
 Cuando alguien envía un formulario en su sitio web creado con AEM Adaptive Forms, el conector garantiza que los datos enviados se envíen automáticamente a Marketo. Esto elimina la necesidad de introducir los datos manualmente y reduce el riesgo de errores.
 
-![Formulario AEM - Conector Marketo](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+![Formulario de AEM - Conector de Marketo](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
 Al optimizar el proceso de transferencia de datos, el conector puede ayudarle a mejorar las tasas de conversión del sitio web. Al enviar automáticamente datos de posibles clientes a Marketo, puede asegurarse de que los posibles clientes cualificados se introduzcan rápidamente en sus programas de nutrición.
 
-Básicamente, de AEM Forms a Marketo Connector le ayuda a aprovechar los puntos fuertes de ambas plataformas para crear un embudo de marketing más eficaz y eficiente.
+Básicamente, AEM Forms to Marketo Connector le ayuda a aprovechar las ventajas de ambas plataformas para crear un funnel de marketing más eficiente y eficaz.
 
-¿Listo para empezar? Los siguientes artículos proporcionan instrucciones detalladas para usar la innovación.
+¿Listo para empezar? Los siguientes artículos proporcionan instrucciones detalladas para utilizar la innovación.
 
 * [Integrar Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
 * [Integrar un formulario adaptable con Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
@@ -106,17 +107,17 @@ Interactive Communications en Cloud es una potente solución para crear, adminis
 
 * **Integración de datos**: conéctese a esquemas, bases de datos y servicios web para generar contenido dinámico.
 
-* **Medios enriquecidos**: Incorpora texto, imágenes y elementos interactivos sin problemas.
+* **Medios enriquecidos**: incorpora texto, imágenes y elementos interactivos sin problemas.
 
-* **Fragmentos de documento**: reutiliza bloques de contenido modulares en varios documentos para lograr coherencia y eficacia.
+* **Fragmentos de documento**: reutilice bloques de contenido modulares en varios documentos para mantener la coherencia y la eficacia.
 
-* **Salida multicanal**: Crea experiencias unificadas en formatos digitales e impresos con cumplimiento normativo.
+* **Salida multicanal**: cree experiencias unificadas en los formatos digital e impreso con cumplimiento normativo.
 
-* **Contenido dinámico**: genera contenido personalizado mediante lógica empresarial y enlace de datos.
+* **Contenido dinámico**: genere contenido personalizado mediante lógica empresarial y enlace de datos.
 
-* **Flexibilidad de formato**: salida a los formatos PDF, HTML, PCL, PostScript® y ZPL.
+* **Flexibilidad de formato**: Salida a los formatos PDF, HTML, PCL, PostScript® y ZPL.
 
-* **Editor de reglas**: Crea acciones dinámicas basadas en datos directamente en tus documentos mediante una interfaz intuitiva de señalar y hacer clic. Defina fácilmente la lógica condicional, automatice los flujos de trabajo y personalice el contenido sin escribir código.
+* **Editor de reglas**: cree acciones dinámicas impulsadas por datos directamente en sus documentos mediante una interfaz intuitiva que apunte y haga clic. Defina fácilmente la lógica condicional, automatice los flujos de trabajo y personalice el contenido sin escribir código.
 
 * **Vista previa de PDF:** Vista previa de la comunicación interactiva sin datos, archivos JSON locales o modelos de datos para realizar pruebas flexibles basadas en datos.
 * **Fuentes personalizadas:** Incruste fuentes personalizadas o aprobadas por la organización para garantizar un procesamiento de PDF coherente y de marca en todos los dispositivos.
@@ -128,7 +129,7 @@ Interactive Communications en Cloud es una potente solución para crear, adminis
 
 * **Edición de archivos XDP**: ahora puede editar archivos XDP en un explorador en lugar de Forms Designer que se ejecuta únicamente en el escritorio de Microsoft Windows.
 
-* **Invocar la interfaz de usuario asociada en una instancia de Publish**: ahora puede invocar la interfaz de usuario asociada directamente en instancias de Publish. Esta capacidad define la configuración requerida, la estructura de la carga útil y el flujo de invocación, simplificando la integración y acelerando la implementación en todos los entornos.
+* **Invocar la interfaz de usuario asociada en una instancia de publicación**: ahora puede invocar la interfaz de usuario asociada directamente en instancias de publicación. Esta capacidad define la configuración, la estructura de carga útil y el flujo de invocación necesarios, lo que simplifica la integración y acelera la implementación en todos los entornos.
 
 ##### Numeración dinámica de páginas
 
@@ -153,15 +154,15 @@ Puede conectar AEM Forms con Adobe Experience Platform (AEP) para aprovechar los
 
 ### AEM FORMS HTML5 FORMS
 
-AEM Forms HTML5 Forms le permite procesar plantillas de formulario XFA (arquitectura de Forms XML) existentes en formato HTML5, por lo que son accesibles en exploradores modernos y dispositivos móviles en los que no se admite PDF basado en XFA. Esta capacidad salva la brecha entre los PDF forms tradicionales y las experiencias web modernas.
+AEM Forms HTML5 Forms le permite procesar plantillas de formulario XFA (arquitectura de Forms XML) existentes en formato HTML5, por lo que son accesibles en exploradores modernos y dispositivos móviles en los que no se admite PDF basado en XFA. Esta capacidad reduce la brecha entre PDF forms tradicional y las experiencias web modernas.
 
-![Vista previa de Forms de HTML5](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
+![Vista previa de HTML5 Forms](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
 
-**Capacidades clave:**
+**Funcionalidades clave:**
 
-* **Procesamiento basado en HTML5 de plantillas de formulario XFA**: renderiza tus formularios existentes basados en XFA en formato HTML5 para expandir tu plataforma de cliente a dispositivos móviles (Apple iPad, tabletas Android, smartphones y más) que sean compatibles con HTML5 pero que no sean compatibles con Adobe Reader con XFA Forms.
+* **Procesamiento basado en HTML5 de plantillas de formulario XFA**: procese los formularios existentes basados en XFA en formato HTML5 para expandir la plataforma de cliente a dispositivos móviles (Apple iPad, tabletas Android, smartphones, etc.) compatibles con HTML5 pero que no admiten Adobe Reader con XFA Forms.
 
-* **Formularios listos para usar en dispositivos móviles**: HTML5 Forms ofrece numerosas funciones listas para usar en dispositivos móviles, lo que te ayuda a expandir tus soluciones y flujos de trabajo actuales a tabletas o smartphones con navegadores HTML5.
+* **Formularios preparados para dispositivos móviles**: HTML5 Forms ofrece numerosas funciones preparadas para dispositivos móviles, lo que le ayuda a ampliar sus soluciones y flujos de trabajo actuales a tabletas o smartphones con exploradores HTML5.
 
 * **Compatibilidad con accesibilidad**: HTML5 Forms utiliza el estándar de accesibilidad ARIA HTML5 y admite la navegación con pestañas, lo que los hace compatibles con lectores de pantalla comunes como JAWS y VoiceOver.
 
@@ -191,9 +192,9 @@ not sure what's going on with this video link. cleaned up version below
 * **Andamiaje rápido**: genera instantáneamente la estructura y el código para los nuevos componentes personalizados, lo que reduce el tiempo de configuración manual.
 * **Prácticas recomendadas integradas**: La herramienta sigue los patrones recomendados para AEM Forms Edge Delivery Services, lo que garantiza coherencia y mantenimiento.
 * **Productividad del desarrollador**: Céntrese en la generación de lógica empresarial e interfaz de usuario, mientras que la CLI gestiona tareas de configuración repetitivas.
-* **Integración perfecta**: los componentes generados están listos para usarse e integrarse con tus proyectos de AEM Forms existentes.
+* **Integración perfecta**: los componentes generados están listos para usarse e integrarse con sus proyectos de AEM Forms existentes.
 
-¿Listo para empezar? La herramienta CLI de AEM Forms está disponible en el programa de acceso anticipado para implementaciones as a Cloud Service de Forms. Para solicitar acceso, envía por correo electrónico el ID de tu organización y los detalles del programa a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde tu dirección oficial.
+¿Listo para empezar? La herramienta CLI de AEM Forms está disponible en el programa de acceso anticipado para implementaciones de Forms as a Cloud Service. Para solicitar acceso, envía por correo electrónico tu ID de organización y los detalles del programa a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde tu dirección oficial.
 
 ### Herramienta de integración de API para datos de formularios dinámicos
 
@@ -203,7 +204,7 @@ Las funciones clave incluyen:
 
 * **Interfaz de configuración visual**: cree integraciones de API a través de una interfaz intuitiva de apuntar y hacer clic sin codificación personalizada
 * **Población de datos en tiempo real**: Rellene automáticamente los campos de formulario en función de la ubicación del usuario (por ejemplo, rellenar automáticamente la ciudad y el estado cuando el usuario introduzca el código postal).
-* **Compatibilidad con API flexible**: conéctate a cualquier API REST de acceso público que admita métodos de GET/POST, autenticación y respuestas JSON/XML
+* **Compatibilidad con API flexible**: conéctese a cualquier API de REST accesible públicamente con compatibilidad con métodos GET/POST, autenticación y respuestas JSON/XML
 * **Déclencheur basados en reglas**: defina cuándo se activan las llamadas a la API mediante el motor de reglas integrado (por ejemplo, cambios de campo, eventos de formulario)
 * **Asignación inteligente de datos**: configure cómo los datos de respuesta de API se asignan a campos de formulario específicos mediante las capacidades de análisis JSON de Adobe
 * **Experiencia del usuario mejorada**: Reduzca la entrada manual de datos, mejore la precisión de los datos y cree interacciones de formulario más atractivas
@@ -221,7 +222,7 @@ Los formularios adaptables le permite utilizar [plantillas de correo electrónic
 
 ![Plantilla de correo electrónico HTML](/help/forms/assets/html-email.png)
 
-### Acción de envío de servicios Web RESTful
+### Acción de envío de servicios web RESTful
 
 Ahora, los Forms adaptables pueden enviar sin problemas los datos capturados a puntos de conexión REST externos autenticados con la nueva acción de envío de los servicios web RESTful:
 
@@ -235,7 +236,7 @@ Ahora, los Forms adaptables pueden enviar sin problemas los datos capturados a p
 
 Ahora, el Forms adaptable se puede mostrar en un lenguaje de derecha a izquierda (RTL), lo que permite una experiencia de usuario más inclusiva y fácil de usar.
 
-Esta funcionalidad atiende a idiomas como el árabe, el hebreo y el urdu, que se escriben y leen de derecha a izquierda (RTL), lo que fomenta una mejor comprensión y tasas de cumplimentación de formularios.
+Esta funcionalidad atiende a idiomas como el árabe, el hebreo y el urdu, que se escriben y leen de derecha a izquierda (RTL), lo que fomenta una mejor comprensión y tasas de finalización de los formularios.
 
 ![Compatibilidad con idiomas de derecha a izquierda (RTL)](mobile-responsive.png)
 
@@ -266,7 +267,7 @@ Al ofrecer varias opciones de CAPTCHA, AEM Forms le ha permitido seleccionar la 
 ### API de Doc Assurance
 
 
-Las API de AEM Forms Doc Assurance son un conjunto de herramientas de las API de AEM Forms Cloud Service Communication que le permiten administrar la seguridad y la interacción del usuario de los documentos del PDF.
+Las API de Assurance de documentos de AEM Forms son un conjunto de herramientas dentro de las API de comunicación de AEM Forms Cloud Service que le permiten administrar la seguridad y la interacción del usuario en sus documentos de PDF.
 
 Este es un desglose de lo que las API de Doc Assurance pueden hacer:
 
@@ -295,7 +296,7 @@ El servicio Forms genera PDF forms interactivos para la captura de datos. Tambi�
 
 ### API de generación de documentos
 
-La API de generación de documentos incluye una función opcional que permite la carga directa de PDF generados en Azure Blob Storage. Algunas ventajas clave de cargar archivos PDF directamente en Azure Blob Storage mediante la API de generación de documentos son:
+La API de generación de documentos incluye una función opcional que permite cargar directamente archivos PDF generados en el almacenamiento del blob de Azure. Algunas ventajas clave de cargar archivos PDF directamente en Azure Blob Storage mediante la API de generación de documentos son:
 
 * **Integración perfecta con Cloud Storage**:
 La carga directa de archivos PDF generados en el almacenamiento del blob de Azure elimina la necesidad de realizar pasos adicionales manuales o programáticos para transferir archivos, optimizar los flujos de trabajo y mejorar la eficacia.
@@ -309,7 +310,7 @@ El almacenamiento de PDF en el almacenamiento de Azure Blob permite una administ
 
 ### Mejoras en el Editor visual de reglas
 
-* [Integración directa de API](/help/forms/api-integration-in-rule-editor.md): el Editor de reglas visuales de Forms adaptable ahora admite la integración directa de API sin necesidad de un modelo de datos de formulario. Puede conectarse a un extremo de API introduciendo su URL JSON o importando la configuración mediante un comando cURL. Después de la integración, la API se puede invocar usando la acción `Invoke Service`.
+* [Integración directa de API](/help/forms/api-integration-in-rule-editor.md): el editor de reglas visuales de Forms adaptable ahora admite la integración directa de API sin requerir un modelo de datos de formulario. Puede conectarse a un extremo de API introduciendo su URL JSON o importando la configuración mediante un comando cURL. Después de la integración, la API se puede invocar usando la acción `Invoke Service`.
 
 * [Navegación mejorada con compatibilidad con carga útil de evento](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service): la acción **Navegar a** de los controladores de invocación de servicio admite `EVENT_PAYLOAD`, lo que permite a los autores de formularios configurar acciones de seguimiento basadas en respuestas de eventos.
 
@@ -319,11 +320,11 @@ El almacenamiento de PDF en el almacenamiento de Azure Blob permite una administ
 
 ### Compatibilidad con versiones en Forms Manager
 
-Forms Manager ahora admite el control de versiones para Forms adaptable (componentes principales y componentes de Foundation), fragmentos de formulario, temas, plantillas XDP y recursos binarios. Puede crear versiones, ver el historial y restaurar estados anteriores desde la consola de Forms y documentos. Consulte [Administrar versiones de formularios en Forms Manager](/help/forms/manage-form-versions-forms-manager.md).
+Forms Manager ahora admite el control de versiones para Forms adaptable (componentes principales y componentes de base), fragmentos de formulario, temáticas, plantillas XDP y recursos binarios. Puede crear versiones, ver el historial y restaurar estados anteriores desde la consola Forms y documentos. Ver [Administrar versiones de formularios en Forms Manager](/help/forms/manage-form-versions-forms-manager.md).
 
-### Accesibilidad mejorada para los componentes de formulario
+### Accesibilidad mejorada para los componentes del formulario
 
-Los componentes principales de Forms adaptativos presentan marcado semántico compatible con WCAG para grupos de casillas de verificación, grupos de botones de opción y paneles. Estos componentes ahora aprovechan los elementos `<fieldset>` y `<legend>` para establecer relaciones significativas entre las etiquetas de grupo y sus opciones de tecnologías de asistencia. Vea [Compatibilidad con conjuntos de campos y leyendas en Forms adaptable](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
+Los componentes principales de Forms adaptables presentan un marcado semántico compatible con WCAG para grupos de casillas de verificación, grupos de botones de opción y paneles. Estos componentes ahora aprovechan los elementos `<fieldset>` y `<legend>` para establecer relaciones significativas entre las etiquetas de grupo y sus opciones para tecnologías de asistencia. Consulte [Compatibilidad con conjuntos de campos y leyendas en Forms adaptable](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
 
 ## Ver también
 

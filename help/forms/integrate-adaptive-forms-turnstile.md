@@ -4,10 +4,11 @@ description: Mejore la seguridad de los formularios con el servicio Turnstile si
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
-source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '958'
 ht-degree: 26%
 
 ---
@@ -42,7 +43,7 @@ Para configurar Turnstile para AEM Forms, necesita obtener la clave del sitio [T
    1. En el Explorador de configuración, puede seleccionar una carpeta existente o crear una carpeta. Puede crear una carpeta y habilitar la opción Configuraciones de nube para ella o habilitar la opción Configuraciones de nube para una carpeta existente:
 
       * **Para crear una carpeta y habilitar la opción Configuraciones de nube para ella**:
-         1. En el Explorador de configuración, pulse **[!UICONTROL Crear]**.
+         1. En el Explorador de configuración, haga clic en **[!UICONTROL Crear]**.
          1. En el cuadro de diálogo Crear configuración, especifique un nombre, un título y seleccione la opción **[!UICONTROL Configuraciones de nube]**.
          1. Haga clic en **[!UICONTROL Crear]**.
       * Para habilitar la opción Configuraciones de la nube para una carpeta existente, haga lo siguiente:
@@ -52,10 +53,8 @@ Para configurar Turnstile para AEM Forms, necesita obtener la clave del sitio [T
 
 1. Configure Cloud Service:
    1. En la instancia de autor de AEM, vaya a ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** y seleccione **[!UICONTROL Turnstile]**.
-
       ![Torniquete en ui](assets/turnstile-in-ui.png)
    1. Seleccione un contenedor de configuración, creado o actualizado, como se describe en la sección anterior. Seleccione **[!UICONTROL Crear]**.
-
       ![Turnstile de configuración](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Tipo de widget]** como administrado; el tipo de widget puede cambiar según la clave obtenida en el requisito previo, **[!UICONTROL Título]**, **[!UICONTROL Nombre]**, **[!UICONTROL Clave de sitio]** y **[!UICONTROL Clave secreta]** para el servicio de torniquete [obtenido en el requisito previo](#prerequisite). Seleccione **[!UICONTROL Crear]**.
 
@@ -114,6 +113,6 @@ Ahora, solo se permiten para el envío del formulario los formularios legítimos
 * **Q: ¿Puedo usar más de un componente Captcha en un formulario adaptable?**
 * **R:** No se admite el uso de más de un componente Captcha en un formulario adaptable. Además, no se recomienda utilizar un componente Captcha en un fragmento o panel marcado para la carga diferida.
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}

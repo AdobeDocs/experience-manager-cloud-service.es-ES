@@ -3,11 +3,12 @@ title: ¿Cómo reiniciar el SDK de AEM?
 description: Prácticas recomendadas para reiniciar el SDK de AEM
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 5fec2a93-1dda-4240-8690-24a6afae5c2b
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: ht
-source-wordcount: '102'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 96%
 
 ---
 

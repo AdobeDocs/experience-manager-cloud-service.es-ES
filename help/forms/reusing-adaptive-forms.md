@@ -3,12 +3,13 @@ title: ¿Cómo reutilizo las propiedades de metadatos de un formulario adaptable
 description: Descubra cómo reutilizar de forma eficaz un formulario adaptable existente para crear uno nuevo.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '601'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '607'
+ht-degree: 99%
 
 ---
 

@@ -3,11 +3,12 @@ title: Personalizar el aspecto de los formularios adaptables
 description: Utilice el marco de trabajo LESS para Formularios adaptables para personalizar el aspecto de los formularios adaptables.
 feature: Adaptive Forms, Foundation Components
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: efe59f3c-ca69-4bb5-a3ab-e7d8ea3c768e
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '2307'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '2313'
+ht-degree: 99%
 
 ---
 
@@ -861,7 +862,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
   </tr>
   <tr>
    <td><p><code>wizard-nav-bullet-border</code></p> </td>
-   <td><p>Color del borde de la viñeta del navegador del asistente (prefiriendo el pie de ilustración/etiqueta)</p> </td>
+   <td><p>Color del borde de la viñeta del navegador del asistente (que actúan como prefijo del pie de ilustración/etiqueta)</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-progress-bg-color</code></p> </td>

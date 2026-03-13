@@ -2,12 +2,13 @@
 title: ¿Cómo se crea una plantilla de formulario adaptable?
 description: Cree plantillas de formularios adaptables para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 role: User, Developer, Admin
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 99%
+source-wordcount: '2065'
+ht-degree: 98%
 
 ---
 

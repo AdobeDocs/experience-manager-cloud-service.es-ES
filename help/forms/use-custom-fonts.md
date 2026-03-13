@@ -1,13 +1,14 @@
 ---
 title: ¿Cómo se pueden usar fuentes personalizadas en AEM Forms?
 description: Aprenda a añadir fuentes personalizadas al entorno de Forms as a Cloud Service.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 100%
+source-wordcount: '473'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +29,7 @@ Puede [incrustar una fuente](https://adobedocs.github.io/experience-manager-form
 Para agregar fuentes personalizadas al entorno de Cloud Service:
 
 1. Configure y abra el [proyecto de desarrollo local](setup-local-development-environment.md). Puede utilizar cualquier IDE de su elección.
-1. En la estructura de carpetas de nivel superior del proyecto, cree una carpeta (módulo) para guardar fuentes personalizadas y agregue fuentes personalizadas a la carpeta; por ejemplo, fonts/src/main/resources.
+1. En la estructura de carpetas de nivel superior del proyecto, cree una carpeta (módulo) para guardar fuentes personalizadas y agregue fuentes personalizadas a la carpeta; Por ejemplo, fonts/src/main/resources.
    ![Carpeta Fuentes](assets/fonts.png)
 
 1. Abra el archivo pom.xml del módulo de fuentes del proyecto de desarrollo.

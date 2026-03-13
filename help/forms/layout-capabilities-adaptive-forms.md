@@ -2,12 +2,13 @@
 title: ¿Cuáles son las funcionalidades de diseño de los formularios adaptables?
 description: El diseño y el aspecto visual de los formularios adaptables en diferentes dispositivos se rigen por la configuración de diseño. Obtenga información sobre los distintos diseños y cómo aplicarlos.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '858'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '864'
+ht-degree: 99%
 
 ---
 

@@ -4,11 +4,12 @@ description: Palabras clave reservadas que no se pueden usar como identificadore
 topic-tags: author
 role: User, Developer
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 2cd3c322-9c38-42be-9877-a03c9ffc02ae
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 100%
+source-wordcount: '211'
+ht-degree: 98%
 
 ---
 

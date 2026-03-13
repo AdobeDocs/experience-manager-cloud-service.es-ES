@@ -7,11 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '1742'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1748'
+ht-degree: 99%
 
 ---
 

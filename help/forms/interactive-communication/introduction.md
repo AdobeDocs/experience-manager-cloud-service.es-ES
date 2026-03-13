@@ -4,11 +4,12 @@ description: Descubra el Editor de comunicaciones interactivas en AEM Forms. Con
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 4%
+source-wordcount: '419'
+ht-degree: 5%
 
 ---
 
@@ -54,7 +55,7 @@ El editor de comunicaciones interactivas (CI) está diseñado para ofrecer efici
 
 ## Incorporación
 
-La capacidad de comunicación interactiva (CI) está disponible a través del programa de acceso anticipado (EA). Para solicitar acceso, envíe un correo electrónico a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde su ID de correo electrónico oficial con su ID de entorno y el ID de organización. Una vez que Adobe confirme su inscripción, siga la [Documentación del &#x200B;](/help/forms/setup-forms-cloud-service.md) para habilitar la comunicación interactiva en su entorno de AEM Forms.
+La capacidad de comunicación interactiva (CI) está disponible a través del programa de acceso anticipado (EA). Para solicitar acceso, envíe un correo electrónico a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde su ID de correo electrónico oficial con su ID de entorno y el ID de organización. Una vez que Adobe confirme su inscripción, siga la [Documentación del ](/help/forms/setup-forms-cloud-service.md) para habilitar la comunicación interactiva en su entorno de AEM Forms.
 
 ## Próximos pasos
 

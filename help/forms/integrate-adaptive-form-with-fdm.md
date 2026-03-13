@@ -1,18 +1,20 @@
 ---
 title: Cómo integrar el modelo de datos de formulario (FDM) para un formulario con un formulario adaptable
-description: Aprenda a crear formularios basados en un modelo de datos de formulario (FDM). Genere y edite datos de muestra para objetos del modelo de datos en el modelo de datos de formulario (FDM).
+description: Aprenda a crear formularios basados en un modelo de datos de formulario (FDM). Genere y edite datos de muestra para objetos de modelo de datos en el modelo de datos de formulario (FDM).
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+exl-id: f08fb365-8750-4b81-9877-c382e7aebba0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 31%
+source-wordcount: '670'
+ht-degree: 44%
 
 ---
 
 # Integrar formularios con el modelo de datos de formulario
 
-La integración de formularios con un modelo de datos de formulario (FDM) le permite utilizar diversas fuentes de datos back-end para crear un modelo de datos de formulario (FDM). Puede utilizar el modelo de datos de formulario (FDM) como esquema en varios flujos de trabajo de formulario. Configure las fuentes de datos y cree un modelo de datos de formulario (FDM) basado en los objetos y servicios de modelo de datos disponibles en las fuentes de datos. 
+La integración de formularios con un modelo de datos de formulario (FDM) le permite utilizar diversas fuentes de datos back-end para crear un modelo de datos de formulario (FDM). Puede utilizar el modelo de datos de formulario (FDM) como esquema en varios flujos de trabajo de formulario. Configure las fuentes de datos y cree un modelo de datos de formulario (FDM) basado en los servicios y objetos de modelo de datos disponibles en las fuentes de datos. 
 
 ## Ventajas de integrar Forms con el modelo de datos de formulario (FDM)
 
@@ -29,11 +31,11 @@ Antes de configurar el formulario con el modelo de datos de formulario, asegúre
 
 * [Configuración de la fuente de datos](/help/forms/configure-data-sources.md): configure la fuente de datos para conectar el formulario a los datos de back-end.
 * [Creación de un modelo de datos de formulario (FDM)](/help/forms/create-form-data-models.md): cree un modelo de datos mediante objetos y servicios de datos de la fuente de datos configurada.
-* [Configuración de objetos y servicios de modelo de datos](/help/forms/work-with-form-data-model.md): asigne los objetos y servicios de modelo de datos para garantizar un flujo de datos fluido entre el formulario y la fuente de datos.
+* [Configuración de servicios y objetos de modelo de datos](/help/forms/work-with-form-data-model.md): asigne los servicios y objetos de modelo de datos para garantizar un flujo de datos fluido entre el formulario y la fuente de datos.
 
 >[!BEGINTABS]
 
->[!TAB Componente Base]
+>[!TAB Componente base]
 
 Realice los siguientes pasos para configurar el modelo de datos de formulario con el formulario adaptable basado en el componente de base como:
 
@@ -68,20 +70,20 @@ Realice los siguientes pasos para configurar el modelo de datos de formulario co
 1. Abra el formulario adaptable para editarlo.
 1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
 
-   Aparecerá el cuadro de diálogo **Propiedades del formulario**.
+   Aparece el cuadro de diálogo **Propiedades del formulario**.
 
    >[!NOTE]
    >
-   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
-   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
+   > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar las extensiones del editor universal.
 
 1. Haga clic en la pestaña **Envío** y seleccione **[!UICONTROL Enviar mediante el modelo de datos de formulario]**.
 
-   ![OneDrive GIF](/help/forms/assets/submit-uisng-fdm-ue.png)
+   ![GIF de OneDrive](/help/forms/assets/submit-uisng-fdm-ue.png)
 Si selecciona **Guardar archivos adjuntos con el nombre original**, los archivos adjuntos se almacenarán en la carpeta utilizando sus nombres de archivo originales. También puede guardar el documento de registro (DoR) en Azure Blob Storage.
 
 1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
-1. Haga clic en **[!UICONTROL Guardar y cerrar]**
+1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
 Para obtener instrucciones detalladas sobre cómo integrar formularios creados en el editor universal, consulte el artículo [Integrar Forms con el modelo de datos de formulario en el editor universal](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
 

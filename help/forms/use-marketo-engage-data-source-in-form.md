@@ -4,11 +4,12 @@ description: Aprenda a utilizar el esquema de Marketo Engage en formularios adap
 keywords: Utilizar la fuente de datos de Marketo Engage en formularios adaptables, Conexión de una fuente de datos de instancia de Marketo con un formulario, Conectar un formulario a Marketo.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 100%
+source-wordcount: '770'
+ht-degree: 99%
 
 ---
 

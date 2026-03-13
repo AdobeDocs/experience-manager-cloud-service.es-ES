@@ -4,11 +4,12 @@ description: Obtenga información sobre cómo configurar la acción de envío de
 keywords: Enviar datos para que Marketo Engage configure la acción de envío como Enviar a Marketo Engage
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 14%
+source-wordcount: '778'
+ht-degree: 24%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 14%
 
 ![Flujo de trabajo](/help/forms/assets/workflow-marketo-3.png)
 
-El editor de Forms adaptable proporciona la acción de envío **Enviar a Marketo Engage** para enviar datos de Forms adaptables a Adobe Marketo Engage para su procesamiento. Puede configurar un formulario adaptable existente para enviar datos a [Adobe Marketo Engage](https://experienceleague.adobe.com/es/docs/marketo/using/home) en el envío.
+El editor de Forms adaptable proporciona la acción de envío **Enviar a Marketo Engage** para enviar datos de Forms adaptables a Adobe Marketo Engage para su procesamiento. Puede configurar un formulario adaptable existente para enviar datos a [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) en el envío.
 
 Hay disponibles varias acciones de envío listas para usar para administrar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
 
@@ -36,12 +37,12 @@ Requisito previo para configurar la acción de envío en Marketo Engage:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
 
-<span> Este vídeo solo es aplicable a los componentes principales. Para componentes UE/Foundation, consulte el artículo.</span>
+<span> Este vídeo solo es aplicable a los componentes principales. Para componentes del editor universal o de base, consulte el artículo.</span>
 
 
 >[!BEGINTABS]
 
->[!TAB Componente Base]
+>[!TAB Componente base]
 
 Puede configurar la acción de envío de un formulario adaptable basado en componentes de base para enviar datos a Adobe Marketo Engage. Para configurar la acción de envío en Marketo Engage, realice los siguientes pasos:
 
@@ -73,12 +74,12 @@ Puede configurar la acción de envío de un formulario adaptable creado en el Ed
 
 1. Abra el formulario adaptable para editarlo.
 1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
-Aparecerá el cuadro de diálogo **Propiedades del formulario**.
+Aparece el cuadro de diálogo **Propiedades del formulario**.
 
    >[!NOTE]
    >
-   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
-   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
+   > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar las extensiones del editor universal.
 
 1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Enviar a Marketo Engage]**.
 
@@ -97,7 +98,7 @@ Después de configurar la acción de envío para el formulario adaptable como **
 
 ## Siguiente paso
 
-También puede conectar un formulario adaptable con la [biblioteca de Munchkin](https://experienceleague.adobe.com/es/docs/marketo/using/product-docs/administration/setup/munchkin) para hacer un seguimiento del número de visitas, clics y envíos de formularios.
+También puede conectar un formulario adaptable con la [biblioteca de Munchkin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) para hacer un seguimiento del número de visitas, clics y envíos de formularios.
 
 ## Artículos relacionados
 

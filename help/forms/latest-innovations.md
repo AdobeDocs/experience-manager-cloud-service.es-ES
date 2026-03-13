@@ -3,11 +3,12 @@ title: Descubra las últimas innovaciones en Adobe Experience Manager Forms as a
 description: Descubra las últimas funcionalidades de  [!DNL AEM Forms]  as a Cloud Service para crear, administrar y publicar formularios de clase empresarial y procesos empresariales.
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 100%
+source-wordcount: '1209'
+ht-degree: 99%
 
 ---
 

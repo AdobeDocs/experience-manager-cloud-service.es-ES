@@ -3,12 +3,13 @@ title: 'Form Analytics con Adobe Analytics y AEM Forms: Guía completa'
 seo-title: "Form Analytics: Track Performance, Boost Conversions with Adobe Analytics & AEM Forms"
 description: Guía completa para el análisis de formularios con Adobe Analytics y AEM Forms. Realice un seguimiento del rendimiento del formulario, analice el comportamiento del usuario, reduzca el abandono y optimice las conversiones.
 keywords: análisis de formularios, seguimiento del rendimiento del formulario, análisis de abandono de formularios, optimización de la conversión, análisis del comportamiento del usuario, formularios Adobe Analytics, AEM Forms analytics
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '7898'
+source-wordcount: '7904'
 ht-degree: 18%
 
 ---
@@ -70,7 +71,7 @@ El análisis de formulario efectivo se centra en métricas que afectan directame
 
 **Métricas de comportamiento avanzadas**
 
-- **Análisis del canal de conversión**: el recorrido del usuario a través de formularios de varios pasos muestra patrones de progresión y entrega
+- **Análisis de conversión de Funnel**: el recorrido del usuario a través de formularios de varios pasos muestra patrones de progresión y entrega
 - **Rendimiento del dispositivo y el explorador**: factores técnicos que afectan a la finalización en diferentes entornos de usuario
 - **Profundidad de participación del usuario**: tiempo empleado en formularios, patrones de interacción de campos e indicadores de atención del usuario
 
@@ -353,7 +354,7 @@ Más allá de los eventos de formulario estándar, Adobe Analytics permite un se
 
 - **Métricas específicas de la empresa**: defina eventos personalizados usando el editor de reglas para rastrear interacciones de formularios específicas de la organización
 - **Asignación de Recorrido de usuario**: cree eventos personalizados para realizar el seguimiento de rutas de usuario complejas en formularios de varios pasos
-- **Análisis del canal de conversión**: configure eventos personalizados para medir puntos de conversión específicos y etapas de entrega
+- **Análisis de conversión de Funnel**: configure eventos personalizados para medir puntos de conversión específicos y etapas de entrega
 - **Eventos de integración**: Rastree las interacciones de formularios con sistemas y API externos
 
 ### Funciones de informes avanzadas
@@ -362,7 +363,7 @@ Adobe Analytics proporciona funciones de creación de informes de nivel empresar
 
 - **Paneles en tiempo real**: supervise el rendimiento del formulario y las interacciones del usuario a medida que ocurran
 - **Análisis de segmentación**: Analice el rendimiento del formulario en diferentes grupos de usuarios, fuentes de tráfico y zonas demográficas
-- **Visualización de canal**: Visualice la progresión del usuario a través de formularios de varios pasos e identifique oportunidades de optimización
+- **Visualización de Funnel**: Visualice la progresión del usuario a través de formularios de varios pasos e identifique oportunidades de optimización
 - **Análisis de cohorte**: efectúe el seguimiento de las mejoras de rendimiento de los formularios a lo largo del tiempo y mida el impacto en la optimización
 - **Seguimiento entre dispositivos**: Descubra cómo los usuarios interactúan con los formularios en diferentes dispositivos y sesiones
 
@@ -465,12 +466,12 @@ Las Forms que se cargan en menos de 3 segundos tienen tasas de finalización un 
 - **Análisis de tipo de usuario**: compare el rendimiento entre usuarios nuevos y recurrentes
 - **Información demográfica**: comprenda cómo los distintos grupos de usuarios interactúan con los formularios
 
-**Análisis de canal de conversión**
+**Análisis de Funnel de conversión**
 
 - **Progresión de formulario de varios pasos**: haga un seguimiento del avance del usuario a través de formularios complejos
 - **Conversión paso a paso**: mida las tasas de finalización en cada paso del formulario
-- **Optimización de canal**: identifique y solucione cuellos de botella en la progresión del formulario
-- **Integración de pruebas A/B**: compare el rendimiento del canal en las variaciones del formulario.
+- **Optimización de Funnel**: identifique y solucione los cuellos de botella en la progresión del formulario
+- **Integración de pruebas A/B**: compare el rendimiento de funnel entre las variaciones de los formularios
 
 **Métricas de impacto empresarial**
 
@@ -850,7 +851,7 @@ Es crucial comprender cómo interpretar y actuar sobre los datos de análisis de
 
 **Panel de indicadores clave de rendimiento (KPI)**
 
-- **Canal de conversión de formularios**: Visualice la progresión del usuario a través del proceso de finalización del formulario
+- **Funnel de conversión de formularios**: Visualice la progresión del usuario a través del proceso de finalización del formulario
 - **Análisis de abandono**: identifique puntos específicos en los que los usuarios dejan formularios incompletos
 - **Tendencias de rendimiento**: efectúe el seguimiento de los cambios de rendimiento de los formularios a lo largo del tiempo e identifique los patrones
 - **Análisis comparativo**: compare el rendimiento en diferentes formularios, períodos de tiempo y segmentos de usuarios
@@ -1021,7 +1022,7 @@ Esta sección completa de preguntas frecuentes aborda preguntas comunes sobre la
 
 **Q: ¿Cuál es la diferencia entre el análisis de formularios y el análisis general de sitios web?**
 
-R: El análisis de formularios se centra específicamente en las interacciones de los usuarios dentro de los formularios, y proporciona información detallada sobre el comportamiento a nivel de campo, los patrones de finalización y los puntos de abandono. Mientras que el análisis general de sitios web realiza un seguimiento de las vistas de página y los recorridos generales del usuario, el análisis de formularios ofrece datos granulares sobre las experiencias de usuario específicas del formulario, los errores de validación, los tiempos de finalización de los campos y el análisis del canal de conversión dentro de los propios formularios.
+R: El análisis de formularios se centra específicamente en las interacciones de los usuarios dentro de los formularios, y proporciona información detallada sobre el comportamiento a nivel de campo, los patrones de finalización y los puntos de abandono. Mientras que el análisis de sitio web general realiza un seguimiento de las vistas de página y los recorridos generales del usuario, el análisis de formularios ofrece datos granulares sobre las experiencias de usuario específicas del formulario, los errores de validación, los tiempos de finalización de los campos y el análisis de funnel de conversión dentro de los propios formularios.
 
 **Q: ¿Necesito experiencia técnica para implementar el análisis de formularios con Adobe Analytics?**
 
@@ -1043,7 +1044,7 @@ R: Sí, Adobe Analytics admite el seguimiento de formularios entre dominios medi
 
 **Q: ¿Cómo administro el análisis de formularios para formularios de varios pasos o de estilo asistente?**
 
-R: Los formularios de varios pasos requieren una configuración especial para realizar un seguimiento de la progresión en cada paso. Implemente eventos personalizados para la finalización de pasos, configure el análisis de embudo para visualizar puntos de entrega entre pasos y utilice variables personalizadas para rastrear las rutas del usuario a través del asistente de formularios. Adobe Analytics proporciona directrices específicas para el seguimiento de formularios de varias páginas.
+R: Los formularios de varios pasos requieren una configuración especial para realizar un seguimiento de la progresión en cada paso. Implemente eventos personalizados para la finalización de pasos, configure el análisis de funnel para visualizar puntos de entrega entre pasos y utilice variables personalizadas para rastrear las rutas del usuario a través del asistente de formularios. Adobe Analytics proporciona directrices específicas para el seguimiento de formularios de varias páginas.
 
 **Q: ¿Qué sucede con los datos de Analytics si un usuario completa un formulario sin conexión o con JavaScript deshabilitado?**
 
@@ -1083,7 +1084,7 @@ R: Las SPA requieren una configuración especial para el análisis de formulario
 
 **Q: ¿Qué debo hacer si el análisis de formularios está afectando el rendimiento de carga de la página?**
 
-R: Optimice la implementación de Analytics cargando scripts de Analytics de forma asíncrona, implementando la carga diferida para el seguimiento no crítico, reduciendo el número de variables y eventos personalizados, utilizando configuraciones de reglas eficientes en Adobe Launch y monitorizando los elementos vitales web principales para garantizar que Analytics no afecte negativamente a la experiencia del usuario.
+R: Optimizar la implementación de Analytics al cargar scripts de Analytics de forma asíncrona, implementar la carga diferida para el seguimiento no crítico, reducir el número de variables y eventos personalizados, utilizar configuraciones de reglas eficientes en Adobe Launch y monitorizar Core Web Vitals para garantizar que Analytics no afecte negativamente a la experiencia del usuario.
 
 **Q: ¿Cómo puedo asegurar el cumplimiento de las regulaciones de privacidad por parte de Forms Analytics?**
 

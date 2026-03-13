@@ -3,12 +3,13 @@ title: Integración del flujo de trabajo de AEM con un formulario adaptable
 description: Explore el proceso de inicio automatizado del flujo de trabajo con la acción de envío de formularios de AEM Forms.
 keywords: Flujo de trabajo de AEM, Integración del formulario adaptable con el flujo de trabajo de AEM, Invocar la acción de envío del flujo de trabajo de AEM
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
-workflow-type: ht
-source-wordcount: '1434'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1440'
+ht-degree: 99%
 
 ---
 
@@ -73,7 +74,7 @@ Para configurar el proceso automatizado con el [flujo de trabajo de AEM](https:/
 
 >[!TAB Componente principal]
 
-Para configurar el proceso automatizado con el [flujo de trabajo de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es#extending-aem) para un formulario adaptable basado en componentes de base, realice los siguientes pasos:
+Para configurar el proceso automatizado con el [flujo de trabajo de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=es#extending-aem) para un formulario adaptable basado en componentes principales, realice los siguientes pasos:
 
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
@@ -110,7 +111,7 @@ Aparece el cuadro de diálogo **Propiedades del formulario**.
 
    >[!NOTE]
    >
-   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
+   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
    > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar las extensiones del editor universal.
 
 1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Invocar un flujo de trabajo de AEM]**.

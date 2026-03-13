@@ -3,13 +3,14 @@ title: Cómo configurar la autenticación de servidor a servidor OAuth
 description: Obtenga información sobre cómo configurar la autenticación de servidor a servidor OAuth para Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '839'
 ht-degree: 7%
 
 ---
-
 
 # Autenticación de servidor a servidor OAuth
 
@@ -19,7 +20,7 @@ La autenticación de servidor a servidor OAuth permite un acceso seguro y basado
 
 Antes de empezar, asegúrese de que se cumplen los siguientes requisitos previos:
 
-* Asegúrese de que tiene [acceso a Adobe Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/access-rights) específico para el entorno que utiliza.
+* Asegúrese de que tiene [acceso a Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) específico para el entorno que utiliza.
 * [Asigne el rol de Administrador del sistema o Desarrollador en Adobe Admin Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) para habilitar el acceso a Adobe Developer Console.
 
 ## Cómo generar un token de acceso mediante la autenticación de servidor a servidor OAuth
@@ -177,7 +178,7 @@ Genere los tokens de acceso manualmente en Adobe Developer Console:
 
 >[!TAB Para Producción]
 
-Generar tokens mediante programación usando la API [Adobe IMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Generar tokens mediante programación usando la API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenciales requeridas:**
 

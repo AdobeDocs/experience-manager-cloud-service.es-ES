@@ -3,10 +3,11 @@ title: ¿Cómo se utiliza la API de sincronización de salida AFP?
 description: Aprenda a utilizar la API de sincronización de salida AFP para recuperar y sincronizar representaciones de salida.
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '259'
 ht-degree: 13%
 
 ---

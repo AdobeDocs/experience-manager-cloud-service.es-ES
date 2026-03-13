@@ -5,10 +5,11 @@ keywords: generador de formularios, componentes principales, crear formularios, 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2352'
+source-wordcount: '2358'
 ht-degree: 88%
 
 ---
@@ -56,7 +57,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Crear un formulario adaptable  {#create-an-adaptive-form-core-components}

@@ -3,11 +3,12 @@ title: Creación de paneles repetibles en los componentes principales del formul
 description: Aprenda a crear secciones o campos repetibles en un formulario adaptable.
 role: Developer, Developer, Admin, User
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1258'
-ht-degree: 100%
+source-wordcount: '1264'
+ht-degree: 99%
 
 ---
 

@@ -4,11 +4,12 @@ description: Obtenga información sobre ¿cómo configurar Adobe Acrobat Sign p
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 100%
+source-wordcount: '2203'
+ht-degree: 99%
 
 ---
 

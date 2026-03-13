@@ -6,12 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
 role: User, Developer
-source-git-commit: bcd3a2a813833d7c1705e45829bcf769645cd154
-workflow-type: ht
-source-wordcount: '2150'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '2156'
+ht-degree: 99%
 
 ---
 
@@ -101,7 +102,7 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
    * **Modelo de formulario**: En función del modelo de formulario para el formulario adaptable, este campo muestra **Esquema XML**, **Plantilla de formulario** o **Ninguno**. Es un campo no editable.
 
    * **Raíz del modelo de fragmento**: Solo aparece en formularios adaptables basados en XSD. Especifica la raíz del modelo de fragmento. Puede elegir **/** o el tipo complejo XSD de la lista desplegable. Solo puedes reutilizar el fragmento en otro formulario adaptable si seleccionas el tipo complejo como raíz del modelo de fragmento.
-Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz se podrá ver en la pestaña Modelo de datos del formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado serán visibles en la pestaña Modelo de datos de formulario adaptable.
+Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz se podrá ver en la pestaña Modelo de datos de formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado serán visibles en la pestaña Modelo de datos de formulario adaptable.
 
    * **XSD Ref**: Solo aparece en formularios adaptables basados en XSD. Muestra la ubicación del esquema XML.
 

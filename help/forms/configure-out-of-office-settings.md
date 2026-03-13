@@ -1,13 +1,14 @@
 ---
 title: Establecer la configuración del ajuste fuera de la oficina en AEM Forms
 description: Delegue tareas mientras está ausente o fuera de la oficina para ejecutar el flujo de trabajo sin problemas.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 100%
+source-wordcount: '879'
+ht-degree: 99%
 
 ---
 
@@ -72,4 +73,4 @@ Ahora, los elementos que se le hayan asignado durante el período de tiempo que 
 ## Restricciones {#limitations}
 
 * No se admite la asignación de elementos a un grupo.
-* Actualmente no se admite la activación de la configuración de Fuera de la oficina para tareas de proyecto.
+* Actualmente no se admite la habilitación de la configuración de Fuera de la oficina para tareas de proyecto.

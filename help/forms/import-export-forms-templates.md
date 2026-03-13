@@ -4,11 +4,12 @@ description: Obtenga información sobre cómo migrar Forms adaptable, PDF form, 
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '1073'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1079'
+ht-degree: 99%
 
 ---
 

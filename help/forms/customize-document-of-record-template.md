@@ -3,13 +3,14 @@ title: Cómo personalizar la plantilla de documento de registro generada automá
 description: Obtenga información sobre cómo descargar, personalizar y volver a cargar la plantilla de documento de registro (DoR) generada automáticamente para Forms adaptable mediante Adobe Forms Designer.
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
-source-git-commit: 51ec9ef76a8f3f9b7bf2cdc25b03f72e286f586f
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+exl-id: 2416add3-0b9d-4a8d-a84d-d65c0762d8e8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 4%
+source-wordcount: '852'
+ht-degree: 5%
 
 ---
-
 
 # Personalizar la plantilla del documento de registro generada automáticamente
 
@@ -126,4 +127,3 @@ Para confirmar que la plantilla personalizada se aplica correctamente:
 * [Generar documento de registro para Forms adaptable (componentes de base)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Plantilla base de un documento de registro](/help/forms/generate-document-of-record-core-components.md#base-template-of-a-document-of-record)
 * [Personalizar información de marca en el documento de registro](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)
-

@@ -4,11 +4,12 @@ description: Solucionar problemas relacionados con el almacenamiento en caché p
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 100%
+source-wordcount: '387'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +31,7 @@ Para resolver el problema, después de publicar el fragmento de contenido o el f
 
 ## Solo se almacena en caché la primera instancia de un formulario adaptable {#only-first-instance-cached}
 
-Cuando la URL del formulario adaptable no contiene información de localización y la opción Usar configuración regional del explorador está activada en el Administrador de configuración, se proporciona una versión localizada del formulario adaptable y se almacena en caché y se envía a todos los usuarios posteriores una instancia del formulario adaptable basada en la primera solicitud (configuración regional del explorador solicitada).
+Cuando la URL del formulario adaptable no contiene información de localización y la opción Usar configuración regional del explorador está habilitada en el Administrador de configuración, se proporciona una versión localizada del formulario adaptable y se almacena en caché y se envía a todos los usuarios posteriores una instancia del formulario adaptable basada en la primera solicitud (configuración regional del explorador solicitada).
 
 Siga estos pasos para resolver el problema:
 

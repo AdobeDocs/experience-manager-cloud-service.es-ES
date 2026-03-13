@@ -4,11 +4,12 @@ description: El componente Campo de fecha y hora del Editor de comunicaciones in
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 2%
+source-wordcount: '682'
+ht-degree: 3%
 
 ---
 

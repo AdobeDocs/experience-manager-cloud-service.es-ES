@@ -4,10 +4,11 @@ description: El editor de reglas de formularios adaptables permite agregar un co
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 8585ec309b04e04b9a8dcaa43063369d1c9d5d24
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1180'
 ht-degree: 65%
 
 ---
@@ -94,6 +95,6 @@ Aunque puede lograr la mayoría de los casos de uso utilizando cualquier constru
 
 Para comprender cómo usar la interfaz de usuario para escribir y administrar reglas en un editor de reglas, consulte el artículo [Interfaz de usuario del editor de reglas para Forms adaptable basado en componentes principales](/help/forms/rule-editor-core-components-user-interface.md).
 
-## Consulte también
+## Ver también
 
 {{see-also-rule-editor}}

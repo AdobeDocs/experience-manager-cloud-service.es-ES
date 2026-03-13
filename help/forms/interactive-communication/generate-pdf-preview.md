@@ -4,11 +4,12 @@ description: Vista previa de PDF en el Editor de comunicaciones interactivas con
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 3%
+source-wordcount: '333'
+ht-degree: 4%
 
 ---
 
@@ -46,7 +47,7 @@ Obtenga una vista previa de las comunicaciones interactivas sin datos, datos loc
 
 +++&#x200B;2. Vista previa con datos JSON locales
 
-2.1. Prepare un archivo JSON estructurado. Como referencia, puede copiar los datos de ejemplo del esquema JSON [(FDM)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizado para la comunicación.
+2.1. Prepare un archivo JSON estructurado. Como referencia, puede copiar los datos de ejemplo del esquema JSON [(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizado para la comunicación.
 
 2.2. En el Editor IC, vaya a **Vista previa de PDF** > Uso de datos locales.
 

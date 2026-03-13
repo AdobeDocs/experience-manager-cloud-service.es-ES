@@ -4,10 +4,11 @@ description: Generar, manipular y proteger documentos con las API de comunicacio
 Keywords: document generation, PDF manipulation, document security, batch processing, document conversion, PDF/A compliance
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2789'
+source-wordcount: '2795'
 ht-degree: 94%
 
 ---

@@ -1,19 +1,20 @@
 ---
-title: Cree su primera comunicación interactiva
+title: Crear su primera comunicación interactiva
 description: Diseñe comunicaciones dinámicas impulsadas por datos con facilidad con las comunicaciones interactivas de AEM Forms
 feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 48%
+source-wordcount: '767'
+ht-degree: 50%
 
 ---
 
-
-# Cree su primera comunicación interactiva
+# Crear su primera comunicación interactiva
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444094/)
@@ -70,7 +71,7 @@ El editor de comunicaciones interactivas proporciona varias plantillas OOTB. Pue
 
 Una vez creados todos los componentes básicos, como el modelo de datos de formulario, los fragmentos de documento y las plantillas para la versión web, puede empezar a crear una comunicación interactiva. Para empezar a crear una comunicación interactiva:
 
-1. Inicie sesión en su entorno as a Cloud Service de AEM Forms.
+1. Inicie sesión en el entorno de as a Cloud Service de AEM Forms.
 1. Vaya a Forms > Forms y documentos
 1. Haga clic en **Crear** y seleccione **Documento de comunicación**. Se le mostrará una pantalla de configuración para configurar las siguientes opciones:
 

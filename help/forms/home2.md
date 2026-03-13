@@ -8,11 +8,12 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 0%
+source-wordcount: '2329'
+ht-degree: 1%
 
 ---
 

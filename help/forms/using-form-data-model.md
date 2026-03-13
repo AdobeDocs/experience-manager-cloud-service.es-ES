@@ -4,10 +4,11 @@ description: Aprenda a crear formularios adaptables y fragmentos de formulario a
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1423'
 ht-degree: 90%
 
 ---
@@ -148,7 +149,7 @@ Para configurar la acción de envío del modelo de datos de formulario:
 1. Especifique el **[!UICONTROL modelo de datos para enviar]**.
 1. Haga clic en **[!UICONTROL Listo]**.
 
-Al enviar el formulario, los datos del objeto de modelo de datos configurado se escriben en la fuente de datos correspondiente. Además, puede enviar a la fuente de datos un archivo adjunto de formulario mediante un modelo de datos de formulario (FDM) y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL AEM Forms] &#x200B;](data-integration.md).
+Al enviar el formulario, los datos del objeto de modelo de datos configurado se escriben en la fuente de datos correspondiente. Además, puede enviar a la fuente de datos un archivo adjunto de formulario mediante un modelo de datos de formulario (FDM) y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL AEM Forms] ](data-integration.md).
 
 <!--![data-submission](assets/data-submission.png)-->
 

@@ -3,12 +3,13 @@ title: Agregar tablas a un formulario adaptable
 description: Utilice el componente Tabla para agregar tablas a un formulario adaptable. Junto con ayudar con el diseño adaptable, el componente de tabla permite añadir elementos de tabla XDP.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '2476'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '2487'
+ht-degree: 98%
 
 ---
 
@@ -103,8 +104,8 @@ Puede ordenar los datos en función de cualquier columna de una tabla del formul
 La ordenación se puede aplicar a columnas de la tabla que contengan lo siguiente:
 
 * Texto estático
-* Propiedades del objeto del modelo de datos
-* Combinación de texto estático y propiedades del objeto del modelo de datos
+* Propiedades del objeto de modelo de datos
+* Combinación de texto estático y propiedades del objeto de modelo de datos
 
 Para aplicar la ordenación en columnas de la tabla, las celdas de la columna de la tabla deben contener cualquiera de los siguientes componentes: cuadro numérico, paso numérico, campo de entrada de fecha, selector de fecha, texto o cuadro de texto.
 
@@ -133,7 +134,7 @@ Siga estos pasos para configurar el ancho de columna de una tabla:
 
 1. En la pestaña **[!UICONTROL Contenido]**, seleccione el componente **[!UICONTROL Tabla]** y seleccione el icono ![Configurar](assets/configure-icon.svg).
 
-1. Escriba la lista de valores separados por comas en el campo **[!UICONTROL Anchura de columna]** para especificar el ancho proporcionado de cada columna de la tabla. Por ejemplo, para una tabla que incluya 3 columnas, especificando 2, 4, 6 como el valor en el campo **[!UICONTROL Anchura de columna]** configurará el ancho de las columnas como 2/12 para la primera columna, 4/12 para la segunda columna y 6/12 para la tercera columna. 2/12, ya que la anchura de la primera columna se refiere a una sexta parte de la anchura de la tabla. Del mismo modo, 4/12 establece el ancho de la segunda columna como un tercio del ancho de la tabla y 6/12 establece el ancho de la tercera columna como la mitad del ancho de la tabla.
+&#x200B;1. Escriba la lista de valores separados por comas en el campo **[!UICONTROL Anchura de columna]** para especificar el ancho proporcionado de cada columna de la tabla. Por ejemplo, para una tabla que incluya 3 columnas, especificando 2, 4, 6 como el valor en el campo **[!UICONTROL Anchura de columna]** configurará el ancho de las columnas como 2/12 para la primera columna, 4/12 para la segunda columna y 6/12 para la tercera columna. 2/12, ya que la anchura de la primera columna se refiere a una sexta parte de la anchura de la tabla. Del mismo modo, 4/12 establece el ancho de la segunda columna como un tercio del ancho de la tabla y 6/12 establece el ancho de la tercera columna como la mitad del ancho de la tabla.
 
 ## Configurar el estilo de la tabla {#configure}
 

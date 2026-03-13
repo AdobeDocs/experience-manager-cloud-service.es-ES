@@ -5,22 +5,24 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+exl-id: 640130c0-e5d2-4af1-8ed9-c3bdde31d958
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 4%
+source-wordcount: '759'
+ht-degree: 13%
 
 ---
 
-# Plantillas de correo electrónico en Forms adaptable
+# Plantillas de correo electrónico en formularios adaptables
 
-El Forms adaptable permite utilizar plantillas de correo electrónico de texto sin formato y de HTML. Las plantillas de correo electrónico de HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con Forms adaptable, puede cargar un archivo que contenga una plantilla de HTML o utilizar un editor de texto sin formato para crear estas plantillas.
+El Forms adaptable permite utilizar plantillas de correo electrónico de texto sin formato y de HTML. Las plantillas de correo electrónico HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con los formularios adaptables, puede cargar un archivo que contenga una plantilla HTML o utilizar un editor de texto sin formato para crear estas plantillas.
 
-![plantillas de correo electrónico de HTML](/help/forms/assets/html-email.png)
+![Plantilla de correo electrónico HTML](/help/forms/assets/html-email.png)
 
 Este artículo le ayuda a configurar y utilizar plantillas de correo electrónico en Forms adaptable. Al final, usted será capaz de:
 
-* [Configuración de una plantilla de HTML para un formulario adaptable](#configure-an-html-template-for-an-adaptive-form)
+* [Configurar una plantilla de HTML para un formulario adaptable](#configure-an-html-template-for-an-adaptive-form)
 * [Configurar una plantilla de correo electrónico de texto sin formato para un formulario adaptable](#configure-a-plain-text-template-for-an-adaptive-form)
 * [Uso de datos de formularios en las plantillas de correo electrónico](#use-form-data-in-your-email-templates)
 
@@ -29,16 +31,16 @@ A continuación se muestra una breve descripción general de los pasos involucra
 
 1. Abra el formulario adaptable para editarlo.
 1. Configurar la acción de envío [Enviar correo electrónico](/help/forms/configure-submit-action-send-email.md).
-1. Seleccione o cargue una plantilla de HTML, o introdúzcala manualmente.
+1. Seleccione o cargue una plantilla de HTML, o introduzca manualmente la plantilla de correo electrónico.
 1. Pruebe la configuración de correo electrónico.
 
-## Configuración de una plantilla de HTML para un formulario adaptable
+## Configurar una plantilla de HTML para un formulario adaptable
 
 Puede configurar un formulario adaptable para enviar un correo electrónico tras el envío mediante la acción de envío [**Enviar correo electrónico**](/help/forms/configure-submit-action-send-email.md). La acción proporciona dos métodos para configurar una plantilla de HTML:
 
 ### Opción 1: Seleccionar un archivo que contenga la plantilla de HTML
 
-Antes de continuar, asegúrese de haber cargado la plantilla de HTML en el entorno de AEM Forms.
+Antes de continuar, asegúrese de haber cargado la plantilla de HTML en su entorno de AEM Forms.
 
 1. Abra el formulario adaptable para editarlo.
 1. Vaya al **Explorador de contenido**, seleccione el **Contenedor de la guía** y pulse el icono de propiedades. Aparece un cuadro de diálogo con el título `Adaptive Form Container`.
@@ -48,10 +50,10 @@ Antes de continuar, asegúrese de haber cargado la plantilla de HTML en el entor
 
 1. Habilite la opción **Usar plantilla externa**.
 1. Habilite la opción **Usar plantilla de HTML**.
-1. Haga clic en el icono de la carpeta para la opción Ruta de la plantilla externa y busque y seleccione la plantilla del HTML.
+1. Haga clic en el icono de la carpeta para la opción Ruta de la plantilla externa y busque y seleccione la plantilla de HTML.
 1. Haga clic en **Listo** para guardar la configuración.
 
-La plantilla del HTML ahora está configurada para el formulario adaptable.
+La plantilla de HTML ahora está configurada para el formulario adaptable.
 
 ### Opción 2: introducir o pegar manualmente una plantilla de HTML
 
@@ -59,7 +61,7 @@ La plantilla del HTML ahora está configurada para el formulario adaptable.
 1. Vaya al **Explorador de contenido**, seleccione el **Contenedor de la guía** y pulse el icono de propiedades. Aparece un cuadro de diálogo con el título `Adaptive Form Container`.
 1. Vaya a la pestaña **Envío** y seleccione la acción de envío **Enviar correo electrónico**.
 1. Habilite la opción **Usar plantilla de HTML**.
-1. Escriba o pegue su código de HTML directamente en el cuadro **Plantilla de correo electrónico** proporcionado.
+1. Escriba o pegue su código HTML directamente en el cuadro **Plantilla de correo electrónico** proporcionado.
 
 
 ## Configurar una plantilla de texto sin formato para un formulario adaptable
@@ -68,7 +70,7 @@ Puede configurar un formulario adaptable para enviar un correo electrónico tras
 
 ### Opción 1: Seleccionar un archivo que contenga la plantilla
 
-Antes de continuar, asegúrese de haber cargado la plantilla de HTML en el entorno de AEM Forms.
+Antes de continuar, asegúrese de haber cargado la plantilla de HTML en su entorno de AEM Forms.
 
 1. Abra el formulario adaptable para editarlo.
 1. Vaya al **Explorador de contenido**, seleccione el **Contenedor de la guía** y pulse el icono de propiedades. Aparece un cuadro de diálogo con el título `Adaptive Form Container`.
@@ -94,7 +96,7 @@ Puede incluir datos de formulario en las plantillas de correo electrónico media
 * ${email}: El valor del campo denominado &quot;correo electrónico&quot;.
 * ${message}: El valor del campo denominado &quot;message&quot;.
 
-### Plantilla de correo electrónico del HTML de muestra
+### Plantilla de correo electrónico de HTML de muestra
 
 Este es un ejemplo de una plantilla de correo electrónico de HTML que utiliza marcadores de posición de datos de formulario:
 
@@ -158,5 +160,5 @@ Este es un ejemplo de plantilla de correo electrónico de texto sin formato:
 * Haga que la plantilla sea adaptable para disfrutar de una mejor experiencia en dispositivos móviles.
 * Utilice herramientas como Litmus o Correo electrónico con ácido para previsualizar el correo electrónico en varios clientes de correo electrónico.
 * Asegúrese de que los nombres de marcador de posición coincidan exactamente con los nombres de campo de formulario.
-* Compruebe si faltan etiquetas o si son incorrectas en la plantilla del HTML.
+* Compruebe si faltan etiquetas o si son incorrectas en la plantilla de HTML.
 * Compruebe que la acción de envío [Enviar correo electrónico](/help/forms/configure-submit-action-send-email.md) esté configurada correctamente.

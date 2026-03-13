@@ -3,10 +3,11 @@ title: Conexión de una base de datos a  [!DNL AEM Forms]  as a Cloud Servic
 description: Recupere y guarde datos en servicios web RESTful, servicios web basados en SOAP y servicios OData desde un formulario adaptable o un flujo de trabajo de AEM.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '674'
 ht-degree: 81%
 
 ---

@@ -6,11 +6,12 @@ topic-tags: develop
 feature: Adaptive Forms
 role: Admin, User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
-source-git-commit: 56a3d50d7cc8db532097b97f0898f87fc6ba0b3d
-workflow-type: ht
-source-wordcount: '984'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '990'
+ht-degree: 99%
 
 ---
 

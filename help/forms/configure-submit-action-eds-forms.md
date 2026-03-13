@@ -1,20 +1,21 @@
 ---
-title: Configurar una acción de envío para un formulario adaptable
+title: Configuración de una acción de envío para un formulario adaptable
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
-keywords: Obtenga información sobre cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de SharePoint, conectar un formulario adaptable a una biblioteca de documentos de SharePoint, conectar un formulario adaptable al modelo de datos de formulario (FDM)
+keywords: Cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de SharePoint, conectar un formulario adaptable a una biblioteca de documentos de SharePoint, conectar un formulario adaptable al modelo de datos de formulario (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
-source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 22%
+source-wordcount: '377'
+ht-degree: 66%
 
 ---
 
 # Acciones de envío para Edge Delivery Services Forms
 
-| Versión | Vínculo de artículo |
+| Versión | Vínculo del artículo |
 |---------|-----------------------------|
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=es) |
 | AEM as a Cloud Service (componentes de base) | [Haga clic aquí](/help/forms/configuring-submit-actions.md) |
@@ -25,9 +26,9 @@ Las acciones de envío definen qué sucede cuando un usuario envía un formulari
 
 Puede crear Edge Delivery Services Forms con [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) o con la creación de [Forms basado en documentos](/help/edge/docs/forms/overview.md), y configurar los formularios con diferentes acciones de envío según corresponda.
 
-## Acciones de envío para Forms creadas en el editor universal
+## Acciones de envío para formularios creados en el editor universal
 
-[Forms adaptable creado en el editor universal](/help/edge/docs/forms/universal-editor/create-forms.md) admite las siguientes acciones de envío:
+Los [Formularios adaptables creados en el editor universal](/help/edge/docs/forms/universal-editor/create-forms.md) admiten las siguientes acciones de envío:
 
 * [Enviar correo electrónico](/help/forms/configure-submit-action-send-email.md)
 * [Invocar un flujo de Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
@@ -35,7 +36,7 @@ Puede crear Edge Delivery Services Forms con [Universal Editor](/help/edge/docs/
 * [Invocar Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Enviar mediante el modelo de datos de formulario (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Enviar a Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [Enviar a extremo REST](/help/forms/configure-submit-action-restpoint.md)
+* [Enviar al punto final REST](/help/forms/configure-submit-action-restpoint.md)
 * [Enviar a OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Invocar un flujo de trabajo de AEM](/help/forms/configure-submit-action-workflow.md)
 * [Enviar a Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
@@ -58,13 +59,13 @@ You can configure the submit action for forms created in the Universal Editor us
 
 >[!NOTE]
 >
-> * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
-> * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+> * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
+> * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar las extensiones del editor universal.
 
 ## Acciones de envío para Forms basado en documentos
 
 Forms basado en documentos admite el envío solo a hojas de cálculo. Para aprender a configurar la hoja de cálculo para recibir los datos enviados, consulte las instrucciones del artículo [Configurar las hojas de cálculo de Google o los archivos de Microsoft Excel para empezar a aceptar datos](/help/edge/docs/forms/submit-forms.md).
 
-## Véase también {#see-also}
+## Ver también {#see-also}
 
 {{af-submit-action}}

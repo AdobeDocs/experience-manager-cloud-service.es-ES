@@ -4,11 +4,12 @@ description: Los formularios adaptables proporcionan un mecanismo para crear un 
 topic-tags: author
 keywords: Agregar fragmentos de formulario adaptable, fragmentos de formulario adaptable, Crear un fragmento de formulario, Agregar un fragmento a un formulario adaptable, Administrar fragmentos
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1485'
 ht-degree: 97%
 
 ---

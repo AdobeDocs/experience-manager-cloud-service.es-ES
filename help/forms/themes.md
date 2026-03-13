@@ -2,11 +2,12 @@
 title: ¿Cómo se pueden crear y utilizar temáticas para aplicar estilo a un formulario adaptable?
 description: Utiliza temáticas de formularios adaptables para aplicar estilos y proporcionar una identidad visual a un formulario adaptable. Puede compartir una temática en cualquier número de formularios adaptables.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '5558'
+source-wordcount: '5564'
 ht-degree: 98%
 
 ---

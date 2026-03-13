@@ -3,12 +3,13 @@ title: Envío de un formulario adaptable a Microsoft&reg; OneDrive
 description: Explore el proceso optimizado de conexión de AEM Forms con Microsoft&reg; OneDrive mediante la acción de envío Enviar a OneDrive. Conozca la guía paso a paso para configurar OneDrive y las acciones de envío para lograr un almacenamiento y una recuperación de datos eficientes.
 keywords: Integración de AEM Forms OneDrive, Conexión a Microsoft AEM OneDrive, Configuración de OneDrive con formularios de AEM
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 100%
+source-wordcount: '927'
+ht-degree: 99%
 
 ---
 

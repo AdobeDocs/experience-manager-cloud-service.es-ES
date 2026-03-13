@@ -2,11 +2,12 @@
 title: Generar una PDF de envío (anteriormente documento de registro) para AEM Forms
 description: Aprenda a generar una PDF de envío a partir de los envíos de formularios para Forms adaptable. Cree una PDF del formulario enviado para archivarla o consultarla.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '4202'
+source-wordcount: '4208'
 ht-degree: 56%
 
 ---

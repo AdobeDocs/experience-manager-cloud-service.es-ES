@@ -5,11 +5,12 @@ keywords: form builder, formularios AEM, creador de formularios, crear formulari
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: choose-form-builder-guide
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 8%
+source-wordcount: '954'
+ht-degree: 9%
 
 ---
 
@@ -78,7 +79,7 @@ Universal Editor proporciona dos poderosos enfoques de creación para Edge Deliv
 
 ### Capacidades técnicas
 
-| **Capacidad** | **Base** | **Núcleo** | **Editor universal** | **Basado en documentos** |
+| **Capacidad** | **Foundation** | **Núcleo** | **Editor universal** | **Basado en documentos** |
 |----------------|----------------|----------|---------------------|-------------------|
 | **Complejidad de formulario** | Básica | Avanzado  | Avanzado  | De simple a moderado |
 | **Motor de reglas** | Avanzado  | Avanzado  | Avanzado  | Limitado |
@@ -90,7 +91,7 @@ Universal Editor proporciona dos poderosos enfoques de creación para Edge Deliv
 
 ### Integración y envío
 
-| **Función** | **Base** | **Núcleo** | **Editor universal** | **Basado en documentos** |
+| **Función** | **Foundation** | **Núcleo** | **Editor universal** | **Basado en documentos** |
 |-------------|----------------|----------|---------------------|-------------------|
 | **Modelos de datos** | FDM, personalizado | FDM, personalizado | FDM, personalizado | Personalizado |
 | **Acciones de envío** | Varias opciones | Varias opciones | Varias opciones | Sólo hoja de cálculo |
@@ -101,10 +102,10 @@ Universal Editor proporciona dos poderosos enfoques de creación para Edge Deliv
 
 ### Publicación y rendimiento
 
-| **Aspecto** | **Base** | **Núcleo** | **Editor universal** | **Basado en documentos** |
+| **Aspecto** | **Foundation** | **Núcleo** | **Editor universal** | **Basado en documentos** |
 |------------|----------------|----------|---------------------|-------------------|
 | **Publicación** | Solo AEM | AEM + Edge Delivery + API sin encabezado | Edge Delivery | Edge Delivery |
-| **Rendimiento** | Estándar | Mejorado | Puntuaciones de High Lighthouse | Puntuaciones de High Lighthouse |
+| **Rendimiento** | Estándar | Mejorados | Puntuaciones de High Lighthouse | Puntuaciones de High Lighthouse |
 | **Optimización de SEO** | Básica | Bien | Excelente | Excelente |
 | **Capacidad de respuesta móvil** | Bien | Excelente | Excelente | Excelente |
 

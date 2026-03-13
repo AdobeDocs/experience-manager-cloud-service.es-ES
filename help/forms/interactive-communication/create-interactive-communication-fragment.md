@@ -4,10 +4,11 @@ description: Cree fragmentos de comunicación interactiva en AEM Forms para crea
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '257'
 ht-degree: 5%
 
 ---
@@ -37,7 +38,7 @@ Para crear un fragmento de comunicación interactiva, realice los siguientes pas
 
 1. Al seleccionar un fragmento de comunicación interactiva, aparecerá una pantalla en la que definirá detalles clave del fragmento, como título, nombre, descripción, modelo de datos (una representación estructurada de los datos del servidor) y etiquetas.
 
-   Para obtener más información, consulte la [Guía de configuración del modelo de datos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Para obtener más información, consulte la [Guía de configuración del modelo de datos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![Buscar documento CI](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

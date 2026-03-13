@@ -2,12 +2,13 @@
 title: ¿Cómo se pueden administrar los metadatos de AEM Forms?
 description: Los metadatos facilitan la categorización y organización de los recursos y ayudan a los usuarios que buscan un recurso específico.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '1735'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1738'
+ht-degree: 98%
 
 ---
 
@@ -298,7 +299,7 @@ Se ofrece una herramienta (Editor de esquemas de metadatos) para definir el esqu
 
       >[!NOTE]
       >
-      >No cambie el prefijo &#39;./jcr:content/metadata/’, ya que define la ruta en la que se almacena la propiedad.
+      >No cambie el prefijo &#39;./jcr:content/metadata/&#39;, ya que define la ruta donde se almacena la propiedad.
       >
       >Además, el nombre de la propiedad debe ser único para evitar escribir valores para dos o más propiedades en la misma ubicación del repositorio. Por lo tanto, se recomienda cambiar el valor “default”.
 

@@ -4,11 +4,12 @@ description: Puede utilizar Forms Designer para crear plantillas de formularios
 keywords: Instalar Designer, Instalar Forms Designer, Requisitos para instalar Forms Designer
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 100%
+source-wordcount: '415'
+ht-degree: 99%
 
 ---
 

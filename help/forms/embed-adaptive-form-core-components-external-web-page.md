@@ -5,11 +5,12 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 100%
+source-wordcount: '978'
+ht-degree: 99%
 
 ---
 
@@ -21,13 +22,13 @@ ht-degree: 100%
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=es) |
 
 
-Puede [integrar formularios adaptables en una página de AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md) o en una página web alojada fuera de AEM. El formulario adaptable incrustado es completamente funcional, y los usuarios pueden rellenarlo y enviarlo sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
+Puede [incrustar formularios adaptables en una página de AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md) o en una página web alojada fuera de AEM. El formulario adaptable incrustado es completamente funcional, y los usuarios pueden rellenarlo y enviarlo sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
 
 ## Requisitos previos {#prerequisites}
 
 Realice los siguientes pasos antes de incrustar un formulario adaptable en un sitio web externo
 
-* Publique el formulario adaptable que desee integrar en la instancia de publicación del servidor de AEM Forms.
+* Publique el formulario adaptable que desee incrustar en la instancia de publicación del servidor de AEM Forms.
 * Cree o identifique una página web en su sitio web para alojar el formulario adaptable. Asegúrese de que la página web pueda [leer archivos jQuery de una CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) o de que tenga una copia local de jQuery incrustada. jQuery es necesario para procesar un formulario adaptable.
 * Cuando el servidor de AEM y la página web están en dominios diferentes, realice los pasos que se enumeran en la sección, [permitir que AEM Forms ofrezca formularios adaptables a un sitio de dominios cruzados](#cross-site).
 

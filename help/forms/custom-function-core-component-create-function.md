@@ -4,10 +4,11 @@ description: AEM Forms admite funciones personalizadas, que permiten a los usuar
 keywords: Agregar una función personalizada, utilizar una función personalizada, crear una función personalizada, utilizar una función personalizada en el editor de reglas.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1366'
 ht-degree: 13%
 
 ---

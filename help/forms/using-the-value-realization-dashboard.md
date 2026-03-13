@@ -1,42 +1,43 @@
 ---
-title: Uso del panel de realización de valor para analizar las tendencias de uso de formularios y documentos
-description: Aprenda a utilizar el panel de información sobre el uso de formularios para monitorizar y comprender el rendimiento de los formularios y los fragmentos de formulario.
+title: Uso del panel de control de realización de valor para analizar las tendencias de uso de formularios y documentos
+description: Aprenda a utilizar el panel de control de información sobre el uso de formularios para monitorizar y comprender el rendimiento de los formularios y los fragmentos de formulario.
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
-source-git-commit: 3bc967bc2b6584abbd73e3456e123ed76a8959b6
-workflow-type: ht
-source-wordcount: '873'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 99%
 
 ---
 
-# Uso del panel de realización de valor para analizar las tendencias de uso de formularios y documentos
+# Uso del panel de control de realización de valor para analizar las tendencias de uso de formularios y documentos
 
 <span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial a aem-forms-ea@adobe.com. <span>
 
-![Panel de realización del valor](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
+![Panel de control de realización del valor](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
-Al monitorizar regularmente las métricas presentadas en el panel “Información sobre el uso de formularios”, puede obtener información valiosa sobre el rendimiento de los formularios, documentos y fragmentos de formulario. Utilice estos datos para tomar decisiones fundamentadas sobre el diseño del formulario, la administración de fragmentos y la estrategia general del formulario.
+Al monitorizar regularmente las métricas presentadas en el panel de control “Información sobre el uso de formularios”, puede obtener información valiosa sobre el rendimiento de los formularios, documentos y fragmentos de formulario. Utilice estos datos para tomar decisiones fundamentadas sobre el diseño del formulario, la administración de fragmentos y la estrategia general del formulario.
 
-En este artículo se proporcionan instrucciones de uso detalladas e interpretación de métricas para el Panel de realización de valor. Para obtener información general conceptual y las ventajas del panel, consulte [Información acerca del panel de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md).
+En este artículo se proporcionan instrucciones de uso detalladas e interpretación de métricas para el Panel de control de realización de valor. Para obtener información general conceptual y las ventajas del panel de control, consulte [Información acerca del panel de control de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md).
 
 
-## Acceso al panel de información sobre el uso
+## Acceso al panel de control de información sobre el uso
 
-Para acceder al panel de información sobre el uso de formularios:
+Para acceder al panel de control de información sobre el uso de formularios:
 
 1. Vaya a **Formularios** > **Formularios y documentos**.
-1. Haga clic en **Panel InProduct**. El panel se abre en una nueva ventana.
+1. Haga clic en **Panel de control InProduct**. El panel de control se abre en una nueva ventana.
 
-   ![Panel de realización de valor](/help/forms/assets/forms-usage-insights.png)
+   ![Panel de control de realización de valor](/help/forms/assets/forms-usage-insights.png)
 
 ## Información general
 
-El panel consta de dos secciones principales:
+El panel de control consta de dos secciones principales:
 
 - **Actividad de formularios y documentos a lo largo del tiempo:** esta sección proporciona información sobre el uso y la evolución de los formularios durante un período seleccionado.
 - **Uso del fragmento:** esta sección le permite supervisar la adopción y reutilización de fragmentos de formulario.
@@ -130,4 +131,4 @@ En esta sección se proporciona información sobre el uso de fragmentos de formu
 
 ## Véase también
 
-- [Información sobre el panel de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md)
+- [Información sobre el panel de control de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md)

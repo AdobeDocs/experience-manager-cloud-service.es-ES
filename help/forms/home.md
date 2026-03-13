@@ -4,10 +4,11 @@ description: Descubra AEM Forms para producir formularios preparados para la emp
 landing-page-description: Obtenga información sobre cómo utilizar formularios en AEM as a Cloud Service.
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1375'
 ht-degree: 87%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 87%
 <div class="version-selector">
   <p><strong>¿Busca documentación para una versión diferente?</strong></p>
   <ul>
-    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html?lang=es">Documentación de AEM 6.5 Forms</a></li>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">Documentación de AEM 6.5 Forms</a></li>
     <li><strong>AEM Forms as a Cloud Service</strong> (actual)</li>
   </ul>
 </div>

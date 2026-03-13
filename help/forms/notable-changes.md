@@ -1,14 +1,15 @@
 ---
 title: ¿Cuáles son las diferencias entre AEM 6.5 Forms y AEM Cloud Services?
 description: Compare AEM 6.5 Forms y AEM Cloud Services y aprenda los cambios más importantes antes de actualizar o migrar a Cloud Service.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 100%
+source-wordcount: '1331'
+ht-degree: 99%
 
 ---
 
@@ -56,7 +57,7 @@ Adobe Experience Manager Forms as a Cloud Service incluye algunos cambios import
 
 <!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
 
-* **Servicio de relleno previo:** el servicio de relleno previo recupera datos del servidor y los combina para rellenar previamente el formulario adaptable en el lado del cliente. Esta funcionalidad ayuda a mejorar el tiempo necesario para rellenar un formulario adaptable. Siempre puede configurar el [servicio de relleno previo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html?lang=es) para ejecutar la acción de combinación en el servidor de Adobe Experience Manager Forms.
+* **Servicio de relleno previo:** el servicio de relleno previo recupera datos del servidor y los combina para rellenar previamente el formulario adaptable en el lado del cliente. Esta funcionalidad ayuda a mejorar el tiempo necesario para rellenar un formulario adaptable. Siempre puede configurar el [servicio de relleno previo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) para ejecutar la acción de combinación en el servidor de Adobe Experience Manager Forms.
 
 * **Acciones de envío:** la acción de envío **Correo electrónico** proporciona opciones para enviar archivos adjuntos y adjuntar documentos de registro (DoR) mediante correo electrónico. Puede utilizarla en lugar de la acción **Enviar por correo electrónico como PDF** disponible en AEM Forms 6.5.
 
@@ -78,7 +79,7 @@ Forms as a Cloud Service proporciona API RESTful de generación y manipulación 
 
 * **Servicios de documentos: API de generación de documentos (servicio de salida)**: en una sola llamada o lote de API, solo puede utilizar una plantilla con varios archivos XML de datos. No se admite el uso de varias plantillas con varios archivos de datos en una sola llamada de API.
 
-* **API de manipulación de documentos (servicio del ensamblador)**:
+* **API de manipulación de documentos (servicio Assembler)**:
 
    * Las operaciones que dependen de servicios de documentos o aplicaciones no están disponibles. Por ejemplo, Microsoft® Word a PDF, Microsoft® Excel a PDF y los formularios HTML a PDF, PostScript (PS) a PDF, XDP a PDF Forms no son compatibles. Estas operaciones dependen de Microsoft® Office, Adobe Acrobat, Adobe Distiller y Forms Document Service, respectivamente.
 

@@ -5,12 +5,13 @@ keywords: Añadir un controlador de errores personalizado, añadir un controlado
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '2308'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '2314'
+ht-degree: 99%
 
 ---
 
@@ -202,7 +203,7 @@ Para comprender cómo utilizar un controlador de errores predeterminado con la a
 1. Seleccione **[!UICONTROL Crear]**.
 1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, **cuando se cambia[Nombre del campo ID de mascota]**. Seleccione “se ha cambiado” de la lista desplegable **Seleccionar estado**.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.
-1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
+1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
 1. Seleccione los enlaces de datos en la sección **Salida**. Seleccione **Nombre de mascota** en la sección **Salida**.
 1. Seleccione **[!UICONTROL Controlador de errores personalizado]** en la sección **Controlador de errores**.
 1. Haga clic en **[!UICONTROL Listo]**.
@@ -237,7 +238,7 @@ Para obtener información sobre cómo añadir funciones personalizadas, haga cli
 
 <!-- To create a custom error function, perform the following steps:
 
-1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git). 
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
 2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
 3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
 4. Create a folder named `js`.
@@ -316,7 +317,7 @@ Para utilizar un controlador de errores personalizado utilizando la acción **[!
 1. Seleccione **[!UICONTROL Crear]**.
 1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, cuando se ha cambiado el **[Nombre del campo ID de mascota]**, seleccione **se ha cambiado** en la lista desplegable **Seleccionar estado**.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.
-1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
+1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
 1. Seleccione los enlaces de datos en la sección **Salida**. Por ejemplo, seleccione **Nombre de mascota** en la sección **Salida**.
 1. Seleccione **[!UICONTROL Controlador de errores personalizado]** en la sección **[!UICONTROL Controlador de errores]**.
 1. Haga clic en **[!UICONTROL Listo]**.

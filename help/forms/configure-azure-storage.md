@@ -3,11 +3,12 @@ title: Configurar Azure Storage
 description: Obtenga información sobre cómo integrar formularios con el servidor de Azure Storage.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '597'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +40,7 @@ Después de crear la configuración de [!DNL Azure] Storage, puede [crear el mo
 
 ### Agregar servicios de [!DNL Azure] al modelo de datos de formulario {#add-azure-services}
 
-Después de crear el modelo de datos de formulario (FDM) y los objetos de modelo, puede añadirle los servicios de [!DNL Azure].
+Después de crear el modelo de datos de formulario (FDM) y los objetos de modelo de datos, puede añadirle los servicios de [!DNL Azure].
 
 Para añadir servicios de [!DNL Azure], haga lo siguiente:
 

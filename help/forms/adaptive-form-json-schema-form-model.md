@@ -4,11 +4,12 @@ description: Aprenda a crear un esquema JSON para un formulario adaptable y a cr
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
-workflow-type: ht
-source-wordcount: '1388'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1394'
+ht-degree: 99%
 
 ---
 

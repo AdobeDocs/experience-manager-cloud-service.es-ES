@@ -1,13 +1,14 @@
 ---
 title: ¿Cuáles son las consideraciones, problemas conocidos y prácticas recomendadas de AEM Forms?
 description: Consideraciones, problemas conocidos y prácticas recomendadas para las API de comunicaciones de AEM Forms.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1733'
-ht-degree: 100%
+source-wordcount: '1739'
+ht-degree: 99%
 
 ---
 
@@ -144,7 +145,7 @@ La siguiente tabla especifica las opciones de XCI.
 | config/present/pdf/scriptModel | Controla si la información específica de XFA se incluye en el documento PDF de salida. |
 | config/present/common/data/adjustData | Controla si la aplicación XFA ajusta los datos después de la combinación. |
 | config/present/pdf/renderPolicy | Controla si la generación del contenido de la página se realiza en el servidor o se difiere al cliente. |
-| config/present/common/locale | Especifica la ubicación predeterminada utilizada en el documento de salida. |
+| config/present/common/locale | Especifica la configuración regional predeterminada utilizada en el documento de salida. |
 | config/present/destination | Cuando está contenido en un elemento presente, especifica el formato de salida. Cuando está contenido en un elemento openAction, especifica la acción que se debe realizar al abrir el documento en un cliente interactivo. |
 | config/present/output/type | Especifica el tipo de compresión que se aplicará a un archivo o el tipo de salida que se producirá. |
 | config/present/common/temp/uri | Especifica el URI del formulario. |

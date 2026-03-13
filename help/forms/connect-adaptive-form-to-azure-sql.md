@@ -4,9 +4,11 @@ Description: Learn how to configure an Azure SQL Database connection in AEM Form
 Keywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: e29f70aa1a8164787c7d310a05c24d7e501803e5
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '607'
 ht-degree: 15%
 
 ---
@@ -25,7 +27,7 @@ Este artículo describe cómo conectar un formulario adaptable a una base de dat
 La integración de Forms adaptable con Azure SQL ofrece varias ventajas:
 
 * **Interacción de datos en tiempo real:** Permite la lectura y escritura en tiempo real de datos entre formularios y la base de datos de Azure.
-* **Escalabilidad:** Azure SQL proporciona un rendimiento de base de datos escalable adecuado para aplicaciones de nivel empresarial.
+* **Escalabilidad:** Azure SQL proporciona un rendimiento de base de datos escalable adecuado para aplicaciones empresariales.
 * **Almacenamiento de datos centralizado:** Mantiene los envíos de formularios y los datos recuperados almacenados de forma segura en una ubicación central.
 * **Cumplimiento de la seguridad:** Aprovecha las opciones integradas de red, firewall y cifrado de Azure para garantizar una comunicación segura.
 * **Integración nativa de la nube:** Ideal para arquitecturas modernas y con prioridad en la nube que usan AEM as a Cloud Service.
@@ -40,7 +42,7 @@ La integración de Forms adaptable con Azure SQL ofrece varias ventajas:
 
   ![Crear Azure Db](/help/forms/assets/create-azure-db.png)
 
-* Habilite [red avanzada configurada con una IP de salida dedicada](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) para la base de datos de Azure creada.
+* Habilite [red avanzada configurada con una IP de salida dedicada](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) para la base de datos de Azure creada.
 
   >[!NOTE]
   >
@@ -84,7 +86,7 @@ Incluya la [dependencia del controlador SQL](https://central.sonatype.com/artifa
 
 >[!NOTE]
 >
-> Para incluir la dependencia SQL en su proyecto, consulte la sección [Dependencias del controlador SQL](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
+> Para incluir la dependencia SQL en su proyecto, consulte la sección [Dependencias del controlador SQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
 
 **Paso 3: Agregar Configuración JDBC**
 
@@ -94,7 +96,7 @@ Incluya la [dependencia del controlador SQL](https://central.sonatype.com/artifa
    cd ui.config/src/jcr_root/apps/<application folder>/osgiconfig/config/
    ```
 
-**Paso 4: crear el archivo de configuración de Azure SQL Connection**
+**Paso 4: Crear el archivo de configuración de conexión SQL de Azure**
 
 1. Cree el archivo:
 
@@ -157,7 +159,7 @@ Una vez completada la configuración de AEM y Azure y implementados los cambios 
 * Use **secret management** para evitar contraseñas de codificación en los archivos de configuración.
 * Gire con regularidad las credenciales de la base de datos y actualice la configuración de forma segura.
 * Monitorice los registros de conectividad JDBC para detectar errores y latencia.
-* Siga las prácticas recomendadas de Azure para proteger las bases de datos SQL y las configuraciones de firewall.
+* Siga las prácticas recomendadas de Azure para proteger las bases de datos SQL y las configuraciones del cortafuegos.
 * Evite utilizar cuentas de base de datos con privilegios elevados para acceder a formularios.
 
 ## Artículos relacionados

@@ -3,11 +3,12 @@ title: ¿Cómo se usan las expresiones SOM en formularios adaptables?
 description: Obtenga información sobre cómo extraer expresiones SOM de un panel de formularios adaptables.
 feature: Adaptive Forms, Foundation Components
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '344'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 98%
 
 ---
 

@@ -5,11 +5,12 @@ topic-tags: Adaptive Forms, author
 keywords: Servicio reCAPTCHA de Google, Formularios adaptables, desafío CAPTCHA, prevención de bots, componentes principales, seguridad de envío de formularios, prevención de correo no deseado de formularios
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
-workflow-type: ht
-source-wordcount: '1418'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1424'
+ht-degree: 99%
 
 ---
 
@@ -80,7 +81,7 @@ Una vez habilitado el servicio empresarial de reCAPTCHA, estará disponible para
    1. Seleccionar una carpeta existente o crear una nueva. Crear una carpeta y habilitar la opción Configuraciones de la nube para ella o Habilitar la opción Configuraciones de nube de la carpeta existente:
 
       * Para crear una carpeta y habilitar la opción Configuraciones de la nube para ella, haga lo siguiente:
-         1. En el Explorador de configuración, pulse **[!UICONTROL Crear]**.
+         1. En el Explorador de configuración, haga clic en **[!UICONTROL Crear]**.
          1. En el cuadro de diálogo Crear configuración, especifique el nombre, el título y seleccione la opción **[!UICONTROL Configuraciones de la nube]**.
          1. Haga clic en **[!UICONTROL Crear]**
       * Para habilitar la opción Configuraciones de la nube para una carpeta existente, haga lo siguiente:

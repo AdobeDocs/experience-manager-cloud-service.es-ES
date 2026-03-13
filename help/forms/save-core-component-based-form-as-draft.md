@@ -3,18 +3,19 @@ title: Guardar el formulario adaptable basado en componentes principales como bo
 description: Aprenda a guardar formularios adaptables basados en componentes principales como borrador. ¿También comprende cómo utilizar el componente Borradores y envíos para enumerar borradores y envíos para los usuarios que iniciaron sesión?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 role: User, Developer
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 13%
+source-wordcount: '1357'
+ht-degree: 14%
 
 ---
 
 
 # Guardar formularios como borradores y mostrarlos en la página de Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Considere a un usuario que comienza a rellenar un formulario pero necesita pausar y volver más tarde. AEM ofrece la opción `save-as-draft`, que permite al usuario guardar el formulario como borrador para una futura finalización. Para facilitarle este proceso, AEM proporciona el componente **Borradores y envíos** del portal de Forms de forma predeterminada, que muestra borradores y envíos en páginas de AEM Sites. El componente enumera los formularios que se han guardado como borradores para su posterior finalización, así como los que se han enviado. Solo los usuarios que inicien sesión pueden editar sus borradores o ver los formularios enviados. Sin embargo, si un usuario anónimo navega por la lista de formularios usando el componente **Buscar y listar** y guarda un formulario como borrador, ese borrador no aparecerá en la lista del componente **Borradores y envíos**. Para ver los borradores y los envíos, los usuarios deben haber iniciado sesión en el momento del envío del formulario.
 
@@ -30,7 +31,7 @@ El componente **Borradores y envíos** necesita una configuración de almacenami
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Almacenamiento de Azure]**.
 
-   ![Selección de tarjeta de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Selección de tarjeta de almacenamiento Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. Seleccione una carpeta de configuración para crear la configuración y seleccione **[!UICONTROL Crear]**.
 
@@ -47,7 +48,7 @@ El componente **Borradores y envíos** necesita una configuración de almacenami
 
    >[!NOTE]
    >
-   > Puede recuperar la **[!UICONTROL cuenta de almacenamiento de Azure]** y la **[!UICONTROL clave de acceso de Azure]** del [Portal de Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+   > Puede recuperar la **[!UICONTROL cuenta de almacenamiento de Azure]** y la **[!UICONTROL clave de acceso de Azure]** desde el [Portal de Azure de Microsoft](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
 
    Después de crear correctamente la Configuración de almacenamiento de Azure, configure el Conector de almacenamiento unificado para el portal de Forms, para ello, siga los siguientes pasos:
 
@@ -64,7 +65,7 @@ El componente **Borradores y envíos** necesita una configuración de almacenami
 
 >[!NOTE]
 >
-> Si necesita configurar una opción de almacenamiento que no sea Azure, escriba a <aem-forms-ea@adobe.com> desde su dirección de correo electrónico oficial con los requisitos detallados.
+> Si necesita configurar una opción de almacenamiento que no sea Azure, escriba a <aem-forms-ea@adobe.com> desde su dirección de correo electrónico oficial con sus requisitos detallados.
 
 Una vez que haya configurado correctamente el almacenamiento de Azure y el conector de almacenamiento unificado para almacenar los borradores y los formularios enviados, agregue el componente **Borradores y envíos** en la página de AEM Sites.
 

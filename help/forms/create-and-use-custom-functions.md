@@ -5,11 +5,12 @@ keywords: Agregar una función personalizada, utilizar una función personalizad
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1342'
 ht-degree: 3%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 3%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Este artículo |
 
 AEM Forms admite funciones personalizadas, lo que permite a los usuarios definir funciones de JavaScript para implementar reglas comerciales complejas. Estas funciones personalizadas amplían las capacidades de los formularios al facilitar la manipulación y el procesamiento de los datos introducidos para satisfacer requisitos específicos. Permiten la modificación dinámica del comportamiento del formulario en función de criterios predefinidos. Las funciones personalizadas también permiten a los desarrolladores aplicar una lógica de validación compleja, realizar cálculos dinámicos y controlar la visualización o el comportamiento de los elementos del formulario en función de las interacciones del usuario o los criterios predefinidos.
@@ -120,7 +121,7 @@ Considere el siguiente fragmento de código, donde input2 se define como un par�
 
 La siguiente ilustración muestra el uso de la función personalizada `OptionalParameterFunction` en el editor de reglas:
 
-![Parámetros opcionales o requeridos &#x200B;](/help/forms/assets/optional-default-params.png)
+![Parámetros opcionales o requeridos ](/help/forms/assets/optional-default-params.png)
 
 Puede guardar la regla sin especificar un valor para los parámetros necesarios, pero la regla no se ejecuta y muestra un mensaje de advertencia como:
 

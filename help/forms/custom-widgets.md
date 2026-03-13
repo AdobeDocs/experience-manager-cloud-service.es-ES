@@ -7,24 +7,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 92%
+source-wordcount: '668'
+ht-degree: 95%
 
 ---
 
 # Crear apariciones personalizadas en formularios HTML5{#create-custom-appearances-in-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 Puede conectar widgets personalizados a formularios Mobile. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados mediante el marco de aspectos visuales. El motor XFA utiliza varios widgets, consulte [Marco de apariencia para formularios adaptables y HTML5](/help/forms/custom-widgets.md) para obtener información detallada.
 
-![Ejemplo de widget predeterminado y personalizado &#x200B;](assets/custom-widgets.jpg)
+![Ejemplo de widget predeterminado y personalizado ](assets/custom-widgets.jpg)
 
 Ejemplo de widget predeterminado y personalizado
 
@@ -79,7 +80,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registrar un widget personalizado con el motor de scripts XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Cuando el código del widget personalizado esté listo, registre el widget con el motor de scripts mediante la `registerConfig` API para el [formulario Bridge](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis). Toma widgetConfigObject como entrada.
+Cuando el código del widget personalizado esté listo, registre el widget con el motor de scripts mediante la `registerConfig` API para el [formulario Bridge](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis). Toma widgetConfigObject como entrada.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

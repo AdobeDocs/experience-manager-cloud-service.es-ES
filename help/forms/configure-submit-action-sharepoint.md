@@ -3,12 +3,13 @@ title: ¿Cómo enviar datos a un almacenamiento de SharePoint al enviar un formu
 description: Obtenga información sobre cómo enviar datos desde el formulario adaptable a un almacenamiento de SharePoint, como una lista de SharePoint o una biblioteca de documentos, al enviar el formulario.
 keywords: ¿Cómo conectar la lista de SharePoint para un formulario adaptable?, Cómo conectar la biblioteca de documentos de SharePoint para un formulario adaptable, Enviar a SharePoint, Crear una configuración de la biblioteca de documentos de SharePoint, Utilizar la acción de envío Enviar a SharePoint en un formulario adaptable, Conectar un formulario adaptable a la lista de Microsoft&reg; SharePoint.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: ht
-source-wordcount: '242'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 98%
 
 ---
 

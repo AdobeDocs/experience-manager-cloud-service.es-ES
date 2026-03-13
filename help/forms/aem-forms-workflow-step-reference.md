@@ -1,14 +1,15 @@
 ---
 title: ¿Qué pasos de flujo de trabajo están disponibles en Cloud Service de AEM Forms para crear un flujo de trabajo o para la automatización de procesos empresariales (BPM)?
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo basados en formularios adaptables. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varias fuentes de datos y enviar notificaciones por correo electrónico
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Uso de flujos de trabajo de AEM, uso de los pasos Asignar tarea, paso Convertir en PDF/A, paso Generar documento de registro, uso de flujos de trabajo, paso Firmar documento, paso Generar salida impresa, paso Generar salida de PDF no interactiva
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '7409'
+source-wordcount: '7415'
 ht-degree: 99%
 
 ---
@@ -279,7 +280,7 @@ El paso Invocar DDX tiene las siguientes propiedades:
 
 ## Paso para invocar el servicio de modelo de datos de formulario (FDM) {#invoke-form-data-model-service-step}
 
-Puede usar la integración de datos de [[!DNL AEM Forms] &#x200B;](data-integration.md) para configurar y conectarse a fuentes de datos dispares. Estas fuentes de datos pueden ser un servicio web, un servicio REST, un servicio OData y una solución CRM. La integración de datos de [!DNL AEM Forms] le permite crear un modelo de datos de formulario (FDM) que incluya varios servicios para realizar operaciones de recuperación, adición y actualización de datos en la base de datos configurada. Puede usar el **[!UICONTROL paso para invocar el servicio de modelo de datos]** para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a distintos orígenes de datos.
+Puede usar la integración de datos de [[!DNL AEM Forms] ](data-integration.md) para configurar y conectarse a fuentes de datos dispares. Estas fuentes de datos pueden ser un servicio web, un servicio REST, un servicio OData y una solución CRM. La integración de datos de [!DNL AEM Forms] le permite crear un modelo de datos de formulario (FDM) que incluya varios servicios para realizar operaciones de recuperación, adición y actualización de datos en la base de datos configurada. Puede usar el **[!UICONTROL paso para invocar el servicio de modelo de datos]** para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a distintos orígenes de datos.
 
 Para explicar las entradas de los campos del paso, se utilizan como ejemplo la siguiente tabla de base de datos y el archivo JSON:
 

@@ -4,11 +4,12 @@ description: Aprenda a crear un esquema JSON para los componentes principales de
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
-workflow-type: ht
-source-wordcount: '1347'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1353'
+ht-degree: 99%
 
 ---
 

@@ -4,10 +4,11 @@ description: Obtenga información sobre cómo crear una acción de envío person
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1143'
 ht-degree: 23%
 
 ---

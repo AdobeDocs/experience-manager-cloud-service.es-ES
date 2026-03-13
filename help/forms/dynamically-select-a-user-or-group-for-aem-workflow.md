@@ -7,11 +7,12 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 597fa30c-6fb7-46c2-8ee1-2986c4860266
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '853'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +44,7 @@ ECMAScript es un lenguaje de script. Se utiliza para scripts del lado del client
    1. Agregue la propiedad `mix:title` en el cuadro de diálogo Editar mixins y haga clic en **Aceptar**.
    1. Agregue la siguiente propiedad al nodo jcr:content del script:
 
-      | Nombre | Tipo | Valor |
+      | Nombre | Tipo | Valor  |
       |--- |--- |--- |
       | jcr:title | Cadena | Especifique el nombre del script; por ejemplo, Seleccionar el agente de campo más cercano. Este nombre se mostrará en los pasos Asignar tarea y Firmar documento. |
 

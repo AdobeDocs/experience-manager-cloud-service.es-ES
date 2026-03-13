@@ -6,12 +6,13 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 8%
+source-wordcount: '1074'
+ht-degree: 10%
 
 ---
 
@@ -54,7 +55,7 @@ La utilidad de conversión de Forms convierte los Forms adaptables basados en co
 ## Requisitos previos para utilizar las herramientas de modernización de AEM
 
 * [Configurar el entorno de desarrollo local para AEM Forms](/help/forms/setup-local-development-environment.md).
-* Instale la última versión para habilitar los componentes principales adaptables de Forms para su entorno de AEM Cloud Service.
+* Instale la última versión para habilitar los componentes principales de formularios adaptables para su entorno de AEM as a Cloud Service.
 * Añadir sus usuarios al grupo [!DNL forms-users]. Los miembros del grupo [!DNL forms-users] tienen permisos para crear un formulario adaptable.
 * Los usuarios con las siguientes funciones tienen los permisos para instalar las herramientas de modernización de AEM en un entorno de AEM:
 
@@ -165,5 +166,5 @@ Ahora puede ver que el formulario adaptable creado en los componentes de base se
 
 ## Prácticas recomendadas {#best-practices}
 
-* Asegúrese de que los formularios basados en componentes de base utilicen únicamente los componentes que tengan [componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalentes disponibles. En los casos en los que se utilizan componentes de base que no tienen un componente principal equivalente, el componente de base no se convierte. Como resultado, no funciona correctamente al crear un formulario
+* Asegúrese de que los formularios basados en componentes de base utilicen únicamente los componentes que tengan [componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalentes disponibles. En los casos en los que se utilizan componentes de base que no tienen un componente principal equivalente, el componente de base no se convierte. Como resultado, no funciona correctamente al crear un formulario
 * Asegúrese de que las reglas para convertir los componentes de base en componentes principales tengan formato XML.

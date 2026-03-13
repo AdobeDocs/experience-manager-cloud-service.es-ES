@@ -3,11 +3,12 @@ title: ¿Cómo puedo añadir compatibilidad con nuevas configuraciones regionale
 description: Aprenda a agregar nuevas configuraciones regionales a un formulario adaptable.
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2160'
 ht-degree: 98%
 
 ---

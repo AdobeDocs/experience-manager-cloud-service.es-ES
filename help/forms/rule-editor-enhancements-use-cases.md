@@ -4,11 +4,12 @@ description: Este artículo explora varios casos de uso del editor de reglas en 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 0%
+source-wordcount: '1981'
+ht-degree: 1%
 
 ---
 
@@ -124,7 +125,7 @@ El campo **Costo de envío total** se actualiza dinámicamente para reflejar tan
 >[!NOTE]
 >
 > También puede agregar la función **Obtener valor de variable** en la condición When.
-> &#x200B;> ![Obtener función de valor de variable en la condición When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> ![Obtener función de valor de variable en la condición When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Este método permite realizar cálculos dinámicos en tiempo real sin agregar campos adicionales al formulario, lo que mantiene la estructura limpia y fácil de usar.
 

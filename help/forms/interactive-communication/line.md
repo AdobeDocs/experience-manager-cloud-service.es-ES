@@ -4,11 +4,12 @@ description: El componente Línea del Editor de comunicaciones interactivas de A
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 3%
+source-wordcount: '465'
+ht-degree: 4%
 
 ---
 

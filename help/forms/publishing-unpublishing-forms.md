@@ -8,11 +8,12 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1328'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1334'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +50,7 @@ Sus formularios adaptables pueden utilizar algunas configuraciones, ajustes y pe
    * Aspectos personalizados
    * Archivo CSS: Tomado como entrada en el cuadro de diálogo Propiedades del contenedor del formulario adaptable
    * Categoría de biblioteca de cliente: Tomado como entrada en el cuadro de diálogo Propiedades del contenedor del formulario adaptable
-   * Cualquier otra biblioteca de cliente que se pueda incluir como parte de la plantilla del formulario adaptable.
+   * Cualquier otra biblioteca de cliente que se pueda incluir como parte de la plantilla de formulario adaptable.
    * Rutas de diseño
 
 ## Estados de los recursos {#asset-states}
@@ -141,7 +142,7 @@ Siga estos pasos para programar la fecha y la hora de publicación y cancelació
 
       * Si estás en la vista de tarjeta, selecciona **[!UICONTROL Introducir selección]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) y selecciona el recurso. Se selecciona el recurso.
 
-      * Si está en la vista de lista, pasa el puntero sobre un recurso y selecciona ![selectassetcheckmark](assets/selectassetcheckmark.png). Se selecciona el recurso.
+      * Si está en la vista de lista, pase el puntero por encima de un recurso y seleccione ![selectassetcheckmark](assets/selectassetcheckmark.png). Se selecciona el recurso.
 
       * Seleccione un recurso para mostrar sus detalles.
       * Muestre las propiedades de un recurso al pulsar Ver propiedades ![viewproperties](assets/viewproperties.png).

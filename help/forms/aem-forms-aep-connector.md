@@ -5,11 +5,12 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 100%
+source-wordcount: '2053'
+ht-degree: 99%
 
 ---
 

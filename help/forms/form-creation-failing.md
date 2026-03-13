@@ -1,19 +1,20 @@
 ---
 title: Solucionar errores de creación de formularios
-description: Solucionar errores de creación de formularios en el entorno as a Cloud Service de AEM Forms.
+description: Solucionar errores de creación de formularios en el entorno de AEM Forms as a Cloud Service.
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 5%
+source-wordcount: '189'
+ht-degree: 6%
 
 ---
 
 # Problema al publicar formularios{#form-creation-fails}
 
-Después de que los usuarios actualicen a AEM Forms as a Cloud Service version `2024.5.16461`:
+Después de que los usuarios actualicen a AEM Forms as a Cloud Service versión `2024.5.16461`:
 
 **Algunos usuarios** pueden tener problemas al crear formularios; el problema es tal que cuando un usuario crea un formulario, aparece el siguiente mensaje de error en el cuadro de diálogo de creación:
 
@@ -28,9 +29,9 @@ El problema se debe a que el autor publica el formulario sin **publicar primero 
 Para resolver el problema, realice los siguientes pasos:
 
 1. Asegúrese de que la plantilla utilizada en el formulario no tenga `jcr:uuid` ni otras propiedades protegidas generadas por el sistema en la ruta de acceso `<template-path>/initial/jcr:content node`.
-1. Publish la plantilla de forma explícita mediante la consola de plantillas.
+1. Publique la plantilla explícitamente mediante la consola de plantillas.
 1. Ahora, cuando se publique la plantilla, intente crear nuevos formularios con la plantilla.
-1. Si la plantilla utilizada se actualiza en futuras versiones, Publish la vuelve a utilizar (como se indica en el paso 2) para evitar problemas de error al crear el formulario.
+1. Si la plantilla utilizada se actualiza en futuras versiones, vuelva a publicarla (como se indica en el paso 2) para evitar problemas de error al crear el formulario.
 
 
 <!--

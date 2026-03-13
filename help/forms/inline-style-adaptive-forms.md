@@ -4,11 +4,12 @@ description: Aunque se puede aplicar estilos personalizados a un formulario adap
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 98%
+source-wordcount: '767'
+ht-degree: 97%
 
 ---
 

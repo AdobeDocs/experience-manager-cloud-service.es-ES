@@ -3,18 +3,19 @@ title: Comparar dos formularios adaptables distintos.
 description: Compare dos formularios distintos en función de los campos, el contenido y los componentes del formulario.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '159'
 ht-degree: 11%
 
 ---
 
 # Comparar formularios adaptables {#compare-two-forms}
 
-<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
+<span class="preview"> Esta es una función de versión preliminar y se puede acceder en el [canal de versión preliminar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
 
 Cuando los autores de formularios necesitan comparar dos formularios distintos basados en los campos, el contenido y los componentes del formulario, comparan los dos formularios. El autor del formulario debe asegurarse de que los dos formularios estén en el mismo directorio o carpeta para compararlos. Para comparar dos formularios adaptables distintos, realice los siguientes pasos:
 
@@ -26,6 +27,6 @@ Cuando los autores de formularios necesitan comparar dos formularios distintos b
 
    ![Formularios comparados](compared-forms.png)
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}

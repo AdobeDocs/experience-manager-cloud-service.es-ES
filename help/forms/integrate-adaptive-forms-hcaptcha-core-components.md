@@ -4,12 +4,13 @@ description: Mejore la seguridad sin esfuerzo con el servicio hCaptcha®. Guía 
 topic-tags: Adaptive Forms, author
 keywords: Captcha&reg; service, Forms adaptable, desafío CAPTCHA, prevención de bots, componentes principales, seguridad de envío de formularios, prevención de spam de formularios
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 42%
+source-wordcount: '967'
+ht-degree: 41%
 
 ---
 

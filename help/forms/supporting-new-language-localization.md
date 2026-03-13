@@ -2,12 +2,13 @@
 title: ¿Cómo puedo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes de base?
 description: Para el formulario adaptable, puede añadir configuraciones regionales para más idiomas, aparte de la que se proporciona de forma predeterminada.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1220'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1226'
+ht-degree: 99%
 
 ---
 
@@ -53,14 +54,14 @@ Para añadir compatibilidad con una nueva configuración regional en el tiempo d
 1. [Agregar la compatibilidad con la configuración regional del diccionario.](#add-locale-support-for-the-dictionary)
 1. [Confirme los cambios en el repositorio e implemente la canalización](#commit-changes-in-repo-deploy-pipeline)
 
-#### 1. Clonar el repositorio {#clone-the-repository}
+#### &#x200B;1. Clonar el repositorio {#clone-the-repository}
 
 1. Desde la línea de comandos, vaya a donde desee clonar el repositorio de Cloud Service de Forms.
 1. Ejecute el comando que [ha recuperado de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git).  Es similar a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Utilice el nombre de usuario y la contraseña de Git para clonar el repositorio.
 1. Abra la carpeta clonada del repositorio de Cloud Service de Forms en su editor preferido.
 
-#### 2. Añadir una configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service}
+#### &#x200B;2. Añadir una configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service}
 
 1. Busque el archivo `Guide Localization Service.cfg.json` y agregue la configuración regional que desee añadir a la lista de configuraciones regionales admitidas.
 
@@ -68,7 +69,7 @@ Para añadir compatibilidad con una nueva configuración regional en el tiempo d
    >
    > Cree un archivo con el nombre de archivo `Guide Localization Service.cfg.json`, si no está presente.
 
-#### 3. Agregar una biblioteca de cliente de carpetas específica con nombre de configuración regional {#add-locale-name-specific-folder}
+#### &#x200B;3. Agregar una biblioteca de cliente de carpetas específica con nombre de configuración regional {#add-locale-name-specific-folder}
 
 1. En la carpeta UI.content, cree la carpeta `etc/clientlibs`.
 1. Cree además una carpeta denominada como `locale-name` bajo `etc/clientlibs` para servir como contenedor para clientlibs xfa y af.
@@ -98,14 +99,14 @@ I18N.js
      LogMessages.js
    ```
 
-#### 4. Agregar compatibilidad de configuración regional para el diccionario {#add-locale-support-for-the-dictionary}
+#### &#x200B;4. Agregar compatibilidad de configuración regional para el diccionario {#add-locale-support-for-the-dictionary}
 
 Realice este paso solo si la configuración regional `<locale>` que está agregando no está entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`.
 
 1. Crear una carpeta `languages` bajo `etc`, si no está presente.
 
 1. Agregue una propiedad de cadena de varios valores `languages` al nodo, si no está presente ya.
-1. Agregue los valores de configuración regional predeterminados `<locale-name>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
+1. Agregue los valores de configuración regional predeterminados `<locale-name>``de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
 
 1. Agregue `<locale>` a los valores de la propiedad `languages` de `/etc/languages`.
 1. Añada las carpetas recién creadas en `filter.xml`, en etc/META-INF/[jerarquía de carpetas]como:
@@ -117,7 +118,7 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 
 Antes de confirmar los cambios en el repositorio de Git de AEM, debe acceder a su [Información del repositorio de Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git).
 
-#### 5. Confirmar los cambios en el repositorio e implementar la canalización {#commit-changes-in-repo-deploy-pipeline}
+#### &#x200B;5. Confirmar los cambios en el repositorio e implementar la canalización {#commit-changes-in-repo-deploy-pipeline}
 
 Confirme los cambios en el repositorio de Git después de agregar compatibilidad con una nueva configuración regional. Implemente el código mediante la canalización de pila completa. Aprenda a [configurar una canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline) para añadir compatibilidad con una nueva configuración regional.
 Una vez finalizada la canalización, la configuración regional recién agregada aparece en el entorno de AEM.

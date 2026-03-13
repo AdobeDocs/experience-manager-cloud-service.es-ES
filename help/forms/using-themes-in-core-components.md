@@ -4,10 +4,11 @@ description: Puede utilizar temáticas para aplicar estilo y proporcionar una id
 keywords: temáticas de form builder, componentes principales de estilo de formularios adaptables, generador de temáticas de formulario, estilo de formularios adaptables, personalizar temáticas, crear temáticas de formulario
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 105f68be315e527c513c923e23d8415a49fe8e88
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3011'
+source-wordcount: '3017'
 ht-degree: 91%
 
 ---

@@ -1,13 +1,14 @@
 ---
 title: ¿Cómo se agregan variables en los pasos del flujo de trabajo de AEM?
 description: Aprenda cómo crear una variable, establecer un valor para ella y usarlo en [!DNL AEM Forms] los pasos del flujo de trabajo.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 100%
+source-wordcount: '1936'
+ht-degree: 99%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Una variable en un modelo de flujo de trabajo es una forma de almacenar un valor basado en su tipo de datos. Puede utilizar el nombre de la variable en cualquier paso del flujo de trabajo para recuperar el valor almacenado en la variable. También puede utilizar nombres de variables para definir expresiones para tomar decisiones de enrutamiento.
@@ -24,7 +25,7 @@ En modelos de flujo de trabajo de AEM, puede hacer lo siguiente:
 
 * [Crear una variable](variable-in-aem-workflows.md#create-a-variable) de un tipo de datos basada en el tipo de información que desea almacenar en él.
 * [Configurar un valor para la variable](variable-in-aem-workflows.md#set-a-variable) mediante el paso del flujo de trabajo Establecer variable.
-* [Utilizar la variable](variable-in-aem-workflows.md#use-a-variable) en todos [!DNL AEM Forms] los pasos del flujo de trabajo para recuperar el valor almacenado y en los pasos OR Split y Goto para definir una expresión de enrutamiento.
+* [Utilizar la variable](variable-in-aem-workflows.md#use-a-variable) en todos [!DNL AEM Forms] los pasos del flujo de trabajo para recuperar el valor almacenado y en los pasos División O y Goto para definir una expresión de enrutamiento.
 
 En el siguiente vídeo se muestra cómo crear, establecer y utilizar variables en los modelos de flujo de trabajo de AEM:
 
@@ -37,7 +38,7 @@ Las variables son una extensión de la interfaz [MetaDataMap](https://helpx.adob
 Las variables se crean mediante la sección Variables disponible en la barra de tareas del modelo de flujo de trabajo. Las variables del flujo de trabajo de AEM admiten los siguientes tipos de datos:
 
 * **Tipos de datos primitivos**: Largo, Doble, Booleano, Fecha y Cadena
-* **Tipos de datos complejos**: [Documento](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), y la instancia del modelo de datos de formulario.
+* **Tipos de datos complejos**: [Documento](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), y la instancia del modelo de datos de formulario.
 
 >[!NOTE]
 >
@@ -149,15 +150,15 @@ Puede utilizar variables para recuperar entradas y salidas o para guardar el res
 
 ### Pasos del flujo de trabajo compatibles con las variables {#workflow-steps-with-support-for-variables}
 
-Los pasos del flujo de trabajo Ir a, OR Split y todo [!DNL AEM Forms]admiten variables.
+Los pasos del flujo de trabajo Ir a, División O y todo [!DNL AEM Forms]admiten variables.
 
-#### Paso OR Split {#or-split-step}
+#### Paso División O {#or-split-step}
 
-OR Splits crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
+División O crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
 
 Puede definir la expresión de enrutamiento para una rama mediante una definición de regla, un script ECMA o un script externo.
 
-Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso OR Split, consulte [Paso OR Split](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=es#extending-aem#or-split).
+Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso División O, consulte [Paso División O](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=es#extending-aem#or-split).
 
 En este ejemplo, antes de definir la expresión de enrutamiento, utilice el [ejemplo 2](variable-in-aem-workflows.md#example2) para establecer el valor de la variable **totalvalue**. La rama 1 está activa si el valor de la variable **totalvalue** es mayor que 50 000. Del mismo modo, puede definir una regla para que la rama 2 se active si el valor de la variable **totalvalue** es menor que 50 000.
 
@@ -171,7 +172,7 @@ Del mismo modo, seleccione una ruta de script externa o especifique el script EC
 
 El **Paso Ir a** permite especificar el siguiente paso en el modelo de flujo de trabajo que se va a ejecutar, según el resultado de una expresión de enrutamiento.
 
-De forma similar al paso OR Split, puede definir la expresión de enrutamiento para el paso Ir a mediante una definición de regla, un script ECMA o un script externo.
+De forma similar al paso División O, puede definir la expresión de enrutamiento para el paso Ir a mediante una definición de regla, un script ECMA o un script externo.
 
 Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso Ir a, consulte [Paso Ir a](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=es#extending-aem#goto-step).
 

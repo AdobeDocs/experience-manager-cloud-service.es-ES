@@ -4,10 +4,11 @@ description: Aprenda a crear un formulario adaptable mediante  [!DNL Experience 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '689'
 ht-degree: 20%
 
 ---
@@ -82,7 +83,7 @@ Siga estos pasos para crear un formulario adaptable mediante plantillas de formu
 
    >[!NOTE]
    >
-   > Después de seleccionar **Plantillas de formulario** en la ficha Modelo de formulario **3&rbrace;, no se puede cambiar.**
+   > Después de seleccionar **Plantillas de formulario** en la ficha Modelo de formulario **3}, no se puede cambiar.**
 
 
 Se crea un formulario adaptable que se abre en el editor de formularios adaptables. El editor muestra el contenido disponible en la plantilla.  En función del tipo de formulario adaptable, los elementos del formulario presentes en la plantilla de formulario XFA asociada se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** de la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.

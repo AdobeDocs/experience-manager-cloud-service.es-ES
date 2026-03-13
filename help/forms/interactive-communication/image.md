@@ -4,11 +4,12 @@ description: Componente de imagen en el editor de comunicaciones interactivas de
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 247dcd95-9429-4fe9-88fc-c02b93b2f7e0
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 4%
+source-wordcount: '377'
+ht-degree: 5%
 
 ---
 

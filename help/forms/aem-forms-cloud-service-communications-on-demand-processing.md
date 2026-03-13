@@ -3,13 +3,14 @@ title: ¿Cómo se configuran las API sincrónicas de comunicaciones de Forms?
 description: Configurar el entorno de desarrollo para las API sincrónicas de comunicaciones interactivas para Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+exl-id: 0c8f6adc-46aa-4e96-b176-86b59322ad45
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2434'
 ht-degree: 3%
 
 ---
-
 
 # Invocar las API de comunicaciones de AEM Forms mediante la autenticación de servidor a servidor OAuth
 
@@ -35,7 +36,7 @@ Asegúrese de tener los derechos de acceso y los permisos necesarios antes de em
 
 >[!NOTE]
 >
-> Para obtener más información sobre la asignación de funciones y la concesión de acceso a los usuarios, consulte el artículo [Agregar usuarios y funciones](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Para obtener más información sobre la asignación de funciones y la concesión de acceso a los usuarios, consulte el artículo [Agregar usuarios y funciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Acceso al repositorio Git**
 
@@ -261,7 +262,7 @@ Genere los tokens de acceso manualmente en Adobe Developer Console:
 
 >[!TAB Para Producción]
 
-Generar tokens mediante programación usando la API [Adobe IMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Generar tokens mediante programación usando la API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenciales requeridas:**
 
@@ -747,7 +748,7 @@ Puede abrir el [PDF generado](/help/forms/assets/create-pdf.png) para verlo.
 **Síntomas:**
 
 * Las solicitudes de API devuelven `404 Not Found`
-* Mensaje de error: *No se encontró el recurso* o no se encontró el extremo de la API *3&rbrace;*
+* Mensaje de error: *No se encontró el recurso* o no se encontró el extremo de la API *3}*
 
 **Causa posible:**
 

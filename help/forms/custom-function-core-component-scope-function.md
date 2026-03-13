@@ -4,11 +4,12 @@ description: El formulario admite objetos de ámbito en funciones personalizadas
 keywords: objetos scope en funciones personalizadas, objetos globales, objetos field.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 248c75a5-6335-41d2-aa0a-28a20a710f88
-source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 1%
+source-wordcount: '464'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +33,7 @@ El objeto de ámbito tiene las siguientes funciones para la modificación del fo
 | **EventoEnvío** | `dispatchEvent(any $element, string $eventName [, any $payload])` | Envía un evento de tipo `$eventName` en el elemento determinado por `$target`. Si no se proporciona ningún destino, el evento se enviará en el formulario. El elemento opcional `$payload` está disponible para las expresiones que administran el evento. El parámetro `$dispatch` opcional controla el comportamiento de propagación de eventos. | [Haga clic aquí](/help/forms/custom-function-core-components-use-cases.md#add-or-delete-repeatable-panel-using-the-dispatchevent-property) para ver el ejemplo. |
 | **markFieldAsInvalid** | `markFieldAsInvalid(string $fieldIdentifier, string $validationMessage [, any $option = {useId: true}])` | Marca el campo identificado por `$fieldIdentifier` como no válido y muestra `$validationMessage`. El parámetro opcional `$option` especifica si `$fieldIdentifier` se interpreta como `id`, `dataRef` o `qualifiedName`. El valor predeterminado es `{useId: true}`. Valores compatibles: `{useId: true}`, `{useDataRef: true}`, `{useQualifiedName: true}`. | [Haga clic aquí](/help/forms/custom-function-core-components-use-cases.md#to-display-a-custom-message-at-the-field-level-and-marking-the-field-as-invalid) para ver el ejemplo. |
 
-## Véase también
+## Ver también
 
 {{see-also-rule-editor}}
 

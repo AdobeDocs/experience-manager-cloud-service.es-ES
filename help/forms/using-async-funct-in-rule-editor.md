@@ -4,11 +4,12 @@ description: Llamadas a funciones asíncronas en el editor de reglas visuales
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
-source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
-workflow-type: ht
-source-wordcount: '1409'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1415'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +54,7 @@ En la siguiente figura se muestran los pasos para usar el tipo de regla **[!UICO
 
 ![Flujo de trabajo para añadir funciones asíncronas](/help/forms/assets/workflow-to-add-async-func.png){width=50%, align=center}
 
-### 1. Escribir una función personalizada para la operación asíncrona en el archivo JS
+### &#x200B;1. Escribir una función personalizada para la operación asíncrona en el archivo JS
 
 >[!NOTE]
 >
@@ -99,7 +100,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 
 El código define una función `matchOTP()` que genera una promesa de validar una contraseña de un solo uso (OTP) de forma asíncrona. Utiliza una función `asyncOperationForOTPMatch()` para simular el proceso de coincidencia de OTP. La función comprueba si la OTP proporcionada es igual a `111`. Si la OTP introducida es correcta, llama a la devolución de llamada con un valor nulo para el error y un objeto que indica que la OTP es válida `({'valid':'true'})`. Si la OTP no es válida, llama a la devolución de llamada con un objeto de error `({'valid':'false'})` y un valor nulo para el resultado.
 
-### 2. Configurar la función asíncrona en el editor de reglas
+### &#x200B;2. Configurar la función asíncrona en el editor de reglas
 
 Realice los siguientes pasos para configurar la función asíncrona en el editor de reglas:
 

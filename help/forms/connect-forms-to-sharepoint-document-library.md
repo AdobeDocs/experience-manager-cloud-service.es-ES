@@ -4,11 +4,12 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: Cómo conectar la biblioteca de documentos de SharePoint para un formulario adaptable, Enviar a SharePoint, Crear una configuración de biblioteca de documentos de SharePoint, Utilizar la acción de envío Enviar a SharePoint en un formulario adaptable, Biblioteca de documentos de SharePoint del modelo de datos de AEM Forms, Biblioteca de documentos de SharePoint del modelo de datos de Forms, Integrar el modelo de datos de Forms a la biblioteca de documentos de SharePoint
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 62%
+source-wordcount: '997'
+ht-degree: 70%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 62%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444368/formautomation-productivitytools-adaptiveforms--sharepointintegration-documentlibrary/?quality=12&learn=on)
 
-<span> Este vídeo solo es aplicable a los componentes principales. Para componentes UE/Foundation, consulte el artículo.</span>
+<span> Este vídeo solo es aplicable a los componentes principales. Para componentes del editor universal o de base, consulte el artículo.</span>
 
 
 Para usar la acción de envío **[!UICONTROL Enviar a Biblioteca de documentos de SharePoint]** en un formulario adaptable:
@@ -73,7 +74,7 @@ Puede utilizar la configuración de la biblioteca de documentos de SharePoint cr
 
 >[!BEGINTABS]
 
->[!TAB Componente Base]
+>[!TAB Componente base]
 
 Realice los siguientes pasos para utilizar una configuración de almacenamiento de la biblioteca de documentos de SharePoint en un formulario adaptable basado en un componente de base como:
 
@@ -111,12 +112,12 @@ Realice los siguientes pasos para utilizar una configuración de almacenamiento 
 
 1. Abra el formulario adaptable para editarlo.
 1. Haga clic en la extensión **Editar propiedades del formulario** en el editor.
-Aparecerá el cuadro de diálogo **Propiedades del formulario**.
+Aparece el cuadro de diálogo **Propiedades del formulario**.
 
    >[!NOTE]
    >
-   > * Si no ve el icono **Editar propiedades de formulario** en la interfaz de Universal Editor, habilite la extensión **Editar propiedades de formulario** en Extension Manager.
-   > * Consulte el artículo [Aspectos destacados de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar o deshabilitar extensiones en el editor universal.
+   > * Si no ve el icono **Editar propiedades del formulario** en la interfaz del editor universal, habilite la extensión **Editar propiedades del formulario** en Extension Manager.
+   > * Consulte el artículo [Características destacadas de las funciones de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para obtener información sobre cómo habilitar y deshabilitar las extensiones del editor universal.
 
 1. Haga clic en la pestaña **Envío** y seleccione la acción de envío **[!UICONTROL Enviar a SharePoint]**.
    ![GIF de Sharepoint](/help/forms/assets/submit-to-sharepoint-ue.png)

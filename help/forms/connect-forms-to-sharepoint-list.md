@@ -4,11 +4,12 @@ Description: Learn how to send data from your Adaptive Form to a SharePoint stor
 keywords: ¿Cómo conectar la lista de SharePoint para un formulario adaptable?, Enviar a SharePoint, Crear una configuración de lista de SharePoint, Utilizar la acción de envío Enviar a SharePoint en un formulario adaptable, Conectar un formulario adaptable a Microsoft&reg; Lista de SharePoint.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 84%
+source-wordcount: '466'
+ht-degree: 83%
 
 ---
 

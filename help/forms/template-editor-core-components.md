@@ -3,11 +3,12 @@ title: Crear una plantilla de formulario adaptable con componentes principales
 description: Cree plantillas de formulario adaptable basadas en componentes principales para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 feature: Adaptive Forms, Core Components
 Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1910'
 ht-degree: 95%
 
 ---

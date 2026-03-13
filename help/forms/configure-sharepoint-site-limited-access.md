@@ -4,10 +4,11 @@ description: Obtenga información sobre cómo configurar el sitio de SharePoint 
 keywords: Configuración del sitio de SharePoint con acceso limitado?, Configuración de SharePoint con acceso limitado, Uso del ámbito de autorización para limitar el acceso al sitio de SharePoint.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 24%
 
 ---
@@ -36,12 +37,12 @@ Ventajas para proporcionar acceso limitado al sitio de SharePoint:
 
 Siga los pasos a continuación para configurar SharePoint Sites con acceso limitado mediante ámbitos de autorización:
 
-1. [Cree una aplicación con &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [Cree una aplicación con ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [Definir el ámbito de autorización en la instancia de AEM](#set-the-authorization-scope-at-aem-instance)
 
-### Crear una aplicación con el permiso limitado en el portal de Azure
+### Cree una aplicación con el permiso limitado en el portal de Azure
 
-Cree una aplicación en [Microsoft Azure Portal](https://portal.azure.com/#home) con el ámbito de permiso `Sites.Selected` en la API de Microsoft Graph.
+Cree una aplicación en [Microsoft Azure Portal](https://portal.azure.com/#home) con el ámbito de permiso `Sites.Selected` en la API de Graph de Microsoft.
 
 ![Sitio seleccionado de SharePoint](/help/forms/assets/sharepoint-selected-site.png)
 
@@ -51,7 +52,7 @@ Para obtener información sobre cómo recuperar `Client ID`, `Client Secret` y `
 * Agregue el ámbito de permisos `offline_access` y `Sites.Selected` en la API de Graph de Microsoft para proporcionar acceso restringido a los sitios.
 * Para la URL de OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Reemplace `<tenant-id>` por el `tenant-id` de su aplicación desde el portal de Microsoft® Azure.
 
-Para usar el permiso de API `Sites.Selected` se requiere una aplicación registrada en Azure Portal con los permisos adecuados establecidos para SharePoint Online Sites. Esta configuración garantiza que la aplicación tenga la autorización necesaria para interactuar con el sitio de SharePoint dentro del ámbito definido, lo que proporciona el acceso limitado requerido.
+Para usar el permiso de API `Sites.Selected` se requiere una aplicación registrada en el portal de Azure con los permisos adecuados establecidos para SharePoint Online Sites. Esta configuración garantiza que la aplicación tenga la autorización necesaria para interactuar con el sitio de SharePoint dentro del ámbito definido, lo que proporciona el acceso limitado requerido.
 
 Consulte el [artículo del blog - Desarrollar aplicaciones que usan Sites.Permisos seleccionados para sitios de SPO](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) para obtener instrucciones sobre el desarrollo de aplicaciones que usan permisos de `Sites.Selected` para sitios de SharePoint Online.
 

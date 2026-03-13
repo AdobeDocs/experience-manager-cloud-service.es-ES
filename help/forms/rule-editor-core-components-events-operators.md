@@ -4,10 +4,11 @@ description: El editor de reglas de Forms adaptable admite varios tipos de opera
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2327'
+source-wordcount: '2333'
 ht-degree: 42%
 
 ---
@@ -162,11 +163,11 @@ Consulte la regla de ejemplo para invocar los servicios del Modelo de datos de f
 
 Además del servicio de modelo de datos de formulario, puede especificar una URL de WSDL directa para invocar un servicio web. Sin embargo, un servicio de modelo de datos de formulario tiene muchas ventajas y es el método recomendado para invocar un servicio.
 
-Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL Experience Manager Forms] &#x200B;](data-integration.md).
+Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md).
 
 **[!UICONTROL Establecer valor de]** Calcula y establece el valor del objeto especificado. Puede establecer el valor del objeto en una cadena, el valor de otro objeto, el valor calculado mediante una expresión o función matemática, el valor de una propiedad de un objeto o el valor de salida de un servicio configurado de modelo de datos de formulario. Al elegir la opción de servicio web, se muestran todos los servicios configurados en todos los modelos de datos de formulario de la instancia de [!DNL Experience Manager]. Al elegir un servicio del modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado.
 
-Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL Experience Manager Forms] &#x200B;](data-integration.md).
+Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md).
 
 El tipo de regla **[!UICONTROL Establecer propiedad]** permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición. Puede establecer la propiedad en una de las siguientes opciones:
 

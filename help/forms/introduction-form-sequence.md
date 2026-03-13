@@ -4,11 +4,12 @@ description: Con  [!DNL Experience Manager Forms], puede definir una secuencia d
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '537'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 100%
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
-Los formularios adaptables permiten a los autores de formularios crear experiencias de captura de datos de varios pasos con gran facilidad. Estos formularios incluyen compatibilidad para crear varios paneles y asociar cada uno con diferentes patrones de navegación. Los autores de formularios pueden agrupar los campos de formulario en secciones lógicas y representar un grupo como un panel. La navegación general entre los paneles se controla mediante el diseño del panel. Los autores pueden elegir organizar los paneles en diferentes diseños, por ejemplo, colocándolos secuencialmente utilizando el diseño Asistente o de forma improvisada utilizando el diseño con pestañas. Para obtener información sobre los diseños de panel, consulte [Funciones de diseño de formularios adaptables](layout-capabilities-adaptive-forms.md).
+Los formularios adaptables permiten a los autores de formularios crear experiencias de captura de datos de varios pasos con gran facilidad. Estos formularios incluyen compatibilidad integrada para crear varios paneles y asociar cada uno con diferentes patrones de navegación. Los autores de formularios pueden agrupar los campos de formulario en secciones lógicas y representar un grupo como un panel. La navegación general entre los paneles se controla mediante el diseño del panel. Los autores pueden elegir organizar los paneles en diferentes diseños, por ejemplo, colocándolos secuencialmente utilizando el diseño Asistente o de forma improvisada utilizando el diseño con pestañas. Para obtener información sobre los diseños de panel, consulte [Funciones de diseño de formularios adaptables](layout-capabilities-adaptive-forms.md).
 
 Normalmente, durante la experiencia de rellenado de un formulario, hay que seguir más pasos además de capturar los datos. Un envío de formulario completo puede incluir otros pasos, como firmar el formulario de forma digital, verificar la información con la que se ha rellenado el formulario, procesar pagos, etc. Cada caso es diferente.
 

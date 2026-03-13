@@ -2,12 +2,13 @@
 title: ¿Cómo obtener temáticas de referencia y plantillas para AEM Forms?
 description: AEM Forms proporciona temáticas de formularios adaptables de muestra, plantillas y modelos de datos de formularios adaptables para ayudarle a crear formularios rápidamente.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 100%
+source-wordcount: '784'
+ht-degree: 99%
 
 ---
 

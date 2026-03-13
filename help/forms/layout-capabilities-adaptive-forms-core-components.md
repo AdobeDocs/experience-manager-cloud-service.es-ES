@@ -4,10 +4,11 @@ description: El diseño y el aspecto visual de los formularios adaptables en dif
 feature: Adaptive Forms, Core Components
 keywords: Diseño de un formulario adaptable basado en componentes principales, diferentes diseños para formularios, diseños de formularios dinámicos, AEM, diseños de formulario de AEM Cloud Service, tipos de diseños de formulario en los componentes principales de AEM, diseños de formularios adaptables
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2148'
 ht-degree: 21%
 
 ---
@@ -90,7 +91,7 @@ El diseño de pestañas horizontales también se conoce como Tabulaciones en el 
 
 Diseño de pestañas horizontales
 
-Puede usar el componente [pestañas horizontales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para agregar el diseño de pestañas horizontales en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de pestañas horizontales, consulte el artículo [componente de pestañas horizontales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+Puede usar el componente [pestañas horizontales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para agregar el diseño de pestañas horizontales en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de pestañas horizontales, consulte el artículo [componente de pestañas horizontales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
 >[!TAB Diseño de acordeón]

@@ -7,19 +7,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 91%
+source-wordcount: '676'
+ht-degree: 94%
 
 ---
 
 # Compatibilidad con cláusula de imagen para formularios HTML5 {#picture-clause-support-for-html-forms}
 
-<span class="preview">: la funcionalidad HTML5 Forms se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 Los formularios HTML5 admiten la cláusula de imagen XFA para el valor de visualización y el valor formateado de símbolos numéricos, texto y fecha. Se admiten las siguientes expresiones de cláusula de imagen:

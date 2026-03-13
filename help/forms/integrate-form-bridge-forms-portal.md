@@ -4,13 +4,14 @@ description: Puede utilizar la API de FormBridge para obtener o establecer los v
 content-type: reference
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 88%
+source-wordcount: '416'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 88%
 <span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
-FormBridge es una API de HTML5 Forms Bridge que le permite interactuar con un formulario. <!--For the FormBridge API reference, see [FormBridge API reference](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).-->
+FormBridge es una API de HTML5 Forms Bridge que le permite interactuar con un formulario. <!--For the FormBridge API reference, see [FormBridge API reference](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).-->
 
 Puede utilizar la API de FormBridge para obtener o establecer los valores de los campos de formulario de la página HTML y enviar el formulario. Por ejemplo, puede utilizar la API para crear una experiencia similar a un asistente.
 

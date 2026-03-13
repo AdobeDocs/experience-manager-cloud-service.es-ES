@@ -4,17 +4,18 @@ description: Aprenda a integrar una temática de Forms adaptable (por ejemplo, L
 keywords: tema de formularios adaptables, tema del sitio, tema de AEM Sites, integración de temas de formularios, canalización front-end, incrustación de temas
 feature: Adaptive Forms, Core Components
 role: Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 0607e11c-84d2-42cb-be9f-acd7c328a342
-source-git-commit: e1593d26beea79ffd7d8c5075b99d84c6a98c3b0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '864'
 ht-degree: 1%
 
 ---
 
 # Incrustar una temática de Forms adaptable en una temática de AEM Sites
 
-Puede incrustar una temática de Forms adaptable (como la [temática de lienzo de AEM Forms](https://github.com/adobe/aem-forms-theme-canvas)) en la temática de AEM Sites. De este modo, un solo tema controla tanto las páginas del sitio como cualquier Forms adaptable incrustado en esas páginas, con una compilación y una implementación a través de la [canalización front-end de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=es).
+Puede incrustar una temática de Forms adaptable (como la [temática de lienzo de AEM Forms](https://github.com/adobe/aem-forms-theme-canvas)) en la temática de AEM Sites. De este modo, un solo tema controla tanto las páginas del sitio como cualquier Forms adaptable incrustado en esas páginas, con una compilación y una implementación a través de la [canalización front-end de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html).
 
 Este artículo es para desarrolladores que mantienen o personalizan la temática estándar (o personalizada) de AEM Sites y que desean incluir el estilo del formulario adaptable sin administrar una implementación de temática de Forms independiente.
 
@@ -22,7 +23,7 @@ Este artículo es para desarrolladores que mantienen o personalizan la temática
 
 Antes de empezar, asegúrese de que dispone de lo siguiente:
 
-* **AEM as a Cloud Service** con la [canalización front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=es) configurada para el tema de su sitio.
+* **AEM as a Cloud Service** con la [canalización front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) configurada para el tema de su sitio.
 * **Fuentes de temas del sitio**: por ejemplo, el [tema estándar de la plantilla del sitio](https://github.com/adobe/aem-site-template-standard) (el repositorio que contiene `theme/` con `src/theme.scss`, `src/components/`, etc.).
 * **Fuentes de temas de Forms** - el [tema de lienzo de AEM Forms](https://github.com/adobe/aem-forms-theme-canvas) (u otro tema de Forms adaptable compatible) clonado o descargado localmente.
 * **Node.js y npm**: para crear el tema del sitio (consulte el tema README para ver las versiones compatibles).
@@ -209,7 +210,7 @@ Este es el único cambio necesario en la estructura del tema del sitio existente
 
    ![ejecutar compilación](/help/forms/assets/theme-mpm-run-build.png)
 
-2. Implementar mediante su [canalización front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=es) existente. Después de la implementación, se aplicará el mismo tema CSS a ambas páginas del sitio y a los Forms adaptables incrustados.
+2. Implementar mediante su [canalización front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) existente. Después de la implementación, se aplicará el mismo tema CSS a ambas páginas del sitio y a los Forms adaptables incrustados.
 
 ## Solución de problemas {#troubleshooting}
 
@@ -224,4 +225,4 @@ Este es el único cambio necesario en la estructura del tema del sitio existente
 ## Consulte también {#see-also}
 
 * [Utilizar temáticas para aplicar estilo a Forms adaptable basado en componentes principales](/help/forms/using-themes-in-core-components.md)
-* [Desarrollar con canalizaciones front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=es)
+* [Desarrollar con canalizaciones front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html)

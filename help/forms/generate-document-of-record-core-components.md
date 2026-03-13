@@ -2,11 +2,12 @@
 title: Generar un PDF de envío (anteriormente, documento de registro) para Forms adaptable
 description: Aprenda a generar una PDF de envío a partir de los envíos de formularios para los componentes principales de Forms adaptable. Cree una PDF del formulario enviado para archivarla o consultarla.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3320'
 ht-degree: 43%
 
 ---
@@ -41,15 +42,15 @@ Puede hacer lo siguiente:
 
 ## Antes de comenzar {#components-to-automatically-generate-a-document-of-record}
 
-Antes de empezar a conocer y preparar los recursos necesarios para un PDF de envío:
+Antes de comenzar, aprenda y prepare los recursos necesarios para una PDF de envío:
 
-**Plantilla base:** una plantilla XFA (archivo XDP) creada en el diseñador de formularios o un formulario de Acrobat (AcroForm). [La plantilla base](#base-template-of-a-document-of-record) se usa para especificar información de estilo y marca para un PDF de envío. Cargue la plantilla XFA (archivo XDP) en la instancia de AEM Forms previamente.
+**Plantilla base:** una plantilla XFA (archivo XDP) creada en el diseñador de formularios o un formulario de Acrobat (AcroForm). [La plantilla base](#base-template-of-a-document-of-record) se usa para especificar la información de estilo y de personalización de marca de un PDF de envío. Cargue la plantilla XFA (archivo XDP) en la instancia de AEM Forms previamente.
 
-**Formulario adaptable:** Formulario adaptable para el que se va a generar el PDF de envío.
+**Formulario adaptable:** Formulario adaptable para el que se generará el PDF de envío.
 
 ## Generar un PDF de envío basado en XFA {#generate-an-XFA-based-document-of-record}
 
-Cargue la plantilla XFA (archivo XDP) en la instancia de AEM Forms. Realice los siguientes pasos para configurar un formulario adaptable para utilizar una plantilla XFA (archivo XDP) como plantilla para el PDF de envío:
+Cargue la plantilla XFA (archivo XDP) en la instancia de AEM Forms. Realice los siguientes pasos para configurar un formulario adaptable para utilizar una plantilla XFA (archivo XDP) como plantilla para PDF de envío:
 
 1. En la instancia de autor del Experience Manager, haga clic en **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos].**
 1. Seleccione un formulario o cree un formulario adaptable y haga clic en **[!UICONTROL Propiedades]**.
@@ -60,9 +61,9 @@ Cargue la plantilla XFA (archivo XDP) en la instancia de AEM Forms. Realice los 
 
 El formulario adaptable ahora está configurado para utilizar un archivo XDP como plantilla para PDF de envío. Los siguientes pasos son [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
 
-## Generar un PDF de envío basado en Acroform {#generate-an-Acroform-based-document-of-record}
+## Generar un PDF de envío basado en AcroForm {#generate-an-Acroform-based-document-of-record}
 
-Cargue el PDF de Adobe Acrobat (AcroForm) a su instancia de AEM Forms. Realice los siguientes pasos para configurar un formulario adaptable para utilizar Adobe Acrobat PDF (Acroform) como plantilla para el PDF de envío:
+Cargue el PDF de Adobe Acrobat (AcroForm) a su instancia de AEM Forms. Realice los siguientes pasos para configurar un formulario adaptable para utilizar Adobe Acrobat PDF (AcroForm) como plantilla para PDF de envío:
 
 1. En la instancia de autor del Experience Manager, haga clic en **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos].**
 1. Seleccione un formulario o **[!UICONTROL Crear un formulario adaptable]**, y haga clic en **[!UICONTROL Propiedades]**.
@@ -73,15 +74,15 @@ Cargue el PDF de Adobe Acrobat (AcroForm) a su instancia de AEM Forms. Realice l
 
 El formulario adaptable ahora está configurado para utilizar AcroForm como plantilla para PDF de envío. Los siguientes pasos son [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
 
-## Generación automática de un PDF de envío {#auto-generate-a-document-of-record}
+## Generar automáticamente un PDF de envío {#auto-generate-a-document-of-record}
 
-Cuando se configura un formulario adaptable para generar automáticamente un PDF de envío, cada vez que se cambia un formulario, su PDF de envío se actualiza inmediatamente. Por ejemplo, si se quita un campo de un formulario adaptable existente, el campo correspondiente también se quita y no está visible en el PDF de envío. Existen muchas otras ventajas al generar automáticamente una PDF de envío:
+Cuando se configura un formulario adaptable para que genere automáticamente una PDF de envío, cada vez que se cambia un formulario, su PDF de envío se actualiza inmediatamente. Por ejemplo, si se quita un campo de un formulario adaptable existente, el campo correspondiente también se elimina y no es visible en la PDF de envío. Existen muchas otras ventajas al generar automáticamente una PDF de envío:
 
 * Los desarrolladores de formularios no tienen que mantener enlaces de datos de forma manual. El PDF de envío generado automáticamente se encarga de las actualizaciones relacionadas con los enlaces de datos.
-* Los desarrolladores de formularios no tienen que ocultar manualmente los campos marcados como excluir del PDF de envío. Los PDF de envío generados automáticamente están preconfigurados para excluir estos campos.
-* La opción PDF de envío generado automáticamente ahorra el tiempo necesario para crear una plantilla de formulario para el PDF de envío.
-* La opción PDF de envío generado automáticamente le permite utilizar estilos y apariencias diferentes mediante plantillas base diferentes. Le ayuda a seleccionar el mejor estilo y apariencia para el PDF de envíos de su organización. Si no especifica estilo, los estilos del sistema se establecen como predeterminados.
-* El PDF de envío generado automáticamente garantiza que cualquier cambio en la forma se refleje inmediatamente en el PDF de envío.
+* Los desarrolladores de formularios no tienen que ocultar manualmente los campos marcados que se excluyen de PDF de envío. Las PDF de envío generadas automáticamente están preconfiguradas para excluir estos campos.
+* La opción de PDF de envío generada automáticamente ahorra el tiempo necesario para crear una plantilla de formulario para el PDF de envío.
+* La opción de PDF de envío generado automáticamente permite utilizar diferentes estilos y apariencias con diferentes plantillas base. Ayuda a seleccionar el mejor estilo y aspecto para Submission PDF para su organización. Si no especifica estilo, los estilos del sistema se establecen como predeterminados.
+* El PDF de envío generado automáticamente garantiza que cualquier cambio en el formulario se refleje inmediatamente en el PDF de envío.
 
 Realice los siguientes pasos para configurar un formulario adaptable para generar automáticamente una PDF de envío:
 
@@ -125,7 +126,7 @@ Los formularios adaptables y las plantillas de PDF de envío correspondientes pu
 
 Al cambiar una plantilla de PDF de envío y cargar la plantilla modificada en AEM Forms, el editor de Forms adaptable detecta automáticamente los enlaces modificados y le informa sobre los componentes de formulario adaptable que requieren nuevos enlaces. Permite realizar actualizaciones incrementales en una plantilla de PDF de envío.
 
-Por ejemplo, una organización, *We.Retail*, tiene una plantilla de PDF de envío basada en AcroForm, *we-retail-billing.pdf*. La plantilla tiene el siguiente aspecto:
+Por ejemplo, una organización, *We.Retail*, tiene una plantilla de PDF de envío basada en AcroForm, *we-retail-Invoice.pdf*. La plantilla tiene el siguiente aspecto:
 
 ![Plantilla original](assets/we-retail-invoice.png)
 
@@ -145,16 +146,16 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 >[!VIDEO](assets/we-retail-binding.mp4)
 
-Ahora, cuando se envía el formulario adaptable, se genera un PDF de envío actualizado.
+Ahora, cuando se envía el formulario adaptable, se genera una PDF de envío actualizada.
 
 ![Se han actualizado-](assets/we-retail-new-invoice-sent-to-customer.png)
 
-## Consideraciones clave al trabajar con el PDF de envío {#key-considerations-when-working-with-document-of-record}
+## Consideraciones clave al trabajar con PDF de envío {#key-considerations-when-working-with-document-of-record}
 
-Tenga en cuenta las siguientes consideraciones y limitaciones al trabajar con el PDF de envío para Forms adaptable.
+Tenga en cuenta las siguientes consideraciones y limitaciones al trabajar en PDF de envío para Forms adaptable.
 
-* Las plantillas del PDF de envío no admiten texto enriquecido. Por lo tanto, cualquier texto enriquecido en el formulario adaptable estático o en la información rellenada por el usuario aparece como texto sin formato en el PDF de envío.
-* Los fragmentos de documento de un formulario adaptable no aparecen en el PDF de envío. Sin embargo, se admiten los fragmentos de formularios adaptables.
+* Las plantillas de PDF de envío no admiten texto enriquecido. Por lo tanto, cualquier texto enriquecido del formulario adaptable estático o de la información rellenada por el usuario aparece como texto sin formato en la PDF de envío.
+* Los fragmentos de documento de un formulario adaptable no aparecen en la PDF de envío. Sin embargo, se admiten los fragmentos de formularios adaptables.
 * No se admite el enlace de contenido en el PDF de envío generado para el formulario adaptable basado en el esquema XML.
 * La versión localizada de PDF de envío se crea bajo demanda para una configuración regional cuando el usuario solicita la representación de PDF de envío. La localización de PDF de envío se produce junto con la localización del formulario adaptable. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
@@ -175,7 +176,7 @@ When you select a form model, configure Document of Record using options availab
 
 ## Asignación de elementos de formulario adaptable {#mapping-of-adaptive-form-elements}
 
-En la tabla siguiente se describen los componentes de formulario adaptable y los componentes XFA correspondientes, y si aparecen en un PDF de envío.
+En la tabla siguiente se describen los componentes de formulario adaptable y los componentes XFA correspondientes, y si aparecen en una PDF de envío.
 
 ### Campos {#fields}
 
@@ -184,7 +185,7 @@ En la tabla siguiente se describen los componentes de formulario adaptable y los
   <tr>
    <th>Componente de formulario adaptable</th>
    <th>Componente XFA correspondiente</th>
-   <th>¿Se incluye de forma predeterminada en la plantilla PDF de envío?</th>
+   <th>¿Se incluye de forma predeterminada en la plantilla de PDF Envío?</th>
    <th>Notas</th>
   </tr>
   <tr>
@@ -288,7 +289,7 @@ Siga siempre las [convenciones de plantilla base](#base-template-conventions) al
 
 ## Convenciones de plantilla base {#base-template-conventions}
 
-Una plantilla base se utiliza para definir el encabezado, pie de página, estilo y apariencia de un PDF de envío. El encabezado y pie de página pueden incluir información como el logotipo de la empresa y la información de copyright. La primera página principal de la plantilla base se copia y se utiliza como página principal del PDF de envío, que contiene un encabezado, pie de página, número de página o cualquier otra información que debería aparecer en todas las páginas del PDF de envío. Si utiliza una plantilla base que no se ajusta a las convenciones de la plantilla base, la primera página maestra de la plantilla base se seguirá utilizando en la plantilla PDF de envío. Se recomienda encarecidamente que diseñe la plantilla base según sus convenciones y que la utilice para la generación automática del PDF de envío.
+Se utiliza una plantilla base para definir el encabezado, el pie de página, el estilo y el aspecto de una PDF de envío. El encabezado y pie de página pueden incluir información como el logotipo de la empresa y la información de copyright. La primera página maestra de la plantilla base se copia y se utiliza como página maestra de la PDF de envíos, que contiene un encabezado, un pie de página, un número de página o cualquier otra información que deba aparecer en todas las páginas de la PDF de envíos. Si utiliza una plantilla base que no se ajusta a las convenciones de plantilla base, la primera página maestra de la plantilla se seguirá utilizando en la plantilla de PDF de envío. Se recomienda encarecidamente que diseñe la plantilla base según sus convenciones y que la utilice para la generación automática de PDF de envío.
 
 **Convenciones de la página maestra**
 
@@ -300,9 +301,9 @@ Una plantilla base se utiliza para definir el encabezado, pie de página, estilo
 
 **Convenciones de estilo para campos**
 
-* Para aplicar estilo a los campos del PDF de envío, la plantilla base proporciona campos ubicados en el subformulario `AF_FIELDSSUBFORM` bajo el subformulario raíz `AF_METATEMPLATE`.
+* Para aplicar estilo en los campos de la PDF de envío, la plantilla base proporciona campos ubicados en el subformulario `AF_FIELDSSUBFORM` bajo el subformulario raíz `AF_METATEMPLATE`.
 
-* Las propiedades de estos campos se aplican a los campos del PDF de envío. Estos campos deben seguir la convención de nomenclatura de `AF_<name of field in all caps>_XFO`. Por ejemplo, el nombre de campo de la casilla de verificación debe ser `AF_CHECKBOX_XFO`.
+* Las propiedades de estos campos se aplican a los campos de la PDF de envío. Estos campos deben seguir la convención de nomenclatura de `AF_<name of field in all caps>_XFO`. Por ejemplo, el nombre de campo de la casilla de verificación debe ser `AF_CHECKBOX_XFO`.
 
 Para crear una plantilla base, haga lo siguiente en el diseñador de formularios.
 
@@ -313,7 +314,7 @@ Para crear una plantilla base, haga lo siguiente en el diseñador de formularios
 1. Seleccione **[!UICONTROL Plantilla base de documento de registro]**.
 1. Haga clic en **[!UICONTROL Siguiente]** y proporcione la información requerida.
 
-1. (Opcional) Modifique el estilo y el aspecto de los campos que desee aplicar a los campos del PDF de envío.
+1. (Opcional) Modifique el estilo y el aspecto de los campos que desea aplicar en los campos de la PDF de envío.
 1. Guarde el formulario.
    ![Propiedades básicas](/help/forms/assets/form-designer-dor-img.png)
 
@@ -369,38 +370,38 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
       * **Imagen del logotipo**: puede elegir usar la imagen del logotipo en el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
       * **Título del formulario**: título del documento de registro.
-      * **Texto de encabezado**: texto que aparece en la sección de encabezado del PDF de envío.
+      * **Texto de encabezado**: Texto que aparece en la sección de encabezado del PDF de envío.
       * **Etiqueta de descargo de responsabilidad**: etiqueta de descargo de responsabilidad.
-      * **Aviso legal**: Texto que especifica el ámbito de derechos y obligaciones del PDF de envío.
+      * **Descargo de responsabilidad**: texto que especifica el ámbito de derechos y obligaciones en la PDF de envío.
       * **Texto de descargo de responsabilidad**: texto del descargo de responsabilidad.
 
 1. Para guardar los cambios de personalización de marca, seleccione **[!UICONTROL Listo]**.
 
 >[!NOTE]
 > 
-> Para mostrar un título de formulario personalizado en el PDF de envío, edite el **Título de formulario personalizado** en **Propiedades del documento de registro** > **Propiedades de la página maestra**. Este título personalizado:
+> Para mostrar un título de formulario personalizado en el PDF de envío, edite **Título de formulario personalizado** en **Propiedades del documento de registro** > **Propiedades de la página maestra**. Este título personalizado:
 > 
 > * Aparece en el encabezado del PDF generado
 > * Aparece como título en las propiedades del documento del PDF
 > * Aparece como el título de la vista inicial cuando se abre el PDF
 
-## Diseños de tabla y columna para paneles en el PDF de envío {#table-and-column-layouts-for-panels-in-document-of-record}
+## Diseños de tablas y columnas para paneles de PDF de envío {#table-and-column-layouts-for-panels-in-document-of-record}
 
-El formulario adaptable puede ser largo y tener varios campos de formulario. Es posible que no desee guardar un PDF de envío como una copia exacta del formulario adaptable. Ahora puede elegir un diseño de tabla o columna para guardar uno o varios paneles de formulario adaptable en el PDF de envío.
+El formulario adaptable puede ser largo y tener varios campos de formulario. Es posible que no desee guardar una PDF de envío como una copia exacta del formulario adaptable. Ahora puede elegir un diseño de tabla o columna para guardar uno o más paneles de formulario adaptable en la PDF de envío.
 
-Antes de generar un PDF de envío, en la configuración de un panel, seleccione Diseño para el documento de registro de ese panel como Tabla o Columna. Los campos del panel se organizan en consecuencia en el PDF de envío.
+Antes de generar una PDF de envío, en la configuración de un panel, seleccione Diseño del documento de registro para ese panel como Tabla o Columna. Los campos del panel se organizan en consecuencia en la PDF de envío.
 
 ![Los campos de un panel se representan en forma de tabla en el PDF de envío](assets/dortablelayout.png)
 
 Los campos de un panel se representan en forma de tabla en la PDF de envío
 
-![Campos de un panel representados en un diseño de columna en el PDF de envío](assets/dorcolumnlayout.png)
+![Campos de un panel representados en un diseño de columna en la PDF de envío](assets/dorcolumnlayout.png)
 
-Campos de un panel representados en un diseño de columna en el PDF de envío
+Los campos de un panel se representan en forma de columna en la PDF de envío
 
-## Configuración del PDF de envío {#document-of-record-settings}
+## Configuración de PDF de envío {#document-of-record-settings}
 
-La configuración del PDF de envío le permite elegir las opciones que desea incluir en el PDF de envío. Por ejemplo, un banco acepta el nombre, la edad, el número de la seguridad social y el número de teléfono en un formulario. El formulario genera un número de cuenta bancaria y detalles de sucursal. Puede elegir mostrar solo el nombre, el número de la seguridad social, la cuenta bancaria y los detalles de la sucursal en el PDF de envío.
+La configuración de PDF de envío permite elegir las opciones que desea incluir en PDF de envío. Por ejemplo, un banco acepta el nombre, la edad, el número de la seguridad social y el número de teléfono en un formulario. El formulario genera un número de cuenta bancaria y detalles de sucursal. Puede elegir mostrar únicamente el nombre, el número de la seguridad social, la cuenta bancaria y los detalles de la sucursal en PDF de envío.
 
 La configuración del componente de documento de registro está disponible en sus propiedades. Para acceder a las propiedades de un componente, seleccione el componente y haga clic en ![cmppr](assets/cmppr.png) en la superposición. Las propiedades se enumeran en la barra lateral y puede encontrar la siguiente configuración en ella.
 
@@ -410,7 +411,7 @@ La configuración del componente de documento de registro está disponible en su
 
 * **Mostrar panel como tabla:** Al establecer la propiedad, se muestra el panel como tabla en PDF de envío si el panel contiene menos de 6 campos. Solo aplicable para paneles.
 * **Excluir título del documento de registro:** Al establecer la propiedad, se excluye el título del panel o la tabla del PDF de envío. Aplicable solo para paneles y tablas.
-* **Excluir descripción del documento de registro:** Al establecer la propiedad se excluye la descripción del panel o tabla del PDF de envío. Aplicable solo para paneles y tablas.
+* **Excluir descripción del documento de registro:** Al establecer la propiedad, se excluye la descripción del panel o la tabla del PDF de envío. Aplicable solo para paneles y tablas.
 * **Excluir campos ocultos del documento de registro**: al seleccionar esta propiedad se excluyen los campos ocultos del PDF de envío. Se aplica a todos los campos de formulario. De manera predeterminada, la opción **Excluir campos ocultos del documento de registro** no está seleccionada.
 
 **Configuración del nivel de formulario**
@@ -419,8 +420,8 @@ La configuración del componente de documento de registro está disponible en su
 
 ## Preguntas frecuentes {#faq}
 
-**Q: Los cambios no aparecen en el PDF de envío.**
-**Respuestas:** Abra el formulario en el editor de Forms adaptable, realice una edición secundaria (por ejemplo, ajuste una etiqueta de campo o reordene un campo) y guarde el formulario. De este modo, se regenera la plantilla PDF de envío y los cambios aparecen en el siguiente PDF generado.
+**Q: los cambios no aparecen en el PDF de envío.**
+**R:** Abra el formulario en el editor de Forms adaptable, realice una edición menor (por ejemplo, ajuste una etiqueta de campo o reordene un campo) y guarde el formulario. Esto regenera la plantilla de PDF de envío y los cambios aparecen en la siguiente PDF generada.
 
 ## Ver también {#see-also}
 

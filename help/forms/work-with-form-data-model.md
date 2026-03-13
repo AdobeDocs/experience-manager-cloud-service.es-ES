@@ -1,14 +1,15 @@
 ---
 title: ¿Cuál es el proceso para trabajar con un modelo de datos de formulario (FDM) en AEM Forms?
-description: Añadir objetos y servicios del modelo de datos, crear objetos del modelo de datos y propiedades secundarias, configurar servicios y trabajar con propiedades de navegación de servicios OData.
+description: Agregar servicios y objetos de modelo de datos, crear objetos de modelo de datos y propiedades secundarias, configurar servicios y trabajar con propiedades de navegación de servicios OData.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '4146'
-ht-degree: 100%
+source-wordcount: '4152'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 100%
 
 ![data-integration](do-not-localize/data-integeration.png)
 
-El editor del modelo de datos de formulario (FDM) proporciona una interfaz de usuario intuitiva y herramientas para editar y configurar un modelo de datos de formulario (FDM). Con el editor, se pueden agregar y configurar objetos, propiedades y servicios de modelo de datos desde fuentes de datos asociadas en el modelo de datos de formulario (FDM). Además, permite crear objetos y propiedades de modelos de datos sin fuentes de datos y enlazarlos posteriormente con objetos y propiedades de modelos de datos respectivos. También puede generar y editar los datos de ejemplo para las propiedades de objetos del modelo de datos que puede utilizar para rellenar previamente formularios adaptables <!--and interactive communications--> durante la vista previa. Puede probar los objetos y servicios de modelo de datos configurados en un modelo de datos de formulario (FDM) para asegurarse de que está correctamente integrado con las fuentes de datos.
+El editor del modelo de datos de formulario (FDM) proporciona una interfaz de usuario intuitiva y herramientas para editar y configurar un modelo de datos de formulario (FDM). Con el editor, se pueden agregar y configurar servicios, propiedades y objetos de modelo de datos desde fuentes de datos asociadas en el modelo de datos de formulario (FDM). Además, permite crear propiedades y objetos de modelo de datos sin fuentes de datos y enlazarlos posteriormente con propiedades y objetos de modelo de datos respectivos. También puede generar y editar los datos de muestra para las propiedades de objetos de modelo de datos que puede utilizar para rellenar previamente formularios adaptables <!--and interactive communications--> durante la vista previa. Puede probar los servicios y objetos de modelo de datos configurados en un modelo de datos de formulario (FDM) para asegurarse de que está correctamente integrado con las fuentes de datos.
 
 Si acaba de empezar con la integración de datos de Forms y no ha configurado una fuente de datos o creado un modelo de datos de formulario (FDM), consulte los temas siguientes:
 
@@ -36,31 +37,31 @@ Continúe leyendo para obtener más información sobre las diversas tareas y con
 >
 >Debe ser miembro de los grupos **fdm-author** y **forms-user** para poder crear y trabajar con el modelo de datos de formulario (FDM). Póngase en contacto con su [!DNL Experience Manager] administrador para convertirse en miembro de los grupos.
 
-## Agregar objetos y servicios del modelo de datos {#add-data-model-objects-and-services}
+## Agregar servicios y objetos de modelo de datos {#add-data-model-objects-and-services}
 
-Si ha creado un modelo de datos de formulario (FDM) con fuentes de datos, puede utilizar el editor del modelo de datos de formulario para añadir objetos y servicios de modelo de datos, configurar sus propiedades, crear asociaciones entre los objetos del modelo de datos y probar el modelo de datos de formulario y los servicios.
+Si ha creado un modelo de datos de formulario (FDM) con fuentes de datos, puede utilizar el editor del modelo de datos de formulario para añadir servicios y objetos de modelo de datos, configurar sus propiedades, crear asociaciones entre los objetos de modelo de datos y probar el modelo de datos de formulario y los servicios.
 
-Puede agregar objetos y servicios de modelo de datos desde fuentes de datos disponibles en el modelo de datos de formulario (FDM). Cuando los objetos del modelo de datos agregados aparecen en la pestaña Modelo, los servicios que se hayan añadido aparecen en la pestaña Servicios.
+Puede agregar servicios y objetos de modelo de datos desde fuentes de datos disponibles en el modelo de datos de formulario (FDM). Cuando los objetos de modelo de datos agregados aparecen en la pestaña Modelo, los servicios que se hayan añadido aparecen en la pestaña Servicios.
 
-Para agregar objetos y servicios del modelo de datos:
+Para agregar servicios y objetos de modelo de datos:
 
-1. Inicie sesión en la instancia de autor de [!DNL Experience Manager], vaya a **[!UICONTROL Formularios > Integraciones de datos]** y abra el modelo de datos de formulario en el que desea añadir objetos del modelo de datos.
-1. En el panel Fuentes de datos, expanda las fuentes de datos para ver los objetos y servicios del modelo de datos disponibles.
-1. Seleccione los objetos y servicios de modelo de datos que desea agregar al modelo de datos de formulario (FDM) y seleccione **[!UICONTROL Agregar selección]**.
+1. Inicie sesión en la instancia de autor de [!DNL Experience Manager], vaya a **[!UICONTROL Formularios > Integraciones de datos]** y abra el modelo de datos de formulario en el que desea añadir objetos de modelo de datos.
+1. En el panel Fuentes de datos, expanda las fuentes de datos para ver los servicios y objetos de modelo de datos disponibles.
+1. Seleccione los servicios y objetos de modelo de datos que desea agregar al modelo de datos de formulario (FDM) y seleccione **[!UICONTROL Agregar selección]**.
 
    ![selected-objects](assets/selected-objects.png)
 
-   Objetos y servicios del modelo de datos seleccionado
+   Servicios y objetos de modelo de datos seleccionado
 
-   La pestaña **[!UICONTROL Modelo]** muestra una representación gráfica de todos los objetos del modelo de datos y sus propiedades agregadas al modelo de datos de formulario (FDM). Cada objeto del modelo de datos se representa mediante un cuadro en el modelo de datos de formulario (FDM).
+   La pestaña **[!UICONTROL Modelo]** muestra una representación gráfica de todos los objetos de modelo de datos y sus propiedades agregadas al modelo de datos de formulario (FDM). Cada objeto de modelo de datos se representa mediante un cuadro en el modelo de datos de formulario (FDM).
 
    ![model-tab](assets/model-tab.png)
 
-   La pestaña **[!UICONTROL Modelo]** muestra los objetos del modelo de datos agregados
+   La pestaña **[!UICONTROL Modelo]** muestra los objetos de modelo de datos agregados
 
    >[!NOTE]
    >
-   >Puede mantener y arrastrar cuadros de objetos del modelo de datos alrededor para organizarlos en el área de contenido. Todos los objetos del modelo de datos agregados en el modelo de datos de formulario (FDM) aparecen atenuados en el panel Fuentes de datos.
+   >Puede mantener y arrastrar cuadros de objetos de modelo de datos alrededor para organizarlos en el área de contenido. Todos los objetos de modelo de datos agregados en el modelo de datos de formulario (FDM) aparecen atenuados en el panel Fuentes de datos.
 
    La pestaña **[!UICONTROL Servicios]** enumera los servicios añadidos.
 
@@ -70,7 +71,7 @@ Para agregar objetos y servicios del modelo de datos:
 
    >[!NOTE]
    >
-   >Además de los objetos y servicios del modelo de datos, el documento de metadatos del servicio OData incluye propiedades de navegación que definen la asociación entre dos objetos del modelo de datos. Para obtener más información, consulte [Uso de las propiedades de navegación de los servicios de OData](#work-with-navigation-properties-of-odata-services).
+   >Además de los servicios y objetos de modelo de datos, el documento de metadatos del servicio OData incluye propiedades de navegación que definen la asociación entre dos objetos de modelo de datos. Para obtener más información, consulte [Uso de las propiedades de navegación de los servicios de OData](#work-with-navigation-properties-of-odata-services).
 
 1. Selecciona **[!UICONTROL Guardar]** para guardar el objeto del modelo de formulario.
 
@@ -78,42 +79,42 @@ Para agregar objetos y servicios del modelo de datos:
    >
    >Puede invocar los servicios que configuró en la pestaña Servicios de un modelo de datos de formulario (FDM) mediante las reglas de los formularios adaptables. Los servicios configurados están disponibles en la acción Invocar servicios del editor de reglas. Para obtener más información sobre el uso de estos servicios en las reglas de los formularios adaptables, consulte las reglas Invoke service y Set Value Of en el [editor de reglas](rule-editor.md).
 
-## Crear objetos del modelo de datos y propiedades secundarias {#create-data-model-objects-and-child-properties}
+## Crear objetos de modelo de datos y propiedades secundarias {#create-data-model-objects-and-child-properties}
 
-### Crear objetos del modelo de datos {#create-data-model-objects}
+### Crear objetos de modelo de datos {#create-data-model-objects}
 
 Aunque puede agregar objetos de modelo de datos desde fuentes de datos configuradas, también puede crear objetos o entidades de modelo de datos sin fuentes de datos. Resulta útil, especialmente si no se han configurado fuentes de datos en el modelo de datos de formulario (FDM).
 
 Para crear un objeto de modelo de datos sin fuentes de datos, haga lo siguiente:
 
-1. Inicie sesión en la instancia de autor de [!DNL Experience Manager], vaya a **[!UICONTROL Forms > Integraciones de datos]** y abra el modelo de datos de formulario (FDM) en el que desea crear un objeto o entidad de modelo de datos.
+1. Inicie sesión en la instancia de autor de [!DNL Experience Manager], vaya a **[!UICONTROL Forms > Integraciones de datos]** y abra el modelo de datos de formulario (FDM) en el que desea crear una entidad u objeto de modelo de datos.
 1. Selecciona **[!UICONTROL Crear entidad]**.
-1. En el cuadro de diálogo [!UICONTROL Crear modelo de datos], especifica un nombre para el objeto del modelo de datos y selecciona **[!UICONTROL Agregar]**. Se añade un objeto de modelo de datos al modelo de datos de formulario (FDM). El objeto del modelo de datos recién agregado no está enlazado a una fuente de datos y no tiene propiedades como se muestra en la siguiente imagen.
+1. En el cuadro de diálogo [!UICONTROL Crear modelo de datos], especifica un nombre para el objeto de modelo de datos y selecciona **[!UICONTROL Agregar]**. Se añade un objeto de modelo de datos al modelo de datos de formulario (FDM). El objeto de modelo de datos recién agregado no está enlazado a una fuente de datos y no tiene propiedades como se muestra en la siguiente imagen.
 
    ![new-entity](assets/new-entity.png)
 
-A continuación, puede agregar propiedades secundarias en objetos del modelo de datos no enlazados.
+A continuación, puede agregar propiedades secundarias en objetos de modelo de datos no enlazados.
 
 ### Agregar propiedades secundarias {#child-properties}
 
-El editor del modelo de datos de formulario permite crear propiedades secundarias en un objeto del modelo de datos. La propiedad cuando se crea no está enlazada a ninguna propiedad de una fuente de datos. Posteriormente, puede enlazar la propiedad secundaria con otra propiedad del objeto del modelo de datos que la contiene.
+El editor del modelo de datos de formulario permite crear propiedades secundarias en un objeto de modelo de datos. La propiedad cuando se crea no está enlazada a ninguna propiedad de una fuente de datos. Posteriormente, puede enlazar la propiedad secundaria con otra propiedad del objeto de modelo de datos que la contiene.
 
 Para crear una propiedad secundaria:
 
 1. En un modelo de datos de formulario, selecciona un objeto de modelo de datos y selecciona **[!UICONTROL Crear propiedad secundaria]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear propiedad secundaria]**, especifique un nombre y un tipo de datos para la propiedad en los campos **[!UICONTROL Nombre]** y **[!UICONTROL Tipo]**, respectivamente. Si lo desea, puede especificar un título y una descripción para la propiedad.
 1. Habilite la opción Calculada si la propiedad es una propiedad calculada. El valor de una propiedad calculada se evalúa en función de una regla o una expresión. Para obtener más información, consulte [Editar propiedades](#properties).
-1. Si el objeto del modelo de datos está enlazado a una fuente de datos, la propiedad secundaria agregada se enlazará automáticamente a la propiedad del objeto del modelo de datos principal con el mismo nombre y tipo de datos.
+1. Si el objeto de modelo de datos está enlazado a una fuente de datos, la propiedad secundaria agregada se enlazará automáticamente a la propiedad del objeto de modelo de datos principal con el mismo nombre y tipo de datos.
 
-   Para enlazar manualmente una propiedad secundaria con una propiedad de objeto del modelo de datos, selecciona el icono de examinar situado junto al campo **[!UICONTROL Referencia de enlace]**. El cuadro de diálogo **[!UICONTROL Seleccionar objeto]** enumera todas las propiedades del objeto del modelo de datos principal. Selecciona una propiedad con la que enlazar el objeto y selecciona el icono del tic. Solo puede seleccionar una propiedad del mismo tipo de datos que la propiedad secundaria.
+   Para enlazar manualmente una propiedad secundaria con una propiedad de objeto de modelo de datos, selecciona el icono de examinar situado junto al campo **[!UICONTROL Referencia de enlace]**. El cuadro de diálogo **[!UICONTROL Seleccionar objeto]** enumera todas las propiedades del objeto de modelo de datos principal. Selecciona una propiedad con la que enlazar el objeto y selecciona el icono del tic. Solo puede seleccionar una propiedad del mismo tipo de datos que la propiedad secundaria.
 
-1. Seleccione **[!UICONTROL Listo]** para guardar la propiedad secundaria y **[!UICONTROL Guardar]** para el modelo de datos de formulario (FDM). La propiedad secundaria se agrega ahora al objeto del modelo de datos.
+1. Seleccione **[!UICONTROL Listo]** para guardar la propiedad secundaria y **[!UICONTROL Guardar]** para el modelo de datos de formulario (FDM). La propiedad secundaria se agrega ahora al objeto de modelo de datos.
 
-Después de crear objetos y propiedades de modelo de datos, puede seguir creando formularios adaptables <!--and interactive communications--> basados en el modelo de datos de formulario (FDM). Posteriormente, cuando haya fuentes de datos disponibles y configuradas, puede enlazar el modelo de datos de formulario (FDM) con ellas. El enlace se actualiza automáticamente en los formularios adaptables asociados <!--and interactive communications-->. Para obtener más información sobre la creación de formularios adaptables <!--and interactive communications--> mediante el modelo de datos de formulario (FDM) consulte [Uso del modelo de datos de formulario](using-form-data-model.md).
+Después de crear propiedades y objetos de modelo de datos, puede seguir creando formularios adaptables <!--and interactive communications--> basados en el modelo de datos de formulario (FDM). Posteriormente, cuando haya fuentes de datos disponibles y configuradas, puede enlazar el modelo de datos de formulario (FDM) con ellas. El enlace se actualiza automáticamente en los formularios adaptables asociados <!--and interactive communications-->. Para obtener más información sobre la creación de formularios adaptables <!--and interactive communications--> mediante el modelo de datos de formulario (FDM) consulte [Uso del modelo de datos de formulario](using-form-data-model.md).
 
-### Enlazar objetos y propiedades del modelo de datos {#bind-data-model-objects-and-properties}
+### Enlazar propiedades y objetos de modelo de datos {#bind-data-model-objects-and-properties}
 
-Cuando las fuentes de datos que desea integrar con el modelo de datos de formulario estén disponibles, puede añadirlas al modelo tal y como se describe en [Actualizar fuentes de datos](create-form-data-models.md#update). A continuación, haga lo siguiente para enlazar los objetos y propiedades del modelo de datos independiente:
+Cuando las fuentes de datos que desea integrar con el modelo de datos de formulario estén disponibles, puede añadirlas al modelo tal y como se describe en [Actualizar fuentes de datos](create-form-data-models.md#update). A continuación, haga lo siguiente para enlazar las propiedades y objetos de modelo de datos independiente:
 
 1. En el modelo de datos de formulario, seleccione la fuente de datos independiente que desea enlazar con una fuente de datos.
 1. Selecciona **[!UICONTROL Editar propiedades]**.
@@ -121,8 +122,8 @@ Cuando las fuentes de datos que desea integrar con el modelo de datos de formula
 
    ![select-object](assets/select-object.png)
 
-1. Despliega el árbol de fuentes de datos, selecciona un objeto del modelo de datos con el que enlazar y selecciona el icono del tic.
-1. Selecciona **[!UICONTROL Listo]** para guardar las propiedades y, a continuación, selecciona **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario. El objeto del modelo de datos ahora está enlazado con una fuente de datos. Observe que el objeto del modelo de datos ya no está marcado como No enlazado.
+1. Despliega el árbol de fuentes de datos, selecciona un objeto de modelo de datos con el que enlazar y selecciona el icono del tic.
+1. Selecciona **[!UICONTROL Listo]** para guardar las propiedades y, a continuación, selecciona **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario. El objeto de modelo de datos ahora está enlazado con una fuente de datos. Observe que el objeto de modelo de datos ya no está marcado como No enlazado.
 
    ![bound-model-object](assets/bound-model-object.png)
 
@@ -130,7 +131,7 @@ Cuando las fuentes de datos que desea integrar con el modelo de datos de formula
 
 Para leer y escribir para un objeto de modelo de datos, haga lo siguiente para configurar los servicios de lectura y escritura:
 
-1. Selecciona la casilla de verificación situada en la parte superior de un objeto del modelo de datos para seleccionarlo y seleccione **[!UICONTROL Editar propiedades]**.
+1. Selecciona la casilla de verificación situada en la parte superior de un objeto de modelo de datos para seleccionarlo y seleccione **[!UICONTROL Editar propiedades]**.
 
    ![edit-properties](assets/edit-properties.png)
 
@@ -144,16 +145,16 @@ Para leer y escribir para un objeto de modelo de datos, haga lo siguiente para c
 
    >[!NOTE]
    >
-   >Además de los objetos y servicios del modelo de datos, el documento de metadatos del servicio OData incluye propiedades de navegación que definen la asociación entre dos objetos del modelo de datos. Cuando se añade una fuente de datos del servicio OData a un modelo de datos de formulario (FDM), hay un servicio disponible en el modelo de datos de formulario (FDM) para todas las propiedades de navegación de un objeto de modelo de datos. Puede utilizar este servicio para leer las propiedades de navegación del objeto del modelo de datos correspondiente.
+   >Además de los servicios y objetos de modelo de datos, el documento de metadatos del servicio OData incluye propiedades de navegación que definen la asociación entre dos objetos de modelo de datos. Cuando se añade una fuente de datos del servicio OData a un modelo de datos de formulario (FDM), hay un servicio disponible en el modelo de datos de formulario (FDM) para todas las propiedades de navegación de un objeto de modelo de datos. Puede utilizar este servicio para leer las propiedades de navegación del objeto de modelo de datos correspondiente.
    >
    >
    >Para obtener más información sobre el uso del servicio, consulte [Uso de las propiedades de navegación de los servicios de OData](#work-with-navigation-properties-of-odata-services).
 
-1. Cambie a **[!UICONTROL Objeto de nivel superior]** para especificar si el objeto del modelo de datos es de nivel superior.
+1. Cambie a **[!UICONTROL Objeto de nivel superior]** para especificar si el objeto de modelo de datos es de nivel superior.
 
-   Los objetos del modelo de datos configurados en un modelo de datos de formulario (FDM) están a su disposición en la pestaña Objetos del modelo de datos del Explorador de contenido de un formulario adaptable basado en el modelo de datos de formulario (FDM). Cuando se agrega una asociación entre dos objetos del modelo de datos, el objeto del modelo de datos con el que se asocia se anida en el objeto del modelo de datos que se asocia en la pestaña **[!UICONTROL Objetos del modelo de datos]**. Si el modelo de datos anidado es un objeto de nivel superior, también aparece por separado en la pestaña **[!UICONTROL Objetos del modelo de datos]**. Por lo tanto, se ven dos entradas, una dentro y otra fuera de la jerarquía anidada, que pueden confundir a los autores del formulario. Para que el objeto del modelo de datos asociado aparezca solo en la jerarquía anidada, desactive la propiedad Objeto de nivel superior.
+   Los objetos de modelo de datos configurados en un modelo de datos de formulario (FDM) están a su disposición en la pestaña Objetos de modelo de datos del Explorador de contenido de un formulario adaptable basado en el modelo de datos de formulario (FDM). Cuando se agrega una asociación entre dos objetos de modelo de datos, el objeto de modelo de datos con el que se asocia se anida en el objeto de modelo de datos que se asocia en la pestaña **[!UICONTROL Objetos de modelo de datos]**. Si el modelo de datos anidado es un objeto de nivel superior, también aparece por separado en la pestaña **[!UICONTROL Objetos de modelo de datos]**. Por lo tanto, se ven dos entradas, una dentro y otra fuera de la jerarquía anidada, que pueden confundir a los autores del formulario. Para que el objeto de modelo de datos asociado aparezca solo en la jerarquía anidada, desactive la propiedad Objeto de nivel superior.
 
-1. Seleccione los servicios de lectura y escritura para los objetos del modelo de datos seleccionado. Aparecen los argumentos de los servicios.
+1. Seleccione los servicios de lectura y escritura para los objetos de modelo de datos seleccionados. Aparecen los argumentos de los servicios.
 
    ![read-write-services](assets/read-write-services.png)
 
@@ -188,7 +189,7 @@ En este ejemplo, especifique `profile.empid` en el campo **[!UICONTROL Valor de 
 
 ![Editar argumento](assets/edit_argument_user_profile_new.png)
 
-El argumento `id` toma el valor del atributo `empid` del perfil de usuario y lo pasa como argumento al servicio de lectura. Lee y devuelve valores de propiedades asociadas a partir del objeto del modelo de datos de empleado para `empid` asociado al usuario que ha iniciado sesión.
+El argumento `id` toma el valor del atributo `empid` del perfil de usuario y lo pasa como argumento al servicio de lectura. Lee y devuelve valores de propiedades asociadas a partir del objeto de modelo de datos de empleado para `empid` asociado al usuario que ha iniciado sesión.
 
 #### Solicitar atributo {#request-attribute}
 
@@ -228,9 +229,9 @@ Por ejemplo, si especifica el atributo como `petid=100` en la solicitud, se recu
 
 ## Agregar asociaciones {#add-associations}
 
-Normalmente, hay asociaciones creadas entre objetos del modelo de datos en una fuente de datos. La asociación puede ser de uno a uno o de uno a varios. Por ejemplo, puede haber varios dependientes asociados a un empleado. Se denomina asociación de uno a varios y se representa mediante `1:n` en la línea que conecta los objetos del modelo de datos asociados. Sin embargo, si una asociación devuelve un nombre de empleado único para un ID de empleado determinado, se denomina asociación uno a uno.
+Normalmente, hay asociaciones creadas entre objetos de modelo de datos en una fuente de datos. La asociación puede ser de uno a uno o de uno a varios. Por ejemplo, puede haber varios dependientes asociados a un empleado. Se denomina asociación de uno a varios y se representa mediante `1:n` en la línea que conecta los objetos de modelo de datos asociados. Sin embargo, si una asociación devuelve un nombre de empleado único para un ID de empleado determinado, se denomina asociación uno a uno.
 
-Cuando se agregan objetos del modelo de datos asociados en una fuente de datos a un modelo de datos de formulario (FDM), sus asociaciones se retienen y se muestran como conectadas mediante líneas de flecha. Puede agregar asociaciones entre objetos del modelo de datos en distintas fuentes de datos en un modelo de datos de formulario (FDM).
+Cuando se agregan objetos de modelo de datos asociados en una fuente de datos a un modelo de datos de formulario (FDM), sus asociaciones se retienen y se muestran como conectadas mediante líneas de flecha. Puede agregar asociaciones entre objetos de modelo de datos en distintas fuentes de datos en un modelo de datos de formulario (FDM).
 
 >[!NOTE]
 >
@@ -238,13 +239,13 @@ Cuando se agregan objetos del modelo de datos asociados en una fuente de datos a
 
 Para agregar una asociación:
 
-1. Selecciona la casilla de verificación situada en la parte superior de un objeto del modelo de datos para seleccionarlo y selecciona **[!UICONTROL Agregar asociación]**. Se abre el cuadro de diálogo Agregar asociación.
+1. Selecciona la casilla de verificación situada en la parte superior de un objeto de modelo de datos para seleccionarlo y selecciona **[!UICONTROL Agregar asociación]**. Se abre el cuadro de diálogo Agregar asociación.
 
    ![add-association](assets/add-association.png)
 
    >[!NOTE]
    >
-   >Además de los objetos y servicios del modelo de datos, el documento de metadatos del servicio OData incluye propiedades de navegación que definen la asociación entre dos objetos del modelo de datos. Puede utilizar estas propiedades de navegación cuando agregue asociaciones en el modelo de datos de formulario (FDM). Para obtener más información, consulte [Uso de las propiedades de navegación de los servicios de OData](#work-with-navigation-properties-of-odata-services).
+   >Además de los servicios y objetos de modelo de datos, el documento de metadatos del servicio OData incluye propiedades de navegación que definen la asociación entre dos objetos de modelo de datos. Puede utilizar estas propiedades de navegación cuando agregue asociaciones en el modelo de datos de formulario (FDM). Para obtener más información, consulte [Uso de las propiedades de navegación de los servicios de OData](#work-with-navigation-properties-of-odata-services).
 
    Se abre el cuadro de diálogo [!UICONTROL Agregar asociación].
 
@@ -256,16 +257,16 @@ Para agregar una asociación:
 
    * Especifique un título para la asociación.
    * Seleccione el tipo de asociación — **[!UICONTROL Uno a uno]** o **[!UICONTROL Uno a varios]**.
-   * Seleccione el objeto del modelo de datos que desea asociar.
-   * Seleccione el servicio de lectura para leer los datos del objeto de modelo seleccionado. Aparece el argumento de servicio de lectura. Edite para cambiar el argumento, si es necesario, y enlácelo a la propiedad del objeto del modelo de datos que desea asociar.
+   * Seleccione el objeto de modelo de datos que desea asociar.
+   * Seleccione el servicio de lectura para leer los datos del objeto de modelo seleccionado. Aparece el argumento de servicio de lectura. Edite para cambiar el argumento, si es necesario, y enlácelo a la propiedad del objeto de modelo de datos que desea asociar.
 
-   En el siguiente ejemplo, el argumento predeterminado para el servicio de lectura del objeto del modelo de datos de Dependents (dependientes) es `dependentid`.
+   En el siguiente ejemplo, el argumento predeterminado para el servicio de lectura del objeto de modelo de datos de Dependents (dependientes) es `dependentid`.
 
    ![add-association-example](assets/add-association-example.png)
 
    El argumento predeterminado para el servicio de lectura de dependientes es dependentid.
 
-   Sin embargo, el argumento debe ser una propiedad común entre el objeto del modelo de datos asociado, que en este ejemplo es `Employeeid`. Por lo tanto, el argumento `Employeeid` debe enlazarse a la propiedad `id` del objeto del modelo de datos Employee (empleado) para recuperar los detalles de dependientes asociados del objeto del modelo de datos Dependents.
+   Sin embargo, el argumento debe ser una propiedad común entre el objeto de modelo de datos asociado, que en este ejemplo es `Employeeid`. Por lo tanto, el argumento `Employeeid` debe enlazarse a la propiedad `id` del objeto de modelo de datos Employee (empleado) para recuperar los detalles de dependientes asociados del objeto de modelo de datos Dependents.
 
    ![add-association-example-2](assets/add-association-example-2.png)
 
@@ -278,7 +279,7 @@ Para agregar una asociación:
 
 >[!NOTE]
 >
->La asociación agregada aparece en el cuadro de objetos del modelo de datos con el título especificado y una línea que conecta los objetos del modelo de datos asociados.
+>La asociación agregada aparece en el cuadro de objetos de modelo de datos con el título especificado y una línea que conecta los objetos de modelo de datos asociados.
 >
 >Para editar una asociación, selecciona la casilla de verificación correspondiente y selecciona **[!UICONTROL Editar asociación]**.
 
@@ -286,15 +287,15 @@ Para agregar una asociación:
 
 ## Editar propiedades {#properties}
 
-Puede editar las propiedades de los objetos del modelo de datos, sus propiedades y los servicios que se agreguen en el modelo de datos de formulario (FDM).
+Puede editar las propiedades de los objetos de modelo de datos, sus propiedades y los servicios que se agreguen en el modelo de datos de formulario (FDM).
 
 Para editar propiedades, haga lo siguiente:
 
-1. Seleccione la casilla de verificación situada junto a un objeto, una propiedad o un servicio de modelo de datos en el modelo de datos de formulario (FDM).
+1. Seleccione la casilla de verificación situada junto a un servicio, una propiedad o un objeto de modelo de datos en el modelo de datos de formulario (FDM).
 1. Selecciona **[!UICONTROL Editar propiedades]**. Se abre el panel **[!UICONTROL Editar propiedades]** del objeto, de la propiedad o del servicio del modelo seleccionado.
 
-   * **[!UICONTROL Objeto del modelo de datos]**: especifique los servicios de lectura y escritura y edite los argumentos.
-   * **[!UICONTROL Propiedad]**: especifique el tipo, subtipo y formato de la propiedad. También puede especificar si la propiedad seleccionada es la clave principal del objeto del modelo de datos.
+   * **[!UICONTROL Objeto de modelo de datos]**: especifique los servicios de lectura y escritura y edite los argumentos.
+   * **[!UICONTROL Propiedad]**: especifique el tipo, subtipo y formato de la propiedad. También puede especificar si la propiedad seleccionada es la clave principal del objeto de modelo de datos.
    * **[!UICONTROL Servicio]**: especifique el objeto del modelo de entrada, el tipo de salida y los argumentos del servicio. Para un servicio Get-Service, puede especificar si se espera que devuelva una matriz.
 
      ![edit-properties-service](assets/edit-properties-service.png)
@@ -305,7 +306,7 @@ Para editar propiedades, haga lo siguiente:
 
 ### Crear propiedades calculadas {#computed}
 
-Una propiedad calculada es aquella cuyo valor se calcula en función de una regla o una expresión. Con una regla, puede establecer el valor de una propiedad calculada en una cadena literal, un número, el resultado de una expresión matemática o el valor de otra propiedad en el modelo de datos del formulario (FDM).
+Una propiedad calculada es aquella cuyo valor se calcula en función de una regla o una expresión. Con una regla, puede establecer el valor de una propiedad calculada en una cadena literal, un número, el resultado de una expresión matemática o el valor de otra propiedad en el modelo de datos de formulario (FDM).
 
 Por ejemplo, puede crear una propiedad calculada **FullName** cuyo valor es resultado de la concatenación de las propiedades **FirstName** y **LastName**. Para ello:
 
@@ -321,7 +322,7 @@ Por ejemplo, puede crear una propiedad calculada **FullName** cuyo valor es resu
 1. Selecciona la propiedad FullName y selecciona **[!UICONTROL Editar regla]**. Se abre una ventana del editor de reglas.
 1. En la ventana del editor de reglas, selecciona **[!UICONTROL Crear]**. Se abre una ventana de la regla **[!UICONTROL Set Value]**.
 
-   En la lista desplegable Seleccionar opción, elija **[!UICONTROL Expresión matemática]**. Otras opciones disponibles son **[!UICONTROL Objeto Modelo de datos de formulario]** y **[!UICONTROL Cadena]**.
+   En la lista desplegable Seleccionar opción, elija **[!UICONTROL Expresión matemática]**. Otras opciones disponibles son **[!UICONTROL Objeto de modelo de datos de formulario]** y **[!UICONTROL Cadena]**.
 
 1. En la expresión matemática, seleccione **[!UICONTROL FirstName]** y **[!UICONTROL LastName]** en los objetos primero y segundo, respectivamente. Seleccione **[!UICONTROL más]** como operador.
 
@@ -333,7 +334,7 @@ Por ejemplo, puede crear una propiedad calculada **FullName** cuyo valor es resu
 
 ## Trabajar con propiedades de navegación de los servicios OData {#work-with-navigation-properties-of-odata-services}
 
-En los servicios OData, las propiedades de navegación se utilizan para definir asociaciones entre dos objetos del modelo de datos. Estas propiedades se definen en un tipo de entidad o un tipo complejo. Por ejemplo, en el siguiente extracto del archivo de metadatos de los servicios de muestra OData de [TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/), la entidad de la persona contiene tres propiedades de navegación: Friends (amigos), BestFriend (mejores amigos) y Trips (viajes).
+En los servicios OData, las propiedades de navegación se utilizan para definir asociaciones entre dos objetos de modelo de datos. Estas propiedades se definen en un tipo de entidad o un tipo complejo. Por ejemplo, en el siguiente extracto del archivo de metadatos de los servicios de muestra OData de [TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/), la entidad de la persona contiene tres propiedades de navegación: Friends (amigos), BestFriend (mejores amigos) y Trips (viajes).
 
 Para obtener más información sobre las propiedades de navegación, consulte [Documentación de OData](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536).
 
@@ -375,9 +376,9 @@ Una vez que agregue el servicio `GET LINK` a la pestaña Servicios del modelo de
 
 >[!NOTE]
 >
->Los valores disponibles en el campo **[!UICONTROL Valor predeterminado]** del argumento **NavigationPropertyName** dependen del estado botón de opción **[!UICONTROL ¿Devolver matriz?]**. Cuando se activa la opción, se muestran las propiedades de navegación del tipo Colección.
+>Los valores disponibles en el campo **[!UICONTROL Valor predeterminado]** del argumento **NavigationPropertyName** dependen del estado botón de opción **[!UICONTROL ¿Devolver matriz?]**. Cuando se habilita la opción, se muestran las propiedades de navegación del tipo Colección.
 
-En este ejemplo, también puede elegir el objeto del modelo de salida como argumento de propiedad Person (persona) y navegación como Friends o BestFriend (en función de si **[!UICONTROL ¿Devolver matriz?]** está activada o desactivada).
+En este ejemplo, también puede elegir el objeto del modelo de salida como argumento de propiedad Person (persona) y navegación como Friends o BestFriend (en función de si **[!UICONTROL ¿Devolver matriz?]** está habilitada o deshabilitada).
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
@@ -385,37 +386,37 @@ Del mismo modo, puede elegir un servicio de `GET LINK` y configurar sus propieda
 
 ![add-association-nav-prop](assets/add-association-nav-prop.png)
 
-## Generar y editar datos de ejemplo {#sample}
+## Generar y editar datos de muestra {#sample}
 
-El editor del modelo de datos de formulario (FDM) permite generar datos de muestra para todas las propiedades de objetos del modelo de datos, incluidas las propiedades calculadas, en un modelo de datos de formulario (FDM). Es un conjunto de valores aleatorios que cumplen con el tipo de datos configurado para cada propiedad. También puede editar y guardar datos, que se conservan incluso si se regeneran los datos de ejemplo.
+El editor del modelo de datos de formulario (FDM) permite generar datos de muestra para todas las propiedades de objetos de modelo de datos, incluidas las propiedades calculadas, en un modelo de datos de formulario (FDM). Es un conjunto de valores aleatorios que cumplen con el tipo de datos configurado para cada propiedad. También puede editar y guardar datos, que se conservan incluso si se regeneran los datos de muestra.
 
-Para generar y editar datos de ejemplo, haga lo siguiente:
+Para generar y editar datos de muestra, haga lo siguiente:
 
-1. Abra un modelo de datos de formulario (FDM) y seleccione **[!UICONTROL Editar datos de muestra]**. Genera y muestra los datos de ejemplo en la ventana Editar datos de ejemplo.
+1. Abra un modelo de datos de formulario (FDM) y seleccione **[!UICONTROL Editar datos de muestra]**. Genera y muestra los datos de muestra en la ventana Editar datos de muestra.
 
-   ![Generar datos de ejemplo](assets/form_data_model_generate_sample_data_new.png)
+   ![Generar datos de muestra](assets/form_data_model_generate_sample_data_new.png)
 
-1. En la ventana **[!UICONTROL Editar datos de ejemplo]**, edita los datos, según sea necesario, y selecciona **[!UICONTROL Guardar]**.
+1. En la ventana **[!UICONTROL Editar datos de muestra]**, edita los datos, según sea necesario, y selecciona **[!UICONTROL Guardar]**.
 
 <!--Next, you can use the sample data to prefill and test interactive communications based on the form data model. For more information, see [Use form data model](using-form-data-model.md).-->
 
-## Probar objetos y servicios del modelo de datos {#test-data-model-objects-and-services}
+## Probar servicios y objetos de modelo de datos {#test-data-model-objects-and-services}
 
-El modelo de datos de formulario (FDM) está configurado, pero antes de ponerlo en uso, es posible que desee comprobar si los objetos y los servicios de modelo de datos funcionan según lo esperado. Para probar los objetos y servicios del modelo de datos:
+El modelo de datos de formulario (FDM) está configurado, pero antes de ponerlo en uso, es posible que desee comprobar si los servicios y objetos de modelo de datos funcionan según lo esperado. Para probar los servicios y objetos de modelo de datos:
 
-1. Seleccione un objeto del modelo de datos o un servicio en el modelo de datos de formulario y seleccione **[!UICONTROL Objeto de modelo de prueba]** o **[!UICONTROL Servicio de prueba]**, respectivamente.
+1. Seleccione un objeto de modelo de datos o un servicio en el modelo de datos de formulario y seleccione **[!UICONTROL Objeto de modelo de prueba]** o **[!UICONTROL Servicio de prueba]**, respectivamente.
 
    Se abre la ventana Modelo de datos de formulario de prueba.
 
    ![test-data-model](assets/test-data-model.png)
 
-1. En la ventana [!UICONTROL Modelo de datos de formulario de prueba], seleccione el objeto o servicio del modelo de datos que desea probar en el panel Entrada.
+1. En la ventana [!UICONTROL Modelo de datos de formulario de prueba], seleccione el servicio u objeto de modelo de datos que desea probar en el panel Entrada.
 
 1. Especifica un valor de argumento en el código de prueba y selecciona **[!UICONTROL Prueba]**. Una prueba que funcione correctamente devuelve el resultado en el panel Salida.
 
    ![Resultados de la prueba](assets/test_results_form_data_model_new.png)
 
-Del mismo modo, se pueden probar otros objetos y servicios del modelo de datos de formulario (FDM).
+Del mismo modo, se pueden probar otros servicios y objetos de modelo de datos de formulario (FDM).
 
 ## Validación automática de los datos de entrada {#automated-validation-of-input-data}
 

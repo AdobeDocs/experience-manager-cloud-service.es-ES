@@ -4,11 +4,12 @@ description: Obtenga información sobre cómo se puede redirigir a los usuarios 
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 100%
+source-wordcount: '215'
+ht-degree: 98%
 
 ---
 

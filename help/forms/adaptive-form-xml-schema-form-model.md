@@ -4,13 +4,14 @@ description: Aprenda a crear un esquema XML para un formulario adaptable y a un 
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: ht
-source-wordcount: '956'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '962'
+ht-degree: 99%
 
 ---
 

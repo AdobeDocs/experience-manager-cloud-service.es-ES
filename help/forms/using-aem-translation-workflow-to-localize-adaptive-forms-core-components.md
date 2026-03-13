@@ -2,18 +2,19 @@
 title: ¿Cómo se puede traducir un formulario adaptable basado en componentes principales?
 description: Aprenda a crear un modelo de datos de formulario en AEM Forms, probarlo con datos y servicios de muestra y configurar varias opciones para un modelo.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '891'
+ht-degree: 99%
 
 ---
 
 # Utilizar la traducción automática o la traducción humana para traducir un formulario adaptable basado en componentes principales {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-Los formularios localizados le ayudan a llegar a una audiencia más amplia en todas las regiones geográficas. El flujo de trabajo de traducción de Adobe Experience Manager le ayuda a localizar formularios adaptables y sus documentos de registro. Puede usar la **traducción automática** o **traductores humanos** para localizar un formulario adaptable.
+Los formularios localizados le ayudan a llegar a un público más amplio en todas las regiones geográficas. El flujo de trabajo de traducción de Adobe Experience Manager le ayuda a localizar formularios adaptables y sus documentos de registro. Puede usar la **traducción automática** o **traductores humanos** para localizar un formulario adaptable.
 
 ## Traducir un formulario adaptable y un documento de registro mediante el uso de traducción automática {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 

@@ -5,15 +5,16 @@ content-type: reference
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: a9879445-d626-4279-8a95-a9009294b483
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 88%
+source-wordcount: '332'
+ht-degree: 87%
 
 ---
 
@@ -77,4 +78,4 @@ Para habilitar la lista de formularios para el componente Borradores y envíos, 
  </tbody>
 </table>
 
-De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo /content/forms/fp de la instancia de publicación. Puede agregar su proveedor de almacenamiento personalizado; para obtener más información, consulte [Almacenamiento personalizado para el componente Borradores y envíos](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).
+De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo /content/forms/fp de la instancia de publicación. Puede agregar su proveedor de almacenamiento personalizado; para obtener más información, consulte [Almacenamiento personalizado para el componente Borradores y envíos](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).

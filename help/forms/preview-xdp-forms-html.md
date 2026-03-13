@@ -3,12 +3,13 @@ title: Generar previsualización HTML5 de un formulario XDP
 description: La pestaña Vista previa del HTML de LiveCycle Designer se puede utilizar para obtener una vista previa de los formularios tal y como aparecen en un explorador.
 topic-tags: author
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '813'
 ht-degree: 83%
 
 ---
@@ -88,7 +89,7 @@ El **modo protegido** está activado de forma predeterminada. Manténgalo habili
    >
    >Asegúrese de que el servidor de AEM Forms esté operativo. La vista previa HTML conecta con el servidor CRX para *generar* una vista previa.
 
-   ![Opciones de AEM Forms Designer &#x200B;](assets/server_options.png)
+   ![Opciones de AEM Forms Designer ](assets/server_options.png)
 
    Opciones de AEM Forms Designer
 

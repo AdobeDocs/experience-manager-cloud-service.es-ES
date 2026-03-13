@@ -4,11 +4,12 @@ description: Defina la posición de los componentes de AEM Forms, aprenda a acce
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1138'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1144'
+ht-degree: 99%
 
 ---
 
@@ -109,15 +110,15 @@ Realice los siguientes pasos para habilitar la nueva cuadrícula adaptable:
 1. Seleccione **[!UICONTROL Diseño]** en la lista desplegable que aparece en la parte superior junto a la opción **[!UICONTROL Vista previa]**. Aparece una confirmación para habilitar el modo Diseño.
 1. Seleccione **[!UICONTROL Sí]** para habilitar el modo **[!UICONTROL Diseño]** para el formulario.
 
-### Integrar un fragmento antiguo en un formulario adaptable con un nuevo diseño adaptable {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
+### Incrustar un fragmento antiguo en un formulario adaptable con un nuevo diseño adaptable {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
 El nuevo diseño adaptable del formulario adaptable te permite añadir un fragmento de formulario adaptable con el antiguo diseño adaptable al formulario. Con todo, el nuevo diseño descarta las propiedades de diseño ya definidas para los componentes utilizados en el fragmento. Puede cambiar al modo Diseño para definir las propiedades de diseño de los componentes utilizados en el fragmento.
 
-### Integrar un fragmento con un nuevo diseño adaptable en un antiguo formulario adaptable {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
+### Incrustar un fragmento con un nuevo diseño adaptable en un antiguo formulario adaptable {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 
-Si integra un fragmento con el nuevo diseño adaptable en un formulario adaptable con un diseño adaptable antiguo, el sistema le indicará que habilite el modo Diseño para el formulario y vuelva a integrar el fragmento.
+Si incrusta un fragmento con el nuevo diseño adaptable en un formulario adaptable con un diseño adaptable antiguo, el sistema le indicará que habilite el modo Diseño para el formulario y vuelva a incrustar el fragmento.
 
-Para habilitar el modo Diseño, seleccione **[!UICONTROL Diseño]** en la lista desplegable que aparece en la parte superior junto a la opción **[!UICONTROL Vista previa]** y seleccione **[!UICONTROL Sí]** para confirmar. Seleccione el modo **[!UICONTROL Editar]** para volver a integrar el fragmento.
+Para habilitar el modo Diseño, seleccione **[!UICONTROL Diseño]** en la lista desplegable que aparece en la parte superior junto a la opción **[!UICONTROL Vista previa]** y seleccione **[!UICONTROL Sí]** para confirmar. Seleccione el modo **[!UICONTROL Editar]** para volver a incrustar el fragmento.
 
 ## Desactivar el modo Diseño para formularios con un diseño adaptable antiguo {#disable-layout-mode-for-forms-with-old-responsive-layout}
 

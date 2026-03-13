@@ -3,11 +3,12 @@ title: Agregar un formulario adaptable a la página de AEM Sites
 description: Descubra cómo crear o agregar un formulario adaptable a su página de AEM Sites. Además, conozca las ventajas y las distintas formas de integrar formularios en su sitio web.
 feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3312'
 ht-degree: 95%
 
 ---
