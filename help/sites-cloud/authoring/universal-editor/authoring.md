@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 1de2a860d96397863312f62b3c3c73e6deddd9d8
+source-git-commit: 57ea90c922b073828b4aede15bf2dd499ebbf0c2
 workflow-type: tm+mt
-source-wordcount: '2990'
+source-wordcount: '3002'
 ht-degree: 12%
 
 ---
@@ -78,13 +78,13 @@ Puede editar el texto en su lugar haciendo doble clic o pulsando dos veces el co
 
 Para su comodidad, las opciones de formato y los detalles del texto están disponibles en dos lugares.
 
-#### Menú contextual de texto enriquecido {#rich-text-context-menu}
+#### El menú contextual de texto enriquecido {#rich-text-context-menu}
 
-Se abre un menú contextual sobre el bloque de texto enriquecido y ofrece opciones de formato básicas en contexto. Debido a limitaciones de espacio, algunas opciones pueden estar ocultas detrás del botón de los tres puntos.
+Se abre un menú contextual sobre el bloque de texto enriquecido y ofrece opciones de formato básicas en contexto. Debido a las limitaciones de espacio, algunas opciones pueden estar ocultas detrás del botón de puntos suspensivos.
 
 ![Menú contextual de texto enriquecido](assets/rich-text-context-menu.png)
 
-Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado.
+Los cambios se guardan automáticamente una vez que el foco sale del campo editado.
 
 #### El panel Propiedades {#properties-rail}
 
@@ -148,8 +148,8 @@ Puede ver sus detalles en el panel [propiedades.](/help/sites-cloud/authoring/un
 ![Editando medios](assets/ue-edit-media.png)
 
 1. Toque o haga clic en la previsualización de la imagen seleccionada en el panel de propiedades.
-1. Se abre la ventana [selector de recursos](/help/assets/overview-asset-selector.md#using-asset-selector) para que pueda seleccionar un recurso.
-1. Seleccione para seleccionar un nuevo recurso.
+1. Se abre la ventana [selector de activos](/help/assets/overview-asset-selector.md#using-asset-selector) para que puedas seleccionar un activo.
+1. Seleccione para seleccionar un nuevo activo.
 1. Seleccione **Select** para volver al panel de propiedades donde se reemplazó el recurso.
 
 Los cambios se guardan automáticamente en el contenido.
@@ -158,13 +158,13 @@ Los cambios se guardan automáticamente en el contenido.
 
 Si selecciona un [fragmento de contenido](/help/sites-cloud/administering/content-fragments/overview.md), puede editar sus detalles en el [panel de propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
-![Edición de un fragmento de contenido](assets/ue-edit-cf.png)
+![Editando un fragmento de contenido](assets/ue-edit-cf.png)
 
-Los campos definidos en el modelo de contenido del fragmento de contenido seleccionado se muestran y pueden editarse en el panel de propiedades.
+Los campos definidos en el modelo de contenido del fragmento de contenido seleccionado se muestran y se pueden editar en el panel de propiedades.
 
-Si selecciona un campo relacionado con un fragmento de contenido, el fragmento de contenido se carga en el panel Componentes y el campo se desplaza automáticamente a.
+Si selecciona un campo relacionado con un fragmento de contenido, este se carga en el panel Componentes y el campo se desplaza automáticamente a.
 
-Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado en el panel de propiedades.
+Los cambios se guardan automáticamente una vez que el foco sale del campo editado en el panel de propiedades.
 
 Si en su lugar desea editar el fragmento de contenido en [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md), toque o haga clic en el botón [**Abrir en editor CF**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) del panel de propiedades.
 
@@ -186,9 +186,15 @@ Según las necesidades del flujo de trabajo, es posible que desee editar el frag
 
    ![Seleccionar un componente para agregarlo a un contenedor](assets/ue-add-component.png)
 
-1. A continuación, seleccione el icono de añadir en el panel de propiedades.
+1. A continuación, puede hacer lo siguiente:
 
-   ![Seleccionar icono de agregar](assets/add-icon.png)
+   * Seleccione el icono **Add** en el panel de propiedades.
+
+     ![Seleccionar icono de agregar](assets/add-icon.png)
+
+   * Seleccione la opción **Agregar** en el menú contextual.
+
+     ![Agregar desde el menú contextual](assets/add-from-context-menu.png)
 
 1. Se abrirá el cuadro de diálogo Selector de componentes.
    * Utilice la columna izquierda para filtrar los componentes por categoría o utilice la búsqueda para filtrar por nombre.
@@ -207,21 +213,28 @@ El componente se inserta en el contenedor y se puede editar en el editor.
 ### Duplicación de componentes en contenedores {#duplicating-components}
 
 1. Seleccione un componente de un contenedor mediante [el árbol de contenido](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o el editor.
-1. A continuación, seleccione el icono **Duplicate** en el panel de propiedades.
 
-   ![Seleccionar un componente para agregarlo a un contenedor](assets/ue-duplicate-component.png)
-1. El componente se duplica y se inserta debajo del componente seleccionado.
+1. A continuación, puede hacer lo siguiente:
 
-El componente se inserta en el contenedor y se puede editar en el editor.
+   * Seleccione el icono **Duplicate** en el panel de propiedades.
+
+     ![Seleccionar un componente para agregarlo a un contenedor](assets/ue-duplicate-component.png)
+
+   * Seleccione la opción **Duplicate** en el menú contextual.
+
+     ![Duplicado del menú contextual](assets/duplicate-from-context-menu.png)
+
+El componente se duplica y se inserta debajo del componente seleccionado.
 
 ### Eliminación de componentes de contenedores {#deleting-components}
 
-1. Seleccione un componente contenedor en el [árbol de contenido](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o en el editor.
-1. Seleccione el icono de cheurón del contenedor para expandir su contenido en el árbol de contenido.
-1. A continuación, en el árbol de contenido, seleccione un componente dentro del contenedor.
-1. Seleccione el icono Eliminar en el panel de propiedades.
+1. Seleccione un componente de un contenedor en el [árbol de contenido](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o en el editor.
+1. A continuación, puede hacer lo siguiente:
+   * Seleccione el icono **Delete** en el panel de propiedades.
 
-   ![Eliminando un componente](assets/ue-delete-component.png)
+     ![Eliminando un componente](assets/ue-delete-component.png)
+   * Seleccione la opción **Delete** en el menú contextual.
+     ![Eliminar del menú contextual](assets/delete-from-context-menu.png)
 
 El componente seleccionado se ha eliminado.
 
@@ -248,20 +261,20 @@ El componente se mueve tanto en el editor como en el árbol de contenido.
 >[!TIP]
 >
 >Utilice las teclas de acceso rápido `Command-U` o `Shift-Command-U` para subir o subir, respectivamente.
->Utilice las teclas de acceso rápido `Command-J` o `Shift-Command-J` para desplazarse hacia abajo o hacia abajo, respectivamente.
+>Use las teclas de acceso rápido `Command-J` o `Shift-Command-J` para desplazarse hacia abajo o hacia abajo, respectivamente.
 
 >[!NOTE]
 >
->Las opciones del menú contextual solo pueden mover componentes dentro de sus contenedores. Si desea mover componentes entre contenedores, [use el árbol de contenido.](#reorder-content-tree)
+>Las opciones del menú contextual solo pueden mover componentes dentro de sus contenedores. Si desea mover componentes entre contenedores, [utilice el árbol de contenido.](#reorder-content-tree)
 
 #### Reordenar componentes con el árbol de contenido {#reorder-content-tree}
 
 1. Si aún no está en [modo de árbol de contenido](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), cambie a él.
-1. Seleccione un componente de contenedor en el árbol de contenido o en el editor.
+1. Seleccione un componente contenedor en el árbol de contenido o en el editor.
 1. Seleccione el icono de cheurón del contenedor para expandir su contenido en el árbol de contenido.
-1. Arrastre los iconos de control junto a los componentes dentro del contenedor para mostrar que puede reorganizarlos. Arrastre los componentes para reordenarlos dentro del contenedor.
+1. Arrastre los iconos del control junto a los componentes dentro del contenedor para ver si puede reorganizarlos. Arrastre los componentes para reordenarlos dentro del contenedor.
 
-   ![Reordenación de componentes](assets/ue-reordering-components.png)
+   ![Reordenar componentes](assets/ue-reordering-components.png)
 
 1. El componente arrastrado aparece atenuado en el árbol de contenido, mientras que el punto de inserción se representa mediante una línea azul. Suelte el componente para colocarlo en su nueva ubicación.
 
@@ -287,7 +300,7 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 
 ### Copiar y pegar {#copy-paste}
 
-Puede copiar y pegar componentes que se encuentren dentro de [&#x200B; contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
+Puede copiar y pegar componentes que se encuentren dentro de [ contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
 
 Copiar y pegar pueden estar en la misma pestaña del explorador o entre pestañas del explorador, siempre que las pestañas ya estén abiertas. No puede copiar un elemento y, a continuación, abrir una nueva pestaña del explorador para pegarlo.
 
@@ -295,41 +308,43 @@ Copiar y pegar pueden estar en la misma pestaña del explorador o entre pestaña
 ![Icono de pegar](assets/paste.png)
 
 1. Seleccione un componente dentro del editor o en el árbol de contenido.
-1. El icono **Copiar** aparece en el panel de propiedades [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel): toque o haga clic en él.
-1. El icono **Pegar** aparece en el panel de propiedades.
+1. A continuación, puede hacer lo siguiente:
+   * Haga clic en el icono **Copiar** en el panel [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+     ![Copiar del panel](assets/copy-from-panel.png)
+   * Seleccione la opción **Copiar** en el menú contextual.
+     ![Copiar del menú contextual](assets/copy-from-context-menu.png)
 1. Seleccione el componente _after_ en el que desea pegar el componente copiado.
-1. Haga clic o pulse Pegar.
-1. El componente copiado se ha pegado _después de_ el componente seleccionado.
+1. A continuación, puede hacer lo siguiente:
+   * Toque o haga clic en **Pegar** en el panel de propiedades.
+     ![Pegar del panel](assets/paste-from-panel.png)
+   * Seleccione **Pegar** en el menú contextual.
+     ![Pegar desde el menú contextual](assets/paste-from-context-menu.png)
+
+El componente copiado se ha pegado _después de_ el componente seleccionado.
 
 >[!TIP]
 >
 >Use la tecla de acceso directo `Command-C` o `Command-V` para copiar o pegar, respectivamente.
 
-## Opciones de contexto {#context-options}
-
-Cuando realice la edición in situ, el editor ofrecerá opciones relevantes para el contexto con un clic con el botón derecho, como duplicar, eliminar o copiar componentes.
-
-![Menú de opciones de contexto](assets/context-options-menu.png)
-
 ## Vista previa del contenido {#previewing-content}
 
 Cuando haya terminado de editar el contenido, a menudo querrá navegar por él para ver cómo queda dentro del contenido de otras páginas. En el [modo de vista previa](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode), puede hacer clic en los vínculos para navegar por el contenido como lo haría un lector. El contenido se muestra en el editor tal y como se publicaría.
 
-En el modo de vista previa, tocar o hacer clic en el contenido reacciona como lo haría con un lector. Si desea seleccionar el contenido para editarlo, salga del [modo de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+En el modo de vista previa, al tocar o hacer clic en el contenido se reacciona como lo haría con un lector del contenido. Si desea seleccionar el contenido para editarlo, cierre el [modo de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
 ## Edición de herencia de componentes {#inheritance}
 
-La herencia es el mecanismo por el que el contenido se puede vincular de modo que, al cambiar uno, se cambia automáticamente el otro.
+La herencia es el mecanismo por el que se puede vincular el contenido de forma que, al cambiar uno, se cambie automáticamente el otro.
 
-Con el editor universal, puede cancelar la herencia del contenido con solo actualizar el contenido. El editor deshabilita automáticamente la herencia para todos los cambios realizados por los autores en esa página, lo que garantiza que el contenido modificado se conserve cuando las actualizaciones se sincronizan desde el modelo.
+Con el Editor universal, puede cancelar la herencia de contenido simplemente actualizando el contenido. El editor deshabilita automáticamente la herencia para todos los cambios realizados por los autores en esa página, lo que garantiza que el contenido modificado se conserve cuando las actualizaciones se sincronizan desde el modelo.
 
-Si la extensión **AEM Multi-Site-Management (MSM) Extension** está habilitada para su programa, tiene [opciones adicionales de la barra de herramientas](#inheritance-extension) para ver y cambiar el estado de herencia de un componente individual en el Editor universal.
+Si la **Extensión de administración AEM varios sitios (MSM)** está habilitada para el programa, tiene [opciones de barra de herramientas adicionales](#inheritance-extension) para ver y cambiar el estado de herencia de un componente individual en el Editor universal.
 
-Para obtener más información acerca de cómo funciona la herencia mediante el Editor universal, vea [Herencia de contenido en el Editor universal.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+Para obtener más información sobre cómo funciona la herencia mediante el Editor universal, vea [Herencia de contenido en el Editor universal.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
 
-## Características opcionales de la barra de herramientas {#toolbar-options}
+## Funciones opcionales de la barra {#toolbar-options}
 
-Hay funciones adicionales disponibles como extensiones para el editor universal que le ayudarán a administrar mejor sus páginas y contenido. [Un administrador debe habilitar estas extensiones en su programa](/help/implementing/universal-editor/extending.md) antes de que sean visibles para usted como autor de contenido en [la barra de herramientas del editor universal](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Hay disponibles funciones adicionales como extensiones del Editor universal que le ayudarán a administrar aún más sus páginas y contenido. [Un administrador debe habilitar estas extensiones en el programa](/help/implementing/universal-editor/extending.md) antes de que usted pueda verlas como autor de contenido en [la barra de herramientas del Editor universal.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
 ### Herencia {#inheritance-extension}
 
@@ -339,7 +354,7 @@ El icono **Herencia instalada** de la barra de herramientas del Editor universal
 
 ![Icono de herencia instalada](assets/inheritance-installed-icon.png)
 
-Toque o haga clic en el icono para interrumpir la herencia del componente seleccionado. La herencia se interrumpe automáticamente si edita el componente.
+Toque o haga clic en el icono para interrumpir la herencia del componente seleccionado. La herencia se rompe automáticamente si edita el componente.
 
 El icono **Herencia interrumpida** muestra que la herencia se ha interrumpido para el componente seleccionado.
 
@@ -355,27 +370,27 @@ Para obtener información sobre cómo habilitar esta extensión, [consulte la do
 
 >[!NOTE]
 >
->La extensión **AEM Multi-Site-Management (MSM)** solo funciona para páginas, no para Fragmentos de contenido.
+>La extensión **AEM Multi-Site-Management (MSM) Extension** solo funciona para páginas, no para fragmentos de contenido.
 
-### Acceso a Propiedades de página {#page-properties}
+### Acceso a las propiedades de página {#page-properties}
 
 La **extensión de propiedades de página de AEM** permite un acceso rápido a la [ventana Propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md) para la página que se está editando en ese momento.
 
 ![Icono de propiedades de página](assets/page-properties-icon.png)
 
-Pulse o haga clic en el icono **Propiedades de página** de la barra de herramientas del Editor universal para abrir las propiedades de página de la página en una nueva pestaña del explorador.
+Toque o haga clic en el icono **Propiedades de página** en la barra de herramientas del Editor universal para abrir las propiedades de página de la página en una nueva pestaña del explorador.
 
-Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación del Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
->La extensión de propiedades de página de **AEM** solo funciona para páginas, no para fragmentos de contenido.
+>La **Extensión de propiedades de página AEM** solo funciona para páginas, no para fragmentos de contenido.
 
-### Acceder a la consola Sites {#sites-console}
+### Acceder a la consola de sitios {#sites-console}
 
-La **extensión AEM Site Admin Extension** permite un acceso rápido a la página que se está editando en la [consola Sites de AEM](/help/sites-cloud/authoring/sites-console/introduction.md), lo que le permite navegar por el árbol del sitio o realizar acciones a nivel de página en la consola.
+La **Extensión de administración AEM sitio** permite el acceso rápido a la página que se está editando en la [Consola de sitios de AEM,](/help/sites-cloud/authoring/sites-console/introduction.md) lo que te permite navegar por el árbol del sitio o realizar acciones de nivel de página en la consola.
 
-![Abrir en el icono de administración del sitio](assets/open-in-site-admin-icon.png)
+![Abrir en el icono de administrador del sitio](assets/open-in-site-admin-icon.png)
 
 Toque o haga clic en el icono para abrir la consola Sitios en una nueva pestaña del explorador, navegando a la página que se encuentra actualmente en el editor.
 
@@ -432,23 +447,23 @@ Toque o haga clic en el icono **Inicio de sesión de desarrollador** de la barra
 
 Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
-## Características opcionales del panel Propiedades {#properties-panel-options}
+## Funciones opcionales del panel Propiedades {#properties-panel-options}
 
-Hay funciones adicionales disponibles como extensiones para el editor universal que le ayudarán a administrar aún más el contenido de la página. [Un administrador debe habilitar estas extensiones en su programa](/help/implementing/universal-editor/extending.md) antes de que sean visibles para usted como autor de contenido en [el panel de propiedades del Editor universal.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Hay disponibles funciones adicionales como extensiones del Editor universal para ayudarle a administrar el contenido de la página. [Un administrador debe habilitar estas extensiones en el programa](/help/implementing/universal-editor/extending.md) antes de que usted pueda verlas como autor de contenido en [el panel de propiedades del Editor universal.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### Generar variaciones {#generate-variations}
 
-La extensión **Generar variaciones** le permite usar inteligencia artificial generativa (IA) para crear variaciones para el contenido directamente en el panel de propiedades.
+La extensión **Generar variaciones** te permite usar inteligencia artificial generativa (IA) para crear variaciones de tu contenido directamente en el panel de propiedades.
 
 ![Icono de generar variaciones](assets/generate-variations-icon.png)
 
-Toque o haga clic en el icono **Generar variaciones** en el panel de propiedades del Editor universal para recibir recomendaciones y crear variaciones. Consulte el documento [Generar variaciones: integradas en editores de AEM](/help/generative-ai/generate-variations-integrated-editor.md) para obtener más información sobre cómo funciona la generación de variaciones.
+Toque o haga clic en el icono **Generar variaciones** en el panel de propiedades del Editor universal para recibir recomendaciones y crear variaciones. Consulte el documento [Generar variaciones - Integrado en editores de AEM](/help/generative-ai/generate-variations-integrated-editor.md) para obtener más información sobre cómo funciona la generación de variaciones.
 
-Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación del Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Recursos adicionales {#additional-resources}
 
-Para aprender a publicar contenido con el editor universal, consulte este documento.
+Para obtener información sobre cómo publicar contenido con el editor universal, consulte este documento.
 
 * [Publicación de contenido con el editor universal](publishing.md): descubra cómo el editor visual universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 

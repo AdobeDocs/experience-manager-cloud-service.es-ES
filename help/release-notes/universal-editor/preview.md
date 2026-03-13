@@ -4,9 +4,9 @@ description: Estas son las notas de la versión de la vista previa del editor un
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: fc73e3dd01d22ece3c2e2c55a5f62d04ee8564a9
+source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
@@ -28,4 +28,13 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 
 ## Próximas funciones {#upcoming-features}
 
-* Se ha añadido una opción para añadir componentes al en el menú contextual.
+* Los elementos del carril derecho ahora se pueden contraer en la pantalla de inicio.
+* El selector de recursos ahora es compatible con las definiciones de filtros.
+* Si no hay acciones disponibles para el elemento seleccionado, el menú contextual ya no muestra comillas angulares para acceder a las acciones.
+
+## Próximas mejoras {#upcoming-improvements}
+
+* Si hay una definición de modelo, filtro o componente, se recuperará al cambiar de una aplicación a otra en el editor.
+* La eliminación de una imagen ya no deja etiquetas de imagen vacías al utilizar DA como back end.
+* Las clases en bloques ahora se gestionan correctamente al utilizar DA como back end.
+* Open API ahora guarda los recursos remotos correctamente como objetos.
