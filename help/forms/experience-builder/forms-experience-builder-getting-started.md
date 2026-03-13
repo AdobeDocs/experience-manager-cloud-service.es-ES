@@ -75,7 +75,7 @@ Cree formularios utilizando las descripciones en lenguaje natural de sus necesid
 
 Transforme los documentos existentes en formularios digitales interactivos.
 
-Antes de utilizar esta opción, cargue el archivo PDF o una imagen del formulario. PDF puede ser un formulario de PDF basado en AcroForm o en XFA. Para [otros tipos de PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), use la opción [Preparar formulario](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) en Adobe Acrobat para convertirlos en un AcroForm
+Antes de utilizar esta opción, cargue el archivo PDF o una imagen del formulario. PDF puede ser un formulario de PDF basado en AcroForm o en XFA. Para [otros tipos de PDF forms](https://experienceleague.adobe.com/es/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), use la opción [Preparar formulario](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) en Adobe Acrobat para convertirlos en un AcroForm
 
 **Cuándo usar:**
 
