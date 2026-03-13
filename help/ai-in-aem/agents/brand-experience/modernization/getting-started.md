@@ -4,9 +4,9 @@ description: Conozca los primeros pasos para aumentar rápidamente la productivi
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 283608acebab0704532ee2a2d856f248a818f671
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Introducción a Experience Modernization Agent {#getting-started}
 
-Conozca los primeros pasos para aumentar rápidamente la productividad con Experience Modernization Agent mediante Experience Modernization Console.
+Conozca los primeros pasos para empezar a utilizar Experience Modernization Agent y Experience Modernization Console.
 
 >[!NOTE]
 >
->Si está interesado en utilizar la consola de modernización de experiencias, puede solicitar acceso para garantizar una experiencia de incorporación sin problemas.
+>Si está interesado en utilizar la consola de modernización de experiencias, puede solicitar acceso a través de su administrador de cuentas para garantizar una experiencia de incorporación sin problemas.
 
 ## Preparación de un repositorio de GitHub de Edge Delivery {#prepare-repo}
 
