@@ -4,7 +4,7 @@ description: Aprenda a minimizar el impacto operativo de las actualizaciones aut
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 09dec0a073b3e97d5c796f490ccdf88fcd7e1c72
+source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Las [actualizaciones automáticas de mantenimiento](/help/implementing/deploying
 Puede configurar estos lapsos de tiempo mediante dos opciones de programación:
 
 * **Horas tranquilas**: puede definir un intervalo de tiempo diario (hasta 8 horas) en el que no se producirán actualizaciones.
-* **Actualizar períodos libres**: puede definir un período de tiempo de 7 días en el que no se producirán actualizaciones. Puede tener hasta tres períodos libres de actualización dentro de un lapso de tiempo de 12 meses.
+* **Actualizar períodos libres**: puede definir un período de tiempo de 7 días en el que no se producirán actualizaciones. Puede tener hasta tres períodos libres de actualización dentro de una ventana flotante de 365 días.
 
 Las funciones de actualizar los periodos libres y las horas de inactividad se configuran por programa. Tenga en cuenta que solo los usuarios con la &quot;función de usuario&quot; de **Propietario del negocio** y **Administrador de implementación** pueden ver y usar estas características.
 
