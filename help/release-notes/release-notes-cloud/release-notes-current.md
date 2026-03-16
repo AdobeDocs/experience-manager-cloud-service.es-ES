@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: eae7609f3f35f17a6c31cf242b6b0cc2d464a3fb
+source-git-commit: 709b7950e71619c61dcd684e8c6e211f114c3462
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1944'
 ht-degree: 35%
 
 ---
@@ -38,7 +38,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo de información general sobre la versión de febrero de 2026 para ver un resumen de las funciones añadidas en la versión 2026.2.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3480402/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
 
 
 ## Programas de AEM Beta {#aem-beta-programs}
@@ -106,7 +106,7 @@ El control de acceso basado en atributos (ABAC) permite a los administradores co
 Los componentes desplegables de selección múltiple de Adaptive Forms ahora representan las etiquetas de visualización seleccionadas en la [PDF de envío generada](/help/forms/generate-document-of-record-core-components.md), lo que garantiza que el documento refleje con precisión lo que los usuarios ven en el formulario.
 
 **Accesibilidad mejorada para los componentes de casilla de verificación, botón de opción y panel**
-Los componentes principales de Forms adaptables presentan un marcado semántico compatible con WCAG 2.2 para [grupos de casillas de verificación (v2)](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [grupos de botones de opción (v2)](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) y [componente Panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Estos componentes aprovechan `<fieldset>` y `<legend>` elementos de HTML para establecer relaciones significativas entre las etiquetas de grupo y sus opciones, lo que permite una interpretación precisa por parte de los lectores de pantalla y otras tecnologías de asistencia.
+Los componentes principales de Forms adaptables presentan un marcado semántico compatible con WCAG 2.2 para [grupos de casillas de verificación (v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [grupos de botones de opción (v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) y [componente Panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Estos componentes aprovechan `<fieldset>` y `<legend>` elementos de HTML para establecer relaciones significativas entre las etiquetas de grupo y sus opciones, lo que permite una interpretación precisa por parte de los lectores de pantalla y otras tecnologías de asistencia.
 
 **Compatibilidad con versiones en Forms Manager**
 Forms Manager ahora [admite el control de versiones para Forms adaptable (componentes principales y componentes de base)](/help/forms/manage-form-versions-forms-manager.md), fragmentos de formulario, temáticas, plantillas XDP y recursos binarios. Cree versiones, vea el historial de versiones completo y restaure estados anteriores de los recursos de formulario directamente desde la consola Forms y documentos.
@@ -191,7 +191,7 @@ Tenemos un número limitado de oportunidades disponibles para el envío de publi
 
 #### Servidor MCP de Cloud Manager (programa Beta) {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480345/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 Los IDE modernos utilizan el Protocolo de contexto de modelo (MCP) para permitir que los modelos de lenguaje de gran tamaño (LLM) invoquen las herramientas expuestas por los servidores MCP. En lugar de integrarse directamente con especificaciones de API de bajo nivel, los desarrolladores pueden simplemente describir su intención en lenguaje natural.
 
@@ -204,12 +204,6 @@ Más información sobre [Servidores MCP de AEM](/help/ai-in-aem/mcp-support/usin
 Las funcionalidades de [solución de problemas de canalización](/help/ai-in-aem/agents/brand-experience/development/development.md) del agente de desarrollo ayudan a los desarrolladores a diagnosticar y resolver problemas de forma eficaz en las implementaciones de AEM as a Cloud Service. Además de admitir canalizaciones de pila completa (implementación y calidad de código), el agente de desarrollo ahora admite la solución de problemas para la **canalización de configuración de nivel web** como parte de un programa beta.
 
 Para solicitar acceso a la versión beta, envíe un correo electrónico a [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Se requiere el acceso preexistente a los agentes en AEM.
-
->[!NOTE]
->
->Disponible como función de responsabilidad civil el 25 de septiembre.
->Envíe un correo electrónico a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para activarlo en sus programas.
->
 
 #### Herramientas de IA del IDE para el desarrollo de AEM Java y Dispatcher (programa de Beta) {#ai-dev-beta}
 
