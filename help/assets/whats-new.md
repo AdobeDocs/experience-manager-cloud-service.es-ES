@@ -4,9 +4,9 @@ description: Obtenga más información sobre algunas de las funciones de Content
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 621ae9a93ee8bd7d5f1b35387d4022072bfc46c6
+source-git-commit: 6aeab06b4dc48249e69dd265eefb99db9d45d6c3
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '964'
 ht-degree: 74%
 
 ---
@@ -35,7 +35,7 @@ En Content Hub, el agente de control de AEM garantiza que solo las personas adec
 
 ![Información general sobre administración de permisos](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## Funciones de la versión de octubre {#october-release-features}
@@ -56,11 +56,7 @@ Ahora puede marcar colecciones como Favoritos en Content Hub, lo que facilita su
 
 Los administradores de Content Hub ahora pueden anclar colecciones en Content Hub para acceder rápidamente a ellas. Las colecciones ancladas se muestran en una sección **[!UICONTROL Anclada]** específica de la página principal de Colecciones, lo que facilita mantener las colecciones importantes a mano.
 
-[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
-
->[!IMPORTANT]
->
->Estas funciones están disponibles como funciones de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
+[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 ## Funciones de la versión de agosto {#august-release-features}
 
