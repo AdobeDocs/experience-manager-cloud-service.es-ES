@@ -1,14 +1,13 @@
 ---
 title: Nuevo visor de vídeo
-description: El nuevo visualizador de vídeo de Dynamic Media ofrece una experiencia de reproducción de vídeo mejorada con rendimiento, accesibilidad y capacidad de configuración mejorados.
+description: El nuevo Visor de vídeo de Dynamic Media ofrece una experiencia de reproducción de vídeo mejorada
 role: User
-source-git-commit: f069e2cfaaa3c82a1d2391403b23f1ccf1ec2866
+source-git-commit: 1ee4f1352a0fe1e8d1f2fd7b79555ad4144bb02c
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1443'
 ht-degree: 2%
 
 ---
-
 
 # Nuevo visor de vídeo en Dynamic Media {#new-video-viewer-dynamic-media}
 
@@ -74,7 +73,7 @@ Siga estos pasos para obtener una vista previa del nuevo visor de vídeo desde l
 3. En el panel izquierdo, haga clic en **Visualizadores**.
 4. En el panel **Visualizadores**, seleccione **Vídeo (nuevo)**.
 5. Haga clic en **URL** para copiar el vínculo de vista previa.
-   ![Copiar URL](/help/assets/assets/Copy-url1.jpg)
+   ![Copiar URL](assets/Copy-url1.jpg)
 
 ## Uso del nuevo visor de vídeo en Sites {#use-in-sites}
 
@@ -90,7 +89,7 @@ Ejecute los siguientes pasos para agregar un vídeo mediante el componente Dynam
 4. Haga clic en el componente para abrir el selector de recursos.
 5. Seleccione un recurso de vídeo.
 
-![Arrastrar componente de Dynamic Media](/help/assets/assets/drag-component.jpeg)
+![Arrastrar componente de Dynamic Media](assets/drag-component.jpeg)
 
 ### Configuración del visor
 
@@ -98,13 +97,13 @@ Ejecute los siguientes pasos para configurar el ajuste preestablecido de visuali
 
 1. Seleccione el componente **Dynamic Media** en la página.
 2. Haga clic en **Configurar** en la barra de herramientas de componentes.
-   ![Abrir la configuración de Dynamic Media](/help/assets/assets/configure-asset.png)
+   ![Abrir la configuración de Dynamic Media](assets/configure-asset.png)
 
 3. En el **cuadro de diálogo de configuración de Dynamic Media**, seleccione **Vídeo (nuevo)** de la lista desplegable **Ajuste preestablecido de visor**.
-   ![Seleccionar ajuste preestablecido de visor de vídeo (nuevo)](/help/assets/assets/viewer-preset.jpeg)
+   ![Seleccionar ajuste preestablecido de visor de vídeo (nuevo)](assets/viewer-preset.jpeg)
 
 4. Escriba los modificadores necesarios en el campo **Modificadores del visor** (por ejemplo, `autoplay=true&muted=true`).
-   ![Modificadores de visor](/help/assets/assets/additional-modifiers.jpeg)
+   ![Modificadores de visor](assets/additional-modifiers.jpeg)
 
 5. Guarde los cambios.
 
