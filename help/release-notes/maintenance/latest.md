@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 2a7b83b99547637e02ec7cef9c92c5dd794a9adc
+source-git-commit: b83d8736d47778ed133e0cc07207e02e581bbc69
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '635'
 ht-degree: 36%
 
 ---
@@ -29,7 +29,7 @@ La activación de funcionalidades 2026.3.0 proporcionará el conjunto completo d
 * GRANITE-57035: utilice Bouncy Castle como proveedor de seguridad predeterminado.
 * GRANITE-59249: Evite registrar un proveedor de seguridad en JVM.
 * GRANITE-61564: no se puede abrir la configuración de vista de `/security/users.html` para los administradores.
-* GRANITE-64748: OIDC: caducidad configurable de la cookie sling.oauth-request-key.
+* GRANITE-64748: OIDC: caducidad de la cookie `sling.oauth-request-key` configurable.
 * SITES-39767: admite el valor nonce a través del atributo de solicitud (CSP).
 * SKYOPS-129301: establezca el nivel de cumplimiento de API jar javadoc en 17.
 * GRANITE-64962: Actualice Apache Jackrabbit Oak a 1.92.0.
