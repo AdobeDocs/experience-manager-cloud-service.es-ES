@@ -4,21 +4,21 @@ description: Aprenda a utilizar el agente de detección de contenido para ofrece
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: a9f1ed92e3ca05be6f4db578a814330004100b3e
+source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 1%
+source-wordcount: '2066'
+ht-degree: 0%
 
 ---
 
 
 # Agente de detección de contenido {#discovery-agent}
 
-Como parte de [Content Advisor Agent de AEM,](/help/ai-in-aem/agents/content-advisor/overview.md) el agente de detección de contenido ofrece contenido de AEM bajo demanda mediante mensajes naturales y conversacionales para una experiencia de detección ágil y sin clics. Busca de forma inteligente en Assets, Fragmentos de contenido y Forms adaptable para ofrecer materiales relevantes como imágenes, vídeos, documentos de PDF, artículos y plantillas de formulario. Con el lenguaje natural, puede buscar contenido sin crear consultas complejas ni aplicar filtros en la interfaz de AEM Assets. En función de la solicitud, el agente devuelve resultados depurados junto con metadatos de recursos y direcciones URL de entrega, listos para incrustarse en otras aplicaciones.
+Como parte de [Content Advisor Agent de AEM,](/help/ai-in-aem/agents/content-advisor/overview.md) el agente de detección de contenido ofrece contenido de AEM bajo demanda mediante mensajes naturales y conversacionales para una experiencia de detección ágil y sin clics. Busca de forma inteligente en Assets, fragmentos de contenido, páginas de AEM Sites y Forms adaptable para ofrecer materiales relevantes como imágenes, vídeos, documentos de PDF, artículos y plantillas de formulario. Con el lenguaje natural, puede buscar contenido sin crear consultas complejas ni aplicar filtros en la interfaz de AEM Assets. En función de la solicitud, el agente devuelve resultados depurados junto con metadatos de recursos y direcciones URL de entrega, listos para incrustarse en otras aplicaciones.
 
 Algunas de las ventajas clave del agente de detección de contenido son:
 
-* **Detección unificada de contenido**: Acceda a todo tipo de contenido de AEM, como imágenes, vídeos, documentos de PDF, artículos y formularios, desde una sola interfaz de conversación.
+* **Detección unificada de contenido**: Acceda a todo tipo de contenido de AEM, como imágenes, vídeos, documentos de PDF, artículos, páginas y formularios, desde una sola interfaz de conversación.
 
 * **Planificación de campañas más rápida**: Recopile rápidamente imágenes y formularios para las campañas de marketing en los canales de correo electrónico, web y social.
 
@@ -38,12 +38,15 @@ Algunas de las ventajas clave del agente de detección de contenido son:
 
 El agente de detección de contenido ofrece las siguientes habilidades:
 
-* **Detección de contenido en lenguaje natural**\
-  El agente de detección de contenido permite a los usuarios encontrar recursos, fragmentos de contenido y formularios adaptables relevantes en Adobe Experience Manager (AEM) mediante simples mensajes de lenguaje natural, sin necesidad de consultas de búsqueda complejas.
+* **Detección de contenido en lenguaje natural**
 
-* **Descubrimiento de recursos basado en etiquetas**
+  El agente de detección de contenido permite a los usuarios encontrar recursos relevantes, fragmentos de contenido, formularios adaptables y páginas de AEM Sites en Adobe Experience Manager (AEM) mediante simples mensajes de lenguaje natural, sin necesidad de consultas de búsqueda complejas.
 
-  El agente de detección de contenido utiliza indicadores en lenguaje natural para buscar recursos asociados a etiquetas específicas en el repositorio de AEM, lo que ayuda a los usuarios a acceder rápidamente al contenido organizado o no según la taxonomía de la organización.
+* **Detección de recursos basados en metadatos**
+
+  El agente de detección de contenido utiliza peticiones de datos en lenguaje natural para buscar recursos en función de los metadatos disponibles para los recursos en AEM. Los usuarios pueden detectar recursos mediante metadatos como etiquetas, ID de correo electrónico del autor o el editor, fechas de publicación o modificación, tipo MIME, tipo de recurso, estado, propiedades de metadatos personalizadas definidas en formularios de metadatos en la vista Assets o Admin, etc. Consulte [Casos de uso comunes e indicadores de ejemplo](#use-cases-prompts) para obtener una lista completa.
+
+  También puede combinar varios filtros de metadatos en una sola solicitud para restringir los resultados de búsqueda.
 
 * **Detección de contenido basado en carpetas:**\
   El agente de detección de contenido puede identificar recursos mediante la interpretación de peticiones de datos en lenguaje natural que hacen referencia a nombres de carpetas en AEM. Los usuarios solo pueden mencionar la carpeta en su solicitud, sin navegar manualmente por el repositorio, lo que reduce significativamente el número de clics necesarios para localizar el contenido correcto.
@@ -78,13 +81,30 @@ Para obtener información sobre el extremo MCP para acceder al agente de detecci
 
 ### Recursos {#discovery-agent-use-cases-assets}
 
-**Descubrimiento de recursos basado en etiquetas**
+**Detección de recursos basados en metadatos**
 
-El agente de detección de contenido utiliza indicadores en lenguaje natural para buscar recursos asociados a etiquetas específicas en el repositorio de AEM, lo que ayuda a los usuarios a acceder rápidamente al contenido organizado según la taxonomía de su organización.
+El agente de detección de contenido utiliza peticiones de datos en lenguaje natural para buscar recursos en función de los metadatos disponibles para los recursos en AEM. Los usuarios pueden descubrir los recursos mediante las siguientes propiedades de metadatos: Etiquetas, Creado por ID de correo electrónico, Modificado por ID de correo electrónico, Publicado por ID de correo electrónico, Fecha de creación, Fecha de modificación, Fecha de publicación, Tipo de MIME, Tipo de recurso, Estado, formato de archivo, tamaño de archivo, anchura de imagen, altura de imagen y varios filtros de metadatos en una sola solicitud.
 
-Mensaje de ejemplo:
+El agente de detección de contenido también busca en las propiedades personalizadas disponibles en los esquemas de metadatos la vista Administrador y los formularios de metadatos de la vista Assets. Puede modificar los indicadores según corresponda para buscar los valores disponibles en esas propiedades de recursos personalizadas.
 
-Mostrar imágenes etiquetadas `office` en la carpeta `WKND`.
+>[!NOTE]
+>
+>Para mejorar el rendimiento de la detección, indexe las propiedades de metadatos personalizadas relevantes. Las propiedades indexadas permiten al agente recuperar el contenido coincidente más rápido cuando los usuarios incluyen esas propiedades en sus indicadores.
+
+
+Ejemplos de mensajes:
+
+* **Búsqueda basada en etiquetas**: mostrar imágenes etiquetadas `office` en la carpeta `WKND`.
+* **Buscar según el formato de archivo, el tipo de recurso, el estado del recurso y Publicado por el id. de correo electrónico**: mostrar imágenes en formato `.PNG` que sean `approved` y `published by <user email ID>`.
+* **Buscar según el formato de archivo, el tipo de recurso, el estado del recurso y el ID creado por correo electrónico**: mostrar vídeos en formato `.mp4` que se hayan aprobado y `created by <user email ID>`.
+* **Buscar según el formato de archivo, el tipo de recurso, el estado del recurso y la fecha de creación**: mostrar imágenes en formato `.PNG` creadas después del 1 de enero de 2025 y el `published by <user email ID>`
+* **Búsqueda basada en el tipo MIME, la fecha de creación y la publicación por el ID de correo electrónico**: mostrar `image/jpeg` creado después de `January 1, 2025` y `published by <user email ID>`.
+* **Buscar según el formato de archivo y las propiedades de metadatos personalizadas**: mostrar imágenes en formato `.JPEG` que tienen `Product SKU ID as <SKU value>`.
+
+* **Buscar recursos sin metadatos**: mostrar los recursos creados en los últimos 90 días con `<Name of metadata property including custom properties>` está en blanco.
+
+* **Busque recursos usando el tamaño de archivo, el ancho de imagen y el alto de imagen**: Muestre imágenes de más de 5 MB con un ancho superior a 2000 píxeles y un alto superior a 1200 píxeles.
+
 
 **Detección de contenido basado en carpetas:**\
 El agente de detección de contenido puede identificar recursos mediante la interpretación de peticiones de datos en lenguaje natural que hacen referencia a nombres de carpetas en AEM. Los usuarios solo pueden mencionar la carpeta en su solicitud, sin navegar manualmente por el repositorio, lo que reduce significativamente el número de clics necesarios para localizar el contenido correcto.
@@ -94,6 +114,18 @@ Ejemplos de mensajes:
 * ¿Hay algún svg en la carpeta `WKND`?
 * Mostrar recursos modificados después de `Nov 1 2025` en la carpeta `WKND`.
 * Enumerar `lifestyle` imágenes en la carpeta `WKND`.
+
+**Preguntas adicionales para habilitar la detección de contenido basado en carpetas**
+
+Cuando se incluye un nombre de carpeta en una solicitud (sin la ruta de acceso completa del recurso), Content Discovery Agent busca primero una carpeta coincidente en la ruta de acceso raíz `/content/dam/<folder-name>`.
+
+Si no se encuentra una carpeta coincidente en el nivel raíz, el agente sugiere rutas de carpeta alternativas en las que el nombre de carpeta especificado existe en el repositorio. Esto ayuda a los usuarios a identificar rápidamente la ubicación correcta sin explorar manualmente la estructura de carpetas.
+
+Por ejemplo, no se encontró la ruta `/content/dam/<folder-name>`. ¿Querías decir uno de estos?
+
+* Opción 1
+
+* Opción 2
 
 **Descubrimiento de recursos basado en formato**
 
@@ -111,9 +143,37 @@ Mensaje de ejemplo:
 
 Mostrar recursos con la persona en orientación horizontal.
 
+**Expandiendo resultados de búsqueda**
+
+Content Discovery Agent devuelve los 20 resultados más relevantes por tipo de contenido para una solicitud. Si hay disponibles resultados coincidentes adicionales, los usuarios pueden solicitar el siguiente conjunto si escriben un mensaje de seguimiento como `show me more`. A continuación, el agente recupera el siguiente conjunto de resultados de la búsqueda original, lo que permite a los usuarios explorar progresivamente conjuntos de resultados más grandes sin restringir el mensaje.
+
+**Buscando recursos similares**
+
+El agente de detección de contenido permite a los usuarios encontrar recursos similares a un resultado específico devuelto en los resultados de búsqueda. Una vez que el agente muestre los resultados principales de una solicitud, puede solicitar recursos similares haciendo referencia a la posición de un elemento en la lista de resultados. Por ejemplo, un mensaje como `find assets similar to the 3rd result` indica al agente que identifique y devuelva otros recursos relevantes relacionados con ese elemento. Esto ayuda a los usuarios a descubrir rápidamente el contenido relacionado sin crear un nuevo mensaje de búsqueda.
+
+**Ordenando resultados de búsqueda**
+
+El agente de detección de contenido permite a los usuarios ordenar los resultados de búsqueda directamente según sus indicaciones en lenguaje natural. Los usuarios pueden especificar criterios de ordenación, como fecha de modificación, fecha de creación o nombre del recurso, y elegir orden ascendente o descendente.
+
+Ejemplos de mensajes:
+
+* Buscar imágenes de montaña ordenadas por fecha de modificación en orden descendente (muestra primero los recursos modificados más recientemente).
+
+* Mostrar imágenes de montaña ordenadas por nombre en orden ascendente (muestra los nombres de imagen que comienzan por la letra A primero seguida por B, etc.).
+
+### Páginas de AEM Sites {#content-discovery-agent-aem-sites-pages}
+
+El agente de detección de contenido ayuda a los usuarios a localizar rápidamente páginas relevantes de AEM Sites mediante la interpretación de indicaciones en lenguaje natural que hacen referencia a temas de páginas, campañas u otras palabras clave contextuales. El agente realiza una búsqueda de texto completo basada en las palabras clave del mensaje para identificar las páginas coincidentes en el repositorio de AEM, lo que elimina la necesidad de examinar manualmente la estructura de Sites.
+
+Indicadores de ejemplo:
+
+* Encuentre todas las páginas de AEM Sites para la campaña de verano.
+
+* Busque páginas de AEM Sites con una temática de café.
+
 ### Fragmentos de contenido {#discovery-agent-use-cases-content-fragments}
 
-El agente de detección de contenido ayuda a los usuarios a localizar rápidamente los fragmentos de contenido adecuados mediante la interpretación de referencias en lenguaje natural a nombres de campañas, marcas de productos, estados de publicación y actividades de creación recientes. Permite a los equipos mostrar fragmentos listos para la campaña y ver contenido específico de la marca, todo sin examinar manualmente las carpetas o aplicar varios filtros en AEM.
+Content Discovery Agent ayuda a los usuarios a localizar rápidamente los fragmentos de contenido adecuados mediante la interpretación de referencias en lenguaje natural a nombres de campañas, marcas de productos, estados de publicación y actividades de creación recientes. Permite a los equipos mostrar fragmentos listos para la campaña y ver contenido específico de la marca, todo sin examinar manualmente las carpetas o aplicar varios filtros en AEM.
 
 Ejemplos de mensajes:
 
@@ -175,4 +235,8 @@ Especifique detalles concisos en las indicaciones en lenguaje natural para que e
 
 ## Limitaciones {#limitations-discovery-agent}
 
-El agente de detección de contenido admite peticiones de datos basadas en dimensiones únicamente para tipos de formato de imagen y SVG. Por ejemplo, `Find images wider than 1080px`.
+* El agente de detección de contenido admite peticiones de datos basadas en dimensiones únicamente para tipos de formato de imagen y SVG. Por ejemplo, `Find images wider than 1080px`.
+
+* Los administradores de Content Hub pueden acceder al agente de detección de contenido a través del portal de Content Hub; sin embargo, los resultados solo se recuperan de la instancia de autor de AEM. Actualmente, los usuarios de Content Hub Limited no pueden disfrutar de las ventajas de Content Discovery Agent (disponible próximamente).
+
+* La función Buscar similares solo funciona para imágenes con [mejoras en las etiquetas inteligentes](/help/assets/ai-generated-metadata-assets-view.md).
