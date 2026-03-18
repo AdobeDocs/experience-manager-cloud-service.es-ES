@@ -4,9 +4,9 @@ description: Estas son las notas de la versión de la vista previa del editor un
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
+source-git-commit: bbf371dbf8102611345f2d289a3eaba56ee1d87c
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -38,3 +38,7 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 * La eliminación de una imagen ya no deja etiquetas de imagen vacías al utilizar DA como back end.
 * Las clases en bloques ahora se gestionan correctamente al utilizar DA como back end.
 * Open API ahora guarda los recursos remotos correctamente como objetos.
+
+## Próximos cambios importantes {#breaking-change}
+
+* Todas las extensiones deben actualizarse a `@adobe/uix-guest` >= `1.1.7` para mejorar la estabilidad.
