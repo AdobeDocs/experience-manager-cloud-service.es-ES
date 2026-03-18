@@ -4,9 +4,9 @@ description: Conozca los primeros pasos para aumentar rápidamente la productivi
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 283608acebab0704532ee2a2d856f248a818f671
+source-git-commit: 22a8260bf760ca4501813348c90bfc96c74e2224
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -47,8 +47,8 @@ La consola le solicitará un repositorio la primera vez que inicie sesión.
 
 1. Haga clic en **Conectar repositorio**.
 1. Se abrirá la aplicación Conector de código de AEM en una nueva pestaña del explorador. Haga clic en **Autorizar conector de código AEM**.
-1. En la consola, seleccione **Propietario**, **Repositorio** y **Selección de rama** y haga clic en **Finalizar compra en el espacio de trabajo**.
-   ![Conectando con el proyecto de GitHub](assets/connect-to-github-project.png)
+1. Vuelva a la consola y especifique la URL de vista previa del sitio. La URL de vista previa se puede obtener previsualizando cualquier documento del sitio o creándolo a partir de la rama, el nombre del sitio y la organización. El sistema recuperará automáticamente el proyecto de Github asociado, en algunos casos se le puede pedir que proporcione las coordenadas de github también.
+   ![Conectando con el proyecto de GitHub](assets/connect-site-and-github.png)
 1. Cuando se le pida **Reemplazar el área de trabajo existente**, haga clic en **Reemplazar área de trabajo**.
    ![Reemplazar área de trabajo existente](assets/replace-existing-workspace.png)
 
