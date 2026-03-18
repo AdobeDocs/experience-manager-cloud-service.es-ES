@@ -1,17 +1,17 @@
 ---
-title: Verificador de vínculos
+title: Comprobador de vínculos
 description: Descubra cómo el Verificador de vínculos ayuda a los autores validando los vínculos a medida que se agregan al contenido y qué opciones de configuración ofrece.
 feature: Operations
 role: Admin
-source-git-commit: cc8e242715faaef5cda25b428c315947ec3d7e06
+exl-id: f5f71e2f-69e3-44f9-812d-71fe417896f8
+source-git-commit: 08771212329423a2bf182ff2cdaf63be8cc37f80
 workflow-type: tm+mt
 source-wordcount: '998'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Verificador de vínculos {#link-checker}
+# Comprobador de vínculos {#link-checker}
 
 Descubra cómo el Verificador de vínculos ayuda a los autores validando los vínculos a medida que se agregan al contenido y qué opciones de configuración ofrece.
 
@@ -36,7 +36,7 @@ El Verificador de vínculos valida [vínculos internos](#internal) y [vínculos 
 Los vínculos internos son vínculos a otro contenido del repositorio de AEM. Los vínculos internos se pueden agregar mediante el selector de rutas, el editor de texto enriquecido o mediante un componente personalizado. Por ejemplo:
 
 * Usted crea la página `/content/wknd/us/en/adventures/ski-touring`
-* Esa página contiene un vínculo a `/content/wknd/us/en/adventures/extreme-ironing` en un [componente Texto.](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/wcm-components/text)
+* Esa página contiene un vínculo a `/content/wknd/us/en/adventures/extreme-ironing` en un [componente Texto.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
 
 Los vínculos internos se validan en cuanto el autor de contenido añade un vínculo de este tipo a una página. Si el vínculo deja de ser válido:
 
@@ -52,7 +52,7 @@ Los vínculos internos se validan en cuanto el autor de contenido añade un vín
 Los vínculos externos son vínculos a contenido fuera del repositorio de AEM. Los vínculos externos se pueden agregar mediante el editor de texto enriquecido o mediante un componente personalizado. Por ejemplo:
 
 * Usted crea la página `/content/wknd/us/en/adventures/ski-touring`
-* Esa página contiene un vínculo a `https://bunwarmerthermalunderwear.com` en un [componente Texto.](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/wcm-components/text)
+* Esa página contiene un vínculo a `https://bunwarmerthermalunderwear.com` en un [componente Texto.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
 
 Los vínculos externos se validan para la sintaxis y comprobando su disponibilidad. Esta comprobación se realiza de forma asíncrona a un intervalo configurable. Si el Verificador de vínculos encuentra un vínculo externo no válido:
 
@@ -69,10 +69,10 @@ El Verificador de vínculos externos se basa en varios servicios y comprender c�
 
 1. Cada vez que un autor de contenido guarda un vínculo a una página, se activa un controlador de eventos.
 1. El controlador de eventos recorre todo el contenido de `/content`, busca vínculos nuevos o actualizados y los agrega a una caché para el Verificador de vínculos.
-1. A continuación, el **servicio Day CQ Link Checker** se ejecuta de forma regular para comprobar si las entradas de la caché contienen sintaxis válida.
+1. A continuación, **el servicio Adobe AEM Link Checker** se ejecuta con una programación regular para comprobar si las entradas de la caché contienen sintaxis válida.
 1. Los vínculos validados por sintaxis aparecerán en la ventana [Comprobador de vínculos externos.](#external-using) Sin embargo, estarán en estado **Pendiente**.
-1. A continuación, **la tarea Day CQ Link Checker Task** se ejecuta de forma regular para validar los vínculos mediante una llamada de GET.
-1. La **tarea Day CQ Link Checker** actualiza las entradas de la [ventana External Link Checker](#external-using) con los resultados de las llamadas de GET.
+1. **La tarea de comprobación de vínculos de Adobe AEM** se ejecuta a continuación de forma regular para validar los vínculos mediante una llamada de GET.
+1. La **Tarea del Verificador de vínculos de Adobe AEM** actualiza las entradas de la [ventana del Verificador de vínculos externos](#external-using) con los resultados de las llamadas de GET.
 
 ### Uso del Comprobador de vínculos externos {#external-using}
 
@@ -93,7 +93,7 @@ Cada entrada de la tabla representa un vínculo externo detectado por el servici
 * **Referente**: la página de contenido que contiene el vínculo externo
    * Esto solo se rellena [si está configurado.](#configuring)
 * **Última comprobación** - La última vez que el Verificador de vínculos validó el vínculo externo
-   * La frecuencia con la que se comprueban los vínculos [&#x200B; es configurable.](#configuring)
+   * La frecuencia con la que se comprueban los vínculos [ es configurable.](#configuring)
 * **Último estado**: el último código de estado de HTML devuelto cuando el vínculo comprobado comprobó por última vez el vínculo externo
 * **Última disponibilidad** - Tiempo desde la última vez que el vínculo estuvo disponible para el Verificador de vínculos
 * **Último acceso**: tiempo transcurrido desde que se accedió por última vez a la página con el vínculo externo en la interfaz de creación
@@ -109,12 +109,12 @@ Todos los demás iconos de la ventana Comprobador de vínculos externos están i
 
 El Verificador de vínculos está disponible de forma predeterminada en AEM. Sin embargo, hay varias configuraciones de OSGi que se pueden modificar para cambiar su comportamiento:
 
-* **Servicio Day CQ Link Checker Info Storage**: este servicio define el tamaño de la caché del Verificador de vínculos en el repositorio.
-* **Servicio Day CQ Link Checker**: este servicio realiza una comprobación asincrónica de la sintaxis de los vínculos externos.
+* **Servicio de almacenamiento de información de Link Checker de Adobe AEM**: este servicio define el tamaño de la caché de Link Checker en el repositorio.
+* **Servicio Adobe AEM Link Checker**: este servicio realiza una comprobación asincrónica de la sintaxis de los vínculos externos.
    * Puede definir el periodo de comprobación y qué tipos de vínculos omite el verificador, entre otras opciones.
-* **Tarea del verificador de vínculos CQ de día**: este servicio realiza la validación GET de los vínculos externos.
+* **Tarea del Verificador de vínculos de Adobe AEM**: Este servicio realiza la validación de vínculos externos mediante GET.
    * Permite definir por separado los intervalos para comprobar los vínculos buenos y malos, entre otras opciones.
-* **Day CQ Link Checker Transformer**: este servicio convierte los vínculos según un conjunto de reglas definidas por el usuario.
+* **Transformador de comprobador de vínculos de Adobe AEM**: este servicio convierte los vínculos según un conjunto de reglas definido por el usuario.
 
 Consulte el documento [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para obtener más información sobre cómo cambiar la configuración de OSGi.
 
@@ -123,7 +123,7 @@ Consulte el documento [Configuración de OSGi](/help/implementing/deploying/conf
 Puede optar por desactivar el Verificador de vínculos por completo. Para ello:
 
 1. Abra la consola OSGi.
-1. Editar el **transformador Day CQ Link Checker**
+1. Edite el **Transformador de comprobador de vínculos de Adobe AEM**
 1. Marque las opciones que desee desactivar:
    * **Deshabilitar comprobación** - para deshabilitar la validación de vínculos
    * **Deshabilitar la reescritura** - para deshabilitar las transformaciones de vínculos
