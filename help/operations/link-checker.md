@@ -36,7 +36,7 @@ El Verificador de vínculos valida [vínculos internos](#internal) y [vínculos 
 Los vínculos internos son vínculos a otro contenido del repositorio de AEM. Los vínculos internos se pueden agregar mediante el selector de rutas, el editor de texto enriquecido o mediante un componente personalizado. Por ejemplo:
 
 * Usted crea la página `/content/wknd/us/en/adventures/ski-touring`
-* Esa página contiene un vínculo a `/content/wknd/us/en/adventures/extreme-ironing` en un [componente Texto.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* Esa página contiene un vínculo a `/content/wknd/us/en/adventures/extreme-ironing` en un [componente Texto.](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/wcm-components/text)
 
 Los vínculos internos se validan en cuanto el autor de contenido añade un vínculo de este tipo a una página. Si el vínculo deja de ser válido:
 
@@ -52,7 +52,7 @@ Los vínculos internos se validan en cuanto el autor de contenido añade un vín
 Los vínculos externos son vínculos a contenido fuera del repositorio de AEM. Los vínculos externos se pueden agregar mediante el editor de texto enriquecido o mediante un componente personalizado. Por ejemplo:
 
 * Usted crea la página `/content/wknd/us/en/adventures/ski-touring`
-* Esa página contiene un vínculo a `https://bunwarmerthermalunderwear.com` en un [componente Texto.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* Esa página contiene un vínculo a `https://bunwarmerthermalunderwear.com` en un [componente Texto.](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/wcm-components/text)
 
 Los vínculos externos se validan para la sintaxis y comprobando su disponibilidad. Esta comprobación se realiza de forma asíncrona a un intervalo configurable. Si el Verificador de vínculos encuentra un vínculo externo no válido:
 
