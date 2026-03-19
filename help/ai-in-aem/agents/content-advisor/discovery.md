@@ -4,9 +4,9 @@ description: Aprenda a utilizar el agente de detección de contenido para ofrece
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
+source-git-commit: 10a4b44fde65ae865d2e6d908e9e442752326fcd
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '2073'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Ejemplos de mensajes:
 * **Buscar según el formato de archivo, el tipo de recurso, el estado del recurso y el ID creado por correo electrónico**: mostrar vídeos en formato `.mp4` que se hayan aprobado y `created by <user email ID>`.
 * **Buscar según el formato de archivo, el tipo de recurso, el estado del recurso y la fecha de creación**: mostrar imágenes en formato `.PNG` creadas después del 1 de enero de 2025 y el `published by <user email ID>`
 * **Búsqueda basada en el tipo MIME, la fecha de creación y la publicación por el ID de correo electrónico**: mostrar `image/jpeg` creado después de `January 1, 2025` y `published by <user email ID>`.
-* **Buscar según el formato de archivo y las propiedades de metadatos personalizadas**: mostrar imágenes en formato `.JPEG` que tienen `Product SKU ID as <SKU value>`.
+* **Buscar en función del formato de archivo y las propiedades de metadatos personalizadas**: mostrar imágenes en formato `.JPEG` que tengan `Product SKU ID = <SKU value>` (debe estar en la propiedad de metadatos = formato de valor).
 
 * **Buscar recursos sin metadatos**: mostrar los recursos creados en los últimos 90 días con `<Name of metadata property including custom properties>` está en blanco.
 
