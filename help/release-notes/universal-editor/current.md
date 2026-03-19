@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2026.03.12 del editor universal
-description: Estas son las notas de la versión 2026.03.12 del editor universal.
+title: Notas de la versión 2026.03.19 del editor universal
+description: Estas son las notas de la versión 2026.03.19 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: ef6e65a72eaa5e7e8b15f8ec096cd43351bc2674
+source-git-commit: 8d9d162ec5bba99afb1ae86252a49a9880be4e68
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 47%
+source-wordcount: '197'
+ht-degree: 34%
 
 ---
 
 
-# Notas de la versión 2026.03.12 del editor universal {#release-notes}
+# Notas de la versión 2026.03.19 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 12 de marzo de 2026.
+Estas son las notas de la versión del editor universal del 19 de marzo de 2026.
 
 >[!TIP]
 >
@@ -26,14 +26,17 @@ Estas son las notas de la versión del editor universal del 12 de marzo de 2026.
 
 ## Novedades {#what-is-new}
 
-* Ahora se pueden agregar componentes a través del [menú contextual](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) de contenedores.
-
-## Funciones de adopción anticipada {#early-adopter}
-
-Si le interesa probar las próximas funciones enumeradas a continuación y compartir sus comentarios, envíe un correo electrónico a Customer Success Manager de Adobe desde la dirección de correo electrónico asociada a su Adobe ID.
-
-* Se ha implementado una copia superficial para los fragmentos de contenido.
+* Los elementos de las propiedades ahora se contraen al volver a [la pantalla principal.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
+* [El selector de recursos](/help/implementing/universal-editor/configure-assets-selector.md) ahora admite [definiciones de filtros.](/help/implementing/universal-editor/filtering.md)
+* Si no hay acciones disponibles para el elemento seleccionado, [el menú contextual](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) ya no muestra comillas angulares para acceder a las acciones.
 
 ## Otras mejoras {#other-improvements}
 
-* Se corrigió un problema en el cual los subelementos de creación de documentos no obedecían las reglas nthChild.
+* Si hay una definición de modelo, filtro o componente, se recuperará al cambiar de una aplicación a otra en el editor.
+* La eliminación de una imagen ya no deja etiquetas de imagen vacías al utilizar DA como back end.
+* Las clases en bloques ahora se gestionan correctamente al utilizar DA como back end.
+* Open API ahora guarda los recursos remotos correctamente como objetos.
+
+## Cambio radical {#breaking-change}
+
+* Todas las extensiones deben actualizarse a `@adobe/uix-guest` >= `1.1.7` para mejorar la estabilidad.
