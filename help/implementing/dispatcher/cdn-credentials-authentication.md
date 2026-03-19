@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar las credenciales y la a
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 68a41d468650228b4ac35315690a76465ffe4c0b
+source-git-commit: 9f264bab062d5013ff5a4b40b1228be1f922ef51
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2181'
 ht-degree: 3%
 
 ---
@@ -40,9 +40,28 @@ data:
     ...
 ```
 
+## Implementación de secretos: Variables de entorno frente a variables de canalización {#deploying-secrets}
+
+Puede implementar secretos utilizados en la configuración de CDN de dos maneras:
+
+* **Variables secretas de canalización** - Configuradas en Cloud Manager como [variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) de tipo **Secreto** con **Paso aplicado** establecido en **Implementar**. Están disponibles como configuraciones de nivel de canalización.
+
+* **Variables secretas de entorno** - Configuradas en Cloud Manager como [variables de entorno](/help/implementing/cloud-manager/environment-variables.md) de tipo **Secreto** y **Servicio aplicado** establecido en **Todo**. Están disponibles como una configuración de nivel de entorno.
+
+**Preferido: variables secretas de canalización.** Use variables secretas de canalización cuando sea posible, ya que se implementan junto con la configuración en la misma ejecución de canalización. Esto mantiene los secretos y la configuración sincronizados y simplifica los despliegues.
+
+No puede mezclar secretos de canalización con secretos de entorno para la misma configuración. Si se definen variables secretas de canalización para el paso de implementación, se utilizan con preferencia.
+
+La siguiente imagen muestra cómo configurar variables de secreto de canalización en Cloud Manager:
+
+![Configuración de variables secretas de canalización](/help/implementing/dispatcher/assets/pipeline-secrets-configuration.png)
+
+Para obtener información detallada sobre cómo agregar, editar y administrar variables de canalización (incluidos los secretos), consulte [Variables de canalización en Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+
+## Directrices para trabajar con secretos {#secrets-guidelines}
+
 Estas son algunas directrices que se deben tener en cuenta al trabajar con secretos:
 
-* Los secretos de entorno deben implementarse como una [variable de entorno de tipo secreto Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars). En el campo Servicio aplicado, seleccione Todo.
 * Las referencias secretas no se interpolan dentro de cadenas (p. ej. `"Token ${{AUTH_TOKEN}}"` no funcionará)
 * Un secreto de entorno al que se hace referencia no debe eliminarse si aún se hace referencia a él en la configuración.
 
@@ -88,7 +107,7 @@ data:
 
 Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades que aparecen por encima del nodo `data`. El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en `1`.
 
-Consulte el tutorial [Configurar e implementar la regla CDN de validación de encabezado HTTP](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obtener más información.
+Consulte el tutorial [Configurar e implementar la regla CDN de validación de encabezado HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obtener más información.
 
 Entre las propiedades adicionales se incluyen:
 
@@ -208,7 +227,7 @@ Entre las propiedades adicionales se incluyen:
 >[!NOTE]
 >La clave de purga debe configurarse como [secreto de tipo Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), antes de que se implemente la configuración que hace referencia a ella. Se recomienda utilizar una clave aleatoria única de al menos 32 bytes de longitud; por ejemplo, la biblioteca criptográfica Open SSL puede generar una clave aleatoria ejecutando el comando openssl rand -hex 32
 
-Puede hacer referencia a [un tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) centrado en la configuración de claves de depuración y en la depuración de la caché de la CDN.
+Puede hacer referencia a [un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) centrado en la configuración de claves de depuración y en la depuración de la caché de la CDN.
 
 ## Autenticación básica {#basic-auth}
 

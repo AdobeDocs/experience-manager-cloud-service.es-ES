@@ -4,9 +4,9 @@ description: Descubra cómo puede utilizar las canalizaciones de configuración 
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 66ea803dbf8e8b12fecf6256a88c94c2ca6fa112
+source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1491'
 ht-degree: 2%
 
 ---
@@ -221,13 +221,11 @@ data:
 
 Si se incluye el campo de metadatos *envTypes*, solo se debe utilizar el valor **prod** (omitir el campo de metadatos envTypes también es correcto). Para *tier* reqProperty, solo se debe usar el valor **publish**.
 
-## Variables de entorno secretas {#secret-env-vars}
+## Secretos de configuración  {#secret-in-configuration}
 
-Para que la información confidencial no tenga que almacenarse en el control de código fuente, los archivos de configuración admiten variables de entorno Cloud Manager de tipo **secret**. En algunas configuraciones, incluido el reenvío de registros, las variables de entorno secretas son obligatorias para determinadas propiedades.
+Para que la información confidencial no tenga que almacenarse en el control de código fuente, los archivos de configuración admiten la referencia a secretos de las variables de canalización de configuración o de las variables de entorno. En algunas configuraciones, incluido el reenvío de registros, las variables secretas son obligatorias para determinadas propiedades. Consulte [Configuración de credenciales y autenticación de CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md) para obtener más información sobre el uso de secretos en la configuración de CDN.
 
-Tenga en cuenta que las variables de entorno secretas se utilizan para proyectos de Entrega de publicación; consulte la sección Variables de canalización secretas para proyectos de Edge Delivery Services.
-
-El siguiente fragmento es un ejemplo de cómo se utiliza la variable de entorno secreta `${{SPLUNK_TOKEN}}` en la configuración.
+El siguiente fragmento es un ejemplo de cómo se utiliza la variable secreta `${{SPLUNK_TOKEN}}` en la configuración.
 
 ```
 kind: "LogForwarding"
@@ -241,12 +239,22 @@ data:
       index: "AEMaaCS"
 ```
 
-Para obtener más información sobre cómo usar variables de entorno, consulte [Variables de entorno de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
-## Variables de canalización secretas {#secret-pipeline-vars}
 
-Para proyectos de Edge Delivery Services, use variables de canalización de Cloud Manager de tipo **secret**, de modo que no sea necesario almacenar la información confidencial en el control de código fuente. El cuadro de selección *Paso aplicado* debe utilizar la opción **implementar**.
+### Variables de canalización secretas {#secret-pipeline-vars}
 
-La sintaxis es idéntica al fragmento de código mostrado en la sección anterior.
+La forma **preferida** es usar variables de canalización de Cloud Manager del tipo **secret**, por lo que no es necesario almacenar la información confidencial en el control de código fuente. El cuadro de selección **Paso aplicado** debe utilizar la opción **implementar**.
 
 Para obtener más información sobre cómo usar variables de canalización, consulte [Variables de canalización en Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+
+
+### Variables de entorno secretas {#secret-env-vars}
+
+Utilice variables de entorno secretas cuando desee tener diferentes valores secretos por entorno.
+
+Para obtener más información sobre cómo usar variables de entorno, consulte [Variables de entorno de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+
+>[!NOTE]
+>El uso de variables de entorno secretas es más engorroso e implica una disciplina estricta: las variables de entorno no se implementan junto con la canalización de configuración. Debe implementarlos antes de ejecutar la canalización y no debe eliminarlos mientras la configuración de la canalización aún haga referencia a ellos. Por este motivo, se prefieren los secretos de la canalización.
+
+
