@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->Familiarícese con el [uso básico del tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview#) y con el [complemento Maven de contenido de FileVault](/help/implementing/developing/tools/maven-plugin.md), ya que este artículo se basa en estos conocimientos y conceptos.
+>Familiarícese con el [uso básico del tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview#) y con el [complemento Maven de contenido de FileVault](/help/implementing/developing/tools/maven-plugin.md), ya que este artículo se basa en estos conocimientos y conceptos.
 
 Este artículo describe los cambios necesarios para que los proyectos de Adobe Experience Manager Maven sean compatibles con AEM as a Cloud Service, asegurándose de que respetan la división del contenido mutable e inmutable. Además, las dependencias se establecen para crear implementaciones determinísticas y no conflictivas, y se empaquetan en una estructura implementable.
 
@@ -62,7 +62,7 @@ La estructura de implementación de la aplicación recomendada es la siguiente:
 + El archivo Jar del paquete OSGi se genera y se incrusta directamente en todo el proyecto.
 
 + El paquete `ui.apps` contiene todo el código que se va a implementar y solo se implementa en `/apps`. Los elementos comunes del paquete `ui.apps` incluyen, entre otros:
-   + [Definiciones de componentes y scripts HTL](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview#)
+   + [Definiciones de componentes y scripts HTL](https://experienceleague.adobe.com/es/docs/experience-manager-htl/content/overview#)
       + `/apps/my-app/components`
    + JavaScript y CSS (a través de [Bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
@@ -72,7 +72,7 @@ La estructura de implementación de la aplicación recomendada es la siguiente:
       + `/apps/settings`
    + ACL (permisos)
       + Cualquier `rep:policy` para cualquier ruta de acceso bajo `/apps`
-   + [Scripts agrupados precompilados](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts#)
+   + [Scripts agrupados precompilados](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts#)
 
 >[!NOTE]
 >
