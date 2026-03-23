@@ -4,10 +4,10 @@ description: Obtenga información sobre la versión 2026.3.0 de Cloud Manager en
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: eb3e826e27e14b8b1da534440f11d43e973130ec
+source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 23%
+source-wordcount: '731'
+ht-degree: 22%
 
 ---
 
@@ -28,7 +28,7 @@ La próxima versión planificada es para el viernes, 02 de abril de 2026.
 
 ## Novedades: Cloud Manager (en inglés) {#cloud-manager-whats-new}
 
-* **Cloud Manager ahora admite la opción** Borrar **para las importaciones de** Copia de contenido **&#x200B;**
+* **Cloud Manager ahora admite la opción** Borrar **para las importaciones de** Copia de contenido ****
 
   Cuando se habilita **Borrar**, Cloud Manager elimina el contenido existente en el destino antes de iniciar la importación, por lo que puede empezar desde una pizarra limpia y evitar conflictos con el contenido preexistente. Si deja **Borrar** deshabilitado, Cloud Manager importa el nuevo contenido sobre el contenido de destino existente. Aparece un mensaje de confirmación antes de que comience el borrado y Cloud Manager registra la acción de borrado y los detalles de importación para rastrear.
 
@@ -95,7 +95,9 @@ En el cuadro de diálogo **Agregar o editar canalización**, en la ficha **Códi
 * **Compilación completa**: genera todos los módulos del repositorio en cada ejecución.
 * **Compilación inteligente**: genera solo módulos que han cambiado desde la última confirmación, lo que acorta el tiempo de compilación general.
 
-Usted controla qué canalizaciones utilizan **Smart Build**. Durante la versión beta, esta opción solo aparece para las canalizaciones **Calidad del código** y **Implementación de desarrolladores**.
+Usted controla qué canalizaciones utilizan **Smart Build**. Durante la versión beta, esta opción solo aparece para las canalizaciones **Calidad del código** y **Implementación de pila completa de desarrolladores**.
+
+Vea [Acerca del uso de Smart Build en una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) y [Agregar una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
 ¿Le interesa? Envíe un correo electrónico a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) con su identificador de organización de Adobe y el identificador de programa.
 
