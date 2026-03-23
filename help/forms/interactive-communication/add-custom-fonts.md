@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 66bd3730062284a9d155b89a3c653ed7ab86466b
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '173'
 ht-degree: 8%
 
 ---
@@ -33,5 +33,5 @@ La función de fuentes personalizadas le permite mejorar el aspecto de sus comun
 
 >[!NOTE]
 >
-> Para ver los pasos de configuración detallados, los usuarios pueden seguir la guía [Usar fuentes personalizadas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> Para ver los pasos de configuración detallados, los usuarios pueden seguir la guía [Usar fuentes personalizadas](/help/forms/use-custom-fonts.md)
 >Después de completar los pasos y ejecutar la canalización, las fuentes personalizadas están disponibles para su uso directamente en el Editor de comunicaciones interactivas.
