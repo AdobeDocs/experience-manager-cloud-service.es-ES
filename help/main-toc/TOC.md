@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 79f98664a3c4fddade7ed2ad1aa45ae6c3b501ce
+source-git-commit: 605ba43b498041198b62df26b83f7a4f1f5966ac
 workflow-type: tm+mt
-source-wordcount: '7158'
+source-wordcount: '7176'
 ht-degree: 93%
 
 ---
@@ -258,6 +258,7 @@ ht-degree: 93%
       + [Notas de la versión actual del editor universal](/help/release-notes/universal-editor/current.md)
       + [Previsualizar notas de la versión del editor universal](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [Notas de la versión 2026.03.19](/help/release-notes/universal-editor/2026/2026-03-19.md)
          + [Notas de la versión 2026.03.12](/help/release-notes/universal-editor/2026/2026-03-12.md)
          + [Notas de la versión 2026.03.05](/help/release-notes/universal-editor/2026/2026-03-05.md)
          + [Notas de la versión 2026.02.26](/help/release-notes/universal-editor/2026/2026-02-26.md)
@@ -439,7 +440,7 @@ ht-degree: 93%
          + [Creación de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [Administrar páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [Propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md)
-         + [Edición de las propiedades de página  &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
+         + [Edición de las propiedades de página  ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
          + [Previsualizar páginas](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [Versiones de página](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -589,19 +590,7 @@ ht-degree: 93%
    + [Solucionar problemas de AEM Assets](/help/assets/troubleshoot-aem-assets.md)
    + [Usuarios colaboradores de Assets](/help/assets/assets-collaborator-users.md)
    + Administrar los recursos digitales  {#manage}
-      + Selector de recursos de Micro-Frontend {#asset-selector}
-         + [Información general del Selector de recursos](/help/assets/overview-asset-selector.md)
-         + Integraciones del selector de recursos  {#asset-selector-integration}
-            + [Información general de integraciones del Selector de recursos](/help/assets/integrate-asset-selector.md)
-            + [Integre el Selector de recursos con una aplicación de Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
-            + [Integre el Selector de recursos con una aplicación que no sea de Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [Integre el Selector de recursos para Dynamic Media con las funciones de OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-         + [Propiedades del Selector de recursos](/help/assets/asset-selector-properties.md)
-         + [Ejemplos del Selector de recursos](/help/assets/asset-selector-examples.md)
-         + [Personalizaciones del Selector de recursos](/help/assets/asset-selector-customization.md)
-         + [Carga del selector de recursos](/help/assets/asset-selector-upload.md)
-         + [Colecciones del selector de recursos](/help/assets/asset-selector-collections.md)
-      + [Selector de destino de Micro-Frontend](/help/assets/destination-selector.md)
+      + [Asesor de contenido para acceder al contenido de AEM en aplicaciones Adobe](/help/assets/content-advisor-adobe-applications.md)
       + [Compartir recursos](/help/assets/share-assets.md)
       + [Reprocesamiento de recursos](/help/assets/reprocessing.md)
       + [Detección de malware](/help/assets/malware-detection.md)
@@ -633,9 +622,22 @@ ht-degree: 93%
       + [Creación y uso compartido de carpetas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
-      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
       + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
+      + Selector de recursos de Micro-Frontend {#asset-selector}
+         + [Información general del Selector de recursos](/help/assets/overview-asset-selector.md)
+         + Integraciones del selector de recursos  {#asset-selector-integration}
+            + [Información general de integraciones del Selector de recursos](/help/assets/integrate-asset-selector.md)
+            + [Integre el Selector de recursos con una aplicación de Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Integre el Selector de recursos con una aplicación que no sea de Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Integre el Selector de recursos para Dynamic Media con las funciones de OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [Propiedades del Selector de recursos](/help/assets/asset-selector-properties.md)
+         + [Ejemplos del Selector de recursos](/help/assets/asset-selector-examples.md)
+         + [Personalizaciones del Selector de recursos](/help/assets/asset-selector-customization.md)
+         + [Carga del selector de recursos](/help/assets/asset-selector-upload.md)
+         + [Colecciones del selector de recursos](/help/assets/asset-selector-collections.md)
+      + [Selector de destino de Micro-Frontend](/help/assets/destination-selector.md)
    + Configuración, administración y ampliación de [!DNL Assets] {#admin}
       + [Detección de recursos duplicados](/help/assets/detect-duplicate-assets.md)
       + [Documentación para desarrolladores y referencias de API](/help/assets/developer-reference-material-apis.md)
@@ -849,8 +851,8 @@ ht-degree: 93%
          + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuración de almacenamiento de  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Conectar el formulario adaptable a la base de datos SQL de Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configuración de los servicios en la nube de Salesforce](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
@@ -1114,6 +1116,7 @@ ht-degree: 93%
       + Plataformas empresariales {#enterprise-platforms}
          + [Configuración de Microsoft Copilot Studio con AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
          + [Configuración de JetBrains con GitHub Copilot y AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
+   + [Desarrollo local con herramientas de IA](/help/ai-in-aem/local-development-with-ai-tools.md)
    + Agentes en AEM {#agents}
       + [Información general](/help/ai-in-aem/agents/overview.md)
       + Brand Experience Agent {#brand-experience}
@@ -1308,7 +1311,7 @@ ht-degree: 93%
       + Creación{#authoring}
          + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=es)
          + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
-      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=es)
+      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
    + Selector de fragmentos de contenido {#content-fragment-selector}
       + [Selector de fragmentos de contenido de Micro-Frontend: información general](/help/headless/content-fragment-selector/overview.md)
