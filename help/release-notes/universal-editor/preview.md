@@ -4,9 +4,9 @@ description: Estas son las notas de la versión de la vista previa del editor un
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: e8231cd1c2d432e75268b1439fd585d19a406449
+source-git-commit: abbc43adbe64149098c049810482d37f76034eab
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Notas de la versión de Universal Editor Preview {#preview}
 
-Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 26 de marzo de 2026.
+Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 2 de abril de 2026.
 
 Estas notas de la versión de **preview** se proporcionan para que sepa qué cambios se avecinan en el editor universal y pueda probarlos al [cambiar a la versión de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,10 +28,8 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 
 ## Próximas funciones {#upcoming-features}
 
-* La configuración de recursos de creación de documentos ahora se expone a través de un punto de conexión de configuración.
-* Se ha añadido un punto de extensión al menú contextual.
-* Se ha añadido un nuevo icono de flujo de trabajo personalizado al sistema DynamicIcon de extensibilidad para mostrar un estado de cancelación profundo/superficial en la interfaz de usuario.
+* Ahora hay disponible una opción para insertar caracteres especiales en el editor de texto enriquecido (RTE).
 
 ## Próximas mejoras {#upcoming-improvements}
 
-* Se ha corregido un problema con las clases de creación de documentos que no funcionaban con varios campos porque esperaban una cadena.
+* El adaptador OpenAPI ya no devuelve incorrectamente los campos de etiqueta como campos múltiples.

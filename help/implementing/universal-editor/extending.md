@@ -4,10 +4,10 @@ description: Obtenga información acerca de las distintas opciones para ampliar 
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
+source-git-commit: abbc43adbe64149098c049810482d37f76034eab
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 100%
+source-wordcount: '576'
+ht-degree: 92%
 
 ---
 
@@ -54,10 +54,13 @@ Si desea explorar las posibilidades de crear sus propias extensiones, consulte l
 
 [Con Extension Manager en AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), puede habilitar o deshabilitar las extensiones por instancia, tener acceso a las extensiones de origen de Adobe, incluidas las del editor universal, y mucho más.
 
-## Puntos de extensión {#extension-points}
+### Puntos de extensión {#extension-points}
 
-Además de la extensibilidad de la IU, el editor universal ofrece muchos otros puntos de extensión flexibles para permitir la integración perfecta de los requisitos empresariales personalizados.
+Para obtener una lista completa de los puntos de extensión disponibles en la interfaz de usuario del editor universal, consulte la documentación de Adobe Developer [Los puntos de extensión del editor universal.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/)
+
+## Recursos adicionales {#additional-resources}
+
+Además de la extensibilidad de la interfaz de usuario, el editor universal ofrece otras opciones de personalización para permitir la integración perfecta de los requisitos empresariales personalizados.
 
 * **[Bloques](https://www.aem.live/developer/block-collection)**: con un formato JSON simple, los proyectos pueden ajustar los bloques y las funciones UE disponibles para la creación de contenido.
-* **[Interfaz de usuario personalizada](#extending-ui)**: las extensiones pueden mostrar la IU necesaria en paneles laterales o cuadros de diálogo modales.
 * **[Eventos](/help/implementing/universal-editor/events-universal-editor.md)**: las extensiones reciben eventos sobre las acciones y selecciones del autor en la página para responder de forma adecuada.

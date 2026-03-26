@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2026.03.19 del editor universal
-description: Estas son las notas de la versión 2026.03.19 del editor universal.
+title: Notas de la versión 2026.03.26 del editor universal
+description: Estas son las notas de la versión 2026.03.26 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 048e86fe7930173bb33de9252607e2910520b575
+source-git-commit: abbc43adbe64149098c049810482d37f76034eab
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 34%
+source-wordcount: '146'
+ht-degree: 46%
 
 ---
 
 
-# Notas de la versión 2026.03.19 del editor universal {#release-notes}
+# Notas de la versión 2026.03.26 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 19 de marzo de 2026.
+Estas son las notas de la versión del editor universal del 26 de marzo de 2026.
 
 >[!TIP]
 >
@@ -26,17 +26,10 @@ Estas son las notas de la versión del editor universal del 19 de marzo de 2026.
 
 ## Novedades {#what-is-new}
 
-* Los elementos de las propiedades ahora se contraen al volver a [la pantalla principal.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
-* [El selector de recursos](/help/implementing/universal-editor/configure-assets-selector.md) ahora admite [definiciones de filtros.](/help/implementing/universal-editor/filtering.md)
-* Si no hay acciones disponibles para el elemento seleccionado, [el menú contextual](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) muestra ahora un mensaje que lo indica.
+* [La configuración de recursos de creación de documentos](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets) ahora se expone a través de un punto de conexión de configuración.
+* [Se ha agregado un punto de extensión](/help/implementing/universal-editor/extending.md#extending-ui) al menú contextual.
+* Se ha añadido un nuevo icono de flujo de trabajo personalizado al sistema DynamicIcon de extensibilidad para mostrar el estado de cancelación profunda/superficial en la interfaz de usuario.
 
 ## Otras mejoras {#other-improvements}
 
-* Si hay una definición de modelo, filtro o componente, se recuperará al cambiar de una aplicación a otra en el editor.
-* La eliminación de una imagen ya no deja etiquetas de imagen vacías al utilizar DA como back end.
-* Las clases en bloques ahora se gestionan correctamente al utilizar DA como back end.
-* Open API ahora guarda los recursos remotos correctamente como objetos.
-
-## Cambio radical {#breaking-change}
-
-* Todas las extensiones deben actualizarse a `@adobe/uix-guest` >= `1.1.7` para mejorar la estabilidad.
+* Se ha corregido un problema con las clases de creación de documentos que no funcionaban con varios campos porque esperaban una cadena.
