@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 36%
+source-wordcount: '3342'
+ht-degree: 32%
 
 ---
 
@@ -93,17 +93,20 @@ Así se ordenará toda la tabla según esa columna. La ordenación solo está di
 
 El panel principal/derecho (vista de tabla) de la consola proporciona una amplia gama de información sobre los Fragmentos de contenido. Algunos elementos también proporcionan vínculos directos a otras acciones o información:
 
+* **Título**
+   * Un icono de candado indica que el fragmento está [retirado](#check-out-and-check-in) y bloqueado por un usuario; al seleccionar el icono de candado se muestran detalles de la cuenta que ha retirado el fragmento.
+   * El icono de información (i) proporciona acceso rápido a información adicional específica del fragmento en el panel derecho.
 * **Nombre**
    * Proporciona un vínculo para abrir el fragmento en el editor.
 * **Modelo**
    * Solo información.
-   * Se puede usar para [Filtrado rápido](#fast-filtering)
+   * Se puede usar para [Filtrado rápido](#fast-filtering).
 * **Carpeta**
    * Proporciona un vínculo para abrir la carpeta en la consola.
 Al pasar el puntero por encima del nombre de la carpeta, se muestra la ruta JCR.
 * **Estado**
    * Solo información.
-   * Se puede usar para [Filtrado rápido](#fast-filtering)
+   * Se puede usar para [Filtrado rápido](#fast-filtering).
 * **Vista previa**
    * Solo información:
       * **Sincronizado**: el fragmento de contenido está sincronizado con los servicios de **Autor** y **Previsualización**.
@@ -187,8 +190,8 @@ Al seleccionar un fragmento específico, se abre una barra de herramientas centr
 * **[Reemplazar](#find-and-replace)**
 * **Mover**
 * **Cambiar nombre**
+* **[Desproteger y proteger](#check-out-and-check-in)**
 * **[Eliminar](#deleting-a-fragment)** (solo disponible para fragmentos sin publicar)
-
 
 >[!NOTE]
 >
@@ -481,6 +484,64 @@ Antes del reemplazo, se comprueban los criterios de validación y se le informa 
 >Si selecciona más de 20 fragmentos de contenido, verá el mensaje **No se puede encontrar y reemplazar**.
 
 ![Confirmar reemplazo](assets/cf-managing-confirm-replace.png)
+
+## Desproteger y proteger {#check-out-and-check-in}
+
+AEM le permite:
+
+* [desproteger](#check-out-a-content-fragment) un fragmento de contenido, lo que impide que otros usuarios trabajen en el fragmento
+* [registrar](#check-in-a-content-fragment) fragmentos de contenido, lo que permite que otros usuarios reanuden el trabajo con el fragmento
+
+Cuando retira un fragmento, está bloqueado (`jcr:lock`). Un icono de candado en la columna **Title** indica un fragmento bloqueado. Al seleccionar el icono de candado se proporcionan detalles de la cuenta que ha retirado el fragmento.
+
+Puede editar, publicar, cancelar la publicación, mover o eliminar un fragmento bloqueado. Otros usuarios no podrán realizar ninguna de estas acciones en el fragmento hasta que proteja el fragmento, aunque sí podrán cambiar los metadatos del fragmento bloqueado.
+
+Esta funcionalidad ayuda a evitar conflictos cuando varios usuarios colaboran en la edición de fragmentos.
+
+>[!NOTE]
+>
+>Para poder desproteger o insertar un fragmento de contenido, debe tener acceso de escritura.
+
+>[!CAUTION]
+>
+>Es posible eliminar una carpeta que contenga un fragmento de contenido retirado.
+>
+>Antes de eliminar una carpeta, asegúrese de que no contiene ningún fragmento de contenido (u otros recursos digitales) desprotegidos por los usuarios.
+
+>[!NOTE]
+>
+>Como los fragmentos de contenido se almacenan internamente como Assets, esta funcionalidad está estrechamente relacionada con los [archivos de protección y desprotección en Experience Manager DAM](/help/assets/check-out-and-submit-assets.md).
+
+### Desproteger un fragmento de contenido {#check-out-a-content-fragment}
+
+Para extraer un fragmento:
+
+1. En la consola **Fragmentos de contenido** vaya a la ubicación del fragmento de contenido.
+1. Seleccione el fragmento.
+1. Seleccione **Desproteger** en la barra de herramientas.
+1. Confirme la acción **Desproteger**.
+
+   * Un icono de candado en la columna **Título** indica que el fragmento está bloqueado y que usted solo puede editarlo.
+   * Si otro usuario abre el fragmento para editarlo, verá un mensaje que indica que está en modo de solo lectura.
+
+### Proteger un fragmento de contenido {#check-in-a-content-fragment}
+
+Para proteger un fragmento:
+
+1. En la consola **Fragmentos de contenido** vaya a la ubicación del fragmento de contenido.
+1. Seleccione el fragmento.
+1. Seleccione **Proteger** en la barra de herramientas.
+1. Confirme la acción **Proteger**.
+
+## Registro forzado (administrador) {#forced-adminstrator-check-in}
+
+Puede ocurrir que el usuario que ha desprotegido un fragmento de contenido no esté disponible para proteger el fragmento.
+
+En estas situaciones, un administrador puede realizar la operación **Registrar**.
+
+>[!NOTE]
+>
+>Consulte también Assets [Registro forzado](/help/assets/check-out-and-submit-assets.md#forced-check-in).
 
 ## Eliminación de un fragmento {#deleting-a-fragment}
 

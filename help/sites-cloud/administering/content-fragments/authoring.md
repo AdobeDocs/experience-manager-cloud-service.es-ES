@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2807f3e0890bc291d4005b70c303659f7a3f643e
 workflow-type: tm+mt
-source-wordcount: '2799'
-ht-degree: 7%
+source-wordcount: '2839'
+ht-degree: 6%
 
 ---
 
@@ -58,6 +58,7 @@ Cuando abra el Editor de fragmentos de contenido por primera vez, verá cuatro �
      >[!WARNING]
      >
      >El editor original se abre en la misma pestaña. No se recomienda tener ambos editores abiertos al mismo tiempo.
+   * Cualquier advertencia válida para el fragmento y la cuenta. Por ejemplo, si no tiene los privilegios correctos para editar el fragmento o si otro usuario ha [retirado](/help/sites-cloud/administering/content-fragments/managing.md#check-out-and-check-in) los fragmentos, solo tendrá acceso de lectura.
 
 * panel izquierdo: muestra las **[Variaciones](#variations)** para el fragmento de contenido y sus **Campos**:
    * estos vínculos se pueden usar para [navegar por la estructura del fragmento de contenido](#navigate-structure)
@@ -272,7 +273,7 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 
