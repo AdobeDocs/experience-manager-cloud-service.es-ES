@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
+source-git-commit: bafb253be9b3834e1b77047dab52928ba84752a6
 workflow-type: tm+mt
 source-wordcount: '3342'
 ht-degree: 32%
@@ -533,7 +533,7 @@ Para proteger un fragmento:
 1. Seleccione **Proteger** en la barra de herramientas.
 1. Confirme la acción **Proteger**.
 
-## Registro forzado (administrador) {#forced-adminstrator-check-in}
+### Registro forzado (administrador) {#forced-adminstrator-check-in}
 
 Puede ocurrir que el usuario que ha desprotegido un fragmento de contenido no esté disponible para proteger el fragmento.
 
