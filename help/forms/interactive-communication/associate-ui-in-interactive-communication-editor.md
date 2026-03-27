@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '639'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,7 @@ Responsable de la configuración del sistema, la gobernanza, las integraciones b
 
 ### &#x200B;2. Autor
 
-Diseña y administra la comunicación interactiva mediante la IU asociada. ß
+Diseña y administra la comunicación interactiva y la configura para la interfaz de usuario asociada (incluida la activación de la vista asociada y el flujo de trabajo opcional).
 
 | Responsabilidad | Concentrar |
 |---------------|-------|
@@ -78,7 +78,7 @@ Utiliza la interfaz de usuario asociada para ayudar a los clientes, actualizar l
 
 >[!NOTE]
 >
-> La asociación debe formar parte del grupo **forms-associates**.
+> Asociados debe formar parte del grupo **forms-associates**. Para los autores que también envíen contenido desde la IU asociada en la instancia de autor, agréguelos también a **workflow-users**.
 
 ## Casos de uso dinámicos
 
@@ -92,36 +92,22 @@ La interfaz de usuario asociada admite la generación instantánea y personaliza
 | **Sector Público** | Generar informes de verificación policial, recibos de servicio ciudadano, cartas de confirmación de quejas y resúmenes de actualización de casos in situ. |
 | **Gobierno** | Cree resúmenes del estado de la solicitud, cartas de aprobación del servicio y comunicación en tiempo real para las inscripciones en planes de bienestar. |
 
-## Activación del flujo de trabajo Asociar IU
+## Activación de la IU asociada
 
-El autor puede seguir los pasos a continuación para configurar y publicar una comunicación interactiva (CI) para el acceso a la IU asociada:
+Los autores habilitan la interfaz de usuario asociada y, opcionalmente, configuran un flujo de trabajo para los envíos en **Configuración de la comunicación interactiva**:
 
->[!NOTE]
->
-> Componentes admitidos para asociados: Campo de fecha, campo numérico, campo de texto, DateTimeField, DateField, casilla de verificación, botón de opción, desplegable.
+1. **Habilitar vista asociada** — En **Propiedades asociadas**, marque **Habilitar edición de vista asociada**, luego haga clic en **Aplicar cambios** y guarde el documento.
+2. **Configurar flujo de trabajo (opcional)**: en **Flujo de trabajo**, active **Configurar flujo de trabajo para actualización**, seleccione un modelo de flujo de trabajo y, opcionalmente, establezca un mensaje de éxito y una URL de redirección.
+3. **Configurar campos editables**: habilite los campos que los asociados pueden editar y establecer validaciones.
+4. **Publicar y compartir**: publique la CI y comparta el vínculo con los asociados.
 
-### Creación de la CI
-
-Diseñe y configure la comunicación interactiva, asegurándose de que la marca, los enlaces de datos, las reglas de conformidad y las integraciones estén correctamente configuradas.
-
-### Habilitar la interfaz de usuario asociada
-
-En la barra de acciones superior, habilite la opción Asociar interfaz de usuario para que la CI esté disponible para las actividades dirigidas por asociados.
-
-### Habilitar la interfaz de usuario asociada en el componente
-
-### Configurar campos editables
-
-En la sección de campos obligatorios, habilite los campos que los asociados pueden editar.
-Configure validaciones para garantizar una entrada de datos precisa y controlada.
-
-### Publicación de la CI
-
-Después de finalizar todas las configuraciones, publique la comunicación interactiva para obtener acceso seguro.
-
-### Compartir la CI publicada con los asociados
-
-Proporcione el vínculo de CI publicado al asociado, lo que le permite autenticarse, introducir información específica del cliente y generar la comunicación final con entradas válidas.
+Para obtener instrucciones paso a paso con capturas de pantalla y el comportamiento del envío/flujo de trabajo (Autor en Autor vs Asociar en Publicación), consulte [Habilitar y configurar la IU asociada para comunicaciones interactivas](/help/forms/interactive-communication/enable-configure-associate-ui.md). Para generar un flujo de trabajo que genere PDF a partir de los envíos de CI, consulte [Flujo de trabajo de envío para la interfaz de usuario asociada — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md).
 
 La **interfaz de usuario asociada** reduce la brecha entre la creación de contenido estructurado y la participación de clientes en tiempo real.\
 Combinando un diseño intuitivo, una configuración back-end sólida y estrictos controles de cumplimiento, las organizaciones pueden ofrecer **comunicaciones rápidas, precisas y personalizadas** a escala.
+
+## Consulte también
+
+- [Habilitar y configurar la interfaz de usuario asociada para comunicaciones interactivas](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [Integración de la interfaz de usuario asociada en la aplicación](/help/forms/interactive-communication/invoke-associate-ui.md)
+- [Flujo de trabajo de envío para la IU asociada: IC Generar salida de PDF](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
