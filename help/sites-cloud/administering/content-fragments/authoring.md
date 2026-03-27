@@ -273,7 +273,7 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 
