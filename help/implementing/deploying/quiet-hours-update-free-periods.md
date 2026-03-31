@@ -4,9 +4,9 @@ description: Aprenda a minimizar el impacto operativo de las actualizaciones aut
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
+source-git-commit: 2306be3f92a98560afa51fd67f83caa77c6f575c
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >[!NOTE]
 >Solo puedes usar las funciones Horas tranquilas y Actualizar periodos gratis una vez que te hayas incorporado a [Actualizaciones automáticas de mantenimiento](/help/implementing/deploying/aem-version-updates.md).
 
-Las [actualizaciones automáticas de mantenimiento](/help/implementing/deploying/aem-version-updates.md) de AEM as a Cloud Service garantizan que las instancias estén seguras y actualizadas con las últimas versiones de mantenimiento. Dicho esto, en algunos casos (como los eventos de go-live) es posible que tenga que &quot;proteger&quot; esas horas de trabajo críticas de cualquier interrupción potencial. Como tal, AEM as a Cloud Service ofrece la opción de establecer un intervalo de tiempo en el que no se produzcan actualizaciones automáticas para los programas en curso.
+Las [actualizaciones automáticas de mantenimiento](/help/implementing/deploying/aem-version-updates.md) de AEM as a Cloud Service garantizan que las instancias estén seguras y actualizadas con las últimas versiones de mantenimiento. Dicho esto, en algunos casos (como los eventos de go-live) es posible que tenga que &quot;proteger&quot; esas horas de trabajo críticas de cualquier interrupción potencial. AEM as a Cloud Service ofrece opciones para seleccionar periodos de tiempo que pausan las actualizaciones de mantenimiento automáticas en sus programas. Esto no impide toda la actividad de la infraestructura, ya que pueden producirse cambios de plataforma de nivel inferior fuera de las actualizaciones de mantenimiento (por ejemplo, IMS).
 
 Puede configurar estos lapsos de tiempo mediante dos opciones de programación:
 
