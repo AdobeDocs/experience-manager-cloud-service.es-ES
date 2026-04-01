@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0c2d61f05d8a6adea1116406b18aa1245ff701d1
+source-git-commit: 9820b642af32960c532b238e00267cb4d880535f
 workflow-type: tm+mt
-source-wordcount: '2156'
-ht-degree: 28%
+source-wordcount: '2180'
+ht-degree: 29%
 
 ---
 
@@ -34,13 +34,11 @@ La fecha de la versión de [!DNL Adobe Experience Manager] como versión de func
 
 Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help/release-notes/maintenance/latest.md).
 
-<!--  ## Release Video {#release-video}
+&lt;## Vídeo de la versión {#release-video}
 
-Have a look at the March 2026 Release Overview video for a summary of the features added in the 2026.3.0 release:
+Eche un vistazo al vídeo de información general sobre la versión de marzo de 2026 para ver un resumen de las funciones añadidas en la versión 2026.3.0.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480402/?captions=spa&quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 
 ## Programas de AEM Beta {#aem-beta-programs}
 
@@ -150,7 +148,7 @@ Próximamente: compatibilidad del Asesor de contenido con las aplicaciones B2C d
 Los componentes desplegables de selección múltiple de Adaptive Forms ahora representan las etiquetas de visualización seleccionadas en la [PDF de envío generada](/help/forms/generate-document-of-record-core-components.md), lo que garantiza que el documento refleje con precisión lo que los usuarios ven en el formulario.
 
 **Accesibilidad mejorada para los componentes de casilla de verificación, botón de opción y panel**
-Los componentes principales de Forms adaptables presentan un marcado semántico compatible con WCAG 2.2 para [grupos de casillas de verificación (v2)](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [grupos de botones de opción (v2)](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) y [componente Panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Estos componentes aprovechan `<fieldset>` y `<legend>` elementos de HTML para establecer relaciones significativas entre las etiquetas de grupo y sus opciones, lo que permite una interpretación precisa por parte de los lectores de pantalla y otras tecnologías de asistencia.
+Los componentes principales de Forms adaptables presentan un marcado semántico compatible con WCAG 2.2 para [grupos de casillas de verificación (v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [grupos de botones de opción (v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) y [componente Panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Estos componentes aprovechan `<fieldset>` y `<legend>` elementos de HTML para establecer relaciones significativas entre las etiquetas de grupo y sus opciones, lo que permite una interpretación precisa por parte de los lectores de pantalla y otras tecnologías de asistencia.
 
 **Compatibilidad con versiones en Forms Manager**
 Forms Manager ahora [admite el control de versiones para Forms adaptable (componentes principales y componentes de base)](/help/forms/manage-form-versions-forms-manager.md), fragmentos de formulario, temáticas, plantillas XDP y recursos binarios. Cree versiones, vea el historial de versiones completo y restaure estados anteriores de los recursos de formulario directamente desde la consola Forms y documentos.
@@ -165,7 +163,7 @@ Forms Manager ahora [admite el control de versiones para Forms adaptable (compon
 
 #### Servidor MCP de Cloud Manager {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480345/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 Los IDE modernos utilizan el Protocolo de contexto de modelo (MCP) para permitir que los modelos de lenguaje de gran tamaño (LLM) invoquen las herramientas expuestas por los servidores MCP. En lugar de integrarse directamente con especificaciones de API de bajo nivel, los desarrolladores pueden simplemente describir su intención en lenguaje natural.
 
