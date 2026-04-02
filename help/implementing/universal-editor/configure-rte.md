@@ -4,9 +4,9 @@ description: Descubra cómo puede configurar el editor de texto enriquecido (RTE
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Este RTE se puede configurar usando [filtros de componente.](/help/implementing/
 
 >[!NOTE]
 >
->Al iniciar un proyecto de editor universal, todas las funciones de texto enriquecido compatibles con el back-end (AEM con Edge Delivery o implementación sin encabezado) se activan automáticamente.
+>Al iniciar un proyecto de editor universal, todas las características de texto enriquecido compatibles con el servidor (AEM con Edge Delivery o implementación sin encabezado) se activan automáticamente y están disponibles en [la ventana del editor modal de RTE.](/help/sites-cloud/authoring/universal-editor/authoring.md#modal-editor)
 >
 >* Puede desactivar las opciones que no necesite.
 >* No se admite la activación de opciones que no son compatibles con el tipo de proyecto.
@@ -77,7 +77,7 @@ La configuración de la barra de herramientas controla qué opciones de edición
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image"],
+    "insert": ["link", "unlink", "image", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -292,6 +292,82 @@ La sangría tiene una configuración de nivel de función que controla el ámbit
 >
 >El anidamiento de listas mediante las teclas Tab/Mayús+Tab funciona independientemente de la configuración general de sangría.
 
+### Caracteres especiales {#special-characters}
+
+La acción de inserción `special_characters` abre una ventana emergente del selector de caracteres para insertar caracteres especiales (símbolos, operadores matemáticos, signos de moneda, puntuación, flechas, etc.) en la posición del cursor.
+
+```json
+{
+  "toolbar": {
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
+    "sections": ["insert"],
+  },
+  "actions": {
+    "special_characters": {
+      "label": "Special Characters"
+    }
+  }
+}
+```
+
+Se incluye de forma predeterminada un conjunto de 44 caracteres utilizados con frecuencia. La lista de caracteres se puede personalizar mediante dos opciones de configuración:
+
+* `appendCharacters` - Agregar caracteres al conjunto predeterminado
+* `characters` - Reemplazar el conjunto predeterminado por completo
+
+Cada entrada de carácter tiene `character` (el carácter Unicode) y `title` (información sobre herramientas / nombre accesible).
+
+#### Anexar caracteres a los valores predeterminados {#append-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" },
+        { "character": "\u2764", "title": "Heavy black heart" },
+      ];
+    }
+  }
+}
+```
+
+#### Reemplazar caracteres especiales predeterminados {#replace-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" },
+        { "character": "\u2122", "title": "Trade mark sign" },
+      ];
+    }
+  }
+}
+```
+
+#### Ambas opciones juntas {#both-special-character-options}
+
+Este ejemplo usa `characters` como base y, a continuación, anexa caracteres adicionales usando `appendCharacters`.
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" }
+      ],
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" }
+      ]
+    }
+  }
+}
+```
+
 ### Pegar como texto {#paste-as-text}
 
 La acción del editor `paste_text` habilita un flujo de trabajo estándar de pegar como texto sin formato.
@@ -364,7 +440,9 @@ A continuación se muestra un ejemplo de una configuración completa.
         ],
         "insert": [
           "link",
-          "unlink"
+          "unlink",
+          "image",
+          "special_characters"
         ],
         "sections": [
           "format",
@@ -401,6 +479,17 @@ A continuación se muestra un ejemplo de una configuración completa.
         },
         "unlink": {
           "label": "Remove Link"
+        },
+        // Image actions with picture wrapping
+        "image": {
+          "wrapInPicture": false, // Use <img> tag instead of <picture>
+          "shortcut": "Mod-Shift-I",
+          "label": "Insert Image",
+        },
+        // Special characters with custom additions
+        "special_characters": {
+          "label": "Special Characters",
+          "appendCharacters": [{ "character": "\u2605", "title": "Black star" }],
         },
         // Other actions with basic customization
         "h1": {

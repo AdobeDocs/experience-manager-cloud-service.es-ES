@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2026.03.26 del editor universal
-description: Estas son las notas de la versión 2026.03.26 del editor universal.
+title: Notas de la versión 2026.04.02 del editor universal
+description: Estas son las notas de la versión 2026.04.02 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: abbc43adbe64149098c049810482d37f76034eab
+source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 46%
+source-wordcount: '113'
+ht-degree: 60%
 
 ---
 
 
-# Notas de la versión 2026.03.26 del editor universal {#release-notes}
+# Notas de la versión 2026.04.02 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 26 de marzo de 2026.
+Estas son las notas de la versión del editor universal del 2 de abril de 2026.
 
 >[!TIP]
 >
@@ -26,10 +26,8 @@ Estas son las notas de la versión del editor universal del 26 de marzo de 2026.
 
 ## Novedades {#what-is-new}
 
-* [La configuración de recursos de creación de documentos](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets) ahora se expone a través de un punto de conexión de configuración.
-* [Se ha agregado un punto de extensión](/help/implementing/universal-editor/extending.md#extending-ui) al menú contextual.
-* Se ha añadido un nuevo icono de flujo de trabajo personalizado al sistema DynamicIcon de extensibilidad para mostrar el estado de cancelación profunda/superficial en la interfaz de usuario.
+* [Se ha agregado una opción configurable](/help/implementing/universal-editor/configure-rte.md#special-characters) para [agregar caracteres especiales](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) a la barra de herramientas del editor de texto enriquecido (RTE).
 
 ## Otras mejoras {#other-improvements}
 
-* Se ha corregido un problema con las clases de creación de documentos que no funcionaban con varios campos porque esperaban una cadena.
+* El adaptador OpenAPI ya no devuelve incorrectamente los campos de etiqueta como campos múltiples.
