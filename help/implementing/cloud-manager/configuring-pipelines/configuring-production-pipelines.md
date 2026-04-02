@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 35%
+source-wordcount: '1903'
+ht-degree: 26%
 
 ---
 
@@ -42,7 +42,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
 >
 >Antes de configurar una canalización front-end, consulte el [Recorrido de creación rápida de sitios de AEM](/help/journey-sites/quick-site/overview.md) para obtener una guía completa a través de la herramienta de creación rápida de sitios de AEM fácil de usar. Este recorrido puede ayudarle a optimizar el desarrollo front-end de su sitio de AEM, lo que le permite personalizar su sitio rápidamente sin conocimiento del back-end de AEM.
 
-1. Inicie sesión en Cloud Manager en [experiece.adobe.com](https://experience.adobe.com).
+1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
 1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
 1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
 1. Seleccione la organización que desee.
@@ -71,14 +71,14 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
 
 1. En la ficha **Código Source**, seleccione qué tipo de código debe procesar la canalización.
 
-   * **[Configurar una canalización de código de pila completa](#full-stack-code)**
+   * **[Estoy usando código de pila completa](#full-stack-code)**
    * **[Configurar una canalización de implementación de destino](#targeted-deployment)**
 
 Consulte [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener más información sobre los tipos de canalizaciones.
 
 Los pasos para completar la creación de la canalización de producción varían según el tipo de código fuente seleccionado. Siga los vínculos anteriores para ir a la siguiente sección de este documento para poder completar la configuración de la canalización.
 
-### Configuración de una canalización de código de pila completa {#full-stack-code}
+### Estoy utilizando un código de pila completa {#full-stack-code}
 
 Una canalización de código de pila completa implementa simultáneamente generaciones de código back-end y front-end que contienen una o más aplicaciones de servidor de AEM junto con la configuración HTTPD/Dispatcher.
 
@@ -96,8 +96,14 @@ Una canalización de código de pila completa implementa simultáneamente genera
    > 
    >Consulte [Agregar y administrar repositorios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
 
-   * **Rama de Git**: define desde qué rama la canalización seleccionada debe recuperar el código.
-Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
+   * **Rama de Git**: en la lista desplegable, elija desde qué rama del repositorio seleccionado se debe generar la canalización. El valor predeterminado es `main`. La canalización utiliza la rama elegida como origen para la compilación y la implementación. Si es necesario, haga clic en **Actualizar** para actualizar la lista de ramas disponibles para el repositorio seleccionado. Utilice esta opción si una rama creada recientemente no aparece en la lista.
+   * **Estrategia de compilación**
+      * **Compilación completa**: genera todos los módulos del repositorio cada vez
+      * BETA **Smart Build**: genera solo módulos que han cambiado desde la última confirmación.<br>Obtenga más información acerca de [cómo usar Smart Build en una canalización que no es de producción](#about-smart-build-non-production-pipeline).
+
+        >[!IMPORTANT]
+        >
+        >La generación inteligente solo está disponible para canalizaciones de calidad de código y canalizaciones de implementación de código de pila completa de desarrollo.
    * **Ignorar configuración de nivel web**: cuando se selecciona, la canalización no implementa la configuración del nivel web.
    * **Pausar antes de implementar en producción**: pausa la canalización antes de implementarla en producción.
    * **Programado**: permite al usuario habilitar la implementación de producción programada.
@@ -118,7 +124,7 @@ Cuando se ejecuta la canalización, las rutas configuradas para la auditoría de
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
-### Configuración de una canalización de implementación de destino {#targeted-deployment}
+### Estoy utilizando la implementación dirigida {#targeted-deployment}
 
 Una implementación de destino implementa código solo para partes seleccionadas de la aplicación de AEM. En una implementación de este tipo, puede elegir **Incluir** uno de los siguientes tipos de código:
 
@@ -168,6 +174,80 @@ Una implementación de destino implementa código solo para partes seleccionadas
 1. Haga clic en **Guardar**.
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
+
+## BETA: Acerca del uso de Smart Build en una canalización de producción{#about-smart-build-production-pipeline}
+
+**Smart Build** en Cloud Manager es una estrategia de compilación optimizada para canalizaciones de producción. La versión inteligente reduce los tiempos de compilación al almacenar en caché los módulos y reconstruir solo los módulos que han cambiado desde la última ejecución correcta. Los módulos no modificados se reutilizan desde la caché, mientras que solo se reconstruyen los módulos modificados y sus dependencias, lo que mejora la eficacia de los flujos de trabajo de desarrollo iterativos.
+
+>[!NOTE]
+>
+>¿Te interesa esta versión beta? Envíe un correo electrónico a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) con su identificador de organización de Adobe y el identificador de programa.
+
+>[!IMPORTANT]
+>
+>La primera ejecución después de habilitar Smart Build se comporta como una compilación completa porque la caché está vacía.
+
+Se recomienda Smart Build cuando se dispone de lo siguiente:
+
+* Está desarrollando y comprometiendo activamente cambios incrementales frecuentes.
+* El proyecto contiene varios módulos Maven.
+* Las compilaciones completas están tardando un tiempo considerable.
+
+Smart Build no siempre es ideal cuando se tiene lo siguiente:
+
+* Su compilación se basa en gran medida en complementos que realizan operaciones fuera del gráfico de dependencias de Maven.
+* Se requiere una validación de regeneración completa en cada ejecución.
+
+### Comprender el rendimiento de compilación{#smart-build-performance}
+
+La mejora del rendimiento obtenida mediante el uso de Smart Build depende de varios factores, entre los que se incluyen los siguientes:
+
+* Número de módulos del proyecto.
+* La frecuencia y el ámbito del código cambian.
+* La distribución de dependencias entre módulos.
+
+Generalmente, los proyectos con muchos módulos independientes pueden ver la mayor mejora.
+
+### Exclusión de caché por módulo{#smart-build-cache-optout}
+
+Smart Build proporciona un control detallado que le permite deshabilitar el almacenamiento en caché para módulos específicos. Esta capacidad es útil cuando se utilizan ciertos módulos:
+
+* Use complementos, como `exec-maven-plugin` o `maven-antrun-plugin`.
+* Realizar operaciones de archivo no rastreadas por dependencias de Maven.
+* El contenido almacenado en caché produce resultados incoherentes.
+
+### Deshabilitar el almacenamiento en caché de un módulo{#smart-build-disable-caching}
+
+Puede agregar la siguiente propiedad al `pom.xml` del módulo afectado:
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+Esta sintaxis fuerza al módulo a reconstruir en cada ejecución de canalización, mientras que otros módulos siguen beneficiándose del almacenamiento en caché.
+
+### Limitaciones y consideraciones al utilizar Smart Build{#smart-build-limitations}
+
+Tenga en cuenta lo siguiente al utilizar Smart Build:
+
+* La generación inteligente se basa en el análisis de dependencias de Maven.
+* Los cambios fuera del gráfico de dependencias no pueden almacenar en déclencheur las regeneraciones.
+* Es posible que algunos complementos no sean totalmente compatibles con el almacenamiento en caché.
+* Puede volver a **Compilación completa** en cualquier momento editando la canalización de producción.
+
+Si encuentra un comportamiento de compilación inesperado, considere la posibilidad de deshabilitar el almacenamiento en caché para módulos específicos o cambiar temporalmente su estrategia de compilación a **Compilación completa**.
+
+### Solución de problemas de Smart Build{#smart-build-troubleshoot}
+
+| Problema | Soluciones sugeridas |
+| --- | --- |
+| Los resultados de la compilación son incoherentes | · Deshabilite el almacenamiento en caché para los módulos afectados.<br>· Compruebe el comportamiento de los complementos (especialmente los complementos `exec`/`antrun`). |
+| Sin mejora de rendimiento | · Asegúrese de que se han producido varias ejecuciones (calentamiento de la caché).<br>· Compruebe si la mayoría de los módulos cambian con frecuencia. |
+| Artefactos inesperados o cambios que faltan | · Revise si los cambios están fuera del seguimiento de dependencias de Maven.<br>· Use **Compilación completa** para la verificación. |
+
+Consulte [Agregar una canalización de producción](#adding-production-pipeline) para habilitar Smart Build.
 
 ## Omitir paquetes de Dispatcher {#skip-dispatcher-packages}
 

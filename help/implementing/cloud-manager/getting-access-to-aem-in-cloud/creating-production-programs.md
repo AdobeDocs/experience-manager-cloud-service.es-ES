@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2567e58c599a27778aa86c94b13ceb80facd681d
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 11%
+source-wordcount: '1510'
+ht-degree: 9%
 
 ---
 
@@ -46,36 +46,56 @@ Ver [opciones adicionales del programa de producción](#options).
 
 1. Haga clic en **Continuar**.
 
+1. En la ficha **Seguridad**, seleccione las opciones de seguridad que desee utilizar. Consulte [Seguridad](#security).
+
+   ![Pestaña Seguridad en Configuración para el asistente de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
+
+1. Haga clic en **Continuar**.
+
 1. En el cuadro de lista **Soluciones y complementos**, seleccione una o varias soluciones para incluirlas en el programa.
 
    * Si tiene dudas sobre si necesita uno o más programas para las distintas soluciones disponibles, seleccione la que le interese. Si desea activar soluciones adicionales, [puede editar el programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) más tarde. Consulte el [Documento de introducción a los programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para conocer más recomendaciones sobre la configuración del programa.
-   * Es necesario seleccionar al menos una solución para la creación del programa. Por ejemplo, puede elegir **Edge Delivery Services** para una solución de CDN completamente administrada que optimice las experiencias digitales. Ver [Acerca del uso de Edge Delivery Services para entregar el proyecto Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+   * Es necesario seleccionar al menos una solución para la creación del programa. Por ejemplo, puede elegir **Edge Delivery Services** para una solución de CDN completamente administrada que optimice las experiencias digitales. Ver [Acerca del uso de Edge Delivery Services para entregar el proyecto Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
 
-   ![Seleccionar soluciones](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
+   * Haga clic en ![Icono de tamaño 300 de cheurón](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) a la izquierda del nombre de una solución para mostrar los complementos opcionales. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
+<!--   ![Select add-ons](assets/setup-prod-commerce.png) -->
 
+    >[!NOTE]
+    >
+    >Si su programa utiliza Edge Delivery Services para la entrega, es posible que no se requiera un nivel de publicación. Con la función flexible de nivel de publicación (Beta), puede configurar si desea aprovisionar un nivel de publicación en la pestaña Soluciones y complementos. Consulte [Nivel de publicación flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).¡
+    
+    ![Seleccionar soluciones](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-solutions.png)
+
+1. Haga clic en **Continuar**.
+
+1. En la pestaña **Delivery type**, tenga en cuenta que está rellenado previamente en función de las soluciones y complementos elegidos en el paso anterior. Si selecciona **Publicación de AEM**, puede aprovisionarla más adelante bajo demanda.
+
+   ![Ficha Tipo de entrega](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
 
 
    <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
 
+1. Haga clic en **Continuar**.
 
+1. Si tiene los derechos necesarios, la ficha **SLA** se muestra como la segunda o tercera ficha en el cuadro de diálogo **`Set up for production`**. Ver [SLA](#sla).
 
-   * Haga clic en ![Icono de tamaño 300 de cheurón](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) a la izquierda del nombre de una solución para mostrar los complementos opcionales. <!-- such as the **Commerce** add-on option under **Sites**. -->
+   ![Opciones de SLA](assets/create-production-program-sla.png)
 
-   ![Seleccionar complementos](assets/setup-prod-commerce.png)
+   Sites y Forms ofrecen un 99,9 % de service level agreement estándar (SLA).
 
-1. Cuando termine de seleccionar las soluciones y los complementos, haga clic en **Continuar**.
+1. Haga clic en **Continuar**.
 
 1. En la ficha **Fecha de lanzamiento**, escriba la fecha en la que planea que su programa de producción se ponga en marcha.
 
-   ![Definir la fecha de lanzamiento planeada](assets/set-up-go-live.png)
+   ![Definir la fecha de lanzamiento planeada](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-go-live-date.png)
 
    * Puede editar esta fecha en cualquier momento.
    * La fecha tiene fines informativos y déclencheur para el widget Go Live en la [**página Información general del programa**](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview). Esta funcionalidad proporciona vínculos oportunos dentro del producto a las prácticas recomendadas de AEM as a Cloud Service para permitir una experiencia Go Live sin problemas.
 
 1. Haga clic en **Crear**. Cloud Manager crea el programa y lo muestra en la página de aterrizaje para su selección.
 
-   ![Información general de Cloud Manager](assets/navigate-cm.png)
+   ![Información general de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-my-programs.png)
 
 ## Opciones adicionales del programa de producción {#options}
 
@@ -85,18 +105,57 @@ Según los derechos disponibles para su organización, puede tener las siguiente
 
 Si tiene los derechos necesarios, la ficha **Security** se muestra como la primera ficha del cuadro de diálogo **`Set up for production`**.
 
-![Opciones de seguridad](assets/create-production-program-security.png)
+![Opciones de seguridad](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
 
 La pestaña **Security** proporciona las opciones para activar **HIPAA**, **Protección WAF-DDOS** o ambas para tu programa de producción.
 
 Compatible con HIPAA de Adobe y WAF-DDOS (cortafuegos de aplicaciones web - denegación de servicio distribuida) facilita la seguridad basada en la nube como parte de un enfoque de varios niveles para la protección contra vulnerabilidades.
 
 * **HIPAA**: esta opción habilita la implementación de la solución compatible con HIPAA de Adobe.
-   * [Más información](https://www.adobe.com/trust/compliance/hipaa-ready.html) acerca de la implementación de la solución compatible con HIPAA de Adobe.
+   * [Más información](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) acerca de la implementación de la solución compatible con HIPAA de Adobe.
    * HIPAA no se puede habilitar o deshabilitar después de la creación del programa.
 * **Protección WAF-DDOS**: esta opción habilita el firewall de aplicaciones web mediante reglas para proteger la aplicación.
    * Una vez activada, la protección WAF-DDOS se puede configurar configurando una [canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
    * Consulte [Reglas de filtro de tráfico, incluidas las reglas de WAF](/help/security/traffic-filter-rules-including-waf.md), para obtener información sobre cómo administrar las reglas de filtro de tráfico en el repositorio a fin de que se implementen correctamente.
+
+### Nivel de publicación flexible (Beta) {#flexible-publish-tier}
+
+>[!NOTE]
+>
+>El nivel de publicación flexible descrito aquí se encuentra en Beta. Para unirte a Beta, envía un correo electrónico a [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) con tu ID de organización de Adobe y tu ID de programa.
+
+Si su organización tiene habilitada la función de nivel de publicación flexible, puede configurar si se requiere un nivel de publicación para los entornos del programa. Esta opción aparece en la ficha **Tipo de entrega** del cuadro de diálogo **Configurar para producción** (durante la [creación del programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)).
+
+![Ficha Delivery type en el asistente de configuración para producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
+
+También aparece en el cuadro de diálogo **Editar programa** (cuando [edita un programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)).
+
+![Editar un cuadro de diálogo de programa con las opciones de Tipo de entrega que se muestran](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-delivery-type.png)
+
+No todas las arquitecturas requieren un nivel de publicación. La siguiente tabla muestra qué arquitecturas requieren un nivel de publicación y cuáles no:
+
+| Arquitectura | Publicar nivel |
+| --- | --- |
+| AEM Sites tradicional | Necesario |
+| Sin encabezado/API-First | Necesario |
+| Edge Delivery Services | No es necesario |
+
+Al habilitar el nivel de publicación solo cuando es necesario, los equipos pueden hacer lo siguiente:
+
+* Aprovisionar entornos más rápido.
+* Simplificar la infraestructura.
+* Reduzca los componentes innecesarios.
+
+**Cómo funciona**
+Cuando la función de nivel de publicación flexible está habilitada para su organización:
+
+* De manera predeterminada, todos los entornos nuevos del programa están aprovisionados con el nivel **Author solamente**. Un mensaje informativo que se muestra en la interfaz de usuario confirma este comportamiento.
+* Si el usuario selecciona **AEM Publish** durante la creación de un programa, el nivel de publicación se activa y se aprovisiona con *nuevos entornos*.
+* El nivel de publicación también se puede activar más adelante editando el programa. Consulte [Editar programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+
+>[!NOTE]
+>
+>Si su programa utiliza Edge Delivery Services para la entrega de contenido y AEM Author para la creación de contenido, no se requiere un nivel de publicación. El contenido se entrega a través de Edge Delivery y no pasa por el nivel de publicación de AEM. Consulte Acerca de Edge Delivery Services con la creación de AEM (Beta).
 
 ### SLA {#sla}
 

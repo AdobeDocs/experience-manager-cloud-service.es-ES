@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 8391980183b8c5a91046e01474200b9eaf8e0546
+source-git-commit: 7663af90b17e4b9d9567041c3bed8e20465c87d9
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 20%
@@ -92,7 +92,7 @@ Para finalizar la configuración de la canalización de no producción de códig
    * **Rama de Git**: en la lista desplegable, elija desde qué rama del repositorio seleccionado se debe generar la canalización. El valor predeterminado es `main`. La canalización utiliza la rama elegida como origen para la compilación y la implementación. Si es necesario, haga clic en **Actualizar** para actualizar la lista de ramas disponibles para el repositorio seleccionado. Utilice esta opción si una rama creada recientemente no aparece en la lista.
    * **Estrategia de compilación**
       * **Compilación completa**: genera todos los módulos del repositorio cada vez
-      * BETA **Smart Build**: genera solo módulos que han cambiado desde la última confirmación.<br>Obtenga más información acerca de [cómo usar Smart Build en una canalización que no es de producción](#about-smart-build).
+      * BETA **Smart Build**: genera solo módulos que han cambiado desde la última confirmación.<br>Obtenga más información acerca de [cómo usar Smart Build en una canalización que no es de producción](#about-smart-build-non-production-pipeline).
 
         >[!IMPORTANT]
         >
@@ -180,7 +180,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
 
-## Acerca del uso de Smart Build en una canalización que no es de producción{#about-smart-build}
+## Acerca del uso de Smart Build en una canalización que no es de producción{#about-smart-build-non-production-pipeline}
 
 **Smart Build** en Cloud Manager es una estrategia de compilación optimizada para canalizaciones que no son de producción. La versión inteligente reduce los tiempos de compilación al almacenar en caché los módulos y reconstruir solo los módulos que han cambiado desde la última ejecución correcta. Los módulos no modificados se reutilizan desde la caché, mientras que solo se reconstruyen los módulos modificados y sus dependencias, lo que mejora la eficacia de los flujos de trabajo de desarrollo iterativos.
 
@@ -194,11 +194,13 @@ Actualmente, Smart Build solo está disponible para lo siguiente:
 >La primera ejecución después de habilitar Smart Build se comporta como una compilación completa porque la caché está vacía.
 
 Se recomienda Smart Build cuando se dispone de lo siguiente:
+
 * Está desarrollando y comprometiendo activamente cambios incrementales frecuentes.
 * El proyecto contiene varios módulos Maven.
 * Las compilaciones completas están tardando un tiempo considerable.
 
 Smart Build no siempre es ideal cuando se tiene lo siguiente:
+
 * Su compilación se basa en gran medida en complementos que realizan operaciones fuera del gráfico de dependencias de Maven.
 * Se requiere una validación de regeneración completa en cada ejecución.
 
