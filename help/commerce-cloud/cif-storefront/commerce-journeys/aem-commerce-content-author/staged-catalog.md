@@ -68,7 +68,7 @@ Ahora que ha completado esta parte del recorrido, debe:
 * comprender los conceptos de catálogo de productos clasificados y contenido con lanzamientos
 * poder acceder a los datos del catálogo de productos clasificados mediante la cabina de productos y el editor
 
-Ya está listo para administrar las experiencias de [ producto.](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md) Sin embargo, AEM Content y Commerce tienen muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la sección [Recursos adicionales](#additional-resources) para obtener más información acerca de las funciones que ha visto en este recorrido.
+Ya está listo para administrar las experiencias de [&#x200B; producto.](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md) Sin embargo, AEM Content y Commerce tienen muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la sección [Recursos adicionales](#additional-resources) para obtener más información acerca de las funciones que ha visto en este recorrido.
 
 ## Recursos adicionales {#additional-resources}
 
