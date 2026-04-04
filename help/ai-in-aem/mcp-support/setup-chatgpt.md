@@ -2,8 +2,9 @@
 title: Configuración de OpenAI ChatGPT con AEM MCP
 description: Aprenda a configurar OpenAI ChatGPT para conectarse a servidores MCP de AEM
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 8b77b992171623dcf7b065079d72992a5da3a01d
+role: User, Admin, Developer
+exl-id: 1f116225-168b-483c-9df6-c752a573b57b
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%

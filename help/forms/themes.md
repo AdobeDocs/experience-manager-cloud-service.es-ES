@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5564'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
-Puede crear y aplicar temáticas para diseñar un formulario adaptable<!-- or an interactive communication-->. Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes. La temática se administra de forma independiente sin hacer referencia a un formulario adaptable<!-- or interactive communication -->.
+Puede crear y aplicar temáticas para diseñar un formulario adaptable<!-- or an interactive communication-->. Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes. La temática se administra de forma independiente sin hacer referencia a un formulario adaptable.
 
 Puede descargar e instalar el paquete de contenido de referencia de [!DNL AEM Forms] en el portal [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html) para importar temáticas de referencia y plantillas para su entorno.
 
@@ -166,7 +166,8 @@ Lista de metapropiedades de una temática (que se encuentran en la página de pr
    <td>Sí</td>
    <td>Etiqueta de identificación adjunta a la temática que se utiliza para mejorar la búsqueda.</td>
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>11.</td>
    <td>References</td>
    <td>Links</td>
@@ -199,19 +200,21 @@ Lista de metapropiedades de una temática (que se encuentran en la página de pr
      <li>Default value - computed using theme location.</li>
      <li>When this value is changed, the category name is updated on the corresponding clientlib node. Updating Clientlib Category Name in the jsp files is not required because clientlib category name is used by reference.</li>
     </ul> </td>
-  </tr> -->
+  </tr>
+  -->
  </tbody>
 </table>
 
 ## Acerca del editor de temáticas {#about-the-theme-editor}
 
-El editor de temáticas es una interfaz fácil de usar para el usuario empresarial y el diseñador/desarrollador web que proporciona las funcionalidades necesarias para especificar el estilo de varios elementos de formularios adaptables <!-- and interactive communication --> de forma sencilla. Cuando se crea una temática, se almacena como una entidad independiente, como formularios <!--  , interactive communications, letters, document fragments, and data dictionaries-->.
+El editor de temáticas es una interfaz fácil de usar para el usuario empresarial y el diseñador/desarrollador web que proporciona las funcionalidades necesarias para especificar el estilo de varios elementos de formularios adaptables <!-- and interactive communication --> de forma sencilla. Al crear una temática, se almacena como una entidad independiente, como formularios.
+<!--  , interactive communications, letters, document fragments, and data dictionaries -->
 
 El editor de temáticas permite personalizar estilos de los componentes diseñados en una temática. Puede personalizar el modo en que se muestra un formulario <!-- or interactive communication --> en un dispositivo.
 
 El editor de temáticas se divide en dos paneles:
 
-* **Lienzo** - Aparece en el lado derecho. Muestra un formulario adaptable de ejemplo <!--  or interactive communication --> en el que todos los cambios de estilo se reflejan instantáneamente. También puede seleccionar objetos directamente del lienzo para buscar los estilos asociados a ellos y editarlos. Una regla de resolución de dispositivo en la parte superior gobierna el lienzo. Al seleccionar un punto de interrupción de resolución en la regla, se muestra la vista previa del formulario de ejemplo <!--  or interactive communication --> para la resolución correspondiente. El lienzo se analiza en detalle [a continuación](themes.md#using-canvas).
+* **Lienzo** - Aparece en el lado derecho. Muestra un formulario adaptable de ejemplo <!--  or interactive communication --> en el que todos los cambios de estilo se reflejan instantáneamente. También puede seleccionar objetos directamente del lienzo para buscar los estilos asociados a ellos y editarlos. Una regla de resolución de dispositivo en la parte superior gobierna el lienzo. Al seleccionar un punto de interrupción de resolución en la regla, se muestra la vista previa del formulario de ejemplo para la resolución correspondiente. El lienzo se analiza en detalle [a continuación](themes.md#using-canvas).
 
 * **Barra lateral*** Aparece en el lado izquierdo. Tiene los siguientes elementos:
 
@@ -281,7 +284,9 @@ Utilice los puntos de interrupción del editor de temáticas para definir un est
 
 >[!NOTE]
 >
->La temática se crea primero mediante un formulario<!-- or interactive communication--> y, a continuación, se aplica en diferentes formularios<!-- or interactive communications-->. Los puntos de interrupción utilizados en la creación de la temática pueden ser diferentes al formulario <!-- or interactive communication --> sobre el que se aplica. Las consultas de medios CSS se basan en el formulario <!-- or interactive communication --> que se utiliza en la creación de temáticas y no en el formulario <!-- or interactive communication --> sobre el que se aplican estas.
+>La temática primero se crea mediante un formulario y, a continuación, se aplica en diferentes formularios. Los puntos de interrupción utilizados en la creación de la temática pueden ser diferentes al formulario sobre el que se aplica. Las consultas de medios CSS se basan en el formulario utilizado en la creación de temáticas y no en el formulario sobre el que se aplican estas.
+
+<!-- ADD: or interactive communication above throughout? -->
 
 ### El contexto de las propiedades de estilo cambia en la barra lateral al seleccionar objetos {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -349,7 +354,7 @@ Personalización del estilo del estado de éxito del componente Widget de cuadro
 
 ### Uso del lienzo {#using-canvas}
 
-La temática se crea mediante el formulario predeterminado o con un formulario <!-- or interactive communication --> de su elección. El lienzo muestra la vista previa del formulario o <!-- interactive communication --> se utiliza para crear la temática con las personalizaciones especificadas en la misma. La regla situada encima del formulario se utiliza para determinar la presentación en función del tamaño de visualización del dispositivo.
+La temática se crea mediante el formulario predeterminado o con un formulario <!-- or interactive communication --> de su elección. El lienzo muestra la vista previa del formulario o se utiliza para crear la temática con las personalizaciones especificadas en la misma. La regla situada encima del formulario se utiliza para determinar la presentación en función del tamaño de visualización del dispositivo.
 
 En la barra de herramientas Lienzo, verá:
 
@@ -487,7 +492,7 @@ Un punto de interrupción representa un dispositivo móvil y su tamaño de visua
 1. Utilice la barra lateral para personalizar el estilo de los componentes del formulario <!-- or interactive communication --> de la temática para el tamaño de visualización seleccionado.
 1. Asegúrese de que la personalización esté guardada.
 
-Puede aplicar estilo a los componentes del formulario <!-- or interactive communication --> para varios dispositivos. Los componentes de formulario <!-- and interactive communication --> para escritorios y dispositivos móviles pueden tener estilos totalmente diferentes.
+Puede aplicar estilo a los componentes del formulario <!-- or interactive communication --> para varios dispositivos. Los componentes de formulario para escritorios y dispositivos móviles pueden tener estilos totalmente diferentes.
 
 ### Uso de Web Fonts en una temática {#using-web-fonts-in-a-theme}
 
@@ -567,14 +572,16 @@ Para aplicar una temática a un formulario adaptable:
 
 También puede definir una temática para un formulario adaptable cuando lo esté creando.
 
-<!-- To apply a theme to an interactive communication:
+<!--
+ To apply a theme to an interactive communication:
 
 1. Open your interactive communication in edit mode. To open a interactive communication in edit mode, select a form and click **Open**.
 1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) &gt;**Document Container**, and then click ![cmppr](assets/cmppr.png).
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png) -->
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+-->
 
 ### Cambiar la temática de un formulario durante la ejecución {#change-theme-of-a-form-at-runtime}
 
@@ -641,7 +648,8 @@ Puede ver el CSS generado mediante las siguientes opciones:
 
 * Puede tener problemas con la temática actual si se agrega un recurso desde otra y esta se mueve o se elimina. Se recomienda evitar explorar y agregar recursos de otras temáticas.
 
-<!-- * **Using base clientlib, theme editor, and inline styling**
+<!--
+ * **Using base clientlib, theme editor, and inline styling**
 
     * **Base clientlib**:
 
@@ -653,7 +661,8 @@ Puede ver el CSS generado mediante las siguientes opciones:
         1. In the Advanced tab, in the Clientlib Location field, browse, and select the client-library you want to use.
         1. Click **[!UICONTROL Save]**.
 
-      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor. -->
+      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor.
+      -->
     También puede crear una temática, crear copias de la misma y, a continuación, modificar el estilo proporcionado en las temáticas copiadas para casos de uso similares.
     Consulte [Obtención de apariencia específica mediante Temáticas](#specific-af-appearance)
     
@@ -665,9 +674,11 @@ Puede ver el CSS generado mediante las siguientes opciones:
     
     Puede aplicar estilo a los componentes mediante el modo Estilo del editor multicanal del formulario &lt;!-- o la comunicación interactiva --> cuando se trabaja con un formulario. Si se utiliza el modo de estilo para cambiar el estilo de los componentes del formulario, se anula el estilo especificado en la temática. Si desea cambiar el estilo de ciertos componentes de un formulario concreto, consulte [Estilo alineado de componentes](inline-style-adaptive-forms.md).
 
-<!-- * **Using client-side libraries**
+<!--
+ * **Using client-side libraries**
 
-  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above. -->
+  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above.
+  -->
 
 * **Cambio de la anchura de diseño del panel contenedor**
 

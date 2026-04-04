@@ -6,7 +6,7 @@ feature: Asset Management,DRM
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 6%
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Los recursos digitales suelen estar asociados a una licencia que especifica los términos y la duración de uso. Con la plataforma [!DNL Experience Manager], puede administrar de manera eficaz la información de caducidad de recursos y la información de licencias.
@@ -37,7 +37,7 @@ Para ver las páginas web de referencia y los recursos compuestos de un recurso,
 
 1. Vaya al recurso, selecciónelo y haga clic en ![icono de referencias de contenido del carril izquierdo](assets/do-not-localize/content-rail-icon.png). Se abrirá el carril izquierdo.
 1. Seleccione **[!UICONTROL Referencias]** del carril izquierdo.
-1. Para los recursos caducados, [!UICONTROL Referencias] muestra el estado de caducidad como **[!UICONTROL El recurso ha caducado]**. Assets Si el recurso tiene recursos secundarios caducados, el carril [!UICONTROL Referencias] muestra el estado **[!UICONTROL El recurso tiene un subrecurso caducado]**.
+1. Para los recursos caducados, [!UICONTROL Referencias] muestra el estado de caducidad como **[!UICONTROL El recurso ha caducado]**. Si el recurso tiene recursos secundarios caducados, el carril [!UICONTROL Referencias] muestra el estado **[!UICONTROL El recurso tiene un subrecurso caducado]**.
 
 ### Buscar recursos caducados {#search-expired-assets}
 
@@ -75,7 +75,8 @@ Puede configurar el planificador mediante las siguientes propiedades:
 * El número máximo de recursos caducados en una iteración del programador es el valor de la propiedad `asset_expired_limit`.
 * Para ejecutar el trabajo periódicamente, establezca el valor de la propiedad `cq.dam.expiry.notification.scheduler.istimebased` como `false` y establezca el valor de la propiedad `cq.dam.expiry.notification.scheduler.period.rule` con el tiempo en segundos.
 
-<!-- TBD: Web Console not available in CS.
+<!--
+ TBD: Web Console not available in CS.
 
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which 

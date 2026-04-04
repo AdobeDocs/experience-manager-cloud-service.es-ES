@@ -2,9 +2,9 @@
 title: Información general de Experience Modernization Agent
 description: Descubra cómo Experience Modernization Agent incorpora nuevos sitios web en Edge Delivery Services con la ayuda de IA.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 84fed5a82d6c23cd51d9796eb644121c6ef06a29
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -107,6 +107,6 @@ Los siguientes requisitos no están cubiertos por las habilidades de automatizac
 * Funcionalidad personalizada (por ejemplo, calculadoras, configuradores)
 * Lógica empresarial personalizada
 
-## Próximos pasos {#next-steps}
+## Siguientes pasos {#next-steps}
 
 Comience migrando un sitio con el documento [Introducción al agente de modernización de experiencias.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)

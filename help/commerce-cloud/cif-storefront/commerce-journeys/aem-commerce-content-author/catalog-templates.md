@@ -5,7 +5,7 @@ exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -95,7 +95,7 @@ Añada cualquier imagen en la parte superior de la página.
 
 La plantilla se puede previsualizar con cualquier categoría o producto. Abra **Información de la página** y seleccione **Ver con categoría/producto**. Seleccione el producto/categoría del selector para obtener una vista previa de este producto/categoría. Seleccione la categoría **Ver el aspecto** para obtener una vista previa de la plantilla actualizada.
 
-![crear plantilla &#x200B;](assets/create-template-picker.png)
+![crear plantilla ](assets/create-template-picker.png)
 
 Ahora tiene que asignar esta plantilla a la categoría específica. Abra las propiedades en el menú **Información de la página** y cambie a la pestaña de comercio. Haga clic en el icono de la carpeta para seleccionar la categoría **Ver el aspecto** del selector de categorías. Es posible asignar varias categorías a una plantilla e incluir también subcategorías activando la casilla de verificación.
 
@@ -121,5 +121,5 @@ Aproveche este conocimiento y continúe con su recorrido revisando el documento 
 
 Aunque se recomienda pasar a la siguiente parte del recorrido al revisar el documento [Administrar la experiencia del catálogo de productos clasificados,](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md) los siguientes son algunos recursos opcionales que profundizan ciertos conceptos mencionados en este documento, pero que no son necesarios para continuar en el recorrido sin encabezado:
 
-* [Creación de páginas de múltiples productos y categorías](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
-* [Guía de migración para Experience Manager Cloud Service](/help/commerce-cloud/cif-storefront/migration.md): Migración al complemento AEM Commerce integration framework (CIF) desde una versión antigua
+* [Creación de múltiples páginas de producto y categoría](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
+* [Guía de migración para Experience Manager Cloud Service](/help/commerce-cloud/cif-storefront/migration.md): Migración al complemento AEM Commerce Integration Framework (CIF) desde una versión antigua

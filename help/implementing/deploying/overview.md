@@ -4,7 +4,7 @@ description: Obtenga información acerca de los aspectos básicos y las práctic
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 93%
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 ## Introducción {#introduction}
 
-Los fundamentos del desarrollo de código son similares en AEM as a Cloud Service en comparación con las soluciones AEM On Premise y Managed Services. Los desarrolladores escriben el código y lo prueban localmente, para a continuación enviarlo a entornos de AEM as a Cloud Service remotos. Se requiere Cloud Manager, que era una herramienta de entrega de contenido opcional para Managed Services. Esta herramienta de envío es ahora el único mecanismo para implementar código en entornos de desarrollo, fase y producción de AEM as a Cloud Service. Para ejecutar una validación y una depuración rápidas de las funcionalidades antes de implementar los entornos mencionados, el código se puede sincronizar de un entorno local a un [Entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md).
+Los fundamentos del desarrollo de código son similares en AEM as a Cloud Service en comparación con las soluciones AEM On Premise y Managed Services. Los desarrolladores escriben el código y lo prueban localmente, para a continuación enviarlo a entornos de AEM as a Cloud Service remotos. Se requiere Cloud Manager, que era una herramienta de entrega de contenido opcional para Managed Services. Esta herramienta de envío es ahora el único mecanismo para implementar código en entornos de desarrollo, ensayo y producción de AEM as a Cloud Service. Para ejecutar una validación y una depuración rápidas de las funcionalidades antes de implementar los entornos mencionados, el código se puede sincronizar de un entorno local a un [Entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 La actualización de la [versión de AEM](/help/implementing/deploying/aem-version-updates.md) siempre es un evento de implementación independiente de la inserción de [código personalizado](#customer-releases). Visto de otra manera, las versiones de código personalizado deben probarse con la versión de AEM que está en producción, ya que es la que se implementa en primer lugar. Las actualizaciones de versión de AEM que se producen posteriormente (que son frecuentes y se aplican automáticamente) están pensadas para ser compatibles con versiones anteriores del código de cliente ya implementado.
 
@@ -41,7 +41,7 @@ Para desarrollar un código personalizado para una versión interna, debe descar
 
 El siguiente vídeo proporciona información general de alto nivel sobre cómo implementar los códigos en AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/34039?quality=9&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -52,9 +52,11 @@ El siguiente vídeo proporciona información general de alto nivel sobre cómo i
 
 ### Implementaciones mediante Cloud Manager {#deployments-via-cloud-manager}
 
-<!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
+<!--
+ Alexandru: temporarily commenting this out, until I get some clarification from Brian 
 
-![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
+![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8)
+-->
 
 Los clientes implementan código personalizado en entornos de nube a través de Cloud Manager. Cloud Manager transforma los paquetes de contenido ensamblados localmente en un artefacto que se ajusta al Modelo de funciones de Sling, que es el modo en que se describe una aplicación AEM as a Cloud Service al ejecutarse en un entorno de nube. Como resultado, al consultar los paquetes en [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en entornos de Cloud, el nombre incluye “cp2fm” y los paquetes transformados tienen todos los metadatos eliminados. No se puede interactuar con ellos, lo que significa que no se pueden descargar, replicar ni abrir. Para obtener documentación detallada sobre el convertidor, consulte [sling-org-apache-sling-feature-cpconverter en GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
@@ -166,9 +168,11 @@ Para crear instrucciones de `repoinit`, siga este procedimiento:
 
 Puede encontrar más información sobre `repoinit` en la [Documentación de Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 
-<!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
+<!--
+ ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
 
-above appears to be internal, to confirm with Brian -->
+above appears to be internal, to confirm with Brian
+-->
 
 ### Administrador de paquetes con definición para paquetes de contenido mutable {#package-manager-oneoffs-for-mutable-content-packages}
 
@@ -280,13 +284,13 @@ Cambiar los usuarios del servicio o las ACL que acceden al contenido o al códig
 
 Si se realizan cambios en los índices, es importante que la versión antigua siga utilizando sus índices hasta que finalice, mientras que la nueva versión utiliza su propio conjunto modificado de índices. El desarrollador debe seguir las técnicas de administración de índices descritas en [Búsqueda de contenido e indexación](/help/operations/indexing.md).
 
-### Codificación conservadora para retrocesos {#conservative-coding-for-rollbacks}
+### Codificación conservadora para reversiones {#conservative-coding-for-rollbacks}
 
 Si se informa o se detecta un error después de la implementación, es posible que se requiera una reversión a la versión antigua. Asegúrese de que el código nuevo sea compatible con cualquier estructura nueva creada por esa versión nueva, ya que las nuevas estructuras (cualquier contenido mutable) no se revierten. Si el código antiguo no es compatible, es necesario aplicar correcciones en las versiones posteriores del cliente.
 
 ## Entornos de desarrollo rápido (RDE) {#rde}
 
-Los [entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) (RDE) permiten a los desarrolladores implementar y revisar cambios con mayor velocidad, pues minimizan la cantidad de tiempo necesario para probar funciones que ya han demostrado funcionar en un entorno de desarrollo local.
+Los [Entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) (RDE) permiten a los desarrolladores implementar y revisar cambios con mayor velocidad, pues minimizan la cantidad de tiempo necesario para probar funciones que ya han demostrado funcionar en un entorno de desarrollo local.
 
 A diferencia de los entornos de desarrollo normales, que implementan código mediante la canalización de Cloud Manager, estos utilizan herramientas de línea de comandos para sincronizar el código de un entorno de desarrollo local a un RDE. Una vez que los cambios se hayan probado correctamente en un RDE, impleméntelos en un entorno de desarrollo de nube normal a través de la canalización de Cloud Manager, que coloca el código a través de las puertas de calidad adecuadas.
 
@@ -327,9 +331,11 @@ Al desarrollar localmente, el parámetro de inicio de modo de ejecución, `-r`, 
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 ```
 
-<!-- ### Performance Monitoring {#performance-monitoring}
+<!--
+ ### Performance Monitoring {#performance-monitoring}
 
-Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
+Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager.
+-->
 
 ## Configuración de tareas de mantenimiento en el control de origen {#maintenance-tasks-configuration-in-source-control}
 

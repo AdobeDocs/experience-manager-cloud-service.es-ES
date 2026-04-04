@@ -2,9 +2,9 @@
 title: Información general sobre los agentes en AEM
 description: Obtenga información sobre los agentes disponibles en AEM para acelerar la creación de contenido y organizar automáticamente los cambios.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 3%
@@ -27,11 +27,11 @@ Estos agentes están disponibles en Adobe Experience Manager (AEM) as a Cloud Se
 
 Tiene tres opciones para acceder a los agentes.
 
-1. Puede tener la opción de acceder a los agentes de AEM a través del programa [Probar antes de comprar](http://experienceleague.adobe.com/es/docs/experience-cloud-ai/experience-cloud-ai/agents/trial), que se está desplegando por fases. Su CSM o TAM pueden ayudarle a confirmar la disponibilidad de su organización.
+1. Puede tener la opción de acceder a los agentes de AEM a través del programa [Probar antes de comprar](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial), que se está desplegando por fases. Su CSM o TAM pueden ayudarle a confirmar la disponibilidad de su organización.
 1. Explore a los agentes de AEM [mediante una versión de prueba.](https://www.aem.live/developer/aem-playground)
 1. Conéctese con su CSM o TAM para discutir el acceso a través del SKU de Agentic si esto se ajusta a su hoja de ruta y planes de evaluación.
 
-A medida que se disponga de nuevas habilidades en la fase de lanzamiento anticipado, ofreceremos oportunidades adicionales para participar y compartir comentarios. Le recomendamos que vea [esta página](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) para ver las actualizaciones.
+A medida que se disponga de nuevas habilidades en la fase de lanzamiento anticipado, ofreceremos oportunidades adicionales para participar y compartir comentarios. Le recomendamos que vea [esta página](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) para ver las actualizaciones.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
@@ -41,7 +41,7 @@ A medida que se disponga de nuevas habilidades en la fase de lanzamiento anticip
 * **[Agente de producción de experiencia](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)**: reduce el tiempo de comercialización con actualizaciones de contenido, creación de formularios y comunicaciones
 * **[Agente de desarrollo](/help/ai-in-aem/agents/brand-experience/development/development.md)**: proporciona solución de problemas asistida por IA y automatización de la compilación
 
-A través de estos agentes, Brand Experience Agent absorbe el trabajo operativo pesado detrás de las actualizaciones y la modernización, ayudando a los equipos a entregar los cambios más rápido y con mayor confianza en la era de IA de hoy.
+A través de estos agentes, Brand Experience Agent absorbe el intenso trabajo operativo detrás de las actualizaciones y la modernización, lo que ayuda a los equipos a realizar cambios más rápido y con mayor confianza en la era de la IA de hoy en día.
 
 ## Agente del Asesor de contenido {#content-advisor-agent}
 

@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4152'
 ht-degree: 99%
@@ -110,7 +110,7 @@ Para crear una propiedad secundaria:
 
 1. Seleccione **[!UICONTROL Listo]** para guardar la propiedad secundaria y **[!UICONTROL Guardar]** para el modelo de datos de formulario (FDM). La propiedad secundaria se agrega ahora al objeto de modelo de datos.
 
-Después de crear propiedades y objetos de modelo de datos, puede seguir creando formularios adaptables <!--and interactive communications--> basados en el modelo de datos de formulario (FDM). Posteriormente, cuando haya fuentes de datos disponibles y configuradas, puede enlazar el modelo de datos de formulario (FDM) con ellas. El enlace se actualiza automáticamente en los formularios adaptables asociados <!--and interactive communications-->. Para obtener más información sobre la creación de formularios adaptables <!--and interactive communications--> mediante el modelo de datos de formulario (FDM) consulte [Uso del modelo de datos de formulario](using-form-data-model.md).
+Después de crear propiedades y objetos de modelo de datos, puede seguir creando formularios adaptables <!--and interactive communications--> basados en el modelo de datos de formulario (FDM). Posteriormente, cuando haya fuentes de datos disponibles y configuradas, puede enlazar el modelo de datos de formulario (FDM) con ellas. El enlace se actualiza automáticamente en el Forms adaptable asociado. Para obtener más información sobre la creación de Forms adaptable mediante el modelo de datos de formulario (FDM), consulte [Usar el modelo de datos de formulario](using-form-data-model.md).
 
 ### Enlazar propiedades y objetos de modelo de datos {#bind-data-model-objects-and-properties}
 

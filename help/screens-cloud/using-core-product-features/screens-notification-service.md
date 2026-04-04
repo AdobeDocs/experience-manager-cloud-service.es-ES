@@ -5,10 +5,10 @@ index: true
 exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 4%
+source-wordcount: '202'
+ht-degree: 3%
 
 ---
 
@@ -35,4 +35,4 @@ En AEM Screens Cloud, los clientes pueden solicitar un informe sobre el estado d
 
 ### Ejemplo de caso de uso
 
-Si establece el tiempo del informe en 5 a. m. y el tiempo de espera de ping en 1 hora, si el dispositivo Screens no hace ping entre las 4:00 a. m. y las 5:00 a. m., recibirá una notificación por correo electrónico que confirmará la inactividad del dispositivo.
+Si establece el tiempo del informe en 5 a. m. y el tiempo de espera del ping en 1 hora, si el dispositivo Screens no hace ping entre 4:00 a. m. y 5:00 a. m., recibirá una notificación por correo electrónico que confirmará la inactividad del dispositivo.

@@ -2,9 +2,9 @@
 title: Agente de detección de contenido
 description: Aprenda a utilizar el agente de detección de contenido para ofrecer contenido de AEM relevante bajo demanda mediante mensajes naturales y conversacionales para una experiencia de detección optimizada y sin clics.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 10a4b44fde65ae865d2e6d908e9e442752326fcd
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2073'
 ht-degree: 0%

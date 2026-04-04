@@ -4,7 +4,7 @@ description: Notas de la versión 2021.6.0 de la versión de  [!DNL Adobe Experi
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 48%
@@ -96,7 +96,8 @@ La próxima versión está planificada para el viernes, 15 de julio de 2021.
    * Compatibilidad con [!DNL Assets Essentials].
    * Capacidad para conectarse automáticamente a [!DNL Experience Manager] como [!DNL Cloud Service] o [!DNL Assets Essentials].
 
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
+<!--
+ TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Assets] {#beta-features-assets}
@@ -155,7 +156,7 @@ La fecha de lanzamiento de AEM Screens as a Cloud Service es el 24 de junio de 2
 ### Novedades {#what-is-new-screens-june}
 
 >[!NOTE]
->Consulte la Guía de [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=es) para conocer los conceptos básicos necesarios para instalar, configurar y ejecutar correctamente Screens as a Cloud Service y acceder a la documentación técnica de conceptos detallados.
+>Consulte la Guía de [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) para conocer los conceptos básicos necesarios para instalar, configurar y ejecutar correctamente Screens as a Cloud Service y acceder a la documentación técnica de conceptos detallados.
 
 * La administración del registro masivo de dispositivos significa que el aprovisionamiento de grandes cantidades de reproductores es más rápido y eficiente.
 
@@ -184,7 +185,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.5.4 e
 
 ### Novedades {#what-is-new-ctt-latest}
 
-* Se ha agregado compatibilidad con un paso [previo a la copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=es) opcional para utilizarlo con CTT. El paso previo a la copia se puede utilizar para acelerar significativamente las fases de extracción e ingesta de la actividad de transferencia de contenido cuando la instancia de AEM de origen está configurada para utilizar un almacén de datos de Amazon S3 o Azure Blob Storage.
+* Se ha agregado compatibilidad con un paso [previo a la copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) opcional para utilizarlo con CTT. El paso previo a la copia se puede utilizar para acelerar significativamente las fases de extracción e ingesta de la actividad de transferencia de contenido cuando la instancia de AEM de origen está configurada para utilizar un almacén de datos de Amazon S3 o Azure Blob Storage.
 
 * Se ha añadido una protección a CTT para evitar que los usuarios detengan una ingesta y corrompan los datos una vez que hayan alcanzado el punto crítico durante la fase de ingesta.
 

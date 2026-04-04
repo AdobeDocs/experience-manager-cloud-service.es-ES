@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1543'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,8 @@ La integración de datos de [!DNL Experience Manager Forms] ofrece una interfaz 
 
 * **Utilizando fuentes de datos preconfiguradas**: si ha configurado las fuentes de datos tal como se describe en [Configurar fuentes de datos](configure-data-sources.md), puede seleccionarlas al crear un modelo de datos de formulario (FDM). Incorpora todos los servicios, propiedades y objetos de modelo de datos de las fuentes de datos seleccionadas que se pueden utilizar en el modelo de datos de formulario (FDM).
 
-* **Sin fuentes de datos**: si no ha configurado fuentes de datos para su modelo de datos de formulario (FDM), puede crearlo sin fuentes de datos. Puede utilizar el modelo de datos de formulario (FDM) para crear formularios adaptables <!--and interactive communication--> y probarlos utilizando datos de muestra. Cuando hay fuentes de datos disponibles, puede vincular el modelo de datos de formulario (FDM) con fuentes de datos, lo que se refleja automáticamente en los formularios adaptables asociados<!--and interactive communications-->.
+* **Sin fuentes de datos**: si no ha configurado fuentes de datos para su modelo de datos de formulario (FDM), puede crearlo sin fuentes de datos. Puede utilizar el modelo de datos de formulario (FDM) para crear formularios adaptables <!--and interactive communication--> y probarlos utilizando datos de muestra. Cuando hay fuentes de datos disponibles, puede enlazar el modelo de datos de formulario (FDM) con fuentes de datos, lo que se refleja automáticamente en el Forms adaptable asociado.
+  <!--and interactive communications-->
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Introducción a Experience Modernization Agent
 description: Conozca los primeros pasos para aumentar rápidamente la productividad con Experience Modernization Agent mediante Experience Modernization Console.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 22a8260bf760ca4501813348c90bfc96c74e2224
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1110'
 ht-degree: 0%

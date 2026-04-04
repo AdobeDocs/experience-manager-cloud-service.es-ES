@@ -5,7 +5,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 99%
@@ -76,8 +76,10 @@ Asegúrese siempre de utilizar el archivo XDC correcto para la impresora. Por ej
 
 Un diseño de formulario que se utiliza con las API de comunicaciones puede contener scripts que se ejecutan en el servidor. Asegúrese de que el diseño de formulario no contenga scripts que se ejecuten en el cliente. Para obtener información acerca de la creación de scripts de diseño de formulario, consulte [Ayuda de Designer](use-forms-designer.md).
 
-<!-- #### Working with Fonts
- Document Considerations for Working with Fonts>> -->
+<!--
+ #### Working with Fonts
+ Document Considerations for Working with Fonts>>
+ -->
 
 ### Asignación de fuentes {#font-mapping}
 
@@ -196,13 +198,15 @@ Puede utilizar el servicio de salida de AEM Forms para combinar una plantilla (X
 
 En comparación con el entorno local, Cloud Service ofrece las ventajas adicionales de escalabilidad automática y rentabilidad.
 
-<!--**Where is data processed?**
+<!--
+**Where is data processed?**
 
 **Who has access to data?**
 
 **Is data encrypted?**
 
-**Where is data hosted?** -->
+**Where is data hosted?**
+-->
 
 **¿Puedo ejecutar varias operaciones por lotes simultáneamente?**
 Sí, puede ejecutar varias operaciones por lotes de forma simultánea. Utilice siempre carpetas fuente y destino diferentes para cada operación para evitar conflictos.

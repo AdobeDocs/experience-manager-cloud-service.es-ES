@@ -5,8 +5,8 @@ keywords: Cómo seleccionar la acción de envío para un formulario adaptable, c
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Al final de este documento, aprenderá a:
 - Configurar diferentes tipos de acciones de envío de formularios
 - Configurar envíos de puntos finales REST para la integración con sistemas externos
 - Configurar envíos de correos electrónicos para respuestas de formulario
-- Implementar acciones de envío personalizadas para necesidades comerciales específicas
+- Implementar acciones de envío personalizadas para necesidades empresariales específicas
 - Gestionar la validación de formularios y los escenarios de error durante el envío
 
 ## Público destinatario
@@ -60,10 +60,12 @@ Los [Formularios adaptables creados en el editor universal](/help/edge/docs/form
 - [Enviar a Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 - [Enviar a hoja de cálculo](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 Puede configurar la acción de envío para los formularios creados en el editor universal mediante la pestaña **Envío** de la extensión **Editar propiedades del formulario**.
 

@@ -6,8 +6,8 @@ index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Editar en el lugar y en contexto suele ser mejor que editar contenido estructura
 
 El editor universal es una forma ágil de editar el texto en contexto y en el lugar, lo que permite crear contenido de forma sencilla e intuitiva.
 
-1. Seleccione dos veces el título del artículo debajo de Latest article para editarlo.
+1. Haga doble clic en el título del artículo más reciente para editarlo.
 
    ![Editor universal](assets/do-not-localize/ue-component-mode.png)
 

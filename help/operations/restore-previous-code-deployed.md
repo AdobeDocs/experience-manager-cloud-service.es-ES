@@ -4,7 +4,7 @@ description: Aprenda a restaurar un entorno a su última compilación correcta &
 feature: Operations
 role: Admin
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 3%
@@ -13,11 +13,13 @@ ht-degree: 3%
 
 # Restaurar el código fuente anterior implementado en AEM as a Cloud Service {#restore-previous-code-deployed}
 
-<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+<!--
+ BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 
 >[!NOTE]
 >
->The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+-->
 
 Use **Restaurar código anterior implementado** para revertir un entorno instantáneamente a su última compilación correcta; no se requiere la ejecución de la canalización.
 
@@ -85,7 +87,7 @@ Si solo desea restaurar los datos que se perdieron, dañaron o eliminaron accide
 
    ![Restaurando activación](/help/operations/assets/restore-previous-code-deployed-restoring.png)
 
-1. Cerca de la esquina superior derecha de la página, haz clic en ![Icono de campana o en Icono de notificaciones &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notificaciones** para saber cuándo comienza y finaliza la restauración.
+1. Cerca de la esquina superior derecha de la página, haz clic en ![Icono de campana o en Icono de notificaciones ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notificaciones** para saber cuándo comienza y finaliza la restauración.
 
    ![Restaurar notificaciones de código anteriores al iniciar la restauración y al finalizar la restauración](/help/operations/assets/restore-previous-code-notifications.png)
    *Notificaciones para un trabajo de restauración de código anterior.*

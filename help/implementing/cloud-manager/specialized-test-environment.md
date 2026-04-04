@@ -4,7 +4,7 @@ description: Descubra cómo los entornos de prueba especializados en Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 837f1d0eb0bd0f8cf8c0e283db823255f4e53ae1
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 12%
@@ -13,7 +13,8 @@ ht-degree: 12%
 
 # Añadir un entorno de prueba especializado{#add-special-test-enviro}
 
-<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+<!--
+ badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 -->
 
 >[!NOTE]
@@ -79,6 +80,6 @@ Si la opción **Agregar entorno** está atenuada (deshabilitada), puede deberse 
 
 ## Recursos adicionales {#additional-resources}
 
-* Vídeo: [Explicación de los tipos de entorno en AEM Cloud Manager](https://experienceleague.adobe.com/es/perspectives/cloud-manager-environment-types)
+* Vídeo: [Explicación de los tipos de entorno en AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
 * [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md)
 

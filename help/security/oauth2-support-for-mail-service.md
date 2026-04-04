@@ -4,7 +4,7 @@ description: Compatibilidad con Oauth2 para el servicio de correo en Adobe Exper
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: 8ceca10cc581c4b8e577ddd0a964a707c226c7fc
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 100%
@@ -30,8 +30,10 @@ Para obtener más información sobre el servicio de correo de AEM as a Cloud Ser
 
 1. Rellene la información según sus necesidades y haga clic en **Registro**.
 1. Vaya a la aplicación creada y seleccione **Permisos de API**.
-<!-- Alexandru: removing as a result of CQDOC-20609 
-1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**. -->
+<!--
+ Alexandru: removing as a result of CQDOC-20609 
+1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**.
+-->
 1. Seleccione los siguientes permisos para su aplicación y haga clic en **Añadir permiso**:
 
    >[!NOTE]

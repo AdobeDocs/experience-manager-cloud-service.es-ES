@@ -6,7 +6,7 @@ feature: Developing
 role: Admin, Developer
 index: false
 recommendations: noDisplay, noCatalog
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Sumérjase en el desarrollo de SPA con este tutorial de varias partes que le gu�
 
 Similar al Tutorial WKND de AEM, este homólogo centrado en SPA ofrece un ejemplo completo de creación de su propia aplicación de una sola página editable con AEM a partir de la configuración del proyecto mediante el enrutamiento de aplicaciones.
 
-* [Cree su primera SPA de Angular en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=es)
+* [Cree su primera SPA de Angular en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 * [Cree su primer SPA de React en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=es)
 
 Sin embargo, antes de comenzar su propio proyecto de SPA para AEM, quizá también quiera revisar el documento [Desarrollo de SPA para AEM](developing.md).

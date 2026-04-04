@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 98%
@@ -37,7 +37,8 @@ Los distintos tipos de archivo tienen diferentes grados de compatibilidad con lo
 
 ## Adición, carga y visualización de recursos {#support-to-upload-view}
 
-<!-- TBD: For AEM, AI files require the PDF option to be selected when saving the AI file.
+<!--
+ TBD: For AEM, AI files require the PDF option to be selected when saving the AI file.
 -->
 
 | Tipo de recurso | [Examinar](/help/assets/navigate-assets-view.md) | Copiar | [Cargar](/help/assets/add-delete-assets-view.md) | Crear | [Eliminar](/help/assets/add-delete-assets-view.md#delete-assets) | Detalles | Zoom de imagen | [Vistos recientemente](/help/assets/navigate-assets-view.md) |
@@ -50,7 +51,8 @@ Los distintos tipos de archivo tienen diferentes grados de compatibilidad con lo
 | PSD, PSB, IA e INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | Otros archivos binarios | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
 
-<!-- Hiding CC Libraries (considered beta) as per PM feedback.
+<!--
+ Hiding CC Libraries (considered beta) as per PM feedback.
 | CC Libraries  | &#10003; | &minus;  | &#10003; | &#10003; | &#10003; | &#10003; | &minus;    | &minus;         |
 -->
 
@@ -108,7 +110,8 @@ Los distintos tipos de archivo tienen diferentes grados de compatibilidad con lo
 
 Los usuarios de [!DNL Adobe Asset Link] pueden cargar y registrar archivos (cargar una nueva versión) en el repositorio de [!DNL Assets view] desde las aplicaciones de escritorio de [!DNL Adobe Creative Cloud] admitidas.
 
-<!-- TBD: Saving the template table separately for later use.
+<!--
+ TBD: Saving the template table separately for later use.
 | Asset type    | Features |
 |---------------|----------|
 | Raster images |          |

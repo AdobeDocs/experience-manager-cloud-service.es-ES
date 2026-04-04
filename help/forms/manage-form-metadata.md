@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 98%
@@ -168,8 +168,10 @@ A continuación se ofrece una amplia lista de propiedades de metadatos compatibl
     <ul> 
       <li>Modelo de datos de formulario (FDM)</li>
       <li>Esquema: Un XML del esquema JSON</li>
-     <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
-     <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->
+     <!--
+      <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
+     <li>XML schema: An XSD file is uploaded. This value can be updated.</li>
+     -->
      <li>Ninguno</li> 
     </ul> 
     <div>
@@ -198,10 +200,12 @@ Los recursos tienen valores de propiedad existentes, que se pueden ver en modo d
 
 1. La página de propiedades que se abre muestra un esquema que contiene solo las propiedades de metadatos que contienen algún valor.
 
-   <!-- The properties page has a toolbar containing two action icons:
+   <!--
+    The properties page has a toolbar containing two action icons:
 
     * Edit: ![Edit](assets/Smock_Edit_18_N.svg) Edit the metadata property values
-    * View: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigate to the form details page, which opens the form in the preview mode. -->
+    * View: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigate to the form details page, which opens the form in the preview mode.
+    -->
 
    La parte de contenido se divide en dos partes:
 
@@ -212,7 +216,8 @@ Los recursos tienen valores de propiedad existentes, que se pueden ver en modo d
 
 Puede editar el valor de las propiedades de metadatos existentes o agregar nuevos valores a un campo de propiedad de metadatos existente (por ejemplo, cuando un campo de metadatos está en blanco).
 
-<!-- ### Update metadata property values {#update-metadata-property-values}
+<!--
+ ### Update metadata property values {#update-metadata-property-values}
 
 1. Follow the steps mentioned in the previous section to open the properties page where existing metadata of the selected form can be viewed.  
 
@@ -229,7 +234,8 @@ Puede editar el valor de las propiedades de metadatos existentes o agregar nuevo
     * Cancel: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Cancel any changes made to metadata property values so far
     * Done: ![aem6forms_check](assets/aem6forms_check.png) Save all the changes made to metadata property values so far
 
-   Both these actions direct the user back to read-only mode of the properties page containing the updated values.-->
+   Both these actions direct the user back to read-only mode of the properties page containing the updated values.
+   -->
 
 ### Actualizar la miniatura del formulario {#update-the-form-thumbnail}
 

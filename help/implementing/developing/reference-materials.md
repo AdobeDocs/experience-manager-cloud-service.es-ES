@@ -4,7 +4,7 @@ description: AEM tiene API amplias y potentes que puede utilizar para su proyect
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 5%
@@ -25,9 +25,11 @@ Las siguientes API son fundamentales para AEM.
 | [IU de Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pila web abierta de Adobe que proporciona varios componentes esenciales (los materiales Granite 6.5 se aplican a AEMaaCS) |
 | [IU de Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Estilo visual de Adobe para IU en la nube, diseñado para proporcionar coherencia en la experiencia del usuario |
 
-<!---
+<!--
+-
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
---->
+-
+-->
 
 >[!NOTE]
 >
@@ -59,7 +61,7 @@ Si AEM proporciona una API, prefiera esta en lugar de Sling, JCR y OSGi. Si AEM 
 
 >[!TIP]
 >
->Para obtener más información sobre estas directrices, consulte el documento [Comprender las prácticas recomendadas de la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=es).
+>Para obtener más información sobre estas directrices, consulte el documento [Comprender las prácticas recomendadas de la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html).
 
 ## API y servicios de envío y administración de contenido de AEM {#delivery-apis}
 

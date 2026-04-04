@@ -1,15 +1,15 @@
 ---
-Title: How to Connect AEM Adaptive Forms with Azure SQL Storage
-Description: Learn how to configure an Azure SQL Database connection in AEM Forms and integrate it with your Adaptive Forms to store or retrieve data efficiently using JDBC.
-Keywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
+title: Cómo conectar el Forms adaptable de AEM con el almacenamiento SQL de Azure
+description: Obtenga información sobre cómo configurar una conexión de base de datos SQL de Azure en AEM Forms e integrarla con su Forms adaptable para almacenar o recuperar datos de forma eficaz mediante JDBC.
+deywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
 feature: Adaptive Forms, Core Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: e69201c40b72f4eaabe3da634ecf05bd04769f6b
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 15%
+source-wordcount: '644'
+ht-degree: 14%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 15%
 Forms adaptable en Adobe Experience Manager (AEM) se puede integrar con bases de datos externas para almacenar o recuperar datos.
 Este artículo describe cómo conectar un formulario adaptable a una base de datos SQL de Azure mediante JDBC a través de AEM as a Cloud Service.
 
->
+>[!NOTE]
 > 
 > Esta guía se aplica a entornos AEM as a Cloud Service que no son de zona protegida con redes avanzadas habilitadas.
 
@@ -42,7 +42,7 @@ La integración de Forms adaptable con Azure SQL ofrece varias ventajas:
 
   ![Crear Azure Db](/help/forms/assets/create-azure-db.png)
 
-* Habilite [red avanzada configurada con una IP de salida dedicada](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) para la base de datos de Azure creada.
+* Habilite [red avanzada configurada con una IP de salida dedicada](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) para la base de datos de Azure creada.
 
   >[!NOTE]
   >
@@ -55,7 +55,7 @@ La integración de Forms adaptable con Azure SQL ofrece varias ventajas:
    * **portDest**: `1433` (puerto predeterminado para Azure SQL)
 Por ejemplo: `portOrigin: 30433 → portDest: 1433`
 
-     >
+     >[!NOTE]
      > 
      > Puede ponerse en contacto con el servicio de asistencia de Adobe Cloud Manager para configurar el reenvío de puertos.
 
@@ -86,7 +86,7 @@ Incluya la [dependencia del controlador SQL](https://central.sonatype.com/artifa
 
 >[!NOTE]
 >
-> Para incluir la dependencia SQL en su proyecto, consulte la sección [Dependencias del controlador SQL](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
+> Para incluir la dependencia SQL en su proyecto, consulte la sección [Dependencias del controlador SQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
 
 **Paso 3: Agregar Configuración JDBC**
 
@@ -117,7 +117,7 @@ Incluya la [dependencia del controlador SQL](https://central.sonatype.com/artifa
        }
    ```
 
-   >
+   >[!NOTE]
    >
    > Reemplace `jdbc.username` con el nombre de usuario de Azure real y `jdbc.password` con la contraseña segura real.
 

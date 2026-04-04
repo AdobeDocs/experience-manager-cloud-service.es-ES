@@ -10,7 +10,7 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1938'
 ht-degree: 2%
@@ -127,7 +127,7 @@ Conecte los formularios a sistemas back-end y fuentes de datos para un flujo de 
 | **Lo que hace:** Habilite las llamadas API directas desde formularios mediante acciones de envío o la integración de datos para la conectividad en tiempo real con los servicios web. |
 | **Cuándo se debe usar:** Integración de API personalizada, conectividad de servicio web, intercambio de datos en tiempo real, integración de servicio de terceros. |
 | 🌐 llamadas API directas 🌐 Conectividad en tiempo real 🌐 Integración flexible 🌐 Soporte de servicio personalizado |
-| [Configurar puntos finales REST →](/help/forms/configure-submit-action-restpoint.md) \| [Configuración de integración de datos →](/help/forms/data-integration.md) |
+| [Configurar puntos finales REST →](/help/forms/configure-submit-action-restpoint.md) \| [Configuración de la integración de datos →](/help/forms/data-integration.md) |
 
 ### Conector de Salesforce {#salesforce-connector}
 

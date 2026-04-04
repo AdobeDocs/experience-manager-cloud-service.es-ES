@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: ef20e6df5e19596ea742e6ac267b1f37b7517cfa
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1805'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Para los sitios que se ejecutan en Adobe Experience Manager, existe el **complem
 
 El complemento de experimentación se usa en el contexto de [Edge Delivery Services](/help/edge/overview.md), por lo que necesitarás una cuenta de Github, un repositorio de contenido como SharePoint o Google Drive, y también necesitarás [AEM Sidekick](https://www.aem.live/docs/sidekick). Consulte también la [Página de introducción - Tutorial para desarrolladores de Universal Editor](https://www.aem.live/developer/tutorial) y [Introducción - Tutorial para desarrolladores](https://www.aem.live/developer/tutorial).
 
-Después de configurar todo, **vea este vídeo** titulado [Experimentación instantánea](https://business.adobe.com/es/products/experience-manager/sites/testing-optimization.html) para ver una breve demostración del funcionamiento del complemento de experimentación.
+Después de configurar todo, **vea este vídeo** titulado [Experimentación instantánea](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) para ver una breve demostración del funcionamiento del complemento de experimentación.
 
 ## Términos más utilizados {#frequently-used-terms}
 
@@ -99,9 +99,11 @@ Puede anular la división de tráfico configurando los metadatos. Para obtener m
 
 Tan pronto como esté listo para previsualizar y montar el experimento, haga clic en Vista previa en la barra lateral izquierda. Siempre que esté previsualizando una página que tiene un experimento en ejecución, verá la superposición de experimentación en el entorno de vista previa `.aem.page`. La superposición de experimentación permite cambiar entre las variantes del experimento y también proporciona datos de tráfico.
 
-<!--- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
+<!--
+- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
 
-By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.-->
+By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.
+-->
 
 La recopilación de datos para medir la efectividad de cada variante se basa en el [servicio de telemetría operacional en AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
 
@@ -117,7 +119,8 @@ A continuación se presentan varios ejemplos de casos de uso de variantes de exp
 
 Se utiliza un experimento de página completa para probar entre dos variantes de la misma página. Es una variante de página completa de una prueba A/B en la que tiene un control y una página de aspirante. Sustituirá todo el contenido de la página de control &quot;original&quot; en la variante del aspirante por un tipo de contenido diferente. Tenga en cuenta que, de forma predeterminada, el tráfico del cliente se divide uniformemente (50/50), pero puede crear divisiones personalizadas si lo desea.
 
-<!--The metadata on the control page should look like this:
+<!--
+The metadata on the control page should look like this:
 
 METADATA SETUP
 
@@ -185,7 +188,8 @@ Audience: Chrome `https://{ref}--{repo}--{org}.hlx.page/page-for-chrome`
 
 After this configuration, the users will be triaged based on the browser they connect with and the appropriate challenger page will be served.
 
-Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.-->
+Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.
+-->
 
 ## Otras consideraciones {#other-considerations}
 

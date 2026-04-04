@@ -7,7 +7,7 @@ role: User, Admin, Developer
 feature: Asset Management
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3413'
 ht-degree: 11%
@@ -326,7 +326,8 @@ Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada r
 
    *Imagen: actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola [!UICONTROL Información general de Live Copy].*
 
-<!-- TBD: Can MSM be extended using Java APIs in CS?
+<!--
+ TBD: Can MSM be extended using Java APIs in CS?
 
 ## Extend MSM for [!DNL Assets] {#extend-api}
 

@@ -7,8 +7,8 @@ exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: a0cb31cefb6f3c086882c237acb13020646573a5
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ AEM admite varios métodos de creación, cada uno de los cuales se adapta a dife
 
 - [Componentes de base](/help/forms/create-adaptive-form-tutorial.md): utilice componentes de base para generar formularios tradicionales e interactivos. Son ideales para formularios que se integran con sistemas heredados o que dependen de flujos de trabajo establecidos desde hace mucho tiempo. Los formularios creados con componentes de base solo se pueden publicar en AEM y no son compatibles con Edge Delivery Services.
 
-- [Componentes principales](/help/forms/creating-adaptive-form-core-components.md): utilice los componentes principales para crear formularios modernos, adaptables y escalables. Son reutilizables, accesibles y ofrecen un mejor rendimiento. Los formularios creados con componentes principales se puede publicar tanto en AEM como en Edge Delivery Services, lo que ofrece flexibilidad en todas las plataformas.
+- [Componentes principales](/help/forms/creating-adaptive-form-core-components.md): utilice los componentes principales para crear formularios modernos, adaptables y escalables. Son reutilizables, accesibles y ofrecen un mejor rendimiento. Los formularios creados con componentes principales se pueden publicar tanto en AEM como en Edge Delivery Services, lo que ofrece flexibilidad en todas las plataformas.
 
 - [Formularios de Adobe Edge Delivery Services](/help/edge/docs/forms/overview.md): transforman la forma en que se crean, ejecutan y procesan los formularios. Al aprovechar Edge Delivery Services, las organizaciones pueden crear formularios digitales rápidos, seguros y de alta disponibilidad, mejorando la experiencia del usuario y la eficacia operativa con un entorno de desarrollo rápido. Puede crear formularios de Edge Delivery Services de las dos formas siguientes:
    - [Creación WYSIWYG](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): utilice el editor universal para crear formularios visuales y de arrastrar y soltar, ideales para autores de contenido con conocimientos técnicos limitados. Los formularios creados con el editor universal se envían con Edge Delivery Services para un renderizado rápido y ligero.
@@ -69,7 +69,8 @@ La siguiente tabla ofrece una comparación concisa de varios métodos de creaci�
 | **Core Components** | Provides a modern, flexible approach with high customization capabilities. | Component-based authoring within AEM, offering high customization with CSS and JS. Built around accessibility guidelines and integrated with AEM Sites. | Published on AEM and Edge Delivery Services. | Suitable for scalable, modern forms with complex workflows and integrations. |
 | **Universal Editor (WYSIWYG)** | Offers a WYSIWYG interface for intuitive form creation. | Forms are designed using an intuitive drag-and-drop interface. These forms inherit look and feel from the configured Edge Delivery Services GitHub repository for the corresponding form. | Published on Edge Delivery Services, achieving high Google Lighthouse scores for faster rendering and better SEO. | Ideal for creating forms for Edge Delivery Service sites and pages, especially scenarios involving complex forms, workflows, custom actions, or integrations with external systems. |
 | **Document-based Authoring** | Uses familiar tools like Google Docs and Microsoft Office for form creation. | Forms are designed using spreadsheets, with data directly submitted to Google Sheets or Microsoft Excel. These forms are faster to create and deploy. No prior knowledge of AEM is required to develop custom components and styles for these forms. | Published on Edge Delivery Services, achieving high Google Lighthouse scores for faster rendering and better SEO. | Ideal for quick prototyping or basic forms where advanced submission services are not needed. Well-suited for surveys, registration, or feedback forms requiring data storage in spreadsheets. |
-| **Headless Authoring** | Enables API-driven content creation for omnichannel delivery. | Full control via frontend frameworks, allowing content delivery across various platforms through APIs. | Can be integrated with any frontend via APIs. | Ideal for omnichannel experiences across platforms, suitable for web, mobile, kiosks, and more. |-->
+| **Headless Authoring** | Enables API-driven content creation for omnichannel delivery. | Full control via frontend frameworks, allowing content delivery across various platforms through APIs. | Can be integrated with any frontend via APIs. | Ideal for omnichannel experiences across platforms, suitable for web, mobile, kiosks, and more. |
+-->
 
 ### Comparación de características de los métodos de creación de formularios de AEM
 

@@ -5,7 +5,7 @@ feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3195'
 ht-degree: 10%
@@ -30,13 +30,14 @@ También puede solicitar que se realice un procesamiento adicional de los recurs
 |---------------------|----------------|-----------------|
 | [Interfaz de usuario de la consola Assets](#upload-assets) | Carga ocasional, facilidad para presionar y arrastrar, carga del buscador. No utilice para cargar muchos recursos. | Todos los usuarios |
 | [Cargar API](#upload-using-apis) | Para las decisiones dinámicas durante la carga. | Desarrollador |
-| Aplicación de escritorio de [[!DNL Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es) | Ingesta de recursos de bajo volumen, pero no para la migración. | Administrador, Especialista en marketing |
+| Aplicación de escritorio de [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Ingesta de recursos de bajo volumen, pero no para la migración. | Administrador, Especialista en marketing |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html?lang=es) | Resulta útil cuando los creativos y los especialistas en marketing trabajan en recursos desde las aplicaciones de escritorio de [!DNL Creative Cloud] admitidas. | Creative, experto en marketing |
 | [Ingestor masivo de recursos](#asset-bulk-ingestor) | Recomendado para migraciones a gran escala e ingestas masivas ocasionales. Solo para almacenes de datos compatibles. | Administrador, Desarrollador |
 
 ## Carga de activos {#upload-assets}
 
-<!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
+<!--
+ #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Select the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
@@ -49,11 +50,13 @@ También puede solicitar que se realice un procesamiento adicional de los recurs
    When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
-<!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
+<!--
+ #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
+<!--
+ #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, [!DNL Experience Manager] saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, [!DNL Experience Manager] consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -88,7 +91,8 @@ Además, la interfaz de usuario [!DNL Assets] muestra el recurso más reciente q
 >
 >Para cargar jerarquías de carpetas anidadas, consulte [cargar recursos en lotes](#bulk-upload).
 
-<!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
+<!--
+ #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
 ### Serial uploads {#serialuploads}
 
@@ -147,14 +151,14 @@ El ingestor masivo de recursos puede gestionar muchos recursos de forma eficaz. 
 Para cargar un número mayor de archivos, utilice uno de los siguientes métodos. Vea también los [casos de uso y métodos](#upload-methods-comparison)
 
 * [API de carga de recursos](developer-reference-material-apis.md#asset-upload): use un script de carga personalizado o una herramienta que use API para agregar administración adicional de recursos (por ejemplo, traducir metadatos o cambiar el nombre de archivos), si es necesario.
-* [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es): útil para los profesionales creativos y los especialistas en marketing que cargan recursos desde su sistema de archivos local. Utilícela para cargar carpetas anidadas disponibles localmente.
+* [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): útil para los profesionales creativos y los especialistas en marketing que cargan recursos desde su sistema de archivos local. Utilícela para cargar carpetas anidadas disponibles localmente.
 * [Herramienta de ingesta masiva](#asset-bulk-ingestor): Se utiliza para la ingesta de grandes cantidades de recursos de forma ocasional o inicial al implementar [!DNL Experience Manager].
 
 ### Herramienta Importación masiva de recursos {#asset-bulk-ingestor}
 
 La herramienta solo se proporciona al grupo de administradores para que la utilice en la ingesta a gran escala de recursos de almacenes de datos de Azure o S3. Consulte un vídeo de introducción a la configuración y la ingesta.
 
->[!VIDEO](https://video.tv.adobe.com/v/341381/?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 La siguiente imagen ilustra las distintas etapas de la ingesta de recursos en Experience Manager desde un almacén de datos:
 
@@ -203,7 +207,7 @@ Para configurar la herramienta Importación masiva, siga estos pasos:
 
 1. Especifique una ruta para definir una ubicación en DAM en la que se importarán los recursos mediante **[!UICONTROL Carpeta de destino de recursos]**. Por ejemplo, `/content/dam/imported_assets`.
 
-1. (Opcional) Especifique el archivo de metadatos que desea importar, proporcionado en formato CSV, en el campo **[!UICONTROL Archivo de metadatos]**. Especifique el archivo CSV en la ubicación del blob de origen y consulte la ruta al configurar la herramienta Importación masiva. El formato de archivo CSV al que se hace referencia en este campo es el mismo que el formato de archivo CSV cuando [importa y exporta metadatos de recursos de forma masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=es). Si selecciona la opción **Eliminar archivo de origen después de importar**, filtre los archivos CSV usando los campos **Excluir** o **Incluir tipo MIME** o **Filtrar por ruta/archivo**. Puede utilizar una expresión regular para filtrar los archivos CSV en estos campos.
+1. (Opcional) Especifique el archivo de metadatos que desea importar, proporcionado en formato CSV, en el campo **[!UICONTROL Archivo de metadatos]**. Especifique el archivo CSV en la ubicación del blob de origen y consulte la ruta al configurar la herramienta Importación masiva. El formato de archivo CSV al que se hace referencia en este campo es el mismo que el formato de archivo CSV cuando [importa y exporta metadatos de recursos de forma masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Si selecciona la opción **Eliminar archivo de origen después de importar**, filtre los archivos CSV usando los campos **Excluir** o **Incluir tipo MIME** o **Filtrar por ruta/archivo**. Puede utilizar una expresión regular para filtrar los archivos CSV en estos campos.
 
 1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración.
 
@@ -358,7 +362,7 @@ Experience Manager muestra el historial de trabajos. En la página Historial de 
 Además de la interfaz de usuario del explorador web, [!DNL Experience Manager] admite otros clientes en el escritorio. También proporcionan una experiencia de carga sin necesidad de ir al explorador web.
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html?lang=es) proporciona acceso a los recursos de [!DNL Experience Manager] en las aplicaciones de escritorio de Adobe Photoshop, Adobe Illustrator y Adobe InDesign. Puede cargar el documento abierto actualmente en [!DNL Experience Manager] directamente desde la interfaz de usuario de Adobe Asset Link desde estas aplicaciones de escritorio.
-* [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es) simplifica el trabajo con recursos en el escritorio, independientemente del tipo de archivo o de la aplicación nativa que los administra. Es útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga desde el explorador solo permite cargar listas de archivos sin formato.
+* [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifica el trabajo con recursos en el escritorio, independientemente del tipo de archivo o de la aplicación nativa que los administra. Es útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga desde el explorador solo permite cargar listas de archivos sin formato.
 
 ## Procesar recursos al cargarlos {#process-when-uploaded}
 
@@ -401,7 +405,8 @@ Los detalles técnicos de las API y el protocolo de carga, así como los víncul
 * El método de importación masiva importa toda la estructura de carpetas tal como existe en el origen de datos. Sin embargo, solo se crean las carpetas que no están vacías en [!DNL Experience Manager].
 
 
-<!-- TBD: Link to file name handling in DA docs when it is documented. 
+<!--
+ TBD: Link to file name handling in DA docs when it is documented. 
 -->
 
 **Consulte también**
@@ -422,7 +427,7 @@ Los detalles técnicos de las API y el protocolo de carga, así como los víncul
 
 >[!MORELIKETHIS]
 >
->* Aplicación de escritorio de [[!DNL Adobe Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es)
+>* Aplicación de escritorio de [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es)
 >* [Acerca de [!DNL Adobe Asset Link]](https://www.adobe.com/es/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentación](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html?lang=es)
 >* [Referencia técnica para la carga de recursos](developer-reference-material-apis.md#asset-upload)

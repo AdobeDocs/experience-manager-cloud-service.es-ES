@@ -6,7 +6,7 @@ feature: Asset Management, Publishing
 role: User, Developer, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 9%
@@ -56,7 +56,8 @@ La biblioteca de medios abarca, en términos generales, los siguientes casos de 
 * Experiencias de pantalla digital creadas con [!DNL Adobe Experience Manager Screens].
 * [!DNL Assets] API de REST HTTP para operaciones sin encabezado.
 
-<!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
+<!--
+ TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Static renditions
 
@@ -86,7 +87,8 @@ Para usar la funcionalidad Biblioteca de medios, puede usar la interfaz de usuar
 * Flujo de actividad (cronología).
 * Comentarios y anotaciones.
 
-<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+<!--
+ TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
 As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
@@ -118,4 +120,4 @@ No puede usar etiquetas inteligentes, vínculo [!DNL Asset], selector [!DNL Asse
 >[!MORELIKETHIS]
 >
 >* [Funciones DAM en [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=es)
->* [[!DNL Experience Manager] como [!DNL Cloud Service] descripción del producto](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] como [!DNL Cloud Service] descripción del producto](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

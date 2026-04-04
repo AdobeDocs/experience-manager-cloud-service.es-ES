@@ -4,7 +4,7 @@ description: Utilice funciones para personalizar el selector de recursos en la a
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 23%
@@ -236,10 +236,12 @@ La sintaxis de la selección de deshabilitar es la siguiente:
 
 El Selector de recursos permite controlar el uso de un recurso caducado. Puede personalizar el recurso caducado con un distintivo de **Vencimiento pronto** que le ayudará a conocer de antemano los recursos que caducarán dentro de los 30 días posteriores a la fecha actual. Además, esto se puede personalizar según el requisito. También puede permitir la selección de un recurso caducado en el lienzo o viceversa. La personalización de un recurso caducado se puede realizar mediante algunos fragmentos de código de varias formas:
 
-<!--{
+<!--
+{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
     allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
-}-->
+}
+-->
 
 ```
 expiryOptions: {
@@ -260,7 +262,8 @@ expiryOptions:{
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
-![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)
+-->
 
 ### Configuración de la duración de un recurso caducado {#set-duration-of-expired-asset}
 

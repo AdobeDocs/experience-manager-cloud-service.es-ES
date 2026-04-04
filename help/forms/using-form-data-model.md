@@ -6,10 +6,10 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1423'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -83,7 +83,8 @@ Puede crear [formularios adaptables](creating-adaptive-form.md) y fragmentos de 
 
    Puede arrastrar y soltar objetos de modelo de datos en el formulario adaptable o en el fragmento para agregar campos de formulario. Los campos de formulario agregados conservan las propiedades de metadatos y el enlace con las propiedades del objeto de modelo de datos. El enlace garantiza que los valores de los campos se actualicen en las fuentes de datos correspondientes al enviar el formulario y se prerrellenen cuando se representa el formulario.
 
-<!-- ## Create interactive communications {#create-ic}
+<!--
+ ## Create interactive communications {#create-ic}
 
 You can create an interactive communication based on a Form Data Model that you can use to prefill interactive communication with data from configured data sources. In addition, the building blocks of an interactive communication, such as text, list, and condition document fragments can be based on a form data model.
 
@@ -101,13 +102,15 @@ For more information, see:
 
 [Conditions in Interactive Communications](conditions-interactive-communications.md)
 
-[List fragments](lists.md) -->
+[List fragments](lists.md)
+-->
 
 ## Vista previa con datos de muestra {#preview-ic}
 
 El editor del modelo de datos de formulario permite generar y editar datos de muestra para objetos de modelo de datos en el modelo de datos de formulario (FDM). Puede utilizar estos datos para previsualizar y probar formularios adaptables de <!--interactive communications and-->. Debe generar los datos de muestra antes de obtener la vista previa, tal como se describe en [Trabajo con el modelo de datos de formulario](work-with-form-data-model.md#sample).
 
-<!--To preview an interactive communication with sample Form Data Model data:
+<!--
+To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
 1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
@@ -115,23 +118,26 @@ El editor del modelo de datos de formulario permite generar y editar datos de mu
 
 The interactive communication opens with prefilled sample data.
 
-![web-preview](assets/web-preview.png)-->
+![web-preview](assets/web-preview.png)
+-->
 
 Para obtener una vista previa de un formulario adaptable con datos de muestra, abra el formulario adaptable en el modo Autor y seleccione **[!UICONTROL Vista previa]**.
 
 ## Servicio de rellenado previo con el modelo de datos de formulario {#prefill}
 
-[!DNL Experience Manager Forms] proporciona de forma predeterminada un servicio de prerrellenado del modelo de datos de formulario que puede habilitar para formularios adaptables <!--and interactive communications--> basados en el modelo de datos de formulario (FDM). El servicio de prerrellenado consulta las fuentes de datos de los objetos de modelo de datos del formulario adaptable <!--and interactive communication--> y prerrellena los datos de la forma correspondiente al representar el formulario o la comunicación.
+[!DNL Experience Manager Forms] proporciona de forma predeterminada un servicio de prerrellenado del modelo de datos de formulario que puede habilitar para formularios adaptables <!--and interactive communications--> basados en el modelo de datos de formulario (FDM). El servicio de prerrellenado consulta las fuentes de datos de los objetos de modelo de datos del formulario adaptable y prerrellena los datos de la forma correspondiente al representar el formulario o la comunicación.
 
 Para habilitar el servicio de prerrellenado del modelo de datos de formulario de un formulario adaptable, abra las propiedades del contenedor de formulario adaptable y seleccione **[!UICONTROL Servicio de prerrellenado del modelo de datos de formulario]** en la lista desplegable **[!UICONTROL Servicio de prerrellenado]** en el acordeón Básico. A continuación, guarde las propiedades.
 
 ![servicio-prerrellenado](assets/prefill-service.png)
 
-<!--To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
+<!--
+To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
 
 ![edit-ic-props](assets/edit-ic-props.png)
 
-Edit Properties dialog for an interactive communication-->
+Edit Properties dialog for an interactive communication
+-->
 
 ## Escribir los datos de los formularios adaptables enviados en fuentes de datos {#write-af}
 
@@ -149,7 +155,7 @@ Para configurar la acción de envío del modelo de datos de formulario:
 1. Especifique el **[!UICONTROL modelo de datos para enviar]**.
 1. Haga clic en **[!UICONTROL Listo]**.
 
-Al enviar el formulario, los datos del objeto de modelo de datos configurado se escriben en la fuente de datos correspondiente. Además, puede enviar a la fuente de datos un archivo adjunto de formulario mediante un modelo de datos de formulario (FDM) y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL AEM Forms] &#x200B;](data-integration.md).
+Al enviar el formulario, los datos del objeto de modelo de datos configurado se escriben en la fuente de datos correspondiente. Además, puede enviar a la fuente de datos un archivo adjunto de formulario mediante un modelo de datos de formulario (FDM) y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL AEM Forms] ](data-integration.md).
 
 <!--![data-submission](assets/data-submission.png)-->
 

@@ -8,8 +8,8 @@ exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Este documento le ayuda a comprender la creación de contenido de AEM Sites y c�
 
 ## Información general de AEM Sites {#aem-sites}
 
-AEM Sites es una plataforma completa para la creación, administración y entrega de experiencias digitales. Los autores de contenido utilizan herramientas sencillas y WYSIWYG de arrastrar y soltar para crear páginas en un editor intuitivo, que procesa el contenido tal como lo consumirá su audiencia.
+AEM Sites es una plataforma completa para la creación, administración y entrega de experiencias digitales. Los autores de contenido utilizan herramientas sencillas y WYSIWYG de arrastrar y soltar para crear páginas en un editor intuitivo, que procesa el contenido tal como lo consumirá su público.
 
 Las páginas que componen su experiencia son fáciles de administrar en la consola Sitios, lo que le ofrece una visión general del contenido en una jerarquía fácil de entender, lo que permite reorganizar, copiar y publicar fácilmente el contenido.
 
@@ -40,7 +40,7 @@ Las páginas que componen su experiencia son fáciles de administrar en la conso
 
 ## Traducción del contenido de sitios en AEM {#translating-in-aem}
 
-AEM no solo simplifica la creación y administración de contenido, sino que también facilita la traducción de ese contenido para sus audiencias, independientemente de dónde se encuentren.
+AEM no solo simplifica la creación y administración de contenido, sino que también facilita la traducción de ese contenido para sus públicos, independientemente de dónde se encuentren.
 
 En un nivel superior, la traducción en AEM consiste en cuatro pasos simples:
 

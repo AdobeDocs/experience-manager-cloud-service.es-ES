@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo añadir un repositorio administrad
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 26%
@@ -28,15 +28,19 @@ La configuración de un repositorio externo en Cloud Manager consiste en los sig
 
 1. [Agregar un repositorio externo](#add-external-repo) a un programa seleccionado
 1. [Vincular un repositorio externo validado a una canalización](#validate-ext-repo)
-   <!-- 1. Provide an access token to the external repository.
-    1. Validate ownership of the private GitHub repository. -->
+   <!--
+     1. Provide an access token to the external repository.
+    1. Validate ownership of the private GitHub repository.
+    -->
 1. [Configurar un webhook](#configure-webhook) en un repositorio externo.
 
 
 ## Añadir un repositorio externo {#add-ext-repo}
 
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+<!--
+ THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started.
+-->
 
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
@@ -62,7 +66,7 @@ La configuración de un repositorio externo en Cloud Manager consiste en los sig
    | **Seleccionar tipo de repositorio** | Obligatorio. Seleccione el tipo de repositorio que está utilizando. Si la ruta de la URL del repositorio incluye el nombre del proveedor de Git, como GitLab o Bitbucket, el tipo de repositorio ya estará preseleccionado.:<ul><li>**GitHub** (GitHub Enterprise y la versión autoalojada de GitHub)</li><li>**GitLab** (tanto `gitlab.com` como la versión autoalojada de GitLab) </li><li>**Bitbucket** (solo `bitbucket.org` - versión en la nube) es compatible. La versión autoalojada de Bitbucket quedó obsoleta a partir del 15 de febrero de 2024.</li><li>**DevOps de Azure** (`dev.azure.com`) </ul> |
    | **Descripción** | Opcional. Breve descripción del repositorio. |
 
-1. Seleccione **Guardar** para añadir el repositorio. 
+1. Seleccione **Guardar** para añadir el repositorio.
 
    Ahora, proporcione un token de acceso para validar la propiedad del repositorio externo.
 

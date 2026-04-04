@@ -2,9 +2,9 @@
 title: Brand Experience Agent
 description: Descubra cómo Brand Experience Agent acelera la modernización y la evolución de las experiencias digitales al automatizar las actualizaciones de contenido, la transformación del sitio y la resolución de problemas técnicos, lo que permite a las marcas mejorar y adaptarse continuamente a la velocidad de la IA.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Brand Experience Agent ofrece sus resultados a través de los siguientes agentes
 * [Agente de producción de experiencia](#experience-production): reduce el tiempo de comercialización con actualizaciones de contenido, creación de formularios y comunicaciones
 * [Agente de desarrollo](#development): proporciona solución de problemas asistida por IA y automatización de la compilación
 
-A través de estos agentes, Brand Experience Agent absorbe el trabajo operativo pesado detrás de las actualizaciones y la modernización, ayudando a los equipos a entregar los cambios más rápido y con mayor confianza en la era de IA de hoy.
+A través de estos agentes, Brand Experience Agent absorbe el intenso trabajo operativo detrás de las actualizaciones y la modernización, lo que ayuda a los equipos a realizar cambios más rápido y con mayor confianza en la era de la IA de hoy en día.
 
 >[!IMPORTANT]
 >

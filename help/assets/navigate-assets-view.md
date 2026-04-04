@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 73%
@@ -46,11 +46,13 @@ Al buscar recursos en una carpeta, puede utilizar la interfaz para ver las minia
 * **Papelera**: Enumere los recursos eliminados de la carpeta raíz **[!UICONTROL Assets]**. Puede seleccionar un recurso en la carpeta Papelera para restaurarlo a su ubicación original o eliminarlo permanentemente. Puede especificar una palabra clave o aplicar filtros, como el estado del recurso, tipo de archivo, tipo de MIME, tamaño de imagen, creación del recurso, y las fechas de modificación y caducidad, así como filtrar por los recursos que el usuario actual descarta. También puede aplicar filtros personalizados para buscar los recursos adecuados en la carpeta Papelera. Para obtener más información sobre el uso de filtros estándar y personalizados, consulte cómo [buscar recursos en la vista de Assets](/help/assets/search-assets-view.md).
 * **Configuración**: puede configurar varias opciones de la vista de Assets mediante **Configuración**, como formularios de metadatos, informes y administración de taxonomía.
 
-<!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
+<!--
+ TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
 * **Libraries**: Access to [!DNL Adobe Creative Cloud Team] (CCT) Libraries view. This view is visible only if the user is entitled to CCT Libraries.
 -->
 
-<!-- TBD: My Work Space shows task inbox and it is not visible on AEM Cloud Demos as of now. It is the source of truth server hence not documenting My Work Space option for now.
+<!--
+ TBD: My Work Space shows task inbox and it is not visible on AEM Cloud Demos as of now. It is the source of truth server hence not documenting My Work Space option for now.
 -->
 
 Puede abrir o contraer la barra lateral izquierda para aumentar el área de visualización de recursos disponible.
@@ -86,7 +88,8 @@ También puede previsualizar los vídeos.
 
 Si previsualiza de forma explícita un recurso, [!DNL Assets view] lo muestra como un recurso visualizado recientemente.
 
-<!-- TBD: Describe the options.
+<!--
+ TBD: Describe the options.
 
 Explicitly previewed assets are displayed as recently viewed assets. Give screenshot of this.
 Other use cases after previewing.

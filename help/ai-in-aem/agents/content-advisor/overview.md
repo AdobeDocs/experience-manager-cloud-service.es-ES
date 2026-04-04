@@ -2,9 +2,9 @@
 title: Agente del Asesor de contenido
 description: Descubra cómo el agente de asesoramiento de contenido elimina la fricción de la evolución del contenido al absorber el intenso trabajo operativo detrás de la detección y la optimización de contenido, lo que ayuda a los equipos a entregar cambios más rápido y con mayor confianza para la era de IA de hoy en día.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 907c9558-0b59-453c-b710-40b095b19cf5
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%

@@ -4,8 +4,8 @@ description: Obtenga información sobre cómo crear fragmentos de formulario en 
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 100%
 
@@ -106,7 +106,7 @@ Para crear un fragmento de formulario en el editor universal, realice los siguie
 
    ![Muestra el tipo de modelo en la pestaña Modelo de formulario](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
 
-   - **Modelo de datos de formulario (FDM)**: integre objetos y servicios de modelo de datos desde las fuentes de datos en su fragmento. Elija Modelo de datos de formulario (FDM) si el formulario requiere leer y escribir datos de varias fuentes.
+   - **Modelo de datos de formulario (FDM)**: integre servicios y objetos de modelo de datos desde las fuentes de datos en su fragmento. Elija Modelo de datos de formulario (FDM) si el formulario requiere leer y escribir datos de varias fuentes.
 
    - **Esquema JSON**: integre su formulario con un sistema back-end asociando un esquema JSON que defina la estructura de datos. Le permite añadir contenido dinámico mediante los elementos de esquema.
    - **Ninguno**: especifica que se cree el fragmento desde cero sin usar ningún modelo de formulario.
@@ -234,10 +234,12 @@ Puede realizar varias operaciones en los fragmentos de formulario mediante la in
    <td><p>Iniciar revisión y Administrar revisión</p> </td>
    <td><p>Permite iniciar y administrar una revisión del fragmento seleccionado.<br /> <br />  </p> </td>
     </tr>
-    <!--<tr>
+    <!--
+    <tr>
    <td><p>Add Dictionary</p> </td>
    <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-    </tr>-->
+    </tr>
+    -->
     <tr>
    <td><p>Publicar o cancelar la publicación</p> </td>
    <td><p>Publica/cancela la publicación del fragmento seleccionado.<br /> <br /> </p> </td>

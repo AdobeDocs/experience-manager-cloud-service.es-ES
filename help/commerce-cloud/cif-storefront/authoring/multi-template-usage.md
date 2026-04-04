@@ -1,5 +1,5 @@
 ---
-title: Creación de páginas de múltiples productos y categorías
+title: Creación de múltiples páginas de producto y categoría
 description: Aprenda a enriquecer las páginas de aterrizaje de categorías y detalles del producto con contenido de marketing segmentado.
 sub-product: Commerce
 version: Experience Manager as a Cloud Service
@@ -12,7 +12,7 @@ thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 46%
@@ -20,15 +20,15 @@ ht-degree: 46%
 ---
 
 
-# Creación de páginas de múltiples productos y categorías {#multiple}
+# Creación de múltiples páginas de producto y categoría {#multiple}
 
 >[!NOTE]
 >
 > Esta funcionalidad solo funciona para tiendas basadas en CIF (por ejemplo, Venia).
 
-Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) ofrecen a los autores de contenido la capacidad de crear categorías y páginas de productos adicionales. Estas páginas pueden enriquecerse con contenido de marketing adicional y configurarse para dirigirse a categorías y productos específicos. El siguiente vídeo describe la configuración de esta función.
+Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) ofrecen a los autores de contenido la capacidad de crear páginas de categoría y de producto adicionales. Estas páginas pueden enriquecerse con contenido de marketing adicional y configurarse para dirigirse a categorías y productos específicos. El siguiente vídeo describe la configuración de esta función.
 
->[!VIDEO](https://video.tv.adobe.com/v/32785/?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
 Las páginas de productos específicos se pueden seleccionar mediante un SKU o por la categoría de un producto. Este último solo es compatible con algunos de los formatos de URL de página de producto predeterminados disponibles, ya que requiere que la información de categoría se codifique en la URL del producto.
 

@@ -4,7 +4,7 @@ description: Conozca las directrices y las prácticas recomendadas para utilizar
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 943685ed9c33ba42c4dd1cb941b2eca1cce8bfe8
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1389'
 ht-degree: 14%
@@ -16,13 +16,14 @@ ht-degree: 14%
 
 ## Directrices y prácticas recomendadas {#best-practices}
 
-<!-- Alexandru: hiding for now
+<!--
+ Alexandru: hiding for now
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_guidelines"
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es" text="Important Considerations for using Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/group-migration.md#important-considerations" text="Important Considerations when Migrating Groups" 
 
 -->
@@ -38,9 +39,9 @@ No se admiten versiones anteriores a la 2.0.0 y se recomienda utilizar la versi�
 
 Las siguientes directrices y prácticas recomendadas se aplican a la nueva versión de la herramienta de transferencia de contenido:
 
-* Ejecute [Limpieza de revisión](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=es) y [comprobaciones de coherencia del almacén de datos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=es) en el repositorio de **origen** para que pueda identificar posibles problemas y reducir el tamaño del repositorio.
+* Ejecute [Limpieza de revisión](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=es) y [comprobaciones de coherencia del almacén de datos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) en el repositorio de **origen** para que pueda identificar posibles problemas y reducir el tamaño del repositorio.
 
-* En la fase de ingesta, Adobe recomienda que ejecute la ingesta utilizando el modo *wipe* habilitado en el que se elimina el repositorio existente (Author o Publish) en el entorno del Cloud Service de Adobe Experience Manager AEM de destino (). A continuación, actualice con los datos del conjunto de migración. Este modo es más rápido que el modo sin borrado, donde el conjunto de migración se aplica sobre el contenido actual.
+* En la fase de ingesta, Adobe recomienda que ejecute la ingesta utilizando el modo *wipe* activado en el que se elimina el repositorio existente (Autor o Publicación) en el entorno de Cloud Service de Adobe Experience Manager (AEM) de destino. A continuación, actualice con los datos del conjunto de migración. Este modo es más rápido que el modo sin borrado, donde el conjunto de migración se aplica sobre el contenido actual.
 
 * Una vez completada la actividad de transferencia de contenido, se requiere la estructura de proyecto correcta en el entorno de Cloud Service para garantizar que el contenido se procese correctamente en el entorno de Cloud Service.
 
@@ -60,39 +61,39 @@ Por lo tanto, para un tamaño de almacén de segmentos de 20 GB, el espacio libr
 
 En la sección siguiente se comprenden las consideraciones importantes al ejecutar la herramienta de transferencia de contenido:
 
-* AEM El requisito mínimo del sistema para la herramienta de transferencia de contenido es de 6.3+ y Java™ 8, respectivamente. AEM AEM Si su versión es menor, actualice el repositorio de contenido a la versión 6.5 de la versión, que le permite usar la herramienta de transferencia de contenido. La versión es la siguiente:.
+* El requisito mínimo del sistema para la herramienta de transferencia de contenido es AEM 6.3+ y Java™ 8. Si su versión de AEM es anterior, actualice el repositorio de contenido a AEM 6.5 para utilizar la herramienta de transferencia de contenido.
 
-* AEM AEM Java™ debe configurarse en el entorno de la, de modo que el usuario que inicia el comando `java` pueda ejecutarlo de forma independiente. El usuario que inicia el proceso de ejecución del comando debe tener en cuenta lo siguiente
+* Java™ debe configurarse en el entorno de AEM para que el usuario que inicia AEM pueda ejecutar el comando `java`.
 
-* La herramienta Content Transfer Tool se puede utilizar con los siguientes tipos de almacén de datos: almacén de datos de archivos, almacén de datos S3, almacén de datos compartido S3 y almacén de datos del almacén de Azure Blob.
+* La herramienta Content Transfer Tool se puede utilizar con los siguientes tipos de almacén de datos: almacén de datos de archivos, almacén de datos S3, almacén de datos compartido S3 y almacén de datos del almacén de blobs de Azure.
 
 * Si está usando un *Entorno de espacio aislado*, asegúrese de que su entorno esté actualizado y actualizado a la última versión. Si utiliza un *Entorno de producción*, se actualiza automáticamente.
 
-* AEM Para iniciar una ingesta, debe pertenecer al grupo local de **administradores** de la instancia de Cloud Service a la que está transfiriendo el contenido. Los usuarios sin privilegios no pueden iniciar ingestas sin proporcionar manualmente el token de migración.
+* Para iniciar una ingesta, debe pertenecer al grupo local de **administradores** de AEM en la instancia de Cloud Service a la que está transfiriendo el contenido. Los usuarios sin privilegios no pueden iniciar ingestas sin proporcionar manualmente el token de migración.
 
-* Si la opción **Borrar contenido existente en la instancia de Cloud antes de la ingesta** está habilitada, se eliminará todo el repositorio existente y se creará un nuevo repositorio en el que introducir contenido. Esto significa que restablece todos los ajustes, incluidos los permisos en la instancia del Cloud Service de destino. También es verdadero para un usuario administrador agregado al grupo **administradores**. Se debe leer al usuario en el grupo **administradores** para recuperar el token de acceso para la herramienta de transferencia de contenido.
+* Si la opción **Borrar contenido existente en la instancia de Cloud antes de la ingesta** está habilitada, se eliminará todo el repositorio existente y se creará un nuevo repositorio en el que introducir contenido. Esto significa que restablece todos los ajustes, incluidos los permisos, en la instancia de Cloud Service de destino. También es verdadero para un usuario administrador agregado al grupo **administradores**. Se debe leer al usuario en el grupo **administradores** para recuperar el token de acceso para la herramienta de transferencia de contenido.
 
 * La clave de extracción es válida durante 14 días desde el momento en que se creó o renovó. Se puede renovar en cualquier momento. Si la clave de extracción ha caducado, no se puede realizar una extracción.
 
-* La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de análisis de contenido antes de transferir contenido de la instancia de origen a la instancia de destino. Por ejemplo, CTT no diferencia entre contenido publicado y no publicado al introducir contenido en un entorno de Publish. Independientemente del contenido especificado en el conjunto de migración, este se incorpora en la instancia de destino elegida. Un usuario puede ingerir un conjunto de migración en una instancia de autor, en una instancia de Publish o en ambas. El Adobe recomienda que, al mover contenido a una instancia de Production, CTT se instale en la instancia de Author de origen para mover contenido a la instancia de Author de destino. Del mismo modo, instale CTT en la instancia de Publish de origen para mover contenido a la instancia de Publish de destino. Consulte [Ejecución de la herramienta de transferencia de contenido en una instancia de Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es#running-tool) para obtener más información.
+* La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de análisis de contenido antes de transferir contenido de la instancia de origen a la instancia de destino. Por ejemplo, CTT no diferencia entre contenido publicado y no publicado al ingerir contenido en un entorno de publicación. Independientemente del contenido especificado en el conjunto de migración, este se incorpora en la instancia de destino elegida. Un usuario puede ingerir un conjunto de migración en una instancia de autor, en una instancia de publicación o en ambas. Adobe recomienda que, al mover contenido a una instancia de Production, CTT se instale en la instancia de Author de origen para mover contenido a la instancia de Author de destino. Del mismo modo, instale CTT en la instancia de publicación de origen para mover contenido a la instancia de publicación de destino. Consulte [Ejecución de la herramienta de transferencia de contenido en una instancia de publicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obtener más información.
 
 * Los grupos transferidos por la herramienta de transferencia de contenido son solo aquellos grupos que el contenido requiere para satisfacer los permisos. El proceso _Extracción_ copia todo el(la) `/home/groups` en el conjunto de migración. Para obtener más información, consulte [Migración de grupos](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md). El proceso _Ingesta_ copia todos los grupos a los que se hace referencia en las ACL de contenido migradas. Consulte [Migración de grupos de usuarios cerrados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) para obtener consideraciones adicionales para los grupos utilizados en una directiva de grupo de usuarios cerrados (CUG).
 
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
-* La *fase de ingesta* para el autor reduce la implementación de todo el autor. AEM Esto significa que Author no está disponible durante todo el proceso de ingesta de datos. Asegúrese también de que no se ejecuten canalizaciones de Cloud Manager mientras está ejecutando la fase *Ingesta*.
+* La *fase de ingesta* para el autor reduce la implementación de todo el autor. Significa que la AEM de creación no está disponible durante todo el proceso de ingesta. Asegúrese también de que no se ejecuten canalizaciones de Cloud Manager mientras está ejecutando la fase *Ingesta*.
 
-* AEM Cuando se usa `Amazon S3` o `Azure` como almacén de datos en el sistema de almacenamiento de datos de origen, el almacén de datos debe configurarse para que los blobs almacenados no se puedan eliminar (recolección de elementos no utilizados). Esto garantiza la integridad de los datos de índice y si no se configura de esta manera, pueden producirse extracciones fallidas debido a la falta de integridad de estos datos de índice.
+* Cuando se usa `Amazon S3` o `Azure` como almacén de datos en el sistema de AEM de origen, el almacén de datos debe configurarse de modo que los blobs almacenados no se puedan eliminar (recolección de elementos no utilizados). Esto garantiza la integridad de los datos de índice y si no se configura de esta manera, pueden producirse extracciones fallidas debido a la falta de integridad de estos datos de índice.
 
-* Si utiliza índices personalizados, debe asegurarse de configurarlos con el nodo `tika` antes de ejecutar la herramienta de transferencia de contenido. Consulte [Preparación de la nueva definición de índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=es#preparing-the-new-index-definition) para obtener más información.
+* Si utiliza índices personalizados, debe asegurarse de configurarlos con el nodo `tika` antes de ejecutar la herramienta de transferencia de contenido. Consulte [Preparación de la nueva definición de índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition) para obtener más información.
 
 * Si tiene intención de realizar recargas, la estructura de contenido del contenido existente no debe cambiar desde el momento en que se realiza la extracción inicial hasta el momento en que se ejecuta la extracción superior. Las recargas no se pueden ejecutar en contenido cuya estructura se haya cambiado desde la extracción inicial. Asegúrese de restringir esto durante el proceso de migración.
 
 * Si tiene intención de incluir versiones como parte de un conjunto de migración y está realizando recargas con `wipe=false`, debe deshabilitar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
 
-* La herramienta de transferencia de contenido (CTT) no admite las ingestas de combinación. Para consolidar contenido de varios sistemas en una única instancia de Cloud Service, solo se pueden migrar versiones de un sistema de origen. Este proceso requiere el uso de migraciones con el parámetro wipe=false, lo que puede resultar en tiempos de ingesta prolongados debido a la naturaleza incremental de la operación. Si es posible, consolide el contenido en un único sistema de origen antes de comenzar la migración para eliminar la necesidad de combinar contenido.
+* La herramienta de transferencia de contenido (CTT) no admite las ingestas de combinación. Para consolidar contenido de varios sistemas en una sola instancia de Cloud Service, solo se pueden migrar versiones de un sistema de origen. Este proceso requiere el uso de migraciones con el parámetro wipe=false, lo que puede resultar en tiempos de ingesta prolongados debido a la naturaleza incremental de la operación. Si es posible, consolide el contenido en un único sistema de origen antes de comenzar la migración para eliminar la necesidad de combinar contenido.
 
-* Un conjunto de migración caduca después de un período prolongado de inactividad, después del cual sus datos ya no están disponibles. Revise [Expiración del conjunto de migración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=es#migration-set-expiry) para obtener más detalles.
+* Un conjunto de migración caduca después de un período prolongado de inactividad, después del cual sus datos ya no están disponibles. Revise [Expiración del conjunto de migración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) para obtener más detalles.
 
 ## Siguientes pasos {#whats-next}
 

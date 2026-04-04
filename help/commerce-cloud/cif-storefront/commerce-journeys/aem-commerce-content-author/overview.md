@@ -5,7 +5,7 @@ exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 90%
@@ -35,7 +35,7 @@ Los recorridos de documentación están diseñados en torno a los principios de 
 
 Si desea saber cómo recomienda Adobe resolver los casos de sitios comerciales con AEM, los recorridos de AEM Sites son el punto de inicio.
 
-## Audiencia {#audience}
+## Público {#audience}
 
 Este recorrido está diseñado para el autor de contenido de AEM Commerce. Este recorrido describe los requisitos, pasos y enfoques para la introducción y la gestión de las páginas del catálogo, las plantillas y las experiencias de producto completas.
 

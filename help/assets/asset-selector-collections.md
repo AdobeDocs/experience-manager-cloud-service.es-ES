@@ -4,7 +4,7 @@ description: Uso de colecciones de selectores de recursos.
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 7%
@@ -28,7 +28,8 @@ Puede ver las colecciones en el Selector de recursos tanto en la vista de carril
 ![Colecciones en la vista de carril](assets/collections-rail-modal-view.png)
 
 <!--
-Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).-->
+Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).
+-->
 
 Además, también puede personalizar la selección de recursos en la pestaña Colecciones. Para ello, puede personalizarlo con `handleSelection`. Ver [administración de la selección de Assets mediante el esquema de objetos](/help/assets/asset-selector-customization.md#handling-selection).
 

@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 keywords: invocar mejoras del servicio en VRE, rellenar opciones desplegables utilizando invocar servicio, establecer panel repetible utilizando la salida del servicio de invocación, establecer panel utilizando la salida del servicio de invocación, usar el parámetro de salida del servicio de invocación para validar otro campo.
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: e69201c40b72f4eaabe3da634ecf05bd04769f6b
 workflow-type: tm+mt
 source-wordcount: '2156'
 ht-degree: 1%
@@ -172,7 +172,7 @@ Escriba `101` en el cuadro de texto `Pet ID` para rellenar dinámicamente las op
 
 ![Resultado](/help/forms/assets/output1.png)
 
-> 
+>[!NOTE]
 >
 > Las opciones desplegables también se pueden rellenar dinámicamente invocando un servicio, analizando la respuesta JSON y aplicando funciones personalizadas. Para obtener más información, vea [esta sección](#retrieve-property-values-from-a-json-array).
 

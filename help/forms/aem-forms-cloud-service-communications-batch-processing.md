@@ -5,7 +5,7 @@ feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1716'
 ht-degree: 99%
@@ -22,13 +22,15 @@ Las comunicaciones ofrecen API para la generación de documentos bajo demanda y 
 
 * Las API por lotes (API asíncronas) son adecuadas para casos de uso planificados de alto rendimiento y de generación de múltiples documentos. Estas API generan documentos por lotes. Por ejemplo, facturas telefónicas, extractos de tarjetas de crédito y declaraciones de beneficios generados cada mes.
 
-<!-- The following skills are required to create templates and use HTTP APIs: 
+<!--
+ The following skills are required to create templates and use HTTP APIs: 
 
 * Understanding of Adobe Forms Designer or Acrobat Forms to create templates
 
 * Understanding of HTTP APIs and experience of using HTTP APIs
 
-* Basic understanding of Adobe Experience Manager -->
+* Basic understanding of Adobe Experience Manager
+-->
 
 
 ## Operaciones por lotes {#batch-operations}

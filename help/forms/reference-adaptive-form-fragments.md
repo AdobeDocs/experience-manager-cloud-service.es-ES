@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 92%
@@ -45,9 +45,11 @@ Incluye campos para especificar la dirección de campaña de correo. Los campos 
 
 ![Fragmento Dirección](assets/address.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/address-1.png)-->
+](assets/address-1.png)
+-->
 
 ## Información de contacto {#contact-information}
 
@@ -55,9 +57,11 @@ Incluye campos para capturar el número de teléfono y la dirección de correo e
 
 ![Fragmento Información de contacto](assets/contact-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/contact-info-1.png)-->
+](assets/contact-info-1.png)
+-->
 
 ## Información de la tarjeta de crédito {#credit-card-information}
 
@@ -70,9 +74,11 @@ Incluye campos para capturar detalles sobre el empleo actual, como el estado lab
 
 ![Fragmento Empleo actual](assets/current-emp.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/current-emp-1.png)-->
+](assets/current-emp-1.png)
+-->
 
 ## Información sobre familiares dependientes {#dependents-information}
 
@@ -80,9 +86,11 @@ Incluye campos para especificar información sobre uno o más familiares dependi
 
 ![Fragmento Información sobre familiares dependientes](assets/dependents-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/dependents-info-1.png)-->
+](assets/dependents-info-1.png)
+-->
 
 ## Historial laboral {#employment-history}
 
@@ -90,9 +98,11 @@ Incluye campos para capturar el historial laboral. Permite agregar varias organi
 
 ![Fragmento Historial laboral](assets/emp-history.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/emp-history-1.png)-->
+](assets/emp-history-1.png)
+-->
 
 ## Ingresos y gastos {#income-expenditure}
 
@@ -100,9 +110,11 @@ Incluye campos para capturar el flujo de efectivo y los gastos mensuales. Los fo
 
 ![Fragmento Ingresos y gastos](assets/income.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/income-1.png)-->
+](assets/income-1.png)
+-->
 
 ## Nombre {#name}
 
@@ -110,9 +122,11 @@ Incluye campos para especificar el título, el nombre, el primer apellido y el s
 
 ![Fragmento Nombre](assets/name.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/name-1.png)-->
+](assets/name-1.png)
+-->
 
 ## Términos y condiciones {#terms-conditions}
 
@@ -120,9 +134,11 @@ Especifica los términos y condiciones que deben aceptar los usuarios antes de e
 
 ![Fragmento Términos y condiciones](assets/tnc.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-1.png)-->
+](assets/tnc-1.png)
+-->
 
 ## Términos y condiciones con firma manuscrita {#terms-conditions-with-scribble}
 
@@ -130,6 +146,8 @@ Especifica los términos y condiciones que deben aceptar y firmar los usuarios a
 
 ![Términos y condiciones con firma manuscrita](assets/tnc-scribble.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-scribble-1.png)-->
+](assets/tnc-scribble-1.png)
+-->

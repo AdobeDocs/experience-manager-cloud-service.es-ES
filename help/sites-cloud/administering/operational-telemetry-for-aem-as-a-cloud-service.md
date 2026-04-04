@@ -5,7 +5,7 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 1%
@@ -43,22 +43,24 @@ El servicio de telemetría operativa está diseñado para minimizar la recopilac
 * Nombre de host del sitio que se está visitando, por ejemplo: `experienceleague.adobe.com`
 * El tipo de agente de usuario y sistema operativo generales que se utilizan para mostrar la página, como: `desktop:windows` o `mobile:ios`
 * La hora de la recopilación de datos, como: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* Dirección URL de la página que se está visitando, por ejemplo: `https://experienceleague.adobe.com/docs?lang=es`
+* Dirección URL de la página que se está visitando, por ejemplo: `https://experienceleague.adobe.com/docs`
 * La URL del referente (la URL de la página que está vinculada a la página actual, si el usuario ha seguido un vínculo)
 * Identificador de la vista de página generado aleatoriamente, con un formato similar al siguiente: `2Ac6`
 * El peso o la inversa de la tasa de muestreo, como: `100`. Significa que solo se registra una de cada cien vistas de página
 * El punto de comprobación, o nombre, de un evento concreto en la secuencia de carga de la página. O bien, interactuar con él como visitante
 * El origen, o identificador, del elemento DOM con el que interactúa el usuario para el punto de comprobación mencionado anteriormente. Por ejemplo, podría ser una imagen
 * El objetivo o vínculo a una página o recurso externo con el que el usuario interactúa para el punto de comprobación mencionado anteriormente. Por ejemplo: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* Las [constantes vitales web principales (CWV)](https://web.dev/articles/lcp) métricas de rendimiento [Pintado de contenido más grande (LCP)](https://web.dev/articles/lcp), [Interacción con la siguiente pintura (INP)](https://web.dev/articles/inp) y [Desplazamiento de diseño acumulativo (CLS)](https://web.dev/articles/cls) que describen la calidad de experiencia del visitante.
+* Las métricas de rendimiento [Core Web Vitals (CWV)](https://web.dev/articles/lcp) [Pintado de contenido más grande (LCP)](https://web.dev/articles/lcp), [Interacción con la siguiente pintura (INP)](https://web.dev/articles/inp) y [Desplazamiento de diseño acumulativo (CLS)](https://web.dev/articles/cls) que describen la calidad de experiencia del visitante.
 
 ## Cómo funciona la telemetría operativa para un cliente {#how-operational-telemetry-works-for-a-customer}
 
 La telemetría operativa supervisa automáticamente el tráfico del lado del cliente. Como cliente de Adobe, no necesita realizar ningún paso adicional, ya que este servicio está perfectamente integrado en su configuración existente. Con el servicio de telemetría operativa disponible en general, se beneficia automáticamente de esta nueva función. El servicio de telemetría operativa no expone ninguna métrica de cara al cliente para monitorizar en la actualidad. Estamos trabajando para ofrecerle esta funcionalidad lo antes posible.
 
-<!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
+<!--
+ Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
-If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
+If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99).
+-->
 
 ## Cómo utiliza Adobe la telemetría operativa {#how-operational-telemetry-data-is-being-used}
 
@@ -82,7 +84,8 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 ## Preguntas frecuentes {#faq}
 
-<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+<!--
+ REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
 1. **Can customers integrate the Operational Telemetry service scripts with third-party systems like Dynatrace?**
 
    Yes.
@@ -94,7 +97,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **La ruta de acceso `/.rum` está bloqueada en mi sitio, ¿cómo debo corregirla?**
 
-   Se requiere la ruta de acceso `/.rum` para que funcione la colección de telemetría operativa. Si utiliza una CDN delante de AEM as a Cloud Service de Adobe, asegúrese de que la ruta `/.rum` se reenvíe al mismo origen de AEM que el resto del contenido de AEM. Y asegúrese de que no se ajuste de ninguna manera. Como alternativa, puede cambiar el host que se va a utilizar para la telemetría operativa a `rum.hlx.page` estableciendo una variable de entorno en Cloud Manager[&#x200B; denominada &#x200B;](/help/implementing/cloud-manager/environment-variables.md#add-variables) al valor `AEM_OPTEL_EXTERNAL`. `true` Si desea volver a cambiar a las mismas solicitudes de dominio en un momento posterior, simplemente elimine esa variable de entorno de nuevo.
+   Se requiere la ruta de acceso `/.rum` para que funcione la colección de telemetría operativa. Si utiliza una CDN delante de AEM as a Cloud Service de Adobe, asegúrese de que la ruta `/.rum` se reenvíe al mismo origen de AEM que el resto del contenido de AEM. Y asegúrese de que no se ajuste de ninguna manera. Como alternativa, puede cambiar el host que se va a utilizar para la telemetría operativa a `rum.hlx.page` estableciendo una variable de entorno en Cloud Manager[ denominada ](/help/implementing/cloud-manager/environment-variables.md#add-variables) al valor `AEM_OPTEL_EXTERNAL`. `true` Si desea volver a cambiar a las mismas solicitudes de dominio en un momento posterior, simplemente elimine esa variable de entorno de nuevo.
 
 1. **¿Cuenta la colección de telemetría operativa para las solicitudes de contenido con fines contractuales?**
 
@@ -104,7 +107,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Adobe recomienda utilizar la telemetría operativa debido a sus importantes ventajas y que permitirá a Adobe ayudarle a optimizar sus experiencias digitales mejorando el rendimiento del sitio web. El servicio está diseñado para ser ininterrumpido y no tiene ningún impacto en el rendimiento de su sitio web.
 
-   La exclusión puede significar perder la oportunidad de mejorar la participación del tráfico en el sitio web. Sin embargo, si encuentra algún problema, puede deshabilitar la telemetría operativa estableciendo una variable de entorno en Cloud Manager[&#x200B; denominada &#x200B;](/help/implementing/cloud-manager/environment-variables.md#add-variables) con el valor `AEM_OPTEL_DISABLED`. `true` Si desea volver a activar la Telemetría operativa en un momento posterior, simplemente elimine de nuevo esa variable de entorno.
+   La exclusión puede significar perder la oportunidad de mejorar la participación del tráfico en el sitio web. Sin embargo, si encuentra algún problema, puede deshabilitar la telemetría operativa estableciendo una variable de entorno en Cloud Manager[ denominada ](/help/implementing/cloud-manager/environment-variables.md#add-variables) con el valor `AEM_OPTEL_DISABLED`. `true` Si desea volver a activar la Telemetría operativa en un momento posterior, simplemente elimine de nuevo esa variable de entorno.
 
 1. **¿Puedo usar una directiva de seguridad de contenido con un nonce?**
 

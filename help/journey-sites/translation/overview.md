@@ -8,8 +8,8 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Comience aquí para obtener un recorrido guiado con el que traducirá su conteni
 
 AEM Sites es un potente conjunto de herramientas para crear y administrar experiencias digitales. Los autores de contenido pueden crear fácilmente experiencias digitales mediante el editor de Sites y organizar el contenido mediante la consola de Sites, a la vez que pueden ver el contenido en el momento de su publicación, tal y como lo envía AEM a los públicos en los distintos canales.
 
-AEM ofrece herramientas igualmente poderosas para traducir su contenido, lo que le permite entregarlo lo antes posible a sus audiencias en otras regiones o configuraciones regionales. Este recorrido de documentación le presenta las herramientas de creación para que entienda cómo se crea y administra el contenido en AEM y luego profundiza en lo que necesita saber para administrar su propio proyecto de traducción.
+AEM ofrece herramientas igualmente poderosas para traducir su contenido, lo que le permite entregarlo lo antes posible a sus públicos en otras regiones o configuraciones regionales. Este recorrido de documentación le presenta las herramientas de creación para que entienda cómo se crea y administra el contenido en AEM y luego profundiza en lo que necesita saber para administrar su propio proyecto de traducción.
 
 Si ya está familiarizado con AEM Sites y sus requisitos de traducción, es posible que ya tenga los conocimientos básicos de este recorrido. Si es así, considere la posibilidad de consultar nuestra documentación técnica vinculada en la [sección de recursos adicionales a continuación](#additional-resources).
 
@@ -35,7 +35,7 @@ Los recorridos de documentación están diseñados en torno a los principios de 
 
 Si desea saber cómo recomienda Adobe resolver los casos de sitios comerciales con AEM, los recorridos de AEM Sites son el punto de inicio.
 
-## Audiencia {#audience}
+## Público {#audience}
 
 Este recorrido está diseñado para el especialista en traducción, a menudo denominado gestor de proyectos de traducción o TPM. Este recorrido establece los requisitos, pasos y métodos para traducir contenido de AEM Sites. El recorrido puede definir usuarios adicionales con los que debe interactuar el especialista en traducción, pero el punto de vista del recorrido es el del especialista en traducción.
 
@@ -45,7 +45,7 @@ Los siguientes son los perfiles que interactúan en este recorrido.
 
 | Grupo de usuarios | Descripción | Rol en el recorrido |
 |---|---|---|
-| Especialista en traducción | Define qué contenido debe traducirse y gestiona esos flujos de trabajo | Audiencia de este recorrido |
+| Especialista en traducción | Define qué contenido debe traducirse y gestiona esos flujos de trabajo | Público de este recorrido |
 | Autor de contenido | Crea y administra contenido que se entrega como sitios | Los autores de contenido crean contenido que el especialista en traducción debe traducir. |
 | Administrador | Gestiona la configuración base de AEM | El especialista en traducción trabaja con el administrador para realizar los cambios de configuración necesarios para la traducción, como instalar un conector de traducción. |
 | Arquitecto de contenido | Analiza los requisitos de los datos que deben entregarse como sitios y define la estructura de estos datos | Los especialistas en traducción trabajan con el arquitecto de contenido para definir la organización del contenido y así poder traducirlo fácilmente. |

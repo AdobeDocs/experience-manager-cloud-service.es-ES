@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 100%
@@ -110,7 +110,7 @@ Para editar una página:
 
    ![Edición de una página](assets/sites-editor-title.png)
 
-Puede volver a la consola Sites regresando a esa pestaña en el explorador en cualquier momento. Con el editor de Sites puede ver rápidamente el contenido de la página, tal y como lo verán los autores de contenido y la audiencia.
+Puede volver a la consola Sites regresando a esa pestaña en el explorador en cualquier momento. Con el editor de Sites puede ver rápidamente el contenido de la página, tal y como lo verán los autores de contenido y el público.
 
 >[!NOTE]
 >
