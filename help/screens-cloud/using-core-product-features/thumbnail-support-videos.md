@@ -40,7 +40,7 @@ Siga los pasos a continuación para utilizar las miniaturas en los vídeos:
 1. Vaya a un canal de Screens existente o cree un canal.
 
    >[!NOTE]
-   >Para obtener información sobre cómo crear un canal y agregar contenido a un canal, consulte [Creación y administración de un canal en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
+   >Para obtener información sobre cómo crear un canal y agregar contenido a un canal, consulte [Creación y administración de un canal en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=es).
 
 1. Seleccione el canal. En la barra de acciones, haga clic en **Editar** para abrir el editor.
 

@@ -49,7 +49,7 @@ AEM Sites se puede utilizar ahora como origen de contenido para Edge Delivery Se
 
 ![Creación de AEM](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Para obtener más información, consulte la [documentación](/help/edge/overview.md) y vea [AEM Gems: Introducción a la creación con AEM y Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
+Para obtener más información, consulte la [documentación](/help/edge/overview.md) y vea [AEM Gems: Introducción a la creación con AEM y Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=es#M43905)
 
 **Editor universal para implementaciones sin encabezado**
 
