@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: eaaf86a24a83b6516959e66a010ca5df2e060123
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 90%
@@ -32,7 +32,7 @@ Una vez seleccionados los archivos, aparece un cuadro de diálogo de confirmaci�
 
 Una vez que todos los archivos estén en cola, haga clic en **[!UICONTROL Cargar]**.
 
-![Carga de archivos y carpetas](assets/upload-browse-files-folders.png)
+![Carga de archivos y carpetas](assets/upload-files.png)
 
 *Imagen: antes de cargar los recursos seleccionados, puede añadirlos o eliminarlos de la cola.*
 
@@ -48,13 +48,13 @@ Para realizar un seguimiento del progreso de carga, haga clic en la opción de *
 
 Para ver un subconjunto de recursos en función del progreso o estado de carga, utilice el filtro de la barra lateral **[!UICONTROL Progreso de carga]**. Los distintos filtros muestran todos los recursos, las cargas completadas, las cargas en curso, los recursos en cola que se van a cargar, las cargas en pausa, los recursos duplicados y los recursos que no se han cargado.
 
-![Filtrado del progreso de carga en función del estado de carga](assets/filter-upload-progress.png)
+![Filtrado del progreso de carga en función del estado de carga](assets/filter-progress.png)
 
 *Imagen: filtre los recursos que ha intentado cargar en función de su estado de carga o del progreso de carga.*
 
 Inmediatamente después de cargar los recursos, [!DNL Assets view] los procesa para generar miniaturas y procesar metadatos. Para muchos recursos, el procesamiento lleva algún tiempo. Si no ve una miniatura y ve un mensaje de procesamiento en la miniatura del marcador de posición, vuelva a comprobar la carpeta después de unos minutos. Durante el procesamiento, entre otras cosas, [!DNL Assets view] genera las representaciones, añade las etiquetas inteligentes e indexa los detalles del recurso para la búsqueda.
 
-![Los recursos son procesos tras la carga y el mosaico muestra el procesamiento](assets/upload-processing.png)
+![Los recursos son procesos tras la carga y el mosaico muestra el procesamiento](assets/upload-process.png)
 
 *Imagen: los recursos cargados muestran el procesamiento en el mosaico que se procesa.*
 
@@ -70,17 +70,17 @@ Inmediatamente después de cargar los recursos, [!DNL Assets view] los procesa p
 
 Si la carga de un recurso admitido falla por algún motivo, haga clic en **[!UICONTROL Reintentar]** en el panel [!UICONTROL Progreso de carga].
 
-![Reintento de una carga fallida](assets/upload-retry.png)
+![Reintento de una carga fallida](assets/upload-failed.png)
 
 *Imagen: vuelva a intentarlo si un archivo compatible no se puede cargar por algún motivo.*
 
 Si intenta cargar recursos duplicados, estos no se cargarán hasta que confirme explícitamente la carga. Al principio, los recursos duplicados se marcan como cargas fallidas. Para resolverlo, simplemente puede crear una versión, eliminar y reemplazar los recursos existentes o crear una copia duplicada cambiando el nombre del recurso. Puede resolver estos errores de un recurso a la vez o hacerlo por lotes para todos los duplicados fallidos de una sola vez.
 
-![Administración de recursos duplicados de uno en uno](assets/uploads-manage-duplicates.png)
+![Administración de recursos duplicados de uno en uno](assets/duplicate-new.png)
 
 *Imagen: para los recursos duplicados que no se cargan de forma predeterminada, resuelva el problema de uno en uno.*
 
-![Administración de todas las cargas fallidas por lotes](assets/upload-progress-manage-failed-uploads.png)
+![Administración de todas las cargas fallidas por lotes](assets/manage-duplicate.png)
 
 *Imagen: para los recursos duplicados que no se cargan de forma predeterminada, resuelva los problemas de todos los recursos a la vez.*
 
@@ -98,7 +98,7 @@ Los usuarios pueden eliminar recursos o carpetas individuales que ya no sean nec
 
 * Utilice la opción disponible en la miniatura de un recurso o de una carpeta.
 
-  ![Opciones en la miniatura de un recurso para administrar un recurso](assets/options-on-thumbnail.png)
+  ![Opciones en la miniatura de un recurso para administrar un recurso](assets/delete-new.png)
 
   *Imagen: las acciones para archivos y carpetas están disponibles en el mosaico del recurso o de la carpeta.*
 
@@ -112,4 +112,4 @@ Los usuarios pueden eliminar recursos o carpetas individuales que ya no sean nec
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)

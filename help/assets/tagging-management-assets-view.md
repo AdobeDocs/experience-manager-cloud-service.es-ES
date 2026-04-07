@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 1f71c905fadd51d95fc5292ce95903c46895ec94
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 98%
@@ -25,7 +25,7 @@ Las listas planas de vocabularios controlados pueden volverse inmanejables con e
 
 Puede crear un espacio de nombres en el nivel raíz y crear una estructura jerárquica de subetiquetas dentro del espacio de nombres. Por ejemplo, puede crear un espacio de nombres `Activities` en el nivel de raíz y tener etiquetas `Cycling`, `Hiking` y `Running` dentro del espacio de nombres. Puede tener más subetiquetas `Clothing` y `Shoes` dentro de `Running`.
 
-![Administración de etiquetado](assets/tags-hierarchy.png)
+![Administración de etiquetas](assets/tags-hierarchy.png)
 
 El etiquetado ofrece muchas ventajas, como las siguientes:
 
@@ -199,7 +199,7 @@ La vista de Assets permite importar etiquetas bloqueadas desde una fuente de dat
 1. Elija el archivo CSV en su dispositivo. Haga clic en **[!UICONTROL seleccionar un archivo]** para desplazarse al archivo desde su dispositivo. También puede arrastrar y soltar el archivo CSV desde su dispositivo.
 1. Haga clic en **[!UICONTROL Cargar]**. Las etiquetas del archivo CSV se enumeran en la lista de etiquetas bloqueadas.
 
-   ![Importar lista de etiquetas bloqueadas](assets/import-blocked-tags.png)
+   ![Importar lista de etiquetas bloqueadas](assets/import-csv-new.png)
 
 Si desea descargar una plantilla de etiquetas bloqueadas, siga estos pasos:
 
