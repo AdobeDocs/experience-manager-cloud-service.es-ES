@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: ae834c77b2f2a12cac3dde132a2357d72353cb55
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '707'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Estas representaciones permiten a las organizaciones ofrecer experiencias person
    * [Ajustes preestablecidos de imagen](/help/assets/dynamic-media/managing-image-presets.md)
 
   Puede [cambiar la vista](/help/assets/assets-view-introduction.md#how-to-access-assets-view) más adelante para obtener una vista previa de las representaciones dinámicas en la vista de Assets.
-* Publique recursos en Dynamic Media para que las representaciones de Dynamic Media estén disponibles en la vista de Assets. Para obtener más información, consulte [Publicar Assets en AEM y Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
+* Publique recursos en Dynamic Media para que las representaciones de Dynamic Media estén disponibles en la vista de Assets. Para obtener más información, consulte [Publicar Assets en AEM y Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
 ### Ver y descargar representaciones de Dynamic Media {#view-download-dm-renditions}
@@ -71,25 +71,27 @@ Para ver o descargar representaciones dinámicas de imágenes en Experience Mana
 1. Seleccione la representación que desea previsualizar y haga clic en **Copiar URL** para copiar la URL de la representación seleccionada. Haga clic en **Descargar representación** para descargar las representaciones de los recursos de imagen.
 1. Seleccione la representación de recorte inteligente que quiera previsualizar y haga clic en **Copiar URL** para copiar la URL de la representación seleccionada.
 1. Haga clic en ![icono de descarga](assets/do-not-localize/download-icon.png) para descargar todas las representaciones de recortes inteligentes disponibles como un solo archivo zip.
-   ![icono de descarga](/help/assets/assets/smartcrop-rendition.png)
+   ![icono de descarga](/help/assets/assets/download-op.png)
 
    >[!NOTE]
    >
    >Estas representaciones solo están disponibles para los recursos de imagen.
 
-## Dynamic Media con representaciones de capacidades de OpenAPI {#dm-with-openapi-renditions}
+## Dynamic Media con representaciones de funcionalidades de OpenAPI {#dm-with-openapi-renditions}
 
 ### Antes de empezar {#prereqs-dm-with-openapi-renditions}
 
 * Debe ser un usuario con licencia de Dynamic Media de AEM.
-* Assets debe aprobarse para mostrar Dynamic Media con representaciones de funcionalidades de OpenAPI. Para obtener más información, consulte [Aprobar recursos en Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
+* Assets debe aprobarse para su uso público con el fin de mostrar Dynamic Media con representaciones de funciones OpenAPI. Para obtener más información, consulte [Aprobar recursos en Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
 * Dynamic Media con capacidades OpenAPI debe estar habilitado en la instancia de AEM as a Cloud Service.
 
 ### Ver representaciones de Dynamic Media con capacidades de OpenAPI {#view-download-dm-with-openapi-renditions}
 
 1. Seleccione el recurso y haga clic en **Detalles**.
-1. Haga clic en el icono Dynamic Media disponible en el panel derecho. El panel Dynamic Media muestra la representación de Dynamic Media con capacidades OpenAPI para todos los tipos de recursos.
-   ![icono de descarga](/help/assets/assets/dm-with-open-api-copy-url.png)
-1. Seleccione la opción **Dynamic Media con OpenAPI** y, a continuación, haga clic en **Copiar URL** para copiar la URL de entrega del recurso.
+1. Haga clic en el icono Dynamic Media disponible en el panel derecho. El panel Dynamic Media muestra las representaciones base, las representaciones dinámicas y las representaciones de recorte inteligente para los tipos de recursos admitidos, según corresponda.
+   ![icono de descarga](/help/assets/assets/new-new1.png)
+1. Seleccione **Representación base** y haga clic en **Copiar URL** para copiar la URL de entrega del recurso o haga clic en **Descargar representación** para descargar el recurso.
 
+Si las capacidades Scene7 (Dynamic Media) y Dynamic Media con OpenAPI están habilitadas para el repositorio, hay una opción de alternancia disponible en la interfaz de usuario para cambiar entre las dos. Las representaciones mostradas y las direcciones URL generadas se actualizan en función de la configuración seleccionada.
 
+![opción de alternar](/help/assets/assets/new-new2.png)
