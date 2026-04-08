@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c91ace39d34864b88f1e07fcc7d427f347f9ed31
+source-git-commit: 087285bf1023f844fe8d63817e0202276e01c411
 workflow-type: tm+mt
-source-wordcount: '1789'
-ht-degree: 37%
+source-wordcount: '2274'
+ht-degree: 26%
 
 ---
 
@@ -34,6 +34,8 @@ New Relic One APM para AEM as a Cloud Service tiene muchas características.
 * Agente de APM de New Relic One instrumentado que muestra llamadas de método exactas con números de línea, incluidas dependencias externas y bases de datos.
 
 * Optimización del rendimiento holístico mediante la combinación de métricas clave de la monitorización a nivel de infraestructura y la monitorización de aplicaciones (Adobe Experience Manager).
+
+* Rastreadores de cambios automáticos para ejecuciones de canalizaciones de Cloud Manager, actualizaciones de AEM y operaciones de restauración de código. Estos rastreadores permiten a los equipos correlacionar implementaciones con cambios de rendimiento de aplicaciones directamente en New Relic One.
 
 ## Activar la subcuenta de New Relic One {#activate-sub-account}
 
@@ -79,7 +81,7 @@ Siga los siguientes pasos para definir los usuarios de la cuenta secundaria de N
 
    ![Agregar usuarios](assets/newrelic-add-users.png)
 
-1. Para eliminar un usuario de New Relic One, haga clic en el botón eliminar situado en el extremo derecho de la fila que representa al usuario.
+1. Para quitar un usuario de New Relic One, haga clic en el botón Eliminar en el extremo derecho de la fila que representa al usuario.
 
 1. Haga clic en **Guardar** para crear los usuarios.
 
@@ -87,11 +89,11 @@ Una vez definidos los usuarios, New Relic enviará un correo electrónico de con
 
 >[!NOTE]
 >
->Si está administrando los usuarios de New Relic One, también debe agregarse como usuario para tener acceso a sí mismo. Ser el **Propietario del negocio** o el **Administrador de implementación** no es suficiente para tener acceso a New Relic One. También debe crearse como usuario.
+>Si está administrando los usuarios de New Relic One, también debe agregarse como usuario de. Ser el **Propietario del negocio** o **Administrador de implementación** no es suficiente para tener acceso a New Relic One.
 
 ## Activar la cuenta de usuario de New Relic One {#activate-user-account}
 
-Una vez que cree una cuenta de usuario de New Relic One como se describe en la sección [Administrar usuarios de New Relic One](#manage-users), New Relic enviará a esos usuarios un correo electrónico de confirmación a la dirección proporcionada. Para utilizar esas cuentas, los usuarios deben activarlas primero con New Relic y restablecer sus contraseñas.
+Una vez creada una cuenta de usuario de New Relic One, tal como se describe en [Administrar usuarios de New Relic One](#manage-users), New Relic enviará a esos usuarios un correo electrónico de confirmación a la dirección proporcionada. Para utilizar esas cuentas, los usuarios deben activarlas primero con New Relic y restablecer sus contraseñas.
 
 **Para activar su cuenta de usuario de New Relic One:**
 
@@ -129,7 +131,7 @@ Una vez que haya [activado su cuenta de New Relic](#activate-account), podrá ac
 
 **Para tener acceso directo a New Relic One:**
 
-1. Navegue hasta la página de inicio de sesión de New Relic en [`https://login.newrelic.com/login`](https://login.newrelic.com/login)
+1. Vaya a la [página de inicio de sesión de New Relic](https://login.newrelic.com/login).
 
 1. Inicie sesión en New Relic One.
 
@@ -140,6 +142,66 @@ Si se le solicita que compruebe su correo electrónico durante el inicio de sesi
 Si no verifica su dirección de correo electrónico, New Relic intentará iniciar sesión con el registro de usuario creado más recientemente y asociado a su dirección de correo electrónico. Para evitar verificar el correo electrónico durante cada inicio de sesión, haga clic en la casilla de verificación **Recordarme** de la pantalla de inicio de sesión.
 
 Para obtener más ayuda, abra un ticket de asistencia a través del [Portal de asistencia de AEM](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+
+## Usar rastreador de cambios {#change-tracker}
+
+Cloud Manager envía automáticamente rastreadores de cambios a New Relic One siempre que se completen las ejecuciones de canalización admitidas, las actualizaciones de AEM y la restauración de código. Estos rastreadores aparecen como eventos de cambio en la vista **Seguimiento de cambios** de New Relic, lo que permite que su equipo correlacione implementaciones con cambios en el rendimiento de las aplicaciones, las tasas de error y el rendimiento.
+
+<!-- See also [Introduction to change tracking](https://docs.newrelic.com/docs/change-tracking/overview/) and [Record and view deployments](https://docs.newrelic.com/docs/apm/apm-ui-pages/events/record-deployments/). -->
+
+### Canalizaciones y flujos compatibles {#supported-pipelines}
+
+Las siguientes canalizaciones de Cloud Manager y los dos últimos tipos de flujo generan rastreadores de cambios en New Relic One:
+
+| Tipo de canalización/flujo | Descripción |
+|---|---|
+| **Pila completa (implementación CI_CD)** | Ejecuciones de canalización de pila completa. El seguimiento incluye el nombre de la canalización y el ID de ejecución. |
+| **Configuración de nivel web** | Ejecuciones de canalización de configuración de nivel web. El seguimiento incluye el nombre de la canalización y el ID de ejecución. |
+| **Front-end** | Ejecuciones de canalización front-end. El seguimiento incluye el nombre de la canalización y el ID de ejecución. |
+| **Configuración** | Ejecuciones de canalización de configuración. El seguimiento incluye el nombre de la canalización y el ID de ejecución. |
+| **Actualización de AEM** | Actualizaciones de la versión de AEM. Por ejemplo, de la versión {} a la versión {}. Los rastreadores se crean cuando se completa el evento de cambio de entorno. |
+| **Código de restauración** | El código restaura las operaciones desde un repositorio y rama específicos. |
+
+>[!NOTE]
+>
+>Actualmente, los rastreadores de cambios solo son compatibles con los entornos de Skyline. Las canalizaciones que están fuera de ámbito, como las canalizaciones de ampliación y las canalizaciones de Service Pack, no generan rastreadores.
+
+### Visualización de rastreadores de cambios en New Relic One {#view-change-trackers}
+
+Una vez finalizada la ejecución de una canalización admitida, puede ver el rastreador de cambios correspondiente en New Relic One.
+
+**Para ver los rastreadores de cambios en New Relic One:**
+
+1. [Acceder a New Relic One](#accessing-new-relic) mediante Cloud Manager o directamente.
+1. Vaya a **APM y servicios** y seleccione la aplicación para el entorno correspondiente.
+1. En la página de resumen de la aplicación, busque los indicadores del rastreador de cambios en el gráfico. Pase el ratón sobre un rastreador para ver los detalles de implementación.
+
+   ![Cambiar indicadores de seguimiento en el gráfico de tiempo de transacciones web](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
+
+1. Haga clic en cualquier evento de cambio de la tabla para abrir una vista detallada.
+
+   ![Panel de atributos de implementación con la URL deepLink resaltada](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>Vista detallada de un evento de cambio.</i>
+
+   El panel **Cambiar detalles** de la derecha muestra, entre otras cosas, la entidad, la marca de tiempo, la época, la categoría, el ID de implementación y el tipo de API.
+
+   Para cada rastreador de cambios que Cloud Manager envía a New Relic One, el panel **Atributos de implementación** de la parte inferior derecha muestra los siguientes atributos:
+
+   | Atributo | Descripción |
+   |---|---|
+   | **versión** | Una cadena de descripción que incluye el nombre de la canalización y el ID de ejecución. |
+   | **changelog** | Reservado para uso futuro. |
+   | **confirmar** | Reservado para uso futuro. |
+   | **vínculo profundo** | Haga clic en la URL para volver a vincular a la página de ejecución de la canalización en Cloud Manager. |
+
+1. Para ver una lista completa de los rastreadores de cambios, en la barra lateral izquierda, bajo **Eventos**, haga clic en **Seguimiento de cambios**.
+
+   La tabla **Cambiar eventos** muestra cada implementación con su marca de tiempo y descripción de la versión.
+
+   ![Opción de seguimiento de cambios con tabla de eventos de cambios que muestra](/help/implementing/cloud-manager/assets/new-relic/new-relic-change-tracking.png)
+
+>[!TIP]
+>
+>Utilice rastreadores de cambios junto con indicadores de rendimiento de New Relic One, como **Tiempo de respuesta** y **Rendimiento**. Estos indicadores le ayudan a identificar si una implementación en particular introdujo regresiones o mejoras de rendimiento. Puede comparar métricas de antes y después de una implementación directamente en la página de detalles del evento de cambio.
 
 ## Solucionar problemas de acceso de usuarios de New Relic One {#troubleshooting}
 
