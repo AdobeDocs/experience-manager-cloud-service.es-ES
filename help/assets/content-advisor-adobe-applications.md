@@ -4,9 +4,10 @@ description: El Asesor de contenido ofrece una experiencia unificada de detecci�
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 feature: Collaboration
 role: User
-source-git-commit: 76bdd819634e170a1012cea5ec9f480f17db5130
+exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
+source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ El Asesor de contenido aporta una detección inteligente según el contexto dire
 
 * Acceso a un entorno de as a Cloud Service de AEM Assets.
 
-* Acceso a un entorno de AEM Sites donde haya creado fragmentos de contenido.
+* Acceso a un entorno de AEM Sites con fragmentos de contenido creados (requerido solo para trabajar con fragmentos de contenido). Esto no es necesario para acceder a AEM Assets o recursos binarios.
 
 ## Detección inteligente de recursos con el Asesor de contenido {#intelligent-asset-discovery-content-advisor}
 
@@ -127,7 +128,7 @@ Haga clic en el icono ![vista previa](assets/do-not-localize/preview-icon.svg) p
 
 ![Previsualizar representaciones de Dynamic Media](assets/content-advisor-dm-preview.png)
 
-Haga clic en **[!UICONTROL Agregar modificadores]**, especifique un modificador en el cuadro de texto y presione Entrar para aplicar la transformación a todas las representaciones de recursos en tiempo real. Del mismo modo, puede añadir varios modificadores a las representaciones y previsualizar esas transformaciones. Haga clic en el nombre de la representación y luego en **[!UICONTROL Seleccionar]** para que la representación esté disponible en la aplicación host. La representación después de aplicar esos modificadores no se guarda. Consulte la lista de modificadores admitidos para [Dynamic Media Scene7](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) y [Dynamic Media con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Haga clic en **[!UICONTROL Agregar modificadores]**, especifique un modificador en el cuadro de texto y presione Entrar para aplicar la transformación a todas las representaciones de recursos en tiempo real. Del mismo modo, puede añadir varios modificadores a las representaciones y previsualizar esas transformaciones. Haga clic en el nombre de la representación y luego en **[!UICONTROL Seleccionar]** para que la representación esté disponible en la aplicación host. La representación después de aplicar esos modificadores no se guarda. Consulte la lista de modificadores admitidos para [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) y [Dynamic Media con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 ### Detección de fragmentos de contenido {#content-fragments-discovery-content-advisor}
 
@@ -199,4 +200,3 @@ La siguiente tabla ilustra la compatibilidad de las funciones del Asesor de cont
 | AEM Sites (creación de documentos) | ✓ | ✓ | ✓ | − |
 | AEM Sites (Editor de fragmentos de contenido) | ✓ | ✓ | ✓ | − |
 | AEM Sites (editor universal) | ✓ | ✓ | ✓ | − |
-
