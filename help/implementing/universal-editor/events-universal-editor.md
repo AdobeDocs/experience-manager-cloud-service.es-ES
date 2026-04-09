@@ -4,10 +4,10 @@ description: Obtenga información sobre los diferentes eventos que envía el edi
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
+source-git-commit: 3e6487b6d37f698a91b07f1ca02aec140d14d1a2
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 94%
+source-wordcount: '580'
+ht-degree: 86%
 
 ---
 
@@ -229,6 +229,39 @@ La carga útil está vacía para este evento.
 {
     details: {}
 }
+```
+
+### aue&amp;dos puntos;navegar {#navigate}
+
+La biblioteca CORS del editor universal (`@aem-sites/universal-editor-cors`) distribuye un evento `aue:navigate` cancelable antes de retransmitir la navegación al shell del editor universal.
+
+La carga útil es la dirección URL del destino de navegación.
+
+```json
+{
+      details: {
+          href: string;           // URL of the navigation target, modifiable by listeners
+      }
+  }
+```
+
+Este evento permite a los scripts de página:
+
+* **Modifique** la dirección URL de navegación (por ejemplo, agregue la extensión `.html`) cambiando `event.detail.href`.
+* **Cancelar** la navegación a través de `event.preventDefault()`.
+
+Ejemplo de uso:
+
+```javascript
+// Transform the navigation URL
+document.addEventListener("aue:navigate", (e) => {
+  e.detail.href = e.detail.href + ".html";
+});
+
+// Cancel navigation entirely
+document.addEventListener("aue:navigate", (e) => {
+  e.preventDefault();
+});
 ```
 
 ## Detectores de eventos de reserva {#fallback-listeners}
