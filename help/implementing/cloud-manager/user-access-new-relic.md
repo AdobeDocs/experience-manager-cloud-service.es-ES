@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 5f25d73203fea21122a8f77b82fcfa6383561001
+source-git-commit: 090a890e25ee45fb8a46255c097f243a24b00756
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 23%
@@ -185,7 +185,7 @@ Una vez finalizada la ejecución de una canalización admitida, puede ver el ras
 
    ![Cambiar indicadores de seguimiento en el gráfico de tiempo de transacciones web](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
 
-1. Haga clic en cualquier evento de cambio de la tabla para abrir una vista detallada.
+1. Haga clic en cualquier evento de cambio del gráfico para abrir una vista detallada.
 
    ![Panel de atributos de implementación con la URL deepLink resaltada](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>Vista detallada de un evento de cambio.</i>
 
