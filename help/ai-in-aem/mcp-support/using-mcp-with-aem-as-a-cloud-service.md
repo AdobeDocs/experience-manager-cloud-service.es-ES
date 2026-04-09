@@ -4,9 +4,9 @@ description: Aprenda a utilizar el protocolo de contexto de modelo con AEM as a 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: c7c8a616e00a7e97ac9b8ab50411c0a9e9417273
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1742'
 ht-degree: 0%
 
 ---
@@ -51,10 +51,11 @@ AEM expone los servidores MCP como extremos HTTP. Los extremos enumerados a cont
 ### Servidores MCP {#mcp-servers}
 
 | **Servidor MCP** | **Extremo** | **Descripción** |
-|---|---|----------------------------------------------------------------------------------------------------------------------|
+|---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Contenido** | `/content` | Todas las operaciones de contenido de bajo nivel, incluidas las de creación, lectura, actualización y eliminación (CRUD) de páginas, fragmentos y recursos. |
 | **Contenido (solo lectura)** | `/content-readonly` | Operaciones de contenido de solo lectura (Get, List/Search) para páginas, fragmentos y recursos. |
 | **Cloud Manager** | `/cloudmanager` | Administre entidades de Cloud Manager, incluidos programas, entornos, repositorios y canalizaciones, que también se pueden activar. |
+| **Administración de experiencias** | `/experience-governance` | Evalúe el contenido (texto, imágenes, páginas) con respecto a las reglas de gobernanza de marca y enumere las configuraciones y comprobaciones de marca.<br/>Los clientes deben registrarse para la versión de prueba de [agentes o tener una licencia de pago](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) para acceder al MCP de Experience Governance. |
 
 Las herramientas específicas expuestas por cada servidor MCP pueden evolucionar con el tiempo. En la práctica, puede pedir a su aplicación habilitada para MCP que descubra las herramientas a través de un mensaje como:
 
@@ -64,7 +65,7 @@ Las herramientas específicas expuestas por cada servidor MCP pueden evolucionar
 
 El cliente MCP utiliza el protocolo MCP para recuperar la lista de herramientas y los esquemas, que el LLM puede utilizar a continuación.
 
-Consulte [Tutorial de Content MCP Server](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) y [Vídeo de Cloud Manager MCP Server](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obtener más información sobre sus capacidades y cómo utilizarlas.
+Consulte [Tutorial de Content MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) y [Vídeo de Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obtener más información sobre sus capacidades y cómo utilizarlas.
 
 ## Aplicaciones MCP compatibles {#supported-mcp-applications}
 
