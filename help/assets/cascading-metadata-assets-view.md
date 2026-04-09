@@ -5,10 +5,10 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
-source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
+source-git-commit: a34dfbaafce0b43c9e48400175e28ae43153ab83
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 6%
+source-wordcount: '1171'
+ht-degree: 4%
 
 ---
 
@@ -26,10 +26,6 @@ Estos son algunos casos de uso para los que puede definir metadatos en cascada:
 * Designe un campo como obligatorio en función del valor especificado en otro campo.
 * Cambie las opciones mostradas para un campo en particular en función del valor especificado en otro campo.
 * Establezca el valor de metadatos predeterminado en un campo concreto en función del valor especificado en otro campo.
-
->[!IMPORTANT]
->
->La función Metadatos en cascada está disponible como funciones de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
 
 ## Configurar metadatos en cascada en [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
@@ -154,4 +150,4 @@ Para modificar un formulario de metadatos existente, siga los pasos a continuaci
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&lang=es#support)

@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 880200fe-94b3-49de-802c-34283f7c71bc
 feature: Collaboration
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a34dfbaafce0b43c9e48400175e28ae43153ab83
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 74%
+source-wordcount: '303'
+ht-degree: 70%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 74%
 Experience Manager Assets tiene la capacidad de conectarse a una asignación de derechos de Creative Cloud que se proporciona a una organización IMS diferente para utilizar fácilmente las últimas integraciones de Creative Cloud en AEM Assets, incluidas Express y Creative Cloud Libraries.
 
 Si los productos de Creative Cloud y AEM Assets se suministran a organizaciones IMS independientes, puede conectarse a una organización de Creative Cloud diferente para poder ejecutar flujos de trabajo integrados entre las dos soluciones.
+
+>[!IMPORTANT]
+>
+>La integración de Creative Cloud Libraries con Assets View se eliminará el 1 de mayo de 2026.
 
 ## Requisitos previos {#prerequisites}
 
