@@ -4,10 +4,10 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
+source-git-commit: 486b192f4ac427156028bc50bb41364f8690724a
 workflow-type: tm+mt
-source-wordcount: '1637'
-ht-degree: 95%
+source-wordcount: '1659'
+ht-degree: 94%
 
 ---
 
@@ -623,7 +623,13 @@ Un tipo de componente de selección múltiple presenta varios elementos para su 
 
 #### Número {#number}
 
-Un tipo de componente numérico permite introducir un número. Ofrece tipos de validación adicionales.
+Un tipo de componente numérico permite introducir un número. Ofrece una configuración adicional.
+
+| Configuración | Tipo de valor | Descripción | Necesario |
+|---|---|---|---|
+| `valueFormat` | `string` | El tipo de número que almacenar puede ser `long` (predeterminado) o `double`. | No |
+
+También ofrece tipos de validación adicionales.
 
 | Tipo de validación | Tipo de valor | Descripción | Necesario |
 |---|---|---|---|
