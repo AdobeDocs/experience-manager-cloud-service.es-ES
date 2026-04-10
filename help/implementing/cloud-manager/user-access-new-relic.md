@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 090a890e25ee45fb8a46255c097f243a24b00756
+source-git-commit: 93d22e32dc2f21bddccf7ad1305aab7d22b8345a
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 23%
@@ -86,7 +86,7 @@ Puede definir los usuarios de la subcuenta de New Relic One asociada a su progra
    * Introduzca el nombre y los apellidos del usuario que desea agregar
    * Introduzca la dirección de correo electrónico asociada
    * Haga clic en ![Agregar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Agregar**. Repita este paso para cada usuario que desee agregar.
-   * Haga clic en ![Eliminar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) para eliminar un usuario.
+   * Haga clic en ![Cerrar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) para quitar un usuario.
 
    ![Agregar usuarios](assets/newrelic-add-users.png)
 
