@@ -6,9 +6,9 @@ feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 69f83da6eee02e0b1d116d71c5d0b022c91e3ba0
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1260'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,34 @@ Si los recursos de muestra o la ilustración preestablecida del visualizador no 
 1. En Cloud Services, vaya a la página Configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo Configuración de Dynamic Media - S7.
 1. No realice cambios, seleccione **Guardar**.
 Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear y sincronizar los recursos de muestra, el CSS preestablecido de visualizador y las ilustraciones.
+
+### Problema: Error #2046 al abrir la pestaña Ancho de banda y almacenamiento {#error-2046-bandwidth-storage}
+
+**Cómo depurar**
+
+![#2046 de error mostrado en la ficha Ancho de banda y almacenamiento de Dynamic Media Classic](assets/2046-error.png)
+
+* Los usuarios encuentran #2046 de error al abrir la pestaña Ancho de banda y almacenamiento en la aplicación de escritorio de Dynamic Media Classic (Scene7).
+* El problema se debe a un certificado de firma digital caducado en una RSL (biblioteca compartida en tiempo de ejecución) en caché utilizada por el marco de trabajo de Adobe AIR.
+* El error se produce durante la revalidación del certificado local.
+
+**Solución**
+
+Borre la caché local para obligar a Adobe AIR a descargar la RSL (biblioteca compartida en tiempo de ejecución) actualizada.
+
+**macOS**
+
+1. Vaya a:
+   `~/Library/Caches/Adobe/Flash Player/AssetCache/<folder>/`
+2. Eliminar todos los archivos de `.swz` y `.heu`.
+
+**Windows**
+
+1. Vaya a:
+   `%APPDATA%\Adobe\Flash Player\AssetCache\<folder>\`
+2. Elimine todos los archivos de la carpeta.
+
+Reinicie la aplicación después de borrar la caché.
 
 ### Problema: La previsualización de imagen no se carga en la creación de ajustes preestablecidos de visualizador {#image-preview-not-loading}
 
