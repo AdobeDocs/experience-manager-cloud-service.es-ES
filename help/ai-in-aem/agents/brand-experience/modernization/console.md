@@ -4,9 +4,9 @@ description: Guía de referencia para la interfaz y las funciones de la consola 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1220'
 ht-degree: 0%
 
 ---
@@ -157,12 +157,18 @@ Al insertar cambios, primero debe tener cambios clasificados para incluirlos en 
 
 ## Vista de configuración {#settings-view}
 
-La vista de configuración permite administrar la configuración básica de la consola.
+La vista de configuración permite administrar la configuración básica de la consola y se divide en las siguientes secciones.
 
 ![Vista de configuración](assets/settings-view.png)
 
+Si realiza un cambio en cualquier valor de cualquier sección, haga clic en **Guardar** para guardar los cambios en la sección individual.
+
 * **Proyecto** le permite ver y editar la configuración del proyecto, como personalizar la dirección URL de la biblioteca.
-* **Asistencia** le permite solicitar ayuda al equipo de asistencia de AEM.
+   * **URL de biblioteca**: esta URL apunta a un archivo library.json que define los bloques disponibles, sus variaciones y el contenido de ejemplo.
+   * **URL de base del sitio**: URL de origen del sitio web que se está migrando.
+* **Permisos de agente** - Permitir que el agente acceda a las opciones de configuración
+   * **Permitir que LLM acceda a admin.hlx.page en mi nombre**: cuando está habilitado, el asistente de IA puede recuperar configuraciones de sitio y metadatos de Adobe Experience Manager con sus credenciales de IMS.
+   * **Token de IMS personalizado**: puede proporcionar un token de IMS personalizado para usar en lugar del token de sesión predeterminado.
 * **Credenciales** le permite especificar un token de acceso personal para Figma de modo que la [consola pueda acceder a los bloques de diseño de su proyecto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * El token requiere los siguientes ámbitos de solo lectura:
       * `file_content:read`
@@ -173,4 +179,7 @@ La vista de configuración permite administrar la configuración básica de la c
       * `file_dev_resources:read`
       * `projects:read`
    * [Consulte la documentación de Figma](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) para obtener más información sobre la configuración de tokens de acceso personal.
-* **Restablecer espacio de trabajo** revierte la consola a su estado inicial y se perderán todos los cambios no insertados o no cargados.
+* **Asistencia** resume la información compartida con el equipo de asistencia de Adobe cuando realiza una solicitud de asistencia.
+   * **Solicitar soporte técnico**. Haga clic para iniciar una solicitud de soporte técnico de Adobe sin salir de la consola.
+* **La zona de peligro** contiene opciones de configuración que pueden revertir el espacio de trabajo.
+   * **Restablecer área de trabajo** - Haga clic para restablecer el área de trabajo a su estado inicial. Esto no se puede deshacer.
