@@ -4,9 +4,9 @@ description: Conozca los primeros pasos para aumentar rápidamente la productivi
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: c4b1da46f6739f43d38bc05584c246371340a966
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,16 @@ Para ver los cambios en el entorno de vista previa:
 ![Contenido de vista previa publicado](assets/published-preview.png)
 
 Si insertó el código en una rama que no sea `main`, la vista previa abierta desde Document Authoring no mostrará los estilos. Cambie a la rama actualizando la URL de la vista previa y podrá ver sus estilos.
+
+## Solución de problemas {#troubleshooting}
+
+### Direcciones IP de lista de permitidos {#allowlist-ip-addresses}
+
+Si el sitio está protegido por un cortafuegos o por restricciones de acceso, puede lista de permitidos las siguientes direcciones IP para que los servicios back-end puedan rastrear el sitio:
+
+* `34.228.136.112`
+* `54.90.51.39`
+* `3.224.194.242`
 
 ## Recursos adicionales {#additional-resources}
 
