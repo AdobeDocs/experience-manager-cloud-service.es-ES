@@ -4,9 +4,9 @@ description: Descubra cómo Experience Production Agent en AEM le ayuda a aceler
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 0666d9660d657876bca77835d333d9dfe536b374
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '287'
 ht-degree: 2%
 
 ---
@@ -51,10 +51,3 @@ El trabajo [Creación de comunicación](/help/ai-in-aem/agents/brand-experience/
 El agente puede trabajar con otras habilidades de agente, por ejemplo:
 
 * Obtener recursos de origen de Experience Advisory Agent
-
-## Activación {#activation}
-
-Para activar y obtener acceso al agente de producción de Experience, debe ponerse en contacto con Adobe. Para empezar, puede ponerse en contacto con:
-
-* `experience-production-agent@adobe.com`
-* o póngase en contacto con el equipo de su cuenta
