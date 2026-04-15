@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo habilitar el control de acceso bas
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: ec259b3ec1b420140e45e0eb279fe867fc996113
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1420'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ Algunas de las ventajas clave del control de acceso basado en atributos son:
 
 * Reduce el número de duplicados: mejora la integridad de los recursos. Los duplicados son necesarios en los permisos basados en carpetas cuando los mismos recursos se comparten con diferentes grupos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475417/?captions=spa&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## ¿Cómo se habilita el control de acceso basado en atributos? {#enable-attribute-based-access-control}
 
@@ -41,6 +41,10 @@ Haga clic en **Descargar hoja de cálculo** para descargar y definir reglas en u
 
 
 Defina las reglas en la hoja de cálculo siguiendo las directrices definidas en este artículo.
+
+>[!IMPORTANT]
+>
+>También puede establecer reglas de control de acceso basadas en atributos usando [AEM Governance Agent](/help/ai-in-aem/agents/governance/overview.md#permission-management-in-content-hub).
 
 <!--
 
