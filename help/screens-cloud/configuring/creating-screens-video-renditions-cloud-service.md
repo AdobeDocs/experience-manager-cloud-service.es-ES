@@ -27,7 +27,7 @@ Siga los pasos a continuación para crear representaciones de vídeo en Screens 
 1. Vaya al canal en el proveedor de contenido de Screens.
 
    >[!NOTE]
-   >Consulte [Uso del proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) para obtener más información.
+   >Consulte [Uso del proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=es#screens-content-provider) para obtener más información.
 
 1. Haga clic en la sección Herramientas de la barra de navegación izquierda, haga clic en **Assets** y, a continuación, haga clic en **Perfiles de procesamiento**.
 
