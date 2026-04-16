@@ -4,9 +4,9 @@ description: En esta página se describe cómo crear representaciones de vídeo 
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 210997fa8568245ab9e4e5d44d7faf99bc108ee3
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Siga los pasos a continuación para crear representaciones de vídeo en Screens 
 1. Vaya al canal en el proveedor de contenido de Screens.
 
    >[!NOTE]
-   >Consulte [Uso del proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=es#screens-content-provider) para obtener más información.
+   >Consulte [Uso del proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) para obtener más información.
 
 1. Haga clic en la sección Herramientas de la barra de navegación izquierda, haga clic en **Assets** y, a continuación, haga clic en **Perfiles de procesamiento**.
 
@@ -53,7 +53,7 @@ Siga los pasos a continuación para crear representaciones de vídeo en Screens 
    >Utilice el nombre de codificación que comienza con &quot;screens-&quot;. Solo se considera que estas representaciones de vídeo reproducen la experiencia de vídeo en Screens as a Cloud Service. Introduzca la velocidad de bits de funcionamiento de los vídeos (2500 kbps para vídeo de 720 px y 5000 kbps para vídeo de 1080 px).
 
    >[!NOTE]
-   >Se pueden agregar varias representaciones de vídeo con diferentes anchura, altura y velocidad de bits para trabajar con los vídeos. Los dispositivos Screens descargan todas las pantallas y representaciones, aunque el dispositivo solo reproduzca representaciones de vídeo.
+   >Se pueden agregar varias representaciones de vídeo con diferentes anchura, altura y velocidad de bits para trabajar con los vídeos.
 
 1. Haga clic en **Guardar**.
 
