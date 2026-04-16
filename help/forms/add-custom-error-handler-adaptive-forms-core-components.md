@@ -8,10 +8,10 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: adab3053853551b10a6f808782acf8f75ba7c1f7
 workflow-type: tm+mt
-source-wordcount: '2325'
-ht-degree: 99%
+source-wordcount: '2433'
+ht-degree: 93%
 
 ---
 
@@ -200,9 +200,13 @@ Para comprender cómo utilizar un controlador de errores predeterminado con la a
 1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, **cuando se cambia[Nombre del campo ID de mascota]**. Seleccione “se ha cambiado” de la lista desplegable **Seleccionar estado**.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.
 1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
-1. Seleccione los enlaces de datos en la sección **Salida**. Seleccione **Nombre de mascota** en la sección **Salida**.
-1. Seleccione **[!UICONTROL Controlador de errores personalizado]** en la sección **Controlador de errores**.
-1. Haga clic en **[!UICONTROL Listo]**.
+1. Haga clic en **[!UICONTROL Agregar controlador de éxito]**. Se abre el editor de reglas **[!UICONTROL Invocar controlador de éxito de servicio]**.
+1. En la sección **[!UICONTROL Then]**, agregue una regla para establecer el valor de **[!UICONTROL Pet Name]** en **`name`** mediante los datos de carga de evento.
+1. Haga clic en **[!UICONTROL Listo]** para cerrar el editor **[!UICONTROL Invocar controlador de éxito de servicio]**.
+1. Haga clic en **[!UICONTROL Agregar controlador de errores]**. Se abre el editor de reglas **[!UICONTROL Invocar controlador de errores de servicio]**.
+1. En la sección **[!UICONTROL Then]**, seleccione **[!UICONTROL Salida de función]** y elija **[!UICONTROL Controlador de error predeterminado]**.
+1. Haga clic en **[!UICONTROL Listo]** para cerrar el editor de **[!UICONTROL Invocar error de servicio del controlador]**.
+1. Haga clic en **[!UICONTROL Listo]** para guardar la regla.
 
 ![añadir un controlador de error predeterminado para las comprobaciones de validación de campos en un formulario](/help/forms/assets/default-error-handler.png)
 
@@ -310,12 +314,15 @@ Para utilizar un controlador de errores personalizado utilizando la acción **[!
 1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, cuando se ha cambiado el **[Nombre del campo ID de mascota]**, seleccione **se ha cambiado** en la lista desplegable **Seleccionar estado**.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.
 1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
-1. Seleccione los enlaces de datos en la sección **Salida**. Por ejemplo, seleccione **Nombre de mascota** en la sección **Salida**.
-1. Seleccione **[!UICONTROL Controlador de errores personalizado]** en la sección **[!UICONTROL Controlador de errores]**.
-1. Haga clic en **[!UICONTROL Listo]**.
+1. Haga clic en **[!UICONTROL Agregar controlador de éxito]**. Se abre el editor de reglas **[!UICONTROL Invocar controlador de éxito de servicio]**.
+1. En la sección **[!UICONTROL Then]**, agregue una regla para establecer el valor de **[!UICONTROL Pet Name]** en **`name`** mediante los datos de carga de evento.
+1. Haga clic en **[!UICONTROL Listo]** para cerrar el editor **[!UICONTROL Invocar controlador de éxito de servicio]**.
+1. Haga clic en **[!UICONTROL Agregar controlador de errores]**. Se abre el editor de reglas **[!UICONTROL Invocar controlador de errores de servicio]**.
+1. En la sección **[!UICONTROL Then]**, seleccione **[!UICONTROL Salida de función]** y elija **[!UICONTROL Función de controlador de error personalizado]**.
+1. Haga clic en **[!UICONTROL Listo]** para cerrar el editor de **[!UICONTROL Invocar error de servicio del controlador]**.
+1. Haga clic en **[!UICONTROL Listo]** para guardar la regla.
 
 ![añadir un controlador de errores personalizado en un formulario para controlar las respuestas de error](/help/forms/assets/custom-error-handler.png)
-
 
 Como resultado de esta regla, los valores introducidos para **ID de mascota** comprueban la validación de **Nombre de mascota** utilizando el servicio externo invocado por el punto final REST. Si los criterios de validación basados en la fuente de datos fallan, los mensajes de error se muestran en el nivel de campo.
 
