@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2567e58c599a27778aa86c94b13ceb80facd681d
+source-git-commit: f186d0570623007cd3a0685dde2703184c63256c
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 9%
+source-wordcount: '1521'
+ht-degree: 8%
 
 ---
 
@@ -112,7 +112,7 @@ La pestaña **Security** proporciona las opciones para activar **HIPAA**, **Prot
 Compatible con HIPAA de Adobe y WAF-DDOS (cortafuegos de aplicaciones web - denegación de servicio distribuida) facilita la seguridad basada en la nube como parte de un enfoque de varios niveles para la protección contra vulnerabilidades.
 
 * **HIPAA**: esta opción habilita la implementación de la solución compatible con HIPAA de Adobe.
-   * [Más información](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) acerca de la implementación de la solución compatible con HIPAA de Adobe.
+   * Obtenga más información acerca de la preparación de [HIPAA para Adobe Experience Manager as a Cloud Service](/help/compliance/hipaa/hipaa-readiness.md) y la [implementación de la solución preparada para HIPAA de Adobe](https://www.adobe.com/trust/compliance/hipaa-ready.html).
    * HIPAA no se puede habilitar o deshabilitar después de la creación del programa.
 * **Protección WAF-DDOS**: esta opción habilita el firewall de aplicaciones web mediante reglas para proteger la aplicación.
    * Una vez activada, la protección WAF-DDOS se puede configurar configurando una [canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).

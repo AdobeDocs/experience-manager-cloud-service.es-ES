@@ -4,10 +4,10 @@ description: Obtenga información sobre temas de seguridad importantes relaciona
 exl-id: 19b123de-5db5-4fa8-81ec-e5438fed3f7f
 feature: Security
 role: Admin
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 9401e35733f6064c6b185d83407307a9a1e2366f
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 63%
+source-wordcount: '188'
+ht-degree: 53%
 
 ---
 
@@ -27,3 +27,7 @@ Sí. AEM Forms admite la transmisión segura de datos, el acceso controlado y lo
 Sí. AEM Forms admite la auditabilidad a través del historial del flujo de trabajo, los controles de acceso y los registros del sistema, lo que ayuda a las aseguradoras a satisfacer las necesidades de auditoría interna y externa.
 
 Consulte el documento técnico [Seguridad de Adobe Experience Manager Cloud Service](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf) para obtener una descripción detallada de la seguridad en AEM as a Cloud Service.
+
+>[!NOTE]
+>
+>Consulte también [Preparación para HIPAA para Adobe Experience Manager as a Cloud Service](/help/compliance/hipaa/hipaa-readiness.md) para obtener la documentación que proporciona Adobe para ayudarle a comprender la preparación para HIPAA y cumplir con las regulaciones.
