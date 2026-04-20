@@ -4,9 +4,9 @@ description: Aprenda a configurar Anthropic Claude para conectarse a servidores 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 2b90b2b2-cdd0-4f1e-890f-2f58f578face
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: fede808fcd8b082a71273bf9ffceb48b5332f45d
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -21,16 +21,42 @@ Siga estos pasos para conectar Anthropic Claude a los servidores MCP de AEM.
 * Asegúrese de que el servidor MCP esté seleccionado antes de iniciar la conversación.
 * Pide a Claude que realice tareas relacionadas con AEM. Claude selecciona las herramientas de AEM expuestas por el servidor MCP en función de su solicitud.
 
-![Cuadro de diálogo Configuración de Claude.](assets/claude-1.png)
+Para configurar Claude para AEM MCP, siga los pasos a continuación:
 
-![El panel Conectores de Claude.](assets/claude-2.png)
+>[!NOTE]
+>
+>La interfaz de usuario de Claude está sujeta a cambios y no es definitiva. Estas instrucciones tienen fines ilustrativos.
 
-![Agregando un conector personalizado en Claude.](assets/claude-3.png)
+1. Abra el menú de cuenta en la esquina inferior izquierda de la aplicación web Claude y elija **Configuración** para abrir el área Configuración.
 
-![Conectando el conector personalizado en Claude.](assets/claude-4.png)
+   ![Menú de cuenta en Claude con la configuración seleccionada.](assets/claude-1.png)
 
-![Formulario de configuración del conector personalizado en Claude.](assets/claude-5.png)
+1. En la barra lateral Configuración, seleccione **Conectores**. En la página Conectores, elija **Agregar conector personalizado** para registrar un extremo de MCP personalizado.
 
-![Cuadro de diálogo Permisos de herramientas para el conector personalizado.](assets/claude-6.png)
+   ![Página de conectores en Configuración con Agregar conector personalizado.](assets/claude-2.png)
 
-![Solicitando a Claude que use el servicio MCP de contenido de AEM.](assets/claude-7.png)
+1. En el cuadro de diálogo **Agregar conector personalizado**, escriba un nombre para mostrar (por ejemplo, **Servicio MCP de contenido de AEM**) y la URL de su servidor MCP de AEM, y después elija **Agregar**. Use **Configuración avanzada** solo cuando su implementación requiera opciones adicionales.
+
+   ![Agregar cuadro de diálogo de conector personalizado con nombre y dirección URL de MCP.](assets/claude-3.png)
+
+1. En la lista Conectores, busca tu entrada de conector personalizada (muestra una etiqueta **CUSTOM**) y elige **Connect** para iniciar sesión y vincular el conector a tu cuenta de Claude.
+
+   ![Lista de conectores con Connect seleccionado para el servicio MCP de contenido de AEM.](assets/claude-4.png)
+
+1. Cuando el conector aparezca en la lista con su URL, elige **Configure** junto a **Servicio MCP de contenido de AEM** para abrir los detalles del conector y continuar con la configuración.
+
+   ![Lista de conectores con la opción Configurar seleccionada para el servicio MCP de contenido de AEM.](assets/claude-5.png)
+
+1. En la página **Permisos de herramientas**, revise los valores predeterminados (por ejemplo, **Necesita aprobación**) y, a continuación, establezca cada herramienta de AEM en **Permitir siempre**, **Pedir permiso** o **No permitir nunca** según la directiva de seguridad.
+
+   ![Permisos de herramientas para el servicio MCP de contenido de AEM.](assets/claude-6.png)
+
+1. Abra una conversación. Seleccione el menú de herramientas y modelos (icono de controles deslizantes) a la izquierda del campo de mensaje, habilite **Servicio MCP de contenido de AEM** en Conectores y, a continuación, escriba el mensaje para que Claude pueda utilizar las herramientas MCP para ese chat.
+
+   ![Compositor de chat con el servicio MCP de contenido de AEM habilitado en el menú de herramientas.](assets/claude-7.png)
+
+## Conector de Adobe Experience Manager Claude {#aem-claude-connector}
+
+Para instalar el **conector Claude de Adobe Experience Manager**, abra **Configuración** > **Conectores** en Claude. También puede abrir la página Conectores directamente en [https://claude.ai/settings/connectors](https://claude.ai/settings/connectors). El conector registra un servidor MCP que expone un conjunto creciente de herramientas para flujos de trabajo de AEM.
+
+![Instalando el conector Claude de Adobe Experience Manager desde el directorio de conectores.](assets/claude-connector.png)
