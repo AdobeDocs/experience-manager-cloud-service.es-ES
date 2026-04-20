@@ -4,20 +4,14 @@ description: Aprenda a configurar herramientas de codificación de IA con contex
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: f7a46a5b8c5bbe30ab5d6828ba99b2435b88dbeb
+source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
 
 # Desarrollo local con herramientas de IA {#local-development-with-ai-tools}
-
->[!IMPORTANT]
->
->Las características descritas en este artículo son **beta**. El acceso anticipado a las funciones que Adobe está desarrollando permite a los clientes y socios proporcionar comentarios (enviando un correo electrónico a [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) y dar forma al desarrollo de productos. También les ayuda a prepararse para adoptar nuevas capacidades antes de la disponibilidad general.
->
->Las versiones de Beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar o admitir de otro modo (mediante los Servicios de soporte de Adobe o de otro modo) las versiones beta. Adobe recomienda a los clientes tener cuidado y no depender del funcionamiento o el rendimiento correctos de las versiones beta, ni de la documentación o los materiales adjuntos. Las funciones y las API de la versión beta están sujetas a cambios sin previo aviso. Por lo tanto, cualquier uso de las versiones beta es totalmente bajo el propio riesgo del cliente.
 
 >[!NOTE]
 >
@@ -52,7 +46,7 @@ Cuatro componentes complementarios se ocupan de esto:
 
 Las habilidades son conjuntos de instrucciones que codifican flujos de trabajo de desarrollo de varios pasos. Cuando se invoca, la IA sigue el procedimiento de la aptitud en lugar de basarse únicamente en el conocimiento general, lo que produce resultados coherentes y compatibles con la convención.
 
-Adobe publica aptitudes de AEM as a Cloud Service en el repositorio **[adobe/skills](https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service/skills)** de la rama `beta`, ya que esta característica aún no está disponible de forma general:
+Adobe publica las aptitudes de AEM as a Cloud Service en el repositorio **[adobe/skills](https://github.com/adobe/skills/tree/main/plugins/aem/cloud-service)**:
 
 | Aptitud | Función |
 |---|---|
@@ -202,6 +196,12 @@ Cualquier cliente MCP puede conectarse señalando `http://localhost:4502/bin/mcp
 >El valor `Basic YWRtaW46YWRtaW4=` es la codificación Base64 de `admin:admin`, la credencial predeterminada para un inicio rápido local. No utilice esta opción con entornos no locales.
 
 ## Servidor MCP de Dispatcher {#dispatcher-mcp-server}
+
+>[!IMPORTANT]
+>
+>Esta característica es **beta**. El acceso anticipado a las funciones que Adobe está desarrollando permite a los clientes y socios proporcionar comentarios (enviando un correo electrónico a [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) y dar forma al desarrollo de productos. También les ayuda a prepararse para adoptar nuevas capacidades antes de la disponibilidad general.
+>
+>Las versiones de Beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar o admitir de otro modo (mediante los Servicios de soporte de Adobe o de otro modo) las versiones beta. Adobe recomienda a los clientes tener cuidado y no depender del funcionamiento o el rendimiento correctos de las versiones beta, ni de la documentación o los materiales adjuntos. Las funciones y las API de la versión beta están sujetas a cambios sin previo aviso. Por lo tanto, cualquier uso de las versiones beta es totalmente bajo el propio riesgo del cliente.
 
 El servidor MCP de Dispatcher está empaquetado con AEM Dispatcher SDK. Permite a las herramientas de IA validar la configuración de HTTPD de Dispatcher y Apache, rastrear la administración de solicitudes e inspeccionar el comportamiento de la caché con una instancia de Dispatcher que se ejecuta localmente en Docker.
 
