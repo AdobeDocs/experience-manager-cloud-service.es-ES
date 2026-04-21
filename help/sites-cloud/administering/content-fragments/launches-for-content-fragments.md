@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
+source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1851'
 ht-degree: 2%
 
 ---
@@ -187,7 +187,7 @@ Para administrar los fragmentos de contenido en el lanzamiento y también editar
 
 ## Comparar lanzamiento con el origen {#compare-launch-to-source}
 
-Se recomienda que, antes de cualquier acción de Rebase o Promocionar, siempre compare el origen y el lanzamiento para confirmar los cambios y su impacto en el contenido (ambas acciones sobrescriben el contenido de destino):
+Se recomienda que antes de cualquier acción **[Rebase](#rebase-a-launch-from-source)** o **[Promote](#promote-a-launch-to-source)** siempre compare el origen y el inicio para confirmar los cambios y su impacto en el contenido (ambas acciones sobrescriben el contenido de destino):
 
 1. Vaya a la consola Fragmentos de contenido.
 
@@ -261,9 +261,17 @@ Cuando se hayan realizado actualizaciones en los fragmentos de origen, puede cop
 >
 >También puede **Volver a basar** un lanzamiento desde **[Comparar lanzamiento con Source](#compare-launch-to-source)**.
 
+>[!NOTE]
+>
+>Se recomienda que antes de cualquier acción **Rebase** o **Promocionar** siempre [compare el origen y el lanzamiento](#compare-launch-to-source) para confirmar los cambios y su impacto en el contenido, ya que ambas acciones sobrescriben el contenido de destino.
+
 ## Promocionar un lanzamiento (a Source) {#promote-a-launch-to-source}
 
 Cuando el lanzamiento esté listo para publicarse, debe copiarse en el origen. Puede hacerlo en la consola o configurar los ajustes para que se produzca automáticamente en una fecha y hora específicas.
+
+>[!NOTE]
+>
+>Se recomienda que antes de cualquier acción **Rebase** o **Promocionar** siempre [compare el origen y el lanzamiento](#compare-launch-to-source) para confirmar los cambios y su impacto en el contenido, ya que ambas acciones sobrescriben el contenido de destino.
 
 ### Promocionar manualmente {#promote-manually}
 
