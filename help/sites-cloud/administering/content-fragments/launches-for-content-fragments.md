@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1784'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Se crea un *Launch* para permitirle realizar cambios con el fin de prepararse pa
 >
 >Para obtener información detallada, consulte [Inicios de páginas](/help/sites-cloud/authoring/launches/overview.md).
 
-Usted crea un *Launch*, luego edita y actualiza sus fragmentos de contenido en su *Launch*. Si se realizan cambios en los fragmentos de *Source* durante esta fase, puede copiarlos en *Launch* con la operación *Rebase*. Cuando esté listo, *Promocionar* duplica el contenido del lanzamiento de nuevo en el origen. A continuación, puede activar los fragmentos de origen, ya sea manual o automáticamente (según los campos establecidos al crear y editar el lanzamiento). También puede especificar si los fragmentos a los que se hace referencia se incluirán en este proceso.
+Usted crea un *Launch*, luego edita y actualiza sus fragmentos de contenido en su *Launch*. Si se realizan cambios en los fragmentos de *Source* durante esta fase, puede copiar *Source* (incluidos los cambios) en *Launch* con la operación **[Rebase](#rebase-a-launch-from-source)**. Cuando esté listo, *Promocionar* duplica el contenido del lanzamiento de nuevo en el origen. A continuación, puede activar los fragmentos de origen, ya sea manual o automáticamente (según los campos establecidos al crear y editar el lanzamiento). También puede especificar si los fragmentos a los que se hace referencia se incluirán en este proceso.
 
 Por ejemplo, los fragmentos de productos de temporada de la tienda en línea se actualizan trimestralmente para que los productos destacados se correspondan con la temporada actual. Para prepararse para la siguiente actualización trimestral, puede crear un lanzamiento de los fragmentos adecuados. Durante el trimestre, se acumulan los cambios siguientes en la copia de lanzamiento:
 
@@ -88,9 +88,9 @@ Mientras que el panel derecho le permite:
 
    * **Listo para publicar**; al habilitar esta opción, se publicarán automáticamente los fragmentos cuando el lanzamiento se promocione al origen.
 
-* Y también definir:
+* Definir una **fecha de promoción** y hora: si el [lanzamiento se promocionará automáticamente](#promote-automatically)
 
-   * Una **fecha de promoción** y hora: si el [lanzamiento se promocionará automáticamente](#promote-automatically)
+* Ver y realizar más acciones en **[trabajos](#jobs-history)** que se han ejecutado (**Comparar Launch con Source**)
 
 ## Crear un lanzamiento {#create-a-launch}
 
@@ -203,7 +203,6 @@ Se recomienda que, antes de cualquier acción de Rebase o Promocionar, siempre c
          * Source: azul
          * Lanzamiento: rosa
          * Conflictos: amarillo
-   * Las acciones [Promocionar](#promote-a-launch-to-source) y [Volver a basar](#rebase-a-launch-from-source) están disponibles en la parte superior derecha.
    * **Actualizaciones encontradas**: en la esquina superior izquierda se muestra un resumen de todas las actualizaciones. El número de actualizaciones de origen en azul, el número de actualizaciones de inicio en rosa y las actualizaciones en ambos (conflictos) en amarillo.
       * Los iconos de ojo le permiten mostrar u ocultar las actualizaciones de contenido real para obtener una visión general más clara.
    * Los controles deslizantes **Include** permiten definir los fragmentos de contenido que se incluirán en la operación de promoción o rebase posterior:
@@ -217,11 +216,38 @@ Se recomienda que, antes de cualquier acción de Rebase o Promocionar, siempre c
    * El contenido del fragmento se muestra en el nivel de campo (elemento de fragmento de contenido/nivel de tipo de datos); con resaltados que indican cambios.
    * Seleccione **Ver** para volver a calcular las diferencias.
 
+1. Las acciones [Promocionar](#promote-a-launch-to-source) y [Volver a basar](#rebase-a-launch-from-source) están disponibles en la parte superior derecha.
+
+1. **Atrás** le devuelve a la consola. Si desea volver a revisar estas diferencias específicas, puede ver las **[entradas de trabajos](#jobs-history)**.
+
    ![Comparar Source y Launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
+
+## Historial de trabajos {#jobs-history}
+
+Para ver los detalles de los últimos **trabajos comparados con los de Source** que se han ejecutado:
+
+1. Vaya a la consola Fragmentos de contenido.
+
+1. Abra la ficha **Lanzamientos**.
+
+1. Seleccione el lanzamiento; el panel de información se abrirá a la derecha.
+
+1. En la sección **Jobs** se ven **launchDifference** entradas para cada uno de los **trabajos de comparación con Source** que se han ejecutado:
+
+   ![Historial de trabajos](/help/sites-cloud/administering/content-fragments/assets/cf-launches-jobs.png)
+
+1. Seleccione lo siguiente:
+
+   * El icono de lupa para abrir todos los detalles de un trabajo específico.
+Esto le devuelve la vista **[Comparar Launch con Source](#compare-launch-to-source)**, con las acciones disponibles.
+   * **Vea el registro** para ver una descripción general de los detalles de todos los trabajos.
+Desde aquí también puede seleccionar un trabajo específico y mostrar los **Resultados**. Esto lo lleva a la vista **[Comparar lanzamiento con Source](#compare-launch-to-source)**, con las acciones disponibles.
+
+   Ambas acciones lo llevan al trabajo **Comparar lanzamiento con Source** apropiado. Desde aquí puedes **[Rebasar](#rebase-a-launch-from-source)** o **[Promocionar](#promote-a-launch-to-source)** tu lanzamiento tal y como estaba en ese momento.
 
 ## Volver a basar un lanzamiento (desde Source) {#rebase-a-launch-from-source}
 
-Cuando se hayan realizado actualizaciones en los fragmentos de origen y desee copiar estos cambios en el lanzamiento:
+Cuando se hayan realizado actualizaciones en los fragmentos de origen, puede copiar el origen (incluidos los cambios) en el lanzamiento con la acción **Rebase**:
 
 1. Vaya a la consola Fragmentos de contenido.
 
