@@ -6,10 +6,10 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 4%
+source-wordcount: '1087'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Puede descargar recursos, incluidas representaciones estáticas y dinámicas. También puede enviar correos electrónicos con vínculos a recursos directamente desde [!DNL Adobe Experience Manager Assets]. Los recursos descargados están agrupados en un archivo ZIP. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -36,8 +36,8 @@ Puede descargar recursos desde Experience Manager mediante los métodos siguient
 
 * [Interfaz de usuario de Experience Manager](#download-assets)
 * [Uso compartido de recursos Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=es)
-* [aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## Descargar recursos mediante la interfaz [!DNL Experience Manager] {#download-assets}
 
@@ -56,7 +56,7 @@ Las descargas asincrónicas se activan en cualquiera de los siguientes casos:
 * Si el tamaño de la descarga es superior a 100 MB
 * Si la descarga tarda más de 30 segundos en prepararse
 
-Mientras que la descarga asincrónica se ejecuta en el servidor, el usuario puede seguir explorando y trabajando en Experience Manager. Además de las notificaciones de la bandeja de entrada de Experience Manager, Experience Manager puede enviar correos electrónicos para notificar al usuario una vez completado el proceso de descarga. Para habilitar esta función, los administradores pueden configurar el servicio de correo electrónico al [configurar una conexión de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=es#sending-email).
+Mientras que la descarga asincrónica se ejecuta en el servidor, el usuario puede seguir explorando y trabajando en Experience Manager. Además de las notificaciones de la bandeja de entrada de Experience Manager, Experience Manager puede enviar correos electrónicos para notificar al usuario una vez completado el proceso de descarga. Para habilitar esta función, los administradores pueden configurar el servicio de correo electrónico al [configurar una conexión de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Una vez configurado el servicio de correo electrónico, los administradores y usuarios pueden activar las notificaciones por correo electrónico desde la interfaz de Experience Manager.
 
@@ -107,32 +107,6 @@ La [!UICONTROL Bandeja de entrada de descarga] muestra el estado de procesamient
 
 ![Descargar bandeja de entrada](assets/link-sharing-download-inbox.png)
 
-## Habilitar servlet de descarga de recursos {#enable-asset-download-servlet}
-
-El servlet predeterminado en [!DNL Experience Manager] permite que los usuarios autenticados emitan solicitudes de descarga simultáneas y arbitrariamente grandes para crear archivos ZIP de recursos. La preparación de la descarga puede tener implicaciones de rendimiento o incluso puede sobrecargar el servidor y la red. Para mitigar estos riesgos potenciales de tipo DoS causados por esta característica, el componente OSGi `AssetDownloadServlet` está deshabilitado para las instancias de publicación. Si no necesita la función de descarga en instancias de autor, deshabilite el servlet en Author.
-
-Para permitir la descarga de recursos desde su DAM, por ejemplo, cuando utilice algo como Asset Share Commons u otra implementación similar a un portal, habilite manualmente el servlet a través de una configuración OSGi. Adobe recomienda configurar el tamaño de descarga permitido lo más bajo posible sin afectar a los requisitos de descarga diarios. Un valor alto puede afectar al rendimiento.
-
-1. Cree una carpeta con una convención de nombres que se dirija al modo de ejecución de publicación, es decir, `config.publish`:
-
-   `/apps/<your-app-name>/config.publish`
-
-1. En la carpeta de configuración, cree un archivo de tipo `nt:file` denominado `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. Rellene `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` con lo siguiente. Establece un tamaño máximo (en bytes) para la descarga como valor de `asset.download.prezip.maxcontentsize`. El siguiente ejemplo configura el tamaño máximo de la descarga ZIP para que no supere los 100 KB.
-
-   ```java
-   enabled=B"true"
-   asset.download.prezip.maxcontentsize=I"102400"
-   ```
-
-## Deshabilitar servlet de descarga de recursos {#disable-asset-download-servlet}
-
-Si no necesita la funcionalidad de descarga, deshabilite el servlet para evitar riesgos similares al DoS. `Asset Download Servlet` se puede deshabilitar en las instancias de autor y publicación de [!DNL Experience Manager] al actualizar la configuración de Dispatcher para bloquear cualquier solicitud de descarga de recursos. El servlet también se puede deshabilitar manualmente a través de la consola OSGi directamente.
-
-1. Para bloquear solicitudes de descarga de recursos a través de una configuración de Dispatcher, edite la configuración de `dispatcher.any` y agregue una nueva regla a la [sección de filtros](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#configuring).
-
-   `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
 ## Representación OnTime u OffTime {#on-off-time-rendition}
 
 Para habilitar el servicio `OnOffTimeAssetAccessFilter`, debe crear una configuración OSGi. Este servicio permite bloquear el acceso a representaciones y metadatos, además del propio recurso en función de la configuración de tiempo de activación/desactivación. La configuración de OSGi debe ser para `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Complete los siguientes pasos:
@@ -140,7 +114,7 @@ Para habilitar el servicio `OnOffTimeAssetAccessFilter`, debe crear una configur
 1. En el código de su proyecto en Git, cree un archivo de configuración en `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. El archivo debe contener `{}` como contenido, lo que significa una configuración OSGi vacía para el componente OSGi correspondiente. Esta acción habilita el servicio.
 1. Implemente su código, incluida esta nueva configuración, mediante [!DNL Cloud Manager].
 1. Una vez implementados, se puede acceder a las representaciones y los metadatos según la configuración de tiempo de activación y desactivación de los recursos. Si la fecha u hora actual es anterior a la hora de activación o posterior a la hora de inactividad, se muestra un mensaje de error.
-Para obtener más información sobre cómo agregar una configuración OSGi vacía, consulte esta [guía](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=es).
+Para obtener más información sobre cómo agregar una configuración OSGi vacía, consulte esta [guía](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Sugerencias y limitaciones {#tips-limitations}
 
@@ -164,5 +138,5 @@ Para obtener más información sobre cómo agregar una configuración OSGi vací
 >[!MORELIKETHIS]
 >
 >* [Descargar recursos protegidos por DRM](drm.md)
->* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Windows o Mac Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es)
+>* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Windows o Mac Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [Descargue recursos mediante Adobe Assets Link desde las aplicaciones de Adobe Creative Cloud admitidas](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html)
