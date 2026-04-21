@@ -6,16 +6,16 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
+source-git-commit: 29b646d024287bfbc0801c90843e5c36e5fd57ea
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1852'
 ht-degree: 2%
 
 ---
 
 # Lanzamientos para fragmentos de contenido {#launches-for-content-fragments}
 
-En Adobe Experience Manager (AEM) as a Cloud Service, los lanzamientos le permiten desarrollar contenido de forma eficaz para una versión futura.
+En Adobe Experience Manager (AEM) as a Cloud Service, un Launch le permite desarrollar contenido de forma eficaz para una versión futura.
 
 Se crea un *Launch* para permitirle realizar cambios con el fin de prepararse para una publicación futura y, al mismo tiempo, mantener el contenido actual. Para los fragmentos de contenido, esto significa que está editando dos versiones al mismo tiempo: el contenido que se publica actualmente y una versión de ese contenido que se publicará en un momento futuro. Una vez que llegue ese momento, puede reemplazar el contenido de los fragmentos de contenido originales y publicar las nuevas versiones.
 
