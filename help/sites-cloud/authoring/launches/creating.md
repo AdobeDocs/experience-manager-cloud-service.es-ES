@@ -6,7 +6,7 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 7baad256dfbf978e294b0ca66f7cf9205ac8648f
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 93%
@@ -85,7 +85,7 @@ Puede crear un lanzamiento desde la consola Sites o Lanzamientos:
    * **Título del lanzamiento**: el nombre del lanzamiento. El nombre debe ser significativo para los autores.
    * **Con contenido existente**: el contenido original se utiliza para crear el lanzamiento.
    * **utilice una plantilla nueva para sustituir la página**: consulte [Creación de un lanzamiento con una plantilla nueva](#create-launch-with-new-template) para obtener más información.
-   * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Para conseguirlo, esta opción convierte el lanzamiento en una [Live Copy](/help/sites-cloud/administering/msm/overview.md). Está opción está seleccionada de forma predeterminada.-->
+   * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Para conseguirlo, esta opción convierte el lanzamiento en una [Live Copy](/help/sites-cloud/administering/msm/overview.md). Esta opción está seleccionada de forma predeterminada.
    * **Fecha del lanzamiento**: la fecha y hora en que la copia de lanzamiento se debe activar (depende del indicador **Producción lista**; consulte [Lanzamientos: orden de los eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Propiedades del lanzamiento](/help/sites-cloud/authoring/assets/launches-properties.png)
