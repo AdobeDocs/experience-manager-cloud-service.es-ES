@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 682b5dbf587b6b06f35f29bfb74a96b2c40fb3d7
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 5%
 
 ---
@@ -45,17 +45,19 @@ El editor de comunicaciones interactivas (CI) está diseñado para ofrecer efici
 
 | **Función** | **Capacidades clave** |
 |--------------------------------------|---------------------------------------------------------------------------------------|
-| **Editor de WYSIWYG** | - Perfección de píxeles para un procesamiento preciso <br> - Controles de estilo de fuente <br> - Diseño flexible para un diseño profesional |
-| **Control de diseño** | - Colocación (absoluta y de posición variable) <br> - Funcionalidad sencilla de arrastrar y soltar <br> - Usar páginas maestras para definir diseños coherentes |
-| **Componentes** | - Acceso a los componentes recién introducidos, incluidas tablas, gráficos y códigos de barras <br> - Componentes listos para usar para un diseño más rápido |
-| **Enlace de datos** | - Vincular directamente componentes a fuentes de datos <br>: rellenar automáticamente los campos para una comunicación personalizada |
-| **Editor de reglas** | - Configurar validaciones dinámicas <br> - Agregar cálculos y lógica condicional para la interactividad |
-| **Biblioteca de fragmentos** | - Crear bloques de creación modulares (encabezados, pies de página, exenciones de responsabilidad e iconos) <br> - Mantener la coherencia en varias comunicaciones |
-| **Plantillas** | - Garantizar una marca y una estructura uniformes en todas las comunicaciones |
+| **Editor de WYSIWYG** | - Perfección de píxeles para un procesamiento preciso <br> - [Controles de estilo de fuente](/help/forms/interactive-communication/add-custom-fonts.md) <br> - Diseño flexible para un diseño profesional |
+| [**Control de diseño**](/help/forms/interactive-communication/handle-content-overflow.md) | - Colocación (absoluta y de posición variable) <br> - Funcionalidad sencilla de arrastrar y soltar <br> - Usar páginas maestras para definir diseños coherentes |
+| **Componentes** | - Acceso a los componentes recién introducidos, incluyendo [tablas](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md), gráficos y [códigos de barras](/help/forms/interactive-communication/barcode.md) <br> - Componentes listos para usar para un diseño más rápido |
+| [**Enlace de datos**](/help/forms/interactive-communication/configure-data-binding.md) | - Vincular directamente componentes a fuentes de datos <br>: rellenar automáticamente los campos para una comunicación personalizada |
+| [**Editor de reglas**](/help/forms/interactive-communication/use-the-rule-editor.md) | - Configurar validaciones dinámicas <br> - Agregar cálculos y lógica condicional para la interactividad |
+| [**Biblioteca de fragmentos**](/help/forms/interactive-communication/create-interactive-communication-fragment.md) | - Crear bloques de creación modulares (encabezados, pies de página, exenciones de responsabilidad e iconos) <br> - Mantener la coherencia en varias comunicaciones |
+| [**Plantillas**](/help/forms/interactive-communication/create-interactive-communication-template.md) | - Garantizar una marca y una estructura uniformes en todas las comunicaciones |
 
 ## Incorporación
 
-La capacidad de comunicación interactiva (CI) está disponible a través del programa de acceso anticipado (EA). Para solicitar acceso, envíe un correo electrónico a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde su ID de correo electrónico oficial con su ID de entorno y el ID de organización. Una vez que Adobe confirme su inscripción, siga la [Documentación del &#x200B;](/help/forms/setup-forms-cloud-service.md) para habilitar la comunicación interactiva en su entorno de AEM Forms.
+La capacidad de comunicación interactiva (CI) está disponible a través del programa de acceso anticipado (EA). Para solicitar acceso, envíe un correo electrónico a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde su ID de correo electrónico oficial con su ID de entorno y el ID de organización. Una vez que Adobe confirme su inscripción, siga la [Documentación del ](/help/forms/setup-forms-cloud-service.md) para habilitar la comunicación interactiva en su entorno de AEM Forms.
+
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## Próximos pasos
 
