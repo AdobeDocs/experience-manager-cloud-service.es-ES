@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 7ae45257352e5fa45ec0e74c3b9d737a4ef3db41
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '2839'
 ht-degree: 6%
@@ -33,6 +33,11 @@ Este editor proporciona lo siguiente:
 * Capacidad para [ver detalles de la versión](#view-version-history) en el editor. También puede revertir a una versión seleccionada.
 * Capacidad para [ver y abrir referencias principales](#view-parent-references).
 * Una vista jerárquica del fragmento de contenido y sus referencias, usando el [árbol de estructura](#structure-tree).
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+* Ability to [cancel, and revert to, inheritance](#cancel-and-revert-to-inheritance), when the fragment is part of a [Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+-->
 
 >[!NOTE]
 >
@@ -77,7 +82,7 @@ Cuando abra el Editor de fragmentos de contenido por primera vez, verá cuatro �
   >
   >Según las definiciones del modelo subyacente, los campos pueden estar sujetos a ciertos tipos de [Validación](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation).
 
-![Editor de fragmentos de contenido: información general](assets/cf-authoring-overview.png)
+![Editor de fragmentos de contenido: información general](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Navegar por la estructura de fragmentos de contenido {#navigate-structure}
 
@@ -107,13 +112,13 @@ En el panel izquierdo puede ver lo siguiente:
 
 En varias partes del editor puede ver el icono de vínculo. Este icono se puede utilizar para abrir el elemento mostrado; por ejemplo, un modelo de fragmento de contenido, una referencia principal o un fragmento al que se hace referencia:
 
-![Editor de fragmentos de contenido: icono de vínculo](assets/cf-authoring-link-icon.png)
+![Editor de fragmentos de contenido: icono de vínculo](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-link-icon.png)
 
 ### Árbol de estructura {#structure-tree}
 
 Abra la pestaña **Árbol de estructura** de la barra de herramientas del editor para mostrar la estructura jerárquica del fragmento de contenido y sus referencias. Utilice los iconos de vínculo para desplazarse a las referencias.
 
-![Editor de fragmentos de contenido: árbol de estructura](assets/cf-authoring-structure-tree.png)
+![Editor de fragmentos de contenido: árbol de estructura](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 >[!NOTE]
 >
@@ -151,11 +156,11 @@ Para crear una variación del fragmento de contenido:
    >
    >Después de crear la primera variación, las variaciones existentes se enumerarán en el mismo panel.
 
-   ![Editor de fragmentos de contenido: cree su primera variación](assets/cf-authoring-create-variation-01.png)
+   ![Editor de fragmentos de contenido: cree su primera variación](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-01.png)
 
 1. En el cuadro de diálogo, escriba un **Título** para su variación y una **Descripción** si lo desea:
 
-   ![Editor de fragmentos de contenido: cuadro de diálogo Crear variación](assets/cf-authoring-create-variation-02.png)
+   ![Editor de fragmentos de contenido: cuadro de diálogo Crear variación](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-02.png)
 
 1. **Crear** la variación. Aparece en la lista.
 
@@ -191,7 +196,7 @@ Para eliminar una variación del fragmento de contenido:
 
 1. En el panel **Variación**, seleccione el icono Eliminar (Papelera):
 
-   ![Editor de fragmentos de contenido: icono Eliminar variación](assets/cf-authoring-delete-variation.png)
+   ![Editor de fragmentos de contenido: icono Eliminar variación](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-delete-variation.png)
 
 1. Se abre un cuadro de diálogo. Seleccione **Eliminar** para confirmar la acción.
 
@@ -205,7 +210,7 @@ Para eliminar una variación del fragmento de contenido:
 
 Los campos definidos como Texto sin formato o Markdown tienen un cuadro de texto simple, sin opciones de formato (en pantalla):
 
-![Editor de fragmentos de contenido - Texto multilínea - pantalla completa](assets/cf-authoring-multilinetext-plaintext-markdown.png)
+![Editor de fragmentos de contenido - Texto multilínea - pantalla completa](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-plaintext-markdown.png)
 
 ## Editar campos de texto multilínea: texto enriquecido {#edit-multi-line-text-fields-rich-text}
 
@@ -231,7 +236,7 @@ Hay varias características disponibles para los campos de **[Texto multilínea]
 
 Por ejemplo:
 
-![Editor de fragmentos de contenido: texto multilínea, alternancia a pantalla completa](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
+![Editor de fragmentos de contenido: texto multilínea, alternancia a pantalla completa](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
 >[!NOTE]
 >
@@ -243,7 +248,7 @@ El editor de pantalla completa ofrece las mismas opciones de edición que cuando
 
 Por ejemplo:
 
-![Editor de fragmentos de contenido - Texto multilínea - pantalla completa](assets/cf-authoring-multilinetext-fullscreen.png)
+![Editor de fragmentos de contenido - Texto multilínea - pantalla completa](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen.png)
 
 ### Estadísticas - Texto enriquecido {#statistics-rich-text}
 
@@ -251,7 +256,7 @@ La acción **Statistics** muestra un rango de información sobre el texto en un 
 
 Por ejemplo:
 
-![Editor de fragmentos de contenido: estadísticas](assets/cf-authoring-multilinetext-statistics.png)
+![Editor de fragmentos de contenido: estadísticas](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-statistics.png)
 
 ### Comparar y sincronizar: texto enriquecido {#compare-and-synchronize-rich-text}
 
@@ -274,13 +279,13 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 
 Por ejemplo, en un escenario en el que el contenido de la variación se había reescrito completamente, una sincronización reemplazará ese nuevo contenido con el contenido de **Main**:
 
-![Editor de fragmentos de contenido: comparar y sincronizar](assets/cf-authoring-multilinetext-compare.png)
+![Editor de fragmentos de contenido: comparar y sincronizar](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-compare.png)
 
 ## Administrar referencias {#manage-references}
 
@@ -333,7 +338,7 @@ Para hacer referencia a un recurso local, puede:
 * arrastre y suelte el nuevo archivo de recurso directamente (por ejemplo, desde el sistema de archivos) en el campo **Referencia de contenido**
 * usa la acción **Agregar recurso** y, a continuación, selecciona **Examinar Assets** o **Cargar** para abrir el selector apropiado que debes usar:
 
-  ![Editor de fragmentos de contenido: agregar opciones de recursos](assets/cf-authoring-add-asset-options.png)
+  ![Editor de fragmentos de contenido: agregar opciones de recursos](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-add-asset-options.png)
 
 ##### Assets remoto de referencia {#reference-remote-assets}
 
@@ -341,11 +346,11 @@ Para hacer referencia a recursos remotos:
 
 1. Especifique el **Repositorio** remoto al buscar recursos:
 
-   ![Editor de fragmentos de contenido: seleccione un recurso del remoto](assets/cf-authoring-remote-asset-01.png)
+   ![Editor de fragmentos de contenido: seleccione un recurso del remoto](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-01.png)
 
 2. Después de seleccionarla, la ubicación se puede ver en la información del recurso:
 
-   ![Editor de fragmentos de contenido: recurso del repositorio remoto](assets/cf-authoring-remote-asset-02.png)
+   ![Editor de fragmentos de contenido: recurso del repositorio remoto](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-02.png)
 
 ###### Assets remoto: limitaciones {#remote-assets-limitations}
 
@@ -392,13 +397,32 @@ Al seleccionar el icono de vínculo en la barra de herramientas superior, se abr
 
 Por ejemplo:
 
-![Editor de fragmentos de contenido: mostrar referencias](assets/cf-authoring-show-references-link.png)
+![Editor de fragmentos de contenido: mostrar referencias](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references-link.png)
 
 Se abre una ventana con todas las referencias relacionadas. Para abrir una referencia, seleccione el nombre, el título o el icono de vínculo.
 
 Por ejemplo:
 
-![Editor de fragmentos de contenido: mostrar referencias](assets/cf-authoring-show-references.png)
+![Editor de fragmentos de contenido: mostrar referencias](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+## Cancel, and revert to, inheritance {#cancel-and-revert-to-inheritance}
+
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+
+You can cancel (then revert to) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+
+For example:
+
+* Cancel inheritance
+
+  ![Cancel inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-cancel-inheritance.png)
+
+* Revert to inheritance (if inheritance is already canceled)
+
+  ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
+-->
 
 ## Ver propiedades y etiquetas {#view-properties-tags}
 
@@ -407,7 +431,9 @@ En la pestaña Propiedades del panel derecho, se pueden ver las propiedades (met
 * para el **Fragmento de contenido** - si **Principal** está seleccionado actualmente
 * para una **variación** específica
 
-![Editor de fragmentos de contenido: propiedades](assets/cf-authoring-properties.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor de fragmentos de contenido: propiedades](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-properties.png)
 
 ### Editar propiedades y etiquetas {#edit-properties-tags}
 
@@ -417,7 +443,9 @@ En la pestaña Propiedades (panel derecho), también puede editar:
 * **Descripción**
 * **Etiquetas**: usando la lista desplegable o el cuadro de diálogo de selección
 
-  ![Editor de fragmentos de contenido: administrar etiquetas](assets/cf-authoring-edit-tags.png)
+  <!-- CQDOC-23473 - new screenshot? -->
+
+  ![Editor de fragmentos de contenido: administrar etiquetas](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-edit-tags.png)
 
 ### Abra el modelo de fragmento de contenido {#open-content-fragment-model}
 
@@ -425,7 +453,7 @@ Cuando haya seleccionado **Principal**, el nombre del modelo de fragmento de con
 
 Por ejemplo:
 
-![Editor de fragmentos de contenido: abrir el modelo de fragmentos de contenido](assets/cf-authoring-open-model.png)
+![Editor de fragmentos de contenido: abrir el modelo de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-model.png)
 
 ## Ver el historial de versiones {#view-version-history}
 
@@ -435,7 +463,9 @@ En la pestaña **Historial de versiones** del panel derecho, se muestran los det
 >
 >Se crea una nueva versión cuando se publica el fragmento de contenido.
 
-![Editor de fragmentos de contenido: información general del historial de versiones](assets/cf-authoring-version-history-overview.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor de fragmentos de contenido: información general del historial de versiones](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-overview.png)
 
 ### Comparar versión {#compare-version}
 
@@ -447,7 +477,9 @@ Para comparar una versión anterior con la actual:
 
 1. Seleccione **Comparar**.
 
-![Editor de fragmentos de contenido: comparación del historial de versiones](assets/cf-authoring-version-history-compare.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor de fragmentos de contenido: comparación del historial de versiones](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare.png)
 
 Esto abre una vista que muestra las diferencias entre la versión actual del contenido y la versión anterior seleccionada del fragmento de contenido. En el menú desplegable **Variaciones con cambios**, puede seleccionar ver las diferencias en el contenido principal o en el contenido de una variación.
 
@@ -456,7 +488,9 @@ Las diferencias se indican por color:
 * Verde: indica el contenido añadido (a la versión actual)
 * Rojo: indica el contenido eliminado (de la versión actual)
 
-![Editor de fragmentos de contenido: historial de versiones Comparar versiones](assets/cf-authoring-version-history-compare-versions.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor de fragmentos de contenido: historial de versiones Comparar versiones](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare-versions.png)
 
 ### Volver a esta versión {#revert-version}
 
@@ -468,7 +502,9 @@ Para volver a una versión específica:
 
 1. Selecciona **Revertir**.
 
-![Editor de fragmentos de contenido - Revertir historial de versiones](assets/cf-authoring-version-history-revert.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor de fragmentos de contenido - Revertir historial de versiones](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
 
 ## Ver las copias de idioma {#view-language-copies}
 
@@ -476,7 +512,9 @@ En la pestaña **Propiedades de idioma** se muestran los detalles de cualquier c
 
 Por ejemplo:
 
-![Editor de fragmentos de contenido: abrir copia de idioma](assets/cf-authoring-open-language-copies.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor de fragmentos de contenido: abrir copia de idioma](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
 >
@@ -496,7 +534,9 @@ Para permitirle colaborar en el producto y en el contexto, la pestaña **Comenta
 * Editar un comentario existente
 * Eliminar comentarios
 
-![Editor de fragmentos de contenido: ficha Comentarios](assets/cf-authoring-comments.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor de fragmentos de contenido: ficha Comentarios](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-comments.png)
 
 >[!NOTE]
 >

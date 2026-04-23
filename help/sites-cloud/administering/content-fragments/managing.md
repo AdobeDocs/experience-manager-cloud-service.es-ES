@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '3342'
 ht-degree: 32%
@@ -65,11 +65,11 @@ Aquí se pueden ver tres áreas principales:
    * Puede seleccionar una rama específica del árbol
    * Se puede cambiar el tamaño para mostrar carpetas anidadas
    * Además de los fragmentos de contenido, puede:
-      * Ver [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) o [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); también puede comprimir o expandir los vínculos a los paneles
-      * Crear y administrar [lanzamientos para fragmentos de contenido](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
+      * View [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); you can also compress, or expand, links to the panels
+      * Create, and manage, [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * Panel principal/derecho, desde aquí puede hacer lo siguiente:
-   * Consulte la lista de todos los fragmentos de contenido en la rama seleccionada del árbol:
-      * Se mostrarán los fragmentos de contenido de la carpeta seleccionada y todas las carpetas secundarias:
+   * See the list of all Content Fragments in the selected branch of the tree:
+      * Content Fragments from the selected folder, and all child folders will be shown:
          * La ubicación se indica mediante las rutas de exploración; también se pueden utilizar para cambiar la ubicación:
       * [Se muestra información sobre cada fragmento](#information-content-fragments)
          * [Puede seleccionar qué columnas mostrar](#select-columns-console)
@@ -84,9 +84,9 @@ Aquí se pueden ver tres áreas principales:
          * Ordenar: seleccione la acción adecuada, ya sea ascendente o descendente.
 Así se ordenará toda la tabla según esa columna. La ordenación solo está disponible en las columnas adecuadas.
          * Cambiar el tamaño de la columna: mediante los controles deslizantes de acción o de anchura
-      * Seleccione uno o más fragmentos para realizar más [acción](#actions-selected-content-fragment)
-   * Usar el cuadro [Buscar](#searching-fragments)
-   * Abrir el [panel Filtro](#filtering-fragments)
+      * Select one, or more, fragments for further [action](#actions-selected-content-fragment)
+   * Use the [Search](#searching-fragments) box
+   * Open the [Filter panel](#filtering-fragments)
    * Hay una selección de [métodos abreviados de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) disponibles para usar en esta consola
 
 ## La información proporcionada sobre sus fragmentos de contenido {#information-content-fragments}
@@ -193,6 +193,15 @@ Al seleccionar un fragmento específico, se abre una barra de herramientas centr
 * **[Desproteger y proteger](#check-out-and-check-in)**
 * **[Eliminar](#deleting-a-fragment)** (solo disponible para fragmentos sin publicar)
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+* [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) actions:
+  * **[Create Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#create-a-live-copy)**
+  * **[Synchronize](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#synchronize)**
+  * **[Rollout](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#rollout)**
+* **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
+-->
+
 >[!NOTE]
 >
 >Use **Abrir** para abrir el fragmento seleccionado en el editor *original*.
@@ -266,12 +275,12 @@ Abra el fragmento para su edición:
 
 **Copiar** crea una copia del fragmento seleccionado en su ubicación.
 
-* En la acción **Copiar** puede seleccionar si desea **Copiar también los fragmentos de contenido a los que se hace referencia**. Esto le permite copiar el fragmento de contenido seleccionado y todos los fragmentos referenciados. AEM:
+* En la acción **Copiar** puede seleccionar si desea **Copiar también los fragmentos de contenido a los que se hace referencia**. This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
 
-   * Crea una copia del fragmento de contenido seleccionado en su ubicación.
-   * Crea copias de todos los fragmentos a los que hace referencia el fragmento seleccionado.
+   * Creates a copy of the selected Content Fragment at its location.
+   * Creates copies of all fragments that are referenced by the selected fragment.
 
-     Las [ubicaciones en las que se copian los fragmentos a los que se hace referencia](#locations-that-the-referenced-fragments-are-copied-to) dependen de la opción que seleccione:
+     The [locations that the referenced fragments are copied to](#locations-that-the-referenced-fragments-are-copied-to) depends on the option you select:
 
       * **Copiar a la carpeta seleccionada**
 Cuando se seleccionan, los fragmentos a los que se hace referencia se copian en la misma ubicación que el fragmento seleccionado original.
@@ -439,7 +448,7 @@ Después de seleccionar la acción **Publicar**:
 
 1. Confirme la acción de publicación.
 
-Después de la publicación, el estado del fragmento se actualiza y es visible en el editor y la consola. Si ha especificado una publicación programada, se mostrará información.
+After publication the fragment status will be updated and visible in the editor and console. If you have specified a scheduled publication, information will be shown.
 
 >[!NOTE]
 >
@@ -483,18 +492,18 @@ Antes del reemplazo, se comprueban los criterios de validación y se le informa 
 >
 >Si selecciona más de 20 fragmentos de contenido, verá el mensaje **No se puede encontrar y reemplazar**.
 
-![Confirmar reemplazo](assets/cf-managing-confirm-replace.png)
+![Confirm Replace](assets/cf-managing-confirm-replace.png)
 
-## Desproteger y proteger {#check-out-and-check-in}
+## Check Out and Check In {#check-out-and-check-in}
 
-AEM le permite:
+AEM lets you:
 
-* [desproteger](#check-out-a-content-fragment) un fragmento de contenido, lo que impide que otros usuarios trabajen en el fragmento
-* [registrar](#check-in-a-content-fragment) fragmentos de contenido, lo que permite que otros usuarios reanuden el trabajo con el fragmento
+* [check out](#check-out-a-content-fragment) a Content Fragment, preventing other users from working on the fragment
+* [check in](#check-in-a-content-fragment) Content Fragments, allowing other users to resume working with the fragment
 
 Cuando retira un fragmento, está bloqueado (`jcr:lock`). Un icono de candado en la columna **Title** indica un fragmento bloqueado. Al seleccionar el icono de candado se proporcionan detalles de la cuenta que ha retirado el fragmento.
 
-Puede editar, publicar, cancelar la publicación, mover o eliminar un fragmento bloqueado. Otros usuarios no podrán realizar ninguna de estas acciones en el fragmento hasta que proteja el fragmento, aunque sí podrán cambiar los metadatos del fragmento bloqueado.
+You can edit, publish, unpublish, move, or delete a locked fragment. Otros usuarios no podrán realizar ninguna de estas acciones en el fragmento hasta que proteja el fragmento, aunque sí podrán cambiar los metadatos del fragmento bloqueado.
 
 Esta funcionalidad ayuda a evitar conflictos cuando varios usuarios colaboran en la edición de fragmentos.
 
@@ -563,7 +572,7 @@ Se puede acceder a los detalles de las referencias principales desde el
 * Columna **Referencias** de la consola Fragmentos de contenido
 * el vínculo [referencias principales en la barra de herramientas superior del editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
 
-Ambos proporcionan un vínculo que abre un cuadro de diálogo con todas las referencias principales de ese fragmento; incluida la referencia a fragmentos de contenido, fragmentos de experiencias y páginas. Para abrir una referencia específica, haga clic en **Título** o en el icono de vínculo del cuadro de diálogo.
+Both provide a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click the **Title**, or the link icon, in the dialog.
 
 Por ejemplo:
 
@@ -598,9 +607,9 @@ Se mostrará una lista de columnas que puede ocultar o mostrar:
 
 El panel Filtro ofrece lo siguiente:
 
-* una selección de predicados;
-   * incluyendo modelos de fragmentos de contenido, localización, etiquetas, campos de estado, entre otros
-   * se pueden seleccionar uno o más predicados y combinarlos para crear el filtro
+* a selection of predicates;
+   * including content fragment models, localization, tags, status fields, among others
+   * one, or more, predicates can be selected and combined to create the filter
 * **Excluir elementos de subcarpeta**, lo que le ofrece la opción de excluir fragmentos de contenido almacenados en subcarpetas
 * la oportunidad de **Guardar** su configuración
 * la opción recuperar un filtro de búsqueda guardada para reutilizarlo

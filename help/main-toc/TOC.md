@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 50baca76cdc6566570f33771f100b7e6e9cc150d
+source-git-commit: 507e5eccb71cffdc8996f5320d31321d6c7f8aeb
 workflow-type: tm+mt
-source-wordcount: '7234'
+source-wordcount: '7239'
 ht-degree: 93%
 
 ---
@@ -257,7 +257,7 @@ ht-degree: 93%
       + [Notas de la versión actual para generar variaciones](/help/generative-ai/release-notes-generate-variations.md)
    + Notas de la versión del editor universal  {#universal-editor}
       + [Notas de la versión actual del editor universal](/help/release-notes/universal-editor/current.md)
-      + [Previsualizar notas de la versión del editor universal](/help/release-notes/universal-editor/preview.md)
+      + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
          + [Notas de la versión 2026.04.02](/help/release-notes/universal-editor/2026/2026-04-02.md)
          + [Notas de la versión 2026.03.26](/help/release-notes/universal-editor/2026/2026-03-26.md)
@@ -319,7 +319,7 @@ ht-degree: 93%
    + [Prueba de conectividad de red](/help/security/network-connectivity-test.md)
    + [Compatibilidad con IMS para AEM as a Cloud Service](/help/security/ims-support.md)
    + [Cambios en la sincronización de grupo de usuarios y perfil de producto](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
-   + [Migración a la identidad externa y a la pertenencia a grupos dinámicos](/help/security/migrating-to-external-identity.md)
+   + [Migrating to External Identity and Dynamic Group Membership](/help/security/migrating-to-external-identity.md)
    + [Compatibilidad con cookies del mismo sitio para AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md)
    + [Reglas de filtro de tráfico, incluidas reglas WAF](/help/security/traffic-filter-rules-including-waf.md)
@@ -444,7 +444,7 @@ ht-degree: 93%
          + [Creación de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [Administrar páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [Propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md)
-         + [Edición de las propiedades de página  &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
+         + [Edición de las propiedades de página  ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
          + [Previsualizar páginas](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [Versiones de página](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -518,6 +518,7 @@ ht-degree: 93%
          + [Eliminar consideraciones](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analizando estructura](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [Previsualización de fragmentos](/help/sites-cloud/administering/content-fragments/preview.md)
+         + [Reutilización de fragmentos de contenido mediante MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
          + [Lanzamientos para fragmentos de contenido](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [Recursos de la consola de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Fragmentos de contenido con Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
@@ -580,7 +581,7 @@ ht-degree: 93%
       + [Integración con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
       + [Uso de fragmentos de contenido en Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=es)
    + [Telemetría operativa para AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
-   + [Experimentación contextual](/help/sites-cloud/administering/contextual-experimentation.md)
+   + [Contextual Experimentation](/help/sites-cloud/administering/contextual-experimentation.md)
 + Recursos {#assets}
    + [Información general y novedades](/help/assets/overview.md)
    + [Cambios importantes en [!DNL Assets] como [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
@@ -607,7 +608,7 @@ ht-degree: 93%
       + [Vista previa de activos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Etiquetas inteligentes para imágenes](/help/assets/smart-tags.md)
       + [Formación sobre etiquetas inteligentes](/help/assets/smart-tags-training.md)
-      + [Mejore la detección de contenido con metadatos generados por IA](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
+      + [Enhance content discovery with AI generated metadata](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
       + [Etiquetas inteligentes para vídeos](/help/assets/smart-tags-for-videos.md)
       + [Organizar recursos](/help/assets/organize-assets.md)
       + [Uso [!DNL Adobe Stock] activos](/help/assets/aem-assets-adobe-stock.md)
@@ -626,7 +627,7 @@ ht-degree: 93%
       + [Creación y uso compartido de carpetas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
-      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
       + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
       + Selector de recursos de Micro-Frontend {#asset-selector}
@@ -749,8 +750,8 @@ ht-degree: 93%
          + [Preguntas frecuentes](/help/assets/dynamic-media-open-apis-faqs.md)
          + [Configuración del dominio personalizado](/help/assets/configure-custom-domain.md)
          + [Optimizar imágenes](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
-         + [Creación de URL de vanidad](/help/assets/vanity-urls.md)
-         + [Administración de caché](/help/assets/cache-management-dynamic-media-open-api.md)
+         + [Create vanity URLs](/help/assets/vanity-urls.md)
+         + [Cache Management](/help/assets/cache-management-dynamic-media-open-api.md)
    + Uso de la vista Recursos  {#assets-view}
       + [Introducción](/help/assets/assets-view-introduction.md)
       + [Introducción](/help/assets/get-started-assets-view.md)
@@ -762,7 +763,7 @@ ht-degree: 93%
       + [Búsqueda y descubrimiento de recursos](/help/assets/search-assets-view.md)
       + [Filtros de búsqueda personalizados](/help/assets/custom-search-filters.md)
       + [Tareas de administración de recursos](/help/assets/manage-organize-assets-view.md)
-      + [Metadatos generados por IA](/help/assets/ai-generated-metadata-assets-view.md)
+      + [AI generated metadata](/help/assets/ai-generated-metadata-assets-view.md)
       + [Edición de imágenes](/help/assets/edit-images-assets-view.md)
       + [Edición de vídeos](/help/assets/edit-videos-assets-view.md)
       + [Visualización y administración de representaciones](/help/assets/renditions.md)
@@ -781,7 +782,7 @@ ht-degree: 93%
       + [Extensibilidad de la IU de la vista de AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
 
       + [Administrar informes](/help/assets/manage-reports-assets-view.md)
-      + [Vista de Assets de metadatos en cascada](/help/assets/cascading-metadata-assets-view.md)
+      + [Cascading Metadata Assets View](/help/assets/cascading-metadata-assets-view.md)
    + Content Hub {#content-hub}
       + [Información general](/help/assets/product-overview.md)
       + [Novedades del centro de contenido](/help/assets/whats-new.md)
@@ -855,8 +856,8 @@ ht-degree: 93%
          + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuración de almacenamiento de  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Conectar el formulario adaptable a la base de datos SQL de Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configuración de los servicios en la nube de Salesforce](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
@@ -892,7 +893,7 @@ ht-degree: 93%
       + [¿Qué formularios adaptables son mejores?](/help/edge/docs/forms/authoring-a-form.md)
       + [Crear fragmento de formulario adaptable](/help/forms/adaptive-form-fragments.md)
       + [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-      + [Administrar versiones de Form Assets en Forms Manager](/help/forms/manage-form-versions-forms-manager.md)
+      + [Manage Form Assets Versions in Forms Manager](/help/forms/manage-form-versions-forms-manager.md)
       + Componentes principales {#authoring-adaptive-forms-core-components}
          + Crear un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
             + [Crear un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
@@ -989,7 +990,7 @@ ht-degree: 93%
             + [Añadir información de datos de usuario a los metadatos de envío de formularios](/help/forms/form-submission-metadata.md)
             + [API para invocar el servicio del modelo de datos de formulario (FDM) desde formularios adaptables](/help/forms/invoke-form-data-model-services.md)
          + [Rellene previamente los campos del formulario adaptable](/help/forms/prepopulate-adaptive-form-fields.md)
-         + [Generar PDF de envío (anteriormente documento de registro)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [Generate Submission PDF (formerly Document of Record)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [Agregar la compatibilidad con nuevas configuraciones regionales a un formulario adaptable](/help/forms/supporting-new-language-localization.md)
          + Adición o mejora de metadatos  {#manage-metadata}
             + [Adición, eliminación o edición de metadatos de un formulario adaptable](/help/forms/manage-form-metadata.md)
@@ -1035,10 +1036,10 @@ ht-degree: 93%
       + [Introducción](/help/forms/interactive-communication/introduction.md)
       + [Introducción](/help/forms/interactive-communication/getting-started.md)
       + [Crear comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication.md)
-      + [Crear plantilla de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-template.md)
-      + [Crear fragmento de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-      + [Introducción a la comunicación interactiva](/help/forms/introduction-to-interactive-communication.md)
-      + [Crear la primera comunicación interactiva](/help/forms/create-your-first-communication.md)
+      + [Create Interactive Communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [Create Interactive Communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+      + [Introduction to Interactive Communication](/help/forms/introduction-to-interactive-communication.md)
+      + [Create your First Interactive Communication](/help/forms/create-your-first-communication.md)
    + Componente {#component}
       + [Cuadro de texto](/help/forms/interactive-communication/text-box.md)
       + [Imagen](/help/forms/interactive-communication/image.md)
@@ -1150,7 +1151,7 @@ ht-degree: 93%
          + [Agente de optimización de contenido](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
       + Agente de control de marca {#governance}
          + [Información general](/help/ai-in-aem/agents/governance/overview.md)
-         + [Cómo importar una política de marca](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
+         + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
    + Asistente de IA {#ai-assistant}
       + [Configuración del asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
       + [Acerca del asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
@@ -1158,12 +1159,12 @@ ht-degree: 93%
       + [Generar variaciones: integrado en Editores AEM](/help/generative-ai/generate-variations-integrated-editor.md)
       + [Generar variaciones](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
-      + [Forms Experience Builder: Información general](/help/forms/experience-builder/product-overview.md)
-      + [Introducción a Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
-      + [Implementación y configuración de Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+      + [Forms Experience Builder - Overview](/help/forms/experience-builder/product-overview.md)
+      + [Getting started with Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+      + [Deploy and configure Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
       + Cómo {#forms-experience-builder-how-to}
-         + [¿Cómo convertir una imagen a un formulario?](/help/forms/experience-builder/intelligent-import-conversion.md)
-         + [¿Cómo configurar los envíos y las integraciones de formularios?](/help/forms/experience-builder/form-submission-integration.md)
+         + [How to convert an image to a form?](/help/forms/experience-builder/intelligent-import-conversion.md)
+         + [How to configure form submissions and integrations?](/help/forms/experience-builder/form-submission-integration.md)
          + [Cómo crear campos inteligentes mejorados con LLM en Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
          + [¿Cómo iniciar una nueva conversación de subprocesos en Forms Experience Builder?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
       + [Biblioteca de mensajes](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
@@ -1278,7 +1279,7 @@ ht-degree: 93%
          + Lista desplegable en cascada {#cascading-drop-down-list}
             + [Introducción](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
             + [Crear integración de API](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
-            + [Crear formulario](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
+            + [Create Form](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
       + Creación basada en documentos {#getting-started-edge-delivery-services-forms}
          + [Creación del primer formulario: Guía de inicio rápido con Hojas de cálculo de Google y Excel](/help/edge/docs/forms/tutorial.md)
          + [Cómo crear formularios con Hojas de cálculo de Google o Excel: Guía paso a paso](/help/edge/docs/forms/create-forms.md)
@@ -1299,7 +1300,7 @@ ht-degree: 93%
          + [Supervisar el rendimiento del formulario: guías de telemetría operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Guía de envío de formularios: uso del servicio de envío de formularios](/help/forms/forms-submission-service.md)
       + [Configuración del envío de formularios de Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
-      + [Propiedades del campo de bloque de Forms adaptable](/help/edge/docs/forms/eds-form-field-properties.md)
+      + [Adaptive Forms Block Field Properties](/help/edge/docs/forms/eds-form-field-properties.md)
       + [Preguntas más frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Prácticas recomendadas para crear formularios](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Sin encabezado {#headless}
@@ -1321,7 +1322,7 @@ ht-degree: 93%
       + Creación{#authoring}
          + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=es)
          + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
-      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=es)
+      + [Vista previa de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
    + Selector de fragmentos de contenido {#content-fragment-selector}
       + [Selector de fragmentos de contenido de Micro-Frontend: información general](/help/headless/content-fragment-selector/overview.md)
@@ -1421,7 +1422,7 @@ ht-degree: 93%
          + [Introducción a canalizaciones de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configuración de una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Añadir una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [Dividir canalización solo de fase y producción](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
+         + [Split Stage and Production Only Pipeline](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
          + [Configurar una canalización de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [Administrar canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [Variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
@@ -1628,7 +1629,7 @@ ht-degree: 93%
    + Implementación en AEM as a Cloud Service {#deploying}
       + [Implementación en AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [Actualizaciones de la versión de AEM](/help/implementing/deploying/aem-version-updates.md)
-      + [Horas tranquilas y períodos libres de actualización](/help/implementing/deploying/quiet-hours-update-free-periods.md)
+      + [Quiet Hours and Update Free Periods](/help/implementing/deploying/quiet-hours-update-free-periods.md)
       + [Configurar OSGI para AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
       + [Asignación de recursos](/help/implementing/deploying/resource-mapping.md)
    + Nivel de autor {#author-tier}
