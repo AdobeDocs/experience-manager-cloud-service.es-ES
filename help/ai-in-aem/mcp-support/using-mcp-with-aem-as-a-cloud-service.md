@@ -4,9 +4,9 @@ description: Aprenda a utilizar el protocolo de contexto de modelo con AEM as a 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: c7c8a616e00a7e97ac9b8ab50411c0a9e9417273
+source-git-commit: 5056eefbc6d6e40a94adfce3c64b7745f38b96b7
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1812'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ Las modernas aplicaciones de IDE y chat utilizan MCP como una forma para que un 
 
 Las métricas clave incluyen lo siguiente:
 
-* **Interacción en lenguaje natural en lugar de canalización de API**
+* **Interacción en lenguaje natural en lugar de canalización API**
 Las herramientas de MCP describen qué operaciones están disponibles y cómo llamarlas. El LLM utiliza estos esquemas para decidir qué herramientas invocar y con qué parámetros.
 * **Experiencia coherente entre aplicaciones**
 Las mismas herramientas de MCP de AEM se pueden usar desde varias aplicaciones compatibles con MCP, lo que permite a los equipos trabajar donde son más productivos mientras llaman a las mismas capacidades de AEM subyacentes.
-* **Conservación de la seguridad y el control**
+* **Se conservan la seguridad y el control**
 Las solicitudes a las herramientas de MCP de AEM se ejecutan bajo la identidad del usuario autenticado y cada herramienta aplica los permisos de AEM existentes del usuario. Las operaciones asistidas por IA siguen las mismas reglas de acceso que el trabajo manual en AEM.
 
 ## Servidores MCP proporcionados por AEM {#mcp-servers-provided-by-aem}
@@ -52,10 +52,10 @@ AEM expone los servidores MCP como extremos HTTP. Los extremos enumerados a cont
 
 | **Servidor MCP** | **Extremo** | **Descripción** |
 |---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Contenido** | `/content` | Todas las operaciones de contenido de bajo nivel, incluidas las de creación, lectura, actualización y eliminación (CRUD) de páginas, fragmentos y recursos. |
-| **Contenido (solo lectura)** | `/content-readonly` | Operaciones de contenido de solo lectura (Get, List/Search) para páginas, fragmentos y recursos. |
+| **Contenido** | `/content` | Operaciones de contenido, como crear, leer, actualizar y eliminar (CRUD) para páginas y fragmentos de contenido, además de importación de recursos. |
+| **Contenido (solo lectura)** | `/content-readonly` | Operaciones de contenido de solo lectura (Get, List/Search) para páginas y fragmentos de contenido. |
 | **Cloud Manager** | `/cloudmanager` | Administre entidades de Cloud Manager, incluidos programas, entornos, repositorios y canalizaciones, que también se pueden activar. |
-| **Administración de experiencias** | `/experience-governance` | Evalúe el contenido (texto, imágenes, páginas) con respecto a las reglas de gobernanza de marca y enumere las configuraciones y comprobaciones de marca.<br/>Los clientes deben registrarse para la versión de prueba de [agentes o tener una licencia de pago](https://experienceleague.adobe.com/es/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) para acceder al MCP de Experience Governance. |
+| **Administración de experiencias** | `/experience-governance` | Evalúe el contenido (texto, imágenes, páginas) con respecto a las reglas de gobernanza de marca y enumere las configuraciones y comprobaciones de marca.<br/>Los clientes deben registrarse para la versión de prueba de [agentes o tener una licencia de pago](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) para acceder al MCP de Experience Governance. |
 
 Las herramientas específicas expuestas por cada servidor MCP pueden evolucionar con el tiempo. En la práctica, puede pedir a su aplicación habilitada para MCP que descubra las herramientas a través de un mensaje como:
 
@@ -65,7 +65,7 @@ Las herramientas específicas expuestas por cada servidor MCP pueden evolucionar
 
 El cliente MCP utiliza el protocolo MCP para recuperar la lista de herramientas y los esquemas, que el LLM puede utilizar a continuación.
 
-Consulte [Tutorial de Content MCP Server](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) y [Vídeo de Cloud Manager MCP Server](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obtener más información sobre sus capacidades y cómo utilizarlas.
+Consulte [Tutorial de Content MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) y [Vídeo de Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obtener más información sobre sus capacidades y cómo utilizarlas.
 
 ## Aplicaciones MCP compatibles {#supported-mcp-applications}
 
@@ -223,7 +223,7 @@ Piense en el LLM como un asistente experto que necesita supervisión. Tiene un a
 * **Tenga cuidado con las ejecuciones de la herramienta de reconocimiento automático**
 Algunas aplicaciones cliente de MCP, como Claude, ofrecen la opción de reconocer automáticamente las ejecuciones de herramientas solicitadas por LLM. Aunque esta opción puede resultar conveniente para operaciones de solo lectura, como buscar o recuperar contenido, tenga cuidado con las herramientas que actualizan o eliminan contenido. Revise cada solicitud de ejecución de herramienta antes de confirmar las acciones que modifican el entorno de AEM.
 
-## Limitaciones {#limitations}
+## Restricciones {#limitations}
 
 AEM admite actualmente la configuración de servidores MCP en las aplicaciones enumeradas en [Aplicaciones MCP admitidas](#supported-mcp-applications).
 
