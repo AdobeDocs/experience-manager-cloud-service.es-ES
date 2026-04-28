@@ -4,10 +4,10 @@ description: Obtenga información acerca de la nueva interfaz de usuario táctil
 feature: Security
 role: Admin
 exl-id: 855e112a-39f7-4aee-9e29-ece1aa9acf0a
-source-git-commit: bdc5249a7a48224007c1ab697343245001e03168
-workflow-type: ht
-source-wordcount: '1111'
-ht-degree: 100%
+source-git-commit: 99632006310beebe13c5d5885a8e9e7937c8f627
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 86%
 
 ---
 
@@ -65,7 +65,7 @@ Los privilegios pueden añadirse buscándolos mediante el campo de texto y selec
 >
 >Para obtener una lista completa de privilegios y descripciones, consulte [Administración de usuarios, grupos y derechos de acceso](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
 
-![Busque el permiso para una ruta determinada.](assets/image2019-3-21_0-5-47.png) ![Añada una nueva entrada para “dam-users” como se muestra en una ruta seleccionada en columnas verticales.](assets/image2019-3-21_0-6-53.png)
+![Permiso de búsqueda para una ruta de acceso determinada.](assets/image2019-3-21_0-5-47.png) ![Agregar nueva entrada para &#39;dam-users&#39; como se muestra en una ruta seleccionada en columnas verticales.](assets/image2019-3-21_0-6-53.png)
 
 Una vez seleccionada la lista de privilegios, el usuario puede elegir el Tipo de permiso: Denegar o Permitir, como se muestra a continuación.
 
@@ -126,7 +126,7 @@ Puede acceder a la vista Permisos de la IU táctil haciendo clic en **Herramient
 
 Una vez que inicie la vista Permisos, puede hacer clic en **Vista de nodo** o **Vista filtrada** en la esquina superior derecha de la pantalla según sus preferencias de visualización.
 
-#### Vista de nodo
+#### Vista de nodo {#node-view}
 
 En esta vista, las ACL se presentan para cada nodo (ruta) individual. Proporciona información sobre:
 
@@ -136,14 +136,17 @@ Los usuarios tienen la opción de añadir, quitar o actualizar ACL. Cuando se ha
 
 ![Vista de nodo](assets/image-2025-2-5_15-26-2.png)
 
-#### Vista filtrada
+#### Vista de auditoría {#audit-view}
 
-Esta vista permite a los usuarios buscar de forma eficaz permisos en una ruta y principales especificados. En esta vista, los usuarios pueden determinar fácilmente el tipo de permisos otorgados a un grupo de principales para la ruta seleccionada.
-Además, la vista filtrada proporciona información sobre las ACL efectivas. Muestra las ACL asociadas al nodo principal de la ruta seleccionada, teniendo en cuenta el principal seleccionado y cualquier principal común.
+Esta vista permite a los usuarios buscar de forma eficaz los permisos aplicados en una ruta especificada y en las entidades de seguridad seleccionadas. En esta vista, los usuarios pueden identificar claramente el tipo de permisos otorgados a una o más entidades de seguridad para la ruta seleccionada.
 
-![Vista de filtro](assets/FilteredView.png)
+La pertenencia al grupo se puede mostrar opcionalmente seleccionando la casilla de verificación dedicada. Cuando esta opción está habilitada, la evaluación de permisos tendrá en cuenta todos los grupos del principal, no solo el principal seleccionado.
 
-### Vista Permisos del Explorador de repositorios {#the-repository-browser-permissions-view}
+Además, la vista de auditoría proporciona información sobre las ACL efectivas. Muestra las ACL asociadas al nodo principal de la ruta seleccionada, teniendo en cuenta el principal seleccionado así como cualquier principal común.
+
+![Vista de filtro](assets/audit-view.png)
+
+### La vista Permisos y auditoría del Explorador de repositorios {#the-repository-browser-permissions-and-audit-view}
 
 También se puede acceder a la vista Permisos a través del [Explorador de repositorios](/help/implementing/developing/tools/repository-browser.md).
 
@@ -155,7 +158,11 @@ Puede acceder a él siguiendo estos pasos:
 
 1. Una vez en el Explorador de repositorios, haga clic en la pestaña **Permisos**
 
-   ![Pestaña Permisos](assets/image-2025-2-5_15-29-33.png)
+   ![Pestaña Permisos](/help/security/assets/permissions-tab.png)
+
+1. La vista de auditoría permite a los usuarios buscar de forma eficaz los permisos aplicados en una ruta especificada y en las entidades de seguridad seleccionadas. La pertenencia al grupo se puede mostrar opcionalmente seleccionando la casilla de verificación dedicada.
+
+   ![Pestaña Auditoría](/help/security/assets/audit-tab.png)
 
 **Nota**: Para ver los permisos, se requieren derechos de administrador. Siga los pasos mencionados [aquí](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy) para obtener acceso a los permisos.
 
