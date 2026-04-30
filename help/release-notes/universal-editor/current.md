@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2026.04.09 del editor universal
-description: Estas son las notas de la versión 2026.04.09 del editor universal.
+title: Notas de la versión de Universal Editor 2026.04.30
+description: Estas son las notas de la versión de la versión 2026.04.30 de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: a5f3b703706beab106591477372328e45f881b44
+source-git-commit: a6293278e50507943cd3f1055bc7c7f8dc479613
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 48%
+source-wordcount: '97'
+ht-degree: 22%
 
 ---
 
 
-# Notas de la versión 2026.04.09 del editor universal {#release-notes}
+# Notas de la versión de Universal Editor 2026.04.30 {#release-notes}
 
-Estas son las notas de la versión del editor universal del 9 de abril de 2026.
+Estas son las notas de la versión de la versión del editor universal del 30 de abril de 2026.
 
 >[!TIP]
 >
@@ -22,10 +22,8 @@ Estas son las notas de la versión del editor universal del 9 de abril de 2026.
 
 >[!TIP]
 >
->Consulte [esta página](/help/release-notes/release-notes-cloud/release-notes-current.md) para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service.
+>Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, consulte [esta página.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## Novedades {#what-is-new}
+## Mejoras {#other-improvements}
 
-* [La opción de agregar imagen de la barra de herramientas del editor de texto enriquecido (RTE)](/help/implementing/universal-editor/configure-rte.md#image) ahora se admite para [proyectos que crean y mantienen contenido en AEM as a Cloud Service.](https://www.aem.live/docs/aem-authoring)
-* [El panel de propiedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) ahora se puede contraer al navegar desde el editor a [la pantalla principal.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
-   * Póngase en contacto con el Servicio de atención al cliente de Adobe si desea utilizar esta función.
+* Se corrigió un problema en el cual [el distintivo de un elemento editable](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content) ocultaba el elemento detrás de él en algunas situaciones.
