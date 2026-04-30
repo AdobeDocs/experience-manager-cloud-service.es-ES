@@ -4,9 +4,9 @@ description: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud S
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 8b477bea40eec0b0c5aadea68f5b40577a2aa294
+source-git-commit: a1fc361dd4d060bf2aa4a085188ddc28d996c62a
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '678'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Producto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versión | 2026.3.0 |
+| Versión | 2026.4.0 |
 | Tipo | Actualizaciones continuas |
 | Fecha de disponibilidad | Actualización continua |
 
@@ -26,7 +26,7 @@ Con el modelo de versiones continuas de [!DNL Adobe Experience Manager] as a Clo
 
 * **Las versiones de características se realizan con una frecuencia mensual predecible y se centran en nuevas funcionalidades e innovaciones de productos.**
    * Consulte las [notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md) para obtener más información sobre la última versión de la función.
-* **Las versiones de mantenimiento** se realizan con frecuencia y se centran en actualizaciones de seguridad, correcciones de errores y mejoras de rendimiento. 
+* **Las versiones de mantenimiento** se realizan con frecuencia y se centran en actualizaciones de seguridad, correcciones de errores y mejoras de rendimiento.
    * Esto garantiza que [!DNL Adobe Experience Manager] as a Cloud Service siempre está actualizado con cualquier corrección crítica.
    * Consulte las [notas de la versión de mantenimiento actuales](/help/release-notes/maintenance/latest.md) para obtener más información sobre la última versión de mantenimiento.
 
