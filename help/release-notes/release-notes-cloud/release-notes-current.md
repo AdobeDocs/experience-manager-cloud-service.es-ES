@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0ba0b95eac6b3a3ca0aa6ed0a816edcc63b9d50f
+source-git-commit: 687be0c3895cbcd8a9530d25f279100f610efe96
 workflow-type: tm+mt
-source-wordcount: '2009'
-ht-degree: 31%
+source-wordcount: '2054'
+ht-degree: 30%
 
 ---
 
@@ -39,7 +39,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483063/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## Programas de AEM Beta {#aem-beta-programs}
@@ -91,6 +91,10 @@ Ver [programas beta de Cloud Manager](/help/implementing/cloud-manager/release-n
 
 Los usuarios de AEM ahora pueden aprovechar los modelos de idiomas grandes (LLM) para la traducción de contenido, lo que ofrece calidad de traducción humana a velocidad de traducción automática. Al igual que los servicios de traducción tradicionales de terceros, Azure OpenAI puede configurarse como proveedor de traducción en AEM, con compatibilidad con LLM adicionales planificados para futuras versiones. Los clientes utilizan sus propias licencias LLM para esta capacidad. Además, las guías de estilo de traducción corporativa se pueden cargar en AEM, lo que permite extraer reglas de traducción para garantizar la coherencia de marca y estilo. Consulte [Configuración de la integración de traducción de IA](/help/sites-cloud/administering/translation/ai-translation-integration.md) para obtener más información.
 
+### Editor de fragmentos de contenido {#cf-editor}
+
+El nuevo Editor de fragmentos de contenido ahora le permite previsualizar la representación JSON de un fragmento de contenido. Esto ayuda a validar la estructura de contenido independientemente del procesamiento y restaura la paridad con el editor de fragmentos de contenido anterior en la interfaz de usuario táctil de AEM para esta capacidad.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **Asesor de contenido ya disponible para aplicaciones de Adobe Workfront y que no son de Adobe**
@@ -133,7 +137,7 @@ Obtenga más información sobre [Desarrollo local con herramientas de IA](/help/
 
 Experience Governance MCP Server ya está disponible de forma general (GA). Se integra con las herramientas para desarrolladores de IA y bots de chat que admiten el Protocolo de contexto de modelo (MCP), lo que le permite salvaguardar la integridad y el cumplimiento de la marca mediante indicadores de lenguaje natural en su bot de chat o IDE. Puede evaluar el contenido (texto, imágenes, páginas) con reglas de gobernanza de marca y recuperar las configuraciones de marca y las comprobaciones de gobernanza disponibles.
 
-Obtenga más información acerca de [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) y el [Agente de control](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+Obtenga más información acerca de [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) y el [Agente de control](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 #### Conector de Claude {#aem-claude-connector}
 
