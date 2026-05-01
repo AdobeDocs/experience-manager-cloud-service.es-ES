@@ -38,7 +38,7 @@ Algunas de las ventajas clave del control de acceso basado en atributos son:
 * Admite administración escalable en marcas y regiones
 * Mejora la administración de recursos
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475417/?captions=spa&learn=on&enablevpops){transcript=true}
 
 ## Cómo habilitar el control de acceso basado en atributos {#enable-attribute-based-access-control}
 
