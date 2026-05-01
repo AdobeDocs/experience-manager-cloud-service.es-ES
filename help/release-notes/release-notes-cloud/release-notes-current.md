@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d389f158ddd71f90b5ee9b707050f5b593ec595a
+source-git-commit: 0ba0b95eac6b3a3ca0aa6ed0a816edcc63b9d50f
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2009'
 ht-degree: 31%
 
 ---
@@ -39,7 +39,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483063/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## Programas de AEM Beta {#aem-beta-programs}
@@ -101,16 +101,18 @@ Ahora puede detectar, evaluar y reutilizar recursos aprobados de AEM Assets dire
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Funciones de acceso rápido de AEM Forms {#forms-early-access-features}
+### Nuevas funciones en AEM Forms
 
-**Mostrar etiquetas para el menú desplegable de selección múltiple en PDF de envío**
-Los componentes desplegables de selección múltiple de Adaptive Forms ahora representan las etiquetas de visualización seleccionadas en la [PDF de envío generada](/help/forms/generate-document-of-record-core-components.md), lo que garantiza que el documento refleje con precisión lo que los usuarios ven en el formulario.
+* **Anular la configuración de nube de reCAPTCHA con OSGi** 
+Los ID de proyecto empresarial, las claves de sitio y los secretos de reCAPTCHA que mantenga con sus archivos de origen pueden resolverse en valores diferentes en cada entorno de Cloud Service después de [agregar la anulación e implementación de la configuración según el contexto mediante Cloud Manager](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi).
 
-**Accesibilidad mejorada para los componentes de casilla de verificación, botón de opción y panel**
-Los componentes principales de Forms adaptables presentan un marcado semántico compatible con WCAG 2.2 para [grupos de casillas de verificación (v2)](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [grupos de botones de opción (v2)](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) y el [componente Panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Estos componentes aprovechan `<fieldset>` y `<legend>` elementos de HTML para establecer relaciones significativas entre las etiquetas de grupo y sus opciones, lo que permite una interpretación precisa por parte de los lectores de pantalla y otras tecnologías de asistencia.
+* **Autenticación basada en certificados** 
+Los Forms adaptables que se envían a una lista de SharePoint de Microsoft ahora admiten la [autenticación basada en certificados](/help/forms/connect-forms-to-sharepoint-list.md#certificate-based-authentication) junto con la autenticación de URL de OAuth. Para el inicio de sesión basado en certificados, registre un alias de certificado y detalles del inquilino en AEM y Microsoft Azure.
 
-**Compatibilidad con versiones en Forms Manager**
-Forms Manager ahora [admite el control de versiones para Forms adaptable (componentes principales y componentes de base)](/help/forms/manage-form-versions-forms-manager.md), fragmentos de formulario, temáticas, plantillas XDP y recursos binarios. Cree versiones, vea el historial de versiones completo y restaure estados anteriores de los recursos de formulario directamente desde la consola Forms y documentos.
+* **Mejoras en el editor de reglas**
+
+   * El editor de reglas de Forms adaptable ahora admite la gramática simplificada para las reglas de [Evento de envío y Evento de Déclencheur para los déclencheur listos para usar (OOTB) y para los eventos personalizados](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events), de modo que los autores no se limitan únicamente a la gramática en los déclencheur personalizados.
+   * Cuando las reglas de Forms adaptable basadas en componentes principales ahora incluyen el componente [Archivo adjunto junto con otras condiciones que utilizan la lógica AND u OR](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component), de modo que la regla ejecuta sus acciones solo cuando el estado del archivo adjunto y las demás comprobaciones se evalúan según lo previsto.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -131,7 +133,7 @@ Obtenga más información sobre [Desarrollo local con herramientas de IA](/help/
 
 Experience Governance MCP Server ya está disponible de forma general (GA). Se integra con las herramientas para desarrolladores de IA y bots de chat que admiten el Protocolo de contexto de modelo (MCP), lo que le permite salvaguardar la integridad y el cumplimiento de la marca mediante indicadores de lenguaje natural en su bot de chat o IDE. Puede evaluar el contenido (texto, imágenes, páginas) con reglas de gobernanza de marca y recuperar las configuraciones de marca y las comprobaciones de gobernanza disponibles.
 
-Obtenga más información acerca de [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) y el [Agente de control](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+Obtenga más información acerca de [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) y el [Agente de control](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 #### Conector de Claude {#aem-claude-connector}
 

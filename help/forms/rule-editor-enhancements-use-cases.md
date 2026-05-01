@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e5045b87719781301d91874c7355eda9426beef
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '2396'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,7 @@ En la tabla siguiente se enumeran las mejoras recientes del editor de reglas en 
 | [Variables dinámicas](#support-for-dynamic-variables-in-rules) | Cree reglas utilizando variables que cambien según los datos introducidos por el usuario u otras condiciones. | - Habilita condiciones de regla flexibles <br> - Reduce la necesidad de lógica duplicada <br> - Elimina el requisito de crear campos ocultos |
 | [Reglas personalizadas basadas en eventos](#custom-event-based-rules-support) | Defina reglas que respondan a eventos personalizados más allá de los déclencheur estándar. | - Admite casos de uso avanzados <br> - Mayor control sobre cuándo y cómo se ejecutan las reglas <br> - Mejora la interactividad |
 | [Ejecución repetible de panel según el contexto](#context-based-rule-execution-for-repeatable-panels) | Las reglas ahora se ejecutan en el contexto correcto para cada panel repetido, en lugar de solo la última instancia. | - Aplicación precisa de reglas para cada instancia repetida <br> - Reduce los errores en las secciones dinámicas <br> - Mejora la experiencia del usuario con el contenido repetido |
+| [Combinado cuando las condiciones con el componente Archivo adjunto](#combined-when-conditions-with-the-file-attachment-component) | Cree una regla When para el componente Archivo adjunto mediante las lógicas Add Condition y AND u OR, de modo que el archivo adjunto se evalúe junto con otras validaciones. | - Las acciones se ejecutan solo cuando el estado de los archivos adjuntos y otras comprobaciones se evalúan según lo previsto <br> - Menos reglas encadenadas para los escenarios de carga <br> - Creación más clara para formularios que requieren archivos e entradas validadas juntos |
 | [Compatibilidad con parámetros de cadena de consulta, UTM y explorador](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Cree reglas que adapten el comportamiento del formulario en función de parámetros de URL o valores específicos del explorador. | - Habilita la personalización basada en el origen o el entorno <br> - Útil para el marketing o los flujos específicos de seguimiento <br> - No es necesario realizar scripts ni personalizaciones adicionales |
 
 >[!NOTE]
@@ -139,7 +140,6 @@ En lugar de enlazar la lógica directamente a los campos, el formulario usa un m
 
 **Implementación mediante evento de envío y evento de Déclencheur**
 
-
 >[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 El fragmento de inicio de sesión se agrega al formulario, que contiene campos predefinidos para Nombre de usuario y Contraseña. Se ha configurado una regla en el botón **Obtener OTP** para mostrar el **Panel de validación**, que incluye el campo de entrada para introducir y validar el OTP.
@@ -158,6 +158,10 @@ Cuando el usuario envía el formulario con las credenciales correctas y una OTP 
 
 Compatibilidad con eventos personalizados que permite a los desarrolladores crear y almacenar en déclencheur eventos personalizados que pueden utilizarse como condiciones en el editor de reglas.
 
+### Gramática simplificada para eventos personalizados y OOTB {#simplified-grammar-for-ootb-and-custom-events}
+
+El editor de reglas mejorado incluye una **gramática simplificada** para reglas basadas en eventos que utilizan **Evento de envío** y **Evento de Déclencheur**. Anteriormente, esta gramática se aplicaba solamente a **eventos personalizados**; no se admitían eventos predeterminados (OOTB), que a menudo requerían reglas de **When** para déclencheur OOTB y reglas de **On Déclencheur Event** para eventos personalizados. Los eventos OOTB ahora se admiten con la misma gramática simplificada, lo que permite un patrón de creación coherente sin cambiar entre **When** y **On Déclencheur Event** en función de si el déclencheur es OOTB o personalizado.
+
 ## Ejecución de reglas basadas en el contexto para paneles repetibles
 
 Los Forms adaptables admiten la ejecución de reglas según el contexto para paneles repetibles. Esto permite que las reglas se apliquen específicamente a la instancia del panel en la que interactúa el usuario, en lugar de afectar a todas las instancias o de establecer el valor predeterminado en la última.
@@ -175,6 +179,26 @@ La siguiente captura de pantalla muestra la regla para el campo **Número de pro
 Cuando se cambia la cantidad, la regla recupera el precio unitario del producto seleccionado y calcula el coste total solo para ese panel.
 
 ![Salida de regla según el contexto](/help/forms/assets/context-aware-rule-output.png)
+
+## Combinado cuando con el componente Archivo adjunto {#combined-when-conditions-with-the-file-attachment-component}
+
+El editor de reglas mejorado admite reglas **When** que combinan el componente **Archivo adjunto** con otras condiciones mediante la lógica **AND** o **OR**. **Agregar condición** en la cláusula **When** puede incluir el estado del archivo adjunto junto con comprobaciones en otros campos o validación de panel, de modo que una acción se ejecutará únicamente cuando se cumpla cada condición seleccionada.
+
+**Escenario**: un formulario de registro para mascotas recopila **ID de mascota**, **Nombre de mascota** y **Categoría de mascota**, e incluye un archivo adjunto de **Agregar fotografía**. El formulario ejecuta una acción, por ejemplo, borrar o actualizar **Agregar fotografía**, cuando los datos adjuntos cambian **y** se cumplen las condiciones configuradas en los demás campos (sus valores).
+
+**Implementación mediante condiciones When con el componente Archivo adjunto en el Editor de reglas**
+
+Se ha configurado una regla en el objeto de destino (como **Agregar fotografía**). La sección **When** usa **Agregar condición** para combinar el déclencheur de datos adjuntos del archivo con condiciones en uno o más campos, de modo que la acción depende tanto de los datos adjuntos como de los valores de esos campos.
+
+La captura de pantalla siguiente muestra la condición **When** con varias condiciones y las opciones **Add Condition**:
+
+![Regla When con varias condiciones y Add Condition](/help/forms/assets/rule-editor-when-file-attachment-conditions.png)
+
+Cuando la cláusula **When** se evalúa como true para la lógica **AND** o **OR** configurada, la regla ejecuta la acción configurada.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3483735/file-attachment/?quality=12&learn=on)
+
+Cuando **Pet ID** contiene `101`, el archivo adjunto de **Agregar fotografía** se borra; de manera similar, cuando **Nombre del animal doméstico** contiene `a`, el archivo adjunto se borra.
 
 ## Reglas basadas en parámetros de explorador y URL en Forms adaptable
 

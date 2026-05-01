@@ -1,15 +1,15 @@
 ---
 title: ¿Cómo enviar datos a un almacenamiento de lista de SharePoint al enviar un formulario adaptable?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
-keywords: ¿Cómo conectar la lista de SharePoint para un formulario adaptable?, Enviar a SharePoint, Crear una configuración de lista de SharePoint, Utilizar la acción de envío Enviar a SharePoint en un formulario adaptable, Conectar un formulario adaptable a Microsoft&reg; Lista de SharePoint.
+keywords: ¿Cómo conectar la lista de SharePoint para un formulario adaptable?, Enviar a SharePoint, Crear una configuración de lista de SharePoint, Utilizar la acción de envío Enviar a SharePoint en un formulario adaptable, Conectar un formulario adaptable a Microsoft&reg; SharePoint List.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e5045b87719781301d91874c7355eda9426beef
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 83%
+source-wordcount: '782'
+ht-degree: 54%
 
 ---
 
@@ -24,7 +24,7 @@ Para usar la acción de envío [!UICONTROL Enviar a la lista SharePoint] en un 
 1. [Crear una configuración de lista de SharePoint](#1-create-a-sharepoint-list-configuration): conecta AEM Forms a su almacenamiento de de lista de Sharepoint de Microsoft®.
 1. [Utilice la acción de envío Enviar con un modelo de datos de formulario (FDM) en un formulario adaptable](#2-use-the-submit-using-form-data-model-fdm-in-an-adaptive-form-use-submit-using-fdm): conecta el formulario adaptable a Microsoft® SharePoint configurado.
 
-## &#x200B;1. Crear una configuración de lista de SharePoint
+## &#x200B;1. Crear configuración de lista de SharePoint
 
 Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 
@@ -45,12 +45,49 @@ Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 1. Seleccionar **[!UICONTROL Sitio de SharePoint]** y **[!UICONTROL Lista de SharePoint]** en la lista desplegable.
 1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para la lista de SharePoint de Microsoft®.
 
+### Autenticación basada en certificados {#certificate-based-authentication}
 
-## &#x200B;2. Utilizar Enviar mediante el modelo de datos de formulario (FDM) en un formulario adaptable {#use-submit-using-fdm}
+<span class="preview"> La autenticación basada en certificados para la configuración de la Lista de SharePoint se encuentra en el Programa de usuarios que la adoptaron por anticipado. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta funcionalidad. </span>
+
+En el asistente de configuración de Lista de SharePoint:
+
+1. Establezca **[!UICONTROL Tipo de autenticación]** en **Autenticación basada en certificado**.
+1. Especifique **[!UICONTROL Título]**, **[!UICONTROL ID de cliente]**, **[!UICONTROL Alias de certificado]**, **[!UICONTROL Id. de inquilino]** y **[!UICONTROL Nombre de inquilino]**.
+1. Escriba la **[!UICONTROL dirección URL del sitio SharePoint]**, compruebe la conexión del sitio si es necesario y seleccione la **[!UICONTROL lista SharePoint]**.
+1. Haga clic en **[!UICONTROL Conectar]** para comprobar la conexión y, a continuación, haga clic en **[!UICONTROL Guardar y cerrar]** para guardar la configuración.
+
+La captura de pantalla siguiente muestra la configuración de la lista de SharePoint con **autenticación basada en certificado**:
+
+![Configuración de lista de SharePoint con autenticación basada en certificado](/help/forms/assets/sharepoint-list-certificate-auth-configuration.png){width=50%, height=50%, align=center}
+
+Para preparar el certificado para AEM y Microsoft Azure, realice los siguientes pasos en AEM y, a continuación, registre el certificado público en Microsoft Azure.
+
+**En AEM**
+
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Usuarios]**.
+1. Busque **[!UICONTROL fd-cloudservice]**, seleccione el usuario y haga clic en **[!UICONTROL Propiedades]**.
+1. Abra la pestaña **[!UICONTROL Keystore]**. Si todavía no se ha creado un almacén de claves, haga clic en **[!UICONTROL Crear almacén de claves]** y complete las indicaciones para establecer la contraseña del almacén de claves.
+1. Agregue la clave privada al almacén de claves: expanda **[!UICONTROL Agregar clave privada desde el archivo del almacén de claves]** y cargue el archivo **.jks**.
+1. Escriba un **[!UICONTROL Alias]** que coincida con el **[!UICONTROL Alias del certificado]** en la configuración de la lista de SharePoint, envíe el material de la clave y haga clic en **[!UICONTROL Guardar y cerrar]**.
+
+La captura de pantalla muestra el repositorio de claves después de agregar el certificado. El **[!UICONTROL Alias]** debe coincidir con el **[!UICONTROL Alias de certificado]** en la configuración de nube de SharePoint List:
+
+![almacén de claves de usuario de fd-cloudservice con alias de certificado](/help/forms/assets/fd-cloudservice-keystore-certificate.png){width=50%, height=50%, align=center}
+
+**En Microsoft Azure**
+
+1. Abra el registro de su aplicación y vaya a **Certificados y secretos** > **Certificados**.
+1. Seleccione **Cargar certificado** y cargue el archivo de certificado (clave pública) en el que Azure debe confiar para la aplicación.
+
+La captura de pantalla muestra la ficha **Certificados** del portal de Azure, donde se carga el certificado para el registro de la aplicación:
+
+![Certificados y secretos de registro de aplicaciones de Azure](/help/forms/assets/azure-app-registration-sharepoint-certificates.png){width=50%, height=50%, align=center}
+
+## &#x200B;2. Utilizar el modelo de datos de formulario (FDM) de envío en un formulario adaptable {#use-submit-using-fdm}
 
 Puede utilizar la configuración de lista de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una lista de SharePoint. Siga estos pasos para usar una lista de SharePoint en un formulario adaptable como:
 
-1. [Cree un modelo de datos de formulario (FDM) con Microsoft](/help/forms/create-form-data-models.md)
+1. [Crear un modelo de datos de formulario (FDM) con la configuración de Microsoft® SharePoint List](/help/forms/create-form-data-models.md)
 1. [Configure el modelo de datos de formulario (FDM) para recuperar y enviar datos](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Creación de un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
 1. [Configure la acción de envío mediante un modelo de datos de formulario (FDM)](/help/forms/using-form-data-model.md)
