@@ -6,9 +6,9 @@ feature: Selectors
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 2b801c084305873790fa313ce42cb8af34db1069
 workflow-type: tm+mt
-source-wordcount: '5363'
+source-wordcount: '5461'
 ht-degree: 38%
 
 ---
@@ -108,7 +108,7 @@ Puede realizar la autenticación sin definir algunas de las propiedades de IMS, 
 
 Puede integrar el Selector de recursos con varias aplicaciones, como:
 
-* [Integrar el Selector de recursos con una aplicación  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
+* [Integrar el Selector de recursos con una aplicación  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Integre el Selector de recursos con una aplicación que no sea de Adobe](#adobe-non-app-integration)
 * [Integración de Dynamic Media con funciones de OpenAPI](#adobe-app-integration-polaris)
 
@@ -131,7 +131,7 @@ Utilice los siguientes requisitos previos si integra el Selector de recursos con
 
 En el siguiente ejemplo se muestra el uso del Selector de recursos al ejecutar una aplicación [!DNL Adobe] en Unified Shell o cuando ya se ha generado `imsToken` para la autenticación.
 
-Incluya el paquete Selector de recursos en su código mediante la etiqueta `script`, tal como se muestra en las _líneas 6-15_ del ejemplo siguiente. Una vez cargado el script, la variable global `PureJSSelectors` está disponible para su uso. Defina el Selector de recursos [properties](#asset-selector-properties) como se muestra en _líneas 16-23_. Las propiedades `imsOrg` y `imsToken` son necesarias para la autenticación en la aplicación Adobe. La propiedad de `handleSelection` se utiliza para gestionar los recursos seleccionados. Para procesar el Selector de recursos, llame a la función de `renderAssetSelector` como se menciona en _línea 17_. El Selector de recursos se muestra en el elemento contenedor de `<div>`, como se muestra en las _líneas 21 y 22_.
+Incluya el paquete Selector de recursos en su código mediante la etiqueta `script`, tal como se muestra en las _líneas 6-15_ del ejemplo siguiente. Una vez cargado el script, la variable global `PureJSSelectors` está disponible para su uso. Defina el Selector de recursos [properties](/help/assets/content-advisor-properties.md) como se muestra en _líneas 16-23_. Las propiedades `imsOrg` y `imsToken` son necesarias para la autenticación en la aplicación Adobe. La propiedad de `handleSelection` se utiliza para gestionar los recursos seleccionados. Para procesar el Selector de recursos, llame a la función de `renderAssetSelector` como se menciona en _línea 17_. El Selector de recursos se muestra en el elemento contenedor de `<div>`, como se muestra en las _líneas 21 y 22_.
 
 Si sigue estos pasos, puede usar el Selector de recursos con la aplicación [!DNL Adobe].
 
@@ -418,7 +418,7 @@ Las propiedades `rootPath` y `path` no deben formar parte de Dynamic Media con c
 aemTierType:[1: "delivery"]
 ```
 
-Esta configuración le permite ver todos los recursos aprobados sin carpetas o como una estructura plana. Para obtener más información, vaya a la propiedad `aemTierType` en [Propiedades del selector de recursos](#asset-selector-properties)
+Esta configuración le permite ver todos los recursos aprobados sin carpetas o como una estructura plana. Para obtener más información, vaya a la propiedad `aemTierType` en [Propiedades del selector de recursos](/help/assets/content-advisor-properties.md).
 
 +++
 
@@ -561,7 +561,7 @@ Para obtener el nombre, se debe realizar una actividad única. Realice una llama
 
 >[!ENDTABS]
 
-## Propiedades del Selector de recursos {#asset-selector-properties}
+## Propiedades del Selector de recursos {#content-advisor-properties}
 
 Puede utilizar las propiedades del Selector de recursos para personalizar la forma en que se procesa el Selector de recursos. En la tabla siguiente se enumeran las propiedades que puede utilizar para personalizar y utilizar el Selector de recursos.
 
@@ -576,7 +576,7 @@ Puede utilizar las propiedades del Selector de recursos para personalizar la for
 | *selectedAssets* | Matriz `<Object>` | No |                 | Especificar los recursos seleccionados cuando se procese el selector de recursos. Se requiere una matriz de objetos que contenga una propiedad id de los recursos. Por ejemplo, `[{id: 'urn:234}, {id: 'urn:555'}]` Un recurso debe estar disponible en el directorio actual. Si necesita utilizar un directorio diferente, proporcione un valor para la propiedad de `path` también. |
 | *acvConfig* | Objeto | No | | Propiedad de vista de colección de recursos que contiene un objeto con una configuración personalizada para anular los valores predeterminados. Además, esta propiedad se usa con la propiedad `rail` para habilitar la vista de carril del visor de recursos. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |                 | Si las traducciones OOTB no son suficientes para las necesidades de la aplicación, puede exponer una interfaz a través de la cual puede pasar sus propios valores localizados personalizados mediante la propiedad `i18nSymbols`. Al pasar un valor a través de esta interfaz, se anulan las traducciones predeterminadas proporcionadas y, en su lugar, se utilizan las suyas. Para realizar la anulación, debe pasar un objeto [Descriptor del mensaje](https://formatjs.io/docs/react-intl/api/#message-descriptor) válido a la clave de `i18nSymbols` que desee anular. |
-| *intl* | Objeto | No | | El Selector de recursos proporciona traducciones OOTB predeterminadas. Puede seleccionar el idioma de traducción proporcionando una cadena de configuración regional válida a través del prop `intl.locale`. Por ejemplo: `intl={{ locale: "es-es" }}` </br></br> Las cadenas de configuración regional admitidas siguen los [Códigos ISO 639](https://www.iso.org/iso-639-language-codes.html) para la representación de los estándares de nombres de idiomas. </br></br> Lista de configuraciones regionales admitidas: Inglés - &#39;en-us&#39; (predeterminado) Español - &#39;es-es&#39; Alemán - &#39;de-de&#39; Francés - &#39;fr-fr&#39; Italiano - &#39;it-it&#39; Japonés - &#39;ja-jp&#39; Coreano - &#39;ko-kr&#39; Portugués - &#39;pt-br&#39; Chino (tradicional) - &#39;zh-cn&#39; Chino (Taiwán) - &#39;zh-tw&#39; |
+| *intl* | Objeto | No | | El Selector de recursos proporciona traducciones OOTB predeterminadas. Puede seleccionar el idioma de traducción proporcionando una cadena de configuración regional válida a través del prop `intl.locale`. Por ejemplo: `intl={{ locale: "es-es" }}` </br></br> Las cadenas de configuración regional admitidas siguen la norma [ISO 639 - Códigos](https://www.iso.org/iso-639-language-codes.html) para la representación de nombres de estándares de idiomas. </br></br> Lista de configuraciones regionales admitidas: Inglés - &#39;en-us&#39; (predeterminado) Español - &#39;es-es&#39; Alemán - &#39;de-de&#39; Francés - &#39;fr-fr&#39; Italiano - &#39;it-it&#39; Japonés - &#39;ja-jp&#39; Coreano - &#39;ko-kr&#39; Portugués - &#39;pt-br&#39; Chino (tradicional) - &#39;zh-cn&#39; Chino (Taiwán) - &#39;zh-tw&#39; |
 | *repositoryId* | Cadena | No | &#39;&#39; | Repositorio desde el que el Selector de recursos carga el contenido. |
 | *additionalAemSolutions* | `Array<string>` | No | [ ] | Permite añadir una lista de repositorios de AEM adicionales. Si no se proporciona información en esta propiedad, solo se tienen en cuenta los repositorios de la biblioteca de medios o de AEM Assets. |
 | *hideTreeNav* | Booleano | No |  | Especifica si se muestra u oculta la barra lateral de navegación del árbol de recursos. Solo se utiliza en la vista modal y, por lo tanto, no hay ningún efecto de esta propiedad en la vista de carril. |
@@ -589,7 +589,7 @@ Puede utilizar las propiedades del Selector de recursos para personalizar la for
 | *onFilterSubmit* | Función | No | | Se invoca con elementos de filtro cuando el usuario cambia criterios de filtro diferentes. |
 | *selectionType* | Cadena | No | Soltero/a | Configuración para selección de `single` o `multiple` de recursos a la vez. |
 | *dragOptions.lista de permitidos* | booleano | No | | La propiedad se utiliza para permitir o denegar el arrastre de recursos que no se pueden seleccionar. |
-| *aemTierType* | Cadena | No |  | Permite seleccionar si desea mostrar los recursos del nivel de entrega, del nivel de creación o de ambos. Sintaxis <br><br>: `aemTierType:[0]: "author" 1: "delivery"` <br><br> Por ejemplo, si se usan `["author","delivery"]`, el conmutador de repositorios mostrará opciones de autor y envío. |
+| *aemTierType* | Cadena | No |  | Permite seleccionar si desea mostrar los recursos del nivel de entrega, del nivel de creación o de ambos. <br><br> Sintaxis: `aemTierType:[0]: "author" 1: "delivery"` <br><br> Por ejemplo, si se usan ambos `["author","delivery"]`, el conmutador de repositorios mostrará opciones para la creación y la entrega. |
 | *handleNavigateToAsset* | Función | No | | Es una función de llamada de retorno para gestionar la selección de un recurso. |
 | *noWrap* | Booleano | No | | La propiedad *noWrap* ayuda a procesar el Selector de recursos en el panel de raíl lateral. Si no se menciona esta propiedad, se representa la *vista del cuadro de diálogo* de forma predeterminada. |
 | *dialogSize* | adquisición en pequeña, mediana, grande, pantalla completa o pantalla completa | Cadena | Opcional | Puede controlar el diseño especificando su tamaño con las opciones dadas. |

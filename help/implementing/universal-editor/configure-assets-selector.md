@@ -3,13 +3,13 @@ title: Configuración del selector de Assets para el editor universal
 description: Descubra cómo puede configurar el selector de recursos para utilizarlo con el editor universal.
 feature: Developing
 role: Admin, Developer
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+exl-id: 0bf7b418-5ecd-454f-ac46-03792268c59c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 1%
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
-
 
 # Configuración del selector de Assets para el editor universal {#configure-assets-selector}
 
@@ -17,9 +17,9 @@ Descubra cómo puede configurar el selector de recursos para utilizarlo con el e
 
 ## Información general {#overview}
 
-El editor universal usa [el selector de recursos](/help/assets/overview-asset-selector.md#using-asset-selector) para permitir que los autores examinen y seleccionen los recursos para su inserción en el contenido.
+El editor universal utiliza el selector de recursos para permitir que los autores busquen y seleccionen los recursos que desean insertar en el contenido.
 
-El selector de recursos se puede configurar dentro del editor universal mediante [filtros de componentes.](/help/implementing/universal-editor/filtering.md) Este documento describe qué opciones de configuración están disponibles.
+El selector de recursos se puede configurar en el editor universal mediante [filtros de componentes.](/help/implementing/universal-editor/filtering.md) Este documento describe qué opciones de configuración están disponibles.
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ El filtro `assets` puede tener las siguientes opciones.
    * `value`: cadena: valor del tipo de archivo que se va a filtrar
 * `displayFilters?`: booleano: se utiliza para deshabilitar la interfaz de usuario de filtros en el selector de recursos; true de forma predeterminada
 
-## Ejemplos {#example}
+## Ejemplo {#example}
 
 El siguiente ejemplo contiene la mayoría de las opciones con fines ilustrativos.
 
@@ -93,6 +93,10 @@ El siguiente ejemplo contiene la mayoría de las opciones con fines ilustrativos
 ]
 ```
 
-## Recursos adicionales {#additional-resources}
+<!--
 
-Para obtener más información sobre el selector de recursos, consulte el documento [Selector de recursos de Micro-Frontend](/help/assets/overview-asset-selector.md#using-asset-selector) en la documentación de recursos.
+## Additional Resources {#additional-resources}
+
+For details on the assets selector, please see the document [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md#using-asset-selector) in the assets documentation.
+
+-->

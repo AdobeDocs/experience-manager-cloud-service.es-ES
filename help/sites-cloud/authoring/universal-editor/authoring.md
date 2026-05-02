@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '3020'
-ht-degree: 12%
+source-wordcount: '3101'
+ht-degree: 13%
 
 ---
 
@@ -124,7 +124,7 @@ El editor de texto enriquecido (RTE) del editor universal permite al autor aplic
 * **Desvincular**
    * Quitar vínculo del texto seleccionado.
 * **Imagen**
-   * Especifique una URL o use [selector de recursos](/help/assets/overview-asset-selector.md#using-asset-selector) para seleccionar un recurso de AEM.
+   * Especifique una URL o use [Asesor de contenido](/help/assets/integrate-adobe-non-adobe-applications.md) para seleccionar un recurso de AEM.
 * **Tabla**
    * Utilice la lista desplegable para insertar una nueva tabla con el número seleccionado de columnas y filas, o insertar y quitar nuevas columnas/filas.
 * **Alineación**
@@ -152,7 +152,7 @@ Puede ver sus detalles en el panel [propiedades.](/help/sites-cloud/authoring/un
 ![Editando medios](assets/ue-edit-media.png)
 
 1. Toque o haga clic en la previsualización de la imagen seleccionada en el panel de propiedades.
-1. Se abre la ventana [selector de recursos](/help/assets/overview-asset-selector.md#using-asset-selector) para que pueda seleccionar un recurso.
+1. Se abre la ventana [Asesor de contenido](/help/assets/integrate-adobe-non-adobe-applications.md) para que pueda seleccionar un recurso.
 1. Seleccione para seleccionar un nuevo recurso.
 1. Seleccione **Select** para volver al panel de propiedades donde se reemplazó el recurso.
 
@@ -304,16 +304,16 @@ Seleccione los botones Deshacer o Rehacer para deshacer o rehacer la última edi
 
 ### Copiar y pegar {#copy-paste}
 
-Puede copiar y pegar componentes que se encuentren dentro de [&#x200B; contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permitan pegar el componente.
+Puede copiar y pegar componentes que se encuentren dentro de [contenedores.](/help/implementing/universal-editor/field-types.md#container) Esto solo es posible si el contenedor de destino no tiene [filtros configurados](/help/implementing/universal-editor/filtering.md) o si tiene filtros que permiten pegar el componente.
 
 Copiar y pegar pueden estar en la misma pestaña del explorador o entre pestañas del explorador, siempre que las pestañas ya estén abiertas. No puede copiar un elemento y, a continuación, abrir una nueva pestaña del explorador para pegarlo.
 
-![Icono de copiar](assets/copy.png)
+![Icono Copiar](assets/copy.png)
 ![Icono de pegar](assets/paste.png)
 
 1. Seleccione un componente dentro del editor o en el árbol de contenido.
 1. A continuación, puede hacer lo siguiente:
-   * Haga clic en el icono **Copiar** en el panel [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+   * Haga clic en el icono **Copiar** en el panel de propiedades [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![Copiar del panel](assets/copy-from-panel.png)
    * Seleccione la opción **Copiar** en el menú contextual.
      ![Copiar del menú contextual](assets/copy-from-context-menu.png)

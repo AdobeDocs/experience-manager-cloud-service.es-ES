@@ -3,10 +3,10 @@ title: Introducción a Assets as a Cloud Service para la administración de recu
 description: Introducción a Assets as a Cloud Service para la administración de recursos digitales en AEM
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '5648'
-ht-degree: 87%
+source-wordcount: '6014'
+ht-degree: 81%
 
 ---
 
@@ -48,7 +48,7 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
    </a>
    <div>
       <a href="/help/assets/bulk-import-assets-view.md">
-      <strong>Uso de la herramienta de importación masiva</strong>
+      <strong>Usar herramienta de importación masiva</strong>
       </a>
    </div>
    <p>
@@ -63,8 +63,8 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/es/docs/experience-manager-desktop-app/using/get-started">
-      <strong>Uso de la aplicación de escritorio de AEM</strong>
-      </a>
+      <strong>Usar la aplicación de escritorio de AEM</strong>
+      </a>
    </div>
    <p>
       <em>Aprenda a utilizar la aplicación de escritorio de AEM para cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local.</em>
@@ -75,9 +75,9 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
    <img alt="Uso de Adobe Asset Link" src="./assets/adobe-asset-link.jpeg" />
    </a>
    <div>
-      <a href="https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html?lang=es">
-      <strong>Uso de Adobe Asset Link</strong>
-      </a>
+      <a href="https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html">
+      <strong>Usar Adobe Asset Link</strong>
+      </a>
    </div>
    <p>
       <em>Obtenga información sobre cómo cargar recursos en Experience Manager mediante aplicaciones de Creative Cloud.</em>
@@ -93,7 +93,7 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
 
 **Metadatos generados por IA**: AEM Assets usa la IA para generar metadatos automáticamente, incluidos títulos, descripciones y palabras clave. Estos campos generados por IA mejoran la precisión de los metadatos, lo que facilita la búsqueda, la categorización y la recomendación de recursos. Este enfoque no solo mejora la eficacia al eliminar el etiquetado manual, sino que también garantiza la coherencia y la escalabilidad en grandes volúmenes de contenido digital.
 
-**Cambio masivo de nombre de los recursos con tecnología de IA**: [la vista Recursos permite cambiar el nombre de varios recursos a la vez mediante la inteligencia artificial](/help/assets/bulk-rename-assets-view.md). Puede seleccionar varios archivos a la vez y cambiarles el nombre. Algunas de las solicitudes de cambio de nombre conversacional de ejemplo incluyen *Cambiar todos los archivos a &#39;my-file&#39; y anexar un número incremental* y *Añadir los prefijos 001, 002, etc., a los archivos y traducir al inglés*.
+**Cambio masivo de nombre de los recursos con tecnología de IA**: [la vista Recursos permite cambiar el nombre de varios recursos a la vez mediante la inteligencia artificial](/help/assets/bulk-rename-assets-view.md). Puede seleccionar varios archivos a la vez y cambiarles el nombre. Algunas de las solicitudes de cambio de nombre conversacional de ejemplo incluyen *Cambiar todos los archivos a &#39;my-file&#39; y anexar un número incremental* y *Prefijar los archivos con 001, 002, etc. y traducirlos al inglés*.
 
 <table>
 <td>
@@ -102,7 +102,7 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
    </a>
    <div>
       <a href="/help/assets/smart-tags.md">
-      <strong>Añadir etiquetas inteligentes de IA a los recursos</strong>
+      <strong>Agregar etiquetas inteligentes de IA a los recursos</strong>
       </a>
    </div>
    <p>
@@ -116,7 +116,7 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
    </a>
    <div>
       <a href="/help/assets/manage-notifications-assets-view.md">
-      <strong>Añadir etiquetas inteligentes basadas en el color</strong>
+      <strong>Agregar etiquetas inteligentes basadas en color</strong>
       </a>
    </div>
    <p>
@@ -129,8 +129,8 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
    </a>
    <div>
       <a href="/help/assets/metadata-assets-view.md">
-      <strong>Metadatos generados por IA</strong>
-      </a>
+      <strong>Metadatos generados por IA</strong>
+      </a>
    </div>
    <p>
       <em>Use la IA para generar metadatos de recursos, como el título y la descripción. </em>
@@ -154,8 +154,8 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
    </a>
    <div>
       <a href="/help/assets/search-assets-view.md#contextual-search">
-      <strong>Búsqueda contextual</strong>
-      </a>
+      <strong>Búsqueda contextual</strong>
+      </a>
    </div>
    <p>
       <em>Aprenda a buscar recursos con simples mensajes de texto.</em>
@@ -169,8 +169,8 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
    </a>
    <div>
       <a href="/help/assets/search-assets-view.md#search-firefly">
-      <strong>Generar recursos mediante Adobe Firefly</strong>
-      </a>
+      <strong>Generar recursos mediante Adobe Firefly</strong>
+      </a>
    </div>
    <p>
       <em>Generar recursos en tiempo real mediante Adobe Firefly.</em>
@@ -182,8 +182,8 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
    </a>
    <div>
       <a href="/help/assets/native-integration-adobe-express.md">
-      <strong>Integración con Adobe Express</strong>
-      </a>
+      <strong>Integración con Adobe Express</strong>
+      </a>
    </div>
    <p>
       <em>Use las funciones de IA de Adobe Express en la interfaz de usuario de AEM Assets.</em>
@@ -191,7 +191,7 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
 </td>
 </table>
 
-**Imágenes inteligentes**: las imágenes inteligentes ofrecen un rendimiento aun mejor en el envío de recursos de la imagen ya que optimizan automáticamente el formato y el tamaño de archivo de una imagen en función de la capacidad del explorador del cliente. Funciona con los ajustes preestablecidos de imagen existentes y utiliza inteligencia en el envío. Esta inteligencia reduce aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red y del explorador.
+**Imágenes inteligentes**: las imágenes inteligentes ofrecen un rendimiento del envío de recursos de la imagen aún mejor ya que optimizan automáticamente el formato y el tamaño de archivo de una imagen en función de la capacidad del explorador del cliente. Funciona con los ajustes preestablecidos de imagen existentes y utiliza inteligencia en el envío. Esta inteligencia reduce aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red y del explorador.
 
 **Recorte inteligente**: una funcionalidad de Adobe AI que permite detectar automáticamente el punto focal en cualquier imagen o vídeo y recortar para mantenerlo. Captura el punto de interés deseado independientemente del tamaño de la pantalla y, por lo tanto, elimina las tareas manuales tediosas, y ofrece imágenes y vídeo de alta calidad y carga rápida que se ven bien en cualquier dispositivo o pantalla.
 
@@ -203,7 +203,7 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
    </a>
    <div>
       <a href="/help/assets/dynamic-media/imaging-faq.md">
-      <strong>imágenes inteligentes</strong>
+      <strong>Imágenes inteligentes</strong>
       </a>
    </div>
    <p>
@@ -218,8 +218,8 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
-      <strong>Recorte inteligente</strong>
-      </a>
+      <strong>Recorte inteligente</strong>
+      </a>
    </div>
    <p>
       <em>Use la IA para detectar automáticamente el punto focal en cualquier imagen o vídeo y aplicar el recorte para mantenerlo</em>
@@ -231,8 +231,8 @@ Utilice estos vínculos para acceder a la documentación detallada sobre estas h
    </a>
    <div>
       <a href="/help/assets/dynamic-media/video.md">
-      <strong>Subtítulos de vídeo generados por IA</strong>
-      </a>
+      <strong>Subtítulos de vídeo generados por IA</strong>
+      </a>
    </div>
    <p>
       <em>Use la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. </em>
@@ -260,7 +260,7 @@ AEM Assets proporciona funciones que le ayudan a encontrar rápidamente el recur
    </a>
    <div>
       <a href="/help/assets/metadata-assets-view.md">
-      <strong>Administración de metadatos en la vista Recursos</strong>
+      <strong>Administrar metadatos en la vista de Assets</strong>
       </a>
    </div>
    <p>
@@ -270,11 +270,11 @@ AEM Assets proporciona funciones que le ayudan a encontrar rápidamente el recur
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=es">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Prácticas recomendadas de administración de metadatos" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=es">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Prácticas recomendadas de administración de metadatos</strong>
       </a>
    </div>
@@ -284,11 +284,11 @@ AEM Assets proporciona funciones que le ayudan a encontrar rápidamente el recur
 </td>
 <td>
    <a href="/help/assets/manage-metadata.md">
-   <img alt="Uso de Adobe Asset Link" src="./assets/metadata-management-admin-view.jpeg" />
+   <img alt="Use Adobe Asset Link" src="./assets/metadata-management-admin-view.jpeg" />
    </a>
    <div>
       <a href="/help/assets/manage-metadata.md">
-      <strong>Administración de metadatos en la vista Administración</strong>
+      <strong>Administrar metadatos en la vista de administración</strong>
       </a>
    </div>
    <p>
@@ -310,7 +310,7 @@ AEM Assets proporciona funciones que le ayudan a encontrar rápidamente el recur
    </a>
    <div>
       <a href="/help/assets/smart-tags.md">
-      <strong>Incorporación de etiquetas inteligentes a recursos</strong>
+      <strong>Agregar etiquetas inteligentes a los recursos</strong>
       </a>
    </div>
    <p>
@@ -325,7 +325,7 @@ AEM Assets proporciona funciones que le ayudan a encontrar rápidamente el recur
    </a>
    <div>
       <a href="/help/assets/search-assets-view.md">
-      <strong>Búsqueda de recursos en la vista Recursos</strong>
+      <strong>Buscar recursos en la vista de Assets</strong>
       </a>
    </div>
    <p>
@@ -368,8 +368,8 @@ También puede mantener versiones del recurso, establecer el estado del recurso 
    </a>
    <div>
       <a href="/help/assets/manage-organize-assets-view.md">
-      <strong>Tareas de administración de recursos</strong>
-      </a>
+      <strong>Tareas de administración de recursos</strong>
+      </a>
    </div>
    <p>
       <em>Aprenda a realizar algunas tareas básicas y avanzadas de administración de recursos.</em>
@@ -382,8 +382,8 @@ También puede mantener versiones del recurso, establecer el estado del recurso 
    </a>
    <div>
       <a href="/help/assets/my-workspace-assets-view.md">
-      <strong>Mi espacio de trabajo</strong>
-      </a>
+      <strong>Mi Workspace</strong>
+      </a>
    </div>
    <p>
       <em>Aprenda a trabajar con Mi espacio de trabajo para acceder rápidamente a áreas clave de la interfaz de usuario de Assets.</em>
@@ -395,8 +395,8 @@ También puede mantener versiones del recurso, establecer el estado del recurso 
    </a>
    <div>
       <a href="/help/assets/content-credentials.md">
-      <strong>Credenciales de contenido</strong>
-      </a>
+      <strong>Content Credentials</strong>
+      </a>
    </div>
    <p>
       <em>Obtenga información sobre el historial de un recurso digital mediante las credenciales de contenido.</em>
@@ -419,8 +419,8 @@ También puede mantener versiones del recurso, establecer el estado del recurso 
    </a>
    <div>
       <a href="/help/assets/manage-collections-assets-view.md">
-      <strong>Administrar colecciones</strong>
-      </a>
+      <strong>Administrar colecciones</strong>
+      </a>
    </div>
    <p>
       <em>Aprenda a organizar sus recursos en colecciones para compartir recursos de forma eficaz.</em>
@@ -447,8 +447,8 @@ También puede mantener versiones del recurso, establecer el estado del recurso 
    </a>
    <div>
       <a href="/help/assets/detect-duplicate-assets.md">
-      <strong>Detección de recursos duplicados</strong>
-      </a>
+      <strong>Detectar recursos duplicados</strong>
+      </a>
    </div>
    <p>
       <em>Detecte los recursos duplicados cargados en AEM Assets y notifíqueselo a los usuarios.</em>
@@ -466,8 +466,8 @@ AEM Assets se puede integrar sin problemas con varias aplicaciones de Adobe y qu
 
 * **Dynamic Media con funciones de OpenAPI**: [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) ofrece un conjunto completo de API de [búsqueda](/help/assets/search-assets-api.md) y [envío](/help/assets/deliver-assets-apis.md). Permite a los desarrolladores integrar fácilmente el envío de recursos con sus aplicaciones. Las aplicaciones incluyen aplicaciones de Adobe y también de terceros. Proporciona una interfaz de usuario del selector de recursos Micro-Frontend para buscar y seleccionar los recursos aprobados. El selector se puede integrar fácilmente con cualquier aplicación basada en marcos de trabajo de JavaScript como React JS, Angular JS y Vanilla JS.
 
-* **Selector de recursos de Micro-Frontend**: el selector de recursos de Micro-Frontend proporciona una interfaz de usuario que se integra con el repositorio de Experience Manager Assets para que pueda examinar o buscar los recursos digitales disponibles en el repositorio. A continuación, puede utilizarlos en la experiencia de creación de la aplicación.
-Puede integrar el selector de recursos con una aplicación de Adobe o que no sea de Adobe.
+* **Asesor de contenido**: el Asesor de contenido proporciona una interfaz de usuario que se integra con el repositorio de Experience Manager Assets para que pueda examinar o buscar los recursos digitales disponibles en el repositorio. A continuación, puede utilizarlos en la experiencia de creación de la aplicación.
+Puede integrar el Asesor de contenido con una aplicación de Adobe o que no sea de Adobe.
 
 <table>
 <td>
@@ -476,8 +476,8 @@ Puede integrar el selector de recursos con una aplicación de Adobe o que no sea
    </a>
    <div>
       <a href="/help/assets/dynamic-media-open-apis-overview.md">
-      <strong>Información general sobre Dynamic Media con funciones de OpenAPI</strong>
-      </a>
+      <strong>Información general sobre Dynamic Media con capacidades OpenAPI</strong>
+      </a>
    </div>
    <p>
       <em>Conozca las ventajas clave y cómo habilitarlo. </em>
@@ -491,7 +491,7 @@ Puede integrar el selector de recursos con una aplicación de Adobe o que no sea
    </a>
    <div>
       <a href="/help/assets/restrict-assets-delivery.md">
-      <strong>Restringir el acceso a los recursos de Experience Manager</strong>
+      <strong>Restringir el acceso a los recursos en Experience Manager</strong>
       </a>
    </div>
    <p>
@@ -499,16 +499,16 @@ Puede integrar el selector de recursos con una aplicación de Adobe o que no sea
    </p>
 </td>
 <td>
-   <a href="/help/assets/overview-asset-selector.md">
-   <img alt="Selector de recursos" src="./assets/integration-asset-selector.jpeg" />
+   <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+   <img alt="Asesor de contenido" src="./assets/integration-asset-selector.jpeg" />
    </a>
    <div>
-      <a href="/help/assets/overview-asset-selector.md">
-      <strong>Selector de recursos Micro-Frontend</strong>
-      </a>
+      <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+      <strong>Asesor de contenido</strong>
+      </a>
    </div>
    <p>
-      <em>Aprenda a integrar el Selector de recursos Micro-Frontend con una aplicación de Adobe o que no sea de Adobe.</em>
+      <em>Aprenda a integrar el Asesor de contenido con una aplicación de Adobe o que no sea de Adobe.</em>
    </p>
 </td>
 </table>
@@ -517,7 +517,7 @@ Puede integrar el selector de recursos con una aplicación de Adobe o que no sea
 
 +++**Integración nativa con aplicaciones de Adobe**
 
-* **Integración con Adobe Workfront**: [!DNL Adobe Workfront]es una aplicación de administración de trabajo que le ayuda a administrar todo el ciclo de vida del trabajo en un solo lugar. La integración nativa entre [!DNL Workfront] y [!DNL Adobe Experience Manager Assets] permite a las organizaciones mejorar la velocidad del contenido y el tiempo de salida al mercado conectando intrínsecamente el trabajo con la administración de recursos. En el contexto de la administración de su trabajo en Workfront, los usuarios tienen acceso a los documentos e imágenes necesarios. 
+* **Integración con Adobe Workfront**: [!DNL Adobe Workfront]es una aplicación de administración de trabajo que le ayuda a administrar todo el ciclo de vida del trabajo en un solo lugar. La integración nativa entre [!DNL Workfront] y [!DNL Adobe Experience Manager Assets] permite a las organizaciones mejorar la velocidad del contenido y el tiempo de salida al mercado conectando intrínsecamente el trabajo con la administración de recursos. En el contexto de la administración de su trabajo en Workfront, los usuarios tienen acceso a los documentos e imágenes necesarios.
 
   Adobe ofrece [integrar [!DNL Workfront] y [!DNL Adobe Experience Manager Assets] de forma nativa](https://experienceleague.adobe.com/es/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
 
@@ -534,8 +534,8 @@ Puede integrar el selector de recursos con una aplicación de Adobe o que no sea
    </a>
    <div>
       <a href="/help/assets/workfront-integrations.md">
-      <strong>Integración con Adobe Workfront</strong>
-      </a>
+      <strong>Integración con Adobe Workfront</strong>
+      </a>
    </div>
    <p>
       <em>Intégrese con Adobe Workfront para administrar todo el ciclo de vida del trabajo en un solo lugar.</em>
@@ -547,8 +547,8 @@ Puede integrar el selector de recursos con una aplicación de Adobe o que no sea
    </a>
    <div>
       <a href="/help/assets/manage-collections-assets-view.md">
-      <strong>Integración con Figma</strong>
-      </a>
+      <strong>Integración con Figma</strong>
+      </a>
    </div>
    <p>
       <em>Acceda a los recursos almacenados en AEM Assets desde la interfaz de usuario de Figma</em>
@@ -560,8 +560,8 @@ Puede integrar el selector de recursos con una aplicación de Adobe o que no sea
    </a>
    <div>
       <a href="/help/assets/native-integration-adobe-express.md">
-      <strong>Integración nativa con Adobe Express</strong>
-      </a>
+      <strong>Integración nativa con Adobe Express</strong>
+      </a>
    </div>
    <p>
       <em>Coloque los recursos disponibles en AEM Assets en el lienzo de Express y guarde los recursos actualizados en AEM. </em>
@@ -575,7 +575,7 @@ Puede integrar el selector de recursos con una aplicación de Adobe o que no sea
 * **Integración con Adobe Journey Optimizer**: combine los flujos de trabajo creativos y de marketing mediante Adobe Experience Manager Assets. Integrado de forma nativa con Adobe Journey Optimizer, acceda a Assets as a Cloud Service para almacenar, administrar, descubrir y distribuir recursos digitales. Proporciona un único repositorio centralizado de recursos que puede utilizar para rellenar los mensajes.
 
 * **Integración con Commerce**: la integración de Adobe Experience Manager (AEM) Assets para Commerce combina las sólidas capacidades de AEM como un sistema de administración de recursos digitales (DAM) con Adobe Commerce para mejorar las experiencias de comercio electrónico. Estas funciones se ofrecen conectando los proyectos de Commerce al potente entorno de administración de recursos de AEM para proporcionar una forma sencilla, escalable y eficaz de administrar y distribuir recursos en las tiendas de comercio.
-* **Integración de AEM Assets con flujos de creación basados en documentos para Edge Delivery Services**: cuando [!DNL AEM Assets] se integra con sus herramientas de creación basada en documentos, como [!DNL Microsoft Word] o [!DNL Google Docs], proporciona un selector de recursos en su herramienta de creación. Use este selector de recursos para acceder a [!DNL AEM Assets] e insertar recursos aprobados en el contenido.
+* **Integración de AEM Assets con flujos de creación basados en documentos para Edge Delivery Services**: cuando [!DNL AEM Assets] se integra con sus herramientas de creación basada en documentos, como [!DNL Microsoft Word] o [!DNL Google Docs], proporciona un Asesor de contenido en su herramienta de creación. Use el Asesor de contenido para acceder a [!DNL AEM Assets] e insertar recursos aprobados en el contenido.
 Si ya tiene un sitio web de [!DNL Edge Delivery Services], consulte la documentación de [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) para obtener información sobre cómo integrar [!DNL AEM Assets] con su proyecto de [!DNL AEM] existente.
 
 * **Integración de [!DNL AEM Assets] con flujos de creación basados en el [!DNL Universal Editor] para[!DNL Edge Delivery Services]**: configure el [!DNL Universal Editor] para integrarlo con [!DNL AEM Assets]. Esta integración le permite usar [!DNL Dynamic Media with OpenAPI capabilities] para envíar recursos.
@@ -590,8 +590,8 @@ Si ya tiene un sitio web de [!DNL Edge Delivery Services], consulte la documenta
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/es/docs/journey-optimizer/using/content-management/combine/assets">
-      <strong>Integración con Adobe Journey Optimizer</strong>
-      </a>
+      <strong>Integración con Adobe Journey Optimizer</strong>
+      </a>
    </div>
    <p>
       <em>Combinación de los flujos de trabajo creativos y de marketing mediante la integración con AJO</em>
@@ -616,9 +616,8 @@ Si ya tiene un sitio web de [!DNL Edge Delivery Services], consulte la documenta
    </a>
    <div>
       <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md">
-      <strong>Integración de AEM Assets con EDS</strong>
-      </a>
-
+      <strong>Integrar AEM Assets con EDS</strong>
+      </a>
    </div>
    <p>
       <em>Integre AEM Assets con los flujos de creación basados en documentos y en el Editor universal.</em>
@@ -699,11 +698,11 @@ Algunas de las ventajas clave de Governance Agent son:
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
    <img alt="Información general de Discovery Agent" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong>Información general del agente de detección</strong>
       </a>
    </div>
@@ -713,11 +712,11 @@ Algunas de las ventajas clave de Governance Agent son:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="Resumen de optimización de contenido" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong>Información general del agente de optimización de contenido</strong>
       </a>
    </div>
@@ -727,11 +726,11 @@ Algunas de las ventajas clave de Governance Agent son:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="Introducción al agente de gobernanza" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong>Información general del agente de administración</strong>
       </a>
    </div>
@@ -772,8 +771,8 @@ Content Hub ofrece las siguientes ventajas clave:
    </a>
    <div>
       <a href="/help/assets/product-overview.md">
-      <strong>Información general sobre Content Hub</strong>
-      </a>      
+      <strong>Información general de Content Hub</strong>
+      </a>
    </div>
    <p>
       <em>Obtenga más información sobre Content Hub, sus ventajas clave y cómo acceder a él. </em>
@@ -787,8 +786,8 @@ Content Hub ofrece las siguientes ventajas clave:
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
-     <strong>Configuración de la interfaz de usuario de Content Hub</strong>
-      </a>
+      <strong>Configurar la interfaz de usuario de Content Hub</strong>
+      </a>
    </div>
    <p>
       <em>Obtenga información sobre cómo configurar las opciones disponibles en la interfaz de usuario de Content Hub.</em>
@@ -800,8 +799,8 @@ Content Hub ofrece las siguientes ventajas clave:
    </a>
    <div>
       <a href="/help/assets/edit-images-content-hub.md">
-      <strong>Edición mediante Adobe Express</strong>
-      </a>
+      <strong>Editar mediante Adobe Express</strong>
+      </a>
    </div>
    <p>
       <em>Aprenda a editar imágenes en Content Hub mediante Adobe Express.</em>
@@ -842,7 +841,7 @@ Para obtener información sobre las ofertas de Dynamic Media disponibles, consul
    </a>
    <div>
       <a href="/help/assets/dynamic-media/dynamic-media.md">
-      <strong>Trabajo con Dynamic Media</strong>
+      <strong>Trabajar con Dynamic Media</strong>
       </a>
    </div>
    <p>
@@ -857,7 +856,7 @@ Para obtener información sobre las ofertas de Dynamic Media disponibles, consul
    </a>
    <div>
       <a href="/help/assets/dynamic-media/dm-journey-part1.md">
-      <strong>Recorrido por Dynamic Media</strong>
+      <strong>Recorrido de Dynamic Media</strong>
       </a>
    </div>
    <p>
@@ -889,7 +888,7 @@ Dynamic Media con funciones de OpenAPI coloca a DAM en el centro de un ecosistem
 
 Dynamic Media con funciones de OpenAPI ofrece las siguientes ventajas clave:
 
-* **Integraciones perfectas**: Dynamic Media con funciones de OpenAPI ofrece un conjunto completo de API de búsqueda y entrega. Permite a los desarrolladores [integrar fácilmente la entrega de recursos con sus aplicaciones](/help/assets/integrate-dynamic-media-open-apis.md). Las aplicaciones incluyen aplicaciones de Adobe y también de terceros. Proporciona una [interfaz de usuario del Selector de recursos de Micro-Frontend](/help/assets/overview-asset-selector.md) para buscar y seleccionar recursos aprobados. El selector se puede integrar fácilmente con cualquier aplicación basada en marcos de trabajo de JavaScript como React JS, Angular JS y Vanilla JS.
+* **Integraciones perfectas**: Dynamic Media con funciones de OpenAPI ofrece un conjunto completo de API de búsqueda y entrega. Permite a los desarrolladores [integrar fácilmente la entrega de recursos con sus aplicaciones](/help/assets/integrate-dynamic-media-open-apis.md). Las aplicaciones incluyen aplicaciones de Adobe y también de terceros. Proporciona una [interfaz de usuario del Asesor de contenido](/help/assets/integrate-adobe-non-adobe-applications.md) para buscar y seleccionar recursos aprobados. El selector se puede integrar fácilmente con cualquier aplicación basada en marcos de trabajo de JavaScript como React JS, Angular JS y Vanilla JS.
 
 * **Administración centralizada de recursos digitales**: DAM es la única fuente de confianza para todos los recursos digitales. Los recursos digitales se administran de forma centralizada en AEM Assets y se entregan a las aplicaciones consumidoras por referencia mediante direcciones URL de entrega, sin copiar los binarios de recursos.
 
@@ -912,8 +911,8 @@ Para obtener información sobre las ofertas de Dynamic Media disponibles, consul
    </a>
    <div>
       <a href="/help/assets/dynamic-media-open-apis-overview.md">
-      <strong>Información general sobre Dynamic Media con funciones de OpenAPI</strong>
-      </a>
+      <strong>Información general sobre Dynamic Media con capacidades OpenAPI</strong>
+      </a>
    </div>
    <p>
       <em>Conozca las ventajas clave y cómo habilitarlo. </em>
@@ -927,11 +926,11 @@ Para obtener información sobre las ofertas de Dynamic Media disponibles, consul
    </a>
    <div>
       <a href="/help/assets/restrict-assets-delivery.md">
-      <strong>Restringir el acceso a los recursos de Experience Manager</strong>
+      <strong>Restringir el acceso a los recursos en Experience Manager</strong>
       </a>
    </div>
    <p>
-      <em> Configure funciones para restringir el acceso a los recursos aprobados.</em>
+      <em> Configurar funciones para restringir el acceso a los recursos aprobados.</em>
    </p>
 </td>
 <td>
@@ -940,7 +939,7 @@ Para obtener información sobre las ofertas de Dynamic Media disponibles, consul
    </a>
    <div>
       <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
-      <strong>Integración de AEM Assets remoto con AEM Sites</strong>
+      <strong>Integrar AEM Assets remotos con AEM Sites</strong>
       </a>
    </div>
    <p>
@@ -972,8 +971,8 @@ Puede generar varios tipos de informes, como Cargar, Descargar y Entrega de Dyna
    </a>
    <div>
       <a href="/help/assets/manage-reports-assets-view.md">
-      <strong>Administración de informes en la vista Recursos</strong>
-      </a>
+      <strong>Administrar informes en la vista de Assets</strong>
+      </a>
    </div>
    <p>
       <em>Obtenga información sobre las métricas de éxito clave usando la vista Recursos. </em>
@@ -987,8 +986,8 @@ Puede generar varios tipos de informes, como Cargar, Descargar y Entrega de Dyna
    </a>
    <div>
       <a href="/help/assets/asset-reports.md">
-      <strong>Administración de informes en la vista del administrador</strong>
-      </a>
+      <strong>Administrar informes en la vista de administración</strong>
+      </a>
    </div>
    <p>
       <em>Obtenga información sobre cómo administrar los informes integrados de Adobe Analytics en la vista del administrador.</em>
@@ -1000,8 +999,8 @@ Puede generar varios tipos de informes, como Cargar, Descargar y Entrega de Dyna
    </a>
    <div>
       <a href="/help/assets/insights-content-hub.md">
-      <strong>Información sobre los recursos en Content Hub</strong>
-      </a>
+      <strong>Datos de Assets en Content Hub</strong>
+      </a>
    </div>
    <p>
       <em>Obtenga información sobre cómo ver la información de los recursos en Content Hub.</em>
