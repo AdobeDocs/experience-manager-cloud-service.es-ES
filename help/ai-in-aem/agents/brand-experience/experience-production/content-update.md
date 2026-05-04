@@ -4,9 +4,9 @@ description: Descubra qué es el trabajo de actualización de contenido de Brand
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
+source-git-commit: d9e892bd0f43fd32ef6c9e614273993baff2571e
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '866'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ El trabajo de actualización de contenido de [Experience Production Agent](/help
 
 El trabajo de actualización de contenido actualiza el contenido existente, incluidos los fragmentos de contenido, las páginas, los formularios y los recursos. El trabajo puede realizar acciones como actualizar, quitar, reemplazar o agregar elementos de contenido para mantener las experiencias precisas y actuales. Las entradas pueden ser descripciones en lenguaje natural y, cuando se utilizan con PDF de Jira y capturas de pantalla, pueden proporcionar entradas a.
 
-El trabajo de actualización de contenido transforma los detalles que proporciona, ya sea a través del lenguaje natural o de imágenes, en actualizaciones de contenido en la página. Debe proporcionar la dirección URL de una página que necesita actualizarse, junto con los detalles de lo que necesita actualizarse, y la aptitud del agente para completar su tarea. Cuando se usa con Adobe Experience Manager (AEM) as a Cloud Service, el trabajo crea un nuevo [launch](/help/sites-cloud/authoring/launches/overview.md) para que pueda revisar las actualizaciones antes de aplicar. Cuando se usa con la creación de documentos, el trabajo crea una nueva [versión](https://experienceleague.adobe.com/es/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
+El trabajo de actualización de contenido transforma los detalles que proporciona, ya sea a través del lenguaje natural o de imágenes, en actualizaciones de contenido en la página. Debe proporcionar la dirección URL de una página que necesita actualizarse, junto con los detalles de lo que necesita actualizarse, y la aptitud del agente para completar su tarea. Cuando se usa con AEM as a Cloud Service, el trabajo crea un nuevo [launch](/help/sites-cloud/authoring/launches/overview.md) para que puedas revisar las actualizaciones antes de aplicar. Cuando se usa con la creación de documentos, el trabajo crea una nueva [versión](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 ## Capacidades {#capabilities}
 

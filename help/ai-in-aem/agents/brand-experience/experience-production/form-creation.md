@@ -4,9 +4,9 @@ description: Obtenga información sobre el trabajo de creación de formularios d
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
+source-git-commit: d9e892bd0f43fd32ef6c9e614273993baff2571e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Trabajo de creación de formularios {#form-creation-job}
 
-El trabajo de creación de formularios forma parte de [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md), que está diseñado para desarrollar formularios utilizando indicaciones en lenguaje natural. Este trabajo genera automáticamente la estructura de formulario y los tipos de campo adecuados. El trabajo se muestra mediante el Asistente de IA.
+El trabajo de creación de formularios es parte de [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md), que está diseñado para desarrollar formularios utilizando indicaciones en lenguaje natural. Este trabajo genera automáticamente la estructura de formulario y los tipos de campo adecuados. El trabajo se muestra mediante el Asistente de IA.
 
 Algunas de las ventajas clave del trabajo de creación de formularios son:
 
