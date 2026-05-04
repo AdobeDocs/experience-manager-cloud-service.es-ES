@@ -4,9 +4,9 @@ description: Obtenga información sobre el trabajo de creación de formularios d
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ Algunas de las ventajas clave del trabajo de creación de formularios son:
 * **Importar un documento de PDF y convertirlo en formulario**: puede importar y transformar documentos de PDF existentes en formularios. La aptitud analiza el contenido cargado para detectar tipos de campo, conservar diseños y mejorar los formularios con una lógica de validación y diseño adaptable, a la vez que garantiza que se mantengan los estándares de conformidad y marca.
 
 Cuando utilice cualquiera de estas funciones, se le pedirá que elija el tipo de formulario que desea crear. Especifique una plantilla de formulario adaptable basada en componentes principales o una plantilla de formulario adaptable basada en Edge Delivery Services e indique la ruta preferida para guardar el formulario. Si está creando un formulario basado en Edge Delivery Services, también puede especificar la dirección URL de GitHub del repositorio.
-
 
 ### Indicadores de ejemplo {#sample-prompts}
 
@@ -104,3 +103,9 @@ The form creation skill combines form creation and site integration in a single 
 * *Create a simple survey form with 5 questions and embed it on the customer portal homepage*
 * *Build an event registration form with name, email, and date selection, then add it to /content/events/conference-2025*
 -->
+
+## Recursos adicionales {#additional-resources}
+
+Los siguientes recursos pueden resultar útiles a medida que continúa explorando Experience Production Agent:
+
+* También puede usar el [Libro de trabajo de Experience Production Agent](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/) para obtener instrucciones prácticas y guiadas.
