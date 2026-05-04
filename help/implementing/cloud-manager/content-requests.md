@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 4a423ab3dcb176db5cd3f0d3b8d586a1afced535
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2276'
 ht-degree: 2%
 
 ---
@@ -103,7 +103,7 @@ Ver también [Tablero de licencias](/help/implementing/cloud-manager/license-das
 | Excluir llamadas de Commerce integration framework | Excluido | Las solicitudes realizadas a AEM que se reenvíen a Commerce integration framework (la dirección URL comienza con `/api/graphql`) para evitar el recuento doble, no se pueden facturar en Cloud Service. |
 | Bibliotecas de cliente (/etc.clientlibs/*): Excluido | Excluido | Las solicitudes en /etc.clientlibs/* son recursos de biblioteca de cliente de nivel de plataforma y archivos de configuración de tiempo de ejecución utilizados por AEM. Estas solicitudes no proporcionan contenido creado por el cliente ni datos empresariales y, por lo tanto, no se cuentan como solicitudes de contenido. |
 | Excluir `favicon.ico` | Excluido | Aunque el contenido devuelto no debe ser HTML ni JSON, se ha observado que ciertos escenarios como los flujos de autenticación SAML devuelven iconos favoritos como HTML. Como resultado, los iconos favoritos se excluyen explícitamente del recuento. |
-| Fragmento de experiencia (XF): reutilización del mismo dominio | Excluido | Solicitudes realizadas a rutas XF (como `/content/experience-fragments/...`) desde páginas alojadas en el mismo dominio (identificado por el encabezado Referente que coincide con el host de solicitud).<br><br> Ejemplo: Una página de inicio en `aem.customer.com` que extrae un XF para un titular o una tarjeta del mismo dominio.<br><br>· La dirección URL coincide con /content/experience-fragments/...<br>· El dominio de referente coincide con `request_x_forwarded_host`<br><br>**Nota:** Si la ruta del fragmento de experiencia está personalizada (por ejemplo, mediante `/XFrags/...` o cualquier ruta de acceso fuera de `/content/experience-fragments/`), la solicitud no se excluye y se puede contar, incluso si es del mismo dominio. Adobe recomienda utilizar la estructura de rutas estándar de XF de Adobe para garantizar que la lógica de exclusión se aplique correctamente. |
+| Fragmento de experiencia (XF): reutilización del mismo dominio | Excluido | Solicitudes realizadas a rutas XF (como `/content/experience-fragments/...`) desde páginas alojadas en el mismo dominio (identificadas por el encabezado Referente que coincide con el host de solicitud).<br><br> Ejemplo: Una página de inicio en `aem.customer.com` que extrae un XF para un banner o una tarjeta del mismo dominio.<br><br>· La dirección URL coincide con /content/experience-fragments/...<br>· El dominio de referente coincide con `request_x_forwarded_host`<br><br>**Nota:** Si la ruta del fragmento de experiencia está personalizada (por ejemplo, mediante `/XFrags/...` o cualquier ruta de acceso fuera de `/content/experience-fragments/`), la solicitud no se excluye y se puede contabilizar, incluso si es del mismo dominio. Adobe recomienda utilizar la estructura de rutas estándar de XF de Adobe para garantizar que la lógica de exclusión se aplique correctamente. |
 
 ## Administración de solicitudes de contenido {#managing-content-requests}
 
@@ -120,17 +120,47 @@ Como se mencionó en la sección [Variaciones de solicitudes de contenido de Clo
 
 ### Reglas de filtro de tráfico para administrar solicitudes de contenido {#traffic-filter-rules-to-manage-crs}
 
-* Un patrón de bots común es utilizar un agente de usuario vacío.  Revise la implementación y los patrones de tráfico para ver si el agente de usuario vacío es útil o no.  Si desea bloquear este tráfico, la [sintaxis](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) recomendada es:
+Para controlar mejor sus solicitudes de contenido, analice el tráfico de CDN antes de definir reglas de filtro. La [herramienta de análisis de registro de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) le ayuda a obtener información sobre el rendimiento de CDN y los patrones de solicitud. En primer lugar, comprenda de dónde proviene el tráfico y si existen patrones de señalización inesperados (un patrón de bots común es utilizar un agente de usuario vacío).
 
+**Cosas para ver y registrar:**
+
+* Países clientes
+* Redes de clientes (sistema autónomo/AS)
+* IP del cliente
+* Categoría de usuario-agente y bots
+
+Puede utilizar transformaciones de solicitud para agregar propiedades al registro de solicitud para que aparezcan en los registros y paneles de CDN. Por ejemplo, para registrar el nombre del bot y la red de cliente (nombre AS) para su análisis:
+
+```yaml
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: bot_name
+          value: { reqProperty: botName }
+        - type: set
+          logProperty: cli_network
+          value: { reqProperty: clientAsName }
 ```
+
+Después de identificar el tráfico no deseado (por país, red, bot u otras señales), puede bloquearlo con reglas de filtro de tráfico. Ejemplo de regla que bloquea por país de cliente, red o nombre de bot:
+
+```yaml
 trafficFilters:
   rules:
-    - name: block-missing-user-agent
+    - name: block-bad-client-traffic
       when:
         anyOf:
+          - { reqProperty: clientCountry, equals: "XX" }
+          - { reqProperty: clientAsName, equals: "UnwantedClientNetwork" }
+          - { reqProperty: botName, equals: "UnwantedBot" }
           - { reqHeader: user-agent, exists: false }
           - { reqHeader: user-agent, equals: '' }
       action: block
 ```
+
+Reemplace los valores de ejemplo por el código de país, la red o el nombre de bot que desee bloquear. Consulte [Sintaxis de reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) y [Estructura de condición](/help/security/traffic-filter-rules-including-waf.md#condition-structure) para obtener más opciones.
 
 * Algunos bots atacan un sitio muy fuerte un día y desaparecen al siguiente. Esta funcionalidad puede frustrar cualquier intento de bloquear una dirección IP o un agente de usuario específico.  Un enfoque genérico es introducir una [regla de límite de tarifa](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Revise los [ejemplos](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) y cree una regla que coincida con su tolerancia para una tasa rápida de solicitudes.  Revise la sintaxis [Estructura de condiciones](/help/security/traffic-filter-rules-including-waf.md#condition-structure) para todas las excepciones que desee permitir a un límite de tasa genérico.
