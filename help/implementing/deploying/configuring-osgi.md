@@ -48,7 +48,7 @@ siguiendo el formato de configuración OSGi de `cfg.json`.
 
 >[!NOTE]
 >
->En AEM as a Cloud Service, las configuraciones de OSGi no se almacenan en `/apps`. Proteja Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) para ver las configuraciones de OSGi.
+>En AEM as a Cloud Service, las configuraciones de OSGi no se almacenan en `/apps`. Proteja Cloud Manager [Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) para ver las configuraciones de OSGi.
 
 ## Resolución de modo de ejecución {#runmode-resolution}
 
