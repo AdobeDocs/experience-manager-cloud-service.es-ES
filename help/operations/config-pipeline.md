@@ -4,9 +4,9 @@ description: Descubra cómo puede utilizar las canalizaciones de configuración 
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
+source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1530'
 ht-degree: 2%
 
 ---
@@ -35,6 +35,8 @@ Las siguientes secciones de este documento proporcionan información importante 
 ## Configuraciones compatibles {#configurations}
 
 La siguiente tabla ofrece una lista completa de estas configuraciones con vínculos a documentación dedicada que describe su sintaxis de configuración distinta y otra información.
+
+Para obtener configuraciones relacionadas con CDN, además del artículo vinculado de la tabla, consulte también el artículo [Fragmentos de configuración de CDN para escenarios comunes](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
 | Tipo | Valor YAML `kind` | Descripción | Entrega de publicación | Edge Delivery |
 |---|---|---|---|---|
