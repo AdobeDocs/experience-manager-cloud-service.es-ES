@@ -4,7 +4,7 @@ description: Aprenda a utilizar el agente de detección de contenido para ofrece
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
+source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -236,7 +236,7 @@ Nota: Actualmente, la detección de formularios solo admite formularios de Edge 
 
 Content Discovery Agent devuelve los resultados principales de cada consulta, ordenados por relevancia para garantizar que las coincidencias exactas aparezcan primero. El agente combina consultas impulsadas por metadatos con búsquedas semánticas para ensamblar un conjunto específico de coincidencias probables y, a continuación, utiliza un LLM para clasificarlas en función de la intención del usuario. Este enfoque combinado ofrece resultados precisos según el contexto, sin depender completamente de una coincidencia de palabra clave directa.
 
-Cada resultado se muestra como una tarjeta de recursos con el nombre del recurso, la vista previa y los metadatos clave, como la descripción y el formato. Puede hacer clic en el icono Información de una tarjeta para ver propiedades de recursos adicionales.
+Cada resultado se muestra como una tarjeta de recursos, con el nombre del recurso, la vista previa y los metadatos clave, como la descripción y el formato. Puede hacer clic en el icono Información de una tarjeta para ver propiedades de recursos adicionales.
 
 Utilice la opción **Mostrar tabla** para mostrar los resultados en formato tabular. Haga clic en **Mostrar todos los resultados** para ver el conjunto completo de 20 recursos recuperados en el panel derecho.
 
