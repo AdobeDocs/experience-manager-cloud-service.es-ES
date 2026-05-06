@@ -4,10 +4,10 @@ description: Aprenda a utilizar el agente de detección de contenido para ofrece
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 0%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -99,11 +99,38 @@ Ejemplos de mensajes:
 * **Buscar según el formato de archivo, el tipo de recurso, el estado del recurso y el ID creado por correo electrónico**: mostrar vídeos en formato `.mp4` que se hayan aprobado y `created by <user email ID>`.
 * **Buscar según el formato de archivo, el tipo de recurso, el estado del recurso y la fecha de creación**: mostrar imágenes en formato `.PNG` creadas después del 1 de enero de 2025 y el `published by <user email ID>`
 * **Búsqueda basada en el tipo MIME, la fecha de creación y la publicación por el ID de correo electrónico**: mostrar `image/jpeg` creado después de `January 1, 2025` y `published by <user email ID>`.
-* **Buscar en función del formato de archivo y las propiedades de metadatos personalizadas**: mostrar imágenes en formato `.JPEG` que tengan `Product SKU ID = <SKU value>` (debe estar en la propiedad de metadatos = formato de valor).
 
 * **Buscar recursos sin metadatos**: mostrar los recursos creados en los últimos 90 días con `<Name of metadata property including custom properties>` está en blanco.
 
 * **Busque recursos usando el tamaño de archivo, el ancho de imagen y el alto de imagen**: Muestre imágenes de más de 5 MB con un ancho superior a 2000 píxeles y un alto superior a 1200 píxeles.
+
+**Compatibilidad con lenguaje natural para metadatos personalizados**
+
+El agente de detección de contenido admite la consulta de propiedades de metadatos personalizadas definidas en esquemas de metadatos. Puede hacer referencia a los valores de metadatos directamente en las peticiones de datos sin necesidad de especificarlos mediante un formato estricto de clave-valor. El agente interpreta la intención y hace coincidir automáticamente los campos de metadatos relevantes.
+
+Ejemplos de mensajes:
+
+* **No se ha establecido la búsqueda de recursos que tienen un valor de propiedad**: busque recursos cuyo Nombre de campaña no esté establecido (la propiedad debe estar indizada para obtener los resultados apropiados).
+
+* **Buscando recursos que tienen un valor de propiedad establecido**: Busque recursos cuyo Nombre de campaña esté establecido (la propiedad debe estar indizada para obtener los resultados correspondientes).
+
+* **Buscando recursos que tienen un valor de propiedad establecido en X**: Encuéntrenme recursos cuyo nombre de campaña sea Día-café.
+
+* **Buscando recursos que tienen un valor de propiedad establecido en un conjunto de valores X, Y**: Encuéntrame recursos cuyo Nombre de campaña sea Día café junto con aquellos cuyo Nombre de campaña sea Día té.
+
+* **Mostrando el valor de un campo de propiedad en particular**: obtenerme recursos de café también me muestra el nombre de campaña de estos recursos.
+
+* **Buscar recursos que coincidan con una condición de propiedad basada en fecha**: obtenerme recursos cuya licencia no haya caducado.
+
+
+
+
+
+
+
+
+
+
 
 
 **Detección de contenido basado en carpetas:**\
@@ -161,6 +188,10 @@ Ejemplos de mensajes:
 
 * Mostrar imágenes de montaña ordenadas por nombre en orden ascendente (muestra los nombres de imagen que comienzan por la letra A primero seguida por B, etc.).
 
+**Detección de entornos según el contexto**
+
+En la vista de administrador, el agente de detección de contenido detecta automáticamente el entorno de creación y lo utiliza para resolver las solicitudes, sin que sea necesario especificar explícitamente la dirección URL del autor.
+
 ### Páginas de AEM Sites {#content-discovery-agent-aem-sites-pages}
 
 El agente de detección de contenido ayuda a los usuarios a localizar rápidamente páginas relevantes de AEM Sites mediante la interpretación de indicaciones en lenguaje natural que hacen referencia a temas de páginas, campañas u otras palabras clave contextuales. El agente realiza una búsqueda de texto completo basada en las palabras clave del mensaje para identificar las páginas coincidentes en el repositorio de AEM, lo que elimina la necesidad de examinar manualmente la estructura de Sites.
@@ -203,13 +234,15 @@ Nota: Actualmente, la detección de formularios solo admite formularios de Edge 
 
 ### Recursos {#discovery-agent-search-results-assets}
 
-El agente de detección de contenido devuelve los resultados principales de cada consulta, ordenados por relevancia para garantizar que las coincidencias exactas aparezcan primero. El agente combina consultas impulsadas por metadatos con búsquedas semánticas para ensamblar un conjunto específico de coincidencias probables y, a continuación, utiliza un LLM para clasificarlas en función de la intención del usuario. Este enfoque combinado ofrece resultados precisos según el contexto, sin depender completamente de una coincidencia de palabra clave directa.
+Content Discovery Agent devuelve los resultados principales de cada consulta, ordenados por relevancia para garantizar que las coincidencias exactas aparezcan primero. El agente combina consultas impulsadas por metadatos con búsquedas semánticas para ensamblar un conjunto específico de coincidencias probables y, a continuación, utiliza un LLM para clasificarlas en función de la intención del usuario. Este enfoque combinado ofrece resultados precisos según el contexto, sin depender completamente de una coincidencia de palabra clave directa.
 
-Cada resultado incluye un nombre de recurso junto con metadatos de recurso clave como la ruta de recurso, el creador, la fecha de creación, el título, la descripción, el formato, el último modificador, la última fecha de modificación, el tamaño de archivo, las dimensiones, la [URL de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) y las etiquetas asociadas. Si un recurso está en estado aprobado, los resultados también incluyen [Dynamic Media con la URL de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md).
+Cada resultado se muestra como una tarjeta de recursos con el nombre del recurso, la vista previa y los metadatos clave, como la descripción y el formato. Puede hacer clic en el icono Información de una tarjeta para ver propiedades de recursos adicionales.
 
-Puede hacer clic en la ruta del recurso para desplazarse sin problemas a la ubicación del recurso en AEM.
+Utilice la opción **Mostrar tabla** para mostrar los resultados en formato tabular. Haga clic en **Mostrar todos los resultados** para ver el conjunto completo de 20 recursos recuperados en el panel derecho.
 
-![Buscar recursos mediante el agente de detección de contenido](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
+Cada resultado también incluye metadatos de recursos clave, como la ruta, el tamaño, la fecha de creación y el creador, la fecha de modificación, junto con el usuario que modificó el recurso, el formato y la descripción. Si un recurso está en estado aprobado, los resultados también incluyen [Dynamic Media con la URL de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Puede hacer clic en la ruta del recurso para desplazarse sin problemas a la ubicación del recurso en AEM.
+
+![Buscar recursos mediante el agente de detección de contenido](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 
 Puede utilizar estos detalles del recurso para evaluar rápidamente si un recurso cumple los requisitos sin ir a cada recurso para ver estos detalles.
 
