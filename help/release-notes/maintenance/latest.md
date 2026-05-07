@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 82b3b4bdcd09aa86974518f4f62e73c9f377c83f
+source-git-commit: d00af3aee8c2a42233bfc0f914a4e24abe921e08
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '783'
 ht-degree: 30%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 30%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## 25821 de versión {#release-25821}
+## 25892 de versión {#release-25892}
 
-A continuación se resumen las mejoras continuas para la 25821 de la versión de mantenimiento, que se publicó el 5 de mayo de 2026. La versión de mantenimiento anterior era 25520.
+A continuación se resumen las mejoras continuas para la 25892 de la versión de mantenimiento, que se publicó el 7 de mayo de 2026. La versión de mantenimiento anterior era 25520.
 
 La activación de funciones 2026.5.0 proporcionará el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
-### Mejoras {#enhancements-25821}
+>[!NOTE]
+>
+>La 25821 de la versión se ha convertido en privada.
+
+### Mejoras {#enhancements-25892}
 
 * CQ-4362304: Crear directrices para front-end y actualizar la interfaz de usuario de configuración de LLM.
 * GRANITE-39546: Actualice Apache Tika a 3.x.
@@ -52,7 +56,7 @@ La activación de funciones 2026.5.0 proporcionará el conjunto completo de func
 * SKYOPS-138356: actualizar `com.adobe.granite.oauth.server` a 1.1.36.
 * SKYOPS-138739: Actualice SnakeYAML a 2.6.
 
-### Problemas solucionados {#fixed-issues-25821}
+### Problemas solucionados {#fixed-issues-25892}
 
 * ASSETS-59546: elimine las dependencias de la biblioteca de idioma común obsoleta.
 * ASSETS-64831: El recuento de intentos de procesamiento de restablecimiento de AssetProcessorProcess causa recursos atascados.
@@ -67,7 +71,7 @@ La activación de funciones 2026.5.0 proporcionará el conjunto completo de func
 * SITES-39267: restaura pagePath en las entradas de la cadena de relaciones.
 * SITES-43715: la validación de permisos falla al leer el estado del recurso.
 
-#### Guías de AEM {#guides-25821}
+#### Guías de AEM {#guides-25892}
 
 * GUIDES-45110: al seleccionar una imagen en el editor mediante el cuadro de diálogo **Seleccionar archivo**, solo se muestran los formatos de trama (como JPG, PNG y GIF). Los archivos vectoriales (como `.ai` y `.eps`) no se muestran y no se pueden seleccionar.
 * GUIDES-41938: al crear un tema en una carpeta con espacios en su nombre, se crea incorrectamente una carpeta duplicada en la que los espacios se sustituyen por guiones y el tema se guarda allí en lugar de en la carpeta original.
@@ -77,19 +81,19 @@ La activación de funciones 2026.5.0 proporcionará el conjunto completo de func
 
 Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en la versión, consulte la [hoja de ruta de la versión de Experience Manager Guides](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problemas conocidos {#known-issues-25821}
+### Problemas conocidos {#known-issues-25892}
 
 Ninguna.
 
-### Características y API obsoletas {#deprecated-25821}
+### Características y API obsoletas {#deprecated-25892}
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-### Correcciones de seguridad {#security-25821}
+### Correcciones de seguridad {#security-25892}
 
 AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 19 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
 
-### Tecnologías integradas {#embedded-tech-25821}
+### Tecnologías integradas {#embedded-tech-25892}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
