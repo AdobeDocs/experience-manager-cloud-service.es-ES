@@ -5,7 +5,7 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 0c156a295dc49d7e12f4e4f9ce1743d06c7fcdaf
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 96%
@@ -28,7 +28,7 @@ El cuadro de diálogo **Información del repositorio** le permite ver la siguien
 * La dirección URL del repositorio de Git de Cloud Manager.
 * Comandos de Git prediseñados para añadir rápidamente un remoto a su repositorio Git y enviar códigos.
 
-![Ventana Información del repositorio](assets/repository-info.png)
+  ![Ventana Información del repositorio](assets/repository-info.png)
 
 La información de acceso de los [repositorios privados](private-repositories.md) no está disponible en Cloud Manager.
 
