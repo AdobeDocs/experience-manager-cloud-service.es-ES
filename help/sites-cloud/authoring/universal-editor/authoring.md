@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
 workflow-type: tm+mt
-source-wordcount: '3101'
+source-wordcount: '3159'
 ht-degree: 13%
 
 ---
@@ -248,7 +248,18 @@ El componente seleccionado se ha eliminado.
 
 ### Reordenación y movimiento de componentes {#reordering-components}
 
-Puede mover y reordenar los componentes mediante el menú contextual o el árbol de contenido.
+Puede mover y reordenar componentes mediante arrastrar y soltar, el menú contextual o el árbol de contenido.
+
+>[!NOTE]
+>
+>Los componentes solo se pueden mover entre contenedores si el contenedor de destino [filtro de componentes](/help/implementing/universal-editor/filtering.md) permite el componente seleccionado.
+
+#### Mover componentes con arrastrar y soltar {#drag-and-drop-move}
+
+1. Haga clic en el componente que desee mover y arrástrelo.
+   * A medida que pasa el ratón por encima del destino, el editor le muestra dónde se colocará el componente si lo suelta con una línea azul horizontal.
+     ![Arrastre y suelte un componente para moverlo](assets/drag-and-drop-component-move.png)
+1. Suelte el componente para reubicarlo.
 
 #### Mover componentes con el menú contextual {#move-context-menu}
 
@@ -271,7 +282,7 @@ El componente se mueve tanto en el editor como en el árbol de contenido.
 >
 >Las opciones del menú contextual solo pueden mover componentes dentro de sus contenedores. Si desea mover componentes entre contenedores, [use el árbol de contenido.](#reorder-content-tree)
 
-#### Reordenar componentes con el árbol de contenido {#reorder-content-tree}
+#### Mover componentes con el árbol de contenido {#reorder-content-tree}
 
 1. Si aún no está en [modo de árbol de contenido](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), cambie a él.
 1. Seleccione un componente de contenedor en el árbol de contenido o en el editor.
@@ -283,10 +294,6 @@ El componente se mueve tanto en el editor como en el árbol de contenido.
 1. El componente arrastrado aparece atenuado en el árbol de contenido, mientras que el punto de inserción se representa mediante una línea azul. Suelte el componente para colocarlo en su nueva ubicación.
 
 Los componentes se reordenan tanto en el árbol de contenido como en el editor.
-
->[!NOTE]
->
->Los componentes solo se pueden mover entre contenedores si el contenedor de destino [filtro de componentes](/help/implementing/universal-editor/filtering.md) permite el componente seleccionado.
 
 ### Deshacer y rehacer {#undo-redo}
 
