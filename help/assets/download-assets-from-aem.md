@@ -6,10 +6,10 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
+source-git-commit: d2f264ed2c7cb701a66e6d4e226cd697a586c2d5
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 5%
+source-wordcount: '1285'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Puede descargar recursos, incluidas representaciones estáticas y dinámicas. También puede enviar correos electrónicos con vínculos a recursos directamente desde [!DNL Adobe Experience Manager Assets]. Los recursos descargados están agrupados en un archivo ZIP. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -35,9 +35,9 @@ Puede descargar recursos desde Experience Manager mediante los métodos siguient
 <!-- * [Link Share](#link-share-download) -->
 
 * [Interfaz de usuario de Experience Manager](#download-assets)
-* [Uso compartido de recursos Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=es)
-* [aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#download-assets)
+* [Commons del uso compartido de recursos](https://adobe-marketing-cloud.github.io/asset-share-commons/)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [Aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## Descargar recursos mediante la interfaz [!DNL Experience Manager] {#download-assets}
 
@@ -46,6 +46,15 @@ Experience Manager optimiza la experiencia de descarga en función de la cantida
 De manera predeterminada, [!DNL Experience Manager] almacena en déclencheur una notificación en la [[!DNL Experience Manager] Bandeja de entrada](/help/sites-cloud/authoring/inbox.md) al generar un archivo de descarga.
 
 ![Notificación de bandeja de entrada](assets/inbox-notification-for-large-downloads.png)
+
+Cuando un usuario solicita una descarga que contiene carpetas o colecciones, AEM realiza una estimación rápida del número de elementos (Assets, carpetas o representaciones) debajo de las carpetas o colecciones descargadas, para garantizar que la descarga solicitada esté dentro de los límites admitidos. De forma predeterminada, las descargas que contienen más de 50 000 elementos están bloqueadas y AEM muestra el mensaje `The selected items are larger than the configured maximum download limit`.
+
+Es posible aumentar el límite del tamaño de la descarga agregando una configuración OSGI que se muestra a continuación al código de la aplicación e [implementando mediante una canalización de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi):
+
+```
+com.adobe.cq.dam.download.impl.DownloadConfiguration   
+downloadMaxItems = 100000
+```
 
 
 ### Habilitar notificaciones por correo electrónico para descargas grandes {#enable-emails-for-large-downloads}
@@ -56,7 +65,7 @@ Las descargas asincrónicas se activan en cualquiera de los siguientes casos:
 * Si el tamaño de la descarga es superior a 100 MB
 * Si la descarga tarda más de 30 segundos en prepararse
 
-Mientras que la descarga asincrónica se ejecuta en el servidor, el usuario puede seguir explorando y trabajando en Experience Manager. Además de las notificaciones de la bandeja de entrada de Experience Manager, Experience Manager puede enviar correos electrónicos para notificar al usuario una vez completado el proceso de descarga. Para habilitar esta función, los administradores pueden configurar el servicio de correo electrónico al [configurar una conexión de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=es#sending-email).
+Mientras que la descarga asincrónica se ejecuta en el servidor, el usuario puede seguir explorando y trabajando en Experience Manager. Además de las notificaciones de la bandeja de entrada de Experience Manager, Experience Manager puede enviar correos electrónicos para notificar al usuario una vez completado el proceso de descarga. Para habilitar esta función, los administradores pueden configurar el servicio de correo electrónico al [configurar una conexión de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Una vez configurado el servicio de correo electrónico, los administradores y usuarios pueden activar las notificaciones por correo electrónico desde la interfaz de Experience Manager.
 
@@ -83,7 +92,7 @@ Para descargar recursos, siga estos pasos:
    | **[!UICONTROL Crear una carpeta independiente para cada recurso]** | Seleccione esta opción para crear una carpeta para cada recurso que contenga todas las representaciones descargadas para el recurso. Si no se selecciona, cada recurso (y sus representaciones si se seleccionan para su descarga) se encuentra en la carpeta principal del archivo generado. |
    | **[!UICONTROL Correo electrónico]** | Seleccione esta opción para enviar una notificación por correo electrónico (que contenga un vínculo a la descarga) a otro usuario. El usuario destinatario debe ser miembro del grupo `dam-users`. Las plantillas de correo electrónico estándar están disponibles en las siguientes ubicaciones:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Las plantillas que personaliza durante la implementación están disponibles en las siguientes ubicaciones: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Puede almacenar plantillas personalizadas específicas del inquilino en las siguientes ubicaciones:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Recurso(s)]** | Seleccione esta opción para descargar el recurso en su forma original.<br>La opción subrecursos está disponible si el recurso original tiene subrecursos. |
-   | **[!UICONTROL Representación(es)]** | Una representación es la representación binaria de un recurso. Assets tiene una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desea descargar. Las representaciones disponibles dependen del recurso seleccionado. |
+   | **[!UICONTROL Representación(es)]** | Una representación es la representación binaria de un recurso. Assets tiene una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso seleccionado. |
    | **[!UICONTROL Recortes inteligentes]** | Seleccione esta opción para descargar todas las representaciones de recorte inteligente del recurso seleccionado dentro de [!DNL Experience Manager]. Se crea un archivo zip con las representaciones de recorte inteligente y se descarga en el equipo local. |
    | **[!UICONTROL Representación(es) dinámica(es)]** | Seleccione esta opción para generar una serie de representaciones alternativas en tiempo real. Cuando selecciona esta opción, también selecciona las representaciones que desea crear dinámicamente seleccionando de la lista [Ajuste preestablecido de imagen](/help/assets/dynamic-media/image-presets.md). <br>Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen opcional, como la inversión de la imagen. La opción solo está disponible si tiene habilitado [!DNL Dynamic Media]. |
 
@@ -114,7 +123,7 @@ Para habilitar el servicio `OnOffTimeAssetAccessFilter`, debe crear una configur
 1. En el código de su proyecto en Git, cree un archivo de configuración en `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. El archivo debe contener `{}` como contenido, lo que significa una configuración OSGi vacía para el componente OSGi correspondiente. Esta acción habilita el servicio.
 1. Implemente su código, incluida esta nueva configuración, mediante [!DNL Cloud Manager].
 1. Una vez implementados, se puede acceder a las representaciones y los metadatos según la configuración de tiempo de activación y desactivación de los recursos. Si la fecha u hora actual es anterior a la hora de activación o posterior a la hora de inactividad, se muestra un mensaje de error.
-Para obtener más información sobre cómo agregar una configuración OSGi vacía, consulte esta [guía](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=es).
+Para obtener más información sobre cómo agregar una configuración OSGi vacía, consulte esta [guía](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Sugerencias y limitaciones {#tips-limitations}
 
@@ -138,5 +147,5 @@ Para obtener más información sobre cómo agregar una configuración OSGi vací
 >[!MORELIKETHIS]
 >
 >* [Descargar recursos protegidos por DRM](drm.md)
->* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Windows o Mac Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es)
+>* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Windows o Mac Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [Descargue recursos mediante Adobe Assets Link desde las aplicaciones de Adobe Creative Cloud admitidas](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html)
