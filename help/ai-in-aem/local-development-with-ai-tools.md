@@ -4,12 +4,13 @@ description: Aprenda a configurar herramientas de codificación de IA con contex
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 6fe463cb3f350f84e3853950e667eac851f672ef
+source-git-commit: 236c9edfdd2d540fd767dcc91058aab32eb035c8
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1648'
 ht-degree: 0%
 
 ---
+
 
 # Desarrollo local con herramientas de IA {#local-development-with-ai-tools}
 
@@ -23,22 +24,22 @@ Cuatro componentes complementarios se ocupan de esto:
 
 | Componente | Función |
 |---|---|
-| **AGENTES.md** | Un archivo de contexto específico del proyecto que basa la IA en el proyecto de AEM Cloud Service para cada sesión |
+| **AGENTES.md** | Archivo de contexto específico del proyecto que basa la IA en el proyecto de AEM as a Cloud Service para cada sesión |
 | **Aptitudes de agente** | Conjuntos de instrucciones reutilizables para tareas de desarrollo recurrentes como la creación de componentes y la configuración de Dispatcher |
 | **Servidor MCP local de inicio rápido de AEM** | Expone datos en tiempo de ejecución activos de una instancia local de AEM SDK para admitir la resolución de problemas |
 | **Servidor MCP local de Dispatcher** | Habilita la validación y la inspección en tiempo de ejecución de una instancia de Dispatcher local |
 
-Revise los [tutoriales de desarrollo asistido por IA](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) para obtener instrucciones prácticas adicionales.
+Revise los [tutoriales de desarrollo asistido por IA](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) para obtener instrucciones prácticas adicionales.
 
->[!NOTE]
+>[!TIP]
 >
-> También son útiles para el desarrollo local, pero no se tratan en este artículo, los servidores MCP remotos de AEM Cloud Service. Obtenga más información sobre ellos en el artículo [Uso del MCP con Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
+>Los servidores MCP remotos de AEM Cloud Service también son útiles para el desarrollo local. Obtenga más información sobre ellos en el [artículo sobre el uso de MCP con Cloud Service].(/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
 
 ## AGENTS.md {#agentsmd}
 
-`AGENTS.md` es un archivo Markdown en la raíz del proyecto de AEM que las herramientas de codificación de IA cargan automáticamente al principio de cada sesión para conectarse a tierra con la experiencia esencial del dominio de pila Java de AEM Cloud Service (y no otras soluciones de AEM como AEM 6.5 o Edge Delivery Services).
+`AGENTS.md` es un archivo de marcado en la raíz del proyecto de AEM. Las herramientas de codificación de IA cargan este archivo automáticamente al principio de cada sesión para conectarse a tierra con la experiencia esencial del dominio de pila Java de AEM Cloud Service (y no con otras soluciones de AEM como AEM 6.5 o Edge Delivery Services).
 
-`AGENTS.md` no es un archivo estático que usted copia, sino que se genera por la aptitud de `ensure-agents-md` descrita en la siguiente sección. La aptitud lee su `pom.xml` para resolver el nombre del proyecto, descubrir módulos y detectar complementos instalados, lo que produce un archivo adaptado a su proyecto específico.
+`AGENTS.md` no es un archivo estático que usted copie. Se genera por la aptitud de `ensure-agents-md` descrita en la siguiente sección de este documento. La aptitud lee su `pom.xml` para resolver el nombre del proyecto, descubrir módulos y detectar complementos instalados, lo que produce un archivo adaptado a su proyecto específico.
 
 >[!NOTE]
 >
@@ -55,11 +56,11 @@ Adobe publica las aptitudes de AEM as a Cloud Service en el repositorio **[adobe
 | `ensure-agents-md` | Las correas de inicio `AGENTS.md` y `CLAUDE.md` se adaptaron a la estructura de módulos real del proyecto |
 | `create-component` | Andamiajes para un componente completo de AEM: definición de componente, XML de diálogo, plantilla HTL, modelo Sling, pruebas unitarias y clientlibs |
 | `dispatcher` | Asistente de configuración HTTPD de Apache y Dispatcher con tecnología de IA que cubre la creación de configuraciones, el asesoramiento técnico, la respuesta a incidentes, la optimización del rendimiento y la protección de la seguridad |
-| `workflow` | Punto de entrada único para todas las aptitudes del flujo de trabajo de AEM as a Cloud Service. Abarca el diseño del modelo de flujo de trabajo, el paso de proceso personalizado y el desarrollo del selector de participantes, la configuración del lanzador, el activador del flujo de trabajo y la compatibilidad con la producción, incluida la depuración de flujos de trabajo atascados/fallidos, la activación de incidentes con registros de Cloud Manager, el análisis del pool de hilos y los diagnósticos de trabajo de Sling para el motor de flujo de trabajo de Granite. |
+| `workflow` | Este es el único punto de entrada para todas las aptitudes del flujo de trabajo de AEM as a Cloud Service. Abarca el diseño del modelo de flujo de trabajo, el paso de proceso personalizado y el desarrollo del selector de participantes, la configuración del lanzador, el activador del flujo de trabajo y la compatibilidad con la producción, incluida la depuración de flujos de trabajo atascados/fallidos, la activación de incidentes con registros de Cloud Manager, el análisis del pool de hilos y los diagnósticos de trabajo de Sling para el motor de flujo de trabajo de Granite. |
 
 ### Instalar aptitudes {#install-skills}
 
-Elija el método que coincida con la herramienta de codificación de IA. La instalación de habilidades una vez las pone a disposición de todos los proyectos de ese equipo. Consulte el tutorial [Configurar aptitudes de agente de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) para ver un tutorial concreto.
+Elija el método que coincida con la herramienta de codificación de IA. La instalación de habilidades una vez las pone a disposición de todos los proyectos de ese equipo. Consulte el tutorial [Configurar aptitudes de agente de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) para ver un tutorial concreto.
 
 #### Código Claude {#claude-code}
 
@@ -85,16 +86,16 @@ npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-servic
 gh extension install ai-ecoverse/gh-upskill
 
 # Install all available skills
-gh upskill adobe/skills --path skills/aem/cloud-service --all
+gh upskill adobe/skills --path plugins/aem/cloud-service --all
 ```
 
 ### Use la habilidad de secure-agents-md {#use-the-ensure-agents-md-skill}
 
-Después de instalar la aptitud, abra el asistente de IA en cualquier proyecto de AEM Cloud Service que aún no tenga `AGENTS.md`. La aptitud se ejecuta automáticamente antes de procesar la primera solicitud, lo que crea ambos archivos en la raíz del proyecto sin requerir una invocación explícita.
+Después de instalar la aptitud, abra el asistente de IA en cualquier proyecto de AEM as a Cloud Service que aún no tenga `AGENTS.md`. La aptitud se ejecuta automáticamente antes de procesar la primera solicitud, lo que crea ambos archivos en la raíz del proyecto sin requerir una invocación explícita.
 
 ### Uso de la aptitud create-component {#use-the-create-component-skill}
 
-En el primer uso, la aptitud detecta automáticamente `project`, `package` y `group` de `pom.xml` y de los componentes existentes, le pide que confirme los valores detectados y, a continuación, crea `.aem-skills-config.yaml` en la raíz del proyecto. No se requiere ninguna configuración manual antes del primer uso.
+En el primer uso, la aptitud detecta automáticamente `project`, `package` y `group` de `pom.xml` y de los componentes existentes, y le pide que confirme los valores detectados. Luego crea `.aem-skills-config.yaml` en la raíz del proyecto. No se requiere ninguna configuración manual antes del primer uso.
 
 Si prefiere crear previamente el archivo, coloque `.aem-skills-config.yaml` en la raíz del proyecto con la siguiente estructura:
 
@@ -123,7 +124,7 @@ CTA Link (ctaLink) - Pathfield
 
 El agente hace eco de la especificación del campo para la confirmación y, a continuación, genera todos los archivos de componente. Los patrones admitidos son varios campos con elementos anidados compuestos, lógica condicional de mostrar/ocultar, extensión de componente principal mediante fusión de recursos de Sling y pruebas JUnit 5 con AEM Mocks. El diseño puede provenir de varias fuentes, incluyendo una descripción textual, una imagen o una URL de diseño Figma usando el servidor MCP de Figma.
 
-Obtenga más información siguiendo el [desarrollo de componentes mediante el tutorial de habilidades del agente de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
+Obtenga más información siguiendo el [desarrollo de componentes mediante el tutorial de aptitudes de agente de AEM.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
 
 ### Uso de la aptitud de Dispatcher {#use-the-dispatcher-skill}
 
@@ -140,7 +141,7 @@ Invoque la aptitud de Dispatcher para cualquier trabajo de configuración HTTPD 
 
 Para solicitudes amplias o iniciales, empiece con la subaptitud `workflow-orchestrator`. Para un trabajo específico, describa la preocupación específica y las rutas de aptitudes al especialista adecuado.
 
-La habilidad del despachante gestiona la orquestación y la orientación consultiva. El servidor MCP de Dispatcher, que se describe a continuación, proporciona las siete herramientas de validación y tiempo de ejecución que la aptitud utiliza cuando necesita pruebas locales.
+La habilidad del despachante gestiona la orquestación y la orientación consultiva. El servidor MCP de Dispatcher, que se describe en la sección siguiente, proporciona las siete herramientas de validación y tiempo de ejecución que la aptitud utiliza cuando necesita pruebas locales.
 
 ## Servidor MCP de Quickstart de AEM {#aem-quickstart-mcp-server}
 
