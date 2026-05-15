@@ -4,9 +4,9 @@ description: En esta guía se proporcionan sugerencias para solicitar informaci�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 65a35ce2a47187f7939991a45b67692312331774
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '3121'
 ht-degree: 0%
 
 ---
@@ -104,12 +104,12 @@ Use este mensaje para importar muchas páginas de la misma plantilla después de
 
 El flujo de trabajo recomendado es iterativo: primero realice la validación en un conjunto pequeño y, a continuación, amplíe.
 
-1. **Ejecute primero una migración de una sola página.** - Migre una página representativa para la plantilla que planea importar en lotes.
+1. **Ejecute primero una migración de una sola página.** : Migre una página representativa para la plantilla que planea importar de forma masiva.
    * Esto crea la infraestructura de importación necesaria.
-1. **Ejecute la importación masiva en un pequeño conjunto de páginas.**: pida al agente que ejecute la importación masiva y proporcione una breve lista de direcciones URL que sigan la misma plantilla.
-1. **Revise y perfeccione los resultados.** - Inspeccionar las páginas importadas.
+1. **Ejecute la importación masiva en un pequeño conjunto de páginas.** : pida al agente que ejecute la importación masiva y proporcione una breve lista de las direcciones URL que siguen la misma plantilla.
+1. **Revisar y perfeccionar los resultados.** - Inspeccionar las páginas importadas.
    * Si algo parece incorrecto, pídale al agente que ajuste los analizadores, los transformadores o la lógica de importación.
-1. **Aumentar escala.** - Cuando los resultados parezcan correctos, proporcione la lista completa de direcciones URL.
+1. **Aumentar escala.** : Cuando los resultados parezcan correctos, proporcione la lista completa de direcciones URL.
    * El agente reutilizará la misma lógica de importación y ejecutará la importación masiva a escala.
 
 ### Raspado de páginas web {#scraping-webpages}
@@ -219,7 +219,7 @@ Utilice este mensaje para validar páginas migradas completas para la fidelidad 
    1. Migrar una página.
    1. Aplique un diseño.
    1. Ejecutar una crítica de bloques en bloques de claves
-   1. Ejecute una crítica de página de la aplicación para una validación completa.
+   1. Ejecute una crítica de página para una validación completa.
 
 ### Migración de bloques Figma {#figma-block-migration}
 
@@ -245,7 +245,7 @@ Tenga en cuenta que debe configurar los detalles de Figma en [la consola de mode
    1. **Asignación a bloques existentes**: el agente identifica el bloque coincidente más cercano en la biblioteca de bloques del proyecto y crea una variante personalizada.
    1. **Generación de CSS**: el agente escribe estilos que hacen referencia a las propiedades personalizadas de CSS extraídas, lo que garantiza la coherencia del diseño.
    1. **Descarga de recursos**: el agente guarda imágenes e iconos de Figma en el espacio de trabajo del entorno alojado.
-   1. **Generación de contenido de Edge Delivery Services**: el agente crea el archivo Markdown siguiendo la estructura de bloques EDS
+   1. **Generación de contenido de Edge Delivery Services**: el agente crea el archivo Markdown siguiendo la estructura de bloques de Edge Delivery Services
    1. **Validación de salida**: el agente obtiene una vista previa del resultado y realiza una comparación visual con el diseño Figma original.
 * La aptitud lee primero los metadatos (paso 1) para comprender la estructura y, a continuación, extrae el contexto de diseño detallado (pasos 2-5).
    * Este enfoque por fases evita problemas con archivos Figma grandes o complejos.
@@ -253,6 +253,60 @@ Tenga en cuenta que debe configurar los detalles de Figma en [la consola de mode
    * Todos los estilos se extraen como propiedades personalizadas de CSS (tokens de diseño) antes de escribir cualquier CSS.
    * Esto garantiza que el bloque migrado sea coherente con el sistema de diseño.
 * La solicitud requiere la dirección URL de Figma (con `fileKey` y `node-id` opcional) o una clave de archivo de Figma directamente como entrada.
+
+### Rediseñar La Migración Mediante Bloques Derivados De Figma {#figma-redesign-migration}
+
+Utilice este mensaje cuando migre un sitio web existente a una experiencia rediseñada.
+
+En este flujo de trabajo, primero se crea la colección de bloques de destino a partir de Figma. A continuación, la migración del sitio se ejecuta con el sitio web de origen activo y asigna el contenido de origen a los bloques creados a partir de Figma.
+
+* **Figma** es el diseño de destino y el origen de biblioteca de bloques.
+* **El sitio web activo** sigue siendo el origen del contenido.
+
+#### Indicadores de ejemplo {#example-figma-redesign}
+
+1. Cree la colección de bloques a partir de Figma:
+
+   * &quot;Crear la colección de bloques de Edge Delivery Services a partir de estos componentes de Figma: `https://figma.com/design/{fileKey}?node-id={nodeId}`&quot;
+
+1. Migre el contenido de origen a esos bloques:
+
+   * &quot;Migre estas páginas y asigne el contenido a la colección de bloques derivada de Figma: URL1, URL2, URL3&quot;
+
+#### Qué se debe saber {#wtk-figma-redesign}
+
+* Figma se utiliza primero para establecer el conjunto de bloques rediseñado.
+* A continuación, la migración del sitio asigna el contenido del sitio web real a ese conjunto de bloques.
+* **La validación de contenido** se ha completado con el sitio web de origen.
+* **La validación visual** se realiza con el sistema de diseño y colección de bloques derivado de Figma.
+* Las nuevas variantes de bloque solo deben crearse cuando los bloques existentes derivados de Figma no pueden representar el contenido de origen.
+
+#### Flujo de trabajo recomendado {#figma-redesign-workflow}
+
+1. Identifique los componentes Figma necesarios para el sitio rediseñado.
+1. Migre esos componentes a bloques o variantes de Edge Delivery Services.
+1. Revise la colección de bloques generada y los tokens de diseño.
+1. Ejecute la migración de sitios en páginas de origen representativas.
+1. Asigne contenido de origen a los bloques derivados de Figma.
+1. Valide el contenido con el sitio web de origen.
+1. Valide la salida visual con el diseño Figma de destino.
+1. Refine bloques o asignaciones y, a continuación, escale a más páginas.
+
+### Crear una nueva página desde Figma {#figma-new-page-from-figma}
+
+Utilice este mensaje cuando la página no exista en un sitio web de origen y una página o marco Figma debería impulsar la creación de una nueva página de Edge Delivery Services.
+
+#### Indicadores de ejemplo {#example-figma-new-page}
+
+* &quot;Migrar esta página de Figma a Edge Delivery Services: `https://figma.com/design/{fileKey}?node-id={nodeId}`&quot;
+
+#### Qué se debe saber {#wtk-figma-new-page}
+
+* Esta solicitud funciona mejor con un marco o una página **específica de Figma**, no con un archivo completo.
+* El marco debe organizarse en **secciones de página de borrado**.
+* Las secciones se asignan a bloques existentes, contenido predeterminado o variantes nuevas.
+* El texto y los recursos proceden de Figma.
+* Las funciones dinámicas como la búsqueda, las calculadoras, la personalización o los localizadores de tiendas pueden requerir **desarrollo de bloques por separado** más allá de lo que produce la migración a Figma.
 
 ### Configuración de navegación {#navigation-setup}
 
@@ -413,3 +467,9 @@ Utilice este mensaje para solucionar problemas con bloques, imágenes, CSS o vis
    1. Código de bloque
    1. Consola del explorador
 * El agente puede comprobar las vistas previas locales en `http://localhost:3000`.
+
+<!--
+## Additional Sections {#additional-sections}
+
+@gwalt, is the additional content in the prompting guide wiki ready to be added here?
+-->
