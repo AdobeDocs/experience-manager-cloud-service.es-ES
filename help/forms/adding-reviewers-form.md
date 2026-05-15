@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '514'
 ht-degree: 99%
 
 ---
@@ -55,13 +55,13 @@ Para editar el esquema de metadatos:
 
 ## Asociar revisores de envío con un formulario {#associating-submission-reviewers-with-a-form-1}
 
-Para asociar revisores de envío con un formulario adaptable, cree un grupo de revisores y agréguele usuarios. Agregue el grupo de revisores creado en el campo del revisor de envío de las propiedades avanzadas del formulario. 
+Para asociar revisores de envío con un formulario adaptable, cree un grupo de revisores y agréguele usuarios. Agregue el grupo de revisores creado en el campo del revisor de envío de las propiedades avanzadas del formulario.
 Los grupos de usuarios permiten asociar diferentes conjuntos de revisores de envío con diferentes formularios adaptables. Esta función evita que un usuario no autorizado revise el envío.
 
 Antes de realizar los siguientes pasos, consulte [Requisito previo](adding-reviewers-form.md#prerequisite).
 
 Para crear un grupo y agregarle miembros, vaya a **Herramientas** > **Operaciones** > **Seguridad** > **Grupos**.
-Para obtener más información, consulte [Administración de usuarios y servicios](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es). 
+Para obtener más información, consulte [Administración de usuarios y servicios](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es).
 Asegúrese de agregar el grupo que crea como miembro del grupo de usuarios predeterminado: **forms-submit-reviewers**. Este grupo de usuarios está incluido en [!DNL AEM Forms] y garantiza que los usuarios se añadan como revisores de envío.
 
 Para asociar grupos de usuarios con un formulario adaptable:

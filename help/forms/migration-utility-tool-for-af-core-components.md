@@ -9,10 +9,10 @@ hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 10%
+source-wordcount: '1109'
+ht-degree: 11%
 
 ---
 
@@ -24,7 +24,7 @@ La Utilidad de conversión de Forms, que forma parte del conjunto de aplicacione
 
 ## ¿Qué son las herramientas de modernización de AEM?
 
-[Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/) se refiere a un conjunto de utilidades o aplicaciones de software diseñadas para facilitar el proceso de modernización o actualización de proyectos de Adobe Experience Manager (AEM). Estas herramientas suelen ayudar a convertir componentes o funcionalidades antiguas de AEM en alternativas más nuevas, eficientes y compatibles. La utilidad de conversión de Forms se instala en Herramientas de modernización de AEM Forms para convertir formularios adaptables basados en componentes de base a formularios basados en componentes principales.
+[Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/) se refiere a un conjunto de utilidades o aplicaciones de software diseñadas para facilitar el proceso de modernización o actualización de proyectos de Adobe Experience Manager (AEM). Estas herramientas suelen ayudar a convertir componentes o funcionalidades antiguas de AEM en alternativas más nuevas, eficientes y compatibles. La utilidad de conversión de Forms se instala en Herramientas de modernización de AEM para convertir formularios adaptables basados en componentes de base a formularios basados en componentes principales.
 
 La utilidad de conversión de Forms convierte los Forms adaptables basados en componentes de base antiguos en formularios basados en componentes principales más recientes. Este proceso de conversión garantiza que los formularios se alineen con los estándares y las capacidades modernas, lo que mejora potencialmente el rendimiento, la compatibilidad y la facilidad de mantenimiento dentro del entorno de AEM.
 
@@ -166,5 +166,5 @@ Ahora puede ver que el formulario adaptable creado en los componentes de base se
 
 ## Prácticas recomendadas {#best-practices}
 
-* Asegúrese de que los formularios basados en componentes de base utilicen únicamente los componentes que tengan [componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalentes disponibles. En los casos en los que se utilizan componentes de base que no tienen un componente principal equivalente, el componente de base no se convierte. Como resultado, no funciona correctamente al crear un formulario
+* Asegúrese de que los formularios basados en componentes de base utilicen únicamente los componentes que tengan [componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalentes disponibles. En los casos en los que se utilizan componentes de base que no tienen un componente principal equivalente, el componente de base no se convierte. Como resultado, no funciona correctamente al crear un formulario
 * Asegúrese de que las reglas para convertir los componentes de base en componentes principales tengan formato XML.

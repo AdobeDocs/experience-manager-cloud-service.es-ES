@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 9abc6e42-3b53-4dca-bd6a-ced5cf6c6ac4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 98%
+source-wordcount: '392'
+ht-degree: 93%
 
 ---
 
@@ -55,7 +55,7 @@ Puede utilizar el campo Descripción larga para especificar texto largo o incrus
 
 ![Adición de medios enriquecidos como ayuda en contexto para campos de formulario](assets/long-descriptions.png)
 
-Al añadir una descripción larga, se muestra el icono **?** junto al campo. Al hacer clic en el icono, se muestra el contenido añadido en la sección Descripción larga.
+Si agrega una descripción larga, se muestra **?** junto al campo. Al hacer clic en el icono, se muestra el contenido añadido en la sección Descripción larga.
 
 ![Ejemplo de ayuda en contexto con medios enriquecidos](assets/photoshop.png)
 
@@ -65,6 +65,6 @@ Además de la ayuda en contexto de los campos de formulario, puede especificar a
 
 ![Adición de ayuda en contexto para el panel de un formulario](assets/panel-level-help.png)
 
-Al añadir ayuda al panel, se muestra el icono **?** junto a la descripción del panel. Al hacer clic en el icono, se muestra el contenido añadido en la sección Contenido de ayuda del cuadro de diálogo de edición del panel.
+Si agrega ayuda al panel, se muestra **?** junto a la descripción del panel. Al hacer clic en el icono, se muestra el contenido añadido en la sección Contenido de ayuda del cuadro de diálogo de edición del panel.
 
 ![Ejemplo de ayuda en contexto a nivel del panel de formulario](assets/photoshop-1.png)

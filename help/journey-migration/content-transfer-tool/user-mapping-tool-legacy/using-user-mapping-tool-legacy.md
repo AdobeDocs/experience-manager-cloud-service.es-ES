@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ La herramienta de asignación de usuarios utiliza una API que le permite buscar 
 
 ## Configuración de la herramienta de asignación de usuarios {#setting-up-user-mapping}
 
-AEM **Requisito previo:** La asignación de usuarios requiere que cada usuario que se asigne a su ID de IMS tenga una dirección de correo electrónico en su perfil en y en IMS. Incluso si el usuario utiliza una dirección de correo electrónico como ID de usuario para iniciar sesión, la asignación no funciona para ese usuario a menos que la dirección de correo electrónico también esté en el perfil y también en IMS.
+**Requisito previo:** La asignación de usuarios requiere que cada usuario asignado a su ID de IMS tenga una dirección de correo electrónico en su perfil en AEM y en IMS. Incluso si el usuario utiliza una dirección de correo electrónico como ID de usuario para iniciar sesión, la asignación no funciona para ese usuario a menos que la dirección de correo electrónico también esté en el perfil y también en IMS.
 
 Siga los pasos a continuación para configurar esto:
 
@@ -40,7 +40,7 @@ Siga los pasos a continuación para configurar esto:
 
 ## Acceso a la interfaz de usuario para la herramienta de asignación de usuarios {#user-interface}
 
-La herramienta de asignación de usuarios está integrada en la herramienta de transferencia de contenido. Puede descargar la herramienta de transferencia de contenido desde [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html). Para obtener más información sobre la versión más reciente, consulte [Notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md).
+La herramienta de asignación de usuarios está integrada en la herramienta de transferencia de contenido. Puede descargar la herramienta de transferencia de contenido desde [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Para obtener más información sobre la versión más reciente, consulte [Notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Seleccione Adobe Experience Manager y vaya a herramientas > **Operaciones** > **Migración de contenido**.
 
@@ -62,7 +62,7 @@ La herramienta de asignación de usuarios está integrada en la herramienta de t
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
 
 
-   * **Org ID**: escriba el identificador de organización de Adobe Identity Management System (IMS) para la organización a la que se están migrando los usuarios.
+   * **ID de organización**: escriba el ID de organización de Adobe Identity Management System (IMS) para la organización a la que se están migrando los usuarios.
 
      >[!NOTE]
      >Para obtener el identificador de organización, inicia sesión en [Admin Console](https://adminconsole.adobe.com/) y elige tu organización (en el área superior derecha) si perteneces a más de uno. El identificador de organización se encuentra en la dirección URL de esa página, con formato como `xx@AdobeOrg`, donde xx es el identificador de organización de IMS. También puede encontrar el identificador de organización en la página [Adobe Developer Console](https://developer.adobe.com/console/), donde genera el token de acceso.
@@ -97,7 +97,7 @@ La herramienta de asignación de usuarios está integrada en la herramienta de t
 
    >[!IMPORTANT]
    >
-   >* Una vez finalizada la asignación de usuarios, puede volver a la página Migración de contenido con la ruta de exploración. La tarjeta Asignación de usuarios muestra el estado y la marca de tiempo. Haga clic en **Transferencia de contenido** para poder crear un conjunto de migración y ejecutar la extracción. Consulte [Ejecución de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es#running-tool) para obtener más información.
+   >* Una vez finalizada la asignación de usuarios, puede volver a la página Migración de contenido con la ruta de exploración. La tarjeta Asignación de usuarios muestra el estado y la marca de tiempo. Haga clic en **Transferencia de contenido** para poder crear un conjunto de migración y ejecutar la extracción. Consulte [Ejecución de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obtener más información.
 
 ### Reanudación del proceso de asignación de usuarios {#resume-user-mapping-process}
 

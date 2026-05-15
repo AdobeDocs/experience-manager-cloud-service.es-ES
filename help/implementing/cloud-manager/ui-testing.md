@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '2662'
-ht-degree: 54%
+source-wordcount: '2888'
+ht-degree: 55%
 
 ---
 
@@ -151,7 +151,7 @@ El descriptor de ensamblado indica al complemento que cree un archivo de tipo `.
 
 * Un `Dockerfile`, obligatorio para crear la imagen Docker
 * El script `wait-for-grid.sh`, cuyos propósitos se describen a continuación
-* Las pruebas de interfaz de usuario reales, implementadas por un proyecto Node.js en la carpeta `test-module` 
+* Las pruebas de interfaz de usuario reales, implementadas por un proyecto Node.js en la carpeta `test-module`
 
 El descriptor de ensamblado también excluye algunos archivos que podrían generarse al ejecutar las pruebas de IU localmente. Esto garantiza un archivo más pequeño y generaciones más rápidas.
 
@@ -276,7 +276,7 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 | Duración recomendada | 15m | Adobe recomienda mantener las pruebas por debajo de este límite de tiempo. |
 
 * Si el autor/publicación de destino está protegido por una inclusión en la lista de permitidos IP, la infraestructura de prueba de la IU de la canalización debe estar incluida en la lista de permitidos o las pruebas de la IU pueden fallar con 403 Prohibido.
-Consulte también [Error en la prueba de IU en AEMaaCS debido a la Inclusión en la lista de permitidos de IP](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26654#) y [Introducción a las Listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Consulte también [Error en la prueba de IU en AEMaaCS debido a la Inclusión en la lista de permitidos de IP](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) y [Introducción a las Listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >

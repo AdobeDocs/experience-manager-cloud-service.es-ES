@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1146'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Póngase en marcha rápidamente viendo nuestro vídeo introductorio:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463164/)
 
-### Acceso al Asistente de IA 
+### Acceso al Asistente de IA
 
 Puede acceder al asistente de IA desde tres ubicaciones diferentes en AEM Forms:
 
@@ -277,7 +277,7 @@ Para usuarios que deseen explorar capacidades avanzadas:
 
 Escriba `/` para ver los métodos abreviados disponibles:
 
-| Comando | Función | Ejemplos |
+| Comando | Función | Ejemplo |
 |---------|---------|---------|
 | `/create-form` | Iniciar un nuevo formulario | `/create-form customer survey` |
 | `/add-form` | Añadir formulario en el editor universal | `/add-form contact form` |
@@ -342,7 +342,7 @@ Utilice estos términos para obtener los mejores resultados:
 - Use formatos compatibles (PDF, PNG, JPG, Figma)
 - Asegúrese de que el tamaño del archivo sea inferior a 10 MB
 
-## Comentarios y asistencia 
+## Comentarios y asistencia
 
 Ayúdenos a mejorar el asistente de IA:
 

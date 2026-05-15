@@ -5,10 +5,10 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 79%
+source-wordcount: '259'
+ht-degree: 82%
 
 ---
 
@@ -52,7 +52,7 @@ Una vez configura [!DNL AEM Forms] as a Cloud Service, los grupos enumerados
      <li>Import packages containing XDP</li> 
     </ul> </td> 
   </tr>
- <tr>
+  <tr>
    <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
@@ -83,16 +83,12 @@ Una vez configura [!DNL AEM Forms] as a Cloud Service, los grupos enumerados
      <li>Access Correspondence Management letters or interactive communications using Agent UI</li> 
     </ul> </td> 
   </tr>
-  -->
-  <!--
-   <tr>
+  <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
     <ul>
-    -->
-    <!-- <li>Create an inbox application</li>  -->
-    <!--
-     <li>Create a workflow model</li> 
+    <li>Create an inbox application</li>
+    <li>Create a workflow model</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -100,12 +96,10 @@ Una vez configura [!DNL AEM Forms] as a Cloud Service, los grupos enumerados
    <td>
     <ul> 
      <li>Use AEM inbox applications<br />
-     -->
-     <!-- 
      <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>
-     -->
-    </ul> </td> 
+  </ul> </td> 
   </tr>
+  -->
   <tr>
    <td>[!DNL fd-administrators]</td> 
    <td>

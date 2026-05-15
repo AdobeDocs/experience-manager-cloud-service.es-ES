@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2688'
-ht-degree: 99%
+source-wordcount: '2738'
+ht-degree: 97%
 
 ---
 
@@ -74,7 +74,7 @@ La expresión “calculate” se utiliza para calcular automáticamente el valor
 
 **Tipo de devolución**: la expresión devuelve un valor compatible con el campo en el que se muestra el resultado de la expresión (por ejemplo, decimal).
 
-**Ejemplo**: La expresión “calculate” para mostrar la suma de dos campos en **field1** es:
+**Ejemplo**: la expresión &quot;calculate&quot; para mostrar la suma de dos campos en **campo1** es:
 `field2.value + field3.value`
 
 ### Expresión “click” {#click-expression}
@@ -99,7 +99,7 @@ El script de inicialización se activa cuando se inicializa un formulario adapta
 
 **Tipo de devolución:** El script de inicialización no devuelve ningún valor. Si alguna expresión devuelve un valor, este se ignorará.
 
-**Ejemplo:** En un escenario de rellenado previo de datos, para rellenar campos con valor predeterminado `'Adaptive Forms'` cuando su valor se guarda como nulo, la expresión del script de inicialización es:
+**Ejemplo:** En un escenario de rellenado previo de datos, para rellenar campos con el valor predeterminado `'Adaptive Forms'` cuando su valor se guarda como nulo, la expresión del script de inicialización es:
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Expresión “options” {#options-expression}
@@ -134,7 +134,7 @@ La expresión “validate” se utiliza para validar los campos mediante la expr
 
 **Se aplica a**: campos
 
-**Tipo de devolución**: La expresión devuelve un valor Booleano, que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido. 
+**Tipo de devolución**: La expresión devuelve un valor Booleano, que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido.
 **Ejemplo**: Para un campo que representa el código postal del Reino Unido, la expresión de validación es:
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -156,7 +156,7 @@ El script de implementación de valor se activa cuando:
 
 **Tipo de devolución:** El valor script de implementación de valor no devuelve ningún valor. Si alguna expresión devuelve un valor, este se ignorará.
 
-**Ejemplo:**&#x200B;Para convertir el caso de los alfabetos introducidos en el campo a mayúsculas en el momento de la confirmación, la expresión de implementación de valor es:
+**Ejemplo:** Para convertir el caso de los alfabetos introducidos en el campo a mayúsculas en el momento de la confirmación, la expresión de implementación de valor es:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -181,7 +181,7 @@ La expresión “step completion” se utiliza para evitar que un usuario vaya a
 
 **Tipo de devolución**: La expresión devuelve un valor Booleano, que representa si el panel actual es válido o no. **True** representa que el panel actual es válido y el usuario puede navegar hasta el siguiente panel.
 
-**Ejemplo**: En un formulario organizado en varios paneles, antes de navegar hasta el panel siguiente, se valida el panel actual. En estos casos, se utiliza la expresión “step completion”. Por lo general, estas expresiones utilizan la API de validación de GuideBridge. Un ejemplo de expresión “step completion” es:
+**Ejemplo**: En un formulario organizado en varios paneles, antes de navegar hasta el panel siguiente, se valida el panel actual. En estos casos, se utiliza la expresión “step completion”. Por lo general, estas expresiones utilizan la API de validación de GuideBridge. Un ejemplo de expresión &quot;step completion&quot; es:
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Validaciones en formularios adaptables {#validations-in-adaptive-form}
@@ -278,8 +278,8 @@ Realice los siguientes pasos para crear un motivo personalizado para un tipo de 
 1. Cree una carpeta para mantener los motivos personalizados. En el directorio /apps, cree un nodo de tipo sling::folder. Por ejemplo, cree un nodo con el nombre `customPatterns`. Bajo este nodo, cree otro nodo de tipo `nt:unstructed` y asígnele un nombre `textboxpatterns`. Este nodo contiene los distintos motivos personalizados que desea agregar.
 1. Abra la pestaña Propiedades del nodo que ha creado. Por ejemplo, abra la pestaña Propiedades de `textboxpatterns`. Agregue la propiedad `guideComponentType` a este nodo y establezca su valor en *fd/af/components/formatter/guideTextBox*.
 
-1. El valor de esta propiedad varía según el campo para el que desee definir los motivos. Para el campo numérico, el valor de la propiedad `guideComponentType` es *fd/af/components/formatter/guideNumericBox*. El valor del campo Marcador de datos es *fd/af/components/formatter/guideDatepicker*.
-&grave;&grave;
+1. El valor de esta propiedad varía según el campo para el que desee definir los motivos. Para el campo numérico, el valor de la propiedad `guideComponentType` es *fd/af/components/formatter/guideNumericBox*. El valor del campo Selector de fecha es *fd/af/components/formatter/guideDatepicker*.
+&quot;
 1. Puede agregar un motivo personalizado al asignar una propiedad al `textboxpatterns` nodo. Agrega una propiedad con un nombre (por ejemplo, `pattern1`) y establece su valor en el motivo que desees agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El motivo estará disponible para todos los cuadros de texto que utilice en formularios adaptables.
 
    ![Crear motivos personalizados para campos en CrxDe](assets/creating-custom-patterns.png)

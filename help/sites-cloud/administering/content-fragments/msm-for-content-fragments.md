@@ -8,10 +8,11 @@ solution: Experience Manager Sites
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 85b72909597a95531aea51719c841bc5db9c1a21
+exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 3%
+source-wordcount: '950'
+ht-degree: 4%
 
 ---
 
@@ -141,7 +142,7 @@ Para almacenar en déclencheur un despliegue que inserte las actualizaciones de 
 
 1. En la consola Fragmento de contenido vaya a la ubicación de la Live Copy del fragmento.
 1. Seleccione el fragmento.
-1. Seleccione **Despliegue** en la barra de herramientas. Se abrirá el asistente para guiarle a través del proceso.
+1. En la barra de herramientas, seleccione **Despliegue**. Se abrirá el asistente para guiarle a través del proceso.
 1. Seleccione las Live Copies que se incluirán en el despliegue y **Continuar**.
 1. Programe el despliegue inmediatamente (**Ahora**) o **Más tarde**.
 1. **Continuar** según corresponda.

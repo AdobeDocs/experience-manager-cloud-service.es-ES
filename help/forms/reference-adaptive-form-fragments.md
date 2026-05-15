@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '429'
 ht-degree: 92%
 
 ---
@@ -65,7 +65,7 @@ Incluye campos para capturar el número de teléfono y la dirección de correo e
 
 ## Información de la tarjeta de crédito {#credit-card-information}
 
-Incluye campos para capturar información de tarjetas de crédito que se puede utilizar para procesar pagos. 
+Incluye campos para capturar información de tarjetas de crédito que se puede utilizar para procesar pagos.
 [![Fragmento de información de tarjeta de crédito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Empleo actual {#current-employment}

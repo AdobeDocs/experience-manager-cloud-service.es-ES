@@ -8,13 +8,12 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2853'
 ht-degree: 0%
 
 ---
@@ -62,10 +61,10 @@ Ahora añada un parámetro de procesamiento de imagen al final de la dirección 
 
 Observe que se genera una nueva representación del reloj. Una clave para entender de este sencillo ejercicio de cambiar el ancho de la imagen, es que la imagen vista se genera 100% dinámicamente.
 
-Ahora cambie el valor de anchura de `500` píxeles a `1000` píxeles y, a continuación, presione **[!UICONTROL Entrar]**. [Pruébelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=_blank}.
+Ahora cambie el valor de anchura de `500` píxeles a `1000` píxeles y, a continuación, presione **[!UICONTROL Entrar]**. [Pruébelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
 En el momento en que pulse **[!UICONTROL Intro]**, el explorador volverá al servidor de imágenes de Dynamic Media. Genera una representación completamente nueva del reloj, en función del nuevo valor de anchura que acaba de introducir, devuelve la nueva imagen al explorador y la almacena en caché.
 
-Dynamic Media tiene numerosos parámetros de procesamiento de imágenes que puede utilizar para ajustar los recursos de imagen en las páginas web. Puedes [ver una lista de ellos aquí](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=es).
+Dynamic Media tiene numerosos parámetros de procesamiento de imágenes que puede utilizar para ajustar los recursos de imagen en las páginas web. Puedes [ver una lista de ellos aquí](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
 Ahora intente agregar un parámetro de rotación a la imagen del reloj. Y el final de la ruta de la dirección URL, inmediatamente después de `wid=1000`, escriba `&rotate=90` y, a continuación, presione **[!UICONTROL Entrar]**. [Inténtelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}.
 
@@ -80,7 +79,7 @@ Aunque es posible cambiar los parámetros de procesamiento de imágenes en una U
 Existen varias formas y lugares en los que querrá crear una imagen o en los que una imagen estará disponible. Tradicionalmente, un Creative entra en Adobe Photoshop y guarda cada una de estas diferentes representaciones como imágenes estáticas.
 
 ![Imágenes estáticas](/help/assets/dynamic-media/assets/dm-static-images.png)
-_Bueno: imágenes estáticas, cada una creada manualmente._
+_Correcto: imágenes estáticas, cada una creada manualmente._
 
 Ahora imaginen que el director de Creative mira las imágenes y dice:
 
@@ -110,7 +109,7 @@ Desea que la imagen se envíe con los mismos parámetros dondequiera que se vaya
 
 Por un momento, veamos cómo se crea un ajuste preestablecido de imagen en Dynamic Media.
 
-![Creando un ajuste preestablecido de imagen que comienza con la pestaña Básico](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
+![Creación de un ajuste preestablecido de imagen a partir de la pestaña Básico](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
 _Creando un ajuste preestablecido de imagen a partir de la ficha Básico._
 
 En el ejemplo anterior, puede ver que se creó un nuevo ajuste preestablecido de imagen con el nombre _Medium_. Dynamic Media utiliza una imagen de ejemplo predeterminada, la mochila, para ayudarle a ver las características del ajuste preestablecido de imagen a medida que lo crea.
@@ -147,7 +146,7 @@ _Ajustes preestablecidos de imagen estáticos y dinámicos. La imagen del reloj 
 Pero, ¿qué sucede si tiene que cambiar una imagen de su sitio web? Por ejemplo, supongamos que ha realizado algunas pruebas y ha detectado que la imagen de 120 x 120 (el ajuste preestablecido de imagen `Cart`) no se recibe como esperaba. Para aumentar el tamaño de la imagen, aumente la anchura a 175 píxeles y la altura a 175 píxeles. Tradicionalmente, tendría que entrar en Adobe Photoshop y volver a crear todas esas imágenes del carro de compras. Sin embargo, con Dynamic Media, solo tiene que editar el ajuste preestablecido de imagen actualizando los valores de Anchura y Altura a 175 y guardar el ajuste preestablecido, como se ve en el ejemplo siguiente.
 
 ![Edición de un ajuste preestablecido de imagen](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
-_Edición de la anchura y altura del ajuste preestablecido de imagen `Cart`._
+_Editando la anchura y altura del ajuste preestablecido de imagen `Cart`._
 
 Después de cambiar el ajuste preestablecido de imagen y vaciar la caché, todas las imágenes se actualizan y todas las direcciones URL que se usan con ese ajuste preestablecido hacen que _no_ cambie en cualquier lugar. Esto significa que no son necesarios vínculos rotos ni redirecciones de páginas web.
 
@@ -169,7 +168,7 @@ Un conjunto de medios mixtos puede contener imágenes, conjuntos de muestras, co
 La creación de un conjunto de imágenes es sencilla. Simplemente, agregue los recursos de imagen que desee incluir en el conjunto.
 
 ![Creando un conjunto de imágenes](/help/assets/dynamic-media/assets/dm-create-image-set-add-assets.png)
-_El editor de conjuntos de imágenes permite agregar recursos de imagen y reordenar su apariencia en el conjunto._
+_El editor de conjuntos de imágenes permite agregar recursos de imagen y reordenar su aspecto en el conjunto._
 
 Debe asignar un nombre al conjunto. Elija el nombre con cuidado porque no puede editarlo más adelante. En el ejemplo anterior, el conjunto se llama `Running`. Cuando haya terminado, guarde el conjunto.
 
@@ -217,7 +216,7 @@ Si desea obtener más información sobre lo que acaba de leer, utilice los mater
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=es) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -227,8 +226,8 @@ _Dynamic Media Help topics_
 
 _Tutoriales de Dynamic Media_
 
-* [Usar Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=es)
-* [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/es?lang=en#recommended/solutions/experience-manager) (buscar en _Dynamic Media_)
+* [Uso de Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (buscar en _Dynamic Media_)
 
 _Visores de Dynamic Media_
 

@@ -6,10 +6,10 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
-workflow-type: ht
-source-wordcount: '511'
-ht-degree: 100%
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 94%
 
 ---
 
@@ -58,9 +58,9 @@ Este panel le permite tomar decisiones basadas en datos sobre sus formularios. A
 
 ¡Traduzcamos estos hallazgos en pasos procesables!
 
-* **¿Envíos bajos?** Investigue la claridad y la facilidad de uso del formulario. ¿Es demasiado largo o tiene preguntas confusas? Considere la posibilidad de revisarlo para mejorar la experiencia del usuario.
-* **¿Tiempos de creación elevados?** Desglose el proceso de creación. ¿Hay pasos o funciones innecesarios que no se utilizan de forma eficaz? Emplee funciones que ahorren tiempo, como plantillas.
-* **¿Fragmentos infrautilizados?** Asegúrese de que los fragmentos estén bien organizados, que se puedan buscar y que sean fáciles de entender. Considere la posibilidad de promocionar el uso de fragmentos dentro de su equipo.
+* **Envíos bajos?** Investigue la claridad y la facilidad de uso del formulario. ¿Es demasiado largo o tiene preguntas confusas? Considere la posibilidad de revisarlo para mejorar la experiencia del usuario.
+* **Tiempos de creación altos?** Desglose el proceso de creación. ¿Hay pasos o funciones innecesarios que no se utilizan de forma eficaz? Emplee funciones que ahorren tiempo, como plantillas.
+* **Fragmentos infrautilizados?** Asegúrese de que los fragmentos estén bien organizados, que se puedan buscar y que sean fáciles de entender. Considere la posibilidad de promocionar el uso de fragmentos dentro de su equipo.
 
 Al analizar estas tendencias, puede crear mejores formularios, ahorrar tiempo en la creación y aprovechar los componentes reutilizables. Esto se traduce en un flujo de trabajo más fluido, unos usuarios más felices y, en última instancia, un mayor retorno de su inversión.
 

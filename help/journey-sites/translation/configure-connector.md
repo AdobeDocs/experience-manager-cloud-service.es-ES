@@ -2,15 +2,14 @@
 title: Configuración del conector de traducción (AEM Sites)
 description: Aprenda a conectar AEM a un servicio de traducción.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1162'
 ht-degree: 100%
 
 ---
@@ -62,7 +61,7 @@ Si elige otro proveedor, el administrador debe instalar el paquete del conector 
 >
 >El uso del traductor de Microsoft incorporado en AEM no requiere ninguna configuración adicional y funciona tal cual sin tener que configurar el conector adicional.
 >
->Si decide utilizar el conector de Microsoft Translator para realizar pruebas, no es necesario realizar los pasos de las dos secciones siguientes: [Creación de una configuración de integración de traducción](#create-config) y [Asociar la configuración con su contenido](#associate).  Sin embargo, se recomienda leer estas secciones para que se familiarice con los pasos que debe seguir cuando necesite configurar su conector preferido.
+>Si decide utilizar el conector de Microsoft Translator para realizar pruebas, no es necesario realizar los pasos de las dos secciones siguientes: [Creación de una configuración de integración de traducción](#create-config) y [Asociar la configuración con su contenido](#associate). Sin embargo, se recomienda leer estas secciones para que se familiarice con los pasos que debe seguir cuando necesite configurar su conector preferido.
 >
 >La licencia de la versión de prueba del conector del traductor de Microsoft no está pensada para fines de producción y si decide conceder la licencia, el administrador del sistema debe seguir los pasos detallados en la sección [Recursos adicionales](#additional-resources) al final de este documento para configurar esa licencia.
 

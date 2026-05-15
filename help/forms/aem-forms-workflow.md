@@ -9,9 +9,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2589'
 ht-degree: 93%
 
 ---
@@ -32,7 +32,7 @@ Con el flujo de trabajo centrado en formularios en OSGi, puede generar e impleme
 
 Una vez configurados, estos flujos de trabajo se pueden activar manualmente para completar un proceso definido o ejecutarse programáticamente cuando los usuarios envíen un formulario. <!-- or [correspondence management](cm-overview.md) letter With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-El flujo de trabajo centrado en Forms en OSGi amplía [la bandeja de entrada AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=es#authoring) y proporciona componentes adicionales (pasos) para el editor de flujos de trabajo de AEM para agregar compatibilidad con flujos de trabajo centrados en [!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=es#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+El flujo de trabajo centrado en Forms en OSGi amplía [la bandeja de entrada AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=es#authoring) y proporciona componentes adicionales (pasos) para el editor de flujos de trabajo de AEM para agregar compatibilidad con flujos de trabajo centrados en [!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 Todos [!DNL AEM Forms] los pasos del flujo de trabajo admiten el uso de variables. Las variables permiten realizar pasos en el flujo de trabajo para mantener y pasar metadatos por varios pasos durante la ejecución. Puede crear diferentes tipos de variables para almacenar diferentes tipos de datos. También puede crear colecciones de variables (matriz) para almacenar varias instancias de datos relacionados y del mismo tipo. Normalmente, se utiliza una variable o una colección de variables cuando se necesita tomar una decisión en base al valor que mantiene o para almacenar información que se necesite más adelante en un proceso. Para obtener más información sobre el uso de variables en estos componentes (pasos) del flujo de trabajo centrados en Forms, consulte [Flujo de trabajo centrado en Forms en OSGi: pasos de referencia](aem-forms-workflow-step-reference.md). Para obtener información sobre la creación y la administración de variables, consulte [Variables en flujos de trabajo de AEM](variable-in-aem-workflows.md).
 
@@ -94,7 +94,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 1. Abra la consola Modelos de flujo de trabajo. La URL predeterminada es `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Seleccione **Crear** y, a continuación, **Crear modelo**. Aparecerá el cuadro de diálogo Agregar modelo del flujo de trabajo.
 1. Escriba el **Título** y el **Nombre** (opcional). Por ejemplo, una solicitud hipotecaria. Seleccione **Listo**.
-1. Seleccione el modelo del flujo de trabajo recién creado y seleccione **Editar**.  Ahora puede agregar pasos al flujo de trabajo para crear lógica empresarial. La primera vez que cree un modelo del flujo de trabajo, contendrá:
+1. Seleccione el modelo del flujo de trabajo recién creado y seleccione **Editar**. Ahora puede agregar pasos al flujo de trabajo para crear lógica empresarial. La primera vez que cree un modelo del flujo de trabajo, contendrá:
 
    * Los pasos: Inicio del flujo y Fin del flujo. Estos pasos representan el principio y el final del flujo de trabajo. Estos pasos son obligatorios y no se pueden editar ni eliminar.
    * Un ejemplo de paso de participante denominado Paso 1. Este paso está configurado para asignar un elemento de trabajo al administrador. Elimine este paso.
@@ -151,7 +151,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
    ![workflow-editor-mortgage](assets/workflow-editor-mortgage.png)
 
-## Crear una solicitud de flujo de trabajo centrada en formularios  {#create-a-forms-centric-workflow-application}
+## Crear una solicitud de flujo de trabajo centrada en formularios {#create-a-forms-centric-workflow-application}
 
 La solicitud es el formulario adaptable asociado al flujo de trabajo. Cuando una solicitud se envía a través de la bandeja de entrada, inicia el flujo de trabajo asociado. Para que un Forms Workflow esté disponible como solicitud en la bandeja de entrada AEM y la aplicación [!DNL AEM Forms], haga lo siguiente para crear una solicitud del flujo de trabajo:
 
@@ -225,7 +225,7 @@ Puede iniciar o habilitar un flujo de trabajo centrado en Forms mediante:
 
 ### El envío de una solicitud desde la bandeja de entrada AEM {#inbox}
 
-La solicitud de flujo de trabajo que ha creado está disponible como solicitud en la bandeja de entrada. Los usuarios que sean integrantes del grupo [!DNL workflow-users] pueden rellenar y enviar la solicitud que activa el flujo de trabajo asociado. 
+La solicitud de flujo de trabajo que ha creado está disponible como solicitud en la bandeja de entrada. Los usuarios que sean integrantes del grupo [!DNL workflow-users] pueden rellenar y enviar la solicitud que activa el flujo de trabajo asociado.
 
 <!--
  ### Submitting an application from [!DNL AEM Forms] App {#afa}

@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '695'
 ht-degree: 99%
 
 ---
@@ -61,7 +61,7 @@ Cuando se crea un formulario adaptable con un archivo XDP, se puede arrastrar y 
   </tr>
   <tr>
    <td><p>Firma manuscrita</p> </td>
-   <td><p>Firma manuscrita</p> </td>
+   <td><p>Firma a mano alzada</p> </td>
   </tr>
   <tr>
    <td><p>Campo numérico </p> </td>
@@ -206,7 +206,7 @@ La siguiente tabla muestra cómo se comportan los distintos scripts XFA definido
    <td><p>Este script se ejecuta durante el tiempo de ejecución y no se puede anular en el formulario adaptable.<br /> </p> </td>
   </tr>
   <tr>
-   <td><p>exit </p> </td>
+   <td><p>salir </p> </td>
    <td><p>Este script se ejecuta durante el tiempo de ejecución y no se puede anular en el formulario adaptable.</p> </td>
   </tr>
   <tr>

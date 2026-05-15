@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 597fa30c-6fb7-46c2-8ee1-2986c4860266
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 96%
+source-wordcount: '933'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Asignar tareas y pasos de [!DNL Adobe Sign] de [flujos de trabajo centrados en F
 
 ECMAScript es un lenguaje de script. Se utiliza para scripts del lado del cliente y aplicaciones de servidor. Siga estos pasos para seleccionar dinámicamente un usuario o un grupo mediante ECMAScript:
 
-1. Abra CRXDE Lite. La URL es `https://'[server]:[port]'/crx/de/index.jsp`. 
+1. Abra CRXDE Lite. La URL es `https://'[server]:[port]'/crx/de/index.jsp`.
 1. Cree un archivo con la extensión .ecma en la siguiente ruta. Si la ruta (estructura de nodos) no existe, créela:
 
    * (Ruta para el paso Asignar tarea) `/apps/fd/dashboard/scripts/participantChooser`
@@ -44,7 +44,7 @@ ECMAScript es un lenguaje de script. Se utiliza para scripts del lado del client
    1. Agregue la propiedad `mix:title` en el cuadro de diálogo Editar mixins y haga clic en **Aceptar**.
    1. Agregue la siguiente propiedad al nodo jcr:content del script:
 
-      | Nombre | Tipo | Valor  |
+      | Nombre | Tipo | Valor |
       |--- |--- |--- |
       | jcr:title | Cadena | Especifique el nombre del script; por ejemplo, Seleccionar el agente de campo más cercano. Este nombre se mostrará en los pasos Asignar tarea y Firmar documento. |
 

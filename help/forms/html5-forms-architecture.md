@@ -10,16 +10,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 93%
+source-wordcount: '2069'
+ht-degree: 90%
 
 ---
 
 # Arquitectura de los formularios HTML5{#architecture-of-html-forms}
 
-<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial (de trabajo) a aem-forms-ea@adobe.com.
+<span class="preview">: la funcionalidad de Forms HTML5 se ofrece como parte del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el ID de correo electrónico oficial (de trabajo) a aem-forms-ea@adobe.com.
 </span>
 
 ## Arquitectura {#architecture}
@@ -97,7 +97,7 @@ Los formularios de HTML5 utilizan el almacenamiento en caché para optimizar el 
   </tr>
   <tr>
    <td>Agresiva</td>
-   <td>Almacenar en caché el contenido HTML procesado<br /> Almacene en caché todos los artefactos almacenados en caché en el nivel conservador.<br /> <strong>Nota</strong>: Esta estrategia ofrece el mejor rendimiento, pero consume más memoria para almacenar los artefactos en caché.</td>
+   <td>Almacenar en caché el contenido procesado de HTML <br /> Almacene en caché todos los artefactos almacenados en caché en el nivel conservador.<br /> <strong>Nota</strong>: esta estrategia ofrece el mejor rendimiento, pero consume más memoria para almacenar los artefactos en caché.</td>
   </tr>
  </tbody>
 </table>

@@ -4,13 +4,12 @@ description: Aprenda a añadir una canalización de Edge Delivery para crear e i
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '636'
 ht-degree: 10%
 
 ---

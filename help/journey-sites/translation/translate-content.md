@@ -2,15 +2,14 @@
 title: Traducir contenido
 description: Utilice el conector de traducción y las reglas para traducir el contenido.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2535'
 ht-degree: 100%
 
 ---
@@ -60,7 +59,7 @@ Para los propietarios de contenido que también son responsables de la traducci�
 
 1. Vaya a **Navegación** > **Sites** y seleccionr el proyecto.
 1. Busque la raíz de idioma del proyecto. Por ejemplo, si la raíz de idioma es el inglés, `/content/<your-project>/en`.
-   * Antes de la primera traducción, las otras carpetas de idioma son marcadores de posición vacíos.  Normalmente, los crea el arquitecto de contenido.
+   * Antes de la primera traducción, las otras carpetas de idioma son marcadores de posición vacíos. Normalmente, los crea el arquitecto de contenido.
 1. Busque la raíz de idioma del proyecto.
 1. Seleccione el selector de carril y muestre el panel de **Referencias**.
 1. Seleccione **copias de idioma**.
@@ -155,7 +154,7 @@ Para ver los detalles del contenido incluido en este proyecto:
 1. Seleccione una línea para ver el detalle de esa línea, teniendo en cuenta que una línea puede representar varios elementos de contenido para traducir.
 1. Seleccione la casilla de verificación de selección de un elemento de línea para ver más opciones, como la opción de eliminarlo del trabajo o verlo en la consola Sites.
 
-   ![Opciones de trabajo de traducción](assets/translation-job-options.png)
+   ![Opciones del trabajo de traducción](assets/translation-job-options.png)
 
 Normalmente, el contenido del trabajo de traducción se inicia en el estado **Borrador** tal como indica la columna **Estado** en la ventana **Trabajo de traducción**.
 

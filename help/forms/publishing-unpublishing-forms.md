@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1341'
 ht-degree: 99%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 [!DNL AEM Forms] le permite crear, publicar y cancelar la publicación de formularios fácilmente. El servidor de [!DNL AEM Forms] ofrece dos instancias: Autor y Publicar. La instancia de autor se utiliza para crear y administrar recursos y recursos de formulario. La instancia Publicar sirve para mantener los recursos y recursos relacionados disponibles para los usuarios finales.
 
-## Recursos compatibles {#supported-assets-nbsp}
+## Recursos compatibles   {#supported-assets-nbsp}
 
 [!DNL AEM Forms] es compatible con los siguientes tipos de recursos:
 
@@ -69,7 +69,7 @@ Un recurso puede tener los siguientes estados:
    1. Mueve el puntero sobre un recurso y selecciona **[!UICONTROL Publicar]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
    1. Realiza una de las siguientes acciones y, a continuación, selecciona Publicar:
 
-      * Si está en la vista de tarjeta, selecciona **[!UICONTROL Introducir selección]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) y selecciona el recurso. Se selecciona el recurso.
+      * Si estás en la vista de tarjeta, selecciona **[!UICONTROL Introducir selección]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) y selecciona el recurso. Se selecciona el recurso.
       * Si está en la vista de lista, seleccione la casilla de verificación de un recurso. Se selecciona el recurso.
       * Seleccione un recurso para mostrar sus detalles.
       * Muestre las propiedades de un recurso al pulsar Ver propiedades ![viewproperties](assets/viewproperties.png).

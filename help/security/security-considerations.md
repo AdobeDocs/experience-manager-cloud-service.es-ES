@@ -6,9 +6,9 @@ hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '235'
 ht-degree: 100%
 
 ---
@@ -32,12 +32,12 @@ Para admitir operaciones criptográficas asimétricas, AEM guarda certificados d
 
 >[!NOTE]
 >
->Adobe recomienda que se utilicen los controles de acceso predeterminados para el almacén de confianza, lo que significa que queda accesible al público. Para una configuración más segura, puede usar una política de denegación `jcr:all` para todo el mundo. 
+>Adobe recomienda que se utilicen los controles de acceso predeterminados para el almacén de confianza, lo que significa que queda accesible al público. Para una configuración más segura, puede usar una política de denegación `jcr:all` para todo el mundo.
 
 <!--
 Commenting out section for now as requested by Lars
 
 ## Anonymous Permission Hardening Package {#anonymous-permission-hardening-package}
 
-For more information on the Anonymous Hardening Package, see [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=es#anonymous-permission-hardening-package).
+For more information on the Anonymous Hardening Package, see [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#anonymous-permission-hardening-package).
 -->

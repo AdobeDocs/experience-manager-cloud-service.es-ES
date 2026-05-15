@@ -1,59 +1,59 @@
 ---
-title: How to set up OAuth Server-to-Server Authentication?
-description: Learn how to configure OAuth Server-to-Server authentication for Adobe Experience Manager Forms as a Cloud Service
+title: Cómo configurar la autenticación de servidor a servidor OAuth
+description: Obtenga información sobre cómo configurar la autenticación de servidor a servidor OAuth para Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
 hide: true
 hidefromToC: true
 index: false
-source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
-# OAuth Server-to-Server Authentication
+# Autenticación de servidor a servidor OAuth
 
-OAuth Server-to-Server Authentication allows secure, token-based access to AEM Forms Communications APIs without requiring user interaction. OAuth server-to-server authentication is supported by Adobe Developer Console.
+La autenticación de servidor a servidor OAuth permite un acceso seguro y basado en tokens a las API de comunicaciones de AEM Forms sin que sea necesaria la interacción del usuario. Adobe Developer Console admite la autenticación de servidor a servidor OAuth.
 
 ## Requisitos previos
 
-Before you begin, make sure the following prerequisites are met:
+Antes de empezar, asegúrese de que se cumplen los siguientes requisitos previos:
 
-* Ensure that you have [access to the Adobe Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/access-rights) specific to the environment you use.
-* [Assign the System Administrator or Developer role in the Adobe Admin Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) to enable access to the Adobe Developer Console.
+* Asegúrese de que tiene [acceso a Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) específico para el entorno que utiliza.
+* [Asigne el rol de Administrador del sistema o Desarrollador en Adobe Admin Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) para habilitar el acceso a Adobe Developer Console.
 
-## How to Generate an Access Token Using OAuth Server-to-Server Authentication?
+## Cómo generar un token de acceso mediante la autenticación de servidor a servidor OAuth
 
-Follow the steps below to generate an access token from the Adobe Developer console, and make your first API call through OAuth Server-to-Server Authentication.
+Siga los pasos a continuación para generar un token de acceso desde la consola de Adobe Developer y realizar la primera llamada de API mediante la autenticación de servidor a servidor OAuth.
 
-### 1. Adobe Developer Console Project Setup
+### &#x200B;1. Configuración del proyecto de Adobe Developer Console
 
-1. Navigate to [Adobe Developer Console](https://developer.adobe.com/console)
-2. Log in with your Adobe ID
+1. Vaya a [Adobe Developer Console](https://developer.adobe.com/console)
+2. Inicie sesión con su Adobe ID
 
-3. Create New Project or navigate to your existing project
+3. Cree un nuevo proyecto o vaya al proyecto existente
 
 >[!BEGINTABS]
 
->[!TAB To create a new project]
+>[!TAB Para crear un nuevo proyecto]
 
-1. From the **Quick Start** section, click **Create new project**
-2. A new project is created with a default name
+1. En la sección **Inicio rápido**, haga clic en **Crear nuevo proyecto**
+2. Se crea un nuevo proyecto con un nombre predeterminado
 
-   ![Create ADC Project](/help/forms/assets/adc-home.png)
+   ![Crear proyecto ADC](/help/forms/assets/adc-home.png)
 
-3. Click **Edit project** in the top right corner
+3. Haga clic en **Editar proyecto** en la esquina superior derecha
 
-   ![Edit Project](/help/forms/assets/adc-edit-project.png)
+   ![Editar proyecto](/help/forms/assets/adc-edit-project.png)
 
-4. Provide a meaningful name (e.g., &quot;formsproject&quot;)
+4. Proporcione un nombre significativo (por ejemplo, &quot;formsproject&quot;)
 5. Haga clic en **Guardar**.
 
-   ![Edit Project Name](/help/forms/assets/adc-edit-projectname.png)
+   ![Editar nombre de proyecto](/help/forms/assets/adc-edit-projectname.png)
 
 >[!TAB Para navegar a su proyecto existente]
 
@@ -181,7 +181,7 @@ Genere los tokens de acceso manualmente en Adobe Developer Console:
 
 >[!TAB Para Producción]
 
-Generar tokens mediante programación usando la API [Adobe IMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Generar tokens mediante programación usando la API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenciales requeridas:**
 
@@ -260,7 +260,7 @@ Obtenga información sobre cómo establecer el entorno para las API de comunicac
                     <p class="is-size-6">Aprenda a configurar un entorno para las API de comunicaciones de Forms sincrónicas (bajo demanda) que generan o procesan documentos al instante. </p>
                 </div>
                 <a href="/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
         </div>
@@ -284,7 +284,7 @@ Obtenga información sobre cómo establecer el entorno para las API de comunicac
                     <p class="is-size-6">Aprenda a configurar el entorno para las API de comunicaciones de Forms asincrónicas (por lotes) que generan o procesan varios documentos de forma programada.</p>
                 </div>
                 <a href="/help/forms/aem-forms-cloud-service-communications-batch-processing.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
         </div>

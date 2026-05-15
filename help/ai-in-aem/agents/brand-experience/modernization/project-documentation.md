@@ -2,14 +2,14 @@
 title: Habilidad de documentación del proyecto
 description: Descubra cómo las habilidades de documentación de Experience Modernization Agent pueden ayudarle a acelerar los traspasos de proyectos.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 90fb75c7febc8a8138e13a2f3ff872f38eeb3baa
+role: User, Admin, Developer
+exl-id: 111cc47d-085f-4cf4-81bc-332e6a31bbeb
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
-
 
 # Habilidad de documentación del proyecto {#project-documentation}
 
@@ -55,9 +55,9 @@ Puede guardar PDF directamente para proporcionárselo a sus equipos o cargarlo c
 
 >[!NOTE]
 >
->Si no tiene autorización para acceder a la API de administración de Edge Delivery Services o a la opción **Permitir que LLM acceda a admin.hlx.page en mi nombre** [en la configuración de la consola.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) no está habilitado, el agente generará la documentación basada en el código base al que tiene acceso.
+>Si no tiene autorización para acceder a la API de administración de Edge Delivery Services o a la opción **Permitir que LLM acceda a admin.hlx.page en mi nombre** [en la configuración de la consola.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) no está activada, el agente generará la documentación en función del código base al que tenga acceso.
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 A continuación, se muestran mensajes de error comunes que se encuentran al utilizar la aptitud de documentación del proyecto y cómo resolverlos.
 

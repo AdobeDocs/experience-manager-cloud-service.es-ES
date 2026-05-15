@@ -7,10 +7,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 98%
+source-wordcount: '2192'
+ht-degree: 97%
 
 ---
 
@@ -162,7 +162,7 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 **Cuándo se usa:** cuando deba añadir, modificar o configurar los campos de formulario.
 
-**Cómo se usa:** especifique los tipos de campo, los requisitos de validación y las expectativas de la experiencia del usuario. 
+**Cómo se usa:** especifique los tipos de campo, los requisitos de validación y las expectativas de la experiencia del usuario.
 
 **Indicación de ejemplo - Adición de campo básico:**
 
@@ -228,11 +228,11 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 **Clasificaciones de compañía:**
 
-    Añada un campo para la clasificación del sector con códigos NAICS
-    Cree un menú desplegable de tipos de entidades comerciales (LLC, Corporation, Partnership, etc.)
-    Añada un campo para categorías de tamaño de empresa (startup, PYMES, empresa)
-    Incluya la selección de departamentos para organizaciones grandes
-    Añada un campo para tipos de servicios profesionales
+    Agregue un campo para la clasificación del sector con códigos NAICS
+    Cree un menú desplegable de tipos de entidades empresariales (LLC, Corporation, Partnership, etc.)
+    Agregue un campo para las categorías de tamaño de la empresa (inicio, PYME, empresa)
+    Incluir la selección de departamentos para organizaciones grandes
+    Agregue un campo para los tipos de servicios profesionales
 
 **Clasificaciones profesionales:**
 
@@ -404,7 +404,7 @@ Estos ejemplos muestran cómo crear formularios paso a paso, empezando por lo si
 
 ### Comandos esenciales
 
-| Comando | Mejor caso de uso | Ejemplos |
+| Comando | Mejor caso de uso | Ejemplo |
 |---------|---------------|---------|
 | `/create-form` | Inicio de nuevos formularios | `/create-form employee onboarding with personal info and benefits selection` |
 | `/add-form` | Añadir formularios a páginas | `/add-form newsletter signup with email and preferences` |

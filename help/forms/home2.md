@@ -10,9 +10,9 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2397'
 ht-degree: 1%
 
 ---
@@ -67,12 +67,12 @@ AEM Forms es compatible con el recorrido completo de formularios digitales, desd
 
 **Recorrido de flujo de trabajo de AEM Forms:**
 
-    CREAR → GOBERNAR → PUBLICAR → CAPTURAR → PROCESO → INTEGRAR → RASTREAR → ARCHIVO → MEJORAR
-    ↓        ↓        ↓         ↓         ↓         ↓          ↓       ↓        ↓
-    Diseño   Revisar   Implementar   Recopilar   Handle   Connect   Almacén de monitor   Optimizar
-    ↑                                                                              ↓
-    ←←←←←←←←←←←←←←← bucle de mejora continua ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
+    CREAR → GOBERNAR → PUBLICAR → CAPTURAR → PROCESO → INTEGRAR → SEGUIMIENTO → ARCHIVO → MEJORAR
+    ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓2}←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← Revisión de diseño Implementar Collect Handle Connect Monitor Store Optimize
+    ↑ ↓
+    ←←←←←←←←←←←←←←← Loop de mejora continua
 
+    
 ### Crear: diseño y desarrollo de formularios {#create}
 
 Cree formularios adaptables utilizando varios métodos de creación adaptados a diferentes necesidades y requisitos técnicos.
@@ -115,7 +115,7 @@ Defina permisos granulares para la creación, edición y publicación de formula
 
 Implemente formularios en varios canales y puntos de contacto para llegar a los usuarios independientemente de dónde se encuentren.
 
-**Publicación omnicanal**
+Publicación **omnicanal**
 Publicar formularios en [AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md), páginas web independientes, aplicaciones móviles o [incrustar en sistemas de terceros](/help/forms/embed-adaptive-form-core-components-external-web-page.md). La publicación de una sola fuente garantiza la coherencia al adaptarse a diferentes requisitos de canal.
 
 **Localización y Personalization**
@@ -166,8 +166,8 @@ Conecte los formularios a los sistemas empresariales existentes y a las fuentes 
 **Conectores pregenerados**
 Integración nativa con las soluciones [Salesforce](/help/forms/configure-salesforce.md), [Microsoft Dynamics](/help/forms/configure-msdynamics.md), [SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md) y Adobe Experience Cloud. Los conectores creados previamente reducen el tiempo de desarrollo y garantizan una sincronización de datos fiable.
 
-**Integración de API RESTful**
-Conéctese a cualquier servicio accesible en la web a través de las API RESTful mediante [acciones de envío](/help/forms/configure-submit-action-restpoint.md) o [integración de datos](/help/forms/data-integration.md). El modelo de datos de formulario abstrae la complejidad de la integración y proporciona una interfaz coherente independientemente de la arquitectura del sistema subyacente.
+Integración de API de **RESTful**
+Conéctese a cualquier servicio de acceso web a través de las API RESTful mediante [acciones de envío](/help/forms/configure-submit-action-restpoint.md) o [integración de datos](/help/forms/data-integration.md). El modelo de datos de formulario abstrae la complejidad de la integración y proporciona una interfaz coherente independientemente de la arquitectura del sistema subyacente.
 
 **Intercambio de datos en tiempo real**
 Habilitar el flujo de datos bidireccional entre formularios y sistemas empresariales. Rellene previamente formularios de registros existentes, valide con datos activos y actualice varios sistemas simultáneamente al enviar mediante la [integración de datos](/help/forms/data-integration.md) completa.
@@ -179,7 +179,7 @@ Comprenda el rendimiento del formulario y el comportamiento del usuario a travé
 **Análisis de formularios**
 Rastree las tasas de finalización, los patrones de abandono y las interacciones a nivel de campo mediante la [integración de Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md). Identifique los puntos de fricción, mida los canales de conversión y comprenda el comportamiento del usuario en diferentes segmentos.
 
-**Supervisión del rendimiento**
+**Monitorización del rendimiento**
 Monitorice los tiempos de carga de los formularios, las tasas de éxito de los envíos y el rendimiento del sistema. Los paneles en tiempo real proporcionan perspectivas sobre el estado técnico y las métricas de experiencia del usuario.
 
 **Business Intelligence**
@@ -208,7 +208,7 @@ Optimice continuamente el rendimiento del formulario y la experiencia del usuari
 **Integración de pruebas A/B**
 Utilice Adobe Target para probar diferentes diseños de formulario, disposiciones de campos y flujos de usuarios. El análisis estadístico ayuda a identificar los enfoques más efectivos para diferentes segmentos de usuarios y casos de uso.
 
-**Optimización Impulsada Por Analytics**
+**Optimización impulsada por análisis**
 Analice los datos de comportamiento del usuario para identificar oportunidades de mejora. [Vea y comprenda los informes de análisis](/help/forms/view-understand-aem-forms-analytics-reports.md) para la asignación de calor, el análisis de interacción de campos y el reconocimiento de patrones de abandono a fin de informar las mejoras de diseño iterativo.
 
 **Mejora iterativa**

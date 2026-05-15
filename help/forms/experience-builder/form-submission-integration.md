@@ -8,10 +8,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 2%
 
 ---
 
@@ -163,9 +163,9 @@ Conectar formularios a flujos de trabajo de procesos empresariales:
 
 **Implementación:**
 Enviar formulario de comentarios de clientes a:
-1. Enviar correo electrónico a <support@company.com> con detalles del formulario
+1. Enviar correo electrónico a <support@company.com> con detalles de formulario
 2. PUBLICAR en la API de CRM para crear un registro de cliente
-3. Flujo de trabajo de creación de tickets de asistencia de Déclencheur
+3. flujo de trabajo de creación de tickets de asistencia de déclencheur
 4. Enviar correo electrónico de agradecimiento al cliente
 
 ### Formulario de incorporación de empleado
@@ -179,9 +179,9 @@ Enviar formulario de comentarios de clientes a:
 
 **Implementación:**
 Procesar la incorporación de los empleados:
-1. Enviar correo electrónico a <hr@company.com> con los detalles del empleado
-2. Cargar documentos en la carpeta de empleados de SharePoint
-3. Inicie el flujo de trabajo de incorporación en Power Automate
+1. Enviar correo electrónico a <hr@company.com> con detalles del empleado
+2. Cargar documentos a la carpeta de empleados de SharePoint
+3. Iniciar el flujo de trabajo de incorporación en Power Automate
 4. Crear cuentas en el sistema de recursos humanos, correo electrónico y otras herramientas
 
 ### Formulario de generación de posibles clientes
@@ -198,7 +198,7 @@ Generación de posibles clientes del proceso:
 1. Publicar datos de posibles clientes en la API de Marketo
 2. Crear registro de posibles clientes en Salesforce
 3. Enviar correo electrónico al equipo de ventas con detalles del posible cliente
-4. Inicie la secuencia de nutrición de correo electrónico automatizado
+4. Iniciar secuencia de nutrición de correo electrónico automatizado
 
 ## Situaciones de integración avanzadas
 

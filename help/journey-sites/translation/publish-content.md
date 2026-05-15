@@ -2,15 +2,14 @@
 title: Publicar contenido traducido
 description: Aprenda a publicar el contenido traducido y a actualizar las traducciones como actualizaciones de contenido.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1340'
 ht-degree: 100%
 
 ---
@@ -100,7 +99,7 @@ Sin embargo, como ya se mencionó, el proceso difiere un poco si elige crear el 
 
 1. Vaya a **Navegación** > **Recursos** > **Archivos**. Recuerde que el contenido de AEM se almacena en `/content`.
 1. Seleccione la raíz de idioma del proyecto. En este caso, se ha seleccionado `/content/wknd/en`.
-1. Seleccione el selector de carril y muestre el panel **Referencias**.
+1. Seleccione el selector de carril y muestre el panel de **Referencias**.
 1. Seleccione **copias de idioma**.
 1. Marque la casilla de verificación **Copias de idioma**.
 1. Expanda la sección **Actualizar copias de idioma** en la parte inferior del panel de referencias.
@@ -156,7 +155,7 @@ A partir de este punto, [inicie y administre su trabajo de traducción tal como 
 
 ## ¿Fin del recorrido? {#end-of-journey}
 
-Felicitaciones! Ha completado el recorrido de traducción de AEM Sites. Ahora debería ser capaz de:
+¡Felicitaciones! Ha completado el recorrido de traducción de AEM Sites. Ahora debería ser capaz de:
 
 * Tenga una comprensión básica de las funciones de administración de contenido de AEM.
 * Comprenda las funciones de traducción de AEM y cómo se relacionan con el contenido de sus sitios.

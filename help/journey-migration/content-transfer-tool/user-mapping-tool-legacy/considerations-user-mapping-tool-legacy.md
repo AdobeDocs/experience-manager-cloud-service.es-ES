@@ -6,7 +6,7 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 1%
@@ -25,25 +25,25 @@ Se registran los siguientes casos específicos:
 
 1. Si un usuario no tiene una dirección de correo electrónico en el campo `profile/email` de su nodo *jcr*, el usuario o grupo en cuestión se migra pero no se asigna. Este es el caso incluso si la dirección de correo electrónico se utiliza como nombre de usuario para iniciar sesión.
 
-1. Si no se encuentra un correo electrónico en el sistema Identity Management System (IMS) de Adobe para el ID de organización utilizado (o, si no se puede recuperar el ID de IMS), se migra el usuario o grupo, pero no se asigna.
+1. Si no se encuentra un correo electrónico en el sistema Adobe Identity Management System (IMS) para el ID de organización utilizado (o, si no se puede recuperar el ID de IMS), se migra el usuario o grupo, pero no se asigna.
 
 1. Si el usuario está deshabilitado, se trata igual que si no lo estuviera. Se asigna y migra con normalidad, y permanece deshabilitado en la instancia de nube.
 
-1. Si existe un usuario en la instancia de AEM Cloud Service AEM de destino con el mismo nombre de usuario (rep:principalName) que uno de los usuarios de la instancia de origen, no se migra el usuario o grupo.
+1. Si existe un usuario en la instancia de Cloud Service de AEM de destino con el mismo nombre de usuario (rep:principalName) que uno de los usuarios en la instancia de AEM de origen, no se migra el usuario o grupo.
 
-1. Si se migra un usuario sin que se asigne primero mediante Asignación de usuarios, en el sistema de la nube de destino no podrá iniciar sesión con su ID de IMS. AEM Es posible que puedan iniciar sesión utilizando el método de trabajo tradicional, pero este flujo de trabajo no suele ser el deseado o esperado.
+1. Si se migra un usuario sin que se asigne primero mediante Asignación de usuarios, en el sistema de la nube de destino no podrá iniciar sesión con su ID de IMS. Es posible que puedan iniciar sesión utilizando el método tradicional de AEM, pero este flujo de trabajo no suele ser el deseado o esperado.
 
 ## Consideraciones adicionales {#additional-considerations}
 
-* Si se establece la configuración **Borrar el contenido existente en la instancia de Cloud antes de la ingesta**, se eliminarán los usuarios ya transferidos en la instancia de Cloud Service. También se elimina todo el repositorio existente y se crea un nuevo repositorio en el que se ingiere contenido. Esta acción también restablece toda la configuración, incluidos los permisos, en la instancia del Cloud Service de destino y es verdadera para un usuario administrador agregado al grupo **administrators**. El usuario administrador debe leerse en el grupo **administradores** para recuperar el token de acceso para CTT.
+* Si se establece la configuración **Borrar contenido existente en la instancia de Cloud antes de la ingesta**, se eliminan los usuarios ya transferidos en la instancia de Cloud Service. También se elimina todo el repositorio existente y se crea un nuevo repositorio en el que se ingiere contenido. Esta acción también restablece toda la configuración, incluidos los permisos, en la instancia de Cloud Service de destino y es verdadera para un usuario administrador agregado al grupo de **administradores**. El usuario administrador debe leerse en el grupo **administradores** para recuperar el token de acceso para CTT.
 
-* El Adobe recomienda quitar cualquier usuario existente de la instancia de destino de Cloud Service AEM antes de ejecutar CTT con Asignación de usuarios. AEM AEM Esta acción es necesaria para evitar cualquier conflicto entre la migración de usuarios de la instancia de origen de los usuarios a la instancia de origen de los usuarios de la instancia de destino de los que se va a realizar la migración de la instancia de destino de los usuarios AEM AEM Pueden producirse conflictos durante la ingesta si el mismo usuario existe en la instancia de origen de los recursos y en la instancia de destino de los recursos de la.
+* Adobe recomienda quitar cualquier usuario existente de la instancia de AEM de Cloud Service de destino antes de ejecutar CTT con asignación de usuarios. Esta acción es necesaria para evitar cualquier conflicto entre la migración de usuarios de la instancia de AEM de origen a la instancia de AEM de destino. Pueden producirse conflictos durante la ingesta si el mismo usuario existe en la instancia de AEM de origen y en la instancia de AEM de destino.
 
 * Cuando se realizan recargas de contenido, si el contenido no se transfiere porque no ha cambiado desde la transferencia anterior, los usuarios y grupos asociados con ese contenido tampoco se transfieren. Esta regla se aplica incluso si los usuarios y grupos han cambiado mientras tanto. El motivo es que los usuarios y grupos se migran junto con el contenido con el que están asociados.
 
-* Si AEM Cloud Service AEM tiene un usuario con un nombre de usuario diferente pero la misma dirección de correo electrónico que un usuario en la instancia de origen, y la asignación de usuarios está habilitada, se registra un mensaje de error. AEM Además, el usuario de origen no se transfiere, ya que solo se permite un usuario con una dirección de correo electrónico determinada en el sistema de destino.
+* Si AEM Cloud Service tiene un usuario con un nombre de usuario diferente pero la misma dirección de correo electrónico que un usuario en la instancia de AEM de origen, y la asignación de usuarios está habilitada, se registra un mensaje de error. Además, no se transfiere el usuario de AEM de origen, ya que solo se permite un usuario con una dirección de correo electrónico determinada en el sistema de destino.
 
-* AEM Si dos usuarios de la instancia de origen de la tienen la misma dirección de correo electrónico y la Asignación de usuarios está habilitada, se registra un mensaje de error. AEM Además, se transfiere uno de los usuarios de origen porque solo se permite un usuario con una dirección de correo electrónico determinada en el sistema de destino.
+* Si dos usuarios de la instancia de AEM de origen tienen la misma dirección de correo electrónico y la Asignación de usuarios está habilitada, se registra un mensaje de error. Además, se transfiere uno de los usuarios de AEM de origen porque solo se permite un usuario con una dirección de correo electrónico determinada en el sistema de destino.
 
 ### Siguientes pasos {#whats-next}
 

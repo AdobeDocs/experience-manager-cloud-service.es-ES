@@ -8,14 +8,13 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '3620'
-ht-degree: 3%
+source-wordcount: '3692'
+ht-degree: 4%
 
 ---
 
@@ -82,8 +81,8 @@ Este método de entrega único garantiza que las experiencias de calidad coheren
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media entrega la misma imagen principal a diferentes medios en diferentes tamaños y formatos](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
-_Adobe Dynamic Media garantiza que las experiencias coherentes y de calidad se entreguen a cualquier pantalla, independientemente del tamaño o el ancho de banda._
+![Adobe Dynamic Media ofrece la misma imagen principal a diferentes medios en diferentes tamaños y formatos](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+_Adobe Dynamic Media garantiza que las experiencias de calidad coherentes se entreguen a cualquier pantalla, independientemente del tamaño o el ancho de banda._
 
 A medida que siga leyendo, aprenderá más sobre por qué este concepto de &quot;un archivo de recursos principal, posibilidades ilimitadas&quot; es importante.
 
@@ -253,7 +252,7 @@ Además de publicar recursos manualmente, puede configurar Dynamic Media para qu
 
 Después de la carga, hay diferentes formas de previsualizar las representaciones de un recurso en Dynamic Media. La vista previa de representaciones puede ayudarle a hacerse una idea de lo que ve un cliente. Un método común de vista previa es seleccionar un recurso y luego ver sus representaciones seleccionando un _ajuste preestablecido de imagen_, tal como se ve a continuación.
 
-![Vista previa de una representación de un recurso basada en el ajuste preestablecido de imagen grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
+![Vista previa de una representación de un recurso basado en el ajuste preestablecido de imagen grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Vista previa de una representación de un recurso en función del ajuste preestablecido de imagen &quot;Grande&quot; seleccionado. Se hizo clic en el botón URL. La ruta de URL resultante contiene el nombre del ajuste preestablecido de imagen &quot;Grande&quot; y se puede utilizar en una página web._
 
 La URL anterior está activa. [Inténtelo](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
@@ -286,8 +285,8 @@ _Dynamic Media Help topics_
 
 _Tutoriales de Dynamic Media_
 
-* [Usar Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=es)
-* [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/es?lang=en#recommended/solutions/experience-manager) (buscar en _Dynamic Media_)
+* [Uso de Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (buscar en _Dynamic Media_)
 
 _Visores de Dynamic Media_
 

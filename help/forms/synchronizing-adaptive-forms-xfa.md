@@ -10,9 +10,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '1146'
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+workflow-type: tm+mt
+source-wordcount: '1151'
 ht-degree: 100%
 
 ---
@@ -59,7 +59,7 @@ El paquete contiene los siguientes recursos:
 
 1. Vaya a https://&lt;server>:&lt;port>/aem/forms.html. Especifique sus credenciales si se le solicita.
 1. Abra sample-af-xfa para editarlo en modo de creación.
-1. En el explorador de contenido de la barra lateral, seleccione la pestaña Objetos del modelo de datos. Arrastre NumericField1 y TextField1 al formulario adaptable.
+1. En el explorador de contenido de la barra lateral, seleccione la pestaña Objetos de modelo de datos. Arrastre NumericField1 y TextField1 al formulario adaptable.
 1. Cambie el título de NumericField1 de **Numeric Field** a **AF Numeric Field.**
 
 >[!NOTE]
@@ -88,7 +88,7 @@ Si se actualiza un archivo XDP, verá un icono en el editor cuando edite los for
 
 ## Sincronizar formularios adaptables con el archivo XDP más reciente {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
 
-Cuando se abre un formulario adaptable que no está sincronizado con el archivo XDP para la creación la siguiente vez, se muestra el mensaje: **Se ha actualizado la plantilla del esquema/formulario del formulario adaptable. `Click Here` para volver a basarlo con la nueva versión.**
+Cuando se abre un formulario adaptable que no está sincronizado con el archivo XDP para la creación la siguiente vez, se muestra el mensaje: **Se ha actualizado la plantilla de formulario/esquema del formulario adaptable. `Click Here` para volver a basarlo con la nueva versión.**
 
 Al hacer clic en el mensaje, se sincronizan los campos del formulario adaptable con los campos correspondientes del archivo XDP.
 
@@ -108,7 +108,7 @@ Para actualizar las propiedades en el formulario adaptable de ejemplo, haga clic
 >
 >La etiqueta AF Numeric Field no se ha modificado porque ha anulado esta propiedad del cuadro de diálogo de propiedades del componente, tal como se describe en [Añadir contenido al formulario adaptable](synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p).
 
-### Añadir nuevos campos del archivo XDP al formulario adaptable {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
+### Añadir nuevos campos del archivo XDP al formulario adaptable   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
 Todos los campos que se añadan posteriormente al archivo XDP original aparecen en la pestaña Jerarquía del formulario y puede arrastrar los nuevos campos al formulario adaptable.
 
@@ -122,7 +122,7 @@ Los siguientes pasos ilustran este flujo de uso para los recursos en el ejemplo 
 
 1. Actualice el archivo `sample-form.xdp` y elimine NumericField1.
 1. Cargue el archivo `sample-form.xdp` en la interfaz de usuario de [!DNL AEM Forms].
-1. Abra el formulario adaptable `sample-xfa-af` para la creación. Se muestra el siguiente mensaje de error: Se ha actualizado la plantilla del esquema/formulario del formulario adaptable. `Click Here` para volver a basarlo con la nueva versión.
+1. Abra el formulario adaptable `sample-xfa-af` para la creación. Se muestra el siguiente mensaje de error: Se ha actualizado la plantilla de formulario/esquema del formulario adaptable. `Click Here` para volver a basarlo con la nueva versión.
 
 1. Haga clic en el enlace (con la etiqueta “`Click Here`”) en el mensaje. Se muestra un mensaje de error indicando que el campo ya no existe en el archivo XDP.
 

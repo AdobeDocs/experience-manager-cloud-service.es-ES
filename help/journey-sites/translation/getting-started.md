@@ -2,15 +2,14 @@
 title: Introducción a la traducción de AEM Sites
 description: Obtenga información sobre cómo organizar el contenido de AEM Sites y cómo funcionan las herramientas de traducción de AEM.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1398'
 ht-degree: 100%
 
 ---

@@ -9,10 +9,10 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 20%
+source-wordcount: '257'
+ht-degree: 28%
 
 ---
 
@@ -34,7 +34,7 @@ Para los entornos **AEM 6.5 Forms** y **AEM 6.5 LTS Forms**, los componentes pri
 Siga las guías correspondientes:
 
 - Para AEM 6.5 Forms: [Habilitar los componentes principales de Forms adaptable en AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=es).
-- Para AEM 6.5 LTS Forms: [Habilitar componentes principales de Forms adaptable en AEM 6.5 LTS Forms](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
+- Para AEM 6.5 LTS Forms: [Habilitar componentes principales de Forms adaptable en AEM 6.5 LTS Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
 
 **Nota:** Si algún paso para habilitar los componentes principales de Forms adaptable en entornos de AEM 6.5 anteriores no está claro o si existen requisitos previos específicos del entorno, aclare estos requisitos antes de intentar la habilitación.
 

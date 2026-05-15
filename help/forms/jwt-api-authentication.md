@@ -8,10 +8,10 @@ exl-id: e7747b21-f680-4b3a-bf05-d0fcf0af0999
 hide: true
 hidefromToC: true
 index: false
-source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -24,7 +24,7 @@ La autenticación de servidor a servidor JWT en AEM Forms, especialmente para in
 Antes de empezar, asegúrese de que se cumplen los siguientes requisitos previos:
 
 * Asegúrese de que tiene acceso a [Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) específico del entorno que utiliza.
-* Asigne la función [Administrador del sistema o Desarrollador para acceder a Adobe Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Asigne la función [Administrador del sistema o Desarrollador para acceder a Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Cómo generar un token de acceso usando credenciales de JWT
 
@@ -110,7 +110,7 @@ Siga los pasos a continuación, que muestran cómo generar un token de acceso a 
 
 >[!NOTE]
 >
-> Para obtener más información sobre las credenciales del servicio y cómo generar un token de acceso mediante la API de IMS de Adobe, [haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
+> Para obtener más información sobre las credenciales del servicio y cómo generar un token de acceso mediante la API de IMS de Adobe, [haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 Ahora puede utilizar el token de acceso generado para hacer una llamada de API a entornos de desarrollo, fase o producción.
 
@@ -139,7 +139,7 @@ Obtenga información sobre cómo establecer el entorno para las API de comunicac
                     <p class="is-size-6">Aprenda a configurar un entorno para las API de comunicaciones de Forms sincrónicas (bajo demanda) que generan o procesan documentos al instante. </p>
                 </div>
                 <a href="/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
         </div>
@@ -163,7 +163,7 @@ Obtenga información sobre cómo establecer el entorno para las API de comunicac
                     <p class="is-size-6">Aprenda a configurar el entorno para las API de comunicaciones de Forms asincrónicas (por lotes) que generan o procesan varios documentos de forma programada.</p>
                 </div>
                 <a href="/help/forms/aem-forms-cloud-service-communications-batch-processing.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
                 </a>
             </div>
         </div>

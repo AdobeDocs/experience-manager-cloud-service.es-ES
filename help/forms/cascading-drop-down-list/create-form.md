@@ -1,20 +1,20 @@
 ---
-title: Crear un formulario con el editor universal
+title: Crear formulario mediante el editor universal
 description: Utilice expresiones de formularios adaptables para agregar validación automática, cálculo y activar o desactivar la visibilidad de una sección.
 feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 53e476981874597bfb7f9293e67b2d135c72b318
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 8%
+source-wordcount: '214'
+ht-degree: 75%
 
 ---
 
-# Crear un formulario con el editor universal
+# Crear formulario mediante el editor universal
 
-Cree el siguiente formulario con el editor universal. El formulario tiene 3 listas desplegables, cuyos valores se rellenan mediante la integración de la API
+Cree el siguiente formulario mediante el editor universal. El formulario tiene 3 listas desplegables, cuyos valores se rellenan mediante la integración de la API
 ![formulario adaptable](assets/address-form.png)
 
 ## País de residencia
@@ -30,7 +30,7 @@ El controlador de éxito se definió para establecer los enum y enumNames de la 
 
 ## Recuperar valores secundarios
 
-La lista desplegable de estado o provincia se rellena cuando el usuario realiza una selección en la lista desplegable País de residencia. El elemento geonameId asociado con el país seleccionado se pasa como parámetro de entrada a la integración de la API GetChildren
+La lista desplegable de estado o provincia se rellena cuando el usuario realiza una selección en la lista desplegable País de residencia. El geonameId asociado con el país seleccionado se pasa como parámetro de entrada a la integración de la API GetChildren
 
 ![get-children](assets/invoke-service-get-children.png)
 

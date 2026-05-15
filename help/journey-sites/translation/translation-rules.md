@@ -2,13 +2,12 @@
 title: Configuración de las reglas de traducción
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 100%

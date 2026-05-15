@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 89%
 
 ---
 
@@ -43,7 +43,7 @@ Puede consultar la [hoja de cálculo](/help/forms/assets/enquirytranslate.xlsx) 
 
 ![Formulario Enquiry Translated](/help/forms/assets/translate-form-french.png)
 
-Consulte la siguiente URL, donde puede ver el formulario con su traducción al francés: 
+Consulte la siguiente URL, donde puede ver el formulario con su traducción al francés:
 https://main--portal--wkndforms.hlx.live/enquirytranslate
 
 ## A traducir formularios en el sitio de SharePoint{#translate-form-sharepoint}
@@ -57,13 +57,13 @@ Para traducir los formularios en el sitio de Microsoft® SharePoint, debe cambia
 
    ![Hoja de cálculo Enquiry Translate](/help/forms/assets/translate-enquiry-sp-spreadsheet.png)
 
-5. Previsualice y publique la hoja mediante [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+5. Previsualice y publique mediante [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
 Consulte la [hoja de cálculo](/help/forms/assets/enquirytranslate-sp.xlsx) que contiene la definición de formulario para un formulario `enquiry` traducido del idioma inglés a francés.
 
 ![Formulario Enquiry Translated](/help/forms/assets/translate-form-french.png)
 
-Consulte la siguiente URL, donde puede ver el formulario con su traducción al francés: 
+Consulte la siguiente URL, donde puede ver el formulario con su traducción al francés:
 https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 ## Problemas conocidos {#known-issues}
@@ -85,7 +85,7 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 - [Configure su Mac para recibir entradas en otro idioma](https://support.apple.com/es-ES/guide/mac-help/mchlp1406/mac)
 - [Configure su Windows para recibir entradas en otro idioma](https://support.microsoft.com/es-ES/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-- [Configure su Android o iPhone/iPads para recibir entradas en otro idioma](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
+- [Configure su Android o iPhones/iPads para recibir entradas en otro idioma](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
 
 
 **P**: ¿Cómo puedo recuperar una lista de configuraciones regionales utilizadas en la función `GOOGLETRANSLATE`?

@@ -2,15 +2,14 @@
 title: Obtenga información sobre el contenido de AEM Sites y cómo traducirlo en AEM
 description: Aprenda los conceptos de AEM Sites y la teoría de la traducción de AEM.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '496'
 ht-degree: 100%
 
 ---

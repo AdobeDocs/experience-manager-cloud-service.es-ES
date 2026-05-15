@@ -7,10 +7,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 24%
+source-wordcount: '1469'
+ht-degree: 19%
 
 ---
 
@@ -84,11 +84,11 @@ Aproveche las clasificaciones comerciales completas y los datos profesionales pa
 
 **Tipos de entidades empresariales y del sector:**
 
-    Añada un campo para la clasificación del sector con códigos NAICS
-    Cree un menú desplegable de tipos de entidades comerciales (LLC, Corporation, Partnership, etc.)
-    Añada un campo para categorías de tamaño de empresa (startup, PYMES, empresa)
-    Incluya la selección de departamentos para organizaciones grandes
-    Añada un campo para tipos de servicios profesionales
+    Agregue un campo para la clasificación del sector con códigos NAICS
+    Cree un menú desplegable de tipos de entidades empresariales (LLC, Corporation, Partnership, etc.)
+    Agregue un campo para las categorías de tamaño de la empresa (inicio, PYME, empresa)
+    Incluir la selección de departamentos para organizaciones grandes
+    Agregue un campo para los tipos de servicios profesionales
 
 **Mensajes de ejemplo:**
 

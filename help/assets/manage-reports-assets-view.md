@@ -7,10 +7,10 @@ feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 87%
+source-wordcount: '1530'
+ht-degree: 86%
 
 ---
 
@@ -143,7 +143,7 @@ Obtenga información de envío para los recursos que se envían con Dynamic Medi
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Requisitos previos {#prereqs-dynamic-media-delivery-reports}
@@ -153,7 +153,7 @@ Debe tener una licencia de Dynamic Media para crear y utilizar este informe.
 >[!IMPORTANT]
 > 
 >* Se proporcionan informes para los recursos enviados a través de Dynamic Media.
->* Los informes se generan para el primer millón de filas. Para capturar todos los archivos que se encuentran dentro de este límite, considere la posibilidad de incluir la columna de referente para las carpetas más pequeñas.
+>* Se generan informes para el primer millón de filas. Para capturar todos los archivos dentro de este límite, considere la posibilidad de incluir la columna de referente para carpetas más pequeñas.
 >* Solo se pueden generar informes de los últimos 3 meses.
 
 ### Creación de un informe de envío de Dynamic Media{#create-dynamic-media-delivery-report}

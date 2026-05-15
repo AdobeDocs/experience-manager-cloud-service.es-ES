@@ -2,11 +2,12 @@
 title: Preparación para HIPAA para Adobe Experience Manager as a Cloud Service
 description: Obtenga información acerca de la compatibilidad de Experience Manager as a Cloud Service con las regulaciones HIPAA y cómo cumplirlas al implementar un nuevo proyecto de AEM as a Cloud Service.
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 49721ac71bc2bde10eb5f25db58ee1b07c8a82e5
+role: Admin, Developer, Leader
+exl-id: 9928811e-3487-430a-9e2f-04959460c95f
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 6%
+source-wordcount: '1029'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 6%
 >* [Productos y servicios de HIPAA y Adobe](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) en el Centro de confianza de Adobe
 >* [Centro de privacidad de Adobe](https://www.adobe.com/es/privacy.html)
 
-Para Adobe Experience Manager (AEM) as a Cloud Service, Adobe proporciona documentación que le ayudará a comprender la preparación para la HIPAA. Puede ayudarle a cumplir con estas regulaciones.
+Para Adobe Experience Manager (AEM) as a Cloud Service, Adobe proporciona documentación que le ayudará a comprender la preparación para la HIPAA. Esto puede ayudarle a cumplir estas regulaciones.
 
 ## Ley de Portabilidad y Responsabilidad del Seguro de Salud (HIPAA) {#health-insurance-portability-and-accountability-act-hipaa}
 
@@ -33,7 +34,7 @@ Para Adobe Experience Manager (AEM) as a Cloud Service, Adobe proporciona docume
 
 Las Reglas de Privacidad, Seguridad y Notificación de Infracciones de la HIPAA establecen protecciones importantes para la información de salud identificable individualmente conocida como Información de Salud Protegida (PHI).
 
-En virtud de la HIPAA, una entidad cubierta es un proveedor de atención médica, un plan de salud o un centro de compensación de atención médica. Una asociada comercial es una entidad que brinda servicios a una entidad cubierta que implica el acceso a la PHI. Las Reglas de Privacidad y Seguridad de la HIPAA requieren que una entidad cubierta obtenga garantías por escrito de un socio comercial en forma de un Contrato de Socio Comercial (BAA, por sus siglas en inglés) que requiera que el asociado comercial salvaguarde la privacidad y seguridad de la PHI de la entidad cubierta.
+En virtud de la HIPAA, una entidad cubierta es un proveedor de atención médica, un plan de salud o un centro de compensación de atención médica. Una asociada comercial es una entidad que brinda servicios a una entidad cubierta que implica el acceso a la PHI. Las Reglas de Privacidad y Seguridad de la HIPAA requieren que una entidad cubierta obtenga garantías por escrito de un socio comercial en forma de un Contrato de Socio Comercial (BAA) que requiera que el asociado comercial salvaguarde la privacidad y seguridad de la PHI de la entidad cubierta.
 
 ### Proporcionar PHI a Adobe {#providing-phi-to-adobe}
 
@@ -93,7 +94,7 @@ La siguiente tabla describe qué servicios de AEM están preparados para HIPAA y
 | AEM Cloud Manager | AEM Cloud Manager, Release Orchestrator, Conmutadores de versiones, Validador de versiones | Preparado para HIPAA |
 | AEM Cloud Manager | Distribución de software | No preparado para HIPAA<br>[1] Se puede agregar a un programa de seguridad ampliado cuando no se introduce ninguna PHI. |
 |   |   |   |
-| AEM Guides  | AEM Guides  | No compatible con HIPAA |
+| Guías de AEM  | Guías de AEM  | No compatible con HIPAA |
 |   |   |   |
 | LLM Optimizer | LLM Optimizer | No preparado para HIPAA<br>[1] Se puede agregar a un programa de seguridad ampliado cuando no se introduce ninguna PHI. |
 
@@ -132,7 +133,7 @@ Esto significa que debe:
 
 La siguiente tabla muestra dónde se pueden admitir los tipos de entorno como preparados para HIPAA.
 
-| | RDE | Desarrollador | Fase  | Prod |
+| | RDE | Dev | Escenario  | Prod |
 | --- | --- | --- | --- | --- |
 | Tipo de entorno  | No  | No  | No  | Sí  |
 

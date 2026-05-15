@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo crear fragmentos de formulario en 
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1706'
 ht-degree: 100%
 
 ---
@@ -152,7 +152,7 @@ En este ejemplo se muestra la creación de un formulario `Employee Details` que 
 
 Para integrar un fragmento de formulario en el formulario:
 
-1. Abra el formulario en modo de edición. 
+1. Abra el formulario en modo de edición.
 1. Añada el componente Fragmento de formulario al formulario.
 1. Abra el explorador de contenido y vaya al componente **[!UICONTROL Formulario adaptable]** en el **Árbol de contenido**.
 1. Vaya a la sección, donde desea añadir un fragmento. Por ejemplo, vaya al panel **Detalles del empleado**.
@@ -174,7 +174,7 @@ Para integrar un fragmento de formulario en el formulario:
 
 1. Haga clic en **[!UICONTROL Seleccionar]**.
 
-   El fragmento de formulario se añade por referencia al formulario y permanece sincronizado con el fragmento de formulario independiente. 
+   El fragmento de formulario se añade por referencia al formulario y permanece sincronizado con el fragmento de formulario independiente.
 
    ![Captura de pantalla que muestra el fragmento de detalles de contacto integrado correctamente en un formulario del empleado dentro del editor universal, que muestra cómo los fragmentos mantienen su estructura cuando se reutilizan](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
@@ -208,7 +208,7 @@ Puede realizar varias operaciones en los fragmentos de formulario mediante la in
    <table>
     <tbody>
     <tr>
-   <td><p><strong>Operación</strong></p> </td>
+   <td><p><strong>hay funcionamiento</strong></p> </td>
    <td><p><strong>Descripción</strong></p> </td>
     </tr>
     <tr>
@@ -223,7 +223,7 @@ Puede realizar varias operaciones en los fragmentos de formulario mediante la in
    <td><p> Proporciona opciones para copiar el fragmento de formulario y pegarlo en la ubicación deseada. <br /> <br /> </p> </td>
     </tr>
    <tr>
-   <td><p>Vista previa</p> </td>
+   <td><p>Previsualización</p> </td>
    <td><p>Proporciona opciones para previsualizar el fragmento como HTML o realizar una vista previa personalizada combinando los datos de un archivo XML con el fragmento.<br /> </p> </td>
     </tr>
     <tr>
@@ -232,12 +232,12 @@ Puede realizar varias operaciones en los fragmentos de formulario mediante la in
     </tr>
     <tr>
    <td><p>Iniciar revisión y Administrar revisión</p> </td>
-   <td><p>Permite iniciar y administrar una revisión del fragmento seleccionado.<br /> <br />  </p> </td>
+   <td><p>Permite iniciar y administrar una revisión del fragmento seleccionado.<br /> <br /> </p> </td>
     </tr>
     <!--
     <tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+    <td><p>Add Dictionary</p> </td>
+    <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
     </tr>
     -->
     <tr>

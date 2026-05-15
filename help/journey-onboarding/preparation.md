@@ -4,9 +4,9 @@ description: Antes de iniciar el proceso de incorporación, hay que realizar una
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '700'
 ht-degree: 69%
 
 ---
@@ -34,7 +34,7 @@ No se preocupe si no está familiarizado con todos los términos utilizados en e
 
 This video summarizes the onboarding process laid out in this journey and is intended as an option overview. All topics in the video are presented in detail within the journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431502/?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
 -->
 
