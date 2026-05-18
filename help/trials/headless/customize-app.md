@@ -8,8 +8,8 @@ feature: Headless
 role: Admin, User, Developer
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 100%
+source-wordcount: '1031'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
->title="En este módulo, ha aprendido a personalizar una aplicación React de muestra.<br><br>Tiempo de salida al mercado: ¡acelerado!<br>Ciclos de desarrollo: ¡reducidos!<br><br>Ahora comprende lo fácil que es administrar contenido sin encabezado para sitios web y aplicaciones que cuentan con funcionalidades de AEM sin encabezado."
+>title="En este módulo, ha aprendido a personalizar una aplicación React de muestra.<br><br>Tiempo de comercialización: acelerado<br>Ciclos de desarrollo: reducidos<br><br>Ahora comprende lo fácil que es administrar contenido sin encabezado para sitios web y aplicaciones que utilizan las capacidades sin encabezado de AEM."
 >abstract=""
 
 ## Vista previa de la aplicación {#preview}
@@ -123,7 +123,7 @@ Ahora que ha actualizado la imagen del ciclista, vamos a ver cómo añadir conte
 
 1. Póngale un nombre al momento de ventas en el campo **Texto**, como `Yellow shorts`.
 
-1. Defina valores para **X** e **Y**. Aquí es donde esta llamada debe superponerse en el panel. El editor guarda automáticamente los cambios en el fragmento
+1. Establecer valores para **X** e **Y**. Aquí es donde esta llamada debe superponerse en el panel. El editor guarda automáticamente los cambios en el fragmento
 
    * **X**: `-5`
    * **Y**: `-10`

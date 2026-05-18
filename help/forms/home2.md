@@ -68,12 +68,11 @@ AEM Forms es compatible con el recorrido completo de formularios digitales, desd
 **Recorrido de flujo de trabajo de AEM Forms:**
 
     CREAR → GOBERNAR → PUBLICAR → CAPTURAR → PROCESO → INTEGRAR → SEGUIMIENTO → ARCHIVO → MEJORAR
-    ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓2&rbrace;←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← Revisión de diseño Implementar Collect Handle Connect Monitor Store Optimize
+    ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓2}←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← Revisión de diseño Implementar Collect Handle Connect Monitor Store Optimize
     ↑ ↓
     ←←←←←←←←←←←←←←← Loop de mejora continua
 
     
-
 ### Crear: diseño y desarrollo de formularios {#create}
 
 Cree formularios adaptables utilizando varios métodos de creación adaptados a diferentes necesidades y requisitos técnicos.

@@ -8,7 +8,7 @@ feature: Headless
 role: Admin, User, Developer
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '891'
 ht-degree: 100%
 
 ---
@@ -91,7 +91,7 @@ También puede especificar dimensiones exactas para el emulador y rotar el dispo
 
 ## Previsualización y publicación {#preview}
 
-Dado que es necesario seleccionar el contenido para modificarlo en el editor, este no permite seguir vínculos ni interactuar con el contenido tocando o haciendo clic.  Con el modo de previsualización, puede seguir los vínculos del contenido y experimentarlo como lo harían los usuarios antes de publicar.
+Dado que es necesario seleccionar el contenido para modificarlo en el editor, este no permite seguir vínculos ni interactuar con el contenido tocando o haciendo clic. Con el modo de previsualización, puede seguir los vínculos del contenido y experimentarlo como lo harían los usuarios antes de publicar.
 
 1. En la barra de herramientas del Editor universal, seleccione **Previsualizar**.
 
