@@ -3,10 +3,9 @@ title: ¿Cómo enviar un formulario adaptable para revisión? ¿Cómo administra
 description: Revisar es un mecanismo que permite al revisor realizar distintas tareas para formularios adaptables mediante el paso Asignar tarea.
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 role: User
 exl-id: e53535a8-cd6b-4f30-9523-773243098757
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 100%

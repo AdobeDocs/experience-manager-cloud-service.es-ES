@@ -3,10 +3,9 @@ title: Telemetría operativoa para Edge Delivery Services para AEM Forms as a Cl
 description: La telemetría operativa para Edge Delivery Services para AEM Forms as a Cloud Service implica el seguimiento y análisis continuos de las interacciones del usuario con los formularios.
 feature: Edge Delivery Services
 hide: true
-hidefromtoc: true
 role: Admin, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 100%

@@ -6,9 +6,8 @@ feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: e7747b21-f680-4b3a-bf05-d0fcf0af0999
 hide: true
-hidefromToC: true
 index: false
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 9%
@@ -24,7 +23,7 @@ La autenticación de servidor a servidor JWT en AEM Forms, especialmente para in
 Antes de empezar, asegúrese de que se cumplen los siguientes requisitos previos:
 
 * Asegúrese de que tiene acceso a [Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) específico del entorno que utiliza.
-* Asigne la función [Administrador del sistema o Desarrollador para acceder a Adobe Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Asigne la función [Administrador del sistema o Desarrollador para acceder a Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Cómo generar un token de acceso usando credenciales de JWT
 
@@ -110,7 +109,7 @@ Siga los pasos a continuación, que muestran cómo generar un token de acceso a 
 
 >[!NOTE]
 >
-> Para obtener más información sobre las credenciales del servicio y cómo generar un token de acceso mediante la API de IMS de Adobe, [haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
+> Para obtener más información sobre las credenciales del servicio y cómo generar un token de acceso mediante la API de IMS de Adobe, [haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 Ahora puede utilizar el token de acceso generado para hacer una llamada de API a entornos de desarrollo, fase o producción.
 

@@ -1,12 +1,11 @@
 ---
 title: Personalizar el contenido en una aplicación React de muestra
 description: Utilice una aplicación React de muestra para aprender a personalizar el contenido mediante la funcionalidad sin encabezado establecida en AEM as a Cloud Service.
-hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 98%

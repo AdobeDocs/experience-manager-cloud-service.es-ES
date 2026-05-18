@@ -1,12 +1,11 @@
 ---
 title: Cree la estructura de contenido para la aplicación
 description: Aprenda a utilizar modelos de fragmentos de contenido de AEM para crear su estructura de contenido, que sirve como base para su contenido sin encabezado.
-hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 100%
@@ -25,7 +24,7 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Iniciar la consola del modelo"
 >abstract="Vamos a explorar cómo crear un esquema reutilizable, llamado modelo de fragmento de contenido, para su contenido en Adobe Experience Manager as a Cloud Service. Vea el vídeo para entender por qué es importante este paso. <br><br>En este módulo de aprendizaje, utilizaremos un sitio de viajes como ejemplo y veremos cómo crear un modelo que represente un viaje.<br><br>Inicie este módulo en una nueva pestaña haciendo clic en el botón de abajo y siga esta guía."
->additional-url="https://video.tv.adobe.com/v/3436543?captions=spa" text="Vídeo de introducción a la estructura de contenido"
+>additional-url="https://video.tv.adobe.com/v/3413261" text="Vídeo de introducción a la estructura de contenido"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
