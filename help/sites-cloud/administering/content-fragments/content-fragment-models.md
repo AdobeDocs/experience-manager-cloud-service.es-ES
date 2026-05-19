@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 24a995f6e487b7870ebc84e06107a26442d541c3
 workflow-type: tm+mt
-source-wordcount: '2223'
-ht-degree: 31%
+source-wordcount: '2232'
+ht-degree: 32%
 
 ---
 
@@ -52,7 +52,6 @@ El modelo de fragmento de contenido define de forma efectiva la estructura de lo
    >También puede abrir un modelo directamente después de [crearlo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
 
 1. Abra el modelo necesario para **Edit**; utilice uno de los vínculos de acción rápida o seleccione el modelo y, a continuación, la acción en la barra de herramientas.
-
 
    ![Propiedades](assets/cf-cfmodels-empty-model.png)
 
@@ -162,10 +161,10 @@ Hay disponible una selección de tipos de datos para definir el modelo:
       * Crear nuevas instancias del campo
    * La referencia especifica la ruta al recurso al que se hace referencia; por ejemplo `/content/dam/path/to/resource`
 
-     <!--
+  <!--
     * Internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
-    -->
+  -->
 
   <!--
   >[!NOTE]
@@ -179,10 +178,10 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * El campo se puede configurar para permitir que los autores de fragmentos creen nuevas instancias del campo
    * La referencia especifica la ruta al recurso al que se hace referencia; por ejemplo `/content/dam/path/to/resource`
 
-     <!--
+  <!--
     * Internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
-    -->
+  -->
 
   <!--
   >[!NOTE]
@@ -317,11 +316,9 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 >
 >AEM tiene protección contra recurrencias para:
 >
->* Referencias de contenidos
->  Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencia a fragmento.
+>* Referencias de contenidos>  Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencia a fragmento.
 >
->* Referencias a fragmento en GraphQL
->  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
+>* Referencias a fragmento en GraphQL>  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
 
 >[!CAUTION]
 >
@@ -394,8 +391,8 @@ Además de las propiedades estándar, puede definir las siguientes:
 
    * **fragmentreference**: permite al autor del fragmento seleccionar una sola referencia a un fragmento.
 
-* **Tipo de modelo:**
-sueden seleccionar varios modelos. Al añadir referencias a un fragmento de contenido, cualquier fragmento al que se haga referencia debe haberse creado con estos modelos.
+* **Tipo de modelo**
+Se pueden seleccionar varios modelos. Al añadir referencias a un fragmento de contenido, cualquier fragmento al que se haga referencia debe haberse creado con estos modelos.
 
 * **Ruta raíz**
 Esto especifica o representa una ruta raíz para los fragmentos a los que se hace referencia.
@@ -406,7 +403,7 @@ Esto especifica o representa una ruta raíz para los fragmentos a los que se hac
 
    * **fragmentreferencecomposite**: permite al autor del fragmento crear un compuesto seleccionando varios fragmentos.
 
-  ![Referencia a fragmento](assets/cf-cfmodels-fragment-reference.png)
+  ![Referencia al fragmento](assets/cf-cfmodels-fragment-reference.png)
 
 >[!NOTE]
 >
