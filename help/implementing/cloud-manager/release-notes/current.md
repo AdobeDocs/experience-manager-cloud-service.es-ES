@@ -4,9 +4,9 @@ description: Obtenga información acerca de la versión de Cloud Manager 2026.5.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 1c42dff8efb505d050583c8af2f150a7f862d8c9
+source-git-commit: 93e633b8c9ac2f0bc03df70d3419b70d7b2ea7ba
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '496'
 ht-degree: 10%
 
 ---
@@ -75,7 +75,7 @@ Para obtener más información, consulte lo siguiente:
 * [Usando Smart Build en una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
 * [Agregar una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
 
-Para unirte a Beta, envía un correo electrónico a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) con tu OrgID de Adobe y tu ID de programa.
+Para unirte a Beta, envía un correo electrónico a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) con tu ID de organización de Adobe y tu ID de programa.
 
 <!-- 
 OLD
@@ -99,7 +99,7 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 
 
-## Corrección de errores {#bug-fixes}
+## Correcciones de errores {#bug-fixes}
 
 No hay correcciones de errores significativas en la versión de mayo de 2026 de Cloud Manager.
 

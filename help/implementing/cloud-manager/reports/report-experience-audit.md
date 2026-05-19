@@ -5,9 +5,11 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: 1570
 ht-degree: 8%
 
 ---
@@ -64,7 +66,7 @@ La auditoría de experiencias está disponible de forma predeterminada para las 
 1. Tanto para las canalizaciones de producción como para las que no son de producción, usted define las rutas que deben incluirse en la auditoría de experiencias en la pestaña **Auditoría de experiencias**.
 
    * Las rutas de acceso a la página deben comenzar por `/` y son relativas al sitio.
-   * Por ejemplo, si el sitio es `wknd.site` y desea incluir a `https://wknd.site/us/en/about-us.html` en la auditoría de experiencias, escriba la ruta de acceso `/us/en/about-us.html`.
+   * Por ejemplo, si el sitio es `wknd.site` y desea incluir `https://wknd.site/us/en/about-us.html` (solo URL de ejemplo) en la auditoría de experiencias, escriba la ruta de acceso `/us/en/about-us.html`.
 
    ![Definición de una ruta para la auditoría de experiencias](/help/implementing/cloud-manager/reports/assets/experience-audit-add-page.png)
 
@@ -155,15 +157,15 @@ Si hace clic en el gráfico en un momento dado, se abrirá una ventana emergente
 
 #### Resultados del análisis de auditoría de experiencias {#scan-results}
 
-La sección **Resultados del análisis de auditoría de experiencias** proporciona detalles de las puntuaciones de todas las páginas digitalizadas. Use los botones **Anterior** y **Siguiente** para hojear los resultados y elegir cuántos elementos se deben paginar en la pantalla.
+La sección **Resultados del análisis de auditoría de experiencias** proporciona detalles de las puntuaciones de todas las páginas digitalizadas. Use los botones **Anterior** y **Siguiente** para hojear los resultados y elegir cuántos se mostrarán en la pantalla.
 
 ![Páginas digitalizadas](/help/implementing/cloud-manager/reports/assets/experience-audit-scanned-pages.png)
 
-Haga clic en el vínculo de una página determinada para actualizar el filtro **Seleccionar** de [**Puntuaciones de página — tendencia** sección](#trend) y mostrar la ficha **Informes sin procesar** que le proporciona puntuaciones para cada auditoría de la página. Haga clic en la fecha del informe en la columna **Informe Lighthouse** para recuperar un archivo JSON de los datos sin procesar.
+Al hacer clic en el vínculo de una página determinada, se actualiza el filtro **Seleccionar** de [**Puntuaciones de página — tendencia** sección](#trend) y se muestra la ficha **Informes sin procesar** que le proporciona puntuaciones para cada auditoría de la página. Haga clic en la fecha del informe en la columna **Informe Lighthouse** para recuperar un archivo JSON de los datos sin procesar.
 
 ![Informe sin procesar](/help/implementing/cloud-manager/reports/assets/experience-audit-raw-reports.png)
 
-Se abrirá una nueva pestaña en el explorador, que lo dirigirá a `https://googlechrome.github.io/lighthouse/viewer/`. Carga automáticamente una dirección URL firmada que contiene el informe JSON sin procesar de Lighthouse de la página seleccionada, lo que permite una inspección detallada.
+Una nueva ficha que se abre en el explorador lo dirige a `https://googlechrome.github.io/lighthouse/viewer/`. Carga automáticamente una dirección URL firmada que contiene el informe JSON sin procesar de Lighthouse de la página seleccionada, lo que permite una inspección detallada.
 
 ![Visualizando informe sin procesar](/help/implementing/cloud-manager/reports/assets/experience-audit-view-raw-report.png)
 

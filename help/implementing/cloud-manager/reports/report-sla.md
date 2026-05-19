@@ -5,9 +5,9 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '478'
 ht-degree: 13%
 
 ---
@@ -46,7 +46,7 @@ El gráfico de líneas de un año seleccionado incluye puntos de datos para cada
 
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Desplace el cursor sobre un punto de datos del gráfico de líneas para mostrar los valores específicos de ese punto.
+   * Mueva el cursor sobre un punto de datos del gráfico de líneas para mostrar los valores específicos de ese punto.
    * Debajo del año del gráfico de líneas, haga clic en el icono **Descargar** para guardar un archivo de imagen PNG del gráfico de líneas.
    * Haga clic en el nombre de una métrica para ver únicamente los datos de esa métrica. O bien, presione `Shift` en el teclado mientras selecciona o anula la selección de uno o más nombres de métricas.
 
@@ -60,7 +60,7 @@ Cada incidente tiene un intervalo de tiempo, una causa y un conjunto de comentar
 
 ## Actualizar el intervalo de los informes de SLA {#refresh}
 
-Los informes de SLA insight le permiten conocer el rendimiento de su entorno de producción de AEM y están actualizados, pero no son instantáneos. La generación de informes de SLA se produce mensualmente y se genera para los nuevos programas que se han marcado como `Production previous month`. No es instantáneo. Debido a este retraso, tenga en cuenta lo siguiente al revisar el informe de SLA:
+Los informes de SLA le permiten conocer el rendimiento de su entorno de producción de AEM y están actualizados, pero no son instantáneos. La generación de informes de SLA se produce mensualmente y se genera para los nuevos programas que se han marcado como `Production previous month`. No es instantáneo. Debido a este retraso, tenga en cuenta lo siguiente al revisar el informe de SLA:
 
 * El SLA del que se informa es el que existía a principios de mes, incluso si SLA había cambiado durante ese mes.
 * Si no había ningún SLA a principios de mes porque el programa no existía, se aplica el SLA que existía en la fecha de creación del programa.
