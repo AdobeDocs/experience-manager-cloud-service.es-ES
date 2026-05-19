@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 hide: true
 index: false
 exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: b96b2f202c80c4dc1886cb60fcf206dd6ffaf5f1
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 4%
@@ -201,3 +201,4 @@ En la mayoría de los casos, MSM para fragmentos de contenido coincide con el co
 ## Limitaciones {#limitations}
 
 * Los déclencheur al modificar y la configuración de despliegue asociada no existen para los fragmentos de contenido.
+

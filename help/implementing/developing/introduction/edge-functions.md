@@ -3,19 +3,19 @@ title: Funciones de Edge de AEM
 description: Obtenga información sobre cómo ejecutar JavaScript en la capa de CDN con las funciones de Edge de AEM para habilitar la personalización, la seguridad y las experiencias dinámicas cerca del usuario final.
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: f8000bef01d6b72fb3ac2ae81be9fc19ed1a67d1
+exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
+source-git-commit: 1fdf9c61e611db978706a066194448ec3750024a
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 3%
+source-wordcount: '941'
+ht-degree: 4%
 
 ---
-
 
 # Funciones de Edge de AEM {#aem-edge-functions}
 
 >[!IMPORTANT]
 >
->Funciones de AEM Edge es una característica **beta**. Las funciones y la documentación pueden cambiar sin previo aviso. Para unirse al programa de acceso anticipado y proporcionar comentarios, envíe un correo electrónico a [aemcs-edge-functions-feedback@adobe.com](mailto:aemcs-edge-functions-feedback@adobe.com).
+>Funciones de AEM Edge es una característica **beta**. Las funciones y la documentación pueden cambiar sin previo aviso. Para unirse al programa de acceso anticipado y proporcionar comentarios, envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com).
 
 AEM Edge Functions le permite ejecutar JavaScript en la capa de CDN, lo que acerca el procesamiento de datos al usuario final. Esto reduce la latencia y permite experiencias dinámicas y adaptables sin necesidad de realizar un viaje de ida y vuelta al origen.
 
@@ -88,7 +88,7 @@ Antes de crear una función perimetral, asegúrese de que exista una canalizaci�
 >
 >Si está usando un entorno de desarrollo rápido (RDE), puede implementar la configuración directamente con `aio aem rde:install -t env-config ./config` en lugar de pasar por una canalización de configuración.
 
-### &#x200B;2. Declarar los servicios de funciones de Edge {#declare-services}
+### &#x200B;2. Declarar los servicios de función de Edge {#declare-services}
 
 Cree un archivo con el nombre `edgeFunctions.yaml` en el directorio de configuración:
 
