@@ -20,7 +20,7 @@ El trabajo de actualización de contenido de [Experience Production Agent](/help
 
 El trabajo de actualización de contenido actualiza el contenido existente, incluidos los fragmentos de contenido, las páginas, los formularios y los recursos. El trabajo puede realizar acciones como actualizar, quitar, reemplazar o agregar elementos de contenido para mantener las experiencias precisas y actuales. Las entradas pueden ser descripciones en lenguaje natural y, cuando se utilizan con PDF de Jira y capturas de pantalla, pueden proporcionar entradas a.
 
-El trabajo de actualización de contenido transforma los detalles que proporciona, ya sea a través del lenguaje natural o de imágenes, en actualizaciones de contenido en la página. Debe proporcionar la dirección URL de una página que necesita actualizarse, junto con los detalles de lo que necesita actualizarse, y el trabajo del agente finaliza su tarea. Cuando se usa con AEM as a Cloud Service, el trabajo crea un nuevo [launch](/help/sites-cloud/authoring/launches/overview.md) para que puedas revisar las actualizaciones antes de aplicar. Cuando se usa con la creación de documentos, el trabajo crea una nueva [versión](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
+El trabajo de actualización de contenido transforma los detalles que proporciona, ya sea a través del lenguaje natural o de imágenes, en actualizaciones de contenido en la página. Debe proporcionar la dirección URL de una página que necesita actualizarse, junto con los detalles de lo que necesita actualizarse, y el trabajo del agente finaliza su tarea. Cuando se usa con AEM as a Cloud Service, el trabajo crea un nuevo [launch](/help/sites-cloud/authoring/launches/overview.md) para que puedas revisar las actualizaciones antes de aplicar. Cuando se usa con la creación de documentos, el trabajo crea una nueva [versión](https://experienceleague.adobe.com/es/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3486418?learn=on)
 
@@ -181,4 +181,4 @@ Puede explorar los agentes de AEM a través de [Playground](https://www.aem.live
 
 Los siguientes recursos pueden resultar útiles a medida que continúa explorando Experience Production Agent:
 
-* También puede usar el [Libro de trabajo de Experience Production Agent](https://www.adobe.com/go/aem-epa-workbook) para obtener instrucciones prácticas y guiadas.
+* También puede usar el [Libro de trabajo de Experience Production Agent](https://www.adobe.com/go/aem-epa-workbook_es) para obtener instrucciones prácticas y guiadas.
