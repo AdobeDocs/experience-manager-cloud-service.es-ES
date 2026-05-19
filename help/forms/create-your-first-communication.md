@@ -4,10 +4,9 @@ description: Diseñe comunicaciones dinámicas impulsadas por datos con facilida
 feature: Release Information
 role: Admin
 hide: true
-hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 53%

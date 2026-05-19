@@ -1,12 +1,11 @@
 ---
 title: Consideraciones de seguridad de AEM as a Cloud Service Security
 description: Obtenga información acerca de las consideraciones de seguridad importantes al utilizar AEM as a Cloud Service.
-hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 feature: Security
 role: Admin
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 100%

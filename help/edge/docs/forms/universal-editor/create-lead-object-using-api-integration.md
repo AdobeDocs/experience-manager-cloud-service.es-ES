@@ -7,9 +7,8 @@ level: Beginner, Intermediate
 keywords: al integrar la API en el editor de reglas, invoque las mejoras del servicio
 exl-id: 55835ffe-1b77-449b-b76d-16c0a343cf5c
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 89%

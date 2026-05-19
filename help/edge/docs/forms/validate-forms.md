@@ -3,10 +3,9 @@ title: 'De hojas de cálculo a Formularios: dominio de las validaciones de campo
 description: Cree formularios potentes más rápido con hojas de cálculo y campos de Bloque de formularios adaptables. Esta guía le ayuda a crear validaciones personalizadas para los campos de bloque de formularios de EDS.
 feature: Edge Delivery Services
 hide: true
-hidefromtoc: true
 exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
 role: Admin, Developer
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 100%

@@ -1,14 +1,13 @@
 ---
 title: Cree la estructura de contenido para la aplicación
 description: Aprenda a utilizar modelos de fragmentos de contenido de AEM para crear su estructura de contenido, que sirve como base para su contenido sin encabezado.
-hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1022'
 ht-degree: 100%
 
 ---

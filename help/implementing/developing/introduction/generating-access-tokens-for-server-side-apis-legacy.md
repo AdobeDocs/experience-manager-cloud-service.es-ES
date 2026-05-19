@@ -1,13 +1,12 @@
 ---
 title: Generación de tokens de acceso para las API del lado del servidor (heredadas)
 description: Obtenga información sobre cómo facilitar la comunicación entre un servidor de terceros y AEM as a Cloud Service mediante la generación de un token JWT seguro
-hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: caec03f07606ae324e4966af3ba2f3296a955b76
+source-git-commit: b96b2f202c80c4dc1886cb60fcf206dd6ffaf5f1
 workflow-type: tm+mt
 source-wordcount: '7397'
-ht-degree: 90%
+ht-degree: 86%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 90%
    + [Evaluación de los KPI](/help/overview/assessing-kpis.md)
    + [Alineación de los KPI](/help/overview/aligning-kpis.md)
    + [Elección del equipo adecuado](/help/overview/choose-right-team.md)
-   + [Recorridos de documentación](/help/journey-documentation/documentation-journeys.md)
+   + {hide-from-toc}[Recorridos de documentación](/help/journey-documentation/documentation-journeys.md)
 + Notas de la versión {#release-notes}
    + [Información de la versión](/help/release-notes/home.md)
    + Notas de la versión de la función AEMaaCS {#release-notes}
@@ -324,12 +324,12 @@ ht-degree: 90%
    + [Configurar la conexión avanzada para AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
    + [Prueba de conectividad de red](/help/security/network-connectivity-test.md)
    + [Compatibilidad con IMS para AEM as a Cloud Service](/help/security/ims-support.md)
-   + [Cambios en la sincronización de grupo de usuarios y perfil de producto](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
+   + {hide-from-toc}[Cambios en la sincronización de grupos de usuarios y perfiles de productos](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
    + [Migración a la identidad externa y a la pertenencia a grupos dinámicos](/help/security/migrating-to-external-identity.md)
    + [Compatibilidad con cookies del mismo sitio para AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md)
    + [Reglas de filtro de tráfico, incluidas reglas WAF](/help/security/traffic-filter-rules-including-waf.md)
-   + [Consideraciones de AEM as a Cloud Service Security](/help/security/security-considerations.md)
+   + {hide-from-toc}[Consideraciones de seguridad de AEM as a Cloud Service](/help/security/security-considerations.md)
    + [Credenciales JWT de Adobe Developer Console en desuso](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Compatibilidad con Open ID Connect para AEM as a Cloud Service en el nivel de publicación](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [Configuración de las integraciones de IMS para AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
@@ -367,12 +367,12 @@ ht-degree: 90%
       + [Perfiles de notificación](/help/journey-onboarding/notification-profiles.md)
 + Pruebas de AEMaaCS {#trials}
    + Pruebas sin encabezado {#headless}
-      + [Personalización de contenido en una aplicación de ejemplo en React](/help/trials/headless/customize-app.md)
-      + [Cree la estructura de contenido para la aplicación](/help/trials/headless/content-structure.md)
-      + [Creación de contenido sin encabezado](/help/trials/headless/create-content.md)
-      + [Extracción de contenido mediante la API de GraphQL](/help/trials/headless/extract-content.md)
-      + [Recuperar contenido JSON con JavaScript](/help/trials/headless/code-playground.md)
-      + [Edición en línea con el editor universal](/help/trials/headless/universal-editor.md)
+      + {hide-from-toc}[Personalizar contenido en una aplicación React de ejemplo](/help/trials/headless/customize-app.md)
+      + {hide-from-toc}[Crear la estructura de contenido para su aplicación](/help/trials/headless/content-structure.md)
+      + {hide-from-toc}[Crear contenido sin encabezado](/help/trials/headless/create-content.md)
+      + {hide-from-toc}[Extraer contenido mediante la API de GraphQL](/help/trials/headless/extract-content.md)
+      + {hide-from-toc}[Recuperar contenido JSON con JavaScript](/help/trials/headless/code-playground.md)
+      + {hide-from-toc}[Editar en línea con el editor universal](/help/trials/headless/universal-editor.md)
 + Recorrido de migración de AEM as a Cloud Service {#migration-journey}
    + [Introducción al traslado de AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase de preparación](/help/journey-migration/readiness.md)
@@ -402,7 +402,7 @@ ht-degree: 90%
          + [Directrices y prácticas recomendadas para el uso de la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Introducción a la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Validación de transferencias de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
-         + [Migración de grupos de usuarios cerrados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
+         + {hide-from-toc}[Migrando grupos de usuarios cerrados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [Migración de grupos](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
          + [Extracción de contenido del origen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
@@ -415,9 +415,9 @@ ht-degree: 90%
          + [Carga masiva de principales a IMS después de la migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [Resolución de problemas de la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Herramienta de asignación de usuarios heredados (heredada){#legacy-user-mapping-tool}
-            + [Información general](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
-            + [Consideraciones importantes](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
-            + [Uso de la herramienta de asignación de usuarios](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
+            + {hide-from-toc}[Información general](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+            + {hide-from-toc}[Consideraciones importantes](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
+            + {hide-from-toc}[Usando la herramienta de asignación de usuarios](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + Herramientas de refactorización de código {#refactoring-tools}
       + [Introducción a las herramientas de refactorización](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
       + [Información general sobre las herramientas de refactorización](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
@@ -524,7 +524,7 @@ ht-degree: 90%
          + [Eliminar consideraciones](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analizando estructura](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [Previsualización de fragmentos](/help/sites-cloud/administering/content-fragments/preview.md)
-         + [Reutilización de fragmentos de contenido mediante MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+         + {hide-from-toc}[Reutilizar fragmentos de contenido mediante MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
          + [Lanzamientos para fragmentos de contenido](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [Recursos de la consola de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Fragmentos de contenido con Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
@@ -599,13 +599,13 @@ ht-degree: 90%
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [Habilitar Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
-   + [Solucionar problemas de AEM Assets](/help/assets/troubleshoot-aem-assets.md)
+   + {hide-from-toc}[Solucionar problemas de AEM Assets](/help/assets/troubleshoot-aem-assets.md)
    + [Usuarios colaboradores de Assets](/help/assets/assets-collaborator-users.md)
    + Administrar los recursos digitales {#manage}
       + [Compartir recursos](/help/assets/share-assets.md)
       + [Reprocesamiento de recursos](/help/assets/reprocessing.md)
       + [Detección de malware](/help/assets/malware-detection.md)
-      + [Supervisar actividades y tareas de DAM](/help/assets/assets-activity-history.md)
+      + {hide-from-toc}[Supervisar actividades y tareas de DAM](/help/assets/assets-activity-history.md)
       + [Introducción a los microservicios de recursos](/help/assets/asset-microservices-configure-and-use.md)
       + [Agregar y cargar recursos](/help/assets/add-assets.md)
       + [Buscar recursos](/help/assets/search-assets.md)
@@ -690,10 +690,10 @@ ht-degree: 90%
       + [Configuración de Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Dynamic Media Prime y Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
       + [Habilitar Dynamic Media Prime y Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
-      + [Opcional: configuración de Dynamic Media, configuración general](/help/assets/dynamic-media/dm-general-settings.md)
-      + [Opcional: configuración de Dynamic Media, configuración de publicaciones](/help/assets/dynamic-media/dm-publish-settings.md)
+      + {hide-from-toc}[Opcional: configurar Dynamic Media, configuración general](/help/assets/dynamic-media/dm-general-settings.md)
+      + {hide-from-toc}[Opcional: configurar Dynamic Media, configuración de publicación](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Resolución de problemas de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
-      + [Configuración de una cuenta de alias de Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md)
+      + {hide-from-toc}[Configurar una cuenta de alias de Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md)
       + [Accesibilidad en Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md)
       + [Administración de activos de Dynamic Media](/help/assets/dynamic-media/managing-assets.md)
       + [Práctica recomendada para optimizar la calidad de las imágenes](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -730,7 +730,7 @@ ht-degree: 90%
       + [Adición de recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [Incrustación de Dynamic Video o el visualizador de imágenes en una página web](/help/assets/dynamic-media/embed-code.md)
       + [Vinculación de URL en la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-      + [Solicitar informe de errores para direcciones URL de envío fallidas](/help/assets/dynamic-media/reporting-dm.md)
+      + {hide-from-toc}[Solicitar informe de errores para URL de entrega con errores](/help/assets/dynamic-media/reporting-dm.md)
       + [Uso de conjuntos de reglas para transformar URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [Publicación de recursos de Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [Trabajo con Publicación selectiva en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
@@ -781,7 +781,7 @@ ht-degree: 90%
       + [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
       + [Extensibilidad de la IU de la vista de AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
 
-      + [Administrar informes](/help/assets/manage-reports-assets-view.md)
+      + {hide-from-toc}[Administrar informes](/help/assets/manage-reports-assets-view.md)
       + [Vista de Assets de metadatos en cascada](/help/assets/cascading-metadata-assets-view.md)
    + Content Hub {#content-hub}
       + [Información general](/help/assets/product-overview.md)
@@ -821,8 +821,8 @@ ht-degree: 90%
 + Formularios {#forms}
    + Información general {#forms-overview}
       + [Introducción](/help/forms/home.md)
-      + [Introducción2](/help/forms/home2.md)
-      + [Introducción3](/help/forms/home3.md)
+      + {hide-from-toc}[Introducción2](/help/forms/home2.md)
+      + {hide-from-toc}[Introducción3](/help/forms/home3.md)
       + [Principales innovaciones de Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
       + [Funciones de acceso rápido (EA)](/help/forms/early-access-ea-features.md)
       + [Cambios importantes](/help/forms/notable-changes.md)
@@ -832,15 +832,15 @@ ht-degree: 90%
    + Configuración y migración {#setup-configure-migrate}
       + [Incorporación al entorno de Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configuración de un entorno de desarrollo local](/help/forms/setup-local-development-environment.md)
-      + [Habilitar los componentes principales de formularios adaptables en el entorno AEM Forms as a Cloud Service y en el de desarrollo local](/help/forms/enable-adaptive-forms-core-components.md)
+      + {hide-from-toc}[Habilitar los componentes principales de Forms adaptable en AEM Forms as a Cloud Service y el entorno de desarrollo local](/help/forms/enable-adaptive-forms-core-components.md)
       + [Configurar el conector de almacenamiento unificado](/help/forms/configure-unified-storage-connector.md)
       + [Migrar desde [!DNL AEM 6.5 Forms] o anterior a [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos y permisos](/help/forms/forms-groups-privileges-tasks.md)
       + [Importación, exportación y organización de formularios adaptables, formularios PDF y otros recursos](/help/forms/import-export-forms-templates.md)
       + [Habilitar la alternancia de funciones en el kit de desarrollo de software de Adobe Experience (SDK de AEM)](/help/forms/enable-feature-toggle.md)
    + Introducción {#getting-started-forms}
-      + [Caso de uso y entorno de desarrollo de configuración](/help/forms/create-adaptive-form-tutorial-getting-started.md)
-      + [Creación del formulario de solicitud de préstamo](/help/forms/create-adaptive-form-tutorial.md)
+      + {hide-from-toc}[Caso de uso y entorno de desarrollo de configuración](/help/forms/create-adaptive-form-tutorial-getting-started.md)
+      + {hide-from-toc}[Crear el formulario de solicitud de préstamo](/help/forms/create-adaptive-form-tutorial.md)
    + Integración {#integrate}
       + Servicios {#services}
          + [Integración de AEM Forms as a Cloud Service con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -854,7 +854,7 @@ ht-degree: 90%
       + Modelo de datos de formulario {#use-form-data-model}
          + [Conectar AEM Forms a la base de datos o fuente de datos](/help/forms/data-integration.md)
          + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
-         + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+         + {hide-from-toc}[Configurar [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
          + [Configuración de almacenamiento de  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
          + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
@@ -863,7 +863,7 @@ ht-degree: 90%
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
          + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
-         + [Diseño de un esquema XML para un formulario adaptable](/help/forms/adaptive-form-xml-schema-form-model.md)
+         + {hide-from-toc}[Diseñar esquema XML para un formulario adaptable](/help/forms/adaptive-form-xml-schema-form-model.md)
       + Establecimiento de una acción de envío para un formulario adaptable {#set-submit-action}
          + [Acciones de envío compatibles con los formularios adaptables](/help/forms/aem-forms-submit-action.md)
          + [Configurar la acción de envío para un formulario adaptable basado en componentes de base](/help/forms/configuring-submit-actions.md)
@@ -889,8 +889,8 @@ ht-degree: 90%
             + [Configurar la fuente de datos de Adobe Marketo Engage para formularios adaptables existentes](/help/forms/use-marketo-engage-data-source-in-form.md)
             + [Configuración de la acción de envío a Marketo Engage para formularios existentes](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Formularios adaptables {#adaptive-forms-authoring}
-      + [Crear un formulario adaptable](/help/forms/create-an-adaptive-form.md)
-      + [¿Qué formularios adaptables son mejores?](/help/edge/docs/forms/authoring-a-form.md)
+      + {hide-from-toc}[Crear un formulario adaptable](/help/forms/create-an-adaptive-form.md)
+      + {hide-from-toc}[¿Qué formularios adaptables son mejores?](/help/edge/docs/forms/authoring-a-form.md)
       + [Crear fragmento de formulario adaptable](/help/forms/adaptive-form-fragments.md)
       + [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + [Administrar versiones de Form Assets en Forms Manager](/help/forms/manage-form-versions-forms-manager.md)
@@ -919,8 +919,8 @@ ht-degree: 90%
             + [Añadir versiones, comentarios y anotaciones a un formulario adaptable](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Nuevos formularios adaptables](/help/forms/compare-forms.md)
             + [Creación de una acción de envío personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
-            + [Convertir formularios adaptables basados en componentes de base a formularios basados en componentes principales mediante la herramienta de utilidad de migración](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [Plantillas de correo electrónico en formularios adaptables](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + {hide-from-toc}[Convertir formularios adaptables basados en componentes de base a formularios basados en componentes principales mediante la herramienta de utilidad de migración](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + {hide-from-toc}[Plantillas de correo electrónico en Forms adaptable](/help/forms/html-email-templates-in-adaptive-forms.md)
             + [Administración de publicaciones en Experience Manager Forms](/help/forms/manage-publication.md)
             + Introducción al Editor de reglas para formularios adaptables basados en componentes principales{#rule-editor-core-components}
                + [Introducción al Editor de reglas para formularios adaptables basados en componentes principales](/help/forms/rule-editor-core-components.md)
@@ -949,17 +949,17 @@ ht-degree: 90%
             + [Revisar y corregir formularios convertidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=es#welcome-to-review-and-correct-editor)
          + Crear un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
             + [Introducción a la creación de un formulario adaptable](/help/forms/introduction-forms-authoring.md)
-            + [Crear ayuda en contexto para campos de formulario](/help/forms/authoring-in-field-help.md)
+            + {hide-from-toc}[Creación de ayuda en contexto para campos de formulario](/help/forms/authoring-in-field-help.md)
             + [Crear un formulario adaptable](/help/forms/creating-adaptive-form.md)
             + [Temáticas de referencia, plantillas y modelos de datos](/help/forms/reference-themes-templates-data-models.md)
             + [Creación de una plantilla](/help/forms/template-editor.md)
             + [Crear una temática](/help/forms/themes.md)
-            + [Fragmentos de formulario adaptable de referencia](/help/forms/reference-adaptive-form-fragments.md)
-            + [Sincronizar formularios adaptables con plantillas de formularios XFA](/help/forms/synchronizing-adaptive-forms-xfa.md)
-            + [Compatibilidad con XFA en formularios adaptables basados en XDP](/help/forms/xfa-api-supported-in-adaptive-form.md)
+            + {hide-from-toc}[Fragmentos de formulario adaptable de referencia](/help/forms/reference-adaptive-form-fragments.md)
+            + {hide-from-toc}[Sincronizando Forms adaptable con plantillas de formulario XFA](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + {hide-from-toc}[Compatibilidad con XFA en Forms adaptable basado en XDP](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [Diseño de un esquema JSON para un formulario adaptable](/help/forms/adaptive-form-json-schema-form-model.md)
             + [Mejorar el rendimiento de los formularios grandes mediante la carga diferida](/help/forms/lazy-loading-adaptive-forms.md)
-            + [Publicar y cancelar la publicación de formularios y documentos](/help/forms/publishing-unpublishing-forms.md)
+            + {hide-from-toc}[Publicar y cancelar la publicación de formularios y documentos](/help/forms/publishing-unpublishing-forms.md)
          + Adición de componentes a un formulario adaptable {#add-components-to-an-adaptive-form}
             + [Uso de CAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms.md)
             + [Utilice hCaptcha en un formulario adaptable](/help/forms/integrate-adaptive-forms-hcaptcha.md)
@@ -978,17 +978,17 @@ ht-degree: 90%
          + Adición de reglas y uso de expresiones en un formulario adaptable {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Adición de reglas a un formulario adaptable](/help/forms/rule-editor.md)
             + [Agregar un controlador de error personalizado mediante el servicio Invocar del editor de reglas](/help/forms/add-custom-error-handler-adaptive-forms.md)
-            + [Conceder acceso al Editor de reglas a determinados grupos de usuarios](/help/forms/rule-editor-access-user-groups.md)
+            + {hide-from-toc}[Conceder acceso al editor de reglas a determinados grupos de usuarios](/help/forms/rule-editor-access-user-groups.md)
             + [Uso de expresiones SOM en formularios adaptables](/help/forms/using-som-expressions-adaptive-forms.md)
-            + [Expresiones de formularios adaptables](/help/forms/adaptive-form-expressions.md)
+            + {hide-from-toc}[Expresiones de formularios adaptables](/help/forms/adaptive-form-expressions.md)
          + Uso [!DNL Adobe Sign] {#use-adobe-sign}
             + [Uso de Adobe Sign para firmar electrónicamente un formulario adaptable](/help/forms/working-with-adobe-sign.md)
          + Configuración de envío de acciones y envío de metadatos {#configure-submit-actions-and-metadata-submission}
             + [Configuración de la página de redirección](/help/forms/configuring-redirect-page.md)
             + [Configuración del envío asincrónico para un formulario adaptable](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [Creación de una acción de envío personalizada](/help/forms/custom-submit-action-form.md)
-            + [Añadir información de datos de usuario a los metadatos de envío de formularios](/help/forms/form-submission-metadata.md)
-            + [API para invocar el servicio del modelo de datos de formulario (FDM) desde formularios adaptables](/help/forms/invoke-form-data-model-services.md)
+            + {hide-from-toc}[Agregar información de datos de usuario a los metadatos de envío de formularios](/help/forms/form-submission-metadata.md)
+            + {hide-from-toc}[API para invocar el servicio del modelo de datos de formulario (FDM) desde Forms adaptable](/help/forms/invoke-form-data-model-services.md)
          + [Rellene previamente los campos del formulario adaptable](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Generar PDF de envío (anteriormente documento de registro)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [Agregar la compatibilidad con nuevas configuraciones regionales a un formulario adaptable](/help/forms/supporting-new-language-localization.md)
@@ -998,14 +998,14 @@ ht-degree: 90%
          + Mejora de la accesibilidad de un formulario adaptable {#accessible-adaptive-forms}
             + [Creación de un formulario adaptable accesible](/help/forms/creating-accessible-adaptive-forms.md)
          + [Crear y administrar revisiones](/help/forms/create-reviews-forms.md)
-         + [Asociar revisores de envío con un formulario](/help/forms/adding-reviewers-form.md)
-         + [Creación y administración de revisiones para un formulario adaptable](/help/forms/review-adaptiveforms-in-sites-page.md)
+         + {hide-from-toc}[Asociar revisores de envío con un formulario](/help/forms/adding-reviewers-form.md)
+         + {hide-from-toc}[Creación y administración de revisiones para un formulario adaptable](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [Palabras clave en formularios adaptables](/help/forms/adaptive-forms-keywords.md)
       + [Vista previa de un formulario](/help/forms/previewing-forms.md)
    + Formularios HTML5 {#html5-forms}
       + [Introducción a los formularios HTML5](/help/forms/introductionhtml5.md)
       + [Introducción a los formularios HTML5](/help/forms/get-started.md)
-      + [Arquitectura de los formularios HTML5](/help/forms/html5-forms-architecture.md)
+      + {hide-from-toc}[Arquitectura de los formularios HTML5](/help/forms/html5-forms-architecture.md)
       + [Diferenciar entre las características de formularios HTML5 y PDF](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
       + [Preguntas más frecuentes sobre formularios HTML5](/help/forms/faqhtml5.md)
       + [Diseñar plantillas de formulario para formularios HTML5](/help/forms/designing-form-template.md)
@@ -1026,11 +1026,11 @@ ht-degree: 90%
       + [Crear tablas complejas accesibles en formularios HTML5](/help/forms/accessible-tables.md)
       + [Crear estilos CSS para formularios HTML5](/help/forms/css-styles.md)
       + [Personalizar mensajes de error para formularios HTML5](/help/forms/customzing-errors-html5-forms.md)
-      + [Guardar un formulario HTML5 como borrador](/help/forms/saving-html5-form-draft.md)
+      + {hide-from-toc}[Guardando un formulario HTML5 como borrador](/help/forms/saving-html5-form-draft.md)
       + [Habilitar el registro para formularios HTML5](/help/forms/enable-logs.md)
       + [Depurar formularios HTML5](/help/forms/debug.md)
       + [Compatibilidad con scripts para formularios HTML5](/help/forms/scripting-support.md)
-      + [Conjunto de formularios en AEM Forms](/help/forms/formset-in-aem-forms.md)
+      + {hide-from-toc}[Conjunto de formularios en AEM Forms](/help/forms/formset-in-aem-forms.md)
 + Comunicación interactiva {#interactive-communication}
    + Explicación de la comunicación interactiva {#overview}
       + [Introducción](/help/forms/interactive-communication/introduction.md)
@@ -1038,8 +1038,8 @@ ht-degree: 90%
       + [Crear comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication.md)
       + [Crear plantilla de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-template.md)
       + [Crear fragmento de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-      + [Introducción a la comunicación interactiva](/help/forms/introduction-to-interactive-communication.md)
-      + [Crear la primera comunicación interactiva](/help/forms/create-your-first-communication.md)
+      + {hide-from-toc}[Introducción a la comunicación interactiva](/help/forms/introduction-to-interactive-communication.md)
+      + {hide-from-toc}[Crear su primera comunicación interactiva](/help/forms/create-your-first-communication.md)
    + Componente {#component}
       + [Cuadro de texto](/help/forms/interactive-communication/text-box.md)
       + [Imagen](/help/forms/interactive-communication/image.md)
@@ -1065,8 +1065,8 @@ ht-degree: 90%
       + [Implementar la numeración dinámica de páginas](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
       + [Gestionar desbordamiento de contenido](/help/forms/interactive-communication/handle-content-overflow.md)
       + [Compatibilidad con la edición XDP](/help/forms/interactive-communication/support-xdp-editing.md)
-      + [Crear versiones y agregar comentarios](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
-      + [Copiar y pegar comunicaciones interactivas](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
+      + {hide-from-toc}[Crear versiones y agregar comentarios](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+      + {hide-from-toc}[Copiar y pegar comunicación interactiva](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
       + [Iniciar flujo de trabajo en comunicaciones interactivas](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
       + [Crear tabla dinámica](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
    + Asociar IU {#associateui}
@@ -1074,13 +1074,13 @@ ht-degree: 90%
       + [Habilitar y configurar la interfaz de usuario asociada para comunicaciones interactivas](/help/forms/interactive-communication/enable-configure-associate-ui.md)
       + [Integración de la interfaz de usuario asociada en la aplicación](/help/forms/interactive-communication/invoke-associate-ui.md)
       + [Flujo de trabajo de envío para la IU asociada: IC Generar salida de PDF](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-   + [Preguntas frecuentes](/help/forms/interactive-communications-faq.md)
+   + {hide-from-toc}[Preguntas más frecuentes](/help/forms/interactive-communications-faq.md)
 + Flujos de trabajo centrados en formularios {#create-form-centric-workflows}
-   + [Introducción a los flujos de trabajo centrados en formularios](/help/forms/aem-forms-workflow.md)
+   + {hide-from-toc}[Introducción al flujo de trabajo centrado en Forms](/help/forms/aem-forms-workflow.md)
    + [Uso de pasos centrados en Forms en un flujo de trabajo + referencia de paso](/help/forms/aem-forms-workflow-step-reference.md)
    + [Uso de variables en un flujo de trabajo centrado en Forms](/help/forms/variable-in-aem-workflows.md)
-   + [Selección dinámica de usuarios o grupos en el flujo de trabajo de AEM](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
-   + [Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM](/help/forms/manage-applications-inbox.md)
+   + {hide-from-toc}[Selección dinámica de usuarios o grupos en el flujo de trabajo de AEM](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+   + {hide-from-toc}[Administrar aplicaciones y tareas de Forms en la bandeja de entrada AEM](/help/forms/manage-applications-inbox.md)
    + [Usar la opción Fuera de la oficina](/help/forms/configure-out-of-office-settings.md)
 + API de comunicaciones {#using-communications}
    + [Introducción a las API de comunicaciones](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -1089,8 +1089,8 @@ ht-degree: 90%
    + [API de comunicaciones: procesamiento por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
    + [API de comunicaciones Forms: tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
    + [Generar salida AFP mediante la API de AEM Forms](/help/forms/document-generation-afp-api.md)
-   + [Autenticación de servidor a servidor OAuth](/help/forms/oauth-api-authetication.md)
-   + [Autenticación de servidor a servidor JWT (token web JSON)](/help/forms/jwt-api-authentication.md)
+   + {hide-from-toc}[Autenticación de servidor a servidor OAuth](/help/forms/oauth-api-authetication.md)
+   + {hide-from-toc}[Autenticación de servidor a servidor JWT(token web JSON)](/help/forms/jwt-api-authentication.md)
    + [Instalación y configuración de Forms Designer](/help/forms/installing-configuring-designer.md)
    + [Uso de Forms Designer para crear plantillas](/help/forms/use-forms-designer.md)
    + [Cambiar el contenido de la página cero en Designer](/help/forms/changing-page-zero-content-designer.md)
@@ -1101,8 +1101,8 @@ ht-degree: 90%
       + [API facturables de informes de transacciones](/help/forms/transaction-reports-billable-apis.md)
       + [Registrar una transacción para una implementación personalizada](/help/forms/record-transaction-custom-implementation.md)
    + Panel de control de realización de valor  {#vr-dashboard}
-      + [Información sobre el panel de control de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md)
-      + [Uso del panel de control de realización de valor para analizar las tendencias de uso de formularios y documentos](/help/forms/using-the-value-realization-dashboard.md)
+      + {hide-from-toc}[Explicación de su panel de realización de valores](/help/forms/aem-forms-value-realization-dashboard.md)
+      + {hide-from-toc}[Uso del panel de realización de valor para analizar las tendencias de uso de formularios y documentos](/help/forms/using-the-value-realization-dashboard.md)
    + Referencia de la API del desarrollador {#aem-forms-developer-api-reference}
       + [Referencia de API de Forms adaptable](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Referencia de la API de comunicaciones AEM Forms Cloud Service](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1159,16 +1159,16 @@ ht-degree: 90%
       + [Generar variaciones: integrado en Editores AEM](/help/generative-ai/generate-variations-integrated-editor.md)
       + [Generar variaciones](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
-      + [Forms Experience Builder: Información general](/help/forms/experience-builder/product-overview.md)
-      + [Introducción a Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
-      + [Implementación y configuración de Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+      + {hide-from-toc}[Forms Experience Builder: información general](/help/forms/experience-builder/product-overview.md)
+      + {hide-from-toc}[Introducción a Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+      + {hide-from-toc}[Implementar y configurar Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
       + Cómo {#forms-experience-builder-how-to}
-         + [¿Cómo convertir una imagen a un formulario?](/help/forms/experience-builder/intelligent-import-conversion.md)
-         + [¿Cómo configurar los envíos y las integraciones de formularios?](/help/forms/experience-builder/form-submission-integration.md)
-         + [Cómo crear campos inteligentes mejorados con LLM en Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
-         + [¿Cómo iniciar una nueva conversación de subprocesos en Forms Experience Builder?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
-      + [Biblioteca de mensajes](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
-      + [Preguntas frecuentes](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
+         + {hide-from-toc}[¿Cómo convertir una imagen en un formulario?](/help/forms/experience-builder/intelligent-import-conversion.md)
+         + {hide-from-toc}[¿Cómo configurar los envíos y las integraciones de formularios?](/help/forms/experience-builder/form-submission-integration.md)
+         + {hide-from-toc}[¿Cómo se crean campos inteligentes mejorados con LLM en Forms Experience Builder?](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
+         + {hide-from-toc}[¿Cómo iniciar una nueva conversación de subprocesos en el generador de experiencias de formularios?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+      + {hide-from-toc}[Biblioteca de mensajes](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+      + {hide-from-toc}[Preguntas más frecuentes (FAQ)](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
    + Información general para Screens as a Cloud Service {#overview}
       + [Introducción](/help/screens-cloud/introduction/introduction.md)
@@ -1209,9 +1209,9 @@ ht-degree: 90%
 + Content and Commerce {#content-and-commerce}
    + [Introducción e información general](/help/commerce-cloud/introduction.md)
    + Escaparate de Edge Delivery Services {#edge-storefront}
-      + [Introducción](/help/commerce-cloud/edge-storefront/introduction.md)
+      + {hide-from-toc}[Introducción](/help/commerce-cloud/edge-storefront/introduction.md)
    + Escaparate de terceros {#thrid-party-storefront}
-      + [Introducción](/help/commerce-cloud/third-party-storefront/introduction.md)
+      + {hide-from-toc}[Introducción](/help/commerce-cloud/third-party-storefront/introduction.md)
    + Escaparate de CIF {#cif-storefront}
       + [Introducción a CIF](/help/commerce-cloud/cif-storefront/introduction.md)
       + [Cambios importantes en AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/cif-storefront/changes.md)
@@ -1275,7 +1275,7 @@ ht-degree: 90%
          + [Publicar formularios adaptables con Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Crear componentes personalizados para un formulario EDS](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Solución de problemas de errores 403 Prohibido en el envío de formularios de Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
-         + [Crear objeto de posible cliente de Salesforce mediante integración de API](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
+         + {hide-from-toc}[Crear objeto de posible cliente de Salesforce mediante integración de API](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
          + Lista desplegable en cascada {#cascading-drop-down-list}
             + [Introducción](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
             + [Crear integración de API](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
@@ -1286,23 +1286,23 @@ ht-degree: 90%
          + [Distintos componentes del bloque de formulario adaptable](/help/edge/docs/forms/form-components.md)
          + [Conectar el formulario a Hojas de cálculo de Google: Guía de configuración de recopilación de datos](/help/edge/docs/forms/submit-forms.md)
          + [Publique el formulario: Guía de publicación y recopilación de datos](/help/edge/docs/forms/publish-forms.md)
-         + [Validación de campos de formulario: añadir comprobaciones de errores a los formularios](/help/edge/docs/forms/validate-forms.md)
+         + {hide-from-toc}[Validación de campos de formulario: agregar comprobaciones de error a su Forms](/help/edge/docs/forms/validate-forms.md)
          + [Diseñar formularios atractivos: Guía de estilo y personalización](/help/edge/docs/forms/style-theme-forms.md)
          + [Crear mensajes de éxito: personalizar la página de agradecimiento del formulario](/help/edge/docs/forms/thank-you-page-form.md)
          + [Campos de formulario dinámico: cargar opciones desde direcciones URL](/help/edge/docs/forms/load-options-from-url.md)
          + [Añadir comportamiento inteligente: Guía de reglas y lógica de formulario](/help/edge/docs/forms/rules-forms.md)
-         + [Validación avanzada de formularios: Guía de expresiones regulares](/help/edge/docs/forms/regex-forms.md)
-         + [Generar formularios reutilizables: Guía sobre fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
+         + {hide-from-toc}[Validación avanzada de formularios: Guía de expresiones regulares](/help/edge/docs/forms/regex-forms.md)
+         + {hide-from-toc}[Generar Forms reutilizable: guía para fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
          + [Crear formularios dinámicos: añadir secciones repetibles](/help/edge/docs/forms/repeatable-forms.md)
-         + [Globalizar el formulario: Guía de traducción del formulario](/help/edge/docs/forms/translate-forms.md)
+         + {hide-from-toc}[Convertir Su Formulario En Global: Guía De Traducción De Formularios](/help/edge/docs/forms/translate-forms.md)
          + [Proteger los formularios: añadir seguridad reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Generar componentes de formulario personalizados: Guía para desarrolladores](/help/edge/docs/forms/custom-components-forms.md)
-         + [Supervisar el rendimiento del formulario: guías de telemetría operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+         + {hide-from-toc}[Crear componentes de formulario personalizados: Guía para desarrolladores](/help/edge/docs/forms/custom-components-forms.md)
+         + {hide-from-toc}[Supervisar el rendimiento del formulario: guías de telemetría operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Guía de envío de formularios: uso del servicio de envío de formularios](/help/forms/forms-submission-service.md)
       + [Configuración del envío de formularios de Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Propiedades del campo de bloque de Forms adaptable](/help/edge/docs/forms/eds-form-field-properties.md)
-      + [Preguntas más frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-   + [Prácticas recomendadas para crear formularios](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
+      + {hide-from-toc}[Preguntas más frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+   + {hide-from-toc}[Prácticas recomendadas para crear formularios](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Sin encabezado {#headless}
    + [¿Qué es un CMS sin encabezado?](/help/headless/what-is-headless.md)
    + [Introducción a AEM Headless](/help/headless/introduction.md)
@@ -1439,7 +1439,7 @@ ht-degree: 90%
       + [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md)
       + Informes {#reports}
          + [SLA](/help/implementing/cloud-manager/reports/report-sla.md)
-         + [Comparación visual](/help/implementing/cloud-manager/reports/report-visual-comparison.md)
+         + {hide-from-toc}[Comparación visual](/help/implementing/cloud-manager/reports/report-visual-comparison.md)
          + [Evaluación del estado](/help/implementing/cloud-manager/reports/report-health-assessment.md)
          + [Auditoría de experiencias](/help/implementing/cloud-manager/reports/report-experience-audit.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
@@ -1491,7 +1491,7 @@ ht-degree: 90%
       + [Materiales de referencia de la API](/help/implementing/developing/reference-materials.md)
       + [API basadas en OpenAPI](/help/implementing/developing/open-api-based-apis.md)
       + [Generación de los tókenes de acceso para las API del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-      + [Generación de los tókenes de acceso para las API del servidor (heredadas)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
+      + {hide-from-toc}[Generación de tokens de acceso para las API del servidor (heredadas)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [Creación rápida de sitios y personalización del front-end](/help/implementing/developing/introduction/quick-site-creation.md)
       + [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [Personalización de plantillas y temas del sitio](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
@@ -1641,7 +1641,7 @@ ht-degree: 90%
       + [Dispatcher en la nube](/help/implementing/dispatcher/disp-overview.md)
       + [Validación y depuración mediante las herramientas de Dispatcher](/help/implementing/dispatcher/validation-debug.md)
       + [Migración de la configuración de Dispatcher de AMS a AEM as a Cloud Service](/help/implementing/dispatcher/ams-aem.md)
-      + [Validación y depuración mediante herramientas de Dispatcher heredadas](/help/implementing/dispatcher/validation-debug-legacy.md)
+      + {hide-from-toc}[Validación y depuración mediante herramientas de Dispatcher heredadas](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [CDN en AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Configuración del tráfico en la CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
       + [Fragmentos de configuración de CDN para escenarios comunes](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)
@@ -1682,4 +1682,5 @@ ht-degree: 90%
       + [AEM as a Cloud Service y las directrices de accesibilidad web](/help/compliance/accessibility/web-accessibility.md)
       + [Guía rápida de WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Resolución de problemas {#troubleshooting}
-   + [Solución de problemas de AEM Assets y Forms](/help/troubleshooting/home.md)
+   + {hide-from-toc}[Solucionar problemas de AEM Assets y Forms](/help/troubleshooting/home.md)
+

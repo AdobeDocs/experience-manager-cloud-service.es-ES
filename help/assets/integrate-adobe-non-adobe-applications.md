@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: 13d79aaa9508282c0d0672fd864afd5b384c034e
+source-git-commit: 845ed6b1ef962b57b2784f0ae32363fd35455c75
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
@@ -203,6 +203,7 @@ La siguiente tabla ilustra la compatibilidad de las funciones del Asesor de cont
 | Planificación de Adobe Workfront | ✓ | ✓ | − | ✓ |
 | [Vista de AEM Assets](/help/assets/assets-view-introduction.md) | ✓ | − | − | − |
 | [AEM Content Hub](/help/assets/product-overview.md) | ✓ | ✓ | − | − |
+| [Adobe Journey Optimizer (AJO) para B2C](http://experienceleague.adobe.com/es/docs/journey-optimizer/using/ajo-home) | ✓ | ✓ | ✓ | ✓ |
 
 ## Compatibilidad con las funciones del Asesor de contenido en aplicaciones distintas de Adobe {#content-advisor-feature-support-non-adobe-applications}
 

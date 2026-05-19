@@ -2,13 +2,12 @@
 title: Validación y depuración mediante herramientas de Dispatcher (heredadas)
 description: Validación y depuración mediante herramientas de Dispatcher (heredadas)
 feature: Dispatcher
-hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 1%
+source-wordcount: '2349'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +25,9 @@ Este artículo supone que la configuración de Dispatcher del proyecto no incluy
 * un solo archivo de reescritura que debe utilizarse en lugar de archivos específicos del sitio.
 * la suma del contenido de los archivos personalizables debe ser inferior a 1 MB.
 
-A partir de la versión Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager AEM generan estructuras de proyecto Maven con tipo de archivo 28 y posterior, que incluye el archivo mencionado anteriormente.
+A partir de la versión Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager generan estructuras de proyecto Maven con el arquetipo de AEM 28 y posterior, que incluye el archivo mencionado anteriormente.
 
-Es **muy recomendable** que migre del modo heredado al modo flexible como se describe en la sección de migración [Migración del modo heredado al modo flexible](#migrating-flexible). El uso del modo flexible también hace que el SDK y el tiempo de ejecución validen e implementen la configuración de una manera mejorada.
+Es **muy recomendable** que migre del modo heredado al modo flexible como se describe en la sección de migración [Migración del modo heredado al modo flexible](#migrating-flexible). El uso del modo flexible también hace que SDK y el motor en tiempo de ejecución validen e implementen la configuración de una manera mejorada.
 
 ## Estructura de archivos {#legacy-mode-file-structure}
 
@@ -179,7 +178,7 @@ Consulte [Módulos Apache compatibles](/help/implementing/dispatcher/disp-overvi
 ## Validación local {#local-validation-legacy-mode}
 
 >[!NOTE]
->Las secciones siguientes incluyen comandos que utilizan las versiones Mac o Linux® del SDK, pero el SDK de Windows también se puede utilizar de forma similar.
+>Las secciones siguientes incluyen comandos que utilizan las versiones Mac o Linux® de SDK, pero Windows SDK también se puede utilizar de forma similar.
 
 Usar el script `validate.sh` como se muestra a continuación:
 
@@ -220,7 +219,7 @@ La secuencia de comandos hace lo siguiente:
 
 1. Ejecuta el validador. Si la configuración no es válida, el script falla.
 2. Ejecuta el comando `httpd -t` para comprobar si la sintaxis es correcta de modo que Apache httpd pueda iniciarse. Si se realiza correctamente, la configuración debe estar lista para la implementación.
-3. Comprueba que no se haya editado el subconjunto de los archivos de configuración del SDK para Dispatcher, que se pretende que sean inmutables tal como se describe en la [sección Estructura de archivos](##legacy-mode-file-structure). AEM Esta comprobación es nueva y se introdujo con la versión v2021.1.4738 del SDK de la que también incluye la versión 2.0.36 de Dispatcher Tools. Antes de esta actualización, es posible que los clientes hayan supuesto incorrectamente que cualquier modificación local del SDK de esos archivos inmutables también se aplicaría al entorno de Cloud.
+3. Comprueba que no se haya editado el subconjunto de los archivos de configuración de Dispatcher SDK, que se pretende que sean inmutables tal como se describe en la [sección Estructura de archivos](##legacy-mode-file-structure). Esta comprobación es nueva y se introdujo con la versión v2021.1.4738 de AEM SDK que también incluye la versión 2.0.36 de Dispatcher Tools. Antes de esta actualización, es posible que los clientes hayan supuesto incorrectamente que cualquier modificación local de SDK de esos archivos inmutables también se aplicaría al entorno de nube.
 
 Durante una implementación de Cloud Manager, también se ejecuta la comprobación de sintaxis `httpd -t` y los errores se incluyen en el registro `Build Images step failure` de Cloud Manager.
 
@@ -237,13 +236,14 @@ A continuación se presentan las técnicas de solución de problemas para depura
 
 **No se puede encontrar una subcarpeta `conf.dispatcher.d` en el archivo**
 
-El archivo debe contener las carpetas `conf.d` y `conf.dispatcher.d`. Tenga en cuenta que **no debe** usar el prefijo `etc/httpd` en el archivo.
+El archivo debe contener las carpetas `conf.d` y `conf.dispatcher.d`. Tenga en cuenta que **no debe**
+use el prefijo `etc/httpd` en el archivo.
 
 **No se encuentra ninguna granja en`conf.dispatcher.d/enabled_farms`**
 
 Las granjas habilitadas deben estar en la subcarpeta mencionada.
 
-**El nombre del archivo incluido (...) debe ser: ...**
+**Archivo incluido (...) debe tener el nombre: ...**
 
 Hay dos secciones en la configuración de su granja que **debe** incluir
 archivo específico: `/renders` y `/allowedClients` en la sección `/cache`. Esos
@@ -290,7 +290,7 @@ para usar la instrucción `$include`, por ejemplo, se generaría este error:
 **Los clientes/procesamientos permitidos no se incluyen en: ...**
 
 Este error se genera cuando no se especifica una &quot;inclusión&quot; para `/renders` y `/allowedClients` en la sección `/cache`. Consulte la
-**el archivo incluido (...) debe tener el nombre: ...** sección para obtener más información.
+**archivo incluido (...) debe tener el nombre: sección ...** para obtener más información.
 
 **El filtro no debe usar el patrón glob para permitir solicitudes**
 
@@ -304,7 +304,7 @@ No es seguro permitir solicitudes con una regla de estilo `/glob`, que coincide 
 
 Esta instrucción está diseñada para permitir solicitudes para `css` archivos, pero también permite solicitudes a **cualquier** recurso seguido de la cadena de consulta `?a=.css`. Por lo tanto, está prohibido utilizar estos filtros (véase también CVE-2016-0957).
 
-**El archivo incluido (...) no coincide con ningún archivo conocido**
+**Archivo incluido (...) no coincide con ningún archivo conocido**
 
 Existen dos tipos de archivos en la configuración de host virtual de Apache que se pueden especificar como incluye: reescrituras y variables.
 Los archivos incluidos deben tener el siguiente nombre:
@@ -354,7 +354,7 @@ Para evitar este error, copie y pegue la ruta de acceso desde el Explorador de W
 
 ### Fase 2 {#second-phase}
 
-Esta fase comprueba la sintaxis de Apache iniciando Docker en una imagen. AEM Docker debe estar instalado localmente, pero tenga en cuenta que no es necesario para que se ejecute el programa de instalación de la aplicación de la red de distribución de datos de.
+Esta fase comprueba la sintaxis de Apache iniciando Docker en una imagen. Docker debe instalarse localmente, pero tenga en cuenta que no es necesario que AEM se esté ejecutando.
 
 >[!NOTE]
 >Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito previo es necesario para ejecutar y depurar Dispatcher en un equipo local.
@@ -365,7 +365,7 @@ Durante una implementación de Cloud Manager, se ejecuta la comprobación de sin
 
 ### Fase 3 {#third-phase}
 
-Si hay un error en esta fase, implica que el Adobe ha cambiado uno o más archivos inmutables. En tal caso, debe reemplazar los archivos inmutables correspondientes con la nueva versión entregada en el directorio `src` del SDK. El siguiente ejemplo de registro ilustra este problema:
+Si se produce un error en esta fase, significa que Adobe ha cambiado uno o más archivos inmutables. En tal caso, debe reemplazar los archivos inmutables correspondientes con la nueva versión entregada en el directorio `src` de SDK. El siguiente ejemplo de registro ilustra este problema:
 
 ```
 Phase 3: Immutability check
@@ -390,7 +390,7 @@ Esta fase también se puede ejecutar de forma independiente a través de `valida
 
 Puede ejecutar Apache Dispatcher localmente mediante `./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
 
-AEM Como se ha indicado anteriormente, Docker debe instalarse localmente y no es necesario para que se ejecute el programa de instalación de la plataforma de datos de la plataforma de datos de la plataforma de datos de la plataforma de datos de. Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito previo es necesario para ejecutar y depurar Dispatcher en un equipo local.
+Como se ha indicado anteriormente, Docker debe instalarse localmente y no es necesario que AEM se esté ejecutando. Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito previo es necesario para ejecutar y depurar Dispatcher en un equipo local.
 
 La siguiente estrategia se puede usar para aumentar la salida del registro para el módulo Dispatcher y ver los resultados de la evaluación `RewriteRule` tanto en entornos locales como de nube.
 
@@ -483,4 +483,4 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migración del modo heredado al modo flexible {#migrating-flexible}
 
-Con la versión de Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager AEM generan estructuras de proyecto Maven con arquetipo de archivo 28 o superior, que incluye el archivo **opt-in/USE_SOURCES_DIRECTLY**. Se eliminan las limitaciones anteriores del modo heredado en torno al número y el tamaño de los archivos, lo que también provoca que el SDK y el tiempo de ejecución validen e implementen la configuración de forma mejorada. Si la configuración de Dispatcher no tiene este archivo, se recomienda migrar. Utilice los métodos descritos en la página [modo flexible](/help/implementing/dispatcher/validation-debug.md#migrating).
+Con la versión Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager generan estructuras de proyecto Maven con el arquetipo de AEM 28 o superior, que incluye el archivo **opt-in/USE_SOURCES_DIRECTLY**. Se eliminan las limitaciones anteriores del modo heredado en torno al número y el tamaño de los archivos, lo que también provoca que SDK y el tiempo de ejecución validen e implementen la configuración de una manera mejorada. Si la configuración de Dispatcher no tiene este archivo, se recomienda migrar. Utilice los métodos descritos en la página [modo flexible](/help/implementing/dispatcher/validation-debug.md#migrating).

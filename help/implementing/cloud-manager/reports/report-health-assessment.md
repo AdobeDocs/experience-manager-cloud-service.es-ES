@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 5467a311-727d-4f67-ba43-4b6548431061
-source-git-commit: 564e0cf551a52d0e54799a6e9578d916a98438af
+source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 8%
+source-wordcount: '1522'
+ht-degree: 12%
 
 ---
 
@@ -34,7 +34,7 @@ Consulte también [Patrones de evaluación de estado](#ha-patterns) para ver las
 1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
 1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
 1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
-1. Seleccione la organización que desee. La siguiente imagen es para ilustrarla. Seleccione su propio nombre de organización.
+1. Seleccione la organización que desee utilizar. La siguiente imagen es para ilustrarla. Seleccione su propio nombre de organización.
 
    ![Selección de una organización en Cloud Manager](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
