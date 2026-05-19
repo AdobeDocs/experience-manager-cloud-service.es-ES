@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: 845ed6b1ef962b57b2784f0ae32363fd35455c75
+source-git-commit: d787726947e6b04f3f3749a21eb348f25fc5d7fb
 workflow-type: tm+mt
 source-wordcount: '2186'
 ht-degree: 0%
@@ -218,3 +218,4 @@ Para obtener más información sobre las integraciones, propiedades y personaliz
 * [Propiedades del Asesor de contenido](/help/assets/content-advisor-properties.md)
 
 * [Personalizaciones del Asesor de contenido](/help/assets/content-advisor-customization.md)
+
