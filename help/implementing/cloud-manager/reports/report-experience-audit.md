@@ -5,8 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
 workflow-type: tm+mt
 source-wordcount: 1570
