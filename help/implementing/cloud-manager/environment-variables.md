@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: f8c9a7549305e30418e672f8ca14fe95f2a3b333
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 29%
+source-wordcount: '1251'
+ht-degree: 22%
 
 ---
 
@@ -21,25 +21,25 @@ Las variables de entorno pueden ser valores específicos del entorno o secretos 
 
 ## Acerca de las variables de entorno {#overview}
 
-Las variables de entorno ofrecen una serie de ventajas a los usuarios de AEM as a Cloud Service, como las siguientes:
+Las variables de entorno proporcionan varios beneficios para los usuarios de AEM as a Cloud Service, incluidos los siguientes:
 
 * Permiten que el comportamiento del código y de la aplicación varíe según el contexto y el entorno. Por ejemplo, se pueden utilizar para habilitar diferentes configuraciones en el entorno de desarrollo en comparación con los entornos de producción o ensayo para evitar errores costosos.
 * Solo deben configurarse una vez, y pueden actualizarse y eliminarse cuando sea necesario.
-* Sus valores se pueden actualizar en cualquier momento y entrar en vigor inmediatamente sin necesidad de realizar cambios o implementaciones de código.
+* Sus valores se pueden actualizar en cualquier momento y entrar en vigor inmediatamente sin requerir cambios o implementaciones de código.
 * Pueden separar el código de la configuración y eliminar la necesidad de incluir información confidencial en el control de versiones.
-* Mejoran la seguridad de la aplicación de AEM as a Cloud Service ya que viven fuera del código.
+* Mejoran la seguridad de las aplicaciones de AEM as a Cloud Service porque existen fuera de la base de código.
 
 Los casos de uso habituales para usar variables de entorno son los siguientes:
 
-* Conexión de la aplicación de AEM con diferentes extremos externos
-* Uso de una referencia al almacenar contraseñas en lugar de directamente en la base de código
-* Cuando existen varios entornos de desarrollo en un programa y algunas configuraciones difieren de un entorno a otro
+* Conexión de la aplicación de AEM con diferentes extremos externos.
+* Uso de una referencia al almacenar contraseñas en lugar de almacenarlas directamente en la base de código.
+* Hay varios entornos de desarrollo en un programa y algunas configuraciones difieren de un entorno a otro.
 
 ## Agregar una variable de entorno {#add-variables}
 
-Si desea agregar varias variables, Adobe recomienda que agregue la primera variable y, a continuación, utilice ![Agregar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Agregar** en el cuadro de diálogo **Configuración del entorno** para agregar las variables adicionales. Este método significa que puede agregarlos con una actualización al entorno.
+Si desea agregar varias variables, Adobe recomienda que agregue la primera variable y, a continuación, utilice ![Agregar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Agregar** en el cuadro de diálogo **Configuración del entorno** para agregar las variables adicionales. Este método permite añadirlos con una sola actualización del entorno.
 
-Para agregar, actualizar o eliminar variables de entorno, debe ser miembro del rol [**Administrador de implementación**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
+Para agregar, actualizar o eliminar variables de entorno, debe ser miembro de la [función Administrador de implementación](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
 
 **Para agregar una variable de entorno:**
 
@@ -78,7 +78,7 @@ Si agrega una variable de entorno por primera vez, haga clic en **Agregar config
 
 Una vez que haya creado variables de entorno, puede actualizarlas con ![Agregar/Actualizar - Agregar icono de círculo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Agregar/Actualizar** para abrir el cuadro de diálogo **Configuración del entorno**.
 
-Si desea actualizar varias variables, Adobe recomienda usar el cuadro de diálogo **Configuración del entorno** para actualizar todas las variables necesarias a la vez antes de hacer clic en **Guardar**. De este modo, puede agregarlas con una actualización al entorno.
+Si desea actualizar varias variables, Adobe recomienda usar el cuadro de diálogo **Configuración del entorno** para actualizar todas las variables necesarias a la vez antes de hacer clic en **Guardar**. Este método permite actualizarlos con una sola actualización del entorno.
 
 **Para actualizar una variable de entorno:**
 
@@ -91,7 +91,7 @@ Si desea actualizar varias variables, Adobe recomienda usar el cuadro de diálog
 1. En el cuadro de diálogo **Configuración del entorno**, haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en la última columna de la fila de la variable que desea cambiar.
 1. En el menú desplegable, haga clic en **Editar**.
 
-   ![Variable Editar o eliminar &#x200B;](assets/edit-delete-variable.png)
+   ![Variable Editar o eliminar ](assets/edit-delete-variable.png)
 
 1. Actualice el valor de la variable de entorno según sea necesario.
 Al editar un secreto, el valor solo se puede actualizar, no ver.
@@ -121,9 +121,9 @@ Al editar un secreto, el valor solo se puede actualizar, no ver.
 
 ## Uso de variables de entorno {#using}
 
-Las variables de entorno pueden hacer que las `pom.xml` configuraciones sean más seguras y flexibles. Por ejemplo, las contraseñas no tienen que estar codificadas y la configuración se puede adaptar según los valores de las variables de entorno.
+Las variables de entorno pueden hacer que las `pom.xml` configuraciones sean más seguras y flexibles. Por ejemplo, las contraseñas no necesitan valores codificados y la configuración se puede adaptar a los valores de las variables de entorno.
 
-Puede acceder a las variables y los secretos de entorno mediante XML de la siguiente manera:
+Puede acceder a las variables y los secretos de entorno a través de XML de la siguiente manera:
 
 `${env.VARIABLE_NAME}`
 
@@ -138,7 +138,7 @@ Las variables de entorno se pueden utilizar en varios lugares de la siguiente ma
 | Dónde se pueden utilizar variables de entorno | Descripción |
 | --- | --- |
 | Creación, previsualización y publicación | Tanto las variables de entorno normales como los secretos se pueden usar en los entornos de creación, previsualización y publicación. |
-| Dispatcher | Solo se pueden usar variables de entorno normales con [Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher).<ul><li>Los secretos no se pueden usar.</li><li>No se pueden usar variables de entorno en directivas `IfDefine`.</li><li>Debe validar el uso de variables de entorno con [Dispatcher localmente](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) antes de la implementación.</li></ul> |
+| Dispatcher | Con [Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher) solo se pueden usar variables de entorno normales.<ul><li>Los secretos no se pueden usar.</li><li>No se pueden usar variables de entorno en directivas `IfDefine`.</li><li>Debe validar el uso de variables de entorno con [Dispatcher localmente](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) antes de la implementación.</li></ul> |
 | Configuraciones de OSGi | En [Configuraciones OSGi](/help/implementing/deploying/configuring-osgi.md) se pueden usar tanto variables de entorno regulares como secretos. |
 | Variables de canalización | Además de las variables de entorno, también hay variables de canalización que se exponen durante la fase de compilación. Obtenga más información acerca de las variables de canalización en [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables). |
 
