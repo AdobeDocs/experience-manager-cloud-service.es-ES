@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '1594'
-ht-degree: 37%
+source-wordcount: '1796'
+ht-degree: 32%
 
 ---
 
@@ -25,17 +25,17 @@ La IU de Cloud Manager está compuesta principalmente por dos interfaces gráfic
 
 >[!TIP]
 >
->Consulte también el [recorrido de documentación de incorporación](/help/journey-onboarding/overview.md) para obtener una descripción general completa de cómo ponerse en marcha con AEM as a Cloud Service mediante Cloud Manager.
+>Consulte el [recorrido de la documentación de incorporación](/help/journey-onboarding/overview.md) para obtener una descripción general completa de cómo empezar rápidamente con AEM as a Cloud Service mediante Cloud Manager.
 
 
 ## Asistente de IA en AEM
 
-Para los clientes que han [completado criterios de requisitos previos](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), el Asistente de IA en AEM está disponible para los usuarios de su organización. Consulte [Asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Para los clientes que han [completado los criterios de requisitos previos](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), el Asistente de IA en AEM está disponible para los usuarios de su organización. Consulte [Asistente de IA en AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 
 ## Consola Mis programas {#my-programs-console}
 
-Al iniciar sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccionar la organización adecuada, se llega a la consola **Mis programas**.
+Cuando inicia sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y selecciona la organización adecuada, llegará a la consola **Mis programas**.
 
 ![Consola Mis programas](assets/my-programs-console.png)
 
@@ -76,7 +76,7 @@ La barra de herramientas del programa proporciona vínculos para cambiar entre l
 ![Barra de herramientas del programa](assets/program-toolbar.png)
 
 1. El selector **Mis programas** abre una lista desplegable donde puede seleccionar otros programas rápidamente o realizar acciones según el contexto, como crear un nuevo programa
-1. El vínculo **Introducción** le proporciona acceso al [recorrido de documentación de incorporación](/help/journey-onboarding/overview.md) para que pueda ponerse en marcha con Cloud Manager.
+1. El vínculo **Introducción** le permite acceder al [recorrido de documentación de incorporación](/help/journey-onboarding/overview.md) para empezar rápidamente con Cloud Manager.
 1. El botón de acción ofrece acciones adecuadas al contexto, como agregar un programa.
 
 ### Estadísticas y llamadas a la acción {#statistics}
@@ -162,7 +162,7 @@ El icono ![Más](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_
 
 ### Sección de vínculos rápidos {#quick-links-section}
 
-La sección de vínculos rápidos le permite acceder a recursos utilizados con frecuencia relacionados.
+La sección de vínculos rápidos le permite acceder a recursos relacionados y utilizados con más frecuencia.
 
 ## Página de información general del programa {#program-overview}
 
@@ -172,21 +172,21 @@ Cuando se selecciona un programa en la consola **[Mis programas](#my-programs-co
 
 La descripción general del programa le permite acceder a todos los detalles de un programa de Cloud Manager. Al igual que la consola **Mis programas**, consta de varias partes.
 
-1. [Barras de herramientas](#program-overview-toolbar) para volver rápidamente a la consola Mis programas y navegar por el programa
-1. [Pestañas](#program-tabs) para cambiar entre los diferentes aspectos del programa
-1. Una [llamada a la acción](#cta) basada en las últimas acciones del programa
-1. Una [descripción general de los entornos](#environments) del programa
-1. Una [descripción general de las canalizaciones](#pipelines) del programa
-1. Una [descripción general del rendimiento](#performance) del programa
-1. Vínculos a [recursos útiles](#useful-resources)
+1. [Barras de herramientas](#program-overview-toolbar) para volver rápidamente a la consola Mis programas y navegar por el programa.
+1. [Tabs](#program-tabs) para cambiar entre diferentes aspectos del programa.
+1. Una [llamada a la acción](#cta) basada en las últimas acciones del programa.
+1. Una [descripción general de los entornos](#environments) del programa.
+1. [descripción general de las canalizaciones](#pipelines) del programa.
+1. Una [descripción general del rendimiento](#performance) del programa.
+1. Vínculos a [recursos útiles](#useful-resources).
 
 ### Barras de herramientas {#program-overview-toolbar}
 
-Las barras de herramientas de la descripción general del programa son similares a las barras de herramientas de [Mis programas](#my-programs-toolbars). Aquí solo se ilustran las diferencias.
+Las barras de herramientas de la descripción general del programa son similares a las de la consola [Mis programas](#my-programs-toolbars). Aquí solo se ilustran las diferencias.
 
 #### Encabezado de Cloud Manager {#cloud-manager-header-2}
 
-En la esquina superior izquierda de la página se encuentra el encabezado Cloud Manager de Adobe. Puede hacer clic en ![Icono de menú lateral](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar u ocultar el menú lateral de pestañas a otras áreas del software.
+En la esquina superior izquierda de la página se encuentra el encabezado Cloud Manager de Adobe. Puede hacer clic en ![icono del menú lateral](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar u ocultar el menú lateral de pestañas a otras áreas de la aplicación.
 
 ![menú lateral de Cloud Manager](assets/cloud-manager-hamburger.png)
 
@@ -194,7 +194,7 @@ Haga clic en Adobe Cloud Manager para volver a Inicio.
 
 #### Barra de herramientas del programa {#program-toolbar-2}
 
-La barra de herramientas de programas le permite cambiar rápidamente a otros programas, pero además le da acceso a acciones apropiadas para el contexto, como agregar y editar el programa.
+La barra de herramientas del programa le permite cambiar a otros programas rápidamente, pero también le permite acceder a acciones adecuadas al contexto, como agregar y editar el programa.
 
 ![Barra de herramientas del programa](assets/cloud-manager-program-toolbar.png)
 
@@ -234,11 +234,11 @@ En la esquina superior izquierda del [encabezado de Cloud Manager](#cloud-manage
 
 ### Llamada a la acción {#cta}
 
-La sección de llamada a la acción le proporciona información útil según el estado del programa. Para un programa nuevo, es posible que vea los pasos siguientes dados y un recordatorio de una fecha de lanzamiento, [establecida durante la creación del programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+La sección de llamada a la acción le proporciona información útil según el estado del programa. Para un programa nuevo, puede ver los pasos siguientes y un recordatorio de una fecha de lanzamiento que se [estableció durante la creación del programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Call-to-action para un nuevo programa](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
-Para un programa activo, el estado de la última implementación con vínculos para obtener más información e iniciar una nueva implementación.
+Para un programa activo, el estado de la última implementación se muestra con vínculos para obtener detalles e iniciar una nueva implementación.
 
 ![Llamada a la acción](/help/implementing/cloud-manager/assets/info-banner.png)
 
