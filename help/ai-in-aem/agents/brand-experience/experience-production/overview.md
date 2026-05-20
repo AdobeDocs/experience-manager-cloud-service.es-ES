@@ -4,7 +4,7 @@ description: Descubra cómo Experience Production Agent en AEM le ayuda a aceler
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: fe41f25ddc2b7ec20b74c72d4a8d19d936c22539
+source-git-commit: 5d1a560b4eb386d0c3795d6634742ffce8ef4c71
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 4%
@@ -33,7 +33,7 @@ El agente proporciona los siguientes trabajos:
 
 ### Trabajo de actualización de contenido {#content-update}
 
-El trabajo [Actualización de contenido](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) actualiza fácilmente el contenido existente, incluidos los fragmentos de contenido, las páginas, los formularios y los recursos. El agente puede realizar acciones como actualizar, quitar, reemplazar o agregar elementos de contenido para mantener las experiencias precisas y actualizadas. Las entradas pueden ser descripciones en lenguaje natural y, cuando se utilizan con PDF de Jira y capturas de pantalla, pueden proporcionar entradas a.
+El trabajo [Actualización de contenido](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) actualiza fácilmente el contenido existente, incluidos los fragmentos de contenido, las páginas, los formularios y los recursos. El agente puede realizar acciones como actualizar, quitar, reemplazar y agregar elementos de contenido para mantener las experiencias precisas y actualizadas. Las entradas pueden ser descripciones en lenguaje natural y, cuando se utilizan con Jira, los PDF y las capturas de pantalla pueden proporcionar entradas a.
 
 ### Trabajo de creación de contenido {#content-create}
 
@@ -65,4 +65,4 @@ El agente puede trabajar con otras habilidades de agente, por ejemplo:
 
 Los siguientes recursos pueden resultar útiles a medida que continúa explorando Experience Production Agent:
 
-* También puede usar el [Libro de trabajo de Experience Production Agent](https://www.adobe.com/go/aem-epa-workbook_es) para obtener instrucciones prácticas y guiadas.
+* También puede usar el [Libro de trabajo de Experience Production Agent](https://www.adobe.com/go/aem-epa-workbook) para obtener instrucciones prácticas y guiadas.
