@@ -39,7 +39,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483063/?captions=spa&quality=12)
 -->
 
 ## Programas de AEM Beta {#aem-beta-programs}
@@ -147,7 +147,7 @@ Experience Governance MCP Server ya está disponible de forma general (GA). Se i
 Obtenga más información acerca de [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) y el [Agente de control](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486261/?captions=spa&learn=on&enablevpops)
 
 #### Conector de Claude {#aem-claude-connector}
 
