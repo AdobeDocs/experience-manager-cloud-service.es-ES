@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 8371bceaf116cdcd4e0542dd1b8d772d2d12a05d
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2274'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,7 @@ Las solicitudes de contenido pueden tener variaciones dentro de las herramientas
 | Bots | Los bots desconocidos que AEM no ha identificado previamente y eliminado pueden causar discrepancias de seguimiento. |
 | Grupos de informes | Las páginas dentro de la misma instancia de AEM pueden informar a diferentes grupos de informes de análisis. Este proceso puede dividir los datos en varios grupos de informes, según la configuración. |
 | Herramientas de seguridad y monitorización de terceros | Las herramientas de monitorización y análisis de seguridad (por ejemplo, los comprobadores de tiempo de actividad o los analizadores de vulnerabilidades) pueden solicitar páginas y generar solicitudes de contenido del lado del servidor que no son visibles en los informes de análisis. |
-| Acceso a API | Las solicitudes a páginas de AEM o contenido a través de API (por ejemplo, mediante Adobe Experience Manager as a Headless CMS) siguen contando como solicitudes de contenido, pero no almacenan en déclencheur el seguimiento de Analytics. |
+| Acceso a API | Las solicitudes a páginas de AEM o contenido a través de API (por ejemplo, a través de Adobe Experience Manager as a Headless CMS) siguen contando como solicitudes de contenido, pero no almacenan en déclencheur el seguimiento de Analytics. |
 | Solicitudes de recuperación previa | La recuperación previa (por ejemplo, mediante un trabajo de servicio o una función perimetral) puede aumentar los volúmenes de tráfico al solicitar páginas por adelantado. Estas solicitudes se cuentan del lado del servidor, pero no ejecutan el código de Analytics del lado del cliente. |
 | DDOS | Adobe utiliza el filtrado para detectar y bloquear muchos ataques DDoS. Sin embargo, algunas solicitudes de ataque se pueden seguir contando como solicitudes de contenido antes de que se apliquen los filtros. |
 | Bloqueadores de tráfico | Las funciones de privacidad en el explorador o los servidores de seguridad corporativos pueden bloquear la carga de scripts de análisis. Estos usuarios siguen generando solicitudes de contenido del lado del servidor. |

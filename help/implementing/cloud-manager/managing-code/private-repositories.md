@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar Cloud Manager para que 
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1028'
 ht-degree: 35%
 
 ---
@@ -74,7 +74,7 @@ La configuración de un repositorio privado de GitHub Cloud en Cloud Manager con
    | Campo | Descripción |
    | --- | --- |
    | Nombre del repositorio | Un nombre expresivo para el nuevo repositorio. |
-   | URL del repositorio | La dirección URL del repositorio privado, que debe finalizar en `.git`.<br>Por ejemplo, *`https://github.com/org-name/repo-name.git`* (la ruta de URL es solo para fines ilustrativos). |
+   | URL del repositorio | La dirección URL del repositorio privado, que debe finalizar en `.git`.<br>Por ejemplo, *`https://github.com/org-name/repo-name.git`* (la ruta de la dirección URL es sólo con fines ilustrativos). |
    | Descripción (opcional) | Breve descripción del repositorio. |
 
 1. Seleccione **Guardar**.
@@ -97,8 +97,8 @@ Cloud Manager ahora conoce su repositorio de GitHub, pero aún necesita acceso. 
 
    |  | Descripción |
    | --- | --- |
-   | **Paso 1: Aplicación GitHub** | Cloud Manager utiliza una aplicación de GitHub para interactuar con su repositorio privado de forma segura.<br>· Un propietario de su organización de GitHub debe instalar la aplicación ubicada en `https://github.com/apps/cloud-manager-for-aem` y conceder acceso al repositorio.<br>· Para obtener más información sobre cómo instalar y conceder acceso, consulte la documentación de GitHub. |
-   | **Paso 2: Archivo Secreto** | Para mejorar la seguridad, debe crear un archivo secreto en la rama predeterminada del repositorio.<br>· Haga clic en **Generar** y luego haga clic en **Confirmar**. Cloud Manager genera el contenido del archivo privado en el campo de texto **Contenido de archivo secreto**.<br>· Haga clic en ![Icono de copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar el contenido de ese campo. El contenido del archivo secreto solo se mostrará una vez. Si no copia el contenido antes de cerrar este cuadro de diálogo, vuelva a generar el secreto. |
+   | **Paso 1: Aplicación GitHub** | Cloud Manager usa una aplicación de GitHub para interactuar con su repositorio privado de forma segura.<br>· Un propietario de su organización de GitHub debe instalar la aplicación ubicada en `https://github.com/apps/cloud-manager-for-aem` y conceder acceso al repositorio.<br>· Para obtener más información sobre cómo instalar y conceder acceso, consulte la documentación de GitHub. |
+   | **Paso 2: Archivo Secreto** | Para mejorar la seguridad, debe crear un archivo secreto en la rama predeterminada del repositorio.<br>· Haga clic en **Generar** y luego haga clic en **Confirmar**. Cloud Manager genera el contenido del archivo privado en el campo de texto **Contenido de archivo secreto**.<br>· Haga clic en ![Icono de copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar el contenido de ese campo. El contenido del archivo secreto solo se mostrará una vez. Si no copia el contenido antes de cerrar este cuadro de diálogo, vuelva a generar el secreto. |
 
 1. Cree un nuevo archivo en la rama predeterminada de su repositorio de GitHub llamado:
 
@@ -142,7 +142,7 @@ Cuando se combina o cierra la solicitud de extracción, la canalización de cali
 
 >[!TIP]
 >
->Consulte [Anotaciones de comprobación de GitHub](github-annotations.md) para obtener más información sobre la información que proporciona GitHub cuando se ejecutan las comprobaciones de solicitudes de extracción.
+>Consulte [Anotaciones de comprobación de GitHub](github-annotations.md) para obtener más información sobre la información proporcionada a través de GitHub cuando se ejecutan las comprobaciones de solicitudes de extracción.
 
 >[!TIP]
 >

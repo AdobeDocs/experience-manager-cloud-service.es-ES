@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 13%
+source-wordcount: '1116'
+ht-degree: 16%
 
 ---
 
@@ -31,7 +31,7 @@ La página **Certificados SSL** proporciona el estado de sus certificados SSL.
 | Estado del certificado SSL | Descripción |
 | --- | --- |
 | Verde | El certificado es válido durante al menos 14 días desde la fecha actual. |
-| Naranja | El certificado caducará en menos de 14 días.<br>· Asegúrese de que tiene un plan para renovar su certificado y reemplazarlo mediante la interfaz de usuario de Cloud Manager para evitar posibles interrupciones o accesos al sitio.<br>· Cloud Manager envía notificaciones regulares en la interfaz de usuario para avisarle de una caducidad inminente del certificado. |
+| Naranja | El certificado caducará en menos de 14 días.<br>· Asegúrese de que tiene un plan para renovar el certificado y reemplazarlo a través de la interfaz de usuario de Cloud Manager para evitar posibles interrupciones o accesos al sitio.<br>· Cloud Manager envía notificaciones regulares en la interfaz de usuario para avisarle de una caducidad inminente del certificado. |
 | Rojo | El certificado SSL ha caducado.<br>Ver [Actualizar un certificado SSL administrado por un cliente caducado](#update-ssl-certificate) o [Eliminar un certificado SSL](#deleting-an-ssl-certificate). |
 
 ## Actualizar un certificado SSL administrado por el cliente caducado {#update-ssl-certificate}

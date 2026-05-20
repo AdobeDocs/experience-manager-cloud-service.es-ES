@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f186d0570623007cd3a0685dde2703184c63256c
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1601'
 ht-degree: 8%
 
 ---
@@ -63,7 +63,7 @@ Ver [opciones adicionales del programa de producción](#options).
 
     >[!NOTE]
     >
-    >Si su programa utiliza Edge Delivery Services para la entrega, es posible que no se requiera un nivel de publicación. Con la función flexible de nivel de publicación (Beta), puede configurar si desea aprovisionar un nivel de publicación en la pestaña Soluciones y complementos. Consulte [Nivel de publicación flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).¡
+    >Si su programa utiliza Edge Delivery Services para la entrega, es posible que no se requiera un nivel de publicación. Con la función flexible de nivel de publicación (Beta), puede configurar si desea aprovisionar un nivel de publicación en la pestaña Soluciones y complementos. Consulte [Nivel de publicación flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
     
     ![Seleccionar soluciones](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-solutions.png)
 
@@ -136,9 +136,9 @@ No todas las arquitecturas requieren un nivel de publicación. La siguiente tabl
 
 | Arquitectura | Publicar nivel |
 | --- | --- |
-| AEM Sites tradicional | Necesario |
-| Sin encabezado/API-First | Necesario |
-| Edge Delivery Services | No es necesario |
+| AEM Sites tradicional | Requerido |
+| Sin encabezado/API-First | Requerido |
+| Edge Delivery Services | No obligatorio |
 
 Al habilitar el nivel de publicación solo cuando es necesario, los equipos pueden hacer lo siguiente:
 

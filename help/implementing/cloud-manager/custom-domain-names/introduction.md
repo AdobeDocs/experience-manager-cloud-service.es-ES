@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 15da86656733074afccef85910cc8ea0109933e6
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 35%
+source-wordcount: '798'
+ht-degree: 38%
 
 ---
 
@@ -32,7 +32,7 @@ Se recomienda tener un nombre de dominio para el sitio que sea memorable para lo
 
 >[!IMPORTANT]
 >
-> Los dominios predeterminados de adobeaemcloud.com **no deben usarse** para ofrecer contenido importante para fines de SEO. Los motores de búsqueda no pueden indexar los dominios y subdominios adobeaemcloud.com porque sirven a [robots.txt predeterminado](https://cdn.adobeaemcloud.com/robots.txt) que impide el rastreo y la indexación. En su lugar, use su propio dominio personalizado para publicar un archivo robots.txt personalizado.
+> Los dominios predeterminados de adobeaemcloud.com **no deben usarse** para ofrecer contenido importante para fines de SEO. Los motores de búsqueda no pueden indexar los dominios y subdominios adobeaemcloud.com porque sirven a [robots.txt predeterminado](https://cdn.adobeaemcloud.com/robots.txt) que impide rastrear e indexar. En su lugar, use su propio dominio personalizado para publicar un archivo robots.txt personalizado.
 
 Puede comprar un nombre de dominio a través de un registrador de nombres de dominio, una empresa u organización que administre y venda nombres de dominio. Los registradores de nombres de dominio administran nombres de dominio en servidores DNS.
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service ofrece un servicio integrado de CDN (red de distribución
 * Cloud Manager administra los nombres de dominio personalizados y los certificados instalados en la CDN administrada por AEM.
 * Los nombres de dominio personalizados y los certificados instalados en una CDN BYO se administran directamente dentro de esa CDN.
 
-**Los dominios administrados en su propia CDN no requieren instalación a través de Cloud Manager**. Están disponibles para AEM mediante X-Forwarded-Host y coinciden con los vhosts definidos en Dispatcher. Consulte la [Documentación de la CDN](/help/implementing/dispatcher/cdn.md).
+**Los dominios administrados en su propia CDN no requieren instalación a través de Cloud Manager**. Están disponibles para AEM a través de X-Forwarded-Host y coinciden con los vhosts definidos en Dispatcher. Consulte la [Documentación de la CDN](/help/implementing/dispatcher/cdn.md).
 
 En un entorno, puede tener ambos dominios instalados en la CDN administrada por AEM e instalados en una CDN por BYO.
 
