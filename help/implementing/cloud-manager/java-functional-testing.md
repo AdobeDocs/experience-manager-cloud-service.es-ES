@@ -1,19 +1,19 @@
 ---
-title: Java &trade; Pruebas funcionales
+title: Pruebas funcionales de Java &trade;
 description: Aprenda a escribir pruebas funcionales de Java &trade; para AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 32e19eea5a7cf90f9de57b7d71d776b4452e70ee
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 77%
+source-wordcount: '889'
+ht-degree: 64%
 
 ---
 
 
-# Prueba funcional de Java™
+# Pruebas funcionales de Java™
 
 Obtenga información sobre cómo escribir pruebas funcionales de Java™ para AEM as a Cloud Service
 
@@ -25,7 +25,7 @@ Al crear un nuevo repositorio de código en Cloud Manager, se crea una carpeta `
 >
 >Si el repositorio se creó antes de que Cloud Manager creara automáticamente carpetas `it.tests`, también puede generar la última versión utilizando el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
-Una vez que tenga el contenido de la carpeta `it.tests`, puede utilizarlo como base para sus propias pruebas y, a continuación:
+Una vez que tenga el contenido de la carpeta `it.tests`, puede utilizarlos como base para sus propias pruebas y, a continuación, completar los pasos siguientes:
 
 1. [Desarrolle sus casos de prueba](#writing-functional-tests).
 1. [Ejecute las pruebas localmente](#local-test-execution).
@@ -35,7 +35,7 @@ Una vez que tenga el contenido de la carpeta `it.tests`, puede utilizarlo como b
 
 Las mismas herramientas que utiliza Adobe para escribir pruebas funcionales de productos se pueden usar para escribir las pruebas funcionales personalizadas. Utilice las [pruebas funcionales del producto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) en GitHub como ejemplo de cómo escribir las pruebas.
 
-El código para la prueba funcional personalizada es el código Java™ ubicado en la carpeta `it.tests` del proyecto. Debe producir un único JAR con todas las pruebas funcionales. Si la generación produce más de un JAR de prueba, el JAR seleccionado no es determinista. Si no produce ningún JAR de prueba, el paso de prueba se aprueba de forma predeterminada. Consulte [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) para ver pruebas de ejemplo.
+El código para las pruebas funcionales personalizadas es el código Java™ de la carpeta `it.tests` de su proyecto. Debe producir un único JAR con todas las pruebas funcionales. Si la generación produce más de un JAR de prueba, el JAR seleccionado no es determinista. Si no produce ningún JAR de prueba, el paso de prueba se aprueba de forma predeterminada. Consulte [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) para ver pruebas de ejemplo.
 
 Las pruebas se ejecutan en una infraestructura de pruebas mantenida por Adobe que incluye al menos dos instancias de autor, dos instancias de publicación y una configuración de Dispatcher. Esta configuración significa que las pruebas funcionales personalizadas se ejecutan con toda la pila de AEM.
 
@@ -99,9 +99,9 @@ Consulte el [`aem-testing-clients`repositorio de GitHub](https://github.com/adob
 
 >[!NOTE]
 >
->Para ejecutar las pruebas funcionales desde el equipo local, cree un usuario con permisos de tipo administrador para lograr el mismo comportamiento.
+>Para ejecutar pruebas funcionales en el equipo local, cree un usuario con permisos administrativos para garantizar el mismo comportamiento.
 
-1. La infraestructura contenerizada que se contempla para las pruebas funcionales está limitada por los siguientes límites:
+1. Los límites siguientes limitan la infraestructura en contenedores con ámbitos para las pruebas funcionales:
 
 | Tipo | Valor | Descripción |
 |----------------------|-------|--------------------------------------------------------------------|
@@ -129,11 +129,11 @@ Los próximos cambios en la infraestructura en contenedores para ejecutar prueba
 >Este cambio debe realizarse antes del 6 de abril de 2024.
 >No actualizar la biblioteca de dependencias puede provocar errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
 
-### Ejecución de pruebas locales {#local-test-execution}
+### Ejecutar pruebas locales {#local-test-execution}
 
 Antes de activar pruebas funcionales en una canalización de Cloud Manager, se recomienda ejecutar las pruebas funcionales localmente mediante [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) o una instancia de AEM as a Cloud Service.
 
-#### Ejecutar en un IDE {#running-in-an-ide}
+#### Ejecutar en un entorno de desarrollo integrado (IDE) {#running-in-an-ide}
 
 Como las clases de prueba son pruebas JUnit, se pueden ejecutar desde IDE de Java ™ convencionales como Eclipse, IntelliJ y NetBeans. Dado que tanto las pruebas funcionales de producto como las personalizadas se basan en la misma tecnología, ambas se pueden ejecutar localmente al copiar las pruebas de producto en las pruebas personalizadas.
 
@@ -141,7 +141,7 @@ Sin embargo, al ejecutar estas pruebas, será necesario establecer una serie de 
 
 Las propiedades del sistema son las siguientes:
 
-| Propiedad | Descripción | Ejemplos |
+| Propiedad | Descripción | Ejemplo |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
 | `sling.it.instances` | El número de instancias que coinciden con el servicio en la nube debe establecerse en `2`. | `2` |
 | `sling.it.instance.url.1` | Se establece en URL del autor. | `http://localhost:4502` |
@@ -153,7 +153,7 @@ Las propiedades del sistema son las siguientes:
 | `sling.it.instance.adminUser.2` | Configúrelo en usuario administrador de publicación. | `admin` |
 | `sling.it.instance.adminPassword.2` | Configúrelo en Contraseña de administrador de publicación. |                         |
 
-#### Ejecución de todas las pruebas con Maven {#using-maven}
+#### Ejecutar todas las pruebas con Maven {#using-maven}
 
 1. Abra un shell y vaya a la carpeta `it.tests` en el repositorio.
 

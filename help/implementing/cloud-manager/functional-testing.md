@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b258bc6aaad29843b19eef244760c1e39f27dd09
+source-git-commit: 4851afdacb54e4c9bffc3df707afb057cb361675
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 9%
+source-wordcount: '1383'
+ht-degree: 10%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe proporciona varias puertas de calidad integradas, mientras que otras requi
 
 Las puertas de calidad integradas validan principalmente la funcionalidad del producto AEM en el contexto de la aplicación de AEM. Por el contrario, las puertas de calidad personalizadas que configure están diseñadas para comprobar que las funciones críticas de la aplicación y las interacciones del usuario funcionan según lo previsto. De forma conjunta, estos dos conjuntos de puertas de calidad trabajan juntos para garantizar implementaciones automatizadas sólidas y seguras, tanto para las modificaciones de código como para las actualizaciones de productos de AEM.
 
-Es importante tener en cuenta que estas puertas de calidad no están pensadas para ser un marco de prueba completo para toda la estrategia de prueba. El producto AEM se somete a amplias pruebas antes de entrar en el proceso de implementación del servicio en la nube de AEM. Del mismo modo, la aplicación ya debe ser de alta calidad antes de que llegue a la fase de implementación. Este enfoque garantiza que las puertas de calidad se centren en su objetivo principal de salvaguardar el proceso de despliegue, en lugar de ser un sustituto de un régimen de pruebas completo.
+Es importante tener en cuenta que estas puertas de calidad no están pensadas para ser un marco de prueba completo para toda la estrategia de prueba. El producto AEM se somete a amplias pruebas antes de entrar en el proceso de implementación de AEM Cloud Service. Del mismo modo, la aplicación ya debe ser de alta calidad antes de que llegue a la fase de implementación. Este enfoque garantiza que las puertas de calidad se centren en su objetivo principal de salvaguardar el proceso de despliegue, en lugar de ser un sustituto de un régimen de pruebas completo.
 
 ## Puertas de calidad en pruebas
 
@@ -44,7 +44,7 @@ El diagrama siguiente proporciona una vista detallada de las puertas de calidad 
 
 ![Puertas de calidad para la implementación de AEM Cloud Service](assets/functional-testing/quality-gates-overview.png)
 
-### Puertas de calidad proporcionadas por el cliente
+### Resumen de las puertas de calidad proporcionadas por el cliente
 
 |                               | Pruebas de unidad | Pruebas funcionales <br/> personalizadas | Pruebas de IU <br/> personalizadas | Validaciones del cliente <br/> | Pruebas <br/> manuales |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
@@ -56,13 +56,13 @@ El diagrama siguiente proporciona una vista detallada de las puertas de calidad 
 
 ### Prueba unitaria
 
-Se recomienda proporcionar las pruebas unitarias para la aplicación de AEM, que son la base de cada estrategia de prueba. Están pensados para correr rápido y a menudo y dar una respuesta temprana y rápida. Están totalmente integrados en los flujos de trabajo de los desarrolladores, su propio CD/CI y las canalizaciones de implementación del servicio en la nube de AEM.
+Se recomienda proporcionar las pruebas unitarias para la aplicación de AEM, que son la base de cada estrategia de prueba. Están diseñadas para ejecutarse de forma rápida y frecuente, y proporcionan comentarios tempranos. Están totalmente integrados en los flujos de trabajo de los desarrolladores, su propio CI/CD y las canalizaciones de implementación de AEM Cloud Service.
 
-Se implementan mediante JUnit y se ejecutan con Maven. Consulte el [módulo principal del tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) para ver un ejemplo de prueba unitaria de AEM y cómo empezar.
+Se implementan mediante JUnit y se ejecutan con Maven. Consulte el [módulo principal del tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) para ver un ejemplo de prueba unitaria de AEM y cómo empezar.
 
 ### Calidad de código
 
-Esta puerta de calidad está configurada de forma predeterminada y ejecuta un análisis de código estático en el código de la aplicación AEM.
+Esta puerta de calidad está preconfigurada y ejecuta un análisis de código estático en el código de la aplicación AEM.
 
 Consulte [Prueba de calidad de código](/help/implementing/cloud-manager/code-quality-testing.md) y [Reglas de calidad de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md) para obtener más información.
 
@@ -71,7 +71,7 @@ Consulte [Prueba de calidad de código](/help/implementing/cloud-manager/code-qu
 Las pruebas funcionales del producto son pruebas de integración (TI) HTTP estables para la funcionalidad principal de AEM, incluidas las tareas de creación y replicación. Adobe los proporciona y los mantiene de forma predeterminada. Su objetivo es evitar que se implementen cambios en el código de aplicación personalizado si rompen la funcionalidad principal del producto de AEM.
 
 Utilizan JUnit para la implementación, se ejecutan con Maven y dependen de los [clientes de prueba de AEM](https://github.com/adobe/aem-testing-clients) oficiales. El grupo de pruebas del producto se mantiene como
-un [proyecto de código abierto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), sigue las prácticas recomendadas y puede considerarse un buen punto de partida para la implementación de pruebas.
+un [proyecto de código abierto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), sigue las prácticas recomendadas y se puede considerar un buen punto de partida para la implementación de pruebas.
 
 ### Pruebas funcionales personalizadas
 
@@ -89,9 +89,9 @@ Consulte [Pruebas funcionales de Java](/help/implementing/cloud-manager/java-fun
 
 ### Pruebas de IU personalizadas
 
-Para maximizar el control de riesgos para el desarrollo específico del cliente, Adobe le recomienda capturar las pruebas de interfaz de usuario críticas en AEM as a Cloud Service. Manténgalos limitados, pero centrados en maximizar su impacto en la experiencia del cliente.
+Para maximizar el control de riesgos para el desarrollo específico del cliente, Adobe le recomienda incluir pruebas de IU críticas en AEM as a Cloud Service. Mantenga las pruebas limitadas y centradas en el impacto de la experiencia del cliente.
 
-Las pruebas se empaquetan en una imagen Docker diseñada para ser lo más volátil posible (con soporte para Cypress, Playwright, Selenium, Java y JavaScript). Siguen las mismas características y propósitos que las pruebas funcionales personalizadas.
+Las pruebas están empaquetadas en una imagen Docker diseñada para una máxima volatilidad, con soporte para Cypress, Playwright, Selenium, Java y JavaScript. Siguen las mismas características y propósitos que las pruebas funcionales personalizadas.
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Consulte [Pruebas de IU personalizadas](/help/implementing/cloud-manager/ui-test
 
 ### Auditoría de experiencias
 
-La puerta de calidad de auditoría de experiencias está realizando [auditorías de Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) en la página web del cliente.
+La puerta de calidad de auditoría de experiencia realiza [auditorías de Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) en la página web del cliente.
 
 AEM proporciona esta puerta de calidad de forma predeterminada, pero no bloquea las canalizaciones de implementación. De manera predeterminada, se realiza una auditoría en la página raíz (`/`) de la instancia de publicación. Puede contribuir configurando hasta 25 rutas personalizadas que se tienen en cuenta en las auditorías.
 
