@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 73%
+source-wordcount: '593'
+ht-degree: 53%
 
 ---
 
@@ -23,7 +23,7 @@ Descubra cómo Cloud Manager le notifica de los eventos importantes.
 
 Estas notificaciones se envían a través del sistema de notificación de [!UICONTROL Experience Cloud] a los usuarios con los roles de **Propietario del negocio**, **Administrador de programa** y **Administrador de implementación**.
 
-Las notificaciones aparecen en una barra lateral dentro de [!UICONTROL Cloud Manager] y en todo Adobe [!UICONTROL Experience Cloud]. El icono de campana del encabezado se señala cuando tiene nuevas notificaciones.
+Las notificaciones aparecen en una barra lateral dentro de [!UICONTROL Cloud Manager] y en todo Adobe [!UICONTROL Experience Cloud]. Al icono de campana del encabezado se le asigna un distintivo cuando tiene nuevas notificaciones.
 
 ![Icono de notificaciones](assets/notifications-bell-badged.png)
 
@@ -51,7 +51,7 @@ Haga clic en el icono de engranaje en la parte superior de la barra lateral de n
 
 ### Suscripciones {#subscriptions}
 
-Las suscripciones definen para qué productos recibe notificaciones y cuáles.
+Las suscripciones definen los productos para los que recibe notificaciones y qué tipos de notificaciones.
 
 ![Suscripciones de notificaciones](assets/notifications-subscriptions.png)
 
@@ -65,11 +65,11 @@ Las alertas de prioridad están marcadas con la etiqueta **HIGH**. Puede configu
 
 ![Prioridad de notificaciones](assets/notifications-priority.png)
 
-Utilice la lista desplegable para añadir a la lista de categorías que cumplen los requisitos de prioridad. Haga clic en la X situada junto a los nombres de las categorías para quitarlas.
+Utilice el menú desplegable para añadir a la lista de categorías que cumplen los requisitos de prioridad. Haga clic en la X situada junto a los nombres de las categorías para eliminarlas.
 
 ### Alertas {#alerts}
 
-Las alertas aparecen en la esquina superior derecha de la ventana durante unos segundos. Utilice la sección **Alertas** para definir para qué notificaciones recibe alertas.
+Las alertas aparecen en la esquina superior derecha de la ventana durante unos segundos. Utilice la sección **Alertas** para definir las notificaciones para las que recibirá alertas.
 
 ![Alertas de notificación](assets/notifications-alerts.png)
 
@@ -91,4 +91,4 @@ De forma predeterminada, no se envían correos electrónicos. Puede optar por re
 * Cada día
 * Cada semana
 
-Al elegir **Notificaciones inmediatas**, los mensajes de correo electrónico se envían inmediatamente para cada notificación. Para **Resumen diario** y **Resumen semanal**, puede elegir cuándo se envía el resumen diario y en qué día y cuándo se envía el resumen semanal.
+Al elegir **Notificaciones inmediatas**, los mensajes de correo electrónico se envían inmediatamente para cada notificación. Para **Resumen diario** y **Resumen semanal**, puede elegir cuándo se enviará el compendio diario y en qué día y cuándo se enviará el compendio semanal.

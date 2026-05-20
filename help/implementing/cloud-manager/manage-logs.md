@@ -5,10 +5,10 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 68%
+source-wordcount: '402'
+ht-degree: 39%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 68%
 
 Obtenga información sobre cómo acceder y administrar registros para ayudarle en el proceso de desarrollo en AEM as a Cloud Service.
 
-Puede acceder a una lista de archivos de registro disponibles para el entorno seleccionado mediante la tarjeta **Entornos** de la página **Información general** o de la página Detalles del entorno.
+Puede acceder a una lista de archivos de registro disponibles para el entorno seleccionado mediante la tarjeta **Entornos** de la página **Información general** o la página **Detalles del entorno**.
 
 Los registros se conservan durante siete días.
 
@@ -33,7 +33,7 @@ Los registros se conservan durante siete días.
 
    ![Elemento de menú Descargar registros](assets/download-logs1.png)
 
-1. En el cuadro de diálogo **Descargar registros**, seleccione el **Servicio** apropiado del menú desplegable
+1. En el cuadro de diálogo **Descargar registros**, seleccione el **servicio** apropiado en el menú desplegable.
 
    ![Cuadro de diálogo Descargar registros](assets/download-preview.png)
 
@@ -51,19 +51,19 @@ También puede acceder a sus registros desde la página **Entornos**.
 
 Además de descargar registros a través de la interfaz de usuario, también están disponibles a través de la API y la interfaz de la línea de comandos.
 
-Para descargar los archivos de registro para un entorno específico, el comando sería similar al siguiente.
+Para descargar los archivos de registro para un entorno específico, el comando es similar al siguiente.
 
 ```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Además, puede poner en cola los registros a través de la interfaz de línea de comandos.
+Además, puede rastrear registros utilizando la interfaz de línea de comandos.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Para obtener el ID de entorno (1884 en este ejemplo) y las opciones de servicio o nombre de registro disponibles, puede utilizar los siguientes comandos.
+Para obtener el ID de entorno (1884 en este ejemplo) y las opciones de servicio o nombre de registro disponibles, puede utilizar los siguientes comandos:
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -90,14 +90,14 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->Consulte [este recurso de vídeo](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) para obtener más información sobre la depuración de AEM as a Cloud Service.
+>Vea [este recurso de vídeo](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) para obtener más información sobre la depuración de AEM as a Cloud Service.
 
 Consulte los siguientes recursos adicionales para obtener más información sobre la API de Cloud Manager y la CLI de Adobe I/O:
 
-* [&#x200B; Documentación de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [Documentación de API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [CLI de Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 Consulte los siguientes recursos adicionales para obtener más información sobre los archivos de registro en AEM as a Cloud Service:
 
-* [Archivos de registro de AEM de Cloud 5](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [Depuración de AEM as a Cloud Service mediante registros](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Archivos de registro de AEM de Cloud 5](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Depuración de AEM as a Cloud Service mediante registros](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

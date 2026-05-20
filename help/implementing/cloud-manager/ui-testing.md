@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '2888'
-ht-degree: 55%
+source-wordcount: '2891'
+ht-degree: 47%
 
 ---
 
@@ -26,11 +26,11 @@ La prueba de IU personalizada es una característica opcional que le permite cre
 
 AEM ofrece un conjunto integrado de [Puertas de calidad de Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantizar actualizaciones sin problemas en las aplicaciones personalizadas. En concreto, las puertas de pruebas de TI ya admiten la creación y automatización de pruebas personalizadas mediante las API de AEM.
 
-Las pruebas de IU se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). Además, se puede generar fácilmente un proyecto de pruebas de interfaz de usuario utilizando [el arquetipo del proyecto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview).
+Las pruebas de IU se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). Además, se puede generar fácilmente un proyecto de prueba de interfaz de usuario usando [el arquetipo del proyecto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview).
 
 El Adobe fomenta el uso de Cypress, ya que ofrece recarga en tiempo real y espera automática, lo que ayuda a ahorrar tiempo y mejora la productividad durante las pruebas. Cypress también proporciona una sintaxis sencilla e intuitiva, lo que facilita el aprendizaje y el uso, incluso para usuarios que son nuevos en las pruebas.
 
-Las pruebas de interfaz de usuario se ejecutan como una puerta de calidad en el paso [**Pruebas de IU personalizadas**](/help/implementing/cloud-manager/deploy-code.md), necesario en [canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md), opcional en [canalizaciones que no sean de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Cualquier prueba de la IU, incluidas la regresión y las nuevas funcionalidades, permite detectar y notificar errores.
+Las pruebas de interfaz de usuario se ejecutan como una puerta de calidad en el paso [**Pruebas de IU personalizadas**](/help/implementing/cloud-manager/deploy-code.md), necesario en [canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md), opcional en [canalizaciones que no sean de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Cualquier prueba de la interfaz de usuario, incluidas la regresión y las nuevas funcionalidades, permite detectar y notificar errores.
 
 A diferencia de las pruebas funcionales personalizadas, que son pruebas HTTP escritas en Java, las pruebas de interfaz de usuario pueden ser una imagen Docker. Las pruebas se pueden escribir en cualquier idioma, siempre y cuando sigan las convenciones definidas en la sección [Pruebas de generación de interfaz de usuario](#building-ui-tests).
 
@@ -64,9 +64,9 @@ En esta sección se describen los pasos necesarios para configurar las pruebas d
 
 ## Generación de pruebas de IU {#building-ui-tests}
 
-Un proyecto de Maven genera un contexto de generación de Docker. Este contexto de generación de Docker describe cómo crear una imagen de Docker que contenga las pruebas de IU, que Cloud Manager usa para generar una imagen de Docker que contenga las pruebas de IU reales.
+Un proyecto de Maven genera un contexto de generación de Docker. Este contexto de generación de Docker describe cómo crear una imagen de Docker. La imagen contiene las pruebas de interfaz de usuario que Cloud Manager utiliza para generar una imagen de Docker que contiene las pruebas de interfaz de usuario reales.
 
-En esta sección se describen los pasos necesarios para agregar un proyecto de pruebas de interfaz de usuario al repositorio.
+En esta sección se describen los pasos necesarios para agregar un proyecto de prueba de IU al repositorio.
 
 >[!TIP]
 >
@@ -118,7 +118,7 @@ El archivo `pom.xml` se encarga de la generación de Maven. Agregue una ejecuci�
 </plugin>
 ```
 
-Esta ejecución ordena al complemento de Maven Assembly que cree un archivo basado en las instrucciones contenidas en `assembly-ui-test-docker-context.xml`, se denomina **descriptor de ensamblado** en la jerga del complemento. El descriptor de ensamblado enumera todos los archivos que deben formar parte del archivo.
+Esta ejecución indica al complemento de Maven Assembly que cree un archivo basado en las instrucciones contenidas en `assembly-ui-test-docker-context.xml`, denominado **descriptor de ensamblado** en la jerga del complemento. El descriptor de ensamblado enumera todos los archivos que deben formar parte del archivo.
 
 ```xml
 <assembly>
@@ -153,7 +153,7 @@ El descriptor de ensamblado indica al complemento que cree un archivo de tipo `.
 * El script `wait-for-grid.sh`, cuyos propósitos se describen a continuación
 * Las pruebas de interfaz de usuario reales, implementadas por un proyecto Node.js en la carpeta `test-module`
 
-El descriptor de ensamblado también excluye algunos archivos que podrían generarse al ejecutar las pruebas de IU localmente. Esto garantiza un archivo más pequeño y generaciones más rápidas.
+El descriptor de ensamblado también excluye algunos archivos que podrían generarse al ejecutar las pruebas de IU localmente. Este proceso garantiza un archivo más pequeño y generaciones más rápidas.
 
 Cloud Manager recoge automáticamente el archivo de contexto de compilación de Docker y crea la imagen de prueba durante las canalizaciones de implementación. Finalmente, Cloud Manager ejecuta la imagen Docker para ejecutar las pruebas de interfaz de usuario contra la aplicación.
 
@@ -190,7 +190,7 @@ Para incluir un archivo `testing.properties` en el artefacto de generación, agr
 
 Si está utilizando las muestras proporcionadas por Adobe:
 
-* Para la carpeta basada en JavaScript `ui.tests` generada a partir del [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests), puede ejecutar el siguiente comando y añadir la configuración necesaria.
+* Para la carpeta `ui.tests` basada en JavaScript generada a partir del [tipo de archivo del proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests), puede ejecutar el siguiente comando para agregar la configuración requerida.
 
   ```shell
   echo "ui-tests.version=1" > testing.properties
@@ -234,7 +234,7 @@ Las siguientes variables de entorno se pasan a la imagen de Docker en tiempo de 
 | `PROXY_RETRY_ATTEMPTS` | `12` | Número sugerido de reintentos mientras se espera la preparación del servidor proxy | Todos excepto Selenium |
 | `PROXY_RETRY_DELAY` | `5` | Retraso sugerido entre reintentos mientras se espera la preparación del servidor proxy | Todos excepto Selenium |
 
-`* these values will be empty if there is no publish instance`
+`* these values are empty if there is no publish instance`
 
 Las muestras de prueba de Adobe proporcionan funciones de ayuda para acceder a los parámetros de configuración:
 
@@ -246,7 +246,7 @@ Cypress: utilizar la función estándar `Cypress.env('VARIABLE_NAME')`
 
 ### Generar informes de prueba {#generate-test-reports}
 
-La imagen Docker debe generar informes de prueba en formato XML JUnit y guardarlos en la ruta especificada por la variable de entorno `REPORTS_PATH`. El formato JUnit XML es un formato ampliamente utilizado para la creación de informes sobre los resultados de las pruebas. Si la imagen Docker utiliza Java y Maven, los módulos de prueba estándar como el [complemento de Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) y el [complemento de Maven Failesafe](https://maven.apache.org/surefire/maven-failsafe-plugin/) pueden generar estos informes de forma predeterminada.
+La imagen Docker debe generar informes de prueba en formato XML `JUnit` y guardarlos en la ruta especificada por la variable de entorno `REPORTS_PATH`. El formato XML `JUnit` es un formato ampliamente utilizado para informar sobre los resultados de las pruebas. Si la imagen Docker utiliza Java y Maven, los módulos de prueba estándar como el [complemento de Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) y el [complemento de Maven Failesafe](https://maven.apache.org/surefire/maven-failsafe-plugin/) pueden generar estos informes de forma predeterminada.
 
 Si la imagen Docker está implementada con otros lenguajes de programación o ejecutores de prueba, compruebe la documentación de las herramientas seleccionadas para generar informes XML de JUnit.
 
@@ -266,7 +266,7 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 >
 >Para ejecutar las pruebas funcionales desde el equipo local, cree un usuario con permisos de tipo administrador para lograr el mismo comportamiento.
 
-* La infraestructura contenerizada que se contempla para las pruebas funcionales está limitada por los siguientes límites:
+* La infraestructura en contenedores con ámbito para pruebas funcionales está limitada por lo siguiente:
 
 | Tipo | Valor | Descripción |
 |----------------------|-------|-----------------------------------------------------------------------|
@@ -276,7 +276,7 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 | Duración recomendada | 15m | Adobe recomienda mantener las pruebas por debajo de este límite de tiempo. |
 
 * Si el autor/publicación de destino está protegido por una inclusión en la lista de permitidos IP, la infraestructura de prueba de la IU de la canalización debe estar incluida en la lista de permitidos o las pruebas de la IU pueden fallar con 403 Prohibido.
-Consulte también [Error en la prueba de IU en AEMaaCS debido a la Inclusión en la lista de permitidos de IP](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26654#) y [Introducción a las Listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Consulte también [Error en la prueba de IU en AEMaaCS debido a la Inclusión en la lista de permitidos de IP](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) y [Introducción a las Listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
@@ -302,9 +302,9 @@ Las muestras de prueba de IU de Adobe utilizan `wait-for-grid.sh`. Se ejecuta al
 
 ### Captura de pantallas y vídeos {#capture-screenshots}
 
-La imagen del Docker puede generar resultados de prueba adicionales (por ejemplo, capturas de pantalla o vídeos) y guardarlos en la ruta especificada por la variable de entorno `REPORTS_PATH`. Cualquier archivo que se encuentre debajo de `REPORTS_PATH` se incluirá en el archivo de resultados de la prueba.
+La imagen del Docker puede generar resultados de prueba adicionales (por ejemplo, capturas de pantalla o vídeos) y guardarlos en la ruta especificada por la variable de entorno `REPORTS_PATH`. Cualquier archivo que se encuentre por debajo de `REPORTS_PATH` se incluirá en el archivo de resultados de la prueba.
 
-Las muestras de prueba proporcionadas por Adobe de forma predeterminada crean capturas de pantalla para cualquier prueba fallida.
+De forma predeterminada, las muestras de prueba proporcionadas por Adobe crean capturas de pantalla para cualquier prueba con error.
 
 Puede utilizar las funciones de ayuda para crear capturas de pantalla a través de las pruebas.
 
@@ -515,15 +515,15 @@ Antes de activar las pruebas de IU en una canalización de Cloud Manager, Adobe 
 
 ### Muestra de prueba del dramaturgo {#playwright-sample}
 
-1. Abra un elemento shell y vaya a la carpeta `ui.tests` de su repositorio
+1. Abra un shell y vaya a la carpeta `ui.tests` en el repositorio.
 
-1. Ejecute el siguiente comando para crear una imagen de docker con Maven
+1. Ejecute el siguiente comando para crear la imagen de docker con Maven:
 
    ```shell
    mvn clean package -Pui-tests-docker-build
    ```
 
-1. Ejecute el siguiente comando para iniciar las pruebas con Maven
+1. Ejecute el siguiente comando para iniciar las pruebas con Maven:
 
    ```shell
    mvn verify -Pui-tests-docker-execution \
@@ -546,7 +546,7 @@ Antes de activar las pruebas de IU en una canalización de Cloud Manager, Adobe 
 
 1. Abra un elemento shell y vaya a la carpeta `ui.tests/test-module` de su repositorio
 
-1. Ejecute el siguiente comando para iniciar las pruebas con Maven
+1. Ejecute los siguientes comandos para iniciar las pruebas con Maven:
 
    ```shell
    # Start selenium docker image

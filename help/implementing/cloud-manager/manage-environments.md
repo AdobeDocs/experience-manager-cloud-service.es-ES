@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 7e9e6e98638b099c5d6f9820cb6f675afe44bfaf
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2585'
 ht-degree: 35%
 
 ---
@@ -95,7 +95,7 @@ Al añadir un entorno nuevo, puede elegir configurar regiones adicionales ademá
 
 1. Seleccione la **Región principal**.
    * La región principal no se puede cambiar después de la creación del entorno.
-1. Seleccione la opción **Agregar regiones de publicación adicionales** y aparecerá una nueva **lista desplegable de Regiones de publicación adicionales**. 
+1. Seleccione la opción **Agregar regiones de publicación adicionales** y aparecerá una nueva **lista desplegable de Regiones de publicación adicionales**.
 1. En el menú desplegable **Regiones de publicación adicionales**, seleccione una región adicional.
 1. La región seleccionada se añade debajo del menú desplegable para indicar su selección.
    * Seleccione el(la) `X` que se encuentra junto a la región seleccionada para que pueda anular su selección.
@@ -221,7 +221,7 @@ También puede obtener acceso a la misma información desde la ficha **Entornos*
 
    ![Información adicional del estado de las regiones de publicación en la ficha Entornos](assets/additional-publish-region-status-environments-tab.png)
 
-Si hay algún problema notificado con regiones de publicación adicionales, tenga paciencia. Cloud Manager intenta continuamente recuperar la región y puede estar disponible en cualquier momento. Si el problema persiste después de varias horas, puede quitar la región de publicación adicional y volver a agregarla (en la misma región u otra región) para almacenar en déclencheur una implementación completa.
+Si se notifican problemas con regiones de publicación adicionales, espere un poco. Cloud Manager intenta continuamente recuperar la región y puede volver a estar disponible en cualquier momento. Si el problema persiste durante varias horas, elimine y vuelva a agregar la región de publicación adicional (la misma región o una diferente) para almacenar en déclencheur una implementación completa.
 
 El tiempo que espera a que el sistema se recupere por sí solo antes de realizar acciones adicionales depende del impacto que el fallo de esa región tenga en sus sistemas.
 
@@ -231,7 +231,7 @@ Independientemente, el tráfico de [siempre se enruta a la región más cercana 
 
 Como servicio nativo de la nube, Adobe administra automáticamente las actualizaciones para los entornos de desarrollo, ensayo y producción dentro de los programas de producción.
 
-Sin embargo, las actualizaciones de los entornos de los programas de zonas protegidas se administran dentro de los programas. Cuando un entorno de este tipo no ejecuta la última versión de AEM disponible públicamente, el estado de la tarjeta **Entornos** en la pantalla **Información general** del programa muestra **Actualización disponible**.
+Sin embargo, los entornos de programa de zona protegida se actualizan dentro del propio programa. Si un entorno no está ejecutando la última versión de AEM público, la tarjeta **Entornos** de la pantalla del programa **Información general** muestra **Actualización disponible**.
 
 ![Estado de actualización del entorno](assets/environ-update.png)
 
@@ -310,7 +310,7 @@ Se abre una nueva pestaña en el explorador con la página de inicio de sesión 
 
 Solo un usuario con la función **Desarrollador** tendrá acceso a la **Consola de desarrollador**. Sin embargo, para los programas de zonas protegidas, cualquier usuario con acceso a la zona protegida tiene acceso a **Developer Console**.
 
-Consulte [Entornos de zona protegida en hibernación y cancelación de la hibernación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obtener más información.
+Consulte [Entornos de zona protegida en hibernación y cancelación de la hibernación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obtener más información.
 
 Esta opción también está disponible en la ficha **Entorno** de la ventana **Información general** al hacer clic en el ![icono Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de un entorno individual.
 
@@ -338,7 +338,7 @@ Los nombres de dominio personalizados se admiten en los programas de Cloud Manag
 
 Cloud Manager admite una Lista de permitidos IP para los servicios de creación, publicación y vista previa de los programas de Sites.
 
-Para administrar Listas de permitidos IP, vaya a la página ![Icono de datos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Entornos** de la página **Información general** de su programa. Haga clic en un entorno individual para poder administrar sus detalles.
+Para administrar Listas de permitidos IP, vaya a la página ![Icono de datos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Entornos** de la página **Información general** de su programa. Seleccione un entorno individual para administrar sus detalles.
 
 ### Aplicar una Lista de permitidos IP {#apply-ip-allow-list}
 

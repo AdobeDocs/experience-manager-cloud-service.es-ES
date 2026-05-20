@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1040'
 ht-degree: 21%
 
 ---
@@ -19,13 +19,13 @@ Cloud Manager proporciona un tablero para facilitar la visualización de las aut
 
 >[!IMPORTANT]
 >
->El tablero de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
+>El tablero de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
 >
 >Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte [Navegación por la interfaz de usuario de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Información general {#overview}
 
-El tablero de licencias de Cloud Manager proporciona un acceso fácil a las autorizaciones de la solución disponibles en todos sus programas, incluida la cantidad utilizada y la disponible. Además, las métricas de consumo de solicitud de contenido marcaron la tendencia por mes para la solución Sites.
+El tablero de licencias de Cloud Manager proporciona un acceso fácil a las autorizaciones de la solución disponibles en todos sus programas, incluida la cantidad utilizada y la disponible. Las métricas de consumo de solicitud de contenido de la solución Sites varían según la tendencia mensual.
 
 ## Acceso al tablero de licencias {#using-dashboard}
 
@@ -48,11 +48,11 @@ El panel de control se divide en tres secciones que le muestran lo siguiente:
 * **Complementos**: qué complementos de las soluciones con licencia tiene disponibles.
 * **Otros derechos** - Qué zona protegida y entorno de desarrollo y otros derechos se pueden consumir dentro de su inquilino.
 
-Cada sección resume lo que está disponible y cómo se utiliza, si es que lo está. Actualmente, solo se muestran las soluciones de Sites y Assets, aunque existan otras soluciones en el inquilino.
+Cada sección resume las funciones y el uso disponibles, si corresponde. Actualmente, solo se muestran las soluciones de Sites y Assets, aunque existan otras soluciones en el inquilino.
 
 * La columna **Estado** muestra el número de derechos no utilizados en comparación con el total disponible para el inquilino.
-* La columna **Configurado en** indica los programas en los que se ha aplicado la asignación de derechos de solución.
-   * Una asignación de derechos se considera utilizada solo cuando se crea un entorno de producción. O, si existe, si se ha ejecutado una canalización de actualización en ella.
+* La columna **Configurado en** enumera los programas con el derecho de solución aplicado.
+   * Una asignación de derechos se considera utilizada solo cuando se crea un entorno de producción o si existe y se ha ejecutado una canalización de actualización en él.
    * En la columna solo se enumera un número limitado de programas por separado; el resto se representa mediante una entrada `+x`.
    * Pase el ratón sobre la entrada `+x` para ver una ventana emergente con detalles de todos los programas.
 * La columna **Uso** muestra un botón **[Ver detalles de uso](#view-usage-details)** para mostrar las estadísticas de uso de la solución.
@@ -67,7 +67,7 @@ Cada sección resume lo que está disponible y cómo se utiliza, si es que lo es
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution.
 -->
 
-El botón **Ver detalles de uso** del área de Licencias de Cloud Manager proporciona un desglose detallado del uso actual de los recursos. Al hacer clic en esta opción, se abre un informe o un tablero que muestra métricas importantes relacionadas con la licencia. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Esta funcionalidad le ayuda a supervisar y asegurarse de que se mantiene dentro de los límites del contrato y, al mismo tiempo, le ofrece perspectivas para una mejor planificación y optimización de los recursos.
+El botón **Ver detalles de uso** del área de Licencias de Cloud Manager proporciona un desglose detallado del uso actual de los recursos. Al hacer clic en esta opción, se abre un informe o un tablero que muestra métricas importantes relacionadas con la licencia. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Esta funcionalidad le ayuda a monitorizar y garantizar que se mantiene dentro de los límites de su contrato, a la vez que ofrece perspectivas para una mejor planificación y optimización de los recursos.
 
 El botón **Ver detalles de uso** está *deshabilitado* (desactivado) en los siguientes casos:
 
@@ -75,8 +75,6 @@ El botón **Ver detalles de uso** está *deshabilitado* (desactivado) en los sig
 * No hay ningún programa de Cloud Manager configurado para esa solución.
 * Se deshabilita un indicador de funcionalidad que rige los detalles de uso. Debe estar *habilitado* (activado) para su organización antes de que el botón esté disponible.
 * El uso se deshabilita explícitamente para la solución. Actualmente, esta situación solo se aplica a Edge Delivery Services.
-
-
 
 ### Detalles de uso de sitios {#sites-usage-details}
 
@@ -119,7 +117,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ### ¿Qué es una solicitud de contenido?{#what-is-a-content-request}
 
-Una solicitud de contenido es cualquier solicitud dirigida a AEM Sites o a un sistema de almacenamiento en caché proporcionado por el cliente, como una red de entrega de contenido. Recupera contenido o datos en formato HTML para vistas de página. O bien, en formato JSON para llamadas a la API.
+Una solicitud de contenido es cualquier solicitud dirigida a AEM Sites o a un sistema de almacenamiento en caché proporcionado por el cliente, como una red de entrega de contenido. Recupera contenido o datos en formato HTML para vistas de página. O está en formato JSON para llamadas a la API.
 
 Se cuenta una solicitud de contenido por cada vista de página o por cada cinco llamadas a la API, se miden a la entrada del primer sistema de almacenamiento en la memoria caché que recibe una solicitud de contenido. Las solicitudes de contenido se cuentan únicamente en los entornos de producción.
 
@@ -141,10 +139,11 @@ Las solicitudes de contenido pueden tener variaciones con las herramientas de in
 
 ### ¿Qué sucede si quisiera obtener más información sobre mi volumen de solicitudes de contenido?{#current-request-volumes}
 
-Si desea obtener información adicional sobre el volumen de solicitud de contenido que se muestra en el panel de licencias, su equipo de Adobe puede proporcionarle un informe que muestre los controladores de mayor volumen de las solicitudes de contenido. Póngase en contacto con el equipo de Adobe o con Asistencia al cliente de Adobe para solicitar un informe de uso superior.
+Si desea obtener información adicional sobre el volumen de solicitud de contenido que se muestra en el panel de licencias, su equipo de Adobe puede proporcionarle un informe que muestre los controladores de mayor volumen de las solicitudes de contenido. Póngase en contacto con su equipo de Adobe o con Asistencia al cliente de Adobe para solicitar un informe de uso superior.
 
 ### ¿Qué sucede si utilizo mi propia CDN?{#using-own-cdn}
 
-El panel de licencias solo muestra datos rastreados por la CDN de Cloud Service. Si opta por Traer su propia CDN (BYOCDN), informará de su volumen de solicitud de contenido a Adobe anualmente, tal y como se indica en su contrato.
+El panel de licencias muestra únicamente los datos rastreados por la CDN de Cloud Service. Si utiliza Traer su propia CDN (BYOCDN), debe informar el volumen de solicitud de contenido a Adobe anualmente, tal como se especifica en el contrato.
+
 
 
