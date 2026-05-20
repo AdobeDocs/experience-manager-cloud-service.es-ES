@@ -4,7 +4,7 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 478b77488f46ae2566ffe5276ad26834371612aa
+source-git-commit: c8303f6792f36e9d1942cf398909cbf0b3f3f90f
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 30%
@@ -44,8 +44,8 @@ La activación de funciones 2026.5.0 proporcionará el conjunto completo de func
 * ASSETS-66669: se ha corregido el error del botón Inicio de la página de resultados de búsqueda que no navegaba a la pantalla Inicio de la IU táctil cuando Unified Shell estaba habilitado.
 * ASSETS-66683: se ha corregido un bucle de aprobación en Dynamic Media con OpenAPI activado por errores de carga, que creaban trabajos pendientes e interrumpían los flujos de trabajo de aprobación de recursos.
 * ASSETS-67113: se corrigió la importación masiva que ignora los recursos de SVG al filtrar por tipo MIME `image/svg+xml`.
-* CQ-4363355: se corrigieron solicitudes de traducción en el conector de traducción GenAI que se enrutaban a un extremo regional incorrecto debido a una URL estática codificada.
 * CQ-4363466: se han corregido errores de resolución de rutas de configuración de nube que afectaban a los conectores de traducción de terceros que utilizan la resolución de configuración personalizada.
+* CQ-4363355: se corrigieron solicitudes de traducción en el conector de traducción GenAI que se enrutaban a un extremo regional incorrecto debido a una URL estática codificada.
 * SITES-44186: se ha corregido la inyección de metaetiquetas en la gestión de eventos del Editor de páginas de salto de autor para algunos clientes.
 
 ### Problemas conocidos {#known-issues-26125}
