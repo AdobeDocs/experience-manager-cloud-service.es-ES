@@ -3,7 +3,7 @@ title: Trabajo de creación de contenido
 description: Descubra qué es el trabajo de creación de contenido de Brand Experience Agent y qué puede hacer por usted.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
+source-git-commit: b92c13f690903074272e471c89bc0acc81627af1
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 1%
@@ -140,4 +140,4 @@ Tenga en cuenta las siguientes limitaciones:
 
 Los siguientes recursos pueden resultar útiles a medida que continúa explorando Experience Production Agent:
 
-* También puede usar el [Libro de trabajo de Experience Production Agent](https://www.adobe.com/go/aem-epa-workbook_es) para obtener instrucciones prácticas y guiadas.
+* También puede usar el [Libro de trabajo de Experience Production Agent](https://www.adobe.com/go/aem-epa-workbook) para obtener instrucciones prácticas y guiadas.
