@@ -3,7 +3,7 @@ title: Trabajo de creación de contenido
 description: Descubra qué es el trabajo de creación de contenido de Brand Experience Agent y qué puede hacer por usted.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 3a0e9b322aec8b06285a94b9e288580faaf87921
+source-git-commit: 5d1a560b4eb386d0c3795d6634742ffce8ef4c71
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 1%
@@ -108,7 +108,7 @@ Cuando termina la generación, el agente proporciona dos vínculos:
 
 ## Mejoras adicionales en la creación {#further-refinement-in-authoring}
 
-Después de editar la página en AEM, se abrirá en su entorno de creación (por ejemplo, el [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) o el [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md)).
+Después de editar la página en AEM, se abrirá en su entorno de creación; por ejemplo, el [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) o el [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 En el [Editor universal](#universal-editor-edit-text-with-the-assistant), el asistente de IA tiene en cuenta el contexto *: puede seleccionar elementos en el lienzo y trabajar en ellos con el asistente.*
 
