@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cc95dec08f8fecbd798ce0b19a8698bdf1bc6a51
+source-git-commit: 42829ad85f481a7087cce3b7a530dbed0b55f7e3
 workflow-type: tm+mt
 source-wordcount: '7400'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -668,7 +668,7 @@ ht-degree: 86%
    + Fragmentos de contenido {#content-fragments}
       + [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
       + [Entrega sin encabezado con fragmentos de contenido y GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
-      + [Habilitación de la funcionalidad de fragmento de contenido para la instancia](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+      + [Habilitar la funcionalidad de fragmento de contenido para la instancia](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
       + [Administración de los fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
       + [Variaciones: Crear contenido de fragmentos](/help/assets/content-fragments/content-fragments-variations.md)
