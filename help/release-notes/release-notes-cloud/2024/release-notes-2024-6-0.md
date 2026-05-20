@@ -4,10 +4,10 @@ description: Notas de la versión 2024.6.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 0f5fc5469034139a45ec0fe7e30319012af97301
+source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 97%
+source-wordcount: '2181'
+ht-degree: 95%
 
 ---
 
@@ -82,9 +82,9 @@ Dynamic Media con funciones de OpenAPI amplía el DAM a través de aplicaciones 
 
 ### Nuevas funcionalidades de la vista Recursos {#assets-view-new-features}
 
-**Hay más opciones disponibles en el panel de Assets Insights**
+**Hay más opciones disponibles en el panel de control de Assets Insights**
 
-El número de recursos por tipo y tamaño de recurso ahora está disponible en el panel de Assets Insights. Estas opciones proporcionan datos en tiempo real en el entorno de la vista Recursos. Detallan el número y el porcentaje de recursos por intervalo de tamaño y tipo de recurso.
+El número de recursos por tipo y tamaño de recurso ahora está disponible en el panel de control de Assets Insights. Estas opciones proporcionan datos en tiempo real en el entorno de la vista Recursos. Detallan el número y el porcentaje de recursos por intervalo de tamaño y tipo de recurso.
 
 **Actualizaciones del editor integrado de Adobe Express**
 
@@ -117,9 +117,13 @@ When looking at the asset details, any image with content credentials added, suc
 
 ### Nuevas funciones en AEM Forms {#forms-new-prerelease-features}
 
+#### Conectar un formulario adaptable con Adobe Workfront
+
+Forms as a Cloud Service ofrece una opción predeterminada para [conectar fácilmente un formulario adaptable con Adobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md). Esto simplifica el proceso de envío de un formulario adaptable a un escenario de Adobe Workfront, permitiéndole activar un escenario de Workfront Fusion al enviar un formulario adaptable.
+
 #### Editor de reglas visuales mejorado para formularios adaptables basado en componentes principales
 
-Esta versión aporta una actualización importante al editor de reglas visuales para formularios adaptables basados en componentes básicos. Ahora puede:
+Esta versión aporta una actualización importante al editor de reglas visuales para formularios adaptables basados en componentes principales. Ahora puede:
 
 * Crear reglas en el editor de reglas visuales para [anular los mensajes de éxito y error predeterminados para el envío de formularios](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
@@ -213,7 +217,7 @@ Anteriormente, se necesitaba un ticket de asistencia para generar la clave X--Ed
 
 #### Redirecciones Del Lado Del Servidor (Programa De Usuarios Iniciales) {#server-side-redirects-early-adopter}
 
-Configure las redirecciones del lado del servidor 301/302 en el control de código fuente e implemente en la CDN. [Más información](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Tenga en cuenta que ya hay diversas otras funciones disponibles relacionadas con la [configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluidas las transformaciones de solicitudes y respuestas, y el enrutamiento del tráfico a sitios fuera de AEM.
+Configure las redirecciones del lado del servidor 301/302 en el control de código fuente e implemente en la CDN. [Más información](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Tenga en cuenta que ya hay otras características disponibles relacionadas con la [configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluidas las transformaciones de solicitudes y respuestas y el enrutamiento del tráfico a sitios que no sean de AEM.
 
 #### Alertas de reglas de filtro de tráfico (programa de primeros usuarios) {#traffic-filter-rules-alerts-early-adopter}
 

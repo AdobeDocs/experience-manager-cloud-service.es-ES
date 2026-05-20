@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 87%
+source-wordcount: '936'
+ht-degree: 92%
 
 ---
 
@@ -60,7 +60,7 @@ Para configurar una acción de envío Enviar correo electrónico para el compone
 
    >[!NOTE]
    >
-   > También puede habilitar **[!UICONTROL Usar la plantilla de HTML]** para enviar correos electrónicos usando un diseño de HTML personalizado en lugar de la plantilla predeterminada. Cuando esta opción esté habilitada, especifique el archivo HTML en el campo **Ruta de la plantilla externa**. Esta función está disponible a través del programa Acceso anticipado. Para solicitar acceso, envía un correo electrónico desde tu dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+   > También puede habilitar **[!UICONTROL Usar la plantilla de HTML]** para enviar correos electrónicos usando un diseño de HTML personalizado en lugar de la plantilla predeterminada. Cuando esta opción esté habilitada, especifique el archivo HTML en el campo **Ruta de la plantilla externa**.
 
 1. [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
 1. Haga clic en **[!UICONTROL Listo]**.
@@ -85,7 +85,7 @@ Para configurar la acción de envío Enviar correo electrónico para el componen
 
    >[!NOTE]
    >
-   > También puede habilitar **[!UICONTROL Usar la plantilla de HTML]** para enviar correos electrónicos usando un diseño de HTML personalizado en lugar de la plantilla predeterminada. Cuando esta opción esté habilitada, especifique el archivo HTML en el campo **Ruta de la plantilla externa**. Esta función está disponible a través del programa Acceso anticipado. Para solicitar acceso, envía un correo electrónico desde tu dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+   > También puede habilitar **[!UICONTROL Usar la plantilla de HTML]** para enviar correos electrónicos usando un diseño de HTML personalizado en lugar de la plantilla predeterminada. Cuando esta opción esté habilitada, especifique el archivo HTML en el campo **Ruta de la plantilla externa**.
 
 1. [Opcional] La acción de envío **[!UICONTROL Enviar correo electrónico]** proporciona la opción de incluir archivos adjuntos y un [documento de registro (DoR)](generate-document-of-record-core-components.md) con el correo electrónico.
 1. Haga clic en **[!UICONTROL Listo]**.

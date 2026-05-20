@@ -4,10 +4,10 @@ description: Notas de la versión 2025.1.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 92%
+source-wordcount: '1933'
+ht-degree: 88%
 
 ---
 
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de enero de 2025 para ver un resumen de las funciones añadidas en la versión 2025.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3456077?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3456077?captions=spa&quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -48,7 +48,7 @@ Colabore fácilmente con sus compañeros de trabajo para crear fragmentos de con
 
 **Editor de fragmentos de contenido e interfaces de usuario de administración: compatibilidad actualizada con la versión de AEM as a Cloud Service**
 
-La versión mínima de AEM as a Cloud Service compatible con las nuevas interfaces de usuario de Administrador y Editor de fragmentos de contenido es ahora 2023.8.13099. Las versiones anteriores a la versión de disponibilidad general de las nuevas interfaces de usuario ya no serán compatibles
+La versión mínima de AEM as a Cloud Service admitida para las nuevas interfaces de usuario de Administrador y Editor de fragmentos de contenido es ahora 2023.8.13099. Ya no se admiten las versiones anteriores a la versión de disponibilidad general de las nuevas interfaces de usuario
 
 ### Programa para primeros usuarios {#sites-early-adopter}
 
@@ -62,9 +62,9 @@ Se han mejorado las [referencias a fragmentos de contenido con referencias basad
 
 ### Funciones en desuso {#sites-deprecated}
 
-#### Editor de SPA  {#spa-editor}
+#### Editor de SPA {#spa-editor}
 
-El [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) ha quedado obsoleto para nuevos proyectos a partir de la versión 2025.1.0. El editor de SPA sigue siendo compatible con los proyectos existentes, pero no debe utilizarse en nuevos proyectos.
+[El editor de SPA](/help/implementing/developing/hybrid/introduction.md) ha quedado obsoleto para nuevos proyectos que comienzan con la versión 2025.1.0. El Editor SPA sigue siendo compatible con los proyectos existentes, pero no debe utilizarse para nuevos proyectos.
 
 Los editores preferidos para administrar contenido sin encabezado en AEM ahora son:
 
@@ -112,6 +112,8 @@ Los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la in
 
 ### Nuevas funciones en AEM Forms {#forms-new-features}
 
+* **[Integrar los formularios adaptables con Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)**: AEM Forms as a Cloud Service ahora incluye una opción fácil de usar para conectar los formularios adaptables con Adobe Marketo Engage. Esta integración le permite crear formularios adaptables directamente con la captura de posibles clientes de Marketo Engage y los objetos personalizados relacionados. Ahora puede cumplimentar previamente los campos de formulario con datos de Marketo Engage y enviar datos de vuelta para automatizar flujos de trabajo como las campañas inteligentes y la automatización de correo electrónico. También puede conectar un formulario adaptable con la biblioteca de Munchkin para realizar un seguimiento del número de visitas, clics y envíos de formularios.
+
 * **Administrar publicación**: puede usar el flujo de trabajo [Administrar publicación](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option)) para publicar o cancelar la publicación de formularios en entornos, generalmente desde la instancia de autor a las instancias de publicación y vista previa. Permite a los usuarios publicar, cancelar la publicación o programar la publicación de contenido de una manera optimizada.
 
 * **[Guardar automáticamente un borrador para formularios adaptables basados en componentes principales](/help/forms/save-core-component-based-form-as-draft.md)**: los usuarios ahora pueden beneficiarse de una función de guardado automático que guarda automáticamente un formulario parcialmente completado como borrador. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
@@ -141,7 +143,7 @@ Las API de generación de documentos de AEM Forms ahora admiten la carga directa
 
 ### Compatibilidad con Java 21 {#java21}
 
-Ahora puede generar código con Java 21, que incluye nuevas funciones (por ejemplo, coincidencia de patrones para instrucciones de cambio, clases selladas) y mejoras de rendimiento; las compilaciones de Java 17 también son compatibles recientemente. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support). 
+Ahora puede generar código con Java 21, que incluye nuevas funciones (por ejemplo, coincidencia de patrones para instrucciones de cambio, clases selladas) y mejoras de rendimiento; las compilaciones de Java 17 también son compatibles recientemente. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
 El **entorno de ejecución** de Java 21 de mayor rendimiento se implementará automáticamente cuando se detecte una compilación de Java 17 o 21. Sin embargo, también recomendamos optar por el tiempo de ejecución de Java 21 para entornos creados con Java 11, enviando un correo electrónico a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Obtenga información sobre los [requisitos del tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
@@ -163,10 +165,10 @@ Obtenga más información sobre las [API de AEM basadas en OpenAPI](/help/implem
 
 En concreto, los puntos finales de API que se enumeran a continuación están disponibles como parte de un programa para primeros usuarios. Si está interesado, envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) describiendo cómo piensa utilizarlos.
 
-* [API de fragmentos de contenido en Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [API de recursos](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [API de fragmentos de contenido de sitios](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [API de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * API de sitios y carpetas de Assets
-* [API de comunicaciones de formularios](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+* [API de comunicaciones de Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Edge Computing: solicitud de comentarios {#edge-computing-feedback}
 

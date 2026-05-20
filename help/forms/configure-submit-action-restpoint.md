@@ -6,16 +6,14 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1441'
 ht-degree: 99%
 
 ---
 
 # Configurar un formulario adaptable para la acción de envío del punto final REST
-
-<span class="preview"> La capacidad para especificar el punto final REST mediante la configuración es un programa para primeros usuarios y solo se aplica a los componentes principales y a formularios de Edge Delivery Services. Puede escribir a `aem-forms-ea@adobe.com` desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
 Utilice la acción **[!UICONTROL Enviar al punto final REST]** para publicar los datos enviados en una URL de REST. La URL puede ser de un servidor interno (el servidor en el que se procesa el formulario) o externo.
 
@@ -104,7 +102,7 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
-   En este ejemplo, `data` almacena los datos XML y `att` almacena datos adjuntos.
+   En este ejemplo, `data` almacena los datos XML y `att` almacena datos de archivos adjuntos.
 
    La acción de envío **[!UICONTROL Enviar al punto final REST]** envía los datos rellenados en el formulario a una página de confirmación configurada como parte de la petición HTTP GET. Puede añadir el nombre de los campos que desea solicitar. El formato de la solicitud es el siguiente:
 
@@ -164,7 +162,7 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
-   En este ejemplo, `data` almacena los datos XML y `att` almacena datos adjuntos.
+   En este ejemplo, `data` almacena los datos XML y `att` almacena datos de archivos adjuntos.
 
    La acción de envío **[!UICONTROL Enviar al punto final REST]** envía los datos rellenados en el formulario a una página de confirmación configurada como parte de la petición HTTP GET. Puede añadir el nombre de los campos que desea solicitar. El formato de la solicitud es el siguiente:
 
@@ -180,7 +178,7 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
 
    +++Configuración
 
-   Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el explorador de configuración de AEM. Puede seleccionar la configuración creada para su tipo de autenticación de punto final REST de servicio y los tipos de contenido. Para obtener más información acerca del tipo de autenticación y los tipos de contenido, visite [configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
+   Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el explorador de configuración de AEM. Puede seleccionar la configuración creada para su tipo de autenticación de punto final REST de servicio y los tipos de contenido. Para obtener más información acerca del tipo de autenticación y los tipos de contenido, visite [Configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
 
    +++
 

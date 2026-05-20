@@ -4,9 +4,9 @@ description: Notas de la versión 2025.4.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '2018'
 ht-degree: 97%
 
 ---
@@ -45,7 +45,7 @@ Eche un vistazo al vídeo Información general sobre la versión de abril de 202
 
 **Nueva IU de administración del modelo de fragmento de contenido**
 
-Para completar aún más la lista de nuevas interfaces de usuario del lado del cliente al trabajar con fragmentos de contenido de AEM, ahora hay una nueva interfaz de usuario de administrador disponible para los modelos de fragmentos de contenido. La nueva interfaz de usuario proporciona una vista de lista limpia y moderna que permite buscar modelos con filtros y que muestra etiquetas de modelo y qué fragmentos de contenido existen basados en un modelo determinado. La documentación se encuentra [aquí](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md). 
+Para completar aún más la lista de nuevas interfaces de usuario del lado del cliente al trabajar con fragmentos de contenido de AEM, ahora hay una nueva interfaz de usuario de administrador disponible para los modelos de fragmentos de contenido. La nueva interfaz de usuario proporciona una vista de lista limpia y moderna que permite buscar modelos con filtros y que muestra etiquetas de modelo y qué fragmentos de contenido existen basados en un modelo determinado. La documentación se encuentra [aquí](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -83,6 +83,14 @@ Ahora puede seleccionar y comparar rápidamente cualquier versión de un recurso
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Nuevas funciones de Experience Manager Forms {#new-features-forms}
+
+#### Plantillas de correo electrónico HTML de los formularios adaptables
+
+Los formularios adaptables le permiten utilizar [plantillas de correo electrónico HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Las plantillas de correo electrónico HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con los formularios adaptables, puede cargar un archivo que contenga una plantilla HTML o utilizar un editor de texto sin formato para crear estas plantillas.
+
+![Plantilla de correo electrónico HTML](/help/forms/assets/html-email.png)
 
 ### Características de versión preliminar
 
@@ -151,7 +159,7 @@ Puede establecer atributos de cookies en [transformaciones de respuestas](/help/
 
 ### Compatibilidad con Java 21 {#java21}
 
-A partir de la versión de enero, podrá crear código con Java 21 y Java 17. Puede obtener acceso a nuevas funciones como la coincidencia de patrones, clases selladas y varias mejoras de rendimiento. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support). 
+A partir de la versión de enero, podrá crear código con Java 21 y Java 17. Puede obtener acceso a nuevas funciones como la coincidencia de patrones, clases selladas y varias mejoras de rendimiento. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
 El **entorno de ejecución** de Java 21 de mayor rendimiento se implementará automáticamente cuando se detecte una compilación de Java 17 o 21. Sin embargo, también recomendamos optar por el tiempo de ejecución de Java 21 para entornos creados con Java 11, enviando un correo electrónico a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Obtenga información sobre los [requisitos del tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
@@ -185,7 +193,7 @@ Obtenga más información en la [documentación de reenvío de registros](/help/
 
 ### Edge Computing: solicitud de comentarios {#edge-computing-feedback}
 
-Edge Computing acerca el procesamiento de datos al explorador, lo que ofrece ventajas como una menor latencia. A Adobe le encantaría saber si esta tecnología le resulta útil para los proyectos de AEM Publish Delivery y Edge Delivery Services. Además, indíquenos para qué prevé utilizarla como aportación a la hoja de ruta del producto. 
+Edge Computing acerca el procesamiento de datos al explorador, lo que ofrece ventajas como una menor latencia. A Adobe le encantaría saber si esta tecnología le resulta útil para los proyectos de AEM Publish Delivery y Edge Delivery Services. Además, indíquenos para qué prevé utilizarla como aportación a la hoja de ruta del producto.
 
 Algunos casos de uso posibles son los siguientes:
 

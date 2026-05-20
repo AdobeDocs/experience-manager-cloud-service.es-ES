@@ -4,10 +4,10 @@ description: Notas de la versión 2024.11.0 de la versión de  [!DNL Adobe Exper
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 98%
+source-wordcount: '2217'
+ht-degree: 94%
 
 ---
 
@@ -87,6 +87,22 @@ La vista Recursos permite ahora acceder a Dynamic Media y a Dynamic Media con re
 
 ### Nuevas funciones en AEM Forms {#forms-new-features}
 
+* **[Asistente de IA de AEM Forms](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: la IA generativa para Forms adaptable aporta un nuevo nivel de potencia y facilidad a los procesos de desarrollo de formularios. Le permite crear mejores formularios y más rápido que nunca.
+
+  ![Asistente de IA generativa, formularios adaptables](/help/forms/assets/generative-ai-assistant.png)
+
+  Las funciones de IA generativa que se ofrecen son:
+
+   * **Asistente de IA para consultas de productos**: obtenga respuestas instantáneas a sus preguntas relacionadas con AEM Forms. El asistente de IA actúa como su propia base de conocimiento personal, proporcionando orientación y recomendaciones reveladoras directamente dentro de la plataforma.
+
+   * **Generación de formularios adaptables**: cree sin esfuerzo formularios completos con indicaciones de la IA generativa. La IA generativa de Adobe genera automáticamente formularios fáciles de usar que reducen los abandonos y personalizan la experiencia.
+
+   * **Generación de paneles para formularios**: genere secciones de formulario adaptadas a las necesidades específicas de recopilación de datos. Por ejemplo, generar secciones para recopilar información de pago, preferencias del cliente o detalles de viaje.
+
+   * **Cambio de diseños de formulario**: experimente con diferentes presentaciones y diseños mediante las indicaciones de la IA generativa. Pruebe diferentes diseños, como las vistas del asistente o con pestañas, para encontrar la opción perfecta para su formulario. Utilice las indicaciones de la IA generativa para optimizar los formularios con capacidad de respuesta móvil y crear formularios atractivos visualmente que gusten a los usuarios.
+
+   * **Configurar la acción de envío**: utilice las indicaciones de la IA generativa para configurar sin esfuerzo una acción de envío para el formulario. Elija entre una biblioteca de acciones de envío creadas previamente o acciones de envío personalizadas, creadas e implementadas por el equipo de desarrollo.
+
 * **[Actualizar los ámbitos de Adobe Sign fácilmente](/help/forms/adobe-sign-integration-adaptive-forms.md)**: puede modificar los ámbitos de una configuración de Adobe Sign directamente desde la página Configuraciones de nube de AEM, lo que facilita y agiliza la actualización de las configuraciones existentes.
 
 * **[Compatibilidad con funciones asincrónicas para formularios adaptables](/help/forms/using-async-funct-in-rule-editor.md)**: cuando el formulario adaptable requiera operaciones asincrónicas, como esperar procesos externos o recuperar datos, puede implementar estas operaciones con funciones personalizadas y configurarlas en el Editor de reglas.
@@ -151,7 +167,7 @@ intuitive and improving the mobile form-filling experience.
 
 >[!IMPORTANT]
 >
-> ¿Le interesa unirse al programa de acceso rápido para disponer de cualquier innovación de los formularios? Envíe un correo electrónico desde su dirección de correo electrónico oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con la lista de capacidades que le interesan.## Complemento CIF {#cloud-services-cif}
+> ¿Le interesa unirse al programa de acceso rápido para disponer de cualquier innovación de los formularios? Envíe un correo electrónico desde su dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con la lista de funcionalidades que le interesan.## Complemento de CIF {#cloud-services-cif}
 
 ## Complemento CIF {#cif}
 
@@ -174,10 +190,10 @@ Obtenga más información sobre las [API de AEM basadas en OpenAPI](/help/implem
 
 En concreto, los puntos finales de API que se enumeran a continuación están disponibles como parte de un programa para primeros usuarios. Si está interesado, envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) describiendo cómo piensa utilizarlos.
 
-* [API de fragmentos de contenido en Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [API de recursos](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [API de fragmentos de contenido de sitios](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [API de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * API de sitios y carpetas de Assets
-* [API de comunicaciones de formularios](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+* [API de comunicaciones de Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Edge Computing: solicitud de comentarios {#edge-computing-feedback}
 
