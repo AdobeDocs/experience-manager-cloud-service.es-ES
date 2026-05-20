@@ -4,7 +4,7 @@ description: Notas de la versión 2025.4.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 97%
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de abril de 2025 para ver un resumen de las funciones añadidas en la versión 2025.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464005?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

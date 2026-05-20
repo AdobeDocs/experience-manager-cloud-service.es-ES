@@ -4,7 +4,7 @@ description: Notas de la versión 2025.1.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
 source-wordcount: '1933'
 ht-degree: 88%
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de enero de 2025 para ver un resumen de las funciones añadidas en la versión 2025.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3456077?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3456072?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -182,7 +182,7 @@ Cualquiera puede acceder a la versión beta pública haciendo clic en el botón 
 
 ## Guías de [!DNL Experience Manager] {#guides}
 
-Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2412-release/fixed-issues-2024-12-0).
+Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2412-release/fixed-issues-2024-12-0).
 
 ## Cloud Manager {#cloud-manager}
 

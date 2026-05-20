@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 95e2216ee79433783da384134243f3688ff7797d
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
-source-wordcount: '2111'
-ht-degree: 30%
+source-wordcount: '2157'
+ht-degree: 29%
 
 ---
 
@@ -39,7 +39,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483063/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## Programas de AEM Beta {#aem-beta-programs}
@@ -107,6 +107,9 @@ Ahora puede detectar, evaluar y reutilizar recursos aprobados de AEM Assets dire
 
 ### Nuevas funciones en AEM Forms
 
+* **Compatibilidad con versiones en Forms Manager**
+Forms Manager ahora [admite el control de versiones para Forms adaptable (componentes principales y componentes de base)](/help/forms/manage-form-versions-forms-manager.md), fragmentos de formulario, temáticas, plantillas XDP y recursos binarios. Cree versiones, vea el historial de versiones completo y restaure estados anteriores de los recursos de formulario directamente desde la consola Forms y documentos.
+
 * **Anular la configuración de nube de reCAPTCHA con OSGi** 
 Los ID de proyecto empresarial, las claves de sitio y los secretos de reCAPTCHA que mantenga con sus archivos de origen pueden resolverse en valores diferentes en cada entorno de Cloud Service después de [agregar la anulación e implementación de la configuración según el contexto mediante Cloud Manager](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi).
 
@@ -144,10 +147,10 @@ Forms Manager ahora [admite el control de versiones para Forms adaptable (compon
 
 Experience Governance MCP Server ya está disponible de forma general (GA). Se integra con las herramientas para desarrolladores de IA y bots de chat que admiten el Protocolo de contexto de modelo (MCP), lo que le permite salvaguardar la integridad y el cumplimiento de la marca mediante indicadores de lenguaje natural en su bot de chat o IDE. Puede evaluar el contenido (texto, imágenes, páginas) con reglas de gobernanza de marca y recuperar las configuraciones de marca y las comprobaciones de gobernanza disponibles.
 
-Obtenga más información acerca de [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) y el [Agente de control](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+Obtenga más información acerca de [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) y el [Agente de control](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3486261/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
 
 #### Conector de Claude {#aem-claude-connector}
 

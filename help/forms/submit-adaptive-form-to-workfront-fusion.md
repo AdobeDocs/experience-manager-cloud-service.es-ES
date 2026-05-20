@@ -7,7 +7,7 @@ feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Com
 role: Admin, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: e97c48b139249088df905b3513f5a49fe7cd5f43
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 89%
