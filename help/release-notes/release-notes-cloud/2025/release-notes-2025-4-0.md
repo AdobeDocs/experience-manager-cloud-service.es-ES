@@ -4,7 +4,7 @@ description: Notas de la versión 2025.4.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 97%

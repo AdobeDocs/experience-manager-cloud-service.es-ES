@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 95e2216ee79433783da384134243f3688ff7797d
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
-source-wordcount: '2111'
-ht-degree: 30%
+source-wordcount: '2157'
+ht-degree: 29%
 
 ---
 
@@ -106,6 +106,9 @@ Ahora puede detectar, evaluar y reutilizar recursos aprobados de AEM Assets dire
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nuevas funciones en AEM Forms
+
+* **Compatibilidad con versiones en Forms Manager**
+Forms Manager ahora [admite el control de versiones para Forms adaptable (componentes principales y componentes de base)](/help/forms/manage-form-versions-forms-manager.md), fragmentos de formulario, temáticas, plantillas XDP y recursos binarios. Cree versiones, vea el historial de versiones completo y restaure estados anteriores de los recursos de formulario directamente desde la consola Forms y documentos.
 
 * **Anular la configuración de nube de reCAPTCHA con OSGi** 
 Los ID de proyecto empresarial, las claves de sitio y los secretos de reCAPTCHA que mantenga con sus archivos de origen pueden resolverse en valores diferentes en cada entorno de Cloud Service después de [agregar la anulación e implementación de la configuración según el contexto mediante Cloud Manager](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi).

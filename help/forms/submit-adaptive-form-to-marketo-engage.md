@@ -6,7 +6,7 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: e97c48b139249088df905b3513f5a49fe7cd5f43
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 21%
