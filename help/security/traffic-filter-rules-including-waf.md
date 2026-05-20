@@ -4,9 +4,9 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
+source-git-commit: 8371bceaf116cdcd4e0542dd1b8d772d2d12a05d
 workflow-type: tm+mt
-source-wordcount: '4819'
+source-wordcount: '4306'
 ht-degree: 96%
 
 ---
@@ -141,75 +141,9 @@ El formato de las reglas de filtro de tráfico en el archivo `cdn.yaml` se descr
 | **Propiedad** | **La mayoría de las reglas de filtro de tráfico** | **Reglas de filtro de tráfico WAF** | **Tipo** | **Valor predeterminado** | **Descripción** |
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | El nombre de la regla (64 caracteres, solo puede contener caracteres alfanuméricos y - ) |
-| when | X | X | `Condition` | - | La estructura básica es:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[Consulte Sintaxis de estructura de condición](#condition-structure) a continuación, que describe los captadores, los predicados y cómo combinar varias condiciones. |
+| when | X | X | `Condition` | - | La estructura básica es:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>Consulte [Estructura de condiciones](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) en *Configuración del tráfico en CDN* para obtener información acerca de captadores, predicados y cómo combinar varias condiciones. |
 | acción | X | X | `Action` | log | objeto log, allow, block o Action. El valor predeterminado es log |
 | rateLimit | X |   | `RateLimit` | sin definir | Configuración del límite de volumen. La limitación de volumen está deshabilitada si no se define.<br><br>Hay una sección independiente más abajo que describe la sintaxis de rateLimit, junto con ejemplos. |
-
-### Estructura de condición {#condition-structure}
-
-Una condición puede ser una condición simple o un grupo de condiciones.
-
-**Condición simple**
-
-Una condición simple está compuesta por un captador y un predicado.
-
-```
-{ <getter>: <value>, <predicate>: <value> }
-```
-
-**Condiciones de grupo**
-
-Un grupo de condiciones está compuesto por varias condiciones simples o de grupo.
-
-```
-<allOf|anyOf>:
-  - { <getter>: <value>, <predicate>: <value> }
-  - { <getter>: <value>, <predicate>: <value> }
-  - <allOf|anyOf>:
-    - { <getter>: <value>, <predicate>: <value> }
-```
-
-| **Propiedad** | **Tipo** | **Significado** |
-|---|---|---|
-| **allOf** | `array[Condition]` | Operación **and**. Es true, si todas las condiciones enumeradas devuelven el valor true |
-| **anyOf** | `array[Condition]` | Operación **or**. Es true si alguna de las condiciones enumeradas devuelve el valor true |
-
-**Getter**
-
-| **Propiedad** | **Tipo** | **Descripción** |
-|---|---|---|
-| reqProperty | `string` | Solicitar propiedad.<br><br>Uno de:<br><ul><li>`path`: devuelve la ruta completa de una dirección URL sin los parámetros de consulta. (use `pathRaw` para la variante sin escape)</li><li>`originalPath`: devuelve la ruta original inmutable de la solicitud sin los parámetros de consulta: la ruta antes de cualquier transformación de solicitud de CDN.</li><li>`url`: devuelve la dirección URL completa, incluidos los parámetros de consulta. (use `urlRaw` para la variante sin escape)</li><li>`originalUrl`: devuelve la dirección URL completa original inmutable de la solicitud, incluidos los parámetros de consulta: la dirección URL antes de cualquier transformación de solicitud de CDN.</li><li>`queryString`: devuelve la parte de consulta de una dirección URL</li><li>`method`: devuelve el método HTTP utilizado en la solicitud.</li><li>`tier`: devuelve uno de `author`, `preview` o `publish`.</li><li>`domain`: devuelve la propiedad de dominio (tal como se define en el encabezado `Host`) en minúsculas</li><li>`clientIp`: devuelve la IP del cliente.</li><li>`forwardedDomain`: devuelve el primer dominio definido en el encabezado `X-Forwarded-Host`, en minúsculas</li><li>`forwardedIp`: devuelve la primera IP del encabezado `X-Forwarded-For`.</li><li>`clientRegion`: Devuelve el código de subdivisión de país que identifica en qué región se encuentra el cliente como se describe en [ISO 3166-2](https://es.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry`: devuelve un código de dos letras ([Símbolo de indicador regional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) que identifica en qué país se encuentra el cliente.</li><li>`clientContinent`: Devuelve un código de dos letras (AF, AN, AS, EU, NA, OC, SA) que identifica en qué continente se encuentra el cliente.</li><li>`clientAsNumber`: Devuelve el número de [sistema autónomo](https://es.wikipedia.org/wiki/Autonomous_system_(Internet)) asociado a la dirección IP del cliente.</li><li>`clientAsName`: Devuelve el nombre asociado al número de sistema autónomo.</li></ul> |
-| reqHeader | `string` | Devuelve el encabezado de la solicitud con el nombre especificado |
-| queryParam | `string` | Devuelve el parámetro de consulta con el nombre especificado |
-| reqCookie | `string` | Devuelve una cookie con el nombre especificado |
-| postParam | `string` | Devuelve un parámetro de publicación con el nombre especificado del cuerpo de la solicitud. Solo funciona cuando el cuerpo es de tipo de contenido `application/x-www-form-urlencoded` |
-
-**Predicado**
-
-| **Propiedad** | **Tipo** | **Significado** |
-|---|---|---|
-| **igual a** | `string` | true si el resultado del captador es igual al valor proporcionado |
-| **doesNotEqual** | `string` | true si el resultado del captador no es igual al valor proporcionado |
-| **me gusta** | `string` | true si el resultado del captador coincide con el patrón proporcionado |
-| **notLike** | `string` | true si el resultado del captador no coincide con el patrón proporcionado |
-| **matches** | `string` | true si el resultado del captador coincide con la expresión regular proporcionada |
-| **doesNotMatch** | `string` | true si el resultado del captador no coincide con la expresión regular proporcionada |
-| **en** | `array[string]` | true si la lista proporcionada contiene un resultado de captador |
-| **notIn** | `array[string]` | true si la lista proporcionada no contiene el resultado del captador |
-| **existe** | `boolean` | true cuando se establece en true y la propiedad existe o cuando se establece en false y la propiedad no existe |
-
-**Notas**
-
-* La propiedad de solicitud `clientIp` solo se puede utilizar con los siguientes predicados: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` también se puede comparar con intervalos de IP cuando se utilizan los predicados `in` y `notIn`. En el siguiente ejemplo se implementa una condición para evaluar si una IP de cliente está en el rango de IP de 192.168.0.0/24 (o sea desde 192.168.0.0 hasta 192.168.0.255):
-
-```
-when:
-  reqProperty: clientIp
-  in: [ "192.168.0.0/24" ]
-```
-
-* Adobe recomienda el uso de [regex101](https://regex101.com/) y [Fastly Fiddle](https://fiddle.fastly.dev/) cuando se utiliza Regex. También puede obtener más información sobre cómo administra Fastly la expresión regular en [Documentación de fastly: expresiones regulares en Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
-
 
 ### Estructura de acción {#action-structure}
 

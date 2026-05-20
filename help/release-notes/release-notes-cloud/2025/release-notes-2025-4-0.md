@@ -4,7 +4,7 @@ description: Notas de la versión 2025.4.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
+source-git-commit: 5cca969e61196e93caf7813bda933b5b404c84cd
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 97%
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo Información general sobre la versión de abril de 2025 para ver un resumen de las funciones añadidas en la versión 2025.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464005?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -151,7 +151,7 @@ La CDN administrada por Adobe ofrece opciones de configuración flexibles, tal c
 
 #### Propiedades de región, continente y organización como condiciones coincidentes {#matching-conditions}
 
-Las reglas de CDN ahora pueden coincidir en función de la región, el continente y la organización para casos de uso, incluidos el bloqueo del tráfico y las redirecciones. `clientRegion` y `clientContinent` aumentan `clientCountry`, que ya es compatible, para que coincida en función de la ubicación geográfica, mientras que `clientAsName` y `clientAsNumber` coinciden con los sistemas autónomos para identificar ISP, compañías o proveedores grandes de servicios en la nube. Obtenga más información sobre estas [propiedades de solicitud recientemente expuestas](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
+Las reglas de CDN ahora pueden coincidir en función de la región, el continente y la organización para casos de uso, incluidos el bloqueo del tráfico y las redirecciones. `clientRegion` y `clientContinent` aumentan `clientCountry`, que ya es compatible, para que coincida en función de la ubicación geográfica, mientras que `clientAsName` y `clientAsNumber` coinciden con los sistemas autónomos para identificar ISP, compañías o proveedores grandes de servicios en la nube. Obtenga más información sobre estas [propiedades de solicitud recientemente expuestas](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure).
 
 #### Establecer valor de cookie {#cookie-attributes}
 

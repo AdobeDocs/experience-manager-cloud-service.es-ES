@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar las credenciales y la a
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
+source-git-commit: 7fab8d47706274bf30716f0433757789ea1248c1
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2273'
 ht-degree: 2%
 
 ---
@@ -109,7 +109,7 @@ Para obtener fragmentos de código adicionales para escenarios comunes, consulte
 
 Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades que aparecen por encima del nodo `data`. El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en `1`.
 
-Consulte el tutorial [Configurar e implementar la regla CDN de validación de encabezado HTTP](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obtener más información.
+Consulte el tutorial [Configurar e implementar la regla CDN de validación de encabezado HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obtener más información.
 
 Entre las propiedades adicionales se incluyen:
 
@@ -123,7 +123,7 @@ Entre las propiedades adicionales se incluyen:
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Reglas: le permite declarar cuál de los autenticadores debe utilizarse y si es para el nivel de publicación o vista previa.  Incluye:
    * name: una cadena descriptiva.
-   * when: una condición que determina cuándo se debe evaluar la regla, según la sintaxis del artículo [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md). Normalmente, incluirá una comparación del nivel actual (por ejemplo, publicación), de modo que todo el tráfico en directo se valida como enrutamiento a través de la CDN del cliente.
+   * when: una condición que determina cuándo se debe evaluar la regla, según la sintaxis de [Estructura de condición](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). Normalmente, incluirá una comparación del nivel actual (por ejemplo, publicación), de modo que todo el tráfico en directo se valida como enrutamiento a través de la CDN del cliente.
    * action: debe especificar &quot;authentication&quot;, con referencia al autenticador deseado.
 
 >[!NOTE]
@@ -223,13 +223,13 @@ Entre las propiedades adicionales se incluyen:
    * purgeKey2: se usa para la rotación de secretos, que se describe en la sección [girar secretos](#rotating-secrets) a continuación. Se debe declarar al menos uno de `purgeKey1` y `purgeKey2`.
 * Reglas: le permite declarar cuál de los autenticadores debe utilizarse y si es para el nivel de publicación o vista previa.  Incluye:
    * nombre: una cadena descriptiva
-   * when: una condición que determina cuándo se debe evaluar la regla, según la sintaxis del artículo [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md). Normalmente, incluye una comparación del nivel actual (por ejemplo, ... publicar).
+   * when: una condición que determina cuándo se debe evaluar la regla, según la sintaxis de [Estructura de condición](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). Normalmente, incluye una comparación del nivel actual (por ejemplo, ... publicar).
    * action: debe especificar &quot;authentication&quot;, con referencia al autenticador deseado.
 
 >[!NOTE]
 >La clave de purga debe configurarse como [secreto de tipo Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), antes de que se implemente la configuración que hace referencia a ella. Se recomienda utilizar una clave aleatoria única de al menos 32 bytes de longitud; por ejemplo, la biblioteca criptográfica Open SSL puede generar una clave aleatoria ejecutando el comando openssl rand -hex 32
 
-Puede hacer referencia a [un tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) centrado en la configuración de claves de depuración y en la depuración de la caché de la CDN.
+Puede hacer referencia a [un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) centrado en la configuración de claves de depuración y en la depuración de la caché de la CDN.
 
 ## Autenticación básica {#basic-auth}
 
@@ -277,7 +277,7 @@ Además, la sintaxis incluye lo siguiente:
       * password: su valor debe hacer referencia a una [variable de entorno de tipo secreto Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars), con **All** seleccionado como campo de servicio.
 * Rules: permite declarar cuál de los autenticadores se debe utilizar y qué recursos se deben proteger. Cada regla incluye:
    * nombre: una cadena descriptiva
-   * when: una condición que determina cuándo se debe evaluar la regla, según la sintaxis del artículo [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md). Normalmente, incluye una comparación del nivel de publicación o rutas específicas.
+   * when: una condición que determina cuándo se debe evaluar la regla, según la sintaxis de [Estructura de condición](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). Normalmente, incluye una comparación del nivel de publicación o rutas específicas.
    * action: debe especificar &quot;authentication&quot;, con el autenticador deseado referenciado, que es basic-auth para este escenario
 
 >[!NOTE]
