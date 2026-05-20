@@ -5,9 +5,9 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: f2004db82933925db55764386cb73c5a6fb44d06
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe permite utilizar Dynatrace para supervisar AEM as a Cloud Service como parte de la implementación empresarial, identificar la causa de cualquier problema potencial y tomar medidas para solucionarlo según sea necesario.
 
-Con Dynatrace, puede obtener una observabilidad perfecta para todas sus aplicaciones de AEM. Dynatrace descubre sus aplicaciones AEM y muestra sus rutas, desde el sitio web hasta el contenedor o el servicio en la nube, para revelar la experiencia del usuario. Entrelazado con los seguimientos de extremo a extremo en cada nivel y la Monitorización de uso real, lleve sus experiencias basadas en contenido de AEM al siguiente nivel sin interrupciones ni puntos ciegos. Si surgen anomalías, Dynatrace las diagnostica en tiempo real, con el motor de IA de Davis. Localiza la causa raíz hasta el código dañado antes de que sus clientes se vean afectados, lo que minimiza el tiempo medio de reparación.
+Con Dynatrace, puede obtener una observabilidad perfecta para todas sus aplicaciones de AEM. Dynatrace detecta las aplicaciones de AEM y muestra sus rutas, desde el sitio web hasta el contenedor o el Cloud Service, para revelar la experiencia del usuario. Junto con el seguimiento de extremo a extremo en todos los niveles y la monitorización de usuarios reales, eleve sus experiencias basadas en contenido de AEM sin espacios ni puntos ciegos. Si surgen anomalías, Dynatrace las diagnostica en tiempo real, con el motor de IA de Davis. Localiza la causa raíz hasta el código dañado antes de que sus clientes se vean afectados, lo que minimiza el tiempo medio de reparación.
 
 Para obtener más información sobre Dynatrace, consulte la [Integración de Adobe AEM Cloud Service](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 
@@ -46,14 +46,14 @@ A continuación se describen los detalles necesarios para las solicitudes de con
 
 ### ¿Qué licencia necesito para la Monitorización de Dynatrace AEM? {#which-license-do-i-need-for-AEM-monitoring}
 
-La monitorización de Dynatrace AEM requiere una licencia de Dynatrace. Las licencias de Dynatrace AEM se basan en la [supervisión de pila completa de los contenedores de Kubernetes](https://docs.dynatrace.com/docs/shortlink/dps-hosts#gib-hour-calculation-for-containers-and-application-only-monitoring). Los tamaños de memoria de los contenedores de AEM supervisados (servicios de autor y editor) se detectan automáticamente.
+La monitorización de Dynatrace AEM requiere una licencia de Dynatrace. Las licencias de Dynatrace AEM se basan en la [supervisión de pila completa de los contenedores de Kubernetes](https://docs.dynatrace.com/docs/license/capabilities/app-infra-observability#gib-hour-calculation-for-containers-and-application-only-monitoring). Los tamaños de memoria de los contenedores de AEM supervisados (servicios de autor y editor) se detectan automáticamente.
 
 Las especificaciones de implementación de Adobe para el entorno de AEM son:
 
 * Producción: En promedio, 4 contenedores, 16 GB de memoria cada uno
 * No producción: En promedio, 4 contenedores, 8 GB de memoria cada uno
 
-Para obtener más información acerca de las licencias de Dynatrace, consulte [Suscripción a la plataforma Dynatrace](https://docs.dynatrace.com/docs/shortlink/dynatrace-platform-subscription).
+Para obtener más información acerca de las licencias de Dynatrace, consulte [Suscripción a la plataforma Dynatrace](https://docs.dynatrace.com/docs/license).
 
 ### ¿Cómo obtengo mis datos de conexión de Dynatrace? {#how-do-i-get-my-dynatrace-connection-details}
 

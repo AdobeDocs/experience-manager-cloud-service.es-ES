@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cca724e41edc333346dfead092048c7739a0ec95
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 38%
+source-wordcount: '1216'
+ht-degree: 36%
 
 ---
 
@@ -19,7 +19,7 @@ Obtenga información sobre cómo implementar su código en Producción mediante 
 
 ![Diagrama de la canalización de producción](./assets/configure-pipeline/production-pipeline-diagram.png)
 
-La implementación del código en Fase y hasta Producción se realiza mediante una canalización de producción. La ejecución de la canalización de producción se divide en las dos fases lógicas siguientes:
+La implementación del código en Fase y hasta Producción se realiza mediante una canalización de producción. La ejecución de la canalización de producción se divide en dos fases lógicas:
 
 1. **Implementación en el entorno de ensayo**: el código se crea e implementa en el entorno de ensayo para pruebas funcionales automatizadas, pruebas de interfaz de usuario, auditoría de experiencias y pruebas de aceptación de usuarios (UAT).
 1. **Implementación en el entorno de producción**: una vez validada la compilación en Fase y aprobada para su promoción en Producción, el mismo artefacto de compilación se implementa en el entorno de producción.
@@ -32,11 +32,11 @@ Todas las implementaciones de Cloud Service siguen un proceso gradual para garan
 
 >[!NOTE]
 >
->La caché de Dispatcher se borra en cada implementación. Posteriormente, se &quot;calienta&quot; antes de que los nuevos nodos de publicación acepten el tráfico.
+>La caché de Dispatcher se borra con cada implementación y, a continuación, se calienta antes de que los nuevos nodos de publicación empiecen a aceptar tráfico.
 
 ## Implemente su código con Cloud Manager en AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
-[Una vez configurada la canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) incluido repositorio, entorno y entorno de pruebas, estará listo para implementar el código.
+Una vez que haya [configurado su canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md), incluido el repositorio, el entorno y el entorno de prueba, estará listo para implementar su código.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -82,7 +82,7 @@ La fase **Prueba de fase** incluye los siguientes pasos:
 | --- | --- |
 | Prueba funcional del producto | La canalización de Cloud Manager ejecuta pruebas que se ejecutan en el entorno de ensayo.<br>Véase también [Prueba funcional del producto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Prueba funcional personalizada | Este paso en la canalización siempre se ejecuta y no se puede omitir. Si la generación no produce un JAR de prueba, la prueba se aprueba automáticamente.<br>Vea también [Pruebas funcionales personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
-| Prueba de IU personalizada | Característica opcional que ejecuta automáticamente pruebas de interfaz de usuario creadas para aplicaciones personalizadas.<br>Las pruebas de IU están basadas en Selenium y empaquetadas en una imagen Docker para ofrecer flexibilidad en el idioma y los marcos de trabajo. Este método permite utilizar Java y Maven, Node y WebDriver.io, o cualquier marco o tecnología basados en Selenium.<br>Véase también [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
+| Prueba de IU personalizada | Característica opcional que ejecuta automáticamente las pruebas de interfaz de usuario creadas para aplicaciones personalizadas.<br>Las pruebas de interfaz de usuario están basadas en Selenium y empaquetadas en una imagen Docker para ofrecer flexibilidad en el idioma y los marcos de trabajo. Este método permite utilizar Java y Maven, Node y WebDriver.io, o cualquier marco o tecnología basados en Selenium.<br>Véase también [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
 | Auditoría de experiencias | Este paso en la canalización siempre se ejecuta y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencias después de realizar pruebas funcionales personalizadas que ejecutan las comprobaciones.<ul><li>Las páginas configuradas se envían al servicio y se evalúan.</li><li>Los resultados son informativos y muestran las puntuaciones y el cambio entre la puntuación actual y la anterior.</li><li>Este conocimiento es importante para determinar si hay una regresión que se introduce con la implementación actual.</li></ul>Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/reports/report-experience-audit.md).</li></ul> |
 
 ![Fase de prueba](assets/stage-testing.png)
@@ -149,7 +149,7 @@ Además de estar disponible en IU, puede utilizar [la API de Cloud Manager](http
 Para almacenar en déclencheur una nueva ejecución, realice una petición PUT al vínculo HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` en el estado del paso de implementación de producción.
 
 * Si este vínculo está presente, la ejecución se puede reiniciar desde ese paso.
-* Si está ausente, la ejecución no se puede reiniciar desde ese paso. 
+* Si está ausente, la ejecución no se puede reiniciar desde ese paso.
 
 Este vínculo solo está disponible para el paso de implementación de producción.
 
@@ -190,7 +190,7 @@ Este vínculo solo está disponible para el paso de implementación de producci�
 
 La sintaxis del valor href del vínculo HAL es solo un ejemplo. El valor real siempre debe leerse desde el vínculo HAL y no generarse.
 
-Enviar una solicitud PUT a este extremo da como resultado una respuesta 201 si es correcta, y el cuerpo de la respuesta es la representación de la nueva ejecución. Este flujo de trabajo es similar a iniciar una ejecución normal a través de la API.
+Enviar una petición PUT a este extremo da como resultado una respuesta 201 si es correcta, y el cuerpo de la respuesta es la representación de la nueva ejecución. Este flujo de trabajo es similar a iniciar una ejecución normal a través de la API.
 
 #### Identificación de una ejecución que se ha vuelto a ejecutar {#identify-reexecution}
 
