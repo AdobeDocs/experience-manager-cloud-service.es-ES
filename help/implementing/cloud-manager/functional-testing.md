@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b258bc6aaad29843b19eef244760c1e39f27dd09
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 5%
+source-wordcount: '1403'
+ht-degree: 9%
 
 ---
 
@@ -26,7 +26,7 @@ Descubra las puertas de calidad disponibles en el [proceso de implementación de
 
 El diagrama siguiente proporciona información general de alto nivel sobre las canalizaciones disponibles en el contexto de una estrategia general de pruebas y el [proceso de implementación de AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
-![Puertas de calidad para la implementación de AEM Cloud Service](assets/functional-testing/quality-gates-compact.svg)
+![Puertas de calidad para la implementación de AEM Cloud Service](assets/functional-testing/quality-gates-compact.png)
 
 ## Finalidad de las pruebas funcionales
 
@@ -42,7 +42,7 @@ Es importante tener en cuenta que estas puertas de calidad no están pensadas pa
 
 El diagrama siguiente proporciona una vista detallada de las puertas de calidad disponibles y su uso en la estrategia general de pruebas y el [proceso de implementación de AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
-![Puertas de calidad para la implementación de AEM Cloud Service](assets/functional-testing/quality-gates-overview.svg)
+![Puertas de calidad para la implementación de AEM Cloud Service](assets/functional-testing/quality-gates-overview.png)
 
 ### Puertas de calidad proporcionadas por el cliente
 
