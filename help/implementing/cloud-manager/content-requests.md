@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4a423ab3dcb176db5cd3f0d3b8d586a1afced535
+source-git-commit: 8371bceaf116cdcd4e0542dd1b8d772d2d12a05d
 workflow-type: tm+mt
 source-wordcount: '2276'
 ht-degree: 2%
@@ -161,6 +161,6 @@ trafficFilters:
       action: block
 ```
 
-Reemplace los valores de ejemplo por el código de país, la red o el nombre de bot que desee bloquear. Consulte [Sintaxis de reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) y [Estructura de condición](/help/security/traffic-filter-rules-including-waf.md#condition-structure) para obtener más opciones.
+Reemplace los valores de ejemplo por el código de país, la red o el nombre de bot que desee bloquear. Consulte [Sintaxis de reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) y [Estructura de condición](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) para obtener más opciones.
 
-* Algunos bots atacan un sitio muy fuerte un día y desaparecen al siguiente. Esta funcionalidad puede frustrar cualquier intento de bloquear una dirección IP o un agente de usuario específico.  Un enfoque genérico es introducir una [regla de límite de tarifa](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Revise los [ejemplos](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) y cree una regla que coincida con su tolerancia para una tasa rápida de solicitudes.  Revise la sintaxis [Estructura de condiciones](/help/security/traffic-filter-rules-including-waf.md#condition-structure) para todas las excepciones que desee permitir a un límite de tasa genérico.
+* Algunos bots atacan un sitio muy fuerte un día y desaparecen al siguiente. Esta funcionalidad puede frustrar cualquier intento de bloquear una dirección IP o un agente de usuario específico.  Un enfoque genérico es introducir una [regla de límite de tarifa](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Revise los [ejemplos](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) y cree una regla que coincida con su tolerancia para una tasa rápida de solicitudes.  Revise la sintaxis [Estructura de condiciones](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) para todas las excepciones que desee permitir a un límite de tasa genérico.
