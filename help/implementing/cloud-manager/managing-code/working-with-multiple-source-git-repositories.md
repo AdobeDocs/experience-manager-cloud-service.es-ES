@@ -5,10 +5,10 @@ exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 31%
+source-wordcount: '744'
+ht-degree: 27%
 
 ---
 

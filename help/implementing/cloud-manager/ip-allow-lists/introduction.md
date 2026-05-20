@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 21%
+source-wordcount: '556'
+ht-degree: 23%
 
 ---
 
@@ -20,13 +20,13 @@ Descubra cómo las Listas de permitidos IP pueden limitar desde qué direcciones
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
 >title="Administrar listas de IP permitidas"
->abstract="AEM as a Cloud Service es accesible a través de Internet y está protegido mediante la autenticación y autorización de usuario. Las listas de IP permitidas de Cloud Manager se pueden usar para limitar y controlar el acceso solo a direcciones IP de confianza. Los usuarios de Cloud Manager con los permisos adecuados pueden crear listas de permisos con direcciones IP de confianza desde las que los usuarios de su sitio pueden acceder a sus dominios de AEM."
+>abstract="AEM as a Cloud Service es accesible a través de Internet y está protegido mediante la autenticación y autorización de los usuarios. Las listas de IP permitidas de Cloud Manager se pueden usar para limitar y controlar el acceso solo a direcciones IP de confianza. Los usuarios de Cloud Manager con los permisos adecuados pueden crear listas de permisos con direcciones IP de confianza desde las que los usuarios de su sitio pueden acceder a sus dominios de AEM."
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists" text="Añadir una lista de IP permitidas"
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists" text="Ver y actualizar una lista de IP permitidas"
 
 ## Información general {#overview}
 
-AEM as a Cloud Service es accesible de forma predeterminada a través de Internet. Mientras que la seguridad se gestiona mediante la autenticación y autorización de usuarios, la inclusión en las listas de IP permitidas es una forma de limitar el acceso solo a direcciones IP de confianza.
+De forma predeterminada, AEM as a Cloud Service es accesible a través de Internet. Mientras que la seguridad se gestiona mediante la autenticación y autorización de usuarios, la inclusión en las listas de IP permitidas es una forma de limitar el acceso solo a direcciones IP de confianza.
 
 Las Listas de permitidos IP de Cloud Manager se pueden utilizar para limitar y controlar el acceso a solo aquellas direcciones IP de confianza. Los usuarios de Cloud Manager con los permisos adecuados pueden [crear y agregar Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) de direcciones IP de confianza desde las que los usuarios de su sitio pueden acceder a sus dominios de AEM.
 

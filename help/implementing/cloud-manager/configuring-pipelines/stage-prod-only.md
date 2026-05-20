@@ -7,9 +7,9 @@ role: Admin, Developer
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1118'
 ht-degree: 49%
 
 ---
@@ -79,7 +79,7 @@ Las canalizaciones de solo producción y fase se crean de forma similar a las [c
 
 1. En la ficha **Código Source**, seleccione **Código de pila completa**. Esta opción crea e implementa toda la aplicación de AEM (back-end, configuración de nivel web/Dispatcher y cualquier módulo front-end del repositorio).
 
-1. En la lista desplegable **Entornos de implementación aptos**, seleccione el entorno de **fase** como entorno de implementación para su canalización. Al seleccionar fase, se crea una canalización dedicada al entorno de ensayo (la promoción de la producción se produce mediante una canalización independiente).
+1. En la lista desplegable **Entornos de implementación aptos**, seleccione el entorno de **fase** como entorno de implementación para su canalización. Al seleccionar fase, se crea una canalización dedicada al entorno de ensayo (la promoción de la producción se produce a través de una canalización independiente).
 
 1. Seleccione su **repositorio** y **rama Git** en las listas desplegables respectivas y luego haga clic en **Continuar**.
 

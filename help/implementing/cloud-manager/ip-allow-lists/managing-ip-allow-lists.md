@@ -5,10 +5,10 @@ exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 19%
+source-wordcount: '880'
+ht-degree: 17%
 
 ---
 
@@ -50,9 +50,9 @@ El cuadro de diálogo **Ver y actualizar Lista de permitidos IP** muestra el nom
    | --- | --- |
    | Aplicado | La Lista de permitidos IP se ha aplicado correctamente a uno o más entornos. |
    | Actualizándose | Se está realizando una actualización de la Lista de permitidos IP, que puede incluir una o más aplicaciones o la anulación de la aplicación de la lista. Cada aplicación y anulación de la aplicación se enumera junto con su propio estado **No iniciada**, **En curso**, **Completada** o **Error**. |
-   | Error | Error en uno o varios procesos de aplicación o de anulación de la aplicación de una actualización.<br>· Cada aplicación y anulación de la aplicación se enumera junto con su estado.<br>· El estado es **Error** si falla una aplicación/anulación de la aplicación en la actualización. El estado permanece como **Error** hasta que se borren todos los errores.<br>· Haga clic en el icono **Reintentar** junto al estado para borrar el error.<br>· No puede actualizar ni eliminar una Lista de permitidos IP con el estado **Error**. |
-   | Eliminando | Se está eliminando una Lista de permitidos IP.<br>· La eliminación implica la anulación de la aplicación de la lista de todos los servicios.<br>· Cada anulación de la aplicación se enumera junto con su propio estado de **No iniciada**, **En curso**, **Completada** o **Error**.<br>· Cuando finaliza la operación de eliminación, la Lista de permitidos IP no aparece en la tabla de Lista de permitidos IP. Además, la Lista de permitidos IP no se aplica a ningún servicio del programa en Cloud Manager. |
-   | Error de eliminación | Error en una o varias aplicaciones durante una operación de eliminación.<br>· Cada anulación de la aplicación se enumera junto con el estado **Completada** o **Error**.<br>· El estado pasa a ser **Error al eliminar** si falla una de las aplicaciones. El estado permanece como **Error al eliminar** hasta que se borren todos los errores. En el extremo derecho de la fila de la tabla, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, en el menú desplegable, haga clic en **Eliminar** para borrar cualquier error.<br>· No puede actualizar una Lista de permitidos IP mientras el estado sea **Error**. |
+   | Error | Error en uno o más procesos de aplicación o anulación de la aplicación de una actualización.<br>· Cada aplicación y anulación de la aplicación se enumera junto con su estado.<br>· El estado es **Error** si falla una aplicación/anulación de la aplicación en la actualización. El estado permanece como **Error** hasta que se borren todos los errores.<br>· Haga clic en el icono **Reintentar** que aparece junto al estado para poder borrar el error.<br>· No puede actualizar ni eliminar una Lista de permitidos IP con el estado **Error**. |
+   | Eliminando | Se está eliminando una Lista de permitidos IP.<br>· La eliminación implica anular la aplicación de la lista de todos los servicios.<br>· Cada anulación de la aplicación se enumera junto con su propio estado de **No iniciada**, **En curso**, **Completada** o **Error**.<br>· Cuando finaliza la operación de eliminación, la Lista de permitidos IP no aparece en la tabla de Lista de permitidos IP. Además, la Lista de permitidos IP no se aplica a ningún servicio del programa en Cloud Manager. |
+   | Error de eliminación | Error en una o varias aplicaciones durante una operación de eliminación.<br>· Cada una de las aplicaciones aparece junto con el estado **Completar** o **Error**.<br>· El estado se convierte en **Error al eliminar** si falla una de las aplicaciones. El estado permanece como **Error al eliminar** hasta que se borren todos los errores. En el extremo derecho de la fila de la tabla, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, en el menú desplegable, haga clic en **Eliminar** para borrar cualquier error.<br>· No puede actualizar una Lista de permitidos IP mientras el estado sea **Error**. |
 
 ## Eliminación de una Lista de permitidos IP {#delete-allow-list}
 
@@ -69,7 +69,7 @@ Un usuario con el rol **Propietario del negocio** o **Administrador de implement
 
 ## Configuraciones de CDN preexistentes {#pre-existing-cdn}
 
-Si tiene una configuración de CDN (red de distribución de contenido) preexistente para sus Listas de permitidos IP, aparecerá un mensaje informativo en la página **Lista de permitidos IP**. El mensaje le recomienda añadir estas configuraciones mediante la interfaz de usuario para que sean visibles y configurables en Cloud Manager.
+Si tiene una configuración de CDN (red de distribución de contenido) preexistente para sus Listas de permitidos IP, aparecerá un mensaje informativo en la página **Lista de permitidos IP**. El mensaje le recomienda agregar estas configuraciones a través de la interfaz de usuario para que sean visibles y configurables en Cloud Manager.
 
 El mensaje desaparece una vez que se migran todas las configuraciones de entorno preexistentes mediante la interfaz de usuario. El mensaje puede tardar entre 1 y 2 días hábiles en desaparecer.
 

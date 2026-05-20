@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b68b4bb81695822a8536b5b9ec0c83cc0d530acb
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 68%
+source-wordcount: '1015'
+ht-degree: 66%
 
 ---
 
@@ -116,7 +116,7 @@ Si [agregar una configuración OSGi de RepositoryInitializer](#cloud-manager-dep
 
 ## No puedo establecer una variable mediante un comando aio. ¿Qué puedo hacer? {#set-variable}
 
-Puede recibir un error `403` como el siguiente al intentar enumerar o establecer variables de canalización mediante comandos `aio`.
+Puede recibir un error `403` como el siguiente al intentar enumerar o establecer variables de canalización mediante `aio` comandos.
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables 222

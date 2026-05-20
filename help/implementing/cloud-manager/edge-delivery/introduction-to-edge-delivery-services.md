@@ -4,9 +4,9 @@ description: Aprenda a enviar sus proyectos de Cloud Manager con Edge Delivery S
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a7e3c154f36b194cde223c11e9e06ecbe3a872f5
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1486'
 ht-degree: 53%
 
 ---
@@ -51,7 +51,7 @@ Existen dos tipos de implementación para Edge Delivery Services en CDN administ
 Estas dos opciones también tienen diferentes capacidades:
 
 * **La canalización de configuración** está disponible para los entornos de AEM as a Cloud Service.
-* **La canalización de configuración** solo está disponible actualmente para entornos de Edge a través del programa Beta limitado.
+* **La canalización de configuración** está disponible actualmente para entornos de Edge solamente a través del programa limitado de Beta.
 
 Para obtener instrucciones de configuración completas, consulte [CDN administrada por Adobe](https://www.aem.live/docs/byo-cdn-adobe-managed)
 
@@ -141,7 +141,7 @@ La **lista de tareas pendientes de Edge Delivery** en Cloud Manager es una lista
 | 8 | Configuración de validación push | Ver [Configuración de validación push para un sitio Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Go-Live | Consulte [Lista de comprobación de lanzamiento](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441564?captions=spa&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registro de un vale de asistencia {#eds-support-ticket}
 

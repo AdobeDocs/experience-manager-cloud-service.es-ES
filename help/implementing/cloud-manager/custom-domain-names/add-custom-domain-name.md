@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1142'
 ht-degree: 15%
 
 ---
@@ -65,7 +65,7 @@ Al escribir el nombre de dominio, no incluya `http://`, `https://` ni espacios.
 
 1. En la página **Configuración de dominio**, a la derecha del nombre de dominio, haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, haga clic en **Verificar**.
 
-1. En el cuadro de diálogo **Verificar dominio**, en **¿Qué tipo de certificado planea usar con este dominio?**, seleccione una de las siguientes opciones:
+1. En el cuadro de diálogo **Verificar dominio**, en **¿Qué tipo de certificado planea usar con este dominio?** , seleccione una de las siguientes opciones:
 
    | Tipo de certificado | Descripción |
    | --- | --- |

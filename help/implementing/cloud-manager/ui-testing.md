@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
 source-wordcount: '2891'
 ht-degree: 47%
@@ -155,7 +155,7 @@ El descriptor de ensamblado indica al complemento que cree un archivo de tipo `.
 
 El descriptor de ensamblado también excluye algunos archivos que podrían generarse al ejecutar las pruebas de IU localmente. Este proceso garantiza un archivo más pequeño y generaciones más rápidas.
 
-Cloud Manager recoge automáticamente el archivo de contexto de compilación de Docker y crea la imagen de prueba durante las canalizaciones de implementación. Finalmente, Cloud Manager ejecuta la imagen Docker para ejecutar las pruebas de interfaz de usuario contra la aplicación.
+Cloud Manager recoge automáticamente el archivo de contexto de compilación de Docker y crea la imagen de prueba durante las canalizaciones de implementación. Finalmente, Cloud Manager ejecuta la imagen de Docker para ejecutar las pruebas de interfaz de usuario contra la aplicación.
 
 La generación debe producir ningún o un archivo. Si no genera ningún archivo, el paso de prueba se aprobará de forma predeterminada. Si la generación produce más de un archivo, qué archivo se seleccione no es determinista.
 
@@ -276,7 +276,7 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 | Duración recomendada | 15m | Adobe recomienda mantener las pruebas por debajo de este límite de tiempo. |
 
 * Si el autor/publicación de destino está protegido por una inclusión en la lista de permitidos IP, la infraestructura de prueba de la IU de la canalización debe estar incluida en la lista de permitidos o las pruebas de la IU pueden fallar con 403 Prohibido.
-Consulte también [Error en la prueba de IU en AEMaaCS debido a la Inclusión en la lista de permitidos de IP](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26654#) y [Introducción a las Listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Consulte también [Error en la prueba de IU en AEMaaCS debido a la Inclusión en la lista de permitidos de IP](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) y [Introducción a las Listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
