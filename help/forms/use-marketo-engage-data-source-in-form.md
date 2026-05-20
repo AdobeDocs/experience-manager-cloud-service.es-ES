@@ -1,21 +1,19 @@
 ---
 title: Configuración de datos de Marketo Engage para los formularios adaptables
 description: Aprenda a utilizar el esquema de Marketo Engage en formularios adaptables.
-keywords: Utilizar la fuente de datos de Marketo Engage en formularios adaptables, Conexión de una fuente de datos de instancia de Marketo con un formulario, Conectar un formulario a Marketo.
+keywords: Utilizar la fuente de datos de Marketo Engage en Forms adaptable, Cómo conectar una fuente de datos de instancia de Marketo con un formulario , Conecte un formulario a Marketo.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 99%
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 
 # Configuración de la fuente de datos de Marketo Engage para los formularios adaptables existentes
-
-<span class="preview"> La funcionalidad está disponible en el programa de primeros usuarios. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
 ![Flujo de trabajo](/help/forms/assets/workflow-marketo-2.png)
 
@@ -126,6 +124,6 @@ Ahora, ha configurado la fuente de datos de Marketo Engage para formularios adap
 
 {{af-submit-action}}
 
-## Véase también
+## Consulte también
 
 {{marketo-engage-see-also}}

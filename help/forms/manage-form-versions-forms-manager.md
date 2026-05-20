@@ -5,16 +5,14 @@ feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: cd2c6e15-99a6-4b4e-bfd1-8291a2001ebe
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '412'
 ht-degree: 5%
 
 ---
 
 # Administrar versiones de Form Assets en la interfaz de usuario de Forms Manager
-
-<span class="preview"> Esta característica está disponible a través del programa Acceso anticipado. Para solicitar acceso, envía un correo electrónico desde tu dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
 
 Forms Manager ahora admite el control de versiones de recursos de formulario. Puede crear versiones, ver el historial de versiones y restaurar versiones anteriores de los recursos desde la interfaz de usuario de Forms Manager.
 
@@ -35,7 +33,7 @@ Puede crear y administrar versiones para los siguientes tipos de recursos:
 
 Para crear una versión de un recurso de formulario:
 
-1. Vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
+1. Vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos]**.
 1. Seleccione el formulario o recurso.
 1. En el panel izquierdo, seleccione **[!UICONTROL Cronología]**.
 1. Haga clic en **[!UICONTROL Guardar como versión]** en la barra de herramientas de la cronología.

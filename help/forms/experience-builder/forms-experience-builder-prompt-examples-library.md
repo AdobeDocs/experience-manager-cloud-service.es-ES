@@ -6,9 +6,9 @@ index: false
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: 95e2216ee79433783da384134243f3688ff7797d
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2170'
 ht-degree: 97%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 97%
 # Forms Experience Builder: biblioteca de indicaciones
 
 Colección de patrones de indicaciones reutilizables y ejemplos optimizados para Forms Experience Builder. Esta biblioteca optimizada se centra en los dos métodos de creación principales: Crear desde cero e Importar y convertir, con compatibilidad mejorada para campos inteligentes con tecnología LLM y coherencia de marca.
-
->[!NOTE]
->
-> Forms Experience Builder está disponible en el programa para primeros usuarios. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 >[!IMPORTANT]
 >
