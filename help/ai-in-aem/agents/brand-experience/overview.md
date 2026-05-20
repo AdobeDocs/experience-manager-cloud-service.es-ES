@@ -4,10 +4,10 @@ description: Descubra cómo Brand Experience Agent acelera la modernización y l
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
+source-wordcount: '586'
+ht-degree: 2%
 
 ---
 
@@ -47,6 +47,16 @@ La modernización de experiencias elimina la fricción de las migraciones de sit
 ### Trabajo de actualización de contenido {#content-update}
 
 [El trabajo de actualización de contenido](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) actualiza fácilmente el contenido existente, incluidos los fragmentos de contenido, las páginas, los formularios y los recursos. El agente puede realizar acciones como actualizar, quitar, reemplazar o agregar elementos de contenido para mantener las experiencias precisas y actualizadas. Las entradas pueden ser descripciones en lenguaje natural y, cuando se utilizan con PDF de Jira y capturas de pantalla, pueden proporcionar entradas a.
+
+### Trabajo de creación de contenido {#content-create}
+
+El trabajo [Creación de contenido](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md) crea nuevas páginas en función de una información de marketing, una plantilla y un mensaje en lenguaje natural.
+
+>[!NOTE]
+>
+>El trabajo de creación de contenido está actualmente en disponibilidad limitada.
+>
+>Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ### Trabajo de creación de Forms {#forms-creation}
 

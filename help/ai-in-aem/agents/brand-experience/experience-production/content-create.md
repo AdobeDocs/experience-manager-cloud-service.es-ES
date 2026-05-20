@@ -3,9 +3,9 @@ title: Trabajo de creación de contenido
 description: Descubra qué es el trabajo de creación de contenido de Brand Experience Agent y qué puede hacer por usted.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 5d1a560b4eb386d0c3795d6634742ffce8ef4c71
+source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Trabajo de creación de contenido {#content-create}
 
-El trabajo de creación de contenido es parte de [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) que crea nuevas páginas de marca usando lenguaje natural, información de marketing y una plantilla de AEM. Acelera la producción de páginas para Adobe Experience Manager (AEM) as a Cloud Service y Edge Delivery Services.
+El trabajo de creación de contenido es parte de [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) que crea nuevas páginas de marca usando lenguaje natural, información de marketing y una plantilla de AEM. El trabajo acelera la producción de páginas para Adobe Experience Manager (AEM) as a Cloud Service y Edge Delivery Services.
 
 <!-- see Limitations too and update when appropriate -->
 
