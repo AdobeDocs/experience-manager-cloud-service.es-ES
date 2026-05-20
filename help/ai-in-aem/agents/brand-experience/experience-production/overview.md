@@ -4,10 +4,10 @@ description: Descubra cómo Experience Production Agent en AEM le ayuda a aceler
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 5745156078fe3e3e72e293938c065a1340228b9a
+source-git-commit: fe41f25ddc2b7ec20b74c72d4a8d19d936c22539
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 5%
+source-wordcount: '396'
+ht-degree: 4%
 
 ---
 
@@ -21,6 +21,7 @@ Experience Production Agent automatiza tareas de alto esfuerzo y gran volumen. H
 El agente proporciona los siguientes trabajos:
 
 * [Actualización de contenido](#content-update)
+* [Creación de contenido](#content-create)
 * [Creación de formularios](#form-creation)
 * [Creación de comunicaciones](#communications-creation)
 
@@ -33,6 +34,14 @@ El agente proporciona los siguientes trabajos:
 ### Trabajo de actualización de contenido {#content-update}
 
 El trabajo [Actualización de contenido](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) actualiza fácilmente el contenido existente, incluidos los fragmentos de contenido, las páginas, los formularios y los recursos. El agente puede realizar acciones como actualizar, quitar, reemplazar o agregar elementos de contenido para mantener las experiencias precisas y actualizadas. Las entradas pueden ser descripciones en lenguaje natural y, cuando se utilizan con PDF de Jira y capturas de pantalla, pueden proporcionar entradas a.
+
+### Trabajo de creación de contenido {#content-create}
+
+El trabajo [Creación de contenido](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md) crea nuevas páginas en función de una información de marketing, una plantilla y un mensaje en lenguaje natural.
+
+>[!NOTE]
+>
+>El trabajo de creación de contenido está actualmente en disponibilidad limitada. Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ### Trabajo de creación de formularios {#form-creation}
 
