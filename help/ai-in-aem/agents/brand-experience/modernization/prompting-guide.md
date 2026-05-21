@@ -4,9 +4,9 @@ description: En esta guía se proporcionan sugerencias para solicitar informaci�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 65a35ce2a47187f7939991a45b67692312331774
+source-git-commit: 212c9c4db9904de0f9ec27cec9282df8d288a25a
 workflow-type: tm+mt
-source-wordcount: '3121'
+source-wordcount: '3163'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,7 @@ Utilice este mensaje cuando migre contenido de un sitio web existente a Edge Del
    * Al migrar varias páginas, el agente carga primero las variantes personalizadas existentes y las vuelve a utilizar cuando el estilo coincide (umbral de similitud del 70 % basado en el propósito, los colores, la tipografía, el espaciado y el diseño).
 * El encabezado, la navegación y el pie de página se excluyen de la migración de páginas. Estas se gestionan mediante habilidades dedicadas.
 * Cada migración crea una infraestructura de importación (plantillas de página, analizadores de bloques, transformadores) para futuras importaciones masivas.
+* Las imágenes de Dynamic Media y Scene7 se detectan en el origen y se conservan como URL de DM en lugar de importarse como representaciones estáticas, por lo que las transformaciones interactivas y sobre la marcha permanecen intactas. Esto se aplica tanto a la creación de documentos como a las migraciones de AEM Sites/editor universal.
 
 ### Importación masiva {#bulk-import}
 
