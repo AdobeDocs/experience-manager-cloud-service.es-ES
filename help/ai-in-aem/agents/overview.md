@@ -4,10 +4,10 @@ description: Obtenga información sobre los agentes disponibles en AEM para acel
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 9dcef6b9dc858509a3470d3567774cb38deb96b5
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 3%
+source-wordcount: '599'
+ht-degree: 2%
 
 ---
 
@@ -20,8 +20,8 @@ Estos agentes están disponibles en Adobe Experience Manager (AEM) as a Cloud Se
 >
 >Los agentes solo están disponibles en AEM as a Cloud Service y Edge Delivery Services.
 >
->* Actualmente no están disponibles para AEM 6.5 ni para AEM 6.5 LTS.
->* No están disponibles en AEM On-Premise ni en Managed Services.
+>* Estarán disponibles progresivamente para AEM 6.5 LTS en Managed Services. Los clientes interesados en participar en nuestro programa de innovación conjunta deben ponerse en contacto con su ingeniero de éxito del cliente de Adobe, su administrador de cuentas técnico o el administrador de servicio al cliente para comprobar la disponibilidad.
+>* No estarán disponibles en AEM 6.5/AEM 6.5 LTS On-Prem.
 
 ## Acceder a agentes {#accessing-agents}
 
@@ -60,8 +60,8 @@ El [Agente de control](/help/ai-in-aem/agents/governance/overview.md) protege la
 
 Tenga en cuenta las siguientes limitaciones generales de los agentes de AEM:
 
-* Los agentes solo están disponibles para AEM as a Cloud Service y Edge Delivery Services.
-* Actualmente no están disponibles para AEM 6.5 ni para AEM 6.5 LTS.
-* Actualmente no están disponibles en AEM On-Premise ni en Managed Services.
+* Los agentes están disponibles en AEM as a Cloud Service y Edge Delivery Services.
+* Estarán disponibles progresivamente para AEM 6.5 LTS en Managed Services. Los clientes interesados en participar en nuestro programa de innovación conjunta deben ponerse en contacto con su ingeniero de éxito del cliente de Adobe, su administrador de cuentas técnico o su administrador de servicios al cliente para comprobar la disponibilidad.
+* No estarán disponibles en AEM 6.5/AEM 6.5 LTS On-Prem.
 
 Consulte las páginas individuales para conocer las limitaciones específicas del agente.
