@@ -4,10 +4,10 @@ description: Descubra cómo Experience Modernization Agent incorpora nuevos siti
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
+source-git-commit: cc75cbb87c192ceeaa49e7ce860bf497743916bc
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '956'
+ht-degree: 1%
 
 ---
 
@@ -89,6 +89,7 @@ Los siguientes casos de uso requieren un esfuerzo de implementación adicional a
 La habilidad de raspado no admite las siguientes fuentes.
 
 * Fuentes protegidas o de intranet, como contenido detrás de la autenticación, VPN o firewalls a los que no se puede acceder
+   * Como alternativa, use [SLICC](https://www.sliccy.com), que puede aprovechar el contexto de autenticación de su explorador para acceder a fuentes protegidas.
 * Contenido dinámico complejo, como contenido que requiere una interacción sofisticada del usuario, para aparecer en el DOM.
    * El contenido procesado del lado del cliente es compatible si se puede acceder al contenido a través de una dirección URL específica.
    * También se admiten elementos ocultos mediante CSS pero presentes en el DOM como pestañas, acordeones o carruseles.
@@ -111,6 +112,6 @@ Los siguientes requisitos no están cubiertos por las habilidades de automatizac
 * Funcionalidad personalizada (por ejemplo, calculadoras, configuradores)
 * Lógica empresarial personalizada
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 Comience migrando un sitio con el documento [Introducción al agente de modernización de experiencias.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
