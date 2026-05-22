@@ -3,9 +3,9 @@ title: Almacenamiento en caché en funciones Edge de AEM
 description: Obtenga información sobre cómo interactúan la caché de CDN y la caché de recuperación de funciones de Edge, cómo configurar el comportamiento del almacenamiento en caché y cómo depurar el contenido almacenado en caché en ambas capas.
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: b33a565d9623ed44309e1d34377345dae86757cd
+source-git-commit: 4d3659aef1a180192a79b791f6ea840f576f5e63
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Las claves sustitutas múltiples se separan con espacios. Estas claves sustituta
 
 ## Caché de recuperación de funciones de Edge (interna) {#fetch-cache}
 
-La caché de recuperación de funciones de Edge se encuentra entre la función de Edge y los backends a los que llama. Almacena en la memoria caché la respuesta del servidor **back-end** a `fetch()` llamadas realizadas dentro del código de función de Edge. También contiene cualquier dato que el código almacene a través de la [**API de caché principal**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache) o la [**API de caché simple**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/SimpleCache): interfaces de almacenamiento en caché mediante programación que le proporcionan un control preciso sobre lo que se almacena en caché, durante cuánto tiempo y bajo qué claves sustitutas.
+La caché de recuperación de funciones de Edge se encuentra entre la función de Edge y los backends a los que llama. Almacena en la memoria caché la respuesta del servidor **back-end** a `fetch()` llamadas realizadas dentro del código de función de Edge. También contiene cualquier dato que el código almacene a través de la [**API de caché principal**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache/insert) o la [**API de caché simple**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/SimpleCache): interfaces de almacenamiento en caché mediante programación que le proporcionan un control preciso sobre lo que se almacena en caché, durante cuánto tiempo y bajo qué claves sustitutas.
 
 A **no** le influyen los encabezados que configure en la respuesta saliente de la función Edge; solo los encabezados de respuesta del servidor, las opciones [`CacheOverride`](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache-override/CacheOverride/) de las llamadas de recuperación o las claves sustitutas que asigne mediante programación al escribir en la API de caché principal.
 
@@ -120,7 +120,7 @@ El comando CLI `purge-cache` purga la **memoria caché de recuperación de funci
 Las claves sustitutas utilizadas en los comandos de depuración deben coincidir con las claves que estaban **etiquetadas en el contenido almacenado en caché en el momento en que se almacenaron**. Este es el mismo concepto que [depuración basada en claves sustitutas](/help/implementing/dispatcher/cdn-cache-purge.md#surrogate-key-purge) que se usa en la red de distribución de contenido (CDN) de AEM, pero que se aplica a la memoria caché interna de la función de Edge. Estas claves provienen de:
 
 - El encabezado de respuesta `Surrogate-Key` que devuelve el backend cuando la función Edge se obtiene de él.
-- Claves que asigna mediante programación al escribir en la [API de caché principal](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache) (por ejemplo, mediante la opción `surrogateKeys` al insertar una entrada de caché).
+- Claves que asigna mediante programación al escribir en la [API de caché principal](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache/insert) (por ejemplo, mediante la opción `surrogateKeys` al insertar una entrada de caché).
 
 Por ejemplo, si el servidor responde con:
 
