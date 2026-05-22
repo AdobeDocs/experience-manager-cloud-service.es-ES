@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8be88cd42efababa187ad5154005e1ee173d3f73
+source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
 workflow-type: tm+mt
-source-wordcount: '7411'
+source-wordcount: '7415'
 ht-degree: 85%
 
 ---
@@ -1502,6 +1502,7 @@ ht-degree: 85%
       + [Encabezado y sin encabezado en AEM](/help/implementing/developing/headful-headless.md)
       + [No permitir la serialización de ResourceResolvers mediante el exportador de modelos Sling](/help/implementing/developing/disallow-resourceresolver-serialization.md)
       + [Funciones de Edge de AEM](/help/implementing/developing/introduction/edge-functions.md)
+      + [Almacenamiento en caché de funciones AEM Edge](/help/implementing/developing/introduction/edge-functions-caching.md)
       + Desarrollo de AEM de pila completa {#full-stack}
          + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [Estructura de la IU de AEM](/help/implementing/developing/introduction/ui-structure.md)
