@@ -97,7 +97,7 @@ Para utilizar la funcionalidad de carga masiva de usuarios de Admin Console, sig
    1. En el cuadro de diálogo que aparece, seleccione **Archivo de usuario en lotes** de la lista desplegable bajo **Descargar un archivo...** y haga clic en el botón **Descargar**.
    1. Guarde el archivo CSV resultante
 1. Edición del archivo de usuario en bloque
-   * Cada línea representa un usuario que se va a cargar y tiene quince campos (los nombres de los campos constituyen la primera línea del archivo). Algunos campos son opcionales y no se describen aquí. Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format).  Los campos son:
+   * Cada línea representa un usuario que se va a cargar y tiene quince campos (los nombres de los campos constituyen la primera línea del archivo). Algunos campos son opcionales y no se describen aquí. Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html#csv-format).  Los campos son:
 
       * _Tipo de identidad_ - Opcional.  Si no se especifica, se creará como una Adobe ID
       * _Nombre de usuario_: opcional y no se usa para las cargas de Adobe ID
@@ -108,14 +108,14 @@ Para utilizar la funcionalidad de carga masiva de usuarios de Admin Console, sig
       * _Código de país_: opcional y no se usa para las cargas de Adobe ID
       * _ID_: opcional y no se usa para las cargas de Adobe ID
       * _Configuraciones de producto_ - Opcional. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
-      * _Roles de administrador_ - Opcional. Utilice este campo si el usuario es administrador. Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
-      * _Configuraciones de producto administradas_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
+      * _Roles de administrador_ - Opcional. Utilice este campo si el usuario es administrador. Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
+      * _Configuraciones de producto administradas_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
       * _Grupos de usuarios_ - Opcional. Lista de grupos a los que el usuario debe asignarse como miembro. Cada grupo debe ser un grupo de IMS ya existente. Cuando se descarga el archivo de usuario en bloque desde CAM, este campo se rellena previamente con los nombres de los grupos habilitados para IMS de los que el usuario era miembro (directa o indirectamente) antes de la migración
-      * _Grupos de usuarios administrados_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
-      * _Productos administrados_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
-      * _Contratos administrados_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
-      * _Acceso de desarrollador_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
-      * _Productos asignados automáticamente_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
+      * _Grupos de usuarios administrados_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
+      * _Productos administrados_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
+      * _Contratos administrados_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
+      * _Acceso de desarrollador_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
+      * _Productos asignados automáticamente_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/es/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
 
    * Al editar el CSV, algunas aplicaciones pueden añadir comillas adicionales al guardar, lo que provoca que falle el procesamiento. Se recomienda inspeccionar el CSV sin procesar en un editor de texto simple para asegurarse de que cada campo tenga solo una comilla de apertura y una de cierre (y no deban ser &quot;comillas inteligentes&quot;)
 
