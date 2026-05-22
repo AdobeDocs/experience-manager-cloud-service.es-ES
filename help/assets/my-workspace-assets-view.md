@@ -7,7 +7,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
 source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '753'
 ht-degree: 84%
 
 ---

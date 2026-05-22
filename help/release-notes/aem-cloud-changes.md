@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '880'
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Las principales diferencias se encuentran en las siguientes áreas:
 
 * [Eliminación de la IU clásica](#classic-ui)
 
-* [Entrega en el lado de publicación &#x200B;](#publish-side-delivery)
+* [Entrega en el lado de publicación](#publish-side-delivery)
 
 * [Administración y entrega de recursos](#asset-handling)
 
@@ -76,7 +76,7 @@ La consola Web, utilizada en versiones anteriores de AEM para cambiar los paquet
 
 Además de los cambios en la carpeta `/home` en el nivel de publicación, no se permiten cambios directos en el repositorio de publicación en AEM Cloud Service. En versiones anteriores de AEM locales o AEM en AMS, los cambios de código se podían realizar directamente en el repositorio de publicación. Algunas limitaciones se pueden mitigar de las siguientes maneras:
 
-* Para la configuración de contenido o basada en contenido: realice los cambios en la instancia de creación y publíquelos.
+* Para la configuración de contenido o basada en contenido: realice los cambios en la instancia de autor y publíquelos.
 * Para el código y la configuración: realice los cambios en el repositorio de GIT y ejecute la canalización CI/CD para implementarlos.
 
 ## No se permiten los modos de ejecución personalizados {#custom-runmodes}

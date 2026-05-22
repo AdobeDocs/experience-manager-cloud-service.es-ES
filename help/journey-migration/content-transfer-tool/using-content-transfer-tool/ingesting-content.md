@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 7c0703d746601742a28c3c98f35e69de70f25e05
 workflow-type: tm+mt
-source-wordcount: '3647'
-ht-degree: 12%
+source-wordcount: '3846'
+ht-degree: 15%
 
 ---
 
@@ -62,7 +62,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
 
    * **Copia previa:** Elija el valor `Pre-copy`
       * Puede ejecutar el paso opcional previo a la copia para acelerar de forma significativa la ingesta. Consulte [Ingesta con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) para obtener más información.
-      * Si se utiliza la ingesta con copia previa (para S3 o Azure Data Store), se recomienda ejecutar la ingesta de `Author` primero solo. Al hacerlo, se acelera la ingesta de `Publish` cuando se ejecuta más adelante.
+      * Si se utiliza la ingesta con copia previa (para S3 o el almacén de datos de Azure), se recomienda ejecutar la ingesta de `Author` primero solo. Al hacerlo, se acelera la ingesta de `Publish` cuando se ejecuta más adelante.
 
    >[!IMPORTANT]
    > Solo puede iniciar una ingesta en el entorno de destino si pertenece al grupo local **administradores de AEM** en el servicio de Cloud Service Author de destino. Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más detalles.

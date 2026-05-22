@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar usuarios y grupos en IM
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '857'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ Para obtener una guía sobre el uso de archivos de grupos y usuarios por lotes e
 
 ## Administración de principales {#managing-principals}
 
-Para AEM as a Cloud Service, los usuarios y grupos deben administrarse principalmente mediante Admin Console. Al considerar una migración, algunas de estas tareas se pueden llevar a cabo antes de que se produzca la migración de contenido.  Básicamente, uno de estos grupos de tareas principales
+Para AEM as a Cloud Service, los usuarios y grupos deben administrarse principalmente mediante Admin Console.  Al considerar una migración, algunas de estas tareas se pueden llevar a cabo antes de que se produzca la migración de contenido.  Básicamente, uno de estos grupos de tareas principales
 
 * Crear usuarios y grupos en IMS
 * Asignar usuarios a grupos en IMS
@@ -40,7 +40,7 @@ Durante la fase de ingesta de la migración, los grupos se migran si son necesar
 
 Los grupos migrados (los que no se crearon mediante la creación de colecciones de activos o carpetas privadas; consulte Colecciones y carpetas privadas más adelante) se configuran como grupos de IMS.  Esto significa que cualquier grupo con el mismo nombre creado en IMS (a través de Admin Console, por ejemplo) se vinculará al grupo en AEM, y los usuarios que sean miembros del grupo de IMS también pasarán a ser miembros del grupo en AEM.  Para que se produzca esta vinculación, el grupo también debe crearse primero en IMS.  Utilice Admin Console para crear grupos, individualmente o en lotes, en su instancia de AEM, tal y como se describe en [Administración de principales en IMS con Admin Console](/help/journey-migration/managing-principals.md).
 
-Utilice la interfaz de usuario de seguridad de AEM para asignar grupos de IMS a grupos locales de AEM.  Para ello, vaya a la página Herramientas de AEM, haga clic en Seguridad y seleccione Grupos.
+Utilice la interfaz de usuario de seguridad de AEM para asignar grupos de IMS a grupos locales de AEM. Para ello, vaya a la página Herramientas de AEM, haga clic en Seguridad y seleccione Grupos.
 
 ### Usuarios de IMS
 

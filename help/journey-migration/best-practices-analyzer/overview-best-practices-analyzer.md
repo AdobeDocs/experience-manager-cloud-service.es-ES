@@ -1,13 +1,13 @@
 ---
 title: Introducción al Analizador de prácticas recomendadas
-description: AEM Aprenda a utilizar el Analizador de prácticas recomendadas para evaluar el cumplimiento de la implementación de su con las prácticas recomendadas
+description: Aprenda a utilizar el Analizador de prácticas recomendadas para evaluar la adherencia de la implementación de AEM a las prácticas recomendadas
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 61%
+source-wordcount: '368'
+ht-degree: 65%
 
 ---
 
@@ -39,4 +39,4 @@ Se proporciona información adicional sobre las categorías y posibles implicaci
 >[!NOTE]
 >El informe del Analizador de prácticas recomendadas acelera el proceso de estimación del tiempo y el coste necesarios para realizar la transición a AEM as a Cloud Service al proporcionar información que, de lo contrario, tendría que recopilarse y evaluarse manualmente.
 
-AEM También puede descargar el informe del Analizador de prácticas recomendadas desde la instancia de la instancia de la. Consulte [Visualización del informe del Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obtener más información.
+También puede descargar el informe del Analizador de prácticas recomendadas desde su instancia de AEM. Consulte [Visualización del informe del Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obtener más información.

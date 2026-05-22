@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1471'
-ht-degree: 18%
+source-wordcount: '2496'
+ht-degree: 27%
 
 ---
 
@@ -81,12 +81,12 @@ Consulte recursos informativos sobre cómo configurar e implementar en entornos 
 1. [Comprender los resultados de la prueba](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=es)
 1. **Acceder a registros**
 
-   * [mediante la interfaz de usuario de CM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=es)
-   * [a través de Adobe i/o cli](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=es#debugging)
+   * [mediante la IU de CM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=es)
+   * [mediante el cli de e/s de Adobe](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=es#debugging)
 
 1. [Operaciones y mantenimiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/home.html?lang=es)
 
-   * [Configurando la configuración de OSGI](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=es)
+   * [Configurar OSGI](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=es)
    * [Copia de seguridad y restauración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=es)
 
 >[!TIP]

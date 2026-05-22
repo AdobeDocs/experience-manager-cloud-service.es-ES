@@ -8,8 +8,8 @@ exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 77%
+source-wordcount: '2318'
+ht-degree: 78%
 
 ---
 
@@ -181,7 +181,7 @@ También puede ir hasta la página de detalles de la carpeta y seleccionar **[!U
 
 ### Cómo trabajar con el componente Vínculo en el formulario de metadatos {#link-component-metadata-form}
 
-El componente de vínculo se utiliza para habilitar URL externas, incluidos enlaces de almacenamiento, información de derechos de autor, formularios de contacto, etc. Para usar el componente de vínculo en el formulario de metadatos, debe [configurar el formulario de metadatos](#metadata-forms).
+El componente de vínculo se utiliza para habilitar URL externas, incluidos enlaces de almacenamiento, información de derechos de autor, formularios de contacto, etc. Para utilizar el componente de vínculo en el formulario de metadatos, debe [configurar el formulario de metadatos](#metadata-forms).
 
 Siga los pasos a continuación para utilizar el componente de vínculo en el formulario de metadatos:
 

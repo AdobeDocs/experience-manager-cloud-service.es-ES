@@ -7,8 +7,8 @@ feature: Collections, Asset Management
 role: User
 source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 78%
+source-wordcount: '1143'
+ht-degree: 79%
 
 ---
 

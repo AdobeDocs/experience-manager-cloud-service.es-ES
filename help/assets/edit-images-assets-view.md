@@ -7,8 +7,8 @@ exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 74%
+source-wordcount: '1251'
+ht-degree: 71%
 
 ---
 

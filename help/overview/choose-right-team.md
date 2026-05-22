@@ -5,9 +5,9 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '832'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Su asignación de esta semana es revisar ambas listas con su equipo de implement
 
 ## **Funciones principales de AEM Experience Manager Sites**
 
-Un equipo ganador necesita nueve personas en los asientos adecuados, al igual que su equipo de implementación. Su éxito con Adobe Experience Manager Sites depende de la solidez de los integrantes del equipo y de cómo trabajen juntos. Asegúrese de que tiene estas nueve funciones asignadas
+Un equipo ganador necesita nueve personas en los asientos adecuados, al igual que su equipo de implementación. Su éxito con Adobe Experience Manager Sites depende de la solidez de los integrantes del equipo y de cómo trabajen juntos. Asegúrese de tener estas nueve funciones asignadas
 a personas con las cualificaciones sugeridas.
 
 | Función | Habilidades | Nivel de capacidad | Cualidades |

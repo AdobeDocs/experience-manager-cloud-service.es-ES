@@ -80,7 +80,7 @@ Al hacer clic en la ficha **Trabajo de refactorización**, verá una lista de lo
 
 ![imagen](/help/journey-migration/refactoring-tools/assets/rscam6.png)
 
-### &#x200B;1. Crear un nuevo trabajo de refactorización
+### &#x200B;1. Creación de un nuevo trabajo de refactorización
 
 - Haga clic en el botón **Crear nuevo trabajo**.
 - Seleccione las herramientas de refactorización que desee.
@@ -92,7 +92,7 @@ Al hacer clic en la ficha **Trabajo de refactorización**, verá una lista de lo
 >
 >Puede almacenar en déclencheur trabajos de refactorización individuales o ejecutar todas las herramientas disponibles de una sola vez mediante la opción **Todas las herramientas juntas**.
 
-### &#x200B;2. Estado del puesto
+### &#x200B;2. Estado del trabajo
 
 - **En ejecución**: el trabajo está en curso. El estado se actualiza automáticamente tras la finalización o el error.
 - **Completado** - El trabajo finalizó correctamente. Ahora puede revisar los resultados o descargar el código refactorizado.

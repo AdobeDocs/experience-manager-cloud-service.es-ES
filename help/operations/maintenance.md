@@ -6,7 +6,7 @@ feature: Operations
 role: Admin
 source-git-commit: d5addc40eb48000c515b670ef5f7c7a7e8b79928
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2098'
 ht-degree: 28%
 
 ---
@@ -273,7 +273,7 @@ Declare un archivo de configuración e impleméntelo como se describe en los pas
    * todas las propiedades deben estar definidas. No hay valores predeterminados heredados.
    * se deben respetar los tipos (enteros, cadenas, booleanos, etc.) de las tablas de propiedades siguientes.
 
-1. Cree una canalización de configuración en Cloud Manager, tal como se describe en el [artículo de canalización de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Cree una canalización de configuración en Cloud Manager, tal como se describe en el [artículo sobre la canalización de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Depuración de la versión {#version-purge}
 

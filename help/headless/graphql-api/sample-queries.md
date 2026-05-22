@@ -6,8 +6,8 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
 source-git-commit: 6f90bfebf2c9898bf8c1ad2643f8edc4ff4dda53
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 89%
+source-wordcount: '1929'
+ht-degree: 88%
 
 ---
 
@@ -148,7 +148,7 @@ Devuelve todos los `types` para todos los esquemas disponibles.
 
 ### Consulta de muestra: toda la información acerca de todas las ciudades {#sample-all-information-all-cities}
 
-Para recuperar toda la información acerca de todas las ciudades, puede utilizar la consulta básica:
+Para recuperar toda la información acerca de todas las ciudades, puede utilizar la siguiente consulta básica:
 **Consulta de muestra**
 
 ```graphql
@@ -1899,7 +1899,7 @@ Para las consultas de muestra, se utilizan los siguientes modelos de contenido y
 
 * [Compañía](#model-company)
 -> [Persona](#model-person)
--> [Premio](#model-award)
+    -> [Premio](#model-award)
 
 * [Ciudad](#model-city)
 

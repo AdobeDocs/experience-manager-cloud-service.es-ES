@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: d9a6e7c56a786792599e91ca7a2734dcf15fcb23
 workflow-type: tm+mt
-source-wordcount: '4441'
+source-wordcount: '4500'
 ht-degree: 63%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 63%
 >title="Reglas de calidad de código personalizadas"
 >abstract="Obtenga información sobre las reglas de calidad del código personalizadas de Cloud Manager, basadas en las prácticas recomendadas de ingeniería de Adobe Experience Manager, para garantizar un código de alta calidad mediante pruebas exhaustivas."
 
-Obtenga información sobre las reglas de calidad de código personalizadas de Cloud Manager, basadas en las prácticas recomendadas de ingeniería de Adobe Experience Manager, para garantizar un código de alta calidad mediante pruebas exhaustivas. Ver también [pruebas de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md).
+Obtenga información sobre las reglas de calidad del código personalizadas de Cloud Manager, basadas en las prácticas recomendadas de ingeniería de Adobe Experience Manager, para garantizar un código de alta calidad mediante pruebas exhaustivas. Ver también [pruebas de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md).
 
 Las reglas completas de SonarQube no están disponibles para su descarga debido a la información de Adobe registrada. Puede descargar la lista completa de *reglas actuales* [mediante este vínculo](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Continúe leyendo este documento para obtener descripciones y ejemplos de las reglas.
 

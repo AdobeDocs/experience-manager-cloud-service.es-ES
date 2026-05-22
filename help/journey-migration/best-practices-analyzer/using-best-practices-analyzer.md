@@ -6,7 +6,7 @@ feature: Migration
 role: Admin
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2796'
+source-wordcount: '2930'
 ht-degree: 37%
 
 ---
@@ -278,7 +278,7 @@ Los siguientes valores de respuesta son posibles:
 
 La duración predeterminada de la caché de BPA es de 24 horas. Con la opción para actualizar un informe y regenerar la caché, tanto en la instancia de AEM como en la interfaz HTTP, es probable que este valor predeterminado sea adecuado para la mayoría de los usos del BPA. Si el tiempo de generación de informes es especialmente largo para la instancia de AEM, es posible que desee ajustar la duración de la caché para minimizar la regeneración del informe.
 
-El valor de duración de la caché se almacena como la `maxCacheAge` propiedad en el siguiente nodo de repositorio:
+El valor de duración de caché se almacena como la propiedad `maxCacheAge` en el siguiente nodo de repositorio:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
 
 El valor de esta propiedad es la duración de la caché en segundos. Un administrador puede ajustar la duración de la caché mediante CRX/DE Lite.
