@@ -4,8 +4,8 @@ description: Información general sobre la migración de grupos en AEM as a Clou
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1917'
-ht-degree: 3%
+source-wordcount: '1987'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_groupmigration"
 >title="Migración de grupos"
->abstract="La herramienta de transferencia de contenido le ayuda a copiar grupos de su sistema de Adobe Experience Manager (AEM) existente a AEM as a Cloud Service. "
+>abstract="La herramienta de transferencia de contenido le ayuda a copiar grupos de su sistema de Adobe Experience Manager (AEM) existente a AEM as a Cloud Service."
 
 >[!NOTE]
 >Para ver las versiones anteriores de la herramienta de asignación de usuarios, consulte la [documentación heredada](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 Como parte del recorrido de transición a Adobe Experience Manager (AEM) as a Cloud Service, los grupos deben migrarse de los sistemas AEM existentes a AEM as a Cloud Service. Esta tarea la realiza la herramienta de transferencia de contenido.
 
-Un cambio importante en AEM as a Cloud Service es el uso completamente integrado de los Adobe ID para acceder al nivel de Author. Este proceso requiere el uso de [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para administrar usuarios y grupos de usuarios. La información de perfil de usuario está centralizada en Adobe Identity Management System (IMS), que proporciona un inicio de sesión único en todas las aplicaciones de la nube de Adobe. Para obtener más información, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=es#identity-management). Debido a este cambio, los usuarios se crean automáticamente en AEM la primera vez que inician sesión en él a través de IMS.  Por lo tanto, CTT no migra a los usuarios al sistema en la nube.  Los usuarios de IMS deben colocarse en grupos de IMS, que pueden ser grupos migrados o nuevos grupos colocados en los grupos de AEM a los que se ha concedido permiso para acceder al contenido de AEM que se está migrando.  De este modo, los usuarios del sistema en la nube tendrán el mismo acceso que tenían en el sistema AEM de origen.
+Un cambio importante en AEM as a Cloud Service es el uso completamente integrado de los Adobe ID para acceder al nivel de creación. Este proceso requiere el uso de [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para administrar usuarios y grupos de usuarios. La información de perfil de usuario está centralizada en Adobe Identity Management System (IMS), que proporciona un inicio de sesión único en todas las aplicaciones de la nube de Adobe. Para obtener más información, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Debido a este cambio, los usuarios se crean automáticamente en AEM la primera vez que inician sesión en él a través de IMS.  Por lo tanto, CTT no migra a los usuarios al sistema en la nube.  Los usuarios de IMS deben colocarse en grupos de IMS, que pueden ser grupos migrados o nuevos grupos colocados en los grupos de AEM a los que se ha concedido permiso para acceder al contenido de AEM que se está migrando.  De este modo, los usuarios del sistema en la nube tendrán el mismo acceso que tenían en el sistema AEM de origen.
 
 ## Detalles de migración del grupo {#group-migration-detail}
 
@@ -39,7 +39,7 @@ La herramienta de transferencia de contenido y Cloud Acceleration Manager migrar
 
 * Si un grupo se encuentra en una directiva ACL o CUG de contenido migrado, ese grupo se migrará, con algunas excepciones que se enumeran a continuación.
 * Hay varios grupos integrados y ya presentes en el sistema de la nube de Target; no se migran nunca.
-   * Algunos grupos integrados pueden incluir grupos de miembros que están integrados _no_; cualquier grupo de miembros (miembros directos o miembros de miembros, etc.) al que se haga referencia en una directiva ACL o CUG de contenido migrado se migrará para garantizar que los usuarios que sean miembros de estos grupos (directa o indirectamente) mantengan su acceso al contenido migrado.
+   * Algunos grupos integrados pueden incluir grupos de miembros que están integrados _no_; cualquier grupo de miembros (miembros directos o miembros de miembros, etc.) Las referencias en una directiva ACL o CUG del contenido migrado se migrarán para garantizar que los usuarios que sean miembros de estos grupos (directa o indirectamente) mantengan su acceso al contenido migrado.
 * Otros grupos, como los que no se encuentran en una directiva ACL o CUG, los que ya están en el sistema de destino y los que tienen datos restringidos de exclusividad en el sistema de destino, no se migrarán.
 
 Tenga en cuenta que la ruta registrada o registrada para un grupo es solo la primera ruta que activó la migración de ese grupo y que ese grupo también podría estar en otras rutas de contenido.
@@ -68,7 +68,7 @@ Cuando los grupos se incluyen durante la migración (opción predeterminada), se
 
 * En CAM, vaya a Transferencia de contenido y seleccione Trabajos de ingesta.
 * Haga clic en los puntos suspensivos (...) en la línea de la Ingesta en cuestión y seleccione &quot;Ver resumen principal&quot;.
-* En el cuadro de diálogo que aparece, seleccione &quot;Informe de migración de principales&quot; en la lista desplegable debajo de &quot;Descargar un archivo...&quot; y haga clic en el botón Descargar.
+* En el cuadro de diálogo que aparece, seleccione &quot;Informe de migración de principales&quot; de la lista desplegable debajo de &quot;Descargar un archivo...&quot; y haga clic en el botón Descargar.
 * Guarde el archivo CSV resultante.
 
 Parte de la información registrada por grupo es:

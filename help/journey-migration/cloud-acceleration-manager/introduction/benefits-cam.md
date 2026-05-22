@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 34%
+source-wordcount: '283'
+ht-degree: 40%
 
 ---
 
@@ -37,7 +37,7 @@ Las ventajas principales de utilizar Cloud Acceleration Manager son las siguient
 
 1. Optimice los esfuerzos:
 
-   Acceda a las prácticas recomendadas por el Adobe y a las herramientas de automatización para acelerar los esfuerzos de migración y acceder a las herramientas y minimizar el tiempo de migración.
+   Acceda a las prácticas recomendadas y las herramientas de automatización de Adobe para acelerar los esfuerzos de migración y acceder a las herramientas y minimizar el tiempo de migración.
 
 ## Pasos siguientes {#whats-next}
 

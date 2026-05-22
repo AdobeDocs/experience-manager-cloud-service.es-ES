@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: b729c07c78519cd9b6536a0dd142aa8ed01d2a22
 workflow-type: tm+mt
-source-wordcount: '1842'
-ht-degree: 7%
+source-wordcount: '1968'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 7%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=es#setting-up-pre-copy-step" text="Introducción a AzCopy como paso previo a la copia"
 
 Copiar muchos blobs con la herramienta de transferencia de contenido (CTT) puede tardar varios días.
-Para acelerar las fases de extracción e ingesta de la actividad de transferencia de contenido y mover contenido a AEM as a Cloud Service, CTT puede usar [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) como un paso previo a la copia opcional. Este paso previo a la copia se puede utilizar cuando la instancia de AEM de origen está configurada para utilizar un almacén de datos de Amazon S3, Azure Blob Storage o File Data Store. El paso previo a la copia es más eficaz para la primera extracción e ingesta completas. Sin embargo, no se recomienda utilizar la copia previa para recargas posteriores (si el tamaño de la recarga es inferior a 200 GB), ya que puede añadir tiempo a todo el proceso. Una vez configurado este paso previo, en la fase de extracción, AzCopy copia blobs de Amazon S3, Azure Blob Storage o el almacén de datos de archivo al almacén de blobs del conjunto de migración. En la fase de ingesta, AzCopy copia los blobs del almacén de blobs del conjunto de migración al almacén de blobs de destino de AEM as a Cloud Service.
+Para acelerar las fases de extracción e ingesta de la actividad de transferencia de contenido y mover contenido a AEM as a Cloud Service, CTT puede usar [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) como un paso previo a la copia opcional. Este paso previo a la copia se puede utilizar cuando la instancia de AEM de origen está configurada para utilizar un almacén de datos de Amazon S3, Azure Blob Storage o un almacén de datos de archivo. El paso previo a la copia es más eficaz para la primera extracción e ingesta completas. Sin embargo, no se recomienda utilizar la copia previa para recargas posteriores (si el tamaño de la recarga es inferior a 200 GB), ya que puede añadir tiempo a todo el proceso. Una vez configurado este paso previo, en la fase de extracción, AzCopy copia los blobs de Amazon S3, Azure Blob Storage o el almacén de datos de archivo al almacén de blobs del conjunto de migración. En la fase de ingesta, AzCopy copia los blobs del almacén de blobs del conjunto de migración al almacén de blobs de destino de AEM as a Cloud Service.
 
 ## Consideraciones importantes antes de comenzar {#important-considerations}
 
@@ -32,17 +32,17 @@ En la sección siguiente se comprenden las consideraciones importantes antes de 
 
 * La versión de Source AEM debe ser 6.3 - 6.5.
 
-* El almacén de datos de Source AEM está configurado para utilizar Amazon S3 o Azure Blob Storage. Para obtener más información, consulte [Configuración de almacenes de nodos y almacenes de datos en AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=es).
+* El almacén de datos de Source AEM está configurado para utilizar Amazon S3 o Azure Blob Storage. Para obtener más información, consulte [Configuración de almacenes de nodos y almacenes de datos en AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
 
 * Cada conjunto de migración copia todo el almacén de datos, por lo que solo se debe utilizar un conjunto de migración único.
 
 * Necesita acceso para instalar [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) en la instancia (o VM) que ejecuta la instancia de origen de AEM.
 
-* La recolección de elementos no utilizados del almacén de datos se ha ejecutado en los siete días anteriores en el origen. Para obtener más información, consulte [Recopilación de residuos del almacén de datos](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=es#data-store-garbage-collection).
+* La recolección de elementos no utilizados del almacén de datos se ha ejecutado en los siete días anteriores en el origen. Para obtener más información, consulte [Recopilación de residuos del almacén de datos](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
 
 ### Consideraciones adicionales si la instancia de AEM de origen está configurada para utilizar un almacén de datos de almacenamiento de Amazon S3 o Azure Blob {#additional-considerations-amazons3-azure}
 
-* La transferencia de datos desde Amazon S3 y Azure Blob Storage conlleva un coste. El coste de la transferencia es relativo a la cantidad total de datos del contenedor de almacenamiento existente (independientemente de si se hace referencia en AEM o no). Consulte [Amazon S3](https://aws.amazon.com/s3/pricing/) y [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) para obtener más información.
+* La transferencia de datos desde Amazon S3 y Azure Blob Storage comporta un coste. El coste de la transferencia es relativo a la cantidad total de datos del contenedor de almacenamiento existente (independientemente de si se hace referencia en AEM o no). Consulte [Amazon S3](https://aws.amazon.com/s3/pricing/) y [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) para obtener más información.
 
 * Necesita un par de clave de acceso y clave secreta para el bloque de Amazon S3 de origen existente o un URI SAS para el contenedor de almacenamiento de Azure Blob de origen existente (el acceso de solo lectura está bien).
 
@@ -69,7 +69,7 @@ Es importante determinar el tamaño total del almacén de datos por dos motivos:
 
 #### Almacén de datos de almacenamiento de Azure Blob {#azure-blob-storage}
 
-Desde la página de propiedades de contenedor existente en el portal de Azure, utilice el botón **Calcular tamaño** para determinar el tamaño de todo el contenido del contenedor. Por ejemplo:
+Desde la página de propiedades de contenedor existente en el portal de Azure, use el botón **Calcular tamaño** para determinar el tamaño de todo el contenido del contenedor. Por ejemplo:
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
@@ -106,7 +106,7 @@ La compatibilidad con AzCopy para Amazon S3, Azure Blob Storage y File Data Stor
 Puede descargar la última versión de CTT desde el portal [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 Debe tenerse en cuenta que solo se admiten las versiones 2.0.0 y posteriores, y es aconsejable utilizar la versión más reciente.
 
-### &#x200B;3. Configurar un archivo azcopy.config {#configure-azcopy-config-file}
+### &#x200B;3. Configuración de un archivo azcopy.config {#configure-azcopy-config-file}
 
 En la instancia de AEM de origen, en `crx-quickstart/cloud-migration`, cree un archivo denominado `azcopy.config`.
 
@@ -161,8 +161,7 @@ Si falta la propiedad `repository.home` en azcopy.config, se usa la ubicación p
 Con el archivo de configuración anterior en su lugar, la fase de precopia de AzCopy se ejecuta como parte de cada extracción posterior. Para evitar que se ejecute, puede cambiar el nombre de este archivo o quitarlo.
 
 >[!NOTE]
->Si AzCopy no está configurado correctamente, verá el siguiente mensaje en los registros:
->&#x200B;>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+>Si AzCopy no está configurado correctamente, verá el siguiente mensaje en los registros:>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. Inicie una extracción desde la interfaz de usuario de CTT. Consulte [Introducción a la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) y el [proceso de extracción](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) para obtener más información.
 
@@ -178,7 +177,7 @@ Las entradas de registro de AzCopy aparecen en el registro de extracción y llev
 
 >[!CAUTION]
 >
-> Durante los primeros minutos de una extracción, observe atentamente los registros de extracción para detectar cualquier signo de problema. Por ejemplo, esto es lo que se registraría si no se encontrara el contenedor de origen de Azure:
+> Durante los primeros minutos de una extracción, observe atentamente los registros de extracción para detectar cualquier signo de problema. Por ejemplo, esto es lo que se registraría si no se encontrara el contenedor de Azure de origen:
 
 ```
 [AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason > github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42

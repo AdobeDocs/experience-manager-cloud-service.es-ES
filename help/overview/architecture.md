@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '2710'
-ht-degree: 98%
+source-wordcount: '2750'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 >id="intro_aem_cloudservice_architecture"
 >title="Introducción a la arquitectura de AEM as a Cloud Service"
 >abstract="En esta pestaña, puede ver la nueva arquitectura de AEM as a Cloud Service y comprender los cambios. AEM ha resultado en una arquitectura dinámica con un número variable de imágenes, por lo que es importante tomarse un tiempo para comprender la arquitectura de la nube."
->additional-url="https://video.tv.adobe.com/v/346180?captions=spa" text="Información general sobre la arquitectura"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Información general sobre la arquitectura"
 
 Adobe Experience Manager (AEM) as a Cloud Service ofrece un conjunto de servicios componibles para la creación y gestión de experiencias de alto impacto.
 
@@ -80,12 +80,12 @@ La lista de servicios de composición de alto nivel en AEM as a Cloud Service se
 
 Para la administración de contenido, hay dos conjuntos principales de servicios para la creación de contenido, ambos representados como *fuentes de contenido*:
 
-* Nivel de autor de AEM: 
-proporciona una interfaz basada en web (con API asociadas) para la administración de contenido web. Esto funciona para ambos enfoques:
+* Nivel de AEM Author:
+Proporciona una interfaz basada en Web (con API asociadas) para la administración de contenido Web. Esto funciona para ambos enfoques:
    * Encabezado: a través del editor de páginas y del editor universal
    * Sin encabezado: a través del editor de fragmentos de contenido
-* Nivel de creación basado en documentos: 
-permite crear contenido mediante aplicaciones estándar, como:
+* El nivel de creación basada en documentos:
+Permite crear contenido mediante aplicaciones estándar, como:
    * Microsoft Word y Excel: a través de SharePoint
    * Documentos y hojas de Google: a través de Google Drive
 
@@ -141,7 +141,7 @@ Hay otros servicios adyacentes:
 * El servicio de telemetría operativa:
    * Es responsable de recopilar las métricas clave de una experiencia del cliente (como vistas de página, elementos vitales web principales y eventos de conversión) y de responder a las consultas asociadas (por ejemplo, vistas de página principales de un dominio determinado en los últimos siete días).
 * El servicio de cómputo de recursos:
-   * Es responsable del procesamiento de imágenes, vídeos y documentos cargados; por ejemplo, archivos de PDF y Adobe Photoshop. El procesamiento puede utilizar la IA de Adobe para extraer metadatos de imagen y vídeo (como etiquetas descriptivas o tonos de color principales) y, a continuación, generar representaciones (como diferentes tamaños o formatos), con acceso a API como las API de Adobe Photoshop y Adobe Lightroom.
+   * Es responsable del procesamiento de imágenes, vídeos y documentos cargados; por ejemplo, archivos de PDF y Adobe Photoshop. El procesamiento puede utilizar Adobe AI para extraer metadatos de imagen y vídeo (como etiquetas descriptivas o tonos de color principales) y luego generar representaciones (como diferentes tamaños o formatos), con acceso a API como las API de Adobe Photoshop y Adobe Lightroom.
 * El servicio Identity Management (IMS):
    * Es el lugar central responsable de administrar y autenticar los usuarios y grupos de usuarios para una aplicación de Adobe Experience Cloud AEM determinada (por ejemplo, Cloud Manager o el nivel de creación de AEM).
    * Se accede a través de Adobe Admin Console.
@@ -239,4 +239,4 @@ La nueva arquitectura de AEM as a Cloud Service presenta algunos cambios e innov
 * Edge Delivery Services:
    * [Información general de AEM as a Cloud Service: con Edge Delivery Services](/help/edge/overview.md)
    * [Uso de Edge Delivery Services](/help/edge/overview.md)
-   * [Explora la arquitectura subyacente y las piezas importantes de la arquitectura AEM as a Cloud Service con Edge Delivery Services.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=es)
+   * [Explore la arquitectura subyacente y las piezas importantes de AEM as a Cloud Service con Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=es)

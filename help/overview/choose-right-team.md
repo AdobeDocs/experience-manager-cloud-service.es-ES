@@ -5,9 +5,9 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '832'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 98%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_chooseteam"
 >title="Elija el equipo adecuado"
 >abstract="Debe colocar a las personas adecuadas en los trabajos correctos para que la implementación de Adobe Experience Manager tenga éxito."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=es" text="Alineación de los KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=es" text="Evaluación de los indicadores clave de rendimiento (KPI)"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Alineación de los KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="Evaluación de los indicadores clave de rendimiento (KPI)"
 
 Es probable que en su organización varios departamentos sean propietarios de diferentes aspectos de la experiencia digital. Sin gobierno, la fase está lista para interminables debates, luchas internas y confusión.
 
@@ -30,7 +30,7 @@ Su asignación de esta semana es revisar ambas listas con su equipo de implement
 
 ## **Funciones principales de AEM Experience Manager Sites**
 
-Un equipo ganador necesita nueve personas en los asientos adecuados, al igual que su equipo de implementación. Su éxito con Adobe Experience Manager Sites depende de la solidez de los integrantes del equipo y de cómo trabajen juntos. Asegúrese de que tiene estas nueve funciones asignadas
+Un equipo ganador necesita nueve personas en los asientos adecuados, al igual que su equipo de implementación. Su éxito con Adobe Experience Manager Sites depende de la solidez de los integrantes del equipo y de cómo trabajen juntos. Asegúrese de tener estas nueve funciones asignadas
 a personas con las cualificaciones sugeridas.
 
 | Función | Habilidades | Nivel de capacidad | Cualidades |
@@ -51,7 +51,7 @@ Ahora que sabe qué funciones son necesarias, consulte el gráfico siguiente par
 
 ![Revisar funciones para la implementación](assets/team_involvement.png)
 
-**Revise esta lista con su equipo de implementación** y asegúrese de tener personas con cualificaciones relevantes en cada función. Los integrantes del equipo que estén menos familiarizados con Adobe Experience Cloud pueden utilizar los recursos de aprendizaje de [Experience League](https://experienceleague.adobe.com/es?lang=es#recommended/solutions/experience-manager) para obtener una certificación en el [Aprendizaje digital de Adobe](https://learning.adobe.com/certification.html).
+**Revise esta lista con su equipo de implementación** y asegúrese de tener personas con cualificaciones relevantes en cada función. Los integrantes del equipo que estén menos familiarizados con Adobe Experience Cloud pueden utilizar los recursos de aprendizaje de [Experience League](https://experienceleague.adobe.com/?lang=es#recommended/solutions/experience-manager) para obtener una certificación en el [Aprendizaje digital de Adobe](https://learning.adobe.com/certification.html).
 
 ## **Funciones clave de AEM Experience Manager Assets**
 
@@ -80,4 +80,4 @@ Ahora que sabe qué funciones son necesarias, consulte el gráfico siguiente par
 
 >[!TIP]
 >
-> Obtenga más información sobre Adobe Experience Cloud y aproveche los recursos en [Experience League](https://experienceleague.adobe.com/es?lang=es#recommended/solutions/experience-manager) y obtenga la certificación mediante el [Aprendizaje digital de Adobe](https://learning.adobe.com/certification.html).
+> Obtenga más información sobre Adobe Experience Cloud y aproveche los recursos en [Experience League](https://experienceleague.adobe.com/?lang=es#recommended/solutions/experience-manager) y obtenga la certificación mediante el [Aprendizaje digital de Adobe](https://learning.adobe.com/certification.html).

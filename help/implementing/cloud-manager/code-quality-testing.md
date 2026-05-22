@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 80%
+source-wordcount: '1192'
+ht-degree: 81%
 
 ---
 
@@ -43,7 +43,7 @@ Los problemas identificados por las pruebas de calidad del código se asignan a 
 
 * **Crítico**: problemas que causan un fallo inmediato de la canalización.
 
-* **Importante**: problemas que hacen que la canalización entre en estado de pausa. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular los problemas y permitir que continúe la canalización. De forma alternativa, pueden aceptar los problemas, lo cual haría que la canalización se detenga con un error. 
+* **Importante**: problemas que hacen que la canalización entre en estado de pausa. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular los problemas y permitir que continúe la canalización. De forma alternativa, pueden aceptar los problemas, lo cual haría que la canalización se detenga con un error.
 
 * **Información**: problemas que se proporcionan exclusivamente con fines informativos y que no afectan la ejecución de la canalización
 
@@ -115,7 +115,7 @@ A continuación, la solución correcta es quitar la contraseña codificada.
 
 ## Optimización del análisis de paquetes de contenido {#content-package-scanning-optimization}
 
-Como parte del proceso de análisis de calidad, Cloud Manager realiza un análisis de los paquetes de contenido producidos por la compilación de Maven. Cloud Manager ofrece optimizaciones para acelerar este proceso, que es eficaz cuando se observan ciertas restricciones de empaquetado. La optimización más significativa se dirige a proyectos que producen un único paquete &quot;todo&quot;, que contiene varios paquetes de contenido de la compilación, que se marcan como omitidos. Cuando Cloud Manager detecta este escenario, en lugar de desempaquetar el paquete “todo”, los paquetes de contenido individuales se analizan directamente y se ordenan según las dependencias. Por ejemplo, considere la siguiente salida de compilación.
+Como parte del proceso de análisis de calidad, Cloud Manager realiza un análisis de los paquetes de contenido producidos por la compilación de Maven. Cloud Manager ofrece optimizaciones para acelerar este proceso, que son efectivas cuando se observan ciertas restricciones de empaquetado. La optimización más significativa se dirige a proyectos que producen un único paquete &quot;todo&quot;, que contiene varios paquetes de contenido de la compilación, que se marcan como omitidos. Cuando Cloud Manager detecta este escenario, en lugar de desempaquetar el paquete “todo”, los paquetes de contenido individuales se analizan directamente y se ordenan según las dependencias. Por ejemplo, considere la siguiente salida de compilación.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)

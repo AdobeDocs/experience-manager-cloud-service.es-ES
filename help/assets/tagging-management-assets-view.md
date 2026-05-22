@@ -7,7 +7,7 @@ feature: Smart Tags
 role: User, Admin, Developer
 source-git-commit: 1f71c905fadd51d95fc5292ce95903c46895ec94
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1768'
 ht-degree: 98%
 
 ---
@@ -25,7 +25,7 @@ Las listas planas de vocabularios controlados pueden volverse inmanejables con e
 
 Puede crear un espacio de nombres en el nivel raíz y crear una estructura jerárquica de subetiquetas dentro del espacio de nombres. Por ejemplo, puede crear un espacio de nombres `Activities` en el nivel de raíz y tener etiquetas `Cycling`, `Hiking` y `Running` dentro del espacio de nombres. Puede tener más subetiquetas `Clothing` y `Shoes` dentro de `Running`.
 
-![Administración de etiquetas](assets/tags-hierarchy.png)
+![Administración de etiquetado](assets/tags-hierarchy.png)
 
 El etiquetado ofrece muchas ventajas, como las siguientes:
 

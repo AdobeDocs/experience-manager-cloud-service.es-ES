@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '3440'
+source-wordcount: '3538'
 ht-degree: 93%
 
 ---
@@ -41,7 +41,7 @@ Para desarrollar un código personalizado para una versión interna, debe descar
 
 El siguiente vídeo proporciona información general de alto nivel sobre cómo implementar los códigos en AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/34039?captions=spa&quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]

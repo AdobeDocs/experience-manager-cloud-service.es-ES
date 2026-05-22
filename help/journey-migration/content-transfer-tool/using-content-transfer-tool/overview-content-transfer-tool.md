@@ -1,13 +1,13 @@
 ---
 title: Información general sobre la herramienta de transferencia de contenido
-description: AEM Aprenda a utilizar la herramienta de transferencia de contenido para transferir contenido de una instancia de local a AEM as a Cloud Service
+description: Aprenda a utilizar la herramienta de transferencia de contenido para transferir contenido de una instancia de AEM local a AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
 source-git-commit: e73933acc3ff23d1456f03b288f2f842a6289ace
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 55%
+source-wordcount: '640'
+ht-degree: 58%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 55%
 >abstract="La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe que se puede utilizar para iniciar la migración de contenido existente de una instancia de AEM de origen (On-Premise o AMS) a la instancia de AEM Cloud Service de destinatario. Esta herramienta también transfiere grupos automáticamente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=es" text="Directrices y prácticas recomendadas"
 
-La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe AEM que se puede utilizar para iniciar la migración del contenido existente de una instancia de origen de la aplicación (On-Premise o AMS) a una instancia de AEM Cloud Service de destino.
+La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe que se puede utilizar para iniciar la migración del contenido existente de una instancia de AEM de origen (local o AMS) a la instancia de destinatario de AEM Cloud Service.
 
 Esta herramienta también transfiere grupos automáticamente.  Consulte [Migración de grupos](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) para obtener más información.
 

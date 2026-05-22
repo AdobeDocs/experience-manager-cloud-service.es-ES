@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 13%
+source-wordcount: '1740'
+ht-degree: 18%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 13%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=es" text="Notas de la versión"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portal de distribución de software"
 
-La herramienta de transferencia de contenido se puede descargar como un archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de origen de Adobe Experience Manager (AEM). Asegúrese de descargar la versión más reciente. Para obtener más información sobre la versión más reciente, consulte [Notas de la versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=es).
+La herramienta de transferencia de contenido se puede descargar como un archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de origen de Adobe Experience Manager (AEM). Asegúrese de descargar la última versión. Para obtener más información sobre la versión más reciente, consulte [Notas de la versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=es).
 
 Solo se admite la versión 2.0.0 y posteriores, y es aconsejable utilizar la versión más reciente.
 
@@ -65,7 +65,7 @@ A veces, es difícil comprender los problemas de conexión SSL/TLS. Para solucio
 >id="aemcloud_ctt_demo"
 >title="Ejecución de la herramienta de transferencia de contenido"
 >abstract="Obtenga información acerca de cómo utilizar la herramienta de transferencia de contenido para migrar el contenido a AEM as a Cloud Service (autor/publicación)."
->additional-url="https://video.tv.adobe.com/v/327076/?captions=spa&quality=12&learn=on" text=" Consulte la demostración"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" Consulte la demostración"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=es#migration" text="Tutorial: uso de la herramienta de transferencia de contenido"
 
 La siguiente sección se aplica a la nueva versión de la herramienta de transferencia de contenido. Siga esta sección para aprender a utilizar la herramienta de transferencia de contenido para migrar contenido a AEM as a Cloud Service:
@@ -104,7 +104,7 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
    >
    >El nombre debe seguir las mismas convenciones de un nodo AEM, por lo que no puede contener ninguno de estos caracteres: `. / : [ ] | * < > ^ ? { } % # ` ni ningún símbolo o emojis inusual.
 
-1. Ahora debería ver la lista de migración en la vista de lista. Seleccione el símbolo de tres puntos (**...**) para abrir la lista desplegable y seleccione **Copiar clave de extracción**. Necesita esta clave durante la fase de extracción. Copie esta clave de extracción.
+1. Ahora debería ver la lista de migración en la vista de lista. Seleccione el símbolo de tres puntos (**...**) para abrir la lista desplegable y seleccionar **Copiar clave de extracción**. Necesita esta clave durante la fase de extracción. Copie esta clave de extracción.
 
    >[!NOTE]
    >
@@ -160,7 +160,7 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
 
       ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/includeAndExcludePath.png)
 
-      1. Solo se permite la selección de rutas y debe haber al menos una ruta. Si no se selecciona ninguna ruta, se producirá un error del servidor.
+      1. Solo se permite la selección de rutas y debe haber al menos una ruta.Si no se selecciona ninguna ruta, se producirá un error en el servidor.
 
          ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
 

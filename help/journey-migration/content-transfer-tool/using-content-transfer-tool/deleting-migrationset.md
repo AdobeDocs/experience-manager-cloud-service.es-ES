@@ -6,7 +6,7 @@ feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '233'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ Los conjuntos de migración se pueden eliminar de Cloud Acceleration Manager.
 
 Para eliminar un conjunto de migración, siga los pasos a continuación:
 
-1. Vaya a la vista de lista Conjunto de migración en Cloud Acceleration Manager y haga clic en los tres puntos (**...**) junto al conjunto de migración que desee eliminar. La acción **Delete** debe ser visible como se muestra a continuación.
+1. Vaya a la vista de lista del conjunto de migración en Cloud Acceleration Manager y haga clic en los tres puntos (**...**) junto al conjunto de migración que desee eliminar. La acción **Delete** debe ser visible como se muestra a continuación.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 

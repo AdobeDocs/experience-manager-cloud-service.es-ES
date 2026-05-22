@@ -6,14 +6,14 @@ feature: Migration
 role: Admin
 source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 7%
+source-wordcount: '1182'
+ht-degree: 8%
 
 ---
 
 # Fase de preparación en Cloud Acceleration Manager {#readiness-phase-cam}
 
-Una vez que haya creado un proyecto en Cloud Acceleration Manager (CAM), ahora puede iniciar la evaluación de la implementación actual de Adobe Experience Manager AEM () en la fase de Preparación.
+Una vez que haya creado un proyecto en Cloud Acceleration Manager (CAM), ahora puede iniciar la evaluación de la implementación actual de Adobe Experience Manager (AEM) en la fase Preparación.
 
 La fase de preparación incluye:
 
@@ -53,7 +53,7 @@ Siga los pasos a continuación para ir a la fase de preparación:
    1. Vaya al portal [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*) y descargue el Analizador de prácticas recomendadas como archivo zip.
 
       >[!NOTE]
-      >Revise [Cómo usar el Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=es#imp-considerations) para aprender a ejecutar BPA.
+      >Revise [Cómo usar el Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) para aprender a ejecutar BPA.
 
 1. En CAM, haz clic en **Obtener clave de carga**, para que puedas obtener la clave que se usa para configurar tu sistema de modo que cargue automáticamente los informes de BPA directamente en CAM.
 
@@ -76,7 +76,7 @@ Siga los pasos a continuación para ir a la fase de preparación:
 
 ### Uso de la vista previa {#print-preview-cam}
 
-Puede seleccionar la opción de vista previa de impresión en Cloud Acceleration Manager para obtener una vista previa imprimible de los informes o para imprimir el informe en un formato de PDF para compartirlo fácilmente.
+Puede seleccionar la opción de vista previa de impresión en Cloud Acceleration Manager para obtener una vista previa imprimible de los informes o para imprimir el informe en un formato PDF para compartir fácilmente.
 
 Complete los siguientes pasos:
 
@@ -84,7 +84,7 @@ Complete los siguientes pasos:
 
    ![Vista preliminar](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
 
-1. En la nueva ficha con el informe mostrado en una vista previa imprimible, haga clic en **Imprimir** para imprimir el informe en formato de PDF.
+1. En la nueva ficha con el informe mostrado en una vista previa imprimible, haga clic en **Imprimir** para imprimir el informe en formato PDF.
 
    >[!IMPORTANT]
    >
@@ -142,7 +142,7 @@ Explore las siguientes tarjetas, disponibles en la página Informe de análisis 
 
 #### Propiedades del informe {#report-properties}
 
-La tarjeta **Propiedades del informe** proporciona información sobre las propiedades del informe, como la fecha del informe, la duración, los filtros, la fecha de carga y los detalles de Adobe Experience Manager AEM ().
+La tarjeta **Propiedades del informe** proporciona información sobre las propiedades del informe, como la fecha, la duración, los filtros, la fecha de carga y los detalles de Adobe Experience Manager (AEM).
 
 ![Propiedades del informe](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
@@ -161,11 +161,11 @@ Puede filtrar el informe en función de su importancia, subtipo o recuento.
 ![Filtros de informes](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Consulte [Interpretación del informe del Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=es) para obtener más información sobre las categorías de resultados y los niveles de importancia.
+>Consulte [Interpretación del informe del Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) para obtener más información sobre las categorías de resultados y los niveles de importancia.
 
 #### Evaluación de las prácticas recomendadas {#best-practices-assessment}
 
-AEM AEM La opción de Evaluación de las prácticas recomendadas proporciona una evaluación de su instancia actual de y proporciona orientación sobre los próximos pasos para adoptar las prácticas recomendadas. Puede revisar la siguiente información en esta pestaña:
+La opción de Evaluación de las prácticas recomendadas proporciona una evaluación de su instancia actual de AEM y proporciona orientación sobre los próximos pasos para adoptar las prácticas recomendadas de AEM. Puede revisar la siguiente información en esta pestaña:
 
 * Información general de la instancia de AEM
 * Componentes y plantillas personalizadas
@@ -175,7 +175,7 @@ AEM AEM La opción de Evaluación de las prácticas recomendadas proporciona una
 
 #### Evaluación de la complejidad de la migración {#migration-complexity-assessment}
 
-AEM La opción de evaluación de la complejidad de la migración proporciona una evaluación de la complejidad para migrar la implementación de la existente a AEM as a Cloud Service.
+La opción Evaluación de la complejidad de la migración proporciona una evaluación de la complejidad para migrar la implementación de AEM existente a AEM as a Cloud Service.
 
 Puede revisar la siguiente información en esta pestaña:
 
@@ -187,7 +187,7 @@ Puede revisar la siguiente información en esta pestaña:
 
 ## Uso de la tarjeta de planificación y configuración {#planning-setup}
 
-1. Haga clic en **Ver** en la tarjeta **Planificación y configuración**. AEM Esta tarjeta proporciona todo el contenido relevante que le ayuda a planificar y configurar su migración a la.
+1. Haga clic en **Ver** en la tarjeta **Planificación y configuración**. Esta tarjeta proporciona todo el contenido relevante que le ayuda a planificar y configurar la migración a AEM.
 
    ![Planificación Y Configuración - Vista](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
@@ -222,4 +222,4 @@ Puede revisar la siguiente información en esta pestaña:
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a crear un proyecto, ya puede pasar a revisar el siguiente paso en la [fase de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=es).
+Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a crear un proyecto, ya puede pasar a revisar el siguiente paso en la [fase de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).

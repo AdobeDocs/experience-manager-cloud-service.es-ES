@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: d568619bd8ebb42a6914211401df680352c921ab
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 17%
+source-wordcount: '828'
+ht-degree: 23%
 
 ---
 
@@ -73,8 +73,7 @@ La herramienta de transferencia de contenido tiene una función que permite agre
 
 >[!NOTE]
 >Una vez migradas las rutas de contenido al contenedor de ensayo, esas rutas o cualquier subruta dentro de ellas no se pueden eliminar ni excluir de las migraciones superiores posteriores.
->Ejemplo: Migración inicial: content/dam/weRetail,
->Siguiente intento de exclusión superior: content/dam/weRetail/ab.
+>Ejemplo: Migración inicial: content/dam/weRetail,>Siguiente intento de exclusión superior: content/dam/weRetail/ab.
 >En esta situación, no es posible excluir content/dam/weRetail/ab porque los datos ya se han migrado al contenedor de ensayo.
 
 Una vez completado el proceso de extracción, se puede transferir contenido delta mediante el método de extracción superior.
@@ -89,7 +88,7 @@ Complete los siguientes pasos:
 
    >[!IMPORTANT]
    >Se debe desactivar la opción **Sobrescribir el contenedor de ensayo durante la extracción** .
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
+   >![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
 
 
 ## Siguientes pasos {#whats-next}

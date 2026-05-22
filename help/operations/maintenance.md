@@ -6,7 +6,7 @@ feature: Operations
 role: Admin
 source-git-commit: d5addc40eb48000c515b670ef5f7c7a7e8b79928
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2098'
 ht-degree: 28%
 
 ---
@@ -49,14 +49,14 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
   <tr>
     <td>Depuración de la versión</td>
     <td>Cliente</td>
-    <td>La depuración de versiones está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
+    <td>La depuración de versiones está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Purga del registro de auditoría</td>
     <td>Cliente</td>
-    <td>La depuración del registro de auditoría está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración del registro de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
+    <td>La depuración del registro de auditoría está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración del registro de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
    </td>
    </td>
   </tr>
@@ -87,7 +87,7 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
     <td>Cliente</td>
     <td>
     <p>Debe hacerse en Git. Anule el nodo de configuración de la ventana de mantenimiento predeterminado en <code>/libs</code> creando propiedades en la carpeta <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración.</p>
-    <p>Habilite la tarea de mantenimiento añadiendo otro nodo bajo el anterior (asígnele el nombre <code>granite_ProjectPurgeTask</code>) con las propiedades adecuadas. Consulte la lista de <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Propiedades OSGi</a> para <b>Configuración de purga de proyectos Adobe</b> .</p>
+    <p>Habilite la tarea de mantenimiento añadiendo otro nodo bajo el anterior (asígnele el nombre <code>granite_ProjectPurgeTask</code>) con las propiedades adecuadas. Consulte la lista de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Propiedades OSGi</a> para <b>Configuración de purga de proyectos Adobe</b> .</p>
   </td>
   </tr>
   </tbody>
@@ -273,7 +273,7 @@ Declare un archivo de configuración e impleméntelo como se describe en los pas
    * todas las propiedades deben estar definidas. No hay valores predeterminados heredados.
    * se deben respetar los tipos (enteros, cadenas, booleanos, etc.) de las tablas de propiedades siguientes.
 
-1. Cree una canalización de configuración en Cloud Manager, tal como se describe en el [artículo de canalización de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Cree una canalización de configuración en Cloud Manager, tal como se describe en el [artículo sobre la canalización de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Depuración de la versión {#version-purge}
 

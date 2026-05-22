@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 3%
+source-wordcount: '1247'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 En esta parte del recorrido, aprenderá a planificar y realizar la migración una vez que el código y el contenido estén listos para moverse a AEM as a Cloud Service. Además, aprenderá cuáles son las prácticas recomendadas y las limitaciones conocidas al realizar la migración.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
 En las fases anteriores del recorrido:
 
@@ -69,7 +69,7 @@ Además, debe planificar la congelación de contenido cuando se programe la reca
 
 Al planificar o realizar la migración, debe tener en cuenta las siguientes directrices:
 
-* Migrar de Autor a Autor y de Publish a Publish
+* Migrar de Autor a Autor y Publicar para Publicar
 * Solicite un clon de producción que se pueda utilizar para lo siguiente:
    * Recopilar estadísticas del repositorio
    * Prueba de actividades de migración
@@ -79,20 +79,20 @@ Al planificar o realizar la migración, debe tener en cuenta las siguientes dire
 
 **Prácticas recomendadas de la herramienta de transferencia de contenido**
 
-Asegúrese de que, al lanzarse, ejecute la migración de contenido en producción en lugar de un clon. AEM Un buen enfoque es usar [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para la migración inicial y luego ejecutar extracciones de recarga con frecuencia (incluso diariamente) para extraer fragmentos más pequeños y evitar cualquier carga a largo plazo en la fuente de los datos de origen.
+Asegúrese de que, al lanzarse, ejecute la migración de contenido en producción en lugar de un clon. Un buen enfoque es usar [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para la migración inicial y luego ejecutar extracciones superiores con frecuencia (incluso diariamente) para extraer fragmentos más pequeños y evitar cualquier carga a largo plazo en el AEM de origen.
 
 Al realizar la migración de producción, debe evitar ejecutar la herramienta de transferencia de contenido desde un clon porque:
 
 * Si un cliente requiere que se migren las versiones de contenido durante las migraciones superiores, la ejecución de la herramienta de transferencia de contenido desde un clon no migra las versiones. Incluso si el clon se vuelve a crear desde el autor activo con frecuencia, cada vez que se crea un clon, se restablecen los puntos de comprobación utilizados por la herramienta de transferencia de contenido para calcular los deltas.
 * Dado que un clon no se puede actualizar como un todo, el paquete de consulta ACL debe utilizarse para empaquetar e instalar el contenido que se agrega o edita de la producción al clon. El problema con este enfoque es que cualquier contenido eliminado en la instancia de origen nunca llegará al clon a menos que se elimine manualmente tanto del origen como del clon. Esto introduce la posibilidad de que el contenido eliminado en la producción no se elimine en el clon y en AEM as a Cloud Service.
 
-AEM **Optimizando la carga en el origen de su al realizar la migración de contenido**
+**Optimizando la carga en su origen de AEM al realizar la migración de contenido**
 
-AEM Recuerde, la carga en el origen de la es mayor durante la fase de extracción. Tenga en cuenta lo siguiente:
+Recuerde, la carga en la fuente de AEM es mayor durante la fase de extracción. Tenga en cuenta lo siguiente:
 
 * La herramienta de transferencia de contenido es un proceso Java externo que utiliza un montón de JVM de 4 GB
-* AEM La versión que no es AzCopy descarga binarios, los almacena en un espacio temporal en el autor del origen, consumiendo E/S del disco y, a continuación, los carga en el contenedor de Azure, que consume ancho de banda de red
-* [AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) transfiere blobs directamente del almacén de blobs al contenedor de Azure, lo que ahorra ancho de banda de red y E/S de disco. La versión de AzCopy sigue utilizando el ancho de banda del disco y de la red para extraer y cargar los datos del almacén de segmentos en el contenedor de Azure
+* La versión que no es AzCopy descarga binarios, los almacena en un espacio temporal en el autor de AEM de origen, consume E/S de disco y luego los carga en el contenedor de Azure que consume ancho de banda de la red
+* [AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) transfiere blobs directamente desde el almacén de blobs al contenedor de Azure, lo que ahorra ancho de banda de red y E/S de disco. La versión de AzCopy todavía utiliza el ancho de banda del disco y de la red para extraer y cargar los datos del almacén de segmentos en el contenedor de Azure
 * El proceso de la herramienta de transferencia de contenido es más ligero en los recursos del sistema durante la fase de ingesta, ya que solo transmite registros de ingesta y no hay mucha carga en la instancia de origen en lo que respecta a E/S de disco o ancho de banda de red.
 
 ## Limitaciones conocidas {#known-limitations}
@@ -112,7 +112,7 @@ En comparación con la sección anterior, la ingesta **no** produce errores debi
 
 Ambos de los elementos anteriores se identifican y se incluyen en el informe [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-## Lista de comprobación para el lanzamiento {#Go-Live-Checklist}
+## Lista de comprobación del lanzamiento {#Go-Live-Checklist}
 
 Para obtener más información, consulte la [Lista de comprobación de lanzamiento](/help/journey-onboarding/go-live-checklist.md).
 

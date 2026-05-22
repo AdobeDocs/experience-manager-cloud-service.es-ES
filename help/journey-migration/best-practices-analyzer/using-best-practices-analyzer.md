@@ -6,7 +6,7 @@ feature: Migration
 role: Admin
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2796'
+source-wordcount: '2930'
 ht-degree: 37%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 37%
 
 En la sección siguiente se comprenden las consideraciones importantes al ejecutar el Analizador de prácticas recomendadas (BPA):
 
-* El informe de BPA se ha creado a partir de los resultados de [Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=es) de Adobe Experience Manager (AEM). La versión de Pattern Detector utilizada por BPA se incluye en el paquete de instalación de BPA.
+* El informe de BPA se ha creado a partir de los resultados de [Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html) de Adobe Experience Manager (AEM). La versión de Pattern Detector utilizada por BPA se incluye en el paquete de instalación de BPA.
 
 * Solo el usuario **admin** o un usuario del grupo **administradores** pueden ejecutar BPA.
 
@@ -278,7 +278,7 @@ Los siguientes valores de respuesta son posibles:
 
 La duración predeterminada de la caché de BPA es de 24 horas. Con la opción para actualizar un informe y regenerar la caché, tanto en la instancia de AEM como en la interfaz HTTP, es probable que este valor predeterminado sea adecuado para la mayoría de los usos del BPA. Si el tiempo de generación de informes es especialmente largo para la instancia de AEM, es posible que desee ajustar la duración de la caché para minimizar la regeneración del informe.
 
-El valor de duración de la caché se almacena como la `maxCacheAge` propiedad en el siguiente nodo de repositorio:
+El valor de duración de caché se almacena como la propiedad `maxCacheAge` en el siguiente nodo de repositorio:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
 
 El valor de esta propiedad es la duración de la caché en segundos. Un administrador puede ajustar la duración de la caché mediante CRX/DE Lite.
@@ -287,8 +287,8 @@ El valor de esta propiedad es la duración de la caché en segundos. Un administ
 
 BPA utiliza una cuenta de usuario de servicio del sistema denominada `repository-reader-service` para ejecutar Pattern Detector. Esta cuenta está disponible en AEM 6.2 y posteriores. En AEM 6.1, esta cuenta debe crearse *antes de* la instalación de BPA siguiendo los pasos siguientes:
 
-1. Siga las instrucciones en [Crear un nuevo usuario de servicio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=es#creating-a-new-service-user) para crear un usuario. Establezca el UserID en `repository-reader-service` y deje la ruta intermedia vacía y luego haga clic en la marca de verificación verde.
+1. Siga las instrucciones en [Crear un nuevo usuario de servicio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) para crear un usuario. Establezca el UserID en `repository-reader-service` y deje la ruta intermedia vacía y luego haga clic en la marca de verificación verde.
 
-2. Siga las instrucciones en [Administrar usuarios y grupos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es#managing-users-and-groups), específicamente las instrucciones para Añadir usuarios a un grupo para agregar el `repository-reader-service` usuario al `administrators` grupo.
+2. Siga las instrucciones en [Administrar usuarios y grupos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), específicamente las instrucciones para Añadir usuarios a un grupo para agregar el `repository-reader-service` usuario al `administrators` grupo.
 
 3. Instale el paquete BPA mediante el Administrador de paquetes en la instancia de origen de AEM. (Esto agregará la modificación de configuración necesaria a la configuración de ServiceUserMapper para el usuario del servicio `repository-reader-service` del sistema).

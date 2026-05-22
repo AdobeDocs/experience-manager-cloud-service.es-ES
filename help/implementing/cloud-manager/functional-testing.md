@@ -58,7 +58,7 @@ El diagrama siguiente proporciona una vista detallada de las puertas de calidad 
 
 Se recomienda proporcionar las pruebas unitarias para la aplicación de AEM, que son la base de cada estrategia de prueba. Están diseñadas para ejecutarse de forma rápida y frecuente, y proporcionan comentarios tempranos. Están totalmente integrados en los flujos de trabajo de los desarrolladores, su propio CI/CD y las canalizaciones de implementación de AEM Cloud Service.
 
-Se implementan mediante JUnit y se ejecutan con Maven. Consulte el [módulo principal del tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) para ver un ejemplo de prueba unitaria de AEM y cómo empezar.
+Se implementan mediante JUnit y se ejecutan con Maven. Consulte el [módulo principal del tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) para ver un ejemplo de prueba unitaria de AEM y cómo empezar.
 
 ### Calidad de código
 

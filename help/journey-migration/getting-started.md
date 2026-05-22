@@ -6,7 +6,7 @@ feature: Migration
 role: Admin
 source-git-commit: 08da72724fb8c6e8760ae8013dcf739585ac6903
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '624'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ En esta parte del Recorrido de migración a AEM as a Cloud Service, aprenderá l
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender por qué debe utilizar una versión de AEM nativa en la nube y las distintas fases de la migración a AEM as a Cloud Service.  Después de leer, debería haber logrado lo siguiente:
+Este documento le ayuda a comprender por qué debe utilizar una versión de AEM nativa en la nube y las distintas fases de la migración a AEM as a Cloud Service. Después de leer, debería haber logrado lo siguiente:
 
 * Comprender las ventajas de la migración a AEM as a Cloud Service
 * Familiarícese con los pasos generales que debe seguir para poder realizar la transición a la nube
@@ -60,4 +60,4 @@ Puede consultar la [documentación de Cloud Acceleration Manager](/help/journey-
 
 ## Siguientes pasos {#what-is-next}
 
-¡Gracias por comenzar su recorrido de migración a AEM Cloud Service!  Ahora que ha leído este documento, debería empezar a familiarizarse con la [Fase de preparación](/help/journey-migration/readiness.md), que le ayudará a determinar si su implementación está lista para pasar a AEM as a Cloud Service.
+¡Gracias por comenzar su recorrido de migración a AEM Cloud Service! Ahora que ha leído este documento, debería empezar a familiarizarse con la [Fase de preparación](/help/journey-migration/readiness.md), que le ayudará a determinar si su implementación está lista para pasar a AEM as a Cloud Service.
