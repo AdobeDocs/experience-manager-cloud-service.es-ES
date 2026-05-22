@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo ejecutar JavaScript en la capa de 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 1fdf9c61e611db978706a066194448ec3750024a
+source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 4%
+source-wordcount: '1261'
+ht-degree: 3%
 
 ---
 
@@ -191,6 +191,39 @@ La CDN administrada por Adobe no expone un depurador remoto, pero sí un flujo d
 ```bash
 aio aem edge-functions tail-logs <function-name>
 ```
+
+## Almacenamiento en caché y depuración de caché {#caching}
+
+Las funciones de Edge pueden reducir significativamente la carga de origen y mejorar los tiempos de respuesta al almacenar en caché los datos en el perímetro de. Sin embargo, el almacenamiento en caché requiere un diseño intencional, especialmente en las funciones de Edge en las que hay **dos capas de caché independientes** implicadas:
+
+```
+Browser → AEM CDN (CDN Cache) → AEM Edge Functions (Fetch Cache) → Backend (AEM, APIs, etc.)
+```
+
+Antes de configurar el almacenamiento en caché, considere cómo se comporta su contenido:
+
+- **El contenido verdaderamente único por solicitud** (tokens de sesión, precios en tiempo real para un usuario específico) debe evitar el almacenamiento en caché para evitar ofrecer resultados incorrectos.
+- La personalización basada en **cohorte** (contenido personalizado por región, tipo de dispositivo o segmento de audiencia) puede almacenarse en caché con TTL más cortos o encabezados `Vary`, ya que muchos usuarios comparten la misma variante.
+- **El contenido estable y compartido** (catálogos de productos, páginas de CMS, respuestas de API que cambian según una programación conocida) se beneficia de un almacenamiento en caché agresivo con invalidación explícita mediante claves sustitutas.
+- **Cometer un error en cualquier dirección tiene consecuencias.** El almacenamiento en caché excesivo causa errores de contenido antiguos difíciles de diagnosticar en dos capas de caché. El almacenamiento en caché insuficiente anula el propósito de rendimiento y descarga de origen de utilizar las funciones de Edge.
+
+Dado que la CDN y la caché de recuperación interna de la función Edge funcionan de forma independiente, un cambio en los datos subyacentes requiere la invalidación deliberada de **ambas** capas. Comprender esta arquitectura es esencial para una administración fiable de la caché.
+
+Para obtener instrucciones técnicas detalladas sobre la configuración del comportamiento del almacenamiento en caché, el control de la duración de la caché, el uso de claves de sustitución y la depuración del contenido almacenado en caché, consulte [Almacenamiento en caché en las funciones de Edge de AEM](/help/implementing/developing/introduction/edge-functions-caching.md).
+
+## Limitaciones {#limitations}
+
+Cada invocación de función de Edge se ejecuta dentro de una zona protegida con límites de recursos impuestos por la plataforma de cálculo subyacente.
+
+### Máximo de llamadas de recuperación salientes por invocación {#max-fetch-calls}
+
+Las funciones de AEM Edge aplican un límite estricto de **32 solicitudes back-end por ejecución** (es decir, por cada solicitud entrante gestionada por su función). Una vez alcanzado este límite, cualquier llamada adicional de `fetch()` genera el siguiente error:
+
+```
+Requested backend named '…' does not exist
+```
+
+Cuando vea este error y la configuración de origen sea correcta, la causa más probable es que se haya agotado la cuota de solicitudes back-end por invocación. Consulte [Límites de recursos de Fastly Compute](https://docs.fastly.com/products/compute-resource-limits#default-limits) para obtener la lista completa de límites de plataforma.
 
 ## Referencia de configuración {#configuration-reference}
 
