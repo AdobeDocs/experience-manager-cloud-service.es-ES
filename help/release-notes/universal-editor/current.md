@@ -4,7 +4,7 @@ description: Estas son las notas de la versión de la versión 2026.05.21 de Uni
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8ba59c47379e9d506813cec8e647b93679bf9815
+source-git-commit: a18a1d09003ef646356abcdd2f37b46616a708a1
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 28%
@@ -27,3 +27,4 @@ Estas son las notas de la versión del editor universal del 21 de mayo de 2026.
 ## Novedades {#what-is-new}
 
 * Mejoras y correcciones menores
+

@@ -4,7 +4,7 @@ description: Estas son las notas de la versión de la vista previa del editor un
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 1da3f7ec7d56ec0463851aac8f6e14967f881c4f
+source-git-commit: a18a1d09003ef646356abcdd2f37b46616a708a1
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -35,3 +35,4 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 ## Próximos cambios {#upcoming-improvements}
 
 * El color de fondo predeterminado del lienzo de edición ahora es blanco (#FFFFFF) cuando la aplicación no establece ningún color de fondo propio.
+
