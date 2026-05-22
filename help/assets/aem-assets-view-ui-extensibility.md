@@ -5,10 +5,10 @@ feature: App Builder
 role: User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 49fa36acf11a22480af58aa701bdac676676aadd
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 0%
+source-wordcount: '916'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Puede agregar sus extensiones a los niveles **Asset**, **Folder** y **Collection
 ## <a id="1"></a> Acceder a la vista de Assets{#add-UI-Extensibility-in-AEM-Assets-View}
 
 Siga los pasos mencionados en la siguiente imagen para acceder a [!DNL Assets View]:
-![iu de vista de recursos de acceso](/help/assets/assets/access-assets-view.jpg)
+![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 
 ## Ver extensiones de IU en [!DNL Assets View] {#ui-extensibility-panel-assets-view}
 
@@ -61,9 +61,23 @@ La vista AEM Assets permite personalizar las siguientes acciones en la vista Exa
 
 * Personalice las acciones que se muestran al hacer clic en Más opciones (...) en la tarjeta de recursos.
 
-* Personalice las acciones disponibles en el menú Encabezado.
-
 Para obtener más información, consulte [Vista de exploración](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+
+## Personalizar el menú del encabezado en la vista Assets {#customize-header-menu-assets-view}
+
+La vista AEM Assets permite personalizar el menú del encabezado. El menú del encabezado hace referencia a los botones de la parte superior derecha de las pantallas de exploración y detalles. Puede hacer lo siguiente:
+
+* Agregue botones personalizados al menú del encabezado antes de los botones integrados del menú del encabezado.
+
+* Ocultar botones de menú de encabezado integrados para el contexto de exploración o detalles actual.
+
+* Omitir los clics en el botón de menú de encabezado integrado para que la extensión gestione la acción en lugar del controlador predeterminado.
+
+En la vista Examinar, la personalización del menú de encabezado tiene en cuenta el contexto en los recursos, las búsquedas, la papelera, los recursos vistos recientemente y las colecciones. Puede añadir botones personalizados en cualquiera de estos contextos. Los botones integrados, como **Crear carpeta** y **Agregar recursos** (en el contexto de recursos) y **Crear colección** (en colecciones), se pueden ocultar o anular donde estén disponibles.
+
+En la vista de detalles, puede agregar botones personalizados y personalizar acciones integradas como **Asignar tareas** y **Descargar**.
+
+Para obtener más información, incluidas referencias de API y ejemplos de código, vea [Vista de exploración](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/#custom-header-menu-buttons) y [Vista de detalles](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/#custom-header-menu-buttons-in-details-view).
 
 ## Abrir cuadros de diálogo personalizados en la vista Assets {#open-custom-dialogs-assets-view}
 
