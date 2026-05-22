@@ -4,10 +4,10 @@ description: Descubra cómo Brand Experience Agent acelera la modernización y l
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
+source-git-commit: 8f964484f944d49cdc6c456147f060f29a20778e
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 2%
+source-wordcount: '624'
+ht-degree: 1%
 
 ---
 
@@ -39,6 +39,8 @@ A través de estos agentes, Brand Experience Agent absorbe el intenso trabajo op
 ### Trabajo de modernización de experiencias {#modernization-job}
 
 La modernización de experiencias elimina la fricción de las migraciones de sitios a gran escala al modernizar automáticamente las experiencias existentes, lo que ayuda a los equipos a realizar la transición más rápido y, al mismo tiempo, mantiene la continuidad, la calidad y la confianza.
+
+Las migraciones pueden ser impulsadas desde un sitio web de origen activo, desde diseños Figma o una combinación de ambos. El agente admite [migraciones de rediseño que asignan contenido de origen a bloques derivados de Figma](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-redesign) y [generando nuevas páginas directamente desde marcos de Figma.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-new-page)
 
 ## Experience Production Agent {#experience-production}
 
