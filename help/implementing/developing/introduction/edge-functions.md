@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo ejecutar JavaScript en la capa de 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
+source-git-commit: b33a565d9623ed44309e1d34377345dae86757cd
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1263'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Los casos de uso comunes incluyen los siguientes:
 - Volver a dar formato o agregar respuestas desde API de terceros antes de que lleguen al explorador
 - Composición y servicio de HTML procesados por el servidor en el perímetro mediante contenido vinculado de varios backends
 
-Las funciones de AEM Edge son compatibles con Edge Delivery Services y con la pila Java de AEM Cloud Service.
+AEM Edge Functions es compatible tanto con Edge Delivery Services como con la pila Java de AEM as a Cloud Service.
 
 ## Principales ventajas {#key-benefits}
 
