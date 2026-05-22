@@ -48,7 +48,7 @@ return new Response(body, {
 });
 ```
 
-Las claves sustitutas múltiples se separan con espacios. Estas claves sustitutas se pueden usar para purgar la caché de CDN mediante la [API de purga de caché de CDN](/help/implementing/dispatcher/cdn-cache-purge.md). El concepto de depuración de clave suplente es el mismo que se describe en [Purgar la caché para un grupo de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources); la diferencia clave es que las claves suplentes de CDN aquí las establece su código de función de Edge en lugar de hacerlo el servidor.
+Las claves sustitutas múltiples se separan con espacios. Estas claves sustitutas se pueden usar para purgar la caché de CDN mediante la [API de purga de caché de CDN](/help/implementing/dispatcher/cdn-cache-purge.md). El concepto de depuración de clave suplente es el mismo que se describe en [Purgar la caché para un grupo de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources); la diferencia clave es que las claves suplentes de CDN aquí las establece su código de función de Edge en lugar de hacerlo el servidor.
 
 ## Caché de recuperación de funciones de Edge (interna) {#fetch-cache}
 
@@ -101,7 +101,7 @@ Dado que la función Edge se encuentra detrás de la red de distribución de con
 
 ### Depuración de la caché de CDN {#purge-cdn-cache}
 
-Para purgar la caché de CDN externa (la respuesta de la función de Edge almacenada en caché en la capa de CDN), use la [API de purga de caché de CDN](/help/implementing/dispatcher/cdn-cache-purge.md). Este es el mismo mecanismo de depuración utilizado para todo el contenido de AEM Cloud Service almacenado en caché en la CDN; consulte [Cómo purgar la caché de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) para obtener instrucciones paso a paso.
+Para purgar la caché de CDN externa (la respuesta de la función de Edge almacenada en caché en la capa de CDN), use la [API de purga de caché de CDN](/help/implementing/dispatcher/cdn-cache-purge.md). Este es el mismo mecanismo de depuración utilizado para todo el contenido de AEM Cloud Service almacenado en caché en la CDN; consulte [Cómo purgar la caché de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) para obtener instrucciones paso a paso.
 
 En la arquitectura de AEM as a Cloud Service, las funciones de Edge reciben tráfico de la CDN a través de [selectores de origen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) (consulte también [Enrutamiento de CDN](/help/implementing/developing/introduction/edge-functions.md#cdn-routing)). El flujo de solicitud completo es:
 
