@@ -4,9 +4,9 @@ description: Aprenda a utilizar el protocolo de contexto de modelo con AEM as a 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 0e011e464ba607edf1fce719263717cc8ce6ba61
+source-git-commit: 65d70f5cbd0eea618e5de13d8627a5ae87b0089d
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1896'
 ht-degree: 0%
 
 ---
@@ -47,8 +47,8 @@ AEM expone los servidores MCP como extremos HTTP. Los extremos enumerados a cont
 
 | Servidor MCP | Punto final | Descripción |
 |---|---|---|
-| **Contenido** | `/content` | Operaciones de contenido, como crear, leer, actualizar y eliminar (CRUD) para páginas y fragmentos de contenido, además de importación y búsqueda de recursos.<br>Si está interesado, debe registrarse en la versión de prueba de [agentes o tener una licencia de pago](https://experienceleague.adobe.com/es/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) para acceder al MCP de Experience Governance. |
-| **Contenido (solo lectura)** | `/content-readonly` | Operaciones de contenido de solo lectura (obtener, lista/búsqueda) para páginas y fragmentos de contenido, además de búsqueda de recursos.<br>Si está interesado, debe registrarse en la versión de prueba de [agentes o tener una licencia de pago](https://experienceleague.adobe.com/es/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) para acceder al MCP de Experience Governance. |
+| **Contenido** | `/content` | Operaciones de contenido, como crear, leer, actualizar y eliminar (CRUD) para páginas y fragmentos de contenido, además de importación y búsqueda de recursos.<br>Envíe un correo electrónico a `aemcs-mcp-feedback@adobe.com` para que se habilite la **búsqueda de recursos**. Incluya el nombre de la organización junto con el caso de uso en el correo electrónico. |
+| **Contenido (solo lectura)** | `/content-readonly` | Operaciones de contenido de solo lectura (obtener, lista/búsqueda) para páginas y fragmentos de contenido, además de búsqueda de recursos.<br>Envíe un correo electrónico a `aemcs-mcp-feedback@adobe.com` para que se habilite la **búsqueda de recursos**. Incluya el nombre de la organización junto con el caso de uso en el correo electrónico. |
 | **Cloud Manager** | `/cloudmanager` | Administre entidades de Cloud Manager, incluidos programas, entornos, repositorios y canalizaciones, que también se pueden activar. |
 | **Administración de experiencias** | `/experience-governance` | Evalúe el contenido (texto, imágenes, páginas) con respecto a las reglas de gobernanza de marca y enumere las configuraciones y comprobaciones de marca.<br/>Si está interesado, debe registrarse en la versión de prueba de [agentes o tener una licencia de pago](https://experienceleague.adobe.com/es/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) para acceder al MCP de Experience Governance. |
 
@@ -177,7 +177,7 @@ Algunos escenarios representativos incluyen:
 
   >[!NOTE]
   >
-  >Envíe un correo electrónico a `aemagentsteam@adobe.com` para que se le habilite la búsqueda de recursos. Incluya el nombre de la organización junto con el caso de uso en el correo electrónico.
+  >Envíe un correo electrónico a `aemcs-mcp-feedback@adobe.com` para que se le habilite la búsqueda de recursos. Incluya el nombre de la organización junto con el caso de uso en el correo electrónico.
 
 ### Flujos de trabajo de ejemplo {#example-workflows}
 
