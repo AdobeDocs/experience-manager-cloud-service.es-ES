@@ -6,10 +6,10 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 40c02806-76a2-43ed-982c-0410c2125a36
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 2%
+source-wordcount: '561'
+ht-degree: 1%
 
 ---
 
@@ -21,13 +21,11 @@ Hay varios métodos disponibles para los fragmentos de contenido, accesibles des
 
 Puede obtener una vista previa del fragmento:
 
-* usando el [patrón de URL de vista previa](#preview-url-pattern)
-
 * publicando y cancelando la publicación en la [instancia de vista previa](#preview-instance)
 
-<!--
-* with a HTML template, using **[Preview]()** from the Content Fragments console
--->
+* en una [aplicación externa](#preview-url-pattern), utilizando el [patrón de URL de vista previa](#preview-url-pattern)
+
+* con una [plantilla de visualización (HTML)](#preview-with-visualization-html-templates)
 
 Por supuesto, también puede ver su fragmento en [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md).
 
@@ -45,9 +43,23 @@ Por supuesto, también puede ver su fragmento en [Editor de fragmentos de conten
 >* uso del editor de fragmentos de contenido [*original*](/help/assets/content-fragments/content-fragments-variations.md),
 >* uso de [fragmentos de contenido para la creación de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
-## Patrón de URL de vista previa {#preview-url-pattern}
+## Previsualizar instancia {#preview-instance}
+
+Puede **publicar** y **cancelar la publicación** de su fragmento en el **[servicio de vista previa](/help/headless/deployment/architecture.md)** (así como en su instancia de publicación).
+
+Puede publicar el fragmento desde el editor o desde la consola.
+
+Consulte:
+
+* [Publicación y vista previa de un fragmento](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) para obtener información detallada.
+
+* [Cancelando la publicación de un fragmento](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) para obtener información detallada.
+
+## Vista previa en una aplicación externa {#preview-in-an-external-application}
 
 El editor de fragmentos de contenido proporciona a los autores la opción de previsualizar sus ediciones en una aplicación de front-end externa.
+
+### Patrón de URL de vista previa {#preview-url-pattern}
 
 Para utilizar esta función, primero debe:
 
@@ -69,22 +81,34 @@ Las expresiones disponibles son:
 
 Una vez definida la dirección URL, el botón **[Vista previa](/help/sites-cloud/administering/content-fragments/authoring.md#preview-content-fragment)** está activo en la barra de herramientas superior del editor. Puede seleccionar este botón para iniciar la aplicación externa (en una pestaña independiente) para procesar el fragmento de contenido.
 
-## Previsualizar instancia {#preview-instance}
+### Vista previa en la aplicación externa {#preview-in-the-external-application}
 
-Puede **publicar** y **cancelar la publicación** de su fragmento en el **[servicio de vista previa](/help/headless/deployment/architecture.md)** (así como en su instancia de publicación).
+Puede obtener una vista previa de un fragmento de contenido en una aplicación externa:
 
-Puede publicar el fragmento desde el editor o desde la consola.
+>[!NOTE]
+>
+>[Patrón de URL de vista previa](#preview-url-pattern) debe estar configurado para esta opción.
 
-Consulte:
+1. En la consola Fragmento de contenido vaya a la ubicación del fragmento.
+1. Abra el fragmento en el editor
+1. Seleccione **Vista previa** en la barra de herramientas superior.
+1. Seleccione **Aplicación** para abrir el fragmento en la aplicación externa; por ejemplo, el [Editor universal](/help/implementing/universal-editor/introduction.md).
 
-* [Publicación y vista previa de un fragmento](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) para obtener información detallada.
+## Vista previa con plantillas de visualización (HTML) {#preview-with-visualization-html-templates}
 
-* [Cancelando la publicación de un fragmento](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) para obtener información detallada.
+<!-- CQDOC-23232 - remove when GA -->
 
-<!--
-## Preview based on a HTML Template {#preview-based-on-a-html-template}
+>[!NOTE]
+>
+>Los fragmentos de contenido visual están actualmente en disponibilidad limitada.
+>
+>Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
-The Content Fragment console provides a **Preview** option for every fragment.
+AEM le permite obtener una vista previa del fragmento de contenido mediante un diseño visual basado en una plantilla de HTML.
 
-The icon can be selected to open a dialog that represents the fragment based on a HTML template. You can use the default template, or develop and load your own.
--->
+Consulte [Fragmentos de contenido visual](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) para obtener detalles sobre cómo [obtener una vista previa del fragmento con plantillas](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-template-with-a-template).
+
+>[!NOTE]
+>
+>Consulte [Fragmentos de contenido visual: plantillas](/help/implementing/developing/extending/content-fragments-visualization-templates.md) para obtener más información sobre cómo crear, personalizar y cargar sus propias plantillas de HTML.
+

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
+source-git-commit: 68b7fa602a70e2bd9c4590f4acdf5a27f25db4ba
 workflow-type: tm+mt
-source-wordcount: '7415'
+source-wordcount: '7436'
 ht-degree: 85%
 
 ---
@@ -527,6 +527,7 @@ ht-degree: 85%
          + [Eliminar consideraciones](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analizando estructura](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [Previsualización de fragmentos](/help/sites-cloud/administering/content-fragments/preview.md)
+         + [Fragmentos de contenido visual](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md)
          + {hide-from-toc}[Reutilizar fragmentos de contenido mediante MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
          + [Lanzamientos para fragmentos de contenido](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [Recursos de la consola de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
@@ -636,7 +637,7 @@ ht-degree: 85%
       + [Creación y uso compartido de carpetas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
-      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
       + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
       + [Selector de destino de Micro-Frontend](/help/assets/destination-selector.md)
@@ -859,8 +860,8 @@ ht-degree: 85%
          + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
          + {hide-from-toc}[Configurar [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuración de almacenamiento de  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Conectar el formulario adaptable a la base de datos SQL de Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configuración de los servicios en la nube de Salesforce](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
@@ -1140,6 +1141,7 @@ ht-degree: 85%
             + [Trabajo de creación de contenido](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
             + [Trabajo de creación de comunicación](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
             + [Trabajo de creación de formularios](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
+            + [Trabajo de Figma a fragmentos de contenido visual](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
          + Experience Modernization Agent {#modernization}
             + [Información general](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
             + [Introducción](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
@@ -1326,7 +1328,7 @@ ht-degree: 85%
       + Creación{#authoring}
          + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=es)
          + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
-      + [Previsualización de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=es)
+      + [Previsualización de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
    + Selector de fragmentos de contenido {#content-fragment-selector}
       + [Selector de fragmentos de contenido de Micro-Frontend: información general](/help/headless/content-fragment-selector/overview.md)
@@ -1615,6 +1617,8 @@ ht-degree: 85%
       + [Personalizar y ampliar fragmentos de contenido](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Fragmentos de contenido Configurar componentes para procesamiento](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [Personalización de la consola y el editor de fragmentos de contenido](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
+      + [Fragmentos de contenido visual: plantillas](/help/implementing/developing/extending/content-fragments-visualization-templates.md)
+      + [Fragmentos de contenido visual: enviar con la dirección URL de publicación](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md)
       + Administración de formularios de búsqueda {#manage-search-forms}
          + [Configurar formularios de búsqueda](/help/implementing/developing/extending/search-forms.md)
          + [Configuración de filtros de búsqueda para la bandeja de entrada](/help/implementing/developing/extending/configure-inbox-search-rail.md)

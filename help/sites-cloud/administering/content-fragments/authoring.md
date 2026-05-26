@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
+source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
 workflow-type: tm+mt
-source-wordcount: '2839'
+source-wordcount: '2930'
 ht-degree: 6%
 
 ---
@@ -279,7 +279,7 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 
@@ -544,7 +544,25 @@ Para permitirle colaborar en el producto y en el contexto, la pestaña **Comenta
 
 ## Previsualización del fragmento {#preview-content-fragment}
 
-El editor de fragmentos de contenido proporciona a los autores la opción de previsualizar sus ediciones en una aplicación de front-end externa. Esto requiere que se defina el **[Patrón de URL de vista previa predeterminado](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** para activar el botón **Vista previa** en la barra de herramientas superior del editor. Puede seleccionar este botón para iniciar la aplicación externa (en una pestaña independiente) para procesar el fragmento de contenido.
+El editor de fragmentos de contenido proporciona a los autores dos opciones para previsualizar sus fragmentos.
+
+Ambas opciones están disponibles con **Vista previa** en la barra de herramientas superior:
+
+* **Aplicación**
+
+   * Seleccione esta opción para iniciar la aplicación externa [en una pestaña independiente para procesar el fragmento de contenido](/help/sites-cloud/administering/content-fragments/preview.md#preview-in-an-application).
+
+* **Plantilla**
+
+   * Permite obtener una vista previa del fragmento de contenido con **[plantillas de visualización (HTML)](#preview-with-visualization-html-templates)**.
+
+     <!-- CQDOC-23232 - remove when GA -->
+
+     >[!NOTE]
+     >
+     >Los fragmentos de contenido visual están actualmente en disponibilidad limitada.
+     >
+     >Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Publicación del fragmento {#publish-content-fragment}
 
@@ -603,7 +621,7 @@ El panel **Campos** enumera todos los campos dentro del fragmento de contenido. 
    <td><p> <img src="assets/cf-authoring-content-reference-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Referencia al fragmento</b></p> </td>
+   <td><p><b>Referencia de fragmento</b></p> </td>
    <td><p> <img src="assets/cf-authoring-fragment-reference-icon.png"> </p></td>
   </tr>
   <tr>

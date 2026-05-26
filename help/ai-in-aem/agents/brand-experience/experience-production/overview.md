@@ -4,10 +4,10 @@ description: Descubra cómo Experience Production Agent en AEM le ayuda a aceler
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
+source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 4%
+source-wordcount: '453'
+ht-degree: 3%
 
 ---
 
@@ -45,6 +45,18 @@ El trabajo [Creación de contenido](/help/ai-in-aem/agents/brand-experience/expe
 >
 >Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
+### Trabajo de Figma a fragmentos de contenido visual {#figma-to-visual-content-fragments}
+
+El trabajo de [Figma a fragmentos de contenido visual](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) importa diseños de Figma a modelos de contenido AEM, fragmentos de contenido y plantillas de HTML.
+
+<!-- CQDOC-23232 - remove when GA -->
+
+>[!NOTE]
+>
+>El trabajo de Figma a fragmentos de contenido visuales está actualmente en disponibilidad limitada.
+>
+>Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 ### Trabajo de creación de formularios {#form-creation}
 
 El trabajo de [Creación de formularios](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) permite a los usuarios crear formularios adaptables mediante peticiones de datos en lenguaje natural sin depender de equipos de desarrollo o TI. Esta capacidad acelera el desarrollo de formularios a la vez que mantiene la coherencia de la marca y permite a los usuarios empresariales crear formularios sin tener conocimientos técnicos profundos del producto.
@@ -67,4 +79,4 @@ El agente puede trabajar con otras habilidades de agente, por ejemplo:
 
 Los siguientes recursos pueden resultar útiles a medida que continúa explorando Experience Production Agent:
 
-* También puede usar el [Libro de trabajo de Experience Production Agent](https://www.adobe.com/go/aem-epa-workbook_es) para obtener instrucciones prácticas y guiadas.
+* También puede usar el [Libro de trabajo de Experience Production Agent](https://www.adobe.com/go/aem-epa-workbook) para obtener instrucciones prácticas y guiadas.
