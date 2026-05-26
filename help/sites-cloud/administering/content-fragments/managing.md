@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '3408'
+source-wordcount: '3412'
 ht-degree: 31%
 
 ---
@@ -23,6 +23,7 @@ Aprenda a administrar sus **fragmentos de contenido** en Adobe Experience Manage
 >
 >* [Administrar modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 >* [Visualización y administración de Assets en la consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+>* [Inicios para fragmentos de contenido](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 
 Después de definir los [modelos de fragmentos de contenido](#creating-a-content-model), puede usarlos para lo siguiente:
 

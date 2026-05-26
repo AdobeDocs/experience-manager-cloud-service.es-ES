@@ -4,9 +4,9 @@ description: Descubra cómo Experience Production Agent en AEM le ayuda a aceler
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '459'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,7 @@ El agente proporciona los siguientes trabajos:
 
 * [Actualización de contenido](#content-update)
 * [Creación de contenido](#content-create)
+* [Trabajo de Figma a fragmentos de contenido visual](#figma-to-visual-content-fragments)
 * [Creación de formularios](#form-creation)
 * [Creación de comunicaciones](#communications-creation)
 
@@ -79,4 +80,4 @@ El agente puede trabajar con otras habilidades de agente, por ejemplo:
 
 Los siguientes recursos pueden resultar útiles a medida que continúa explorando Experience Production Agent:
 
-* También puede usar el [Libro de trabajo de Experience Production Agent](https://www.adobe.com/go/aem-epa-workbook_es) para obtener instrucciones prácticas y guiadas.
+* También puede usar el [Libro de trabajo de Experience Production Agent](https://www.adobe.com/go/aem-epa-workbook) para obtener instrucciones prácticas y guiadas.

@@ -3,7 +3,7 @@ title: Trabajo de Figma a fragmentos de contenido visual
 description: Descubra qué es el trabajo de Figma to Visual Content Fragments de Brand Experience Agent y qué puede hacer por usted.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%

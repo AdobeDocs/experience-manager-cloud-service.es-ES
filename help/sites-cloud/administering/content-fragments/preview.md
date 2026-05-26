@@ -6,7 +6,7 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 40c02806-76a2-43ed-982c-0410c2125a36
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 1%
@@ -111,4 +111,3 @@ Consulte [Fragmentos de contenido visual](/help/sites-cloud/administering/conten
 >[!NOTE]
 >
 >Consulte [Fragmentos de contenido visual: plantillas](/help/implementing/developing/extending/content-fragments-visualization-templates.md) para obtener más información sobre cómo crear, personalizar y cargar sus propias plantillas de HTML.
-

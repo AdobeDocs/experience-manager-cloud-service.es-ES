@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '2930'
+source-wordcount: '2932'
 ht-degree: 6%
 
 ---
@@ -279,7 +279,7 @@ Esto abre el campo Multi line en pantalla completa y:
 
   >[!CAUTION]
   >
-  >La sincronización solo está disponible para copiar los cambios *de **Principal**&#x200B;a la variación*.
+  >La sincronización solo está disponible para copiar los cambios *de **Principal**a la variación*.
   >
   >No está disponible como opción la transferencia de cambios *de una variación a **Principal***.
 
@@ -554,7 +554,7 @@ Ambas opciones están disponibles con **Vista previa** en la barra de herramient
 
 * **Plantilla**
 
-   * Permite obtener una vista previa del fragmento de contenido con **[plantillas de visualización (HTML)](#preview-with-visualization-html-templates)**.
+   * Esta opción le permite obtener una vista previa del fragmento de contenido con **[Plantillas de visualización (HTML)](#preview-with-visualization-html-templates)**.
 
      <!-- CQDOC-23232 - remove when GA -->
 

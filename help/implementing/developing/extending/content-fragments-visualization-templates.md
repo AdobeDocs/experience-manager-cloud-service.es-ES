@@ -3,9 +3,9 @@ title: Creación de plantillas de visualización para fragmentos de contenido
 description: Vista previa y publicación de fragmentos de contenido con plantillas de visualización. Descubra cómo puede crear y personalizar las plantillas.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '2141'
+source-wordcount: '2142'
 ht-degree: 3%
 
 ---

@@ -3,7 +3,7 @@ title: Fragmentos de contenido visual
 description: Obtenga información sobre cómo visualizar y publicar fragmentos de contenido visual mediante plantillas de HTML.
 feature: Content Fragments
 role: User, Developer
-source-git-commit: a62769ad302c39a3c1ac7d99960afd2a377a1319
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 0%
@@ -30,7 +30,7 @@ El resultado procesado de un fragmento de contenido de AEM que utiliza el diseñ
 
 Las plantillas de HTML contienen información de diseño, lo que permite la visualización de fragmentos de contenido. La conexión entre una plantilla y un fragmento de contenido se establece mediante la sintaxis de Handlebars para asignar etiquetas de HTML a tipos de datos (campos) definidos en el modelo de fragmento de contenido. Esta definición permite que el contenido creado en los campos respectivos del Editor de fragmentos de contenido se muestre en las ubicaciones adecuadas dentro de la plantilla.
 
-Usted (o su equipo de desarrollo) puede [crear y personalizar sus propias plantillas de HTML](/help/implementing/developing/extending/content-fragments-visualization-templates.md), luego [cargar y adjuntar una o más a los modelos de fragmentos de contenido](#upload-and-assign-your-template) para que los fragmentos correspondientes se puedan representar en experiencias, [previsualizar](#preview-your-fragment-with-a-template) y [entregar según sea necesario](#deliver-your-visual-content-fragment).
+Usted o su equipo de desarrollo pueden [crear y personalizar sus propias plantillas de HTML](/help/implementing/developing/extending/content-fragments-visualization-templates.md), luego [cargar y adjuntar una o más a los modelos de fragmentos de contenido](#upload-and-assign-your-template) para que los fragmentos correspondientes se puedan representar en experiencias, [previsualizar](#preview-your-fragment-with-a-template) y [entregar según sea necesario](#deliver-your-visual-content-fragment).
 
 >[!NOTE]
 >

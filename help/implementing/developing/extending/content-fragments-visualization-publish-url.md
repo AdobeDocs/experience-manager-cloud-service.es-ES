@@ -3,7 +3,7 @@ title: 'Fragmentos de contenido visual: Entregar con la URL de publicación'
 description: Utilice la URL de publicación para enviar fragmentos de contenido visual.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '1456'
 ht-degree: 0%

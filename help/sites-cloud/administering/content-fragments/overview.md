@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: a62769ad302c39a3c1ac7d99960afd2a377a1319
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '2553'
 ht-degree: 28%
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 # Trabajar con fragmentos de contenido: conceptos y prácticas recomendadas {#working-with-content-fragments-concepts-and-best-practices}
 
-Con Adobe Experience Manager (AEM) as a Cloud Service, los fragmentos de contenido le permiten diseñar, crear, depurar y publicar contenido independiente de las páginas. Permiten preparar contenido listo para usar en varias ubicaciones y en varios canales, lo que resulta ideal para [entrega sin encabezado](/help/headless/what-is-headless.md) y [creación de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md).
+Con Adobe Experience Manager (AEM) as a Cloud Service, los fragmentos de contenido le permiten diseñar, crear, depurar y publicar contenido independiente de las páginas. Permiten preparar contenido, listo para usar en varias ubicaciones y en varios canales, lo que resulta ideal para [entrega sin encabezado](/help/headless/what-is-headless.md) y [creación de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!TIP]
 >
