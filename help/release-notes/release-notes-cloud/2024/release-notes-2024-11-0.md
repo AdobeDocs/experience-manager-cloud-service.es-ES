@@ -87,7 +87,7 @@ La vista Recursos permite ahora acceder a Dynamic Media y a Dynamic Media con re
 
 ### Nuevas funciones en AEM Forms {#forms-new-features}
 
-* **[Asistente de IA de AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: la IA generativa para Forms adaptable aporta un nuevo nivel de potencia y facilidad a los procesos de desarrollo de formularios. Le permite crear mejores formularios y más rápido que nunca.
+* **[Asistente de IA de AEM Forms](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: la IA generativa para Forms adaptable aporta un nuevo nivel de potencia y facilidad a los procesos de desarrollo de formularios. Le permite crear mejores formularios y más rápido que nunca.
 
   ![Asistente de IA generativa, formularios adaptables](/help/forms/assets/generative-ai-assistant.png)
 
