@@ -4,7 +4,7 @@ description: Notas de la versión 2024.11.0 de la versión de  [!DNL Adobe Exper
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
 source-wordcount: '2217'
 ht-degree: 94%
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo de información general sobre la versión de noviembre de 2024 para ver un resumen de las funciones añadidas en la versión 2024.11.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -87,7 +87,7 @@ La vista Recursos permite ahora acceder a Dynamic Media y a Dynamic Media con re
 
 ### Nuevas funciones en AEM Forms {#forms-new-features}
 
-* **[Asistente de IA de AEM Forms](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: la IA generativa para Forms adaptable aporta un nuevo nivel de potencia y facilidad a los procesos de desarrollo de formularios. Le permite crear mejores formularios y más rápido que nunca.
+* **[Asistente de IA de AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: la IA generativa para Forms adaptable aporta un nuevo nivel de potencia y facilidad a los procesos de desarrollo de formularios. Le permite crear mejores formularios y más rápido que nunca.
 
   ![Asistente de IA generativa, formularios adaptables](/help/forms/assets/generative-ai-assistant.png)
 
@@ -180,7 +180,7 @@ intuitive and improving the mobile form-filling experience.
 
 ### Rendimiento mejorado de replicación del árbol (y desuso del flujo de trabajo Publicar del árbol de contenido) {#tree-replication-performance}
 
-[Paso de flujo de trabajo de activación de árbol](/help/operations/replication.md#tree-activation) es un nuevo paso de modelo de flujo de trabajo recomendado para replicar jerarquías de contenido profundas. Cabe destacar que permite que se realicen replicaciones independientes (por ejemplo, mediante la publicación rápida o la administración de publicaciones) en paralelo con el flujo de trabajo de replicación del árbol en curso. Esto resulta especialmente útil si necesita publicar algún contenido sensible al tiempo mientras una replicación masiva está todavía en curso. El paso de replicación del árbol reemplaza al flujo de trabajo Publicar árbol de contenido y a su paso de flujo de trabajo relacionado, que ya no se utilizan.
+[Paso de flujo de trabajo de activación de árbol](/help/operations/tree-replication-workflows.md#tree-activation) es un nuevo paso de modelo de flujo de trabajo recomendado para replicar jerarquías de contenido profundas. Cabe destacar que permite que se realicen replicaciones independientes (por ejemplo, mediante la publicación rápida o la administración de publicaciones) en paralelo con el flujo de trabajo de replicación del árbol en curso. Esto resulta especialmente útil si necesita publicar algún contenido sensible al tiempo mientras una replicación masiva está todavía en curso. El paso de replicación del árbol reemplaza al flujo de trabajo Publicar árbol de contenido y a su paso de flujo de trabajo relacionado, que ya no se utilizan.
 
 ### API basadas en OpenAPI: programa para primeros usuarios {#open-apis-earlyadopter}
 

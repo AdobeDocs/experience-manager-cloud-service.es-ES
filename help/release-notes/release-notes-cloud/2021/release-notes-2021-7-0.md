@@ -4,10 +4,10 @@ description: Notas de la versión 2021.7.0 de la versión de  [!DNL Adobe Experi
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
 feature: Release Information
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 30%
+source-wordcount: '1417'
+ht-degree: 31%
 
 ---
 
@@ -37,7 +37,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de julio de 20
 ### Novedades {#what-is-new-foundation}
 
 * Configuración de Dispatcher más flexible: los proyectos se pueden organizar más fácilmente. Por ejemplo, ahora puede incluir varios archivos de reglas de reescritura que reflejen la estructura del sitio. [Obtenga información acerca](/help/implementing/dispatcher/disp-overview.md#validation-debug) de este modo flexible, incluyendo cómo estructurar la configuración de Dispatcher para que pueda aprovecharla.
-* La IU de replicación de árbol en la pestaña Distribuir del agente de replicación debe considerarse obsoleta y se eliminó después del 30 de septiembre de 2021. [Más información acerca de](/help/operations/replication.md#tree-activation) estrategias de replicación alternativas.
+* La IU de replicación de árbol en la pestaña Distribuir del agente de replicación debe considerarse obsoleta y se eliminó después del 30 de septiembre de 2021. [Más información acerca de](/help/operations/tree-replication-workflows.md#tree-activation) estrategias de replicación alternativas.
 * Se ha eliminado el paquete `org.apache.sling.datasource-1.0.4.jar` para la compatibilidad con orígenes de datos de Sling, ya que su funcionalidad está obsoleta y los clientes no lo utilizan.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -91,7 +91,7 @@ La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!
 
 ### Nuevas funciones disponibles en el canal de versión preliminar de [!DNL Forms] {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en modo sincrónico.  Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    * Generar documentos rellenando archivos de plantilla con datos XML.
    * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    * Genere archivos de PDF imprimibles desde un PDF de formularios XFA y un formulario de Adobe Acrobat.
@@ -100,7 +100,7 @@ La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!
 
 * **Documento de registro basado en Acrobat**: También puede [usar el formulario PDF de Adobe Acrobat (PDF de Acrobat)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=es) como plantilla para el documento de registro además de la plantilla de formulario basada en XFA.
 
-* **Conector del almacén de datos de Microsoft® Azure**: Ahora puede [conectar el modelo de datos de formulario a Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=es). Permite recuperar y almacenar datos de formulario adaptables en Microsoft® Azure Storage como BLOB.
+* **Conector del almacén de datos de Microsoft® Azure**: Ahora puede [conectar el modelo de datos de formulario a Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Permite recuperar y almacenar datos de formulario adaptables en Microsoft® Azure Storage como BLOB.
 
 ## Complemento CIF {#cloud-services-cif}
 
@@ -192,7 +192,7 @@ La fecha de lanzamiento de Cloud Acceleration Manager es el 15 de julio de 2021.
 
 ### Novedades {#what-is-new-cam}
 
-Cloud Acceleration Manager es una aplicación basada en la nube diseñada para guiar a sus equipos de TI a lo largo del recorrido de transición, desde la planificación hasta la puesta en marcha de Cloud Service. Configure su equipo para una migración correcta con las prácticas, sugerencias, documentación y herramientas recomendadas por Adobe, que le ayudarán en cada fase del recorrido a AEM as a Cloud Service. Más información [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=es).
+Cloud Acceleration Manager es una aplicación basada en la nube diseñada para guiar a sus equipos de TI a lo largo del recorrido de transición, desde la planificación hasta la puesta en marcha de Cloud Service. Configure su equipo para una migración correcta con las prácticas, sugerencias, documentación y herramientas recomendadas por Adobe, que le ayudarán en cada fase del recorrido a AEM as a Cloud Service. Más información [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
 
 >[!NOTE]
 >

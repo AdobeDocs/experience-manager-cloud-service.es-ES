@@ -4,16 +4,16 @@ description: Notas de la versión 2022.10.0 de la versión de  [!DNL Adobe Exper
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 78%
+source-wordcount: '857'
+ht-degree: 77%
 
 ---
 
 # Notas de la versión 2022.10.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión de la característica para la versión 2022.10.0 de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión de la función para la versión 2022.10.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ En la siguiente sección se describen las notas de la versión de la caracterís
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] como una versión mensual actual de [!DNL Cloud Service] (2022.10.0) es el 10 de noviembre de 2022. La próxima versión mensual (2023.1.0) está planificada para el viernes, 09 de febrero de 2023.
+La fecha de lanzamiento de [!DNL Adobe Experience Manager] como una versión mensual actual de [!DNL Cloud Service] (2022.10.0) es el 10 de noviembre de 2022. La próxima versión mensual (2023.1.0) está planificada para el 9 de febrero de 2023.
 
 ## Vídeo de la versión {#release-video}
 
@@ -55,7 +55,7 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
   ![Representación del PDF para otros formatos](/help/release-notes/assets/multi-page-other-formats.png)
 
 
-### Nuevas funciones en el canal de prelanzamiento de [!DNL Assets] {#prerelease-features-assets}
+### Nuevas funciones en la versión preliminar de [!DNL Assets] {#prerelease-features-assets}
 
 * Experience Manager Assets ahora utiliza un marco de inteligencia artificial mejorado para las etiquetas inteligentes de imagen. Esta inteligencia de contenido mejora la relevancia y precisión de las etiquetas inteligentes disponibles para todos los activos de imagen durante la ingesta. Además, la información de orientación se rellena en `cq:tags`, lo que permite obtener mejores resultados de búsqueda mediante el filtro Orientación.
 
@@ -65,7 +65,7 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
+### Nuevas funciones disponibles en el canal de versión preliminar de [!DNL Forms] {#prerelease-features-forms}
 
 * **Editor de plantillas de Forms adaptable**: El editor de plantillas le permite predefinir la estructura básica y el aspecto de Forms adaptable de una organización. Esta versión aporta las siguientes mejoras al editor de plantillas:
    * **[Modelo de datos de formulario en el editor de plantillas](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: puede asociar un esquema del Modelo de datos de formulario a una plantilla de Formulario adaptable en el editor de plantillas. Ayuda a reducir el tiempo necesario para crear un Formulario adaptable. La opción también se agrega al editor de Formularios adaptables para que los usuarios puedan seleccionar o cambiar el Modelo de datos de formulario para los formularios existentes.
@@ -87,9 +87,9 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 ### Novedades {#what-is-new-foundation}
 
-* AEM as a Cloud Service (Servicio de creación) está ahora integrado con Unified Shell para mejorar la experiencia del usuario y unificarlo con todas las demás aplicaciones de Experience Cloud. AEM Consulte la como Cloud Service de [en Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) para obtener más información.
+* AEM as a Cloud Service (Servicio de creación) está ahora integrado con Unified Shell para mejorar la experiencia del usuario y unificarlo con todas las demás aplicaciones de Experience Cloud. Consulte AEM as a [Cloud Service en Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) para obtener más información.
 
-* Como se mencionó anteriormente en las notas de la versión, el uso de la pantalla de administración del agente de replicación o la API de replicación para distribuir paquetes de contenido de más de 10 MB (nodos con propiedades, sin incluir binarios) ya no se utiliza y se aplica. Consulte [Administrar publicación](/help/operations/replication.md#manage-publication) o [Flujo de trabajo del árbol de contenido de Publish](/help/operations/replication.md#publish-content-tree-workflow) para ver los enfoques sugeridos para replicar estos paquetes de contenido grande.
+* Como se mencionó anteriormente en las notas de la versión, el uso de la pantalla de administración del agente de replicación o la API de replicación para distribuir paquetes de contenido de más de 10 MB (nodos con propiedades, sin incluir binarios) ya no se utiliza y se aplica. Consulte [Administrar publicación](/help/operations/replication.md#manage-publication) o [Publicar flujo de trabajo del árbol de contenido](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) para ver los enfoques sugeridos para replicar estos paquetes de contenido grande.
 
 * La configuración de Dispatcher ahora hace referencia a un archivo que enumera parámetros comunes de consulta de campañas de marketing. Los clientes pueden optar por descomentar los parámetros relevantes para ellos, lo que resulta en un mejor almacenamiento en caché. Consulte [Parámetros de la campaña de marketing](/help/implementing/dispatcher/caching.md#marketing-parameters) para obtener más información.
 

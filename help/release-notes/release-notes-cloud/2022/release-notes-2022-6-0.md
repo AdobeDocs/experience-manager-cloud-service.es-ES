@@ -4,10 +4,10 @@ description: Notas de la versión 2022.6.0 de la versión de  [!DNL Adobe Experi
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 74%
+source-wordcount: '690'
+ht-degree: 76%
 
 ---
 
@@ -96,7 +96,7 @@ Experience Manager Assets usa funcionalidades de Adobe AI para ahora [distinguir
 
 ### Novedades {#what-is-new-foundation}
 
-* Como se mencionó en las notas de la versión de mayo (2022.5.0), se eliminó la opción &quot;Agregar árbol&quot; en la pestaña **Distribuir** de la pantalla del administrador del agente de replicación. Los paquetes con una jerarquía de contenido de árbol deben replicarse usando [Administrar publicación](/help/operations/replication.md#manage-publication) o el flujo de trabajo del [Árbol de contenido de publicación](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
+* Como se mencionó en las notas de la versión de mayo (2022.5.0), se eliminó la opción &quot;Agregar árbol&quot; en la pestaña **Distribuir** de la pantalla del administrador del agente de replicación. Los paquetes con una jerarquía de contenido de árbol deben replicarse usando [Administrar publicación](/help/operations/replication.md#manage-publication) o el flujo de trabajo del [Árbol de contenido de publicación](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow).
 
 ## Cloud Manager {#cloud-manager}
 

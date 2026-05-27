@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 3c10af78edeb3e71b178c78d0833cb2e1cfcad4a
 workflow-type: tm+mt
-source-wordcount: '7436'
+source-wordcount: '7454'
 ht-degree: 85%
 
 ---
@@ -421,6 +421,10 @@ ht-degree: 85%
             + {hide-from-toc}[Información general](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + {hide-from-toc}[Consideraciones importantes](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + {hide-from-toc}[Usando la herramienta de asignación de usuarios](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
+   + Migración de código con asistencia de IA {#cloud-migration-skill}
+      + [Información general](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md)
+      + [Uso de la habilidad de migración de nube](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)
+      + [Uso del MCP de migración de nube](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)
    + Herramientas de refactorización de código {#refactoring-tools}
       + [Introducción a las herramientas de refactorización](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
       + [Información general sobre las herramientas de refactorización](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
@@ -637,7 +641,7 @@ ht-degree: 85%
       + [Creación y uso compartido de carpetas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
-      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
       + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
       + [Selector de destino de Micro-Frontend](/help/assets/destination-selector.md)
@@ -860,8 +864,8 @@ ht-degree: 85%
          + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
          + {hide-from-toc}[Configurar [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuración de almacenamiento de  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Conectar el formulario adaptable a la base de datos SQL de Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configuración de los servicios en la nube de Salesforce](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
@@ -1328,7 +1332,7 @@ ht-degree: 85%
       + Creación{#authoring}
          + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=es)
          + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
-      + [Previsualización de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=es)
+      + [Previsualización de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
    + Selector de fragmentos de contenido {#content-fragment-selector}
       + [Selector de fragmentos de contenido de Micro-Frontend: información general](/help/headless/content-fragment-selector/overview.md)
@@ -1669,6 +1673,7 @@ ht-degree: 85%
    + [Centro de acciones](/help/operations/actions-center.md)
    + [Búsqueda de contenido e indexación](/help/operations/indexing.md)
    + [Servicio de replicación de contenido](/help/operations/replication.md)
+   + [Flujos de trabajo de replicación de árbol](/help/operations/tree-replication-workflows.md)
    + [Regiones de publicación adicionales](/help/operations/additional-publish-regions.md)
    + [Monitorización de infraestructura y servicios en AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Tareas de mantenimiento](/help/operations/maintenance.md)

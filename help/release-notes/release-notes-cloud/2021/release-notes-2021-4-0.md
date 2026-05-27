@@ -4,9 +4,9 @@ description: Notas de la versión 2021.4.0 de la versión de  [!DNL Adobe Experi
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1583'
 ht-degree: 45%
 
 ---
@@ -31,13 +31,13 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 ### Novedades {#what-is-new-foundation}
 
-* [Flujo de trabajo del árbol de contenido de Publish](/help/operations/replication.md#publish-content-tree-workflow): un nuevo modelo y paso de flujo de trabajo proporciona un mayor rendimiento al publicar jerarquías profundas de contenido.
+* [Flujo de trabajo Publicar árbol de contenido](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow): Un nuevo modelo y paso de flujo de trabajo proporciona un mayor rendimiento al publicar jerarquías profundas de contenido.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Novedades de [!DNL Sites] {#what-is-new-sites}
 
-* Puntos finales de GraphQL AEM: Ahora es posible habilitar la API de GraphQL de la aplicación para configuraciones de AEM Sites individuales y crear puntos finales de GraphQL personalizados para dichas configuraciones mediante una nueva IU de la consola de GraphQL. La IU también permite administrar los extremos de GraphQL.
+* Extremos de GraphQL: Ahora es posible habilitar la API de GraphQL de AEM para configuraciones de AEM Sites individuales y crear extremos de GraphQL personalizados para esas configuraciones mediante la nueva IU de la consola de GraphQL. La IU también permite administrar los extremos de GraphQL.
 
 * Modelos de contenido, tipo de datos Fecha y hora mejorado: Ahora es posible configurar el tipo de datos Fecha y hora para permitir la creación de información solo de fecha, solo de hora o de fecha y hora.
 
@@ -97,7 +97,7 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 * **Utilizar el método de autenticación de Id. de gobierno en los formularios adaptables habilitados para Adobe Sign**
 
-  Con la tecnología de algoritmos avanzados de aprendizaje automático, el proceso de Id. de gobierno de Adobe Sign ofrece a las empresas de todo el mundo la capacidad de garantizar una autenticación de alta calidad de la identidad de sus destinatarios.  Ahora puede utilizar el método de autenticación de identidad de Id. de gobierno en los formularios adaptativos habilitados para Adobe Sign.
+  Con la tecnología de algoritmos avanzados de aprendizaje automático, el proceso de Id. de gobierno de Adobe Sign ofrece a las empresas de todo el mundo la capacidad de garantizar una autenticación de alta calidad de la identidad de sus destinatarios. Ahora puede utilizar el método de autenticación de identidad de Id. de gobierno en los formularios adaptativos habilitados para Adobe Sign.
 
   La Id. de gobierno es un método de autenticación de identidad premium que indica al destinatario cómo [cargar la imagen de un documento de identidad emitido por el gobierno (carnet de conducir, identificación nacional, pasaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) y luego evalúa ese documento para asegurarse de que es auténtico.
 
@@ -123,20 +123,20 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 ### Otras actualizaciones {#misc-2021-04-0-forms}
 
-* Para facilitar el reconocimiento del contenido, el servicio ahora genera miniaturas en directo para los archivos XDP, PDF dinámico y Esquema.
-* Añada la capacidad de mover un archivo de PDF a una carpeta colocada en la interfaz de usuario de AEM Forms.
+* Para facilitar el reconocimiento del contenido, el servicio ahora genera miniaturas en directo para los archivos XDP, Dynamic PDF y de esquema.
+* Añada la capacidad de mover un archivo PDF a una carpeta colocada en la interfaz de usuario de AEM Forms.
 
-## as a Cloud Service de Adobe Experience Manager Commerce {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Novedades {#what-is-new-commerce}
 
 * Compatibilidad con UID de categoría: esto desbloquea las integraciones de comercio de terceros para sistemas que utilizan cadenas para ID de categoría
 
-* AEM Extensión para PWA Studio incl. integración de ejemplo
+* Extensión de AEM para PWA Studio incluida. integración de ejemplo
 
-* CIF Nuevo componente principal de navegación de que amplía el componente principal de navegación de WCM
+* Nuevo componente principal de navegación de CIF que amplía el componente principal de navegación de WCM
 
-* AEM Indicador visual para datos de catálogo clasificados en tienda de
+* Indicador visual para datos de catálogo clasificados en tienda de AEM
 
 * El extremo de Commerce ahora se puede configurar mediante la IU de Cloud Manager
 
@@ -194,4 +194,4 @@ La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.12 es el 
 ### Correcciones de errores {#bug-fixes-bpa-april}
 
 * Se han visto filas duplicadas en el informe de BPA. Esto se ha corregido.
-* AEM La interfaz de usuario de BPA en la versión 6.4.2 de la generaba un error de JS que deshabilitaba el botón Generar informe. Esto se ha corregido.
+* La interfaz de usuario de BPA en la versión 6.4.2 de AEM generaba un error de JS que deshabilitaba el botón Generar informe. Esto se ha corregido.

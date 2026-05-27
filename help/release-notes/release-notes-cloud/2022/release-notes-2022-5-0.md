@@ -4,10 +4,10 @@ description: Notas de la versión 2022.5.0 de la versión de  [!DNL Adobe Experi
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 64%
+source-wordcount: '847'
+ht-degree: 65%
 
 ---
 
@@ -81,9 +81,9 @@ Experience Manager Assets usa funcionalidades de Adobe AI para ahora [distinguir
 
 ### Novedades {#what-is-new-foundation}
 
-* La opción &quot;Agregar árbol&quot; en la pantalla del administrador del agente de replicación **Distribuir pestaña**, que se anunció anteriormente como obsoleta, se eliminó el 20 de junio de 2022 o poco después. Los paquetes con una jerarquía de contenido de árbol deben replicarse usando [Administrar publicación](/help/operations/replication.md#manage-publication) o [Flujo de trabajo Publicar árbol de contenido](/help/operations/replication.md#publish-content-tree-workflow).
+* La opción &quot;Agregar árbol&quot; en la pantalla del administrador del agente de replicación **Distribuir pestaña**, que se anunció anteriormente como obsoleta, se eliminó el 20 de junio de 2022 o poco después. Los paquetes con una jerarquía de contenido de árbol deben replicarse usando [Administrar publicación](/help/operations/replication.md#manage-publication) o [Flujo de trabajo Publicar árbol de contenido](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow).
 
-* El uso de la pantalla de administración del agente de replicación o la API de replicación para distribuir paquetes de contenido de más de 10 MB (nodos con propiedades, sin incluir binarios) está en desuso y se aplica el 12 de septiembre de 2022 o poco después. En su lugar, [Administrar publicación](/help/operations/replication.md#manage-publication) o [Flujo de trabajo Publicar árbol de contenido](/help/operations/replication.md#publish-content-tree-workflow) debe utilizarse para replicar estos paquetes de contenido de gran tamaño. En julio, aparecerá un mensaje de advertencia en la pantalla del administrador del agente de replicación **Pestaña Distribuir** si intenta replicar estos paquetes de contenido grande y también en el registro de errores de AEM siempre que la API de replicación se utilice para replicar estos paquetes de contenido grande. En septiembre, las advertencias se sustituyeron por errores. Ajuste los procesos según corresponda.
+* El uso de la pantalla de administración del agente de replicación o la API de replicación para distribuir paquetes de contenido de más de 10 MB (nodos con propiedades, sin incluir binarios) está en desuso y se aplica el 12 de septiembre de 2022 o poco después. En su lugar, [Administrar publicación](/help/operations/replication.md#manage-publication) o [Flujo de trabajo Publicar árbol de contenido](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) debe utilizarse para replicar estos paquetes de contenido de gran tamaño. En julio, aparecerá un mensaje de advertencia en la pantalla del administrador del agente de replicación **Pestaña Distribuir** si intenta replicar estos paquetes de contenido grande y también en el registro de errores de AEM siempre que la API de replicación se utilice para replicar estos paquetes de contenido grande. En septiembre, las advertencias se sustituyeron por errores. Ajuste los procesos según corresponda.
 
 ### Nuevas funciones disponibles en el canal de versión preliminar de [!DNL Experience Manager] {#prerelease-features-foundation}
 
