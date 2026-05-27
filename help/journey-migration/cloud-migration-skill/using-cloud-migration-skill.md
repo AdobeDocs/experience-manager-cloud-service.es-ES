@@ -3,7 +3,7 @@ title: Uso de la habilidad de migración de AEM Cloud
 description: Referencia para cada patrón de migración admitido por la aptitud de migración de AEM Cloud, incluida la conversión de la configuración de OSGi, las opciones de fuentes de BPA y las directrices de administración de sesiones.
 feature: Migration
 role: Developer
-source-git-commit: f3f81e043b95576bbd1d236645a562668c355e76
+source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
@@ -142,3 +142,4 @@ Para los informes de BPA con muchas conclusiones, el método por lotes le permit
 El agente busca y edita archivos sólo en las carpetas abiertas del espacio de trabajo del IDE. No analiza los directorios principales, las carpetas del mismo nivel ni otras ubicaciones del disco.
 
 Si un hallazgo de BPA hace referencia a una ruta de archivo que no existe en el espacio de trabajo, el agente se detiene y le informa de qué rutas faltan. Abra la carpeta de proyecto correcta o proporcione las rutas explícitamente para continuar.
+

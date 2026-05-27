@@ -3,7 +3,7 @@ title: Uso del MCP de migración de AEM Cloud
 description: Obtenga información sobre cómo añadir el servidor MCP de migración de AEM Cloud a su IDE con IA habilitada y utilizarlo para recuperar los resultados del Analizador de prácticas recomendadas de Cloud Acceleration Manager durante una sesión de migración.
 feature: Migration
 role: Developer
-source-git-commit: f3f81e043b95576bbd1d236645a562668c355e76
+source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 1%
@@ -94,3 +94,4 @@ Utilice esto para decidir qué patrones priorizar en las sesiones.
 ## Siguientes pasos {#whats-next}
 
 Con el MCP configurado, consulte [Uso de la habilidad de migración de la nube](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md) para obtener una referencia completa sobre los patrones de migración y la administración de sesiones.
+

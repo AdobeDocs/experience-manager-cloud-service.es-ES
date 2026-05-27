@@ -3,7 +3,7 @@ title: Migración de código con asistencia de IA a AEM as a Cloud Service
 description: Descripción general de la aptitud de migración de AEM Cloud y MCP, una solución de agente de IA que lee los hallazgos de BPA y migra el código de AEM 6.x a AEM as a Cloud Service, patrón a patrón.
 feature: Migration
 role: Developer
-source-git-commit: 85b630684db9de7e16e3a52203f55bca5846f66e
+source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 1%
@@ -125,3 +125,4 @@ La aptitud y el MCP complementan las demás herramientas de la **fase de impleme
 - **Herramienta de transferencia de contenido**: migra el contenido del repositorio de AEM 6.x a AEMaaCS.
 
 Consulte la [Descripción general de la fase de implementación](/help/journey-migration/implementation.md) para obtener una imagen completa.
+

@@ -3,7 +3,7 @@ title: Flujos de trabajo de replicación de árbol en AEM as a Cloud Service
 description: Obtenga información sobre cómo duplicar jerarquías de contenido profundas mediante el paso del flujo de trabajo de activación de árbol y los flujos de trabajo relacionados en AEM as a Cloud Service.
 feature: Operations
 role: Admin
-source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
+source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 24%
@@ -102,7 +102,7 @@ Puede activar una replicación de árbol seleccionando **Herramientas - Flujo de
 
 No invoque el modelo original. En su lugar, asegúrese de copiar primero el modelo e invocar esa copia.
 
-Al igual que todos los flujos de trabajo, también se puede invocar mediante una API. Para obtener más información, vea [Interactuar con flujos de trabajo mediante programación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=es#extending-aem).
+Al igual que todos los flujos de trabajo, también se puede invocar mediante una API. Para obtener más información, vea [Interactuar con flujos de trabajo mediante programación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 También puede crear un modelo de flujo de trabajo que utilice el paso de proceso `Publish Content Tree`.
 
@@ -162,3 +162,4 @@ A continuación se muestran ejemplos de registros generados durante un flujo de 
 ```
 
 +++
+
