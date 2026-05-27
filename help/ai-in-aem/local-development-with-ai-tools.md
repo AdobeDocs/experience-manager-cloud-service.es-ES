@@ -29,7 +29,7 @@ Cuatro componentes complementarios se ocupan de esto:
 | **Servidor MCP local de inicio rápido de AEM** | Expone datos en tiempo de ejecución activos de una instancia local de AEM SDK para admitir la resolución de problemas |
 | **Servidor MCP local de Dispatcher** | Habilita la validación y la inspección en tiempo de ejecución de una instancia de Dispatcher local |
 
-Revise los [tutoriales de desarrollo asistido por IA](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) para obtener instrucciones prácticas adicionales.
+Revise los [tutoriales de desarrollo asistido por IA](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) para obtener instrucciones prácticas adicionales.
 
 >[!TIP]
 >
@@ -61,7 +61,7 @@ Adobe publica las aptitudes de AEM as a Cloud Service en el repositorio **[adobe
 
 ### Instalar aptitudes {#install-skills}
 
-Elija el método que coincida con la herramienta de codificación de IA. La instalación de habilidades una vez las pone a disposición de todos los proyectos de ese equipo. Consulte el tutorial [Configurar aptitudes de agente de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) para ver un tutorial concreto.
+Elija el método que coincida con la herramienta de codificación de IA. La instalación de habilidades una vez las pone a disposición de todos los proyectos de ese equipo. Consulte el tutorial [Configurar aptitudes de agente de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) para ver un tutorial concreto.
 
 #### Código Claude {#claude-code}
 
@@ -125,7 +125,7 @@ CTA Link (ctaLink) - Pathfield
 
 El agente hace eco de la especificación del campo para la confirmación y, a continuación, genera todos los archivos de componente. Los patrones admitidos son varios campos con elementos anidados compuestos, lógica condicional de mostrar/ocultar, extensión de componente principal mediante fusión de recursos de Sling y pruebas JUnit 5 con AEM Mocks. El diseño puede provenir de varias fuentes, incluyendo una descripción textual, una imagen o una URL de diseño Figma usando el servidor MCP de Figma.
 
-Obtenga más información siguiendo el [desarrollo de componentes mediante el tutorial de aptitudes de agente de AEM.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
+Obtenga más información siguiendo el [desarrollo de componentes mediante el tutorial de aptitudes de agente de AEM.](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
 
 ### Uso de la aptitud de migración {#use-the-migration-skill}
 
