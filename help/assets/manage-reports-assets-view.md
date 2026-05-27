@@ -6,9 +6,9 @@ exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1507'
 ht-degree: 86%
 
 ---
@@ -42,8 +42,8 @@ El entorno de vista de los AEM Assets ofrece funcionalidades completas de creaci
 
 **Para crear un informe:**
 
-1. Vaya a **Informes** y haga clic en **Crear informe** (en la parte superior derecha). El cuadro de diálogo **crear informe** muestra los siguientes campos:
-   ![create-report](/help/assets/assets/executed-reports1.svg)
+1. Vaya a **Informes** y haga clic en **Crear informe** (en la parte superior derecha). Se muestra el cuadro de diálogo **crear informe**.
+
 
    **En pestaña Configuración:**
 
@@ -142,7 +142,7 @@ Obtenga información de envío para los recursos que se envían con Dynamic Medi
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Requisitos previos {#prereqs-dynamic-media-delivery-reports}
@@ -204,7 +204,6 @@ Para programar un informe, siga los pasos que se indican a continuación:
    1. **Descripción**: añada una descripción opcional al informe.
    1. **Seleccionar ruta de carpeta:** seleccione una ruta de la carpeta para generar un informe para los recursos que se cargarán o descargarán de esa carpeta específica en el futuro.
    1. Marque **Programar informe:** marque para programar el informe para un momento posterior o para que se repita.
-      ![programar informe](/help/assets/assets/schedule-reports1.svg)
 
    1. **Elegir frecuencia:** especifique el intervalo de generación del informe (por ejemplo, diario, semanal, mensual, anual o una vez) y establezca la fecha y la hora para ejecutar el informe junto con la fecha de finalización para la periodicidad. Para un informe único, seleccione el intervalo de fechas para el informe sobre el tipo de actividad seleccionado en el entorno de AEM. Por ejemplo, si necesita un informe sobre los recursos descargados del 10 al 29 (fechas futuras) de un mes específico, seleccione estas fechas en el campo **Seleccionar intervalo de fechas**.
 
@@ -243,10 +242,10 @@ La vista Recursos le permite ver datos en tiempo real de su entorno de la vista 
 Haga clic en **[!UICONTROL Insights]** en el panel de navegación izquierdo para ver los siguientes gráficos generados automáticamente:
 
 * **Descargas**: el número de recursos descargados del entorno de vista de Assets en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
-  ![descargas de información](/help/assets/assets/insights-downloads2341.svg)
+
 
 * **Cargas**: el número de recursos cargados en el entorno de vista de Assets en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
-  ![cargas de información](/help/assets/assets/insights-uplods2.svg)
+
 
 <!--
 * **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
@@ -259,12 +258,11 @@ Haga clic en **[!UICONTROL Insights]** en el panel de navegación izquierdo para
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Búsquedas principales**: vea los términos más buscados junto con el número de veces que se buscan en el entorno de vista Recursos en los últimos 30 días o 12 meses representados en formato tabular.
-  ![cargas de información](/help/assets/assets/insights-top-search.svg)
+
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
 * **Número de recursos por tamaño:** segmenta el número de recursos total dentro del entorno de Assets View en diferentes intervalos de tamaño, destacando el recuento y el porcentaje de recursos en cada intervalo de tamaño, representados por un gráfico de sectores.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+
 * **Recuento de recursos por tipo de recurso:** Segmenta el recuento total de recursos en su entorno de vista de Assets, destacando el recuento y el porcentaje de recursos en función de sus tipos de archivos, representados por un gráfico circular.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
