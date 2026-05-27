@@ -4,9 +4,9 @@ description: Aprenda a configurar herramientas de codificación de IA con contex
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 236c9edfdd2d540fd767dcc91058aab32eb035c8
+source-git-commit: 38e599d34e591d0d8c9f822c0296bef27d24a605
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1836'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Cuatro componentes complementarios se ocupan de esto:
 | **Servidor MCP local de inicio rápido de AEM** | Expone datos en tiempo de ejecución activos de una instancia local de AEM SDK para admitir la resolución de problemas |
 | **Servidor MCP local de Dispatcher** | Habilita la validación y la inspección en tiempo de ejecución de una instancia de Dispatcher local |
 
-Revise los [tutoriales de desarrollo asistido por IA](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) para obtener instrucciones prácticas adicionales.
+Revise los [tutoriales de desarrollo asistido por IA](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) para obtener instrucciones prácticas adicionales.
 
 >[!TIP]
 >
@@ -56,11 +56,12 @@ Adobe publica las aptitudes de AEM as a Cloud Service en el repositorio **[adobe
 | `ensure-agents-md` | Las correas de inicio `AGENTS.md` y `CLAUDE.md` se adaptaron a la estructura de módulos real del proyecto |
 | `create-component` | Andamiajes para un componente completo de AEM: definición de componente, XML de diálogo, plantilla HTL, modelo Sling, pruebas unitarias y clientlibs |
 | `dispatcher` | Asistente de configuración HTTPD de Apache y Dispatcher con tecnología de IA que cubre la creación de configuraciones, el asesoramiento técnico, la respuesta a incidentes, la optimización del rendimiento y la protección de la seguridad |
+| `migration` | Migra AEM 6.x, AMS o código Java local y configuraciones OSGi a AEM as a Cloud Service, impulsado por los resultados de [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) de una exportación CSV o [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) |
 | `workflow` | Este es el único punto de entrada para todas las aptitudes del flujo de trabajo de AEM as a Cloud Service. Abarca el diseño del modelo de flujo de trabajo, el paso de proceso personalizado y el desarrollo del selector de participantes, la configuración del lanzador, el activador del flujo de trabajo y la compatibilidad con la producción, incluida la depuración de flujos de trabajo atascados/fallidos, la activación de incidentes con registros de Cloud Manager, el análisis del pool de hilos y los diagnósticos de trabajo de Sling para el motor de flujo de trabajo de Granite. |
 
 ### Instalar aptitudes {#install-skills}
 
-Elija el método que coincida con la herramienta de codificación de IA. La instalación de habilidades una vez las pone a disposición de todos los proyectos de ese equipo. Consulte el tutorial [Configurar aptitudes de agente de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) para ver un tutorial concreto.
+Elija el método que coincida con la herramienta de codificación de IA. La instalación de habilidades una vez las pone a disposición de todos los proyectos de ese equipo. Consulte el tutorial [Configurar aptitudes de agente de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) para ver un tutorial concreto.
 
 #### Código Claude {#claude-code}
 
@@ -124,7 +125,17 @@ CTA Link (ctaLink) - Pathfield
 
 El agente hace eco de la especificación del campo para la confirmación y, a continuación, genera todos los archivos de componente. Los patrones admitidos son varios campos con elementos anidados compuestos, lógica condicional de mostrar/ocultar, extensión de componente principal mediante fusión de recursos de Sling y pruebas JUnit 5 con AEM Mocks. El diseño puede provenir de varias fuentes, incluyendo una descripción textual, una imagen o una URL de diseño Figma usando el servidor MCP de Figma.
 
-Obtenga más información siguiendo el [desarrollo de componentes mediante el tutorial de aptitudes de agente de AEM.](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
+Obtenga más información siguiendo el [desarrollo de componentes mediante el tutorial de aptitudes de agente de AEM.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
+
+### Uso de la aptitud de migración {#use-the-migration-skill}
+
+La aptitud de `migration` guía al agente a través de la migración del código Java de AEM y las configuraciones de OSGi a AEM as a Cloud Service. Funciona de patrón en patrón: se le asigna un nombre al patrón (por ejemplo, `scheduler` o `replication`), se indica al agente los resultados del Analizador de prácticas recomendadas, se localizan los archivos afectados en el proyecto y se aplican las transformaciones correctas por lotes, pausando la revisión después de cada uno de ellos.
+
+Los patrones admitidos son Planificador de Sling, ResourceChangeListener, API de replicación, OSGi EventListener y EventHandler, API de Assets, correcciones de lint de HTL y conversión de configuración OSGi con secretos de Cloud Manager y extracción de variables de entorno.
+
+La aptitud se vincula con el [MCP de migración en la nube](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) para obtener resultados directamente de [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Sin el MCP configurado, la aptitud vuelve a una exportación CSV local de [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) o puede apuntar a archivos específicos manualmente.
+
+Para obtener instrucciones de configuración completas y referencias de patrones, consulte [Migración de código con asistencia de IA a AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
 ### Uso de la aptitud de Dispatcher {#use-the-dispatcher-skill}
 
