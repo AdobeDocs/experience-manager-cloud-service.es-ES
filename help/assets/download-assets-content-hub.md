@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo descargar uno o varios recursos y 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: bfef942f248d926d699ed489a5c117f89da76459
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 1%
+source-wordcount: '1428'
+ht-degree: 2%
 
 ---
 
@@ -26,10 +26,13 @@ Ver los [tipos de representaciones disponibles en Content Hub](#types-of-renditi
 Para descargar uno o varios recursos y sus representaciones, ejecute los siguientes pasos:
 
 * Para descargar un solo recurso y sus representaciones:
+
    1. Seleccione ![descargar](/help/assets/assets/download-icon.svg) disponible en la tarjeta de recursos para obtener una vista previa del recurso y sus representaciones disponibles.
    1. Seleccione las representaciones disponibles y haga clic en la opción **[!UICONTROL Descargar]** del cuadro de diálogo para descargar las representaciones seleccionadas como archivo ZIP. Si el cuadro de diálogo muestra una licencia de recurso (para un recurso con licencia), acepte los términos y condiciones de licencia y haga clic en **[!UICONTROL Descargar]**.
-      ![descargar un recurso](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
-También puede hacer clic en la miniatura del recurso y, a continuación, hacer clic en ![descargar](/help/assets/assets/download-icon.svg) para seleccionar y ver las representaciones disponibles en el cuadro de diálogo antes de descargarlas.
+
+  ![descargar un recurso](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+
+  También puede hacer clic en la miniatura del recurso y, a continuación, hacer clic en ![descargar](/help/assets/assets/download-icon.svg) para seleccionar y ver las representaciones disponibles en el cuadro de diálogo antes de descargarlas.
 
 * Para descargar varios recursos y sus representaciones:
    1. Seleccione los recursos, haga clic en ![descargar](/help/assets/assets/download-icon.svg) **[!UICONTROL Descargar]** y revise la lista de recursos seleccionados en el cuadro de diálogo **[!UICONTROL Descargar recursos]**. Haga clic en ![anular la selección](/help/assets/assets/Close.svg) junto a un recurso para anular su selección en la lista.
@@ -42,11 +45,15 @@ También puede hacer clic en la miniatura del recurso y, a continuación, hacer 
       > * **[!UICONTROL La opción Crear una carpeta independiente para cada recurso]** solo está disponible para los usuarios autenticados [!DNL Content Hub]. [!DNL Content Hub] permite que los usuarios públicos descarguen recursos como recursos individuales.
 
    1. Haga clic en **[!UICONTROL Descargar]** para descargar los recursos seleccionados y sus representaciones.
-      ![descargar varios recursos](/help/assets/assets/bulk-asset-download-content-hub.png)
+
+![descargar varios recursos](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 Puede seguir usando [!DNL Content Hub] mientras la descarga está en curso. Content Hub no interrumpe el flujo de trabajo durante el proceso de descarga.
+
 ![descargar varios recursos](/help/assets/assets/download-assets-notification-ch.png)
+
 Si el cuadro de diálogo **[!UICONTROL Descargar recursos]** muestra los recursos y las licencias, seleccione cada licencia en el panel izquierdo (sección [!UICONTROL Documentos de T&amp;C]) para obtener una vista previa de la licencia y mostrar los recursos seleccionados asociados con la licencia en el panel central del cuadro de diálogo. Después de revisar cada licencia, selecciona las representaciones, haz clic en **[!UICONTROL He leído y aceptado los términos y condiciones mencionados arriba]** y selecciona **[!UICONTROL Descargar]** para descargarlos.
+
 ![descargar varios recursos](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]
