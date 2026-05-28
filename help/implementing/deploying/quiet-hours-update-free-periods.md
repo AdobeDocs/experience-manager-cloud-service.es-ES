@@ -4,7 +4,7 @@ description: Aprenda a minimizar el impacto operativo de las actualizaciones aut
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 53900e778b64d1b818a9268bf9148db11414b7a8
+source-git-commit: d289256163dab0deaf67377af0e8f054b54b2ee4
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 3%
@@ -27,7 +27,7 @@ Las funciones de actualizar los periodos libres y las horas de inactividad se co
 
 Además, para obtener información sobre los períodos de mantenimiento automático programados de AEM as a Cloud Service, consulte la página [Plan de lanzamiento de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-## Administre con el asistente de AEM AI manage-ai-Assistant (disponibilidad limitada){#manage-ai-assistant}
+## Administre con el asistente de AEM AI manage-ai-Assistant (disponibilidad limitada) {#manage-ai-assistant}
 
 Además de la interfaz de Cloud Manager, puede administrar las horas tranquilas y actualizar los períodos libres mediante el Asistente de IA de AEM. El asistente puede enumerar las horas tranquilas actuales y actualizar los periodos libres, crear un nuevo periodo libre de actualización o un intervalo de horas silenciosas, y editar o eliminar los existentes, todo ello desde una solicitud en lenguaje natural. Dado que el asistente le guía a través de las opciones disponibles y las reglas que se aplican a medida que avanza, le ayuda a evitar configuraciones no válidas antes de que se produzcan. Muestra los límites relevantes en la conversación, incluido el máximo de tres períodos libres de actualización dentro de una ventana flotante de 365 días, el intervalo obligatorio de una semana entre períodos, el límite de 8 horas en horas tranquilas y la restricción en la programación durante los períodos de exclusión de mantenimiento planificados. Al igual que con la configuración manual, estas acciones se aplican por programa y solo están disponibles para los usuarios con la función Propietario empresarial o Administrador de implementación.
 
