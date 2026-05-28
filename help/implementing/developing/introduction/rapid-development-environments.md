@@ -4,7 +4,7 @@ description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: 099240530dd6cf80fc710fe83110f9876b6c1d49
+source-git-commit: b60f1a7416fda1844dc43e75fcd14bb90230cc51
 workflow-type: tm+mt
 source-wordcount: '5979'
 ht-degree: 3%
@@ -30,7 +30,7 @@ Una vez que los cambios se han probado en un RDE, pueden implementarse en un ent
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Puede ver vídeos adicionales que muestran [cómo configurarlo](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [cómo utilizarlo](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) y el [ciclo de vida de desarrollo](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) mediante RDE.
+Puede ver vídeos adicionales que muestran [cómo configurarlo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [cómo utilizarlo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) y el [ciclo de vida de desarrollo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) mediante RDE.
 
 ## Introducción {#introduction}
 
@@ -117,6 +117,7 @@ Después de agregar un RDE para el programa mediante Cloud Manager, puede intera
    ```
 
 >[!NOTE]
+>
 > El comando de inicio de sesión con la opción `--no-open` genera una dirección URL en el terminal en lugar de abrir el explorador predeterminado. Puede copiarlo y abrirlo con una ventana de **incógnito** de su explorador. Esta capacidad garantiza que la sesión actual en la ventana principal del explorador no se vea afectada, lo que le permite iniciar sesión con la cuenta y organización específicas necesarias para la tarea.
 
 El primer comando crea una nueva configuración de contexto de inicio de sesión, denominada `mycontext`, en el archivo de configuración `.aio` local (el archivo se crea si es necesario). El segundo comando establece el contexto `mycontext` como el contexto &quot;actual&quot;; es decir, el contexto predeterminado.
@@ -184,7 +185,7 @@ En entornos en los que ningún usuario puede ejecutar el comando setup de forma 
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Puede buscar su propio identificador de organización con el método documentado en [Ver su identificador de organización](https://experienceleague.adobe.com/es/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   * Puede buscar su propio identificador de organización con el método documentado en [Ver su identificador de organización](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. A continuación, configure su ID de programa:
 
@@ -200,7 +201,7 @@ En entornos en los que ningún usuario puede ejecutar el comando setup de forma 
 
    Estos pasos requieren que sea miembro del perfil de producto **Desarrollador - Cloud Service** de Cloud Manager. Consulte [Asignar integrantes del equipo a perfiles de producto de Cloud Manager - Asignar el perfil de producto del desarrollador](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) para obtener más información.
 
-Para obtener más información y demostración, vea el tutorial en vídeo [cómo configurar un RDE (06:24)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
+Para obtener más información y demostración, vea el tutorial en vídeo [cómo configurar un RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
 </details>
 
 ## Utilizar RDE al desarrollar una nueva función {#use-rde-while-developing-a-new-feature}
@@ -211,10 +212,9 @@ Adobe recomienda el siguiente flujo de trabajo para desarrollar una nueva funci�
 
 * Restablezca el RDE si lo ha utilizado otra característica y desea [restablecerlo a un estado predeterminado](#reset-the-rde). <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-in-cloud-manager) or by way of the [command line](#reset-the-rde-using-the-command-line). -->El restablecimiento tarda unos minutos y se elimina todo el contenido y código existentes. Puede utilizar el comando Estado de RDE para confirmar que el RDE está listo. El RDE vuelve con la versión más reciente del lanzamiento de AEM.
 
-  >[!IMPORTANT]
-  >
-  >Si los entornos de ensayo y producción no reciben actualizaciones automáticas de la versión de AEM y están detrás de la última versión, RDE puede ejecutar una versión diferente de AEM. Como resultado, es posible que el comportamiento del código en RDE no coincida con su funcionamiento en ensayo y producción. En ese caso, es importante realizar pruebas exhaustivas del código en el ensayo antes de implementarlo en la producción.
-
+>[!IMPORTANT]
+>
+>Si los entornos de ensayo y producción no reciben actualizaciones automáticas de la versión de AEM y están detrás de la última versión, RDE puede ejecutar una versión diferente de AEM. Como resultado, es posible que el comportamiento del código en RDE no coincida con su funcionamiento en ensayo y producción. En ese caso, es importante realizar pruebas exhaustivas del código en el ensayo antes de implementarlo en la producción.
 
 * Mediante la interfaz de línea de comandos de RDE, sincronice el código local con RDE. Puede instalar varios tipos de archivos, incluidos los siguientes:
 
@@ -278,7 +278,7 @@ Sin embargo, con una coordinación cuidadosa, es posible que más de un desarrol
 
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
 
-  Requiere que se realice un ```aio login```.
+  Requiere que se realice un `aio login`.
 
 ### Implementar en RDE {#deploy-to-rde}
 
@@ -529,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-Para obtener más información y demostración, vea el tutorial en vídeo [cómo usar comandos RDE (10:01)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+Para obtener más información y demostración, vea el tutorial en vídeo [cómo usar comandos RDE (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 
 ## Implementar en un RDE desde proveedores de Git externos {#deploy-to-an-rde-from-external-git-providers}
@@ -662,7 +662,7 @@ Puede restablecer el RDE y devolverlo a un estado predeterminado ejecutando lo s
 
 `aio aem:rde:reset`
 
-Este proceso suele tardar unos minutos y genera un informe de ```Environment reset.``` si se realiza correctamente o de ```Failed to reset the environment.``` si hay errores. Para obtener un resultado estructurado, consulte el capítulo sobre el resultado ```--json``` que aparece a continuación.
+Este proceso suele tardar unos minutos y genera un informe de `Environment reset.` si se realiza correctamente o de `Failed to reset the environment.` si hay errores. Para obtener un resultado estructurado, consulte el capítulo sobre el resultado `--json` que aparece a continuación.
 
 Utilice el [comando status](#check-the-status-of-the-rde) para comprobar si el entorno está listo de nuevo.
 
@@ -780,7 +780,7 @@ Para cancelar una eliminación pendiente y conservar una instantánea, ejecute:
 
 ## Comandos compatibles con la salida JSON {#commands-that-support-json-output}
 
-La mayoría de los comandos admiten el indicador global ```--json```, que suprime la salida de la consola y devuelve un json válido para procesarlo en los scripts. A continuación se muestran algunos comandos admitidos, con ejemplos de la salida json.
+La mayoría de los comandos admiten el indicador global `--json`, que suprime la salida de la consola y devuelve un json válido para procesarlo en los scripts. A continuación se muestran algunos comandos admitidos, con ejemplos de la salida json.
 
 ### Estado {#status}
 
@@ -1226,7 +1226,7 @@ Los desarrolladores de Forms pueden utilizar el entorno de desarrollo rápido Cl
 
 ## Tutorial de RDE {#rde-tutorial}
 
-Para obtener más información sobre RDE en AEM as a Cloud Service, vea el tutorial en vídeo que muestra [cómo configurarlo, cómo utilizarlo y el ciclo de vida de desarrollo (01:25)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/overview).
+Para obtener más información sobre RDE en AEM as a Cloud Service, vea el tutorial en vídeo que muestra [cómo configurarlo, cómo utilizarlo y el ciclo de vida de desarrollo (01:25)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview).
 
 ## Solución de problemas {#troubleshoot}
 
