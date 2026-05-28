@@ -6,10 +6,10 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 96c3ac3494fb726b36d413703ed010ec84a3b3dd
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 91%
+source-wordcount: '2063'
+ht-degree: 81%
 
 ---
 
@@ -21,25 +21,25 @@ ht-degree: 91%
 
 Puede exportar [Fragmentos de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md), creados en Adobe Experience Manager as a Cloud Service (AEM), a Adobe Target (Target). Luego pueden utilizarse como ofertas en actividades de Target para probar y personalizar experiencias a escala.
 
-Hay una opción disponible para exportar un fragmento de contenido a Adobe Target:
+A continuación se muestra la opción disponible para exportar un fragmento de contenido a Adobe Target:
 
 * JSON: Compatibilidad con entrega de contenido sin encabezado
 
 <!-- * GraphQL query ??? -->
 
-Para preparar la instancia para exportar fragmentos de contenido de AEM a Adobe Target, debe hacer lo siguiente:
+Para preparar la instancia para exportar fragmentos de contenido de AEM a Adobe Target, debe:
 
 * [Integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [Agregar la configuración de nube](#add-the-cloud-configuration)
 * [Agregar la configuración heredada](#add-the-legacy-configuration)
 
-Después, puede:
+Una vez hecho esto, puede:
 
 * [Exportar un fragmento de contenido a Adobe Target](#exporting-a-content-fragment-to-adobe-target)
 * [Usar los fragmentos de contenido en Adobe Target](#using-your-content-fragments-in-adobe-target)
 * Y también [Eliminar un fragmento de contenido ya exportado a Adobe Target](#deleting-a-content-fragment-already-exported-to-adobe-target)
 
-Los fragmentos de contenido se pueden exportar al espacio de trabajo predeterminado en Adobe Target o a espacios de trabajo definidos por el usuario para Adobe Target.
+Los fragmentos de contenido se pueden exportar al espacio de trabajo predeterminado de Adobe Target o a espacios de trabajo definidos por el usuario.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Los fragmentos de contenido se pueden exportar al espacio de trabajo predetermin
 
 >[!NOTE]
 >
->Los espacios de trabajo de Adobe Target se pueden utilizar para permitir a los miembros de una organización (grupo) crear y administrar ofertas y actividades solo para esta organización; sin dar acceso a otros usuarios. Por ejemplo, las organizaciones específicas de los países dentro de una preocupación mundial.
+>Los espacios de trabajo de Adobe Target se pueden utilizar para permitir a los miembros de una organización (grupo) crear y administrar ofertas y actividades solo para esta organización, sin dar acceso a otros usuarios. Por ejemplo, las organizaciones específicas de los países dentro de una preocupación mundial.
 
 ## Requisitos previos {#prerequisites}
 
@@ -67,10 +67,10 @@ Se requiere la siguiente acción:
 
 ## Agregar la configuración de nube {#add-the-cloud-configuration}
 
-Antes de exportar un fragmento, debe agregar la **Configuración de nube** para **Adobe Target** al fragmento o carpeta. Esto también le permite:
+Antes de exportar un fragmento, debes agregar la **Configuración de nube** para **Adobe Target** al fragmento o carpeta. Esto también le permite:
 
-* especificar las opciones de formato que se utilizarán para la exportación
-* seleccionar un espacio de trabajo de Target como destino
+* especifique las opciones de formato que se utilizarán para la exportación.
+* seleccione un espacio de trabajo de Target como destino.
 
 Las opciones requeridas se pueden seleccionar en **Properties** de la carpeta requerida; la especificación se hereda según sea necesario.
 
@@ -114,7 +114,7 @@ Puede configurar la configuración de nube para sincronizar segmentos desde Adob
 
 Utilice el siguiente procedimiento para crear una configuración de nube de Target en AEM:
 
-1. Vaya a **Cloud Services heredados** a través de la variable **Logotipo de AEM** > **Herramientas** > **Cloud Services** > **Cloud Services heredados**.
+1. Vaya a **Cloud Services heredados** a través de **AEM logo** > **Herramientas** > **Cloud Services** > **Cloud Services heredados**.
 Por ejemplo: ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    Se abre la página de información general de **Adobe Experience Cloud**.
@@ -164,7 +164,7 @@ Can this still occur?
 If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
 -->
 
-* **Use objetivos precisos:** De forma predeterminada, esta casilla de verificación está seleccionada. Si se selecciona, la configuración del servicio en la nube esperará a que el contexto se cargue antes de cargar el contenido. Véase la nota siguiente.
+* **Usar objetivos precisos:** De forma predeterminada, esta casilla de verificación está activada. Si se selecciona, la configuración del servicio en la nube esperará a que el contexto se cargue antes de cargar el contenido. Véase la nota siguiente.
 
 * **Sincronizar segmentos desde Adobe Target:** Seleccione esta opción para descargar los segmentos definidos en Target y utilizarlos en AEM. Seleccione esta opción cuando la propiedad Tipo de API sea REST, ya que los segmentos en línea no son compatibles y siempre necesita utilizar segmentos de Target. (El término de AEM de &quot;segmento&quot; equivale a la &quot;audiencia&quot; de Target).
 
@@ -244,7 +244,7 @@ Se crea el marco de trabajo. Para replicar el marco de trabajo en la instancia d
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=es).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -371,7 +371,7 @@ Para evitar estas situaciones, haga lo siguiente:
       * Es probable que la oferta se siga procesando, ya que el del fragmento de contenido se insertó en Target
       * Puede que cualquier referencia en el fragmento de contenido no funcione correctamente si también se eliminaron activos a los que se hace referencia en AEM.
 
-   * Por supuesto, cualquier modificación adicional en el fragmento de contenido es imposible, ya que ya no existe en AEM.
+   * Por supuesto, cualquier modificación adicional en el fragmento de contenido es imposible, ya que el fragmento de contenido ya no existe en AEM.
 
 ## Otros recursos {#further-resources}
 
@@ -385,6 +385,6 @@ Para obtener más información, consulte lo siguiente:
 
 * [Desarrollo de Adobe Target](https://developers.adobetarget.com/)
 
-* [Adobe Target: uso de fragmentos de contenido de AEM en actividades de Target para ayudar en la optimización o personalización](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=es)
+* [Adobe Target: Uso de fragmentos de contenido de AEM en actividades de Target para ayudar en la optimización o personalización](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=es)
 
-* [Adobe Target: información general sobre los fragmentos de experiencias y los fragmentos de contenido de AEM](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=es)
+* [Adobe Target: información general sobre fragmentos de contenido y fragmentos de experiencias de AEM](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=es)

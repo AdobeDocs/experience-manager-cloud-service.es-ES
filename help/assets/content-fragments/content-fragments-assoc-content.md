@@ -6,10 +6,10 @@ exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 96c3ac3494fb726b36d413703ed010ec84a3b3dd
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 43%
+source-wordcount: '297'
+ht-degree: 35%
 
 ---
 
@@ -29,13 +29,13 @@ Para los fragmentos de contenido de Adobe Experience Manager (AEM) as a Cloud Se
 >
 >Hay varios métodos para agregar [recursos visuales (p. ej., imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento y/o página.
 
-Para realizar la asociación, primero debe [agregar los recursos multimedia a una colección](/help/assets/manage-collections.md). Una vez hecho esto, puede hacer lo siguiente:
+Para realizar la asociación, primero debe [agregar los recursos multimedia a una colección](/help/assets/manage-collections.md). Una vez hecho esto, puede:
 
 1. Abrir el fragmento y seleccionar **Contenido asociado** en el panel lateral.
 
    ![Contenido asociado](assets/cfm-assoc-content-01.png)
 
-1. Dependiendo de si alguna colección ya se ha asociado o no, seleccione:
+1. Dependiendo de si ya se han asociado colecciones o no, seleccione:
 
    * **Asociar contenido**: esta es la primera colección asociada
    * **Asociar colección**: las colecciones asociadas ya están configuradas
@@ -52,7 +52,7 @@ Para realizar la asociación, primero debe [agregar los recursos multimedia a un
 
 ## Edición de contenido asociado {#editing-associated-content}
 
-Una vez asociada una colección, puede hacer lo siguiente:
+Una vez asociada una colección, puede:
 
 * **Quitar** la asociación.
 * **Agregar recursos** a una colección.
