@@ -26,9 +26,9 @@ Estas son las notas de la versión del editor universal del 28 de mayo de 2026.
 
 ## Novedades {#what-is-new}
 
-* Se ha agregado un nuevo botón a la barra de herramientas [ para obtener acceso a las propiedades de página de AEM.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
+* Se ha agregado un nuevo botón a la barra de herramientas [&#x200B; para obtener acceso a las propiedades de página de AEM.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
    * Esto lleva la funcionalidad de la anterior `aem-page-properties` [extensión](/help/implementing/universal-editor/extending.md) de forma nativa al editor universal.
-   * El botón solo se muestra cuando la página remota tiene una [conexión con el protocolo ](/help/implementing/universal-editor/component-definition.md#plugins) `aem` o `xwalk` y se puede resolver una ruta de acceso de página única desde el archivo editable actual.
+   * El botón solo se muestra cuando la página remota tiene una [conexión con el protocolo &#x200B;](/help/implementing/universal-editor/component-definition.md#plugins) `aem` o `xwalk` y se puede resolver una ruta de acceso de página única desde el archivo editable actual.
 
 ## Otras mejoras {#other-improvements}
 
