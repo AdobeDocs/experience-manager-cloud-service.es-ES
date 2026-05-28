@@ -4,7 +4,7 @@ description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: 1a920bd30f80dd9831c96a4ec100e097ca0bfb7b
+source-git-commit: 099240530dd6cf80fc710fe83110f9876b6c1d49
 workflow-type: tm+mt
 source-wordcount: '5979'
 ht-degree: 3%
@@ -24,12 +24,13 @@ Una vez que los cambios se han probado en un RDE, pueden implementarse en un ent
 > Los entornos de desarrollo rápido deben limitarse al desarrollo, el análisis de errores y las pruebas funcionales, y no están diseñados para procesar cargas de trabajo elevadas ni grandes cantidades de contenido.
 
 >[!NOTE]
+>
 > Póngase en contacto con los desarrolladores de RDE en el [canal de Discord](https://discord.com/channels/1131492224371277874/1245304281184079872) de Adobe. Siéntase libre de hacer cualquier pregunta o dar comentarios con respecto a los temas de RDE.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Puede ver vídeos adicionales que muestran [cómo configurarlo](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [cómo utilizarlo](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) y el [ciclo de vida de desarrollo](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) mediante RDE.
+Puede ver vídeos adicionales que muestran [cómo configurarlo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [cómo utilizarlo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) y el [ciclo de vida de desarrollo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) mediante RDE.
 
 ## Introducción {#introduction}
 
@@ -85,7 +86,7 @@ Después de agregar un RDE para el programa mediante Cloud Manager, puede intera
 
 >[!IMPORTANT]
 >
->Asegúrese de que tiene instalada la versión 20 de [Node y NPM](https://nodejs.org/es/download/) para Adobe I/O (AIO) CLI y los complementos relacionados para que funcionen correctamente.
+> Asegúrese de que tiene instalada la versión 20 de [Node y NPM](https://nodejs.org/es/download/) para Adobe I/O (AIO) CLI y los complementos relacionados para que funcionen correctamente.
 
 
 1. Instale las herramientas CLI de AIO según este [procedimiento](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/tools/cli-install).
@@ -115,15 +116,15 @@ Después de agregar un RDE para el programa mediante Cloud Manager, puede intera
    aio login --no-open
    ```
 
-   >[!NOTE]
-   > El comando de inicio de sesión con la opción `--no-open` genera una dirección URL en el terminal en lugar de abrir el explorador predeterminado. Puede copiarlo y abrirlo con una ventana de **incógnito** de su explorador. Esta capacidad garantiza que la sesión actual en la ventana principal del explorador no se vea afectada, lo que le permite iniciar sesión con la cuenta y organización específicas necesarias para la tarea.
+>[!NOTE]
+> El comando de inicio de sesión con la opción `--no-open` genera una dirección URL en el terminal en lugar de abrir el explorador predeterminado. Puede copiarlo y abrirlo con una ventana de **incógnito** de su explorador. Esta capacidad garantiza que la sesión actual en la ventana principal del explorador no se vea afectada, lo que le permite iniciar sesión con la cuenta y organización específicas necesarias para la tarea.
 
-   El primer comando crea una nueva configuración de contexto de inicio de sesión, denominada `mycontext`, en el archivo de configuración `.aio` local (el archivo se crea si es necesario). El segundo comando establece el contexto `mycontext` como el contexto &quot;actual&quot;; es decir, el contexto predeterminado.
+El primer comando crea una nueva configuración de contexto de inicio de sesión, denominada `mycontext`, en el archivo de configuración `.aio` local (el archivo se crea si es necesario). El segundo comando establece el contexto `mycontext` como el contexto &quot;actual&quot;; es decir, el contexto predeterminado.
 
-   Con esta configuración en su lugar, el comando login almacena automáticamente los tokens de inicio de sesión en el contexto `mycontext`, por lo que lo mantiene local.
+Con esta configuración en su lugar, el comando login almacena automáticamente los tokens de inicio de sesión en el contexto `mycontext`, por lo que lo mantiene local.
 
-   Se pueden administrar varios contextos manteniendo las configuraciones locales en varias carpetas. Alternativamente, también es posible configurar varios contextos dentro de un solo archivo de configuración y cambiar entre ellos cambiando el contexto &quot;actual&quot;.
-   </details>
+Se pueden administrar varios contextos manteniendo las configuraciones locales en varias carpetas. Alternativamente, también es posible configurar varios contextos dentro de un solo archivo de configuración y cambiar entre ellos cambiando el contexto &quot;actual&quot;.
+</details>
 
 1. Configure el complemento RDE para utilizar su organización, programa y entorno. El siguiente comando setup proporciona al usuario de forma interactiva una lista de los programas de su organización y muestra los entornos de RDE de ese programa para elegir.
 
@@ -183,7 +184,7 @@ En entornos en los que ningún usuario puede ejecutar el comando setup de forma 
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Puede buscar su propio identificador de organización con el método documentado en [Ver su identificador de organización](https://experienceleague.adobe.com/es/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   * Puede buscar su propio identificador de organización con el método documentado en [Ver su identificador de organización](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. A continuación, configure su ID de programa:
 
@@ -199,7 +200,7 @@ En entornos en los que ningún usuario puede ejecutar el comando setup de forma 
 
    Estos pasos requieren que sea miembro del perfil de producto **Desarrollador - Cloud Service** de Cloud Manager. Consulte [Asignar integrantes del equipo a perfiles de producto de Cloud Manager - Asignar el perfil de producto del desarrollador](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) para obtener más información.
 
-Para obtener más información y demostración, vea el tutorial en vídeo [cómo configurar un RDE (06:24)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
+Para obtener más información y demostración, vea el tutorial en vídeo [cómo configurar un RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
 </details>
 
 ## Utilizar RDE al desarrollar una nueva función {#use-rde-while-developing-a-new-feature}
@@ -528,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-Para obtener más información y demostración, vea el tutorial en vídeo [cómo usar comandos RDE (10:01)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+Para obtener más información y demostración, vea el tutorial en vídeo [cómo usar comandos RDE (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 
 ## Implementar en un RDE desde proveedores de Git externos {#deploy-to-an-rde-from-external-git-providers}
@@ -626,10 +627,10 @@ El siguiente ejemplo ilustra cómo rastrear el nivel de creación, con un paquet
 >[!TIP]
 >
 >Si ve el error `RDECLI:UNEXPECTED_API_ERROR` al reproducir con los comandos de registro para el servicio de creación, restablezca el entorno e inténtelo de nuevo. Este error se produce si la última operación de restablecimiento fue antes de finales de mayo de 2024.
->
->```
->aio aem:rde:reset
->```
+
+```
+aio aem:rde:reset
+```
 
 Consulte `aio aem:rde:logs --help` para ver el conjunto completo de opciones de línea de comandos.
 
@@ -1225,7 +1226,7 @@ Los desarrolladores de Forms pueden utilizar el entorno de desarrollo rápido Cl
 
 ## Tutorial de RDE {#rde-tutorial}
 
-Para obtener más información sobre RDE en AEM as a Cloud Service, vea el tutorial en vídeo que muestra [cómo configurarlo, cómo utilizarlo y el ciclo de vida de desarrollo (01:25)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/overview).
+Para obtener más información sobre RDE en AEM as a Cloud Service, vea el tutorial en vídeo que muestra [cómo configurarlo, cómo utilizarlo y el ciclo de vida de desarrollo (01:25)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview).
 
 ## Solución de problemas {#troubleshoot}
 
@@ -1248,10 +1249,10 @@ También puede confirmar que tiene esta función de desarrollador si inicia sesi
 >[!TIP]
 >
 >Si ve el error `Warning: cloudmanager:* is not a aio command.`, debe instalar [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) ejecutando el siguiente comando:
->
->```
->aio plugins:install @adobe/aio-cli-plugin-cloudmanager
->```
+
+```
+aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+```
 
 Compruebe que el inicio de sesión se haya completado correctamente ejecutando lo siguiente:
 
