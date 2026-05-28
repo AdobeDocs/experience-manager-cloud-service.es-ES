@@ -3,9 +3,9 @@ title: Migración de código con asistencia de IA a AEM as a Cloud Service
 description: Descripción general de la aptitud de migración de AEM Cloud y MCP, una solución de agente de IA que lee los hallazgos de BPA y migra el código de AEM 6.x a AEM as a Cloud Service, patrón a patrón.
 feature: Migration
 role: Developer
-source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
+source-git-commit: 98298a088aa7c65826f6dbad2f4d16095e074524
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '756'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ La solución **AEM Cloud Migration** es un conjunto de herramientas basadas en a
 
 El siguiente vídeo de demostración proporciona una guía completa rápida de la solución de migración a AEM Cloud y se incluye como referencia.
 
->[!VIDEO](https://publish.tv.adobe.com/bucket/7642/category/12553/video/3491438/)
+>[!VIDEO](https://video.tv.adobe.com/v/3491438?learn=on)
 
 La solución consta de dos componentes:
 
