@@ -6,9 +6,9 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
 workflow-type: tm+mt
-source-wordcount: '2640'
+source-wordcount: '2670'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Las organizaciones idean un modelo de metadatos que mejora la detección de recursos, el uso, la interoperabilidad, etc. La aplicación correcta de metadatos es sacrosanta para mantener flujos de trabajo y procesos impulsados por metadatos. Para adherirse a la estrategia y los estándares de metadatos de toda la organización, puede utilizar esquemas de metadatos que ayuden a los usuarios de DAM a alinearse. [!DNL Adobe Experience Manager] permite métodos fáciles y flexibles para crear, mantener y aplicar esquemas de metadatos.
@@ -93,7 +93,7 @@ La pestaña **[!UICONTROL Generar formulario]** enumera los elementos de formula
 | -------------------------------- | ----------------------------------------------------------------------------------- |
 | [!UICONTROL Encabezado de sección] | Añada un encabezado de sección para una lista de componentes comunes. |
 | [!UICONTROL Texto de una sola línea] | Agregue una propiedad de texto de una sola línea. Se almacena como una cadena. |
-| [!UICONTROL Texto con varios valores] | Agregue una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
+| [!UICONTROL Texto con varios valores] | Añada una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
 | [!UICONTROL Número] | Añada un componente de número. |
 | [!UICONTROL Fecha] | Añada un componente de fecha. |
 | [!UICONTROL Menú Desplegable] | Añada una lista desplegable. |
@@ -129,7 +129,7 @@ Para asegurarse de que el componente se muestra correctamente en el formulario d
 * **Marcador de posición**: utilice esta propiedad para especificar el texto de marcador de posición relevante con respecto a la propiedad de metadatos.
 * **Requerido**: utilice esta propiedad para marcar una propiedad de metadatos como obligatoria en la página de propiedades.
 * **Deshabilitar edición**: utilice esta propiedad para no permitir ninguna edición en una propiedad de la página de propiedades.
-* **Mostrar campo vacío en solo lectura**: marque esta propiedad para mostrar una propiedad de metadatos en la página de propiedades aunque no tenga valor. De forma predeterminada, cuando una propiedad de metadatos no tiene valor, no se muestra en la página de propiedades.
+* **Mostrar campo vacío en solo lectura**: marque esta propiedad para mostrar una propiedad de metadatos en la página de propiedades aunque no tenga valor. De forma predeterminada, cuando una propiedad de metadatos no tiene valor, no aparece en la página de propiedades.
 * **Mostrar lista ordenada**: utilice esta propiedad para mostrar una lista ordenada de opciones.
 * **Opciones**: utilice esta propiedad para especificar opciones en una lista.
 * **Descripción**: utilice esta propiedad para agregar una descripción breve para el componente de metadatos.
@@ -138,7 +138,7 @@ Para asegurarse de que el componente se muestra correctamente en el formulario d
 
 >[!NOTE]
 >
->El componente [!UICONTROL Campo oculto] no incluye estos atributos. En su lugar, incluye propiedades como los atributos Nombre, Valor, Etiqueta de campo y Descripción. Los valores del componente Campo oculto se envían como parámetro POST cada vez que se guarda el recurso. No se puede guardar como metadatos para el recurso.
+>El componente [!UICONTROL Campo oculto] no incluye estos atributos. En su lugar, incluye propiedades como los atributos Nombre, Valor, Etiqueta de campo y Descripción. Los valores del componente Campo oculto se envían como parámetro POST cada vez que se guarda el recurso. No se guarda como metadatos para el recurso.
 
 Si selecciona la opción **[!UICONTROL Obligatorio]**, puede buscar recursos que no tengan metadatos obligatorios. En el panel **[!UICONTROL Filtros]**, expanda el predicado **[!UICONTROL Validación de metadatos]** y seleccione la opción **[!UICONTROL No válido]**. Los resultados de la búsqueda muestran los recursos que carecen de metadatos obligatorios configurados a través del formulario de esquema.
 
@@ -189,7 +189,7 @@ Puede utilizar una plantilla existente para un tipo MIME diferente. Por ejemplo,
 
 En este caso, cree un nodo en `/etc/dam/metadataeditor/mimetypemappings` en el repositorio de CRX. Especifique un nombre para el nodo y defina las siguientes propiedades:
 
-| Nombre | Descripción | Tipo | Valor  |
+| Nombre | Descripción | Tipo | Valor |
 |------|-------------|------|-------|
 | `exposedmimetype` | Nombre del formulario existente que se debe asignar | `String` | `image/jpeg` |
 | `mimetypes` | Lista de tipos MIME que utilizan el formulario definido en el atributo `exposedmimetype` | `String` | `image/png` |

@@ -7,9 +7,9 @@ feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
 workflow-type: tm+mt
-source-wordcount: '4283'
+source-wordcount: '4336'
 ht-degree: 10%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 10%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Este artículo describe cómo administrar y editar recursos en [!DNL Adobe Experience Manager Assets]. Para administrar [!DNL Content Fragments], vea [[!DNL Content Fragments]](content-fragments/content-fragments.md) recursos.
@@ -30,7 +30,7 @@ Al organizar una colección de recursos (por ejemplo, todas las `Nature` imágen
 >[!NOTE]
 >
 >* No se admite el uso compartido de una carpeta Assets del tipo `sling:OrderedFolder` al compartirla en Experience Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Ordenado] al crear una carpeta.
->* Experience Manager no permite el uso de la palabra `subassets` como nombre de carpeta. Es una palabra clave reservada para nodos que contienen subrecursos para recursos compuestos
+>* Experience Manager no permite el uso de la palabra `subassets` como nombre de carpeta. Es una palabra clave reservada para nodos que contienen subrecursos para recursos compuestos.
 
 1. Vaya al lugar de la carpeta de recursos digitales en el que desea crear una carpeta. En el menú, haga clic en **[!UICONTROL Crear]**. Seleccione **[!UICONTROL Nueva carpeta]**.
 1. En el campo **[!UICONTROL Título]**, proporcione un nombre de carpeta. De forma predeterminada, DAM utiliza el título que ha proporcionado como nombre de la carpeta. Una vez creada la carpeta, puede anular el valor predeterminado y especificar otro nombre de carpeta.
@@ -242,9 +242,9 @@ Se conservan las demás propiedades e información de metadatos. No se crea una 
 
    * cq5dam
 
-   Para configurar las dimensiones de representación de una imagen en el nivel de detalle del recurso, superponga el `renditionpicker` nodo (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) y configure el valor de la propiedad de anchura. Configure el **[!UICONTROL tamaño de la propiedad (Long) en KB]** en lugar de la anchura para personalizar la representación en la página de detalles del recurso según el tamaño de la imagen. En el caso de la personalización basada en el tamaño, la propiedad `preferOriginal` asigna preferencia al original si el tamaño de la representación coincidente es mayor que el del original.
+   Para configurar las dimensiones de representación de una imagen en el nivel de detalle del recurso, superponga el `renditionpicker` nodo (`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) y configure el valor de la propiedad de anchura. Configure el **[!UICONTROL tamaño de la propiedad (Long) en KB]** en lugar de la anchura para personalizar la representación en la página de detalles del recurso según el tamaño de la imagen. En el caso de la personalización basada en el tamaño, la propiedad `preferOriginal` asigna preferencia al original si el tamaño de la representación coincidente es mayor que el del original.
 
-   Del mismo modo, puede personalizar la imagen de la página Anotación superponiendo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
+   Del mismo modo, puede personalizar la imagen de la página Anotación superponiendo `/libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
    <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
@@ -306,7 +306,7 @@ Conozca las siguientes limitaciones y sugerencias relacionadas con la publicaci�
 * La opción [!UICONTROL Administrar publicación] solo está disponible para las cuentas de usuario que tienen permisos de replicación.
 * Al cancelar la publicación de un recurso complejo, cancele la publicación solo del recurso. Evite cancelar la publicación de las referencias, ya que otros recursos publicados pueden hacer referencia a ellas.
 * Las carpetas vacías no se publican.
-* Si publica un recurso en proceso, solo se publica el contenido original. Faltan las representaciones. Espere a que se complete el procesamiento y, a continuación, publique o vuelva a publicar el recurso una vez finalizado el procesamiento.
+* Si publica un recurso que se está procesando, solo se publica el contenido original. Faltan las representaciones. Espere a que se complete el procesamiento y, a continuación, publique o vuelva a publicar el recurso una vez finalizado el procesamiento.
 
 ## Grupo de usuarios cerrado {#closed-user-group}
 
@@ -660,7 +660,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Para obtener más información, consulte cómo [examinar recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#browse-search-preview-assets) y [cómo utilizar Adobe Asset Link](https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Para obtener más información, consulte cómo [examinar recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) y [cómo utilizar Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
 **Consulte también**
 
