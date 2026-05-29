@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo buscar recursos en  [!DNL Content 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 02f28aef708166b210d5508e714352a800114c14
+source-git-commit: 0ee0778243448e3ff9f6f5b8fb1097fc9b6bec27
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 1%
@@ -158,7 +158,7 @@ Siga estos pasos para habilitar o deshabilitar la Búsqueda por IA en Content Hu
         </ul>
       </td>
      </tr>
-     <!--<tr>
+     <tr>
       <td>Subject</td>
       <td>Classification of assets based on their theme. For example, colorful, hiking, outdoors.</td>
       <td>NA</td>
@@ -173,7 +173,7 @@ Siga estos pasos para habilitar o deshabilitar la Búsqueda por IA en Content Hu
         </ul>
       </td>
      </tr>    
-     <!--<tr>
+     <tr>
       <td>Asset ID</td>
       <td>Unique number that identifies the asset.</td>
       <td>NA</td>
