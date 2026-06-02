@@ -7,10 +7,10 @@ level: Beginner
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: true
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: df57b10ad1ed7eb8fe92f6f5f4e45ed282afff8d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 99%
+source-wordcount: '1033'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 ![integración de datos](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] es un software de administración de la relación con los clientes (CRM) y planificación de recursos empresariales (ERP) que proporciona soluciones empresariales para crear y administrar cuentas de clientes, contactos, posibles clientes, oportunidades y casos. La integración de datos de [[!DNL Experience Manager Forms] &#x200B;](data-integration.md) proporciona una configuración de servicio en la nube de OData para integrar Forms con servidores de [!DNL Microsoft Dynamics] en línea y locales. Esto permite crear el modelo de datos de formulario (FDM) en función de las entidades, atributos y servicios definidos en el servicio de [!DNL Microsoft Dynamics]. El modelo de datos de formulario se puede utilizar para crear formularios adaptables que interactúen con el servidor [!DNL Microsoft Dynamics] para habilitar los flujos de trabajo empresariales. Por ejemplo:
+[!DNL Microsoft Dynamics] es un software de administración de la relación con los clientes (CRM) y planificación de recursos empresariales (ERP) que proporciona soluciones empresariales para crear y administrar cuentas de clientes, contactos, posibles clientes, oportunidades y casos. La integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md) proporciona una configuración de servicio en la nube de OData para integrar Forms con servidores de [!DNL Microsoft Dynamics] en línea y locales. Esto permite crear el modelo de datos de formulario (FDM) en función de las entidades, atributos y servicios definidos en el servicio de [!DNL Microsoft Dynamics]. El modelo de datos de formulario se puede utilizar para crear formularios adaptables que interactúen con el servidor [!DNL Microsoft Dynamics] para habilitar los flujos de trabajo empresariales. Por ejemplo:
 
 * consultar datos en el servidor de [!DNL Microsoft Dynamics] y rellenar automáticamente formularios adaptables;
 * escribir datos en [!DNL Microsoft Dynamics] sobre el envío de formularios adaptables;
@@ -38,7 +38,7 @@ When the package is installed, the following entities and services are available
 -->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  El servicio en la nube de OData de MS Dynamics (servicio OData) también está disponible con otros modos de ejecución. Para obtener más información sobre la configuración de los modos de ejecución de una  [!DNL Experience Manager] instancia, consulte [Modos de ejecución](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=es#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  El servicio en la nube de OData de MS Dynamics (servicio OData) también está disponible con otros modos de ejecución. Para obtener más información sobre la configuración de los modos de ejecución de una  [!DNL Experience Manager] instancia, consulte [Modos de ejecución](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=es#runmodes).
 
 AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
 
@@ -53,7 +53,7 @@ Antes de comenzar a configurar [!DNL Microsoft Dynamics], asegúrese de lo sigui
    * [!DNL Microsoft Dynamics] 365 local
    * [!DNL Microsoft Dynamics] 2016 local
 
-* [Ha registrado la aplicación del servicio en línea de  [!DNL Microsoft Dynamics]  con  [!DNL Microsoft Azure]  Active Directory](https://docs.microsoft.com/es-es/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Tome nota de los valores del ID de cliente (también denominado ID de aplicación) y del secreto de cliente del servicio registrado. Estos valores se utilizan para [configurar Cloud Service para el servicio de  [!DNL Microsoft Dynamics] &#x200B;](#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [Ha registrado la aplicación del servicio en línea de  [!DNL Microsoft Dynamics]  con  [!DNL Microsoft Azure]  Active Directory](https://docs.microsoft.com/es-es/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Tome nota de los valores del ID de cliente (también denominado ID de aplicación) y del secreto de cliente del servicio registrado. Estos valores se utilizan para [configurar Cloud Service para el servicio de  [!DNL Microsoft Dynamics] ](#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## Establecer la URL de respuesta para la aplicación de [!DNL Microsoft Dynamics] registrada {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -106,7 +106,7 @@ Haga lo siguiente para registrar un cliente de OAuth en el equipo de los Servici
    Donde:
 
    * `Client-ID` es un ID de cliente que puede generar con cualquier generador GUID.
-   * `redirect-uri` es la dirección URL del servicio en la nube de OData de [!DNL Microsoft Dynamics] en [!DNL Experience Manager Forms]. El servicio en la nube predeterminado instalado con [!DNL Experience Manager Forms] se implementa en la siguiente URL:
+   * `redirect-uri` es la dirección URL del servicio en la nube de OData [!DNL Microsoft Dynamics] en [!DNL Experience Manager Forms]. El servicio en la nube predeterminado instalado con [!DNL Experience Manager Forms] se implementa en la siguiente URL:
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Ejecute el siguiente comando para conceder acceso desde el equipo AD FS:
@@ -133,8 +133,8 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 
    Consulte [Configurar carpetas para configuraciones de servicios en la nube](#cloud-folder) para obtener información sobre la creación y configuración de una carpeta para configuraciones de servicios en la nube.
 
-1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio OData]** en la lista desplegable **[!UICONTROL Tipo de servicio]**. También puede examinar y seleccionar una imagen en miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
-En la pestaña **[!UICONTROL Configuración de autenticación]**:
+1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente para crear la configuración de Data Source]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio OData]** de la lista desplegable **[!UICONTROL Tipo de servicio]**; opcionalmente, busque y seleccione una imagen en miniatura para la configuración, y seleccione **[!UICONTROL Siguiente]**.
+En la ficha **[!UICONTROL Configuración de autenticación]**:
 
    1. Introduzca el valor del campo **[!UICONTROL Raíz del servicio]**. Vaya a la instancia de Dynamics y luego a **[!UICONTROL Recursos para desarrolladores]** para ver el valor del campo Raíz del servicio. por ejemplo, https://&lt;tenant-name>/api/data/v9.1/
 
@@ -184,3 +184,4 @@ Para obtener más información sobre la creación y el uso de modelos de datos d
 ## Artículos relacionados
 
 {{af-submit-action}}
+
