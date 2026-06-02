@@ -5,9 +5,9 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+source-git-commit: f5df62bfdd1159038a8e511152c66b62301ff54b
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1411'
 ht-degree: 93%
 
 ---
@@ -23,7 +23,7 @@ Adobe Experience Manager (AEM) proporciona flexibilidad tanto en la entrega de c
 
 Use [Edge Delivery Services](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/overview) para crear contenido de forma rápida e iterativa y con una alta velocidad, o use el servicio de publicación tradicional para un modelo de publicación empresarial sólido. Cualquier enfoque permite a las organizaciones ofrecer experiencias digitales excepcionales de la manera que mejor se adapte a sus necesidades. Para comenzar con Edge Delivery Services, explore la [Información general de Edge Delivery Services](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/overview) y para obtener más información sobre las opciones modernas de creación, consulte la [Guía de creación](https://www.aem.live/docs/authoring-guide).
 
-La incorporación es el proceso durante el cual un administrador designado del sistema configura AEM as a Cloud Service para su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones en función de sus responsabilidades laborales. Como resultado, cada miembro puede iniciar sesión y acceder a sus recursos de AEM as a Cloud Service.
+La incorporación es el proceso durante el cual un administrador designado del sistema configura AEM as a Cloud Service para su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones según sus responsabilidades laborales. Como resultado, cada miembro puede iniciar sesión y acceder a sus recursos de AEM as a Cloud Service.
 
 ![El recorrido de incorporación](/help/journey-onboarding/assets/onboarding-journey.png).
 
@@ -115,3 +115,4 @@ Si quiere saber lo que recomienda Adobe sobre cómo incorporar su equipo a su nu
 Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
 * [Incorporación en AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding): en este breve vídeo se ofrece información general del proceso de incorporación de Cloud Service para AEM.
+
