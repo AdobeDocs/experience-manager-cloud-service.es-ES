@@ -6,10 +6,10 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 96c3ac3494fb726b36d413703ed010ec84a3b3dd
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 82%
+source-wordcount: '1327'
+ht-degree: 77%
 
 ---
 
@@ -61,7 +61,7 @@ Los fragmentos de contenido permiten lo siguiente:
    * Puede confiar en que el contenido multimedia asociado se seleccione en función de la relevancia.
    * Pueden crear variaciones de contenido ad hoc al instante garantizando al mismo tiempo que las variaciones siguen administradas de forma centralizada en el fragmento.
 
-## Adición de un fragmento de contenido a la página       {#adding-a-content-fragment-to-your-page}
+## Adición de un fragmento de contenido a la página {#adding-a-content-fragment-to-your-page}
 
 1. Abra la página para editarla.
 2. Añada el componente **Fragmento de contenido**, bien desde el navegador **Componentes** o con **Insertar nuevo componente**.
@@ -114,7 +114,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
    * Atributo de **ID de HTML** que se aplicará al componente.
 
-### Conexión rápida con el editor de fragmentos       {#quick-connection-to-fragment-editor}
+### Conexión rápida con el editor de fragmentos {#quick-connection-to-fragment-editor}
 
 Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono **Editar** de la barra de herramientas de componentes. Esto le permitirá [editar y gestionar el fragmento de contenido](/help/sites-cloud/administering/content-fragments/overview.md).
 
@@ -122,7 +122,7 @@ Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono
 >
 >Como siempre, editar el origen del fragmento afectará a todas las páginas que hacen referencia a dicho fragmento de contenido.
 
-### Añadir contenido intermedio       {#adding-in-between-content}
+### Añadir contenido intermedio {#adding-in-between-content}
 
 Cuando se agrega un fragmento de contenido específico a la página, aparece un marcador de posición **Arrastre los componentes aquí** entre cada párrafo HTML (y en la parte superior/inferior) del fragmento.
 
@@ -158,9 +158,9 @@ Para el contenido intermedio puede hacer lo siguiente:
 >
 >* Sin embargo, en caso de que exista conflicto entre las dos estructuras de párrafo, el contenido intermedio no se muestra (aunque siga presente internamente).
 
-### Uso de contenido asociado       {#using-associated-content}
+### Uso de contenido asociado {#using-associated-content}
 
-Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado es en realidad una fuente especial de contenido para [contenido intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos están disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado es en realidad una fuente especial de contenido para [contenido intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-a
 >
 >Si tiene varios fragmentos de contenido en la página, la pestaña **Contenido asociado** mostrará los recursos oportunos para todos los fragmentos.
 
-Una vez que haya añadido un fragmento con contenido asociado a la página, se abrirá una nueva pestaña (**Contenido asociado**) en el panel lateral.
+Una vez que haya agregado un fragmento con contenido asociado a la página, se abrirá una nueva pestaña (**Contenido asociado**) en el panel lateral.
 
 Desde aquí podrá arrastrar los recursos a la ubicación requerida (a un componente existente o a la posición que le interese donde se creará el componente correspondiente):
 
@@ -180,7 +180,7 @@ Desde aquí podrá arrastrar los recursos a la ubicación requerida (a un compon
 
 Si se insertan recursos (por ejemplo, imágenes) en el fragmento en sí (como [fragmentos de medios mixtos](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), las opciones para modificarlos en el editor de páginas son limitadas.
 
-Por ejemplo, para una imagen puede
+Por ejemplo, para una imagen puede:
 
 * Recortar, rotar o voltear la imagen.
 * Añadir un título o texto alternativo.

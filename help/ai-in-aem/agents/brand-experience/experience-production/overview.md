@@ -4,10 +4,10 @@ description: Descubra cómo Experience Production Agent en AEM le ayuda a aceler
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 4%
+source-wordcount: '459'
+ht-degree: 3%
 
 ---
 
@@ -22,6 +22,7 @@ El agente proporciona los siguientes trabajos:
 
 * [Actualización de contenido](#content-update)
 * [Creación de contenido](#content-create)
+* [Trabajo de Figma a fragmentos de contenido visual](#figma-to-visual-content-fragments)
 * [Creación de formularios](#form-creation)
 * [Creación de comunicaciones](#communications-creation)
 
@@ -42,6 +43,18 @@ El trabajo [Creación de contenido](/help/ai-in-aem/agents/brand-experience/expe
 >[!NOTE]
 >
 >El trabajo de creación de contenido está actualmente en disponibilidad limitada.
+>
+>Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
+### Trabajo de Figma a fragmentos de contenido visual {#figma-to-visual-content-fragments}
+
+El trabajo de [Figma a fragmentos de contenido visual](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) importa diseños de Figma a modelos de contenido AEM, fragmentos de contenido y plantillas de HTML.
+
+<!-- CQDOC-23232 - remove when GA -->
+
+>[!NOTE]
+>
+>El trabajo de Figma a fragmentos de contenido visuales está actualmente en disponibilidad limitada.
 >
 >Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 

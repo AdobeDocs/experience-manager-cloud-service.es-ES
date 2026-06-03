@@ -5,9 +5,9 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2071'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ Las etiquetas inteligentes son palabras clave que no solo aparecen en el texto, 
 
 Por ejemplo, las palabras ordenadas alfabéticamente en un diccionario son más fáciles de encontrar que las dispersas aleatoriamente. El etiquetado tiene un propósito similar. Organiza los recursos según la taxonomía empresarial, asegurándose de que los más relevantes aparezcan en los resultados de búsqueda. Por ejemplo, un fabricante de automóviles puede etiquetar imágenes de automóviles con nombres de modelos, de modo que solo se muestren imágenes relevantes al diseñar una campaña promocional. Tanto si se etiquetan como &quot;corredores&quot; o &quot;zapatillas de deporte&quot;, los usuarios no tienen que preocuparse por errores tipográficos, variaciones ortográficas o términos de búsqueda alternativos: las etiquetas inteligentes las reconocen todas.
 
-En segundo plano, la funcionalidad utiliza el marco artificial inteligente de [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) y aplica automáticamente las etiquetas inteligentes a los recursos cargados (de forma predeterminada), junto con el texto alineado con la taxonomía empresarial.
+En segundo plano, la funcionalidad usa el marco artificial inteligente de [Adobe AI](https://business.adobe.com/ai/adobe-genai.html), que aplica automáticamente las etiquetas inteligentes a los recursos cargados (de forma predeterminada) junto con el texto alineado con la taxonomía empresarial.
 
 ## Requisitos previos y configuración {#smart-tags-prereqs-config}
 
@@ -28,7 +28,7 @@ Etiquetas inteligentes se aprovisiona automáticamente para [!DNL Adobe Experien
 
 ## Flujo de trabajo Etiquetas inteligentes {#smart-tags-workflow}
 
-El etiquetado inteligente con tecnología de [!DNL Adobe AI] utiliza modelos de inteligencia artificial para analizar el contenido y agregar etiquetas a los recursos. Esto reduce el tiempo para que los usuarios de DAM entreguen experiencias enriquecidas a sus clientes. Las etiquetas inteligentes se muestran en orden descendente de [puntuación de confianza](#confidence-score) en las propiedades del recurso.
+El etiquetado inteligente con tecnología [!DNL Adobe AI] utiliza modelos de inteligencia artificial para analizar el contenido y agregar etiquetas a los recursos, lo que reduce el tiempo para que los usuarios de DAM entreguen experiencias enriquecidas a sus clientes. Las etiquetas inteligentes se muestran en orden descendente de [puntuación de confianza](#confidence-score) en las propiedades del recurso.
 
 * **Recursos basados en imágenes**
 En el caso de las imágenes, las etiquetas inteligentes se basan en algún aspecto visual. Las imágenes en muchos formatos se etiquetan con los servicios de contenido inteligente. Las etiquetas inteligentes se aplican a los [tipos de archivo compatibles](#supported-file-formats) que generan representaciones en formato JPG y PNG.
@@ -36,7 +36,7 @@ En el caso de las imágenes, las etiquetas inteligentes se basan en algún aspec
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
 * **Recursos basados en vídeo**
-Para los recursos basados en vídeo, el etiquetado está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. Del mismo modo que las etiquetas basadas en imagen y texto, los vídeos también se etiquetan automáticamente al cargar vídeos nuevos o volver a procesar los existentes. [!DNL Adobe AI] genera dos conjuntos de etiquetas para un vídeo: un conjunto corresponde a objetos, escenas y atributos de ese vídeo, mientras que el otro conjunto se relaciona con acciones como beber, correr y trotar. Compruebe también [exclusión del etiquetado inteligente de vídeos](#opt-out-video-smart-tagging).
+Para los recursos basados en vídeo, el etiquetado está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. Al igual que con las etiquetas basadas en imágenes y texto, los vídeos también se etiquetan automáticamente al cargar vídeos nuevos o al volver a procesar los existentes. [!DNL Adobe AI] genera dos conjuntos de etiquetas para un vídeo: un conjunto corresponde a objetos, escenas y atributos de ese vídeo y el otro conjunto se relaciona con acciones como beber, correr y trotar. Compruebe también [exclusión del etiquetado inteligente de vídeos](#opt-out-video-smart-tagging).
 
 * **Recursos basados en texto**
 Para los recursos admitidos, [!DNL Experience Manager] ya extrae el texto, que se indiza y se usa para buscar los recursos. Sin embargo, las etiquetas inteligentes basadas en palabras clave en el texto proporcionan una faceta de búsqueda dedicada, estructurada y de mayor prioridad. Esto último ayuda a mejorar la detección de recursos en comparación con un índice de búsqueda.

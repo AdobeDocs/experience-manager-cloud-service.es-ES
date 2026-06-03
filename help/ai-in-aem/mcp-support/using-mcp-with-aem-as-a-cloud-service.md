@@ -4,9 +4,9 @@ description: Aprenda a utilizar el protocolo de contexto de modelo con AEM as a 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 65d70f5cbd0eea618e5de13d8627a5ae87b0089d
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1891'
 ht-degree: 0%
 
 ---
@@ -47,10 +47,11 @@ AEM expone los servidores MCP como extremos HTTP. Los extremos enumerados a cont
 
 | Servidor MCP | Punto final | Descripción |
 |---|---|---|
-| **Contenido** | `/content` | Operaciones de contenido, como crear, leer, actualizar y eliminar (CRUD) para páginas y fragmentos de contenido, además de importación y búsqueda de recursos.<br>Envíe un correo electrónico a `aemcs-mcp-feedback@adobe.com` para que se habilite la **búsqueda de recursos**. Incluya el nombre de la organización junto con el caso de uso en el correo electrónico. |
-| **Contenido (solo lectura)** | `/content-readonly` | Operaciones de contenido de solo lectura (obtener, lista/búsqueda) para páginas y fragmentos de contenido, además de búsqueda de recursos.<br>Envíe un correo electrónico a `aemcs-mcp-feedback@adobe.com` para que se habilite la **búsqueda de recursos**. Incluya el nombre de la organización junto con el caso de uso en el correo electrónico. |
+| **Contenido** | `/content` | Operaciones de contenido, como crear, leer, actualizar y eliminar (CRUD) para páginas y fragmentos de contenido, además de importación de recursos y búsqueda de recursos (la versión mínima requerida de AEM es `26309`). |
+| **Contenido (solo lectura)** | `/content-readonly` | Operaciones de contenido de solo lectura (obtener, lista/búsqueda) para páginas y fragmentos de contenido, además de búsqueda de recursos (la versión mínima requerida de AEM es `26309`). |
 | **Cloud Manager** | `/cloudmanager` | Administre entidades de Cloud Manager, incluidos programas, entornos, repositorios y canalizaciones, que también se pueden activar. |
 | **Administración de experiencias** | `/experience-governance` | Evalúe el contenido (texto, imágenes, páginas) con respecto a las reglas de gobernanza de marca y enumere las configuraciones y comprobaciones de marca.<br/>Si está interesado, debe registrarse en la versión de prueba de [agentes o tener una licencia de pago](https://experienceleague.adobe.com/es/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) para acceder al MCP de Experience Governance. |
+| **Migración de nube** | `/cloud-migration` | Obtenga los resultados del Analizador de prácticas recomendadas (BPA) de Cloud Acceleration Manager (CAM) según el patrón de migración o el nivel de gravedad, lo que permite a los agentes de IA impulsar la migración de código de AEM 6.x a AEM as a Cloud Service. Consulte [Uso del MCP de migración de nube](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md). |
 
 Las herramientas específicas expuestas por cada servidor MCP pueden evolucionar con el tiempo. En la práctica, puede pedir a su aplicación habilitada para MCP que descubra las herramientas a través de un mensaje como:
 
@@ -177,7 +178,7 @@ Algunos escenarios representativos incluyen:
 
   >[!NOTE]
   >
-  >Envíe un correo electrónico a `aemcs-mcp-feedback@adobe.com` para que se le habilite la búsqueda de recursos. Incluya el nombre de la organización junto con el caso de uso en el correo electrónico.
+  >La versión mínima de AEM requerida para acceder a **Assets Search** a través del punto de conexión MCP es `26309`.
 
 ### Flujos de trabajo de ejemplo {#example-workflows}
 

@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 5c8054e9a4f0bbcc2a6fce2fba70403c1f4268d8
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '1012'
 ht-degree: 3%
 
 ---
@@ -83,9 +83,9 @@ Tipo de solicitud: `POST`
 
 ### Encabezados {#headers}
 
-| Parámetro | Valor | Obligatorio/Obligatorio | Comentario |
+| Parámetro | Valor | Obligatorio/Obligatorio | Comentar |
 |------------------------------|-------------------|---|---|
-| `Content-Type` | `application/json` | Necesario |  |
+| `Content-Type` | `application/json` | Obligatorio |  |
 | `Authorization` | Credenciales de usuario del autor correspondiente (tipo de autenticación: autenticación básica) | Necesario | Añada el nombre de usuario y la contraseña correspondientes. |
 
 
@@ -93,17 +93,17 @@ Tipo de solicitud: `POST`
 
 La siguiente tabla muestra los atributos existentes que la función proporciona de forma predeterminada. Estas propiedades de `InvalidateType` deben proporcionarse en combinación con un atributo obligatorio (como `storePath`).
 
-| `invalidateType` | Valor | Tipo (Matriz/Cadena/Booleano) | ¿Borrará esto la caché de Dispatcher? | Comentario |
+| `invalidateType` | Valor | Tipo (Matriz/Cadena/Booleano) | ¿Borrará esto la caché de Dispatcher? | Comentar |
 |------------------------------|-------------------|---|---|---|
-| `productSkus` | Sku del producto, que debe invalidarse de la caché. | Matriz | Sí | Borre la caché de la memoria interna mediante el siguiente patrón:<br>```"\"sku\":\\s*\""```<br>Dispatcher<br><ul><li>Borre la caché de la página PDP de los SKU correspondientes</li><li>Borrar caché de la página de categorías correspondiente en la que existe(según la respuesta de graphql de commerce)</li><li>Borre la caché en función de la siguiente consulta:</li></ul><br>```SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content, '{storePath}')<br>AND ( (content.[product] IN ('sku1','sku2') AND content.[productType] = 'combinedSku')<br> OR (content.[selection] IN ('sku1','sku2') AND content.[selectionType] IN ('combinedSku', 'sku')))``` |
-| `categoryUids` | Uid de categoría: que debe invalidarse de la caché. | Matriz | Sí | Borre la caché de la memoria interna mediante el siguiente patrón:<br>```"\"uid\"\\s*:\\s*\\{\"id\"\\s*:\\s*\""```<br>Dispatcher<br><ul><li>Borre la memoria caché de las páginas de categorías para los datos correspondientes (incluida su página de categoría secundaria)</li><li>Borrar todas las páginas de PDP que tengan las categorías correspondientes</li><li>Borre la caché en función de la siguiente consulta:</li></ul><br>```SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content,'{storePath}')<br>AND ((content.[categoryId] in ('category1','category2')<br>AND content.[categoryIdType] in ('uid'))<br>OR (content.[category] in ('category1','category2') AND content.[categoryType] in ('uid')))``` |
+| `productSkus` | Sku del producto, que debe invalidarse de la caché. | Matriz | Sí | Borre la caché de la memoria interna mediante el siguiente patrón:<br>`"\"sku\":\\s*\""`<br>Dispatcher<br><ul><li>Borre la caché de la página PDP de los SKU correspondientes</li><li>Borrar caché de la página de categorías correspondiente en la que existe(según la respuesta de graphql de commerce)</li><li>Borre la caché en función de la siguiente consulta:</li></ul><br>`SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content, '{storePath}')<br>AND ( (content.[product] IN ('sku1','sku2') AND content.[productType] = 'combinedSku')<br> OR (content.[selection] IN ('sku1','sku2') AND content.[selectionType] IN ('combinedSku', 'sku')))` |
+| `categoryUids` | Uid de categoría: que debe invalidarse de la caché. | Matriz | Sí | Borre la caché de la memoria interna mediante el siguiente patrón:<br>`"\"uid\"\\s*:\\s*\\{\"id\"\\s*:\\s*\""`<br>Dispatcher<br><ul><li>Borre la memoria caché de las páginas de categorías para los datos correspondientes (incluida su página de categoría secundaria)</li><li>Borrar todas las páginas de PDP que tengan las categorías correspondientes</li><li>Borre la caché en función de la siguiente consulta:</li></ul><br>`SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content,'{storePath}')<br>AND ((content.[categoryId] in ('category1','category2')<br>AND content.[categoryIdType] in ('uid'))<br>OR (content.[category] in ('category1','category2') AND content.[categoryType] in ('uid')))` |
 | `regexPatterns` | Si necesita borrar los datos de respuesta de GraphQL basados en el patrón regex, utilice esta opción. | Matriz | No | |
 | `cacheNames` | Estos valores se definen en la fábrica de configuración del cliente de CIF GraphQL correspondiente > Configuración de GraphQL de StorePath correspondiente > Configuraciones de caché de GraphQL | Matriz | No | |
 | `invalidateAll` | Verdadero o falso | Booleano | Sí | |
 
 Esta tabla muestra la propiedad obligatoria que debe pasarse en cada llamada de API:
 
-| Propiedad | Valor | Tipo (Matriz/Cadena/Booleano) | ¿Borrará esto la caché de Dispatcher? | Comentario |
+| Propiedad | Valor | Tipo (Matriz/Cadena/Booleano) | ¿Borrará esto la caché de Dispatcher? | Comentar |
 |------------------------------|-------------------|---|---|---|
 | `storePath` | Valor correspondiente de la ruta de acceso del sitio desde el que debe eliminarse la caché (Ejemplo: `/content/venia/us/en` como referencia con un proyecto de venia). | Cadena | Sí | Esto se debe administrar con la combinación de `invalidateType.` |
 

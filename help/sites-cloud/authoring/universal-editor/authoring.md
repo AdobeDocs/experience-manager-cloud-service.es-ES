@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
+source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
 workflow-type: tm+mt
-source-wordcount: '3159'
+source-wordcount: '3149'
 ht-degree: 13%
 
 ---
@@ -276,7 +276,7 @@ El componente se mueve tanto en el editor como en el árbol de contenido.
 >[!TIP]
 >
 >Utilice las teclas de acceso rápido `Command-U` o `Shift-Command-U` para subir o subir, respectivamente.
->Utilice las teclas de acceso rápido `Command-J` o `Shift-Command-J` para desplazarse hacia abajo o hacia abajo, respectivamente.
+>Use las teclas de marcación rápida `Command-J` o `Shift-Command-J` para desplazarse hacia abajo o hacia abajo, respectivamente.
 
 >[!NOTE]
 >
@@ -320,7 +320,7 @@ Copiar y pegar pueden estar en la misma pestaña del explorador o entre pestaña
 
 1. Seleccione un componente dentro del editor o en el árbol de contenido.
 1. A continuación, puede hacer lo siguiente:
-   * Haga clic en el icono **Copiar** en el panel de propiedades [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+   * Haga clic en el icono **Copiar** en el panel [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![Copiar del panel](assets/copy-from-panel.png)
    * Seleccione la opción **Copiar** en el menú contextual.
      ![Copiar del menú contextual](assets/copy-from-context-menu.png)
@@ -385,17 +385,16 @@ Para obtener información sobre cómo habilitar esta extensión, [consulte la do
 
 ### Acceso a Propiedades de página {#page-properties}
 
-La **extensión de propiedades de página de AEM** permite un acceso rápido a la [ventana Propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md) para la página que se está editando en ese momento.
+El botón **Propiedades de página** permite un acceso rápido a la [ventana Propiedades de página de AEM](/help/sites-cloud/authoring/sites-console/page-properties.md) para la página que se está editando en ese momento.
 
 ![Icono de propiedades de página](assets/page-properties-icon.png)
 
 Pulse o haga clic en el icono **Propiedades de página** de la barra de herramientas del Editor universal para abrir las propiedades de página de la página en una nueva pestaña del explorador.
 
-Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
-
 >[!NOTE]
 >
->La extensión de propiedades de página de **AEM** solo funciona para páginas, no para fragmentos de contenido.
+>* La extensión de propiedades de página de **AEM** solo funciona para páginas, no para fragmentos de contenido.
+>* El botón solo se muestra cuando la página remota tiene una [conexión con el protocolo &#x200B;](/help/implementing/universal-editor/component-definition.md#plugins) `aem` o `xwalk` y se puede resolver una ruta de acceso de página única desde el archivo editable actual.
 
 ### Acceder a la consola Sites {#sites-console}
 

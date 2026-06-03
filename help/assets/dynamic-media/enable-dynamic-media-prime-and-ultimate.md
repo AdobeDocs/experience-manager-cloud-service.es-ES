@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 601309b68e4b99cf65233bdcf0f795bb551be63b
+source-git-commit: 8e71e63b09cc7346043379bddfb855231bbebb93
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1407'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,8 @@ Este artículo proporciona un flujo de trabajo completo para habilitar las ofert
 Para habilitar [!DNL Dynamic Media] Ultimate:
 
 1. [Activar [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
-1. [Configurar [!DNL Dynamic Media] soluciones](#configure-dynamic-media-solutions)
+1. [Configurar  [!DNL Dynamic Media] soluciones](#configure-dynamic-media-solutions)
+1. [Acceder a las API de Dynamic Media](#access-dynamic-media-apis)
 1. [Crear y enumerar  [!DNL Dynamic Media] empresas](#create-and-list-dynamic-media-companies)
 1. [Configurar dominio personalizado en el nivel de entrega](#configure-custom-domain-in-delivery-tier)
 
@@ -63,7 +64,7 @@ Ejecute estos pasos para habilitar [!DNL Dynamic Media with OpenAPI] para su ent
    1. **[!UICONTROL Fase de entorno]**: **[!UICONTROL En ejecución]**
    1. ![Medios dinámicos activados por DM](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; Las capacidades de OpenAPI están activadas &#x200B;]**
 
-      ![activación correcta](/help/assets/assets/activation-successful.png){width="700" align="left"}
+      ![activación correcta](/help/assets/assets/activation-successful.png){width="700"}
 
 #### Reintentar activación {#retry-activation}
 
@@ -72,7 +73,7 @@ Si la activación falla, Cloud Manager muestra las siguientes actualizaciones de
 * **[!UICONTROL Fase de entorno]**: **[!UICONTROL error de DM con OpenAPI]**
 * ![DM activado](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; No se pudieron activar las capacidades de OpenAPI &#x200B;]**
 
-  ![reintentar activación](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
+  ![reintentar activación](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700"}
 
 Seleccione **[!UICONTROL Haga clic para reintentar]** y reiniciar la activación.
 
@@ -149,7 +150,7 @@ Ejecute estos pasos para crear y listar una nueva compañía (cuenta) de [!DNL D
 
 1. Especifique un nombre de empresa [!DNL Dynamic Media] único, seleccione una región de empresa y agregue una lista de ID de correo electrónico de administrador de empresa separados por comas.
 
-   ![Crear empresa de Dynamic Media](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
+   ![Crear empresa de Dynamic Media](/help/assets/assets/create-dynamic-media-company.png){width="500"}
 
 1. Haga clic en **[!UICONTROL Crear]** para comenzar a crear su compañía. Esta acción agrega una nueva fila a la sección **[!UICONTROL [!DNL Dynamic Media]compañías]** y muestra **[!UICONTROL Configurando]** como el **[!UICONTROL ESTADO]** de la compañía.
 
@@ -213,7 +214,7 @@ Ejecute los siguientes pasos en Cloud Manager para configurar un dominio persona
 
 1. Ejecute los pasos de **[!UICONTROL Configurar CNAME]** para asignar `cdn.adobeaemcloud.com` (registro CNAME) en el registro DNS del proveedor de servicios DNS. Esta asignación garantiza que las solicitudes recibidas en el dominio personalizado se redirijan a la CDN de Adobe.
 
-   ![cuadro de diálogo de preparación para lanzamiento](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
+   ![cuadro de diálogo de preparación para lanzamiento](/help/assets/assets/go-live-readiness-dialogbox.png){width="500"}
 
 1. Haz clic en **[!UICONTROL Aceptar]**, el **[!UICONTROL ESTADO]** se actualiza a **[!UICONTROL Verificado]**. El dominio personalizado está listo para usarse en la dirección URL de envío.
 

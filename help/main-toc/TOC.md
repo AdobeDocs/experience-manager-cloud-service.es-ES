@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
+source-git-commit: 77b81e63078f95ad1c70c4e19af8d9be41bf2c84
 workflow-type: tm+mt
-source-wordcount: '7415'
+source-wordcount: '7469'
 ht-degree: 85%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 85%
    + Notas de la versión de la función AEMaaCS {#release-notes}
       + [Notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2026 {#2026}
+         + [Notas de la versión 2026.4.0](/help/release-notes/release-notes-cloud/2026/2026-4-0.md)
          + [Notas de la versión 2026.3.0](/help/release-notes/release-notes-cloud/2026/2026-3-0.md)
          + [Notas de la versión 2026.2.0](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
          + [Notas de la versión 2026.1.0](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
@@ -264,6 +265,7 @@ ht-degree: 85%
       + [Notas de la versión actual del editor universal](/help/release-notes/universal-editor/current.md)
       + [Previsualizar notas de la versión del editor universal](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [Notas de la versión 2026.05.21](/help/release-notes/universal-editor/2026/2026-05-21.md)
          + [Notas de la versión 2026.05.14](/help/release-notes/universal-editor/2026/2026-05-14.md)
          + [Notas de la versión 2026.05.07](/help/release-notes/universal-editor/2026/2026-05-07.md)
          + [Notas de la versión 2026.04.30](/help/release-notes/universal-editor/2026/2026-04-30.md)
@@ -336,6 +338,7 @@ ht-degree: 85%
    + [Credenciales JWT de Adobe Developer Console en desuso](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Compatibilidad con Open ID Connect para AEM as a Cloud Service en el nivel de publicación](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [Configuración de las integraciones de IMS para AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+   + [Integraciones de API administradas por Adobe en Adobe Admin Console](/help/security/adobe-managed-api-integrations-in-adobe-admin-console.md)
    + [Vista principal para la administración de permisos](/help/security/touch-ui-principal-view.md)
    + [Prácticas recomendadas para la asignación de usuarios al servicio Sling y la definición de usuarios del servicio](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Claves administradas por el cliente para Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
@@ -421,6 +424,10 @@ ht-degree: 85%
             + {hide-from-toc}[Información general](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + {hide-from-toc}[Consideraciones importantes](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + {hide-from-toc}[Usando la herramienta de asignación de usuarios](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
+   + Migración de código con asistencia de IA {#cloud-migration-skill}
+      + [Información general](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md)
+      + [Uso de la habilidad de migración de nube](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)
+      + [Uso del MCP de migración de nube](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)
    + Herramientas de refactorización de código {#refactoring-tools}
       + [Introducción a las herramientas de refactorización](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
       + [Información general sobre las herramientas de refactorización](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
@@ -527,6 +534,7 @@ ht-degree: 85%
          + [Eliminar consideraciones](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analizando estructura](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [Previsualización de fragmentos](/help/sites-cloud/administering/content-fragments/preview.md)
+         + [Fragmentos de contenido visual](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md)
          + {hide-from-toc}[Reutilizar fragmentos de contenido mediante MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
          + [Lanzamientos para fragmentos de contenido](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [Recursos de la consola de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
@@ -1138,6 +1146,7 @@ ht-degree: 85%
             + [Información general](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
             + [Trabajo de actualización de contenido](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
             + [Trabajo de creación de contenido](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
+            + [Trabajo de Figma a fragmentos de contenido visual](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
             + [Trabajo de creación de comunicación](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
             + [Trabajo de creación de formularios](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
          + Experience Modernization Agent {#modernization}
@@ -1615,6 +1624,8 @@ ht-degree: 85%
       + [Personalizar y ampliar fragmentos de contenido](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Fragmentos de contenido Configurar componentes para procesamiento](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [Personalización de la consola y el editor de fragmentos de contenido](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
+      + [Fragmentos de contenido visual: plantillas](/help/implementing/developing/extending/content-fragments-visualization-templates.md)
+      + [Fragmentos de contenido visual: enviar con la dirección URL de publicación](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md)
       + Administración de formularios de búsqueda {#manage-search-forms}
          + [Configurar formularios de búsqueda](/help/implementing/developing/extending/search-forms.md)
          + [Configuración de filtros de búsqueda para la bandeja de entrada](/help/implementing/developing/extending/configure-inbox-search-rail.md)
@@ -1665,6 +1676,7 @@ ht-degree: 85%
    + [Centro de acciones](/help/operations/actions-center.md)
    + [Búsqueda de contenido e indexación](/help/operations/indexing.md)
    + [Servicio de replicación de contenido](/help/operations/replication.md)
+   + [Flujos de trabajo de replicación de árbol](/help/operations/tree-replication-workflows.md)
    + [Regiones de publicación adicionales](/help/operations/additional-publish-regions.md)
    + [Monitorización de infraestructura y servicios en AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Tareas de mantenimiento](/help/operations/maintenance.md)
@@ -1688,4 +1700,3 @@ ht-degree: 85%
       + [Guía rápida de WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Resolución de problemas {#troubleshooting}
    + {hide-from-toc}[Solucionar problemas de AEM Assets y Forms](/help/troubleshooting/home.md)
-

@@ -5,10 +5,10 @@ feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
 workflow-type: tm+mt
-source-wordcount: '3195'
-ht-degree: 10%
+source-wordcount: '3225'
+ht-degree: 12%
 
 ---
 
@@ -217,7 +217,7 @@ Después de crear la configuración de la herramienta Importación masiva, puede
 
 ### Editar la configuración {#edit-configuration}
 
-Para editar los detalles de configuración, selecciónela y haga clic en **[!UICONTROL Editar]**. No se puede editar el título de la configuración y el origen de datos de importación mientras se realiza la operación de edición.
+Para editar los detalles de configuración, selecciónela y haga clic en **[!UICONTROL Editar]**. No se puede editar el título de la configuración y la fuente de datos de importación mientras se realiza la operación de edición.
 
 ### Eliminar la configuración {#delete-configuration}
 
@@ -239,7 +239,7 @@ Seleccione la configuración y haga clic en **[!UICONTROL Ejecución en seco]** 
 
 Al importar recursos o carpetas de forma masiva, [!DNL Experience Manager Assets] importa toda la estructura existente en el origen de importación. [!DNL Experience Manager] sigue las reglas integradas en cuanto a los caracteres especiales en los nombres de recursos y carpetas, por lo que estos nombres de archivo necesitan limpiarse. Tanto para el nombre de la carpeta como para el nombre del recurso, el título definido por el usuario permanece sin cambios y se almacena en `jcr:title`.
 
-Durante la importación masiva, [!DNL Experience Manager] busque las carpetas existentes para evitar volver a importar los recursos y las carpetas, y compruebe también las reglas de limpieza aplicadas en la carpeta principal en la que se realiza la importación. Si las reglas de limpieza se aplican en la carpeta principal, se aplicarán las mismas reglas al origen de importación. Para la nueva importación, se aplican las siguientes reglas de limpieza para administrar los nombres de archivo de los recursos y las carpetas.
+Durante la importación masiva, [!DNL Experience Manager] busca las carpetas existentes para evitar volver a importar los recursos y las carpetas, y también comprueba las reglas de saneamiento aplicadas en la carpeta principal en la que se realiza la importación. Si las reglas de limpieza se aplican en la carpeta principal, se aplicarán las mismas reglas al origen de importación. Para la nueva importación, se aplican las siguientes reglas de limpieza para administrar los nombres de archivo de los recursos y las carpetas.
 
 **Nombres no permitidos en la importación masiva**
 
@@ -276,7 +276,7 @@ Para los nombres de archivo de recursos, el nombre JCR y la ruta de acceso se sa
 
 **Gestión del nombre de carpeta en la importación masiva**
 
-Para los nombres de archivo de la carpeta, el nombre JCR y la ruta de acceso se sanean mediante la API: `DamUtil.getSanitizedFolderName`.
+Para los nombres de archivo de carpeta, el nombre JCR y la ruta de acceso se sanean mediante la API: `DamUtil.getSanitizedFolderName`.
 
 * Los caracteres en mayúsculas se convierten en minúsculas
 * Los caracteres Unicode no cambian
@@ -362,7 +362,7 @@ Experience Manager muestra el historial de trabajos. En la página Historial de 
 Además de la interfaz de usuario del explorador web, [!DNL Experience Manager] admite otros clientes en el escritorio. También proporcionan una experiencia de carga sin necesidad de ir al explorador web.
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html?lang=es) proporciona acceso a los recursos de [!DNL Experience Manager] en las aplicaciones de escritorio de Adobe Photoshop, Adobe Illustrator y Adobe InDesign. Puede cargar el documento abierto actualmente en [!DNL Experience Manager] directamente desde la interfaz de usuario de Adobe Asset Link desde estas aplicaciones de escritorio.
-* [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es) simplifica el trabajo con recursos en el escritorio, independientemente del tipo de archivo o de la aplicación nativa que los administra. Es útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga desde el explorador solo permite cargar listas de archivos sin formato.
+* [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es) simplifica el trabajo con recursos en el escritorio, independientemente de su tipo de archivo o de la aplicación nativa que los administra. Es útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga desde el explorador solo permite cargar listas de archivos sin formato.
 
 ## Procesar recursos al cargarlos {#process-when-uploaded}
 

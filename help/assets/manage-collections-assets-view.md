@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 79%
+ht-degree: 77%
 
 ---
 
@@ -191,7 +191,7 @@ Para ver y editar metadatos de colección:
 
 ## Compartir vínculos de colecciones {#share-collection-links}
 
-[!DNL Assets view] permite generar un vínculo y compartir colecciones y recursos de colecciones con partes interesadas externas que no tienen acceso a la aplicación de [!DNL Assets view]. Puede definir una fecha de caducidad para el vínculo y luego compartirlo con otras personas mediante el método de comunicación que prefiera, como el correo electrónico o los servicios de mensajería. Los destinatarios del vínculo pueden obtener una vista previa de los recursos y descargarlos.
+[!DNL Assets view] le permite generar un vínculo y compartir colecciones y recursos de colecciones con partes interesadas externas que no tienen acceso a la aplicación [!DNL Assets view]. Puede definir una fecha de caducidad para el vínculo y luego compartirlo con otras personas mediante el método de comunicación que prefiera, como el correo electrónico o los servicios de mensajería. Los destinatarios del vínculo pueden obtener una vista previa de los recursos y descargarlos.
 
 ![Compartir vínculo para recursos](assets/share-link-collections.png)
 

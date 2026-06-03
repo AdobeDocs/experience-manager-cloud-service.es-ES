@@ -4,9 +4,9 @@ description: Descubra cómo Brand Experience Agent acelera la modernización y l
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: 8f964484f944d49cdc6c456147f060f29a20778e
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '689'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Brand Experience Agent acelera la modernización y evolución de las experiencia
 Brand Experience Agent ofrece sus resultados a través de los siguientes agentes, cada uno especializado en un conjunto específico de trabajos:
 
 * [Agente de modernización de experiencias](#experience-modernization): migra sitios web a formatos listos para la nube
-* [Agente de producción de experiencia](#experience-production): reduce el tiempo de comercialización con actualizaciones de contenido, creación de formularios y comunicaciones
+* [Agente de producción de experiencia](#experience-production): reduce el tiempo de comercialización con actualizaciones de contenido, creación de contenido, importación de fragmentos de contenido de Figma a Visual, creación de formularios y comunicaciones
 * [Agente de desarrollo](#development): proporciona solución de problemas asistida por IA y automatización de la compilación
 
 A través de estos agentes, Brand Experience Agent absorbe el intenso trabajo operativo detrás de las actualizaciones y la modernización, lo que ayuda a los equipos a realizar cambios más rápido y con mayor confianza en la era de la IA de hoy en día.
@@ -57,6 +57,18 @@ El trabajo [Creación de contenido](/help/ai-in-aem/agents/brand-experience/expe
 >[!NOTE]
 >
 >El trabajo de creación de contenido está actualmente en disponibilidad limitada.
+>
+>Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
+### Trabajo de Figma a fragmentos de contenido visual {#figma-to-visual-content-fragments}
+
+El trabajo de [Figma a fragmentos de contenido visual](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) importa diseños de Figma a modelos de contenido AEM, fragmentos de contenido y plantillas de HTML.
+
+<!-- CQDOC-23232 - remove when GA -->
+
+>[!NOTE]
+>
+>El trabajo de Figma a fragmentos de contenido visuales está actualmente en disponibilidad limitada.
 >
 >Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 

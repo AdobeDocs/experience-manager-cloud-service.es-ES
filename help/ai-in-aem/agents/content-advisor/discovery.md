@@ -4,9 +4,9 @@ description: Aprenda a utilizar el agente de detección de contenido para ofrece
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
+source-git-commit: b47fa12a5301c97688e09d285b66241a2745e085
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2402'
 ht-degree: 1%
 
 ---
@@ -238,9 +238,9 @@ Content Discovery Agent devuelve los resultados principales de cada consulta, or
 
 Cada resultado se muestra como una tarjeta de recursos, con el nombre del recurso, la vista previa y los metadatos clave, como la descripción y el formato. Puede hacer clic en el icono Información de una tarjeta para ver propiedades de recursos adicionales.
 
-Utilice la opción **Mostrar tabla** para mostrar los resultados en formato tabular. Haga clic en **Mostrar todos los resultados** para ver el conjunto completo de 20 recursos recuperados en el panel derecho.
+Utilice la opción **Mostrar tabla** para mostrar los resultados en formato tabular. Haga clic en **Mostrar todos los resultados** para ver el conjunto completo de 20 recursos recuperados en el panel derecho. También puede hacer clic en el icono Descargar para descargar la lista de 20 recursos como archivo .ZIP con un tamaño máximo de 1,5 GB.
 
-Cada resultado también incluye metadatos de recursos clave, como la ruta, el tamaño, la fecha de creación y el creador, la fecha de modificación, junto con el usuario que modificó el recurso, el formato y la descripción. Si un recurso está en estado aprobado, los resultados también incluyen [Dynamic Media con la URL de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Puede hacer clic en la ruta del recurso para desplazarse sin problemas a la ubicación del recurso en AEM.
+Cada resultado también incluye metadatos de recurso clave, como la ruta, el tamaño, la fecha de creación y el creador, la fecha de modificación, junto con el usuario que modificó el recurso, el formato, el vínculo de descarga y la descripción. Si un recurso está en estado aprobado, los resultados también incluyen [Dynamic Media con la URL de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Puede hacer clic en la ruta del recurso para desplazarse sin problemas a la ubicación del recurso en AEM.
 
 ![Buscar recursos mediante el agente de detección de contenido](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 

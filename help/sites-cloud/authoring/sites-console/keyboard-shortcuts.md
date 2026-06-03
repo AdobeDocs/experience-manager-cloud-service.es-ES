@@ -1,19 +1,19 @@
 ---
-title: 'Métodos abreviados del teclado para las consolas  '
+title: Métodos abreviados del teclado para las consolas
 description: Ahorre tiempo durante la creación mediante estos métodos abreviados del teclado
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 5c8054e9a4f0bbcc2a6fce2fba70403c1f4268d8
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '389'
 ht-degree: 60%
 
 ---
 
-# Métodos abreviados del teclado para las consolas   {#keyboard-shortcuts-for-consoles}
+# Métodos abreviados del teclado para las consolas {#keyboard-shortcuts-for-consoles}
 
 Los siguientes métodos abreviados están disponibles para las consolas Sitios, Activos, Usuarios, Grupos, Proyectos y Fragmentos de experiencias. También existen métodos abreviados específicos para la [Consola Fragmentos de contenido](#keyboard-shortcuts-for-the-content-fragments-console).
 
@@ -29,7 +29,7 @@ Los siguientes métodos abreviados están disponibles para las consolas Sitios, 
 | Consolas | `?` | Ayuda de métodos abreviados del teclado |
 |  | `/` | Invocar la [búsqueda](/help/sites-cloud/authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Alterne qué opción de [selector de carril](/help/sites-cloud/authoring/basic-handling.md#rail-selector) se debe ver |
-|  | ``` ` ``` | Ocultar raíl |
+|  | &grave; | Ocultar raíl |
 |  | `e` | Editar |
 |  | `p` | Propiedades |
 |  | `m` | Mover |

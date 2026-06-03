@@ -3,7 +3,7 @@ title: Introducción a Assets as a Cloud Service para la administración de recu
 description: Introducción a Assets as a Cloud Service para la administración de recursos digitales en AEM
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
 workflow-type: tm+mt
 source-wordcount: '6014'
 ht-degree: 81%
@@ -1018,7 +1018,7 @@ Adobe ofrece una solución sólida de soluciones de administración de recursos 
 
 * **Vista de recursos**: la experiencia de administración de recursos ligera de Adobe para almacenar, administrar, descubrir y utilizar recursos digitales. Interfaz de usuario optimizada que contiene funciones esenciales de administración de activos digitales. Diseñada para los usuarios de DAM ligeros con un enfoque en la carga, administración de metadatos, búsqueda, descarga y uso compartido.
 
-![add-tags](assets/newui-overview.svg)
+![add-tags](assets/newui-overview.png)
 
 Los usuarios con acceso a la vista del administrador también pueden acceder a la vista Recursos. La vista de recursos proporciona una interfaz de usuario simplificada que facilita la administración, la detección y la distribución de sus recursos digitales. Un amplio conjunto de usuarios de diferentes funciones, incluidos los equipos creativos, de marketing y de línea de negocios, pueden colaborar en los recursos y acceder a los recursos adecuados y aprobados cuando y donde los necesiten. Muchos usuarios ocasionales de DAM prefieren la vista Recursos porque solo contiene un subconjunto de funciones. La experiencia está dirigida a creativos, consumidores de recursos de solo lectura y usuarios de DAM de menor peso.
 

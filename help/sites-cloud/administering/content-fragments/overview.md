@@ -6,16 +6,16 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '2408'
+source-wordcount: '2553'
 ht-degree: 28%
 
 ---
 
 # Trabajar con fragmentos de contenido: conceptos y prácticas recomendadas {#working-with-content-fragments-concepts-and-best-practices}
 
-Con Adobe Experience Manager (AEM) as a Cloud Service, los fragmentos de contenido le permiten diseñar, crear, depurar y publicar contenido independiente de las páginas. Permiten preparar contenido listo para usar en varias ubicaciones y en varios canales, lo que resulta ideal para [entrega sin encabezado](/help/headless/what-is-headless.md) y [creación de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md).
+Con Adobe Experience Manager (AEM) as a Cloud Service, los fragmentos de contenido le permiten diseñar, crear, depurar y publicar contenido independiente de las páginas. Permiten preparar contenido, listo para usar en varias ubicaciones y en varios canales, lo que resulta ideal para [entrega sin encabezado](/help/headless/what-is-headless.md) y [creación de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!TIP]
 >
@@ -39,7 +39,6 @@ Con Adobe Experience Manager (AEM) as a Cloud Service, los fragmentos de conteni
 >* uso del editor de fragmentos de contenido [*original*](/help/assets/content-fragments/content-fragments-variations.md),
 >* uso de [fragmentos de contenido para la creación de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
-
 Los fragmentos de contenido incluyen contenido estructurado:
 
 * Cada fragmento se basa en un [Modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
@@ -59,10 +58,26 @@ Los fragmentos de contenido incluyen contenido estructurado:
       * Los tipos de datos de referencia disponibles le permiten anidar el contenido.
       * Tiende a utilizarse para la entrega sin encabezado a la aplicación.
 
-Los fragmentos de contenido también se pueden entregar en formato JSON, utilizando las capacidades de exportación del Modelo Sling (JSON) de los componentes principales de AEM. Esta forma de entrega:
+Los fragmentos de contenido también se pueden entregar en:
 
-* permite utilizar el componente para administrar qué elementos enviar de un fragmento.
-* permite la entrega por lotes; agregando varios [componentes principales de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es) en la página que se está usando para la entrega de API
+* Formato JSON, con las capacidades de exportación del Modelo Sling (JSON) de los componentes principales de AEM. Esta forma de entrega:
+
+   * permite utilizar el componente para administrar qué elementos enviar de un fragmento.
+   * permite la entrega por lotes; agregando varios [componentes principales de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es) en la página que se está usando para la entrega de API
+
+* Formato HTML, usando [Fragmentos de contenido visual](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) procesados con [plantillas de HTML, desarrollados con Handlebars](/help/implementing/developing/extending/content-fragments-visualization-templates.md). Esta forma de entrega:
+
+   * proporciona una representación visual para ayudar a obtener una vista previa y revisar el contenido
+   * proporciona una representación visual para el uso directo e inmediato por canales y aplicaciones externos
+
+  <!-- CQDOC-23232 - remove when GA -->
+
+  >[!NOTE]
+  >
+  >Los fragmentos de contenido visual están actualmente en disponibilidad limitada.
+  >
+  >Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 
 El número de canales de comunicación aumenta de forma anual. Normalmente, los canales hacen referencia al mecanismo de entrega, ya sea como los siguientes:
 
@@ -111,6 +126,7 @@ Una vez creados los fragmentos, puede:
 * [Integrar y usar los fragmentos de contenido en Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
 * Crear y administrar [lanzamientos para fragmentos de contenido](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * [O use sus fragmentos para la creación de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md)
+* Proporcione una [representación visual (HTML)](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) de su fragmento
 
 >[!NOTE]
 >

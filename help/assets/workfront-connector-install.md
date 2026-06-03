@@ -5,10 +5,10 @@ role: Admin
 feature: Workfront Integrations and Apps
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 7f10146a18627e1d18747c1675b730c281cf7425
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 2%
+source-wordcount: '928'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ Antes de instalar el conector, siga estos pasos previos a la instalación:
 
    * [IP de clúster de Workfront](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=es#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Para conocer el clúster IP de [!DNL Workfront], vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Sistema]** > **[!UICONTROL Información del cliente]**.
 
-   * [IP de API de suscripción a evento de Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=es)
+   * [IP de API de suscripción de evento de Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=es)
 
    >[!IMPORTANT]
    >
@@ -51,10 +51,7 @@ Antes de instalar el conector, siga estos pasos previos a la instalación:
    >
    >* Para encontrar la IP del programa, abra una ventana de terminal y ejecute un comando, como:
    >
-   >    ```
-   >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >    
-   >    ```
+   >  `>dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com`
 
 1. Asegúrese de que las siguientes superposiciones no existan en el repositorio [!DNL Experience Manager]. Si tiene superposiciones preexistentes en estas rutas, debe eliminar las superposiciones o combinar el delta de cambios entre las dos:
 

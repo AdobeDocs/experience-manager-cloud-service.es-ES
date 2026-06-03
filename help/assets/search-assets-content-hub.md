@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo buscar recursos en  [!DNL Content 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 0ee0778243448e3ff9f6f5b8fb1097fc9b6bec27
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1615'
 ht-degree: 1%
 
 ---
@@ -56,6 +56,45 @@ Por ejemplo, busque todas las imágenes de **[!UICONTROL JPEG]** con la palabra 
 Utilice el panel Filtros para buscar recursos basados en metadatos. Puede filtrar los resultados de búsqueda según varios predicados de búsqueda. Puede seleccionar todos los predicados adecuados para minimizar o reducir los resultados de búsqueda. Puede elegir más de 10 predicados al filtrar los resultados de búsqueda. Cuando se seleccionan varias opciones dentro de un filtro, Content Hub muestra los recursos que coinciden con cualquiera de las opciones seleccionadas dentro de un filtro. Sin embargo, cuando selecciona varias opciones en distintos filtros, Content Hub solo muestra los recursos que coinciden con todas las opciones seleccionadas en todos los filtros para reducir los resultados de búsqueda.
 
 Los filtros predeterminados incluyen formato de archivo, aprobado por, fecha de aprobación, recursos caducados y no caducados y fecha de caducidad. Los administradores también pueden configurar los filtros que se muestran en la lista de filtros. Para obtener más información, consulte [Configuración de la interfaz de usuario de Content Hub](configure-content-hub-ui-options.md#configure-filters-content-hub).
+
+## Búsqueda por IA en Content Hub {#ai-search-aem-assets-content-hub}
+
+Búsqueda por IA en AEM Assets Content Hub es una función de búsqueda avanzada que comprende el significado y la intención detrás de la consulta de un usuario, en lugar de depender de coincidencias de palabras clave exactas. Utiliza inteligencia artificial (IA) y aprendizaje automático para ofrecer resultados más precisos y relevantes para el contexto.
+
+A diferencia de la búsqueda tradicional basada en palabras clave, que busca términos exactos, la Búsqueda por IA interpreta las relaciones entre palabras, conceptos e intención del usuario. Esto garantiza que los usuarios encuentren lo que están buscando, incluso si su consulta está redactada de forma diferente, contiene errores tipográficos o está en otro idioma.
+
+Algunos de sus beneficios clave incluyen:
+
+* **Soporte multilingüe**: busque en varios idiomas sin requerir traducciones exactas. Los usuarios pueden encontrar contenido relevante independientemente del idioma de la consulta.
+
+* **Controla los errores ortográficos**: interpreta errores ortográficos y ortográficos, lo que garantiza resultados precisos incluso con entradas imperfectas.
+
+* **Entiende los sinónimos**: Proporciona resultados para términos y frases relacionados, por lo que los usuarios no necesitan adivinar la palabra clave correcta.
+
+* **Búsqueda relevante para el contexto**: Reconoce la intención detrás de una consulta, no solo las palabras exactas.
+
+### Ejemplos de Búsqueda por IA en Content Hub {#examples-ai-search-aem-assets-content-hub}
+
+**Mensaje de ejemplo**: *Mujer tomando café*
+
+La búsqueda tradicional basada en palabras clave busca coincidencias exactas de los metadatos de recursos, como `Woman`, `drinking`, `Coffee`, y devuelve recursos que incluyen todos estos términos en los metadatos.
+
+Sin embargo, la Búsqueda por IA coincide con palabras similares como `Girl`, `Lady` en el caso de `Woman` y `Cappuccino` y `Latte` en el caso de `Coffee`.
+
+Del mismo modo, puede especificar este mensaje en español o escribir incorrectamente `Woman` como `Wman` y seguir obteniendo los mismos resultados.
+
+
+### Habilitar o deshabilitar la Búsqueda por IA en Content Hub {#enable-disable-ai-search-content-hub}
+
+Siga estos pasos para habilitar o deshabilitar la Búsqueda por IA en Content Hub:
+
+1. Vaya al icono de su perfil de usuario y haga clic en **[!UICONTROL Configuraciones]**.
+
+1. En la ficha **[!UICONTROL Buscar]**, seleccione **[!UICONTROL Búsqueda por IA]** para habilitar la Búsqueda por IA para Content Hub o **[!UICONTROL Palabra clave]** para deshabilitarla.
+
+   ![Búsqueda por IA en Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+1. Haga clic en **[!UICONTROL Guardar]**.
 
 <!--
 
@@ -119,7 +158,7 @@ Los filtros predeterminados incluyen formato de archivo, aprobado por, fecha de 
         </ul>
       </td>
      </tr>
-     <!--<tr>
+     <tr>
       <td>Subject</td>
       <td>Classification of assets based on their theme. For example, colorful, hiking, outdoors.</td>
       <td>NA</td>
@@ -134,7 +173,7 @@ Los filtros predeterminados incluyen formato de archivo, aprobado por, fecha de 
         </ul>
       </td>
      </tr>    
-     <!--<tr>
+     <tr>
       <td>Asset ID</td>
       <td>Unique number that identifies the asset.</td>
       <td>NA</td>
@@ -162,6 +201,57 @@ Para realizar una búsqueda masiva en [!DNL Content Hub], ejecute los pasos sigu
 1. Agregue una consulta de búsqueda que contenga delimitadores especificados en la configuración. La consulta de búsqueda debe contener una cadena acompañada de varios valores separados por comas.
 
 ![IU de búsqueda masiva](assets/bulk-search-ui.png)
+
+## Configuración de la ordenación en Content Hub {#configure-sorting-aem-assets-content-hub}
+
+Content Hub proporciona opciones de clasificación listas para usar para ayudar a los usuarios a organizar los resultados de búsqueda de recursos. Los administradores también pueden habilitar campos de metadatos personalizados como opciones de ordenación para que los usuarios puedan ordenar los recursos en función de metadatos específicos de la empresa, como canal, región, SKU o campaña.
+
+### Opciones de ordenación predeterminadas {#default-sorting-options}
+
+De forma predeterminada, Content Hub incluye las siguientes opciones de ordenación en la página principal de Content Hub:
+
+* Tamaño
+
+* Modificado
+
+* Nombre
+
+* Relevancia
+
+### Agregar campos de metadatos personalizados como opciones de ordenación {#add-custom-metadata-fields-for-sorting}
+
+Los administradores pueden configurar campos de metadatos adicionales para que aparezcan en el menú de ordenación.
+
+Para habilitar un campo de metadatos para la ordenación:
+
+1. Haga clic en el icono de perfil de usuario y seleccione **Configuraciones**.
+1. Vaya a la ficha **Filtros**.
+1. Busque el campo de metadatos que desea habilitar para la ordenación.
+1. Haga clic en el icono de edición disponible para ese campo de metadatos en particular.
+1. En el cuadro de diálogo Editar filtro, habilite la opción **Ordenar**.
+1. Haga clic en **Confirmar** y guarde la configuración. Las actualizaciones surten efecto cuando el valor del campo **Status** para el campo de metadatos se muestra como `Active`.
+
+Por ejemplo, si habilita la ordenación para el campo Metadatos de canal, los usuarios podrán ordenar los resultados de los recursos mediante el valor Canal.
+
+![Búsqueda básica](assets/enable-filters-sorting.png)
+
+### Usar opciones de ordenación personalizadas en la página principal de Content Hub {#use-custom-sorting-options}
+
+Después de habilitar la ordenación para un campo de metadatos:
+
+* El campo aparece en el menú de ordenación de la página principal de Content Hub.
+* Los campos de ordenación personalizados se muestran debajo de una línea de separación en el menú de ordenación.
+* El separador diferencia visualmente los campos personalizados configurados por el administrador de las opciones de ordenación predeterminadas.
+
+Por ejemplo, si el campo Metadatos de canal está habilitado para la ordenación, se muestra el menú Ordenar:
+
+* Campos predeterminados como Tamaño, Modificado, Nombre y Relevancia
+* Una línea de separación
+* El canal de campo personalizado
+
+Esta distinción ayuda a los usuarios a identificar rápidamente las opciones de ordenación estándar en comparación con las opciones de ordenación basadas en metadatos específicas de la organización.
+
+![Búsqueda básica](assets/custom-sorting-options.png)
 
 ## Haga más con la búsqueda {#do-more-with-search}
 

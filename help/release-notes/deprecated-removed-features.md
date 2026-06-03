@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 459858d160eaaeddc24321aea031e855911e735f
+source-git-commit: 662715341c35fab62ac0c882a03cba8f41748dbf
 workflow-type: tm+mt
-source-wordcount: '4146'
+source-wordcount: '4154'
 ht-degree: 71%
 
 ---
@@ -46,6 +46,7 @@ Se ha anunciado que la funcionalidad de la tabla siguiente ya no se utiliza, per
 | Capacidades | Función en desuso | Reemplazo |
 | ------------ | ------------------ | ----------- |
 | Sites | [Compatibilidad con fragmentos de contenido en la API HTTP de Assets](/help/assets/content-fragments/assets-api-content-fragments.md) | [Envío de fragmentos de contenido con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>junto con<br> [Fragmentos de contenido y OpenAPI de administración de modelos de fragmentos de contenido](/help/headless/content-fragment-openapis.md) |
+| Sites | Resumen del texto del fragmento de contenido | AEM Generar variaciones |
 | Sites | [Características de PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Ninguno |
 | Sites | [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) | Los editores preferidos para administrar el contenido headless en AEM son:<br>- [El Editor universal](https://www.aem.live/docs/aem-authoring) para la edición visual.<br>- [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición basada en formularios. |
 | [!DNL Sites] | [API de uso de JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API de uso de Java](https://experienceleague.adobe.com/es/docs/experience-manager-htl/content/java-use-api) |
@@ -56,10 +57,10 @@ Se ha anunciado que la funcionalidad de la tabla siguiente ya no se utiliza, per
 | [!DNL Assets] | Cargar recursos directamente en [!DNL Experience Manager]. Consulte [API de carga de recursos en desuso](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilice la [carga binaria directa](/help/assets/add-assets.md). Para obtener más información técnica, consulte [API de carga directa](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | No se admiten [determinados pasos](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) en el flujo de trabajo `DAM Asset Update`, incluida la llamada a herramientas de línea de comandos como [!DNL ImageMagick]. | [Los microservicios de recursos](/help/assets/asset-microservices-overview.md) sustituyen a muchos flujos de trabajo. Para el procesamiento personalizado, utilice [flujos de trabajo posteriores al procesamiento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg transcodificar vídeos. | Para la generación de miniaturas de FFmpeg, use los [microservicios de Asset](/help/assets/asset-microservices-overview.md). Para la transcodificación FFmpeg, utilice [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | IU de replicación del árbol en la pestaña de agentes de replicación &quot;Distribuir&quot; (eliminación después del 30 de septiembre de 2021) | Enfoques [Administrar publicación](/help/operations/replication.md#manage-publication) o [Paso de flujo de trabajo de activación de árbol](/help/operations/replication.md#tree-activation). |
-| [!DNL Foundation] | La pestaña Distribuir de la pantalla del administrador del agente de replicación y la API de replicación no pueden replicar paquetes de contenido de más de 10 MB. | [Administrar publicación](/help/operations/replication.md#manage-publication) o [Paso de flujo de trabajo de activación de árbol](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | IU de replicación del árbol en la pestaña de agentes de replicación &quot;Distribuir&quot; (eliminación después del 30 de septiembre de 2021) | Enfoques [Administrar publicación](/help/operations/replication.md#manage-publication) o [Paso de flujo de trabajo de activación de árbol](/help/operations/tree-replication-workflows.md#tree-activation). |
+| [!DNL Foundation] | La pestaña Distribuir de la pantalla del administrador del agente de replicación y la API de replicación no pueden replicar paquetes de contenido de más de 10 MB. | [Administrar publicación](/help/operations/replication.md#manage-publication) o [Paso de flujo de trabajo de activación de árbol](/help/operations/tree-replication-workflows.md#tree-activation) |
 | [!DNL Foundation] | Las integraciones que utilizan credenciales generadas a partir de proyectos de Adobe Developer Console perderán gradualmente la compatibilidad con las credenciales de la cuenta de servicio (JWT). Desde el 1 de mayo de 2024, no se pueden crear nuevas credenciales de cuenta de servicio (JWT) en Adobe Developer Console. Las credenciales de la cuenta de servicio (JWT) existentes se pueden utilizar para las integraciones configuradas hasta el 1 de enero de 2025, después de lo cual dejan de funcionar y es necesario que los clientes migren a las credenciales de servidor a servidor de OAuth. [Más información](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) a las credenciales de servidor a servidor de OAuth. |
-| [!DNL Foundation] | Flujo de trabajo Publicar árbol de contenido y el paso de flujo de trabajo Publicar árbol de contenido relacionado, que se utilizaba para replicaciones de jerarquías de contenido. | Utilizar [Paso del flujo de trabajo de activación de árbol](/help/operations/replication.md#tree-activation), que es más eficaz. |
+| [!DNL Foundation] | Flujo de trabajo Publicar árbol de contenido y el paso de flujo de trabajo Publicar árbol de contenido relacionado, que se utilizaba para replicaciones de jerarquías de contenido. | Utilizar [Paso del flujo de trabajo de activación de árbol](/help/operations/tree-replication-workflows.md#tree-activation), que es más eficaz. |
 | [!DNL Foundation] | Usar YUI para comprimir o minimizar las bibliotecas de cliente de JavaScript. Adobe no tiene previsto actualizar ya más la biblioteca de YUI. | Adobe recomienda a los clientes cambiar a Google Closure Compiler (GCC) para su implementación. |
 | [!DNL Foundation] | Compatibilidad con com.adobe.granite.oauth.server | Integración de IMS de Adobe |
 
