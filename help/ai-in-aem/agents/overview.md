@@ -4,7 +4,7 @@ description: Obtenga información sobre los agentes disponibles en AEM para acel
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: d47eebef32cbecfcd4490d16fff4277b1c7d390c
+source-git-commit: d773681c29a813d9781e0d7449a51eb66e2fbdb3
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 2%
@@ -18,7 +18,7 @@ Estos agentes están disponibles en Adobe Experience Manager (AEM) as a Cloud Se
 
 >[!IMPORTANT]
 >
->Los agentes solo están disponibles en AEM as a Cloud Service y Edge Delivery Services.
+>* Los agentes solo están disponibles en AEM as a Cloud Service y Edge Delivery Services.
 >
 >* Los agentes estarán disponibles progresivamente para AEM 6.5 LTS en Managed Services. Los clientes interesados en participar en nuestro programa de innovación conjunta deben ponerse en contacto con su ingeniero de éxito del cliente de Adobe, su administrador de cuentas técnico o el administrador de servicio al cliente para comprobar la disponibilidad.
 >* Los agentes no estarán disponibles en AEM 6.5/AEM 6.5 LTS local.
@@ -27,11 +27,11 @@ Estos agentes están disponibles en Adobe Experience Manager (AEM) as a Cloud Se
 
 Tiene tres opciones para acceder a los agentes.
 
-1. Puede tener la opción de acceder a los agentes de AEM a través del programa [Probar antes de comprar](http://experienceleague.adobe.com/es/docs/experience-cloud-ai/experience-cloud-ai/agents/trial), que se está desplegando por fases. Su CSM o TAM pueden ayudarle a confirmar la disponibilidad de su organización.
+1. Puede tener la opción de acceder a los agentes de AEM a través del programa [Probar antes de comprar](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial), que se está desplegando por fases. Su CSM o TAM pueden ayudarle a confirmar la disponibilidad de su organización.
 1. Explore a los agentes de AEM [mediante una versión de prueba.](https://www.aem.live/developer/aem-playground)
 1. Conéctese con su CSM o TAM para discutir el acceso a través del SKU de Agentic si esto se ajusta a su hoja de ruta y planes de evaluación.
 
-A medida que se disponga de nuevas habilidades en la fase de lanzamiento anticipado, ofreceremos oportunidades adicionales para participar y compartir comentarios. Le recomendamos que vea [esta página](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) para ver las actualizaciones.
+A medida que se disponga de nuevas habilidades en la fase de lanzamiento anticipado, ofreceremos oportunidades adicionales para participar y compartir comentarios. Le recomendamos que vea [esta página](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) para ver las actualizaciones.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
