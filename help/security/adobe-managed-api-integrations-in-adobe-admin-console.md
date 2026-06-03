@@ -42,7 +42,7 @@ Adobe aplica los siguientes principios a cada integración de servicios que se e
 >
 >Cada entrada de catálogo enumera el producto de Adobe y el perfil de producto, la función o el permiso para esa integración de servicios. Utilice esa ruta al inspeccionar, deshabilitar o restaurar una integración.
 >
->El nombre que se muestra en Admin Console es el identificador autorizado. Si ve una integración de servicio que no aparece en la lista a continuación, póngase en contacto con el [Servicio de atención al cliente de Adobe](https://helpx.adobe.com/support.html) antes de deshabilitarla.
+>El nombre que se muestra en Admin Console es el identificador autorizado. Si ve una integración de servicio que no aparece en la lista a continuación, póngase en contacto con el [Servicio de atención al cliente de Adobe](https://helpx.adobe.com/es/support.html) antes de deshabilitarla.
 
 ## Catálogo de integraciones administradas de Adobe {#catalog-of-adobe-managed-integrations}
 
@@ -50,7 +50,7 @@ En la tabla siguiente se enumeran las integraciones de servicio que Adobe aprovi
 
 | Nombre tal como se muestra en Admin Console | Qué hace | Utilizado por | Permisos concedidos | Habilitado de manera predeterminada |
 |---|---|---|---|---|
-| **Integración de CDN administrada por AEM** | Permite que el servicio de LLM Optimizer actualice en su nombre las **reglas de enrutamiento de tráfico agéntico** de CDN administrado por AEM as a Cloud Service para que los rastreadores de IA y agente (como ChatGPT, Perplexity y Claude) se puedan enrutar a orígenes optimizados de LLM Optimizer sin cambios manuales de CDN por parte de su equipo. | **LLM Optimizer** mediante la capacidad [Optimizar en Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview) | Función **Administrador de implementación** de Cloud Manager | Sí |
+| **Integración de CDN administrada por AEM** | Permite que el servicio de LLM Optimizer actualice en su nombre las **reglas de enrutamiento de tráfico agéntico** de CDN administrado por AEM as a Cloud Service para que los rastreadores de IA y agente (como ChatGPT, Perplexity y Claude) se puedan enrutar a orígenes optimizados de LLM Optimizer sin cambios manuales de CDN por parte de su equipo. | **LLM Optimizer** mediante la capacidad [Optimizar en Edge](https://experienceleague.adobe.com/es/docs/llm-optimizer/using/resources/optimize-at-edge/overview) | Función **Administrador de implementación** de Cloud Manager | Sí |
 
 La siguiente captura de pantalla es un ejemplo de la **Integración de CDN administrada por AEM** que se menciona en la tabla anterior.
 
@@ -58,7 +58,7 @@ La siguiente captura de pantalla es un ejemplo de la **Integración de CDN admin
 
 >[!NOTE]
 >
->Adobe proporciona actualmente una integración de servicio en este modelo. Adobe actualiza esta tabla cuando servicios adicionales utilizan el mismo método. Si su Admin Console muestra otra integración de servicios aprovisionada por Adobe que no aparece en la lista, use Admin Console como fuente fiable y póngase en contacto con el [Servicio de atención al cliente de Adobe](https://helpx.adobe.com/support.html) para obtener más información.
+>Adobe proporciona actualmente una integración de servicio en este modelo. Adobe actualiza esta tabla cuando servicios adicionales utilizan el mismo método. Si su Admin Console muestra otra integración de servicios aprovisionada por Adobe que no aparece en la lista, use Admin Console como fuente fiable y póngase en contacto con el [Servicio de atención al cliente de Adobe](https://helpx.adobe.com/es/support.html) para obtener más información.
 
 ## Impacto de la desactivación de una integración {#impact-of-disabling-an-integration}
 
@@ -96,4 +96,4 @@ Si anteriormente deshabilitó una integración y desea habilitarla de nuevo:
 
 >[!NOTE]
 >
->Si no encuentra la integración de servicios en el cuadro de diálogo del usuario agregado (por ejemplo, porque Adobe la eliminó de su organización en lugar de solo del perfil), póngase en contacto con el [Servicio de atención al cliente de Adobe](https://helpx.adobe.com/support.html) para solicitar el aprovisionamiento. Adobe no vuelve a agregar automáticamente una integración de servicios que haya eliminado su administrador.
+>Si no encuentra la integración de servicios en el cuadro de diálogo del usuario agregado (por ejemplo, porque Adobe la eliminó de su organización en lugar de solo del perfil), póngase en contacto con el [Servicio de atención al cliente de Adobe](https://helpx.adobe.com/es/support.html) para solicitar el aprovisionamiento. Adobe no vuelve a agregar automáticamente una integración de servicios que haya eliminado su administrador.
