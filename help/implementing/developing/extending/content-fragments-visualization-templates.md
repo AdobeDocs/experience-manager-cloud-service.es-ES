@@ -3,9 +3,9 @@ title: Creación de plantillas de visualización para fragmentos de contenido
 description: Vista previa y publicación de fragmentos de contenido con plantillas de visualización. Descubra cómo puede crear y personalizar las plantillas.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: c2f78402233872c0b9b8c12e767130f461366b24
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2119'
 ht-degree: 3%
 
 ---
@@ -956,7 +956,7 @@ Algunas sugerencias para la solución de problemas incluyen:
 | El campo multivalor solo muestra el primer elemento | La matriz con cinco elementos solo procesa uno | Usar `{{#each fields.tags}}` para repetir todos los elementos |
 | El acceso al índice de matriz no funciona | `{{{fields.tags[0]}}}` se representa vacío | Usar sintaxis con corchetes: `{{{fields.tags.[0]}}}` |
 | Los fragmentos referenciados no aparecen | `hasReferencedFragments` siempre es falso | Habilitar hidratación: `?hydration=%7B%22enabled%22%3Atrue%7D;` también comprobar `{{#if referencesError}}` |
-| La plantilla no procesa nada | Página vacía o salida en blanco | Buscar bloques de `{{#if}}` o `{{#each}}` sin cerrar; agregar salida de diagnóstico: `<pre>hasFields: {{hasFields}}`|`title: {{properties.title}}</pre>` |
+| La plantilla no procesa nada | Página vacía o salida en blanco | Compruebe si hay `{{#if}}` o `{{#each}}` bloques sin cerrar; agregue la salida de diagnóstico: `<pre>hasFields: {{hasFields}} \| title: {{properties.title}}</pre>` |
 | Los comentarios aparecen en la página representada | Texto de comentario de HTML visible para los usuarios finales | Use los comentarios de Handlebars `{{! comment }}` en lugar de HTML `<!-- comment -->` |
 | El condicional siempre se evalúa como verdadero | `{{#if fields.enabled}}` siempre es verdadero | Nota: la cadena `"false"` es verdadera en Handlebars. Solo los datos reales `false`, `null`, `undefined`, `0`, `""` y `[]` son falsos. |
 | Caracteres especiales representados como entidades | `&lt;`, `&amp;` mostrado en lugar de `<`, `&` | Utilice llaves triples para el contenido de HTML procesado previamente: `{{{fields.content}}}` |
