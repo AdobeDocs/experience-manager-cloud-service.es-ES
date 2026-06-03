@@ -4,10 +4,10 @@ description: Obtenga más información sobre algunas de las funciones de Content
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: a7e847b70b02f8c7da880ac530792d56999035a6
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 58%
+source-wordcount: '1603'
+ht-degree: 55%
 
 ---
 
@@ -37,10 +37,14 @@ Por ejemplo, una búsqueda de `Woman drinking coffee` también puede devolver re
 
 Los administradores pueden habilitar o deshabilitar la Búsqueda por IA en Content Hub mediante el menú Configuraciones, seleccionando Búsqueda por IA o búsqueda de palabras clave tradicional.
 
+[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#ai-search-aem-assets-content-hub"}
+
 
 **Opciones de ordenación personalizadas**
 
 Content Hub ahora permite a los administradores habilitar campos de metadatos personalizados como opciones de ordenación en la página de inicio de Content Hub. Además de las opciones de ordenación predeterminadas Tamaño, Modificado, Nombre y Relevancia, los administradores pueden configurar campos de metadatos específicos de la empresa como Canal, Región, SKU o Campaña para ayudar a los usuarios a organizar los resultados de búsqueda de forma más eficaz.
+
+[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#configure-sorting-aem-assets-content-hub"}
 
 **Compatibilidad con eventos de descarga y búsqueda de recursos para las API de envío**
 
@@ -48,9 +52,14 @@ Las API de entrega de AEM Assets ahora admiten eventos de búsqueda y descarga d
 
 Con perspectivas impulsadas por eventos, los equipos pueden comprender mejor la participación en el contenido y crear flujos de trabajo de recursos digitales más conectados. Para obtener más información, consulte la [documentación de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/asset_downloaded).
 
+**URL de entrega de recursos**
+
+Content Hub ahora permite a los usuarios copiar la URL de entrega de un recurso directamente desde las propiedades del recurso. Esta mejora facilita el uso compartido e incrustado de recursos aprobados en sitios web, aplicaciones y sistemas externos. Al proporcionar un acceso rápido a los vínculos listos para la entrega, los equipos pueden optimizar los flujos de trabajo de distribución de contenido y acelerar la reutilización de recursos en las experiencias digitales.
+
 >[!IMPORTANT]
 >
 >Estas funciones están disponibles como funciones de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
+
 
 ## Funciones de la versión de febrero de 2026 {#february-2026-release-features}
 
@@ -60,7 +69,7 @@ En Content Hub, el agente de control de AEM garantiza que solo las personas adec
 
 ![Información general sobre administración de permisos](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## Funciones de la versión de octubre de 2025 {#october-2025-release-features}
@@ -81,7 +90,7 @@ Ahora puede marcar colecciones como Favoritos en Content Hub, lo que facilita su
 
 Los administradores de Content Hub ahora pueden anclar colecciones en Content Hub para acceder rápidamente a ellas. Las colecciones ancladas se muestran en una sección **[!UICONTROL Anclada]** específica de la página principal de Colecciones, lo que facilita mantener las colecciones importantes a mano.
 
-[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 ## Funciones de la versión de agosto de 2025 {#august-release-features}
 

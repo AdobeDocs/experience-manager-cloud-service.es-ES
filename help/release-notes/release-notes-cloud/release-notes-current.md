@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: ccca1d88486ff1c1ac2e9272287ce74bc0ac10b1
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '2225'
+source-wordcount: '2282'
 ht-degree: 28%
 
 ---
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491493/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -110,9 +110,14 @@ Las API de entrega de AEM Assets ahora admiten eventos de búsqueda y descarga d
 
 Con perspectivas impulsadas por eventos, los equipos pueden comprender mejor la participación en el contenido y crear flujos de trabajo de recursos digitales más conectados. Para obtener más información, consulte la [documentación de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/asset_downloaded).
 
+**URL de entrega de recursos**
+
+Content Hub ahora permite a los usuarios copiar la URL de entrega de un recurso directamente desde las propiedades del recurso. Esta mejora facilita el uso compartido e incrustado de recursos aprobados en sitios web, aplicaciones y sistemas externos. Al proporcionar un acceso rápido a los vínculos listos para la entrega, los equipos pueden optimizar los flujos de trabajo de distribución de contenido y acelerar la reutilización de recursos en las experiencias digitales.
+
 >[!IMPORTANT]
 >
 >Estas funciones están disponibles como funciones de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
+
 
 ### Nuevas funciones en Dynamic Media con funciones de OpenAPI {#new-features-dynamic-media-openapi}
 
@@ -156,7 +161,7 @@ Acelere la migración de AEM 6.5 (o anterior) a AEM as a Cloud Service (pila de 
 
 Obtenga más información acerca de las [herramientas de IA del IDE para la migración en la nube](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md), y también sobre otros [desarrollos locales con herramientas de IA](/help/ai-in-aem/local-development-with-ai-tools.md) (habilidades del agente y servidores MCP locales).
 
->[!VIDEO](https://video.tv.adobe.com/v/3491441/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
 
 #### Cambios de visualización de estado de cola de replicación {#replication-queue-status-display}
 

@@ -2,9 +2,9 @@
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 7e0c34627aa3ac873aa94f836fe1c30d70389e19
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '3050'
+source-wordcount: '2850'
 ht-degree: 8%
 
 ---
@@ -35,7 +35,7 @@ Experience Manager Assets permite a los administradores configurar las opciones 
 
 * Cualquier vínculo personalizado que necesite incluir en Content Hub, además de los recursos, las colecciones y las perspectivas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472949/?captions=spa&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Requisitos previos {#prerequisites-configuration-ui}
 
@@ -160,8 +160,8 @@ Las propiedades activadas en la interfaz de usuario de configuración se muestra
 ### Tarjeta de recursos {#asset-card}
 
 También puede configurar las propiedades de metadatos clave que necesita mostrar en la **tarjeta de recursos** hasta un máximo de 6 campos.
-![metadatos de clave en la tarjeta de recursos](/help/assets/assets/asset-card-metadata.png)
-Ejecute los siguientes pasos para configurar las propiedades de los metadatos para que se muestren en la **[!UICONTROL tarjeta de recursos]**:
+![metadatos clave en la tarjeta de recursos](/help/assets/assets/asset-card-metadata.png)
+Siga estos pasos para configurar las propiedades de los metadatos para que se muestren en la **[!UICONTROL tarjeta de recursos]**:
 
 1. En la interfaz de usuario de [Configuraciones](#access-configuration-options-content-hub), haga clic en **Tarjeta de recursos**.
 2. Haga clic en **Agregar metadatos**. Se muestra el cuadro de diálogo **Agregar metadatos de tarjeta de recursos**.
@@ -177,6 +177,8 @@ Los administradores pueden definir los campos de metadatos que se buscan cuando 
 >[!CAUTION]
 >
 >Se recomienda seleccionar cuidadosamente los campos que marca como campos en los que se puede buscar. Incluya solo aquellos campos que es probable que los usuarios busquen y que ayuden a devolver resultados significativos. Los campos como las fechas y los números son más adecuados para filtrar y ordenar en lugar de como contenido en el que se puede buscar. Marcar demasiados campos como en los que se puede buscar puede afectar a la calidad y al rendimiento de los resultados de búsqueda.
+>
+>Las propiedades de etiquetas solo están habilitadas para el filtrado y no se pueden buscar.
 
 1. En la interfaz de usuario de [Configuraciones](#access-configuration-options-content-hub), haga clic en **[!UICONTROL Agregar metadatos]**.
 
@@ -190,7 +192,7 @@ Del mismo modo, puede hacer clic en ![Editar icono](assets/do-not-localize/edit_
 ### Personalización de marca {#configure-branding-content-hub}
 
 Como administrador, personalice el portal [!DNL Content Hub] para que cumpla con los requisitos de marca.
-![restablecer valor predeterminado](/help/assets/assets/reset-default-content-hub.png)
+![restablecer predeterminado](/help/assets/assets/reset-default-content-hub.png)
 En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Promoción de marca]**, use las secciones **[!UICONTROL Banner]**, **[!UICONTROL Colores]** y **[!UICONTROL Imagen de banner]** para ejecutar las siguientes personalizaciones:
 
 1. [Cambiar la imagen del logotipo de la sección [!UICONTROL Imagen del logotipo]](#Change-the-logo-image)
@@ -225,14 +227,14 @@ En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!U
 #### Añada un título y texto independiente al titular y cambie el color del texto{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
 En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Promoción de marca]**, use los campos respectivos en la sección **[!UICONTROL Banner]** para agregar títulos y textos del cuerpo al banner.
-Haga clic en el cuadro cuadrado situado junto al **[!UICONTROL Color del texto del titular]** para seleccionar un color de texto del selector de color para el texto del titular o especifique el código hexadecimal del color en el campo situado junto al cuadro cuadrado del selector de color.
+Haga clic en el cuadro cuadrado al lado del **[!UICONTROL color del texto del titular]** para seleccionar un color de texto del selector de color para el texto del titular o especifique el código hexadecimal del color en el campo situado al lado del cuadro cuadrado del selector de color.
 ![centro de contenido de texto de banner](/help/assets/assets/banner-text-content-hub.png)
 
 #### Cambio del color principal y secundario{#Change-the-primary-and-secondary-color}
 
-En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Promoción de marca]**, use la sección **[!UICONTROL Colores]** para establecer los colores primarios y secundarios seleccionándolos con el selector de color o definiendo el código hexadecimal del color. Estos colores establecen los colores de fondo, texto e icono de los elementos de la interfaz de usuario para alinear la interfaz de usuario de [!DNL Content Hub] con el tema de la marca.
+En la página ![Promoción de marca](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Promoción de marca]**, use la sección **[!UICONTROL Colores]** para establecer los colores primarios y secundarios seleccionándolos con el selector de color o definiendo el código hexadecimal del color. Estos colores definen los colores de fondo, texto e icono de los elementos de la interfaz de usuario para alinear la interfaz de usuario de [!DNL Content Hub] con el tema de la marca.
 ![color principal y secundario](/help/assets/assets/primary-secondary-color-content-hub1.png)
-**[!UICONTROL Color principal]:** El esquema de colores principal se aplica a acciones de selección, elementos interactivos como casillas de verificación, barras de búsqueda y conmutadores de alternancia en [!DNL Content Hub], incluida la página principal de [!DNL Content Hub] y la página de [!UICONTROL Configuración]. También se aplica a las opciones de acción disponibles en las interfaces principales [!DNL Content Hub], como las opciones disponibles en **[!UICONTROL Todas las páginas de Assets]** y **[!UICONTROL Colecciones]**.
+**[!UICONTROL Color principal]:** El esquema de colores principal se aplica a las acciones de selección, los elementos interactivos como las casillas de verificación, las barras de búsqueda y los conmutadores de alternancia en [!DNL Content Hub], incluida la página principal de [!DNL Content Hub] y la página de [!UICONTROL Configuración]. También se aplica a las opciones de acción disponibles en las interfaces principales de [!DNL Content Hub], como las opciones disponibles en **[!UICONTROL Todas las páginas de Assets]** y **[!UICONTROL Colecciones]**.
 
 **[!UICONTROL Color secundario]:** En la página de inicio de [!DNL Content Hub], el esquema de colores secundario se aplica a las opciones de la interfaz de usuario y a los campos de entrada disponibles en los cuadros de diálogo. Se aplica a todas las opciones de menú de configuración disponibles en la página [!UICONTROL Configuración], excepto a las acciones de selección, las casillas de verificación, las barras de búsqueda y los modificadores de alternancia.
 
@@ -264,7 +266,7 @@ Si la visibilidad de los recursos caducados está habilitada, Content Hub tambi�
 
 ### Representaciones {#renditions-content-hub}
 
-Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para ello, ejecute los siguientes pasos:
 

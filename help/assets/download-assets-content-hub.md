@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo descargar uno o varios recursos y 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: bfef942f248d926d699ed489a5c117f89da76459
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1471'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ Para descargar uno o varios recursos y sus representaciones, ejecute los siguien
 
   ![descargar un recurso](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 
-  También puede hacer clic en la miniatura del recurso y, a continuación, hacer clic en ![descargar](/help/assets/assets/download-icon.svg) para seleccionar y ver las representaciones disponibles en el cuadro de diálogo antes de descargarlas.
+  También puede hacer clic en la miniatura del recurso y, a continuación, hacer clic en ![descargar](/help/assets/assets/download-icon.svg) para seleccionar y ver las representaciones disponibles en el cuadro de diálogo antes de descargarlas. También puede copiar la URL de entrega de las representaciones de recursos si se desplaza a Propiedades del recurso y hace clic en el icono Descargar. La opción para copiar la URL de entrega solo está disponible si el objetivo de aprobación del recurso es [establecido en Delivery](/help/assets/approve-assets-content-hub.md#set-approval-target).
 
 * Para descargar varios recursos y sus representaciones:
    1. Seleccione los recursos, haga clic en ![descargar](/help/assets/assets/download-icon.svg) **[!UICONTROL Descargar]** y revise la lista de recursos seleccionados en el cuadro de diálogo **[!UICONTROL Descargar recursos]**. Haga clic en ![anular la selección](/help/assets/assets/Close.svg) junto a un recurso para anular su selección en la lista.
