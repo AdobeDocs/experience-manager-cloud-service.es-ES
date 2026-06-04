@@ -1,93 +1,92 @@
 ---
 title: Aplicar recortes inteligentes de vídeo a vídeos aprobados
-description: Dynamic Media con funciones OpenAPI le permiten generar automáticamente salidas de recorte inteligente de vídeo para recursos de vídeo aprobados en Adobe Experience Manager (AEM).
+description: Dynamic Media con funciones OpenAPI le permite generar salidas de recorte inteligente de vídeo para recursos de vídeo en Adobe Experience Manager (AEM).
 role: Admin, User
-badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
-exl-id: video-smartcrop-dmwoapi
-source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Se aplica a los AEM Assets."
+source-git-commit: 200d311ff279b6db8826a8c0cecd5b60d62f0585
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '424'
 ht-degree: 2%
 
 ---
 
 
-# Aplicar recortes inteligentes de vídeo a vídeos aprobados {#apply-video-smart-crops-dmwoapi}
+Aplicar recortes inteligentes de vídeo a vídeos aprobados {#apply-video-smart-crops-dmwoapi}
+================================================
 
-[!DNL Dynamic Media with OpenAPI capabilities] le permite generar automáticamente salidas de recorte inteligente de vídeo para los recursos de vídeo en [!DNL Adobe Experience Manager (AEM)]. Los recortes inteligentes de vídeo analizan el contenido de vídeo y ajustan el marco de forma dinámica para mantener al sujeto clave enfocado en diferentes relaciones de aspecto y dispositivos.
+[!DNL Dynamic Media with OpenAPI capabilities] le permite generar salidas de recorte inteligente de vídeo para los recursos de vídeo en [!DNL Adobe Experience Manager (AEM)].
 
-Los recortes inteligentes de vídeo se generan automáticamente cuando la función está habilitada y se aprueba el recurso de vídeo
+Los recortes inteligentes de vídeo analizan el contenido de vídeo y ajustan el marco de forma dinámica para mantener al sujeto clave enfocado en diferentes relaciones de aspecto y dispositivos.
 
-## Antes de empezar {#prerequisites-for-video-smart-crops}
+Para utilizar esta función, configure el esquema de metadatos para los recursos de vídeo. Una vez activado, los usuarios pueden aplicar recortes inteligentes de vídeo actualizando los metadatos del recurso y aprobándolo.
+
+Antes de comenzar {#prerequisites-for-video-smart-crops}
+--------------------------------------------------------
 
 Asegúrese de que dispone de:
 
 * Acceso a [!DNL AEM Assets as a Cloud Service].
 * Permite editar esquemas de metadatos.
 * Dynamic Media con las funcionalidades de OpenAPI habilitadas para su entorno.
-* Recursos de vídeo que se pueden marcar como **[!UICONTROL Aprobado]**.
+* Recursos de vídeo disponibles en AEM Assets.
 
-## Activar recortes inteligentes de vídeo para vídeos {#enable-video-smart-crops}
+Activar recortes inteligentes de vídeo para los vídeos (administrador) {#enable-video-smart-crops}
+------------------------------------------------------------------------
 
-Para habilitar los recortes inteligentes de vídeo, configure el esquema de metadatos utilizado para los recursos de vídeo:
+Para habilitar los recortes inteligentes de vídeo, configure el esquema de metadatos utilizado para los recursos de vídeo.
+
+Ejecute los siguientes pasos:
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**.
-2. Abra el esquema de metadatos aplicable (por ejemplo, **default**).
-3. Seleccione el formulario **Vídeo** y haga clic en **[!UICONTROL Editar]**.
-4. Agregue un nuevo **[!UICONTROL campo desplegable]** y configure lo siguiente:
 
-   * **Etiqueta de campo**: Crear recortes inteligentes de vídeo
+2. Abra el esquema de metadatos aplicado a los recursos de vídeo y haga clic en **[!UICONTROL Editar]**.
+
+3. En el Editor de esquemas de metadatos, seleccione la ficha **[!UICONTROL Vídeo]**.
+
+4. Desde la sección **[!UICONTROL Generar formulario]**, arrastre el componente **[!UICONTROL Desplegable]** al formulario.
+
+   ![Se agregó el campo Crear recorte inteligente de vídeo al esquema de metadatos](/help/assets/assets/metadata-schema-form.png)
+
+5. Seleccione el campo recién agregado y configure lo siguiente en el panel **[!UICONTROL Configuración]**:
+
+   * **Etiqueta de campo**: especifique una etiqueta de campo de su elección.
    * **Asignar a propiedad**: `./jcr:content/dam:applyVideoSmartCrop`
 
-5. Añada los siguientes valores manualmente:
+6. En la sección **[!UICONTROL Opciones]**, agregue los siguientes valores:
 
    * Sí → verdadero
    * No hay → falso
 
-6. Guarde el esquema.
+   ![Configurar el campo Crear cultivos inteligentes de vídeo](/help/assets/assets/edit-setting1.png)
 
-La opción **Crear cultivos inteligentes de vídeo** ya está disponible en el formulario de metadatos de recursos de vídeo.
+7. Haga clic en **[!UICONTROL Guardar]**.
 
-<!--
-broken link
-![Create Video Smartcrops field](/help/assets/assets/video-smartcrop-metadata-field.png)
--->
+> **NOTA:** Si el esquema de metadatos `dm_video` se usa en su entorno, asegúrese de que también se aplique la misma configuración al esquema `dm_video`. Esto garantiza un comportamiento coherente de los recortes inteligentes de vídeo en todos los tipos de esquemas de vídeo.
 
-## Aplicar recortes inteligentes de vídeo a vídeos aprobados {#apply-video-smart-crops}
+Aplicar recortes inteligentes de vídeo a vídeos aprobados {#apply-video-smart-crops}
+----------------------------------------------------------------------
 
 Puede aplicar recortes inteligentes de vídeo a los recursos de vídeo si habilita el campo de metadatos y aprueba el recurso.
 
 Ejecute los siguientes pasos:
 
 1. En [!DNL Assets View], seleccione **[!UICONTROL Assets]** y navegue hasta su carpeta.
+
 2. Seleccione el recurso de vídeo.
-3. Haga clic en **[!UICONTROL Detalles]**.
-4. En el panel de metadatos, busque **[!UICONTROL Crear cultivos inteligentes de vídeo]**.
-5. Establezca el valor en **Yes** y, a continuación, haga clic en **[!UICONTROL Guardar]**.
-6. Establezca el estado del recurso en **[!UICONTROL Aprobado]**.
 
-Una vez aprobado el recurso, las salidas de recorte inteligente de vídeo se generan automáticamente.
+3. Haga clic en **[!UICONTROL Propiedades]**.
 
-## Ver salidas de recorte inteligente de vídeo {#view-video-smart-crops}
+4. En el panel de metadatos, establezca **[!UICONTROL Crear cultivos inteligentes de vídeo]** en **Sí**, actualice el estado del recurso a **[!UICONTROL Aprobado]** y haga clic en **[!UICONTROL Guardar]**.
 
-Una vez generados los recortes inteligentes de vídeo:
+   ![Recurso de vídeo aprobado con Video Smartcrop habilitado](/help/assets/assets/assets-create-video-smartcrops1.png)
 
-* Las salidas están disponibles durante la reproducción de vídeo.
+Se muestra un mensaje de confirmación después de que las propiedades se actualicen correctamente.
+
+Ver salidas de recorte inteligente de vídeo {#view-video-smart-crops}
+----------------------------------------------------------
+
+Una vez generados los recortes inteligentes de vídeo, incluya el parámetro `mode=smartcrop` en la solicitud de entrega de vídeo del extremo `/play` para procesarlos.
+
+* Los recortes inteligentes de vídeo se aplican de forma dinámica durante la reproducción cuando se utiliza el parámetro `mode=smartcrop`.
 * El visualizador de Dynamic Media selecciona automáticamente el recorte más adecuado en función del dispositivo y la relación de aspecto.
 * La reproducción de vídeo se ajusta dinámicamente para mantener el sujeto clave enfocado.
-
-## Usar vídeos recortados inteligentes de vídeo {#use-video-smart-crops}
-
-Puede utilizar salidas de recorte inteligente de vídeo dondequiera que se envíe el recurso de vídeo, como:
-
-* Páginas web
-* Aplicaciones
-* Reproductores de vídeo integrados
-
-El visor aplica automáticamente el recorte inteligente adecuado durante la reproducción.
-
->[!NOTE]
->
->* Los recortes inteligentes de vídeo solo se generan para **Recursos de vídeo aprobados**.
->* Asegúrese de que el campo **Crear cultivos inteligentes de vídeo** esté establecido en **Sí** antes de aprobar el recurso.
->* Los recortes inteligentes de vídeo no modifican el recurso original. El recorte se aplica de forma dinámica durante la reproducción.
