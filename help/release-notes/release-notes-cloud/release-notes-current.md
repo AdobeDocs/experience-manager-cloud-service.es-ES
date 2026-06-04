@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: 3443e9d000cf9ddc4f4f2ac18bcdf614688f5242
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2287'
 ht-degree: 28%
 
 ---
@@ -58,11 +58,11 @@ El acceso anticipado a las funciones que Adobe está desarrollando permite a los
 
 **Programas beta actuales**
 
-Las siguientes secciones enumeran los programas beta activos.
+Las siguientes secciones enumeran los programas beta activos y de acceso anticipado.
 
-### Agentes en AEM {#agents-in-aem}
+### Agentes en AEM (acceso anticipado){#agents-in-aem}
 
-Si desea explorar las nuevas y poderosas capacidades de AEM en producción, administración, optimización, detección y desarrollo, [obtenga información sobre cómo puede obtener acceso a ellas aquí.](/help/ai-in-aem/agents/overview.md)
+Si desea explorar las nuevas y poderosas capacidades de AEM en Producción, Gobernanza, Optimización, Descubrimiento y Desarrollo, [obtenga información sobre cómo puede obtener acceso a ellas aquí.](/help/ai-in-aem/agents/overview.md)
 
 <!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
