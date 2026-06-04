@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: 3443e9d000cf9ddc4f4f2ac18bcdf614688f5242
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2287'
 ht-degree: 28%
 
 ---
@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491493/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -58,11 +58,11 @@ El acceso anticipado a las funciones que Adobe está desarrollando permite a los
 
 **Programas beta actuales**
 
-Las siguientes secciones enumeran los programas beta activos.
+Las siguientes secciones enumeran los programas beta activos y de acceso anticipado.
 
-### Agentes en AEM {#agents-in-aem}
+### Agentes en AEM (acceso anticipado){#agents-in-aem}
 
-Si desea explorar las nuevas y poderosas capacidades de AEM en producción, administración, optimización, detección y desarrollo, [obtenga información sobre cómo puede obtener acceso a ellas aquí.](/help/ai-in-aem/agents/overview.md)
+Si desea explorar las nuevas y poderosas capacidades de AEM en Producción, Gobernanza, Optimización, Descubrimiento y Desarrollo, [obtenga información sobre cómo puede obtener acceso a ellas aquí.](/help/ai-in-aem/agents/overview.md)
 
 <!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
@@ -161,7 +161,7 @@ Acelere la migración de AEM 6.5 (o anterior) a AEM as a Cloud Service (pila de 
 
 Obtenga más información acerca de las [herramientas de IA del IDE para la migración en la nube](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md), y también sobre otros [desarrollos locales con herramientas de IA](/help/ai-in-aem/local-development-with-ai-tools.md) (habilidades del agente y servidores MCP locales).
 
->[!VIDEO](https://video.tv.adobe.com/v/3491441/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
 
 #### Cambios de visualización de estado de cola de replicación {#replication-queue-status-display}
 
