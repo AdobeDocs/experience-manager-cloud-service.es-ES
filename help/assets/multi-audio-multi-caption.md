@@ -3,7 +3,7 @@ title: Varios subtítulos y audio en Dynamic Media con vídeos de funciones de O
 description: Obtenga información sobre cómo añadir y administrar varias pistas de audio y subtítulos para recursos de vídeo en Dynamic Media con las funciones de OpenAPI en Adobe Experience Manager Assets.
 role: User
 badgeSaas: label="AEM Assets" type="Positive"
-source-git-commit: 111fa1857261c71999088b2c061ae778115e5ef4
+source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 6%
@@ -42,11 +42,11 @@ Asegúrese de lo siguiente:
 Para agregar pistas de audio a un vídeo:
 
 1. Vaya al recurso de vídeo cargado.
-2. Seleccione el recurso y haga clic en **Propiedades**.
-3. Abra la ficha **Pistas de subtítulos y audio**.
-4. Haga clic en **Cargar pistas de audio**.
-5. Seleccione uno o más `.mp3` archivos.
-6. Haga clic en el icono **Dibujar** junto al nombre del archivo de pista de audio.
+1. Seleccione el recurso y haga clic en **Propiedades**.
+1. Abra la ficha **Pistas de subtítulos y audio**.
+1. Haga clic en **Cargar pistas de audio**.
+1. Seleccione uno o más `.mp3` archivos.
+1. Haga clic en el icono **Dibujar** junto al nombre del archivo de pista de audio.
 
 En el cuadro de diálogo **Editar pista de audio**:
 
@@ -58,8 +58,8 @@ En el cuadro de diálogo **Editar pista de audio**:
 ![Cuadro de diálogo Pista de audio](/help/assets/assets/edit-audio1.png)
 
 1. Haga clic en **Guardar**.
-2. Si es necesario, repita la operación para pistas de audio adicionales.
-3. Haga clic en **Guardar y cerrar**.
+1. Si es necesario, repita la operación para pistas de audio adicionales.
+1. Haga clic en **Guardar y cerrar**.
 
 >[!NOTE]
 >
@@ -72,10 +72,10 @@ En el cuadro de diálogo **Editar pista de audio**:
 Para agregar subtítulos:
 
 1. Abra la página del vídeo **Propiedades**.
-2. Abra la pestaña **Subtítulos y pistas de audio**.
-3. Haga clic en **Crear pie de ilustración** > **Cargar archivos**.
-4. Seleccione uno o más `.vtt` archivos.
-5. Haga clic en el icono **Dibujar** junto al archivo de rótulo.
+1. Abra la pestaña **Subtítulos y pistas de audio**.
+1. Haga clic en **Crear pie de ilustración** > **Cargar archivos**.
+1. Seleccione uno o más `.vtt` archivos.
+1. Haga clic en el icono **Dibujar** junto al archivo de rótulo.
 
 ![Cuadro de diálogo Cargar pie de ilustración](/help/assets/assets/upload-caption.png)
 
@@ -112,16 +112,13 @@ La aprobación depende del recurso de vídeo principal:
 De forma predeterminada, se utiliza el audio original.
 
 1. Abrir **Subtítulos y pistas de audio**.
-
-2. Seleccione la pista de audio.
-
-3. Haga clic en **Establecer como predeterminado**.
+1. Seleccione la pista de audio.
+1. Haga clic en **Establecer como predeterminado**.
 
    ![Establecer como acción predeterminada](/help/assets/assets/set-default.png)
 
-4. Haga clic en **OK**.
-
-5. Haga clic en **Guardar y cerrar**.
+1. Haga clic en **OK**.
+1. Haga clic en **Guardar y cerrar**.
 
 ## Previsualizar audio y subtítulos {#preview-audio-captions}
 
@@ -131,7 +128,7 @@ Después del procesamiento:
 
    ![Reproductor de vista previa de vídeo](/help/assets/assets/preview-caption-audio.png)
 
-2. Usar controles del reproductor:
+1. Usar controles del reproductor:
 
    * Cambiar pistas de audio
    * Habilitar subtítulos
@@ -139,23 +136,21 @@ Después del procesamiento:
 ## Descargar subtítulos o archivos de audio {#download-tracks}
 
 1. Seleccione el pie de ilustración o el archivo de audio.
-
-2. Haga clic en **Descargar**.
+1. Haga clic en **Descargar**.
 
    ![Descargar acción de seguimiento](/help/assets/assets/download-caption.png)
 
-3. Haga clic en **Descargar**.
+1. Haga clic en **Descargar**.
 
 El archivo seleccionado se descargará en el sistema local.
 
 ## Eliminar pie de ilustración o archivos de audio {#delete-tracks}
 
 1. Seleccione el pie de ilustración o el archivo de audio.
-
-2. Haga clic en **Eliminar**.
+1. Haga clic en **Eliminar**.
 
    ![Eliminar acción de seguimiento](/help/assets/assets/delete-caption.png)
 
-3. Haga clic en **OK**.
+1. Haga clic en **OK**.
 
 No se puede eliminar el audio original extraído del vídeo.

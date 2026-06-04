@@ -3,7 +3,7 @@ title: Aptitud de catálogo del sitio
 description: Descubra cómo la aptitud para catálogos de sitios del agente de modernización de experiencias realiza análisis automatizados de un sitio web existente para admitir la planificación de la migración a Edge Delivery Services.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: f035a0fdbc4fe275e2af4665ba6f25292924af0f
+source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 0%
@@ -136,3 +136,4 @@ El conocimiento del catálogo del sitio tiene las siguientes limitaciones.
 * **Solo sitios públicos**: el destino debe ser de acceso público (sin autenticación, VPN ni firewall).
 * **No se admite contenido dinámico**: Es posible que no se capture el contenido que requiere la interacción del usuario para aparecer en el DOM.
 * **Límite predeterminado de 1000 URL**: la fase de análisis profundo está limitada de forma predeterminada a 1000 URL, [que se pueden sobrescribir](#sampling) hasta un máximo de 4000 URL.
+
