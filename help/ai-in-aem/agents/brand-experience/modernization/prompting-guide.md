@@ -4,9 +4,9 @@ description: En esta guía se proporcionan sugerencias para solicitar informaci�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 212c9c4db9904de0f9ec27cec9282df8d288a25a
+source-git-commit: 628d1db0be64205eab9b9992020c1b27e233b9b6
 workflow-type: tm+mt
-source-wordcount: '3163'
+source-wordcount: '3240'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,20 @@ Utilice este mensaje cuando migre contenido de un sitio web existente a Edge Del
 * El encabezado, la navegación y el pie de página se excluyen de la migración de páginas. Estas se gestionan mediante habilidades dedicadas.
 * Cada migración crea una infraestructura de importación (plantillas de página, analizadores de bloques, transformadores) para futuras importaciones masivas.
 * Las imágenes de Dynamic Media y Scene7 se detectan en el origen y se conservan como URL de DM en lugar de importarse como representaciones estáticas, por lo que las transformaciones interactivas y sobre la marcha permanecen intactas. Esto se aplica tanto a la creación de documentos como a las migraciones de AEM Sites/editor universal.
+
+### Catálogo del sitio {#site-catalog}
+
+Utilice este mensaje para analizar un sitio web existente y comprender su escala, plantillas y variantes de bloque antes de iniciar una migración. Los resultados se pueden usar para [importaciones masivas.](#bulk-import)
+
+#### Indicadores de ejemplo {#example-prompts-site-catalog}
+
+* &quot;Ámbito del sitio https://example.com&quot;
+* &quot;Buscar plantillas en https://example.com&quot;
+* &quot;Sitio del catálogo https://example.com&quot;
+* &quot;Cuántos tipos de página hay en https://example.com&quot;
+* &quot;Cuáles son los diseños de https://example.com&quot;
+
+Para obtener más información sobre la aptitud para catálogos de sitios, consulte el documento [Aptitud para catálogos de sitios.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
 
 ### Importación masiva {#bulk-import}
 

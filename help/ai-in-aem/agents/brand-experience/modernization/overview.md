@@ -4,9 +4,9 @@ description: Descubra cómo Experience Modernization Agent incorpora nuevos siti
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 8f964484f944d49cdc6c456147f060f29a20778e
+source-git-commit: f2ab0a3d604ed4cd07ec8922ed331dfc37b45e5f
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,16 @@ Empiece a usar la consola de modernización de Experience Platform
 ## Habilidad de documentación del proyecto {#project-documentation}
 
 Reconociendo la naturaleza de las entregas de proyectos que requieren mucho tiempo, [la aptitud para la documentación del proyecto](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md) puede generar automáticamente documentación completa una vez que se haya completado el trabajo de creación y desarrollo.
+
+## Aptitud de catálogo del sitio {#site-catalog}
+
+La aptitud para catálogos de sitios rastrea un sitio web existente, cataloga todas las plantillas de página y variantes de bloque, captura capturas de pantalla de cada plantilla y bloque y genera un paquete de informes interactivo de HTML para su revisión. Esta aptitud es valiosa para:
+
+* **Todo aquel que inicie un proyecto de migración** para obtener un inventario completo de diseños de página, variantes de bloque, configuraciones regionales y páginas por plantilla antes de escribir cualquier código, de modo que los equipos puedan planificar con precisión y determinar la complejidad con antelación
+* **Equipos realizan importaciones masivas** para identificar qué páginas comparten el mismo diseño, importan y perfeccionan manualmente primero las páginas representativas y luego importan de forma masiva todas las páginas restantes de esa plantilla
+* **Los posibles clientes y las partes interesadas del proyecto** deben comprender el alcance del esfuerzo
+
+Consulte el documento [Aptitud de catálogo del sitio](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md) para obtener más información.
 
 ## Ingeniero de resultados del agente (AOE) Delivery {#aoe-delivery}
 
