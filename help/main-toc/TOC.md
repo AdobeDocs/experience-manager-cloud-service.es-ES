@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 77b81e63078f95ad1c70c4e19af8d9be41bf2c84
+source-git-commit: 7b7e4bc576d13b39f7d8a8d8f942e9a16a8ada9a
 workflow-type: tm+mt
-source-wordcount: '7469'
+source-wordcount: '7474'
 ht-degree: 85%
 
 ---
@@ -758,11 +758,12 @@ ht-degree: 85%
          + [Restricción del envío de recursos](/help/assets/restrict-assets-delivery.md)
          + [Integración de AEM Assets remoto con AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [Previsualización de recursos](/help/assets/preview-assets.md)
-         + [Preguntas frecuentes](/help/assets/dynamic-media-open-apis-faqs.md)
          + [Configuración del dominio personalizado](/help/assets/configure-custom-domain.md)
          + [Optimizar imágenes](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
          + [Creación de URL de vanidad](/help/assets/vanity-urls.md)
          + [Administración de caché](/help/assets/cache-management-dynamic-media-open-api.md)
+         + [Audio múltiple y subtítulos múltiples](/help/assets/multi-audio-multi-caption.md)
+         + [Preguntas frecuentes](/help/assets/dynamic-media-open-apis-faqs.md)
    + Uso de la vista Recursos {#assets-view}
       + [Introducción](/help/assets/assets-view-introduction.md)
       + [Introducción](/help/assets/get-started-assets-view.md)
