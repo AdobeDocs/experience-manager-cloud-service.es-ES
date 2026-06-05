@@ -25,7 +25,7 @@ Su contrato con Adobe define el número y los tipos de soluciones disponibles pa
 
 >[!NOTE]
 >
->>Según los derechos de su organización, también puede habilitar Claves gestionadas por el cliente (CMK) para un programa de producción. CMK le permite proporcionar sus propias claves de cifrado para los datos en reposo. Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+>&#x200B;>Según los derechos de su organización, también puede habilitar Claves gestionadas por el cliente (CMK) para un programa de producción. CMK le permite proporcionar sus propias claves de cifrado para los datos en reposo. Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 En la siguiente tabla se describen los escenarios comunes de las soluciones disponibles y los programas de producción típicos creados en base a ellas.
 
