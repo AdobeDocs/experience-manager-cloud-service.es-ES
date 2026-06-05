@@ -4,9 +4,9 @@ description: Estas son las notas de la versión de la vista previa del editor un
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: e9b972bcc2c1570ecfbce09550e4df143e2b64a8
+source-git-commit: ca134ec3e691e9e8a3f5609c786720c91780ceeb
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Notas de la versión de Universal Editor Preview {#preview}
 
-Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 28 de mayo de 2026.
+Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 11 de junio de 2026.
 
 Estas notas de la versión de **preview** se proporcionan para que sepa qué cambios se avecinan en el editor universal y pueda probarlos al [cambiar a la versión de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,4 +28,5 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 
 ## Próximos cambios {#upcoming-improvements}
 
-* Se corrigió un problema en el cual al cambiar el texto seleccionado de *Encabezado* a *Código* en el Editor de texto enriquecido, se podía revertir el formato a *Párrafo* en lugar de conservar el estilo de código seleccionado.
+* Se ha corregido un problema en el cual los nodos vacíos no se eliminaban correctamente del JCR durante determinadas operaciones.
+* Las imágenes decorativas ahora se ocultan correctamente de las tecnologías de asistencia.
