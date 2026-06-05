@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 657d097b36ffe361655999d51b0a95ec497ddc48
+source-git-commit: 4b0145191ec0e31e227b59b99d7dff098f57d9a2
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 27%
@@ -278,7 +278,7 @@ En cuanto a la observabilidad, AEM Cloud Service admite actualmente [New Relic O
 #### Extensibilidad de la IU para la vista Assets {#ui-extensibility-assets-view}
 
 La vista de Assets admite la extensibilidad de la interfaz de usuario, una capacidad que da prioridad al desarrollador y que permite a los clientes adaptar la experiencia predeterminada para satisfacer sus requisitos empresariales específicos.
-Los clientes pueden aprovechar los puntos de extensión estables existentes siguiendo la documentación para desarrolladores de Adobe para crear e implementar extensiones con un esfuerzo mínimo. En el caso de los casos de uso en los que aún no se dispone de un punto de extensión necesario, Adobe trabaja directamente con los clientes para explorar los requisitos y evaluar la viabilidad técnica de ofrecer nuevas API de extensibilidad adaptadas a sus necesidades, y puede ofrecer nuevas API como **versiones beta**.
+Los clientes pueden aprovechar los puntos de extensión estables existentes siguiendo la documentación para desarrolladores de Adobe para crear e implementar extensiones con un esfuerzo mínimo. En el caso de los casos de uso en los que aún no se dispone de un punto de extensión necesario, Adobe trabaja directamente con los clientes para explorar los requisitos y evaluar la viabilidad técnica de ofrecer nuevas API de extensibilidad adaptadas a sus necesidades, y puede ofrecer nuevas API como **Versiones de Beta**.
 Además, Adobe ha desarrollado una **herramienta de generación de extensiones con tecnología GenAI** que actualmente está disponible en una fase interna de adopción temprana. Esta herramienta puede acelerar significativamente el tiempo de desarrollo de la extensión. Los clientes que participen en este programa beta recibirán acceso a la herramienta y se les anima a compartir sus comentarios para ayudar a dar forma a su evolución.
 Para participar o obtener más información, envía un correo electrónico a `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
