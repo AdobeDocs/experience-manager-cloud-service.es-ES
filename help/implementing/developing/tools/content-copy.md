@@ -4,10 +4,10 @@ description: La herramienta de copia de contenido permite a los usuarios copiar 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
+source-git-commit: e0b07719cbafdd0b19d597db83d319c50fb993cd
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 27%
+source-wordcount: '1610'
+ht-degree: 25%
 
 ---
 
@@ -152,11 +152,16 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
 
       * Si no elige **Borrar destino antes de importar**, el flujo de **Copiar contenido** funcionará como antes.
 
+   * **Directiva de error en la importación de paquetes** Seleccione la directiva que se usará al importar paquetes:
+     ![Copia de contenido](assets/content-copy-import-policy.png)
+      * **Detener en el primer error**: modo predeterminado, se detendrá después del primer error encontrado
+      * **Continuar con los paquetes restantes**: continuará el proceso de importación, incluso después de producirse un error. Los paquetes (y su contenido) que no se realizaron correctamente se encuentran en los registros de importación
+
 1. Haga clic en **Copiar**.
 
 Se inicia el proceso de copia. El estado del proceso de copia se refleja en la consola del conjunto de contenido seleccionado.
 
-## Actividad de la copia de contenido {#copy-activity}
+## Actividad de copia de contenido {#copy-activity}
 
 Puede controlar el estado de los procesos de la copia en la página **Actividad de copia de contenido**.
 
@@ -168,7 +173,7 @@ Puede controlar el estado de los procesos de la copia en la página **Actividad 
 
 ![Actividad de la copia de contenido](assets/copy-content-activity.png)
 
-### Estados de la copia de contenido {#statuses}
+### Estados de copia de contenido {#statuses}
 
 Una vez que empiece a copiar contenido, el proceso puede tener uno de los siguientes estados.
 
@@ -176,7 +181,7 @@ Una vez que empiece a copiar contenido, el proceso puede tener uno de los siguie
 | --- | --- |
 | En curso | La operación de copia de contenido está en curso. |
 | Error | Error en la operación de copia de contenido. |
-| Completado | La operación de copia de contenido se ha completado correctamente. |
+| Completado | Operación de copia de contenido completada correctamente. |
 | Cancelado | Un usuario cancela una operación de copia de contenido después de iniciarla. |
 
 ### Cancelar un proceso de copia {#canceling}
