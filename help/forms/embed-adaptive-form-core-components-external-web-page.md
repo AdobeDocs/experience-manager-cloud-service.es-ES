@@ -7,10 +7,10 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 4994babacc862977c5ff4c398027d54546c65212
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 99%
+source-wordcount: '1371'
+ht-degree: 66%
 
 ---
 
@@ -28,9 +28,9 @@ Puede [incrustar formularios adaptables en una página de AEM Sites](/help/forms
 
 Realice los siguientes pasos antes de incrustar un formulario adaptable en un sitio web externo
 
-* Publique el formulario adaptable que desee incrustar en la instancia de publicación del servidor de AEM Forms.
+* Publique el formulario adaptable que desee integrar en la instancia de publicación del servidor de AEM Forms.
 * Cree o identifique una página web en su sitio web para alojar el formulario adaptable. Asegúrese de que la página web pueda [leer archivos jQuery de una CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) o de que tenga una copia local de jQuery incrustada. jQuery es necesario para procesar un formulario adaptable.
-* Cuando el servidor de AEM y la página web están en dominios diferentes, realice los pasos que se enumeran en la sección, [permitir que AEM Forms ofrezca formularios adaptables a un sitio de dominios cruzados](#cross-site).
+* Cuando el servidor de AEM y la página web están en dominios diferentes, realice los pasos que se indican en la sección [Configuración de direcciones URL de solicitud absolutas con GuideBridge](#configure-base-url) y [habilitar AEM Forms para que ofrezca formularios adaptables a un sitio entre dominios](#cross-site).
 
 ## Incrustar formulario adaptable {#embed-adaptive-form}
 
@@ -96,7 +96,7 @@ Para incrustar el formulario adaptable, haga lo siguiente:
 
 1. En el código incrustado:
 
-   * Cambie el valor de la variable *options.path* con la ruta de la URL de publicación del formulario adaptable. Si el servidor de AEM se ejecuta en una ruta de contexto, asegúrese de que la dirección URL incluya la ruta de contexto. Siempre mencione el nombre completo del formulario adaptable, incluida la extensión.   Por ejemplo, el código anterior y el formulario adaptable residen en el mismo servidor de AEM Forms, por lo que el ejemplo utiliza la ruta de contexto del formulario adaptable /content/forms/af/locbasic.html.
+   * Cambie el valor de la variable *options.path* con la ruta de la URL de publicación del formulario adaptable. Si el servidor de AEM se ejecuta en una ruta de contexto, asegúrese de que la dirección URL incluya la ruta de contexto. Siempre mencione el nombre completo del formulario adaptable, incluida la extensión. Por ejemplo, el código anterior y el formulario adaptable residen en el mismo servidor de AEM Forms, por lo que el ejemplo utiliza la ruta de contexto del formulario adaptable `/content/forms/af/myadaptiveform.html`.
    * CSS_Selector es el selector CSS del contenedor de formularios en el que está incrustado el formulario adaptable. Por ejemplo, la clase css .customafsection es el selector de CSS del ejemplo anterior.
 
 El formulario adaptable está incrustado en la página web. Observe lo siguiente en el formulario adaptable integrado:
@@ -105,14 +105,38 @@ El formulario adaptable está incrustado en la página web. Observe lo siguiente
 * La acción de envío configurada en el formulario adaptable original se mantendrá en el formulario incrustado.
 * Las reglas de los formularios adaptables se conservarán y funcionarán perfectamente en el formulario incrustado.
 * La segmentación de experiencias y las pruebas A/B configuradas en el formulario adaptable original no funcionarán en el formulario incrustado.
-* Si Adobe Analytics está configurado en el formulario original, los datos de análisis se capturarán en el servidor de Adobe Analytics. Sin embargo, no estará disponible en el informe de análisis de Forms.
+* Si Adobe Analytics está configurado en el formulario original, el servidor de Adobe Analytics capturará los datos de análisis. Sin embargo, no estará disponible en el informe de análisis de Forms.
 * En Formularios adaptables basados en componentes principales, las bibliotecas de cliente (ClientLibs) se incluyen y cargan junto con los componentes Encabezado y Pie de página de un formulario. Por lo tanto, cuando se incrusta un Formulario adaptable basado en componentes principales en una página web, siempre incluye el encabezado y el pie de página del formulario.
+
+## Configuración de direcciones URL de solicitud absolutas con GuideBridge {#configure-base-url}
+
+Cuando el servidor de AEM y la página web están en dominios diferentes, puede utilizar la API de GuideBridge para anteponer un origen de publicación de AEM absoluto a las solicitudes generadas por las bibliotecas guideruntime. Utilice la configuración `baseUrl` para indicar a guideruntime que anteponga el origen absoluto especificado a solicitudes como envío de formularios, recuperación de datos de relleno previo, generación de documentos de registros, cargas de archivos y operaciones de envío interno.
+
+Agregue el siguiente fragmento a la página web en la que se incorpora, junto con la implementación de `guideBridge.connect` existente:
+
+```javascript
+window.guideBridge.connect(function () {
+    window.guideBridge.registerConfig("baseUrl", "https://publish.example.com");
+});
+```
+
+Reemplace `https://publish.example.com` por la URL de publicación del servidor de AEM Forms.
+
+Con esta configuración, cree una URL de solicitud similar al siguiente ejemplo:
+
+`/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp`
+
+se envía al servidor de AEM como:
+
+`https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp`
+
+Cuando el servidor de AEM y la página web están en dominios diferentes, también debe configurar CORS en la instancia de publicación de AEM. Siga los pasos que se indican en la sección [habilitar AEM Forms para proporcionar formularios adaptables en un sitio entre dominios](#cross-site).
 
 ## Topología de ejemplo {#sample-topology}
 
 La página web externa que incrusta el formulario adaptable envía solicitudes al servidor de AEM, que normalmente se encuentra detrás del firewall en una red privada. Para garantizar que las solicitudes se dirijan de forma segura al servidor de AEM, se recomienda configurar un servidor proxy inverso.
 
-Veamos un ejemplo de cómo puede configurar un servidor proxy inverso Apache 2.4 sin Dispatcher. En este ejemplo, alojará el servidor de AEM con la ruta de contexto `/forms` y el mapa `/forms` para el proxy inverso. Garantiza que cualquier solicitud de `/forms` en el servidor de Apache se dirijan a la instancia de AEM. Esta topología ayuda a reducir el número de reglas en la capa de Dispatcher, ya que todas las solicitudes con el prefijo `/forms` se envían al servidor de AEM.
+Veamos un ejemplo de cómo puede configurar un servidor proxy inverso Apache 2.4 sin un Dispatcher. En este ejemplo, aloja el servidor de AEM con la ruta de contexto `/forms` y el mapa `/forms` para el proxy inverso. Garantiza que cualquier solicitud de `/forms` en el servidor de Apache se dirijan a la instancia de AEM. Esta topología ayuda a reducir el número de reglas en la capa de Dispatcher, ya que todas las solicitudes con el prefijo `/forms` se envían al servidor de AEM.
 
 1. Abra el archivo de configuración `httpd.conf` y quite el comentario de las siguientes líneas de código. Como alternativa, puede agregar estas líneas de código en el archivo.
 
@@ -130,7 +154,7 @@ Veamos un ejemplo de cómo puede configurar un servidor proxy inverso Apache 2.4
 
    Reemplace `[AEM_Instance]` por la URL de publicación del servidor de AEM en las reglas.
 
-Si no monta el servidor AEM en una ruta de contexto, las reglas de proxy en la capa de Apache serán las siguientes:
+Si no monta el servidor AEM en una ruta de contexto, las reglas de proxy en la capa de Apache son las siguientes:
 
 ```text
 ProxyPass /content https://<AEM_Instance>/content
@@ -157,13 +181,100 @@ Al incrustar un formulario adaptable en una página web, tenga en cuenta las sig
 * Haga que el contenedor de formularios de la página web utilice la anchura de toda la ventana. Garantiza que las reglas CSS configuradas para dispositivos móviles funcionen sin ningún cambio. Si el contenedor de formularios no tiene la anchura de toda la ventana, deberá escribir un CSS personalizado para que el formulario se adapte a diferentes dispositivos móviles.
 * Use la API `[getData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)` para obtener la representación XML o JSON de los datos de formulario en el cliente.
 * Use la API `[unloadAdaptiveForm](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)` para descargar el formulario adaptable desde DOM HTML.
-* Configure el encabezado access-control-origin al enviar la respuesta desde el servidor de AEM.
+* Configure el encabezado access-control-origin al enviar una respuesta desde un servidor de AEM.
 
 ## Permita que AEM Forms ofrezca formularios adaptables a un sitio de dominios cruzados {#cross-site}
 
-1. En la instancia de publicación de AEM, vaya al Administrador de configuración de la consola web de AEM en `https://'[server]:[port]'/system/console/configMgr`.
-1. Busque y abra la configuración **Filtro de referencias de Apache Sling**.
-1. En el campo Hosts permitidos, especifique el dominio en el que reside la página web. Permita que el host realice peticiones POST al servidor de AEM. También puede utilizar una expresión regular para especificar una serie de dominios de aplicación externos.
+Cuando el servidor de AEM y la página web están en dominios diferentes, configure la instancia de publicación de AEM mediante una de las siguientes opciones.
+
+>[!NOTE]
+>
+> AEM as a Cloud Service no proporciona acceso a la consola web de OSGi en instancias de publicación. Agregue las siguientes configuraciones a su repositorio Git de Cloud Manager en `ui.config/src/main/content/jcr_root/apps/<application-folder>/osgiconfig/config.publish` e [implemente los cambios a través de Cloud Manager](/help/implementing/cloud-manager/deploy-code.md).
+
+>[!BEGINTABS]
+
+>[!TAB Utilizando la configuración de GuideBridge baseUrl]
+
+Cuando use la configuración de GuideBridge `baseUrl`, configure CORS en la instancia de publicación de AEM para que el servidor de AEM devuelva los encabezados adecuados para los extremos de envío, relleno previo y Documento de registro.
+
+1. En su repositorio Git de Cloud Manager, vaya a `ui.config/src/main/content/jcr_root/apps/<application-folder>/osgiconfig/config.publish`.
+1. Cree el archivo de configuración OSGi `com.adobe.granite.cors.impl.CORSPolicyImpl~embedded-forms.cfg.json` con contenido similar al del siguiente ejemplo. Reemplazar `https://www.example.com` con el origen de la página web en la que se está incrustando.
+
+   ```json
+   {
+     "supportscredentials": false,
+     "supportedmethods": [
+       "GET",
+       "HEAD",
+       "POST"
+     ],
+     "exposedheaders": [
+       ""
+     ],
+     "alloworigin": [
+       "https://www.example.com"
+     ],
+     "maxage:Integer": 1800,
+     "alloworiginregexp": [
+       ""
+     ],
+     "supportedheaders": [
+       "Origin",
+       "Accept",
+       "X-Requested-With",
+       "Content-Type",
+       "Access-Control-Request-Method",
+       "Access-Control-Request-Headers"
+     ],
+     "allowedpaths": [
+       "/content/forms/af/.*",
+       "/libs/granite/csrf/token.json"
+     ]
+   }
+   ```
+
+1. Confirme, inserte e implemente la configuración a través de una canalización de Cloud Manager.
+
+Para obtener más información, consulte [Configuración de Intercambio de Recursos de Origen Cruzado (CORS)](/help/headless/deployment/cross-origin-resource-sharing.md).
+
+>[!TAB Filtro de referente de Apache Sling]
+
+Cuando utilice un proxy inverso o incruste el formulario adaptable sin la configuración de GuideBridge `baseUrl`, configure el filtro de referente de Apache Sling en la instancia de publicación de AEM.
+
+1. En su repositorio Git de Cloud Manager, vaya a `ui.config/src/main/content/jcr_root/apps/<application-folder>/osgiconfig/config.publish`.
+1. Cree o actualice el archivo de configuración OSGi `org.apache.sling.security.impl.ReferrerFilter.cfg.json` con contenido similar al del siguiente ejemplo. Reemplace `www.example.com` por el dominio en el que reside la página web.
+
+   ```json
+   {
+     "allow.empty": false,
+     "allow.hosts": [
+       "www.example.com"
+     ],
+     "allow.hosts.regexp": [
+       ""
+     ],
+     "filter.methods": [
+       "POST",
+       "PUT",
+       "DELETE",
+       "COPY",
+       "MOVE"
+     ],
+     "exclude.agents.regexp": [
+       ""
+     ]
+   }
+   ```
+
+1. Confirme, inserte e implemente la configuración a través de una canalización de Cloud Manager.
+
+>[!WARNING]
+>
+> El filtro de referente de AEM no es una fábrica de configuración OSGi, lo que significa que solo una configuración está activa en un servicio de AEM a la vez. Cuando sea posible, evite añadir configuraciones personalizadas del filtro de referente, ya que esto sobrescribirá las configuraciones nativas de AEM y podría romper la funcionalidad del producto.
+
+Para obtener más información, consulte [Configuración del filtro de referente](/help/headless/deployment/referrer-filter.md).
+
+>[!ENDTABS]
 
 <!--
 
