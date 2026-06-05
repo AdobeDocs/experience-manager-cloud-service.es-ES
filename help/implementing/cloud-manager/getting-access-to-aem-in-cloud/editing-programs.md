@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 1c42dff8efb505d050583c8af2f150a7f862d8c9
+source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 11%
+source-wordcount: '1212'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ Para administrar y editar programas, empieza en la consola [**Mis programas**](/
 
 Desde la **Descripción general del programa**, los usuarios con los permisos necesarios pueden editar [programas de producción creados en su organización](creating-production-programs.md) y [programas de zonas protegidas creados en su organización](creating-sandbox-programs.md). Al editar un programa, puede hacer lo siguiente:
 
-* Agregar la solución Sites a un programa existente con Assets y a la inversa.
+* Agregue la solución Sites a un programa existente con Assets y agregue Assets a un programa existente con Sites.
 * Eliminar Sites o Assets de un programa existente que tenga ambos y Assets.
 * Agregar un derecho de solución no utilizado a un programa existente o crear un nuevo programa.
 * Marcar programas de producción para su eliminación.
@@ -51,9 +51,32 @@ Cada vez que se edita un programa, incluida la adición o eliminación de una so
    Las opciones disponibles para editar el programa son las mismas para la creación de programas.
    * Puede configurar si un nivel de publicación está aprovisionado para nuevos entornos (Beta). Consulte [Nivel de publicación flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) y [Crear programas de espacio aislado](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obtener más información sobre las opciones individuales.
-   * [Puede haber opciones adicionales](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) disponibles para su programa de producción en función de los derechos de su organización.
+   * [Hay opciones adicionales](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) disponibles para su programa de producción en función de los derechos de su organización.
+   * En la ficha **Seguridad**, también puede habilitar **Claves administradas por el cliente** para un programa existente.
+
+   ![Cuadro de diálogo Editar programa que muestra las claves administradas por el cliente seleccionadas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
+
+   CMK no se puede deshabilitar después de la activación. Después de habilitar CMK, configure las claves de cifrado en Experience Hub. Consulte [Configurar CMK en Experience Hub](#configure-cmk-experience-hub).
 
 1. Haga clic en **Actualizar** para guardar los cambios.
+
+## Configuración de CMK en Experience Hub {#configure-cmk-experience-hub}
+
+Una vez habilitado CMK para un programa, Cloud Manager proporciona un vínculo directo a la página de configuración de CMK en Experience Hub para que pueda configurar su
+claves de cifrado sin salir del programa.
+
+Una vez que CMK se ha configurado correctamente para un entorno, la página Detalles del entorno muestra un distintivo de estado **Configuración de CMK**. Si CMK está habilitado para el programa pero aún no se ha configurado para un entorno específico, el distintivo no aparece en la página de detalles de ese entorno.
+
+**Para configurar CMK en Experience Hub:**
+
+1. En la página **Mis programas**, busque la tarjeta de programa con CMK habilitado.
+2. Haga clic en ![Puntos suspensivos - icono Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, haga clic en **Configurar CMK**.
+
+   ![Tarjeta de programa que muestra el icono CMK para indicar que está habilitado y luego la opción Configurar CMK del menú de los tres puntos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-configure-edit-program-dlg.png)
+
+   Experience Hub abre la página de configuración de CMK, donde puede proporcionar los detalles de Azure Key Vault y la información de clave de cifrado.
+
+   Para ver los pasos de configuración completos, consulte [Configuración de claves administradas por el cliente para AEM as a Cloud Service](/help/security/customer-managed-keys.md).
 
 ## Marcar un programa de producción para su eliminación {#delete-production-program}
 
