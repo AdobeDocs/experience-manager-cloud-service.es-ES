@@ -4,7 +4,7 @@ description: Obtenga información acerca de la versión de Cloud Manager 2026.6.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 61101046e4383acb534b04f467bef1b0313c4ef5
+source-git-commit: 3c78dbcbc453eaaaab3904b83f22744eef60080c
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 4%
@@ -12,10 +12,6 @@ ht-degree: 4%
 ---
 
 # Notas de la versión de Cloud Manager 2026.6.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
-
-<!-- 
-https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release 
--->
 
 Obtenga información acerca de la versión de Cloud Manager 2026.6.0 en AEM (Adobe Experience Manager) as a Cloud Service.
 
@@ -37,7 +33,6 @@ Los clientes ahora pueden configurar las claves administradas por el cliente dir
 
   ![Tarjeta de Mis programas que muestra un icono de clave administrada por el cliente](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
   *Tarjeta de Mis programas*
-
 
   ![Cuadro de diálogo Configurar para producción que muestra la ficha Seguridad con la opción Claves administradas por el cliente seleccionada](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
   *Claves administradas por el cliente seleccionadas en la ficha Seguridad del cuadro de diálogo Configurar para producción*
@@ -89,7 +84,7 @@ Para unirte a Beta, envía un correo electrónico a [grp-beta_xwalk-publish_conf
 
 ### Compilaciones más rápidas con almacenamiento en caché de módulos {#quick-build-cm-pipelines}
 
-Un nuevo modelo de compilación compila solo los módulos modificados (en lugar de todo el repositorio) mediante el almacenamiento en caché de nivel de módulo para reducir los tiempos de compilación. Se aplica a las canalizaciones de producción. Usted controla qué canalizaciones de producción utilizan **Smart Build**.
+Un nuevo modelo de compilación compila solo los módulos modificados (en lugar de todo el repositorio) mediante el almacenamiento en caché de nivel de módulo para mejorar el rendimiento de la compilación. Se aplica a las canalizaciones de producción. Usted controla qué canalizaciones de producción utilizan **Smart Build**.
 
 Para obtener más información, consulte lo siguiente:
 
@@ -124,7 +119,7 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 * **Entorno bloqueado en la actualización sin una operación activa**
 Ahora se resuelve un problema en el que los entornos se quedan permanentemente atascados en un estado de actualización, incluso cuando no se ejecuta ninguna canalización o cambio de configuración en curso. Los entornos afectados ahora se pueden administrar con normalidad sin requerir la intervención manual del soporte de Adobe. (CMGR-77133)
-* **Redes avanzadas: se eliminó una regla de reenvío de puerto incorrecta en los puertos de origen duplicados**
+* **Redes avanzadas: se eliminó una regla de reenvío de puertos incorrecta en los puertos de origen duplicados**
 Cuando dos reglas de reenvío de puertos en Redes avanzadas comparten el mismo puerto de origen (portOrig), al eliminar una regla se elimina incorrectamente la otra. Ahora Cloud Manager identifica correctamente y elimina solo la regla deseada. (CMGR-77019)
 
 <!-- There are no significant bug fixes in the June 2026 Cloud Manager release. -->
