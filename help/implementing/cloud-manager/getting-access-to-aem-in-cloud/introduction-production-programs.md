@@ -5,7 +5,7 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f1623f112ab539b961d5948446153bec98fcf7e3
+source-git-commit: 5a7a52a4ec67417f8a61406913ecf5175d330664
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 44%
@@ -25,7 +25,7 @@ Su contrato con Adobe define el número y los tipos de soluciones disponibles pa
 
 >[!NOTE]
 >
->&#x200B;>Según los derechos de su organización, también puede habilitar Claves gestionadas por el cliente (CMK) para un programa de producción. CMK le permite proporcionar sus propias claves de cifrado para los datos en reposo. Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+>Según los derechos de su organización, también puede habilitar Claves gestionadas por el cliente (CMK) para un programa de producción. CMK le permite proporcionar sus propias claves de cifrado para los datos en reposo. Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 En la siguiente tabla se describen los escenarios comunes de las soluciones disponibles y los programas de producción típicos creados en base a ellas.
 
