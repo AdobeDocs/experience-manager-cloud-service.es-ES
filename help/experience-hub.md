@@ -8,7 +8,7 @@ feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Developer, User
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
+source-git-commit: e31b3f6a249d6b0a5836f42b5cf8725e1339b117
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 65%
@@ -23,7 +23,7 @@ Ver también [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/
 
 Vea una descripción general de AEM Experience Hub Workspace (2 minutos y 40 segundos).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475195/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
@@ -89,9 +89,7 @@ Si no existen entornos de producción de AEM Cloud Service o Managed Services, l
 
 +++**¿Cómo configuro las claves administradas por el cliente desde Experience Hub?**
 
-Si CMK está habilitado para el programa, Experience Hub proporciona un vínculo directo a la página de configuración de CMK. Seleccione **Configurar CMK** de su tarjeta de programa o
-en Métodos abreviados rápidos. Para ver los pasos de configuración completos, consulte
-[Configuración de claves administradas por el cliente para AEM as a Cloud Service](/help/security/customer-managed-keys.md).
+Si CMK está habilitado para el programa, Experience Hub proporciona un vínculo directo a la página de configuración de CMK. Seleccione **Configurar CMK** desde la tarjeta de programa o desde los accesos directos rápidos. Para ver los pasos de configuración completos, consulte [Configuración de claves administradas por el cliente para AEM as a Cloud Service](/help/security/customer-managed-keys.md).
 
 +++
 
