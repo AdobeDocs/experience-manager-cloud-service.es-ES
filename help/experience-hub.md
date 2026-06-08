@@ -23,7 +23,7 @@ Ver también [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/
 
 Vea una descripción general de AEM Experience Hub Workspace (2 minutos y 40 segundos).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475195/?captions=spa&learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
