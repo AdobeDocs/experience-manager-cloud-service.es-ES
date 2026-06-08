@@ -4,7 +4,7 @@ description: Aprenda a configurar herramientas de codificación de IA con contex
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 38e599d34e591d0d8c9f822c0296bef27d24a605
+source-git-commit: 293b9136ee5249ee435b089b49dcaab2ca45fea8
 workflow-type: tm+mt
 source-wordcount: '1836'
 ht-degree: 0%
@@ -222,6 +222,8 @@ Cualquier cliente MCP puede conectarse señalando `http://localhost:4502/bin/mcp
 El servidor MCP de Dispatcher está empaquetado con AEM Dispatcher SDK. Permite a las herramientas de IA validar la configuración de HTTPD de Dispatcher y Apache, rastrear la administración de solicitudes e inspeccionar el comportamiento de la caché con una instancia de Dispatcher que se ejecuta localmente en Docker.
 
 A diferencia de la aptitud de Dispatcher, el servidor MCP de Dispatcher expone solo herramientas: siete herramientas MCP y sin peticiones de datos ni recursos.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3491964?captions=spa&quality=12&learn=on)
 
 ### Requisitos previos {#prerequisites}
 
