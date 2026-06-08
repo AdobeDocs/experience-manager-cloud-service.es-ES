@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo ejecutar JavaScript en la capa de 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: b33a565d9623ed44309e1d34377345dae86757cd
+source-git-commit: 757b64c4b3340f56cc8a5e5a7c1200fcd8d0c1be
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 3%
+source-wordcount: '1417'
+ht-degree: 2%
 
 ---
 
@@ -112,6 +112,7 @@ La configuración admite hasta tres servicios. Las claves de nivel superior son:
 | `services` | Lista de servicios de funciones perimetrales, cada uno identificado por un `name`. |
 | `configs` | Pares de clave/valor expuestos a todos los servicios de funciones Edge como variables de entorno. |
 | `secrets` | Pares de clave/valor que hacen referencia a secretos de Cloud Manager, expuestos a todos los servicios de funciones Edge. |
+| `kvs` | Alternar booleano para aprovisionar un KVStore para los datos de valor clave de lectura y escritura en tiempo de ejecución compartidos entre todos los servicios de funciones perimetrales. |
 
 ### &#x200B;3. Agregar reglas de selector de origen de CDN {#cdn-routing}
 
@@ -244,6 +245,10 @@ const request = new Request("https://example.com/test");
 const response = await fetch(request, { backend: "my-origin-name" });
 ```
 
+>[!NOTE]
+>
+>Los almacenes de servicios (`configs`, `secrets` y `kvs`) no están disponibles en [programas de zonas protegidas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Los propios servicios de funciones de Edge se ejecutan normalmente en entornos de zona protegida, solo que las tiendas no están aprovisionadas.
+
 ### Configuración de servicio {#service-configuration}
 
 Exponga las variables de entorno a sus funciones usando la clave `configs` en `edgeFunctions.yaml`. Los valores se almacenan en un almacén de configuración denominado `config_default`:
@@ -293,6 +298,35 @@ const apiToken = await SecretStoreManager.getSecret('API_TOKEN');
 >- Los nombres de clave distinguen entre mayúsculas y minúsculas.
 >- Los secretos son inmutables una vez creados.
 >- El almacén secreto se comparte en todos los servicios de funciones perimetrales del mismo entorno.
+
+### KVStore de servicios {#service-kv-store}
+
+Las funciones de Edge pueden leer y escribir datos de valor clave arbitrarios en tiempo de ejecución a través de un KVStore. Para habilitarlo, establezca `kvs: true` en `edgeFunctions.yaml`:
+
+```yaml
+kvs: true
+```
+
+Esto aprovisiona un KVStore vacío denominado `kv_default`. Rellénelo en tiempo de ejecución desde el código de función perimetral mediante la [API de KVStastly](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore):
+
+```js
+import { KVStore } from "fastly:kv-store";
+
+const kv = new KVStore('kv_default');
+
+// Read a value
+const entry = await kv.get('visit-count');
+const count = entry ? Number(await entry.text()) : 0;
+
+// Write a value
+await kv.put('visit-count', String(count + 1));
+```
+
+>[!NOTE]
+>
+>- El nombre del KVStore siempre es `kv_default`.
+>- El KVStore está vacío en el momento del aprovisionamiento; rellénelo durante la ejecución mediante la [API de KVStore](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore) de Fastly. No se admiten las entradas de clave/valor declarativo en `edgeFunctions.yaml`.
+>- El KVStore se comparte en todos los servicios de funciones Edge en el mismo entorno.
 
 ### Registro {#logging}
 
