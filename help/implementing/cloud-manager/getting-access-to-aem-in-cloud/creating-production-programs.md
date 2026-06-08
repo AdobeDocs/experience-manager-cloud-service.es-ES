@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
+source-git-commit: 2503863e0c146f86bb158c411ea5b7bb47033a3e
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1723'
 ht-degree: 6%
 
 ---
@@ -118,11 +118,7 @@ Compatible con HIPAA de Adobe y WAF-DDOS (cortafuegos de aplicaciones web - dene
 * **Protección WAF-DDOS**: esta opción habilita el firewall de aplicaciones web mediante reglas para proteger la aplicación.
    * Una vez activada, la protección WAF-DDOS se puede configurar configurando una [canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
    * Consulte [Reglas de filtro de tráfico, incluidas las reglas de WAF](/help/security/traffic-filter-rules-including-waf.md), para obtener información sobre cómo administrar las reglas de filtro de tráfico en el repositorio a fin de que se implementen correctamente.
-* **Claves administradas por el cliente**: esta opción activa CMK (Claves administradas por el cliente) para el programa, lo que le permite proporcionar sus propias claves de cifrado para los datos que se encuentren en reposo en Azure Blob Storage y MongoDB.
-
-  >[!IMPORTANT]
-  >
-  >No se puede habilitar o deshabilitar CMK después de la creación del programa.
+* **Claves administradas por el cliente**: esta opción activa CMK (Claves administradas por el cliente) para el programa, lo que le permite proporcionar sus propias claves de cifrado para los datos que se encuentren en reposo en Azure Blob Storage y MongoDB. Si lo desea, puede habilitar CMK más tarde [editando un programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
    * CMK solo está disponible para programas de Cloud Service. No se puede habilitar en programas de zona protegida.
    * Dentro de un programa, CMK cubre únicamente los entornos de Ensayo y Producción.
