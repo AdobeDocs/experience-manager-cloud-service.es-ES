@@ -4,9 +4,9 @@ description: Obtenga información acerca de la versión de Cloud Manager 2026.6.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3c78dbcbc453eaaaab3904b83f22744eef60080c
+source-git-commit: ab2b623cd8c0605a41b96401762baf254dc8b339
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '733'
 ht-degree: 4%
 
 ---
@@ -40,14 +40,14 @@ Los clientes ahora pueden configurar las claves administradas por el cliente dir
   ![Mostrando el número de claves gestionadas por el cliente disponibles en el tablero de licencias](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
   *Mostrando el número de claves gestionadas por el cliente disponibles en el tablero de licencias*
 
+  Ver [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) y [Editar programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
+
 * **Límite de variable de entorno aumentado a 400**
 Cloud Manager ahora admite hasta 400 variables de entorno por entorno, el doble del límite anterior de 200.
 
   Las variables de canalización siguen restringidas a 200. La interfaz de usuario aplica el límite correcto por contexto e impide que se agreguen elementos más allá del umbral permitido.
 
-  Este cambio es compatible con clientes con configuraciones de implementación más complejas que requieren un mayor número de configuraciones específicas del entorno.
-
-<!--CMGR-76755 · CMGR-76753 -->
+  Este cambio es compatible con clientes con configuraciones de implementación más complejas que requieren un mayor número de configuraciones específicas del entorno. <!--CMGR-76755 · CMGR-76753 -->
 
 
 ## Programas Beta {#private-beta-program}
