@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 2c4a963786db1b5dabf16c5d96be950bb7ad7807
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 14%
+source-wordcount: '1341'
+ht-degree: 15%
 
 ---
 
@@ -159,7 +159,7 @@ También puede configurar un formulario adaptable para que se guarde automática
 ## Ver borradores/formularios enviados en la página de Sites mediante el componente Borradores y envíos
 
 Para ver los borradores guardados o los formularios enviados, usa el componente **Borradores y envíos** del portal de Forms.
-Cuando **[!UICONTROL Seleccionar tipo]** se selecciona como **Borrador de Forms** en el cuadro de diálogo [configurar del componente Borradores y envíos](#configure-properties-of-the-drafts--submissions-component), los formularios guardados como borradores aparecerán en la página Sitios. Puede abrir los borradores haciendo clic en los puntos suspensivos (...) para completar el formulario.
+Cuando se selecciona **[!UICONTROL Seleccionar tipo]** como **Borrador de Forms** en el cuadro de diálogo [configurar del componente Borradores y envíos](#configure-properties-of-the-drafts--submissions-component), los formularios guardados como borradores aparecen en la página de Sites. Puede abrir los borradores haciendo clic en los puntos suspensivos (...) para completar el formulario.
 
 ![Icono Borradores](assets/drafts-component.png)
 
@@ -167,11 +167,7 @@ Cuando se selecciona **[!UICONTROL Seleccionar tipo]** como **Forms enviado** en
 
 ![Icono Envíos](assets/submission-listing.png)
 
-También puede descartar los formularios haciendo clic en los puntos suspensivos (...) que aparecen en la esquina inferior derecha del formulario.
-
->[!NOTE]
->
-> En el portal de Forms, el componente Borradores y envíos solo admite los envíos de formularios basados en Foundation.
+También puede descartar los formularios haciendo clic en los puntos suspensivos (...) que aparece en la esquina inferior derecha del formulario.
 
 ## Próximos pasos
 
