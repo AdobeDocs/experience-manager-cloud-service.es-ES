@@ -6,10 +6,10 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 5d1a5007a4089628fb72ec6a4ae5c576497a6c3a
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 99%
+source-wordcount: '575'
+ht-degree: 93%
 
 ---
 
@@ -55,7 +55,7 @@ Puede ver el estado de los trabajos asíncronos en el [tablero Operaciones en se
 
 [WKND](https://wknd.site/), un nuevo sitio de referencia de AEM, se ha actualizado y publicado para reflejar las prácticas recomendadas para generar un sitio web con AEM, así como el conjunto completo de funcionalidades, componentes y modelos de implementación disponibles en AEM. El nuevo sitio de referencia y el [tutorial complementario](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) cubren temas fundamentales como la configuración del proyecto, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes con Adobe Experience Manager Sites.
 
-Anteriormente, We.Retail se instalaba de forma predeterminada con AEM (excepto cuando se iniciaba en el modo de producción). En AEM as a Cloud Service, un sitio de referencia no está instalado de forma predeterminada. En su lugar, se proporcionan el [repositorio de Git](https://github.com/adobe/aem-guides-wknd/) y el [tutorial complementario](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) con el código de sitio de referencia WKND actualizado.
+Anteriormente, We.Retail se instalaba de forma predeterminada con AEM (excepto cuando se iniciaba en el modo de producción). En AEM as a Cloud Service, un sitio de referencia no está instalado de forma predeterminada. En su lugar, se proporcionan el [repositorio git](https://github.com/adobe/aem-guides-wknd/) y el [tutorial complementario](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) con el código de sitio de referencia WKND actualizado.
 
 ## Funciones no disponibles durante la ejecución {#capabilities-not-available-at-runtime}
 
