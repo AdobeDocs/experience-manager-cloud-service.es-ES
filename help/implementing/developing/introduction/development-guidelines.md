@@ -4,7 +4,7 @@ description: Conozca las directrices para el desarrollo en AEM as a Cloud Servic
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Developer
-source-git-commit: 925ed3687b17108b8d42a4a25d1f2b87edaaf76f
+source-git-commit: bfacb1fd76bda46999d6331c1605583e072beedd
 workflow-type: tm+mt
 source-wordcount: '2890'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
 >abstract="Conozca las directrices para el desarrollo en AEM as a Cloud Service y sobre las formas importantes en las que difiere de AEM On-Premise y AEM en AMS."
 >additional-url="https://video.tv.adobe.com/v/345901?captions=spa" text="Demostración de la estructura del paquete"
 
-Este documento presenta directrices para el desarrollo en AEM as a Cloud Service y sobre formas importantes en que difiere de AEM local y de AEM en AMS.
+Este documento presenta directrices para el desarrollo en AEM as a Cloud Service y formas importantes en las que difiere de AEM local y de AEM en AMS.
 
 ## El código debe tener en cuenta el clúster {#cluster-aware}
 
@@ -48,11 +48,11 @@ Del mismo modo, con todo lo que sucede asincrónicamente, como actuar sobre even
 
 El código ejecutado como tarea en segundo plano debe suponer que la instancia en la que se está ejecutando puede caerse en cualquier momento. Por lo tanto, el código debe ser flexible y, lo que es más importante, reanudable. Esto significa que si el código se vuelve a ejecutar, no debe comenzar desde el principio de nuevo, sino más bien cerca de donde lo dejó. Aunque este no es un requisito nuevo para este tipo de código, en AEM as a Cloud Service es más probable que se produzca una eliminación de instancias.
 
-Para minimizar los problemas, si es posible deben evitarse los trabajos de larga duración y, como mínimo, deben poder reanudarse. Para ejecutar estos trabajos, utilice Trabajos de Sling, que tienen una garantía de al menos una vez y, por lo tanto, si se interrumpen, se vuelven a ejecutar lo antes posible. Pero probablemente no deberían empezar desde el principio de nuevo. Para programar estos trabajos, es mejor usar el programador [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), ya que esto nuevamente garantiza la ejecución de al menos una vez.
+Para minimizar los problemas, si es posible deben evitarse los trabajos de larga duración y, como mínimo, deben poder reanudarse. Para ejecutar estos trabajos, utilice Trabajos de Sling, que tienen una garantía de al menos una vez y, por lo tanto, si se interrumpen, se vuelven a ejecutar lo antes posible. Pero probablemente no deberían reiniciarse desde el principio. Para programar estos trabajos, es mejor usar el programador [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), ya que esto nuevamente garantiza la ejecución de al menos una vez.
 
 No utilice el Planificador de Sling Commons para la programación, ya que la ejecución no se puede garantizar. Es más probable que esté programado.
 
-Del mismo modo, con todo lo que se produce de forma asíncrona, como actuar sobre eventos de observación (ya sean eventos JCR o eventos de recursos Sling), no se puede garantizar su ejecución y, por lo tanto, debe utilizarse con cuidado. Esto ya es así para las implementaciones de AEM en el presente.
+Del mismo modo, con todo lo que se produce de forma asíncrona, como actuar sobre eventos de observación (ya sean eventos JCR o eventos de recursos de Sling), no se puede garantizar que los trabajos se ejecuten y, por lo tanto, deben utilizarse con cuidado. Esto ya es así en el caso de las implementaciones de AEM en este momento.
 
 ## Conexiones HTTP salientes {#outgoing-http-connections}
 
@@ -62,13 +62,13 @@ Para el código que no aplica estos tiempos de espera, las instancias de AEM que
 
 Adobe recomienda el uso de la biblioteca [Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) proporcionada para realizar conexiones HTTP.
 
-Las alternativas que funcionan, pero que pueden requerir que usted proporcione la dependencia son las siguientes:
+Las alternativas que se sabe que funcionan (pero que pueden requerir que usted proporcione la dependencia) son:
 
 * [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) y/o [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (proporcionados por AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (no se recomienda porque está obsoleto y se ha reemplazado por la versión 4.x)
 * [Aceptar Http](https://square.github.io/okhttp/) (no proporcionado por AEM)
 
-Además de proporcionar tiempos de espera, se debe implementar un manejo adecuado de estos tiempos de espera y códigos de estado HTTP inesperados.
+Además de proporcionar tiempos de espera, también debe implementarse un manejo adecuado de esos tiempos de espera y códigos de estado HTTP inesperados.
 
 ## Administrar límites de tasa de solicitud {#rate-limit-handling}
 
@@ -102,7 +102,7 @@ El contenido se duplica de Autor a Publicación a través de un mecanismo pub-su
 
 Los entornos de producción tienen un tamaño mayor para garantizar un funcionamiento estable, mientras que los entornos de ensayo tienen un tamaño similar al de los entornos de producción para garantizar pruebas realistas en condiciones de producción.
 
-Los entornos de desarrollo y de desarrollo rápido deben limitarse al desarrollo, el análisis de errores y las pruebas funcionales, y no están diseñados para procesar cargas de trabajo elevadas ni grandes cantidades de contenido.
+Los entornos de desarrollo y los entornos de desarrollo rápido deben limitarse al desarrollo, el análisis de errores y las pruebas funcionales y no están diseñados para procesar grandes cantidades de contenido o cargas de trabajo.
 
 Por ejemplo, cambiar una definición de índice en un repositorio de contenido grande en un entorno de desarrollo puede resultar en una reindexación, lo que resulta en un procesamiento excesivo. Las pruebas que requieren contenido sustancial deben ejecutarse en entornos de ensayo.
 
@@ -184,7 +184,7 @@ Para el desarrollo local (mediante SDK), `/apps` y `/libs` se pueden escribir di
 >* Algunos clientes tendrán la opción de probar una experiencia renovada para AEM Cloud Service Developer Console. Consulte [este artículo](/help/implementing/developing/introduction/aem-developer-console.md) para obtener más información.
 >* El Developer Console de AEM as a Cloud Service no debe confundirse con el [*Adobe Developer Console*](https://developer.adobe.com/developer-console/) con nombre similar.
 
-Los clientes pueden acceder a la lista CRXDE en el entorno de desarrollo del nivel de creación, pero no en la fase o en la producción. El repositorio inmutable (`/libs`, `/apps`) no se puede escribir en el tiempo de ejecución, por lo que al intentar hacerlo se producirán errores.
+Los clientes pueden acceder a la lista CRXDE en el entorno de desarrollo del nivel de creación, pero no en la fase o en la producción. El repositorio inmutable (`/libs`, `/apps`) no se puede escribir en el tiempo de ejecución y al intentar hacerlo se producirán errores.
 
 En su lugar, el Explorador de repositorios se puede iniciar desde AEM as a Cloud Service Developer Console, lo que proporciona una vista de solo lectura del repositorio para todos los entornos en los niveles de creación, publicación y vista previa. Para obtener más información, consulte [Explorador de repositorios](/help/implementing/developing/tools/repository-browser.md).
 
