@@ -4,9 +4,9 @@ description: Obtenga información acerca de la versión de Cloud Manager 2026.6.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ab2b623cd8c0605a41b96401762baf254dc8b339
+source-git-commit: 012a31a9b1ffe3d7228d714049295536f2deeaac
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '732'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,9 @@ La próxima versión planificada es el jueves, 9 de julio de 2026.
 ## Novedades: Cloud Manager (en inglés) {#cloud-manager-whats-new}
 
 * **Autoservicio de claves administradas por el cliente (CMK)**
-Los clientes ahora pueden configurar las claves administradas por el cliente directamente desde Cloud Manager, sin necesidad de que intervenga la asistencia de Adobe. Hay una nueva opción CMK disponible durante la creación del programa, en la configuración de edición del programa y en la página Detalles del entorno.
+Los clientes ahora pueden configurar las claves administradas por el cliente directamente desde Cloud Manager, sin necesidad de que intervenga la asistencia de Adobe. Hay una nueva opción CMK disponible durante la creación o edición del programa y en la página Detalles del entorno.
+
+  Ver [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) y [Editar programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
   El estado de CMK se muestra en las tarjetas de Mis programas y en el panel de licencias, lo que proporciona a los administradores una visibilidad clara de la configuración de cifrado en todos los entornos. Este método simplifica los flujos de trabajo de conformidad para las organizaciones que requieren control sobre sus propias claves de cifrado.
 
@@ -40,7 +42,6 @@ Los clientes ahora pueden configurar las claves administradas por el cliente dir
   ![Mostrando el número de claves gestionadas por el cliente disponibles en el tablero de licencias](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
   *Mostrando el número de claves gestionadas por el cliente disponibles en el tablero de licencias*
 
-  Ver [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) y [Editar programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
 * **Límite de variable de entorno aumentado a 400**
 Cloud Manager ahora admite hasta 400 variables de entorno por entorno, el doble del límite anterior de 200.
