@@ -176,7 +176,7 @@ function encrypt(payload) {
 **cifrar (gancho de carga útil de solicitud previa)**
 
 La función **encrypt** recibe un objeto de carga útil con **body**, **headers** y **cryptoMetadata** y **options** opcionales. Devuelve una versión modificada de la misma forma. El campo **options** lleva la configuración de la API de recuperación (por ejemplo, `credentials: 'include'`) a través de la canalización de solicitudes. Los valores de **options** se aplican a la llamada a `fetch()` subyacente. El campo **cryptoMetadata** almacena datos para su uso durante el descifrado. Lo que sea que hayas establecido en **cryptoMetadata** durante el cifrado se conserva en **originalRequest.cryptoMetadata** y se pone a disposición de la función **decrypt** más adelante. A pesar del nombre, **encrypt** es un transformador de solicitud previa general. Puede utilizarlo para modificar encabezados o el cuerpo de la solicitud, no solo para el cifrado criptográfico. La implementación predeterminada devuelve la carga útil sin cambios.
->>
+&#x200B;>>
 
 El siguiente código de ejemplo muestra una función **decrypt**:
 
