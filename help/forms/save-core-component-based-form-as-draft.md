@@ -5,17 +5,17 @@ feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 2c4a963786db1b5dabf16c5d96be950bb7ad7807
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 14%
+source-wordcount: '1341'
+ht-degree: 15%
 
 ---
 
 
 # Guardar formularios como borradores y mostrarlos en la página de Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Considere a un usuario que comienza a rellenar un formulario pero necesita pausar y volver más tarde. AEM ofrece la opción `save-as-draft`, que permite al usuario guardar el formulario como borrador para una futura finalización. Para facilitarle este proceso, AEM proporciona el componente **Borradores y envíos** del portal de Forms de forma predeterminada, que muestra borradores y envíos en páginas de AEM Sites. El componente enumera los formularios que se han guardado como borradores para su posterior finalización, así como los que se han enviado. Solo los usuarios que inicien sesión pueden editar sus borradores o ver los formularios enviados. Sin embargo, si un usuario anónimo navega por la lista de formularios usando el componente **Buscar y listar** y guarda un formulario como borrador, ese borrador no aparecerá en la lista del componente **Borradores y envíos**. Para ver los borradores y los envíos, los usuarios deben haber iniciado sesión en el momento del envío del formulario.
 
@@ -159,7 +159,7 @@ También puede configurar un formulario adaptable para que se guarde automática
 ## Ver borradores/formularios enviados en la página de Sites mediante el componente Borradores y envíos
 
 Para ver los borradores guardados o los formularios enviados, usa el componente **Borradores y envíos** del portal de Forms.
-Cuando **[!UICONTROL Seleccionar tipo]** se selecciona como **Borrador de Forms** en el cuadro de diálogo [configurar del componente Borradores y envíos](#configure-properties-of-the-drafts--submissions-component), los formularios guardados como borradores aparecerán en la página Sitios. Puede abrir los borradores haciendo clic en los puntos suspensivos (...) para completar el formulario.
+Cuando se selecciona **[!UICONTROL Seleccionar tipo]** como **Borrador de Forms** en el cuadro de diálogo [configurar del componente Borradores y envíos](#configure-properties-of-the-drafts--submissions-component), los formularios guardados como borradores aparecen en la página de Sites. Puede abrir los borradores haciendo clic en los puntos suspensivos (...) para completar el formulario.
 
 ![Icono Borradores](assets/drafts-component.png)
 
@@ -167,11 +167,7 @@ Cuando se selecciona **[!UICONTROL Seleccionar tipo]** como **Forms enviado** en
 
 ![Icono Envíos](assets/submission-listing.png)
 
-También puede descartar los formularios haciendo clic en los puntos suspensivos (...) que aparecen en la esquina inferior derecha del formulario.
-
->[!NOTE]
->
-> En el portal de Forms, el componente Borradores y envíos solo admite los envíos de formularios basados en Foundation.
+También puede descartar los formularios haciendo clic en los puntos suspensivos (...) que aparece en la esquina inferior derecha del formulario.
 
 ## Próximos pasos
 

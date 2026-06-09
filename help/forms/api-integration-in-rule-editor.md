@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 keywords: al integrar la API en el editor de reglas, invoque las mejoras del servicio
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
+source-git-commit: 2c4a963786db1b5dabf16c5d96be950bb7ad7807
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 4%
+source-wordcount: '1554'
+ht-degree: 2%
 
 ---
 
@@ -52,12 +52,16 @@ La captura de pantalla siguiente muestra la ventana de configuración de integra
 * **URL de API**: extremo del servicio de API.
 * **Seleccionar método HTTP**: método de petición HTTP utilizado para llamar a la API.
 * **Tipo de contenido**: Define el formato de solicitud y respuesta.
-* **Se requiere cifrado**: (Opcional) Garantiza que los datos confidenciales se cifren durante la transmisión.
+* **Se requiere cifrado**: (Opcional) Si se selecciona, las cargas útiles de solicitud y respuesta se pueden cifrar usando funciones personalizadas en **function.js**. Aparece un campo **Clave pública**. Pegue la clave pública en este campo antes de guardar la configuración de integración de la API.
 * **Ejecutar en el cliente**: cuando está habilitada, la llamada de API se realiza desde el cliente (explorador) en lugar del servidor.
+
+>[!NOTE]
+>
+> Para ver los pasos y las funciones de ejemplo **cifrar** y **descifrar**, consulte [Cifrado y descifrado](#encryption-and-decryption).
 
 **Tipo de autenticación**
 
-* **Opciones**: Ninguno, Básico, Clave de API, OAuth 2.0.
+* **Opciones**: Ninguno, Básico, Clave de API.
 
 **Parámetros de entrada**
 
@@ -90,7 +94,7 @@ La captura de pantalla siguiente muestra la ventana de configuración de integra
 6. País de destino (menú desplegable)
 7. Fecha prevista de llegada (fecha)
 
-En lugar de mantener una lista estática de países, el formulario recupera dinámicamente información del país (continente, capital, códigos Alpha ISO, etc.) mediante la **API getcountry name**:
+En lugar de mantener una lista estática de países, el formulario recupera dinámicamente información del país (continente, capital, códigos Alpha ISO, etc.) usando la API **getcountry name**:
 
 `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 
@@ -127,6 +131,69 @@ Del mismo modo, **País de emisión de pasaporte** y **País de destino** utiliz
 >[!NOTE]
 >
 > Puede [recuperar valores de propiedad de una matriz JSON invocando una API y utilizando una función personalizada](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Este método permite extraer valores y enlazarlos directamente a campos de formulario.
+
+## Edición de una integración de API existente
+
+Después de crear una integración de API, puede actualizarla desde el Editor de reglas sin crear una nueva integración. Cuando una instrucción **Invoke Service** hace referencia a una integración de API, hay disponible una opción **Edit** para esa integración.
+
+Para editar una integración de API existente:
+
+1. Abra la regla en el Editor de reglas que contiene una instrucción **Invoke Service**.
+2. En la instrucción **Invocar servicio**, seleccione la integración de API que desee actualizar.
+3. Haga clic en el icono **Editar** para abrir la ventana **Configuración de integración de API**.
+4. Actualice la dirección URL de la API, la autenticación, los parámetros de entrada y salida u otros ajustes, y guarde los cambios.
+
+![Editar integración de API](/help/forms/assets/edit-api-rule-editor.png)
+
+## Cifrado y descifrado
+
+Cuando se seleccione **Se requiere cifrado** para una integración de API, pegue la clave pública en el campo **Clave pública** de la ventana de configuración de integración de API. El editor de reglas invoca **encrypt** antes de cada solicitud saliente y **decrypt** después de una respuesta correcta. Si no agrega lógica personalizada en **function.js**, ambas funciones devuelven la carga útil sin cambiar.
+
+Para cifrar y descifrar los datos de solicitud y respuesta, agregue las funciones **cifrar** y **descifrar** a **function.js**:
+
+1. Abra el archivo **function.js** para su formulario adaptable.
+2. Agregue una función **encrypt** para transformar la solicitud (cuerpo, encabezados y opciones relacionadas) antes de la llamada de la API.
+3. Agregue una función **decrypt** para transformar la respuesta después de una llamada de API correcta. La función **decrypt** recibe la respuesta cifrada y **originalRequest**, que incluye cualquier **cryptoMetadata** establecido durante el cifrado.
+4. Guarde **function.js** y pruebe la integración usando **Invocar servicio** en el Editor de reglas.
+
+El siguiente código de ejemplo muestra cómo agregar la función **encrypt** en **function.js**:
+
+```javascript
+function encrypt(payload) {
+    const { body, headers, options } = payload;
+    const { encryptedBody, encryptedKey } = await myRsaEncrypt(body);
+    return {
+        body: encryptedBody,
+        headers: { ...headers, 'X-Encrypted-Key': encryptedKey },
+        cryptoMetadata: { keyId: 'rsa-2048-v1' },
+        options
+    };
+}
+```
+
+
+
+**cifrar (gancho de carga útil de solicitud previa)**
+
+La función **encrypt** recibe un objeto de carga útil con **body**, **headers** y **cryptoMetadata** y **options** opcionales. Devuelve una versión modificada de la misma forma. El campo **options** lleva la configuración de la API de recuperación (por ejemplo, `credentials: 'include'`) a través de la canalización de solicitudes. Los valores de **options** se aplican a la llamada a `fetch()` subyacente. El campo **cryptoMetadata** almacena datos para su uso durante el descifrado. Lo que sea que hayas establecido en **cryptoMetadata** durante el cifrado se conserva en **originalRequest.cryptoMetadata** y se pone a disposición de la función **decrypt** más adelante. A pesar del nombre, **encrypt** es un transformador de solicitud previa general. Puede utilizarlo para modificar encabezados o el cuerpo de la solicitud, no solo para el cifrado criptográfico. La implementación predeterminada devuelve la carga útil sin cambios.
+>>
+
+El siguiente código de ejemplo muestra una función **decrypt**:
+
+```javascript
+function decrypt(encryptedData, originalRequest) {
+    const { keyId } = originalRequest?.cryptoMetadata || {};
+    return await myRsaDecrypt(encryptedData, keyId);
+}
+```
+
+**descifrar (vínculo de respuesta posterior a la solicitud)**
+
+La función **decrypt** se ejecuta después de una respuesta correcta. Recibe el cuerpo de respuesta y **originalRequest**. El objeto **originalRequest** incluye **cryptoMetadata** de su función **encrypt**, junto con **url**, **method** y otros metadatos de solicitud. Debe devolver el cuerpo descifrado sincrónica o asincrónicamente. La implementación predeterminada devuelve los datos sin cambiar. La función **decrypt** solo se ejecuta si las respuestas son correctas. Las respuestas de error no invocan **decrypt**.
+
+>[!NOTE]
+>
+> En los ejemplos anteriores, reemplace `myRsaEncrypt` y `myRsaDecrypt` por sus funciones de cifrado.
 
 ## Implementación del mecanismo de reintento para errores de API
 
@@ -207,4 +274,4 @@ En el código anterior, la función **retryHandler** administra las solicitudes 
   No. Con el Editor de reglas visuales, puede integrar directamente las API usando la opción **Crear integración de API** sin crear un modelo de datos de formulario. Este método es más adecuado para casos de uso ligeros o específicos de formularios.
 
 * **¿Puedo proteger las llamadas de API realizadas desde el Editor de reglas?**\
-  Sí. La configuración de integración de API proporciona opciones de autenticación como **Básico, Clave de API y OAuth 2.0**. También puede habilitar **Se requiere cifrado** para garantizar que los datos confidenciales se transmitan de manera segura.
+  Sí. La configuración de integración de API proporciona opciones de autenticación como **Básico** y **Clave de API**. También puede seleccionar **Se requiere cifrado** y agregar la lógica **cifrar** y **descifrar** personalizada en **function.js**. Para ver ejemplos y pasos de configuración, consulte [Cifrado y descifrado](#encryption-and-decryption).
