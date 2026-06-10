@@ -4,17 +4,17 @@ description: Obtenga información sobre cómo Cloud Manager admite su proyecto d
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '864'
-ht-degree: 100%
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
+workflow-type: tm+mt
+source-wordcount: '894'
+ht-degree: 96%
 
 ---
 
 
 # Introducción a Cloud Manager {#intro-cloud-manager}
 
-Cloud Manager es un componente esencial de AEM as a Cloud Service y sirve como punto de entrada único para su equipo. Sus canalizaciones de CD/CI creadas para fines específicos están equipadas para garantizar pruebas exhaustivas y la máxima calidad del código para ofrecer experiencias excepcionales. Para garantizar que los clientes puedan iniciar sus proyectos rápidamente, Cloud Manager proporciona todo lo necesario en forma de autoservicio, incluida la capacidad de crear los recursos y entornos de la nube y acceder a los repositorios de Git. Estas funciones admiten configuraciones de desarrollo empresarial para que los equipos puedan trabajar con frecuencia para comprometer cambios, ofrecer rápidamente experiencias digitales excepcionales y agilizar el tiempo de obtención de valor.
+Cloud Manager es un componente esencial de AEM as a Cloud Service y sirve como punto de entrada único para su equipo. Sus CI/CD Pipelines creadas para fines específicos están equipadas para garantizar pruebas exhaustivas y la máxima calidad del código para ofrecer experiencias excepcionales. Para garantizar que los clientes puedan iniciar sus proyectos rápidamente, Cloud Manager proporciona todo lo necesario en forma de autoservicio, incluida la capacidad de crear los recursos y entornos de la nube y acceder a los repositorios de Git. Estas funciones admiten configuraciones de desarrollo empresarial para que los equipos puedan trabajar con frecuencia para comprometer cambios, ofrecer rápidamente experiencias digitales excepcionales y agilizar el tiempo de obtención de valor.
 
 El administrador del sistema es el responsable de configurar el equipo de Cloud Manager, que incluirá personas que crearán sus recursos y desarrolladores en la nube. Para obtener más información sobre cómo configurar y escalar su equipo de desarrollo empresarial y ver cómo AEM as a Cloud Service puede apoyar su proceso de desarrollo, consulte el documento [Configuración de desarrollo del equipo empresarial para AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md).
 
@@ -26,9 +26,9 @@ Siga estos pasos para navegar a Cloud Manager.
 
 1. Seleccione la página **Programas y productos** de Cloud Manager para abrir la página **Información general**.
 
-También puede navegar hasta la página Programas y productos de Cloud Manager desde la página de inicio de Adobe Experience Cloud siguiendo estos pasos.
+También puede navegar a la página Programas y productos de Cloud Manager desde la página de inicio de Adobe CX Enterprise siguiendo estos pasos.
 
-1. Vaya a Adobe Experience Cloud en [`https://experience.adobe.com`](https://experience.adobe.com) e inicie sesión con su Adobe ID.
+1. Vaya a Adobe CX Enterprise en [`https://experience.adobe.com`](https://experience.adobe.com) e inicie sesión con su Adobe ID.
 
 1. Asegúrese de que se encuentra en la organización correcta haciendo referencia al nombre de la organización que se muestra en la parte superior derecha de la barra de herramientas.
 
@@ -74,7 +74,7 @@ Vea este [vídeo](https://experienceleague.adobe.com/docs/experience-manager-lea
 
 Un usuario puede crear un programa de **zona protegida** o un programa de **producción**.
 
-* Un **programa de producción** se crea para activar el tráfico en el momento adecuado en el futuro.
+* Un **programa de producción** se crea para habilitar el tráfico en el momento adecuado en el futuro.
    * Consulte [Introducción a los programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obtener más información.
 
 * Un **programa de zona protegida** normalmente se crea para servir los propósitos de formación, ejecución de demostraciones, habilitación, creación de POC o para documentación.

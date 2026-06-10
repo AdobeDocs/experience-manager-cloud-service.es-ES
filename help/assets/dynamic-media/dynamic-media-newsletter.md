@@ -6,9 +6,9 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ En este newsletter archivado de ventanilla única, puede encontrar valiosos recu
    * Aprenda a utilizar la magia del recorte de Dynamic Media.
    * Para obtener más valor de Dynamic Media Classic, aproveche la auditoría gratuita de Adobe.
    * Obtenga información acerca de la nueva interfaz de usuario para Dynamic Media Classic.
-   * Conozca a `Georgia Myers`, encargado del éxito de los clientes para Adobe Experience Cloud.
+   * Conozca a `Georgia Myers`, responsable de éxito de clientes de Adobe CX Enterprise.
 
 * **[Enero de 2020, número 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html?lang=es)**
 

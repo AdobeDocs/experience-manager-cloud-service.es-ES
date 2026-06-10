@@ -6,10 +6,10 @@ feature: Asset Reports
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
 workflow-type: tm+mt
-source-wordcount: '6673'
-ht-degree: 6%
+source-wordcount: '6962'
+ht-degree: 7%
 
 ---
 
@@ -36,7 +36,7 @@ Para obtener más información sobre las extensiones de Adobe o de terceros, con
 * La integración de etiquetas de Experience Platform para los visualizadores de Dynamic Media no funciona en el nodo de creación de Experience Manager. No puede ver ningún seguimiento desde una página WCM hasta que se publique.
 * La integración de etiquetas de Experience Platform para visores de Dynamic Media no se admite en el modo de operación &quot;emergente&quot;, en el que la URL del visor se obtiene mediante el botón &quot;URL&quot; en la página Detalles del recurso.
 * La integración de etiquetas de Experience Platform no se puede usar de forma simultánea con la integración de Analytics de visores heredados (mediante el parámetro `config2=`).
-* La compatibilidad con el seguimiento de vídeos se limita únicamente al seguimiento de reproducción principal, tal como se describe en [Información general sobre el seguimiento](https://experienceleague.adobe.com/es/docs/media-analytics/using/tracking/track-core-overview#player-events). En particular, no se admiten QoS, anuncios, capítulos o segmentos ni el seguimiento de errores.
+* La compatibilidad con el seguimiento de vídeos se limita únicamente al seguimiento de reproducción principal, tal como se describe en [Información general sobre el seguimiento](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview#player-events). En particular, no se admiten QoS, anuncios, capítulos o segmentos ni el seguimiento de errores.
 * La configuración de la duración del almacenamiento para los elementos de datos no se admite para los elementos de datos que usan la extensión *Visores de Dynamic Media*. La duración del almacenamiento debe establecerse en **[!UICONTROL None]**.
 
 ### Casos de uso para la integración {#use-cases-for-the-integration}
@@ -127,11 +127,11 @@ La siguiente configuración de ejemplo en Etiquetas de Experience Platform muest
 
 ### Acerca de Adobe Analytics para audio y vídeo {#about-adobe-analytics-for-audio-and-video}
 
-Cuando una cuenta de Experience Cloud está suscrita para usar Adobe Analytics para audio y vídeo, basta con habilitar el seguimiento de vídeo en la configuración de la extensión *Visores de Dynamic Media*. Las métricas de vídeo están disponibles en Adobe Analytics. El seguimiento de vídeos depende de la presencia de la extensión de Adobe Media Analytics para audio y vídeo.
+Cuando una cuenta de CX Enterprise está suscrita para usar Adobe Analytics para audio y vídeo, basta con habilitar el seguimiento de vídeo en la configuración de la extensión de *Visores de Dynamic Media*. Las métricas de vídeo están disponibles en Adobe Analytics. El seguimiento de vídeos depende de la presencia de la extensión de Adobe Media Analytics para audio y vídeo.
 
 Consulte [Instalación y configuración de extensiones](#installing-and-setup-of-extensions).
 
-Actualmente, la compatibilidad con el seguimiento de vídeos se limita únicamente al seguimiento de &quot;reproducción principal&quot;, tal como se describe en [Información general de seguimiento](https://experienceleague.adobe.com/es/docs/media-analytics/using/tracking/track-core-overview#player-events). En particular, no se admiten QoS, anuncios, capítulos o segmentos ni el seguimiento de errores.
+Actualmente, la compatibilidad con el seguimiento de vídeos se limita únicamente al seguimiento de &quot;reproducción principal&quot;, tal como se describe en [Información general de seguimiento](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview#player-events). En particular, no se admiten QoS, anuncios, capítulos o segmentos ni el seguimiento de errores.
 
 ## Uso de la extensión Visualizadores de Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
@@ -421,7 +421,7 @@ Además, si esta solución de integración se utiliza con Experience Manager Sit
 * [Adobe Developer Console](https://developer.adobe.com/console/home): la integración se ha creado para las etiquetas de Experience Platform.
 * Nodo de creación de Experience Manager: configuración de IMS y configuración de Experience Platform Tags Cloud.
 
-Como parte de la configuración, asegúrese de que tiene acceso a una empresa en Adobe Experience Cloud que ya tiene habilitadas las etiquetas Adobe Analytics y Experience Platform.
+Como parte de la configuración, asegúrese de que tiene acceso a una empresa de Adobe CX Enterprise que ya tiene habilitadas las etiquetas Adobe Analytics y Experience Platform.
 
 ## Configuración de Adobe Analytics para la integración {#configuring-adobe-analytics-for-the-integration}
 
@@ -435,7 +435,7 @@ Consulte también [Guía de implementación de Analytics](https://experienceleag
 
 **Para configurar Adobe Analytics para la integración:**
 
-1. Comience por acceder a Adobe Analytics desde la [página principal](https://experience.adobe.com/#/home) de Experience Cloud. En la barra de menús, haga clic en el icono ![Aplicaciones, soluciones](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Soluciones** cerca de la esquina superior derecha de la página y, a continuación, seleccione **[!UICONTROL Analytics]**.
+1. Comience por acceder a Adobe Analytics desde la [página principal](https://experience.adobe.com/#/home) de CX Enterprise. En la barra de menús, haga clic en el icono ![Aplicaciones, soluciones](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Soluciones** cerca de la esquina superior derecha de la página y, a continuación, seleccione **[!UICONTROL Analytics]**.
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -502,7 +502,7 @@ Después de configurar las etiquetas de Experience Platform, se configuran los s
 
 **Para configurar las etiquetas de Experience Platform para la integración:**
 
-1. Comience por acceder a las etiquetas de Experience Platform desde la [página principal](https://experience.adobe.com/#/home) de Experience Cloud. En la barra de menús, haga clic en el icono ![Aplicaciones, soluciones](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Soluciones** cerca de la esquina superior derecha de la página y, a continuación, haga clic en **[!UICONTROL Etiquetas]**.
+1. Comience por acceder a las etiquetas de Experience Platform desde la [página principal](https://experience.adobe.com/#/home) de CX Enterprise. En la barra de menús, haga clic en el icono ![Aplicaciones, soluciones](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Soluciones** cerca de la esquina superior derecha de la página y, a continuación, haga clic en **[!UICONTROL Etiquetas]**.
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
@@ -533,11 +533,11 @@ Para instalar una extensión, haz clic en **[!UICONTROL Instalar]**. Si es neces
 
 Cuando sea necesario, se deben instalar y configurar las siguientes extensiones:
 
-* (Obligatorio) Extensión *Experience Cloud ID Service*
+* (Obligatorio) Extensión *CX Enterprise ID Service*
 
 No se necesita ninguna configuración adicional, excepto para los valores propuestos. Cuando haya terminado, asegúrese de hacer clic en **[!UICONTROL Guardar]**.
 
-Consulte [Extensión del servicio de identidad de Experience Cloud](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/client/id-service/overview).
+Consulte [Extensión del servicio de identidad empresarial de CX](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/client/id-service/overview).
 
 * (Obligatorio) Extensión *Adobe Analytics*
 
@@ -717,7 +717,7 @@ La configuración de Experience Manager consta de los dos pasos principales sigu
 
    * En el encabezado **[!UICONTROL Seleccionar una función para la API de etiquetas de Experience Platform]**, haga clic en **[!UICONTROL Administrador]**.
 
-   * En el encabezado **[!UICONTROL Seleccione uno o varios perfiles de producto para la API de etiquetas de Experience Platform]**, seleccione el perfil de producto denominado **[!UICONTROL Etiquetas - &lt;your_company_name>]**.
+   * En el encabezado **[!UICONTROL Seleccione uno o varios perfiles de producto para la API de etiquetas de Experience Platform]**, seleccione el perfil de producto denominado **[!UICONTROL Etiquetas - &lt;nombre_de_su_empresa>]**.
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
@@ -806,7 +806,7 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 
    * **[!UICONTROL Configuración de Adobe IMS asociada]**: seleccione la configuración de IMS que creó anteriormente en [Configurar Experience Manager IMS](#configuring-aem-ims).
 
-   * **[!UICONTROL Empresa]** - En la lista desplegable **[!UICONTROL Empresa]**, seleccione su empresa de Experience Cloud. La lista se rellena automáticamente.
+   * **[!UICONTROL Empresa]** - En la lista desplegable **[!UICONTROL Empresa]**, seleccione su empresa de CX Enterprise. La lista se rellena automáticamente.
 
    * **[!UICONTROL Propiedad]**: en la lista desplegable Propiedad, seleccione la propiedad de etiquetas de Experience Platform que creó anteriormente. La lista se rellena automáticamente.
 
