@@ -4,9 +4,9 @@ description: Descubra cómo las habilidades de documentación de Experience Mode
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 111cc47d-085f-4cf4-81bc-332e6a31bbeb
-source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
+source-git-commit: c4f6edf58710aa03410e1828a2d8b61db0052255
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Asegúrese de lo siguiente antes de utilizar esta aptitud.
 
 Una vez cumplidos los requisitos previos, solo tiene que pedir al agente que cree la documentación para su proyecto.
 
-1. En el gráfico, haga clic en &quot;Crear documentación de este proyecto&quot;.
+1. En la tarea de chat `Create documentation for this project`.
 1. Proporcione el nombre de organización del proyecto si el agente se lo pide.
 1. El agente le preguntará qué documentación desea crear. Normalmente, seleccionaría **Todos**.
 

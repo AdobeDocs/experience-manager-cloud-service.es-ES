@@ -4,9 +4,9 @@ description: Guía de referencia para la interfaz y las funciones de la consola 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
+source-git-commit: c80a2ad29839eaf4d8ad940f9a90d8575e5230f1
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1332'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Guía de referencia para la interfaz y las funciones de la consola de modernizac
 
 ## Información general {#overview}
 
-La consola de modernización de la experiencia es un entorno de desarrollo alojado y asistido por IA para Edge Delivery Services, que se expone como interfaz web en [`aemcoder.adobe.io`.](https://aemcoder.adobe.io) Después de conectarse a su proyecto de GitHub, puede empezar a solicitar inmediatamente cambios en lenguaje natural sin tener que realizar más ajustes o configuraciones de entorno local.
+La consola de modernización de la experiencia es un entorno de desarrollo alojado y asistido por IA para Edge Delivery Services, que se expone como interfaz web en [`aemcoder.adobe.io`.](https://aemcoder.adobe.io) Después de conectarse a su proyecto de GitHub, puede empezar inmediatamente a solicitar cambios en lenguaje natural sin tener que realizar más ajustes o configuraciones de entorno local.
 
 >[!TIP]
 >
@@ -43,7 +43,7 @@ Los desarrolladores conservan el control total sobre lo que se envía. Todos los
 
 ## Navegación {#navigation}
 
-Después de iniciar sesión en la consola a las [`aemcoder.adobe.io`,](https://aemcoder.adobe.io), llegará a la pantalla principal de la consola.
+Después de iniciar sesión en la consola en [aemcoder.adobe.io,](https://aemcoder.adobe.io), llega a la [página principal](#home-page) de la consola. Una vez que hayas empezado a chatear, accederás directamente a la [página de chat](#chat-page) en las siguientes visitas al agente de modernización de experiencias.
 
 ![Pantalla principal de la consola](assets/console-home.png)
 
@@ -51,26 +51,20 @@ Después de iniciar sesión en la consola a las [`aemcoder.adobe.io`,](https://a
 
 La barra de menús superior proporciona lo siguiente:
 
-* Un botón **Abrir menú** a la izquierda para expandir y contraer el detalle del panel lateral izquierdo
+* Un título de **Adobe Experience Manager** a la izquierda que se vincula a la página principal cuando se hace clic en él
+* Un botón **Solicitar soporte técnico** donde puede enviar detalles de cualquier problema que se haya encontrado
 * Un botón **Account** a la derecha para cambiar al modo oscuro y cerrar sesión en la consola
 
-### Barra lateral izquierda {#sidebar}
+## Página principal {#home-page}
 
-La barra lateral izquierda permite un acceso rápido a vistas importantes de la consola.
-
-* **[Vista de página principal](#home-view)** (icono de la casa): el punto de partida para usar la consola
-* **[Vista de contenido](#content-view)** (icono de archivo): contenido que ha importado
-* **[Vista de código](#code-view)** (`</>` icono): código del sitio en el que está trabajando
-* **[Vista de configuración](#settings-view)** (icono de engranaje): configuración de la consola
-
-## Vista de inicio {#home-view}
-
-La vista **Home** es el punto de partida para usar la consola.
+La página **Home** es el punto de partida para usar la consola.
 
 * En la parte superior hay una [entrada de solicitud](#prompt-input) para realizar solicitudes de la consola.
 * Debajo del panel de mensajes hay sugerencias para comenzar con el proyecto.
+* Un botón **Iniciar chat** que te lleva a la [página de chat](#chat-page).
+* Botón **Configuración** para obtener acceso a la página [Configuración del proyecto](#settings-page)
 
-### Solicitar entrada {#prompt-input}
+### Indicar entrada {#prompt-input}
 
 La entrada del mensaje proporciona controles para interactuar con la IA.
 
@@ -78,92 +72,92 @@ La entrada del mensaje proporciona controles para interactuar con la IA.
    * **Modo de planificación**: la IA analiza las solicitudes y describe un método sin realizar cambios, lo que resulta útil para comprender la estrategia antes de comprometerse.
    * **Modo de ejecución**: la API lleva a cabo el plan y realiza cambios en el archivo.
 * **Adjuntar archivos** (icono de clip): cargue y adjunte archivos al mensaje para obtener contexto adicional (por ejemplo, diseños de referencia, capturas de pantalla, especificaciones técnicas)
+* **Cola de mensajes** (icono de reloj): se pueden poner en cola mensajes adicionales para que se ejecuten automáticamente una vez que se haya completado la solicitud actual.
 
-## Vista de contenido {#content-view}
+## Página de chat {#chat-page}
 
-La **vista de contenido** proporciona herramientas para examinar y obtener una vista previa del contenido. De forma predeterminada, la vista se divide en tres paneles, de izquierda a derecha:
+La página [**Chat**](https://aemcoder.adobe.io/chat) es la interfaz principal para interactuar con el agente de modernización de experiencias. Esta página está dividida en un [panel de chat](#chat-panel) y [panel de área de trabajo de tamaño variable.](#workspace-panel)
 
-* Panel Preguntar para interactuar con la consola y el proyecto
-* Explorador de archivos para obtener una descripción general de los archivos de contenido (alternar que muestra este panel con el icono de cheurón)
-* Panel de vista previa para visualizar el contenido seleccionado en el explorador de archivos
-
-![Vista de contenido](assets/content-imported.png)
-
-### Panel de chat {#chat-panel}
+## Panel de chat {#chat-panel}
 
 El panel de chat le permite ver y continuar la conversación con el agente de modernización de experiencias. El panel de chat incluye el historial de mensajes de chat y una [entrada de solicitud](#prompt-input) para realizar solicitudes adicionales de la consola.
+
+El encabezado del panel de chat incluye vínculos para navegar a las vistas [Inicio](#home-page) y [Configuración](#settings-page) y las acciones de chat.
 
 * **Acciones de chat**
    * **Borrar chat**: Esto restablece la conversación y borra la ventana de contexto de la IA. Utilice esta opción cuando inicie una nueva tarea que no esté relacionada con la conversación anterior.
    * **Descargar chat**: Esto descarga el historial de conversaciones como un archivo Markdown.
 
-### Previsualizar panel {#preview-panel}
+## Panel Workspace {#workspace-panel}
 
-El panel de vista previa ofrece hasta cuatro modos:
+El panel del espacio de trabajo muestra todo el contenido y el código del sitio. El encabezado de la parte superior del panel incluye un selector para seleccionar la vista específica en la que desea centrarse. Las acciones disponibles en el encabezado del espacio de trabajo cambiarán según la vista seleccionada actualmente.
+
+### Vistas de contenido {#content-view}
+
+Las **vistas de contenido** contienen varios modos para mostrar el contenido de la página seleccionada. Un explorador de archivos contraíble muestra todo el contenido de página disponible para el sitio.
 
 * **Vista previa** (documento con lupa) para ver el contenido de HTML procesado
-   * **Vista interactiva** para ver el contenido de HTML procesado en una vista de escritorio, tableta o móvil
-   * **Modo de diseño** (icono de pincel) para agregar elementos de la página al mensaje para obtener contexto adicional
 * **Vista de documento** (icono de documento) para ver la estructura de contenido de creación de documentos subyacente, respectivamente
-* **Vista de marcado (creación de AEM)** (icono de código) para ver la estructura de contenido de marcado subyacente
+* **HTML view** (icono de código) para ver el html sin formato sin formato
+* **Vista de marcado (creación de AEM)** (icono de párrafo) para ver la estructura de contenido de marcado subyacente
 * **Vista XML JCR (creación de AEM)** (icono de datos) para ver la estructura de contenido XML JCR resultante
 
-Siempre puede hacer clic en el icono **Actualizar vista previa** para actualizar el panel de vista previa.
+![Vista de contenido](assets/content-imported.png)
 
-El botón **Eliminar** quita la página seleccionada del área de trabajo. El contenido visualizado previamente o publicado no se eliminará.
+Las siguientes acciones están disponibles en las vistas de contenido:
 
-El botón **Errores** (Creación en AEM) abre una ventana modal para ver los errores de la página seleccionada.
-
-El botón **Cargar contenido** abre una ventana modal para cargar archivos en AEM.
-
-* El campo **Organización** y **Repositorio** se han rellenado previamente si el proyecto tiene un archivo de `fstab.yaml`
-* La selección de archivos proporciona rutas de destino editables
-* No se admite la carga en JCR (para el editor universal)
+* **Actualizar** icono para actualizar el procesamiento del panel de vista previa.
+* **Modo interactivo** para ver el contenido de HTML procesado en una vista de escritorio, tableta o móvil
+* **Inspeccione el modo** (seleccione el icono) para agregar elementos de la página a su solicitud de contexto adicional
+* **Nueva ventana** (abrir en icono) para abrir la URL de vista previa en una nueva pestaña (para una vista previa de escritorio completa)
+* **Eliminar** quita la página seleccionada del área de trabajo. El contenido visualizado previamente o publicado no se eliminará.
+* El botón **Errores** (Creación en AEM) abre una ventana modal para ver los errores de la página seleccionada.
+* El botón **Cargar contenido** abre una ventana modal para cargar archivos en AEM.
 
 ![Cargar contenido](assets/upload-content.png)
 
-## Vista de código {#code-view}
+### Vistas de código {#code-view}
 
-La **vista Código** proporciona herramientas para examinar el código y administrar los cambios en el código. La vista se divide en tres paneles, de izquierda a derecha:
+**Vistas de código** proporciona herramientas para examinar los archivos de proyecto y administrar los cambios de código. La vista incluye un explorador de archivos para obtener una descripción general de los archivos de código o los cambios realizados como diferencias, así como un área de vista previa para ver el archivo o los cambios seleccionados.
 
-* Panel de chat para interactuar con la consola y el proyecto
-* Explorador de archivos para obtener una descripción general de los archivos de código o cambios como diferencias
-* Panel de vista previa para ver un archivo de código o los cambios seleccionados en el explorador de archivos
+* **Archivos** para examinar los archivos de código en el área de trabajo actual
+* **Cambios** para ver las diferencias de los cambios de archivos creados por su trabajo en el proyecto
 
 ![Vista de código](assets/code-view.png)
 
-El panel de vista previa ofrece dos modos diferentes:
+#### Acciones de archivo {#file-actions}
 
-* **Archivos de Workspace** para examinar los archivos de código del área de trabajo actual
-   * Use el botón **Agregar al chat** para agregar el archivo al panel de chat para obtener contexto.
-* **Cambios de Git** para ver las diferencias de los cambios de archivos creados por su trabajo en el proyecto
-   * Haga clic en el icono `+` para almacenar en zona intermedia el archivo modificado
-   * Haga clic en el icono de flecha para descartar el archivo modificado
+* **Agregar al chat** agrega el archivo seleccionado (o las líneas seleccionadas del archivo) al panel de chat para obtener contexto.
+* **Descargar** descargue el archivo seleccionado en su sistema de archivos local
 
-El icono **Información** enumera tu cuenta y proyecto de GitHub conectado actualmente.
+#### Cambios en acciones {#changes-actions}
 
-El menú **Acciones de GitHub** (parte superior derecha) proporciona operaciones del repositorio.
-
-* **Conectar/Volver a conectar**: inicia OAuth en GitHub
-* **Repositorio de cambios**: reemplaza el área de trabajo por un repositorio diferente. Se perderá cualquier trabajo no comprometido.
+* **Agregar** (icono + ) para almacenar en zona intermedia el archivo modificado
+* **Descartar** (icono de flecha) para descartar el archivo modificado
+* **Eliminar** (icono de papelera) para eliminar el archivo no ensayado
+* **Actualizar** (icono de actualización) para actualizar la lista de cambios
 * **Cambiar rama**: cambia ramas dentro del mismo repositorio
 * **Sincronizar**: extrae los cambios más recientes del origen remoto
 * **Push**: abre un modal para insertar los cambios del espacio de trabajo en GitHub
-* **Cerrar sesión**: se desconecta de GitHub
 
 Al insertar cambios, primero debe tener cambios clasificados para incluirlos en la notificación push. Al insertar, puede elegir crear una nueva PR o insertar directamente en la rama actual
 
 ![Cambios push](assets/push-changes.png)
 
-## Vista de configuración {#settings-view}
+Se pueden realizar acciones adicionales del proyecto de GitHub en la [página de configuración](#settings-page).
 
-La vista de configuración permite administrar la configuración básica de la consola y se divide en las siguientes secciones.
+## Página Configuración {#settings-page}
+
+La página [**Configuración**](https://aemcoder.adobe.io/settings) le permite administrar la configuración básica de la consola y se divide en las siguientes secciones.
 
 ![Vista de configuración](assets/settings-view.png)
 
-Si realiza un cambio en cualquier valor de cualquier sección, haga clic en **Guardar** para guardar los cambios en la sección individual.
+Si realiza un cambio en cualquier valor de cualquier sección, haga clic en **Guardar** para guardar los cambios en la sección individual. Haga clic en el icono Atrás para volver a la vista anterior.
 
-* **Proyecto** le permite ver y editar la configuración del proyecto, como personalizar la dirección URL de la biblioteca.
+* **Proyecto** le permite ver y editar la configuración del proyecto, como administrar la conexión de GitHub y personalizar la dirección URL de la biblioteca.
+   * **Conectar / Volver a conectar**: inicia la autenticación de GitHub
+   * **Repositorio de cambios**: reemplaza el área de trabajo por un repositorio diferente. Se perderá cualquier trabajo no comprometido.
+   * **Cerrar sesión**: se desconecta de GitHub
    * **URL de biblioteca**: esta URL apunta a un archivo library.json que define los bloques disponibles, sus variaciones y el contenido de ejemplo.
    * **URL de base del sitio**: URL de origen del sitio web que se está migrando.
 * **Permisos de agente** - Permitir que el agente acceda a las opciones de configuración

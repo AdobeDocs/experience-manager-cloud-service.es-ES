@@ -4,10 +4,10 @@ description: Conozca los primeros pasos para aumentar rápidamente la productivi
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: c4b1da46f6739f43d38bc05584c246371340a966
+source-git-commit: c80a2ad29839eaf4d8ad940f9a90d8575e5230f1
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 0%
+source-wordcount: '1208'
+ht-degree: 2%
 
 ---
 
@@ -39,20 +39,33 @@ Conozca los primeros pasos para empezar a utilizar Experience Modernization Agen
 1. Ir a [`aemcoder.adobe.io`.](https://aemcoder.adobe.io)
 1. Inicie sesión con su Adobe ID.
 
-## Conectar el repositorio de GitHub {#connect-repo}
+## Modo de demostración {#demo-mode}
 
-La consola le solicitará un repositorio la primera vez que inicie sesión.
+La consola se iniciará en modo de demostración la primera vez que inicie sesión. Este modo le permite explorar un sitio existente en el que puede probar a migrar páginas adicionales. Un banner en la parte inferior de la pantalla indica que se encuentra en modo de demostración.
 
-![Primera pantalla de inicio de sesión de la consola](assets/first-sign-on.png)
+![Modo de demostración](assets/demo-mode.png)
 
-1. Haga clic en **Conectar repositorio**.
-1. Se abrirá la aplicación Conector de código de AEM en una nueva pestaña del explorador. Haga clic en **Autorizar conector de código AEM**.
-1. Vuelva a la consola y especifique la URL de vista previa del sitio. La URL de vista previa se puede obtener previsualizando cualquier documento del sitio o creándolo a partir de la rama, el nombre del sitio y la organización. El sistema recuperará automáticamente el proyecto de Github asociado, en algunos casos se le puede pedir que proporcione las coordenadas de github también.
+## Conectar el sitio {#connect-repo}
+
+Cuando esté listo para empezar a trabajar en su propio sitio, puede salir del modo de demostración conectándose a su propio proyecto.
+
+1. Haga clic en **Cambiar sitio** en el banner del modo de demostración.
+1. Esto le pedirá que autorice la aplicación AEM Code Connector con sus credenciales de GitHub. Haga clic en **Autorizar conector de código AEM**.
+1. Vuelva a la consola y especifique la URL de vista previa del sitio. La URL de vista previa se puede obtener previsualizando cualquier documento del sitio o creándolo a partir de la rama, el nombre del sitio y la organización. El sistema recuperará automáticamente el proyecto de Github asociado. También puede buscar en sus proyectos de GitHub autorizados para encontrar un sitio.
    ![Conectando con el proyecto de GitHub](assets/connect-site-and-github.png)
+1. Haga clic en **Finalizar compra en el espacio de trabajo** una vez verificado el sitio.
 1. Cuando se le pida **Reemplazar el área de trabajo existente**, haga clic en **Reemplazar área de trabajo**.
    ![Reemplazar área de trabajo existente](assets/replace-existing-workspace.png)
 
-El proyecto de GitHub ahora está conectado a la consola y usted se encuentra en la pantalla de inicio.
+El proyecto y el sitio de GitHub ahora están conectados a la consola.
+
+Si se ha salido del modo de demostración pero no se ha conectado un nuevo proyecto, las visitas posteriores al agente de modernización de experiencias forzarán a que un sitio se conecte primero.
+
+![Conexión del sitio](assets/first-sign-on.png)
+
+## Inicio de consola {#console-home}
+
+Cuando visite [aemcoder](https://aemcoder.adobe.io), la página principal aparecerá hasta que se inicie una conversación de chat. La página de inicio le permite empezar a chatear escribiendo su primer mensaje o seleccionando uno de los mensajes sugeridos.
 
 ![Inicio de la consola](assets/console-home.png)
 
@@ -82,22 +95,17 @@ Ahora tiene el contenido y los estilos importados en la consola.
 
 ## Cargar contenido {#upload-content}
 
->[!TIP]
->
->Si está trabajando en un proyecto de AEM Sites y Universal Editor, la carga de contenido en AEM funciona de un modo ligeramente distinto. Consulte [Introducción al agente de modernización de experiencias para proyectos de AEM Sites/editor universal](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) para obtener instrucciones específicas sobre la carga.
-
 Para cargar el contenido en [Document Authoring](https://da.live):
 
-1. Asegúrese de que está en la vista **Contenido** y luego haga clic en el botón **Cargar contenido** en la parte superior derecha.
+1. Asegúrate de que estás en una vista de **Contenido** y luego haz clic en el botón **Cargar contenido** en la parte superior derecha.
    * De manera predeterminada, se encuentra en la vista **Contenido** al entrar a la consola.
-   * La vista se indica mediante el icono resaltado en la barra lateral a lo largo del lado izquierdo de la consola.
-1. El cuadro de diálogo **Cargar contenido** se abre con la organización de destino y el repositorio prerrellenados desde su `fstab.yaml`.
+   * La vista se indica mediante el elemento Selector de vistas seleccionado en el área de espacio de trabajo de la consola.
+1. El cuadro de diálogo **Cargar contenido** se abre con la organización de destino y el repositorio ya rellenados desde la configuración del proyecto.
    * Si un(a) `fstab.yaml` no está presente en el repositorio conectado, deberá ingresar manualmente sus **organizaciones** y **repositorios**.
    * Si utilizó la repetidor, se proporciona un `fstab.yaml`.
 1. Seleccione los archivos que desee cargar y haga clic en **Cargar**.
    ![Cuadro de diálogo Cargar contenido](assets/upload-content.png)
-1. La consola indica el proceso de carga al atenuar el botón **Cargar**.
-   ![Cargando](assets/uploading.png)
+1. La consola indica el proceso de carga al deshabilitar el botón **Cargar**.
 1. Una vez finalizada, aparece una notificación en la parte inferior de la consola.
    ![Ver en AEM](assets/view-in-aem.png)
 
@@ -107,14 +115,18 @@ Para tener acceso al contenido cargado en Document Authoring, si lo desea, haga 
 
 El contenido importado ahora se encuentra en Document Authoring.
 
+>[!TIP]
+>
+>Si está trabajando en un proyecto de AEM Sites y Universal Editor, la carga de contenido en AEM funciona de un modo ligeramente distinto. Consulte [Introducción al agente de modernización de experiencias para proyectos de AEM Sites/editor universal](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) para obtener instrucciones específicas sobre la carga.
+
 ## Cambios en el código push {#push-code-changes}
 
 Una vez que esté satisfecho con los cambios realizados en el código, puede insertarlos en el repositorio de GitHub.
 
-1. Cambie a la vista **Código** (icono `</>` en la barra lateral izquierda) y, a continuación, a la pestaña **Cambios de Git** (icono de rama en la parte superior derecha).
+1. Cambiar a la vista **Changes** (icono de bifurcación en el selector de vistas).
    ![Vista de código](assets/code-view-git-changes.png)
 1. En la lista de archivos modificados, si algunos archivos aparecen como sin seguimiento, haga clic en su botón `+` para almacenarlos en zona intermedia.
-1. Haga clic en el botón **Acciones de GitHub** en la parte superior derecha y, a continuación, seleccione **Insertar** en la lista desplegable.
+1. Haga clic en el botón **Insertar** en la parte superior derecha.
 1. En el cuadro de diálogo **Insertar cambios**, elija insertar los cambios en una nueva PR (predeterminada) o en la rama actual y haga clic en **Confirmar** para insertarlos.
    * En caso de duda, puede insertar la rama actual para que las cosas sean sencillas.
 1. Una vez finalizada, aparece una notificación en la parte inferior de la consola.
@@ -143,7 +155,7 @@ Para ver los cambios en el entorno de vista previa:
 
 Si insertó el código en una rama que no sea `main`, la vista previa abierta desde Document Authoring no mostrará los estilos. Cambie a la rama actualizando la URL de la vista previa y podrá ver sus estilos.
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 ### Direcciones IP de lista de permitidos {#allowlist-ip-addresses}
 
@@ -155,7 +167,7 @@ Si el sitio está protegido por un cortafuegos o por restricciones de acceso, pu
 
 ## Recursos adicionales {#additional-resources}
 
-Los siguientes documentos pueden resultar útiles a medida que continúa explorando Experience Modernization Agent y su consola.
+Los siguientes documentos pueden resultar útiles a medida que continúa explorando el agente de modernización de experiencias y su consola.
 
 * [Consola de modernización de experiencias](/help/ai-in-aem/agents/brand-experience/modernization/console.md): detalles sobre la consola, sus vistas, opciones y capacidades
 * [Guía de solicitud del agente de modernización de experiencias](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md): ideas sobre cómo preguntar al agente y lo que pueden hacer sus habilidades
