@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo acceder a Cloud Manager para confi
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 94%
+source-wordcount: '827'
+ht-degree: 92%
 
 ---
 
@@ -82,13 +82,13 @@ Users with the **Business Owner** role receive a welcome email with a link to ge
 
 <!--
  OLD
-Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
+Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe CX Enterprise home page using these steps.
 
-1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
+1. Navigate directly to [Adobe CX Enterprise](https://experience.adobe.com) and login using your Adobe ID.
 
-1. From the Adobe Experience Cloud home page, select **Experience Manager** to open the AEM home page.
+1. From the Adobe CX Enterprise home page, select **Experience Manager** to open the AEM home page.
 
-   ![Experience Cloud homepage](/help/journey-onboarding/assets/setup-resources2.png)
+   ![CX Enterprise homepage](/help/journey-onboarding/assets/setup-resources2.png)
 
 1. On the **Cloud Manager** tile, select **Launch**.
 
@@ -151,7 +151,7 @@ Debe continuar con su recorrido de incorporación revisando el documento [Crear 
 
 Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
-* [Introducción a Cloud Manager](/help/onboarding/cloud-manager-introduction.md): 
+* [Introducción a Cloud Manager](/help/onboarding/cloud-manager-introduction.md) -
 Obtenga información sobre Cloud Manager, los programas de Cloud Manager y los entornos.
 * [Perfiles de producto y equipo de AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md): aprenda cómo los perfiles de producto y equipo de AEM as a Cloud Service pueden conceder y limitar el acceso a sus soluciones con licencia de Adobe.
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager UI](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md) - Watch this video for an overview of Cloud Manager's UI from an AEM champion. -->

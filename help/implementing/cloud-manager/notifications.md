@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
 workflow-type: tm+mt
 source-wordcount: '593'
-ht-degree: 53%
+ht-degree: 44%
 
 ---
 
@@ -21,9 +21,9 @@ Descubra cómo Cloud Manager le notifica de los eventos importantes.
 
 [!UICONTROL Cloud Manager] le envía notificaciones cuando se inicia y finaliza una canalización de producción (con o sin éxito) al inicio de una implementación de producción.
 
-Estas notificaciones se envían a través del sistema de notificación de [!UICONTROL Experience Cloud] a los usuarios con los roles de **Propietario del negocio**, **Administrador de programa** y **Administrador de implementación**.
+Estas notificaciones se envían a través del sistema de notificación [!UICONTROL CX Enterprise] a los usuarios con los roles de **Propietario del negocio**, **Administrador de programas** y **Administrador de implementación**.
 
-Las notificaciones aparecen en una barra lateral dentro de [!UICONTROL Cloud Manager] y en todo Adobe [!UICONTROL Experience Cloud]. Al icono de campana del encabezado se le asigna un distintivo cuando tiene nuevas notificaciones.
+Las notificaciones aparecen en una barra lateral dentro de [!UICONTROL Cloud Manager] y en toda la [!UICONTROL CX Enterprise] de Adobe. Al icono de campana del encabezado se le asigna un distintivo cuando tiene nuevas notificaciones.
 
 ![Icono de notificaciones](assets/notifications-bell-badged.png)
 
@@ -45,7 +45,7 @@ Haga clic en la opción **Marcar todo como leído** en la parte inferior del pan
 
 Puede personalizar cómo recibe las notificaciones y cuáles.
 
-Haga clic en el icono de engranaje en la parte superior de la barra lateral de notificaciones para abrir la ventana **preferencias de Experience Cloud**. Desde aquí, puede definir las suscripciones de notificación y cómo recibe las notificaciones.
+Haga clic en el icono de engranaje en la parte superior de la barra lateral de notificaciones para abrir la ventana **Preferencias de CX Enterprise**. Desde aquí, puede definir las suscripciones de notificación y cómo recibe las notificaciones.
 
 ![Icono de configuración de notificaciones](assets/notifications-configuration.png)
 
@@ -81,7 +81,7 @@ Puede definir el comportamiento de las alertas.
 
 ### Correo electrónico {#emails}
 
-Las notificaciones están disponibles en la interfaz de usuario web en todas las soluciones de Adobe [!UICONTROL Experience Cloud]. También puede optar por que estas notificaciones se envíen por correo electrónico en la sección **Correos electrónicos**.
+Las notificaciones están disponibles en la interfaz de usuario web en todas las soluciones de Adobe [!UICONTROL CX Enterprise]. También puede optar por que estas notificaciones se envíen por correo electrónico en la sección **Correos electrónicos**.
 
 ![Correos electrónicos de notificación](assets/notifications-emails.png)
 
