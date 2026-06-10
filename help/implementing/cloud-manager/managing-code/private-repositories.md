@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo configurar Cloud Manager para que 
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: d36142c0569da782e12adbea9f36a44734a93aaf
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 35%
+source-wordcount: '1104'
+ht-degree: 32%
 
 ---
 
@@ -15,16 +15,35 @@ ht-degree: 35%
 
 Si configura Cloud Manager para que se integre con su GitHub Cloud privado (repositorios alojados en `github.com`), podrá validar su código directamente en GitHub mediante Cloud Manager. Esta configuración elimina el requisito de sincronizar el código regularmente con el repositorio de Adobe.
 
+Cloud Manager valida la propiedad del repositorio de GitHub de una de las dos maneras siguientes, según la ubicación en la que esté alojado el repositorio:
+
+* Los repositorios de `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud alojadas en `github.com`, utilizan la aplicación de Adobe GitHub. Esta página describe ese método.
+* Los repositorios de GitHub Enterprise Server (autoalojados) utilizan un PAT (token de acceso personal) y un webhook. Consulte [Adición de repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+
 >[!NOTE]
 >
->También puede añadir los siguientes tipos de repositorios con los webhooks:
+>Esta página se aplica a los repositorios hospedados en `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud hospedadas en `github.com`. Estos repositorios utilizan la aplicación de Adobe GitHub para validar la propiedad. No se requiere ninguna configuración de gancho web, ya que Cloud Manager se integra directamente a través de la aplicación.
 >
->* Repositorios de GitHub Enterprise Server (versión autoalojada de GitHub)
->* Repositorios de GitLab (tanto `gitlab.com` como versiones autohospedadas de GitLab).
->* Repositorios de Bitbucket (tanto `bitbucket.org` como Bitbucket Server, la versión autoalojada de BitBucket).
->* Repositorios de Azure DevOps (tanto [dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) como versiones autohospedadas de Azure DevOps).
+>Para agregar cualquiera de los siguientes tipos de repositorios, consulte [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). Estos repositorios utilizan un PAT (token de acceso personal) y un webhook configurado manualmente para validar la propiedad.
 >
->Consulte [Adición de repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+>* Servidor de GitHub Enterprise (la versión autoalojada de GitHub)
+>* GitLab (tanto `gitlab.com` como la versión autoalojada de GitLab)
+>* Bitbucket (solo `bitbucket.org`, la versión de la nube)
+>* DevOps de Azure (`dev.azure.com`)
+
+<!--
+>[!NOTE]
+>
+>You can also add the following repository types with webhooks:
+>
+>* GitHub Enterprise Server (self-hosted version of GitHub) repositories .
+>* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories.
+>* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories. 
+>* Azure DevOps (both [dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) and self-hosted versions of Azure DevOps) repositories.
+>
+>See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+-->
 
 <!--
  CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
@@ -78,7 +97,7 @@ La configuración de un repositorio privado de GitHub Cloud en Cloud Manager con
    | Descripción (opcional) | Breve descripción del repositorio. |
 
 1. Seleccione **Guardar**.
-Ahora, puede [validar la propiedad del repositorio privado](#validate-ownership).
+Ahora puede [validar la propiedad del repositorio privado](#validate-ownership).
 
 >[!TIP]
 >
