@@ -4,12 +4,13 @@ description: Conozca los pasos de configuración específicos necesarios para lo
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
-source-git-commit: 7b880e6d776e2eb9c53cef4552b876b051bdc7ba
+source-git-commit: c80a2ad29839eaf4d8ad940f9a90d8575e5230f1
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
+
 
 # Introducción al Agente de modernización de experiencias para proyectos de creación de AEM {#getting-started-aem-authoring}
 
@@ -57,7 +58,7 @@ Una vez completados los pasos para migrar el contenido, continúe con los siguie
 
 ## Validar contenido {#validate-content}
 
-Valide el contenido de la página seleccionada en el panel de vista previa. Se mostrarán todos los errores haciendo clic en el botón **Errores**.
+Valide el contenido de la página seleccionada en la vista previa del panel de contenido. Se mostrarán todos los errores haciendo clic en el botón **Errores**.
 Continúe la conversación de chat con el agente para corregir los errores. Utilice la función **Agregar al chat** para dirigir correcciones a elementos específicos de la página, archivos del analizador o archivos del transformador.
 
 ![Chat contextual](assets/contextual-chat.png)
@@ -66,7 +67,7 @@ Continúe la conversación de chat con el agente para corregir los errores. Util
 
 Para cargar el contenido en AEM:
 
-1. Asegúrese de que está en la vista **Contenido** y haga clic en el botón **Cargar contenido** en la parte superior derecha.
+1. Asegúrese de que está en una vista de **Contenido** y haga clic en el botón **Cargar contenido** en la parte superior derecha.
 1. En el cuadro de diálogo **Crear paquete de contenido**, elija las páginas que desea incluir en el paquete.
    * Si lo desea, escriba un **nombre de paquete** (de manera predeterminada, el nombre del sitio si se deja vacío).
    * Use **Seleccionar todo**, **Borrar selección**, **Expandir todo** o **Contraer todo** para administrar la lista.
