@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo ejecutar JavaScript en la capa de 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 757b64c4b3340f56cc8a5e5a7c1200fcd8d0c1be
+source-git-commit: 3d12f495e0f1a07c81033b93fd607fd260023c48
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1441'
 ht-degree: 2%
 
 ---
@@ -97,15 +97,14 @@ kind: "EdgeFunctions"
 version: "1"
 data:
   services:
-    - name: first-function
-    - name: second-function
+    - name: my-edge-function
     # Uncomment to enable secrets
     # secrets:
     #   - key: API_TOKEN
     #     value: ${{ API_TOKEN_SECRET }}
 ```
 
-La configuración admite hasta tres servicios. Las claves de nivel superior son:
+El límite predeterminado es 1 función para entornos AEM as a Cloud Service y 3 para sitios Edge Delivery Services. Las claves de nivel superior son:
 
 | Clave | Descripción |
 |---|---|
@@ -124,19 +123,19 @@ version: '1'
 data:
   originSelectors:
     rules:
-      - name: route-to-first-function
+      - name: route-weather-to-edge-function
         when: { reqProperty: path, equals: "/weather" }
         action:
           type: selectAemOrigin
-          originName: edgefunction-first-function
-      - name: route-to-second-function
+          originName: edgefunction-my-edge-function
+      - name: route-hello-world-to-edge-function
         when: { reqProperty: path, equals: "/hello-world" }
         action:
           type: selectAemOrigin
-          originName: edgefunction-second-function
+          originName: edgefunction-my-edge-function
 ```
 
-Las reglas del selector de origen permiten dirigir el tráfico a las funciones perimetrales en función de cualquier condición disponible en el motor de reglas de CDN, como una ruta específica, un dominio o un encabezado de solicitud. Consulte [Selectores de origen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) para obtener la sintaxis completa de la regla.
+Las reglas del selector de origen permiten dirigir el tráfico a las funciones perimetrales en función de cualquier condición disponible en el motor de reglas de CDN, como una ruta específica, un dominio o un encabezado de solicitud. Varias reglas pueden enrutar diferentes rutas a la misma función de Edge. Consulte [Selectores de origen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) para obtener la sintaxis completa de la regla.
 
 ### &#x200B;4. Implementar la configuración {#deploy-configuration}
 
