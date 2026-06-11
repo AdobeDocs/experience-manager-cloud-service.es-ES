@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo configurar Cloud Manager para que 
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
+source-git-commit: 18511b9e809cb4aa372fd04213d555dc669bbb0d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 29%
+source-wordcount: '1084'
+ht-degree: 28%
 
 ---
 
@@ -134,7 +134,6 @@ La columna **Tipo** de la tabla de la página **Repositorios** identifica los re
 Para acceder al repositorio más tarde y completar la validación, en la página **Repositorios**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en la fila que representa el repositorio de GitHub que agregó. En la lista desplegable, seleccione **Validación de propiedad**.
 
 
-
 ## Uso de repositorios privados de GitHub Cloud con Cloud Manager {#using}
 
 Una vez validado el repositorio de GitHub en Cloud Manager, la integración se completa. Puede utilizar el repositorio con Cloud Manager.
@@ -171,7 +170,7 @@ Los repositorios privados validados se pueden asociar a [canalizaciones de pila 
 
 ## Limitaciones {#limitations}
 
-Se aplican ciertas restricciones al usar repositorios privados con Cloud Manager.
+Al utilizar repositorios privados con Cloud Manager, se aplican las siguientes limitaciones.
 
 * No se creará ni insertará ninguna etiqueta de Git al utilizar repositorios privados en canalizaciones de producción de pila completa.
 * Si la aplicación de Adobe GitHub se elimina de su organización de GitHub, se elimina la función de validación de solicitudes de extracción de todos los repositorios.
