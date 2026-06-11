@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo añadir un repositorio administrad
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
+source-git-commit: 18511b9e809cb4aa372fd04213d555dc669bbb0d
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2682'
 ht-degree: 24%
 
 ---
@@ -26,7 +26,7 @@ Los clientes ahora también pueden incorporar sus repositorios Git de DevOps de 
 >
 >Cloud Manager valida la propiedad del repositorio de GitHub de una de las dos maneras siguientes, según dónde esté alojado el repositorio:
 >
->* Esta página de instrucciones se aplica a agregar cualquiera de los siguientes tipos de repositorios. Estos tipos de repositorios utilizan un PAT (token de acceso personal) y un webhook configurado manualmente para validar la propiedad.
+>* Esta página de instrucciones se aplica a agregar cualquiera de los siguientes tipos de repositorios. Estos tipos utilizan un PAT (token de acceso personal) y un webhook configurado manualmente para validar la propiedad.
 >
 >   * Repositorios de GitHub Enterprise Server (versión autoalojada de GitHub).
 >   * Repositorios de GitLab (tanto `gitlab.com` como la versión autoalojada de GitLab).
