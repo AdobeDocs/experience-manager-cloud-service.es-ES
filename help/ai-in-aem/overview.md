@@ -4,10 +4,10 @@ description: Obtenga información sobre la IA de Adobe Experience Manager as a C
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: b18758b46e999222c4af1fa19781018acc9eb7ea
+source-git-commit: 7cbada357eee47726df788915e071f073b7bce79
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 42%
+source-wordcount: '586'
+ht-degree: 45%
 
 ---
 
@@ -63,6 +63,10 @@ La IA generativa se utiliza en todo AEM:
 
   La integración de traducción de IA le permite utilizar un modelo de idioma grande (LLM) como servicio de traducción para el contenido que crea en Adobe Experience Manager. Puede conectar AEM a su proveedor de LLM (empezando por Microsoft Azure OpenAI), reutilizar los mismos flujos de trabajo de traducción que para otros conectores y, opcionalmente, cargar guías de estilo de traducción para que AEM pueda generar reglas que mantengan la coherencia del tono, la terminología y el idioma de marca en todas las configuraciones regionales.
 
+* [AI de contenido de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-content-ai/using/introduction)
+
+  La inteligencia artificial aplicada al contenido de AEM ayuda a las marcas a mantener un contenido preciso, actual y propio de la marca, ya que los sistemas de IA representan cada vez más sus mensajes, lo que proporciona creación asistida por IA, descubrimiento de contenido en lenguaje natural y generación consciente de la marca para experiencias humanas y basadas en IA.
+
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)
 -->
@@ -71,10 +75,10 @@ La IA generativa se utiliza en todo AEM:
 
 Hay muchos recursos disponibles, entre ellos:
 
-* [Información general de Adobe AI](https://www.adobe.com/ai/overview.html?lang=es)
+* [Información general sobre la IA de Adobe](https://www.adobe.com/ai/overview.html?lang=es)
 
 * [IA responsable en Adobe](https://www.adobe.com/trust/responsible-ai.html)
 
-* [IA generativa en productos de Experience Cloud](https://experienceleague.adobe.com/es/docs/core-services/interface/features/generative-ai)
+* [IA generativa en los productos de Experience Cloud](https://experienceleague.adobe.com/es/docs/core-services/interface/features/generative-ai)
 
-   * [IA generativa en productos de Experience Cloud: Adobe Experience Manager](https://experienceleague.adobe.com/es/docs/core-services/interface/features/generative-ai#aem)
+   * [IA generativa en los productos de Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/es/docs/core-services/interface/features/generative-ai#aem)
