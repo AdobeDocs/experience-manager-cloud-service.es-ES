@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión de Universal Editor 2026.06.04
-description: Estas son las notas de la versión de la versión 2026.06.05 de Universal Editor.
+title: Notas de la versión de Universal Editor 2026.06.11
+description: Estas son las notas de la versión de la versión 2026.06.11 de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 683e8c5f5d51872d9ba9cee59b05570920e697fe
+source-git-commit: 3ceab6402b4b93813ee838108dd381903cb915a9
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 20%
+source-wordcount: '126'
+ht-degree: 18%
 
 ---
 
 
-# Notas de la versión de Universal Editor 2026.06.05 {#release-notes}
+# Notas de la versión de Universal Editor 2026.06.11 {#release-notes}
 
-Estas son las notas de la versión del editor universal del 5 de junio de 2026.
+Estas son las notas de la versión del editor universal del 11 de junio de 2026.
 
 >[!TIP]
 >
@@ -24,10 +24,8 @@ Estas son las notas de la versión del editor universal del 5 de junio de 2026.
 >
 >Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, consulte [esta página.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## Novedades {#what-is-new}
-
-* El editor universal ahora admite [páginas de creación de documentos autenticadas.](https://docs.da.live/developers/reference/access-control)
-
 ## Otras mejoras {#other-improvements}
 
-* Se corrigió un problema en el cual al cambiar el texto seleccionado de **Encabezado** a **Código** en el editor de texto enriquecido, se podía revertir el formato a **Párrafo** en lugar de conservar el estilo seleccionado.
+* Se ha corregido un problema en el cual los nodos vacíos no se eliminaban correctamente del JCR durante determinadas operaciones.
+* Las imágenes decorativas ahora se ocultan correctamente de las tecnologías de asistencia.
+* Algunos mensajes de error se han vuelto más legibles eliminando todo el seguimiento de pila y mostrando solo el mensaje de error original.
