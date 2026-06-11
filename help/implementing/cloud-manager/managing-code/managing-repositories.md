@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo agregar, ver y eliminar repositori
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
+source-git-commit: fcdb7bb423500a5c17149ccb5913a2bb3330b073
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 63%
+ht-degree: 62%
 
 ---
 
