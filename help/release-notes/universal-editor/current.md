@@ -4,7 +4,7 @@ description: Estas son las notas de la versión de la versión 2026.06.11 de Uni
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 3ceab6402b4b93813ee838108dd381903cb915a9
+source-git-commit: fd128d2aa5bbd4c84b5ab438542ec696768b06a1
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 18%
@@ -29,3 +29,4 @@ Estas son las notas de la versión del editor universal del 11 de junio de 2026.
 * Se ha corregido un problema en el cual los nodos vacíos no se eliminaban correctamente del JCR durante determinadas operaciones.
 * Las imágenes decorativas ahora se ocultan correctamente de las tecnologías de asistencia.
 * Algunos mensajes de error se han vuelto más legibles eliminando todo el seguimiento de pila y mostrando solo el mensaje de error original.
+

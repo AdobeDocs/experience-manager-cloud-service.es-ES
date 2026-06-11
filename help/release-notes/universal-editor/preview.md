@@ -4,7 +4,7 @@ description: Estas son las notas de la versión de la vista previa del editor un
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: be63e86bb0d677e03deded6d42af5020fee509de
+source-git-commit: fd128d2aa5bbd4c84b5ab438542ec696768b06a1
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -33,3 +33,4 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 * Se corrigió un error en el que un procesador se bloquea en algunas situaciones al volver a cargar ciertos modelos.
 * Se corrigió un error en el cual no se podían eliminar ciertas etiquetas.
 * El nombre accesible del botón Imagen destacada ya no contiene información duplicada.
+
