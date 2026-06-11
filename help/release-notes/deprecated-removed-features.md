@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 4942d2acaa59ec0a5b8c4e7b8a0ea5d29995cea6
+source-git-commit: d3133acd35ffe533a4bd0014d106b8978953296d
 workflow-type: tm+mt
 source-wordcount: '4171'
 ht-degree: 70%
@@ -31,12 +31,12 @@ Durante el plazo de tiempo hasta la entrada en desuso, Adobe recordará a los cl
 
 >[!IMPORTANT]
 >
->Se eliminarán varias [API obsoletas](#aem-apis) el **11 de junio de 2026**. Revise estas fechas e impactos clave:
+>Se eliminarán varias [API obsoletas](#aem-apis) el **23 de julio de 2026**. Revise estas fechas e impactos clave:
 >
 >* **A partir del 26 de enero de 2026**: los correos electrónicos de notificación del Centro de acciones se envían como recordatorio para eliminar el uso de estas API si se ha ejecutado recientemente una canalización.
 >* **26 de febrero de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **se pausarán** durante el paso **Calidad del código**. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular el problema para permitir que continúe la canalización. *Esto puede ralentizar la validación y la publicación de cambios en el código.*
 >* **14 de abril de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **producirán errores** durante el paso **Calidad del código**. Las implementaciones se bloquearán hasta que se elimine el uso de API obsoleto. *Esto puede impedir que publique actualizaciones con plazos específicos y podría afectar a las operaciones de su empresa.*
->* **11 de junio de 2026**: Los entornos que aún utilicen API obsoletas **no recibirán actualizaciones críticas de la versión de Adobe** y no estarán sujetos a los compromisos estándar de Adobe en cuanto a rendimiento y disponibilidad. Como resultado, no recibirá nuevas funciones ni correcciones de errores, la estabilidad y el tiempo de actividad de la aplicación podrían verse afectados negativamente y la exposición al riesgo de seguridad podría aumentar aún más. Para volver a recibir las actualizaciones de la versión de Adobe, se debe ejecutar correctamente una canalización de pila completa; la actualización se aplicará en unos días.
+>* **23 de julio de 2026**: Los entornos que aún utilicen API obsoletas **no recibirán actualizaciones críticas de la versión de Adobe** y no estarán sujetos a los compromisos estándar de Adobe en cuanto a rendimiento y disponibilidad. Como resultado, no recibirá nuevas funciones ni correcciones de errores, la estabilidad y el tiempo de actividad de la aplicación podrían verse afectados negativamente y la exposición al riesgo de seguridad podría aumentar aún más. Para volver a recibir las actualizaciones de la versión de Adobe, se debe ejecutar correctamente una canalización de pila completa; la actualización se aplicará en unos días.
 >
 
 ## Funcionalidad en desuso {#deprecated-features}
@@ -87,12 +87,12 @@ Se ha anunciado que las API de la tabla siguiente (haga clic para ampliar y verl
 
 >[!IMPORTANT]
 >
->Se eliminarán varias [API obsoletas](#aem-apis) el **11 de junio de 2026**. Revise estas fechas e impactos clave:
+>Se eliminarán varias [API obsoletas](#aem-apis) el **23 de julio de 2026**. Revise estas fechas e impactos clave:
 >
 >* **A partir del 26 de enero de 2026**: los correos electrónicos de notificación del Centro de acciones se envían como recordatorio para eliminar el uso de estas API.
 >* **26 de febrero de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **se pausarán** durante el paso **Calidad del código**. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular el problema para permitir que continúe la canalización. *Esto puede ralentizar la validación y la publicación de cambios en el código.*
 >* **14 de abril de 2026**: Las canalizaciones de Cloud Manager que contienen código mediante estas API **producirán errores** durante el paso **Calidad del código**. Las implementaciones se bloquearán hasta que se elimine el uso de API obsoleto. *Esto puede impedir que publique actualizaciones con plazos específicos y podría afectar a las operaciones de su empresa.*
->* **11 de junio de 2026**: Los entornos que aún utilicen API obsoletas **no recibirán actualizaciones críticas de la versión de Adobe** y no estarán sujetos a los compromisos estándar de Adobe en cuanto a rendimiento y disponibilidad. Como resultado, no recibirá nuevas funciones ni correcciones de errores, la estabilidad y el tiempo de actividad de la aplicación podrían verse afectados negativamente y la exposición al riesgo de seguridad podría aumentar aún más.
+>* **23 de julio de 2026**: Los entornos que aún utilicen API obsoletas **no recibirán actualizaciones críticas de la versión de Adobe** y no estarán sujetos a los compromisos estándar de Adobe en cuanto a rendimiento y disponibilidad. Como resultado, no recibirá nuevas funciones ni correcciones de errores, la estabilidad y el tiempo de actividad de la aplicación podrían verse afectados negativamente y la exposición al riesgo de seguridad podría aumentar aún más.
 >
 
 <details>

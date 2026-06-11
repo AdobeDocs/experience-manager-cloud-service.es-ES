@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 4b0145191ec0e31e227b59b99d7dff098f57d9a2
+source-git-commit: 0bc06c164838c75f185363a2bf05512171c9bd41
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 27%
@@ -189,7 +189,7 @@ Es fundamental eliminar el uso de API obsoletas.
 
 Desde el **14 de abril**, las canalizaciones de Cloud Manager que contienen código mediante API cuyo objetivo es la eliminación el 26/2/2026 **fallan durante el paso Calidad del código**. Las implementaciones se bloquearán hasta que se elimine el uso de API obsoleto. *Esto puede impedir que publique actualizaciones con plazos específicos y podría afectar a las operaciones de su empresa.*
 
-A partir del **11 de junio de 2026**, los entornos que sigan usando estas API obsoletas **no recibirán actualizaciones críticas de la versión de Adobe** y no estarán sujetos a los compromisos estándar de Adobe en cuanto a rendimiento y disponibilidad. Como resultado, no recibirá nuevas funciones ni correcciones de errores, la estabilidad y el tiempo de actividad de la aplicación podrían verse afectados negativamente y la exposición al riesgo de seguridad podría aumentar aún más.
+A partir del **23 de julio de 2026**, los entornos que sigan usando estas API obsoletas **no recibirán actualizaciones críticas de la versión de Adobe** y no estarán sujetos a los compromisos estándar de Adobe en cuanto a rendimiento y disponibilidad. Como resultado, no recibirá nuevas funciones ni correcciones de errores, la estabilidad y el tiempo de actividad de la aplicación podrían verse afectados negativamente y la exposición al riesgo de seguridad podría aumentar aún más.
 
 Consulte el [artículo sobre obsolescencia](/help/release-notes/deprecated-removed-features.md#aem-apis) para obtener más detalles, pero, para mayor comodidad, estas API se enumeran a continuación:
 
