@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo agregar, ver y eliminar repositori
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 86%
+source-wordcount: '891'
+ht-degree: 63%
 
 ---
 
@@ -20,11 +20,12 @@ Obtenga información sobre cómo ver, agregar y eliminar repositorios de Git en 
 
 Los repositorios de Cloud Manager se utilizan para almacenar y administrar el código del proyecto mediante Git. Por cada *programa* que añada, se creará automáticamente un repositorio administrado por Adobe.
 
-Además, tiene la opción de crear más repositorios administrados por Adobe o añadir sus propios repositorios privados. Todos los repositorios vinculados con su programa se pueden ver en la página **Repositorios**.
+Además, tiene la opción de crear más repositorios administrados por Adobe o sus propios repositorios autoadministrados alojados con un proveedor Git externo. En el caso de los repositorios autoadministrados, los pasos de incorporación difieren según la ubicación en la que esté alojado el código. Los repositorios de `github.com` utilizan la aplicación GitHub de Adobe, mientras que los repositorios autoalojados y otros externos utilizan un token de acceso personal y un webhook. Todos los repositorios vinculados con su programa se pueden ver en la página **Repositorios**.
 
 Los repositorios creados en Cloud Manager también se pueden seleccionar al añadir o editar canalizaciones. Para obtener más información sobre la configuración de canalizaciones, consulte [Canalizaciones de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 Cada canalización está vinculada a un repositorio o rama principal. Sin embargo, la [compatibilidad con el submódulo Git](git-submodules.md) permite incluir múltiples ramas secundarias durante el proceso de compilación.
+
 
 ## Ver la página Repositorios {#repositories-window}
 
@@ -48,21 +49,31 @@ Otras acciones disponibles en el menú desplegable incluyen **[Copiar la URL del
    ![Página Repositorios](assets/repositories.png)
    *Página Repositorios en Cloud Manager.*
 
-## Añadir un repositorio {#adding-repositories}
+## Añadir un repositorio de Adobe {#adding-repositories}
 
 Un usuario debe tener la función **Administrador de implementación** o **Propietario del negocio** para poder añadir un repositorio.
 
-En la página **Repositorios**, junto a la esquina superior derecha, haga clic en **Agregar repositorio**
+Para obtener ayuda para elegir entre los métodos de repositorio privado y externo, consulte [Agregar un repositorio que no sea de Adobe](#add-non-adobe-repositories).
 
-![Cuadro de diálogo Agregar repositorio](assets/repository-add.png)
-*Cuadro de diálogo Agregar repositorio.*
+1. En la página **Repositorios**, junto a la esquina superior derecha, haga clic en **Agregar repositorio**
 
-Cloud Manager admite dos tipos de repositorios: repositorios administrados por Adobe (**Repositorio de Adobe**) y repositorios autoadministrados (**Repositorio privado**). Los campos obligatorios para la configuración difieren según el tipo de repositorio que decida añadir. Para obtener más información, consulte lo siguiente:
+   ![Cuadro de diálogo Agregar repositorio](assets/repository-add.png)
+   *Cuadro de diálogo Agregar repositorio.*
 
-* [Adición de repositorios de Adobe en Cloud Manager](adobe-repositories.md)
-* [Adición de repositorios privados en Cloud Manager](private-repositories.md)
+1. Haga clic en **Repositorio de Adobe**. Consulte [Agregar repositorios de Adobe en Cloud Manager](adobe-repositories.md).
 
-Hay un límite de 300 repositorios en todos los programas de cualquier compañía u organización de IMS.
+   Hay un límite de 300 repositorios en todos los programas de cualquier compañía u organización de IMS.
+
+### Añadir un repositorio que no sea de Adobe {#add-non-adobe-repositories}
+
+Si aloja el código fuera de Adobe, la página de instrucciones que utilice y el método de validación de propiedad dependerán de dónde esté alojado el repositorio. Utilice la siguiente tabla para elegir la ruta correcta.
+
+| Ubicación del repositorio. | Método de validación | Página de instrucciones de uso |
+| --- | --- | --- |
+| `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud alojadas en `github.com` | Aplicación de Adobe GitHub y un archivo secreto. No se requiere webhook. | [Agregar un repositorio privado de GitHub Cloud en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
+| Servidor empresarial de GitHub (autoalojado) | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
+| GitLab, Bitbucket o Azure DevOps | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+
 
 ## Acceder a la información del repositorio {#repo-info}
 
@@ -97,7 +108,7 @@ La acción **Eliminar** elimina el repositorio del proyecto. Un repositorio no s
 
 ![Eliminar](assets/repository-delete.png)
 
-Al eliminar un repositorio, su nombre no se puede utilizar para ningún repositorio nuevo creado en el futuro. Si intenta agregar un repositorio con el mismo nombre de un repositorio eliminado, aparecerá el siguiente mensaje de error:
+Al eliminar un repositorio, se impide que su nombre se utilice en repositorios nuevos creados en el futuro. Si intenta agregar un repositorio con el mismo nombre de un repositorio eliminado, aparecerá el siguiente mensaje de error:
 
 `Repository name should be unique within organization.`
 

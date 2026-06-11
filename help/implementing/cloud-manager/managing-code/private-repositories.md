@@ -4,33 +4,27 @@ description: Obtenga información sobre cómo configurar Cloud Manager para que 
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 20e86bf332ee7a753287ac738dc090c771f444ea
+source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 32%
+source-wordcount: '1083'
+ht-degree: 29%
 
 ---
 
-# Añadir un repositorio privado de GitHub Cloud en Cloud Manager {#private-repositories}
+# Añadir un repositorio privado de GitHub Enterprise Cloud en Cloud Manager {#private-repositories}
 
 Si configura Cloud Manager para que se integre con su GitHub Cloud privado (repositorios alojados en `github.com`), podrá validar su código directamente en GitHub mediante Cloud Manager. Esta configuración elimina el requisito de sincronizar el código regularmente con el repositorio de Adobe.
 
-Cloud Manager valida la propiedad del repositorio de GitHub de una de las dos maneras siguientes, según dónde esté alojado el repositorio:
-
-* Los repositorios de `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud alojadas en `github.com`, utilizan la aplicación de Adobe GitHub. Esta página describe ese método.
-* Los repositorios de GitHub Enterprise Server (autoalojados) utilizan un PAT (token de acceso personal) y un webhook. Consulte [Adición de repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-
->[!NOTE]
+>[!IMPORTANT]
+>Cloud Manager valida la propiedad del repositorio de GitHub de una de las dos maneras siguientes, según dónde esté alojado el repositorio:
 >
->Esta página se aplica a los repositorios hospedados en `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud hospedadas en `github.com`. Estos repositorios utilizan la aplicación de Adobe GitHub para validar la propiedad. No se requiere ninguna configuración de gancho web, ya que Cloud Manager se integra directamente a través de la aplicación.
+>* Esta página de instrucciones se aplica a los repositorios alojados en `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud alojadas en `github.com`. Estos repositorios utilizan la aplicación de Adobe GitHub para validar la propiedad. No se requiere ninguna configuración de gancho web, ya que Cloud Manager se integra directamente a través de la aplicación.
+>* Si desea agregar cualquiera de los siguientes tipos de repositorios, consulte [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). Estos repositorios utilizan un PAT (token de acceso personal) y un webhook configurado manualmente para validar la propiedad.
 >
->Para agregar cualquiera de los siguientes tipos de repositorios, consulte [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). Estos repositorios utilizan un PAT (token de acceso personal) y un webhook configurado manualmente para validar la propiedad.
->
->* Servidor de GitHub Enterprise (la versión autoalojada de GitHub)
->* GitLab (tanto `gitlab.com` como la versión autoalojada de GitLab)
->* Bitbucket (solo `bitbucket.org`, la versión de la nube)
->* DevOps de Azure (`dev.azure.com`)
+>   * Repositorios de GitHub Enterprise Server (versión autoalojada de GitHub).
+>   * Repositorios de GitLab (tanto `gitlab.com` como la versión autoalojada de GitLab).
+>   * Repositorios de bitbucket (solo `bitbucket.org`, versión en la nube). La versión autoalojada de Bitbucket dejó de usarse el 15 de febrero de 2024.
+>   * Repositorios de DevOps de Azure (`dev.azure.com`).
 
 <!--
 >[!NOTE]
@@ -106,11 +100,11 @@ Ahora puede [validar la propiedad del repositorio privado](#validate-ownership).
 
 ### Validar la propiedad de un repositorio privado de GitHub {#validate-ownership}
 
-Cloud Manager ahora conoce su repositorio de GitHub, pero aún necesita acceso. Para otorgar acceso, debe instalar la aplicación de GitHub de Adobe y comprobar que es el propietario del repositorio especificado.
+Cloud Manager ahora está configurado con el repositorio de GitHub, pero aún requiere autorización para acceder al repositorio. Para otorgar acceso, debe instalar la aplicación de GitHub de Adobe y comprobar que es el propietario del repositorio especificado.
 
 **Para validar la propiedad de un repositorio privado de GitHub:**
 
-1. Después de agregar su propio repositorio, siga los pasos restantes del cuadro de diálogo **Validación de propiedad del repositorio privado**.
+1. Después de agregar el repositorio, siga los pasos restantes del cuadro de diálogo **Validación de propiedad del repositorio privado**.
 
    ![Validación de propiedad de repositorio privado](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
@@ -119,25 +113,25 @@ Cloud Manager ahora conoce su repositorio de GitHub, pero aún necesita acceso. 
    | **Paso 1: Aplicación GitHub** | Cloud Manager usa una aplicación de GitHub para interactuar con su repositorio privado de forma segura.<br>· Un propietario de su organización de GitHub debe instalar la aplicación ubicada en `https://github.com/apps/cloud-manager-for-aem` y conceder acceso al repositorio.<br>· Para obtener más información sobre cómo instalar y conceder acceso, consulte la documentación de GitHub. |
    | **Paso 2: Archivo Secreto** | Para mejorar la seguridad, debe crear un archivo secreto en la rama predeterminada del repositorio.<br>· Haga clic en **Generar** y luego haga clic en **Confirmar**. Cloud Manager genera el contenido del archivo privado en el campo de texto **Contenido de archivo secreto**.<br>· Haga clic en ![Icono de copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar el contenido de ese campo. El contenido del archivo secreto solo se mostrará una vez. Si no copia el contenido antes de cerrar este cuadro de diálogo, vuelva a generar el secreto. |
 
-1. Cree un nuevo archivo en la rama predeterminada de su repositorio de GitHub llamado:
+1. Cree un nuevo archivo en la rama predeterminada del repositorio de GitHub con el nombre
 
    `.well-known/adobe/cloud-manager-challenge`
 
-1. Pegue el contenido del archivo secreto en el nuevo archivo que acaba de crear y guarde.
+1. Pegue el contenido del archivo secreto en el nuevo archivo y guarde.
 
-   Una vez que la aplicación esté instalada y el archivo secreto exista en el repositorio, continúe con el paso.
+   Una vez que la aplicación esté instalada y el archivo secreto exista en el repositorio, continúe con los pasos.
 
 1. En el cuadro de diálogo **Validación de propiedad de repositorio privado**, haga clic en **Validar**.
 
 La aplicación se puede instalar y se puede crear un archivo secreto en cualquier orden. Sin embargo, ambos pasos deben completarse antes de poder validar.
 
-Hasta la validación, el repositorio se muestra con un icono rojo que indica que aún no se ha validado y que todavía no se puede utilizar.
+Hasta la validación, el repositorio se muestra con un icono rojo que indica que aún no se ha validado y que no está disponible para su uso.
 
 ![Repositorio no validado](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
 La columna **Tipo** de la tabla de la página **Repositorios** identifica los repositorios proporcionados por Adobe (**Adobe**) y sus propios repositorios privados (**GitHub**).
 
-Si necesita volver al repositorio más tarde para completar la validación, en la página **Repositorios**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en la fila que representa el repositorio de GitHub que acaba de agregar. En la lista desplegable, seleccione **Validación de propiedad**.
+Para acceder al repositorio más tarde y completar la validación, en la página **Repositorios**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en la fila que representa el repositorio de GitHub que agregó. En la lista desplegable, seleccione **Validación de propiedad**.
 
 
 

@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo añadir un repositorio administrad
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 20e86bf332ee7a753287ac738dc090c771f444ea
+source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
 workflow-type: tm+mt
-source-wordcount: '2612'
-ht-degree: 25%
+source-wordcount: '2683'
+ht-degree: 24%
 
 ---
 
@@ -22,10 +22,18 @@ Los clientes ahora también pueden incorporar sus repositorios Git de DevOps de 
 * Para los usuarios de Edge Delivery Services, el repositorio incorporado se puede utilizar para sincronizar e implementar el código del sitio.
 * Para los usuarios de AEM as a Cloud Service y Adobe Managed Services (AMS), el repositorio se puede vincular a canalizaciones de pila completa y de front-end.
 
-Cloud Manager valida la propiedad del repositorio de GitHub de una de las dos maneras siguientes, según dónde esté alojado el repositorio:
-
-* Los repositorios de GitHub Enterprise Server (autoalojados) utilizan un token de acceso personal y un webhook. Esta página describe ese método.
-* Los repositorios de `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud alojadas en `github.com`, utilizan la aplicación de Adobe GitHub. Consulte [Agregar un repositorio privado de GitHub Cloud en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+>[!IMPORTANT]
+>
+>Cloud Manager valida la propiedad del repositorio de GitHub de una de las dos maneras siguientes, según dónde esté alojado el repositorio:
+>
+>* Esta página de instrucciones se aplica a agregar cualquiera de los siguientes tipos de repositorios. Estos tipos de repositorios utilizan un PAT (token de acceso personal) y un webhook configurado manualmente para validar la propiedad.
+>
+>   * Repositorios de GitHub Enterprise Server (versión autoalojada de GitHub).
+>   * Repositorios de GitLab (tanto `gitlab.com` como la versión autoalojada de GitLab).
+>   * Repositorios de bitbucket (solo `bitbucket.org`, versión en la nube). La versión autoalojada de Bitbucket dejó de usarse el 15 de febrero de 2024.
+>   * Repositorios de DevOps de Azure (`dev.azure.com`).
+>* Los repositorios alojados en `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud alojadas en `github.com`, utilizan la aplicación de Adobe GitHub para validar la propiedad. No se requiere ninguna configuración de gancho web, ya que Cloud Manager se integra directamente a través de la aplicación. Consulte [Agregar un repositorio privado de GitHub Enterprise Cloud en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+>
 
 ## Configurar un repositorio externo
 
@@ -73,9 +81,9 @@ La configuración de un repositorio externo en Cloud Manager consiste en los sig
 
 1. Seleccione **Guardar** para añadir el repositorio.
 
-   Ahora, proporcione un token de acceso para validar la propiedad del repositorio externo.
+   Para validar la propiedad del repositorio externo, proporcione un token de acceso.
 
-1. En el cuadro de diálogo **Validación de propiedad de repositorio privado**, proporcione un token de acceso para validar la propiedad del repositorio externo y así poder acceder a él. A continuación, haga clic en **Validación**.
+1. En el cuadro de diálogo **Validación de propiedad de repositorio privado**, para validar la propiedad del repositorio externo y poder acceder a él, proporcione un token de acceso y, a continuación, haga clic en **Validación**.
 
    ![Selección de un token de acceso existente para un repositorio](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
    *Seleccionar un token de acceso existente para un repositorio de bloque de bits (solo para ilustración).*
@@ -171,7 +179,7 @@ Por ejemplo, los enlaces web permiten a Cloud Manager almacenar en déclencheur 
 * Eventos push: inicia canalizaciones cuando se activa el déclencheur &quot;En la confirmación de Git&quot; (habilitado).
 * Futuras acciones basadas en comentarios: permiten flujos de trabajo, como la implementación directa desde una PR a un entorno de desarrollo rápido (RDE).
 
-La configuración de webhook no es necesaria para los repositorios alojados en `gitub.com` porque Cloud Manager se integra directamente a través de la aplicación GitHub.
+La configuración de webhook no es necesaria para los repositorios alojados en `github.com` porque Cloud Manager se integra directamente a través de la aplicación GitHub.
 
 Para todos los demás repositorios externos incorporados con un token de acceso, como GitHub Enterprise Server, GitLab, Bitbucket y Azure DevOps, la configuración de webhook está disponible y debe configurarse manualmente.
 
@@ -185,7 +193,7 @@ Para todos los demás repositorios externos incorporados con un token de acceso,
 
 1. En el menú del lado izquierdo, bajo el encabezado **Programa**, haga clic en ![Icono de esquema de carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositorios**.
 
-1. En la página **Repositorios**, usando la columna **Tipo** para guiarle en su selección, busque el repositorio que desee y haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a él.
+1. En la página **Repositorios**, usando la columna **Tipo** para ayudarle en su selección, busque el repositorio que desee y haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a él.
 
    ![Opción Configurar webhook en el menú desplegable para un repositorio seleccionado](/help/implementing/cloud-manager/managing-code/assets/repository-config-webhook.png)
 
@@ -208,10 +216,10 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
 1. Pegue la dirección URL del webhook copiada anteriormente en el campo de texto URL.
    1. Reemplace el parámetro de consulta `api_key` en la dirección URL del webhook por su propia clave de API real.
 
-      Para generar una clave de API, debe crear un proyecto de integración en Adobe Developer Console. Consulte [Creación de un proyecto de integración de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) para obtener información detallada.
+      Para generar una clave de API, debe crear un proyecto de integración en Adobe Developer Console. Consulte [Creación de un proyecto de integración de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration) para obtener información detallada.
 
 1. Pegue el secreto de webhook que copió anteriormente en el campo de texto **Secreto** (o **Clave secreta**, o **Token secreto**).
-1. Configure el webhook para enviar los eventos que requiere Cloud Manager. Utilice la siguiente tabla para determinar los eventos correctos para su proveedor de Git.
+1. Para enviar los eventos que requiere Cloud Manager, configure el webhook. Utilice la siguiente tabla para determinar los eventos correctos para su proveedor de Git.
 
 >[!BEGINTABS]
 
@@ -263,22 +271,22 @@ El comportamiento varía según el proveedor de Git que utilice, como se describ
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-Cuando se crea la comprobación, aparece como la siguiente captura de pantalla a continuación. La diferencia clave de `GitHub.com` es que `GitHub.com` usa una comprobación, mientras que GitHub Enterprise Server (que usa tokens de acceso personal) genera un estado de confirmación:
+Cuando se crea la comprobación, aparece como se muestra en la siguiente captura de pantalla. La diferencia clave de `GitHub.com` es que `GitHub.com` usa una comprobación, mientras que GitHub Enterprise Server (que usa tokens de acceso personal) genera el siguiente estado de confirmación:
 
-![Confirmar estado para indicar el proceso de validación de PR en GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+![Confirmar estado para indicar el proceso de validación PR en el servidor GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 
 >[!TAB GitLab]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
-Las interacciones de GitLab se basan únicamente en comentarios. Cuando comienza la validación, se agrega un comentario. Cuando finaliza la validación (ya sea correcta o errónea), el comentario inicial se elimina y se reemplaza por un nuevo comentario que contiene los resultados de validación o los detalles del error.
+Las interacciones de GitLab solo dependen de los comentarios. Cuando comienza la validación, se agrega un comentario. Cuando finaliza la validación (ya sea correcta o errónea), el comentario inicial se elimina y se reemplaza por un nuevo comentario que contiene los resultados de validación o los detalles del error.
 
 Cuando se ejecuta la validación de calidad del código:
 
 ![Cuando se está ejecutando la validación de calidad del código](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
 
-Cuando finalice la validación de calidad en frío:
+Cuando finalice la validación de calidad del código:
 
 ![Cuando finalice la validación de la calidad en frío](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
 
