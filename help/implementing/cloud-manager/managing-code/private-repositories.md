@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar Cloud Manager para que 
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d36142c0569da782e12adbea9f36a44734a93aaf
+source-git-commit: 20e86bf332ee7a753287ac738dc090c771f444ea
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1106'
 ht-degree: 32%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 32%
 
 Si configura Cloud Manager para que se integre con su GitHub Cloud privado (repositorios alojados en `github.com`), podrá validar su código directamente en GitHub mediante Cloud Manager. Esta configuración elimina el requisito de sincronizar el código regularmente con el repositorio de Adobe.
 
-Cloud Manager valida la propiedad del repositorio de GitHub de una de las dos maneras siguientes, según la ubicación en la que esté alojado el repositorio:
+Cloud Manager valida la propiedad del repositorio de GitHub de una de las dos maneras siguientes, según dónde esté alojado el repositorio:
 
 * Los repositorios de `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud alojadas en `github.com`, utilizan la aplicación de Adobe GitHub. Esta página describe ese método.
 * Los repositorios de GitHub Enterprise Server (autoalojados) utilizan un PAT (token de acceso personal) y un webhook. Consulte [Adición de repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
