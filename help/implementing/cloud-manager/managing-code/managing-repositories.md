@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo agregar, ver y eliminar repositori
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
+source-git-commit: fcdb7bb423500a5c17149ccb5913a2bb3330b073
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 63%
+ht-degree: 62%
 
 ---
 
@@ -72,7 +72,7 @@ Si aloja el código fuera de Adobe, la página de instrucciones que utilice y el
 | --- | --- | --- |
 | `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud alojadas en `github.com` | Aplicación de Adobe GitHub y un archivo secreto. No se requiere webhook. | [Agregar un repositorio privado de GitHub Cloud en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
 | Servidor empresarial de GitHub (autoalojado) | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
-| GitLab, Bitbucket o Azure DevOps | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+| GitLab, Bitbucket o Azure DevOps | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
 
 
 ## Acceder a la información del repositorio {#repo-info}
