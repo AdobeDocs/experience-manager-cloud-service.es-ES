@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo agregar, ver y eliminar repositori
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fcdb7bb423500a5c17149ccb5913a2bb3330b073
+source-git-commit: 188201dfaececb21d373450711eb206b8e2323e2
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '894'
 ht-degree: 62%
 
 ---
@@ -70,9 +70,9 @@ Si aloja el código fuera de Adobe, la página de instrucciones que utilice y el
 
 | Ubicación del repositorio. | Método de validación | Página de instrucciones de uso |
 | --- | --- | --- |
-| `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud alojadas en `github.com` | Aplicación de Adobe GitHub y un archivo secreto. No se requiere webhook. | [Agregar un repositorio privado de GitHub Cloud en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
+| `github.com` (cualquier plan de GitHub, como Free, Pro, Team o Enterprise Cloud) | Aplicación de Adobe GitHub y un archivo secreto. No se requiere webhook. | [Agregar un repositorio privado de GitHub en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
 | Servidor empresarial de GitHub (autoalojado) | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
-| GitLab, Bitbucket o Azure DevOps | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+| GitLab, Bitbucket o Azure DevOps | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
 
 
 ## Acceder a la información del repositorio {#repo-info}
@@ -108,7 +108,7 @@ La acción **Eliminar** elimina el repositorio del proyecto. Un repositorio no s
 
 ![Eliminar](assets/repository-delete.png)
 
-Al eliminar un repositorio, se impide que su nombre se utilice en repositorios nuevos creados en el futuro. Si intenta agregar un repositorio con el mismo nombre de un repositorio eliminado, aparecerá el siguiente mensaje de error:
+Al eliminar un repositorio, se impide que su nombre se utilice en repositorios nuevos creados en el futuro. Si intenta agregar un repositorio con el mismo nombre que un repositorio eliminado, aparecerá el siguiente mensaje de error:
 
 `Repository name should be unique within organization.`
 
