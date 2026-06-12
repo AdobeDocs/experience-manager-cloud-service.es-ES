@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo añadir un repositorio administrad
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 18511b9e809cb4aa372fd04213d555dc669bbb0d
+source-git-commit: ccad3e1f46865bce575e14a04a9992efa38edb87
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2667'
 ht-degree: 24%
 
 ---
@@ -32,15 +32,15 @@ Los clientes ahora también pueden incorporar sus repositorios Git de DevOps de 
 >   * Repositorios de GitLab (tanto `gitlab.com` como la versión autoalojada de GitLab).
 >   * Repositorios de bitbucket (solo `bitbucket.org`, versión en la nube). La versión autoalojada de Bitbucket dejó de usarse el 15 de febrero de 2024.
 >   * Repositorios de DevOps de Azure (`dev.azure.com`).
->* Los repositorios alojados en `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud alojadas en `github.com`, utilizan la aplicación de Adobe GitHub para validar la propiedad. No se requiere ninguna configuración de gancho web, ya que Cloud Manager se integra directamente a través de la aplicación. Consulte [Agregar un repositorio privado de GitHub Enterprise Cloud en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+>* Los repositorios alojados en `github.com` utilizan la aplicación GitHub de Adobe para validar la propiedad. No se requiere ninguna configuración de gancho web, ya que Cloud Manager se integra directamente a través de la aplicación. Consulte [Agregar un repositorio privado de GitHub en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 >
 
 ## Configurar un repositorio externo
 
 La configuración de un repositorio externo en Cloud Manager consiste en los siguientes pasos:
 
-1. [Agregar un repositorio externo](#add-external-repo) a un programa seleccionado
-1. [Vincular un repositorio externo validado a una canalización](#validate-ext-repo)
+1. [Añada un repositorio externo](#add-external-repo) a un programa seleccionado.
+1. [Vincule un repositorio externo validado a una canalización](#validate-ext-repo).
    <!--
      1. Provide an access token to the external repository.
     1. Validate ownership of the private GitHub repository.
@@ -76,7 +76,7 @@ La configuración de un repositorio externo en Cloud Manager consiste en los sig
    | --- | --- |
    | **Nombre del repositorio** | Obligatorio. Un nombre expresivo para el nuevo repositorio. |
    | **URL del repositorio** | Obligatorio. La URL del repositorio.<br><br>Si usa un repositorio alojado en GitHub, la ruta debe finalizar en `.git`.<br>Por ejemplo, *`https://github.com/org-name/repo-name.git`* (la ruta de URL es solo para fines ilustrativos).<br><br>Si usa un repositorio externo, debe usar el siguiente formato de ruta de URL:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> o<br>`https://self-hosted-domain/org-name/repo-name.git`<br>Y coincidir con el proveedor de Git. |
-   | **Seleccionar tipo de repositorio** | Obligatorio. Seleccione el tipo de repositorio que está utilizando. Si la ruta de la URL del repositorio incluye el nombre del proveedor de Git, como GitLab o Bitbucket, el tipo de repositorio se preseleccionará por usted:<br><br>* **GitHub** (GitHub Enterprise Server, la versión autoalojada de GitHub). Para repositorios en `github.com`, incluidas las implementaciones de GitHub Enterprise Cloud alojadas en `github.com`, consulte [Agregar un repositorio privado de GitHub Cloud en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).<br>* **GitLab** (tanto `gitlab.com` como la versión autoalojada de GitLab)<br>* **Bitbucket** (solo `bitbucket.org`, la versión en la nube). La versión autoalojada de Bitbucket quedó obsoleta el 15 de febrero de 2024.<br>* **DevOps de Azure** (`dev.azure.com`) |
+   | **Seleccionar tipo de repositorio** | Obligatorio. Seleccione el tipo de repositorio que está utilizando. Si la ruta de la dirección URL del repositorio incluye el nombre del proveedor de Git, como GitLab o Bitbucket, el tipo de repositorio se preseleccionará para usted:<br><br>* **GitHub** Para repositorios en `github.com`. Es decir, cualquier plan de GitHub (gratuito, profesional, de equipo o Enterprise Cloud), consulte [Agregar un repositorio de GitHub privado en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) en su lugar.<br>* **GitLab** Tanto `gitlab.com` como la versión autoalojada de GitLab.<br>* **Bitbucket** Solo `bitbucket.org`, la versión en la nube. La versión autoalojada de Bitbucket quedó obsoleta el 15 de febrero de 2024.<br>* **DevOps de Azure** (`dev.azure.com`) |
    | **Descripción** | Opcional. Breve descripción del repositorio. |
 
 1. Seleccione **Guardar** para añadir el repositorio.
