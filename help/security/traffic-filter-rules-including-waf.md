@@ -4,7 +4,7 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
+source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
 workflow-type: tm+mt
 source-wordcount: '4257'
 ht-degree: 68%
@@ -16,10 +16,10 @@ ht-degree: 68%
 
 Las reglas de filtro de tráfico bloquean o permiten solicitudes en la capa de CDN, lo que resulta útil en situaciones como las siguientes:
 
-
 * Restringir el acceso a dominios específicos al tráfico interno de la compañía antes de que se active un nuevo sitio.
 * Para ser menos susceptible a los ataques volumétricos de denegación de servicio, establezca límites de velocidad.
 * Impedir que las direcciones IP que se sabe que son malintencionadas segmenten sus páginas.
+
 
 La mayoría de estas reglas de filtro de tráfico están disponibles para todos los clientes Sites y Forms de AEM as a Cloud Service. Como *reglas estándar de filtro de tráfico*, funcionan en propiedades de solicitud: IP, nombre de host, ruta y agente de usuario. Las reglas de filtro de tráfico estándar incluyen reglas de límite de velocidad para evitar picos de tráfico.
 
