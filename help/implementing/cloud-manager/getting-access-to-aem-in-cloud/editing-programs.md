@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
+source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 9%
@@ -16,6 +16,7 @@ ht-degree: 9%
 # Editar programas {#editing-programs}
 
 Para administrar y editar programas, empieza en la consola [**Mis programas**](/help/implementing/cloud-manager/navigation.md). La página **Mis programas** proporciona una descripción general de todos los programas a los que tiene acceso. Al seleccionar un programa individual, la página **Resumen del programa** proporciona una descripción general de los detalles del programa.
+
 
 Desde la **Descripción general del programa**, los usuarios con los permisos necesarios pueden editar [programas de producción creados en su organización](creating-production-programs.md) y [programas de zonas protegidas creados en su organización](creating-sandbox-programs.md). Al editar un programa, puede hacer lo siguiente:
 
@@ -115,7 +116,7 @@ Antes de iniciar la marcación para eliminación, el sistema valida si el progra
 1. Seleccione la organización adecuada.
 1. En la página **Mis programas**, para el programa de producción que desea marcar para su eliminación, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, haga clic en **Eliminar programa**.
 
-   ![Seleccionar Eliminar programa de la lista desplegable de un programa de producción &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Ejemplo de programa de producción visto arriba es solo con fines ilustrativos.*
+   ![Seleccionar Eliminar programa de la lista desplegable de un programa de producción ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Ejemplo de programa de producción visto arriba es solo con fines ilustrativos.*
 
 1. En el cuadro de diálogo **Marcar programa de producción para eliminación**, revise la advertencia que enumera los recursos conectados al programa, incluidos los entornos de producción, fase y desarrollo.
 

@@ -4,7 +4,7 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
+source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
 workflow-type: tm+mt
 source-wordcount: '4257'
 ht-degree: 68%
@@ -15,6 +15,7 @@ ht-degree: 68%
 # Reglas de filtro de tráfico, incluidas las reglas WAF {#traffic-filter-rules-including-waf-rules}
 
 Las reglas de filtro de tráfico bloquean o permiten solicitudes en la capa de CDN, lo que resulta útil en situaciones como las siguientes:
+
 
 * Restringir el acceso a dominios específicos al tráfico interno de la compañía antes de que se active un nuevo sitio.
 * Para ser menos susceptible a los ataques volumétricos de denegación de servicio, establezca límites de velocidad.
