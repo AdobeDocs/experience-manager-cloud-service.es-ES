@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2148'
-ht-degree: 21%
+source-wordcount: '2276'
+ht-degree: 25%
 
 ---
 
@@ -91,7 +91,7 @@ El diseño de pestañas horizontales también se conoce como Tabulaciones en el 
 
 Diseño de pestañas horizontales
 
-Puede usar el componente [pestañas horizontales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para agregar el diseño de pestañas horizontales en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de pestañas horizontales, consulte el artículo [componente de pestañas horizontales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+Puede usar el componente [pestañas horizontales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para agregar el diseño de pestañas horizontales en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de pestañas horizontales, consulte el artículo [componente de pestañas horizontales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
 >[!TAB Diseño de acordeón]
@@ -179,7 +179,7 @@ Por ejemplo, en este caso, agregamos el nombre del componente de pestañas horiz
 
 Una vez añadido el componente de diseño en el formulario, modifique el número de paneles según los requisitos.
 
-### &#x200B;2. Agregar paneles al diseño
+### &#x200B;2. Añadir paneles al diseño
 
 Agregar un nuevo panel al componente de pestañas horizontales:
 
@@ -236,7 +236,7 @@ Del mismo modo, también puede ocultar los títulos de los otros dos paneles. Un
 -->
 
 1. Busque la sección dentro del panel que le permite agregar componentes.
-1. Haga clic en el icono **Añadir**. El icono es un signo más (+) que representa la opción de añadir nuevos componentes.
+1. Haga clic en el icono **Agregar**. El icono es un signo más (+) que significa la opción de agregar nuevos componentes.
    ![Insertar diseño](/help/forms/assets/tabs-on-top-add-component.png)
 
    Al hacer clic en el icono **Añadir** aparece un cuadro de diálogo **Insertar nuevo componente** que muestra varios componentes para su inserción.
