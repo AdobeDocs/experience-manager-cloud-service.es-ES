@@ -5,9 +5,9 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
+source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1324'
 ht-degree: 9%
 
 ---
@@ -19,6 +19,7 @@ Para administrar y editar programas, empieza en la consola [**Mis programas**](/
 
 Desde la **Descripción general del programa**, los usuarios con los permisos necesarios pueden editar [programas de producción creados en su organización](creating-production-programs.md) y [programas de zonas protegidas creados en su organización](creating-sandbox-programs.md). Al editar un programa, puede hacer lo siguiente:
 
+* Habilite o deshabilite la protección **WAF-DDOS** en la ficha **Seguridad**.
 * Agregue la solución Sites a un programa existente con Assets y agregue Assets a un programa existente con Sites.
 * Eliminar Sites o Assets de un programa existente que tenga ambos y Assets.
 * Agregar un derecho de solución no utilizado a un programa existente o crear un nuevo programa.
@@ -49,10 +50,23 @@ Cada vez que se edita un programa, incluida la adición o eliminación de una so
    ![Pestaña General](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-dialog-box.png)
 
    Las opciones disponibles para editar el programa son las mismas para la creación de programas.
+
+   * En la ficha **Seguridad**, puede habilitar **Claves administradas por el cliente** para un programa existente.
+
+     >[!NOTE]
+     >
+     >Para habilitar o deshabilitar el Firewall de aplicaciones web (WAF) en cualquier momento, en la misma ficha Seguridad, marque o desmarque la casilla **Protección WAF-DDOS**. Si las reglas de WAF tienen licencia pero esta casilla de verificación no está marcada, la función no está activa y no se aplican sus protecciones. Para obtener más información, consulte [Reglas de filtro de tráfico, incluidas las reglas de WAF](/help/security/traffic-filter-rules-including-waf.md).
+     >
+     >Para confirmar que la función está activa, revise los [registros de CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) una vez que el tráfico fluya al sitio. Busque entradas de registro que incluyan una propiedad `rules` que contenga un atributo `waf`. Por ejemplo,
+     >
+     >`"rules": "waf=SQLI"`
+     >
+     >Este atributo aparece una vez que WAF está activo, incluso antes de que se implementen las reglas de WAF.
+
    * Puede configurar si un nivel de publicación está aprovisionado para nuevos entornos (Beta). Consulte [Nivel de publicación flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) y [Crear programas de espacio aislado](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obtener más información sobre las opciones individuales.
    * [Hay opciones adicionales](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) disponibles para su programa de producción en función de los derechos de su organización.
-   * En la ficha **Seguridad**, también puede habilitar **Claves administradas por el cliente** para un programa existente.
+
 
    ![Cuadro de diálogo Editar programa que muestra las claves administradas por el cliente seleccionadas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
 
@@ -101,7 +115,7 @@ Antes de iniciar la marcación para eliminación, el sistema valida si el progra
 1. Seleccione la organización adecuada.
 1. En la página **Mis programas**, para el programa de producción que desea marcar para su eliminación, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, haga clic en **Eliminar programa**.
 
-   ![Seleccionar Eliminar programa de la lista desplegable de un programa de producción &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Ejemplo de programa de producción visto arriba es solo con fines ilustrativos.*
+   ![Seleccionar Eliminar programa de la lista desplegable de un programa de producción ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Ejemplo de programa de producción visto arriba es solo con fines ilustrativos.*
 
 1. En el cuadro de diálogo **Marcar programa de producción para eliminación**, revise la advertencia que enumera los recursos conectados al programa, incluidos los entornos de producción, fase y desarrollo.
 
