@@ -4,15 +4,15 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
+source-git-commit: 199c11b6f6655f9a0c790501b0aa554119ea0998
 workflow-type: tm+mt
 source-wordcount: '4257'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
 
-# Reglas de filtro de tráfico, incluidas reglas WAF {#traffic-filter-rules-including-waf-rules}
+# Reglas de filtro de tráfico, incluidas las reglas WAF {#traffic-filter-rules-including-waf-rules}
 
 Las reglas de filtro de tráfico bloquean o permiten solicitudes en la capa de CDN, lo que resulta útil en situaciones como las siguientes:
 
@@ -49,7 +49,7 @@ Este artículo está organizado en las secciones siguientes:
 * **Reglas de inicio recomendadas:** un conjunto de reglas para empezar.
 * **Tutorial:** Información sobre la característica, incluido cómo usar las herramientas del panel para declarar las reglas apropiadas.
 
-## Información general sobre protección del tráfico {#traffic-protection-overview}
+## Resumen de protección del tráfico {#traffic-protection-overview}
 
 En el panorama digital actual, el tráfico malicioso es una amenaza constante. Adobe reconoce la gravedad del riesgo y ofrece varios enfoques para proteger las aplicaciones de los clientes y mitigar los ataques cuando se producen.
 
@@ -170,7 +170,7 @@ Las acciones se priorizan según sus tipos en la siguiente tabla, que se ordena 
 | **block** | `status, wafFlags` (opcional y mutuamente excluyente), `alert` (opcional) | si wafFlags no está presente, devuelve un error HTTP omitiendo todas las demás propiedades, el código de error se define mediante la propiedad estado o el valor predeterminado es 406. Si wafFlags está presente, permite protecciones WAF especificadas y continúa con el procesamiento de la regla. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez que se activa una alerta para una regla en particular, no se activará de nuevo hasta el día siguiente (UTC). |
 | **registro** | `wafFlags` (opcional), `alert` (opcional) | registra el hecho de que la regla se activó; de lo contrario, no afecta al procesamiento. wafFlags no tiene ningún efecto. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez que se activa una alerta para una regla en particular, no se activará de nuevo hasta el día siguiente (UTC). |
 
-### Lista de indicadores WAF {#waf-flags-list}
+### Lista de marcas de WAF {#waf-flags-list}
 
 La propiedad `wafFlags`, utilizada en las reglas de filtro de tráfico de WAF con licencia, hace referencia a lo siguiente:
 
@@ -210,7 +210,7 @@ La propiedad `wafFlags`, utilizada en las reglas de filtro de tráfico de WAF co
 | PRIVATEFILE | Archivos privados | Los archivos privados suelen ser de naturaleza confidencial, como un archivo `.htaccess` Apache o un archivo de configuración que podría filtrar información confidencial |
 | ESCÁNER | Escáner | Identifica los servicios y herramientas de digitalización más populares |
 
-#### Tráfico vario
+#### Tráfico varios
 
 | **Identificador de marca** | **Nombre de indicador** | **Descripción** |
 |---|---|---|
@@ -351,7 +351,7 @@ data:
         action: block
 ```
 
-## Reglas de límite de volumen
+## Reglas de límite de tarifa
 
 A veces es deseable bloquear el tráfico si supera un cierto volumen de solicitudes entrantes, en función de una condición específica. Configurar un valor para la propiedad `rateLimit` limita el volumen de las solicitudes que coinciden con la condición de la regla.
 
@@ -361,7 +361,7 @@ Los límites de volumen se calculan por CDN POP. Por ejemplo, supongamos que los
 
 Los límites de velocidad se evalúan en función del tráfico que llega al borde, el tráfico que llega al borde o el número de errores.
 
-### Estructura rateLimit {#ratelimit-structure}
+### estructura de rateLimit {#ratelimit-structure}
 
 | **Propiedad** | **Tipo** | **Predeterminado** | **SIGNIFICADO** |
 |---|---|---|---|
@@ -578,7 +578,7 @@ A continuación se muestra una lista de los nombres de campo utilizados en los r
 | *pop* | Centro de datos del servidor de caché de CDN. |
 | *reglas* | El nombre de cualquier regla coincidente.<br><br>También indica si la coincidencia resultó en un bloqueo. <br><br>Por ejemplo, &quot;`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`&quot;<br><br>Vacío si no hay reglas que coincidan. |
 
-## Herramientas del panel de control {#dashboard-tooling}
+## Herramientas de panel {#dashboard-tooling}
 
 Adobe proporciona un mecanismo para descargar las herramientas del panel de control en el equipo para introducir registros de CDN descargados mediante Cloud Manager. Para analizar el tráfico y determinar las reglas de filtro de tráfico adecuadas que se deben declarar, incluidas las reglas de WAF, utilice esta herramienta.
 
