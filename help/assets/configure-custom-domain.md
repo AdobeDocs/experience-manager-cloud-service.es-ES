@@ -27,14 +27,14 @@ Asegúrese de cumplir los siguientes requisitos antes de iniciar el proceso de c
 
 * Acceso a Cloud Manager
 * Dynamic Media ya está habilitado con OpenAPI en su entorno a través de un ticket de asistencia
-* Certificado SSL de tipo EV u OV para el dominio utilizado en el nivel de entrega. Consulte [Introducción a los certificados SSL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) para obtener más información
+* Certificado SSL de tipo EV u OV para el dominio utilizado en el nivel de entrega. Consulte [Introducción a los certificados SSL](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) para obtener más información
 
 ## Configuración de dominios personalizados en el nivel de envío mediante Cloud Manager
 
 Ejecute los siguientes pasos en Cloud Manager:
 
-1. [Agregar un certificado SSL administrado por el cliente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert)
+1. [Agregar un certificado SSL administrado por el cliente](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert)
 
-2. [Añadir un nombre de dominio personalizado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)
+2. [Añadir un nombre de dominio personalizado](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)
 
 Después de completar los pasos anteriores, genere un ticket de asistencia de Adobe para la asignación de dominios personalizados. Adobe realiza la asignación de dominios como parte del proceso de asistencia.
