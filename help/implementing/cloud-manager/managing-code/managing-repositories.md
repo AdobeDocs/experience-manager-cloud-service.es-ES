@@ -72,7 +72,7 @@ Si aloja el código fuera de Adobe, la página de instrucciones que utilice y el
 | --- | --- | --- |
 | `github.com` (cualquier plan de GitHub, como Free, Pro, Team o Enterprise Cloud) | Aplicación de Adobe GitHub y un archivo secreto. No se requiere webhook. | [Agregar un repositorio privado de GitHub en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
 | Servidor empresarial de GitHub (autoalojado) | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
-| GitLab, Bitbucket o Azure DevOps | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+| GitLab, Bitbucket o Azure DevOps | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
 
 
 ## Acceder a la información del repositorio {#repo-info}
