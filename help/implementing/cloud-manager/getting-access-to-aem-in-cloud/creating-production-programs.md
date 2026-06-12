@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
+source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
 workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 6%
@@ -17,8 +17,8 @@ ht-degree: 6%
 
 Un programa de producción es para usuarios familiarizados con Adobe Experience Manager (AEM) y Cloud Manager, listos para escribir, generar y probar código, con el objetivo de implementarlo para gestionar el tráfico en directo.
 
-
 Obtenga más información acerca de los tipos de programas en el documento [Explicación de los tipos de programas y programas](program-types.md).
+
 
 ## Creación de un programa de producción {#create}
 
