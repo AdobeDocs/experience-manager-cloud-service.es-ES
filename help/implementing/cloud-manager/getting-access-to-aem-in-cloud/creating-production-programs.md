@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2503863e0c146f86bb158c411ea5b7bb47033a3e
+source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1792'
 ht-degree: 6%
 
 ---
@@ -108,7 +108,7 @@ Si tiene los derechos necesarios, la ficha **Security** se muestra como la prime
 
 ![Opciones de seguridad](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
 
-La pestaña **Security** proporciona las opciones para activar **HIPAA**, **Protección WAF-DDOS** o ambas para tu programa de producción.
+La pestaña **Security** proporciona las opciones para activar **HIPAA**, **Protección WAF-DDOS** o ambas para tu programa de producción y **Claves gestionadas por el cliente**.
 
 Compatible con HIPAA de Adobe y WAF-DDOS (cortafuegos de aplicaciones web - denegación de servicio distribuida) facilita la seguridad basada en la nube como parte de un enfoque de varios niveles para la protección contra vulnerabilidades.
 
@@ -117,7 +117,17 @@ Compatible con HIPAA de Adobe y WAF-DDOS (cortafuegos de aplicaciones web - dene
    * HIPAA no se puede habilitar o deshabilitar después de la creación del programa.
 * **Protección WAF-DDOS**: esta opción habilita el firewall de aplicaciones web mediante reglas para proteger la aplicación.
    * Una vez activada, la protección WAF-DDOS se puede configurar configurando una [canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
-   * Consulte [Reglas de filtro de tráfico, incluidas las reglas de WAF](/help/security/traffic-filter-rules-including-waf.md), para obtener información sobre cómo administrar las reglas de filtro de tráfico en el repositorio a fin de que se implementen correctamente.
+
+     >[!NOTE]
+     >
+     >Seleccionar **Protección WAF-DDOS** activa la función, pero las reglas de WAF con licencia proporcionan protección solo después de activar la casilla de verificación. Consulte [Reglas de filtro de tráfico, incluidas las reglas de WAF](/help/security/traffic-filter-rules-including-waf.md), para obtener más información sobre cómo administrar las reglas de filtro de tráfico en el repositorio para que se implementen correctamente.
+     >
+     >Para confirmar que la función está activa, revise los [registros de CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) una vez que el tráfico fluya al sitio. Busque entradas de registro que incluyan una propiedad `rules` que contenga un atributo `waf`. Por ejemplo,
+     >
+     >`"rules": "waf=SQLI"`
+     >
+     >Este atributo aparece una vez que WAF está activo, incluso antes de que se implementen las reglas de WAF.
+
 * **Claves administradas por el cliente**: esta opción activa CMK (Claves administradas por el cliente) para el programa, lo que le permite proporcionar sus propias claves de cifrado para los datos que se encuentren en reposo en Azure Blob Storage y MongoDB. Si lo desea, puede habilitar CMK más tarde [editando un programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
    * CMK solo está disponible para programas de Cloud Service. No se puede habilitar en programas de zona protegida.
