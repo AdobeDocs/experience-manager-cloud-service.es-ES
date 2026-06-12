@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
+source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 9%
@@ -115,7 +115,7 @@ Antes de iniciar la marcación para eliminación, el sistema valida si el progra
 1. Seleccione la organización adecuada.
 1. En la página **Mis programas**, para el programa de producción que desea marcar para su eliminación, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, haga clic en **Eliminar programa**.
 
-   ![Seleccionar Eliminar programa de la lista desplegable de un programa de producción &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Ejemplo de programa de producción visto arriba es solo con fines ilustrativos.*
+   ![Seleccionar Eliminar programa de la lista desplegable de un programa de producción ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Ejemplo de programa de producción visto arriba es solo con fines ilustrativos.*
 
 1. En el cuadro de diálogo **Marcar programa de producción para eliminación**, revise la advertencia que enumera los recursos conectados al programa, incluidos los entornos de producción, fase y desarrollo.
 

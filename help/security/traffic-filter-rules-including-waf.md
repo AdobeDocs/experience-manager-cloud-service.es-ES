@@ -4,10 +4,10 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 199c11b6f6655f9a0c790501b0aa554119ea0998
+source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
 workflow-type: tm+mt
 source-wordcount: '4257'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -728,9 +728,9 @@ Para obtener conocimientos prácticos y experiencia sobre las reglas de filtros 
 
 Los tutoriales incluyen:
 
-* Información general sobre las reglas de filtro de tráfico estándar y WAF
+* Información general sobre las reglas de filtro de tráfico estándar y de WAF.
 * Para bloquear ataques, incluidas las denegaciones de servicio (DoS), configure las reglas de filtro de tráfico estándar y de WAF recomendadas.
-* Implementación de reglas mediante la canalización de configuración de Cloud Manager
-* Prueba de reglas con herramientas para simular tráfico malintencionado
-* Análisis de los resultados mediante las herramientas de análisis de registro
-* Prácticas recomendadas
+* Implementación de reglas mediante la canalización de configuración de Cloud Manager.
+* Prueba de reglas con herramientas para simular el tráfico malintencionado.
+* Análisis de los resultados mediante la herramienta de análisis de registro.
+* Prácticas recomendadas.
