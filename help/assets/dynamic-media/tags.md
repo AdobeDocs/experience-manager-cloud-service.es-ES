@@ -36,7 +36,7 @@ Para obtener más información sobre las extensiones de Adobe o de terceros, con
 * La integración de etiquetas de Experience Platform para los visualizadores de Dynamic Media no funciona en el nodo de creación de Experience Manager. No puede ver ningún seguimiento desde una página WCM hasta que se publique.
 * La integración de etiquetas de Experience Platform para visores de Dynamic Media no se admite en el modo de operación &quot;emergente&quot;, en el que la URL del visor se obtiene mediante el botón &quot;URL&quot; en la página Detalles del recurso.
 * La integración de etiquetas de Experience Platform no se puede usar de forma simultánea con la integración de Analytics de visores heredados (mediante el parámetro `config2=`).
-* La compatibilidad con el seguimiento de vídeos se limita únicamente al seguimiento de reproducción principal, tal como se describe en [Información general sobre el seguimiento](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview#player-events). En particular, no se admiten QoS, anuncios, capítulos o segmentos ni el seguimiento de errores.
+* La compatibilidad con el seguimiento de vídeos se limita únicamente al seguimiento de reproducción principal, tal como se describe en [Información general sobre el seguimiento](https://experienceleague.adobe.com/es/docs/media-analytics/using/tracking/track-core-overview#player-events). En particular, no se admiten QoS, anuncios, capítulos o segmentos ni el seguimiento de errores.
 * La configuración de la duración del almacenamiento para los elementos de datos no se admite para los elementos de datos que usan la extensión *Visores de Dynamic Media*. La duración del almacenamiento debe establecerse en **[!UICONTROL None]**.
 
 ### Casos de uso para la integración {#use-cases-for-the-integration}
@@ -131,7 +131,7 @@ Cuando una cuenta de CX Enterprise está suscrita para usar Adobe Analytics para
 
 Consulte [Instalación y configuración de extensiones](#installing-and-setup-of-extensions).
 
-Actualmente, la compatibilidad con el seguimiento de vídeos se limita únicamente al seguimiento de &quot;reproducción principal&quot;, tal como se describe en [Información general de seguimiento](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview#player-events). En particular, no se admiten QoS, anuncios, capítulos o segmentos ni el seguimiento de errores.
+Actualmente, la compatibilidad con el seguimiento de vídeos se limita únicamente al seguimiento de &quot;reproducción principal&quot;, tal como se describe en [Información general de seguimiento](https://experienceleague.adobe.com/es/docs/media-analytics/using/tracking/track-core-overview#player-events). En particular, no se admiten QoS, anuncios, capítulos o segmentos ni el seguimiento de errores.
 
 ## Uso de la extensión Visualizadores de Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
