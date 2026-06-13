@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
+source-git-commit: d5c87853bcc10587c97710e69b350bb9ebe509ae
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 9%
@@ -52,26 +52,24 @@ Cada vez que se edita un programa, incluida la adición o eliminación de una so
 
    Las opciones disponibles para editar el programa son las mismas para la creación de programas.
 
-   * En la ficha **Seguridad**, puede habilitar **Claves administradas por el cliente** para un programa existente.
+   * Puede configurar si un nivel de publicación está aprovisionado para nuevos entornos (Beta). Consulte [Nivel de publicación flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+   * Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) y [Crear programas de espacio aislado](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obtener más información sobre las opciones individuales.
+   * Para habilitar o deshabilitar el firewall de aplicaciones web (WAF) en cualquier momento, seleccione la ficha **Seguridad** y, a continuación, active o desactive la casilla de verificación **Protección WAF-DDOS**. Si las reglas de WAF tienen licencia pero esta casilla de verificación no está marcada, la función no está activa y no se aplican sus protecciones. Para obtener más información, consulte [Reglas de filtro de tráfico, incluidas las reglas de WAF](/help/security/traffic-filter-rules-including-waf.md).
 
      >[!NOTE]
-     >
-     >Para habilitar o deshabilitar el Firewall de aplicaciones web (WAF) en cualquier momento, en la misma ficha Seguridad, marque o desmarque la casilla **Protección WAF-DDOS**. Si las reglas de WAF tienen licencia pero esta casilla de verificación no está marcada, la función no está activa y no se aplican sus protecciones. Para obtener más información, consulte [Reglas de filtro de tráfico, incluidas las reglas de WAF](/help/security/traffic-filter-rules-including-waf.md).
-     >
      >Para confirmar que la función está activa, revise los [registros de CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) una vez que el tráfico fluya al sitio. Busque entradas de registro que incluyan una propiedad `rules` que contenga un atributo `waf`. Por ejemplo,
      >
      >`"rules": "waf=SQLI"`
      >
      >Este atributo aparece una vez que WAF está activo, incluso antes de que se implementen las reglas de WAF.
 
-   * Puede configurar si un nivel de publicación está aprovisionado para nuevos entornos (Beta). Consulte [Nivel de publicación flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
-   * Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) y [Crear programas de espacio aislado](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obtener más información sobre las opciones individuales.
+     ![Cuadro de diálogo Editar programa que muestra las opciones de la ficha Seguridad](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
+
+   * En la misma ficha **Seguridad**, puede habilitar **Claves administradas por el cliente** para un programa existente.
+
+     CMK no se puede deshabilitar después de la activación. Después de habilitar CMK, configure las claves de cifrado en Experience Hub. Consulte [Configurar CMK en Experience Hub](#configure-cmk-experience-hub).
+
    * [Hay opciones adicionales](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) disponibles para su programa de producción en función de los derechos de su organización.
-
-
-   ![Cuadro de diálogo Editar programa que muestra las claves administradas por el cliente seleccionadas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
-
-   CMK no se puede deshabilitar después de la activación. Después de habilitar CMK, configure las claves de cifrado en Experience Hub. Consulte [Configurar CMK en Experience Hub](#configure-cmk-experience-hub).
 
 1. Haga clic en **Actualizar** para guardar los cambios.
 
@@ -116,7 +114,7 @@ Antes de iniciar la marcación para eliminación, el sistema valida si el progra
 1. Seleccione la organización adecuada.
 1. En la página **Mis programas**, para el programa de producción que desea marcar para su eliminación, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, haga clic en **Eliminar programa**.
 
-   ![Seleccionar Eliminar programa de la lista desplegable de un programa de producción &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Ejemplo de programa de producción visto arriba es solo con fines ilustrativos.*
+   ![Seleccionar Eliminar programa de la lista desplegable de un programa de producción ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Ejemplo de programa de producción visto arriba es solo con fines ilustrativos.*
 
 1. En el cuadro de diálogo **Marcar programa de producción para eliminación**, revise la advertencia que enumera los recursos conectados al programa, incluidos los entornos de producción, fase y desarrollo.
 
