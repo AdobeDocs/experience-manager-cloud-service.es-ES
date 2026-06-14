@@ -4,9 +4,9 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
+source-git-commit: 3c140f8cdf3bd03c4b4be101d2d1fb6d8cff84ea
 workflow-type: tm+mt
-source-wordcount: '4257'
+source-wordcount: '4268'
 ht-degree: 68%
 
 ---
@@ -73,7 +73,7 @@ El siguiente es un proceso de extremo a extremo recomendado de alto nivel para d
 
    >[!IMPORTANT]
    >
-   >Las reglas de WAF de licencias no las activan. La función permanece inactiva hasta que **Protección WAF-DDOS** esté marcada en la ficha **Seguridad** de Cloud Manager.
+   >Las reglas de WAF de licencias *no las* activan. La función permanece inactiva hasta que **Protección WAF-DDOS** esté marcada en la ficha **Seguridad** de Cloud Manager. Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) o [Editar programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) para habilitar la característica.
 
 1. Lea y complete el tutorial para comprender cómo utilizar las reglas de filtro de tráfico, incluidas las reglas de WAF si se han autorizado. El tutorial le guía por la implementación de reglas en un entorno de desarrollo, simulando tráfico malicioso y descargando [registros de CDN](#cdn-logs) y analizándolos en [herramientas de panel de control](#dashboard-tooling).
 1. Copie las reglas de inicio recomendadas en `cdn.yaml` e implemente la configuración en el entorno de producción con algunas de las reglas en modo de registro.
