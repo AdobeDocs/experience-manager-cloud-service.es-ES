@@ -7,9 +7,9 @@ feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
+source-git-commit: f06e04efec715413306b41be82328fba24c31404
 workflow-type: tm+mt
-source-wordcount: '4336'
+source-wordcount: '4541'
 ht-degree: 10%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 10%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Este artículo describe cómo administrar y editar recursos en [!DNL Adobe Experience Manager Assets]. Para administrar [!DNL Content Fragments], vea [[!DNL Content Fragments]](content-fragments/content-fragments.md) recursos.
@@ -279,6 +279,25 @@ Además, deshabilite el botón de eliminación forzada mediante una superposici�
    >[!NOTE]
    >
    >Para resolver o quitar las referencias entrantes de otras páginas, actualice las referencias relevantes antes de eliminar un recurso. Puede no permitir la eliminación de recursos a los que se hace referencia, ya que provoca vínculos rotos. Deshabilite el botón de eliminación forzada mediante una superposición.
+
+## Trabajos asincrónicos en segundo plano {#asynchronous-background-jobs}
+
+Para mejorar el rendimiento y la fiabilidad al procesar una gran cantidad de recursos, AEM utiliza trabajos en segundo plano asincrónicos para determinadas operaciones de administración de recursos. En lugar de completar estas operaciones inmediatamente, AEM las procesa en segundo plano y permite a los usuarios seguir trabajando mientras se realiza un seguimiento del progreso por separado.
+
+
+Las operaciones como mover, copiar o eliminar carpetas que contienen más de 150 recursos se ejecutan automáticamente como trabajos asincrónicos. Al iniciar una de estas operaciones, los usuarios pueden elegir ejecutar el trabajo inmediatamente o programarlo para un momento posterior.
+
+![Selector de fecha](assets/schedule-asnyc-job.png)
+
+A medida que se ejecuta la operación, AEM procesa los recursos por lotes y guarda periódicamente el progreso. La interfaz de usuario de AEM también muestra las actualizaciones de progreso para que los usuarios puedan monitorizar el estado de la operación.
+
+![Selector de fecha](assets/move-progress-folder-indicator.png)
+
+Para las operaciones de mover y eliminar, el acceso a las carpetas afectadas está restringido mientras se ejecuta el trabajo para ayudar a evitar acciones conflictivas.
+
+Para realizar un seguimiento del progreso del trabajo, abra la consola Trabajos de Assets (**Assets** > **Trabajos** en la vista de administración). La consola muestra detalles como el estado actual, el porcentaje completado y otra información del trabajo. Seleccione un trabajo y haga clic en Abrir para ver detalles adicionales, incluida la información de progreso y el tiempo estimado restante para la finalización. También se notifica a los usuarios cuando finaliza la operación.
+
+![Selector de fecha](assets/async-jobs-status.png)
 
 ## Descarga de recursos {#download-assets}
 
@@ -660,7 +679,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Para obtener más información, consulte cómo [examinar recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#browse-search-preview-assets) y [cómo utilizar Adobe Asset Link](https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Para obtener más información, consulte cómo [examinar recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) y [cómo utilizar Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
 **Consulte también**
 
