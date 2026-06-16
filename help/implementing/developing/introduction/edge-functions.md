@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo ejecutar JavaScript en la capa de 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: fc46155da4012672ad07b320b046179d93671441
+source-git-commit: 33998fa44df1ad26d127bdc27b6903e9c56b7fc3
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1709'
 ht-degree: 2%
 
 ---
@@ -97,7 +97,7 @@ Cree un archivo con el nombre `edgeFunctions.yaml` en el directorio de configura
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
     # add advanced configuration under here
 ```
@@ -106,7 +106,7 @@ Los entornos de pila de Java tienen 1 función Edge y las implementaciones de Ed
 
 | Clave | Descripción |
 |---|---|
-| `services` | Lista de servicios de funciones perimetrales, cada uno identificado por un `name`. Nota: pronto se cambiará el nombre de esta opción a `functions`. |
+| `functions` | Lista de funciones de Edge, cada una identificada por un `name`. Para la compatibilidad con versiones anteriores, `services` también se acepta, pero `functions` es la clave preferida. No se permite el uso de ambos en el mismo archivo. |
 | `configs` | Pares de clave/valor expuestos a las funciones perimetrales de un entorno como variables de entorno. |
 | `secrets` | Pares de clave/valor que hacen referencia a los secretos de Cloud Manager en las funciones Edge de un entorno |
 | `kvs` | Alternar booleano para aprovisionar un KVStore para los datos de valor clave de lectura y escritura en tiempo de ejecución compartidos entre todas las funciones Edge de un entorno. |
