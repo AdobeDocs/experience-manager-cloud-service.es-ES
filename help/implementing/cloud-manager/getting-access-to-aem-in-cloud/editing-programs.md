@@ -5,9 +5,9 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d5c87853bcc10587c97710e69b350bb9ebe509ae
+source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1346'
 ht-degree: 9%
 
 ---
@@ -54,7 +54,7 @@ Cada vez que se edita un programa, incluida la adición o eliminación de una so
 
    * Puede configurar si un nivel de publicación está aprovisionado para nuevos entornos (Beta). Consulte [Nivel de publicación flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) y [Crear programas de espacio aislado](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obtener más información sobre las opciones individuales.
-   * Para habilitar o deshabilitar el firewall de aplicaciones web (WAF) en cualquier momento, seleccione la ficha **Seguridad** y, a continuación, active o desactive la casilla de verificación **Protección WAF-DDOS**. Si las reglas de WAF tienen licencia pero esta casilla de verificación no está marcada, la función no está activa y no se aplican sus protecciones. Para obtener más información, consulte [Reglas de filtro de tráfico, incluidas las reglas de WAF](/help/security/traffic-filter-rules-including-waf.md).
+   * Para habilitar o deshabilitar el firewall de aplicaciones web (WAF) en cualquier momento, seleccione la ficha **Seguridad** y, a continuación, active o desactive la casilla de verificación **Protección WAF-DDOS**. Al marcar esta casilla se activa la función, pero más allá de la protección automática contra algunas vulnerabilidades y exposiciones comunes (CVE), debe implementar las reglas de WAF a través de Cloud Manager para obtener una protección completa. Si las reglas de WAF tienen licencia pero esta casilla de verificación no está marcada, la función no está activa. Para obtener más información, consulte [Reglas de filtro de tráfico, incluidas las reglas de WAF](/help/security/traffic-filter-rules-including-waf.md).
 
      >[!NOTE]
      >Para confirmar que la función está activa, revise los [registros de CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) una vez que el tráfico fluya al sitio. Busque entradas de registro que incluyan una propiedad `rules` que contenga un atributo `waf`. Por ejemplo,
