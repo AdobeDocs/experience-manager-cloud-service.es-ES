@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f58ab16d09b995d81879e9efaeb91446e530f540
+source-git-commit: ee44611ddea115fffd9800a54728d747d4360a6b
 workflow-type: tm+mt
-source-wordcount: '7486'
-ht-degree: 85%
+source-wordcount: '7496'
+ht-degree: 84%
 
 ---
 
@@ -895,6 +895,7 @@ ht-degree: 85%
          + [Enviar un formulario adaptable a Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Enviar un formulario adaptable a Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
          + [Configuración de la acción de envío Enviar a punto final REST para formularios adaptables](/help/forms/configure-submit-action-restpoint.md)
+         + [Configure puntos finales REST específicos del entorno para el mismo formulario adaptable](/help/forms/configure-environment-specific-rest-endpoints.md)
          + [Envío de un formulario adaptable a Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
          + [Integración del formulario adaptable de AEM con el flujo de trabajo de AEM](/help/forms/configure-submit-action-workflow.md)
          + [Integración de AEM Forms con Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)

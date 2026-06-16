@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
+source-git-commit: 4a080bfb281ba9b61bf9b8ebd090f7e98ddaf2d0
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 99%
+source-wordcount: '1352'
+ht-degree: 88%
 
 ---
 
@@ -41,9 +41,9 @@ Para configurar la acción de envío basada en la especificación de API abierta
 
    ![Configuración de la acción de Enviar a punto final REST](/help/forms/assets/submit-action-restendpoint.png)
 
-   Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, `/content/restEndPoint`. Para esas solicitudes POST se utiliza la información de autenticación de la solicitud de envío.
-Esta opción le permite introducir directamente el punto final REST de destino.
-Para enviar datos a un servidor externo, proporcione una URL. El formato de la URL es el siguiente `https://host:port/path_to_rest_end_point`. Asegúrese de configurar la ruta para controlar la petición POST de forma anónima.
+   Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, `/content/restEndPoint`. Para estas peticiones POST se utiliza la información de autenticación de la solicitud de envío.
+Esta opción le permite introducir directamente el extremo REST de destinatario
+Para enviar datos a un servidor externo, proporcione una URL. El formato de la dirección URL es `https://host:port/path_to_rest_end_point`. Asegúrese de configurar la ruta para gestionar la petición POST de forma anónima.
    ![Asignación de valores de campo pasados como parámetros de la página de agradecimiento](assets/post-enabled-actionconfig.png)
 
    En el ejemplo anterior, el usuario ha escrito información en `textbox` y se captura mediante el parámetro `param1`. La sintaxis para anunciar datos capturados con `param1` es la siguiente:
@@ -57,8 +57,8 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
-   En este ejemplo, `data` almacena los datos XML y `att` almacena datos de archivos adjuntos.
-La acción de envío **[!UICONTROL Enviar al punto final REST]** envía los datos rellenados en el formulario a una página de confirmación configurada como parte de la petición HTTP GET. Puede añadir el nombre de los campos que desea solicitar. El formato de la solicitud es el siguiente:
+   En este ejemplo, `data` almacena los datos XML y `att` almacena los datos adjuntos.
+La acción de envío **[!UICONTROL Enviar al extremo REST]** envía los datos rellenados en el formulario a una página de confirmación configurada como parte de la petición HTTP GET. Puede añadir el nombre del campo que desea solicitar. El formato de la solicitud es el siguiente:
    `{fieldName}={request parameter name}`
 
    Como se muestra en la siguiente imagen, `param1` y `param2` se pasan como parámetros con valores copiados de los campos **cuadro de texto** y **del cuadro numérico** para la siguiente acción.
@@ -86,8 +86,8 @@ Para configurar la acción de envío basada en la especificación de API abierta
 
    +++URL
 
-   Esta opción le permite introducir directamente el punto final REST de destino.
-Para enviar datos a un servidor externo, proporcione una URL. El formato de la URL es el siguiente `https://host:port/path_to_rest_end_point`. Asegúrese de configurar la ruta para controlar la petición POST de forma anónima.
+   Esta opción le permite introducir directamente el extremo REST de destinatario
+Para enviar datos a un servidor externo, proporcione una URL. El formato de la dirección URL es `https://host:port/path_to_rest_end_point`. Asegúrese de configurar la ruta para gestionar la petición POST de forma anónima.
 
    ![Asignación de valores de campo pasados como parámetros de la página de agradecimiento](assets/post-enabled-actionconfig.png)
 
@@ -118,7 +118,7 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
 
    +++Configuración
 
-   Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el explorador de configuración de AEM. Puede seleccionar la configuración creada para su tipo de autenticación de punto final REST de servicio y los tipos de contenido. Para obtener más información acerca del tipo de autenticación y los tipos de contenido, visite [Configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
+   Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el explorador de configuración de AEM. Puede seleccionar la configuración creada para su tipo de autenticación de punto final REST de servicio y los tipos de contenido. Para obtener más información acerca del tipo de autenticación y los tipos de contenido, visite [configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint). Para enrutar el mismo formulario a un extremo diferente en cada entorno, consulte [Configurar extremos REST específicos del entorno para el mismo formulario adaptable](/help/forms/configure-environment-specific-rest-endpoints.md).
 
    +++
 
@@ -146,8 +146,8 @@ Para configurar la acción de envío basada en la especificación de la API abie
 
    +++URL
 
-   Esta opción le permite introducir directamente el punto final REST de destino.
-Para enviar datos a un servidor externo, proporcione una URL. El formato de la URL es el siguiente `https://host:port/path_to_rest_end_point`. Asegúrese de configurar la ruta para controlar la petición POST de forma anónima.
+   Esta opción le permite introducir directamente el extremo REST de destinatario
+Para enviar datos a un servidor externo, proporcione una URL. El formato de la dirección URL es `https://host:port/path_to_rest_end_point`. Asegúrese de configurar la ruta para gestionar la petición POST de forma anónima.
 
    ![Asignación de valores de campo pasados como parámetros de la página de agradecimiento](assets/post-enabled-actionconfig.png)
 
@@ -178,7 +178,7 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
 
    +++Configuración
 
-   Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el explorador de configuración de AEM. Puede seleccionar la configuración creada para su tipo de autenticación de punto final REST de servicio y los tipos de contenido. Para obtener más información acerca del tipo de autenticación y los tipos de contenido, visite [Configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
+   Esta opción le permite añadir una configuración HTTP predefinida administrada mediante el explorador de configuración de AEM. Puede seleccionar la configuración creada para su tipo de autenticación de punto final REST de servicio y los tipos de contenido. Para obtener más información acerca del tipo de autenticación y los tipos de contenido, visite [configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint). Para enrutar el mismo formulario a un extremo diferente en cada entorno, consulte [Configurar extremos REST específicos del entorno para el mismo formulario adaptable](/help/forms/configure-environment-specific-rest-endpoints.md).
 
    +++
 
@@ -208,6 +208,7 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la U
 
 * Al publicar datos en un servidor externo, asegúrese de que la dirección URL sea segura y configure la ruta para gestionar la petición POST de forma anónima a fin de proteger la información confidencial.
 * Para pasar los campos como parámetros en una URL REST, todos los campos deben tener nombres de elementos diferentes, incluso si se colocan en paneles diferentes.
+* Para usar una dirección URL de extremo REST diferente en ensayo y producción sin cambiar el formulario, consulte [Configurar extremos REST específicos del entorno para el mismo formulario adaptable](/help/forms/configure-environment-specific-rest-endpoints.md).
 
 ## Artículos relacionados
 
