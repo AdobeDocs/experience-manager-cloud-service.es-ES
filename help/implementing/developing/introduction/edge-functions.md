@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo ejecutar JavaScript en la capa de 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 33998fa44df1ad26d127bdc27b6903e9c56b7fc3
+source-git-commit: 21f4115d09e6dc804a69ecc012a2c654794f39ad
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1696'
 ht-degree: 2%
 
 ---
@@ -283,7 +283,7 @@ Exponga las variables de entorno a sus funciones usando la clave `configs` en `e
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   configs:
     - key: LOG_LEVEL
@@ -315,7 +315,7 @@ Se hace referencia a los secretos, no se almacenan, en `edgeFunctions.yaml`. El 
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   secrets:
     - key: API_TOKEN
@@ -346,7 +346,7 @@ Las funciones de Edge pueden leer y escribir datos de valor clave arbitrarios en
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   kvs: true
 ```
