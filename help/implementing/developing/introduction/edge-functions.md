@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo ejecutar JavaScript en la capa de 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 0bafec06aff183b58838c8c0d3eee50e4411ac78
+source-git-commit: fc46155da4012672ad07b320b046179d93671441
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 2%
@@ -121,7 +121,7 @@ Con Cloud Manager, implemente la canalización para que la función perimetral s
 
 ### Autor {#author}
 
-Escriba su lógica empresarial de código de función perimetral, usando la `src` carpeta [&#128279;](https://github.com/adobe/aem-edge-functions-boilerplate/tree/main/src) de plantillas como punto de partida.
+Escriba su lógica empresarial de código de función perimetral, usando la `src` carpeta ](https://github.com/adobe/aem-edge-functions-boilerplate/tree/main/src) de [plantillas como punto de partida.
 
 ### Generar {#build}
 
@@ -143,7 +143,7 @@ aio aem edge-functions deploy <function-name>
 
 Asegúrese de que la función Edge funciona según lo esperado. Puede probarlo en:
 
-`edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com.adobeaemcloud.com/<path>`
+`edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com/<path>`
 
 Por ejemplo, para la pila Java de AEM:<br/>
 `edgefunction-pXXXXX-eYYYYY-my-edge-function.adobeaemcloud.com/weather`
