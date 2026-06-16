@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo ejecutar JavaScript en la capa de 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 3d12f495e0f1a07c81033b93fd607fd260023c48
+source-git-commit: 0bafec06aff183b58838c8c0d3eee50e4411ac78
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1697'
 ht-degree: 2%
 
 ---
@@ -33,13 +33,14 @@ AEM Edge Functions es compatible tanto con Edge Delivery Services como con la pi
 | Ventaja | Descripción |
 |---|---|
 | **Rendimiento** | TTFB rápido a través de SSR perimetral que devuelve HTML completamente procesado. Llamadas de API de baja latencia a través de recuperaciones paralelas y saltos de red optimizados. |
-| **SEO / GEO** | Server HTML se indexa al rastrear por primera vez. El contenido completamente procesado está listo para los rastreadores de IA. |
+| **SEO / GEO** | Los rastreadores de IA pueden indexar el contenido que se vincula entre sí en el lado del servidor. |
 | **Seguridad** | Mantenga las credenciales de la API del lado del servidor ocultas de la JavaScript del cliente. Autenticar con un proveedor de identidad y restringir el acceso al contenido. |
 | **Personalización** | Personalice el contenido antes de que la página se cargue en función de las señales geográficas y de dispositivo. Ejecute búsquedas de audiencia en el perímetro de para la entrega segmentada. |
 
 ## Requisitos previos {#prerequisites}
 
-- Un entorno de AEM as a Cloud Service
+- Un programa de Cloud Manager que contiene entornos de pila Java de AEM o sitios de Edge Delivery Services. Aprenda a [incorporar sitios EDS a Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
+- Una canalización de configuración de Cloud Manager (denominada canalización de Edge Delivery Services para sitios EDS).
 - El perfil de producto del administrador de AEM en la instancia de autor de su entorno de Cloud Service, **o** la función de administrador de implementación de Cloud Manager en los sitios de Admin Console para Edge Delivery Services
 - [Node.js y npm](https://nodejs.org/)
 
@@ -76,19 +77,19 @@ Copie [aem-edge-functions-boilerplate](https://github.com/adobe/aem-edge-functio
 npm install
 ```
 
-## Creación de la primera función {#create-your-function}
+## Registre su función de AEM Edge {#register-your-function}
 
-Los servicios de funciones de AEM Edge se declaran en un archivo de configuración de YAML y se implementan a través de la canalización de configuración de Cloud Manager.
+Las funciones de AEM Edge se declaran en un archivo de configuración de YAML y se implementan a través de la canalización de configuración de Cloud Manager.
 
 ### &#x200B;1. Configurar una canalización de configuración {#configuration-pipeline}
 
-Antes de crear una función perimetral, asegúrese de que exista una canalización de configuración para su entorno en Cloud Manager. Si no, [cree primero una canalización de configuración](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
+Antes de crear una función perimetral, asegúrese de que en Cloud Manager exista una canalización de configuración para su entorno (si utiliza la pila Java de AEM) o una canalización de Edge Delivery Services si el proyecto se implementa con Edge Delivery Services. Consulte [Usar canalizaciones de configuración](/help/operations/config-pipeline.md) para obtener información sobre cómo configurar las canalizaciones.
 
 >[!NOTE]
 >
 >Si está usando un entorno de desarrollo rápido (RDE), puede implementar la configuración directamente con `aio aem rde:install -t env-config ./config` en lugar de pasar por una canalización de configuración.
 
-### &#x200B;2. Declarar los servicios de función de Edge {#declare-services}
+### &#x200B;2. Declarar la función de Edge {#declare-functions}
 
 Cree un archivo con el nombre `edgeFunctions.yaml` en el directorio de configuración:
 
@@ -98,22 +99,66 @@ version: "1"
 data:
   services:
     - name: my-edge-function
-    # Uncomment to enable secrets
-    # secrets:
-    #   - key: API_TOKEN
-    #     value: ${{ API_TOKEN_SECRET }}
+    # add advanced configuration under here
 ```
 
-El límite predeterminado es 1 función para entornos AEM as a Cloud Service y 3 para sitios Edge Delivery Services. Las claves de nivel superior son:
+Los entornos de pila de Java tienen 1 función Edge y las implementaciones de Edge Delivery Services tienen 3 funciones Edge. Las claves de nivel superior opcionales son las siguientes:
 
 | Clave | Descripción |
 |---|---|
-| `services` | Lista de servicios de funciones perimetrales, cada uno identificado por un `name`. |
-| `configs` | Pares de clave/valor expuestos a todos los servicios de funciones Edge como variables de entorno. |
-| `secrets` | Pares de clave/valor que hacen referencia a secretos de Cloud Manager, expuestos a todos los servicios de funciones Edge. |
-| `kvs` | Alternar booleano para aprovisionar un KVStore para los datos de valor clave de lectura y escritura en tiempo de ejecución compartidos entre todos los servicios de funciones perimetrales. |
+| `services` | Lista de servicios de funciones perimetrales, cada uno identificado por un `name`. Nota: pronto se cambiará el nombre de esta opción a `functions`. |
+| `configs` | Pares de clave/valor expuestos a las funciones perimetrales de un entorno como variables de entorno. |
+| `secrets` | Pares de clave/valor que hacen referencia a los secretos de Cloud Manager en las funciones Edge de un entorno |
+| `kvs` | Alternar booleano para aprovisionar un KVStore para los datos de valor clave de lectura y escritura en tiempo de ejecución compartidos entre todas las funciones Edge de un entorno. |
 
-### &#x200B;3. Agregar reglas de selector de origen de CDN {#cdn-routing}
+Vea configuraciones avanzadas como `configs`, `secrets` y `kvs` en la [sección de configuración avanzada](#advanced-function-configuration) a continuación.
+
+### &#x200B;3. Implementación de la función Edge mediante Cloud Manager {#deploy-functions-via-cm}
+
+Con Cloud Manager, implemente la canalización para que la función perimetral se registre en la CDN.
+
+## Crear, generar e implementar código de función de AEM Edge {#build-deploy}
+
+### Autor {#author}
+
+Escriba su lógica empresarial de código de función perimetral, usando la `src` carpeta ](https://github.com/adobe/aem-edge-functions-boilerplate/tree/main/src) de [plantillas como punto de partida.
+
+### Generar {#build}
+
+Empaquete el código de función perimetral para la implementación:
+
+```bash
+aio aem edge-functions build
+```
+
+### Implementación {#deploy}
+
+Implemente el código de función de Edge empaquetado en la función de Edge con nombre. El argumento `function-name` debe coincidir con el valor `name` de `edgeFunctions.yaml`:
+
+```bash
+aio aem edge-functions deploy <function-name>
+```
+
+### Prueba {#test}
+
+Asegúrese de que la función Edge funciona según lo esperado. Puede probarlo en:
+
+`edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com.adobeaemcloud.com/<path>`
+
+Por ejemplo, para la pila Java de AEM:<br/>
+`edgefunction-pXXXXX-eYYYYY-my-edge-function.adobeaemcloud.com/weather`
+
+o para Edge Delivery Services:<br/>
+`edgefunction-pXXXXX-dYYYYY-my-edge-function.adobeaemcloud.com/weather`
+
+Este dominio con el prefijo *edgefunction* solo se usa para la depuración, pero no se debe hacer referencia a *para el tráfico en directo* porque no se garantiza que sea un nombre estable. Para determinar el valor de dAAAA, consulte el resultado del comando deploy.
+
+
+## Alambre en el flujo de entrega de contenido {#wiring}
+
+El tráfico de funciones de Edge debe enviarse al dominio del sitio web, que suele ser un dominio personalizado para AEM Java-stack, y *debe* ser un dominio personalizado para Edge Delivery Services Sites.
+
+### &#x200B;1. Definir selectores de origen {#origin-selectors}
 
 Las funciones de Edge se invocan enrutando el tráfico de CDN a ellas a través de reglas de selector de origen. Agregue lo siguiente al archivo de configuración `cdn.yaml` (o cree uno si no existe):
 
@@ -137,32 +182,14 @@ data:
 
 Las reglas del selector de origen permiten dirigir el tráfico a las funciones perimetrales en función de cualquier condición disponible en el motor de reglas de CDN, como una ruta específica, un dominio o un encabezado de solicitud. Varias reglas pueden enrutar diferentes rutas a la misma función de Edge. Consulte [Selectores de origen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) para obtener la sintaxis completa de la regla.
 
-### &#x200B;4. Implementar la configuración {#deploy-configuration}
+### &#x200B;2. Implementar la configuración {#deploy-to-cdn}
 
-Confirme tanto `edgeFunctions.yaml` como `cdn.yaml` a su repositorio Git de Cloud Manager y almacene en déclencheur la canalización de configuración. Una vez que la canalización se complete correctamente, los puntos finales de la función Edge estarán disponibles en:
+Confirme `cdn.yaml` a su repositorio Git de Cloud Manager y almacene en déclencheur la canalización de configuración. Una vez que la canalización se complete correctamente, los puntos finales de la función Edge estarán disponibles en:
 
-- `publish-pXXXXX-eYYYYY.adobeaemcloud.com/weather`
-- `publish-pXXXXX-eYYYYY.adobeaemcloud.com/hello-world`
+- `example.com/weather`
+- `example.com/hello-world`
 
-donde `pXXXXX-eYYYYY` son las coordenadas de entorno. Si se configura un dominio personalizado, también se puede acceder a las funciones en esas rutas de dominio (por ejemplo, `example.com/weather`).
-
-## Generar e implementar el código de función de AEM Edge {#build-deploy}
-
-### Generar {#build}
-
-Empaquete el código de función perimetral para la implementación:
-
-```bash
-aio aem edge-functions build
-```
-
-### Implementación {#deploy}
-
-Implemente el paquete creado en un servicio de función perimetral con nombre. El argumento `function-name` debe coincidir con el valor `name` de `edgeFunctions.yaml`:
-
-```bash
-aio aem edge-functions deploy <function-name>
-```
+Para la depuración, puede hacer referencia a la función perimetral en el dominio `publish-pXXXXX-eYYYYY.adobeaemcloud.com` (para la pila Java de AEM) o `publish-pXXXXX-dYYYYY.adobeaemcloud.com` (para los sitios Edge Delivery Services). No utilice este dominio para el uso en producción, ya que no se garantiza que sea un nombre estable. Para determinar el valor de dAAAA, consulte el resultado del comando deploy.
 
 ## Desarrollo local {#local-development}
 
@@ -176,7 +203,7 @@ aio aem edge-functions serve
 
 Consulte esta [Documentación de cómputo de JavaScript](https://www.fastly.com/documentation/guides/compute/javascript/) para obtener detalles sobre lo que admite el tiempo de ejecución local.
 
-### Prueba {#test}
+### Prueba {#test-localdev}
 
 Ejecute el grupo de pruebas con [Mocha](https://mochajs.org/):
 
@@ -225,7 +252,7 @@ Requested backend named '…' does not exist
 
 Cuando vea este error y la configuración de origen sea correcta, la causa más probable es que se haya agotado la cuota de solicitudes back-end por invocación. Consulte [Límites de recursos de Fastly Compute](https://docs.fastly.com/products/compute-resource-limits#default-limits) para obtener la lista completa de límites de plataforma.
 
-## Referencia de configuración {#configuration-reference}
+## Configuración avanzada de funciones de Edge {#advanced-function-configuration}
 
 ### Orígenes {#origins}
 
@@ -246,17 +273,23 @@ const response = await fetch(request, { backend: "my-origin-name" });
 
 >[!NOTE]
 >
->Los almacenes de servicios (`configs`, `secrets` y `kvs`) no están disponibles en [programas de zonas protegidas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Los propios servicios de funciones de Edge se ejecutan normalmente en entornos de zona protegida, solo que las tiendas no están aprovisionadas.
+>Las configuraciones, los secretos y los kvs no están disponibles en [programas de zonas protegidas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Las funciones de Edge se ejecutan normalmente en entornos de espacio aislado; solo que estas entidades no están aprovisionadas.
 
-### Configuración de servicio {#service-configuration}
+### Variables de configuración de función Edge {#function-configuration}
 
 Exponga las variables de entorno a sus funciones usando la clave `configs` en `edgeFunctions.yaml`. Los valores se almacenan en un almacén de configuración denominado `config_default`:
 
 ```yaml
-configs:
-  - key: LOG_LEVEL
-    value: DEBUG
+kind: "EdgeFunctions"
+version: "1"
+data:
+  services:
+    - name: my-edge-function
+  configs:
+    - key: LOG_LEVEL
+      value: DEBUG
 ```
+
 
 Lea los valores de configuración en el código de función:
 
@@ -271,16 +304,22 @@ const logLevel = config.get('LOG_LEVEL') || 'info';
 >
 >- El nombre del almacén de configuración siempre es `config_default`.
 >- Los nombres de clave distinguen entre mayúsculas y minúsculas.
->- El almacén de configuración se comparte en todos los servicios de funciones Edge en el mismo entorno.
+>- El almacén de configuración se comparte entre todas las funciones de Edge en el mismo entorno.
 
-### Secretos de servicio {#service-secrets}
+### Variables secretas de funciones Edge {#function-secrets}
 
 Se hace referencia a los secretos, no se almacenan, en `edgeFunctions.yaml`. El campo `value` debe señalar a un secreto de Cloud Manager mediante la sintaxis `${{SECRET_REFERENCE}}`. Defina primero el secreto subyacente en Cloud Manager; consulte [Variables secretas de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
+
 ```yaml
-secrets:
-  - key: API_TOKEN
-    value: ${{ API_TOKEN_SECRET }}
+kind: "EdgeFunctions"
+version: "1"
+data:
+  services:
+    - name: my-edge-function
+  secrets:
+    - key: API_TOKEN
+      value: ${{ API_TOKEN_SECRET }}
 ```
 
 Recupere secretos en su código de función utilizando el asistente `SecretStoreManager` de la plantilla:
@@ -296,14 +335,20 @@ const apiToken = await SecretStoreManager.getSecret('API_TOKEN');
 >- El almacén secreto siempre se denomina `secret_default`.
 >- Los nombres de clave distinguen entre mayúsculas y minúsculas.
 >- Los secretos son inmutables una vez creados.
->- El almacén secreto se comparte en todos los servicios de funciones perimetrales del mismo entorno.
+>- El almacén secreto se comparte en todas las funciones Edge del mismo entorno.
 
-### KVStore de servicios {#service-kv-store}
+### KVStore de funciones Edge {#function-kv-store}
 
 Las funciones de Edge pueden leer y escribir datos de valor clave arbitrarios en tiempo de ejecución a través de un KVStore. Para habilitarlo, establezca `kvs: true` en `edgeFunctions.yaml`:
 
+
 ```yaml
-kvs: true
+kind: "EdgeFunctions"
+version: "1"
+data:
+  services:
+    - name: my-edge-function
+  kvs: true
 ```
 
 Esto aprovisiona un KVStore vacío denominado `kv_default`. Rellénelo en tiempo de ejecución desde el código de función perimetral mediante la [API de KVStastly](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore):
@@ -325,7 +370,7 @@ await kv.put('visit-count', String(count + 1));
 >
 >- El nombre del KVStore siempre es `kv_default`.
 >- El KVStore está vacío en el momento del aprovisionamiento; rellénelo durante la ejecución mediante la [API de KVStore](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore) de Fastly. No se admiten las entradas de clave/valor declarativo en `edgeFunctions.yaml`.
->- El KVStore se comparte en todos los servicios de funciones Edge en el mismo entorno.
+>- El KVStore se comparte en todas las funciones de Edge en el mismo entorno.
 
 ### Registro {#logging}
 
@@ -359,5 +404,5 @@ logger.log(JSON.stringify({
 
 >[!NOTE]
 >
->Los registros de CDN, que incluyen entradas de registro de funciones de AEM Edge, se pueden descargar desde Cloud Manager para entornos de pila Java, pero no para sitios de Edge Delivery Services.
+>Los registros de CDN, que incluyen entradas de registro de funciones de AEM Edge, se pueden descargar desde Cloud Manager para entornos de pila Java, pero no para sitios de Edge Delivery.
 >
