@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
+source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 9%
@@ -59,7 +59,7 @@ Cada vez que se edita un programa, incluida la adición o eliminación de una so
      >[!NOTE]
      >Para confirmar que la función está activa, revise los [registros de CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) una vez que el tráfico fluya al sitio. Busque entradas de registro que incluyan una propiedad `rules` que contenga un atributo `waf`. Por ejemplo,
      >
-     >`"rules": "waf=SQLI"`
+     >`"rules": "*waf=*"`
      >
      >Este atributo aparece una vez que WAF está activo, incluso antes de que se implementen las reglas de WAF.
 
