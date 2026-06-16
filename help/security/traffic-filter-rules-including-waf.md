@@ -4,7 +4,7 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
+source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
 workflow-type: tm+mt
 source-wordcount: '4278'
 ht-degree: 66%
@@ -115,7 +115,7 @@ El siguiente es un proceso de extremo a extremo recomendado de alto nivel para d
 
       Para confirmar que la función está *activa* después de habilitarla, revise los [registros de CDN](#cdn-logs) una vez que el tráfico fluya al sitio. Busque entradas de registro que incluyan una propiedad `rules` que contenga un atributo `waf`. Por ejemplo:
 
-      `"rules": "waf=SQLI" `
+      `"rules": "*waf=*" `
 
       Este atributo aparece una vez que WAF está activo, incluso antes de que se implementen las reglas de WAF.
 
