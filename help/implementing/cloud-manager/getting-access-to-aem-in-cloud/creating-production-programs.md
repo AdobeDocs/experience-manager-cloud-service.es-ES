@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c5949b2d49cb8d405da7a34cb7e69da62ec28247
+source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1801'
 ht-degree: 6%
 
 ---
@@ -121,7 +121,7 @@ Compatible con HIPAA de Adobe y WAF-DDOS (cortafuegos de aplicaciones web - dene
 
      >[!NOTE]
      >
-     >Seleccionar **Protección WAF-DDOS** activa la función, pero las reglas de WAF con licencia proporcionan protección solo después de activar la casilla de verificación. Consulte [Reglas de filtro de tráfico, incluidas las reglas de WAF](/help/security/traffic-filter-rules-including-waf.md), para obtener más información sobre cómo administrar las reglas de filtro de tráfico en el repositorio para que se implementen correctamente.
+     >La comprobación de la protección de **WAF-DDOS** activa la función, pero más allá de la protección automática contra vulnerabilidades y exposiciones comunes (CVE), debe implementar las reglas de WAF a través de Cloud Manager para obtener una protección total. Consulte [Reglas de filtro de tráfico, incluidas las reglas de WAF](/help/security/traffic-filter-rules-including-waf.md), para obtener más información sobre cómo administrar las reglas de filtro de tráfico en el repositorio para que se implementen correctamente.
      >
      >Para confirmar que la función está activa, revise los [registros de CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) una vez que el tráfico fluya al sitio. Busque entradas de registro que incluyan una propiedad `rules` que contenga un atributo `waf`. Por ejemplo,
      >

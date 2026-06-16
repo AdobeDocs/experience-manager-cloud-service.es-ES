@@ -4,10 +4,10 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 2976da7d7032a40912d9822816788fcdc95d828d
+source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
 workflow-type: tm+mt
-source-wordcount: '4268'
-ht-degree: 68%
+source-wordcount: '4278'
+ht-degree: 66%
 
 ---
 
@@ -105,7 +105,9 @@ El siguiente es un proceso de extremo a extremo recomendado de alto nivel para d
    Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades que aparecen por encima del nodo `data`. El valor de la propiedad `kind` debe establecerse en *CDN* y la versión en `1`.
 
 
-1. Si las reglas de WAF tienen licencia, *debe* habilitar la característica en Cloud Manager. Las reglas de WAF con licencia no están activas y no proporcionan protección hasta que se compruebe **Protección WAF-DDOS**. Habilite la función tanto para los escenarios de programa nuevos como para los existentes, tal como se describe a continuación:
+1. Si las reglas de WAF tienen licencia, *debe* habilitar la característica en Cloud Manager. Las reglas de WAF de licencias no las activan. La función permanece inactiva hasta que **Protección WAF-DDOS** esté marcada en la pestaña Seguridad de Cloud Manager.
+
+   Habilite la función tanto para los escenarios de programa nuevos como para los existentes, tal como se describe a continuación:
 
    1. Para configurar WAF en un nuevo programa, marque la casilla **Protección WAF-DDOS** en la pestaña **Seguridad** cuando [cree un programa de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
@@ -167,9 +169,9 @@ Las acciones se priorizan según sus tipos en la siguiente tabla, que se ordena 
 
 | **Nombre** | **Propiedades permitidas** | **Significado** |
 |---|---|---|
-| **permitir** | `wafFlags` (opcional), `alert` (opcional) | si wafFlags no está presente, detiene el procesamiento posterior de la regla y procede a proporcionar la respuesta. Si wafFlags está presente, deshabilita las protecciones WAF especificadas y continúa con el procesamiento de la regla. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez que se activa una alerta para una regla en particular, no se activará de nuevo hasta el día siguiente (UTC). |
-| **block** | `status, wafFlags` (opcional y mutuamente excluyente), `alert` (opcional) | si wafFlags no está presente, devuelve un error HTTP omitiendo todas las demás propiedades, el código de error se define mediante la propiedad estado o el valor predeterminado es 406. Si wafFlags está presente, permite protecciones WAF especificadas y continúa con el procesamiento de la regla. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez que se activa una alerta para una regla en particular, no se activará de nuevo hasta el día siguiente (UTC). |
-| **registro** | `wafFlags` (opcional), `alert` (opcional) | registra el hecho de que la regla se activó; de lo contrario, no afecta al procesamiento. wafFlags no tiene ningún efecto. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez que se activa una alerta para una regla en particular, no se activará de nuevo hasta el día siguiente (UTC). |
+| **permitir** | `wafFlags` (opcional), `alert` (opcional) | si wafFlags no está presente, detiene el procesamiento posterior de la regla y procede a proporcionar la respuesta. Si wafFlags está presente, deshabilita las protecciones WAF especificadas y continúa con el procesamiento de la regla. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez activada una alerta para una regla en particular, no se activa de nuevo hasta el día siguiente (UTC). |
+| **block** | `status, wafFlags` (opcional y mutuamente excluyente), `alert` (opcional) | si wafFlags no está presente, devuelve un error HTTP omitiendo todas las demás propiedades, el código de error se define mediante la propiedad estado o el valor predeterminado es 406. Si wafFlags está presente, permite protecciones WAF especificadas y continúa con el procesamiento de la regla. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez activada una alerta para una regla en particular, no se activa de nuevo hasta el día siguiente (UTC). |
+| **registro** | `wafFlags` (opcional), `alert` (opcional) | registra el hecho de que la regla se activó; de lo contrario, no afecta al procesamiento. wafFlags no tiene ningún efecto. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez activada una alerta para una regla en particular, no se activa de nuevo hasta el día siguiente (UTC). |
 
 ### Lista de marcas de WAF {#waf-flags-list}
 
@@ -189,7 +191,7 @@ La propiedad `wafFlags`, utilizada en las reglas de filtro de tráfico de WAF co
 | TRAVERSAL | Traversal de directorios | Traversal de directorios es el intento de navegar por carpetas privilegiadas a través de un sistema con la esperanza de obtener información confidencial. |
 | USERAGENT | Herramienta de ataque | La herramienta de ataque es el uso de software automatizado para identificar vulnerabilidades de seguridad o para intentar explotar una vulnerabilidad descubierta. |
 | LOG4J-JNDI | Log4J JNDI | Los ataques Log4J JNDI intentan explotar la [vulnerabilidad de Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) presente en las versiones de Log4J anteriores a la versión 2.16.0 |
-| CVE | CVE | Indicador que identifica una CVE. Siempre se combina con un indicador `CVE-<CVE Number>`. Póngase en contacto con Adobe para obtener más información sobre las CVE de las que Adobe le protegerá. |
+| CVE | CVE | Indicador que identifica el CVE (Vulnerabilidades y exposiciones comunes). Siempre se combina con un indicador `CVE-<CVE Number>`. Póngase en contacto con Adobe para obtener más información sobre los CVE de los que Adobe le protege. |
 
 #### Tráfico sospechoso
 
@@ -370,7 +372,7 @@ Los límites de velocidad se evalúan en función del tráfico que llega al bord
 | ventana | integer enum: 1, 10 o 60 | 10 | Ventana de muestreo en segundos para la que se calcula el volumen de solicitud. La precisión de los contadores dependerá del tamaño de la ventana (ventana más grande, mayor precisión). Por ejemplo, se puede esperar una precisión del 50 % para la ventana de 1 segundo y del 90 % para la de 60 segundos. |
 | penalty | entero de 60 a 3600 | 300 (5 minutos) | Período en segundos durante el cual se bloquean las solicitudes de coincidencia (redondeado al minuto más próximo). |
 | recuento | todo, recuperaciones, errores | todo | evaluar en función del tráfico del borde (todo), el tráfico de origen (recuperaciones) o el número de errores (errores). |
-| groupBy | array[Getter] | ninguno | El contador de limitador de volumen se añadirá mediante un conjunto de propiedades de solicitud (por ejemplo, clientIp). |
+| groupBy | array[Getter] | ninguno | El contador del limitador de velocidad se agrega mediante un conjunto de propiedades de solicitud (por ejemplo, clientIp). |
 
 ### Ejemplos {#ratelimiting-examples}
 
