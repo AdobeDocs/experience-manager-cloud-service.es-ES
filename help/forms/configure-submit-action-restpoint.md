@@ -6,7 +6,7 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 4a080bfb281ba9b61bf9b8ebd090f7e98ddaf2d0
+source-git-commit: ee79ef0d9b1101a245ea918c8ce46d502e98fdb3
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 88%
@@ -201,8 +201,6 @@ Para enviar datos a un servidor externo, proporcione una URL. El formato de la d
     ![Configuring Rest Endpoint](assets/rest-service-endpoint-config.png)
 8. Click Done.
 -->
-
-
 
 ## Prácticas recomendadas
 
