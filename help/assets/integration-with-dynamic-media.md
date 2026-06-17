@@ -3,7 +3,7 @@ title: Integración del Asesor de contenido con Dynamic Media
 description: Obtenga información sobre cómo integrar el Asesor de contenido con Dynamic Media para permitir a los usuarios examinar, previsualizar y seleccionar representaciones de Dynamic Media para utilizarlas en sus aplicaciones y flujos de trabajo.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
-source-git-commit: c54f9da5aea9111a8f162688676d5c3c7e7518bc
+source-git-commit: 95209a154a0d3208c5fcda8d4117f80d1015d2fe
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 1%
@@ -338,5 +338,4 @@ rotate=90&width=1200
 ```
 
 La cadena generada se anexa a la dirección URL final de Dynamic Media y aplica las transformaciones seleccionadas cuando se envía el recurso.
-
 
