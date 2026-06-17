@@ -4,15 +4,15 @@ description: Aprenda a crear  [!DNL Dynamic Media] plantillas con un editor de p
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: a9ce385329244aa4f79f3119506acf72ca6f4d6c
 workflow-type: tm+mt
-source-wordcount: '3549'
-ht-degree: 37%
+source-wordcount: '3558'
+ht-degree: 36%
 
 ---
 
 
-# [!DNL Dynamic Media] plantillas{#dynamic-media-templates}
+# Administrar [!DNL Dynamic Media] plantillas{#dynamic-media-templates}
 
 Cree plantillas personalizables en tiempo real para sus banners y folletos usando [!DNL Dynamic Media] templates, un editor de plantillas de WYSIWYG. Publique la plantilla [!DNL Dynamic Media] y utilícela en aplicaciones de flujo descendente. Una plantilla [!DNL Dynamic Media] incluye capas de imagen y texto. Agregue parámetros a las capas de imagen y texto de la plantilla y utilice [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) para cambiar la posición y el tamaño de la capa y actualizar su contenido en tiempo real.
 
@@ -290,7 +290,7 @@ Siga estos pasos para asignar el mismo nombre a los parámetros [!UICONTROL Hide
 1. Haga clic en **[!UICONTROL Guardar]** para agrupar las capas.
 1. Ejecute los pasos 3 y 4 en la sección [**[!UICONTROL Previsualizar y publicar]**](#preview-and-publish-template-and-copy-template-deliver-url) para ver los cambios.
 
-## Vista previa y publicación de la plantilla para copiar la dirección URL de envío{#preview-and-publish-template-and-copy-template-deliver-url}
+## Previsualice y publique la plantilla de Dynamic Media para copiar la dirección URL de envío{#preview-and-publish-dynamic-media-template-and-copy-template-deliver-url}
 
 Siga estos pasos para previsualizar y publicar la plantilla y copiar la dirección URL de envío:
 
@@ -320,7 +320,7 @@ Ejecute los siguientes pasos para copiar la dirección URL de entrega de la plan
 1. Pegue esta dirección URL en la pestaña del explorador y vea la plantilla en directo. Personalice la plantilla en tiempo real actualizando el valor del parámetro requerido (valor de clave) en la dirección URL directamente, tal como se muestra en el [paso 2](#preview-and-publish-template-and-copy-template-deliver-url) de la sección **Previsualizar y publicar**.
 1. Utilice esta URL para la comercialización rápida de sus productos o servicios. Puede compartir esta URL con sus clientes o integrarla en su sitio web o en cualquier aplicación de terceros descendente para mostrar el banner y realizar actualizaciones en tiempo real para reflejar las ofertas en curso.
 
-## Efectuar actualizaciones en tiempo real en la plantilla desde la URL{#update-the-template-from-the-url}
+## Realice actualizaciones en tiempo real de la plantilla Dynamic Media desde la dirección URL{#update-the-template-from-the-url}
 
 Editar parámetros directamente en la dirección URL puede ser una tarea tediosa. Para simplificar:
 
@@ -333,7 +333,7 @@ Editar parámetros directamente en la dirección URL puede ser una tarea tediosa
 
 Pegue esta URL actualizada en el explorador para ver los cambios.
 
-## Edición de la plantilla{#edit-the-template}
+## Editar la plantilla de Dynamic Media{#edit-the-template}
 
 Edite la plantilla siguiendo estos pasos:
 
@@ -342,7 +342,7 @@ Edite la plantilla siguiendo estos pasos:
 3. Seleccione la plantilla.
 4. Haga clic en **[!UICONTROL Editar plantilla]**. El lienzo de la plantilla muestra la plantilla y la lista de todas sus capas en el panel Capas. Comience a editar la plantilla según sus necesidades.
 
-## Añadir el vínculo de Call to action (CTA) a la capa de plantilla{#add-CTA-in-dynamic-media-templates}
+## Añadir el vínculo de Call to action (CTA) a la capa de plantillas de Dynamic Media{#add-CTA-in-dynamic-media-templates}
 
 Convierta cualquier imagen, texto o capa de forma de la plantilla [!DNL Dynamic Media] en un hipervínculo agregándole un vínculo de CTA que dirija a los usuarios a una página de destino.
 
