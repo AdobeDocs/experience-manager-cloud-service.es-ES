@@ -4,7 +4,7 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 83664b7e66ce7942312f65f2378a4eab241281f2
+source-git-commit: 8e557ae876a591b03294ecf938f1017eee34dd5e
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 41%
@@ -67,3 +67,4 @@ AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su
 | Dispatcher | 2.0.274 |  |
 | Componentes principales de AEM | 2.31.0 | [Componentes principales de WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (valor predeterminado) | [Versiones de Node.js compatibles](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+
