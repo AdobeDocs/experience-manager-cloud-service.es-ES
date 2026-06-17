@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 4e896f6bbea276c061e086c80d5dabed30421970
+source-git-commit: 5fcbb483fc6a298b2dccfcf79467ecd39562cb66
 workflow-type: tm+mt
-source-wordcount: '4207'
+source-wordcount: '4206'
 ht-degree: 70%
 
 ---
@@ -197,103 +197,103 @@ Se ha anunciado que las API de la tabla siguiente (haga clic para ampliar y verl
     <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
     <td>Esta API es solo para uso interno.</td>
     <td>23/9/2024</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>El uso de esta API no se admite en AEM as a Cloud Service.</td>
     <td>31/10/2022</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
     <td>Esta API está obsoleta. En su lugar, utilice los generadores de Apache Sling.</td>
     <td>31/10/2022</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss</td>
     <td>En su lugar, utilice org.apache.sling.xss.</td>
     <td>12/12/2023</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
     <td>Esta API está obsoleta.</td>
     <td>07/10/2024</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.mailer.commons</td>
     <td>Esta API está en desuso, ya que depende de commons-lang (obsoleta desde 2021).</td>
     <td>11/30/2025</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.adobe.granite.httpcache.api</td>
     <td>Esta API ya no es compatible.</td>
     <td>01/01/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.webdav.client.methods</td>
     <td>El uso de esta API no se admite en AEM as a Cloud Service.</td>
     <td>2/13/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
     <td>En su lugar, utilice org.apache.sling.xss.</td>
     <td>12/12/2023</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
-    <td>org.apache.tika<br>org.apache.tika.concurrente<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.incruder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org ache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.parser tioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.code{23 6}org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctake<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.environment<br>org.apache.tika.parser.parser epub<br>org.apache.tika.parser.ejecutable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazetteer<br>org .apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatc<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache .tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>org.apache.apache tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.parser nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf{77 7}org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.Recognition<br>org.apache.tika.parser.Recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.opinión <br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax<br>org.apache.tika.sax 3&rbrace;org.apache.tika.parser.microsoft.ooxml.xps<br><br><br><br></td>
+    <td>org.apache.tika<br>org.apache.tika.concurrente<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.incruder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org ache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.parser tioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.code{23 6}org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctake<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.environment<br>org.apache.tika.parser.parser epub<br>org.apache.tika.parser.ejecutable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazetteer<br>org .apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatc<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache .tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>org.apache.apache tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.parser nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf{77 7}org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.Recognition<br>org.apache.tika.parser.Recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.opinión <br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax<br>org.apache.tika.sax 3}org.apache.tika.parser.microsoft.ooxml.xps<br><br><br><br></td>
     <td>Esta versión de Apache Tika está obsoleta y, por lo tanto, se eliminará de Cloud Service. Cambie a una versión más reciente de Apache Tika.</td>
     <td>4/30/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.apache.commons.fileupload<br>org.apache.commons.fileupload.disk<br>org.apache.commons.fileupload.portlet<br>org.apache.commons.fileupload.servlet<br>org.apache.commons.fileupload.util</td>
     <td>En su lugar, utilice la API oficial de servlet para administrar las cargas de archivos.</td>
     <td>2/6/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.adobe.cq.smartcontent</td>
     <td>Esta API está en desuso y se ha programado para su eliminación.</td>
     <td>6/30/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>opennlp.tools.chunker<br>opennlp.tools.dictionary<br>opennlp.tools.dictionary.serializer<br>opennlp.tools.ml<br>opennlp.tools.ml.maxent<br>opennlp.tools.ml.maxent.io<br>opennlp.tools.ml.maxent.quasinewton<br>opennlp.tools.ml.model<br>opennlp.tools.ml.perceptron<br>opennlp.tools.namefind<br>opennlp.tools.ngram<br>opennlp.tools.postag<br>opennlp.tools .tokenize<br>opennlp.tools.tokenize.lang<br>opennlp.tools.util<br>opennlp.tools.util.eval<br>opennlp.tools.util.ext<br>opennlp.tools.util.featuregen<br>opennlp.tools.util.model</td>
     <td>Esta versión de la biblioteca OpenNLP está en desuso. Use su propia versión de OpenNLP.</td>
     <td>6/30/2026</td>
-    <td>9/30/2026</td>
-  </tr>
-  <tr>
-<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 está en modo de mantenimiento. Debe utilizarse Commons Lang 3 en su lugar. <a href="#apache.commons">Consulte las notas de eliminación a continuación.</a></td>
-    <td>30/4/2021</td>
-    <td>31/3/2027 (Provisional)</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 está en modo de mantenimiento. Debe utilizarse Commons Collections 4 en su lugar. <a href="#apache.commons">Consulte las notas de eliminación a continuación.</a></td>
-    <td>30/4/2021</td>
-    <td>31/3/2027 (Provisional)</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td>La implementación de Apache Johnzon de <a href="https://johnzon.apache.org/index.html">javax.json</a> se recomienda y debe utilizarse. </td>
-    <td>4/30/2021</td>
-    <td>31/3/2027 (Provisional)</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.commons.predicate</td>
     <td>Esta API está obsoleta. Utilice com.day.cq.commons.predicates en su lugar.</td>
     <td>6/1/2024</td>
-    <td>31/3/2027 (Provisional)</td>
+    <td>3/31/2027</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 está en modo de mantenimiento. Debe utilizarse Commons Lang 3 en su lugar. <a href="#apache.commons">Consulte las notas de eliminación a continuación.</a></td>
+    <td>30/4/2021</td>
+    <td>31/12/2027 (Provisional)</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 está en modo de mantenimiento. Debe utilizarse Commons Collections 4 en su lugar. <a href="#apache.commons">Consulte las notas de eliminación a continuación.</a></td>
+    <td>30/4/2021</td>
+    <td>31/12/2027 (Provisional)</td>
+  </tr>
+  <tr>
+    <td>org.json</td>
+    <td>La implementación de Apache Johnzon de <a href="https://johnzon.apache.org/index.html">javax.json</a> se recomienda y debe utilizarse. </td>
+    <td>4/30/2021</td>
+    <td>31/12/2027 (Provisional)</td>
   </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
@@ -403,7 +403,7 @@ Esta sección enumera las API que ya no se utilizan y se han eliminado. Algunas 
 
 Esta sección presenta la guía de eliminación de API para las diversas API incluidas en las tablas anteriores.
 
-Para identificar qué API de Java en desuso usa su código, integre el [complemento Maven de AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) en su proyecto Maven y ejecútelo localmente. El informe enumera todos los usos de API obsoletos detectados e indica qué paquete OSGi hace referencia a cada API. Haga referencia a [este tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) para aprender a utilizar el complemento de Maven.
+Para identificar qué API de Java en desuso usa su código, integre el [complemento Maven de AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) en su proyecto Maven y ejecútelo localmente. El informe enumera todos los usos de API obsoletos detectados e indica qué paquete OSGi hace referencia a cada API. Haga referencia a [este tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) para aprender a utilizar el complemento de Maven.
 
 Aunque debe corregir todas las API obsoletas con el tiempo, dé prioridad a cualquier API enumerada en la tabla de API obsoletas con una fecha de eliminación objetivo del 26 de febrero de 2026 (o anterior). En el informe de AEM Analyzer, estas API pueden aparecer con una fecha de eliminación efectiva del 31/8/2025.
 
