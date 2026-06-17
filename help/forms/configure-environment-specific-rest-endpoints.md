@@ -107,7 +107,7 @@ Utilice esto cuando desee una configuración empaquetada cuyo punto de conexión
 
 Para las configuraciones de REST, normalmente se crean variables de entorno para las propiedades `serviceEndPoint`, `userName` y `password`, y después se hace referencia a ellas desde un archivo de configuración `OsgiConfigurationOverrideProvider` del proyecto.
 
-Para ver el procedimiento completo, consulte [Configuraciones de nube según el contexto](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm).
+Para ver el procedimiento completo, consulte [Configuraciones de nube según el contexto](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm).
 
 ## Actualizar la dirección URL del extremo en producción {#configure-endpoint-on-production}
 
@@ -148,6 +148,6 @@ Envíe el mismo formulario desde ensayo y producción y confirme que cada entorn
 
 * [Configurar un formulario adaptable para la acción de envío del punto final REST](/help/forms/configure-submit-action-restpoint.md)
 * [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
-* [Configuraciones de nube según el contexto](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
+* [Configuraciones de nube según el contexto](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
 * [Acción de envío de un formulario adaptable](/help/forms/aem-forms-submit-action.md)
 
