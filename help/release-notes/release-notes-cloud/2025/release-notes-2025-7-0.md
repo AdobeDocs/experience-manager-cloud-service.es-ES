@@ -4,9 +4,9 @@ description: Notas de la versión 2025.7.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 4184506d5b0e3413c410aec704127694c9e11196
 workflow-type: tm+mt
-source-wordcount: '2273'
+source-wordcount: '2376'
 ht-degree: 96%
 
 ---
@@ -55,7 +55,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 **Añadir formas a plantillas de Dynamic Media**
 
-Ahora puede [añadir capas de formas a las plantillas de Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas) en Experience Manager Assets. De forma similar a las capas de imagen y texto, las capas de forma admiten parámetros para actualizaciones en tiempo real a través de la dirección URL de la plantilla. También puede incluir vínculos de llamada a acción (call-to-action, CTA) a las formas de sus plantillas.
+Ahora puede [añadir capas de formas a las plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md#add-shapes-to-the-canvas) en Experience Manager Assets. De forma similar a las capas de imagen y texto, las capas de forma admiten parámetros para actualizaciones en tiempo real a través de la dirección URL de la plantilla. También puede incluir vínculos de llamada a acción (call-to-action, CTA) a las formas de sus plantillas.
 
 ![Añadir formas a plantillas de Dynamic Media](/help/assets/assets/enable-uniform-radius-shape.png)
 
@@ -226,7 +226,7 @@ Propiedades de OSGi:
 
 ### Desuso de tiempo de ejecución de Java 11 {#java11-runtime-deprecation}
 
-El **tiempo de ejecución de Java 11* ya está en desuso, y la mayoría de los entornos ya se han actualizado al &#x200B;** tiempo de ejecución de Java 21** de mayor rendimiento.
+El **&#x200B; tiempo de ejecución de Java 11* ya está en desuso, y la mayoría de los entornos ya se han actualizado al &#x200B;** tiempo de ejecución de Java 21** de mayor rendimiento.
 
 Si su entorno no se ha podido actualizar debido a dependencias no admitidas (consulte [Requisitos de tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), debería haber recibido un correo electrónico de Adobe con los siguientes pasos específicos. Asegúrese de que todas las actualizaciones requeridas se hayan completado el **28 de agosto de 2025** para que su entorno se pueda actualizar sin interrupciones.
 
@@ -294,7 +294,7 @@ Tenemos un número limitado de oportunidades disponibles para el envío de publi
 
 ### Configuración de CDN para Edge Delivery Services (programa Beta) {#cdn-eds-beta}
 
-La CDN administrada por Adobe ofrece opciones de configuración flexibles, tal como se describe en el [artículo de canalizaciones de configuración](/help/operations/config-pipeline.md#configurations). 
+La CDN administrada por Adobe ofrece opciones de configuración flexibles, tal como se describe en el [artículo de canalizaciones de configuración](/help/operations/config-pipeline.md#configurations).
 
 Ahora en versión Beta, implemente una canalización de configuración para funciones que incluyan selectores de origen de CDN, transformaciones de respuesta y solicitud, reenvío de registros de CDN, etc. Póngase en contacto con [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) con los detalles de su caso de uso.
 

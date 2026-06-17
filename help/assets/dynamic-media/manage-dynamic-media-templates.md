@@ -4,7 +4,7 @@ description: Aprenda a crear  [!DNL Dynamic Media] plantillas con un editor de p
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: a9ce385329244aa4f79f3119506acf72ca6f4d6c
+source-git-commit: 99bef94bd8a51953424d7a3b0f4908180708fc05
 workflow-type: tm+mt
 source-wordcount: '3558'
 ht-degree: 36%
