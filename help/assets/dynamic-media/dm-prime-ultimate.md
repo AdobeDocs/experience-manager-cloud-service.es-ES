@@ -4,10 +4,10 @@ description: Obtenga más información acerca de Dynamic Media Prime y Ultimate,
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 4184506d5b0e3413c410aec704127694c9e11196
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 18%
+source-wordcount: '472'
+ht-degree: 16%
 
 ---
 
@@ -54,9 +54,9 @@ Además de las funciones de Dynamic Media Prime, como la integración de AEM Ass
 
 * [Solución de Dynamic Media en AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), que también incluye las siguientes funcionalidades clave:
 
-   * [Plantillas de Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [Conceptos básicos de plantilla](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [Configuración visual](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [Plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+   * [Conceptos básicos de plantilla](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [Configuración visual](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Requisitos previos {#pre-requisites-dm-ultimate}
 
