@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo ejecutar JavaScript en la capa de 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 21f4115d09e6dc804a69ecc012a2c654794f39ad
+source-git-commit: db458670dfc8e216d9f7f54e6017e75439101645
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1902'
 ht-degree: 2%
 
 ---
@@ -240,7 +240,18 @@ Para obtener instrucciones técnicas detalladas sobre la configuración del comp
 
 ## Limitaciones {#limitations}
 
-Cada invocación de función de Edge se ejecuta dentro de una zona protegida con límites de recursos impuestos por la plataforma de cálculo subyacente.
+- Cada invocación de función de Edge se ejecuta dentro de una zona protegida con límites de recursos impuestos por la plataforma de cálculo subyacente.
+
+- El tamaño máximo del artefacto de ensamblado web (wasm) creado es de 100 MB
+
+- El consumo máximo de memoria es de 1 MB de pila, 128 MB de pila
+
+- Información importante sobre la ejecución de funciones de Edge:
+   - Una ejecución termina después de 120 segundos de tiempo de pared
+   - Las ejecuciones finalizarán a los 1 s de cálculo (no en tiempo de pared)
+   - El tiempo medio de ejecución de la función Edge debe ser inferior a 100 ms.
+
+- Vea las limitaciones relacionadas con [Variables de configuración de funciones de Edge](#function-configuration), [Variables de secreto de funciones de Edge](#function-secrets) y [KVStore de funciones de Edge](#function-kv-store).
 
 ### Máximo de llamadas de recuperación salientes por invocación {#max-fetch-calls}
 
@@ -305,6 +316,10 @@ const logLevel = config.get('LOG_LEVEL') || 'info';
 >- El nombre del almacén de configuración siempre es `config_default`.
 >- Los nombres de clave distinguen entre mayúsculas y minúsculas.
 >- El almacén de configuración se comparte entre todas las funciones de Edge en el mismo entorno.
+>- El almacén de configuración se replica en la red global de CDN administrada por Adobe
+>- máximo de 500 entradas
+>- tamaños máximos de nombre/valor: 255 y 8000 caracteres
+
 
 ### Variables secretas de funciones Edge {#function-secrets}
 
@@ -319,7 +334,7 @@ data:
     - name: my-edge-function
   secrets:
     - key: API_TOKEN
-      value: ${{ API_TOKEN_SECRET }}
+      value: ${{API_TOKEN_SECRET}}
 ```
 
 Recupere secretos en su código de función utilizando el asistente `SecretStoreManager` de la plantilla:
@@ -336,6 +351,8 @@ const apiToken = await SecretStoreManager.getSecret('API_TOKEN');
 >- Los nombres de clave distinguen entre mayúsculas y minúsculas.
 >- Los secretos son inmutables una vez creados.
 >- El almacén secreto se comparte en todas las funciones Edge del mismo entorno.
+>- El almacén secreto se replica en la red global de CDN administrada por Adobe
+>- El tamaño máximo de todos los secretos es de 64 kb
 
 ### KVStore de funciones Edge {#function-kv-store}
 
@@ -371,6 +388,13 @@ await kv.put('visit-count', String(count + 1));
 >- El nombre del KVStore siempre es `kv_default`.
 >- El KVStore está vacío en el momento del aprovisionamiento; rellénelo durante la ejecución mediante la [API de KVStore](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore) de Fastly. No se admiten las entradas de clave/valor declarativo en `edgeFunctions.yaml`.
 >- El KVStore se comparte en todas las funciones de Edge en el mismo entorno.
+>- El KVStore se replica en toda la red global de CDN administrada por Adobe
+>- Las KVStore proporcionan una posible coherencia, lo que significa que leer una clave inmediatamente después de escribirla puede no devolver el valor actualizado.
+>- Los nombres de clave KV son archivos UTF-8 máximos de 1024 bytes
+>- El tamaño de la entrada de KV es máximo 25M
+>- Los artículos de KVStore tienen un límite de tarifa de 1 escritura por segundo por artículo.
+>- Las solicitudes por lotes de artículos de KVStore tienen un límite de 100 000 artículos por solicitud.
+
 
 ### Registro {#logging}
 
