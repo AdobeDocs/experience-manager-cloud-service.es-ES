@@ -538,6 +538,6 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 >[!MORELIKETHIS]
 >
->* [Tutorial de vídeo sobre el uso de recursos de Adobe Stock con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [Ayuda del plan empresarial de Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [Preguntas frecuentes sobre Adobe Stock](https://helpx.adobe.com/stock/faq.html)
+>* [Tutorial de vídeo sobre el uso de recursos de Adobe Stock con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=es)
+>* [Ayuda del plan empresarial de Adobe Stock](https://helpx.adobe.com/es/enterprise/using/adobe-stock-enterprise.html)
+>* [Preguntas frecuentes sobre Adobe Stock](https://helpx.adobe.com/es/stock/faq.html)
