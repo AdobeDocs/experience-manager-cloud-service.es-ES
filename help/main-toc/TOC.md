@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5c83ebe973e5d9bd5a25ebcd82c53b35943d7413
+source-git-commit: a773352161bf99b8058a3b20177803c662f96d30
 workflow-type: tm+mt
-source-wordcount: '7506'
+source-wordcount: '7499'
 ht-degree: 84%
 
 ---
@@ -656,7 +656,6 @@ ht-degree: 84%
       + [Documentación para desarrolladores y referencias de API](/help/assets/developer-reference-material-apis.md)
       + [Carpeta de esquema de metadatos](/help/assets/folder-metadata-schema.md)
       + [Trabajo con perfiles de vídeo e imagen](/help/assets/dynamic-media/about-image-video-profiles.md)
-      + [Configuración de la transcripción para recursos de audio y vídeo](/help/assets/configure-transcription.md)
       + [Traducir recursos](/help/assets/translate-assets.md)
       + [Facetas de búsqueda](/help/assets/search-facets.md)
       + [API de HTTP de Assets](/help/assets/mac-api-assets.md)
