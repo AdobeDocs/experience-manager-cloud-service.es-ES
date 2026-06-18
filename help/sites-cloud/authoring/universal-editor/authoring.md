@@ -6,7 +6,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
+source-git-commit: 803ea9a7f1581589c6ac7402b268875923f00584
 workflow-type: tm+mt
 source-wordcount: '3149'
 ht-degree: 13%
@@ -393,8 +393,8 @@ Pulse o haga clic en el icono **Propiedades de página** de la barra de herramie
 
 >[!NOTE]
 >
->* La extensión de propiedades de página de **AEM** solo funciona para páginas, no para fragmentos de contenido.
->* El botón solo se muestra cuando la página remota tiene una [conexión con el protocolo &#x200B;](/help/implementing/universal-editor/component-definition.md#plugins) `aem` o `xwalk` y se puede resolver una ruta de acceso de página única desde el archivo editable actual.
+>* El botón **Propiedades de página de AEM** solo funciona para páginas, no para Fragmentos de contenido.
+>* El botón solo se muestra cuando la página remota tiene una [conexión con el protocolo ](/help/implementing/universal-editor/component-definition.md#plugins) `aem` o `xwalk` y se puede resolver una ruta de acceso de página única desde el archivo editable actual.
 
 ### Acceder a la consola Sites {#sites-console}
 
