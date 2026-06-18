@@ -5,7 +5,7 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 8e71e63b09cc7346043379bddfb855231bbebb93
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 7%
@@ -112,7 +112,7 @@ Ejecute los siguientes pasos:
 
 Vea [Activar [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) para empezar a usar las capacidades de [!DNL Dynamic Media] con las capacidades de OpenAPI en su entorno.
 
-### Acceso a las API de Dynamic Media {#access-dynamic-media-apis}
+### Acceso a las API de Dynamic Media
 
 Después de [habilitar Dynamic Media con OpenAPI](#activate-dynamic-media-with-openapi), se crea una instancia de `delivery`. Haga clic en la instancia de envío para ver el perfil de producto `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy`. El perfil de producto ya tiene **AEM Dynamic Media habilitado para los servicios de API** habilitados de manera predeterminada.
 
@@ -243,7 +243,7 @@ Use the [Adobe Developer Console](https://developer.adobe.com/developer-console/
 1. [Access Dynamic Media APIs](#access-dynamic-media-apis)
 1. [Access Delivery tier backed Asset Selector](#access-delivery-tier-backed-asset-selector)
 
-#### Create an API key to access [!DNL Dynamic Media] with OpenAPIs {#access-dynamic-media-apis}
+#### Create an API key to access [!DNL Dynamic Media] with OpenAPIs
 
 Execute the following steps to create an API key to access [!DNL Dynamic Media] with OpenAPIs:
 

@@ -6,9 +6,9 @@ feature: Adobe Stock
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '2214'
+source-wordcount: '2295'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 El servicio [!DNL Adobe Stock] proporciona a diseñadores y empresas acceso a millones de fotos, vectores, ilustraciones, vídeos, plantillas y recursos 3D de alta calidad, depurados y libres de derechos para todos sus proyectos creativos.
@@ -46,7 +46,7 @@ Un plan de [!DNL Adobe Stock] de empresa,
 Dentro del derecho, existe un perfil de producto predeterminado para [!DNL Adobe Stock] en [!DNL Admin Console]. Se pueden crear varios perfiles, que determinan quién puede obtener la licencia de los recursos de Stock. Un usuario que tenga acceso directo al perfil del producto puede acceder a [https://stock.adobe.com/](https://stock.adobe.com/) y obtener la licencia de los recursos de Stock. Mientras que hay otro método para utilizar el acceso de desarrollador para crear una integración (API). Esta integración autentica la comunicación entre [!DNL Experience Manager Assets] y [!DNL Adobe Stock].
 
 <!--
-### Create an IMS configuration {#create-an-ims-configuration}
+### Create an IMS configuration
 
 1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Click **[!UICONTROL Create]** and select **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
 1. Either reuse an existing certificate or select **[!UICONTROL Create new certificate]**.
@@ -97,7 +97,7 @@ Como desarrollador, ejecute los siguientes pasos para integrar [!DNL Adobe Exper
    In [!DNL Experience Manager], configure an [!DNL Adobe Stock] cloud service using the IMS account.
 
 
-### Create an IMS configuration {#create-an-ims-configuration}
+### Create an IMS configuration
 
 The IMS configuration authenticates your [!DNL Experience Manager Assets] author instance with the [!DNL Adobe Stock] entitlement. 
 
@@ -384,7 +384,7 @@ En la tabla siguiente se explica cómo funcionan los permisos de usuario al obte
 | test-doc1 | Usuario DAM | /conf/global/settings/stock/cloud-config | No | Error: Error al cargar los datos | No |
 | test-doc1 | Usuario DAM | **permitir**: /conf/global/settings/stock **denegar**: /cloud-config | La configuración de Stock no es visible | Sí | No |
 
-## Usar y administrar [!DNL Adobe Stock] recursos en [!DNL Experience Manager] {#usemanage}
+## Usar y administrar [!DNL Adobe Stock] recursos en [!DNL Experience Manager]
 
 Con esta capacidad, las organizaciones pueden permitir que sus usuarios trabajen con [!DNL Adobe Stock] recursos en [!DNL Experience Manager Assets]. Desde la interfaz de usuario de [!DNL Experience Manager], los usuarios pueden buscar [!DNL Adobe Stock] recursos y obtener la licencia de los recursos necesarios.
 
@@ -394,7 +394,7 @@ Una vez que un recurso de [!DNL Adobe Stock] tiene licencia en [!DNL Experience 
 
 **A.** Busque recursos similares a los recursos cuyo identificador [!DNL Adobe Stock] se ha proporcionado. **B.** Busque recursos que coincidan con la selección de forma u orientación. **C.** Busque uno de los tipos de recurso **D.** más admitidos. Abra o contraiga la licencia del panel de filtros **E.** y guarde el recurso seleccionado en [!DNL Experience Manager] **F.** Guarde el recurso en [!DNL Experience Manager] con la marca de agua **G.** Explore los recursos del sitio web [!DNL Adobe Stock] que sean similares al recurso seleccionado **H.** Vea los recursos seleccionados en el sitio web [!DNL Adobe Stock]I.**Número de recursos seleccionados de los resultados de la búsqueda** J.**Cambiar entre la vista de tarjeta y la vista de lista**
 
-### Buscar recursos {#find-assets}
+### Buscar recursos
 
 Los usuarios de [!DNL Experience Manager] pueden buscar recursos en [!DNL Experience Manager] y [!DNL Adobe Stock]. Cuando la ubicación de búsqueda no está limitada a [!DNL Adobe Stock], se muestran los resultados de búsqueda de [!DNL Experience Manager] y [!DNL Adobe Stock].
 
@@ -410,7 +410,7 @@ También puede empezar a escribir `Location: Adobe Stock` en la barra de búsque
 
 ![Filtros de búsqueda en [!DNL Experience Manager] y [!DNL Adobe Stock] recursos resaltados en los resultados de búsqueda](assets/aem-search-filters2.jpg)
 
-### Guarde y vea los recursos necesarios {#saveassets}
+### Guarde y vea los recursos necesarios
 
 Seleccione un recurso que desee guardar en [!DNL Experience Manager]. Haga clic en [!UICONTROL Guardar] en la barra de herramientas de la parte superior y proporcione el nombre y la ubicación del recurso. Los recursos sin licencia se guardan localmente con una marca de agua.
 
@@ -420,14 +420,14 @@ La próxima vez que busque recursos, los recursos guardados se resaltarán con u
 >
 >Los recursos añadidos recientemente muestran un distintivo Nuevo en lugar de Distintivo con licencia.
 
-### Recursos de licencia {#licenseassets}
+### Recursos de licencia
 
 Los usuarios pueden conceder licencias a [!DNL Adobe Stock] recursos mediante la cuota de su plan de empresa [!DNL Adobe Stock]. Al obtener la licencia de un recurso, este se guarda sin marca de agua y está disponible para buscarlo y utilizarlo en [!DNL Experience Manager Assets].
 
 ![Diálogo para autorizar y guardar [!DNL Adobe Stock] recursos en [!DNL Experience Manager Assets]](assets/aem-stock_licenseandsave.jpg)
 
 
-### Acceso a metadatos y propiedades de recursos {#access-metadata-and-asset-properties}
+### Acceso a metadatos y propiedades de recursos
 
 Los usuarios pueden obtener acceso a los metadatos y obtener una vista previa de ellos, incluidas las propiedades de metadatos de [!DNL Adobe Stock] para los recursos guardados en [!DNL Experience Manager], y agregar **[!UICONTROL referencias de licencia]** para un recurso. Sin embargo, las actualizaciones de la referencia de licencia no se sincronizan entre [!DNL Experience Manager] y el sitio web [!DNL Adobe Stock].
 
@@ -436,7 +436,7 @@ Los usuarios pueden ver las propiedades de los recursos con y sin licencia.
 ![Ver y acceder a metadatos y referencias de licencia de recursos guardados](assets/metadata_properties.jpg)
 
 
-## Limitaciones conocidas {#known-limitations}
+## Limitaciones conocidas
 
 * **La funcionalidad para restringir las licencias de los usuarios no funciona correctamente**: Todos los usuarios que tengan `read` permisos para la configuración de existencias pueden buscar y obtener licencias de los recursos [!DNL Adobe Stock].
 
@@ -449,7 +449,7 @@ Los usuarios pueden ver las propiedades de los recursos con y sin licencia.
 * **Los campos de referencia y los metadatos no están sincronizados**: Cuando un usuario actualiza un campo de referencia de licencia, la información de referencia de licencia se actualiza en [!DNL Experience Manager] pero no en el sitio web [!DNL Adobe Stock]. Del mismo modo, si el usuario actualiza los campos de referencia del sitio web [!DNL Adobe Stock], las actualizaciones no se sincronizan en [!DNL Experience Manager].
 
 <!--
-## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager] {#usemanage}
+## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager]
 
 Using this capability, organizations users can work using [!DNL Adobe Stock] assets in [!DNL Experience Manager Assets]. From within the [!DNL Experience Manager] user interface, users can search [!DNL Adobe Stock] assets and license the required assets.
 
@@ -465,7 +465,7 @@ Once an [!DNL Adobe Stock] asset is licensed in [!DNL Experience Manager], it ca
 -->
 
 <!--
-### Find assets {#find-assets}
+### Find assets
 
 Your [!DNL Experience Manager] users, can search for assets in both, [!DNL Experience Manager] and [!DNL Adobe Stock]. When the search location is not limited to [!DNL Adobe Stock], the search results from [!DNL Experience Manager] and [!DNL Adobe Stock] are displayed.
 
@@ -483,7 +483,7 @@ Alternatively, start typing `Location: Adobe Stock` in the search bar to select 
 
 *Figure: Search filters in [!DNL Experience Manager] and highlighted [!DNL Adobe Stock] assets in search results.*
 
-### Save and view the required assets {#saveassets}
+### Save and view the required assets
 
 Select an asset that you want to save in [!DNL Experience Manager]. Click [!UICONTROL Save] in the toolbar at the top and provide the name and location of the asset. The unlicensed assets are saved locally with a watermark.
 
@@ -493,7 +493,7 @@ Next time when you search for assets, the saved assets are highlighted with a ba
 >
 >The recently added assets display a New badge instead of Licensed badge.
 
-### License assets {#licenseassets}
+### License assets
 
 Users can license [!DNL Adobe Stock] assets by using the quota of their [!DNL Adobe Stock] enterprise plan. When you license an asset, it is saved without a watermark and is available for searching and using in [!DNL Experience Manager Assets].
 
@@ -501,7 +501,7 @@ Users can license [!DNL Adobe Stock] assets by using the quota of their [!DNL Ad
 
 *Figure: Dialog to license and save [!DNL Adobe Stock] assets in [!DNL Experience Manager Assets].*
 
-### Access metadata and asset properties {#access-metadata-and-asset-properties}
+### Access metadata and asset properties
 
 Users can access and preview the metadata, including the [!DNL Adobe Stock] metadata properties for the assets saved in [!DNL Experience Manager], and add **[!UICONTROL License References]** for an asset. However, the updates to license reference are not synced between [!DNL Experience Manager] and [!DNL Adobe Stock] website.
 
@@ -511,7 +511,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 *Figure: View and access metadata and license references of saved assets.*
 
-## Known limitations {#known-limitations}
+## Known limitations
 
 * **Editorial image warning is not displayed**: When licensing an image, users cannot check if an image is Editorial Use Only. To prevent possible misuse, the administrators can turn off the access to editorial assets from the Admin Console.
 

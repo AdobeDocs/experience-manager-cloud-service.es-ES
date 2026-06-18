@@ -7,10 +7,10 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Uso de flujos de trabajo de AEM, uso de los pasos Asignar tarea, paso Convertir en PDF/A, paso Generar documento de registro, uso de flujos de trabajo, paso Firmar documento, paso Generar salida impresa, paso Generar salida de PDF no interactiva
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '7415'
-ht-degree: 99%
+source-wordcount: '7593'
+ht-degree: 98%
 
 ---
 
@@ -128,7 +128,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
 * **[!UICONTROL Usuario asignado]**: el campo está disponible cuando la variable **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** está seleccionada en el campo **[!UICONTROL Selector de participantes]**. El campo permite seleccionar una variable de tipo de datos de cadena para definir el usuario asignado.
 
-* **[!UICONTROL Argumentos]**: el campo está disponible cuando se selecciona un script que no sea RandomParticipantChoose en el campo Selector de participantes. El campo permite proporcionar una lista de un argumento separado por comas para la secuencia de comandos seleccionada en el campo Selector de participantes. 
+* **[!UICONTROL Argumentos]**: el campo está disponible cuando se selecciona un script que no sea RandomParticipantChoose en el campo Selector de participantes. El campo permite proporcionar una lista de un argumento separado por comas para la secuencia de comandos seleccionada en el campo Selector de participantes.
 
 * **[!UICONTROL Usuario o grupo]**: la tarea se asigna al usuario o grupo seleccionado. La opción está disponible cuando la variable **[!UICONTROL Para una opción de usuario o grupo específica]** está seleccionada en el campo **[!UICONTROL Asignar opciones]**. El campo enumera todos los usuarios y grupos del grupo [!DNL workflow-users].\
   La lista **[!UICONTROL Usuario o grupo]** en el menú desplegable enumera los usuarios y grupos a los que el usuario que ha iniciado sesión tiene acceso. La visualización del nombre de usuario depende de si tiene permisos de acceso en el nodo **[!UICONTROL usuarios]** en el repositorio CRX para ese usuario en particular.
@@ -250,7 +250,7 @@ Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos 
 
 **[!UICONTROL Configuración regional]**: especifique el idioma del documento de registro. Seleccione **[!UICONTROL Literal]** para elegir la configuración regional de una lista desplegable o seleccione **[!UICONTROL Variable]** para recuperar la configuración regional a partir del valor almacenado en una variable de tipo de datos de cadena. Definir el código de configuración regional mientras almacena el valor de la configuración regional en una variable. Por ejemplo, especifique **en_US** para inglés y **fr_FR** para francés.
 
-## Paso para invocar DDX {#invokeddx}
+## Paso para invocar DDX
 
 Document Description XML (DDX) es un lenguaje declarativo de marcado cuyos elementos representan componentes básicos de documentos. Estos componentes básicos incluyen documentos PDF y XDP, y otros elementos como comentarios, marcadores y texto con estilo. DDX define un conjunto de operaciones que se pueden aplicar en uno o varios documentos de entrada para generar uno o más documentos de salida. Se puede utilizar un solo DDX con una amplia gama de documentos de origen. Puede usar el ***paso para invocar DDX*** en un flujo de trabajo AEM para realizar varias operaciones, como Ensamblaje y Desensamblaje de documentos, crear y modificar Acrobat y XFA Forms, y otras que se describen en [Documentación de referencia DDX](https://helpx.adobe.com/content/dam/help/es/experience-manager/forms-cloud-service/ddxRef.pdf).
 
@@ -280,7 +280,7 @@ El paso Invocar DDX tiene las siguientes propiedades:
 
 ## Paso para invocar el servicio de modelo de datos de formulario (FDM) {#invoke-form-data-model-service-step}
 
-Puede usar la integración de datos de [[!DNL AEM Forms] &#x200B;](data-integration.md) para configurar y conectarse a fuentes de datos dispares. Estas fuentes de datos pueden ser un servicio web, un servicio REST, un servicio OData y una solución CRM. La integración de datos de [!DNL AEM Forms] le permite crear un modelo de datos de formulario (FDM) que incluya varios servicios para realizar operaciones de recuperación, adición y actualización de datos en la base de datos configurada. Puede usar el **[!UICONTROL paso para invocar el servicio de modelo de datos]** para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a distintos orígenes de datos.
+Puede usar la integración de datos de [[!DNL AEM Forms] &#x200B;](data-integration.md) para configurar y conectarse a fuentes de datos dispares. Estas fuentes de datos pueden ser un servicio web, un servicio REST, un servicio OData y una solución CRM. [!DNL AEM Forms] La integración de datos de le permite crear un modelo de datos de formulario (FDM) que incluya varios servicios para realizar operaciones de recuperación, adición y actualización de datos en la base de datos configurada. Puede usar el **[!UICONTROL paso para invocar el servicio de modelo de datos]** para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a distintos orígenes de datos.
 
 Para explicar las entradas de los campos del paso, se utilizan como ejemplo la siguiente tabla de base de datos y el archivo JSON:
 
@@ -478,7 +478,7 @@ Generate a Non-Interactive PDF. It provides various customization options.
 
 Merges form data into a PDF form. You can import form data into a PDF form.
 
-### Invoke DDX step {#invokeddx}
+### Invoke DDX step
 
 Executes the DDX file on the specified map of input documents and returns the manipulated PDF documents.
 
@@ -563,9 +563,11 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 * **[!UICONTROL Seleccionar el archivo XCI mediante]**: los archivos XCI se utilizan para describir fuentes y otras propiedades que se utilizan para elementos de diseño de formulario. Puede mantener un archivo XCI relativo a la carga útil, en una ruta absoluta o mediante una variable del tipo de datos Document.
 
 * **[!UICONTROL Configuración regional]**: especifica el idioma que se utiliza para generar el documento PDF. Si proporciona un valor literal, seleccione un idioma de la lista o seleccione uno de estos valores:
-   * **[!UICONTROL Para usar el servidor predeterminado]**: (Predeterminado) Use la configuración regional configurada en el servidor de [!DNL AEM Forms]. La configuración regional se configura con la consola de administración. (Consulte [Ayuda de Designer](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/using-designer.pdf)).
+   * **[!UICONTROL Para usar el servidor predeterminado]**:
+(Predeterminado) Use la configuración regional configurada en el servidor [!DNL AEM Forms]. La configuración regional se configura con la consola de administración. (Consulte [Ayuda de Designer](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/using-designer.pdf)).
 
-   * **[!UICONTROL Para utilizar un valor personalizado]**: escriba el código de configuración regional en el cuadro literal o seleccione una variable de cadena que contenga el código de configuración regional. Para obtener una lista completa de los códigos de configuración regional admitidos, consulte https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
+   * **[!UICONTROL Para usar el valor personalizado]**:
+Escriba el código de configuración regional en el cuadro literal o seleccione una variable de cadena que contenga el código de configuración regional. Para obtener una lista completa de los códigos de configuración regional admitidos, consulte https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copias]**: valor entero que especifica el número de copias que se generarán para la salida. El valor predeterminado es 1.
 
@@ -574,7 +576,7 @@ El paso Generar salida impresa tiene las siguientes propiedades:
    * **[!UICONTROL Borde corto a doble cara]**: utiliza la impresión a doble cara y la impresión mediante paginación de borde corto.
    * **[!UICONTROL Simple]**: utiliza la impresión a una sola cara.
 
-## Generar etapa de Salida PDF no interactiva {#generatePDFdocuments}
+## Generar etapa de Salida PDF no interactiva   {#generatePDFdocuments}
 
 1. Arrastre el flujo de trabajo Generar salida PDF no interactiva a la pestaña Forms Workflow de la barra de tareas.
 1. Haga doble clic en el paso de flujo de trabajo agregado para editar el componente.
