@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 564e0cf551a52d0e54799a6e9578d916a98438af
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 20%
+source-wordcount: '1759'
+ht-degree: 21%
 
 ---
 
@@ -24,7 +24,7 @@ Un usuario debe tener la función **[Administrador de implementación](/help/onb
 >
 >Puede [editar la configuración de canalización](managing-pipelines.md) después de la configuración inicial.
 
-## Adición de una nueva canalización que no es de producción {#adding-non-production-pipeline}
+## Adición de una nueva canalización que no es de producción
 
 Después de configurar un programa y crear al menos un entorno en la interfaz de usuario de Cloud Manager, puede agregar canalizaciones que no sean de producción. Utilice estas canalizaciones para probar la calidad del código antes de implementarlo en entornos de producción.
 
@@ -70,7 +70,7 @@ En la ficha **Código Source** del cuadro de diálogo **Agregar canalización qu
    Consulte [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener más información sobre los tipos de canalizaciones.
 
 
-### Estoy utilizando código de pila completa {#full-stack-code}
+### Estoy utilizando código de pila completa
 
 Una canalización de código de pila completa implementa simultáneamente generaciones de código back-end y front-end que contienen una o más aplicaciones de servidor de AEM junto con la configuración HTTPD/Dispatcher.
 
@@ -161,7 +161,7 @@ The steps to complete the creation of your non-production, targeted deployment p
      > 
      >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para poder aprender a añadir y administrar repositorios en Cloud Manager.
 
-   * **Rama Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código. Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo. Encuentra las ramas coincidentes que puede seleccionar.
+   * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código. Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo. Encuentra las ramas coincidentes que puede seleccionar.
    * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
 
 <!--
@@ -250,7 +250,7 @@ Si encuentra un comportamiento de compilación inesperado, considere la posibili
 | Problema | Soluciones sugeridas |
 | --- | --- |
 | Los resultados de la compilación son incoherentes | · Deshabilite el almacenamiento en caché para los módulos afectados.<br>· Compruebe el comportamiento de los complementos (especialmente los complementos `exec`/`antrun`). |
-| Sin mejora de rendimiento | · Asegúrese de que se han producido varias ejecuciones (calentamiento de la caché).<br>· Compruebe si la mayoría de los módulos cambian con frecuencia. |
+| Sin mejora de rendimiento | · Asegúrese de que se han producido varias ejecuciones (calentamiento de caché).<br>· Compruebe si la mayoría de los módulos cambian con frecuencia. |
 | Artefactos inesperados o cambios que faltan | · Revise si los cambios están fuera del seguimiento de dependencias de Maven.<br>· Use **Compilación completa** para la verificación. |
 
 Consulte [Agregar una canalización que no sea de producción](#adding-non-production-pipeline) para habilitar Smart Build.
@@ -266,7 +266,7 @@ Consulte [Agregar una canalización que no sea de producción](#adding-non-produ
 
 
 <!--
-## Add a non-production pipeline {#adding-non-production-pipeline}
+## Add a non-production pipeline
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
@@ -311,7 +311,7 @@ See [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/int
 
 The steps to complete the creation of your non-production pipeline vary depending on the type of source code you selected. Follow the links above to jump to the next section of this document so you can complete the configuration of your pipeline.
 
-### Full Stack Code {#full-stack-code}
+### Full Stack Code
 
 A full-stack code pipeline simultaneously deploys back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configuration.
 

@@ -5,14 +5,14 @@ feature: Adaptive Forms
 role: User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '190'
 ht-degree: 6%
 
 ---
 
-# Problema al publicar formularios{#form-creation-fails}
+# Problema al publicar formularios
 
 Después de que los usuarios actualicen a AEM Forms as a Cloud Service versión `2024.5.16461`:
 
@@ -36,7 +36,7 @@ Para resolver el problema, realice los siguientes pasos:
 
 <!--
 
-# Issue {#form-creation-fails}
+# Issue
 
 After updating to AEM Forms as a Cloud Service version `2024.5.16461.20240524T172309Z`, When a user publishes a form using an unpublished template, it fails to create a form and shows an error:
 

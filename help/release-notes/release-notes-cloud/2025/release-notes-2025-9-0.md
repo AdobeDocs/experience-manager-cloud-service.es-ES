@@ -4,9 +4,9 @@ description: Notas de la versión 2025.9.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: b39198d9-97ca-4cf9-acd5-ff8c778ab386
-source-git-commit: 2e7072043a6b8e5dbaa5f9b6a0579de3d6509c85
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2202'
 ht-degree: 89%
 
 ---
@@ -39,7 +39,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440923?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -67,7 +67,7 @@ Mejore la legibilidad humana de Dynamic Media con las URL de OpenAPI aprovechand
 >
 >Esta función está disponible como función de disponibilidad limitada. Consulte este [artículo](/help/assets/vanity-urls.md) para comenzar.
 
-### Nuevas funciones en el centro de contenido {#new-features-content-hub}
+### Nuevas funciones en el centro de contenido
 
 **Marcar colecciones como favoritas**
 
@@ -84,7 +84,7 @@ Los administradores de Content Hub ahora pueden anclar colecciones en Content Hu
 
 <!--
 
-### New Features in Content Hub {#new-features-content-hub}
+### New Features in Content Hub
 
 **Mark Collections as Favourites**
 
@@ -96,7 +96,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 

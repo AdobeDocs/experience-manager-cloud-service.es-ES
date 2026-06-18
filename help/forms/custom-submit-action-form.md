@@ -6,9 +6,9 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1900'
 ht-degree: 98%
 
 ---
@@ -25,7 +25,7 @@ Un formulario adaptable ofrece varias acciones de envío de forma predeterminada
 
 Puede crear una acción de envío personalizada para agregar una funcionalidad que no esté incluida en [las acciones de envío de forma predeterminada](configuring-submit-actions.md) o no que no son compatibles con una única acción de envío OOTB. Por ejemplo, enviar datos a un flujo de trabajo, guardar los datos en un almacén de datos, enviar una notificación por correo electrónico a la persona que envía el formulario y enviar un correo electrónico a la persona responsable de procesar el formulario enviado para aprobarlo o rechazarlo mediante una única acción de envío.
 
-## Formato de datos XML {#xml-data-format}
+## Formato de datos XML
 
 Los datos XML se envían al servlet utilizando el parámetro de solicitud **`jcr:data`**. Las acciones de envío puede acceder al parámetro para procesar los datos. El siguiente código describe el formato de los datos XML. Los campos vinculados al modelo de formulario aparecen en la sección **`afBoundData`**. Los campos no vinculados aparecen en la sección `afUnoundData`. <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
 
@@ -49,7 +49,7 @@ Los datos XML se envían al servlet utilizando el parámetro de solicitud **`jcr
 </afData>
 ```
 
-### Campos de acción {#action-fields}
+### Campos de acción
 
 Una acción de envío puede agregar campos de entrada ocultos (mediante la etiqueta de [entrada](https://developer.mozilla.org/es/docs/Web/HTML/Element/Input) HTML ) al HTML de formulario procesado. Estos campos ocultos pueden contener los valores que necesita al procesar el envío del formulario. Al enviar el formulario, estos valores de campo se vuelven a registrar como parámetros de solicitud que la acción de envío puede utilizar durante el envío. Los campos de entrada se denominan campos de acción.
 
@@ -57,7 +57,7 @@ Por ejemplo, una acción de envío que también capture el tiempo necesario para
 
 Un script puede aportar los valores de los campos `startTime` y `endTime` cuando el formulario se procesa y antes de enviarlo, respectivamente. El script de acción de envío `post.jsp` puede acceder a estos campos mediante parámetros de solicitud y calcular el tiempo total necesario para rellenar el formulario.
 
-### Archivos adjuntos {#file-attachments}
+### Archivos adjuntos
 
 Las acciones de envío también pueden utilizar los archivos adjuntos que se cargan mediante el componente Archivo adjunto. Los scripts de acción de envío pueden acceder a estos archivos utilizando el [API RequestParameter](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html) de Sling. El método [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) del API ayuda a identificar si el parámetro de solicitud es un archivo o un campo de formulario. Puede iterar los parámetros de solicitud en una acción de envío para identificar los parámetros del archivo adjunto.
 
@@ -75,13 +75,13 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 Cuando adjunta archivos al formulario adaptable, el servidor valida los archivos adjuntos después del envío del formulario adaptable y muestra un mensaje de error si ocurre lo siguiente:
 
-* Los archivos adjuntos incluyen un nombre de archivo que empieza por el carácter (.), contiene los caracteres \ / : * ?  &quot; &lt; > | ; % $, o contiene nombres de archivo especiales reservados para el sistema operativo Windows, como `nul`, `prn`, `con`, `lpt` o `com`.
+* Los archivos adjuntos incluyen un nombre de archivo que empieza por (.) contiene los caracteres \ / : * ? &quot; &lt; > | ; % $, o contiene nombres de archivo especiales reservados para el sistema operativo Windows, como `nul`, `prn`, `con`, `lpt` o `com`.
 
 * El tamaño del archivo adjunto es de 0 bytes.
 
 * El formato del archivo adjunto no está definido en la sección [Tipos de archivo compatibles](https://helpx.adobe.com/es/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) al configurar el componente Archivo adjunto en un formulario adaptable.
 
-### Ruta de reenvío y URL de redireccionamiento {#forward-path-and-redirect-url}
+### Ruta de reenvío y URL de redireccionamiento
 
 Después de realizar la acción necesaria, el servlet de envío reenvía la solicitud a la ruta de reenvío. Una acción utiliza la API setForwardPath para establecer la ruta de reenvío en el servlet de envío de la guía.
 
@@ -93,7 +93,7 @@ Si la acción no ofrece una ruta de reenvío, el servlet de envío redirecciona 
 >
 >Puede escribir una acción de envío personalizada que reenvíe una solicitud a un recurso o servlet. Adobe recomienda que el script que administra los recursos de la ruta de reenvío redirija la solicitud a la URL de redireccionamiento cuando termine el procesamiento.
 
-## Acción de envío {#submit-action}
+## Acción de envío
 
 Una acción de envío es una :Folder sling, que incluye lo siguiente:
 
@@ -111,7 +111,7 @@ Una acción de envío es una :Folder sling, que incluye lo siguiente:
 
    * **submitService** de tipo cadena. Para obtener más información, consulte [Programar el envío del formulario adaptable para acciones personalizadas](#schedule-adaptive-form-submission).
 
-## Crear una acción de envío personalizada {#creating-a-custom-submit-action}
+## Crear una acción de envío personalizada
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Realice los siguientes pasos para crear una acción de envío personalizada que 
 
 ## Utilizar la propiedad submitService para las acciones de envío personalizadas {#submitservice-property}
 
-Al establecer la acción de envío personalizada, que incluye la propiedad `submitService`, el formulario activa [FormSubmitActionService](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) en el momento del envío. `FormSubmitActionService` utiliza el método `getServiceName` para recuperar el valor de la propiedad `submitService`. En función del valor de la propiedad `submitService`, el servicio invoca el método de envío adecuado. Incluya `FormSubmitActionService` al paquete personalizado que carga en el servidor de [!DNL AEM Forms].
+Al establecer la acción de envío personalizada, que incluye la propiedad `submitService`, el formulario activa [FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) en el momento del envío. `FormSubmitActionService` utiliza el método `getServiceName` para recuperar el valor de la propiedad `submitService`. En función del valor de la propiedad `submitService`, el servicio invoca el método de envío adecuado. Incluya `FormSubmitActionService` al paquete personalizado que carga en el servidor de [!DNL AEM Forms].
 
 Añada la propiedad `submitService` de tipo cadena a `sling:Folder` de su acción de envío personalizada para habilitar [!DNL Adobe Sign] para el formulario adaptable. Puede seleccionar la opción **[!UICONTROL Habilitar Adobe Sign]** en la sección **[!UICONTROL Firma electrónica]** de las propiedades del contenedor del formulario adaptable solo después de establecer el valor de la propiedad `submitService` de su acción de envío personalizada.
 
@@ -232,7 +232,7 @@ The flowchart depicts the workflow for a Submit Action that is triggered when yo
 
 ![Flowchart depicting the workflow for Submit Action](assets/diagram1.png)
 
-### XML data format {#xml-data-format}
+### XML data format
 
 The XML data is sent to the servlet using the **`jcr:data`** request parameter. Submit Actions can access the parameter to process the data. The following code describes the format of the XML data. The fields that are bound to the Form model appear in the **`afBoundData`** section. Unbound fields appear in the `afUnoundData`section. For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).
 
@@ -256,7 +256,7 @@ The XML data is sent to the servlet using the **`jcr:data`** request parameter. 
 </afData>
 ```
 
-### Action fields {#action-fields}
+### Action fields
 
 A Submit Action can add hidden input fields (using the HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) tag) to the rendered form HTML. These hidden fields can contain values that it needs while processing form submission. When submitting the form, these field values are posted back as request parameters that the Submit Action can use during submission handling. The input fields are called action fields.
 
@@ -264,7 +264,7 @@ For example, a Submit Action that also captures the time taken to fill a form ca
 
 A script can supply the values of the `startTime` and `endTime` fields when the form renders and before form submission, respectively. The Submit Action script `post.jsp` can then access these fields using request parameters and compute the total time required to fill the form.
 
-### File attachments {#file-attachments}
+### File attachments
 
 Submit Actions can also use the file attachments you upload using the File Attachment component. Submit Action scripts can access these files using the sling [RequestParameter API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). The [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) method of the API helps identify whether the request parameter is a file or a form field. You can iterate over the Request parameters in a Submit Action to identify File Attachment parameters.
 
@@ -280,7 +280,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 }
 ```
 
-### Forward path and Redirect URL {#forward-path-and-redirect-url}
+### Forward path and Redirect URL
 
 After performing the required action, the Submit servlet forwards the request to the forward path. An action uses the setForwardPath API to set the forward path in the Guide Submit servlet.
 
@@ -292,7 +292,7 @@ If the action does not provide a forward path, the Submit servlet redirects the 
 >
 >You can write a custom Submit Action that forwards a request to a resource or servlet. Adobe recommends that the script that performs resource handling for the forward path redirect the request to the Redirect URL when the processing completes.
 
-## Submit Action {#submit-action}
+## Submit Action
 
 A Submit Action is a sling:Folder that includes the following:
 
@@ -305,7 +305,7 @@ A Submit Action is a sling:Folder that includes the following:
 
     * **jcr:description** of type String. The value of this property is displayed in the Submit Action list in the Submit Actions Tab of the Adaptive Form Edit dialog. The OOTB actions are present in the CRX repository at the location **/libs/fd/af/components/guidesubmittype**.
 
-## Creating a custom Submit Action {#creating-a-custom-submit-action}
+## Creating a custom Submit Action
 
 Perform the following steps to create a custom Submit Action that saves the data in the CRX repository and then sends you an email. The Adaptive Form contains the OOTB Submit Action Store Content (deprecated) that saves the data in the CRX repository. In addition, CQ provides a [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API that can be used to send emails. Before using the Mail API, configure the Day CQ Mail service through the system console. You can reuse the Store Content (deprecated) action to store the data in the repository. The Store Content (deprecated) action is available at the location /libs/fd/af/components/guidesubmittype/store in the CRX repository.
 

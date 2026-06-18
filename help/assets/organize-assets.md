@@ -6,9 +6,9 @@ feature: Asset Management, Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '953'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Todos los recursos digitales, metadatos y contenido de los documentos de Microsoft® Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta completamente los permisos adecuados. Los metadatos se tratan en detalle en Metadatos en la administración de recursos digitales.
@@ -48,7 +48,7 @@ You can limit who can access certain folders in Assets by making the folder part
 1. Select the **Enabled** check box to make the folder and its assets available only to a closed user group.  
 1. Browse to the login page, if there is one, to add that information. Add admitted groups by clicking **Add item**. If necessary, add the realm. Click **OK** to save your changes.
 
-## Use tags to organize assets {#use-tags-to-organize-assets}
+## Use tags to organize assets
 
 You can use folders or tags or both to organize assets. Adding tags to assets makes them easier to retrieve during a search. To add tags to an asset, follow these steps:
 
@@ -79,7 +79,7 @@ La forma más básica de organizar los recursos es guardarlos en carpetas. Es an
 * Cree un directorio de carpetas que no tengan probabilidades de cambiar para que la personalización o automatización sigan funcionando. Por ejemplo, los perfiles de procesamiento asignados siguen funcionando.
 * Si un recurso ya se ha publicado, utilice [!DNL Experience Manager] para mover el recurso a otra carpeta y vuelva a publicar desde su nueva ubicación. La ubicación del recurso publicado original aún está disponible junto con el recurso publicado recientemente. Sin embargo, el recurso publicado original está *perdido* a [!DNL Experience Manager] y no se puede cancelar su publicación. Por lo tanto, como práctica recomendada, primero debe cancelar la publicación de un recurso y, a continuación, moverlo a una carpeta diferente.
 
-## Organización de recursos mediante etiquetas {#use-tags-to-organize-assets}
+## Organización de recursos mediante etiquetas
 
 Añadir etiquetas a los recursos facilita su recuperación durante la búsqueda, crear colecciones con los resultados de búsqueda, aumentar la clasificación de búsqueda de algunos recursos y aplicar algoritmos de IA de Adobe AI para la detección de recursos.
 
