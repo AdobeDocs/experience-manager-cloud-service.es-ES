@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '2932'
+source-wordcount: '2938'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ Cuando abra el Editor de fragmentos de contenido por primera vez, verá cuatro �
    * [Publicar](#publish-content-fragment) y [Cancelar la publicación](#unpublish-content-fragment) acciones
    * una opción para mostrar todo **Referencias principales** (icono de vínculo)
    * el fragmento **[Estado](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** y la información guardada por última vez
-   * un conmutador para cambiar al editor original (basado en recursos)
+   * un conmutador para cambiar al editor original (/help/sites-cloud/managing/content-fragments/assets-based)
 
      >[!WARNING]
      >
@@ -621,7 +621,7 @@ El panel **Campos** enumera todos los campos dentro del fragmento de contenido. 
    <td><p> <img src="assets/cf-authoring-content-reference-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Referencia de fragmento</b></p> </td>
+   <td><p><b>Referencia al fragmento</b></p> </td>
    <td><p> <img src="assets/cf-authoring-fragment-reference-icon.png"> </p></td>
   </tr>
   <tr>

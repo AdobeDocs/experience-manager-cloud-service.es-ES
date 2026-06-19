@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '136'
 ht-degree: 5%
 
 ---
@@ -34,4 +34,4 @@ Abra la pestaña **Árbol de estructura** de la barra de herramientas del editor
 
 Por ejemplo:
 
-![Editor de fragmentos de contenido: árbol de estructura](assets/cf-authoring-structure-tree.png)
+![Editor de fragmentos de contenido: árbol de estructura](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
