@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 24a995f6e487b7870ebc84e06107a26442d541c3
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2188'
 ht-degree: 32%
 
 ---
@@ -53,7 +53,7 @@ El modelo de fragmento de contenido define de forma efectiva la estructura de lo
 
 1. Abra el modelo necesario para **Edit**; utilice uno de los vínculos de acción rápida o seleccione el modelo y, a continuación, la acción en la barra de herramientas.
 
-   ![Propiedades](assets/cf-cfmodels-empty-model.png)
+   ![Propiedades](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-empty-model.png)
 
    Una vez abierto, el editor de modelos muestra lo siguiente:
 
@@ -86,7 +86,7 @@ El modelo de fragmento de contenido define de forma efectiva la estructura de lo
 
    * Puede cambiar la posición de un campo mediante la formación de puntos a la izquierda del cuadro de campo:
 
-     ![Mover campo](assets/cf-cfmodels-move-field-icon.png)
+     ![Mover campo](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-move-field-icon.png)
 
    * Una vez agregado un campo al modelo (y seleccionado), el panel derecho muestra las **Propiedades** que se pueden definir para ese tipo de datos en particular. Aquí puede definir lo que se requiere para el específico
 field.
@@ -102,7 +102,7 @@ field.
 
      Por ejemplo:
 
-     ![Propiedades de campo](assets/cf-cfmodels-field-properties.png)
+     ![Propiedades de campo](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
      >[!NOTE]
      >
@@ -112,7 +112,7 @@ field.
 
    Seleccione el icono de la papelera para el campo correspondiente en el panel central.
 
-   ![Quitar](assets/cf-cfmodels-remove-icon.png)
+   ![Quitar](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-remove-icon.png)
 
 1. Añada todos los campos obligatorios y defina las propiedades relacionadas, según sea necesario.
 
@@ -316,7 +316,7 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 >
 >AEM tiene protección contra recurrencias para:
 >
->* Referencias de contenidos>  Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencia a fragmento.
+>* Referencias de contenido>  Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencias a fragmento.
 >
 >* Referencias a fragmento en GraphQL>  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
 
@@ -354,7 +354,7 @@ Además de las propiedades estándar, puede especificar las siguentes:
    * Mostrar miniatura
    * Restricciones de imagen de altura y anchura
 
-![Referencia del contenido](assets/cf-cfmodels-content-reference.png)
+![Referencia del contenido](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-content-reference.png)
 
 ### Referencia a fragmento (fragmentos anidados) {#fragment-reference-nested-fragments}
 
@@ -403,7 +403,7 @@ Esto especifica o representa una ruta raíz para los fragmentos a los que se hac
 
    * **fragmentreferencecomposite**: permite al autor del fragmento crear un compuesto seleccionando varios fragmentos.
 
-  ![Referencia al fragmento](assets/cf-cfmodels-fragment-reference.png)
+  ![Referencia a fragmento](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-fragment-reference.png)
 
 >[!NOTE]
 >

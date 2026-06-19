@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '3412'
+source-wordcount: '3402'
 ht-degree: 31%
 
 ---
@@ -52,7 +52,7 @@ Puede usar el panel del extremo izquierdo de la consola [Fragmentos de contenido
 
 Al seleccionar **Fragmentos de contenido**, se abre la consola en una nueva pestaña.
 
-![Consola Fragmentos de contenido: información general](assets/cf-managing-console-overview.png)
+![Consola Fragmentos de contenido: información general](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-overview.png)
 
 Aquí se pueden ver tres áreas principales:
 
@@ -104,7 +104,7 @@ El panel principal/derecho (vista de tabla) de la consola proporciona una amplia
    * Se puede usar para [Filtrado rápido](#fast-filtering).
 * **Carpeta**
    * Proporciona un vínculo para abrir la carpeta en la consola.
-Al pasar el puntero por encima del nombre de la carpeta, se muestra la ruta JCR.
+Al pasar el ratón por encima del nombre de la carpeta, se mostrará la ruta JCR.
 * **Estado**
    * Solo información.
    * Se puede usar para [Filtrado rápido](#fast-filtering).
@@ -130,17 +130,17 @@ Al pasar el puntero por encima del nombre de la carpeta, se muestra la ruta JCR.
 * **Referido Por**:
    * Proporciona un vínculo que abre un cuadro de diálogo con todas las [referencias principales](#parent-references-fragment) de ese fragmento; incluida la referencia a fragmentos de contenido, fragmentos de experiencias y páginas. Para abrir una referencia específica, haga clic en **Título** en el cuadro de diálogo.
 
-     ![Consola Fragmentos de contenido: cuadro de diálogo Referencias](assets/cf-managing-console-references-dialog.png)
+     ![Consola Fragmentos de contenido: cuadro de diálogo Referencias](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-references-dialog.png)
 
 * **Idioma**: indique cualquier [idioma](#language-copies-fragment) copias
 
    * Indica la configuración regional del fragmento de contenido, junto con el número total de copias locales/[Idioma](#language-copies-fragment) asociadas con el fragmento de contenido.
 
-     ![Consola Fragmentos de contenido: Indicador de idioma](assets/cf-managing-console-language-indicator.png)
+     ![Consola Fragmentos de contenido: Indicador de idioma](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-language-indicator.png)
 
    * Seleccione el recuento para abrir un cuadro de diálogo que muestre todas las copias de idioma. Para abrir una copia de idioma específica, haga clic en **Título** en el cuadro de diálogo.
 
-     ![Consola Fragmentos de contenido: cuadro de diálogo Idioma](assets/cf-managing-console-languages-dialog.png)
+     ![Consola Fragmentos de contenido: cuadro de diálogo Idioma](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-languages-dialog.png)
 
 * **Flujos de trabajo**
 
@@ -148,11 +148,11 @@ Al pasar el puntero por encima del nombre de la carpeta, se muestra la ruta JCR.
 
    * Seleccione el icono de un fragmento específico:
 
-     ![Consola Fragmentos de contenido: icono Flujos de trabajo](assets/cf-managing-console-workflows-icon.png)
+     ![Consola Fragmentos de contenido: icono Flujos de trabajo](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-icon.png)
 
      Para abrir un cuadro de diálogo con información detallada sobre los flujos de trabajo (pasados y actuales) del fragmento:
 
-     ![Consola Fragmentos de contenido: cuadro de diálogo Flujos de trabajo](assets/cf-managing-console-workflows-dialog.png)
+     ![Consola Fragmentos de contenido: cuadro de diálogo Flujos de trabajo](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-dialog.png)
 
 ## Acciones {#actions}
 
@@ -182,7 +182,7 @@ Algunas acciones están disponibles desde la consola, sin seleccionar un fragmen
 
 Al seleccionar un fragmento específico, se abre una barra de herramientas centrada en las acciones disponibles para dicho fragmento. También puede seleccionar varios fragmentos: la selección de acciones se ajustará en consecuencia.
 
-![Consola Fragmentos de contenido: barra de herramientas para un fragmento seleccionado](assets/cf-managing-console-fragment-toolbar.png)
+![Consola Fragmentos de contenido: barra de herramientas para un fragmento seleccionado](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Abrir en nuevo editor](#editing-the-content-of-your-fragment)**
 * **[Publicación](#publishing-and-previewing-a-fragment)** (y **[Cancelar la publicación](#unpublishing-a-fragment)**)
@@ -239,7 +239,7 @@ Crear un fragmento de contenido:
    * **Nombre** - Completado automáticamente según el **Título**, pero puede editarlo si es necesario.
    * **Descripción**
 
-   ![Nuevo cuadro de diálogo Fragmento de contenido](assets/cf-managing-new-cf-dialog.png)
+   ![Nuevo cuadro de diálogo Fragmento de contenido](/help/sites-cloud/administering/content-fragments/assets/cf-managing-new-cf-dialog.png)
 
 1. Seleccione **Crear** o **Crear y abrir** para mantener la definición.
 
@@ -271,7 +271,7 @@ Abra el fragmento para su edición:
 
 1. Se abrirá el editor de fragmentos. Seleccione la **variación** que necesite y realice los cambios según sea necesario (se guardarán automáticamente):
 
-   ![Editor de fragmentos](assets/cf-managing-editor.png)
+   ![Editor de fragmentos](/help/sites-cloud/administering/content-fragments/assets/cf-managing-editor.png)
 
 ## Copiar un fragmento de contenido {#copy-a-content-fragment}
 
@@ -385,7 +385,7 @@ Para administrar las etiquetas:
 1. Seleccione **Administrar etiquetas** en la barra de herramientas.
 1. Utilice el selector de etiquetas para seleccionar las etiquetas que desea aplicar o quitar:
 
-   ![Administrar etiquetas](assets/cf-managing-manage-tags.png)
+   ![Administrar etiquetas](/help/sites-cloud/administering/content-fragments/assets/cf-managing-manage-tags.png)
 
 1. **Guardar** actualizaciones. Esto le devolverá a la consola.
 
@@ -458,7 +458,7 @@ Después de seleccionar la acción **Publicar**:
 
 1. Proporcione todos los detalles en el cuadro de diálogo. Por ejemplo, para una solicitud de publicación programada:
 
-   ![Cuadro de diálogo Publicar](assets/cf-managing-publish-dialog.png)
+   ![Cuadro de diálogo Publicar](/help/sites-cloud/administering/content-fragments/assets/cf-managing-publish-dialog.png)
 
    >[!NOTE]
    >
@@ -486,7 +486,7 @@ En ambos casos, seleccione **Cancelar la publicación** en la barra de herramien
 
 Cuando se abra el cuadro de diálogo correspondiente, puede seleccionar el servicio adecuado:
 
-![Cancelar publicación del cuadro de diálogo](assets/cf-managing-unpublish-dialog.png)
+![Cancelar publicación del cuadro de diálogo](/help/sites-cloud/administering/content-fragments/assets/cf-managing-unpublish-dialog.png)
 
 >[!NOTE]
 >
@@ -500,7 +500,7 @@ Cuando se abra el cuadro de diálogo correspondiente, puede seleccionar el servi
 
 La acción **Reemplazar** está disponible (en la barra de herramientas superior) para buscar y reemplazar el texto especificado en los fragmentos de contenido seleccionados.
 
-![Buscar y reemplazar](assets/cf-managing-find-replace.png)
+![Buscar y reemplazar](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
 
 Antes del reemplazo, se comprueban los criterios de validación y se le informa de cualquier conflicto, lo que le permite cambiar la cadena de reemplazo o reemplazar únicamente las instancias validadas.
 
@@ -510,7 +510,7 @@ Antes del reemplazo, se comprueban los criterios de validación y se le informa 
 >
 >Si selecciona más de 20 fragmentos de contenido, verá el mensaje **No se puede encontrar y reemplazar**.
 
-![Confirmar reemplazo](assets/cf-managing-confirm-replace.png)
+![Confirmar reemplazo](/help/sites-cloud/administering/content-fragments/assets/cf-managing-confirm-replace.png)
 
 ## Desproteger y proteger {#check-out-and-check-in}
 
@@ -594,7 +594,7 @@ Ambos proporcionan un vínculo que abre un cuadro de diálogo con todas las refe
 
 Por ejemplo:
 
-![Consola Fragmentos de contenido: cuadro de diálogo Referencias](assets/cf-managing-console-references-dialog.png)
+![Consola Fragmentos de contenido: cuadro de diálogo Referencias](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-references-dialog.png)
 
 ## Búsqueda de copias de idioma del fragmento {#language-copies-fragment}
 
@@ -605,21 +605,21 @@ Se puede acceder a los detalles de las copias de idioma desde:
 
 El icono indica la configuración regional del fragmento de contenido, junto con el número total de configuraciones regionales o copias de idioma asociadas al fragmento de contenido. Por ejemplo, desde la consola:
 
-![Consola Fragmentos de contenido: Indicador de idioma](assets/cfc-console-language-indicator.png)
+![Consola Fragmentos de contenido: Indicador de idioma](/help/sites-cloud/administering/content-fragments/assets/cfc-console-language-indicator.png)
 
 Seleccione el recuento para abrir un cuadro de diálogo que muestre todas las copias de idioma. Para abrir una copia de idioma específica, haga clic en **Título** en el cuadro de diálogo.
 
-![Consola Fragmentos de contenido: cuadro de diálogo Idioma](assets/cf-managing-console-languages-dialog.png)
+![Consola Fragmentos de contenido: cuadro de diálogo Idioma](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-languages-dialog.png)
 
 ## Seleccionar columnas mostradas en la consola {#select-columns-console}
 
 Al igual que con otras consolas, puede configurar las columnas que son visibles y están disponibles para la acción:
 
-![Consola Fragmentos de contenido: configuración de columna](assets/cf-managing-console-column-icon.png)
+![Consola Fragmentos de contenido: configuración de columna](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-icon.png)
 
 Se mostrará una lista de columnas que puede ocultar o mostrar:
 
-![Consola Fragmentos de contenido: configuración de columna](assets/cf-managing-console-column-selection.png)
+![Consola Fragmentos de contenido: configuración de columna](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-selection.png)
 
 ## Filtrado de fragmentos {#filtering-fragments}
 
@@ -634,7 +634,7 @@ El panel Filtro ofrece lo siguiente:
 
 Una vez seleccionadas, se muestran las opciones **Filtrando por** (debajo del cuadro Buscar). Se pueden anular las selecciones desde allí. Por ejemplo:
 
-![Consola Fragmentos de contenido: filtrado](assets/cf-managing-console-filter.png)
+![Consola Fragmentos de contenido: filtrado](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### Filtrado rápido {#fast-filtering}
 
@@ -646,22 +646,22 @@ Por ejemplo, seleccione **Publicado** en la columna **Estado**:
 >
 >El filtrado rápido solo es compatible con las columnas **Modelo**, **Estado**, **Modificado por**, **Etiquetas** y **Publicado por**.
 
-![Consola Fragmentos de contenido: filtrado](assets/cf-managing-console-fast-filter-overview.png)
+![Consola Fragmentos de contenido: filtrado](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fast-filter-overview.png)
 
 Cuando se seleccione, aparecerá como un predicado de filtro y la lista se filtrará según corresponda:
 
-![Consola Fragmentos de contenido: filtrado](assets/cf-managing-console-fast-filter-criteria.png)
+![Consola Fragmentos de contenido: filtrado](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fast-filter-criteria.png)
 
 ## Búsqueda de fragmentos {#searching-fragments}
 
 El cuadro de búsqueda admite la búsqueda de texto completo. Introducción de los términos de búsqueda en el cuadro de búsqueda:
 
-![Consola Fragmentos de contenido: búsqueda](assets/cf-managing-console-search-specification.png)
+![Consola Fragmentos de contenido: búsqueda](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-specification.png)
 
 Proporcionará los resultados seleccionados:
 
-![Consola Fragmentos de contenido: resultados de búsqueda](assets/cf-managing-console-search-results.png)
+![Consola Fragmentos de contenido: resultados de búsqueda](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-results.png)
 
 El cuadro de búsqueda también proporciona acceso rápido a **Fragmentos de contenido recientes** y **Búsquedas guardadas**:
 
-![Consola Fragmentos de contenido: reciente y guardado](assets/cf-managing-console-search-saved.png)
+![Consola Fragmentos de contenido: reciente y guardado](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-saved.png)

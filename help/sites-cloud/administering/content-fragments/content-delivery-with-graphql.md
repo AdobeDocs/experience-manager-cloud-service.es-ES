@@ -6,10 +6,10 @@ role: Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 90%
+source-wordcount: '767'
+ht-degree: 89%
 
 ---
 
@@ -68,7 +68,7 @@ Los [Fragmentos de contenido](#content-fragments) se pueden usar como base para 
 * Los [Modelos de fragmento de contenido](#content-fragments-models) proporcionan la estructura necesaria mediante tipos de datos definidos.
 * La [Referencia de fragmento](#fragment-references), disponible al definir un modelo, se puede utilizar para definir capas de estructura adicionales.
 
-![Fragmentos de contenido para usar con GraphQL](assets/cf-contentdelivery-cf-use-with-graphql.png "Fragmentos de contenido para usar con GraphQL")
+![Fragmentos de contenido para usar con GraphQL](/help/sites-cloud/administering/content-fragments/assets/cf-contentdelivery-cf-use-with-graphql.png "Fragmentos de contenido para usar con GraphQL")
 
 ### Fragmentos de contenido {#content-fragments}
 

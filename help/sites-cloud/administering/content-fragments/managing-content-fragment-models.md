@@ -6,10 +6,10 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 35%
+source-wordcount: '2472'
+ht-degree: 34%
 
 ---
 
@@ -53,7 +53,7 @@ Puede usar el panel del extremo izquierdo de la consola [Fragmentos de contenido
 
 Se abrirá la vista para modelos de fragmentos de contenido:
 
-![Consola Fragmentos de contenido: administración de modelos de fragmentos de contenido](assets/cf-managing-content-fragment-models.png)
+![Consola Fragmentos de contenido: administración de modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models.png)
 
 Aquí se pueden ver tres áreas principales:
 
@@ -81,7 +81,7 @@ Aquí se pueden ver tres áreas principales:
          * Seleccione un valor en la columna y se aplicará inmediatamente como filtro
          * Se admite el filtrado rápido para las columnas **Modificado por**, **Publicado por** y **Estado**.
       * Al utilizar el ratón sobre los encabezados de columna, se mostrará un selector de acciones desplegable y controles deslizantes de anchura. Esto le permite lograr lo siguiente:
-         * Ordenar: seleccione la acción adecuada, ya sea ascendente o descendente.
+         * Ordenar: seleccione la acción adecuada para ascendente o descendente
 Así se ordenará toda la tabla según esa columna. La ordenación solo está disponible en las columnas adecuadas.
          * Cambiar el tamaño de la columna: mediante los controles deslizantes de acción o de anchura
       * Seleccione uno o más modelos para realizar más [acción](#actions-selected-content-fragment-models)
@@ -98,7 +98,7 @@ El panel principal/derecho (vista de tabla) de la consola proporciona una amplia
    * Cuando el modelo está bloqueado, esto se indica con un icono de candado.
 * **Ruta**
    * Proporciona la ruta de acceso como vínculo para abrir la configuración en la consola.
-Al pasar el puntero por encima del nombre de la carpeta, se muestra la ruta JCR.
+Al pasar el ratón por encima del nombre de la carpeta, se mostrará la ruta JCR.
 * **Estado**
    * Solo información.
    * Se puede usar para [Filtrado rápido](#fast-filtering)
@@ -130,7 +130,7 @@ Al pasar el puntero por encima del nombre de la carpeta, se muestra la ruta JCR.
 
 Al seleccionar un modelo específico, se muestran las propiedades de dicho modelo (tal como se definen al [crear el modelo](#creating-a-content-fragment-model)). Si el modelo no está **Bloqueado**, se podrán actualizar algunos elementos. También puede usar el icono de información (junto al modelo **Title**) para abrir y cerrar este panel de información.
 
-![Consola de fragmentos de contenido: información para un modelo de fragmento de contenido seleccionado](assets/cf-managing-content-fragment-models-selected.png)
+![Consola de fragmentos de contenido: información para un modelo de fragmento de contenido seleccionado](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-selected.png)
 
 * **[Ruta](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Estado](#enabling-a-content-fragment-model)**
@@ -181,11 +181,11 @@ Al seleccionar un solo modelo, también se muestran las [propiedades del modelo]
 
 Al igual que con otras consolas, puede configurar las columnas que son visibles y están disponibles para la acción:
 
-![Consola Fragmentos de contenido: configuración de columna](assets/cf-managing-console-column-icon.png)
+![Consola Fragmentos de contenido: configuración de columna](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-icon.png)
 
 Se mostrará una lista de columnas que puede ocultar o mostrar:
 
-![Consola Fragmentos de contenido: configuración de columna](assets/cf-managing-content-fragment-models-column-selection.png)
+![Consola Fragmentos de contenido: configuración de columna](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-column-selection.png)
 
 ## Filtrar modelos de fragmentos de contenido {#filter-content-fragment-models}
 
@@ -202,7 +202,7 @@ El panel Filtro ofrece lo siguiente:
 
 Una vez seleccionadas, se muestran las opciones **Filtrado por** (en la parte superior del panel principal). Se pueden anular las selecciones desde allí. Por ejemplo:
 
-![Consola Fragmentos de contenido: filtrando modelos de fragmentos de contenido](assets/cf-managing-content-fragment-models-filter.png)
+![Consola Fragmentos de contenido: filtrando modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-filter.png)
 
 ### Filtrado rápido {#fast-filtering}
 
@@ -249,7 +249,7 @@ Si escribe primero el **Título**, a partir de ahí se generará **Nombre**.
    >
    >Consulte [Modelo de fragmento de contenido: propiedades](#model-properties) para obtener información detallada.
 
-   ![Título y descripción](assets/cf-managing-content-fragment-models-create.png)
+   ![Título y descripción](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
 1. Use **Crear** para guardar el modelo vacío o **Crear y abrir**.
 
@@ -308,7 +308,7 @@ Para configurar las **Directivas** para **Modelos de fragmento de contenido perm
 
      Se pueden permitir varios modelos.
 
-   ![Directiva del modelo de fragmento de contenido](assets/cf-cfmodels-policy-assets-folder.png)
+   ![Directiva del modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-policy-assets-folder.png)
 
 1. **Guardar** cualquier cambio.
 
@@ -425,7 +425,7 @@ Puede administrar modelos **Bloqueados** desde la consola o desde el editor de m
 
    * Si seleccionas **Editar**, puedes editar y guardar tus actualizaciones:
 
-     ![Editar: modelo de fragmento de contenido bloqueado](assets/cf-cfmodels-editor-locked-edit.png)
+     ![Editar: modelo de fragmento de contenido bloqueado](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-editor-locked-edit.png)
 
      >[!NOTE]
      >

@@ -6,10 +6,10 @@ role: Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 36%
+source-wordcount: '381'
+ht-degree: 39%
 
 ---
 
@@ -65,12 +65,12 @@ Para usar la funcionalidad de fragmento de contenido, de los modelos de fragment
 
    1. Especifique un **Título**.
    1. Tras la creación, **Name** se convierte en el nombre de nodo en el repositorio.
-Puede introducir un nombre. Si deja el campo en blanco, se generará automáticamente basándose en el título y, a continuación, se ajustará según [las convenciones de nomenclatura de AEM](/help/implementing/developing/introduction/naming-conventions.md); puede ajustar el resultado si es necesario.
+Puede introducir un nombre. Si deja el campo en blanco, se generará automáticamente en función del título y, a continuación, se ajustará según las [convenciones de nomenclatura de AEM](/help/implementing/developing/introduction/naming-conventions.md); puede ajustar el resultado si es necesario.
    1. Para habilitar su uso, seleccione
       * **Modelos de fragmentos de contenido**
       * **Consultas persistentes de GraphQL**
 
-      ![Definir configuración](assets/cf-setup-create-conf.png)
+      ![Definir configuración](/help/sites-cloud/administering/content-fragments/assets/cf-setup-create-conf.png)
 
 1. Seleccione **Crear** para guardar la definición.
 
@@ -80,4 +80,4 @@ Cuando la configuración **global** está habilitada para la funcionalidad de fr
 
 Para utilizar otras configuraciones (excluyendo, por lo tanto, las globales) con una carpeta de Assets comparable, debe definir la conexión. Para ello, seleccione la **configuración** adecuada en la ficha **Cloud Services** de las **propiedades de carpeta** de la carpeta apropiada.
 
-![Aplicar configuración](assets/cf-setup-apply-conf.png)
+![Aplicar configuración](/help/sites-cloud/administering/content-fragments/assets/cf-setup-apply-conf.png)
