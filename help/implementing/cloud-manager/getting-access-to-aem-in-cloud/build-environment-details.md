@@ -5,15 +5,15 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 4dd6a9576092c2389f1416377b8e936360a7c7f8
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 29%
+source-wordcount: '1522'
+ht-degree: 20%
 
 ---
 
 
-# Entorno de compilación {#build-environment}
+# Entorno de compilación de Cloud Manager {#build-environment}
 
 Obtenga información sobre el entorno de compilación de Cloud Manager y cómo crea y prueba su código.
 
@@ -32,15 +32,15 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
 * Las versiones de Java instaladas son Oracle JDK 11.0.22, Oracle JDK 17.0.10 y Oracle JDK 21.0.4.
 
 <!-- OLD Removed 1/16/25 * **IMPORTANT:** By default, the JAVA_HOME environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`, which contains Oracle JDK 8u401. This default should be overridden for AEM Cloud Projects to use JDK 11. See the Setting the Maven JDK Version section for more details. -->
-* **IMPORTANTE:** De forma predeterminada, la variable de entorno `JAVA_HOME` está configurada en `/usr/lib/jvm/jdk1.8.0_401`, que contiene Oracle JDK 8u401. ***Este valor predeterminado debe anularse para que los proyectos de AEM Cloud utilicen JDK 21 (preferido), 17 o 11***. Consulte la sección [Configuración de la versión del JDK de Maven](#alternate-maven-jdk-version) para obtener más información.
-* Hay algunos paquetes de sistema adicionales instalados que son necesarios.
+* **IMPORTANTE:** De forma predeterminada, la variable de entorno `JAVA_HOME` está configurada en `/usr/lib/jvm/jdk1.8.0_401`, que contiene Oracle JDK 8u401. ***Anule este valor predeterminado para que los proyectos de AEM Cloud utilicen JDK 21 (preferido), 17 o 11***. Consulte la sección [Configuración de la versión del JDK de Maven](#alternate-maven-jdk-version) para obtener más información.
+* Hay algunos paquetes de sistema necesarios adicionales instalados.
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* Se pueden instalar otros paquetes en el momento de la compilación, tal como se describe en la sección [Instalación de paquetes de sistema adicionales](#installing-additional-system-packages).
-* Cada compilación se ejecuta en un entorno limpio, y el contenedor de compilación no mantiene ningún estado entre ejecuciones.
+* Otros paquetes se instalan en el momento de la compilación como se describe en la sección [Instalación de paquetes de sistema adicionales](#installing-additional-system-packages).
+* Cada compilación se ejecuta en un entorno nuevo; el contenedor de compilación no persiste en los datos entre ejecuciones.
 * Maven siempre se ejecuta con los tres comandos siguientes.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -49,15 +49,15 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
 
 >[!NOTE]
 >
->Cloud Manager no especifica una versión específica de `jacoco-maven-plugin`, pero la versión requerida depende de la versión Java del proyecto. Para Java 8, la versión del complemento debe ser al menos `0.7.5.201505241946`, mientras que las versiones más recientes de Java pueden requerir una versión más reciente.
+>Cloud Manager no especifica una versión específica de `jacoco-maven-plugin`, pero la versión requerida depende de la versión Java del proyecto. Para Java 8, la versión del complemento debe ser al menos `0.7.5.201505241946`, mientras que las versiones más recientes de Java requieren una versión más reciente.
 
 ## Repositorios de Maven HTTPS {#https-maven}
 
-Cloud Manager [versión 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) inició una actualización móvil del entorno de compilación (que finalizó con la versión 2023.12.0), que incluía una actualización a Maven 3.8.8. Un cambio significativo introducido en Maven 3.8.1 ha sido una mejora de la seguridad destinada a mitigar posibles vulnerabilidades. En concreto, Maven ahora deshabilita de forma predeterminada todas las duplicaciones de `http://*` inseguras, tal como se describe en las [Notas de la versión de Maven](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
+La versión [2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) de Cloud Manager inició una actualización sucesiva al entorno de compilación (que se completó con la versión 2023.12.0), que incluía una actualización de Maven 3.8.8. Un cambio significativo introducido en Maven 3.8.1 fue una mejora de la seguridad destinada a mitigar posibles vulnerabilidades. En concreto, Maven ahora deshabilita de forma predeterminada todas las duplicaciones de `http://*` inseguras, tal como se describe en las [Notas de la versión de Maven](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
 
-Como resultado de esta mejora de seguridad, algunas personas pueden tener problemas durante el paso de compilación, especialmente al descargar artefactos de repositorios Maven que utilizan conexiones HTTP no seguras.
+Algunos usuarios encuentran problemas durante el paso de generación al descargar artefactos de repositorios Maven que utilizan conexiones HTTP no seguras.
 
-Para garantizar una experiencia sin problemas con la versión actualizada, Adobe recomienda actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP. Este ajuste se ha llevado a cabo para adaptarse a la adopción creciente de la industria de protocolos de comunicación seguros y ayuda a mantener un proceso de compilación seguro y fiable.
+Para garantizar una experiencia sin problemas con la versión actualizada, Adobe recomienda actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP. Este ajuste se ajusta al cambio de la industria hacia protocolos de comunicación seguros y ayuda a mantener un proceso de construcción seguro y fiable.
 
 <!--
  OLD below Removed 1/16/25
@@ -79,7 +79,7 @@ To do so, create a file named `.cloudmanager/java-version` in the git repository
 
 ### Utilizar una versión de Java específica {#using-java-support}
 
-El proceso de generación de Cloud Manager utiliza el JDK de Oracle 8 para generar proyectos de forma predeterminada, pero los clientes de AEM Cloud Service deben establecer la versión del JDK de ejecución de Maven en 21 (preferido), 17 u 11.
+El proceso de generación de Cloud Manager utiliza el JDK de Oracle 8 para generar proyectos de forma predeterminada, pero los clientes de AEM Cloud Service establecen la versión del JDK de ejecución de Maven en 21 (preferido), 17 u 11.
 
 #### Establezca la versión de Maven JDK {#alternate-maven-jdk-version}
 
@@ -94,16 +94,16 @@ Al migrar la aplicación a una nueva versión de compilación de Java y de tiemp
 
 Adobe recomienda la siguiente estrategia de implementación:
 
-1. Ejecute su SDK local con Java 21, que puede descargar de https://experience.adobe.com/#/downloads, e implemente su aplicación en él y valide su funcionalidad. Compruebe en los registros que no hay errores, lo que indica problemas con la carga de clases o el tejido de código de bytes.
-1. Configure una rama en el repositorio de Cloud Manager para utilizar Java 21 como la versión de Java en tiempo de compilación, configure una canalización de DEV para utilizar esta rama y ejecute la canalización. Ejecute las pruebas de validación.
-1. Si tiene buen aspecto, configure la canalización de fase/producción para utilizar Java 21 como la versión de Java en tiempo de compilación y ejecute la canalización.
+1. Ejecute su SDK local con Java 21, que puede descargar de https://experience.adobe.com/#/downloads, implemente su aplicación en él y valide su funcionalidad. Para asegurarse de que no haya errores, que indican problemas con la carga de clases o el tejido de código de bytes, compruebe los registros.
+1. Para utilizar Java 21 como la versión de Java en tiempo de compilación, configure una rama en el repositorio de Cloud Manager, configure una canalización de DEV para utilizar esta rama y ejecute la canalización. Ejecute las pruebas de validación.
+1. Si los resultados son satisfactorios al utilizar Java 21 como versión de Java en tiempo de compilación, configure la canalización de fase/producción y ejecute la canalización.
 
-##### Acerca de algunas funciones de traducción {#translation-features}
+##### Funciones de traducción {#translation-features}
 
-Es posible que las siguientes funciones no funcionen correctamente cuando se implementan en el tiempo de ejecución de Java 21 y Adobe espera resolverlas a principios de 2025:
+Las siguientes funciones no funcionan correctamente cuando se implementan en el tiempo de ejecución de Java 21 y Adobe espera resolverlas a principios de 2025:
 
 * `XLIFF` (formato de archivo de intercambio de localización XML) produce un error al utilizar la traducción humana.
-* `I18n` (internacionalización) no administra correctamente las configuraciones regionales de idioma hebreo (`he`), indonesio (`in`) y yiddish (`yi`) debido a los cambios en el constructor de configuración regional en las versiones más recientes de Java.
+* `I18n` (internacionalización) no administra correctamente las configuraciones regionales de idioma hebreo (`he`), indonesio (`in`) y yiddish (`yi`) porque el constructor de configuración regional cambió en las versiones más recientes de Java.
 
 #### Requisitos de tiempo de ejecución {#runtime-requirements}
 
@@ -123,13 +123,13 @@ Actualice el uso del paquete Java `org.apache.aries.spifly.dynamic.bundle` a la 
 AEM Cloud Service SDK admite Java 21 y le permite comprobar la compatibilidad del proyecto con Java 21 antes de ejecutar una canalización de Cloud Manager.
 
 * **Editar un parámetro de tiempo de ejecución:**
-Al ejecutar AEM localmente con Java 21, los scripts de inicio (`crx-quickstart/bin/start` o `crx-quickstart/bin/start.bat`) fallan debido al parámetro `MaxPermSize`. Como solución, quite `-XX:MaxPermSize=256M` del script o defina la variable de entorno `CQ_JVM_OPTS`, estableciéndola en `-Xmx1024m -Djava.awt.headless=true`.
+Al ejecutar AEM localmente con Java 21, los scripts de inicio (`crx-quickstart/bin/start` o `crx-quickstart/bin/start.bat`) fallan debido al parámetro `MaxPermSize`. Como alternativa, quite `-XX:MaxPermSize=256M` del script o defina la variable de entorno `CQ_JVM_OPTS`, estableciéndola en `-Xmx1024m -Djava.awt.headless=true`.
 
   Este problema se resuelve en la versión 19149 y posteriores de SDK de AEM Cloud Service.
 
 >[!IMPORTANT]
 >
->Si un entorno aún no se ha actualizado automáticamente al tiempo de ejecución de Java 21, puede almacenarlo en déclencheur compilándolo con Java 17 o 21. Esto se hace estableciendo `.cloudmanager/java-version` en `21` o `17`. Póngase en contacto con Adobe en [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) si tiene alguna pregunta.
+>Si un entorno aún no se ha actualizado automáticamente al tiempo de ejecución de Java 21, puede almacenarlo en déclencheur compilándolo con Java 17 o 21. Puede configurarlo estableciendo `.cloudmanager/java-version` en `21` o `17`. Póngase en contacto con Adobe en [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) si tiene alguna pregunta.
 
 #### Requisitos de tiempo de compilación {#build-time-reqs}
 
@@ -191,9 +191,9 @@ Actualice el uso de `maven-bundle-plugin` a la versión 5.1.5 o superior para ga
 
 ## Variables de entorno: estándar {#environment-variables}
 
-Es posible que necesite variar el proceso de compilación en función de la información sobre el programa o la canalización.
+Configure el proceso de compilación en función de la información sobre el programa o la canalización.
 
-Por ejemplo, si la minificación de JavaScript se produce en el momento de la compilación con una herramienta como gulp, se pueden preferir diferentes niveles de minificación para varios entornos. Una compilación de desarrollo podría utilizar un nivel de minificación más ligero en comparación con el ensayo y la producción.
+Por ejemplo, si la minificación de JavaScript se produce en el momento de la compilación con una herramienta como gulp, se prefieren diferentes niveles de minificación para varios entornos. Una compilación de desarrollo utiliza un nivel de minificación más ligero en comparación con el ensayo y la producción.
 
 Para admitir esto, Cloud Manager agrega estas variables de entorno estándar al contenedor de compilación para cada ejecución.
 
@@ -210,13 +210,13 @@ Para admitir esto, Cloud Manager agrega estas variables de entorno estándar al 
 
 ## Variables de entorno: canalización {#pipeline-variables}
 
-El proceso de compilación puede requerir variables de configuración específicas que no deben almacenarse en el repositorio de Git. Además, es posible que tenga que ajustar estas variables entre ejecuciones de canalización que utilicen la misma rama.
+El proceso de compilación requiere variables de configuración específicas que no se almacenan en el repositorio de Git. Además, debe ajustar estas variables entre ejecuciones de canalización que utilicen la misma rama.
 
 Consulte también [Configurar variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) para obtener más información.
 
 ## Instalación de paquetes de sistema adicionales {#installing-additional-system-packages}
 
-Algunas compilaciones requieren paquetes de sistema adicionales para funcionar completamente. Por ejemplo, una compilación puede invocar un script de Python o Ruby y debe tener instalado un intérprete de idioma adecuado. Este proceso de instalación se puede administrar llamando a [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) en su `pom.xml` para invocar APT. Esta ejecución debe envolverse generalmente en un perfil Maven específico de Cloud Manager. En este ejemplo se instala Python.
+Algunas compilaciones requieren paquetes de sistema adicionales para funcionar completamente. Por ejemplo, una compilación invoca un script de Python o Ruby y debe tener instalado un intérprete de idioma adecuado. Este proceso de instalación se puede administrar llamando a [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) en su `pom.xml` para invocar APT. Esta ejecución está envuelta en un perfil Maven específico de Cloud Manager. En este ejemplo se instala Python.
 
 ```xml
         <profile>

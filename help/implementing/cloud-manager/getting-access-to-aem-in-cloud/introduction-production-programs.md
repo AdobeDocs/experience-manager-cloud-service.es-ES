@@ -5,7 +5,7 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 5a7a52a4ec67417f8a61406913ecf5175d330664
+source-git-commit: d41a68a2d60c45fcd0b48799c93f43b533948217
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 44%
@@ -15,7 +15,7 @@ ht-degree: 44%
 
 # Introducción a los programas de producción {#production-programs}
 
-Un programa de producción está pensado para un equipo que esté listo para empezar a escribir, generar y probar código. El objetivo es implementarlo para alojar tráfico en directo.
+Un programa de producción está pensado para un equipo que esté listo para empezar a escribir, generar y probar código. El objetivo es implementarlo para admitir el tráfico en directo.
 
 Después de [crear su programa de producción](creating-production-programs.md), un [asistente para la creación de programas](using-the-wizard.md) guiará a los usuarios a través de las selecciones según su objetivo al crear el programa.
 
