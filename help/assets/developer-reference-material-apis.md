@@ -80,7 +80,7 @@ La configuración de las API de AEM Assets basadas en OpenAPI implica la moderni
 En [!DNL Experience Manager] como [!DNL Cloud Service], puede cargar directamente los recursos al almacenamiento en la nube mediante la API HTTP. A continuación se indican los pasos para cargar un archivo binario. Ejecute estos pasos en una aplicación externa y no dentro de la JVM [!DNL Experience Manager].
 
 1. [Enviar una solicitud HTTP](#initiate-upload). Informa a [!DNL Experience Manage]r implementación de su intención de cargar un nuevo binario.
-1. [COLOQUE el contenido del binario ](#upload-binary) en uno o más URI proporcionados por la solicitud de inicio.
+1. [COLOQUE el contenido del binario &#x200B;](#upload-binary) en uno o más URI proporcionados por la solicitud de inicio.
 1. [Envíe una solicitud HTTP](#complete-upload) para informar al servidor de que el contenido del binario se cargó correctamente.
 
 ![Descripción general del protocolo de carga binaria directa](assets/add-assets-technical.png)
