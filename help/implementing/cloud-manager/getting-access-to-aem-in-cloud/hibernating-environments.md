@@ -5,10 +5,10 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 9834479cfb7a5ddc116fe23074b84a77b3466389
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 42%
+source-wordcount: '717'
+ht-degree: 34%
 
 ---
 
@@ -22,9 +22,9 @@ Los entornos de un programa de zona protegida entran en modo de hibernación si 
 La hibernación puede producirse de forma automática o manual.
 
 * **Automática**: Los entornos de programa de zona protegida hibernan automáticamente tras ocho horas de inactividad. La inactividad se define como la ausencia de solicitudes a los servicios de autor, vista previa y publicación.
-* **Manual**: Como usuario, puede hacer hibernar manualmente un entorno de zona protegida. No es necesario hacerlo porque la hibernación se produce automáticamente como se describió anteriormente.
+* **Manual**: puede hibernar manualmente un entorno de zona protegida. No es necesario hacerlo porque la hibernación se produce automáticamente como se describió anteriormente.
 
-Puede tardar hasta unos minutos en que los entornos de programa de zona protegida entren en modo de hibernación. Los datos se conservan durante la hibernación.
+Los entornos de programa de zona protegida entran en modo de hibernación en cuestión de minutos. Los datos se conservan durante la hibernación.
 
 ### Hibernar manualmente un entorno de programa de zona protegida {#using-manual-hibernation}
 
@@ -100,7 +100,7 @@ En Developer Console, haga clic en el vínculo **Entornos** en las rutas de expl
 
 ### Permisos para anular la hibernación {#permissions-de-hibernate}
 
-Cualquier usuario con un perfil de producto que le permita acceder a AEM as a Cloud Service debe poder acceder a **Developer Console**, permitiéndole anular la hibernación del entorno.
+Cualquier usuario con un perfil de producto que le permita acceder a AEM as a Cloud Service podrá acceder a **Developer Console**. Esto les permite anular la hibernación del entorno.
 
 ## Acceso a un entorno en hibernación {#accessing-hibernated-environment}
 
@@ -112,7 +112,7 @@ Cuando un usuario realiza una solicitud de explorador al servicio de autor, vist
 
 Los entornos en hibernación aún permiten implementaciones y actualizaciones manuales de AEM.
 
-* Un usuario puede utilizar una canalización para implementar código personalizado en entornos en hibernación. El entorno permanece en hibernación y el nuevo código aparece en el entorno una vez deshibernado.
+* Un usuario utiliza una canalización para implementar código personalizado en entornos en hibernación. El entorno permanece en hibernación y el nuevo código aparece en el entorno una vez deshibernado.
 
 * Las actualizaciones de AEM se pueden aplicar a entornos hibernados y se pueden activar manualmente desde Cloud Manager. El entorno permanece en hibernación y la nueva versión aparece en el entorno una vez que se ha anulado la hibernación.
 

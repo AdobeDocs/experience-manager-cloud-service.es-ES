@@ -6,10 +6,10 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
+source-git-commit: a927c0556f47056fc4e6b0f812703baa34e53903
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 5%
+source-wordcount: '2155'
+ht-degree: 7%
 
 ---
 
@@ -31,7 +31,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 | × | No compatible. No utilice. |
 | - | No disponible |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API de Java | [Servicio de cómputo de recursos](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=es) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=es#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API de Java | [Servicio de cómputo de recursos](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=es) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **binario original** |  |  |  |  |  |  |
 | Crear original | ✓ | × | - | × | × | - |
@@ -69,12 +69,18 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 >
 > Adobe no recomienda cargar paquetes de recursos, ya que infringe nuestras prácticas recomendadas para evitar la administración binaria en AEM. La carga de recursos a través de paquetes JCR no provoca que el procesamiento se active en esos recursos en AEM as a Cloud Service.
 
+## Configuración de las API de AEM Assets basadas en OpenAPI {#setup-openapi-aem-assets}
+
+Si el servicio Perfil de producto `AEM Assets API Users` no se muestra en los entornos de producción, desarrollo o inferiores creados antes de noviembre de 2024, debe configurar las API de AEM Assets basadas en OpenAPI.
+
+La configuración de las API de AEM Assets basadas en OpenAPI implica la modernización del entorno de AEM as a Cloud Service y la habilitación del acceso a las API de AEM Assets. La modernización debe ejecutarse por entorno (producción, desarrollo y fase). Para obtener más información, consulte [Configurar las API de AEM basadas en OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
+
 ## Carga de recursos {#asset-upload}
 
 En [!DNL Experience Manager] como [!DNL Cloud Service], puede cargar directamente los recursos al almacenamiento en la nube mediante la API HTTP. A continuación se indican los pasos para cargar un archivo binario. Ejecute estos pasos en una aplicación externa y no dentro de la JVM [!DNL Experience Manager].
 
 1. [Enviar una solicitud HTTP](#initiate-upload). Informa a [!DNL Experience Manage]r implementación de su intención de cargar un nuevo binario.
-1. [PUT cambió el contenido del binario](#upload-binary) a uno o más URI proporcionados por la solicitud de inicio.
+1. [COLOQUE el contenido del binario ](#upload-binary) en uno o más URI proporcionados por la solicitud de inicio.
 1. [Envíe una solicitud HTTP](#complete-upload) para informar al servidor de que el contenido del binario se cargó correctamente.
 
 ![Descripción general del protocolo de carga binaria directa](assets/add-assets-technical.png)

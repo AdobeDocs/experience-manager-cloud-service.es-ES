@@ -5,10 +5,10 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 0376fa4df5966807a11a64f304c8da2112e62bfd
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 15%
+source-wordcount: '482'
+ht-degree: 16%
 
 ---
 
@@ -43,7 +43,7 @@ Obtenga más información acerca de los tipos de programas en el documento [Expl
 1. En el cuadro de lista **Soluciones y complementos**, seleccione una o varias soluciones para incluirlas en el programa.
 
    * Haga clic en las comillas angulares a la izquierda del nombre de una solución para mostrar los complementos opcionales disponibles que desee incluir en una solución seleccionada.
-   * Las soluciones **Sites**, **Assets** y **Edge Delivery Services** siempre están seleccionadas de forma predeterminada al crear un programa de zona protegida. No puede anular su selección.
+   * Cloud Manager siempre selecciona las soluciones **Sites**, **Assets** y **Edge Delivery Services** de forma predeterminada al crear un programa de zona protegida. No puede anular su selección.
 
    ![Seleccionar soluciones y complementos para una zona protegida](assets/sandbox-solutions-add-ons.png)
 
@@ -53,13 +53,13 @@ Obtenga más información acerca de los tipos de programas en el documento [Expl
 
 ## Acceso a zona protegida {#access}
 
-Una vez que se haya terminado de crear un nuevo programa de zona protegida, puede ver los detalles de su configuración de zona protegida y acceder al entorno en la página de información general del programa.
+Después de crear un nuevo programa de zona protegida, puede ver los detalles de su configuración de zona protegida y acceder al entorno en la página de información general del programa.
 
-1. En la página de aterrizaje de Cloud Manager, en el programa de espacio aislado, haga clic en ![Icono de lista más pequeña](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en el programa de espacio aislado creado.
+1. En la página de aterrizaje de Cloud Manager, para el programa de espacio aislado, haga clic en ![Icono de lista más pequeña](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en el programa de espacio aislado creado.
 
    ![Acceso a la información general del programa](assets/program-overview-sandbox.png)
 
-1. Cuando finalice el paso de creación del proyecto, puede hacer clic en el vínculo **Acceder a la info del repositorio** para poder usar su repositorio de Git.
+1. Cuando finalice el paso de creación del proyecto, puede hacer clic en el vínculo **Acceder a la info del repositorio** para usar su repositorio de Git.
 
    ![Configuración del programa](assets/create-program4.png)
 
@@ -71,7 +71,7 @@ Una vez que se haya terminado de crear un nuevo programa de zona protegida, pued
 
    ![Vínculo Acceso a AEM](assets/create-program5.png)
 
-1. Cuando se completa la implementación de la canalización que no es de producción en el desarrollo, el asistente de call-to-action le guía para acceder al entorno de desarrollo de AEM o para implementar código en el entorno de desarrollo.
+1. Cuando se completa la implementación de la canalización que no es de producción en el desarrollo, el asistente de call-to-action le guía para acceder al entorno de desarrollo de AEM o para implementar código en él.
 
    ![Implementación de zonas protegidas](assets/create-program-setup-deploy.png)
 
