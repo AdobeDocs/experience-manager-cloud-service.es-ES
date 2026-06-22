@@ -5,7 +5,7 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 1f5eb7bd50f90c9bac3adb42823f038668a10c36
+source-git-commit: 01db3bdabcbdcc8256b80841cf6fa84e4726c0a2
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 25%
@@ -39,7 +39,7 @@ Un programa de zona protegida está limitado a un entorno de desarrollo.
 
 ## Restricciones y condiciones de uso {#usage-notes-conditions}
 
-Como no están pensados para el tráfico en directo, los programas de zonas protegidas tienen ciertas limitaciones y condiciones de uso, lo que los diferencia de los programas de producción.
+Como no están pensados para el tráfico en directo, los programas de zonas protegidas tienen ciertas limitaciones y condiciones de uso, lo que los distingue de los programas de producción.
 
 | Limitación/condición | Descripción |
 | --- | --- |
