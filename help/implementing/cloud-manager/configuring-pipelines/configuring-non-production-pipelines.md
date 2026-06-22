@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1729'
 ht-degree: 21%
 
 ---
@@ -30,10 +30,8 @@ Después de configurar un programa y crear al menos un entorno en la interfaz de
 
 **Para agregar una nueva canalización que no sea de producción:**
 
-1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
-1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
-1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
-1. Seleccione la organización que desee.
+{{sign-in-to-cloud-manager}}
+
 1. En la consola **Mis programas**, haga clic en un programa.
 1. En el panel lateral izquierdo, haga clic en **Canalizaciones**.
 1. En la página **Canalizaciones**, cerca de la esquina superior derecha, haga clic en **Agregar canalización** > **Agregar canalización que no sea de producción**.
@@ -270,10 +268,8 @@ Consulte [Agregar una canalización que no sea de producción](#adding-non-produ
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
-1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
-1. In the **Quick access** section, click **Experience Manager**.
-1. In the left side panel, click **Cloud Manager**.
-1. Select an organization that you want.
+{{sign-in-to-cloud-manager}}
+
 1. On the **My Programs** console, click a program. 
 
 1. Access the **Pipelines** card from the Cloud Manager home screen. Click **+Add** and select **Add Non-Production Pipeline**. 

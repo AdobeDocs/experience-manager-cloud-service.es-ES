@@ -5,9 +5,9 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1349'
 ht-degree: 9%
 
 ---
@@ -40,7 +40,7 @@ Cada vez que se edita un programa, incluida la adición o eliminación de una so
 1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
 1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
 1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
-1. Seleccione la organización adecuada.
+1. En Cloud Manager, seleccione la organización adecuada.
 1. En la página **Mis programas**, haga clic en el programa que desee editar.
 1. Cerca de la esquina superior izquierda de la página, haga clic en el nombre del programa y, a continuación, seleccione **Editar programa**.
 
@@ -114,7 +114,7 @@ Antes de iniciar la marcación para eliminación, el sistema valida si el progra
 1. Seleccione la organización adecuada.
 1. En la página **Mis programas**, para el programa de producción que desea marcar para su eliminación, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, haga clic en **Eliminar programa**.
 
-   ![Seleccionar Eliminar programa de la lista desplegable de un programa de producción &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Ejemplo de programa de producción visto arriba es solo con fines ilustrativos.*
+   ![Seleccionar Eliminar programa de la lista desplegable de un programa de producción ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Ejemplo de programa de producción visto arriba es solo con fines ilustrativos.*
 
 1. En el cuadro de diálogo **Marcar programa de producción para eliminación**, revise la advertencia que enumera los recursos conectados al programa, incluidos los entornos de producción, fase y desarrollo.
 
@@ -176,7 +176,6 @@ Al eliminar un programa de zona protegida se eliminan todos los entornos y canal
 1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
 1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
 1. Seleccione la organización adecuada.
-
 1. En la página **[Mis programas](#my-programs)**, haga clic en el programa de zona protegida que desee editar para mostrar sus detalles.
 
 1. Haga clic en el nombre del programa de zona protegida en la parte superior izquierda de la página y seleccione **Eliminar programa**.

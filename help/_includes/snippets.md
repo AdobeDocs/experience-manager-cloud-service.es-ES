@@ -1,8 +1,8 @@
 ---
-source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 99%
+source-wordcount: '1719'
+ht-degree: 93%
 
 ---
 # Fragmentos de código {#snippets}
@@ -51,7 +51,7 @@ ht-degree: 99%
 * [Enviar a Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Enviar a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Conectar un formulario adaptable a la aplicación de Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Conexión de un formulario adaptable a Microsoft](/help/forms/configure-msdynamics.md)
+* [Conexión de un formulario adaptable a Microsoft® Dynamics](/help/forms/configure-msdynamics.md)
 * [Conectar un formulario adaptable a Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Creación de una acción de envío personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
@@ -100,7 +100,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
    <tr>
     <td>Realizar operaciones matemáticas en el campo de panel repetible </td>
     <td>Las funciones matemáticas OOTB se pueden aplicar en campos del panel repetible para realizar funciones como suma o promedio mediante el editor de reglas. Se deben proporcionar dos argumentos: el primero especifica el panel repetible que contiene el campo, mientras que el segundo especifica el campo dentro del panel repetible correspondiente. </td>
-    <td>Las operaciones matemáticas en el campo de panel repetible se pueden realizar mediante las funciones personalizadas. También puede aplicar las funciones matemáticas directamente a los campos del panel repetible en el editor de reglas.
+    <td>Las operaciones matemáticas en el campo del panel repetible se pueden realizar mediante las funciones personalizadas. También puede aplicar las funciones matemáticas directamente a los campos del panel repetible en el Editor de reglas.
    </td>
    </tr>
       <tr>
@@ -166,11 +166,11 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 
 >[!IMPORTANT]
 >
->La canalización front-end requiere que se añada de antemano la siguiente Lista de IP permitidas a Cloud Manager.
->Si es necesario, [añada la Lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando el bloque de direcciones siguiente. Cada dirección está separada por una coma. Pegue el bloque en el campo **Dirección IP/CIDR** del cuadro de diálogo **Agregar lista de IP permitidas**. Coloque el cursor justo después de la primera coma en la lista de direcciones y presione **Intro**. Guarde la lista.
->Para evitar que se interrumpa la ejecución de la canalización front-end, asegúrese de añadir esta Lista de IP permitidas a Cloud Manager *antes* de habilitar la canalización.
+>La canalización front-end requiere que se agregue de antemano la siguiente Lista de permitidos IP a Cloud Manager.
+>Si es necesario, [agregue la Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando el bloque de direcciones a continuación. Cada dirección está separada por una coma. Pegue el bloque en el campo **Dirección IP / CIDR** del cuadro de diálogo **Agregar Lista de permitidos IP**. Coloque el cursor justo después de la primera coma en la lista de direcciones y presione **Intro**. Guarde la lista.
+>Para evitar que se interrumpa la ejecución de la canalización front-end, asegúrese de agregar esta Lista de permitidos IP a Cloud Manager *antes de* de habilitar la canalización.
 >
->**Lista de IP permitidas de Cloud Manager**
+>**Lista de permitidos IP DE Cloud Manager**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
@@ -178,8 +178,8 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 
 >[!IMPORTANT]
 >
->Si utiliza (o tiene intención de utilizar) la canalización front-end para desarrollar sitios, debe añadir de antemano la Lista de IP permitidas de Cloud Manager.
->Consulte [Uso de la Lista de IP permitidas de Cloud Manager con la canalización front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>Si utiliza (o tiene intención de utilizar) la canalización front-end para desarrollar sitios, se debe agregar de antemano la Lista de permitidos IP de Cloud Manager.
+>Ver [Uso de la Lista de permitidos IP de Cloud Manager con la canalización front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## Listas de IP permitidas y el editor universal {#ip-allow-lists-ue}
 
@@ -220,7 +220,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 **Registro de un vale de asistencia:**
 
-1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/es?support-tab=home#support) y cree un vale.
+1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un vale.
 1. Añada **Edge Delivery** en el título del ticket.
 1. En la descripción, proporcione los siguientes detalles además de la descripción del problema:
 
@@ -287,3 +287,12 @@ Para acelerar la creación del sitio, Adobe proporciona una serie de plantillas 
 * [Sitio de AEM con Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases): para la creación de páginas de AEM con el editor universal y el envío mediante [Edge Delivery](/help/edge/overview.md)
 * [Edge Delivery Services con la creación de AEM para comercio](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases): para la creación de páginas de AEM con el editor universal para proyectos de comercio y el envío mediante [Edge Delivery](/help/edge/overview.md)
 * [Plantilla de sitio de AEM estándar](https://github.com/adobe/aem-site-template-standard/releases): para crear páginas tradicionales de AEM y realizar envíos a través del [envío de publicación](/help/sites-cloud/authoring/author-publish.md)
+
+
+## Iniciar sesión en Cloud Manager {#sign-in-to-cloud-manager}
+
+1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
+   1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
+   1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
+1. En Cloud Manager, cerca de la esquina superior derecha de la página, seleccione la organización que desee.
+

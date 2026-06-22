@@ -7,10 +7,10 @@ role: Admin, Developer
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 10%
+source-wordcount: '606'
+ht-degree: 9%
 
 ---
 
@@ -42,10 +42,8 @@ Antes de comenzar a implementar el código, establece la configuración de la ca
 
 **Para agregar una canalización de Edge Delivery:**
 
-1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
-1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
-1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
-1. Seleccione la organización que desee.
+{{sign-in-to-cloud-manager}}
+
 1. En la consola **Mis programas**, haga clic en un programa.
 
    ![Página de mis programas en Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)
