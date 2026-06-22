@@ -6,9 +6,9 @@ mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2ec74b76306fb1321f270ece0bd2a79dc33e8277
 workflow-type: tm+mt
-source-wordcount: '4302'
+source-wordcount: '4380'
 ht-degree: 2%
 
 ---
@@ -276,7 +276,7 @@ El Editor de texto enriquecido utiliza un elemento DOM contenedor con un identif
 
    * **Nombre** `cssName`
    * **Tipo** `String`
-   * **Valor** El nombre de la clase CSS (sin &#39;.&#39; anterior; por ejemplo, `cssClass` en lugar de `.cssClass`)
+   * **Valor** El nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
 
 1. Agregue la propiedad `text` al mismo nodo; esto define el texto mostrado en el cuadro de selección:
 
@@ -678,13 +678,13 @@ Al agregar vínculos en [!DNL Experience Manager], puede definir los estilos CSS
 
       * **Nombre** `cssInternal`
       * **Tipo** `String`
-      * **Valor** es el nombre de la clase CSS (sin &#39;.&#39; anterior; por ejemplo, `cssClass` en lugar de `.cssClass`)
+      * **Valor** representa el nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
 
    * Estilo CSS para vínculos externos
 
       * **Nombre** `cssExternal`
       * **Tipo** `String`
-      * **Valor** es el nombre de la clase CSS (sin &#39;.&#39; anterior; por ejemplo, `cssClass` en lugar de `.cssClass`)
+      * **Valor** representa el nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
 
    * Matriz de **[!UICONTROL protocolos]** válidos, incluidos `https://`, `https://`, `file://`, `mailto:` y otros,
 

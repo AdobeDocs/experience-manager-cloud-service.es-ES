@@ -4,10 +4,10 @@ description: Obtenga información acerca de los aspectos básicos y las práctic
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 2ec74b76306fb1321f270ece0bd2a79dc33e8277
 workflow-type: tm+mt
-source-wordcount: '3538'
-ht-degree: 93%
+source-wordcount: '3539'
+ht-degree: 91%
 
 ---
 
@@ -118,9 +118,9 @@ Es posible limitar la instalación de contenido mutable a la creación o publica
 >[!NOTE]
 >Los paquetes de contenido se implementan en todos los tipos de entorno (des., fase, prod.). No es posible limitar la implementación a un entorno específico. Esta limitación se aplica para garantizar la opción de una ejecución de prueba de ejecución automatizada. El contenido específico de un entorno requiere una instalación manual mediante el [administrador de paquetes](/help/implementing/developing/tools/package-manager.md).
 
-Además, no hay ningún mecanismo para restablecer los cambios del paquete de contenido mutable después de haberlos aplicado. Si los clientes detectan un problema, pueden optar por solucionarlo en su próxima versión de código o, como último recurso, restaurar todo el sistema a un punto en el tiempo antes de la implementación.
+Además, no hay mecanismo para revertir los cambios del paquete de contenido mutable después de aplicarlos. Si los clientes detectan un problema, pueden optar por solucionarlo en su próxima versión de código o, como último recurso, restaurar todo el sistema a un punto en el tiempo antes de la implementación.
 
-Cualquier paquete de terceros incluido debe validarse como compatible con AEM as a Cloud Service; de lo contrario, su inclusión dará como resultado un error de implementación.
+Cualquier paquete de terceros incluido debe validarse como compatible con AEM as a Cloud Service; de lo contrario, su inclusión provoca un error de implementación.
 
 Como se mencionó anteriormente, los clientes con bases de código existentes deben ajustarse al ejercicio de reestructuración de repositorios necesario por los cambios de repositorio de la versión 6.5 descritos en la [documentación de AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es).
 
