@@ -5,16 +5,16 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 5467a311-727d-4f67-ba43-4b6548431061
-source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 12%
+source-wordcount: '1526'
+ht-degree: 11%
 
 ---
 
 # Evaluación del estado {#about-health-assessment}
 
-La evaluación de estado es un análisis automatizado y no intrusivo para entornos de producción y ensayo en Cloud Manager dentro de AEM as a Cloud Service. Evalúa el contenido, el código y las configuraciones para encontrar antipatrones y desviaciones de las prácticas recomendadas, lo que mejora la seguridad y el rendimiento.
+La evaluación de estado es un análisis automatizado y no intrusivo para entornos de producción y ensayo en Cloud Manager dentro de AEM as a Cloud Service. Evalúa el contenido, el código y las configuraciones para identificar los antipatrones y las desviaciones de las prácticas recomendadas, lo que mejora la seguridad y el rendimiento.
 
 El servicio de evaluación médica hace lo siguiente:
 
@@ -33,12 +33,12 @@ Consulte también [Patrones de evaluación de estado](#ha-patterns) para ver las
 
 1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
 1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
-1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
-1. Seleccione la organización que desee utilizar. La siguiente imagen es para ilustrarla. Seleccione su propio nombre de organización.
+1. En el panel izquierdo, haga clic en **Cloud Manager**.
+1. En Cloud Manager, cerca de la esquina superior derecha de la página, seleccione la organización que desee utilizar. La siguiente imagen es solo de referencia; seleccione su organización.
 
    ![Selección de una organización en Cloud Manager](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
-1. En la consola **Mis programas**, haga clic en el programa para el que desea ver su informe.
+1. En la consola **Mis programas**, haga clic en el programa para el que desea ver el informe.
 
 1. Realice una de las siguientes acciones:
    * En la tarjeta **Entornos**, a la derecha del nombre de un entorno, haga clic en ![Icono de puntos suspensivos o en Más](https://spectrum.adobe.com/static/icons/ui_18/More.svg) y, a continuación, elija **Evaluación del estado** en el menú.
@@ -64,11 +64,11 @@ Consulte también [Patrones de evaluación de estado](#ha-patterns) para ver las
 
    ![Informe en plena ejecución](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
 
-   Cuando se complete el informe, este aparecerá en la página **Evaluación del estado**, en la sección **Último informe**.
+   Cuando se completa el informe, aparece en la sección **Último informe** de la página **Evaluación del estado**.
 
 ## Ver el informe más reciente {#view-latest-report}
 
-* En la página **Evaluación del estado**, revise la sección **Último informe** para obtener la siguiente información:
+* En la página **Evaluación del estado**, revise la sección **Informe más reciente** para obtener la siguiente información:
 
    * Resultados de la ejecución más reciente.
    * Fecha y hora de ejecución.
@@ -90,7 +90,7 @@ Consulte también [Patrones de evaluación de estado](#ha-patterns) para ver las
 
      ![Descripciones y búsqueda de problemas](/help/implementing/cloud-manager/reports/assets/ha-issue-descriptions-and-findings.png)
 
-   * La opción **Descargar** permite descargar informes de problemas individuales en PDF.
+   * La opción **Descargar** le permite descargar informes de problemas individuales en PDF.
 
      ![Descargar PDF de informes de problemas individuales](/help/implementing/cloud-manager/reports/assets/ha-details-page-doc-links.png)
 
@@ -121,16 +121,16 @@ En la página **Evaluación de estado**, revise la sección **Informes anteriore
 
 ## Patrones de evaluación de estado {#ha-patterns}
 
-A continuación se muestra la lista completa de antipatrones y problemas que la evaluación de estado detecta en AEM as a Cloud Service. La tabla agrupa los elementos en tres tipos: análisis de contenido, análisis de código y antipatrones de Cloud Service Optimizer, con una explicación para cada uno.
+A continuación se muestra una lista completa de los antipatrones y los problemas que la evaluación de estado detecta en AEM as a Cloud Service. La tabla agrupa los elementos en tres tipos: análisis de contenido, análisis de código y antipatrones de Cloud Service Optimizer, con una explicación para cada uno.
 
 | Nombre del patrón | Categoría | Tipo | Descripción | Impacto | ¿Auto-arreglado? |
 | --- | --- | --- | --- | --- | --- |
 | Grupos de AEM personalizados con adiciones de usuarios directos | Seguridad | Análisis de contenido | Los usuarios se agregan directamente a los grupos de AEM en lugar de agregar grupos de IMS como miembros. | La administración de permisos y la gobernanza de seguridad pueden complicarse. [Compatibilidad con IMS](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/ims-support) | No |
-| Falta el nodo de contenido JCR en las páginas | Estructura del repositorio | Análisis de contenido | Falta el nodo `jcr:content` en la página. | Limitaciones funcionales en Experience Manager as a Cloud Service. [Detección de patrones - ACV](https://experienceleague.adobe.com/es/docs/experience-manager-pattern-detection/table-of-contents/acv) | No |
-| Falta el tipo de medio de Sling en las páginas | Estructura del repositorio | Análisis de contenido | Falta `sling:resourceType` en la página. | Limitaciones funcionales en Experience Manager as a Cloud Service. [Detección de patrones - ACV](https://experienceleague.adobe.com/es/docs/experience-manager-pattern-detection/table-of-contents/acv) | No |
-| Páginas con recuento excesivo de nodos | Rendimiento | Análisis de contenido | Las páginas contienen un gran número de nodos en su estructura. | Tiempos de carga de la página lentos y mala experiencia del usuario. [Detección de patrones - PCX](https://experienceleague.adobe.com/es/docs/experience-manager-pattern-detection/table-of-contents/pcx) | No |
-| Demasiadas instancias de flujo de trabajo en ejecución | Rendimiento | Análisis de contenido | Se están ejecutando demasiadas instancias de flujo de trabajo. | Degradación general del rendimiento del sistema. [Tareas de mantenimiento](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/maintenance) | No |
-| Instancias de flujo de trabajo completadas sin depurar | Rendimiento | Análisis de contenido | Las instancias de flujo de trabajo completadas anteriores no se depuran. | Reducción de la eficacia del sistema y aumento de los costes de almacenamiento. [Tareas de mantenimiento](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/maintenance) | No |
+| Falta el nodo de contenido JCR en las páginas | Estructura del repositorio | Análisis de contenido | Falta el nodo `jcr:content` en la página. | Limitaciones funcionales en Experience Manager as a Cloud Service. [Detección de patrones - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | No |
+| Falta el tipo de medio de Sling en las páginas | Estructura del repositorio | Análisis de contenido | Falta `sling:resourceType` en la página. | Limitaciones funcionales en Experience Manager as a Cloud Service. [Detección de patrones - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | No |
+| Páginas con recuento excesivo de nodos | Rendimiento | Análisis de contenido | Las páginas contienen un gran número de nodos en su estructura. | Tiempos de carga de la página lentos y mala experiencia del usuario. [Detección de patrones - PCX](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | No |
+| Demasiadas instancias de flujo de trabajo en ejecución | Rendimiento | Análisis de contenido | Se están ejecutando demasiadas instancias de flujo de trabajo. | Degradación general del rendimiento del sistema. [Tareas de mantenimiento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) | No |
+| Instancias de flujo de trabajo completadas sin depurar | Rendimiento | Análisis de contenido | Las instancias de flujo de trabajo completadas anteriores no se depuran. | Reducción de la eficacia del sistema y aumento de los costes de almacenamiento. [Tareas de mantenimiento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) | No |
 | Estadísticas de uso de fragmentos de contenido | Estadísticas | Análisis de contenido | Registra el número de fragmentos de contenido en uso. | N/D | N/D |
 | Estadísticas de uso del modelo de fragmento de contenido | Estadísticas | Análisis de contenido | Registra el número de modelos de fragmento de contenido en uso. | N/D | N/D |
 | MSM: gran cantidad de modelos | Estadísticas | Análisis de contenido | Registra el número de modelos. | Puede aumentar la complejidad de la administración y dificultar la gobernanza del contenido. | N/A |

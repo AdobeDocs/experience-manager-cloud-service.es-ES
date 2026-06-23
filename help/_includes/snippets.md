@@ -1,8 +1,8 @@
 ---
-source-git-commit: 73befe46aa362b0d6ef8530fbf3bb222c262d626
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1719'
-ht-degree: 93%
+source-wordcount: '1721'
+ht-degree: 92%
 
 ---
 # Fragmentos de código {#snippets}
@@ -220,7 +220,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 **Registro de un vale de asistencia:**
 
-1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/es?support-tab=home#support) y cree un vale.
+1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un vale.
 1. Añada **Edge Delivery** en el título del ticket.
 1. En la descripción, proporcione los siguientes detalles además de la descripción del problema:
 
@@ -231,8 +231,8 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
    1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
-   1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
-1. En Cloud Manager, cerca de la esquina superior derecha de la página, seleccione la organización que desee.
+   1. En el panel izquierdo, haga clic en **Cloud Manager**.
+1. En Cloud Manager, cerca de la esquina superior derecha de la página, seleccione la organización que desee utilizar.
 
 
 ## El Editor de SPA es preferible al editor universal {#ue-over-spa}
