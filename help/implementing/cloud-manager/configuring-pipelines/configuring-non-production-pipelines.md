@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 0171e2e6a27a8b60bcd94792e616961598f580fb
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 21%
+source-wordcount: '1712'
+ht-degree: 18%
 
 ---
 
@@ -54,13 +54,13 @@ Después de configurar un programa y crear al menos un entorno en la interfaz de
 1. Seleccione el **Comportamiento de errores de métricas importantes** que desee usar.
 
    * **Preguntar cada vez**: esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
-   * **Fallo inmediatamente**: si se selecciona, la canalización se cancela siempre que se produzca un fallo importante. Básicamente, emula a un usuario rechazando manualmente cada error.
-   * **Continuar inmediatamente**: si se selecciona, la canalización se ejecuta automáticamente cada vez que se produzca un error importante. Básicamente, emula al usuario que aprueba manualmente cada error.
+   * **Fallo inmediatamente**: si se selecciona, la canalización se cancela siempre que se produzca un fallo importante. Emula a un usuario que rechaza manualmente cada error.
+   * **Continuar inmediatamente**: si se selecciona, la canalización se ejecuta automáticamente cada vez que se produce un error importante. Emula a un usuario que aprueba manualmente cada error.
 
 1. Haga clic en **Continuar**.
 
 1. Los pasos restantes que utilice para completar la configuración de la canalización que no sea de producción dependen del tipo de código fuente que elija utilizar.
-En la ficha **Código Source** del cuadro de diálogo **Agregar canalización que no sea de producción**, seleccione qué tipo de código debe procesar la canalización que no sea de producción.
+En la ficha **Código Source** del cuadro de diálogo **Agregar canalización que no sea de producción**, seleccione el tipo de código que procesa la canalización que no es de producción.
 
    * **[Estoy usando código de pila completa](#full-stack-code)**
    * **[Estoy usando implementación dirigida](#targeted-deployment)**
@@ -80,14 +80,14 @@ Para finalizar la configuración de la canalización de no producción de códig
 
 1. En la sección **Código Source**, defina las siguientes opciones.
 
-   * **Entornos de implementación aptos**: solo disponible cuando edita una canalización que no es de producción. Si la canalización es una canalización de implementación, debe seleccionar a qué entornos debe implementar.
+   * **Entornos de implementación aptos**: solo disponible cuando edita una canalización que no es de producción. Si la canalización es una canalización de implementación, seleccione los entornos a los que se implementa.
    * **Repositorio**: en la lista desplegable, elija el repositorio Git que la canalización usa como origen. Cloud Manager genera código a partir del repositorio que elija aquí.
 
      >[!TIP]
      > 
      >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para poder aprender a añadir y administrar repositorios en Cloud Manager.
 
-   * **Rama de Git**: en la lista desplegable, elija desde qué rama del repositorio seleccionado se debe generar la canalización. El valor predeterminado es `main`. La canalización utiliza la rama elegida como origen para la compilación y la implementación. Si es necesario, haga clic en **Actualizar** para actualizar la lista de ramas disponibles para el repositorio seleccionado. Utilice esta opción si una rama creada recientemente no aparece en la lista.
+   * **Rama de Git**: en la lista desplegable, elija la rama del repositorio seleccionado desde la que se genera la canalización. El valor predeterminado es `main`. La canalización utiliza la rama elegida como origen para la compilación y la implementación. Si es necesario, haga clic en **Actualizar** para actualizar la lista de ramas disponibles para el repositorio seleccionado. Utilice esta opción si una rama creada recientemente no aparece en la lista.
    * **Estrategia de compilación**
       * **Compilación completa**: genera todos los módulos del repositorio cada vez
       * BETA **Smart Build**: genera solo módulos que han cambiado desde la última confirmación.<br>Obtenga más información acerca de [cómo usar Smart Build en una canalización que no es de producción](#about-smart-build-non-production-pipeline).
@@ -109,8 +109,7 @@ Para finalizar la configuración de la canalización de no producción de códig
 
 1. Haga clic en **Guardar**.
 
-La canalización se ha guardado y ahora puede [administrar sus canalizaciones]&#x200B;(canalización de administración)
-lines.md) en la tarjeta **Canalizaciones** de la página **Información general del programa**.
+La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
 ### Estoy utilizando la implementación dirigida {#targeted-deployment}
 
@@ -130,7 +129,7 @@ Una implementación de destino implementa código solo para partes seleccionadas
 * **Código front-end**: configure JavaScript y CSS para el front-end de su aplicación AEM.
    * Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
    * Consulte el documento [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
-* **Configuración de nivel web**: configure las propiedades de Dispatcher para almacenar, procesar y enviar páginas web al cliente.
+* **Configuración de nivel web**: configure las propiedades de Dispatcher para almacenar, procesar y entregar páginas web al cliente.
    * Consulte el documento [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) para obtener más información.
    * Si existe una canalización de código de nivel web para el entorno seleccionado, esta selección está deshabilitada.
    * Si una canalización de pila completa ya se implementa en un entorno, aún puede crear una canalización de configuración de capa web para ese mismo entorno. Cuando lo haga, Cloud Manager ignorará la configuración del nivel web en la canalización de pila completa.
@@ -153,14 +152,14 @@ The steps to complete the creation of your non-production, targeted deployment p
 
 1. En la sección **Código Source**, defina las siguientes opciones:
 
-   * **Repositorio**: esta opción define desde qué repositorio GIT la canalización que no es de producción debe recuperar el código.
+   * **Repositorio**: esta opción define el repositorio GIT desde el que la canalización que no es de producción recupera el código.
 
      >[!TIP]
      > 
      >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para poder aprender a añadir y administrar repositorios en Cloud Manager.
 
-   * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código. Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo. Encuentra las ramas coincidentes que puede seleccionar.
-   * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
+   * **Rama Git**: esta opción define la rama desde la que la canalización seleccionada recupera el código. Introduzca los primeros caracteres del nombre de la rama y utilice la función de autocompletar de este campo. Encuentra las ramas coincidentes que puede seleccionar.
+   * **Ubicación del código**: esta opción define la ruta en la rama del repositorio seleccionado desde la que la canalización recupera el código.
 
 <!--
    * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)**.
@@ -168,7 +167,7 @@ The steps to complete the creation of your non-production, targeted deployment p
    ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 -->
 
-1. Si habilitó la auditoría de experiencias, haga clic en **Continuar** para avanzar a la pestaña **Auditoría de experiencias**, donde puede definir las rutas que siempre se deben incluir en la auditoría de experiencias.
+1. Si habilitaste la auditoría de experiencias, haz clic en **Continuar** para avanzar a la pestaña **Auditoría de experiencias**. Defina las rutas que siempre se incluyen en la auditoría de experiencias.
 
    * Si habilitó **Auditoría de experiencias**, consulte el documento [Auditoría de experiencias](/help/implementing/cloud-manager/reports/report-experience-audit.md) para obtener detalles sobre cómo configurar.
    * Si no lo ha hecho, omita este paso.
@@ -210,7 +209,7 @@ La mejora del rendimiento obtenida mediante el uso de Smart Build depende de var
 * La frecuencia y el ámbito del código cambian.
 * La distribución de dependencias entre módulos.
 
-Generalmente, los proyectos con muchos módulos independientes pueden ver la mayor mejora.
+Los proyectos con muchos módulos independientes son los que ven la mayor mejora.
 
 ### Exclusión de caché por módulo{#smart-build-cache-optout}
 
@@ -230,15 +229,15 @@ Puede agregar la siguiente propiedad al `pom.xml` del módulo afectado:
 </properties>
 ```
 
-Esta sintaxis fuerza al módulo a reconstruir en cada ejecución de canalización, mientras que otros módulos siguen beneficiándose del almacenamiento en caché.
+Esta configuración requiere que el módulo se reconstruya en cada ejecución de canalización, mientras que otros módulos siguen beneficiándose del almacenamiento en caché.
 
 ### Limitaciones y consideraciones al utilizar Smart Build{#smart-build-limitations}
 
 Tenga en cuenta lo siguiente al utilizar Smart Build:
 
 * La generación inteligente se basa en el análisis de dependencias de Maven.
-* Los cambios fuera del gráfico de dependencias no pueden almacenar en déclencheur las regeneraciones.
-* Es posible que algunos complementos no sean totalmente compatibles con el almacenamiento en caché.
+* Los cambios fuera del gráfico de dependencias no almacenan en déclencheur las regeneraciones.
+* Algunos complementos no son totalmente compatibles con el almacenamiento en caché.
 * Puede volver a **Compilación completa** en cualquier momento editando la canalización que no sea de producción.
 
 Si encuentra un comportamiento de compilación inesperado, considere la posibilidad de deshabilitar el almacenamiento en caché para módulos específicos o cambiar temporalmente su estrategia de compilación a **Compilación completa**.
@@ -251,7 +250,7 @@ Si encuentra un comportamiento de compilación inesperado, considere la posibili
 | Sin mejora de rendimiento | · Asegúrese de que se han producido varias ejecuciones (calentamiento de caché).<br>· Compruebe si la mayoría de los módulos cambian con frecuencia. |
 | Artefactos inesperados o cambios que faltan | · Revise si los cambios están fuera del seguimiento de dependencias de Maven.<br>· Use **Compilación completa** para la verificación. |
 
-Consulte [Agregar una canalización que no sea de producción](#adding-non-production-pipeline) para habilitar Smart Build.
+Consulte [Agregar una canalización que no sea de producción](#add-non-production-pipeline) para habilitar Smart Build.
 
 
 
@@ -348,9 +347,9 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 ## Excluir paquetes de Dispatcher {#exclude-dispatcher-packages}
 
-Si desea que los paquetes de Dispatcher se creen en su canalización pero no se carguen en el almacenamiento de la compilación, deshabilite la publicación. Esto puede acortar el tiempo de ejecución de la canalización.
+Si desea que los paquetes de Dispatcher se creen en su canalización pero no se carguen en el almacenamiento de la compilación, deshabilite la publicación. Esta configuración puede acortar el tiempo de ejecución de la canalización.
 
-Agregue la siguiente configuración al archivo del proyecto `pom.xml` para deshabilitar la publicación de paquetes de Dispatcher. Establezca una variable de entorno en el contenedor de compilación de Cloud Manager para marcar cuándo se deben ignorar los paquetes de Dispatcher. La canalización lee este indicador e ignora en consecuencia.
+Para deshabilitar la publicación de paquetes de Dispatcher, agregue la configuración siguiente al archivo del proyecto `pom.xml`. Establezca una variable de entorno en el contenedor de compilación de Cloud Manager para marcar cuándo se deben ignorar los paquetes de Dispatcher. La canalización lee este indicador e ignora en consecuencia.
 
 ```xml
 <profile>

@@ -5,16 +5,16 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7a229f94996802ba1df6ac188c41572a9a76145a
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 14%
+source-wordcount: '675'
+ht-degree: 11%
 
 ---
 
 # Variables de canalización en Cloud Manager {#configuring-pipeline-variables}
 
-El proceso de compilación puede depender de variables de configuración específicas que no deben almacenarse en el repositorio de Git. O bien, es posible que tenga que ajustarlas entre ejecuciones de canalización en la misma rama. Cloud Manager permite administrar estas configuraciones como variables de canalización.
+El proceso de compilación utiliza variables de configuración específicas que no se almacenan en el repositorio de Git. O bien, debe ajustarlas entre ejecuciones de canalización en la misma rama. Cloud Manager permite administrar estas configuraciones como variables de canalización.
 
 ## Acerca de las variables de canalización {#pipeline-variables}
 
@@ -22,13 +22,13 @@ Con Cloud Manager puede configurar variables de canalización de varias formas d
 
 * [Uso de la interfaz de usuario de Cloud Manager](#ui)
 * [Uso de la CLI de Cloud Manager](#cli)
-* [Usando la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables/operation/getPipelineVariables)
+* [Uso de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Variables/operation/getPipelineVariables)
 
-Las variables pueden almacenarse como texto sin formato o cifrarse en reposo. En cualquier caso, las variables están disponibles en el entorno de compilación como una variable de entorno a la que se puede hacer referencia desde dentro del archivo `pom.xml` u otros scripts de compilación.
+Las variables se almacenan como texto sin formato o se cifran en reposo. Las variables están disponibles en el entorno de compilación como una variable de entorno, a la que se puede hacer referencia desde el archivo `pom.xml` u otras secuencias de comandos de compilación.
 
 ## Adición de una variable de canalización a través de Cloud Manager {#ui}
 
-Las variables de canalización se pueden configurar y administrar a través de la interfaz de usuario de Cloud Manager. Ayudan a optimizar la administración de la canalización, especialmente cuando se requieren distintas configuraciones en diferentes pasos.
+Las variables de canalización se pueden configurar y administrar a través de la interfaz de usuario de Cloud Manager. Simplifican la administración de la canalización, especialmente cuando se requieren diferentes configuraciones en diferentes pasos.
 
 Debe tener permisos para editar la canalización y agregar, editar y eliminar variables de canalización.
 
@@ -97,7 +97,7 @@ Si se está ejecutando una canalización, la administración de variables está 
 
 ## Establecer variables de canalización mediante la CLI de Cloud Manager {#cli}
 
-Este comando de la CLI (interfaz de línea de comandos) establece una variable.
+Este comando de CLI (interfaz de línea de comandos) configura variables.
 
 ```shell
 $ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test

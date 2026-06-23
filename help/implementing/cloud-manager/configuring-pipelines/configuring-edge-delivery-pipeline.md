@@ -7,7 +7,7 @@ role: Admin, Developer
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 4f9c0d41fce9ee16aae19077759cea312487513f
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 9%
@@ -20,13 +20,13 @@ ht-degree: 9%
 
 Obtenga información sobre cómo configurar canalizaciones de Edge Delivery para crear e implementar su código en entornos de producción. Las canalizaciones de Edge Delivery le permiten configurar funciones, incluido el reenvío de registros y la CDN administrada por Adobe.
 
-Para obtener una lista de la configuración admitida, consulte [Usar canalizaciones de configuración: configuraciones admitidas](/help/operations/config-pipeline.md#configurations).
+Para obtener una lista de las configuraciones admitidas, consulte [Usar canalizaciones de configuración: configuraciones admitidas](/help/operations/config-pipeline.md#configurations).
 
 Un usuario debe tener la función **[Administrador de implementación](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** para configurar las canalizaciones de producción.
 
 >[!IMPORTANT]
 >
->No se puede configurar una canalización de Edge Delivery hasta que se haya producido lo siguiente:
+>No se puede configurar una canalización de Edge Delivery hasta que no haya sucedido lo siguiente:
 >
 >* Se crea un programa que contiene un sitio de Edge Delivery Services y un dominio asignado. De lo contrario, la opción **Agregar canalización de Edge Delivery** aparecerá deshabilitada en la interfaz de usuario y se mostrará información sobre los requisitos que faltan. Ver [Crear un sitio de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
 >* El repositorio de Git tiene al menos una rama. Ver [Administrar repositorios en Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
@@ -91,12 +91,12 @@ Antes de comenzar a implementar el código, establece la configuración de la ca
 
    * **Entorno de implementación** - Muestra el campo de entorno de destino; permanece como de solo lectura.
 
-   * **Repositorio**: utilice la lista desplegable para dirigir la canalización al repositorio Git exacto que almacena la configuración de Edge Delivery.
+   * **Repositorio**: utilice la lista desplegable para dirigir la canalización al repositorio de Git que almacena la configuración de Edge Delivery.
 
      Consulte también [Agregar y administrar repositorios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
 
-   * **Rama de Git**: utilice la lista desplegable para seleccionar una rama específica dentro del repositorio elegido. Si es necesario, haga clic en ![Icono de reciclaje o en Actualizar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) para volver a cargar la lista desplegable de la rama Git después de inserciones recientes.
-   * **Ubicación del código**: define la ruta de carpeta dentro del repositorio donde se inicia el código listo para la canalización ( `/` es igual a la raíz del repositorio).
+   * **Rama de Git**: utilice la lista desplegable para seleccionar una rama específica dentro del repositorio elegido. Si es necesario, haga clic en ![Icono de reciclaje o en Actualizar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) para actualizar la lista desplegable de la rama Git después de confirmaciones recientes.
+   * **Ubicación del código**: define la ruta de carpeta dentro del repositorio donde comienza el código listo para la canalización ( `/` es igual a la raíz del repositorio).
 
    ![Canalización de configuración](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
 

@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 883e35047917de29fb71331fe2f28243e66a16b7
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 26%
+source-wordcount: '1889'
+ht-degree: 23%
 
 ---
 
@@ -52,7 +52,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
 
    ![Información general de la tarjeta Canalizaciones de Administrador de programa](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
-1. Aparece el cuadro de diálogo **Agregar canalización de producción**. Proporcione un **Nombre de canalización** para identificar la canalización junto con las siguientes opciones. Haga clic en **Continuar**.
+1. Aparece el cuadro de diálogo **Agregar canalización de producción**. Para identificar su canalización, proporcione un **Nombre de canalización** junto con las siguientes opciones. Haga clic en **Continuar**.
 
    **Activador de implementación**: dispone de las siguientes opciones al definir los activadores de implementación para iniciar la canalización.
 
@@ -62,12 +62,12 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
    **Comportamiento de errores de métricas importantes**: durante la configuración o edición de la canalización, el **Administrador de implementación** tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad. Las opciones disponibles son:
 
    * **Preguntar cada vez**: configuración predeterminada. Requiere intervención manual en cualquier fallo importante.
-   * **Fallo inmediatamente**: si se selecciona, la canalización se cancela siempre que se produzca un fallo importante. Básicamente, este proceso emula a un usuario rechazando manualmente cada error.
-   * **Continuar inmediatamente**: si se selecciona, la canalización se ejecuta automáticamente cada vez que se produce un error importante. Básicamente, este proceso emula al usuario que aprueba manualmente cada error.
+   * **Fallo inmediatamente**: si se selecciona, la canalización se cancela siempre que se produzca un fallo importante. Este proceso emula a un usuario rechazando manualmente cada error.
+   * **Continuar inmediatamente**: si se selecciona, la canalización se ejecuta automáticamente cada vez que se produce un error importante. Este proceso emula a un usuario que aprueba manualmente cada error.
 
    ![Configuración de canalización de producción](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. En la ficha **Código Source**, seleccione qué tipo de código debe procesar la canalización.
+1. En la ficha **Código Source**, seleccione el tipo de código que procesa la canalización.
 
    * **[Estoy usando código de pila completa](#full-stack-code)**
    * **[Configurar una canalización de implementación de destino](#targeted-deployment)**
@@ -76,7 +76,7 @@ Consulte [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-
 
 Los pasos para completar la creación de la canalización de producción varían según el tipo de código fuente seleccionado. Siga los vínculos anteriores para ir a la siguiente sección de este documento para poder completar la configuración de la canalización.
 
-### Estoy utilizando un código de pila completa {#full-stack-code}
+### Estoy utilizando código de pila completa {#full-stack-code}
 
 Una canalización de código de pila completa implementa simultáneamente generaciones de código back-end y front-end que contienen una o más aplicaciones de servidor de AEM junto con la configuración HTTPD/Dispatcher.
 
@@ -88,13 +88,13 @@ Una canalización de código de pila completa implementa simultáneamente genera
 
 1. En la ficha **Código Source**, defina las siguientes opciones.
 
-   * **Repositorio**: define desde qué repositorio de Git la canalización debe recuperar el código.
+   * **Repositorio**: define el repositorio Git desde el que la canalización recupera el código.
 
    >[!TIP]
    > 
    >Consulte [Agregar y administrar repositorios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
 
-   * **Rama de Git**: en la lista desplegable, elija desde qué rama del repositorio seleccionado se debe generar la canalización. El valor predeterminado es `main`. La canalización utiliza la rama elegida como origen para la compilación y la implementación. Si es necesario, haga clic en **Actualizar** para actualizar la lista de ramas disponibles para el repositorio seleccionado. Utilice esta opción si una rama creada recientemente no aparece en la lista.
+   * **Rama de Git**: en la lista desplegable, elija la rama del repositorio seleccionado desde la que se genera la canalización. El valor predeterminado es `main`. La canalización utiliza la rama elegida como origen para la compilación y la implementación. Si es necesario, haga clic en **Actualizar** para actualizar la lista de ramas disponibles para el repositorio seleccionado. Utilice esta opción si una rama creada recientemente no aparece en la lista.
    * **Estrategia de compilación**
       * **Compilación completa**: genera todos los módulos del repositorio cada vez
       * BETA **Smart Build**: genera solo módulos que han cambiado desde la última confirmación.<br>Obtenga más información acerca de [cómo usar Smart Build en una canalización que no es de producción](#about-smart-build-non-production-pipeline).
@@ -134,7 +134,7 @@ Una implementación de destino implementa código solo para partes seleccionadas
 * **Código front-end**: configure JavaScript y CSS para el front-end de su aplicación AEM.
    * Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
    * Consulte el documento [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
-* **Configuración de nivel web**: configure las propiedades de Dispatcher para almacenar, procesar y enviar páginas web al cliente.
+* **Configuración de nivel web**: configure las propiedades de Dispatcher para almacenar, procesar y entregar páginas web al cliente.
    * Consulte el documento [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) para obtener más información.
    * Si existe una canalización de código de nivel web para el entorno seleccionado, esta selección está deshabilitada.
    * Si crea una canalización de configuración de nivel web para un entorno con una canalización de pila completa existente, se ignorará la configuración de nivel web en la canalización de pila completa. Este cambio solo afecta a la configuración del nivel web en ese entorno.
@@ -151,19 +151,19 @@ Una implementación de destino implementa código solo para partes seleccionadas
 
 1. Defina los **Entornos de implementación aptos**.
 
-   * Si la canalización es una canalización de implementación, debe seleccionar a qué entornos debe implementar.
+   * Si la canalización es una canalización de implementación, seleccione los entornos a los que se implementa.
 
 1. En **Código Source**, defina las siguientes opciones:
 
-   * **Repositorio**: esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
+   * **Repositorio**: esta opción define el repositorio de Git desde el que la canalización recupera el código.
 
    >[!TIP]
    > 
    >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para poder aprender a añadir y administrar repositorios en Cloud Manager.
 
-   * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
+   * **Rama Git**: esta opción define la rama en la canalización seleccionada desde la que recupera el código.
       * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo. Encuentra las ramas coincidentes que puede seleccionar.
-   * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
+   * **Ubicación del código**: esta opción define la ruta en la rama del repositorio seleccionado desde la que la canalización recupera el código.
    * **Pausar antes de implementar en producción**: esta opción pone en pausa la canalización antes de implementarla en producción.
    * **Programado**: permite al usuario habilitar la implementación de producción programada. Solo disponible para implementaciones de destino de nivel web.
 
@@ -204,7 +204,7 @@ La mejora del rendimiento obtenida mediante el uso de Smart Build depende de var
 * La frecuencia y el ámbito del código cambian.
 * La distribución de dependencias entre módulos.
 
-Generalmente, los proyectos con muchos módulos independientes pueden ver la mayor mejora.
+Los proyectos con muchos módulos independientes son los que ven la mayor mejora.
 
 ### Exclusión de caché por módulo{#smart-build-cache-optout}
 
@@ -231,8 +231,8 @@ Esta sintaxis fuerza al módulo a reconstruir en cada ejecución de canalizació
 Tenga en cuenta lo siguiente al utilizar Smart Build:
 
 * La generación inteligente se basa en el análisis de dependencias de Maven.
-* Los cambios fuera del gráfico de dependencias no pueden almacenar en déclencheur las regeneraciones.
-* Es posible que algunos complementos no sean totalmente compatibles con el almacenamiento en caché.
+* Los cambios fuera del gráfico de dependencias no almacenan en déclencheur las regeneraciones.
+* Algunos complementos no son totalmente compatibles con el almacenamiento en caché.
 * Puede volver a **Compilación completa** en cualquier momento editando la canalización de producción.
 
 Si encuentra un comportamiento de compilación inesperado, considere la posibilidad de deshabilitar el almacenamiento en caché para módulos específicos o cambiar temporalmente su estrategia de compilación a **Compilación completa**.
@@ -245,11 +245,11 @@ Si encuentra un comportamiento de compilación inesperado, considere la posibili
 | Sin mejora de rendimiento | · Asegúrese de que se han producido varias ejecuciones (calentamiento de caché).<br>· Compruebe si la mayoría de los módulos cambian con frecuencia. |
 | Artefactos inesperados o cambios que faltan | · Revise si los cambios están fuera del seguimiento de dependencias de Maven.<br>· Use **Compilación completa** para la verificación. |
 
-Consulte [Agregar una canalización de producción](#adding-production-pipeline) para habilitar Smart Build.
+Para habilitar Smart Build, consulte [Agregar una canalización de producción](#adding-production-pipeline).
 
 ## Omitir paquetes de Dispatcher {#skip-dispatcher-packages}
 
-Para crear paquetes de Dispatcher en la canalización sin publicarlos en el almacenamiento de compilación, puede desactivar la opción de publicación. Hacerlo puede ayudar a reducir el tiempo de ejecución de la canalización.
+Para crear paquetes de Dispatcher en la canalización sin publicarlos en el almacenamiento de compilación, puede desactivar la opción de publicación. Al hacerlo, se reduce el tiempo de ejecución de la canalización.
 
 La siguiente configuración para deshabilitar la publicación de paquetes de Dispatcher debe agregarse a través del archivo `pom.xml` del proyecto. Una variable de entorno sirve como un indicador que se establece en el contenedor de compilación de Cloud Manager para determinar cuándo se deben ignorar los paquetes de Dispatcher.
 
