@@ -7,10 +7,10 @@ role: Admin, Developer
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 1eb2a3fede53e01f07f511ae24de5ac1f11b8821
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 49%
+source-wordcount: '1109'
+ht-degree: 24%
 
 ---
 
@@ -25,34 +25,34 @@ Puede dividir las implementaciones de ensayo y producción mediante canalizacion
 
 ## Información general {#overview}
 
-Los entornos de ensayo y producción están perfectamente asociados. De forma predeterminada, estas implementaciones están vinculadas a una sola canalización. Es una canalización de implementación que se implementa en los entornos de ensayo y producción de ese programa. Aunque este acoplamiento suele ser adecuado, hay ciertos casos de uso en los que existen desventajas:
+Los entornos de ensayo y producción están perfectamente asociados. De forma predeterminada, estas implementaciones están vinculadas a una sola canalización. Una canalización de implementación se implementa en los entornos de ensayo y producción de ese programa. Aunque este acoplamiento suele ser adecuado, hay ciertos casos de uso en los que surgen desventajas:
 
-* Si desea implementar en solo ensayo, debe rechazar el paso **Promocionar para producción** en la canalización. Sin embargo, la ejecución se marca como cancelada.
+* Si desea implementar en el entorno de ensayo, rechaza el paso **Promocionar a producción** de la canalización. Sin embargo, la ejecución se marca como cancelada.
 * Si desea implementar el código más reciente de un entorno de ensayo en el de producción, debe volver a implementar toda la canalización, incluida la implementación de fase, aunque ahí no se haya cambiado ningún código.
-* Los entornos no se pueden actualizar durante las implementaciones. Si se detiene para probar en el entorno de ensayo durante varios días antes de pasar a producción, el entorno de producción permanece bloqueado y no se puede actualizar. Esto hace que las tareas no dependientes, como la actualización de las [variables de entorno](/help/implementing/cloud-manager/environment-variables.md), sean imposibles.
+* Los entornos no se pueden actualizar durante las implementaciones. Si espera varios días para realizar pruebas en el entorno de ensayo antes de pasar a producción, el entorno de producción permanece no disponible y no se puede actualizar. Este escenario evita tareas no dependientes, como actualizar [variables de entorno](/help/implementing/cloud-manager/environment-variables.md).
 
-Las canalizaciones de solo fase y producción ofrecen soluciones para estos casos de uso al proporcionar opciones de implementación dedicadas.
+Las canalizaciones solo de fase y de solo producción ofrecen soluciones para estos casos de uso al proporcionar opciones de implementación dedicadas.
 
 * Las **canalizaciones de implementación de solo fase** se implementan solo en un entorno de fase, quedando la ejecución finalizada una vez realizadas la implementación y las pruebas. Una canalización de solo fase se comporta de forma idéntica a la canalización de producción de pila completa asociada estándar, pero sin los pasos de implementación de producción (aprobación, programación, implementación).
-* **Canalizaciones de implementación solo de producto:** se implementa solamente en producción al seleccionar la ejecución de fase exitosa más reciente. A continuación, implemente sus artefactos en producción. Las canalizaciones solo de producción reutilizan artefactos de implementación de fase, omitiendo la fase de compilación.
+* **Canalizaciones de implementación solo de producto:** se implementa solamente en producción al seleccionar la ejecución de fase exitosa más reciente. A continuación, implementa sus artefactos en producción. Las canalizaciones solo de producción reutilizan artefactos de implementación de fase, omitiendo la fase de compilación.
 
-Las canalizaciones solo de fase y de solo producción no se ejecutan mientras una canalización de producción de pila completa está en curso y viceversa. Si tanto la canalización de solo fase como la de producción de pila completa tienen configurado el activador **Cambios en Git** y apuntan a la misma rama y repositorio, solo se inicia automáticamente la canalización de solo fase. Las canalizaciones de solo producción no inician **`On Git Changes`** porque no están vinculadas directamente a un repositorio.
+Las canalizaciones solo de fase y de solo producción no se ejecutan mientras una canalización de producción de pila completa está en curso y viceversa. Si tanto la canalización de solo fase como la de producción de pila completa tienen configurado el activador **Cambios en Git** y apuntan a la misma rama y repositorio, solo se inicia automáticamente la canalización de solo fase. Las canalizaciones de solo producción no almacenan en déclencheur a **`On Git Changes`** porque no están vinculadas directamente a un repositorio.
 
-Las canalizaciones solo de producción se activan manualmente, ya que no están vinculadas directamente a un repositorio para **Cambios en Git**.
+Las canalizaciones solo de producción se activan manualmente, ya que no están vinculadas directamente a un repositorio para **Cambios en Git** déclencheur.
 
 Estas canalizaciones dedicadas ofrecen más flexibilidad, pero tenga en cuenta los siguientes detalles de funcionamiento y recomendaciones.
 
 >[!NOTE]
 >
->Las canalizaciones solo de producción siempre utilizan artefactos de la canalización solo de fase. Este proceso sigue siendo válido incluso si la canalización de producción acoplada estándar ha implementado algo más para ensayo mientras tanto.
+>Las canalizaciones solo de producción siempre utilizan artefactos de la canalización solo de fase. Este proceso sigue siendo válido incluso si la canalización de producción acoplada estándar ha implementado una versión diferente para ensayo mientras tanto.
 >
->* Este tipo de escenario podría provocar reversiones de código no deseadas.
->* Adobe recomienda dejar de usar la canalización de producción asociada estándar una vez que comience a utilizar las canalizaciones de solo producción y de solo fase.
+>* Este escenario provoca reversiones de código no deseadas.
+>* Adobe recomienda detener el uso de la canalización de producción acoplada estándar una vez que comience a utilizar las canalizaciones solo de producción y de solo fase.
 >* Si todavía decide ejecutar tanto las canalizaciones asociadas estándar como las canalizaciones de solo fase/producción, tenga en cuenta la reutilización de artefactos para evitar reversiones del código.
 
 ## Creación de canalizaciones {#pipeline-creation}
 
-Las canalizaciones de solo producción y fase se crean de forma similar a las [canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) asociadas estándar y las [canalizaciones que no sean de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Consulte estos documentos para obtener más información.
+Las canalizaciones solo de producción y solo de fase se crean de manera similar a las [canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y [canalizaciones que no son de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) acopladas estándar. Consulte estos documentos para obtener más información.
 
 1. En la ventana **Canalizaciones**, haga clic en **Agregar canalización**.
 
@@ -63,7 +63,7 @@ Las canalizaciones de solo producción y fase se crean de forma similar a las [c
 
 >[!NOTE]
 >
->Algunas opciones pueden aparecer atenuadas si ya existen las canalizaciones correspondientes.
+>Algunas opciones aparecen atenuadas si ya existen las canalizaciones correspondientes.
 >
 >* **Agregar una canalización de solo producción** no estará disponible si una canalización de solo fase no existe aún.
 >* **Agregar canalización de producción** no está disponible si ya existe una canalización asociada estándar.
@@ -135,7 +135,7 @@ En los detalles de ejecución, aparece un botón **Promocionar compilación** de
 
 ![Ejecución de canalización de solo fase](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-Al hacer clic en **Promocionar compilación**, se abre un cuadro de diálogo para que confirme la ejecución de la canalización de solo producción relacionada. Haga clic en **Ejecutar** para iniciarlo.
+Al hacer clic en **Promocionar compilación**, se abre un cuadro de diálogo para que confirme la ejecución de la canalización de solo producción relacionada. Para iniciarlo, haga clic en **Ejecutar**.
 
 ![Promocionar compilación - Ejecutar cuadro de diálogo de canalización](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 

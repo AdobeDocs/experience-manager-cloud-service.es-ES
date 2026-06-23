@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: c4c142a00601c37bb30e1d8774cb25927e5f9838
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 28%
+source-wordcount: '1572'
+ht-degree: 30%
 
 ---
 
@@ -35,7 +35,7 @@ Al hacer clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.co
 En la parte inferior de la lista de canalizaciones, tiene las siguientes opciones generales:
 
 * **Agregar** - Para [agregar una nueva canalización de producción](configuring-production-pipelines.md) o [agregar una nueva canalización que no sea de producción](configuring-non-production-pipelines.md)
-* **Mostrar todo**: Lleva al usuario a la pantalla Canalizaciones para ver todas las canalizaciones en una tabla más detallada.
+* **Mostrar todo**: para ver todas las canalizaciones en una tabla más detallada, ve a la pantalla Canalizaciones.
 * **Acceder a la info del repositorio**: Muestra la información necesaria para acceder al repositorio de Git de Cloud Manager
 * **Más información**: Navega hasta los recursos de documentación de canalización de CI/CD.
 
@@ -49,7 +49,7 @@ La página **Canalizaciones** muestra una lista completa de todas las canalizaci
 
 1. En la página **Resumen del programa**, haga clic en ![Pestaña Canalización: icono de flujo de trabajo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pestaña Canalizaciones**.
 
-1. En la página **Canalizaciones**, puede ver una lista de todas las canalizaciones para el programa y comenzar y detener la ejecución de la canalización como lo haría en la **Tarjeta de canalizaciones**.
+1. En la página **Canalizaciones**, vea una lista de todas las canalizaciones para el programa y comience y detenga la ejecución de la canalización como lo hace en la **Tarjeta de canalizaciones**.
 
 Si se está ejecutando una canalización, haga clic en ![Información - icono mediano](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) en la columna **Estado** para mostrar una ventana emergente con detalles sobre la ejecución. En el elemento emergente, haga clic en **Ver detalles** para ver los [detalles de la ejecución de la canalización](#view-details).
 
@@ -70,12 +70,12 @@ Puede marcar canalizaciones específicas como favoritas para que aparezcan en la
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 1. En la página **Resumen del programa**, haga clic en ![Pestaña Canalización: icono de flujo de trabajo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pestaña Canalizaciones**.
 1. En la página Canalizaciones, a la izquierda del nombre y tipo de canalización, haga clic en ![Icono de esquema de estrella de la canalización sin favoritos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg) para agregarla a la lista de favoritos.
-También puede hacer clic en ![Icono de estrella de una canalización favorita](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) para quitar la canalización de su lista de favoritos.
+También puede hacer clic en ![Icono de estrella de una canalización favorita](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) para eliminar la canalización de su lista de favoritos.
 
 
 ## Página Actividad {#activity}
 
-La página **Actividad** muestra una lista completa de todas las ejecuciones de canalizaciones para el programa seleccionado y otros eventos de programa importantes.
+La página **Actividad** muestra una lista completa de todas las ejecuciones de canalización para el programa seleccionado y otros eventos de programa importantes.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
@@ -99,7 +99,7 @@ También puede hacer clic en ![Puntos suspensivos - Icono de más](https://spect
 
 1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa**.
 
-1. Haga clic en ![puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a la canalización que ejecute.
+1. Haga clic en ![puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a la canalización que desee ejecutar.
 
 1. En el menú desplegable, haga clic en ![Ejecutar - Icono de reproducción](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PlayCircle_18_N.svg) **Ejecutar**.
 
@@ -107,22 +107,22 @@ También puede hacer clic en ![Puntos suspensivos - Icono de más](https://spect
 
 Para ver los detalles de la ejecución, vuelva a hacer clic en ![Puntos suspensivos - Más icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y haga clic en **[Ver detalles](#view-details)**.
 
-Según el tipo de canalización, puede cancelar la ejecución si hace clic de nuevo en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y hace clic en **Cancelar**.
+Según el tipo de canalización, cancele la ejecución haciendo clic de nuevo en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y luego en **Cancelar**.
 
 ## Ejecutar varias canalizaciones {#run-multiple-pipelines}
 
-Con Cloud Manager puede ejecutar varias canalizaciones simultáneamente, lo que mejora la eficacia de la implementación para los clientes de AEM as a Cloud Service. La función **Ejecutar selección** le permite seleccionar varias canalizaciones y almacenarlas en déclencheur para ejecutarlas a la vez. Reduce el esfuerzo manual de tener que ejecutar las canalizaciones individualmente y optimiza los flujos de trabajo de compilación e implementación.
+Con Cloud Manager puede ejecutar varias canalizaciones simultáneamente, lo que mejora la eficacia de la implementación para los clientes de AEM as a Cloud Service. La función **Ejecutar selección** le permite seleccionar varias canalizaciones y almacenarlas en déclencheur para ejecutarlas a la vez. Reduce el esfuerzo manual de ejecutar las canalizaciones individualmente y optimiza los flujos de trabajo de compilación e implementación.
 
 **Para ejecutar varias canalizaciones:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 1. En el menú del lado izquierdo, haga clic en ![Icono de flujo de trabajo &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Canalizaciones**.
 1. En la tabla de la página **Canalización**, active las casillas de verificación situadas junto a las canalizaciones que desee ejecutar.
-Si es necesario, haga clic en el icono ![Filtro, funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filtros** para ordenar las canalizaciones por nombre, o entorno, o tipo de código implementado, o una combinación de los tres.
+Si es necesario, haga clic en ![Icono de filtro, funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filters** para ordenar las canalizaciones por nombre, entorno o tipo de código implementado, o una combinación de los tres.
 1. Cerca de la esquina superior derecha de la página, haga clic en **Ejecutar selección (x)**.
 1. En el cuadro de diálogo **Ejecutar canalizaciones seleccionadas (x)**, haga clic en **Ejecutar (x)**.
 
-   El botón **Ejecutar** refleja el número de canalizaciones que pueden continuar. Por ejemplo, puede que haya seleccionado cuatro canalizaciones, pero una ya se está ejecutando. O bien, ya no existe un entorno vinculado a una canalización seleccionada. En estos casos, el sistema se ajusta en consecuencia. El botón se actualiza a &quot;Ejecutar (3)&quot; para indicar que pueden continuar tres canalizaciones.
+   El botón **Ejecutar** refleja el número de canalizaciones que pueden continuar. Por ejemplo, ha seleccionado cuatro canalizaciones, pero una ya se está ejecutando. O bien, ya no existe un entorno vinculado a una canalización seleccionada. En estos casos, el sistema se ajusta en consecuencia. El botón se actualiza a &quot;Ejecutar (3)&quot; para indicar que pueden continuar tres canalizaciones.
 
 1. Las canalizaciones comienzan a ejecutarse y su estado se actualiza en la lista **Canalizaciones**.
 
@@ -158,20 +158,20 @@ Puede eliminar una canalización si no se está ejecutando.
 
 1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa**.
 
-1. Haga clic en ![puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a la canalización que ejecute.
+1. Haga clic en ![puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a la canalización que desee ejecutar.
 
 1. En el menú desplegable, haga clic en **Eliminar**.
 
 
 ## Ver los detalles de la última ejecución de una canalización {#view-details}
 
-Puede comprobar los detalles de una canalización para ver el estado y los registros de su ejecución más reciente. Sin embargo, solo puede acceder a los detalles si la canalización se está ejecutando actualmente o se ha ejecutado al menos una vez.
+Para ver el estado y los registros de su ejecución más reciente, compruebe los detalles de una canalización. Sin embargo, solo puede acceder a los detalles si la canalización se está ejecutando actualmente o se ha ejecutado al menos una vez.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
 1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa**.
 
-1. En el menú desplegable, haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a la canalización que ejecute.
+1. En el menú desplegable, haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a la canalización que desee ejecutar.
 
 1. En el menú desplegable, haga clic en **Ver última ejecución**.
 
@@ -195,7 +195,7 @@ Puede comprobar los detalles de una canalización para ver el estado y los regis
 
    ![Problemas de calidad del código](assets/managing-pipelines-code-quality-issues.png)
 
-   El archivo CSV incluye una columna **Ubicación del archivo de proyecto**, que muestra la ruta de acceso al código problemático relativo al proyecto. Por el contrario, la columna **Ubicación del archivo** refleja la ruta generada por Maven.
+   El archivo CSV incluye una columna **Ubicación del archivo de proyecto**, que muestra la ruta de acceso al código con problemas relativos al proyecto. La columna **Ubicación del archivo** refleja la ruta de acceso generada por Maven.
 
    ![Detalles del problema de análisis de código del proyecto](assets/managing-pipelines-code-quality-details.png)
 
