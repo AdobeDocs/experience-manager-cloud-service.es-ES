@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 7e328932-070d-4eb3-8176-500ef31581be
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 3%
@@ -58,3 +58,4 @@ Cree una comunicación interactiva (CI) en un entorno y reutilícela en otro exp
 
 Esto permite reutilizar fácilmente los fragmentos en diferentes entornos, lo que garantiza la coherencia del diseño y reduce la duplicación de esfuerzos.
 +++
+

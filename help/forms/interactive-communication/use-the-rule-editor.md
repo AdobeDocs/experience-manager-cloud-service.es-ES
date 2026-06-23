@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 2%
@@ -103,3 +103,4 @@ El editor de reglas se utiliza ampliamente para garantizar que los formularios y
 
 
 Al configurar las reglas con cuidado, los autores pueden crear comunicaciones que respondan de forma inteligente a los datos y a las acciones del usuario, lo que optimiza los procesos, reduce los errores y ofrece una experiencia personalizada y sin problemas.
+

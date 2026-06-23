@@ -8,7 +8,7 @@ hide: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 1%
@@ -81,3 +81,4 @@ Después de pegar la comunicación interactiva:
 - Revise los enlaces de datos y los canales de salida después de la copia para garantizar su corrección.
 
 La función Copiar y pegar de la comunicación interactiva simplifica la reutilización y la personalización al permitir a los autores duplicar los IC existentes y modificarlos de forma independiente. Permite un desarrollo más rápido, una experimentación más segura y una entrega de comunicaciones coherentes, sin arriesgarse a realizar cambios en la comunicación interactiva original.
+

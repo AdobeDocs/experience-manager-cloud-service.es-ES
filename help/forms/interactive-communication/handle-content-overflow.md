@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: f19abed5-34a1-4c26-9e92-e219da798dab
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 1%
@@ -86,3 +86,4 @@ Los autores cambian manualmente el tamaño del contenedor para adaptarlo al cont
 - Ayuda a identificar el desbordamiento rápidamente mediante indicadores visuales.
 
 - Mejora la flexibilidad del diseño de la comunicación para ambos tipos de diseño.
+

@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 1%
@@ -24,13 +24,13 @@ Antes de integrar la interfaz de usuario de Associate con su aplicación, asegú
 
 - Comunicación interactiva creada y publicada
 - Explorador con compatibilidad emergente habilitada
-- Los usuarios de la asociación [deben formar parte del grupo de asociados de formularios](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- Autenticación configurada utilizando cualquier mecanismo de autenticación [admitido por AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/authentication/authentication) (por ejemplo, SAML 2.0, OAuth o controladores de autenticación personalizados)
+- Los usuarios de la asociación [deben formar parte del grupo de asociados de formularios](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Autenticación configurada utilizando cualquier mecanismo de autenticación [admitido por AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (por ejemplo, SAML 2.0, OAuth o controladores de autenticación personalizados)
 
 >[!NOTE]
 >
 >- Este artículo muestra la configuración de autenticación usando SAML 2.0 con [Microsoft Entra ID (Azure AD) como proveedor de identidad](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
->- Para la interfaz de usuario asociada, se requieren configuraciones de SAML adicionales más allá de la configuración estándar explicada en el artículo [Autenticación SAML 2.0](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consulte la sección [Configuraciones adicionales de SAML para la interfaz de usuario asociada](#additional-saml-configurations-for-associate-ui) para obtener más información.
+>- Para la interfaz de usuario asociada, se requieren configuraciones de SAML adicionales más allá de la configuración estándar explicada en el artículo [Autenticación SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consulte la sección [Configuraciones adicionales de SAML para la interfaz de usuario asociada](#additional-saml-configurations-for-associate-ui) para obtener más información.
 
 ### Configuraciones adicionales de SAML para la IU asociada
 
@@ -522,3 +522,4 @@ When implementing the Associate UI integration, follow these best practices:
 - [Asociar interfaz de usuario en el editor de comunicaciones interactivas](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Habilitar y configurar la interfaz de usuario asociada para comunicaciones interactivas](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Flujo de trabajo de envío para la IU asociada: IC Generar salida de PDF](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
+

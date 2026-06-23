@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 4%
@@ -44,7 +44,7 @@ Obtenga una vista previa de las comunicaciones interactivas sin datos, datos loc
 
 +++&#x200B;2. Vista previa con datos JSON locales
 
-2.1. Prepare un archivo JSON estructurado. Como referencia, puede copiar los datos de ejemplo del esquema JSON [(FDM)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizado para la comunicación.
+2.1. Prepare un archivo JSON estructurado. Como referencia, puede copiar los datos de ejemplo del esquema JSON [(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizado para la comunicación.
 
 2.2. En el editor de CI, vaya a **Vista previa de PDF** > Uso de datos locales.
 
@@ -63,3 +63,4 @@ Obtenga una vista previa de las comunicaciones interactivas sin datos, datos loc
 ![Buscar documento CI](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
+

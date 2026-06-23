@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 5f8371f9-b4a6-4cae-a9d3-cfd744b66702
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -90,3 +90,4 @@ Después de activar la opción Asociar vista y, opcionalmente, configurar el flu
 - [Asociar interfaz de usuario en el editor de comunicaciones interactivas](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Integración de la interfaz de usuario asociada en la aplicación](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [Flujo de trabajo de envío para la interfaz de usuario asociada — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md) — muestra cómo funcionan el envío y el flujo de trabajo, además de un flujo de trabajo de ejemplo que genera PDF a partir de los envíos de CI.
+

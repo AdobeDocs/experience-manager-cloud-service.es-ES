@@ -7,7 +7,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 21%
@@ -357,4 +357,5 @@ Los componentes principales de Forms adaptables presentan un marcado semántico 
 * [Capacidades de AEM Forms as a Cloud Services](/help/forms/home.md)
 
 * [Diferencia entre AEM 6.5 Forms (AMS y local) y AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
+
 

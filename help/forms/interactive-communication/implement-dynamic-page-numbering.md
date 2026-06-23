@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 2%
@@ -72,3 +72,4 @@ Página 2 de 5
 - Automatiza la numeración de páginas sin intervención manual.
 
 - Mantiene la coherencia en todas las páginas vinculadas a una página maestra.
+

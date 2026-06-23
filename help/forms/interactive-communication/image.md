@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 247dcd95-9429-4fe9-88fc-c02b93b2f7e0
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 4%
@@ -97,3 +97,4 @@ El componente Imagen de la comunicación interactiva de AEM desempeña un papel 
 - [Componente de campo de imagen](/help/forms/interactive-communication/image-field.md)
 - [Componente Rectángulo](/help/forms/interactive-communication/rectangle.md)
 - [Componente de línea](/help/forms/interactive-communication/line.md)
+

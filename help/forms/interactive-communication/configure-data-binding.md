@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 2%
@@ -77,3 +77,4 @@ Los autores suelen seleccionar el FDM al principio del proyecto, asignar visualm
 - **Proteger datos confidenciales:** Aplicar enmascaramiento, cifrado y acceso con menos privilegios para PII o detalles de pago.
 
 Al configurar el enlace de datos con cuidado, los autores crean un puente fiable entre el diseño y los datos, lo que acelera la creación de comunicaciones, garantiza la precisión y ofrece experiencias altamente personalizadas a escala.
+

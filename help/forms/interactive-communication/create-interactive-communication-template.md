@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 5%
@@ -73,3 +73,4 @@ Al seguir los pasos anteriores, puede crear correctamente una plantilla de comun
 
 [Crear una comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication.md)
 [Crear un fragmento de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+

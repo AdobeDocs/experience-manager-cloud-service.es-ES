@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -93,3 +93,4 @@ Guarde la plantilla y cree un nuevo IC basado en ella para confirmar que los ele
 - [Mover un componente a la página maestra](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
 - [Implementar la numeración de páginas dinámica en el editor de comunicaciones interactivas](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
 - [Crear una plantilla de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-template.md)
+
