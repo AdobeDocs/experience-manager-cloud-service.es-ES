@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 2%
@@ -118,3 +118,4 @@ El componente Tabla del editor de CI es un componente flexible y fácil de usar 
 - [Combinar y dividir celdas de tabla en el editor de comunicaciones interactivas](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md): aprenda a combinar celdas adyacentes en una sola celda o a dividir una celda combinada para crear diseños de tabla flexibles.
 - [Crear una tabla dinámica en el editor de comunicaciones interactivas](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
 - [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
+

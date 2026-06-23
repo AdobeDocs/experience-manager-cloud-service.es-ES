@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: b30b3634-0457-4c29-84d3-78f1429b98d1
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 3%
@@ -149,3 +149,4 @@ Muestra el **entorno de Adobe Experience Cloud** (por ejemplo, Ensayo), junto co
 * Opciones de diseño y apariencia
 
 * Controles de paginación, posición, presencia y enlace de datos
+

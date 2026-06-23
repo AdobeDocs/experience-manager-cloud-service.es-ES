@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 2%
@@ -156,3 +156,4 @@ El componente Código de barras del editor de comunicaciones interactivas permit
 
 - [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
 - [Generar previsualización de PDF en el editor de comunicaciones interactivas](/help/forms/interactive-communication/generate-pdf-preview.md)
+

@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 6bed824c-b959-4882-a5aa-dbb7fbf2f8a0
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 4%
@@ -146,3 +146,4 @@ Al configurar las propiedades del cuadro de texto con cuidado, los autores puede
 - [Componente de variable independiente](/help/forms/interactive-communication/unbound-variable.md)
 - [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
 - [Usar el Editor de reglas en el Editor de comunicaciones interactivas](/help/forms/interactive-communication/use-the-rule-editor.md)
+

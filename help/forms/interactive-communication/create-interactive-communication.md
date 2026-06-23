@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 3%
@@ -96,3 +96,4 @@ Comience a crear comunicaciones interactivas para optimizar los flujos de trabaj
 * [Comparar versiones de comunicación interactiva](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md): inspeccione las diferencias de diseño y contenido entre dos versiones una al lado de la otra.
 * [Combinar y dividir celdas de tabla](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md): cree diseños de tabla flexibles combinando o dividiendo celdas.
 * [Mover un componente a la página maestra](/help/forms/interactive-communication/howto/move-component-to-master-page.md): garantice una colocación coherente de los componentes entre páginas.
+

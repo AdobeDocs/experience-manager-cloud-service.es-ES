@@ -4,7 +4,7 @@ description: Preguntas frecuentes sobre las comunicaciones interactivas en AEM F
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 4cc1bff3-edfb-4826-b914-2a2231b703f9
-source-git-commit: 8043d0bd709962023f4828a6fffa2939788538b2
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 5%
@@ -79,3 +79,4 @@ Mueva el componente a la página maestra. Haga clic con el botón derecho en un 
 
 **Q: ¿Qué tipos de componentes no se pueden mover a la página maestra?**
 Los siguientes tipos no son aptos para la acción Mover a página maestra: áreas de contenido, áreas de página, conjuntos de páginas, fragmentos, subformulario, filas de tabla, celdas de tabla y botones de opción. Los componentes con un bloqueo de contenido o de diseño aplicado tampoco son aptos.
+
