@@ -54,7 +54,7 @@ El editor de comunicaciones interactivas (CI) está diseñado para ofrecer efici
 
 Para comenzar con la comunicación interactiva, siga la [Documentación sobre la incorporación al servicio](/help/forms/setup-forms-cloud-service.md) para habilitar la comunicación interactiva en su entorno de AEM Forms.
 
-https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
+https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## Próximos pasos
 
