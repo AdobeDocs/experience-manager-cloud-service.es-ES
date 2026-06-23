@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: unbound-variable-ic-editor
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '1110'
 ht-degree: 2%
@@ -155,3 +155,4 @@ Puede colocar una variable independiente dentro de subformularios, contenedores 
 - [Componente de campo de fecha y hora](/help/forms/interactive-communication/date-time-field.md): muestra la sintaxis del patrón para los valores de fecha y hora combinados
 - [Usar el Editor de reglas en el Editor de comunicaciones interactivas](/help/forms/interactive-communication/use-the-rule-editor.md): escriba expresiones para calcular y asignar valores a variables independientes
 - [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
+
