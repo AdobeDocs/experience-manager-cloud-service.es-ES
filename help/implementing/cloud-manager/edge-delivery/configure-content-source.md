@@ -1,13 +1,13 @@
 ---
-title: Configuración de la fuente de contenido
+title: Configuración del Source de contenido para Edge Delivery Services
 description: Obtenga información sobre cómo configurar la fuente de contenido del sitio de Edge Delivery. Utilice “fstab.yaml” con la arquitectura Helix 4 o utilice el asistente guiado en Cloud Manager (o la API del servicio de configuración) con la arquitectura Helix 5.
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >
 >*Helix* es el nombre interno de la arquitectura subyacente que impulsa AEM Sites con la creación basada en documentos. No es una función o un nombre de producto. En este artículo, *Helix* hace referencia a la versión de arquitectura utilizada por Edge Delivery Sites. Helix 5 es la versión actual de la arquitectura subyacente; Helix 4 es la versión anterior.
 
-Adobe Experience Manager (AEM) Edge Delivery Services permite enviar contenido desde varios orígenes, como Google Drive, SharePoint o el propio AEM, mediante una red perimetral rápida y distribuida globalmente.
+Adobe Experience Manager (AEM) Edge Delivery Services ofrece contenido desde Google Drive, SharePoint o AEM mediante una red perimetral rápida y distribuida globalmente.
 
 La configuración de la fuente de contenido difiere entre las dos versiones de la arquitectura de la siguiente manera:
 
@@ -48,7 +48,7 @@ mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-El ejemplo anterior es solo ilustrativo. La dirección URL real debe apuntar a la fuente de contenido, como una carpeta de Google Drive, un directorio de SharePoint o una ruta de acceso de AEM.
+El ejemplo anterior es solo ilustrativo. La dirección URL real apunta al origen de contenido, como una carpeta de Google Drive, un directorio de SharePoint o una ruta de acceso de AEM.
 
 **Para configurar la fuente de contenido para Helix 4, haga lo siguiente:**
 
@@ -101,7 +101,7 @@ Los pasos varían según el sistema de origen que utilice.
 
 ## Configuración de la fuente de contenido para Helix 5 {#config-helix5}
 
-Helix 5 no requiere repositorio, no utiliza `fstab.yaml` y admite que varios sitios compartan el mismo directorio. La configuración se administra mediante la API del servicio de configuración o la interfaz de usuario de Edge Delivery Services. La configuración es a nivel de sitio (no de repositorio).
+Helix 5 no utiliza repositorios, no utiliza `fstab.yaml` y admite que varios sitios compartan el mismo directorio. La configuración se administra mediante la API del servicio de configuración o la interfaz de usuario de Edge Delivery Services. La configuración es a nivel de sitio (no de repositorio).
 
 Las diferencias conceptuales son las siguientes:
 

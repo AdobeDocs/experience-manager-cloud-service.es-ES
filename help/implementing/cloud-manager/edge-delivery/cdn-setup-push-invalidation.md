@@ -5,14 +5,14 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 100%
+source-wordcount: '182'
+ht-degree: 84%
 
 ---
 
-# Configuración de invalidación push
+# Configuración de la invalidación push para un sitio de Edge Delivery
 
 La invalidación push garantiza que las actualizaciones de contenido realizadas por los autores se eliminen automáticamente de la red de distribución de contenido (CDN) administrada cuando se publican. Al hacerlo, se garantiza que solo se proporcione el contenido más reciente.
 
