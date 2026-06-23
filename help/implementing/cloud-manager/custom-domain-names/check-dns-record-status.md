@@ -5,10 +5,10 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 25%
+ht-degree: 21%
 
 ---
 
@@ -37,7 +37,7 @@ Ya debe haber configurado la configuración DNS para su nombre de dominio person
 
 1. Haga clic en el icono **Estado** del nombre de dominio.
 
-Cloud Manager realiza una búsqueda DNS del nombre de dominio y lo muestra [estado actual](#statuses).
+Cloud Manager realiza una búsqueda DNS del nombre de dominio y muestra su [estado actual](#statuses).
 
 Cloud Manager almacena automáticamente en déclencheur una búsqueda DNS cuando el nombre de dominio personalizado se verifica e implementa por primera vez correctamente. Para los intentos subsiguientes, debe seleccionar el icono **Resolver de nuevo** junto al estado.
 

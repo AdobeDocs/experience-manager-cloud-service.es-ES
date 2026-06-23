@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 38%
+ht-degree: 36%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 38%
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Añadir un nombre de dominio personalizado"
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Ver y actualizar nombres de dominio personalizados"
 
-Adobe Experience Manager as a Cloud Service se aprovisiona con un nombre de dominio predeterminado que termina en `*.adobeaemcloud.com`. Con la interfaz de usuario de Cloud Manager puede agregar un dominio personalizado para identificar el sitio con un nombre único de marca en forma de autoservicio. El nombre de dominio predeterminado `*.adobeaemcloud.com` permanece, incluso después de asociar nombres de dominio personalizados al sitio web.
+Adobe Experience Manager as a Cloud Service se aprovisiona con un nombre de dominio predeterminado que termina en `*.adobeaemcloud.com`. Para identificar el sitio con un nombre único y de marca en forma de autoservicio, puede agregar un dominio personalizado mediante la interfaz de usuario de Cloud Manager. El nombre de dominio predeterminado `*.adobeaemcloud.com` permanece, incluso después de asociar nombres de dominio personalizados al sitio web.
 
 ## ¿Qué son los nombres de dominio personalizados? {#what-are-custom-domain-names}
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service ofrece un servicio integrado de CDN (red de distribución
 * Cloud Manager administra los nombres de dominio personalizados y los certificados instalados en la CDN administrada por AEM.
 * Los nombres de dominio personalizados y los certificados instalados en una CDN BYO se administran directamente dentro de esa CDN.
 
-**Los dominios administrados en su propia CDN no requieren instalación a través de Cloud Manager**. Están disponibles para AEM a través de X-Forwarded-Host y coinciden con los vhosts definidos en Dispatcher. Consulte la [Documentación de la CDN](/help/implementing/dispatcher/cdn.md).
+**Los dominios administrados en su propia CDN no requieren instalación a través de Cloud Manager**; se ponen a disposición de AEM a través de X-Forwarded-Host y coinciden con los vhosts definidos en Dispatcher. Consulte la [Documentación de la CDN](/help/implementing/dispatcher/cdn.md).
 
 En un entorno, puede tener ambos dominios instalados en la CDN administrada por AEM e instalados en una CDN por BYO.
 
@@ -69,7 +69,7 @@ Para agregar un nombre de dominio personalizado es necesaria la interacción ent
 
 >[!TIP]
 >
->La configuración de nombres de dominio personalizados con AEM as a Cloud Service suele ser un proceso sencillo. Sin embargo, en ocasiones pueden producirse problemas de delegación de dominios que pueden tardar entre 1 y 2 días hábiles en resolverse. Por este motivo, se recomienda instalar los dominios mucho antes de la fecha de lanzamiento. Consulte el documento [Comprobar el estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información.
+>La configuración de nombres de dominio personalizados con AEM as a Cloud Service suele ser un proceso sencillo. Sin embargo, en ocasiones pueden producirse problemas de delegación de dominios que pueden tardar entre 1 y 2 días hábiles en resolverse. Por este motivo, Adobe recomienda instalar los dominios mucho antes de la fecha de lanzamiento. Consulte el documento [Comprobar el estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información.
 
 ## Notas de uso {#usage-notes}
 
