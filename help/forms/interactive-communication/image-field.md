@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 3%
+source-wordcount: '566'
+ht-degree: 5%
 
 ---
 
 # Componente de campo de imagen en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -108,3 +105,9 @@ Los autores pueden colocar el campo dentro de subformularios o contenedores de d
 - Enlace el campo a una ruta de esquema significativa si la integración con el back-end
 
 El componente Campo de imagen del editor de comunicaciones interactivas es un componente versátil que mejora la interactividad del formulario al habilitar las cargas de contenido visual. Cuando se diseña con estilo, validación y enlace de datos, admite una experiencia del usuario perfecta y una captura de datos eficiente para los envíos basados en imágenes.
+
+## Ver también
+
+- [Componente Imagen](/help/forms/interactive-communication/image.md)
+- [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
+- [Usar el Editor de reglas en el Editor de comunicaciones interactivas](/help/forms/interactive-communication/use-the-rule-editor.md)

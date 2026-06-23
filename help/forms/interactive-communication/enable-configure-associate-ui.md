@@ -4,19 +4,16 @@ description: Obtenga información sobre cómo habilitar la Vista de asociación 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-exl-id: 7c3e8a2b-5f21-4a1e-9e2d-8a4b6c7d8e9f
-source-git-commit: a41459520feb03594212b91e68cfd8e2b1e610c4
+exl-id: 5f8371f9-b4a6-4cae-a9d3-cfd744b66702
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 1%
+source-wordcount: '762'
+ht-degree: 0%
 
 ---
 
 # Habilitar y configurar la interfaz de usuario asociada para comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 En este artículo se describe cómo habilitar la interfaz de usuario de asociado para una comunicación interactiva (CI) y, opcionalmente, configurar un flujo de trabajo de AEM para los envíos. Los autores realizan estos pasos en **Configuración de la comunicación interactiva**.
 
@@ -88,7 +85,7 @@ Después de activar la opción Asociar vista y, opcionalmente, configurar el flu
 1. **Publicar el IC** para que esté disponible en la instancia de publicación para asociados.
 1. Compartir el vínculo CI publicado con los asociados. Se autentican (por ejemplo, mediante [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) y abren la interfaz de usuario de Associate, introducen o confirman los datos del cliente y generan la comunicación final. Si ha configurado un flujo de trabajo, se ejecuta al enviarlo. Para ver cómo funcionan el envío y el flujo de trabajo, consulte [Flujo de trabajo de envío para la IU asociada](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md#submission-and-workflow-behavior).
 
-## Consulte también
+## Ver también
 
 - [Asociar interfaz de usuario en el editor de comunicaciones interactivas](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Integración de la interfaz de usuario asociada en la aplicación](/help/forms/interactive-communication/invoke-associate-ui.md)

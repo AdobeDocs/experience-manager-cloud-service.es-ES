@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9d906be2812090ed7f6439b0ffafc481d29b13e1
+source-git-commit: e4a81d514422497ec3f41537e3a2e57677730af5
 workflow-type: tm+mt
-source-wordcount: '7502'
+source-wordcount: '7545'
 ht-degree: 84%
 
 ---
@@ -648,7 +648,7 @@ ht-degree: 84%
       + [Creación y uso compartido de carpetas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
-      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
       + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
       + [Selector de destino de Micro-Frontend](/help/assets/destination-selector.md)
@@ -873,8 +873,8 @@ ht-degree: 84%
          + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
          + {hide-from-toc}[Configurar [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuración de almacenamiento de  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Conectar el formulario adaptable a la base de datos SQL de Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configuración de los servicios en la nube de Salesforce](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
@@ -1058,6 +1058,10 @@ ht-degree: 84%
       + [Crear fragmento de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + {hide-from-toc}[Introducción a la comunicación interactiva](/help/forms/introduction-to-interactive-communication.md)
       + {hide-from-toc}[Crear su primera comunicación interactiva](/help/forms/create-your-first-communication.md)
+   + Revisar y colaborar {#review-collaborate}
+      + {hide-from-toc}[Creación de versiones y comentarios en el editor de comunicaciones interactivas](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+      + {hide-from-toc}[Revisar y anotar una comunicación interactiva](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
+      + {hide-from-toc}[Comparar versiones de comunicaciones interactivas](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
    + Componente {#component}
       + [Cuadro de texto](/help/forms/interactive-communication/text-box.md)
       + [Imagen](/help/forms/interactive-communication/image.md)
@@ -1073,6 +1077,7 @@ ht-degree: 84%
       + [Tabla](/help/forms/interactive-communication//table.md)
       + [Línea](/help/forms/interactive-communication/line.md)
       + [Código de barras](/help/forms/interactive-communication/barcode.md)
+      + [Variable sin enlazar](/help/forms/interactive-communication/unbound-variable.md)
    + Cómo {#howto}
       + [Configurar enlace de datos](/help/forms/interactive-communication/configure-data-binding.md)
       + [Uso del Editor de reglas](/help/forms/interactive-communication/use-the-rule-editor.md)
@@ -1083,16 +1088,19 @@ ht-degree: 84%
       + [Implementar la numeración dinámica de páginas](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
       + [Gestionar desbordamiento de contenido](/help/forms/interactive-communication/handle-content-overflow.md)
       + [Compatibilidad con la edición XDP](/help/forms/interactive-communication/support-xdp-editing.md)
-      + {hide-from-toc}[Crear versiones y agregar comentarios](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
       + {hide-from-toc}[Copiar y pegar comunicación interactiva](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
       + [Iniciar flujo de trabajo en comunicaciones interactivas](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
       + [Crear tabla dinámica](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
+      + {hide-from-toc}[Combinar y dividir celdas de tabla](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
+      + {hide-from-toc}[Mover un componente a la página maestra](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
    + Asociar IU {#associateui}
       + [Asociar interfaz de usuario en el editor de comunicaciones interactivas](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
       + [Habilitar y configurar la interfaz de usuario asociada para comunicaciones interactivas](/help/forms/interactive-communication/enable-configure-associate-ui.md)
       + [Integración de la interfaz de usuario asociada en la aplicación](/help/forms/interactive-communication/invoke-associate-ui.md)
       + [Flujo de trabajo de envío para la IU asociada: IC Generar salida de PDF](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-   + {hide-from-toc}[Preguntas más frecuentes](/help/forms/interactive-communications-faq.md)
+      + {hide-from-toc}[Configurar opciones desplegables para la interfaz de usuario asociada](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+      + {hide-from-toc}[Configurar variables enlazadas y no enlazadas para la IU asociada](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
+   + [Preguntas frecuentes](/help/forms/interactive-communications-faq.md)
 + Flujos de trabajo centrados en formularios {#create-form-centric-workflows}
    + {hide-from-toc}[Introducción al flujo de trabajo centrado en Forms](/help/forms/aem-forms-workflow.md)
    + [Uso de pasos centrados en Forms en un flujo de trabajo + referencia de paso](/help/forms/aem-forms-workflow-step-reference.md)

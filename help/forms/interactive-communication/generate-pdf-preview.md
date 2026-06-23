@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '336'
 ht-degree: 4%
 
 ---
 
 # Vista previa de PDF en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 La función de vista previa de PDF permite a los usuarios obtener una vista previa de las comunicaciones interactivas de tres formas diferentes: sin datos, con datos locales basados en JSON o con datos de muestra del modelo de datos configurado.
 
@@ -47,9 +44,9 @@ Obtenga una vista previa de las comunicaciones interactivas sin datos, datos loc
 
 +++&#x200B;2. Vista previa con datos JSON locales
 
-2.1. Prepare un archivo JSON estructurado. Como referencia, puede copiar los datos de ejemplo del esquema JSON [(FDM)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizado para la comunicación.
+2.1. Prepare un archivo JSON estructurado. Como referencia, puede copiar los datos de ejemplo del esquema JSON [(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizado para la comunicación.
 
-2.2. En el Editor IC, vaya a **Vista previa de PDF** > Uso de datos locales.
+2.2. En el editor de CI, vaya a **Vista previa de PDF** > Uso de datos locales.
 
 2.3. Seleccione y cargue su archivo JSON para obtener una vista previa de PDF con los datos proporcionados.
 
@@ -57,11 +54,11 @@ Obtenga una vista previa de las comunicaciones interactivas sin datos, datos loc
 
 +++
 
-+++&#x200B;3. Vista previa con el modelo de datos 
++++&#x200B;3. Vista previa con modelo de datos 
 
 3.1. Seleccione **Uso del modelo de datos** para usar datos de ejemplo de un modelo de datos de formulario (FDM) ya configurado de la CI.
 
-3.2. La vista previa rellena automáticamente los datos de los campos de modelo. Asegúrese de que los datos de ejemplo se guarden en FDM la primera vez que los utilice; de lo contrario, la vista previa puede mostrarse como sin datos.
+3.2. La vista previa rellena automáticamente los datos de los campos del modelo. Asegúrese de que los datos de ejemplo se guarden en FDM la primera vez que los utilice; de lo contrario, la vista previa puede mostrarse como sin datos.
 
 ![Buscar documento CI](/help/forms/interactive-communication/assets/datamodel.png)
 

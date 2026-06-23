@@ -6,19 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 7%
+source-wordcount: '270'
+ht-degree: 5%
 
 ---
 
 
 # Crear una plantilla de comunicación interactiva
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 Las plantillas de comunicación interactiva de AEM permiten a los usuarios definir estructuras de diseño reutilizables, como encabezados, pies de página, logotipos y estilo predeterminado. Estas plantillas sirven de base para crear comunicaciones coherentes, de marca y eficientes.
 

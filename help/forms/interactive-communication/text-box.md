@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 6bed824c-b959-4882-a5aa-dbb7fbf2f8a0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 3%
+source-wordcount: '677'
+ht-degree: 4%
 
 ---
 
 # Componente Cuadro de texto en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -27,7 +24,41 @@ El cuadro de texto admite **enlace de datos**, lo que permite a los autores comb
 
 ![Buscar documento CI](/help/forms/interactive-communication/assets/textbox.png)
 
-## &#x200B;2. Propiedades
+## &#x200B;2. Patrón de visualización
+
+Puede asignar un **patrón de visualización** a un campo de cuadro de texto desde el panel **Propiedades**. Los patrones de visualización controlan cómo se presentan los valores de campo a los usuarios finales en la vista previa del lienzo y en la salida generada; por ejemplo, enmascarando una entrada de texto como número de teléfono: **(555) 123-4567**.
+
+El patrón configurado se refleja inmediatamente en la vista previa del lienzo y se conserva en los ciclos de guardado y recarga. Para casos de uso avanzados, puede definir una **cláusula de imagen XFA personalizada** para obtener el formato de salida deseado.
+
+### Configuración de un patrón de visualización
+
+1. Seleccione el componente Cuadro de texto en el lienzo de diseño.
+2. Abra el panel **Propiedades**.
+3. En la sección **Patrón de visualización**, elija un patrón predefinido o escriba una cláusula de imagen personalizada.
+4. Previsualice el valor formateado en el lienzo.
+
+### Ejemplo de patrón personalizado (texto)
+
+| Patrón | Salida de ejemplo | Descripción |
+|---------|----------------|-------------|
+| `text{(999) 999-9999}` | (555) 123-4567 | Máscara de número de teléfono |
+
+**Símbolos de la cláusula de imagen (texto):**
+
+| Símbolo | Significado |
+|--------|---------|
+| 9 | Coincide con un dígito |
+| A | Coincide con una carta |
+| O | Coincide con alfanumérico |
+| X | Coincide con cualquier carácter |
+
+### Prácticas recomendadas
+
+- Elija un patrón que coincida con la forma en que los usuarios finales esperan leer el valor (teléfono, ID, código postal).
+- Valide los datos de ejemplo en la vista previa del lienzo antes de publicar.
+- Utilice cláusulas de imagen personalizadas únicamente cuando los motivos predefinidos no satisfagan sus necesidades de formato.
+
+## &#x200B;3. Propiedades
 
 El componente cuadro de texto proporciona un amplio conjunto de propiedades para ayudar a configurar su aspecto, presentación y comportamiento.
 
@@ -81,7 +112,7 @@ Defina el espaciado alrededor del cuadro de texto:
 
 
 
-## &#x200B;3. Uso
+## &#x200B;4. Uso
 
 El cuadro de texto se utiliza para:
 
@@ -95,7 +126,7 @@ El cuadro de texto se utiliza para:
 
 Los autores pueden arrastrar el cuadro de texto desde la biblioteca de componentes hasta la vista Diseño o la vista Patrón y configurar su comportamiento mediante el panel Propiedades.
 
-## &#x200B;4. Prácticas recomendadas
+## &#x200B;5. Prácticas recomendadas
 
 - Asocie siempre los cuadros de texto con etiquetas de campo significativas para mejorar la accesibilidad.
 
@@ -106,3 +137,12 @@ Los autores pueden arrastrar el cuadro de texto desde la biblioteca de component
 - Evite estilos de fuente excesivos que puedan dificultar la legibilidad.
 
 Al configurar las propiedades del cuadro de texto con cuidado, los autores pueden crear experiencias de comunicación interactivas, interactivas y fáciles de usar dentro del Editor de comunicaciones interactivas de AEM.
+
+## Ver también
+
+- [Componente de campo numérico](/help/forms/interactive-communication/numeric-field.md)
+- [Componente Campo de fecha](/help/forms/interactive-communication/date-field.md)
+- [Componente de campo de fecha y hora](/help/forms/interactive-communication/date-time-field.md)
+- [Componente de variable independiente](/help/forms/interactive-communication/unbound-variable.md)
+- [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
+- [Usar el Editor de reglas en el Editor de comunicaciones interactivas](/help/forms/interactive-communication/use-the-rule-editor.md)

@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: b30b3634-0457-4c29-84d3-78f1429b98d1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 6%
+source-wordcount: '712'
+ht-degree: 3%
 
 ---
 
 # Introducción al editor de comunicaciones interactivas (CI)
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 El editor de **comunicaciones interactivas (CI)** de Adobe Experience Manager (AEM) Forms permite a las organizaciones diseñar y entregar comunicaciones personalizadas basadas en datos, como extractos, facturas y cartas, en canales digitales e impresos. Esta guía proporciona información general sobre cómo empezar, desde la incorporación hasta la navegación por la interfaz del editor de CI.
 
@@ -30,12 +27,12 @@ Para usar la comunicación interactiva, asegúrate de que tu entorno de AEM Form
 
 ### Verifique su explorador
 
-Para conocer los exploradores y las plataformas de cliente compatibles, siga el artículo vinculado [Plataformas de cliente compatibles](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/overview/supported-platforms)
+Para conocer los exploradores y las plataformas de cliente compatibles, siga el artículo vinculado [Plataformas de cliente compatibles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)
 
 >[!NOTE]
 >
 > **Compatibilidad con exploradores con ciclos de lanzamiento rápidos:**
-> Firefox, Chrome y Edge lanzan actualizaciones con regularidad. Adobe se compromete a mantener el nivel de compatibilidad indicado anteriormente para las próximas versiones de estos exploradores.
+> Firefox, Chrome y Edge se actualizan con regularidad. Adobe se compromete a mantener el nivel de asistencia mencionado anteriormente para las próximas versiones de estos exploradores.
 
 ### Configurar roles y permisos de usuario
 
@@ -46,7 +43,7 @@ El acceso a las características del Editor IC está regido por [roles de usuari
 | **Autor de formularios** | Crea y edita comunicaciones interactivas. | Crear, editar, previsualizar y publicar CI. |
 | **Autor de plantillas** | Diseña plantillas reutilizables para comunicaciones interactivas. | Cree y bloquee plantillas, y defina diseños. |
 | **Administrador** | Administra el acceso de los usuarios, los permisos y las configuraciones. | Asigne funciones, administre plantillas y publique CI. |
-| **Autor de FDM** | [Crea y administra modelos de datos de formulario (FDM)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) para la integración de datos. | Crear, editar y configurar fuentes de datos y modelos. |
+| **Autor de FDM** | [Crea y administra modelos de datos de formulario (FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) para la integración de datos. | Crear, editar y configurar fuentes de datos y modelos. |
 
 >[!NOTE]
 >
@@ -95,7 +92,7 @@ Muestra el **entorno de Adobe Experience Cloud** (por ejemplo, Ensayo), junto co
 
 **Controles de vista:** Opciones como regla, creación, zoom (85%), Deshacer/Rehacer, Eliminar, Vista previa de PDF y Guardar
 
-### &#x200B;3. Panel izquierdo (navegación y herramientas de componentes)
+### &#x200B;3. Panel izquierdo (herramientas de navegación y componentes)
 
 ![Buscar documento CI](/help/forms/interactive-communication/assets/left-panel.png)
 

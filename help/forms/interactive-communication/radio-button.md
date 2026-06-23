@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 2%
+source-wordcount: '543'
+ht-degree: 4%
 
 ---
 
 # Componente Botón de opción del editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -115,3 +112,9 @@ Los autores pueden agrupar los botones de opción relacionados y colocarlos dent
 - Aplique un espaciado y una alineación coherentes para una mejor claridad visual, especialmente en diseños aptos para móviles.
 
 El componente Botón de opción del editor de comunicaciones interactivas es un componente de entrada fundamental que ofrece una toma de decisiones limpia y estructurada para los usuarios finales. Cuando se configura con etiquetas claras, espaciado cuidadoso y enlace de datos, garantiza una recopilación de datos confiable y una experiencia de usuario más fluida para formularios, encuestas y flujos de trabajo de incorporación.
+
+## Ver también
+
+- [Componente Casilla de verificación](/help/forms/interactive-communication/check-box.md)
+- [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
+- [Usar el Editor de reglas en el Editor de comunicaciones interactivas](/help/forms/interactive-communication/use-the-rule-editor.md)

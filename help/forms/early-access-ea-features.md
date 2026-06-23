@@ -7,10 +7,10 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 18%
+source-wordcount: '2223'
+ht-degree: 21%
 
 ---
 
@@ -103,58 +103,62 @@ Ready to start? The following articles provides detailed instructions to use the
 
 -->
 
-### Comunicaciones interactivas en la nube
+<!--
 
-Interactive Communications en Cloud es una potente solución para crear, administrar y entregar correspondencia interactiva basada en datos, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida.
+### Interactive Communications on Cloud
 
-![Editor de comunicación interactiva](/help/forms/assets/ic-editor.png)
+Interactive Communications on Cloud is a powerful solution for creating, managing, and delivering data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 
-#### Características principales:
+![Interactive Communication Editor](/help/forms/assets/ic-editor.png)
 
-* **Editor basado en la nube**: A diferencia de AEM Forms Desktop Designer, que solo se puede instalar en equipos Windows, el editor de comunicaciones interactivas se ejecuta en cualquier explorador moderno sin necesidad de instalación. Este enfoque basado en la nube elimina los problemas de instalación, proporciona accesibilidad entre plataformas y permite la colaboración desde cualquier ubicación con acceso a Internet.
+#### Key Features:
 
-* **Diseño fácil de usar**: interfaz intuitiva de apuntar y hacer clic que requiere conocimientos técnicos mínimos.
+* **Cloud-Based Editor**: Unlike AEM Forms Desktop Designer which can only be installed on Windows machines, the Interactive Communications editor runs in any modern browser with no installation required. This cloud-based approach eliminates installation hassles, provides cross-platform accessibility, and enables collaboration from any location with internet access.
 
-* **Integración de datos**: conéctese a esquemas, bases de datos y servicios web para generar contenido dinámico.
+* **User-Friendly Design**: Intuitive point-and-click interface requiring minimal technical knowledge.
 
-* **Medios enriquecidos**: incorpora texto, imágenes y elementos interactivos sin problemas.
+* **Data Integration**: Connect to schemas, databases, and web services for dynamic content generation.
 
-* **Fragmentos de documento**: reutilice bloques de contenido modulares en varios documentos para mantener la coherencia y la eficacia.
+* **Rich Media**: Incorporate text, images, and interactive elements seamlessly.
 
-* **Salida multicanal**: cree experiencias unificadas en los formatos digital e impreso con cumplimiento normativo.
+* **Document Fragments**: Reuse modular content blocks across multiple documents for consistency and efficiency.
 
-* **Contenido dinámico**: genere contenido personalizado mediante lógica empresarial y enlace de datos.
+* **Multi-Channel Output**: Create unified experiences across print and digital formats with regulatory compliance.
 
-* **Flexibilidad de formato**: Salida a los formatos PDF, HTML, PCL, PostScript® y ZPL.
+* **Dynamic Content**: Generate personalized content using business logic and data binding.
 
-* **Editor de reglas**: cree acciones dinámicas impulsadas por datos directamente en sus documentos mediante una interfaz intuitiva que apunte y haga clic. Defina fácilmente la lógica condicional, automatice los flujos de trabajo y personalice el contenido sin escribir código.
+* **Format Flexibility**: Output to PDF, HTML, PCL, PostScript&reg;, and ZPL formats.
 
-* **Vista previa de PDF:** Vista previa de la comunicación interactiva sin datos, archivos JSON locales o modelos de datos para realizar pruebas flexibles basadas en datos.
-* **Fuentes personalizadas:** Incruste fuentes personalizadas o aprobadas por la organización para garantizar un procesamiento de PDF coherente y de marca en todos los dispositivos.
-* **Importar y exportar:** migre y reutilice sin problemas la comunicación interactiva con sus fragmentos y modelos de datos entre entornos.
+* **Rule Editor**: Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code.
 
-* **Bloqueo de plantillas**: bloquea los elementos de contenido y diseño dentro de las plantillas para mantener la integridad de la marca y evitar modificaciones no autorizadas.
+* **PDF Preview:** Preview Interactive Communication with no data, local JSON files, or data models for flexible, data-driven testing.
+* **Custom Fonts:** Embed custom or organization-approved fonts to ensure consistent, branded PDF rendering across devices.
+* **Import and Export:** Seamlessly migrate and reuse Interactive Communication with their fragments and data models across environments.
 
-* **Desbordamiento de contenido**: la opción &quot;Permitir saltos de página dentro del contenido&quot; permite diseños fluidos para una edición sin problemas de varias páginas y una mejor administración de texto para documentos complejos.
+* **Template Locking**: Lock content and layout elements within templates to maintain brand integrity and prevent unauthorised modifications. 
 
-* **Edición de archivos XDP**: ahora puede editar archivos XDP en un explorador en lugar de Forms Designer que se ejecuta únicamente en el escritorio de Microsoft Windows.
+* **Content Overflow**: "Allow page breaks within content" option for flowed layouts for smooth multi-page editing and better text management for complex documents. 
 
-* **Invocar la interfaz de usuario asociada en una instancia de publicación**: ahora puede invocar la interfaz de usuario asociada directamente en instancias de publicación. Esta capacidad define la configuración, la estructura de carga útil y el flujo de invocación necesarios, lo que simplifica la integración y acelera la implementación en todos los entornos.
+* **XDP File Editing**: You can now edit XDP files in a browser instead of Forms Designer that runs only on Microsoft Windows desktop. 
 
-##### Numeración dinámica de páginas
+* **Invoke the Associate UI on a Publish instance**: You can now invoke the Associate UI directly on Publish instances. This capability defines the required configuration, payload structure, and invocation flow, simplifying integration and accelerating deployment across environments.
 
-Muestre automáticamente &quot;Page # of ##&quot; en las páginas maestras para una paginación clara y coherente en los documentos de varias páginas.
+##### Dynamic Page Numbering 
+
+Automatically display "Page # of ##" on master pages for clear, consistent pagination across multi-page documents. 
 
 
 
-#### Casos de uso:
+#### Use Cases:
 
-* Instituciones financieras que generan extractos de cuentas
-* Organismos gubernamentales que simplifican los avisos de prestaciones
-* Crear correspondencia de alta calidad, segura y compatible con la ley
-* Administrar la creación, el ensamblado y el envío de correspondencia interactiva basada en datos
+* Financial institutions generating account statements
+* Government agencies streamlining benefit notices
+* Creating high-quality, secure, and legally compliant correspondence
+* Managing the creation, assembly, and delivery of data-driven interactive correspondences
 
-¿Listo para empezar? El editor de comunicaciones interactivas está disponible en el programa de acceso anticipado para implementaciones de Forms as a Cloud Service. Para solicitar acceso, envía por correo electrónico tu ID de organización y los detalles del programa a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde tu dirección oficial.
+Ready to start? The Interactive Communications editor is available under the Early Access program for Forms as a Cloud Service deployments. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
+
+-->
 
 ### Integración de AEM Forms con Adobe Experience Platform (AEP)
 

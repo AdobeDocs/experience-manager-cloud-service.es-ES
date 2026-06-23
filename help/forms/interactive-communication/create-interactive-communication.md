@@ -6,19 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 5%
+source-wordcount: '562'
+ht-degree: 3%
 
 ---
 
 
 # Crear una comunicación interactiva
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 Interactive Communications le permite crear, administrar y entregar comunicaciones personalizadas e interactivas, incluido el servicio de atención al cliente, la facturación, los documentos de incorporación, las cartas de oferta, las actualizaciones de cuenta y más. Está diseñado para admitir cualquier escenario en el que el contenido dinámico y específico del usuario mejore la experiencia de comunicación entre industrias.
 
@@ -92,3 +89,10 @@ Comience a crear comunicaciones interactivas para optimizar los flujos de trabaj
 
 [Crear una plantilla de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-template.md)
 [Crear un fragmento de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+
+## Ver también
+
+* [Revisar y anotar una comunicación interactiva](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md): Colabore con los revisores mediante clavijas de anotación colocadas en el lienzo de CI.
+* [Comparar versiones de comunicación interactiva](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md): inspeccione las diferencias de diseño y contenido entre dos versiones una al lado de la otra.
+* [Combinar y dividir celdas de tabla](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md): cree diseños de tabla flexibles combinando o dividiendo celdas.
+* [Mover un componente a la página maestra](/help/forms/interactive-communication/howto/move-component-to-master-page.md): garantice una colocación coherente de los componentes entre páginas.

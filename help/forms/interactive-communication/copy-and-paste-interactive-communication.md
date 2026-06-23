@@ -8,18 +8,15 @@ hide: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 3%
+source-wordcount: '372'
+ht-degree: 1%
 
 ---
 
 # Copiar y pegar en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 La función Copiar y pegar del editor de comunicaciones interactivas (CI) permite a los autores duplicar una comunicación interactiva existente y reutilizarla en una carpeta o ubicación diferente. Esta capacidad ayuda a los equipos a trabajar de forma eficaz al habilitar varias variaciones de una CI sin modificar la versión original.
 

@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 7e328932-070d-4eb3-8176-500ef31581be
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 4%
+source-wordcount: '252'
+ht-degree: 3%
 
 ---
 
 # Importar y exportar comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 La funcionalidad de importación y exportación de la comunicación interactiva (IC) permite a los usuarios migrar, reutilizar y administrar sin problemas las comunicaciones entre entornos. Permite exportar una comunicación interactiva (CI) junto con sus fragmentos y modelos de datos asociados de un entorno e importarla en otro, lo que garantiza la coherencia y reduce la duplicación de esfuerzos durante la implementación.
 
@@ -31,7 +28,7 @@ La funcionalidad de importación y exportación de la comunicación interactiva 
 
 Cree una comunicación interactiva (CI) en un entorno y reutilícela en otro exportándola e importándola siguiendo estos pasos:
 
-+++&#x200B;1. Cómo exportar la comunicación interactiva
++++&#x200B;1. Cómo exportar una comunicación interactiva
 
 1.1. Seleccione una [comunicación interactiva creada](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (CI).
 1.2. Haga clic en la opción **Descargar** para exportarla como archivo ZIP.
@@ -48,14 +45,14 @@ Cree una comunicación interactiva (CI) en un entorno y reutilícela en otro exp
 
 ![Buscar documento CI](/help/forms/interactive-communication/assets/uploadfile.png)
 
-2.4. Después de la carga, aparece la CI junto con sus fragmentos y modelos de datos asociados.
+2.4. Después de la carga, aparece la CI junto con sus fragmentos asociados y el modelo de datos.
 
 ![Buscar documento CI](/help/forms/interactive-communication/assets/importfragment.png)
 +++
 
 +++&#x200B;3. Importar y exportar fragmento
 
-3.1. Para exportar, seleccione el fragmento necesario de **Forms > Forms and Documents** y, a continuación, haga clic en **Descargar** para exportarlo como archivo ZIP.
+3.1. Para exportar, selecciona el fragmento necesario de **Forms > Forms y Documentos** y, a continuación, haz clic en **Descargar** para exportarlo como un archivo ZIP.
 
 3.2. Para importar, vaya al entorno de destino, vaya a Forms > Forms y Documentos > Crear > **Carga de archivos** y cargue el archivo ZIP exportado.
 
