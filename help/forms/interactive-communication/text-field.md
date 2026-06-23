@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 2%
+source-wordcount: '683'
+ht-degree: 0%
 
 ---
 
 # Componente Campo de texto en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -130,3 +127,11 @@ Los autores pueden colocar el campo en subformularios o cuadrículas de diseño 
 - Enlace directamente al modelo de datos siempre que sea posible para un mantenimiento más sencillo.
 
 El componente Campo de texto del editor de CI es un bloque de creación versátil que optimiza la captura de datos. Cuando se configura cuidadosamente, con una tipografía bien elegida, etiquetas claras, una validación adecuada y un enlace de datos sólido, ofrece una experiencia fácil de usar y datos fiables para el procesamiento posterior.
+
+## Ver también
+
+- [Componente Cuadro de texto](/help/forms/interactive-communication/text-box.md)
+- [Componente de campo numérico](/help/forms/interactive-communication/numeric-field.md)
+- [Componente de variable independiente](/help/forms/interactive-communication/unbound-variable.md)
+- [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
+- [Usar el Editor de reglas en el Editor de comunicaciones interactivas](/help/forms/interactive-communication/use-the-rule-editor.md)

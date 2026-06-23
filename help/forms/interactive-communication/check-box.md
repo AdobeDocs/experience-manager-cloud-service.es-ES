@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 2%
+source-wordcount: '622'
+ht-degree: 0%
 
 ---
 
 # Componente Casilla de verificación en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -120,3 +117,9 @@ Las casillas de verificación se pueden colocar dentro de cuadrículas o paneles
 - Utilice reglas de visibilidad cuando las casillas de verificación dependan de entradas o condiciones anteriores.
 
 El componente Casilla de verificación del editor de comunicaciones interactivas es un componente simple pero esencial para las entradas binarias. Gracias a su compatibilidad con el estilo, la presencia condicional y el enlace de datos flexible, desempeña un papel clave en la mejora de la interactividad y el control de usuario en los formularios digitales inteligentes. Cuando se implementan con etiquetas reflexivas, un estilo coherente y una integración de datos significativa, las casillas de verificación contribuyen de manera significativa a una experiencia de formulario sencilla e intuitiva.
+
+## Ver también
+
+- [Componente Botón de opción](/help/forms/interactive-communication/radio-button.md)
+- [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
+- [Usar el Editor de reglas en el Editor de comunicaciones interactivas](/help/forms/interactive-communication/use-the-rule-editor.md)

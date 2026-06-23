@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 1f6bda20-7bce-4cfd-9985-f8b49d6e50e0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 2%
+source-wordcount: '892'
+ht-degree: 3%
 
 ---
 
 # Componente de campo numérico en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -25,7 +22,39 @@ El componente Campo numérico del editor de comunicaciones interactivas (IC) per
 
 ![Buscar documento CI](/help/forms/interactive-communication/assets/numericfield.png)
 
-## &#x200B;2. Propiedades
+## &#x200B;2. Patrón de visualización
+
+Puede asignar un **patrón de visualización** a un campo numérico desde el panel **Propiedades**; por ejemplo, al procesar un valor como moneda: **$1,234.21**.
+
+El patrón configurado se refleja inmediatamente en la vista previa del lienzo y se conserva en los ciclos de guardado y recarga. Para casos de uso avanzados, puede definir una **cláusula de imagen XFA personalizada** para obtener el formato de salida deseado.
+
+### Configuración de un patrón de visualización
+
+1. Seleccione el componente Campo numérico en el lienzo de diseño.
+2. Abra el panel **Propiedades**.
+3. En la sección **Patrón de visualización**, elija un patrón predefinido o escriba una cláusula de imagen personalizada.
+4. Previsualice el valor formateado en el lienzo.
+
+### Ejemplo de patrón personalizado (numérico)
+
+| Patrón | Salida de ejemplo | Descripción |
+|---------|----------------|-------------|
+| `num{$z,zzz,zz9.99}` | $1,234.21 | Divisa con separador de miles |
+
+**Símbolos de la cláusula de imagen (numéricos):**
+
+| Símbolo | Significado |
+|--------|---------|
+| 9 | Dígito obligatorio |
+| z | Suprime los ceros a la izquierda |
+
+### Prácticas recomendadas
+
+- Elija un patrón que represente claramente la unidad del valor (símbolo de moneda, porcentaje, etc.).
+- Valide los datos de ejemplo en la vista previa del lienzo antes de publicar.
+- Utilice cláusulas de imagen personalizadas únicamente cuando los motivos predefinidos no satisfagan sus necesidades de formato.
+
+## &#x200B;3. Propiedades
 
 2.1 Campo básico
 
@@ -101,7 +130,7 @@ Controla la visibilidad del campo numérico durante el tiempo de ejecución.
 
 **Sin enlace de datos:** Mantiene el campo estático para uso de solo visualización o entrada temporal.
 
-## &#x200B;3. Uso
+## &#x200B;4. Uso
 
 Los campos numéricos son ideales en situaciones en las que solo los dígitos son entradas válidas. Los casos de uso comunes incluyen los siguientes:
 
@@ -115,7 +144,7 @@ Los campos numéricos son ideales en situaciones en las que solo los dígitos so
 
 Los autores pueden colocar campos numéricos dentro de contenedores de diseño o subformularios y aplicar validaciones (como restricciones de longitud, mínimo o máximo valor) para mejorar la calidad de los datos.
 
-## &#x200B;4. Prácticas recomendadas
+## &#x200B;5. Prácticas recomendadas
 
 - Etiquete claramente los campos numéricos con las unidades si es necesario (por ejemplo, &quot;Cantidad en ₹&quot;).
 
@@ -128,3 +157,12 @@ Los autores pueden colocar campos numéricos dentro de contenedores de diseño o
 - Mantenga un aspecto y una tipografía coherentes para que coincidan con las directrices de marca.
 
 El componente **Campo numérico** del editor de comunicaciones interactivas es una herramienta precisa y confiable para la recopilación de datos basados en dígitos. Gracias a sus sólidas opciones de formato, controles de visibilidad y enlace de datos, garantiza que las entradas numéricas se capturan sin problemas y se integran perfectamente en los formularios digitales. Cuando se diseña y configura correctamente, mejora significativamente la capacidad de uso del formulario y la precisión general de los datos.
+
+## Ver también
+
+- [Componente Cuadro de texto](/help/forms/interactive-communication/text-box.md)
+- [Componente Campo de fecha](/help/forms/interactive-communication/date-field.md)
+- [Componente de campo de fecha y hora](/help/forms/interactive-communication/date-time-field.md)
+- [Componente de variable independiente](/help/forms/interactive-communication/unbound-variable.md)
+- [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
+- [Usar el Editor de reglas en el Editor de comunicaciones interactivas](/help/forms/interactive-communication/use-the-rule-editor.md)

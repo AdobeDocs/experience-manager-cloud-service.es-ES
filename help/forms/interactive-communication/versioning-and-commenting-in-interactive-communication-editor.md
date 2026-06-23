@@ -4,31 +4,26 @@ description: Las versiones y los comentarios del editor de comunicaciones intera
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
 exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: efdfec8f3ce63a2931a78eeb4be3820e22b13a8d
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '732'
 ht-degree: 1%
 
 ---
 
 # Crear versiones y comentarios en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
-Las comunicaciones interactivas (CI) permiten a las organizaciones crear documentos dinámicos basados en datos para una comunicación personalizada con los clientes. Para admitir una mejor colaboración, administración y flujos de trabajo de publicación controlados, el editor de comunicaciones interactivas proporciona funciones de versiones, revisión y comentarios.
+Las comunicaciones interactivas permiten a las organizaciones crear documentos dinámicos basados en datos para una comunicación personalizada con los clientes. Para admitir una mejor colaboración, administración y flujos de trabajo de publicación controlados, el editor de comunicaciones interactivas proporciona funciones de versiones, revisión y comentarios.
 
-Estas funciones ayudan a los autores a administrar varias iteraciones de una CI, capturar los comentarios del revisor, revertir a versiones anteriores y mantener un registro de auditoría claro durante todo el ciclo de vida del contenido.
+Estas funciones ayudan a los autores a administrar varias iteraciones de una comunicación interactiva, capturar los comentarios de los revisores, volver a versiones anteriores y mantener un registro de auditoría claro durante todo el ciclo de vida del contenido.
 
 ## Versiones de comunicación interactiva
 
 El control de versiones en el Editor de comunicaciones interactivas permite a los autores:
 
-- Creación de varias versiones de una CI
+- Crear varias versiones de una comunicación interactiva
 
 - Guardar cambios incrementales con etiquetas y comentarios significativos
 
@@ -38,27 +33,41 @@ El control de versiones en el Editor de comunicaciones interactivas permite a lo
 
 - Mantener un control limpio para los ciclos de revisión, aprobación y publicación
 
-Esto garantiza que los autores puedan experimentar, iterar y refinar los diseños de CI al tiempo que preservan el contexto histórico completo.
+Esto garantiza que los autores puedan experimentar, iterar y refinar los diseños de la comunicación interactiva a la vez que preservan el contexto histórico completo.
 
 ## Crear una versión de una comunicación interactiva
 
-Utilice el control de versiones cuando desee conservar el estado actual de una CI antes de realizar actualizaciones.
+Utilice el control de versiones cuando desee conservar el estado actual de una comunicación interactiva antes de realizar actualizaciones.
 
 Para crear una nueva versión:
 
-1. Abra AEM y vaya a Forms → Forms y documentos.
+1. Vaya a **Forms y documentos** y seleccione la comunicación interactiva que desee modificar.
 
-1. Seleccione la comunicación interactiva de la que desee crear una versión.
+1. En la esquina superior izquierda de la vista de recursos, seleccione la opción de carril y, a continuación, elija **Cronología** en las opciones del panel.
 
-1. En el panel izquierdo, seleccione Versiones.
+   ![Crear versión 1](/help/forms/interactive-communication/assets/create-version1.png)
 
-1. En el menú de acción (tres puntos), seleccione Guardar como versión.
+1. El panel **Línea de tiempo** se abre a la izquierda y muestra el historial de actividades de la comunicación interactiva seleccionada, incluidas las anotaciones y las versiones anteriores.
 
-1. Introduzca una etiqueta de versión y un comentario opcional que describa el propósito o los cambios en esta versión.
+   Por ejemplo, después de un ciclo de revisión, la cronología puede mostrar anotaciones como **actualizar dirección** y **Actualizar modelo del carro** junto con otras entradas de la actividad.
 
-1. Guarde la versión.
+   ![Crear versión 2](/help/forms/interactive-communication/assets/create-version2.png)
 
-Se agrega una nueva entrada de versión a la lista de versiones, que captura el estado de IC actual.
+1. En la parte inferior del panel **Cronología**, haga clic en **Guardar como versión**.
+
+1. En el cuadro de diálogo **Crear nueva versión**, escriba una etiqueta de versión y un comentario opcional que describa el propósito o los cambios en esta versión.
+
+   Por ejemplo, escriba **Incluye el nuevo logotipo del banco** como comentario de la versión.
+
+   ![Crear versión 3](/help/forms/interactive-communication/assets/create-version3.png)
+
+1. Haga clic en **Crear**.
+
+   La entrada de nueva versión aparece en la cronología y un mensaje de éxito confirma que la versión se ha creado.
+
+   ![Crear versión 4](/help/forms/interactive-communication/assets/create-version4.png)
+
+Se agrega una nueva entrada de versión a la lista de versiones, que captura el estado actual de la comunicación interactiva.
 
 ## Actualizar una versión
 
@@ -66,68 +75,58 @@ Cada vez que modifique y guarde la comunicación interactiva, puede crear una nu
 
 Para agregar una nueva versión después de editar:
 
-1. Abra el IC en el editor y realice las actualizaciones.
+1. Abra **Forms y documentos** y seleccione la comunicación interactiva.
 
-1. Siga los pasos de Crear una versión de una comunicación interactiva.
+1. Abra el panel **Línea de tiempo** desde el carril izquierdo.
 
-1. Añada una etiqueta y un comentario que explique los cambios.
+1. Siga los pasos de [Crear una versión de una comunicación interactiva](#create-a-version-of-an-interactive-communication) para guardar el estado actual con una etiqueta y un comentario nuevos.
 
 Esto ayuda a los equipos a realizar un seguimiento del progreso y garantiza la transparencia en el ciclo vital.
 
 ## Revertir a una versión anterior
 
-Si un IC necesita volver a una configuración anterior:
+Si una comunicación interactiva debe volver a una configuración anterior:
 
-1. Abra Forms y documentos y seleccione la CI.
+1. Vaya a **Forms y documentos** y seleccione la comunicación interactiva.
 
-1. Vaya al panel Versiones.
+1. Abra el panel **Línea de tiempo** desde el carril izquierdo.
 
-1. Seleccione la versión anterior que desee restaurar.
+1. En la cronología, seleccione la versión que desee restaurar. Por ejemplo, seleccione **Comunicación interactiva bancaria V1** con el comentario **Incluye el nuevo logotipo del banco**.
 
-1. Haga clic en Revertir a esta versión.
+   ![Revertir versión 1](/help/forms/interactive-communication/assets/create-version5.png)
 
-La CI se restaurará a la versión seleccionada, lo que permitirá a los autores deshacer cambios no deseados o recuperarse de errores.
+1. Haga clic en **Revertir a esta versión**.
+
+   Un mensaje de éxito confirma que la comunicación interactiva se ha restaurado a la versión seleccionada. La cronología registra una entrada **Página restaurada**.
+
+   ![Revertir versión 2](/help/forms/interactive-communication/assets/create-version6.png)
+
+La comunicación interactiva se restaura a la versión seleccionada, lo que permite a los autores deshacer cambios no deseados o recuperarse de errores.
 
 ## Comparar dos versiones
 
-Los autores pueden comparar visualmente dos versiones para comprender los cambios realizados en las actualizaciones. Esto resulta útil para las revisiones de interfaz de usuario, diseño o relacionadas con contenido.
+Puede comparar dos versiones cualquiera de una comunicación interactiva en paralelo como vistas previas de PDF, lo que facilita identificar las diferencias de diseño y contenido estático sin abrir cada versión individualmente.
 
-Para comparar:
-
-1. Navegue hasta Versiones para la CI seleccionada.
-
-1. Elija cualquier versión de la lista.
-
-1. Seleccione Comparar con actual.
-
-Una vista previa en paralelo muestra las diferencias entre las dos versiones.
+Para obtener instrucciones paso a paso, consulte [Comparar versiones de comunicaciones interactivas](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md).
 
 ## Agregar comentarios a una comunicación interactiva
 
-Los comentarios permiten a los revisores y autores colaborar directamente dentro del editor de comunicaciones interactivas.
+Los comentarios permiten a los revisores y autores agregar notas generales directamente desde el panel **Cronología** en **Forms y documentos**.
 
 Para agregar un comentario:
 
-1. Seleccione la comunicación interactiva en Forms y documentos.
+1. Vaya a **Forms y documentos** y seleccione la comunicación interactiva.
 
-1. Vaya al panel Comentarios.
+1. Abra el panel **Línea de tiempo** desde el carril izquierdo.
 
-1. Introduzca sus comentarios o notas y haga clic en Añadir comentario.
+1. Escriba la nota en el campo **Comentario** de la parte inferior del panel **Escala de tiempo** y guárdela.
 
-Los comentarios ayudan a optimizar los flujos de trabajo entre autores, revisores e interesados.
+   Los comentarios aparecen en la cronología junto con anotaciones, entradas de versión y otras actividades. Por ejemplo, después de un ciclo de revisión, la cronología puede enumerar anotaciones como **actualizar dirección** y **Actualizar modelo de carro** por encima de los comentarios generales y el historial de versiones.
 
->[!NOTE]
->
->Cuando se utilizan comentarios dentro de las comunicaciones interactivas, el flujo de trabajo independiente &quot;Revisar y aprobar&quot; de los formularios se desactiva automáticamente.
+Para los comentarios de revisión posicionados y de nivel de componente (donde un revisor fija un comentario a un campo o sección específicos del lienzo), utilice la función Anotaciones en su lugar. Ver [Revisar y anotar una comunicación interactiva](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md).
 
-Las versiones y los comentarios en el Editor de comunicaciones interactivas proporcionan lo siguiente:
+## Ver también
 
-- Gobernanza de contenido estructurado
-
-- Colaboración simplificada
-
-- Historial de cambios rastreables
-
-- Funciones de comparación y reversión sencillas
-
-Estas funciones admiten la creación controlada, el cumplimiento y la iteración a lo largo del ciclo de vida de las comunicaciones con los clientes.
+- [Comparar versiones de comunicaciones interactivas](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
+- [Revisar y anotar una comunicación interactiva](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
+- [Crear una comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication.md)

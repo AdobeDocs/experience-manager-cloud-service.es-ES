@@ -6,19 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 5%
+ht-degree: 1%
 
 ---
 
 
 # Crear un fragmento de comunicación interactiva
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 Un fragmento de comunicación interactiva permite a los usuarios crear bloques de contenido modulares reutilizables, como encabezados, pies de página o exenciones de responsabilidad estándar, que se pueden utilizar en varios documentos de comunicación. Estos fragmentos ayudan a mantener la coherencia, reducir el trabajo repetitivo y acelerar el proceso de diseño al crear comunicaciones personalizadas e integradas en datos.
 

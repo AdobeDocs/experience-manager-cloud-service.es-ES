@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
-source-git-commit: 66bd3730062284a9d155b89a3c653ed7ab86466b
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 8%
+source-wordcount: '135'
+ht-degree: 2%
 
 ---
 
 # Agregar fuentes personalizadas al editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 La función de fuentes personalizadas le permite mejorar el aspecto de sus comunicaciones interactivas, ya que permite el uso de fuentes personalizadas o aprobadas por la organización. Con esta capacidad, puede empaquetar e incrustar fuentes en el entorno de AEM Forms as a Cloud Service, lo que garantiza un procesamiento coherente de PDF en todos los dispositivos y plataformas.
 

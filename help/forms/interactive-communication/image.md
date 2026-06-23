@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 247dcd95-9429-4fe9-88fc-c02b93b2f7e0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 5%
+source-wordcount: '368'
+ht-degree: 4%
 
 ---
 
 # Componente de imagen en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -25,11 +22,11 @@ El componente Imagen del Editor de comunicaciones interactivas permite a los aut
 
 ![Buscar documento CI](/help/forms/interactive-communication/assets/image.1.png)
 
-## 2.Properties
+## 2.Propiedades
 
 El componente Imagen proporciona varias propiedades para ayudar a configurar su aspecto, aspecto y comportamiento.
 
-2.1. Descripción de la imagen
+2.1. Descripción de imagen
 
 Nombre:
 Actúa como identificador único del componente de imagen, lo que permite hacer referencia fácilmente dentro de la jerarquía del componente o del editor de reglas.
@@ -73,7 +70,7 @@ Descripción: Determina la visibilidad del componente de imagen durante la ejecu
 
    - Oculto (mantiene el espacio)
 
-## 3.Usage
+## 3.Uso
 
 El componente Imagen es ideal para lo siguiente:
 
@@ -94,3 +91,9 @@ El componente Imagen es ideal para lo siguiente:
 - Configure la imagen para que se muestre u oculte condicionalmente si no siempre es necesaria.
 
 El componente Imagen de la comunicación interactiva de AEM desempeña un papel vital en la creación de comunicaciones de marca, personalizadas y visualmente eficaces. Con propiedades configurables, mejora la experiencia del usuario al tiempo que mantiene la coherencia del diseño en diferentes formatos.
+
+## Ver también
+
+- [Componente de campo de imagen](/help/forms/interactive-communication/image-field.md)
+- [Componente Rectángulo](/help/forms/interactive-communication/rectangle.md)
+- [Componente de línea](/help/forms/interactive-communication/line.md)

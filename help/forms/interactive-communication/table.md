@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '640'
 ht-degree: 2%
 
 ---
 
 # Componente Tabla en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -115,3 +112,9 @@ Los autores pueden configurar el número de filas y columnas, aplicar visibilida
 - Utilice plantillas predeterminadas para estandarizar el contenido de tablas en todos los documentos.
 
 El componente Tabla del editor de CI es un componente flexible y fácil de usar diseñado para admitir contenido estructurado en las comunicaciones. Gracias a sus opciones de diseño personalizables, sus características de estilo y su potente enlace de datos, permite a los autores presentar la información de forma clara y eficaz.
+
+## Ver también
+
+- [Combinar y dividir celdas de tabla en el editor de comunicaciones interactivas](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md): aprenda a combinar celdas adyacentes en una sola celda o a dividir una celda combinada para crear diseños de tabla flexibles.
+- [Crear una tabla dinámica en el editor de comunicaciones interactivas](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
+- [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)

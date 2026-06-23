@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 4%
+source-wordcount: '415'
+ht-degree: 7%
 
 ---
 
 # Componente Rectángulo en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -109,3 +106,9 @@ Los rectángulos se pueden combinar con otros elementos de diseño, como subform
 - Oculte los rectángulos si solo son necesarios con fines de diseño durante la edición, pero no son necesarios en la salida final.
 
 El componente Rectángulo es una herramienta no interactiva pero potente del editor de CI. Cuando se diseña y coloca de forma eficaz, mejora la precisión del diseño, el flujo visual y la experiencia del usuario sin añadir complejidad al enlace de datos ni a la interactividad.
+
+## Ver también
+
+- [Componente de línea](/help/forms/interactive-communication/line.md)
+- [Componente Imagen](/help/forms/interactive-communication/image.md)
+- [Gestionar el desbordamiento de contenido en el editor de comunicaciones interactivas](/help/forms/interactive-communication/handle-content-overflow.md)

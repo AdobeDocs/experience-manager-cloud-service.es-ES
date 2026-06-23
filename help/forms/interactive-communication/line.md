@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 4%
+source-wordcount: '450'
+ht-degree: 6%
 
 ---
 
 # Componente Línea en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -110,3 +107,8 @@ El componente Línea se utiliza a menudo para lo siguiente:
 - Oculte las líneas innecesarias para evitar distracciones y conservar el espaciado del diseño.
 
 El componente Línea del editor de comunicaciones interactivas es un elemento de diseño sencillo pero eficaz. Cuando se utiliza de forma estratégica, mejora la estructura visual de los documentos de comunicación, lo que ayuda a los usuarios a navegar por el contenido y garantiza un diseño más limpio y pulido.
+
+## Ver también
+
+- [Componente Rectángulo](/help/forms/interactive-communication/rectangle.md)
+- [Componente de imagen](/help/forms/interactive-communication/image.md)

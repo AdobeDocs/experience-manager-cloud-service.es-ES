@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 3%
+source-wordcount: '865'
+ht-degree: 5%
 
 ---
 
 # Componente de campo de fecha y hora en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -27,7 +24,39 @@ El campo admite varias opciones de formato (por ejemplo, formatos DD/MM/AAAA, de
 
 ![Buscar documento CI](/help/forms/interactive-communication/assets/datetime.png)
 
-## &#x200B;2. Propiedades
+## &#x200B;2. Patrón de visualización
+
+Puede asignar un **patrón de visualización** a un campo Fecha/Hora desde el panel **Propiedades**; por ejemplo: **04/01/2007 2:30 PM**.
+
+El patrón configurado se refleja inmediatamente en la vista previa del lienzo y se conserva en los ciclos de guardado y recarga. Para casos de uso avanzados, puede definir una **cláusula de imagen XFA personalizada** para obtener el formato de salida deseado.
+
+### Configuración de un patrón de visualización
+
+1. Seleccione el componente Campo de fecha y hora en el lienzo de diseño.
+2. Abra el panel **Propiedades**.
+3. En la sección **Patrón de visualización**, elija un patrón predefinido o escriba una cláusula de imagen personalizada.
+4. Previsualice el valor formateado en el lienzo.
+
+### Ejemplo de patrón personalizado (fecha/hora)
+
+| Patrón | Salida de ejemplo | Descripción |
+|---------|----------------|-------------|
+| `date{MM/DD/YYYY} time{HH:MM}` | 04/01/2007 14:30 | Fecha y hora combinadas |
+
+**Tokens de tiempo comunes:**
+
+| Token | Significado |
+|-------|---------|
+| HH | de 24 horas |
+| h | de 12 horas |
+| MM | Minutos |
+| A | AM/PM |
+
+>[!NOTE]
+>
+> Los valores de fecha y hora subyacentes deben cumplir con la norma **ISO 8601** en formato **AAAA-MM-DDTHH:MM** (por ejemplo, `2007-04-01T14:30`). Los valores que no siguen este formato se muestran tal cual, sin aplicar formato de patrón.
+
+## &#x200B;3. Propiedades
 
 El componente Campo de fecha y hora incluye varias propiedades configurables:
 
@@ -109,7 +138,7 @@ Vincula el campo a una fuente de datos para almacenar o recuperar valores.
 
 - **Sin enlace de datos:** El campo no está conectado a ningún dato backend (se usa solo para valores visuales o calculados).
 
-## &#x200B;3. Uso
+## &#x200B;4. Uso
 
 El campo de fecha y hora es ideal en escenarios donde se requieren datos temporales coherentes. Los casos de uso comunes incluyen los siguientes:
 
@@ -123,7 +152,7 @@ El campo de fecha y hora es ideal en escenarios donde se requieren datos tempora
 
 Los autores pueden combinar el campo con contenedores de diseño, validaciones o reglas condicionales para controlar el formato, los campos obligatorios y la visibilidad contextual.
 
-## &#x200B;4. Prácticas recomendadas
+## &#x200B;5. Prácticas recomendadas
 
 - Utilice leyendas claras como &quot;Seleccionar una fecha&quot; o &quot;Hora de la cita&quot; para guiar a los usuarios.
 
@@ -138,3 +167,12 @@ Los autores pueden combinar el campo con contenedores de diseño, validaciones o
 - Enlace el campo a una ruta de esquema válida para garantizar una captura y un procesamiento de datos adecuados.
 
 El componente Campo de fecha y hora del editor de comunicaciones interactivas es un componente potente y fácil de usar que optimiza la entrada basada en el tiempo. Con la configuración correcta de estilo, administración de datos y controles de diseño, permite experiencias de formulario limpias, fiables e intuitivas tanto para usuarios como para sistemas back-end.
+
+## Ver también
+
+- [Componente Cuadro de texto](/help/forms/interactive-communication/text-box.md)
+- [Componente de campo numérico](/help/forms/interactive-communication/numeric-field.md)
+- [Componente Campo de fecha](/help/forms/interactive-communication/date-field.md)
+- [Componente de variable independiente](/help/forms/interactive-communication/unbound-variable.md)
+- [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
+- [Usar el Editor de reglas en el Editor de comunicaciones interactivas](/help/forms/interactive-communication/use-the-rule-editor.md)

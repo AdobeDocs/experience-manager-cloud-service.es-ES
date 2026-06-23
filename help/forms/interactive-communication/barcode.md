@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '706'
 ht-degree: 2%
 
 ---
 
 # Componente de código de barras en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -154,3 +151,8 @@ Los autores pueden incrustar el código de barras en contenedores de diseño y a
 - Mantenga los márgenes adecuados para evitar el recorte al imprimir.
 
 El componente Código de barras del editor de comunicaciones interactivas permite a los creadores de documentos salvar la distancia entre los sistemas digitales y físicos. Cuando se implementa con eficacia, mejora la automatización, mejora la comodidad del usuario y admite la integración perfecta con dispositivos de digitalización y flujos de trabajo.
+
+## Ver también
+
+- [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
+- [Generar previsualización de PDF en el editor de comunicaciones interactivas](/help/forms/interactive-communication/generate-pdf-preview.md)

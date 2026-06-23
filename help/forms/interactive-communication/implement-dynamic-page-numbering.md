@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 5%
+source-wordcount: '350'
+ht-degree: 2%
 
 ---
 
 # Numeración dinámica de páginas en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## Introducción
 
@@ -47,7 +44,7 @@ Los números de página aparecen únicamente durante la vista previa de PDF y mu
 - **Configuración de página maestra:**
 La numeración de páginas puede habilitarse en el nivel de página maestra. El componente se puede colocar en cualquier lugar del lienzo después de soltarlo y personalizarlo libremente, ya que admite todas las propiedades disponibles en el componente de texto.
 
-- **Ubicación automática:**
+- **Colocación automática:**
 Aparece un componente de numeración de páginas en la parte inferior central de cada página con el formato:
 &quot;**Número de página de ##**&quot;
 

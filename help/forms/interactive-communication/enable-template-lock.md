@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 3%
+source-wordcount: '533'
+ht-degree: 2%
 
 ---
 
 # Bloqueo de plantilla en el Editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -27,7 +24,7 @@ Cuando se aplican, los componentes bloqueados aparecen visualmente distintos y l
 
 ![Buscar documento CI](/help/forms/interactive-communication/assets/template-lock.png)
 
-## &#x200B;2. Tipos de bloqueo
+## &#x200B;2. Bloquear tipos
 
 Los autores de plantillas pueden aplicar bloques de contenido y diseño, de forma individual o conjunta, para controlar los cambios de contenido y diseño en las plantillas de comunicaciones interactivas:
 
@@ -88,3 +85,11 @@ Guarde la plantilla y cree un nuevo IC basado en ella para confirmar que los ele
 - **Use bloqueos de diseño para mantener la coherencia:** Evite la falta de alineación o la distorsión visual en las plantillas que se reutilizan con frecuencia.
 
 - **Comunicar el uso del bloqueo:** Asegúrese de que los usuarios intermedios sepan qué secciones están restringidas intencionalmente para evitar confusiones.
+
+- **Los bloqueos impiden el movimiento a la página maestra:** Si aplica un bloqueo de contenido o de diseño a un componente, no podrá usar **Mover a la página maestra** en él. Elimine primero el bloqueo o planifique la ubicación del componente en la página maestra al diseñar la plantilla.
+
+## Ver también
+
+- [Mover un componente a la página maestra](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
+- [Implementar la numeración de páginas dinámica en el editor de comunicaciones interactivas](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
+- [Crear una plantilla de comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication-template.md)

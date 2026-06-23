@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: f8cc1dd1-3b55-4cd9-b051-959c88195eb4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 2%
+source-wordcount: '839'
+ht-degree: 4%
 
 ---
 
 # Objeto de campo de fecha en el editor de comunicaciones interactivas
 
->[!NOTE]
->
-> La capacidad de comunicación interactiva está disponible en el programa de usuarios pioneros. Envíe un correo electrónico desde su dirección de trabajo a `aem-forms-ea@adobe.com` para solicitar acceso.
 
 ## &#x200B;1. Introducción
 
@@ -27,7 +24,39 @@ Ideal para capturar fechas de nacimiento, horarios de citas, fechas de aplicaci�
 
 ![Buscar documento CI](/help/forms/interactive-communication/assets/date.png)
 
-## &#x200B;2. Propiedades
+## &#x200B;2. Patrón de visualización
+
+Puede asignar un **patrón de visualización** a un campo Fecha desde el panel **Propiedades**, por ejemplo: **01 de abril de 2007** o **01/04/2007**.
+
+El patrón configurado se refleja inmediatamente en la vista previa del lienzo y se conserva en los ciclos de guardado y recarga. Para casos de uso avanzados, puede definir una **cláusula de imagen XFA personalizada** para obtener el formato de salida deseado.
+
+### Configuración de un patrón de visualización
+
+1. Seleccione el componente Campo de fecha en el lienzo de diseño.
+2. Abra el panel **Propiedades**.
+3. En la sección **Patrón de visualización**, elija un patrón predefinido o escriba una cláusula de imagen personalizada.
+4. Previsualice el valor formateado en el lienzo.
+
+### Ejemplo de patrón personalizado (Fecha)
+
+| Patrón | Salida de ejemplo | Descripción |
+|---------|----------------|-------------|
+| `date{DD/MM/YYYY}` | 01/04/2007 | Día/mes/año |
+
+**Tokens de fecha comunes:**
+
+| Token | Significado |
+|-------|---------|
+| D, DD | Día |
+| M, MM, MMM, MMMM | Mes |
+| YY, YYYY | Año |
+| EEEE | Weekday |
+
+>[!NOTE]
+>
+> Para que los patrones de visualización se representen correctamente, los valores de campo de fecha subyacentes deben cumplir con **ISO 8601**. Proporcione valores en formato **AAAA-MM-DD** (por ejemplo, `2007-04-01`). Los valores que no siguen este formato se muestran tal cual, sin aplicar formato de patrón.
+
+## &#x200B;3. Propiedades
 
 El objeto Campo de fecha incluye varias propiedades configurables:
 
@@ -111,7 +140,7 @@ Conecta el campo de fecha a estructuras de datos para almacenar o rellenar previ
 
 Esto permite recuperar, mostrar o almacenar los valores de fecha dinámicos en función de la lógica de la aplicación.
 
-## &#x200B;3. Uso
+## &#x200B;4. Uso
 
 El campo Fecha es especialmente útil en los siguientes casos:
 
@@ -123,7 +152,7 @@ El campo Fecha es especialmente útil en los siguientes casos:
 
 Los autores pueden colocar el campo de fecha dentro de contenedores de diseño o subformularios y configurar la validación (por ejemplo, formato de fecha, límites de intervalo) para mejorar la calidad de los datos.
 
-## &#x200B;4. Prácticas recomendadas
+## &#x200B;5. Prácticas recomendadas
 
 - Use subtítulos claros como &quot;Fecha de inicio&quot; o &quot;Seleccionar fecha de cita&quot; para una mejor experiencia de usuario.
 
@@ -136,3 +165,12 @@ Los autores pueden colocar el campo de fecha dentro de contenedores de diseño o
 - Oculte de forma dinámica los campos de fecha no relevantes mediante reglas de visibilidad.
 
 El objeto **Campo de fecha** del editor de comunicaciones interactivas es una potente herramienta para capturar datos con distinción de tiempo de forma precisa y sencilla. Cuando se diseña meticulosamente y se conecta a rutas de datos significativas, admite una experiencia de usuario perfecta y un procesamiento eficiente de entradas basadas en el tiempo.
+
+## Ver también
+
+- [Componente Cuadro de texto](/help/forms/interactive-communication/text-box.md)
+- [Componente de campo numérico](/help/forms/interactive-communication/numeric-field.md)
+- [Componente de campo de fecha y hora](/help/forms/interactive-communication/date-time-field.md)
+- [Componente de variable independiente](/help/forms/interactive-communication/unbound-variable.md)
+- [Configurar el enlace de datos en el editor de comunicaciones interactivas](/help/forms/interactive-communication/configure-data-binding.md)
+- [Usar el Editor de reglas en el Editor de comunicaciones interactivas](/help/forms/interactive-communication/use-the-rule-editor.md)
