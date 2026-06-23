@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: review-annotate-interactive-communication
-source-git-commit: efdfec8f3ce63a2931a78eeb4be3820e22b13a8d
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 2%
@@ -126,3 +126,4 @@ Una anotación es un pin colocado vinculado a un componente específico en el li
 - [Crear una comunicación interactiva](/help/forms/interactive-communication/create-interactive-communication.md)
 - [Bloqueo de plantilla en el Editor de comunicaciones interactivas](/help/forms/interactive-communication/enable-template-lock.md)
 - [Crear versiones y comentarios en el editor de comunicaciones interactivas](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+
