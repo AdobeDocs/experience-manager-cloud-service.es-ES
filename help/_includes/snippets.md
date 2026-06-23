@@ -1,5 +1,5 @@
 ---
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 73befe46aa362b0d6ef8530fbf3bb222c262d626
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 93%
@@ -227,6 +227,14 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
    * URL del sitio web activo. Por ejemplo: `www.mydomain.com`.
    * URL del sitio web de origen (`.hlx` URL).
 
+## Iniciar sesión en Cloud Manager {#sign-in-to-cloud-manager}
+
+1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
+   1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
+   1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
+1. En Cloud Manager, cerca de la esquina superior derecha de la página, seleccione la organización que desee.
+
+
 ## El Editor de SPA es preferible al editor universal {#ue-over-spa}
 
 >[!IMPORTANT]
@@ -287,12 +295,4 @@ Para acelerar la creación del sitio, Adobe proporciona una serie de plantillas 
 * [Sitio de AEM con Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases): para la creación de páginas de AEM con el editor universal y el envío mediante [Edge Delivery](/help/edge/overview.md)
 * [Edge Delivery Services con la creación de AEM para comercio](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases): para la creación de páginas de AEM con el editor universal para proyectos de comercio y el envío mediante [Edge Delivery](/help/edge/overview.md)
 * [Plantilla de sitio de AEM estándar](https://github.com/adobe/aem-site-template-standard/releases): para crear páginas tradicionales de AEM y realizar envíos a través del [envío de publicación](/help/sites-cloud/authoring/author-publish.md)
-
-
-## Iniciar sesión en Cloud Manager {#sign-in-to-cloud-manager}
-
-1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
-   1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
-   1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
-1. En Cloud Manager, cerca de la esquina superior derecha de la página, seleccione la organización que desee.
 
