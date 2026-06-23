@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 15%
+source-wordcount: '1130'
+ht-degree: 14%
 
 ---
 
@@ -75,7 +75,7 @@ Al escribir el nombre de dominio, no incluya `http://`, `https://` ni espacios.
 1. En el cuadro de diálogo **Verificar dominio**, en función del tipo de certificado seleccionado, realice una de las siguientes acciones:
 
    | Si seleccionó el tipo de certificado | Descripción |
-   | --- | ---  |
+   | --- | --- |
    | Certificado administrado por Adobe | a. Complete los [pasos de certificado administrado por Adobe](#adobe-managed-cert-steps) a continuación. Cuando complete los pasos, en el cuadro de diálogo **Verificar dominio**, haga clic en **Verificar**.<ul><li>La verificación del DNS puede tardar unas horas en procesarse debido a los retrasos de propagación del DNS.</li><li>Cloud Manager finalmente verifica la propiedad del nombre de dominio y actualiza el estado en la tabla **Configuración de dominio**. Consulte [Comprobar el estado del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información.</li>![Verificar el estado del dominio](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. Ya está listo para [agregar un certificado SSL administrado por Adobe (DV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
    | Certificado administrado por el cliente | a. Haga clic en **Aceptar**.<br>b. Ya está listo para [agregar un certificado SSL administrado por el cliente (OV/EV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).<br>Después de agregar el certificado, el nombre de dominio se marca como verificado en la tabla **Configuración de dominio**. Consulte [Comprobar el estado del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información.</li></ul><br>![Verificar el dominio de un certificado EV/OV administrado por el cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
@@ -92,7 +92,7 @@ Si seleccionó el tipo de certificado *Certificado administrado por Adobe*, comp
 
 Para verificar el dominio en uso, es necesario agregar y verificar un CNAME.
 
-Un tipo de registro `CNAME` o un tipo de registro `A`, una vez aprovisionado, enruta todo el tráfico de Internet para el dominio a donde señale. Se produce una interrupción si esa ubicación no está preparada para abastecer el tráfico. Si no se ha probado, puede haber errores en el contenido. Por este motivo, este paso siempre se realiza una vez finalizada la prueba y está listo para su lanzamiento.
+Un tipo de registro `CNAME` o un tipo de registro `A`, una vez aprovisionado, enruta todo el tráfico de Internet para el dominio a donde señale. Se produce una interrupción si esa ubicación no está preparada para abastecer el tráfico. Si no se ha probado, pueden producirse errores en el contenido. Esta verificación es la razón por la que este paso siempre se realiza una vez completada la prueba y está listo para su lanzamiento.
 
 Para establecer esta configuración, determine si se debe configurar un registro `CNAME` o Apex para que apunte el nombre de dominio personalizado al nombre de dominio de Cloud Manager. Las siguientes secciones de este documento pueden ayudarle a determinar qué tipo de registro es apropiado para su configuración de DNS.
 
@@ -119,7 +119,7 @@ Un nombre canónico o registro CNAME es un tipo de registro DNS que asigna un no
 
 Inicie sesión en el proveedor de servicios DNS y cree un registro `CNAME` para apuntar el nombre de dominio personalizado al destino, como en la tabla siguiente.
 
-| CNAME | Punto de dominio personalizado de dominio a destino |
+| CNAME | Punto de nombre de dominio personalizado en destino |
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
