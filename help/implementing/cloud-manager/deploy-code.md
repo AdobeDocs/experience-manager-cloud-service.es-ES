@@ -5,9 +5,9 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: cca724e41edc333346dfead092048c7739a0ec95
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1203'
 ht-degree: 36%
 
 ---
@@ -38,7 +38,7 @@ Todas las implementaciones de Cloud Service siguen un proceso gradual para garan
 
 Una vez que haya [configurado su canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md), incluido el repositorio, el entorno y el entorno de prueba, estará listo para implementar su código.
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
+{{sign-in-to-cloud-manager}}
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, haga clic en el programa para el que desea implementar el código.
 

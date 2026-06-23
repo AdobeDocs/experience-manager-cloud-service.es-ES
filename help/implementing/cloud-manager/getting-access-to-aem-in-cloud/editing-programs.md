@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 9%
+source-wordcount: '1261'
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ Desde la **Descripción general del programa**, los usuarios con los permisos ne
 
 
 * Habilite o deshabilite la protección **WAF-DDOS** en la ficha **Seguridad**.
-* Agregue la solución Sites a un programa existente con Assets y agregue Assets a un programa existente con Sites.
+* Agregue la solución Sites a un programa existente que incluya Assets y agregue Assets a un programa existente que incluya Sites.
 * Eliminar Sites o Assets de un programa existente que tenga ambos y Assets.
 * Agregar un derecho de solución no utilizado a un programa existente o crear un nuevo programa.
 * Marcar programas de producción para su eliminación.
@@ -33,14 +33,12 @@ Debe tener la función **Propietario del negocio** para editar programas, elimin
 
 ## Editar un programa {#editing}
 
-Cada vez que se edita un programa, incluida la adición o eliminación de una solución o complemento, esos cambios surten efecto después de la siguiente implementación.
+Cuando se edita un programa, incluida la adición o eliminación de una solución o complemento, esos cambios surten efecto después de la siguiente implementación.
 
 **Para editar un programa:**
 
-1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
-1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
-1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
-1. En Cloud Manager, seleccione la organización adecuada.
+{{sign-in-to-cloud-manager}}
+
 1. En la página **Mis programas**, haga clic en el programa que desee editar.
 1. Cerca de la esquina superior izquierda de la página, haga clic en el nombre del programa y, a continuación, seleccione **Editar programa**.
 
@@ -50,7 +48,7 @@ Cada vez que se edita un programa, incluida la adición o eliminación de una so
 
    ![Pestaña General](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-dialog-box.png)
 
-   Las opciones disponibles para editar el programa son las mismas para la creación de programas.
+   Las opciones disponibles para editar el programa son las mismas que las opciones para la creación de programas.
 
    * Puede configurar si un nivel de publicación está aprovisionado para nuevos entornos (Beta). Consulte [Nivel de publicación flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) y [Crear programas de espacio aislado](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obtener más información sobre las opciones individuales.
@@ -75,8 +73,8 @@ Cada vez que se edita un programa, incluida la adición o eliminación de una so
 
 ## Configuración de CMK en Experience Hub {#configure-cmk-experience-hub}
 
-Una vez habilitado CMK para un programa, Cloud Manager proporciona un vínculo directo a la página de configuración de CMK en Experience Hub para que pueda configurar su
-claves de cifrado sin salir del programa.
+Una vez habilitado CMK para un programa, Cloud Manager proporciona un vínculo directo a la página de configuración de CMK en Experience Hub para que pueda configurar sus
+claves de cifrado mientras permanece en el programa.
 
 Una vez que CMK se ha configurado correctamente para un entorno, la página Detalles del entorno muestra un distintivo de estado **Configuración de CMK**. Si CMK está habilitado para el programa pero aún no se ha configurado para un entorno específico, el distintivo no aparece en la página de detalles de ese entorno.
 
@@ -93,7 +91,7 @@ Una vez que CMK se ha configurado correctamente para un entorno, la página Deta
 
 ## Marcar un programa de producción para su eliminación {#delete-production-program}
 
-La eliminación de un programa de producción es un proceso de dos fases. Un Propietario del negocio marca el programa para su eliminación, lo que déclencheur un periodo de validación y retirada. A continuación, el programa se elimina permanentemente después de que haya transcurrido el período de eliminación.
+La eliminación de un programa de producción es un proceso de dos fases. Un Propietario del negocio marca el programa para su eliminación, lo que déclencheur un periodo de validación y eliminación. A continuación, el programa se elimina permanentemente después de que haya transcurrido el período de eliminación.
 
 Cuando se marca un programa de producción para su eliminación, ocurre lo siguiente:
 
@@ -108,10 +106,8 @@ Antes de iniciar la marcación para eliminación, el sistema valida si el progra
 
 **Para marcar un programa de producción para su eliminación:**
 
-1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
-1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
-1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
-1. Seleccione la organización adecuada.
+{{sign-in-to-cloud-manager}}
+
 1. En la página **Mis programas**, para el programa de producción que desea marcar para su eliminación, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, haga clic en **Eliminar programa**.
 
    ![Seleccionar Eliminar programa de la lista desplegable de un programa de producción &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Ejemplo de programa de producción visto arriba es solo con fines ilustrativos.*
@@ -142,9 +138,9 @@ Antes de iniciar la marcación para eliminación, el sistema valida si el progra
 
    ![Visualización de la fecha de eliminación permanente programada del programa de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete5.png)
 
-   Una vez transcurrido el período de eliminación, el programa se elimina de forma permanente y no se puede restaurar.
+   Una vez transcurrido el período de eliminación, el programa se quita de forma permanente y no se puede restaurar.
 
-### Desmarcar un programa de producción de la eliminación {#unmark-from-deletion}
+### Cancelar la eliminación de un programa de producción {#unmark-from-deletion}
 
 Puede restaurar un programa de producción que se haya *marcado* para su eliminación, siempre y cuando la eliminación permanente aún no se haya producido.
 
@@ -152,7 +148,7 @@ Puede restaurar un programa de producción que se haya *marcado* para su elimina
 >
 >La restauración de un programa de producción marcado para su eliminación requiere que el cliente tenga créditos disponibles.
 
-**Para quitar la marca de eliminación de un programa de producción:**
+**Para cancelar la eliminación de un programa de producción:**
 
 1. En la página **Mis programas**, busque la tarjeta del programa de producción que muestra **Marcado para eliminación**.
 
@@ -160,7 +156,7 @@ Puede restaurar un programa de producción que se haya *marcado* para su elimina
 
    ![Desmarcando la fecha de eliminación permanente programada del programa de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-unmarkfordelete6.png)
 
-   El programa de producción no está marcado para su eliminación.
+   Se ha cancelado la eliminación del programa de producción.
 
 ## Eliminar un programa de zona protegida {#delete-sandbox-program}
 
@@ -168,15 +164,13 @@ Al eliminar un programa de zona protegida se eliminan todos los entornos y canal
 
 >[!TIP]
 >
->Los usuarios con el rol de **Propietario del negocio** o **Administrador de implementación** pueden eliminar sus entornos de producción y ensayo en lugar de todo el programa de zona protegida.
+>Los usuarios con los roles de **Propietario del negocio** o **Administrador de implementación** pueden eliminar sus entornos de producción y ensayo en lugar de todo el programa de zona protegida.
 
 **Para eliminar un programa de zona protegida:**
 
-1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
-1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
-1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
-1. Seleccione la organización adecuada.
-1. En la página **[Mis programas](#my-programs)**, haga clic en el programa de zona protegida que desee editar para mostrar sus detalles.
+{{sign-in-to-cloud-manager}}
+
+1. En la página **[Mis programas](#my-programs)**, haga clic en el programa de zona protegida que desee eliminar para mostrar sus detalles.
 
 1. Haga clic en el nombre del programa de zona protegida en la parte superior izquierda de la página y seleccione **Eliminar programa**.
 
