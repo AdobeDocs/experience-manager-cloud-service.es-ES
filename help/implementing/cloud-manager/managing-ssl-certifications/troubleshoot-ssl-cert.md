@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
+source-git-commit: 0d8b2820b338be530429114afad74fa4686d286a
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 31%
+source-wordcount: '561'
+ht-degree: 28%
 
 ---
 
@@ -26,7 +26,7 @@ Este error se produce porque el cliente utilizó una clave privada cifrada y pro
 
 +++**La clave privada debe tener el formato PKCS 8**
 
-## La clave privada debe tener el formato PKCS 8 {#pkcs-8}
+## La clave privada debe tener el formato PKCS-8 {#pkcs-8}
 
 Este error se produce porque el cliente utilizó una clave privada cifrada y proporcionó la clave en formato DER.
 
@@ -72,7 +72,7 @@ Al agregar un certificado, recibe un error similar al siguiente:
 The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
 ```
 
-Es probable que haya incluido el certificado de cliente en la cadena de certificados. Asegúrese de que la cadena no incluya el certificado de cliente e inténtelo de nuevo.
+Es posible que haya incluido el certificado de cliente en la cadena de certificados. Asegúrese de que la cadena no incluya el certificado de cliente e inténtelo de nuevo.
 
 +++
 
@@ -142,12 +142,12 @@ Cloud Manager espera que el certificado SSL sea válido durante al menos 90 día
 
 ## Se ha aplicado un certificado SAN incorrecto a mi dominio {#wrong-san-cert}
 
-Supongamos que desea vincular `dev.yoursite.com` y `stage.yoursite.com` a su entorno que no sea de producción y a `prod.yoursite.com` a su entorno de producción.
+Por ejemplo, desea vincular `dev.yoursite.com` y `stage.yoursite.com` a su entorno que no sea de producción y a `prod.yoursite.com` a su entorno de producción.
 
 Para configurar la CDN para estos dominios, necesita instalar un certificado para cada uno, de modo que instale un certificado que cubra `*.yoursite.com` para los dominios que no sean de producción y otro que también cubra `*.yoursite.com` para los dominios de producción.
 
-Esta configuración es válida. Sin embargo, al actualizar uno de los certificados, ambos siguen cubriendo la misma entrada SAN. Como resultado, la CDN instala el certificado más reciente en todos los dominios aplicables, lo que puede parecer inesperado.
+Esta configuración es válida. Sin embargo, al actualizar uno de los certificados, ambos siguen cubriendo la misma entrada SAN. Como resultado, la CDN instala el certificado más reciente en todos los dominios aplicables, lo que parece inesperado.
 
-Aunque este escenario puede ser inesperado, no es un error y es el comportamiento estándar de la CDN subyacente. Si tiene dos o más certificados SAN que cubren la misma entrada de dominio SAN, la CDN instala el certificado actualizado más recientemente para ese dominio. Esta situación ocurre incluso cuando otro certificado ya cubre la misma entrada de dominio.
+Aunque este escenario es inesperado, no es un error y es el comportamiento estándar de la CDN subyacente. Si tiene dos o más certificados SAN que cubren la misma entrada de dominio SAN, la CDN instala el certificado actualizado más recientemente para ese dominio. Esta situación ocurre incluso cuando otro certificado ya cubre la misma entrada de dominio.
 
 +++

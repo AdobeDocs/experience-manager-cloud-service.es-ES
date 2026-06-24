@@ -4,10 +4,10 @@ description: Obtenga información acerca de la versión de Cloud Manager 2026.6.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 012a31a9b1ffe3d7228d714049295536f2deeaac
+source-git-commit: 60e6140c4902e515d740a38bde066d8cef859674
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 4%
+source-wordcount: '733'
+ht-degree: 3%
 
 ---
 
@@ -81,9 +81,9 @@ Cloud Manager ahora le permite configurar si se requiere un nivel de publicació
 
 Para obtener más información, consulte [Nivel de publicación flexible (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-Para unirte a Beta, envía un correo electrónico a [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) con tu ID de organización de Adobe y tu ID de programa.
+Para unirte a la versión beta, envía un correo electrónico a [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) con tu identificador de organización de Adobe y tu identificador de programa.
 
-### Compilaciones más rápidas con almacenamiento en caché de módulos {#quick-build-cm-pipelines}
+### Rendimiento de compilación mejorado con almacenamiento en caché de módulos {#quick-build-cm-pipelines}
 
 Un nuevo modelo de compilación compila solo los módulos modificados (en lugar de todo el repositorio) mediante el almacenamiento en caché de nivel de módulo para mejorar el rendimiento de la compilación. Se aplica a las canalizaciones de producción. Usted controla qué canalizaciones de producción utilizan **Smart Build**.
 
