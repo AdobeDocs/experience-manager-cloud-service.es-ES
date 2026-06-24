@@ -1,13 +1,13 @@
 ---
-title: Compatibilidad con los submódulos de Git
+title: Compatibilidad con el submódulo Git para repositorios de Adobe
 description: Obtenga información sobre cómo usar los submódulos de Git para combinar el contenido de varias ramas en los distintos repositorios de Git en el momento de la compilación.
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 24%
+source-wordcount: '375'
+ht-degree: 22%
 
 ---
 
@@ -23,9 +23,9 @@ El siguiente comando extrae cada submódulo en el directorio apropiado.
 $ git submodule update --init
 ```
 
-Esta técnica ofrece una alternativa a la solución descrita en [Uso de varios repositorios de Git de Source](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md). Es ideal para organizaciones cómodas con los submódulos Git y que prefieren no administrar un proceso de combinación externo.
+Esta técnica ofrece una alternativa a la solución descrita en [Uso de varios repositorios de Git de Source](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md). Es adecuado para organizaciones cómodas con los submódulos Git y que prefieren no administrar un proceso de combinación externo.
 
-Por ejemplo, supongamos que hay tres repositorios. Cada repositorio contiene una sola rama denominada `main`. En el repositorio principal, es decir, el configurado en las canalizaciones, la rama `main` tiene un archivo `pom.xml` que declara los proyectos contenidos en los otros dos repositorios:
+Por ejemplo, supongamos que hay tres repositorios. Cada repositorio contiene una sola rama denominada `main`. En el repositorio principal (es decir, el configurado en las canalizaciones), la rama `main` tiene un archivo `pom.xml` que declara los proyectos contenidos en los otros dos repositorios:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -46,7 +46,7 @@ Por ejemplo, supongamos que hay tres repositorios. Cada repositorio contiene una
 </project>
 ```
 
-Luego debe agregar submódulos para los otros dos repositorios:
+Añada submódulos para los otros dos repositorios:
 
 ```shell
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
@@ -70,21 +70,21 @@ Consulte también el [Manual de referencia de Git](https://git-scm.com/book/en/v
 
 ## Notas de uso de los repositorios de Adobe {#usage-notes-recommendations-adobe-repos}
 
-* La dirección URL de Git debe ser exacta como la sintaxis descrita en la sección anterior.
+* La dirección URL de Git debe seguir la sintaxis descrita en la sección anterior.
 * Solo se admiten submódulos en la raíz de la rama.
 * Por motivos de seguridad, no incruste credenciales en las direcciones URL de Git.
 * A menos que sea necesario, Adobe recomienda utilizar submódulos superficiales ejecutando lo siguiente:
   `git config -f .gitmodules submodule.<submodule path>.shallow true` para cada submódulo.
-* Las referencias del submódulo Git se almacenan en confirmaciones de Git específicas. Como resultado, cuando se realizan cambios en el repositorio de submódulos, se debe actualizar la confirmación a la que se hace referencia.
+* Las referencias del submódulo Git se almacenan en confirmaciones de Git específicas. Cuando se realizan cambios en el repositorio de submódulos, se debe actualizar la confirmación a la que se hace referencia.
 Por ejemplo, mediante el uso de lo siguiente:
 
   `git submodule update --remote`
 
 ## Compatibilidad con los submódulos de Git para repositorios privados {#private-repositories}
 
-La compatibilidad con los submódulos Git en [repositorios privados](private-repositories.md) suele ser similar a su uso con repositorios de Adobe.
+La compatibilidad con los submódulos Git en [repositorios privados](private-repositories.md) es similar a su uso con repositorios Adobe.
 
-Sin embargo, después de configurar el archivo `pom.xml` y ejecutar los comandos `git submodule`, debe agregar un archivo `.gitmodules` al directorio raíz del repositorio del agregador para que Cloud Manager reconozca la configuración del submódulo.
+Sin embargo, para que Cloud Manager reconozca la configuración del submódulo, agregue un archivo `.gitmodules` al directorio raíz del repositorio del agregador después de configurar el archivo `pom.xml` y ejecutar los comandos `git submodule`.
 
 ![Archivo .gitmodules](assets/gitmodules.png)
 
