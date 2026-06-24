@@ -63,7 +63,7 @@ La IA generativa se utiliza en todo AEM:
 
   La integración de traducción de IA le permite utilizar un modelo de idioma grande (LLM) como servicio de traducción para el contenido que crea en Adobe Experience Manager. Puede conectar AEM a su proveedor de LLM (empezando por Microsoft Azure OpenAI), reutilizar los mismos flujos de trabajo de traducción que para otros conectores y, opcionalmente, cargar guías de estilo de traducción para que AEM pueda generar reglas que mantengan la coherencia del tono, la terminología y el idioma de marca en todas las configuraciones regionales.
 
-* [AI de contenido de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-content-ai/using/introduction)
+* [AI de contenido de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-content-ai/using/introduction)
 
   La inteligencia artificial aplicada al contenido de AEM ayuda a las marcas a mantener un contenido preciso, actual y propio de la marca, ya que los sistemas de IA representan cada vez más sus mensajes, lo que proporciona creación asistida por IA, descubrimiento de contenido en lenguaje natural y generación consciente de la marca para experiencias humanas y basadas en IA.
 
