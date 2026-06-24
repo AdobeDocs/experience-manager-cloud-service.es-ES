@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b94debebf36f379fc2cb2f193a244fe154c77537
+source-git-commit: b4b5fb587f2b93019e7a0a273bd106d9ab1de54c
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 17%
+source-wordcount: '1302'
+ht-degree: 12%
 
 ---
 
@@ -20,7 +20,7 @@ Obtenga información acerca de las herramientas de autoservicio que proporciona 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Administrar certificados SSL"
->abstract="Descubra la forma en la que Cloud Manager proporciona herramientas de autoservicio para instalar y administrar certificados SSL con el fin de proteger su sitio en beneficio de sus usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros."
+>abstract="Cloud Manager proporciona herramientas de autoservicio para instalar y administrar certificados SSL. Utiliza un servicio TLS de plataforma para administrar certificados propiedad del cliente y claves privadas de autoridades de certificación de terceros."
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Ver, actualizar y reemplazar un certificado SSL"
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Comprobar el estado de un certificado SSL"
 
@@ -28,7 +28,7 @@ Obtenga información acerca de las herramientas de autoservicio que proporciona 
 
 Las empresas y organizaciones utilizan certificados SSL (Secure Socket Layer) para proteger sus sitios web y permitir a sus clientes confiar en ellos. Para utilizar el protocolo SSL, un servidor web requiere un certificado SSL.
 
-Cuando una entidad, como una organización o una empresa, solicita un certificado de una entidad emisora de certificados (CA), esta completa un proceso de verificación. Este proceso puede abarcar desde verificar el control de nombres de dominio hasta recopilar documentos de registro de empresas y acuerdos de suscriptores. Una vez verificada la información de una entidad, la CA firma su clave pública con la clave privada de la CA. Dado que todas las autoridades de certificación principales tienen certificados raíz en los exploradores web, el certificado de la entidad se vincula a través de una *cadena de confianza* y el explorador web lo reconoce como un certificado de confianza.
+Cuando una entidad solicita un certificado de una entidad emisora de certificados (CA), esta completa un proceso de verificación. Este proceso puede abarcar desde verificar el control de nombres de dominio hasta recopilar documentos de registro de empresas y acuerdos de suscriptores. Una vez verificada la información de una entidad, la CA firma su clave pública con la clave privada de la CA. Dado que todas las autoridades de certificación principales tienen certificados raíz en los exploradores web, el certificado de la entidad se vincula a través de una *cadena de confianza* y el explorador web lo reconoce como un certificado de confianza.
 
 >[!IMPORTANT]
 >
@@ -46,8 +46,8 @@ Cloud Manager ofrece herramientas de autoservicio para instalar y administrar ce
 Ambos modelos ofrecen las siguientes funciones generales para administrar los certificados:
 
 * Cada entorno de Cloud Manager puede utilizar varios certificados.
-* Una clave privada puede emitir varios certificados SSL.
-* El servicio TLS de plataforma enruta las solicitudes al servicio CDN del cliente en función del certificado SSL utilizado para terminar y el servicio CDN que aloja ese dominio.
+* Se utiliza una clave privada para emitir varios certificados SSL.
+* El servicio TLS de plataforma enruta las solicitudes al servicio CDN del cliente. Este enrutamiento se basa en el certificado SSL utilizado para finalizar la conexión. También se basa en el servicio de CDN que aloja ese dominio.
 
 >[!IMPORTANT]
 >
@@ -75,7 +75,7 @@ Además, OV y EV ofrecen estas características con respecto a los certificados 
 
 >[!TIP]
 >
->Si tiene varios dominios personalizados, es posible que no desee cargar un certificado cada vez que agregue un nuevo dominio. En ese caso, podría beneficiarse de obtener un único certificado que abarque varios dominios.
+>Si tiene varios dominios personalizados, es posible que no desee cargar un certificado cada vez que agregue un nuevo dominio. En ese caso, se beneficia de la obtención de un único certificado que cubre varios dominios.
 
 #### Requisitos para los certificados SSL OV/EV administrados por el cliente {#requirements}
 
@@ -101,7 +101,7 @@ Las claves RSA de más de 2048 bits (como las claves RSA de 3072 o 4096 bits) no
 
 * **Evitar certificados superpuestos:**
 
-   * Para garantizar una administración de certificados sin problemas, evite implementar certificados superpuestos que coincidan con el mismo dominio. Por ejemplo, tener un certificado comodín (*.example.com) junto con un certificado específico (dev.example.com) puede generar confusión.
+   * Para garantizar una administración de certificados sin problemas, evite implementar certificados superpuestos que coincidan con el mismo dominio. Por ejemplo, tener un certificado comodín (*.example.com) junto con un certificado específico (dev.example.com) genera confusión.
    * La capa TLS da prioridad al certificado más específico y implementado recientemente.
 
   Casos de ejemplo:
@@ -132,7 +132,7 @@ Antes de intentar instalar un certificado con Cloud Manager, Adobe recomienda va
 
 #### Formato de los certificados administrados por el cliente {#certificate-format}
 
-Los archivos de certificado SSL deben tener el formato PEM para que se instalen con Cloud Manager. Las extensiones de archivo comunes del formato PEM incluyen `.pem,`. .`crt`, `.cer`, y `.cert`.
+Los archivos de certificado SSL deben tener el formato PEM para que se instalen con Cloud Manager. Las extensiones de archivo comunes del formato PEM incluyen `.pem`, `.crt`, `.cer` y `.cert`.
 
 Los siguientes comandos `openssl` se pueden utilizar para convertir certificados que no sean PEM.
 
@@ -164,7 +164,7 @@ Si ha alcanzado el límite, revise los certificados y considere la posibilidad d
 
 ### Vamos a cifrar los límites de velocidad para certificados DV administrados por Adobe
 
-Los certificados DV administrados por Adobe se basan en Let&#39;s Encrypt. Además del límite de Cloud Manager en los certificados instalados, Let&#39;s Encrypt aplica sus propios límites de tasa. Un límite de clave es **Nuevos certificados por conjunto exacto de identificadores**: se pueden emitir hasta 5 certificados para el mismo conjunto de nombres de host en un período de 7 días. Si se alcanza este límite, Cloud Manager muestra un error y no puede crear más certificados para ese conjunto de nombres de host hasta que se restablezca la ventana de límite de velocidad. Para conocer los valores más recientes y otros límites relacionados, consulte la [documentación sobre el cifrado de límites de tasa](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
+Los certificados DV administrados por Adobe se basan en Let&#39;s Encrypt. Además del límite de Cloud Manager en los certificados instalados, Let&#39;s Encrypt aplica sus propios límites de tasa. Un límite de clave es **Nuevos certificados por conjunto exacto de identificadores**: se emiten hasta 5 certificados para el conjunto de nombres de host en un período de 7 días. Si se alcanza este límite, Cloud Manager muestra un error y no puede crear más certificados para ese conjunto de nombres de host hasta que se restablezca la ventana de límite de velocidad. Para conocer los valores más recientes y otros límites relacionados, consulte la [documentación sobre el cifrado de límites de tasa](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## Más información {#learn-more}
 
