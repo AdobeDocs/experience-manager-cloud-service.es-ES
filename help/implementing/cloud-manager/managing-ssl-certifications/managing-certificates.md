@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 51b9e7fd6fd51ee3565ff2c563e6d0c8a6283389
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1103'
 ht-degree: 16%
 
 ---
@@ -21,9 +21,9 @@ Obtenga información sobre cómo utilizar Cloud Manager para comprobar el estado
 
 Cloud Manager ofrece una descripción general del estado de todos los certificados del programa.
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa adecuado.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
-1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú lateral.
+1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para abrir el menú lateral.
 1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
 
 La página **Certificados SSL** proporciona el estado de sus certificados SSL.
@@ -36,13 +36,13 @@ La página **Certificados SSL** proporciona el estado de sus certificados SSL.
 
 ## Actualizar un certificado SSL administrado por el cliente caducado {#update-ssl-certificate}
 
-Cuando un certificado administrado por el cliente caduca, cualquier dominio que esté en uso con el certificado caducado ya no funciona. La actualización de los certificados garantiza que el dominio funcionará como se desea.
+Cuando caduca un certificado administrado por el cliente, los dominios que estén en uso con el certificado caducado ya no funcionarán. La actualización de los certificados garantiza que el dominio seguirá funcionando correctamente.
 
 Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrador de implementación** para completar esta tarea.
 
 >[!IMPORTANT]
 >
->Al agregar o actualizar un certificado SSL, no incluya el nuevo certificado en la cadena de certificados. Si se incluye, se evita que la carga se complete correctamente.
+>Al agregar o actualizar un certificado SSL, no incluya el nuevo certificado en la cadena de certificados. Si se incluye, se evita que la carga se complete.
 
 **Para actualizar un certificado SSL administrado por el cliente caducado:**
 
@@ -57,7 +57,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 1. En el cuadro de diálogo **Ver y actualizar certificado SSL**, haga lo siguiente:
 
    * (Opcional) En el campo **Nombre del certificado**, escriba un nombre nuevo.
-   * En el campo **Certificado**, pegue la nueva clave de contenido del certificado.
+   * En el campo **Certificado**, pegue el nuevo contenido del certificado.
    * En el campo **Clave privada**, actualice este campo solo si ha realizado cambios en el certificado.
    * En el campo **Cadena de certificados** (o cadena de confianza), pegue la cadena de certificados.
 
@@ -72,15 +72,15 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 ## Reemplazar un certificado SSL administrado por el cliente caducado {#replace-ssl-certificate}
 
-Siga los mismos pasos que se describen en [Actualizar un certificado SSL caducado](#update-ssl-certificate) para reemplazar un certificado SSL caducado administrado por el cliente.
+Siga los mismos pasos que se describen en [Actualizar un certificado SSL caducado](#update-ssl-certificate) para reemplazar un certificado SSL administrado por el cliente caducado.
 
 ## Cambiar el nombre de un certificado SSL administrado por Adobe (#rename-an-ssl-certificate)
 
-A continuación se indican algunas razones por las que puede que desee cambiar el nombre de un certificado SSL:
+Los siguientes son motivos para cambiar el nombre de un certificado SSL:
 
 * **Organización mejorada**: Cambiar el nombre del certificado puede ayudar a aclarar su propósito, como identificar para qué entorno (por ejemplo, ensayo, producción) o dominio es.
 * **Evitar confusiones**: si administra varios certificados, un nombre descriptivo y claro puede ayudar a evitar errores, como aplicar el certificado incorrecto al dominio incorrecto.
-* **Cumplimiento y auditoría**: Puede que sea más fácil realizar el seguimiento de los certificados con nombres correctos por motivos de seguridad y auditoría.
+* **Cumplimiento y auditoría**: Los certificados con nombres correctos son más fáciles de rastrear por motivos de seguridad y auditoría.
 
 **Para cambiar el nombre de un certificado SSL administrado por Adobe:**
 
@@ -107,7 +107,7 @@ La eliminación de certificados SSL administrados por Adobe o por el cliente de 
 
 >[!NOTE]
 >
->No puede eliminar un certificado SSL administrado por Adobe que tenga uno o varios dominios activos asociados a él. Todos los dominios activos asociados deben eliminarse antes de eliminar el certificado SSL. Consulte [Administrar nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para obtener más información.
+>No puede eliminar un certificado SSL administrado por Adobe que tenga uno o varios dominios activos asociados a él. Todos los dominios activos asociados deben eliminarse antes de eliminar el certificado SSL. Para obtener más información, consulte [Administrar nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
 
 Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrador de implementación** para completar esta tarea.
 
@@ -129,14 +129,14 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 1. En el cuadro de diálogo **Eliminar certificado SSL**, haga clic en **Eliminar** para confirmar la eliminación.
 
-1. Ejecute la canalización para anular la implementación del certificado eliminado.
+1. Para anular la implementación del certificado eliminado, ejecute la canalización.
 
 
 ## Configuraciones de CDN preexistentes {#pre-existing-cdn}
 
 Si ya tiene una configuración de CDN para su certificado SSL, la página **Certificados SSL** muestra un mensaje informativo. Le anima a añadir estas configuraciones a través de la interfaz de usuario para que sean visibles y manejables en Cloud Manager.
 
-El mensaje desaparece después de migrar todas las configuraciones de entorno preexistentes mediante la interfaz de usuario. El mensaje puede tardar entre uno y dos días hábiles en desaparecer.
+El mensaje desaparece después de migrar todas las configuraciones de entorno preexistentes mediante la interfaz de usuario. El mensaje se elimina en uno o dos días hábiles.
 
 Consulte [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obtener más información.
 
