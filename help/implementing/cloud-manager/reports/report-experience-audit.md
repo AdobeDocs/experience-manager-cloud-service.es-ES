@@ -9,10 +9,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
+source-git-commit: f0562cd812c89aad5af468f4839f068ed26eada1
 workflow-type: tm+mt
-source-wordcount: 1570
-ht-degree: 8%
+source-wordcount: 1551
+ht-degree: 5%
 
 ---
 
@@ -32,9 +32,9 @@ La auditoría de experiencias valida el proceso de implementación y ayuda a gar
 
 La auditoría de experiencias en Cloud Manager garantiza que la experiencia del usuario en el sitio sea de los más altos estándares.
 
-Los resultados de la auditoría son informativos y permiten al administrador de implementación ver las puntuaciones y el cambio entre las puntuaciones actuales y anteriores. Esta perspectiva es importante para determinar si hay una regresión que se haya introducido con la implementación actual.
+Los resultados de la auditoría son informativos y permiten al administrador de implementación ver las puntuaciones y el cambio entre las puntuaciones actuales y anteriores. Esta insight es útil para determinar si hay una regresión introducida por la implementación actual.
 
-La auditoría de experiencias está equipada con [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), una herramienta de código abierto de Google, y está habilitada en todas las canalizaciones de producción de Cloud Manager.
+[Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), una herramienta de código abierto de Google, activa la auditoría de experiencias y Cloud Manager la habilita en todas las canalizaciones de producción.
 
 ## Disponibilidad {#availability}
 
@@ -50,12 +50,12 @@ Las auditorías se ejecutan como parte de la canalización. Las auditorías tamb
 
 ## Configuración {#configuration}
 
-La auditoría de experiencias está disponible de forma predeterminada para las canalizaciones de producción. Opcionalmente, se puede habilitar para el desarrollo de canalizaciones full-stack y front-end. En todos los casos, debe definir qué rutas de contenido se evalúan durante la ejecución de la canalización.
+La auditoría de experiencias está disponible de forma predeterminada para las canalizaciones de producción. Se puede habilitar, opcionalmente, para canalizaciones full-stack y front-end. En todos los casos, debe definir qué rutas de contenido se evalúan durante la ejecución de la canalización.
 
 1. Según el tipo de canalización que desee configurar, realice una de las siguientes acciones:
 
-   * [Agregue una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para definir las rutas que desea que evalúe la auditoría.
-   * [Agregue una canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), si desea habilitar la auditoría en una canalización de pila completa de front-end o de desarrollo.
+   * Para definir las rutas que desea que evalúe la auditoría, [agregue una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [Agregue una canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), si desea habilitar la auditoría en una canalización front-end o de pila completa.
    * [Editar una canalización existente](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) y actualizar las opciones existentes.
 
 1. Para usar la auditoría de experiencias al agregar o editar una canalización que no sea de producción, marque la casilla de verificación **Auditoría de experiencias**. Puede encontrar esta opción en la ficha **Código Source**.
@@ -68,7 +68,7 @@ La auditoría de experiencias está disponible de forma predeterminada para las 
 1. Tanto para las canalizaciones de producción como para las que no son de producción, usted define las rutas que deben incluirse en la auditoría de experiencias en la pestaña **Auditoría de experiencias**.
 
    * Las rutas de acceso a la página deben comenzar por `/` y son relativas al sitio.
-   * Por ejemplo, si el sitio es `wknd.site` y desea incluir `https://wknd.site/us/en/about-us.html` (solo URL de ejemplo) en la auditoría de experiencias, escriba la ruta de acceso `/us/en/about-us.html`.
+   * Por ejemplo, si el sitio es `wknd.site` y usted incluye `https://wknd.site/us/en/about-us.html` (solo URL de ejemplo) en la auditoría de experiencias, escriba la ruta de acceso `/us/en/about-us.html`.
 
    ![Definición de una ruta para la auditoría de experiencias](/help/implementing/cloud-manager/reports/assets/experience-audit-add-page.png)
 
@@ -79,7 +79,7 @@ La auditoría de experiencias está disponible de forma predeterminada para las 
 1. Siga agregando rutas según sea necesario repitiendo los dos pasos anteriores.
 
    * Puede agregar un máximo de 25 rutas.
-   * Si no define una ruta, la página principal del sitio se incluye en la auditoría de experiencias de forma predeterminada.
+   * Si no define ninguna ruta, la auditoría de experiencias incluye la página principal del sitio de forma predeterminada.
 
 1. Haga clic en **Guardar**.
 
@@ -108,7 +108,7 @@ Puede acceder a los resultados completos de la auditoría haciendo clic en la pe
 
 ### Ver las páginas más lentas {#view-slowest-pages}
 
-Haga clic en **Ver páginas más lentas** para abrir el cuadro de diálogo **Más lentas** 5 páginas. Se muestran las cinco páginas de menor rendimiento que [configuró para auditar](#configuration).
+Para abrir el cuadro de diálogo **Más lento: 5 páginas**, haga clic en **Ver las páginas más lentas**. Se muestran las cinco páginas de menor rendimiento que [configuró para auditar](#configuration).
 
 ![Cinco más lentos](/help/implementing/cloud-manager/reports/assets/experience-audit-slowest-five.png)
 
@@ -159,7 +159,7 @@ Si hace clic en el gráfico en un momento dado, se abrirá una ventana emergente
 
 #### Resultados del análisis de auditoría de experiencias {#scan-results}
 
-La sección **Resultados del análisis de auditoría de experiencias** proporciona detalles de las puntuaciones de todas las páginas digitalizadas. Use los botones **Anterior** y **Siguiente** para hojear los resultados y elegir cuántos se mostrarán en la pantalla.
+La sección **Resultados del análisis de auditoría de experiencias** proporciona detalles de las puntuaciones de todas las páginas digitalizadas. Use los botones **Anterior** y **Siguiente** para navegar por los resultados y elegir cuántos se muestran en la pantalla.
 
 ![Páginas digitalizadas](/help/implementing/cloud-manager/reports/assets/experience-audit-scanned-pages.png)
 
@@ -173,13 +173,13 @@ Una nueva ficha que se abre en el explorador lo dirige a `https://googlechrome.g
 
 ## Informes de auditoría de análisis bajo demanda {#on-demand}
 
-Además de ejecutarse durante la ejecución de la canalización, los informes de auditoría de experiencias también se pueden generar bajo demanda. Esta opción es una buena solución para analizar las páginas rápidamente, sin tener que ejecutar una canalización.
+Además de ejecutarse durante la ejecución de la canalización, los informes de auditoría de experiencias también se pueden generar bajo demanda. Esta opción es una solución eficaz para analizar las páginas rápidamente, sin tener que ejecutar una canalización.
 
 Para ejecutar un análisis bajo demanda, vaya a la ficha **Informes** para poder ver el informe de auditoría completo y, a continuación, haga clic en el botón **Ejecutar análisis**.
 
 ![Análisis bajo demanda](/help/implementing/cloud-manager/reports/assets/experience-audit-on-demand.png)
 
-El botón **Ejecutar análisis** deja de estar disponible y aparece marcado con un icono de reloj cuando ya se está ejecutando un análisis Bajo demanda.
+El botón **Ejecutar análisis** deja de estar disponible y muestra un icono de reloj cuando ya se está ejecutando un análisis Bajo demanda.
 
 ![Análisis bajo demanda en ejecución](/help/implementing/cloud-manager/reports/assets/experience-audit-on-demand-running.png)
 
@@ -199,7 +199,7 @@ Puede filtrar el gráfico de puntuaciones según el tipo de déclencheur usando 
 
 Si las [páginas que configuró](#configuration) para auditar no estaban disponibles o si había otros errores en la auditoría, la auditoría de experiencias refleja este hecho.
 
-La canalización muestra una sección de errores ampliable para ver las rutas URL relativas a las que no pudo acceder.
+La canalización muestra una sección de errores ampliable para ver las rutas URL relativas a las que no puede acceder.
 
 ![Problemas detectados por la auditoría de experiencias](/help/implementing/cloud-manager/reports/assets/experience-audit-issues.png)
 
@@ -207,7 +207,7 @@ Si visualiza el informe completo, los detalles se muestran en la sección **[Res
 
 ![Problemas completos con el informe](/help/implementing/cloud-manager/reports/assets/experience-audit-issues-report.png)
 
-Algunas razones por las que las páginas podrían no estar disponibles son las siguientes:
+Algunas de las razones por las que las páginas no están disponibles son las siguientes:
 
 * La configuración bloquea el acceso.
 * La página no existe.
@@ -216,12 +216,12 @@ Algunas razones por las que las páginas podrían no estar disponibles son las s
 
 >[!TIP]
 >
->[Acceder a los informes sin procesar](#scan-results) de una página puede proporcionar detalles sobre por qué no se pudo auditar la página.
+>[Al obtener acceso a los informes sin procesar](#scan-results) de una página, se proporcionan detalles sobre por qué no se auditó la página.
 
 ## Detalles de evaluación de auditoría de experiencias {#details}
 
 Los siguientes detalles proporcionan información adicional sobre cómo la auditoría de experiencias evalúa el sitio. No son necesarios para el uso general de la función y se proporcionan aquí para su integridad.
 
-* La auditoría explora el dominio de origen (`.com`) desde las [rutas configuradas de la página Auditoría de experiencias](#configuration) del editor para simular experiencias reales del usuario, lo que le ayuda a tomar mejores decisiones sobre la administración y optimización de sus sitios web.
-* En las canalizaciones full-stack de producción, se analiza el entorno de ensayo. Para garantizar que la auditoría proporcione los detalles relevantes durante la auditoría, el contenido del entorno de ensayo debe ser lo más parecido posible al entorno de producción.
+* La auditoría explora el dominio de origen (`.com`) desde las [rutas configuradas de la página Auditoría de experiencias](#configuration) del editor para simular experiencias reales del usuario, lo que le ayuda a tomar decisiones informadas sobre la administración y la optimización de sus sitios web.
+* En las canalizaciones full-stack de producción, se analiza el entorno de ensayo. Para garantizar que la auditoría proporcione los detalles relevantes durante la auditoría, el contenido del entorno de ensayo es lo más parecido posible al entorno de producción.
 * Las páginas mostradas en la lista desplegable **Seleccionar** en la sección [**Puntuaciones de página — tendencia**](#trend) son todas páginas conocidas que la auditoría de experiencias ha analizado anteriormente.
