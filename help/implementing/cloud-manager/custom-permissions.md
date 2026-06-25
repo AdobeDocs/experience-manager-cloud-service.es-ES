@@ -5,10 +5,10 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Developer
-source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
+source-git-commit: ff567c4f328bf0ab10ee9e93ad850a597536cdbf
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 28%
+source-wordcount: '1258'
+ht-degree: 22%
 
 ---
 
@@ -40,10 +40,10 @@ La creación y el uso de sus propios permisos personalizados requieren los tres 
 1. [Asignar usuarios al perfil del producto](#assign-users).
 
 >[!TIP]
->Puede que le resulte útil revisar las secciones [Términos](#terms) y [Permisos configurables](#configurable-permissions) a medida que crea sus propios permisos personalizados.
+>Revise las secciones [Términos](#terms) y [Permisos configurables](#configurable-permissions) a medida que crea sus propios permisos personalizados.
 
 >[!IMPORTANT]
->Debe tener derechos de administrador de productos en Admin Console para Adobe Experience Manager as a Cloud Service para crear perfiles de productos y administrar permisos para Cloud Manager.
+>Para crear perfiles de producto y administrar permisos para Cloud Manager, debe tener derechos de administrador de productos en Admin Console para Adobe Experience Manager as a Cloud Service.
 
 ### Creación de un perfil de producto {#create}
 
@@ -80,7 +80,7 @@ El nuevo perfil de producto se guarda y es visible en la lista de perfiles de pr
 
 1. En el cuadro de diálogo **Editar permisos para el perfil personalizado**, realice una de las siguientes acciones:
 
-   * Cerca de la parte superior de la columna **Elementos de permisos disponibles**, haga clic en ![Agregar icono o Icono de signo más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Agregar todos** para agregar todos los permisos.
+   * Cerca de la parte superior de la columna **Elementos de permisos disponibles**, haga clic en ![Agregar icono o icono de signo más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Agregar todo** para incluir todos los permisos.
    * Para agregar un solo permiso a la columna **Elementos de permiso incluidos**, haga clic en su ![icono Agregar o icono de signo más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) asociado.
 
      ![Editar elementos de permiso](assets/edit-permission-items.png)
@@ -139,7 +139,7 @@ Los permisos de nivel de organización hacen referencia a permisos que siempre s
 Los siguientes permisos son permisos de nivel de organización:
 
 * **`Program Create`**: este permiso permite a los usuarios crear un programa en la organización.
-* **Acceso a la información del repositorio**: este permiso de nivel de inquilino/organización permite a los usuarios generar un nombre de usuario, una contraseña y una URL de repositorio para acceder a un proyecto de cliente y contribuir a él.
+* **Acceso a información de repositorio**: este permiso de nivel de inquilino/organización permite a los usuarios generar un nombre de usuario, una contraseña y una URL de repositorio para acceder a un proyecto de cliente y contribuir a él.
    * El nombre de usuario y la contraseña para acceder al repositorio son comunes en todos los repositorios de la organización. Sin embargo, la dirección URL del repositorio es única para cada programa.
    * Consulte [Acceder a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md) para obtener más información.
 
@@ -167,12 +167,12 @@ Los elementos de permisos hacen referencia al ámbito en el que se aplicará el 
 ## Notas de uso {#usage-notes}
 
 * Un perfil de permisos personalizado también enumera programas, entornos y canalizaciones de AMS al configurar los permisos.
-* Los recursos como programa, entorno y canalización creados en Cloud Manager pueden tardar varios minutos en mostrarse en Admin Console para la configuración de permisos.
-* En casos excepcionales en los que el servicio de permisos personalizados no responde, los perfiles predefinidos siguen estando disponibles y teniendo el acceso adecuado.
+* Los recursos como programas, entornos y canalizaciones creados en Cloud Manager tardan varios minutos en mostrarse en Admin Console para la configuración de permisos.
+* En los casos en los que un servicio de permisos personalizados no responde, los perfiles predefinidos siguen estando disponibles y los usuarios de perfiles predefinidos siguen teniendo el acceso adecuado.
 
 ## Preguntas frecuentes {#faq}
 
-### ¿Qué perfiles de permisos son los predefinidos?
+### ¿Qué perfiles de permiso están predefinidos?
 
 * Propietario del negocio
 * Administrador de programa
@@ -183,7 +183,7 @@ Para obtener más información sobre las funciones predefinidas, consulte [Perfi
 
 ### ¿Qué les sucede a los perfiles de permisos predefinidos con la introducción de perfiles personalizados?
 
-Los perfiles de producto predeterminados y las funciones de Cloud Manager siguen funcionando igual que antes.
+Los perfiles de producto predeterminados y las funciones de Cloud Manager siguen funcionando como antes.
 
 ### ¿Puedo editar perfiles de permisos predefinidos?
 
@@ -195,8 +195,8 @@ No elimine perfiles de permiso predefinidos de Admin Console.
 
 ### ¿Puedo añadir usuarios a varios perfiles de permisos?
 
-Sí. Un usuario puede formar parte de varios perfiles, incluidos perfiles de permisos predefinidos y personalizados. Cuando se asigna a un usuario a varios perfiles, los permisos combinados de todos los perfiles de permiso asignados están disponibles para ese usuario.
+Sí. Se puede asignar a un usuario varios perfiles, incluidos perfiles de permiso predefinidos y personalizados. Cuando se asigna a un usuario a varios perfiles, los permisos combinados de todos los perfiles de permiso asignados están disponibles para ese usuario.
 
-### ¿Qué sucede si un usuario tiene permiso para editar un entorno o canalización, pero no tiene acceso a un programa que contenga el entorno o canalización?
+### ¿Qué sucede si un usuario tiene permiso para editar un entorno o canalización pero no tiene acceso a un programa que contenga el entorno o canalización?
 
-El usuario no puede acceder al entorno o la canalización si no tiene los permisos de **Acceso al programa** que contienen el entorno o la canalización.
+El usuario no puede acceder al entorno o la canalización si no tiene los permisos de **Acceso al programa** asociados con el entorno o la canalización.
