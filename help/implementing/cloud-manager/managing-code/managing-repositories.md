@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo agregar, ver y eliminar repositori
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 188201dfaececb21d373450711eb206b8e2323e2
+source-git-commit: c1e63069e215e275ee6048d50496f4e0010d2da1
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 62%
+source-wordcount: '892'
+ht-degree: 60%
 
 ---
 
@@ -31,7 +31,7 @@ Cada canalización está vinculada a un repositorio o rama principal. Sin embarg
 
 En la página **Repositorios** puede ver los detalles del repositorio seleccionado. Esta información incluye el tipo de repositorio en uso. Si el repositorio está marcado como **Adobe**, esto significa que se trata de un repositorio administrado por Adobe. Si está etiquetado como **GitHub**, hace referencia a un repositorio privado de GitHub administrado por usted. Además, la página proporciona detalles como cuándo se creó el repositorio y las canalizaciones asociadas a él.
 
-Para llevar a cabo acciones en un repositorio seleccionado, puede hacer clic en el repositorio y usar el icono ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) para abrir un menú desplegable. Para los repositorios administrados por Adobe, puede **[Comprobar ramas/Crear proyecto](#check-branches)**.
+Para administrar un repositorio seleccionado, puede hacer clic en el repositorio y usar ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) para abrir un menú desplegable. Para los repositorios administrados por Adobe, puede **[Comprobar ramas/Crear proyecto](#check-branches)**.
 
 ![Acciones de repositorio](assets/repository-actions.png)
 *Menú desplegable en la página Repositorios.*
@@ -66,13 +66,13 @@ Para obtener ayuda para elegir entre los métodos de repositorio privado y exter
 
 ### Añadir un repositorio que no sea de Adobe {#add-non-adobe-repositories}
 
-Si aloja el código fuera de Adobe, la página de instrucciones que utilice y el método de validación de propiedad dependerán de dónde esté alojado el repositorio. Utilice la siguiente tabla para elegir la ruta correcta.
+Si aloja el código fuera de Adobe, la página de instrucciones que utilice y el método de validación de propiedad dependerán de dónde esté alojado el repositorio. Utilice la siguiente tabla para elegir la opción correcta.
 
 | Ubicación del repositorio. | Método de validación | Página de instrucciones de uso |
 | --- | --- | --- |
 | `github.com` (cualquier plan de GitHub, como Free, Pro, Team o Enterprise Cloud) | Aplicación de Adobe GitHub y un archivo secreto. No se requiere webhook. | [Agregar un repositorio privado de GitHub en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
 | Servidor empresarial de GitHub (autoalojado) | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
-| GitLab, Bitbucket o Azure DevOps | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+| GitLab, Bitbucket o Azure DevOps | Token de acceso personal y un webhook | [Agregar repositorios externos en Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
 
 
 ## Acceder a la información del repositorio {#repo-info}
