@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f625c95a067b2a16f3a237b80005c4ea4cc6cd4d
+source-git-commit: 45fb44079ec9b999cc2cd82b8011b14eff3bcfe1
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2276'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## Introducción {#introduction}
 
-Las solicitudes de contenido incluyen solicitudes enviadas a AEM Sites. Estas solicitudes pueden enrutarse a través de Edge Delivery Services o de sistemas de almacenamiento en caché proporcionados por el cliente, como una red de distribución de contenido (CDN). Estas solicitudes ofrecen datos estructurados en formato HTML o JSON y admiten vistas de página (por ejemplo, páginas y fragmentos de experiencias) o devoluciones JSON a través de API de manera directa.
+Las solicitudes de contenido incluyen solicitudes enviadas a AEM Sites. Estas solicitudes se enrutan a través de Edge Delivery Services o de sistemas de almacenamiento en caché proporcionados por el cliente, como una red de distribución de contenido (CDN). Estas solicitudes ofrecen datos estructurados en formato HTML o JSON y admiten vistas de página (por ejemplo, páginas y fragmentos de experiencias) o devoluciones JSON a través de API de manera directa.
 
 El sistema cuenta las solicitudes de contenido cuando un usuario ve una página mediante HTML o JSON. Mide la solicitud en el punto en el que la recibe el primer sistema de almacenamiento en caché. Algunas solicitudes HTTP se incluyen o excluyen con el fin de contar las solicitudes de contenido. Vea la lista completa de [solicitudes de contenido incluidas](#included-content-requests) y [solicitudes de contenido excluidas](#excluded-content-requests) de HTTP.
 
@@ -35,7 +35,7 @@ AEM (Adobe Experience Manager) as a Cloud Service identifica las solicitudes de 
 Las solicitudes de recursos estáticos, como archivos JavaScript, hojas de estilo CSS e imágenes, no se cuentan como solicitudes de contenido.
 
 >[!NOTE]
->Si una solicitud de API devuelve un HTML o JSON que sirve como contenido de nivel de página (por ejemplo, en una entrega sin encabezado), se puede seguir contando como una solicitud de contenido en función de su contexto.
+>Si una solicitud de API devuelve un HTML o JSON que sirve como contenido de nivel de página (por ejemplo, en una entrega sin encabezado), se cuenta como una solicitud de contenido en función de su contexto.
 
 Las solicitudes de contenido se miden independientemente de si la respuesta se proporcionó desde la caché de CDN o se reenvió al entorno de AEM de origen.
 
@@ -47,7 +47,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Variaciones de solicitudes de contenido de Cloud Service {#content-requests-variances}
 
-Las solicitudes de contenido pueden tener variaciones dentro de las herramientas de informes de análisis de una organización, como se resume en la siguiente tabla. En general, evite utilizar herramientas de análisis que dependan de la instrumentación del lado del cliente para informar del número de solicitudes de contenido de un sitio. Estas herramientas suelen pasar por alto una gran parte del tráfico porque dependen del consentimiento del usuario para activarse. Las herramientas de Analytics que recopilan datos del lado del servidor en archivos de registro o los informes de CDN para clientes que agregan su propia CDN además de AEM as a Cloud Service ofrecen mejores recuentos.
+Las solicitudes de contenido pueden tener variaciones dentro de las herramientas de informes de análisis de una organización, como se resume en la siguiente tabla. En general, evite utilizar herramientas de análisis que dependan de la instrumentación del lado del cliente para informar del número de solicitudes de contenido de un sitio. Estas herramientas suelen pasar por alto una gran parte del tráfico porque dependen del consentimiento del usuario para activarse. Las herramientas de Analytics que recopilan datos del lado del servidor en archivos de registro o informes de CDN para clientes que agregan su propia CDN a AEM as a Cloud Service ofrecen mejores recuentos.
 
 | Razón de la variación | Explicación |
 |---|---|
@@ -74,7 +74,7 @@ En las tablas siguientes se enumeran los tipos de solicitudes de contenido inclu
 ### Tipos de solicitudes de contenido incluidas {#included-content-requests}
 
 >[!NOTE]
->Si una solicitud de API devuelve una respuesta de HTML, puede clasificarse como solicitud de contenido, según su contexto de uso. Las solicitudes de API que devuelven datos que no son de la interfaz de usuario generalmente se excluyen.
+>Si una solicitud de API devuelve una respuesta de HTML, se clasifica como una solicitud de contenido, según su contexto de uso. Las solicitudes de API que devuelven datos que no son de la interfaz de usuario generalmente se excluyen.
 
 | Tipo de solicitud | Solicitud de contenido | Descripción |
 | --- | --- | --- |
@@ -107,15 +107,15 @@ Consulte también [Panel de licencias](/help/implementing/cloud-manager/license-
 
 ## Administrar solicitudes de contenido {#managing-content-requests}
 
-Como se mencionó en [Variaciones de solicitudes de contenido de Cloud Service](#content-requests-variances), las solicitudes de contenido pueden ser más altas de lo esperado por varias razones, como el tráfico que llega a la CDN. Como cliente de AEM, le resulta útil monitorizar y administrar sus solicitudes de contenido para mantenerse dentro del presupuesto de licencias. La administración de solicitudes de contenido suele ser una combinación de técnicas de implementación y [reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md).
+Como se mencionó en [Variaciones de solicitudes de contenido de Cloud Service](#content-requests-variances), las solicitudes de contenido pueden ser más altas de lo esperado por varias razones, como el tráfico que llega a la CDN. Como cliente de AEM, le resulta útil monitorizar y administrar sus solicitudes de contenido para mantenerse dentro del presupuesto de licencias. Administrar solicitudes de contenido es una combinación de técnicas de implementación y [reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Técnicas de implementación para administrar solicitudes de contenido {#implementation-techniques-to-manage-crs}
 
 * Asegúrese de que todas las respuestas de Página no encontrada se envíen con un estado HTTP 404. Si se devuelven con un estado 200, se cuentan para las solicitudes de contenido.
 * Enrute las herramientas de comprobación de estado o monitorización a la URL /system/probes/health o utilice el método HEAD en lugar de GET para evitar solicitudes de contenido.
-* Equilibre sus necesidades de actualización del contenido con el coste de la licencia de AEM para cualquier rastreador de búsqueda personalizada que haya integrado con su sitio. Un rastreador excesivamente activo puede consumir muchas solicitudes de contenido.
-* Gestione cualquier redirección como del lado del servidor (estado 301 o 302) en lugar de hacerlo del lado del cliente (estado 200 con redirección de JavaScript) para evitar dos solicitudes de contenido independientes.
-* Combine o reduzca las llamadas de API, que son respuestas JSON de AEM que se pueden cargar para procesar la página.
+* Equilibre sus necesidades de actualización del contenido con el coste de la licencia de AEM para cualquier rastreador de búsqueda personalizada que haya integrado con su sitio. Un rastreador excesivamente activo consume muchas solicitudes de contenido.
+* Para evitar dos solicitudes de contenido independientes, administre cualquier redirección como del lado del servidor (estado 301 o 302) en lugar de hacerlo del lado del cliente (estado 200 con redireccionamiento de JavaScript).
+* Combine o reduzca las llamadas de API, que son respuestas JSON de AEM cargadas para procesar la página.
 * Asegúrese de que el agente de usuario del explorador se pasa correctamente a AEM. Al hacerlo, se aprovecha la regla de exclusión de solicitudes de contenido del &quot;motor de búsqueda conocido&quot; descrita anteriormente. A veces, el agente de usuario de origen se pierde con ciertas implementaciones sin encabezado o configuraciones de CDN. Si esto sucede, puede evitar la exclusión y provocar solicitudes de contenido más altas que si se pasara el agente de usuario.
 
 ### Reglas de filtro de tráfico para administrar solicitudes de contenido {#traffic-filter-rules-to-manage-crs}
@@ -163,4 +163,4 @@ trafficFilters:
 
 Reemplace los valores de ejemplo por el código de país, la red o el nombre de bot que desee bloquear. Consulte [Sintaxis de reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) y [Estructura de condición](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) para obtener más opciones.
 
-Algunos bots pueden sobrecargar un sitio con tráfico un día y luego desaparecer al siguiente. Esta funcionalidad puede frustrar cualquier intento de bloquear una dirección IP o un agente de usuario específico. Un enfoque genérico es introducir una [regla de límite de tarifa](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Revise los [ejemplos](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) y cree una regla que coincida con su tolerancia para una tasa rápida de solicitudes. Revise la sintaxis [Estructura de condiciones](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) para todas las excepciones que desee permitir a un límite de tasa genérico.
+Algunos bots pueden sobrecargar un sitio con tráfico un día y luego desaparecer al siguiente. Esta funcionalidad puede complicar cualquier intento de bloquear una dirección IP o un agente de usuario específico. Un enfoque genérico es introducir una [regla de límite de tarifa](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Revise los [ejemplos](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) y cree una regla que coincida con su tolerancia para una tasa rápida de solicitudes. Revise la sintaxis [Estructura de condiciones](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) para todas las excepciones que permita a un límite de tasa genérico.
