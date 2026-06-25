@@ -4,9 +4,9 @@ description: Obtenga información acerca de las distintas opciones para ampliar 
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
+source-git-commit: b2c13eead3670f0d708fa2c9adf9ac120d0470b9
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '670'
 ht-degree: 92%
 
 ---
@@ -24,7 +24,6 @@ Obtenga información acerca de las distintas opciones para ampliar las capacidad
 Como servicio de Adobe Experience Cloud, la IU del editor universal se puede ampliar con App Builder y Experience Manager. Adobe ofrece muchas extensiones listas para usarse disponibles a través de [Extension Manager](https://experience.adobe.com/aem/extension-manager) que puede usar para su proyecto.
 
 * **[Extensión de administración de varios sitios de AEM (MSM)](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: interrumpa o restablezca la herencia en el nivel de componente
-* **[Extensión de administración de sitios de AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: abra la consola de Sites en la ubicación de la página en el editor universal
 * **[Extensión de bloqueo de página de AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: vea y cambie el estado del bloqueo de página desde el editor universal
 * **[Extensión de flujos de trabajo de AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: inicie flujos de trabajo en la página y contenido de página desde el editor universal
 * **[Generar variaciones](/help/generative-ai/generate-variations-integrated-editor.md)**: use la inteligencia artificial generativa (IA) para crear variaciones para el contenido directamente en el panel de propiedades.

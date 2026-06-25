@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión de Universal Editor 2026.06.18
-description: Estas son las notas de la versión de la versión 2026.06.18 de Universal Editor.
+title: Notas de la versión de Universal Editor 2026.06.25
+description: Estas son las notas de la versión de la versión 2026.06.25 de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8658d6c71927cbd610e42b618705509b51a2d672
+source-git-commit: c5aec0d045162327bad3d0d03b22386bf2effe6e
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 16%
+source-wordcount: '186'
+ht-degree: 13%
 
 ---
 
 
-# Notas de la versión de Universal Editor 2026.06.18 {#release-notes}
+# Notas de la versión de Universal Editor 2026.06.25 {#release-notes}
 
-Estas son las notas de la versión del editor universal del 18 de junio de 2026.
+Estas son las notas de la versión del editor universal del 25 de junio de 2026.
 
 >[!TIP]
 >
@@ -26,12 +26,13 @@ Estas son las notas de la versión del editor universal del 18 de junio de 2026.
 
 ## Novedades {#what-is-new}
 
-* Se agregó la capacidad de borrar todas las casillas de verificación seleccionadas.
+* Se ha agregado un nuevo botón **Abrir en el administrador del sitio** a la barra de herramientas para acceder a la consola de AEM Sites.
+   * Esto lleva la funcionalidad de la anterior **extensión de administración del sitio de AEM** [extension](/help/implementing/universal-editor/extending.md) de forma nativa al editor universal.
+   * El botón abre la página actual de AEM en la consola [Sitios](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) o en la consola [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/experience-fragments.md) para las rutas de acceso `/content/experience-fragments`.
+   * El botón está oculto para las rutas de acceso DAM (`/content/dam`) y cuando no se puede determinar una página de AEM única a partir de los editables actuales.
+* Los métodos abreviados de teclado de un solo carácter ahora funcionan mejor con tecnologías de accesibilidad.
 
 ## Otras mejoras {#other-improvements}
 
-* El botón rotar ahora comunica correctamente su estado actual a las tecnologías de asistencia.
-* Se ha corregido un estado de carga infinito en situaciones en las que los fragmentos de contenido contienen pestañas sin contenido.
-* Se corrigió un error en el que un procesador se bloquea en algunas situaciones al volver a cargar ciertos modelos.
-* Se corrigió un error en el cual no se podían eliminar ciertas etiquetas.
-* El nombre accesible del botón Imagen destacada ya no contiene información duplicada.
+* Numerosos botones ahora tienen correctamente nombres accesibles.
+* Se ha corregido un problema con la persistencia de ciertos fragmentos de contenido después de seleccionarlos con un selector.
