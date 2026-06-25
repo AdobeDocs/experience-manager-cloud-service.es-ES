@@ -5,25 +5,25 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 5467a311-727d-4f67-ba43-4b6548431061
-source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
+source-git-commit: 8c5c34018aee84a1ec54d3f1d0bc77b8c660869c
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1534'
 ht-degree: 11%
 
 ---
 
 # Evaluación del estado {#about-health-assessment}
 
-La evaluación de estado es un análisis automatizado y no intrusivo para entornos de producción y ensayo en Cloud Manager dentro de AEM as a Cloud Service. Evalúa el contenido, el código y las configuraciones para identificar los antipatrones y las desviaciones de las prácticas recomendadas, lo que mejora la seguridad y el rendimiento.
+La evaluación de estado es un análisis automatizado y no intrusivo para entornos de producción y ensayo en Cloud Manager dentro de AEM as a Cloud Service. Evalúa el contenido, el código y las configuraciones para identificar patrones que se apartan de las prácticas recomendadas y mejorar la seguridad y el rendimiento.
 
 El servicio de evaluación médica hace lo siguiente:
 
-* Analiza los entornos y expone los cuellos de botella, las ineficiencias y los riesgos del rendimiento.
+* Analiza los entornos e identifica los cuellos de botella, las ineficiencias y los riesgos del rendimiento.
 * Analiza las estructuras de contenido, como los modelos, las Live Copies y las configuraciones de los clientes.
 * Detecta dependencias obsoletas, incluidas bibliotecas de AEM SDK y de terceros.
 * Indica problemas de calidad del código, como anotaciones incorrectas y patrones ineficientes.
 * Ofrece directrices procesables en los paneles (por ejemplo, el Centro de actividades).
-* Impulsa la corrección proactiva para mejorar el rendimiento del sistema.
+* Habilita la corrección proactiva para mejorar el rendimiento del sistema.
 
 Cada ejecución enumera los problemas por gravedad, vincula a las directrices y correcciones recomendadas, y admite una exportación PDF del informe. Puede usar la vista **Informe más reciente** del estado actual y **Informes anteriores** para comparar ejecuciones.
 
@@ -34,7 +34,7 @@ Consulte también [Patrones de evaluación de estado](#ha-patterns) para ver las
 1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com).
 1. En la sección **Acceso rápido**, haga clic en **Experience Manager**.
 1. En el panel izquierdo, haga clic en **Cloud Manager**.
-1. En Cloud Manager, cerca de la esquina superior derecha de la página, seleccione la organización que desee utilizar. La siguiente imagen es solo de referencia; seleccione su organización.
+1. En Cloud Manager, cerca de la esquina superior derecha de la página, seleccione la organización a la que desee acceder. La siguiente imagen se proporciona como referencia; seleccione su organización.
 
    ![Selección de una organización en Cloud Manager](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
@@ -60,7 +60,7 @@ Consulte también [Patrones de evaluación de estado](#ha-patterns) para ver las
 
    ![Haga clic en el botón Generar nuevo informe en la página Evaluación de estado](/help/implementing/cloud-manager/reports/assets/ha-run-report.png)
 
-   Mientras se ejecuta un informe para el entorno seleccionado, **Ejecutar informe** permanece deshabilitado hasta que finalice.
+   Mientras se ejecuta un informe para el entorno seleccionado, **Ejecutar informe** permanece deshabilitado hasta que se complete el proceso.
 
    ![Informe en plena ejecución](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
 
@@ -99,7 +99,7 @@ Consulte también [Patrones de evaluación de estado](#ha-patterns) para ver las
 
 * Cerca de la esquina superior derecha de la página del informe, haga clic en **Descargar**.
 
-  Se genera un archivo ZIP que contiene los PDF de todos los problemas detectados en ese informe.
+  Se genera un archivo ZIP que contiene los PDF de todos los problemas detectados en el informe.
 
   ![Descargar PDF de todos los problemas encontrados en un informe](/help/implementing/cloud-manager/reports/assets/ha-download-pdf.png)
 
@@ -121,7 +121,7 @@ En la página **Evaluación de estado**, revise la sección **Informes anteriore
 
 ## Patrones de evaluación de estado {#ha-patterns}
 
-A continuación se muestra una lista completa de los antipatrones y los problemas que la evaluación de estado detecta en AEM as a Cloud Service. La tabla agrupa los elementos en tres tipos: análisis de contenido, análisis de código y antipatrones de Cloud Service Optimizer, con una explicación para cada uno.
+A continuación se muestra una lista completa de patrones que se apartan de las prácticas recomendadas y de los problemas que la evaluación de estado detecta en AEM as a Cloud Service. La tabla agrupa los elementos en tres tipos: análisis de contenido, análisis de código y patrones de Cloud Service Optimizer que se alejan de las prácticas recomendadas, con una explicación para cada uno.
 
 | Nombre del patrón | Categoría | Tipo | Descripción | Impacto | ¿Auto-arreglado? |
 | --- | --- | --- | --- | --- | --- |
