@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: 784061cac8964a4f86690c84d106396994f987b7
 workflow-type: tm+mt
 source-wordcount: '7545'
 ht-degree: 84%
@@ -1117,9 +1117,9 @@ ht-degree: 84%
    + [Generar salida AFP mediante la API de AEM Forms](/help/forms/document-generation-afp-api.md)
    + {hide-from-toc}[Autenticación de servidor a servidor OAuth](/help/forms/oauth-api-authetication.md)
    + {hide-from-toc}[Autenticación de servidor a servidor JWT(token web JSON)](/help/forms/jwt-api-authentication.md)
-   + [Instalación y configuración de Forms Designer](/help/forms/installing-configuring-designer.md)
-   + [Uso de Forms Designer para crear plantillas](/help/forms/use-forms-designer.md)
-   + [Cambiar el contenido de la página cero en Designer](/help/forms/changing-page-zero-content-designer.md)
+   + {hide-from-toc}[Instalar y configurar Forms Designer](/help/forms/installing-configuring-designer.md)
+   + {hide-from-toc}[Use Forms Designer para crear plantillas](/help/forms/use-forms-designer.md)
+   + {hide-from-toc}[Cambiar el contenido de la página cero en Designer](/help/forms/changing-page-zero-content-designer.md)
    + [Uso de fuentes personalizadas en documentos PDF](/help/forms/use-custom-fonts.md)
    + [Lista de fuentes admitidas en los documentos PDF](/help/forms/supported-out-of-the-box-fonts.md)
    + [Problemas conocidos, prácticas recomendadas y preguntas más frecuentes](/help/forms/communications-known-issues-limitations.md)

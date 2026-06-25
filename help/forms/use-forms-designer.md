@@ -4,11 +4,13 @@ description: Utilice  [!DNL AEM Forms] Designer para crear plantillas de documen
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+hide: true
+index: false
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 784061cac8964a4f86690c84d106396994f987b7
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 96%
+source-wordcount: '195'
+ht-degree: 90%
 
 ---
 
@@ -19,8 +21,8 @@ Designer es una herramienta gráfica de diseño de formularios que simplifica la
 En los siguientes documentos se proporcionan instrucciones para utilizar Designer para crear plantillas XDP y PDF forms:
 
 + [Usar Designer](assets/using-designer-cs.pdf)
-+ [Tutoriales de inicio rápido de Designer &#x200B;](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
-+ [Muestras de Designer &#x200B;](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/designer-samples.pdf)
-+ [Conceptos básicos de scripts en Designer &#x200B;](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
-+ [Referencia de scripts en Designer](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
++ [Tutoriales de inicio rápido de Designer](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
++ [Muestras de Designer](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/designer-samples.pdf)
++ [Conceptos básicos de scripts Designer](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
++ [Referencia de scripts de Designer](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
 + [Referencia de FormCalc de Designer](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)

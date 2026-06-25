@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: 784061cac8964a4f86690c84d106396994f987b7
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 2%
@@ -15,7 +15,6 @@ ht-degree: 2%
 
 
 # Introducción al editor de comunicaciones interactivas
-
 
 ## ¿Qué es el editor de comunicaciones interactivas?
 
