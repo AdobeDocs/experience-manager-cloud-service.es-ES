@@ -30,7 +30,7 @@ Esta serie de vídeos explora varios casos prácticos al integrar un repositorio
 
 La serie de vídeos requiere un conocimiento básico de la administración de Git y el control de fuentes. Consulte los [recursos adicionales a continuación](#additional-resources) para obtener más información sobre Git.
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/)
+>[!VIDEO](https://video.tv.adobe.com/v/31372?captions=spa)
 
 Los pasos y las convenciones de nomenclatura descritos en esta serie de vídeos representan algunas prácticas recomendadas para trabajar con un repositorio Git administrado por el cliente en Cloud Manager. Se espera que las convenciones y flujos de trabajo representados se adapten a los casos de uso individuales.
 
@@ -38,31 +38,31 @@ Los pasos y las convenciones de nomenclatura descritos en esta serie de vídeos 
 
 En este vídeo, aprenderá los primeros pasos para sincronizar un repositorio Git administrado por el cliente con el repositorio Git de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31371/?captions=spa&quality=12)
 
 ## Estrategia básica de ramas {#branching-strategy}
 
 En este vídeo, aprenderá estrategias básicas de ramificación.
 
->[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31370/?captions=spa&quality=12)
 
 ## Desarrollo de ramas de funciones {#feature-development}
 
 Utilice una rama de funciones para aislar los cambios de código en un repositorio de Git administrado por el cliente y sincronizar con el repositorio de Git de Cloud Manager para utilizar una canalización que no sea de producción para las pruebas de calidad y validación del código.
 
->[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31369/?captions=spa&quality=12)
 
 ## Implementación de producción {#production-deployment}
 
 Prepare código para una versión de producción en un repositorio Git administrado por el cliente y sincronícelo con el repositorio Git de Cloud Manager para implementarlo en entornos de ensayo y producción.
 
->[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31368/?captions=spa&quality=12)
 
 ## Sincronización de etiquetas de versión {#sync-tags}
 
 Para proporcionar visibilidad sobre qué código se ha implementado en los entornos de ensayo y producción, sincronice las etiquetas de versión de un repositorio de Git de Cloud Manager en un repositorio de Git administrado por el cliente.
 
->[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31367/?captions=spa&quality=12)
 
 ## Recursos adicionales {#additional-resources}
 
