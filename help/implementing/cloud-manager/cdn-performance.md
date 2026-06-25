@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
+source-git-commit: 91b880dcff55531c49229eb034348ad9cf91dca2
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ El panel CDN está disponible en la página de información general de cada prog
 
    ![Página de mis programas](assets/my-programs.png)
 
-1. En la página **Resumen del programa** de tu programa, desplázate hacia abajo por debajo de las tarjetas de **Entornos** y **Canalizaciones** para ver la tarjeta de **Rendimiento**.
+1. Para ver la tarjeta **Rendimiento**, desplácese hacia abajo por debajo de las tarjetas **Entornos** y **Canalizaciones** en la página **Información general del programa** de su programa.
 
    ![Rendimiento](assets/cdn-performance-overview.png)
 
@@ -52,11 +52,11 @@ Para obtener sugerencias sobre cómo mejorar el rendimiento de su CDN, seleccion
 
 ![recomendaciones de CDN](assets/cdn-performance-recommendations.png)
 
-Haga clic en comillas angulares junto a cualquier recomendación de la lista para ver detalles sobre los pasos que debe seguir para mejorar y la causa del problema.
+Haga clic en comillas angulares junto a cualquier recomendación de la lista para ver detalles sobre los pasos de mejora necesarios y la causa del problema.
 
 ## Definición de visita en caché {#cache-hit}
 
-La proporción de visitas de caché mide cuántas solicitudes de contenido puede rellenar correctamente una caché en comparación con el número de solicitudes que recibe. Cuanto mayor sea la proporción de visitas de caché, mejor será el rendimiento de una CDN.
+La proporción de visitas de caché mide cuántas solicitudes de contenido puede rellenar correctamente una caché en comparación con el número de solicitudes que recibe. Una mayor proporción de visitas de caché indica un mejor rendimiento de CDN.
 
 >[!TIP]
 >
@@ -68,7 +68,7 @@ Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 
 * **Visita**: se han solicitado datos de la caché y se han encontrado.
 * **Faltante**: se han solicitado datos de la caché y no se han encontrado.
-* **Paso**: se solicitan datos de la caché y se establece que no se almacenarán en caché estos datos en ningún caso.
+* **Paso**: los datos se solicitan desde la caché y se establece para no almacenarlos en caché.
 * **Otro**: todas las solicitudes de datos de la caché que no coinciden con ningún otro caso.
 
 Las métricas de caché se actualizan cada 24 horas.
