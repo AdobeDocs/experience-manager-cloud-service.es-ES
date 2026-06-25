@@ -254,7 +254,7 @@ El servidor MCP de Dispatcher está empaquetado con AEM Dispatcher SDK. Permite 
 
 A diferencia de la aptitud de Dispatcher, el servidor MCP de Dispatcher expone solo herramientas: siete herramientas MCP y sin peticiones de datos ni recursos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3491951?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3491964?captions=spa&quality=12&learn=on)
 
 ### Requisitos previos {#prerequisites}
 
