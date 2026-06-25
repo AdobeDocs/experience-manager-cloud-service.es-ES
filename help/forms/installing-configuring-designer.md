@@ -5,10 +5,12 @@ keywords: Instalar Designer, Instalar Forms Designer, Requisitos para instalar F
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+hide: true
+index: false
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 784061cac8964a4f86690c84d106396994f987b7
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '461'
 ht-degree: 99%
 
 ---
