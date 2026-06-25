@@ -3,9 +3,9 @@ title: Uso de la habilidad de migración de AEM Cloud
 description: Referencia para cada patrón de migración admitido por la aptitud de migración de AEM Cloud, incluida la conversión de la configuración de OSGi, las opciones de fuentes de BPA y las directrices de administración de sesiones.
 feature: Migration
 role: Developer
-source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
+source-git-commit: 7ea634871fc1655e5f0ec5b3fb88edbb0f317249
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Cada sesión de migración sigue esta secuencia:
 
 1. **Asigne un nombre al patrón**: especifique un patrón (por ejemplo, `scheduler`)
 2. **Proporcione resultados**: desde un archivo CSV de BPA, CAM a través de MCP o rutas de acceso a archivos específicas
-3. **El agente lee las reglas de transformación**: la aptitud lee el módulo de prácticas recomendadas correspondiente antes de realizar cambios en el código
+3. **El agente lee las reglas de transformación**: la aptitud lee las reglas de transformación relevantes de la aptitud de `code-assessment` acompañante antes de realizar cualquier cambio de código
 4. **Primer lote de cinco**: el agente transforma hasta cinco resultados e informa de los cambios
 5. **Usted revisa y continúa**: después de revisar cada lote, responda `continue` para continuar con el siguiente
 
