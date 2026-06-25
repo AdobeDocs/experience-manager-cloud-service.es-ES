@@ -5,9 +5,9 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
+source-git-commit: 884f991bbc067b8c2d628600c18a89e5950df17c
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '473'
 ht-degree: 13%
 
 ---
@@ -46,9 +46,9 @@ El gráfico de líneas de un año seleccionado incluye puntos de datos para cada
 
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Mueva el cursor sobre un punto de datos del gráfico de líneas para mostrar los valores específicos de ese punto.
+   * Para mostrar los valores específicos de un punto de datos, mueva el cursor sobre él en el gráfico de líneas.
    * Debajo del año del gráfico de líneas, haga clic en el icono **Descargar** para guardar un archivo de imagen PNG del gráfico de líneas.
-   * Haga clic en el nombre de una métrica para ver únicamente los datos de esa métrica. O bien, presione `Shift` en el teclado mientras selecciona o anula la selección de uno o más nombres de métricas.
+   * Haga clic en el nombre de una métrica para ver sus datos. Como alternativa, mantenga presionado `Shift` en el teclado mientras selecciona o anula la selección de uno o más nombres de métricas.
 
 ## Análisis de eventos {#event-analysis}
 
@@ -60,12 +60,12 @@ Cada incidente tiene un intervalo de tiempo, una causa y un conjunto de comentar
 
 ## Actualizar el intervalo de los informes de SLA {#refresh}
 
-Los informes de SLA le permiten conocer el rendimiento de su entorno de producción de AEM y están actualizados, pero no son instantáneos. La generación de informes de SLA se produce mensualmente y se genera para los nuevos programas que se han marcado como `Production previous month`. No es instantáneo. Debido a este retraso, tenga en cuenta lo siguiente al revisar el informe de SLA:
+Los informes de SLA proporcionan información sobre el rendimiento del entorno de producción de AEM y son actuales, pero no instantáneos. La generación de informes de SLA se produce mensualmente y se genera para los nuevos programas que se han marcado como `Production previous month`. No es instantáneo. Debido a este retraso, tenga en cuenta lo siguiente al revisar el informe de SLA:
 
 * El SLA del que se informa es el que existía a principios de mes, incluso si SLA había cambiado durante ese mes.
 * Si no había ningún SLA a principios de mes porque el programa no existía, se aplica el SLA que existía en la fecha de creación del programa.
 
 ## Previsualizar entornos {#preview}
 
-El entorno de vista previa está diseñado como una herramienta para que los autores de contenido comprueben la experiencia final del contenido antes de publicarlo. Debido a esta funcionalidad, los entornos de vista previa no están diseñados con alta disponibilidad y no tienen una SLA asociada.
+El entorno de vista previa está diseñado como una herramienta para que los autores de contenido revisen el contenido antes de publicarlo. Debido a esta funcionalidad, los entornos de vista previa no están diseñados con alta disponibilidad y no tienen una SLA asociada.
 
