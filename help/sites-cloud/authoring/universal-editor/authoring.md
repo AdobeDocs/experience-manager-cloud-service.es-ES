@@ -394,7 +394,7 @@ Pulse o haga clic en el icono **Propiedades de página** de la barra de herramie
 >[!NOTE]
 >
 >* El botón **Propiedades de página de AEM** solo funciona para páginas, no para Fragmentos de contenido.
->* El botón solo se muestra cuando la página remota tiene una [conexión con el protocolo ](/help/implementing/universal-editor/component-definition.md#plugins) `aem` o `xwalk` y se puede resolver una ruta de acceso de página única desde el archivo editable actual.
+>* El botón solo se muestra cuando la página remota tiene una [conexión con el protocolo &#x200B;](/help/implementing/universal-editor/component-definition.md#plugins) `aem` o `xwalk` y se puede resolver una ruta de acceso de página única desde el archivo editable actual.
 
 ### Abrir en el administrador del sitio {#sites-console}
 
