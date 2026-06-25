@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: c75fb9425b72dea9130ed24cc2a098b56f23d13d
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 96%
+source-wordcount: '1197'
+ht-degree: 83%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 96%
 
 <!-- badge: label="Beta" type="Positive" -->
 
-Para utilizar el Asistente de IA en AEM (Adobe Experience Manager), es obligatorio tener permiso para acceder al conocimiento del producto a través del asistente de IA. Este permiso está activado de forma predeterminada.
+Para utilizar el Asistente de IA en AEM (Adobe Experience Manager), es obligatorio tener permiso para acceder al conocimiento del producto a través del asistente de IA. Adobe activa este permiso de forma predeterminada.
 
 Si desea controlar quién puede acceder al conocimiento del producto, envíe un correo electrónico a [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) desde la dirección de correo electrónico asociada a su Adobe ID. Adobe puede habilitar el control de acceso a nivel de usuario. Cuando está habilitado, el administrador puede otorgar acceso a nivel de usuario siguiendo los pasos que se describen a continuación.
 
-Si ha solicitado el control de acceso en el nivel de usuario, su organización debe incluirse a través de Adobe Admin Console. Un administrador de productos crea (o elige) un grupo de usuarios y le concede el nuevo permiso “Asistente de IA”. Cualquier persona añadida a ese grupo accede instantáneamente al asistente de IA en AEM. Si el objetivo es la disponibilidad en toda la compañía, el administrador simplemente asigna todos los usuarios a ese grupo.
+Si ha solicitado el control de acceso en el nivel de usuario, su organización debe incluirse a través de Adobe Admin Console. Un administrador de productos crea (o elige) un grupo de usuarios y le concede el nuevo permiso “Asistente de IA”. Cualquier persona añadida a ese grupo accede instantáneamente al asistente de IA en AEM. Si el objetivo es la disponibilidad en toda la compañía, el administrador asigna todos los usuarios a ese grupo.
 
-Desde la perspectiva de un empleado, el proceso es sencillo: identifique al administrador de productos de Adobe Experience Manager en su organización y solicite que le añadan al grupo de usuarios con la IA habilitada. Una vez que aparezca en ese grupo, el icono del Asistente se mostrará automáticamente la próxima vez que inicie sesión.
+Para los usuarios, el proceso es sencillo: identifique al administrador de productos de Adobe Experience Manager en su organización y solicite que se le añada al grupo de usuarios con IA habilitada. Una vez agregado a ese grupo, el icono Ayudante aparecerá automáticamente la próxima vez que inicie sesión.
 
-Los administradores deben tener en cuenta el control normal de Cloud Manager. Mantenga los derechos de administrador de productos en Admin Console para crear perfiles, administrar grupos de usuarios o editar permisos. Si los usuarios también necesitan la función integrada **Crear ticket de soporte** del Asistente, añada la función estándar **Administrador de asistencia** (función estándar de Admin Console) a las mismas personas o grupos.
+Los administradores deben seguir el gobierno normal de Cloud Manager. Para crear perfiles, administrar grupos de usuarios o editar permisos, mantenga los derechos de administrador de productos en Admin Console. Si los usuarios también necesitan la función integrada **Crear ticket de soporte** del Asistente, añada la función estándar **Administrador de asistencia** (función estándar de Admin Console) a las mismas personas o grupos.
 
 El proceso de configuración del Asistente de IA en AEM consta de los siguientes pasos:
 
@@ -45,9 +45,9 @@ Antes de empezar, asegúrese de cumplir los siguientes requisitos previos:
 
 **Consideraciones sobre la configuración**
 
-* Los permisos creados en Cloud Manager pueden tardar dos minutos en mostrarse en Admin Console para la configuración de permisos.
+* Tiempo de procesamiento: Los recursos creados en Cloud Manager tardan hasta 2 minutos en mostrarse en Admin Console para la configuración de permisos.
 * Múltiples perfiles: los usuarios pueden formar parte de varios perfiles y los permisos se combinan a partir de todos los perfiles asignados.
-* Ámbito de organización: algunos permisos pueden aplicarse a nivel de organización en todos los programas.
+* Ámbito de organización: algunos permisos se aplican a nivel de organización en todos los programas.
 * Perfiles predefinidos: no elimine perfiles de permiso predefinidos desde Admin Console.
 
 
@@ -133,7 +133,7 @@ Puede utilizar un grupo de usuarios de AEM existente si cumple los requisitos de
 
 >[!TAB Añadir usuarios individuales]
 
-1. En la página **Grupos de usuarios**, en la tabla **Nombre de grupo**, haga clic en el nombre del grupo de usuarios que acaba de crear o en un nombre de grupo de usuarios existente.
+1. En la página **Grupos de usuarios**, en la tabla **Nombre de grupo**, haga clic en el nombre del grupo de usuarios que acaba de crear o en uno existente.
 
    ![Página Grupos de usuarios, en la que se muestra el Asistente de IA en el nombre del grupo de usuarios de AEM de la tabla](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
 
@@ -193,7 +193,7 @@ Haga que un usuario del grupo asignado realice lo siguiente:
 
 1. Inicie sesión en AEM.
 2. Compruebe que las funciones del Asistente de IA son accesibles.
-3. Pruebe la funcionalidad del Asistente de IA para garantizar la activación adecuada.
+3. Para garantizar la activación adecuada, pruebe la funcionalidad del Asistente de IA.
 
 ## Ver también
 
