@@ -5,11 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-hide: true
-source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
+source-git-commit: 8f04036493722f73fb29416b51dae6d64633249c
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 86%
+source-wordcount: '1429'
+ht-degree: 82%
 
 ---
 
@@ -142,7 +141,7 @@ Obtenga información de envío para los recursos que se envían con Dynamic Medi
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Requisitos previos {#prereqs-dynamic-media-delivery-reports}
@@ -187,7 +186,7 @@ Para eliminar o descargar el informe de entrega de Dynamic Media como CSV, consu
 
 ## Visualización y descarga de un informe existente {#View-and-download-existing-report}
 
-Los informes existentes se muestran en la pestaña **Informes ejecutados**. Haga clic en **Informes** y seleccione **Informes ejecutados** para ver todos los informes creados con el estado **completado**, lo que indica que están listos para descargarse. Para descargar el informe en formato CSV o eliminarlo, seleccione la fila del informe. A continuación, seleccione **Descargar CSV** o **Eliminar**.
+Los informes existentes se muestran en la ficha **Informes ejecutados**. Haga clic en **Informes** y seleccione **Informes ejecutados** para ver todos los informes creados con el estado **completado**, lo que indica que están listos para descargarse. Para descargar el informe en formato CSV o eliminarlo, seleccione la fila del informe. Luego selecciona **Descargar CSV** o **Eliminar**.
 ![ver y descargar informes existentes](/help/assets/assets/view-download-existing-report.png)
 
 
@@ -226,7 +225,7 @@ Los informes programados se muestran en la ficha **Informes programados** de una
 
 ### Reanudar programación {#resume-schedule}
 
-Para reanudar la programación cancelada, seleccione la fila del informe y haga clic en **Reanudar programación**. Cuando se reanuda, las siguientes entradas en tiempo de ejecución se muestran de nuevo y el estado se muestra en curso.
+Para reanudar la programación cancelada, seleccione la fila del informe y haga clic en **Reanudar programación**. Cuando se reanuda, las siguientes entradas de tiempo de ejecución se muestran de nuevo y el estado es En curso.
 ![reanudar programación](/help/assets/assets/resume-schedule.png)
 
 >[!NOTE]
