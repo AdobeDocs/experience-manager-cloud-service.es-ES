@@ -1,11 +1,12 @@
 ---
 title: Nuevo visor de vídeo
-description: El nuevo Visor de vídeo de Dynamic Media ofrece una experiencia de reproducción de vídeo mejorada
+description: El nuevo visualizador de vídeo de Dynamic Media ofrece una experiencia de reproducción de vídeo mejorada con rendimiento, accesibilidad y capacidad de configuración mejorados.
 role: User
-source-git-commit: 1ee4f1352a0fe1e8d1f2fd7b79555ad4144bb02c
+exl-id: c819c6b3-bb7c-4d0e-b745-62b42f4ecd5f
+source-git-commit: 92b48e3413b27b664ee38ec43b28d5d881f0bf40
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 2%
+source-wordcount: '1477'
+ht-degree: 3%
 
 ---
 
@@ -139,6 +140,7 @@ Los modificadores de visor permiten controlar la carga de recursos, el comportam
 | `isletterboxed=true/false` | Controla si el vídeo está en formato buzón o estirado. |
 | `customcss` | Especifica un archivo CSS personalizado para el estilo del visor. |
 | `transition` | Especifica el comportamiento de mostrar u ocultar la transición para los controles de visor. |
+| `mode=smartcrop` | Muestra la salida recortada inteligente del vídeo. |
 
 Los modificadores se especifican como parámetros de consulta en el campo **Modificadores del visor**.
 
