@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo configurar las claves de cifrado p
 feature: Security
 role: Admin
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: 753542017cb92871a2b22a53cb9de0f38324872c
+source-git-commit: 424c679f6da1aaa0f40df598f4d0d1517a3e8c5b
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 36%
+source-wordcount: '1350'
+ht-degree: 32%
 
 ---
 
@@ -67,7 +67,11 @@ Antes de continuar con el resto de esta guía, inicie sesión en su CLI con `az 
 ## Iniciar el proceso de configuración de CMK para AEM as a Cloud Service {#request-cmk-for-aem-as-a-cloud-service}
 
 Debe solicitar la configuración de claves administradas por el cliente (CMK) para su entorno de AEM as a Cloud Service a través de la interfaz de usuario de. Para ello, vaya a la interfaz de usuario de AEM Home Security, en la sección **Claves administradas por el cliente**.
-A continuación, puede iniciar el proceso de incorporación haciendo clic en el botón **Iniciar incorporación**.
+La página enumera todos los programas compatibles con CMK. A continuación, puede iniciar el proceso de incorporación haciendo clic en el botón Habilitar programa.
+
+![Habilitar un programa para usar CMK](./assets/cmk/step0.png)
+
+Si CMK se ha habilitado en Cloud Manager mientras se crea o edita un programa, haga clic en el botón Iniciar incorporación.
 
 ![Iniciar la incorporación de un sitio web mediante la interfaz de usuario de CMK](./assets/cmk/step1.png)
 
@@ -197,17 +201,27 @@ Revocar o deshabilitar el acceso a la aplicación Key Vault, key o CMK puede cau
 
 Si decide revocar el acceso de AEM as a Cloud Service a sus datos, puede hacerlo eliminando la función de usuario asociada a la aplicación de Key Vault dentro de Azure.
 
-## Pasos siguientes {#next-steps}
+## Configuración de CMK de ensayo {#stage-cmk-setup}
 
-Después de proporcionar la información necesaria en la interfaz de usuario de CMK, Adobe inicia el proceso de configuración para el entorno de AEM as a Cloud Service. Este proceso requiere tiempo y se le notifica una vez que se ha completado.
+Después de proporcionar la información necesaria en la interfaz de usuario de CMK, Adobe inicia el proceso de configuración del entorno de ensayo de AEM as a Cloud Service. Este proceso requiere tiempo y se le notifica una vez que se ha completado.
 
-![Espere a que Adobe configure el entorno.](./assets/cmk/step4.png)
+![Espere a que Adobe configure el entorno de ensayo](./assets/cmk/step4.png)
+
+## Configuración de CMK de producción {#prod-cmk-setup}
+
+Una vez completada la configuración de fase, debe realizar una validación completa de extremo-2-extremo. Si todo funciona correctamente, debe confirmar que el entorno de producción se puede configurar en consecuencia.
+
+![Confirmar el entorno de producción](./assets/cmk/step5.png)
+
+Después de confirmarlo en la interfaz de usuario de CMK, Adobe inicia el proceso de configuración para el entorno de AEM as a Cloud Service Prod. Este proceso requiere tiempo y se le notifica una vez que se ha completado.
+
+![Espere a que Adobe configure el entorno de producción](./assets/cmk/step6.png)
 
 
 ## Completar la configuración de CMK {#complete-the-cmk-setup}
 
 Una vez completado el proceso de configuración, puede ver el estado de la configuración de CMK en la interfaz de usuario. También puede ver el almacén de claves y la clave de cifrado.
-![El proceso se ha completado](./assets/cmk/step5.png)
+![El proceso se ha completado](./assets/cmk/step7.png)
 
 ## Preguntas y asistencia {#questions-and-support}
 
