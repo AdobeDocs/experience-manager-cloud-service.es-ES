@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 803ea9a7f1581589c6ac7402b268875923f00584
+source-git-commit: b2c13eead3670f0d708fa2c9adf9ac120d0470b9
 workflow-type: tm+mt
-source-wordcount: '3149'
+source-wordcount: '3165'
 ht-degree: 13%
 
 ---
@@ -394,17 +394,17 @@ Pulse o haga clic en el icono **Propiedades de página** de la barra de herramie
 >[!NOTE]
 >
 >* El botón **Propiedades de página de AEM** solo funciona para páginas, no para Fragmentos de contenido.
->* El botón solo se muestra cuando la página remota tiene una [conexión con el protocolo &#x200B;](/help/implementing/universal-editor/component-definition.md#plugins) `aem` o `xwalk` y se puede resolver una ruta de acceso de página única desde el archivo editable actual.
+>* El botón solo se muestra cuando la página remota tiene una [conexión con el protocolo ](/help/implementing/universal-editor/component-definition.md#plugins) `aem` o `xwalk` y se puede resolver una ruta de acceso de página única desde el archivo editable actual.
 
-### Acceder a la consola Sites {#sites-console}
+### Abrir en el administrador del sitio {#sites-console}
 
-La **extensión AEM Site Admin Extension** permite un acceso rápido a la página que se está editando en la [consola Sites de AEM](/help/sites-cloud/authoring/sites-console/introduction.md), lo que le permite navegar por el árbol del sitio o realizar acciones a nivel de página en la consola.
+El botón **Abrir en el administrador del sitio** permite un acceso rápido a la [consola Sitios de AEM](/help/sites-cloud/authoring/sites-console/introduction.md) (o a la [consola Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/experience-fragments.md) para `/content/experience-fragments` rutas) para mostrarte dónde existe la página que estás editando actualmente en tu estructura de contenido. Esto le permite navegar por el árbol del sitio o realizar acciones de nivel de página en la consola.
 
 ![Abrir en el icono de administración del sitio](assets/open-in-site-admin-icon.png)
 
 Toque o haga clic en el icono para abrir la consola Sitios en una nueva pestaña del explorador, navegando a la página que se encuentra actualmente en el editor.
 
-Para obtener información sobre cómo habilitar esta extensión, [consulte la documentación de Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+El botón está oculto para las rutas de acceso DAM (`/content/dam`) y cuando no se puede determinar una página de AEM única a partir de los editables actuales.
 
 ### Bloquear y desbloquear páginas {#locking-pages}
 
