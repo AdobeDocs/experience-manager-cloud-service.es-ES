@@ -3,7 +3,7 @@ title: Migración de código con asistencia de IA a AEM as a Cloud Service
 description: Descripción general de la aptitud de migración de AEM Cloud y MCP, una solución de agente de IA que lee los hallazgos de BPA y migra el código de AEM 6.x a AEM as a Cloud Service, patrón a patrón.
 feature: Migration
 role: Developer
-source-git-commit: 98298a088aa7c65826f6dbad2f4d16095e074524
+source-git-commit: 087017a7c0528f0806dfa8e8bd18a057a1763b14
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
@@ -50,7 +50,7 @@ La habilidad de migración es una habilidad del agente para IDE habilitados para
 | `htlLint` | `data-sly-test` advertencias de comparación de constantes redundantes en plantillas HTL |
 | Configuraciones de OSGi | `.cfg.json` conversión, ámbito de modo de ejecución y extracción de secretos/env-var de Cloud Manager |
 
-La aptitud delega todos los pasos de transformación de código en la aptitud `best-practices` complementaria. Ambos se distribuyen juntos como el paquete de aptitudes `aem-cloud-service`; instale el paquete una vez para obtener ambos.
+La aptitud delega todos los pasos de transformación de código en la aptitud `code-assessment` complementaria. Ambos se distribuyen juntos como el paquete de aptitudes `aem-cloud-service`; instale el paquete una vez para obtener ambos.
 
 ### Introducción {#getting-started-skill}
 

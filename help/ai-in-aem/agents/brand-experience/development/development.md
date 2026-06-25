@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo el agente de desarrollo de AEM ana
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 0b050b161b11b9b4cd58e575d69472d3173dfe94
+source-git-commit: fb0eaf8173b0cb5c81062424dbdfa723319df539
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 10%
+source-wordcount: '1574'
+ht-degree: 8%
 
 ---
 
@@ -46,7 +46,7 @@ Encuentre información acerca de sus programas y entornos de AEM, lo que incluye
 * búsqueda de los nombres de las canalizaciones y el estado de ejecución actual y los detalles de la etapa
 * recuperación de vínculos a registros que se pueden descargar
 
-### Ejemplos de peticiones de datos {#sample-cm-job-prompts}
+### Indicadores de ejemplo {#sample-cm-job-prompts}
 
 
 | Indicación | Resultado |
@@ -72,7 +72,7 @@ La principal ventaja es que se cometen menos errores de programación. A medida 
 
 Por lo tanto, en lugar de descubrir una restricción después de una configuración fallida, los propietarios del negocio y los administradores de implementación se dirigen a una programación válida en la misma conversación. Esto protege las ventanas empresariales críticas de las actualizaciones de mantenimiento automáticas, al tiempo que reduce las idas y venidas y la configuración incorrecta.
 
-### Ejemplos de peticiones de datos {#sample-updates-prompts}
+### Indicadores de ejemplo {#sample-updates-prompts}
 
 | Indicación | Resultado |
 | --- | --- |
@@ -84,7 +84,7 @@ Por lo tanto, en lugar de descubrir una restricción después de una configuraci
 
 
 
-## Trabajo de resolución de problemas de canalización  {#cloud-manager-pipeline-troubleshooting}
+## Trabajo de resolución de problemas de canalización {#cloud-manager-pipeline-troubleshooting}
 
 Este trabajo puede recuperar los estados de la canalización y ayudarle a solucionar problemas con los pasos de generación fallidos mediante la sugerencia de correcciones, lo que ahorra tiempo al depurar implementaciones de AEM as a Cloud Service en entornos de desarrollo, fase y producción. Examina los registros de generación y el código relacionado para recomendar una corrección que puede aplicar manualmente.
 
@@ -105,13 +105,13 @@ To access this agent, please refer to the [release notes](/help/release-notes/re
 
 Puede acceder al agente de desarrollo a través del asistente de IA que se encuentra en las interfaces de usuario, incluidas Cloud Manager o Experience Hub.
 
-1. Para empezar y abrir la página principal, haga clic en [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home).
+1. Para empezar y abrir la página principal, haga clic en [Adobe Experience Cloud](https://experience.adobe.com).
 
    ![Página principal de Adobe Experience Cloud](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. En el carril izquierdo, bajo el encabezado **Servicios**, haga clic en **Cloud Manager**.
 
-   ![Se ha seleccionado la lista desplegable que muestra el ajuste preestablecido Autor de contenido](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
+   ![El carril izquierdo de Experience Hub muestra Cloud Manager en el encabezado de Servicios](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
    >[!IMPORTANT]
    >
@@ -142,11 +142,43 @@ Puede acceder al agente de desarrollo a través del asistente de IA que se encue
 
    ![Mensaje del Asistente de IA y respuesta resultante](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-prompt-response.png)
 
+#### Solución de problemas directamente desde una ejecución de canalización fallida {#troubleshoot-with-ai-button}
+
+Cuando falla la ejecución de una canalización, Cloud Manager también muestra el botón **Solucionar problemas con IA** directamente en la página de ejecución de la canalización. Esta es la forma más rápida de iniciar una sesión de solución de problemas porque la ejecución fallida se pasa automáticamente como contexto al Ayudante de IA; no se requiere ninguna entrada de solicitud manual.
+
+1. En Cloud Manager, abra la ejecución de la canalización con errores. El banner de estado muestra **Error** y el botón **Solucionar problemas con IA** aparece cerca de la esquina superior derecha de la página.
+
+   ![Página de ejecución de canalización con errores que muestra el botón Solucionar problemas con IA y el panel del Asistente de IA con un análisis precargado](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-troubleshoot-button.png)
+
+1. Haga clic en **Solucionar problemas con IA**.
+
+   El panel Ayudante de IA se abre en el lado derecho de la pantalla. El asistente hace referencia automáticamente a la ejecución de la canalización fallida y comienza su análisis, identificando el paso que falla y sugiriendo una corrección que puede aplicar manualmente.
+
+1. Revise la respuesta y, si es necesario, continúe con la conversación en el cuadro de texto **Ayudante de IA** para hacer preguntas de seguimiento o solicitar más detalles.
+
+#### Solucionar problemas desde el widget de canalizaciones con errores del inicio de Experience {#troubleshoot-from-experience-home-widget}
+
+La página de inicio de Experience incluye un widget de **Canalizaciones con errores** que le ofrece una vista rápida de los errores de canalización en sus programas sin que sea necesario navegar primero a Cloud Manager. Cada fila del widget representa una canalización con errores y muestra el nombre de la canalización, la fecha y la hora de la última ejecución, la duración y el paso que falló. Hay un botón **Solucionar problemas con IA** disponible en línea para cada entrada.
+
+>[!NOTE]
+>
+>El widget de **canalizaciones con errores** solo está visible cuando el rol **Administrador y TI** está seleccionado en el Inicio de experiencia. Si no ve el widget, verifique que su rol esté establecido en **Admin &amp; IT** usando el selector de rol en la esquina superior derecha de la página.
+
+![Widget de canalizaciones con errores en la página principal de Experience, que muestra una entrada de canalización con errores y un botón Solucionar problemas con IA](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-failed-pipelines-widget.png)
+
+1. Abra la [Página de inicio de Experience](https://experience.adobe.com), haga clic en **Experience Manager** y desplácese hasta el widget de **Canalizaciones con errores**.
+
+1. Busque la canalización que desee investigar y luego haga clic en **Solucionar problemas con IA** en esa fila.
+
+   El panel Asistente de IA se abre con la ejecución de la canalización fallida precargada como contexto. El asistente comienza su análisis automáticamente, identificando la causa raíz y sugiriendo una corrección.
+
+1. Revise la respuesta y, si es necesario, continúe con la conversación en el cuadro de texto **Ayudante de IA** para hacer preguntas de seguimiento o solicitar más detalles.
+
 ### Permisos {#permissions}
 
 El trabajo de solución de problemas de canalización requiere la función Cloud Manager - Desarrollador o Cloud Manager - Administrador de programas.
 
-### Ejemplos de peticiones de datos {#sample-pipeline-prompts}
+### Indicadores de ejemplo {#sample-pipeline-prompts}
 
 | Indicación | Resultado |
 | --- | --- |
@@ -160,8 +192,6 @@ El trabajo de solución de problemas de canalización requiere la función Cloud
 La resolución de problemas de canalización funciona en el paso Generar y prueba de unidad y el paso Escaneo de código en la implementación de pila completa y las canalizaciones de calidad de código. También admite [canalizaciones de configuración de nivel web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines).
 
 Para otros tipos y pasos de canalización, depure los errores descargando e inspeccionando los registros. Consulte [Registros de acceso y descarga](/help/implementing/cloud-manager/manage-logs.md) para obtener más información.
-
-
 
 ## Trabajo de resolución de problemas de replicación (Beta) {#replication-troubleshooting-job}
 

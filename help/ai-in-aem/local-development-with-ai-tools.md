@@ -4,9 +4,9 @@ description: Aprenda a configurar herramientas de codificación de IA con contex
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 293b9136ee5249ee435b089b49dcaab2ca45fea8
+source-git-commit: 32461fe79a72c2a5d83fd3518d84807427112763
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '2100'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Revise los [tutoriales de desarrollo asistido por IA](https://experienceleague.a
 
 >[!TIP]
 >
->Los servidores MCP remotos de AEM Cloud Service también son útiles para el desarrollo local. Obtenga más información sobre ellos en el [artículo sobre el uso de MCP con Cloud Service].(/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
+>Los servidores MCP remotos de AEM Cloud Service también son útiles para el desarrollo local. Obtenga más información sobre ellos en el [artículo sobre el uso de MCP con Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
 
 ## AGENTS.md {#agentsmd}
 
@@ -57,7 +57,8 @@ Adobe publica las aptitudes de AEM as a Cloud Service en el repositorio **[adobe
 | `create-component` | Andamiajes para un componente completo de AEM: definición de componente, XML de diálogo, plantilla HTL, modelo Sling, pruebas unitarias y clientlibs |
 | `dispatcher` | Asistente de configuración HTTPD de Apache y Dispatcher con tecnología de IA que cubre la creación de configuraciones, el asesoramiento técnico, la respuesta a incidentes, la optimización del rendimiento y la protección de la seguridad |
 | `migration` | Migra AEM 6.x, AMS o código Java local y configuraciones OSGi a AEM as a Cloud Service, impulsado por los resultados de [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) de una exportación CSV o [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) |
-| `workflow` | Este es el único punto de entrada para todas las aptitudes del flujo de trabajo de AEM as a Cloud Service. Abarca el diseño del modelo de flujo de trabajo, el paso de proceso personalizado y el desarrollo del selector de participantes, la configuración del lanzador, el activador del flujo de trabajo y la compatibilidad con la producción, incluida la depuración de flujos de trabajo atascados/fallidos, la activación de incidentes con registros de Cloud Manager, el análisis del pool de hilos y los diagnósticos de trabajo de Sling para el motor de flujo de trabajo de Granite. |
+| `workflow` | Este es el único punto de entrada para todas las aptitudes del flujo de trabajo de AEM as a Cloud Service. Abarca el diseño del modelo del flujo de trabajo, el desarrollo del paso del proceso personalizado y el selector de participantes, la configuración del lanzador, el activador del flujo de trabajo y la compatibilidad con la producción, incluida la depuración de flujos de trabajo atascados/fallidos, la trituración de incidentes con registros de Cloud Manager, el análisis del grupo de hilos y los diagnósticos del trabajo de Sling para el motor de flujo de trabajo de Granite. |
+| `code-assessment` | **(Beta)** Detecta y corrige las infracciones de las prácticas recomendadas de AEM, la calidad del código y los problemas de corrección en el proyecto local, notificando los resultados y aplicando correcciones quirúrgicas |
 
 ### Instalar aptitudes {#install-skills}
 
@@ -73,14 +74,14 @@ Elija el método que coincida con la herramienta de codificación de IA. La inst
 /plugin install aem-cloud-service@adobe-skills
 ```
 
-#### Aptitudes Npx {#npx-skills}
+#### Aptitudes de NPX {#npx-skills}
 
 ```bash
 # Install all available skills
 npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-service --all
 ```
 
-#### Actualización (extensión CLI de GitHub) {#upskill-github-cli-extension}
+#### Actualizar (extensión CLI de GitHub) {#upskill-github-cli-extension}
 
 ```bash
 # Install the gh-upskill extension (one-time setup)
@@ -90,11 +91,11 @@ gh extension install ai-ecoverse/gh-upskill
 gh upskill adobe/skills --path plugins/aem/cloud-service --all
 ```
 
-### Use la habilidad de secure-agents-md {#use-the-ensure-agents-md-skill}
+### Use la habilidad de Asegúrese de que los agentes estén listos para usar {#use-the-ensure-agents-md-skill}
 
 Después de instalar la aptitud, abra el asistente de IA en cualquier proyecto de AEM as a Cloud Service que aún no tenga `AGENTS.md`. La aptitud se ejecuta automáticamente antes de procesar la primera solicitud, lo que crea ambos archivos en la raíz del proyecto sin requerir una invocación explícita.
 
-### Uso de la aptitud create-component {#use-the-create-component-skill}
+### Uso de la aptitud Crear-componente {#use-the-create-component-skill}
 
 En el primer uso, la aptitud detecta automáticamente `project`, `package` y `group` de `pom.xml` y de los componentes existentes, y le pide que confirme los valores detectados. Luego crea `.aem-skills-config.yaml` en la raíz del proyecto. No se requiere ninguna configuración manual antes del primer uso.
 
@@ -153,6 +154,36 @@ Invoque la aptitud de Dispatcher para cualquier trabajo de configuración HTTPD 
 Para solicitudes amplias o iniciales, empiece con la subaptitud `workflow-orchestrator`. Para un trabajo específico, describa la preocupación específica y las rutas de aptitudes al especialista adecuado.
 
 La habilidad del despachante gestiona la orquestación y la orientación consultiva. El servidor MCP de Dispatcher, que se describe en la sección siguiente, proporciona las siete herramientas de validación y tiempo de ejecución que la aptitud utiliza cuando necesita pruebas locales.
+
+### Uso de la aptitud para la evaluación de código {#use-the-code-assessment-skill}
+
+**(Beta)** La aptitud de `code-assessment` detecta, revisa y corrige problemas de corrección y calidad del código en un proyecto de AEM as a Cloud Service en su totalidad dentro del área de trabajo local. Describa el problema y la aptitud dirigirá la solicitud al flujo de trabajo de remediación adecuado.
+
+Las comprobaciones admitidas incluyen la modernización de la inyección de dependencias del modelo Sling, la actualización de dependencias Maven obsoletas, la adición de tiempos de espera que faltan a llamadas HTTP salientes, el límite de consultas ilimitadas, programadores Sling, detectores de cambios de recursos, las API de replicación y Assets y el control de eventos JCR u OSGi, con más agregados a lo largo del tiempo. Según el problema, la habilidad aplica una corrección mecánica directamente o le guía a través de una que necesita una llamada de juicio.
+
+Para una revisión amplia o por primera vez, pida a la habilidad que evalúe todo el proyecto: ejecuta cada detector, informa de todos los hallazgos y aplica correcciones de código de a un patrón a la vez.
+
+Para empezar, abra un nuevo chat de agente en su proyecto de AEM as a Cloud Service.
+
+**1. Revise su proyecto.** Pedir un informe. La aptitud ejecuta su analizador y devuelve los resultados en línea, agrupados por patrón y gravedad, con un plan de corrección sugerido. No se cambia ningún código en esta fase.
+
+```
+scan my AEM project and report any code-quality issues
+```
+
+Para una invocación más explícita, asigne un nombre a la aptitud directamente:
+
+```
+/code-assessment review my code for AEM as a Cloud Service issues
+```
+
+**2. Aplicar correcciones, patrón a patrón.** Pida a la aptitud que corrija un patrón específico. Realiza ediciones quirúrgicas y verifica que compilan. Las correcciones mecánicas se aplican directamente; las guiadas le guían a través de cada decisión.
+
+```
+apply unbounded-query
+```
+
+Nunca se confirma ni se inserta: se revisa la comparación de diferencias y la confirmación. Las correcciones grandes se ejecutan en lotes reanudables; responda `apply <pattern>` para continuar.
 
 ## Servidor MCP de Quickstart de AEM {#aem-quickstart-mcp-server}
 
