@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo el agente de desarrollo de AEM ana
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: fb0eaf8173b0cb5c81062424dbdfa723319df539
+source-git-commit: 8495dd5cc4629dd960f6c5c31d9d50c126d6d750
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1547'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,7 @@ Admite los siguientes trabajos, a los que se puede acceder mediante la interfaz 
 
 * Trabajo de Cloud Manager: operaciones de solo lectura, incluida la lista de programas y entornos, y el estado de la canalización
 * Trabajo de resolución de problemas de canalización: depurar canalizaciones con errores
-* Trabajo de administración de horas tranquilas y períodos libres de actualización (disponibilidad limitada): ver, crear y editar horas silenciosas y períodos libres de actualización
+* Trabajo de Gestión de Horas Silenciosas y Actualización de Períodos Libres: Ver, crear y editar Horas Silenciosas y Actualizar Períodos Libres
 * Trabajo de resolución de problemas de replicación (Beta): depure los problemas relacionados con la replicación, como las colas bloqueadas.
 
 >[!NOTE]
@@ -62,10 +62,6 @@ Encuentre información acerca de sus programas y entornos de AEM, lo que incluye
 
 ## Trabajo de administración de horas tranquilas y períodos libres de actualización {#control-updates-job}
 
->[!AVAILABILITY]
->
->Esta función se encuentra en una fase de disponibilidad limitada y se implementará en las próximas semanas. Correo electrónico [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com) para acceso inmediato.
-
 Consulte, cree y edite Horas tranquilas y Actualice periodos libres directamente a través del asistente de IA de AEM.
 
 La principal ventaja es que se cometen menos errores de programación. A medida que realiza una solicitud, el asistente le guía a través de lo que es posible y marca los límites aplicables, como el límite de tres períodos, el espacio obligatorio de una semana entre períodos y las ventanas de exclusión de mantenimiento planificadas que no se pueden programar.
@@ -88,7 +84,7 @@ Por lo tanto, en lugar de descubrir una restricción después de una configuraci
 
 Este trabajo puede recuperar los estados de la canalización y ayudarle a solucionar problemas con los pasos de generación fallidos mediante la sugerencia de correcciones, lo que ahorra tiempo al depurar implementaciones de AEM as a Cloud Service en entornos de desarrollo, fase y producción. Examina los registros de generación y el código relacionado para recomendar una corrección que puede aplicar manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478010?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -99,7 +95,7 @@ To access this agent, please refer to the [release notes](/help/release-notes/re
 
 -->
 
-[Siga un tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
+[Siga un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
 
 ### Acceso al agente de desarrollo a través de Cloud Manager {#how-to-access-the-agent}
 
