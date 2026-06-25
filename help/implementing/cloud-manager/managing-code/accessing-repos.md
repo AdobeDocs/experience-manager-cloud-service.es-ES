@@ -5,10 +5,10 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 0c156a295dc49d7e12f4e4f9ce1743d06c7fcdaf
+source-git-commit: acc4f8187a8bf87168dc568df4470ae460af9016
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 96%
+source-wordcount: '399'
+ht-degree: 67%
 
 ---
 
@@ -19,14 +19,14 @@ Obtenga información sobre cómo acceder y gestionar sus repositorios de Git adm
 
 ## Acceder a la información del repositorio desde la página Información general {#overview-page}
 
-Cloud Manager facilita la recuperación de la información de acceso al repositorio para los repositorios administrados por Adobe mediante **Acceder a la info del repositorio** disponible en la tarjeta **Canalizaciones**.
+Cloud Manager le permite recuperar la información de acceso al repositorio de los repositorios administrados por Adobe mediante **Acceder a la info del repositorio** desde la tarjeta **Canalizaciones**.
 
 El cuadro de diálogo **Información del repositorio** le permite ver la siguiente información de acceso para los repositorios administrados por Adobe:
 
 * El nombre de usuario de Git.
 * La contraseña de Git.
 * La dirección URL del repositorio de Git de Cloud Manager.
-* Comandos de Git prediseñados para añadir rápidamente un remoto a su repositorio Git y enviar códigos.
+* Comandos Git creados previamente para añadir un remoto al repositorio Git y código push.
 
   ![Ventana Información del repositorio](assets/repository-info.png)
 
@@ -51,12 +51,12 @@ La función **Acceder a la info del repositorio** es visible para los usuarios c
 1. A la derecha del campo **Contraseña**, haga clic en el ![icono Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar la contraseña en el portapapeles.
 
    * La generación de la contraseña invalida la anterior.
-   * Cloud Manager no guarda la contraseña. Es responsabilidad suya guardar la contraseña de forma segura.
-   * Como Cloud Manager no guarda la contraseña, si la olvida, deberá generar una nueva.
+   * Cloud Manager no guarda la contraseña. Guarde la contraseña de forma segura.
+   * Como Cloud Manager no guarda la contraseña, si se coloca de forma incorrecta, debe generar una nueva.
 
    ![Copiar la contraseña del cuadro de diálogo Información del repositorio](/help/implementing/cloud-manager/managing-code/assets/repository-copy-password.png)
 
-Con estas credenciales, puede clonar una copia local del repositorio, realizar cambios en ese repositorio local y, luego, confirmar cualquier cambio de código en el repositorio remoto de códigos en Cloud Manager.
+Con estas credenciales, puede clonar una copia local del repositorio, realizar cambios en ese repositorio local y, cuando se complete, volver a enviar los cambios de código al repositorio de código remoto en Cloud Manager.
 
 ## Acceder a la información del repositorio desde la página Repositorios {#repositories-window}
 
@@ -66,4 +66,4 @@ La función **Acceder a la info del repositorio** también está disponible en l
 
 Puede revocar una contraseña de acceso en cualquier momento.
 
-Para ello, [cree un vale de asistencia para esta solicitud](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&support-tab=home&lang=es#support). El vale tiene prioridad alta y debería revocarse en un día.
+Para ello, [cree un vale de asistencia para esta solicitud](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&support-tab=home&lang=es#support). El ticket se procesa con alta prioridad y la contraseña generalmente se revoca en un plazo de 24 horas.

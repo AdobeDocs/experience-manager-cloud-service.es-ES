@@ -5,10 +5,10 @@ exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 96b0deda65bda3c008d84a9d8d1eac38e404cdb9
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 40%
+source-wordcount: '1422'
+ht-degree: 30%
 
 ---
 
@@ -22,9 +22,9 @@ Para dar compatibilidad a los clientes con configuraciones de desarrollo empresa
 
 ## Soporte de Cloud Manager en la configuración del desarrollo de equipos empresariales {#cloud-manager}
 
-Para garantizar una incorporación rápida, Cloud Manager proporciona todo lo necesario para comenzar a desarrollar experiencias digitales de inmediato, incluido un repositorio Git para almacenar personalizaciones, que luego Cloud Manager creará, verificará e implementará.
+Para garantizar una incorporación rápida, Cloud Manager proporciona todo lo necesario para empezar a desarrollar experiencias digitales, incluido un repositorio Git para almacenar personalizaciones. Estas personalizaciones se crean, verifican e implementan en Cloud Manager.
 
-Con Cloud Manager, los equipos de desarrollo pueden trabajar para confirmar los cambios con frecuencia sin depender del personal de Adobe.
+Con Cloud Manager, los equipos de desarrollo pueden confirmar los cambios con frecuencia sin requerir la asistencia del personal de Adobe.
 
 En Cloud Manager hay disponibles tres tipos de entornos.
 
@@ -36,25 +36,25 @@ El código se puede implementar en entornos de desarrollo mediante una canalizac
 
 La canalización de producción implementa primero el código y la configuración en el entorno de ensayo, prueba la aplicación y, finalmente, se implementa en la producción.
 
-Un SDK de Cloud Service que siempre se actualiza con las últimas mejoras de AEM as a Cloud Service permite el desarrollo local directamente mediante el hardware local del desarrollador. Este enfoque permite un desarrollo rápido con tiempos de respuesta muy bajos. Por lo tanto, los desarrolladores pueden permanecer en su entorno local familiar y elegir entre una amplia variedad de herramientas de desarrollo y favorecer los entornos de desarrollo o producción cuando lo consideren adecuado.
+Un SDK de Cloud Service que siempre se actualiza con las últimas mejoras de AEM as a Cloud Service permite el desarrollo local directamente mediante el hardware local del desarrollador. Este enfoque permite un desarrollo rápido con tiempos de espera cortos. Por lo tanto, los desarrolladores pueden permanecer en su entorno local familiar y elegir entre una amplia variedad de herramientas de desarrollo y favorecer los entornos de desarrollo o producción cuando lo consideren adecuado.
 
 Cloud Manager admite configuraciones flexibles de varios equipos que se pueden ajustar para adaptarse a las necesidades de una empresa. Para garantizar implementaciones estables en varios equipos, la canalización de Cloud Manager valida y prueba el código de todos los equipos juntos. Este enfoque ayuda a evitar situaciones en las que los cambios de un equipo afectan a la producción de todos los equipos.
 
-## Ejemplo del mundo real {#real-world-example}
+## Ejemplo de escenario {#example-scenario}
 
 Cada empresa tiene diferentes requisitos, incluida la configuración de equipos, los procesos y los flujos de trabajo de desarrollo. Adobe utiliza la configuración que se describe a continuación para varios proyectos que ofrecen experiencias además de AEM as a Cloud Service.
 
-Por ejemplo, las aplicaciones de Adobe Creative Cloud, como Adobe Photoshop o Adobe Illustrator, incluyen recursos de contenido como tutoriales, ejemplos y guías para los usuarios finales. Las aplicaciones cliente consumen contenido de AEM as a Cloud Service sin encabezado. Realizan llamadas de API al nivel de publicación de AEM Cloud para recuperar contenido estructurado como flujos JSON. Además, la [red de distribución de contenido (CDN) en AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) se usa para ofrecer contenido estructurado y no estructurado con un rendimiento óptimo.
+Por ejemplo, las aplicaciones de Adobe Creative Cloud, como Adobe Photoshop o Adobe Illustrator, incluyen recursos de contenido como tutoriales, ejemplos y guías. Las aplicaciones cliente consumen contenido de AEM as a Cloud Service sin encabezado. Realizan llamadas de API al nivel de publicación de AEM Cloud para recuperar contenido estructurado como flujos JSON. Además, la [red de distribución de contenido (CDN) en AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) se usa para ofrecer contenido estructurado y no estructurado con un rendimiento óptimo.
 
 Los equipos que contribuyen a este proyecto se adhieren al siguiente proceso.
 
 Cada equipo utiliza su propio flujo de trabajo de desarrollo y tiene un repositorio Git independiente. Se utiliza un repositorio Git compartido adicional para incorporar proyectos. Este repositorio de Git contiene la estructura raíz del repositorio de Git de Cloud Manager, incluida la configuración compartida de Dispatcher.
 
-La incorporación de un nuevo proyecto requiere la inclusión en el archivo de proyecto de Maven del reactor en la raíz del repositorio de Git compartido. Para la configuración de Dispatcher, se crea un nuevo archivo de configuración dentro del proyecto de Dispatcher. A continuación, la configuración principal de Dispatcher incluye este archivo. Cada equipo es responsable de su propio archivo de configuración de Dispatcher. Los cambios en el repositorio de Git compartido son raros y normalmente solo son necesarios cuando se incorpora un nuevo proyecto. El trabajo principal lo realiza cada equipo de proyecto dentro de su propio repositorio Git.
+La incorporación de un nuevo proyecto requiere una lista en el archivo de proyecto de Maven del reactor en la raíz del repositorio de Git compartido. Para la configuración de Dispatcher, se crea un nuevo archivo de configuración dentro del proyecto de Dispatcher. A continuación, la configuración principal de Dispatcher incluye este archivo. Cada equipo es responsable de su propio archivo de configuración de Dispatcher. Los cambios en el repositorio de Git compartido son raros y solo son necesarios cuando se incorpora un nuevo proyecto. Cada equipo del proyecto realiza el trabajo principal dentro de su propio repositorio Git.
 
 ![Diagrama del flujo de trabajo](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-El repositorio Git para cada uno se configura con el [Arquetipo de proyecto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview) y, por lo tanto, sigue las prácticas recomendadas para configurar proyectos de AEM. La única excepción es la configuración de Dispatcher, que se realiza en el repositorio de Git compartido como se ha descrito anteriormente.
+El repositorio Git para cada equipo se configura con el [Arquetipo de proyecto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview) y, por lo tanto, sigue las prácticas recomendadas para configurar proyectos de AEM. La única excepción es la configuración de Dispatcher, que se realiza en el repositorio de Git compartido como se ha descrito anteriormente.
 
 Cada equipo utiliza un flujo de trabajo de Git simplificado con dos ramas + N, según el modelo de flujo de Git:
 
@@ -79,29 +79,29 @@ Todos los proyectos siguen la misma configuración para la rama estable. Una ins
 
 ![Diagrama de inserciones](/help/implementing/cloud-manager/assets/team-setup2.png)
 
-Las inserciones en la rama de desarrollo se administran de forma diferente. Una inserción en una rama de desarrollador en el repositorio Git de un equipo también déclencheur una acción de GitHub. Esta acción inserta automáticamente el código en la rama de desarrollo del repositorio de Git de Cloud Manager. Sin embargo, esta inserción de código no almacena en déclencheur automáticamente la canalización que no es de producción. Una llamada a la API de Cloud Manager la déclencheur.
+Las inserciones en la rama de desarrollo se administran de forma diferente. Una inserción en una rama de desarrollo en el repositorio Git de un equipo también déclencheur una acción de GitHub. Esta acción inserta automáticamente el código en la rama de desarrollo del repositorio de Git de Cloud Manager. Sin embargo, esta inserción de código no almacena en déclencheur automáticamente la canalización que no es de producción. Una llamada a la API de Cloud Manager la déclencheur.
 
 La ejecución de la canalización de producción incluye la comprobación del código de todos los equipos a través de las puertas de calidad proporcionadas. Una vez implementado el código en la fase, las pruebas y auditorías se ejecutan para que todo funcione según lo esperado. Cuando se pasan todas las puertas, los cambios se implementan en producción sin interrupciones ni tiempo de inactividad.
 
-Para el desarrollo local, se utiliza [SDK para AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing). SDK permite configurar el autor, la publicación y la Dispatcher locales. Este flujo de trabajo permite el desarrollo sin conexión y tiempos de respuesta rápidos. A veces solo se utiliza el entorno de creación para el desarrollo, pero la configuración rápida de los entornos de Dispatcher y publicación permite probar todo localmente antes de insertarlo en el repositorio de Git.
+Para el desarrollo local, se utiliza [SDK para AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing). SDK permite configurar el autor, la publicación y la Dispatcher locales. Este flujo de trabajo permite el desarrollo sin conexión y tiempos de espera cortos. A veces solo se utiliza el entorno de creación para el desarrollo, pero la configuración rápida de los entornos de Dispatcher y publicación permite probar todo localmente antes de insertarlo en el repositorio de Git.
 
-Los miembros de cada equipo suelen comprobar el código de Git compartido para su propio código de proyecto. No hay necesidad de comprobar otros proyectos porque son independientes.
+Los miembros de cada equipo suelen extraer el código del Git compartido para su propio código de proyecto. No hay necesidad de comprobar otros proyectos porque son independientes.
 
 ![Comprobación local y SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
-Esta configuración del mundo real puede utilizarse como modelo y luego personalizarse según las necesidades de cada empresa. El concepto flexible de ramificación y combinación de Git permite realizar variaciones de los flujos de trabajo anteriores, adaptadas a las necesidades de cada equipo. AEM as a Cloud Service es compatible con todas estas variaciones sin sacrificar el valor principal de la canalización de Cloud Manager.
+Esta configuración se puede utilizar como referencia y luego personalizarse según las necesidades de una empresa. El concepto flexible de ramificación y combinación de Git permite realizar variaciones de los flujos de trabajo anteriores, adaptadas a las necesidades de cada equipo. AEM as a Cloud Service es compatible con todas estas variaciones sin sacrificar el valor principal de la canalización de Cloud Manager.
 
 >[!TIP]
 >
->Consulte [Trabajar con varios repositorios de Git de Source](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) para obtener más información sobre esta configuración.
+>Para obtener más información sobre esta configuración, consulte [Trabajar con varios repositorios de Git de Source](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code).
 
 ### Consideraciones para una configuración de varios equipos {#considerations}
 
-Con el repositorio Git de Cloud Manager y la canalización de producción, el código de producción completo siempre pasa por todas las puertas de calidad y se trata como una unidad de implementación. De esta manera, el sistema de producción siempre está activo sin interrupciones ni tiempo de espera.
+Con el repositorio Git de Cloud Manager y la canalización de producción, el código de producción completo siempre pasa por todas las puertas de calidad y se trata como una unidad de implementación. De este modo, el sistema de producción siempre está disponible sin interrupciones ni tiempo de inactividad.
 
 Por el contrario, sin un sistema de este tipo, ya que cada equipo puede realizar implementaciones por separado, existe el riesgo de que una actualización de un equipo único pueda provocar problemas de estabilidad de la producción. Además, se requiere coordinación y tiempo de inactividad planificado para implementar actualizaciones. Con un número cada vez mayor de equipos, el esfuerzo de coordinación será mucho más complejo y se hará inmanejable rápidamente.
 
-Si se detecta un problema en las puertas de calidad, la producción no se verá afectada y el problema podrá detectarse y solucionarse sin que el personal de Adobe tenga que intervenir. Sin Cloud Service y sin probar siempre toda la implementación, las implementaciones parciales pueden ocasionar interrupciones que requieran una solicitud de restablecimiento o incluso una restauración completa desde una copia de seguridad. Las pruebas parciales también pueden causar problemas adicionales que deben resolverse más adelante, lo que una vez más requiere la coordinación y el apoyo del personal de Adobe.
+Si se detecta un problema en las puertas de calidad, la producción no se verá afectada y el problema podrá detectarse y solucionarse sin que el personal de Adobe tenga que intervenir. Sin AEM as a Cloud Service y sin probarlas siempre todas, las implementaciones parciales pueden provocar interrupciones que requieran una solicitud de reversión o incluso una restauración completa desde una copia de seguridad. Las pruebas parciales también pueden causar problemas adicionales que deben resolverse más adelante, lo que una vez más requiere la coordinación y el apoyo del personal de Adobe.
 
 >[!TIP]
 >

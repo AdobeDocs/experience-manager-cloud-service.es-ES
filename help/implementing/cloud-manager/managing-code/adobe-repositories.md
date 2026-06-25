@@ -4,10 +4,10 @@ description: Aprenda a añadir un repositorio administrado por Adobe en Cloud Ma
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: db5d8007420692b2e4818a55f8209373a28eb3c0
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '226'
+ht-degree: 73%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 Aprenda a añadir un repositorio administrado por Adobe en Cloud Manager.
 
-La página **Repositorios** facilita la adición de repositorios adicionales administrados por Adobe al programa seleccionado.
+La página **Repositorios** le permite agregar repositorios adicionales administrados por Adobe a un programa seleccionado.
 
 **Para añadir un repositorio de Adobe en Cloud Manager:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados al que desea añadir un repositorio administrado por Adobe.
 
-1. En la página **Resumen del programa**, en el menú lateral, haga clic en la pestaña ![icono de carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Repositorios**.
+1. En la página **Resumen del programa**, en el menú lateral, haga clic en la ficha ![Icono de carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Repositorios**.
 
 1. En la página **Repositorios**, junto a la esquina superior derecha, haga clic en **Agregar repositorio**.
 
@@ -32,7 +32,7 @@ La página **Repositorios** facilita la adición de repositorios adicionales adm
 1. En los campos de texto correspondientes, introduzca lo siguiente:
 
    * **Nombre del repositorio**: un nombre expresivo para el nuevo repositorio.
-   * **Vista previa de la URL del repositorio**: no es necesario que escriba una ruta de URL ni que edite la ruta existente porque la infraestructura del repositorio ya está configurada y está totalmente integrada y administrada por Adobe.
+   * **Vista previa de URL del repositorio**: no es necesario que escriba una ruta de URL ni edite la ruta existente porque Adobe ya ha configurado, integrado y administrado la infraestructura del repositorio.
    * **Descripción (opcional)**: una descripción detallada del repositorio.
 
    ![Cuadro de diálogo Agregar repositorio](assets/add-adobe-repository.png)
