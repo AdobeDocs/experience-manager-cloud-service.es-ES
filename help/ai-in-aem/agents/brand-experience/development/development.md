@@ -4,7 +4,8 @@ description: Obtenga información sobre cómo el agente de desarrollo de AEM ana
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 8495dd5cc4629dd960f6c5c31d9d50c126d6d750
+nudge: please
+source-git-commit: 4b652e866e4b009e186f1379f2ae451061182df8
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 8%
@@ -84,7 +85,7 @@ Por lo tanto, en lugar de descubrir una restricción después de una configuraci
 
 Este trabajo puede recuperar los estados de la canalización y ayudarle a solucionar problemas con los pasos de generación fallidos mediante la sugerencia de correcciones, lo que ahorra tiempo al depurar implementaciones de AEM as a Cloud Service en entornos de desarrollo, fase y producción. Examina los registros de generación y el código relacionado para recomendar una corrección que puede aplicar manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478010?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -95,7 +96,7 @@ To access this agent, please refer to the [release notes](/help/release-notes/re
 
 -->
 
-[Siga un tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
+[Siga un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) para aprender a utilizar el agente de desarrollo con el fin de solucionar errores de canalización.
 
 ### Acceso al agente de desarrollo a través de Cloud Manager {#how-to-access-the-agent}
 
