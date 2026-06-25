@@ -40,7 +40,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491493/?captions=spa&quality=12)
 
 -->
 
