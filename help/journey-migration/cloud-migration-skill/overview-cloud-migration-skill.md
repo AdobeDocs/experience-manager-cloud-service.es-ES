@@ -17,7 +17,7 @@ La solución **AEM Cloud Migration** es un conjunto de herramientas basadas en a
 
 El siguiente vídeo de demostración proporciona una guía completa rápida de la solución de migración a AEM Cloud y se incluye como referencia.
 
->[!VIDEO](https://video.tv.adobe.com/v/3491438?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3491441?captions=spa&learn=on)
 
 La solución consta de dos componentes:
 
