@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo ejecutar JavaScript en la capa de 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: db458670dfc8e216d9f7f54e6017e75439101645
+source-git-commit: e0a62aa70aa24c4aa85c65a3dc1dfa0432f189eb
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1975'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Funciones de AEM Edge es una característica **beta**. Las funciones y la documentación pueden cambiar sin previo aviso. Para unirse al programa de acceso anticipado y proporcionar comentarios, envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com).
+>Funciones de AEM Edge es una característica **beta pública**, por lo que puede probarla de forma automática sin ponerse en contacto con Adobe para habilitarla. Adobe le recomienda enviar un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) para describir su caso de uso y que Adobe pueda asegurarse de que es compatible y proporcionar instrucciones. Al utilizar AEM Edge Functions Beta, reconoce que aún se encuentra en desarrollo y que no debe confiar en el correcto funcionamiento de la tecnología o en la disponibilidad de los datos. Esta función se proporciona tal cual, puede cambiar sin previo aviso y no está cubierta por la producción.
 
 AEM Edge Functions le permite ejecutar JavaScript en la capa de CDN, lo que acerca el procesamiento de datos al usuario final. Esto reduce la latencia y permite experiencias dinámicas y adaptables sin necesidad de realizar un viaje de ida y vuelta al origen.
 
@@ -26,7 +26,9 @@ Los casos de uso comunes incluyen los siguientes:
 - Volver a dar formato o agregar respuestas desde API de terceros antes de que lleguen al explorador
 - Composición y servicio de HTML procesados por el servidor en el perímetro mediante contenido vinculado de varios backends
 
-AEM Edge Functions es compatible tanto con Edge Delivery Services como con la pila Java de AEM as a Cloud Service.
+AEM Edge Functions es compatible con Edge Delivery Services y AEM as a Cloud Service Java-stack, para clientes de AEM Sites.
+
+<!-- Follow this tutorial for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations. -->
 
 ## Principales ventajas {#key-benefits}
 

@@ -4,9 +4,9 @@ description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: b50c28965c2f98dee126b183055499a4de8e6a06
+source-git-commit: d4fc40740fe21296d82afb875f41c577c87a02c6
 workflow-type: tm+mt
-source-wordcount: '6004'
+source-wordcount: '6002'
 ht-degree: 3%
 
 ---
@@ -711,7 +711,7 @@ Para obtener más información sobre cómo usar Cloud Manager para administrar s
 ## Instantáneas {#snapshots}
 
 >[!NOTE]
->Las instantáneas de RDE estarán en versión beta pública a principios de junio, momento en el que se podrán activar actualizando al último complemento de aio.
+>Las instantáneas de RDE están en versión beta pública y por lo tanto se pueden habilitar actualizando al complemento aio más reciente, sin ponerse en contacto con Adobe.
 >
 >Al utilizar la Beta de instantáneas de RDE, reconoce que aún se encuentra en desarrollo y que no debe confiar en el correcto funcionamiento de la tecnología o en la disponibilidad de los datos. Si bien hemos probado esta característica ampliamente, existe una pequeña posibilidad de que su RDE pueda volverse inestable. Si esto sucede, un restablecimiento lo restaurará a un estado de trabajo.
 >Agradecemos recibir comentarios en [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com).

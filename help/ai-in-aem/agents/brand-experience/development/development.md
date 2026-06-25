@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo el agente de desarrollo de AEM ana
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: fb0eaf8173b0cb5c81062424dbdfa723319df539
+source-git-commit: 8495dd5cc4629dd960f6c5c31d9d50c126d6d750
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1547'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,7 @@ Admite los siguientes trabajos, a los que se puede acceder mediante la interfaz 
 
 * Trabajo de Cloud Manager: operaciones de solo lectura, incluida la lista de programas y entornos, y el estado de la canalización
 * Trabajo de resolución de problemas de canalización: depurar canalizaciones con errores
-* Trabajo de administración de horas tranquilas y períodos libres de actualización (disponibilidad limitada): ver, crear y editar horas silenciosas y períodos libres de actualización
+* Trabajo de Gestión de Horas Silenciosas y Actualización de Períodos Libres: Ver, crear y editar Horas Silenciosas y Actualizar Períodos Libres
 * Trabajo de resolución de problemas de replicación (Beta): depure los problemas relacionados con la replicación, como las colas bloqueadas.
 
 >[!NOTE]
@@ -61,10 +61,6 @@ Encuentre información acerca de sus programas y entornos de AEM, lo que incluye
 
 
 ## Trabajo de administración de horas tranquilas y períodos libres de actualización {#control-updates-job}
-
->[!AVAILABILITY]
->
->Esta función se encuentra en una fase de disponibilidad limitada y se implementará en las próximas semanas. Correo electrónico [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com) para acceso inmediato.
 
 Consulte, cree y edite Horas tranquilas y Actualice periodos libres directamente a través del asistente de IA de AEM.
 
