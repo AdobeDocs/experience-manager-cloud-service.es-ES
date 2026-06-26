@@ -123,7 +123,7 @@ Con Cloud Manager, implemente la canalización para que la función perimetral s
 
 ### Autor {#author}
 
-Escriba su lógica empresarial de código de función perimetral, usando la `src` carpeta ](https://github.com/adobe/aem-edge-functions-boilerplate/tree/main/src) de [plantillas como punto de partida.
+Escriba su lógica empresarial de código de función perimetral, usando la `src` carpeta [&#128279;](https://github.com/adobe/aem-edge-functions-boilerplate/tree/main/src) de plantillas como punto de partida.
 
 ### Generar {#build}
 
