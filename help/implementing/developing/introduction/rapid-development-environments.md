@@ -5,7 +5,7 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
 nudge: please
-source-git-commit: 4ba5d595f4043cb559343efded11907ce55971c1
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '6002'
 ht-degree: 3%
@@ -1276,3 +1276,4 @@ El contexto aún se puede utilizar. Se muestra una advertencia de obsolescencia 
 ##### Utilice también cualquier otro nombre de contexto para el complemento de Cloud Manager {#use-any-other-context-name-also-for-the-cloud-manager-plug-in}
 
 Los complementos de Cloud Manager ofrecen un parámetro para definir el contexto que se va a utilizar. Todavía no admite la configuración de contexto predeterminada de IMS. Para ello, configure el complemento RDE con [el ejemplo para configurar un contexto local](/help/implementing/developing/introduction/rapid-development-environments.md#install-the-rde-command-line-tools) e indique al complemento de Cloud Manager que use `myContext` como `--imsContextName=myContext` en cada llamada a él.
+

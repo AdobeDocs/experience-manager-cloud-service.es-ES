@@ -4,7 +4,7 @@ description: Aprenda a configurar herramientas de codificación de IA con contex
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: eac2d89b3cebc134b40fc0e537cf66c78fa1db50
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 0%
@@ -329,3 +329,4 @@ Otros IDE se pueden configurar de manera similar. `docs/DispatcherMCP.md` de SDK
 | `tail_logs` | Sigue los registros de tiempo de ejecución relevantes de Dispatcher y HTTPD |
 
 La superficie de MCP expone intencionadamente solo estas siete herramientas; los indicadores y los recursos permanecen en la capa de habilidad. La documentación de referencia completa está disponible en `docs/DispatcherMCP.md` dentro del SDK de Dispatcher extraído.
+

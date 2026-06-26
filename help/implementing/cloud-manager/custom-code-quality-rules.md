@@ -5,7 +5,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ea84bbdf5492bec7f35952c964be54b784091ead
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '4362'
 ht-degree: 57%
@@ -1292,3 +1292,4 @@ AEM Cloud Service prohíbe la creación de tokenizers con nombres incorrectos en
 * **Desde**: Versión 2024.7.0
 
 AEM Cloud Service prohíbe la creación de definiciones de indexación que contengan propiedades con espacios.
+

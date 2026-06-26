@@ -5,9 +5,9 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Developer
-source-git-commit: ff567c4f328bf0ab10ee9e93ad850a597536cdbf
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1257'
 ht-degree: 22%
 
 ---
@@ -199,4 +199,5 @@ Sí. Se puede asignar a un usuario varios perfiles, incluidos perfiles de permis
 
 ### ¿Qué sucede si un usuario tiene permiso para editar un entorno o canalización pero no tiene acceso a un programa que contenga el entorno o canalización?
 
-El usuario no puede acceder al entorno o la canalización si no tiene los permisos de **Acceso al programa** asociados con el entorno o la canalización.
+El usuario no puede acceder al entorno o la canalización si no tiene los permisos de **Acceso al programa** que contienen el entorno o la canalización.
+

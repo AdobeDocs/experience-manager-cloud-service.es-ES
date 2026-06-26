@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 45fb44079ec9b999cc2cd82b8011b14eff3bcfe1
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '2276'
 ht-degree: 2%
@@ -164,3 +164,4 @@ trafficFilters:
 Reemplace los valores de ejemplo por el código de país, la red o el nombre de bot que desee bloquear. Consulte [Sintaxis de reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) y [Estructura de condición](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) para obtener más opciones.
 
 Algunos bots pueden sobrecargar un sitio con tráfico un día y luego desaparecer al siguiente. Esta funcionalidad puede complicar cualquier intento de bloquear una dirección IP o un agente de usuario específico. Un enfoque genérico es introducir una [regla de límite de tarifa](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Revise los [ejemplos](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) y cree una regla que coincida con su tolerancia para una tasa rápida de solicitudes. Revise la sintaxis [Estructura de condiciones](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) para todas las excepciones que permita a un límite de tasa genérico.
+

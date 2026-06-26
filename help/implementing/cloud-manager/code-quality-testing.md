@@ -5,7 +5,7 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 3261003447e54a2af4304d61c56068b7cab5986c
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 67%
@@ -131,3 +131,4 @@ Se puede producir un caso especial cuando el paquete de contenido “todo” con
 >
 >* Esta optimización no afecta a los paquetes que se implementan en AEM.
 >* La coincidencia entre paquetes de contenido incrustado y paquetes de contenido omitido depende de los nombres de archivo. Esta optimización no se puede producir si varios paquetes omitidos comparten el mismo nombre de archivo o si el nombre de archivo cambia durante la incrustación.
+

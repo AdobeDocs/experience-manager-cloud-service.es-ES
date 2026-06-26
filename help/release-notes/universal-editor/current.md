@@ -4,7 +4,7 @@ description: Estas son las notas de la versión de la versión 2026.06.25 de Uni
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c5aec0d045162327bad3d0d03b22386bf2effe6e
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 13%
@@ -36,3 +36,4 @@ Estas son las notas de la versión del editor universal del 25 de junio de 2026.
 
 * Numerosos botones ahora tienen correctamente nombres accesibles.
 * Se ha corregido un problema con la persistencia de ciertos fragmentos de contenido después de seleccionarlos con un selector.
+

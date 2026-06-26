@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 5467a311-727d-4f67-ba43-4b6548431061
-source-git-commit: 8c5c34018aee84a1ec54d3f1d0bc77b8c660869c
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 11%
@@ -160,3 +160,4 @@ A continuación se muestra una lista completa de patrones que se apartan de las 
 | Estructura del repositorio | Patrones relacionados con la organización y estructura del repositorio JCR. |
 | Dependencias | Patrones relacionados con las dependencias de código y la administración de versiones. |
 | Estadísticas | Patrones que representan estadísticas y métricas de uso. |
+
