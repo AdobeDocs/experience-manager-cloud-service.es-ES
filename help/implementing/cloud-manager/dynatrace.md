@@ -5,9 +5,9 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: f2004db82933925db55764386cb73c5a6fb44d06
+source-git-commit: d007b33ba41a791242c1ea1c8264984b9182fa54
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe permite utilizar Dynatrace para supervisar AEM as a Cloud Service como parte de la implementación empresarial, identificar la causa de cualquier problema potencial y tomar medidas para solucionarlo según sea necesario.
 
-Con Dynatrace, puede obtener una observabilidad perfecta para todas sus aplicaciones de AEM. Dynatrace detecta las aplicaciones de AEM y muestra sus rutas, desde el sitio web hasta el contenedor o el Cloud Service, para revelar la experiencia del usuario. Junto con el seguimiento de extremo a extremo en todos los niveles y la monitorización de usuarios reales, eleve sus experiencias basadas en contenido de AEM sin espacios ni puntos ciegos. Si surgen anomalías, Dynatrace las diagnostica en tiempo real, con el motor de IA de Davis. Localiza la causa raíz hasta el código dañado antes de que sus clientes se vean afectados, lo que minimiza el tiempo medio de reparación.
+Con Dynatrace, puede obtener una observabilidad perfecta para todas sus aplicaciones de AEM. Dynatrace detecta las aplicaciones de AEM y muestra sus rutas, desde el sitio web hasta el contenedor o Cloud Service, para supervisar la experiencia del usuario. En combinación con el seguimiento de extremo a extremo en todos los niveles y la monitorización de usuarios reales, mejore sus experiencias basadas en contenido de AEM sin interrupciones ni limitaciones de monitorización. Si surgen anomalías, Dynatrace las diagnostica en tiempo real mediante el motor de IA de Davis. Identifica la causa del problema antes de que sus clientes se vean afectados, lo que reduce el tiempo necesario para la resolución.
 
 Para obtener más información sobre Dynatrace, consulte la [Integración de Adobe AEM Cloud Service](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 
@@ -57,7 +57,7 @@ Para obtener más información acerca de las licencias de Dynatrace, consulte [S
 
 ### ¿Cómo obtengo mis datos de conexión de Dynatrace? {#how-do-i-get-my-dynatrace-connection-details}
 
-1. Ejecute la siguiente solicitud de API para su entorno de Dynatrace:
+1. Ejecute la siguiente solicitud de API en su entorno de Dynatrace:
 
    ```
    curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"
