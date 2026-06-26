@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
+source-git-commit: 18d47f745ba1332ccafc7e092d710a70710f1033
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 36%
+source-wordcount: '1200'
+ht-degree: 33%
 
 ---
 
@@ -24,7 +24,7 @@ La implementación del código en Fase y hasta Producción se realiza mediante u
 1. **Implementación en el entorno de ensayo**: el código se crea e implementa en el entorno de ensayo para pruebas funcionales automatizadas, pruebas de interfaz de usuario, auditoría de experiencias y pruebas de aceptación de usuarios (UAT).
 1. **Implementación en el entorno de producción**: una vez validada la compilación en Fase y aprobada para su promoción en Producción, el mismo artefacto de compilación se implementa en el entorno de producción.
 
-_Solo el tipo de canalización de código de pila completa admite la digitalización de código, las pruebas de funciones, las pruebas de interfaz de usuario y la auditoría de experiencias._
+_Solo el tipo de canalización de código de pila completa admite la digitalización de código, las pruebas funcionales, las pruebas de interfaz de usuario y la auditoría de experiencias._
 
 ## Proceso de implementación {#deployment-process}
 
@@ -32,7 +32,7 @@ Todas las implementaciones de Cloud Service siguen un proceso gradual para garan
 
 >[!NOTE]
 >
->La caché de Dispatcher se borra con cada implementación y, a continuación, se calienta antes de que los nuevos nodos de publicación empiecen a aceptar tráfico.
+>La caché de Dispatcher se borra con cada implementación y, a continuación, se actualiza antes de que los nuevos nodos de publicación empiecen a aceptar tráfico.
 
 ## Implemente su código con Cloud Manager en AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
@@ -89,19 +89,19 @@ La fase **Prueba de fase** incluye los siguientes pasos:
 
 ### Fase de implementación de producción {#production-deployment}
 
-El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto sobre los visitantes de un sitio de AEM.
+El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto en los usuarios de un sitio [!DNL AEM].
 
-Las implementaciones de producción generalmente siguen los mismos pasos que se describieron anteriormente, pero de forma gradual. Estos pasos incluyen lo siguiente:
+Las implementaciones de producción siguen los mismos pasos que se describieron anteriormente, pero en secuencia. Estos pasos incluyen lo siguiente:
 
 1. Implementar paquetes de AEM para crear.
 1. Desasociar `dispatcher1` del equilibrador de carga.
 1. Implemente paquetes de AEM en `publish1` y el paquete de Dispatcher en `dispatcher1`, vacíe la memoria caché de Dispatcher.
-1. Vuelva a colocar `dispatcher1` en el equilibrador de carga.
+1. Vuelva a agregar `dispatcher1` al equilibrador de carga.
 1. Cuando `dispatcher1` vuelva a estar en servicio, desasocie `dispatcher2` del equilibrador de carga.
 1. Implemente paquetes de AEM en `publish2` y el paquete de Dispatcher en `dispatcher2`, vacíe la memoria caché de Dispatcher.
-1. Vuelva a colocar `dispatcher2` en el equilibrador de carga.
+1. Vuelva a agregar `dispatcher2` al equilibrador de carga.
 
-Este proceso continúa hasta que la implementación haya llegado a todos los editores y distribuidores de la topología.
+Este proceso se repite hasta que la implementación se aplica a todos los editores y distribuidores de la topología.
 
 ![Fase de implementación de producción](assets/production-deployment.png)
 
@@ -120,10 +120,10 @@ Los siguientes pasos agotan el tiempo de espera si se les deja esperando los com
 
 ## Volver a ejecutar una implementación de producción {#reexecute-deployment}
 
-En raras ocasiones, los pasos de implementación de producción pueden fallar por motivos transitorios. En estos casos, se admite la nueva ejecución del paso de implementación de producción siempre y cuando el paso de implementación de producción se haya completado, independientemente del tipo de finalización (por ejemplo, cancelada o fallida). Volver a ejecutar crea una nueva ejecución que utiliza la misma canalización y que consta de los tres pasos siguientes:
+En casos excepcionales, los pasos de implementación de producción pueden fallar por motivos transitorios. En estos casos, se admite la nueva ejecución del paso de implementación de producción siempre y cuando el paso de implementación de producción se haya completado, independientemente del tipo de finalización (por ejemplo, cancelada o fallida). Volver a ejecutar crea una nueva ejecución que utiliza la misma canalización y que consta de los tres pasos siguientes:
 
 1. **Validación**: la misma validación que se produce durante la ejecución normal de una canalización.
-1. **Compilación**: en el contexto de una nueva ejecución, el paso de compilación copia artefactos y no ejecuta realmente un nuevo proceso de compilación.
+1. **Compilación**: en el contexto de una nueva ejecución, el paso de compilación copia artefactos y no ejecuta un nuevo proceso de compilación.
 1. **Implementación de producción**: utiliza la misma configuración y opciones que el paso de implementación de producción en una ejecución de canalización normal.
 
 En estas circunstancias, cuando se puede volver a ejecutar, la página de estado de la canalización de producción contiene la opción **Volver a ejecutar** junto a la opción habitual **Descargar registro de compilación**.
@@ -142,7 +142,7 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 
 ### Volver a ejecutar la API {#reexecute-API}
 
-Además de estar disponible en IU, puede utilizar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para activar las nuevas ejecuciones, así como identificar las que se activaron como ejecuciones nuevas.
+Además de estar disponible en IU, puede utilizar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Pipeline-Execution) para activar las nuevas ejecuciones, así como identificar las que se activaron como ejecuciones nuevas.
 
 #### Activación de una nueva ejecución {#reexecute-deployment-api}
 
@@ -192,6 +192,6 @@ La sintaxis del valor href del vínculo HAL es solo un ejemplo. El valor real si
 
 Enviar una petición PUT a este extremo da como resultado una respuesta 201 si es correcta, y el cuerpo de la respuesta es la representación de la nueva ejecución. Este flujo de trabajo es similar a iniciar una ejecución normal a través de la API.
 
-#### Identificación de una ejecución que se ha vuelto a ejecutar {#identify-reexecution}
+#### Identificación de una nueva ejecución {#identify-reexecution}
 
 El sistema identifica las reejecuciones estableciendo el campo `trigger` al valor `RE_EXECUTE`.
