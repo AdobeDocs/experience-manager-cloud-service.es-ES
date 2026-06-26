@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
+source-git-commit: 2f5f1880ddcb18688a115d3112b2dd6156722294
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 21%
+source-wordcount: '1029'
+ht-degree: 15%
 
 ---
 
@@ -25,13 +25,13 @@ Cloud Manager proporciona un tablero para facilitar la visualización de las aut
 
 ## Información general {#overview}
 
-El tablero de licencias de Cloud Manager proporciona un acceso fácil a las autorizaciones de la solución disponibles en todos sus programas, incluida la cantidad utilizada y la disponible. Las métricas de consumo de solicitud de contenido de la solución Sites varían según la tendencia mensual.
+El panel de licencias de Cloud Manager proporciona un acceso fácil a las autorizaciones de la solución disponibles en todos sus programas, incluidas cuántas se utilizan y cuántas quedan disponibles. Las métricas de consumo de solicitud de contenido de la solución Sites varían según la tendencia mensual.
 
 ## Acceso al tablero de licencias {#using-dashboard}
 
 >[!NOTE]
 >
->Un usuario con el rol **Propietario del negocio** debe iniciar sesión para ver el panel de licencias.
+>Para ver el panel de licencias, debe haber iniciado sesión una persona con la función **Propietario empresarial**.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) en el [encabezado de Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Esta acción revela las pestañas.
@@ -41,12 +41,12 @@ El tablero de licencias de Cloud Manager proporciona un acceso fácil a las auto
 
 El panel de control se divide en tres secciones que le muestran lo siguiente:
 
-* **Soluciones** - Qué soluciones tiene licencia. Por ejemplo, Sites, Edge Delivery Services y Assets, entre otros.
+* **Soluciones** - Qué soluciones tiene licencia. Por ejemplo, Sites, Edge Delivery Services y Assets.
 
   ![Lista de soluciones](assets/solutions.png)
 
 * **Complementos**: qué complementos de las soluciones con licencia tiene disponibles.
-* **Otros derechos** - Qué zona protegida y entorno de desarrollo y otros derechos se pueden consumir dentro de su inquilino.
+* **Otros derechos** - ¿Qué entornos de zona protegida y desarrollo y otros derechos se pueden consumir dentro de su inquilino?
 
 Cada sección resume las funciones y el uso disponibles, si corresponde. Actualmente, solo se muestran las soluciones de Sites y Assets, aunque existan otras soluciones en el inquilino.
 
@@ -54,7 +54,7 @@ Cada sección resume las funciones y el uso disponibles, si corresponde. Actualm
 * La columna **Configurado en** enumera los programas con el derecho de solución aplicado.
    * Una asignación de derechos se considera utilizada solo cuando se crea un entorno de producción o si existe y se ha ejecutado una canalización de actualización en él.
    * En la columna solo se enumera un número limitado de programas por separado; el resto se representa mediante una entrada `+x`.
-   * Pase el ratón sobre la entrada `+x` para ver una ventana emergente con detalles de todos los programas.
+   * Seleccione la entrada `+x` para ver una ventana emergente con detalles de todos los programas.
 * La columna **Uso** muestra un botón **[Ver detalles de uso](#view-usage-details)** para mostrar las estadísticas de uso de la solución.
 
 >[!TIP]
@@ -67,7 +67,7 @@ Cada sección resume las funciones y el uso disponibles, si corresponde. Actualm
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution.
 -->
 
-El botón **Ver detalles de uso** del área de Licencias de Cloud Manager proporciona un desglose detallado del uso actual de los recursos. Al hacer clic en esta opción, se abre un informe o un tablero que muestra métricas importantes relacionadas con la licencia. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Esta funcionalidad le ayuda a monitorizar y garantizar que se mantiene dentro de los límites de su contrato, a la vez que ofrece perspectivas para una mejor planificación y optimización de los recursos.
+El botón **Ver detalles de uso** del área de Licencias de Cloud Manager proporciona un desglose detallado del uso actual de los recursos. Al hacer clic en esta opción, se abre un informe o un tablero que muestra métricas importantes relacionadas con la licencia. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Esta funcionalidad le ayuda a monitorizar y garantizar que se encuentra dentro de los límites de su contrato, al tiempo que proporciona datos para la planificación y optimización de recursos.
 
 El botón **Ver detalles de uso** está *deshabilitado* (desactivado) en los siguientes casos:
 
@@ -84,7 +84,7 @@ La ventana **Detalles de uso de sitios** presenta gráficos que ofrecen una desc
 
 La parte izquierda de la ventana presenta un gráfico circular que muestra el desglose del contrato para el año de contrato seleccionado en el menú desplegable **Ver año de contrato**.
 
-El lado derecho de la ventana presenta un gráfico de áreas que muestra el uso desglosado por programa a lo largo del tiempo para el año de contrato seleccionado. Al pasar el ratón por encima, aparece una ventana emergente con detalles por programa para el momento seleccionado.
+El lado derecho de la ventana presenta un gráfico de áreas que muestra el uso desglosado por programa a lo largo del tiempo para el año de contrato seleccionado. Al seleccionar el punto de datos, aparece una ventana emergente con detalles por programa para el punto temporal seleccionado.
 
 Cerca de la esquina superior derecha de la página del panel, puede hacer clic en **Descargar informe** para exportar los datos como archivo CSV. Esta descarga simplifica el análisis y el uso compartido de las tendencias de uso.
 
@@ -102,7 +102,7 @@ For both storage and standard users views, you can use the **Environment Type** 
 
 The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a pop-up with details per program for the selected point in time.
 
 #### Standard Users {#standard-users}
 
@@ -110,7 +110,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a pop-up with details per program for the selected point in time.
 -->
 
 ## Preguntas frecuentes {#faq}
@@ -129,7 +129,7 @@ Ver también [Comprender las solicitudes de contenido de Cloud Service](/help/im
 
 Las solicitudes de contenido se rastrean en los servidores Edge de AEM as a Cloud Service. El tráfico de origen no se cuenta para las solicitudes de contenido. La red de distribución de contenido (CDN) integrada en AEM as a Cloud Service rastrea solicitudes de HTML y JSON válidas.
 
-AEM también dispone de reglas para excluir bots conocidos, incluidos servicios bien conocidos que visitan el sitio regularmente para actualizar su índice de búsqueda o servicio.
+AEM también dispone de reglas para excluir bots conocidos, incluidos servicios que visitan el sitio regularmente para actualizar su índice de búsqueda o servicio.
 
 Consulte también [Explicación de las solicitudes de contenido de Cloud Service](/help/implementing/cloud-manager/content-requests.md).
 
@@ -137,9 +137,9 @@ Consulte también [Explicación de las solicitudes de contenido de Cloud Service
 
 Las solicitudes de contenido pueden tener variaciones con las herramientas de informes de Analytics de una organización. Para obtener más información, consulte [Explicación de las solicitudes de contenido de Cloud Service](/help/implementing/cloud-manager/content-requests.md).
 
-### ¿Qué sucede si quisiera obtener más información sobre mi volumen de solicitudes de contenido?{#current-request-volumes}
+### ¿Cómo puedo obtener más información sobre mi volumen de solicitudes de contenido?{#current-request-volumes}
 
-Si desea obtener información adicional sobre el volumen de solicitud de contenido que se muestra en el panel de licencias, su equipo de Adobe puede proporcionarle un informe que muestre los controladores de mayor volumen de las solicitudes de contenido. Póngase en contacto con su equipo de Adobe o con Asistencia al cliente de Adobe para solicitar un informe de uso superior.
+Si desea obtener información adicional sobre el volumen de solicitud de contenido que se muestra en el panel de licencias, su equipo de Adobe proporciona un informe que muestra los controladores de mayor volumen de las solicitudes de contenido. Para solicitar un informe de uso superior, póngase en contacto con el equipo de Adobe o con el servicio de atención al cliente de Adobe.
 
 ### ¿Qué sucede si utilizo mi propia CDN?{#using-own-cdn}
 
