@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 64ad7ab638f71f0dcaf5384b29499e75085c778f
+source-git-commit: 1bb231d04e0b418a3b56de34c70424d06f94a4e1
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3862'
 ht-degree: 17%
 
 ---
@@ -41,7 +41,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491493/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -284,9 +284,9 @@ El servidor MCP local de Dispatcher permite que las herramientas de IA validen l
 
 Java 25 es la próxima versión de soporte a largo plazo (LTS) después de Java 21, que ofrece mejoras en rendimiento, productividad de desarrollador y seguridad:
 
-&#x200B;- **Rendimiento**: La reducción del espacio de memoria, la recolección de elementos no utilizados más eficiente y el calentamiento más rápido de JVM benefician las implementaciones nativas de la nube.
-&#x200B;- **Productividad del desarrollador**: la inicialización de objetos más limpia, la coincidencia de patrones más expresiva y la administración simplificada de tareas simultáneas reducen las plantillas y mejoran la claridad del código.
-&#x200B;- **Seguridad**: se ha modernizado la API de derivación de claves criptográficas para simplificar los flujos de trabajo de seguridad comunes.
+- **Rendimiento**: La reducción del espacio de memoria, la recolección de elementos no utilizados más eficiente y el calentamiento más rápido de JVM benefician las implementaciones nativas de la nube.
+- **Productividad del desarrollador**: la inicialización de objetos más limpia, la coincidencia de patrones más expresiva y la administración simplificada de tareas simultáneas reducen las plantillas y mejoran la claridad del código.
+- **Seguridad**: se ha modernizado la API de derivación de claves criptográficas para simplificar los flujos de trabajo de seguridad comunes.
 
 Para ayudar a las organizaciones a planificar las pruebas y la validación antes de la actualización necesaria del tiempo de ejecución de Java 25, Adobe proporciona las siguientes fechas objetivo. Cualquier actualización de esta cronología se comunicará mediante las notas de la versión.
 
@@ -303,7 +303,7 @@ AEM Cloud Service sigue admitiendo la compilación de código de cliente con Jav
 
 #### Funciones de AEM Edge (*Programa Beta* público) {#edge-functions}
 
-[Funciones de AEM Edge](/help/implementing/developing/introduction/edge-functions.md) ahora se encuentra en la versión beta pública, por lo que puede probarlo sin ponerse en contacto con Adobe para habilitarlo.
+[Funciones de AEM Edge](/help/implementing/developing/introduction/edge-functions.md) ahora se encuentra en la versión beta pública, por lo que puede probarlas de forma automática sin ponerse en contacto con Adobe para habilitarlas.
 
 Esta función le permite ejecutar JavaScript en la capa de CDN, lo que acerca el procesamiento de datos al usuario final. Esto reduce la latencia y permite experiencias dinámicas y adaptables en Edge. Está disponible para proyectos AEM Cloud Service Java Stack y Edge Delivery Services para clientes de AEM Sites.
 
@@ -313,6 +313,8 @@ Los casos de uso comunes incluyen los siguientes:
 * Actuación como middleware entre la CDN y su origen
 * Modificar el formato de las respuestas de API de terceros (y tal vez añadir las respuestas de varias API) antes de enviarlas al explorador
 * Composición y muestra de HTML procesado por el servidor en Edge con contenido reunido de varios backend
+
+Siga [este tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) para ver una explicación detallada de las variaciones de pila Java de Edge Delivery Services y AEM as a Cloud Service.
 
 *Al usar AEM Edge Functions Beta, reconoce que aún se encuentra en desarrollo y que no debe confiar en el correcto funcionamiento de la tecnología o en la disponibilidad de los datos. Esta función se proporciona tal cual,
 puede cambiar sin previo aviso y no está cubierto por los SLA de producción.*
@@ -363,10 +365,10 @@ AEM as a Cloud Service ahora es compatible con la exportación de telemetría ba
 
 Utilice esta integración para:
 
-&#x200B;- Investigar solicitudes lentas o fallidas
-&#x200B;- Seguimiento del estado de JVM y del uso de recursos a lo largo del tiempo
-&#x200B;- Creación de paneles y alertas para sus niveles de AEM
-&#x200B;- Correlación del comportamiento de AEM con otros servicios durante los incidentes
+- Investigar solicitudes lentas o fallidas
+- Seguimiento del estado de JVM y del uso de recursos a lo largo del tiempo
+- Creación de paneles y alertas para sus niveles de AEM
+- Correlación del comportamiento de AEM con otros servicios durante los incidentes
 
 Para unirte al alfa, envía un correo electrónico a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com), donde se describe tu caso de uso.
 
