@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
+source-git-commit: 0383afd23b330ccb958914444c9100cd97f03c7c
 workflow-type: tm+mt
-source-wordcount: '3984'
-ht-degree: 37%
+source-wordcount: '4035'
+ht-degree: 36%
 
 ---
 
@@ -64,6 +64,8 @@ Cargue la plantilla XFA (archivo XDP) en la instancia de AEM Forms. Realice los 
 El formulario adaptable ahora está configurado para utilizar un archivo XDP como plantilla para PDF de envío. Los siguientes pasos son [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
 
 ## Usar plantillas XDP personalizadas específicas de la configuración regional para PDF de envío {#locale-specific-custom-xdp-templates-for-document-of-record}
+
+<span class="preview"> La configuración de PDF de envío para formularios incrustados en páginas de AEM Sites y plantillas XDP personalizadas específicas de la configuración regional para el documento de registro se encuentran en el programa de usuario anticipado. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a estas funciones. </span>
 
 Al asociar una plantilla XFA personalizada (archivo XDP) como plantilla de PDF de envío, puede proporcionar versiones específicas de la configuración regional de la plantilla. AEM Forms selecciona automáticamente el XDP adecuado en función de la configuración regional del formulario al generar el PDF de envío.
 

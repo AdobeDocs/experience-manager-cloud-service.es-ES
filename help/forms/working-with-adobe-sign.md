@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
+source-git-commit: 0383afd23b330ccb958914444c9100cd97f03c7c
 workflow-type: tm+mt
-source-wordcount: '3341'
-ht-degree: 91%
+source-wordcount: '3379'
+ht-degree: 90%
 
 ---
 
@@ -194,6 +194,8 @@ Para seleccionar un servicio de Cloud Service y la petición de firma:
 ### Definir la caducidad de un documento para un acuerdo de Adobe Sign {#set-document-expiration-for-an-adobe-sign-agreement}
 
 Puede establecer una fecha límite de caducidad para los acuerdos de Adobe Sign, de modo que los destinatarios deban completar la firma en un número determinado de días. Cuando se envía un formulario, AEM Forms pasa el valor configurado a Adobe Sign como `daysUntilSigningDeadline`.
+
+<span class="preview"> La configuración de la caducidad del documento para los acuerdos de Adobe Sign se encuentra en el programa de usuarios que lo adoptaron por anticipado. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad. </span>
 
 Para establecer la caducidad del documento:
 
