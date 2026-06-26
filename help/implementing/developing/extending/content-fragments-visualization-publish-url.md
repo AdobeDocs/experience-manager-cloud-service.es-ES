@@ -3,9 +3,9 @@ title: 'Fragmentos de contenido visual: Entregar con la URL de publicación'
 description: Utilice la URL de publicación para enviar fragmentos de contenido visual.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 65d8d29ba13b0c5d8360aad4bc0742bd7f625922
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,6 @@ https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemp
 ```
 
 Esta URL devuelve un *documento HTML independiente* (que incluye CSS y estructura en línea) que se puede incrustar en cualquier contexto web.
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Los fragmentos de contenido visual están actualmente en disponibilidad limitada.
->
->Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Técnicas de incrustación: información general {#embedding-techniques-overview}
 
@@ -341,3 +333,16 @@ Utilice lo siguiente como guía de decisión para ayudarle a elegir la técnica 
 | ¿Necesita el prototipo más rápido, el mismo origen y los conflictos de CSS son aceptables? | Elemento en línea |
 | ¿Incrustar en Edge Delivery Services? | Bloque de incrustación (iframe debajo del capó) |
 | ¿Incrustar en páginas de AEM Sites? | Componente principal (DOM en la sombra, integrado) |
+
+
+## Recursos adicionales {#additional-resources}
+
+Hay recursos adicionales disponibles:
+
+* [Documentación de fragmentos de contenido de AEM](/help/sites-cloud/administering/content-fragments/overview.md)
+
+<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
+
+<!--
+* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
+-->

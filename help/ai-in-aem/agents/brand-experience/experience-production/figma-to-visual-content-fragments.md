@@ -3,9 +3,9 @@ title: Trabajo de Figma a fragmentos de contenido visual
 description: Descubra qué es el trabajo de Figma to Visual Content Fragments de Brand Experience Agent y qué puede hacer por usted.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -14,14 +14,6 @@ ht-degree: 0%
 # Trabajo de Figma a fragmentos de contenido visual {#figma-to-visual-content-fragments-job}
 
 El trabajo de Figma en fragmentos de contenido visuales de [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) automatiza el proceso de recreación de diseños Figma en Adobe Experience Manager (AEM) as a Cloud Service.
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->El trabajo de Figma a fragmentos de contenido visuales está actualmente en disponibilidad limitada.
->
->Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Información general {#overview}
 
@@ -40,7 +32,7 @@ Antes de empezar:
   Esto se logra mediante:
 
    * generación de un token personal en Figma
-   * iniciando sesión en Adobe Experience Cloud a las `https://experience.adobe.com`
+   * iniciando sesión en Adobe Experience Cloud en `https://experience.adobe.com`
    * conservando el token en `https://experience.adobe.com/#/aem/figmatocontentfragment`
 
 ## Para cargar un diseño {#to-upload-a-design}

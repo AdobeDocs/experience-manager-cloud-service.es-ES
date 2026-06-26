@@ -3,9 +3,9 @@ title: Fragmentos de contenido visual
 description: Obtenga información sobre cómo visualizar y publicar fragmentos de contenido visual mediante plantillas de HTML.
 feature: Content Fragments
 role: User, Developer
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,6 @@ Los fragmentos de contenido contienen contenido estructurado que está diseñado
 * El envío de un fragmento visual ayuda a la entrega omnicanal, para reutilizar experiencias modulares en varios canales, como la web, el correo electrónico o las aplicaciones móviles.
 
 El resultado procesado de un fragmento de contenido de AEM que utiliza el diseño de una plantilla de HTML adjunta se denomina *Fragmento de contenido visual*.
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Los fragmentos de contenido visual están actualmente en disponibilidad limitada.
->
->Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 Las plantillas de HTML contienen información de diseño, lo que permite la visualización de fragmentos de contenido. La conexión entre una plantilla y un fragmento de contenido se establece mediante la sintaxis de Handlebars para asignar etiquetas de HTML a tipos de datos (campos) definidos en el modelo de fragmento de contenido. Esta definición permite que el contenido creado en los campos respectivos del Editor de fragmentos de contenido se muestre en las ubicaciones adecuadas dentro de la plantilla.
 
