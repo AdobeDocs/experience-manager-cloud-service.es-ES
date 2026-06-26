@@ -5,7 +5,7 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 91b880dcff55531c49229eb034348ad9cf91dca2
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
@@ -76,3 +76,4 @@ Las métricas de caché se actualizan cada 24 horas.
 >[!TIP]
 >
 >Para obtener más información sobre cómo Cloud Manager y la red de distribución de contenido (CDN) interactúan con Dispatcher, consulte [Almacenamiento en caché en AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+

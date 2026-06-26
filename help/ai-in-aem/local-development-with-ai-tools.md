@@ -4,7 +4,7 @@ description: Aprenda a configurar herramientas de codificación de IA con contex
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: eac2d89b3cebc134b40fc0e537cf66c78fa1db50
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Cuatro componentes complementarios se ocupan de esto:
 | **Servidor MCP local de inicio rápido de AEM** | Expone datos en tiempo de ejecución activos de una instancia local de AEM SDK para admitir la resolución de problemas |
 | **Servidor MCP local de Dispatcher** | Habilita la validación y la inspección en tiempo de ejecución de una instancia de Dispatcher local |
 
-Revise los [tutoriales de desarrollo asistido por IA](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) para obtener instrucciones prácticas adicionales.
+Revise los [tutoriales de desarrollo asistido por IA](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) para obtener instrucciones prácticas adicionales.
 
 No dude en enviar un correo electrónico a [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) con comentarios para ayudar a dar forma al desarrollo del producto.
 
@@ -64,7 +64,7 @@ Adobe publica las aptitudes de AEM as a Cloud Service en el repositorio **[adobe
 
 ### Instalar aptitudes {#install-skills}
 
-Elija el método que coincida con la herramienta de codificación de IA. La instalación de habilidades una vez las pone a disposición de todos los proyectos de ese equipo. Consulte el tutorial [Configurar aptitudes de agente de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) para ver un tutorial concreto.
+Elija el método que coincida con la herramienta de codificación de IA. La instalación de habilidades una vez las pone a disposición de todos los proyectos de ese equipo. Consulte el tutorial [Configurar aptitudes de agente de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) para ver un tutorial concreto.
 
 #### Código Claude {#claude-code}
 
@@ -128,7 +128,7 @@ CTA Link (ctaLink) - Pathfield
 
 El agente hace eco de la especificación del campo para la confirmación y, a continuación, genera todos los archivos de componente. Los patrones admitidos son varios campos con elementos anidados compuestos, lógica condicional de mostrar/ocultar, extensión de componente principal mediante fusión de recursos de Sling y pruebas JUnit 5 con AEM Mocks. El diseño puede provenir de varias fuentes, incluyendo una descripción textual, una imagen o una URL de diseño Figma usando el servidor MCP de Figma.
 
-Obtenga más información siguiendo el [desarrollo de componentes mediante el tutorial de aptitudes de agente de AEM.](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
+Obtenga más información siguiendo el [desarrollo de componentes mediante el tutorial de aptitudes de agente de AEM.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
 
 ### Uso de la aptitud de migración {#use-the-migration-skill}
 
@@ -260,7 +260,7 @@ El servidor MCP de Dispatcher está empaquetado con AEM Dispatcher SDK. Permite 
 
 A diferencia de la aptitud de Dispatcher, el servidor MCP de Dispatcher expone solo herramientas: siete herramientas MCP y sin peticiones de datos ni recursos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3491964?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3491951?quality=12&learn=on)
 
 ### Requisitos previos {#prerequisites}
 
@@ -329,3 +329,4 @@ Otros IDE se pueden configurar de manera similar. `docs/DispatcherMCP.md` de SDK
 | `tail_logs` | Sigue los registros de tiempo de ejecución relevantes de Dispatcher y HTTPD |
 
 La superficie de MCP expone intencionadamente solo estas siete herramientas; los indicadores y los recursos permanecen en la capa de habilidad. La documentación de referencia completa está disponible en `docs/DispatcherMCP.md` dentro del SDK de Dispatcher extraído.
+

@@ -4,7 +4,7 @@ description: Estas son las notas de la versión de la vista previa del editor un
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: c5aec0d045162327bad3d0d03b22386bf2effe6e
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -35,3 +35,4 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 
 * Se han realizado mejoras de accesibilidad en las jerarquías de encabezados.
 * Se han realizado mejoras de accesibilidad para mantener el enfoque correctamente en la barra de ubicación para ayudar a la navegación mediante el teclado del editor.
+

@@ -5,7 +5,7 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 884f991bbc067b8c2d628600c18a89e5950df17c
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 13%
@@ -68,4 +68,5 @@ Los informes de SLA proporcionan información sobre el rendimiento del entorno d
 ## Previsualizar entornos {#preview}
 
 El entorno de vista previa está diseñado como una herramienta para que los autores de contenido revisen el contenido antes de publicarlo. Debido a esta funcionalidad, los entornos de vista previa no están diseñados con alta disponibilidad y no tienen una SLA asociada.
+
 

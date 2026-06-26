@@ -4,7 +4,7 @@ description: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud S
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 38073a8649930e679bf44c02b7efa0f3bcfd6b8a
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 99%
@@ -91,3 +91,4 @@ Adobe Experience League ofrece muchos recursos para aprender AEMaaCS.
 * [Novedades](what-is-new.md)
 * [Cambios importantes](aem-cloud-changes.md)
 * [Funciones en desuso y eliminadas](deprecated-removed-features.md)
+

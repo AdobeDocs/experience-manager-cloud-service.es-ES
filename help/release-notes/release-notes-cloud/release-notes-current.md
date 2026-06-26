@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 494148e276bec785513ba9528e70cb0d706bcc45
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '3035'
 ht-degree: 21%
@@ -41,7 +41,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491493/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -241,9 +241,9 @@ El servidor MCP local de Dispatcher permite que las herramientas de IA validen l
 
 Java 25 es la próxima versión de soporte a largo plazo (LTS) después de Java 21, que ofrece mejoras en rendimiento, productividad de desarrollador y seguridad:
 
-&#x200B;- **Rendimiento**: La reducción del espacio de memoria, la recolección de elementos no utilizados más eficiente y el calentamiento más rápido de JVM benefician las implementaciones nativas de la nube.
-&#x200B;- **Productividad del desarrollador**: la inicialización de objetos más limpia, la coincidencia de patrones más expresiva y la administración simplificada de tareas simultáneas reducen las plantillas y mejoran la claridad del código.
-&#x200B;- **Seguridad**: se ha modernizado la API de derivación de claves criptográficas para simplificar los flujos de trabajo de seguridad comunes.
+- **Rendimiento**: La reducción del espacio de memoria, la recolección de elementos no utilizados más eficiente y el calentamiento más rápido de JVM benefician las implementaciones nativas de la nube.
+- **Productividad del desarrollador**: la inicialización de objetos más limpia, la coincidencia de patrones más expresiva y la administración simplificada de tareas simultáneas reducen las plantillas y mejoran la claridad del código.
+- **Seguridad**: se ha modernizado la API de derivación de claves criptográficas para simplificar los flujos de trabajo de seguridad comunes.
 
 Para ayudar a las organizaciones a planificar las pruebas y la validación antes de la actualización necesaria del tiempo de ejecución de Java 25, Adobe proporciona las siguientes fechas objetivo. Cualquier actualización de esta cronología se comunicará mediante las notas de la versión.
 
@@ -320,10 +320,10 @@ AEM as a Cloud Service ahora es compatible con la exportación de telemetría ba
 
 Utilice esta integración para:
 
-&#x200B;- Investigar solicitudes lentas o fallidas
-&#x200B;- Seguimiento del estado de JVM y del uso de recursos a lo largo del tiempo
-&#x200B;- Creación de paneles y alertas para sus niveles de AEM
-&#x200B;- Correlación del comportamiento de AEM con otros servicios durante los incidentes
+- Investigar solicitudes lentas o fallidas
+- Seguimiento del estado de JVM y del uso de recursos a lo largo del tiempo
+- Creación de paneles y alertas para sus niveles de AEM
+- Correlación del comportamiento de AEM con otros servicios durante los incidentes
 
 Para unirte al alfa, envía un correo electrónico a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com), donde se describe tu caso de uso.
 
@@ -367,3 +367,4 @@ Puede encontrar una lista completa de las versiones de generar variaciones [aqu�
 ## Notas de la versión de Experience Cloud {#experience-cloud}
 
 Puede encontrar información sobre las versiones de otras aplicaciones de Experience Cloud [aquí](https://experienceleague.adobe.com/es/docs/release-notes/experience-cloud/current).
+
