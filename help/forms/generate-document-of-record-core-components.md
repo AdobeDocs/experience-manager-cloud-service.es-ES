@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
 workflow-type: tm+mt
-source-wordcount: '3320'
-ht-degree: 43%
+source-wordcount: '3984'
+ht-degree: 37%
 
 ---
 
@@ -37,8 +37,10 @@ Para crear una PDF de envío, una plantilla basada en XFA o AcroForm se combina 
 Puede hacer lo siguiente:
 
 * [Generar un PDF de envío basado en XFA](#generate-an-XFA-based-document-of-record)
+* [Usar plantillas XDP personalizadas específicas de la configuración regional para PDF de envío](#locale-specific-custom-xdp-templates-for-document-of-record)
 * [Generar un PDF de envío basado en AcroForm (Acrobat Form PDF)](#generate-an-Acroform-based-document-of-record)
 * [Generar automáticamente un PDF de envío](#auto-generate-a-document-of-record)
+* [Configuración de PDF de envío para formularios incrustados en páginas de AEM Sites](#configure-document-of-record-for-forms-embedded-in-aem-sites)
 
 ## Antes de comenzar {#components-to-automatically-generate-a-document-of-record}
 
@@ -60,6 +62,33 @@ Cargue la plantilla XFA (archivo XDP) en la instancia de AEM Forms. Realice los 
 1. Haga clic en **[!UICONTROL Listo]**.
 
 El formulario adaptable ahora está configurado para utilizar un archivo XDP como plantilla para PDF de envío. Los siguientes pasos son [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
+
+## Usar plantillas XDP personalizadas específicas de la configuración regional para PDF de envío {#locale-specific-custom-xdp-templates-for-document-of-record}
+
+Al asociar una plantilla XFA personalizada (archivo XDP) como plantilla de PDF de envío, puede proporcionar versiones específicas de la configuración regional de la plantilla. AEM Forms selecciona automáticamente el XDP adecuado en función de la configuración regional del formulario al generar el PDF de envío.
+
+### Funcionamiento de la selección de plantillas específicas de la configuración regional
+
+1. Cargue una plantilla XDP predeterminada en la instancia de AEM Forms. Por ejemplo, `a.xdp`.
+1. Para proporcionar plantillas localizadas, cree y cargue archivos XDP específicos de la configuración regional en la misma carpeta utilizando la convención de nombres `basename.<locale>.xdp`. Por ejemplo:
+
+   * `a.xdp` — plantilla predeterminada
+   * `a.fr.xdp` — Plantilla de configuración regional en francés
+   * `a.de.xdp` — Plantilla de configuración regional en alemán
+
+1. Configure el formulario adaptable para **asociar plantilla de formulario como la plantilla del documento de registro** y seleccione el archivo XDP predeterminado (por ejemplo, `a.xdp`).
+1. Cuando se genera un PDF de envío, AEM Forms utiliza la configuración regional del formulario para resolverlo. Para un formulario de configuración regional en francés, el sistema utiliza `a.fr.xdp` si existe; de lo contrario, vuelve al valor predeterminado `a.xdp`.
+
+### Ejemplo de flujo de trabajo
+
+1. En **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**, cargue `a.xdp` y `a.fr.xdp` a la misma carpeta (por ejemplo, `/content/dam/formsanddocuments/testlang/`).
+1. Configure las opciones del **[!UICONTROL documento de registro]** del formulario para asociar `a.xdp` como plantilla.
+1. Cuando un usuario rellena la versión en francés del formulario y genera o descarga el PDF de envío, PDF utiliza contenido de la plantilla XDP francesa (por ejemplo, texto de encabezado localizado y etiquetas de campo definidas en la plantilla).
+1. Las acciones de envío que incluyen un archivo adjunto de PDF de envío (como **[!UICONTROL Enviar correo electrónico]**) también incluyen el PDF apropiado para la configuración regional.
+
+>[!NOTE]
+>
+> La compatibilidad con plantillas XDP personalizadas específicas de la configuración regional se aplica cuando se asocia una plantilla de formulario como la plantilla de documento de registro. Para la localización de PDF de envío generada automáticamente, consulte [Usar la traducción automática o la traducción humana para traducir un formulario adaptable basado en componentes principales](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md).
 
 ## Generar un PDF de envío basado en AcroForm {#generate-an-Acroform-based-document-of-record}
 
@@ -113,12 +142,53 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 -->
 
 Puede usar acciones de envío como &quot;Enviar correo electrónico&quot;, &quot;Invocar un flujo de trabajo de AEM&quot;, &quot;Invocar un flujo de trabajo de Power Automate&quot; y otras [Acciones de envío](configuring-submit-actions.md) para recibir un PDF de envío.
-![Acciones de envío de imagen](/help/forms/assets/submit-actions-img.png)
+![Acciones de envío de imágenes](/help/forms/assets/submit-actions-img.png)
 
 
 >[!NOTE]
 >
 > Puede guardar la PDF de envío para cualquier modelo de datos de formulario mediante la propiedad **[!UICONTROL Campo de referencia de enlace de documento de registro]**.
+
+## Configuración de PDF de envío para formularios incrustados en páginas de AEM Sites {#configure-document-of-record-for-forms-embedded-in-aem-sites}
+
+Puede configurar y generar un PDF de envío (documento de registro) para Forms adaptable incrustado en páginas de AEM Sites mediante el componente **[!UICONTROL Contenedor de formulario adaptable]**. Los autores pueden establecer la configuración del DoR directamente en la página de Sites sin abrir el formulario en el editor de Forms.
+
+### Antes de comenzar
+
+* Se crea un formulario adaptable con el componente **[!UICONTROL Contenedor de formulario adaptable]** en una página de AEM Sites o un fragmento de experiencia. Para obtener más información, consulte [Agregar un formulario adaptable a una página de AEM Sites o Fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+* Las bibliotecas de cliente de Forms adaptables se agregan a la plantilla de página Sitios.
+
+### Configuración de PDF de envío en una página de Sites
+
+1. Abra la página de AEM Sites o el fragmento de experiencia que contenga el formulario incrustado en el modo Edición.
+1. Seleccione el componente **[!UICONTROL Contenedor de formulario adaptable]** en la página y haga clic en el icono de configuración ![Configurar](assets/configure-icon.svg).
+1. Abra la ficha **[!UICONTROL Documento de registro]**.
+1. Seleccione una de las siguientes opciones:
+
+   * **Ninguno** — No generar un PDF de envío.
+   * **Generar documento de registro**: genera automáticamente un PDF de envío.
+   * **Asociar plantilla de formulario como plantilla de documento de registro**: use una plantilla XDP o AcroForm personalizada. Examine y seleccione la plantilla de la instancia de AEM Forms.
+
+1. (Opcional) Seleccione **Excluir archivos adjuntos del documento de registro** para omitir los archivos adjuntos cargados del PDF de envío.
+1. Haga clic en **[!UICONTROL Listo]**.
+
+### Personalizar las propiedades del documento de registro
+
+Después de habilitar la generación de PDF de envío, puede personalizar la marca y el diseño en la página de Sites:
+
+1. Seleccione el panel raíz del formulario incrustado en el **[!UICONTROL contenedor de formulario adaptable]**.
+1. En la barra lateral de propiedades, abra la pestaña **[!UICONTROL Documento de registro]**.
+1. Configure las opciones en las fichas **[!UICONTROL Básico]**, **[!UICONTROL Propiedades del campo de formulario]** y **[!UICONTROL Propiedades de la página maestra]**. Para obtener detalles sobre cada propiedad, consulte [Personalizar la información de marca en Envío PDF](#customize-the-branding-information-in-document-of-record).
+1. Haga clic en **[!UICONTROL Listo]**.
+
+### Previsualización y descarga de PDF de envío
+
+* Obtenga una vista previa del formulario en la página de Sites y envíelo, o agregue un botón **Descargar documento de registro** con el [Editor de reglas](/help/forms/rule-editor-enhancements-use-cases.md#download-document-of-record) para generar el PDF de envío bajo demanda.
+* Las acciones de envío configuradas en el formulario incrustado (como **[!UICONTROL Enviar correo electrónico]** o **[!UICONTROL Invocar flujo de trabajo de AEM]**) pueden incluir el PDF de envío generado.
+
+>[!NOTE]
+>
+> La generación de PDF de envío para formularios incrustados en páginas de Sites es compatible con Forms adaptable creado con componentes principales en el componente **[!UICONTROL Contenedor de formulario adaptable]**. Para los formularios agregados mediante el componente **[!UICONTROL Forms adaptable: incrustado (v2)]**, configure el DoR en el editor de Forms.
 
 ## Actualizaciones incrementales en la plantilla de PDF de envío {#document-of-record-template-incremental-updates}
 
@@ -291,7 +361,7 @@ Siga siempre las [convenciones de plantilla base](#base-template-conventions) al
 
 ## Convenciones de plantilla base {#base-template-conventions}
 
-Se utiliza una plantilla base para definir el encabezado, el pie de página, el estilo y el aspecto de una PDF de envío. El encabezado y pie de página pueden incluir información como el logotipo de la empresa y la información de copyright. La primera página maestra de la plantilla base se copia y se utiliza como página maestra de la PDF de envíos, que contiene un encabezado, un pie de página, un número de página o cualquier otra información que deba aparecer en todas las páginas de la PDF de envíos. Si utiliza una plantilla base que no se ajusta a las convenciones de plantilla base, la primera página maestra de la plantilla se seguirá utilizando en la plantilla de PDF de envío. Se recomienda encarecidamente que diseñe la plantilla base según sus convenciones y que la utilice para la generación automática de PDF de envío.
+Se utiliza una plantilla base para definir el encabezado, el pie de página, el estilo y el aspecto de una PDF de envío. El encabezado y pie de página pueden incluir información como el logotipo de la compañía y la información de copyright. La primera página maestra de la plantilla base se copia y se utiliza como página maestra de la PDF de envíos, que contiene un encabezado, un pie de página, un número de página o cualquier otra información que deba aparecer en todas las páginas de la PDF de envíos. Si utiliza una plantilla base que no se ajusta a las convenciones de plantilla base, la primera página maestra de la plantilla se seguirá utilizando en la plantilla de PDF de envío. Se recomienda encarecidamente que diseñe la plantilla base según sus convenciones y que la utilice para la generación automática de PDF de envío.
 
 **Convenciones de la página maestra**
 
@@ -364,7 +434,7 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
       **Mostrar etiquetas para el menú desplegable de selección múltiple**
 
-      <span class="preview"> Esta característica está disponible a través del programa Acceso anticipado. Para solicitar acceso, envía un correo electrónico desde tu dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+      <span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
 
       El PDF de envío ahora muestra las etiquetas de visualización seleccionadas para los componentes desplegables de selección múltiple en lugar de los valores almacenados internos. Por ejemplo, si un usuario selecciona &quot;California&quot; y &quot;Nueva York&quot; en un menú desplegable, la PDF de envío muestra las etiquetas seleccionadas en lugar de los valores internos como `CA` y `NY`. Cada opción seleccionada aparece en una línea independiente en lugar de como valores separados por comas, lo cual concuerda con el comportamiento de [Forms adaptable basado en componentes de base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
@@ -425,7 +495,7 @@ La configuración del componente de documento de registro está disponible en su
 **Q: los cambios no aparecen en el PDF de envío.**
 **R:** Abra el formulario en el editor de Forms adaptable, realice una edición menor (por ejemplo, ajuste una etiqueta de campo o reordene un campo) y guarde el formulario. Esto regenera la plantilla de PDF de envío y los cambios aparecen en la siguiente PDF generada.
 
-## Ver también {#see-also}
+## Véase también {#see-also}
 
 {{see-also}}
 

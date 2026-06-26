@@ -6,10 +6,10 @@ Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites p
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
 workflow-type: tm+mt
-source-wordcount: '3312'
-ht-degree: 95%
+source-wordcount: '3501'
+ht-degree: 92%
 
 ---
 
@@ -210,7 +210,7 @@ Una acción de envío permite elegir el destino de los datos capturados mediante
 
 1. Abra el Editor de páginas de AEM o el Fragmento de experiencia que contiene el formulario adaptable.
 1. Abra el árbol de contenido y seleccione el **[!UICONTROL Contenedor de formularios adaptables]** que aloja su formulario adaptable. Una página de AEM Sites puede alojar varios formularios adaptables. Por lo tanto, seleccione cuidadosamente el contenedor de formularios adaptables correcto.
-1. Haga clic en el icono de las propiedades del contenedor del formulario adaptable ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar las acciones de envío.
+1. Haga clic en el icono ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) de las propiedades del contenedor del formulario adaptable. Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar las acciones de envío.
    ![Haga clic en el icono de llave inglesa para abrir el cuadro de diálogo del contenedor de formulario adaptable y configurar una Acción de Envío para el formulario adaptable](/help/forms/assets/adaptive-forms-container.png)
 1. Seleccione y configure una acción de envío según sus necesidades. Para obtener información detallada sobre las acciones de envío, consulte [Acción de envío del formulario adaptable](/help/forms/configuring-submit-actions.md)
 
@@ -226,7 +226,7 @@ Para configurar un esquema JSON o un modelo de datos de formulario (FDM) para su
 
 1. Abra el Editor de páginas de AEM o el Fragmento de experiencia que contiene el formulario adaptable.
 1. Abra el árbol de contenido y seleccione el **[!UICONTROL Contenedor de formularios adaptables]** que aloja su formulario adaptable. Una página de AEM Sites puede alojar varios formularios adaptables. Por lo tanto, seleccione cuidadosamente el contenedor de formularios adaptables correcto.
-1. Haga clic en el icono de las propiedades del contenedor del formulario adaptable ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar modelos de datos.
+1. Haga clic en el icono ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) de las propiedades del contenedor del formulario adaptable. Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar modelos de datos.
    ![Haga clic en el icono de la llave inglesa para configurar los modelos de datos del formulario adaptable](/help/forms/assets/form-data-model-adaptive-forms-container.png)
 1. Seleccione y configure un esquema JSON o un modelo de datos de formulario (FDM) según sus necesidades. Para obtener información detallada sobre las acciones de envío, consulte [Acción de envío del formulario adaptable](/help/forms/configuring-submit-actions.md).
 
@@ -234,6 +234,17 @@ Para configurar un esquema JSON o un modelo de datos de formulario (FDM) para su
    * Al seleccionar la opción **[!UICONTROL Esquema]**, utilice la opción **[!UICONTROL Esquema]** para seleccionar un esquema JSON para el formulario.
 
 1. Haga clic en **[!UICONTROL Listo]**.
+
+## Configuración de una PDF de envío (documento de registro) para un formulario en una página de AEM Sites o un fragmento de experiencia {#configure-document-of-record-for-form}
+
+Puede configurar la generación de PDF de envío (documento de registro) directamente desde el **[!UICONTROL contenedor de formulario adaptable]** en una página de AEM Sites o un fragmento de experiencia.
+
+1. Abra el Editor de páginas de AEM o el Fragmento de experiencia que contiene el formulario adaptable.
+1. Abra el árbol de contenido y seleccione el **[!UICONTROL Contenedor de formularios adaptables]** que aloja su formulario adaptable. Una página de AEM Sites puede alojar varios formularios adaptables. Por lo tanto, seleccione cuidadosamente el contenedor de formularios adaptables correcto.
+1. Haga clic en el icono de las propiedades del contenedor del formulario adaptable ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg).
+1. Abra la pestaña **[!UICONTROL Documento de registro]** y configure las opciones del DoR.
+
+Para obtener instrucciones detalladas, opciones compatibles, plantillas XDP personalizadas específicas de la configuración regional y personalización de la marca, consulte [Generar una PDF de envío (documento de registro) para Forms adaptable (componentes principales)](/help/forms/generate-document-of-record-core-components.md#configure-document-of-record-for-forms-embedded-in-aem-sites).
 
 ## Configurar la acción de relleno previo para un formulario en una página de AEM Sites o un fragmento de experiencia {#configure-prefill-service-for-form}
 
@@ -248,7 +259,7 @@ Puede utilizar el servicio de relleno previo del modelo de datos de formulario p
 
 1. Abra el Editor de páginas de AEM o el Fragmento de experiencia que contiene el formulario adaptable.
 1. Abra el árbol de contenido y seleccione el **[!UICONTROL Contenedor de formularios adaptables]** que aloja su formulario adaptable. Una página de AEM Sites puede alojar varios formularios adaptables. Por lo tanto, seleccione cuidadosamente el contenedor de formularios adaptables correcto.
-1. Haga clic en el icono de las propiedades del contenedor del formulario adaptable ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar modelos de datos.
+1. Haga clic en el icono ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) de las propiedades del contenedor del formulario adaptable. Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar modelos de datos.
    ![Haga clic en el icono de llave inglesa para abrir el cuadro de diálogo del contenedor de formulario adaptable y configurar el servicio de relleno para el formulario adaptable](/help/forms/assets/adaptive-forms-container.png)
 1. Seleccionar modelo de datos de formulario. Abra la pestaña **[!UICONTROL Básico]**. En el servicio de rellenado previo, seleccione **[!UICONTROL Servicio de rellenado previo del modelo de datos de formulario]**.
 1. Haga clic en **[!UICONTROL Listo]**. El formulario adaptable ahora está configurado para utilizar el rellenado previo del modelo de datos de formulario. Ahora puede usar el [editor de reglas](rule-editor.md) para crear reglas y rellenar previamente los campos del formulario.

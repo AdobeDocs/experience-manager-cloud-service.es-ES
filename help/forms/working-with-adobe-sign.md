@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
 workflow-type: tm+mt
-source-wordcount: '3249'
-ht-degree: 99%
+source-wordcount: '3341'
+ht-degree: 91%
 
 ---
 
@@ -61,11 +61,11 @@ Para configurar [!DNL Adobe Sign] para un formulario adaptable:
 1. [Habilitar [!DNL Adobe Sign] para un formulario adaptable](#enableadobsignforanadaptiveform)
 1. [Agregar campos de  [!DNL Adobe Sign]  a un formulario adaptable](#addadobesignfieldstoanadaptiveform)
 1. [Seleccionar [!DNL Adobe Sign] Cloud Service para un formulario adaptable](#select-adobe-sign-cloud-service-and-signing-order)
-
+1. [Definir la caducidad de un documento para un acuerdo de Adobe Sign](#set-document-expiration-for-an-adobe-sign-agreement)
 1. [Agregar destinatario de [!DNL Adobe Sign] a un formulario adaptable](#addsignerstoanadaptiveform)
 1. [Seleccionar acción de envío para un formulario adaptable](#selectsubmitactionforanadaptiveform)
 
-![Detalles del destinatario](assets/signer_details_new.png)
+![Configuración de firma electrónica que incluye la caducidad del documento (días) y la configuración del destinatario](assets/signer_details_new.png)
 
 ### Habilitar [!DNL Adobe Sign] para un formulario adaptable  {#enableadobesign}
 
@@ -191,20 +191,36 @@ Para seleccionar un servicio de Cloud Service y la petición de firma:
 
 1. [Agregue destinatarios a un formulario adaptable](working-with-adobe-sign.md#addsignerstoanadaptiveform) y seleccione el icono Listo ![Guardar](assets/save_icon.svg) para guardar los cambios.
 
+### Definir la caducidad de un documento para un acuerdo de Adobe Sign {#set-document-expiration-for-an-adobe-sign-agreement}
+
+Puede establecer una fecha límite de caducidad para los acuerdos de Adobe Sign, de modo que los destinatarios deban completar la firma en un número determinado de días. Cuando se envía un formulario, AEM Forms pasa el valor configurado a Adobe Sign como `daysUntilSigningDeadline`.
+
+Para establecer la caducidad del documento:
+
+1. En el explorador de contenido, seleccione **[!UICONTROL Contenedor de formulario]** y seleccione el icono **[!UICONTROL Configurar]** ![configurar](assets/Smock_Wrench_18_N.svg).
+1. En el navegador de propiedades, amplíe el acordeón **[!UICONTROL Firma electrónica]** y seleccione la opción **[!UICONTROL Habilitar Adobe Sign]**.
+1. En el campo **[!UICONTROL Caducidad del documento (días)]**, especifique el número de días dentro de los cuales los destinatarios deben completar la firma.
+
+1. Seleccione el icono Listo ![Guardar](assets/save_icon.svg) para guardar los cambios.
+
+>[!NOTE]
+>
+> El campo **[!UICONTROL Caducidad del documento (días)]** es opcional. Si lo deja vacío, el acuerdo no caduca.
+
 ### Agregar destinatarios a un formulario adaptable {#addsignerstoanadaptiveform}
 
 Puede tener uno o varios destinatarios para un acuerdo de Adobe Sign. Al agregar un destinatario, también se pueden configurar los detalles de autenticación del mismo y seleccionar si el usuario que rellena el formulario y el destinatario son la misma persona. Realice los siguientes pasos para agregar y proporcionar varios detalles sobre un destinatario:
 
 1. En el explorador de contenido, seleccione **[!UICONTROL Contenedor de formulario]** y seleccione el icono **[!UICONTROL Configurar]** ![configurar](assets/Smock_Wrench_18_N.svg). Se abrirá el explorador de propiedades con las propiedades del contenedor de formularios adaptables.
 1. En el navegador de propiedades, amplíe el acordeón **[!UICONTROL Firma electrónica]** y seleccione la opción **[!UICONTROL Habilitar Adobe Sign]**. Se habilita [!DNL Adobe Sign] para un formulario adaptable.
-1. Seleccione **[!UICONTROL Agregar destinatario]**. Se agrega un destinatario al formulario adaptable. Puede agregar varios destinatarios a un formulario adaptable. Todos los destinatarios reciben un acuerdo de Adobe Sign al presentar el formulario adaptable.
+1. Seleccione **[!UICONTROL Agregar destinatario]**. Agrega un destinatario al formulario adaptable. Puede agregar varios destinatarios a un formulario adaptable. Todos los destinatarios reciben un acuerdo de Adobe Sign al enviar el formulario adaptable.
    ![phone-details](assets/recipient-settings.png)
 
 1. Haga clic en el icono **[!UICONTROL Editar]** ![Edit](assets/Smock_Edit_18_N.svg) para especificar la siguiente información sobre el destinatario:
 
    * **[!UICONTROL Título]:** especifique un título para identificar un destinatario de forma única.
 
-   * **[!UICONTROL ¿Son la misma persona el destinatario y quien rellena el formulario?]:** seleccione **[!UICONTROL Sí]**, si la persona que rellena el formulario y el primer destinatario son la misma persona. <!-- If the option is set to **No,** then do not use the signature step component in the Adaptive Form. If the form contains a Signature Step component, then the field is automatically set to Yes. -->
+   * **[!UICONTROL ¿El destinatario y quien rellena el formulario son la misma persona?]:** Seleccione **[!UICONTROL Sí]**, si la persona que rellena el formulario y el primer destinatario son la misma persona. <!-- If the option is set to **No,** then do not use the signature step component in the Adaptive Form. If the form contains a Signature Step component, then the field is automatically set to Yes. -->
 
    * **[!UICONTROL Función de destinatario]:** seleccione la función de un destinatario. Adobe Sign para los niveles de servicio empresarial y para empresa tiene la opción de ampliar las [funciones para los destinatarios del acuerdo](https://helpx.adobe.com/es/sign/using/set-up-signer-approver-roles.html), más allá de **Firmante**, para que coincida mejor con sus requisitos de flujo de trabajo.
 
@@ -301,7 +317,7 @@ De forma opcional, también puede asociar un bindref al ID del acuerdo (agreemen
 >Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
-La experiencia de firma de formularios está lista. Puede obtener una vista previa del formulario para comprobar la experiencia de firma. En el formulario publicado, los campos de [!DNL Adobe Sign] Block se muestran cuando un destinatario recibe el formulario para firmar a través de un correo electrónico. Si la opción **[!UICONTROL ¿Cuándo son la misma persona el destinatario y quien rellena el formulario?]** se marca como sí y se cumple la condición, se redirige al usuario al acuerdo de Adobe Sign después de los envíos y el usuario puede firmar el documento inmediatamente, en lugar de esperar a que el acuerdo aparezca en el correo electrónico.
+La experiencia de firma de formularios está lista. Puede obtener una vista previa del formulario para comprobar la experiencia de firma. En el formulario publicado, los campos de [!DNL Adobe Sign] Block se muestran cuando un destinatario recibe el formulario para firmar a través de un correo electrónico. ¿Cuándo es la misma persona **[!UICONTROL que el destinatario y quien rellena el formulario?]** se marca como sí y se cumple la condición, se redirige al usuario al acuerdo de Adobe Sign después de los envíos y el usuario puede firmar el documento inmediatamente, en lugar de esperar a que el acuerdo aparezca en el correo electrónico.
 
 ## Configuración de firmas en la nube para un formulario adaptable {#configure-cloud-signatures-for-an-adaptive-form}
 
@@ -349,21 +365,21 @@ El componente **[!UICONTROL Paso de resumen]** envía automáticamente el formul
 
 ## Preguntas frecuentes {#frequently-asked-questions}
 
-**P:** Puede incrustar un formulario adaptable en otro formulario adaptable. ¿Se puede habilitar [!DNL Adobe Sign] para el formulario adaptable incrustado?
-**R:** No, Experience Manager Forms no es compatible con el uso de un formulario adaptable que incrusta un formulario adaptable con [!DNL Adobe Sign] habilitado para firmar.
+**Q:** Puede incrustar un formulario adaptable en otro formulario adaptable. ¿Se puede habilitar para [!DNL Adobe Sign] el formulario adaptable incrustado?
+**R:** No, Experience Manager Forms no es compatible con el uso de un formulario adaptable que incrusta un formulario adaptable habilitado para [!DNL Adobe Sign] para firmar
 
-**P:** Cuando creo un formulario adaptable utilizando la plantilla avanzada y lo abro para editarlo, aparece un mensaje de error “La firma electrónica o los destinatarios no están correctamente configurados” . ¿Cómo se resuelve el mensaje de error?
+**Q:** Cuando creo un formulario adaptable utilizando la plantilla avanzada y lo abro para editarlo, aparece un mensaje de error &quot;La firma electrónica o los destinatarios no están correctamente configurados&quot;. ¿Cómo se resuelve el mensaje de error?
 **R:** El formulario adaptable creado con la plantilla avanzada está configurado para usar [!DNL Adobe Sign]. Para resolver el error, cree y seleccione una configuración de nube de [!DNL Adobe Sign] y configure un destinatario de [!DNL Adobe Sign] para el formulario adaptable.
 
-**P:** ¿Puedo usar etiquetas de texto de [!DNL Adobe Sign] en un componente de texto estático de un formulario adaptable?
-**R:** Sí, puede utilizar etiquetas de texto en un componente de texto para agregar campos de [!DNL Adobe Sign] a un documento de registro (solo para la opción Documento de registro generado automáticamente) habilitado como formulario adaptable. Para obtener más información sobre el procedimiento y las reglas para crear una etiqueta de texto, consulte [Documentación de Adobe Sign](https://helpx.adobe.com/es/sign/using/text-tag.html). Tenga en cuenta también que los formularios adaptables tienen una compatibilidad limitada con las etiquetas de texto. Puede utilizar las etiquetas de texto para crear solo los campos compatibles con [Adobe Sign Block](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
+**Q:** ¿Puedo usar etiquetas de texto de [!DNL Adobe Sign] en un componente de texto estático de un formulario adaptable?
+**R:** Sí, puede usar etiquetas de texto en un componente de texto para agregar [!DNL Adobe Sign] campos a un documento de registro (solo para la opción Documento de registro generado automáticamente) habilitado como formulario adaptable. Para obtener más información sobre el procedimiento y las reglas para crear una etiqueta de texto, consulte [Documentación de Adobe Sign](https://helpx.adobe.com/es/sign/using/text-tag.html). Tenga en cuenta también que los Forms adaptables tienen una compatibilidad limitada con las etiquetas de texto. Puede usar las etiquetas de texto para crear solo los campos compatibles con [Adobe Sign Block](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
 
 ## Solución de problemas {#troubleshoot}
 
 ### Errores del acuerdo de [!DNL Adobe Sign] {#adobe-sign-agreement-failures}
 
 **Problema**
-Cuando el servicio de [!DNL Adobe Sign] está configurado para un formulario adaptable, el servicio no consigue crear un acuerdo de [!DNL Adobe Sign] para el formulario adaptable subyacente.
+Cuando el servicio [!DNL Adobe Sign] está configurado para un formulario adaptable, el servicio no consigue crear un acuerdo de [!DNL Adobe Sign] para el formulario adaptable subyacente.
 
 **Resolución**
 
