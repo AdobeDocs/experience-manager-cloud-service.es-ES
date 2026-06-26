@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: 40c02806-76a2-43ed-982c-0410c2125a36
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -95,14 +95,6 @@ Puede obtener una vista previa de un fragmento de contenido en una aplicación e
 1. Seleccione **Aplicación** para abrir el fragmento en la aplicación externa; por ejemplo, el [Editor universal](/help/implementing/universal-editor/introduction.md).
 
 ## Vista previa con plantillas de visualización (HTML) {#preview-with-visualization-html-templates}
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Los fragmentos de contenido visual están actualmente en disponibilidad limitada.
->
->Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 AEM le permite obtener una vista previa del fragmento de contenido mediante un diseño visual basado en una plantilla de HTML.
 

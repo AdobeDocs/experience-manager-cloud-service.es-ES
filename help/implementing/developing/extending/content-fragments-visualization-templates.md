@@ -3,9 +3,9 @@ title: Creación de plantillas de visualización para fragmentos de contenido
 description: Vista previa y publicación de fragmentos de contenido con plantillas de visualización. Descubra cómo puede crear y personalizar las plantillas.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: c2f78402233872c0b9b8c12e767130f461366b24
+source-git-commit: 0fe5e82962b7407d879f937d859d54aa6cb739f3
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '2083'
 ht-degree: 3%
 
 ---
@@ -13,14 +13,6 @@ ht-degree: 3%
 # Fragmentos de contenido visual: plantillas {#visual-content-fragments-templates}
 
 En Adobe Experience Manager (AEM) as a Cloud Service, las plantillas de HTML se pueden utilizar para visualizar fragmentos de contenido y entregarlos en formato HTML.
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Los fragmentos de contenido visual y el trabajo de Figma en fragmentos de contenido visuales están actualmente en disponibilidad limitada.
->
->Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 Las plantillas de HTML permiten controlar cómo se muestran los fragmentos de contenido. Puede crear plantillas de HTML en el editor de código que elija, luego cargarlas y asignarlas a modelos de fragmentos de contenido en AEM.  Los marcadores de posición de contenido que utilizan Handlebars.js permiten asignar la plantilla a tipos de datos en el modelo de fragmento de contenido. Una vez asignada a un modelo, una plantilla está disponible para utilizarse con cualquier fragmento de contenido basado en el modelo, para visualizar el fragmento o para enviarlo como una experiencia modular en formato HTML a cualquier canal, por ejemplo web, correo electrónico, aplicación móvil u otros.
 
@@ -1281,3 +1273,8 @@ Hay recursos adicionales disponibles:
 * [Ayudantes integrados de Handlebars](https://handlebarsjs.com/guide/builtin-helpers.html)
 * [Documentación de fragmentos de contenido de AEM](/help/sites-cloud/administering/content-fragments/overview.md)
 
+<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
+
+<!--
+* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
+-->

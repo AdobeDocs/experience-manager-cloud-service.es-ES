@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2919670732d924cb1d473be59513044239a780e6
+source-git-commit: 65cac96f2d99100ffd50679c0c2b19da232efa70
 workflow-type: tm+mt
-source-wordcount: '2553'
-ht-degree: 28%
+source-wordcount: '2525'
+ht-degree: 29%
 
 ---
 
@@ -69,15 +69,6 @@ Los fragmentos de contenido también se pueden entregar en:
 
    * proporciona una representación visual para ayudar a obtener una vista previa y revisar el contenido
    * proporciona una representación visual para el uso directo e inmediato por canales y aplicaciones externos
-
-  <!-- CQDOC-23232 - remove when GA -->
-
-  >[!NOTE]
-  >
-  >Los fragmentos de contenido visual están actualmente en disponibilidad limitada.
-  >
-  >Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
-
 
 El número de canales de comunicación aumenta de forma anual. Normalmente, los canales hacen referencia al mecanismo de entrega, ya sea como los siguientes:
 

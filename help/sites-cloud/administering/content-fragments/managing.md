@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2919670732d924cb1d473be59513044239a780e6
+source-git-commit: 7e93b570e6b249432680308bee4de789e358f26c
 workflow-type: tm+mt
-source-wordcount: '3402'
-ht-degree: 31%
+source-wordcount: '3451'
+ht-degree: 30%
 
 ---
 
@@ -405,14 +405,6 @@ Puede hacer lo siguiente:
 
    * Con [Plantillas De Visualización](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)
 
-     <!-- CQDOC-23232 - remove when GA -->
-
-     >[!NOTE]
-     >
-     >Los fragmentos de contenido visual están actualmente en disponibilidad limitada.
-     >
-     >Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
-
    * En la instancia [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)
 
 * Publicar los fragmentos de contenido en:
@@ -654,14 +646,37 @@ Cuando se seleccione, aparecerá como un predicado de filtro y la lista se filtr
 
 ## Búsqueda de fragmentos {#searching-fragments}
 
-El cuadro de búsqueda admite la búsqueda de texto completo. Introducción de los términos de búsqueda en el cuadro de búsqueda:
+La consola Fragmento de contenido admite:
 
-![Consola Fragmentos de contenido: búsqueda](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-specification.png)
+* [Búsqueda de texto completo](#full-text-search)
+* [Búsqueda semántica](#semantic-search)
 
-Proporcionará los resultados seleccionados:
+<!-- CQDOC-23674 - activate when toggle visible -->
+<!--
 
-![Consola Fragmentos de contenido: resultados de búsqueda](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-results.png)
+Use the toggle option to select your search method:
+
+![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
+-->
 
 El cuadro de búsqueda también proporciona acceso rápido a **Fragmentos de contenido recientes** y **Búsquedas guardadas**:
 
 ![Consola Fragmentos de contenido: reciente y guardado](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-saved.png)
+
+### Búsqueda de texto completo {#full-text-search}
+
+La búsqueda de texto completo le permite buscar en el contenido del fragmento de contenido una palabra o frase específica. Introducción de los términos de búsqueda en el cuadro de búsqueda:
+
+![Consola de fragmentos de contenido: búsqueda de texto completo](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-specification.png)
+
+Proporcionará los resultados seleccionados:
+
+![Consola Fragmentos de contenido: resultados de búsqueda](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
+
+### Búsqueda semántica {#semantic-search}
+
+La búsqueda semántica de fragmentos de contenido mejora la detección de contenido al permitir consultas en lenguaje natural. Permite encontrar fragmentos basados en el significado y la intención, en lugar de depender únicamente de palabras clave exactas o coincidencias de texto completo.
+
+Escriba la consulta de búsqueda en el cuadro de búsqueda; por ejemplo `fruity and light roast`:
+
+![Consola de fragmentos de contenido: búsqueda semántica](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)

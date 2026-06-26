@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 2919670732d924cb1d473be59513044239a780e6
+source-git-commit: 65cac96f2d99100ffd50679c0c2b19da232efa70
 workflow-type: tm+mt
-source-wordcount: '2938'
+source-wordcount: '2910'
 ht-degree: 6%
 
 ---
@@ -555,14 +555,6 @@ Ambas opciones están disponibles con **Vista previa** en la barra de herramient
 * **Plantilla**
 
    * Esta opción le permite obtener una vista previa del fragmento de contenido con **[Plantillas de visualización (HTML)](#preview-with-visualization-html-templates)**.
-
-     <!-- CQDOC-23232 - remove when GA -->
-
-     >[!NOTE]
-     >
-     >Los fragmentos de contenido visual están actualmente en disponibilidad limitada.
-     >
-     >Si desea participar, envíe una solicitud desde su dirección de correo electrónico oficial a [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Publicación del fragmento {#publish-content-fragment}
 
