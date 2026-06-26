@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 64ad7ab638f71f0dcaf5384b29499e75085c778f
+source-git-commit: 1bb231d04e0b418a3b56de34c70424d06f94a4e1
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3862'
 ht-degree: 17%
 
 ---
@@ -303,7 +303,7 @@ AEM Cloud Service sigue admitiendo la compilación de código de cliente con Jav
 
 #### Funciones de AEM Edge (*Programa Beta* público) {#edge-functions}
 
-[Funciones de AEM Edge](/help/implementing/developing/introduction/edge-functions.md) ahora se encuentra en la versión beta pública, por lo que puede probarlo sin ponerse en contacto con Adobe para habilitarlo.
+[Funciones de AEM Edge](/help/implementing/developing/introduction/edge-functions.md) ahora se encuentra en la versión beta pública, por lo que puede probarlas de forma automática sin ponerse en contacto con Adobe para habilitarlas.
 
 Esta función le permite ejecutar JavaScript en la capa de CDN, lo que acerca el procesamiento de datos al usuario final. Esto reduce la latencia y permite experiencias dinámicas y adaptables en Edge. Está disponible para proyectos AEM Cloud Service Java Stack y Edge Delivery Services para clientes de AEM Sites.
 
@@ -313,6 +313,8 @@ Los casos de uso comunes incluyen los siguientes:
 * Actuación como middleware entre la CDN y su origen
 * Modificar el formato de las respuestas de API de terceros (y tal vez añadir las respuestas de varias API) antes de enviarlas al explorador
 * Composición y muestra de HTML procesado por el servidor en Edge con contenido reunido de varios backend
+
+Siga [este tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) para ver una explicación detallada de las variaciones de pila Java de Edge Delivery Services y AEM as a Cloud Service.
 
 *Al usar AEM Edge Functions Beta, reconoce que aún se encuentra en desarrollo y que no debe confiar en el correcto funcionamiento de la tecnología o en la disponibilidad de los datos. Esta función se proporciona tal cual,
 puede cambiar sin previo aviso y no está cubierto por los SLA de producción.*
