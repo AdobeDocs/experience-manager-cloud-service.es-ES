@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: c0323e54ce74f0b56c9a60f3bdca1ab4a7426116
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 66%
+source-wordcount: '1010'
+ht-degree: 56%
 
 ---
 
@@ -67,17 +67,17 @@ Para obtener más información acerca de la administración de versiones, vea [A
 
 En las implementaciones de fase y producción se genera una versión automática. Consulte [Administración de versiones del proyecto Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
-Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión de Maven adecuada como `1.0.0`. Actualice la versión cada vez que implemente en la producción.
+Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión de Maven adecuada en tres partes, como `1.0.0`. Actualice la versión cada vez que implemente en la producción.
 
-Cloud Manager agrega automáticamente su versión a las generaciones de fase y producción y crea una rama de Git. No se requiere ninguna configuración especial. Si no establece una versión de Maven, la implementación se realiza correctamente y se establece una versión automáticamente.
+Cloud Manager agrega automáticamente su versión a las generaciones de fase y producción y crea una rama de Git. No se requiere ninguna configuración especial. Si no establece una versión de Maven, la implementación se realizará correctamente y se establecerá una versión automáticamente.
 
-## Mi generación de Maven falla en las implementaciones de Cloud Manager, pero se genera localmente sin errores. ¿Qué está mal? {#maven-build-fail}
+## Mi generación de Maven falla en las implementaciones de Cloud Manager, pero se genera localmente sin errores. ¿Cuál es la causa? {#maven-build-fail}
 
 Consulte [este recurso de Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) para obtener más información.
 
 ## ¿Qué puedo hacer si una implementación de Cloud Manager falla en el paso de implementación en AEM as a Cloud Service? {#cloud-manager-deployment-cloud-service}
 
-El motivo más común para que una implementación falle es que no tenga los permisos suficientes para el usuario `sling-distribution-importer`. En este caso, el paso de implementación falla durante una implementación de Cloud Manager y se generan errores como los siguientes.
+El motivo más común para que una implementación falle es la falta de permisos suficientes para el usuario `sling-distribution-importer`. En este caso, el paso de implementación falla durante una implementación de Cloud Manager y se generan errores como los siguientes.
 
 ```text
 [Queue Processor for Subscriber agent forwardPublisherSubscriber] org.apache.jackrabbit.vault.fs.io.Importer Error while committing changes. Retrying import from checkpoint at /. Retries 4/10
@@ -88,7 +88,7 @@ Caused by: org.apache.sling.api.resource.PersistenceException: Unable to commit 
 Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventAdminAsyncThread #7] org.apache.sling.distribution.journal.impl.publisher.DistributionPublisher [null] Error processing distribution package` `dstrpck-1583514457813-c81e7751-2da6-4d00-9814-434187f08d32. Retry attempts 344/infinite. Message: Error trying to extract package at path /etc/packages/com.myapp/myapp-base.ui.content-5.1.0-SNAPSHOT.
 ```
 
-El usuario `sling-distribution-importer` necesita permisos adicionales para las rutas de contenido definidas en el `ui.content package`. Esta regla generalmente requiere agregar permisos para `/conf` y `/var`.
+El usuario `sling-distribution-importer` necesita permisos adicionales para las rutas de contenido definidas en el `ui.content package`. Esta configuración generalmente requiere agregar permisos para `/conf` y `/var`.
 
 La solución es agregar un script de [configuración de RepositoryInitializer OSGi](/help/implementing/deploying/overview.md#repoint) a su paquete de implementación de aplicaciones para agregar ACL para el usuario `sling-distribution-importer`.
 
@@ -98,16 +98,16 @@ Este es un ejemplo de [`org.apache.sling.jcr.repoinit.RepositoryInitializer-Dist
 
 ## Mi implementación de Cloud Manager falla en el paso de implementación en AEM as a Cloud Service y ya he agregado una configuración OSGi de RepositoryInitializer. ¿Qué más puedo hacer? {#build-failures}
 
-Si [agregar una configuración OSGi de RepositoryInitializer](#cloud-manager-deployment-cloud-service) no resolvió el error, puede deberse a uno de los siguientes problemas adicionales.
+Si [agregar una configuración OSGi de RepositoryInitializer](#cloud-manager-deployment-cloud-service) no resolvió el error, puede deberse a uno de los siguientes problemas:
 
-* Es posible que la implementación falle debido a una configuración de OSGi no válida que interrumpe un servicio predeterminado.
+* La implementación falla debido a una configuración de OSGi no válida que interrumpe un servicio predeterminado.
    * Compruebe los registros durante la implementación para ver si hay algún error obvio.
 
-* Es posible que la implementación falle debido a configuraciones de Dispatcher o Apache no válidas.
+* La implementación falla debido a configuraciones Dispatcher o Apache no válidas.
    * Asegúrese de probar las configuraciones de Apache y Dispatcher localmente mediante la imagen Docker incluida en el SDK.
-   * Consulte [Dispatcher en la nube](/help/implementing/dispatcher/disp-overview.md#content-delivery) sobre cómo configurar el contenedor de Docker de Dispatcher para facilitar las pruebas locales.
+   * Consulte [Dispatcher en la nube](/help/implementing/dispatcher/disp-overview.md#content-delivery) para saber cómo configurar el contenedor de Dispatcher Docker para facilitar las pruebas locales.
 
-* Es posible que la implementación falle debido a algún otro error durante la replicación de los paquetes de contenido (distribución Sling) de las instancias de autor a publicación.
+* La implementación falla debido a algún otro error durante la replicación de los paquetes de contenido (distribución Sling) de instancias de autor a publicación.
    * Siga estos pasos para simular el problema en una configuración local.
       1. Instale una instancia de autor y una instancia de publicación localmente mediante los últimos jars de AEM SDK.
       1. Inicie sesión en la instancia de autor.
@@ -116,7 +116,7 @@ Si [agregar una configuración OSGi de RepositoryInitializer](#cloud-manager-dep
 
 ## No puedo establecer una variable mediante un comando aio. ¿Qué puedo hacer? {#set-variable}
 
-Puede recibir un error `403` como el siguiente al intentar enumerar o establecer variables de canalización mediante `aio` comandos.
+Recibirá un error `403` como el siguiente al intentar enumerar o establecer variables de canalización mediante `aio` comandos.
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables 222
@@ -136,4 +136,4 @@ Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/
 
 En este caso, el usuario que ejecuta estos comandos necesita que lo agreguen a la función de **Administrador de implementación** en Admin Console.
 
-Consulte [Permisos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/) para obtener más información.
+Consulte [Permisos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions) para obtener más información.
