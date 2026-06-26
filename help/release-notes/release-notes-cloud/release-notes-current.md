@@ -6,10 +6,10 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 1bb231d04e0b418a3b56de34c70424d06f94a4e1
+source-git-commit: 72bacdb87edd7dd6f73a7966b01665b52cea57eb
 workflow-type: tm+mt
-source-wordcount: '3862'
-ht-degree: 17%
+source-wordcount: '4226'
+ht-degree: 16%
 
 ---
 
@@ -100,18 +100,21 @@ AEM ahora admite [Fragmentos de contenido visual](/help/sites-cloud/administerin
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Editar archivos PSD en el editor incrustado de Adobe Express**
+**Abrir recursos de Photoshop en el editor incrustado de Adobe Express**
 
-Ahora puede editar archivos PSD además de los formatos JPEG y PNG en el editor incrustado de Adobe Express desde la vista de Assets. Esta mejora permite a los equipos creativos y de marketing trabajar con archivos de diseño por niveles sin salir de los AEM Assets, lo que optimiza las actualizaciones de contenido y reduce la necesidad de cambiar entre aplicaciones. La compatibilidad con PSD acelera los flujos de trabajo de creación de contenido, a la vez que preserva la flexibilidad de los recursos de diseño de origen.
+Ahora puede abrir archivos Adobe Photoshop (.psd) además de los formatos JPEG y PNG en el editor incrustado de Adobe Express desde la vista de Assets y Content Hub. Esta mejora permite a los equipos creativos y de marketing trabajar con archivos de diseño por niveles sin salir de los AEM Assets, lo que optimiza las actualizaciones de contenido y reduce la necesidad de cambiar entre aplicaciones. La compatibilidad con PSD acelera los flujos de trabajo de creación de contenido, a la vez que preserva la flexibilidad de los recursos de diseño de origen. Los usuarios pueden guardar las creaciones remezcladas resultantes como recursos listos para el canal en AEM.
 
 **Importar recursos de Adobe Illustrator y Adobe InDesign de AEM Assets a Adobe Express**
 
-Adobe Express ahora admite la importación de archivos Adobe Illustrator (.ai) y Adobe InDesign (.indd) desde AEM Assets. Esta capacidad permite a los equipos creativos y de marketing acceder y reutilizar los recursos de diseño aprobados con mayor facilidad, lo que acelera la creación de contenido y ayuda a garantizar experiencias de marca coherentes en todos los canales.
+Adobe Express ahora admite la importación de archivos Adobe Illustrator (.ai) y Adobe InDesign (.indd) de AEM Assets mediante el complemento Assets. Los archivos de Adobe Illustrator se pueden importar en el documento actual o en un nuevo documento Express. Los archivos Adobe InDesign se pueden importar en un nuevo documento Express. Esta capacidad permite a los equipos creativos y de marketing acceder y reutilizar los recursos de diseño aprobados con mayor facilidad, lo que acelera la creación de contenido y ayuda a garantizar experiencias de marca coherentes en todos los canales.
 
+>[!IMPORTANT]
+>
+>Esta función está disponible como función de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
 
 **Mantener linaje de recursos entre Adobe Express y los AEM Assets**
 
-Los AEM Assets ahora conservan la información de linaje de los recursos creados en Adobe Express mediante recursos procedentes de AEM. Esta capacidad registra las relaciones entre los recursos de origen y el contenido resultante, lo que permite a las organizaciones rastrear cómo se reutilizan los recursos aprobados en los flujos de trabajo creativos.
+Los AEM Assets ahora conservan la información de linaje de los recursos creados en Adobe Express mediante recursos procedentes de AEM. Esta capacidad registra las relaciones entre los recursos de origen y el contenido resultante y lo almacena como metadatos de recurso en AEM, lo que permite a las organizaciones rastrear cómo se reutilizan los recursos aprobados en los flujos de trabajo creativos.
 
 Al mantener los metadatos de linaje de recursos, los equipos pueden mejorar la gobernanza, el cumplimiento y la transparencia de supply chain de contenido. También ayuda a los especialistas en marketing y a los administradores de contenido a comprender mejor la reutilización de recursos, apoyar las iniciativas de administración de derechos y rastrear el origen de los recursos utilizados en el contenido publicado.
 
@@ -119,15 +122,15 @@ Al mantener los metadatos de linaje de recursos, los equipos pueden mejorar la g
 >
 >Esta función está disponible como función de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
 
-**Integración de AEM con los metadatos de campaña estándar de planificación de Workfront**
+**Integración de AEM con Workfront Planning y GenStudio for Performance Marketing para metadatos de campaña estándar**
 
-Cuando AEM Assets está integrado con Workfront Planning, los campos de metadatos de campaña, incluidos Campaign, Region, Channel, Persona y Product, ahora están disponibles en las propiedades del recurso en una pestaña de Campaign de solo lectura.
+Cuando AEM Assets está integrado con [Workfront Planning y GenStudio for Performance Marketing](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), los campos de metadatos de campaña, incluidos Nombre de campaña, Región, Canal, Persona y Producto, ahora están disponibles en el carril de propiedades de la vista de recursos en una pestaña de solo lectura dedicada de Campaign. Cuando los usuarios de Workfront Planning conectan recursos de AEM a GenStudio con los objetos respectivos de Adobe GenStudio Workspace, se añaden automáticamente valores específicos (por ejemplo, un nombre de campaña específico) a los metadatos del recurso de AEM.
 
 La integración permite a los usuarios descubrir y buscar recursos rápidamente en función de los atributos de la campaña. Esta mejora mejora mejora la capacidad de búsqueda de recursos, optimiza los flujos de trabajo de administración de contenido y ayuda a los equipos a localizar los recursos adecuados para iniciativas de marketing específicas de forma más eficaz.
 
 >[!IMPORTANT]
 >
->Esta función está disponible como función de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
+>Esta función está disponible como función de disponibilidad limitada y requiere licencias para Workfront Planning y GenStudio for Performance Marketing. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
 
 
 ### Nuevas funciones en Dynamic Media con funciones de OpenAPI {#new-features-dynamic-media-openapi}
@@ -234,8 +237,7 @@ El [trabajo de solución de problemas de canalización](/help/ai-in-aem/agents/b
 
 #### Administre las horas tranquilas y actualice los períodos gratuitos con el asistente de IA {#quiet-hours-ai}
 
-Ahora puede ver, crear y editar [Horas tranquilas y actualizar periodos gratis](/help/ai-in-aem/agents/brand-experience/development/development.md#control-updates-job) directamente a través del Asistente de IA de AEM.
-La principal ventaja es que se cometen menos errores de programación. A medida que realiza una solicitud, el asistente le guía a través de lo que es posible y marca los límites aplicables, como el límite de tres períodos, el espacio obligatorio de una semana entre períodos y las ventanas de exclusión de mantenimiento planificadas que no se pueden programar. Por lo tanto, en lugar de descubrir una restricción después de una configuración fallida, los propietarios del negocio y los administradores de implementación se dirigen a una programación válida en la misma conversación. Esto protege las ventanas empresariales críticas de las actualizaciones de mantenimiento automáticas, al tiempo que reduce las idas y venidas y la configuración incorrecta.
+Ahora puede ver, crear y editar [Horas tranquilas y actualizar periodos gratis](/help/ai-in-aem/agents/brand-experience/development/development.md#control-updates-job) directamente a través del Asistente de IA de AEM.La principal ventaja es que se cometen menos errores de programación. A medida que realiza una solicitud, el asistente le guía a través de lo que es posible y marca los límites aplicables, como el límite de tres períodos, el espacio obligatorio de una semana entre períodos y las ventanas de exclusión de mantenimiento planificadas que no se pueden programar. Por lo tanto, en lugar de descubrir una restricción después de una configuración fallida, los propietarios del negocio y los administradores de implementación se dirigen a una programación válida en la misma conversación. Esto protege las ventanas empresariales críticas de las actualizaciones de mantenimiento automáticas, al tiempo que reduce las idas y venidas y la configuración incorrecta.
 
 ### [!DNL Experience Manager] como [!DNL Cloud Service] avisos importantes de Foundation {#foundation-notices}
 
@@ -376,10 +378,7 @@ Para unirte al alfa, envía un correo electrónico a [aemcs-apm-beta@adobe.com](
 
 #### Extensibilidad de la IU para la vista Assets {#ui-extensibility-assets-view}
 
-La vista de Assets admite la extensibilidad de la interfaz de usuario, una capacidad que da prioridad al desarrollador y que permite a los clientes adaptar la experiencia predeterminada para satisfacer sus requisitos empresariales específicos.
-Los clientes pueden aprovechar los puntos de extensión estables existentes siguiendo la documentación para desarrolladores de Adobe para crear e implementar extensiones con un esfuerzo mínimo. En el caso de los casos de uso en los que aún no se dispone de un punto de extensión necesario, Adobe trabaja directamente con los clientes para explorar los requisitos y evaluar la viabilidad técnica de ofrecer nuevas API de extensibilidad adaptadas a sus necesidades, y puede ofrecer nuevas API como **Versiones de Beta**.
-Además, Adobe ha desarrollado una **herramienta de generación de extensiones con tecnología GenAI** que actualmente está disponible en una fase interna de adopción temprana. Esta herramienta puede acelerar significativamente el tiempo de desarrollo de la extensión. Los clientes que participen en este programa beta recibirán acceso a la herramienta y se les anima a compartir sus comentarios para ayudar a dar forma a su evolución.
-Para participar o obtener más información, envía un correo electrónico a `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
+La vista de Assets admite la extensibilidad de la interfaz de usuario, una capacidad que da prioridad al desarrollador y que permite a los clientes adaptar la experiencia predeterminada para satisfacer sus requisitos empresariales específicos.Los clientes pueden aprovechar los puntos de extensión estables existentes siguiendo la documentación para desarrolladores de Adobe para crear e implementar extensiones con un esfuerzo mínimo. En el caso de los casos de uso en los que aún no se dispone de un punto de extensión necesario, Adobe trabaja directamente con los clientes para explorar los requisitos y evaluar la viabilidad técnica de ofrecer nuevas API de extensibilidad adaptadas a sus necesidades, y puede ofrecer nuevas API como **Versiones de Beta**.Además, Adobe ha desarrollado una **herramienta de generación de extensiones con tecnología GenAI** que se encuentra disponible actualmente en una fase interna de adopción temprana. Esta herramienta puede acelerar significativamente el tiempo de desarrollo de la extensión. Los clientes que participen en este programa beta recibirán acceso a la herramienta y se les anima a compartir sus comentarios para ayudar a dar forma a su evolución.Para participar o obtener más información, envía un correo electrónico a `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
 #### Metadatos según la marca (BAM) {#brand-aware-metadata}
 
