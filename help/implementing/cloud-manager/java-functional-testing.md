@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 32e19eea5a7cf90f9de57b7d71d776b4452e70ee
+source-git-commit: fe1c1efaa00fc117ae0dc35879662dfd5ed4ecc2
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 64%
+source-wordcount: '876'
+ht-degree: 51%
 
 ---
 
@@ -23,7 +23,7 @@ Al crear un nuevo repositorio de código en Cloud Manager, se crea una carpeta `
 
 >[!NOTE]
 >
->Si el repositorio se creó antes de que Cloud Manager creara automáticamente carpetas `it.tests`, también puede generar la última versión utilizando el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
+>Si el repositorio se creó antes de que Cloud Manager creara automáticamente `it.tests` carpetas, genere la última versión con el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
 Una vez que tenga el contenido de la carpeta `it.tests`, puede utilizarlos como base para sus propias pruebas y, a continuación, completar los pasos siguientes:
 
@@ -35,13 +35,13 @@ Una vez que tenga el contenido de la carpeta `it.tests`, puede utilizarlos como 
 
 Las mismas herramientas que utiliza Adobe para escribir pruebas funcionales de productos se pueden usar para escribir las pruebas funcionales personalizadas. Utilice las [pruebas funcionales del producto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) en GitHub como ejemplo de cómo escribir las pruebas.
 
-El código para las pruebas funcionales personalizadas es el código Java™ de la carpeta `it.tests` de su proyecto. Debe producir un único JAR con todas las pruebas funcionales. Si la generación produce más de un JAR de prueba, el JAR seleccionado no es determinista. Si no produce ningún JAR de prueba, el paso de prueba se aprueba de forma predeterminada. Consulte [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) para ver pruebas de ejemplo.
+El código para las pruebas funcionales personalizadas es el código Java™ de la carpeta `it.tests` de su proyecto. Produce un único JAR con todas las pruebas funcionales. Si la generación produce más de un JAR de prueba, el JAR seleccionado no es determinista. Si no produce ningún JAR de prueba, el paso de prueba se aprueba de forma predeterminada. Consulte [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) para ver pruebas de ejemplo.
 
-Las pruebas se ejecutan en una infraestructura de pruebas mantenida por Adobe que incluye al menos dos instancias de autor, dos instancias de publicación y una configuración de Dispatcher. Esta configuración significa que las pruebas funcionales personalizadas se ejecutan con toda la pila de AEM.
+Las pruebas se ejecutan en una infraestructura de pruebas mantenida por Adobe que incluye al menos dos instancias de autor, dos instancias de publicación y una configuración de Dispatcher. Esta configuración significa que las pruebas funcionales personalizadas se ejecutan en todo el entorno de AEM.
 
 ### Estructura de pruebas funcionales {#functional-tests-structure}
 
-Las pruebas funcionales personalizadas deben empaquetarse como un archivo JAR independiente producido por la misma generación de Maven que los artefactos que se van a implementar en AEM. Generalmente, esta versión sería un módulo de Maven separado. El archivo JAR resultante debe contener todas las dependencias requeridas y se crearía generalmente con el `maven-assembly-plugin` `jar-with-dependencies` descriptor.
+Las pruebas funcionales personalizadas deben empaquetarse como un archivo JAR independiente producido por la misma generación de Maven que los artefactos que se van a implementar en AEM. Esta compilación es un módulo Maven independiente. El archivo JAR resultante debe contener todas las dependencias requeridas y se crea con el descriptor `maven-assembly-plugin` mediante `jar-with-dependencies`.
 
 Además, el JAR debe tener el `Cloud-Manager-TestType` encabezado de manifiesto definido como `integration-test`.
 
@@ -81,7 +81,7 @@ El siguiente es un ejemplo de configuración para el `maven-assembly-plugin`.
 
 Dentro de este archivo JAR, los nombres de clase de las pruebas reales que se van a ejecutar deben terminar en `IT`.
 
-Por ejemplo, una clase denominada `com.myco.tests.aem.it.ExampleIT` se ejecutaría, pero una clase denominada `com.myco.tests.aem.it.ExampleTest` no.
+Por ejemplo, se ejecuta una clase denominada `com.myco.tests.aem.it.ExampleIT`, pero no una clase denominada `com.myco.tests.aem.it.ExampleTest`.
 
 Además, para excluir el código de prueba de la comprobación de cobertura del análisis de código, el código de prueba debe estar debajo de un paquete denominado `it` (el filtro de exclusión de cobertura es `**/it/**/*.java`).
 
@@ -91,7 +91,7 @@ Consulte el [`aem-testing-clients`repositorio de GitHub](https://github.com/adob
 
 >[!TIP]
 >
->[Vea este vídeo](https://www.youtube.com/watch?v=yJX6r3xRLHU) sobre cómo puede usar las pruebas funcionales personalizadas para mejorar su confianza en sus canalizaciones de CI/CD.
+>[Vea este vídeo](https://www.youtube.com/watch?v=yJX6r3xRLHU) sobre cómo puede usar pruebas funcionales personalizadas para mejorar sus canalizaciones de CI/CD.
 
 ### Requisitos previos {#prerequisites}
 
@@ -99,7 +99,7 @@ Consulte el [`aem-testing-clients`repositorio de GitHub](https://github.com/adob
 
 >[!NOTE]
 >
->Para ejecutar pruebas funcionales en el equipo local, cree un usuario con permisos administrativos para garantizar el mismo comportamiento.
+>Para garantizar el mismo comportamiento cuando se ejecuten pruebas funcionales en el equipo local, cree un usuario con permisos administrativos.
 
 1. Los límites siguientes limitan la infraestructura en contenedores con ámbitos para las pruebas funcionales:
 
@@ -126,8 +126,7 @@ Los próximos cambios en la infraestructura en contenedores para ejecutar prueba
 
 >[!NOTE]
 >
->Este cambio debe realizarse antes del 6 de abril de 2024.
->No actualizar la biblioteca de dependencias puede provocar errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
+>Este cambio debe realizarse antes del 6 de abril de 2024.No actualizar la biblioteca de dependencias puede provocar errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
 
 ### Ejecutar pruebas locales {#local-test-execution}
 
@@ -141,7 +140,7 @@ Sin embargo, al ejecutar estas pruebas, será necesario establecer una serie de 
 
 Las propiedades del sistema son las siguientes:
 
-| Propiedad | Descripción | Ejemplo |
+| Propiedad | Descripción | Ejemplos |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
 | `sling.it.instances` | El número de instancias que coinciden con el servicio en la nube debe establecerse en `2`. | `2` |
 | `sling.it.instance.url.1` | Se establece en URL del autor. | `http://localhost:4502` |
