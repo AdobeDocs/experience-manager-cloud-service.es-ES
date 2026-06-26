@@ -5,9 +5,9 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
+source-git-commit: 350d8a1524e3c0f3b91537988f140555cb1b65bc
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '886'
 ht-degree: 14%
 
 ---
@@ -44,7 +44,7 @@ Se muestra el detalle del estado. Su dominio personalizado está listo para usar
 
 ## Estados de verificación {#statuses}
 
-Cloud Manager verifica la propiedad del dominio a través del certificado SSL administrado por el cliente (OV/EV). Cuando termina, muestra uno de los siguientes mensajes de estado:
+Cloud Manager comprueba la propiedad del dominio mediante el certificado SSL administrado por el cliente (OV/EV). Cuando termina, muestra uno de los siguientes mensajes de estado:
 
 | Estado | Descripción |
 | --- | --- |
@@ -71,10 +71,10 @@ Cuando intenta agregar una asignación de dominio en Cloud Manager, puede recibi
 <!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
 
 **Causa del error**
-Fastly fija un dominio a la cuenta que lo registra primero, y otras cuentas deben solicitar permiso para registrar un subdominio. Además, Fastly le permite asignar un dominio Apex y subdominios asociados solo a un servicio y una cuenta de Fastly. Si tiene una cuenta existente de Facebook que vincula los mismos Apex y subdominios utilizados para sus dominios de AEM Cloud Service, es posible ver el siguiente error.
+Restringe rápidamente un dominio a la cuenta que lo registra primero, y otras cuentas deben solicitar permiso para registrar un subdominio. Además, Fastly le permite asignar un dominio Apex y subdominios asociados solo a un servicio y una cuenta de Fastly. Si tiene una cuenta existente de Facebook que vincula los mismos Apex y subdominios utilizados para sus dominios de AEM as a Cloud Service, es posible ver el siguiente error.
 
 **Resolución de errores**
-El error se corrige de la siguiente manera:
+El error se resuelve de la siguiente manera:
 
 * Elimine el Apex y los subdominios de la cuenta existente antes de instalar el dominio en Cloud Manager.
 
