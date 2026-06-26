@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 50a64c8968182ac1fb5a57082da991c9efd4dc46
+source-git-commit: 4bd1044567206bc6a97aef5b2d2e99541936b476
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3825'
 ht-degree: 17%
 
 ---
@@ -152,15 +152,11 @@ El componente Dynamic Media ahora incrusta transcripciones de vídeos para mejor
 
 Dynamic Media con funciones de OpenAPI ahora le permite cargar miniaturas personalizadas para recursos de vídeo. Al reemplazar las miniaturas generadas automáticamente por imágenes de marca o creadas específicamente, las organizaciones pueden mejorar la presentación del contenido, mejorar la capacidad de detección de recursos y crear una experiencia de visualización más atractiva.
 
-
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nuevas funciones en AEM Forms
 
 #### Editor de comunicación interactivo
-
-El editor de comunicaciones interactivas y la interfaz de usuario asociada incluyen nuevas funciones de colaboración, diseño y edición asociada para ayudar a los autores a diseñar más rápido y permitir a los asociados completar las comunicaciones con los clientes con mayor precisión.
 
 El editor de comunicaciones interactivas (CI) ya está disponible en AEM Forms as a Cloud Service. Es una solución basada en explorador para crear, administrar y entregar correspondencia interactiva basada en datos, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida.
 
@@ -206,17 +202,17 @@ El editor de comunicaciones interactivas (CI) ya está disponible en AEM Forms a
 
 * **Configurar variables enlazadas y no enlazadas para la interfaz de usuario asociada**: las variables enlazadas y no enlazadas de los componentes **Texto** ahora se pueden configurar para la interfaz de usuario asociada. Los autores eligen si los asociados deben editar todo el bloque de texto en línea en la vista previa del documento o introducir valores para variables individuales en el panel de entrada de datos. Los nombres de variables duplicados propagan los valores en todas las ocurrencias coincidentes en la vista previa. Para obtener más información, vea [Configurar variables enlazadas y no enlazadas para la interfaz de usuario asociada](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
 
-## Funciones de usuario pionero
+### Funciones de usuario pionero
 
-### Documento de registro para formularios incrustados en AEM Sites
+#### Documento de registro para formularios incrustados en AEM Sites
 
 Los autores ahora pueden configurar y generar un documento de registro (PDF de envío) para los componentes principales de Forms adaptable incrustados en páginas de AEM Sites. La configuración del DoR (que incluye la generación automática, las plantillas XDP personalizadas y la personalización de marca) está disponible directamente desde el **contenedor de formulario adaptable** en el editor de páginas de Sites. [Más información](/help/forms/generate-document-of-record-core-components.md#configure-document-of-record-for-forms-embedded-in-aem-sites).
 
-### Plantillas XDP personalizadas específicas de la configuración regional para el documento de registro
+#### Plantillas XDP personalizadas específicas de la configuración regional para el documento de registro
 
 Cuando asocia una plantilla XDP personalizada para el DoR, puede proporcionar versiones específicas de la configuración regional en la misma carpeta mediante la convención `basename.<locale>.xdp` (por ejemplo, `a.xdp` y `a.fr.xdp`). AEM Forms selecciona automáticamente la plantilla que coincide con la configuración regional del formulario al generar la PDF de envío, con reserva a la plantilla predeterminada. [Más información](/help/forms/generate-document-of-record-core-components.md#locale-specific-custom-xdp-templates-for-document-of-record).
 
-### Caducidad del acuerdo de Adobe Sign
+#### Caducidad del acuerdo de Adobe Sign
 
 Puede establecer cuánto tiempo deben completar la firma los destinatarios especificando **Caducidad del documento (días)** en la sección **Firma electrónica** de un formulario adaptable. El valor se envía a Adobe Sign como `daysUntilSigningDeadline`. Si se deja vacío, el acuerdo no caduca. [Más información](/help/forms/working-with-adobe-sign.md#set-document-expiration-for-an-adobe-sign-agreement).
 
