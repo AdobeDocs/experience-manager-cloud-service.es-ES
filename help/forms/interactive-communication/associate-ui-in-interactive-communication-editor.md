@@ -1,12 +1,12 @@
 ---
 title: Asociar interfaz de usuario en el editor de comunicaciones interactivas
-description: Descubra la interfaz de usuario asociada en el Editor de comunicaciones interactivas habilitando el agente orientado al cliente para generar comunicaciones personalizadas y compatibles.
+description: Descubra la interfaz de usuario asociada en el Editor de comunicaciones interactivas permitiendo que los asociados del lado del cliente generen comunicaciones personalizadas y compatibles.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Se aplica a AEM Forms."
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 # Asociar interfaz de usuario en el editor de comunicaciones interactivas
 
 
-La **interfaz de usuario asociada** es una interfaz simplificada y especializada creada sobre el editor de comunicaciones interactivas (CI). Está diseñado para profesionales que trabajan de cara al cliente, como socios de campo y agentes de servicio, para generar comunicaciones personalizadas, compatibles y precisas en tiempo real durante las interacciones en directo.
+La **interfaz de usuario asociada** es una interfaz simplificada y especializada creada sobre el editor de comunicaciones interactivas (CI). Está diseñado para profesionales que trabajan de cara al cliente, como socios de campo y representantes de servicio, para generar comunicaciones personalizadas, compatibles y precisas en tiempo real durante las interacciones en directo.
 
 ![Buscar documento CI](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 

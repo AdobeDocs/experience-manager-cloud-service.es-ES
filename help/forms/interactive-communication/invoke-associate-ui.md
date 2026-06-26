@@ -4,9 +4,9 @@ description: Aprenda a integrar la interfaz de usuario de AEM Forms Associate co
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Se aplica a AEM Forms."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 # Integración de la interfaz de usuario asociada en la aplicación
 
 
-Este artículo explica cómo integrar la interfaz de usuario de Associate con la aplicación, lo que permite a los profesionales de cara al cliente, como los asociados de campo y los agentes de servicio, generar comunicaciones interactivas personalizadas en tiempo real en instancias de publicación.
+Este artículo explica cómo integrar la interfaz de usuario de Associate con la aplicación, lo que permite a los profesionales de cara al cliente, como los asociados de campo y los representantes de servicio, generar comunicaciones interactivas personalizadas en tiempo real en instancias de publicación.
 
 ## Requisitos previos
 

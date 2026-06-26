@@ -5,15 +5,15 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
-source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 1%
 
 ---
 
-# Crear versiones y comentarios en el editor de comunicaciones interactivas
 
+# Crear versiones y comentarios en el editor de comunicaciones interactivas
 
 Las comunicaciones interactivas permiten a las organizaciones crear documentos dinámicos basados en datos para una comunicación personalizada con los clientes. Para admitir una mejor colaboración, administración y flujos de trabajo de publicación controlados, el editor de comunicaciones interactivas proporciona funciones de versiones, revisión y comentarios.
 

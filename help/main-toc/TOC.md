@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 248e3db5298e96f01a683d8a69ea91ada701eef7
+source-git-commit: e06e200b372b510b093e05a767e508a89b1cb852
 workflow-type: tm+mt
 source-wordcount: '7552'
 ht-degree: 84%
@@ -1061,9 +1061,9 @@ ht-degree: 84%
       + {hide-from-toc}[Introducción a la comunicación interactiva](/help/forms/introduction-to-interactive-communication.md)
       + {hide-from-toc}[Crear su primera comunicación interactiva](/help/forms/create-your-first-communication.md)
    + Revisar y colaborar {#review-collaborate}
-      + {hide-from-toc}[Creación de versiones y comentarios en el editor de comunicaciones interactivas](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
-      + {hide-from-toc}[Revisar y anotar una comunicación interactiva](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
-      + {hide-from-toc}[Comparar versiones de comunicaciones interactivas](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
+      + [Crear versiones y comentarios en el editor de comunicaciones interactivas](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+      + [Revisar y anotar una comunicación interactiva](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
+      + [Comparar versiones de comunicaciones interactivas](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
    + Componente {#component}
       + [Cuadro de texto](/help/forms/interactive-communication/text-box.md)
       + [Imagen](/help/forms/interactive-communication/image.md)
@@ -1093,15 +1093,15 @@ ht-degree: 84%
       + {hide-from-toc}[Copiar y pegar comunicación interactiva](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
       + [Iniciar flujo de trabajo en comunicaciones interactivas](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
       + [Crear tabla dinámica](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
-      + {hide-from-toc}[Combinar y dividir celdas de tabla](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
-      + {hide-from-toc}[Mover un componente a la página maestra](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
+      + [Combinar y dividir celdas de tabla](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
+      + [Mover un componente a la página maestra](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
    + Asociar IU {#associateui}
       + [Asociar interfaz de usuario en el editor de comunicaciones interactivas](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
       + [Habilitar y configurar la interfaz de usuario asociada para comunicaciones interactivas](/help/forms/interactive-communication/enable-configure-associate-ui.md)
       + [Integración de la interfaz de usuario asociada en la aplicación](/help/forms/interactive-communication/invoke-associate-ui.md)
       + [Flujo de trabajo de envío para la IU asociada: IC Generar salida de PDF](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-      + {hide-from-toc}[Configurar opciones desplegables para la interfaz de usuario asociada](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
-      + {hide-from-toc}[Configurar variables enlazadas y no enlazadas para la IU asociada](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
+      + [Configurar las opciones desplegables de la interfaz de usuario asociada](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+      + [Configurar variables enlazadas y no enlazadas para la interfaz de usuario asociada](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
    + [Preguntas frecuentes](/help/forms/interactive-communications-faq.md)
 + Flujos de trabajo centrados en formularios {#create-form-centric-workflows}
    + {hide-from-toc}[Introducción al flujo de trabajo centrado en Forms](/help/forms/aem-forms-workflow.md)
