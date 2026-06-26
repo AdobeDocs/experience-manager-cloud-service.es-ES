@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a4915aa53902b70b0a09b53381386023638b4072
+source-git-commit: 6869505004f6736f14d840168c29c785542bac28
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 23%
+source-wordcount: '1248'
+ht-degree: 22%
 
 ---
 
@@ -27,19 +27,19 @@ Las variables de entorno proporcionan varios beneficios para los usuarios de AEM
 * Solo deben configurarse una vez, y pueden actualizarse y eliminarse cuando sea necesario.
 * Sus valores se pueden actualizar en cualquier momento y entrar en vigor inmediatamente sin requerir cambios o implementaciones de código.
 * Pueden separar el código de la configuración y eliminar la necesidad de incluir información confidencial en el control de versiones.
-* Mejoran la seguridad de las aplicaciones de AEM as a Cloud Service porque existen fuera de la base de código.
+* Mejoran la seguridad de las aplicaciones de AEM as a Cloud Service porque se almacenan fuera de la base de código.
 
 Los casos de uso habituales para usar variables de entorno son los siguientes:
 
 * Conexión de la aplicación de AEM con diferentes extremos externos.
 * Uso de una referencia al almacenar contraseñas en lugar de almacenarlas directamente en la base de código.
-* Hay varios entornos de desarrollo en un programa y algunas configuraciones difieren de un entorno a otro.
+* Hay varios entornos de desarrollo en un programa y algunas configuraciones varían entre entornos.
 
 ## Agregar una variable de entorno {#add-variables}
 
 Si desea agregar varias variables, Adobe recomienda que agregue la primera variable y, a continuación, utilice ![Agregar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Agregar** en el cuadro de diálogo **Configuración del entorno** para agregar las variables adicionales. Este método permite añadirlos con una sola actualización del entorno.
 
-Para agregar, actualizar o eliminar variables de entorno, debe ser miembro de la [función Administrador de implementación](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
+Para agregar, actualizar o eliminar variables de entorno, debe ser miembro de la [función Administrador de implementación](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
 
 **Para agregar una variable de entorno:**
 
@@ -48,8 +48,7 @@ Para agregar, actualizar o eliminar variables de entorno, debe ser miembro de la
 1. En el menú lateral, haga clic en **Entornos**.
 1. En la página **Entornos**, seleccione una fila de la tabla que tenga el entorno para el que desea agregar una variable de entorno.
 1. En la página de detalles del entorno, haga clic en la ficha **Configuración**.
-1. Haga clic en ![Agregar/actualizar - Agregar icono de círculo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Agregar/actualizar**.
-Si agrega una variable de entorno por primera vez, haga clic en **Agregar configuración** en el centro de la página.
+1. Haga clic en ![Agregar/actualizar - Agregar icono de círculo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Agregar/actualizar**.Si agrega una variable de entorno por primera vez, haga clic en **Agregar configuración** en el centro de la página.
 
    ![Pestaña Configuración](assets/configuration-tab.png)
 
@@ -70,7 +69,7 @@ Si agrega una variable de entorno por primera vez, haga clic en **Agregar config
 
 1. Haga clic en **Guardar**.
 
-   Se muestra un control de número con el estado **Actualizando** en la esquina superior derecha de la tabla. También aparecerá un control de número a la izquierda de las variables recién agregadas. Estos estados indican que el entorno se está actualizando con la configuración. Una vez finalizada, la nueva variable de entorno se puede ver en la tabla.
+   En la esquina superior derecha de la tabla se muestra un indicador con el estado **Actualizando**. También aparecerá un indicador a la izquierda de las variables que se acaben de agregar. Estos estados indican que el entorno se está actualizando con la configuración. Una vez finalizada, la nueva variable de entorno se puede ver en la tabla.
 
 ![Actualizar variables](assets/updating-variables.png)
 
@@ -91,10 +90,9 @@ Si desea actualizar varias variables, Adobe recomienda usar el cuadro de diálog
 1. En el cuadro de diálogo **Configuración del entorno**, haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en la última columna de la fila de la variable que desea cambiar.
 1. En el menú desplegable, haga clic en **Editar**.
 
-   ![Variable Editar o eliminar &#x200B;](assets/edit-delete-variable.png)
+   ![Variable Editar o eliminar ](assets/edit-delete-variable.png)
 
-1. Actualice el valor de la variable de entorno según sea necesario.
-Al editar un secreto, el valor solo se puede actualizar, no ver.
+1. Actualice el valor de la variable de entorno según sea necesario.Al editar un secreto, el valor solo se puede actualizar, no ver.
 
    ![Editar variable](assets/edit-variable.png)
 
@@ -105,7 +103,7 @@ Al editar un secreto, el valor solo se puede actualizar, no ver.
 
 1. Haga clic en **Guardar**.
 
-   Se muestra un control de número con el estado **Actualizando** en la esquina superior derecha de la tabla. También aparece un control de número a la izquierda de las variables actualizadas. Estos estados indican que el entorno se está actualizando con la configuración. Una vez finalizada, la variable de entorno actualizada se puede ver en la tabla.
+   Se muestra un control de número con el estado **Actualizando** en la esquina superior derecha de la tabla. También aparece un indicador a la izquierda de cualquier variable actualizada. Estos estados indican que el entorno se está actualizando con la configuración. Una vez finalizada, la variable de entorno actualizada se puede ver en la tabla.
 
 ## Eliminar una variable de entorno {#delete-env-variable}
 
