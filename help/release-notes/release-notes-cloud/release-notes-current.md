@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 4bd1044567206bc6a97aef5b2d2e99541936b476
+source-git-commit: 64ad7ab638f71f0dcaf5384b29499e75085c778f
 workflow-type: tm+mt
 source-wordcount: '3825'
 ht-degree: 17%
@@ -158,7 +158,7 @@ Dynamic Media con funciones de OpenAPI ahora le permite cargar miniaturas person
 
 #### Editor de comunicación interactivo
 
-El editor de comunicaciones interactivas (CI) ya está disponible en AEM Forms as a Cloud Service. Es una solución basada en explorador para crear, administrar y entregar correspondencia interactiva basada en datos, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida.
+El editor de [comunicaciones interactivas (IC)](/help/forms/interactive-communication/introduction.md) ya está disponible en AEM Forms as a Cloud Service. Es una solución basada en explorador para crear, administrar y entregar correspondencia interactiva basada en datos, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida.
 
 ![Editor de comunicación interactiva](/help/forms/assets/ic-editor.png)
 
