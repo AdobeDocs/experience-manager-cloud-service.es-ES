@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 0026550effc426691a4d63faf169ecd7b9228a57
 workflow-type: tm+mt
-source-wordcount: '2587'
+source-wordcount: '4335'
 ht-degree: 0%
 
 ---
@@ -231,15 +231,13 @@ Después de incorporar las modificaciones adecuadas en el lienzo Express, puede 
 
 2. Seleccionar **AEM Assets**. Adobe Express muestra el cuadro de diálogo de carga.
 
-3. Seleccione **Página actual** o **Todas las páginas**. Especifique un nombre y un formato para los recursos que desea exportar. Puede exportar el contenido del lienzo en los formatos PNG, JPEG, PDF, MP4, MP4+PNG o MP4+JPEG. El formato se ajusta automáticamente en función de los recursos de las páginas de lienzo.
-Al seleccionar **Página actual**, se guardará el recurso de la página actual en la carpeta de destino. Si selecciona **Todas las páginas** y el formato de exportación no es PDF, todas las páginas de lienzo se guardarán como archivos independientes en una nueva carpeta dentro de la carpeta de destino. Si el formato de exportación es PDF, todas las páginas de lienzo se guardan como un solo archivo PDF en la carpeta de destino.
+3. Seleccione **Página actual** o **Todas las páginas**. Especifique un nombre y un formato para los recursos que desea exportar. Puede exportar el contenido del lienzo en los formatos PNG, JPEG, PDF, MP4, MP4+PNG o MP4+JPEG. El formato se ajusta automáticamente en función de los recursos de las páginas de lienzo.Al seleccionar **Página actual**, se guardará el recurso de la página actual en la carpeta de destino. Si selecciona **Todas las páginas** y el formato de exportación no es PDF, todas las páginas de lienzo se guardarán como archivos independientes en una nueva carpeta dentro de la carpeta de destino. Si el formato de exportación es PDF, todas las páginas de lienzo se guardan como un solo archivo PDF en la carpeta de destino.
 
 4. Haga clic en el icono de la carpeta en **Carpeta de destino** para seleccionar una ubicación y guardar los recursos.
 
    ![Guardar recursos en AEM](/help/assets/assets/page-selection-and-destination-folder.png)
 
-5. Opcional: puede agregar metadatos de campaña para la carga mediante el campo **Nombre del proyecto o de la campaña**. Puede utilizar un nombre existente o crear uno nuevo. Puede definir varios nombres de proyecto o campaña para la carga. Para registrar el nombre, simplemente escriba el nombre y pulse Intro.
-Como práctica recomendada, Adobe recomienda especificar valores en el resto de los campos, así como crear una experiencia de búsqueda mejorada para los recursos cargados.
+5. Opcional: puede agregar metadatos de campaña para la carga mediante el campo **Nombre del proyecto o de la campaña**. Puede utilizar un nombre existente o crear uno nuevo. Puede definir varios nombres de proyecto o campaña para la carga. Para registrar el nombre, simplemente escriba el nombre y pulse Intro.Como práctica recomendada, Adobe recomienda especificar valores en el resto de los campos, así como crear una experiencia de búsqueda mejorada para los recursos cargados.
 
 6. Del mismo modo, defina los valores para los campos **[!UICONTROL Palabras clave]** y **[!UICONTROL Canales]**.
 
@@ -323,4 +321,77 @@ The [Content Fragments](/help/assets/content-fragments/content-fragments.md) tab
 ![Browse assets using Content Fragments](assets/browse-assets-content-fragment.png)
 -->
 
+## Preguntas frecuentes {#frequently-asked-questions-content-advisor}
+
+### ¿Qué es el Asesor de contenido en la integración de AEM Assets y Adobe Express? {#content-advisor-overview}
+
+El Asesor de contenido es una función inteligente de detección de recursos según el contexto integrada en la integración de AEM Assets nativos en Adobe Express. Muestra recursos relevantes y aprobados basados en el contenido del lienzo Express, el resumen de la campaña y la intención creativa, sin requerir búsquedas manuales de palabras clave. El Asesor de contenido también proporciona acceso a representaciones de Dynamic Media, metadatos de recursos, filtros, búsquedas guardadas y colecciones, lo que permite a los diseñadores localizar, evaluar y utilizar AEM Assets directamente en la interfaz de Adobe Express sin cambiar de herramienta.
+
+### ¿Cuáles son los requisitos previos para utilizar AEM Assets en Adobe Express? {#aem-assets-express-prerequisites}
+
+El uso de AEM Assets en Adobe Express requiere derechos para acceder a Adobe Express y, al menos, a un entorno de AEM Assets. El entorno puede ser cualquier repositorio de Adobe Experience Manager Assets as a Cloud Service. No se requiere ningún conector ni instalación de complemento adicional: la integración es nativa de Adobe Express.
+
+### ¿Cómo empiezo a usar AEM Assets en el editor de Adobe Express? {#access-aem-assets-in-express}
+
+Para empezar a utilizar AEM Assets en Adobe Express, abra la aplicación web de Adobe Express y abra un nuevo lienzo, plantilla o proyecto en blanco. Haga clic en Assets en el panel de navegación izquierdo para abrir el Asesor de contenido, que muestra los repositorios disponibles junto con los recursos y las carpetas en el nivel raíz. Busque recursos y arrástrelos y suéltelos en el lienzo, o haga clic en un recurso para colocarlo automáticamente. Assets también se puede filtrar por estado de aprobación, tipo de archivo, tipo MIME y dimensiones. Tenga en cuenta que el filtro por dimensión no se aplica a los recursos de vídeo.
+
+### ¿Qué tipo de repositorio debo seleccionar en el Asesor de contenido para acceder a todas las funciones? {#content-advisor-repository-selection}
+
+Se debe seleccionar un repositorio de autor en la lista desplegable Repositorio del Asesor de contenido para acceder a todas las funciones del Asesor de contenido, incluidas la Búsqueda por IA, las sugerencias inteligentes, los informes de campaña y las representaciones de Dynamic Media. Un repositorio de envío no muestra ninguna función de Asesor de contenido. Los Assets de un repositorio de envío se muestran en el nivel raíz solo en una estructura plana; no están organizados en carpetas o colecciones.
+
+### ¿Qué formatos de archivo se pueden agregar al lienzo de Adobe Express mediante el Asesor de contenido? {#content-advisor-supported-formats}
+
+El Asesor de contenido admite la adición de recursos en los formatos PNG, JPEG, PSD, MP4, SVG y PDF al lienzo de Adobe Express. Los archivos PDF se pueden previsualizar como documentos desplazables haciendo clic en el icono Información de la tarjeta de recursos antes de colocarlos en el lienzo. También se puede acceder a los metadatos de los recursos y a las representaciones de Dynamic Media a través del icono de información para cada recurso en las vistas Lista y Cuadrícula.
+
+### ¿Cómo funciona la Búsqueda por IA en el Asesor de contenido? {#content-advisor-ai-search-faq}
+
+La búsqueda por IA en el Asesor de contenido utiliza inteligencia artificial y aprendizaje automático para interpretar el significado y la intención detrás de una consulta de búsqueda en lugar de hacer coincidir palabras clave exactas. Admite consultas multilingües, gestiona errores ortográficos y tipográficos, comprende sinónimos y términos relacionados y ofrece resultados según el contexto en función de la intención del usuario, lo que permite a los usuarios encontrar recursos relevantes incluso cuando las consultas se formulan de forma diferente o se introducen en un idioma diferente. La versión mínima requerida de AEM para acceder a la Búsqueda por IA en el Asesor de contenido es 21994.
+
+### ¿Qué son las sugerencias inteligentes en el Asesor de contenido y qué contenido analizan? {#content-advisor-smart-suggestions-overview}
+
+Las sugerencias inteligentes del Asesor de contenido muestran automáticamente los recursos relevantes en función del contexto y la intención de las capas de texto o del título presente en el lienzo de Adobe Express. Las sugerencias inteligentes solo analizan el contenido del texto en el lienzo; no analizan las imágenes disponibles en el lienzo. Las sugerencias inteligentes no se actualizan automáticamente a medida que cambia el lienzo; haga clic en el icono de actualización del panel Contenido sugerido para ver una lista actualizada de sugerencias. La versión mínima requerida de AEM para acceder a las sugerencias inteligentes es 21994.
+
+### ¿Las sugerencias inteligentes del Asesor de contenido requieren algún acuerdo adicional para acceder a? {#content-advisor-smart-suggestions-genai-rider}
+
+El acceso a las sugerencias inteligentes en el Asesor de contenido requiere la firma de un piloto de GenAI. Póngase en contacto con su representante de Adobe para firmar el GenAI Rider y habilitar las sugerencias inteligentes para su organización. Una vez firmado el piloto de GenAI, las sugerencias inteligentes están disponibles en el Asesor de contenido en Adobe Express para todos los usuarios de la organización que cumplan con el requisito mínimo de versión de AEM de 21994.
+
+### ¿Cómo utilizo un informe de campaña para descubrir recursos en el Asesor de contenido? {#content-advisor-campaign-briefs}
+
+El Asesor de contenido admite la carga de un documento de resumen de campaña para descubrir recursos relevantes sin introducir manualmente las palabras clave de búsqueda. Cargue un informe de campaña en formato PDF, DOCX o TXT y el Asesor de contenido analiza el contenido de texto para comprender la intención de la campaña y recomienda los activos relevantes de los AEM Assets. Los informes de campaña se analizan únicamente en función del contenido del texto; las imágenes del documento breve no se analizan. Para acceder a los informes de campaña es necesario firmar un GenAI Rider: póngase en contacto con su representante de Adobe para habilitarlo. La versión mínima requerida de AEM es 21994.
+
+### ¿Cómo puedo acceder a las representaciones de Dynamic Media de un recurso en el Asesor de contenido? {#content-advisor-dynamic-media-renditions}
+
+Para acceder a las representaciones de Dynamic Media en el Asesor de contenido, haga clic en el icono de información de una tarjeta de recursos y seleccione la pestaña Dynamic Media. Las representaciones disponibles incluyen ajustes preestablecidos de imagen, recortes inteligentes, tipos de formato y perfiles de color optimizados para canales específicos. Seleccione Dynamic Media Scene7 o Dynamic Media con representaciones de OpenAPI. Para las representaciones de OpenAPI, las representaciones disponibles solo se muestran cuando el recurso está aprobado y disponible en Dynamic Media con OpenAPI. Se necesita una licencia de Dynamic Media de AEM válida para ver la pestaña Dynamic Media.
+
+### ¿Puedo obtener una vista previa y aplicar modificadores a las representaciones de Dynamic Media antes de colocarlas en el lienzo? {#content-advisor-dynamic-media-modifiers}
+
+Las representaciones de Dynamic Media en el Asesor de contenido se pueden previsualizar y modificar antes de colocarse en el lienzo de Adobe Express. Haga clic en el icono de previsualización de una representación para previsualizarla o haga clic en el nombre de la representación para colocarla directamente en el lienzo. Haga clic en Añadir modificadores, especifique un modificador en el cuadro de texto y pulse Intro para aplicar transformaciones en tiempo real. Se pueden aplicar y previsualizar varios modificadores simultáneamente. Arrastre y suelte la representación previsualizada en el lienzo para colocarla: los modificadores aplicados durante la previsualización no se guardan en el recurso en los AEM Assets.
+
+### ¿Cómo ayuda Dynamic Media con el límite de tamaño de archivo en Adobe Express? {#content-advisor-dynamic-media-file-size}
+
+Dynamic Media en el Asesor de contenido supera el límite de tamaño de archivo de carga de 80 MB en Adobe Express al ofrecer representaciones optimizadas de recursos grandes directamente de los AEM Assets. Un recurso de TIFF de 300 MB, por ejemplo, se puede entregar como una representación de 2,5 MB sin poner en riesgo la calidad visual. Esto permite un uso eficiente de los recursos de alta resolución en Adobe Express sin necesidad de reducir el tamaño de archivo ni duplicar antes de la importación.
+
+### ¿Cómo funcionan las búsquedas guardadas en el Asesor de contenido y cómo se comparten con la vista de Assets? {#content-advisor-saved-searches}
+
+Las búsquedas guardadas creadas en la vista de Assets están disponibles en el Asesor de contenido y funcionan de forma coherente en todos los exploradores, lo que permite reutilizar criterios de búsqueda predefinidos en ambas interfaces. Para guardar una búsqueda en el Asesor de contenido, aplique los filtros deseados, haga clic en el icono de filtros, seleccione Administrar búsquedas guardadas, haga clic en Crear nueva búsqueda guardada y especifique un nombre. Sin embargo, las búsquedas recientes no son coherentes entre la vista de Assets y el Asesor de contenido: el mismo usuario puede tener diferentes búsquedas recientes en cada interfaz. Las búsquedas recientes no se comparten en distintos exploradores, no están disponibles en el modo Incognito y son específicas del entorno de AEM. La función Búsqueda guardada predeterminada disponible en la vista de Assets no está disponible en el Asesor de contenido.
+
+### ¿Puedo buscar recursos dentro de una colección específica mediante el Asesor de contenido? {#content-advisor-collection-search}
+
+El Asesor de contenido admite la búsqueda de recursos en todas las colecciones o limita la búsqueda a una colección específica. Esto permite un acceso rápido a los recursos de las colecciones depuradas, conservando al mismo tiempo el contexto organizativo deseado. Las mismas funciones de filtrado disponibles en la vista de Assets se aplican a las búsquedas dentro de colecciones en el Asesor de contenido, lo que garantiza una experiencia de detección de recursos uniforme entre los AEM Assets y Adobe Express.
+
+### ¿Cómo se reemplaza una imagen del lienzo Express por un recurso de AEM Assets? {#replace-image-aem-assets-express}
+
+Para reemplazar una imagen del lienzo de Adobe Express por un recurso de los AEM Assets, seleccione la imagen en el lienzo, haga clic en Reemplazar y seleccione AEM Assets en las opciones disponibles. El Asesor de contenido se abre en el panel de navegación izquierdo con los repositorios y recursos disponibles. Seleccione el recurso de reemplazo para previsualizarlo en el lienzo y, a continuación, haga clic en Reemplazar para confirmar. Los tipos de archivo de SVG no son compatibles con el reemplazo de imágenes mediante este flujo de trabajo.
+
+### ¿Cómo se vuelve a guardar un proyecto de Adobe Express en el repositorio de AEM Assets? {#save-express-project-aem-assets}
+
+Para guardar un proyecto de Adobe Express en AEM Assets, haga clic en Compartir en el lienzo rápido para abrir el cuadro de diálogo Compartir y, a continuación, seleccione AEM Assets. En el cuadro de diálogo de carga, seleccione Página actual o Todas las páginas, especifique un nombre y un formato de exportación y haga clic en el icono de carpeta en Carpeta de destino para seleccionar una ubicación de guardado. Los formatos de exportación admitidos son PNG, JPEG, PDF, MP4, MP4+PNG y MP4+JPEG. Si lo desea, puede añadir metadatos de campaña utilizando los campos Proyecto o Nombre de campaña, Palabras clave y Canales antes de hacer clic en Cargar. Si se guarda en un repositorio de envíos de Content Hub, el campo Project o Campaign Name es obligatorio y la carpeta de destino se deriva automáticamente de los metadatos.
+
+### ¿Cuáles son los límites de tamaño y dimensión de archivo para los recursos importados a Adobe Express desde AEM Assets? {#aem-assets-express-file-size-limits}
+
+Adobe Express a través de AEM Assets admite los siguientes límites de tamaño y dimensión de archivo: Los recursos de JPEG y PNG admiten hasta 65 megapíxeles, por ejemplo 8 K × 8 K o 16 K × 4 K, con un tamaño de archivo máximo de 80 MB en equipos de escritorio y 40 MB en dispositivos móviles. Los archivos SVG admiten un tamaño de archivo máximo de 250 KB. Los vídeos MP4 admiten hasta 3840 × 3840 píxeles con un tamaño de archivo máximo de 200 MB. Los archivos PSD admiten hasta 65 megapíxeles con un tamaño de archivo máximo de 80 MB en equipos de escritorio y 40 MB en dispositivos móviles. Los archivos PDF no tienen una dimensión máxima definida o un límite de tamaño de archivo.
+
+### ¿Cuáles son las limitaciones de vídeo en la integración de AEM Assets y Adobe Express? {#aem-assets-express-video-limitations}
+
+La integración de AEM Assets y Adobe Express admite MP4 como el único tipo de archivo de vídeo tanto para la importación como para la exportación. Para la importación de vídeo MP4, no se admiten vídeos con fondos transparentes (canal alfa). Para la exportación de vídeo MP4, el tamaño máximo de archivo admitido es de 200 MB. Si el tamaño del archivo de exportación supera los 200 MB, se recomienda recortar el vídeo a 200 MB o menos, o cargar manualmente el vídeo en la carpeta de destino de AEM Assets después de descargarlo localmente.
 
