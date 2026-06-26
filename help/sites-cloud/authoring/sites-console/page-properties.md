@@ -7,9 +7,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 0c99c27e22fd14485b367fdda8dc76c03aff65dc
+source-git-commit: fb677fc41d66133313c8cf9f4e198aa70a7891b1
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2318'
 ht-degree: 32%
 
 ---
@@ -127,7 +127,7 @@ Esta propiedad permite introducir una URL de vanidad para esta página, lo que p
    * Seleccione el icono **Quitar** para eliminar la URL de vanidad.
 * **Redirigir URL de vanidad**: indica si desea que la página use la URL de vanidad o redirija a la URL real de la página
 
-## Avanzado  {#advanced}
+## Avanzado {#advanced}
 
 ### Configuración {#settings}
 
@@ -148,6 +148,10 @@ Esta propiedad permite introducir una URL de vanidad para esta página, lo que p
    * Alterna la disponibilidad de **Configuración de nube** para la edición
 
 * **Configuración de nube**: la ruta de la configuración seleccionada
+
+### Configuración de SPA {#spa-configuration}
+
+* **URL de aplicación remota**: la URL de la aplicación remota al implementar una [aplicación de una sola página](/help/implementing/developing/hybrid/introduction.md)
 
 ### Configuración de plantilla {#template-settings}
 
@@ -186,6 +190,10 @@ Esta propiedad permite introducir una URL de vanidad para esta página, lo que p
    * Algunas opciones entran en conflicto entre sí, en cuyo caso la opción más permisiva tiene prioridad.
 
 * **Generar mapa de sitio**: cuando se selecciona, se genera un `sitemap.xml` para esta página y sus descendientes.
+
+* **Datos estructurados (JSON-LD)**: el contenido definido aquí se emite dentro de una etiqueta `<script type="application/ld+json">` en el encabezado de la página mediante el componente [Página.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page#structured-data)
+   * Haga clic en **Agregar** para agregar datos estructurados.
+   * Cada entrada debe ser un objeto JSON-LD completo de un tipo [schema.org](https://schema.org) (por ejemplo, FAQPage, HowTo o Product).
 
 ## Imágenes {#images}
 
