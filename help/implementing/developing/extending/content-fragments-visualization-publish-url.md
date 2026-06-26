@@ -3,16 +3,17 @@ title: 'Fragmentos de contenido visual: Entregar con la URL de publicación'
 description: Utilice la URL de publicación para enviar fragmentos de contenido visual.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 65d8d29ba13b0c5d8360aad4bc0742bd7f625922
+source-git-commit: 733e7a8c497fcffdfadd22c2abd3323d35d54e3e
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
 
+
 # Fragmentos de contenido visual: enviar con la dirección URL de publicación {#visual-content-fragments-deliver-with-the-publish-url}
 
-Cuando se publica un fragmento de contenido basado en un modelo con una o varias plantillas de HTML adjuntas, el HTML procesado de ese fragmento está disponible a través del nivel de publicación de Adobe Experience Manager (AEM) as a Cloud Service en una URL con esta estructura:
+Cuando se publica un fragmento de contenido basado en un modelo con plantillas de HTML adjuntas, el HTML procesado de ese fragmento está disponible a través del nivel de publicación de Adobe Experience Manager (AEM) as a Cloud Service en una URL con esta estructura:
 
 ```html
 https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemplates/contentFragments/<templateId>/<fragmentId>/<variation>.html

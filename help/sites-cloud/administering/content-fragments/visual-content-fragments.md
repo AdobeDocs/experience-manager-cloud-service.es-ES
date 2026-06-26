@@ -3,9 +3,9 @@ title: Fragmentos de contenido visual
 description: Obtenga información sobre cómo visualizar y publicar fragmentos de contenido visual mediante plantillas de HTML.
 feature: Content Fragments
 role: User, Developer
-source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
+source-git-commit: e5ba7a502a7633b6616880bcdcc65e99c22de561
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Usted o su equipo de desarrollo pueden [crear y personalizar sus propias plantil
 
 >[!NOTE]
 >
->Una **plantilla genérica** siempre está disponible en AEM de forma predeterminada, asociada con cada modelo. Esta plantilla permite que los pares clave/valor del contenido estructurado se muestren en un formato limpio de estilo de tabla para admitir casos de uso de Assurance de calidad de contenido (QA).
+>Una **plantilla genérica** siempre está disponible en AEM de forma predeterminada y está asociada a todos los modelos. Esta plantilla permite que los pares clave/valor del contenido estructurado se muestren en un formato limpio de estilo de tabla para admitir casos de uso de Assurance de calidad de contenido (QA).
 
 ## Crear una plantilla {#create-a-template}
 

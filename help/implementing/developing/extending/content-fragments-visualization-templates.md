@@ -3,9 +3,9 @@ title: Creación de plantillas de visualización para fragmentos de contenido
 description: Vista previa y publicación de fragmentos de contenido con plantillas de visualización. Descubra cómo puede crear y personalizar las plantillas.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 0fe5e82962b7407d879f937d859d54aa6cb739f3
+source-git-commit: 733e7a8c497fcffdfadd22c2abd3323d35d54e3e
 workflow-type: tm+mt
-source-wordcount: '2083'
+source-wordcount: '2082'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ Las plantillas de HTML permiten controlar cómo se muestran los fragmentos de co
 
 Este artículo explica cómo crear plantillas de HTML personalizadas con sintaxis de Handlebars para procesar fragmentos de contenido visual.
 
-Después de crear las plantillas, puede hacer lo siguiente:
+Después de crear las plantillas, puede:
 
 * [Uso de las plantillas en AEM](#using-a-content-fragment-html-template-in-aem)
 
