@@ -4,11 +4,11 @@ description: 'Aprenda a configurar variables enlazadas y no enlazadas en Compone
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Se aplica a AEM Forms."
 exl-id: configure-bound-unbound-variables-associate-ui
-source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1404'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Los autores habilitan la edición asociada con **Permitir la edición por asocia
 | Quién | Ventaja |
 |-----|---------|
 | **Autor (diseñador de comunicaciones interactivas)** | Elija si asocia la edición en línea en la vista previa o campo a campo en el panel de entrada de datos. |
-| **Asociar (agente/representante de servicio)** | Introduzca los datos en el flujo de trabajo que mejor se ajuste a la comunicación: edición en línea o entrada estructurada en panel. |
+| **Asociar (representante de servicio)** | Introduzca los datos en el flujo de trabajo que mejor se ajuste a la comunicación: edición en línea o entrada estructurada en panel. |
 
 ## Antes de empezar
 
@@ -44,6 +44,7 @@ Una variable independiente se crea directamente en un componente **Text** y no e
 
 - El panel de propiedades **Field** muestra **Name**, **Value**, **Display type** y **Binding**.
 - En **Asociar propiedades**, puede configurar **Información sobre herramientas** y **Validaciones**.
+
 
 ## Editar todo el componente Texto en la vista previa del documento
 
@@ -79,6 +80,7 @@ Active **Permitir edición por asociado** en el componente **Texto** y déjelo d
    ![Editar todo el componente de texto en línea en la IU asociada](/help/forms/interactive-communication/assets/bound-unbound-variable2.png)
 
 1. Si lo desea, seleccione **Vista previa de impresión** para confirmar que la salida generada coincida con la vista previa.
+
 
 ## Editar variables individuales en el panel de entrada de datos
 
@@ -131,6 +133,7 @@ Desactive **Permitir edición por asociado** en el componente **Texto**. Actíve
 
 1. Si lo desea, seleccione **Vista previa de impresión** para confirmar que la salida generada coincida con la vista previa.
 
+
 ## Nombres de variables duplicados (enlazados y no enlazados)
 
 Cuando las variables enlazadas y no enlazadas con el mismo nombre aparecen en varias ubicaciones en el lienzo de diseño, solo aparece una instancia de cada nombre de variable en el panel de entrada de datos de la izquierda. La asociada introduce cada valor una vez; se propaga automáticamente a todas las apariciones correspondientes en la vista previa del documento.
@@ -163,6 +166,7 @@ Cuando las variables enlazadas y no enlazadas con el mismo nombre aparecen en va
    ![Verificar la propagación de variables duplicadas en la interfaz de usuario asociada](/help/forms/interactive-communication/assets/bound-unbound-variable8.png)
 
 1. Si lo desea, seleccione **Vista previa de impresión** para confirmar que la salida generada coincida con la vista previa.
+
 
 ## Consideraciones
 

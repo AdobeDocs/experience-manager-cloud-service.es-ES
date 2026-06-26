@@ -4,11 +4,11 @@ description: Obtenga información sobre cómo configurar las opciones de enlace 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Se aplica a AEM Forms."
 exl-id: configure-dropdown-options-associate-ui
-source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '670'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Los campos desplegables del editor de comunicaciones interactivas utilizan un mo
 | Quién | Ventaja |
 |-----|---------|
 | **Autor (diseñador de comunicaciones interactivas)** | Ofrezca opciones desplegables precisas y basadas en datos a los asociados sin configuraciones de enlace de datos no admitidas. |
-| **Asociar (agente/representante de servicio)** | Consulte la lista de opciones y el valor preseleccionados correctos al completar las comunicaciones con los clientes en la interfaz de usuario de asociado. |
+| **Asociar (representante de servicio)** | Consulte la lista de opciones y el valor preseleccionados correctos al completar las comunicaciones con los clientes en la interfaz de usuario de asociado. |
 
 ## Antes de empezar
 
@@ -43,6 +43,7 @@ Cuando **Options Source** no está establecido en **Bind from Data**:
 
 - Los autores agregan opciones manualmente a través del panel **Propiedades**.
 - **Valor predeterminado** permanece disponible; el diseñador de formularios puede seleccionar explícitamente qué opción aparece como el valor preseleccionado en la interfaz de usuario de Associate.
+
 
 ## Configurar las opciones desplegables
 
@@ -69,6 +70,7 @@ Cuando **Options Source** no está establecido en **Bind from Data**:
 1. Si usa opciones manuales, establezca **Valor predeterminado** según sea necesario.
 
 1. Haga clic en **Guardar** y publique la comunicación interactiva.
+
 
 ## Verificar en la IU asociada
 
