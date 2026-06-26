@@ -191,7 +191,7 @@ Esta propiedad permite introducir una URL de vanidad para esta página, lo que p
 
 * **Generar mapa de sitio**: cuando se selecciona, se genera un `sitemap.xml` para esta página y sus descendientes.
 
-* **Datos estructurados (JSON-LD)**: el contenido definido aquí se emite dentro de una etiqueta `<script type="application/ld+json">` en el encabezado de la página mediante el componente [Página.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page#structured-data)
+* **Datos estructurados (JSON-LD)**: el contenido definido aquí se emite dentro de una etiqueta `<script type="application/ld+json">` en el encabezado de la página mediante el componente [Página.](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/wcm-components/page#structured-data)
    * Haga clic en **Agregar** para agregar datos estructurados.
    * Cada entrada debe ser un objeto JSON-LD completo de un tipo [schema.org](https://schema.org) (por ejemplo, FAQPage, HowTo o Product).
 
