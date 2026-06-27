@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
+source-git-commit: 6861ae63c85ca2e10638a7f2128783eae02cc2b6
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 7%
+source-wordcount: '2380'
+ht-degree: 4%
 
 ---
 
@@ -54,7 +54,7 @@ Ejecute estos pasos para habilitar [!DNL Dynamic Media with OpenAPI] para su ent
 
 1. [Vaya a la interfaz de usuario de Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 
-1. [Crear un entorno](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments), si no tiene acceso a uno existente.
+1. [Crear un entorno](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments), si no tiene acceso a uno existente.
 
 1. Seleccione **[!UICONTROL Haga clic para activar]** en la fila **[!UICONTROL Dynamic Media]** de la sección **[!UICONTROL Información del entorno]** de la página Detalles del entorno.
 
@@ -62,7 +62,7 @@ Ejecute estos pasos para habilitar [!DNL Dynamic Media with OpenAPI] para su ent
 
 1. Haga clic en **[!UICONTROL Activar]** en el cuadro de diálogo de confirmación para iniciar el proceso de activación de [!DNL Dynamic Media with OpenAPI]. Después de la activación correcta, Cloud Manager muestra las siguientes actualizaciones de estado:
    1. **[!UICONTROL Fase de entorno]**: **[!UICONTROL En ejecución]**
-   1. ![Medios dinámicos activados por DM](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; Las capacidades de OpenAPI están activadas &#x200B;]**
+   1. ![Medios dinámicos activados por DM](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  Las capacidades de OpenAPI están activadas ]**
 
       ![activación correcta](/help/assets/assets/activation-successful.png){width="700"}
 
@@ -71,7 +71,7 @@ Ejecute estos pasos para habilitar [!DNL Dynamic Media with OpenAPI] para su ent
 Si la activación falla, Cloud Manager muestra las siguientes actualizaciones de estado:
 
 * **[!UICONTROL Fase de entorno]**: **[!UICONTROL error de DM con OpenAPI]**
-* ![DM activado](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; No se pudieron activar las capacidades de OpenAPI &#x200B;]**
+* ![DM activado](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  No se pudieron activar las capacidades de OpenAPI ]**
 
   ![reintentar activación](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700"}
 
@@ -102,7 +102,7 @@ Asegúrese de que dispone de lo siguiente para configurar las soluciones de [!UI
 
 Ejecute los siguientes pasos:
 
-1. [Cree un nuevo programa](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) o navegue a un programa existente y haga clic en **[!UICONTROL Editar]**. La página **[!UICONTROL Configurar para producción]** muestra la pestaña **[!UICONTROL Soluciones y complementos]**.
+1. [Cree un nuevo programa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) o navegue a un programa existente y haga clic en **[!UICONTROL Editar]**. La página **[!UICONTROL Configurar para producción]** muestra la pestaña **[!UICONTROL Soluciones y complementos]**.
 
 1. Seleccione **[!UICONTROL Assets]**, **[!UICONTROL Assets Prime]**, **[!UICONTROL Assets Ultimate]** o **[!UICONTROL Sites]** para agregar la solución **[!UICONTROL Dynamic Media]** a su programa.
 
@@ -112,7 +112,7 @@ Ejecute los siguientes pasos:
 
 Vea [Activar [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) para empezar a usar las capacidades de [!DNL Dynamic Media] con las capacidades de OpenAPI en su entorno.
 
-### Acceso a las API de Dynamic Media
+### Acceso a las API de Dynamic Media {#access-dynamic-media-apis}
 
 Después de [habilitar Dynamic Media con OpenAPI](#activate-dynamic-media-with-openapi), se crea una instancia de `delivery`. Haga clic en la instancia de envío para ver el perfil de producto `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy`. El perfil de producto ya tiene **AEM Dynamic Media habilitado para los servicios de API** habilitados de manera predeterminada.
 
@@ -122,7 +122,7 @@ Cree un nuevo proyecto en [Adobe Developer Console](https://developer.adobe.com/
 
 ![API de Dynamic Media](/help/assets/assets/dynamic-media-apis.png)
 
-Puede usar la autenticación de [servidor a servidor](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) o la autenticación de usuario mediante [credenciales de aplicación web](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app) o [credenciales de SPA](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-single-page-app).
+Puede usar la autenticación de [servidor a servidor](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) o la autenticación de usuario mediante [credenciales de aplicación web](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app) o [credenciales de SPA](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-single-page-app).
 
 Antes de acceder a la API, se le debe agregar al perfil de producto `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy`.
 
@@ -190,17 +190,17 @@ Asegúrese de cumplir los siguientes requisitos antes de iniciar el proceso de c
 1. [Acceso a Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Ya se ha activado [!DNL Dynamic Media with OpenAPI] en su entorno](#activate-dynamic-media-with-openapi).
 1. Se habilitó [!DNL Dynamic Media with OpenAPI] en estado listo.
-1. Certificado de tipo EV u OV para el dominio que se va a utilizar para el nivel de entrega. Consulte [Introducción a los certificados SSL](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) para obtener más información.
+1. Certificado de tipo EV u OV para el dominio que se va a utilizar para el nivel de entrega. Consulte [Introducción a los certificados SSL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) para obtener más información.
 
 #### Configuración de dominios personalizados en el nivel de envío mediante Cloud Manager {#configure-custom-domain-in-delivery-tier-using-cloud-manager}
 
 Ejecute los siguientes pasos en Cloud Manager para configurar un dominio personalizado en el nivel de entrega:
 
-1. [Agregar un certificado SSL administrado por el cliente](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert).
+1. [Agregar un certificado SSL administrado por el cliente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert).
 
-1. [Agregar un nombre de dominio personalizado](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
+1. [Agregar un nombre de dominio personalizado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
 
-1. Vaya a la página de detalles del entorno y [agregue una configuración de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping). Al agregar la configuración, seleccione **[!UICONTROL Delivery]** en el campo **[!UICONTROL Tier]** del cuadro de diálogo **[!UICONTROL Configurar CDN]**.
+1. Vaya a la página de detalles del entorno y [agregue una configuración de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping). Al agregar la configuración, seleccione **[!UICONTROL Delivery]** en el campo **[!UICONTROL Tier]** del cuadro de diálogo **[!UICONTROL Configurar CDN]**.
 
    ![Configurar CDN](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
@@ -232,9 +232,9 @@ Create an API key to access [!DNL Dynamic Media] with OpenAPIs and the delivery 
 
 To start the API keys onboarding process, ensure you have:
 
-1. [Access to Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Activated [!DNL Dynamic Media with OpenAPI] in your environment](#activate-dynamic-media-with-openapi).
-1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
+1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
 
 #### Onboard the API keys using [!DNL AEM Dynamic Media] API card {#onboarding-api-keys-using-aem-dynamic-media-api-card}
 
@@ -257,7 +257,7 @@ Execute the following steps to create an API key to access [!DNL Dynamic Media] 
    >
    >This delivery instance is common for [!DNL Content Hub] and [!DNL Dynamic Media] with OpenAPI capabilities.
 
-1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
+1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
 1. Select **[!UICONTROL AEM Dynamic Media API]** to access to the [!DNL Dynamic Media with OpenAPI capabilities] and click **[!UICONTROL Next]**.
 ![adobe developer console](/help/assets/assets/adobe-developer-console.png)
 1. Select **[!UICONTROL Server-to-Server Authentication]** and click **[!UICONTROL Next]**. See [Server to Server authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) to learn more about this authentication type.
@@ -281,7 +281,7 @@ headers: {
       'X-Api-Key': 'YOUR_API_KEY_HERE'
     `},
 ```
-See [Search Assets API](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/search-assets-api#search-assets-api-header) for more information.
+See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/search-assets-api#search-assets-api-header) for more information.
 
 ### Access Delivery tier backed Asset Selector {#access-delivery-tier-backed-asset-selector}
 
@@ -298,3 +298,49 @@ Para habilitar [!DNL Dynamic Media] Prime:
 <!--
 1. [Onboard API keys using the AEM Dynamic Media API card](#onboarding-api-keys)
 -->
+
+## Preguntas frecuentes {#frequently-asked-questions-dynamic-media-prime-ultimate}
+
+### ¿Cuáles son los requisitos previos para activar Dynamic Media con OpenAPI? {#dynamic-media-openapi-prerequisites}
+
+La activación de Dynamic Media con OpenAPI requiere tres requisitos previos: acceso a Cloud Manager, un programa que incluye soluciones de Dynamic Media y una licencia válida de Dynamic Media Prime o Ultimate. Si no hay ningún entorno existente disponible en Cloud Manager, se debe crear un nuevo entorno antes de que pueda comenzar la activación. La solución Dynamic Media debe agregarse al programa antes de ejecutar el paso de activación en la página de detalles del entorno.
+
+### ¿Cómo activo Dynamic Media con OpenAPI en mi entorno de Cloud Service? {#activate-dynamic-media-openapi}
+
+Para activar Dynamic Media con OpenAPI, vaya a la interfaz de usuario de Cloud Manager y abra la página de detalles del entorno. En la sección Información del entorno, busque la fila Dynamic Media y haga clic en Haga clic para activar. Haga clic en Activar en el cuadro de diálogo de confirmación para iniciar el proceso de activación. Después de la activación correcta, Cloud Manager muestra el escenario del entorno como En ejecución y el estado de Dynamic Media como Funcionalidades de OpenAPI activadas.
+
+### ¿Qué debo hacer si falla la activación de Dynamic Media con OpenAPI? {#dynamic-media-openapi-activation-failure}
+
+Si falla la activación de Dynamic Media con OpenAPI, Cloud Manager muestra el escenario del entorno como DM con un error de OpenAPI y el estado de Dynamic Media como capacidades de OpenAPI no se pudo activar. Para volver a intentarlo, haga clic en para volver a intentarlo en la página de detalles del entorno. También puede navegar a la página que enumera todos los entornos, hacer clic en el icono de más opciones al final de la fila del entorno y seleccionar Reintentar DM con activación de OpenAPI para reiniciar el proceso.
+
+### ¿Cuáles son los requisitos previos para configurar las soluciones de Dynamic Media? {#configure-dynamic-media-solutions-prerequisites}
+
+La configuración de soluciones de Dynamic Media requiere acceso a Cloud Manager y una licencia válida de Dynamic Media Ultimate. Dynamic Media Prime no requiere este paso: solo es aplicable a los clientes de Dynamic Media Ultimate que necesitan agregar la solución Dynamic Media a un programa existente o nuevo en Cloud Manager.
+
+### ¿Cómo añado la solución Dynamic Media a un programa de AEM Cloud Service? {#add-dynamic-media-solution-program}
+
+Para agregar la solución Dynamic Media a un programa, cree un nuevo programa o vaya a un programa existente en Cloud Manager y haga clic en Editar. En la página Configurar para producción, seleccione la pestaña Soluciones y complementos y, a continuación, seleccione Assets, Assets Prime, Assets Ultimate o Sites para que la solución Dynamic Media esté disponible. Seleccione Dynamic Media y haga clic en Continuar para añadirlo al programa. Esta acción reinicia todos los entornos existentes en el programa y agrega la solución Dynamic Media. Todos los entornos nuevos creados con el programa reciben Dynamic Media automáticamente.
+
+### ¿Cómo puedo acceder a las API de Dynamic Media después de habilitar Dynamic Media con OpenAPI? {#dynamic-media-apis-faqs}
+
+Después de habilitar Dynamic Media con OpenAPI, se crea una instancia de envío en Adobe Admin Console. Haga clic en la instancia de envío para ver el perfil de producto Usuarios de DM OpenAPI de AEM Assets, que tiene habilitados los servicios de API de activación de Dynamic Media de AEM de forma predeterminada. Para acceder a las API, cree un nuevo proyecto en Adobe Developer Console y utilice la tarjeta de API de Dynamic Media de AEM. Las opciones de autenticación incluyen autenticación de servidor a servidor, credenciales de aplicación web o credenciales de SPA. Antes de acceder a la API, el usuario debe añadirse al perfil de producto de entrega de los usuarios de DM OpenAPI de los AEM Assets para el programa y el entorno relevantes.
+
+### ¿Cuáles son los requisitos previos para crear una empresa de Dynamic Media? {#create-dynamic-media-company-prerequisites}
+
+La creación de una empresa de Dynamic Media requiere acceso a Cloud Manager y una licencia válida de Dynamic Media Ultimate. La empresa se crea a partir de la página de licencia de Cloud Manager y representa una cuenta que se puede configurar dentro del entorno de AEM Cloud Service. La creación de empresas de Dynamic Media es un paso específico de Dynamic Media Ultimate y no es necesario para Dynamic Media Prime.
+
+### ¿Cómo creo una nueva compañía de Dynamic Media en mi organización IMS? {#create-dynamic-media-company}
+
+Para crear una nueva empresa de Dynamic Media, vaya a la página de licencia de Cloud Manager y haga clic en Agregar empresa. En el cuadro de diálogo Crear empresa de Dynamic Media, especifique un nombre de empresa único, seleccione una región de empresa y agregue ID de correo electrónico de administrador de empresa separados por comas. Haga clic en Crear para iniciar la creación de la empresa: se agrega una nueva fila a la sección de empresas de Dynamic Media con el estado Configuración. Cuando se completa la creación, el estado se actualiza a Listo. El administrador de Dynamic Media recibe un correo electrónico de bienvenida con los pasos para configurar la empresa de Dynamic Media en el entorno de AEM Cloud Service.
+
+### ¿Qué debo hacer si falla la creación de la empresa de Dynamic Media? {#dynamic-media-company-creation-failure}
+
+Si la creación de la empresa de Dynamic Media falla, la acción que se debe realizar depende del estado mostrado. Si el estado es Pendiente, plantee el problema con el equipo de asistencia al cliente de Adobe para que lo resuelva. Si el estado es Failed, vuelva a intentar la creación en función del motivo del error mostrado. El error de creación de la empresa es independiente del error de activación: ambos tienen sus propios mecanismos de reintento en Cloud Manager.
+
+### ¿Cuáles son los requisitos previos para configurar un dominio personalizado en el nivel de entrega de Dynamic Media? {#custom-domain-delivery-tier-prerequisites}
+
+La configuración de un dominio personalizado en el nivel de entrega de Dynamic Media requiere cuatro requisitos previos: acceso a Cloud Manager, Dynamic Media con OpenAPI ya activado y en estado listo en el entorno y un certificado SSL de tipo EV u OV para el dominio que se va a utilizar en el nivel de entrega. La configuración de dominio personalizada es opcional tanto para Dynamic Media Prime como para Dynamic Media Ultimate.
+
+### ¿Cómo configuro un dominio personalizado para la entrega de Dynamic Media con Cloud Manager? {#configure-custom-domain-delivery-tier}
+
+Para configurar un dominio personalizado para la entrega de Dynamic Media, complete tres pasos en Cloud Manager: añadir un certificado SSL administrado por el cliente, añadir un nombre de dominio personalizado y añadir una configuración de CDN desde la página de detalles del entorno: seleccione Entrega en el campo Nivel del cuadro de diálogo Configurar CDN. Después de añadir la configuración de CDN, el estado se actualiza a Aplicado. Haga clic en más opciones y seleccione Preparación para el lanzamiento y, a continuación, siga los pasos de Configuración de CNAME para asignar cdn.adobeaemcloud.com como un registro CNAME en el proveedor de servicios DNS. Una vez confirmada la asignación DNS, haga clic en Aceptar y el estado del dominio se actualizará a Verificado, con lo que el dominio personalizado estará listo para su uso en las direcciones URL de envío.
