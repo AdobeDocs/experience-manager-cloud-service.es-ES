@@ -4,9 +4,9 @@ description: Descubra cómo los entornos de prueba especializados en Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 399fddc57489577d0cfeb79f63199451e0fe1ed4
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '539'
 ht-degree: 12%
 
 ---
@@ -19,12 +19,12 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->Ya se pueden adquirir entornos de prueba especializados. Póngase en contacto con su representante de Adobe para realizar un pedido.
+>Ya se pueden adquirir entornos de prueba especializados. Para realizar un pedido, póngase en contacto con su representante de Adobe.
 
 
 El Entorno de prueba especializado es un nuevo tipo de entorno de Cloud Manager que puede crear. Está diseñado para admitir casos de uso avanzados, como las Pruebas de aceptación de usuarios (UAT) y la validación de rendimiento. A diferencia de los entornos tradicionales de desarrollo, desarrollo rápido o ensayo, los entornos de prueba especializada funcionan fuera de la canalización de implementación de producción. Por lo tanto, ofrecen una mayor flexibilidad a la vez que mantienen un aislamiento estricto para evitar interferencias con los flujos de trabajo de producción.
 
-Un entorno de prueba especializado se crea para reflejar el tamaño, la escalabilidad y las configuraciones de un entorno de ensayo típico. Este método garantiza que las pruebas realizadas en el entorno de prueba especializado puedan proporcionar una perspectiva realista del rendimiento del código y el contenido en condiciones similares a las de producción. El entorno también admite la copia directa de contenido desde Producción o Ensayo. También mantiene la paridad con los entornos de desarrollo en términos de flujos de trabajo de implementación, controles de acceso y configuraciones de red.
+Un entorno de prueba especializado se crea para reflejar el tamaño, la escalabilidad y las configuraciones de un entorno de ensayo típico. Este método garantiza que las pruebas realizadas en el entorno de prueba especializado puedan proporcionar una perspectiva precisa del rendimiento del código y el contenido en condiciones similares a las de producción. El entorno también admite la copia directa de contenido desde Producción o Ensayo. También mantiene la coherencia con los entornos de desarrollo en términos de flujos de trabajo de implementación, controles de acceso y configuraciones de red.
 
 ## Características y configuraciones clave de un entorno de prueba especializado {#key-features}
 
@@ -56,8 +56,7 @@ Para agregar o editar un entorno, un usuario debe ser miembro del rol **Propieta
 
 1. Realice una de las siguientes acciones:
 
-   * En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, en la tarjeta **Entornos**, haga clic en **Agregar entorno**.
-Si la opción **Agregar entorno** está atenuada (deshabilitada), puede deberse a la falta de permisos o a que depende de los recursos con licencia.
+   * En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, en la tarjeta **Entornos**, haga clic en **Agregar entorno**.Si la opción **Agregar entorno** está atenuada (deshabilitada), se debe a la falta de permisos o depende de recursos con licencia.
 
      ![Tarjeta Entornos](assets/no-environments.png)
 
@@ -80,6 +79,6 @@ Si la opción **Agregar entorno** está atenuada (deshabilitada), puede deberse 
 
 ## Recursos adicionales {#additional-resources}
 
-* Vídeo: [Explicación de los tipos de entorno en AEM Cloud Manager](https://experienceleague.adobe.com/es/perspectives/cloud-manager-environment-types)
+* Vídeo: [Explicación de los tipos de entorno en AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
 * [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md)
 
