@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 5910ffd8024f5e37d6793b195901ff61df460fee
 workflow-type: tm+mt
-source-wordcount: '2331'
-ht-degree: 22%
+source-wordcount: '2324'
+ht-degree: 19%
 
 ---
 
@@ -33,17 +33,17 @@ New Relic One APM para AEM as a Cloud Service tiene muchas características.
 
 * Agente de APM de New Relic One instrumentado que muestra llamadas de método exactas con números de línea, incluidas dependencias externas y bases de datos.
 
-* Optimización del rendimiento holístico mediante la combinación de métricas clave de la monitorización a nivel de infraestructura y la monitorización de aplicaciones (Adobe Experience Manager).
+* Optimización completa del rendimiento mediante la integración de métricas clave de la monitorización y la monitorización de aplicaciones (Adobe Experience Manager) a nivel de infraestructura.
 
 * Rastreadores de cambios automáticos para ejecuciones de canalizaciones de Cloud Manager, actualizaciones de AEM y operaciones de restauración de código. Estos rastreadores permiten a los equipos correlacionar implementaciones con cambios de rendimiento de aplicaciones directamente en New Relic One.
 
 ## Activar la subcuenta de New Relic One {#activate-sub-account}
 
-Para un programa recién creado, se crea una cuenta secundaria de New Relic One. Sin embargo, debe activarlo para que pueda introducir datos. Esta activación no es automática. Siga estos pasos para activar su subcuenta.
+Para un programa recién creado, se crea una cuenta secundaria de New Relic One. Sin embargo, para ingerir datos, debe activarlos. Esta activación no es automática. Para activar la subcuenta, siga estos pasos.
 
 >[!NOTE]
 >
->Un usuario con el rol **Propietario del negocio** debe iniciar sesión para administrar la subcuenta de New Relic One.
+>Para administrar la subcuenta de New Relic One, un usuario con el rol **Propietario del negocio** debe iniciar sesión.
 
 **Para activar su subcuenta de New Relic One:**
 
@@ -65,7 +65,7 @@ Puede definir los usuarios de la subcuenta de New Relic One asociada a su progra
 
 >[!NOTE]
 >
->Un usuario con el rol **Propietario del negocio** o **Administrador de implementación** debe iniciar sesión para administrar usuarios de New Relic One.
+>Para administrar usuarios de New Relic One, un usuario con el rol **Propietario del negocio** o **Administrador de implementación** debe iniciar sesión.
 
 **Para administrar usuarios de New Relic One:**
 
@@ -79,8 +79,8 @@ Puede definir los usuarios de la subcuenta de New Relic One asociada a su progra
 
 1. En el cuadro de diálogo **Administrar usuarios de New Relic**, haga lo siguiente:
 
-   * Introduzca el nombre y los apellidos del usuario que desea agregar
-   * Introduzca la dirección de correo electrónico asociada
+   * Introduzca el nombre y los apellidos del usuario que desea agregar.
+   * Introduzca la dirección de correo electrónico asociada.
    * Haga clic en ![Agregar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Agregar**. Repita este paso para cada usuario que desee agregar.
    * Haga clic en ![Cerrar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) para quitar un usuario.
 
@@ -88,7 +88,7 @@ Puede definir los usuarios de la subcuenta de New Relic One asociada a su progra
 
 1. Haga clic en **Guardar**.
 
-Una vez definidos los usuarios, New Relic envía un correo electrónico de confirmación a cada uno. A partir de ahí, pueden completar el proceso de activación e iniciar sesión.
+Una vez definidos los usuarios, New Relic envía un correo electrónico de confirmación a cada uno. Luego pueden completar el proceso de activación e iniciar sesión.
 
 >[!NOTE]
 >
@@ -248,9 +248,9 @@ Para obtener más ayuda o instrucciones adicionales sobre las ofertas de New Rel
 
 +++**¿Qué monitoriza Adobe con New Relic One?**
 
-Adobe monitoriza los servicios de autor, publicación y vista previa (cuando están disponibles) de AEM as a Cloud Service de a través del complemento Java de New Relic One. Adobe permite la telemetría y monitorización personalizada de APM New Relic One en entornos de AEM as a Cloud Service que sean de producción y de no producción.
+Adobe monitoriza los servicios de AEM as a Cloud Service de creación, publicación y previsualización (cuando están disponibles) a través del complemento Java de New Relic One. Adobe permite la telemetría y monitorización personalizada de APM New Relic One en entornos de AEM as a Cloud Service que sean de producción y de no producción.
 
-La cuenta de New Relic One se adjunta a una cuenta principal mantenida por Adobe y tiene varias aplicaciones; tres por entorno de AEM as a Cloud Service.
+La cuenta de New Relic One se adjunta a una cuenta principal mantenida por Adobe y tiene varias aplicaciones, tres por entorno de AEM as a Cloud Service.
 
 * Una aplicación para el servicio de creación por entorno
 * Una aplicación para el servicio `Publish` por entorno (incluido Golden Publish)
@@ -260,7 +260,7 @@ Nota:
 
 * Cada aplicación utiliza una clave de licencia.
 * Los entornos de AEM as a Cloud Service solo informan a una cuenta de New Relic One.
-* Las métricas y los eventos de monitorización completos para New Relic One se conservan durante tres meses.
+* Las métricas y los eventos de monitorización completos para ambas cuentas de New Relic One se conservarán durante tres meses.
 
 +++
 
@@ -281,7 +281,7 @@ La configuración de SSO personalizada no es compatible con la cuenta de New Rel
 
 +++**¿Qué sucede si ya tengo una suscripción a New Relic local?**
 
-New Relic One es la nueva plataforma de observabilidad de New Relic y permite al soporte de Adobe y a sus equipos observar, monitorear y ver métricas y eventos, todo en un solo lugar.
+New Relic One es la nueva plataforma de observabilidad de New Relic y permite al soporte de Adobe y a sus equipos observar, monitorizar y ver métricas y eventos.
 
 New Relic One ofrece a los usuarios la capacidad de buscar en todas las cuentas donde tengan acceso y visualizar los datos de todos los servicios y hosts de un solo vistazo.
 
