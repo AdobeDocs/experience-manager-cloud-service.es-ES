@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 0ca2d1d71f2087c8dfbd1c14bbed0edb33bd3bf1
 workflow-type: tm+mt
-source-wordcount: '2585'
-ht-degree: 35%
+source-wordcount: '2579'
+ht-degree: 31%
 
 ---
 
@@ -69,13 +69,13 @@ Para agregar o editar un entorno, un usuario debe ser miembro del rol **Propieta
 
 1. En el cuadro de diálogo **Añadir entorno**, haga lo siguiente:
 
-   * Seleccione un [**tipo de entorno**](#environment-types). El número de entornos disponibles/utilizados se muestra entre paréntesis detrás del nombre de tipo de entorno.
+   * Seleccione un [**tipo de entorno**](#environment-types). El número de entornos disponibles/utilizados se muestra entre paréntesis después del nombre del tipo de entorno.
    * Proporcione un entorno **Name**. El nombre del entorno no se puede cambiar una vez creado el entorno.
    * Proporcione una **descripción** opcional para el entorno.
    * Si va a agregar un entorno de **Producción + Fase**, debe proporcionar un nombre de entorno y una descripción tanto para los entornos de producción como de ensayo.
-   * Seleccione una **región principal** en la lista desplegable. La región principal no se puede cambiar después de crearse. Además, según los derechos disponibles, es posible que pueda configurar [varias regiones](#multiple-regions).
+   * Seleccione una **región principal** en la lista desplegable. La región principal no se puede cambiar después de crearse. Además, según los derechos disponibles, puede configurar [varias regiones](#multiple-regions).
 
-   ![Cuadro de diálogo Agregar entorno](assets/add-environment2.png)
+   ![Agregar cuadro de diálogo de entorno](assets/add-environment2.png)
 
 1. Haga clic en **Guardar**.
 
@@ -83,11 +83,11 @@ La página **Información general** ahora muestra su nuevo entorno en la tarjeta
 
 ## Varias regiones de publicación {#multiple-regions}
 
-Un usuario con la función de **Propietario de empresa** puede configurar entornos de producción y ensayo para incluir hasta tres regiones de publicación adicionales, además de la región principal. Las regiones de publicación adicionales pueden mejorar la disponibilidad. Consulte la [Documentación adicional de regiones de publicación](/help/operations/additional-publish-regions.md) para obtener más información.
+Para incluir hasta tres regiones de publicación adicionales además de la región principal, un usuario con el rol **Propietario del negocio** configura entornos de ensayo y producción. Las regiones de publicación adicionales pueden mejorar la disponibilidad. Consulte la [Documentación adicional de regiones de publicación](/help/operations/additional-publish-regions.md) para obtener más información.
 
 >[!TIP]
 >
->Puede usar el complemento [API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) para consultar una lista actual de regiones disponibles.
+>Puede usar el complemento [API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments#creating-aem-cloud-service-environments) para consultar una lista actual de regiones disponibles.
 
 ### Agregar varias regiones de publicación a un entorno nuevo {#add-regions}
 
@@ -114,7 +114,7 @@ Si desea aprovisionar [redes avanzadas](/help/security/configuring-advanced-netw
 
 Si no ha especificado ninguna región adicional al principio, puede hacerlo después de crear el entorno y de tener los derechos necesarios.
 
-También puede quitar regiones de publicación adicionales. Sin embargo, sólo puede agregar o quitar regiones en una transacción. Si necesita añadir una región y quitar una región, primero añádala, guarde el cambio y, a continuación, quítela (o viceversa).
+También puede quitar regiones de publicación adicionales. Sin embargo, puede agregar o quitar regiones en una transacción. Si debe agregar una región y quitar una región, primero agregue, guarde los cambios y, a continuación, quite (o al revés).
 
 1. En la consola Información general del programa de tu programa, haz clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) para tu entorno de producción y selecciona **Editar** en el menú.
 
@@ -184,7 +184,7 @@ Una vez creado, al servicio de vista previa se le aplica la lista de IP permitid
 
 Un usuario con los permisos necesarios debe completar los siguientes pasos antes de compartir la URL del servicio de vista previa para garantizar el acceso a él.
 
-1. Cree una Lista de permitidos IP adecuada, aplíquela al servicio de vista previa y cancele inmediatamente la aplicación de la lista de permitidos `Preview Default [<envId>]`.
+1. Cree una Lista de permitidos IP adecuada, aplíquela al servicio de vista previa y, a la vez, cancele la aplicación de la lista de permitidos `Preview Default [<envId>]`.
 
    Consulte [Aplicar y anular la aplicación de Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) para obtener más información.
 
@@ -221,7 +221,7 @@ También puede obtener acceso a la misma información desde la ficha **Entornos*
 
    ![Información adicional del estado de las regiones de publicación en la ficha Entornos](assets/additional-publish-region-status-environments-tab.png)
 
-Si se notifican problemas con regiones de publicación adicionales, espere un poco. Cloud Manager intenta continuamente recuperar la región y puede volver a estar disponible en cualquier momento. Si el problema persiste durante varias horas, elimine y vuelva a agregar la región de publicación adicional (la misma región o una diferente) para almacenar en déclencheur una implementación completa.
+Si se informa de problemas con regiones de publicación adicionales, espere un breve periodo. Cloud Manager intenta continuamente recuperar la región y esta vuelve a estar disponible automáticamente. Si el problema persiste durante varias horas, elimine y vuelva a agregar la región de publicación adicional (la misma región o una diferente) para iniciar una implementación completa.
 
 El tiempo que espera a que el sistema se recupere por sí solo antes de realizar acciones adicionales depende del impacto que el fallo de esa región tenga en sus sistemas.
 
@@ -244,12 +244,12 @@ Cuando Cloud Manager detecta una versión de AEM más reciente que la implementa
 Por lo tanto, el proceso de actualización consta de dos pasos:
 
 1. Actualización de la canalización con la última versión AEM
-1. Ejecución de la canalización para implementar la nueva versión de AEM en un entorno
+1. Para implementar la nueva versión de AEM en un entorno, ejecute la canalización.
 
 ### Actualizar los entornos {#updating-your-environments}
 
 >[!NOTE]
-> A partir de 2024, las instancias de desarrollo y algunos programas de zonas protegidas ya se actualizan automáticamente, por lo que no es necesario administrar las actualizaciones para ellos manualmente. Como resultado de esta transición, es posible que la opción de Actualizar el entorno manualmente para instancias de desarrollo no esté disponible para _algunos_ de sus programas.
+> A partir de 2024, las instancias de desarrollo y algunos programas de zonas protegidas ya se actualizan automáticamente, por lo que no es necesario administrar las actualizaciones para ellos manualmente. Como resultado de esta transición, la opción de Actualizar el entorno manualmente para instancias de desarrollo no está disponible para _algunos_ de sus programas.
 
 La opción **Actualizar** está disponible en la tarjeta **Entornos** para entornos de desarrollo y zona protegida específicos. Haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto al entorno para acceder a **Actualizar**.
 
@@ -298,7 +298,7 @@ Seleccione **Administrar el acceso** del menú de los tres puntos del entorno en
 
 >[!TIP]
 >
->Consulte [Perfiles de equipo y producto de AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) para obtener información sobre cómo los perfiles de equipo y producto de AEM as a Cloud Service pueden conceder y limitar el acceso a sus soluciones de Adobe con licencia.
+>Para obtener información sobre cómo los perfiles de equipo y de producto de AEM as a Cloud Service conceden y limitan el acceso a sus soluciones de Adobe con licencia, consulte [Perfiles de equipo y de producto de AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Acceso a la consola de desarrollador {#accessing-developer-console}
 
@@ -310,7 +310,7 @@ Se abre una nueva pestaña en el explorador con la página de inicio de sesión 
 
 Solo un usuario con la función **Desarrollador** tendrá acceso a la **Consola de desarrollador**. Sin embargo, para los programas de zonas protegidas, cualquier usuario con acceso a la zona protegida tiene acceso a **Developer Console**.
 
-Consulte [Entornos de zona protegida en hibernación y cancelación de la hibernación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obtener más información.
+Consulte [Entornos de zona protegida en hibernación y cancelación de la hibernación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obtener más información.
 
 Esta opción también está disponible en la ficha **Entorno** de la ventana **Información general** al hacer clic en el ![icono Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de un entorno individual.
 
