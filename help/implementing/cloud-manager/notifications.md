@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
+source-git-commit: 5b3e3ddfea1584072276108767fa42175465188b
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 44%
+source-wordcount: '581'
+ht-degree: 28%
 
 ---
 
@@ -19,11 +19,11 @@ Descubra cómo Cloud Manager le notifica de los eventos importantes.
 
 ## Notificaciones en Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] le envía notificaciones cuando se inicia y finaliza una canalización de producción (con o sin éxito) al inicio de una implementación de producción.
+[!UICONTROL Cloud Manager] proporciona notificaciones cuando una canalización de producción se inicia y finaliza (con o sin éxito) durante una implementación de producción.
 
 Estas notificaciones se envían a través del sistema de notificación [!UICONTROL CX Enterprise] a los usuarios con los roles de **Propietario del negocio**, **Administrador de programas** y **Administrador de implementación**.
 
-Las notificaciones aparecen en una barra lateral dentro de [!UICONTROL Cloud Manager] y en toda la [!UICONTROL CX Enterprise] de Adobe. Al icono de campana del encabezado se le asigna un distintivo cuando tiene nuevas notificaciones.
+Las notificaciones aparecen en una barra lateral dentro de [!UICONTROL Cloud Manager] y en toda la [!UICONTROL CX Enterprise] de Adobe. El icono de campana del encabezado muestra un distintivo cuando tiene nuevas notificaciones.
 
 ![Icono de notificaciones](assets/notifications-bell-badged.png)
 
@@ -35,7 +35,7 @@ La pestaña **Anuncios** incluye anuncios de productos de Adobe. Los anuncios ha
 
 ![Barra lateral de notificaciones](assets/notificaitons-announcements.png)
 
-Haga clic en una notificación o un anuncio para ver los detalles. Las notificaciones vinculadas a actividades como las implementaciones de canalización le llevan a los detalles de esa actividad, como la ventana de ejecución de canalización.
+Haga clic en una notificación o un anuncio para ver los detalles. Las notificaciones vinculadas a actividades como las implementaciones de canalización le llevan a los detalles de esa actividad, como la ventana de ejecución de la canalización.
 
 Haga clic en la opción **Ver todos** en la parte inferior del panel para ver todos los anuncios de la bandeja de entrada.
 
@@ -45,27 +45,27 @@ Haga clic en la opción **Marcar todo como leído** en la parte inferior del pan
 
 Puede personalizar cómo recibe las notificaciones y cuáles.
 
-Haga clic en el icono de engranaje en la parte superior de la barra lateral de notificaciones para abrir la ventana **Preferencias de CX Enterprise**. Desde aquí, puede definir las suscripciones de notificación y cómo recibe las notificaciones.
+Haga clic en el icono de configuración en la parte superior de la barra lateral de notificaciones para abrir la ventana **Preferencias de CX Enterprise**. Desde aquí puede definir las suscripciones de notificación y cómo recibe las notificaciones.
 
 ![Icono de configuración de notificaciones](assets/notifications-configuration.png)
 
 ### Suscripciones {#subscriptions}
 
-Las suscripciones definen los productos para los que recibe notificaciones y qué tipos de notificaciones.
+Las suscripciones definen los productos para los que recibe notificaciones y los tipos de notificaciones que recibe.
 
 ![Suscripciones de notificaciones](assets/notifications-subscriptions.png)
 
-De forma predeterminada, recibe todas las notificaciones de todos los productos, tanto de la aplicación como por correo electrónico. Haga clic en las comillas angulares junto al nombre de un producto para mostrar las opciones detalladas y definir los tipos de notificaciones que recibe de ese producto. O bien, marque o desmarque las opciones en el nivel de producto para seleccionar o deseleccionar todas las opciones del producto.
+De forma predeterminada, recibe todas las notificaciones de todos los productos, tanto en la aplicación como por correo electrónico. Haga clic en las comillas angulares junto al nombre de un producto para mostrar las opciones detalladas y definir los tipos de notificaciones que recibe de ese producto. O bien, marque o desmarque las opciones en el nivel de producto para seleccionar o deseleccionar todas las opciones del producto.
 
 ![Personalización de la suscripción a notificaciones](assets/notifications-subscriptions-customize.png)
 
 ### Prioridad {#priority}
 
-Las alertas de prioridad están marcadas con la etiqueta **HIGH**. Puede configurarlas para que se reciban exclusivamente como alertas. En la sección **Prioridad**, puede definir qué categorías se clasifican como notificaciones prioritarias.
+Las alertas de prioridad están marcadas con la etiqueta **HIGH**. Puede configurarlos para que se reciban como alertas. En la sección **Prioridad**, puede definir qué categorías se clasifican como notificaciones prioritarias.
 
 ![Prioridad de notificaciones](assets/notifications-priority.png)
 
-Utilice el menú desplegable para añadir a la lista de categorías que cumplen los requisitos de prioridad. Haga clic en la X situada junto a los nombres de las categorías para eliminarlas.
+Utilice el menú desplegable para añadir a la lista de categorías que cumplen los requisitos de prioridad. Haga clic en el icono Eliminar situado junto a los nombres de las categorías para eliminarlas.
 
 ### Alertas {#alerts}
 
@@ -75,13 +75,13 @@ Las alertas aparecen en la esquina superior derecha de la ventana durante unos s
 
 Puede definir el comportamiento de las alertas.
 
-* **Mostrar alertas para**: define los tipos de notificaciones que activan alertas
-* **Las alertas deben permanecer en la pantalla hasta que las descarte**: controla si las alertas deben persistir a menos que las descarte activamente
-* **Duración**: define cuánto tiempo debe permanecer la alerta en la pantalla si no ha elegido que permanezcan en ella.
+* **Mostrar alertas para**: define los tipos de notificaciones que almacenan en déclencheur las alertas.
+* **Las alertas permanecen en pantalla hasta que las descarta**: controla si las alertas persisten a menos que las descarte activamente.
+* **Duración**: define cuánto tiempo permanece la alerta en la pantalla si no la ha configurado para que persistan.
 
 ### Correo electrónico {#emails}
 
-Las notificaciones están disponibles en la interfaz de usuario web en todas las soluciones de Adobe [!UICONTROL CX Enterprise]. También puede optar por que estas notificaciones se envíen por correo electrónico en la sección **Correos electrónicos**.
+Las notificaciones están disponibles en la interfaz de usuario web en todas las soluciones de Adobe [!UICONTROL CX Enterprise]. Para optar por que estas notificaciones se envíen por correo electrónico, utilice la sección **Correos electrónicos**.
 
 ![Correos electrónicos de notificación](assets/notifications-emails.png)
 
