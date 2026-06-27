@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
+source-git-commit: 56322227b6f2d13fa16a6cbc9b32b54d9180099c
 workflow-type: tm+mt
-source-wordcount: '1796'
-ht-degree: 32%
+source-wordcount: '1786'
+ht-degree: 30%
 
 ---
 
@@ -39,7 +39,7 @@ Cuando inicia sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my
 
 ![Consola Mis programas](assets/my-programs-console.png)
 
-La consola Mis programas proporciona información general de todos los programas a los que tiene acceso en la organización seleccionada. Se compone de partes.
+La consola Mis programas proporciona información general de todos los programas a los que tiene acceso en la organización seleccionada. Consta de las siguientes partes:
 
 1. [Barras de herramientas](#toolbars-my-programs-toolbars) para la selección de organizaciones, alertas y configuración de la cuenta.
 1. Pestañas que permiten alternar la vista actual de los programas.
@@ -56,7 +56,7 @@ La consola Mis programas proporciona información general de todos los programas
 
 ### Barras de herramientas {#my-programs-toolbars}
 
-Hay dos barras de herramientas una encima de la otra.
+Hay dos barras de herramientas apiladas.
 
 #### Barra de navegación superior de Experience Platform {#cloud-manager-header}
 
@@ -67,7 +67,7 @@ La primera es la barra de navegación superior de Experience Platform, que es pe
 * El ![icono Mostrar menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (mostrar u ocultar menú lateral) le proporciona acceso a una variedad de fichas que pueden llevarle a partes específicas de un programa individual. O bien, puede cambiar entre el [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md) y la consola **[Mis programas](#my-programs-console)** en función del contexto.
 * El ![icono de Campana](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notificaciones](/help/implementing/cloud-manager/notifications.md)) le proporciona acceso a notificaciones y anuncios, entre otras cosas.
 
-Para obtener más información sobre la barra de navegación superior de Experience Platform, consulta la [guía de la interfaz de usuario de Adobe Experience Platform](https://experienceleague.adobe.com/es/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
+Para obtener más información sobre la barra de navegación superior de Experience Platform, consulta la [guía de la interfaz de usuario de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
 
 #### Barra de herramientas del programa {#program-toolbar}
 
@@ -81,13 +81,13 @@ La barra de herramientas del programa proporciona vínculos para cambiar entre l
 
 ### Estadísticas y llamadas a la acción {#statistics}
 
-La sección de estadísticas y call-to-action proporciona datos acumulados para su organización. Por ejemplo, si ha configurado correctamente sus programas, pueden mostrarse estadísticas de las actividades de los últimos 90 días, incluidas las siguientes:
+La sección de estadísticas y call-to-action proporciona datos acumulados para su organización. Por ejemplo, si ha configurado correctamente sus programas, se muestran estadísticas de las actividades de los últimos 90 días, incluidas las siguientes:
 
 * Número de [implementaciones](/help/implementing/cloud-manager/deploy-code.md)
 * Número de [problemas de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md) identificados
 * Número de compilaciones
 
-O si acaba de comenzar la configuración de su organización, puede haber sugerencias sobre los pasos siguientes o los recursos de documentación.
+Si está empezando la configuración de su organización, hay sugerencias sobre los pasos siguientes o los recursos de documentación.
 
 ### Sección Mis programas {#my-programs-section}
 
@@ -122,7 +122,7 @@ Una tarjeta (o fila en una tabla) representa cada programa, lo que proporciona u
 * Nombre asignado al programa. La imagen anterior muestra &quot;Ejemplo de SecurBank&quot; como nombre del programa.
 * Tipo de servicio:
    * **Experience Manager Cloud** para programas de AEM as a Cloud Service
-   * **Experience Manager** — para [programas de AMS (Adobe Managed Services)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — para [programas de AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Zona protegida
    * Producción
@@ -130,7 +130,7 @@ Una tarjeta (o fila en una tabla) representa cada programa, lo que proporciona u
 * Soluciones configuradas. En la imagen anterior, Sites y Assets son las soluciones configuradas.
 * Fecha de creación.
 
-Un programa de producción puede tener un distintivo para mostrar las funciones adicionales que eligió en el momento en que lo agregó, como las siguientes:
+Un programa de producción se marca para mostrar las funciones adicionales que eligió en el momento en que lo agregó, como las siguientes:
 
 * ![Insignia de HIPAA](assets/hipaa.png) [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
@@ -149,7 +149,7 @@ El icono ![Más](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_
 * Vaya a un ![icono de datos](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Entorno](/help/implementing/cloud-manager/manage-environments.md) particular del programa
 * Abra el ![icono de información general del programa](/help/implementing/cloud-manager/assets/program-overview.svg) [Información general del programa](#program-overview)
 * ![Editar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Editar el programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Eliminar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Eliminar un programa de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Eliminar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Eliminar un programa de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -170,7 +170,7 @@ Cuando se selecciona un programa en la consola **[Mis programas](#my-programs-co
 
 ![Información general del programa](assets/program-overview.png)
 
-La descripción general del programa le permite acceder a todos los detalles de un programa de Cloud Manager. Al igual que la consola **Mis programas**, consta de varias partes.
+La descripción general del programa le permite acceder a todos los detalles de un programa de Cloud Manager. Al igual que la consola **Mis programas**, consta de las siguientes partes:
 
 1. [Barras de herramientas](#program-overview-toolbar) para volver rápidamente a la consola Mis programas y navegar por el programa.
 1. [Tabs](#program-tabs) para cambiar entre diferentes aspectos del programa.
@@ -190,11 +190,11 @@ En la esquina superior izquierda de la página se encuentra el encabezado Cloud 
 
 ![menú lateral de Cloud Manager](assets/cloud-manager-hamburger.png)
 
-Haga clic en Adobe Cloud Manager para volver a Inicio.
+Haga clic en Adobe Cloud Manager para volver a la página principal.
 
 #### Barra de herramientas del programa {#program-toolbar-2}
 
-La barra de herramientas del programa le permite cambiar a otros programas rápidamente, pero también le permite acceder a acciones adecuadas al contexto, como agregar y editar el programa.
+La barra de herramientas del programa proporciona acceso para cambiar a otros programas rápidamente y también proporciona acceso a acciones apropiadas para el contexto, como agregar y editar el programa.
 
 ![Barra de herramientas del programa](assets/cloud-manager-program-toolbar.png)
 
@@ -202,7 +202,7 @@ La barra de herramientas siempre muestra la ficha en la que se encuentra, inclus
 
 ### Pestañas del programa {#program-tabs}
 
-Cada programa tiene muchas opciones y datos asociados. Estas opciones y datos se recopilan en pestañas para facilitar la navegación por el programa. Las pestañas le permiten acceder a lo siguiente:
+Cada programa tiene muchas opciones y datos asociados. Estas opciones y datos están organizados en pestañas para facilitar la navegación por el programa. Las pestañas le permiten acceder a lo siguiente:
 
 **Programa**
 
@@ -234,7 +234,7 @@ En la esquina superior izquierda del [encabezado de Cloud Manager](#cloud-manage
 
 ### Llamada a la acción {#cta}
 
-La sección de llamada a la acción le proporciona información útil según el estado del programa. Para un programa nuevo, puede ver los pasos siguientes y un recordatorio de una fecha de lanzamiento que se [estableció durante la creación del programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+La sección de llamada a la acción le proporciona información útil según el estado del programa. Para un programa nuevo, verá los pasos siguientes y un recordatorio de la fecha de lanzamiento [establecida durante la creación del programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Call-to-action para un nuevo programa](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
