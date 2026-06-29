@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
+source-git-commit: 9f6c56b099268b9d13e060a5920ca3b6021169f1
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1142'
 ht-degree: 14%
 
 ---
@@ -53,8 +53,7 @@ Consulte también [CDN administrada por Adobe](https://www.aem.live/docs/byo-cdn
 
 1. Cerca de la esquina superior derecha de la página **Configuración de dominio**, haga clic en **Agregar dominio**.
 
-1. En el cuadro de diálogo **Agregar dominio**, en el campo **Nombre de dominio**, escriba el nombre de dominio personalizado que está utilizando.
-Al escribir el nombre de dominio, no incluya `http://`, `https://` ni espacios.
+1. En el cuadro de diálogo **Agregar dominio**, en el campo **Nombre de dominio**, escriba el nombre de dominio personalizado que está utilizando.Al escribir el nombre de dominio, no incluya `http://`, `https://` ni espacios.
 
    >[!NOTE]
    >
