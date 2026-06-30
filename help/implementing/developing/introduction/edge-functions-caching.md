@@ -3,9 +3,9 @@ title: Almacenamiento en caché en funciones Edge de AEM
 description: Obtenga información sobre cómo interactúan la caché de CDN y la caché de recuperación de funciones de Edge, cómo configurar el comportamiento del almacenamiento en caché y cómo depurar el contenido almacenado en caché en ambas capas.
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: 4d3659aef1a180192a79b791f6ea840f576f5e63
+source-git-commit: eec07e98d235e80c423bea0d51f75e170c34d1e5
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Funciones de AEM Edge es una característica **beta**. Las funciones y la documentación pueden cambiar sin previo aviso. Para unirse al programa de acceso anticipado y proporcionar comentarios, envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com).
+>Funciones de AEM Edge es una característica **beta pública**, por lo que puede probarla de forma automática sin ponerse en contacto con Adobe para habilitarla. Adobe le recomienda enviar un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) para describir su caso de uso y que Adobe pueda asegurarse de que es compatible y proporcionar instrucciones. Es especialmente importante ponerse en contacto con Adobe antes de implementar la función para el tráfico de producción.
+>
+>Al utilizar AEM Edge Functions Beta, reconoce que aún se encuentra en desarrollo y que no debe confiar en el correcto funcionamiento de la tecnología o en la disponibilidad de los datos. Esta función se proporciona tal cual, puede cambiar sin previo aviso y no está cubierta por la producción.
 
 Esta página proporciona instrucciones técnicas detalladas sobre cómo funciona el almacenamiento en caché en las funciones de Edge de AEM, incluida la arquitectura de dos cachés, cómo controlar el comportamiento del almacenamiento en caché en el código y cómo purgar las entradas de caché cuando cambia el contenido.
 
