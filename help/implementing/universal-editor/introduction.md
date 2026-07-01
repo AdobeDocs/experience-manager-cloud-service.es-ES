@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 100%
+source-wordcount: '1030'
+ht-degree: 97%
 
 ---
 
@@ -103,7 +103,7 @@ Un profesional del marketing quiere crear contenido que esté adaptado al diseñ
 
 A medida que explore el editor universal y avance en su implementación en sus propios proyectos, tenga en cuenta las siguientes limitaciones.
 
-* No más de 25 recursos de AEM (fragmentos de contenido, páginas, fragmentos de experiencias, recursos, etc.) deben ser referencias como instrumentación en una sola página.
+* No más de 25 recursos de AEM (fragmentos de contenido, páginas, fragmentos de experiencias, Assets, etc.) deben ser referencias como instrumentación en una sola página.
 * AEM as a Cloud Service, [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) y [AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) son los únicos backends de AEM compatibles.
 * Se requiere la versión `2023.8.13099` o superiores para AEM as a Cloud Service.
 * Los autores de contenido deben tener sus propias cuentas de Experience Cloud individuales.
