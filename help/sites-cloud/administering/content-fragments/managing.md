@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="(Se aplica a AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 7e93b570e6b249432680308bee4de789e358f26c
+source-git-commit: f6624c3c2244fd38f0df794e3aa05680c437a806
 workflow-type: tm+mt
-source-wordcount: '3451'
+source-wordcount: '3487'
 ht-degree: 30%
 
 ---
@@ -103,8 +103,7 @@ El panel principal/derecho (vista de tabla) de la consola proporciona una amplia
    * Solo información.
    * Se puede usar para [Filtrado rápido](#fast-filtering).
 * **Carpeta**
-   * Proporciona un vínculo para abrir la carpeta en la consola.
-Al pasar el ratón por encima del nombre de la carpeta, se mostrará la ruta JCR.
+   * Proporciona un vínculo para abrir la carpeta en la consola.Al pasar el puntero por encima del nombre de la carpeta, se muestra la ruta JCR.
 * **Estado**
    * Solo información.
    * Se puede usar para [Filtrado rápido](#fast-filtering).
@@ -649,15 +648,11 @@ Cuando se seleccione, aparecerá como un predicado de filtro y la lista se filtr
 La consola Fragmento de contenido admite:
 
 * [Búsqueda de texto completo](#full-text-search)
-* [Búsqueda semántica](#semantic-search)
+* [Búsqueda por IA](#ai-search) (búsqueda semántica)
 
-<!-- CQDOC-23674 - activate when toggle visible -->
-<!--
+Utilice la opción de alternancia **Búsqueda por IA** para seleccionar el método de búsqueda que desee utilizar:
 
-Use the toggle option to select your search method:
-
-![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
--->
+![Consola de fragmentos de contenido: seleccione el método de búsqueda](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
 
 El cuadro de búsqueda también proporciona acceso rápido a **Fragmentos de contenido recientes** y **Búsquedas guardadas**:
 
@@ -673,9 +668,9 @@ Proporcionará los resultados seleccionados:
 
 ![Consola Fragmentos de contenido: resultados de búsqueda](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
 
-### Búsqueda semántica {#semantic-search}
+### Búsqueda por IA (búsqueda semántica) {#ai-search}
 
-La búsqueda semántica de fragmentos de contenido mejora la detección de contenido al permitir consultas en lenguaje natural. Permite encontrar fragmentos basados en el significado y la intención, en lugar de depender únicamente de palabras clave exactas o coincidencias de texto completo.
+La búsqueda (semántica) de fragmentos de contenido por IA mejora la detección de contenido al permitir consultas en lenguaje natural. Permite encontrar fragmentos basados en el significado y la intención, en lugar de depender únicamente de palabras clave exactas o coincidencias de texto completo.
 
 Escriba la consulta de búsqueda en el cuadro de búsqueda; por ejemplo `fruity and light roast`:
 
