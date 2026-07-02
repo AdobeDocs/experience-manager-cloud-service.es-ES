@@ -4,9 +4,9 @@ description: Estas son las notas de la versión de la vista previa del editor un
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
+source-git-commit: 3da0b684974f92ae078fbefb8adeaf1554291d8c
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,8 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 >
 >El contenido de la versión real y la fecha de lanzamiento están sujetos a cambios.
 
-## Próximas funciones {#upcoming-features}
-
-* El editor ahora admite una `preview` [metaetiqueta](/help/implementing/universal-editor/customizing.md#meta-tags) para forzar la carga del editor en [modo de vista previa.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
-* El editor ahora admite una `readonly` [metaetiqueta](/help/implementing/universal-editor/customizing.md#meta-tags) para deshabilitar la edición, de modo que el usuario puede seleccionar cualquier componente, pero no puede cambiar el contenido.
-
 ## Próximos cambios {#upcoming-improvements}
 
-* Se han realizado mejoras de accesibilidad en las jerarquías de encabezados.
-* Se han realizado mejoras de accesibilidad para mantener el enfoque correctamente en la barra de ubicación para ayudar a la navegación mediante el teclado del editor.
-
+* Se han mejorado las acciones de deshacer y rehacer.
+* Las listas ordenadas ahora se representan correctamente al editar en línea con el editor de texto enriquecido.
+* La reordenación de secciones mediante arrastrar y soltar ahora funciona correctamente.
