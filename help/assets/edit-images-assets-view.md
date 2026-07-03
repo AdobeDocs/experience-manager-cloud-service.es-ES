@@ -5,10 +5,10 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: aa18d6572f3ba8a6f8bb61d96d3004a6db46d925
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 71%
+source-wordcount: '1256'
+ht-degree: 70%
 
 ---
 
@@ -26,8 +26,7 @@ Después de editar una imagen, puede guardar la nueva como una nueva versión. E
 
 ## Editar imagen {#edit-image}
 
-Vaya a la interfaz de usuario de la vista Assets, use el vínculo [Vista de Assets](https://experience.adobe.com/#/assets) y seleccione el repositorio adecuado. Para obtener acceso, póngase en contacto con el administrador de su organización.
-Para obtener más información de referencia, consulte [Introducción a la vista de Adobe Experience Manager Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprender la interfaz de usuario de la vista de Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) y [Casos de uso de la vista de Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Vaya a la interfaz de usuario de la vista Assets, use el vínculo [Vista de Assets](https://experience.adobe.com/#/assets) y seleccione el repositorio adecuado. Para obtener acceso, póngase en contacto con el administrador de su organización.Para obtener más información de referencia, consulte [Introducción a la vista de Adobe Experience Manager Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprender la interfaz de usuario de la vista de Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) y [Casos de uso de la vista de Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -49,8 +48,7 @@ Cambiar el tamaño de una imagen a un tamaño específico es un caso de uso popu
 1. Haga clic en **[!UICONTROL Aplicar]** para que tengan efecto los cambios.
    ![Edición de imágenes con Adobe Express](assets/adobe-express-resize-image.png)
 
-   La imagen editada está disponible para descargar. Puede guardar el recurso editado como una nueva versión del mismo recurso o guardarlo como uno nuevo.
-   ![Guardar imagen con Adobe Express](assets/adobe-express-resize-save.png)
+   La imagen editada está disponible para descargar. Puede guardar el recurso editado como una nueva versión del mismo recurso o guardarlo como uno nuevo.   ![Guardar imagen con Adobe Express](assets/adobe-express-resize-save.png)
 
 #### Quitar fondo {#remove-background-using-express}
 
@@ -89,7 +87,7 @@ Puede convertir rápidamente entre los formatos de imagen JPEG y PNG mediante Ad
 
 Los usuarios con derechos de acceso rápido pueden utilizar el editor Express integrado desde la vista de Assets para editar fácilmente el contenido y crear contenido nuevo con GenAI de Adobe Firefly. Esta función mejora la reutilización de contenidos y acelera su velocidad. También puede utilizar elementos predefinidos para que su recurso tenga un aspecto impresionante o realizar acciones rápidas para editar la imagen con solo unos clics.
 
-![express en la interfaz de usuario de essentials](/help/assets/assets/express-in-essentials-ui.jpg)
+![Express en la IU de Essentials](/help/assets/assets/express-in-essentials-ui.jpg)
 Para editar imágenes con el editor incrustado [!DNL Adobe Express], siga los pasos a continuación:
 
 1. Vaya a la vista de AEM Assets mediante el vínculo: [Vista de AEM Assets](https://experience.adobe.com/#/assets) y seleccione el repositorio adecuado.
@@ -112,10 +110,15 @@ Para editar imágenes con el editor incrustado [!DNL Adobe Express], siga los pa
    1. Opcional: proporcione detalles como el nombre del proyecto o de la campaña, palabras clave, canales, lapso de tiempo y región.
 1. Haga clic en **Guardar como versión** o **Guardar como nuevo recurso** para guardar los recursos.
 
+>[!NOTE]
+>
+>Al guardar un archivo de PSD como un documento de Adobe Express, se conservan las capas del archivo de PSD original.
+
+
 #### Limitaciones de la edición de imágenes en Express Editor {#limitations-of-editing-images-in-the-express-editor}
 
-* Tipo de archivo admitido: JPEG o PNG.
-* Tamaño máximo de archivo admitido: 40 MB.
+* Tipo de archivo admitido: JPEG, PSD o PNG.
+* El tamaño del recurso debe ser inferior a 80 MB para dispositivos de escritorio y a 40 MB para dispositivos móviles.
 * Anchura y altura admitidas: 65 MP (por ejemplo, 8 K x 8 K o 16 K x 4 K).
 * Vuelva a cargar la página para ver el nuevo recurso guardado más reciente en la carpeta de origen.
 
@@ -130,9 +133,7 @@ Para editar imágenes con el editor incrustado [!DNL Adobe Express], siga los pa
 
 #### Limitaciones {#limitations}
 
-* Solo puede modificar imágenes de los tipos de formato `JPEG` y `PNG`.
-* El tamaño del recurso debe ser inferior a 80 MB para dispositivos de escritorio y a 40 MB para dispositivos móviles.
-* El rango de anchura y altura admitido es de 65 MP (por ejemplo, 8 K x 8 K o 16 K x 4 K).
+* Permitir hasta 8000 píxeles por dimensión para el lienzo del nuevo documento exprés
 * Puede guardar una imagen en los formatos `PDF`, `JPEG` o `PNG`.
 
 <!--
