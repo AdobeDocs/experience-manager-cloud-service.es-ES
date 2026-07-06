@@ -4,9 +4,9 @@ description: En esta guía se proporcionan sugerencias para solicitar informaci�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
+source-git-commit: 2b3471df0910f08878df7fbce6431be349a2c954
 workflow-type: tm+mt
-source-wordcount: '3240'
+source-wordcount: '3312'
 ht-degree: 0%
 
 ---
@@ -167,20 +167,18 @@ Utilice este mensaje para extraer y aplicar el diseño visual de un sitio de ori
 * &quot;Migrar el diseño de `https://example.com`&quot;
 * &quot;Extraer tokens de diseño&quot;
 * &quot;Estilo del bloque de héroe&quot;
+* &quot;Estilo de todos los bloques&quot;
 
 #### Qué se debe saber {#wtk-design}
 
 * La migración del diseño tiene dos fases:
-   1. La fase 1 (en todo el sitio) extrae lo siguiente en `styles/styles.css`:
-      * Paleta de colores global y colores de énfasis
-      * Sistema tipográfico (fuentes, tamaños, pesos)
-      * Sistema de espaciado (relleno, márgenes, espacios)
-      * Fondos de sección (claro, oscuro, de color)
-      * Estilos de componente base (botones, vínculos e imágenes)
-      * Salidas a
-   1. La fase 2 migra estilos de bloque individuales y crea CSS específicos de bloque en `/blocks/{name}/{name}.css`.
+   1. La fase 1 (en todo el sitio) genera `styles/brand.css` y `styles/styles.css`:
+      * `brand.css` contiene tokens de diseño como propiedades personalizadas de CSS (fuentes, colores, espaciado, tamaños de encabezado).
+      * `styles.css` importa `brand.css` y aplica los tokens al contenido predeterminado (encabezados, párrafos, botones, vínculos, fondos de sección).
+      * Si el proyecto ya tiene `brand.css`, solicite al agente que lo utilice en lugar de extraer del origen.
+   1. La fase 2 aplica estilos a bloques individuales en paralelo y crea CSS específicos de bloques en `/blocks/{name}/{name}.css`, haciendo referencia a los tokens de `brand.css`.
 * El estilo de bloque (fase 2) requiere que el diseño de todo el sitio (fase 1) se complete primero.
-   * El sistema de diseño global proporciona propiedades personalizadas de CSS que bloquean la referencia a.
+* La fase 2 logra una fidelidad de estilo de nivel de bloque del 80-90% en un solo pase.
 * Tiempo estimado:
    * Fase 1: 5-10 minutos
    * Fase 2: 10 a 15 minutos
@@ -197,21 +195,38 @@ Utilice este mensaje para validar y perfeccionar bloques migrados individuales y
 
 #### Qué se debe saber {#wtk-block-critique}
 
-* La crítica de bloques compara un bloque migrado con su origen y aplica correcciones CSS de forma iterativa hasta que se logra un 85% de similitud visual o se completan tres iteraciones.
+* La crítica de bloques compara un bloque migrado con su origen y aplica correcciones hasta que se logra un 85% de similitud o hasta que se completan tres iteraciones.
 * La aptitud requiere que el bloque se haya creado primero mediante la migración de páginas.
-* Una crítica de bloque sigue un flujo de trabajo de seis pasos:
-   1. Captura el bloque original de la página de origen mediante un selector XPath.
-   1. Inicializa la sesión de crítica.
-   1. Inspecciona el bloque original (capturas de pantalla, estilos, HTML).
-   1. Inspecciona el bloque migrado.
-   1. Compara elementos y genera una puntuación de similitud con correcciones CSS.
-   1. Aplica correcciones y vuelve a inspeccionar hasta que se alcanza el objetivo del 85 %.
-* Cada iteración muestra un informe crítico completo con todas las diferencias, aplica todas las correcciones CSS (priorizadas por el impacto visual), verifica en la vista previa, vuelve a inspeccionar y muestra las métricas de mejora.
+* La crítica detecta y corrige **problemas estructurales/de contenido** y **problemas de estilo**:
+   * Contenido/estructural: faltan encabezados, párrafos, vínculos, recuento incorrecto de filas/celdas de tabla. Se corrige actualizando los analizadores y reimportando.
+   * Estilo: las diferencias de CSS en los colores, el espaciado, la tipografía y el diseño se corrigen al actualizar el bloque CSS.
+* La cascada de correcciones se ejecuta en orden: los estilos globales → los transformadores de sección → los analizadores de contenido/estructurales → bloquear CSS. Cada capa se reimporta y se vuelve a evaluar antes de pasar a la siguiente.
 * Use la crítica de bloque una vez completada la [migración de diseño](#design-migration).
+
+### Crítica del sitio {#site-critique}
+
+Utilice este mensaje para validar todos los bloques migrados en su sitio en un solo paso, ideal para migraciones de varias páginas.
+
+#### Indicadores de ejemplo {#example-site-critique}
+
+* &quot;Sitio de crítica&quot;
+* &quot;Validar todos los bloques del sitio migrado&quot;
+
+#### Qué se debe saber {#wtk-site-critique}
+
+* La crítica del sitio valida todos los bloques en todas las plantillas migradas utilizando subagentes paralelos, uno por plantilla.
+* Se aplica la misma cascada de correcciones que la crítica de bloques (estilos globales → transformadores de sección → analizadores de contenido/estructurales → bloques CSS), pero en todas las páginas simultáneamente.
+* Las correcciones se deduplican: si el mismo problema aparece en varias páginas con el mismo bloque, la corrección se aplica una vez.
+* Si `brand.css` aún no existe, la crítica se ejecuta en modo de solo contenido estructural (corrigiendo analizadores y transformadores sin estilo).
+* La crítica del sitio es el enfoque recomendado después de la migración del diseño para proyectos de varias páginas.
+* Se recomienda el siguiente flujo de trabajo:
+   1. Migrar páginas (únicas o masivas).
+   1. Ejecute la migración de diseño.
+   1. Ejecute `critique site` para validar y corregir automáticamente los huecos restantes en todas las plantillas.
 
 ### Crítica de página {#page-critique}
 
-Utilice este mensaje para validar páginas migradas completas para la fidelidad visual de página completa con el sitio web original.
+Utilice este mensaje para validar una sola página migrada para la fidelidad visual con el sitio web original.
 
 #### Indicadores de ejemplo {#example-page-critique}
 
@@ -220,21 +235,10 @@ Utilice este mensaje para validar páginas migradas completas para la fidelidad 
 
 #### Qué se debe saber {#wtk-page-critique}
 
-* Crítica de página realiza una comparación visual de página completa entre la página original y la migrada, iterando hasta alcanzar un objetivo de similitud del 85 % o hasta completar tres iteraciones.
-* Una crítica de página tiene un flujo de trabajo de cinco pasos:
-   1. Inicializa una sesión crítica.
-   1. Inspecciona todos los elementos de la página original.
-   1. Inspecciona todos los elementos de la página migrada.
-   1. Compara y genera una puntuación de similitud con correcciones CSS priorizadas.
-   1. Aplica correcciones y vuelve a inspeccionar hasta que se alcanza el objetivo del 85 %.
-* Una crítica de página necesita la dirección URL de la página de origen y la ruta migrada (por ejemplo, &quot;/about&quot;) como entrada.
-* Utilice la crítica de página al validar la fidelidad general de la página o validar varios bloques simultáneamente.
-* [Use la crítica de bloque](#block-critique) para la validación centrada en componentes específicos.
-* Se recomienda el siguiente flujo de trabajo:
-   1. Migrar una página.
-   1. Aplique un diseño.
-   1. Ejecutar una crítica de bloques en bloques de claves
-   1. Ejecute una crítica de página para una validación completa.
+* La crítica de página valida una sola página, aplicando la misma corrección en cascada (secciones de → globales → contenido → estilo) hasta un 85 % de similitud o tres iteraciones.
+* Requiere la dirección URL de la página de origen y la ruta migrada (por ejemplo, &quot;/about&quot;) como entrada.
+* Utilice la crítica de página para el refinamiento de una sola página después de la crítica del sitio o para la validación segmentada.
+* En proyectos de varias páginas, [use la crítica del sitio](#site-critique); administra todas las páginas y deduplica las correcciones automáticamente.
 
 ### Migración de bloques Figma {#figma-block-migration}
 
