@@ -4,10 +4,10 @@ description: Aprenda a integrar [!DNL AEM Assets] con [!DNL Edge Delivery Servic
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 37652ec153be900e9b99222f7a7d257c6febacc0
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 12%
+source-wordcount: '875'
+ht-degree: 28%
 
 ---
 
@@ -27,9 +27,7 @@ Después de editar el contenido, puede publicarlo en Edge Delivery Services.
 
 ## Integrando [!DNL AEM Assets] con flujos de creación basados en documentos para [!DNL Edge Delivery Services] {#integrate-dynamic-media-with-edge-delivery-services}
 
-Cuando [!DNL AEM Assets] se integra con las herramientas de creación basadas en documentos, como [!DNL Microsoft Word] o [!DNL Google Docs], proporciona un selector de recursos en la herramienta de creación. Use este selector de recursos para acceder a [!DNL AEM Assets] e insertar recursos aprobados en el contenido.
-Si ya tiene un sitio web de [!DNL Edge Delivery Services], consulte la documentación de [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) para obtener información sobre cómo integrar [!DNL AEM Assets] con su proyecto de [!DNL AEM] existente.
-Siga las siguientes secciones de [Requisitos previos](#integrate-aem-assets-with-microsoft-word-and-google-docs) e [Integración [!DNL AEM Assets] con el entorno de creación basada en documentos](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) si no tiene un sitio web de [!DNL Edge Delivery Services] para publicar el contenido inclusivo de [!DNL AEM Assets] creado en las herramientas de creación basadas en documentos.
+Cuando [!DNL AEM Assets] se integra con las herramientas de creación basadas en documentos, como [!DNL Microsoft Word] o [!DNL Google Docs], proporciona un selector de recursos en la herramienta de creación. Use este selector de recursos para acceder a [!DNL AEM Assets] e insertar recursos aprobados en el contenido.Si ya tiene un sitio web de [!DNL Edge Delivery Services], consulte la documentación de [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) para obtener información sobre cómo integrar [!DNL AEM Assets] con su proyecto de [!DNL AEM] existente.Siga las siguientes secciones de [Requisitos previos](#integrate-aem-assets-with-microsoft-word-and-google-docs) e [Integración [!DNL AEM Assets] con el entorno de creación basada en documentos](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) si no tiene un sitio web de [!DNL Edge Delivery Services] para publicar el contenido inclusivo de [!DNL AEM Assets] creado en las herramientas de creación basadas en documentos.
 
 ### Requisitos previos{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
@@ -74,11 +72,11 @@ Para utilizar la referencia de recursos, debe tener:
 
 Seleccione los siguientes vínculos para aprender a utilizar [!DNL Dynamic Media with OpenAPI capabilities] para entregar imágenes, vídeos y otros tipos de recursos en el contenido:
 
-* [Agregar imágenes al contenido](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
-* [Agregar vídeos a su contenido](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
-* [Agregue recursos que no sean de imagen o vídeo, como PDF, archivos zip y más, al contenido](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
+* [Añadir imágenes al contenido](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
+* [Añadir vídeos al contenido](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
+* [Añada al contenido recursos que no sean imágenes o vídeo, como PDF, archivos Zip y mucho más](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
-Consulte este vídeo para aprender a distribuir recursos en el contenido mediante Dynamic Media con las funciones de OpenAPI.
+Consulte el siguiente vídeo para aprender a distribuir recursos en el contenido mediante Dynamic Media con las funciones de OpenAPI.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
@@ -92,3 +90,21 @@ Configure [!DNL Universal Editor] para que se integre con [!DNL AEM Assets]. Est
 
 * Consulte [Configuración en el  [!DNL Edge Delivery] sitio](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) para obtener información sobre cómo añadir una función del selector de recursos personalizada en el [!DNL Universal Editor]. El selector de recursos personalizado le permite insertar recursos directamente en el contenido de [!DNL Universal Editor].
 * Consulte [Información general sobre la extensión](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) para obtener información sobre cómo acceder a [!DNL AEM Assets] e insertar los recursos durante la creación en el [!DNL Universal Editor].
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
