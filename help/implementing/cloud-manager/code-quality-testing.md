@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 67%
+ht-degree: 69%
 
 ---
 
@@ -19,7 +19,7 @@ Descubra cómo funcionan las pruebas de calidad del código de las canalizacione
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_codequalitytests"
 >title="Prueba de calidad del código"
->abstract="Las pruebas de calidad del código evalúan el código de la aplicación respecto a las reglas de calidad. Es el propósito principal de una canalización solo de calidad de código, que se ejecuta después del paso de compilación en todas las canalizaciones."
+>abstract="La prueba de calidad del código evalúa el código de su aplicación contrastándolo con las reglas de calidad. Es el propósito principal de una canalización de solo calidad del código y se ejecuta después del paso de generación en todas las canalizaciones."
 
 ## Introducción {#introduction}
 

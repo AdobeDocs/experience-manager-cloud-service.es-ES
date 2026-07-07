@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: c17bbdac3738ab99be6d58da26825640eedbbdc4
 workflow-type: tm+mt
 source-wordcount: '2839'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Pruebas de IU"
->abstract="La prueba de IU personalizada es una función opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones mediante imágenes Docker basadas en Selenium."
+>abstract="Las pruebas de IU personalizadas son una funcionalidad opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones mediante imágenes de Docker basadas en Selenium."
 
 La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones.
 
@@ -275,7 +275,7 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 | Tiempo de espera | 30m | Cuánto tiempo dura la prueba. |
 | Duración recomendada | 15m | Adobe recomienda mantener las pruebas por debajo de este límite de tiempo. |
 
-* Si la inclusión en la lista de permitidos IP protege al autor/publicación de destino, la lista de permitidos de la infraestructura de prueba de la IU de la canalización o las pruebas de la IU pueden fallar con 403 Prohibido.Consulte también [Error en la prueba de IU en AEMaaCS debido a la Inclusión en la lista de permitidos de IP](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26654#) y [Introducción a las Listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Si la inclusión en la lista de permitidos IP protege al autor/publicación de destino, la lista de permitidos de la infraestructura de prueba de la IU de la canalización o las pruebas de la IU pueden fallar con 403 Prohibido.Consulte también [Error en la prueba de IU en AEMaaCS debido a la Inclusión en la lista de permitidos de IP](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) y [Introducción a las Listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
