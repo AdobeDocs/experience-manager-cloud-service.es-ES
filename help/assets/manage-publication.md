@@ -164,18 +164,18 @@ Solo se publican los recursos en [!DNL Dynamic Media]. Sin embargo, el comportam
 
 El proceso de publicación de los modos **[!UICONTROL Inmediato]** y **[!UICONTROL Tras la activación]** es consistente, pero diferente para **[!UICONTROL Publicación selectiva]**. Consulte [Configurar la publicación selectiva en el nivel de carpeta en Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=es). Después de configurar la publicación selectiva en una carpeta, puede realizar cualquiera de las siguientes acciones:
 
-* [Publicar recursos de forma selectiva en Dynamic Media o Experience Manager mediante Administrar publicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
-* [Cancelar la publicación selectiva de recursos de Dynamic Media o Experience Manager mediante Administrar publicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
-* [Publicación de recursos en Dynamic Media o Experience Manager mediante Publicación rápida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
-* [Publicar o cancelar la publicación selectiva de recursos mediante resultados de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-unpublish-search-results)
+* [Publicar recursos de forma selectiva en Dynamic Media o Experience Manager mediante Administrar publicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=es#selective-publish-manage-publication)
+* [Cancelar la publicación selectiva de recursos de Dynamic Media o Experience Manager mediante Administrar publicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=es#selective-unpublish-manage-publication)
+* [Publicación de recursos en Dynamic Media o Experience Manager mediante Publicación rápida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=es#quick-publish-aem-dm)
+* [Publicar o cancelar la publicación selectiva de recursos mediante resultados de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=es#selective-publish-unpublish-search-results)
 
 ## Publicación de recursos en Brand Portal {#publish-assets-to-brand-portal}
 
 Puede publicar recursos, carpetas y colecciones en la instancia [!DNL Experience Manager Assets Brand Portal].
 
-* [Publicación de recursos en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-assets-to-bp)
-* [Publicar carpetas en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
-* [Publicación de colecciones en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-collections-to-brand-portal)
+* [Publicación de recursos en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=es#publish-assets-to-bp)
+* [Publicar carpetas en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=es#publish-folders-to-brand-portal)
+* [Publicación de colecciones en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=es#publish-collections-to-brand-portal)
 
 ## Solicitar publicación {#request-publication}
 
