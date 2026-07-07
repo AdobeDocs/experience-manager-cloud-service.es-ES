@@ -4,7 +4,7 @@ description: Aprenda a configurar herramientas de codificación de IA con contex
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
+source-git-commit: 0dc52df37392ede155454797a709d65462a76f61
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Elija el método que coincida con la herramienta de codificación de IA. La inst
 
 ```bash
 # Install all available skills
-npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-service --all
+npx skills add https://github.com/adobe/skills/tree/main/plugins/skills/aem/cloud-service --all
 ```
 
 #### Actualizar (extensión CLI de GitHub) {#upskill-github-cli-extension}
