@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
-source-git-commit: e8d9414c204222cbd1068530cc9329f30c7a9fbe
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
-source-wordcount: '2539'
-ht-degree: 2%
+source-wordcount: '2582'
+ht-degree: 3%
 
 ---
 
@@ -252,3 +252,23 @@ Hay dos servicios habilitados de forma predeterminada para el perfil de producto
 ### ¿Cuál es la diferencia entre el sufijo de envío y el de contendthub en la instancia de Content Hub Admin Console? {#content-hub-suffix-difference}
 
 El sufijo de la instancia de Content Hub en Adobe Admin Console depende del momento en el que se aprovisionó Content Hub. Los clientes que aprovisionaron Content Hub después del 14 de agosto de 2024 tienen una instancia de con un sufijo de entrega. Los clientes que aprovisionaron Content Hub antes del 14 de agosto de 2024 tienen una instancia con un sufijo de contendthub. En el caso de aprovisionamiento anterior, el perfil de producto de Content Hub también muestra el contenido después de Usuarios limitados en lugar de la entrega. Ambas configuraciones proporcionan el mismo perfil de producto Usuarios limitados de AEM Assets para conceder acceso a Content Hub.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

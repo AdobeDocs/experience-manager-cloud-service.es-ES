@@ -6,10 +6,10 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 5%
+source-wordcount: '1731'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 ## Introducción a la API HTTP de AEM [!DNL Assets] {#overview}
@@ -197,8 +197,7 @@ Crear una representación para un recurso. Si no se proporciona el nombre del pa
 
 **Parámetros**: Los parámetros son:
 
-`name`: para el nombre de representación.
-`file`: archivo binario para la representación como referencia.
+`name`: para el nombre de representación.`file`: archivo binario para la representación como referencia.
 
 **Petición**
 
@@ -302,19 +301,22 @@ Elimina un recurso (-tree) en la ruta proporcionada.
 
 **Explorar recursos relacionados**
 
-* [Traducir recursos](translate-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Documentos de referencia para desarrolladores para [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+

@@ -5,10 +5,10 @@ role: User, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 88%
+source-wordcount: '430'
+ht-degree: 87%
 
 ---
 
@@ -60,9 +60,9 @@ Las diversas tareas de administración de activos digitales (DAM) que puede real
 | Descarga de recursos | <ul> <li> [Previsualización de un recurso](/help/assets/navigate-assets-view.md#preview-assets) </li> <li> [Descarga de recursos](/help/assets/manage-organize-assets-view.md#download) <li> [Descarga de representaciones](/help/assets/add-delete-assets-view.md#renditions) </li></ul> |
 | Operaciones de metadatos | <ul> <li>[Visualización de metadatos detallados](/help/assets/metadata-assets-view.md) </li> <li> [Actualización de metadatos](/help/assets/metadata-assets-view.md#update-metadata)</li> <li> [Creación de un nuevo formulario de metadatos](/help/assets/metadata-assets-view.md#metadata-forms) </li> </ul> |
 
-## Pasos siguientes {#next-steps}
+## Próximos pasos {#next-steps}
 
-* [Vea un vídeo para empezar a usar la vista de recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=es)
+* [Vea un vídeo para empezar a usar Assets View](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=es)
 
 * Proporcione comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista de recursos
 
@@ -101,3 +101,22 @@ To provide feedback for documentation, click [!UICONTROL Edit this page] ![edit 
 >* [Release notes and known issues](/help/assets/release-notes.md).
 >* [Supported file types](/help/assets/supported-file-formats.md).
 -->
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
