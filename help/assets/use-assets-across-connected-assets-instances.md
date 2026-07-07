@@ -7,10 +7,10 @@ feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '3875'
-ht-degree: 13%
+source-wordcount: '3984'
+ht-degree: 14%
 
 ---
 
@@ -49,8 +49,8 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] en AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] local |
   |---|---|---|---|
-  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Compatible | Compatible | Compatible  |
-  | **[!DNL Experience Manager]6.5 [!DNL Assets] en AMS** | Compatible | Compatible | Compatible  |
+  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Compatible | Compatible | Compatible |
+  | **[!DNL Experience Manager]6.5 [!DNL Assets] en AMS** | Compatible | Compatible | Compatible |
   | **[!DNL Experience Manager]6.5 [!DNL Assets] local** | No compatible | No compatible | No compatible |
 
 ### Formatos de archivo compatibles {#mimetypes}
@@ -105,7 +105,7 @@ Para configurar la conectividad de Connected Assets y la conectividad local [!DN
    1. Un **[!UICONTROL Título]** de la configuración.
    1. **[!UICONTROL Dirección URL del sitio remoto DAM]** es la dirección URL de la ubicación [!DNL Assets] con el formato `https://[assets_servername]:[port]`.
    1. Credenciales de un distribuidor DAM (usuario técnico).
-   1. En el campo **[!UICONTROL Punto de montaje]**, escriba la ruta de acceso local [!DNL Experience Manager] donde [!DNL Experience Manager] recupera los recursos. Por ejemplo, `connectedassets` carpeta. Los recursos que se recuperan de DAM se almacenan en esta carpeta en la implementación [!DNL Sites].
+   1. En el campo **[!UICONTROL Punto de montaje]**, escriba la ruta de acceso local [!DNL Experience Manager] donde [!DNL Experience Manager] recupera los recursos. Por ejemplo, la carpeta `connectedassets`. Los recursos que se recuperan de DAM se almacenan en esta carpeta en la implementación [!DNL Sites].
    1. **[!UICONTROL La dirección URL de sitios locales]** es la ubicación de la implementación [!DNL Sites]. La implementación [!DNL Assets] utiliza este valor para mantener las referencias a los recursos digitales recuperados por esta implementación [!DNL Sites].
    1. Credenciales de [!DNL Sites] usuario técnico.
    1. El valor del campo **[!UICONTROL Umbral de optimización de la transferencia binaria original]** especifica si los recursos originales (incluidas las representaciones) se transfieren sincrónica o no. Assets con un tamaño de archivo más pequeño se puede recuperar fácilmente, mientras que los recursos con un tamaño de archivo relativamente mayor se sincronizan mejor de forma asíncrona. El valor depende de las capacidades de red.
@@ -174,7 +174,7 @@ Para configurar [!DNL Dynamic Media] en [!DNL Assets] y [!DNL Sites] implementac
    * En [!DNL Sites] local, en la opción **[!UICONTROL Publicar Assets]**, seleccione **[!UICONTROL Publicación selectiva]**. No seleccione **[!UICONTROL Sincronizar todo el contenido]**.
    * En la implementación remota de [!DNL Assets], en [!UICONTROL modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Habilitado de forma predeterminada]**.
 
-1. Habilitar compatibilidad con [[!DNL Dynamic Media] en el componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es#dynamic-media). Esta característica permite que el [componente de imagen](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) predeterminado muestre [!DNL Dynamic Media] imágenes cuando los autores utilizan [!DNL Dynamic Media] imágenes en páginas web en la implementación local de [!DNL Sites].
+1. Habilitar compatibilidad con [[!DNL Dynamic Media] en el componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Esta característica permite que el [componente de imagen](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) predeterminado muestre [!DNL Dynamic Media] imágenes cuando los autores utilizan [!DNL Dynamic Media] imágenes en páginas web en la implementación local de [!DNL Sites].
 
 ## Usar recursos remotos {#use-remote-assets}
 
@@ -371,15 +371,19 @@ Para solucionar errores comunes, siga estos pasos:
 
 **Consulte también**
 
-* [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

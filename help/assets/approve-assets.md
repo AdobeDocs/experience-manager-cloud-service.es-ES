@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo aprobar recursos en  [!DNL Experie
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 7%
+source-wordcount: '1122'
+ht-degree: 10%
 
 ---
 
@@ -29,12 +29,11 @@ Debe realizar una actualización única del esquema de metadatos aplicable en la
 1. Seleccione el esquema de metadatos aplicable y haga clic en **[!UICONTROL Editar]**. <br>El **[!UICONTROL Editor de formularios de esquemas de metadatos]** se abre con la ficha **[!UICONTROL Básico]** resaltada.
 1. Desplácese hacia abajo y haga clic en **[!UICONTROL Estado de revisión]**.
 1. Haga clic en la ficha **[!UICONTROL Reglas]** en el panel derecho.
-1. Desmarque **[!UICONTROL Deshabilitar edición]**.
-Si necesita ver la propiedad a la que está asignado el campo **[!UICONTROL Estado de revisión]**, vaya a la pestaña **[!UICONTROL Configuración]** y vea el valor `./jcr:content/metadata/dam:status` en el campo **[!UICONTROL Asignar a propiedad]**.
+1. Desmarque **[!UICONTROL Deshabilitar edición]**.Si necesita ver la propiedad a la que está asignado el campo **[!UICONTROL Estado de revisión]**, vaya a la pestaña **[!UICONTROL Configuración]** y vea el valor `./jcr:content/metadata/dam:status` en el campo **[!UICONTROL Asignar a propiedad]**.
 1. Arrastre y suelte un campo **[!UICONTROL Dropdown]** desde la sección **[!UICONTROL Generar formulario]** a la derecha de la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie **[!UICONTROL Etiqueta de campo]** a _Destino de aprobación_.
-   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam :activationTarget_.
+   1. Actualice **[!UICONTROL Map a property]** a _./jcr:content/metadata/dam :activationTarget_.
    1. Agregue las opciones con `contenthub` y `delivery` como valores de opción.
 
    >[!NOTE]
@@ -63,8 +62,7 @@ Para aprobar recursos en [!DNL Experience Manager Admin view], siga estos pasos:
 
 ## Aprobar recursos de forma masiva {#bulk-approve-assets}
 
-Optimice su flujo de trabajo aprobando rápidamente varios recursos a la vez. Puede aprobar recursos de forma masiva para acelerar el proceso de aprobación, lo que ahorra tiempo y mejora la productividad.
-<br>Siga estos pasos para aprobar recursos en bloque en [!DNL Experience Manager Admin view]:
+Optimice su flujo de trabajo aprobando rápidamente varios recursos a la vez. Puede aprobar recursos de forma masiva para acelerar el proceso de aprobación, lo que ahorra tiempo y mejora la productividad.<br>Siga estos pasos para aprobar recursos en bloque en [!DNL Experience Manager Admin view]:
 
 1. Cree una carpeta en el entorno de creación (https://author-pXXX-eYYY.adobeaemcloud.com). Reemplace _XXX_ con su ID de programa y _AAAA_ con el ID de entorno de Experience Manager.
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]**.
@@ -74,13 +72,13 @@ Optimice su flujo de trabajo aprobando rápidamente varios recursos a la vez. Pu
 1. Arrastre y suelte un **[!UICONTROL campo de texto de una sola línea]** desde la sección **[!UICONTROL Generar formulario]** a la derecha de la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie **[!UICONTROL Etiqueta de campo]** por _Assets aprobado_.
-   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam :status_.
+   1. Actualice **[!UICONTROL Map a property]** a _./jcr:content/metadata/dam :status_.
    1. Cambie el valor predeterminado a _aprobado_.
 
 1. Arrastre y suelte un campo **[!UICONTROL Dropdown]** desde la sección **[!UICONTROL Generar formulario]** a la derecha de la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie **[!UICONTROL Etiqueta de campo]** a _Destino de aprobación_.
-   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam :activationTarget_.
+   1. Actualice **[!UICONTROL Map a property]** a _./jcr:content/metadata/dam :activationTarget_.
    1. Agregue las opciones con `contenthub` y `delivery` como valores de opción.
 
    >[!NOTE]
@@ -139,3 +137,23 @@ Para copiar la URL de envío de un recurso aprobado dentro del repositorio:
    >La opción para copiar la URL de envío para los recursos aprobados solo está disponible en la vista de Assets.
 
 Para obtener información sobre otras representaciones que se muestran en el panel Dynamic Media, consulte [Ver y descargar representaciones de Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

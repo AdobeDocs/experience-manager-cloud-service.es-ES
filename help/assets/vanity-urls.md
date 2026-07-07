@@ -5,10 +5,10 @@ role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 0%
+source-wordcount: '1510'
+ht-degree: 4%
 
 ---
 
@@ -71,8 +71,7 @@ El uso de ID mnemónicos significativos para personalizar las URL de entrega de 
 
 * **Optimización de SEO:** Las direcciones URL que incluyen palabras clave relevantes mejoran la detección y clasificación de los motores de búsqueda.
 
-* **visibilidad de la marca mejorada:** Las direcciones URL específicas de la marca refuerzan la presencia de marca en todos los canales de marketing, incluidos el correo electrónico, los medios sociales y las campañas publicitarias.
-Además, el uso coherente de direcciones URL con marca en todas las comunicaciones refuerza la identidad y el reconocimiento de la marca.
+* **visibilidad de la marca mejorada:** Las direcciones URL específicas de la marca refuerzan la presencia de marca en todos los canales de marketing, incluidos el correo electrónico, los medios sociales y las campañas publicitarias.Además, el uso coherente de direcciones URL con marca en todas las comunicaciones refuerza la identidad y el reconocimiento de la marca.
 
 * **Seguimiento y análisis de campañas:** Use direcciones URL personales únicas para diferentes campañas y canales a fin de obtener información detallada sobre las fuentes de tráfico y el rendimiento de conversión.
 
@@ -117,8 +116,7 @@ Ejecute los siguientes pasos para crear una variable de entorno y asignarla al c
 
 1. [Vaya a la página de configuraciones del entorno de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) y haga lo siguiente:
    1. Agregar variable `ASSET_DELIVERY_VANITY_ID`. Esta es la clave.
-   1. Utilice el campo de valor para asignar a la propiedad de metadatos del recurso que contiene el ID de vanidad. La asignación sigue el formato `dc:<your-metadata-property>`, donde el prefijo de asignación de metadatos (como dc:) varía en función de la propiedad de configuración de metadatos del recurso.
-      ![variable ASSET_DELIVERY_VANITY_ID](/help/assets/assets/environment-config.png)
+   1. Utilice el campo de valor para asignar a la propiedad de metadatos del recurso que contiene el ID de vanidad. La asignación sigue el formato `dc:<your-metadata-property>`, donde el prefijo de asignación de metadatos (como dc:) varía en función de la propiedad de configuración de metadatos del recurso.      ![variable ASSET_DELIVERY_VANITY_ID](/help/assets/assets/environment-config.png)
 1. Guarde los cambios para reiniciar los pods en el entorno.
 
 ### Aprobar los recursos para su envío{#approve-assets-for-delivery}
@@ -132,8 +130,7 @@ Realice los siguientes reemplazos en la dirección URL de envío estándar para 
 * Reemplaza **UUID** por tu **ID de vanidad**.
 * Reemplazar `aaid` por `avid`.
 
-Consulte la [transformación de URL de estándar a URL de vanidad](#standard-urls) más arriba.
-Aprenda a [copiar Dynamic Media con las URL de entrega de OpenAPI](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) para sus recursos.
+Consulte la [transformación de URL de estándar a URL de vanidad](#standard-urls) más arriba.Aprenda a [copiar Dynamic Media con las URL de entrega de OpenAPI](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) para sus recursos.
 
 Cuando el usuario hace clic en la URL de vanidad, [!DNL Dynamic Media with OpenAPI] asigna automáticamente el ID de vanidad al UUID del recurso original en el momento de la ingesta y lo resuelve correctamente en el momento de la entrega para ofrecer el recurso al usuario sin ningún retraso. Puede personalizar la URL de vanidad en tiempo real sin afectar al rendimiento de entrega de los recursos.
 
@@ -191,9 +188,7 @@ Consulte la siguiente URL de vanidad y sus componentes personalizables:
 Ejecute los siguientes pasos para reescribir las reglas de CDN para la entrega:
 
 1. Vaya al repositorio de AEM para crear un archivo de configuración de YAML.
-2. Ejecute los pasos de la sección [setup](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para configurar las reglas de CDN e implementar la configuración a través de la canalización de configuración de Cloud Manager.
-Siga estas [prácticas recomendadas](#best-practices) para crear su ruta de dominio.
-   [Más información acerca de las reglas de reescritura de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
+2. Ejecute los pasos de la sección [setup](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para configurar las reglas de CDN e implementar la configuración a través de la canalización de configuración de Cloud Manager.Siga estas [prácticas recomendadas](#best-practices) para crear su ruta de dominio.   [Más información acerca de las reglas de reescritura de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
 A continuación se muestran ejemplos de reglas de reescritura para anexar nombres de archivo con extensiones en URL de vanidad. Personalice estas reglas de reescritura según sus necesidades específicas. [Póngase en contacto con el soporte técnico de Adobe](https://helpx.adobe.com/in/contact.html) para obtener más ayuda:
 
@@ -246,3 +241,23 @@ Siga estas prácticas recomendadas para crear [ID de vanidad](#create-vanity-url
 1. Use su nombre de marca, nombres de producto y palabras clave relevantes en sus [ID mnemónicos](#create-vanity-urls), [DNS personalizado](#customize-dns) y [nombres de CDN](#rewrite-cdn-rules) para aumentar su visibilidad de la marca y participación del usuario.
 1. Utilice palabras o cadenas cortas y descriptivas que transmitan significado.
 1. Utilice textos que inviten a usuarios a hacer clic.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

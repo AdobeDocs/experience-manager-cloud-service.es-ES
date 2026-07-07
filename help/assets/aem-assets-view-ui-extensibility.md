@@ -5,10 +5,10 @@ feature: App Builder
 role: User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 49fa36acf11a22480af58aa701bdac676676aadd
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 1%
+source-wordcount: '967'
+ht-degree: 6%
 
 ---
 
@@ -30,8 +30,7 @@ Siga los pasos mencionados en la siguiente imagen para acceder a [!DNL Assets Vi
 
 ## Ver extensiones de IU en [!DNL Assets View] {#ui-extensibility-panel-assets-view}
 
-En [!DNL Assets View], vaya a la página **[!UICONTROL Detalles]** de un recurso, una carpeta o una colección. La página **[!UICONTROL Detalles]** muestra la extensión de la interfaz de usuario agregada en un panel dedicado.
-![mi espacio de trabajo](/help/assets/assets/my-workspace-assets-view3.png)
+En [!DNL Assets View], vaya a la página **[!UICONTROL Detalles]** de un recurso, una carpeta o una colección. La página **[!UICONTROL Detalles]** muestra la extensión de la interfaz de usuario agregada en un panel dedicado.![mi espacio de trabajo](/help/assets/assets/my-workspace-assets-view3.png)
 
 ## Requisitos previos para añadir el componente de extensibilidad{#assets-view-ui-extensibility}
 
@@ -82,3 +81,23 @@ Para obtener más información, incluidas referencias de API y ejemplos de códi
 ## Abrir cuadros de diálogo personalizados en la vista Assets {#open-custom-dialogs-assets-view}
 
 La vista de Assets también permite abrir cuadros de diálogo personalizados con texto de su elección. También puede agregar vínculos al texto. Para obtener más información, consulte [API modal](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -3,10 +3,10 @@ title: Aplicar recortes inteligentes de vídeo a vídeos aprobados
 description: Dynamic Media con funciones OpenAPI le permite generar salidas de recorte inteligente de vídeo para recursos de vídeo en Adobe Experience Manager (AEM).
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Se aplica a los AEM Assets."
-source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 3%
+source-wordcount: '466'
+ht-degree: 12%
 
 ---
 
@@ -80,3 +80,23 @@ Una vez generados los recortes inteligentes de vídeo, incluya el parámetro `mo
 * Los recortes inteligentes de vídeo se aplican de forma dinámica durante la reproducción cuando se utiliza el parámetro `mode=smartcrop`.
 * El visualizador de Dynamic Media selecciona automáticamente el recorte más adecuado en función del dispositivo y la relación de aspecto.
 * La reproducción de vídeo se ajusta dinámicamente para mantener el sujeto clave enfocado.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

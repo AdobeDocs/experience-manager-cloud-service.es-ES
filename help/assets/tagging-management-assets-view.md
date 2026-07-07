@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: 1f71c905fadd51d95fc5292ce95903c46895ec94
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1811'
 ht-degree: 98%
 
 ---
@@ -66,8 +66,7 @@ Siga estos pasos para crear un espacio de nombres:
 Ejecute los siguientes pasos para añadir etiquetas a un espacio de nombres:
 
 1. Vaya a **[!UICONTROL Administración de taxonomía]**.
-1. Seleccione el espacio de nombres y haga clic en `Create` para crear la etiqueta en el nivel superior bajo el espacio de nombres. Si necesita crear una subetiqueta en una etiqueta que exista en un espacio de nombres, seleccione la etiqueta y haga clic en `Create`.
-   ![Jerarquía de etiquetas](assets/hierarchy-of-tags.png)
+1. Seleccione el espacio de nombres y haga clic en `Create` para crear la etiqueta en el nivel superior bajo el espacio de nombres. Si necesita crear una subetiqueta en una etiqueta que exista en un espacio de nombres, seleccione la etiqueta y haga clic en `Create`.   ![Jerarquía de etiquetas](assets/hierarchy-of-tags.png)
 
    En este ejemplo, la imagen de la izquierda representa la etiqueta directamente debajo del área de nombres `automobile-four-wheeler` que aparece en el campo `Path`. La imagen de la derecha es un ejemplo de subetiquetas que se han añadido dentro de una etiqueta, ya que hay más nombres de etiqueta, `jeep` y `jeep-meridian`, que se muestran en el campo `Path` además del espacio de nombres.
 1. Especifique el título, el nombre y la descripción de la etiqueta, y haga clic en `Save`.
@@ -145,8 +144,7 @@ Vea este vídeo rápido para ver cómo añadir el componente Etiquetas al formul
 
    ![Etiquetado de recursos](assets/adding-tags-to-assets.png)
 
-1. Seleccione una o varias etiquetas. La subetiqueta se selecciona automáticamente junto con la etiqueta principal o el espacio de nombres.
-Las etiquetas modificadas en Assets Essentials se aplican también en Assets as a Cloud Service.
+1. Seleccione una o varias etiquetas. La subetiqueta se selecciona automáticamente junto con la etiqueta principal o el espacio de nombres.Las etiquetas modificadas en Assets Essentials se aplican también en Assets as a Cloud Service.
 
 ## Añadir etiquetas a la lista de bloqueados {#blocklist-essentials}
 
@@ -206,3 +204,23 @@ Si desea descargar una plantilla de etiquetas bloqueadas, siga estos pasos:
 1. Haga clic en **[!UICONTROL Descargar plantilla]**.
 1. Elija la ubicación adecuada para guardar el archivo CSV. También puede cambiar el nombre del archivo según los requisitos.
 1. Haga clic en **[!UICONTROL Guardar]**. La plantilla de etiquetas de bloque en formato CSV se descarga en la ubicación seleccionada.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo habilitar el control de acceso bas
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: b736af556c8580d005097c27cceba050b21a57c9
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 2%
+source-wordcount: '2182'
+ht-degree: 3%
 
 ---
 
@@ -237,3 +237,22 @@ ABAC es útil para organizaciones con equipos grandes porque permite un acceso g
 ### ¿Cómo deben preparar los administradores la hoja de cálculo ABAC para AEM Assets Content Hub antes de enviarla al Soporte de Adobe?
 
 Los administradores deben crear grupos de usuarios en Adobe Admin Console, anotar sus ID de grupo, definir claramente los permisos y las condiciones para cada grupo en la hoja de cálculo, garantizar que todas las propiedades de metadatos estén correctamente asignadas a los esquemas adecuados y utilizar la columna de comentarios para aclarar la intención empresarial de cada regla.
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

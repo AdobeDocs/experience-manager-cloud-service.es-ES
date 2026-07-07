@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1934'
 ht-degree: 88%
 
 ---
@@ -35,7 +35,7 @@ Puede importar recursos desde las siguientes fuentes de datos:
 | Fuente de datos | Requisitos previos |
 |-----|------|
 | Azure | <ul> <li>Cuenta de almacenamiento de Azure </li> <li> Contenedor de blob de Azure <li> Clave de acceso de Azure o token SAS basado en el modo de autenticación </li></ul> |
-| AWS | <ul> <li>Región de AWS </li> <li> Contenedor de AWS <li> Clave de acceso de AWS </li><li> Secreto de acceso de AWS </li></ul> |
+| AWS | <ul> <li>Región de AWS </li> <li> Bloque de AWS <li> Clave de acceso de AWS </li><li> Secreto de acceso de AWS </li></ul> |
 | Google Cloud | <ul> <li>Contenedor de GCP </li> <li> Correo electrónico de la cuenta de servicio de GCP <li> Clave privada de la cuenta de servicio de GCP</li></ul> |
 | Dropbox | <ul> <li>ID de cliente de Dropbox (clave de aplicación) </li> <li> Secreto de cliente de Dropbox (secreto de aplicación)</li></ul> |
 | OneDrive | <ul> <li>ID de inquilino de OneDrive  </li> <li> ID de cliente de OneDrive</li><li> Secreto de cliente de OneDrive</li></ul> |
@@ -136,8 +136,7 @@ Siga estos pasos para crear una configuración de importación masiva en [!DNL E
    >* La carpeta de origen debe estar ubicada en la raíz del directorio. No se admiten rutas de carpeta.
 
 1. (Opcional) Seleccione la opción **[!UICONTROL Eliminar archivo de origen tras importar]** para eliminar los archivos originales del almacén de datos de origen después de importar los archivos en Experience Manager Assets.
-1. Seleccione el **[!UICONTROL Modo de importación]**. Seleccione **[!UICONTROL Omitir]**, **[!UICONTROL Reemplazar]** o **[!UICONTROL Crear versión]**. El modo de omisión es el predeterminado y, en este modo, el ingestor omite la importación de un recurso si ya existe.
-   ![Importar detalles de origen](/help/assets/assets/bulk-import-source-details.png)
+1. Seleccione el **[!UICONTROL Modo de importación]**. Seleccione **[!UICONTROL Omitir]**, **[!UICONTROL Reemplazar]** o **[!UICONTROL Crear versión]**. El modo de omisión es el predeterminado y, en este modo, el ingestor omite la importación de un recurso si ya existe.   ![Importar detalles de origen](/help/assets/assets/bulk-import-source-details.png)
 
 1. (Opcional) Especifique el archivo de metadatos que desea importar, proporcionado en formato CSV, en el campo **[!UICONTROL Archivo de metadatos]**. El archivo fuente de metadatos debe estar en la carpeta de origen. Haga clic en **[!UICONTROL Siguiente]** para navegar a **[!UICONTROL Ubicación y filtros]**.
 
@@ -228,3 +227,23 @@ Haga clic en el ![icono Más](assets/do-not-localize/more-icon.svg) correspondie
 ## Ir a los recursos después de realizar una importación masiva {#view-assets-after-bulk-import}
 
 Para ver la ubicación de destino de los recursos donde se importan después de ejecutar el trabajo de importación masiva, haga clic en el ![icono Más](assets/do-not-localize/more-icon.svg) correspondiente al nombre de la configuración y, a continuación, haga clic en **[!UICONTROL Ver recursos]**.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -3,10 +3,10 @@ title: Edición masiva de metadatos en  [!DNL Assets View]
 description: Descubra cómo puede actualizar un conjunto predefinido de campos de metadatos estándar para varios recursos disponibles en [!DNL ! Vista de Assets] simultáneamente.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 0%
+source-wordcount: '507'
+ht-degree: 34%
 
 ---
 
@@ -21,15 +21,14 @@ Ejecute estos pasos para editar masivamente los metadatos de varios recursos a l
 1. Vaya a **[!DNL Assets View]** y haga clic en **[!UICONTROL Assets]**.
 1. Busque recursos específicos o búsquelos mediante palabras clave en la barra de búsqueda.
 1. Seleccione los recursos y haga clic en **[!UICONTROL Edición masiva de metadatos]** en el menú superior.
-   ![editar metadatos en lote](/help/assets/assets/bulk-metadata-edit1.png)
+   ![bulk-metadata-edit](/help/assets/assets/bulk-metadata-edit1.png)
 1. En la [!UICONTROL página Editar metadatos], edite los siguientes campos en el panel **[!UICONTROL Propiedades]**:
    * **[!UICONTROL Estado]:** Seleccione un estado para los recursos seleccionados.
    * **[!UICONTROL Fecha de caducidad]:** Establezca una fecha después de la cual los recursos ya no sean válidos o necesarios.
    * **[!UICONTROL Autor]:** Especifique el nombre del autor.
    * **[!UICONTROL Palabras clave]:** Agregue términos específicos o cadenas de texto que proporcionen información de alto nivel sobre los recursos para mejorar su capacidad de detección. Agregue una palabra clave y presione **Intro** o **retorno** para agregar otra palabra clave a la lista.
    * **[!UICONTROL Etiquetas]:** Haga clic en ![edición masiva de metadatos](/help/assets/assets/tags-icon.svg) para seleccionar etiquetas de entre las opciones disponibles. Las etiquetas proporcionan información más específica sobre los recursos y mejoran su capacidad de detección. Las etiquetas ya aplicadas a los recursos seleccionados se muestran en el panel **[!UICONTROL Propiedades]**. Si no encuentra las etiquetas relevantes, créelas y asígnelas a los recursos seleccionados. Consulte [Administrar etiquetas en [!DNL Assets view]](/help/assets/tagging-management-assets-view.md) para obtener más información sobre cómo crear y asignar etiquetas a los recursos.
-   * Haga clic en **[!UICONTROL Guardar]** para aplicar las actualizaciones de metadatos anteriores a los recursos seleccionados. Una vez guardadas, las **[!UICONTROL palabras clave]** y las **[!UICONTROL etiquetas]** se anexan, mientras que los detalles actualizados de **[!UICONTROL Estado]**, **[!UICONTROL Fecha de caducidad]** y **[!UICONTROL Autor]** anulan los detalles existentes.
-     ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
+   * Haga clic en **[!UICONTROL Guardar]** para aplicar las anteriores actualizaciones de metadatos a los recursos seleccionados. Una vez guardadas, las **[!UICONTROL palabras clave]** y las **[!UICONTROL etiquetas]** se anexan, mientras que los detalles actualizados de **[!UICONTROL Estado]**, **[!UICONTROL Fecha de caducidad]** y **[!UICONTROL Autor]** anulan los detalles existentes.     ![save-bulk-medatada-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]
      >
@@ -40,3 +39,23 @@ Para ver las actualizaciones de metadatos aplicadas a un recurso, vaya a [!DNL a
 >[!NOTE]
 >
 >**[!UICONTROL Estado]**, **[!UICONTROL Fecha de caducidad]**, **[!UICONTROL Autor]**, **[!UICONTROL Palabras clave]** y **[!UICONTROL Etiquetas]** son propiedades de metadatos estándar disponibles para la edición masiva de metadatos, independientemente de los metadatos específicos de la carpeta. Estas propiedades de metadatos se muestran en la [!UICONTROL página de detalles del recurso] solo si se incluyen en el formulario de metadatos aplicado a la carpeta del recurso. Si no encuentra estas propiedades de metadatos estándar en la [!UICONTROL página de detalles del recurso], edite el formulario de metadatos de la carpeta de recursos para incluirlas. Consulte [Metadatos en [!DNL Assets View]](/help/assets/metadata-assets-view.md) para obtener información sobre cómo crear o editar un formulario de metadatos y aplicarlo a una carpeta.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
