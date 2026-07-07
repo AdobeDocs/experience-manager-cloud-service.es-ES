@@ -6,15 +6,14 @@ feature: Authoring Screens
 role: Admin, Developer, User
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1146'
 ht-degree: 1%
 
 ---
 
 # Creación y administración de un canal en Screens as a Cloud Service {#creating-channels-screens-cloud}
 
-Una vez creado un proyecto de AEM Screens, debe crear canales.
-***Canales***, muestran una secuencia de contenido (imágenes y vídeos), un sitio web o una aplicación de una sola página.
+Una vez creado un proyecto de AEM Screens, debe crear canales.***Canales***, muestran una secuencia de contenido (imágenes y vídeos), un sitio web o una aplicación de una sola página.
 
 ## Objetivo {#objective}
 
@@ -27,8 +26,7 @@ Este documento le ayuda a comprender la creación y administración de canales p
 ## Pasos para crear un nuevo canal de secuencia en Screens as a Cloud Service {#create-new-channel}
 
 >[!NOTE]
->**Requisitos previos**
->Antes de comenzar esta sección de la guía, revise [Creación y administración de proyectos en Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+>**Requisitos previosAntes de comenzar esta sección de la guía, revise [Creación y administración de proyectos en Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 Siga los pasos a continuación para crear un canal de secuencia en Screens as a Cloud Service:
 
@@ -123,8 +121,7 @@ Este mosaico muestra la siguiente información:
 
 Los canales con detalles de asignación predeterminados se pueden asignar a y muestran de la misma manera que los canales normales, con la opción añadida de utilizar los detalles de asignación predeterminados en lugar de definir manualmente los personalizados cada vez.
 
-1. Vaya a la página de detalles de visualización a la que desee asignar el canal y haga clic en **Asignar canal**.
-como alternativa, seleccione la pantalla que desee en la vista [inventario](https://experience.adobe.com/screens/displays) y haga clic en el **Asignar canal**.
+1. Vaya a la página de detalles de visualización a la que desee asignar el canal y haga clic en **Asignar canal**.como alternativa, seleccione la pantalla que desee en la vista [inventario](https://experience.adobe.com/screens/displays) y haga clic en el **Asignar canal**.
 1. Se abrirá el cuadro de diálogo Asignación de canal.
 
    ![imagen](/help/screens-cloud/assets/display/Assignments4.png)
@@ -161,22 +158,21 @@ como alternativa, seleccione la pantalla que desee en la vista [inventario](http
    ![imagen](/help/screens-cloud/assets/display/Assignments9.png)
 
 1. Se muestra un cuadro de diálogo de confirmación y los detalles coinciden con una de las siguientes condiciones:
-   El canal **a.** no se usa en ninguna pantalla.
+   **a.** El canal no se utiliza en ninguna visualización.
 
    ![imagen](/help/screens-cloud/assets/display/Assignments10.png)
 
-El canal **b.** se usa en una sola pantalla.
+**b.** El canal se utiliza en una sola pantalla.
 
 ![imagen](/help/screens-cloud/assets/display/Assignment11.png)
 
-El canal **c.** se usa en varias pantallas.
+**c.** El canal se utiliza en varias pantallas.
 
 ![imagen](/help/screens-cloud/assets/display/Assignments12.png)
 
 1. Haga clic en *Quitar* para validar el cambio.
 
-**Nota:** Si quita los detalles de asignación predeterminados de un canal, se quitarán las asignaciones coincidentes en todas las pantallas que lo utilizaban.
-Como consecuencia, esto puede generar pantallas en blanco si no hay contenido alternativo para reproducir en esas pantallas.
+**Nota:** Si quita los detalles de asignación predeterminados de un canal, se quitarán las asignaciones coincidentes en todas las pantallas que lo utilizaban.Como consecuencia, esto puede generar pantallas en blanco si no hay contenido alternativo para reproducir en esas pantallas.
 
 ## Siguientes pasos {#whats-next}
 

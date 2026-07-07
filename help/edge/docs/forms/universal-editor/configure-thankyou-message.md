@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
-source-wordcount: '1139'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1167'
+ht-degree: 95%
 
 ---
 
@@ -93,16 +93,16 @@ En el campo **Contenido del mensaje**, cree su mensaje de agradecimiento con el 
 
 ### Ejemplo de implementación
 
-    Gracias por el envío.
+    Gracias por su envío.
     
     Se ha recibido su solicitud y se le ha asignado el número de referencia #REF-2024-001234.
     
     **Qué sucede a continuación:**
     - Recibirá un correo electrónico de confirmación en un plazo de 15 minutos
-    - Nuestro equipo revisará su solicitud en un plazo de 2 días hábiles
-    - Nos pondremos en contacto con usted directamente si necesitamos información adicional
+    - Nuestro equipo revisará su envío en un plazo de 2 días hábiles
+    - Nos pondremos en contacto con usted directamente si necesita información adicional
     
-    **¿Necesita asistencia?** Póngase en contacto con nuestro equipo de asistencia en support@example.com
+    **Necesita asistencia?** Póngase en contacto con nuestro equipo de asistencia en support@example.com
 
 ## Configuración de la URL de redireccionamiento
 

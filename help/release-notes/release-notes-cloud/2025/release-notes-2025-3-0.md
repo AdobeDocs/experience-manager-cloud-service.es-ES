@@ -6,8 +6,8 @@ role: Admin
 exl-id: b9353092-88a0-477c-85f4-f916a4b8ba8f
 source-git-commit: 81e5cfd699fee811fc2b072e3b65e9d463a338b2
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 99%
+source-wordcount: '1250'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Eche un vistazo al vídeo de información general sobre la versión de marzo de 2025 para ver un resumen de las funciones añadidas en la versión 2025.3.0.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463879?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3463879?captions=spa&quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -51,7 +51,7 @@ Dynamic Media con OpenAPI ahora es compatible con vídeos de formato largo. Los 
 
 <!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
 
-Desde abril de 2025, la pestaña Ancho de banda del panel de informes de Dynamic Media Classic ya no es compatible.
+Desde abril de 2025, la pestaña Ancho de banda del panel de control de informes de Dynamic Media Classic ya no es compatible.
 
 Véase [Ancho de banda y almacenamiento, tipos de informes](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
@@ -85,7 +85,7 @@ Las API de generación de documentos de AEM Forms ahora le permiten [cargar dire
 
 ### Compatibilidad con Java 21 {#java21}
 
-A partir de la versión de enero, podrá crear código con Java 21 y Java 17. Puede obtener acceso a nuevas funciones como la coincidencia de patrones, clases selladas y varias mejoras de rendimiento. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support). 
+A partir de la versión de enero, podrá crear código con Java 21 y Java 17. Puede obtener acceso a nuevas funciones como la coincidencia de patrones, clases selladas y varias mejoras de rendimiento. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
 El **entorno de ejecución** de Java 21 de mayor rendimiento se implementará automáticamente cuando se detecte una compilación de Java 17 o 21. Sin embargo, también recomendamos optar por el tiempo de ejecución de Java 21 para entornos creados con Java 11, enviando un correo electrónico a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Obtenga información sobre los [requisitos del tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
@@ -103,7 +103,7 @@ Obtenga más información en la [documentación de reenvío de registros](/help/
 
 ### Edge Computing: solicitud de comentarios {#edge-computing-feedback}
 
-Edge Computing acerca el procesamiento de datos al explorador, lo que ofrece ventajas como una menor latencia. A Adobe le encantaría saber si esta tecnología le resulta útil para los proyectos de AEM Publish Delivery y Edge Delivery Services. Además, indíquenos para qué prevé utilizarla como aportación a la hoja de ruta del producto. 
+Edge Computing acerca el procesamiento de datos al explorador, lo que ofrece ventajas como una menor latencia. A Adobe le encantaría saber si esta tecnología le resulta útil para los proyectos de AEM Publish Delivery y Edge Delivery Services. Además, indíquenos para qué prevé utilizarla como aportación a la hoja de ruta del producto.
 
 Algunos casos de uso posibles son los siguientes:
 
@@ -124,10 +124,10 @@ Obtenga más información sobre las [API de AEM basadas en OpenAPI](/help/implem
 
 En concreto, los puntos finales de API que se enumeran a continuación están disponibles como parte de un programa para primeros usuarios. Si está interesado, envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) describiendo cómo piensa utilizarlos.
 
-* [API de fragmentos de contenido en Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [API de recursos](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [API de fragmentos de contenido de sitios](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [API de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * API de sitios y carpetas de Assets
-* [API de comunicaciones de formularios](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+* [API de comunicaciones de Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Nuevo AEM Developer Console (Beta pública) {#aem-developer-console-beta}
 
