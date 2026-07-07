@@ -4,10 +4,10 @@ description: Integre el Asesor de contenido con varias aplicaciones de Adobe, qu
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: d5d3ff8d2bbeea8a10f950f533e4b104907ab387
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 1%
+source-wordcount: '897'
+ht-degree: 6%
 
 ---
 
@@ -42,8 +42,7 @@ Esta configuración le permite ver todos los recursos aprobados sin carpetas o c
 
 ### Creación de una URL de envío dinámico a partir de recursos aprobados {#create-dynamic-media-url}
 
-Una vez configurado el Asesor de contenido, se utiliza un esquema de objetos para crear una URL de envío dinámico a partir de los recursos seleccionados.
-Por ejemplo, un esquema de un objeto de una matriz de objetos que se recibe al seleccionar un recurso:
+Una vez configurado el Asesor de contenido, se utiliza un esquema de objetos para crear una URL de envío dinámico a partir de los recursos seleccionados.Por ejemplo, un esquema de un objeto de una matriz de objetos que se recibe al seleccionar un recurso:
 
 ```
 {
@@ -68,7 +67,7 @@ La función `handleSelection` que actúa como objeto JSON lleva todos los recurs
 #### Especificación de API de entrega de recursos aprobados {#approved-assets-delivery-api-specification}
 
 Formato de URL:
-`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
+
 
 Donde,
 
@@ -106,8 +105,7 @@ A continuación se muestran las dos formas de atravesar el objeto JSON:
 
 ![URL de envío dinámico](assets/dynamic-delivery-url.png)
 
-* **Miniatura:** Las miniaturas pueden ser imágenes y recursos como PDF, vídeo, imágenes, etc. Sin embargo, puede utilizar los atributos de altura y anchura de la miniatura de un recurso como representación de envío dinámico.
-Se puede utilizar el siguiente conjunto de representaciones para los recursos de tipo PDF:
+* **Miniatura:** Las miniaturas pueden ser imágenes y recursos como PDF, vídeo, imágenes, etc. Sin embargo, puede utilizar los atributos de altura y anchura de la miniatura de un recurso como representación de envío dinámico.Se puede utilizar el siguiente conjunto de representaciones para los recursos de tipo PDF:
 Una vez que se selecciona un pdf en la barra de tareas, el contexto de selección ofrece la siguiente información. A continuación se muestra la forma de atravesar el objeto JSON:
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
@@ -125,8 +123,7 @@ Una vez que se selecciona un pdf en la barra de tareas, el contexto de selecció
 
 En la captura de pantalla anterior, la dirección URL de envío de la representación original de PDF debe incorporarse en la experiencia de destino si se requiere PDF y no su miniatura. Por ejemplo, `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
-* **Vídeo:** Puede usar la URL del reproductor de vídeo para los recursos de tipo de vídeo que usan un iFrame incrustado. Puede utilizar las siguientes representaciones de matrices en la experiencia de Target:
-  <!--![Video dynamic delivery url](image.png)-->
+* **Vídeo:** Puede usar la URL del reproductor de vídeo para los recursos de tipo de vídeo que usan un iFrame incrustado. Puede utilizar las siguientes representaciones de matrices en la experiencia de Target:  <!--![Video dynamic delivery url](image.png)-->
 
   ```
   { 
@@ -156,4 +153,23 @@ Para la configuración, las propiedades definidas en el nivel `jcr:content/metad
 Por ejemplo, en el Asesor de contenido para Dynamic Media con capacidades OpenAPI, una propiedad de `asset jcr:content/metadata/client_name:market` se convierte en `metadata.embedded.client_name:market` para la configuración de filtros.
 
 Para obtener el nombre, se debe realizar una actividad única. Realice una llamada a la API de búsqueda para el recurso y obtenga el nombre de la propiedad (el contenedor, en esencia).
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 

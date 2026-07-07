@@ -5,10 +5,10 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: aa18d6572f3ba8a6f8bb61d96d3004a6db46d925
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 70%
+source-wordcount: '1299'
+ht-degree: 71%
 
 ---
 
@@ -26,7 +26,7 @@ Después de editar una imagen, puede guardar la nueva como una nueva versión. E
 
 ## Editar imagen {#edit-image}
 
-Vaya a la interfaz de usuario de la vista Assets, use el vínculo [Vista de Assets](https://experience.adobe.com/#/assets) y seleccione el repositorio adecuado. Para obtener acceso, póngase en contacto con el administrador de su organización.Para obtener más información de referencia, consulte [Introducción a la vista de Adobe Experience Manager Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprender la interfaz de usuario de la vista de Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) y [Casos de uso de la vista de Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Vaya a la interfaz de usuario de la vista Assets, use el vínculo [Vista de Assets](https://experience.adobe.com/#/assets) y seleccione el repositorio adecuado. Para obtener acceso, póngase en contacto con el administrador de su organización.Para obtener más información de referencia, consulte [Introducción a la vista de Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprender la interfaz de usuario de la vista de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) y [Casos de uso de la vista de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -157,7 +157,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/es/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
@@ -206,3 +206,23 @@ TBD: Insert a video of the available social media options.
 >
 >* [Acciones rápidas en Adobe Express](https://helpx.adobe.com/in/express/using/resize-image.html)
 >* [Visualización del historial de versiones de un recurso](navigate-assets-view.md)
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

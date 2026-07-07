@@ -6,10 +6,10 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 5fb4fe97-486a-4a91-af60-a7182efcc2f9
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 0%
+source-wordcount: '641'
+ht-degree: 7%
 
 ---
 
@@ -29,7 +29,7 @@ Como administrador, ejecute los siguientes pasos para importar los formularios d
 
    ![página de formularios de metadatos](/help/assets/assets/metadata-forms-page.png)
 
-1. Seleccione **[!UICONTROL Importar]**, se mostrará un mensaje de procesamiento (por ejemplo, *Procesando 2 formularios de metadatos... Espere un momento.*) mientras la importación está en curso. Una vez completado el procesamiento, se muestra la tabla **[!UICONTROL Importar formularios de metadatos]**, que incluye una lista de los formularios de metadatos disponibles en [!DNL Admin View]. La fila de la tabla incluye el nombre del formulario de metadatos (bajo **[!UICONTROL Nombre]**), las carpetas asociadas a ese formulario (bajo **[!UICONTROL Asociación de carpetas]**) y una opción para obtener una vista previa de ![vista previa](/help/assets/assets/Preview.svg) del formulario antes de importarlo.
+1. Seleccione **[!UICONTROL Importar]**, se mostrará un mensaje de procesamiento (por ejemplo, *Procesando 2 formularios de metadatos... Espere.*) mientras la importación está en curso. Una vez completado el procesamiento, se muestra la tabla **[!UICONTROL Importar formularios de metadatos]**, que incluye una lista de los formularios de metadatos disponibles en [!DNL Admin View]. La fila de la tabla incluye el nombre del formulario de metadatos (bajo **[!UICONTROL Nombre]**), las carpetas asociadas a ese formulario (bajo **[!UICONTROL Asociación de carpetas]**) y una opción para obtener una vista previa de ![vista previa](/help/assets/assets/Preview.svg) del formulario antes de importarlo.
 
    ![Importar página de Forms de metadatos](/help/assets/assets/import-metadata-forms-page.png)
 
@@ -43,12 +43,12 @@ Como administrador, ejecute los siguientes pasos para importar los formularios d
 
    ![Importar página de Forms de metadatos](/help/assets/assets/unsupported-import-elements.png)
 
-1. Seleccione uno o varios formularios de la tabla y haga clic en **[!UICONTROL Iniciar importación]** para importar los formularios de metadatos y sus carpetas asociadas en [!DNL Assets View]. Se muestra un mensaje de procesamiento (por ejemplo, *Importando 3 formularios de metadatos. Espere un momento.*). Una vez completada la importación, un mensaje confirma que los formularios se han importado correctamente y la página **[!UICONTROL Metadatos de Forms]** (de [!DNL Assets View]) muestra tanto los formularios importados recientemente como los existentes disponibles en [!DNL Assets View]. Puede hacer lo siguiente en esta página:
+1. Seleccione uno o varios formularios de la tabla y haga clic en **[!UICONTROL Iniciar importación]** para importar los formularios de metadatos y sus carpetas asociadas en [!DNL Assets View]. Se muestra un mensaje de procesamiento (por ejemplo, *Importando 3 formularios de metadatos. ¡Espere!*). Una vez completada la importación, un mensaje confirma que los formularios se han importado correctamente y la página **[!UICONTROL Metadatos de Forms]** (de [!DNL Assets View]) muestra tanto los formularios importados recientemente como los existentes disponibles en [!DNL Assets View]. Puede hacer lo siguiente en esta página:
 
    * Haga clic en el encabezado de columna para ordenar la tabla por [!UICONTROL Nombre], [!UICONTROL Modificado] o [!UICONTROL Autor].
    * Seleccione el formulario importado y haga clic en **[!UICONTROL Quitar de las carpetas]**; a continuación, compruebe el nombre de la carpeta en la ruta de acceso de la carpeta para confirmar que se ha transferido correctamente.
      ![comprobar página de formularios de metadatos](/help/assets/assets/confirm-ported-folder.png)
-   * Seleccione el formulario importado y haga clic en **[!UICONTROL Editar]** para ver todas las configuraciones admitidas del formulario de metadatos. Consulte [Configuración de Forms de metadatos](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) para obtener más información sobre los formularios de metadatos, sus componentes y campos.
+   * Seleccione el formulario importado y haga clic en **[!UICONTROL Editar]** para ver todas las configuraciones admitidas del formulario de metadatos. Consulte [Configuración de Forms de metadatos](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) para obtener más información sobre los formularios de metadatos, sus componentes y campos.
 
    ![comprobar página de formularios de metadatos](/help/assets/assets/verify-metadata-forms-page.png)
 
@@ -57,8 +57,28 @@ Como administrador, ejecute los siguientes pasos para importar los formularios d
 Después de importar los formularios de metadatos de [!DNL Admin View] a [!DNL Assets View], siga estos pasos para comprobar la importación:
 
 1. Vaya a cualquiera de las carpetas asociadas del formulario de metadatos importado.
-1. Vaya a la página de detalles de un [recurso](/help/assets/navigate-assets-view.md#preview-assets) y compruebe que los componentes de metadatos, los campos de componente y los valores de campo admitidos estén sincronizados desde [!DNL Admin View]. Consulte el artículo [Metadatos en Assets Essentials](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/metadata) para obtener más información sobre los componentes de metadatos, los campos de componente y los valores de campo.
+1. Vaya a la página de detalles de un [recurso](/help/assets/navigate-assets-view.md#preview-assets) y compruebe que los componentes de metadatos, los campos de componente y los valores de campo admitidos estén sincronizados desde [!DNL Admin View]. Consulte el artículo [Metadatos en Assets Essentials](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) para obtener más información sobre los componentes de metadatos, los campos de componente y los valores de campo.
 
    >[!NOTE]
    >
-   > En [[!DNL Assets View] página de detalles](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) o [[!DNL Admin View] página de propiedades](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/administer/metadata-schemas), los cambios en los valores de las propiedades de metadatos se sincronizan automáticamente entre las dos interfaces. Sin embargo, los cambios estructurales del formulario, como agregar o quitar campos u otras modificaciones, no se sincronizan.
+   > En [[!DNL Assets View] página de detalles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) o [[!DNL Admin View] página de propiedades](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas), los cambios en los valores de las propiedades de metadatos se sincronizan automáticamente entre las dos interfaces. Sin embargo, los cambios estructurales del formulario, como agregar o quitar campos u otras modificaciones, no se sincronizan.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -3,10 +3,10 @@ title: Integración de AEM Assets remoto con AEM Sites
 description: Obtenga información sobre cómo configurar y conectar sitios de AEM con AEM Assets aprobados.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 13%
+source-wordcount: '1151'
+ht-degree: 19%
 
 ---
 
@@ -34,15 +34,15 @@ La compatibilidad con recursos remotos mediante Dynamic Media con funciones de O
 
 * Configure las [variables de entorno](/help/implementing/cloud-manager/environment-variables.md#add-variables) siguientes para AEM as a Cloud Service:
 
-   * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxx-eyyyyyy.adobeaemcloud.com&quot; <br>
-     `pXXXX` hace referencia al ID de programa <br>
+   * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxx-eyyyyyy.adobeaemcloud.com&quot; 
+     `pXXXX` hace referencia al ID de programa 
      `eYYYY` hace referencia al ID de entorno
 
   Estas variables se configuran mediante la interfaz de usuario de Cloud Manager del entorno de AEM as a Cloud Service, que actúa como la instancia local de Sites.
 
    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]: debe enviar un ticket de asistencia de Adobe para obtener el ID de cliente de IMS.
 
-     o configure la [configuración de OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=es) para AEM 6.5 en la instancia de AEM Sites siguiendo estos pasos:
+     o configure la [configuración de OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) para AEM 6.5 en la instancia de AEM Sites siguiendo estos pasos:
 
    1. Inicie sesión en la consola y haga clic en **[!UICONTROL OSGi] >** o
 usar la dirección URL directa; por ejemplo: `https://localhost:4502/system/console/configMgr`
@@ -58,12 +58,11 @@ usar la dirección URL directa; por ejemplo: `https://localhost:4502/system/cons
 
       `imsOrg` no es una entrada obligatoria.
       `repositoryId` = &quot;delivery-pxxxx-eyyyyyy.adobeaemcloud.com&quot;
-donde `pXXXX` hace referencia al ID de programa
-      `eYYYY` hace referencia al ID de entorno
+donde `pXXXX` hace referencia al ID de programa      `eYYYY` hace referencia al ID de entorno
 
       ![Ventana de configuración OSGi de la configuración de Dynamic Media de próxima generación](/help/assets/assets/remote-assets-osgi.png)
 
-  Más información sobre la [autenticación IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html?lang=es).
+  Más información sobre la [autenticación IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
 
   Para obtener más información sobre cómo configurar OSGi, consulte los siguientes documentos:
 
@@ -119,7 +118,7 @@ Siga los siguientes pasos para utilizar recursos remotos dentro del fragmento de
 
    >[!NOTE]
    >
-   >Si no cuenta con el modelo de fragmento de contenido de AEM, es posible que tenga que [crear uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=es).
+   >Si no cuenta con el modelo de fragmento de contenido de AEM, es posible que tenga que [crear uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
 
 1. Haga clic en el icono de ![marca de verificación](/help/assets/assets/do-not-localize/checkmark-icon.svg) junto al componente de texto.
 1. Seleccione **[!UICONTROL Remoto]** para recuperar el recurso del DAM remoto. <br>
@@ -137,3 +136,23 @@ Se le pedirá que inicie sesión.
 ### Acceso a recursos remotos en Edge Delivery Services {#access-assets-eds}
 
 Puede acceder a recursos remotos durante la creación de contenido en Microsoft Word, Google Docs o Universal Editor y, a continuación, publicar el contenido en Edge Delivery Services. También puede utilizar Dynamic Media con OpenAPI para ofrecer recursos aprobados por la marca y utilizar muchos otros beneficios que ofrece. Para obtener más información, consulte [Integrar AEM Assets al crear contenido para Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md).
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

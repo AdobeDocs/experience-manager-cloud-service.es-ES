@@ -3,10 +3,10 @@ title: Edición de imágenes en Content Hub mediante Adobe Express
 description: Edición de imágenes en Content Hub mediante Adobe Express
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 5%
+source-wordcount: '806'
+ht-degree: 10%
 
 ---
 
@@ -30,7 +30,7 @@ Para editar imágenes con Content Hub:
 
 1. Haga clic en **[!DNL Open in Adobe Express]**, disponible en la tarjeta de recursos de la imagen que debe editar. También puede hacer clic en la imagen para abrir sus detalles y, a continuación, hacer clic en el logotipo de [!DNL Adobe Express]. A continuación, el editor incrustado de Adobe Express se carga sin salir de Content Hub.
 
-   Puede aprovechar la funcionalidad [!DNL Adobe Express] para realizar todas las acciones relacionadas con la edición de imágenes, como [cambiar el tamaño de la imagen](https://helpx.adobe.com/es/express/using/resize-image.html), [quitar o cambiar el color de fondo](https://helpx.adobe.com/es/express/using/remove-background.html), [recortar imagen](https://helpx.adobe.com/es/express/using/crop-image.html), combinar la imagen con la imagen o el texto generados por IA y mucho más.
+   Puede aprovechar la funcionalidad [!DNL Adobe Express] para realizar todas las acciones relacionadas con la edición de imágenes, como [cambiar el tamaño de la imagen](https://helpx.adobe.com/express/using/resize-image.html), [quitar o cambiar el color de fondo](https://helpx.adobe.com/express/using/remove-background.html), [recortar imagen](https://helpx.adobe.com/express/using/crop-image.html), combinar la imagen con la imagen o el texto generados por IA y mucho más.
 
 1. Realice las modificaciones y haga clic en **[!UICONTROL Guardar]** para guardar el recurso editado en cualquiera de los tipos de formato:
 
@@ -83,5 +83,23 @@ Sí, después de editar, puede hacer clic en **Guardar como nuevo recurso** para
 Sí, los administradores pueden configurar qué campos son obligatorios u opcionales al añadir recursos a AEM Assets Content Hub, como Nombre de campaña, Palabras clave y Canales, para adaptarlos a las necesidades de la organización. Use la ficha **Importar** de la interfaz de usuario de configuración para configurar los campos.
 
 
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 

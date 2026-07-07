@@ -6,10 +6,10 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 10%
+source-wordcount: '1080'
+ht-degree: 11%
 
 ---
 
@@ -71,11 +71,11 @@ La pestaña **[!UICONTROL Generar formulario]** enumera los elementos de formula
   </tr>
   <tr>
    <td><p>Texto de una sola línea</p> </td>
-   <td><p> Agregue una propiedad de texto de una sola línea. Se almacena como una cadena.</p> </td>
+   <td><p> Añada una propiedad de texto de una sola línea. Se almacena como una cadena.</p> </td>
   </tr>
   <tr>
    <td><p>Texto con varios valores</p> </td>
-   <td><p> Agregue una propiedad de texto de varios valores. Se almacena como una matriz de cadenas.</p> </td>
+   <td><p> Añada una propiedad de texto de varios valores. Se almacena como una matriz de cadenas.</p> </td>
   </tr>
   <tr>
    <td><p>Número</p> </td>
@@ -106,7 +106,7 @@ Para editar las propiedades de los elementos del formulario, seleccione el compo
 
 **[!UICONTROL Etiqueta de campo]**: nombre de la propiedad de metadatos que se muestra en la página de propiedades de la carpeta.
 
-**[!UICONTROL Asignar a propiedad]**: esta propiedad especifica la ruta relativa del nodo de carpeta en el repositorio de CRX donde se guarda. Comienza con &quot;**./**&quot;, que indica que la ruta de acceso se encuentra bajo el nodo de la carpeta.
+**[!UICONTROL Asignar a propiedad]**: esta propiedad especifica la ruta relativa del nodo de carpeta en el repositorio de CRX donde se guarda. Comienza con &quot;**./**&quot;, lo que indica que la ruta de acceso se encuentra bajo el nodo de la carpeta.
 
 Los siguientes son ejemplos de valores válidos para una propiedad:
 
@@ -136,7 +136,7 @@ Puede eliminar formularios de esquema de metadatos de carpeta desde la página d
 
 Puede asignar un esquema de metadatos de carpeta a una carpeta desde la página de Forms Esquema de metadatos de carpeta o al crear una carpeta.
 
-Si configura un esquema de metadatos para una carpeta, la ruta al formulario de esquema se almacena en la propiedad `folderMetadataSchema` del nodo de carpeta en */jcr:content*.
+Si configura un esquema de metadatos para una carpeta, la ruta al formulario de esquema se almacenará en la propiedad `folderMetadataSchema` del nodo de carpeta en .*/jcr:content*.
 
 ### Asignar a un esquema desde la página Esquema de metadatos de carpeta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
@@ -176,16 +176,20 @@ Escriba valores de metadatos en los distintos campos y seleccione **[!UICONTROL 
 
 **Consulte también**
 
-* [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+
