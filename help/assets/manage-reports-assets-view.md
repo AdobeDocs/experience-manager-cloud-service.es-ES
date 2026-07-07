@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 8f04036493722f73fb29416b51dae6d64633249c
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 82%
+source-wordcount: '1562'
+ht-degree: 86%
 
 ---
 
@@ -141,7 +141,7 @@ Obtenga información de envío para los recursos que se envían con Dynamic Medi
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Requisitos previos {#prereqs-dynamic-media-delivery-reports}
@@ -186,8 +186,7 @@ Para eliminar o descargar el informe de entrega de Dynamic Media como CSV, consu
 
 ## Visualización y descarga de un informe existente {#View-and-download-existing-report}
 
-Los informes existentes se muestran en la ficha **Informes ejecutados**. Haga clic en **Informes** y seleccione **Informes ejecutados** para ver todos los informes creados con el estado **completado**, lo que indica que están listos para descargarse. Para descargar el informe en formato CSV o eliminarlo, seleccione la fila del informe. Luego selecciona **Descargar CSV** o **Eliminar**.
-![ver y descargar informes existentes](/help/assets/assets/view-download-existing-report.png)
+Los informes existentes se muestran en la pestaña **Informes ejecutados**. Haga clic en **Informes** y seleccione **Informes ejecutados** para ver todos los informes creados con el estado **completado**, lo que indica que están listos para descargarse. Para descargar el informe en formato CSV o eliminarlo, seleccione la fila del informe. A continuación, seleccione **Descargar CSV** o **Eliminar**.![ver y descargar informes existentes](/help/assets/assets/view-download-existing-report.png)
 
 
 ## Programación de un informe {#schedule-report}
@@ -220,13 +219,11 @@ Los informes programados se muestran en la ficha **Informes programados** de una
 1. Vaya a la pestaña **Informes programados**.
 1. Seleccione la fila del informe.
 1. Haga clic en **Editar**.
-1. Haga clic en **Cancelar programación** y, a continuación, haga clic en **Confirmar** para cancelar el informe programado. Para los informes cancelados, el siguiente tiempo de ejecución pasa a estar vacío y el estado se muestra cancelado.
-   ![editar y cancelar informe programado](/help/assets/assets/cancel-edit-scheduled-reports.png)
+1. Haga clic en **Cancelar programación** y, a continuación, haga clic en **Confirmar** para cancelar el informe programado. Para los informes cancelados, el siguiente tiempo de ejecución pasa a estar vacío y el estado se muestra cancelado.   ![editar y cancelar informe programado](/help/assets/assets/cancel-edit-scheduled-reports.png)
 
 ### Reanudar programación {#resume-schedule}
 
-Para reanudar la programación cancelada, seleccione la fila del informe y haga clic en **Reanudar programación**. Cuando se reanuda, las siguientes entradas de tiempo de ejecución se muestran de nuevo y el estado es En curso.
-![reanudar programación](/help/assets/assets/resume-schedule.png)
+Para reanudar la programación cancelada, seleccione la fila del informe y haga clic en **Reanudar programación**. Cuando se reanuda, las siguientes entradas en tiempo de ejecución se muestran de nuevo y el estado se muestra en curso.![reanudar programación](/help/assets/assets/resume-schedule.png)
 
 >[!NOTE]
 >
@@ -265,3 +262,23 @@ Haga clic en **[!UICONTROL Insights]** en el panel de navegación izquierdo para
 * **Número de recursos por tamaño:** segmenta el número de recursos total dentro del entorno de Assets View en diferentes intervalos de tamaño, destacando el recuento y el porcentaje de recursos en cada intervalo de tamaño, representados por un gráfico de sectores.
 
 * **Recuento de recursos por tipo de recurso:** Segmenta el recuento total de recursos en su entorno de vista de Assets, destacando el recuento y el porcentaje de recursos en función de sus tipos de archivos, representados por un gráfico circular.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

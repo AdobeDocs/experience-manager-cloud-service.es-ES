@@ -6,9 +6,9 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: a927c0556f47056fc4e6b0f812703baa34e53903
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '2155'
+source-wordcount: '2161'
 ht-degree: 7%
 
 ---
@@ -31,7 +31,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 | × | No compatible. No utilice. |
 | - | No disponible |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API de Java | [Servicio de cómputo de recursos](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=es) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=es#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API de Java | [Servicio de cómputo de recursos](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=es) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **binario original** |  |  |  |  |  |  |
 | Crear original | ✓ | × | - | × | × | - |
@@ -73,14 +73,14 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 
 Si el servicio Perfil de producto `AEM Assets API Users` no se muestra en los entornos de producción, desarrollo o inferiores creados antes de noviembre de 2024, debe configurar las API de AEM Assets basadas en OpenAPI.
 
-La configuración de las API de AEM Assets basadas en OpenAPI implica la modernización del entorno de AEM as a Cloud Service y la habilitación del acceso a las API de AEM Assets. La modernización debe ejecutarse por entorno (producción, desarrollo y fase). Para obtener más información, consulte [Configurar las API de AEM basadas en OpenAPI](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
+La configuración de las API de AEM Assets basadas en OpenAPI implica la modernización del entorno de AEM as a Cloud Service y la habilitación del acceso a las API de AEM Assets. La modernización debe ejecutarse por entorno (producción, desarrollo y fase). Para obtener más información, consulte [Configurar las API de AEM basadas en OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
 ## Carga de recursos {#asset-upload}
 
 En [!DNL Experience Manager] como [!DNL Cloud Service], puede cargar directamente los recursos al almacenamiento en la nube mediante la API HTTP. A continuación se indican los pasos para cargar un archivo binario. Ejecute estos pasos en una aplicación externa y no dentro de la JVM [!DNL Experience Manager].
 
 1. [Enviar una solicitud HTTP](#initiate-upload). Informa a [!DNL Experience Manage]r implementación de su intención de cargar un nuevo binario.
-1. [COLOQUE el contenido del binario &#x200B;](#upload-binary) en uno o más URI proporcionados por la solicitud de inicio.
+1. [COLOQUE el contenido del binario ](#upload-binary) en uno o más URI proporcionados por la solicitud de inicio.
 1. [Envíe una solicitud HTTP](#complete-upload) para informar al servidor de que el contenido del binario se cargó correctamente.
 
 ![Descripción general del protocolo de carga binaria directa](assets/add-assets-technical.png)
@@ -549,18 +549,20 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 **Consulte también**
 
-* [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]

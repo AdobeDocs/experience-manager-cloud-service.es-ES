@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 0026550effc426691a4d63faf169ecd7b9228a57
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '4335'
-ht-degree: 0%
+source-wordcount: '4378'
+ht-degree: 1%
 
 ---
 
@@ -155,7 +155,7 @@ Haga clic en el icono ![vista previa](assets/do-not-localize/preview-icon.svg) p
 
 ![Previsualizar representaciones de Dynamic Media](assets/native-express-dynamic-media-preview.png)
 
-Haga clic en **[!UICONTROL Agregar modificadores]**, especifique un modificador en el cuadro de texto y presione Entrar para aplicar la transformación a las representaciones en tiempo real. Del mismo modo, puede agregar varios modificadores a una representación y previsualizar esas transformaciones. Arrastre y suelte el recurso de la vista previa en el lienzo. La representación después de aplicar esos modificadores no se guarda. Consulte la lista de modificadores admitidos para [Dynamic Media Scene7](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) y [Dynamic Media con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Haga clic en **[!UICONTROL Agregar modificadores]**, especifique un modificador en el cuadro de texto y presione Entrar para aplicar la transformación a las representaciones en tiempo real. Del mismo modo, puede agregar varios modificadores a una representación y previsualizar esas transformaciones. Arrastre y suelte el recurso de la vista previa en el lienzo. La representación después de aplicar esos modificadores no se guarda. Consulte la lista de modificadores admitidos para [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) y [Dynamic Media con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 >[!IMPORTANT]
 > 
@@ -249,7 +249,7 @@ Después de incorporar las modificaciones adecuadas en el lienzo Express, puede 
 
 ## Formatos de archivo compatibles {#supported-file-formats-import-assets}
 
-Adobe Express admite de forma nativa los formatos disponibles en [Revisar los requisitos mínimos de imagen](https://helpx.adobe.com/es/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Sin embargo, AEM Assets admite los siguientes tipos de formato:
+Adobe Express admite de forma nativa los formatos disponibles en [Revisar los requisitos mínimos de imagen](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Sin embargo, AEM Assets admite los siguientes tipos de formato:
 
 | Formato admitido | Dimensiones máximas/resolución | Tamaño máximo de archivo |
 |------------------|---------------------------------------------|---------------|
@@ -394,4 +394,23 @@ Adobe Express a través de AEM Assets admite los siguientes límites de tamaño 
 ### ¿Cuáles son las limitaciones de vídeo en la integración de AEM Assets y Adobe Express? {#aem-assets-express-video-limitations}
 
 La integración de AEM Assets y Adobe Express admite MP4 como el único tipo de archivo de vídeo tanto para la importación como para la exportación. Para la importación de vídeo MP4, no se admiten vídeos con fondos transparentes (canal alfa). Para la exportación de vídeo MP4, el tamaño máximo de archivo admitido es de 200 MB. Si el tamaño del archivo de exportación supera los 200 MB, se recomienda recortar el vídeo a 200 MB o menos, o cargar manualmente el vídeo en la carpeta de destino de AEM Assets después de descargarlo localmente.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 

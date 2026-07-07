@@ -3,10 +3,10 @@ title: Varios subtítulos y audio en Dynamic Media con vídeos de funciones de O
 description: Obtenga información sobre cómo añadir y administrar varias pistas de audio y subtítulos para recursos de vídeo en Dynamic Media con las funciones de OpenAPI en Adobe Experience Manager Assets.
 role: User
 badgeSaas: label="AEM Assets" type="Positive"
-source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 6%
+source-wordcount: '567'
+ht-degree: 13%
 
 ---
 
@@ -154,3 +154,22 @@ El archivo seleccionado se descargará en el sistema local.
 1. Haga clic en **OK**.
 
 No se puede eliminar el audio original extraído del vídeo.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

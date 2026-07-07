@@ -6,10 +6,10 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 21%
+source-wordcount: '1429'
+ht-degree: 22%
 
 ---
 
@@ -17,20 +17,18 @@ ht-degree: 21%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Un perfil de metadatos le permite aplicar metadatos predeterminados a los recursos de una carpeta. Cree un perfil de metadatos y aplíquelo a una carpeta. Cualquier recurso que cargue posteriormente en la carpeta heredará los metadatos predeterminados configurados en el perfil de metadatos.
 
-Un concepto importante con respecto al uso de perfiles en Experience Manager Assets es que se asignan a carpetas. Dentro de un perfil hay ajustes en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, el modo de asignar nombres a los archivos y carpetas, organizar las subcarpetas y administrar los archivos de estas carpetas tiene un impacto significativo en la forma en que un perfil procesa esos recursos.
-Al utilizar estrategias de nomenclatura de archivos y carpetas coherentes y adecuadas, así como una buena práctica de metadatos, puede sacar el máximo partido a la colección de recursos digitales y asegurarse de que los archivos correctos se procesan mediante el perfil correcto.
+Un concepto importante con respecto al uso de perfiles en Experience Manager Assets es que se asignan a carpetas. Dentro de un perfil hay ajustes en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, el modo de asignar nombres a los archivos y carpetas, organizar las subcarpetas y administrar los archivos de estas carpetas tiene un impacto significativo en la forma en que un perfil procesa esos recursos.Al utilizar estrategias de nomenclatura de archivos y carpetas coherentes y adecuadas, así como una buena práctica de metadatos, puede sacar el máximo partido a la colección de recursos digitales y asegurarse de que los archivos correctos se procesan mediante el perfil correcto.
 
 ## Añadir un perfil de metadatos {#adding-a-metadata-profile}
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]** y, a continuación, haga clic en **[!UICONTROL Crear]**.
 1. Escriba un título para el perfil de metadatos, por ejemplo, Metadatos de muestra, y seleccione **[!UICONTROL Enviar]**. Se muestra el formulario de edición para el perfil de metadatos.
-1. Haga clic en un componente y configure sus propiedades en la ficha **[!UICONTROL Configuración]**. Por ejemplo, haga clic en el componente **[!UICONTROL Description]** y edite sus propiedades.
-Edite las siguientes propiedades para el componente **[!UICONTROL Description]**:
+1. Haga clic en un componente y configure sus propiedades en la ficha **[!UICONTROL Configuración]**. Por ejemplo, haga clic en el componente **[!UICONTROL Description]** y edite sus propiedades.Edite las siguientes propiedades para el componente **[!UICONTROL Description]**:
 
    * **[!UICONTROL Etiqueta de campo]** - El nombre para mostrar de la propiedad de metadatos. Solo es para la referencia del usuario.
    * **[!UICONTROL Asignar a propiedad]**: el valor de esta propiedad proporciona la ruta/nombre relativa al nodo de recurso donde se guarda en el repositorio. El valor siempre debe comenzar con `./` porque indica que la ruta de acceso está bajo el nodo del recurso.
@@ -133,16 +131,21 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **Herramientas
 
 **Consulte también**
 
-* [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+
+

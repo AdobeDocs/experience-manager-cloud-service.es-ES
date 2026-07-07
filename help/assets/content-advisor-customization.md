@@ -4,10 +4,10 @@ description: Utilice funciones para personalizar el Asesor de contenido en su ap
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: b2034a3d7fcbb74f155299cd305d2cd3ccb1b7c7
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 21%
+source-wordcount: '1276'
+ht-degree: 24%
 
 ---
 
@@ -225,7 +225,6 @@ La propiedad `handleSelection` se utiliza para gestionar una o varias seleccione
 ### Desactivación de la selección de Assets {#disable-selection}
 
 Deshabilitar selección se utiliza para ocultar o deshabilitar la selección de recursos o carpetas. Oculta la casilla de verificación de selección de la tarjeta o el recurso, lo que impide que se seleccione. Para utilizar esta función, puede declarar la posición de un recurso o carpeta que desee deshabilitar en una matriz. Por ejemplo, si desea deshabilitar la selección de una carpeta que aparece en la primera posición, puede agregar el siguiente código:
-`disableSelection: [0]:folder`
 
 Puede proporcionar a la matriz una lista de tipos MIME (como imagen, carpeta, archivo u otros tipos MIME, por ejemplo, imagen/jpeg) que desee desactivar. Los tipos MIME que declare se asignan a los atributos `data-card-type` y `data-card-mimetype` de un recurso.
 
@@ -664,4 +663,22 @@ dragOptions: {
             },
          }
 ```
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
