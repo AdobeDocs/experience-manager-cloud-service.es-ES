@@ -3,10 +3,10 @@ title: Creación de plantillas de visualización para fragmentos de contenido
 description: Vista previa y publicación de fragmentos de contenido con plantillas de visualización. Descubra cómo puede crear y personalizar las plantillas.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 733e7a8c497fcffdfadd22c2abd3323d35d54e3e
+source-git-commit: b0a32380b028ff230ec4904a86b55b8ba0f4558f
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 3%
+source-wordcount: '2134'
+ht-degree: 4%
 
 ---
 
@@ -967,8 +967,7 @@ AEM procesa previamente como HTML los fragmentos de contenido a los que se hace 
 
 Recuerde:
 
-* Utilice siempre llaves triples para los campos de recursos.
-Si utiliza llaves dobles, se omitirá la etiqueta de HTML generada y se mostrará como texto sin procesar en lugar de representar la imagen, el vídeo o el vínculo.
+* Utilice siempre llaves triples para los campos de recursos.Si utiliza llaves dobles, se omitirá la etiqueta de HTML generada y se mostrará como texto sin procesar en lugar de representar la imagen, el vídeo o el vínculo.
 
 ### Uso del campo de recursos {#asset-field-usage}
 
@@ -1272,9 +1271,5 @@ Hay recursos adicionales disponibles:
 * [Documentación de Handlebars](https://handlebarsjs.com/)
 * [Ayudantes integrados de Handlebars](https://handlebarsjs.com/guide/builtin-helpers.html)
 * [Documentación de fragmentos de contenido de AEM](/help/sites-cloud/administering/content-fragments/overview.md)
+* [API de plantillas de visualización de fragmentos de contenido](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/cvt/)
 
-<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
-
-<!--
-* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
--->

@@ -3,9 +3,9 @@ title: 'Fragmentos de contenido visual: Entregar con la URL de publicación'
 description: Utilice la URL de publicación para enviar fragmentos de contenido visual.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 733e7a8c497fcffdfadd22c2abd3323d35d54e3e
+source-git-commit: b0a32380b028ff230ec4904a86b55b8ba0f4558f
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1451'
 ht-degree: 0%
 
 ---
@@ -342,8 +342,4 @@ Hay recursos adicionales disponibles:
 
 * [Documentación de fragmentos de contenido de AEM](/help/sites-cloud/administering/content-fragments/overview.md)
 
-<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
-
-<!--
-* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
--->
+* [API de plantillas de visualización de fragmentos de contenido](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/cvt/)
