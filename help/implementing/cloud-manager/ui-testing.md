@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: c17bbdac3738ab99be6d58da26825640eedbbdc4
 workflow-type: tm+mt
 source-wordcount: '2839'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Pruebas de IU"
->abstract="La prueba de IU personalizada es una función opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones mediante imágenes Docker basadas en Selenium."
+>abstract="Las pruebas de IU personalizadas son una funcionalidad opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones mediante imágenes de Docker basadas en Selenium."
 
 La prueba de IU personalizada es una característica opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones.
 

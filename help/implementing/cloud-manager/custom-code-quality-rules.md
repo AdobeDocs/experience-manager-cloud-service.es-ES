@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 57%
+source-wordcount: '4455'
+ht-degree: 56%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 57%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Reglas de calidad de código personalizadas"
->abstract="Para garantizar un código de alta calidad mediante pruebas exhaustivas, obtenga información sobre las reglas de calidad de código personalizadas de Cloud Manager, basadas en las prácticas recomendadas de ingeniería de Adobe Experience Manager."
+>abstract="Para garantizar un código de alta calidad mediante pruebas exhaustivas, conozca las reglas de calidad del código personalizadas de Cloud Manager, basadas en las prácticas recomendadas de ingeniería de Adobe Experience Manager."
 
-Para garantizar un código de alta calidad mediante pruebas exhaustivas, obtenga información sobre las reglas de calidad de código personalizadas de Cloud Manager, basadas en las prácticas recomendadas de ingeniería de Adobe Experience Manager. Ver también [pruebas de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md).
+Para garantizar un código de alta calidad mediante pruebas exhaustivas, conozca las reglas de calidad del código personalizadas de Cloud Manager, basadas en las prácticas recomendadas de ingeniería de Adobe Experience Manager. Ver también [pruebas de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md).
 
 Las reglas completas de SonarQube no están disponibles para su descarga debido a la información de Adobe registrada. Puede descargar la lista completa de *reglas actuales* [mediante este vínculo](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Continúe leyendo este documento para obtener descripciones y ejemplos de las reglas.
 
@@ -117,8 +117,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Gravedad**: Crítico
 * **Desde**: Versión 2018.6.0
 
-Al realizar solicitudes HTTP dentro de una aplicación de Experience Manager, es esencial configurar los tiempos de espera adecuados para evitar un consumo de hilos innecesario.
-De forma predeterminada, tanto el cliente Java™ HTTP (java.net.HttpUrlConnection) como el cliente Apache HTTP Components, ampliamente utilizado, no imponen tiempos de espera, por lo que deben configurarse manualmente. Como práctica recomendada, los tiempos de espera deben establecerse en 60 segundos o menos.
+Al realizar solicitudes HTTP dentro de una aplicación de Experience Manager, es esencial configurar los tiempos de espera adecuados para evitar un consumo de hilos innecesario.De forma predeterminada, tanto el cliente Java™ HTTP (java.net.HttpUrlConnection) como el cliente Apache HTTP Components, ampliamente utilizado, no imponen tiempos de espera, por lo que deben configurarse manualmente. Como práctica recomendada, los tiempos de espera deben establecerse en 60 segundos o menos.
 
 #### Código no conforme {#non-compliant-code-2}
 
@@ -1067,8 +1066,7 @@ Para los índices personalizados, configure `includedPaths` y `queryPaths` con v
 * **Gravedad**: Menor
 * **Desde**: Versión 2023.1.0
 
-Al establecer la propiedad `nodeScopeIndex` en un tipo de nodo &quot;genérico&quot; como `nt:unstructured` o `nt:base`, también debe especificar las propiedades `includedPaths` y `queryPaths`.
-El tipo de nodo `nt:base` puede considerarse &quot;genérico&quot;, ya que todos los tipos de nodo heredan de él. Por lo tanto, configurar un `nodeScopeIndex` en `nt:base` hace que indexe todos los nodos del repositorio. Del mismo modo, `nt:unstructured` también se considera &quot;genérico&quot;, ya que hay muchos nodos en repositorios de este tipo.
+Al establecer la propiedad `nodeScopeIndex` en un tipo de nodo &quot;genérico&quot; como `nt:unstructured` o `nt:base`, también debe especificar las propiedades `includedPaths` y `queryPaths`.El tipo de nodo `nt:base` puede considerarse &quot;genérico&quot;, ya que todos los tipos de nodo heredan de él. Por lo tanto, al establecer un `nodeScopeIndex` en `nt:base`, se indexan todos los nodos del repositorio. Del mismo modo, `nt:unstructured` también se considera &quot;genérico&quot;, ya que hay muchos nodos en repositorios de este tipo.
 
 #### Código no conforme {#non-compliant-code-full-text-on-generic-node-type}
 
