@@ -311,7 +311,7 @@ Ver [descargar recursos desde [!DNL Experience Manager]](/help/assets/download-a
 
 1. Seleccione la opción **[!UICONTROL Publicar]** o **[!UICONTROL Cancelar la publicación]** según sea necesario.
 
-   ![Cancelar publicación
+   !&lbrack;Cancelar publicación
    *Imagen: opciones de publicación y cancelación de publicación y la opción de programación.*
 
 1. Seleccione **[!UICONTROL Ahora]** para actuar sobre el recurso de inmediato o seleccione **[!UICONTROL Más tarde]** para programar la acción. Seleccione una fecha y una hora si elige la opción **[!UICONTROL Más tarde]**. Haga clic en **[!UICONTROL Siguiente]**.
