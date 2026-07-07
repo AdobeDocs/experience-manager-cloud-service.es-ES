@@ -4,10 +4,10 @@ description: Administración de caché en Dynamic Media con API abiertas
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 203a5291-edb5-4900-8b0a-32e1ebae5395
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 0%
+source-wordcount: '703'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,7 @@ El almacenamiento en caché prolongado en Dynamic Media con API abiertas consist
 
 ## Almacenamiento en caché de capa CDN {#cdn-layer-caching}
 
-Las respuestas de entrega de recursos se almacenan en caché en [Adobe Managed CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) durante un período prolongado para maximizar el rendimiento y minimizar la carga en el origen. Adobe administra completamente este almacenamiento en caché para garantizar una experiencia de alta calidad coherente para los usuarios finales. La duración de la caché está optimizada intencionadamente para el rendimiento y los usuarios no pueden personalizarla para mantener la fiabilidad y la eficacia en la entrega de contenido a todos los clientes.
+Las respuestas de entrega de recursos se almacenan en caché en [Adobe Managed CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) durante un período prolongado para maximizar el rendimiento y minimizar la carga en el origen. Adobe administra completamente este almacenamiento en caché para garantizar una experiencia de alta calidad coherente para los usuarios finales. La duración de la caché está optimizada intencionadamente para el rendimiento y los usuarios no pueden personalizarla para mantener la fiabilidad y la eficacia en la entrega de contenido a todos los clientes.
 
 Todas las direcciones URL de envío se almacenan en caché en el perímetro (Fastly) durante un periodo de tiempo prolongado para garantizar un rendimiento óptimo. Los objetos de envío en caché incluyen representaciones estáticas, vídeos, binarios de imagen originales e imágenes transformadas dinámicamente, como recursos cambiados de tamaño o con formato modificado generados mediante parámetros de URL. <!--The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.-->
 
@@ -29,7 +29,7 @@ Las respuestas de entrega de recursos incluyen un encabezado `Cache-Control` con
 
 ### Personalizar encabezados de control de caché {#customizing-cache-control-headers}
 
-El aumento del tiempo de caché para los valores activos más allá de la configuración predeterminada aumenta la probabilidad de ofrecer contenido obsoleto, lo que puede retrasar la visibilidad de las actualizaciones de contenido en la experiencia del usuario final. Si necesita modificar el comportamiento del control de caché para un caso de uso específico, puede configurar reglas de CDN personalizadas para ajustar los encabezados de respuesta. Esto le permite configurar diferentes duraciones de la caché según sus necesidades. Consulte [Reglas de CDN personalizadas de AEM para encabezados de respuesta](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
+El aumento del tiempo de caché para los valores activos más allá de la configuración predeterminada aumenta la probabilidad de ofrecer contenido obsoleto, lo que puede retrasar la visibilidad de las actualizaciones de contenido en la experiencia del usuario final. Si necesita modificar el comportamiento del control de caché para un caso de uso específico, puede configurar reglas de CDN personalizadas para ajustar los encabezados de respuesta. Esto le permite configurar diferentes duraciones de la caché según sus necesidades. Consulte [Reglas de CDN personalizadas de AEM para encabezados de respuesta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
 
 ```
 responseTransformations:
@@ -55,7 +55,7 @@ Cada vez que se actualiza, elimina o modifica un recurso (cualquier cambio en lo
 
 ### Depuración manual de caché {#manual-cache-purging}
 
-Cuando es necesario purgar manualmente el contenido almacenado en caché, puede hacerlo usando las capacidades de invalidación de la caché de AEM. Para obtener instrucciones detalladas sobre cómo purgar direcciones URL de caché específicas, consulte [Invalidación de caché de CDN de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
+Cuando es necesario purgar manualmente el contenido almacenado en caché, puede hacerlo usando las capacidades de invalidación de la caché de AEM. Para obtener instrucciones detalladas sobre cómo purgar direcciones URL de caché específicas, consulte [Invalidación de caché de CDN de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
 
 ## Preguntas frecuentes{#faq-cache-management}
 
@@ -108,3 +108,22 @@ El almacenamiento en caché prolongado con invalidación de caché activa impuls
 Para rechazar el almacenamiento en caché prolongado, comuníquese con [Soporte técnico de Adobe](https://helpx.adobe.com/in/contact.html) y proporcione los motivos de su solicitud.
 
 +++
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

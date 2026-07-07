@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo restringir la entrega de recursos 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 0%
+source-wordcount: '1286'
+ht-degree: 5%
 
 ---
 
@@ -55,7 +55,7 @@ El campo está disponible en el formulario de metadatos predeterminado. Si el re
 1. Agregue un campo **[!UICONTROL Date]** de la sección **[!UICONTROL Generar formulario]** en el lado derecho a la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie la etiqueta de campo **[!UICONTROL Field]** a **Tiempo de activación** o **Tiempo de inactividad**.
-   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/onTime_ para el campo **A tiempo** y _./jcr:content/offTime_ para el campo **Tiempo de inactividad**.
+   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/onTime_ para el campo **Tiempo de activación** y _./jcr:content/offTime_ para el campo **Tiempo de inactividad**.
 1. Haga clic en **[!UICONTROL Guardar]**.
 
 Del mismo modo, para la vista de Assets, si el recurso no se basa en el esquema de metadatos predeterminado y los campos Tiempo de activación y Tiempo de inactividad no están disponibles en las propiedades del recurso, ejecute los siguientes pasos:
@@ -64,7 +64,7 @@ Del mismo modo, para la vista de Assets, si el recurso no se basa en el esquema 
 1. Seleccione el formulario de metadatos y haga clic en **[!UICONTROL Editar]**.
 1. Agregue un campo **[!UICONTROL Fecha]** de la sección **[!UICONTROL Componentes]** del panel izquierdo al formulario.
 1. Haga clic en el campo recién agregado y cambie la **[!UICONTROL Etiqueta]** a **Tiempo de activación** o **Tiempo de inactividad**.
-1. Actualizar la **[!UICONTROL propiedad de metadatos]** a _./jcr:content/onTime_ para el campo **A tiempo** y _./jcr:content/offTime_ para el campo **Tiempo de inactividad**.
+1. Actualice la propiedad de metadatos **[!UICONTROL Metadata]** a _./jcr:content/onTime_ para el campo **Tiempo de activación** y _./jcr:content/offTime_ para el campo **Tiempo de inactividad**.
 1. Haga clic en **[!UICONTROL Guardar]**.
 
 
@@ -83,8 +83,8 @@ En los servicios de creación de AEM Cloud Service, así como en el Selector de 
 >Para obtener más información sobre cómo habilitar la autenticación IMS en integraciones basadas en el Selector de recursos de AEM, póngase en contacto con Soporte Enterprise
 
 1. Para las experiencias no basadas en el Selector de recursos, AEM as a Cloud Service y Dynamic Media con capacidades OpenAPI admiten actualmente integraciones de API del lado del servidor y pueden generar tokens de IMS Bearer.
-   * Siga las instrucciones [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) para realizar integraciones de API de servicio a servidor que puedan recuperar los tokens de IMS Bearer mediante [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
-   * Durante un tiempo limitado, se puede generar acceso de desarrollador local (no pensado para casos de uso de producción), tokens de IMS al portador de corta duración para el usuario autenticado en [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) siguiendo las instrucciones [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
+   * Siga las instrucciones [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) para realizar integraciones de API de servicio a servidor que puedan recuperar los tokens de IMS Bearer mediante [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
+   * Durante un tiempo limitado, se puede generar acceso de desarrollador local (no pensado para casos de uso de producción), tokens de IMS al portador de corta duración para el usuario autenticado en [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) siguiendo las instrucciones [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
 
 1. Al realizar solicitudes de API [Search](search-assets-api.md) y [Delivery](deliver-assets-apis.md), agregue el token de IMS Bearer obtenido al encabezado **[!UICONTROL Authorization]** de la solicitud HTTP (asegúrese de que su valor tenga el prefijo **[!UICONTROL Bearer]**).
 
@@ -94,4 +94,24 @@ En los servicios de creación de AEM Cloud Service, así como en el Selector de 
 
 ### Envío de proveedores de identidad personalizados en el servicio de publicación {#delivery-custom-identity-provider}
 
-AEM Sites, AEM Assets y Dynamic Media con licencias OpenAPI se pueden usar juntos, lo que permite una entrega restringida de recursos para configurarlos en sitios web alojados en el servicio de publicación o previsualización de AEM. El flujo de entrega segura aprovecha las cookies del explorador para establecer el acceso del usuario y tener un dominio personalizado para el nivel de entrega que sea subdominio del dominio de publicación es un requisito previo para implementar este caso de uso. Si los servicios de publicación y vista previa de AEM Sites están configurados para usar un [proveedor de identidad personalizado (IdP)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), se debe establecer una nueva cookie denominada `delivery-token` que encapsule la pertenencia al grupo del usuario en el dominio de publicación después de la autenticación del usuario. El nivel de entrega extrae el material de autorización de la cookie segura y valida el acceso. Registre un [ticket de soporte para empresas](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) para obtener más detalles.
+AEM Sites, AEM Assets y Dynamic Media con licencias OpenAPI se pueden usar juntos, lo que permite una entrega restringida de recursos para configurarlos en sitios web alojados en el servicio de publicación o previsualización de AEM. El flujo de entrega segura aprovecha las cookies del explorador para establecer el acceso del usuario y tener un dominio personalizado para el nivel de entrega que sea subdominio del dominio de publicación es un requisito previo para implementar este caso de uso. Si los servicios de publicación y vista previa de AEM Sites están configurados para usar un [proveedor de identidad personalizado (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), se debe establecer una nueva cookie denominada `delivery-token` que encapsule la pertenencia al grupo del usuario en el dominio de publicación después de la autenticación del usuario. El nivel de entrega extrae el material de autorización de la cookie segura y valida el acceso. Registre un [ticket de soporte para empresas](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) para obtener más detalles.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

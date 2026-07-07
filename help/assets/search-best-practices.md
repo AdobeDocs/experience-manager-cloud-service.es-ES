@@ -6,10 +6,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '2533'
-ht-degree: 3%
+source-wordcount: '2628'
+ht-degree: 4%
 
 ---
 
@@ -23,8 +23,7 @@ Este documento de ayuda contiene prácticas recomendadas de búsqueda de AEM con
 
 A continuación se indican los pasos básicos que se deben seguir en Experience Manager antes de comenzar la búsqueda:
 
-* En la **vista de administración**, vaya a Assets > Archivos en Experience Manager y haga clic en el icono de búsqueda en la barra superior. También puede usar una barra diagonal (/) para abrir el campo Omni Search.
-En la **vista de Assets**, la barra de búsqueda se ve en la parte superior y se puede acceder a ella directamente.
+* En la **vista de administración**, vaya a Assets > Archivos en Experience Manager y haga clic en el icono de búsqueda en la barra superior. También puede usar una barra diagonal (/) para abrir el campo Omni Search.En la **vista de Assets**, la barra de búsqueda se ve en la parte superior y se puede acceder a ella directamente.
 * `Location:Assets` y `Path:/content/dam` están preseleccionados para limitar el ámbito de búsqueda a su repositorio de Experience Manager Assets. Si se desplaza a cualquier otra carpeta, `Path:/content/dam/<folder name>` se muestra en el campo Omni Search para limitar el ámbito de búsqueda a la carpeta actual.
 
 ## Búsqueda básica {#basic-search}
@@ -255,8 +254,7 @@ La búsqueda muestra resultados similares si también estás trabajando en la **
 Al realizar la búsqueda en AEM, puede filtrar los resultados mostrando recursos similares a los seleccionados. Puede usar la opción **Buscar similares** para restringir la búsqueda a la coincidencia exacta o similar del recurso buscado. Esto ayuda a encontrar recursos que tienen etiquetas inteligentes similares a las del recurso seleccionado. Por ejemplo, cuando desee buscar recursos similares, ejecute los siguientes pasos:
 
 1. Busque el recurso según sus necesidades.
-1. Pase el ratón sobre el recurso > haga clic en los puntos suspensivos > seleccione [!UICONTROL Buscar similares].
-o
+1. Pase el ratón sobre el recurso > haga clic en los puntos suspensivos > seleccione [!UICONTROL Buscar similares].o
 Seleccione el recurso > vaya a los puntos suspensivos en la parte superior derecha > seleccione [!UICONTROL Buscar similares].
 
    ![Buscar elemento similar](assets/find-similar.png)
@@ -266,12 +264,11 @@ Seleccione el recurso > vaya a los puntos suspensivos en la parte superior derec
 Ejecute los siguientes pasos en **[!UICONTROL Assets view]**:
 
 1. Busque el recurso según sus necesidades.
-1. Seleccione la opción Imagen > Navegar a [!UICONTROL Buscar imagen similar] en la barra de navegación de la parte superior.
-Le lleva a la colección de recursos con colores y metadatos similares.
+1. Seleccione la opción Imagen > Navegar a [!UICONTROL Buscar imagen similar] en la barra de navegación de la parte superior.Le lleva a la colección de recursos con colores y metadatos similares.
 
 ## Facetas de búsqueda personalizadas {#custom-search-facets}
 
-Las facetas de búsqueda en Adobe Experience Manager le permiten buscar recursos de varias formas en lugar de hacerlo de una sola forma predeterminada o por orden taxonómico. Puede personalizar las facetas de búsqueda y agregar predicados según sus necesidades. Lea [Facetas de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=es#) para obtener una guía paso a paso sobre cómo agregar un predicado personalizado.
+Las facetas de búsqueda en Adobe Experience Manager le permiten buscar recursos de varias formas en lugar de hacerlo de una sola forma predeterminada o por orden taxonómico. Puede personalizar las facetas de búsqueda y agregar predicados según sus necesidades. Lea [Facetas de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) para obtener una guía paso a paso sobre cómo agregar un predicado personalizado.
 
 <!--
 **Scenario 10: Search assets based on Sku ID**
@@ -320,9 +317,8 @@ The newly added assets are not indexed.
     </tr>
     <tr>
         <td> Facetas personalizadas </td>
-        <td> Puede agregar <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=es">facetas de búsqueda personalizadas según los requisitos.</td>
-        <td> Las facetas personalizadas se admiten parcialmente en la vista de Assets. Las facetas admitidas son:
-            <ul>
+        <td> Puede agregar <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">facetas de búsqueda personalizadas según los requisitos.</td>
+        <td> Las facetas personalizadas se admiten parcialmente en la vista de Assets. Las facetas admitidas son:<ul>
             <li> Etiquetas previstas
             <li> Nombre
             <li> Confianza de etiquetas prevista
@@ -434,5 +430,25 @@ The newly added assets are not indexed.
 
 >[!MORELIKETHIS]
 >
->* [Buscar recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=es)
->* [Facetas de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=es)
+>* [Buscar recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
+>* [Facetas de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -6,10 +6,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 69%
+source-wordcount: '1046'
+ht-degree: 68%
 
 ---
 
@@ -23,7 +23,7 @@ Para obtener más información sobre las experiencias basadas en personas dispon
 
 ## ¿Cómo acceder a la vista Recursos? {#access-assets-view}
 
-Puede acceder a la vista Recursos de las siguientes maneras:
+Puede acceder a la vista de Assets de las siguientes maneras:
 ![Información general de Mi espacio de trabajo](assets/assets-view.png)
 
 <!--
@@ -133,3 +133,23 @@ Utilice estos vínculos para empezar rápidamente a usar la vista de Assets:
 
 * [Mi espacio de trabajo](/help/assets/my-workspace-assets-view.md)
 * [Introducción a la vista de Assets](/help/assets/get-started-assets-view.md)
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

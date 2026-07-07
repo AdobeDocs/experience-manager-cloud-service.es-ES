@@ -5,10 +5,10 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 2%
+source-wordcount: '2197'
+ht-degree: 3%
 
 ---
 
@@ -39,8 +39,7 @@ En el caso de las imágenes, las etiquetas inteligentes se basan en algún aspec
 Para los recursos basados en vídeo, el etiquetado está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. Al igual que con las etiquetas basadas en imágenes y texto, los vídeos también se etiquetan automáticamente al cargar vídeos nuevos o al volver a procesar los existentes. [!DNL Adobe AI] genera dos conjuntos de etiquetas para un vídeo: un conjunto corresponde a objetos, escenas y atributos de ese vídeo y el otro conjunto se relaciona con acciones como beber, correr y trotar. Compruebe también [exclusión del etiquetado inteligente de vídeos](#opt-out-video-smart-tagging).
 
 * **Recursos basados en texto**
-Para los recursos admitidos, [!DNL Experience Manager] ya extrae el texto, que se indiza y se usa para buscar los recursos. Sin embargo, las etiquetas inteligentes basadas en palabras clave en el texto proporcionan una faceta de búsqueda dedicada, estructurada y de mayor prioridad. Esto último ayuda a mejorar la detección de recursos en comparación con un índice de búsqueda.
-Para los recursos basados en texto, la eficacia de las etiquetas inteligentes no depende de la cantidad de texto del recurso, sino de las palabras clave o entidades relevantes presentes en el texto del recurso.
+Para los recursos admitidos, [!DNL Experience Manager] ya extrae el texto, que se indiza y se usa para buscar los recursos. Sin embargo, las etiquetas inteligentes basadas en palabras clave en el texto proporcionan una faceta de búsqueda dedicada, estructurada y de mayor prioridad. Esto último ayuda a mejorar la detección de recursos en comparación con un índice de búsqueda.Para los recursos basados en texto, la eficacia de las etiquetas inteligentes no depende de la cantidad de texto del recurso, sino de las palabras clave o entidades relevantes presentes en el texto del recurso.
 
   ![Tipos de etiquetas inteligentes](assets/smart-tags-types.png)
 
@@ -89,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets sin etiquetar en DAM {#smart-tag-existing-assets}
 
-Los recursos existentes o anteriores de DAM no se etiquetan automáticamente de forma inteligente. Debe [volver a procesar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=es#adjusting-load) Assets manualmente para poder generarles etiquetas inteligentes. Una vez completado el proceso, vaya a la página [!UICONTROL Propiedades] de cualquier recurso de la carpeta. Las etiquetas agregadas automáticamente se ven en la sección [!UICONTROL Etiquetas inteligentes] de la pestaña [!UICONTROL Básico]. Estas etiquetas inteligentes aplicadas se ordenan en orden descendente de [puntuación de confianza](#confidence-score).
+Los recursos existentes o anteriores de DAM no se etiquetan automáticamente de forma inteligente. Debe [volver a procesar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manualmente para poder generarles etiquetas inteligentes. Una vez completado el proceso, vaya a la página [!UICONTROL Propiedades] de cualquier recurso de la carpeta. Las etiquetas agregadas automáticamente se ven en la sección [!UICONTROL Etiquetas inteligentes] de la pestaña [!UICONTROL Básico]. Estas etiquetas inteligentes aplicadas se ordenan en orden descendente de [puntuación de confianza](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -279,3 +278,23 @@ Las etiquetas inteligentes se generan solo en inglés. Se pueden traducir a otro
 Puede [desactivar el etiquetado inteligente](#opt-out-smart-tagging) siempre que quiera dejar de usarlo.
 
 +++
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

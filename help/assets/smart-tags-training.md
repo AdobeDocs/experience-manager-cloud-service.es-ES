@@ -5,10 +5,10 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 05304c5e-f620-4cca-8cfe-76a6fa2e3f4a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 7%
+source-wordcount: '1572'
+ht-degree: 10%
 
 ---
 
@@ -118,8 +118,7 @@ Asegúrese de que las imágenes del conjunto de formación se ajusten a las sigu
 
 >[!NOTE]
 >
->Puede utilizar las mismas imágenes para entrenar distintos modelos de etiquetas. Sin embargo, no asocie una imagen con más de una etiqueta en un modelo de etiqueta. Es posible etiquetar la misma imagen con diferentes etiquetas que pertenezcan a diferentes modelos de etiquetas.
->No se puede deshacer la formación. Las directrices anteriores deberían ayudarle a elegir buenas imágenes para entrenar.
+>Puede utilizar las mismas imágenes para entrenar distintos modelos de etiquetas. Sin embargo, no asocie una imagen con más de una etiqueta en un modelo de etiqueta. Es posible etiquetar la misma imagen con diferentes etiquetas que pertenezcan a diferentes modelos de etiquetas.No se puede deshacer la formación. Las directrices anteriores deberían ayudarle a elegir buenas imágenes para entrenar.
 
 ## Capacite el modelo para las etiquetas personalizadas {#train-model}
 
@@ -161,8 +160,7 @@ Para comprobar si el servicio Etiquetas inteligentes ha recibido formación sobr
 
 >[!NOTE]
 >
->¿Qué sucede si deseo transferir la formación sobre etiquetas inteligentes de una instancia a otra mediante una exportación?
->No es necesario exportar la formación sobre etiquetas inteligentes si el entorno pertenece a la misma organización de IMS. Se comparte automáticamente. Si el entorno está en varias organizaciones de IMS, no hay forma de compartir o exportar la formación sobre etiquetas inteligentes.
+>¿Qué sucede si deseo transferir la formación sobre etiquetas inteligentes de una instancia a otra mediante una exportación?No es necesario exportar la formación sobre etiquetas inteligentes si el entorno pertenece a la misma organización de IMS. Se comparte automáticamente. Si el entorno está en varias organizaciones de IMS, no hay forma de compartir o exportar la formación sobre etiquetas inteligentes.
 
 ## Limitaciones y prácticas recomendadas relacionadas con las etiquetas inteligentes {#limitations-smart-tags-training}
 
@@ -172,5 +170,24 @@ Para comprobar si el servicio Etiquetas inteligentes ha recibido formación sobr
 
 >[!NOTE]
 >
->La capacidad de las etiquetas inteligentes para aprender sobre sus etiquetas y aplicarlas en otras imágenes depende de la calidad de las imágenes que utilice para la formación.
->Para obtener los mejores resultados, Adobe recomienda utilizar imágenes visualmente similares para entrenar el servicio para cada etiqueta.
+>La capacidad de las etiquetas inteligentes para aprender sobre sus etiquetas y aplicarlas en otras imágenes depende de la calidad de las imágenes que utilice para la formación.Para obtener los mejores resultados, Adobe recomienda utilizar imágenes visualmente similares para entrenar el servicio para cada etiqueta.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

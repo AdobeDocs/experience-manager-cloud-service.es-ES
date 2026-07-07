@@ -3,10 +3,10 @@ title: Aprobación de recursos para Content Hub
 description: Obtenga información sobre cómo aprobar recursos en Assets as a Cloud Service para que estén disponibles en Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 11%
+source-wordcount: '1807'
+ht-degree: 14%
 
 ---
 
@@ -110,7 +110,7 @@ La siguiente tabla ilustra los requisitos previos para la visualización de la l
 Después de cambiar de la vista de Assets a la vista de Administración, puede establecer la configuración de la carpeta para que todos los recursos nuevos agregados a la carpeta se aprueben automáticamente.
 
 Puede cambiar entre las vistas Administración y Assets de las siguientes maneras:
-![Información general de Mi Workspace](assets/assets-view.png)
+![Información general de Mi espacio de trabajo](assets/assets-view.png)
 
 Siga estos pasos para automatizar la aprobación de los recursos recién ingeridos en [!DNL Experience Manager Admin view]:
 
@@ -118,17 +118,17 @@ Siga estos pasos para automatizar la aprobación de los recursos recién ingerid
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]**.
 1. Haga clic en **[!UICONTROL Crear]** en la parte superior derecha de la página.
 1. Agregue un título de perfil y haga clic en **[!UICONTROL Crear]**. El perfil de metadatos se ha creado correctamente.
-1. Seleccione el perfil de metadatos recién creado y haga clic en **[!UICONTROL Editar _(e)_]**. <br>El formulario **[!UICONTROL Editar perfil de metadatos]**&#x200B;se abre con la ficha **[!UICONTROL Básico]**&#x200B;resaltada.
+1. Seleccione el perfil de metadatos recién creado y haga clic en **[!UICONTROL Editar _(e)_]**. <br>El formulario **[!UICONTROL Editar perfil de metadatos]**se abre con la ficha **[!UICONTROL Básico]**resaltada.
 1. Arrastre y suelte un **[!UICONTROL campo de texto de una sola línea]** desde la sección **[!UICONTROL Generar formulario]** a la derecha de la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie **[!UICONTROL Etiqueta de campo]** por _Assets aprobado_.
-   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam :status_.
+   1. Actualice **[!UICONTROL Map a property]** a _./jcr:content/metadata/dam :status_.
    1. Cambie el valor predeterminado a _aprobado_.
 
 1. De forma similar al paso 6, arrastre un **[!UICONTROL campo de texto de una sola línea]** desde la sección **[!UICONTROL Generar formulario]** a la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en el panel **[!UICONTROL Configuración]**:
    1. Cambie **[!UICONTROL Etiqueta de campo]** a _Destino de activación_.
-   1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam :activationTarget_.
+   1. Actualice **[!UICONTROL Map a property]** a _./jcr:content/metadata/dam :activationTarget_.
    1. Cambie el valor predeterminado a _contenthub_.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
@@ -188,8 +188,27 @@ Si falta el campo **Destino de aprobación** en la página de detalles del recur
 
 ### ¿Cómo se puede automatizar la aprobación de los recursos recién ingeridos en la vista de administración de AEM Assets?
 
-Cree una carpeta en el entorno de creación, vaya a **Herramientas** > **Assets** > **Perfiles de metadatos**, y cree y edite un perfil de metadatos. Agregue un campo de texto de una sola línea, etiquete **Aprobado por Assets** y asígnelo a &#39;./jcr:content/metadata/dam:status&#39; y establezca su valor predeterminado en `approved`. Aplicar el perfil de metadatos a la carpeta. Esto aprueba automáticamente los nuevos recursos agregados a la carpeta.
+Cree una carpeta en el entorno de creación, vaya a **Herramientas** > **Assets** > **Perfiles de metadatos**, y cree y edite un perfil de metadatos. Agregue un campo de texto de una sola línea, etiquete **Assets aprobado**, asígnelo a &#39;./jcr:content/metadata/dam:status&#39; y establezca su valor predeterminado en `approved`. Aplicar el perfil de metadatos a la carpeta. Esto aprueba automáticamente los nuevos recursos agregados a la carpeta.
 
 ### ¿Quién puede acceder a los recursos aprobados en AEM Assets Content Hub y qué controles existen?
 
 Los recursos aprobados están disponibles para los usuarios que forman parte de la misma organización en AEM Assets Content Hub. Los estrictos controles garantizan que solo se pueda acceder a las versiones más recientes y aprobadas, lo que ayuda a mantener la coherencia y seguridad de la marca.
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

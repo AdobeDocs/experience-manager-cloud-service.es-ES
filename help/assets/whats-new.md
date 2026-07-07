@@ -4,10 +4,10 @@ description: Obtenga más información sobre algunas de las funciones de Content
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 55%
+source-wordcount: '1646'
+ht-degree: 56%
 
 ---
 
@@ -37,14 +37,14 @@ Por ejemplo, una búsqueda de `Woman drinking coffee` también puede devolver re
 
 Los administradores pueden habilitar o deshabilitar la Búsqueda por IA en Content Hub mediante el menú Configuraciones, seleccionando Búsqueda por IA o búsqueda de palabras clave tradicional.
 
-[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#ai-search-aem-assets-content-hub"}
+[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#ai-search-aem-assets-content-hub"}
 
 
 **Opciones de ordenación personalizadas**
 
 Content Hub ahora permite a los administradores habilitar campos de metadatos personalizados como opciones de ordenación en la página de inicio de Content Hub. Además de las opciones de ordenación predeterminadas Tamaño, Modificado, Nombre y Relevancia, los administradores pueden configurar campos de metadatos específicos de la empresa como Canal, Región, SKU o Campaña para ayudar a los usuarios a organizar los resultados de búsqueda de forma más eficaz.
 
-[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#configure-sorting-aem-assets-content-hub"}
+[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#configure-sorting-aem-assets-content-hub"}
 
 **Compatibilidad con eventos de descarga y búsqueda de recursos para las API de envío**
 
@@ -69,7 +69,7 @@ En Content Hub, el agente de control de AEM garantiza que solo las personas adec
 
 ![Información general sobre administración de permisos](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## Funciones de la versión de octubre de 2025 {#october-2025-release-features}
@@ -90,7 +90,7 @@ Ahora puede marcar colecciones como Favoritos en Content Hub, lo que facilita su
 
 Los administradores de Content Hub ahora pueden anclar colecciones en Content Hub para acceder rápidamente a ellas. Las colecciones ancladas se muestran en una sección **[!UICONTROL Anclada]** específica de la página principal de Colecciones, lo que facilita mantener las colecciones importantes a mano.
 
-[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 ## Funciones de la versión de agosto de 2025 {#august-release-features}
 
@@ -189,3 +189,23 @@ Acceda a todas las representaciones de ajustes preestablecidos y recortes inteli
 ![Representaciones de medios dinámicos](/help/assets/assets/dm-renditions-content-hub.png)
 
 [!BADGE Profundización en esta función]{type=Informative url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

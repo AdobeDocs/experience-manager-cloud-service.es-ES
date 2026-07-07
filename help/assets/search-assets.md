@@ -7,9 +7,9 @@ feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Pro
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
-source-wordcount: '6103'
+source-wordcount: '6119'
 ht-degree: 7%
 
 ---
@@ -54,20 +54,9 @@ Familiarícese con la interfaz de búsqueda de recursos y las acciones disponibl
 ![Comprender la interfaz de resultados de búsqueda de Experience Manager Assets](assets/aem-search-interface.png)
 *Figura: Comprenda la interfaz de resultados de búsqueda de [!DNL Experience Manager Assets].*
 
-**A.** Guardar búsqueda como una colección inteligente.
-**B.** Filtros o predicados para reducir los resultados de búsqueda.
-**C.** Muestra archivos, carpetas o ambos.
-**D.** La ubicación de búsqueda es DAM.
-**E.** Accede A Búsquedas Guardadas.
-**F.** Haga clic en Filtros para abrir o cerrar el carril izquierdo.
-**G.** Muestra Assets como búsqueda predeterminada.
-**H.** La ubicación de búsqueda es DAM.
-**I.** campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario.
-**J.** Seleccione los resultados de búsqueda cargados.
-**K.** Ordenar por Creado, Modificado, Nombre, Ninguno.
-**L.** Ordenar de forma ascendente o descendente.
-**M.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **N.** Cierre la búsqueda.
-**O.** Cambiar entre la vista de tarjeta y la vista de lista.
+**A.** Guardar búsqueda como una colección inteligente.**B.** Filtros o predicados para reducir los resultados de búsqueda.**C.** Muestra archivos, carpetas o ambos.**D.** La ubicación de búsqueda es DAM.
+**E.** Accede A Búsquedas Guardadas.**F.** Haga clic en Filtros para abrir o cerrar el carril izquierdo.**G.** Muestra Assets como búsqueda predeterminada.**H.** La ubicación de búsqueda es DAM.
+**I.** campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario.**J.** Seleccione los resultados de búsqueda cargados.**K.** Ordenar por Creado, Modificado, Nombre, Ninguno.**L.** Ordenar de forma ascendente o descendente.**M.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **N.** Cierre la búsqueda.**O.** Cambiar entre la vista de tarjeta y la vista de lista.
 
 ### Facetas de búsqueda dinámica {#dynamicfacets}
 
@@ -148,9 +137,9 @@ Puede mejorar la relevancia de las palabras clave para recursos concretos para a
 1. En el cuadro **[!UICONTROL Buscar en promoción]**, especifique una palabra clave para la que desee aumentar la búsqueda de la imagen y, a continuación, haga clic en **[!UICONTROL Agregar]**. Puede especificar varias palabras clave del mismo modo.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**. El recurso que promocionó para esta palabra clave aparece entre los resultados de búsqueda principales.
 
-Puede utilizarlo para su ventaja al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [buscar en [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=es).
+Puede utilizarlo para su ventaja al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [buscar en [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410335/?captions=spa&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vídeo: comprenda cómo se clasifican los resultados de búsqueda y cómo se puede influir en la clasificación.*
 
@@ -251,15 +240,15 @@ Estos son algunos ejemplos de formatos de búsqueda para consultas complejas:
 
 ### Buscar recursos desde el panel Adobe Asset Link {#aal}
 
-Con Adobe Asset Link, los profesionales creativos ahora pueden acceder al contenido almacenado en [!DNL Experience Manager Assets], sin salir de las aplicaciones de Adobe Creative Cloud compatibles. Los creativos pueden examinar, buscar, extraer y registrar recursos sin problemas mediante el panel en la aplicación de las aplicaciones [!DNL Adobe Creative Cloud]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] y [!DNL Adobe InDesign]. Asset Link también permite a los usuarios buscar visualmente resultados similares. Los resultados de la visualización de búsqueda visual utilizan algoritmos de aprendizaje automático de Adobe AI para ayudar a los usuarios a encontrar imágenes estéticamente similares. Consulte [buscar y examinar recursos](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante Adobe Asset Link.
+Con Adobe Asset Link, los profesionales creativos ahora pueden acceder al contenido almacenado en [!DNL Experience Manager Assets], sin salir de las aplicaciones de Adobe Creative Cloud compatibles. Los creativos pueden examinar, buscar, extraer y registrar recursos sin problemas mediante el panel en la aplicación de las aplicaciones [!DNL Adobe Creative Cloud]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] y [!DNL Adobe InDesign]. Asset Link también permite a los usuarios buscar visualmente resultados similares. Los resultados de la visualización de búsqueda visual utilizan algoritmos de aprendizaje automático de Adobe AI para ayudar a los usuarios a encontrar imágenes estéticamente similares. Consulte [buscar y examinar recursos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante Adobe Asset Link.
 
 ### Buscar recursos en la aplicación de escritorio [!DNL Experience Manager] {#desktop-app}
 
-Los profesionales de Creative usan la aplicación de escritorio para que [!DNL Experience Manager Assets] sea fácil de buscar y esté disponible en el escritorio local (Win o Mac). Los creativos pueden mostrar fácilmente los recursos deseados en Mac Finder o Windows Explorer, abrirlos en aplicaciones de escritorio y cambiarlos localmente: los cambios se vuelven a guardar en [!DNL Experience Manager] con una nueva versión creada en el repositorio. La aplicación admite búsquedas básicas utilizando una o más palabras clave, caracteres comodín `*` y `?`, y el operador `AND`. Ver [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#browse-search-preview-assets) en la aplicación de escritorio.
+Los profesionales de Creative usan la aplicación de escritorio para que [!DNL Experience Manager Assets] sea fácil de buscar y esté disponible en el escritorio local (Win o Mac). Los creativos pueden mostrar fácilmente los recursos deseados en Mac Finder o Windows Explorer, abrirlos en aplicaciones de escritorio y cambiarlos localmente: los cambios se vuelven a guardar en [!DNL Experience Manager] con una nueva versión creada en el repositorio. La aplicación admite búsquedas básicas utilizando una o más palabras clave, caracteres comodín `*` y `?`, y el operador `AND`. Ver [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en la aplicación de escritorio.
 
 ### Búsqueda de recursos en [!DNL Brand Portal] {#brand-portal}
 
-Los usuarios y especialistas en marketing de la línea de negocios utilizan Brand Portal para compartir de forma eficiente y segura los recursos digitales aprobados con sus equipos internos ampliados, socios y distribuidores. Ver [buscar recursos en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=es).
+Los usuarios y especialistas en marketing de la línea de negocios utilizan Brand Portal para compartir de forma eficiente y segura los recursos digitales aprobados con sus equipos internos ampliados, socios y distribuidores. Ver [buscar recursos en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
 ### Buscar [!DNL Adobe Stock] imágenes {#adobe-stock1}
 
@@ -538,20 +527,24 @@ Vaya a la ubicación de la carpeta para los recursos mostrados en los resultados
 
 **Consulte también**
 
-* [Prácticas recomendadas de búsqueda](search-best-practices.md)
-* [Traducir recursos](translate-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] guía de implementación de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=es)
->* [Configuración avanzada para mejorar los resultados de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=es)
+>* [[!DNL Experience Manager] guía de implementación de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [Configuración avanzada para mejorar los resultados de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+
