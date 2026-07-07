@@ -108,10 +108,10 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
 1. Vaya a la carpeta en la que aplicó el esquema de metadatos y abra la página de propiedades de un recurso. Según su elección en el campo Tipo de recurso, se muestran los campos de metadatos en cascada correspondientes.
 
-   ![Metadatos en cascada para el recurso de vídeo
+   !&lbrack;Metadatos en cascada para el recurso de vídeo
    *Figura: Metadatos en cascada para el recurso de vídeo*
 
-   ![Metadatos en cascada para el recurso de documento
+   !&lbrack;Metadatos en cascada para el recurso de documento
    *Figura: Metadatos en cascada para el recurso de documento*
 
 **Consulte también**
