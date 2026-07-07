@@ -5,10 +5,10 @@ role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 7822732b-e2b9-4b35-b92b-cb7b31d84489
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 0%
+source-wordcount: '1627'
+ht-degree: 7%
 
 ---
 
@@ -57,8 +57,7 @@ Después de crear [!DNL Image Presets], puede usarlos para los siguientes flujos
 
 #### Usar ajustes preestablecidos en la URL de entrega de imágenes{#use-presets-in-delivery-urls}
 
-Los ajustes preestablecidos hacen que las direcciones URL de envío sean más cortas y fáciles de usar.  Cada nombre de ajuste preestablecido sirve como identificador único en la dirección URL de envío. En lugar de añadir varios modificadores a la URL de entrega de un recurso, haga referencia al nombre del ajuste preestablecido para generar su representación instantáneamente. [Aprenda a aplicar ajustes preestablecidos de imagen de Dynamic Media a su imagen](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).
-En el siguiente ejemplo se compara una dirección URL con un ajuste preestablecido y una dirección URL sin un ajuste preestablecido.
+Los ajustes preestablecidos hacen que las direcciones URL de envío sean más cortas y fáciles de usar.  Cada nombre de ajuste preestablecido sirve como identificador único en la dirección URL de envío. En lugar de añadir varios modificadores a la URL de entrega de un recurso, haga referencia al nombre del ajuste preestablecido para generar su representación instantáneamente. [Aprenda a aplicar ajustes preestablecidos de imagen de Dynamic Media a su imagen](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).En el siguiente ejemplo se compara una dirección URL con un ajuste preestablecido y una dirección URL sin un ajuste preestablecido.
 
 **URL sin ajuste preestablecido (URL larga)**:
 
@@ -76,8 +75,7 @@ La miniatura preestablecida agrupa la misma configuración de modificador de ima
 
 #### Uso de ajustes preestablecidos durante la creación en AEM Sites{#use-presets-during-authoring-in-aem-sites}
 
-Los autores pueden seleccionar [!DNL Image Presets] durante la edición de la página en la página de creación de [!DNL AEM Sites] cuando se habilita la compatibilidad con [!DNL Dynamic Media].
-Siga estos pasos para utilizar los ajustes preestablecidos de imagen en la página de creación:
+Los autores pueden seleccionar [!DNL Image Presets] durante la edición de la página en la página de creación de [!DNL AEM Sites] cuando se habilita la compatibilidad con [!DNL Dynamic Media].Siga estos pasos para utilizar los ajustes preestablecidos de imagen en la página de creación:
 
 1. Vaya a la página de creación de Sites.
 1. Ejecute los pasos de [Acceder a recursos remotos en la sección Editor de páginas de AEM](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) para usar el panel [!DNL Asset Selector] y seleccionar un recurso.
@@ -130,3 +128,23 @@ El parámetro quality prioriza la calidad de la imagen sobre la velocidad de car
 #### Parámetro de máxima calidad{#max-quality-parameter}
 
 La calidad máxima equilibra la calidad de imagen y el tiempo de carga en función de la velocidad de red del cliente. Prioriza los tiempos de carga más rápidos al reducir la calidad de imagen en redes más lentas, al tiempo que sigue ofreciendo la máxima calidad posible (1-100) para las condiciones de red dadas. Obtenga más información acerca del [parámetro de máxima calidad](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

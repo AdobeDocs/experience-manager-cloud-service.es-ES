@@ -1,16 +1,16 @@
 ---
 title: Administración de metadatos de recursos digitales
-description: Obtenga información acerca de los tipos de metadatos y cómo  [!DNL Adobe Experience Manager Assets] ayuda a administrar los metadatos de los recursos para facilitar su categorización y organización. [!DNL Experience Manager]  permite organizar y procesar recursos automáticamente según sus metadatos.
+description: Obtenga información acerca de los tipos de metadatos y cómo  [!DNL Adobe Experience Manager Assets] ayuda a administrar los metadatos de los recursos para facilitar la categorización y organización de los recursos. [!DNL Experience Manager] permite organizar y procesar los recursos automáticamente en función de sus metadatos.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management, Metadata
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 9%
+source-wordcount: '2012'
+ht-degree: 13%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 9%
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
-[!DNL Adobe Experience Manager Assets] guarda los metadatos de cada recurso. Permite una categorización y organización más sencillas de los recursos y ayuda a las personas que buscan un recurso específico. Con la capacidad de extraer metadatos de archivos cargados a [!DNL Experience Manager Assets], la administración de metadatos se integra con el flujo de trabajo creativo. Con la capacidad de mantener y administrar metadatos con sus recursos, puede organizar y procesar recursos automáticamente en función de sus metadatos.
+[!DNL Adobe Experience Manager Assets] guarda los metadatos de cada recurso. Esto facilita la categorización y organización de los recursos y ayuda al buscar un recurso específico. Con la capacidad de extraer metadatos de archivos cargados a [!DNL Experience Manager Assets], la administración de metadatos se integra con el flujo de trabajo creativo. Con la capacidad de mantener y administrar metadatos con sus recursos, puede organizar y procesar recursos automáticamente en función de sus metadatos.
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -29,7 +29,7 @@ ht-degree: 9%
 
 ## Por qué necesitamos los metadatos {#why-metadata}
 
-Los metadatos son datos sobre datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo, una imagen. Los metadatos son esenciales para una administración eficaz de los recursos.
+Los metadatos son datos sobre datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo, una imagen. Los metadatos son esenciales para una administración eficiente de los recursos.
 
 Los metadatos son la recopilación de todos los datos disponibles para un recurso, pero que no están necesariamente contenidos en esa imagen. Algunos ejemplos de metadatos son los siguientes:
 
@@ -288,20 +288,24 @@ La creación de flujos de trabajo impulsados por metadatos le ayuda a automatiza
 
 **Consulte también**
 
-* [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Metadatos XMP](xmp-metadata.md)
 >* [Cómo editar o agregar metadatos](meta-edit.md)
+

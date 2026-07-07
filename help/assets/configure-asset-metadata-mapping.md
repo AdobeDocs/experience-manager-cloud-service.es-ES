@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 5%
+source-wordcount: '1055'
+ht-degree: 6%
 
 ---
 
@@ -91,8 +91,7 @@ Para configurar la asignación de metadatos mediante un nuevo formulario de meta
 
    1. Especifique `Project Name` en el campo **[!UICONTROL Etiqueta de campo]**.
 
-   1. Especifique `./jcr:content/metadata/wm:projectName` en el campo **[!UICONTROL Asignar a propiedad]**. Como guía, utilice la siguiente plantilla para definir las asignaciones de campos en Experience Manager Assets:
-      `./jcr:content/metadata/<mapping defined for the field in workfront>`.
+   1. Especifique `./jcr:content/metadata/wm:projectName` en el campo **[!UICONTROL Asignar a propiedad]**. Como guía, utilice la siguiente plantilla para definir las asignaciones de campos en Experience Manager Assets:      `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Al configurar asignaciones en Workfront, ha asignado el campo `wm:projectName` de Experience Manager Assets al campo Proyecto > Nombre de Workfront.
 
@@ -104,15 +103,13 @@ Para configurar la asignación de metadatos mediante un nuevo formulario de meta
 
    1. Especifique `Document Name` en el campo **[!UICONTROL Etiqueta de campo]**.
 
-   1. Especifique `./jcr:content/metadata/wm:documentName` en el campo **[!UICONTROL Asignar a propiedad]**.
-Al configurar asignaciones en Workfront, ha asignado el campo `wm:documentName` de Experience Manager Assets al campo Documento > Nombre de Workfront.
+   1. Especifique `./jcr:content/metadata/wm:documentName` en el campo **[!UICONTROL Asignar a propiedad]**.Al configurar asignaciones en Workfront, ha asignado el campo `wm:documentName` de Experience Manager Assets al campo Documento > Nombre de Workfront.
 
 1. Haga clic en la ficha **[!UICONTROL Generar formulario]** y arrastre el componente **[!UICONTROL Texto multilínea]** al formulario. Haga clic en el componente en el formulario. En la ficha **[!UICONTROL Generar formulario]**:
 
    1. Especifique `Document Description` en el campo **[!UICONTROL Etiqueta de campo]**.
 
-   1. Especifique `./jcr:content/metadata/dc:description` en el campo **[!UICONTROL Asignar a propiedad]**.
-Al configurar asignaciones en Workfront, ha asignado el campo `dc:description` de Experience Manager Assets al campo Documento > Descripción de Workfront.
+   1. Especifique `./jcr:content/metadata/dc:description` en el campo **[!UICONTROL Asignar a propiedad]**.Al configurar asignaciones en Workfront, ha asignado el campo `dc:description` de Experience Manager Assets al campo Documento > Descripción de Workfront.
 
 1. Haga clic en **[!UICONTROL Guardar]** para guardar los cambios.
 
@@ -134,16 +131,19 @@ Puede navegar a la imagen en Experience Manager Assets y ver los metadatos asoci
 
 **Consulte también**
 
-* [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

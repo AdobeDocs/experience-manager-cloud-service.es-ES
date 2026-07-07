@@ -6,7 +6,7 @@ exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 67%
@@ -34,3 +34,4 @@ Puede ver la representación JSON del fragmento actual. Por ejemplo:
 <!--
 **Copy URL** lets you copy to clipboard the URL for either author or publish.
 -->
+

@@ -6,9 +6,9 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '525'
 ht-degree: 13%
 
 ---
@@ -30,8 +30,7 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 
 1. En la interfaz de usuario [!DNL Assets], seleccione el recurso que desea desproteger. También puede seleccionar varios recursos para extraerlos.
 
-1. En la barra de herramientas, haga clic en **[!UICONTROL Finalizar compra]**. La opción **[!UICONTROL Finalizar compra]** cambia a **[!UICONTROL Registrar]**.
-Para comprobar si otros usuarios pueden editar el recurso que ha desprotegido, inicie sesión con otro usuario. El icono ![bloqueo de cierre de compra](assets/do-not-localize/checkout_lock.png) se muestra en la miniatura del recurso que ha retirado.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Finalizar compra]**. La opción **[!UICONTROL Finalizar compra]** cambia a **[!UICONTROL Registrar]**.Para comprobar si otros usuarios pueden editar el recurso que ha desprotegido, inicie sesión con otro usuario. El icono ![bloqueo de cierre de compra](assets/do-not-localize/checkout_lock.png) se muestra en la miniatura del recurso que ha retirado.
 
    ![icono de cierre de compra en la vista de tarjeta](assets/checkout-icon-card-view.png)
 
@@ -64,21 +63,24 @@ Los administradores pueden proteger los recursos que han desprotegido otros usua
 
 **Consulte también**
 
-* [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Comprenda cómo registrar y desproteger en [!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es#how-app-works2)
 >* [Tutorial de vídeo para comprender el registro y la salida en [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html?lang=es)
+

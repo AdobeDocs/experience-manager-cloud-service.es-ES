@@ -1,14 +1,14 @@
 ---
-title: Interfaz de usuario [!DNL Assets view]
+title: Interfaz de usuario de [!DNL Assets view]
 description: Explicación de la interfaz de usuario de y la navegación en [!DNL Assets view].
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 73%
+source-wordcount: '1066'
+ht-degree: 75%
 
 ---
 
@@ -32,8 +32,7 @@ Al iniciar sesión en [!DNL Assets view], verá la siguiente interfaz.
 
 ## Examen y visualización de recursos y carpetas {#browse-repository}
 
-Puede examinar las carpetas desde la interfaz de usuario principal o desde la barra lateral izquierda. Experience Manager Assets muestra vistas previas visuales del contenido de la carpeta en la miniatura de la carpeta al examinar o buscar contenido. Esto mejora la capacidad de detección de recursos disponibles en el repositorio de AEM Assets. Esta miniatura de carpeta le ahorra el tiempo empleado en buscar recursos específicos dentro de una carpeta en el repositorio de AEM Assets.
-Al buscar recursos en una carpeta, puede utilizar la interfaz para ver las miniaturas de los recursos y examinar visualmente el repositorio o ver los detalles de los recursos para encontrar rápidamente el que desee. Las opciones disponibles en la barra lateral izquierda son las siguientes:
+Puede examinar las carpetas desde la interfaz de usuario principal o desde la barra lateral izquierda. Experience Manager Assets muestra vistas previas visuales del contenido de la carpeta en la miniatura de la carpeta al examinar o buscar contenido. Esto mejora la capacidad de detección de recursos disponibles en el repositorio de AEM Assets. Esta miniatura de carpeta le ahorra el tiempo empleado en buscar recursos específicos dentro de una carpeta en el repositorio de AEM Assets.Al buscar recursos en una carpeta, puede utilizar la interfaz para ver las miniaturas de los recursos y examinar visualmente el repositorio o ver los detalles de los recursos para encontrar rápidamente el que desee. Las opciones disponibles en la barra lateral izquierda son las siguientes:
 
 * [Mi espacio de trabajo](/help/assets/my-workspace-assets-view.md): Assets ahora incluye un espacio de trabajo personalizable que proporciona utilidades para acceder fácilmente a las áreas clave de la interfaz de usuario de Assets y a la información más relevante para usted. Esta página sirve como solución integral para proporcionar información general sobre los elementos de trabajo y un acceso rápido a los flujos de trabajo clave. Un acceso más práctico a estas opciones aumenta su eficacia y velocidad de contenido.
 * [Tareas](/help/assets/my-workspace-assets-view.md): Puede ver las tareas asignadas en la pestaña de **Mis tareas**. Por su parte, las tareas que crea puede verse en la pestaña de **Tareas asignadas**. Además, las tareas que complete se encuentran en la ficha **Tareas completadas**.
@@ -106,3 +105,23 @@ Other use cases after previewing.
 >[!MORELIKETHIS]
 >
 >* [Vea las versiones de un recurso](/help/assets/manage-organize-assets-view.md#view-versions).
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

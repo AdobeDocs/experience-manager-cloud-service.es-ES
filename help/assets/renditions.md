@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: ae834c77b2f2a12cac3dde132a2357d72353cb55
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 1%
+source-wordcount: '779'
+ht-degree: 8%
 
 ---
 
@@ -22,8 +22,7 @@ Las representaciones se clasifican como estáticas y dinámicas; cada tipo prese
 
 ## Representaciones estáticas {#static-renditions}
 
-Las representaciones estáticas son versiones generadas previamente de recursos digitales, que generalmente se crean durante la ingesta o modificación de recursos. Estas representaciones están optimizadas para propósitos y plataformas específicos, como miniaturas web, formatos compatibles con dispositivos móviles para un diseño interactivo o versiones de alta resolución para la impresión, lo que garantiza una experiencia eficiente y coherente.
-Obtenga información sobre cómo [ver y descargar representaciones estáticas](#view-and-download-static-renditions) en Experience Manager Assets.
+Las representaciones estáticas son versiones generadas previamente de recursos digitales, que generalmente se crean durante la ingesta o modificación de recursos. Estas representaciones están optimizadas para propósitos y plataformas específicos, como miniaturas web, formatos compatibles con dispositivos móviles para un diseño interactivo o versiones de alta resolución para la impresión, lo que garantiza una experiencia eficiente y coherente.Obtenga información sobre cómo [ver y descargar representaciones estáticas](#view-and-download-static-renditions) en Experience Manager Assets.
 
 ### Ver y descargar representaciones estáticas{#view-and-download-static-renditions}
 
@@ -37,8 +36,7 @@ Para ver las representaciones de recursos y descargarlas, siga estos pasos:
 
 ## Representaciones dinámicas {#dynamic-renditions}
 
-Las representaciones dinámicas son versiones personalizadas de recursos creados en tiempo real para satisfacer necesidades específicas, como cambiar el tamaño de las imágenes en función de la resolución del dispositivo o recortarlas para adaptarlas a diferentes relaciones de aspecto.
-Estas representaciones permiten a las organizaciones ofrecer experiencias personalizadas y optimizadas para diversas necesidades de audiencia. Puede ver y descargar representaciones dinámicas en Experience Manager Assets.
+Las representaciones dinámicas son versiones personalizadas de recursos creados en tiempo real para satisfacer necesidades específicas, como cambiar el tamaño de las imágenes en función de la resolución del dispositivo o recortarlas para adaptarlas a diferentes relaciones de aspecto.Estas representaciones permiten a las organizaciones ofrecer experiencias personalizadas y optimizadas a las diversas necesidades del público. Puede ver y descargar representaciones dinámicas en Experience Manager Assets.
 
 ## Representaciones de Dynamic Media {#dynamic-media-renditions}
 
@@ -88,10 +86,28 @@ Para ver o descargar representaciones dinámicas de imágenes en Experience Mana
 ### Ver representaciones de Dynamic Media con capacidades de OpenAPI {#view-download-dm-with-openapi-renditions}
 
 1. Seleccione el recurso y haga clic en **Detalles**.
-1. Haga clic en el icono Dynamic Media disponible en el panel derecho. El panel Dynamic Media muestra las representaciones base, las representaciones dinámicas y las representaciones de recorte inteligente para los tipos de recursos admitidos, según corresponda.
-   ![icono de descarga](/help/assets/assets/new-new1.png)
+1. Haga clic en el icono Dynamic Media disponible en el panel derecho. El panel Dynamic Media muestra las representaciones base, las representaciones dinámicas y las representaciones de recorte inteligente para los tipos de recursos admitidos, según corresponda.   ![icono de descarga](/help/assets/assets/new-new1.png)
 1. Seleccione **Representación base** y haga clic en **Copiar URL** para copiar la URL de entrega del recurso o haga clic en **Descargar representación** para descargar el recurso.
 
 Si las capacidades Scene7 (Dynamic Media) y Dynamic Media con OpenAPI están habilitadas para el repositorio, hay una opción de alternancia disponible en la interfaz de usuario para cambiar entre las dos. Las representaciones mostradas y las direcciones URL generadas se actualizan en función de la configuración seleccionada.
 
 ![opción de alternar](/help/assets/assets/new-new2.png)
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -5,10 +5,10 @@ role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 1%
+source-wordcount: '1469'
+ht-degree: 4%
 
 ---
 
@@ -31,8 +31,7 @@ En función de los distintos aspectos de los datos, los metadatos se clasifican 
 
 ### Metadatos técnicos
 
-Los metadatos técnicos comprenden los aspectos técnicos de un recurso. Este tipo de metadatos es crucial para que los usuarios comprendan las características inherentes de los recursos digitales, lo que facilita un procesamiento y una utilización eficientes.
-Incluye detalles como:
+Los metadatos técnicos comprenden los aspectos técnicos de un recurso. Este tipo de metadatos es crucial para que los usuarios comprendan las características inherentes de los recursos digitales, lo que facilita un procesamiento y una utilización eficientes.Incluye detalles como:
 
 * Tamaño del archivo
 * Formato
@@ -89,8 +88,7 @@ Para garantizar resultados coherentes en todo el repositorio, planifique cuidado
 
 ### Creación de un plan de gobernanza de metadatos
 
-La gobernanza de datos garantiza que los esfuerzos de administración de metadatos de la organización estén alineados con los objetivos empresariales generales.
-La estrategia de gobernanza puede incluir:
+La gobernanza de datos garantiza que los esfuerzos de administración de metadatos de la organización estén alineados con los objetivos empresariales generales.La estrategia de gobernanza puede incluir:
 
 * Establecer políticas y procedimientos para la gestión de datos y metadatos.
 * Establecer estándares para la calidad y la integridad de los datos.
@@ -118,8 +116,7 @@ Estas son algunas de las prácticas recomendadas a seguir:
 
   Por ejemplo, use términos como *product_launch* o *event_promotion* de forma consistente al etiquetar imágenes con temas para mantener una secuencia sistemática.
 
-* **Mantener la precisión y la integridad:** Para mantener la coherencia, la precisión, la integridad y la alineación de los metadatos en varios orígenes son cruciales.
-Por ejemplo, al agregar metadatos a un documento de PDF, compruebe que detalles como los nombres de autor y las palabras clave sean precisos y completos.
+* **Mantener la precisión y la integridad:** Para mantener la coherencia, la precisión, la integridad y la alineación de los metadatos en varios orígenes son cruciales.Por ejemplo, al agregar metadatos a un documento de PDF, compruebe que detalles como los nombres de autor y las palabras clave sean precisos y completos.
 
 #### Vídeo: Añadir metadatos masivos a los recursos
 
@@ -136,10 +133,8 @@ Puede tener en cuenta las siguientes prácticas recomendadas para optimizar la b
    1. Vaya a **[!UICONTROL Assets]** > **[!UICONTROL Archivo]** > **[!UICONTROL [Carpeta de recursos]]**.
    1. Seleccione el recurso cuyos metadatos desea actualizar y, a continuación, haga clic en **[!UICONTROL Propiedades]**.
    1. Vaya a la ficha **[!UICONTROL Avanzado]** y, a continuación, haga clic en **[!UICONTROL Agregar]** en **[!UICONTROL Elevar para las palabras clave de búsqueda]**. <br>Debe usar el esquema de metadatos predeterminado para elevar las palabras clave de búsqueda.
-   1. Escriba la palabra clave para la que desea aumentar la búsqueda y, a continuación, haga clic en **[!UICONTROL Agregar]**.<br>
-Puede agregar varias palabras clave y organizarlas según su prioridad.
-   1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
-Busque el recurso con las palabras clave agregadas. El recurso aparece entre los resultados de búsqueda principales.
+   1. Escriba la palabra clave para la que desea aumentar la búsqueda y, a continuación, haga clic en **[!UICONTROL Agregar]**.Puede agregar varias palabras clave y organizarlas según su prioridad.
+   1. Haga clic en **[!UICONTROL Guardar y cerrar]**.Busque el recurso con las palabras clave agregadas. El recurso aparece entre los resultados de búsqueda principales.
 
   Aprenda a [aumentar la búsqueda en Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=es).
 
@@ -156,8 +151,7 @@ Busque el recurso con las palabras clave agregadas. El recurso aparece entre los
 
 ### Mantenga los metadatos simples y fáciles de entender
 
-Simplifique los metadatos para mejorar la gobernanza y la adopción de usuarios. Sea directo y fácil de entender, lo que anima a los usuarios a añadir información esencial.
-Pruebe las siguientes prácticas recomendadas para simplificar los metadatos:
+Simplifique los metadatos para mejorar la gobernanza y la adopción de usuarios. Sea directo y fácil de entender, lo que anima a los usuarios a añadir información esencial.Pruebe las siguientes prácticas recomendadas para simplificar los metadatos:
 
 * **Optimizar opciones de propiedad:** Céntrese en resaltar propiedades esenciales sin sobrecargar a los usuarios con demasiados campos de metadatos para rellenar. Por ejemplo, al añadir metadatos para una imagen, incluya solo campos clave como título, descripción y etiquetas para una categorización eficaz.
 
@@ -172,3 +166,23 @@ Examine supply chain de contenido para encontrar fuentes de metadatos e incluir 
 Comunicar los objetivos, el progreso, los hitos y los desafíos desde el principio para recibir las aportaciones y la cooperación de todas las partes interesadas. Fomente la colaboración en toda la organización para crear procesos eficientes y metadatos valiosos.
 
 Obtenga más información acerca de [metadatos y sus conceptos relacionados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=es) para administrar de manera eficaz sus metadatos de Experience Manager.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

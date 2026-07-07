@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing
 role: User
-source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 1%
+source-wordcount: '1097'
+ht-degree: 5%
 
 ---
 
@@ -137,3 +137,22 @@ Las siguientes capacidades están fuera de ámbito por ahora al publicar recurso
 * Capacidad para sobrescribir el estado de sincronización de [!DNL Dynamic Media] en el nivel de carpeta.
 * Capacidad para sobrescribir el modo de publicación [!DNL Dynamic Media] en el nivel de carpeta
 * Administrar publicación aún no es compatible.
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

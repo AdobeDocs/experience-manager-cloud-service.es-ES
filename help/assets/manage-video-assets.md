@@ -6,9 +6,9 @@ feature: Asset Management, Publishing, Collaboration, Video
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '4995'
+source-wordcount: '5117'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 El formato de vídeo es una parte esencial de los recursos digitales de una organización. [!DNL Adobe Experience Manager] ofrece ofertas y características consolidadas para administrar todo el ciclo de vida de los recursos de vídeo después de su creación.
@@ -34,8 +34,7 @@ Puede cargar y previsualizar recursos de vídeo de formato compatible en [!DNL E
 Para cargar un recurso de vídeo, siga estos pasos:
 
 1. En la carpeta o subcarpetas de recursos digitales, vaya a la ubicación donde debe agregar el recurso.
-1. Haga clic en **[!UICONTROL Crear]** en la barra de herramientas y elija **[!UICONTROL Archivos]**. <br>También puede arrastrar un archivo a la interfaz de usuario.
-Más información sobre [cargar recursos](manage-digital-assets.md#uploading-assets) en [!DNL Experience Manager Assets].
+1. Haga clic en **[!UICONTROL Crear]** en la barra de herramientas y elija **[!UICONTROL Archivos]**. <br>También puede arrastrar un archivo a la interfaz de usuario.Más información sobre [cargar recursos](manage-digital-assets.md#uploading-assets) en [!DNL Experience Manager Assets].
 
 <!--
  1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
@@ -236,8 +235,7 @@ A partir de Experience Manager 6.4, se introdujo un nuevo método de interfaz de
 1. Cerca de la esquina superior derecha de la página global, seleccione **[!UICONTROL Crear]**.
 1. En la página Crear configuración de YouTube, en Configuración de plataforma de Google Cloud, en el campo **[!UICONTROL Nombre de aplicación]**, introduzca el ID de proyecto de Google.
 
-   Especificó el ID del proyecto al establecer inicialmente la configuración de Google Cloud anteriormente.
-Deje abierta la página Crear configuración de YouTube; volverá a ella en un momento.
+   Especificó el ID del proyecto al establecer inicialmente la configuración de Google Cloud anteriormente.Deje abierta la página Crear configuración de YouTube; volverá a ella en un momento.
 
    ![6_5_youtubepublish-createyoutubeconfiguration](/help/assets/dynamic-media/assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -284,8 +282,7 @@ Deje abierta la página Crear configuración de YouTube; volverá a ella en un m
 1. Seleccione **[!UICONTROL Crear]**.
 1. En el cuadro de diálogo Configuración de cuenta de YouTube, en el campo **[!UICONTROL Nombre de la aplicación]**, introduzca el ID del proyecto de Google.
 
-   Especificó el identificador de proyecto al [establecer inicialmente la configuración de Google Cloud](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) antes.
-Deje abierto el cuadro de diálogo Configuración de cuenta de YouTube; volverá a él en un momento.
+   Especificó el identificador de proyecto al [establecer inicialmente la configuración de Google Cloud](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) antes.Deje abierto el cuadro de diálogo Configuración de cuenta de YouTube; volverá a él en un momento.
 
 1. Con un editor de texto sin formato, abra el archivo JSON que descargó y guardó anteriormente en la tarea Configuración de Google Cloud.
 1. Seleccione y copie todo el texto JSON.
@@ -335,20 +332,16 @@ Para crear el perfil de procesamiento de metadatos, en primer lugar copiará val
 1. Bajo el encabezado Publicación de YouTube, seleccione **[!UICONTROL Categoría de YouTube]**.
 1. En el lado derecho de la página, en la ficha **[!UICONTROL Configuración]**, haga lo siguiente:
 
-   * En el campo de texto **[!UICONTROL Asignar a propiedad]**, seleccione y copie el valor.
-Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
+   * En el campo de texto **[!UICONTROL Asignar a propiedad]**, seleccione y copie el valor.Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
 
-   * En **[!UICONTROL Opciones]**, seleccione y copie el valor predeterminado que desee usar (como Personas y blogs o Ciencia y tecnología).
-Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
+   * En **[!UICONTROL Opciones]**, seleccione y copie el valor predeterminado que desee usar (como Personas y blogs o Ciencia y tecnología).Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
 
 1. En el encabezado Publicación de YouTube, seleccione **[!UICONTROL Privacidad de YouTube]**.
 1. En el lado derecho de la página, en la ficha **[!UICONTROL Configuración]**, haga lo siguiente:
 
-   * En el campo de texto **[!UICONTROL Asignar a propiedad]**, seleccione y copie el valor.
-Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
+   * En el campo de texto **[!UICONTROL Asignar a propiedad]**, seleccione y copie el valor.Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
 
-   * En **[!UICONTROL Opciones]**, seleccione y copie el valor predeterminado que desee utilizar. Observe que las Opciones se agrupan en pares de dos. El campo inferior del par es el valor predeterminado que desea copiar, como público, no incluido en la lista o privado.
-Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
+   * En **[!UICONTROL Opciones]**, seleccione y copie el valor predeterminado que desee utilizar. Observe que las Opciones se agrupan en pares de dos. El campo inferior del par es el valor predeterminado que desea copiar, como público, no incluido en la lista o privado.Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
 
 1. Cerca de la esquina superior derecha de la página Editor de esquemas de metadatos, seleccione **[!UICONTROL Cancelar]**.
 1. En la esquina superior izquierda de Experience Manager, seleccione el logotipo de Experience Manager y, en el carril izquierdo, seleccione **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]**.
@@ -415,7 +408,7 @@ Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. E
 1. En la esquina superior derecha de la página de propiedades del vídeo, seleccione **[!UICONTROL Guardar y cerrar]**.
 1. En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**.
 
-   Consulte también [Usar la administración de publicaciones con Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=es#page-authoring).
+   Consulte también [Usar la administración de publicaciones con Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring).
 
    Si lo desea, puede comprobar el vídeo publicado en el canal de YouTube.
 
@@ -640,21 +633,25 @@ Puede añadir anotaciones a recursos de vídeo. Al realizar anotaciones en víde
 
   **Consulte también**
 
-* [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
 
 >[!MORELIKETHIS]
 >
 >* [Documentación de vídeo de Dynamic Media](/help/assets/dynamic-media/video.md).
 >* [Más información sobre el uso, los tipos y la configuración de los perfiles de procesamiento](/help/assets/asset-microservices-configure-and-use.md).
+

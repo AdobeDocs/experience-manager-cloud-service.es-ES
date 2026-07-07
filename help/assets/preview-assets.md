@@ -4,10 +4,10 @@ description: Dynamic Media con funciones de OpenAPI le permite previsualizar rec
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 6f071ca9-0f84-45fc-a6b3-047cca9d5e65
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 0%
+source-wordcount: '882'
+ht-degree: 5%
 
 ---
 
@@ -67,12 +67,30 @@ Después de finalizar la versión del recurso, [publique sus páginas en el nive
 Después de finalizar la versión del recurso para uso público, establezca el estado del recurso en **[!UICONTROL Aprobado]**. A continuación, publique las páginas en el nivel de publicación. Siga estos pasos para publicar las páginas:
 
 1. Siga el paso 1 de la sección [Vista previa de recursos en la página de vista previa de sus sitios](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities) anterior para cambiar el estado del recurso a **[!UICONTROL Aprobado]**.
-1. Vaya a la página de creación de Sites y publíquelo en [!DNL Publish tier]. Publique las páginas ejecutando los pasos de [Publicación desde la sección Editor de páginas](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor).
-También puede seguir los pasos de [Publicación de páginas desde la sección Consola de sitios](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) para publicar la página desde la consola del sitio.
+1. Vaya a la página de creación de Sites y publíquelo en [!DNL Publish tier]. Publique las páginas ejecutando los pasos de [Publicación desde la sección Editor de páginas](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor).También puede seguir los pasos de [Publicación de páginas desde la sección Consola de sitios](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) para publicar la página desde la consola del sitio.
 
    >[!NOTE]
    >
    > Solo los recursos aprobados se pueden entregar en el nivel de publicación. Apruebe los recursos antes de publicar la página en el nivel Publicar para uso público.
 
    ![La página se ha publicado](/help/assets/assets/the-page-has-been-publushed.png)
-Se muestra un mensaje de confirmación **[!UICONTROL La página se ha publicado]** después de la publicación correcta. Navegue hasta la página publicada en el nivel de publicación para confirmar que las actualizaciones estén activas y que el contenido se muestre según lo esperado.
+Aparece un mensaje de confirmación **[!UICONTROL La página se ha publicado]** después de la publicación correcta. Navegue hasta la página publicada en el nivel de publicación para confirmar que las actualizaciones estén activas y que el contenido se muestre según lo esperado.
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

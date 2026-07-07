@@ -6,10 +6,10 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: d2f264ed2c7cb701a66e6d4e226cd697a586c2d5
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 6%
+source-wordcount: '1338'
+ht-degree: 9%
 
 ---
 
@@ -122,8 +122,7 @@ Para habilitar el servicio `OnOffTimeAssetAccessFilter`, debe crear una configur
 
 1. En el código de su proyecto en Git, cree un archivo de configuración en `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. El archivo debe contener `{}` como contenido, lo que significa una configuración OSGi vacía para el componente OSGi correspondiente. Esta acción habilita el servicio.
 1. Implemente su código, incluida esta nueva configuración, mediante [!DNL Cloud Manager].
-1. Una vez implementados, se puede acceder a las representaciones y los metadatos según la configuración de tiempo de activación y desactivación de los recursos. Si la fecha u hora actual es anterior a la hora de activación o posterior a la hora de inactividad, se muestra un mensaje de error.
-Para obtener más información sobre cómo agregar una configuración OSGi vacía, consulte esta [guía](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=es).
+1. Una vez implementados, se puede acceder a las representaciones y los metadatos según la configuración de tiempo de activación y desactivación de los recursos. Si la fecha u hora actual es anterior a la hora de activación o posterior a la hora de inactividad, se muestra un mensaje de error.Para obtener más información sobre cómo agregar una configuración OSGi vacía, consulte esta [guía](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=es).
 
 ## Sugerencias y limitaciones {#tips-limitations}
 
@@ -131,17 +130,20 @@ Para obtener más información sobre cómo agregar una configuración OSGi vací
 
 **Consulte también**
 
-* [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
@@ -149,3 +151,4 @@ Para obtener más información sobre cómo agregar una configuración OSGi vací
 >* [Descargar recursos protegidos por DRM](drm.md)
 >* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Windows o Mac Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es)
 >* [Descargue recursos mediante Adobe Assets Link desde las aplicaciones de Adobe Creative Cloud admitidas](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html)
+

@@ -6,10 +6,10 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '2318'
-ht-degree: 78%
+source-wordcount: '2365'
+ht-degree: 80%
 
 ---
 
@@ -81,8 +81,7 @@ La vista de Assets utiliza la siguiente secuencia para buscar nombres de formula
 
 Subtipo MIME > Tipo MIME > `default` formulario > Formulario predeterminado
 
-Por ejemplo, si existe un formulario de metadatos con el nombre `PDF` o `pdf`, los documentos PDF cargados contienen campos de metadatos tal como se definen en el formulario. Si no existe un formulario de metadatos con el nombre `PDF` o `pdf`, la vista Assets coincidirá si hay un formulario de metadatos con el nombre `application`. Si hay un formulario de metadatos con el nombre `application`, los documentos PDF cargados contienen campos de metadatos tal como se definen en el formulario. Si la vista de Assets sigue sin encontrar un formulario de metadatos coincidente, busca el formulario de metadatos `default` para aplicar campos de metadatos definidos en el formulario a los documentos de PDF cargados. Si ninguno de estos pasos funciona, la vista de Assets aplica campos de metadatos definidos en el formulario predeterminado a todos los documentos de PDF cargados.
-Aunque si desea asignar un formulario de metadatos a una carpeta [vea](#assign-metadata-form-folder).
+Por ejemplo, si existe un formulario de metadatos con el nombre `PDF` o `pdf`, los documentos PDF cargados contienen campos de metadatos tal como se definen en el formulario. Si no existe un formulario de metadatos con el nombre `PDF` o `pdf`, la vista Assets coincidirá si hay un formulario de metadatos con el nombre `application`. Si hay un formulario de metadatos con el nombre `application`, los documentos PDF cargados contienen campos de metadatos tal como se definen en el formulario. Si la vista de Assets sigue sin encontrar un formulario de metadatos coincidente, busca el formulario de metadatos `default` para aplicar campos de metadatos definidos en el formulario a los documentos de PDF cargados. Si ninguno de estos pasos funciona, la vista de Assets aplica campos de metadatos definidos en el formulario predeterminado a todos los documentos de PDF cargados.Aunque si desea asignar un formulario de metadatos a una carpeta [vea](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
@@ -125,8 +124,7 @@ Para reutilizar un formulario existente y crear uno nuevo, seleccione un formula
 
 ### Componentes de propiedad {#property-components}
 
-Puede personalizar el formulario de metadatos mediante cualquiera de los siguientes componentes de propiedad. Basta con arrastrar y soltar el tipo de componente en el formulario en la ubicación deseada y modificar la configuración del componente.
-A continuación se ofrece una descripción general de cada tipo de propiedad y de cómo se almacenan.
+Puede personalizar el formulario de metadatos mediante cualquiera de los siguientes componentes de propiedad. Basta con arrastrar y soltar el tipo de componente en el formulario en la ubicación deseada y modificar la configuración del componente.A continuación se ofrece una descripción general de cada tipo de propiedad y de cómo se almacenan.
 
 | Nombre del componente | Descripción |
 |---|---|
@@ -138,10 +136,10 @@ A continuación se ofrece una descripción general de cada tipo de propiedad y d
 | Casilla de verificación | Añada un valor booleano. Se almacena como TRUE o FALSE una vez que se guarda un valor. |
 | Fecha | Añada un componente de fecha. |
 | Lista desplegable | Añada una lista desplegable. |
-| Estado | Agregar la propiedad de estado del repositorio (asignada al repositorio :state) |
-| Estado de los recursos | Agregar la propiedad predeterminada Estado del recurso (asignada a dam:assetStatus) |
-| Etiquetas | Agregue una etiqueta de los valores almacenados en Taxonomy Management (asignados a xcm:tags). |
-| Palabras clave | Agregar palabras clave de forma libre (asignadas a dc:subject). |
+| Estado | Añada la propiedad de estado del repositorio (asignada al repositorio :state) |
+| Estado de los recursos | Añada la propiedad predeterminada Estado del recurso (asignada a dam:assetStatus) |
+| Etiquetas | Añada una etiqueta a partir de los valores almacenados en Gestión de la taxonomía (asignados a xcm:tags). |
+| Palabras clave | Añadir palabras clave de forma libre (asignadas a dc:subject). |
 | Etiquetas inteligentes | Añada para aumentar las capacidades de búsqueda añadiendo automáticamente etiquetas de metadatos. |
 | Publicación | Agrega el estado de publicación del recurso. |
 | Vínculo | Almacena una dirección web que apunta a un recurso en línea, como una página web, una imagen o una referencia externa. |
@@ -277,3 +275,22 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

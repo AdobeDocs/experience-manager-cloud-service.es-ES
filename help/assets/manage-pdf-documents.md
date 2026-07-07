@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 4%
+source-wordcount: '877'
+ht-degree: 5%
 
 ---
 
@@ -73,8 +73,7 @@ Experience Manager Assets permite agregar comentarios a un documento de PDF. Un 
 Para anotar un documento de PDF, realice los siguientes pasos:
 
 1. Vaya a la interfaz de Assets y desplácese hasta el documento de PDF que desee anotar. El visor nativo de PDF se abre a la derecha y muestra una vista previa del documento de PDF seleccionado.
-1. Haga clic en **Anotar** en el menú superior.
-A continuación se muestran las anotaciones que se pueden aplicar en un documento de PDF:
+1. Haga clic en **Anotar** en el menú superior.A continuación se muestran las anotaciones que se pueden aplicar en un documento de PDF:
 
 <table>
         <tr>
@@ -139,16 +138,19 @@ Para la vista previa de varias páginas de otros formatos de documento admitidos
 
 **Consulte también**
 
-* [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

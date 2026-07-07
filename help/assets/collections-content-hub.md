@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo administrar colecciones en Content
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 1%
+source-wordcount: '2000'
+ht-degree: 4%
 
 ---
 
@@ -251,4 +251,24 @@ El administrador puede activar o desactivar las siguientes opciones para colecci
 * Habilite la opción **Ver solo colecciones** para permitir colecciones que sean accesibles para todos pero que solo puedan editar el creador y el administrador.
 
 * Habilite la opción **Colecciones públicas** para permitir colecciones que sean accesibles y editables para todos. Si las opciones de alternancia **Ver solo colecciones** y **Colecciones públicas** están deshabilitadas, los usuarios que no sean administradores podrán crear solo colecciones privadas de forma predeterminada.
+
+
+
+**Consulte también**
+
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
