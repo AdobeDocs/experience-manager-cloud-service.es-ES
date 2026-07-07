@@ -7,9 +7,9 @@ role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
-source-wordcount: '1281'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1302'
+ht-degree: 94%
 
 ---
 
@@ -176,8 +176,8 @@ Los formularios de Edge Delivery Services admiten dos opciones de Google reCAPTC
 
 +++ Paso 3: Configurar el servicio reCAPTCHA Enterprise en AEM
 
-![pantalla de configuración de reCAPTCHA Enterprise](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
-*Figura: interfaz de configuración de reCAPTCHA Enterprise en AEM*
+![Pantalla de configuración empresarial de reCAPTCHA](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
+*Figura: interfaz de configuración empresarial de reCAPTCHA en AEM*
 
 **Configuración:**
 
@@ -269,7 +269,7 @@ Siga el mismo proceso que en la configuración de Enterprise:
 
 +++Paso 3: Configuración del servicio reCAPTCHA Standard en AEM (Ver detalles)
 
-![Pantalla de configuración estándar reCAPTCHA](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
+![Pantalla de configuración estándar de reCAPTCHA](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 *Figura: interfaz de configuración estándar reCAPTCHA en AEM*
 
 **Configuración:**
@@ -309,10 +309,10 @@ Siga el mismo proceso que en la configuración de Enterprise:
 
 Después de configurar el servicio reCAPTCHA, agregue la protección al formulario de la siguiente manera:
 
-![Agregando el componente reCAPTCHA a un formulario](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
-*Figura: agregar el componente Captcha invisible al formulario*
+![Agregar el componente reCAPTCHA a un formulario](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
+*Figura: Agregar el componente Captcha invisible al formulario*
 
-+++&#x200B;1. Abrir el formulario en el editor universal
++++&#x200B;1. Abrir formulario en editor universal
 Vaya al formulario en AEM Sites y haga clic en Editar para abrirlo en el editor universal. Espere a que se cargue el editor.
 
 - Vaya al formulario en AEM Sites
@@ -320,14 +320,14 @@ Vaya al formulario en AEM Sites y haga clic en Editar para abrirlo en el editor 
 - Espere a que se cargue el editor
 +++
 
-+++&#x200B;2. Buscar la estructura del formulario
++++&#x200B;2. Busque la estructura del formulario
 En el árbol de contenido (panel izquierdo), busque la sección Formulario adaptable y expanda la estructura del formulario para ver los puntos de inserción.
 
 - En el árbol de contenido (panel izquierdo), busque la sección Formulario adaptable
 - Expanda la estructura del formulario para ver los puntos de inserción
 +++
 
-+++&#x200B;3. Añadir el componente reCAPTCHA
++++&#x200B;3. Añadir componente reCAPTCHA
 Añada el componente Captcha (invisible) a al formulario.
 
 - Haga clic en el icono Añadir (+) de la sección del formulario
@@ -335,7 +335,7 @@ Añada el componente Captcha (invisible) a al formulario.
 - También puede arrastrar y soltar el componente desde el panel Componentes
 +++
 
-+++&#x200B;4. Configurar el componente (opcional)
++++&#x200B;4. Configurar componente (opcional)
 Seleccione el componente captcha recién añadido y verifique que utiliza su configuración reCAPTCHA.
 
 - Seleccione el componente captcha recién agregado
@@ -343,7 +343,7 @@ Seleccione el componente captcha recién añadido y verifique que utiliza su con
 - No se necesita ninguna configuración adicional para la configuración básica
 +++
 
-+++&#x200B;5. Publicar los cambios
++++&#x200B;5. Publicación de los cambios
 Publique los cambios y compruebe que no hay errores.
 
 - Haga clic en Publicar en el editor universal

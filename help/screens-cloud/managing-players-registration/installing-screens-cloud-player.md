@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Instalación y configuración de reproductores en Screens as a Cloud Service {#installing-players-screens-cloud}
 
-En esta sección se describe cómo instalar reproductores de AEM Screens AEM registrados en instancias de on-premise. Además, debe hacer un restablecimiento de fábrica del reproductor existente y luego registrar el nuevo reproductor contra AEM Screens as a Cloud Service.
+En esta sección se describe cómo instalar reproductores de AEM Screens registrados en instancias de AEM on-premise. Además, debe realizar un restablecimiento de fábrica del reproductor existente y luego registrar el nuevo reproductor con AEM Screens as a Cloud Service.
 
 ## Objetivo {#objective}
 
@@ -47,7 +47,7 @@ Siga los pasos a continuación para actualizar el reproductor:
 
 ## Monitorización de reproducción básica {#playback-monitoring}
 
-El reproductor informa de varias métricas de reproducción con cada `ping` cuyo valor predeterminado es de 30 segundos. En función de estas métricas, el Adobe puede detectar varios casos extremos, como experiencias atascadas, pantallas en blanco y problemas de programación. Esta detección nos permite comprender y solucionar problemas en el dispositivo y, por lo tanto, acelera una investigación y medidas correctivas con usted.
+El reproductor informa de varias métricas de reproducción con cada `ping` cuyo valor predeterminado es de 30 segundos. En función de estas métricas, Adobe puede detectar varios casos extremos, como experiencias atascadas, pantallas en blanco y problemas de programación. Esta detección nos permite comprender y solucionar problemas en el dispositivo y, por lo tanto, acelera una investigación y medidas correctivas con usted.
 
 La monitorización de la reproducción básica en un reproductor AEM Screens nos permite:
 
@@ -86,10 +86,10 @@ A continuación se enumeran algunas limitaciones de la monitorización básica d
 
 * La propiedad `isContentRendering` que comprueba la GPU consume demasiados recursos para habilitarse de forma predeterminada y requiere la inclusión explícita en las preferencias del reproductor. Se recomienda no utilizarlo con vídeos en producción.
 
-* SPA Esta función solo se admite para canales de secuencia y aún no cubre el caso de uso de canales interactivos ().
+* Esta función solo se admite para canales de secuencia y aún no cubre el caso de uso de canales interactivos (SPA).
 
-* Las métricas aún no están completamente expuestas a los clientes; Adobe está trabajando en la activación del mecanismo de creación de informes y alertas de tipo panel próximamente.
+* Las métricas aún no están completamente expuestas a los clientes; Adobe está trabajando en la activación de mecanismos de creación de informes y alertas similares a los tableros próximamente.
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha instalado y configurado el reproductor en el modo de nube, continúe con el as a Cloud Service recorrido de Screens. Consulte [Registro de reproductores en Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) del proveedor de servicios de Screens.
+Ahora que ha instalado y configurado el reproductor en el modo de nube, continúe con la recorrido de Screens as a Cloud Service. Consulte [Registro de reproductores en Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) del proveedor de servicios de Screens.

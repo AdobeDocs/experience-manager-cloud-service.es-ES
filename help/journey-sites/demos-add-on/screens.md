@@ -5,8 +5,8 @@ exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2666'
+workflow-type: tm+mt
+source-wordcount: '2701'
 ht-degree: 100%
 
 ---
@@ -133,7 +133,7 @@ En primer lugar, debe crear una clave de API de Google para facilitar el interca
 
    ![Creación del proyecto](assets/create-project.png)
 
-1. Asegúrese de que el proyecto nuevo esté seleccionado y, a continuación, utilizando el menú de hamburguesa del panel de la consola de Cloud, seleccione **API y servicios**.
+1. Asegúrese de que el proyecto nuevo esté seleccionado y, a continuación, utilizando el menú de hamburguesa del panel de control de la consola de Cloud, seleccione **API y servicios**.
 
    ![API y servicios](assets/apis-services.png)
 
@@ -298,7 +298,7 @@ Primero, tendrá que publicar el contenido de la demostración de Screens en AEM
 
 1. Abra la carpeta haciendo clic en ella y, a continuación, haga clic en **Crear** en la parte superior derecha y seleccione **Visualización**.
 
-1. Proporcione un nombre y haga clic en **Crear**.
+1. Proporcione un nombre para mostrar y haga clic en **Crear**.
 
    ![Crear pantalla](assets/create-display.png)
 

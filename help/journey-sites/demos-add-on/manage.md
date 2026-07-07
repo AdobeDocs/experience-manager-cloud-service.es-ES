@@ -5,8 +5,8 @@ exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '927'
+workflow-type: tm+mt
+source-wordcount: '957'
 ht-degree: 100%
 
 ---
@@ -47,9 +47,9 @@ Ahora que tiene sus propios sitios de muestra, probablemente le gustaría saber 
 
    ![Utilidades de demostración de autoservicio](assets/demo-utilities.png)
 
-1. Utilidades de demostración de referencia es una colección de funcionalidades útiles que le ayudarán a configurar y monitorizar su entorno de Adobe Experience Manager. La vista inicial es el **Tablero**, que sirve como comprobación de estado del entorno y su funcionalidad de demostración.
+1. Utilidades de demostración de referencia es una colección de funcionalidades útiles que le ayudarán a configurar y monitorizar su entorno de Adobe Experience Manager. La vista inicial es el **Panel de control**, que sirve como comprobación de estado del entorno y su funcionalidad de demostración.
 
-   ![Tablero](assets/dashboard.png)
+   ![Panel de control](assets/dashboard.png)
 
 Las utilidades de demostración de autoservicio proporcionan varias herramientas.
 
@@ -62,7 +62,7 @@ Las utilidades de demostración de autoservicio proporcionan varias herramientas
 
 ## Eliminación de sitios y plantillas de muestra {#deleting}
 
- Después de probar un conjunto de funcionalidades de AEM, es posible que ya no necesite el sitio de muestra o incluso la plantilla en la que se basa. Es fácil eliminar los sitios de muestra y las plantillas de sitio.
+Después de probar un conjunto de funcionalidades de AEM, es posible que ya no necesite el sitio de muestra o incluso la plantilla en la que se basa. Es fácil eliminar los sitios de muestra y las plantillas de sitio.
 
 1. Acceda a **Utilidades de demostración de referencia** y seleccione **Eliminar sitios**.
 
