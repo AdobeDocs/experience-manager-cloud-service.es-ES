@@ -6,9 +6,9 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 07d02342ecdbb1497010baf2c4f3ab55fbfc1500
+source-git-commit: 4edee72db5a1514e6d2f0e25bc4bdf1d0f42b265
 workflow-type: tm+mt
-source-wordcount: '3102'
+source-wordcount: '3103'
 ht-degree: 4%
 
 ---
@@ -218,7 +218,7 @@ Una vez que los microservicios de recursos hayan completado el procesamiento de 
 
 #### Aplicar un modelo de flujo de trabajo a una carpeta {#apply-workflow-model-to-folder}
 
-Para los casos de uso habituales del posprocesamiento, considere la posibilidad de utilizar el método para aplicar un flujo de trabajo a una carpeta. Para aplicar un modelo de flujo de trabajo en la carpeta [!UICONTROL Properties], siga estos pasos:
+Para los casos de uso habituales del posprocesamiento, considere la posibilidad de utilizar el método para aplicar un flujo de trabajo a una carpeta. Para aplicar un modelo de flujo de trabajo en la carpeta [!UICONTROL Properties], siga los siguientes pasos:
 
 1. Cree un modelo del flujo de trabajo.
 1. Seleccione una carpeta, haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas y luego haga clic en la ficha **[!UICONTROL Procesamiento de Assets]**.
