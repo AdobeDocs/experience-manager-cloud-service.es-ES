@@ -6,7 +6,7 @@ feature: Adobe Stock
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d1c9d822325b15ba89ca528d2eb7bb83c742b01d
 workflow-type: tm+mt
 source-wordcount: '2301'
 ht-degree: 6%
@@ -543,3 +543,4 @@ Users can see the properties for both, licensed and unlicensed assets.
 >* [Tutorial de vídeo sobre el uso de recursos de Adobe Stock con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=es)
 >* [Ayuda del plan empresarial de Adobe Stock](https://helpx.adobe.com/es/enterprise/using/adobe-stock-enterprise.html)
 >* [Preguntas frecuentes sobre Adobe Stock](https://helpx.adobe.com/es/stock/faq.html)
+
