@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 exl-id: 09276b4d-a7c8-4927-8c0a-40eda48e55a7
 feature: Workfront Integrations and Apps
 role: Admin
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 6a87df3fb470097432cec3b1ba762faa302e2dfc
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 13%
@@ -18,14 +18,14 @@ ht-degree: 13%
 
 >[!TIP]
 >
->¿Está buscando la documentación de actualización de [!DNL Workfront for Experience Manager enhanced connector] para AEM 6.5? Haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=es##update-enhanced-connector-for-workfront).
+>¿Está buscando la documentación de actualización de [!DNL Workfront for Experience Manager enhanced connector] para AEM 6.5? Haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
 
 
 Para actualizar [!DNL Workfront for Experience Manager enhanced connector] a la última versión:
 
 1. Descargue la versión más reciente del conector mejorado de [Distribución de software de Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
 
-1. [Acceda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=es) y clone su repositorio de AEM as a Cloud Service desde Cloud Manager.
+1. [Acceda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) y clone su repositorio de AEM as a Cloud Service desde Cloud Manager.
 
 1. Abra el repositorio clonado de Experience Manager as a Cloud Service mediante un IDE de su elección.
 
@@ -83,10 +83,8 @@ Para actualizar [!DNL Workfront for Experience Manager enhanced connector] a la 
    El destino de la sección incrustada se ha establecido en `/apps/<path-to-project-install-folder>/install`. Esta ruta JCR `/apps/<path-to-project-install-folder>` debe incluirse en las reglas de filtrado del archivo `all/src/main/content/META-INF/vault/filter.xml`. Las reglas de filtrado para el repositorio generalmente se derivan del nombre del programa. Utilice el nombre de la carpeta como destino en las reglas existentes.
 
 1. [Elimine las dependencias de los puntos de distribución Hoodoo](remove-external-dependencies.md), si los hubiera.
-
 1. Inserte los cambios en el repositorio.
-
-1. Ejecute la canalización para [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=es).
+1. Ejecute la canalización para [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 
 **Consulte también**
