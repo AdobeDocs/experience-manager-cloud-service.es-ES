@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
+source-git-commit: 002fdc34a8429345fe11ce0f0bda320e2fcb68d0
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2241'
 ht-degree: 2%
 
 ---
@@ -126,7 +126,7 @@ Haga clic en el icono ![vista previa](assets/do-not-localize/preview-icon.svg) p
 
 ![Previsualizar representaciones de Dynamic Media](assets/content-advisor-dm-preview.png)
 
-Haga clic en **[!UICONTROL Agregar modificadores]**, especifique un modificador en el cuadro de texto y presione Entrar para aplicar la transformación a todas las representaciones de recursos en tiempo real. Del mismo modo, puede añadir varios modificadores a las representaciones y previsualizar esas transformaciones. Haga clic en el nombre de la representación y luego en **[!UICONTROL Seleccionar]** para que la representación esté disponible en la aplicación host. La representación después de aplicar esos modificadores no se guarda. Consulte la lista de modificadores admitidos para [Dynamic Media Scene7](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) y [Dynamic Media con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Haga clic en **[!UICONTROL Agregar modificadores]**, especifique un modificador en el cuadro de texto y presione Entrar para aplicar la transformación a todas las representaciones de recursos en tiempo real. Del mismo modo, puede añadir varios modificadores a las representaciones y previsualizar esas transformaciones. Haga clic en el nombre de la representación y luego en **[!UICONTROL Seleccionar]** para que la representación esté disponible en la aplicación host. La representación después de aplicar esos modificadores no se guarda. Consulte la lista de modificadores admitidos para [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) y [Dynamic Media con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 Para obtener información sobre cómo integrar el panel Dynamic Media con el Asesor de contenido, consulte [Integración con Dynamic Media](/help/assets/integration-with-dynamic-media.md).
 
@@ -205,7 +205,7 @@ La siguiente tabla ilustra la compatibilidad de las funciones del Asesor de cont
 | Planificación de Adobe Workfront | ✓ | ✓ | − | ✓ |
 | [Vista de AEM Assets](/help/assets/assets-view-introduction.md) | ✓ | − | − | − |
 | [AEM Content Hub](/help/assets/product-overview.md) | ✓ | ✓ | − | − |
-| [Adobe Journey Optimizer (AJO) para B2C](http://experienceleague.adobe.com/es/docs/journey-optimizer/using/ajo-home) | ✓ | ✓ | ✓ | ✓ |
+| [Adobe Journey Optimizer (AJO) para B2C](http://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home) | ✓ | ✓ | ✓ | ✓ |
 
 ## Compatibilidad con las funciones del Asesor de contenido en aplicaciones distintas de Adobe {#content-advisor-feature-support-non-adobe-applications}
 
@@ -215,7 +215,7 @@ Esto le permite detectar, evaluar y utilizar recursos aprobados de AEM Assets di
 
 Para obtener más información sobre las integraciones, propiedades y personalizaciones, consulte los siguientes artículos:
 
-* [Ejemplos de integración del Asesor de contenido](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples)
+* [Ejemplos de integración del Asesor de contenido](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/main)
 
 * [Propiedades del Asesor de contenido](/help/assets/content-advisor-properties.md)
 
