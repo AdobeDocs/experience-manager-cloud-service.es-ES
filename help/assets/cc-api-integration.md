@@ -6,7 +6,7 @@ feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d1c9d822325b15ba89ca528d2eb7bb83c742b01d
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 5%
@@ -61,7 +61,7 @@ Para habilitar el complemento de automatización de contenido para el programa d
 1. Haga clic en **[!UICONTROL Continuar]**.
 1. Expanda **[!UICONTROL Assets]** y seleccione **[!UICONTROL Automatización de contenido]**.
 1. Haga clic en **[!UICONTROL Crear]**.
-1. Ejecute la canalización para [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=es).
+1. Ejecute la canalización para [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 Si necesita agregar el complemento de automatización de contenido a un programa de AEM as a Cloud Service existente en Cloud Manager:
 
@@ -71,7 +71,7 @@ Si necesita agregar el complemento de automatización de contenido a un programa
 
 1. Expanda **[!UICONTROL Assets]** y seleccione **[!UICONTROL Automatización de contenido]**.
 1. Haga clic en **[!UICONTROL Actualizar]**.
-1. Ejecute la canalización para [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=es).
+1. Ejecute la canalización para [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 ## Utilice un perfil de procesamiento para editar sus recursos creativos de forma masiva {#process-assets}
 
@@ -127,3 +127,4 @@ Para procesar los recursos existentes, selecciónelos, seleccione la opción **[
 >* [Configurar y usar microservicios de recursos a través de perfiles de procesamiento](/help/assets/asset-microservices-configure-and-use.md).
 >* [Integrar [!DNL Experience Manager] con [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [Ingesta y procesamiento de recursos con microservicios de recursos: información general](/help/assets/asset-microservices-overview.md).
+
