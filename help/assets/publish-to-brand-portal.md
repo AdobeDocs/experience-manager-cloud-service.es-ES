@@ -6,10 +6,10 @@ feature: Brand Portal, Asset Distribution, Configuration
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 85%
+source-wordcount: '1338'
+ht-degree: 83%
 
 ---
 
@@ -32,9 +32,7 @@ Si realiza las modificaciones posteriores al recurso, la carpeta o la colección
 
 >[!NOTE]
 >
->Adobe recomienda la publicación escalonada, de preferencia durante las horas no pico, para que el autor de AEM no ocupe recursos excesivos.
->Assets debe publicarse por lotes. La recomendación para el tamaño del lote es 15K.
-> Para [!DNL Experience Manager Assets] como [!DNL Cloud Service], la tasa de transferencia observada en condiciones de laboratorio es de 1000 recursos por hora. La tasa se observa con un tamaño promedio de recursos de 10 MB.
+>Adobe recomienda la publicación escalonada, de preferencia durante las horas no pico, para que el autor de AEM no ocupe recursos excesivos.Assets debe publicarse por lotes. La recomendación para el tamaño del lote es 15K.Para [!DNL Experience Manager Assets] como [!DNL Cloud Service], la tasa de transferencia observada en condiciones de laboratorio es de 1000 recursos por hora. La tasa se observa con un tamaño promedio de recursos de 10 MB.
 
 ## Publicación de recursos en Brand Portal {#publish-assets-to-bp}
 
@@ -60,7 +58,7 @@ Para publicar los recursos seleccionados en Brand Portal, haga una de las accion
 
       En **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**.
 
-      Haga clic en **[!UICONTROL Siguiente]**. 
+      Haga clic en **[!UICONTROL Siguiente]**.
 
    2. Confirme su selección en **[!UICONTROL Ámbito]** y haga clic en **[!UICONTROL Publicar en Brand Portal]**.
 
@@ -80,9 +78,9 @@ Para programar la publicación de recursos en Brand Portal para una fecha u hora
 
    ![publicar más tarde](assets/publish-later.png)
 
-1. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**. 
+1. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**.
 
-1. Seleccione una **Fecha de activación** y especifique la hora. Haga clic en **Siguiente**. 
+1. Seleccione una **Fecha de activación** y especifique la hora. Haga clic en **Siguiente**.
 
 1. Especifique un **[!UICONTROL título de flujo de trabajo]** en **[!UICONTROL Flujos de trabajo]**. Haga clic en **[!UICONTROL Publicar más tarde]**.
 
@@ -93,13 +91,7 @@ Para programar la publicación de recursos en Brand Portal para una fecha u hora
 >[!NOTE]
 >
 > * Los usuarios existentes que forman parte del grupo DAM-Users tienen acceso de lectura en la ruta &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
-> * Los nuevos usuarios (o usuarios no administradores) requieren los siguientes derechos para publicar en Brand Portal.
-> Rutas:
-> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->`/libs : jcr:read`
->`/conf : jcr:read`
->`/content : jcr:read, crx:replicate`
->`/content/dam/ : jcr:read,modify, crx:replicate`
+> * Los nuevos usuarios (o usuarios no administradores) requieren los siguientes derechos para publicar en Brand Portal.Rutas:
 
 ## Publicar carpetas en Brand Portal {#publish-folders-to-brand-portal}
 
@@ -139,13 +131,13 @@ Para programar la publicación de las carpetas de recursos para una fecha u hora
 
       En **[!UICONTROL Programar]**, seleccione **[!UICONTROL Más tarde]**.
 
-   1. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**. 
+   1. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**.
 
       <!--![publishlaterbp](assets/publishlaterbp.png)-->
 
    ![publicar carpeta posterior](assets/publish-later-folder.png)
 
-   1. Confirme la selección en **[!UICONTROL Ámbito]**. Haga clic en **[!UICONTROL Siguiente]**. 
+   1. Confirme la selección en **[!UICONTROL Ámbito]**. Haga clic en **[!UICONTROL Siguiente]**.
 
    1. Especifique un título de flujo de trabajo en **[!UICONTROL Flujos de trabajo]**. Haga clic en **[!UICONTROL Publicar más tarde]**.
 
@@ -187,7 +179,7 @@ Para cancelar la publicación de carpetas de recursos desde Brand Portal:
 
       En **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**.
 
-      Haga clic en **[!UICONTROL Siguiente]**. 
+      Haga clic en **[!UICONTROL Siguiente]**.
 
    1. Confirme su selección en **[!UICONTROL Ámbito]** y haga clic en **[!UICONTROL Cancelar publicación desde Brand Portal]**.
 
@@ -203,7 +195,7 @@ Para cancelar la publicación de carpetas de recursos desde Brand Portal:
 
       En **[!UICONTROL Programar]**, seleccione **[!UICONTROL Más tarde]**.
 
-   1. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**. 
+   1. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**.
 
    1. Confirme la selección en **[!UICONTROL Ámbito]** y haga clic en **[!UICONTROL Siguiente]**.
 
@@ -280,16 +272,18 @@ Consulte la [documentación de Brand Portal](https://experienceleague.adobe.com/
 
 **Consulte también**
 
-* [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

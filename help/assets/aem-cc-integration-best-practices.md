@@ -7,10 +7,10 @@ feature: Collaboration, Adobe Asset Link, Desktop App
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '3444'
-ht-degree: 14%
+source-wordcount: '3592'
+ht-degree: 15%
 
 ---
 
@@ -38,7 +38,7 @@ Continúe leyendo para saber qué integraciones elegir entre el escritorio y el 
 | Simplifique la experiencia para creativos en equipos de escritorio | Optimice el acceso al recurso desde un DAM ([!DNL Assets]) para los profesionales creativos o, más en general, para los usuarios de escritorio que trabajan en aplicaciones nativas de creación de recursos. Necesitan una forma fácil y directa de descubrir, utilizar (abrir), editar y guardar cambios en Experience Manager y cargar nuevos archivos. | Windows o Mac para escritorio; aplicaciones de Creative Cloud |
 | Proporcionar recursos de alta calidad listos para usar de [!DNL Adobe Stock] | Los especialistas en marketing ayudan a acelerar el proceso de creación de contenido al ayudar con la obtención y el descubrimiento de recursos. Los profesionales de Creative utilizan los recursos aprobados desde sus herramientas creativas. | [!DNL Assets]; mercado [!DNL Adobe Stock]; campos de metadatos |
 | Distribuir y compartir recursos por organizaciones | Los departamentos internos/sucursales locales y los socios externos, distribuidores y agencias utilizan los activos aprobados compartidos por la organización matriz. La organización desea compartir de forma segura y sin problemas los recursos creados para una reutilización más amplia. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
-| Generar automáticamente variaciones predefinidas de recursos cargados | Procese recursos automáticamente mediante la tecnología de transformación y gestión de medios única de Adobe para acciones predefinidas. Cree una lógica personalizada para definir sus propias acciones mediante API y microservicios de recursos. | Interfaz de usuario [!DNL Assets] |
+| Generar automáticamente variaciones predefinidas de recursos cargados | Procese recursos automáticamente mediante la tecnología de transformación y gestión de medios única de Adobe para acciones predefinidas. Cree una lógica personalizada para definir sus propias acciones mediante API y microservicios de recursos. | Interfaz de usuario de [!DNL Assets] |
 
 ## Ofertas de Adobe para satisfacer las necesidades de colaboración {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -133,9 +133,7 @@ Algunos puntos importantes sobre esta integración:
 * Cuando los recursos de Adobe Stock se guardan en Experience Manager, pasan a ser una Experience Manager Assets normal, con archivo binario guardado en el repositorio de Experience Manager. Algunos metadatos relacionados con Adobe Stock se guardan para el recurso en Experience Manager; de lo contrario, el proceso de ingesta tiene el mismo aspecto que para cualquier otro archivo. Por ejemplo, si las etiquetas inteligentes están activas, estas se añaden a estos recursos al guardarlas.
 * El recurso guardado en Experience Manager es una copia, no un vínculo de vuelta a Adobe Stock.
 
-**Trabajando con recursos guardados desde Adobe Stock en Experience Manager en Creative Cloud**. Esta integración es independiente de Adobe Asset Link, pero Adobe Asset Link reconoce estos recursos guardados de Stock de esa manera y muestra metadatos adicionales e iconos de Stock en estos recursos en la interfaz de usuario de la extensión Adobe Asset Link en Photoshop, Illustrator o InDesign. Los archivos están disponibles para explorarlos, abrirlos, etc., ya que son recursos normales de Experience Manager cuando se guardan en Experience Manager.
-Los usuarios de Creative que trabajan en aplicaciones de Creative Cloud con la extensión Adobe Asset Link presente, además de tener acceso a recursos con licencia de Adobe Stock en Experience Manager, también pueden utilizar el panel Creative Cloud Libraries para buscar, previsualizar y obtener licencias de recursos de Adobe Stock.
-Assets de Adobe Stock con licencia y guardado en Experience Manager está disponible para los equipos que acceden a la implementación de Experience Manager Assets, mientras que los creativos que otorgan licencias a recursos de Adobe Stock a través del panel Creative Cloud Libraries solo las ponen a su disposición de forma predeterminada en su cuenta de Creative Cloud.
+**Trabajando con recursos guardados desde Adobe Stock en Experience Manager en Creative Cloud**. Esta integración es independiente de Adobe Asset Link, pero Adobe Asset Link reconoce estos recursos guardados de Stock de esa manera y muestra metadatos adicionales e iconos de Stock en estos recursos en la interfaz de usuario de la extensión Adobe Asset Link en Photoshop, Illustrator o InDesign. Los archivos están disponibles para explorarlos, abrirlos, etc., ya que son recursos normales de Experience Manager cuando se guardan en Experience Manager.Los usuarios de Creative que trabajan en aplicaciones de Creative Cloud con la extensión Adobe Asset Link presente, además de tener acceso a recursos con licencia de Adobe Stock en Experience Manager, también pueden utilizar el panel Creative Cloud Libraries para buscar, previsualizar y obtener licencias de recursos de Adobe Stock.Assets de Adobe Stock con licencia y guardado en Experience Manager está disponible para los equipos que acceden a la implementación de Experience Manager Assets, mientras que los creativos que otorgan licencias a recursos de Adobe Stock a través del panel Creative Cloud Libraries solo las ponen a su disposición de forma predeterminada en su cuenta de Creative Cloud.
 
 ## Acerca del almacenamiento de recursos en un DAM {#about-storing-assets-in-a-dam}
 
@@ -239,16 +237,18 @@ Evite utilizar la aplicación de escritorio de Experience Manager para administr
 
 **Consulte también**
 
-* [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con recursos](file-format-support.md)
-* [Buscar recursos](search-assets.md)
-* [Recursos de red](use-assets-across-connected-assets-instances.md)
-* [Informes de recurso](asset-reports.md)
-* [Esquemas de metadatos](metadata-schemas.md)
-* [Descarga de recursos](download-assets-from-aem.md)
-* [Administración de metadatos](manage-metadata.md)
-* [Facetas de búsqueda](search-facets.md)
-* [Administrar colecciones](manage-collections.md)
-* [Importación masiva de metadatos](metadata-import-export.md)
+* [Traducir recursos](/help/assets/translate-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](/help/assets/file-format-support.md)
+* [Buscar recursos](/help/assets/search-assets.md)
+* [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](/help/assets/asset-reports.md)
+* [Esquemas de metadatos](/help/assets/metadata-schemas.md)
+* [Descarga de recursos](/help/assets/download-assets-from-aem.md)
+* [Administración de metadatos](/help/assets/manage-metadata.md)
+* [Administración de plantillas de Dynamic Media](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Administrar informes](/help/assets/manage-reports-assets-view.md)
+* [Facetas de búsqueda](/help/assets/search-facets.md)
+* [Administrar colecciones](/help/assets/manage-collections.md)
+* [Importación masiva de metadatos](/help/assets/metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
