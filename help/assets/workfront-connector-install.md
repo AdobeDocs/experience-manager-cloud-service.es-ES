@@ -5,7 +5,7 @@ role: Admin
 feature: Workfront Integrations and Apps
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 6a87df3fb470097432cec3b1ba762faa302e2dfc
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 6%
@@ -153,7 +153,6 @@ Para crear una conexión con [!DNL Workfront], siga estos pasos:
    ![Conectar [!DNL Experience Manager] y [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
 1. Vaya a la ficha **[!UICONTROL Avanzado]** y seleccione la opción **[!UICONTROL Es el servidor AEM as a Cloud Service]**.
-
 
 **Consulte también**
 
