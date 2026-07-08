@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo ejecutar JavaScript en la capa de 
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 1bb231d04e0b418a3b56de34c70424d06f94a4e1
+source-git-commit: 6b281173b952318e5bd29644faf5c2679ec9e611
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2053'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,9 @@ Los casos de uso comunes incluyen los siguientes:
 
 AEM Edge Functions es compatible con Edge Delivery Services y AEM as a Cloud Service Java-stack, para clientes de AEM Sites.
 
-Siga [este tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) para ver una explicación detallada de las variaciones de pila Java de Edge Delivery Services y AEM as a Cloud Service.
+Siga [este tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/edge-functions/overview) para ver una explicación detallada de las variaciones de pila Java de Edge Delivery Services y AEM as a Cloud Service.
+
+Consulte también [este repositorio](https://github.com/adobe/aem-edge-functions-examples) de ejemplos de código, incluida la vinculación de contenido en la red de distribución de contenido (CDN) y la recuperación correcta de contenido desde el origen del nivel de publicación de AEM.
 
 ## Principales ventajas {#key-benefits}
 
@@ -149,11 +151,11 @@ Asegúrese de que la función Edge funciona según lo esperado. Puede probarlo e
 
 `edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com/<path>`
 
-Por ejemplo, para la pila Java de AEM:<br/>
-`edgefunction-pXXXXX-eYYYYY-my-edge-function.adobeaemcloud.com/weather`
+Por ejemplo, para la pila Java de AEM:
 
-o para Edge Delivery Services:<br/>
-`edgefunction-pXXXXX-dYYYYY-my-edge-function.adobeaemcloud.com/weather`
+
+o para Edge Delivery Services:
+
 
 Este dominio con el prefijo *edgefunction* solo se usa para la depuración, pero no se debe hacer referencia a *para el tráfico en directo* porque no se garantiza que sea un nombre estable. Para determinar el valor de dAAAA, consulte el resultado del comando deploy.
 
