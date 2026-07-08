@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Asse
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
+source-git-commit: 002fdc34a8429345fe11ce0f0bda320e2fcb68d0
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2241'
 ht-degree: 2%
 
 ---
@@ -215,7 +215,7 @@ Esto le permite detectar, evaluar y utilizar recursos aprobados de AEM Assets di
 
 Para obtener más información sobre las integraciones, propiedades y personalizaciones, consulte los siguientes artículos:
 
-* [Ejemplos de integración del Asesor de contenido](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples)
+* [Ejemplos de integración del Asesor de contenido](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/main)
 
 * [Propiedades del Asesor de contenido](/help/assets/content-advisor-properties.md)
 
