@@ -2,9 +2,9 @@
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
+source-git-commit: 078adecd9639945076f503cd255403a8d9ad4c0f
 workflow-type: tm+mt
-source-wordcount: '3115'
+source-wordcount: '3205'
 ht-degree: 9%
 
 ---
@@ -35,7 +35,7 @@ Experience Manager Assets permite a los administradores configurar las opciones 
 
 * Cualquier vínculo personalizado que necesite incluir en Content Hub, además de los recursos, las colecciones y las perspectivas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472949/?captions=spa&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Requisitos previos {#prerequisites-configuration-ui}
 
@@ -105,7 +105,9 @@ Los metadatos activados en la interfaz de usuario de configuración se muestran 
 
 ### Filtros {#configure-filters-content-hub}
 
-Content Hub permite a los administradores configurar filtros que se muestran al buscar recursos. Siga estos pasos para agregar un nuevo filtro:
+Content Hub permite a los administradores configurar filtros que se muestran al buscar recursos. Puede configurar un máximo de 40 filtros mediante la interfaz de usuario de configuración.
+
+Siga estos pasos para agregar un nuevo filtro:
 
 1. En la interfaz de usuario de [Configuraciones](#access-configuration-options-content-hub), haga clic en **[!UICONTROL Filtros]**.
 1. Haga clic en **[!UICONTROL Agregar filtros]**.
@@ -174,7 +176,9 @@ Los administradores pueden definir los campos de metadatos que se buscan cuando 
 
 >[!CAUTION]
 >
->Se recomienda seleccionar cuidadosamente los campos que marca como campos en los que se puede buscar. Incluya solo aquellos campos que es probable que los usuarios busquen y que ayuden a devolver resultados significativos. Los campos como las fechas y los números son más adecuados para filtrar y ordenar en lugar de como contenido en el que se puede buscar. Marcar demasiados campos como en los que se puede buscar puede afectar a la calidad y al rendimiento de los resultados de búsqueda.
+>Se recomienda seleccionar cuidadosamente los campos que marca como campos en los que se puede buscar. Incluya solo aquellos campos que es probable que los usuarios busquen y que ayuden a devolver resultados significativos. Los campos como las fechas y los números son más adecuados para filtrar y ordenar en lugar de como contenido en el que se puede buscar. Marcar demasiados campos como que se pueden buscar o filtrar puede afectar a la calidad y al rendimiento de los resultados de búsqueda.
+> 
+> Puede configurar un máximo de 30 campos de búsqueda mediante la interfaz de usuario de configuración.
 >
 >Las propiedades de etiquetas solo están habilitadas para el filtrado y no se pueden buscar.
 
@@ -185,6 +189,12 @@ Los administradores pueden definir los campos de metadatos que se buscan cuando 
 1. Haga clic en **[!UICONTROL Guardar]** para aplicar los cambios y que la nueva propiedad de metadatos se muestre en la lista de campos de metadatos.
 
 Del mismo modo, puede hacer clic en ![Editar icono](assets/do-not-localize/edit_icon.svg), disponible junto a cada propiedad de metadatos disponible, para editar la propiedad o hacer clic en el icono Eliminar para eliminar cualquier propiedad existente. Haga clic en **[!UICONTROL Guardar]** después de realizar todas las modificaciones para aplicar los cambios.![Búsqueda de IU de configuración en Content Hub](assets/configuration-search.png)
+
+La lista de los campos de búsqueda que agregue debe estar en el orden de relevancia, ya que el orden afecta a los resultados de búsqueda.
+
+>[!NOTE]
+>
+>Debe mantener la página Configuración de Content Hub sincronizada con los campos que desea utilizar. No elimine campos mediante la interfaz de usuario, especialmente si dichos campos se utilizan en reglas ABAC o en el uso directo de la API de búsqueda.
 
 ### Personalización de marca {#configure-branding-content-hub}
 
@@ -259,7 +269,7 @@ Si la visibilidad de los recursos caducados está habilitada, Content Hub tambi�
 
 ### Representaciones {#renditions-content-hub}
 
-Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para ello, ejecute los siguientes pasos:
 
