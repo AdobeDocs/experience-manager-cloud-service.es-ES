@@ -235,7 +235,7 @@ Siga estos pasos en la secuencia especificada para configurar Experience Manager
 
 1. [Configuración de las credenciales de OAuth en Adobe Developer Console](#config-oauth)
 1. [Creación de una nueva integración de Adobe IMS mediante OAuth](#create-ims-account-configuration)
-1. [Configurar servicio en la nube
+1. &lbrack;Configurar servicio en la nube
    <!--1. [Obtain public certificate](#public-certificate)-->
 <!--
 1. [Create service account (JWT) connection](#createnewintegration) 
