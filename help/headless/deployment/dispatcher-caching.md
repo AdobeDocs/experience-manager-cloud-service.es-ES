@@ -1,13 +1,13 @@
 ---
 title: 'Consultas persistentes de GraphQL: habilitar el almacenamiento en caché en Dispatcher'
-description: Dispatcher es una capa de almacenamiento en caché y seguridad situada frente a los entornos de publicación de Adobe Experience Manager. AEM Puede habilitar el almacenamiento en caché para consultas persistentes en la interfaz de usuario sin encabezado de.
+description: Dispatcher es una capa de almacenamiento en caché y filtrado de acceso delante de los entornos de publicación de Adobe Experience Manager. Puede habilitar el almacenamiento en caché para consultas persistentes en AEM sin encabezado.
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 41008065730eebd472fcce19b514d30807256a7d
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 12%
+source-wordcount: '366'
+ht-degree: 9%
 
 ---
 
@@ -60,7 +60,7 @@ Para habilitar el almacenamiento en caché de consultas persistentes, defina la 
 
 Es posible que los clientes que utilizan solicitudes CORS tengan que revisar y actualizar su configuración CORS en Dispatcher.
 
-* AEM No se debe pasar el encabezado `Origin` a la publicación de la a través de Dispatcher:
+* El encabezado `Origin` no se debe pasar a AEM Publish mediante Dispatcher:
    * Compruebe el archivo `clientheaders.any`.
 * En su lugar, las solicitudes CORS deben evaluarse para detectar orígenes permitidos en el nivel de Dispatcher. Este enfoque también garantiza que los encabezados relacionados con CORS se establezcan correctamente, en un solo lugar, en todos los casos.
    * Esta configuración se debe agregar al archivo `vhost`. A continuación se muestra un ejemplo de configuración; para simplificar, solo se ha proporcionado la parte relacionada con CORS. Puede adaptarlo para sus casos de uso específicos.

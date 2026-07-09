@@ -1,20 +1,24 @@
 ---
-title: Configuración de extremo de Dispatcher AEM con acceso sin encabezado
-description: Dispatcher es una capa de almacenamiento en caché y seguridad situada frente a los entornos de publicación de Adobe Experience Manager. Se utilizan varias configuraciones para abrir puntos de conexión de GraphQL en aplicaciones sin encabezado.
+title: Configuración de extremo de Dispatcher con AEM Headless
+description: Dispatcher es una capa de almacenamiento en caché y filtrado de acceso delante de los entornos de publicación de Adobe Experience Manager. Se utilizan varias configuraciones para abrir puntos de conexión de GraphQL en aplicaciones sin encabezado.
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ecf3f0ac54acf4ac772d2906fa0b26d283549929
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 85%
+source-wordcount: '306'
+ht-degree: 61%
 
 ---
 
 
-# Dispatcher AEM: Configuración de extremo con configuración sin encabezado
+# Dispatcher: Configuración de extremo con AEM Headless
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) es una capa de almacenamiento en caché y seguridad delante de los entornos de publicación de Adobe Experience Manager. De forma predeterminada, se incluyen varias configuraciones para abrir los puntos de conexión de GraphQL en aplicaciones sin encabezado.
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) es una capa de almacenamiento en caché y filtrado de acceso delante de los entornos de publicación de Adobe Experience Manager. De forma predeterminada, se incluyen varias configuraciones para abrir los puntos de conexión de GraphQL en aplicaciones sin encabezado.
+
+>[!IMPORTANT]
+>
+>Las reglas de filtro de Dispatcher son controles de filtrado de acceso, no sustituyen al control de acceso basado en ACL de JCR en la instancia de publicación. La instancia de publicación debe estar segura independientemente de la configuración de Dispatcher. Asegúrese de que los recursos confidenciales estén protegidos mediante la denegación de `jcr:read` para las entidades de seguridad `everyone` y `anonymous` en el nivel de repositorio, independientemente de la configuración del filtro de Dispatcher.
 
 >[!NOTE]
 >
