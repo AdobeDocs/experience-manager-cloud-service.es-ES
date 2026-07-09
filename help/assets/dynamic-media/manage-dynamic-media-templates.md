@@ -1,12 +1,12 @@
 ---
-title: ¿Cómo se administran  [!DNL Dynamic Media] plantillas?
-description: Aprenda a crear  [!DNL Dynamic Media] plantillas con un editor de plantillas de WYSIWYG e incluya varias capas de imágenes, textos y formas para crear rápidamente titulares y prospectos y utilizarlos en aplicaciones de flujo descendente.
+title: Plantillas de Dynamic Media
+description: Aprenda a crear plantillas de Dynamic Media con un editor de plantillas de WYSIWYG e incluya varias capas de imágenes, textos y formas para crear rápidamente titulares y prospectos y utilizarlos en aplicaciones de flujo descendente.
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: e567a059fe4a41c2b33d769d267fabdc610b113f
+source-git-commit: 48109a25fc5ad825887fc461be38652b8ab80149
 workflow-type: tm+mt
-source-wordcount: '3928'
+source-wordcount: '3931'
 ht-degree: 35%
 
 ---
