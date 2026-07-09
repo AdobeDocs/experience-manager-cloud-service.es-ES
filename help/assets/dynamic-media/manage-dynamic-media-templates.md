@@ -16,7 +16,7 @@ ht-degree: 35%
 
 Cree plantillas personalizables en tiempo real para sus banners y folletos usando [!DNL Dynamic Media] templates, un editor de plantillas de WYSIWYG. Publique la plantilla [!DNL Dynamic Media] y utilícela en aplicaciones de flujo descendente. Una plantilla [!DNL Dynamic Media] incluye capas de imagen y texto. Agregue parámetros a las capas de imagen y texto de la plantilla y utilice [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) para cambiar la posición y el tamaño de la capa y actualizar su contenido en tiempo real.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451727/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451730/?captions=spa&learn=on&enablevpops)
 
 Algunas de las funciones clave son las siguientes:
 
