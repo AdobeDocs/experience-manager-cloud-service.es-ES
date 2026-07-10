@@ -4,7 +4,7 @@ description: Aprenda a crear plantillas de Dynamic Media con un editor de planti
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 48109a25fc5ad825887fc461be38652b8ab80149
+source-git-commit: 625eb59b08391a0a67f2cffb4e026418c49bc2f2
 workflow-type: tm+mt
 source-wordcount: '3931'
 ht-degree: 35%
@@ -16,7 +16,7 @@ ht-degree: 35%
 
 Cree plantillas personalizables en tiempo real para sus banners y folletos usando [!DNL Dynamic Media] templates, un editor de plantillas de WYSIWYG. Publique la plantilla [!DNL Dynamic Media] y utilícela en aplicaciones de flujo descendente. Una plantilla [!DNL Dynamic Media] incluye capas de imagen y texto. Agregue parámetros a las capas de imagen y texto de la plantilla y utilice [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) para cambiar la posición y el tamaño de la capa y actualizar su contenido en tiempo real.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451730/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451730/?captions=spa&learn=on&enablevpops){transcript=true}
 
 Algunas de las funciones clave son las siguientes:
 
