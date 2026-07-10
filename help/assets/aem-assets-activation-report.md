@@ -5,9 +5,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
-source-git-commit: 07e4c47ac1f0dc531ebc3fb61219a8dcac0318b0
+source-git-commit: 8b95cf0f3e83e469c8698e5b6e7ddd01a365130b
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Juntas, estas métricas conectan la actividad de recursos interna con el alcance
 
 Este es solo el comienzo del recorrido con los AEM Assets, y estas métricas seguirán evolucionando a la vez. Nos encantaría que sus comentarios se utilizaran, por lo que podemos seguir haciendo que este informe sea más útil para usted.
 
-**Nota**: si deseas revisarlos con el equipo de ingeniería/producto de Adobe o deseas recibir comentarios, envía un correo electrónico `GRP-AEM-DAM-METRICS-BETA@ADOBE.COM`.
+**Nota**: si deseas revisarlos con el equipo de ingeniería/producto de Adobe o deseas recibir comentarios, envía un correo electrónico a `GRP-AEM-DAM-METRICS-BETA@ADOBE.COM`.
 
 | | Métrica | Definición |
 |---|---|---|
