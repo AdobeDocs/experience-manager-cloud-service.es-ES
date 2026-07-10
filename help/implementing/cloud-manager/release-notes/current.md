@@ -4,7 +4,7 @@ description: Obtenga información acerca de la versión de Cloud Manager 2026.7.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 3%
@@ -42,8 +42,8 @@ Un nuevo modelo de compilación compila solo los módulos modificados (en lugar 
 
   Para obtener más información, consulte lo siguiente:
 
-   * [Acerca del uso de Smart Build en una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) y [Acerca del uso de Smart Build en una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build-non-production-pipeline)
-   * [Agregar una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code) y [Agregar una canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
+   * [Acerca del uso de Smart Build en una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#about-smart-build-production-pipeline) y [Acerca del uso de Smart Build en una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build-non-production-pipeline)
+   * [Agregar una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md##adding-production-pipeline) y [Agregar una canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
 
 * **Copia de contenido: flujo de reenvío y entre programas**\
   Cloud Manager **Content Copy**, que permite a los equipos copiar contenido entre entornos de AEM sin una implementación, incluye dos funcionalidades disponibles para todos los programas. La compatibilidad entre programas permite copiar contenido en diferentes programas de Cloud Manager, no solo dentro del mismo programa. El Flujo de avance elimina la restricción direccional, lo que permite copiar el contenido de cualquier entorno a cualquier otro, incluso desde entornos más bajos hacia arriba.

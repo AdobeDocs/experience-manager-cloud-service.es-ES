@@ -6,9 +6,9 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1856'
 ht-degree: 22%
 
 ---
@@ -34,7 +34,7 @@ Antes de comenzar a implementar el código, establece la configuración de la ca
 >
 >Puede [editar la configuración de canalización](managing-pipelines.md) después de la configuración inicial.
 
-## Adición de una nueva canalización de producción {#adding-production-pipeline}
+## Añadir una canalización de producción {#adding-production-pipeline}
 
 Una vez que haya configurado el programa y tenga al menos un entorno usando la interfaz de usuario de [!UICONTROL Cloud Manager], podrá agregar una canalización de producción siguiendo estos pasos.
 

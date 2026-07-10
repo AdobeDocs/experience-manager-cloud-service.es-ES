@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1739'
 ht-degree: 18%
 
 ---
@@ -24,7 +24,7 @@ Un usuario debe tener la función **[Administrador de implementación](/help/onb
 >
 >Puede [editar la configuración de canalización](managing-pipelines.md) después de la configuración inicial.
 
-## Adición de una nueva canalización que no es de producción
+## Adición de una canalización que no es de producción
 
 Después de configurar un programa y crear al menos un entorno en la interfaz de usuario de Cloud Manager, puede agregar canalizaciones que no sean de producción. Utilice estas canalizaciones para probar la calidad del código antes de implementarlo en entornos de producción.
 
