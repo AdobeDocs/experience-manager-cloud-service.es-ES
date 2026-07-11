@@ -3,11 +3,10 @@ title: Informe Activación de AEM Assets (Beta)
 description: Definiciones para métricas del informe de activación de AEM Assets (Beta) que abarcan activaciones (descargas, recursos compartidos) y distribuciones (Dynamic Media, Sites)".
 role: Admin
 hide: true
-hidefromtoc: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
-source-git-commit: 8b95cf0f3e83e469c8698e5b6e7ddd01a365130b
+source-git-commit: 0b5e61f75a97bd31da034ebf282779a634217366
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -33,7 +32,7 @@ Este es solo el comienzo del recorrido con los AEM Assets, y estas métricas seg
 | | Métrica | Definición |
 |---|---|---|
 | **Activaciones** | **Descargas (Vista Assets)** | El número de veces que los recursos se descargan directamente del entorno de AEM Assets principal; por ejemplo, cuando los usuarios internos navegan y descargan archivos a través de la interfaz de vista de Assets. |
-| | **Vínculo compartido (vista de Assets)** | El número de recursos compartidos (a través de vínculos que se pueden compartir) desde la vista AEM Assets para proporcionar a los usuarios externos o no autenticados acceso directo a recursos, carpetas o colecciones específicos sin necesidad de iniciar sesión. |
+| | **Recursos compartidos (vista Assets)** | El número de recursos compartidos (a través de vínculos que se pueden compartir) desde la vista AEM Assets para proporcionar a los usuarios externos o no autenticados acceso directo a recursos, carpetas o colecciones específicos sin necesidad de iniciar sesión. |
 | | **Descargas (Content Hub)** | El número de veces que los usuarios descargan los recursos a través de Content Hub, la interfaz de usuario de autoservicio que permite a equipos más amplios examinar y descargar recursos aprobados y listos para su marca. |
 | | **Recursos compartidos (Content Hub)** | El número de recursos compartidos (a través de vínculos compartibles generados) desde Content Hub para proporcionar a otros usuarios acceso directo a los recursos o colecciones seleccionados. |
 | | **Activar en Content Hub** | Acción de aprobar o publicar un recurso de los AEM Assets para que esté disponible para los usuarios finales en Content Hub. En Content Hub solo aparecen los recursos aprobados. |
