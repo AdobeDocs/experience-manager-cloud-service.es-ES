@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 0171e2e6a27a8b60bcd94792e616961598f580fb
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1739'
 ht-degree: 18%
 
 ---
@@ -24,7 +24,7 @@ Un usuario debe tener la función **[Administrador de implementación](/help/onb
 >
 >Puede [editar la configuración de canalización](managing-pipelines.md) después de la configuración inicial.
 
-## Adición de una nueva canalización que no es de producción
+## Adición de una canalización que no es de producción
 
 Después de configurar un programa y crear al menos un entorno en la interfaz de usuario de Cloud Manager, puede agregar canalizaciones que no sean de producción. Utilice estas canalizaciones para probar la calidad del código antes de implementarlo en entornos de producción.
 
@@ -59,8 +59,7 @@ Después de configurar un programa y crear al menos un entorno en la interfaz de
 
 1. Haga clic en **Continuar**.
 
-1. Los pasos restantes que utilice para completar la configuración de la canalización que no sea de producción dependen del tipo de código fuente que elija utilizar.
-En la ficha **Código Source** del cuadro de diálogo **Agregar canalización que no sea de producción**, seleccione el tipo de código que procesa la canalización que no es de producción.
+1. Los pasos restantes que utilice para completar la configuración de la canalización que no sea de producción dependen del tipo de código fuente que elija utilizar.En la ficha **Código Source** del cuadro de diálogo **Agregar canalización que no sea de producción**, seleccione el tipo de código que procesa la canalización que no es de producción.
 
    * **[Estoy usando código de pila completa](#full-stack-code)**
    * **[Estoy usando implementación dirigida](#targeted-deployment)**
@@ -90,11 +89,11 @@ Para finalizar la configuración de la canalización de no producción de códig
    * **Rama de Git**: en la lista desplegable, elija la rama del repositorio seleccionado desde la que se genera la canalización. El valor predeterminado es `main`. La canalización utiliza la rama elegida como origen para la compilación y la implementación. Si es necesario, haga clic en **Actualizar** para actualizar la lista de ramas disponibles para el repositorio seleccionado. Utilice esta opción si una rama creada recientemente no aparece en la lista.
    * **Estrategia de compilación**
       * **Compilación completa**: genera todos los módulos del repositorio cada vez
-      * BETA **Smart Build**: genera solo módulos que han cambiado desde la última confirmación.<br>Obtenga más información acerca de [cómo usar Smart Build en una canalización que no es de producción](#about-smart-build-non-production-pipeline).
+      * **Smart Build**: genera solo módulos que han cambiado desde la última confirmación.<br>Obtenga más información acerca de [cómo usar Smart Build en una canalización que no es de producción](#about-smart-build-non-production-pipeline).
 
-        >[!IMPORTANT]
+        >[!NOTE]
         >
-        >La generación inteligente solo está disponible para canalizaciones de calidad de código y canalizaciones de implementación de código de pila completa de desarrollo.
+        >La generación inteligente está disponible para canalizaciones de calidad de código y todas las canalizaciones de implementación de pila completa (Desarrollo, Ensayo, Producción).
 
    * **Ignorar configuración de nivel web**: cuando está marcada, la canalización no implementa la configuración del nivel web.
 
@@ -177,7 +176,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
 
-## Acerca del uso de Smart Build en una canalización que no es de producción{#about-smart-build-non-production-pipeline}
+## Acerca del uso de Smart Build en la canalización{#about-smart-build-non-production-pipeline}
 
 **Smart Build** en Cloud Manager es una estrategia de compilación optimizada para canalizaciones que no son de producción. La versión inteligente reduce los tiempos de compilación al almacenar en caché los módulos y reconstruir solo los módulos que han cambiado desde la última ejecución correcta. Los módulos no modificados se reutilizan desde la caché, mientras que solo se reconstruyen los módulos modificados y sus dependencias, lo que mejora la eficacia de los flujos de trabajo de desarrollo iterativos.
 
@@ -185,6 +184,7 @@ Actualmente, Smart Build solo está disponible para lo siguiente:
 
 * Código de calidad de las canalizaciones.
 * Desarrollo de canalizaciones de implementación de pila completa.
+* Canalizaciones de implementación de pila completa de fase y producción
 
 >[!NOTE]
 >

@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 883e35047917de29fb71331fe2f28243e66a16b7
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
-source-wordcount: '1889'
-ht-degree: 23%
+source-wordcount: '1856'
+ht-degree: 22%
 
 ---
 
@@ -34,7 +34,7 @@ Antes de comenzar a implementar el código, establece la configuración de la ca
 >
 >Puede [editar la configuración de canalización](managing-pipelines.md) después de la configuración inicial.
 
-## Adición de una nueva canalización de producción {#adding-production-pipeline}
+## Añadir una canalización de producción {#adding-production-pipeline}
 
 Una vez que haya configurado el programa y tenga al menos un entorno usando la interfaz de usuario de [!UICONTROL Cloud Manager], podrá agregar una canalización de producción siguiendo estos pasos.
 
@@ -61,7 +61,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
 
    **Comportamiento de errores de métricas importantes**: durante la configuración o edición de la canalización, el **Administrador de implementación** tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad. Las opciones disponibles son:
 
-   * **Preguntar cada vez**: configuración predeterminada. Requiere intervención manual en cualquier fallo importante.
+   * **Preguntar cada vez**: configuración predeterminada. Requiere intervención manual para cualquier fallo importante.
    * **Fallo inmediatamente**: si se selecciona, la canalización se cancela siempre que se produzca un fallo importante. Este proceso emula a un usuario rechazando manualmente cada error.
    * **Continuar inmediatamente**: si se selecciona, la canalización se ejecuta automáticamente cada vez que se produce un error importante. Este proceso emula a un usuario que aprueba manualmente cada error.
 
@@ -97,11 +97,7 @@ Una canalización de código de pila completa implementa simultáneamente genera
    * **Rama de Git**: en la lista desplegable, elija la rama del repositorio seleccionado desde la que se genera la canalización. El valor predeterminado es `main`. La canalización utiliza la rama elegida como origen para la compilación y la implementación. Si es necesario, haga clic en **Actualizar** para actualizar la lista de ramas disponibles para el repositorio seleccionado. Utilice esta opción si una rama creada recientemente no aparece en la lista.
    * **Estrategia de compilación**
       * **Compilación completa**: genera todos los módulos del repositorio cada vez
-      * BETA **Smart Build**: genera solo módulos que han cambiado desde la última confirmación.<br>Obtenga más información acerca de [cómo usar Smart Build en una canalización que no es de producción](#about-smart-build-non-production-pipeline).
-
-        >[!IMPORTANT]
-        >
-        >La generación inteligente solo está disponible para canalizaciones de calidad de código y canalizaciones de implementación de código de pila completa de desarrollo.
+      * **Smart Build**: genera solo módulos que han cambiado desde la última confirmación.<br>Obtenga más información acerca de [cómo usar Smart Build en una canalización que no es de producción](#about-smart-build-non-production-pipeline).
    * **Ignorar configuración de nivel web**: cuando se selecciona, la canalización no implementa la configuración del nivel web.
    * **Pausar antes de implementar en producción**: pausa la canalización antes de implementarla en producción.
    * **Programado**: permite al usuario habilitar la implementación de producción programada.
@@ -173,13 +169,9 @@ Una implementación de destino implementa código solo para partes seleccionadas
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
-## BETA: Acerca del uso de Smart Build en una canalización de producción{#about-smart-build-production-pipeline}
+## Acerca del uso de Smart Build en una canalización de producción{#about-smart-build-production-pipeline}
 
 **Smart Build** en Cloud Manager es una estrategia de compilación optimizada para canalizaciones de producción. La versión inteligente reduce los tiempos de compilación al almacenar en caché los módulos y reconstruir solo los módulos que han cambiado desde la última ejecución correcta. Los módulos no modificados se reutilizan desde la caché, mientras que solo se reconstruyen los módulos modificados y sus dependencias, lo que mejora la eficacia de los flujos de trabajo de desarrollo iterativos.
-
->[!NOTE]
->
->¿Te interesa esta versión beta? Envíe un correo electrónico a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) con su identificador de organización de Adobe y el identificador de programa.
 
 >[!IMPORTANT]
 >

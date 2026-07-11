@@ -1,54 +1,52 @@
 ---
-title: Notas de la versión de Cloud Manager 2026.6.0
-description: Obtenga información acerca de la versión de Cloud Manager 2026.6.0 en Adobe Experience Manager as a Cloud Service.
+title: Notas de la versión de Cloud Manager 2026.7.0
+description: Obtenga información acerca de la versión de Cloud Manager 2026.7.0 en Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 60e6140c4902e515d740a38bde066d8cef859674
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '932'
 ht-degree: 3%
 
 ---
 
-# Notas de la versión de Cloud Manager 2026.6.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión de Cloud Manager 2026.7.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Obtenga información acerca de la versión de Cloud Manager 2026.6.0 en AEM (Adobe Experience Manager) as a Cloud Service.
+Obtenga información acerca de la versión de Cloud Manager 2026.7.0 en AEM (Adobe Experience Manager) as a Cloud Service.
 
 Consulte también las [notas de la versión actual de Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Fechas de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2026.6.0 en AEM as a Cloud Service es el jueves, 4 de junio de 2026.
+La fecha de lanzamiento de Cloud Manager 2026.7.0 en AEM as a Cloud Service es el jueves, 9 de julio de 2026.
 
-La próxima versión planificada es el jueves, 9 de julio de 2026.
-
-
-## Novedades: Cloud Manager (en inglés) {#cloud-manager-whats-new}
-
-* **Autoservicio de claves administradas por el cliente (CMK)**
-Los clientes ahora pueden configurar las claves administradas por el cliente directamente desde Cloud Manager, sin necesidad de que intervenga la asistencia de Adobe. Hay una nueva opción CMK disponible durante la creación o edición del programa y en la página Detalles del entorno.
-
-  Ver [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) y [Editar programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
-
-  El estado de CMK se muestra en las tarjetas de Mis programas y en el panel de licencias, lo que proporciona a los administradores una visibilidad clara de la configuración de cifrado en todos los entornos. Este método simplifica los flujos de trabajo de conformidad para las organizaciones que requieren control sobre sus propias claves de cifrado.
-
-  ![Tarjeta de Mis programas que muestra un icono de clave administrada por el cliente](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
-  *Tarjeta de Mis programas*
-
-  ![Cuadro de diálogo Configurar para producción que muestra la ficha Seguridad con la opción Claves administradas por el cliente seleccionada](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
-  *Claves administradas por el cliente seleccionadas en la ficha Seguridad del cuadro de diálogo Configurar para producción*
-
-  ![Mostrando el número de claves gestionadas por el cliente disponibles en el tablero de licencias](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
-  *Mostrando el número de claves gestionadas por el cliente disponibles en el tablero de licencias*
+La próxima versión planificada es el jueves, 6 de agosto de 2026.
 
 
-* **Límite de variable de entorno aumentado a 400**
-Cloud Manager ahora admite hasta 400 variables de entorno por entorno, el doble del límite anterior de 200.
+## Nuevas funciones: Cloud Manager {#cloud-manager-whats-new}
 
-  Las variables de canalización siguen restringidas a 200. La interfaz de usuario aplica el límite correcto por contexto e impide que se agreguen elementos más allá del umbral permitido.
+* **Traer su propio Git (BYOG): autenticación basada en secretos para el clon de Git**
 
-  Este cambio es compatible con clientes con configuraciones de implementación más complejas que requieren un mayor número de configuraciones específicas del entorno. <!--CMGR-76755 · CMGR-76753 -->
+  Ahora puede autenticar solicitudes de clonación de Git en el repositorio [!DNL Bring Your Own Git] mediante el secreto byogit que Cloud Manager genera, además de un token de IMS. Esta funcionalidad permite que [!DNL Edge Delivery Services] clientes usen las mismas credenciales que hélice-admin ya almacena para la sincronización de código. Los flujos de trabajo de clonación autenticados por IMS existentes no se ven afectados.
+
+  Consulte [Autenticar solicitudes de clonación de Git](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md#authenticate-git-clone-requests).
+
+* **Infraestructura de red VPN: enrutamiento BGP y conexiones múltiples**\
+  La API de infraestructura de red VPN de redes avanzadas ahora admite el enrutamiento dinámico BGP (Border Gateway Protocol) junto con el enrutamiento estático existente. Los equipos pueden configurar BGP por conexión proporcionando el número de sistema autónomo BGP del lado del cliente y la dirección de intercambio entre pares; Cloud Manager gestiona el aprendizaje de rutas dinámicamente, no se requieren prefijos estáticos.
+
+  También se ha eliminado el límite anterior de una conexión VPN por infraestructura. Ahora se admiten varias conexiones dentro de la misma infraestructura, y las conexiones estáticas y BGP pueden coexistir. Esto proporciona a los equipos de red empresarial más flexibilidad al diseñar topologías de VPN para entornos de AEM Cloud Service.
+
+* **Rendimiento de compilación mejorado con almacenamiento en caché de módulos**
+Un nuevo modelo de compilación compila solo los módulos modificados (en lugar de todo el repositorio) mediante el almacenamiento en caché de nivel de módulo para mejorar el rendimiento de la compilación. Se aplica a las canalizaciones de producción. Usted controla qué canalizaciones de producción utilizan **Smart Build**.
+
+  Para obtener más información, consulte lo siguiente:
+
+   * [Acerca del uso de Smart Build en una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#about-smart-build-production-pipeline) y [Acerca del uso de Smart Build en una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build-non-production-pipeline)
+   * [Agregar una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md##adding-production-pipeline) y [Agregar una canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
+
+* **Copia de contenido: flujo de reenvío y entre programas**\
+  Cloud Manager **Content Copy**, que permite a los equipos copiar contenido entre entornos de AEM sin una implementación, incluye dos funcionalidades disponibles para todos los programas. La compatibilidad entre programas permite copiar contenido en diferentes programas de Cloud Manager, no solo dentro del mismo programa. El Flujo de avance elimina la restricción direccional, lo que permite copiar el contenido de cualquier entorno a cualquier otro, incluso desde entornos más bajos hacia arriba.
 
 
 ## Programas Beta {#private-beta-program}
@@ -57,7 +55,7 @@ Para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento 
 
 >[!IMPORTANT]
 >
->Las versiones de Beta contienen defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar o admitir de otro modo las versiones beta. Los clientes utilizan las versiones beta por su cuenta y riesgo, y no deben confiar en el funcionamiento o el rendimiento correctos de las versiones beta ni en la documentación o los materiales adjuntos. Las funciones y las API de la versión beta están sujetas a cambios sin previo aviso. Cualquier uso de las versiones beta corre por cuenta y riesgo del cliente.
+>Las versiones de Beta contienen defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar o admitir de otro modo las versiones beta. Los clientes utilizan las versiones beta por su cuenta y riesgo; no confíe en el funcionamiento ni el rendimiento correctos de las versiones beta ni en la documentación o los materiales adjuntos. Las funciones y las API de la versión beta están sujetas a cambios sin previo aviso. Cualquier uso de las versiones beta corre por cuenta y riesgo del cliente.
 
 Ver también [programas de AEM Beta](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
@@ -83,19 +81,19 @@ Para obtener más información, consulte [Nivel de publicación flexible (Beta)]
 
 Para unirte a la versión beta, envía un correo electrónico a [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) con tu identificador de organización de Adobe y tu identificador de programa.
 
-### Rendimiento de compilación mejorado con almacenamiento en caché de módulos {#quick-build-cm-pipelines}
-
-Un nuevo modelo de compilación compila solo los módulos modificados (en lugar de todo el repositorio) mediante el almacenamiento en caché de nivel de módulo para mejorar el rendimiento de la compilación. Se aplica a las canalizaciones de producción. Usted controla qué canalizaciones de producción utilizan **Smart Build**.
-
-Para obtener más información, consulte lo siguiente:
-
-* [Usando Smart Build en una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
-* [Agregar una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-
-Para unirte a Beta, envía un correo electrónico a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) con tu ID de organización de Adobe y tu ID de programa.
-
 <!-- 
 OLD
+### Improved build performance with module caching {#quick-build-cm-pipelines}
+
+A new build model compiles only changed modules (rather than the entire repository) using module-level caching to improve build performance. It applies to production pipelines. You control which production pipelines use **Smart Build**.
+
+For more information, see the following:
+
+* [Using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
+* [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+
+To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe Organization ID and Program ID.
+
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
 [Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
@@ -118,12 +116,19 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 ## Correcciones de errores {#bug-fixes}
 
-* **Entorno bloqueado en la actualización sin una operación activa**
-Ahora se resuelve un problema en el que los entornos se quedan permanentemente atascados en un estado de actualización, incluso cuando no se ejecuta ninguna canalización o cambio de configuración en curso. Los entornos afectados ahora se pueden administrar con normalidad sin requerir la intervención manual del soporte de Adobe. (CMGR-77133)
-* **Redes avanzadas: se eliminó una regla de reenvío de puertos incorrecta en los puertos de origen duplicados**
-Cuando dos reglas de reenvío de puertos en Redes avanzadas comparten el mismo puerto de origen (portOrig), al eliminar una regla se elimina incorrectamente la otra. Ahora Cloud Manager identifica correctamente y elimina solo la regla deseada. (CMGR-77019)
+* Los créditos principales no se liberan cuando ambos entornos de prod-group completan la eliminación suave simultáneamente. Este problema se ha resuelto. Los créditos ahora se liberan correctamente independientemente del orden en que se completen las eliminaciones simultáneas. (CMGR-77845)
 
-<!-- There are no significant bug fixes in the June 2026 Cloud Manager release. -->
+* Crédito de Content Hub huérfano después de la eliminación suave del entorno seguido de la eliminación grave. Cloud Manager ahora libera correctamente el crédito de Content Hub cuando el entorno asociado se elimina completamente. (CMGR-77585)
+
+* el comando CLI aio cloudmanager:tail-log se desconecta durante la rotación del registro en lugar de volver a conectarse. El comando ahora se vuelve a conectar automáticamente cuando se detecta una rotación de registro. (CMGR-76557)
+
+* El contenido del cuadro de diálogo de lanzamiento completo no se puede desplazar en Información general del programa. El cuadro de diálogo ahora se desplaza correctamente, lo que garantiza que se pueda acceder a todo el contenido independientemente del tamaño de la pantalla. (CMGR-76405)
+
+* La asignación de dominios personalizados falla en los entornos RDE recién creados. Después de crear un nuevo Entorno de desarrollo rápido (RDE), los clientes encontraron el error &quot;El estado del entorno no es válido para el cambio de configuración del dominio&quot; al intentar agregar una asignación de dominio personalizada inmediatamente después del aprovisionamiento.Ahora, Cloud Manager refleja correctamente el estado listo del entorno antes de intentar cualquier asignación de dominio. (CMGR-75904)
+
+* Al eliminar un certificado DV y volver a crearlo para el mismo dominio, se produce el error &quot;certificado existente&quot;. Cuando los clientes eliminaban un certificado validado por el dominio (DV) y luego intentaban crear uno nuevo para el mismo dominio, Cloud Manager devolvía el error &quot;Hay un certificado existente que cubre todos los dominios&quot;. Como resultado, bloqueó la emisión del nuevo certificado. La eliminación parecía correcta en la interfaz de usuario, pero el certificado no se eliminó completamente internamente, lo que dejó bloqueado el dominio. Este problema ya está resuelto. (CMGR-72784)
+
+<!-- There are no significant bug fixes in the July 2026 Cloud Manager release. -->
 
 <!-- ## Known issues {#known-issues} -->
 
