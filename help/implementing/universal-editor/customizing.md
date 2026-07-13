@@ -4,10 +4,10 @@ description: Obtenga información acerca de las distintas opciones para personal
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: c20290b92f6abdd602986ddca6e305dabdc13cfc
+source-git-commit: 349ac17aeb6c66e691596f5656e93a2cdb8472e5
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 53%
+source-wordcount: '631'
+ht-degree: 44%
 
 ---
 
@@ -122,3 +122,9 @@ Las condiciones se pueden definir usando el [esquema JsonLogic](https://jsonlogi
 ![Campo de texto mostrado](assets/shown.png)
 
 >[!ENDTABS]
+
+### Limitación: Condiciones Dentro De Contenedores De Varios Campos {#conditions-multi-field-limitation}
+
+La resolución de la condición `var` es absoluta, no relativa a la fila actual. Un(a) `var` debe ser un(a) `fieldName` de nivel raíz o, para los campos dentro de un contenedor, debe tener como prefijo el nombre del contenedor `containerName|fieldName`.
+
+El mismo método no funciona para contenedores múltiples (filas repetibles). El contenido de la fila se indiza en tiempo de ejecución como `containerName/0|fieldName`, `containerName/1|fieldName`, etc., pero ese índice no se conoce durante la creación de la condición y cambia a medida que se agregan, eliminan o reordenan las filas. Como resultado, no hay forma de que un autor se dirija a un campo específico dentro de la misma fila, por lo que no se admiten condiciones dentro de contenedores múltiples.
