@@ -4,10 +4,10 @@ description: Aprenda a configurar funciones de redes avanzadas como una VPN o un
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 3d2b4b7aad0c7d15d14b7f9328945303ed31d71b
+source-git-commit: 71cf6c00d91ce0e63a68c1b4d4e9a884feee1a33
 workflow-type: tm+mt
-source-wordcount: '5860'
-ht-degree: 90%
+source-wordcount: '5799'
+ht-degree: 76%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 90%
 
 En este artículo se presentan las funciones de red avanzadas disponibles en AEM as a Cloud Service. Estas funciones incluyen el aprovisionamiento de autoservicio y API de VPN, los puertos no estándar y las direcciones IP de salida dedicada.
 
-Además de esta documentación, también hay una serie de tutoriales diseñados para guiarle por cada una de las opciones de redes avanzadas. Consulte [Redes avanzadas](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
+Además de esta documentación, también hay una serie de tutoriales diseñados para guiarle a través de cada una de las opciones avanzadas de red. Consulte [Redes avanzadas](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
 
 >[!IMPORTANT]
 >
@@ -24,8 +24,7 @@ Además de esta documentación, también hay una serie de tutoriales diseñados 
 >
 >Este artículo se centra en el uso del método de interfaz de usuario. Si prefiere automatizar la configuración a través de la API, consulte el [tutorial de red privada virtual (VPN)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
->**Automatizar redes avanzadas con la API**
->Para automatizar la configuración de redes avanzadas (como la creación de VPN), puede utilizar la API de Cloud Manager:
+>**Automatizar redes avanzadas con la APIPara automatizar la configuración de redes avanzadas (como la creación de VPN), puede utilizar la API de Cloud Manager:
 >
 >```bash
 >curl -X POST https://cloudmanager.adobe.io/api/program/{PROGRAM_ID}/environment/{ENV_ID}/vpn \
@@ -55,11 +54,11 @@ AEM as a Cloud Service ofrece las siguientes opciones de redes avanzadas:
 * [Dirección IP de salida dedicada](#dedicated-egress-ip-address): configure el tráfico de AEM as a Cloud Service para que se origine desde una IP única.
 * [Red privada virtual (VPN)](#vpn): tráfico seguro entre su infraestructura y AEM as a Cloud Service, si dispone de una VPN.
 
-En este artículo se describe cada una de estas opciones en detalle y por qué podría utilizarlas, antes de describir cómo se configuran mediante la interfaz de usuario de Cloud Manager y mediante la API. El artículo concluye con algunos casos de uso avanzados.
+Este artículo describe cada una de estas opciones en detalle y por qué se utilizan, antes de describir cómo se configuran mediante la interfaz de usuario de Cloud Manager y la API. El artículo concluye con algunos casos de uso avanzados.
 
 >[!CAUTION]
 >
->Si ya dispone de tecnología de salida dedicada heredada y quiere configurar una de estas opciones de redes avanzadas, [póngase en contacto con el servicio de atención al cliente de Adobe.](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&lang=es#home)
+>Si ya dispone de tecnología de salida dedicada heredada y quiere configurar una de estas opciones de redes avanzadas, [póngase en contacto con el servicio de atención al cliente de Adobe.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=es#home)
 >
 >Si se intenta configurar redes avanzadas con tecnología de salida heredada, la conectividad del sitio puede verse afectada.
 
@@ -72,9 +71,9 @@ Al configurar funciones de redes avanzadas, se aplican las siguientes restriccio
 * Un usuario debe tener la función de **Administrador** para añadir y configurar la infraestructura de red en su programa.
 * Debe crearse el entorno de producción antes de poder añadir la infraestructura de red en su programa.
 * La infraestructura de red debe estar en la misma región que la región principal del entorno de producción.
-   * En el caso de que su entorno de producción tenga [regiones de publicación adicionales](/help/implementing/cloud-manager/manage-environments.md#multiple-regions), puede crear otra infraestructura de red que refleje cada región adicional.
+   * Si su entorno de producción tiene [regiones de publicación adicionales](/help/implementing/cloud-manager/manage-environments.md#multiple-regions), cree una infraestructura de red para reflejar cada región adicional.
    * No se le permitirá crear más infraestructuras de red que el número máximo de regiones configuradas en su entorno de producción.
-   * Puede definir tantas infraestructuras de red como regiones disponibles en el entorno de producción, pero la nueva infraestructura debe ser del mismo tipo que la infraestructura creada anteriormente.
+   * Puede definir tantas infraestructuras de red como regiones disponibles en el entorno de producción, pero la nueva infraestructura debe ser del mismo tipo que la creada anteriormente.
    * Al crear varias infraestructuras, se le permite seleccionar únicamente aquellas regiones en las que no se ha creado una infraestructura de redes avanzadas.
 
 ### Configuración y habilitación de redes avanzadas {#configuring-enabling}
@@ -88,7 +87,7 @@ Ambos pasos se pueden realizar mediante la interfaz de usuario de Cloud Manager 
 
 * Si utiliza la IU de Cloud Manager esto significa crear configuraciones de redes avanzadas mediante un asistente a nivel de programa y, a continuación, editar cada entorno en el que quiera habilitar la configuración.
 
-* Cuando se utiliza la API de Cloud Manager, se invoca el punto final de la API `/networkInfrastructures` en el nivel de programa para declarar el tipo deseado de red avanzada. Después se llama al punto final `/advancedNetworking` para cada entorno con el fin de habilitar la infraestructura y configurar parámetros específicos del entorno.
+* Cuando se utiliza la API de Cloud Manager, se invoca el punto final de la API `/networkInfrastructures` en el nivel de programa para declarar el tipo deseado de red avanzada. A continuación se realiza una llamada al extremo `/advancedNetworking` para cada entorno para habilitar la infraestructura y configurar parámetros específicos del entorno.
 
 ## Salida de puerto flexible {#flexible-port-egress}
 
@@ -96,7 +95,7 @@ Esta función de redes avanzadas le permite configurar AEM as a Cloud Service pa
 
 >[!TIP]
 >
->Al decidir entre una salida de puerto flexible y una dirección IP de salida dedicada, se recomienda elegir una salida de puerto flexible si no se requiere una dirección IP específica. La razón es que Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible.
+>Al decidir entre una salida de puerto flexible y una dirección IP de salida dedicada, se recomienda elegir una salida de puerto flexible si no se requiere una dirección IP específica. El motivo es que Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible.
 
 >[!NOTE]
 >
@@ -121,7 +120,7 @@ Esta función de redes avanzadas le permite configurar AEM as a Cloud Service pa
 
    ![Confirmación de la configuración de la salida de puerto flexible](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
 
-Aparece un nuevo registro debajo del encabezado **Infraestructura de red** en el panel lateral. Incluye detalles como el tipo de infraestructura, el estado, la región y los entornos en los que está habilitada.
+Aparece un nuevo registro debajo del encabezado **Infraestructura de red** en el panel lateral. Incluye el tipo de infraestructura, el estado, la región y los entornos habilitados.
 
 ![Nueva entrada en Infraestructura de red](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
@@ -131,20 +130,20 @@ Aparece un nuevo registro debajo del encabezado **Infraestructura de red** en el
 
 ### Configuración de la API {#configuring-flexible-port-egress-provision-api}
 
-Una vez por programa, el punto final de POST `/program/<programId>/networkInfrastructures` se invoca, pasando simplemente el valor de `flexiblePortEgress` para el parámetro `kind` y la región. El punto final responde con `network_id`, así como otra información, incluido el estado.
+Una vez por programa, se invoca el extremo POST `/program/<programId>/networkInfrastructures`, pasando el valor de `flexiblePortEgress` para el parámetro y la región `kind`. El punto final responde con `network_id`, así como otra información, incluido el estado.
 
-Una vez realizada la llamada, la infraestructura de redes tarda aproximadamente 15 minutos en aprovisionarse. Una llamada al [punto final GET de infraestructura de red](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) de Cloud Manager mostraría el estado de **listo**.
+Una vez realizada la llamada, la infraestructura de red tarda unos 15 minutos en aprovisionarse. Una llamada al extremo GET [de infraestructura de red](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/getNetworkInfrastructure) de Cloud Manager muestra un estado de **listo**.
 
 >[!TIP]
 >
->El conjunto completo de parámetros, la sintaxis exacta, así como información importante como qué parámetros no se pueden cambiar después, [se pueden consultar en los documentos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>El conjunto completo de parámetros, la sintaxis exacta, así como información importante como qué parámetros no se pueden cambiar después, [se pueden consultar en los documentos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
 ### Enrutamiento del tráfico {#flexible-port-egress-traffic-routing}
 
-Para el tráfico HTTP o HTTPS que va a puertos que no sean 80 o 443, un proxy debe configurarse mediante las siguientes variables de entorno de host y puerto:
+Para el tráfico HTTP o HTTPS que va a puertos que no sean 80 o 443, configure un proxy mediante las siguientes variables de entorno de host y puerto:
 
-* para HTTP: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (valor predeterminado de `proxy.tunnel:3128` en versiones de AEM &lt; 6094)
-* para HTTPS: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (valor predeterminado `proxy.tunnel:3128` en versiones de AEM &lt; 6094)
+* para HTTP: `AEM_PROXY_HOST`/ `AEM_HTTP_PROXY_PORT` (el valor predeterminado es `proxy.tunnel:3128` en versiones de AEM &lt; 6094)
+* para HTTPS: `AEM_PROXY_HOST`/ `AEM_HTTPS_PROXY_PORT` (el valor predeterminado es `proxy.tunnel:3128` en versiones de AEM &lt; 6094)
 
 Por ejemplo, este es un ejemplo de código para enviar una solicitud a `www.example.com:8443`:
 
@@ -162,7 +161,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 Si utiliza bibliotecas de red Java™ no estándar, configure los proxies mediante las propiedades anteriores para todo el tráfico.
 
-El tráfico no HTTP/S con destinos a través de puertos declarados en el parámetro `portForwards` debe hacer referencia a una propiedad denominada `AEM_PROXY_HOST`, junto con el puerto asignado. Por ejemplo:
+El tráfico no HTTP/S con destinos a través de puertos declarados en el parámetro `portForwards` hace referencia a una propiedad denominada `AEM_PROXY_HOST`, junto con el puerto asignado. Por ejemplo:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -252,7 +251,7 @@ La configuración de la dirección IP de salida dedicada es similar a la [salida
 
 >[!TIP]
 >
->Al decidir entre una salida de puerto flexible y una dirección IP de salida dedicada, elija una salida de puerto flexible si no se requiere una dirección IP específica. La razón es que Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible.
+>Al decidir entre una salida de puerto flexible y una dirección IP de salida dedicada, elija una salida de puerto flexible si no se requiere una dirección IP específica. El motivo es que Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible.
 
 >[!NOTE]
 >
@@ -283,7 +282,7 @@ La configuración de la dirección IP de salida dedicada es similar a la [salida
 
    ![Confirmación de la configuración de la salida de puerto flexible](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
 
-Aparece un nuevo registro debajo del encabezado **Infraestructura de red** en el panel lateral. Incluye detalles como el tipo de infraestructura, el estado, la región y los entornos en los que está habilitada.
+Aparece un nuevo registro debajo del encabezado **Infraestructura de red** en el panel lateral. Incluye el tipo de infraestructura, el estado, la región y los entornos habilitados.
 
 ![Nueva entrada en Infraestructura de red](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
@@ -293,19 +292,19 @@ Aparece un nuevo registro debajo del encabezado **Infraestructura de red** en el
 
 ### Configuración de la API {#configuring-dedicated-egress-provision-api}
 
-Una vez por programa, el punto final de POST `/program/<programId>/networkInfrastructures` se invoca, pasando simplemente el valor de `dedicatedEgressIp` para el parámetro `kind` y la región. El punto final responde con `network_id`, así como otra información, incluido el estado.
+Una vez por programa, se invoca el extremo POST `/program/<programId>/networkInfrastructures`, pasando el valor de `dedicatedEgressIp` para el parámetro y la región `kind`. El punto final responde con `network_id`, así como otra información, incluido el estado.
 
-Una vez realizada la llamada, la infraestructura de redes tarda aproximadamente 15 minutos en aprovisionarse. Una llamada al [punto final GET de infraestructura de red](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) de Cloud Manager mostraría el estado de **listo**.
+Una vez realizada la llamada, la infraestructura de red tarda unos 15 minutos en aprovisionarse. Una llamada al extremo GET [de infraestructura de red](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/getNetworkInfrastructure) de Cloud Manager muestra un estado de **listo**.
 
 >[!TIP]
 >
->El conjunto completo de parámetros, la sintaxis exacta, así como información importante como qué parámetros no se pueden cambiar después, [se pueden consultar en los documentos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>El conjunto completo de parámetros, la sintaxis exacta, así como información importante como qué parámetros no se pueden cambiar después, [se pueden consultar en los documentos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
 ### Enrutamiento del tráfico {#dedicated-egress-ip-traffic-routing}
 
 El tráfico HTTP o HTTPS pasa por un proxy preconfigurado, siempre que utilicen propiedades estándar del sistema Java™ para las configuraciones de proxy.
 
-El tráfico no HTTP/S con destinos a través de puertos declarados en el parámetro `portForwards` debe hacer referencia a una propiedad denominada `AEM_PROXY_HOST`, junto con el puerto asignado. Por ejemplo:
+El tráfico no HTTP/S con destinos a través de puertos declarados en el parámetro `portForwards` hace referencia a una propiedad denominada `AEM_PROXY_HOST`, junto con el puerto asignado. Por ejemplo:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -403,7 +402,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 Algunas bibliotecas requieren una configuración explícita para utilizar las propiedades estándar del sistema Java™ en las configuraciones de proxy.
 
-Ejemplo con Apache HttpClient que requiere llamadas explícitas a
+Un ejemplo de código que utiliza Apache HttpClient y que requiere llamadas explícitas a
 [`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) o use
 [`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
 
@@ -423,7 +422,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Consideraciones sobre la depuración {#debugging-considerations}
 
-Para validar que el tráfico realmente salga por la dirección IP dedicada esperada, compruebe los registros en el servicio de destino, si está disponible. De lo contrario, puede que sea útil utilizar un servicio de depuración como [https://ifconfig.me/ip](https://ifconfig.me/ip), que devuelve la dirección IP que realiza la llamada.
+Para validar que el tráfico realmente salga por la dirección IP dedicada esperada, compruebe los registros en el servicio de destino, si está disponible. De lo contrario, llame a un servicio de depuración como [https://ifconfig.me/ip](https://ifconfig.me/ip), que devuelve la dirección IP que realiza la llamada.
 
 ## Red privada virtual (VPN) {#vpn}
 
@@ -431,12 +430,11 @@ Una VPN permite conectarse a una infraestructura local o a un centro de datos de
 
 La mayoría de los dispositivos VPN con tecnología IPSec son compatibles. Consulte la información en la columna **Instrucciones de configuración de RouteBased** en [esta lista de dispositivos](https://learn.microsoft.com/es-es/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Configure el dispositivo como se describe en la tabla.
 
->[!NOTE]
->
->Las siguientes limitaciones se aplican a una infraestructura de VPN:
->
->* La compatibilidad se limita a una única conexión VPN
->* Los solucionadores de DNS deben aparecer en el espacio de direcciones de puerta de enlace para resolver los nombres de host privados.
+Una infraestructura VPN admite varias conexiones, por lo que puede conectarse a más de una red local o centro de datos desde la misma infraestructura. Adobe recomienda un máximo de 20 conexiones por infraestructura.
+
+<!-- NEW Each connection uses either static routing or BGP dynamic routing, and both types can coexist within the same infrastructure. For more information on configuring routing, see [Add a VPN connection](). -->
+
+Para resolver nombres de host privados, los solucionadores DNS deben aparecer en el espacio de direcciones de puerta de enlace.
 
 ### Configuración de la IU {#configuring-vpn-ui}
 
@@ -461,7 +459,7 @@ La mayoría de los dispositivos VPN con tecnología IPSec son compatibles. Consu
 
    ![Configuración de la VPN](assets/advanced-networking-ui-vpn.png)
 
-1. En la pestaña **Conexiones** del asistente, proporcione un **Nombre de conexión** para identificar su conexión VPN y haga clic en **Añadir conexión**.
+1. Para identificar su conexión VPN, proporcione un **Nombre de conexión** en la ficha **Conexiones** del asistente y haga clic en **Agregar conexión**.
 
    ![Añadir conexión](assets/advanced-networking-ui-vpn-add-connection.png)
 
@@ -484,17 +482,17 @@ La mayoría de los dispositivos VPN con tecnología IPSec son compatibles. Consu
 
    ![Confirmación de la configuración de la salida de puerto flexible](assets/advanced-networking-ui-vpn-confirm.png)
 
-Aparece un nuevo registro debajo del encabezado **Infraestructura de red** en el panel lateral. Incluye detalles como el tipo de infraestructura, el estado, la región y los entornos en los que está habilitada.
+Aparece un nuevo registro debajo del encabezado **Infraestructura de red** en el panel lateral. Incluye el tipo de infraestructura, el estado, la región y los entornos habilitados.
 
 ### Configuración de la API {#configuring-vpn-api}
 
 Una vez por programa, se invoca el punto final `/program/<programId>/networkInfrastructures` de POST. Pasa una carga útil de información de configuración. Esa información incluye el valor de la **VPN** para el parámetro `kind`, región, espacio de direcciones (lista de CIDR; tenga en cuenta que este valor no se puede modificar más adelante), solucionadores DNS (para resolver nombres en la red). También incluye información de conexión VPN, como la configuración de la puerta de enlace, la clave VPN compartida y la directiva de seguridad IP. El punto final responde con `network_id`, así como otra información, incluido el estado.
 
-Una vez llamada, la infraestructura de red tarda aproximadamente entre 45 y 60 minutos en aprovisionarse. Se puede llamar al método GET de la API para devolver el estado, que finalmente pasa de `creating` a `ready`. Consulte la documentación de la API para todos los estados.
+Una vez llamada, la infraestructura de red tarda aproximadamente entre 45 y 60 minutos en aprovisionarse. Se puede llamar al método GET en la API para devolver el estado, que finalmente cambia de `creating` a `ready`. Consulte la documentación de la API para todos los estados.
 
 >[!TIP]
 >
->El conjunto completo de parámetros, la sintaxis exacta, así como información importante como qué parámetros no se pueden cambiar después, [se pueden consultar en los documentos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>El conjunto completo de parámetros, la sintaxis exacta, así como información importante como qué parámetros no se pueden cambiar después, [se pueden consultar en los documentos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
 ### Enrutamiento del tráfico {#vpn-traffic-routing}
 
@@ -622,7 +620,7 @@ Cuando habilita una configuración de red avanzada para un entorno, también pue
    * Para cada host de destino, los clientes deben asignar el puerto de destino deseado a un puerto de 30000 a 30999.
    * Las reglas de reenvío de puertos están disponibles para todos los tipos de redes avanzadas.
 
-* **Hosts no proxy**: los hosts no proxy le permiten declarar un conjunto de hosts que deben enrutarse a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada.
+* **Hosts no proxy**: los hosts no proxy le permiten declarar un conjunto de hosts que se enrutan a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada.
    * Este método puede resultar útil porque la salida de tráfico a través de direcciones IP compartidas puede optimizarse aún más.
    * Los hosts no proxy solo están disponibles para la dirección IP de salida dedicada y los tipos de redes avanzadas VPN.
 
@@ -661,7 +659,7 @@ Cuando habilita una configuración de red avanzada para un entorno, también pue
 
 1. Haga clic en **Guardar** en el cuadro de diálogo para poder aplicar la configuración al entorno.
 
-La configuración de redes avanzadas se aplica al entorno seleccionado. De nuevo en la pestaña **Entornos**, puede ver los detalles de la configuración aplicada al entorno seleccionado y su estado.
+La configuración de redes avanzadas se aplica al entorno seleccionado. En la ficha **Entornos** verá los detalles de la configuración aplicados al entorno seleccionado y su estado.
 
 ![Entorno configurado con redes avanzadas](assets/advanced-networking-ui-configured-environment.png)
 
@@ -669,17 +667,17 @@ La configuración de redes avanzadas se aplica al entorno seleccionado. De nuevo
 
 Para habilitar una configuración de redes avanzadas para un entorno, el punto final `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` debe invocarse por entorno.
 
-La API debe responder en solo unos segundos e indicar un estado de `updating`. Transcurridos unos 10 minutos, una llamada al punto final GET del entorno de Cloud Manager muestra un estado de `ready`, lo que indica que se ha aplicado la actualización al entorno.
+La API responde en unos segundos e indica un estado de `updating`. Transcurridos unos 10 minutos, una llamada al punto final GET del entorno de Cloud Manager muestra un estado de `ready`, lo que indica que se ha aplicado la actualización al entorno.
 
-Las reglas de reenvío de puertos por entorno se pueden actualizar invocando de nuevo el punto final final `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` e incluyendo el conjunto completo de parámetros de configuración en lugar de un subconjunto.
+Las reglas de reenvío de puertos por entorno se pueden actualizar invocando el extremo `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` e incluyendo el conjunto completo de parámetros de configuración, en lugar de un subconjunto.
 
-Los tipos de redes avanzada VPN y direcciones IP de salida dedicadas admiten un parámetro `nonProxyHosts`. Esta compatibilidad le permite declarar un conjunto de hosts que deben enrutarse a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada. Las direcciones URL `nonProxyHost` pueden seguir los patrones de `example.com` o `*.example.com`, donde el comodín solo se admite al inicio del dominio.
+Los tipos de redes avanzada VPN y direcciones IP de salida dedicadas admiten un parámetro `nonProxyHosts`. Esta compatibilidad le permite declarar un conjunto de hosts que se enrutan a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada. Las direcciones URL `nonProxyHost` siguen los patrones de `example.com` o `*.example.com`, donde el comodín solo se admite al principio del dominio.
 
-Aunque no haya reglas de enrutamiento del tráfico del entorno (hosts u omisiones), debe seguir llamándose a `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, solo con una carga útil vacía.
+Incluso si no hay reglas de enrutamiento de tráfico de entorno (hosts o bypass), llame a `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` con una carga útil vacía.
 
 >[!TIP]
 >
->El conjunto completo de parámetros, la sintaxis exacta, así como información importante como qué parámetros no se pueden cambiar después, [se pueden consultar en los documentos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>El conjunto completo de parámetros, la sintaxis exacta, así como información importante como qué parámetros no se pueden cambiar después, [se pueden consultar en los documentos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
 ## Edición y eliminación de configuraciones de redes avanzadas en entornos {#editing-deleting-environments}
 
@@ -712,7 +710,7 @@ Para desactivar la red avanzada para un entorno en particular, invoque `DELETE [
 
 >[!TIP]
 >
->El conjunto completo de parámetros, la sintaxis exacta, así como información importante como qué parámetros no se pueden cambiar después, [se pueden consultar en los documentos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>El conjunto completo de parámetros, la sintaxis exacta, así como información importante como qué parámetros no se pueden cambiar después, [se pueden consultar en los documentos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
 ## Edición y eliminación de la infraestructura de red de un programa {#editing-deleting-program}
 
@@ -770,8 +768,7 @@ Si decide que necesita un tipo de infraestructura de red avanzada distinto del q
 
 >[!WARNING]
 >
-> Como resultado de este procedimiento se obtiene un tiempo de inactividad de los servicios de redes avanzadas entre la eliminación y la recreación.
-> Si el tiempo de inactividad puede causar un impacto comercial significativo, póngase en contacto con el servicio de atención al cliente para obtener ayuda, y describa lo que ya se ha creado y el motivo del cambio.
+> Como resultado de este procedimiento se obtiene un tiempo de inactividad de los servicios de redes avanzadas entre la eliminación y la recreación.Si el tiempo de inactividad causa un impacto comercial significativo, póngase en contacto con el servicio de atención al cliente para obtener ayuda, describiendo lo que ya se ha creado y el motivo del cambio.
 
 ## Configuración de red avanzada para otras regiones de publicación {#advanced-networking-configuration-for-additional-publish-regions}
 
@@ -779,7 +776,7 @@ Cuando se añade una región adicional a un entorno con las redes avanzadas ya c
 
 >[!NOTE]
 >
->Todas las regiones comparten la misma [configuración de redes avanzadas del entorno](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), por lo que no es posible enrutar el tráfico a diferentes destinos en función de la región desde la que sale el tráfico.
+>Todas las regiones comparten la misma [configuración de redes avanzadas del entorno](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Environment-Advanced-Networking-Configuration), por lo que no es posible enrutar el tráfico a diferentes destinos en función de la región desde la que sale el tráfico.
 
 ### Direcciones IP de salida dedicadas {#additional-publish-regions-dedicated-egress}
 
@@ -789,14 +786,14 @@ Si ya se ha habilitado una configuración de redes avanzadas en la región princ
 
 1. Si ha bloqueado la infraestructura de modo que la dirección IP de AEM dedicada esté incluida en la lista de permitidos, se recomienda deshabilitar temporalmente cualquier regla de denegación de dicha infraestructura. Si omite este paso, la infraestructura denegará temporalmente las solicitudes de las direcciones IP de la nueva región. Este paso no es necesario si ha bloqueado la infraestructura mediante un nombre de dominio completo (FQDN), como `p1234.external.adobeaemcloud.com`. Todas las regiones de AEM reciben tráfico de redes avanzadas desde el mismo FQDN.
 1. Cree la infraestructura de redes con alcance de programa para la región secundaria a través de una llamada del POST a la API Crear infraestructura de redes de Cloud Manager, tal como se describe en la documentación de redes avanzadas. La única diferencia en la configuración JSON de la carga útil en relación con la región principal es la propiedad de la región
-1. Si necesita bloquear su infraestructura por dirección IP para permitir el tráfico de AEM, agregue las direcciones IP que corresponden a `p1234.external.adobeaemcloud.com`. Debe haber una por región.
+1. Si necesita bloquear su infraestructura por dirección IP para permitir el tráfico de AEM, agregue las direcciones IP que corresponden a `p1234.external.adobeaemcloud.com`. Hay una por región.
 
 #### Las redes avanzadas aún no están configuradas en ninguna región {#not-yet-configured}
 
 El procedimiento es muy similar al de las instrucciones anteriores. Sin embargo, si el entorno de producción aún no se ha habilitado para las redes avanzadas, existe la oportunidad de probar la configuración habilitándola primero en un entorno de ensayo:
 
-1. Cree una infraestructura de redes para todas las regiones mediante la llamada de POST a la [API Crear infraestructura de red de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). La única diferencia en la configuración JSON de la carga útil en relación con la región principal es la propiedad de la región.
-1. Para el entorno de ensayo, habilite y configure las redes avanzadas del ámbito del entorno ejecutando `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Para obtener más información, consulte la [Documentación de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration).
+1. Cree una infraestructura de redes para todas las regiones mediante la llamada de POST a la [API Crear infraestructura de red de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Network-infrastructure/operation/createNetworkInfrastructure). La única diferencia en la configuración JSON de la carga útil en relación con la región principal es la propiedad de la región.
+1. Para el entorno de ensayo, habilite y configure las redes avanzadas del ámbito del entorno ejecutando `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Para obtener más información, consulte la [Documentación de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration).
 1. Si es necesario, bloquee la infraestructura externa, preferiblemente mediante FQDN (por ejemplo, `p1234.external.adobeaemcloud.com`). De lo contrario, puede hacerlo con la dirección IP
 1. Si el entorno de ensayo funciona según lo previsto, habilite y configure la configuración de redes avanzadas con un ámbito de entorno para producción.
 
@@ -806,13 +803,13 @@ El procedimiento es casi idéntico al de las instrucciones de direcciones IP de 
 
 ## Solución de problemas
 
-Tenga en cuenta que los siguientes puntos se proporcionan como directrices informativas y abarcan prácticas recomendadas para la resolución de problemas. El objetivo de estas recomendaciones es ayudar a diagnosticar y resolver los problemas de forma eficaz.
+Los siguientes puntos se proporcionan como directrices informativas y abarcan las prácticas recomendadas para la resolución de problemas. El objetivo de estas recomendaciones es ayudar a diagnosticar y resolver los problemas de forma eficaz.
 
 ### Agrupación de conexiones {#connection-pooling-advanced-networking}
 
-La agrupación de conexiones es una técnica adaptada para crear y mantener un repositorio de conexiones, que están listas para su uso inmediato por cualquier hilo que las requiera. Se pueden encontrar numerosas técnicas de agrupación de conexiones en varias plataformas y recursos en línea, cada una con sus propias ventajas y consideraciones. Adobe recomienda a los clientes que investiguen estas metodologías para identificar la más compatible con la arquitectura de su sistema.
+La agrupación de conexiones es una técnica diseñada para crear y mantener una colección de conexiones. Estas conexiones están disponibles para su uso inmediato por cualquier subproceso que las requiera. Hay varias técnicas de agrupación de conexiones disponibles, cada una con sus ventajas y consideraciones únicas. Adobe recomienda a los clientes que investiguen estas metodologías para identificar la más compatible con la arquitectura de su sistema.
 
-La implementación de una estrategia adecuada de agrupación de conexiones es una medida proactiva para corregir una supervisión común en la configuración del sistema, que a menudo conduce a un rendimiento subóptimo. Al establecer correctamente un grupo de conexiones, Adobe Experience Manager (AEM) puede mejorar la eficacia de las llamadas externas. Esto no solo reduce el consumo de recursos, sino que también mitiga el riesgo de interrupciones en el servicio y disminuye la probabilidad de se produzcan errores en las solicitudes al comunicarse con servidores de flujo ascendente.
+La implementación de una estrategia adecuada de agrupación de conexiones es una medida para abordar un problema común en la configuración del sistema, que a menudo conduce a un rendimiento reducido. Al establecer correctamente un grupo de conexiones, Adobe Experience Manager (AEM) puede mejorar la eficacia de las llamadas externas. Este método reduce el consumo de recursos, mitiga el riesgo de interrupciones en el servicio y disminuye la probabilidad de solicitudes fallidas al comunicarse con servidores externos.
 
 En función de esta información, Adobe recomienda revisar la configuración actual de AEM. Considere también utilizar intencionalmente la agrupación de conexiones junto con su configuración de redes avanzadas. Administrar el número de conexiones paralelas y reducir las conexiones obsoletas ayuda a optimizar el rendimiento de la red. Estas acciones reducen el riesgo de que los servidores proxy alcancen sus límites de conexión. Por lo tanto, esta implementación estratégica está diseñada para reducir la probabilidad de que las solicitudes no lleguen a los puntos finales externos.
 
@@ -830,7 +827,7 @@ El límite solo es para conexiones que utilizan redes avanzadas (salida en puert
 
 Si el cliente crea conexiones dinámicamente (por ejemplo, una o más para cada solicitud), un aumento en el tráfico puede provocar que las conexiones se disparen.
 
-##### ¿Podría haberse producido una situación similar en el pasado sin activar una alerta?
+##### ¿Se ha producido una situación similar en el pasado sin activar una alerta?
 
 Las alertas solo se envían cuando se alcanza el límite inferior.
 
@@ -844,7 +841,7 @@ No, tener un gran número de conexiones puede afectar negativamente y mucho al r
 
 ##### ¿El sistema AEM cierra automáticamente las conexiones después de un determinado período de tiempo?
 
-Sí, las conexiones se cierran en el nivel de JVM y en diferentes puntos de la infraestructura de redes. Sin embargo, este flujo de trabajo será demasiado tarde para cualquier servicio de producción. Las conexiones deben cerrarse explícitamente cuando ya no sean necesarias o devolverse al grupo cuando se use la agrupación de conexiones. De lo contrario, el consumo de recursos será demasiado alto y puede provocar el agotamiento de los recursos.
+Sí, las conexiones se cierran en el nivel de JVM y dentro de la infraestructura de red. Sin embargo, este flujo de trabajo será demasiado tarde para cualquier servicio de producción. Las conexiones deben cerrarse explícitamente cuando ya no sean necesarias o devolverse al grupo cuando se use la agrupación de conexiones. De lo contrario, el consumo de recursos será demasiado alto y puede provocar el agotamiento de los recursos.
 
 ##### Si se alcanza el límite máximo de conexiones, ¿afecta esto a las licencias y conlleva costes adicionales?
 
