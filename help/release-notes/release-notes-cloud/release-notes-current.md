@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 72bacdb87edd7dd6f73a7966b01665b52cea57eb
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '4226'
+source-wordcount: '4356'
 ht-degree: 16%
 
 ---
@@ -41,7 +41,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491493/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -124,7 +124,7 @@ Al mantener los metadatos de linaje de recursos, los equipos pueden mejorar la g
 
 **Integración de AEM con Workfront Planning y GenStudio for Performance Marketing para metadatos de campaña estándar**
 
-Cuando AEM Assets está integrado con [Workfront Planning y GenStudio for Performance Marketing](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), los campos de metadatos de campaña, incluidos Nombre de campaña, Región, Canal, Persona y Producto, ahora están disponibles en el carril de propiedades de la vista de recursos en una pestaña de solo lectura dedicada de Campaign. Cuando los usuarios de Workfront Planning conectan recursos de AEM a GenStudio con los objetos respectivos de Adobe GenStudio Workspace, se añaden automáticamente valores específicos (por ejemplo, un nombre de campaña específico) a los metadatos del recurso de AEM.
+Cuando AEM Assets está integrado con [Workfront Planning y GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), los campos de metadatos de campaña, incluidos Nombre de campaña, Región, Canal, Persona y Producto, ahora están disponibles en el carril de propiedades de la vista de recursos en una pestaña de solo lectura dedicada de Campaign. Cuando los usuarios de Workfront Planning conectan recursos de AEM a GenStudio con los objetos respectivos de Adobe GenStudio Workspace, se añaden automáticamente valores específicos (por ejemplo, un nombre de campaña específico) a los metadatos del recurso de AEM.
 
 La integración permite a los usuarios descubrir y buscar recursos rápidamente en función de los atributos de la campaña. Esta mejora mejora mejora la capacidad de búsqueda de recursos, optimiza los flujos de trabajo de administración de contenido y ayuda a los equipos a localizar los recursos adecuados para iniciativas de marketing específicas de forma más eficaz.
 
@@ -204,6 +204,13 @@ El editor de [comunicaciones interactivas (IC)](/help/forms/interactive-communic
 * **Configurar opciones desplegables para la interfaz de usuario asociada**: los campos desplegables de la interfaz de usuario asociada ahora utilizan un modelo de **enlace de opciones**. Los autores configuran **Enlazar a partir de datos** para listas de opciones dinámicas u opciones manuales estáticas, de modo que los asociados vean las opciones correctas y el valor preseleccionado. **Enlace de datos** no es compatible con los campos desplegables. Para obtener más información, consulte [Configurar opciones desplegables para la interfaz de usuario asociada](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md).
 
 * **Configurar variables enlazadas y no enlazadas para la interfaz de usuario asociada**: las variables enlazadas y no enlazadas de los componentes **Texto** ahora se pueden configurar para la interfaz de usuario asociada. Los autores eligen si los asociados deben editar todo el bloque de texto en línea en la vista previa del documento o introducir valores para variables individuales en el panel de entrada de datos. Los nombres de variables duplicados propagan los valores en todas las ocurrencias coincidentes en la vista previa. Para obtener más información, vea [Configurar variables enlazadas y no enlazadas para la interfaz de usuario asociada](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
+
+#### Opciones adicionales de CAPTCHA para la protección de bots
+
+AEM Forms ahora admite dos soluciones CAPTCHA adicionales para proteger Forms adaptable de bots y envíos de correo no deseado, además del reCAPTCHA de Google ya disponible. Esto le proporciona más opciones y flexibilidad para proteger los formularios.
+
+* **Torniquete Cloudflare**: Un CAPTCHA sin fricción que verifica a los usuarios a través de un desafío simple sin requerir interacción explícita, mejorando la experiencia del usuario. Para obtener más información, vea [Usar el torniquete en un formulario adaptable para componentes principales](/help/forms/integrate-adaptive-forms-turnstile-core-components.md) y [Usar el torniquete en un formulario adaptable para componentes de base](/help/forms/integrate-adaptive-forms-turnstile.md).
+* **hCaptcha**: Un CAPTCHA centrado en la privacidad que ofrece una alternativa fácil de usar con énfasis en la privacidad de datos, el equilibrio entre la seguridad y la experiencia del usuario. Para obtener más información, consulte [Usar hCaptcha en un formulario adaptable para componentes principales](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md) y [Usar hCaptcha en un formulario adaptable para componentes de base](/help/forms/integrate-adaptive-forms-hcaptcha.md).
 
 ### Funciones de usuario pionero
 
@@ -286,9 +293,9 @@ El servidor MCP local de Dispatcher permite que las herramientas de IA validen l
 
 Java 25 es la próxima versión de soporte a largo plazo (LTS) después de Java 21, que ofrece mejoras en rendimiento, productividad de desarrollador y seguridad:
 
-&#x200B;- **Rendimiento**: La reducción del espacio de memoria, la recolección de elementos no utilizados más eficiente y el calentamiento más rápido de JVM benefician las implementaciones nativas de la nube.
-&#x200B;- **Productividad del desarrollador**: la inicialización de objetos más limpia, la coincidencia de patrones más expresiva y la administración simplificada de tareas simultáneas reducen las plantillas y mejoran la claridad del código.
-&#x200B;- **Seguridad**: se ha modernizado la API de derivación de claves criptográficas para simplificar los flujos de trabajo de seguridad comunes.
+- **Rendimiento**: La reducción del espacio de memoria, la recolección de elementos no utilizados más eficiente y el calentamiento más rápido de JVM benefician las implementaciones nativas de la nube.
+- **Productividad del desarrollador**: la inicialización de objetos más limpia, la coincidencia de patrones más expresiva y la administración simplificada de tareas simultáneas reducen las plantillas y mejoran la claridad del código.
+- **Seguridad**: se ha modernizado la API de derivación de claves criptográficas para simplificar los flujos de trabajo de seguridad comunes.
 
 Para ayudar a las organizaciones a planificar las pruebas y la validación antes de la actualización necesaria del tiempo de ejecución de Java 25, Adobe proporciona las siguientes fechas objetivo. Cualquier actualización de esta cronología se comunicará mediante las notas de la versión.
 
@@ -316,7 +323,7 @@ Los casos de uso comunes incluyen los siguientes:
 * Modificar el formato de las respuestas de API de terceros (y tal vez añadir las respuestas de varias API) antes de enviarlas al explorador
 * Composición y muestra de HTML procesado por el servidor en Edge con contenido reunido de varios backend
 
-Siga [este tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/edge-functions/overview) para ver una explicación detallada de las variaciones de pila Java de Edge Delivery Services y AEM as a Cloud Service.
+Siga [este tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) para ver una explicación detallada de las variaciones de pila Java de Edge Delivery Services y AEM as a Cloud Service.
 
 *Al usar AEM Edge Functions Beta, reconoce que aún se encuentra en desarrollo y que no debe confiar en el correcto funcionamiento de la tecnología o en la disponibilidad de los datos. Esta función se proporciona tal cual,
 puede cambiar sin previo aviso y no está cubierto por los SLA de producción.*
@@ -367,10 +374,10 @@ AEM as a Cloud Service ahora es compatible con la exportación de telemetría ba
 
 Utilice esta integración para:
 
-&#x200B;- Investigar solicitudes lentas o fallidas
-&#x200B;- Seguimiento del estado de JVM y del uso de recursos a lo largo del tiempo
-&#x200B;- Creación de paneles y alertas para sus niveles de AEM
-&#x200B;- Correlación del comportamiento de AEM con otros servicios durante los incidentes
+- Investigar solicitudes lentas o fallidas
+- Seguimiento del estado de JVM y del uso de recursos a lo largo del tiempo
+- Creación de paneles y alertas para sus niveles de AEM
+- Correlación del comportamiento de AEM con otros servicios durante los incidentes
 
 Para unirte al alfa, envía un correo electrónico a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com), donde se describe tu caso de uso.
 

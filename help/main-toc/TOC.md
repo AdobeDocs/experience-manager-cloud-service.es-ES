@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '7565'
+source-wordcount: '7571'
 ht-degree: 83%
 
 ---
@@ -654,7 +654,7 @@ ht-degree: 83%
       + [Creación y uso compartido de carpetas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Recursos de marca de agua](/help/assets/watermark-assets.md)
-      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Procesamiento de recursos mediante API de [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Etiquetas de color para imágenes](/help/assets/color-tag-images.md)
       + [Administrar documentos PDF](/help/assets/manage-pdf-documents.md)
       + [Selector de destino de Micro-Frontend](/help/assets/destination-selector.md)
@@ -880,8 +880,8 @@ ht-degree: 83%
          + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
          + {hide-from-toc}[Configurar [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuración de almacenamiento de  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Conectar el formulario adaptable a la base de datos SQL de Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configuración de los servicios en la nube de Salesforce](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
@@ -936,8 +936,8 @@ ht-degree: 83%
             + [Configurar la página de redireccionamiento o el mensaje de agradecimiento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Crear formularios con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
             + [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Uso de hCaptcha en los componentes principales de un formulario formulario](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [Uso de Turnstile Captcha en los componentes principales de un formulario adaptable](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [Usar hCaptcha en un formulario adaptable para componentes principales](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Uso del torniquete en un formulario adaptable para componentes principales](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Añadir una configuración regional para Formularios adaptables basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
             + [Diseño de un esquema JSON para un formulario adaptable (componentes principales)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -987,8 +987,8 @@ ht-degree: 83%
             + {hide-from-toc}[Publicar y cancelar la publicación de formularios y documentos](/help/forms/publishing-unpublishing-forms.md)
          + Adición de componentes a un formulario adaptable {#add-components-to-an-adaptive-form}
             + [Uso de CAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms.md)
-            + [Utilice hCaptcha en un formulario adaptable](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [Uso de CAPTCHA de Turnstile en un formulario adaptable](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [Usar hCaptcha en un formulario adaptable para componentes de base](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [Utilizar el torniquete en un formulario adaptable para componentes de base](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Usar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
             + [Aplicar firma manuscrita](/help/forms/signing-forms-using-scribble.md)
             + [Adición de una tabla a un formulario adaptable](/help/forms/adaptive-forms-tables.md)
@@ -1358,7 +1358,7 @@ ht-degree: 83%
       + Creación{#authoring}
          + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=es)
          + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
-      + [Previsualización de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=es)
+      + [Previsualización de fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
    + Selector de fragmentos de contenido {#content-fragment-selector}
       + [Selector de fragmentos de contenido de Micro-Frontend: información general](/help/headless/content-fragment-selector/overview.md)

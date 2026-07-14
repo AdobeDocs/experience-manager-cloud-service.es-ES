@@ -1,22 +1,20 @@
 ---
 title: ¿Cómo se utiliza hCaptcha&reg; en los componentes principales de un formulario adaptable de AEM?
-description: Mejore la seguridad sin esfuerzo con el servicio hCaptcha®. Guía paso a paso en el interior
+description: Mejore la seguridad del formulario sin esfuerzo con el servicio hCaptcha&reg;. Guía paso a paso en el interior
 topic-tags: Adaptive Forms, author
-keywords: Captcha&reg; service, Forms adaptable, desafío CAPTCHA, prevención de bots, componentes principales, seguridad de envío de formularios, prevención de spam de formularios
+keywords: Captcha&reg; servicio, Forms adaptable, desafío CAPTCHA, prevención de bots, componentes principales, seguridad de envío de formularios, prevención de spam de formularios
 feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 41%
+source-wordcount: '979'
+ht-degree: 40%
 
 ---
 
 # Conecte su entorno AEM Forms con Chcaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
-
-<span class="preview"> Esta característica se encuentra en el programa para usuarios que la adoptaron por anticipado. Puede enviar un correo electrónico a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa para primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
 CAPTCHA (prueba de Turing completamente automática y pública para diferenciar ordenadores de humanos) es un programa que se utiliza comúnmente en transacciones en línea para distinguir entre humanos y programas o bots automatizados. Plantea un desafío y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el sitio. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o con fines malintencionados.
 
@@ -60,8 +58,7 @@ Para integrar AEM Forms con el servicio hCaptcha®, realice los siguientes pasos
 1. Configure Cloud Service:
    1. En la instancia de autor de AEM, vaya a ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** y seleccione **[!UICONTROL hCaptcha®]**.
       ![hCaptcha® en la interfaz de usuario](assets/hcaptcha-in-ui.png)
-   1. Seleccione un contenedor de configuración, creado o actualizado, como se describe en la sección anterior. Seleccione **[!UICONTROL Crear]**.
-      ![Configuración hCaptcha®](assets/config-hcaptcha.png)
+   1. Seleccione un contenedor de configuración, creado o actualizado, como se describe en la sección anterior. Seleccione **[!UICONTROL Crear]**.      ![Configuración hCaptcha®](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]** y **[!UICONTROL Secret Key]** para el servicio hCaptcha® [obtenido en Prerequisite](#prerequisite). Seleccione **[!UICONTROL Crear]**.
 
       ![Configure Cloud Service para conectar su entorno de AEM Forms con Chcaptcha®](assets/create-hcaptcha-config.png)

@@ -1,21 +1,19 @@
 ---
-title: ¿Cómo se utiliza el torniquete en un formulario adaptable de AEM?
+title: ¿Cómo se utiliza el torniquete en los componentes de base de un formulario adaptable de AEM?
 description: Mejore la seguridad de los formularios con el servicio Turnstile sin esfuerzo. Guía paso a paso en el interior
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 26%
+source-wordcount: '942'
+ht-degree: 28%
 
 ---
 
 # Integración de CAPTCHA de torniquete con Forms adaptable
-
-<span class="preview"> Esta característica se encuentra en el programa para usuarios que la adoptaron por anticipado. Puede enviar un correo electrónico a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa para primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
 CAPTCHA (prueba de Turing completamente automática y pública para diferenciar ordenadores de humanos) es un programa que se utiliza comúnmente en transacciones en línea para distinguir entre humanos y programas o bots automatizados. Plantea un desafío y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el sitio. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o con fines malintencionados.
 
@@ -27,7 +25,7 @@ AEM Forms as a Cloud Service es compatible con las siguientes soluciones CAPTCHA
 
 ## Integración del entorno de AEM Forms con Turnstile Captcha
 
-El Turnstile Captcha de Cloudflare es una medida de seguridad que tiene como objetivo proteger los formularios y sitios de bots automatizados, ataques maliciosos, spam y tráfico automatizado no deseado. Presenta una casilla de verificación en el envío del formulario para verificar que son humanos, antes de permitirles enviar el formulario. AEM Forms as a Cloud Service es compatible con Turnstile Captcha en Forms adaptable.
+El Turnstile Captcha de Cloudflare es una medida de seguridad que tiene como objetivo proteger los formularios y sitios de bots automatizados, ataques maliciosos, spam y tráfico automatizado no deseado. Presenta una casilla de verificación en el envío del formulario para verificar que son humanos, antes de permitir enviar el formulario. AEM Forms as a Cloud Service es compatible con Turnstile Captcha en Forms adaptable.
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
@@ -54,8 +52,7 @@ Para configurar Turnstile para AEM Forms, necesita obtener la clave del sitio [T
 1. Configure Cloud Service:
    1. En la instancia de autor de AEM, vaya a ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** y seleccione **[!UICONTROL Turnstile]**.
       ![Torniquete en ui](assets/turnstile-in-ui.png)
-   1. Seleccione un contenedor de configuración, creado o actualizado, como se describe en la sección anterior. Seleccione **[!UICONTROL Crear]**.
-      ![Turnstile de configuración](assets/config-hcaptcha.png)
+   1. Seleccione un contenedor de configuración, creado o actualizado, como se describe en la sección anterior. Seleccione **[!UICONTROL Crear]**.      ![Turnstile de configuración](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Tipo de widget]** como administrado; el tipo de widget puede cambiar según la clave obtenida en el requisito previo, **[!UICONTROL Título]**, **[!UICONTROL Nombre]**, **[!UICONTROL Clave de sitio]** y **[!UICONTROL Clave secreta]** para el servicio de torniquete [obtenido en el requisito previo](#prerequisite). Seleccione **[!UICONTROL Crear]**.
 
       ![Configure Cloud Service para conectar su entorno de AEM Forms con Turnstile](assets/config-turntstile.png)
