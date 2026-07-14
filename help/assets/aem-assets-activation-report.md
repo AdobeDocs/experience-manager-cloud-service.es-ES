@@ -4,9 +4,9 @@ description: Definiciones para métricas del informe de activación de AEM Asset
 role: Admin
 hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
-source-git-commit: 0b5e61f75a97bd31da034ebf282779a634217366
+source-git-commit: 49f94bdbd1c0fdd96e6d42c534900334af5c946d
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Este artículo desglosa las métricas detrás de ese recorrido, agrupadas por la
 
 Juntas, estas métricas conectan la actividad de recursos interna con el alcance y la participación externos, lo que le ayuda a ver cómo las operaciones de contenido se traducen en resultados comerciales reales.
 
-Este es solo el comienzo del recorrido con los AEM Assets, y estas métricas seguirán evolucionando a la vez. Nos encantaría que sus comentarios se utilizaran, por lo que podemos seguir haciendo que este informe sea más útil para usted.
+Este es solo el comienzo del recorrido con los AEM Assets, y estas métricas seguirán evolucionando a la vez. Necesitaríamos sus comentarios a medida que los vaya usando, para poder seguir haciendo que este informe sea más útil para usted.
 
 **Nota**: si deseas revisarlos con el equipo de ingeniería/producto de Adobe o deseas recibir comentarios, envía un correo electrónico a `GRP-AEM-DAM-METRICS-BETA@ADOBE.COM`.
 

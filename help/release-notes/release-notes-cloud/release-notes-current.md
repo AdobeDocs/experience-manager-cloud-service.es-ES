@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
+source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
 workflow-type: tm+mt
-source-wordcount: '4356'
+source-wordcount: '4455'
 ht-degree: 16%
 
 ---
@@ -41,7 +41,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491493/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -124,13 +124,21 @@ Al mantener los metadatos de linaje de recursos, los equipos pueden mejorar la g
 
 **Integración de AEM con Workfront Planning y GenStudio for Performance Marketing para metadatos de campaña estándar**
 
-Cuando AEM Assets está integrado con [Workfront Planning y GenStudio for Performance Marketing](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), los campos de metadatos de campaña, incluidos Nombre de campaña, Región, Canal, Persona y Producto, ahora están disponibles en el carril de propiedades de la vista de recursos en una pestaña de solo lectura dedicada de Campaign. Cuando los usuarios de Workfront Planning conectan recursos de AEM a GenStudio con los objetos respectivos de Adobe GenStudio Workspace, se añaden automáticamente valores específicos (por ejemplo, un nombre de campaña específico) a los metadatos del recurso de AEM.
+Cuando AEM Assets está integrado con [Workfront Planning y GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), los campos de metadatos de campaña, incluidos Nombre de campaña, Región, Canal, Persona y Producto, ahora están disponibles en el carril de propiedades de la vista de recursos en una pestaña de solo lectura dedicada de Campaign. Cuando los usuarios de Workfront Planning conectan recursos de AEM a GenStudio con los objetos respectivos de Adobe GenStudio Workspace, se añaden automáticamente valores específicos (por ejemplo, un nombre de campaña específico) a los metadatos del recurso de AEM.
 
 La integración permite a los usuarios descubrir y buscar recursos rápidamente en función de los atributos de la campaña. Esta mejora mejora mejora la capacidad de búsqueda de recursos, optimiza los flujos de trabajo de administración de contenido y ayuda a los equipos a localizar los recursos adecuados para iniciativas de marketing específicas de forma más eficaz.
 
 >[!IMPORTANT]
 >
 >Esta función está disponible como función de disponibilidad limitada y requiere licencias para Workfront Planning y GenStudio for Performance Marketing. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
+
+**Integración de contenido con tecnología de IA y automatización de supply chain**
+
+Utilice un agente con tecnología de IA para configurar y automatizar las migraciones de contenido y la sincronización recurrente entre repositorios de contenido admitidos. El agente le guía a través de la configuración de la conexión, la asignación de metadatos y la validación con ejecuciones en seco antes de transferir contenido. Al eliminar los procesos manuales y las integraciones personalizadas, esta capacidad acelera la incorporación, simplifica la sincronización continua y ayuda a mantener la homogeneidad de los activos y metadatos en todos los sistemas.
+
+>[!IMPORTANT]
+>
+>Esta función está disponible como función de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
 
 
 ### Nuevas funciones en Dynamic Media con funciones de OpenAPI {#new-features-dynamic-media-openapi}
@@ -293,9 +301,9 @@ El servidor MCP local de Dispatcher permite que las herramientas de IA validen l
 
 Java 25 es la próxima versión de soporte a largo plazo (LTS) después de Java 21, que ofrece mejoras en rendimiento, productividad de desarrollador y seguridad:
 
-&#x200B;- **Rendimiento**: La reducción del espacio de memoria, la recolección de elementos no utilizados más eficiente y el calentamiento más rápido de JVM benefician las implementaciones nativas de la nube.
-&#x200B;- **Productividad del desarrollador**: la inicialización de objetos más limpia, la coincidencia de patrones más expresiva y la administración simplificada de tareas simultáneas reducen las plantillas y mejoran la claridad del código.
-&#x200B;- **Seguridad**: se ha modernizado la API de derivación de claves criptográficas para simplificar los flujos de trabajo de seguridad comunes.
+- **Rendimiento**: La reducción del espacio de memoria, la recolección de elementos no utilizados más eficiente y el calentamiento más rápido de JVM benefician las implementaciones nativas de la nube.
+- **Productividad del desarrollador**: la inicialización de objetos más limpia, la coincidencia de patrones más expresiva y la administración simplificada de tareas simultáneas reducen las plantillas y mejoran la claridad del código.
+- **Seguridad**: se ha modernizado la API de derivación de claves criptográficas para simplificar los flujos de trabajo de seguridad comunes.
 
 Para ayudar a las organizaciones a planificar las pruebas y la validación antes de la actualización necesaria del tiempo de ejecución de Java 25, Adobe proporciona las siguientes fechas objetivo. Cualquier actualización de esta cronología se comunicará mediante las notas de la versión.
 
@@ -323,7 +331,7 @@ Los casos de uso comunes incluyen los siguientes:
 * Modificar el formato de las respuestas de API de terceros (y tal vez añadir las respuestas de varias API) antes de enviarlas al explorador
 * Composición y muestra de HTML procesado por el servidor en Edge con contenido reunido de varios backend
 
-Siga [este tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/edge-functions/overview) para ver una explicación detallada de las variaciones de pila Java de Edge Delivery Services y AEM as a Cloud Service.
+Siga [este tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) para ver una explicación detallada de las variaciones de pila Java de Edge Delivery Services y AEM as a Cloud Service.
 
 *Al usar AEM Edge Functions Beta, reconoce que aún se encuentra en desarrollo y que no debe confiar en el correcto funcionamiento de la tecnología o en la disponibilidad de los datos. Esta función se proporciona tal cual,
 puede cambiar sin previo aviso y no está cubierto por los SLA de producción.*
@@ -374,10 +382,10 @@ AEM as a Cloud Service ahora es compatible con la exportación de telemetría ba
 
 Utilice esta integración para:
 
-&#x200B;- Investigar solicitudes lentas o fallidas
-&#x200B;- Seguimiento del estado de JVM y del uso de recursos a lo largo del tiempo
-&#x200B;- Creación de paneles y alertas para sus niveles de AEM
-&#x200B;- Correlación del comportamiento de AEM con otros servicios durante los incidentes
+- Investigar solicitudes lentas o fallidas
+- Seguimiento del estado de JVM y del uso de recursos a lo largo del tiempo
+- Creación de paneles y alertas para sus niveles de AEM
+- Correlación del comportamiento de AEM con otros servicios durante los incidentes
 
 Para unirte al alfa, envía un correo electrónico a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com), donde se describe tu caso de uso.
 
