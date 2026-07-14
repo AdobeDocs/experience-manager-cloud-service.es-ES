@@ -7,9 +7,9 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="(Se aplica a AEM Forms)."
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 8364530ae83289156c1dfec2f9b1cb5aa445521d
 workflow-type: tm+mt
-source-wordcount: '7904'
+source-wordcount: '8255'
 ht-degree: 18%
 
 ---
@@ -25,7 +25,7 @@ El análisis de formularios va más allá del seguimiento simple del envío para
 
 ### Conceptos básicos de Form Analytics
 
-**Seguimiento de interacción de usuario**
+**Seguimiento de interacción del usuario**
 El análisis de formularios captura información detallada sobre cómo los usuarios interactúan con los formularios, incluido el tiempo empleado en cada campo, los movimientos del ratón, el comportamiento de desplazamiento y los patrones de interacción. Estos datos granulares ayudan a identificar problemas de uso y oportunidades de optimización.
 
 **Análisis del patrón de comportamiento**
@@ -85,7 +85,7 @@ El análisis de formulario efectivo se centra en métricas que afectan directame
 
 La implementación del análisis de formularios ofrece un valor empresarial cuantificable en varias dimensiones. Las organizaciones que aprovechan los análisis de formulario suelen ver mejoras significativas en las tasas de conversión, la satisfacción del usuario y la eficiencia operativa.
 
-### &#x200B;1. Reducir el abandono de formularios y aumentar las conversiones
+### &#x200B;1. Reducción del abandono de formularios y aumento de las conversiones
 
 El abandono de formularios es un desafío empresarial fundamental que afecta directamente a los ingresos y a la generación de posibles clientes:
 
@@ -97,7 +97,7 @@ El abandono de formularios es un desafío empresarial fundamental que afecta dir
 
 **Impacto empresarial**: Las empresas suelen ver mejoras significativas en las tasas de conversión de formularios después de implementar optimizaciones impulsadas por análisis.
 
-### &#x200B;2. Mejorar la experiencia del usuario y la satisfacción
+### &#x200B;2. Mejorar la experiencia y la satisfacción del usuario
 
 El análisis de formularios proporciona una perspectiva profunda del comportamiento del usuario y los puntos problemáticos:
 
@@ -109,7 +109,7 @@ El análisis de formularios proporciona una perspectiva profunda del comportamie
 
 **Impacto empresarial**: La experiencia mejorada del usuario conduce a puntuaciones de satisfacción del cliente más altas y a una mayor lealtad a la marca.
 
-### &#x200B;3. Realice Mejoras En Los Formularios Basadas En Datos
+### &#x200B;3. Realizar mejoras en formularios basados en datos
 
 Reemplace las conjeturas por datos concretos al optimizar formularios:
 
@@ -121,7 +121,7 @@ Reemplace las conjeturas por datos concretos al optimizar formularios:
 
 **Impacto en la empresa**: La optimización basada en datos suele ofrecer resultados significativamente mejores que los cambios basados en la intuición.
 
-### &#x200B;4. Aumentar la calidad del plomo y la eficiencia de ventas
+### &#x200B;4. Aumentar la calidad del cliente potencial y la eficiencia de ventas
 
 El análisis de formularios ayuda a optimizar no solo la cantidad, sino también la calidad de los envíos de formularios:
 
@@ -145,7 +145,7 @@ El análisis de formularios mejora las operaciones en toda la organización:
 
 **Impacto en la empresa**: las mejoras operativas pueden reducir significativamente los costos de soporte relacionados con el formulario.
 
-### &#x200B;6. Ventaja competitiva a través de Forms superior
+### &#x200B;6. Ventaja Competitiva A Través De Forms Superior
 
 El análisis de formularios permite a las organizaciones crear las mejores experiencias de formulario de su clase:
 
@@ -372,7 +372,7 @@ Adobe Analytics proporciona funciones de creación de informes de nivel empresar
 La integración de Adobe Analytics y AEM Forms ofrece ventajas únicas:
 
 - **Plataforma de datos unificada**: combine análisis de formulario con análisis de marketing y sitios web más amplios
-- **Integración de Adobe Experience Cloud**: aproveche las conexiones con Adobe Target, Campaign y otras soluciones de Experience Cloud
+- **Integración de Adobe Experience Cloud**: Aproveche las conexiones con Adobe Target, Campaign y otras soluciones de Experience Cloud
 - **Seguridad empresarial**: Cumplimiento integrado de las regulaciones de privacidad de datos y los requisitos de seguridad empresarial
 - **Arquitectura escalable**: Controle interacciones de formularios de gran volumen sin afectar al rendimiento
 - **Soporte profesional**: acceso a los servicios de optimización y soporte empresarial de Adobe
@@ -498,7 +498,7 @@ Antes de comenzar la implementación de Forms Analytics, asegúrese de que su en
 
 **Acceso a Adobe Experience Cloud**
 
-- Organización de Adobe Experience Cloud válida con licencias de Adobe Analytics
+- Organización válida de Adobe Experience Cloud con licencias de Adobe Analytics
 - Acceso administrativo a entornos de Adobe Analytics y AEM Forms
 - Acceso a Adobe Launch (recopilación de datos) para la administración y configuración de etiquetas
 
@@ -523,7 +523,7 @@ Antes de comenzar la implementación de Forms Analytics, asegúrese de que su en
 
 ### Guía de implementación paso a paso
 
-#### &#x200B;1. Configuración de Adobe Analytics {#Configure-adobe-analytics}
+#### &#x200B;1. Configuración de Adobe Analytics {#Configure-adobe-analytics}
 
 Antes de configurar [!DNL Adobe Analytics], cree lo siguiente:
 
@@ -561,22 +561,23 @@ Tras instalar la extensión **[!UICONTROL Adobe Experience Manager Forms]**, pue
 <table>
  <tbody>
   <tr>
-   <td>FieldName</th>
-   <td>FieldTitle</th>
-   <td>FormInstance</th>
-  </tr>
-  <tr>
-   <td>FormName<br /> </td>
-   <td>FormTitle<br /> </td>
+   <td>PageTitle</td>
+   <td>PageURL</td>
    <td>PageName</td>
   </tr>
   <tr>
-   <td>PageURL<br /> </td>
-   <td>PanelTitle<br /> </td>
-   <td>TimeSpent</td>
+   <td>FieldTitle</td>
+   <td>PanelTitle</td>
+   <td></td>
   </tr>
  </tbody>
 </table>
+
+Los elementos de datos **PageTitle**, **PageURL**, **PageName**, **FieldTitle** y **PanelTitle** capturan el contexto de nivel de campo y página para formularios adaptables de varias páginas. Use **PageTitle** y **PageName** para identificar la página o panel del formulario actual, **PageURL** para registrar la dirección URL donde se representa el formulario y **FieldTitle** y **PanelTitle** para informar de la etiqueta del campo activo y su panel contenedor.
+
+>[!NOTE]
+>
+> Además, para los formularios adaptables creados con [componentes de base](/help/forms/creating-adaptive-form.md), si un usuario desea ver los datos en la consola del explorador, utilice el objeto `window.formAnalytics`.
 
 Realice los siguientes pasos para configurar los elementos de datos:
 
@@ -584,7 +585,7 @@ Realice los siguientes pasos para configurar los elementos de datos:
 
 1. Seleccione **[!UICONTROL Crear nuevo elemento de datos]**.
 
-1. Especifique un nombre para el elemento de datos. Por ejemplo, título de formulario para el tipo de elemento de datos FormTitle.
+1. Especifique un nombre para el elemento de datos. Por ejemplo, Título de página para el tipo de elemento de datos Título de página.
 
 1. Especifique **[!UICONTROL Adobe Experience Manager Forms]** como el nombre de la extensión.
 
@@ -643,8 +644,7 @@ Realice los siguientes pasos para crear reglas basadas en la extensión **[!UICO
 
 1. En la sección **[!UICONTROL Acciones]**, seleccione + y especifique **[!UICONTROL Adobe Analytics]** como el nombre de la extensión.
 
-1. Seleccione **[!UICONTROL Borrar variables]** como tipo de acción. Seleccione **[!UICONTROL Conservar cambios]**.  Después de realizar estos pasos, la sección **[!UICONTROL Acciones]** se muestra de la siguiente forma:
-   ![Configuración de acciones](assets/actions-config.png)
+1. Seleccione **[!UICONTROL Borrar variables]** como tipo de acción. Seleccione **[!UICONTROL Conservar cambios]**. Después de realizar estos pasos, la sección **[!UICONTROL Acciones]** se muestra de la siguiente forma:   ![Configuración de acciones](assets/actions-config.png)
 
    Personalice la sección **[!UICONTROL Acciones]** según sus necesidades. Por ejemplo, puede definir dos pasos **Enviar señalización** en un flujo de acciones para enviar datos a [!DNL Adobe Analytics] y que se trate como una vista de página en un paso y enviar datos a [!DNL Adobe Analytics] y que no se trate como una vista de página en el segundo paso.
 
@@ -671,7 +671,7 @@ Siga estos pasos para publicar la configuración:
 
 1. En la sección **[!UICONTROL Desarrollo]**, seleccione ![Más opciones](assets/more-options-icon.svg) y, luego, **[!UICONTROL Aprobar y publicar en producción]**.
 
-1. Confirme los cambios y el flujo de publicación se muestra en la sección **[!UICONTROL Publicado]** 
+1. Confirme los cambios y el flujo de publicación se muestra en la sección **[!UICONTROL Publicado]**
 
 ![Flujo de publicación](assets/publish-flow.png)
 
@@ -706,7 +706,7 @@ Para usar la configuración [!DNL Adobe Launch] en un formulario adaptable exist
 1. En la instancia de autor de AEM Forms, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 1. Seleccione el formulario adaptable y seleccione **[!UICONTROL Propiedades]**.
 1. En la pestaña **[!UICONTROL Básico]**, seleccione el [contenedor de configuración](#create-adobe-launch-configuration) utilizado al crear la configuración de Adobe Launch.
-1. Seleccione **[!UICONTROL Guardar y cerrar]**.  El formulario adaptable está habilitado para [!DNL Adobe Analytics].
+1. Seleccione **[!UICONTROL Guardar y cerrar]**. El formulario adaptable está habilitado para [!DNL Adobe Analytics].
 1. Publicar el formulario.
 
 Tras habilitar [!DNL Adobe Analytics] para un formulario adaptable, puede [validar](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=es#validate-the-page-view-beacon) si hay un flujo de eventos de datos adecuado entre AEM Forms y [!DNL Adobe Analytics]. La integración de AEM Forms con Adobe Analytics ha finalizado. Ahora puede [configurar y ver informes en Adobe Analytics](#view-reports-adobe-analytics).
