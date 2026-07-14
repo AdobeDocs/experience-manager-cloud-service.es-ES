@@ -4,10 +4,10 @@ description: La herramienta de copia de contenido permite a los usuarios copiar 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: e0b07719cbafdd0b19d597db83d319c50fb993cd
+source-git-commit: c8eb49a463fffa144e2c91e4b82ea219ade7feb6
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 25%
+source-wordcount: '1628'
+ht-degree: 21%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 25%
 La herramienta de copia de contenido permite a los usuarios copiar contenido mutable On-demand desde sus entornos de producción en AEM as a Cloud Service a entornos más bajos para realizar pruebas.
 
 >[!NOTE]
->Aunque el flujo de copia de contenido principal va desde entornos superiores a entornos inferiores, una capacidad adicional - **Flujo de avance** - permite copiar desde entornos inferiores que no sean de producción a entornos superiores que no sean de producción (por ejemplo, Desarrollo → ensayo, RDE → ensayo). Consulte [Limitaciones](#limitations) para obtener más información, incluidos los requisitos de disponibilidad.
+>El flujo de copia del contenido principal va de entornos más altos a entornos más bajos. **Flujo de reenvío** también permite copiar desde entornos inferiores que no sean de producción a entornos superiores que no sean de producción (por ejemplo, Desarrollo a Ensayo o RDE a Ensayo). Consulte [Limitaciones](#limitations) para obtener detalles.
 
 ## Introducción {#introduction}
 
@@ -32,7 +32,7 @@ Un conjunto de contenido define el contenido que se va a copiar. Un conjunto de 
 /etc/clientlibs/fd/themes
 ```
 
-Al copiar contenido, el entorno de origen es la fuente de información.
+Al copiar contenido, el entorno de origen es la fuente de datos principal.
 
 * Si las rutas de origen y destino coinciden, el contenido del origen sobrescribe el contenido modificado en el entorno de destino.
 * Si las rutas son diferentes, el contenido del origen se combinará con el contenido del destino.
@@ -50,7 +50,7 @@ Para obtener más información sobre los permisos y cómo establecerlos, consult
 
 ## Creación de un conjunto de contenido {#create-content-set}
 
-Para poder copiar cualquier contenido, se debe definir un conjunto de contenido. Una vez definido, los conjuntos de contenido se pueden reutilizar para copiar contenido. Siga estos pasos para poder crear un conjunto de contenido.
+Para poder copiar cualquier contenido, se debe definir un conjunto de contenido. Una vez definido, los conjuntos de contenido se pueden reutilizar para copiar contenido. Para crear un conjunto de contenido, siga estos pasos.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
 
@@ -86,7 +86,7 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 
 1. Si es necesario, puede editar las rutas especificadas.
 
-   1. Haga clic en la X situada junto a las subrutas excluidas para poder eliminarlas.
+   1. Haga clic en la X situada junto a las subrutas excluidas para eliminarlas.
    1. Haga clic en el botón de los tres puntos situado junto a las rutas para mostrar las opciones **Editar** y **Eliminar**.
 
    ![Edición de la lista de rutas](assets/add-content-set-excluded-paths.png)
@@ -97,11 +97,11 @@ A partir de ahora, se puede utilizar el conjunto de contenido para copiar conten
 
 ## Edición de un conjunto de contenido {#edit-content-set}
 
-1. Siga los mismos pasos que para la creación de un paso de contenido. En lugar de hacer clic en **Agregar conjunto de contenido**, seleccione un conjunto existente de la consola y seleccione **Editar** en el menú de los tres puntos.
+1. Siga pasos similares a los que se siguen al crear un conjunto de contenido. En lugar de hacer clic en **Agregar conjunto de contenido**, seleccione un conjunto existente de la consola y seleccione **Editar** en el menú de los tres puntos.
 
 ![Editar conjunto de contenido](assets/edit-content-set.png)
 
-1. Al editar el conjunto de contenido, puede ampliar las rutas configuradas para mostrar las subrutas excluidas.
+1. Para mostrar las subrutas excluidas, puede expandir las rutas configuradas al editar el conjunto de contenido.
 
 ## Copiar contenido {#copy-content}
 
@@ -112,7 +112,7 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
 
 **Para copiar contenido:**
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
 
 1. En la página **Información general**, vaya a **Entornos** > **Conjuntos de contenido**.
 
@@ -132,19 +132,18 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
 
 1. En el cuadro de diálogo **Copiar contenido**, especifique el origen y el destino de la acción de copia de contenido.
 
-   ![Copia de contenido](assets/copying-content.png)
+   ![Copia de contenido](/help/implementing/developing/tools/assets/copy-content2.png)
 
-   * El contenido solo se puede copiar de un entorno superior a un entorno inferior o entre entornos de desarrollo/RDE donde la jerarquía de entornos es la siguiente (de mayor a menor):
+   * El contenido se puede copiar desde un entorno superior a un entorno inferior, entre entornos de desarrollo y de RDE, o desde un entorno inferior que no sea de producción a un entorno superior que no sea de producción (flujo de avance). La jerarquía de entornos es la siguiente, de mayor a menor:
       * Producción
       * Ensayo
       * Desarrollo/RDE
-   * De forma predeterminada, la copia de contenido entre programas está desactivada. Sin embargo, si el cliente lo solicita, se puede habilitar, por lo que hay disponible un campo de entrada adicional de **Programa de destino**.
+   * La copia de contenido entre programas está disponible de forma predeterminada. En la sección **Destino**, seleccione un **Programa** y luego el entorno de destino.
 
 1. (Opcional) Si lo desea, configure lo siguiente:
 
    * **Incluir listas de control de acceso**: seleccione esta opción si desea copiar los permisos de control de acceso del contenido junto con el contenido.
-   * **Borrar**: seleccione esta opción para eliminar el contenido existente en el destino antes de iniciar la importación, de modo que pueda comenzar desde un estado limpio y evitar conflictos con contenido preexistente. Si deja **Borrar** sin seleccionar, Cloud Manager importa el contenido nuevo sobre el contenido de destino existente. Aparece un mensaje de confirmación antes de que comience el borrado y Cloud Manager registra la acción de borrado y los detalles de importación para rastrear.
-     ![Copia de contenido](assets/content_copy_wipe-destination.png)
+   * **Borrar**: seleccione esta opción para eliminar el contenido existente en el destino antes de iniciar la importación, de modo que pueda comenzar con un estado vacío y evitar conflictos con el contenido existente. Si deja **Borrar** sin seleccionar, Cloud Manager importa el contenido nuevo sobre el contenido de destino existente. Aparece un mensaje de confirmación antes de que comience el borrado y Cloud Manager registra la acción de borrado y los detalles de importación para rastrear.     ![Copia de contenido](assets/content_copy_wipe-destination.png)
       * Al elegir la opción **Borrar destino antes de importar** y al hacer clic en **Copiar**, aparecerá una ventana emergente con una advertencia donde tendrá las opciones para:
          * **Cancelar** (en este caso no se iniciará el flujo de **Copiar contenido**)
          * **Confirmar** (el flujo de **Copiar contenido** se iniciará y el contenido del destino se borrará)
@@ -154,8 +153,8 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
 
    * **Directiva de error en la importación de paquetes** Seleccione la directiva que se usará al importar paquetes:
      ![Copia de contenido](assets/content-copy-import-policy.png)
-      * **Detener en el primer error**: modo predeterminado, se detendrá después del primer error encontrado
-      * **Continuar con los paquetes restantes**: continuará el proceso de importación, incluso después de producirse un error. Los paquetes (y su contenido) que no se realizaron correctamente se encuentran en los registros de importación
+      * **Detener en el primer error**: modo predeterminado, se detiene después del primer error encontrado.
+      * **Continuar con los paquetes restantes**: Continúa el proceso de importación, incluso después de un error. Los paquetes (y su contenido) que no se realizaron correctamente se encuentran en los registros de importación
 
 1. Haga clic en **Copiar**.
 
@@ -217,13 +216,13 @@ Los registros se descargan en el equipo local.
 La herramienta de copia de contenido tiene las siguientes limitaciones.
 
 * La herramienta de copia de contenido admite dos modos de flujo:
-   1. Flujo descendente: el contenido se puede copiar desde entornos superiores a entornos inferiores (por ejemplo, Producción → Ensayo, Ensayo → Desarrollo/RDE).
-   2. Flujo de avance (nueva función): el contenido también se puede copiar desde un entorno inferior que no sea de producción a un entorno superior que no sea de producción (por ejemplo, Desarrollo → fase, EDR → fase). Esta función solo está disponible bajo solicitud explícita y permanece habilitada hasta que se solicite explícitamente que se deshabilite. Los entornos de producción nunca son destinos válidos para el flujo de reenvío.
+   1. Flujo descendente: el contenido se puede copiar desde entornos superiores a entornos inferiores (por ejemplo, Producción → ensayo, Fase → desarrollo/RDE).
+   2. Flujo de reenvío: el contenido también se puede copiar desde un entorno inferior que no sea de producción a un entorno superior que no sea de producción (por ejemplo, Desarrollo en fase o RDE en fase). Los entornos de producción nunca son destinos válidos para el flujo de reenvío.
 * El contenido solo se puede copiar desde y hacia los servicios de creación.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
 * Se pueden especificar hasta 50 rutas por conjunto de contenido. No hay limitación en las rutas excluidas.
 * No utilice la herramienta de copia de contenido como herramienta de clonación o creación de reflejo porque no puede realizar el seguimiento del contenido movido o eliminado en el origen.
 * La herramienta de copia de contenido no tiene capacidad de control de versiones y no puede detectar automáticamente el contenido modificado o creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
-   * Si desea actualizar el entorno de destino solo con cambios de contenido, desde la última operación de copia de contenido, debe crear un conjunto de contenido. A continuación, especifique las rutas en la instancia de origen en las que se han realizado cambios desde la última operación de copia de contenido.
+   * Si desea actualizar el entorno de destino con cambios de contenido desde la última operación de copia de contenido, debe utilizar un conjunto de contenido existente. A continuación, especifique las rutas en la instancia de origen en las que se han realizado cambios desde la última operación de copia de contenido.
 * La información de la versión no se incluye en una copia de contenido.
 * [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) pueden especificar campos de referencia basados en identificadores únicos universales (UUID). Estos UUID son específicos del repositorio, por lo que la herramienta de copia de contenido vuelve a calcular estos UUID en el entorno de destino al copiar fragmentos de contenido.

@@ -4,9 +4,9 @@ description: Obtenga información acerca de la versión de Cloud Manager 2026.7.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
+source-git-commit: c8eb49a463fffa144e2c91e4b82ea219ade7feb6
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -47,6 +47,8 @@ Un nuevo modelo de compilación compila solo los módulos modificados (en lugar 
 
 * **Copia de contenido: flujo de reenvío y entre programas**\
   Cloud Manager **Content Copy**, que permite a los equipos copiar contenido entre entornos de AEM sin una implementación, incluye dos funcionalidades disponibles para todos los programas. La compatibilidad entre programas permite copiar contenido en diferentes programas de Cloud Manager, no solo dentro del mismo programa. El Flujo de avance elimina la restricción direccional, lo que permite copiar el contenido de cualquier entorno a cualquier otro, incluso desde entornos más bajos hacia arriba.
+
+  Para obtener más información, consulte [La herramienta de copia de contenido](/help/implementing/developing/tools/content-copy.md).
 
 
 ## Programas Beta {#private-beta-program}
