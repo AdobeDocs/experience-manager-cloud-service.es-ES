@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 72bacdb87edd7dd6f73a7966b01665b52cea57eb
+source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
 workflow-type: tm+mt
-source-wordcount: '4226'
+source-wordcount: '4455'
 ht-degree: 16%
 
 ---
@@ -132,6 +132,14 @@ La integración permite a los usuarios descubrir y buscar recursos rápidamente 
 >
 >Esta función está disponible como función de disponibilidad limitada y requiere licencias para Workfront Planning y GenStudio for Performance Marketing. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
 
+**Integración de contenido con tecnología de IA y automatización de supply chain**
+
+Utilice un agente con tecnología de IA para configurar y automatizar las migraciones de contenido y la sincronización recurrente entre repositorios de contenido admitidos. El agente le guía a través de la configuración de la conexión, la asignación de metadatos y la validación con ejecuciones en seco antes de transferir contenido. Al eliminar los procesos manuales y las integraciones personalizadas, esta capacidad acelera la incorporación, simplifica la sincronización continua y ayuda a mantener la homogeneidad de los activos y metadatos en todos los sistemas.
+
+>[!IMPORTANT]
+>
+>Esta función está disponible como función de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
+
 
 ### Nuevas funciones en Dynamic Media con funciones de OpenAPI {#new-features-dynamic-media-openapi}
 
@@ -204,6 +212,13 @@ El editor de [comunicaciones interactivas (IC)](/help/forms/interactive-communic
 * **Configurar opciones desplegables para la interfaz de usuario asociada**: los campos desplegables de la interfaz de usuario asociada ahora utilizan un modelo de **enlace de opciones**. Los autores configuran **Enlazar a partir de datos** para listas de opciones dinámicas u opciones manuales estáticas, de modo que los asociados vean las opciones correctas y el valor preseleccionado. **Enlace de datos** no es compatible con los campos desplegables. Para obtener más información, consulte [Configurar opciones desplegables para la interfaz de usuario asociada](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md).
 
 * **Configurar variables enlazadas y no enlazadas para la interfaz de usuario asociada**: las variables enlazadas y no enlazadas de los componentes **Texto** ahora se pueden configurar para la interfaz de usuario asociada. Los autores eligen si los asociados deben editar todo el bloque de texto en línea en la vista previa del documento o introducir valores para variables individuales en el panel de entrada de datos. Los nombres de variables duplicados propagan los valores en todas las ocurrencias coincidentes en la vista previa. Para obtener más información, vea [Configurar variables enlazadas y no enlazadas para la interfaz de usuario asociada](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
+
+#### Opciones adicionales de CAPTCHA para la protección de bots
+
+AEM Forms ahora admite dos soluciones CAPTCHA adicionales para proteger Forms adaptable de bots y envíos de correo no deseado, además del reCAPTCHA de Google ya disponible. Esto le proporciona más opciones y flexibilidad para proteger los formularios.
+
+* **Torniquete Cloudflare**: Un CAPTCHA sin fricción que verifica a los usuarios a través de un desafío simple sin requerir interacción explícita, mejorando la experiencia del usuario. Para obtener más información, vea [Usar el torniquete en un formulario adaptable para componentes principales](/help/forms/integrate-adaptive-forms-turnstile-core-components.md) y [Usar el torniquete en un formulario adaptable para componentes de base](/help/forms/integrate-adaptive-forms-turnstile.md).
+* **hCaptcha**: Un CAPTCHA centrado en la privacidad que ofrece una alternativa fácil de usar con énfasis en la privacidad de datos, el equilibrio entre la seguridad y la experiencia del usuario. Para obtener más información, consulte [Usar hCaptcha en un formulario adaptable para componentes principales](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md) y [Usar hCaptcha en un formulario adaptable para componentes de base](/help/forms/integrate-adaptive-forms-hcaptcha.md).
 
 ### Funciones de usuario pionero
 

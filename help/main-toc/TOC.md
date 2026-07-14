@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
 workflow-type: tm+mt
-source-wordcount: '7565'
+source-wordcount: '7580'
 ht-degree: 83%
 
 ---
@@ -676,6 +676,7 @@ ht-degree: 83%
       + [Funciones de MediaLibrary](/help/assets/medialibrary.md)
       + [Importación y exportación metadatos de recursos](/help/assets/metadata-import-export.md)
       + [Configurar restricciones de carga de recursos](/help/assets/configure-asset-upload-restrictions.md)
+      + [Integración de contenido con tecnología de IA y automatización de supply chain de contenido](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md)
    + Uso compartido y distribución de recursos {#brand-portal}
       + [Configuración de [!DNL Assets] con [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publicación de recursos en  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
@@ -936,8 +937,8 @@ ht-degree: 83%
             + [Configurar la página de redireccionamiento o el mensaje de agradecimiento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Crear formularios con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
             + [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Uso de hCaptcha en los componentes principales de un formulario formulario](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [Uso de Turnstile Captcha en los componentes principales de un formulario adaptable](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [Usar hCaptcha en un formulario adaptable para componentes principales](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Uso del torniquete en un formulario adaptable para componentes principales](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Añadir una configuración regional para Formularios adaptables basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
             + [Diseño de un esquema JSON para un formulario adaptable (componentes principales)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -987,8 +988,8 @@ ht-degree: 83%
             + {hide-from-toc}[Publicar y cancelar la publicación de formularios y documentos](/help/forms/publishing-unpublishing-forms.md)
          + Adición de componentes a un formulario adaptable {#add-components-to-an-adaptive-form}
             + [Uso de CAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms.md)
-            + [Utilice hCaptcha en un formulario adaptable](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [Uso de CAPTCHA de Turnstile en un formulario adaptable](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [Usar hCaptcha en un formulario adaptable para componentes de base](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [Utilizar el torniquete en un formulario adaptable para componentes de base](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Usar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
             + [Aplicar firma manuscrita](/help/forms/signing-forms-using-scribble.md)
             + [Adición de una tabla a un formulario adaptable](/help/forms/adaptive-forms-tables.md)
