@@ -124,7 +124,7 @@ Al mantener los metadatos de linaje de recursos, los equipos pueden mejorar la g
 
 **Integración de AEM con Workfront Planning y GenStudio for Performance Marketing para metadatos de campaña estándar**
 
-Cuando AEM Assets está integrado con [Workfront Planning y GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), los campos de metadatos de campaña, incluidos Nombre de campaña, Región, Canal, Persona y Producto, ahora están disponibles en el carril de propiedades de la vista de recursos en una pestaña de solo lectura dedicada de Campaign. Cuando los usuarios de Workfront Planning conectan recursos de AEM a GenStudio con los objetos respectivos de Adobe GenStudio Workspace, se añaden automáticamente valores específicos (por ejemplo, un nombre de campaña específico) a los metadatos del recurso de AEM.
+Cuando AEM Assets está integrado con [Workfront Planning y GenStudio for Performance Marketing](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), los campos de metadatos de campaña, incluidos Nombre de campaña, Región, Canal, Persona y Producto, ahora están disponibles en el carril de propiedades de la vista de recursos en una pestaña de solo lectura dedicada de Campaign. Cuando los usuarios de Workfront Planning conectan recursos de AEM a GenStudio con los objetos respectivos de Adobe GenStudio Workspace, se añaden automáticamente valores específicos (por ejemplo, un nombre de campaña específico) a los metadatos del recurso de AEM.
 
 La integración permite a los usuarios descubrir y buscar recursos rápidamente en función de los atributos de la campaña. Esta mejora mejora mejora la capacidad de búsqueda de recursos, optimiza los flujos de trabajo de administración de contenido y ayuda a los equipos a localizar los recursos adecuados para iniciativas de marketing específicas de forma más eficaz.
 
@@ -331,7 +331,7 @@ Los casos de uso comunes incluyen los siguientes:
 * Modificar el formato de las respuestas de API de terceros (y tal vez añadir las respuestas de varias API) antes de enviarlas al explorador
 * Composición y muestra de HTML procesado por el servidor en Edge con contenido reunido de varios backend
 
-Siga [este tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) para ver una explicación detallada de las variaciones de pila Java de Edge Delivery Services y AEM as a Cloud Service.
+Siga [este tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/edge-functions/overview) para ver una explicación detallada de las variaciones de pila Java de Edge Delivery Services y AEM as a Cloud Service.
 
 *Al usar AEM Edge Functions Beta, reconoce que aún se encuentra en desarrollo y que no debe confiar en el correcto funcionamiento de la tecnología o en la disponibilidad de los datos. Esta función se proporciona tal cual,
 puede cambiar sin previo aviso y no está cubierto por los SLA de producción.*
