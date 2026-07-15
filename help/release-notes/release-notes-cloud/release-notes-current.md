@@ -6,10 +6,10 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
+source-git-commit: b1490f7cf89e2e1dc05411e1fe2bb121f851a368
 workflow-type: tm+mt
-source-wordcount: '4455'
-ht-degree: 16%
+source-wordcount: '4609'
+ht-degree: 15%
 
 ---
 
@@ -41,7 +41,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491493/?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -124,7 +124,7 @@ Al mantener los metadatos de linaje de recursos, los equipos pueden mejorar la g
 
 **Integración de AEM con Workfront Planning y GenStudio for Performance Marketing para metadatos de campaña estándar**
 
-Cuando AEM Assets está integrado con [Workfront Planning y GenStudio for Performance Marketing](https://experienceleague.adobe.com/es/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), los campos de metadatos de campaña, incluidos Nombre de campaña, Región, Canal, Persona y Producto, ahora están disponibles en el carril de propiedades de la vista de recursos en una pestaña de solo lectura dedicada de Campaign. Cuando los usuarios de Workfront Planning conectan recursos de AEM a GenStudio con los objetos respectivos de Adobe GenStudio Workspace, se añaden automáticamente valores específicos (por ejemplo, un nombre de campaña específico) a los metadatos del recurso de AEM.
+Cuando AEM Assets está integrado con [Workfront Planning y GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), los campos de metadatos de campaña, incluidos Nombre de campaña, Región, Canal, Persona y Producto, ahora están disponibles en el carril de propiedades de la vista de recursos en una pestaña de solo lectura dedicada de Campaign. Cuando los usuarios de Workfront Planning conectan recursos de AEM a GenStudio con los objetos respectivos de Adobe GenStudio Workspace, se añaden automáticamente valores específicos (por ejemplo, un nombre de campaña específico) a los metadatos del recurso de AEM.
 
 La integración permite a los usuarios descubrir y buscar recursos rápidamente en función de los atributos de la campaña. Esta mejora mejora mejora la capacidad de búsqueda de recursos, optimiza los flujos de trabajo de administración de contenido y ayuda a los equipos a localizar los recursos adecuados para iniciativas de marketing específicas de forma más eficaz.
 
@@ -301,9 +301,9 @@ El servidor MCP local de Dispatcher permite que las herramientas de IA validen l
 
 Java 25 es la próxima versión de soporte a largo plazo (LTS) después de Java 21, que ofrece mejoras en rendimiento, productividad de desarrollador y seguridad:
 
-&#x200B;- **Rendimiento**: La reducción del espacio de memoria, la recolección de elementos no utilizados más eficiente y el calentamiento más rápido de JVM benefician las implementaciones nativas de la nube.
-&#x200B;- **Productividad del desarrollador**: la inicialización de objetos más limpia, la coincidencia de patrones más expresiva y la administración simplificada de tareas simultáneas reducen las plantillas y mejoran la claridad del código.
-&#x200B;- **Seguridad**: se ha modernizado la API de derivación de claves criptográficas para simplificar los flujos de trabajo de seguridad comunes.
+- **Rendimiento**: La reducción del espacio de memoria, la recolección de elementos no utilizados más eficiente y el calentamiento más rápido de JVM benefician las implementaciones nativas de la nube.
+- **Productividad del desarrollador**: la inicialización de objetos más limpia, la coincidencia de patrones más expresiva y la administración simplificada de tareas simultáneas reducen las plantillas y mejoran la claridad del código.
+- **Seguridad**: se ha modernizado la API de derivación de claves criptográficas para simplificar los flujos de trabajo de seguridad comunes.
 
 Para ayudar a las organizaciones a planificar las pruebas y la validación antes de la actualización necesaria del tiempo de ejecución de Java 25, Adobe proporciona las siguientes fechas objetivo. Cualquier actualización de esta cronología se comunicará mediante las notas de la versión.
 
@@ -331,7 +331,7 @@ Los casos de uso comunes incluyen los siguientes:
 * Modificar el formato de las respuestas de API de terceros (y tal vez añadir las respuestas de varias API) antes de enviarlas al explorador
 * Composición y muestra de HTML procesado por el servidor en Edge con contenido reunido de varios backend
 
-Siga [este tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/edge-functions/overview) para ver una explicación detallada de las variaciones de pila Java de Edge Delivery Services y AEM as a Cloud Service.
+Siga [este tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) para ver una explicación detallada de las variaciones de pila Java de Edge Delivery Services y AEM as a Cloud Service.
 
 *Al usar AEM Edge Functions Beta, reconoce que aún se encuentra en desarrollo y que no debe confiar en el correcto funcionamiento de la tecnología o en la disponibilidad de los datos. Esta función se proporciona tal cual,
 puede cambiar sin previo aviso y no está cubierto por los SLA de producción.*
@@ -382,26 +382,44 @@ AEM as a Cloud Service ahora es compatible con la exportación de telemetría ba
 
 Utilice esta integración para:
 
-&#x200B;- Investigar solicitudes lentas o fallidas
-&#x200B;- Seguimiento del estado de JVM y del uso de recursos a lo largo del tiempo
-&#x200B;- Creación de paneles y alertas para sus niveles de AEM
-&#x200B;- Correlación del comportamiento de AEM con otros servicios durante los incidentes
+- Investigar solicitudes lentas o fallidas
+- Seguimiento del estado de JVM y del uso de recursos a lo largo del tiempo
+- Creación de paneles y alertas para sus niveles de AEM
+- Correlación del comportamiento de AEM con otros servicios durante los incidentes
 
 Para unirte al alfa, envía un correo electrónico a [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com), donde se describe tu caso de uso.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] funciones de Assets Beta {#assets-beta-program-features}
 
-#### Extensibilidad de la IU para la vista Assets {#ui-extensibility-assets-view}
+#### Extensibilidad de la IU para la vista Assets {#ui-extensibility-assets-view-beta}
 
 La vista de Assets admite la extensibilidad de la interfaz de usuario, una capacidad que da prioridad al desarrollador y que permite a los clientes adaptar la experiencia predeterminada para satisfacer sus requisitos empresariales específicos.Los clientes pueden aprovechar los puntos de extensión estables existentes siguiendo la documentación para desarrolladores de Adobe para crear e implementar extensiones con un esfuerzo mínimo. En el caso de los casos de uso en los que aún no se dispone de un punto de extensión necesario, Adobe trabaja directamente con los clientes para explorar los requisitos y evaluar la viabilidad técnica de ofrecer nuevas API de extensibilidad adaptadas a sus necesidades, y puede ofrecer nuevas API como **Versiones de Beta**.Además, Adobe ha desarrollado una **herramienta de generación de extensiones con tecnología GenAI** que se encuentra disponible actualmente en una fase interna de adopción temprana. Esta herramienta puede acelerar significativamente el tiempo de desarrollo de la extensión. Los clientes que participen en este programa beta recibirán acceso a la herramienta y se les anima a compartir sus comentarios para ayudar a dar forma a su evolución.Para participar o obtener más información, envía un correo electrónico a `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
-#### Metadatos según la marca (BAM) {#brand-aware-metadata}
+#### Metadatos según la marca (BAM) {#brand-aware-metadata-beta}
 
 Los AEM Assets ahora admiten metadatos según la marca, una función basada en IA que genera automáticamente metadatos personalizados para los recursos cuando se cargan o vuelven a procesarse. Esto reduce la necesidad de introducir datos manualmente por órdenes de magnitud, lo que ayuda a los equipos a encontrar recursos y ofrecer nuevas experiencias mucho más rápido. Los clientes mantienen una biblioteca de indicadores que definen cómo la IA debe rellenar cualquier campo de metadatos, adaptado a su propio vocabulario y taxonomía de marca. Esta biblioteca de mensajes incluye un área de reproducción para obtener una vista previa de los resultados y un optimizador de mensajes que redacta automáticamente las mejoras sugeridas.
 
 Adobe está ampliando activamente las capacidades de BAM mediante la innovación conjunta directa con sus clientes. Cuando aún no se admite un caso de uso específico, Adobe colabora con los clientes participantes para comprender sus necesidades y puede ofrecer funciones ampliadas a medida que progresa la versión beta. Los clientes de este programa obtienen acceso anticipado a las nuevas funciones a medida que se envían y se les anima a compartir comentarios que modelan directamente la hoja de ruta.
 
 Para participar o obtener más información, envía un correo electrónico a `GRP-AEM-ASSETS-BRANDAWAREMETADATA@adobe.com`.
+
+#### Agente de incorporación de Assets {#assets-onboarding-agent-beta}
+
+Si su organización es nueva en Experience Manager Assets, puede adherirse al **programa Beta del agente de incorporación de Assets**, que le permite acceder a las siguientes habilidades de AEM Brand Experience AI para la incorporación:
+
+* Guía a los usuarios a través de la configuración de DAM y la planificación de la migración mediante un flujo de trabajo conversacional para capturar las necesidades empresariales y recomendar cómo se debe estructurar una implementación de AEM Assets.
+
+* Crea artefactos de configuración de AEM Assets principales, como jerarquías de carpetas, taxonomías de etiquetas y formularios de metadatos, y puede ayudar a ejecutar trabajos de importación masiva para acelerar la incorporación.
+
+**¿Por qué participar?**
+
+* Publique más rápido con un entorno DAM listo para usar eliminando los pasos manuales y repetitivos con la asistencia de IA.
+
+* Reduzca la sobrecarga operativa con la configuración y preparación automatizadas de carpetas, etiquetas, metadatos e importaciones de recursos.
+
+* Mejore la coherencia, la gobernanza y garantice el cumplimiento de las prácticas recomendadas mediante una experiencia de configuración depurada con recomendaciones inteligentes adaptadas a su empresa.
+
+Para participar o obtener más información, envía un correo electrónico a `GRP-AEM-ONBOARDING-AGENT@adobe.com`.
 
 ## Guías de [!DNL Experience Manager] {#guides}
 
