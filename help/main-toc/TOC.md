@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
+source-git-commit: 1f653d5bdd38dbfd73e95721927d50364a23488a
 workflow-type: tm+mt
-source-wordcount: '7580'
+source-wordcount: '7591'
 ht-degree: 83%
 
 ---
@@ -109,6 +109,7 @@ ht-degree: 83%
    + Notas de la versión de mantenimiento de AEMaaCS {#maintenance}
       + [Notas de la versión actuales sobre el mantenimiento](/help/release-notes/maintenance/latest.md)
       + 2026 {#2026}
+         + [Notas de la versión de mantenimiento para 2026.7.0](/help/release-notes/maintenance/2026/2026-7-0.md)
          + [Notas de la versión de mantenimiento para 2026.6.0](/help/release-notes/maintenance/2026/2026-6-0.md)
          + [Notas de la versión de mantenimiento para 2026.5.0](/help/release-notes/maintenance/2026/2026-5-0.md)
          + [Notas de la versión de mantenimiento para 2026.4.0](/help/release-notes/maintenance/2026/2026-4-0.md)
@@ -677,6 +678,7 @@ ht-degree: 83%
       + [Importación y exportación metadatos de recursos](/help/assets/metadata-import-export.md)
       + [Configurar restricciones de carga de recursos](/help/assets/configure-asset-upload-restrictions.md)
       + [Integración de contenido con tecnología de IA y automatización de supply chain de contenido](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md)
+      + [Portal de obtención de recursos para AEM Assets](/help/assets/asset-sourcing-portal-for-aem-assets.md)
    + Uso compartido y distribución de recursos {#brand-portal}
       + [Configuración de [!DNL Assets] con [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publicación de recursos en  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)

@@ -4,10 +4,10 @@ description: Aprenda a configurar funciones de redes avanzadas como una VPN o un
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 71cf6c00d91ce0e63a68c1b4d4e9a884feee1a33
+source-git-commit: 126ba1233a2533aa4b47288509da76ba6d784698
 workflow-type: tm+mt
 source-wordcount: '5799'
-ht-degree: 76%
+ht-degree: 75%
 
 ---
 
@@ -24,7 +24,8 @@ Además de esta documentación, también hay una serie de tutoriales diseñados 
 >
 >Este artículo se centra en el uso del método de interfaz de usuario. Si prefiere automatizar la configuración a través de la API, consulte el [tutorial de red privada virtual (VPN)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
->**Automatizar redes avanzadas con la APIPara automatizar la configuración de redes avanzadas (como la creación de VPN), puede utilizar la API de Cloud Manager:
+>**Automatizar redes avanzadas con la API**
+>Para automatizar la configuración de redes avanzadas (como la creación de VPN), puede utilizar la API de Cloud Manager:
 >
 >```bash
 >curl -X POST https://cloudmanager.adobe.io/api/program/{PROGRAM_ID}/environment/{ENV_ID}/vpn \
@@ -76,7 +77,7 @@ Al configurar funciones de redes avanzadas, se aplican las siguientes restriccio
    * Puede definir tantas infraestructuras de red como regiones disponibles en el entorno de producción, pero la nueva infraestructura debe ser del mismo tipo que la creada anteriormente.
    * Al crear varias infraestructuras, se le permite seleccionar únicamente aquellas regiones en las que no se ha creado una infraestructura de redes avanzadas.
 
-### Configuración y habilitación de redes avanzadas {#configuring-enabling}
+### Configurar y habilitar redes avanzadas {#configuring-enabling}
 
 El uso de funciones de redes avanzadas requiere dos pasos:
 
@@ -101,7 +102,7 @@ Esta función de redes avanzadas le permite configurar AEM as a Cloud Service pa
 >
 >Después de su creación, no se pueden editar los tipos de infraestructura de salida de puerto flexible. La única manera de cambiar los valores de configuración es eliminarlos y volver a crearlos.
 
-### Configuración de la IU {#configuring-flexible-port-egress-provision-ui}
+### Configuración de IU {#configuring-flexible-port-egress-provision-ui}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -128,7 +129,7 @@ Aparece un nuevo registro debajo del encabezado **Infraestructura de red** en el
 >
 >La creación de la infraestructura para la salida de puerto flexible puede tardar hasta una hora, tras lo cual se puede configurar en el nivel de entorno.
 
-### Configuración de la API {#configuring-flexible-port-egress-provision-api}
+### Configuración de API {#configuring-flexible-port-egress-provision-api}
 
 Una vez por programa, se invoca el extremo POST `/program/<programId>/networkInfrastructures`, pasando el valor de `flexiblePortEgress` para el parámetro y la región `kind`. El punto final responde con `network_id`, así como otra información, incluido el estado.
 
@@ -263,7 +264,7 @@ La configuración de la dirección IP de salida dedicada es similar a la [salida
 >
 >Una vez creada, no se pueden editar los tipos de infraestructura de direcciones IP de salida dedicadas. La única manera de cambiar los valores de configuración es eliminarlos y volver a crearlos.
 
-### Configuración de la IU {#configuring-dedicated-egress-provision-ui}
+### Configuración de IU {#configuring-dedicated-egress-provision-ui}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -290,7 +291,7 @@ Aparece un nuevo registro debajo del encabezado **Infraestructura de red** en el
 >
 >La creación de la infraestructura para la salida de puerto flexible puede tardar hasta una hora, tras lo cual se puede configurar en el nivel de entorno.
 
-### Configuración de la API {#configuring-dedicated-egress-provision-api}
+### Configuración de API {#configuring-dedicated-egress-provision-api}
 
 Una vez por programa, se invoca el extremo POST `/program/<programId>/networkInfrastructures`, pasando el valor de `dedicatedEgressIp` para el parámetro y la región `kind`. El punto final responde con `network_id`, así como otra información, incluido el estado.
 
@@ -380,7 +381,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-### Uso de las funciones {#feature-usage}
+### Uso de funciones {#feature-usage}
 
 La función es compatible con el código Java™ o bibliotecas que den lugar a tráfico saliente, siempre que utilicen las propiedades estándar del sistema Java™ para configuraciones de proxy. En la práctica, este enfoque debería incluir las bibliotecas más habituales.
 
@@ -420,7 +421,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-### Consideraciones sobre la depuración {#debugging-considerations}
+### Consideraciones sobre Debug {#debugging-considerations}
 
 Para validar que el tráfico realmente salga por la dirección IP dedicada esperada, compruebe los registros en el servicio de destino, si está disponible. De lo contrario, llame a un servicio de depuración como [https://ifconfig.me/ip](https://ifconfig.me/ip), que devuelve la dirección IP que realiza la llamada.
 
@@ -436,7 +437,7 @@ Una infraestructura VPN admite varias conexiones, por lo que puede conectarse a 
 
 Para resolver nombres de host privados, los solucionadores DNS deben aparecer en el espacio de direcciones de puerta de enlace.
 
-### Configuración de la IU {#configuring-vpn-ui}
+### Configuración de IU {#configuring-vpn-ui}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -484,7 +485,7 @@ Para resolver nombres de host privados, los solucionadores DNS deben aparecer en
 
 Aparece un nuevo registro debajo del encabezado **Infraestructura de red** en el panel lateral. Incluye el tipo de infraestructura, el estado, la región y los entornos habilitados.
 
-### Configuración de la API {#configuring-vpn-api}
+### Configuración de API {#configuring-vpn-api}
 
 Una vez por programa, se invoca el punto final `/program/<programId>/networkInfrastructures` de POST. Pasa una carga útil de información de configuración. Esa información incluye el valor de la **VPN** para el parámetro `kind`, región, espacio de direcciones (lista de CIDR; tenga en cuenta que este valor no se puede modificar más adelante), solucionadores DNS (para resolver nombres en la red). También incluye información de conexión VPN, como la configuración de la puerta de enlace, la clave VPN compartida y la directiva de seguridad IP. El punto final responde con `network_id`, así como otra información, incluido el estado.
 
@@ -608,7 +609,7 @@ El diagrama siguiente proporciona una representación visual de un conjunto de d
 </tbody>
 </table>
 
-## Habilitación de configuraciones de redes avanzadas en entornos {#enabling}
+## Habilitar configuraciones de red avanzadas en entornos {#enabling}
 
 Cuando tenga configurada una opción de redes avanzadas para un programa, ya sea una [salida de puerto flexible](#flexible-port-egress), [dirección IP de salida dedicada](#dedicated-egress-ip-address) o [VPN](#vpn), para utilizarla, debe habilitarla en el nivel de entorno.
 
@@ -628,7 +629,7 @@ Cuando habilita una configuración de red avanzada para un entorno, también pue
 >
 >No puede habilitar una configuración de red avanzada para un entorno si el entorno está en el estado **Actualizando**.
 
-### Habilitación del uso de la IU {#enabling-ui}
+### Habilitar mediante la IU {#enabling-ui}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -663,7 +664,7 @@ La configuración de redes avanzadas se aplica al entorno seleccionado. En la fi
 
 ![Entorno configurado con redes avanzadas](assets/advanced-networking-ui-configured-environment.png)
 
-### Habilitación del uso de la API {#enabling-api}
+### Habilitar mediante la API {#enabling-api}
 
 Para habilitar una configuración de redes avanzadas para un entorno, el punto final `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` debe invocarse por entorno.
 
@@ -679,7 +680,7 @@ Incluso si no hay reglas de enrutamiento de tráfico de entorno (hosts o bypass)
 >
 >El conjunto completo de parámetros, la sintaxis exacta, así como información importante como qué parámetros no se pueden cambiar después, [se pueden consultar en los documentos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
-## Edición y eliminación de configuraciones de redes avanzadas en entornos {#editing-deleting-environments}
+## Editar y eliminar configuraciones de red avanzadas en entornos {#editing-deleting-environments}
 
 Después de [habilitar las configuraciones de redes avanzadas en entornos](#enabling), puede actualizar los detalles de esas configuraciones o eliminarlas.
 
@@ -687,7 +688,7 @@ Después de [habilitar las configuraciones de redes avanzadas en entornos](#enab
 >
 >No puede editar la infraestructura de red si está en el estado **Creando**, **Actualizando** o **Eliminando**.
 
-### Edición o eliminación mediante la IU {#editing-ui}
+### Editar o eliminar mediante la IU {#editing-ui}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -704,7 +705,7 @@ Después de [habilitar las configuraciones de redes avanzadas en entornos](#enab
 
 Los cambios se reflejan en la pestaña **Entornos**.
 
-### Edición o eliminación mediante la API {#editing-api}
+### Editar o eliminar mediante la API {#editing-api}
 
 Para desactivar la red avanzada para un entorno en particular, invoque `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
@@ -712,7 +713,7 @@ Para desactivar la red avanzada para un entorno en particular, invoque `DELETE [
 >
 >El conjunto completo de parámetros, la sintaxis exacta, así como información importante como qué parámetros no se pueden cambiar después, [se pueden consultar en los documentos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
-## Edición y eliminación de la infraestructura de red de un programa {#editing-deleting-program}
+## Editar y eliminar la infraestructura de red de un programa {#editing-deleting-program}
 
 Una vez creada la infraestructura de red para un programa, solo se pueden editar las propiedades limitadas. Si ya no lo necesita, puede eliminar la infraestructura de red avanzada de todo el programa.
 
@@ -768,7 +769,8 @@ Si decide que necesita un tipo de infraestructura de red avanzada distinto del q
 
 >[!WARNING]
 >
-> Como resultado de este procedimiento se obtiene un tiempo de inactividad de los servicios de redes avanzadas entre la eliminación y la recreación.Si el tiempo de inactividad causa un impacto comercial significativo, póngase en contacto con el servicio de atención al cliente para obtener ayuda, describiendo lo que ya se ha creado y el motivo del cambio.
+> Como resultado de este procedimiento se obtiene un tiempo de inactividad de los servicios de redes avanzadas entre la eliminación y la recreación.
+> Si el tiempo de inactividad causa un impacto comercial significativo, póngase en contacto con el servicio de atención al cliente para obtener ayuda, describiendo lo que ya se ha creado y el motivo del cambio.
 
 ## Configuración de red avanzada para otras regiones de publicación {#advanced-networking-configuration-for-additional-publish-regions}
 
