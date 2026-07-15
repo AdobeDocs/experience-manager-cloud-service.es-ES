@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo automatizar migraciones de conteni
 role: Admin
 hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="(Se aplica a los AEM Assets)."
-source-git-commit: 3985d61b59b610c63f94407a9fdc4860390d7e42
+source-git-commit: c2a7e7ab0b3c8c336343036af105a827cd77f3c2
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 2%
+source-wordcount: '676'
+ht-degree: 5%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 2%
 Las organizaciones suelen almacenar recursos digitales y metadatos en varios repositorios, como sistemas de administración de recursos digitales (DAM), servicios de almacenamiento en la nube y plataformas de contenido. La migración de contenido a un sistema nuevo o la sincronización de varios repositorios suelen requerir un esfuerzo manual o integraciones personalizadas que pueden ser difíciles de crear y mantener.
 
 Esta capacidad le ayuda a automatizar migraciones de contenido únicas y a realizar sincronizaciones recurrentes entre repositorios admitidos. Un agente con tecnología de IA le guía a través de la configuración de transferencias de contenido, proponiendo conexiones de repositorio, asignaciones de metadatos y configuraciones de transferencia, reduciendo el esfuerzo necesario para mover y sincronizar contenido entre sistemas.
+
+>[!IMPORTANT]
+>
+>Esta función está disponible como función de disponibilidad limitada. Puede [crear y enviar un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
 
 ## Ventajas {#benefits-ai-powered-content-onboarding-content-supply-chain-automation}
 
