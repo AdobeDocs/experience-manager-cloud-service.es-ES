@@ -22,9 +22,9 @@ Este artículo cubre dos formas independientes de utilizar OpenAI ChatGPT con AE
 
 En esta sección se describe el método de **configuración manual**, en el que se agregan uno o más servidores MCP de AEM a ChatGPT como aplicaciones o conectores personalizados.
 
-* Agregue una o más URL de servidor MCP de AEM en el área donde están configuradas las conexiones o herramientas MCP.
-* Almacene en déclencheur la conexión e inicie sesión con su Adobe ID cuando se le redirija.
-* En un chat, consulte las herramientas de AEM configuradas en las peticiones de datos, por ejemplo:
+&#x200B;* Agregue una o más URL de servidor MCP de AEM en el área donde están configuradas las conexiones o herramientas MCP.
+&#x200B;* Almacene en déclencheur la conexión e inicie sesión con su Adobe ID cuando se le redirija.
+&#x200B;* En un chat, consulte las herramientas de AEM configuradas en las peticiones de datos, por ejemplo:
 
   ```
   "Using the configured AEM MCP tools, list all sites in the author environment."
