@@ -4,9 +4,9 @@ description: Aprenda a utilizar el protocolo de contexto de modelo con AEM as a 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 804e0b0c96f7adf2d0863f26f77966ec8fc03d55
+source-git-commit: 7584dd3cce074746d9595939605b1b76b73adb93
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '1959'
 ht-degree: 0%
 
 ---
@@ -50,9 +50,8 @@ AEM expone los servidores MCP como extremos HTTP. Los extremos enumerados a cont
 | **Contenido** | `/content` | Operaciones de contenido, como crear, leer, actualizar y eliminar (CRUD) para páginas y fragmentos de contenido, además de importación de recursos y búsqueda de recursos (la versión mínima requerida de AEM es `26309`). Con [Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md) y el complemento [ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md), también hay compatibilidad para cargar, descargar, mover/copiar/eliminar recursos y publicar/cancelar la publicación de recursos, además de editar metadatos, inspeccionar referencias e identificar recursos sin usar. |
 | **Contenido (solo lectura)** | `/content-readonly` | Operaciones de contenido de solo lectura (obtener, lista/búsqueda) para páginas y fragmentos de contenido, además de búsqueda de recursos (la versión mínima requerida de AEM es `26309`). Con [Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md) y el complemento [ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md), también hay compatibilidad para descargar recursos, inspeccionar referencias e identificar recursos sin usar. |
 | **Cloud Manager** | `/cloudmanager` | Administre entidades de Cloud Manager, incluidos programas, entornos, repositorios y canalizaciones, que también se pueden activar. |
-| **Administración de experiencias** | `/experience-governance` | Evalúe el contenido (texto, imágenes, páginas) con respecto a las reglas de gobernanza de marca y enumere las configuraciones y comprobaciones de marca.<br/>Si está interesado, debe registrarse en la versión de prueba de [agentes o tener una licencia de pago](https://experienceleague.adobe.com/es/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) para acceder al MCP de Experience Governance. |
+| **Administración de experiencias** | `/experience-governance` | Evalúe el contenido (texto, imágenes, páginas) con respecto a las reglas de gobernanza de marca y enumere las configuraciones y comprobaciones de marca.<br/>Si está interesado, debe registrarse en la versión de prueba de [agentes o tener una licencia de pago](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) para acceder al MCP de Experience Governance. |
 | **Migración de nube** | `/cloud-migration` | Obtenga los resultados del Analizador de prácticas recomendadas (BPA) de Cloud Acceleration Manager (CAM) según el patrón de migración o el nivel de gravedad, lo que permite a los agentes de IA impulsar la migración de código de AEM 6.x a AEM as a Cloud Service. Consulte [Uso del MCP de migración de nube](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md). |
-| **Servidor MCP de AEM** | `/aem` | Nuevo a partir de junio de 2026, este es un único punto de conexión que agrega las herramientas de los servidores MCP de AEM enumerados arriba (excluida la migración a la nube), exponiéndolos a través de una conexión. Esta es la forma preferida de conectarse a AEM. Tenga en cuenta que las restricciones de acceso que puede solicitar a Adobe para este servidor agregado son diferentes y, en este momento, más limitadas que para los servidores individuales, por lo que asegúrese de que satisface sus necesidades. Consulte [Restricción de servidores MCP](#restricting-mcp-servers). |
 
 Las herramientas específicas expuestas por cada servidor MCP pueden evolucionar con el tiempo. En la práctica, puede pedir a su aplicación habilitada para MCP que descubra las herramientas a través de un mensaje como:
 
@@ -62,7 +61,7 @@ Las herramientas específicas expuestas por cada servidor MCP pueden evolucionar
 
 El cliente MCP utiliza el protocolo MCP para recuperar la lista de herramientas y los esquemas, que el LLM puede utilizar a continuación.
 
-Consulte [Tutorial de Content MCP Server](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) y [Vídeo de Cloud Manager MCP Server](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obtener más información sobre sus capacidades y cómo utilizarlas.
+Consulte [Tutorial de Content MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) y [Vídeo de Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obtener más información sobre sus capacidades y cómo utilizarlas.
 
 ## Aplicaciones MCP compatibles {#supported-mcp-applications}
 
@@ -115,11 +114,7 @@ Todas las aplicaciones enumeradas en [Aplicaciones MCP admitidas](#supported-mcp
 
 #### Restricción de servidores MCP {#restricting-mcp-servers}
 
-Todos los servidores MCP están incluidos en la lista de permitidos de forma predeterminada. Como administrador, tiene la opción de restringir el acceso a servidores MCP específicos en el nivel de organización, programa o entorno (que no sea el servidor MCP de AEM; consulte la nota a continuación). Esta restricción le proporciona un control granular sobre las capacidades de MCP que están disponibles para los usuarios de su organización.
-
->[!IMPORTANT]
->
->El **servidor MCP de AEM** (`/aem`) agrega varios servidores MCP detrás de un único extremo. La configuración que puede solicitar a Adobe es diferente, con la opción de **solo lectura** (solo permitir herramientas que sean de solo lectura) o **sin acceso** (sin herramientas). El valor predeterminado es el acceso a todas las herramientas (**lectura-escritura**). Para solicitar un cambio de configuración, comuníquese con Adobe en **`aemcs-mcp-feedback@adobe.com`**.
+Todos los servidores MCP están incluidos en la lista de permitidos de forma predeterminada. Como administrador, tiene la opción de restringir el acceso a servidores MCP específicos en el nivel de organización, programa o entorno. Esta restricción le proporciona un control granular sobre las capacidades de MCP que están disponibles para los usuarios de su organización.
 
 #### Administrar el acceso de cliente MCP {#managing-mcp-client-access}
 
