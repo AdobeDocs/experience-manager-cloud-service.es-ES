@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión de Universal Editor 2026.07.09
-description: Estas son las notas de la versión de la versión 2026.07.09 de Universal Editor.
+title: Notas de la versión de Universal Editor 2026.07.16
+description: Estas son las notas de la versión de la versión 2026.07.16 de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 06bb5b7e685336a5b628e6523f3ae9733a2e78e2
+source-git-commit: 863939466578c684b854f2e6d4f67a12b29ea7e3
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 18%
+source-wordcount: '129'
+ht-degree: 17%
 
 ---
 
 
-# Notas de la versión de Universal Editor 2026.07.09 {#release-notes}
+# Notas de la versión de Universal Editor 2026.07.16 {#release-notes}
 
-Estas son las notas de la versión del editor universal del 9 de julio de 2026.
+Estas son las notas de la versión del editor universal del 16 de julio de 2026.
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ Estas son las notas de la versión del editor universal del 9 de julio de 2026.
 
 ## Otras mejoras {#other-improvements}
 
-* Se han mejorado [Deshacer/rehacer](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) acciones.
-* [Las listas ordenadas](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) ahora se representan correctamente al editar en línea con el editor de texto enriquecido.
-* [La reordenación mediante arrastrar y soltar](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move) de las secciones ahora funciona correctamente.
-* La barra de navegación de Experience Platform ya no oscurece los desplegables de selección de campos en el panel de propiedades en determinadas situaciones.
+* Los botones de opción para seleccionar el [modo interactivo](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) del editor ahora tienen etiquetas accesibles.
+* La opción Borrar todo de las casillas de verificación ahora borra correctamente todos los campos, incluso cuando hay un conjunto predeterminado.
+* Seleccionar desplegables ahora se procesan correctamente.
+* Ahora, las etiquetas y los iconos de los botones y submenús de extensibilidad están correctamente alineados.
