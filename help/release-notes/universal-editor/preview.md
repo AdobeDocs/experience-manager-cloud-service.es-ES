@@ -4,9 +4,9 @@ description: Estas son las notas de la versión de la vista previa del editor un
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 5dd5d30668878da0f178ed1cac03a7454d382688
+source-git-commit: 863939466578c684b854f2e6d4f67a12b29ea7e3
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Notas de la versión de Universal Editor Preview {#preview}
 
-Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 16 de julio de 2026.
+Estas son las notas de la versión de la **versión de vista previa** del editor universal. Estas características están disponibles actualmente en el **entorno de vista previa** del editor universal. Estas funciones están programadas para su lanzamiento general el 23 de julio de 2026.
 
 Estas notas de la versión de **preview** se proporcionan para que sepa qué cambios se avecinan en el editor universal y pueda probarlos al [cambiar a la versión de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,5 +28,4 @@ Estas notas de la versión de **preview** se proporcionan para que sepa qué cam
 
 ## Próximos cambios {#upcoming-improvements}
 
-* Los botones de opción para seleccionar el [modo interactivo](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) del editor ahora tienen etiquetas accesibles.
-* La opción Borrar todo de las casillas de verificación ahora borra correctamente todos los campos, incluso cuando hay un conjunto predeterminado.
+* Ninguno
