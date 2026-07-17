@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1458'
 ht-degree: 100%
 
 ---
@@ -43,8 +43,8 @@ Eche un vistazo al vídeo Información general sobre la versión de junio de 202
 
 ![Vista previa en la consola de fragmentos de contenido](/help/assets/content-fragments-console-preview.png)
 
-* Las imágenes se pueden optimizar dinámicamente para la entrega web en escenarios sin encabezado mediante AEM GraphQL. Las [variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=es#query-variables) se pueden definir en las consultas de GraphQL para permitir que las aplicaciones cliente disociadas soliciten las imágenes optimizadas correspondientes de AEM.
-* Las etiquetas en las [variaciones de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=es) ahora se pueden enviar a JSON mediante la API de entrega de contenido AEM GraphQL.
+* Las imágenes se pueden optimizar dinámicamente para la entrega web en escenarios sin encabezado mediante AEM GraphQL. Las [variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) se pueden definir en las consultas de GraphQL para permitir que las aplicaciones cliente disociadas soliciten las imágenes optimizadas correspondientes de AEM.
+* Las etiquetas en las [variaciones de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) ahora se pueden enviar a JSON mediante la API de entrega de contenido AEM GraphQL.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -70,7 +70,7 @@ Experience Manager Assets ahora le permite hacer más desde la interfaz de usuar
 
 **Dynamic Media: se han actualizado los campos relacionados con los recortes inteligentes en el perfil de imagen**
 
-La interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen se actualiza ahora para reflejar las directrices actuales para definir un recorte inteligente. Consulte las [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=es#crop-options).
+La interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen se actualiza ahora para reflejar las directrices actuales para definir un recorte inteligente. Consulte las [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
 
 ### Nuevas funciones de la vista Recursos {#assets-view-features}
 
@@ -112,11 +112,11 @@ La vista de recursos ahora le permite [añadir texto de varios valores y compone
 
 * [Formularios adaptables en el editor de páginas de AEM](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): ahora puede utilizar el editor de páginas de AEM para crear y agregar rápidamente varios formularios a sus páginas de Sites. Esta capacidad permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de las páginas de Sites mediante el uso de la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización del proceso empresarial. Puede hacer lo siguiente:
 
-   * Cree un formulario adaptable arrastrando y soltando componentes de formulario en el componente contenedor de formularios adaptables en el editor de AEM Sites o en los fragmentos de experiencias.
-   * Utilice el asistente de formularios adaptables dentro del editor de AEM Sites para poder crear formularios independientes de cualquier página de Sites, lo que le proporciona la libertad de reutilizar dichos formularios a través de varias páginas.
-   * Agregue varios formularios a una página de Sites, lo que optimizará la experiencia del usuario y proporcionará una mayor flexibilidad.
+  * Cree un formulario adaptable arrastrando y soltando componentes de formulario en el componente contenedor de formularios adaptables en el editor de AEM Sites o en los fragmentos de experiencias.
+  * Utilice el asistente de formularios adaptables dentro del editor de AEM Sites para poder crear formularios independientes de cualquier página de Sites, lo que le proporciona la libertad de reutilizar dichos formularios a través de varias páginas.
+  * Añada varios formularios a una página de Sites, lo que optimizará la experiencia del usuario y proporcionará una mayor flexibilidad.
 
-     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+    >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 * [Adobe Acrobat Sign Solutions para la Administración Pública](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ahora se integra con Adobe Acrobat Sign Solutions para la Administración Pública. Esta integración proporciona un nivel avanzado de cumplimiento y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con el gobierno (departamentos y agencias gubernamentales).
 

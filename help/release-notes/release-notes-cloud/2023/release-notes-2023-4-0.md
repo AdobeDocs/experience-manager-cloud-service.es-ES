@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1222'
 ht-degree: 100%
 
 ---
@@ -42,11 +42,11 @@ Eche un vistazo al vídeo Información general sobre la versión de abril de 202
 * Exporte fragmentos de contenido de AEM as a Cloud Service a Adobe Target en formato JSON y cree las ofertas JSON correspondientes en Target.
 * Ahora, la compatibilidad con la paginación y la ordenación de GraphQL, junto con las mejoras en el almacenamiento en la caché interna, ayudan a mejorar el rendimiento de las aplicaciones cliente disociadas al recuperar grandes conjuntos de contenido de AEM mediante consultas y filtros complejos de GraphQL.
 
-### Nuevas funciones en el canal de prelanzamiento de [!DNL Experience Manager Sites] {#prerelease-sites}
+### Nuevas funciones en la versión preliminar de [!DNL Experience Manager Sites] {#prerelease-sites}
 
-* Los fragmentos de contenido y sus referencias ahora se pueden publicar en el [Servicio de previsualización de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=es#access-preview-service) mediante la [consola de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es), permitiendo a los usuarios previsualizar la experiencia final en una aplicación de vista previa disociada antes de lanzarse.
-* Las imágenes se pueden optimizar dinámicamente para la entrega web en escenarios sin encabezado mediante AEM GraphQL. Las [variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=es#query-variables) se pueden definir en las consultas de GraphQL para permitir que las aplicaciones cliente disociadas soliciten las imágenes optimizadas correspondientes de AEM.
-* Las etiquetas en las [variaciones de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=es) ahora se pueden enviar a JSON mediante la API de entrega de contenido AEM GraphQL.
+* Los fragmentos de contenido y sus referencias ahora se pueden publicar en el [Servicio de previsualización de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html#access-preview-service) mediante la [consola de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es), permitiendo a los usuarios previsualizar la experiencia final en una aplicación de vista previa disociada antes de lanzarse.
+* Las imágenes se pueden optimizar dinámicamente para la entrega web en escenarios sin encabezado mediante AEM GraphQL. Las [variables de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) se pueden definir en las consultas de GraphQL para permitir que las aplicaciones cliente disociadas soliciten las imágenes optimizadas correspondientes de AEM.
+* Las etiquetas en las [variaciones de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) ahora se pueden enviar a JSON mediante la API de entrega de contenido AEM GraphQL.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -56,23 +56,23 @@ Eche un vistazo al vídeo Información general sobre la versión de abril de 202
 
 * [Mejoras en la experiencia de búsqueda](/help/assets/search-assets.md#aftersearch): ahora puede realizar rápidamente las siguientes operaciones en los archivos que se muestran en los resultados de búsqueda:
 
-   * Crear un flujo de trabajo
-   * Crear una versión
-   * Relacionar o desrelacionar archivos
+  * Crear un flujo de trabajo
+  * Crear una versión
+  * Relacionar o desrelacionar archivos
 
-     No es necesario desplazarse a la ubicación del recurso y ver sus propiedades para realizar estas operaciones.
+    No es necesario desplazarse a la ubicación del recurso y ver sus propiedades para realizar estas operaciones.
 
 * Mejoras en la facilidad de uso de la faceta Búsqueda de color: el campo de entrada para valores de color ahora se puede editar y los resultados de búsqueda solo se actualizan al salir del selector de color.
 
 * Lanzamiento de nuevo protocolo de asistencia (DASH - Dynamic Adaptive Streaming over HTTP) para streaming adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado):
-   * La transmisión adaptable (DASH/HLS) garantiza una mejor experiencia de visualización de vídeos por parte del usuario
-   * DASH es el protocolo estándar internacional para la transmisión de vídeo adaptable y es ampliamente adoptado en el sector.
+  * La transmisión adaptable (DASH/HLS) garantiza una mejor experiencia de visualización de vídeos por parte del usuario
+  * DASH es el protocolo estándar internacional para la transmisión de vídeo adaptable y es ampliamente adoptado en el sector.
 
 * _Instantánea_ de Dynamic Media: Experimento con imágenes de prueba o URL de Dynamic Media para ver el output de diferentes modificadores de imagen y evaluar las optimizaciones de imágenes inteligentes para el tamaño de archivo (con entrega WebP y AVIF), el ancho de banda de la red y la proporción de píxeles del dispositivo. Consulte la [Instantánea de Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=es).
 
 ### Función en [!DNL Assets] versión preliminar {#prerelease-feature-assets}
 
-* Dynamic Media: la interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen ahora se actualiza para reflejar las directrices actuales para definir un recorte inteligente. Consulte las [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=es#crop-options).
+* Dynamic Media: la interfaz de usuario de algunos campos relacionados con el recorte inteligente en un perfil de imagen ahora se actualiza para reflejar las directrices actuales para definir un recorte inteligente. Consulte las [Opciones de recorte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -84,15 +84,15 @@ Eche un vistazo al vídeo Información general sobre la versión de abril de 202
 
 * [Formularios adaptables en el editor de páginas de AEM](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): ahora puede utilizar el editor de páginas de AEM para crear y agregar rápidamente varios formularios a sus páginas de Sites. Esta capacidad permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de las páginas de Sites mediante el uso de la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización del proceso empresarial. Puede hacer lo siguiente:
 
-   * Cree un formulario adaptable arrastrando y soltando componentes de formulario en el componente contenedor de formularios adaptables en el editor de AEM Sites o en los fragmentos de experiencias.
-   * Utilice el asistente de formularios adaptables dentro del editor de AEM Sites para poder crear formularios independientes de cualquier página de Sites, lo que le proporciona la libertad de reutilizar dichos formularios a través de varias páginas.
-   * Agregue varios formularios a una página de Sites, lo que optimizará la experiencia del usuario y proporcionará una mayor flexibilidad.
+  * Cree un formulario adaptable arrastrando y soltando componentes de formulario en el componente contenedor de formularios adaptables en el editor de AEM Sites o en los fragmentos de experiencias.
+  * Utilice el asistente de formularios adaptables dentro del editor de AEM Sites para poder crear formularios independientes de cualquier página de Sites, lo que le proporciona la libertad de reutilizar dichos formularios a través de varias páginas.
+  * Añada varios formularios a una página de Sites, lo que optimizará la experiencia del usuario y proporcionará una mayor flexibilidad.
 
-     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+    >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 * [Adobe Acrobat Sign Solutions para la Administración Pública](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ahora se integra con Adobe Acrobat Sign Solutions para la Administración Pública. Esta integración proporciona un nivel avanzado de cumplimiento y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con el gobierno (departamentos y agencias gubernamentales).
 
-  La integración con Adobe Acrobat Sign para la Administración Pública permite a los socios de Adobe y a los clientes de la administración pública utilizar firmas electrónicas en los formularios adaptables para algunas de las líneas de negocio más importantes y sensibles. Este nivel adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con la normativa FedRAMP Moderate, lo que proporciona tranquilidad a los clientes de la administración pública de Adobe.
+  La integración con Adobe Acrobat Sign para la Administración Pública permite a los socios de Adobe y a los clientes de la administración pública utilizar firmas electrónicas en los formularios adaptables para algunas de las líneas de negocio más importantes y sensibles. Este nivel adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con la normativa FedRAMP Moderate, lo que proporciona tranquilidad a los clientes gubernamentales de Adobe.
 
 * Tratamiento de errores mejorado con controladores de errores personalizados en el editor de reglas: ahora puede invocar una función personalizada (mediante la Biblioteca de clientes) en respuesta a un error devuelto por un servicio externo y proporcionar una respuesta personalizada a los usuarios finales. O bien, puede realizar acciones específicas en busca de errores devueltos por un servicio. Por ejemplo, puede invocar un flujo de trabajo personalizado en el back-end para códigos de error específicos o informar al cliente de que el servicio está inactivo.
 

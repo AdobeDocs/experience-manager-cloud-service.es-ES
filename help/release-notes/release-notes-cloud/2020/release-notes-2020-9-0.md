@@ -1,13 +1,13 @@
 ---
 title: Notas de la versión 2020.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] notas de la versión as a Cloud Service para 2020.9.0."
+description: '[!DNL Adobe Experience Manager] Notas de la versión de as a Cloud Service para 2020.9.0.'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 16%
+source-wordcount: '761'
+ht-degree: 15%
 
 ---
 
@@ -23,7 +23,7 @@ La fecha de versión de [!DNL Adobe Experience Manager] as a Cloud Service 2020.
 
 ### Novedades de [!DNL Sites] {#what-is-new-sites}
 
-* SPA El SDK para JavaScript del Editor de aplicaciones de una sola página () [ahora es de código abierto](/help/implementing/developing/hybrid/reference-materials.md).
+* JavaScript SDK [Editor de aplicaciones de una sola página (SPA) es ahora código abierto](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -33,14 +33,14 @@ La fecha de versión de [!DNL Adobe Experience Manager] as a Cloud Service 2020.
 
 * Mejoras en [!DNL Dynamic Media]
 
-   * Publish selectivo: ahora es posible que un equipo de marketing acceda a [!DNL Dynamic Media] imágenes de recorte inteligente y representaciones dinámicas sincronizadas con [!DNL Dynamic Media] para que puedan crear materiales promocionales, sin necesidad de publicar esos recursos en [!DNL Dynamic Media] para el envío global. La publicación de [!DNL Experience Manager] y [!DNL Dynamic Media] está disociada y puede producirse por separado para conseguirlo. Ver [publicación selectiva](/help/assets/dynamic-media/selective-publishing.md).
-   * Los administradores ahora pueden restablecer la contraseña de Cloud Service [!DNL Dynamic Media] recibida durante el aprovisionamiento. El restablecimiento se puede realizar en la interfaz de usuario [!DNL Experience Manager], sin necesidad de usar la aplicación de escritorio [!DNL Dynamic Media Classic].
+  * Publicación selectiva: ahora es posible que un equipo de marketing acceda a [!DNL Dynamic Media] imágenes de recorte inteligente y representaciones dinámicas sincronizadas con [!DNL Dynamic Media] para que puedan crear materiales promocionales, sin necesidad de publicar esos recursos en [!DNL Dynamic Media] para el envío global. La publicación de [!DNL Experience Manager] y [!DNL Dynamic Media] está disociada y puede producirse por separado para conseguirlo. Ver [publicación selectiva](/help/assets/dynamic-media/selective-publishing.md).
+  * Los administradores ahora pueden restablecer la contraseña de Cloud Service [!DNL Dynamic Media] que se recibió durante el aprovisionamiento. El restablecimiento se puede realizar en la interfaz de usuario [!DNL Experience Manager], sin necesidad de usar la aplicación de escritorio [!DNL Dynamic Media Classic].
 
 * Para obtener información acerca de las siguientes mejoras, vea [novedades de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es).
 
-   * Previsualización mejorada del PDF con la integración del Adobe Document Cloud View SDK.
-   * Funcionalidad de descarga con un solo clic.
-   * Nuevas configuraciones de administración para la experiencia de descarga.
+  * Previsualización de PDF mejorada con la integración de Adobe Document Cloud View SDK.
+  * Funcionalidad de descarga con un solo clic.
+  * Nuevas configuraciones de administración para la experiencia de descarga.
 
 <!--
 ### Bugs Fixed {#bugs-fixed-assets}
@@ -48,13 +48,13 @@ La fecha de versión de [!DNL Adobe Experience Manager] as a Cloud Service 2020.
 TBD: list of Assets aaCS bugs that are fixed.
 -->
 
-## as a Cloud Service de Adobe Experience Manager Commerce {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Novedades {#what-is-new-commerce}
 
-* CIF Lanzamiento de los componentes principales de la versión 1.3.0 de. CIF Consulte [Componentes principales](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) para obtener más información.
+* Componentes principales de CIF v1.3.0. Consulte [Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) para obtener más información.
 
-* Ya está disponible la capacidad de previsualización con plantillas de producto/categoría para productos y categorías. AEM Esto permite a los usuarios/especialistas en marketing de la empresa de la comunidad de datos ver las plantillas de producto/categoría con datos reales.
+* Ya está disponible la capacidad de previsualización con plantillas de producto/categoría para productos y categorías. Esto permite a los usuarios/especialistas en marketing de AEM ver las plantillas de producto/categoría con datos reales.
 
 * Se ha agregado la página Propiedades a productos y categorías para permitir que los usuarios comerciales puedan ver los detalles asociados con el SKU o el ID de categoría del producto.
 
@@ -64,13 +64,13 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Correcciones de errores {#bug-fixes-commerce}
 
-* Las configuraciones del Commerce Cloud no respetaban la herencia. Esto se ha corregido para garantizar que la configuración herede valores.
+* Las configuraciones de Commerce Cloud no respetaban la herencia. Esto se ha corregido para garantizar que la configuración herede valores.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Fecha de la versión {#release-date-cm}
 
-La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.9.0 es viernes, 03 de septiembre de 2020.
+La fecha de lanzamiento de [!UICONTROL Cloud Manager] versión 2020.9.0 es el 3 de septiembre de 2020.
 
 ### Novedades {#what-is-new-cloud-manager}
 
@@ -104,7 +104,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de la versi�
 
 ### Novedades {#what-is-new-ctt}
 
-* La herramienta de transferencia de contenido (CTT) admite el almacén de datos del almacén de Azure Blob.
+* La herramienta de transferencia de contenido (CTT) admite el almacén de datos del almacén de blobs de Azure.
 
 * La interfaz de usuario de CTT tiene una función de recarga automática que vuelve a cargar la página de información general cada 30 segundos.
 
