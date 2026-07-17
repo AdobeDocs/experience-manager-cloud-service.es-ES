@@ -4,7 +4,7 @@ description: Aprenda a utilizar el agente de detección de contenido para ofrece
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: d18a8489d7eb4a2ab4bf854dde300650b87ef70b
+source-git-commit: f329e218889af4e056d90f712b5e9aa2082afbd5
 workflow-type: tm+mt
 source-wordcount: '2537'
 ht-degree: 1%
@@ -260,7 +260,7 @@ Puede hacer clic en la ruta del fragmento de contenido para desplazarse sin prob
 
 ## Disponibilidad del agente de detección de contenido en Content Hub {#content-discovery-agent-availability-within-content-hub}
 
-Ahora puede acceder al agente de detección directamente desde la interfaz de Content Hub. Esta función está disponible para entornos de Content Hub que utilizan la pila de búsqueda más reciente, que también proporciona funciones de Búsqueda por IA y ordenación. Adobe está implementando la última pila de búsqueda para los clientes de Content Hub por fases. Si la Búsqueda por IA está disponible en la interfaz de Content Hub, puede utilizar el agente de detección de contenido.
+Ahora puede acceder al agente de detección directamente desde la interfaz de Content Hub. Esta característica está disponible para los entornos de Content Hub que usan la pila de búsqueda más reciente, que también proporciona [Búsqueda por IA](/help/assets/search-assets-content-hub.md#enable-disable-ai-search-content-hub) y capacidades de ordenación. Adobe está implementando la última pila de búsqueda para los clientes de Content Hub por fases. Si la Búsqueda por IA está disponible en la interfaz de Content Hub, puede utilizar el agente de detección de contenido.
 
 >[!IMPORTANT]
 >
