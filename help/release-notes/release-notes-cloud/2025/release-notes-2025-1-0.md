@@ -4,9 +4,9 @@ description: Notas de la versión 2025.1.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
+source-git-commit: 73d703220c685ec94c60bc0bea412ea6106ec34a
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1940'
 ht-degree: 88%
 
 ---
@@ -129,7 +129,9 @@ El programa para acceso rápido de AEM Forms ofrece una oportunidad única de ob
 
 En estas notas de la versión se indican las innovaciones de la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### [Plantillas de correo electrónico de HTML en Forms adaptable](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### Plantillas de correo electrónico HTML de los formularios adaptables
+
+[Plantillas de correo electrónico HTML de los formularios adaptables](/help/forms/html-email-templates-in-adaptive-forms.md)
 
 El Forms adaptable permite utilizar plantillas de correo electrónico de HTML. Las plantillas de correo electrónico HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con los formularios adaptables, puede cargar un archivo que contenga una plantilla HTML o utilizar un editor de texto sin formato para crear estas plantillas.
 
