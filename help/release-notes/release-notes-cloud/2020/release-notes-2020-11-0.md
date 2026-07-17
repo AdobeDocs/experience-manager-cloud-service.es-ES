@@ -119,7 +119,7 @@ El complemento Maven de AEM as a Cloud Service SDK Build Analyzer detecta proble
 
 ### Otros {#others-foundation}
 
-La nueva sintaxis [&quot;httpd -t&quot; ](/help/implementing/dispatcher/disp-overview.md#local-validation) comprueba la configuración de apache y Dispatcher ejecutada durante la compilación de Cloud Manager, que también se puede ejecutar mediante las herramientas Dispatcher de AEM as a Cloud Service SDK.
+La nueva sintaxis [&quot;httpd -t&quot; &#x200B;](/help/implementing/dispatcher/disp-overview.md#local-validation) comprueba la configuración de apache y Dispatcher ejecutada durante la compilación de Cloud Manager, que también se puede ejecutar mediante las herramientas Dispatcher de AEM as a Cloud Service SDK.
 
 ## Herramienta de transferencia de contenido {#content-transfer-tool}
 
