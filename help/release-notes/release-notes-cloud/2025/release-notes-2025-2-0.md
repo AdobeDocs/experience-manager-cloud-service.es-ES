@@ -6,7 +6,7 @@ role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1655'
 ht-degree: 96%
 
 ---
@@ -115,7 +115,7 @@ Las API de generación de documentos de AEM Forms ahora le permiten [cargar dire
 
 ### Compatibilidad con Java 21 {#java21}
 
-Como se menciona en la versión de enero, ahora puede generar código con Java 21, que incluye nuevas funciones (por ejemplo, coincidencia de patrones para instrucciones de cambio, clases selladas) y mejoras de rendimiento; las compilaciones de Java 17 también son compatibles desde hace poco. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support). 
+Como se menciona en la versión de enero, ahora puede generar código con Java 21, que incluye nuevas funciones (por ejemplo, coincidencia de patrones para instrucciones de cambio, clases selladas) y mejoras de rendimiento; las compilaciones de Java 17 también son compatibles desde hace poco. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
 El **entorno de ejecución** de Java 21 de mayor rendimiento se implementará automáticamente cuando se detecte una compilación de Java 17 o 21. Sin embargo, también recomendamos optar por el tiempo de ejecución de Java 21 para entornos creados con Java 11, enviando un correo electrónico a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Obtenga información sobre los [requisitos del tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
@@ -125,7 +125,7 @@ El **entorno de ejecución** de Java 21 de mayor rendimiento se implementará au
 
 ### Edge Computing: solicitud de comentarios {#edge-computing-feedback}
 
-Edge Computing acerca el procesamiento de datos al explorador, lo que ofrece ventajas como una menor latencia. A Adobe le encantaría saber si esta tecnología le resulta útil para los proyectos de AEM Publish Delivery y Edge Delivery Services. Además, indíquenos para qué prevé utilizarla como aportación a la hoja de ruta del producto. 
+Edge Computing acerca el procesamiento de datos al explorador, lo que ofrece ventajas como una menor latencia. A Adobe le encantaría saber si esta tecnología le resulta útil para los proyectos de AEM Publish Delivery y Edge Delivery Services. Además, indíquenos para qué prevé utilizarla como aportación a la hoja de ruta del producto.
 
 Algunos casos de uso posibles son los siguientes:
 
@@ -146,10 +146,10 @@ Obtenga más información sobre las [API de AEM basadas en OpenAPI](/help/implem
 
 En concreto, los puntos finales de API que se enumeran a continuación están disponibles como parte de un programa para primeros usuarios. Si está interesado, envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) describiendo cómo piensa utilizarlos.
 
-* [API de fragmentos de contenido en Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [API de recursos](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [API de fragmentos de contenido de sitios](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [API de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * API de sitios y carpetas de Assets
-* [API de comunicaciones de formularios](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+* [API de comunicaciones de Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Nuevo AEM Developer Console (Beta pública) {#aem-developer-console-beta}
 

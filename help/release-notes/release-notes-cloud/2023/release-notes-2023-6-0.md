@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1458'
 ht-degree: 100%
 
 ---
@@ -112,11 +112,11 @@ La vista de recursos ahora le permite [añadir texto de varios valores y compone
 
 * [Formularios adaptables en el editor de páginas de AEM](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): ahora puede utilizar el editor de páginas de AEM para crear y agregar rápidamente varios formularios a sus páginas de Sites. Esta capacidad permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de las páginas de Sites mediante el uso de la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización del proceso empresarial. Puede hacer lo siguiente:
 
-   * Cree un formulario adaptable arrastrando y soltando componentes de formulario en el componente contenedor de formularios adaptables en el editor de AEM Sites o en los fragmentos de experiencias.
-   * Utilice el asistente de formularios adaptables dentro del editor de AEM Sites para poder crear formularios independientes de cualquier página de Sites, lo que le proporciona la libertad de reutilizar dichos formularios a través de varias páginas.
-   * Agregue varios formularios a una página de Sites, lo que optimizará la experiencia del usuario y proporcionará una mayor flexibilidad.
+  * Cree un formulario adaptable arrastrando y soltando componentes de formulario en el componente contenedor de formularios adaptables en el editor de AEM Sites o en los fragmentos de experiencias.
+  * Utilice el asistente de formularios adaptables dentro del editor de AEM Sites para poder crear formularios independientes de cualquier página de Sites, lo que le proporciona la libertad de reutilizar dichos formularios a través de varias páginas.
+  * Añada varios formularios a una página de Sites, lo que optimizará la experiencia del usuario y proporcionará una mayor flexibilidad.
 
-     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+    >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 * [Adobe Acrobat Sign Solutions para la Administración Pública](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ahora se integra con Adobe Acrobat Sign Solutions para la Administración Pública. Esta integración proporciona un nivel avanzado de cumplimiento y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con el gobierno (departamentos y agencias gubernamentales).
 

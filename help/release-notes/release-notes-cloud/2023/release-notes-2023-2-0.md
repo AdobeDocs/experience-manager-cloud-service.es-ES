@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '756'
 ht-degree: 100%
 
 ---
@@ -47,10 +47,10 @@ Eche un vistazo al vídeo de información general sobre la versión de febrero d
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
 * Nuevo protocolo (DASH - Dynamic Adaptive Streaming over HTTP) compatible con el flujo adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado):
-   * La transmisión adaptable (DASH/HLS) garantiza una mejor experiencia de visualización de vídeos por parte del usuario
-   * DASH es el protocolo estándar internacional para la transmisión de vídeo adaptable y es ampliamente adoptado en el sector.
+  * La transmisión adaptable (DASH/HLS) garantiza una mejor experiencia de visualización de vídeos por parte del usuario
+  * DASH es el protocolo estándar internacional para la transmisión de vídeo adaptable y es ampliamente adoptado en el sector.
 
-* Se ha añadido compatibilidad con imágenes WebP para extraer automáticamente metadatos, generar miniaturas y representaciones personalizadas. Ahora, las funciones Smart Tag y Smart Crop también son compatibles con estos archivos.
+* Se ha añadido compatibilidad con imágenes WebP para extraer automáticamente metadatos, generar miniaturas y representaciones personalizadas. Ahora, las funciones Etiqueta inteligente y Recorte inteligente también son compatibles con estos archivos.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -68,7 +68,7 @@ Eche un vistazo al vídeo de información general sobre la versión de febrero d
 
 * **[Conectar AEM Forms a bases de datos compatibles con JDBC](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: conéctese a bases de datos empresariales directamente desde AEM Cloud Service mediante el protocolo JDBC, sin necesidad de exponerlas a través de la API de REST.
 
-* **[Integración con puntos de conexión REST mediante la API abierta 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: integración perfecta en sistemas de registro compatibles con la API abierta 3.0 para almacenar y recuperar datos mediante modelos de datos de formularios.
+* **[Integración con puntos de conexión REST mediante la API abierta 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: integración perfecta en sistemas de registro compatibles con la API abierta 3.0 para almacenar y recuperar datos mediante modelos de datos de formulario.
 
 * **[Compartir un formulario adaptable para su revisión](/help/forms/create-reviews-forms.md)**: utilice el mecanismo de revisión de formularios adaptables para permitir que uno o más revisores revisen el formulario.
 

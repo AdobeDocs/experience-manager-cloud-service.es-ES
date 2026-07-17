@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1022'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Eche un vistazo al vídeo Información general sobre la versión de enero de 202
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nuevas funciones en el canal de prelanzamiento de [!DNL Sites] {#prerelease-features-sites}
+### Nuevas funciones en la versión preliminar de [!DNL Sites] {#prerelease-features-sites}
 
 * La API de envío de contenido de GraphQL de AEM ahora es compatible con la [Paginación](/help/headless/graphql-api/content-fragments.md#paging) y [Ordenación](/help/headless/graphql-api/content-fragments.md#sorting) de GraphQL, para que la recuperación y el procesamiento de grandes conjuntos de contenido sean más eficientes. La paginación de GraphQL permite mejorar el tiempo de respuesta a las consultas devolviendo resultados en subconjuntos en lugar de todos a la vez. La ordenación de GraphQL permite colocar los conjuntos de contenido en el orden deseado, lo que facilita a una aplicación del cliente el procesamiento del contenido.  El tiempo de respuesta a la consulta mejora aún más con el filtrado híbrido en el motor de GraphQL de AEM. Ahora, el contenido se lee desde JCR en conjuntos más pequeños que se corresponden con los filtros de consulta.
 
@@ -53,7 +53,7 @@ Eche un vistazo al vídeo Información general sobre la versión de enero de 202
 
 * Se ha mejorado la administración de las imágenes CMYK en Asset Compute, lo que le permite generar recortes inteligentes y etiquetas inteligentes para imágenes CMYK.
 
-### Nuevas funciones en el canal de prelanzamiento de [!DNL Assets] {#prerelease-features-assets}
+### Nuevas funciones en la versión preliminar de [!DNL Assets] {#prerelease-features-assets}
 
 * Experience Manager Assets ahora admite [ingesta a gran escala de activos de Google Cloud Platform](/help/assets/add-assets.md#asset-bulk-ingestor) mediante la herramienta de importación masiva.
 
@@ -64,7 +64,7 @@ Eche un vistazo al vídeo Información general sobre la versión de enero de 202
 * **[Pasos del flujo de trabajo para generar documentos PDF no interactivos y salida imprimible](/help/forms/aem-forms-workflow-step-reference.md)**: automatice la creación de documentos PDF no interactivos y la salida imprimible para sus procesos empresariales con pasos de flujo de trabajo de AEM, lo que optimiza el proceso de generación de documentos y ahorra tiempo.
 * **[Utilice las notas al pie para proporcionar citas o información adicional en formularios adaptables](/help/forms/footnotes-richtextsupport.md)**: utilice notas al pie en un formulario adaptable para mostrar la información sobre cómo completar o utilizar un formulario. También puede aprovecharlas para proporcionar información entre paréntesis, permisos de copyright y otra información útil.
 
-### Nuevas funciones en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
+### Nuevas funciones en la versión preliminar de [!DNL Forms] {#prerelease-features-forms}
 
 * **[Uso de los componentes principales de captura de datos para crear formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es)**: [use el editor de formularios adaptables](/help/forms/creating-adaptive-form-core-components.md) para crear formularios basados en componentes de captura de datos estandarizados (componentes principales). Estos componentes proporcionan funcionalidades de personalización, un tiempo de desarrollo reducido y costes de mantenimiento más bajos para sus experiencias de inscripción digital.
 * **[Compatibilidad de canalización front-end para aplicar estilo a componentes principales basados en formularios adaptables](/help/forms/using-themes-in-core-components.md)**: utilice temáticas fácilmente personalizables de BEM para formularios adaptables basados en componentes principales implementándolas con la canalización de implementación de front-end y mejore la apariencia de sus formularios.
@@ -84,11 +84,11 @@ Eche un vistazo al vídeo Información general sobre la versión de enero de 202
 
 * [Entornos de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md): los RDE permiten a los desarrolladores solucionar rápidamente problemas e implementar nuevas funciones en AEM as a Cloud Service.
 
-  Los entornos de desarrollo rápido son un nuevo tipo de entorno de nube diseñado como una forma veloz, coherente y extensible de validar que el código que funciona localmente también funciona como se espera en la nube. Con las herramientas de la línea de comandos, “sincronice” rápidamente los paquetes de contenido, los paquetes, los archivos de contenido, la configuración OSGI o la configuración de Dispatcher con el RDE. Vea esto en acción en el siguiente vídeo:
+  Los Entornos de desarrollo rápido son un nuevo tipo de entorno de nube diseñado como una forma veloz, coherente y extensible de validar que el código que funciona localmente también funciona como se espera en la nube. Con las herramientas de la línea de comandos, “sincronice” rápidamente los paquetes de contenido, los paquetes, los archivos de contenido, la configuración OSGI o la configuración de Dispatcher con el RDE. Vea esto en acción en el siguiente vídeo:
 
   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-  Después de validar correctamente el código en el RDE, se recomienda implementarlo en un entorno de desarrollo en la nube para ejercitar las puertas de calidad de Cloud Manager, antes de implementarlo a través de la canalización de producción en entornos de fase y producción.
+  Después de validar correctamente el código en el RDE, se recomienda implementarlo en un entorno de desarrollo en la nube para ejercitar las puertas de calidad de Cloud Manager, antes de implementarlo a través de la canalización de producción en entornos de ensayo y producción.
 
   Cada programa incluye un RDE y, opcionalmente, se pueden obtener licencias de más.
 

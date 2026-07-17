@@ -1,6 +1,6 @@
 ---
 title: Asignación de recursos
-description: AEM Obtenga información sobre cómo definir redirecciones, URL de vanidad y hosts virtuales para mediante la asignación de recursos para su.
+description: Obtenga información sobre cómo definir redirecciones, URL mnemónicas y hosts virtuales para AEM mediante la asignación de recursos.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
@@ -9,14 +9,14 @@ exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
 role: Admin
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 2%
+source-wordcount: '582'
+ht-degree: 7%
 
 ---
 
 # Asignación de recursos{#resource-mapping}
 
-AEM La asignación de recursos se utiliza para definir redirecciones, URL de vanidad y hosts virtuales para los usuarios de la red de distribución de recursos ().
+La asignación de recursos se utiliza para definir redirecciones, URL de vanidad y hosts virtuales para AEM.
 
 Por ejemplo, puede utilizar estas asignaciones para lo siguiente:
 
@@ -85,9 +85,9 @@ Se crean nuevas definiciones de asignación dentro del repositorio.
 >
 >Hay muchos recursos disponibles para explicar cómo definir las expresiones regulares. Por ejemplo, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
-### AEM Creación de Definiciones de Asignación en el {#creating-mapping-definitions-in-aem}
+### Creación de definiciones de asignación en AEM {#creating-mapping-definitions-in-aem}
 
-AEM En una instalación estándar de la carpeta de carpetas, puede encontrar la siguiente carpeta:
+En una instalación estándar de AEM puede encontrar la carpeta:
 
 `/etc/map/http`
 
@@ -102,7 +102,7 @@ Para crear la asignación que prefija cualquier solicitud a https://localhost:45
 1. Cree un nodo:
 
    * **Tipo** `sling:Mapping`
-Este tipo de nodo está diseñado para este tipo de asignaciones, aunque su uso no es obligatorio.
+     Este tipo de nodo está diseñado para este tipo de asignaciones, aunque su uso no es obligatorio.
 
    * **Nombre** `localhost_any`
 
@@ -111,15 +111,15 @@ Este tipo de nodo está diseñado para este tipo de asignaciones, aunque su uso 
 
    * **Nombre** `sling:match`
 
-      * **Tipo** `String`
+     * **Tipo** `String`
 
-      * **Valor** `localhost.4503/`
+     * **Valor** `localhost.4503/`
 
    * **Nombre** `sling:internalRedirect`
 
-      * **Tipo** `String`
+     * **Tipo** `String`
 
-      * **Valor** `/content/`
+     * **Valor** `/content/`
 
 1. Haga clic en **Guardar todo**.
 
