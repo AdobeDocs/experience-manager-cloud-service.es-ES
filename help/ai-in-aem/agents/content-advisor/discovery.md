@@ -4,9 +4,9 @@ description: Aprenda a utilizar el agente de detección de contenido para ofrece
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: b47fa12a5301c97688e09d285b66241a2745e085
+source-git-commit: d18a8489d7eb4a2ab4bf854dde300650b87ef70b
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2537'
 ht-degree: 1%
 
 ---
@@ -258,6 +258,21 @@ El agente de detección de contenido proporciona funciones de búsqueda de texto
 
 Puede hacer clic en la ruta del fragmento de contenido para desplazarse sin problemas a la ubicación del fragmento de contenido en AEM.
 
+## Disponibilidad del agente de detección de contenido en Content Hub {#content-discovery-agent-availability-within-content-hub}
+
+Ahora puede acceder al agente de detección directamente desde la interfaz de Content Hub. Esta función está disponible para entornos de Content Hub que utilizan la pila de búsqueda más reciente, que también proporciona funciones de Búsqueda por IA y ordenación. Adobe está implementando la última pila de búsqueda para los clientes de Content Hub por fases. Si la Búsqueda por IA está disponible en la interfaz de Content Hub, puede utilizar el agente de detección de contenido.
+
+>[!IMPORTANT]
+>
+>Esta función está disponible como función de disponibilidad limitada.
+
+Para ver si [Búsqueda por IA](/help/assets/search-assets-content-hub.md#enable-disable-ai-search-content-hub) está disponible, ve a tu ícono de perfil de usuario y haz clic en **Configuraciones** en la interfaz de usuario de Content Hub. Seleccione la ficha **Buscar**. Si puedes ver opciones para seleccionar **Búsqueda por IA** o **Palabra clave**, la Búsqueda por IA está disponible y estás usando la pila de búsqueda más reciente.
+
+![Búsqueda por IA en Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+
+Si la Búsqueda por IA aún no está disponible y desea habilitar el agente de detección de contenido en Content Hub, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para habilitarlo para su implementación.
+
 ## Prácticas recomendadas de solicitud {#prompting-best-practices-discovery-agent}
 
 Especifique detalles concisos en las indicaciones en lenguaje natural para que el agente pueda devolver resultados precisos y relevantes. Cuanto más claramente describa lo que está buscando, mejor podrá el agente refinar y reducir el resultado. Por ejemplo, puede hacer lo siguiente:
@@ -270,6 +285,5 @@ Especifique detalles concisos en las indicaciones en lenguaje natural para que e
 
 * El agente de detección de contenido admite peticiones de datos basadas en dimensiones únicamente para tipos de formato de imagen y SVG. Por ejemplo, `Find images wider than 1080px`.
 
-* Los administradores de Content Hub pueden acceder al agente de detección de contenido a través del portal de Content Hub; sin embargo, los resultados solo se recuperan de la instancia de autor de AEM. Actualmente, los usuarios de Content Hub Limited no pueden disfrutar de las ventajas de Content Discovery Agent (disponible próximamente).
 
 * La función Buscar similares solo funciona para imágenes con [mejoras en las etiquetas inteligentes](/help/assets/ai-generated-metadata-assets-view.md).
